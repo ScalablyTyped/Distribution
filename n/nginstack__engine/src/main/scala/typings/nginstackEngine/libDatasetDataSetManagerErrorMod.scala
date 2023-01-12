@@ -53,7 +53,8 @@ object libDatasetDataSetManagerErrorMod {
       __obj.asInstanceOf[DataSetManagerError]
     }
     
-    extension [Self <: DataSetManagerError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSetManagerError] (val x: Self) extends AnyVal {
       
       inline def set_name(value: Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     }

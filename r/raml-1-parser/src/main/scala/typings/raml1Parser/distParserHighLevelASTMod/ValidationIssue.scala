@@ -42,7 +42,8 @@ object ValidationIssue {
     __obj.asInstanceOf[ValidationIssue]
   }
   
-  extension [Self <: ValidationIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationIssue] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[ValidationAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

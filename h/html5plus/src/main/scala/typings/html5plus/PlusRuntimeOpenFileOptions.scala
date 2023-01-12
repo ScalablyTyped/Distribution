@@ -35,7 +35,8 @@ object PlusRuntimeOpenFileOptions {
     __obj.asInstanceOf[PlusRuntimeOpenFileOptions]
   }
   
-  extension [Self <: PlusRuntimeOpenFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusRuntimeOpenFileOptions] (val x: Self) extends AnyVal {
     
     inline def setPname(value: String): Self = StObject.set(x, "pname", value.asInstanceOf[js.Any])
     

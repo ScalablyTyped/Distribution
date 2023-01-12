@@ -39,7 +39,8 @@ object FrameControlCapabilities {
     __obj.asInstanceOf[FrameControlCapabilities]
   }
   
-  extension [Self <: FrameControlCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameControlCapabilities] (val x: Self) extends AnyVal {
     
     inline def setExposure(value: FrameExposureCapabilities): Self = StObject.set(x, "exposure", value.asInstanceOf[js.Any])
     

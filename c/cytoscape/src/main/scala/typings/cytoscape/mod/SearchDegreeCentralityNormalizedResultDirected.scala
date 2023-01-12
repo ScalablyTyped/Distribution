@@ -19,7 +19,8 @@ object SearchDegreeCentralityNormalizedResultDirected {
     __obj.asInstanceOf[SearchDegreeCentralityNormalizedResultDirected]
   }
   
-  extension [Self <: SearchDegreeCentralityNormalizedResultDirected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDegreeCentralityNormalizedResultDirected] (val x: Self) extends AnyVal {
     
     inline def setIndegree(value: NodeSingular => Any): Self = StObject.set(x, "indegree", js.Any.fromFunction1(value))
     

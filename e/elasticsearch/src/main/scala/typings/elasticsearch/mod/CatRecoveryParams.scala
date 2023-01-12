@@ -27,7 +27,8 @@ object CatRecoveryParams {
     __obj.asInstanceOf[CatRecoveryParams]
   }
   
-  extension [Self <: CatRecoveryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatRecoveryParams] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: CatBytes): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

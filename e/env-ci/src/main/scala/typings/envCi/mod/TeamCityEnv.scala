@@ -32,7 +32,8 @@ object TeamCityEnv {
     __obj.asInstanceOf[TeamCityEnv]
   }
   
-  extension [Self <: TeamCityEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamCityEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

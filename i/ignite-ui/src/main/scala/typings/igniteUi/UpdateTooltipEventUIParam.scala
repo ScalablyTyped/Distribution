@@ -43,7 +43,8 @@ object UpdateTooltipEventUIParam {
     __obj.asInstanceOf[UpdateTooltipEventUIParam]
   }
   
-  extension [Self <: UpdateTooltipEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTooltipEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

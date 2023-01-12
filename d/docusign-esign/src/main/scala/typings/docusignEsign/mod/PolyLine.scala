@@ -21,7 +21,8 @@ object PolyLine {
     __obj.asInstanceOf[PolyLine]
   }
   
-  extension [Self <: PolyLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolyLine] (val x: Self) extends AnyVal {
     
     inline def setX1(value: String): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     

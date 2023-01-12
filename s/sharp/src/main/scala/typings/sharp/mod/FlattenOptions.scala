@@ -16,7 +16,8 @@ object FlattenOptions {
     __obj.asInstanceOf[FlattenOptions]
   }
   
-  extension [Self <: FlattenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlattenOptions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

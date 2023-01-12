@@ -18,7 +18,8 @@ object ReadOnlyFieldInfo {
     __obj.asInstanceOf[ReadOnlyFieldInfo]
   }
   
-  extension [Self <: ReadOnlyFieldInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadOnlyFieldInfo] (val x: Self) extends AnyVal {
     
     inline def setId(value: TaskTemplateFieldIdentifier): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

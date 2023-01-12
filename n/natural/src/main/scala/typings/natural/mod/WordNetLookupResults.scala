@@ -23,7 +23,8 @@ object WordNetLookupResults {
     __obj.asInstanceOf[WordNetLookupResults]
   }
   
-  extension [Self <: WordNetLookupResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordNetLookupResults] (val x: Self) extends AnyVal {
     
     inline def setGloss(value: String): Self = StObject.set(x, "gloss", value.asInstanceOf[js.Any])
     

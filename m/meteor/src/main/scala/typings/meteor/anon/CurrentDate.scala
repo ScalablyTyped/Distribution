@@ -69,7 +69,8 @@ object CurrentDate {
     __obj.asInstanceOf[CurrentDate[T]]
   }
   
-  extension [Self <: CurrentDate[?], T](x: Self & CurrentDate[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentDate[?], T] (val x: Self & CurrentDate[T]) extends AnyVal {
     
     inline def set$addToSet(value: ArraysOrEach[T] & Dictionary[Any]): Self = StObject.set(x, "$addToSet", value.asInstanceOf[js.Any])
     

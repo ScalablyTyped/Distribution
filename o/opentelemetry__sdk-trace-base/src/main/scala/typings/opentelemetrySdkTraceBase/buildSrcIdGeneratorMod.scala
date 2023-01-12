@@ -21,7 +21,8 @@ object buildSrcIdGeneratorMod {
       __obj.asInstanceOf[IdGenerator]
     }
     
-    extension [Self <: IdGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdGenerator] (val x: Self) extends AnyVal {
       
       inline def setGenerateSpanId(value: () => String): Self = StObject.set(x, "generateSpanId", js.Any.fromFunction0(value))
       

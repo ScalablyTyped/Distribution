@@ -25,7 +25,8 @@ object OmitButtonRequestcodecodeCode {
     __obj.asInstanceOf[OmitButtonRequestcodecodeCode]
   }
   
-  extension [Self <: OmitButtonRequestcodecodeCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitButtonRequestcodecodeCode] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ButtonRequestType | ButtonRequest_FirmwareUpdate): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

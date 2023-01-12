@@ -23,7 +23,8 @@ object MetadataKeyValuePair {
     __obj.asInstanceOf[MetadataKeyValuePair]
   }
   
-  extension [Self <: MetadataKeyValuePair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataKeyValuePair] (val x: Self) extends AnyVal {
     
     inline def setMetadataKey(value: MetadataKeyString): Self = StObject.set(x, "MetadataKey", value.asInstanceOf[js.Any])
     

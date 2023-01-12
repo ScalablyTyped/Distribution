@@ -37,7 +37,8 @@ object ExplanationOfBenefitProcedure {
     __obj.asInstanceOf[ExplanationOfBenefitProcedure]
   }
   
-  extension [Self <: ExplanationOfBenefitProcedure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplanationOfBenefitProcedure] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

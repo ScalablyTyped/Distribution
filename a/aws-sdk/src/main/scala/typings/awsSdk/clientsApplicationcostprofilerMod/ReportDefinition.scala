@@ -48,7 +48,8 @@ object ReportDefinition {
     __obj.asInstanceOf[ReportDefinition]
   }
   
-  extension [Self <: ReportDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportDefinition] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object srcCoreSauronMod {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }

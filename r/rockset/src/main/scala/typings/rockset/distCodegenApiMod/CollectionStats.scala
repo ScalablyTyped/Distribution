@@ -76,7 +76,8 @@ object CollectionStats {
     __obj.asInstanceOf[CollectionStats]
   }
   
-  extension [Self <: CollectionStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionStats] (val x: Self) extends AnyVal {
     
     inline def setBytes_inserted(value: Double): Self = StObject.set(x, "bytes_inserted", value.asInstanceOf[js.Any])
     

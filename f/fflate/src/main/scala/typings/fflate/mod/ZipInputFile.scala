@@ -81,7 +81,8 @@ object ZipInputFile {
     __obj.asInstanceOf[ZipInputFile]
   }
   
-  extension [Self <: ZipInputFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipInputFile] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: Double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

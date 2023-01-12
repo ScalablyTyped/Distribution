@@ -72,7 +72,8 @@ object AltJS {
       __obj.asInstanceOf[ActionsClass]
     }
     
-    extension [Self <: ActionsClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionsClass] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object AltJS {
       __obj.asInstanceOf[AltConfig]
     }
     
-    extension [Self <: AltConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AltConfig] (val x: Self) extends AnyVal {
       
       inline def setBatchingFunction(value: /* callback */ js.Function1[/* repeated */ Any, Any] => Unit): Self = StObject.set(x, "batchingFunction", js.Any.fromFunction1(value))
       
@@ -213,7 +215,8 @@ object AltJS {
       __obj.asInstanceOf[AltStore[S]]
     }
     
-    extension [Self <: AltStore[?], S](x: Self & AltStore[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AltStore[?], S] (val x: Self & AltStore[S]) extends AnyVal {
       
       inline def setEmitChange(value: () => Unit): Self = StObject.set(x, "emitChange", js.Any.fromFunction0(value))
       
@@ -254,7 +257,8 @@ object AltJS {
       __obj.asInstanceOf[SourceModel[S]]
     }
     
-    extension [Self <: SourceModel[?], S](x: Self & SourceModel[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceModel[?], S] (val x: Self & SourceModel[S]) extends AnyVal {
       
       inline def setError(value: Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -345,7 +349,8 @@ object AltJS {
       __obj.asInstanceOf[StoreModel[S]]
     }
     
-    extension [Self <: StoreModel[?], S](x: Self & StoreModel[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreModel[?], S] (val x: Self & StoreModel[S]) extends AnyVal {
       
       inline def setAfterEach(value: (/* payload */ js.Object, /* state */ js.Object) => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction2(value))
       
@@ -454,7 +459,8 @@ object AltJS {
       __obj.asInstanceOf[StoreReduce]
     }
     
-    extension [Self <: StoreReduce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreReduce] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Any): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

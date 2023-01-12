@@ -33,7 +33,8 @@ object PartialExtensionFields {
     __obj.asInstanceOf[PartialExtensionFields]
   }
   
-  extension [Self <: PartialExtensionFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialExtensionFields] (val x: Self) extends AnyVal {
     
     inline def setAttentionMarkers(value: `1`): Self = StObject.set(x, "attentionMarkers", value.asInstanceOf[js.Any])
     

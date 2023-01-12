@@ -15,7 +15,8 @@ object IProduction {
     __obj.asInstanceOf[IProduction]
   }
   
-  extension [Self <: IProduction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProduction] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: IGASTVisitor => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
   }

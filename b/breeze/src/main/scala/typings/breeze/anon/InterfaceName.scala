@@ -17,7 +17,8 @@ object InterfaceName {
     __obj.asInstanceOf[InterfaceName]
   }
   
-  extension [Self <: InterfaceName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceName] (val x: Self) extends AnyVal {
     
     inline def setInterfaceName(value: String): Self = StObject.set(x, "interfaceName", value.asInstanceOf[js.Any])
     

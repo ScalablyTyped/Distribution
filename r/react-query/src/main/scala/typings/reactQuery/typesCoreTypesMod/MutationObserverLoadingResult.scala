@@ -47,7 +47,8 @@ object MutationObserverLoadingResult {
     __obj.asInstanceOf[MutationObserverLoadingResult[TData, TError, TVariables, TContext]]
   }
   
-  extension [Self <: MutationObserverLoadingResult[?, ?, ?, ?], TData, TError, TVariables, TContext](x: Self & (MutationObserverLoadingResult[TData, TError, TVariables, TContext])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutationObserverLoadingResult[?, ?, ?, ?], TData, TError, TVariables, TContext] (val x: Self & (MutationObserverLoadingResult[TData, TError, TVariables, TContext])) extends AnyVal {
     
     inline def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

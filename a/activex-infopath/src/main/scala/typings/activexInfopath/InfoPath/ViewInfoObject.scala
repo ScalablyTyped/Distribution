@@ -21,7 +21,8 @@ object ViewInfoObject {
     __obj.asInstanceOf[ViewInfoObject]
   }
   
-  extension [Self <: ViewInfoObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewInfoObject] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotViewInfoObject_typekey(value: ViewInfoObject): Self = StObject.set(x, "InfoPath.ViewInfoObject_typekey", value.asInstanceOf[js.Any])
     

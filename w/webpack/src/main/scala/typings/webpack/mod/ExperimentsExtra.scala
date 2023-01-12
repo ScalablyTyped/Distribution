@@ -33,7 +33,8 @@ object ExperimentsExtra {
     __obj.asInstanceOf[ExperimentsExtra]
   }
   
-  extension [Self <: ExperimentsExtra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentsExtra] (val x: Self) extends AnyVal {
     
     inline def setBuildHttp(value: HttpUriOptions | (js.Array[String | js.RegExp | (js.Function1[/* uri */ String, Boolean])])): Self = StObject.set(x, "buildHttp", value.asInstanceOf[js.Any])
     

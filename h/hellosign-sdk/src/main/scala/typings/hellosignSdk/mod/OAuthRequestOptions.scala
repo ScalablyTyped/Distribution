@@ -17,7 +17,8 @@ object OAuthRequestOptions {
     __obj.asInstanceOf[OAuthRequestOptions]
   }
   
-  extension [Self <: OAuthRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

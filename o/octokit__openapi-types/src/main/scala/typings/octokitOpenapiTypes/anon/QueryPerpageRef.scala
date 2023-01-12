@@ -17,7 +17,8 @@ object QueryPerpageRef {
     __obj.asInstanceOf[QueryPerpageRef]
   }
   
-  extension [Self <: QueryPerpageRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryPerpageRef] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Alertnumber): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

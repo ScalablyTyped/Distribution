@@ -30,7 +30,8 @@ object PolygonDrawActionCursorUpdateEvent {
     __obj.asInstanceOf[PolygonDrawActionCursorUpdateEvent]
   }
   
-  extension [Self <: PolygonDrawActionCursorUpdateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonDrawActionCursorUpdateEvent] (val x: Self) extends AnyVal {
     
     inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     

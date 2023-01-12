@@ -141,7 +141,8 @@ object outFsMod {
       __obj.asInstanceOf[CopyDirOptions]
     }
     
-    extension [Self <: CopyDirOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyDirOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: (/* file */ String, /* stat */ Stats) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
@@ -181,7 +182,8 @@ object outFsMod {
       __obj.asInstanceOf[FileConsumer]
     }
     
-    extension [Self <: FileConsumer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileConsumer] (val x: Self) extends AnyVal {
       
       inline def setConsume(value: (String, Stats, String, js.Array[String]) => Any): Self = StObject.set(x, "consume", js.Any.fromFunction4(value))
       
@@ -211,7 +213,8 @@ object outFsMod {
       __obj.asInstanceOf[Link]
     }
     
-    extension [Self <: Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

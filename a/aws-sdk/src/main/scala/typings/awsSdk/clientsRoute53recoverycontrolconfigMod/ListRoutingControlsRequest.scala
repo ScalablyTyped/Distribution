@@ -28,7 +28,8 @@ object ListRoutingControlsRequest {
     __obj.asInstanceOf[ListRoutingControlsRequest]
   }
   
-  extension [Self <: ListRoutingControlsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRoutingControlsRequest] (val x: Self) extends AnyVal {
     
     inline def setControlPanelArn(value: string): Self = StObject.set(x, "ControlPanelArn", value.asInstanceOf[js.Any])
     

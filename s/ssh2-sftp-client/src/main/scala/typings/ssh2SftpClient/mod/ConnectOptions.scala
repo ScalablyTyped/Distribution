@@ -22,7 +22,8 @@ object ConnectOptions {
     __obj.asInstanceOf[ConnectOptions]
   }
   
-  extension [Self <: ConnectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
     
     inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     

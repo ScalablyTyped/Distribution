@@ -32,7 +32,8 @@ object DisassembleRequest {
     __obj.asInstanceOf[DisassembleRequest]
   }
   
-  extension [Self <: DisassembleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassembleRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: DisassembleArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

@@ -40,7 +40,8 @@ object StringDeclarationOption {
     __obj.asInstanceOf[StringDeclarationOption]
   }
   
-  extension [Self <: StringDeclarationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringDeclarationOption] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

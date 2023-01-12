@@ -21,7 +21,8 @@ object SafeProtocols {
     __obj.asInstanceOf[SafeProtocols]
   }
   
-  extension [Self <: SafeProtocols](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeProtocols] (val x: Self) extends AnyVal {
     
     inline def setFile(value: Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

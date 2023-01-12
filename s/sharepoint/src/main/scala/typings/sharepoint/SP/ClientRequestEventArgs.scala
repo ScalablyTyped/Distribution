@@ -18,7 +18,8 @@ object ClientRequestEventArgs {
     __obj.asInstanceOf[ClientRequestEventArgs]
   }
   
-  extension [Self <: ClientRequestEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientRequestEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGet_request(value: () => ClientRequest): Self = StObject.set(x, "get_request", js.Any.fromFunction0(value))
   }

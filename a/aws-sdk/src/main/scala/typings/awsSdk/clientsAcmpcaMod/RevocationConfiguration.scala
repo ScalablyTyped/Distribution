@@ -23,7 +23,8 @@ object RevocationConfiguration {
     __obj.asInstanceOf[RevocationConfiguration]
   }
   
-  extension [Self <: RevocationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevocationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCrlConfiguration(value: CrlConfiguration): Self = StObject.set(x, "CrlConfiguration", value.asInstanceOf[js.Any])
     

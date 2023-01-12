@@ -35,7 +35,8 @@ object distSrcModulesUiOverlayTypesMod {
       __obj.asInstanceOf[IOverlay]
     }
     
-    extension [Self <: IOverlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlay] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -64,7 +65,8 @@ object distSrcModulesUiOverlayTypesMod {
       __obj.asInstanceOf[IOverlayAPI]
     }
     
-    extension [Self <: IOverlayAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlayAPI] (val x: Self) extends AnyVal {
       
       inline def setHideOverlay(value: () => Unit): Self = StObject.set(x, "hideOverlay", js.Any.fromFunction0(value))
       
@@ -91,7 +93,8 @@ object distSrcModulesUiOverlayTypesMod {
       __obj.asInstanceOf[IOverlayViewCallbacks]
     }
     
-    extension [Self <: IOverlayViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlayViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnPlayClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onPlayClick", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object distSrcModulesUiOverlayTypesMod {
       __obj.asInstanceOf[IOverlayViewConfig]
     }
     
-    extension [Self <: IOverlayViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlayViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: IOverlayViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -139,7 +143,8 @@ object distSrcModulesUiOverlayTypesMod {
       __obj.asInstanceOf[IOverlayViewStyles]
     }
     
-    extension [Self <: IOverlayViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlayViewStyles] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

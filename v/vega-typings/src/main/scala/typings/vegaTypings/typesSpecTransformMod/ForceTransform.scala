@@ -38,7 +38,8 @@ object ForceTransform {
     __obj.asInstanceOf[ForceTransform]
   }
   
-  extension [Self <: ForceTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceTransform] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double | SignalRef): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

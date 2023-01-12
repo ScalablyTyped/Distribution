@@ -39,7 +39,8 @@ object SeleniumRCCapabilities {
     __obj.asInstanceOf[SeleniumRCCapabilities]
   }
   
-  extension [Self <: SeleniumRCCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeleniumRCCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAvoidProxy(value: Boolean): Self = StObject.set(x, "avoidProxy", value.asInstanceOf[js.Any])
     

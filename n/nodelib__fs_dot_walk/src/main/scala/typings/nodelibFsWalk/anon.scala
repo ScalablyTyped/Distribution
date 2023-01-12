@@ -55,7 +55,8 @@ object anon {
       __obj.asInstanceOf[PartialFileSystemAdapter]
     }
     
-    extension [Self <: PartialFileSystemAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFileSystemAdapter] (val x: Self) extends AnyVal {
       
       inline def setLstat(
         value: (/* path */ String, /* callback */ js.Function2[

@@ -17,7 +17,8 @@ object TimelineRecordsUpdatedEvent {
     __obj.asInstanceOf[TimelineRecordsUpdatedEvent]
   }
   
-  extension [Self <: TimelineRecordsUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineRecordsUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setTimelineRecords(value: js.Array[TimelineRecord]): Self = StObject.set(x, "timelineRecords", value.asInstanceOf[js.Any])
     

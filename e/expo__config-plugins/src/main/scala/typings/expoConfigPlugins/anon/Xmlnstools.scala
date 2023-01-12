@@ -16,7 +16,8 @@ object Xmlnstools {
     __obj.asInstanceOf[Xmlnstools]
   }
   
-  extension [Self <: Xmlnstools](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Xmlnstools] (val x: Self) extends AnyVal {
     
     inline def setXmlnsColontools(value: String): Self = StObject.set(x, "xmlns:tools", value.asInstanceOf[js.Any])
     

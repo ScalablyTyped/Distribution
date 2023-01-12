@@ -28,7 +28,8 @@ object ListControlInsightsByControlDomainRequest {
     __obj.asInstanceOf[ListControlInsightsByControlDomainRequest]
   }
   
-  extension [Self <: ListControlInsightsByControlDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListControlInsightsByControlDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setControlDomainId(value: UUID): Self = StObject.set(x, "controlDomainId", value.asInstanceOf[js.Any])
     

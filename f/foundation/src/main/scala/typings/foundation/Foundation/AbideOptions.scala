@@ -27,7 +27,8 @@ object AbideOptions {
     __obj.asInstanceOf[AbideOptions]
   }
   
-  extension [Self <: AbideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbideOptions] (val x: Self) extends AnyVal {
     
     inline def setError_labels(value: Boolean): Self = StObject.set(x, "error_labels", value.asInstanceOf[js.Any])
     

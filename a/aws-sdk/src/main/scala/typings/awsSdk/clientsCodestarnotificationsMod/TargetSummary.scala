@@ -28,7 +28,8 @@ object TargetSummary {
     __obj.asInstanceOf[TargetSummary]
   }
   
-  extension [Self <: TargetSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetSummary] (val x: Self) extends AnyVal {
     
     inline def setTargetAddress(value: TargetAddress): Self = StObject.set(x, "TargetAddress", value.asInstanceOf[js.Any])
     

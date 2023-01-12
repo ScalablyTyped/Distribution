@@ -38,7 +38,8 @@ object ConversionProperties {
     __obj.asInstanceOf[ConversionProperties]
   }
   
-  extension [Self <: ConversionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversionProperties] (val x: Self) extends AnyVal {
     
     inline def setDataTimestamp(value: LargeBoundedString): Self = StObject.set(x, "dataTimestamp", value.asInstanceOf[js.Any])
     

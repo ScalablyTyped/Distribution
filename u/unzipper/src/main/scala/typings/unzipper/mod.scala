@@ -93,7 +93,8 @@ object mod {
       __obj.asInstanceOf[CentralDirectory]
     }
     
-    extension [Self <: CentralDirectory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CentralDirectory] (val x: Self) extends AnyVal {
       
       inline def setCommentLength(value: Double): Self = StObject.set(x, "commentLength", value.asInstanceOf[js.Any])
       
@@ -210,7 +211,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       

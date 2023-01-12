@@ -17,7 +17,8 @@ object IndicesMergeScheduler {
     __obj.asInstanceOf[IndicesMergeScheduler]
   }
   
-  extension [Self <: IndicesMergeScheduler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesMergeScheduler] (val x: Self) extends AnyVal {
     
     inline def setMax_merge_count(value: integer): Self = StObject.set(x, "max_merge_count", value.asInstanceOf[js.Any])
     

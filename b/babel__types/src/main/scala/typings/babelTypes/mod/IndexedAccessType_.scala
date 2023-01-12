@@ -27,7 +27,8 @@ object IndexedAccessType_ {
     __obj.asInstanceOf[IndexedAccessType_]
   }
   
-  extension [Self <: IndexedAccessType_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexedAccessType_] (val x: Self) extends AnyVal {
     
     inline def setIndexType(value: FlowType): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListAccessPointsResult {
     __obj.asInstanceOf[ListAccessPointsResult]
   }
   
-  extension [Self <: ListAccessPointsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccessPointsResult] (val x: Self) extends AnyVal {
     
     inline def setAccessPointList(value: AccessPointList): Self = StObject.set(x, "AccessPointList", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofSparkline {
     __obj.asInstanceOf[TypeofSparkline]
   }
   
-  extension [Self <: TypeofSparkline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSparkline] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Sparkline): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

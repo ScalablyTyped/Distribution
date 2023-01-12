@@ -34,7 +34,8 @@ object gapi {
             __obj.asInstanceOf[GetParameters]
           }
           
-          extension [Self <: GetParameters](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: GetParameters] (val x: Self) extends AnyVal {
             
             inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
           }
@@ -71,7 +72,8 @@ object gapi {
             __obj.asInstanceOf[PeopleFeed]
           }
           
-          extension [Self <: PeopleFeed](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: PeopleFeed] (val x: Self) extends AnyVal {
             
             inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
             
@@ -187,7 +189,8 @@ object gapi {
             __obj.asInstanceOf[Person]
           }
           
-          extension [Self <: Person](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: Person] (val x: Self) extends AnyVal {
             
             inline def setAboutMe(value: String): Self = StObject.set(x, "aboutMe", value.asInstanceOf[js.Any])
             
@@ -274,7 +277,8 @@ object gapi {
             __obj.asInstanceOf[SearchParameters]
           }
           
-          extension [Self <: SearchParameters](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: SearchParameters] (val x: Self) extends AnyVal {
             
             inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
             

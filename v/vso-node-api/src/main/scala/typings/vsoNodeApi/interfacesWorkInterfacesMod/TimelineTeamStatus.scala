@@ -18,7 +18,8 @@ object TimelineTeamStatus {
     __obj.asInstanceOf[TimelineTeamStatus]
   }
   
-  extension [Self <: TimelineTeamStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineTeamStatus] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

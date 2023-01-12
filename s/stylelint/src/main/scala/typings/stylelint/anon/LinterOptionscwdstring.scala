@@ -76,7 +76,8 @@ object LinterOptionscwdstring {
     __obj.asInstanceOf[LinterOptionscwdstring]
   }
   
-  extension [Self <: LinterOptionscwdstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinterOptionscwdstring] (val x: Self) extends AnyVal {
     
     inline def setAllowEmptyInput(value: Boolean): Self = StObject.set(x, "allowEmptyInput", value.asInstanceOf[js.Any])
     

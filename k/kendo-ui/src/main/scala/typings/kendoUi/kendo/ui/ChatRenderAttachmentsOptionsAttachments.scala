@@ -17,7 +17,8 @@ object ChatRenderAttachmentsOptionsAttachments {
     __obj.asInstanceOf[ChatRenderAttachmentsOptionsAttachments]
   }
   
-  extension [Self <: ChatRenderAttachmentsOptionsAttachments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRenderAttachmentsOptionsAttachments] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

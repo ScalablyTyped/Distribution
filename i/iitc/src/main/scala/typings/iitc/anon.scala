@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Attackfrequency]
     }
     
-    extension [Self <: Attackfrequency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attackfrequency] (val x: Self) extends AnyVal {
       
       inline def setAttack_frequency(value: Double): Self = StObject.set(x, "attack_frequency", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Burnout]
     }
     
-    extension [Self <: Burnout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Burnout] (val x: Self) extends AnyVal {
       
       inline def setBurnout(value: Double): Self = StObject.set(x, "burnout", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[CaptureAp]
     }
     
-    extension [Self <: CaptureAp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptureAp] (val x: Self) extends AnyVal {
       
       inline def setCaptureAp(value: Double): Self = StObject.set(x, "captureAp", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object anon {
       __obj.asInstanceOf[DeployCount]
     }
     
-    extension [Self <: DeployCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeployCount] (val x: Self) extends AnyVal {
       
       inline def setCaptureAp(value: Double): Self = StObject.set(x, "captureAp", value.asInstanceOf[js.Any])
       
@@ -173,7 +177,8 @@ object anon {
       __obj.asInstanceOf[Details]
     }
     
-    extension [Self <: Details](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: PortalDataDetail): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -202,7 +207,8 @@ object anon {
       __obj.asInstanceOf[Excess]
     }
     
-    extension [Self <: Excess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Excess] (val x: Self) extends AnyVal {
       
       inline def setExcess(value: Double): Self = StObject.set(x, "excess", value.asInstanceOf[js.Any])
       
@@ -227,7 +233,8 @@ object anon {
       __obj.asInstanceOf[Fragment]
     }
     
-    extension [Self <: Fragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
       
       inline def setFragment(value: Any): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
@@ -250,7 +257,8 @@ object anon {
       __obj.asInstanceOf[Guid]
     }
     
-    extension [Self <: Guid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Guid] (val x: Self) extends AnyVal {
       
       inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
       
@@ -295,7 +303,8 @@ object anon {
       __obj.asInstanceOf[Health]
     }
     
-    extension [Self <: Health](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Health] (val x: Self) extends AnyVal {
       
       inline def setHealth(value: Double): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
       
@@ -330,7 +339,8 @@ object anon {
       __obj.asInstanceOf[In]
     }
     
-    extension [Self <: In](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: In] (val x: Self) extends AnyVal {
       
       inline def setIn(value: js.Array[LinkGUID]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
@@ -357,7 +367,8 @@ object anon {
       __obj.asInstanceOf[LatE6]
     }
     
-    extension [Self <: LatE6](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LatE6] (val x: Self) extends AnyVal {
       
       inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
       
@@ -389,7 +400,8 @@ object anon {
       __obj.asInstanceOf[Markup]
     }
     
-    extension [Self <: Markup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Markup] (val x: Self) extends AnyVal {
       
       inline def setMarkup(value: js.Array[MarkUpPortal | MarkUpPlayer | MarkUpText]): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
       
@@ -414,7 +426,8 @@ object anon {
       __obj.asInstanceOf[SelectedPortalGuid]
     }
     
-    extension [Self <: SelectedPortalGuid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectedPortalGuid] (val x: Self) extends AnyVal {
       
       inline def setSelectedPortalGuid(value: PortalGUID): Self = StObject.set(x, "selectedPortalGuid", value.asInstanceOf[js.Any])
     }

@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[ThemeProviderProps[Theme]]
     }
     
-    extension [Self <: ThemeProviderProps[?], Theme](x: Self & ThemeProviderProps[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeProviderProps[?], Theme] (val x: Self & ThemeProviderProps[Theme]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[Theming[Theme]]
     }
     
-    extension [Self <: Theming[?], Theme](x: Self & Theming[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theming[?], Theme] (val x: Self & Theming[Theme]) extends AnyVal {
       
       inline def setContext(value: Context[Theme]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

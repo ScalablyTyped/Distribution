@@ -88,7 +88,8 @@ object SlackConfiguration {
     __obj.asInstanceOf[SlackConfiguration]
   }
   
-  extension [Self <: SlackConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlackConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCrawlBotMessage(value: Boolean): Self = StObject.set(x, "CrawlBotMessage", value.asInstanceOf[js.Any])
     

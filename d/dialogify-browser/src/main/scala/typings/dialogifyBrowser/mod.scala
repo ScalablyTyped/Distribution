@@ -135,7 +135,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setDialogifyConfig(value: DialogifyConfig): Self = StObject.set(x, "dialogifyConfig", value.asInstanceOf[js.Any])
         

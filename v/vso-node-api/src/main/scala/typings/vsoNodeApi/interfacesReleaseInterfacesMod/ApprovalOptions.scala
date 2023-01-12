@@ -32,7 +32,8 @@ object ApprovalOptions {
     __obj.asInstanceOf[ApprovalOptions]
   }
   
-  extension [Self <: ApprovalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApprovalOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped(value: Boolean): Self = StObject.set(x, "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object RecipientNamesResponse {
     __obj.asInstanceOf[RecipientNamesResponse]
   }
   
-  extension [Self <: RecipientNamesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientNamesResponse] (val x: Self) extends AnyVal {
     
     inline def setMultipleUsers(value: String): Self = StObject.set(x, "multipleUsers", value.asInstanceOf[js.Any])
     

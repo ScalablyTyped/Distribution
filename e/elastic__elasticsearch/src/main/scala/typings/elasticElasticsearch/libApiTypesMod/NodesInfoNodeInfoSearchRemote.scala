@@ -15,7 +15,8 @@ object NodesInfoNodeInfoSearchRemote {
     __obj.asInstanceOf[NodesInfoNodeInfoSearchRemote]
   }
   
-  extension [Self <: NodesInfoNodeInfoSearchRemote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoSearchRemote] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: String): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
   }

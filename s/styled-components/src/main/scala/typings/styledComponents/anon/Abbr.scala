@@ -1345,7 +1345,8 @@ trait Abbr extends StObject {
 }
 object Abbr {
   
-  extension [Self <: Abbr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Abbr] (val x: Self) extends AnyVal {
     
     inline def setA(
       value: WebStyled[

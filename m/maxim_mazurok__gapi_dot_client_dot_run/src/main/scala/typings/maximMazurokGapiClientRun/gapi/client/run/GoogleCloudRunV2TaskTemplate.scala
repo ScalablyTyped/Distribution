@@ -43,7 +43,8 @@ object GoogleCloudRunV2TaskTemplate {
     __obj.asInstanceOf[GoogleCloudRunV2TaskTemplate]
   }
   
-  extension [Self <: GoogleCloudRunV2TaskTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2TaskTemplate] (val x: Self) extends AnyVal {
     
     inline def setContainers(value: js.Array[GoogleCloudRunV2Container]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,8 @@ object UpdateUpdatePropertiesType {
     __obj.asInstanceOf[UpdateUpdatePropertiesType]
   }
   
-  extension [Self <: UpdateUpdatePropertiesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUpdatePropertiesType] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

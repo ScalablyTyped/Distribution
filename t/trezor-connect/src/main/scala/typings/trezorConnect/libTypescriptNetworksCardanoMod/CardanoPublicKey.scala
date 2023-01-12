@@ -22,7 +22,8 @@ object CardanoPublicKey {
     __obj.asInstanceOf[CardanoPublicKey]
   }
   
-  extension [Self <: CardanoPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoPublicKey] (val x: Self) extends AnyVal {
     
     inline def setNode(value: HDNodeType): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

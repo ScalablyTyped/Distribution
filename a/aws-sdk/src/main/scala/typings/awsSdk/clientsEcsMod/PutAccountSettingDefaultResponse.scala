@@ -18,7 +18,8 @@ object PutAccountSettingDefaultResponse {
     __obj.asInstanceOf[PutAccountSettingDefaultResponse]
   }
   
-  extension [Self <: PutAccountSettingDefaultResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAccountSettingDefaultResponse] (val x: Self) extends AnyVal {
     
     inline def setSetting(value: Setting): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
     

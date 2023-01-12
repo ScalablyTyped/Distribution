@@ -21,7 +21,8 @@ object AssetParserDataUrlOptions {
     __obj.asInstanceOf[AssetParserDataUrlOptions]
   }
   
-  extension [Self <: AssetParserDataUrlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetParserDataUrlOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     

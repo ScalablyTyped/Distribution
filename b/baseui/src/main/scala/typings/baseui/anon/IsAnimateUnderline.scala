@@ -19,7 +19,8 @@ object IsAnimateUnderline {
     __obj.asInstanceOf[IsAnimateUnderline]
   }
   
-  extension [Self <: IsAnimateUnderline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsAnimateUnderline] (val x: Self) extends AnyVal {
     
     inline def set$isAnimateUnderline(value: Boolean): Self = StObject.set(x, "$isAnimateUnderline", value.asInstanceOf[js.Any])
     

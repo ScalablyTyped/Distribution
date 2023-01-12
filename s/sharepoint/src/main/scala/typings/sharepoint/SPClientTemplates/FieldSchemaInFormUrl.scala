@@ -34,7 +34,8 @@ object FieldSchemaInFormUrl {
     __obj.asInstanceOf[FieldSchemaInFormUrl]
   }
   
-  extension [Self <: FieldSchemaInFormUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInFormUrl] (val x: Self) extends AnyVal {
     
     inline def setDisplayFormat(value: UrlFormatType): Self = StObject.set(x, "DisplayFormat", value.asInstanceOf[js.Any])
   }

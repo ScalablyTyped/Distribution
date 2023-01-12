@@ -23,7 +23,8 @@ object DisassociateAttributeGroupResponse {
     __obj.asInstanceOf[DisassociateAttributeGroupResponse]
   }
   
-  extension [Self <: DisassociateAttributeGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateAttributeGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "applicationArn", value.asInstanceOf[js.Any])
     

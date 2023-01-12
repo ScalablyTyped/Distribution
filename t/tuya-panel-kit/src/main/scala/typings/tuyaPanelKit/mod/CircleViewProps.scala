@@ -64,7 +64,8 @@ object CircleViewProps {
     __obj.asInstanceOf[CircleViewProps]
   }
   
-  extension [Self <: CircleViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleViewProps] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

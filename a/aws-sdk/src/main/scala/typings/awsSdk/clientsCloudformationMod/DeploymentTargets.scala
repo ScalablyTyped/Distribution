@@ -33,7 +33,8 @@ object DeploymentTargets {
     __obj.asInstanceOf[DeploymentTargets]
   }
   
-  extension [Self <: DeploymentTargets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentTargets] (val x: Self) extends AnyVal {
     
     inline def setAccountFilterType(value: AccountFilterType): Self = StObject.set(x, "AccountFilterType", value.asInstanceOf[js.Any])
     

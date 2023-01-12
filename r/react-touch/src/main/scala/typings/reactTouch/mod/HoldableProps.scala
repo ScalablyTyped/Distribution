@@ -24,7 +24,8 @@ object HoldableProps {
     __obj.asInstanceOf[HoldableProps]
   }
   
-  extension [Self <: HoldableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoldableProps] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: HoldableConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

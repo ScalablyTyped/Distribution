@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Done[T]]
     }
     
-    extension [Self <: Done[?], T /* <: js.typedarray.ArrayBufferView */](x: Self & Done[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Done[?], T /* <: js.typedarray.ArrayBufferView */] (val x: Self & Done[T]) extends AnyVal {
       
       inline def setDone(value: `false`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[DoneValue[T]]
     }
     
-    extension [Self <: DoneValue[?], T](x: Self & DoneValue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoneValue[?], T] (val x: Self & DoneValue[T]) extends AnyVal {
       
       inline def setDone(value: `false`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[HighWaterMark]
     }
     
-    extension [Self <: HighWaterMark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighWaterMark] (val x: Self) extends AnyVal {
       
       inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Mode]
     }
     
-    extension [Self <: Mode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
       
       inline def setMode(value: byob): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
@@ -112,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Readable[RS, R]]
     }
     
-    extension [Self <: Readable[?, ?], RS /* <: ReadableStream[Any] */, R](x: Self & (Readable[RS, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Readable[?, ?], RS /* <: ReadableStream[Any] */, R] (val x: Self & (Readable[RS, R])) extends AnyVal {
       
       inline def setReadable(value: RS): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
@@ -135,7 +140,8 @@ object anon {
       __obj.asInstanceOf[Value[T]]
     }
     
-    extension [Self <: Value[?], T /* <: js.typedarray.ArrayBufferView */](x: Self & Value[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value[?], T /* <: js.typedarray.ArrayBufferView */] (val x: Self & Value[T]) extends AnyVal {
       
       inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -160,7 +166,8 @@ object anon {
       __obj.asInstanceOf[ValueUndefined]
     }
     
-    extension [Self <: ValueUndefined](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueUndefined] (val x: Self) extends AnyVal {
       
       inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       

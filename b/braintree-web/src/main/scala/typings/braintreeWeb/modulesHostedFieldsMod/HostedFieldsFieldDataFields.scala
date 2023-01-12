@@ -36,7 +36,8 @@ object HostedFieldsFieldDataFields {
     __obj.asInstanceOf[HostedFieldsFieldDataFields]
   }
   
-  extension [Self <: HostedFieldsFieldDataFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedFieldsFieldDataFields] (val x: Self) extends AnyVal {
     
     inline def setCardholderName(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
     

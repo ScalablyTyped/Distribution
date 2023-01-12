@@ -20,7 +20,8 @@ object FeatureIndex {
     __obj.asInstanceOf[FeatureIndex]
   }
   
-  extension [Self <: FeatureIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureIndex] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: GeoJSONFeature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     

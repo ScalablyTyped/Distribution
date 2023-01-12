@@ -187,7 +187,8 @@ object anon {
       __obj.asInstanceOf[PartialGenerator]
     }
     
-    extension [Self <: PartialGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialGenerator] (val x: Self) extends AnyVal {
       
       inline def setArrayExpression(value: Handler): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
       

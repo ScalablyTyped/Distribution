@@ -34,7 +34,8 @@ object League {
       __obj.asInstanceOf[LeagueDto]
     }
     
-    extension [Self <: LeagueDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeagueDto] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: js.Array[LeagueEntryDto]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object League {
       __obj.asInstanceOf[LeagueEntryDto]
     }
     
-    extension [Self <: LeagueEntryDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeagueEntryDto] (val x: Self) extends AnyVal {
       
       inline def setDivision(value: String): Self = StObject.set(x, "division", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object League {
       __obj.asInstanceOf[MiniSeriesDto]
     }
     
-    extension [Self <: MiniSeriesDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiniSeriesDto] (val x: Self) extends AnyVal {
       
       inline def setLosses(value: Double): Self = StObject.set(x, "losses", value.asInstanceOf[js.Any])
       

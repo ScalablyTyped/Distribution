@@ -41,7 +41,8 @@ object ItemReference {
     __obj.asInstanceOf[ItemReference]
   }
   
-  extension [Self <: ItemReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemReference] (val x: Self) extends AnyVal {
     
     inline def setDriveId(value: NullableOption[String]): Self = StObject.set(x, "driveId", value.asInstanceOf[js.Any])
     

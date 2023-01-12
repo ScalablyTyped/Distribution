@@ -47,7 +47,8 @@ object measure {
       __obj.asInstanceOf[Atlas]
     }
     
-    extension [Self <: Atlas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Atlas] (val x: Self) extends AnyVal {
       
       inline def setMeasureModels(value: () => Unit): Self = StObject.set(x, "measureModels", js.Any.fromFunction0(value))
       

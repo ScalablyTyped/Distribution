@@ -50,7 +50,8 @@ object ManufacturedItemDefinitionProperty {
     __obj.asInstanceOf[ManufacturedItemDefinitionProperty]
   }
   
-  extension [Self <: ManufacturedItemDefinitionProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManufacturedItemDefinitionProperty] (val x: Self) extends AnyVal {
     
     inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

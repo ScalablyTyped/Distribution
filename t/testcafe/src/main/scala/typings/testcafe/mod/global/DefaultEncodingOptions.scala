@@ -74,7 +74,8 @@ object DefaultEncodingOptions {
     __obj.asInstanceOf[DefaultEncodingOptions]
   }
   
-  extension [Self <: DefaultEncodingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultEncodingOptions] (val x: Self) extends AnyVal {
     
     inline def setCColonv(value: String): Self = StObject.set(x, "c:v", value.asInstanceOf[js.Any])
     

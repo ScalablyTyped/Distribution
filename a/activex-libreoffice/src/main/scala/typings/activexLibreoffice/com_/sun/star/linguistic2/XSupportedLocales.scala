@@ -46,7 +46,8 @@ object XSupportedLocales {
     __obj.asInstanceOf[XSupportedLocales]
   }
   
-  extension [Self <: XSupportedLocales](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSupportedLocales] (val x: Self) extends AnyVal {
     
     inline def setGetLocales(value: () => SafeArray[Locale]): Self = StObject.set(x, "getLocales", js.Any.fromFunction0(value))
     

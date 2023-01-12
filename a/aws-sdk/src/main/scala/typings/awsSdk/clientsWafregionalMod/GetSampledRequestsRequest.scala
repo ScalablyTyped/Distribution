@@ -38,7 +38,8 @@ object GetSampledRequestsRequest {
     __obj.asInstanceOf[GetSampledRequestsRequest]
   }
   
-  extension [Self <: GetSampledRequestsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSampledRequestsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxItems(value: GetSampledRequestsMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     

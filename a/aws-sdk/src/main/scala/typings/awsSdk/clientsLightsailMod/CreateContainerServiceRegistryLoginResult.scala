@@ -18,7 +18,8 @@ object CreateContainerServiceRegistryLoginResult {
     __obj.asInstanceOf[CreateContainerServiceRegistryLoginResult]
   }
   
-  extension [Self <: CreateContainerServiceRegistryLoginResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateContainerServiceRegistryLoginResult] (val x: Self) extends AnyVal {
     
     inline def setRegistryLogin(value: ContainerServiceRegistryLogin): Self = StObject.set(x, "registryLogin", value.asInstanceOf[js.Any])
     

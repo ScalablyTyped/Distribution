@@ -38,7 +38,8 @@ object ZoombarProviderDefaultSettings {
     __obj.asInstanceOf[ZoombarProviderDefaultSettings]
   }
   
-  extension [Self <: ZoombarProviderDefaultSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoombarProviderDefaultSettings] (val x: Self) extends AnyVal {
     
     inline def setTargetObject(value: Any): Self = StObject.set(x, "targetObject", value.asInstanceOf[js.Any])
     

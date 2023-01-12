@@ -23,7 +23,8 @@ object CommandWithSimpleStateBase {
     __obj.asInstanceOf[CommandWithSimpleStateBase]
   }
   
-  extension [Self <: CommandWithSimpleStateBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandWithSimpleStateBase] (val x: Self) extends AnyVal {
     
     inline def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }

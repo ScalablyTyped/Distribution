@@ -40,7 +40,8 @@ object FilterTransform {
     __obj.asInstanceOf[FilterTransform]
   }
   
-  extension [Self <: FilterTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterTransform] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: LogicalComposition[Predicate]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
   }

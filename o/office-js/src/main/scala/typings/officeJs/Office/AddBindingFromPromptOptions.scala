@@ -44,7 +44,8 @@ object AddBindingFromPromptOptions {
     __obj.asInstanceOf[AddBindingFromPromptOptions]
   }
   
-  extension [Self <: AddBindingFromPromptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddBindingFromPromptOptions] (val x: Self) extends AnyVal {
     
     inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     

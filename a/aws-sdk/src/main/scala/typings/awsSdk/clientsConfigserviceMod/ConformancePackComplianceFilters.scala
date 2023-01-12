@@ -23,7 +23,8 @@ object ConformancePackComplianceFilters {
     __obj.asInstanceOf[ConformancePackComplianceFilters]
   }
   
-  extension [Self <: ConformancePackComplianceFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformancePackComplianceFilters] (val x: Self) extends AnyVal {
     
     inline def setComplianceType(value: ConformancePackComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     

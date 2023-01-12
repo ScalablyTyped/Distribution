@@ -176,7 +176,8 @@ object mod {
       __obj.asInstanceOf[Edge]
     }
     
-    extension [Self <: Edge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object mod {
       __obj.asInstanceOf[EdgeConfig]
     }
     
-    extension [Self <: EdgeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EdgeConfig] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -252,7 +254,8 @@ object mod {
       __obj.asInstanceOf[GraphEdge]
     }
     
-    extension [Self <: GraphEdge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphEdge] (val x: Self) extends AnyVal {
       
       inline def setPoints(value: js.Array[X]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
@@ -293,7 +296,8 @@ object mod {
       __obj.asInstanceOf[GraphLabel]
     }
     
-    extension [Self <: GraphLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphLabel] (val x: Self) extends AnyVal {
       
       inline def setAcyclicer(value: String): Self = StObject.set(x, "acyclicer", value.asInstanceOf[js.Any])
       
@@ -362,7 +366,8 @@ object mod {
       __obj.asInstanceOf[NodeConfig]
     }
     
-    extension [Self <: NodeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeConfig] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

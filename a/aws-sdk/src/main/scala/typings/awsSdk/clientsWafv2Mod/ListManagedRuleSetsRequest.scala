@@ -28,7 +28,8 @@ object ListManagedRuleSetsRequest {
     __obj.asInstanceOf[ListManagedRuleSetsRequest]
   }
   
-  extension [Self <: ListManagedRuleSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListManagedRuleSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

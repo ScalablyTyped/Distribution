@@ -22,7 +22,8 @@ object CopyLogEntriesRequest {
     __obj.asInstanceOf[CopyLogEntriesRequest]
   }
   
-  extension [Self <: CopyLogEntriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyLogEntriesRequest] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

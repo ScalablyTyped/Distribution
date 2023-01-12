@@ -23,7 +23,8 @@ object ListProjectAssetsResponse {
     __obj.asInstanceOf[ListProjectAssetsResponse]
   }
   
-  extension [Self <: ListProjectAssetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProjectAssetsResponse] (val x: Self) extends AnyVal {
     
     inline def setAssetIds(value: AssetIDs): Self = StObject.set(x, "assetIds", value.asInstanceOf[js.Any])
     

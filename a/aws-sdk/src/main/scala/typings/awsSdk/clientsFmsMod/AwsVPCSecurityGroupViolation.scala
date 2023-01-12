@@ -33,7 +33,8 @@ object AwsVPCSecurityGroupViolation {
     __obj.asInstanceOf[AwsVPCSecurityGroupViolation]
   }
   
-  extension [Self <: AwsVPCSecurityGroupViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsVPCSecurityGroupViolation] (val x: Self) extends AnyVal {
     
     inline def setPartialMatches(value: PartialMatches): Self = StObject.set(x, "PartialMatches", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RecordMarkerDecisionAttributes {
     __obj.asInstanceOf[RecordMarkerDecisionAttributes]
   }
   
-  extension [Self <: RecordMarkerDecisionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordMarkerDecisionAttributes] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

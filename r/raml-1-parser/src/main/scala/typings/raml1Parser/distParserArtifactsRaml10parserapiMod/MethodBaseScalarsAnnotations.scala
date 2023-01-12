@@ -44,7 +44,8 @@ object MethodBaseScalarsAnnotations {
     __obj.asInstanceOf[MethodBaseScalarsAnnotations]
   }
   
-  extension [Self <: MethodBaseScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodBaseScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: () => js.Array[AnnotationRef]): Self = StObject.set(x, "description", js.Any.fromFunction0(value))
     

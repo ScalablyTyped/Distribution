@@ -28,7 +28,8 @@ object KnockoutObservableArray {
     __obj.asInstanceOf[KnockoutObservableArray[T]]
   }
   
-  extension [Self <: KnockoutObservableArray[?], T](x: Self & KnockoutObservableArray[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutObservableArray[?], T] (val x: Self & KnockoutObservableArray[T]) extends AnyVal {
     
     inline def setSetSourceKey(value: String => Unit): Self = StObject.set(x, "setSourceKey", js.Any.fromFunction1(value))
     

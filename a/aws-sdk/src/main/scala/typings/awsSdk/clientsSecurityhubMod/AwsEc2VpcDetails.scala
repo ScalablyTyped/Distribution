@@ -33,7 +33,8 @@ object AwsEc2VpcDetails {
     __obj.asInstanceOf[AwsEc2VpcDetails]
   }
   
-  extension [Self <: AwsEc2VpcDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2VpcDetails] (val x: Self) extends AnyVal {
     
     inline def setCidrBlockAssociationSet(value: CidrBlockAssociationList): Self = StObject.set(x, "CidrBlockAssociationSet", value.asInstanceOf[js.Any])
     

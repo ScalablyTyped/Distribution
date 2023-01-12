@@ -19,7 +19,8 @@ object ManifestsListResponse {
     __obj.asInstanceOf[ManifestsListResponse]
   }
   
-  extension [Self <: ManifestsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestsListResponse] (val x: Self) extends AnyVal {
     
     inline def setManifests(value: js.Array[Manifest]): Self = StObject.set(x, "manifests", value.asInstanceOf[js.Any])
     

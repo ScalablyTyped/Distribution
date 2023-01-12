@@ -25,7 +25,8 @@ object ContractTermAgent {
     __obj.asInstanceOf[ContractTermAgent]
   }
   
-  extension [Self <: ContractTermAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContractTermAgent] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

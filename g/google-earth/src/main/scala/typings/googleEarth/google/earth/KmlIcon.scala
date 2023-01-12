@@ -93,7 +93,8 @@ object KmlIcon {
     __obj.asInstanceOf[KmlIcon]
   }
   
-  extension [Self <: KmlIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlIcon] (val x: Self) extends AnyVal {
     
     inline def setGetH(value: () => Double): Self = StObject.set(x, "getH", js.Any.fromFunction0(value))
     

@@ -46,7 +46,8 @@ object CreateModel {
     __obj.asInstanceOf[CreateModel]
   }
   
-  extension [Self <: CreateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateModel] (val x: Self) extends AnyVal {
     
     inline def setCollaborators(value: js.Array[Collaborator | String | ZendeskID]): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
     

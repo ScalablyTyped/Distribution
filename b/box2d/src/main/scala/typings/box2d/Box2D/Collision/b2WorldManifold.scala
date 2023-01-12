@@ -39,7 +39,8 @@ object b2WorldManifold {
     __obj.asInstanceOf[b2WorldManifold]
   }
   
-  extension [Self <: b2WorldManifold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2WorldManifold] (val x: Self) extends AnyVal {
     
     inline def setInitialize(value: (b2Manifold, b2Transform, Double, b2Transform, Double) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction5(value))
     

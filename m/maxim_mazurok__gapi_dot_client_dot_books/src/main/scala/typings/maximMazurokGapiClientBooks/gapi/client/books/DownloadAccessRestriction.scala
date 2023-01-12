@@ -49,7 +49,8 @@ object DownloadAccessRestriction {
     __obj.asInstanceOf[DownloadAccessRestriction]
   }
   
-  extension [Self <: DownloadAccessRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadAccessRestriction] (val x: Self) extends AnyVal {
     
     inline def setDeviceAllowed(value: Boolean): Self = StObject.set(x, "deviceAllowed", value.asInstanceOf[js.Any])
     

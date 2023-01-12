@@ -574,7 +574,8 @@ object sapUxapObjectPageAccessibleLandmarkInfoMod {
       __obj.asInstanceOf[ObjectPageAccessibleLandmarkInfoSettings]
     }
     
-    extension [Self <: ObjectPageAccessibleLandmarkInfoSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageAccessibleLandmarkInfoSettings] (val x: Self) extends AnyVal {
       
       inline def setContentLabel(value: String | PropertyBindingInfo): Self = StObject.set(x, "contentLabel", value.asInstanceOf[js.Any])
       

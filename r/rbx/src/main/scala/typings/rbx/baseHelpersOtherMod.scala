@@ -46,7 +46,8 @@ object baseHelpersOtherMod {
       __obj.asInstanceOf[OtherHelpersProps]
     }
     
-    extension [Self <: OtherHelpersProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OtherHelpersProps] (val x: Self) extends AnyVal {
       
       inline def setMarginless(value: Boolean): Self = StObject.set(x, "marginless", value.asInstanceOf[js.Any])
       

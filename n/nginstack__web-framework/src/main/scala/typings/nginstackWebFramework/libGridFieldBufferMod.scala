@@ -32,7 +32,8 @@ object libGridFieldBufferMod {
       __obj.asInstanceOf[FieldBuffer]
     }
     
-    extension [Self <: FieldBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldBuffer] (val x: Self) extends AnyVal {
       
       inline def setValueWasInformedByUser(value: Boolean): Self = StObject.set(x, "valueWasInformedByUser", value.asInstanceOf[js.Any])
     }

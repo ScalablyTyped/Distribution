@@ -44,7 +44,8 @@ object XCloseBroadcaster {
     __obj.asInstanceOf[XCloseBroadcaster]
   }
   
-  extension [Self <: XCloseBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCloseBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddCloseListener(value: XCloseListener => Unit): Self = StObject.set(x, "addCloseListener", js.Any.fromFunction1(value))
     

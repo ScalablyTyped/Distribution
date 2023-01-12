@@ -23,7 +23,8 @@ object ChangeMessageVisibilityBatchResult {
     __obj.asInstanceOf[ChangeMessageVisibilityBatchResult]
   }
   
-  extension [Self <: ChangeMessageVisibilityBatchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeMessageVisibilityBatchResult] (val x: Self) extends AnyVal {
     
     inline def setFailed(value: BatchResultErrorEntryList): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     

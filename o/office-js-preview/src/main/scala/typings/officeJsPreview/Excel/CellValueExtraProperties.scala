@@ -38,7 +38,8 @@ object CellValueExtraProperties {
     __obj.asInstanceOf[CellValueExtraProperties]
   }
   
-  extension [Self <: CellValueExtraProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellValueExtraProperties] (val x: Self) extends AnyVal {
     
     inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     

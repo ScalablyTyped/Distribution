@@ -40,7 +40,8 @@ object typesMod {
       __obj.asInstanceOf[Mapping[K, V]]
     }
     
-    extension [Self <: Mapping[?, ?], K, V](x: Self & (Mapping[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mapping[?, ?], K, V] (val x: Self & (Mapping[K, V])) extends AnyVal {
       
       inline def setForEach(value: js.Function2[/* value */ V, /* key */ K, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       

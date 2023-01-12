@@ -32,7 +32,8 @@ object ITextLine {
     __obj.asInstanceOf[ITextLine]
   }
   
-  extension [Self <: ITextLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextLine] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     

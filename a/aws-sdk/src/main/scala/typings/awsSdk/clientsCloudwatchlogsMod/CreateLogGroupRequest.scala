@@ -28,7 +28,8 @@ object CreateLogGroupRequest {
     __obj.asInstanceOf[CreateLogGroupRequest]
   }
   
-  extension [Self <: CreateLogGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLogGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     

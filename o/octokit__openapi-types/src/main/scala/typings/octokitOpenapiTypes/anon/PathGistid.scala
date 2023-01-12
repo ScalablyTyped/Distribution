@@ -15,7 +15,8 @@ object PathGistid {
     __obj.asInstanceOf[PathGistid]
   }
   
-  extension [Self <: PathGistid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathGistid] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Gistid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

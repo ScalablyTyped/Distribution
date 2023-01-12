@@ -34,7 +34,8 @@ object ClientAuthentication {
     __obj.asInstanceOf[ClientAuthentication]
   }
   
-  extension [Self <: ClientAuthentication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientAuthentication] (val x: Self) extends AnyVal {
     
     inline def setSasl(value: Sasl): Self = StObject.set(x, "Sasl", value.asInstanceOf[js.Any])
     

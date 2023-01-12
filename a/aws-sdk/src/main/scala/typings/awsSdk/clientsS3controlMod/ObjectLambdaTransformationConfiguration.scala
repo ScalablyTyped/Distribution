@@ -26,7 +26,8 @@ object ObjectLambdaTransformationConfiguration {
     __obj.asInstanceOf[ObjectLambdaTransformationConfiguration]
   }
   
-  extension [Self <: ObjectLambdaTransformationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectLambdaTransformationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setActions(value: ObjectLambdaTransformationConfigurationActionsList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

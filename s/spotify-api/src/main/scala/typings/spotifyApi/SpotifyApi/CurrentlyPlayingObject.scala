@@ -39,7 +39,8 @@ object CurrentlyPlayingObject {
     __obj.asInstanceOf[CurrentlyPlayingObject]
   }
   
-  extension [Self <: CurrentlyPlayingObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentlyPlayingObject] (val x: Self) extends AnyVal {
     
     inline def setActions(value: ActionsObject): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

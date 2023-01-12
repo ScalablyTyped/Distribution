@@ -82,7 +82,8 @@ object ISchema {
     __obj.asInstanceOf[ISchema]
   }
   
-  extension [Self <: ISchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISchema] (val x: Self) extends AnyVal {
     
     inline def setAttributeGroups(value: ISchemaItemCollection): Self = StObject.set(x, "attributeGroups", value.asInstanceOf[js.Any])
     

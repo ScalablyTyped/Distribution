@@ -39,7 +39,8 @@ object FocusEvent {
     __obj.asInstanceOf[FocusEvent]
   }
   
-  extension [Self <: FocusEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusEvent] (val x: Self) extends AnyVal {
     
     inline def setFocusFlags(value: Double): Self = StObject.set(x, "FocusFlags", value.asInstanceOf[js.Any])
     

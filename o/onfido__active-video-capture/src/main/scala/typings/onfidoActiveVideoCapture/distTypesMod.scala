@@ -122,7 +122,8 @@ object distTypesMod {
       __obj.asInstanceOf[BoundingBox]
     }
     
-    extension [Self <: BoundingBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object distTypesMod {
       __obj.asInstanceOf[Euler]
     }
     
-    extension [Self <: Euler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Euler] (val x: Self) extends AnyVal {
       
       inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object distTypesMod {
       __obj.asInstanceOf[Vertex]
     }
     
-    extension [Self <: Vertex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vertex] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

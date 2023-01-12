@@ -18,7 +18,8 @@ object ThreadRowButtonClickEvent {
     __obj.asInstanceOf[ThreadRowButtonClickEvent]
   }
   
-  extension [Self <: ThreadRowButtonClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadRowButtonClickEvent] (val x: Self) extends AnyVal {
     
     inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     

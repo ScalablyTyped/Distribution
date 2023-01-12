@@ -103,7 +103,8 @@ object distThirdpartyMod {
       __obj.asInstanceOf[EtherWalletOptions]
     }
     
-    extension [Self <: EtherWalletOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EtherWalletOptions] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object distThirdpartyMod {
       __obj.asInstanceOf[EvpKdfOpts]
     }
     
-    extension [Self <: EvpKdfOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EvpKdfOpts] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

@@ -88,7 +88,8 @@ object UpdateElasticsearchDomainConfigRequest {
     __obj.asInstanceOf[UpdateElasticsearchDomainConfigRequest]
   }
   
-  extension [Self <: UpdateElasticsearchDomainConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateElasticsearchDomainConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessPolicies(value: PolicyDocument): Self = StObject.set(x, "AccessPolicies", value.asInstanceOf[js.Any])
     

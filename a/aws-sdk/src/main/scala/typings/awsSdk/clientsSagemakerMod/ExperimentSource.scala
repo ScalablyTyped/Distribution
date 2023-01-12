@@ -23,7 +23,8 @@ object ExperimentSource {
     __obj.asInstanceOf[ExperimentSource]
   }
   
-  extension [Self <: ExperimentSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentSource] (val x: Self) extends AnyVal {
     
     inline def setSourceArn(value: ExperimentSourceArn): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object RangeCursor {
     __obj.asInstanceOf[RangeCursor[T]]
   }
   
-  extension [Self <: RangeCursor[?], T](x: Self & RangeCursor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeCursor[?], T] (val x: Self & RangeCursor[T]) extends AnyVal {
     
     inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

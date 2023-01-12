@@ -17,7 +17,8 @@ object P2pAmountRange {
     __obj.asInstanceOf[P2pAmountRange]
   }
   
-  extension [Self <: P2pAmountRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: P2pAmountRange] (val x: Self) extends AnyVal {
     
     inline def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     

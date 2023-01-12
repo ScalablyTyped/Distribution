@@ -33,7 +33,8 @@ object libThemeContextProviderMod extends Shortcut {
       __obj.asInstanceOf[ThemeContextProviderProps]
     }
     
-    extension [Self <: ThemeContextProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeContextProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

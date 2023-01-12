@@ -15,7 +15,8 @@ object LineData {
     __obj.asInstanceOf[LineData]
   }
   
-  extension [Self <: LineData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineData] (val x: Self) extends AnyVal {
     
     inline def setDataSets(value: js.Array[LineDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object IOCRPages {
     __obj.asInstanceOf[IOCRPages]
   }
   
-  extension [Self <: IOCRPages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOCRPages] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IOCRPage) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

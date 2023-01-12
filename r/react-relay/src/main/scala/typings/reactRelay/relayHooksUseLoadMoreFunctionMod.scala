@@ -88,7 +88,8 @@ object relayHooksUseLoadMoreFunctionMod {
       __obj.asInstanceOf[UseLoadMoreFunctionArgs]
     }
     
-    extension [Self <: UseLoadMoreFunctionArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseLoadMoreFunctionArgs] (val x: Self) extends AnyVal {
       
       inline def setComponentDisplayName(value: String): Self = StObject.set(x, "componentDisplayName", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Reason]
     }
     
-    extension [Self <: Reason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
       
       inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Status[ResolveValueType]]
     }
     
-    extension [Self <: Status[?], ResolveValueType](x: Self & Status[ResolveValueType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status[?], ResolveValueType] (val x: Self & Status[ResolveValueType]) extends AnyVal {
       
       inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object pem {
       __obj.asInstanceOf[EncodeOptions]
     }
     
-    extension [Self <: EncodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxline(value: Double): Self = StObject.set(x, "maxline", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object pem {
       __obj.asInstanceOf[ObjectPEM]
     }
     
-    extension [Self <: ObjectPEM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPEM] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Bytes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

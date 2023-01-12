@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsMicrophoneMod extends Shortcut {
       __obj.asInstanceOf[MicrophoneProps]
     }
     
-    extension [Self <: MicrophoneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MicrophoneProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

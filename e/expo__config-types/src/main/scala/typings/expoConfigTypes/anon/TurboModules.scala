@@ -18,7 +18,8 @@ object TurboModules {
     __obj.asInstanceOf[TurboModules]
   }
   
-  extension [Self <: TurboModules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TurboModules] (val x: Self) extends AnyVal {
     
     inline def setTurboModules(value: Boolean): Self = StObject.set(x, "turboModules", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object `404Content48422Content397` {
     __obj.asInstanceOf[`404Content48422Content397`]
   }
   
-  extension [Self <: `404Content48422Content397`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `404Content48422Content397`] (val x: Self) extends AnyVal {
     
     inline def set404(value: Content48): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ShieldedInstanceConfig {
     __obj.asInstanceOf[ShieldedInstanceConfig]
   }
   
-  extension [Self <: ShieldedInstanceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShieldedInstanceConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableIntegrityMonitoring(value: Boolean): Self = StObject.set(x, "enableIntegrityMonitoring", value.asInstanceOf[js.Any])
     

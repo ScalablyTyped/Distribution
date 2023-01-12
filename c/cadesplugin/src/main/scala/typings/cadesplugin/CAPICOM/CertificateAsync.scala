@@ -90,7 +90,8 @@ object CertificateAsync {
     __obj.asInstanceOf[CertificateAsync]
   }
   
-  extension [Self <: CertificateAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateAsync] (val x: Self) extends AnyVal {
     
     inline def setDisplay(
       value: /* import warning: importer.ImportType#apply Failed type conversion: (): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(): void> : // tslint:disable-line ban-types

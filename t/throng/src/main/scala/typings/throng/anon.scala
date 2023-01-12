@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[startWorkerCallbacksignal]
     }
     
-    extension [Self <: startWorkerCallbacksignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: startWorkerCallbacksignal] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object anon {
       __obj.asInstanceOf[workerWorkerCallbacksigna]
     }
     
-    extension [Self <: workerWorkerCallbacksigna](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: workerWorkerCallbacksigna] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

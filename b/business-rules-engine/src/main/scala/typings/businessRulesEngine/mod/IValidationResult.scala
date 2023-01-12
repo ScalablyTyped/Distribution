@@ -42,7 +42,8 @@ object IValidationResult {
     __obj.asInstanceOf[IValidationResult]
   }
   
-  extension [Self <: IValidationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValidationResult] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: IValidationResult => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object SingleCellKeyDown {
     __obj.asInstanceOf[SingleCellKeyDown]
   }
   
-  extension [Self <: SingleCellKeyDown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleCellKeyDown] (val x: Self) extends AnyVal {
     
     inline def setEventInfo(value: DomEvent): Self = StObject.set(x, "eventInfo", value.asInstanceOf[js.Any])
     

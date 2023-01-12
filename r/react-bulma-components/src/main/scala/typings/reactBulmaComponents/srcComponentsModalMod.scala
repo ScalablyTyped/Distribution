@@ -30,7 +30,8 @@ object srcComponentsModalMod extends Shortcut {
       __obj.asInstanceOf[ModalCardHeaderProps]
     }
     
-    extension [Self <: ModalCardHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalCardHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
@@ -69,7 +70,8 @@ object srcComponentsModalMod extends Shortcut {
       __obj.asInstanceOf[ModalProps]
     }
     
-    extension [Self <: ModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

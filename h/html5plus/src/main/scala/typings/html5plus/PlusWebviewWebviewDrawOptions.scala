@@ -66,7 +66,8 @@ object PlusWebviewWebviewDrawOptions {
     __obj.asInstanceOf[PlusWebviewWebviewDrawOptions]
   }
   
-  extension [Self <: PlusWebviewWebviewDrawOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewDrawOptions] (val x: Self) extends AnyVal {
     
     inline def setBit(value: RGB565 | ARGB): Self = StObject.set(x, "bit", value.asInstanceOf[js.Any])
     

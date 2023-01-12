@@ -28,7 +28,8 @@ object IRuntimeConfig {
     __obj.asInstanceOf[IRuntimeConfig]
   }
   
-  extension [Self <: IRuntimeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRuntimeConfig] (val x: Self) extends AnyVal {
     
     inline def setIsDryRun(value: Boolean): Self = StObject.set(x, "isDryRun", value.asInstanceOf[js.Any])
     

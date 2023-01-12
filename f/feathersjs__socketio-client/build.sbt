@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "feathersjs__socketio-client"
-version := "1.0-dt-20211202Z-32bd45"
+version := "1.0-dt-20211202Z-8b6392"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

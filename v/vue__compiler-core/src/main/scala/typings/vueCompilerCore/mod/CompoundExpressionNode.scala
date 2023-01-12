@@ -40,7 +40,8 @@ object CompoundExpressionNode {
     __obj.asInstanceOf[CompoundExpressionNode]
   }
   
-  extension [Self <: CompoundExpressionNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompoundExpressionNode] (val x: Self) extends AnyVal {
     
     inline def setChildren(
       value: js.Array[

@@ -18,7 +18,8 @@ object TreeListDragstartEvent {
     __obj.asInstanceOf[TreeListDragstartEvent]
   }
   
-  extension [Self <: TreeListDragstartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListDragstartEvent] (val x: Self) extends AnyVal {
     
     inline def setSource(value: TreeListModel): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

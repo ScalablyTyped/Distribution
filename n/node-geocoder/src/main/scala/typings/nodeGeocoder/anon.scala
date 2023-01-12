@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Confidence]
     }
     
-    extension [Self <: Confidence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Confidence] (val x: Self) extends AnyVal {
       
       inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Level1long]
     }
     
-    extension [Self <: Level1long](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level1long] (val x: Self) extends AnyVal {
       
       inline def setLevel1long(value: String): Self = StObject.set(x, "level1long", value.asInstanceOf[js.Any])
       

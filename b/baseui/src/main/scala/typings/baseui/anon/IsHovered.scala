@@ -17,7 +17,8 @@ object IsHovered {
     __obj.asInstanceOf[IsHovered]
   }
   
-  extension [Self <: IsHovered](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsHovered] (val x: Self) extends AnyVal {
     
     inline def setIsFocusVisible(value: Boolean): Self = StObject.set(x, "isFocusVisible", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ThumbnailTransformation {
     __obj.asInstanceOf[ThumbnailTransformation]
   }
   
-  extension [Self <: ThumbnailTransformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThumbnailTransformation] (val x: Self) extends AnyVal {
     
     inline def setCrop(value: String): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     

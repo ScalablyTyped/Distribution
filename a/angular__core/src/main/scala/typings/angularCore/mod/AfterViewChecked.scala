@@ -20,7 +20,8 @@ object AfterViewChecked {
     __obj.asInstanceOf[AfterViewChecked]
   }
   
-  extension [Self <: AfterViewChecked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterViewChecked] (val x: Self) extends AnyVal {
     
     inline def setNgAfterViewChecked(value: () => Unit): Self = StObject.set(x, "ngAfterViewChecked", js.Any.fromFunction0(value))
   }

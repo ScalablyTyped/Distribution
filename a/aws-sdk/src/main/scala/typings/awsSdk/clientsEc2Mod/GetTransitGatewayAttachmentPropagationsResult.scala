@@ -23,7 +23,8 @@ object GetTransitGatewayAttachmentPropagationsResult {
     __obj.asInstanceOf[GetTransitGatewayAttachmentPropagationsResult]
   }
   
-  extension [Self <: GetTransitGatewayAttachmentPropagationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTransitGatewayAttachmentPropagationsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

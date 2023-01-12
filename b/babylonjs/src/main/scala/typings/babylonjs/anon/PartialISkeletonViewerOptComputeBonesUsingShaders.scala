@@ -27,7 +27,8 @@ object PartialISkeletonViewerOptComputeBonesUsingShaders {
     __obj.asInstanceOf[PartialISkeletonViewerOptComputeBonesUsingShaders]
   }
   
-  extension [Self <: PartialISkeletonViewerOptComputeBonesUsingShaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialISkeletonViewerOptComputeBonesUsingShaders] (val x: Self) extends AnyVal {
     
     inline def setComputeBonesUsingShaders(value: Boolean): Self = StObject.set(x, "computeBonesUsingShaders", value.asInstanceOf[js.Any])
     

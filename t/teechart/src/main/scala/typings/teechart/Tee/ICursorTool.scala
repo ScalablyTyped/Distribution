@@ -52,7 +52,8 @@ object ICursorTool {
     __obj.asInstanceOf[ICursorTool]
   }
   
-  extension [Self <: ICursorTool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICursorTool] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

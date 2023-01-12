@@ -23,7 +23,8 @@ object ListBrowserSettingsRequest {
     __obj.asInstanceOf[ListBrowserSettingsRequest]
   }
   
-  extension [Self <: ListBrowserSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBrowserSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

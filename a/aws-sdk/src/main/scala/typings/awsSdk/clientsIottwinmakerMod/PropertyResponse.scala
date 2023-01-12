@@ -23,7 +23,8 @@ object PropertyResponse {
     __obj.asInstanceOf[PropertyResponse]
   }
   
-  extension [Self <: PropertyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyResponse] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: PropertyDefinitionResponse): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

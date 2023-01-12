@@ -65,7 +65,8 @@ object Channel {
     __obj.asInstanceOf[Channel]
   }
   
-  extension [Self <: Channel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

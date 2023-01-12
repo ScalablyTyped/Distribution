@@ -31,7 +31,8 @@ object ResourcePolicyInstanceSchedulePolicy {
     __obj.asInstanceOf[ResourcePolicyInstanceSchedulePolicy]
   }
   
-  extension [Self <: ResourcePolicyInstanceSchedulePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicyInstanceSchedulePolicy] (val x: Self) extends AnyVal {
     
     inline def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     

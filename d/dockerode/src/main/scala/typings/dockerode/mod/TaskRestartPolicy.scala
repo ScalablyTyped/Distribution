@@ -21,7 +21,8 @@ object TaskRestartPolicy {
     __obj.asInstanceOf[TaskRestartPolicy]
   }
   
-  extension [Self <: TaskRestartPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskRestartPolicy] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

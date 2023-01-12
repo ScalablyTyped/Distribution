@@ -739,7 +739,8 @@ object SheetCell {
     __obj.asInstanceOf[SheetCell]
   }
   
-  extension [Self <: SheetCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetCell] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteName(value: String): Self = StObject.set(x, "AbsoluteName", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IOrderDirectionEnum {
     __obj.asInstanceOf[IOrderDirectionEnum]
   }
   
-  extension [Self <: IOrderDirectionEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOrderDirectionEnum] (val x: Self) extends AnyVal {
     
     inline def setASCENDING(value: OrderDirection): Self = StObject.set(x, "ASCENDING", value.asInstanceOf[js.Any])
     

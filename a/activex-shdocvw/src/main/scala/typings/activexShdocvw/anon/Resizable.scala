@@ -15,7 +15,8 @@ object Resizable {
     __obj.asInstanceOf[Resizable]
   }
   
-  extension [Self <: Resizable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resizable] (val x: Self) extends AnyVal {
     
     inline def setResizable(value: Boolean): Self = StObject.set(x, "Resizable", value.asInstanceOf[js.Any])
   }

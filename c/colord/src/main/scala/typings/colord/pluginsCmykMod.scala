@@ -48,7 +48,8 @@ object pluginsCmykMod extends Shortcut {
         __obj.asInstanceOf[Colord]
       }
       
-      extension [Self <: Colord](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Colord] (val x: Self) extends AnyVal {
         
         inline def setToCmyk(value: () => CmykaColor): Self = StObject.set(x, "toCmyk", js.Any.fromFunction0(value))
         

@@ -38,7 +38,8 @@ object CreateGroupInput {
     __obj.asInstanceOf[CreateGroupInput]
   }
   
-  extension [Self <: CreateGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGroupInput] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: GroupConfigurationList): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

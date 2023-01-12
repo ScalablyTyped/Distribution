@@ -18,7 +18,8 @@ object SsoSessionNotFoundResult {
     __obj.asInstanceOf[SsoSessionNotFoundResult]
   }
   
-  extension [Self <: SsoSessionNotFoundResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsoSessionNotFoundResult] (val x: Self) extends AnyVal {
     
     inline def setSso(value: `false`): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
   }

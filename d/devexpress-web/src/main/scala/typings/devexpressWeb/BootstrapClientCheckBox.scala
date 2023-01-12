@@ -98,7 +98,8 @@ object BootstrapClientCheckBox {
     __obj.asInstanceOf[BootstrapClientCheckBox]
   }
   
-  extension [Self <: BootstrapClientCheckBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientCheckBox] (val x: Self) extends AnyVal {
     
     inline def setCheckedChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[BootstrapClientCheckBox]]): Self = StObject.set(x, "CheckedChanged", value.asInstanceOf[js.Any])
     

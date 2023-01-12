@@ -47,7 +47,8 @@ object Request {
     __obj.asInstanceOf[Request[T]]
   }
   
-  extension [Self <: Request[?], T](x: Self & Request[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Request[?], T] (val x: Self & Request[T]) extends AnyVal {
     
     inline def setConfigParams(value: T): Self = StObject.set(x, "configParams", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object FormatDisplayNameOptions {
     __obj.asInstanceOf[FormatDisplayNameOptions]
   }
   
-  extension [Self <: FormatDisplayNameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatDisplayNameOptions] (val x: Self) extends AnyVal {
     
     inline def setFallback(value: code | none): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     

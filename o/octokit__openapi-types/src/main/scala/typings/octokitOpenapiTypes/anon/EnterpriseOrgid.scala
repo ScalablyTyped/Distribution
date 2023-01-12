@@ -26,7 +26,8 @@ object EnterpriseOrgid {
     __obj.asInstanceOf[EnterpriseOrgid]
   }
   
-  extension [Self <: EnterpriseOrgid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterpriseOrgid] (val x: Self) extends AnyVal {
     
     inline def setEnterprise(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['enterprise'] */ js.Any

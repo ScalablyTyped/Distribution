@@ -51,7 +51,8 @@ object GetLayoutMetricsResponse {
     __obj.asInstanceOf[GetLayoutMetricsResponse]
   }
   
-  extension [Self <: GetLayoutMetricsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLayoutMetricsResponse] (val x: Self) extends AnyVal {
     
     inline def setContentSize(value: Rect): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object csstransitionMod {
       __obj.asInstanceOf[CSSTransitionClassNames]
     }
     
-    extension [Self <: CSSTransitionClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSTransitionClassNames] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: String): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       

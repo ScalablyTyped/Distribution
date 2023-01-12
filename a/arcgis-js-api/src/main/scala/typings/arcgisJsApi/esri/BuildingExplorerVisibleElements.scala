@@ -34,7 +34,8 @@ object BuildingExplorerVisibleElements {
     __obj.asInstanceOf[BuildingExplorerVisibleElements]
   }
   
-  extension [Self <: BuildingExplorerVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingExplorerVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setDisciplines(value: Boolean): Self = StObject.set(x, "disciplines", value.asInstanceOf[js.Any])
     

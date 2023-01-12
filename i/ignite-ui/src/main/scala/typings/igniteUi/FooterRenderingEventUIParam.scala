@@ -18,7 +18,8 @@ object FooterRenderingEventUIParam {
     __obj.asInstanceOf[FooterRenderingEventUIParam]
   }
   
-  extension [Self <: FooterRenderingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FooterRenderingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

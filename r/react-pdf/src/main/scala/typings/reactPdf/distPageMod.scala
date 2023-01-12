@@ -54,7 +54,8 @@ object distPageMod {
       __obj.asInstanceOf[PDFPageItem]
     }
     
-    extension [Self <: PDFPageItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFPageItem] (val x: Self) extends AnyVal {
       
       inline def setCommonObjs(value: js.Object): Self = StObject.set(x, "commonObjs", value.asInstanceOf[js.Any])
       
@@ -254,7 +255,8 @@ object distPageMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setCanvasRef(value: LegacyRef[HTMLCanvasElement]): Self = StObject.set(x, "canvasRef", value.asInstanceOf[js.Any])
       
@@ -413,7 +415,8 @@ object distPageMod {
       __obj.asInstanceOf[TextItem]
     }
     
-    extension [Self <: TextItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextItem] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -468,7 +471,8 @@ object distPageMod {
       __obj.asInstanceOf[TextLayerItemInternal]
     }
     
-    extension [Self <: TextLayerItemInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextLayerItemInternal] (val x: Self) extends AnyVal {
       
       inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
       

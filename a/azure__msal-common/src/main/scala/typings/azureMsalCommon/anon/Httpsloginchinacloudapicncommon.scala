@@ -59,7 +59,8 @@ object Httpsloginchinacloudapicncommon {
     __obj.asInstanceOf[Httpsloginchinacloudapicncommon]
   }
   
-  extension [Self <: Httpsloginchinacloudapicncommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Httpsloginchinacloudapicncommon] (val x: Self) extends AnyVal {
     
     inline def setHttpsColonSlashSlashloginDotchinacloudapiDotcnSlashcommonSlash(value: Authorizationendpoint): Self = StObject.set(x, "https://login.chinacloudapi.cn/common/", value.asInstanceOf[js.Any])
     

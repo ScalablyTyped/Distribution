@@ -23,7 +23,8 @@ object RouteName {
     __obj.asInstanceOf[RouteName[T]]
   }
   
-  extension [Self <: RouteName[?], T /* <: NavigationParams */](x: Self & RouteName[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteName[?], T /* <: NavigationParams */] (val x: Self & RouteName[T]) extends AnyVal {
     
     inline def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

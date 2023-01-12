@@ -25,7 +25,8 @@ object GooglePrivacyDlpV2LargeCustomDictionaryConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2LargeCustomDictionaryConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2LargeCustomDictionaryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2LargeCustomDictionaryConfig] (val x: Self) extends AnyVal {
     
     inline def setBigQueryField(value: GooglePrivacyDlpV2BigQueryField): Self = StObject.set(x, "bigQueryField", value.asInstanceOf[js.Any])
     

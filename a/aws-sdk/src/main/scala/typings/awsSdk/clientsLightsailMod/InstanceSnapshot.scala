@@ -93,7 +93,8 @@ object InstanceSnapshot {
     __obj.asInstanceOf[InstanceSnapshot]
   }
   
-  extension [Self <: InstanceSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceSnapshot] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -112,7 +112,8 @@ object distSrcPubsubMod {
       __obj.asInstanceOf[SubscribeOptions]
     }
     
-    extension [Self <: SubscribeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       

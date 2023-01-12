@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[BayesClassifier]
     }
     
-    extension [Self <: BayesClassifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BayesClassifier] (val x: Self) extends AnyVal {
       
       inline def setAddDocument(value: (String, String) => Unit): Self = StObject.set(x, "addDocument", js.Any.fromFunction2(value))
       
@@ -88,7 +89,8 @@ object mod {
       __obj.asInstanceOf[Classifications]
     }
     
-    extension [Self <: Classifications](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Classifications] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

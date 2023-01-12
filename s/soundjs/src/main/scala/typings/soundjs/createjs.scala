@@ -57,7 +57,8 @@ object createjs {
       __obj.asInstanceOf[AbstractPlugin]
     }
     
-    extension [Self <: AbstractPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractPlugin] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (String, Double, Double) => AbstractSoundInstance): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
       
@@ -196,7 +197,8 @@ object createjs {
       __obj.asInstanceOf[FlashAudioPlugin]
     }
     
-    extension [Self <: FlashAudioPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlashAudioPlugin] (val x: Self) extends AnyVal {
       
       inline def setFlashReady(value: Boolean): Self = StObject.set(x, "flashReady", value.asInstanceOf[js.Any])
       
@@ -250,7 +252,8 @@ object createjs {
       __obj.asInstanceOf[FlashPlugin]
     }
     
-    extension [Self <: FlashPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlashPlugin] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: String => AbstractSoundInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -306,7 +309,8 @@ object createjs {
       __obj.asInstanceOf[HTMLAudioPlugin]
     }
     
-    extension [Self <: HTMLAudioPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLAudioPlugin] (val x: Self) extends AnyVal {
       
       inline def setDefaultNumChannels(value: Double): Self = StObject.set(x, "defaultNumChannels", value.asInstanceOf[js.Any])
       
@@ -355,7 +359,8 @@ object createjs {
       __obj.asInstanceOf[PlayPropsConfig]
     }
     
-    extension [Self <: PlayPropsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayPropsConfig] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -415,7 +420,8 @@ object createjs {
       __obj.asInstanceOf[WebAudioPlugin]
     }
     
-    extension [Self <: WebAudioPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebAudioPlugin] (val x: Self) extends AnyVal {
       
       inline def setContext(value: AudioContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

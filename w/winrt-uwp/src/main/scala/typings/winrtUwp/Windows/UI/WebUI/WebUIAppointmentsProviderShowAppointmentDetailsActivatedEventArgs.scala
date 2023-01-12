@@ -50,7 +50,8 @@ object WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
     __obj.asInstanceOf[WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs]
   }
   
-  extension [Self <: WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

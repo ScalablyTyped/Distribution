@@ -41,7 +41,8 @@ object esComponentsSiderMenuSiderMenuMod {
       __obj.asInstanceOf[PrivateSiderMenuProps]
     }
     
-    extension [Self <: PrivateSiderMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateSiderMenuProps] (val x: Self) extends AnyVal {
       
       inline def setMatchMenuKeys(value: js.Array[String]): Self = StObject.set(x, "matchMenuKeys", value.asInstanceOf[js.Any])
       

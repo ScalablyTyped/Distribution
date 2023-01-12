@@ -273,7 +273,8 @@ object PlotPcDataLabelsOptions {
     __obj.asInstanceOf[PlotPcDataLabelsOptions]
   }
   
-  extension [Self <: PlotPcDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPcDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

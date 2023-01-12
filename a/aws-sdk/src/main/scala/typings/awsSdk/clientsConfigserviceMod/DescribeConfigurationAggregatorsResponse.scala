@@ -23,7 +23,8 @@ object DescribeConfigurationAggregatorsResponse {
     __obj.asInstanceOf[DescribeConfigurationAggregatorsResponse]
   }
   
-  extension [Self <: DescribeConfigurationAggregatorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConfigurationAggregatorsResponse] (val x: Self) extends AnyVal {
     
     inline def setConfigurationAggregators(value: ConfigurationAggregatorList): Self = StObject.set(x, "ConfigurationAggregators", value.asInstanceOf[js.Any])
     

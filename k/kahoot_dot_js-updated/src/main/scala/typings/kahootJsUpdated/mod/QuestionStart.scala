@@ -41,7 +41,8 @@ object QuestionStart {
     __obj.asInstanceOf[QuestionStart]
   }
   
-  extension [Self <: QuestionStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuestionStart] (val x: Self) extends AnyVal {
     
     inline def setAnswer(value: /* choice */ Double => js.Promise[LiveEventTimetrack]): Self = StObject.set(x, "answer", js.Any.fromFunction1(value))
   }

@@ -69,7 +69,8 @@ object SparklineCategoryAxisItem {
     __obj.asInstanceOf[SparklineCategoryAxisItem]
   }
   
-  extension [Self <: SparklineCategoryAxisItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineCategoryAxisItem] (val x: Self) extends AnyVal {
     
     inline def setAutoBaseUnitSteps(value: Any): Self = StObject.set(x, "autoBaseUnitSteps", value.asInstanceOf[js.Any])
     

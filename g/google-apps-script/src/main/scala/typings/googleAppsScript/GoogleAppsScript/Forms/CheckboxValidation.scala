@@ -41,7 +41,8 @@ object CheckboxValidation {
     __obj.asInstanceOf[CheckboxValidation]
   }
   
-  extension [Self <: CheckboxValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxValidation] (val x: Self) extends AnyVal {
     
     inline def setRequireSelectAtLeast(value: Integer => CheckboxValidation): Self = StObject.set(x, "requireSelectAtLeast", js.Any.fromFunction1(value))
     

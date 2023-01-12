@@ -27,7 +27,8 @@ object GetAttributeQueryOptions {
     __obj.asInstanceOf[GetAttributeQueryOptions]
   }
   
-  extension [Self <: GetAttributeQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAttributeQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: getAttributeQueryMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

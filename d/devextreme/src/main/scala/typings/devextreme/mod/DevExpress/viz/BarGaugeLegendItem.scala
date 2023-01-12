@@ -20,7 +20,8 @@ object BarGaugeLegendItem {
     __obj.asInstanceOf[BarGaugeLegendItem]
   }
   
-  extension [Self <: BarGaugeLegendItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarGaugeLegendItem] (val x: Self) extends AnyVal {
     
     inline def setItem(value: BarGaugeBarInfo): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

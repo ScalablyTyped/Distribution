@@ -165,7 +165,8 @@ object sapUiCoreUtilExportTypeCSVMod {
       __obj.asInstanceOf[ExportTypeCSVSettings]
     }
     
-    extension [Self <: ExportTypeCSVSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportTypeCSVSettings] (val x: Self) extends AnyVal {
       
       inline def setSeparatorChar(value: String | PropertyBindingInfo): Self = StObject.set(x, "separatorChar", value.asInstanceOf[js.Any])
       

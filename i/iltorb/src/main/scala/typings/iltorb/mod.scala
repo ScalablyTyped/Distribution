@@ -95,7 +95,8 @@ object mod {
       __obj.asInstanceOf[BrotliEncodeParams]
     }
     
-    extension [Self <: BrotliEncodeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrotliEncodeParams] (val x: Self) extends AnyVal {
       
       inline def setDisable_literal_context_modeling(value: Boolean): Self = StObject.set(x, "disable_literal_context_modeling", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object mod {
       __obj.asInstanceOf[BrotliFlushable]
     }
     
-    extension [Self <: BrotliFlushable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrotliFlushable] (val x: Self) extends AnyVal {
       
       inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     }

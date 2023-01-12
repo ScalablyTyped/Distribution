@@ -32,7 +32,8 @@ object AclFilter {
     __obj.asInstanceOf[AclFilter]
   }
   
-  extension [Self <: AclFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AclFilter] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

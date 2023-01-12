@@ -58,7 +58,8 @@ object MetricDatum {
     __obj.asInstanceOf[MetricDatum]
   }
   
-  extension [Self <: MetricDatum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricDatum] (val x: Self) extends AnyVal {
     
     inline def setCounts(value: Counts): Self = StObject.set(x, "Counts", value.asInstanceOf[js.Any])
     

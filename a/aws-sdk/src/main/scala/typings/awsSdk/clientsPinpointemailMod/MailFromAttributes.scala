@@ -32,7 +32,8 @@ object MailFromAttributes {
     __obj.asInstanceOf[MailFromAttributes]
   }
   
-  extension [Self <: MailFromAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailFromAttributes] (val x: Self) extends AnyVal {
     
     inline def setBehaviorOnMxFailure(value: BehaviorOnMxFailure): Self = StObject.set(x, "BehaviorOnMxFailure", value.asInstanceOf[js.Any])
     

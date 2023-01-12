@@ -37,7 +37,8 @@ object Scriptlet {
     __obj.asInstanceOf[Scriptlet]
   }
   
-  extension [Self <: Scriptlet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scriptlet] (val x: Self) extends AnyVal {
     
     inline def setAboutBox(value: () => Unit): Self = StObject.set(x, "AboutBox", js.Any.fromFunction0(value))
     

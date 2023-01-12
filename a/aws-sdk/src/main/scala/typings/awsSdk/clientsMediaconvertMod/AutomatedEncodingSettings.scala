@@ -18,7 +18,8 @@ object AutomatedEncodingSettings {
     __obj.asInstanceOf[AutomatedEncodingSettings]
   }
   
-  extension [Self <: AutomatedEncodingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomatedEncodingSettings] (val x: Self) extends AnyVal {
     
     inline def setAbrSettings(value: AutomatedAbrSettings): Self = StObject.set(x, "AbrSettings", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ISequentialStream {
     __obj.asInstanceOf[ISequentialStream]
   }
   
-  extension [Self <: ISequentialStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISequentialStream] (val x: Self) extends AnyVal {
     
     inline def setMSXML2DotISequentialStream_typekey(value: ISequentialStream): Self = StObject.set(x, "MSXML2.ISequentialStream_typekey", value.asInstanceOf[js.Any])
     

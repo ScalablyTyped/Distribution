@@ -18,7 +18,8 @@ object WirelessConnection {
     __obj.asInstanceOf[WirelessConnection]
   }
   
-  extension [Self <: WirelessConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WirelessConnection] (val x: Self) extends AnyVal {
     
     inline def setIsWifiEnabled(value: Boolean): Self = StObject.set(x, "IsWifiEnabled", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object RPCOptions {
     __obj.asInstanceOf[RPCOptions]
   }
   
-  extension [Self <: RPCOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RPCOptions] (val x: Self) extends AnyVal {
     
     inline def setProcess(value: Boolean): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object ClientsInfo {
     __obj.asInstanceOf[ClientsInfo]
   }
   
-  extension [Self <: ClientsInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientsInfo] (val x: Self) extends AnyVal {
     
     inline def setBlocked_clients(value: String): Self = StObject.set(x, "blocked_clients", value.asInstanceOf[js.Any])
     

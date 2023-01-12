@@ -23,7 +23,8 @@ object ResourceCount {
     __obj.asInstanceOf[ResourceCount]
   }
   
-  extension [Self <: ResourceCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceCount] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object DiskInstantiationConfig {
     __obj.asInstanceOf[DiskInstantiationConfig]
   }
   
-  extension [Self <: DiskInstantiationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskInstantiationConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
     

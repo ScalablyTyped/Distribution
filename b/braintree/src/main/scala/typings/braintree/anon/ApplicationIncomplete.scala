@@ -40,7 +40,8 @@ object ApplicationIncomplete {
     __obj.asInstanceOf[ApplicationIncomplete]
   }
   
-  extension [Self <: ApplicationIncomplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationIncomplete] (val x: Self) extends AnyVal {
     
     inline def setApplicationIncomplete(value: application_incomplete): Self = StObject.set(x, "ApplicationIncomplete", value.asInstanceOf[js.Any])
     

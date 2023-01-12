@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cli-truncate"
-version := "3.1.0-4d8c9f"
+version := "3.1.0-f074a6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

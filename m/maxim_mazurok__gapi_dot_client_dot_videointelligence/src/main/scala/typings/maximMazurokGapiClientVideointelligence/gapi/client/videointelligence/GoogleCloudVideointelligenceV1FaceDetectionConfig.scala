@@ -22,7 +22,8 @@ object GoogleCloudVideointelligenceV1FaceDetectionConfig {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1FaceDetectionConfig]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1FaceDetectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1FaceDetectionConfig] (val x: Self) extends AnyVal {
     
     inline def setIncludeAttributes(value: Boolean): Self = StObject.set(x, "includeAttributes", value.asInstanceOf[js.Any])
     

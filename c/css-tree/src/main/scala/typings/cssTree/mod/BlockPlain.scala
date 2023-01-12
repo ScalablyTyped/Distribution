@@ -22,7 +22,8 @@ object BlockPlain {
     __obj.asInstanceOf[BlockPlain]
   }
   
-  extension [Self <: BlockPlain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockPlain] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

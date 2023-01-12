@@ -25,7 +25,8 @@ object NamedQuery_ {
     __obj.asInstanceOf[NamedQuery_]
   }
   
-  extension [Self <: NamedQuery_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedQuery_] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

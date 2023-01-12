@@ -21,7 +21,8 @@ object TrafficPercentStrategy {
     __obj.asInstanceOf[TrafficPercentStrategy]
   }
   
-  extension [Self <: TrafficPercentStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficPercentStrategy] (val x: Self) extends AnyVal {
     
     inline def setPercentages(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any

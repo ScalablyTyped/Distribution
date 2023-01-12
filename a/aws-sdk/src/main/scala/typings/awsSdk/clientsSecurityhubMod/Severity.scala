@@ -33,7 +33,8 @@ object Severity {
     __obj.asInstanceOf[Severity]
   }
   
-  extension [Self <: Severity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Severity] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: SeverityLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[ErrorKey]
     }
     
-    extension [Self <: ErrorKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorKey] (val x: Self) extends AnyVal {
       
       inline def setErrorKey(value: Any): Self = StObject.set(x, "errorKey", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowNotFound(value: Boolean): Self = StObject.set(x, "allowNotFound", value.asInstanceOf[js.Any])
       

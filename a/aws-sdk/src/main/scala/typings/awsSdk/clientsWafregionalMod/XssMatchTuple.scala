@@ -23,7 +23,8 @@ object XssMatchTuple {
     __obj.asInstanceOf[XssMatchTuple]
   }
   
-  extension [Self <: XssMatchTuple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XssMatchTuple] (val x: Self) extends AnyVal {
     
     inline def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
     

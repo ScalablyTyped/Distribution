@@ -28,7 +28,8 @@ object distSrcAesMod {
       __obj.asInstanceOf[AESCipher]
     }
     
-    extension [Self <: AESCipher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AESCipher] (val x: Self) extends AnyVal {
       
       inline def setDecrypt(value: js.typedarray.Uint8Array => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
       

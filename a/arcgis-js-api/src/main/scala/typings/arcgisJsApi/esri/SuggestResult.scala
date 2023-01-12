@@ -34,7 +34,8 @@ object SuggestResult {
     __obj.asInstanceOf[SuggestResult]
   }
   
-  extension [Self <: SuggestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestResult] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

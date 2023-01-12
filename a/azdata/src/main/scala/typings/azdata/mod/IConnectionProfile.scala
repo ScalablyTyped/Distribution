@@ -52,7 +52,8 @@ object IConnectionProfile {
     __obj.asInstanceOf[IConnectionProfile]
   }
   
-  extension [Self <: IConnectionProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConnectionProfile] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     

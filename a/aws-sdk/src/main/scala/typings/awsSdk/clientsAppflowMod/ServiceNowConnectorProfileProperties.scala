@@ -18,7 +18,8 @@ object ServiceNowConnectorProfileProperties {
     __obj.asInstanceOf[ServiceNowConnectorProfileProperties]
   }
   
-  extension [Self <: ServiceNowConnectorProfileProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceNowConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }

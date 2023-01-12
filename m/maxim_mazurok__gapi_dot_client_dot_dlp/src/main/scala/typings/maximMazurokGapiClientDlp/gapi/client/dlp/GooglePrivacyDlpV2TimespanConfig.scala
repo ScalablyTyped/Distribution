@@ -37,7 +37,8 @@ object GooglePrivacyDlpV2TimespanConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2TimespanConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2TimespanConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2TimespanConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableAutoPopulationOfTimespanConfig(value: Boolean): Self = StObject.set(x, "enableAutoPopulationOfTimespanConfig", value.asInstanceOf[js.Any])
     

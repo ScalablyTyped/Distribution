@@ -32,7 +32,8 @@ object AdminResponseForReview {
     __obj.asInstanceOf[AdminResponseForReview]
   }
   
-  extension [Self <: AdminResponseForReview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminResponseForReview] (val x: Self) extends AnyVal {
     
     inline def setAdminResponseForReview(value: scala.Double): Self = StObject.set(x, "adminResponseForReview", value.asInstanceOf[js.Any])
     

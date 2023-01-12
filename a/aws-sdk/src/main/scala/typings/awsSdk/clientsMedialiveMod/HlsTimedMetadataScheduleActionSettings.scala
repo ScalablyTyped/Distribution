@@ -18,7 +18,8 @@ object HlsTimedMetadataScheduleActionSettings {
     __obj.asInstanceOf[HlsTimedMetadataScheduleActionSettings]
   }
   
-  extension [Self <: HlsTimedMetadataScheduleActionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsTimedMetadataScheduleActionSettings] (val x: Self) extends AnyVal {
     
     inline def setId3(value: string): Self = StObject.set(x, "Id3", value.asInstanceOf[js.Any])
   }

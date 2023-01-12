@@ -110,7 +110,8 @@ object vsoClientMod {
       __obj.asInstanceOf[ClientVersioningData]
     }
     
-    extension [Self <: ClientVersioningData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientVersioningData] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       

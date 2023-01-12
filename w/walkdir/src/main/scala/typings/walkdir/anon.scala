@@ -76,7 +76,8 @@ object anon {
       __obj.asInstanceOf[WalkOptionsreturnobjectbo]
     }
     
-    extension [Self <: WalkOptionsreturnobjectbo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkOptionsreturnobjectbo] (val x: Self) extends AnyVal {
       
       inline def setFilter(
         value: (/* directory */ String, /* files */ js.Array[String]) => js.Array[String] | js.Promise[js.Array[String]]
@@ -190,7 +191,8 @@ object anon {
       __obj.asInstanceOf[WalkOptionsreturnobjectfa]
     }
     
-    extension [Self <: WalkOptionsreturnobjectfa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkOptionsreturnobjectfa] (val x: Self) extends AnyVal {
       
       inline def setFilter(
         value: (/* directory */ String, /* files */ js.Array[String]) => js.Array[String] | js.Promise[js.Array[String]]
@@ -304,7 +306,8 @@ object anon {
       __obj.asInstanceOf[WalkOptionsreturnobjecttr]
     }
     
-    extension [Self <: WalkOptionsreturnobjecttr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkOptionsreturnobjecttr] (val x: Self) extends AnyVal {
       
       inline def setFilter(
         value: (/* directory */ String, /* files */ js.Array[String]) => js.Array[String] | js.Promise[js.Array[String]]
@@ -418,7 +421,8 @@ object anon {
       __obj.asInstanceOf[syncfalseundefinedWalkOpt]
     }
     
-    extension [Self <: syncfalseundefinedWalkOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: syncfalseundefinedWalkOpt] (val x: Self) extends AnyVal {
       
       inline def setFilter(
         value: (/* directory */ String, /* files */ js.Array[String]) => js.Array[String] | js.Promise[js.Array[String]]
@@ -532,7 +536,8 @@ object anon {
       __obj.asInstanceOf[synctruereturnobjectfalse]
     }
     
-    extension [Self <: synctruereturnobjectfalse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: synctruereturnobjectfalse] (val x: Self) extends AnyVal {
       
       inline def setFilter(
         value: (/* directory */ String, /* files */ js.Array[String]) => js.Array[String] | js.Promise[js.Array[String]]
@@ -644,7 +649,8 @@ object anon {
       __obj.asInstanceOf[synctruereturnobjecttrueW]
     }
     
-    extension [Self <: synctruereturnobjecttrueW](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: synctruereturnobjecttrueW] (val x: Self) extends AnyVal {
       
       inline def setFilter(
         value: (/* directory */ String, /* files */ js.Array[String]) => js.Array[String] | js.Promise[js.Array[String]]

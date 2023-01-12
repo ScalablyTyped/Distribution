@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Handler]
     }
     
-    extension [Self <: Handler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handler] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: typings.swPrecache.mod.Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       

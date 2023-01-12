@@ -18,7 +18,8 @@ object GetIdentityVerificationAttributesRequest {
     __obj.asInstanceOf[GetIdentityVerificationAttributesRequest]
   }
   
-  extension [Self <: GetIdentityVerificationAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIdentityVerificationAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentities(value: IdentityList): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
     

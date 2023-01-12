@@ -43,7 +43,8 @@ object PointAttachment {
     __obj.asInstanceOf[PointAttachment]
   }
   
-  extension [Self <: PointAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointAttachment] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

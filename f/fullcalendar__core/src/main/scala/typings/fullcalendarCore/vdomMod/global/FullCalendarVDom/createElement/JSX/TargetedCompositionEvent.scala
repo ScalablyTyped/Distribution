@@ -114,7 +114,8 @@ object TargetedCompositionEvent {
     __obj.asInstanceOf[TargetedCompositionEvent[Target]]
   }
   
-  extension [Self <: TargetedCompositionEvent[?], Target /* <: EventTarget */](x: Self & TargetedCompositionEvent[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedCompositionEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedCompositionEvent[Target]) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

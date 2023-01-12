@@ -33,7 +33,8 @@ object RedirectToOptions {
     __obj.asInstanceOf[RedirectToOptions]
   }
   
-  extension [Self <: RedirectToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedirectToOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

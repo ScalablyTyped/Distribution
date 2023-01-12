@@ -19,7 +19,8 @@ object GlossaryTerm {
     __obj.asInstanceOf[GlossaryTerm]
   }
   
-  extension [Self <: GlossaryTerm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlossaryTerm] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

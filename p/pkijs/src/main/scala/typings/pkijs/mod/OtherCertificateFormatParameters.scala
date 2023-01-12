@@ -20,7 +20,8 @@ object OtherCertificateFormatParameters {
     __obj.asInstanceOf[OtherCertificateFormatParameters]
   }
   
-  extension [Self <: OtherCertificateFormatParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherCertificateFormatParameters] (val x: Self) extends AnyVal {
     
     inline def setOtherCert(value: Any): Self = StObject.set(x, "otherCert", value.asInstanceOf[js.Any])
     

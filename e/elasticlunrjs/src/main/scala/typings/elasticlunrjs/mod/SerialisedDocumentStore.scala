@@ -25,7 +25,8 @@ object SerialisedDocumentStore {
     __obj.asInstanceOf[SerialisedDocumentStore[T]]
   }
   
-  extension [Self <: SerialisedDocumentStore[?], T](x: Self & SerialisedDocumentStore[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialisedDocumentStore[?], T] (val x: Self & SerialisedDocumentStore[T]) extends AnyVal {
     
     inline def setDocInfo(
       value: StringDictionary[

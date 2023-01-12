@@ -21,7 +21,8 @@ object AtomFamilyOptionsWithDefault {
     __obj.asInstanceOf[AtomFamilyOptionsWithDefault[T, P]]
   }
   
-  extension [Self <: AtomFamilyOptionsWithDefault[?, ?], T, P /* <: SerializableParam */](x: Self & (AtomFamilyOptionsWithDefault[T, P])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtomFamilyOptionsWithDefault[?, ?], T, P /* <: SerializableParam */] (val x: Self & (AtomFamilyOptionsWithDefault[T, P])) extends AnyVal {
     
     inline def setDefault(
       value: RecoilValue[T] | js.Promise[T] | Loadable[T] | WrappedValue[T] | T | (js.Function1[/* param */ P, T | RecoilValue[T] | js.Promise[T] | Loadable[T] | WrappedValue[T]])

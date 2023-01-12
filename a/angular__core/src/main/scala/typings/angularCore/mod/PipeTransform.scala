@@ -15,7 +15,8 @@ object PipeTransform {
     __obj.asInstanceOf[PipeTransform]
   }
   
-  extension [Self <: PipeTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeTransform] (val x: Self) extends AnyVal {
     
     inline def setTransform(value: (Any, /* repeated */ Any) => Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
   }

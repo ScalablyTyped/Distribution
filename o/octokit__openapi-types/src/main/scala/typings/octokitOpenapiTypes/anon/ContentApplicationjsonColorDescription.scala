@@ -15,7 +15,8 @@ object ContentApplicationjsonColorDescription {
     __obj.asInstanceOf[ContentApplicationjsonColorDescription]
   }
   
-  extension [Self <: ContentApplicationjsonColorDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonColorDescription] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonColorDescription): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

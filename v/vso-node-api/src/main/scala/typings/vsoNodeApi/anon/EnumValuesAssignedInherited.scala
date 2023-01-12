@@ -15,7 +15,8 @@ object EnumValuesAssignedInherited {
     __obj.asInstanceOf[EnumValuesAssignedInherited]
   }
   
-  extension [Self <: EnumValuesAssignedInherited](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAssignedInherited] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AssignedInherited): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

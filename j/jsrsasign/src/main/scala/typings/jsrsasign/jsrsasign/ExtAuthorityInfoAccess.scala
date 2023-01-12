@@ -24,7 +24,8 @@ object ExtAuthorityInfoAccess {
     __obj.asInstanceOf[ExtAuthorityInfoAccess]
   }
   
-  extension [Self <: ExtAuthorityInfoAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtAuthorityInfoAccess] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[Ocsp | Caissuer]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

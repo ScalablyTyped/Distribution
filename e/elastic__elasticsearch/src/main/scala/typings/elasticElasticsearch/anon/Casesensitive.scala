@@ -47,7 +47,8 @@ object Casesensitive {
     __obj.asInstanceOf[Casesensitive]
   }
   
-  extension [Self <: Casesensitive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Casesensitive] (val x: Self) extends AnyVal {
     
     inline def setCase_sensitive(value: Boolean): Self = StObject.set(x, "case_sensitive", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Alpine]
     }
     
-    extension [Self <: Alpine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alpine] (val x: Self) extends AnyVal {
       
       inline def setAlpine(value: Alpine): Self = StObject.set(x, "Alpine", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object anon {
       __obj.asInstanceOf[During]
     }
     
-    extension [Self <: During](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: During] (val x: Self) extends AnyVal {
       
       inline def setDuring(value: (Record[String, String]) | String): Self = StObject.set(x, "during", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object anon {
       __obj.asInstanceOf[InitialValue[V]]
     }
     
-    extension [Self <: InitialValue[?], V](x: Self & InitialValue[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialValue[?], V] (val x: Self & InitialValue[V]) extends AnyVal {
       
       inline def setInitialValue(value: V): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object anon {
       __obj.asInstanceOf[Name[T]]
     }
     
-    extension [Self <: Name[?], T](x: Self & Name[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name[?], T] (val x: Self & Name[T]) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

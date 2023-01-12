@@ -19,7 +19,8 @@ object GoogleAnalyticsAdminV1alphaAccessQuotaStatus {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAccessQuotaStatus]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAccessQuotaStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAccessQuotaStatus] (val x: Self) extends AnyVal {
     
     inline def setConsumed(value: Double): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
     

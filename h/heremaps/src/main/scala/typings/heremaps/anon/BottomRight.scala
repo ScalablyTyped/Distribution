@@ -17,7 +17,8 @@ object BottomRight {
     __obj.asInstanceOf[BottomRight]
   }
   
-  extension [Self <: BottomRight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BottomRight] (val x: Self) extends AnyVal {
     
     inline def setBottomRight(value: Longitude): Self = StObject.set(x, "BottomRight", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Gauge {
     __obj.asInstanceOf[Gauge]
   }
   
-  extension [Self <: Gauge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gauge] (val x: Self) extends AnyVal {
     
     inline def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }

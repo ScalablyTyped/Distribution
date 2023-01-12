@@ -28,7 +28,8 @@ object Timeouts {
     __obj.asInstanceOf[Timeouts]
   }
   
-  extension [Self <: Timeouts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timeouts] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: Double): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     

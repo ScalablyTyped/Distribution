@@ -19,7 +19,8 @@ object InitOptions {
     __obj.asInstanceOf[InitOptions]
   }
   
-  extension [Self <: InitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
     
     inline def setBits(value: Double): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     

@@ -196,7 +196,8 @@ object mod {
       __obj.asInstanceOf[KatexOptions]
     }
     
-    extension [Self <: KatexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KatexOptions] (val x: Self) extends AnyVal {
       
       inline def setColorIsTextColor(value: Boolean): Self = StObject.set(x, "colorIsTextColor", value.asInstanceOf[js.Any])
       
@@ -273,7 +274,8 @@ object mod {
       __obj.asInstanceOf[TrustContext]
     }
     
-    extension [Self <: TrustContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrustContext] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       

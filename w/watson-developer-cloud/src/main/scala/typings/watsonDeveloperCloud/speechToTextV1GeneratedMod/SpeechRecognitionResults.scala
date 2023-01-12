@@ -26,7 +26,8 @@ object SpeechRecognitionResults {
     __obj.asInstanceOf[SpeechRecognitionResults]
   }
   
-  extension [Self <: SpeechRecognitionResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognitionResults] (val x: Self) extends AnyVal {
     
     inline def setResult_index(value: Double): Self = StObject.set(x, "result_index", value.asInstanceOf[js.Any])
     

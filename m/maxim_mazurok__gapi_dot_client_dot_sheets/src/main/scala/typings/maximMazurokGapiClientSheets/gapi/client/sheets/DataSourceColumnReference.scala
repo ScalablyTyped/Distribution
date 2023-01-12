@@ -16,7 +16,8 @@ object DataSourceColumnReference {
     __obj.asInstanceOf[DataSourceColumnReference]
   }
   
-  extension [Self <: DataSourceColumnReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceColumnReference] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

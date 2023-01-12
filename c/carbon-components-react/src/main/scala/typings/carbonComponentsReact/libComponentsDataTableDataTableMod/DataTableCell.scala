@@ -28,7 +28,8 @@ object DataTableCell {
     __obj.asInstanceOf[DataTableCell[V, H]]
   }
   
-  extension [Self <: DataTableCell[?, ?], V, H /* <: DataTableHeader[String] */](x: Self & (DataTableCell[V, H])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableCell[?, ?], V, H /* <: DataTableHeader[String] */] (val x: Self & (DataTableCell[V, H])) extends AnyVal {
     
     inline def setErrors(value: js.Array[Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

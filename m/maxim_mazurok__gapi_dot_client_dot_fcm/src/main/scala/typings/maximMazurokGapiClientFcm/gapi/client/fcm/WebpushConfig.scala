@@ -35,7 +35,8 @@ object WebpushConfig {
     __obj.asInstanceOf[WebpushConfig]
   }
   
-  extension [Self <: WebpushConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebpushConfig] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

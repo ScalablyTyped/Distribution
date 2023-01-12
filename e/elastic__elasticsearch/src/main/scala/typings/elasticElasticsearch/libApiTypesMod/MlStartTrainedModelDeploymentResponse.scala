@@ -15,7 +15,8 @@ object MlStartTrainedModelDeploymentResponse {
     __obj.asInstanceOf[MlStartTrainedModelDeploymentResponse]
   }
   
-  extension [Self <: MlStartTrainedModelDeploymentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlStartTrainedModelDeploymentResponse] (val x: Self) extends AnyVal {
     
     inline def setAssignment(value: MlTrainedModelAssignment): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
   }

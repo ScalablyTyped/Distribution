@@ -21,7 +21,8 @@ object ParseDateEventArgs {
     __obj.asInstanceOf[ParseDateEventArgs]
   }
   
-  extension [Self <: ParseDateEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseDateEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

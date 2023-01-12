@@ -28,7 +28,8 @@ object namespacesPageActionMod {
         __obj.asInstanceOf[GetPopupDetailsType]
       }
       
-      extension [Self <: GetPopupDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetPopupDetailsType] (val x: Self) extends AnyVal {
         
         inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       }
@@ -48,7 +49,8 @@ object namespacesPageActionMod {
         __obj.asInstanceOf[GetTitleDetailsType]
       }
       
-      extension [Self <: GetTitleDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetTitleDetailsType] (val x: Self) extends AnyVal {
         
         inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       }
@@ -88,7 +90,8 @@ object namespacesPageActionMod {
         __obj.asInstanceOf[IsShownDetailsType]
       }
       
-      extension [Self <: IsShownDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IsShownDetailsType] (val x: Self) extends AnyVal {
         
         inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       }
@@ -117,7 +120,8 @@ object namespacesPageActionMod {
         __obj.asInstanceOf[OnClickData]
       }
       
-      extension [Self <: OnClickData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnClickData] (val x: Self) extends AnyVal {
         
         inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
         
@@ -185,7 +189,8 @@ object namespacesPageActionMod {
         __obj.asInstanceOf[SetIconDetailsType]
       }
       
-      extension [Self <: SetIconDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetIconDetailsType] (val x: Self) extends AnyVal {
         
         inline def setImageData(value: ImageDataType | (Record[String, ImageDataType])): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
         
@@ -218,7 +223,8 @@ object namespacesPageActionMod {
         __obj.asInstanceOf[SetPopupDetailsType]
       }
       
-      extension [Self <: SetPopupDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetPopupDetailsType] (val x: Self) extends AnyVal {
         
         inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
         
@@ -247,7 +253,8 @@ object namespacesPageActionMod {
         __obj.asInstanceOf[SetTitleDetailsType]
       }
       
-      extension [Self <: SetTitleDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetTitleDetailsType] (val x: Self) extends AnyVal {
         
         inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
         
@@ -348,7 +355,8 @@ object namespacesPageActionMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setGetPopup(value: GetPopupDetailsType => js.Promise[String]): Self = StObject.set(x, "getPopup", js.Any.fromFunction1(value))
         

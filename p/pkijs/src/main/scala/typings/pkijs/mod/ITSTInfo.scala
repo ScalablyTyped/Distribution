@@ -93,7 +93,8 @@ object ITSTInfo {
     __obj.asInstanceOf[ITSTInfo]
   }
   
-  extension [Self <: ITSTInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITSTInfo] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Accuracy): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ImportUsersFromJsonOptions {
     __obj.asInstanceOf[ImportUsersFromJsonOptions]
   }
   
-  extension [Self <: ImportUsersFromJsonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportUsersFromJsonOptions] (val x: Self) extends AnyVal {
     
     inline def setUsers_json(value: String): Self = StObject.set(x, "users_json", value.asInstanceOf[js.Any])
   }

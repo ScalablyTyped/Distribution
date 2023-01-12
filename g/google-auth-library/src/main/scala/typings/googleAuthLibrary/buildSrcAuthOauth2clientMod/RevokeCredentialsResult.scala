@@ -15,7 +15,8 @@ object RevokeCredentialsResult {
     __obj.asInstanceOf[RevokeCredentialsResult]
   }
   
-  extension [Self <: RevokeCredentialsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeCredentialsResult] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }

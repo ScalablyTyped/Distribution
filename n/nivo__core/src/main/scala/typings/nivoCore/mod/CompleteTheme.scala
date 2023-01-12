@@ -61,7 +61,8 @@ object CompleteTheme {
     __obj.asInstanceOf[CompleteTheme]
   }
   
-  extension [Self <: CompleteTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteTheme] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: Link): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

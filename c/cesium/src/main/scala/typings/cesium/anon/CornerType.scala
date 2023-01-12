@@ -30,7 +30,8 @@ object CornerType {
     __obj.asInstanceOf[CornerType]
   }
   
-  extension [Self <: CornerType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CornerType] (val x: Self) extends AnyVal {
     
     inline def setCornerType(value: typings.cesium.mod.CornerType): Self = StObject.set(x, "cornerType", value.asInstanceOf[js.Any])
     

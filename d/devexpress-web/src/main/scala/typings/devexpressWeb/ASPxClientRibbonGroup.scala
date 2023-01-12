@@ -47,7 +47,8 @@ object ASPxClientRibbonGroup {
     __obj.asInstanceOf[ASPxClientRibbonGroup]
   }
   
-  extension [Self <: ASPxClientRibbonGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRibbonGroup] (val x: Self) extends AnyVal {
     
     inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     

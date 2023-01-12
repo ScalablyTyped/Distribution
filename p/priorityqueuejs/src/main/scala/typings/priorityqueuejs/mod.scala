@@ -127,7 +127,8 @@ object mod {
       __obj.asInstanceOf[PriorityQueue[T]]
     }
     
-    extension [Self <: PriorityQueue[?], T](x: Self & PriorityQueue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PriorityQueue[?], T] (val x: Self & PriorityQueue[T]) extends AnyVal {
       
       inline def setDeq(value: () => T): Self = StObject.set(x, "deq", js.Any.fromFunction0(value))
       

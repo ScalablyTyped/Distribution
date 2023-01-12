@@ -19,7 +19,8 @@ object MediumSmall {
     __obj.asInstanceOf[MediumSmall]
   }
   
-  extension [Self <: MediumSmall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediumSmall] (val x: Self) extends AnyVal {
     
     inline def setLarge(value: Double): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     

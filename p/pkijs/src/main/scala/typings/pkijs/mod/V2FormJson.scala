@@ -19,7 +19,8 @@ object V2FormJson {
     __obj.asInstanceOf[V2FormJson]
   }
   
-  extension [Self <: V2FormJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V2FormJson] (val x: Self) extends AnyVal {
     
     inline def setBaseCertificateID(value: IssuerSerialJson): Self = StObject.set(x, "baseCertificateID", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object GoogleCloudDialogflowCxV3beta1Webhook {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1Webhook]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1Webhook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1Webhook] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

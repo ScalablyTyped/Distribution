@@ -38,7 +38,8 @@ object QuerySnapshot {
     __obj.asInstanceOf[QuerySnapshot]
   }
   
-  extension [Self <: QuerySnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuerySnapshot] (val x: Self) extends AnyVal {
     
     inline def setDocChanges(value: js.Array[DocumentChange]): Self = StObject.set(x, "docChanges", value.asInstanceOf[js.Any])
     
@@ -78,7 +79,8 @@ object QuerySnapshot {
       __obj.asInstanceOf[NativeData]
     }
     
-    extension [Self <: NativeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeData] (val x: Self) extends AnyVal {
       
       inline def setChanges(value: js.Array[NativeDocumentChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       

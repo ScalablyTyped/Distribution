@@ -33,7 +33,8 @@ object ServiceRegistry {
     __obj.asInstanceOf[ServiceRegistry]
   }
   
-  extension [Self <: ServiceRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceRegistry] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     

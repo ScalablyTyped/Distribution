@@ -18,7 +18,8 @@ object GetLaunchTemplateDataResult {
     __obj.asInstanceOf[GetLaunchTemplateDataResult]
   }
   
-  extension [Self <: GetLaunchTemplateDataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLaunchTemplateDataResult] (val x: Self) extends AnyVal {
     
     inline def setLaunchTemplateData(value: ResponseLaunchTemplateData): Self = StObject.set(x, "LaunchTemplateData", value.asInstanceOf[js.Any])
     

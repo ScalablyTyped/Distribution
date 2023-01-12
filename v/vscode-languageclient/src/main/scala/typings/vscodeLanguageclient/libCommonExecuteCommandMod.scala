@@ -45,7 +45,8 @@ object libCommonExecuteCommandMod {
       __obj.asInstanceOf[ExecuteCommandMiddleware]
     }
     
-    extension [Self <: ExecuteCommandMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteCommandMiddleware] (val x: Self) extends AnyVal {
       
       inline def setExecuteCommand(
         value: js.ThisFunction3[

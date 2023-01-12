@@ -101,7 +101,8 @@ object DrilldownBreadcrumbsOptions {
     __obj.asInstanceOf[DrilldownBreadcrumbsOptions]
   }
   
-  extension [Self <: DrilldownBreadcrumbsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrilldownBreadcrumbsOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonSpacing(value: Double): Self = StObject.set(x, "buttonSpacing", value.asInstanceOf[js.Any])
     

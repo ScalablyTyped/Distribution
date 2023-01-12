@@ -19,7 +19,8 @@ object PolygonFillOptions {
     __obj.asInstanceOf[PolygonFillOptions]
   }
   
-  extension [Self <: PolygonFillOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonFillOptions] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

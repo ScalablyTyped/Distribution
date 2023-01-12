@@ -31,7 +31,8 @@ object PoolConfig {
     __obj.asInstanceOf[PoolConfig]
   }
   
-  extension [Self <: PoolConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoolConfig] (val x: Self) extends AnyVal {
     
     inline def setAllowExitOnIdle(value: Boolean): Self = StObject.set(x, "allowExitOnIdle", value.asInstanceOf[js.Any])
     

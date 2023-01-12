@@ -87,7 +87,8 @@ object buildSrcInternalGlobalUtilsMod {
       __obj.asInstanceOf[OTelGlobalAPI]
     }
     
-    extension [Self <: OTelGlobalAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OTelGlobalAPI] (val x: Self) extends AnyVal {
       
       inline def setContext(value: ContextManager): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

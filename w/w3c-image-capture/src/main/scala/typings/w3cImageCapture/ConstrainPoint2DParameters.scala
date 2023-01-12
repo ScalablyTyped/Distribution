@@ -17,7 +17,8 @@ object ConstrainPoint2DParameters {
     __obj.asInstanceOf[ConstrainPoint2DParameters]
   }
   
-  extension [Self <: ConstrainPoint2DParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstrainPoint2DParameters] (val x: Self) extends AnyVal {
     
     inline def setExact(value: js.Array[Point2D]): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

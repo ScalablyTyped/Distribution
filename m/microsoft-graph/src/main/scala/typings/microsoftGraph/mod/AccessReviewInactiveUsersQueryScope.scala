@@ -21,7 +21,8 @@ object AccessReviewInactiveUsersQueryScope {
     __obj.asInstanceOf[AccessReviewInactiveUsersQueryScope]
   }
   
-  extension [Self <: AccessReviewInactiveUsersQueryScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewInactiveUsersQueryScope] (val x: Self) extends AnyVal {
     
     inline def setInactiveDuration(value: NullableOption[String]): Self = StObject.set(x, "inactiveDuration", value.asInstanceOf[js.Any])
     

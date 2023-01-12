@@ -48,7 +48,8 @@ object FmtpRequest {
     __obj.asInstanceOf[FmtpRequest]
   }
   
-  extension [Self <: FmtpRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FmtpRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelOrder(value: string): Self = StObject.set(x, "ChannelOrder", value.asInstanceOf[js.Any])
     

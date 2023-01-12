@@ -16,7 +16,8 @@ object IBackgroundTransferErrorStaticMethods {
     __obj.asInstanceOf[IBackgroundTransferErrorStaticMethods]
   }
   
-  extension [Self <: IBackgroundTransferErrorStaticMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBackgroundTransferErrorStaticMethods] (val x: Self) extends AnyVal {
     
     inline def setGetStatus(value: Double => WebErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
   }

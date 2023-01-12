@@ -35,7 +35,8 @@ object IsSource {
     __obj.asInstanceOf[IsSource]
   }
   
-  extension [Self <: IsSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsSource] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Category): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

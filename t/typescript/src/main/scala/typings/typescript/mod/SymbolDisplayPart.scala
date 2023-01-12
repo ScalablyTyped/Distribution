@@ -17,7 +17,8 @@ object SymbolDisplayPart {
     __obj.asInstanceOf[SymbolDisplayPart]
   }
   
-  extension [Self <: SymbolDisplayPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolDisplayPart] (val x: Self) extends AnyVal {
     
     inline def setKind(value: java.lang.String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

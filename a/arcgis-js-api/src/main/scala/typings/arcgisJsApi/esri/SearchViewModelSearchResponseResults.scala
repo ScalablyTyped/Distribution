@@ -34,7 +34,8 @@ object SearchViewModelSearchResponseResults {
     __obj.asInstanceOf[SearchViewModelSearchResponseResults]
   }
   
-  extension [Self <: SearchViewModelSearchResponseResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchViewModelSearchResponseResults] (val x: Self) extends AnyVal {
     
     inline def setResults(value: js.Array[SearchViewModelSearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

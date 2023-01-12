@@ -23,7 +23,8 @@ object ListAssessmentControlInsightsByControlDomainResponse {
     __obj.asInstanceOf[ListAssessmentControlInsightsByControlDomainResponse]
   }
   
-  extension [Self <: ListAssessmentControlInsightsByControlDomainResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssessmentControlInsightsByControlDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setControlInsightsByAssessment(value: ControlInsightsMetadataByAssessment): Self = StObject.set(x, "controlInsightsByAssessment", value.asInstanceOf[js.Any])
     

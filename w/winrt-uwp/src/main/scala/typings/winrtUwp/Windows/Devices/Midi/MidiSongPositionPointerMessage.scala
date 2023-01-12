@@ -28,7 +28,8 @@ object MidiSongPositionPointerMessage {
     __obj.asInstanceOf[MidiSongPositionPointerMessage]
   }
   
-  extension [Self <: MidiSongPositionPointerMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiSongPositionPointerMessage] (val x: Self) extends AnyVal {
     
     inline def setBeats(value: Double): Self = StObject.set(x, "beats", value.asInstanceOf[js.Any])
     

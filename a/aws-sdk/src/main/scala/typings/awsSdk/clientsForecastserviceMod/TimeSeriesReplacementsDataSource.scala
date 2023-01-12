@@ -27,7 +27,8 @@ object TimeSeriesReplacementsDataSource {
     __obj.asInstanceOf[TimeSeriesReplacementsDataSource]
   }
   
-  extension [Self <: TimeSeriesReplacementsDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesReplacementsDataSource] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     

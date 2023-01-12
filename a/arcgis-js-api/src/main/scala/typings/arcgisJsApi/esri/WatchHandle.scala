@@ -20,7 +20,8 @@ object WatchHandle {
     __obj.asInstanceOf[WatchHandle]
   }
   
-  extension [Self <: WatchHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchHandle] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: () => scala.Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }

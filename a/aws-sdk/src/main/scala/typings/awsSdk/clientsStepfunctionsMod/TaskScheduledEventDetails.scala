@@ -43,7 +43,8 @@ object TaskScheduledEventDetails {
     __obj.asInstanceOf[TaskScheduledEventDetails]
   }
   
-  extension [Self <: TaskScheduledEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskScheduledEventDetails] (val x: Self) extends AnyVal {
     
     inline def setHeartbeatInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "heartbeatInSeconds", value.asInstanceOf[js.Any])
     

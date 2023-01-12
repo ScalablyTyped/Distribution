@@ -28,7 +28,8 @@ object UpdateServiceTemplateInput {
     __obj.asInstanceOf[UpdateServiceTemplateInput]
   }
   
-  extension [Self <: UpdateServiceTemplateInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateServiceTemplateInput] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

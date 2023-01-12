@@ -23,7 +23,8 @@ object AnalysisKuromojiAnalyzer {
     __obj.asInstanceOf[AnalysisKuromojiAnalyzer]
   }
   
-  extension [Self <: AnalysisKuromojiAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisKuromojiAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setMode(value: AnalysisKuromojiTokenizationMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

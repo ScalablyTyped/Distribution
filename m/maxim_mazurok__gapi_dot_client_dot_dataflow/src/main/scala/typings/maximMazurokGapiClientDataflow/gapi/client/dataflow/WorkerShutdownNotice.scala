@@ -19,7 +19,8 @@ object WorkerShutdownNotice {
     __obj.asInstanceOf[WorkerShutdownNotice]
   }
   
-  extension [Self <: WorkerShutdownNotice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerShutdownNotice] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

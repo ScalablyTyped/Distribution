@@ -42,7 +42,8 @@ object libCjsParseMod {
       __obj.asInstanceOf[EventSourceMessage]
     }
     
-    extension [Self <: EventSourceMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSourceMessage] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

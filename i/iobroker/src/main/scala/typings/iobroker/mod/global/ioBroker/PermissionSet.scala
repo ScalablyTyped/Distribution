@@ -34,7 +34,8 @@ object PermissionSet {
     __obj.asInstanceOf[PermissionSet]
   }
   
-  extension [Self <: PermissionSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionSet] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     

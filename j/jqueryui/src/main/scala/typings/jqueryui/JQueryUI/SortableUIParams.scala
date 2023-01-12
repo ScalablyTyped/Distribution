@@ -36,7 +36,8 @@ object SortableUIParams {
     __obj.asInstanceOf[SortableUIParams]
   }
   
-  extension [Self <: SortableUIParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortableUIParams] (val x: Self) extends AnyVal {
     
     inline def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     

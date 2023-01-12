@@ -52,7 +52,8 @@ object JobOperation {
     __obj.asInstanceOf[JobOperation]
   }
   
-  extension [Self <: JobOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobOperation] (val x: Self) extends AnyVal {
     
     inline def setLambdaInvoke(value: LambdaInvokeOperation): Self = StObject.set(x, "LambdaInvoke", value.asInstanceOf[js.Any])
     

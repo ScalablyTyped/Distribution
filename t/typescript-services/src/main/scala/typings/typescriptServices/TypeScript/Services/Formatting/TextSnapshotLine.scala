@@ -41,7 +41,8 @@ object TextSnapshotLine {
     __obj.asInstanceOf[TextSnapshotLine]
   }
   
-  extension [Self <: TextSnapshotLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSnapshotLine] (val x: Self) extends AnyVal {
     
     inline def set_end(value: Any): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     

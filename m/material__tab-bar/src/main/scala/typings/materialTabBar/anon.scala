@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[ARROWLEFTKEY]
     }
     
-    extension [Self <: ARROWLEFTKEY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARROWLEFTKEY] (val x: Self) extends AnyVal {
       
       inline def setARROW_LEFT_KEY(value: String): Self = StObject.set(x, "ARROW_LEFT_KEY", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object anon {
       __obj.asInstanceOf[ARROWLEFTKEYCODE]
     }
     
-    extension [Self <: ARROWLEFTKEYCODE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARROWLEFTKEYCODE] (val x: Self) extends AnyVal {
       
       inline def setARROW_LEFT_KEYCODE(value: Double): Self = StObject.set(x, "ARROW_LEFT_KEYCODE", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCTabBarAdapter]
     }
     
-    extension [Self <: PartialMDCTabBarAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCTabBarAdapter] (val x: Self) extends AnyVal {
       
       inline def setActivateTabAtIndex(value: (/* index */ Double, /* clientRect */ js.UndefOr[DOMRect]) => Unit): Self = StObject.set(x, "activateTabAtIndex", js.Any.fromFunction2(value))
       

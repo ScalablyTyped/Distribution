@@ -19,7 +19,8 @@ object PointStyle {
     __obj.asInstanceOf[PointStyle]
   }
   
-  extension [Self <: PointStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointStyle] (val x: Self) extends AnyVal {
     
     inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

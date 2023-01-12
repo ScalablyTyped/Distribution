@@ -62,7 +62,8 @@ object HeaderFooter {
     __obj.asInstanceOf[HeaderFooter]
   }
   
-  extension [Self <: HeaderFooter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderFooter] (val x: Self) extends AnyVal {
     
     inline def setDifferentFirst(value: Boolean): Self = StObject.set(x, "differentFirst", value.asInstanceOf[js.Any])
     

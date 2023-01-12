@@ -37,7 +37,8 @@ object XTextSearch {
     __obj.asInstanceOf[XTextSearch]
   }
   
-  extension [Self <: XTextSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextSearch] (val x: Self) extends AnyVal {
     
     inline def setSearchBackward(value: (String, Double, Double) => SearchResult): Self = StObject.set(x, "searchBackward", js.Any.fromFunction3(value))
     

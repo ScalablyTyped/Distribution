@@ -23,7 +23,8 @@ object ArtifactDetails {
     __obj.asInstanceOf[ArtifactDetails]
   }
   
-  extension [Self <: ArtifactDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactDetails] (val x: Self) extends AnyVal {
     
     inline def setMaximumCount(value: MaximumArtifactCount): Self = StObject.set(x, "maximumCount", value.asInstanceOf[js.Any])
     

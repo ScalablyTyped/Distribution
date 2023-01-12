@@ -31,7 +31,8 @@ object BatchUpdateValuesByDataFilterResponse {
     __obj.asInstanceOf[BatchUpdateValuesByDataFilterResponse]
   }
   
-  extension [Self <: BatchUpdateValuesByDataFilterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateValuesByDataFilterResponse] (val x: Self) extends AnyVal {
     
     inline def setResponses(value: js.Array[UpdateValuesByDataFilterResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     

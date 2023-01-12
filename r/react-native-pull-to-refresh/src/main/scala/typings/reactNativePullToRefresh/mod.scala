@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[PTRViewProps]
     }
     
-    extension [Self <: PTRViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PTRViewProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

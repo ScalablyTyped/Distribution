@@ -115,7 +115,8 @@ object mod {
       __obj.asInstanceOf[ScrollbarProps]
     }
     
-    extension [Self <: ScrollbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarProps] (val x: Self) extends AnyVal {
       
       inline def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
       
@@ -237,7 +238,8 @@ object mod {
       __obj.asInstanceOf[positionValues]
     }
     
-    extension [Self <: positionValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: positionValues] (val x: Self) extends AnyVal {
       
       inline def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
       

@@ -190,7 +190,8 @@ object csr {
       __obj.asInstanceOf[CertificationRequestInfoParams]
     }
     
-    extension [Self <: CertificationRequestInfoParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificationRequestInfoParams] (val x: Self) extends AnyVal {
       
       inline def setExtreq(value: js.Array[ExtnameString]): Self = StObject.set(x, "extreq", value.asInstanceOf[js.Any])
       
@@ -237,7 +238,8 @@ object csr {
       __obj.asInstanceOf[CertificationRequestParams]
     }
     
-    extension [Self <: CertificationRequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificationRequestParams] (val x: Self) extends AnyVal {
       
       inline def setExtreq(value: js.Array[ExtnameString]): Self = StObject.set(x, "extreq", value.asInstanceOf[js.Any])
       
@@ -274,7 +276,8 @@ object csr {
       __obj.asInstanceOf[PEMInfo]
     }
     
-    extension [Self <: PEMInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PEMInfo] (val x: Self) extends AnyVal {
       
       inline def setPubkey(value: HexObj): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
       
@@ -301,7 +304,8 @@ object csr {
       __obj.asInstanceOf[ParamResponse]
     }
     
-    extension [Self <: ParamResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamResponse] (val x: Self) extends AnyVal {
       
       inline def setExtreq(value: js.Array[ExtnameString]): Self = StObject.set(x, "extreq", value.asInstanceOf[js.Any])
       

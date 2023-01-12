@@ -26,7 +26,8 @@ object PerRouteMiddleware {
     __obj.asInstanceOf[PerRouteMiddleware]
   }
   
-  extension [Self <: PerRouteMiddleware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerRouteMiddleware] (val x: Self) extends AnyVal {
     
     inline def setHandle(
       value: (/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], /* next */ js.Function0[Unit]) => Any

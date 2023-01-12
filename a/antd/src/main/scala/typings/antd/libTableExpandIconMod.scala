@@ -42,7 +42,8 @@ object libTableExpandIconMod {
       __obj.asInstanceOf[DefaultExpandIconProps[RecordType]]
     }
     
-    extension [Self <: DefaultExpandIconProps[?], RecordType](x: Self & DefaultExpandIconProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultExpandIconProps[?], RecordType] (val x: Self & DefaultExpandIconProps[RecordType]) extends AnyVal {
       
       inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object ErrorDocument {
     __obj.asInstanceOf[ErrorDocument]
   }
   
-  extension [Self <: ErrorDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorDocument] (val x: Self) extends AnyVal {
     
     inline def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
   }

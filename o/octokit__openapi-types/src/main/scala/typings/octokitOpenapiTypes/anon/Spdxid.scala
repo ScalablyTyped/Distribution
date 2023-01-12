@@ -23,7 +23,8 @@ object Spdxid {
     __obj.asInstanceOf[Spdxid]
   }
   
-  extension [Self <: Spdxid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spdxid] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

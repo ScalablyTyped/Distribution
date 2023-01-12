@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1beta1SequentialSegment {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1SequentialSegment]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1SequentialSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1SequentialSegment] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

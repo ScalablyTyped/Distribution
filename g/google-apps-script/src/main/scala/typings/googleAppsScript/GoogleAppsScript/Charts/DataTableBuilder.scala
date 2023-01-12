@@ -42,7 +42,8 @@ object DataTableBuilder {
     __obj.asInstanceOf[DataTableBuilder]
   }
   
-  extension [Self <: DataTableBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableBuilder] (val x: Self) extends AnyVal {
     
     inline def setAddColumn(value: (ColumnType, String) => DataTableBuilder): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
     

@@ -21,7 +21,8 @@ object NetworkAuthenticateEventArgs {
     __obj.asInstanceOf[NetworkAuthenticateEventArgs]
   }
   
-  extension [Self <: NetworkAuthenticateEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkAuthenticateEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

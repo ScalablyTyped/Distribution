@@ -26,7 +26,8 @@ object Repositoryids {
     __obj.asInstanceOf[Repositoryids]
   }
   
-  extension [Self <: Repositoryids](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Repositoryids] (val x: Self) extends AnyVal {
     
     inline def setPermissions(value: Administration): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     

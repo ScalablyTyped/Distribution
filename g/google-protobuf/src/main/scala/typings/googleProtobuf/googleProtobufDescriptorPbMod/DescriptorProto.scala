@@ -198,7 +198,8 @@ object DescriptorProto {
         __obj.asInstanceOf[typings.googleProtobuf.googleProtobufDescriptorPbMod.DescriptorProto.ExtensionRange.AsObject]
       }
       
-      extension [Self <: typings.googleProtobuf.googleProtobufDescriptorPbMod.DescriptorProto.ExtensionRange.AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleProtobuf.googleProtobufDescriptorPbMod.DescriptorProto.ExtensionRange.AsObject] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -274,7 +275,8 @@ object DescriptorProto {
         __obj.asInstanceOf[typings.googleProtobuf.googleProtobufDescriptorPbMod.DescriptorProto.ReservedRange.AsObject]
       }
       
-      extension [Self <: typings.googleProtobuf.googleProtobufDescriptorPbMod.DescriptorProto.ReservedRange.AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleProtobuf.googleProtobufDescriptorPbMod.DescriptorProto.ReservedRange.AsObject] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -368,7 +370,8 @@ object DescriptorProto {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setEnumTypeList(
         value: js.Array[

@@ -17,7 +17,8 @@ object WithoutCredentialsSearchC {
     __obj.asInstanceOf[WithoutCredentialsSearchC]
   }
   
-  extension [Self <: WithoutCredentialsSearchC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithoutCredentialsSearchC] (val x: Self) extends AnyVal {
     
     inline def setAuthMode(value: AuthModeType): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
     

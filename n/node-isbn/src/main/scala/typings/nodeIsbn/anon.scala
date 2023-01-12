@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[GOOGLE]
     }
     
-    extension [Self <: GOOGLE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GOOGLE] (val x: Self) extends AnyVal {
       
       inline def setGOOGLE(value: google): Self = StObject.set(x, "GOOGLE", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[SmallThumbnail]
     }
     
-    extension [Self <: SmallThumbnail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmallThumbnail] (val x: Self) extends AnyVal {
       
       inline def setSmallThumbnail(value: String): Self = StObject.set(x, "smallThumbnail", value.asInstanceOf[js.Any])
       

@@ -44,7 +44,8 @@ object ISyntaxNodeOrToken {
     __obj.asInstanceOf[ISyntaxNodeOrToken]
   }
   
-  extension [Self <: ISyntaxNodeOrToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyntaxNodeOrToken] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: ISyntaxVisitor => Any): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
     

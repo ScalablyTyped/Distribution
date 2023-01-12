@@ -64,7 +64,8 @@ object XChartShape {
     __obj.asInstanceOf[XChartShape]
   }
   
-  extension [Self <: XChartShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChartShape] (val x: Self) extends AnyVal {
     
     inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     

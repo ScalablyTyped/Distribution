@@ -26,7 +26,8 @@ object distTypesCellTooltipMod {
       __obj.asInstanceOf[TooltipProps[RawDatum]]
     }
     
-    extension [Self <: TooltipProps[?], RawDatum /* <: Datum */](x: Self & TooltipProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProps[?], RawDatum /* <: Datum */] (val x: Self & TooltipProps[RawDatum]) extends AnyVal {
       
       inline def setCell(value: DataCell[RawDatum]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     }

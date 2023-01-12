@@ -145,7 +145,8 @@ object ThemeAvatar {
     __obj.asInstanceOf[ThemeAvatar]
   }
   
-  extension [Self <: ThemeAvatar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeAvatar] (val x: Self) extends AnyVal {
     
     inline def setAirbnbRating(value: Partial[SwipeRatingProps]): Self = StObject.set(x, "AirbnbRating", value.asInstanceOf[js.Any])
     

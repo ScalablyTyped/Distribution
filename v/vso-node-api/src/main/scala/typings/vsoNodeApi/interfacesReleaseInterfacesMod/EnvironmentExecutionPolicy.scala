@@ -23,7 +23,8 @@ object EnvironmentExecutionPolicy {
     __obj.asInstanceOf[EnvironmentExecutionPolicy]
   }
   
-  extension [Self <: EnvironmentExecutionPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentExecutionPolicy] (val x: Self) extends AnyVal {
     
     inline def setConcurrencyCount(value: Double): Self = StObject.set(x, "concurrencyCount", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ReportFooter {
     __obj.asInstanceOf[ReportFooter]
   }
   
-  extension [Self <: ReportFooter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportFooter] (val x: Self) extends AnyVal {
     
     inline def setMatchingRowCount(value: String): Self = StObject.set(x, "matchingRowCount", value.asInstanceOf[js.Any])
     

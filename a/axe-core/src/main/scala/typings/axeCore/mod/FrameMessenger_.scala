@@ -19,7 +19,8 @@ object FrameMessenger_ {
     __obj.asInstanceOf[FrameMessenger_]
   }
   
-  extension [Self <: FrameMessenger_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameMessenger_] (val x: Self) extends AnyVal {
     
     inline def setOpen(value: TopicHandler => Close | Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     

@@ -27,7 +27,8 @@ object ItemsTotalcount {
     __obj.asInstanceOf[ItemsTotalcount]
   }
   
-  extension [Self <: ItemsTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsTotalcount] (val x: Self) extends AnyVal {
     
     inline def setIncomplete_results(value: Boolean): Self = StObject.set(x, "incomplete_results", value.asInstanceOf[js.Any])
     

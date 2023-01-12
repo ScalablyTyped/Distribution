@@ -39,7 +39,8 @@ object MagneticStripeReaderErrorOccurredEventArgs {
     __obj.asInstanceOf[MagneticStripeReaderErrorOccurredEventArgs]
   }
   
-  extension [Self <: MagneticStripeReaderErrorOccurredEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagneticStripeReaderErrorOccurredEventArgs] (val x: Self) extends AnyVal {
     
     inline def setErrorData(value: UnifiedPosErrorData): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object `1LN` {
     __obj.asInstanceOf[`1LN`[U, LastU, LN]]
   }
   
-  extension [Self <: `1LN`[?, ?, ?], U, LastU, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */](x: Self & (`1LN`[U, LastU, LN])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1LN`[?, ?, ?], U, LastU, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */] (val x: Self & (`1LN`[U, LastU, LN])) extends AnyVal {
     
     inline def set0(value: _ListOf[Exclude[U, LastU], Prepend[LN, LastU], Last[Exclude[U, LastU]]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

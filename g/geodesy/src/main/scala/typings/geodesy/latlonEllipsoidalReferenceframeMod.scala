@@ -193,7 +193,8 @@ object latlonEllipsoidalReferenceframeMod {
       __obj.asInstanceOf[ReferenceFrame]
     }
     
-    extension [Self <: ReferenceFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceFrame] (val x: Self) extends AnyVal {
       
       inline def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
       
@@ -224,7 +225,8 @@ object latlonEllipsoidalReferenceframeMod {
       __obj.asInstanceOf[TxParam]
     }
     
-    extension [Self <: TxParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TxParam] (val x: Self) extends AnyVal {
       
       inline def setEpoch(value: String): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
       

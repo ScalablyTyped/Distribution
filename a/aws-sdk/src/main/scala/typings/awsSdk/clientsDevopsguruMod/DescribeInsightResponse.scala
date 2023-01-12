@@ -23,7 +23,8 @@ object DescribeInsightResponse {
     __obj.asInstanceOf[DescribeInsightResponse]
   }
   
-  extension [Self <: DescribeInsightResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInsightResponse] (val x: Self) extends AnyVal {
     
     inline def setProactiveInsight(value: ProactiveInsight): Self = StObject.set(x, "ProactiveInsight", value.asInstanceOf[js.Any])
     

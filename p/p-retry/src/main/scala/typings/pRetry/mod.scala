@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[FailedAttemptError]
     }
     
-    extension [Self <: FailedAttemptError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailedAttemptError] (val x: Self) extends AnyVal {
       
       inline def setAttemptNumber(value: Double): Self = StObject.set(x, "attemptNumber", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOnFailedAttempt(value: /* error */ FailedAttemptError => Unit | js.Promise[Unit]): Self = StObject.set(x, "onFailedAttempt", js.Any.fromFunction1(value))
       

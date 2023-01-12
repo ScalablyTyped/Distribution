@@ -68,7 +68,8 @@ object menuListMenuListMod {
       __obj.asInstanceOf[MenuListProps]
     }
     
-    extension [Self <: MenuListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuListProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object ExplainabilitySummary {
     __obj.asInstanceOf[ExplainabilitySummary]
   }
   
-  extension [Self <: ExplainabilitySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplainabilitySummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

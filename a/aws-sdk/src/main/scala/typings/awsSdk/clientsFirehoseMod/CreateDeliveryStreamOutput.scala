@@ -18,7 +18,8 @@ object CreateDeliveryStreamOutput {
     __obj.asInstanceOf[CreateDeliveryStreamOutput]
   }
   
-  extension [Self <: CreateDeliveryStreamOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDeliveryStreamOutput] (val x: Self) extends AnyVal {
     
     inline def setDeliveryStreamARN(value: DeliveryStreamARN): Self = StObject.set(x, "DeliveryStreamARN", value.asInstanceOf[js.Any])
     

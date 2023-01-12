@@ -52,7 +52,8 @@ object IgHierarchicalGridRestSettings {
     __obj.asInstanceOf[IgHierarchicalGridRestSettings]
   }
   
-  extension [Self <: IgHierarchicalGridRestSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgHierarchicalGridRestSettings] (val x: Self) extends AnyVal {
     
     inline def setContentSerializer(value: js.Function): Self = StObject.set(x, "contentSerializer", value.asInstanceOf[js.Any])
     

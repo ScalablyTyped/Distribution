@@ -17,7 +17,8 @@ object FilterUnsupportedEssentialProperties {
     __obj.asInstanceOf[FilterUnsupportedEssentialProperties]
   }
   
-  extension [Self <: FilterUnsupportedEssentialProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterUnsupportedEssentialProperties] (val x: Self) extends AnyVal {
     
     inline def setFilterUnsupportedEssentialProperties(value: Boolean): Self = StObject.set(x, "filterUnsupportedEssentialProperties", value.asInstanceOf[js.Any])
     

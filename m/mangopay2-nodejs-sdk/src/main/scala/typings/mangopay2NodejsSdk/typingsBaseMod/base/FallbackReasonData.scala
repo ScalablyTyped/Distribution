@@ -17,7 +17,8 @@ object FallbackReasonData {
     __obj.asInstanceOf[FallbackReasonData]
   }
   
-  extension [Self <: FallbackReasonData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FallbackReasonData] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

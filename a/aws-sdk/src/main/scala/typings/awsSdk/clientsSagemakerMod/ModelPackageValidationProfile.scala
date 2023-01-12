@@ -23,7 +23,8 @@ object ModelPackageValidationProfile {
     __obj.asInstanceOf[ModelPackageValidationProfile]
   }
   
-  extension [Self <: ModelPackageValidationProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelPackageValidationProfile] (val x: Self) extends AnyVal {
     
     inline def setProfileName(value: EntityName): Self = StObject.set(x, "ProfileName", value.asInstanceOf[js.Any])
     

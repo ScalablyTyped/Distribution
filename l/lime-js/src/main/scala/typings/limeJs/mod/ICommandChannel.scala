@@ -17,7 +17,8 @@ object ICommandChannel {
     __obj.asInstanceOf[ICommandChannel]
   }
   
-  extension [Self <: ICommandChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommandChannel] (val x: Self) extends AnyVal {
     
     inline def setOnCommand(value: Command => Any): Self = StObject.set(x, "onCommand", js.Any.fromFunction1(value))
     

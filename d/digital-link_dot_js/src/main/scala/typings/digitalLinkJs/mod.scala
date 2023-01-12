@@ -102,7 +102,8 @@ object mod {
     @js.native
     def apply(input: DigitalLinkInput): DigitalLink = js.native
     
-    extension [Self <: DigitalLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DigitalLink] (val x: Self) extends AnyVal {
       
       inline def setGetAttribute(value: String => js.UndefOr[String]): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
       
@@ -274,7 +275,8 @@ object mod {
       __obj.asInstanceOf[DigitalLinkInput]
     }
     
-    extension [Self <: DigitalLinkInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DigitalLinkInput] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -412,7 +414,8 @@ object mod {
       __obj.asInstanceOf[ValidationTrace]
     }
     
-    extension [Self <: ValidationTrace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationTrace] (val x: Self) extends AnyVal {
       
       inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       

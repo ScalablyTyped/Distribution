@@ -32,7 +32,8 @@ object libUtilsGetMentionsMod {
       __obj.asInstanceOf[Mention]
     }
     
-    extension [Self <: Mention](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mention] (val x: Self) extends AnyVal {
       
       inline def setChildIndex(value: Double): Self = StObject.set(x, "childIndex", value.asInstanceOf[js.Any])
       

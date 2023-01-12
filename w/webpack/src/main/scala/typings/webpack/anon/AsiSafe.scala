@@ -94,7 +94,8 @@ object AsiSafe {
     __obj.asInstanceOf[AsiSafe]
   }
   
-  extension [Self <: AsiSafe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsiSafe] (val x: Self) extends AnyVal {
     
     inline def setAsiSafe(value: Boolean): Self = StObject.set(x, "asiSafe", value.asInstanceOf[js.Any])
     

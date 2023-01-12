@@ -28,7 +28,8 @@ object DataIntegrationAssociationSummary {
     __obj.asInstanceOf[DataIntegrationAssociationSummary]
   }
   
-  extension [Self <: DataIntegrationAssociationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataIntegrationAssociationSummary] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     

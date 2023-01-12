@@ -66,7 +66,8 @@ object examplesJsmLinesLineMaterialMod {
       __obj.asInstanceOf[LineMaterialParameters]
     }
     
-    extension [Self <: LineMaterialParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineMaterialParameters] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

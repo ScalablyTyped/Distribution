@@ -33,7 +33,8 @@ object ExtensionVersionDetails {
     __obj.asInstanceOf[ExtensionVersionDetails]
   }
   
-  extension [Self <: ExtensionVersionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionVersionDetails] (val x: Self) extends AnyVal {
     
     inline def setName(value: ExtensionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object srcTextpartlanguageMod {
       __obj.asInstanceOf[TextPartLanguageOption]
     }
     
-    extension [Self <: TextPartLanguageOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextPartLanguageOption] (val x: Self) extends AnyVal {
       
       inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object srcTextpartlanguageMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setTextPartLanguage(value: TextPartLanguage): Self = StObject.set(x, "TextPartLanguage", value.asInstanceOf[js.Any])
       }

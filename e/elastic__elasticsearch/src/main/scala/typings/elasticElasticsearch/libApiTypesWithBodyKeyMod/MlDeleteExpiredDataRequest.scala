@@ -21,7 +21,8 @@ object MlDeleteExpiredDataRequest {
     __obj.asInstanceOf[MlDeleteExpiredDataRequest]
   }
   
-  extension [Self <: MlDeleteExpiredDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDeleteExpiredDataRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Requestspersecond): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

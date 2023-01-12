@@ -28,7 +28,8 @@ object QRCodeToDataURLOptionsJpegWebp {
     __obj.asInstanceOf[QRCodeToDataURLOptionsJpegWebp]
   }
   
-  extension [Self <: QRCodeToDataURLOptionsJpegWebp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeToDataURLOptionsJpegWebp] (val x: Self) extends AnyVal {
     
     inline def setRendererOpts(value: Quality): Self = StObject.set(x, "rendererOpts", value.asInstanceOf[js.Any])
     

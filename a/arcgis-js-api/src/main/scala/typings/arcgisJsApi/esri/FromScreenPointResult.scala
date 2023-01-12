@@ -27,7 +27,8 @@ object FromScreenPointResult {
     __obj.asInstanceOf[FromScreenPointResult]
   }
   
-  extension [Self <: FromScreenPointResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FromScreenPointResult] (val x: Self) extends AnyVal {
     
     inline def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
     

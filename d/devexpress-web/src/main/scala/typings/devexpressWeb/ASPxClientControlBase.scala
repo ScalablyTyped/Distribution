@@ -81,7 +81,8 @@ object ASPxClientControlBase {
     __obj.asInstanceOf[ASPxClientControlBase]
   }
   
-  extension [Self <: ASPxClientControlBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientControlBase] (val x: Self) extends AnyVal {
     
     inline def setGetClientVisible(value: () => Boolean): Self = StObject.set(x, "GetClientVisible", js.Any.fromFunction0(value))
     

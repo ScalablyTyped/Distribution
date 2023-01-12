@@ -18,7 +18,8 @@ object IndexDocumentsResponse {
     __obj.asInstanceOf[IndexDocumentsResponse]
   }
   
-  extension [Self <: IndexDocumentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexDocumentsResponse] (val x: Self) extends AnyVal {
     
     inline def setFieldNames(value: FieldNameList): Self = StObject.set(x, "FieldNames", value.asInstanceOf[js.Any])
     

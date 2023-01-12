@@ -23,7 +23,8 @@ object RestoreVolumeFromSnapshotResponse {
     __obj.asInstanceOf[RestoreVolumeFromSnapshotResponse]
   }
   
-  extension [Self <: RestoreVolumeFromSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreVolumeFromSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setLifecycle(value: VolumeLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     

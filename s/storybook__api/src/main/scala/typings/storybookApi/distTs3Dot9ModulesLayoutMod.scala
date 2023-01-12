@@ -110,7 +110,8 @@ object distTs3Dot9ModulesLayoutMod {
       __obj.asInstanceOf[Layout]
     }
     
-    extension [Self <: Layout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
       
       inline def setInitialActive(value: ActiveTabsType): Self = StObject.set(x, "initialActive", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object distTs3Dot9ModulesLayoutMod {
       __obj.asInstanceOf[SubState]
     }
     
-    extension [Self <: SubState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
       
       inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
@@ -213,7 +215,8 @@ object distTs3Dot9ModulesLayoutMod {
       __obj.asInstanceOf[UI]
     }
     
-    extension [Self <: UI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UI] (val x: Self) extends AnyVal {
       
       inline def setDocsMode(value: Boolean): Self = StObject.set(x, "docsMode", value.asInstanceOf[js.Any])
       
@@ -259,7 +262,8 @@ object distTs3Dot9ModulesLayoutMod {
       __obj.asInstanceOf[UIOptions]
     }
     
-    extension [Self <: UIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIOptions] (val x: Self) extends AnyVal {
       
       inline def setAddonPanelInRight(value: Boolean): Self = StObject.set(x, "addonPanelInRight", value.asInstanceOf[js.Any])
       

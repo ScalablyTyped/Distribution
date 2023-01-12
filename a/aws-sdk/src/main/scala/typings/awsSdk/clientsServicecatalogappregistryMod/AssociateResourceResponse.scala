@@ -23,7 +23,8 @@ object AssociateResourceResponse {
     __obj.asInstanceOf[AssociateResourceResponse]
   }
   
-  extension [Self <: AssociateResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "applicationArn", value.asInstanceOf[js.Any])
     

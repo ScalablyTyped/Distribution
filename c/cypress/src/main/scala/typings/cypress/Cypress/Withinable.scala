@@ -26,7 +26,8 @@ object Withinable {
     __obj.asInstanceOf[Withinable]
   }
   
-  extension [Self <: Withinable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Withinable] (val x: Self) extends AnyVal {
     
     inline def setWithinSubject(value: JQuery[HTMLElement] | HTMLElement): Self = StObject.set(x, "withinSubject", value.asInstanceOf[js.Any])
     

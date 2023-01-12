@@ -17,7 +17,8 @@ object OIndexEntry {
     __obj.asInstanceOf[OIndexEntry]
   }
   
-  extension [Self <: OIndexEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OIndexEntry] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

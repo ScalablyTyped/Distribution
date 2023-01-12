@@ -57,7 +57,8 @@ object FileSystemInfo {
     __obj.asInstanceOf[FileSystemInfo]
   }
   
-  extension [Self <: FileSystemInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemInfo] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

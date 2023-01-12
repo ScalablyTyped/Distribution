@@ -23,7 +23,8 @@ object ListPipelineParametersForExecutionResponse {
     __obj.asInstanceOf[ListPipelineParametersForExecutionResponse]
   }
   
-  extension [Self <: ListPipelineParametersForExecutionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPipelineParametersForExecutionResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

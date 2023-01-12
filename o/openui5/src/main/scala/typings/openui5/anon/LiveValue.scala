@@ -18,7 +18,8 @@ object LiveValue {
     __obj.asInstanceOf[LiveValue]
   }
   
-  extension [Self <: LiveValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveValue] (val x: Self) extends AnyVal {
     
     inline def setLiveValue(value: String): Self = StObject.set(x, "liveValue", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object PickPropsstylechildrentes {
     __obj.asInstanceOf[PickPropsstylechildrentes]
   }
   
-  extension [Self <: PickPropsstylechildrentes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPropsstylechildrentes] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

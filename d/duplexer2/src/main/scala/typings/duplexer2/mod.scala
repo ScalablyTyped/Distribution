@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[Duplexer2Options]
     }
     
-    extension [Self <: Duplexer2Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duplexer2Options] (val x: Self) extends AnyVal {
       
       inline def setBubbleErrors(value: Boolean): Self = StObject.set(x, "bubbleErrors", value.asInstanceOf[js.Any])
       

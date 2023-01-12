@@ -70,7 +70,8 @@ object AbandonLoadTimeout {
     __obj.asInstanceOf[AbandonLoadTimeout]
   }
   
-  extension [Self <: AbandonLoadTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbandonLoadTimeout] (val x: Self) extends AnyVal {
     
     inline def setAbandonLoadTimeout(value: Double): Self = StObject.set(x, "abandonLoadTimeout", value.asInstanceOf[js.Any])
     

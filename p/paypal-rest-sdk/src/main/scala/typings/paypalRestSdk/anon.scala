@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: typings.paypalRestSdk.mod.Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Allowedpaymentmethod]
     }
     
-    extension [Self <: Allowedpaymentmethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Allowedpaymentmethod] (val x: Self) extends AnyVal {
       
       inline def setAllowed_payment_method(value: String): Self = StObject.set(x, "allowed_payment_method", value.asInstanceOf[js.Any])
     }
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Brandname]
     }
     
-    extension [Self <: Brandname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Brandname] (val x: Self) extends AnyVal {
       
       inline def setBrand_name(value: String): Self = StObject.set(x, "brand_name", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Cancelledby]
     }
     
-    extension [Self <: Cancelledby](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancelledby] (val x: Self) extends AnyVal {
       
       inline def setCancelled_by(value: String): Self = StObject.set(x, "cancelled_by", value.asInstanceOf[js.Any])
       
@@ -174,7 +178,8 @@ object anon {
       __obj.asInstanceOf[Cancelurl]
     }
     
-    extension [Self <: Cancelurl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancelurl] (val x: Self) extends AnyVal {
       
       inline def setCancel_url(value: String): Self = StObject.set(x, "cancel_url", value.asInstanceOf[js.Any])
       
@@ -209,7 +214,8 @@ object anon {
       __obj.asInstanceOf[Giftwrap]
     }
     
-    extension [Self <: Giftwrap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Giftwrap] (val x: Self) extends AnyVal {
       
       inline def setGift_wrap(value: String): Self = StObject.set(x, "gift_wrap", value.asInstanceOf[js.Any])
       
@@ -258,7 +264,8 @@ object anon {
       __obj.asInstanceOf[Items]
     }
     
-    extension [Self <: Items](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -291,7 +298,8 @@ object anon {
       __obj.asInstanceOf[Other]
     }
     
-    extension [Self <: Other](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Other] (val x: Self) extends AnyVal {
       
       inline def setOther(value: Currency): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
@@ -310,7 +318,8 @@ object anon {
       __obj.asInstanceOf[Paymentmethod]
     }
     
-    extension [Self <: Paymentmethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paymentmethod] (val x: Self) extends AnyVal {
       
       inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     }

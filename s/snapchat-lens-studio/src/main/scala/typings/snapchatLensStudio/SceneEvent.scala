@@ -30,7 +30,8 @@ object SceneEvent {
     __obj.asInstanceOf[SceneEvent[T]]
   }
   
-  extension [Self <: SceneEvent[?], T /* <: SceneEvent[Any] */](x: Self & SceneEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneEvent[?], T /* <: SceneEvent[Any] */] (val x: Self & SceneEvent[T]) extends AnyVal {
     
     inline def setBind(value: js.Function1[/* eventData */ Omit[T, enabled], Unit] => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     

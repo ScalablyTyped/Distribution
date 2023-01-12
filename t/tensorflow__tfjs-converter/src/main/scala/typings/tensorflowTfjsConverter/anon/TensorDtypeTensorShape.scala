@@ -15,7 +15,8 @@ object TensorDtypeTensorShape {
     __obj.asInstanceOf[TensorDtypeTensorShape]
   }
   
-  extension [Self <: TensorDtypeTensorShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TensorDtypeTensorShape] (val x: Self) extends AnyVal {
     
     inline def setTensor(value: DtypeTensorShape): Self = StObject.set(x, "tensor", value.asInstanceOf[js.Any])
   }

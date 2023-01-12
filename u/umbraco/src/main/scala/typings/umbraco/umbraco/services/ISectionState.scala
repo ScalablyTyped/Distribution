@@ -21,7 +21,8 @@ object ISectionState {
     __obj.asInstanceOf[ISectionState]
   }
   
-  extension [Self <: ISectionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISectionState] (val x: Self) extends AnyVal {
     
     inline def setCurrentSection(value: Any): Self = StObject.set(x, "currentSection", value.asInstanceOf[js.Any])
     

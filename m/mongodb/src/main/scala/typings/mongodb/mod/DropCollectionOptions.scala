@@ -19,7 +19,8 @@ object DropCollectionOptions {
     __obj.asInstanceOf[DropCollectionOptions]
   }
   
-  extension [Self <: DropCollectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropCollectionOptions] (val x: Self) extends AnyVal {
     
     inline def setEncryptedFields(value: Document): Self = StObject.set(x, "encryptedFields", value.asInstanceOf[js.Any])
     

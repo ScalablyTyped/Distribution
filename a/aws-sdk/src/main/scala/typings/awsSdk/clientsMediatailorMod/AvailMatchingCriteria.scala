@@ -23,7 +23,8 @@ object AvailMatchingCriteria {
     __obj.asInstanceOf[AvailMatchingCriteria]
   }
   
-  extension [Self <: AvailMatchingCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailMatchingCriteria] (val x: Self) extends AnyVal {
     
     inline def setDynamicVariable(value: _String): Self = StObject.set(x, "DynamicVariable", value.asInstanceOf[js.Any])
     

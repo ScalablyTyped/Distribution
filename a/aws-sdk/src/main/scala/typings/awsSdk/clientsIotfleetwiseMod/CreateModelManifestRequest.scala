@@ -38,7 +38,8 @@ object CreateModelManifestRequest {
     __obj.asInstanceOf[CreateModelManifestRequest]
   }
   
-  extension [Self <: CreateModelManifestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateModelManifestRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

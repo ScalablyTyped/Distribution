@@ -19,7 +19,8 @@ object RaphaelAnimationStatus {
     __obj.asInstanceOf[RaphaelAnimationStatus]
   }
   
-  extension [Self <: RaphaelAnimationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelAnimationStatus] (val x: Self) extends AnyVal {
     
     inline def setAnim(value: RaphaelAnimation): Self = StObject.set(x, "anim", value.asInstanceOf[js.Any])
     

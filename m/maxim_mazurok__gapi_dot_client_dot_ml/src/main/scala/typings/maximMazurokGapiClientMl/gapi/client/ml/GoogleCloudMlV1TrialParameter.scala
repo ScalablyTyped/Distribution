@@ -25,7 +25,8 @@ object GoogleCloudMlV1TrialParameter {
     __obj.asInstanceOf[GoogleCloudMlV1TrialParameter]
   }
   
-  extension [Self <: GoogleCloudMlV1TrialParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1TrialParameter] (val x: Self) extends AnyVal {
     
     inline def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
     

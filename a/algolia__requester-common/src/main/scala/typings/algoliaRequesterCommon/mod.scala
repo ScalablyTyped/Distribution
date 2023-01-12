@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[Destroyable]
     }
     
-    extension [Self <: Destroyable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Destroyable] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => ReadonlyPromisevoid): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object mod {
       __obj.asInstanceOf[Requester]
     }
     
-    extension [Self <: Requester](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Requester] (val x: Self) extends AnyVal {
       
       inline def setSend(value: Request => ReadonlyPromiseResponse): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
@@ -162,7 +165,8 @@ object mod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

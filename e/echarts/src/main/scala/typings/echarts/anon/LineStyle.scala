@@ -265,7 +265,8 @@ object LineStyle {
     __obj.asInstanceOf[LineStyle]
   }
   
-  extension [Self <: LineStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
     
     inline def setCoord(value: js.Array[Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
     

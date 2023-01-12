@@ -17,7 +17,8 @@ object Global {
     __obj.asInstanceOf[Global]
   }
   
-  extension [Self <: Global](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: ZIndexPopup): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

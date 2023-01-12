@@ -47,7 +47,8 @@ object CellResponsiveTitle {
     __obj.asInstanceOf[CellResponsiveTitle]
   }
   
-  extension [Self <: CellResponsiveTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellResponsiveTitle] (val x: Self) extends AnyVal {
     
     inline def setCellLabel(value: String): Self = StObject.set(x, "cellLabel", value.asInstanceOf[js.Any])
     

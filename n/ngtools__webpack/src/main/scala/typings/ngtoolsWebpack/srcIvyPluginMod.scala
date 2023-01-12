@@ -106,7 +106,8 @@ object srcIvyPluginMod {
       __obj.asInstanceOf[AngularWebpackPluginOptions]
     }
     
-    extension [Self <: AngularWebpackPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AngularWebpackPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       

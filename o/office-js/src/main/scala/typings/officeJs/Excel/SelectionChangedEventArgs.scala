@@ -27,7 +27,8 @@ object SelectionChangedEventArgs {
     __obj.asInstanceOf[SelectionChangedEventArgs]
   }
   
-  extension [Self <: SelectionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setWorkbook(value: Workbook): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object EndpointTextMessageReceivedEvent {
     __obj.asInstanceOf[EndpointTextMessageReceivedEvent]
   }
   
-  extension [Self <: EndpointTextMessageReceivedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointTextMessageReceivedEvent] (val x: Self) extends AnyVal {
     
     inline def setEventData(value: Name): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
     

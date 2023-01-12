@@ -23,7 +23,8 @@ object RevokeInvitationRequest {
     __obj.asInstanceOf[RevokeInvitationRequest]
   }
   
-  extension [Self <: RevokeInvitationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeInvitationRequest] (val x: Self) extends AnyVal {
     
     inline def setEnrollmentId(value: EnrollmentId): Self = StObject.set(x, "EnrollmentId", value.asInstanceOf[js.Any])
     

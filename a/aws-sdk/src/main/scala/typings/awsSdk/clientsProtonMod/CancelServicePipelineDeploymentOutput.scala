@@ -18,7 +18,8 @@ object CancelServicePipelineDeploymentOutput {
     __obj.asInstanceOf[CancelServicePipelineDeploymentOutput]
   }
   
-  extension [Self <: CancelServicePipelineDeploymentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelServicePipelineDeploymentOutput] (val x: Self) extends AnyVal {
     
     inline def setPipeline(value: ServicePipeline): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
   }

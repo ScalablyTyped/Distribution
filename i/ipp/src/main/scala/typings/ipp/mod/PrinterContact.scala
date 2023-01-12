@@ -19,7 +19,8 @@ object PrinterContact {
     __obj.asInstanceOf[PrinterContact]
   }
   
-  extension [Self <: PrinterContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterContact] (val x: Self) extends AnyVal {
     
     inline def `setContact-name`(value: String): Self = StObject.set(x, "contact-name", value.asInstanceOf[js.Any])
     

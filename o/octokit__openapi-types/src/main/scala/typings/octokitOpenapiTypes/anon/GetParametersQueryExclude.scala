@@ -19,7 +19,8 @@ object GetParametersQueryExclude {
     __obj.asInstanceOf[GetParametersQueryExclude]
   }
   
-  extension [Self <: GetParametersQueryExclude](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersQueryExclude] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQueryExclude): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object Replacement {
     __obj.asInstanceOf[Replacement]
   }
   
-  extension [Self <: Replacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Replacement] (val x: Self) extends AnyVal {
     
     inline def setDeletedRegion(value: Region): Self = StObject.set(x, "deletedRegion", value.asInstanceOf[js.Any])
     

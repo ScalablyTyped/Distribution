@@ -22,7 +22,8 @@ object GoogleAnalyticsAdminV1alphaAudienceSequenceFilter {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAudienceSequenceFilter]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAudienceSequenceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAudienceSequenceFilter] (val x: Self) extends AnyVal {
     
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

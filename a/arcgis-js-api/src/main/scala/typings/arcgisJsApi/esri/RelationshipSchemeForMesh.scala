@@ -64,7 +64,8 @@ object RelationshipSchemeForMesh {
     __obj.asInstanceOf[RelationshipSchemeForMesh]
   }
   
-  extension [Self <: RelationshipSchemeForMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipSchemeForMesh] (val x: Self) extends AnyVal {
     
     inline def setColorsForClassBreaks(value: js.Array[RelationshipSchemeForMeshColorsForClassBreaks]): Self = StObject.set(x, "colorsForClassBreaks", value.asInstanceOf[js.Any])
     

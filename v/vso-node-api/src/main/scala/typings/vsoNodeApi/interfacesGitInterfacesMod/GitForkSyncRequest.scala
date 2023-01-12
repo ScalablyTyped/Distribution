@@ -44,7 +44,8 @@ object GitForkSyncRequest {
     __obj.asInstanceOf[GitForkSyncRequest]
   }
   
-  extension [Self <: GitForkSyncRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitForkSyncRequest] (val x: Self) extends AnyVal {
     
     inline def setDetailedStatus(value: GitForkOperationStatusDetail): Self = StObject.set(x, "detailedStatus", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object RecordingFinished {
     __obj.asInstanceOf[RecordingFinished]
   }
   
-  extension [Self <: RecordingFinished](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordingFinished] (val x: Self) extends AnyVal {
     
     inline def setRecording(value: LiveRecording): Self = StObject.set(x, "recording", value.asInstanceOf[js.Any])
   }

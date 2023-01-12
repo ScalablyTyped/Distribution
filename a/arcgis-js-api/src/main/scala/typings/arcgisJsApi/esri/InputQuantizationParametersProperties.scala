@@ -62,7 +62,8 @@ object InputQuantizationParametersProperties {
     __obj.asInstanceOf[InputQuantizationParametersProperties]
   }
   
-  extension [Self <: InputQuantizationParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputQuantizationParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setMFalseOrigin(value: Double): Self = StObject.set(x, "mFalseOrigin", value.asInstanceOf[js.Any])
     

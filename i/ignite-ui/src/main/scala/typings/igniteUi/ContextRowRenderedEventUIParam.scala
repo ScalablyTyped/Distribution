@@ -38,7 +38,8 @@ object ContextRowRenderedEventUIParam {
     __obj.asInstanceOf[ContextRowRenderedEventUIParam]
   }
   
-  extension [Self <: ContextRowRenderedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextRowRenderedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setContextRowMode(value: String): Self = StObject.set(x, "contextRowMode", value.asInstanceOf[js.Any])
     

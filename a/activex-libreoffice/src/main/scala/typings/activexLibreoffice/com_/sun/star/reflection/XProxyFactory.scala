@@ -35,7 +35,8 @@ object XProxyFactory {
     __obj.asInstanceOf[XProxyFactory]
   }
   
-  extension [Self <: XProxyFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XProxyFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateProxy(value: XInterface => XAggregation): Self = StObject.set(x, "createProxy", js.Any.fromFunction1(value))
   }

@@ -64,7 +64,8 @@ object JQuery {
     __obj.asInstanceOf[JQuery]
   }
   
-  extension [Self <: JQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
     
     inline def setAccordion(value: Accordion): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
   }

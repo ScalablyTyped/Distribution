@@ -39,7 +39,8 @@ object PointPrefixedHoverOptions {
     __obj.asInstanceOf[PointPrefixedHoverOptions]
   }
   
-  extension [Self <: PointPrefixedHoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointPrefixedHoverOptions] (val x: Self) extends AnyVal {
     
     inline def setPointHoverBackgroundColor(value: Color): Self = StObject.set(x, "pointHoverBackgroundColor", value.asInstanceOf[js.Any])
     

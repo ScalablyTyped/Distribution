@@ -20,7 +20,8 @@ object RemoveChannelMetadataEvent {
     __obj.asInstanceOf[RemoveChannelMetadataEvent]
   }
   
-  extension [Self <: RemoveChannelMetadataEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveChannelMetadataEvent] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: EventType): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

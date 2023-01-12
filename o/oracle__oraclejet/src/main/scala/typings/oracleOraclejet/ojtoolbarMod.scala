@@ -181,7 +181,8 @@ object ojtoolbarMod {
       __obj.asInstanceOf[ojToolbarEventMap]
     }
     
-    extension [Self <: ojToolbarEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojToolbarEventMap] (val x: Self) extends AnyVal {
       
       inline def setChromingChanged(value: JetElementCustomEvent[full | half | outlined]): Self = StObject.set(x, "chromingChanged", value.asInstanceOf[js.Any])
     }
@@ -200,7 +201,8 @@ object ojtoolbarMod {
       __obj.asInstanceOf[ojToolbarSettableProperties]
     }
     
-    extension [Self <: ojToolbarSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojToolbarSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
     }
@@ -222,7 +224,8 @@ object ojtoolbarMod {
       __obj.asInstanceOf[ojToolbarSettablePropertiesLenient]
     }
     
-    extension [Self <: ojToolbarSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojToolbarSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
       

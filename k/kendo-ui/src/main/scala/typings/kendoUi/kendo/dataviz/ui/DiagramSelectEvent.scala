@@ -19,7 +19,8 @@ object DiagramSelectEvent {
     __obj.asInstanceOf[DiagramSelectEvent]
   }
   
-  extension [Self <: DiagramSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setDeselected(value: Any): Self = StObject.set(x, "deselected", value.asInstanceOf[js.Any])
     

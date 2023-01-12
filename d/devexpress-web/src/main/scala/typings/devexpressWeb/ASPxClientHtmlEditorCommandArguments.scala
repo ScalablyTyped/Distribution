@@ -21,7 +21,8 @@ object ASPxClientHtmlEditorCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorCommandArguments]
   }
   
-  extension [Self <: ASPxClientHtmlEditorCommandArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorCommandArguments] (val x: Self) extends AnyVal {
     
     inline def setSelectedElement(value: Any): Self = StObject.set(x, "selectedElement", value.asInstanceOf[js.Any])
   }

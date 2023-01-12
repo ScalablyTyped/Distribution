@@ -20,7 +20,8 @@ object SetStateParameters {
     __obj.asInstanceOf[SetStateParameters]
   }
   
-  extension [Self <: SetStateParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetStateParameters] (val x: Self) extends AnyVal {
     
     inline def setChannelGroups(value: js.Array[String]): Self = StObject.set(x, "channelGroups", value.asInstanceOf[js.Any])
     

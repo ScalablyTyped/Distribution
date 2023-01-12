@@ -18,7 +18,8 @@ object DeprovisionByoipCidrRequest {
     __obj.asInstanceOf[DeprovisionByoipCidrRequest]
   }
   
-  extension [Self <: DeprovisionByoipCidrRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprovisionByoipCidrRequest] (val x: Self) extends AnyVal {
     
     inline def setCidr(value: GenericString): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
   }

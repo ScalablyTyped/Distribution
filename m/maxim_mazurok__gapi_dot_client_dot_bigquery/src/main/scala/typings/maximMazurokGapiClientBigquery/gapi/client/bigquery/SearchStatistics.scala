@@ -22,7 +22,8 @@ object SearchStatistics {
     __obj.asInstanceOf[SearchStatistics]
   }
   
-  extension [Self <: SearchStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchStatistics] (val x: Self) extends AnyVal {
     
     inline def setIndexUnusedReason(value: js.Array[IndexUnusedReason]): Self = StObject.set(x, "indexUnusedReason", value.asInstanceOf[js.Any])
     

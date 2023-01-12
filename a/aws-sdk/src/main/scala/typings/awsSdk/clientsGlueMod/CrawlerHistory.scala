@@ -63,7 +63,8 @@ object CrawlerHistory {
     __obj.asInstanceOf[CrawlerHistory]
   }
   
-  extension [Self <: CrawlerHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrawlerHistory] (val x: Self) extends AnyVal {
     
     inline def setCrawlId(value: CrawlId): Self = StObject.set(x, "CrawlId", value.asInstanceOf[js.Any])
     

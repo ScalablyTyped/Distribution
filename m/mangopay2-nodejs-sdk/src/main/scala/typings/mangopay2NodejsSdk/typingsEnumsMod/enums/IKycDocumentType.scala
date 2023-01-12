@@ -28,7 +28,8 @@ object IKycDocumentType {
     __obj.asInstanceOf[IKycDocumentType]
   }
   
-  extension [Self <: IKycDocumentType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKycDocumentType] (val x: Self) extends AnyVal {
     
     inline def setAddressProof(value: ADDRESS_PROOF): Self = StObject.set(x, "AddressProof", value.asInstanceOf[js.Any])
     

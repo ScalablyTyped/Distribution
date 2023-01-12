@@ -17,7 +17,8 @@ object BindingsPerObject {
     __obj.asInstanceOf[BindingsPerObject]
   }
   
-  extension [Self <: BindingsPerObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingsPerObject] (val x: Self) extends AnyVal {
     
     inline def setBindingsPerObject(value: Double): Self = StObject.set(x, "bindingsPerObject", value.asInstanceOf[js.Any])
     

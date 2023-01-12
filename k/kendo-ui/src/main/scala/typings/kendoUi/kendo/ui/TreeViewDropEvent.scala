@@ -28,7 +28,8 @@ object TreeViewDropEvent {
     __obj.asInstanceOf[TreeViewDropEvent]
   }
   
-  extension [Self <: TreeViewDropEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeViewDropEvent] (val x: Self) extends AnyVal {
     
     inline def setDestinationNode(value: Element): Self = StObject.set(x, "destinationNode", value.asInstanceOf[js.Any])
     

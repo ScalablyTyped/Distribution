@@ -18,7 +18,8 @@ object UserAttributeUpdateSettingsType {
     __obj.asInstanceOf[UserAttributeUpdateSettingsType]
   }
   
-  extension [Self <: UserAttributeUpdateSettingsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAttributeUpdateSettingsType] (val x: Self) extends AnyVal {
     
     inline def setAttributesRequireVerificationBeforeUpdate(value: AttributesRequireVerificationBeforeUpdateType): Self = StObject.set(x, "AttributesRequireVerificationBeforeUpdate", value.asInstanceOf[js.Any])
     

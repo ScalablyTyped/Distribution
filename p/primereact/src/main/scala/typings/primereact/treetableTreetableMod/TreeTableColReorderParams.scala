@@ -24,7 +24,8 @@ object TreeTableColReorderParams {
     __obj.asInstanceOf[TreeTableColReorderParams]
   }
   
-  extension [Self <: TreeTableColReorderParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeTableColReorderParams] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: ReactElement): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

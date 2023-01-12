@@ -19,7 +19,8 @@ object DeserializeHandlerOptions {
     __obj.asInstanceOf[DeserializeHandlerOptions]
   }
   
-  extension [Self <: DeserializeHandlerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeserializeHandlerOptions] (val x: Self) extends AnyVal {
     
     inline def setStep(value: deserialize): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }

@@ -40,7 +40,8 @@ object TableChangeState {
     __obj.asInstanceOf[TableChangeState[T]]
   }
   
-  extension [Self <: TableChangeState[?], T](x: Self & TableChangeState[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableChangeState[?], T] (val x: Self & TableChangeState[T]) extends AnyVal {
     
     inline def setCellEdit(value: DataField): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
     

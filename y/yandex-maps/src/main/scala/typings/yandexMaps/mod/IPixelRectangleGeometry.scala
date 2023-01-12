@@ -30,7 +30,8 @@ object IPixelRectangleGeometry {
     __obj.asInstanceOf[IPixelRectangleGeometry]
   }
   
-  extension [Self <: IPixelRectangleGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPixelRectangleGeometry] (val x: Self) extends AnyVal {
     
     inline def setGetClosest(value: js.Array[Double] => js.Object): Self = StObject.set(x, "getClosest", js.Any.fromFunction1(value))
     

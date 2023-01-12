@@ -52,7 +52,8 @@ object SliceProperties {
     __obj.asInstanceOf[SliceProperties]
   }
   
-  extension [Self <: SliceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliceProperties] (val x: Self) extends AnyVal {
     
     inline def setAnalysis(value: SliceAnalysisProperties): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AsyncValidateOption]
     }
     
-    extension [Self <: AsyncValidateOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncValidateOption] (val x: Self) extends AnyVal {
       
       inline def setCleanAttributes(value: Boolean): Self = StObject.set(x, "cleanAttributes", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CollectFormValuesOption]
     }
     
-    extension [Self <: CollectFormValuesOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectFormValuesOption] (val x: Self) extends AnyVal {
       
       inline def setNullify(value: Boolean): Self = StObject.set(x, "nullify", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ValidateOption]
     }
     
-    extension [Self <: ValidateOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateOption] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

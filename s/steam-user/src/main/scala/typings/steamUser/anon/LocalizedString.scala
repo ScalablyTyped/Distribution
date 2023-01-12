@@ -18,7 +18,8 @@ object LocalizedString {
     __obj.asInstanceOf[LocalizedString]
   }
   
-  extension [Self <: LocalizedString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalizedString] (val x: Self) extends AnyVal {
     
     inline def setLocalizedString(value: String): Self = StObject.set(x, "localizedString", value.asInstanceOf[js.Any])
     

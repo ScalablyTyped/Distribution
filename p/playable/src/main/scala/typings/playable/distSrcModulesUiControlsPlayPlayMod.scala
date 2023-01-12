@@ -165,7 +165,8 @@ object distSrcModulesUiControlsPlayPlayMod {
       __obj.asInstanceOf[PlayControl]
     }
     
-    extension [Self <: PlayControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayControl] (val x: Self) extends AnyVal {
       
       inline def setView(value: typings.playable.distSrcModulesUiControlsPlayPlayDotviewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       

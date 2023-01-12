@@ -29,7 +29,8 @@ object IsolationModeHighlightConfig {
     __obj.asInstanceOf[IsolationModeHighlightConfig]
   }
   
-  extension [Self <: IsolationModeHighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsolationModeHighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setMaskColor(value: RGBA): Self = StObject.set(x, "maskColor", value.asInstanceOf[js.Any])
     

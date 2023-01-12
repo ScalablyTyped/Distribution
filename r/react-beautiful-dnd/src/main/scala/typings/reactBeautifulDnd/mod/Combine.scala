@@ -17,7 +17,8 @@ object Combine {
     __obj.asInstanceOf[Combine]
   }
   
-  extension [Self <: Combine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Combine] (val x: Self) extends AnyVal {
     
     inline def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
     

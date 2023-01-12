@@ -21,7 +21,8 @@ object ChangeStreamCreateDocument {
     __obj.asInstanceOf[ChangeStreamCreateDocument]
   }
   
-  extension [Self <: ChangeStreamCreateDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamCreateDocument] (val x: Self) extends AnyVal {
     
     inline def setOperationType(value: create): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
   }

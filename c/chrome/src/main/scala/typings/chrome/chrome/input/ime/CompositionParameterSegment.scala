@@ -22,7 +22,8 @@ object CompositionParameterSegment {
     __obj.asInstanceOf[CompositionParameterSegment]
   }
   
-  extension [Self <: CompositionParameterSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositionParameterSegment] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

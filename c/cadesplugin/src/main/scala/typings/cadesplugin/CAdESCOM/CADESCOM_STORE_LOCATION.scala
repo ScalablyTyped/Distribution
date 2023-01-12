@@ -24,7 +24,8 @@ object CADESCOM_STORE_LOCATION {
     __obj.asInstanceOf[CADESCOM_STORE_LOCATION]
   }
   
-  extension [Self <: CADESCOM_STORE_LOCATION](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CADESCOM_STORE_LOCATION] (val x: Self) extends AnyVal {
     
     inline def setCADESCOM_ACTIVE_DIRECTORY_USER_STORE(value: `3`): Self = StObject.set(x, "CADESCOM_ACTIVE_DIRECTORY_USER_STORE", value.asInstanceOf[js.Any])
     

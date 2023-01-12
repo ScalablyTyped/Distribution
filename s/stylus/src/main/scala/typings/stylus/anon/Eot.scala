@@ -54,7 +54,8 @@ object Eot {
     __obj.asInstanceOf[Eot]
   }
   
-  extension [Self <: Eot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Eot] (val x: Self) extends AnyVal {
     
     inline def setDoteot(value: String): Self = StObject.set(x, ".eot", value.asInstanceOf[js.Any])
     

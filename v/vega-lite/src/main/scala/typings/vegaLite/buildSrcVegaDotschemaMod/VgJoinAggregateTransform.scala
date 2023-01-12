@@ -26,7 +26,8 @@ object VgJoinAggregateTransform {
     __obj.asInstanceOf[VgJoinAggregateTransform]
   }
   
-  extension [Self <: VgJoinAggregateTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VgJoinAggregateTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: js.Array[String]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object LinkGetProps {
     __obj.asInstanceOf[LinkGetProps]
   }
   
-  extension [Self <: LinkGetProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkGetProps] (val x: Self) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

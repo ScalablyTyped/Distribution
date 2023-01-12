@@ -19,7 +19,8 @@ object RawNumberFormatResult {
     __obj.asInstanceOf[RawNumberFormatResult]
   }
   
-  extension [Self <: RawNumberFormatResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawNumberFormatResult] (val x: Self) extends AnyVal {
     
     inline def setFormattedString(value: String): Self = StObject.set(x, "formattedString", value.asInstanceOf[js.Any])
     

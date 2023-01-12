@@ -66,7 +66,8 @@ object libPaginationMod {
       __obj.asInstanceOf[PaginationNativeProps]
     }
     
-    extension [Self <: PaginationNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationNativeProps] (val x: Self) extends AnyVal {
       
       inline def setIndicatorStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
       

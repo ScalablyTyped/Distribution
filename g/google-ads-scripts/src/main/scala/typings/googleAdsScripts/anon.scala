@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: AddressObject): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[BidModifier]
     }
     
-    extension [Self <: BidModifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BidModifier] (val x: Self) extends AnyVal {
       
       inline def setBidModifier(value: Double): Self = StObject.set(x, "bidModifier", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object InitialGroupConfig {
     __obj.asInstanceOf[InitialGroupConfig]
   }
   
-  extension [Self <: InitialGroupConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialGroupConfig] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

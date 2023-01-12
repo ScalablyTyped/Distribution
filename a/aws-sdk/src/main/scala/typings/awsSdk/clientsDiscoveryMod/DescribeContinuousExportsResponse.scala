@@ -23,7 +23,8 @@ object DescribeContinuousExportsResponse {
     __obj.asInstanceOf[DescribeContinuousExportsResponse]
   }
   
-  extension [Self <: DescribeContinuousExportsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeContinuousExportsResponse] (val x: Self) extends AnyVal {
     
     inline def setDescriptions(value: ContinuousExportDescriptions): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Confident[T]]
     }
     
-    extension [Self <: Confident[?], T](x: Self & Confident[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Confident[?], T] (val x: Self & Confident[T]) extends AnyVal {
       
       inline def setConfident(value: Boolean): Self = StObject.set(x, "confident", value.asInstanceOf[js.Any])
       

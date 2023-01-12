@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Any): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Categories]
     }
     
-    extension [Self <: Categories](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Categories] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: X): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Parent]
     }
     
-    extension [Self <: Parent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
       
       inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     }
@@ -127,7 +130,8 @@ object anon {
       __obj.asInstanceOf[Pickanyparentbackgroundan]
     }
     
-    extension [Self <: Pickanyparentbackgroundan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pickanyparentbackgroundan] (val x: Self) extends AnyVal {
       
       inline def setBackground(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VictoryStyleObject */ Any
@@ -154,7 +158,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -175,7 +180,8 @@ object anon {
       __obj.asInstanceOf[Y]
     }
     
-    extension [Self <: Y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double | js.Date): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

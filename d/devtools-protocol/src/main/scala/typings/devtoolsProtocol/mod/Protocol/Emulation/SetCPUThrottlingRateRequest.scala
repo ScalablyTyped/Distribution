@@ -18,7 +18,8 @@ object SetCPUThrottlingRateRequest {
     __obj.asInstanceOf[SetCPUThrottlingRateRequest]
   }
   
-  extension [Self <: SetCPUThrottlingRateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetCPUThrottlingRateRequest] (val x: Self) extends AnyVal {
     
     inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
   }

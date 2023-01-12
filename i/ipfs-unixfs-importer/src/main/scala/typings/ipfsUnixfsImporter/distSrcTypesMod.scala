@@ -71,7 +71,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Directory]
     }
     
-    extension [Self <: Directory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Directory] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setContent(value: AsyncIterable[js.typedarray.Uint8Array]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[ImportCandidate]
     }
     
-    extension [Self <: ImportCandidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportCandidate] (val x: Self) extends AnyVal {
       
       inline def setContent(
         value: AsyncIterable[js.typedarray.Uint8Array] | js.Iterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array
@@ -189,7 +192,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[ImportResult]
     }
     
-    extension [Self <: ImportResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportResult] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -305,7 +309,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[ImporterOptions]
     }
     
-    extension [Self <: ImporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImporterOptions] (val x: Self) extends AnyVal {
       
       inline def setAvgChunkSize(value: Double): Self = StObject.set(x, "avgChunkSize", value.asInstanceOf[js.Any])
       
@@ -406,7 +411,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[InProgressImportResult]
     }
     
-    extension [Self <: InProgressImportResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InProgressImportResult] (val x: Self) extends AnyVal {
       
       inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
       
@@ -439,7 +445,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[PersistOptions]
     }
     
-    extension [Self <: PersistOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistOptions] (val x: Self) extends AnyVal {
       
       inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
@@ -499,7 +506,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[TrickleDagNode]
     }
     
-    extension [Self <: TrickleDagNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrickleDagNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[InProgressImportResult]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -613,7 +621,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[UserImporterOptions]
     }
     
-    extension [Self <: UserImporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserImporterOptions] (val x: Self) extends AnyVal {
       
       inline def setAvgChunkSize(value: Double): Self = StObject.set(x, "avgChunkSize", value.asInstanceOf[js.Any])
       

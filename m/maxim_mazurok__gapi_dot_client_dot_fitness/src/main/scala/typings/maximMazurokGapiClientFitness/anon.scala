@@ -59,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Accesstoken]
     }
     
-    extension [Self <: Accesstoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accesstoken] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object anon {
       __obj.asInstanceOf[ActivityType]
     }
     
-    extension [Self <: ActivityType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivityType] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -300,7 +302,8 @@ object anon {
       __obj.asInstanceOf[Alt]
     }
     
-    extension [Self <: Alt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -408,7 +411,8 @@ object anon {
       __obj.asInstanceOf[Callback]
     }
     
-    extension [Self <: Callback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -520,7 +524,8 @@ object anon {
       __obj.asInstanceOf[DataSourceId]
     }
     
-    extension [Self <: DataSourceId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceId] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -623,7 +628,8 @@ object anon {
       __obj.asInstanceOf[DataTypeName]
     }
     
-    extension [Self <: DataTypeName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTypeName] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -746,7 +752,8 @@ object anon {
       __obj.asInstanceOf[DatasetId]
     }
     
-    extension [Self <: DatasetId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatasetId] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -863,7 +870,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -968,7 +976,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -1069,7 +1078,8 @@ object anon {
       __obj.asInstanceOf[Oauthtoken]
     }
     
-    extension [Self <: Oauthtoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Oauthtoken] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -1173,7 +1183,8 @@ object anon {
       __obj.asInstanceOf[PrettyPrint]
     }
     
-    extension [Self <: PrettyPrint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrettyPrint] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -1276,7 +1287,8 @@ object anon {
       __obj.asInstanceOf[QuotaUser]
     }
     
-    extension [Self <: QuotaUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuotaUser] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -1380,7 +1392,8 @@ object anon {
       __obj.asInstanceOf[Resource]
     }
     
-    extension [Self <: Resource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       

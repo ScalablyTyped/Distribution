@@ -18,7 +18,8 @@ object DataTables {
       __obj.asInstanceOf[Api]
     }
     
-    extension [Self <: Api](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
       
       inline def setKeys(value: Disable): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object DataTables {
       __obj.asInstanceOf[CellMethods]
     }
     
-    extension [Self <: CellMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellMethods] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Api): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -128,7 +130,8 @@ object DataTables {
       __obj.asInstanceOf[KeyTableSettings]
     }
     
-    extension [Self <: KeyTableSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyTableSettings] (val x: Self) extends AnyVal {
       
       inline def setBlurable(value: Boolean): Self = StObject.set(x, "blurable", value.asInstanceOf[js.Any])
       
@@ -190,7 +193,8 @@ object DataTables {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setKeys(value: Boolean | KeyTableSettings): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       

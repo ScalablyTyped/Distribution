@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[RESIZEBEZIER]
     }
     
-    extension [Self <: RESIZEBEZIER](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RESIZEBEZIER] (val x: Self) extends AnyVal {
       
       inline def setRESIZE_BEZIER(value: bezierInterpolation): Self = StObject.set(x, "RESIZE_BEZIER", value.asInstanceOf[js.Any])
       

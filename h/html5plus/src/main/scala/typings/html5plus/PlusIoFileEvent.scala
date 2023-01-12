@@ -28,7 +28,8 @@ object PlusIoFileEvent {
     __obj.asInstanceOf[PlusIoFileEvent]
   }
   
-  extension [Self <: PlusIoFileEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusIoFileEvent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: PlusIoDirectoryEntry): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GPUColorTargetState {
     __obj.asInstanceOf[GPUColorTargetState]
   }
   
-  extension [Self <: GPUColorTargetState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUColorTargetState] (val x: Self) extends AnyVal {
     
     inline def setBlend(value: GPUBlendState): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
     

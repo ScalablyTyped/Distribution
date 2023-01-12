@@ -16,7 +16,8 @@ object CurrentModule {
     __obj.asInstanceOf[CurrentModule]
   }
   
-  extension [Self <: CurrentModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentModule] (val x: Self) extends AnyVal {
     
     inline def setCurrentModule(value: NavigationModule): Self = StObject.set(x, "CurrentModule", value.asInstanceOf[js.Any])
   }

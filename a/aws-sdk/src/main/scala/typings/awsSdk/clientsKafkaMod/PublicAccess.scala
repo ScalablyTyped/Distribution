@@ -20,7 +20,8 @@ object PublicAccess {
     __obj.asInstanceOf[PublicAccess]
   }
   
-  extension [Self <: PublicAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicAccess] (val x: Self) extends AnyVal {
     
     inline def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

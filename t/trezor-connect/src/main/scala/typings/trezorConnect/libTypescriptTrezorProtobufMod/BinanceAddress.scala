@@ -15,7 +15,8 @@ object BinanceAddress {
     __obj.asInstanceOf[BinanceAddress]
   }
   
-  extension [Self <: BinanceAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinanceAddress] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
   }

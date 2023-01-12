@@ -28,7 +28,8 @@ object HumanLoopActivationOutput {
     __obj.asInstanceOf[HumanLoopActivationOutput]
   }
   
-  extension [Self <: HumanLoopActivationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HumanLoopActivationOutput] (val x: Self) extends AnyVal {
     
     inline def setHumanLoopActivationConditionsEvaluationResults(value: HumanLoopActivationConditionsEvaluationResults): Self = StObject.set(x, "HumanLoopActivationConditionsEvaluationResults", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object distSchemaTraceEventJSONMod {
       __obj.asInstanceOf[TraceEventJSONObject]
     }
     
-    extension [Self <: TraceEventJSONObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceEventJSONObject] (val x: Self) extends AnyVal {
       
       inline def setDisplayTimeUnit(value: ms | ns): Self = StObject.set(x, "displayTimeUnit", value.asInstanceOf[js.Any])
       

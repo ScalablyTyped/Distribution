@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[AggregateError[T]]
     }
     
-    extension [Self <: AggregateError[?], T /* <: js.Error */](x: Self & AggregateError[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregateError[?], T /* <: js.Error */] (val x: Self & AggregateError[T]) extends AnyVal {
       
       inline def setErrors(value: js.Array[T]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

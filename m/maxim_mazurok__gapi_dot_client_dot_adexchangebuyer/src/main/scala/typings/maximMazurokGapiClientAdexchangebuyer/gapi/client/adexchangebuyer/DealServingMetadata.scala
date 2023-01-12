@@ -19,7 +19,8 @@ object DealServingMetadata {
     __obj.asInstanceOf[DealServingMetadata]
   }
   
-  extension [Self <: DealServingMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DealServingMetadata] (val x: Self) extends AnyVal {
     
     inline def setAlcoholAdsAllowed(value: Boolean): Self = StObject.set(x, "alcoholAdsAllowed", value.asInstanceOf[js.Any])
     

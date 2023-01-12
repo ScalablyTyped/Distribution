@@ -38,7 +38,8 @@ object BuildingSublayerProperties {
     __obj.asInstanceOf[BuildingSublayerProperties]
   }
   
-  extension [Self <: BuildingSublayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingSublayerProperties] (val x: Self) extends AnyVal {
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

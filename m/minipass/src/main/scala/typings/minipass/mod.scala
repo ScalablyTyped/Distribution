@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[BufferOptions]
     }
     
-    extension [Self <: BufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object mod {
       __obj.asInstanceOf[ObjectModeOptions]
     }
     
-    extension [Self <: ObjectModeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectModeOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object mod {
       __obj.asInstanceOf[Pipe[R, W]]
     }
     
-    extension [Self <: Pipe[?, ?], R, W](x: Self & (Pipe[R, W])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pipe[?, ?], R, W] (val x: Self & (Pipe[R, W])) extends AnyVal {
       
       inline def setDest(value: Writable): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
@@ -255,7 +258,8 @@ object mod {
       __obj.asInstanceOf[PipeOptions]
     }
     
-    extension [Self <: PipeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipeOptions] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -292,7 +296,8 @@ object mod {
       __obj.asInstanceOf[StringOptions]
     }
     
-    extension [Self <: StringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

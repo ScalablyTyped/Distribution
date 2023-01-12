@@ -33,7 +33,8 @@ object IQuickTip {
     __obj.asInstanceOf[IQuickTip]
   }
   
-  extension [Self <: IQuickTip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQuickTip] (val x: Self) extends AnyVal {
     
     inline def setCancelShow(value: /* el */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "cancelShow", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object hasMobilePreferred {
     __obj.asInstanceOf[hasMobilePreferred]
   }
   
-  extension [Self <: hasMobilePreferred](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: hasMobilePreferred] (val x: Self) extends AnyVal {
     
     inline def setIsMobilePreferred(value: () => Boolean): Self = StObject.set(x, "isMobilePreferred", js.Any.fromFunction0(value))
     

@@ -22,7 +22,8 @@ object ResourceInlineConfig {
     __obj.asInstanceOf[ResourceInlineConfig]
   }
   
-  extension [Self <: ResourceInlineConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceInlineConfig] (val x: Self) extends AnyVal {
     
     inline def set$fallbackLanguage(value: String): Self = StObject.set(x, "$fallbackLanguage", value.asInstanceOf[js.Any])
     

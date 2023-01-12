@@ -22,7 +22,8 @@ object CreateInstanceMetadata {
     __obj.asInstanceOf[CreateInstanceMetadata]
   }
   
-  extension [Self <: CreateInstanceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInstanceMetadata] (val x: Self) extends AnyVal {
     
     inline def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     

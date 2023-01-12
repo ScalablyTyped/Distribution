@@ -23,7 +23,8 @@ object SamplingStrategy {
     __obj.asInstanceOf[SamplingStrategy]
   }
   
-  extension [Self <: SamplingStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SamplingStrategy] (val x: Self) extends AnyVal {
     
     inline def setName(value: SamplingStrategyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object XpackUsageMlDataFrameAnalyticsJobs {
     __obj.asInstanceOf[XpackUsageMlDataFrameAnalyticsJobs]
   }
   
-  extension [Self <: XpackUsageMlDataFrameAnalyticsJobs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMlDataFrameAnalyticsJobs] (val x: Self) extends AnyVal {
     
     inline def setAnalysis_counts(value: XpackUsageMlDataFrameAnalyticsJobsAnalysis): Self = StObject.set(x, "analysis_counts", value.asInstanceOf[js.Any])
     

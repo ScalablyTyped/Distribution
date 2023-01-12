@@ -23,7 +23,8 @@ object DataSource {
     __obj.asInstanceOf[DataSource]
   }
   
-  extension [Self <: DataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     inline def setFileSystemDataSource(value: FileSystemDataSource): Self = StObject.set(x, "FileSystemDataSource", value.asInstanceOf[js.Any])
     

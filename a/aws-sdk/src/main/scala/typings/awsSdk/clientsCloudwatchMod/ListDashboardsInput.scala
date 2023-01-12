@@ -23,7 +23,8 @@ object ListDashboardsInput {
     __obj.asInstanceOf[ListDashboardsInput]
   }
   
-  extension [Self <: ListDashboardsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDashboardsInput] (val x: Self) extends AnyVal {
     
     inline def setDashboardNamePrefix(value: DashboardNamePrefix): Self = StObject.set(x, "DashboardNamePrefix", value.asInstanceOf[js.Any])
     

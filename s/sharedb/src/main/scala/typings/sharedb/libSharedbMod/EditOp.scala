@@ -31,7 +31,8 @@ object EditOp {
     __obj.asInstanceOf[EditOp]
   }
   
-  extension [Self <: EditOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditOp] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: Unit): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

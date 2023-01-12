@@ -54,7 +54,8 @@ object BootstrapTimeInterval {
     __obj.asInstanceOf[BootstrapTimeInterval]
   }
   
-  extension [Self <: BootstrapTimeInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapTimeInterval] (val x: Self) extends AnyVal {
     
     inline def setContains(value: BootstrapTimeInterval => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     

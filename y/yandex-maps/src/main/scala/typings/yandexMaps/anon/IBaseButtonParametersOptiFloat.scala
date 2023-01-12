@@ -35,7 +35,8 @@ object IBaseButtonParametersOptiFloat {
     __obj.asInstanceOf[IBaseButtonParametersOptiFloat]
   }
   
-  extension [Self <: IBaseButtonParametersOptiFloat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBaseButtonParametersOptiFloat] (val x: Self) extends AnyVal {
     
     inline def setAdjustMapMargin(value: Boolean): Self = StObject.set(x, "adjustMapMargin", value.asInstanceOf[js.Any])
     

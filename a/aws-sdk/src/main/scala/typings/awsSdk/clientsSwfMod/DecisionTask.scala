@@ -54,7 +54,8 @@ object DecisionTask {
     __obj.asInstanceOf[DecisionTask]
   }
   
-  extension [Self <: DecisionTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecisionTask] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: HistoryEventList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

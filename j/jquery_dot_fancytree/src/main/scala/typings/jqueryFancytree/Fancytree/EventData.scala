@@ -50,7 +50,8 @@ object EventData {
     __obj.asInstanceOf[EventData]
   }
   
-  extension [Self <: EventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
     
     inline def setNode(value: FancytreeNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

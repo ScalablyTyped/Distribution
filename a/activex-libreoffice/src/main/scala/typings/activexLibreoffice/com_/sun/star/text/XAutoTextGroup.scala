@@ -54,7 +54,8 @@ object XAutoTextGroup {
     __obj.asInstanceOf[XAutoTextGroup]
   }
   
-  extension [Self <: XAutoTextGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAutoTextGroup] (val x: Self) extends AnyVal {
     
     inline def setGetTitles(value: () => SafeArray[String]): Self = StObject.set(x, "getTitles", js.Any.fromFunction0(value))
     

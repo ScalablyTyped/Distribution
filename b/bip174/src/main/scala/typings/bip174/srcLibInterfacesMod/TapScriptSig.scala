@@ -18,7 +18,8 @@ object TapScriptSig {
     __obj.asInstanceOf[TapScriptSig]
   }
   
-  extension [Self <: TapScriptSig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TapScriptSig] (val x: Self) extends AnyVal {
     
     inline def setLeafHash(value: Buffer): Self = StObject.set(x, "leafHash", value.asInstanceOf[js.Any])
   }

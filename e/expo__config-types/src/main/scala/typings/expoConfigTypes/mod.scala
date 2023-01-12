@@ -219,7 +219,8 @@ object mod {
       __obj.asInstanceOf[Android]
     }
     
-    extension [Self <: Android](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
       
       inline def setAdaptiveIcon(value: BackgroundImage): Self = StObject.set(x, "adaptiveIcon", value.asInstanceOf[js.Any])
       
@@ -353,7 +354,8 @@ object mod {
       __obj.asInstanceOf[AndroidIntentFiltersData]
     }
     
-    extension [Self <: AndroidIntentFiltersData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndroidIntentFiltersData] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -616,7 +618,8 @@ object mod {
       __obj.asInstanceOf[ExpoConfig]
     }
     
-    extension [Self <: ExpoConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpoConfig] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: Android): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -941,7 +944,8 @@ object mod {
       __obj.asInstanceOf[IOS]
     }
     
-    extension [Self <: IOS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOS] (val x: Self) extends AnyVal {
       
       inline def setAccessesContactNotes(value: Boolean): Self = StObject.set(x, "accessesContactNotes", value.asInstanceOf[js.Any])
       
@@ -1058,7 +1062,8 @@ object mod {
       __obj.asInstanceOf[PublishHook]
     }
     
-    extension [Self <: PublishHook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishHook] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: StringDictionary[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -1111,7 +1116,8 @@ object mod {
       __obj.asInstanceOf[Splash]
     }
     
-    extension [Self <: Splash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Splash] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -1230,7 +1236,8 @@ object mod {
       __obj.asInstanceOf[Web]
     }
     
-    extension [Self <: Web](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Web] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

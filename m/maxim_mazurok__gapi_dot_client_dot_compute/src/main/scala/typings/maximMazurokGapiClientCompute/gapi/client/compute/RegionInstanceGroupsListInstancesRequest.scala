@@ -22,7 +22,8 @@ object RegionInstanceGroupsListInstancesRequest {
     __obj.asInstanceOf[RegionInstanceGroupsListInstancesRequest]
   }
   
-  extension [Self <: RegionInstanceGroupsListInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionInstanceGroupsListInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceState(value: String): Self = StObject.set(x, "instanceState", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object Cookies {
     __obj.asInstanceOf[Cookies]
   }
   
-  extension [Self <: Cookies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cookies] (val x: Self) extends AnyVal {
     
     inline def setCopySyncCookies(value: (String, String) => Unit): Self = StObject.set(x, "copySyncCookies", js.Any.fromFunction2(value))
     

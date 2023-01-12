@@ -127,7 +127,8 @@ object TerserCompressOptions {
     __obj.asInstanceOf[TerserCompressOptions]
   }
   
-  extension [Self <: TerserCompressOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerserCompressOptions] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: Boolean): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

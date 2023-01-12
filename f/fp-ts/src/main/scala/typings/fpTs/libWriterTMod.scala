@@ -64,7 +64,8 @@ object libWriterTMod {
       __obj.asInstanceOf[WriterM[M]]
     }
     
-    extension [Self <: WriterM[?], M](x: Self & WriterM[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriterM[?], M] (val x: Self & WriterM[M]) extends AnyVal {
       
       inline def setCensor(value: (WriterT[M, Any, Any], js.Function1[Any, Any]) => WriterT[M, Any, Any]): Self = StObject.set(x, "censor", js.Any.fromFunction2(value))
       
@@ -123,7 +124,8 @@ object libWriterTMod {
       __obj.asInstanceOf[WriterM1[M]]
     }
     
-    extension [Self <: WriterM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & WriterM1[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriterM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & WriterM1[M]) extends AnyVal {
       
       inline def setCensor(value: (WriterT1[M, Any, Any], js.Function1[Any, Any]) => WriterT1[M, Any, Any]): Self = StObject.set(x, "censor", js.Any.fromFunction2(value))
       
@@ -182,7 +184,8 @@ object libWriterTMod {
       __obj.asInstanceOf[WriterM2[M]]
     }
     
-    extension [Self <: WriterM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & WriterM2[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriterM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & WriterM2[M]) extends AnyVal {
       
       inline def setCensor(value: (WriterT2[M, Any, Any, Any], js.Function1[Any, Any]) => WriterT2[M, Any, Any, Any]): Self = StObject.set(x, "censor", js.Any.fromFunction2(value))
       
@@ -243,7 +246,8 @@ object libWriterTMod {
       __obj.asInstanceOf[WriterM2C[M, E]]
     }
     
-    extension [Self <: WriterM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (WriterM2C[M, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriterM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (WriterM2C[M, E])) extends AnyVal {
       
       inline def setCensor(value: (WriterT2[M, E, Any, Any], js.Function1[Any, Any]) => WriterT2[M, E, Any, Any]): Self = StObject.set(x, "censor", js.Any.fromFunction2(value))
       
@@ -304,7 +308,8 @@ object libWriterTMod {
       __obj.asInstanceOf[WriterM3[M]]
     }
     
-    extension [Self <: WriterM3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & WriterM3[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriterM3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & WriterM3[M]) extends AnyVal {
       
       inline def setCensor(
         value: (WriterT3[M, Any, Any, Any, Any], js.Function1[Any, Any]) => WriterT3[M, Any, Any, Any, Any]

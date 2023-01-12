@@ -74,7 +74,8 @@ object Extensions {
     __obj.asInstanceOf[Extensions]
   }
   
-  extension [Self <: Extensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
     
     inline def setCallouts(value: () => CalloutSelector): Self = StObject.set(x, "callouts", js.Any.fromFunction0(value))
     

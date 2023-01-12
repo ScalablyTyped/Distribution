@@ -18,7 +18,8 @@ object ServiceWorkerEventMap {
     __obj.asInstanceOf[ServiceWorkerEventMap]
   }
   
-  extension [Self <: ServiceWorkerEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceWorkerEventMap] (val x: Self) extends AnyVal {
     
     inline def setStatechange(value: Event): Self = StObject.set(x, "statechange", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object RsaKeyAlgorithm {
     __obj.asInstanceOf[RsaKeyAlgorithm]
   }
   
-  extension [Self <: RsaKeyAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaKeyAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IDrawingModeChangedData {
     __obj.asInstanceOf[IDrawingModeChangedData]
   }
   
-  extension [Self <: IDrawingModeChangedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDrawingModeChangedData] (val x: Self) extends AnyVal {
     
     inline def setMode(value: DrawingMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

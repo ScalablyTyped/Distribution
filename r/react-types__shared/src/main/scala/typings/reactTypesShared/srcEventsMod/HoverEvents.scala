@@ -22,7 +22,8 @@ object HoverEvents {
     __obj.asInstanceOf[HoverEvents]
   }
   
-  extension [Self <: HoverEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoverEvents] (val x: Self) extends AnyVal {
     
     inline def setOnHoverChange(value: /* isHovering */ Boolean => Unit): Self = StObject.set(x, "onHoverChange", js.Any.fromFunction1(value))
     

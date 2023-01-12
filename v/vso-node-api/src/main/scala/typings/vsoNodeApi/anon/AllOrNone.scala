@@ -17,7 +17,8 @@ object AllOrNone {
     __obj.asInstanceOf[AllOrNone]
   }
   
-  extension [Self <: AllOrNone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllOrNone] (val x: Self) extends AnyVal {
     
     inline def setAllOrNone(value: scala.Double): Self = StObject.set(x, "allOrNone", value.asInstanceOf[js.Any])
     

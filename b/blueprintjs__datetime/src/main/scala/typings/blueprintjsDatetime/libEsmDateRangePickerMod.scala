@@ -206,7 +206,8 @@ object libEsmDateRangePickerMod {
       __obj.asInstanceOf[IDateRangePickerProps]
     }
     
-    extension [Self <: IDateRangePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateRangePickerProps] (val x: Self) extends AnyVal {
       
       inline def setAllowSingleDayRange(value: Boolean): Self = StObject.set(x, "allowSingleDayRange", value.asInstanceOf[js.Any])
       
@@ -279,7 +280,8 @@ object libEsmDateRangePickerMod {
       __obj.asInstanceOf[IDateRangePickerState]
     }
     
-    extension [Self <: IDateRangePickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateRangePickerState] (val x: Self) extends AnyVal {
       
       inline def setHoverValue(value: DateRange): Self = StObject.set(x, "hoverValue", value.asInstanceOf[js.Any])
       

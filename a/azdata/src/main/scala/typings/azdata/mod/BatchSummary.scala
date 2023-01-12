@@ -34,7 +34,8 @@ object BatchSummary {
     __obj.asInstanceOf[BatchSummary]
   }
   
-  extension [Self <: BatchSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchSummary] (val x: Self) extends AnyVal {
     
     inline def setExecutionElapsed(value: String): Self = StObject.set(x, "executionElapsed", value.asInstanceOf[js.Any])
     

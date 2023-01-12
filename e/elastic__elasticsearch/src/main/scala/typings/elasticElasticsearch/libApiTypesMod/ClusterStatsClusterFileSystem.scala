@@ -19,7 +19,8 @@ object ClusterStatsClusterFileSystem {
     __obj.asInstanceOf[ClusterStatsClusterFileSystem]
   }
   
-  extension [Self <: ClusterStatsClusterFileSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterFileSystem] (val x: Self) extends AnyVal {
     
     inline def setAvailable_in_bytes(value: long): Self = StObject.set(x, "available_in_bytes", value.asInstanceOf[js.Any])
     

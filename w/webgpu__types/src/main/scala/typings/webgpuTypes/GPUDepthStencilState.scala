@@ -68,7 +68,8 @@ object GPUDepthStencilState {
     __obj.asInstanceOf[GPUDepthStencilState]
   }
   
-  extension [Self <: GPUDepthStencilState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUDepthStencilState] (val x: Self) extends AnyVal {
     
     inline def setDepthBias(value: GPUDepthBias): Self = StObject.set(x, "depthBias", value.asInstanceOf[js.Any])
     

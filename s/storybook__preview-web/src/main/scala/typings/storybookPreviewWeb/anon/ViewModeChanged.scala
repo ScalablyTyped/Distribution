@@ -15,7 +15,8 @@ object ViewModeChanged {
     __obj.asInstanceOf[ViewModeChanged]
   }
   
-  extension [Self <: ViewModeChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewModeChanged] (val x: Self) extends AnyVal {
     
     inline def setViewModeChanged(value: Boolean): Self = StObject.set(x, "viewModeChanged", value.asInstanceOf[js.Any])
     

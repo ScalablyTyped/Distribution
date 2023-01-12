@@ -23,7 +23,8 @@ object ListSignalingChannelsOutput {
     __obj.asInstanceOf[ListSignalingChannelsOutput]
   }
   
-  extension [Self <: ListSignalingChannelsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSignalingChannelsOutput] (val x: Self) extends AnyVal {
     
     inline def setChannelInfoList(value: ChannelInfoList): Self = StObject.set(x, "ChannelInfoList", value.asInstanceOf[js.Any])
     

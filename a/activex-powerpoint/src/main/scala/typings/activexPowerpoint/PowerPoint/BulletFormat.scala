@@ -59,7 +59,8 @@ object BulletFormat {
     __obj.asInstanceOf[BulletFormat]
   }
   
-  extension [Self <: BulletFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulletFormat] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

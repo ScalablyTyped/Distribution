@@ -21,7 +21,8 @@ object PolicyAlternativeNameServerConfig {
     __obj.asInstanceOf[PolicyAlternativeNameServerConfig]
   }
   
-  extension [Self <: PolicyAlternativeNameServerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyAlternativeNameServerConfig] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

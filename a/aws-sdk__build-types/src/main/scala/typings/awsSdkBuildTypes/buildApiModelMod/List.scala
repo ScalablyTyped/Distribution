@@ -30,7 +30,8 @@ object List {
     __obj.asInstanceOf[typings.awsSdkBuildTypes.buildApiModelMod.List]
   }
   
-  extension [Self <: typings.awsSdkBuildTypes.buildApiModelMod.List](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.awsSdkBuildTypes.buildApiModelMod.List] (val x: Self) extends AnyVal {
     
     inline def setFlattened(value: scala.Boolean): Self = StObject.set(x, "flattened", value.asInstanceOf[js.Any])
     

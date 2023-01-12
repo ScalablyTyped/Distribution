@@ -29,7 +29,8 @@ object Crypto {
     __obj.asInstanceOf[Crypto]
   }
   
-  extension [Self <: Crypto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Crypto] (val x: Self) extends AnyVal {
     
     inline def setGetRandomValues(value: TypedArray => TypedArray): Self = StObject.set(x, "getRandomValues", js.Any.fromFunction1(value))
     

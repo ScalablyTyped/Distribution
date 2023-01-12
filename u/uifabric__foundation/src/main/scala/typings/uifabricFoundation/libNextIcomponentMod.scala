@@ -57,7 +57,8 @@ object libNextIcomponentMod {
       __obj.asInstanceOf[IComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]]
     }
     
-    extension [Self <: IComponent[?, ?, ?, ?, ?, ?], TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics](x: Self & (IComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComponent[?, ?, ?, ?, ?, ?], TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics] (val x: Self & (IComponent[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object libNextIcomponentMod {
       __obj.asInstanceOf[IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]]
     }
     
-    extension [Self <: IComponentOptions[?, ?, ?, ?, ?, ?], TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics](x: Self & (IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComponentOptions[?, ?, ?, ?, ?, ?], TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics] (val x: Self & (IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) extends AnyVal {
       
       inline def setSlots(value: ISlotComponent[TComponentProps, TComponentSlots]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object libNextIcomponentMod {
       __obj.asInstanceOf[IRecompositionComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]]
     }
     
-    extension [Self <: IRecompositionComponentOptions[?, ?, ?, ?, ?, ?], TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics](x: Self & (IRecompositionComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRecompositionComponentOptions[?, ?, ?, ?, ?, ?], TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics] (val x: Self & (IRecompositionComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) extends AnyVal {
       
       inline def setSlots(value: IPartialSlotComponent[TComponentProps, TComponentSlots]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       

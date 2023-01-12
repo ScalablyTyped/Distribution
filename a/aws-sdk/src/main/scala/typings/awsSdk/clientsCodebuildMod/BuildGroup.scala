@@ -38,7 +38,8 @@ object BuildGroup {
     __obj.asInstanceOf[BuildGroup]
   }
   
-  extension [Self <: BuildGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildGroup] (val x: Self) extends AnyVal {
     
     inline def setCurrentBuildSummary(value: BuildSummary): Self = StObject.set(x, "currentBuildSummary", value.asInstanceOf[js.Any])
     

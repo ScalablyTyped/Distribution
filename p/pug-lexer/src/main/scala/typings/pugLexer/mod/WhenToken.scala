@@ -21,7 +21,8 @@ object WhenToken {
     __obj.asInstanceOf[WhenToken]
   }
   
-  extension [Self <: WhenToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhenToken] (val x: Self) extends AnyVal {
     
     inline def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }

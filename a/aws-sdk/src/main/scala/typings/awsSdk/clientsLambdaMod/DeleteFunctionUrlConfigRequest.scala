@@ -23,7 +23,8 @@ object DeleteFunctionUrlConfigRequest {
     __obj.asInstanceOf[DeleteFunctionUrlConfigRequest]
   }
   
-  extension [Self <: DeleteFunctionUrlConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFunctionUrlConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     

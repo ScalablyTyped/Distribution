@@ -42,7 +42,8 @@ object RestoreObjectRequest {
     __obj.asInstanceOf[RestoreObjectRequest]
   }
   
-  extension [Self <: RestoreObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

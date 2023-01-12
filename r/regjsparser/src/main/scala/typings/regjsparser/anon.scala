@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Behavior[F]]
     }
     
-    extension [Self <: Behavior[?], F /* <: Features */](x: Self & Behavior[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Behavior[?], F /* <: Features */] (val x: Self & Behavior[F]) extends AnyVal {
       
       inline def setBehavior(value: lookahead | lookbehind | negativeLookahead | negativeLookbehind): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[BehaviorBody[F]]
     }
     
-    extension [Self <: BehaviorBody[?], F /* <: Features */](x: Self & BehaviorBody[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BehaviorBody[?], F /* <: Features */] (val x: Self & BehaviorBody[F]) extends AnyVal {
       
       inline def setBehavior(value: normal): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Body[F]]
     }
     
-    extension [Self <: Body[?], F /* <: Features */](x: Self & Body[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body[?], F /* <: Features */] (val x: Self & Body[F]) extends AnyVal {
       
       inline def setBehavior(value: ignore): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
@@ -98,7 +101,8 @@ object anon {
       __obj.asInstanceOf[ModifierFlags]
     }
     
-    extension [Self <: ModifierFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModifierFlags] (val x: Self) extends AnyVal {
       
       inline def setModifierFlags(value: typings.regjsparser.mod.ModifierFlags): Self = StObject.set(x, "modifierFlags", value.asInstanceOf[js.Any])
       
@@ -117,7 +121,8 @@ object anon {
       __obj.asInstanceOf[ModifierFlagsUndefined]
     }
     
-    extension [Self <: ModifierFlagsUndefined](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModifierFlagsUndefined] (val x: Self) extends AnyVal {
       
       inline def setModifierFlags(value: Unit): Self = StObject.set(x, "modifierFlags", value.asInstanceOf[js.Any])
     }
@@ -134,7 +139,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: Identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -153,7 +159,8 @@ object anon {
       __obj.asInstanceOf[NameUndefined]
     }
     
-    extension [Self <: NameUndefined](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameUndefined] (val x: Self) extends AnyVal {
       
       inline def setName(value: Unit): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

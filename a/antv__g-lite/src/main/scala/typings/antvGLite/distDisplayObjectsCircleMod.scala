@@ -34,7 +34,8 @@ object distDisplayObjectsCircleMod {
       __obj.asInstanceOf[CircleStyleProps]
     }
     
-    extension [Self <: CircleStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleStyleProps] (val x: Self) extends AnyVal {
       
       inline def setCx(value: Double | String): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object distDisplayObjectsCircleMod {
       __obj.asInstanceOf[ParsedCircleStyleProps]
     }
     
-    extension [Self <: ParsedCircleStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedCircleStyleProps] (val x: Self) extends AnyVal {
       
       inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       

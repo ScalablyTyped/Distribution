@@ -20,7 +20,8 @@ object DotVH {
     __obj.asInstanceOf[DotVH]
   }
   
-  extension [Self <: DotVH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DotVH] (val x: Self) extends AnyVal {
     
     inline def setDotVH(value: default): Self = StObject.set(x, "dotVH", value.asInstanceOf[js.Any])
     

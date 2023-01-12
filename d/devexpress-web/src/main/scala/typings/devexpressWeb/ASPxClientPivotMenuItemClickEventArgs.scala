@@ -43,7 +43,8 @@ object ASPxClientPivotMenuItemClickEventArgs {
     __obj.asInstanceOf[ASPxClientPivotMenuItemClickEventArgs]
   }
   
-  extension [Self <: ASPxClientPivotMenuItemClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientPivotMenuItemClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setArea(value: String): Self = StObject.set(x, "Area", value.asInstanceOf[js.Any])
     

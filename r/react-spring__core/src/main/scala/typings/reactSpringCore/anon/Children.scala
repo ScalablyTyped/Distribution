@@ -17,7 +17,8 @@ object Children {
     __obj.asInstanceOf[Children[State]]
   }
   
-  extension [Self <: Children[?], State /* <: js.Object */](x: Self & Children[State]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Children[?], State /* <: js.Object */] (val x: Self & Children[State]) extends AnyVal {
     
     inline def setChildren(value: SpringValues[State] => Element | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
   }

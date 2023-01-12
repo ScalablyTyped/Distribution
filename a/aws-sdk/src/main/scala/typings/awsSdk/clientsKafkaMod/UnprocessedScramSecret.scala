@@ -34,7 +34,8 @@ object UnprocessedScramSecret {
     __obj.asInstanceOf[UnprocessedScramSecret]
   }
   
-  extension [Self <: UnprocessedScramSecret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnprocessedScramSecret] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: string): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

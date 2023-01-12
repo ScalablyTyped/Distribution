@@ -21,7 +21,8 @@ object UpdateByExampleOptions {
     __obj.asInstanceOf[UpdateByExampleOptions]
   }
   
-  extension [Self <: UpdateByExampleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateByExampleOptions] (val x: Self) extends AnyVal {
     
     inline def setKeepNull(value: Boolean): Self = StObject.set(x, "keepNull", value.asInstanceOf[js.Any])
     

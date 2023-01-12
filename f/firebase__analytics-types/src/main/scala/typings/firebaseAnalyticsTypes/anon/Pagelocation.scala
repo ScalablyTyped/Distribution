@@ -22,7 +22,8 @@ object Pagelocation {
     __obj.asInstanceOf[Pagelocation]
   }
   
-  extension [Self <: Pagelocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pagelocation] (val x: Self) extends AnyVal {
     
     inline def setPage_location(value: String): Self = StObject.set(x, "page_location", value.asInstanceOf[js.Any])
     

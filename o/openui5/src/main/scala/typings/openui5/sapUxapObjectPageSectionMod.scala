@@ -405,7 +405,8 @@ object sapUxapObjectPageSectionMod {
       __obj.asInstanceOf[ObjectPageSectionSettings]
     }
     
-    extension [Self <: ObjectPageSectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageSectionSettings] (val x: Self) extends AnyVal {
       
       inline def setHeading(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
       

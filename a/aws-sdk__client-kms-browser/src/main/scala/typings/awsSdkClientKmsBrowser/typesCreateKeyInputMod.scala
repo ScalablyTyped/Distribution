@@ -75,7 +75,8 @@ object typesCreateKeyInputMod {
       __obj.asInstanceOf[CreateKeyInput]
     }
     
-    extension [Self <: CreateKeyInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateKeyInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

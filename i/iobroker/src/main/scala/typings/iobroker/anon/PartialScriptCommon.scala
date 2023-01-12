@@ -45,7 +45,8 @@ object PartialScriptCommon {
     __obj.asInstanceOf[PartialScriptCommon]
   }
   
-  extension [Self <: PartialScriptCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialScriptCommon] (val x: Self) extends AnyVal {
     
     inline def setCompiled(value: String): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
     

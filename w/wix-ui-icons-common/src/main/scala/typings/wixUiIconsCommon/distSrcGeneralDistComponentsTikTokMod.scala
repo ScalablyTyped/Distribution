@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsTikTokMod extends Shortcut {
       __obj.asInstanceOf[TikTokProps]
     }
     
-    extension [Self <: TikTokProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TikTokProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

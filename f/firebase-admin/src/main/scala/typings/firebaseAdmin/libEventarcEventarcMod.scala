@@ -114,7 +114,8 @@ object libEventarcEventarcMod {
       __obj.asInstanceOf[ChannelOptions]
     }
     
-    extension [Self <: ChannelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowedEventTypes(value: js.Array[String] | String): Self = StObject.set(x, "allowedEventTypes", value.asInstanceOf[js.Any])
       

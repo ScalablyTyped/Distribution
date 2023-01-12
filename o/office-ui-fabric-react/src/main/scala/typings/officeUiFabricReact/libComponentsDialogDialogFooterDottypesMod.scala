@@ -43,7 +43,8 @@ object libComponentsDialogDialogFooterDottypesMod {
       __obj.asInstanceOf[IDialogFooterProps]
     }
     
-    extension [Self <: IDialogFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogFooterProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object libComponentsDialogDialogFooterDottypesMod {
       __obj.asInstanceOf[IDialogFooterStyleProps]
     }
     
-    extension [Self <: IDialogFooterStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogFooterStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object libComponentsDialogDialogFooterDottypesMod {
       __obj.asInstanceOf[IDialogFooterStyles]
     }
     
-    extension [Self <: IDialogFooterStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogFooterStyles] (val x: Self) extends AnyVal {
       
       inline def setAction(value: IStyle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

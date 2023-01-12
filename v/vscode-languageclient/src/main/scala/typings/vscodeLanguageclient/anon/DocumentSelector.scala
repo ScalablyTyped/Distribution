@@ -16,7 +16,8 @@ object DocumentSelector {
     __obj.asInstanceOf[DocumentSelector]
   }
   
-  extension [Self <: DocumentSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSelector] (val x: Self) extends AnyVal {
     
     inline def setDocumentSelector(value: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.DocumentSelector): Self = StObject.set(x, "documentSelector", value.asInstanceOf[js.Any])
     

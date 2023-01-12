@@ -26,7 +26,8 @@ object UsageAmount {
     __obj.asInstanceOf[UsageAmount]
   }
   
-  extension [Self <: UsageAmount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageAmount] (val x: Self) extends AnyVal {
     
     inline def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     

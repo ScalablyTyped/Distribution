@@ -30,7 +30,8 @@ object distCardNumberMod {
       __obj.asInstanceOf[CardNumberOptions]
     }
     
-    extension [Self <: CardNumberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardNumberOptions] (val x: Self) extends AnyVal {
       
       inline def setLuhnValidateUnionPay(value: Boolean): Self = StObject.set(x, "luhnValidateUnionPay", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object distCardNumberMod {
       __obj.asInstanceOf[CardNumberVerification]
     }
     
-    extension [Self <: CardNumberVerification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardNumberVerification] (val x: Self) extends AnyVal {
       
       inline def setCard(value: CreditCardType): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object distCardNumberMod {
       __obj.asInstanceOf[CreditCardType]
     }
     
-    extension [Self <: CreditCardType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreditCardType] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Name): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

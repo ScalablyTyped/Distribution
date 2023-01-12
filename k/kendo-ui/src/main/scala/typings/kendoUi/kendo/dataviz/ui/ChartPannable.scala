@@ -17,7 +17,8 @@ object ChartPannable {
     __obj.asInstanceOf[ChartPannable]
   }
   
-  extension [Self <: ChartPannable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartPannable] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

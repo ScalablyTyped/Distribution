@@ -21,7 +21,8 @@ object SendingQueryEvent {
     __obj.asInstanceOf[SendingQueryEvent]
   }
   
-  extension [Self <: SendingQueryEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendingQueryEvent] (val x: Self) extends AnyVal {
     
     inline def setName(value: SENDING_QUERY): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

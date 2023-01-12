@@ -19,7 +19,8 @@ object Suffix {
     __obj.asInstanceOf[Suffix]
   }
   
-  extension [Self <: Suffix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Suffix] (val x: Self) extends AnyVal {
     
     inline def setCustomSuffix(value: String): Self = StObject.set(x, "customSuffix", value.asInstanceOf[js.Any])
     

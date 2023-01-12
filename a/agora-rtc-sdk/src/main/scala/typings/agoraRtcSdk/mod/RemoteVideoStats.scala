@@ -67,7 +67,8 @@ object RemoteVideoStats {
     __obj.asInstanceOf[RemoteVideoStats]
   }
   
-  extension [Self <: RemoteVideoStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteVideoStats] (val x: Self) extends AnyVal {
     
     inline def setEnd2EndDelay(value: String): Self = StObject.set(x, "End2EndDelay", value.asInstanceOf[js.Any])
     

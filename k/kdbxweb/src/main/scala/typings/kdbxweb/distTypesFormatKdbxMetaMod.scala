@@ -188,7 +188,8 @@ object distTypesFormatKdbxMetaMod {
       __obj.asInstanceOf[KdbxCustomIcon]
     }
     
-    extension [Self <: KdbxCustomIcon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KdbxCustomIcon] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -221,7 +222,8 @@ object distTypesFormatKdbxMetaMod {
       __obj.asInstanceOf[KdbxMemoryProtection]
     }
     
-    extension [Self <: KdbxMemoryProtection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KdbxMemoryProtection] (val x: Self) extends AnyVal {
       
       inline def setNotes(value: Boolean): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
@@ -272,7 +274,8 @@ object distTypesFormatKdbxMetaMod {
       __obj.asInstanceOf[KdbxMetaEditState]
     }
     
-    extension [Self <: KdbxMetaEditState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KdbxMetaEditState] (val x: Self) extends AnyVal {
       
       inline def setColorChanged(value: js.Date): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
       

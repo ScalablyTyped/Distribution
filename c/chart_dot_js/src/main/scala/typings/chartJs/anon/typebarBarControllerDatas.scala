@@ -185,7 +185,8 @@ object typebarBarControllerDatas {
     __obj.asInstanceOf[typebarBarControllerDatas]
   }
   
-  extension [Self <: typebarBarControllerDatas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typebarBarControllerDatas] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpecbaronProgres): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

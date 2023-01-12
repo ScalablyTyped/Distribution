@@ -40,7 +40,8 @@ object OutlookBarGroup {
     __obj.asInstanceOf[OutlookBarGroup]
   }
   
-  extension [Self <: OutlookBarGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlookBarGroup] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

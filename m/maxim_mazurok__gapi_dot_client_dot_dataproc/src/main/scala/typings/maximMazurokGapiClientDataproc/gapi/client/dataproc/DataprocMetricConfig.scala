@@ -16,7 +16,8 @@ object DataprocMetricConfig {
     __obj.asInstanceOf[DataprocMetricConfig]
   }
   
-  extension [Self <: DataprocMetricConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataprocMetricConfig] (val x: Self) extends AnyVal {
     
     inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     

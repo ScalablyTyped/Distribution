@@ -86,7 +86,8 @@ object mod {
       __obj.asInstanceOf[CreateServerConfig]
     }
     
-    extension [Self <: CreateServerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateServerConfig] (val x: Self) extends AnyVal {
       
       inline def setHttps(
         value: ServerOptions[
@@ -161,7 +162,8 @@ object mod {
       __obj.asInstanceOf[ServerConfig]
     }
     
-    extension [Self <: ServerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerConfig] (val x: Self) extends AnyVal {
       
       inline def setApplyCSSLive(value: Boolean): Self = StObject.set(x, "applyCSSLive", value.asInstanceOf[js.Any])
       

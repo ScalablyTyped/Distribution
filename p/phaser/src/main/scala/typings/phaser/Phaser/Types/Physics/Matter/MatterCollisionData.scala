@@ -118,7 +118,8 @@ object MatterCollisionData {
     __obj.asInstanceOf[MatterCollisionData]
   }
   
-  extension [Self <: MatterCollisionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatterCollisionData] (val x: Self) extends AnyVal {
     
     inline def setAxisBody(value: BodyType): Self = StObject.set(x, "axisBody", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object GridField {
     __obj.asInstanceOf[GridField]
   }
   
-  extension [Self <: GridField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridField] (val x: Self) extends AnyVal {
     
     inline def setCompareSingleDataEqual(value: (Any, Any) => Boolean): Self = StObject.set(x, "CompareSingleDataEqual", js.Any.fromFunction2(value))
     

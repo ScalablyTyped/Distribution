@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Delete]
     }
     
-    extension [Self <: Delete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[MODULEENTRY]
     }
     
-    extension [Self <: MODULEENTRY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MODULEENTRY] (val x: Self) extends AnyVal {
       
       inline def setMODULE_ENTRY(value: Cache): Self = StObject.set(x, "MODULE_ENTRY", value.asInstanceOf[js.Any])
       

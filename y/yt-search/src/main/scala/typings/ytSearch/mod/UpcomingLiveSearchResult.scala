@@ -35,7 +35,8 @@ object UpcomingLiveSearchResult {
     __obj.asInstanceOf[UpcomingLiveSearchResult]
   }
   
-  extension [Self <: UpcomingLiveSearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpcomingLiveSearchResult] (val x: Self) extends AnyVal {
     
     inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     

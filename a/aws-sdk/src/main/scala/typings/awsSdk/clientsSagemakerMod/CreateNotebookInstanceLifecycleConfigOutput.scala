@@ -18,7 +18,8 @@ object CreateNotebookInstanceLifecycleConfigOutput {
     __obj.asInstanceOf[CreateNotebookInstanceLifecycleConfigOutput]
   }
   
-  extension [Self <: CreateNotebookInstanceLifecycleConfigOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNotebookInstanceLifecycleConfigOutput] (val x: Self) extends AnyVal {
     
     inline def setNotebookInstanceLifecycleConfigArn(value: NotebookInstanceLifecycleConfigArn): Self = StObject.set(x, "NotebookInstanceLifecycleConfigArn", value.asInstanceOf[js.Any])
     

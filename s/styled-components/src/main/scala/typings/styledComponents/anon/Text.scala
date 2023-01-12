@@ -26,7 +26,8 @@ object Text {
     __obj.asInstanceOf[Text]
   }
   
-  extension [Self <: Text](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
     
     inline def setImage(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NativeStyled<typeof reactPrimitives.Image, imported_react-native.ImageProps, unknown> */ Any

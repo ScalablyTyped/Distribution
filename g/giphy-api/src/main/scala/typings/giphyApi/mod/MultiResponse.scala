@@ -19,7 +19,8 @@ object MultiResponse {
     __obj.asInstanceOf[MultiResponse]
   }
   
-  extension [Self <: MultiResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[GIFObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

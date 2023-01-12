@@ -23,7 +23,8 @@ object AssociateResourceRequest {
     __obj.asInstanceOf[AssociateResourceRequest]
   }
   
-  extension [Self <: AssociateResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupIdentifier(value: GroupIdentifier): Self = StObject.set(x, "GroupIdentifier", value.asInstanceOf[js.Any])
     

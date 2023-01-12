@@ -558,7 +558,8 @@ object sapUxapBlockBaseMod {
       __obj.asInstanceOf[BlockBaseSettings]
     }
     
-    extension [Self <: BlockBaseSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockBaseSettings] (val x: Self) extends AnyVal {
       
       inline def setColumnLayout(
         value: BlockBaseColumnLayout | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

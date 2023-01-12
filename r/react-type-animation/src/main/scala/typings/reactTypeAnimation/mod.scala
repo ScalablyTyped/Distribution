@@ -31,7 +31,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TypeAnimationProps]
     }
     
-    extension [Self <: TypeAnimationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeAnimationProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

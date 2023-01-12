@@ -24,7 +24,8 @@ object FormDataVisitorHelpers {
     __obj.asInstanceOf[FormDataVisitorHelpers]
   }
   
-  extension [Self <: FormDataVisitorHelpers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormDataVisitorHelpers] (val x: Self) extends AnyVal {
     
     inline def setConvertValue(value: Any => Any): Self = StObject.set(x, "convertValue", js.Any.fromFunction1(value))
     

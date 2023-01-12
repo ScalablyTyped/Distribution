@@ -76,7 +76,8 @@ object ITabPanel {
     __obj.asInstanceOf[ITabPanel]
   }
   
-  extension [Self <: ITabPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITabPanel] (val x: Self) extends AnyVal {
     
     inline def setDoTabChange(value: (/* tabBar */ js.UndefOr[Any], /* newTab */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "doTabChange", js.Any.fromFunction2(value))
     

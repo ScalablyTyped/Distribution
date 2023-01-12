@@ -61,7 +61,8 @@ object GoogleCloudMlV1Model {
     __obj.asInstanceOf[GoogleCloudMlV1Model]
   }
   
-  extension [Self <: GoogleCloudMlV1Model](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1Model] (val x: Self) extends AnyVal {
     
     inline def setDefaultVersion(value: GoogleCloudMlV1Version): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
     

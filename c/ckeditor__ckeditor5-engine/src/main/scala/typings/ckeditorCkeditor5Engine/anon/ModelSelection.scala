@@ -19,7 +19,8 @@ object ModelSelection {
     __obj.asInstanceOf[ModelSelection]
   }
   
-  extension [Self <: ModelSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelSelection] (val x: Self) extends AnyVal {
     
     inline def setModel(value: `[engineDotmodelDotModel]`): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

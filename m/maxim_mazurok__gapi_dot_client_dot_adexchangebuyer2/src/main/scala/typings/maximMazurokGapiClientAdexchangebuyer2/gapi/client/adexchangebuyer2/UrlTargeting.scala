@@ -19,7 +19,8 @@ object UrlTargeting {
     __obj.asInstanceOf[UrlTargeting]
   }
   
-  extension [Self <: UrlTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlTargeting] (val x: Self) extends AnyVal {
     
     inline def setExcludedUrls(value: js.Array[String]): Self = StObject.set(x, "excludedUrls", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object GanttColumnFilterable {
     __obj.asInstanceOf[GanttColumnFilterable]
   }
   
-  extension [Self <: GanttColumnFilterable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttColumnFilterable] (val x: Self) extends AnyVal {
     
     inline def setUi(value: String | js.Function): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     

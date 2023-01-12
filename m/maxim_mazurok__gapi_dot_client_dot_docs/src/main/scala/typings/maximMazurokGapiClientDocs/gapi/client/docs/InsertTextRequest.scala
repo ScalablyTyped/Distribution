@@ -30,7 +30,8 @@ object InsertTextRequest {
     __obj.asInstanceOf[InsertTextRequest]
   }
   
-  extension [Self <: InsertTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertTextRequest] (val x: Self) extends AnyVal {
     
     inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     

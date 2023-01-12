@@ -23,7 +23,8 @@ object VirtualGatewayListenerTlsValidationContext {
     __obj.asInstanceOf[VirtualGatewayListenerTlsValidationContext]
   }
   
-  extension [Self <: VirtualGatewayListenerTlsValidationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayListenerTlsValidationContext] (val x: Self) extends AnyVal {
     
     inline def setSubjectAlternativeNames(value: SubjectAlternativeNames): Self = StObject.set(x, "subjectAlternativeNames", value.asInstanceOf[js.Any])
     

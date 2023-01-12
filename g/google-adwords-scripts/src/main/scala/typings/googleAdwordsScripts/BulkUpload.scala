@@ -26,7 +26,8 @@ object BulkUpload {
     __obj.asInstanceOf[BulkUpload[T]]
   }
   
-  extension [Self <: BulkUpload[?], T](x: Self & BulkUpload[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkUpload[?], T] (val x: Self & BulkUpload[T]) extends AnyVal {
     
     inline def setForCampaignManagement(value: () => T): Self = StObject.set(x, "forCampaignManagement", js.Any.fromFunction0(value))
     

@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[DeserializeOptions]
     }
     
-    extension [Self <: DeserializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeserializeOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultBlock(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockProperties */ Any
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[SerializeOptions]
     }
     
-    extension [Self <: SerializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializeOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       

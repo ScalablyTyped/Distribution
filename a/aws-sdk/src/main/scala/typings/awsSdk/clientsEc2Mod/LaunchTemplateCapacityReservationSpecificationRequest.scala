@@ -23,7 +23,8 @@ object LaunchTemplateCapacityReservationSpecificationRequest {
     __obj.asInstanceOf[LaunchTemplateCapacityReservationSpecificationRequest]
   }
   
-  extension [Self <: LaunchTemplateCapacityReservationSpecificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateCapacityReservationSpecificationRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacityReservationPreference(value: CapacityReservationPreference): Self = StObject.set(x, "CapacityReservationPreference", value.asInstanceOf[js.Any])
     

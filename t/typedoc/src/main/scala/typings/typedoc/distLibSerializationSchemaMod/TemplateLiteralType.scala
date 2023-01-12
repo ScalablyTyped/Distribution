@@ -26,7 +26,8 @@ object TemplateLiteralType {
     __obj.asInstanceOf[TemplateLiteralType]
   }
   
-  extension [Self <: TemplateLiteralType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateLiteralType] (val x: Self) extends AnyVal {
     
     inline def setHead(value: ToSerialized[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     

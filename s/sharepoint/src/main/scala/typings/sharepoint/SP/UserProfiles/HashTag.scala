@@ -30,7 +30,8 @@ object HashTag {
     __obj.asInstanceOf[HashTag]
   }
   
-  extension [Self <: HashTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashTag] (val x: Self) extends AnyVal {
     
     inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object GoogleAnalyticsAdminV1alphaAttributionSettings {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAttributionSettings]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAttributionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAttributionSettings] (val x: Self) extends AnyVal {
     
     inline def setAcquisitionConversionEventLookbackWindow(value: String): Self = StObject.set(x, "acquisitionConversionEventLookbackWindow", value.asInstanceOf[js.Any])
     

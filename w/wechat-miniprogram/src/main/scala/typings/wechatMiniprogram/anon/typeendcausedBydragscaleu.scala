@@ -61,7 +61,8 @@ object typeendcausedBydragscaleu {
     __obj.asInstanceOf[typeendcausedBydragscaleu]
   }
   
-  extension [Self <: typeendcausedBydragscaleu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typeendcausedBydragscaleu] (val x: Self) extends AnyVal {
     
     inline def setCausedBy(value: drag | scale | update): Self = StObject.set(x, "causedBy", value.asInstanceOf[js.Any])
     

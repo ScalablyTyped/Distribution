@@ -33,7 +33,8 @@ object ListAttachedGroupPoliciesRequest {
     __obj.asInstanceOf[ListAttachedGroupPoliciesRequest]
   }
   
-  extension [Self <: ListAttachedGroupPoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAttachedGroupPoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

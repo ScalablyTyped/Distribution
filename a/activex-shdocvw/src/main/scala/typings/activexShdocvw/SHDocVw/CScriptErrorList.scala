@@ -61,7 +61,8 @@ object CScriptErrorList {
     __obj.asInstanceOf[CScriptErrorList]
   }
   
-  extension [Self <: CScriptErrorList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CScriptErrorList] (val x: Self) extends AnyVal {
     
     inline def setAdvanceError(value: () => Unit): Self = StObject.set(x, "advanceError", js.Any.fromFunction0(value))
     

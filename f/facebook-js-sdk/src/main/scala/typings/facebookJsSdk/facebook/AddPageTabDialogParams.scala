@@ -21,7 +21,8 @@ object AddPageTabDialogParams {
     __obj.asInstanceOf[AddPageTabDialogParams]
   }
   
-  extension [Self <: AddPageTabDialogParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddPageTabDialogParams] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: pagetab): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

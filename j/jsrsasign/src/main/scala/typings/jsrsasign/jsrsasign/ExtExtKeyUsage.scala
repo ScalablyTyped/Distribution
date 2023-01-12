@@ -22,7 +22,8 @@ object ExtExtKeyUsage {
     __obj.asInstanceOf[ExtExtKeyUsage]
   }
   
-  extension [Self <: ExtExtKeyUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtExtKeyUsage] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[String]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

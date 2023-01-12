@@ -23,7 +23,8 @@ object TreeListCellCloseEvent {
     __obj.asInstanceOf[TreeListCellCloseEvent]
   }
   
-  extension [Self <: TreeListCellCloseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListCellCloseEvent] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

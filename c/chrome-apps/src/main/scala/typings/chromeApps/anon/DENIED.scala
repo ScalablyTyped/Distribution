@@ -19,7 +19,8 @@ object DENIED {
     __obj.asInstanceOf[DENIED]
   }
   
-  extension [Self <: DENIED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DENIED] (val x: Self) extends AnyVal {
     
     inline def setDENIED(value: denied_): Self = StObject.set(x, "DENIED", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object libIrendererMod {
       __obj.asInstanceOf[IRenderableObject]
     }
     
-    extension [Self <: IRenderableObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRenderableObject] (val x: Self) extends AnyVal {
       
       inline def setDisableTempParent(value: IRenderableContainer => Unit): Self = StObject.set(x, "disableTempParent", js.Any.fromFunction1(value))
       
@@ -186,7 +187,8 @@ object libIrendererMod {
       __obj.asInstanceOf[IRendererOptions]
     }
     
-    extension [Self <: IRendererOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRendererOptions] (val x: Self) extends AnyVal {
       
       inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
       
@@ -273,7 +275,8 @@ object libIrendererMod {
       __obj.asInstanceOf[IRendererRenderOptions]
     }
     
-    extension [Self <: IRendererRenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRendererRenderOptions] (val x: Self) extends AnyVal {
       
       inline def setBlit(value: Boolean): Self = StObject.set(x, "blit", value.asInstanceOf[js.Any])
       

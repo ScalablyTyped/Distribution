@@ -19,7 +19,8 @@ object EndpointImageOptions {
     __obj.asInstanceOf[EndpointImageOptions]
   }
   
-  extension [Self <: EndpointImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointImageOptions] (val x: Self) extends AnyVal {
     
     inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     

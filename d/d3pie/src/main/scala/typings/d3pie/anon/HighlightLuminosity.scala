@@ -21,7 +21,8 @@ object HighlightLuminosity {
     __obj.asInstanceOf[HighlightLuminosity]
   }
   
-  extension [Self <: HighlightLuminosity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightLuminosity] (val x: Self) extends AnyVal {
     
     inline def setHighlightLuminosity(value: Double): Self = StObject.set(x, "highlightLuminosity", value.asInstanceOf[js.Any])
     

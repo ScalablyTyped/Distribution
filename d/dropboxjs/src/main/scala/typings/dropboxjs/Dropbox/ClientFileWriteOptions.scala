@@ -19,7 +19,8 @@ object ClientFileWriteOptions {
     __obj.asInstanceOf[ClientFileWriteOptions]
   }
   
-  extension [Self <: ClientFileWriteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientFileWriteOptions] (val x: Self) extends AnyVal {
     
     inline def setLastVersionTag(value: String): Self = StObject.set(x, "lastVersionTag", value.asInstanceOf[js.Any])
     

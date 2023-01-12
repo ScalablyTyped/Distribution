@@ -28,7 +28,8 @@ object LimitChunkCountPluginOptions {
     __obj.asInstanceOf[LimitChunkCountPluginOptions]
   }
   
-  extension [Self <: LimitChunkCountPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LimitChunkCountPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setChunkOverhead(value: Double): Self = StObject.set(x, "chunkOverhead", value.asInstanceOf[js.Any])
     

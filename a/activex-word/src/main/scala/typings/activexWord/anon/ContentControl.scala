@@ -15,7 +15,8 @@ object ContentControl {
     __obj.asInstanceOf[ContentControl]
   }
   
-  extension [Self <: ContentControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentControl] (val x: Self) extends AnyVal {
     
     inline def setContentControl(value: typings.activexWord.Word.ContentControl): Self = StObject.set(x, "ContentControl", value.asInstanceOf[js.Any])
   }

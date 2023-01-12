@@ -193,7 +193,8 @@ object CreateReplicationGroupMessage {
     __obj.asInstanceOf[CreateReplicationGroupMessage]
   }
   
-  extension [Self <: CreateReplicationGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReplicationGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setAtRestEncryptionEnabled(value: BooleanOptional): Self = StObject.set(x, "AtRestEncryptionEnabled", value.asInstanceOf[js.Any])
     

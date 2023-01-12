@@ -27,7 +27,8 @@ object Handsontable {
       __obj.asInstanceOf[CellPosition]
     }
     
-    extension [Self <: CellPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellPosition] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -1109,7 +1110,8 @@ object Handsontable {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAfterCellMetaReset(value: js.Function): Self = StObject.set(x, "afterCellMetaReset", value.asInstanceOf[js.Any])
       

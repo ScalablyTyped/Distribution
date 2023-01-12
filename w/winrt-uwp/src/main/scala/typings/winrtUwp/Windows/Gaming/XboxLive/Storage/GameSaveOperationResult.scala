@@ -17,7 +17,8 @@ object GameSaveOperationResult {
     __obj.asInstanceOf[GameSaveOperationResult]
   }
   
-  extension [Self <: GameSaveOperationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameSaveOperationResult] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: GameSaveErrorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

@@ -67,7 +67,8 @@ object MarkedOptions {
     __obj.asInstanceOf[MarkedOptions]
   }
   
-  extension [Self <: MarkedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkedOptions] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

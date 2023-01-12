@@ -23,7 +23,8 @@ object PopOverOptions {
     __obj.asInstanceOf[PopOverOptions]
   }
   
-  extension [Self <: PopOverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopOverOptions] (val x: Self) extends AnyVal {
     
     inline def setClose(value: /* e */ PopOverCloseEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     

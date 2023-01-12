@@ -19,7 +19,8 @@ object PickTimepickershowView {
     __obj.asInstanceOf[PickTimepickershowView]
   }
   
-  extension [Self <: PickTimepickershowView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickTimepickershowView] (val x: Self) extends AnyVal {
     
     inline def setShowView(value: /* view */ Views => Unit): Self = StObject.set(x, "showView", js.Any.fromFunction1(value))
   }

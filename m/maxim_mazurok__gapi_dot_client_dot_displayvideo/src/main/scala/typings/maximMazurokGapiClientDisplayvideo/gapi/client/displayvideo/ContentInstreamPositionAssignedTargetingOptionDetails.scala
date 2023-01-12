@@ -26,7 +26,8 @@ object ContentInstreamPositionAssignedTargetingOptionDetails {
     __obj.asInstanceOf[ContentInstreamPositionAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: ContentInstreamPositionAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentInstreamPositionAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setAdType(value: String): Self = StObject.set(x, "adType", value.asInstanceOf[js.Any])
     

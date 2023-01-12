@@ -38,7 +38,8 @@ object GooglePrivacyDlpV2CryptoDeterministicConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2CryptoDeterministicConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2CryptoDeterministicConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2CryptoDeterministicConfig] (val x: Self) extends AnyVal {
     
     inline def setContext(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

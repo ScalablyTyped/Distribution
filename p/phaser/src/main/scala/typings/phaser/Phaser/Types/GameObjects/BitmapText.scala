@@ -111,7 +111,8 @@ object BitmapText {
       __obj.asInstanceOf[BitmapFontCharacterData]
     }
     
-    extension [Self <: BitmapFontCharacterData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitmapFontCharacterData] (val x: Self) extends AnyVal {
       
       inline def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object BitmapText {
       __obj.asInstanceOf[BitmapFontData]
     }
     
-    extension [Self <: BitmapFontData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitmapFontData] (val x: Self) extends AnyVal {
       
       inline def setChars(value: NumberDictionary[BitmapFontCharacterData]): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
@@ -288,7 +290,8 @@ object BitmapText {
       __obj.asInstanceOf[BitmapTextCharacter]
     }
     
-    extension [Self <: BitmapTextCharacter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitmapTextCharacter] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -342,7 +345,8 @@ object BitmapText {
       __obj.asInstanceOf[BitmapTextConfig]
     }
     
-    extension [Self <: BitmapTextConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitmapTextConfig] (val x: Self) extends AnyVal {
       
       inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -390,7 +394,8 @@ object BitmapText {
       __obj.asInstanceOf[BitmapTextLines]
     }
     
-    extension [Self <: BitmapTextLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitmapTextLines] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -468,7 +473,8 @@ object BitmapText {
       __obj.asInstanceOf[BitmapTextSize]
     }
     
-    extension [Self <: BitmapTextSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitmapTextSize] (val x: Self) extends AnyVal {
       
       inline def setCharacters(value: js.Array[BitmapTextCharacter]): Self = StObject.set(x, "characters", value.asInstanceOf[js.Any])
       
@@ -536,7 +542,8 @@ object BitmapText {
       __obj.asInstanceOf[BitmapTextWord]
     }
     
-    extension [Self <: BitmapTextWord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitmapTextWord] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -618,7 +625,8 @@ object BitmapText {
       __obj.asInstanceOf[DisplayCallbackConfig]
     }
     
-    extension [Self <: DisplayCallbackConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayCallbackConfig] (val x: Self) extends AnyVal {
       
       inline def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
       
@@ -672,7 +680,8 @@ object BitmapText {
       __obj.asInstanceOf[GlobalBitmapTextSize]
     }
     
-    extension [Self <: GlobalBitmapTextSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalBitmapTextSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -751,7 +760,8 @@ object BitmapText {
       __obj.asInstanceOf[JSONBitmapText]
     }
     
-    extension [Self <: JSONBitmapText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONBitmapText] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -797,7 +807,8 @@ object BitmapText {
       __obj.asInstanceOf[LocalBitmapTextSize]
     }
     
-    extension [Self <: LocalBitmapTextSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalBitmapTextSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -887,7 +898,8 @@ object BitmapText {
       __obj.asInstanceOf[RetroFontConfig]
     }
     
-    extension [Self <: RetroFontConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetroFontConfig] (val x: Self) extends AnyVal {
       
       inline def setChars(value: String): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
@@ -940,7 +952,8 @@ object BitmapText {
       __obj.asInstanceOf[TintConfig]
     }
     
-    extension [Self <: TintConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TintConfig] (val x: Self) extends AnyVal {
       
       inline def setBottomLeft(value: Double): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
       

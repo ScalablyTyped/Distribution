@@ -21,7 +21,8 @@ object NodesScripting {
     __obj.asInstanceOf[NodesScripting]
   }
   
-  extension [Self <: NodesScripting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesScripting] (val x: Self) extends AnyVal {
     
     inline def setCache_evictions(value: long): Self = StObject.set(x, "cache_evictions", value.asInstanceOf[js.Any])
     

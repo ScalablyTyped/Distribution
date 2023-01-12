@@ -63,7 +63,8 @@ object EventResource {
     __obj.asInstanceOf[EventResource[T]]
   }
   
-  extension [Self <: EventResource[?], T](x: Self & EventResource[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventResource[?], T] (val x: Self & EventResource[T]) extends AnyVal {
     
     inline def setApi_version(value: String): Self = StObject.set(x, "api_version", value.asInstanceOf[js.Any])
     

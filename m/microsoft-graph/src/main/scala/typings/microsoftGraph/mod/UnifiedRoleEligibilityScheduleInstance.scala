@@ -33,7 +33,8 @@ object UnifiedRoleEligibilityScheduleInstance {
     __obj.asInstanceOf[UnifiedRoleEligibilityScheduleInstance]
   }
   
-  extension [Self <: UnifiedRoleEligibilityScheduleInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedRoleEligibilityScheduleInstance] (val x: Self) extends AnyVal {
     
     inline def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     

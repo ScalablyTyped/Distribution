@@ -668,7 +668,8 @@ object sapUiUx3ExactAttributeMod {
       __obj.asInstanceOf[ExactAttributeSettings]
     }
     
-    extension [Self <: ExactAttributeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExactAttributeSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalData(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object AttributesDeletedValueArray {
     __obj.asInstanceOf[AttributesDeletedValueArray]
   }
   
-  extension [Self <: AttributesDeletedValueArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributesDeletedValueArray] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Deleted): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

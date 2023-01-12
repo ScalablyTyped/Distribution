@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[TourProps]
     }
     
-    extension [Self <: TourProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TourProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -264,7 +265,8 @@ object mod {
       __obj.asInstanceOf[TourStep]
     }
     
-    extension [Self <: TourStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TourStep] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | Element): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

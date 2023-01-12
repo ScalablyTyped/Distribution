@@ -61,7 +61,8 @@ object PlusWebviewWebviewOverrideResourceOptions {
     __obj.asInstanceOf[PlusWebviewWebviewOverrideResourceOptions]
   }
   
-  extension [Self <: PlusWebviewWebviewOverrideResourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewOverrideResourceOptions] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

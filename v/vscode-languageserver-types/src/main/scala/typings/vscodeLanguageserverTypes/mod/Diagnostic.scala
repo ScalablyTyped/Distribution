@@ -191,7 +191,8 @@ object Diagnostic {
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean]
   
-  extension [Self <: Diagnostic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Diagnostic] (val x: Self) extends AnyVal {
     
     inline def setCode(value: integer | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

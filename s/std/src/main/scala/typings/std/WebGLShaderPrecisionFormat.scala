@@ -23,7 +23,8 @@ object WebGLShaderPrecisionFormat {
     __obj.asInstanceOf[WebGLShaderPrecisionFormat]
   }
   
-  extension [Self <: WebGLShaderPrecisionFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLShaderPrecisionFormat] (val x: Self) extends AnyVal {
     
     inline def setPrecision(value: GLint): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     

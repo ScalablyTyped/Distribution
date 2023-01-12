@@ -38,7 +38,8 @@ object sqlite {
       __obj.asInstanceOf[IDatabase]
     }
     
-    extension [Self <: IDatabase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatabase] (val x: Self) extends AnyVal {
       
       inline def setChangeVersion(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "changeVersion", js.Any.fromFunction1(value))
       
@@ -84,7 +85,8 @@ object sqlite {
       __obj.asInstanceOf[ISQLResultSet]
     }
     
-    extension [Self <: ISQLResultSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISQLResultSet] (val x: Self) extends AnyVal {
       
       inline def setGetInsertId(value: () => Double): Self = StObject.set(x, "getInsertId", js.Any.fromFunction0(value))
       
@@ -122,7 +124,8 @@ object sqlite {
       __obj.asInstanceOf[ISQLResultSetRowList]
     }
     
-    extension [Self <: ISQLResultSetRowList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISQLResultSetRowList] (val x: Self) extends AnyVal {
       
       inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
       
@@ -150,7 +153,8 @@ object sqlite {
       __obj.asInstanceOf[ISQLTransaction]
     }
     
-    extension [Self <: ISQLTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISQLTransaction] (val x: Self) extends AnyVal {
       
       inline def setExecuteSql(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "executeSql", js.Any.fromFunction1(value))
       
@@ -175,7 +179,8 @@ object sqlite {
       __obj.asInstanceOf[ISencha]
     }
     
-    extension [Self <: ISencha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
       
       inline def setOpenDatabase(value: /* config */ js.UndefOr[Any] => IDatabase): Self = StObject.set(x, "openDatabase", js.Any.fromFunction1(value))
       

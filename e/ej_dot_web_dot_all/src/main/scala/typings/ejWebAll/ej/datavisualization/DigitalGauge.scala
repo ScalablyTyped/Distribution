@@ -194,7 +194,8 @@ object DigitalGauge {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -240,7 +241,8 @@ object DigitalGauge {
       __obj.asInstanceOf[DoubleClickEventArgs]
     }
     
-    extension [Self <: DoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -288,7 +290,8 @@ object DigitalGauge {
       __obj.asInstanceOf[ExportSettings]
     }
     
-    extension [Self <: ExportSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportSettings] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -332,7 +335,8 @@ object DigitalGauge {
       __obj.asInstanceOf[Frame]
     }
     
-    extension [Self <: Frame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
       
       inline def setBackgroundImageUrl(value: String): Self = StObject.set(x, "backgroundImageUrl", value.asInstanceOf[js.Any])
       
@@ -381,7 +385,8 @@ object DigitalGauge {
       __obj.asInstanceOf[InitEventArgs]
     }
     
-    extension [Self <: InitEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -478,7 +483,8 @@ object DigitalGauge {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setCharacterSettings(value: ItemsCharacterSettings): Self = StObject.set(x, "characterSettings", value.asInstanceOf[js.Any])
       
@@ -563,7 +569,8 @@ object DigitalGauge {
       __obj.asInstanceOf[ItemRenderingEventArgs]
     }
     
-    extension [Self <: ItemRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -620,7 +627,8 @@ object DigitalGauge {
       __obj.asInstanceOf[ItemsCharacterSettings]
     }
     
-    extension [Self <: ItemsCharacterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsCharacterSettings] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -664,7 +672,8 @@ object DigitalGauge {
       __obj.asInstanceOf[ItemsFont]
     }
     
-    extension [Self <: ItemsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -699,7 +708,8 @@ object DigitalGauge {
       __obj.asInstanceOf[ItemsPosition]
     }
     
-    extension [Self <: ItemsPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -750,7 +760,8 @@ object DigitalGauge {
       __obj.asInstanceOf[ItemsSegmentSettings]
     }
     
-    extension [Self <: ItemsSegmentSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsSegmentSettings] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -811,7 +822,8 @@ object DigitalGauge {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -928,7 +940,8 @@ object DigitalGauge {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.DigitalGauge.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.DigitalGauge.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.DigitalGauge.Model] (val x: Self) extends AnyVal {
       
       inline def setClick(value: /* e */ ClickEventArgs => Unit): Self = StObject.set(x, "Click", js.Any.fromFunction1(value))
       
@@ -1039,7 +1052,8 @@ object DigitalGauge {
       __obj.asInstanceOf[RenderCompleteEventArgs]
     }
     
-    extension [Self <: RenderCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1093,7 +1107,8 @@ object DigitalGauge {
       __obj.asInstanceOf[RightClickEventArgs]
     }
     
-    extension [Self <: RightClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RightClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object BoardChart {
     __obj.asInstanceOf[BoardChart]
   }
   
-  extension [Self <: BoardChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoardChart] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: StringDictionary[Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     

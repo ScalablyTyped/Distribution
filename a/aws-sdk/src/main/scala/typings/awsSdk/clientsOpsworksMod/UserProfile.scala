@@ -38,7 +38,8 @@ object UserProfile {
     __obj.asInstanceOf[UserProfile]
   }
   
-  extension [Self <: UserProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserProfile] (val x: Self) extends AnyVal {
     
     inline def setAllowSelfManagement(value: Boolean): Self = StObject.set(x, "AllowSelfManagement", value.asInstanceOf[js.Any])
     

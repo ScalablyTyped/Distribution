@@ -40,7 +40,8 @@ object WebThemeOptions {
     __obj.asInstanceOf[WebThemeOptions]
   }
   
-  extension [Self <: WebThemeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebThemeOptions] (val x: Self) extends AnyVal {
     
     inline def setFavicon(value: String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
     

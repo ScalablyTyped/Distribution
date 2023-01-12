@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Destination]
     }
     
-    extension [Self <: Destination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: LocationValue): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[IsWaypoint]
     }
     
-    extension [Self <: IsWaypoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsWaypoint] (val x: Self) extends AnyVal {
       
       inline def setIsWaypoint(value: Boolean): Self = StObject.set(x, "isWaypoint", value.asInstanceOf[js.Any])
     }
@@ -97,7 +100,8 @@ object anon {
       __obj.asInstanceOf[PoiisWaypointboolean]
     }
     
-    extension [Self <: PoiisWaypointboolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoiisWaypointboolean] (val x: Self) extends AnyVal {
       
       inline def setIsWaypoint(value: Boolean): Self = StObject.set(x, "isWaypoint", value.asInstanceOf[js.Any])
       

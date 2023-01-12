@@ -39,7 +39,8 @@ object libLinkModelsMod {
       __obj.asInstanceOf[Operation]
     }
     
-    extension [Self <: Operation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object libLinkModelsMod {
       __obj.asInstanceOf[OperationDisplay]
     }
     
-    extension [Self <: OperationDisplay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationDisplay] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object libLinkModelsMod {
       __obj.asInstanceOf[ResourceLinkFilter]
     }
     
-    extension [Self <: ResourceLinkFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceLinkFilter] (val x: Self) extends AnyVal {
       
       inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     }
@@ -180,7 +183,8 @@ object libLinkModelsMod {
       __obj.asInstanceOf[ResourceLinkProperties]
     }
     
-    extension [Self <: ResourceLinkProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceLinkProperties] (val x: Self) extends AnyVal {
       
       inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       

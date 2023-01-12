@@ -15,7 +15,8 @@ object PointerEvent {
     __obj.asInstanceOf[PointerEvent]
   }
   
-  extension [Self <: PointerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerEvent] (val x: Self) extends AnyVal {
     
     inline def setPointerEvent(value: typings.std.PointerEvent): Self = StObject.set(x, "pointerEvent", value.asInstanceOf[js.Any])
   }

@@ -74,7 +74,8 @@ object ConformanceRest {
     __obj.asInstanceOf[ConformanceRest]
   }
   
-  extension [Self <: ConformanceRest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformanceRest] (val x: Self) extends AnyVal {
     
     inline def setCompartment(value: js.Array[String]): Self = StObject.set(x, "compartment", value.asInstanceOf[js.Any])
     

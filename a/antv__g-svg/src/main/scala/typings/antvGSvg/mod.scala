@@ -186,7 +186,8 @@ object mod {
       __obj.asInstanceOf[SVGRendererConfig]
     }
     
-    extension [Self <: SVGRendererConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGRendererConfig] (val x: Self) extends AnyVal {
       
       inline def setOutputSVGElementId(value: Boolean): Self = StObject.set(x, "outputSVGElementId", value.asInstanceOf[js.Any])
     }

@@ -102,7 +102,8 @@ object typesSuggestionsMod {
       __obj.asInstanceOf[Suggestion]
     }
     
-    extension [Self <: Suggestion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Suggestion] (val x: Self) extends AnyVal {
       
       inline def setQueryArgs(value: QueryArgs): Self = StObject.set(x, "queryArgs", value.asInstanceOf[js.Any])
       

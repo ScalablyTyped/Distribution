@@ -28,7 +28,8 @@ object libEsmApiFormsMod {
       __obj.asInstanceOf[SerializedField]
     }
     
-    extension [Self <: SerializedField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedField] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

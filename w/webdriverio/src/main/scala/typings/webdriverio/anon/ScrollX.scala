@@ -17,7 +17,8 @@ object ScrollX {
     __obj.asInstanceOf[ScrollX]
   }
   
-  extension [Self <: ScrollX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollX] (val x: Self) extends AnyVal {
     
     inline def setScrollX(value: Double): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
     

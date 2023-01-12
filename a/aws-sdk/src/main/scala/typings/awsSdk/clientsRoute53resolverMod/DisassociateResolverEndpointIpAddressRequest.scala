@@ -23,7 +23,8 @@ object DisassociateResolverEndpointIpAddressRequest {
     __obj.asInstanceOf[DisassociateResolverEndpointIpAddressRequest]
   }
   
-  extension [Self <: DisassociateResolverEndpointIpAddressRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateResolverEndpointIpAddressRequest] (val x: Self) extends AnyVal {
     
     inline def setIpAddress(value: IpAddressUpdate): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     

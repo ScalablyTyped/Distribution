@@ -32,7 +32,8 @@ object OpenSettingButton {
     __obj.asInstanceOf[OpenSettingButton]
   }
   
-  extension [Self <: OpenSettingButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenSettingButton] (val x: Self) extends AnyVal {
     
     inline def setOffTap(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "offTap", js.Any.fromFunction1(value))
     

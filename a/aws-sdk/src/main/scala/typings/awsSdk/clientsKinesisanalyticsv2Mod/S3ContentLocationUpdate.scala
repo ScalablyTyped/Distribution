@@ -28,7 +28,8 @@ object S3ContentLocationUpdate {
     __obj.asInstanceOf[S3ContentLocationUpdate]
   }
   
-  extension [Self <: S3ContentLocationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ContentLocationUpdate] (val x: Self) extends AnyVal {
     
     inline def setBucketARNUpdate(value: BucketARN): Self = StObject.set(x, "BucketARNUpdate", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object angular {
         __obj.asInstanceOf[Config]
       }
       
-      extension [Self <: Config](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
         
         inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
         
@@ -50,7 +51,8 @@ object angular {
         __obj.asInstanceOf[IKookiesProvider]
       }
       
-      extension [Self <: IKookiesProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IKookiesProvider] (val x: Self) extends AnyVal {
         
         inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
         
@@ -95,7 +97,8 @@ object angular {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         

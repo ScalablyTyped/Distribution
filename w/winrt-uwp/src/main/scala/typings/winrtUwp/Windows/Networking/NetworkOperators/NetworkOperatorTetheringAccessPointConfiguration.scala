@@ -20,7 +20,8 @@ object NetworkOperatorTetheringAccessPointConfiguration {
     __obj.asInstanceOf[NetworkOperatorTetheringAccessPointConfiguration]
   }
   
-  extension [Self <: NetworkOperatorTetheringAccessPointConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkOperatorTetheringAccessPointConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     

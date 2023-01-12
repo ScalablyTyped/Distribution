@@ -19,7 +19,8 @@ object ActionSubscribersObject {
     __obj.asInstanceOf[ActionSubscribersObject[P, S]]
   }
   
-  extension [Self <: ActionSubscribersObject[?, ?], P, S](x: Self & (ActionSubscribersObject[P, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionSubscribersObject[?, ?], P, S] (val x: Self & (ActionSubscribersObject[P, S])) extends AnyVal {
     
     inline def setAfter(value: (P, S) => Any): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
     

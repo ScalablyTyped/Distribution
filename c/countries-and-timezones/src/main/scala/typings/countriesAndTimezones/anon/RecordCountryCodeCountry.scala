@@ -763,7 +763,8 @@ object RecordCountryCodeCountry {
     __obj.asInstanceOf[RecordCountryCodeCountry]
   }
   
-  extension [Self <: RecordCountryCodeCountry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordCountryCodeCountry] (val x: Self) extends AnyVal {
     
     inline def setAD(value: Country): Self = StObject.set(x, "AD", value.asInstanceOf[js.Any])
     

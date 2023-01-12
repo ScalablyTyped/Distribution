@@ -83,7 +83,8 @@ object MatterSetBodyConfig {
     __obj.asInstanceOf[MatterSetBodyConfig]
   }
   
-  extension [Self <: MatterSetBodyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatterSetBodyConfig] (val x: Self) extends AnyVal {
     
     inline def setAddToWorld(value: Boolean): Self = StObject.set(x, "addToWorld", value.asInstanceOf[js.Any])
     

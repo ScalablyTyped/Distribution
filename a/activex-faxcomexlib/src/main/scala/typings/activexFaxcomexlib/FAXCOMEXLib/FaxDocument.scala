@@ -117,7 +117,8 @@ object FaxDocument {
     __obj.asInstanceOf[FaxDocument]
   }
   
-  extension [Self <: FaxDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxDocument] (val x: Self) extends AnyVal {
     
     inline def setAttachFaxToReceipt(value: Boolean): Self = StObject.set(x, "AttachFaxToReceipt", value.asInstanceOf[js.Any])
     

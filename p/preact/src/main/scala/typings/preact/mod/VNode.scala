@@ -41,7 +41,8 @@ object VNode {
     __obj.asInstanceOf[VNode[P]]
   }
   
-  extension [Self <: VNode[?], P](x: Self & VNode[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VNode[?], P] (val x: Self & VNode[P]) extends AnyVal {
     
     inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ContactQueryTextSearch {
     __obj.asInstanceOf[ContactQueryTextSearch]
   }
   
-  extension [Self <: ContactQueryTextSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactQueryTextSearch] (val x: Self) extends AnyVal {
     
     inline def setFields(value: ContactQuerySearchFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

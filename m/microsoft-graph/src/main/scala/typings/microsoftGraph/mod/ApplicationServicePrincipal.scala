@@ -17,7 +17,8 @@ object ApplicationServicePrincipal {
     __obj.asInstanceOf[ApplicationServicePrincipal]
   }
   
-  extension [Self <: ApplicationServicePrincipal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationServicePrincipal] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: NullableOption[Application]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

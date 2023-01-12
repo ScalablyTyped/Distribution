@@ -88,7 +88,8 @@ object distLibJsonDBConfigMod {
       __obj.asInstanceOf[JsonDBConfig]
     }
     
-    extension [Self <: JsonDBConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonDBConfig] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: IAdapter[Any]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       

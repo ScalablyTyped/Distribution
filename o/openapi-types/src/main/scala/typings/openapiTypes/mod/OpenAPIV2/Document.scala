@@ -54,7 +54,8 @@ object Document {
     __obj.asInstanceOf[Document[T]]
   }
   
-  extension [Self <: Document[?], T /* <: js.Object */](x: Self & Document[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Document[?], T /* <: js.Object */] (val x: Self & Document[T]) extends AnyVal {
     
     inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     

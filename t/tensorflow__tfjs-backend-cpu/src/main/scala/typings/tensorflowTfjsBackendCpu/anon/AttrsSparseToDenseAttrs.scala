@@ -22,7 +22,8 @@ object AttrsSparseToDenseAttrs {
     __obj.asInstanceOf[AttrsSparseToDenseAttrs]
   }
   
-  extension [Self <: AttrsSparseToDenseAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsSparseToDenseAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: SparseToDenseAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

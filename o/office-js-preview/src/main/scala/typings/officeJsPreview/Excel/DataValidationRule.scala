@@ -75,7 +75,8 @@ object DataValidationRule {
     __obj.asInstanceOf[DataValidationRule]
   }
   
-  extension [Self <: DataValidationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataValidationRule] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: CustomDataValidation): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

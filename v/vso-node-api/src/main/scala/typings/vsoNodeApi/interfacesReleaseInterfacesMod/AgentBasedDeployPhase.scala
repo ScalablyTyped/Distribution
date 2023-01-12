@@ -23,7 +23,8 @@ object AgentBasedDeployPhase {
     __obj.asInstanceOf[AgentBasedDeployPhase]
   }
   
-  extension [Self <: AgentBasedDeployPhase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentBasedDeployPhase] (val x: Self) extends AnyVal {
     
     inline def setDeploymentInput(value: AgentDeploymentInput): Self = StObject.set(x, "deploymentInput", value.asInstanceOf[js.Any])
   }

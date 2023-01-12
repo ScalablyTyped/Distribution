@@ -21,7 +21,8 @@ object LexV2SentimentScore {
     __obj.asInstanceOf[LexV2SentimentScore]
   }
   
-  extension [Self <: LexV2SentimentScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2SentimentScore] (val x: Self) extends AnyVal {
     
     inline def setMixed(value: Double): Self = StObject.set(x, "mixed", value.asInstanceOf[js.Any])
     

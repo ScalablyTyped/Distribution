@@ -21,7 +21,8 @@ object ReplyListener {
     __obj.asInstanceOf[ReplyListener]
   }
   
-  extension [Self <: ReplyListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplyListener] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: Message => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

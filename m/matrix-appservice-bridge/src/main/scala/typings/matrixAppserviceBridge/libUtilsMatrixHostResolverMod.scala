@@ -89,7 +89,8 @@ object libUtilsMatrixHostResolverMod {
       __obj.asInstanceOf[DnsInterface]
     }
     
-    extension [Self <: DnsInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DnsInterface] (val x: Self) extends AnyVal {
       
       inline def setResolveSrv(value: String => js.Promise[js.Array[SrvRecord]]): Self = StObject.set(x, "resolveSrv", js.Any.fromFunction1(value))
     }
@@ -112,7 +113,8 @@ object libUtilsMatrixHostResolverMod {
       __obj.asInstanceOf[HostResolveResult]
     }
     
-    extension [Self <: HostResolveResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostResolveResult] (val x: Self) extends AnyVal {
       
       inline def setCacheFor(value: Double): Self = StObject.set(x, "cacheFor", value.asInstanceOf[js.Any])
       

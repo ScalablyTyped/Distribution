@@ -16,7 +16,8 @@ object NodeGroupsAddNodesRequest {
     __obj.asInstanceOf[NodeGroupsAddNodesRequest]
   }
   
-  extension [Self <: NodeGroupsAddNodesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeGroupsAddNodesRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalNodeCount(value: Double): Self = StObject.set(x, "additionalNodeCount", value.asInstanceOf[js.Any])
     

@@ -167,7 +167,8 @@ object ConstraintType {
     __obj.asInstanceOf[ConstraintType]
   }
   
-  extension [Self <: ConstraintType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstraintType] (val x: Self) extends AnyVal {
     
     inline def setAngleA(value: Double): Self = StObject.set(x, "angleA", value.asInstanceOf[js.Any])
     

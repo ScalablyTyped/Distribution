@@ -23,7 +23,8 @@ object GoogleActionsV2OptionInfo {
     __obj.asInstanceOf[GoogleActionsV2OptionInfo]
   }
   
-  extension [Self <: GoogleActionsV2OptionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2OptionInfo] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

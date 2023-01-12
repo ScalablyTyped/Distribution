@@ -58,7 +58,8 @@ object DescribeCasesRequest {
     __obj.asInstanceOf[DescribeCasesRequest]
   }
   
-  extension [Self <: DescribeCasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCasesRequest] (val x: Self) extends AnyVal {
     
     inline def setAfterTime(value: AfterTime): Self = StObject.set(x, "afterTime", value.asInstanceOf[js.Any])
     

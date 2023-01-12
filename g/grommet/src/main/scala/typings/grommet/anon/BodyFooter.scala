@@ -21,7 +21,8 @@ object BodyFooter {
     __obj.asInstanceOf[BodyFooter]
   }
   
-  extension [Self <: BodyFooter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyFooter] (val x: Self) extends AnyVal {
     
     inline def setBody(value: AlignBackground): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

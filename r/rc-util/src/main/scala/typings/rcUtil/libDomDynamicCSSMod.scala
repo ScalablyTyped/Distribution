@@ -55,7 +55,8 @@ object libDomDynamicCSSMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAttachTo(value: Element): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
       

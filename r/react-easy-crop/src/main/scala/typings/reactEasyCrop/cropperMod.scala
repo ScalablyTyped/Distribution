@@ -339,7 +339,8 @@ object cropperMod {
       __obj.asInstanceOf[CropperProps]
     }
     
-    extension [Self <: CropperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropperProps] (val x: Self) extends AnyVal {
       
       inline def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
       
@@ -498,7 +499,8 @@ object cropperMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setCropSize(value: Size): Self = StObject.set(x, "cropSize", value.asInstanceOf[js.Any])
       

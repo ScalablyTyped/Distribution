@@ -21,7 +21,8 @@ object LoopAnimationConfig {
     __obj.asInstanceOf[LoopAnimationConfig]
   }
   
-  extension [Self <: LoopAnimationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoopAnimationConfig] (val x: Self) extends AnyVal {
     
     inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     

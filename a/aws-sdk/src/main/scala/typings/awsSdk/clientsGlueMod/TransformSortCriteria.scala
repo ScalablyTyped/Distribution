@@ -23,7 +23,8 @@ object TransformSortCriteria {
     __obj.asInstanceOf[TransformSortCriteria]
   }
   
-  extension [Self <: TransformSortCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformSortCriteria] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: TransformSortColumnType): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     

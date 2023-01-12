@@ -326,7 +326,8 @@ object GriddleComponents {
     __obj.asInstanceOf[GriddleComponents]
   }
   
-  extension [Self <: GriddleComponents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GriddleComponents] (val x: Self) extends AnyVal {
     
     inline def setCell(value: GriddleComponent[CellProps]): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
     

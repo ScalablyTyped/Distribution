@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1beta1CreateEvaluationJobRequest {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1CreateEvaluationJobRequest]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1CreateEvaluationJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1CreateEvaluationJobRequest] (val x: Self) extends AnyVal {
     
     inline def setJob(value: GoogleCloudDatalabelingV1beta1EvaluationJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     

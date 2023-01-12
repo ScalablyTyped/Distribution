@@ -19,7 +19,8 @@ object ZoneChildContainer {
     __obj.asInstanceOf[ZoneChildContainer]
   }
   
-  extension [Self <: ZoneChildContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneChildContainer] (val x: Self) extends AnyVal {
     
     inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     

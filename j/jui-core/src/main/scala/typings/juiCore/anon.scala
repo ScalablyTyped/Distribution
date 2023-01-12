@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Mozilla]
     }
     
-    extension [Self <: Mozilla](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mozilla] (val x: Self) extends AnyVal {
       
       inline def setMozilla(value: Boolean): Self = StObject.set(x, "mozilla", value.asInstanceOf[js.Any])
       

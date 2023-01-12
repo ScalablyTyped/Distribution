@@ -15,7 +15,8 @@ object ModifyVpnConnectionResult {
     __obj.asInstanceOf[ModifyVpnConnectionResult]
   }
   
-  extension [Self <: ModifyVpnConnectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyVpnConnectionResult] (val x: Self) extends AnyVal {
     
     inline def setVpnConnection(value: VpnConnection): Self = StObject.set(x, "VpnConnection", value.asInstanceOf[js.Any])
     

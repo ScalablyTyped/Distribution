@@ -18,7 +18,8 @@ object ServicePrincipalIdentity {
     __obj.asInstanceOf[ServicePrincipalIdentity]
   }
   
-  extension [Self <: ServicePrincipalIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServicePrincipalIdentity] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

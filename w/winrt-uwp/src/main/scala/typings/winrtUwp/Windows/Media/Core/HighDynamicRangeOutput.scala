@@ -22,7 +22,8 @@ object HighDynamicRangeOutput {
     __obj.asInstanceOf[HighDynamicRangeOutput]
   }
   
-  extension [Self <: HighDynamicRangeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighDynamicRangeOutput] (val x: Self) extends AnyVal {
     
     inline def setCertainty(value: Double): Self = StObject.set(x, "certainty", value.asInstanceOf[js.Any])
     

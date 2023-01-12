@@ -22,7 +22,8 @@ object KeyDef {
     __obj.asInstanceOf[KeyDef]
   }
   
-  extension [Self <: KeyDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyDef] (val x: Self) extends AnyVal {
     
     inline def setKeyDef(value: keyboardKey): Self = StObject.set(x, "keyDef", value.asInstanceOf[js.Any])
     

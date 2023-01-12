@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Async]
     }
     
-    extension [Self <: Async](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Async] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Autoescape]
     }
     
-    extension [Self <: Autoescape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Autoescape] (val x: Self) extends AnyVal {
       
       inline def setAutoescape(value: Boolean): Self = StObject.set(x, "autoescape", value.asInstanceOf[js.Any])
     }
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[BlockEnd]
     }
     
-    extension [Self <: BlockEnd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockEnd] (val x: Self) extends AnyVal {
       
       inline def setBlockEnd(value: String): Self = StObject.set(x, "blockEnd", value.asInstanceOf[js.Any])
       
@@ -113,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -136,7 +140,8 @@ object anon {
       __obj.asInstanceOf[NoCache]
     }
     
-    extension [Self <: NoCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoCache] (val x: Self) extends AnyVal {
       
       inline def setNoCache(value: Boolean): Self = StObject.set(x, "noCache", value.asInstanceOf[js.Any])
       

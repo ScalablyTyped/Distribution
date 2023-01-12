@@ -29,7 +29,8 @@ object interfacesScrollbarMod {
       __obj.asInstanceOf[Metrics]
     }
     
-    extension [Self <: Metrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object interfacesScrollbarMod {
       __obj.asInstanceOf[ScrollIntoViewOptions]
     }
     
-    extension [Self <: ScrollIntoViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollIntoViewOptions] (val x: Self) extends AnyVal {
       
       inline def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object interfacesScrollbarMod {
       __obj.asInstanceOf[ScrollStatus]
     }
     
-    extension [Self <: ScrollStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollStatus] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Data2d): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object interfacesScrollbarMod {
       __obj.asInstanceOf[ScrollToOptions]
     }
     
-    extension [Self <: ScrollToOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollToOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -214,7 +218,8 @@ object interfacesScrollbarMod {
       __obj.asInstanceOf[ScrollbarBounding]
     }
     
-    extension [Self <: ScrollbarBounding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarBounding] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -258,7 +263,8 @@ object interfacesScrollbarMod {
       __obj.asInstanceOf[ScrollbarOptions]
     }
     
-    extension [Self <: ScrollbarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowTracks(value: Boolean): Self = StObject.set(x, "alwaysShowTracks", value.asInstanceOf[js.Any])
       
@@ -295,7 +301,8 @@ object interfacesScrollbarMod {
       __obj.asInstanceOf[ScrollbarSize]
     }
     
-    extension [Self <: ScrollbarSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarSize] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Metrics): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -314,7 +321,8 @@ object interfacesScrollbarMod {
       __obj.asInstanceOf[SetPositionOptions]
     }
     
-    extension [Self <: SetPositionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetPositionOptions] (val x: Self) extends AnyVal {
       
       inline def setWithoutCallbacks(value: Boolean): Self = StObject.set(x, "withoutCallbacks", value.asInstanceOf[js.Any])
     }

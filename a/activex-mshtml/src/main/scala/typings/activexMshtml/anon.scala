@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Description]
     }
     
-    extension [Self <: Description](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[EventData]
     }
     
-    extension [Self <: EventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
       
       inline def setEventData(value: Any): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
       
@@ -64,7 +66,8 @@ object anon {
       __obj.asInstanceOf[PEvtObj]
     }
     
-    extension [Self <: PEvtObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PEvtObj] (val x: Self) extends AnyVal {
       
       inline def setPEvtObj(value: IHTMLEventObj): Self = StObject.set(x, "pEvtObj", value.asInstanceOf[js.Any])
     }

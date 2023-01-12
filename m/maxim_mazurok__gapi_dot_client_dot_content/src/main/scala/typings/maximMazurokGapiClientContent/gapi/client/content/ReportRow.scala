@@ -25,7 +25,8 @@ object ReportRow {
     __obj.asInstanceOf[ReportRow]
   }
   
-  extension [Self <: ReportRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportRow] (val x: Self) extends AnyVal {
     
     inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     

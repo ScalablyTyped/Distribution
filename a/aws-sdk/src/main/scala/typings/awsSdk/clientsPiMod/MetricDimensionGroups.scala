@@ -23,7 +23,8 @@ object MetricDimensionGroups {
     __obj.asInstanceOf[MetricDimensionGroups]
   }
   
-  extension [Self <: MetricDimensionGroups](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricDimensionGroups] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: DimensionGroupDetailList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     

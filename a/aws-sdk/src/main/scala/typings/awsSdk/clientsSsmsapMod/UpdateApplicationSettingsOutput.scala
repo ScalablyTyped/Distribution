@@ -23,7 +23,8 @@ object UpdateApplicationSettingsOutput {
     __obj.asInstanceOf[UpdateApplicationSettingsOutput]
   }
   
-  extension [Self <: UpdateApplicationSettingsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateApplicationSettingsOutput] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

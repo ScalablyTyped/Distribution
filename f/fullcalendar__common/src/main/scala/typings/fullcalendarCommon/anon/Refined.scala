@@ -18,7 +18,8 @@ object Refined {
     __obj.asInstanceOf[Refined]
   }
   
-  extension [Self <: Refined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Refined] (val x: Self) extends AnyVal {
     
     inline def setExtra(value: Dictionary): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     

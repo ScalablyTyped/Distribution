@@ -21,7 +21,8 @@ object srcCoreDataDataSettingsMod {
       __obj.asInstanceOf[IDataSettings]
     }
     
-    extension [Self <: IDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDataSettings] (val x: Self) extends AnyVal {
       
       inline def setApplyFilter(value: Boolean): Self = StObject.set(x, "applyFilter", value.asInstanceOf[js.Any])
       

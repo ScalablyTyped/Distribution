@@ -53,7 +53,8 @@ object ExportSnapshotRecord {
     __obj.asInstanceOf[ExportSnapshotRecord]
   }
   
-  extension [Self <: ExportSnapshotRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportSnapshotRecord] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object PortfolioShareDetail {
     __obj.asInstanceOf[PortfolioShareDetail]
   }
   
-  extension [Self <: PortfolioShareDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortfolioShareDetail] (val x: Self) extends AnyVal {
     
     inline def setAccepted(value: Boolean): Self = StObject.set(x, "Accepted", value.asInstanceOf[js.Any])
     

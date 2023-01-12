@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[PotpackBox]
     }
     
-    extension [Self <: PotpackBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PotpackBox] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object mod {
       __obj.asInstanceOf[PotpackStats]
     }
     
-    extension [Self <: PotpackStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PotpackStats] (val x: Self) extends AnyVal {
       
       inline def setFill(value: Double): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       

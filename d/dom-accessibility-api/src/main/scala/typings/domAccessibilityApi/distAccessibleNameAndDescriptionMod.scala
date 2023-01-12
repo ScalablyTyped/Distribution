@@ -47,7 +47,8 @@ object distAccessibleNameAndDescriptionMod {
       __obj.asInstanceOf[ComputeTextAlternativeOptions]
     }
     
-    extension [Self <: ComputeTextAlternativeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputeTextAlternativeOptions] (val x: Self) extends AnyVal {
       
       inline def setCompute(value: description | name): Self = StObject.set(x, "compute", value.asInstanceOf[js.Any])
       

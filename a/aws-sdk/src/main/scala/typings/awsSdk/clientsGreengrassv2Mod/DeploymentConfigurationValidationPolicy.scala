@@ -18,7 +18,8 @@ object DeploymentConfigurationValidationPolicy {
     __obj.asInstanceOf[DeploymentConfigurationValidationPolicy]
   }
   
-  extension [Self <: DeploymentConfigurationValidationPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentConfigurationValidationPolicy] (val x: Self) extends AnyVal {
     
     inline def setTimeoutInSeconds(value: OptionalInteger): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
     

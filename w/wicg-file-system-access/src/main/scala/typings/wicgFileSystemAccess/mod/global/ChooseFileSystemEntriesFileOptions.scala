@@ -17,7 +17,8 @@ object ChooseFileSystemEntriesFileOptions {
     __obj.asInstanceOf[ChooseFileSystemEntriesFileOptions]
   }
   
-  extension [Self <: ChooseFileSystemEntriesFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseFileSystemEntriesFileOptions] (val x: Self) extends AnyVal {
     
     inline def setAccepts(value: js.Array[ChooseFileSystemEntriesOptionsAccepts]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
     

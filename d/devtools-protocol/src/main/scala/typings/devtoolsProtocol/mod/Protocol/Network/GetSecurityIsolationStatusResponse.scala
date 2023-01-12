@@ -15,7 +15,8 @@ object GetSecurityIsolationStatusResponse {
     __obj.asInstanceOf[GetSecurityIsolationStatusResponse]
   }
   
-  extension [Self <: GetSecurityIsolationStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSecurityIsolationStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: SecurityIsolationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

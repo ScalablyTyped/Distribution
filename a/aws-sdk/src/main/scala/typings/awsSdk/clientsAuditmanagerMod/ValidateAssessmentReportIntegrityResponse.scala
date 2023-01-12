@@ -38,7 +38,8 @@ object ValidateAssessmentReportIntegrityResponse {
     __obj.asInstanceOf[ValidateAssessmentReportIntegrityResponse]
   }
   
-  extension [Self <: ValidateAssessmentReportIntegrityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateAssessmentReportIntegrityResponse] (val x: Self) extends AnyVal {
     
     inline def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
     

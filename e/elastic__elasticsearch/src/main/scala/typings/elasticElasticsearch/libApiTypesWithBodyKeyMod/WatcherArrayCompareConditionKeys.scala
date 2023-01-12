@@ -15,7 +15,8 @@ object WatcherArrayCompareConditionKeys {
     __obj.asInstanceOf[WatcherArrayCompareConditionKeys]
   }
   
-  extension [Self <: WatcherArrayCompareConditionKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherArrayCompareConditionKeys] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

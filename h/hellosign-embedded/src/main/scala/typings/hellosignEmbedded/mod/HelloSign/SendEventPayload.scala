@@ -18,7 +18,8 @@ object SendEventPayload {
     __obj.asInstanceOf[SendEventPayload]
   }
   
-  extension [Self <: SendEventPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendEventPayload] (val x: Self) extends AnyVal {
     
     inline def setSignatureRequestId(value: String): Self = StObject.set(x, "signatureRequestId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy] (val x: Self) extends AnyVal {
     
     inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     

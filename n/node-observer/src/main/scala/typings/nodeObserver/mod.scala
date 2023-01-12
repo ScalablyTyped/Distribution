@@ -50,7 +50,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Observer]
     }
     
-    extension [Self <: Observer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer] (val x: Self) extends AnyVal {
       
       inline def setSend(value: (js.Object, String, Any) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
       

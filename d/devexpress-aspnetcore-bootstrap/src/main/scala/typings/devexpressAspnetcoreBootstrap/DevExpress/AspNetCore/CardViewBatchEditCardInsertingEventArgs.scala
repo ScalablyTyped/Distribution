@@ -17,7 +17,8 @@ object CardViewBatchEditCardInsertingEventArgs {
     __obj.asInstanceOf[CardViewBatchEditCardInsertingEventArgs]
   }
   
-  extension [Self <: CardViewBatchEditCardInsertingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardViewBatchEditCardInsertingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }

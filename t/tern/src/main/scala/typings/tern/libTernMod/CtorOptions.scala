@@ -28,7 +28,8 @@ object CtorOptions {
     __obj.asInstanceOf[CtorOptions]
   }
   
-  extension [Self <: CtorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CtorOptions] (val x: Self) extends AnyVal {
     
     inline def setDefs(value: js.Array[Def]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
     

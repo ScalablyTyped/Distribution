@@ -47,7 +47,8 @@ object typingsOptionsMod {
       __obj.asInstanceOf[CsurfOptions]
     }
     
-    extension [Self <: CsurfOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CsurfOptions] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: CookieOptions | Boolean): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object typingsOptionsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       

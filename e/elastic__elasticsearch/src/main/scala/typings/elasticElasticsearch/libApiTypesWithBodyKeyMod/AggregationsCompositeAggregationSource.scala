@@ -21,7 +21,8 @@ object AggregationsCompositeAggregationSource {
     __obj.asInstanceOf[AggregationsCompositeAggregationSource]
   }
   
-  extension [Self <: AggregationsCompositeAggregationSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsCompositeAggregationSource] (val x: Self) extends AnyVal {
     
     inline def setDate_histogram(value: AggregationsDateHistogramAggregation): Self = StObject.set(x, "date_histogram", value.asInstanceOf[js.Any])
     

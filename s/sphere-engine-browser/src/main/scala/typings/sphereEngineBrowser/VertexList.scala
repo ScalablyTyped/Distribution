@@ -18,7 +18,8 @@ object VertexList {
     __obj.asInstanceOf[VertexList]
   }
   
-  extension [Self <: VertexList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexList] (val x: Self) extends AnyVal {
     
     inline def set_workaround(value: Null): Self = StObject.set(x, "_workaround", value.asInstanceOf[js.Any])
   }

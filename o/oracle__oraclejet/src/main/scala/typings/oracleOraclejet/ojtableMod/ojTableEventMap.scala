@@ -260,7 +260,8 @@ object ojTableEventMap {
     __obj.asInstanceOf[ojTableEventMap[K, D]]
   }
   
-  extension [Self <: ojTableEventMap[?, ?], K, D](x: Self & (ojTableEventMap[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojTableEventMap[?, ?], K, D] (val x: Self & (ojTableEventMap[K, D])) extends AnyVal {
     
     inline def setAccessibilityChanged(value: JetElementCustomEvent[RowHeader]): Self = StObject.set(x, "accessibilityChanged", value.asInstanceOf[js.Any])
     

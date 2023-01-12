@@ -28,7 +28,8 @@ object PictureFillSymbol {
     __obj.asInstanceOf[PictureFillSymbol]
   }
   
-  extension [Self <: PictureFillSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PictureFillSymbol] (val x: Self) extends AnyVal {
     
     inline def setOutline(value: SimpleLineSymbol): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object CompletionAssistant {
     __obj.asInstanceOf[CompletionAssistant]
   }
   
-  extension [Self <: CompletionAssistant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionAssistant] (val x: Self) extends AnyVal {
     
     inline def setProvideCompletionItems(value: (TextEditor, CompletionContext) => AssistantArray[CompletionItem]): Self = StObject.set(x, "provideCompletionItems", js.Any.fromFunction2(value))
   }

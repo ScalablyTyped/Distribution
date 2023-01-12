@@ -19,7 +19,8 @@ object DnX500Name {
     __obj.asInstanceOf[DnX500Name]
   }
   
-  extension [Self <: DnX500Name](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnX500Name] (val x: Self) extends AnyVal {
     
     inline def setDn(value: X500Name): Self = StObject.set(x, "dn", value.asInstanceOf[js.Any])
   }

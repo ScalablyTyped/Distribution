@@ -18,7 +18,8 @@ object ReportContext {
     __obj.asInstanceOf[ReportContext]
   }
   
-  extension [Self <: ReportContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportContext] (val x: Self) extends AnyVal {
     
     inline def setLicenseConfigurationArns(value: ArnList): Self = StObject.set(x, "licenseConfigurationArns", value.asInstanceOf[js.Any])
     

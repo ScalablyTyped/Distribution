@@ -47,7 +47,8 @@ object XControlContainer {
     __obj.asInstanceOf[XControlContainer]
   }
   
-  extension [Self <: XControlContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XControlContainer] (val x: Self) extends AnyVal {
     
     inline def setAddControl(value: (String, XControl) => Unit): Self = StObject.set(x, "addControl", js.Any.fromFunction2(value))
     

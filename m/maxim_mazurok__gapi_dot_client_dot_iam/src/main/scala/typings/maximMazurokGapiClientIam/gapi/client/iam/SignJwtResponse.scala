@@ -19,7 +19,8 @@ object SignJwtResponse {
     __obj.asInstanceOf[SignJwtResponse]
   }
   
-  extension [Self <: SignJwtResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignJwtResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     

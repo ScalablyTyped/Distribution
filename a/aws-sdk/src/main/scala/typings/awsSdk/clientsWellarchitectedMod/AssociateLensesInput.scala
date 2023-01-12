@@ -17,7 +17,8 @@ object AssociateLensesInput {
     __obj.asInstanceOf[AssociateLensesInput]
   }
   
-  extension [Self <: AssociateLensesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateLensesInput] (val x: Self) extends AnyVal {
     
     inline def setLensAliases(value: LensAliases): Self = StObject.set(x, "LensAliases", value.asInstanceOf[js.Any])
     

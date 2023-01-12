@@ -17,7 +17,8 @@ object FillStroke {
     __obj.asInstanceOf[FillStroke]
   }
   
-  extension [Self <: FillStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillStroke] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

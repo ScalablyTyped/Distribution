@@ -33,7 +33,8 @@ object WindowOpenEvent {
     __obj.asInstanceOf[WindowOpenEvent]
   }
   
-  extension [Self <: WindowOpenEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowOpenEvent] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

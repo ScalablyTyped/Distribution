@@ -69,7 +69,8 @@ object RefreshRequestCompletedEventArgs {
     __obj.asInstanceOf[RefreshRequestCompletedEventArgs]
   }
   
-  extension [Self <: RefreshRequestCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshRequestCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRefreshed(value: Boolean): Self = StObject.set(x, "refreshed", value.asInstanceOf[js.Any])
     

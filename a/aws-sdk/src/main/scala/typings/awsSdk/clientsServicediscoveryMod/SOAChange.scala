@@ -18,7 +18,8 @@ object SOAChange {
     __obj.asInstanceOf[SOAChange]
   }
   
-  extension [Self <: SOAChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SOAChange] (val x: Self) extends AnyVal {
     
     inline def setTTL(value: RecordTTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
   }

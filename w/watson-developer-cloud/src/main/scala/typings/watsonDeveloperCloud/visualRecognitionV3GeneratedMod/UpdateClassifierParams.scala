@@ -34,7 +34,8 @@ object UpdateClassifierParams {
     __obj.asInstanceOf[UpdateClassifierParams]
   }
   
-  extension [Self <: UpdateClassifierParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateClassifierParams] (val x: Self) extends AnyVal {
     
     inline def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
     

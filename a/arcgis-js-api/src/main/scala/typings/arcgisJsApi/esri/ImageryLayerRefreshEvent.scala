@@ -15,7 +15,8 @@ object ImageryLayerRefreshEvent {
     __obj.asInstanceOf[ImageryLayerRefreshEvent]
   }
   
-  extension [Self <: ImageryLayerRefreshEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageryLayerRefreshEvent] (val x: Self) extends AnyVal {
     
     inline def setDataChanged(value: Boolean): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
   }

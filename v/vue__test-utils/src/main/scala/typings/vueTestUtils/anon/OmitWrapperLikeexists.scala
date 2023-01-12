@@ -141,7 +141,8 @@ object OmitWrapperLikeexists {
     __obj.asInstanceOf[OmitWrapperLikeexists]
   }
   
-  extension [Self <: OmitWrapperLikeexists](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitWrapperLikeexists] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: () => StringDictionary[String]): Self = StObject.set(x, "attributes", js.Any.fromFunction0(value))
     

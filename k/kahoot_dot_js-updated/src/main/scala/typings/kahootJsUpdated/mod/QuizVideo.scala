@@ -21,7 +21,8 @@ object QuizVideo {
     __obj.asInstanceOf[QuizVideo]
   }
   
-  extension [Self <: QuizVideo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuizVideo] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

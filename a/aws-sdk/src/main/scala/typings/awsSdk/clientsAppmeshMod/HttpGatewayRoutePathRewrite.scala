@@ -18,7 +18,8 @@ object HttpGatewayRoutePathRewrite {
     __obj.asInstanceOf[HttpGatewayRoutePathRewrite]
   }
   
-  extension [Self <: HttpGatewayRoutePathRewrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpGatewayRoutePathRewrite] (val x: Self) extends AnyVal {
     
     inline def setExact(value: HttpPathExact): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

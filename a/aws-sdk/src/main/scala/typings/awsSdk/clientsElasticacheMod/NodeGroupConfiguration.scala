@@ -48,7 +48,8 @@ object NodeGroupConfiguration {
     __obj.asInstanceOf[NodeGroupConfiguration]
   }
   
-  extension [Self <: NodeGroupConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeGroupConfiguration] (val x: Self) extends AnyVal {
     
     inline def setNodeGroupId(value: AllowedNodeGroupId): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
     

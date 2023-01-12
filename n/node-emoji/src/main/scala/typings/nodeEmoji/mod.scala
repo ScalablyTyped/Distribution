@@ -7594,7 +7594,8 @@ object mod {
       __obj.asInstanceOf[Emoji_]
     }
     
-    extension [Self <: Emoji_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Emoji_] (val x: Self) extends AnyVal {
       
       inline def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       

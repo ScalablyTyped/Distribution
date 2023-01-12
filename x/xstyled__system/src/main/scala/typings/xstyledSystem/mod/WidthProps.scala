@@ -16,7 +16,8 @@ object WidthProps {
     __obj.asInstanceOf[WidthProps[TLength]]
   }
   
-  extension [Self <: WidthProps[?], TLength](x: Self & WidthProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidthProps[?], TLength] (val x: Self & WidthProps[TLength]) extends AnyVal {
     
     inline def setWidth(value: ResponsiveValue[Width[TLength]]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

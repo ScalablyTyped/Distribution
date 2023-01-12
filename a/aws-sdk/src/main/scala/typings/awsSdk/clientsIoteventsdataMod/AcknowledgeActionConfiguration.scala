@@ -18,7 +18,8 @@ object AcknowledgeActionConfiguration {
     __obj.asInstanceOf[AcknowledgeActionConfiguration]
   }
   
-  extension [Self <: AcknowledgeActionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcknowledgeActionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setNote(value: Note): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     

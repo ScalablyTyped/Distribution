@@ -17,7 +17,8 @@ object MetricResponse {
     __obj.asInstanceOf[MetricResponse]
   }
   
-  extension [Self <: MetricResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricResponse] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: js.Array[MetricAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

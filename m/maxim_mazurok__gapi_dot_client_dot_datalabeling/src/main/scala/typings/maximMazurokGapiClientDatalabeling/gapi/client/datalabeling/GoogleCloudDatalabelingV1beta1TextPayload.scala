@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1beta1TextPayload {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1TextPayload]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1TextPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1TextPayload] (val x: Self) extends AnyVal {
     
     inline def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
     

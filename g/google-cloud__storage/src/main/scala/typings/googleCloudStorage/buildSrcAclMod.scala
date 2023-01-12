@@ -157,7 +157,8 @@ object buildSrcAclMod {
       __obj.asInstanceOf[AccessControlObject]
     }
     
-    extension [Self <: AccessControlObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessControlObject] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object buildSrcAclMod {
       __obj.asInstanceOf[AclOptions]
     }
     
-    extension [Self <: AclOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AclOptions] (val x: Self) extends AnyVal {
       
       inline def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object buildSrcAclMod {
       __obj.asInstanceOf[AddAclOptions]
     }
     
-    extension [Self <: AddAclOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddAclOptions] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
@@ -252,7 +255,8 @@ object buildSrcAclMod {
       __obj.asInstanceOf[GetAclOptions]
     }
     
-    extension [Self <: GetAclOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAclOptions] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
@@ -285,7 +289,8 @@ object buildSrcAclMod {
       __obj.asInstanceOf[RemoveAclOptions]
     }
     
-    extension [Self <: RemoveAclOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveAclOptions] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
@@ -325,7 +330,8 @@ object buildSrcAclMod {
       __obj.asInstanceOf[UpdateAclOptions]
     }
     
-    extension [Self <: UpdateAclOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateAclOptions] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       

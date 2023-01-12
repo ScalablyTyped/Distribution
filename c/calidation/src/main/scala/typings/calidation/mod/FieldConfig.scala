@@ -37,7 +37,8 @@ object FieldConfig {
     __obj.asInstanceOf[FieldConfig[T]]
   }
   
-  extension [Self <: FieldConfig[?], T /* <: js.Object */](x: Self & FieldConfig[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldConfig[?], T /* <: js.Object */] (val x: Self & FieldConfig[T]) extends AnyVal {
     
     inline def setIsBlacklisted(value: BlacklistValidator[T]): Self = StObject.set(x, "isBlacklisted", value.asInstanceOf[js.Any])
     

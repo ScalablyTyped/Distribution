@@ -20,7 +20,8 @@ object DirectiveReference {
     __obj.asInstanceOf[DirectiveReference]
   }
   
-  extension [Self <: DirectiveReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectiveReference] (val x: Self) extends AnyVal {
     
     inline def setNode(value: ClassDeclaration[DeclarationNode]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

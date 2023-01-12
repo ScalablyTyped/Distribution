@@ -18,7 +18,8 @@ object InterfaceRequest {
     __obj.asInstanceOf[InterfaceRequest]
   }
   
-  extension [Self <: InterfaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object AsyncInflateOptions {
     __obj.asInstanceOf[AsyncInflateOptions]
   }
   
-  extension [Self <: AsyncInflateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncInflateOptions] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

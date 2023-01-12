@@ -17,7 +17,8 @@ object QCStatementJson {
     __obj.asInstanceOf[QCStatementJson]
   }
   
-  extension [Self <: QCStatementJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QCStatementJson] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

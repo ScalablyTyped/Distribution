@@ -89,7 +89,8 @@ object esmAstMod {
       __obj.asInstanceOf[FunctionReference]
     }
     
-    extension [Self <: FunctionReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionReference] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Expression | NamedArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object esmAstMod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, Pattern]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object esmAstMod {
       __obj.asInstanceOf[MessageReference]
     }
     
-    extension [Self <: MessageReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageReference] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
@@ -198,7 +201,8 @@ object esmAstMod {
       __obj.asInstanceOf[NamedArgument]
     }
     
-    extension [Self <: NamedArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedArgument] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -226,7 +230,8 @@ object esmAstMod {
       __obj.asInstanceOf[NumberLiteral]
     }
     
-    extension [Self <: NumberLiteral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberLiteral] (val x: Self) extends AnyVal {
       
       inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
@@ -260,7 +265,8 @@ object esmAstMod {
       __obj.asInstanceOf[SelectExpression]
     }
     
-    extension [Self <: SelectExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectExpression] (val x: Self) extends AnyVal {
       
       inline def setSelector(value: Expression): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
@@ -290,7 +296,8 @@ object esmAstMod {
       __obj.asInstanceOf[StringLiteral]
     }
     
-    extension [Self <: StringLiteral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringLiteral] (val x: Self) extends AnyVal {
       
       inline def setType(value: str): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -313,7 +320,8 @@ object esmAstMod {
       __obj.asInstanceOf[Term]
     }
     
-    extension [Self <: Term](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Term] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, Pattern]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -345,7 +353,8 @@ object esmAstMod {
       __obj.asInstanceOf[TermReference]
     }
     
-    extension [Self <: TermReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TermReference] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Expression | NamedArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -377,7 +386,8 @@ object esmAstMod {
       __obj.asInstanceOf[VariableReference]
     }
     
-    extension [Self <: VariableReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariableReference] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -398,7 +408,8 @@ object esmAstMod {
       __obj.asInstanceOf[Variant]
     }
     
-    extension [Self <: Variant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Variant] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Literal): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

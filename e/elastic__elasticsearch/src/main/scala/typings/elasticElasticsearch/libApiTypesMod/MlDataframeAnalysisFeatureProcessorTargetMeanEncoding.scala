@@ -22,7 +22,8 @@ object MlDataframeAnalysisFeatureProcessorTargetMeanEncoding {
     __obj.asInstanceOf[MlDataframeAnalysisFeatureProcessorTargetMeanEncoding]
   }
   
-  extension [Self <: MlDataframeAnalysisFeatureProcessorTargetMeanEncoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalysisFeatureProcessorTargetMeanEncoding] (val x: Self) extends AnyVal {
     
     inline def setDefault_value(value: integer): Self = StObject.set(x, "default_value", value.asInstanceOf[js.Any])
     

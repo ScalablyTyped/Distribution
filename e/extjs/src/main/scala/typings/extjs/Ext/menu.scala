@@ -56,7 +56,8 @@ object menu {
       __obj.asInstanceOf[ICheckItem]
     }
     
-    extension [Self <: ICheckItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckItem] (val x: Self) extends AnyVal {
       
       inline def setCheckChangeDisabled(value: Boolean): Self = StObject.set(x, "checkChangeDisabled", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object menu {
       __obj.asInstanceOf[IColorPicker]
     }
     
-    extension [Self <: IColorPicker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorPicker] (val x: Self) extends AnyVal {
       
       inline def setHideOnClick(value: Boolean): Self = StObject.set(x, "hideOnClick", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object menu {
       __obj.asInstanceOf[typings.extjs.Ext.menu.IDatePicker]
     }
     
-    extension [Self <: typings.extjs.Ext.menu.IDatePicker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.menu.IDatePicker] (val x: Self) extends AnyVal {
       
       inline def setHideOnClick(value: Boolean): Self = StObject.set(x, "hideOnClick", value.asInstanceOf[js.Any])
       
@@ -327,7 +330,8 @@ object menu {
       __obj.asInstanceOf[IItem]
     }
     
-    extension [Self <: IItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IItem] (val x: Self) extends AnyVal {
       
       inline def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
       
@@ -546,7 +550,8 @@ object menu {
       __obj.asInstanceOf[IMenu]
     }
     
-    extension [Self <: IMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMenu] (val x: Self) extends AnyVal {
       
       inline def setAfterShow(value: () => Unit): Self = StObject.set(x, "afterShow", js.Any.fromFunction0(value))
       
@@ -620,7 +625,8 @@ object menu {
       __obj.asInstanceOf[ISeparator]
     }
     
-    extension [Self <: ISeparator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISeparator] (val x: Self) extends AnyVal {
       
       inline def setSeparatorCls(value: java.lang.String): Self = StObject.set(x, "separatorCls", value.asInstanceOf[js.Any])
       
@@ -779,7 +785,8 @@ object menu {
       __obj.asInstanceOf[ITextItem]
     }
     
-    extension [Self <: ITextItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextItem] (val x: Self) extends AnyVal {
       
       inline def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
       

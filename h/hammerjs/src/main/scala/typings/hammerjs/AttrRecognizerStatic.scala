@@ -17,7 +17,8 @@ object AttrRecognizerStatic {
     __obj.asInstanceOf[AttrRecognizerStatic]
   }
   
-  extension [Self <: AttrRecognizerStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrRecognizerStatic] (val x: Self) extends AnyVal {
     
     inline def setAttrTest(value: HammerInput => Boolean): Self = StObject.set(x, "attrTest", js.Any.fromFunction1(value))
     

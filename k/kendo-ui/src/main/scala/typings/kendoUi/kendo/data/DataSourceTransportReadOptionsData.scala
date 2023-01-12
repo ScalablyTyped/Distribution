@@ -23,7 +23,8 @@ object DataSourceTransportReadOptionsData {
     __obj.asInstanceOf[DataSourceTransportReadOptionsData]
   }
   
-  extension [Self <: DataSourceTransportReadOptionsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceTransportReadOptionsData] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: DataSourceFilters): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

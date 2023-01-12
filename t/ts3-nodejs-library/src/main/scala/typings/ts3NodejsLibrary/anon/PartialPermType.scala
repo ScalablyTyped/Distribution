@@ -22,7 +22,8 @@ object PartialPermType {
     __obj.asInstanceOf[PartialPermType]
   }
   
-  extension [Self <: PartialPermType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPermType] (val x: Self) extends AnyVal {
     
     inline def setPermname(value: String | Double): Self = StObject.set(x, "permname", value.asInstanceOf[js.Any])
     

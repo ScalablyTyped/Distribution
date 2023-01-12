@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[ChangedFiles]
     }
     
-    extension [Self <: ChangedFiles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangedFiles] (val x: Self) extends AnyVal {
       
       inline def setChangedFiles(value: Paths): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setChangedSince(value: String): Self = StObject.set(x, "changedSince", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object mod {
       __obj.asInstanceOf[Repos]
     }
     
-    extension [Self <: Repos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Repos] (val x: Self) extends AnyVal {
       
       inline def setGit(value: Paths): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
       

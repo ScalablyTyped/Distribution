@@ -50,7 +50,8 @@ object typesSelectObjectContentEventStreamMod {
       __obj.asInstanceOf[SelectObjectContentEventStream]
     }
     
-    extension [Self <: SelectObjectContentEventStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectObjectContentEventStream] (val x: Self) extends AnyVal {
       
       inline def setCont(value: ContinuationEvent): Self = StObject.set(x, "Cont", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object typesSelectObjectContentEventStreamMod {
       __obj.asInstanceOf[UnmarshalledSelectObjectContentEventStream]
     }
     
-    extension [Self <: UnmarshalledSelectObjectContentEventStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSelectObjectContentEventStream] (val x: Self) extends AnyVal {
       
       inline def setCont(value: UnmarshalledContinuationEvent): Self = StObject.set(x, "Cont", value.asInstanceOf[js.Any])
       

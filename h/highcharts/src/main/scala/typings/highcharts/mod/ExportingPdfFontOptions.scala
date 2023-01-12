@@ -37,7 +37,8 @@ object ExportingPdfFontOptions {
     __obj.asInstanceOf[ExportingPdfFontOptions]
   }
   
-  extension [Self <: ExportingPdfFontOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportingPdfFontOptions] (val x: Self) extends AnyVal {
     
     inline def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

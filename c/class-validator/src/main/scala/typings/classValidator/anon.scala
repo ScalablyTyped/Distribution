@@ -64,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Always]
     }
     
-    extension [Self <: Always](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Always] (val x: Self) extends AnyVal {
       
       inline def setAlways(value: Boolean): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Async]
     }
     
-    extension [Self <: Async](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Async] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object anon {
       __obj.asInstanceOf[Get]
     }
     
-    extension [Self <: Get](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Any => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
@@ -167,7 +170,8 @@ object anon {
       __obj.asInstanceOf[Nullable]
     }
     
-    extension [Self <: Nullable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nullable] (val x: Self) extends AnyVal {
       
       inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
       
@@ -194,7 +198,8 @@ object anon {
       __obj.asInstanceOf[Target]
     }
     
-    extension [Self <: Target](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Boolean): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

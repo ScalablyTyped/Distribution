@@ -20,7 +20,8 @@ object ListBoxDragstartEvent {
     __obj.asInstanceOf[ListBoxDragstartEvent]
   }
   
-  extension [Self <: ListBoxDragstartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBoxDragstartEvent] (val x: Self) extends AnyVal {
     
     inline def setDraggableEvent(value: Any): Self = StObject.set(x, "draggableEvent", value.asInstanceOf[js.Any])
     

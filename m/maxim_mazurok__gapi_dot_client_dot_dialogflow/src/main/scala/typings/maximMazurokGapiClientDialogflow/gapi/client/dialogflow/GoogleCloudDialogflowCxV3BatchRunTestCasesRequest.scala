@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3BatchRunTestCasesRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3BatchRunTestCasesRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3BatchRunTestCasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3BatchRunTestCasesRequest] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

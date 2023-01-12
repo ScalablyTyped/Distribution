@@ -15,7 +15,8 @@ object ISearchPaneSuggestionsRequestDeferral {
     __obj.asInstanceOf[ISearchPaneSuggestionsRequestDeferral]
   }
   
-  extension [Self <: ISearchPaneSuggestionsRequestDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchPaneSuggestionsRequestDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

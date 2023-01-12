@@ -21,7 +21,8 @@ object ArrayChange {
     __obj.asInstanceOf[ArrayChange[T]]
   }
   
-  extension [Self <: ArrayChange[?], T](x: Self & ArrayChange[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayChange[?], T] (val x: Self & ArrayChange[T]) extends AnyVal {
     
     inline def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

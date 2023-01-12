@@ -17,7 +17,8 @@ object Toggled {
     __obj.asInstanceOf[Toggled]
   }
   
-  extension [Self <: Toggled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Toggled] (val x: Self) extends AnyVal {
     
     inline def setToggled(value: Boolean): Self = StObject.set(x, "toggled", value.asInstanceOf[js.Any])
     

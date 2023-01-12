@@ -97,7 +97,8 @@ object RouteOptionsResponse {
     __obj.asInstanceOf[RouteOptionsResponse]
   }
   
-  extension [Self <: RouteOptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteOptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setDisconnectStatusCode(value: Double): Self = StObject.set(x, "disconnectStatusCode", value.asInstanceOf[js.Any])
     

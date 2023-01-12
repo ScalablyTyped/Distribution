@@ -23,7 +23,8 @@ object UpdateProjectResponse {
     __obj.asInstanceOf[UpdateProjectResponse]
   }
   
-  extension [Self <: UpdateProjectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateProjectResponse] (val x: Self) extends AnyVal {
     
     inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     

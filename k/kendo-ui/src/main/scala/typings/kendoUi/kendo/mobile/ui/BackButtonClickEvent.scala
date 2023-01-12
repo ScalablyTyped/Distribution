@@ -20,7 +20,8 @@ object BackButtonClickEvent {
     __obj.asInstanceOf[BackButtonClickEvent]
   }
   
-  extension [Self <: BackButtonClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackButtonClickEvent] (val x: Self) extends AnyVal {
     
     inline def setButton(value: JQuery): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

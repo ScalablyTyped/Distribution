@@ -38,7 +38,8 @@ object PartitionInput {
     __obj.asInstanceOf[PartitionInput]
   }
   
-  extension [Self <: PartitionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionInput] (val x: Self) extends AnyVal {
     
     inline def setLastAccessTime(value: js.Date): Self = StObject.set(x, "LastAccessTime", value.asInstanceOf[js.Any])
     

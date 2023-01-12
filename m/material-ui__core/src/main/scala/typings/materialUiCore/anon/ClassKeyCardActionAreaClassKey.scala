@@ -21,7 +21,8 @@ object ClassKeyCardActionAreaClassKey {
     __obj.asInstanceOf[ClassKeyCardActionAreaClassKey[P, D]]
   }
   
-  extension [Self <: ClassKeyCardActionAreaClassKey[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ClassKeyCardActionAreaClassKey[P, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassKeyCardActionAreaClassKey[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ClassKeyCardActionAreaClassKey[P, D])) extends AnyVal {
     
     inline def setClassKey(value: CardActionAreaClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

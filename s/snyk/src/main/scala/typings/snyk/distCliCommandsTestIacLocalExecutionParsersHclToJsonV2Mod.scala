@@ -34,7 +34,8 @@ object distCliCommandsTestIacLocalExecutionParsersHclToJsonV2Mod {
       __obj.asInstanceOf[ParsedResults]
     }
     
-    extension [Self <: ParsedResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedResults] (val x: Self) extends AnyVal {
       
       inline def setDebugLogs(value: MapOfFiles): Self = StObject.set(x, "debugLogs", value.asInstanceOf[js.Any])
       

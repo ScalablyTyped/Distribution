@@ -20,7 +20,8 @@ object ApiTestReport {
     __obj.asInstanceOf[ApiTestReport]
   }
   
-  extension [Self <: ApiTestReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiTestReport] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

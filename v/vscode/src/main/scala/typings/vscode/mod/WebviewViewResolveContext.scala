@@ -49,7 +49,8 @@ object WebviewViewResolveContext {
     __obj.asInstanceOf[WebviewViewResolveContext[T]]
   }
   
-  extension [Self <: WebviewViewResolveContext[?], T](x: Self & WebviewViewResolveContext[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebviewViewResolveContext[?], T] (val x: Self & WebviewViewResolveContext[T]) extends AnyVal {
     
     inline def setState(value: T): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

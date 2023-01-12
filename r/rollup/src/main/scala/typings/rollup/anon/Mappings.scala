@@ -23,7 +23,8 @@ object Mappings {
     __obj.asInstanceOf[Mappings]
   }
   
-  extension [Self <: Mappings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mappings] (val x: Self) extends AnyVal {
     
     inline def setMissing(value: `true`): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     

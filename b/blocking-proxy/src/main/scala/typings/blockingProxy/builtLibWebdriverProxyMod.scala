@@ -34,7 +34,8 @@ object builtLibWebdriverProxyMod {
       __obj.asInstanceOf[WebDriverBarrier]
     }
     
-    extension [Self <: WebDriverBarrier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebDriverBarrier] (val x: Self) extends AnyVal {
       
       inline def setOnCommand(value: WebDriverCommand => js.Promise[Unit]): Self = StObject.set(x, "onCommand", js.Any.fromFunction1(value))
     }

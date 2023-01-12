@@ -18,7 +18,8 @@ object ProvisionalConfiguration {
     __obj.asInstanceOf[ProvisionalConfiguration]
   }
   
-  extension [Self <: ProvisionalConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionalConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMaxTimeToLiveInMinutes(value: BoxInteger): Self = StObject.set(x, "MaxTimeToLiveInMinutes", value.asInstanceOf[js.Any])
   }

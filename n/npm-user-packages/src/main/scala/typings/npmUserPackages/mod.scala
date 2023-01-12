@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[PackageData]
     }
     
-    extension [Self <: PackageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageData] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: Email): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

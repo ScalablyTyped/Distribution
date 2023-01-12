@@ -28,7 +28,8 @@ object AddInstanceGroupsOutput {
     __obj.asInstanceOf[AddInstanceGroupsOutput]
   }
   
-  extension [Self <: AddInstanceGroupsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddInstanceGroupsOutput] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: ArnType): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     

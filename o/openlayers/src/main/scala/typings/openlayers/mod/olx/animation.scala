@@ -39,7 +39,8 @@ object animation {
       __obj.asInstanceOf[AnimateOptions]
     }
     
-    extension [Self <: AnimateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimateOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Coordinate_): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object animation {
       __obj.asInstanceOf[BounceOptions]
     }
     
-    extension [Self <: BounceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BounceOptions] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object animation {
       __obj.asInstanceOf[PanOptions]
     }
     
-    extension [Self <: PanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanOptions] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object animation {
       __obj.asInstanceOf[RotateOptions]
     }
     
-    extension [Self <: RotateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotateOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Coordinate_): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -201,7 +205,8 @@ object animation {
       __obj.asInstanceOf[ZoomOptions]
     }
     
-    extension [Self <: ZoomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomOptions] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

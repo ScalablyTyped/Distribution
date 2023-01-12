@@ -20,7 +20,8 @@ object CommonHoverOptions {
     __obj.asInstanceOf[CommonHoverOptions]
   }
   
-  extension [Self <: CommonHoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonHoverOptions] (val x: Self) extends AnyVal {
     
     inline def setHoverBackgroundColor(value: Color): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
     

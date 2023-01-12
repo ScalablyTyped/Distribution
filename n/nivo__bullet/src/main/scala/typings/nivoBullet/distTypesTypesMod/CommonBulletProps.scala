@@ -116,7 +116,8 @@ object CommonBulletProps {
     __obj.asInstanceOf[CommonBulletProps]
   }
   
-  extension [Self <: CommonBulletProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonBulletProps] (val x: Self) extends AnyVal {
     
     inline def setAxisPosition(value: before | after): Self = StObject.set(x, "axisPosition", value.asInstanceOf[js.Any])
     

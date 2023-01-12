@@ -16,7 +16,8 @@ object GoogleCloudVisionV1p4beta1AsyncAnnotateFileResponse {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1AsyncAnnotateFileResponse]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1AsyncAnnotateFileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1AsyncAnnotateFileResponse] (val x: Self) extends AnyVal {
     
     inline def setOutputConfig(value: GoogleCloudVisionV1p4beta1OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     

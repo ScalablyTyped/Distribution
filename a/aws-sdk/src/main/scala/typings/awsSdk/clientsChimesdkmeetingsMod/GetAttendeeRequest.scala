@@ -23,7 +23,8 @@ object GetAttendeeRequest {
     __obj.asInstanceOf[GetAttendeeRequest]
   }
   
-  extension [Self <: GetAttendeeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAttendeeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttendeeId(value: GuidString): Self = StObject.set(x, "AttendeeId", value.asInstanceOf[js.Any])
     

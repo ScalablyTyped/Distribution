@@ -89,7 +89,8 @@ object ServerStateCookieOptions {
     __obj.asInstanceOf[ServerStateCookieOptions]
   }
   
-  extension [Self <: ServerStateCookieOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerStateCookieOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoValue(value: /* request */ Request => Unit): Self = StObject.set(x, "autoValue", js.Any.fromFunction1(value))
     

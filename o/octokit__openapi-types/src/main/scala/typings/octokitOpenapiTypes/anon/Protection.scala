@@ -27,7 +27,8 @@ object Protection {
     __obj.asInstanceOf[Protection]
   }
   
-  extension [Self <: Protection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Protection] (val x: Self) extends AnyVal {
     
     inline def setCommit(value: ShaUrl): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     

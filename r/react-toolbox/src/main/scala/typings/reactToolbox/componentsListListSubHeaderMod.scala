@@ -41,7 +41,8 @@ object componentsListListSubHeaderMod {
       __obj.asInstanceOf[ListSubHeaderProps]
     }
     
-    extension [Self <: ListSubHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSubHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object componentsListListSubHeaderMod {
       __obj.asInstanceOf[ListSubHeaderTheme]
     }
     
-    extension [Self <: ListSubHeaderTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSubHeaderTheme] (val x: Self) extends AnyVal {
       
       inline def setSubheader(value: String): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
       

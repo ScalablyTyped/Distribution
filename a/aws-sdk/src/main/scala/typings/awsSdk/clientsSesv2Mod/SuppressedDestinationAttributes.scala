@@ -23,7 +23,8 @@ object SuppressedDestinationAttributes {
     __obj.asInstanceOf[SuppressedDestinationAttributes]
   }
   
-  extension [Self <: SuppressedDestinationAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuppressedDestinationAttributes] (val x: Self) extends AnyVal {
     
     inline def setFeedbackId(value: FeedbackId): Self = StObject.set(x, "FeedbackId", value.asInstanceOf[js.Any])
     

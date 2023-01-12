@@ -17,7 +17,8 @@ object Reqauth {
     __obj.asInstanceOf[Reqauth]
   }
   
-  extension [Self <: Reqauth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reqauth] (val x: Self) extends AnyVal {
     
     inline def setReqauth(value: Boolean): Self = StObject.set(x, "reqauth", value.asInstanceOf[js.Any])
     

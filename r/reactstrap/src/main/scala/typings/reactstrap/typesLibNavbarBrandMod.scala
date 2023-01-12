@@ -35,7 +35,8 @@ object typesLibNavbarBrandMod {
       __obj.asInstanceOf[NavbarBrandProps]
     }
     
-    extension [Self <: NavbarBrandProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarBrandProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

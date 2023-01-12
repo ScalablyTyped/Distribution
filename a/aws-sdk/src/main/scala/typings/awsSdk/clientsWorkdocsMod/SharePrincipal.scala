@@ -28,7 +28,8 @@ object SharePrincipal {
     __obj.asInstanceOf[SharePrincipal]
   }
   
-  extension [Self <: SharePrincipal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharePrincipal] (val x: Self) extends AnyVal {
     
     inline def setId(value: IdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

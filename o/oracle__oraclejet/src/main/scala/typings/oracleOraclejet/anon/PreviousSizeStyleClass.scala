@@ -22,7 +22,8 @@ object PreviousSizeStyleClass {
     __obj.asInstanceOf[PreviousSizeStyleClass]
   }
   
-  extension [Self <: PreviousSizeStyleClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviousSizeStyleClass] (val x: Self) extends AnyVal {
     
     inline def setPreviousSizeStyleClass(value: String): Self = StObject.set(x, "previousSizeStyleClass", value.asInstanceOf[js.Any])
     

@@ -201,7 +201,8 @@ object srcModelOperationMergeoperationMod {
       __obj.asInstanceOf[MergeOperation]
     }
     
-    extension [Self <: MergeOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeOperation] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: () => MergeOperation): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
       

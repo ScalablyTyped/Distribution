@@ -48,7 +48,8 @@ object ListOutgoingTypedLinksRequest {
     __obj.asInstanceOf[ListOutgoingTypedLinksRequest]
   }
   
-  extension [Self <: ListOutgoingTypedLinksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOutgoingTypedLinksRequest] (val x: Self) extends AnyVal {
     
     inline def setConsistencyLevel(value: ConsistencyLevel): Self = StObject.set(x, "ConsistencyLevel", value.asInstanceOf[js.Any])
     

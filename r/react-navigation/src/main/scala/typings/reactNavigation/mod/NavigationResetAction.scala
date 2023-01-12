@@ -20,7 +20,8 @@ object NavigationResetAction {
     __obj.asInstanceOf[NavigationResetAction]
   }
   
-  extension [Self <: NavigationResetAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationResetAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: NavigationSlashRESET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

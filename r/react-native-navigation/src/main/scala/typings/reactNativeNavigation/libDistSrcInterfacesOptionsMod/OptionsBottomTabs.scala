@@ -137,7 +137,8 @@ object OptionsBottomTabs {
     __obj.asInstanceOf[OptionsBottomTabs]
   }
   
-  extension [Self <: OptionsBottomTabs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsBottomTabs] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

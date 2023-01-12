@@ -73,7 +73,8 @@ object PlayerSummary {
     __obj.asInstanceOf[PlayerSummary]
   }
   
-  extension [Self <: PlayerSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerSummary] (val x: Self) extends AnyVal {
     
     inline def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     

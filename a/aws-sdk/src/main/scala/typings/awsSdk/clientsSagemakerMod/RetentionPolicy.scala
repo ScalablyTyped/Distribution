@@ -18,7 +18,8 @@ object RetentionPolicy {
     __obj.asInstanceOf[RetentionPolicy]
   }
   
-  extension [Self <: RetentionPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetentionPolicy] (val x: Self) extends AnyVal {
     
     inline def setHomeEfsFileSystem(value: RetentionType): Self = StObject.set(x, "HomeEfsFileSystem", value.asInstanceOf[js.Any])
     

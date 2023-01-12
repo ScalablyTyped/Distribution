@@ -23,7 +23,8 @@ object EdmType {
     __obj.asInstanceOf[EdmType]
   }
   
-  extension [Self <: EdmType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdmType] (val x: Self) extends AnyVal {
     
     inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
     

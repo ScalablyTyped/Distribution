@@ -25,7 +25,8 @@ object TabControlTabCancelEventArgs {
     __obj.asInstanceOf[TabControlTabCancelEventArgs]
   }
   
-  extension [Self <: TabControlTabCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabControlTabCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReloadContentOnCallback(value: Boolean): Self = StObject.set(x, "reloadContentOnCallback", value.asInstanceOf[js.Any])
     

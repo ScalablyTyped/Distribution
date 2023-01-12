@@ -86,7 +86,8 @@ object ILegend {
     __obj.asInstanceOf[ILegend]
   }
   
-  extension [Self <: ILegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILegend] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

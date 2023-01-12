@@ -17,7 +17,8 @@ object StellarSignedTx {
     __obj.asInstanceOf[StellarSignedTx]
   }
   
-  extension [Self <: StellarSignedTx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarSignedTx] (val x: Self) extends AnyVal {
     
     inline def setPublic_key(value: String): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
     

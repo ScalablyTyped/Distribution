@@ -29,7 +29,8 @@ object Storage {
     __obj.asInstanceOf[Storage]
   }
   
-  extension [Self <: Storage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
     
     inline def setRead(value: (String, String) => js.Object): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
     

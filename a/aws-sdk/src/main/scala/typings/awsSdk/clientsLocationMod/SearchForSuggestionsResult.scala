@@ -23,7 +23,8 @@ object SearchForSuggestionsResult {
     __obj.asInstanceOf[SearchForSuggestionsResult]
   }
   
-  extension [Self <: SearchForSuggestionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchForSuggestionsResult] (val x: Self) extends AnyVal {
     
     inline def setPlaceId(value: PlaceId): Self = StObject.set(x, "PlaceId", value.asInstanceOf[js.Any])
     

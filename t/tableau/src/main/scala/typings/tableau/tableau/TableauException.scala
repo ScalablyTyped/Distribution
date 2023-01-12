@@ -19,7 +19,8 @@ object TableauException {
     __obj.asInstanceOf[TableauException]
   }
   
-  extension [Self <: TableauException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableauException] (val x: Self) extends AnyVal {
     
     inline def setTableauSoftwareErrorCode(value: ErrorCode): Self = StObject.set(x, "tableauSoftwareErrorCode", value.asInstanceOf[js.Any])
   }

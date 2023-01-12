@@ -22,7 +22,8 @@ object ApplicationSettings {
     __obj.asInstanceOf[ApplicationSettings]
   }
   
-  extension [Self <: ApplicationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationSettings] (val x: Self) extends AnyVal {
     
     inline def setAccessDeniedPageSettings(value: AccessDeniedPageSettings): Self = StObject.set(x, "accessDeniedPageSettings", value.asInstanceOf[js.Any])
     

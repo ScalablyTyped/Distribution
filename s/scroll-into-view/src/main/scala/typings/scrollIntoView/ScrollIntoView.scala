@@ -34,7 +34,8 @@ object ScrollIntoView {
       __obj.asInstanceOf[Alignment]
     }
     
-    extension [Self <: Alignment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alignment] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object ScrollIntoView {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Alignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

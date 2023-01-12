@@ -27,7 +27,8 @@ object distSrcInterfacesInstallationImplMod {
       __obj.asInstanceOf[AppConfig]
     }
     
-    extension [Self <: AppConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppConfig] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object distSrcInterfacesInstallationImplMod {
       __obj.asInstanceOf[FirebaseInstallationsImpl]
     }
     
-    extension [Self <: FirebaseInstallationsImpl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseInstallationsImpl] (val x: Self) extends AnyVal {
       
       inline def setAppConfig(value: AppConfig): Self = StObject.set(x, "appConfig", value.asInstanceOf[js.Any])
       

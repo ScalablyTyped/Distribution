@@ -43,7 +43,8 @@ object AccessPackageApprovalStage {
     __obj.asInstanceOf[AccessPackageApprovalStage]
   }
   
-  extension [Self <: AccessPackageApprovalStage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPackageApprovalStage] (val x: Self) extends AnyVal {
     
     inline def setDurationBeforeAutomaticDenial(value: NullableOption[String]): Self = StObject.set(x, "durationBeforeAutomaticDenial", value.asInstanceOf[js.Any])
     

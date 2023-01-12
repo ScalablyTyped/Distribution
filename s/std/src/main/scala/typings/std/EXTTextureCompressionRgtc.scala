@@ -30,7 +30,8 @@ object EXTTextureCompressionRgtc {
     __obj.asInstanceOf[EXTTextureCompressionRgtc]
   }
   
-  extension [Self <: EXTTextureCompressionRgtc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EXTTextureCompressionRgtc] (val x: Self) extends AnyVal {
     
     inline def setCOMPRESSED_RED_GREEN_RGTC2_EXT(value: GLenum): Self = StObject.set(x, "COMPRESSED_RED_GREEN_RGTC2_EXT", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object Field {
     __obj.asInstanceOf[Field]
   }
   
-  extension [Self <: Field](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
     
     inline def setADODBDotField_typekey(value: Field): Self = StObject.set(x, "ADODB.Field_typekey", value.asInstanceOf[js.Any])
     

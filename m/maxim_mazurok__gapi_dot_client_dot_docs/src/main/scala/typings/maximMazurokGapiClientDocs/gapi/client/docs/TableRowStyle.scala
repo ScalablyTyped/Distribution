@@ -22,7 +22,8 @@ object TableRowStyle {
     __obj.asInstanceOf[TableRowStyle]
   }
   
-  extension [Self <: TableRowStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableRowStyle] (val x: Self) extends AnyVal {
     
     inline def setMinRowHeight(value: Dimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
     

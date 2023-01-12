@@ -59,7 +59,8 @@ object distLibFaviconMod {
       __obj.asInstanceOf[FavOptions]
     }
     
-    extension [Self <: FavOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FavOptions] (val x: Self) extends AnyVal {
       
       inline def setIcoSizes(value: js.Array[Double]): Self = StObject.set(x, "icoSizes", value.asInstanceOf[js.Any])
       

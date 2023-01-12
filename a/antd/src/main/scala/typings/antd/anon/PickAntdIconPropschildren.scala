@@ -835,7 +835,8 @@ object PickAntdIconPropschildren {
     __obj.asInstanceOf[PickAntdIconPropschildren]
   }
   
-  extension [Self <: PickAntdIconPropschildren](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickAntdIconPropschildren] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

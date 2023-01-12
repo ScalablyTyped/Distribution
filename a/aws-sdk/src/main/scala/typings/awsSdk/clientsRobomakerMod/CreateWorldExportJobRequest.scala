@@ -35,7 +35,8 @@ object CreateWorldExportJobRequest {
     __obj.asInstanceOf[CreateWorldExportJobRequest]
   }
   
-  extension [Self <: CreateWorldExportJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorldExportJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

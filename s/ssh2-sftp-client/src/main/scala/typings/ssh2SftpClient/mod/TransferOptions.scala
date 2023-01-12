@@ -19,7 +19,8 @@ object TransferOptions {
     __obj.asInstanceOf[TransferOptions]
   }
   
-  extension [Self <: TransferOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferOptions] (val x: Self) extends AnyVal {
     
     inline def setPipeOptions(value: PipeOptions): Self = StObject.set(x, "pipeOptions", value.asInstanceOf[js.Any])
     

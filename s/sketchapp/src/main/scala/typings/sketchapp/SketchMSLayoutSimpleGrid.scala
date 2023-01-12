@@ -24,7 +24,8 @@ object SketchMSLayoutSimpleGrid {
     __obj.asInstanceOf[SketchMSLayoutSimpleGrid]
   }
   
-  extension [Self <: SketchMSLayoutSimpleGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSLayoutSimpleGrid] (val x: Self) extends AnyVal {
     
     inline def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     

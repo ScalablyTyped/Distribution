@@ -25,7 +25,8 @@ object exponentnumberNumericValu {
     __obj.asInstanceOf[exponentnumberNumericValu]
   }
   
-  extension [Self <: exponentnumberNumericValu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: exponentnumberNumericValu] (val x: Self) extends AnyVal {
     
     inline def setExponent(value: Double | NumericValueRef): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
     

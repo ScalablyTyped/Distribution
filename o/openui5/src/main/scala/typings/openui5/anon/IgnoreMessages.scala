@@ -31,7 +31,8 @@ object IgnoreMessages {
     __obj.asInstanceOf[IgnoreMessages]
   }
   
-  extension [Self <: IgnoreMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreMessages] (val x: Self) extends AnyVal {
     
     inline def setIgnoreMessages(value: Boolean): Self = StObject.set(x, "ignoreMessages", value.asInstanceOf[js.Any])
     

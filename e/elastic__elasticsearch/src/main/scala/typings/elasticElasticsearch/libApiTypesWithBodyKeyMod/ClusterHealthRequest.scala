@@ -39,7 +39,8 @@ object ClusterHealthRequest {
     __obj.asInstanceOf[ClusterHealthRequest]
   }
   
-  extension [Self <: ClusterHealthRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterHealthRequest] (val x: Self) extends AnyVal {
     
     inline def setExpand_wildcards(value: ExpandWildcards): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     

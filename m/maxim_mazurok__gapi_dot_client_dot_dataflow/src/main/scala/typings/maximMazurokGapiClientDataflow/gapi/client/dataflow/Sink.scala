@@ -23,7 +23,8 @@ object Sink {
     __obj.asInstanceOf[Sink]
   }
   
-  extension [Self <: Sink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sink] (val x: Self) extends AnyVal {
     
     inline def setCodec(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

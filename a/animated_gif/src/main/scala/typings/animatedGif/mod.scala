@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[options]
     }
     
-    extension [Self <: options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: options] (val x: Self) extends AnyVal {
       
       inline def setDithering(value: DitheringMethod): Self = StObject.set(x, "dithering", value.asInstanceOf[js.Any])
       

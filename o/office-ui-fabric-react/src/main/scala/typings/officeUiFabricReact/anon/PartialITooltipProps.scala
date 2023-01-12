@@ -489,7 +489,8 @@ object PartialITooltipProps {
     __obj.asInstanceOf[PartialITooltipProps]
   }
   
-  extension [Self <: PartialITooltipProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialITooltipProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

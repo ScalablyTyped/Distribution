@@ -15,7 +15,8 @@ object NavigationBreadcrumbsSeparatorStyleOptions {
     __obj.asInstanceOf[NavigationBreadcrumbsSeparatorStyleOptions]
   }
   
-  extension [Self <: NavigationBreadcrumbsSeparatorStyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBreadcrumbsSeparatorStyleOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

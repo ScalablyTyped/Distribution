@@ -28,7 +28,8 @@ object FetchStrategy {
     __obj.asInstanceOf[FetchStrategy]
   }
   
-  extension [Self <: FetchStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchStrategy] (val x: Self) extends AnyVal {
     
     inline def setFromLocalCache(value: FetchStrategySymbol): Self = StObject.set(x, "FromLocalCache", value.asInstanceOf[js.Any])
     

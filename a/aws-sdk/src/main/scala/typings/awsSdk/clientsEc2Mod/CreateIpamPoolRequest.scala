@@ -88,7 +88,8 @@ object CreateIpamPoolRequest {
     __obj.asInstanceOf[CreateIpamPoolRequest]
   }
   
-  extension [Self <: CreateIpamPoolRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIpamPoolRequest] (val x: Self) extends AnyVal {
     
     inline def setAddressFamily(value: AddressFamily): Self = StObject.set(x, "AddressFamily", value.asInstanceOf[js.Any])
     

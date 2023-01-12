@@ -30,7 +30,8 @@ object ExpressionExpressionInfo {
     __obj.asInstanceOf[ExpressionExpressionInfo]
   }
   
-  extension [Self <: ExpressionExpressionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionExpressionInfo] (val x: Self) extends AnyVal {
     
     inline def setGetMembers(value: () => js.Array[String]): Self = StObject.set(x, "getMembers", js.Any.fromFunction0(value))
     

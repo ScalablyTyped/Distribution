@@ -23,7 +23,8 @@ object GetThingShadowRequest {
     __obj.asInstanceOf[GetThingShadowRequest]
   }
   
-  extension [Self <: GetThingShadowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetThingShadowRequest] (val x: Self) extends AnyVal {
     
     inline def setShadowName(value: ShadowName): Self = StObject.set(x, "shadowName", value.asInstanceOf[js.Any])
     

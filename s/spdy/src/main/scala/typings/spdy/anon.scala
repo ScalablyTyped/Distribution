@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[AutoSpdy31]
     }
     
-    extension [Self <: AutoSpdy31](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoSpdy31] (val x: Self) extends AnyVal {
       
       inline def setAutoSpdy31(value: Boolean): Self = StObject.set(x, "autoSpdy31", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Connection]
     }
     
-    extension [Self <: Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: AutoSpdy31): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Plain]
     }
     
-    extension [Self <: Plain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plain] (val x: Self) extends AnyVal {
       
       inline def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
       

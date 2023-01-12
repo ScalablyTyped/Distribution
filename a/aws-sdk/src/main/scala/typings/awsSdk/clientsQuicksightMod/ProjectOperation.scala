@@ -18,7 +18,8 @@ object ProjectOperation {
     __obj.asInstanceOf[ProjectOperation]
   }
   
-  extension [Self <: ProjectOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectOperation] (val x: Self) extends AnyVal {
     
     inline def setProjectedColumns(value: ProjectedColumnList): Self = StObject.set(x, "ProjectedColumns", value.asInstanceOf[js.Any])
     

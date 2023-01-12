@@ -23,7 +23,8 @@ object Rendered {
     __obj.asInstanceOf[Rendered]
   }
   
-  extension [Self <: Rendered](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rendered] (val x: Self) extends AnyVal {
     
     inline def setRendered(value: Double): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
     

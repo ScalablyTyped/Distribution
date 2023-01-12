@@ -25,7 +25,8 @@ object colormap {
     __obj.asInstanceOf[colormap]
   }
   
-  extension [Self <: colormap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colormap] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderer(value: colormapCreateRendererParams => js.Promise[RasterColormapResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }

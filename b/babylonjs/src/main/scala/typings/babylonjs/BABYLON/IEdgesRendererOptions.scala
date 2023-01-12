@@ -54,7 +54,8 @@ object IEdgesRendererOptions {
     __obj.asInstanceOf[IEdgesRendererOptions]
   }
   
-  extension [Self <: IEdgesRendererOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEdgesRendererOptions] (val x: Self) extends AnyVal {
     
     inline def setApplyTessellation(value: Boolean): Self = StObject.set(x, "applyTessellation", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object GetCalendarStateResponse {
     __obj.asInstanceOf[GetCalendarStateResponse]
   }
   
-  extension [Self <: GetCalendarStateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCalendarStateResponse] (val x: Self) extends AnyVal {
     
     inline def setAtTime(value: ISO8601String): Self = StObject.set(x, "AtTime", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object NodeCollapsingEventUIParam {
     __obj.asInstanceOf[NodeCollapsingEventUIParam]
   }
   
-  extension [Self <: NodeCollapsingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeCollapsingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

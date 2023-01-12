@@ -25,7 +25,8 @@ object MapsEventOptions {
     __obj.asInstanceOf[MapsEventOptions]
   }
   
-  extension [Self <: MapsEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapsEventOptions] (val x: Self) extends AnyVal {
     
     inline def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
     

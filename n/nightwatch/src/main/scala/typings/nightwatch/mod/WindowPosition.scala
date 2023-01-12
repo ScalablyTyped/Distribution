@@ -17,7 +17,8 @@ object WindowPosition {
     __obj.asInstanceOf[WindowPosition]
   }
   
-  extension [Self <: WindowPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowPosition] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

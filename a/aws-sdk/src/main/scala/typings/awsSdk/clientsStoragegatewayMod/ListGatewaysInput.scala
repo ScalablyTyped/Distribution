@@ -23,7 +23,8 @@ object ListGatewaysInput {
     __obj.asInstanceOf[ListGatewaysInput]
   }
   
-  extension [Self <: ListGatewaysInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGatewaysInput] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PositiveIntObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

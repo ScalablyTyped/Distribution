@@ -32,7 +32,8 @@ object IVaultElectronicSignatureOperations {
     __obj.asInstanceOf[IVaultElectronicSignatureOperations]
   }
   
-  extension [Self <: IVaultElectronicSignatureOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultElectronicSignatureOperations] (val x: Self) extends AnyVal {
     
     inline def setAddEmptySignature(value: (IObjVer, String) => IObjectVersionAndProperties): Self = StObject.set(x, "AddEmptySignature", js.Any.fromFunction2(value))
     

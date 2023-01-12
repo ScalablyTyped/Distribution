@@ -18,7 +18,8 @@ object OpenGraphValue {
     __obj.asInstanceOf[OpenGraphValue]
   }
   
-  extension [Self <: OpenGraphValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenGraphValue] (val x: Self) extends AnyVal {
     
     inline def setType(value: OpenGraphValueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

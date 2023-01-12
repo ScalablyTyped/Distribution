@@ -21,7 +21,8 @@ object ExportingButtonsOptions {
     __obj.asInstanceOf[ExportingButtonsOptions]
   }
   
-  extension [Self <: ExportingButtonsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportingButtonsOptions] (val x: Self) extends AnyVal {
     
     inline def setContextButton(value: ExportingButtonsOptionsObject): Self = StObject.set(x, "contextButton", value.asInstanceOf[js.Any])
     

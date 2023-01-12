@@ -18,7 +18,8 @@ object OrganizationsDecisionDetail {
     __obj.asInstanceOf[OrganizationsDecisionDetail]
   }
   
-  extension [Self <: OrganizationsDecisionDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationsDecisionDetail] (val x: Self) extends AnyVal {
     
     inline def setAllowedByOrganizations(value: booleanType): Self = StObject.set(x, "AllowedByOrganizations", value.asInstanceOf[js.Any])
     

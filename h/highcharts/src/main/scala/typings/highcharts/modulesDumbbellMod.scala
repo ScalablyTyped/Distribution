@@ -1108,7 +1108,8 @@ object modulesDumbbellMod {
         __obj.asInstanceOf[Point]
       }
       
-      extension [Self <: Point](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
         
         inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
         
@@ -1142,7 +1143,8 @@ object modulesDumbbellMod {
         __obj.asInstanceOf[Series]
       }
       
-      extension [Self <: Series](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Series] (val x: Self) extends AnyVal {
         
         inline def setMarkerAttribs(value: () => SVGAttributes): Self = StObject.set(x, "markerAttribs", js.Any.fromFunction0(value))
       }

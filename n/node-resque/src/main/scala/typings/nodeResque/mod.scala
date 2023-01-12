@@ -238,7 +238,8 @@ object mod {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: Double): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
@@ -297,7 +298,8 @@ object mod {
       __obj.asInstanceOf[ErrorPayload]
     }
     
-    extension [Self <: ErrorPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorPayload] (val x: Self) extends AnyVal {
       
       inline def setBacktrace(value: js.Array[String]): Self = StObject.set(x, "backtrace", value.asInstanceOf[js.Any])
       
@@ -334,7 +336,8 @@ object mod {
       __obj.asInstanceOf[Job[TResult]]
     }
     
-    extension [Self <: Job[?], TResult](x: Self & Job[TResult]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Job[?], TResult] (val x: Self & Job[TResult]) extends AnyVal {
       
       inline def setPerform(value: /* repeated */ Any => js.Promise[TResult]): Self = StObject.set(x, "perform", js.Any.fromFunction1(value))
       
@@ -363,7 +366,8 @@ object mod {
       __obj.asInstanceOf[QueueOptions]
     }
     
-    extension [Self <: QueueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: ConnectionOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -420,7 +424,8 @@ object mod {
       __obj.asInstanceOf[SchedulerOptions]
     }
     
-    extension [Self <: SchedulerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchedulerOptions] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: ConnectionOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -502,7 +507,8 @@ object mod {
       __obj.asInstanceOf[WorkerOptions]
     }
     
-    extension [Self <: WorkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerOptions] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: ConnectionOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -543,7 +549,8 @@ object mod {
       __obj.asInstanceOf[WorkerStatus]
     }
     
-    extension [Self <: WorkerStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerStatus] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Args): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

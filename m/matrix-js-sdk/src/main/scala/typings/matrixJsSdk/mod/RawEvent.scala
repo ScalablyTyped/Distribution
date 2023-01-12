@@ -38,7 +38,8 @@ object RawEvent {
     __obj.asInstanceOf[RawEvent[IEventContentType, EventTypeName]]
   }
   
-  extension [Self <: RawEvent[?, ?], IEventContentType, EventTypeName](x: Self & (RawEvent[IEventContentType, EventTypeName])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawEvent[?, ?], IEventContentType, EventTypeName] (val x: Self & (RawEvent[IEventContentType, EventTypeName])) extends AnyVal {
     
     inline def setContent(value: IEventContentType): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IThemedTokenExplanation {
     __obj.asInstanceOf[IThemedTokenExplanation]
   }
   
-  extension [Self <: IThemedTokenExplanation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IThemedTokenExplanation] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

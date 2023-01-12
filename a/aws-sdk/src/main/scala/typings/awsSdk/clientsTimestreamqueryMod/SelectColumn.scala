@@ -35,7 +35,8 @@ object SelectColumn {
     __obj.asInstanceOf[SelectColumn]
   }
   
-  extension [Self <: SelectColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectColumn] (val x: Self) extends AnyVal {
     
     inline def setAliased(value: NullableBoolean): Self = StObject.set(x, "Aliased", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object IGenericDimensionInfo {
     __obj.asInstanceOf[IGenericDimensionInfo]
   }
   
-  extension [Self <: IGenericDimensionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericDimensionInfo] (val x: Self) extends AnyVal {
     
     inline def setQAndMode(value: Boolean): Self = StObject.set(x, "qAndMode", value.asInstanceOf[js.Any])
     

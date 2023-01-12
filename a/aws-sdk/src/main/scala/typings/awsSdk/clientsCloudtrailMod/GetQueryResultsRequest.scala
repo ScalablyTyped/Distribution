@@ -33,7 +33,8 @@ object GetQueryResultsRequest {
     __obj.asInstanceOf[GetQueryResultsRequest]
   }
   
-  extension [Self <: GetQueryResultsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetQueryResultsRequest] (val x: Self) extends AnyVal {
     
     inline def setEventDataStore(value: EventDataStoreArn): Self = StObject.set(x, "EventDataStore", value.asInstanceOf[js.Any])
     

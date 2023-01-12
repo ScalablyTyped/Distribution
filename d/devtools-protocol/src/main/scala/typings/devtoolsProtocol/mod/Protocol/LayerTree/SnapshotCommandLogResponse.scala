@@ -18,7 +18,8 @@ object SnapshotCommandLogResponse {
     __obj.asInstanceOf[SnapshotCommandLogResponse]
   }
   
-  extension [Self <: SnapshotCommandLogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotCommandLogResponse] (val x: Self) extends AnyVal {
     
     inline def setCommandLog(value: js.Array[Any]): Self = StObject.set(x, "commandLog", value.asInstanceOf[js.Any])
     

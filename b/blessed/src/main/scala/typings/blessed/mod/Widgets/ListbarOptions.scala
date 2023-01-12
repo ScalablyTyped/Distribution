@@ -32,7 +32,8 @@ object ListbarOptions {
     __obj.asInstanceOf[ListbarOptions]
   }
   
-  extension [Self <: ListbarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListbarOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoCommandKeys(value: Boolean): Self = StObject.set(x, "autoCommandKeys", value.asInstanceOf[js.Any])
     

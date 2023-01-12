@@ -166,7 +166,8 @@ object TextSymbolPropertiestypet {
     __obj.asInstanceOf[TextSymbolPropertiestypet]
   }
   
-  extension [Self <: TextSymbolPropertiestypet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSymbolPropertiestypet] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

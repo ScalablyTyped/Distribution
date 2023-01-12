@@ -18,7 +18,8 @@ object ChildComponentProps {
     __obj.asInstanceOf[ChildComponentProps]
   }
   
-  extension [Self <: ChildComponentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildComponentProps] (val x: Self) extends AnyVal {
     
     inline def set$hover(value: Boolean): Self = StObject.set(x, "$hover", value.asInstanceOf[js.Any])
     

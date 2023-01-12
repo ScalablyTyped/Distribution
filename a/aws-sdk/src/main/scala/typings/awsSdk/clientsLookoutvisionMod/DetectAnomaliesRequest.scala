@@ -33,7 +33,8 @@ object DetectAnomaliesRequest {
     __obj.asInstanceOf[DetectAnomaliesRequest]
   }
   
-  extension [Self <: DetectAnomaliesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectAnomaliesRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Stream): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

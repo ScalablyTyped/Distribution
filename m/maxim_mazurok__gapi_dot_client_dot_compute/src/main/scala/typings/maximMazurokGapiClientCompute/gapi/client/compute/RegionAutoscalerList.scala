@@ -35,7 +35,8 @@ object RegionAutoscalerList {
     __obj.asInstanceOf[RegionAutoscalerList]
   }
   
-  extension [Self <: RegionAutoscalerList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionAutoscalerList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

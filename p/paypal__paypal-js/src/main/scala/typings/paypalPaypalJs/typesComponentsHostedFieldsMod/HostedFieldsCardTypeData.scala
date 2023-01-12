@@ -17,7 +17,8 @@ object HostedFieldsCardTypeData {
     __obj.asInstanceOf[HostedFieldsCardTypeData]
   }
   
-  extension [Self <: HostedFieldsCardTypeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedFieldsCardTypeData] (val x: Self) extends AnyVal {
     
     inline def setEligible(value: Boolean): Self = StObject.set(x, "eligible", value.asInstanceOf[js.Any])
     

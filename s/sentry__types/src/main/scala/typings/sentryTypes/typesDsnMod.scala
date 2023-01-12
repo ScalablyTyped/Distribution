@@ -36,7 +36,8 @@ object typesDsnMod {
       __obj.asInstanceOf[DsnComponents]
     }
     
-    extension [Self <: DsnComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DsnComponents] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

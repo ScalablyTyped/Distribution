@@ -19,7 +19,8 @@ object PlaceHolderOptions {
     __obj.asInstanceOf[PlaceHolderOptions]
   }
   
-  extension [Self <: PlaceHolderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceHolderOptions] (val x: Self) extends AnyVal {
     
     inline def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
     

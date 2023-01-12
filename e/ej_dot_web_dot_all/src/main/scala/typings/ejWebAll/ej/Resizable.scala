@@ -37,7 +37,8 @@ object Resizable {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object Resizable {
       __obj.asInstanceOf[HelperEventArgs]
     }
     
-    extension [Self <: HelperEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelperEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object Resizable {
       __obj.asInstanceOf[typings.ejWebAll.ej.Resizable.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Resizable.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Resizable.Model] (val x: Self) extends AnyVal {
       
       inline def setCursorAt(value: Any): Self = StObject.set(x, "cursorAt", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object Valuedtype {
     __obj.asInstanceOf[Valuedtype]
   }
   
-  extension [Self <: Valuedtype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Valuedtype] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Unit): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

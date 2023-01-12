@@ -26,7 +26,8 @@ object ITooltipProvider {
     __obj.asInstanceOf[ITooltipProvider]
   }
   
-  extension [Self <: ITooltipProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITooltipProvider] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: ITooltipOptions => Unit): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
     

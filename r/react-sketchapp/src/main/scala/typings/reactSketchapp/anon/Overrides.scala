@@ -33,7 +33,8 @@ object Overrides {
     __obj.asInstanceOf[Overrides]
   }
   
-  extension [Self <: Overrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Overrides] (val x: Self) extends AnyVal {
     
     inline def setName(value: Requireable[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetLaunchProfileDetailsRequest {
     __obj.asInstanceOf[GetLaunchProfileDetailsRequest]
   }
   
-  extension [Self <: GetLaunchProfileDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLaunchProfileDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setLaunchProfileId(value: String): Self = StObject.set(x, "launchProfileId", value.asInstanceOf[js.Any])
     

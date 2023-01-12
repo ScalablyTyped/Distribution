@@ -33,7 +33,8 @@ object PieCustomLayerProps {
     __obj.asInstanceOf[PieCustomLayerProps[RawDatum]]
   }
   
-  extension [Self <: PieCustomLayerProps[?], RawDatum](x: Self & PieCustomLayerProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieCustomLayerProps[?], RawDatum] (val x: Self & PieCustomLayerProps[RawDatum]) extends AnyVal {
     
     inline def setArcGenerator(value: ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
     

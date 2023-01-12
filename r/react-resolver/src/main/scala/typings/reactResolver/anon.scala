@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Data[P]]
     }
     
-    extension [Self <: Data[?], P](x: Self & Data[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data[?], P] (val x: Self & Data[P]) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

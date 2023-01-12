@@ -20,7 +20,8 @@ object CaptionProps {
     __obj.asInstanceOf[CaptionProps]
   }
   
-  extension [Self <: CaptionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionProps] (val x: Self) extends AnyVal {
     
     inline def setDisplayMonth(value: js.Date): Self = StObject.set(x, "displayMonth", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Cast {
       __obj.asInstanceOf[EnableRequest]
     }
     
-    extension [Self <: EnableRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnableRequest] (val x: Self) extends AnyVal {
       
       inline def setPresentationUrl(value: String): Self = StObject.set(x, "presentationUrl", value.asInstanceOf[js.Any])
       
@@ -36,7 +37,8 @@ object Cast {
       __obj.asInstanceOf[IssueUpdatedEvent]
     }
     
-    extension [Self <: IssueUpdatedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueUpdatedEvent] (val x: Self) extends AnyVal {
       
       inline def setIssueMessage(value: String): Self = StObject.set(x, "issueMessage", value.asInstanceOf[js.Any])
     }
@@ -53,7 +55,8 @@ object Cast {
       __obj.asInstanceOf[SetSinkToUseRequest]
     }
     
-    extension [Self <: SetSinkToUseRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetSinkToUseRequest] (val x: Self) extends AnyVal {
       
       inline def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
     }
@@ -78,7 +81,8 @@ object Cast {
       __obj.asInstanceOf[Sink]
     }
     
-    extension [Self <: Sink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sink] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -101,7 +105,8 @@ object Cast {
       __obj.asInstanceOf[SinksUpdatedEvent]
     }
     
-    extension [Self <: SinksUpdatedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinksUpdatedEvent] (val x: Self) extends AnyVal {
       
       inline def setSinks(value: js.Array[Sink]): Self = StObject.set(x, "sinks", value.asInstanceOf[js.Any])
       
@@ -120,7 +125,8 @@ object Cast {
       __obj.asInstanceOf[StartDesktopMirroringRequest]
     }
     
-    extension [Self <: StartDesktopMirroringRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartDesktopMirroringRequest] (val x: Self) extends AnyVal {
       
       inline def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
     }
@@ -137,7 +143,8 @@ object Cast {
       __obj.asInstanceOf[StartTabMirroringRequest]
     }
     
-    extension [Self <: StartTabMirroringRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartTabMirroringRequest] (val x: Self) extends AnyVal {
       
       inline def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
     }
@@ -154,7 +161,8 @@ object Cast {
       __obj.asInstanceOf[StopCastingRequest]
     }
     
-    extension [Self <: StopCastingRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StopCastingRequest] (val x: Self) extends AnyVal {
       
       inline def setSinkName(value: String): Self = StObject.set(x, "sinkName", value.asInstanceOf[js.Any])
     }

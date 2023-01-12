@@ -273,7 +273,8 @@ object PlotSupertrendDataLabelsOptions {
     __obj.asInstanceOf[PlotSupertrendDataLabelsOptions]
   }
   
-  extension [Self <: PlotSupertrendDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSupertrendDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

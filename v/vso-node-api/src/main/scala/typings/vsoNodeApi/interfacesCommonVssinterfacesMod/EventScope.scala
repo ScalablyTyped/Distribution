@@ -29,7 +29,8 @@ object EventScope {
     __obj.asInstanceOf[EventScope]
   }
   
-  extension [Self <: EventScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventScope] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

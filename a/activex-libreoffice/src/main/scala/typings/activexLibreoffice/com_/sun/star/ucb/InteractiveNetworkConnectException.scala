@@ -22,7 +22,8 @@ object InteractiveNetworkConnectException {
     __obj.asInstanceOf[InteractiveNetworkConnectException]
   }
   
-  extension [Self <: InteractiveNetworkConnectException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveNetworkConnectException] (val x: Self) extends AnyVal {
     
     inline def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object ListNotificationsInput {
     __obj.asInstanceOf[ListNotificationsInput]
   }
   
-  extension [Self <: ListNotificationsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNotificationsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListNotificationsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

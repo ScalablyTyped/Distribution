@@ -29,7 +29,8 @@ object distTs3Dot9ModelsViewportMod {
       __obj.asInstanceOf[Viewport]
     }
     
-    extension [Self <: Viewport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distTs3Dot9ModelsViewportMod {
       __obj.asInstanceOf[ViewportStyles]
     }
     
-    extension [Self <: ViewportStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewportStyles] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

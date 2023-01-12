@@ -231,7 +231,8 @@ object libXmlXmlstreamreaderMod {
       __obj.asInstanceOf[XmlStreamAttribute]
     }
     
-    extension [Self <: XmlStreamAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlStreamAttribute] (val x: Self) extends AnyVal {
       
       inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       
@@ -260,7 +261,8 @@ object libXmlXmlstreamreaderMod {
       __obj.asInstanceOf[XmlStreamNamespaceDeclaration]
     }
     
-    extension [Self <: XmlStreamNamespaceDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlStreamNamespaceDeclaration] (val x: Self) extends AnyVal {
       
       inline def setNamespaceUri(value: String): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
       

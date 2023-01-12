@@ -53,7 +53,8 @@ object Extensions {
         __obj.asInstanceOf[ComplexPolygon]
       }
       
-      extension [Self <: ComplexPolygon](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ComplexPolygon] (val x: Self) extends AnyVal {
         
         inline def setAddContour(value: js.Array[Double] => Unit): Self = StObject.set(x, "addContour", js.Any.fromFunction1(value))
         
@@ -116,7 +117,8 @@ object Extensions {
         __obj.asInstanceOf[EdgeSet]
       }
       
-      extension [Self <: EdgeSet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EdgeSet] (val x: Self) extends AnyVal {
         
         inline def setSanitizeEdges(value: () => Unit): Self = StObject.set(x, "sanitizeEdges", js.Any.fromFunction0(value))
         

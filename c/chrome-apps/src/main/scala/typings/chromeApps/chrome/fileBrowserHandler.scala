@@ -54,7 +54,8 @@ object fileBrowserHandler {
       __obj.asInstanceOf[SelectFileParameters]
     }
     
-    extension [Self <: SelectFileParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectFileParameters] (val x: Self) extends AnyVal {
       
       inline def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object fileBrowserHandler {
       __obj.asInstanceOf[SelectionResult]
     }
     
-    extension [Self <: SelectionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionResult] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: FileEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       

@@ -59,7 +59,8 @@ object IssuerAltName {
     __obj.asInstanceOf[IssuerAltName]
   }
   
-  extension [Self <: IssuerAltName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuerAltName] (val x: Self) extends AnyVal {
     
     inline def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
     

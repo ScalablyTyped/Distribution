@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[Emitter]
     }
     
-    extension [Self <: Emitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Emitter] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       

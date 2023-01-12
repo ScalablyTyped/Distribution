@@ -28,7 +28,8 @@ object ZoomStruct {
     __obj.asInstanceOf[ZoomStruct]
   }
   
-  extension [Self <: ZoomStruct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomStruct] (val x: Self) extends AnyVal {
     
     inline def setMH(value: Double): Self = StObject.set(x, "mH", value.asInstanceOf[js.Any])
     

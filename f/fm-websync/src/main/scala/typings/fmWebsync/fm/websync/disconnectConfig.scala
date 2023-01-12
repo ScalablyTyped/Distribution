@@ -30,7 +30,8 @@ object disconnectConfig {
     __obj.asInstanceOf[disconnectConfig]
   }
   
-  extension [Self <: disconnectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: disconnectConfig] (val x: Self) extends AnyVal {
     
     inline def setOnComplete(value: /* args */ baseResponseArgs => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     

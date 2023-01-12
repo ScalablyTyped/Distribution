@@ -19,7 +19,8 @@ object CommonSubUserstate {
     __obj.asInstanceOf[CommonSubUserstate]
   }
   
-  extension [Self <: CommonSubUserstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonSubUserstate] (val x: Self) extends AnyVal {
     
     inline def `setMsg-param-sub-plan`(value: SubMethod): Self = StObject.set(x, "msg-param-sub-plan", value.asInstanceOf[js.Any])
     

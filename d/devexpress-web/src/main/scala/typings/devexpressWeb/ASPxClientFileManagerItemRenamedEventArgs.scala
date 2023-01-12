@@ -23,7 +23,8 @@ object ASPxClientFileManagerItemRenamedEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerItemRenamedEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerItemRenamedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerItemRenamedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setOldName(value: String): Self = StObject.set(x, "oldName", value.asInstanceOf[js.Any])
   }

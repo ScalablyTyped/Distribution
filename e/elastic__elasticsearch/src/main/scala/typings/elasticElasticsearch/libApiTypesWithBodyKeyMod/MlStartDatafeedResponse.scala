@@ -17,7 +17,8 @@ object MlStartDatafeedResponse {
     __obj.asInstanceOf[MlStartDatafeedResponse]
   }
   
-  extension [Self <: MlStartDatafeedResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlStartDatafeedResponse] (val x: Self) extends AnyVal {
     
     inline def setNode(value: NodeIds): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

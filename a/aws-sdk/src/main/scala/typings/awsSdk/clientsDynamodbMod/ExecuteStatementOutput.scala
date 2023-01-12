@@ -30,7 +30,8 @@ object ExecuteStatementOutput {
     __obj.asInstanceOf[ExecuteStatementOutput]
   }
   
-  extension [Self <: ExecuteStatementOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteStatementOutput] (val x: Self) extends AnyVal {
     
     inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
     

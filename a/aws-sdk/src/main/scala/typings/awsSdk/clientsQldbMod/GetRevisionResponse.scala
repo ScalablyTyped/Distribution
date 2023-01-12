@@ -23,7 +23,8 @@ object GetRevisionResponse {
     __obj.asInstanceOf[GetRevisionResponse]
   }
   
-  extension [Self <: GetRevisionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRevisionResponse] (val x: Self) extends AnyVal {
     
     inline def setProof(value: ValueHolder): Self = StObject.set(x, "Proof", value.asInstanceOf[js.Any])
     

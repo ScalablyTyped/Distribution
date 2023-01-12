@@ -20,7 +20,8 @@ object GenerateSymbolResponse {
     __obj.asInstanceOf[GenerateSymbolResponse]
   }
   
-  extension [Self <: GenerateSymbolResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateSymbolResponse] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: CIMSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }

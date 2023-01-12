@@ -18,7 +18,8 @@ object WhitelistsListRequest {
     __obj.asInstanceOf[WhitelistsListRequest]
   }
   
-  extension [Self <: WhitelistsListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhitelistsListRequest] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

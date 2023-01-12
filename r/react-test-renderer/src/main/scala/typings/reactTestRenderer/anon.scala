@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Deep]
     }
     
-    extension [Self <: Deep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
       
       inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     }

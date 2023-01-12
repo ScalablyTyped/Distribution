@@ -24,7 +24,8 @@ object triggerCodepipelineMod {
       __obj.asInstanceOf[Artifact]
     }
     
-    extension [Self <: Artifact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: ArtifactLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object triggerCodepipelineMod {
       __obj.asInstanceOf[CodePipelineEvent]
     }
     
-    extension [Self <: CodePipelineEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodePipelineEvent] (val x: Self) extends AnyVal {
       
       inline def setCodePipelineDotjob(value: Data): Self = StObject.set(x, "CodePipeline.job", value.asInstanceOf[js.Any])
     }
@@ -74,7 +76,8 @@ object triggerCodepipelineMod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
@@ -100,7 +103,8 @@ object triggerCodepipelineMod {
       __obj.asInstanceOf[EncryptionKey]
     }
     
-    extension [Self <: EncryptionKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptionKey] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -121,7 +125,8 @@ object triggerCodepipelineMod {
       __obj.asInstanceOf[S3ArtifactLocation]
     }
     
-    extension [Self <: S3ArtifactLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3ArtifactLocation] (val x: Self) extends AnyVal {
       
       inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
       
@@ -143,7 +148,8 @@ object triggerCodepipelineMod {
       __obj.asInstanceOf[S3ArtifactStore]
     }
     
-    extension [Self <: S3ArtifactStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3ArtifactStore] (val x: Self) extends AnyVal {
       
       inline def setS3Location(value: S3ArtifactLocation): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
       

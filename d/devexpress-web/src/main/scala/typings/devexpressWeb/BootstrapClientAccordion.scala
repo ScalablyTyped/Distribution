@@ -63,7 +63,8 @@ object BootstrapClientAccordion {
     __obj.asInstanceOf[BootstrapClientAccordion]
   }
   
-  extension [Self <: BootstrapClientAccordion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientAccordion] (val x: Self) extends AnyVal {
     
     inline def setSetActiveGroup(value: BootstrapClientAccordionGroup => Unit): Self = StObject.set(x, "SetActiveGroup", js.Any.fromFunction1(value))
     

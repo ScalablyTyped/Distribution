@@ -18,7 +18,8 @@ object WindowsDefenderScanActionResult {
     __obj.asInstanceOf[WindowsDefenderScanActionResult]
   }
   
-  extension [Self <: WindowsDefenderScanActionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsDefenderScanActionResult] (val x: Self) extends AnyVal {
     
     inline def setScanType(value: NullableOption[String]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     

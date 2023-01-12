@@ -63,7 +63,8 @@ object WindowsUpdateForBusinessConfiguration {
     __obj.asInstanceOf[WindowsUpdateForBusinessConfiguration]
   }
   
-  extension [Self <: WindowsUpdateForBusinessConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsUpdateForBusinessConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutomaticUpdateMode(value: AutomaticUpdateMode): Self = StObject.set(x, "automaticUpdateMode", value.asInstanceOf[js.Any])
     

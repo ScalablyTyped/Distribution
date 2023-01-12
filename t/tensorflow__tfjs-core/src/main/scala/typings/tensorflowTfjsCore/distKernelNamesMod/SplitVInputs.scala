@@ -16,7 +16,8 @@ object SplitVInputs {
     __obj.asInstanceOf[SplitVInputs]
   }
   
-  extension [Self <: SplitVInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitVInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

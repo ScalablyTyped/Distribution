@@ -23,7 +23,8 @@ object StatefulEngineOptions {
     __obj.asInstanceOf[StatefulEngineOptions]
   }
   
-  extension [Self <: StatefulEngineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulEngineOptions] (val x: Self) extends AnyVal {
     
     inline def setRuleOrder(value: RuleOrder): Self = StObject.set(x, "RuleOrder", value.asInstanceOf[js.Any])
     

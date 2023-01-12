@@ -17,7 +17,8 @@ object StyleOptions {
     __obj.asInstanceOf[StyleOptions]
   }
   
-  extension [Self <: StyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleOptions] (val x: Self) extends AnyVal {
     
     inline def setLocalIdeographFontFamily(value: String): Self = StObject.set(x, "localIdeographFontFamily", value.asInstanceOf[js.Any])
     

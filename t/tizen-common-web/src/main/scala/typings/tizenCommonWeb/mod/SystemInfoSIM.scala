@@ -109,7 +109,8 @@ object SystemInfoSIM {
     __obj.asInstanceOf[SystemInfoSIM]
   }
   
-  extension [Self <: SystemInfoSIM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoSIM] (val x: Self) extends AnyVal {
     
     inline def setIccid(value: String): Self = StObject.set(x, "iccid", value.asInstanceOf[js.Any])
     

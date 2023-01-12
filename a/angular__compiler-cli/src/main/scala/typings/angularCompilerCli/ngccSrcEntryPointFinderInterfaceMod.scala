@@ -21,7 +21,8 @@ object ngccSrcEntryPointFinderInterfaceMod {
       __obj.asInstanceOf[EntryPointFinder]
     }
     
-    extension [Self <: EntryPointFinder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryPointFinder] (val x: Self) extends AnyVal {
       
       inline def setFindEntryPoints(value: () => SortedEntryPointsInfo): Self = StObject.set(x, "findEntryPoints", js.Any.fromFunction0(value))
     }

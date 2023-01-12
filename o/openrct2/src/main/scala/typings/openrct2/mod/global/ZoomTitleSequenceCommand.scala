@@ -21,7 +21,8 @@ object ZoomTitleSequenceCommand {
     __obj.asInstanceOf[ZoomTitleSequenceCommand]
   }
   
-  extension [Self <: ZoomTitleSequenceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomTitleSequenceCommand] (val x: Self) extends AnyVal {
     
     inline def setType(value: zoom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

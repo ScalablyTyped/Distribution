@@ -31,7 +31,8 @@ object typesUseTabIndicatorStylesMod {
       __obj.asInstanceOf[TabIndicatorStylesHookOptions]
     }
     
-    extension [Self <: TabIndicatorStylesHookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabIndicatorStylesHookOptions] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object typesUseTabIndicatorStylesMod {
       __obj.asInstanceOf[TabIndicatorStylesHookReturnValue]
     }
     
-    extension [Self <: TabIndicatorStylesHookReturnValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabIndicatorStylesHookReturnValue] (val x: Self) extends AnyVal {
       
       inline def setIndicatorStyles(value: IndicatorStyles): Self = StObject.set(x, "indicatorStyles", value.asInstanceOf[js.Any])
       

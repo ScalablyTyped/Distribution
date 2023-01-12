@@ -18,7 +18,8 @@ object Northeast {
     __obj.asInstanceOf[Northeast]
   }
   
-  extension [Self <: Northeast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Northeast] (val x: Self) extends AnyVal {
     
     inline def setNortheast(value: LatLng): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
     

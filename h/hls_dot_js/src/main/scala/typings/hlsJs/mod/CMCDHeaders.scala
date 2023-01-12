@@ -28,7 +28,8 @@ object CMCDHeaders {
     __obj.asInstanceOf[CMCDHeaders]
   }
   
-  extension [Self <: CMCDHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMCDHeaders] (val x: Self) extends AnyVal {
     
     inline def `setCMCD-Object`(value: String): Self = StObject.set(x, "CMCD-Object", value.asInstanceOf[js.Any])
     

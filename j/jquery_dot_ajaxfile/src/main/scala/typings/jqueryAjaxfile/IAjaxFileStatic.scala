@@ -20,7 +20,8 @@ object IAjaxFileStatic {
     __obj.asInstanceOf[IAjaxFileStatic]
   }
   
-  extension [Self <: IAjaxFileStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAjaxFileStatic] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ Any): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     

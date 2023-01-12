@@ -28,7 +28,8 @@ object TimelineHeadersProps {
     __obj.asInstanceOf[TimelineHeadersProps]
   }
   
-  extension [Self <: TimelineHeadersProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineHeadersProps] (val x: Self) extends AnyVal {
     
     inline def setCalendarHeaderClassName(value: String): Self = StObject.set(x, "calendarHeaderClassName", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object IShellPaneTabEvents {
     __obj.asInstanceOf[IShellPaneTabEvents]
   }
   
-  extension [Self <: IShellPaneTabEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellPaneTabEvents] (val x: Self) extends AnyVal {
     
     inline def setOnHideTab(value: () => Unit): Self = StObject.set(x, "OnHideTab", js.Any.fromFunction0(value))
     

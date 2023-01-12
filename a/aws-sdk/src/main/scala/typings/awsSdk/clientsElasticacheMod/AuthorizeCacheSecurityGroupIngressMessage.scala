@@ -28,7 +28,8 @@ object AuthorizeCacheSecurityGroupIngressMessage {
     __obj.asInstanceOf[AuthorizeCacheSecurityGroupIngressMessage]
   }
   
-  extension [Self <: AuthorizeCacheSecurityGroupIngressMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeCacheSecurityGroupIngressMessage] (val x: Self) extends AnyVal {
     
     inline def setCacheSecurityGroupName(value: String): Self = StObject.set(x, "CacheSecurityGroupName", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object FormAction {
     __obj.asInstanceOf[FormAction]
   }
   
-  extension [Self <: FormAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormAction] (val x: Self) extends AnyVal {
     
     inline def setActionMethodName(value: String): Self = StObject.set(x, "actionMethodName", value.asInstanceOf[js.Any])
     

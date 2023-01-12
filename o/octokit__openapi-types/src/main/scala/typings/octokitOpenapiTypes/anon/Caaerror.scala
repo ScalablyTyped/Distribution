@@ -69,7 +69,8 @@ object Caaerror {
     __obj.asInstanceOf[Caaerror]
   }
   
-  extension [Self <: Caaerror](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Caaerror] (val x: Self) extends AnyVal {
     
     inline def setCaa_error(value: String): Self = StObject.set(x, "caa_error", value.asInstanceOf[js.Any])
     

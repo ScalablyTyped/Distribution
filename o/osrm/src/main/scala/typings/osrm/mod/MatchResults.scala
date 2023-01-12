@@ -17,7 +17,8 @@ object MatchResults {
     __obj.asInstanceOf[MatchResults]
   }
   
-  extension [Self <: MatchResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchResults] (val x: Self) extends AnyVal {
     
     inline def setMatchings(value: js.Array[MatchRoute]): Self = StObject.set(x, "matchings", value.asInstanceOf[js.Any])
     

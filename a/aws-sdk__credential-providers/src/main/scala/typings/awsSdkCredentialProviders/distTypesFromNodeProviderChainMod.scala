@@ -32,7 +32,8 @@ object distTypesFromNodeProviderChainMod {
       __obj.asInstanceOf[fromNodeProviderChainInit]
     }
     
-    extension [Self <: fromNodeProviderChainInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: fromNodeProviderChainInit] (val x: Self) extends AnyVal {
       
       inline def setClientConfig(value: STSClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
       

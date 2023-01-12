@@ -18,7 +18,8 @@ object SetShowPaintRectsRequest {
     __obj.asInstanceOf[SetShowPaintRectsRequest]
   }
   
-  extension [Self <: SetShowPaintRectsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetShowPaintRectsRequest] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

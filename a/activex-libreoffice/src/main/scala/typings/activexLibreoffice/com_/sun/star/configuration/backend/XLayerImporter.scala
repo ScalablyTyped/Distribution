@@ -76,7 +76,8 @@ object XLayerImporter {
     __obj.asInstanceOf[XLayerImporter]
   }
   
-  extension [Self <: XLayerImporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLayerImporter] (val x: Self) extends AnyVal {
     
     inline def setGetTargetBackend(value: () => XBackend): Self = StObject.set(x, "getTargetBackend", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object PutEvaluationsRequest {
     __obj.asInstanceOf[PutEvaluationsRequest]
   }
   
-  extension [Self <: PutEvaluationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutEvaluationsRequest] (val x: Self) extends AnyVal {
     
     inline def setEvaluations(value: Evaluations): Self = StObject.set(x, "Evaluations", value.asInstanceOf[js.Any])
     

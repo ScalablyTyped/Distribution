@@ -30,7 +30,8 @@ object reader {
       __obj.asInstanceOf[IArray]
     }
     
-    extension [Self <: IArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArray] (val x: Self) extends AnyVal {
       
       inline def setSetSuccessProperty(value: /* successProperty */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSuccessProperty", js.Any.fromFunction1(value))
       
@@ -79,7 +80,8 @@ object reader {
       __obj.asInstanceOf[IJson]
     }
     
-    extension [Self <: IJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJson] (val x: Self) extends AnyVal {
       
       inline def setGetRecord(value: () => String): Self = StObject.set(x, "getRecord", js.Any.fromFunction0(value))
       
@@ -256,7 +258,8 @@ object reader {
       __obj.asInstanceOf[typings.senchaTouch.Ext.data.reader.IReader]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.data.reader.IReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.data.reader.IReader] (val x: Self) extends AnyVal {
       
       inline def setClientIdProperty(value: String): Self = StObject.set(x, "clientIdProperty", value.asInstanceOf[js.Any])
       
@@ -410,7 +413,8 @@ object reader {
       __obj.asInstanceOf[IXml]
     }
     
-    extension [Self <: IXml](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXml] (val x: Self) extends AnyVal {
       
       inline def setGetData(value: /* data */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
       

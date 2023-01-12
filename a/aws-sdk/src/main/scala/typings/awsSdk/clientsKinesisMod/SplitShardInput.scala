@@ -28,7 +28,8 @@ object SplitShardInput {
     __obj.asInstanceOf[SplitShardInput]
   }
   
-  extension [Self <: SplitShardInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitShardInput] (val x: Self) extends AnyVal {
     
     inline def setNewStartingHashKey(value: HashKey): Self = StObject.set(x, "NewStartingHashKey", value.asInstanceOf[js.Any])
     

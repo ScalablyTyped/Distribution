@@ -15,7 +15,8 @@ object Interpolation {
     __obj.asInstanceOf[Interpolation]
   }
   
-  extension [Self <: Interpolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interpolation] (val x: Self) extends AnyVal {
     
     inline def setInterpolation(value: Type): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     

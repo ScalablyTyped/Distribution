@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1TagFieldEnumValue {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1TagFieldEnumValue]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1TagFieldEnumValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1TagFieldEnumValue] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[SubresourceIntegrityPluginOptions]
     }
     
-    extension [Self <: SubresourceIntegrityPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubresourceIntegrityPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: auto | `true` | `false`): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

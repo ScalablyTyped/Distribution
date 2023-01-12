@@ -28,7 +28,8 @@ object AssociateEntitiesToExperienceRequest {
     __obj.asInstanceOf[AssociateEntitiesToExperienceRequest]
   }
   
-  extension [Self <: AssociateEntitiesToExperienceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateEntitiesToExperienceRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityList(value: AssociateEntityList): Self = StObject.set(x, "EntityList", value.asInstanceOf[js.Any])
     

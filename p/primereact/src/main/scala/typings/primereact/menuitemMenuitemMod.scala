@@ -50,7 +50,8 @@ object menuitemMenuitemMod {
       __obj.asInstanceOf[MenuItem]
     }
     
-    extension [Self <: MenuItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItem] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object menuitemMenuitemMod {
       __obj.asInstanceOf[MenuItemCommandParams]
     }
     
-    extension [Self <: MenuItemCommandParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemCommandParams] (val x: Self) extends AnyVal {
       
       inline def setItem(value: MenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object menuitemMenuitemMod {
       __obj.asInstanceOf[MenuItemOptions]
     }
     
-    extension [Self <: MenuItemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

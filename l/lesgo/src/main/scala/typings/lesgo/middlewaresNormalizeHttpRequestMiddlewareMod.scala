@@ -51,7 +51,8 @@ object middlewaresNormalizeHttpRequestMiddlewareMod {
       __obj.asInstanceOf[HttpGatewayEvent]
     }
     
-    extension [Self <: HttpGatewayEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpGatewayEvent] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: `0`): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object middlewaresNormalizeHttpRequestMiddlewareMod {
       __obj.asInstanceOf[NormalizeHttpMiddleware]
     }
     
-    extension [Self <: NormalizeHttpMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizeHttpMiddleware] (val x: Self) extends AnyVal {
       
       inline def setBefore(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify middy.MiddlewareFunction<HttpGatewayEvent, any> */ Any
@@ -103,7 +105,8 @@ object middlewaresNormalizeHttpRequestMiddlewareMod {
       __obj.asInstanceOf[NormalizeHttpMiddlewareOptions]
     }
     
-    extension [Self <: NormalizeHttpMiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizeHttpMiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

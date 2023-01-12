@@ -15,7 +15,8 @@ object EnumValuesFailedInProgress {
     __obj.asInstanceOf[EnumValuesFailedInProgress]
   }
   
-  extension [Self <: EnumValuesFailedInProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesFailedInProgress] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: FailedInProgress): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

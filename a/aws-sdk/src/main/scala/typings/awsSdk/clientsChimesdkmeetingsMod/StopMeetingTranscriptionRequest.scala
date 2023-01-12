@@ -18,7 +18,8 @@ object StopMeetingTranscriptionRequest {
     __obj.asInstanceOf[StopMeetingTranscriptionRequest]
   }
   
-  extension [Self <: StopMeetingTranscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopMeetingTranscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
   }

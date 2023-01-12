@@ -25,7 +25,8 @@ object LevelParams {
     __obj.asInstanceOf[LevelParams]
   }
   
-  extension [Self <: LevelParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelParams] (val x: Self) extends AnyVal {
     
     inline def setDecimalsVisible(value: Boolean): Self = StObject.set(x, "decimalsVisible", value.asInstanceOf[js.Any])
     

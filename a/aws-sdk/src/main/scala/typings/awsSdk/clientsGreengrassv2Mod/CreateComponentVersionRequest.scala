@@ -33,7 +33,8 @@ object CreateComponentVersionRequest {
     __obj.asInstanceOf[CreateComponentVersionRequest]
   }
   
-  extension [Self <: CreateComponentVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateComponentVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientTokenString): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

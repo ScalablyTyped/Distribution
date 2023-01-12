@@ -31,7 +31,8 @@ object ChangeTableBordersAndShadingCommand {
     __obj.asInstanceOf[ChangeTableBordersAndShadingCommand]
   }
   
-  extension [Self <: ChangeTableBordersAndShadingCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeTableBordersAndShadingCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: (TableBordersSettings, Boolean) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
     

@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[GcStats]
     }
     
-    extension [Self <: GcStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GcStats] (val x: Self) extends AnyVal {
       
       inline def setGcIncrementalMarkingCount(value: Double): Self = StObject.set(x, "gcIncrementalMarkingCount", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object mod {
       __obj.asInstanceOf[HeapChange]
     }
     
-    extension [Self <: HeapChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapChange] (val x: Self) extends AnyVal {
       
       inline def setAllocated_nodes(value: Double): Self = StObject.set(x, "allocated_nodes", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object mod {
       __obj.asInstanceOf[HeapChangeDetails]
     }
     
-    extension [Self <: HeapChangeDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapChangeDetails] (val x: Self) extends AnyVal {
       
       inline def setPlussign(value: Double): Self = StObject.set(x, "+", value.asInstanceOf[js.Any])
       
@@ -222,7 +225,8 @@ object mod {
       __obj.asInstanceOf[HeapDiffResult]
     }
     
-    extension [Self <: HeapDiffResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapDiffResult] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: HeapInfo): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -247,7 +251,8 @@ object mod {
       __obj.asInstanceOf[HeapInfo]
     }
     
-    extension [Self <: HeapInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapInfo] (val x: Self) extends AnyVal {
       
       inline def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       

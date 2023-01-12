@@ -68,7 +68,8 @@ object esPanelsPanelBodyMod {
       __obj.asInstanceOf[PanelBodyProps[DateType]]
     }
     
-    extension [Self <: PanelBodyProps[?], DateType](x: Self & PanelBodyProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelBodyProps[?], DateType] (val x: Self & PanelBodyProps[DateType]) extends AnyVal {
       
       inline def setBaseDate(value: DateType): Self = StObject.set(x, "baseDate", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object LocalConstructedValueBlockJson {
     __obj.asInstanceOf[LocalConstructedValueBlockJson]
   }
   
-  extension [Self <: LocalConstructedValueBlockJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalConstructedValueBlockJson] (val x: Self) extends AnyVal {
     
     inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object UpdateWorkflowDataProperties {
     __obj.asInstanceOf[UpdateWorkflowDataProperties]
   }
   
-  extension [Self <: UpdateWorkflowDataProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWorkflowDataProperties] (val x: Self) extends AnyVal {
     
     inline def setCandidates(value: js.Array[GraphicProperties]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     

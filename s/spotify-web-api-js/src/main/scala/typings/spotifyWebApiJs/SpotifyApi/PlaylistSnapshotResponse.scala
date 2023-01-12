@@ -18,7 +18,8 @@ object PlaylistSnapshotResponse {
     __obj.asInstanceOf[PlaylistSnapshotResponse]
   }
   
-  extension [Self <: PlaylistSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaylistSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setSnapshot_id(value: String): Self = StObject.set(x, "snapshot_id", value.asInstanceOf[js.Any])
   }

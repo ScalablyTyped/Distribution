@@ -17,7 +17,8 @@ object DirectionUp {
     __obj.asInstanceOf[DirectionUp]
   }
   
-  extension [Self <: DirectionUp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionUp] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Cartesian3): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

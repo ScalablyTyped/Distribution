@@ -17,7 +17,8 @@ object OnenotePagePreview {
     __obj.asInstanceOf[OnenotePagePreview]
   }
   
-  extension [Self <: OnenotePagePreview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnenotePagePreview] (val x: Self) extends AnyVal {
     
     inline def setLinks(value: NullableOption[OnenotePagePreviewLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     

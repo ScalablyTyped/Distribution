@@ -18,7 +18,8 @@ object GetWebACLRequest {
     __obj.asInstanceOf[GetWebACLRequest]
   }
   
-  extension [Self <: GetWebACLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWebACLRequest] (val x: Self) extends AnyVal {
     
     inline def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
   }

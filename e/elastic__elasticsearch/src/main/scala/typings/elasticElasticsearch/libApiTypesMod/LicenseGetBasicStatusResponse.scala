@@ -15,7 +15,8 @@ object LicenseGetBasicStatusResponse {
     __obj.asInstanceOf[LicenseGetBasicStatusResponse]
   }
   
-  extension [Self <: LicenseGetBasicStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseGetBasicStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setEligible_to_start_basic(value: Boolean): Self = StObject.set(x, "eligible_to_start_basic", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object AggregationsBoxplotAggregation {
     __obj.asInstanceOf[AggregationsBoxplotAggregation]
   }
   
-  extension [Self <: AggregationsBoxplotAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsBoxplotAggregation] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

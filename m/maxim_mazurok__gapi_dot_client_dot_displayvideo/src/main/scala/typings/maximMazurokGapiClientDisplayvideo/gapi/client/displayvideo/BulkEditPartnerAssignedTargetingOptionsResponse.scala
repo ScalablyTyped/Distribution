@@ -16,7 +16,8 @@ object BulkEditPartnerAssignedTargetingOptionsResponse {
     __obj.asInstanceOf[BulkEditPartnerAssignedTargetingOptionsResponse]
   }
   
-  extension [Self <: BulkEditPartnerAssignedTargetingOptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkEditPartnerAssignedTargetingOptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedAssignedTargetingOptions(value: js.Array[AssignedTargetingOption]): Self = StObject.set(x, "createdAssignedTargetingOptions", value.asInstanceOf[js.Any])
     

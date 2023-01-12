@@ -60,7 +60,8 @@ object distCommonjsElementsStepStepContentMod extends Shortcut {
       __obj.asInstanceOf[StrictStepContentProps]
     }
     
-    extension [Self <: StrictStepContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictStepContentProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

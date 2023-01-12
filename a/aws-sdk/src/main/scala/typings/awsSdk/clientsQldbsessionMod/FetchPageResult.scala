@@ -28,7 +28,8 @@ object FetchPageResult {
     __obj.asInstanceOf[FetchPageResult]
   }
   
-  extension [Self <: FetchPageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchPageResult] (val x: Self) extends AnyVal {
     
     inline def setConsumedIOs(value: IOUsage): Self = StObject.set(x, "ConsumedIOs", value.asInstanceOf[js.Any])
     

@@ -536,7 +536,8 @@ object Abort {
     __obj.asInstanceOf[Abort]
   }
   
-  extension [Self <: Abort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Abort] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: Bubbles): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     

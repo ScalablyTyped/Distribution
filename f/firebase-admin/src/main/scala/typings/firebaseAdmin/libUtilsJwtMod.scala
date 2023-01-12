@@ -200,7 +200,8 @@ object libUtilsJwtMod {
       __obj.asInstanceOf[DecodedToken]
     }
     
-    extension [Self <: DecodedToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedToken] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: Dictionary): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -221,7 +222,8 @@ object libUtilsJwtMod {
       __obj.asInstanceOf[KeyFetcher]
     }
     
-    extension [Self <: KeyFetcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyFetcher] (val x: Self) extends AnyVal {
       
       inline def setFetchPublicKeys(value: () => js.Promise[StringDictionary[String]]): Self = StObject.set(x, "fetchPublicKeys", js.Any.fromFunction0(value))
     }
@@ -238,7 +240,8 @@ object libUtilsJwtMod {
       __obj.asInstanceOf[SignatureVerifier]
     }
     
-    extension [Self <: SignatureVerifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureVerifier] (val x: Self) extends AnyVal {
       
       inline def setVerify(value: String => js.Promise[Unit]): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
     }

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Antimeridian]
     }
     
-    extension [Self <: Antimeridian](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Antimeridian] (val x: Self) extends AnyVal {
       
       inline def setAntimeridian(value: Boolean): Self = StObject.set(x, "antimeridian", value.asInstanceOf[js.Any])
       

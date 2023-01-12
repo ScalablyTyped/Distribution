@@ -19,7 +19,8 @@ object typesMod {
       __obj.asInstanceOf[CssVendorProperty]
     }
     
-    extension [Self <: CssVendorProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssVendorProperty] (val x: Self) extends AnyVal {
       
       inline def setPrefixed(value: PrefixedCssPropertyName): Self = StObject.set(x, "prefixed", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object typesMod {
       __obj.asInstanceOf[CssVendorPropertyMap]
     }
     
-    extension [Self <: CssVendorPropertyMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssVendorPropertyMap] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: CssVendorProperty): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object typesMod {
       __obj.asInstanceOf[JsVendorProperty]
     }
     
-    extension [Self <: JsVendorProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsVendorProperty] (val x: Self) extends AnyVal {
       
       inline def setCssProperty(value: StandardCssPropertyName): Self = StObject.set(x, "cssProperty", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object typesMod {
       __obj.asInstanceOf[JsVendorPropertyMap]
     }
     
-    extension [Self <: JsVendorPropertyMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsVendorPropertyMap] (val x: Self) extends AnyVal {
       
       inline def setAnimationend(value: JsVendorProperty): Self = StObject.set(x, "animationend", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object ExportAssetsRequest {
     __obj.asInstanceOf[ExportAssetsRequest]
   }
   
-  extension [Self <: ExportAssetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportAssetsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
     

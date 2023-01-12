@@ -19,7 +19,8 @@ object Partitioned {
     __obj.asInstanceOf[Partitioned]
   }
   
-  extension [Self <: Partitioned](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partitioned] (val x: Self) extends AnyVal {
     
     inline def setDelimited(value: Boolean): Self = StObject.set(x, "delimited", value.asInstanceOf[js.Any])
     

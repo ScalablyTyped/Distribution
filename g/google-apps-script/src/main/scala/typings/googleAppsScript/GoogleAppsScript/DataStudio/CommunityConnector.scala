@@ -69,7 +69,8 @@ object CommunityConnector {
     __obj.asInstanceOf[CommunityConnector]
   }
   
-  extension [Self <: CommunityConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommunityConnector] (val x: Self) extends AnyVal {
     
     inline def setAggregationType(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ Any

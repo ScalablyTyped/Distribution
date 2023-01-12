@@ -173,7 +173,8 @@ object distParseMod {
       __obj.asInstanceOf[FragmentCursor]
     }
     
-    extension [Self <: FragmentCursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FragmentCursor] (val x: Self) extends AnyVal {
       
       inline def setFragment(value: TreeFragment): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
@@ -238,7 +239,8 @@ object distParseMod {
       __obj.asInstanceOf[ParserConfig]
     }
     
-    extension [Self <: ParserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserConfig] (val x: Self) extends AnyVal {
       
       inline def setBufferLength(value: Double): Self = StObject.set(x, "bufferLength", value.asInstanceOf[js.Any])
       
@@ -322,7 +324,8 @@ object distParseMod {
       __obj.asInstanceOf[TokenCache]
     }
     
-    extension [Self <: TokenCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenCache] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Double]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

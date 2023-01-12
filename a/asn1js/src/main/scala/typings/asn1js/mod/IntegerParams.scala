@@ -23,7 +23,8 @@ object IntegerParams {
     __obj.asInstanceOf[IntegerParams]
   }
   
-  extension [Self <: IntegerParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerParams] (val x: Self) extends AnyVal {
     
     inline def setIsHexOnly(value: scala.Boolean): Self = StObject.set(x, "isHexOnly", value.asInstanceOf[js.Any])
     

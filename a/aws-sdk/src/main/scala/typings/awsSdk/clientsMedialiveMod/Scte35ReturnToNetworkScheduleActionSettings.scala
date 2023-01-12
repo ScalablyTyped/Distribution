@@ -18,7 +18,8 @@ object Scte35ReturnToNetworkScheduleActionSettings {
     __obj.asInstanceOf[Scte35ReturnToNetworkScheduleActionSettings]
   }
   
-  extension [Self <: Scte35ReturnToNetworkScheduleActionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scte35ReturnToNetworkScheduleActionSettings] (val x: Self) extends AnyVal {
     
     inline def setSpliceEventId(value: longMin0Max4294967295): Self = StObject.set(x, "SpliceEventId", value.asInstanceOf[js.Any])
   }

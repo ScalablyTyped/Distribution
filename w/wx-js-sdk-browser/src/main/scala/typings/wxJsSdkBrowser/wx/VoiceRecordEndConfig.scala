@@ -19,7 +19,8 @@ object VoiceRecordEndConfig {
     __obj.asInstanceOf[VoiceRecordEndConfig]
   }
   
-  extension [Self <: VoiceRecordEndConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceRecordEndConfig] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: LocalId => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
   }

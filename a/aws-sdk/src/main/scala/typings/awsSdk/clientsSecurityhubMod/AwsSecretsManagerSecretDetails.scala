@@ -53,7 +53,8 @@ object AwsSecretsManagerSecretDetails {
     __obj.asInstanceOf[AwsSecretsManagerSecretDetails]
   }
   
-  extension [Self <: AwsSecretsManagerSecretDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsSecretsManagerSecretDetails] (val x: Self) extends AnyVal {
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object PartialSliderOptions {
     __obj.asInstanceOf[PartialSliderOptions]
   }
   
-  extension [Self <: PartialSliderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSliderOptions] (val x: Self) extends AnyVal {
     
     inline def setClassDisabled(value: String): Self = StObject.set(x, "classDisabled", value.asInstanceOf[js.Any])
     

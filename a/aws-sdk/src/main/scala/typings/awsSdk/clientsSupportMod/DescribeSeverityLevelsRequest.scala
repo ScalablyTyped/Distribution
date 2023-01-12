@@ -18,7 +18,8 @@ object DescribeSeverityLevelsRequest {
     __obj.asInstanceOf[DescribeSeverityLevelsRequest]
   }
   
-  extension [Self <: DescribeSeverityLevelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSeverityLevelsRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

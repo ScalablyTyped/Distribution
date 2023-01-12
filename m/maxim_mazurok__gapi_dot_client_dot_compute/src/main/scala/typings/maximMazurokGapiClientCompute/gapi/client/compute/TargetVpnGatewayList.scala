@@ -35,7 +35,8 @@ object TargetVpnGatewayList {
     __obj.asInstanceOf[TargetVpnGatewayList]
   }
   
-  extension [Self <: TargetVpnGatewayList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetVpnGatewayList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

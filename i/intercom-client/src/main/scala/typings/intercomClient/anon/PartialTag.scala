@@ -21,7 +21,8 @@ object PartialTag {
     __obj.asInstanceOf[PartialTag]
   }
   
-  extension [Self <: PartialTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTag] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object FiveBoxesSet {
     __obj.asInstanceOf[FiveBoxesSet]
   }
   
-  extension [Self <: FiveBoxesSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FiveBoxesSet] (val x: Self) extends AnyVal {
     
     inline def setFourFilledBoxes(value: Icon): Self = StObject.set(x, "fourFilledBoxes", value.asInstanceOf[js.Any])
     

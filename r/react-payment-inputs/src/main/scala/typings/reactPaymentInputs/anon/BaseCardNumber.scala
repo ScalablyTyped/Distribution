@@ -29,7 +29,8 @@ object BaseCardNumber {
     __obj.asInstanceOf[BaseCardNumber]
   }
   
-  extension [Self <: BaseCardNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseCardNumber] (val x: Self) extends AnyVal {
     
     inline def setBase(value: String | js.Object): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

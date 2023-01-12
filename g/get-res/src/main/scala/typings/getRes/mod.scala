@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[Resolution]
     }
     
-    extension [Self <: Resolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolution] (val x: Self) extends AnyVal {
       
       inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       

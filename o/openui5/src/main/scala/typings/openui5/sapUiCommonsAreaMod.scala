@@ -250,7 +250,8 @@ object sapUiCommonsAreaMod {
       __obj.asInstanceOf[AreaSettings]
     }
     
-    extension [Self <: AreaSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreaSettings] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String | PropertyBindingInfo): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

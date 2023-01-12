@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[ClearTimeout]
     }
     
-    extension [Self <: ClearTimeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearTimeout] (val x: Self) extends AnyVal {
       
       inline def setClearTimeout(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.clearTimeout */ Any

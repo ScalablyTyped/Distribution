@@ -87,7 +87,8 @@ object ASPxClientTimeEdit {
     __obj.asInstanceOf[ASPxClientTimeEdit]
   }
   
-  extension [Self <: ASPxClientTimeEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTimeEdit] (val x: Self) extends AnyVal {
     
     inline def setDateChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimeEdit]]): Self = StObject.set(x, "DateChanged", value.asInstanceOf[js.Any])
     

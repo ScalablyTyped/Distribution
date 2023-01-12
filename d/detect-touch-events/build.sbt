@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "detect-touch-events"
-version := "1.0-dt-20211202Z-47dd31"
+version := "1.0-dt-20211202Z-0a346f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

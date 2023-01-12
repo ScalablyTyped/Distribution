@@ -25,7 +25,8 @@ object CatThreadPoolParams {
     __obj.asInstanceOf[CatThreadPoolParams]
   }
   
-  extension [Self <: CatThreadPoolParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatThreadPoolParams] (val x: Self) extends AnyVal {
     
     inline def setSize(value: _empty | k | m | g | t | p): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

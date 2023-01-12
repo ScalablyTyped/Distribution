@@ -19,7 +19,8 @@ object ClusterStatsClusterShardMetrics {
     __obj.asInstanceOf[ClusterStatsClusterShardMetrics]
   }
   
-  extension [Self <: ClusterStatsClusterShardMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterShardMetrics] (val x: Self) extends AnyVal {
     
     inline def setAvg(value: double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     

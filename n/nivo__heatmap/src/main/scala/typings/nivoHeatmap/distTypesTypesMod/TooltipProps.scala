@@ -15,7 +15,8 @@ object TooltipProps {
     __obj.asInstanceOf[TooltipProps[Datum]]
   }
   
-  extension [Self <: TooltipProps[?], Datum /* <: HeatMapDatum */](x: Self & TooltipProps[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipProps[?], Datum /* <: HeatMapDatum */] (val x: Self & TooltipProps[Datum]) extends AnyVal {
     
     inline def setCell(value: ComputedCell[Datum]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
   }

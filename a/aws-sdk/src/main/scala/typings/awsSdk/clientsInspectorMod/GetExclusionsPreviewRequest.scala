@@ -38,7 +38,8 @@ object GetExclusionsPreviewRequest {
     __obj.asInstanceOf[GetExclusionsPreviewRequest]
   }
   
-  extension [Self <: GetExclusionsPreviewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExclusionsPreviewRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentTemplateArn(value: Arn): Self = StObject.set(x, "assessmentTemplateArn", value.asInstanceOf[js.Any])
     

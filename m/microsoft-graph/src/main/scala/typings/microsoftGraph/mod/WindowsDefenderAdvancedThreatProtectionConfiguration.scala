@@ -21,7 +21,8 @@ object WindowsDefenderAdvancedThreatProtectionConfiguration {
     __obj.asInstanceOf[WindowsDefenderAdvancedThreatProtectionConfiguration]
   }
   
-  extension [Self <: WindowsDefenderAdvancedThreatProtectionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsDefenderAdvancedThreatProtectionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowSampleSharing(value: Boolean): Self = StObject.set(x, "allowSampleSharing", value.asInstanceOf[js.Any])
     

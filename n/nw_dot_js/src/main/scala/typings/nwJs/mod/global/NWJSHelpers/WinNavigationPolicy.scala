@@ -21,7 +21,8 @@ object WinNavigationPolicy {
     __obj.asInstanceOf[WinNavigationPolicy]
   }
   
-  extension [Self <: WinNavigationPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WinNavigationPolicy] (val x: Self) extends AnyVal {
     
     inline def setIgnore(value: () => Unit): Self = StObject.set(x, "ignore", js.Any.fromFunction0(value))
   }

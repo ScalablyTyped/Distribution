@@ -43,7 +43,8 @@ object ChunkInfo {
     __obj.asInstanceOf[ChunkInfo]
   }
   
-  extension [Self <: ChunkInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkInfo] (val x: Self) extends AnyVal {
     
     inline def setChunkPosition(value: Double): Self = StObject.set(x, "chunkPosition", value.asInstanceOf[js.Any])
     

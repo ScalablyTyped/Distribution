@@ -177,7 +177,8 @@ object syntheticsLinkMod {
       __obj.asInstanceOf[SyntheticsLink]
     }
     
-    extension [Self <: SyntheticsLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyntheticsLink] (val x: Self) extends AnyVal {
       
       inline def setAddScreenshotResult(value: Any => Unit): Self = StObject.set(x, "addScreenshotResult", js.Any.fromFunction1(value))
       

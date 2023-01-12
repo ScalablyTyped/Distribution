@@ -34,7 +34,8 @@ object ContentMode {
     __obj.asInstanceOf[ContentMode]
   }
   
-  extension [Self <: ContentMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentMode] (val x: Self) extends AnyVal {
     
     inline def setContentMode(value: String | scaleToFill): Self = StObject.set(x, "contentMode", value.asInstanceOf[js.Any])
     

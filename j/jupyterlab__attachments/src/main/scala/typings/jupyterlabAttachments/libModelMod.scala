@@ -272,7 +272,8 @@ object libModelMod {
         __obj.asInstanceOf[typings.jupyterlabAttachments.libModelMod.AttachmentsResolver.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabAttachments.libModelMod.AttachmentsResolver.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabAttachments.libModelMod.AttachmentsResolver.IOptions] (val x: Self) extends AnyVal {
         
         inline def setModel(value: IAttachmentsModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
@@ -397,7 +398,8 @@ object libModelMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      extension [Self <: IContentFactory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
         
         inline def setCreateAttachmentModel(
           value: typings.jupyterlabRendermime.libAttachmentmodelMod.IAttachmentModel.IOptions => IAttachmentModel
@@ -434,7 +436,8 @@ object libModelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
@@ -450,7 +453,8 @@ object libModelMod {
       }
     }
     
-    extension [Self <: IAttachmentsModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAttachmentsModel] (val x: Self) extends AnyVal {
       
       inline def setChanged(value: ISignal[IAttachmentsModel, ChangedArgs]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       

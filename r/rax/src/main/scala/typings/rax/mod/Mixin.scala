@@ -32,7 +32,8 @@ object Mixin {
     __obj.asInstanceOf[Mixin[P, S]]
   }
   
-  extension [Self <: Mixin[?, ?], P, S](x: Self & (Mixin[P, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mixin[?, ?], P, S] (val x: Self & (Mixin[P, S])) extends AnyVal {
     
     inline def setChildContextTypes(value: ValidationMap[Any]): Self = StObject.set(x, "childContextTypes", value.asInstanceOf[js.Any])
     

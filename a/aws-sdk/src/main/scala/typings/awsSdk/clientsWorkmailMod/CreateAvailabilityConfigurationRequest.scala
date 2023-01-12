@@ -38,7 +38,8 @@ object CreateAvailabilityConfigurationRequest {
     __obj.asInstanceOf[CreateAvailabilityConfigurationRequest]
   }
   
-  extension [Self <: CreateAvailabilityConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAvailabilityConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

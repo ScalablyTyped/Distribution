@@ -28,7 +28,8 @@ object IManipulationCompletedEventArgs {
     __obj.asInstanceOf[IManipulationCompletedEventArgs]
   }
   
-  extension [Self <: IManipulationCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IManipulationCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCumulative(value: ManipulationDelta): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     

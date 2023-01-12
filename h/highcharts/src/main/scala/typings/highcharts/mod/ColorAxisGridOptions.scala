@@ -42,7 +42,8 @@ object ColorAxisGridOptions {
     __obj.asInstanceOf[ColorAxisGridOptions]
   }
   
-  extension [Self <: ColorAxisGridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorAxisGridOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

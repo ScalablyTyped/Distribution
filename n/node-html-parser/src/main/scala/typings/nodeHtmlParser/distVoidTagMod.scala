@@ -50,7 +50,8 @@ object distVoidTagMod {
       __obj.asInstanceOf[VoidTag]
     }
     
-    extension [Self <: VoidTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoidTag] (val x: Self) extends AnyVal {
       
       inline def setAddClosingSlash(value: Boolean): Self = StObject.set(x, "addClosingSlash", value.asInstanceOf[js.Any])
       

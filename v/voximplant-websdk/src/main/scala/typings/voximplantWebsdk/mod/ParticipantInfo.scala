@@ -46,7 +46,8 @@ object ParticipantInfo {
     __obj.asInstanceOf[ParticipantInfo]
   }
   
-  extension [Self <: ParticipantInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantInfo] (val x: Self) extends AnyVal {
     
     inline def setAffiliation(value: Double): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
     

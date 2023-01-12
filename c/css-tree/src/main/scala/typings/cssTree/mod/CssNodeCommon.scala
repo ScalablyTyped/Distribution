@@ -18,7 +18,8 @@ object CssNodeCommon {
     __obj.asInstanceOf[CssNodeCommon]
   }
   
-  extension [Self <: CssNodeCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssNodeCommon] (val x: Self) extends AnyVal {
     
     inline def setLoc(value: CssLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     

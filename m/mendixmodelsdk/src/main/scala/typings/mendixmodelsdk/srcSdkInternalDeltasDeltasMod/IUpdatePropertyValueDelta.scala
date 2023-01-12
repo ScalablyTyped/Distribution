@@ -23,7 +23,8 @@ object IUpdatePropertyValueDelta {
     __obj.asInstanceOf[IUpdatePropertyValueDelta]
   }
   
-  extension [Self <: IUpdatePropertyValueDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUpdatePropertyValueDelta] (val x: Self) extends AnyVal {
     
     inline def setDeltaType(value: UPDATE_PROPERTY_VALUE): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object EncoderModule {
     __obj.asInstanceOf[EncoderModule]
   }
   
-  extension [Self <: EncoderModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncoderModule] (val x: Self) extends AnyVal {
     
     inline def setEncoder(value: Instantiable0[Encoder]): Self = StObject.set(x, "Encoder", value.asInstanceOf[js.Any])
     

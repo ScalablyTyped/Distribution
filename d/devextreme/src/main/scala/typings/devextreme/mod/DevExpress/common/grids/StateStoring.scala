@@ -45,7 +45,8 @@ object StateStoring {
     __obj.asInstanceOf[StateStoring]
   }
   
-  extension [Self <: StateStoring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateStoring] (val x: Self) extends AnyVal {
     
     inline def setCustomLoad(value: () => PromiseLike[Any]): Self = StObject.set(x, "customLoad", js.Any.fromFunction0(value))
     

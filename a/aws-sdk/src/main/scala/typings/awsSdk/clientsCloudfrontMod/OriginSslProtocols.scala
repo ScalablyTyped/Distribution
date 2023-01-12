@@ -23,7 +23,8 @@ object OriginSslProtocols {
     __obj.asInstanceOf[OriginSslProtocols]
   }
   
-  extension [Self <: OriginSslProtocols](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginSslProtocols] (val x: Self) extends AnyVal {
     
     inline def setItems(value: SslProtocolsList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

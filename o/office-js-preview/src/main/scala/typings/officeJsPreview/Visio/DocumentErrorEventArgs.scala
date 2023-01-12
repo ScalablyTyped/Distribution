@@ -43,7 +43,8 @@ object DocumentErrorEventArgs {
     __obj.asInstanceOf[DocumentErrorEventArgs]
   }
   
-  extension [Self <: DocumentErrorEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentErrorEventArgs] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

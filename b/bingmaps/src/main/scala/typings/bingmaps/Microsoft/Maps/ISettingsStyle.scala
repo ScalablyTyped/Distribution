@@ -19,7 +19,8 @@ object ISettingsStyle {
     __obj.asInstanceOf[ISettingsStyle]
   }
   
-  extension [Self <: ISettingsStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISettingsStyle] (val x: Self) extends AnyVal {
     
     inline def setLandColor(value: String): Self = StObject.set(x, "landColor", value.asInstanceOf[js.Any])
     

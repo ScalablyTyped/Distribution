@@ -40,7 +40,8 @@ object IAccessKeySupport {
     __obj.asInstanceOf[IAccessKeySupport]
   }
   
-  extension [Self <: IAccessKeySupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccessKeySupport] (val x: Self) extends AnyVal {
     
     inline def setGetAccessKeysFocusTarget(value: () => Unit): Self = StObject.set(x, "getAccessKeysFocusTarget", js.Any.fromFunction0(value))
     

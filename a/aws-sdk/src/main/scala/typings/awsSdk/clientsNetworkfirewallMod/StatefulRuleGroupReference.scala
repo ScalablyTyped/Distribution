@@ -28,7 +28,8 @@ object StatefulRuleGroupReference {
     __obj.asInstanceOf[StatefulRuleGroupReference]
   }
   
-  extension [Self <: StatefulRuleGroupReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulRuleGroupReference] (val x: Self) extends AnyVal {
     
     inline def setOverride(value: StatefulRuleGroupOverride): Self = StObject.set(x, "Override", value.asInstanceOf[js.Any])
     

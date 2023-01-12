@@ -20,7 +20,8 @@ object PreferViewId {
     __obj.asInstanceOf[PreferViewId]
   }
   
-  extension [Self <: PreferViewId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreferViewId] (val x: Self) extends AnyVal {
     
     inline def setPreferViewId(value: Boolean): Self = StObject.set(x, "preferViewId", value.asInstanceOf[js.Any])
   }

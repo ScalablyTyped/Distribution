@@ -59,7 +59,8 @@ object apiRawHandlingMod {
         __obj.asInstanceOf[BaseOptions]
       }
       
-      extension [Self <: BaseOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
         
         inline def setCanUserUseUnfilteredHTML(value: Boolean): Self = StObject.set(x, "canUserUseUnfilteredHTML", value.asInstanceOf[js.Any])
         
@@ -94,7 +95,8 @@ object apiRawHandlingMod {
         __obj.asInstanceOf[HTMLOptions]
       }
       
-      extension [Self <: HTMLOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLOptions] (val x: Self) extends AnyVal {
         
         inline def setHTML(value: String): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
       }
@@ -135,7 +137,8 @@ object apiRawHandlingMod {
         __obj.asInstanceOf[PlainTextOptions]
       }
       
-      extension [Self <: PlainTextOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlainTextOptions] (val x: Self) extends AnyVal {
         
         inline def setPlainText(value: String): Self = StObject.set(x, "plainText", value.asInstanceOf[js.Any])
       }
@@ -193,7 +196,8 @@ object apiRawHandlingMod {
       __obj.asInstanceOf[PhrasingContentSchema]
     }
     
-    extension [Self <: PhrasingContentSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhrasingContentSchema] (val x: Self) extends AnyVal {
       
       inline def setA(
         value: /* import warning: importer.ImportType#apply Failed type conversion: 'a' extends '#text' | 'br' ? {} : 'a' extends 'a' ? { readonly attributes :std.ReadonlyArray<'charset' | 'coords' | 'download' | 'hreflang' | 'name' | 'ping' | 'referrerPolicy' | 'rel' | 'relList' | 'rev' | 'shape' | 'target' | 'text' | 'type'>,  readonly children :@wordpress/blocks.@wordpress/blocks/api/raw-handling.PhrasingContentSchema} : 'a' extends 'abbr' ? { readonly attributes :std.ReadonlyArray<'accessKey' | 'accessKeyLabel' | 'autocapitalize' | 'dir' | 'draggable' | 'hidden' | 'inert' | 'innerText' | 'lang' | 'offsetHeight' | 'offsetLeft' | 'offsetParent' | 'offsetTop' | 'offsetWidth' | 'outerText' | 'spellcheck' | 'title' | 'translate'>,  readonly children :@wordpress/blocks.@wordpress/blocks/api/raw-handling.PhrasingContentSchema} : { readonly children :@wordpress/blocks.@wordpress/blocks/api/raw-handling.PhrasingContentSchema} */ js.Any

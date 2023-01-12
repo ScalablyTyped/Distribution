@@ -38,7 +38,8 @@ object CreateEndpointAccessMessage {
     __obj.asInstanceOf[CreateEndpointAccessMessage]
   }
   
-  extension [Self <: CreateEndpointAccessMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEndpointAccessMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     

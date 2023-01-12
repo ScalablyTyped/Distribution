@@ -18,7 +18,8 @@ object DeleteWorkflowRequest {
     __obj.asInstanceOf[DeleteWorkflowRequest]
   }
   
-  extension [Self <: DeleteWorkflowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWorkflowRequest] (val x: Self) extends AnyVal {
     
     inline def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "WorkflowId", value.asInstanceOf[js.Any])
   }

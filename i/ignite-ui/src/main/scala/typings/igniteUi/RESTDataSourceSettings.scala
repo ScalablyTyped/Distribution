@@ -24,7 +24,8 @@ object RESTDataSourceSettings {
     __obj.asInstanceOf[RESTDataSourceSettings]
   }
   
-  extension [Self <: RESTDataSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RESTDataSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setRestSettings(value: RESTDataSourceSettingsRestSettings): Self = StObject.set(x, "restSettings", value.asInstanceOf[js.Any])
     

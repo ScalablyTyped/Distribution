@@ -24,7 +24,8 @@ object Workflowruns {
     __obj.asInstanceOf[Workflowruns]
   }
   
-  extension [Self <: Workflowruns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Workflowruns] (val x: Self) extends AnyVal {
     
     inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     

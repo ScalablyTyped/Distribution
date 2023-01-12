@@ -95,7 +95,8 @@ object gridTilesTileMod {
       __obj.asInstanceOf[TileModifierProps]
     }
     
-    extension [Self <: TileModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileModifierProps] (val x: Self) extends AnyVal {
       
       inline def setKind(value: ancestor | parent | child): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object gridTilesTileMod {
       __obj.asInstanceOf[TileProps]
     }
     
-    extension [Self <: TileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -370,7 +372,8 @@ object gridTilesTileMod {
       __obj.asInstanceOf[TileVariables]
     }
     
-    extension [Self <: TileVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileVariables] (val x: Self) extends AnyVal {
       
       inline def setKinds(value: ancestor | parent | child): Self = StObject.set(x, "kinds", value.asInstanceOf[js.Any])
       
@@ -394,7 +397,8 @@ object gridTilesTileMod {
       __obj.asInstanceOf[TileVariablesDefaults]
     }
     
-    extension [Self <: TileVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setKinds(value: ancestor | parent | child): Self = StObject.set(x, "kinds", value.asInstanceOf[js.Any])
       

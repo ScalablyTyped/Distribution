@@ -31,7 +31,8 @@ object ParametersResponse {
     __obj.asInstanceOf[ParametersResponse]
   }
   
-  extension [Self <: ParametersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersResponse] (val x: Self) extends AnyVal {
     
     inline def setParameters(
       value: (ToOctokitParameters[

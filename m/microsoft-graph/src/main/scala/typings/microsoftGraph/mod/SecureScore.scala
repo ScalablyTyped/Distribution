@@ -51,7 +51,8 @@ object SecureScore {
     __obj.asInstanceOf[SecureScore]
   }
   
-  extension [Self <: SecureScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureScore] (val x: Self) extends AnyVal {
     
     inline def setActiveUserCount(value: NullableOption[Double]): Self = StObject.set(x, "activeUserCount", value.asInstanceOf[js.Any])
     

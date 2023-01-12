@@ -17,7 +17,8 @@ object ColorProps {
     __obj.asInstanceOf[ColorProps[T]]
   }
   
-  extension [Self <: ColorProps[?], T](x: Self & ColorProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorProps[?], T] (val x: Self & ColorProps[T]) extends AnyVal {
     
     inline def setColorBy(value: String | GetColor[T]): Self = StObject.set(x, "colorBy", value.asInstanceOf[js.Any])
     

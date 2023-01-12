@@ -15,7 +15,8 @@ object RowContentMap {
     __obj.asInstanceOf[RowContentMap]
   }
   
-  extension [Self <: RowContentMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowContentMap] (val x: Self) extends AnyVal {
     
     inline def setTableCell(value: TableCell): Self = StObject.set(x, "tableCell", value.asInstanceOf[js.Any])
   }

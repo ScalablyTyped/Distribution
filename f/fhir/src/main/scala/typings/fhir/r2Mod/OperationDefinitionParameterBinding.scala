@@ -38,7 +38,8 @@ object OperationDefinitionParameterBinding {
     __obj.asInstanceOf[OperationDefinitionParameterBinding]
   }
   
-  extension [Self <: OperationDefinitionParameterBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationDefinitionParameterBinding] (val x: Self) extends AnyVal {
     
     inline def setStrength(value: required | extensible | preferred | example): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     

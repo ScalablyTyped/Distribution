@@ -21,7 +21,8 @@ object ProfilePhoto {
     __obj.asInstanceOf[ProfilePhoto]
   }
   
-  extension [Self <: ProfilePhoto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfilePhoto] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: NullableOption[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

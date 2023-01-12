@@ -104,7 +104,8 @@ object distSrcMod {
       __obj.asInstanceOf[CrossSpawnOptions]
     }
     
-    extension [Self <: CrossSpawnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrossSpawnOptions] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: /* message */ String => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
       

@@ -29,7 +29,8 @@ object AvatarProps {
     __obj.asInstanceOf[AvatarProps]
   }
   
-  extension [Self <: AvatarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvatarProps] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

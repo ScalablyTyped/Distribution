@@ -29,7 +29,8 @@ object ElementMultiplier {
     __obj.asInstanceOf[ElementMultiplier]
   }
   
-  extension [Self <: ElementMultiplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementMultiplier] (val x: Self) extends AnyVal {
     
     inline def setElementMultiplier(value: Double): Self = StObject.set(x, "elementMultiplier", value.asInstanceOf[js.Any])
     

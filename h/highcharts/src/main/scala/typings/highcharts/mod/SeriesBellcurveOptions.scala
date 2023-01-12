@@ -89,7 +89,8 @@ object SeriesBellcurveOptions {
     __obj.asInstanceOf[SeriesBellcurveOptions]
   }
   
-  extension [Self <: SeriesBellcurveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesBellcurveOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseSeries(value: Double | String): Self = StObject.set(x, "baseSeries", value.asInstanceOf[js.Any])
     

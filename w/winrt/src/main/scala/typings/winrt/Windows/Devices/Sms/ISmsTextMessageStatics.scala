@@ -20,7 +20,8 @@ object ISmsTextMessageStatics {
     __obj.asInstanceOf[ISmsTextMessageStatics]
   }
   
-  extension [Self <: ISmsTextMessageStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISmsTextMessageStatics] (val x: Self) extends AnyVal {
     
     inline def setFromBinaryData(value: (SmsDataFormat, js.typedarray.Uint8Array) => SmsTextMessage): Self = StObject.set(x, "fromBinaryData", js.Any.fromFunction2(value))
     

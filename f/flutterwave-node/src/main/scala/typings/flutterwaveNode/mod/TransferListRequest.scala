@@ -17,7 +17,8 @@ object TransferListRequest {
     __obj.asInstanceOf[TransferListRequest]
   }
   
-  extension [Self <: TransferListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferListRequest] (val x: Self) extends AnyVal {
     
     inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

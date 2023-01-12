@@ -20,7 +20,8 @@ object ScaleType {
     __obj.asInstanceOf[ScaleType]
   }
   
-  extension [Self <: ScaleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleType] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: NonPositionScaleChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

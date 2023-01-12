@@ -39,7 +39,8 @@ object TypeofSkeletonJson {
     __obj.asInstanceOf[TypeofSkeletonJson]
   }
   
-  extension [Self <: TypeofSkeletonJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSkeletonJson] (val x: Self) extends AnyVal {
     
     inline def setBlendModeFromString(value: String => BlendMode): Self = StObject.set(x, "blendModeFromString", js.Any.fromFunction1(value))
     

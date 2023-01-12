@@ -37,7 +37,8 @@ object Typeofstorage {
     __obj.asInstanceOf[Typeofstorage]
   }
   
-  extension [Self <: Typeofstorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofstorage] (val x: Self) extends AnyVal {
     
     inline def setAccessLevel(value: TRUSTEDANDUNTRUSTEDCONTEXTS): Self = StObject.set(x, "AccessLevel", value.asInstanceOf[js.Any])
     

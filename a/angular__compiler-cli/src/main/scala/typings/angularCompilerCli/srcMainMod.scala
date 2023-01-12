@@ -160,7 +160,8 @@ object srcMainMod {
       __obj.asInstanceOf[NgcParsedConfiguration]
     }
     
-    extension [Self <: NgcParsedConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgcParsedConfiguration] (val x: Self) extends AnyVal {
       
       inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       

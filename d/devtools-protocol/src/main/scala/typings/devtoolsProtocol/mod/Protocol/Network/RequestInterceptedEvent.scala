@@ -86,7 +86,8 @@ object RequestInterceptedEvent {
     __obj.asInstanceOf[RequestInterceptedEvent]
   }
   
-  extension [Self <: RequestInterceptedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestInterceptedEvent] (val x: Self) extends AnyVal {
     
     inline def setAuthChallenge(value: AuthChallenge): Self = StObject.set(x, "authChallenge", value.asInstanceOf[js.Any])
     

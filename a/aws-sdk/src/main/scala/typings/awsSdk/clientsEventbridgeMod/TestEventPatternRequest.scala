@@ -23,7 +23,8 @@ object TestEventPatternRequest {
     __obj.asInstanceOf[TestEventPatternRequest]
   }
   
-  extension [Self <: TestEventPatternRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestEventPatternRequest] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: String): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CancelCapacityReservationFleetError {
     __obj.asInstanceOf[CancelCapacityReservationFleetError]
   }
   
-  extension [Self <: CancelCapacityReservationFleetError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelCapacityReservationFleetError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CancelCapacityReservationFleetErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

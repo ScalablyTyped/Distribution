@@ -18,7 +18,8 @@ object DynamicSsmParameterValue {
     __obj.asInstanceOf[DynamicSsmParameterValue]
   }
   
-  extension [Self <: DynamicSsmParameterValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicSsmParameterValue] (val x: Self) extends AnyVal {
     
     inline def setVariable(value: VariableType): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[BatchAction]
     }
     
-    extension [Self <: BatchAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchAction] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: Batch): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       

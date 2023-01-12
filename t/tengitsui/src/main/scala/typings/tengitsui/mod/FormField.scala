@@ -26,7 +26,8 @@ object FormField {
     __obj.asInstanceOf[FormField]
   }
   
-  extension [Self <: FormField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormField] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

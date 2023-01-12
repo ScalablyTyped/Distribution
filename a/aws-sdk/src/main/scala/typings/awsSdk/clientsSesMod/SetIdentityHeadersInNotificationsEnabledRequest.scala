@@ -28,7 +28,8 @@ object SetIdentityHeadersInNotificationsEnabledRequest {
     __obj.asInstanceOf[SetIdentityHeadersInNotificationsEnabledRequest]
   }
   
-  extension [Self <: SetIdentityHeadersInNotificationsEnabledRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetIdentityHeadersInNotificationsEnabledRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

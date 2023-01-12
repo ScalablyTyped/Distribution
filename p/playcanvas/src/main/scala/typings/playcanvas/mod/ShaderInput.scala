@@ -39,7 +39,8 @@ object ShaderInput {
     __obj.asInstanceOf[ShaderInput]
   }
   
-  extension [Self <: ShaderInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaderInput] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[Any]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

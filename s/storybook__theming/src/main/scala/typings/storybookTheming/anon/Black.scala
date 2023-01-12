@@ -19,7 +19,8 @@ object Black {
     __obj.asInstanceOf[Black]
   }
   
-  extension [Self <: Black](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Black] (val x: Self) extends AnyVal {
     
     inline def setBlack(value: Double): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
     

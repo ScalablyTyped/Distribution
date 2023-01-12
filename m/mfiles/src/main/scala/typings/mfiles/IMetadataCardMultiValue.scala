@@ -21,7 +21,8 @@ object IMetadataCardMultiValue {
     __obj.asInstanceOf[IMetadataCardMultiValue]
   }
   
-  extension [Self <: IMetadataCardMultiValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetadataCardMultiValue] (val x: Self) extends AnyVal {
     
     inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     

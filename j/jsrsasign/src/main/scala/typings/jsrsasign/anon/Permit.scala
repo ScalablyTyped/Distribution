@@ -24,7 +24,8 @@ object Permit {
     __obj.asInstanceOf[Permit]
   }
   
-  extension [Self <: Permit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Permit] (val x: Self) extends AnyVal {
     
     inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     

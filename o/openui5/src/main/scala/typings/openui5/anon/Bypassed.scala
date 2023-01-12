@@ -24,7 +24,8 @@ object Bypassed {
     __obj.asInstanceOf[Bypassed]
   }
   
-  extension [Self <: Bypassed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bypassed] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object Nesting_ {
     __obj.asInstanceOf[Nesting_]
   }
   
-  extension [Self <: Nesting_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nesting_] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.nesting): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

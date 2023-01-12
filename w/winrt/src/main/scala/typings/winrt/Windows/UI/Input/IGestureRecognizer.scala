@@ -118,7 +118,8 @@ object IGestureRecognizer {
     __obj.asInstanceOf[IGestureRecognizer]
   }
   
-  extension [Self <: IGestureRecognizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGestureRecognizer] (val x: Self) extends AnyVal {
     
     inline def setAutoProcessInertia(value: Boolean): Self = StObject.set(x, "autoProcessInertia", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object CreateCapacityReservationFleetRequest {
     __obj.asInstanceOf[CreateCapacityReservationFleetRequest]
   }
   
-  extension [Self <: CreateCapacityReservationFleetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCapacityReservationFleetRequest] (val x: Self) extends AnyVal {
     
     inline def setAllocationStrategy(value: String): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
     

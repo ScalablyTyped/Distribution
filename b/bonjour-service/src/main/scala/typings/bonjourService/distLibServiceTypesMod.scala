@@ -31,7 +31,8 @@ object distLibServiceTypesMod {
       __obj.asInstanceOf[ServiceType]
     }
     
-    extension [Self <: ServiceType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceType] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

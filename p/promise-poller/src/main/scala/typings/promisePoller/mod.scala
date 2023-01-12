@@ -171,7 +171,8 @@ object mod {
       __obj.asInstanceOf[PromisePollerOptions[T]]
     }
     
-    extension [Self <: PromisePollerOptions[?], T](x: Self & PromisePollerOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromisePollerOptions[?], T] (val x: Self & PromisePollerOptions[T]) extends AnyVal {
       
       inline def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
       

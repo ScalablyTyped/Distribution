@@ -33,7 +33,8 @@ object AutomatedAbrSettings {
     __obj.asInstanceOf[AutomatedAbrSettings]
   }
   
-  extension [Self <: AutomatedAbrSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomatedAbrSettings] (val x: Self) extends AnyVal {
     
     inline def setMaxAbrBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MaxAbrBitrate", value.asInstanceOf[js.Any])
     

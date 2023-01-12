@@ -26,7 +26,8 @@ object IClientBlockListResponse {
     __obj.asInstanceOf[IClientBlockListResponse]
   }
   
-  extension [Self <: IClientBlockListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientBlockListResponse] (val x: Self) extends AnyVal {
     
     inline def setBlocks(value: js.Array[IBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     

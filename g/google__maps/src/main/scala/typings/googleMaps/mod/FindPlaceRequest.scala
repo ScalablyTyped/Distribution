@@ -59,7 +59,8 @@ object FindPlaceRequest {
     __obj.asInstanceOf[FindPlaceRequest]
   }
   
-  extension [Self <: FindPlaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindPlaceRequest] (val x: Self) extends AnyVal {
     
     inline def setFields(
       value: js.Array[

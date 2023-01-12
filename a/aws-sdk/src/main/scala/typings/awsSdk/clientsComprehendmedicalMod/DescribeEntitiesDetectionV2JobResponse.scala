@@ -18,7 +18,8 @@ object DescribeEntitiesDetectionV2JobResponse {
     __obj.asInstanceOf[DescribeEntitiesDetectionV2JobResponse]
   }
   
-  extension [Self <: DescribeEntitiesDetectionV2JobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEntitiesDetectionV2JobResponse] (val x: Self) extends AnyVal {
     
     inline def setComprehendMedicalAsyncJobProperties(value: ComprehendMedicalAsyncJobProperties): Self = StObject.set(x, "ComprehendMedicalAsyncJobProperties", value.asInstanceOf[js.Any])
     

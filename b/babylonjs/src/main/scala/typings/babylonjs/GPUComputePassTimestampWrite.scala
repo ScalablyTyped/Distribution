@@ -19,7 +19,8 @@ object GPUComputePassTimestampWrite {
     __obj.asInstanceOf[GPUComputePassTimestampWrite]
   }
   
-  extension [Self <: GPUComputePassTimestampWrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUComputePassTimestampWrite] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: GPUComputePassTimestampLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

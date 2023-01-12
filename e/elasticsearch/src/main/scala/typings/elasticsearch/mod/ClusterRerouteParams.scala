@@ -27,7 +27,8 @@ object ClusterRerouteParams {
     __obj.asInstanceOf[ClusterRerouteParams]
   }
   
-  extension [Self <: ClusterRerouteParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterRerouteParams] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     

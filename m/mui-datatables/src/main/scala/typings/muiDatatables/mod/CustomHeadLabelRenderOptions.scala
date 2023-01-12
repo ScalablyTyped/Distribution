@@ -19,7 +19,8 @@ object CustomHeadLabelRenderOptions {
     __obj.asInstanceOf[CustomHeadLabelRenderOptions]
   }
   
-  extension [Self <: CustomHeadLabelRenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomHeadLabelRenderOptions] (val x: Self) extends AnyVal {
     
     inline def setColPos(value: Double): Self = StObject.set(x, "colPos", value.asInstanceOf[js.Any])
     

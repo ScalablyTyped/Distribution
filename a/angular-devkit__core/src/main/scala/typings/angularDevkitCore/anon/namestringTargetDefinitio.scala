@@ -26,7 +26,8 @@ object namestringTargetDefinitio {
     __obj.asInstanceOf[namestringTargetDefinitio]
   }
   
-  extension [Self <: namestringTargetDefinitio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: namestringTargetDefinitio] (val x: Self) extends AnyVal {
     
     inline def setBuilder(value: String): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
     

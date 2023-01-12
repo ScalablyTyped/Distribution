@@ -208,7 +208,8 @@ object distCoreSnippetCacheMod {
       __obj.asInstanceOf[SnippetCacheEventMap]
     }
     
-    extension [Self <: SnippetCacheEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnippetCacheEventMap] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: FetchEvent): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
@@ -251,7 +252,8 @@ object distCoreSnippetCacheMod {
         __obj.asInstanceOf[HistoryState]
       }
       
-      extension [Self <: HistoryState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HistoryState] (val x: Self) extends AnyVal {
         
         inline def setSnippets(value: Key): Self = StObject.set(x, "snippets", value.asInstanceOf[js.Any])
         
@@ -274,7 +276,8 @@ object distCoreSnippetCacheMod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setSnippetCache(value: Boolean | SnippetCacheStorageType): Self = StObject.set(x, "snippetCache", value.asInstanceOf[js.Any])
         

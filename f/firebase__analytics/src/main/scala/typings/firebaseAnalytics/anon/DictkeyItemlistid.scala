@@ -23,7 +23,8 @@ object DictkeyItemlistid {
     __obj.asInstanceOf[DictkeyItemlistid]
   }
   
-  extension [Self <: DictkeyItemlistid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictkeyItemlistid] (val x: Self) extends AnyVal {
     
     inline def setItem_list_id(value: String): Self = StObject.set(x, "item_list_id", value.asInstanceOf[js.Any])
     

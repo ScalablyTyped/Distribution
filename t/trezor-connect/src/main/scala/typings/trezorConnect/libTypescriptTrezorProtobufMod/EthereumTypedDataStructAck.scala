@@ -15,7 +15,8 @@ object EthereumTypedDataStructAck {
     __obj.asInstanceOf[EthereumTypedDataStructAck]
   }
   
-  extension [Self <: EthereumTypedDataStructAck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumTypedDataStructAck] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: js.Array[EthereumStructMember]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     

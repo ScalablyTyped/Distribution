@@ -186,7 +186,8 @@ object layoutHeroHeroMod {
       __obj.asInstanceOf[HeroModifierProps]
     }
     
-    extension [Self <: HeroModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeroModifierProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -294,7 +295,8 @@ object layoutHeroHeroMod {
       __obj.asInstanceOf[HeroProps]
     }
     
-    extension [Self <: HeroProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeroProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -458,7 +460,8 @@ object layoutHeroHeroMod {
       __obj.asInstanceOf[HeroVariables]
     }
     
-    extension [Self <: HeroVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeroVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large | fullheight | `fullheight-with-navbar`): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
@@ -475,7 +478,8 @@ object layoutHeroHeroMod {
       __obj.asInstanceOf[HeroVariablesDefaults]
     }
     
-    extension [Self <: HeroVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeroVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large | fullheight | `fullheight-with-navbar`): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }

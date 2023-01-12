@@ -37,7 +37,8 @@ object BulkIndexDocumentsParams {
     __obj.asInstanceOf[BulkIndexDocumentsParams]
   }
   
-  extension [Self <: BulkIndexDocumentsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkIndexDocumentsParams] (val x: Self) extends AnyVal {
     
     inline def setFields(value: NameList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

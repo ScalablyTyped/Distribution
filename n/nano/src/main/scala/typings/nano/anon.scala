@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Active]
     }
     
-    extension [Self <: Active](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Doc[V]]
     }
     
-    extension [Self <: Doc[?], V](x: Self & Doc[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Doc[?], V] (val x: Self & Doc[V]) extends AnyVal {
       
       inline def setDoc(value: V): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object anon {
       __obj.asInstanceOf[External]
     }
     
-    extension [Self <: External](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: External] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -131,7 +134,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[SortOrder]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -161,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[String | Double]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -198,7 +203,8 @@ object anon {
       __obj.asInstanceOf[Id[V, D]]
     }
     
-    extension [Self <: Id[?, ?], V, D](x: Self & (Id[V, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id[?, ?], V, D] (val x: Self & (Id[V, D])) extends AnyVal {
       
       inline def setDoc(value: D & Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
@@ -225,7 +231,8 @@ object anon {
       __obj.asInstanceOf[IdRev]
     }
     
-    extension [Self <: IdRev](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdRev] (val x: Self) extends AnyVal {
       
       inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
       
@@ -244,7 +251,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -261,7 +269,8 @@ object anon {
       __obj.asInstanceOf[Rev]
     }
     
-    extension [Self <: Rev](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rev] (val x: Self) extends AnyVal {
       
       inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     }

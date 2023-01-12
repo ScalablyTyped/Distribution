@@ -104,7 +104,8 @@ object Texture {
     __obj.asInstanceOf[Texture]
   }
   
-  extension [Self <: Texture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Texture] (val x: Self) extends AnyVal {
     
     inline def setAffineTransform(value: AffineMatrix2D): Self = StObject.set(x, "AffineTransform", value.asInstanceOf[js.Any])
     

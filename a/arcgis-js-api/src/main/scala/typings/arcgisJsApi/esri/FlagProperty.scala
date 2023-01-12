@@ -79,7 +79,8 @@ object FlagProperty {
     __obj.asInstanceOf[FlagProperty]
   }
   
-  extension [Self <: FlagProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlagProperty] (val x: Self) extends AnyVal {
     
     inline def setAllTerminals(value: TerminalConfiguration): Self = StObject.set(x, "allTerminals", value.asInstanceOf[js.Any])
     

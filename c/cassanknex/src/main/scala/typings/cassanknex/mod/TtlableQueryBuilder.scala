@@ -17,7 +17,8 @@ object TtlableQueryBuilder {
     __obj.asInstanceOf[TtlableQueryBuilder]
   }
   
-  extension [Self <: TtlableQueryBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TtlableQueryBuilder] (val x: Self) extends AnyVal {
     
     inline def setUsingTTL(value: Double => TtlableQueryBuilder): Self = StObject.set(x, "usingTTL", js.Any.fromFunction1(value))
     

@@ -26,7 +26,8 @@ object WebBrowserCompleteAuthSessionResult {
     __obj.asInstanceOf[WebBrowserCompleteAuthSessionResult]
   }
   
-  extension [Self <: WebBrowserCompleteAuthSessionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebBrowserCompleteAuthSessionResult] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

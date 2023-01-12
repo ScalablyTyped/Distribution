@@ -28,7 +28,8 @@ object enginesExtensionsEngineDotvideoTextureMod {
         __obj.asInstanceOf[ThinEngine]
       }
       
-      extension [Self <: ThinEngine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThinEngine] (val x: Self) extends AnyVal {
         
         inline def setUpdateVideoTexture(value: (Nullable[InternalTexture], HTMLVideoElement, Boolean) => Unit): Self = StObject.set(x, "updateVideoTexture", js.Any.fromFunction3(value))
       }

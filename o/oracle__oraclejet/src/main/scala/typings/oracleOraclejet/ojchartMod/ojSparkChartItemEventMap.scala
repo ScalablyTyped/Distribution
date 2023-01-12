@@ -195,7 +195,8 @@ object ojSparkChartItemEventMap {
     __obj.asInstanceOf[ojSparkChartItemEventMap]
   }
   
-  extension [Self <: ojSparkChartItemEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojSparkChartItemEventMap] (val x: Self) extends AnyVal {
     
     inline def setBorderColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "borderColorChanged", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[BlockiesConfig]
     }
     
-    extension [Self <: BlockiesConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockiesConfig] (val x: Self) extends AnyVal {
       
       inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
       

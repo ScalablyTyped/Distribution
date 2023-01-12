@@ -22,7 +22,8 @@ object AutoFillRequest {
     __obj.asInstanceOf[AutoFillRequest]
   }
   
-  extension [Self <: AutoFillRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoFillRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

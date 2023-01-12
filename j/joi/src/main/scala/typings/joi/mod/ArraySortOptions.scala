@@ -22,7 +22,8 @@ object ArraySortOptions {
     __obj.asInstanceOf[ArraySortOptions]
   }
   
-  extension [Self <: ArraySortOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArraySortOptions] (val x: Self) extends AnyVal {
     
     inline def setBy(value: String | Reference): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
     

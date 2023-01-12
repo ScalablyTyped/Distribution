@@ -34,7 +34,8 @@ object Types {
       __obj.asInstanceOf[GetOptions]
     }
     
-    extension [Self <: GetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
       
       inline def setSource(value: default | server | cache): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -58,7 +59,8 @@ object Types {
       __obj.asInstanceOf[NativeDocumentChange]
     }
     
-    extension [Self <: NativeDocumentChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeDocumentChange] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: NativeDocumentSnapshot): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object Types {
       __obj.asInstanceOf[NativeDocumentSnapshot]
     }
     
-    extension [Self <: NativeDocumentSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeDocumentSnapshot] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[TypeMap]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object Types {
       __obj.asInstanceOf[SetOptions]
     }
     
-    extension [Self <: SetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
       
       inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
       
@@ -172,7 +176,8 @@ object Types {
       __obj.asInstanceOf[SnapshotMetadata]
     }
     
-    extension [Self <: SnapshotMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotMetadata] (val x: Self) extends AnyVal {
       
       inline def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
       
@@ -197,7 +202,8 @@ object Types {
       __obj.asInstanceOf[TypeMap]
     }
     
-    extension [Self <: TypeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeMap] (val x: Self) extends AnyVal {
       
       inline def setType(
         value: array | boolean | date | documentid | fieldvalue | geopoint | `null` | number | `object` | reference | string

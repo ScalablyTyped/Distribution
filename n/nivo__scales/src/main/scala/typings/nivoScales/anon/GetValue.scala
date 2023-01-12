@@ -19,7 +19,8 @@ object GetValue {
     __obj.asInstanceOf[GetValue[Axis, Value]]
   }
   
-  extension [Self <: GetValue[?, ?], Axis /* <: ScaleAxis */, Value /* <: ScaleValue */](x: Self & (GetValue[Axis, Value])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetValue[?, ?], Axis /* <: ScaleAxis */, Value /* <: ScaleValue */] (val x: Self & (GetValue[Axis, Value])) extends AnyVal {
     
     inline def setGetValue(value: /* d */ DataRecord[Axis, Value] => Value | Null): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     

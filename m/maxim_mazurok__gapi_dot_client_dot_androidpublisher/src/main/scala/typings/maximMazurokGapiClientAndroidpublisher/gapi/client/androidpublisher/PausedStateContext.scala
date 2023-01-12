@@ -16,7 +16,8 @@ object PausedStateContext {
     __obj.asInstanceOf[PausedStateContext]
   }
   
-  extension [Self <: PausedStateContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PausedStateContext] (val x: Self) extends AnyVal {
     
     inline def setAutoResumeTime(value: String): Self = StObject.set(x, "autoResumeTime", value.asInstanceOf[js.Any])
     

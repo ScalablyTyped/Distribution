@@ -19,7 +19,8 @@ object StreamParams {
     __obj.asInstanceOf[StreamParams]
   }
   
-  extension [Self <: StreamParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamParams] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: () => Any): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     

@@ -36,7 +36,8 @@ object FaxFolders {
     __obj.asInstanceOf[FaxFolders]
   }
   
-  extension [Self <: FaxFolders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxFolders] (val x: Self) extends AnyVal {
     
     inline def setFAXCOMEXLibDotFaxFolders_typekey(value: FaxFolders): Self = StObject.set(x, "FAXCOMEXLib.FaxFolders_typekey", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object distDeclarationsSrcCoreEventsMod {
       __obj.asInstanceOf[EventHandlers]
     }
     
-    extension [Self <: EventHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventHandlers] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: /* event */ ThreeEvent[MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
@@ -156,7 +157,8 @@ object distDeclarationsSrcCoreEventsMod {
       __obj.asInstanceOf[EventManager[TTarget]]
     }
     
-    extension [Self <: EventManager[?], TTarget](x: Self & EventManager[TTarget]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventManager[?], TTarget] (val x: Self & EventManager[TTarget]) extends AnyVal {
       
       inline def setCompute(value: (/* event */ DomEvent, /* root */ RootState, /* previous */ js.UndefOr[RootState]) => Unit): Self = StObject.set(x, "compute", js.Any.fromFunction3(value))
       
@@ -234,7 +236,8 @@ object distDeclarationsSrcCoreEventsMod {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: /* evt */ typings.std.Event => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
@@ -287,7 +290,8 @@ object distDeclarationsSrcCoreEventsMod {
       __obj.asInstanceOf[Intersection]
     }
     
-    extension [Self <: Intersection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Intersection] (val x: Self) extends AnyVal {
       
       inline def setEventObject(value: Object3D[Event]): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
     }
@@ -337,7 +341,8 @@ object distDeclarationsSrcCoreEventsMod {
       __obj.asInstanceOf[IntersectionEvent[TSourceEvent]]
     }
     
-    extension [Self <: IntersectionEvent[?], TSourceEvent](x: Self & IntersectionEvent[TSourceEvent]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntersectionEvent[?], TSourceEvent] (val x: Self & IntersectionEvent[TSourceEvent]) extends AnyVal {
       
       inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
@@ -374,7 +379,8 @@ object distDeclarationsSrcCoreEventsMod {
       __obj.asInstanceOf[PointerCaptureTarget]
     }
     
-    extension [Self <: PointerCaptureTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointerCaptureTarget] (val x: Self) extends AnyVal {
       
       inline def setIntersection(value: Intersection): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
       

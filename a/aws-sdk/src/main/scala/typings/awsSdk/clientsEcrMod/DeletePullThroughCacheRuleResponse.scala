@@ -33,7 +33,8 @@ object DeletePullThroughCacheRuleResponse {
     __obj.asInstanceOf[DeletePullThroughCacheRuleResponse]
   }
   
-  extension [Self <: DeletePullThroughCacheRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePullThroughCacheRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

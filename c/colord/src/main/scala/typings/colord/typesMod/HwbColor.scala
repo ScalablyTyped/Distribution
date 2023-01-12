@@ -21,7 +21,8 @@ object HwbColor {
     __obj.asInstanceOf[HwbColor]
   }
   
-  extension [Self <: HwbColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HwbColor] (val x: Self) extends AnyVal {
     
     inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Self {
     __obj.asInstanceOf[Self]
   }
   
-  extension [Self_ <: Self](x: Self_) {
+  @scala.inline
+  implicit open class MutableBuilder[Self_ <: Self] (val x: Self_) extends AnyVal {
     
     inline def setGit(value: String): Self_ = StObject.set(x, "git", value.asInstanceOf[js.Any])
     

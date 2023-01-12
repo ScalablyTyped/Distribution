@@ -18,7 +18,8 @@ object OldSession {
     __obj.asInstanceOf[OldSession]
   }
   
-  extension [Self <: OldSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OldSession] (val x: Self) extends AnyVal {
     
     inline def setOldSession(value: EditSession): Self = StObject.set(x, "oldSession", value.asInstanceOf[js.Any])
     

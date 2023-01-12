@@ -21,7 +21,8 @@ object IndicesUpdateAliasesParamsAction {
     __obj.asInstanceOf[IndicesUpdateAliasesParamsAction]
   }
   
-  extension [Self <: IndicesUpdateAliasesParamsAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesUpdateAliasesParamsAction] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Alias): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

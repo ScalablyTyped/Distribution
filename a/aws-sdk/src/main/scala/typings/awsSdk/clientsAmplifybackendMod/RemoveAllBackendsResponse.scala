@@ -38,7 +38,8 @@ object RemoveAllBackendsResponse {
     __obj.asInstanceOf[RemoveAllBackendsResponse]
   }
   
-  extension [Self <: RemoveAllBackendsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveAllBackendsResponse] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: string): Self = StObject.set(x, "AppId", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object ContainerSettings {
     __obj.asInstanceOf[ContainerSettings]
   }
   
-  extension [Self <: ContainerSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerSettings] (val x: Self) extends AnyVal {
     
     inline def setCmfcSettings(value: CmfcSettings): Self = StObject.set(x, "CmfcSettings", value.asInstanceOf[js.Any])
     

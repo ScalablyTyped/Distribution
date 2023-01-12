@@ -23,7 +23,8 @@ object ListDecoderManifestsResponse {
     __obj.asInstanceOf[ListDecoderManifestsResponse]
   }
   
-  extension [Self <: ListDecoderManifestsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDecoderManifestsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -438,7 +438,8 @@ object INodeInterface {
     __obj.asInstanceOf[INodeInterface]
   }
   
-  extension [Self <: INodeInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INodeInterface] (val x: Self) extends AnyVal {
     
     inline def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
     

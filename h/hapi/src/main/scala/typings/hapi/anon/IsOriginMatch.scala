@@ -19,7 +19,8 @@ object IsOriginMatch {
     __obj.asInstanceOf[IsOriginMatch]
   }
   
-  extension [Self <: IsOriginMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsOriginMatch] (val x: Self) extends AnyVal {
     
     inline def setIsOriginMatch(value: Boolean): Self = StObject.set(x, "isOriginMatch", value.asInstanceOf[js.Any])
     

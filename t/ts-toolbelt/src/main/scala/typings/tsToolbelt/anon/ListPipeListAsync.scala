@@ -208,7 +208,8 @@ object ListPipeListAsync {
     __obj.asInstanceOf[ListPipeListAsync]
   }
   
-  extension [Self <: ListPipeListAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPipeListAsync] (val x: Self) extends AnyVal {
     
     inline def setList(value: PipeListAsync): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

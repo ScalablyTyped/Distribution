@@ -15,7 +15,8 @@ object None {
     __obj.asInstanceOf[None]
   }
   
-  extension [Self <: None](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: None] (val x: Self) extends AnyVal {
     
     inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }

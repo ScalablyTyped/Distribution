@@ -17,7 +17,8 @@ object ExportParameters {
     __obj.asInstanceOf[ExportParameters]
   }
   
-  extension [Self <: ExportParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportParameters] (val x: Self) extends AnyVal {
     
     inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     

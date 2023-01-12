@@ -17,7 +17,8 @@ object TooltipContent {
     __obj.asInstanceOf[TooltipContent]
   }
   
-  extension [Self <: TooltipContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipContent] (val x: Self) extends AnyVal {
     
     inline def setContent(value: encoding | data): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

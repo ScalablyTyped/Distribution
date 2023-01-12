@@ -28,7 +28,8 @@ object BaiduChannelRequest {
     __obj.asInstanceOf[BaiduChannelRequest]
   }
   
-  extension [Self <: BaiduChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaiduChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: string): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
     

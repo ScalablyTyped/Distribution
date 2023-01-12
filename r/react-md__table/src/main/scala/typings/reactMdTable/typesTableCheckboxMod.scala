@@ -547,7 +547,8 @@ object typesTableCheckboxMod {
       __obj.asInstanceOf[TableCheckboxProps]
     }
     
-    extension [Self <: TableCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       

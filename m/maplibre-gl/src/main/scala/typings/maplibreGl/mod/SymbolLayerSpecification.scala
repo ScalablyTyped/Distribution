@@ -39,7 +39,8 @@ object SymbolLayerSpecification {
     __obj.asInstanceOf[SymbolLayerSpecification]
   }
   
-  extension [Self <: SymbolLayerSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolLayerSpecification] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FilterSpecification): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

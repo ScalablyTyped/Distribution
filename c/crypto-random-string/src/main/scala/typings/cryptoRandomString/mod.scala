@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[CharactersOption]
     }
     
-    extension [Self <: CharactersOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CharactersOption] (val x: Self) extends AnyVal {
       
       inline def setCharacters(value: String): Self = StObject.set(x, "characters", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object mod {
       __obj.asInstanceOf[TypeOption]
     }
     
-    extension [Self <: TypeOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeOption] (val x: Self) extends AnyVal {
       
       inline def setType(value: hex | base64 | `url-safe` | numeric | distinguishable | `ascii-printable` | alphanumeric): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

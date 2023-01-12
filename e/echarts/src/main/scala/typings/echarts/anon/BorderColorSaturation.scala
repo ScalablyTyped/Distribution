@@ -123,7 +123,8 @@ object BorderColorSaturation {
     __obj.asInstanceOf[BorderColorSaturation]
   }
   
-  extension [Self <: BorderColorSaturation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderColorSaturation] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

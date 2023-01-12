@@ -24,7 +24,8 @@ object RenderOptions {
     __obj.asInstanceOf[RenderOptions]
   }
   
-  extension [Self <: RenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoViewport(value: Boolean): Self = StObject.set(x, "autoViewport", value.asInstanceOf[js.Any])
     

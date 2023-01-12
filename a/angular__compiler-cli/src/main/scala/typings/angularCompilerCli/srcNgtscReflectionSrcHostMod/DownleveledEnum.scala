@@ -18,7 +18,8 @@ object DownleveledEnum {
     __obj.asInstanceOf[DownleveledEnum]
   }
   
-  extension [Self <: DownleveledEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownleveledEnum] (val x: Self) extends AnyVal {
     
     inline def setEnumMembers(value: js.Array[EnumMember]): Self = StObject.set(x, "enumMembers", value.asInstanceOf[js.Any])
     

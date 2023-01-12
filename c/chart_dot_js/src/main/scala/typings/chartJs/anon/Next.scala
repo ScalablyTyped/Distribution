@@ -18,7 +18,8 @@ object Next {
     __obj.asInstanceOf[Next]
   }
   
-  extension [Self <: Next](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
     
     inline def setNext(value: SplinePoint): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     

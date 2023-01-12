@@ -152,7 +152,8 @@ object buildSrcAggregateMod {
       __obj.asInstanceOf[ArgmaxDef]
     }
     
-    extension [Self <: ArgmaxDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgmaxDef] (val x: Self) extends AnyVal {
       
       inline def setArgmax(value: FieldName): Self = StObject.set(x, "argmax", value.asInstanceOf[js.Any])
     }
@@ -169,7 +170,8 @@ object buildSrcAggregateMod {
       __obj.asInstanceOf[ArgminDef]
     }
     
-    extension [Self <: ArgminDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgminDef] (val x: Self) extends AnyVal {
       
       inline def setArgmin(value: FieldName): Self = StObject.set(x, "argmin", value.asInstanceOf[js.Any])
     }

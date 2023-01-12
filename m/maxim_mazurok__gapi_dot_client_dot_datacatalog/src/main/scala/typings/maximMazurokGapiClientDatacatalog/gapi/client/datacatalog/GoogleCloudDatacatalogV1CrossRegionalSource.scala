@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1CrossRegionalSource {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1CrossRegionalSource]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1CrossRegionalSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1CrossRegionalSource] (val x: Self) extends AnyVal {
     
     inline def setTaxonomy(value: String): Self = StObject.set(x, "taxonomy", value.asInstanceOf[js.Any])
     

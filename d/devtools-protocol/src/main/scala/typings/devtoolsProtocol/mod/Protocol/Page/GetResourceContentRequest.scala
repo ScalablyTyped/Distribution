@@ -23,7 +23,8 @@ object GetResourceContentRequest {
     __obj.asInstanceOf[GetResourceContentRequest]
   }
   
-  extension [Self <: GetResourceContentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceContentRequest] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

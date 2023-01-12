@@ -28,7 +28,8 @@ object SanitizationWarning {
     __obj.asInstanceOf[SanitizationWarning]
   }
   
-  extension [Self <: SanitizationWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SanitizationWarning] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: string): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     

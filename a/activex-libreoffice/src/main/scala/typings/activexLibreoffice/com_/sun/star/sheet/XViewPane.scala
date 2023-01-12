@@ -58,7 +58,8 @@ object XViewPane {
     __obj.asInstanceOf[XViewPane]
   }
   
-  extension [Self <: XViewPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XViewPane] (val x: Self) extends AnyVal {
     
     inline def setFirstVisibleColumn(value: Double): Self = StObject.set(x, "FirstVisibleColumn", value.asInstanceOf[js.Any])
     

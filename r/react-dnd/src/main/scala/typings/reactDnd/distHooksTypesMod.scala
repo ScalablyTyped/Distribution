@@ -105,7 +105,8 @@ object distHooksTypesMod {
       __obj.asInstanceOf[DragSourceHookSpec[DragObject, DropResult, CollectedProps]]
     }
     
-    extension [Self <: DragSourceHookSpec[?, ?, ?], DragObject, DropResult, CollectedProps](x: Self & (DragSourceHookSpec[DragObject, DropResult, CollectedProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragSourceHookSpec[?, ?, ?], DragObject, DropResult, CollectedProps] (val x: Self & (DragSourceHookSpec[DragObject, DropResult, CollectedProps])) extends AnyVal {
       
       inline def setCanDrag(value: Boolean | (js.Function1[/* monitor */ DragSourceMonitor[DragObject, DropResult], Boolean])): Self = StObject.set(x, "canDrag", value.asInstanceOf[js.Any])
       
@@ -212,7 +213,8 @@ object distHooksTypesMod {
       __obj.asInstanceOf[DropTargetHookSpec[DragObject, DropResult, CollectedProps]]
     }
     
-    extension [Self <: DropTargetHookSpec[?, ?, ?], DragObject, DropResult, CollectedProps](x: Self & (DropTargetHookSpec[DragObject, DropResult, CollectedProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropTargetHookSpec[?, ?, ?], DragObject, DropResult, CollectedProps] (val x: Self & (DropTargetHookSpec[DragObject, DropResult, CollectedProps])) extends AnyVal {
       
       inline def setAccept(value: TargetType): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       

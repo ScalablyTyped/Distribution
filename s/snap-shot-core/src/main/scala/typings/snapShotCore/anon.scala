@@ -66,7 +66,8 @@ object anon {
       __obj.asInstanceOf[Comment[T, U]]
     }
     
-    extension [Self <: Comment[?, ?], T /* <: js.Object | Null */, U](x: Self & (Comment[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment[?, ?], T /* <: js.Object | Null */, U] (val x: Self & (Comment[T, U])) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Compare[T]]
     }
     
-    extension [Self <: Compare[?], T /* <: js.Object | Null */](x: Self & Compare[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compare[?], T /* <: js.Object | Null */] (val x: Self & Compare[T]) extends AnyVal {
       
       inline def setCompare(value: /* options */ Expected[T] => Result): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
       
@@ -162,7 +164,8 @@ object anon {
       __obj.asInstanceOf[ExactSpecName]
     }
     
-    extension [Self <: ExactSpecName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExactSpecName] (val x: Self) extends AnyVal {
       
       inline def setExactSpecName(value: String): Self = StObject.set(x, "exactSpecName", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object anon {
       __obj.asInstanceOf[Expected[T]]
     }
     
-    extension [Self <: Expected[?], T /* <: js.Object | Null */](x: Self & Expected[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expected[?], T /* <: js.Object | Null */] (val x: Self & Expected[T]) extends AnyVal {
       
       inline def setExpected(value: Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
@@ -221,7 +225,8 @@ object anon {
       __obj.asInstanceOf[Ext]
     }
     
-    extension [Self <: Ext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ext] (val x: Self) extends AnyVal {
       
       inline def setExt(value: /* template literal string: .${string} */ String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
@@ -246,7 +251,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -269,7 +275,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setExactSpecName(value: String): Self = StObject.set(x, "exactSpecName", value.asInstanceOf[js.Any])
       
@@ -304,7 +311,8 @@ object anon {
       __obj.asInstanceOf[Key[U]]
     }
     
-    extension [Self <: Key[?], U](x: Self & Key[U]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key[?], U] (val x: Self & Key[U]) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -337,7 +345,8 @@ object anon {
       __obj.asInstanceOf[Opts]
     }
     
-    extension [Self <: Opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -384,7 +393,8 @@ object anon {
       __obj.asInstanceOf[SortSnapshots]
     }
     
-    extension [Self <: SortSnapshots](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortSnapshots] (val x: Self) extends AnyVal {
       
       inline def setSortSnapshots(value: Boolean): Self = StObject.set(x, "sortSnapshots", value.asInstanceOf[js.Any])
       
@@ -409,7 +419,8 @@ object anon {
       __obj.asInstanceOf[SpecFile]
     }
     
-    extension [Self <: SpecFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecFile] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

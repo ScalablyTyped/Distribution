@@ -22,7 +22,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSource {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSource]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSource] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

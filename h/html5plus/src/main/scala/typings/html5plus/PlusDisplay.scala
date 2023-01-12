@@ -36,7 +36,8 @@ object PlusDisplay {
     __obj.asInstanceOf[PlusDisplay]
   }
   
-  extension [Self <: PlusDisplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusDisplay] (val x: Self) extends AnyVal {
     
     inline def setResolutionHeight(value: Double): Self = StObject.set(x, "resolutionHeight", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object GitConflictDeleteEdit {
     __obj.asInstanceOf[GitConflictDeleteEdit]
   }
   
-  extension [Self <: GitConflictDeleteEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitConflictDeleteEdit] (val x: Self) extends AnyVal {
     
     inline def setBaseBlob(value: GitBlobRef): Self = StObject.set(x, "baseBlob", value.asInstanceOf[js.Any])
     

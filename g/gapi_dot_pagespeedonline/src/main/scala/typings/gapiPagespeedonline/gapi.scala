@@ -26,7 +26,8 @@ object gapi {
           __obj.asInstanceOf[pagespeedapi]
         }
         
-        extension [Self <: pagespeedapi](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: pagespeedapi] (val x: Self) extends AnyVal {
           
           inline def setRunpagespeed(value: Fields => HttpRequest[GoogleApiPageSpeedOnlineResource]): Self = StObject.set(x, "runpagespeed", js.Any.fromFunction1(value))
         }

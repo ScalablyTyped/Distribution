@@ -1228,7 +1228,8 @@ object ojoptionMod {
       __obj.asInstanceOf[ojOptionEventMap]
     }
     
-    extension [Self <: ojOptionEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojOptionEventMap] (val x: Self) extends AnyVal {
       
       inline def setDisabledChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "disabledChanged", value.asInstanceOf[js.Any])
       
@@ -1255,7 +1256,8 @@ object ojoptionMod {
       __obj.asInstanceOf[ojOptionSettableProperties]
     }
     
-    extension [Self <: ojOptionSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojOptionSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -1279,7 +1281,8 @@ object ojoptionMod {
       __obj.asInstanceOf[ojOptionSettablePropertiesLenient]
     }
     
-    extension [Self <: ojOptionSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojOptionSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

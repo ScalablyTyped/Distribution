@@ -38,7 +38,8 @@ object GetBulkPublishDetailsResponse {
     __obj.asInstanceOf[GetBulkPublishDetailsResponse]
   }
   
-  extension [Self <: GetBulkPublishDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBulkPublishDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setBulkPublishCompleteTime(value: js.Date): Self = StObject.set(x, "BulkPublishCompleteTime", value.asInstanceOf[js.Any])
     

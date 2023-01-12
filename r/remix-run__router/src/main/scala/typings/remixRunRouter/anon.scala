@@ -50,7 +50,8 @@ object anon {
       __obj.asInstanceOf[ActionResult]
     }
     
-    extension [Self <: ActionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionResult] (val x: Self) extends AnyVal {
       
       inline def setActionResult(value: DataResult): Self = StObject.set(x, "actionResult", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Data[TData]]
     }
     
-    extension [Self <: Data[?], TData](x: Self & Data[TData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data[?], TData] (val x: Self & Data[TData]) extends AnyVal {
       
       inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object anon {
       __obj.asInstanceOf[FormAction[TData]]
     }
     
-    extension [Self <: FormAction[?], TData](x: Self & FormAction[TData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormAction[?], TData] (val x: Self & FormAction[TData]) extends AnyVal {
       
       inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -196,7 +199,8 @@ object anon {
       __obj.asInstanceOf[FormData[TData]]
     }
     
-    extension [Self <: FormData[?], TData](x: Self & FormData[TData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormData[?], TData] (val x: Self & FormData[TData]) extends AnyVal {
       
       inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object anon {
       __obj.asInstanceOf[FormEncType]
     }
     
-    extension [Self <: FormEncType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormEncType] (val x: Self) extends AnyVal {
       
       inline def setFormAction(value: Unit): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
       
@@ -272,7 +277,8 @@ object anon {
       __obj.asInstanceOf[FormMethod]
     }
     
-    extension [Self <: FormMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormMethod] (val x: Self) extends AnyVal {
       
       inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
       
@@ -323,7 +329,8 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
       
@@ -355,7 +362,8 @@ object anon {
       __obj.asInstanceOf[OmitLinkNavigateOptionsre]
     }
     
-    extension [Self <: OmitLinkNavigateOptionsre](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitLinkNavigateOptionsre] (val x: Self) extends AnyVal {
       
       inline def setPreventScrollReset(value: Boolean): Self = StObject.set(x, "preventScrollReset", value.asInstanceOf[js.Any])
       
@@ -387,7 +395,8 @@ object anon {
       __obj.asInstanceOf[OmitSubmissionNavigateOpt]
     }
     
-    extension [Self <: OmitSubmissionNavigateOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitSubmissionNavigateOpt] (val x: Self) extends AnyVal {
       
       inline def setFormData(value: typings.std.FormData): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
@@ -425,7 +434,8 @@ object anon {
       __obj.asInstanceOf[PartialLocation]
     }
     
-    extension [Self <: PartialLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLocation] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -465,7 +475,8 @@ object anon {
       __obj.asInstanceOf[PartialPath]
     }
     
-    extension [Self <: PartialPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPath] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -501,7 +512,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyLocation]
     }
     
-    extension [Self <: ReadonlyLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyLocation] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

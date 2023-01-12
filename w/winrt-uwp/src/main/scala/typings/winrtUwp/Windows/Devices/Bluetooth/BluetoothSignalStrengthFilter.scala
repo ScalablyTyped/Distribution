@@ -31,7 +31,8 @@ object BluetoothSignalStrengthFilter {
     __obj.asInstanceOf[BluetoothSignalStrengthFilter]
   }
   
-  extension [Self <: BluetoothSignalStrengthFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothSignalStrengthFilter] (val x: Self) extends AnyVal {
     
     inline def setInRangeThresholdInDBm(value: Double): Self = StObject.set(x, "inRangeThresholdInDBm", value.asInstanceOf[js.Any])
     

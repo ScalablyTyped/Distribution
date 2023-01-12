@@ -48,7 +48,8 @@ object ServerGroupEntry {
     __obj.asInstanceOf[ServerGroupEntry]
   }
   
-  extension [Self <: ServerGroupEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerGroupEntry] (val x: Self) extends AnyVal {
     
     inline def setIconid(value: String): Self = StObject.set(x, "iconid", value.asInstanceOf[js.Any])
     

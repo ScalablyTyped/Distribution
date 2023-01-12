@@ -26,7 +26,8 @@ object CreateBucketOptions {
     __obj.asInstanceOf[CreateBucketOptions]
   }
   
-  extension [Self <: CreateBucketOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBucketOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     

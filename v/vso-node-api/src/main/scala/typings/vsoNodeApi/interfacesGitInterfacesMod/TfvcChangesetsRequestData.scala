@@ -28,7 +28,8 @@ object TfvcChangesetsRequestData {
     __obj.asInstanceOf[TfvcChangesetsRequestData]
   }
   
-  extension [Self <: TfvcChangesetsRequestData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcChangesetsRequestData] (val x: Self) extends AnyVal {
     
     inline def setChangesetIds(value: js.Array[Double]): Self = StObject.set(x, "changesetIds", value.asInstanceOf[js.Any])
     

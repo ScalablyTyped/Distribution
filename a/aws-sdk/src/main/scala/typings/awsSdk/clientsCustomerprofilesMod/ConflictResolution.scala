@@ -23,7 +23,8 @@ object ConflictResolution {
     __obj.asInstanceOf[ConflictResolution]
   }
   
-  extension [Self <: ConflictResolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConflictResolution] (val x: Self) extends AnyVal {
     
     inline def setConflictResolvingModel(value: ConflictResolvingModel): Self = StObject.set(x, "ConflictResolvingModel", value.asInstanceOf[js.Any])
     

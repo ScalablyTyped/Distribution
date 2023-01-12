@@ -27,7 +27,8 @@ object libPlotsFunnelTypesMod {
       __obj.asInstanceOf[ConversionPosition]
     }
     
-    extension [Self <: ConversionPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversionPosition] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: AnnotationPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object libPlotsFunnelTypesMod {
       __obj.asInstanceOf[FunnelOptions]
     }
     
-    extension [Self <: FunnelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunnelOptions] (val x: Self) extends AnyVal {
       
       inline def setCompareField(value: String): Self = StObject.set(x, "compareField", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object RectHeightStyleEnumValues {
     __obj.asInstanceOf[RectHeightStyleEnumValues]
   }
   
-  extension [Self <: RectHeightStyleEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectHeightStyleEnumValues] (val x: Self) extends AnyVal {
     
     inline def setIncludeLineSpacingBottom(value: RectHeightStyle): Self = StObject.set(x, "IncludeLineSpacingBottom", value.asInstanceOf[js.Any])
     

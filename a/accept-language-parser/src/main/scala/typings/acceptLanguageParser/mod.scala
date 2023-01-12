@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[Language]
     }
     
-    extension [Self <: Language](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[PickOptions]
     }
     
-    extension [Self <: PickOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickOptions] (val x: Self) extends AnyVal {
       
       inline def setLoose(value: Boolean): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
       

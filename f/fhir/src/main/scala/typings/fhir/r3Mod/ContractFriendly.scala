@@ -25,7 +25,8 @@ object ContractFriendly {
     __obj.asInstanceOf[ContractFriendly]
   }
   
-  extension [Self <: ContractFriendly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContractFriendly] (val x: Self) extends AnyVal {
     
     inline def setContentAttachment(value: Attachment): Self = StObject.set(x, "contentAttachment", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object LocationMetadata {
     __obj.asInstanceOf[LocationMetadata]
   }
   
-  extension [Self <: LocationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationMetadata] (val x: Self) extends AnyVal {
     
     inline def setFlexibleEnvironmentAvailable(value: Boolean): Self = StObject.set(x, "flexibleEnvironmentAvailable", value.asInstanceOf[js.Any])
     

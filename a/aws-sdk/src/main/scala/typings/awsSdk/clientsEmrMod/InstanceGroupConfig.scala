@@ -63,7 +63,8 @@ object InstanceGroupConfig {
     __obj.asInstanceOf[InstanceGroupConfig]
   }
   
-  extension [Self <: InstanceGroupConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingPolicy(value: AutoScalingPolicy): Self = StObject.set(x, "AutoScalingPolicy", value.asInstanceOf[js.Any])
     

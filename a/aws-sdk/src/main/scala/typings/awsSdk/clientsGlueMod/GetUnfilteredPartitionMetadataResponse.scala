@@ -19,7 +19,8 @@ object GetUnfilteredPartitionMetadataResponse {
     __obj.asInstanceOf[GetUnfilteredPartitionMetadataResponse]
   }
   
-  extension [Self <: GetUnfilteredPartitionMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUnfilteredPartitionMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedColumns(value: NameStringList): Self = StObject.set(x, "AuthorizedColumns", value.asInstanceOf[js.Any])
     

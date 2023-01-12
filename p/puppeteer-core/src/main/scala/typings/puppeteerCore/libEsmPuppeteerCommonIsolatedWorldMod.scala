@@ -214,7 +214,8 @@ object libEsmPuppeteerCommonIsolatedWorldMod {
       __obj.asInstanceOf[PageBinding]
     }
     
-    extension [Self <: PageBinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageBinding] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -256,7 +257,8 @@ object libEsmPuppeteerCommonIsolatedWorldMod {
       __obj.asInstanceOf[WaitForSelectorOptions]
     }
     
-    extension [Self <: WaitForSelectorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitForSelectorOptions] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object IEventSubscription {
     __obj.asInstanceOf[IEventSubscription]
   }
   
-  extension [Self <: IEventSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEventSubscription] (val x: Self) extends AnyVal {
     
     inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     

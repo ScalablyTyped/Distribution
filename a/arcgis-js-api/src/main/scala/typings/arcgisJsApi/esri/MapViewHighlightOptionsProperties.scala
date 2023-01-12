@@ -47,7 +47,8 @@ object MapViewHighlightOptionsProperties {
     __obj.asInstanceOf[MapViewHighlightOptionsProperties]
   }
   
-  extension [Self <: MapViewHighlightOptionsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapViewHighlightOptionsProperties] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

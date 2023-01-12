@@ -40,7 +40,8 @@ object XPersistanceHolder {
     __obj.asInstanceOf[XPersistanceHolder]
   }
   
-  extension [Self <: XPersistanceHolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPersistanceHolder] (val x: Self) extends AnyVal {
     
     inline def setConnectPersistance(value: XStream => Unit): Self = StObject.set(x, "connectPersistance", js.Any.fromFunction1(value))
     

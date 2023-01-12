@@ -28,7 +28,8 @@ object PollItemsRequest {
     __obj.asInstanceOf[PollItemsRequest]
   }
   
-  extension [Self <: PollItemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PollItemsRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     

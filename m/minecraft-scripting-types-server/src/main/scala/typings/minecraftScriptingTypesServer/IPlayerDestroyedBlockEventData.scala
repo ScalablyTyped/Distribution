@@ -33,7 +33,8 @@ object IPlayerDestroyedBlockEventData {
     __obj.asInstanceOf[IPlayerDestroyedBlockEventData]
   }
   
-  extension [Self <: IPlayerDestroyedBlockEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlayerDestroyedBlockEventData] (val x: Self) extends AnyVal {
     
     inline def setBlock_identifier(value: String): Self = StObject.set(x, "block_identifier", value.asInstanceOf[js.Any])
     

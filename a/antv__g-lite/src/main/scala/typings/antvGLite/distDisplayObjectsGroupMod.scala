@@ -37,7 +37,8 @@ object distDisplayObjectsGroupMod {
       __obj.asInstanceOf[GroupStyleProps]
     }
     
-    extension [Self <: GroupStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupStyleProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object distDisplayObjectsGroupMod {
       __obj.asInstanceOf[ParsedGroupStyleProps]
     }
     
-    extension [Self <: ParsedGroupStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedGroupStyleProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: CSSUnitValue): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

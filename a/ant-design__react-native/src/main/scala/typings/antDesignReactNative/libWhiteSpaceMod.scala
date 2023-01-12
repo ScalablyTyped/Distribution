@@ -49,7 +49,8 @@ object libWhiteSpaceMod {
       __obj.asInstanceOf[WhiteSpaceProps]
     }
     
-    extension [Self <: WhiteSpaceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhiteSpaceProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: xs | sm | md | lg | xl): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

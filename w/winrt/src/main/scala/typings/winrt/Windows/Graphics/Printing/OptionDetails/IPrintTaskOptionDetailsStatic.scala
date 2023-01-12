@@ -16,7 +16,8 @@ object IPrintTaskOptionDetailsStatic {
     __obj.asInstanceOf[IPrintTaskOptionDetailsStatic]
   }
   
-  extension [Self <: IPrintTaskOptionDetailsStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintTaskOptionDetailsStatic] (val x: Self) extends AnyVal {
     
     inline def setGetFromPrintTaskOptions(value: PrintTaskOptions => PrintTaskOptionDetails): Self = StObject.set(x, "getFromPrintTaskOptions", js.Any.fromFunction1(value))
   }

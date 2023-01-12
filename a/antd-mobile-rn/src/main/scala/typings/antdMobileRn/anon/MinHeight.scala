@@ -38,7 +38,8 @@ object MinHeight {
     __obj.asInstanceOf[MinHeight]
   }
   
-  extension [Self <: MinHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinHeight] (val x: Self) extends AnyVal {
     
     inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

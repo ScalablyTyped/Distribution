@@ -21,7 +21,8 @@ object Quixote {
     __obj.asInstanceOf[Quixote]
   }
   
-  extension [Self <: Quixote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Quixote] (val x: Self) extends AnyVal {
     
     inline def setCreateFrame(
       value: (QuixoteFrameOptions, js.Function2[/* err */ js.Error, /* loadedFrame */ QFrame, Unit]) => QFrame

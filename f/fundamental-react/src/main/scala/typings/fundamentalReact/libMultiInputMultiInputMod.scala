@@ -53,7 +53,8 @@ object libMultiInputMultiInputMod {
       __obj.asInstanceOf[MultiInputProps]
     }
     
-    extension [Self <: MultiInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiInputProps] (val x: Self) extends AnyVal {
       
       inline def setButtonProps(value: Any): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       

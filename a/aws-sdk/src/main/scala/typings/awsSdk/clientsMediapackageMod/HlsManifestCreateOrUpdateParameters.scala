@@ -70,7 +70,8 @@ object HlsManifestCreateOrUpdateParameters {
     __obj.asInstanceOf[HlsManifestCreateOrUpdateParameters]
   }
   
-  extension [Self <: HlsManifestCreateOrUpdateParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsManifestCreateOrUpdateParameters] (val x: Self) extends AnyVal {
     
     inline def setAdMarkers(value: AdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[AgentStatus]
     }
     
-    extension [Self <: AgentStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentStatus] (val x: Self) extends AnyVal {
       
       inline def setCloseSocketCount(value: Double): Self = StObject.set(x, "closeSocketCount", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[CommonHttpOption]
     }
     
-    extension [Self <: CommonHttpOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonHttpOption] (val x: Self) extends AnyVal {
       
       inline def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
       
@@ -169,7 +171,8 @@ object mod {
       __obj.asInstanceOf[Constants_]
     }
     
-    extension [Self <: Constants_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constants_] (val x: Self) extends AnyVal {
       
       inline def setCREATE_HTTPS_CONNECTION(value: js.Symbol): Self = StObject.set(x, "CREATE_HTTPS_CONNECTION", value.asInstanceOf[js.Any])
       
@@ -218,7 +221,8 @@ object mod {
       __obj.asInstanceOf[HttpOptions]
     }
     
-    extension [Self <: HttpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
       
       inline def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
       
@@ -252,7 +256,8 @@ object mod {
       __obj.asInstanceOf[HttpsOptions]
     }
     
-    extension [Self <: HttpsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsOptions] (val x: Self) extends AnyVal {
       
       inline def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
       

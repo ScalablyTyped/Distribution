@@ -36,7 +36,8 @@ object ImplementationGuideManifestPage {
     __obj.asInstanceOf[ImplementationGuideManifestPage]
   }
   
-  extension [Self <: ImplementationGuideManifestPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuideManifestPage] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: js.Array[String]): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

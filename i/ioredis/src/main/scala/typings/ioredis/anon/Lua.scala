@@ -19,7 +19,8 @@ object Lua {
     __obj.asInstanceOf[Lua]
   }
   
-  extension [Self <: Lua](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lua] (val x: Self) extends AnyVal {
     
     inline def setLua(value: String): Self = StObject.set(x, "lua", value.asInstanceOf[js.Any])
     

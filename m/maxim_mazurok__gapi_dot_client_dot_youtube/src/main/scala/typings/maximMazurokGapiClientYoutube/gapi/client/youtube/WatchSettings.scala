@@ -22,7 +22,8 @@ object WatchSettings {
     __obj.asInstanceOf[WatchSettings]
   }
   
-  extension [Self <: WatchSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchSettings] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object GizmoAxisCache {
     __obj.asInstanceOf[GizmoAxisCache]
   }
   
-  extension [Self <: GizmoAxisCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GizmoAxisCache] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

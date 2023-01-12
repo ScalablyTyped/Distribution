@@ -18,7 +18,8 @@ object CriteriaBlockForJob {
     __obj.asInstanceOf[CriteriaBlockForJob]
   }
   
-  extension [Self <: CriteriaBlockForJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CriteriaBlockForJob] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: listOfCriteriaForJob): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     

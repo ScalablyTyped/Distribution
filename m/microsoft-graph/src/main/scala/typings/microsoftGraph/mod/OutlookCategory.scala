@@ -27,7 +27,8 @@ object OutlookCategory {
     __obj.asInstanceOf[OutlookCategory]
   }
   
-  extension [Self <: OutlookCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlookCategory] (val x: Self) extends AnyVal {
     
     inline def setColor(value: NullableOption[CategoryColor]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

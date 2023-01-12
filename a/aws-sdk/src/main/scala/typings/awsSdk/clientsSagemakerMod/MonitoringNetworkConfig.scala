@@ -25,7 +25,8 @@ object MonitoringNetworkConfig {
     __obj.asInstanceOf[MonitoringNetworkConfig]
   }
   
-  extension [Self <: MonitoringNetworkConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringNetworkConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableInterContainerTrafficEncryption(value: Boolean): Self = StObject.set(x, "EnableInterContainerTrafficEncryption", value.asInstanceOf[js.Any])
     

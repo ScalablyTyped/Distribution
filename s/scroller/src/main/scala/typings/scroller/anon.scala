@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[PageX]
     }
     
-    extension [Self <: PageX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageX] (val x: Self) extends AnyVal {
       
       inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Top]
     }
     
-    extension [Self <: Top](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Top] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

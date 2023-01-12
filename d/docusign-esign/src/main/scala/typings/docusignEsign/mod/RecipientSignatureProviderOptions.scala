@@ -57,7 +57,8 @@ object RecipientSignatureProviderOptions {
     __obj.asInstanceOf[RecipientSignatureProviderOptions]
   }
   
-  extension [Self <: RecipientSignatureProviderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientSignatureProviderOptions] (val x: Self) extends AnyVal {
     
     inline def setCpfNumber(value: String): Self = StObject.set(x, "cpfNumber", value.asInstanceOf[js.Any])
     

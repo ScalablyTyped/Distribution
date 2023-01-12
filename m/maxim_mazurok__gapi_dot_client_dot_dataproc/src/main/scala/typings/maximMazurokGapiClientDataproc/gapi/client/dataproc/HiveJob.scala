@@ -38,7 +38,8 @@ object HiveJob {
     __obj.asInstanceOf[HiveJob]
   }
   
-  extension [Self <: HiveJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HiveJob] (val x: Self) extends AnyVal {
     
     inline def setContinueOnFailure(value: Boolean): Self = StObject.set(x, "continueOnFailure", value.asInstanceOf[js.Any])
     

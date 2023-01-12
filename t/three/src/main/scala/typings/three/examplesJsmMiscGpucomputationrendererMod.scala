@@ -97,7 +97,8 @@ object examplesJsmMiscGpucomputationrendererMod {
       __obj.asInstanceOf[Variable]
     }
     
-    extension [Self <: Variable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[Variable]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

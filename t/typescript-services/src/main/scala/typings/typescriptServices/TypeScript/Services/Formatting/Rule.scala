@@ -19,7 +19,8 @@ object Rule {
     __obj.asInstanceOf[Rule]
   }
   
-  extension [Self <: Rule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
     
     inline def setDescriptor(value: RuleDescriptor): Self = StObject.set(x, "Descriptor", value.asInstanceOf[js.Any])
     

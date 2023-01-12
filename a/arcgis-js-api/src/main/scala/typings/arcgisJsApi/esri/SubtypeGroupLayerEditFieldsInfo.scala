@@ -41,7 +41,8 @@ object SubtypeGroupLayerEditFieldsInfo {
     __obj.asInstanceOf[SubtypeGroupLayerEditFieldsInfo]
   }
   
-  extension [Self <: SubtypeGroupLayerEditFieldsInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerEditFieldsInfo] (val x: Self) extends AnyVal {
     
     inline def setCreationDateField(value: String): Self = StObject.set(x, "creationDateField", value.asInstanceOf[js.Any])
     

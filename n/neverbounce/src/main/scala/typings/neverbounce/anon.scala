@@ -79,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Academichost]
     }
     
-    extension [Self <: Academichost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Academichost] (val x: Self) extends AnyVal {
       
       inline def setAcademic_host(value: String): Self = StObject.set(x, "academic_host", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object anon {
       __obj.asInstanceOf[Complete]
     }
     
-    extension [Self <: Complete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Complete] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: String): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,8 @@ object anon {
       __obj.asInstanceOf[ContentType]
     }
     
-    extension [Self <: ContentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
       
       inline def `setContent-Type`(value: String): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
       
@@ -222,7 +225,8 @@ object anon {
       __obj.asInstanceOf[Remote]
     }
     
-    extension [Self <: Remote](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Remote] (val x: Self) extends AnyVal {
       
       inline def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       

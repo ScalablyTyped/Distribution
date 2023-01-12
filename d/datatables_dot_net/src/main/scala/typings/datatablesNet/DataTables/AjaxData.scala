@@ -23,7 +23,8 @@ object AjaxData {
     __obj.asInstanceOf[AjaxData]
   }
   
-  extension [Self <: AjaxData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AjaxData] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

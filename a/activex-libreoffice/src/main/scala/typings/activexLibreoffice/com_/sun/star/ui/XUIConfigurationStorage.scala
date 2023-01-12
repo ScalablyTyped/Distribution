@@ -40,7 +40,8 @@ object XUIConfigurationStorage {
     __obj.asInstanceOf[XUIConfigurationStorage]
   }
   
-  extension [Self <: XUIConfigurationStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUIConfigurationStorage] (val x: Self) extends AnyVal {
     
     inline def setHasStorage(value: () => Boolean): Self = StObject.set(x, "hasStorage", js.Any.fromFunction0(value))
     

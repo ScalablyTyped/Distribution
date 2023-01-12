@@ -21,7 +21,8 @@ object PutObjectResult {
     __obj.asInstanceOf[PutObjectResult]
   }
   
-  extension [Self <: PutObjectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutObjectResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

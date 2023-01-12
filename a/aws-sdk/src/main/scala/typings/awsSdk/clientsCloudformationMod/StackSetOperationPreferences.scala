@@ -43,7 +43,8 @@ object StackSetOperationPreferences {
     __obj.asInstanceOf[StackSetOperationPreferences]
   }
   
-  extension [Self <: StackSetOperationPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackSetOperationPreferences] (val x: Self) extends AnyVal {
     
     inline def setFailureToleranceCount(value: FailureToleranceCount): Self = StObject.set(x, "FailureToleranceCount", value.asInstanceOf[js.Any])
     

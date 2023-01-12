@@ -50,7 +50,8 @@ object PNotifyButtons {
     __obj.asInstanceOf[PNotifyButtons]
   }
   
-  extension [Self <: PNotifyButtons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PNotifyButtons] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: Closer): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

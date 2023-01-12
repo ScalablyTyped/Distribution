@@ -16,7 +16,8 @@ object DownloadHTML {
     __obj.asInstanceOf[DownloadHTML]
   }
   
-  extension [Self <: DownloadHTML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadHTML] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

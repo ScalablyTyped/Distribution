@@ -26,7 +26,8 @@ object EnvironmentInjector {
     __obj.asInstanceOf[EnvironmentInjector]
   }
   
-  extension [Self <: EnvironmentInjector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentInjector] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentInjector(value: typings.angularCore.mod.EnvironmentInjector | NgModuleRef[Any]): Self = StObject.set(x, "environmentInjector", value.asInstanceOf[js.Any])
     

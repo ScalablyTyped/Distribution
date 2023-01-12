@@ -463,7 +463,8 @@ object distLiteFirestoreSrcApiCredentialsMod {
       __obj.asInstanceOf[CredentialsProvider[T]]
     }
     
-    extension [Self <: CredentialsProvider[?], T](x: Self & CredentialsProvider[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialsProvider[?], T] (val x: Self & CredentialsProvider[T]) extends AnyVal {
       
       inline def setGetToken(value: () => js.Promise[Token | Null]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
       
@@ -517,7 +518,8 @@ object distLiteFirestoreSrcApiCredentialsMod {
       __obj.asInstanceOf[FirstPartyCredentialsSettings]
     }
     
-    extension [Self <: FirstPartyCredentialsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirstPartyCredentialsSettings] (val x: Self) extends AnyVal {
       
       inline def setAuthTokenFactory(value: () => String): Self = StObject.set(x, "authTokenFactory", js.Any.fromFunction0(value))
       
@@ -546,7 +548,8 @@ object distLiteFirestoreSrcApiCredentialsMod {
       __obj.asInstanceOf[Gapi]
     }
     
-    extension [Self <: Gapi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gapi] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: GetAuthHeaderValueForFirstParty): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     }
@@ -568,7 +571,8 @@ object distLiteFirestoreSrcApiCredentialsMod {
       __obj.asInstanceOf[ProviderCredentialsSettings]
     }
     
-    extension [Self <: ProviderCredentialsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderCredentialsSettings] (val x: Self) extends AnyVal {
       
       inline def setClient(value: CredentialsProvider[User]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -599,7 +603,8 @@ object distLiteFirestoreSrcApiCredentialsMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Map[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

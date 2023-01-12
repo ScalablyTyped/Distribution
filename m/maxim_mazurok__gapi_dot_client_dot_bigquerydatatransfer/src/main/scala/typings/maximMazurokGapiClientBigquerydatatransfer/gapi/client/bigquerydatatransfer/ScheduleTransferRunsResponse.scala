@@ -16,7 +16,8 @@ object ScheduleTransferRunsResponse {
     __obj.asInstanceOf[ScheduleTransferRunsResponse]
   }
   
-  extension [Self <: ScheduleTransferRunsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleTransferRunsResponse] (val x: Self) extends AnyVal {
     
     inline def setRuns(value: js.Array[TransferRun]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     

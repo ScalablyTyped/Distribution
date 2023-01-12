@@ -31,7 +31,8 @@ object GetDownloadAuthorizationOpts {
     __obj.asInstanceOf[GetDownloadAuthorizationOpts]
   }
   
-  extension [Self <: GetDownloadAuthorizationOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDownloadAuthorizationOpts] (val x: Self) extends AnyVal {
     
     inline def setB2ContentDisposition(value: String): Self = StObject.set(x, "b2ContentDisposition", value.asInstanceOf[js.Any])
     

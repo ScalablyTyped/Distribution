@@ -20,7 +20,8 @@ object ResultTemplateOption {
     __obj.asInstanceOf[ResultTemplateOption]
   }
   
-  extension [Self <: ResultTemplateOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultTemplateOption] (val x: Self) extends AnyVal {
     
     inline def setEnableResultTemplate(value: NullableOption[Boolean]): Self = StObject.set(x, "enableResultTemplate", value.asInstanceOf[js.Any])
     

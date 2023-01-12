@@ -19,7 +19,8 @@ object PublishContainerVersionResponse {
     __obj.asInstanceOf[PublishContainerVersionResponse]
   }
   
-  extension [Self <: PublishContainerVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishContainerVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
     

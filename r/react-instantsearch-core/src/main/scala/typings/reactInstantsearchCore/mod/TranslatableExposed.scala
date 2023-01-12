@@ -16,7 +16,8 @@ object TranslatableExposed {
     __obj.asInstanceOf[TranslatableExposed]
   }
   
-  extension [Self <: TranslatableExposed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslatableExposed] (val x: Self) extends AnyVal {
     
     inline def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ Any, String])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object OnClickSegment {
     __obj.asInstanceOf[OnClickSegment]
   }
   
-  extension [Self <: OnClickSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnClickSegment] (val x: Self) extends AnyVal {
     
     inline def setOnClickSegment(value: js.Function): Self = StObject.set(x, "onClickSegment", value.asInstanceOf[js.Any])
     

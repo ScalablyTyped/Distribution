@@ -69,7 +69,8 @@ object SingleDatePickerPhrases {
     __obj.asInstanceOf[SingleDatePickerPhrases]
   }
   
-  extension [Self <: SingleDatePickerPhrases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleDatePickerPhrases] (val x: Self) extends AnyVal {
     
     inline def setCalendarLabel(value: String): Self = StObject.set(x, "calendarLabel", value.asInstanceOf[js.Any])
     

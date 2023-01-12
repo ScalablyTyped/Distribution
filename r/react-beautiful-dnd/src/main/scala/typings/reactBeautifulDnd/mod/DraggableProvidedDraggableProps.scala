@@ -27,7 +27,8 @@ object DraggableProvidedDraggableProps {
     __obj.asInstanceOf[DraggableProvidedDraggableProps]
   }
   
-  extension [Self <: DraggableProvidedDraggableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableProvidedDraggableProps] (val x: Self) extends AnyVal {
     
     inline def `setData-rbd-draggable-context-id`(value: String): Self = StObject.set(x, "data-rbd-draggable-context-id", value.asInstanceOf[js.Any])
     

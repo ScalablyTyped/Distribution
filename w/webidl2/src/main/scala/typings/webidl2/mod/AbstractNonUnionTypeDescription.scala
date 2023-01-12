@@ -34,7 +34,8 @@ object AbstractNonUnionTypeDescription {
     __obj.asInstanceOf[AbstractNonUnionTypeDescription]
   }
   
-  extension [Self <: AbstractNonUnionTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractNonUnionTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGeneric(value: FrozenArray | ObservableArray | Promise | record | sequence | _empty): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     

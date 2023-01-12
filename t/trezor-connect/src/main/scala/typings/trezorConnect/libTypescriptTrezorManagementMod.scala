@@ -22,7 +22,8 @@ object libTypescriptTrezorManagementMod {
       __obj.asInstanceOf[ApplyFlags]
     }
     
-    extension [Self <: ApplyFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyFlags] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     }
@@ -39,7 +40,8 @@ object libTypescriptTrezorManagementMod {
       __obj.asInstanceOf[ChangePin]
     }
     
-    extension [Self <: ChangePin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangePin] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
@@ -64,7 +66,8 @@ object libTypescriptTrezorManagementMod {
       __obj.asInstanceOf[FirmwareUpdate]
     }
     
-    extension [Self <: FirmwareUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirmwareUpdate] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object libTypescriptTrezorManagementMod {
       __obj.asInstanceOf[FirmwareUpdateBinary]
     }
     
-    extension [Self <: FirmwareUpdateBinary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirmwareUpdateBinary] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     }
@@ -128,7 +132,8 @@ object libTypescriptTrezorManagementMod {
       __obj.asInstanceOf[RecoveryDevice]
     }
     
-    extension [Self <: RecoveryDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecoveryDevice] (val x: Self) extends AnyVal {
       
       inline def setDry_run(value: Boolean): Self = StObject.set(x, "dry_run", value.asInstanceOf[js.Any])
       
@@ -197,7 +202,8 @@ object libTypescriptTrezorManagementMod {
       __obj.asInstanceOf[ResetDevice]
     }
     
-    extension [Self <: ResetDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResetDevice] (val x: Self) extends AnyVal {
       
       inline def setBackup_type(value: `0` | `1`): Self = StObject.set(x, "backup_type", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object BatchGetFrameMetricDataResponse {
     __obj.asInstanceOf[BatchGetFrameMetricDataResponse]
   }
   
-  extension [Self <: BatchGetFrameMetricDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetFrameMetricDataResponse] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AwsEcsServiceCapacityProviderStrategyDetails {
     __obj.asInstanceOf[AwsEcsServiceCapacityProviderStrategyDetails]
   }
   
-  extension [Self <: AwsEcsServiceCapacityProviderStrategyDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsServiceCapacityProviderStrategyDetails] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Integer): Self = StObject.set(x, "Base", value.asInstanceOf[js.Any])
     

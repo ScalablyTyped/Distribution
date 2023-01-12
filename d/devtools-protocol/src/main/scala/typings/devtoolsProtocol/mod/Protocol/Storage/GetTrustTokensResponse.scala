@@ -15,7 +15,8 @@ object GetTrustTokensResponse {
     __obj.asInstanceOf[GetTrustTokensResponse]
   }
   
-  extension [Self <: GetTrustTokensResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTrustTokensResponse] (val x: Self) extends AnyVal {
     
     inline def setTokens(value: js.Array[TrustTokens]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     

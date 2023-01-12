@@ -43,7 +43,8 @@ object FusedConv2DAttrs {
     __obj.asInstanceOf[FusedConv2DAttrs]
   }
   
-  extension [Self <: FusedConv2DAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FusedConv2DAttrs] (val x: Self) extends AnyVal {
     
     inline def setActivation(value: Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object ObservableArrayTypeDescription {
     __obj.asInstanceOf[ObservableArrayTypeDescription]
   }
   
-  extension [Self <: ObservableArrayTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObservableArrayTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGeneric(value: ObservableArray): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
   }

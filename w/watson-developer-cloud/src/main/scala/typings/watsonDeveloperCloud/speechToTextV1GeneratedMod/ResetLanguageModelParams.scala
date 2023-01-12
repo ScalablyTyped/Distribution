@@ -21,7 +21,8 @@ object ResetLanguageModelParams {
     __obj.asInstanceOf[ResetLanguageModelParams]
   }
   
-  extension [Self <: ResetLanguageModelParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetLanguageModelParams] (val x: Self) extends AnyVal {
     
     inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     

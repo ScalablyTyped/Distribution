@@ -44,7 +44,8 @@ object PlusMapsGeocodeOptions {
     __obj.asInstanceOf[PlusMapsGeocodeOptions]
   }
   
-  extension [Self <: PlusMapsGeocodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusMapsGeocodeOptions] (val x: Self) extends AnyVal {
     
     inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     

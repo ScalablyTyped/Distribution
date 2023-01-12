@@ -33,7 +33,8 @@ object GotoTargetsRequest {
     __obj.asInstanceOf[GotoTargetsRequest]
   }
   
-  extension [Self <: GotoTargetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GotoTargetsRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: GotoTargetsArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

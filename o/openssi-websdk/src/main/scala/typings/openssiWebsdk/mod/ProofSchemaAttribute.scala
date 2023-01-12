@@ -15,7 +15,8 @@ object ProofSchemaAttribute {
     __obj.asInstanceOf[ProofSchemaAttribute]
   }
   
-  extension [Self <: ProofSchemaAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProofSchemaAttribute] (val x: Self) extends AnyVal {
     
     inline def setRestrictions(value: js.Array[Restriction]): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     

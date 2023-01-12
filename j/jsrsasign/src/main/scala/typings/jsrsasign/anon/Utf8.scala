@@ -15,7 +15,8 @@ object Utf8 {
     __obj.asInstanceOf[Utf8]
   }
   
-  extension [Self <: Utf8](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Utf8] (val x: Self) extends AnyVal {
     
     inline def setUtf8(value: String): Self = StObject.set(x, "utf8", value.asInstanceOf[js.Any])
   }

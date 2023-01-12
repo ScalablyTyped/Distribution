@@ -27,7 +27,8 @@ object distTypesResolveDefaultsModeConfigMod {
       __obj.asInstanceOf[ResolveDefaultsModeConfigOptions]
     }
     
-    extension [Self <: ResolveDefaultsModeConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveDefaultsModeConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultsMode(value: DefaultsMode | Provider[DefaultsMode]): Self = StObject.set(x, "defaultsMode", value.asInstanceOf[js.Any])
       

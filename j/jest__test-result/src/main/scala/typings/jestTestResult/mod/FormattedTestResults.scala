@@ -59,7 +59,8 @@ object FormattedTestResults {
     __obj.asInstanceOf[FormattedTestResults]
   }
   
-  extension [Self <: FormattedTestResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattedTestResults] (val x: Self) extends AnyVal {
     
     inline def setCoverageMap(value: CoverageMap): Self = StObject.set(x, "coverageMap", value.asInstanceOf[js.Any])
     

@@ -982,7 +982,8 @@ object mod {
       __obj.asInstanceOf[CallbackContainer]
     }
     
-    extension [Self <: CallbackContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackContainer] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     }
@@ -1001,7 +1002,8 @@ object mod {
       __obj.asInstanceOf[DataContainer[T]]
     }
     
-    extension [Self <: DataContainer[?], T](x: Self & DataContainer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataContainer[?], T] (val x: Self & DataContainer[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -1026,7 +1028,8 @@ object mod {
       __obj.asInstanceOf[PriorityContainer]
     }
     
-    extension [Self <: PriorityContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PriorityContainer] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     }
@@ -1205,7 +1208,8 @@ object mod {
       __obj.asInstanceOf[RetryOptions[E]]
     }
     
-    extension [Self <: RetryOptions[?], E](x: Self & RetryOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryOptions[?], E] (val x: Self & RetryOptions[E]) extends AnyVal {
       
       inline def setErrorFilter(value: /* error */ E => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
       

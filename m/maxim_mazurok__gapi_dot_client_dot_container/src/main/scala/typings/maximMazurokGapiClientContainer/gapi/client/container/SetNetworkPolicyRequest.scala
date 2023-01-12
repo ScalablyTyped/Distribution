@@ -34,7 +34,8 @@ object SetNetworkPolicyRequest {
     __obj.asInstanceOf[SetNetworkPolicyRequest]
   }
   
-  extension [Self <: SetNetworkPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetNetworkPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     

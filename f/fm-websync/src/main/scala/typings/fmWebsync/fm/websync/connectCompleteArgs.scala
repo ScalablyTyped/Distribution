@@ -20,7 +20,8 @@ object connectCompleteArgs {
     __obj.asInstanceOf[connectCompleteArgs]
   }
   
-  extension [Self <: connectCompleteArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: connectCompleteArgs] (val x: Self) extends AnyVal {
     
     inline def setIsReconnect(value: Boolean): Self = StObject.set(x, "isReconnect", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object FleetEngineTaskFilterOptions {
     __obj.asInstanceOf[FleetEngineTaskFilterOptions]
   }
   
-  extension [Self <: FleetEngineTaskFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetEngineTaskFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setCompletionTimeFrom(value: js.Date): Self = StObject.set(x, "completionTimeFrom", value.asInstanceOf[js.Any])
     

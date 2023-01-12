@@ -19,7 +19,8 @@ object PivotConfiguratorButtonEvent {
     __obj.asInstanceOf[PivotConfiguratorButtonEvent]
   }
   
-  extension [Self <: PivotConfiguratorButtonEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotConfiguratorButtonEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

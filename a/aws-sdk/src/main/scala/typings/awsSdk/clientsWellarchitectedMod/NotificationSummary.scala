@@ -23,7 +23,8 @@ object NotificationSummary {
     __obj.asInstanceOf[NotificationSummary]
   }
   
-  extension [Self <: NotificationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationSummary] (val x: Self) extends AnyVal {
     
     inline def setLensUpgradeSummary(value: LensUpgradeSummary): Self = StObject.set(x, "LensUpgradeSummary", value.asInstanceOf[js.Any])
     

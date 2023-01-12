@@ -96,7 +96,8 @@ object MolecularSequenceQuality {
     __obj.asInstanceOf[MolecularSequenceQuality]
   }
   
-  extension [Self <: MolecularSequenceQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MolecularSequenceQuality] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

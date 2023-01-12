@@ -29,7 +29,8 @@ object FeatureGroupEvents {
     __obj.asInstanceOf[FeatureGroupEvents]
   }
   
-  extension [Self <: FeatureGroupEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureGroupEvents] (val x: Self) extends AnyVal {
     
     inline def setOnclick(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     

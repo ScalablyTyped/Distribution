@@ -23,7 +23,8 @@ object Operator {
     __obj.asInstanceOf[Operator]
   }
   
-  extension [Self <: Operator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Operator] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.cssTree.cssTreeStrings.Operator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

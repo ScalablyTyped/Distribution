@@ -138,7 +138,8 @@ object srcAnalyticsForwarderMod {
       __obj.asInstanceOf[AnalyticsReportBase]
     }
     
-    extension [Self <: AnalyticsReportBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsReportBase] (val x: Self) extends AnyVal {
       
       inline def setKind(value: AnalyticsReportKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
@@ -165,7 +166,8 @@ object srcAnalyticsForwarderMod {
       __obj.asInstanceOf[AnalyticsReportEvent]
     }
     
-    extension [Self <: AnalyticsReportEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsReportEvent] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -196,7 +198,8 @@ object srcAnalyticsForwarderMod {
       __obj.asInstanceOf[AnalyticsReportPageview]
     }
     
-    extension [Self <: AnalyticsReportPageview](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsReportPageview] (val x: Self) extends AnyVal {
       
       inline def setKind(value: Pageview): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -227,7 +230,8 @@ object srcAnalyticsForwarderMod {
       __obj.asInstanceOf[AnalyticsReportScreenview]
     }
     
-    extension [Self <: AnalyticsReportScreenview](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsReportScreenview] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
@@ -268,7 +272,8 @@ object srcAnalyticsForwarderMod {
       __obj.asInstanceOf[AnalyticsReportTiming]
     }
     
-    extension [Self <: AnalyticsReportTiming](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsReportTiming] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       

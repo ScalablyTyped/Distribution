@@ -28,7 +28,8 @@ object ListImportsInput {
     __obj.asInstanceOf[ListImportsInput]
   }
   
-  extension [Self <: ListImportsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImportsInput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: ImportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

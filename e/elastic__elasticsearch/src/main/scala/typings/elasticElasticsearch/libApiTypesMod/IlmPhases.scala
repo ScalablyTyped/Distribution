@@ -21,7 +21,8 @@ object IlmPhases {
     __obj.asInstanceOf[IlmPhases]
   }
   
-  extension [Self <: IlmPhases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmPhases] (val x: Self) extends AnyVal {
     
     inline def setCold(value: IlmPhase): Self = StObject.set(x, "cold", value.asInstanceOf[js.Any])
     

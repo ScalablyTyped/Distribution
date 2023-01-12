@@ -53,7 +53,8 @@ object companyMod {
       __obj.asInstanceOf[Company]
     }
     
-    extension [Self <: Company](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Company] (val x: Self) extends AnyVal {
       
       inline def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object companyMod {
       __obj.asInstanceOf[typings.intercomClient.companyMod.List]
     }
     
-    extension [Self <: typings.intercomClient.companyMod.List](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.intercomClient.companyMod.List] (val x: Self) extends AnyVal {
       
       inline def setCompanies(value: js.Array[Company & CompanyIdentifier]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
       

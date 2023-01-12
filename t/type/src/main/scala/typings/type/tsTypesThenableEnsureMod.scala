@@ -35,7 +35,8 @@ object tsTypesThenableEnsureMod {
       __obj.asInstanceOf[ThenableObject]
     }
     
-    extension [Self <: ThenableObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThenableObject] (val x: Self) extends AnyVal {
       
       inline def setThen(value: EnsureFunction): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
     }

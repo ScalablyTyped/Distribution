@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Typeofformats]
     }
     
-    extension [Self <: Typeofformats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofformats] (val x: Self) extends AnyVal {
       
       inline def setParsers(value: SinkMap[EventEmitter, Stream[Quad]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
       

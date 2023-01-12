@@ -67,7 +67,8 @@ object ASNObject {
     __obj.asInstanceOf[ASNObject]
   }
   
-  extension [Self <: ASNObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASNObject] (val x: Self) extends AnyVal {
     
     inline def setBitstr(value: DERBitString): Self = StObject.set(x, "bitstr", value.asInstanceOf[js.Any])
     

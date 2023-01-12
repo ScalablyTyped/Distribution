@@ -15,7 +15,8 @@ object GetConnectInstanceConfigRequest {
     __obj.asInstanceOf[GetConnectInstanceConfigRequest]
   }
   
-  extension [Self <: GetConnectInstanceConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConnectInstanceConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectInstanceId(value: InstanceId): Self = StObject.set(x, "connectInstanceId", value.asInstanceOf[js.Any])
   }

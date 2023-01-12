@@ -30,7 +30,8 @@ object dgramMod {
       __obj.asInstanceOf[AddressInfo]
     }
     
-    extension [Self <: AddressInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressInfo] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object dgramMod {
       __obj.asInstanceOf[RemoteInfo]
     }
     
-    extension [Self <: RemoteInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteInfo] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

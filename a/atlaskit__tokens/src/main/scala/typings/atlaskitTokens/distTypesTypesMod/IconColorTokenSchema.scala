@@ -16,7 +16,8 @@ object IconColorTokenSchema {
     __obj.asInstanceOf[IconColorTokenSchema[BaseToken]]
   }
   
-  extension [Self <: IconColorTokenSchema[?], BaseToken](x: Self & IconColorTokenSchema[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconColorTokenSchema[?], BaseToken] (val x: Self & IconColorTokenSchema[BaseToken]) extends AnyVal {
     
     inline def setColor(value: IconDisabledDiscovery[BaseToken]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

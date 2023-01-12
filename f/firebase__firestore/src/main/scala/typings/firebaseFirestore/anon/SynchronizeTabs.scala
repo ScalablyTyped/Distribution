@@ -22,7 +22,8 @@ object SynchronizeTabs {
     __obj.asInstanceOf[SynchronizeTabs]
   }
   
-  extension [Self <: SynchronizeTabs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynchronizeTabs] (val x: Self) extends AnyVal {
     
     inline def setDontPurgeData(value: Boolean): Self = StObject.set(x, "dontPurgeData", value.asInstanceOf[js.Any])
     

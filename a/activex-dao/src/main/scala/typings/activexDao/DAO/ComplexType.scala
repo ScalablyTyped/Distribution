@@ -22,7 +22,8 @@ object ComplexType {
     __obj.asInstanceOf[ComplexType]
   }
   
-  extension [Self <: ComplexType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplexType] (val x: Self) extends AnyVal {
     
     inline def setDAODotComplexType_typekey(value: ComplexType): Self = StObject.set(x, "DAO.ComplexType_typekey", value.asInstanceOf[js.Any])
     

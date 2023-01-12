@@ -19,7 +19,8 @@ object GeneratePrimeOptionsArrayBuffer {
     __obj.asInstanceOf[GeneratePrimeOptionsArrayBuffer]
   }
   
-  extension [Self <: GeneratePrimeOptionsArrayBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratePrimeOptionsArrayBuffer] (val x: Self) extends AnyVal {
     
     inline def setBigint(value: `false`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
     

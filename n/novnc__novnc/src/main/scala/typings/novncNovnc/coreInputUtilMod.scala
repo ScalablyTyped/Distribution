@@ -39,7 +39,8 @@ object coreInputUtilMod {
       __obj.asInstanceOf[KeyboardEventBase]
     }
     
-    extension [Self <: KeyboardEventBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardEventBase] (val x: Self) extends AnyVal {
       
       inline def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       

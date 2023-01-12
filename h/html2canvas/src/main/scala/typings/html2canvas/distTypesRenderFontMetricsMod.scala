@@ -34,7 +34,8 @@ object distTypesRenderFontMetricsMod {
       __obj.asInstanceOf[FontMetric]
     }
     
-    extension [Self <: FontMetric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontMetric] (val x: Self) extends AnyVal {
       
       inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       

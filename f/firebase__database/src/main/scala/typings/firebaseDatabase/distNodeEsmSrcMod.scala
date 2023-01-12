@@ -505,7 +505,8 @@ object distNodeEsmSrcMod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def setDatabase(value: typings.firebaseDatabase.distNodeEsmSrcApiDatabaseMod.Database): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       }

@@ -27,7 +27,8 @@ object refstringnullablebooleanu {
     __obj.asInstanceOf[refstringnullablebooleanu]
   }
   
-  extension [Self <: refstringnullablebooleanu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: refstringnullablebooleanu] (val x: Self) extends AnyVal {
     
     inline def setDefinitions(value: Record[String, SomeJTDSchemaType]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     

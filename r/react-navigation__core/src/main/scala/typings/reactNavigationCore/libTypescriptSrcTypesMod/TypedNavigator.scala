@@ -53,7 +53,8 @@ object TypedNavigator {
     __obj.asInstanceOf[TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator]]
   }
   
-  extension [Self <: TypedNavigator[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[Any] */](x: Self & (TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedNavigator[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[Any] */] (val x: Self & (TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator])) extends AnyVal {
     
     inline def setGroup(value: ComponentType[RouteGroupConfig[ParamList, ScreenOptions]]): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     

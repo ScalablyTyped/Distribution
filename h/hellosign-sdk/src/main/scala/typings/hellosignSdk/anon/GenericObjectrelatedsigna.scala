@@ -23,7 +23,8 @@ object GenericObjectrelatedsigna {
     __obj.asInstanceOf[GenericObjectrelatedsigna]
   }
   
-  extension [Self <: GenericObjectrelatedsigna](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericObjectrelatedsigna] (val x: Self) extends AnyVal {
     
     inline def setRelated_signature_id(value: String): Self = StObject.set(x, "related_signature_id", value.asInstanceOf[js.Any])
     

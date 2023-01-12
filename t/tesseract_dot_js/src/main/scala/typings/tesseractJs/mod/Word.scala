@@ -83,7 +83,8 @@ object Word {
     __obj.asInstanceOf[Word]
   }
   
-  extension [Self <: Word](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
     
     inline def setBaseline(value: Baseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     

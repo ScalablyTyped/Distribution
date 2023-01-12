@@ -21,7 +21,8 @@ object ResponseBytesParameters {
     __obj.asInstanceOf[ResponseBytesParameters]
   }
   
-  extension [Self <: ResponseBytesParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseBytesParameters] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: OctetString): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     

@@ -268,7 +268,8 @@ object mod {
         __obj.asInstanceOf[MissingAuth]
       }
       
-      extension [Self <: MissingAuth](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MissingAuth] (val x: Self) extends AnyVal {
         
         inline def setIsMissing(value: Boolean): Self = StObject.set(x, "isMissing", value.asInstanceOf[js.Any])
       }
@@ -299,7 +300,8 @@ object mod {
       __obj.asInstanceOf[Decorate[Decoration]]
     }
     
-    extension [Self <: Decorate[?], Decoration](x: Self & Decorate[Decoration]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decorate[?], Decoration] (val x: Self & Decorate[Decoration]) extends AnyVal {
       
       inline def setDecorate(value: Decoration): Self = StObject.set(x, "decorate", value.asInstanceOf[js.Any])
       
@@ -347,7 +349,8 @@ object mod {
       __obj.asInstanceOf[Options[Data]]
     }
     
-    extension [Self <: Options[?], Data](x: Self & Options[Data]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], Data] (val x: Self & Options[Data]) extends AnyVal {
       
       inline def setCtor(value: js.Function): Self = StObject.set(x, "ctor", value.asInstanceOf[js.Any])
       
@@ -399,7 +402,8 @@ object mod {
       __obj.asInstanceOf[Output]
     }
     
-    extension [Self <: Output](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[js.UndefOr[String | js.Array[String] | Double]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -438,7 +442,8 @@ object mod {
       __obj.asInstanceOf[Payload]
     }
     
-    extension [Self <: Payload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

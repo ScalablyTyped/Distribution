@@ -52,7 +52,8 @@ object distTypeMod {
       __obj.asInstanceOf[BaseProps]
     }
     
-    extension [Self <: BaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

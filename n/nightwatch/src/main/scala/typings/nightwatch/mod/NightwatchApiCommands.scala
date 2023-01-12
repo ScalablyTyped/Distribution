@@ -56,7 +56,8 @@ object NightwatchApiCommands {
     __obj.asInstanceOf[NightwatchApiCommands]
   }
   
-  extension [Self <: NightwatchApiCommands](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchApiCommands] (val x: Self) extends AnyVal {
     
     inline def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
     

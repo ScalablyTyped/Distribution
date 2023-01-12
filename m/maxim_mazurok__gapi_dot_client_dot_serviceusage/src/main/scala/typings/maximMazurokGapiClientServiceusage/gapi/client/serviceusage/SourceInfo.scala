@@ -20,7 +20,8 @@ object SourceInfo {
     __obj.asInstanceOf[SourceInfo]
   }
   
-  extension [Self <: SourceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceInfo] (val x: Self) extends AnyVal {
     
     inline def setSourceFiles(
       value: js.Array[

@@ -28,7 +28,8 @@ object AudioNormalizationSettings {
     __obj.asInstanceOf[AudioNormalizationSettings]
   }
   
-  extension [Self <: AudioNormalizationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioNormalizationSettings] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: AudioNormalizationAlgorithm): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object OlapTableViewOptionsViewSettings {
     __obj.asInstanceOf[OlapTableViewOptionsViewSettings]
   }
   
-  extension [Self <: OlapTableViewOptionsViewSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapTableViewOptionsViewSettings] (val x: Self) extends AnyVal {
     
     inline def setCompactColumnHeaders(value: Boolean): Self = StObject.set(x, "compactColumnHeaders", value.asInstanceOf[js.Any])
     

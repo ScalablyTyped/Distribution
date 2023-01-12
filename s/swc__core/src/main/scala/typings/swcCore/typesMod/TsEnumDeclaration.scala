@@ -29,7 +29,8 @@ object TsEnumDeclaration {
     __obj.asInstanceOf[TsEnumDeclaration]
   }
   
-  extension [Self <: TsEnumDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsEnumDeclaration] (val x: Self) extends AnyVal {
     
     inline def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     

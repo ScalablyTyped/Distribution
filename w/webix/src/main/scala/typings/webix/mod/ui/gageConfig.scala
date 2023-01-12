@@ -71,7 +71,8 @@ object gageConfig {
     __obj.asInstanceOf[gageConfig]
   }
   
-  extension [Self <: gageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: gageConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

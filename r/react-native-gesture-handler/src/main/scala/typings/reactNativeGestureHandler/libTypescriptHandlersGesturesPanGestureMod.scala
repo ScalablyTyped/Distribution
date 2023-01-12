@@ -66,7 +66,8 @@ object libTypescriptHandlersGesturesPanGestureMod {
       __obj.asInstanceOf[PanGestureChangeEventPayload]
     }
     
-    extension [Self <: PanGestureChangeEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanGestureChangeEventPayload] (val x: Self) extends AnyVal {
       
       inline def setChangeX(value: Double): Self = StObject.set(x, "changeX", value.asInstanceOf[js.Any])
       

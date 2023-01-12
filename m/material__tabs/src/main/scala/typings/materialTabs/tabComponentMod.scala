@@ -60,7 +60,8 @@ object tabComponentMod {
       __obj.asInstanceOf[MDCTabSelectedEventDetail]
     }
     
-    extension [Self <: MDCTabSelectedEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTabSelectedEventDetail] (val x: Self) extends AnyVal {
       
       inline def setTab(value: MDCTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     }

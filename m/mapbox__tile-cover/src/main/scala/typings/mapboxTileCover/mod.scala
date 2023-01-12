@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[Limits]
     }
     
-    extension [Self <: Limits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limits] (val x: Self) extends AnyVal {
       
       inline def setMax_zoom(value: Double): Self = StObject.set(x, "max_zoom", value.asInstanceOf[js.Any])
       

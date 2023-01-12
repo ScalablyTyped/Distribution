@@ -38,7 +38,8 @@ object VertexRemoveEventInfo {
     __obj.asInstanceOf[VertexRemoveEventInfo]
   }
   
-  extension [Self <: VertexRemoveEventInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexRemoveEventInfo] (val x: Self) extends AnyVal {
     
     inline def setRemoved(value: js.Array[Double]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     

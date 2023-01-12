@@ -790,7 +790,8 @@ object mod {
       __obj.asInstanceOf[CryptoGenericHashWrap]
     }
     
-    extension [Self <: CryptoGenericHashWrap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoGenericHashWrap] (val x: Self) extends AnyVal {
       
       inline def setFinal(value: Buffer => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
       
@@ -824,7 +825,8 @@ object mod {
       __obj.asInstanceOf[CryptoHashSha256Wrap]
     }
     
-    extension [Self <: CryptoHashSha256Wrap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoHashSha256Wrap] (val x: Self) extends AnyVal {
       
       inline def setFinal(value: Buffer => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
       
@@ -858,7 +860,8 @@ object mod {
       __obj.asInstanceOf[CryptoHashSha512Wrap]
     }
     
-    extension [Self <: CryptoHashSha512Wrap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoHashSha512Wrap] (val x: Self) extends AnyVal {
       
       inline def setFinal(value: Buffer => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
       
@@ -892,7 +895,8 @@ object mod {
       __obj.asInstanceOf[CryptoOneTimeAuthWrap]
     }
     
-    extension [Self <: CryptoOneTimeAuthWrap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoOneTimeAuthWrap] (val x: Self) extends AnyVal {
       
       inline def setFinal(value: Buffer => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
       
@@ -920,7 +924,8 @@ object mod {
       __obj.asInstanceOf[CryptoStreamChacha20XorWrap]
     }
     
-    extension [Self <: CryptoStreamChacha20XorWrap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoStreamChacha20XorWrap] (val x: Self) extends AnyVal {
       
       inline def setFinal(value: () => Unit): Self = StObject.set(x, "final", js.Any.fromFunction0(value))
       
@@ -954,7 +959,8 @@ object mod {
       __obj.asInstanceOf[Xchacha20poly1305State]
     }
     
-    extension [Self <: Xchacha20poly1305State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Xchacha20poly1305State] (val x: Self) extends AnyVal {
       
       inline def setK(value: Buffer): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       

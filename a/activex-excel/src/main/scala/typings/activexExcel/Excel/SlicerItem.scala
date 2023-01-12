@@ -49,7 +49,8 @@ object SlicerItem {
     __obj.asInstanceOf[SlicerItem]
   }
   
-  extension [Self <: SlicerItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlicerItem] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

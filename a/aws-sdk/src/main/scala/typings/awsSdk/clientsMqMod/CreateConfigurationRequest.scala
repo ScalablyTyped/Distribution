@@ -38,7 +38,8 @@ object CreateConfigurationRequest {
     __obj.asInstanceOf[CreateConfigurationRequest]
   }
   
-  extension [Self <: CreateConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationStrategy(value: AuthenticationStrategy): Self = StObject.set(x, "AuthenticationStrategy", value.asInstanceOf[js.Any])
     

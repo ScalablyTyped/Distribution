@@ -34,7 +34,8 @@ object LowEmphasis {
     __obj.asInstanceOf[LowEmphasis]
   }
   
-  extension [Self <: LowEmphasis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LowEmphasis] (val x: Self) extends AnyVal {
     
     inline def setHighEmphasis(value: PaintToken[BaseToken]): Self = StObject.set(x, "highEmphasis", value.asInstanceOf[js.Any])
     

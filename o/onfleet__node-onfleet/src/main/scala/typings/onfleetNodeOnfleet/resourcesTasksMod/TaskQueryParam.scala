@@ -29,7 +29,8 @@ object TaskQueryParam {
     __obj.asInstanceOf[TaskQueryParam]
   }
   
-  extension [Self <: TaskQueryParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskQueryParam] (val x: Self) extends AnyVal {
     
     inline def setCompleteAfterAfter(value: Double): Self = StObject.set(x, "completeAfterAfter", value.asInstanceOf[js.Any])
     

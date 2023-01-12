@@ -35,7 +35,8 @@ object XReferenceMarksSupplier {
     __obj.asInstanceOf[XReferenceMarksSupplier]
   }
   
-  extension [Self <: XReferenceMarksSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XReferenceMarksSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetReferenceMarks(value: () => XNameAccess): Self = StObject.set(x, "getReferenceMarks", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object Pointrangenumberundefined {
     __obj.asInstanceOf[Pointrangenumberundefined]
   }
   
-  extension [Self <: Pointrangenumberundefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pointrangenumberundefined] (val x: Self) extends AnyVal {
     
     inline def setLimits(value: typings.interactjsTypes.coreTypesMod.Rect): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     

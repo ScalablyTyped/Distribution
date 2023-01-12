@@ -21,7 +21,8 @@ object UserNoticeState {
     __obj.asInstanceOf[UserNoticeState]
   }
   
-  extension [Self <: UserNoticeState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserNoticeState] (val x: Self) extends AnyVal {
     
     inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     

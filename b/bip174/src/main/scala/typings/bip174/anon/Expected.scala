@@ -31,7 +31,8 @@ object Expected {
     __obj.asInstanceOf[Expected]
   }
   
-  extension [Self <: Expected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Expected] (val x: Self) extends AnyVal {
     
     inline def setCanAdd(value: (Any, Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     

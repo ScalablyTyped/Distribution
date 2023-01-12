@@ -46,7 +46,8 @@ object Typeofpower {
     __obj.asInstanceOf[Typeofpower]
   }
   
-  extension [Self <: Typeofpower](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofpower] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: DISPLAY): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     

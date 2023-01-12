@@ -23,7 +23,8 @@ object RunScriptResponse {
     __obj.asInstanceOf[RunScriptResponse]
   }
   
-  extension [Self <: RunScriptResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunScriptResponse] (val x: Self) extends AnyVal {
     
     inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object SteamGuardDetails {
     __obj.asInstanceOf[SteamGuardDetails]
   }
   
-  extension [Self <: SteamGuardDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SteamGuardDetails] (val x: Self) extends AnyVal {
     
     inline def setCanTrade(value: Boolean): Self = StObject.set(x, "canTrade", value.asInstanceOf[js.Any])
     

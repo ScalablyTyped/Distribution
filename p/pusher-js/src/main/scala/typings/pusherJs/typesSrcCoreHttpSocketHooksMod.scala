@@ -29,7 +29,8 @@ object typesSrcCoreHttpSocketHooksMod {
       __obj.asInstanceOf[SocketHooks]
     }
     
-    extension [Self <: SocketHooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketHooks] (val x: Self) extends AnyVal {
       
       inline def setGetReceiveURL(value: (URLLocation, String) => String): Self = StObject.set(x, "getReceiveURL", js.Any.fromFunction2(value))
       

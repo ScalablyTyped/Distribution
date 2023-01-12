@@ -23,7 +23,8 @@ object ListPolicyPrincipalsResponse {
     __obj.asInstanceOf[ListPolicyPrincipalsResponse]
   }
   
-  extension [Self <: ListPolicyPrincipalsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPolicyPrincipalsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     

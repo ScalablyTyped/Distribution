@@ -78,7 +78,8 @@ object PartialChannelOptions {
     __obj.asInstanceOf[PartialChannelOptions]
   }
   
-  extension [Self <: PartialChannelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialChannelOptions] (val x: Self) extends AnyVal {
     
     inline def `setGrpc-nodeDotmax_session_memory`(value: Double): Self = StObject.set(x, "grpc-node.max_session_memory", value.asInstanceOf[js.Any])
     

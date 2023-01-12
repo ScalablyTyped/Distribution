@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Align]
     }
     
-    extension [Self <: Align](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: typings.reactWindow.mod.Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[ColumnIndex[T]]
     }
     
-    extension [Self <: ColumnIndex[?], T](x: Self & ColumnIndex[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnIndex[?], T] (val x: Self & ColumnIndex[T]) extends AnyVal {
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Props[P, S]]
     }
     
-    extension [Self <: Props[?, ?], P, S](x: Self & (Props[P, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?, ?], P, S] (val x: Self & (Props[P, S])) extends AnyVal {
       
       inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
@@ -98,7 +101,8 @@ object anon {
       __obj.asInstanceOf[RowIndex]
     }
     
-    extension [Self <: RowIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowIndex] (val x: Self) extends AnyVal {
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -123,7 +127,8 @@ object anon {
       __obj.asInstanceOf[ScrollLeft]
     }
     
-    extension [Self <: ScrollLeft](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollLeft] (val x: Self) extends AnyVal {
       
       inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       

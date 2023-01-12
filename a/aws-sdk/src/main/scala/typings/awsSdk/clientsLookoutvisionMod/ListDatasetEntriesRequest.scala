@@ -58,7 +58,8 @@ object ListDatasetEntriesRequest {
     __obj.asInstanceOf[ListDatasetEntriesRequest]
   }
   
-  extension [Self <: ListDatasetEntriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDatasetEntriesRequest] (val x: Self) extends AnyVal {
     
     inline def setAfterCreationDate(value: js.Date): Self = StObject.set(x, "AfterCreationDate", value.asInstanceOf[js.Any])
     

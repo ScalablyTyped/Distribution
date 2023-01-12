@@ -36,7 +36,8 @@ object SizeSchemeForPolygon {
     __obj.asInstanceOf[SizeSchemeForPolygon]
   }
   
-  extension [Self <: SizeSchemeForPolygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeSchemeForPolygon] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: SizeSchemeForPolygonBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object XDTDHandler {
     __obj.asInstanceOf[XDTDHandler]
   }
   
-  extension [Self <: XDTDHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDTDHandler] (val x: Self) extends AnyVal {
     
     inline def setNotationDecl(value: (String, String, String) => Unit): Self = StObject.set(x, "notationDecl", js.Any.fromFunction3(value))
     

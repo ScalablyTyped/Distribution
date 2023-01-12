@@ -19,7 +19,8 @@ object ToCssOptions {
     __obj.asInstanceOf[ToCssOptions]
   }
   
-  extension [Self <: ToCssOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToCssOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     

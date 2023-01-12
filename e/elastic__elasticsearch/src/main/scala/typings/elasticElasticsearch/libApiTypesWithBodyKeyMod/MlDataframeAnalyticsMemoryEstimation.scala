@@ -17,7 +17,8 @@ object MlDataframeAnalyticsMemoryEstimation {
     __obj.asInstanceOf[MlDataframeAnalyticsMemoryEstimation]
   }
   
-  extension [Self <: MlDataframeAnalyticsMemoryEstimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalyticsMemoryEstimation] (val x: Self) extends AnyVal {
     
     inline def setExpected_memory_with_disk(value: String): Self = StObject.set(x, "expected_memory_with_disk", value.asInstanceOf[js.Any])
     

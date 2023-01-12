@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Constant]
     }
     
-    extension [Self <: Constant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constant] (val x: Self) extends AnyVal {
       
       inline def setConstant(value: `true`): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setConstant(value: `false`): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
       

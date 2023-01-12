@@ -33,7 +33,8 @@ object ApiKey {
     __obj.asInstanceOf[ApiKey]
   }
   
-  extension [Self <: ApiKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiKey] (val x: Self) extends AnyVal {
     
     inline def setDeletes(value: Long): Self = StObject.set(x, "deletes", value.asInstanceOf[js.Any])
     

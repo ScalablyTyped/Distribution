@@ -53,7 +53,8 @@ object Circle {
     __obj.asInstanceOf[Circle]
   }
   
-  extension [Self <: Circle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
     
     inline def setContains(value: LngLat => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     

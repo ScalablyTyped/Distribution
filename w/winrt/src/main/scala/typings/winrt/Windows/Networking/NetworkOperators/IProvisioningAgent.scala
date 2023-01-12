@@ -21,7 +21,8 @@ object IProvisioningAgent {
     __obj.asInstanceOf[IProvisioningAgent]
   }
   
-  extension [Self <: IProvisioningAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProvisioningAgent] (val x: Self) extends AnyVal {
     
     inline def setGetProvisionedProfile(value: (ProfileMediaType, String) => ProvisionedProfile): Self = StObject.set(x, "getProvisionedProfile", js.Any.fromFunction2(value))
     

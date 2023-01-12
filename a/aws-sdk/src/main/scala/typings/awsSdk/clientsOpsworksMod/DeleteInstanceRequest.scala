@@ -28,7 +28,8 @@ object DeleteInstanceRequest {
     __obj.asInstanceOf[DeleteInstanceRequest]
   }
   
-  extension [Self <: DeleteInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setDeleteElasticIp(value: Boolean): Self = StObject.set(x, "DeleteElasticIp", value.asInstanceOf[js.Any])
     

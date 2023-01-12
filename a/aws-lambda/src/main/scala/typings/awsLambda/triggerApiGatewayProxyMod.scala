@@ -43,7 +43,8 @@ object triggerApiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayEventRequestContextJWTAuthorizer]
     }
     
-    extension [Self <: APIGatewayEventRequestContextJWTAuthorizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayEventRequestContextJWTAuthorizer] (val x: Self) extends AnyVal {
       
       inline def setIntegrationLatency(value: Double): Self = StObject.set(x, "integrationLatency", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object triggerApiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayEventRequestContextLambdaAuthorizer[TAuthorizerContext]]
     }
     
-    extension [Self <: APIGatewayEventRequestContextLambdaAuthorizer[?], TAuthorizerContext](x: Self & APIGatewayEventRequestContextLambdaAuthorizer[TAuthorizerContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayEventRequestContextLambdaAuthorizer[?], TAuthorizerContext] (val x: Self & APIGatewayEventRequestContextLambdaAuthorizer[TAuthorizerContext]) extends AnyVal {
       
       inline def setLambda(value: TAuthorizerContext): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     }
@@ -112,7 +114,8 @@ object triggerApiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayEventRequestContextV2]
     }
     
-    extension [Self <: APIGatewayEventRequestContextV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayEventRequestContextV2] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
@@ -165,7 +168,8 @@ object triggerApiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayEventRequestContextV2WithAuthorizer[TAuthorizer]]
     }
     
-    extension [Self <: APIGatewayEventRequestContextV2WithAuthorizer[?], TAuthorizer](x: Self & APIGatewayEventRequestContextV2WithAuthorizer[TAuthorizer]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayEventRequestContextV2WithAuthorizer[?], TAuthorizer] (val x: Self & APIGatewayEventRequestContextV2WithAuthorizer[TAuthorizer]) extends AnyVal {
       
       inline def setAuthorizer(value: TAuthorizer): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     }
@@ -219,7 +223,8 @@ object triggerApiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayEventWebsocketRequestContextV2]
     }
     
-    extension [Self <: APIGatewayEventWebsocketRequestContextV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayEventWebsocketRequestContextV2] (val x: Self) extends AnyVal {
       
       inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
@@ -264,7 +269,8 @@ object triggerApiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayProxyCognitoAuthorizer]
     }
     
-    extension [Self <: APIGatewayProxyCognitoAuthorizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayProxyCognitoAuthorizer] (val x: Self) extends AnyVal {
       
       inline def setClaims(value: StringDictionary[String]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     }
@@ -313,7 +319,8 @@ object triggerApiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayProxyEventBase[TAuthorizerContext]]
     }
     
-    extension [Self <: APIGatewayProxyEventBase[?], TAuthorizerContext](x: Self & APIGatewayProxyEventBase[TAuthorizerContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayProxyEventBase[?], TAuthorizerContext] (val x: Self & APIGatewayProxyEventBase[TAuthorizerContext]) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -414,7 +421,8 @@ object triggerApiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayProxyEventV2WithRequestContext[TRequestContext]]
     }
     
-    extension [Self <: APIGatewayProxyEventV2WithRequestContext[?], TRequestContext](x: Self & APIGatewayProxyEventV2WithRequestContext[TRequestContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayProxyEventV2WithRequestContext[?], TRequestContext] (val x: Self & APIGatewayProxyEventV2WithRequestContext[TRequestContext]) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -484,7 +492,8 @@ object triggerApiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayProxyResult]
     }
     
-    extension [Self <: APIGatewayProxyResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayProxyResult] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -525,7 +534,8 @@ object triggerApiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayProxyStructuredResultV2]
     }
     
-    extension [Self <: APIGatewayProxyStructuredResultV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayProxyStructuredResultV2] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -570,7 +580,8 @@ object triggerApiGatewayProxyMod {
       __obj.asInstanceOf[APIGatewayProxyWebsocketEventV2WithRequestContext[TRequestContext]]
     }
     
-    extension [Self <: APIGatewayProxyWebsocketEventV2WithRequestContext[?], TRequestContext](x: Self & APIGatewayProxyWebsocketEventV2WithRequestContext[TRequestContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayProxyWebsocketEventV2WithRequestContext[?], TRequestContext] (val x: Self & APIGatewayProxyWebsocketEventV2WithRequestContext[TRequestContext]) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

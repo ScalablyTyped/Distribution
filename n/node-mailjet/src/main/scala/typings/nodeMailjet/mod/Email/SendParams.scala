@@ -18,7 +18,8 @@ object SendParams {
     __obj.asInstanceOf[SendParams]
   }
   
-  extension [Self <: SendParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendParams] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: js.Array[SendParamsMessage]): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     

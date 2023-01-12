@@ -66,7 +66,8 @@ object libIdoIdoDBManagerMod {
       __obj.asInstanceOf[IdoDBManager]
     }
     
-    extension [Self <: IdoDBManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdoDBManager] (val x: Self) extends AnyVal {
       
       inline def setCreateDatabase(value: String => Unit): Self = StObject.set(x, "createDatabase", js.Any.fromFunction1(value))
       

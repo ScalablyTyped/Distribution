@@ -46,7 +46,8 @@ object GetLocation {
     __obj.asInstanceOf[GetLocation]
   }
   
-  extension [Self <: GetLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLocation] (val x: Self) extends AnyVal {
     
     inline def setGetLocation(
       value: (/* protocol */ String, /* fields */ Record[String, js.Array[String] | String]) => PossiblePromise[js.Array[ThirdpartyLocationResponse]]

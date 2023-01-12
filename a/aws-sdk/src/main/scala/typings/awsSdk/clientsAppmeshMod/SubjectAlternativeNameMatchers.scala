@@ -18,7 +18,8 @@ object SubjectAlternativeNameMatchers {
     __obj.asInstanceOf[SubjectAlternativeNameMatchers]
   }
   
-  extension [Self <: SubjectAlternativeNameMatchers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectAlternativeNameMatchers] (val x: Self) extends AnyVal {
     
     inline def setExact(value: SubjectAlternativeNameList): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

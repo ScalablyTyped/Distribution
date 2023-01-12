@@ -15,7 +15,8 @@ object GetRecommenderConfigurationsResponse {
     __obj.asInstanceOf[GetRecommenderConfigurationsResponse]
   }
   
-  extension [Self <: GetRecommenderConfigurationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRecommenderConfigurationsResponse] (val x: Self) extends AnyVal {
     
     inline def setListRecommenderConfigurationsResponse(value: ListRecommenderConfigurationsResponse): Self = StObject.set(x, "ListRecommenderConfigurationsResponse", value.asInstanceOf[js.Any])
   }

@@ -39,7 +39,8 @@ object IMFilesVersion {
     __obj.asInstanceOf[IMFilesVersion]
   }
   
-  extension [Self <: IMFilesVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMFilesVersion] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: Double): Self = StObject.set(x, "Build", value.asInstanceOf[js.Any])
     

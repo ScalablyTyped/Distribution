@@ -28,7 +28,8 @@ object CreateSnapshotFromVolumeRecoveryPointOutput {
     __obj.asInstanceOf[CreateSnapshotFromVolumeRecoveryPointOutput]
   }
   
-  extension [Self <: CreateSnapshotFromVolumeRecoveryPointOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSnapshotFromVolumeRecoveryPointOutput] (val x: Self) extends AnyVal {
     
     inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     

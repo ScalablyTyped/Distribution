@@ -25,7 +25,8 @@ object otherContacts {
       __obj.asInstanceOf[ListParameters]
     }
     
-    extension [Self <: ListParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListParameters] (val x: Self) extends AnyVal {
       
       inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object otherContacts {
       __obj.asInstanceOf[ListResponse]
     }
     
-    extension [Self <: ListResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListResponse] (val x: Self) extends AnyVal {
       
       inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
       

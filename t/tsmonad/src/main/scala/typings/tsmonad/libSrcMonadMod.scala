@@ -33,7 +33,8 @@ object libSrcMonadMod {
       __obj.asInstanceOf[Functor[T]]
     }
     
-    extension [Self <: Functor[?], T](x: Self & Functor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Functor[?], T] (val x: Self & Functor[T]) extends AnyVal {
       
       inline def setFmap(value: js.Function1[/* t */ T, Any] => Functor[Any]): Self = StObject.set(x, "fmap", js.Any.fromFunction1(value))
       
@@ -65,7 +66,8 @@ object libSrcMonadMod {
       __obj.asInstanceOf[Monad[T]]
     }
     
-    extension [Self <: Monad[?], T](x: Self & Monad[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Monad[?], T] (val x: Self & Monad[T]) extends AnyVal {
       
       inline def setBind(value: js.Function1[/* t */ T, Monad[Any]] => Monad[Any]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
       

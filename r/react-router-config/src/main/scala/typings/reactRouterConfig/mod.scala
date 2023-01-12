@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[MatchedRoute[Params, TRouteConfig]]
     }
     
-    extension [Self <: MatchedRoute[?, ?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */, TRouteConfig /* <: RouteConfig */](x: Self & (MatchedRoute[Params, TRouteConfig])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchedRoute[?, ?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */, TRouteConfig /* <: RouteConfig */] (val x: Self & (MatchedRoute[Params, TRouteConfig])) extends AnyVal {
       
       inline def setMatch(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify match<Params> */ Any
@@ -97,7 +98,8 @@ object mod {
       __obj.asInstanceOf[RouteConfig]
     }
     
-    extension [Self <: RouteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteConfig] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ComponentType[js.Object | RouteConfigComponentProps[Any]]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object mod {
       __obj.asInstanceOf[RouteConfigComponentProps[Params]]
     }
     
-    extension [Self <: RouteConfigComponentProps[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](x: Self & RouteConfigComponentProps[Params]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteConfigComponentProps[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */] (val x: Self & RouteConfigComponentProps[Params]) extends AnyVal {
       
       inline def setRoute(value: RouteConfig): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       

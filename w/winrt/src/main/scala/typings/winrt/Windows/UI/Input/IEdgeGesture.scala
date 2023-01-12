@@ -19,7 +19,8 @@ object IEdgeGesture {
     __obj.asInstanceOf[IEdgeGesture]
   }
   
-  extension [Self <: IEdgeGesture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEdgeGesture] (val x: Self) extends AnyVal {
     
     inline def setOncanceled(value: Any): Self = StObject.set(x, "oncanceled", value.asInstanceOf[js.Any])
     

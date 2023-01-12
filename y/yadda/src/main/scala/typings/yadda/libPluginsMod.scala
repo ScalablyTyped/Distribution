@@ -35,7 +35,8 @@ object libPluginsMod {
       __obj.asInstanceOf[MochaPlugin]
     }
     
-    extension [Self <: MochaPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MochaPlugin] (val x: Self) extends AnyVal {
       
       inline def setScenarioLevelPlugin(value: TypeofScenarioLevelPlugin): Self = StObject.set(x, "ScenarioLevelPlugin", value.asInstanceOf[js.Any])
       

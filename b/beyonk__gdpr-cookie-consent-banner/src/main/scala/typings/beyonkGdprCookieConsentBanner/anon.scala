@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Domain]
     }
     
-    extension [Self <: Domain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordCategoryChoi]
     }
     
-    extension [Self <: PartialRecordCategoryChoi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordCategoryChoi] (val x: Self) extends AnyVal {
       
       inline def setAnalytics(value: Choice | `false`): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordCategoryvoid]
     }
     
-    extension [Self <: PartialRecordCategoryvoid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordCategoryvoid] (val x: Self) extends AnyVal {
       
       inline def setAnalytics(value: () => Unit): Self = StObject.set(x, "analytics", js.Any.fromFunction0(value))
       

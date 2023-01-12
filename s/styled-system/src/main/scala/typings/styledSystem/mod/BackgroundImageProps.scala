@@ -21,7 +21,8 @@ object BackgroundImageProps {
     __obj.asInstanceOf[BackgroundImageProps[ThemeType]]
   }
   
-  extension [Self <: BackgroundImageProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & BackgroundImageProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundImageProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & BackgroundImageProps[ThemeType]) extends AnyVal {
     
     inline def setBackgroundImage(value: ResponsiveValue[BackgroundImage, ThemeType]): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     

@@ -76,7 +76,8 @@ object DenseLayerArgs {
     __obj.asInstanceOf[DenseLayerArgs]
   }
   
-  extension [Self <: DenseLayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DenseLayerArgs] (val x: Self) extends AnyVal {
     
     inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     

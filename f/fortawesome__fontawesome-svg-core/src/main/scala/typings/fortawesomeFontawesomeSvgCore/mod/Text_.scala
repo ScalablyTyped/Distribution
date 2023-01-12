@@ -21,7 +21,8 @@ object Text_ {
     __obj.asInstanceOf[Text_]
   }
   
-  extension [Self <: Text_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Text_] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

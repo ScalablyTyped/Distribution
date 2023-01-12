@@ -95,7 +95,8 @@ object BuildingComponentSublayer {
     __obj.asInstanceOf[BuildingComponentSublayer]
   }
   
-  extension [Self <: BuildingComponentSublayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingComponentSublayer] (val x: Self) extends AnyVal {
     
     inline def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
     

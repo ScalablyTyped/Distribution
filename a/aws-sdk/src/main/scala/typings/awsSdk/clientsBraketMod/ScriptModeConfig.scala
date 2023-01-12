@@ -28,7 +28,8 @@ object ScriptModeConfig {
     __obj.asInstanceOf[ScriptModeConfig]
   }
   
-  extension [Self <: ScriptModeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptModeConfig] (val x: Self) extends AnyVal {
     
     inline def setCompressionType(value: CompressionType): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
     

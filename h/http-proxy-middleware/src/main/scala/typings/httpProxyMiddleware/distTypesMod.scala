@@ -44,7 +44,8 @@ object distTypesMod {
       __obj.asInstanceOf[LogProvider]
     }
     
-    extension [Self <: LogProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogProvider] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Logger): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object distTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setLogLevel(value: debug | info | warn | error | silent): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       

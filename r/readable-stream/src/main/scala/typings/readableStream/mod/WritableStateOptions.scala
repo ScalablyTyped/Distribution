@@ -26,7 +26,8 @@ object WritableStateOptions {
     __obj.asInstanceOf[WritableStateOptions]
   }
   
-  extension [Self <: WritableStateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WritableStateOptions] (val x: Self) extends AnyVal {
     
     inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
     

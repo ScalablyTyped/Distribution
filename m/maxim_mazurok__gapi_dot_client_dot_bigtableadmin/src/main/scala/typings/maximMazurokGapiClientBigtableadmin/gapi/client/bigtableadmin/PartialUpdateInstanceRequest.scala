@@ -19,7 +19,8 @@ object PartialUpdateInstanceRequest {
     __obj.asInstanceOf[PartialUpdateInstanceRequest]
   }
   
-  extension [Self <: PartialUpdateInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialUpdateInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

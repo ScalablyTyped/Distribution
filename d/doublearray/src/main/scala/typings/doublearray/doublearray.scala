@@ -85,7 +85,8 @@ object doublearray {
       __obj.asInstanceOf[DoubleArray]
     }
     
-    extension [Self <: DoubleArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleArray] (val x: Self) extends AnyVal {
       
       inline def setBc(value: BaseAndCheck): Self = StObject.set(x, "bc", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object doublearray {
       __obj.asInstanceOf[KeyValue]
     }
     
-    extension [Self <: KeyValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyValue] (val x: Self) extends AnyVal {
       
       inline def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       

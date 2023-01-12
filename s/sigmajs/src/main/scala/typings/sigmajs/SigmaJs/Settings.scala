@@ -182,7 +182,8 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  extension [Self <: Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     inline def setAnimationsTime(value: Double): Self = StObject.set(x, "animationsTime", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetStaticIpsResult {
     __obj.asInstanceOf[GetStaticIpsResult]
   }
   
-  extension [Self <: GetStaticIpsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStaticIpsResult] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

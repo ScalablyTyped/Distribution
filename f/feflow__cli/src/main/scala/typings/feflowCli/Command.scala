@@ -21,7 +21,8 @@ object Command {
     __obj.asInstanceOf[Command]
   }
   
-  extension [Self <: Command](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
     
     inline def setRegister(value: (String, String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction3(value))
   }

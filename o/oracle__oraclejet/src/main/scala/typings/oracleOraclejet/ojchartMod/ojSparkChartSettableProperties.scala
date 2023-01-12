@@ -130,7 +130,8 @@ object ojSparkChartSettableProperties {
     __obj.asInstanceOf[ojSparkChartSettableProperties[K, D]]
   }
   
-  extension [Self <: ojSparkChartSettableProperties[?, ?], K, D](x: Self & (ojSparkChartSettableProperties[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojSparkChartSettableProperties[?, ?], K, D] (val x: Self & (ojSparkChartSettableProperties[K, D])) extends AnyVal {
     
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     

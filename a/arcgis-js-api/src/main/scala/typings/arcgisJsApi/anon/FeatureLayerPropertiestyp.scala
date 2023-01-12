@@ -511,7 +511,8 @@ object FeatureLayerPropertiestyp {
     __obj.asInstanceOf[FeatureLayerPropertiestyp]
   }
   
-  extension [Self <: FeatureLayerPropertiestyp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerPropertiestyp] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

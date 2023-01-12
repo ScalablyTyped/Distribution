@@ -59,7 +59,8 @@ object QuizEnd {
     __obj.asInstanceOf[QuizEnd]
   }
   
-  extension [Self <: QuizEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuizEnd] (val x: Self) extends AnyVal {
     
     inline def setChallengeId(value: Null): Self = StObject.set(x, "challengeId", value.asInstanceOf[js.Any])
     

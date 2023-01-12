@@ -33,7 +33,8 @@ object TimeUnitTransform {
     __obj.asInstanceOf[TimeUnitTransform]
   }
   
-  extension [Self <: TimeUnitTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeUnitTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: FieldName): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object EnumValuesDateTime {
     __obj.asInstanceOf[EnumValuesDateTime]
   }
   
-  extension [Self <: EnumValuesDateTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesDateTime] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: DateTime): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

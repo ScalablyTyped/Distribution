@@ -64,7 +64,8 @@ object Tilemaps {
       __obj.asInstanceOf[CreateFromObjectLayerConfig]
     }
     
-    extension [Self <: CreateFromObjectLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateFromObjectLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setClassType(value: GameObject): Self = StObject.set(x, "classType", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object Tilemaps {
       __obj.asInstanceOf[DebugStyleOptions]
     }
     
-    extension [Self <: DebugStyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugStyleOptions] (val x: Self) extends AnyVal {
       
       inline def setStyleConfigDotcollidingTileColor(value: Color): Self = StObject.set(x, "styleConfig.collidingTileColor", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object Tilemaps {
       __obj.asInstanceOf[FilteringOptions]
     }
     
-    extension [Self <: FilteringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilteringOptions] (val x: Self) extends AnyVal {
       
       inline def setHasInterestingFace(value: Boolean): Self = StObject.set(x, "hasInterestingFace", value.asInstanceOf[js.Any])
       
@@ -232,7 +235,8 @@ object Tilemaps {
       __obj.asInstanceOf[GIDData]
     }
     
-    extension [Self <: GIDData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GIDData] (val x: Self) extends AnyVal {
       
       inline def setFlipped(value: Boolean): Self = StObject.set(x, "flipped", value.asInstanceOf[js.Any])
       
@@ -357,7 +361,8 @@ object Tilemaps {
       __obj.asInstanceOf[LayerDataConfig]
     }
     
-    extension [Self <: LayerDataConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerDataConfig] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -557,7 +562,8 @@ object Tilemaps {
       __obj.asInstanceOf[MapDataConfig]
     }
     
-    extension [Self <: MapDataConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapDataConfig] (val x: Self) extends AnyVal {
       
       inline def setCollision(value: js.Object): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
       
@@ -691,7 +697,8 @@ object Tilemaps {
       __obj.asInstanceOf[ObjectLayerConfig]
     }
     
-    extension [Self <: ObjectLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -749,7 +756,8 @@ object Tilemaps {
       __obj.asInstanceOf[StyleConfig]
     }
     
-    extension [Self <: StyleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleConfig] (val x: Self) extends AnyVal {
       
       inline def setCollidingTileColor(value: Color | Double): Self = StObject.set(x, "collidingTileColor", value.asInstanceOf[js.Any])
       
@@ -881,7 +889,8 @@ object Tilemaps {
       __obj.asInstanceOf[TiledObject]
     }
     
-    extension [Self <: TiledObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TiledObject] (val x: Self) extends AnyVal {
       
       inline def setEllipse(value: Boolean): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
       
@@ -1012,7 +1021,8 @@ object Tilemaps {
       __obj.asInstanceOf[TilemapConfig]
     }
     
-    extension [Self <: TilemapConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TilemapConfig] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

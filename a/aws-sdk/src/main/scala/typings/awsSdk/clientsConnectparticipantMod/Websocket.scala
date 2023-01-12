@@ -23,7 +23,8 @@ object Websocket {
     __obj.asInstanceOf[Websocket]
   }
   
-  extension [Self <: Websocket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Websocket] (val x: Self) extends AnyVal {
     
     inline def setConnectionExpiry(value: ISO8601Datetime): Self = StObject.set(x, "ConnectionExpiry", value.asInstanceOf[js.Any])
     

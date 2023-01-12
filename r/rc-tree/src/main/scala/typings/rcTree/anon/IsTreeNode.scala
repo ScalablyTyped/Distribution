@@ -15,7 +15,8 @@ object IsTreeNode {
     __obj.asInstanceOf[IsTreeNode]
   }
   
-  extension [Self <: IsTreeNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsTreeNode] (val x: Self) extends AnyVal {
     
     inline def setIsTreeNode(value: Boolean): Self = StObject.set(x, "isTreeNode", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object TempFilePath {
     __obj.asInstanceOf[TempFilePath]
   }
   
-  extension [Self <: TempFilePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TempFilePath] (val x: Self) extends AnyVal {
     
     inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
   }

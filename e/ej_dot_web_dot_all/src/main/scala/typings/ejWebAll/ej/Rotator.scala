@@ -136,7 +136,8 @@ object Rotator {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveItemIndex(value: Double): Self = StObject.set(x, "activeItemIndex", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object Rotator {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object Rotator {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -267,7 +270,8 @@ object Rotator {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setLinkAttribute(value: String): Self = StObject.set(x, "linkAttribute", value.asInstanceOf[js.Any])
       
@@ -481,7 +485,8 @@ object Rotator {
       __obj.asInstanceOf[typings.ejWebAll.ej.Rotator.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Rotator.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Rotator.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowKeyboardNavigation(value: Boolean): Self = StObject.set(x, "allowKeyboardNavigation", value.asInstanceOf[js.Any])
       
@@ -664,7 +669,8 @@ object Rotator {
       __obj.asInstanceOf[PagerClickEventArgs]
     }
     
-    extension [Self <: PagerClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveItemIndex(value: Double): Self = StObject.set(x, "activeItemIndex", value.asInstanceOf[js.Any])
       
@@ -717,7 +723,8 @@ object Rotator {
       __obj.asInstanceOf[StartEventArgs]
     }
     
-    extension [Self <: StartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveItemIndex(value: Double): Self = StObject.set(x, "activeItemIndex", value.asInstanceOf[js.Any])
       
@@ -770,7 +777,8 @@ object Rotator {
       __obj.asInstanceOf[StopEventArgs]
     }
     
-    extension [Self <: StopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveItemIndex(value: Double): Self = StObject.set(x, "activeItemIndex", value.asInstanceOf[js.Any])
       
@@ -823,7 +831,8 @@ object Rotator {
       __obj.asInstanceOf[ThumbItemClickEventArgs]
     }
     
-    extension [Self <: ThumbItemClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThumbItemClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveItemIndex(value: Double): Self = StObject.set(x, "activeItemIndex", value.asInstanceOf[js.Any])
       

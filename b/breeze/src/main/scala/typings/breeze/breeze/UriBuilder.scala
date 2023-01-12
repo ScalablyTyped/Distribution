@@ -19,7 +19,8 @@ object UriBuilder {
     __obj.asInstanceOf[UriBuilder]
   }
   
-  extension [Self <: UriBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UriBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuildUri(value: (EntityQuery, MetadataStore) => String): Self = StObject.set(x, "buildUri", js.Any.fromFunction2(value))
     

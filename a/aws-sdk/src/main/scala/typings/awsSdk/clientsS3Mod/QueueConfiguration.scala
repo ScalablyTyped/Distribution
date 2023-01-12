@@ -27,7 +27,8 @@ object QueueConfiguration {
     __obj.asInstanceOf[QueueConfiguration]
   }
   
-  extension [Self <: QueueConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: EventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

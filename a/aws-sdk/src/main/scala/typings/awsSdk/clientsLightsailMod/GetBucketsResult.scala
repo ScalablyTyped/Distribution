@@ -28,7 +28,8 @@ object GetBucketsResult {
     __obj.asInstanceOf[GetBucketsResult]
   }
   
-  extension [Self <: GetBucketsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketsResult] (val x: Self) extends AnyVal {
     
     inline def setAccountLevelBpaSync(value: AccountLevelBpaSync): Self = StObject.set(x, "accountLevelBpaSync", value.asInstanceOf[js.Any])
     

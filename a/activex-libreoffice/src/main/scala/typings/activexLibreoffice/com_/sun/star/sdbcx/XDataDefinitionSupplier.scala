@@ -44,7 +44,8 @@ object XDataDefinitionSupplier {
     __obj.asInstanceOf[XDataDefinitionSupplier]
   }
   
-  extension [Self <: XDataDefinitionSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataDefinitionSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetDataDefinitionByConnection(value: XConnection => XTablesSupplier): Self = StObject.set(x, "getDataDefinitionByConnection", js.Any.fromFunction1(value))
     

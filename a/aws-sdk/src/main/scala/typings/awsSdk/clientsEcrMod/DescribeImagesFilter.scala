@@ -18,7 +18,8 @@ object DescribeImagesFilter {
     __obj.asInstanceOf[DescribeImagesFilter]
   }
   
-  extension [Self <: DescribeImagesFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeImagesFilter] (val x: Self) extends AnyVal {
     
     inline def setTagStatus(value: TagStatus): Self = StObject.set(x, "tagStatus", value.asInstanceOf[js.Any])
     

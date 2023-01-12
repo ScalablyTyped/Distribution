@@ -23,7 +23,8 @@ object XML {
     __obj.asInstanceOf[XML]
   }
   
-  extension [Self <: XML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XML] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Timing {
     __obj.asInstanceOf[Timing]
   }
   
-  extension [Self <: Timing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timing] (val x: Self) extends AnyVal {
     
     inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }

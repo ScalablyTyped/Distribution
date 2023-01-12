@@ -23,7 +23,8 @@ object ListJobsFilterCriteria {
     __obj.asInstanceOf[ListJobsFilterCriteria]
   }
   
-  extension [Self <: ListJobsFilterCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListJobsFilterCriteria] (val x: Self) extends AnyVal {
     
     inline def setExcludes(value: listOfListJobsFilterTerm): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     

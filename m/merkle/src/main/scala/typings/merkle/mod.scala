@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[MerkleTree]
     }
     
-    extension [Self <: MerkleTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MerkleTree] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: () => Double): Self = StObject.set(x, "depth", js.Any.fromFunction0(value))
       

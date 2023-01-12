@@ -23,7 +23,8 @@ object BatchUpdateObjectAttributes {
     __obj.asInstanceOf[BatchUpdateObjectAttributes]
   }
   
-  extension [Self <: BatchUpdateObjectAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateObjectAttributes] (val x: Self) extends AnyVal {
     
     inline def setAttributeUpdates(value: ObjectAttributeUpdateList): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
     

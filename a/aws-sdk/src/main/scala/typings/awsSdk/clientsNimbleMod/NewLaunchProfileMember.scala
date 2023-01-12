@@ -23,7 +23,8 @@ object NewLaunchProfileMember {
     __obj.asInstanceOf[NewLaunchProfileMember]
   }
   
-  extension [Self <: NewLaunchProfileMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewLaunchProfileMember] (val x: Self) extends AnyVal {
     
     inline def setPersona(value: LaunchProfilePersona): Self = StObject.set(x, "persona", value.asInstanceOf[js.Any])
     

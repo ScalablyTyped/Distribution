@@ -28,7 +28,8 @@ object WorkflowStepOutputUnion {
     __obj.asInstanceOf[WorkflowStepOutputUnion]
   }
   
-  extension [Self <: WorkflowStepOutputUnion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowStepOutputUnion] (val x: Self) extends AnyVal {
     
     inline def setIntegerValue(value: Integer): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     

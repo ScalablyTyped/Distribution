@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[ITerminalDimensions]
     }
     
-    extension [Self <: ITerminalDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITerminalDimensions] (val x: Self) extends AnyVal {
       
       inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       

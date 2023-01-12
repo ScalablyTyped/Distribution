@@ -28,7 +28,8 @@ object DocumentAttributeValueCountPair {
     __obj.asInstanceOf[DocumentAttributeValueCountPair]
   }
   
-  extension [Self <: DocumentAttributeValueCountPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentAttributeValueCountPair] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

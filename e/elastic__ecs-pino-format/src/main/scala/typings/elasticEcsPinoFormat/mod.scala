@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setApmIntegration(value: Boolean): Self = StObject.set(x, "apmIntegration", value.asInstanceOf[js.Any])
       

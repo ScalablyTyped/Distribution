@@ -92,7 +92,8 @@ object srcMod {
       __obj.asInstanceOf[FaviconsWebpackPlugin]
     }
     
-    extension [Self <: FaviconsWebpackPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaviconsWebpackPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Any => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       

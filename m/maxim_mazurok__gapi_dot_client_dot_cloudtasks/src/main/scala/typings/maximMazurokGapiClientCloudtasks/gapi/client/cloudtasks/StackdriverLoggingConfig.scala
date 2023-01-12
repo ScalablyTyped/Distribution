@@ -19,7 +19,8 @@ object StackdriverLoggingConfig {
     __obj.asInstanceOf[StackdriverLoggingConfig]
   }
   
-  extension [Self <: StackdriverLoggingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackdriverLoggingConfig] (val x: Self) extends AnyVal {
     
     inline def setSamplingRatio(value: Double): Self = StObject.set(x, "samplingRatio", value.asInstanceOf[js.Any])
     

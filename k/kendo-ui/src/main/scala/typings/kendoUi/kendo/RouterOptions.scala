@@ -29,7 +29,8 @@ object RouterOptions {
     __obj.asInstanceOf[RouterOptions]
   }
   
-  extension [Self <: RouterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ RouterChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

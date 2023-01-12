@@ -74,7 +74,8 @@ object elementsContainerContainerMod {
       __obj.asInstanceOf[ContainerModifierProps]
     }
     
-    extension [Self <: ContainerModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerModifierProps] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: mobile | tablet | desktop | widescreen | fullhd | touch): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object elementsContainerContainerMod {
       __obj.asInstanceOf[ContainerProps]
     }
     
-    extension [Self <: ContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`

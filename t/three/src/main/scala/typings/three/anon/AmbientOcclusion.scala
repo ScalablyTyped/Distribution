@@ -18,7 +18,8 @@ object AmbientOcclusion {
     __obj.asInstanceOf[AmbientOcclusion]
   }
   
-  extension [Self <: AmbientOcclusion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmbientOcclusion] (val x: Self) extends AnyVal {
     
     inline def setAmbientOcclusion(value: default): Self = StObject.set(x, "ambientOcclusion", value.asInstanceOf[js.Any])
     

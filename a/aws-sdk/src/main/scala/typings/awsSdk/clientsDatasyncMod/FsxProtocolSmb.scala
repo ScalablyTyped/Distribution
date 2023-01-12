@@ -30,7 +30,8 @@ object FsxProtocolSmb {
     __obj.asInstanceOf[FsxProtocolSmb]
   }
   
-  extension [Self <: FsxProtocolSmb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FsxProtocolSmb] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: SmbDomain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

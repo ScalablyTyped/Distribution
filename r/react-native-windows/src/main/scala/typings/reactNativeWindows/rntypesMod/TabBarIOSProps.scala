@@ -54,7 +54,8 @@ object TabBarIOSProps {
     __obj.asInstanceOf[TabBarIOSProps]
   }
   
-  extension [Self <: TabBarIOSProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabBarIOSProps] (val x: Self) extends AnyVal {
     
     inline def setBarTintColor(value: ColorValue): Self = StObject.set(x, "barTintColor", value.asInstanceOf[js.Any])
     

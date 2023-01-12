@@ -102,7 +102,8 @@ object ComboBoxOptions {
     __obj.asInstanceOf[ComboBoxOptions]
   }
   
-  extension [Self <: ComboBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComboBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: ComboBoxAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

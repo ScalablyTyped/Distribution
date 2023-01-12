@@ -28,7 +28,8 @@ object RulesBucket {
     __obj.asInstanceOf[RulesBucket]
   }
   
-  extension [Self <: RulesBucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RulesBucket] (val x: Self) extends AnyVal {
     
     inline def setAddRule(value: (Rule, Boolean, js.Array[RulesBucketConstructionState], Double) => Unit): Self = StObject.set(x, "AddRule", js.Any.fromFunction4(value))
     

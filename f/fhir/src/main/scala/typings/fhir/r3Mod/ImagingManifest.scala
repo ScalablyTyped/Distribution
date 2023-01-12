@@ -54,7 +54,8 @@ object ImagingManifest {
     __obj.asInstanceOf[ImagingManifest]
   }
   
-  extension [Self <: ImagingManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagingManifest] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: Reference): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

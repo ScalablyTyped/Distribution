@@ -50,7 +50,8 @@ object LayoutsParam {
     __obj.asInstanceOf[LayoutsParam]
   }
   
-  extension [Self <: LayoutsParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutsParam] (val x: Self) extends AnyVal {
     
     inline def setAddLayout(value: (String, LayoutFunction) => Unit): Self = StObject.set(x, "addLayout", js.Any.fromFunction2(value))
     

@@ -73,7 +73,8 @@ object XStorageRawAccess {
     __obj.asInstanceOf[XStorageRawAccess]
   }
   
-  extension [Self <: XStorageRawAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStorageRawAccess] (val x: Self) extends AnyVal {
     
     inline def setGetPlainRawStreamElement(value: String => XInputStream): Self = StObject.set(x, "getPlainRawStreamElement", js.Any.fromFunction1(value))
     

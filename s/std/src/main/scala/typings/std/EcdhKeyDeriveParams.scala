@@ -18,7 +18,8 @@ object EcdhKeyDeriveParams {
     __obj.asInstanceOf[EcdhKeyDeriveParams]
   }
   
-  extension [Self <: EcdhKeyDeriveParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcdhKeyDeriveParams] (val x: Self) extends AnyVal {
     
     inline def setPublic(value: CryptoKey): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
   }

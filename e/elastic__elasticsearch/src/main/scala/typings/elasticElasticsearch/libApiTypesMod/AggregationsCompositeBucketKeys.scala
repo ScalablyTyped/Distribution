@@ -17,7 +17,8 @@ object AggregationsCompositeBucketKeys {
     __obj.asInstanceOf[AggregationsCompositeBucketKeys]
   }
   
-  extension [Self <: AggregationsCompositeBucketKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsCompositeBucketKeys] (val x: Self) extends AnyVal {
     
     inline def setKey(value: AggregationsCompositeAggregateKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

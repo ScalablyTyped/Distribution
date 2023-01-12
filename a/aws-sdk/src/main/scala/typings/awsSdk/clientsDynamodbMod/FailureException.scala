@@ -23,7 +23,8 @@ object FailureException {
     __obj.asInstanceOf[FailureException]
   }
   
-  extension [Self <: FailureException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailureException] (val x: Self) extends AnyVal {
     
     inline def setExceptionDescription(value: ExceptionDescription): Self = StObject.set(x, "ExceptionDescription", value.asInstanceOf[js.Any])
     

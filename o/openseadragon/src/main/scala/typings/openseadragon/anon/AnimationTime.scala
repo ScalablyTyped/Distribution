@@ -21,7 +21,8 @@ object AnimationTime {
     __obj.asInstanceOf[AnimationTime]
   }
   
-  extension [Self <: AnimationTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationTime] (val x: Self) extends AnyVal {
     
     inline def setAnimationTime(value: Double): Self = StObject.set(x, "animationTime", value.asInstanceOf[js.Any])
     

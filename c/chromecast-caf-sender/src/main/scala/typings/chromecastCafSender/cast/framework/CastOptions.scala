@@ -22,7 +22,8 @@ object CastOptions {
     __obj.asInstanceOf[CastOptions]
   }
   
-  extension [Self <: CastOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CastOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoJoinPolicy(value: AutoJoinPolicy): Self = StObject.set(x, "autoJoinPolicy", value.asInstanceOf[js.Any])
     

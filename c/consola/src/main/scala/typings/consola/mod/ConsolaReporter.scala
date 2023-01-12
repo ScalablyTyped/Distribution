@@ -15,7 +15,8 @@ object ConsolaReporter {
     __obj.asInstanceOf[ConsolaReporter]
   }
   
-  extension [Self <: ConsolaReporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsolaReporter] (val x: Self) extends AnyVal {
     
     inline def setLog(value: (ConsolaReporterLogObject, ConsolaReporterArgs) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
   }

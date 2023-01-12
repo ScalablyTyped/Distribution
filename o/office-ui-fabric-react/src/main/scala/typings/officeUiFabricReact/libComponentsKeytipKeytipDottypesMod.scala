@@ -99,7 +99,8 @@ object libComponentsKeytipKeytipDottypesMod {
       __obj.asInstanceOf[IKeytipProps]
     }
     
-    extension [Self <: IKeytipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeytipProps] (val x: Self) extends AnyVal {
       
       inline def setCalloutProps(value: ICalloutProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object libComponentsKeytipKeytipDottypesMod {
       __obj.asInstanceOf[IKeytipStyleProps]
     }
     
-    extension [Self <: IKeytipStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeytipStyleProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object libComponentsKeytipKeytipDottypesMod {
       __obj.asInstanceOf[IKeytipStyles]
     }
     
-    extension [Self <: IKeytipStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeytipStyles] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: IStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

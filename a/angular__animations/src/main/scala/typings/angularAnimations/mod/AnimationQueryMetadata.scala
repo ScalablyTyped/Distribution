@@ -35,7 +35,8 @@ object AnimationQueryMetadata {
     __obj.asInstanceOf[AnimationQueryMetadata]
   }
   
-  extension [Self <: AnimationQueryMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationQueryMetadata] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: AnimationMetadata | js.Array[AnimationMetadata]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

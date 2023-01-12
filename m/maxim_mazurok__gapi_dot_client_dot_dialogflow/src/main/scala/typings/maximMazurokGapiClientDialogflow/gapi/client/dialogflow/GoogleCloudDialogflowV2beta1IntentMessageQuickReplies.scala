@@ -19,7 +19,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageQuickReplies {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageQuickReplies]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageQuickReplies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageQuickReplies] (val x: Self) extends AnyVal {
     
     inline def setQuickReplies(value: js.Array[String]): Self = StObject.set(x, "quickReplies", value.asInstanceOf[js.Any])
     

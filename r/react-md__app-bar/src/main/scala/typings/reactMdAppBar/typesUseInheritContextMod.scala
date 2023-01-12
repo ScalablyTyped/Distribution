@@ -40,7 +40,8 @@ object typesUseInheritContextMod {
       __obj.asInstanceOf[AppBarColorInherit]
     }
     
-    extension [Self <: AppBarColorInherit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppBarColorInherit] (val x: Self) extends AnyVal {
       
       inline def setInheritColor(value: Boolean): Self = StObject.set(x, "inheritColor", value.asInstanceOf[js.Any])
       

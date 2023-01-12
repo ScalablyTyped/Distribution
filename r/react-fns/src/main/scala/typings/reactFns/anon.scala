@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[IsLoading]
     }
     
-    extension [Self <: IsLoading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsLoading] (val x: Self) extends AnyVal {
       
       inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Latitude]
     }
     
-    extension [Self <: Latitude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Latitude] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -56,7 +58,8 @@ object anon {
       __obj.asInstanceOf[PartialScrollConfig]
     }
     
-    extension [Self <: PartialScrollConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialScrollConfig] (val x: Self) extends AnyVal {
       
       inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
       
@@ -76,7 +79,8 @@ object anon {
       __obj.asInstanceOf[PartialWindowSizeConfig]
     }
     
-    extension [Self <: PartialWindowSizeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialWindowSizeConfig] (val x: Self) extends AnyVal {
       
       inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
       

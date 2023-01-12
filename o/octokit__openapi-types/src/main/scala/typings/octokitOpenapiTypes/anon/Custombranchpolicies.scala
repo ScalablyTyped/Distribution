@@ -19,7 +19,8 @@ object Custombranchpolicies {
     __obj.asInstanceOf[Custombranchpolicies]
   }
   
-  extension [Self <: Custombranchpolicies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Custombranchpolicies] (val x: Self) extends AnyVal {
     
     inline def setCustom_branch_policies(value: Boolean): Self = StObject.set(x, "custom_branch_policies", value.asInstanceOf[js.Any])
     

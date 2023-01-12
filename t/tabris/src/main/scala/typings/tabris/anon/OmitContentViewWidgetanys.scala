@@ -716,7 +716,8 @@ object OmitContentViewWidgetanys {
     __obj.asInstanceOf[OmitContentViewWidgetanys[ChildType]]
   }
   
-  extension [Self <: OmitContentViewWidgetanys[?], ChildType /* <: AnyWidget */](x: Self & OmitContentViewWidgetanys[ChildType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitContentViewWidgetanys[?], ChildType /* <: AnyWidget */] (val x: Self & OmitContentViewWidgetanys[ChildType]) extends AnyVal {
     
     inline def set$children(value: js.Array[Widget[Any]]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
     

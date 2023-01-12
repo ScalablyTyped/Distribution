@@ -95,7 +95,8 @@ object IDatabaseInfo {
     __obj.asInstanceOf[IDatabaseInfo]
   }
   
-  extension [Self <: IDatabaseInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDatabaseInfo] (val x: Self) extends AnyVal {
     
     inline def setQDBFirst(value: Boolean): Self = StObject.set(x, "qDBFirst", value.asInstanceOf[js.Any])
     

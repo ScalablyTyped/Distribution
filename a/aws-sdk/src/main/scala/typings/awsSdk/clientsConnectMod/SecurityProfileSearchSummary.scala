@@ -43,7 +43,8 @@ object SecurityProfileSearchSummary {
     __obj.asInstanceOf[SecurityProfileSearchSummary]
   }
   
-  extension [Self <: SecurityProfileSearchSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityProfileSearchSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

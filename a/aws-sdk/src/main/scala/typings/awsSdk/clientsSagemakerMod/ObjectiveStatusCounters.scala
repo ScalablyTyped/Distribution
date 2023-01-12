@@ -28,7 +28,8 @@ object ObjectiveStatusCounters {
     __obj.asInstanceOf[ObjectiveStatusCounters]
   }
   
-  extension [Self <: ObjectiveStatusCounters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectiveStatusCounters] (val x: Self) extends AnyVal {
     
     inline def setFailed(value: ObjectiveStatusCounter): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     

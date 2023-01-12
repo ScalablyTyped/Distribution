@@ -114,7 +114,8 @@ object mod {
         __obj.asInstanceOf[IItemOptions]
       }
       
-      extension [Self <: IItemOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IItemOptions] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -177,7 +178,8 @@ object mod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCallback(value: Widget => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
         
@@ -193,7 +195,8 @@ object mod {
       }
     }
     
-    extension [Self <: ILauncher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILauncher] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: IItemOptions => IDisposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     }

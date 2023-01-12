@@ -34,7 +34,8 @@ object sh {
     __obj.asInstanceOf[sh]
   }
   
-  extension [Self <: sh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sh] (val x: Self) extends AnyVal {
     
     inline def set_methodName(value: Any): Self = StObject.set(x, "_methodName", value.asInstanceOf[js.Any])
   }

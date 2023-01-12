@@ -15,7 +15,8 @@ object GetEmailChannelResponse {
     __obj.asInstanceOf[GetEmailChannelResponse]
   }
   
-  extension [Self <: GetEmailChannelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEmailChannelResponse] (val x: Self) extends AnyVal {
     
     inline def setEmailChannelResponse(value: EmailChannelResponse): Self = StObject.set(x, "EmailChannelResponse", value.asInstanceOf[js.Any])
   }

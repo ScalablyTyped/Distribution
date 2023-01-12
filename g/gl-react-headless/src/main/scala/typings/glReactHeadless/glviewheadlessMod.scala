@@ -64,7 +64,8 @@ object glviewheadlessMod {
       __obj.asInstanceOf[GLViewHeadlessProps]
     }
     
-    extension [Self <: GLViewHeadlessProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLViewHeadlessProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

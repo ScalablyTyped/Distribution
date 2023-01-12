@@ -42,7 +42,8 @@ object libComponentsFloatingPickerSuggestionsSuggestionsStoreMod {
       __obj.asInstanceOf[SuggestionsStoreOptions[T]]
     }
     
-    extension [Self <: SuggestionsStoreOptions[?], T](x: Self & SuggestionsStoreOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestionsStoreOptions[?], T] (val x: Self & SuggestionsStoreOptions[T]) extends AnyVal {
       
       inline def setGetAriaLabel(value: /* item */ T => String): Self = StObject.set(x, "getAriaLabel", js.Any.fromFunction1(value))
       

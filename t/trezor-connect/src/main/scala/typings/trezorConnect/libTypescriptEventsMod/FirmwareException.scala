@@ -19,7 +19,8 @@ object FirmwareException {
     __obj.asInstanceOf[FirmwareException]
   }
   
-  extension [Self <: FirmwareException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirmwareException] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Device): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

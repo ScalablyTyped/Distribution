@@ -23,7 +23,8 @@ object AuthError {
     __obj.asInstanceOf[AuthError]
   }
   
-  extension [Self <: AuthError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthError] (val x: Self) extends AnyVal {
     
     inline def setCredential(value: AuthCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     

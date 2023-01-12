@@ -18,7 +18,8 @@ object CoreCompilerError {
     __obj.asInstanceOf[CoreCompilerError]
   }
   
-  extension [Self <: CoreCompilerError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreCompilerError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ErrorCodes): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }

@@ -177,7 +177,8 @@ object Target {
       __obj.asInstanceOf[IDocumentsTarget]
     }
     
-    extension [Self <: IDocumentsTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentsTarget] (val x: Self) extends AnyVal {
       
       inline def setDocuments(value: js.Array[String]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
       
@@ -205,7 +206,8 @@ object Target {
       __obj.asInstanceOf[IQueryTarget]
     }
     
-    extension [Self <: IQueryTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IQueryTarget] (val x: Self) extends AnyVal {
       
       inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       

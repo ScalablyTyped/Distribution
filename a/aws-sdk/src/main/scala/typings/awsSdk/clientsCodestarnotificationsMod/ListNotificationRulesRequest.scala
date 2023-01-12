@@ -28,7 +28,8 @@ object ListNotificationRulesRequest {
     __obj.asInstanceOf[ListNotificationRulesRequest]
   }
   
-  extension [Self <: ListNotificationRulesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNotificationRulesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: ListNotificationRulesFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object urlbar {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object urlbar {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object urlbar {
       __obj.asInstanceOf[SearchOptions]
     }
     
-    extension [Self <: SearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
@@ -202,7 +205,8 @@ object urlbar {
       __obj.asInstanceOf[UrlbarOnBehaviorRequestedEvent[TCallback]]
     }
     
-    extension [Self <: UrlbarOnBehaviorRequestedEvent[?], TCallback](x: Self & UrlbarOnBehaviorRequestedEvent[TCallback]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlbarOnBehaviorRequestedEvent[?], TCallback] (val x: Self & UrlbarOnBehaviorRequestedEvent[TCallback]) extends AnyVal {
       
       inline def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
@@ -231,7 +235,8 @@ object urlbar {
       __obj.asInstanceOf[UrlbarOnEngagementEvent[TCallback]]
     }
     
-    extension [Self <: UrlbarOnEngagementEvent[?], TCallback](x: Self & UrlbarOnEngagementEvent[TCallback]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlbarOnEngagementEvent[?], TCallback] (val x: Self & UrlbarOnEngagementEvent[TCallback]) extends AnyVal {
       
       inline def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
@@ -260,7 +265,8 @@ object urlbar {
       __obj.asInstanceOf[UrlbarOnQueryCanceledEvent[TCallback]]
     }
     
-    extension [Self <: UrlbarOnQueryCanceledEvent[?], TCallback](x: Self & UrlbarOnQueryCanceledEvent[TCallback]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlbarOnQueryCanceledEvent[?], TCallback] (val x: Self & UrlbarOnQueryCanceledEvent[TCallback]) extends AnyVal {
       
       inline def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
@@ -289,7 +295,8 @@ object urlbar {
       __obj.asInstanceOf[UrlbarOnResultPickedEvent[TCallback]]
     }
     
-    extension [Self <: UrlbarOnResultPickedEvent[?], TCallback](x: Self & UrlbarOnResultPickedEvent[TCallback]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlbarOnResultPickedEvent[?], TCallback] (val x: Self & UrlbarOnResultPickedEvent[TCallback]) extends AnyVal {
       
       inline def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
@@ -318,7 +325,8 @@ object urlbar {
       __obj.asInstanceOf[UrlbarOnResultsRequestedEvent[TCallback]]
     }
     
-    extension [Self <: UrlbarOnResultsRequestedEvent[?], TCallback](x: Self & UrlbarOnResultsRequestedEvent[TCallback]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlbarOnResultsRequestedEvent[?], TCallback] (val x: Self & UrlbarOnResultsRequestedEvent[TCallback]) extends AnyVal {
       
       inline def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       

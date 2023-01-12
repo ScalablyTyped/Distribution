@@ -23,7 +23,8 @@ object QualityLevel {
     __obj.asInstanceOf[QualityLevel]
   }
   
-  extension [Self <: QualityLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QualityLevel] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

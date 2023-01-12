@@ -40,7 +40,8 @@ object CanvasDragEvent {
     __obj.asInstanceOf[CanvasDragEvent]
   }
   
-  extension [Self <: CanvasDragEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasDragEvent] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Point): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

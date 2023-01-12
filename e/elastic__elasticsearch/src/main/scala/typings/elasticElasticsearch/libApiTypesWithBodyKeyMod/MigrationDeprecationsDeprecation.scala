@@ -21,7 +21,8 @@ object MigrationDeprecationsDeprecation {
     __obj.asInstanceOf[MigrationDeprecationsDeprecation]
   }
   
-  extension [Self <: MigrationDeprecationsDeprecation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationDeprecationsDeprecation] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

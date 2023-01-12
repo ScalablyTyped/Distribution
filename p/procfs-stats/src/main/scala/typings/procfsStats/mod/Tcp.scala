@@ -58,7 +58,8 @@ object Tcp {
     __obj.asInstanceOf[Tcp]
   }
   
-  extension [Self <: Tcp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tcp] (val x: Self) extends AnyVal {
     
     inline def setInode(value: String): Self = StObject.set(x, "inode", value.asInstanceOf[js.Any])
     

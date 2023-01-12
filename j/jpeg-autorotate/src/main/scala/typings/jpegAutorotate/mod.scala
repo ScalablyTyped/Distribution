@@ -101,7 +101,8 @@ object mod {
       __obj.asInstanceOf[CustomError]
     }
     
-    extension [Self <: CustomError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: errors): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -120,7 +121,8 @@ object mod {
       __obj.asInstanceOf[RotateDimensions]
     }
     
-    extension [Self <: RotateDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotateDimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object mod {
       __obj.asInstanceOf[RotateOptions]
     }
     
-    extension [Self <: RotateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotateOptions] (val x: Self) extends AnyVal {
       
       inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       

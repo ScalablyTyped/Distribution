@@ -51,7 +51,8 @@ object MolecularSequenceVariant {
     __obj.asInstanceOf[MolecularSequenceVariant]
   }
   
-  extension [Self <: MolecularSequenceVariant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MolecularSequenceVariant] (val x: Self) extends AnyVal {
     
     inline def setCigar(value: String): Self = StObject.set(x, "cigar", value.asInstanceOf[js.Any])
     

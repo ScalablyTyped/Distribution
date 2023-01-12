@@ -17,7 +17,8 @@ object XpackUsageAnalytics {
     __obj.asInstanceOf[XpackUsageAnalytics]
   }
   
-  extension [Self <: XpackUsageAnalytics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageAnalytics] (val x: Self) extends AnyVal {
     
     inline def setStats(value: XpackUsageAnalyticsStatistics): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }

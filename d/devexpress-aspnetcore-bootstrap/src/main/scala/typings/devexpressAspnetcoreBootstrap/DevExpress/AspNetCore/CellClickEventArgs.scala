@@ -21,7 +21,8 @@ object CellClickEventArgs {
     __obj.asInstanceOf[CellClickEventArgs]
   }
   
-  extension [Self <: CellClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

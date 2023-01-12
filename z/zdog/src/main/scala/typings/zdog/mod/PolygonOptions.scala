@@ -21,7 +21,8 @@ object PolygonOptions {
     __obj.asInstanceOf[PolygonOptions]
   }
   
-  extension [Self <: PolygonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonOptions] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

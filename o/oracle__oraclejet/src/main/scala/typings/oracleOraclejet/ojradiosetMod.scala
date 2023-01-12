@@ -253,7 +253,8 @@ object ojradiosetMod {
         __obj.asInstanceOf[Option]
       }
       
-      extension [Self <: Option](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
         
         inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
@@ -283,7 +284,8 @@ object ojradiosetMod {
         __obj.asInstanceOf[OptionContext[D]]
       }
       
-      extension [Self <: OptionContext[?], D](x: Self & OptionContext[D]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OptionContext[?], D] (val x: Self & OptionContext[D]) extends AnyVal {
         
         inline def setComponent(value: Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
         
@@ -307,7 +309,8 @@ object ojradiosetMod {
         __obj.asInstanceOf[OptionsKeys]
       }
       
-      extension [Self <: OptionsKeys](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OptionsKeys] (val x: Self) extends AnyVal {
         
         inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
@@ -477,7 +480,8 @@ object ojradiosetMod {
       __obj.asInstanceOf[ojRadiosetEventMap[K, D]]
     }
     
-    extension [Self <: ojRadiosetEventMap[?, ?], K, D](x: Self & (ojRadiosetEventMap[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojRadiosetEventMap[?, ?], K, D] (val x: Self & (ojRadiosetEventMap[K, D])) extends AnyVal {
       
       inline def setLabelledByChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "labelledByChanged", value.asInstanceOf[js.Any])
       
@@ -538,7 +542,8 @@ object ojradiosetMod {
       __obj.asInstanceOf[ojRadiosetSettableProperties[K, D]]
     }
     
-    extension [Self <: ojRadiosetSettableProperties[?, ?], K, D](x: Self & (ojRadiosetSettableProperties[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojRadiosetSettableProperties[?, ?], K, D] (val x: Self & (ojRadiosetSettableProperties[K, D])) extends AnyVal {
       
       inline def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
       
@@ -608,7 +613,8 @@ object ojradiosetMod {
       __obj.asInstanceOf[ojRadiosetSettablePropertiesLenient[K, D]]
     }
     
-    extension [Self <: ojRadiosetSettablePropertiesLenient[?, ?], K, D](x: Self & (ojRadiosetSettablePropertiesLenient[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojRadiosetSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojRadiosetSettablePropertiesLenient[K, D])) extends AnyVal {
       
       inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       

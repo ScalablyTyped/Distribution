@@ -21,7 +21,8 @@ object SettingsProps {
     __obj.asInstanceOf[SettingsProps]
   }
   
-  extension [Self <: SettingsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingsProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

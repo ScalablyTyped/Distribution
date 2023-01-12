@@ -18,7 +18,8 @@ object DeleteActivityInput {
     __obj.asInstanceOf[DeleteActivityInput]
   }
   
-  extension [Self <: DeleteActivityInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteActivityInput] (val x: Self) extends AnyVal {
     
     inline def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
   }

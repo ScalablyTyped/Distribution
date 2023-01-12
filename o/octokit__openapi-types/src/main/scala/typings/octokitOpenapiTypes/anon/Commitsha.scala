@@ -26,7 +26,8 @@ object Commitsha {
     __obj.asInstanceOf[Commitsha]
   }
   
-  extension [Self <: Commitsha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Commitsha] (val x: Self) extends AnyVal {
     
     inline def setCommit_sha(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['commit-sha'] */ js.Any

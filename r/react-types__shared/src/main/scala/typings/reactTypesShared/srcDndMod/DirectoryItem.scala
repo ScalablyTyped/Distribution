@@ -26,7 +26,8 @@ object DirectoryItem {
     __obj.asInstanceOf[DirectoryItem]
   }
   
-  extension [Self <: DirectoryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryItem] (val x: Self) extends AnyVal {
     
     inline def setGetEntries(value: () => AsyncIterable[FileItem | DirectoryItem]): Self = StObject.set(x, "getEntries", js.Any.fromFunction0(value))
     

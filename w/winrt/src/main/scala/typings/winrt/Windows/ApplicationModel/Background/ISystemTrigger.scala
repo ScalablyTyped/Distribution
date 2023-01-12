@@ -19,7 +19,8 @@ object ISystemTrigger {
     __obj.asInstanceOf[ISystemTrigger]
   }
   
-  extension [Self <: ISystemTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISystemTrigger] (val x: Self) extends AnyVal {
     
     inline def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
     

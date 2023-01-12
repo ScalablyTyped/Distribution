@@ -66,7 +66,8 @@ object FaxOutgoingMessage {
     __obj.asInstanceOf[FaxOutgoingMessage]
   }
   
-  extension [Self <: FaxOutgoingMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxOutgoingMessage] (val x: Self) extends AnyVal {
     
     inline def setFAXCOMEXLibDotFaxOutgoingMessage_typekey(value: FaxOutgoingMessage): Self = StObject.set(x, "FAXCOMEXLib.FaxOutgoingMessage_typekey", value.asInstanceOf[js.Any])
     

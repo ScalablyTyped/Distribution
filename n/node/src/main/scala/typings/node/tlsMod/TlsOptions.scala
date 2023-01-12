@@ -62,7 +62,8 @@ object TlsOptions {
     __obj.asInstanceOf[TlsOptions]
   }
   
-  extension [Self <: TlsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TlsOptions] (val x: Self) extends AnyVal {
     
     inline def setHandshakeTimeout(value: Double): Self = StObject.set(x, "handshakeTimeout", value.asInstanceOf[js.Any])
     

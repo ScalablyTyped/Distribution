@@ -80,7 +80,8 @@ object componentsCardCardMediaMod {
       __obj.asInstanceOf[CardMediaProps]
     }
     
-    extension [Self <: CardMediaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardMediaProps] (val x: Self) extends AnyVal {
       
       inline def setAspectRatio(value: wide | square): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object componentsCardCardMediaMod {
       __obj.asInstanceOf[CardMediaTheme]
     }
     
-    extension [Self <: CardMediaTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardMediaTheme] (val x: Self) extends AnyVal {
       
       inline def setCardMedia(value: String): Self = StObject.set(x, "cardMedia", value.asInstanceOf[js.Any])
       

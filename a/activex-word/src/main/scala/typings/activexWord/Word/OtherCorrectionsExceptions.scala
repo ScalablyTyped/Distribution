@@ -37,7 +37,8 @@ object OtherCorrectionsExceptions {
     __obj.asInstanceOf[OtherCorrectionsExceptions]
   }
   
-  extension [Self <: OtherCorrectionsExceptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherCorrectionsExceptions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => OtherCorrectionsException): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

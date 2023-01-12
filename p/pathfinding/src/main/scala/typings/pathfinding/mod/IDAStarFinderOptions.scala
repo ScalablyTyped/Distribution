@@ -19,7 +19,8 @@ object IDAStarFinderOptions {
     __obj.asInstanceOf[IDAStarFinderOptions]
   }
   
-  extension [Self <: IDAStarFinderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDAStarFinderOptions] (val x: Self) extends AnyVal {
     
     inline def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object KillFilterSKIPMEskipMeboo {
     __obj.asInstanceOf[KillFilterSKIPMEskipMeboo]
   }
   
-  extension [Self <: KillFilterSKIPMEskipMeboo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KillFilterSKIPMEskipMeboo] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: SKIP_ME): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

@@ -229,7 +229,8 @@ object moduleMod extends Shortcut {
       __obj.asInstanceOf[SourceMapPayload]
     }
     
-    extension [Self <: SourceMapPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapPayload] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -278,7 +279,8 @@ object moduleMod extends Shortcut {
       __obj.asInstanceOf[SourceMapping]
     }
     
-    extension [Self <: SourceMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapping] (val x: Self) extends AnyVal {
       
       inline def setGeneratedColumn(value: Double): Self = StObject.set(x, "generatedColumn", value.asInstanceOf[js.Any])
       
@@ -330,7 +332,8 @@ object moduleMod extends Shortcut {
         __obj.asInstanceOf[ImportMeta]
       }
       
-      extension [Self <: ImportMeta](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ImportMeta] (val x: Self) extends AnyVal {
         
         inline def setResolve(
           value: (/* specified */ String, /* parent */ js.UndefOr[String | typings.std.URL]) => js.Promise[String]

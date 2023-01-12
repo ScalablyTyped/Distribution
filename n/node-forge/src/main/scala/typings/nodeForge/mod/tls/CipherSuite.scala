@@ -18,7 +18,8 @@ object CipherSuite {
     __obj.asInstanceOf[CipherSuite]
   }
   
-  extension [Self <: CipherSuite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CipherSuite] (val x: Self) extends AnyVal {
     
     inline def setId(value: js.Tuple2[Byte, Byte]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

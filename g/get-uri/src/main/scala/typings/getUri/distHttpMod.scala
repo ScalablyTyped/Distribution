@@ -43,7 +43,8 @@ object distHttpMod {
       __obj.asInstanceOf[HttpOptions]
     }
     
-    extension [Self <: HttpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: HttpReadable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object distHttpMod {
       __obj.asInstanceOf[HttpReadableProps]
     }
     
-    extension [Self <: HttpReadableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpReadableProps] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

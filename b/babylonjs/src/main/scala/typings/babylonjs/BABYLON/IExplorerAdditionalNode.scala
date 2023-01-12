@@ -23,7 +23,8 @@ object IExplorerAdditionalNode {
     __obj.asInstanceOf[IExplorerAdditionalNode]
   }
   
-  extension [Self <: IExplorerAdditionalNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExplorerAdditionalNode] (val x: Self) extends AnyVal {
     
     inline def setGetContent(value: () => js.Array[IExplorerAdditionalChild]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     

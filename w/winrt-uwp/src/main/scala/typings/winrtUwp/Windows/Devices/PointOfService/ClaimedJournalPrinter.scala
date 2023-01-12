@@ -82,7 +82,8 @@ object ClaimedJournalPrinter {
     __obj.asInstanceOf[ClaimedJournalPrinter]
   }
   
-  extension [Self <: ClaimedJournalPrinter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimedJournalPrinter] (val x: Self) extends AnyVal {
     
     inline def setCharactersPerLine(value: Double): Self = StObject.set(x, "charactersPerLine", value.asInstanceOf[js.Any])
     

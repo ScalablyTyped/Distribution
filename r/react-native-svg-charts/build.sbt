@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "react-native-svg-charts"
-version := "5.0-dt-20211202Z-ae3300"
+version := "5.0-dt-20211202Z-e51460"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-4db30e",
+  "org.scalablytyped" %%% "csstype" % "3.1.1-9b270c",
   "org.scalablytyped" %%% "d3-path" % "3.0-dt-20220310Z-1117bb",
-  "org.scalablytyped" %%% "d3-scale" % "4.0-dt-20220624Z-a52588",
-  "org.scalablytyped" %%% "d3-shape" % "3.1-dt-20220624Z-3978d5",
-  "org.scalablytyped" %%% "d3-time" % "3.0-dt-20211202Z-6f203c",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-8a1cd9",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-cf549b",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-e43cee",
-  "org.scalablytyped" %%% "react-native-svg" % "13.6.0-55ef02",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-6206c7",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f")
+  "org.scalablytyped" %%% "d3-scale" % "4.0-dt-20220624Z-a0ef46",
+  "org.scalablytyped" %%% "d3-shape" % "3.1-dt-20220624Z-47ca74",
+  "org.scalablytyped" %%% "d3-time" % "3.0-dt-20211202Z-72901b",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-9c1d48",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-c1aa2f",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-27f111",
+  "org.scalablytyped" %%% "react-native-svg" % "13.6.0-8957f2",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-fd69ea",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

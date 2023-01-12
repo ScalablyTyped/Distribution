@@ -33,7 +33,8 @@ object ListDetectMitigationActionsTasksRequest {
     __obj.asInstanceOf[ListDetectMitigationActionsTasksRequest]
   }
   
-  extension [Self <: ListDetectMitigationActionsTasksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDetectMitigationActionsTasksRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

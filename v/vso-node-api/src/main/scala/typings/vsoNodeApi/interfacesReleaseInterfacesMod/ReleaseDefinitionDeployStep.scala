@@ -20,7 +20,8 @@ object ReleaseDefinitionDeployStep {
     __obj.asInstanceOf[ReleaseDefinitionDeployStep]
   }
   
-  extension [Self <: ReleaseDefinitionDeployStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseDefinitionDeployStep] (val x: Self) extends AnyVal {
     
     inline def setTasks(value: js.Array[WorkflowTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     

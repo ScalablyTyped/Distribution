@@ -15,7 +15,8 @@ object WebPropertyRef {
     __obj.asInstanceOf[WebPropertyRef]
   }
   
-  extension [Self <: WebPropertyRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebPropertyRef] (val x: Self) extends AnyVal {
     
     inline def setWebPropertyRef(value: typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.WebPropertyRef): Self = StObject.set(x, "webPropertyRef", value.asInstanceOf[js.Any])
     

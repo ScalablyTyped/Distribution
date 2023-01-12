@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[INode]
     }
     
-    extension [Self <: INode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INode] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[IParseOptions]
     }
     
-    extension [Self <: IParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParseOptions] (val x: Self) extends AnyVal {
       
       inline def setCamelcase(value: Boolean): Self = StObject.set(x, "camelcase", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object mod {
       __obj.asInstanceOf[IStringifyOptions]
     }
     
-    extension [Self <: IStringifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStringifyOptions] (val x: Self) extends AnyVal {
       
       inline def setSelfClose(value: Boolean): Self = StObject.set(x, "selfClose", value.asInstanceOf[js.Any])
       

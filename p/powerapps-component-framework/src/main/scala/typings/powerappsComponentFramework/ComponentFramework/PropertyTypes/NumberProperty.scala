@@ -26,7 +26,8 @@ object NumberProperty {
     __obj.asInstanceOf[NumberProperty]
   }
   
-  extension [Self <: NumberProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberProperty] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: NumberMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

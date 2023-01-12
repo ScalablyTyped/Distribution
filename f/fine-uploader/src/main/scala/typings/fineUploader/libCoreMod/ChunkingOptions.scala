@@ -52,7 +52,8 @@ object ChunkingOptions {
     __obj.asInstanceOf[ChunkingOptions]
   }
   
-  extension [Self <: ChunkingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkingOptions] (val x: Self) extends AnyVal {
     
     inline def setConcurrent(value: ConcurrentOptions): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
     

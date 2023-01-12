@@ -114,7 +114,8 @@ object esTreeSelectMod extends Shortcut {
       __obj.asInstanceOf[BaseOptionType]
     }
     
-    extension [Self <: BaseOptionType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptionType] (val x: Self) extends AnyVal {
       
       inline def setCheckable(value: Boolean): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       
@@ -167,7 +168,8 @@ object esTreeSelectMod extends Shortcut {
       __obj.asInstanceOf[ChangeEventExtra]
     }
     
-    extension [Self <: ChangeEventExtra](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventExtra] (val x: Self) extends AnyVal {
       
       inline def setAllCheckedNodes(value: js.Array[LegacyCheckedNode]): Self = StObject.set(x, "allCheckedNodes", value.asInstanceOf[js.Any])
       
@@ -213,7 +215,8 @@ object esTreeSelectMod extends Shortcut {
       __obj.asInstanceOf[DefaultOptionType]
     }
     
-    extension [Self <: DefaultOptionType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptionType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[DefaultOptionType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -256,7 +259,8 @@ object esTreeSelectMod extends Shortcut {
       __obj.asInstanceOf[FieldNames]
     }
     
-    extension [Self <: FieldNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldNames] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -288,7 +292,8 @@ object esTreeSelectMod extends Shortcut {
       __obj.asInstanceOf[InternalFieldName]
     }
     
-    extension [Self <: InternalFieldName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalFieldName] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -322,7 +327,8 @@ object esTreeSelectMod extends Shortcut {
       __obj.asInstanceOf[LabeledValueType]
     }
     
-    extension [Self <: LabeledValueType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabeledValueType] (val x: Self) extends AnyVal {
       
       inline def setHalfChecked(value: Boolean): Self = StObject.set(x, "halfChecked", value.asInstanceOf[js.Any])
       
@@ -357,7 +363,8 @@ object esTreeSelectMod extends Shortcut {
       __obj.asInstanceOf[LegacyCheckedNode]
     }
     
-    extension [Self <: LegacyCheckedNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyCheckedNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[LegacyCheckedNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -384,7 +391,8 @@ object esTreeSelectMod extends Shortcut {
       __obj.asInstanceOf[LegacyDataNode]
     }
     
-    extension [Self <: LegacyDataNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyDataNode] (val x: Self) extends AnyVal {
       
       inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
@@ -427,7 +435,8 @@ object esTreeSelectMod extends Shortcut {
       __obj.asInstanceOf[SimpleModeConfig]
     }
     
-    extension [Self <: SimpleModeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleModeConfig] (val x: Self) extends AnyVal {
       
       inline def setId(value: Key): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -735,7 +744,8 @@ object esTreeSelectMod extends Shortcut {
       __obj.asInstanceOf[TreeSelectProps[ValueType, OptionType]]
     }
     
-    extension [Self <: TreeSelectProps[?, ?], ValueType, OptionType /* <: BaseOptionType */](x: Self & (TreeSelectProps[ValueType, OptionType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectProps[?, ?], ValueType, OptionType /* <: BaseOptionType */] (val x: Self & (TreeSelectProps[ValueType, OptionType])) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       

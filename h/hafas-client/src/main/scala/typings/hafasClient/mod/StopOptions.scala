@@ -43,7 +43,8 @@ object StopOptions {
     __obj.asInstanceOf[StopOptions]
   }
   
-  extension [Self <: StopOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopOptions] (val x: Self) extends AnyVal {
     
     inline def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     

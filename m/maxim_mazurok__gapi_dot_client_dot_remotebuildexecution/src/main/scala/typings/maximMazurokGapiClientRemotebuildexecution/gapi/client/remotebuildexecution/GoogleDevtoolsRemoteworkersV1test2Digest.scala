@@ -22,7 +22,8 @@ object GoogleDevtoolsRemoteworkersV1test2Digest {
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2Digest]
   }
   
-  extension [Self <: GoogleDevtoolsRemoteworkersV1test2Digest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2Digest] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

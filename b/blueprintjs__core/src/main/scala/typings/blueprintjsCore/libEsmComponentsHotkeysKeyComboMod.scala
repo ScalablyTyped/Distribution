@@ -55,7 +55,8 @@ object libEsmComponentsHotkeysKeyComboMod {
       __obj.asInstanceOf[IKeyComboProps]
     }
     
-    extension [Self <: IKeyComboProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeyComboProps] (val x: Self) extends AnyVal {
       
       inline def setCombo(value: String): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
       

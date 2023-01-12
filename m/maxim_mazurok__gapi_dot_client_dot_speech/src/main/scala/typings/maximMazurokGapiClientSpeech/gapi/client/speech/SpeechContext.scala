@@ -30,7 +30,8 @@ object SpeechContext {
     __obj.asInstanceOf[SpeechContext]
   }
   
-  extension [Self <: SpeechContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechContext] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

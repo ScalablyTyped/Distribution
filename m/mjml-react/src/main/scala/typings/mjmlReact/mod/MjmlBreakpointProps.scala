@@ -15,7 +15,8 @@ object MjmlBreakpointProps {
     __obj.asInstanceOf[MjmlBreakpointProps]
   }
   
-  extension [Self <: MjmlBreakpointProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlBreakpointProps] (val x: Self) extends AnyVal {
     
     inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

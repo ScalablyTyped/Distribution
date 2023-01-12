@@ -41,7 +41,8 @@ object notificationsMod {
       __obj.asInstanceOf[NotificationsGetOptions]
     }
     
-    extension [Self <: NotificationsGetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationsGetOptions] (val x: Self) extends AnyVal {
       
       inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object notificationsMod {
       __obj.asInstanceOf[NotificationsOptions]
     }
     
-    extension [Self <: NotificationsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationsOptions] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

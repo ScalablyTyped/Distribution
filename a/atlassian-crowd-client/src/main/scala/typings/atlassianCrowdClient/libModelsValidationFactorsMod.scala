@@ -39,7 +39,8 @@ object libModelsValidationFactorsMod {
       __obj.asInstanceOf[ValidationFactors]
     }
     
-    extension [Self <: ValidationFactors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationFactors] (val x: Self) extends AnyVal {
       
       inline def setToCrowd(value: () => ValidationFactorsObj): Self = StObject.set(x, "toCrowd", js.Any.fromFunction0(value))
       
@@ -58,7 +59,8 @@ object libModelsValidationFactorsMod {
       __obj.asInstanceOf[ValidationFactorsObj]
     }
     
-    extension [Self <: ValidationFactorsObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationFactorsObj] (val x: Self) extends AnyVal {
       
       inline def setValidationFactors(value: js.Array[Any]): Self = StObject.set(x, "validationFactors", value.asInstanceOf[js.Any])
       

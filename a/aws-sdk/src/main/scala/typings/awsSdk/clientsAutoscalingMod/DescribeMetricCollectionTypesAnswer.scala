@@ -23,7 +23,8 @@ object DescribeMetricCollectionTypesAnswer {
     __obj.asInstanceOf[DescribeMetricCollectionTypesAnswer]
   }
   
-  extension [Self <: DescribeMetricCollectionTypesAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMetricCollectionTypesAnswer] (val x: Self) extends AnyVal {
     
     inline def setGranularities(value: MetricGranularityTypes): Self = StObject.set(x, "Granularities", value.asInstanceOf[js.Any])
     

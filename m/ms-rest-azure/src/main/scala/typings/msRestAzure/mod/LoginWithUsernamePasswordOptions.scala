@@ -27,7 +27,8 @@ object LoginWithUsernamePasswordOptions {
     __obj.asInstanceOf[LoginWithUsernamePasswordOptions]
   }
   
-  extension [Self <: LoginWithUsernamePasswordOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginWithUsernamePasswordOptions] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

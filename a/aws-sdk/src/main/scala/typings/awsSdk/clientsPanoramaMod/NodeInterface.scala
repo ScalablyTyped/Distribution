@@ -23,7 +23,8 @@ object NodeInterface {
     __obj.asInstanceOf[NodeInterface]
   }
   
-  extension [Self <: NodeInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeInterface] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: InputPortList): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     

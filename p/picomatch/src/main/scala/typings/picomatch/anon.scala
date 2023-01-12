@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Alnum]
     }
     
-    extension [Self <: Alnum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alnum] (val x: Self) extends AnyVal {
       
       inline def setAlnum(value: `a-zA-Z0-9`): Self = StObject.set(x, "alnum", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object anon {
       __obj.asInstanceOf[Close]
     }
     
-    extension [Self <: Close](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
       
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object anon {
       __obj.asInstanceOf[IsMatch]
     }
     
-    extension [Self <: IsMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsMatch] (val x: Self) extends AnyVal {
       
       inline def setIsMatch(value: Boolean): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object anon {
       __obj.asInstanceOf[MaxLength]
     }
     
-    extension [Self <: MaxLength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxLength] (val x: Self) extends AnyVal {
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
@@ -170,7 +174,8 @@ object anon {
       __obj.asInstanceOf[STAR]
     }
     
-    extension [Self <: STAR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: STAR] (val x: Self) extends AnyVal {
       
       inline def setSTAR(value: String): Self = StObject.set(x, "STAR", value.asInstanceOf[js.Any])
     }
@@ -197,7 +202,8 @@ object anon {
       __obj.asInstanceOf[_empty]
     }
     
-    extension [Self <: _empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
       
       inline def setAsteriskAsteriskAsterisk(value: Asterisk): Self = StObject.set(x, "***", value.asInstanceOf[js.Any])
       

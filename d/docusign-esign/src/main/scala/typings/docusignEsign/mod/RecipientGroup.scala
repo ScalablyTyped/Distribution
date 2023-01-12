@@ -28,7 +28,8 @@ object RecipientGroup {
     __obj.asInstanceOf[RecipientGroup]
   }
   
-  extension [Self <: RecipientGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientGroup] (val x: Self) extends AnyVal {
     
     inline def setGroupMessage(value: String): Self = StObject.set(x, "groupMessage", value.asInstanceOf[js.Any])
     

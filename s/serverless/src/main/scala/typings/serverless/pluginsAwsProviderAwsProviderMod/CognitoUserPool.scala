@@ -19,7 +19,8 @@ object CognitoUserPool {
     __obj.asInstanceOf[CognitoUserPool]
   }
   
-  extension [Self <: CognitoUserPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CognitoUserPool] (val x: Self) extends AnyVal {
     
     inline def setExisting(value: Boolean): Self = StObject.set(x, "existing", value.asInstanceOf[js.Any])
     

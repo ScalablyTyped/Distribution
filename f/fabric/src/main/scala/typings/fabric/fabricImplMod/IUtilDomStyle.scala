@@ -19,7 +19,8 @@ object IUtilDomStyle {
     __obj.asInstanceOf[IUtilDomStyle]
   }
   
-  extension [Self <: IUtilDomStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUtilDomStyle] (val x: Self) extends AnyVal {
     
     inline def setSetStyle(value: (HTMLElement, Any) => HTMLElement): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
   }

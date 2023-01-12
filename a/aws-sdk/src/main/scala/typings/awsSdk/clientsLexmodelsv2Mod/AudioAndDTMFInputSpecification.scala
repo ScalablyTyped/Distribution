@@ -28,7 +28,8 @@ object AudioAndDTMFInputSpecification {
     __obj.asInstanceOf[AudioAndDTMFInputSpecification]
   }
   
-  extension [Self <: AudioAndDTMFInputSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioAndDTMFInputSpecification] (val x: Self) extends AnyVal {
     
     inline def setAudioSpecification(value: AudioSpecification): Self = StObject.set(x, "audioSpecification", value.asInstanceOf[js.Any])
     

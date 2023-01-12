@@ -57,7 +57,8 @@ object typesMenuMenuItemInputToggleMod {
       __obj.asInstanceOf[AllowedListItemProps]
     }
     
-    extension [Self <: AllowedListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowedListItemProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object typesMenuMenuItemInputToggleMod {
       __obj.asInstanceOf[BaseMenuItemInputToggleProps]
     }
     
-    extension [Self <: BaseMenuItemInputToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseMenuItemInputToggleProps] (val x: Self) extends AnyVal {
       
       inline def setAddon(value: ReactNode): Self = StObject.set(x, "addon", value.asInstanceOf[js.Any])
       
@@ -293,7 +295,8 @@ object typesMenuMenuItemInputToggleMod {
       __obj.asInstanceOf[MenuItemInputToggleProps]
     }
     
-    extension [Self <: MenuItemInputToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemInputToggleProps] (val x: Self) extends AnyVal {
       
       inline def setType(value: checkbox | radio | switch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

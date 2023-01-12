@@ -53,7 +53,8 @@ object AuthEventType {
     __obj.asInstanceOf[AuthEventType]
   }
   
-  extension [Self <: AuthEventType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthEventType] (val x: Self) extends AnyVal {
     
     inline def setChallengeResponses(value: ChallengeResponseListType): Self = StObject.set(x, "ChallengeResponses", value.asInstanceOf[js.Any])
     

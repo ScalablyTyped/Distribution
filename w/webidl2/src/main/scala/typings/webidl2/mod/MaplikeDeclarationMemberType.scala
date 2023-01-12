@@ -30,7 +30,8 @@ object MaplikeDeclarationMemberType {
     __obj.asInstanceOf[MaplikeDeclarationMemberType]
   }
   
-  extension [Self <: MaplikeDeclarationMemberType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaplikeDeclarationMemberType] (val x: Self) extends AnyVal {
     
     inline def setIdlType(value: js.Tuple2[IDLTypeDescription, IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     

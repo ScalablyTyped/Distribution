@@ -23,7 +23,8 @@ object ListWhatIfForecastsResponse {
     __obj.asInstanceOf[ListWhatIfForecastsResponse]
   }
   
-  extension [Self <: ListWhatIfForecastsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWhatIfForecastsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object linkerSrcFileLinkerDeclarationScopeMod {
       __obj.asInstanceOf[DeclarationScope[TSharedConstantScope, TExpression]]
     }
     
-    extension [Self <: DeclarationScope[?, ?], TSharedConstantScope, TExpression](x: Self & (DeclarationScope[TSharedConstantScope, TExpression])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeclarationScope[?, ?], TSharedConstantScope, TExpression] (val x: Self & (DeclarationScope[TSharedConstantScope, TExpression])) extends AnyVal {
       
       inline def setGetConstantScopeRef(value: TExpression => TSharedConstantScope | Null): Self = StObject.set(x, "getConstantScopeRef", js.Any.fromFunction1(value))
     }

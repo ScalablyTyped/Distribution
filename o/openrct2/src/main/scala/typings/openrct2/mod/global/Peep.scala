@@ -71,7 +71,8 @@ object Peep {
     __obj.asInstanceOf[Peep]
   }
   
-  extension [Self <: Peep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Peep] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: CoordsXY): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

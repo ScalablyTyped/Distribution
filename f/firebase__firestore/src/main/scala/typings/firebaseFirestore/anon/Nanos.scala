@@ -17,7 +17,8 @@ object Nanos {
     __obj.asInstanceOf[Nanos]
   }
   
-  extension [Self <: Nanos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nanos] (val x: Self) extends AnyVal {
     
     inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     

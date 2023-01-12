@@ -15,7 +15,8 @@ object TxAckInputWrapper {
     __obj.asInstanceOf[TxAckInputWrapper]
   }
   
-  extension [Self <: TxAckInputWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TxAckInputWrapper] (val x: Self) extends AnyVal {
     
     inline def setInput(value: TxInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
   }

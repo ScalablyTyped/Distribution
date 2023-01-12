@@ -58,7 +58,8 @@ object distTypesDefaultProviderMod {
       __obj.asInstanceOf[DefaultProviderInit]
     }
     
-    extension [Self <: DefaultProviderInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultProviderInit] (val x: Self) extends AnyVal {
       
       inline def setDurationSeconds(value: Double): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
       

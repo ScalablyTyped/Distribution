@@ -20,7 +20,8 @@ object MapBounds {
     __obj.asInstanceOf[MapBounds]
   }
   
-  extension [Self <: MapBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapBounds] (val x: Self) extends AnyVal {
     
     inline def setNortheast(value: MapPostion): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IEXTENSION_RESPONSE {
     __obj.asInstanceOf[IEXTENSION_RESPONSE]
   }
   
-  extension [Self <: IEXTENSION_RESPONSE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEXTENSION_RESPONSE] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

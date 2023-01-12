@@ -23,7 +23,8 @@ object DeleteBasePathMappingRequest {
     __obj.asInstanceOf[DeleteBasePathMappingRequest]
   }
   
-  extension [Self <: DeleteBasePathMappingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBasePathMappingRequest] (val x: Self) extends AnyVal {
     
     inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     

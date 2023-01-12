@@ -23,7 +23,8 @@ object DeleteSizeConstraintSetRequest {
     __obj.asInstanceOf[DeleteSizeConstraintSetRequest]
   }
   
-  extension [Self <: DeleteSizeConstraintSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSizeConstraintSetRequest] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

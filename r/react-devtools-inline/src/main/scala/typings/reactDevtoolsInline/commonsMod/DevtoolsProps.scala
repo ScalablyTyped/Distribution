@@ -61,7 +61,8 @@ object DevtoolsProps {
     __obj.asInstanceOf[DevtoolsProps]
   }
   
-  extension [Self <: DevtoolsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevtoolsProps] (val x: Self) extends AnyVal {
     
     inline def setBridge(value: FrontendBridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
     

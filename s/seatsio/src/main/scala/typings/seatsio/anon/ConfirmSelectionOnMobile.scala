@@ -29,7 +29,8 @@ object ConfirmSelectionOnMobile {
     __obj.asInstanceOf[ConfirmSelectionOnMobile]
   }
   
-  extension [Self <: ConfirmSelectionOnMobile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmSelectionOnMobile] (val x: Self) extends AnyVal {
     
     inline def setConfirmSelectionOnMobile(value: String): Self = StObject.set(x, "confirmSelectionOnMobile", value.asInstanceOf[js.Any])
     

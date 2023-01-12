@@ -15,7 +15,8 @@ object Observable {
     __obj.asInstanceOf[Observable]
   }
   
-  extension [Self <: Observable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Observable] (val x: Self) extends AnyVal {
     
     inline def setObservable(value: Ap): Self = StObject.set(x, "Observable", value.asInstanceOf[js.Any])
   }

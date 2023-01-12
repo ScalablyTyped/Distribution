@@ -23,7 +23,8 @@ object CreateActivationResult {
     __obj.asInstanceOf[CreateActivationResult]
   }
   
-  extension [Self <: CreateActivationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateActivationResult] (val x: Self) extends AnyVal {
     
     inline def setActivationCode(value: ActivationCode): Self = StObject.set(x, "ActivationCode", value.asInstanceOf[js.Any])
     

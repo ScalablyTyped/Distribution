@@ -23,7 +23,8 @@ object InstanceMarketOptionsRequest {
     __obj.asInstanceOf[InstanceMarketOptionsRequest]
   }
   
-  extension [Self <: InstanceMarketOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceMarketOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMarketType(value: MarketType): Self = StObject.set(x, "MarketType", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object AnalysisNoriAnalyzer {
     __obj.asInstanceOf[AnalysisNoriAnalyzer]
   }
   
-  extension [Self <: AnalysisNoriAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisNoriAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setDecompound_mode(value: AnalysisNoriDecompoundMode): Self = StObject.set(x, "decompound_mode", value.asInstanceOf[js.Any])
     

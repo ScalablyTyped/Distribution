@@ -33,7 +33,8 @@ object SynthesizeParams {
     __obj.asInstanceOf[SynthesizeParams]
   }
   
-  extension [Self <: SynthesizeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynthesizeParams] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: Accept | String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

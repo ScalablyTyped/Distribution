@@ -33,7 +33,8 @@ object RelativeDateFilter {
     __obj.asInstanceOf[RelativeDateFilter]
   }
   
-  extension [Self <: RelativeDateFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeDateFilter] (val x: Self) extends AnyVal {
     
     inline def setGetPeriod(value: () => PeriodType): Self = StObject.set(x, "getPeriod", js.Any.fromFunction0(value))
     

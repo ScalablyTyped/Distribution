@@ -17,7 +17,8 @@ object HoldRestartJobRequest {
     __obj.asInstanceOf[HoldRestartJobRequest]
   }
   
-  extension [Self <: HoldRestartJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoldRestartJobRequest] (val x: Self) extends AnyVal {
     
     inline def `setOperation-attributes-tag`(value: Jobholduntil): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }

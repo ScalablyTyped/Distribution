@@ -23,7 +23,8 @@ object GetTransitGatewayRouteTableAssociationsResult {
     __obj.asInstanceOf[GetTransitGatewayRouteTableAssociationsResult]
   }
   
-  extension [Self <: GetTransitGatewayRouteTableAssociationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTransitGatewayRouteTableAssociationsResult] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: TransitGatewayRouteTableAssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     

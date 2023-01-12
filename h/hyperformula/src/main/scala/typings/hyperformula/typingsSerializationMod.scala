@@ -76,7 +76,8 @@ object typingsSerializationMod {
       __obj.asInstanceOf[SerializedNamedExpression]
     }
     
-    extension [Self <: SerializedNamedExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedNamedExpression] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: RawCellContent): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       

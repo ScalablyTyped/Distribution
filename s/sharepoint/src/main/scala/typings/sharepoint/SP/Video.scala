@@ -77,7 +77,8 @@ object Video {
       __obj.asInstanceOf[EmbedCodeConfiguration]
     }
     
-    extension [Self <: EmbedCodeConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbedCodeConfiguration] (val x: Self) extends AnyVal {
       
       inline def setGet_autoPlay(value: () => Boolean): Self = StObject.set(x, "get_autoPlay", js.Any.fromFunction0(value))
       

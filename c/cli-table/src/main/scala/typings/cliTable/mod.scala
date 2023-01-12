@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[TableOptions[T]]
     }
     
-    extension [Self <: TableOptions[?], T /* <: TableRow */](x: Self & TableOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOptions[?], T /* <: TableRow */] (val x: Self & TableOptions[T]) extends AnyVal {
       
       inline def setChars(value: kintoptopmidtoplefttoprig): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object XInteractionRequestStringResolver {
     __obj.asInstanceOf[XInteractionRequestStringResolver]
   }
   
-  extension [Self <: XInteractionRequestStringResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInteractionRequestStringResolver] (val x: Self) extends AnyVal {
     
     inline def setGetStringFromInformationalRequest(value: XInteractionRequest => Optional[String]): Self = StObject.set(x, "getStringFromInformationalRequest", js.Any.fromFunction1(value))
   }

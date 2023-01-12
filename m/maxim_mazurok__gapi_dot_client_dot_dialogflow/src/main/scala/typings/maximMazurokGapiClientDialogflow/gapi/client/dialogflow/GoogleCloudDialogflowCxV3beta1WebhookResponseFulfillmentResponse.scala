@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse] (val x: Self) extends AnyVal {
     
     inline def setMergeBehavior(value: String): Self = StObject.set(x, "mergeBehavior", value.asInstanceOf[js.Any])
     

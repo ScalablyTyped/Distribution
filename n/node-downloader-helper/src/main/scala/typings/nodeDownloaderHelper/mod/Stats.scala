@@ -23,7 +23,8 @@ object Stats {
     __obj.asInstanceOf[Stats]
   }
   
-  extension [Self <: Stats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
     
     inline def setDownloaded(value: Double): Self = StObject.set(x, "downloaded", value.asInstanceOf[js.Any])
     

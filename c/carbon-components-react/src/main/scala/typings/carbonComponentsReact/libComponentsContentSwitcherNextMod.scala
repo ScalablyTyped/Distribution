@@ -474,7 +474,8 @@ object libComponentsContentSwitcherNextMod {
       __obj.asInstanceOf[ContentPanelProps]
     }
     
-    extension [Self <: ContentPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentPanelProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1173,7 +1174,8 @@ object libComponentsContentSwitcherNextMod {
       __obj.asInstanceOf[ContentPanelsProps]
     }
     
-    extension [Self <: ContentPanelsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentPanelsProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1198,7 +1200,8 @@ object libComponentsContentSwitcherNextMod {
       __obj.asInstanceOf[ContentSwitcherNextProps]
     }
     
-    extension [Self <: ContentSwitcherNextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentSwitcherNextProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1588,7 +1591,8 @@ object libComponentsContentSwitcherNextMod {
       __obj.asInstanceOf[ContentTabProps]
     }
     
-    extension [Self <: ContentTabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentTabProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2677,7 +2681,8 @@ object libComponentsContentSwitcherNextMod {
       __obj.asInstanceOf[ContentTabsProps]
     }
     
-    extension [Self <: ContentTabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentTabsProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

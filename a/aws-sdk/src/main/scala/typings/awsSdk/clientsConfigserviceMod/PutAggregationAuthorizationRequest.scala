@@ -28,7 +28,8 @@ object PutAggregationAuthorizationRequest {
     __obj.asInstanceOf[PutAggregationAuthorizationRequest]
   }
   
-  extension [Self <: PutAggregationAuthorizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAggregationAuthorizationRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedAccountId(value: AccountId): Self = StObject.set(x, "AuthorizedAccountId", value.asInstanceOf[js.Any])
     

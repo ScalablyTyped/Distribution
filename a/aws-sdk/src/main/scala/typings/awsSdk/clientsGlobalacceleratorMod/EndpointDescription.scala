@@ -38,7 +38,8 @@ object EndpointDescription {
     __obj.asInstanceOf[EndpointDescription]
   }
   
-  extension [Self <: EndpointDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointDescription] (val x: Self) extends AnyVal {
     
     inline def setClientIPPreservationEnabled(value: GenericBoolean): Self = StObject.set(x, "ClientIPPreservationEnabled", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setContext(value: CloseEvent | XMLHttpRequest): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object anon {
       __obj.asInstanceOf[PartialManagerOptions]
     }
     
-    extension [Self <: PartialManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: String | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -396,7 +398,8 @@ object anon {
       __obj.asInstanceOf[PartialManagerOptionsSock]
     }
     
-    extension [Self <: PartialManagerOptionsSock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialManagerOptionsSock] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: String | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -602,7 +605,8 @@ object anon {
       __obj.asInstanceOf[PartialPacketquerystringo]
     }
     
-    extension [Self <: PartialPacketquerystringo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPacketquerystringo] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: Double): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
@@ -648,7 +652,8 @@ object anon {
       __obj.asInstanceOf[PartialSocketOptions]
     }
     
-    extension [Self <: PartialSocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSocketOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(
         value: StringDictionary[Any] | (js.Function1[/* cb */ js.Function1[/* data */ js.Object, Unit], Unit])

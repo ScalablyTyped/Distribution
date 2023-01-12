@@ -37,7 +37,8 @@ object NavLinkProps {
     __obj.asInstanceOf[NavLinkProps]
   }
   
-  extension [Self <: NavLinkProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavLinkProps] (val x: Self) extends AnyVal {
     
     inline def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
     

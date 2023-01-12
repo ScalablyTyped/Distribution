@@ -19,7 +19,8 @@ object ScrollViewMessages {
     __obj.asInstanceOf[ScrollViewMessages]
   }
   
-  extension [Self <: ScrollViewMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollViewMessages] (val x: Self) extends AnyVal {
     
     inline def setNextButtonLabel(value: String): Self = StObject.set(x, "nextButtonLabel", value.asInstanceOf[js.Any])
     

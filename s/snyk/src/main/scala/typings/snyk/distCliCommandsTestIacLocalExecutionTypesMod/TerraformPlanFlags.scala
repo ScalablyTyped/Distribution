@@ -15,7 +15,8 @@ object TerraformPlanFlags {
     __obj.asInstanceOf[TerraformPlanFlags]
   }
   
-  extension [Self <: TerraformPlanFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerraformPlanFlags] (val x: Self) extends AnyVal {
     
     inline def setScan(value: TerraformPlanScanMode): Self = StObject.set(x, "scan", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object AcquisitionOptions {
     __obj.asInstanceOf[AcquisitionOptions]
   }
   
-  extension [Self <: AcquisitionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcquisitionOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultOperation(value: AcquisitionOperation): Self = StObject.set(x, "defaultOperation", value.asInstanceOf[js.Any])
     

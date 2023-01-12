@@ -53,7 +53,8 @@ object DisplayApplianceRecipient {
     __obj.asInstanceOf[DisplayApplianceRecipient]
   }
   
-  extension [Self <: DisplayApplianceRecipient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayApplianceRecipient] (val x: Self) extends AnyVal {
     
     inline def setCfrPart11(value: Boolean): Self = StObject.set(x, "cfrPart11", value.asInstanceOf[js.Any])
     

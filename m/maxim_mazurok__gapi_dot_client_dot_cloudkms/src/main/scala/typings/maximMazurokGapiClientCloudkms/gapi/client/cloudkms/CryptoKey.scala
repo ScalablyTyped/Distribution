@@ -68,7 +68,8 @@ object CryptoKey {
     __obj.asInstanceOf[CryptoKey]
   }
   
-  extension [Self <: CryptoKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoKey] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object WorkspaceItemList {
     __obj.asInstanceOf[WorkspaceItemList]
   }
   
-  extension [Self <: WorkspaceItemList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceItemList] (val x: Self) extends AnyVal {
     
     inline def setItems(
       value: js.Array[

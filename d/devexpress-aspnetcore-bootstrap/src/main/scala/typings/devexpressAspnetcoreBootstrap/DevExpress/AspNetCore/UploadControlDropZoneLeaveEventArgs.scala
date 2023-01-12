@@ -17,7 +17,8 @@ object UploadControlDropZoneLeaveEventArgs {
     __obj.asInstanceOf[UploadControlDropZoneLeaveEventArgs]
   }
   
-  extension [Self <: UploadControlDropZoneLeaveEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadControlDropZoneLeaveEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDropZone(value: Any): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
   }

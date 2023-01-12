@@ -40,7 +40,8 @@ object SpeechRecognitionTopicConstraint {
     __obj.asInstanceOf[SpeechRecognitionTopicConstraint]
   }
   
-  extension [Self <: SpeechRecognitionTopicConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognitionTopicConstraint] (val x: Self) extends AnyVal {
     
     inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     

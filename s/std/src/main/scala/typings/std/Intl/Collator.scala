@@ -19,7 +19,8 @@ object Collator {
     __obj.asInstanceOf[Collator]
   }
   
-  extension [Self <: Collator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collator] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: (String, String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     

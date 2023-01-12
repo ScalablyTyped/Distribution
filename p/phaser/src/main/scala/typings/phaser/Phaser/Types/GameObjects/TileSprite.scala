@@ -49,7 +49,8 @@ object TileSprite {
       __obj.asInstanceOf[TileSpriteConfig]
     }
     
-    extension [Self <: TileSpriteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileSpriteConfig] (val x: Self) extends AnyVal {
       
       inline def setFrame(value: String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       

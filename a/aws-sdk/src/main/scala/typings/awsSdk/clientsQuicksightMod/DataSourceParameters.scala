@@ -123,7 +123,8 @@ object DataSourceParameters {
     __obj.asInstanceOf[DataSourceParameters]
   }
   
-  extension [Self <: DataSourceParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceParameters] (val x: Self) extends AnyVal {
     
     inline def setAmazonElasticsearchParameters(value: AmazonElasticsearchParameters): Self = StObject.set(x, "AmazonElasticsearchParameters", value.asInstanceOf[js.Any])
     

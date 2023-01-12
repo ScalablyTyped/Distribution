@@ -37,7 +37,8 @@ object SnapshotDetails {
     __obj.asInstanceOf[SnapshotDetails]
   }
   
-  extension [Self <: SnapshotDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotDetails] (val x: Self) extends AnyVal {
     
     inline def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
     

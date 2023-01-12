@@ -41,7 +41,8 @@ object GoogleCloudDatacatalogV1SearchCatalogRequestScope {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1SearchCatalogRequestScope]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1SearchCatalogRequestScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1SearchCatalogRequestScope] (val x: Self) extends AnyVal {
     
     inline def setIncludeGcpPublicDatasets(value: Boolean): Self = StObject.set(x, "includeGcpPublicDatasets", value.asInstanceOf[js.Any])
     

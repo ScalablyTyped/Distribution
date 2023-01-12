@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[SwiperInternals]
     }
     
-    extension [Self <: SwiperInternals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwiperInternals] (val x: Self) extends AnyVal {
       
       inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
     }
@@ -477,7 +478,8 @@ object mod {
       __obj.asInstanceOf[SwiperProps]
     }
     
-    extension [Self <: SwiperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwiperProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -1138,7 +1140,8 @@ object mod {
       __obj.asInstanceOf[SwiperStates]
     }
     
-    extension [Self <: SwiperStates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwiperStates] (val x: Self) extends AnyVal {
       
       inline def setAutoplayEnd(value: `false`): Self = StObject.set(x, "autoplayEnd", value.asInstanceOf[js.Any])
       

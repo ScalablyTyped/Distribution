@@ -101,7 +101,8 @@ object ApplicationUri {
     __obj.asInstanceOf[ApplicationUri]
   }
   
-  extension [Self <: ApplicationUri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationUri] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInformation(value: AdditionalBundleUris): Self = StObject.set(x, "additionalInformation", value.asInstanceOf[js.Any])
     

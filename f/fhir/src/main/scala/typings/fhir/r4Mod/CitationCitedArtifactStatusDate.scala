@@ -32,7 +32,8 @@ object CitationCitedArtifactStatusDate {
     __obj.asInstanceOf[CitationCitedArtifactStatusDate]
   }
   
-  extension [Self <: CitationCitedArtifactStatusDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactStatusDate] (val x: Self) extends AnyVal {
     
     inline def setActivity(value: CodeableConcept): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ConditionBasedCollectionScheme {
     __obj.asInstanceOf[ConditionBasedCollectionScheme]
   }
   
-  extension [Self <: ConditionBasedCollectionScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionBasedCollectionScheme] (val x: Self) extends AnyVal {
     
     inline def setConditionLanguageVersion(value: languageVersion): Self = StObject.set(x, "conditionLanguageVersion", value.asInstanceOf[js.Any])
     

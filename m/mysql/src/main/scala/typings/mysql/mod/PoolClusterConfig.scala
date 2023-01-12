@@ -38,7 +38,8 @@ object PoolClusterConfig {
     __obj.asInstanceOf[PoolClusterConfig]
   }
   
-  extension [Self <: PoolClusterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoolClusterConfig] (val x: Self) extends AnyVal {
     
     inline def setCanRetry(value: Boolean): Self = StObject.set(x, "canRetry", value.asInstanceOf[js.Any])
     

@@ -216,7 +216,8 @@ object XSlideShow {
     __obj.asInstanceOf[XSlideShow]
   }
   
-  extension [Self <: XSlideShow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSlideShow] (val x: Self) extends AnyVal {
     
     inline def setAddShapeEventListener(value: (XShapeEventListener, XShape) => Unit): Self = StObject.set(x, "addShapeEventListener", js.Any.fromFunction2(value))
     

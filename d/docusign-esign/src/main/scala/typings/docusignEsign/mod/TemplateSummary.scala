@@ -52,7 +52,8 @@ object TemplateSummary {
     __obj.asInstanceOf[TemplateSummary]
   }
   
-  extension [Self <: TemplateSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateSummary] (val x: Self) extends AnyVal {
     
     inline def setApplied(value: String): Self = StObject.set(x, "applied", value.asInstanceOf[js.Any])
     

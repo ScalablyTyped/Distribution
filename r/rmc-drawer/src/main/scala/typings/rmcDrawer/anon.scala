@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[OverlayClicked]
     }
     
-    extension [Self <: OverlayClicked](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayClicked] (val x: Self) extends AnyVal {
       
       inline def setOverlayClicked(value: Boolean): Self = StObject.set(x, "overlayClicked", value.asInstanceOf[js.Any])
     }
@@ -73,7 +74,8 @@ object anon {
       __obj.asInstanceOf[PartialDrawerProps]
     }
     
-    extension [Self <: PartialDrawerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDrawerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

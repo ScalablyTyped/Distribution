@@ -39,7 +39,8 @@ object JobStatuses {
       __obj.asInstanceOf[ResponseModel]
     }
     
-    extension [Self <: ResponseModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseModel] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object JobStatuses {
       __obj.asInstanceOf[ResponsePayload]
     }
     
-    extension [Self <: ResponsePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsePayload] (val x: Self) extends AnyVal {
       
       inline def setJob_status(value: ResponseModel): Self = StObject.set(x, "job_status", value.asInstanceOf[js.Any])
     }
@@ -107,7 +109,8 @@ object JobStatuses {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

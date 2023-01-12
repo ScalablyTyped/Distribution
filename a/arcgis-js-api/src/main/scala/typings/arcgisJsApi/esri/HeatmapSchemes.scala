@@ -46,7 +46,8 @@ object HeatmapSchemes {
     __obj.asInstanceOf[HeatmapSchemes]
   }
   
-  extension [Self <: HeatmapSchemes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatmapSchemes] (val x: Self) extends AnyVal {
     
     inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     

@@ -194,7 +194,8 @@ object mod {
       __obj.asInstanceOf[EventArgs]
     }
     
-    extension [Self <: EventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -423,7 +424,8 @@ object mod {
       __obj.asInstanceOf[GaOptions]
     }
     
-    extension [Self <: GaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAnchor(value: Boolean): Self = StObject.set(x, "allowAnchor", value.asInstanceOf[js.Any])
       
@@ -523,7 +525,8 @@ object mod {
       __obj.asInstanceOf[InitializeOptions]
     }
     
-    extension [Self <: InitializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitializeOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysSendToDefaultTracker(value: Boolean): Self = StObject.set(x, "alwaysSendToDefaultTracker", value.asInstanceOf[js.Any])
       
@@ -574,7 +577,8 @@ object mod {
       __obj.asInstanceOf[OutboundLinkArgs]
     }
     
-    extension [Self <: OutboundLinkArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutboundLinkArgs] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
@@ -599,7 +603,8 @@ object mod {
       __obj.asInstanceOf[OutboundLinkProps]
     }
     
-    extension [Self <: OutboundLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutboundLinkProps] (val x: Self) extends AnyVal {
       
       inline def setEventLabel(value: String): Self = StObject.set(x, "eventLabel", value.asInstanceOf[js.Any])
       
@@ -650,7 +655,8 @@ object mod {
       __obj.asInstanceOf[TestModeAPI_]
     }
     
-    extension [Self <: TestModeAPI_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestModeAPI_] (val x: Self) extends AnyVal {
       
       inline def setCalls(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
       
@@ -679,7 +685,8 @@ object mod {
       __obj.asInstanceOf[TimingArgs]
     }
     
-    extension [Self <: TimingArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimingArgs] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -706,7 +713,8 @@ object mod {
       __obj.asInstanceOf[Tracker]
     }
     
-    extension [Self <: Tracker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tracker] (val x: Self) extends AnyVal {
       
       inline def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
     }

@@ -19,7 +19,8 @@ object SuiteData {
     __obj.asInstanceOf[SuiteData]
   }
   
-  extension [Self <: SuiteData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuiteData] (val x: Self) extends AnyVal {
     
     inline def setGlobal(value: Dynamic): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     

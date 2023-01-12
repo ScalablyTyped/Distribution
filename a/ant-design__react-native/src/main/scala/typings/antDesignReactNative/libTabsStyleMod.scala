@@ -34,7 +34,8 @@ object libTabsStyleMod {
       __obj.asInstanceOf[TabBarStyle]
     }
     
-    extension [Self <: TabBarStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarStyle] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

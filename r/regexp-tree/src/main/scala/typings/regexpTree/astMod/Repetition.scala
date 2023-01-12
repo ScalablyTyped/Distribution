@@ -21,7 +21,8 @@ object Repetition {
     __obj.asInstanceOf[Repetition]
   }
   
-  extension [Self <: Repetition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Repetition] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

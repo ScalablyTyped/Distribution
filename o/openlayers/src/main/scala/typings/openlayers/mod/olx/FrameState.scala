@@ -19,7 +19,8 @@ object FrameState {
     __obj.asInstanceOf[FrameState]
   }
   
-  extension [Self <: FrameState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameState] (val x: Self) extends AnyVal {
     
     inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     

@@ -669,7 +669,8 @@ object sapMProgressIndicatorMod {
       __obj.asInstanceOf[ProgressIndicatorSettings]
     }
     
-    extension [Self <: ProgressIndicatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressIndicatorSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaDescribedBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       

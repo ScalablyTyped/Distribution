@@ -17,7 +17,8 @@ object Globals {
     __obj.asInstanceOf[Globals]
   }
   
-  extension [Self <: Globals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Globals] (val x: Self) extends AnyVal {
     
     inline def setGlobals(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Globals */ Any

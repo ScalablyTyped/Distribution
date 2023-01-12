@@ -28,7 +28,8 @@ object DataReplicationInitiation {
     __obj.asInstanceOf[DataReplicationInitiation]
   }
   
-  extension [Self <: DataReplicationInitiation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataReplicationInitiation] (val x: Self) extends AnyVal {
     
     inline def setNextAttemptDateTime(value: ISO8601DatetimeString): Self = StObject.set(x, "nextAttemptDateTime", value.asInstanceOf[js.Any])
     

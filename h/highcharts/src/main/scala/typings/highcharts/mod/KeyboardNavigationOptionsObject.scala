@@ -48,7 +48,8 @@ object KeyboardNavigationOptionsObject {
     __obj.asInstanceOf[KeyboardNavigationOptionsObject]
   }
   
-  extension [Self <: KeyboardNavigationOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardNavigationOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

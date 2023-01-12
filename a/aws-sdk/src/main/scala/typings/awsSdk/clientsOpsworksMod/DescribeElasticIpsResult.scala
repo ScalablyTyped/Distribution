@@ -18,7 +18,8 @@ object DescribeElasticIpsResult {
     __obj.asInstanceOf[DescribeElasticIpsResult]
   }
   
-  extension [Self <: DescribeElasticIpsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeElasticIpsResult] (val x: Self) extends AnyVal {
     
     inline def setElasticIps(value: ElasticIps): Self = StObject.set(x, "ElasticIps", value.asInstanceOf[js.Any])
     

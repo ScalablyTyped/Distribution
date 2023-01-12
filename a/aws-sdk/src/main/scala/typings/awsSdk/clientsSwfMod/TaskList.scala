@@ -18,7 +18,8 @@ object TaskList {
     __obj.asInstanceOf[TaskList]
   }
   
-  extension [Self <: TaskList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskList] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

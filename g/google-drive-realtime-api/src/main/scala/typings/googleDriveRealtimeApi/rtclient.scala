@@ -38,7 +38,8 @@ object rtclient {
       __obj.asInstanceOf[ClientUtils]
     }
     
-    extension [Self <: ClientUtils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientUtils] (val x: Self) extends AnyVal {
       
       inline def setCreateRealtimeFile(value: (String, String, js.Function1[/* file */ DriveAPIFileResource, Unit]) => Unit): Self = StObject.set(x, "createRealtimeFile", js.Any.fromFunction3(value))
       
@@ -59,7 +60,8 @@ object rtclient {
       __obj.asInstanceOf[DriveAPIFileResource]
     }
     
-    extension [Self <: DriveAPIFileResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DriveAPIFileResource] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -118,7 +120,8 @@ object rtclient {
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    extension [Self <: LoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterAuth(value: () => Unit): Self = StObject.set(x, "afterAuth", js.Any.fromFunction0(value))
       
@@ -157,7 +160,8 @@ object rtclient {
       __obj.asInstanceOf[RealtimeLoader]
     }
     
-    extension [Self <: RealtimeLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RealtimeLoader] (val x: Self) extends AnyVal {
       
       inline def setHandleErrors(value: Error => Unit): Self = StObject.set(x, "handleErrors", js.Any.fromFunction1(value))
       

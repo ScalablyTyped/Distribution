@@ -41,7 +41,8 @@ object Analytics {
     __obj.asInstanceOf[Analytics]
   }
   
-  extension [Self <: Analytics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Analytics] (val x: Self) extends AnyVal {
     
     inline def setGetCount(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getCount", js.Any.fromFunction2(value))
     

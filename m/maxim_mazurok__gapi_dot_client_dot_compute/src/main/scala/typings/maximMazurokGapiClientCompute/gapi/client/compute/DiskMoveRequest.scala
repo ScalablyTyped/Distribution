@@ -25,7 +25,8 @@ object DiskMoveRequest {
     __obj.asInstanceOf[DiskMoveRequest]
   }
   
-  extension [Self <: DiskMoveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskMoveRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationZone(value: String): Self = StObject.set(x, "destinationZone", value.asInstanceOf[js.Any])
     

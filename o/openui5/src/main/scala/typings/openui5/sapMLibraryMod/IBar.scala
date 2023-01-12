@@ -15,7 +15,8 @@ object IBar {
     __obj.asInstanceOf[IBar]
   }
   
-  extension [Self <: IBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBar] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_m_IBar(value: Boolean): Self = StObject.set(x, "__implements__sap_m_IBar", value.asInstanceOf[js.Any])
   }

@@ -138,7 +138,8 @@ object ThemePricingCardProps {
     __obj.asInstanceOf[ThemePricingCardProps]
   }
   
-  extension [Self <: ThemePricingCardProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemePricingCardProps] (val x: Self) extends AnyVal {
     
     inline def setAirbnbRating(value: PartialSwipeRatingProps): Self = StObject.set(x, "AirbnbRating", value.asInstanceOf[js.Any])
     

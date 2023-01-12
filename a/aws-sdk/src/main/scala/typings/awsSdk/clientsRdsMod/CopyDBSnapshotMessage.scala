@@ -55,7 +55,8 @@ object CopyDBSnapshotMessage {
     __obj.asInstanceOf[CopyDBSnapshotMessage]
   }
   
-  extension [Self <: CopyDBSnapshotMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyDBSnapshotMessage] (val x: Self) extends AnyVal {
     
     inline def setCopyTags(value: BooleanOptional): Self = StObject.set(x, "CopyTags", value.asInstanceOf[js.Any])
     

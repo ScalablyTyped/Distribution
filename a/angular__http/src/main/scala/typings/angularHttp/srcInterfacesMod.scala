@@ -55,7 +55,8 @@ object srcInterfacesMod {
       __obj.asInstanceOf[RequestArgs]
     }
     
-    extension [Self <: RequestArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestArgs] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object srcInterfacesMod {
       __obj.asInstanceOf[RequestOptionsArgs]
     }
     
-    extension [Self <: RequestOptionsArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptionsArgs] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object srcInterfacesMod {
       __obj.asInstanceOf[ResponseOptionsArgs]
     }
     
-    extension [Self <: ResponseOptionsArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseOptionsArgs] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | js.Object | FormData | js.typedarray.ArrayBuffer | Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

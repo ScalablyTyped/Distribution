@@ -38,7 +38,8 @@ object componentsPageMod {
       __obj.asInstanceOf[PageProps]
     }
     
-    extension [Self <: PageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageProps] (val x: Self) extends AnyVal {
       
       inline def setKind(value: wide | narrow | full | String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

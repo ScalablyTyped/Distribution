@@ -24,7 +24,8 @@ object BaseListener {
     __obj.asInstanceOf[BaseListener]
   }
   
-  extension [Self <: BaseListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseListener] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: () => js.Promise[SocketConnection]): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
     

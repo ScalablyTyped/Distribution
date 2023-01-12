@@ -35,7 +35,8 @@ object DbOptions {
     __obj.asInstanceOf[DbOptions]
   }
   
-  extension [Self <: DbOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthSource(value: String): Self = StObject.set(x, "authSource", value.asInstanceOf[js.Any])
     

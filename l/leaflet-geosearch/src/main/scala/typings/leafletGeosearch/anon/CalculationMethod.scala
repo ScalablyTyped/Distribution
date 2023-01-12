@@ -23,7 +23,8 @@ object CalculationMethod {
     __obj.asInstanceOf[CalculationMethod]
   }
   
-  extension [Self <: CalculationMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculationMethod] (val x: Self) extends AnyVal {
     
     inline def setCalculationMethod(value: String): Self = StObject.set(x, "calculationMethod", value.asInstanceOf[js.Any])
     

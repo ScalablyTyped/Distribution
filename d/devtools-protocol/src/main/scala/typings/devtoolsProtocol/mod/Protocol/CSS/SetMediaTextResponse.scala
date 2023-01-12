@@ -18,7 +18,8 @@ object SetMediaTextResponse {
     __obj.asInstanceOf[SetMediaTextResponse]
   }
   
-  extension [Self <: SetMediaTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetMediaTextResponse] (val x: Self) extends AnyVal {
     
     inline def setMedia(value: CSSMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
   }

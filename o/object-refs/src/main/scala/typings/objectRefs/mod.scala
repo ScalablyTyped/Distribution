@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[AttributeDescriptor]
     }
     
-    extension [Self <: AttributeDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeDescriptor] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: Boolean): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       

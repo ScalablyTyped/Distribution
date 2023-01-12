@@ -18,7 +18,8 @@ object DescribeEndpointInput {
     __obj.asInstanceOf[DescribeEndpointInput]
   }
   
-  extension [Self <: DescribeEndpointInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEndpointInput] (val x: Self) extends AnyVal {
     
     inline def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
   }

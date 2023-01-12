@@ -86,7 +86,8 @@ object distCommonjsModulesTabTabMod extends Shortcut {
       __obj.asInstanceOf[StrictTabProps]
     }
     
-    extension [Self <: StrictTabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictTabProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double | String): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       

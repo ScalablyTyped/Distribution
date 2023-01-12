@@ -35,7 +35,8 @@ object ElementPositioning {
     __obj.asInstanceOf[ElementPositioning]
   }
   
-  extension [Self <: ElementPositioning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementPositioning] (val x: Self) extends AnyVal {
     
     inline def setFromAutWindow(value: WindowPosition): Self = StObject.set(x, "fromAutWindow", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object CreateLocationEfsRequest {
     __obj.asInstanceOf[CreateLocationEfsRequest]
   }
   
-  extension [Self <: CreateLocationEfsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLocationEfsRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessPointArn(value: EfsAccessPointArn): Self = StObject.set(x, "AccessPointArn", value.asInstanceOf[js.Any])
     

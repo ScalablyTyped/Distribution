@@ -18,7 +18,8 @@ object UpdateSecurityHubConfigurationRequest {
     __obj.asInstanceOf[UpdateSecurityHubConfigurationRequest]
   }
   
-  extension [Self <: UpdateSecurityHubConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSecurityHubConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoEnableControls(value: Boolean): Self = StObject.set(x, "AutoEnableControls", value.asInstanceOf[js.Any])
     

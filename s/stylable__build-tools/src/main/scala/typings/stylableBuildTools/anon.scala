@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Config[T]]
     }
     
-    extension [Self <: Config[?], T](x: Self & Config[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config[?], T] (val x: Self & Config[T]) extends AnyVal {
       
       inline def setConfig(value: T): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object AnimationStateData {
     __obj.asInstanceOf[AnimationStateData]
   }
   
-  extension [Self <: AnimationStateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationStateData] (val x: Self) extends AnyVal {
     
     inline def setAnimationToMixTime(value: Map[Double]): Self = StObject.set(x, "animationToMixTime", value.asInstanceOf[js.Any])
     

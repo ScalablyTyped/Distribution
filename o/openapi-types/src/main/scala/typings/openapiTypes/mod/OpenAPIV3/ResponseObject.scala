@@ -22,7 +22,8 @@ object ResponseObject {
     __obj.asInstanceOf[ResponseObject]
   }
   
-  extension [Self <: ResponseObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseObject] (val x: Self) extends AnyVal {
     
     inline def setContent(value: StringDictionary[MediaTypeObject]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

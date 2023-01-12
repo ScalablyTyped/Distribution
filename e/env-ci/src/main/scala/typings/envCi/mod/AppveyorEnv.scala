@@ -56,7 +56,8 @@ object AppveyorEnv {
     __obj.asInstanceOf[AppveyorEnv]
   }
   
-  extension [Self <: AppveyorEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppveyorEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

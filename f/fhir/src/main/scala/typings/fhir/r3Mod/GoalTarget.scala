@@ -47,7 +47,8 @@ object GoalTarget {
     __obj.asInstanceOf[GoalTarget]
   }
   
-  extension [Self <: GoalTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoalTarget] (val x: Self) extends AnyVal {
     
     inline def setDetailCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "detailCodeableConcept", value.asInstanceOf[js.Any])
     

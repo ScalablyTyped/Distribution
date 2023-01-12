@@ -23,7 +23,8 @@ object GetPipelineDefinitionInput {
     __obj.asInstanceOf[GetPipelineDefinitionInput]
   }
   
-  extension [Self <: GetPipelineDefinitionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPipelineDefinitionInput] (val x: Self) extends AnyVal {
     
     inline def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     

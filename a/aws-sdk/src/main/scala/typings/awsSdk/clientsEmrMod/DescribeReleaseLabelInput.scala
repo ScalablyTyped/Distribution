@@ -28,7 +28,8 @@ object DescribeReleaseLabelInput {
     __obj.asInstanceOf[DescribeReleaseLabelInput]
   }
   
-  extension [Self <: DescribeReleaseLabelInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReleaseLabelInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResultsNumber): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

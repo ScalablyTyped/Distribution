@@ -47,7 +47,8 @@ object AltimeterParams {
     __obj.asInstanceOf[AltimeterParams]
   }
   
-  extension [Self <: AltimeterParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AltimeterParams] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

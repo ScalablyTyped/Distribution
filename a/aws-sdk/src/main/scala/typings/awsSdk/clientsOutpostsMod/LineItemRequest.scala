@@ -23,7 +23,8 @@ object LineItemRequest {
     __obj.asInstanceOf[LineItemRequest]
   }
   
-  extension [Self <: LineItemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineItemRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogItemId(value: SkuCode): Self = StObject.set(x, "CatalogItemId", value.asInstanceOf[js.Any])
     

@@ -95,7 +95,8 @@ object mod {
       __obj.asInstanceOf[ArrayField]
     }
     
-    extension [Self <: ArrayField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayField] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: () => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     }
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[BooleanField]
     }
     
-    extension [Self <: BooleanField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BooleanField] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: () => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     }
@@ -169,7 +171,8 @@ object mod {
       __obj.asInstanceOf[ListField]
     }
     
-    extension [Self <: ListField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListField] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: () => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     }
@@ -192,7 +195,8 @@ object mod {
       __obj.asInstanceOf[ModelConfig]
     }
     
-    extension [Self <: ModelConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelConfig] (val x: Self) extends AnyVal {
       
       inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
@@ -223,7 +227,8 @@ object mod {
       __obj.asInstanceOf[ModelFactory]
     }
     
-    extension [Self <: ModelFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelFactory] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: ModelConfig => Model): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -242,7 +247,8 @@ object mod {
       __obj.asInstanceOf[ModelField]
     }
     
-    extension [Self <: ModelField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelField] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: () => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     }
@@ -259,7 +265,8 @@ object mod {
       __obj.asInstanceOf[NumberField]
     }
     
-    extension [Self <: NumberField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberField] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: () => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     }
@@ -276,7 +283,8 @@ object mod {
       __obj.asInstanceOf[StringField]
     }
     
-    extension [Self <: StringField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringField] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: () => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     }

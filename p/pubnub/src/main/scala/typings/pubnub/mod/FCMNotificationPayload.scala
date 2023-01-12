@@ -21,7 +21,8 @@ object FCMNotificationPayload {
     __obj.asInstanceOf[FCMNotificationPayload]
   }
   
-  extension [Self <: FCMNotificationPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FCMNotificationPayload] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

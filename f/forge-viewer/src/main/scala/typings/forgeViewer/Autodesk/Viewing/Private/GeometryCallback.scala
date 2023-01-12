@@ -77,7 +77,8 @@ object GeometryCallback {
     __obj.asInstanceOf[GeometryCallback]
   }
   
-  extension [Self <: GeometryCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryCallback] (val x: Self) extends AnyVal {
     
     inline def setOnCircularArc(
       value: (/* cx */ Double, /* cy */ Double, /* start */ Double, /* end */ Double, /* radius */ Double, /* vpId */ Double) => Unit

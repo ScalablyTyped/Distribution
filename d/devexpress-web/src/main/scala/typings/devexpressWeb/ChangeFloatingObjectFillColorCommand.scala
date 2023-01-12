@@ -29,7 +29,8 @@ object ChangeFloatingObjectFillColorCommand {
     __obj.asInstanceOf[ChangeFloatingObjectFillColorCommand]
   }
   
-  extension [Self <: ChangeFloatingObjectFillColorCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeFloatingObjectFillColorCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

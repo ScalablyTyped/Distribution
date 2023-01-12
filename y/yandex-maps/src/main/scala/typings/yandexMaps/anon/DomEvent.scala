@@ -17,7 +17,8 @@ object DomEvent {
     __obj.asInstanceOf[DomEvent[OriginalEvent, TargetGeometry]]
   }
   
-  extension [Self <: DomEvent[?, ?], OriginalEvent, TargetGeometry](x: Self & (DomEvent[OriginalEvent, TargetGeometry])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomEvent[?, ?], OriginalEvent, TargetGeometry] (val x: Self & (DomEvent[OriginalEvent, TargetGeometry])) extends AnyVal {
     
     inline def setDomEvent(value: OriginalEventOriginalEvent[OriginalEvent]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
     

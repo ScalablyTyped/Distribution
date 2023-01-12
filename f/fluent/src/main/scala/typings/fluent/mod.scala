@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[FluentBundleContructorOptions]
     }
     
-    extension [Self <: FluentBundleContructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluentBundleContructorOptions] (val x: Self) extends AnyVal {
       
       inline def setFunctions(value: js.Object): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       

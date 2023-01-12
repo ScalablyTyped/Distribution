@@ -18,7 +18,8 @@ object ChannelMapping {
     __obj.asInstanceOf[ChannelMapping]
   }
   
-  extension [Self <: ChannelMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelMapping] (val x: Self) extends AnyVal {
     
     inline def setOutputChannels(value: listOfOutputChannelMapping): Self = StObject.set(x, "OutputChannels", value.asInstanceOf[js.Any])
     

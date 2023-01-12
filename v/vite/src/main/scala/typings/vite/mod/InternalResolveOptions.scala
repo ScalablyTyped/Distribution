@@ -75,7 +75,8 @@ object InternalResolveOptions {
     __obj.asInstanceOf[InternalResolveOptions]
   }
   
-  extension [Self <: InternalResolveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalResolveOptions] (val x: Self) extends AnyVal {
     
     inline def setAsSrc(value: Boolean): Self = StObject.set(x, "asSrc", value.asInstanceOf[js.Any])
     

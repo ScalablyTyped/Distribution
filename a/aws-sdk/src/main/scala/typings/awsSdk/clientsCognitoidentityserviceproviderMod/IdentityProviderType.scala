@@ -53,7 +53,8 @@ object IdentityProviderType {
     __obj.asInstanceOf[IdentityProviderType]
   }
   
-  extension [Self <: IdentityProviderType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityProviderType] (val x: Self) extends AnyVal {
     
     inline def setAttributeMapping(value: AttributeMappingType): Self = StObject.set(x, "AttributeMapping", value.asInstanceOf[js.Any])
     

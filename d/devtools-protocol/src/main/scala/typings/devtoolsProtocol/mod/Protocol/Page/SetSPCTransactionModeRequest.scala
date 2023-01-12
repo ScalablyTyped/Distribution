@@ -21,7 +21,8 @@ object SetSPCTransactionModeRequest {
     __obj.asInstanceOf[SetSPCTransactionModeRequest]
   }
   
-  extension [Self <: SetSPCTransactionModeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetSPCTransactionModeRequest] (val x: Self) extends AnyVal {
     
     inline def setMode(value: none_ | autoaccept | autoreject): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }

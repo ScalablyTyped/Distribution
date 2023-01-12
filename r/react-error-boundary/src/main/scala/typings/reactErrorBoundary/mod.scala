@@ -108,7 +108,8 @@ object mod {
       __obj.asInstanceOf[ErrorBoundaryPropsWithComponent]
     }
     
-    extension [Self <: ErrorBoundaryPropsWithComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBoundaryPropsWithComponent] (val x: Self) extends AnyVal {
       
       inline def setFallbackComponent(value: ComponentType[FallbackProps]): Self = StObject.set(x, "FallbackComponent", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object mod {
       __obj.asInstanceOf[ErrorBoundaryPropsWithFallback]
     }
     
-    extension [Self <: ErrorBoundaryPropsWithFallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBoundaryPropsWithFallback] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: ReactElement): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object mod {
       __obj.asInstanceOf[ErrorBoundaryPropsWithRender]
     }
     
-    extension [Self <: ErrorBoundaryPropsWithRender](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBoundaryPropsWithRender] (val x: Self) extends AnyVal {
       
       inline def setFallbackRender(value: /* props */ FallbackProps => ReactElement | Null): Self = StObject.set(x, "fallbackRender", js.Any.fromFunction1(value))
       
@@ -261,7 +264,8 @@ object mod {
       __obj.asInstanceOf[ErrorBoundaryState]
     }
     
-    extension [Self <: ErrorBoundaryState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBoundaryState] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -282,7 +286,8 @@ object mod {
       __obj.asInstanceOf[FallbackProps]
     }
     
-    extension [Self <: FallbackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FallbackProps] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

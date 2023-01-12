@@ -46,7 +46,8 @@ object BookingCustomerInformation {
     __obj.asInstanceOf[BookingCustomerInformation]
   }
   
-  extension [Self <: BookingCustomerInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookingCustomerInformation] (val x: Self) extends AnyVal {
     
     inline def setCustomQuestionAnswers(value: NullableOption[js.Array[BookingQuestionAnswer]]): Self = StObject.set(x, "customQuestionAnswers", value.asInstanceOf[js.Any])
     

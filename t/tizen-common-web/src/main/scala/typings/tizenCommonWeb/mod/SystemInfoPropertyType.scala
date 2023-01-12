@@ -148,7 +148,8 @@ object SystemInfoPropertyType {
     __obj.asInstanceOf[SystemInfoPropertyType]
   }
   
-  extension [Self <: SystemInfoPropertyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoPropertyType] (val x: Self) extends AnyVal {
     
     inline def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object RequiredRevalidatorOption {
     __obj.asInstanceOf[RequiredRevalidatorOption]
   }
   
-  extension [Self <: RequiredRevalidatorOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredRevalidatorOption] (val x: Self) extends AnyVal {
     
     inline def setDedupe(value: Boolean): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
     

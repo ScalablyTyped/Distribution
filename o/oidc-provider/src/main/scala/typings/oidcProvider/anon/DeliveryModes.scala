@@ -68,7 +68,8 @@ object DeliveryModes {
     __obj.asInstanceOf[DeliveryModes]
   }
   
-  extension [Self <: DeliveryModes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryModes] (val x: Self) extends AnyVal {
     
     inline def setDeliveryModes(value: js.Array[CIBADeliveryMode]): Self = StObject.set(x, "deliveryModes", value.asInstanceOf[js.Any])
     

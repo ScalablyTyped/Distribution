@@ -34,7 +34,8 @@ object ExpoGoConfig {
     __obj.asInstanceOf[ExpoGoConfig]
   }
   
-  extension [Self <: ExpoGoConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpoGoConfig] (val x: Self) extends AnyVal {
     
     inline def setDebuggerHost(value: String): Self = StObject.set(x, "debuggerHost", value.asInstanceOf[js.Any])
     

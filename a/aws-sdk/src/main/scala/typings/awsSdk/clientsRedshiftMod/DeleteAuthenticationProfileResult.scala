@@ -18,7 +18,8 @@ object DeleteAuthenticationProfileResult {
     __obj.asInstanceOf[DeleteAuthenticationProfileResult]
   }
   
-  extension [Self <: DeleteAuthenticationProfileResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAuthenticationProfileResult] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationProfileName(value: AuthenticationProfileNameString): Self = StObject.set(x, "AuthenticationProfileName", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object Openpay {
     __obj.asInstanceOf[Openpay]
   }
   
-  extension [Self <: Openpay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Openpay] (val x: Self) extends AnyVal {
     
     inline def setCards(value: Cards): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
     

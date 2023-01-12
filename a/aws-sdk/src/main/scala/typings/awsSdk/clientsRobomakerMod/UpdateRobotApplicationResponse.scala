@@ -53,7 +53,8 @@ object UpdateRobotApplicationResponse {
     __obj.asInstanceOf[UpdateRobotApplicationResponse]
   }
   
-  extension [Self <: UpdateRobotApplicationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRobotApplicationResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

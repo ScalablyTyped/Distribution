@@ -18,7 +18,8 @@ object GetEventIntegrationRequest {
     __obj.asInstanceOf[GetEventIntegrationRequest]
   }
   
-  extension [Self <: GetEventIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEventIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object InvalidateQueryFilters {
     __obj.asInstanceOf[InvalidateQueryFilters[TPageData]]
   }
   
-  extension [Self <: InvalidateQueryFilters[?], TPageData](x: Self & InvalidateQueryFilters[TPageData]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidateQueryFilters[?], TPageData] (val x: Self & InvalidateQueryFilters[TPageData]) extends AnyVal {
     
     inline def setRefetchActive(value: Boolean): Self = StObject.set(x, "refetchActive", value.asInstanceOf[js.Any])
     

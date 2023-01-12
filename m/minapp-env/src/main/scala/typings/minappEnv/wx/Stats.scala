@@ -43,7 +43,8 @@ object Stats {
     __obj.asInstanceOf[Stats]
   }
   
-  extension [Self <: Stats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
     
     inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
     

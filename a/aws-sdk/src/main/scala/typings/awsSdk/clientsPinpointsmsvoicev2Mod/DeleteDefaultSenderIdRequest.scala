@@ -18,7 +18,8 @@ object DeleteDefaultSenderIdRequest {
     __obj.asInstanceOf[DeleteDefaultSenderIdRequest]
   }
   
-  extension [Self <: DeleteDefaultSenderIdRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDefaultSenderIdRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetName(value: ConfigurationSetNameOrArn): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
   }

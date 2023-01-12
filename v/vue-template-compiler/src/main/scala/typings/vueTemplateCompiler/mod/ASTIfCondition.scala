@@ -17,7 +17,8 @@ object ASTIfCondition {
     __obj.asInstanceOf[ASTIfCondition]
   }
   
-  extension [Self <: ASTIfCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASTIfCondition] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: ASTElement): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

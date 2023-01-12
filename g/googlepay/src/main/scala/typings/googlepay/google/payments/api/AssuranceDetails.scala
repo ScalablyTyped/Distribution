@@ -32,7 +32,8 @@ object AssuranceDetails {
     __obj.asInstanceOf[AssuranceDetails]
   }
   
-  extension [Self <: AssuranceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssuranceDetails] (val x: Self) extends AnyVal {
     
     inline def setAccountVerified(value: Boolean): Self = StObject.set(x, "accountVerified", value.asInstanceOf[js.Any])
     

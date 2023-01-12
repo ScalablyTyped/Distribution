@@ -49,7 +49,8 @@ object RejectsListResponse {
     __obj.asInstanceOf[RejectsListResponse]
   }
   
-  extension [Self <: RejectsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectsListResponse] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     

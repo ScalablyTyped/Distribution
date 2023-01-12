@@ -173,7 +173,8 @@ object FilterCriteria {
     __obj.asInstanceOf[FilterCriteria]
   }
   
-  extension [Self <: FilterCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: StringFilterList): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     

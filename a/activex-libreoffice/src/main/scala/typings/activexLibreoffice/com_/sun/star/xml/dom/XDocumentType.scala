@@ -107,7 +107,8 @@ object XDocumentType {
     __obj.asInstanceOf[XDocumentType]
   }
   
-  extension [Self <: XDocumentType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentType] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: XNamedNodeMap): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     

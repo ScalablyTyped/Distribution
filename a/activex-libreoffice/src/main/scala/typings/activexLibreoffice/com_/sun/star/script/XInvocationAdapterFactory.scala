@@ -36,7 +36,8 @@ object XInvocationAdapterFactory {
     __obj.asInstanceOf[XInvocationAdapterFactory]
   }
   
-  extension [Self <: XInvocationAdapterFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInvocationAdapterFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateAdapter(value: (XInvocation, `type`) => XInterface): Self = StObject.set(x, "createAdapter", js.Any.fromFunction2(value))
   }

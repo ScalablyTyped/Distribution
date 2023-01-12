@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[RequestInitWithRetry]
     }
     
-    extension [Self <: RequestInitWithRetry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInitWithRetry] (val x: Self) extends AnyVal {
       
       inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       

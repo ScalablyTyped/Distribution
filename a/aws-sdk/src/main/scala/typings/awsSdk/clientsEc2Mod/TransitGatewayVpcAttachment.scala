@@ -58,7 +58,8 @@ object TransitGatewayVpcAttachment {
     __obj.asInstanceOf[TransitGatewayVpcAttachment]
   }
   
-  extension [Self <: TransitGatewayVpcAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayVpcAttachment] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

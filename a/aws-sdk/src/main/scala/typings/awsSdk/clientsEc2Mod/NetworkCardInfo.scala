@@ -28,7 +28,8 @@ object NetworkCardInfo {
     __obj.asInstanceOf[NetworkCardInfo]
   }
   
-  extension [Self <: NetworkCardInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkCardInfo] (val x: Self) extends AnyVal {
     
     inline def setMaximumNetworkInterfaces(value: MaxNetworkInterfaces): Self = StObject.set(x, "MaximumNetworkInterfaces", value.asInstanceOf[js.Any])
     

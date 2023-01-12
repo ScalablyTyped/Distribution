@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[DataSourceConfig[TContext]]
     }
     
-    extension [Self <: DataSourceConfig[?], TContext](x: Self & DataSourceConfig[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceConfig[?], TContext] (val x: Self & DataSourceConfig[TContext]) extends AnyVal {
       
       inline def setCache(value: KeyValueCache[String]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

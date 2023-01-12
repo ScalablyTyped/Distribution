@@ -19,7 +19,8 @@ object StopRecordConfig {
     __obj.asInstanceOf[StopRecordConfig]
   }
   
-  extension [Self <: StopRecordConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopRecordConfig] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: LocalId => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }

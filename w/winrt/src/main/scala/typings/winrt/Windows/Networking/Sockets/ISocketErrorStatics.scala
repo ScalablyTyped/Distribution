@@ -15,7 +15,8 @@ object ISocketErrorStatics {
     __obj.asInstanceOf[ISocketErrorStatics]
   }
   
-  extension [Self <: ISocketErrorStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISocketErrorStatics] (val x: Self) extends AnyVal {
     
     inline def setGetStatus(value: Double => SocketErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
   }

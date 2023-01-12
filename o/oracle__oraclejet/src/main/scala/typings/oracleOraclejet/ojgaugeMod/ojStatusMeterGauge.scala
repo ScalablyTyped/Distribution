@@ -665,7 +665,8 @@ object ojStatusMeterGauge {
       __obj.asInstanceOf[Bounds]
     }
     
-    extension [Self <: Bounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -695,7 +696,8 @@ object ojStatusMeterGauge {
       __obj.asInstanceOf[CenterContext]
     }
     
-    extension [Self <: CenterContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CenterContext] (val x: Self) extends AnyVal {
       
       inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       
@@ -721,7 +723,8 @@ object ojStatusMeterGauge {
       __obj.asInstanceOf[ReferenceLine]
     }
     
-    extension [Self <: ReferenceLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceLine] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -751,7 +754,8 @@ object ojStatusMeterGauge {
       __obj.asInstanceOf[Threshold]
     }
     
-    extension [Self <: Threshold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Threshold] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -789,7 +793,8 @@ object ojStatusMeterGauge {
       __obj.asInstanceOf[TooltipContext]
     }
     
-    extension [Self <: TooltipContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipContext] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

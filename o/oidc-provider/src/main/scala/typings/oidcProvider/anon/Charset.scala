@@ -53,7 +53,8 @@ object Charset {
     __obj.asInstanceOf[Charset]
   }
   
-  extension [Self <: Charset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Charset] (val x: Self) extends AnyVal {
     
     inline def setCharset(value: `base-20` | digits): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     

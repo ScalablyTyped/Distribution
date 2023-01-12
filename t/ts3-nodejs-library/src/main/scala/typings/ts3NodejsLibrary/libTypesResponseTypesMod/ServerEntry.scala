@@ -50,7 +50,8 @@ object ServerEntry {
     __obj.asInstanceOf[ServerEntry]
   }
   
-  extension [Self <: ServerEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerEntry] (val x: Self) extends AnyVal {
     
     inline def setVirtualserverAutostart(value: Double): Self = StObject.set(x, "virtualserverAutostart", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object SeriesAfterAnimateEventObject {
     __obj.asInstanceOf[SeriesAfterAnimateEventObject]
   }
   
-  extension [Self <: SeriesAfterAnimateEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesAfterAnimateEventObject] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: Series): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

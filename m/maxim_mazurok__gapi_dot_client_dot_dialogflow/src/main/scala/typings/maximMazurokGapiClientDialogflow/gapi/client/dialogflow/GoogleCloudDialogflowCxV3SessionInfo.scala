@@ -27,7 +27,8 @@ object GoogleCloudDialogflowCxV3SessionInfo {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3SessionInfo]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3SessionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3SessionInfo] (val x: Self) extends AnyVal {
     
     inline def setParameters(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

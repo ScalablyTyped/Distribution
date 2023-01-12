@@ -31,7 +31,8 @@ object GoogleCloudMlV1ExplanationConfig {
     __obj.asInstanceOf[GoogleCloudMlV1ExplanationConfig]
   }
   
-  extension [Self <: GoogleCloudMlV1ExplanationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1ExplanationConfig] (val x: Self) extends AnyVal {
     
     inline def setIntegratedGradientsAttribution(value: GoogleCloudMlV1IntegratedGradientsAttribution): Self = StObject.set(x, "integratedGradientsAttribution", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object QueryDslRankFeatureFunctionSaturation {
     __obj.asInstanceOf[QueryDslRankFeatureFunctionSaturation]
   }
   
-  extension [Self <: QueryDslRankFeatureFunctionSaturation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslRankFeatureFunctionSaturation] (val x: Self) extends AnyVal {
     
     inline def setPivot(value: float): Self = StObject.set(x, "pivot", value.asInstanceOf[js.Any])
     

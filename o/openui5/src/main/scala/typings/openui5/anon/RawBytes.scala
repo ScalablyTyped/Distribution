@@ -23,7 +23,8 @@ object RawBytes {
     __obj.asInstanceOf[RawBytes]
   }
   
-  extension [Self <: RawBytes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawBytes] (val x: Self) extends AnyVal {
     
     inline def setRawBytes(value: js.Object): Self = StObject.set(x, "rawBytes", value.asInstanceOf[js.Any])
     

@@ -101,7 +101,8 @@ object PartialStyleRulesBadgeCla {
     __obj.asInstanceOf[PartialStyleRulesBadgeCla]
   }
   
-  extension [Self <: PartialStyleRulesBadgeCla](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesBadgeCla] (val x: Self) extends AnyVal {
     
     inline def setAnchorOriginBottomLeftRectangle(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

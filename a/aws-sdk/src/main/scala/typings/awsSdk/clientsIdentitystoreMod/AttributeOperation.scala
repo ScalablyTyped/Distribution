@@ -23,7 +23,8 @@ object AttributeOperation {
     __obj.asInstanceOf[AttributeOperation]
   }
   
-  extension [Self <: AttributeOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeOperation] (val x: Self) extends AnyVal {
     
     inline def setAttributePath(value: AttributePath): Self = StObject.set(x, "AttributePath", value.asInstanceOf[js.Any])
     

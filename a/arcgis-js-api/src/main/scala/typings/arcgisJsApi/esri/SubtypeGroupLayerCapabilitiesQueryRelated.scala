@@ -34,7 +34,8 @@ object SubtypeGroupLayerCapabilitiesQueryRelated {
     __obj.asInstanceOf[SubtypeGroupLayerCapabilitiesQueryRelated]
   }
   
-  extension [Self <: SubtypeGroupLayerCapabilitiesQueryRelated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerCapabilitiesQueryRelated] (val x: Self) extends AnyVal {
     
     inline def setSupportsCount(value: Boolean): Self = StObject.set(x, "supportsCount", value.asInstanceOf[js.Any])
     

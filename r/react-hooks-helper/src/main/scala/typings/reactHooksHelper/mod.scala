@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[FormTarget]
     }
     
-    extension [Self <: FormTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormTarget] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Checked): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object mod {
       __obj.asInstanceOf[NavigationProps]
     }
     
-    extension [Self <: NavigationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationProps] (val x: Self) extends AnyVal {
       
       inline def setGo(value: /* step */ Double | String => Unit): Self = StObject.set(x, "go", js.Any.fromFunction1(value))
       
@@ -93,7 +95,8 @@ object mod {
       __obj.asInstanceOf[Step]
     }
     
-    extension [Self <: Step](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -114,7 +117,8 @@ object mod {
       __obj.asInstanceOf[UseStepParams]
     }
     
-    extension [Self <: UseStepParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseStepParams] (val x: Self) extends AnyVal {
       
       inline def setAutoAdvanceDuration(value: Double): Self = StObject.set(x, "autoAdvanceDuration", value.asInstanceOf[js.Any])
       
@@ -155,7 +159,8 @@ object mod {
       __obj.asInstanceOf[UseStepResponse]
     }
     
-    extension [Self <: UseStepResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseStepResponse] (val x: Self) extends AnyVal {
       
       inline def setAutoAdvanceDuration(value: Double): Self = StObject.set(x, "autoAdvanceDuration", value.asInstanceOf[js.Any])
       

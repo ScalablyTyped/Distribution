@@ -28,7 +28,8 @@ object ListClustersV2Response {
     __obj.asInstanceOf[ListClustersV2Response]
   }
   
-  extension [Self <: ListClustersV2Response](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListClustersV2Response] (val x: Self) extends AnyVal {
     
     inline def setClusterInfoList(value: listOfCluster): Self = StObject.set(x, "ClusterInfoList", value.asInstanceOf[js.Any])
     

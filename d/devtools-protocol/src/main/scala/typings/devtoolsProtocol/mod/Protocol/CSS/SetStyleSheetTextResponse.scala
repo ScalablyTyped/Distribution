@@ -18,7 +18,8 @@ object SetStyleSheetTextResponse {
     __obj.asInstanceOf[SetStyleSheetTextResponse]
   }
   
-  extension [Self <: SetStyleSheetTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetStyleSheetTextResponse] (val x: Self) extends AnyVal {
     
     inline def setSourceMapURL(value: String): Self = StObject.set(x, "sourceMapURL", value.asInstanceOf[js.Any])
     

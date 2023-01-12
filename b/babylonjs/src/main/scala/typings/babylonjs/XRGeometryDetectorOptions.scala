@@ -17,7 +17,8 @@ object XRGeometryDetectorOptions {
     __obj.asInstanceOf[XRGeometryDetectorOptions]
   }
   
-  extension [Self <: XRGeometryDetectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRGeometryDetectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDetectionBoundary(value: XRDetectionBoundary): Self = StObject.set(x, "detectionBoundary", value.asInstanceOf[js.Any])
     

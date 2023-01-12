@@ -26,7 +26,8 @@ object RestElement {
     __obj.asInstanceOf[RestElement]
   }
   
-  extension [Self <: RestElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestElement] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: Pattern): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

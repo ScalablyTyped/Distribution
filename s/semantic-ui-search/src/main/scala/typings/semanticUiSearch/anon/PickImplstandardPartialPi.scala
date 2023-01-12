@@ -27,7 +27,8 @@ object PickImplstandardPartialPi {
     __obj.asInstanceOf[PickImplstandardPartialPi]
   }
   
-  extension [Self <: PickImplstandardPartialPi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplstandardPartialPi] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: /* response */ Any => String): Self = StObject.set(x, "category", js.Any.fromFunction1(value))
     

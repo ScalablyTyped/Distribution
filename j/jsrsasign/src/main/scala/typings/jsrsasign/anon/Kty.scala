@@ -34,7 +34,8 @@ object Kty {
     __obj.asInstanceOf[Kty]
   }
   
-  extension [Self <: Kty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Kty] (val x: Self) extends AnyVal {
     
     inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
     

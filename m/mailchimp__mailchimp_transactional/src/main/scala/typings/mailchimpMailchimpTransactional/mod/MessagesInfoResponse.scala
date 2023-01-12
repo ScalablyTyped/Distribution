@@ -34,7 +34,8 @@ object MessagesInfoResponse {
     __obj.asInstanceOf[MessagesInfoResponse]
   }
   
-  extension [Self <: MessagesInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagesInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setSmtp_events(value: js.Array[MessageSmtpEvent]): Self = StObject.set(x, "smtp_events", value.asInstanceOf[js.Any])
     

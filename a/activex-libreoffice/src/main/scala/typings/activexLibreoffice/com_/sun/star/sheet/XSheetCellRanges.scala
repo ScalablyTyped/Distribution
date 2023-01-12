@@ -80,7 +80,8 @@ object XSheetCellRanges {
     __obj.asInstanceOf[XSheetCellRanges]
   }
   
-  extension [Self <: XSheetCellRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetCellRanges] (val x: Self) extends AnyVal {
     
     inline def setCells(value: XEnumerationAccess): Self = StObject.set(x, "Cells", value.asInstanceOf[js.Any])
     

@@ -99,7 +99,8 @@ object InteractionHandler {
     __obj.asInstanceOf[InteractionHandler]
   }
   
-  extension [Self <: InteractionHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionHandler] (val x: Self) extends AnyVal {
     
     inline def setCreateWithParent(value: XWindow => Unit): Self = StObject.set(x, "createWithParent", js.Any.fromFunction1(value))
     

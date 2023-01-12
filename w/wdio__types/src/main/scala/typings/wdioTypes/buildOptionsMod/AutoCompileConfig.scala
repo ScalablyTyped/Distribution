@@ -23,7 +23,8 @@ object AutoCompileConfig {
     __obj.asInstanceOf[AutoCompileConfig]
   }
   
-  extension [Self <: AutoCompileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCompileConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoCompile(value: Boolean): Self = StObject.set(x, "autoCompile", value.asInstanceOf[js.Any])
     

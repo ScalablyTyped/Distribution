@@ -28,7 +28,8 @@ object IamPolicyAnalysisResult {
     __obj.asInstanceOf[IamPolicyAnalysisResult]
   }
   
-  extension [Self <: IamPolicyAnalysisResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IamPolicyAnalysisResult] (val x: Self) extends AnyVal {
     
     inline def setAccessControlLists(value: js.Array[GoogleCloudAssetV1AccessControlList]): Self = StObject.set(x, "accessControlLists", value.asInstanceOf[js.Any])
     

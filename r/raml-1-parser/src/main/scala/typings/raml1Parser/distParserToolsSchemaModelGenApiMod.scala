@@ -18,7 +18,8 @@ object distParserToolsSchemaModelGenApiMod {
       __obj.asInstanceOf[ModelToSchemaGenerator]
     }
     
-    extension [Self <: ModelToSchemaGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelToSchemaGenerator] (val x: Self) extends AnyVal {
       
       inline def setGenerateSchema(value: IHighLevelNode => Any): Self = StObject.set(x, "generateSchema", js.Any.fromFunction1(value))
     }

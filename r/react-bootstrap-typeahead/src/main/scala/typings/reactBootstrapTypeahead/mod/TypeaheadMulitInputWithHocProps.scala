@@ -568,7 +568,8 @@ object TypeaheadMulitInputWithHocProps {
     __obj.asInstanceOf[TypeaheadMulitInputWithHocProps[T]]
   }
   
-  extension [Self <: TypeaheadMulitInputWithHocProps[?], T /* <: TypeaheadModel */](x: Self & TypeaheadMulitInputWithHocProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeaheadMulitInputWithHocProps[?], T /* <: TypeaheadModel */] (val x: Self & TypeaheadMulitInputWithHocProps[T]) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

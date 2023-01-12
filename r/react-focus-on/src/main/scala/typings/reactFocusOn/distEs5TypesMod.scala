@@ -72,7 +72,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[CommonProps]
     }
     
-    extension [Self <: CommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
       
       inline def setAllowPinchZoom(value: Boolean): Self = StObject.set(x, "allowPinchZoom", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[EffectProps]
     }
     
-    extension [Self <: EffectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EffectProps] (val x: Self) extends AnyVal {
       
       inline def setSetLockProps(value: LockProps => Unit): Self = StObject.set(x, "setLockProps", js.Any.fromFunction1(value))
     }
@@ -148,7 +150,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[LockProps]
     }
     
-    extension [Self <: LockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockProps] (val x: Self) extends AnyVal {
       
       inline def setOnActivation(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onActivation", js.Any.fromFunction1(value))
       
@@ -226,7 +229,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[ReactFocusOnProps]
     }
     
-    extension [Self <: ReactFocusOnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactFocusOnProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: String | ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -285,7 +289,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[ReactFocusOnSideProps]
     }
     
-    extension [Self <: ReactFocusOnSideProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactFocusOnSideProps] (val x: Self) extends AnyVal {
       
       inline def setSideCar(value: FC[Any]): Self = StObject.set(x, "sideCar", value.asInstanceOf[js.Any])
     }

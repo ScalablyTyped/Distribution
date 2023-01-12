@@ -20,7 +20,8 @@ object Counter_ {
     __obj.asInstanceOf[Counter_]
   }
   
-  extension [Self <: Counter_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Counter_] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.counter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

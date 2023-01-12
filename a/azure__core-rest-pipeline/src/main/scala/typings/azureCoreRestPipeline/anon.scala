@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[CustomNoProxyList]
     }
     
-    extension [Self <: CustomNoProxyList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomNoProxyList] (val x: Self) extends AnyVal {
       
       inline def setCustomNoProxyList(value: js.Array[String]): Self = StObject.set(x, "customNoProxyList", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Phase]
     }
     
-    extension [Self <: Phase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Phase] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -90,7 +93,8 @@ object anon {
       __obj.asInstanceOf[PreserveCase]
     }
     
-    extension [Self <: PreserveCase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreserveCase] (val x: Self) extends AnyVal {
       
       inline def setPreserveCase(value: Boolean): Self = StObject.set(x, "preserveCase", value.asInstanceOf[js.Any])
       

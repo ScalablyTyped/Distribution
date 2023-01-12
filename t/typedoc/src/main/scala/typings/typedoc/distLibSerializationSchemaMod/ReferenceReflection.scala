@@ -29,7 +29,8 @@ object ReferenceReflection {
     __obj.asInstanceOf[ReferenceReflection]
   }
   
-  extension [Self <: ReferenceReflection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceReflection] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

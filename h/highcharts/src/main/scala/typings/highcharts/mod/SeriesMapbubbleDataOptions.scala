@@ -131,7 +131,8 @@ object SeriesMapbubbleDataOptions {
     __obj.asInstanceOf[SeriesMapbubbleDataOptions]
   }
   
-  extension [Self <: SeriesMapbubbleDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesMapbubbleDataOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

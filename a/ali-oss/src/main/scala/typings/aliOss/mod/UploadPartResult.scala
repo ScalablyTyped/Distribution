@@ -19,7 +19,8 @@ object UploadPartResult {
     __obj.asInstanceOf[UploadPartResult]
   }
   
-  extension [Self <: UploadPartResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadPartResult] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

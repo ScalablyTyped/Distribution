@@ -15,7 +15,8 @@ object AdminConfig {
     __obj.asInstanceOf[AdminConfig]
   }
   
-  extension [Self <: AdminConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminConfig] (val x: Self) extends AnyVal {
     
     inline def setRetry(value: RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     

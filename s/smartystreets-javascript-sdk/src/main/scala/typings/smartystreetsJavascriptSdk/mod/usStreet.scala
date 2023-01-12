@@ -332,7 +332,8 @@ object usStreet {
       __obj.asInstanceOf[Analysis]
     }
     
-    extension [Self <: Analysis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Analysis] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -458,7 +459,8 @@ object usStreet {
       __obj.asInstanceOf[Component]
     }
     
-    extension [Self <: Component](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
       inline def setCityName(value: String): Self = StObject.set(x, "cityName", value.asInstanceOf[js.Any])
       
@@ -675,7 +677,8 @@ object usStreet {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setBuildingDefaultIndicator(value: Boolean): Self = StObject.set(x, "buildingDefaultIndicator", value.asInstanceOf[js.Any])
       

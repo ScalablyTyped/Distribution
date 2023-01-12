@@ -75,7 +75,8 @@ object MotionScaleFadeInProps {
     __obj.asInstanceOf[MotionScaleFadeInProps]
   }
   
-  extension [Self <: MotionScaleFadeInProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionScaleFadeInProps] (val x: Self) extends AnyVal {
     
     inline def setFinalScale(value: Double): Self = StObject.set(x, "finalScale", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ObjectExplorerCloseSessionInfo {
     __obj.asInstanceOf[ObjectExplorerCloseSessionInfo]
   }
   
-  extension [Self <: ObjectExplorerCloseSessionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectExplorerCloseSessionInfo] (val x: Self) extends AnyVal {
     
     inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     

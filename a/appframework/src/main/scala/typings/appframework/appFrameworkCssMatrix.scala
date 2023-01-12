@@ -25,7 +25,8 @@ object appFrameworkCssMatrix {
     __obj.asInstanceOf[appFrameworkCssMatrix]
   }
   
-  extension [Self <: appFrameworkCssMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: appFrameworkCssMatrix] (val x: Self) extends AnyVal {
     
     inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

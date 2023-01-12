@@ -15,7 +15,8 @@ object QRCodeExportSVGOptions {
     __obj.asInstanceOf[QRCodeExportSVGOptions]
   }
   
-  extension [Self <: QRCodeExportSVGOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeExportSVGOptions] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

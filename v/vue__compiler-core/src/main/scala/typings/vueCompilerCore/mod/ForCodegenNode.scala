@@ -40,7 +40,8 @@ object ForCodegenNode {
     __obj.asInstanceOf[ForCodegenNode]
   }
   
-  extension [Self <: ForCodegenNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForCodegenNode] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ForRenderListExpression): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

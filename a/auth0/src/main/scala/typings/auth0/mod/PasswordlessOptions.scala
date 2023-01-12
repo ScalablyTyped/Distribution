@@ -15,7 +15,8 @@ object PasswordlessOptions {
     __obj.asInstanceOf[PasswordlessOptions]
   }
   
-  extension [Self <: PasswordlessOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordlessOptions] (val x: Self) extends AnyVal {
     
     inline def setForwardedFor(value: String): Self = StObject.set(x, "forwardedFor", value.asInstanceOf[js.Any])
     

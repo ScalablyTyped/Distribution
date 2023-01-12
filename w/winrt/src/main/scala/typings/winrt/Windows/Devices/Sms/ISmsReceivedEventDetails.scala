@@ -17,7 +17,8 @@ object ISmsReceivedEventDetails {
     __obj.asInstanceOf[ISmsReceivedEventDetails]
   }
   
-  extension [Self <: ISmsReceivedEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISmsReceivedEventDetails] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object AppState {
     __obj.asInstanceOf[AppState]
   }
   
-  extension [Self <: AppState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppState] (val x: Self) extends AnyVal {
     
     inline def setKeyedAppState(value: js.Array[KeyedAppState]): Self = StObject.set(x, "keyedAppState", value.asInstanceOf[js.Any])
     

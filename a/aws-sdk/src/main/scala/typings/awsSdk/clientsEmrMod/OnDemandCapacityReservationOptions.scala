@@ -28,7 +28,8 @@ object OnDemandCapacityReservationOptions {
     __obj.asInstanceOf[OnDemandCapacityReservationOptions]
   }
   
-  extension [Self <: OnDemandCapacityReservationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDemandCapacityReservationOptions] (val x: Self) extends AnyVal {
     
     inline def setCapacityReservationPreference(value: OnDemandCapacityReservationPreference): Self = StObject.set(x, "CapacityReservationPreference", value.asInstanceOf[js.Any])
     

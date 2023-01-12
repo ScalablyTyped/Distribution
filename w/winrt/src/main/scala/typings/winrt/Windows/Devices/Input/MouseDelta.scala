@@ -17,7 +17,8 @@ object MouseDelta {
     __obj.asInstanceOf[MouseDelta]
   }
   
-  extension [Self <: MouseDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseDelta] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

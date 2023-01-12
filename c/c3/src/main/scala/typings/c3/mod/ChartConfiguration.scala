@@ -123,7 +123,8 @@ object ChartConfiguration {
     __obj.asInstanceOf[ChartConfiguration]
   }
   
-  extension [Self <: ChartConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartConfiguration] (val x: Self) extends AnyVal {
     
     inline def setArea(value: Zerobased): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

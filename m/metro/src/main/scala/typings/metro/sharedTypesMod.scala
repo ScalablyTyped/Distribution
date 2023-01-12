@@ -69,7 +69,8 @@ object sharedTypesMod {
       __obj.asInstanceOf[BundleOptions]
     }
     
-    extension [Self <: BundleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleOptions] (val x: Self) extends AnyVal {
       
       inline def setBundleType(value: BundleType): Self = StObject.set(x, "bundleType", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object sharedTypesMod {
       __obj.asInstanceOf[OutputOptions]
     }
     
-    extension [Self <: OutputOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputOptions] (val x: Self) extends AnyVal {
       
       inline def setBundleEncoding(value: utf8 | utf16le | ascii): Self = StObject.set(x, "bundleEncoding", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object sharedTypesMod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setCreateModuleIdFactory(value: () => js.Function1[/* path */ String, Double]): Self = StObject.set(x, "createModuleIdFactory", js.Any.fromFunction0(value))
       

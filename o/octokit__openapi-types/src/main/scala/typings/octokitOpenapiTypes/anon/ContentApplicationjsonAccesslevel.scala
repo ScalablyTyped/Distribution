@@ -15,7 +15,8 @@ object ContentApplicationjsonAccesslevel {
     __obj.asInstanceOf[ContentApplicationjsonAccesslevel]
   }
   
-  extension [Self <: ContentApplicationjsonAccesslevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonAccesslevel] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonAccesslevel): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

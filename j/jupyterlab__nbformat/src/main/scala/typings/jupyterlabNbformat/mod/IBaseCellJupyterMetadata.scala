@@ -21,7 +21,8 @@ object IBaseCellJupyterMetadata {
     __obj.asInstanceOf[IBaseCellJupyterMetadata]
   }
   
-  extension [Self <: IBaseCellJupyterMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBaseCellJupyterMetadata] (val x: Self) extends AnyVal {
     
     inline def setSource_hidden(value: Boolean): Self = StObject.set(x, "source_hidden", value.asInstanceOf[js.Any])
   }

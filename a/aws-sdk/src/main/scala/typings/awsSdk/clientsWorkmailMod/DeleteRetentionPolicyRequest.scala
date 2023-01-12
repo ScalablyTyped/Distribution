@@ -23,7 +23,8 @@ object DeleteRetentionPolicyRequest {
     __obj.asInstanceOf[DeleteRetentionPolicyRequest]
   }
   
-  extension [Self <: DeleteRetentionPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRetentionPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: ShortString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

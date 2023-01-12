@@ -19,7 +19,8 @@ object StringTargetingDimension {
     __obj.asInstanceOf[StringTargetingDimension]
   }
   
-  extension [Self <: StringTargetingDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringTargetingDimension] (val x: Self) extends AnyVal {
     
     inline def setTargetingMode(value: String): Self = StObject.set(x, "targetingMode", value.asInstanceOf[js.Any])
     

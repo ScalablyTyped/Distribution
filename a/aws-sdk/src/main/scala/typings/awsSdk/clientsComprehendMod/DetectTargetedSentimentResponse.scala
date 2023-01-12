@@ -18,7 +18,8 @@ object DetectTargetedSentimentResponse {
     __obj.asInstanceOf[DetectTargetedSentimentResponse]
   }
   
-  extension [Self <: DetectTargetedSentimentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectTargetedSentimentResponse] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: ListOfTargetedSentimentEntities): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     

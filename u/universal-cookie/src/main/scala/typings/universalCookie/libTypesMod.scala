@@ -28,7 +28,8 @@ object libTypesMod {
       __obj.asInstanceOf[CookieChangeOptions]
     }
     
-    extension [Self <: CookieChangeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieChangeOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object libTypesMod {
       __obj.asInstanceOf[CookieGetOptions]
     }
     
-    extension [Self <: CookieGetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieGetOptions] (val x: Self) extends AnyVal {
       
       inline def setDoNotParse(value: Boolean): Self = StObject.set(x, "doNotParse", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object libTypesMod {
       __obj.asInstanceOf[CookieParseOptions]
     }
     
-    extension [Self <: CookieParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieParseOptions] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     }
@@ -103,7 +106,8 @@ object libTypesMod {
       __obj.asInstanceOf[CookieSetOptions]
     }
     
-    extension [Self <: CookieSetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieSetOptions] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       

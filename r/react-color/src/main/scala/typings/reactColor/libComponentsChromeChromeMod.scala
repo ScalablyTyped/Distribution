@@ -33,7 +33,8 @@ object libComponentsChromeChromeMod {
       __obj.asInstanceOf[ChromePickerProps]
     }
     
-    extension [Self <: ChromePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChromePickerProps] (val x: Self) extends AnyVal {
       
       inline def setDisableAlpha(value: Boolean): Self = StObject.set(x, "disableAlpha", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object libComponentsChromeChromeMod {
       __obj.asInstanceOf[ChromePickerStylesProps]
     }
     
-    extension [Self <: ChromePickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChromePickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: CSSProperties): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

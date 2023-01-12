@@ -17,7 +17,8 @@ object FEWERTRANSFERS {
     __obj.asInstanceOf[FEWERTRANSFERS]
   }
   
-  extension [Self <: FEWERTRANSFERS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FEWERTRANSFERS] (val x: Self) extends AnyVal {
     
     inline def setFEWER_TRANSFERS(value: String): Self = StObject.set(x, "FEWER_TRANSFERS", value.asInstanceOf[js.Any])
     

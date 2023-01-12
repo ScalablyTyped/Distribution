@@ -126,7 +126,8 @@ object libComponentsScrollablePaneScrollablePaneDotbaseMod {
       __obj.asInstanceOf[IScrollablePaneState]
     }
     
-    extension [Self <: IScrollablePaneState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollablePaneState] (val x: Self) extends AnyVal {
       
       inline def setScrollbarHeight(value: Double): Self = StObject.set(x, "scrollbarHeight", value.asInstanceOf[js.Any])
       

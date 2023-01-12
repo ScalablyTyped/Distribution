@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ngprogress"
-version := "1.0.7-dt-20221103Z-d457e1"
+version := "1.0.7-dt-20221103Z-b93765"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

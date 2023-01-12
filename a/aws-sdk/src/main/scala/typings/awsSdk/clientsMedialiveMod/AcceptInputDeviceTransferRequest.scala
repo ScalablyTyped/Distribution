@@ -18,7 +18,8 @@ object AcceptInputDeviceTransferRequest {
     __obj.asInstanceOf[AcceptInputDeviceTransferRequest]
   }
   
-  extension [Self <: AcceptInputDeviceTransferRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptInputDeviceTransferRequest] (val x: Self) extends AnyVal {
     
     inline def setInputDeviceId(value: string): Self = StObject.set(x, "InputDeviceId", value.asInstanceOf[js.Any])
   }

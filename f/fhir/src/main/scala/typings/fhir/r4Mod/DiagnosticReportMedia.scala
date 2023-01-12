@@ -27,7 +27,8 @@ object DiagnosticReportMedia {
     __obj.asInstanceOf[DiagnosticReportMedia]
   }
   
-  extension [Self <: DiagnosticReportMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticReportMedia] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

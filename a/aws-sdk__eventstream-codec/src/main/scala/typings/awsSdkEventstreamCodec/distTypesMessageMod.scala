@@ -37,7 +37,8 @@ object distTypesMessageMod {
       __obj.asInstanceOf[HeaderValue[K, V]]
     }
     
-    extension [Self <: HeaderValue[?, ?], K /* <: String */, V](x: Self & (HeaderValue[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderValue[?, ?], K /* <: String */, V] (val x: Self & (HeaderValue[K, V])) extends AnyVal {
       
       inline def setType(value: K): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object distTypesMessageMod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.typedarray.Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

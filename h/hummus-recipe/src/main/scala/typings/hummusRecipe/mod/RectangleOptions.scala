@@ -29,7 +29,8 @@ object RectangleOptions {
     __obj.asInstanceOf[RectangleOptions]
   }
   
-  extension [Self <: RectangleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectangleOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

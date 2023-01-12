@@ -56,7 +56,8 @@ object NestingLevel {
     __obj.asInstanceOf[NestingLevel]
   }
   
-  extension [Self <: NestingLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NestingLevel] (val x: Self) extends AnyVal {
     
     inline def setBulletAlignment(value: String): Self = StObject.set(x, "bulletAlignment", value.asInstanceOf[js.Any])
     

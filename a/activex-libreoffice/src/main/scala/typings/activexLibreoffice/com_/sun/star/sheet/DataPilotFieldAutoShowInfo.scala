@@ -34,7 +34,8 @@ object DataPilotFieldAutoShowInfo {
     __obj.asInstanceOf[DataPilotFieldAutoShowInfo]
   }
   
-  extension [Self <: DataPilotFieldAutoShowInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotFieldAutoShowInfo] (val x: Self) extends AnyVal {
     
     inline def setDataField(value: String): Self = StObject.set(x, "DataField", value.asInstanceOf[js.Any])
     

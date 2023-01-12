@@ -18,7 +18,8 @@ object AfterFindRequest {
     __obj.asInstanceOf[AfterFindRequest[T]]
   }
   
-  extension [Self <: AfterFindRequest[?], T](x: Self & AfterFindRequest[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterFindRequest[?], T] (val x: Self & AfterFindRequest[T]) extends AnyVal {
     
     inline def setObjects(value: js.Array[T]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     

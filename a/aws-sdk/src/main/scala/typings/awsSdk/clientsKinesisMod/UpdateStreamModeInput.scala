@@ -23,7 +23,8 @@ object UpdateStreamModeInput {
     __obj.asInstanceOf[UpdateStreamModeInput]
   }
   
-  extension [Self <: UpdateStreamModeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStreamModeInput] (val x: Self) extends AnyVal {
     
     inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     

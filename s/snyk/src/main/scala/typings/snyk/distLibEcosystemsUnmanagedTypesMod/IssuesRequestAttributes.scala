@@ -23,7 +23,8 @@ object IssuesRequestAttributes {
     __obj.asInstanceOf[IssuesRequestAttributes]
   }
   
-  extension [Self <: IssuesRequestAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuesRequestAttributes] (val x: Self) extends AnyVal {
     
     inline def setComponent_details(value: IssuesRequestComponentDetails): Self = StObject.set(x, "component_details", value.asInstanceOf[js.Any])
     

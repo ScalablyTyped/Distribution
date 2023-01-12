@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[Drift]
     }
     
-    extension [Self <: Drift](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Drift] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -145,7 +146,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBoundingBoxContainer(value: HTMLElement): Self = StObject.set(x, "boundingBoxContainer", value.asInstanceOf[js.Any])
       

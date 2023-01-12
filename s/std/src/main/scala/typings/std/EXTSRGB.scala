@@ -30,7 +30,8 @@ object EXTSRGB {
     __obj.asInstanceOf[EXTSRGB]
   }
   
-  extension [Self <: EXTSRGB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EXTSRGB] (val x: Self) extends AnyVal {
     
     inline def setFRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT(value: GLenum): Self = StObject.set(x, "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT", value.asInstanceOf[js.Any])
     

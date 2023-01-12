@@ -26,7 +26,8 @@ object TextAreaInput {
     __obj.asInstanceOf[TextAreaInput]
   }
   
-  extension [Self <: TextAreaInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextAreaInput] (val x: Self) extends AnyVal {
     
     inline def setType(value: `text-area`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

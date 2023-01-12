@@ -72,7 +72,8 @@ object Locals {
       __obj.asInstanceOf[Category]
     }
     
-    extension [Self <: Category](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
       
       inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     }
@@ -133,7 +134,8 @@ object Locals {
       __obj.asInstanceOf[Page]
     }
     
-    extension [Self <: Page](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
       
       inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -221,7 +223,8 @@ object Locals {
       __obj.asInstanceOf[typings.hexo.mod.Locals.Post]
     }
     
-    extension [Self <: typings.hexo.mod.Locals.Post](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.hexo.mod.Locals.Post] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -267,7 +270,8 @@ object Locals {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

@@ -46,7 +46,8 @@ object XConsoleHandler {
     __obj.asInstanceOf[XConsoleHandler]
   }
   
-  extension [Self <: XConsoleHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConsoleHandler] (val x: Self) extends AnyVal {
     
     inline def setThreshold(value: Double): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
   }

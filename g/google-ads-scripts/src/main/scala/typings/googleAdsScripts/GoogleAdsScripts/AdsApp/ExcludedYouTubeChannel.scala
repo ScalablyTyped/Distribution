@@ -43,7 +43,8 @@ object ExcludedYouTubeChannel {
     __obj.asInstanceOf[ExcludedYouTubeChannel]
   }
   
-  extension [Self <: ExcludedYouTubeChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedYouTubeChannel] (val x: Self) extends AnyVal {
     
     inline def setGetAdGroup(value: () => AdGroup): Self = StObject.set(x, "getAdGroup", js.Any.fromFunction0(value))
     

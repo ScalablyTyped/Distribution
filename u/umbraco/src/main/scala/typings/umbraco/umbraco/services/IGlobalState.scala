@@ -35,7 +35,8 @@ object IGlobalState {
     __obj.asInstanceOf[IGlobalState]
   }
   
-  extension [Self <: IGlobalState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGlobalState] (val x: Self) extends AnyVal {
     
     inline def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
     

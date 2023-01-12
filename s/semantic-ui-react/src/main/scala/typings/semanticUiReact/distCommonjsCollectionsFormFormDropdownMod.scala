@@ -357,7 +357,8 @@ object distCommonjsCollectionsFormFormDropdownMod extends Shortcut {
       __obj.asInstanceOf[StrictFormDropdownProps]
     }
     
-    extension [Self <: StrictFormDropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictFormDropdownProps] (val x: Self) extends AnyVal {
       
       inline def setAdditionLabel(value: Double | String | ReactNode): Self = StObject.set(x, "additionLabel", value.asInstanceOf[js.Any])
       

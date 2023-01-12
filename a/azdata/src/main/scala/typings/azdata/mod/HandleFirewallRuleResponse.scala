@@ -17,7 +17,8 @@ object HandleFirewallRuleResponse {
     __obj.asInstanceOf[HandleFirewallRuleResponse]
   }
   
-  extension [Self <: HandleFirewallRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleFirewallRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     

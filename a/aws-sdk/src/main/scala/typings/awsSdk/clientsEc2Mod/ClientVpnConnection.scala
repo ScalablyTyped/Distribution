@@ -83,7 +83,8 @@ object ClientVpnConnection {
     __obj.asInstanceOf[ClientVpnConnection]
   }
   
-  extension [Self <: ClientVpnConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientVpnConnection] (val x: Self) extends AnyVal {
     
     inline def setClientIp(value: String): Self = StObject.set(x, "ClientIp", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GeoChartMagnifyingGlass {
     __obj.asInstanceOf[GeoChartMagnifyingGlass]
   }
   
-  extension [Self <: GeoChartMagnifyingGlass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoChartMagnifyingGlass] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     

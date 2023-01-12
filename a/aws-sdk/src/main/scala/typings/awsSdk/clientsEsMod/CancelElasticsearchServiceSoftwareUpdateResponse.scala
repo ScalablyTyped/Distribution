@@ -18,7 +18,8 @@ object CancelElasticsearchServiceSoftwareUpdateResponse {
     __obj.asInstanceOf[CancelElasticsearchServiceSoftwareUpdateResponse]
   }
   
-  extension [Self <: CancelElasticsearchServiceSoftwareUpdateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelElasticsearchServiceSoftwareUpdateResponse] (val x: Self) extends AnyVal {
     
     inline def setServiceSoftwareOptions(value: ServiceSoftwareOptions): Self = StObject.set(x, "ServiceSoftwareOptions", value.asInstanceOf[js.Any])
     

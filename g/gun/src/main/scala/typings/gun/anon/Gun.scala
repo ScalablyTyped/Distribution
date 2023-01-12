@@ -26,7 +26,8 @@ object Gun {
     __obj.asInstanceOf[Gun[DataType, ReferenceKey]]
   }
   
-  extension [Self <: Gun[?, ?], DataType, ReferenceKey](x: Self & (Gun[DataType, ReferenceKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gun[?, ?], DataType, ReferenceKey] (val x: Self & (Gun[DataType, ReferenceKey])) extends AnyVal {
     
     inline def setGun(value: ChainReference[DataType, ReferenceKey, `false`]): Self = StObject.set(x, "gun", value.asInstanceOf[js.Any])
     

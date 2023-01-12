@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object mod {
       __obj.asInstanceOf[FormOptions]
     }
     
-    extension [Self <: FormOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoFields(value: Boolean): Self = StObject.set(x, "autoFields", value.asInstanceOf[js.Any])
       

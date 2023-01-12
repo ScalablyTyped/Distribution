@@ -167,7 +167,8 @@ object mod {
       __obj.asInstanceOf[StarRatingProps]
     }
     
-    extension [Self <: StarRatingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StarRatingProps] (val x: Self) extends AnyVal {
       
       inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       

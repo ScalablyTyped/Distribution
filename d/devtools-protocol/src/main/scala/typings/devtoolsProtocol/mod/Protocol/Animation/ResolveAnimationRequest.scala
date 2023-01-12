@@ -18,7 +18,8 @@ object ResolveAnimationRequest {
     __obj.asInstanceOf[ResolveAnimationRequest]
   }
   
-  extension [Self <: ResolveAnimationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveAnimationRequest] (val x: Self) extends AnyVal {
     
     inline def setAnimationId(value: String): Self = StObject.set(x, "animationId", value.asInstanceOf[js.Any])
   }

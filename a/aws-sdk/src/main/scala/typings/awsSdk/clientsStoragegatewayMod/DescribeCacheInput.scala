@@ -15,7 +15,8 @@ object DescribeCacheInput {
     __obj.asInstanceOf[DescribeCacheInput]
   }
   
-  extension [Self <: DescribeCacheInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCacheInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }

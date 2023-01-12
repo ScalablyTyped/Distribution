@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[EventListener]
     }
     
-    extension [Self <: EventListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventListener] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[LottieProps]
     }
     
-    extension [Self <: LottieProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LottieProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String | animation): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -211,7 +213,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAnimationData(value: Any): Self = StObject.set(x, "animationData", value.asInstanceOf[js.Any])
       

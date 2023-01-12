@@ -43,7 +43,8 @@ object CreateAppRequest {
     __obj.asInstanceOf[CreateAppRequest]
   }
   
-  extension [Self <: CreateAppRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAppRequest] (val x: Self) extends AnyVal {
     
     inline def setAppName(value: AppName): Self = StObject.set(x, "AppName", value.asInstanceOf[js.Any])
     

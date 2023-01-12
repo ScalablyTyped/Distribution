@@ -20,7 +20,8 @@ object TypeofSwitch {
     __obj.asInstanceOf[TypeofSwitch]
   }
   
-  extension [Self <: TypeofSwitch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSwitch] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Switch): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

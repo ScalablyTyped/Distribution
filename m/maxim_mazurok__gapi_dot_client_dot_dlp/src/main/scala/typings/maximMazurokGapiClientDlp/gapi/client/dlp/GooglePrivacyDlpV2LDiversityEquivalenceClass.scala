@@ -25,7 +25,8 @@ object GooglePrivacyDlpV2LDiversityEquivalenceClass {
     __obj.asInstanceOf[GooglePrivacyDlpV2LDiversityEquivalenceClass]
   }
   
-  extension [Self <: GooglePrivacyDlpV2LDiversityEquivalenceClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2LDiversityEquivalenceClass] (val x: Self) extends AnyVal {
     
     inline def setEquivalenceClassSize(value: String): Self = StObject.set(x, "equivalenceClassSize", value.asInstanceOf[js.Any])
     

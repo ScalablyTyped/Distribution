@@ -28,7 +28,8 @@ object ListTargetsForPolicyRequest {
     __obj.asInstanceOf[ListTargetsForPolicyRequest]
   }
   
-  extension [Self <: ListTargetsForPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTargetsForPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

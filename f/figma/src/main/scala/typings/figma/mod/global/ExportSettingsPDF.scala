@@ -23,7 +23,8 @@ object ExportSettingsPDF {
     __obj.asInstanceOf[ExportSettingsPDF]
   }
   
-  extension [Self <: ExportSettingsPDF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportSettingsPDF] (val x: Self) extends AnyVal {
     
     inline def setContentsOnly(value: Boolean): Self = StObject.set(x, "contentsOnly", value.asInstanceOf[js.Any])
     

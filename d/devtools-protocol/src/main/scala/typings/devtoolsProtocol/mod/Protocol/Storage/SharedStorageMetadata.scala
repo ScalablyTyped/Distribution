@@ -21,7 +21,8 @@ object SharedStorageMetadata {
     __obj.asInstanceOf[SharedStorageMetadata]
   }
   
-  extension [Self <: SharedStorageMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedStorageMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: TimeSinceEpoch): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

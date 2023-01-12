@@ -21,7 +21,8 @@ object MoveStartEvent {
     __obj.asInstanceOf[MoveStartEvent]
   }
   
-  extension [Self <: MoveStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveStartEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: movestart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

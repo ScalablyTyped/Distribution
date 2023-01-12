@@ -18,7 +18,8 @@ object AutoMLDataSplitConfig {
     __obj.asInstanceOf[AutoMLDataSplitConfig]
   }
   
-  extension [Self <: AutoMLDataSplitConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLDataSplitConfig] (val x: Self) extends AnyVal {
     
     inline def setValidationFraction(value: ValidationFraction): Self = StObject.set(x, "ValidationFraction", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object DiscoveryOutage {
     __obj.asInstanceOf[DiscoveryOutage]
   }
   
-  extension [Self <: DiscoveryOutage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoveryOutage] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

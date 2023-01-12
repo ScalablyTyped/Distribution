@@ -114,7 +114,8 @@ object typesGcmmessageMod {
       __obj.asInstanceOf[GCMMessage]
     }
     
-    extension [Self <: GCMMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GCMMessage] (val x: Self) extends AnyVal {
       
       inline def setAction(value: OPEN_APP | DEEP_LINK | URL | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object typesGcmmessageMod {
       __obj.asInstanceOf[UnmarshalledGCMMessage]
     }
     
-    extension [Self <: UnmarshalledGCMMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledGCMMessage] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       

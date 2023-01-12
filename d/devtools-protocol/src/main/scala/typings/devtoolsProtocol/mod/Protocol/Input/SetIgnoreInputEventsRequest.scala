@@ -18,7 +18,8 @@ object SetIgnoreInputEventsRequest {
     __obj.asInstanceOf[SetIgnoreInputEventsRequest]
   }
   
-  extension [Self <: SetIgnoreInputEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetIgnoreInputEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
   }

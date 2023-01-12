@@ -26,7 +26,8 @@ object SearchAStarOptions {
     __obj.asInstanceOf[SearchAStarOptions]
   }
   
-  extension [Self <: SearchAStarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAStarOptions] (val x: Self) extends AnyVal {
     
     inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     

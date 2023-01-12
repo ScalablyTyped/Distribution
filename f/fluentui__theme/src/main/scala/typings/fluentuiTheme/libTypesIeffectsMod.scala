@@ -76,7 +76,8 @@ object libTypesIeffectsMod {
       __obj.asInstanceOf[IEffects]
     }
     
-    extension [Self <: IEffects](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEffects] (val x: Self) extends AnyVal {
       
       inline def setElevation16(value: String): Self = StObject.set(x, "elevation16", value.asInstanceOf[js.Any])
       

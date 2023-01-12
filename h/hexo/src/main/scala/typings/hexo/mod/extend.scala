@@ -70,7 +70,8 @@ object extend {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setArguments(value: js.Array[Desc]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
         
@@ -119,7 +120,8 @@ object extend {
         __obj.asInstanceOf[Config]
       }
       
-      extension [Self <: Config](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -127,7 +129,8 @@ object extend {
       }
     }
     
-    extension [Self <: Deployer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deployer] (val x: Self) extends AnyVal {
       
       inline def setRegister(value: (String, js.Function1[/* args */ Config, Unit]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
@@ -271,7 +274,8 @@ object extend {
         __obj.asInstanceOf[typings.hexo.mod.extend.Filter.Options]
       }
       
-      extension [Self <: typings.hexo.mod.extend.Filter.Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.hexo.mod.extend.Filter.Options] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -308,7 +312,8 @@ object extend {
       __obj.asInstanceOf[Generator]
     }
     
-    extension [Self <: Generator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Generator] (val x: Self) extends AnyVal {
       
       inline def setRegister(
         value: (String, js.Function1[
@@ -339,7 +344,8 @@ object extend {
         __obj.asInstanceOf[Return]
       }
       
-      extension [Self <: Return](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Return] (val x: Self) extends AnyVal {
         
         inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -373,7 +379,8 @@ object extend {
       __obj.asInstanceOf[Helper]
     }
     
-    extension [Self <: Helper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Helper] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => js.UndefOr[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -399,7 +406,8 @@ object extend {
       __obj.asInstanceOf[Migrator]
     }
     
-    extension [Self <: Migrator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Migrator] (val x: Self) extends AnyVal {
       
       inline def setRegister(
         value: (String, js.Function2[/* args */ ParsedArgs, /* fn */ js.Function1[/* err */ Any, Unit], Unit]) => Unit
@@ -459,7 +467,8 @@ object extend {
       __obj.asInstanceOf[RendererData]
     }
     
-    extension [Self <: RendererData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererData] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -497,7 +506,8 @@ object extend {
         __obj.asInstanceOf[typings.hexo.mod.extend.Tag.Options]
       }
       
-      extension [Self <: typings.hexo.mod.extend.Tag.Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.hexo.mod.extend.Tag.Options] (val x: Self) extends AnyVal {
         
         inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
         

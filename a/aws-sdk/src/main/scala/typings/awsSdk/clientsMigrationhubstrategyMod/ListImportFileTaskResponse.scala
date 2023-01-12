@@ -23,7 +23,8 @@ object ListImportFileTaskResponse {
     __obj.asInstanceOf[ListImportFileTaskResponse]
   }
   
-  extension [Self <: ListImportFileTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImportFileTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

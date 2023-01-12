@@ -23,7 +23,8 @@ object ExecutionResults {
     __obj.asInstanceOf[ExecutionResults]
   }
   
-  extension [Self <: ExecutionResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionResults] (val x: Self) extends AnyVal {
     
     inline def setOnExceptionSteps(value: ExecutionStepResults): Self = StObject.set(x, "OnExceptionSteps", value.asInstanceOf[js.Any])
     

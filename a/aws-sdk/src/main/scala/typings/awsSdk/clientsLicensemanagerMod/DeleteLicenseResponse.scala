@@ -23,7 +23,8 @@ object DeleteLicenseResponse {
     __obj.asInstanceOf[DeleteLicenseResponse]
   }
   
-  extension [Self <: DeleteLicenseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLicenseResponse] (val x: Self) extends AnyVal {
     
     inline def setDeletionDate(value: ISO8601DateTime): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
     

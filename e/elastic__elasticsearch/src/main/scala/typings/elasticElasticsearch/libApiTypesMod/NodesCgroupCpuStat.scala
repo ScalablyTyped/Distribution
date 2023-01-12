@@ -19,7 +19,8 @@ object NodesCgroupCpuStat {
     __obj.asInstanceOf[NodesCgroupCpuStat]
   }
   
-  extension [Self <: NodesCgroupCpuStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesCgroupCpuStat] (val x: Self) extends AnyVal {
     
     inline def setNumber_of_elapsed_periods(value: long): Self = StObject.set(x, "number_of_elapsed_periods", value.asInstanceOf[js.Any])
     

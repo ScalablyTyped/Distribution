@@ -19,7 +19,8 @@ object EventSegUiInteractionState {
     __obj.asInstanceOf[EventSegUiInteractionState]
   }
   
-  extension [Self <: EventSegUiInteractionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventSegUiInteractionState] (val x: Self) extends AnyVal {
     
     inline def setAffectedInstances(value: EventInstanceHash): Self = StObject.set(x, "affectedInstances", value.asInstanceOf[js.Any])
     

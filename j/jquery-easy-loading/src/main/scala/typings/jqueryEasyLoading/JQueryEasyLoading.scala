@@ -103,7 +103,8 @@ object JQueryEasyLoading {
       __obj.asInstanceOf[LoadingObject]
     }
     
-    extension [Self <: LoadingObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadingObject] (val x: Self) extends AnyVal {
       
       inline def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
       
@@ -213,7 +214,8 @@ object JQueryEasyLoading {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setHiddenClass(value: String): Self = StObject.set(x, "hiddenClass", value.asInstanceOf[js.Any])
       
@@ -278,7 +280,8 @@ object JQueryEasyLoading {
       __obj.asInstanceOf[Static]
     }
     
-    extension [Self <: Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
       
       inline def setSetDefaults(value: Options => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
     }

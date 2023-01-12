@@ -39,7 +39,8 @@ object typesTypesMod {
       __obj.asInstanceOf[BaseNodeOptions]
     }
     
-    extension [Self <: BaseNodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseNodeOptions] (val x: Self) extends AnyVal {
       
       inline def setOnFatalError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onFatalError", js.Any.fromFunction1(value))
       

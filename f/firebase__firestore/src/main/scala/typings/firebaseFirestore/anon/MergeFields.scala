@@ -19,7 +19,8 @@ object MergeFields {
     __obj.asInstanceOf[MergeFields]
   }
   
-  extension [Self <: MergeFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeFields] (val x: Self) extends AnyVal {
     
     inline def setMergeFields(value: js.Array[String | FieldPath]): Self = StObject.set(x, "mergeFields", value.asInstanceOf[js.Any])
     

@@ -261,7 +261,8 @@ object TabSettings {
       __obj.asInstanceOf[Impl]
     }
     
-    extension [Self <: Impl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
       
       inline def setAlwaysRefresh(value: Boolean): Self = StObject.set(x, "alwaysRefresh", value.asInstanceOf[js.Any])
       

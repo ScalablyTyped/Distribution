@@ -23,7 +23,8 @@ object Tags {
     __obj.asInstanceOf[Tags]
   }
   
-  extension [Self <: Tags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tags] (val x: Self) extends AnyVal {
     
     inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     

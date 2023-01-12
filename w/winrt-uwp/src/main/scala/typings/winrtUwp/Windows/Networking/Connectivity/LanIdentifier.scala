@@ -23,7 +23,8 @@ object LanIdentifier {
     __obj.asInstanceOf[LanIdentifier]
   }
   
-  extension [Self <: LanIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanIdentifier] (val x: Self) extends AnyVal {
     
     inline def setInfrastructureId(value: LanIdentifierData): Self = StObject.set(x, "infrastructureId", value.asInstanceOf[js.Any])
     

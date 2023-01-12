@@ -26,7 +26,8 @@ object WorksheetViewNormal {
     __obj.asInstanceOf[WorksheetViewNormal]
   }
   
-  extension [Self <: WorksheetViewNormal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetViewNormal] (val x: Self) extends AnyVal {
     
     inline def setState(value: normal): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

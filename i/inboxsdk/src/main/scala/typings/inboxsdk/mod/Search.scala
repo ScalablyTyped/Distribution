@@ -45,7 +45,8 @@ object Search {
       __obj.asInstanceOf[AutocompleteSearchResultBase]
     }
     
-    extension [Self <: AutocompleteSearchResultBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteSearchResultBase] (val x: Self) extends AnyVal {
       
       inline def setExternalURL(value: String): Self = StObject.set(x, "externalURL", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object Search {
       __obj.asInstanceOf[AutocompleteSearchResultHtml]
     }
     
-    extension [Self <: AutocompleteSearchResultHtml](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteSearchResultHtml] (val x: Self) extends AnyVal {
       
       inline def setDescriptionHTML(value: String): Self = StObject.set(x, "descriptionHTML", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object Search {
       __obj.asInstanceOf[AutocompleteSearchResultText]
     }
     
-    extension [Self <: AutocompleteSearchResultText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteSearchResultText] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -147,7 +150,8 @@ object Search {
       __obj.asInstanceOf[SearchInstance]
     }
     
-    extension [Self <: SearchInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchInstance] (val x: Self) extends AnyVal {
       
       inline def setRegisterSearchQueryRewriter(value: SearchQueryRewriter => Unit): Self = StObject.set(x, "registerSearchQueryRewriter", js.Any.fromFunction1(value))
       
@@ -173,7 +177,8 @@ object Search {
       __obj.asInstanceOf[SearchQueryRewriter]
     }
     
-    extension [Self <: SearchQueryRewriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchQueryRewriter] (val x: Self) extends AnyVal {
       
       inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
       

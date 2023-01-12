@@ -38,7 +38,8 @@ object KeyOauthtokenPrettyPrint {
     __obj.asInstanceOf[KeyOauthtokenPrettyPrint]
   }
   
-  extension [Self <: KeyOauthtokenPrettyPrint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyOauthtokenPrettyPrint] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

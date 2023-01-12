@@ -33,7 +33,8 @@ object GetAccuracyMetricsResponse {
     __obj.asInstanceOf[GetAccuracyMetricsResponse]
   }
   
-  extension [Self <: GetAccuracyMetricsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccuracyMetricsResponse] (val x: Self) extends AnyVal {
     
     inline def setAutoMLOverrideStrategy(value: AutoMLOverrideStrategy): Self = StObject.set(x, "AutoMLOverrideStrategy", value.asInstanceOf[js.Any])
     

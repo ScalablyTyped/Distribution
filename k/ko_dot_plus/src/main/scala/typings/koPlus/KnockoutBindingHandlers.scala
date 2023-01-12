@@ -27,7 +27,8 @@ object KnockoutBindingHandlers {
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
   
-  extension [Self <: KnockoutBindingHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutBindingHandlers] (val x: Self) extends AnyVal {
     
     inline def setCommand(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ Any

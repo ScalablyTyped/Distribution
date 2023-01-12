@@ -40,7 +40,8 @@ object libBaseRequestClientMod {
       __obj.asInstanceOf[RequestClient]
     }
     
-    extension [Self <: RequestClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestClient] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: RequestOptions[Any, js.Object] => js.Promise[typings.twilio.libHttpResponseMod.^[Any]]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     }
@@ -91,7 +92,8 @@ object libBaseRequestClientMod {
       __obj.asInstanceOf[RequestClientOptions]
     }
     
-    extension [Self <: RequestClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestClientOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object libBaseRequestClientMod {
       __obj.asInstanceOf[RequestOptions[TData, TParams]]
     }
     
-    extension [Self <: RequestOptions[?, ?], TData, TParams](x: Self & (RequestOptions[TData, TParams])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions[?, ?], TData, TParams] (val x: Self & (RequestOptions[TData, TParams])) extends AnyVal {
       
       inline def setAllowRedirects(value: Boolean): Self = StObject.set(x, "allowRedirects", value.asInstanceOf[js.Any])
       

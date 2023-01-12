@@ -18,7 +18,8 @@ object ManagedExecution {
     __obj.asInstanceOf[ManagedExecution]
   }
   
-  extension [Self <: ManagedExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedExecution] (val x: Self) extends AnyVal {
     
     inline def setActive(value: ManagedExecutionNullable): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     

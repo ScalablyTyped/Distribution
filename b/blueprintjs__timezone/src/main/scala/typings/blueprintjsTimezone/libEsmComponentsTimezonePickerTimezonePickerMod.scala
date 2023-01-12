@@ -175,7 +175,8 @@ object libEsmComponentsTimezonePickerTimezonePickerMod {
       __obj.asInstanceOf[ITimezonePickerProps]
     }
     
-    extension [Self <: ITimezonePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimezonePickerProps] (val x: Self) extends AnyVal {
       
       inline def setButtonProps(value: PartialButtonPropsHTMLBut): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       
@@ -232,7 +233,8 @@ object libEsmComponentsTimezonePickerTimezonePickerMod {
       __obj.asInstanceOf[ITimezonePickerState]
     }
     
-    extension [Self <: ITimezonePickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimezonePickerState] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }

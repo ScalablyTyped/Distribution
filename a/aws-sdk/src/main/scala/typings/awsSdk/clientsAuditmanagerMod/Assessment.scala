@@ -38,7 +38,8 @@ object Assessment {
     __obj.asInstanceOf[Assessment]
   }
   
-  extension [Self <: Assessment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Assessment] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AuditManagerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

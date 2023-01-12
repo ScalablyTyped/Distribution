@@ -41,7 +41,8 @@ object TextInputDesc {
     __obj.asInstanceOf[TextInputDesc]
   }
   
-  extension [Self <: TextInputDesc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputDesc] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: String => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

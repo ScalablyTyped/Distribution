@@ -42,7 +42,8 @@ object AddIn {
     __obj.asInstanceOf[AddIn]
   }
   
-  extension [Self <: AddIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddIn] (val x: Self) extends AnyVal {
     
     inline def setCollection(value: Addins): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
     

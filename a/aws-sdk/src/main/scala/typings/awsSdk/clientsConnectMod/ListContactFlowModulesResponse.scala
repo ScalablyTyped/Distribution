@@ -23,7 +23,8 @@ object ListContactFlowModulesResponse {
     __obj.asInstanceOf[ListContactFlowModulesResponse]
   }
   
-  extension [Self <: ListContactFlowModulesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListContactFlowModulesResponse] (val x: Self) extends AnyVal {
     
     inline def setContactFlowModulesSummaryList(value: ContactFlowModulesSummaryList): Self = StObject.set(x, "ContactFlowModulesSummaryList", value.asInstanceOf[js.Any])
     

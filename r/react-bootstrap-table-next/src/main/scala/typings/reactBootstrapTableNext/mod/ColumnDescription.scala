@@ -164,7 +164,8 @@ object ColumnDescription {
     __obj.asInstanceOf[ColumnDescription[T, E]]
   }
   
-  extension [Self <: ColumnDescription[?, ?], T /* <: js.Object */, E](x: Self & (ColumnDescription[T, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnDescription[?, ?], T /* <: js.Object */, E] (val x: Self & (ColumnDescription[T, E])) extends AnyVal {
     
     inline def setAlign(value: CellAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

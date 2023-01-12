@@ -40,7 +40,8 @@ object PaymentDataError {
     __obj.asInstanceOf[PaymentDataError]
   }
   
-  extension [Self <: PaymentDataError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentDataError] (val x: Self) extends AnyVal {
     
     inline def setIntent(value: CallbackIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     

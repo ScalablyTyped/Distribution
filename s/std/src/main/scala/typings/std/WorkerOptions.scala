@@ -22,7 +22,8 @@ object WorkerOptions {
     __obj.asInstanceOf[WorkerOptions]
   }
   
-  extension [Self <: WorkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerOptions] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: RequestCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     

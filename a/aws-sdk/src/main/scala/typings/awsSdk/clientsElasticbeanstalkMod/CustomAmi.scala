@@ -23,7 +23,8 @@ object CustomAmi {
     __obj.asInstanceOf[CustomAmi]
   }
   
-  extension [Self <: CustomAmi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomAmi] (val x: Self) extends AnyVal {
     
     inline def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     

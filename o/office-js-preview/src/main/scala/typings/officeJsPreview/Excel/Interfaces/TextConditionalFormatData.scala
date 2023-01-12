@@ -31,7 +31,8 @@ object TextConditionalFormatData {
     __obj.asInstanceOf[TextConditionalFormatData]
   }
   
-  extension [Self <: TextConditionalFormatData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextConditionalFormatData] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: ConditionalRangeFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

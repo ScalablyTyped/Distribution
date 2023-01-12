@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[PartialDrawOptions]
     }
     
-    extension [Self <: PartialDrawOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDrawOptions] (val x: Self) extends AnyVal {
       
       inline def setDrawRect(value: Boolean): Self = StObject.set(x, "drawRect", value.asInstanceOf[js.Any])
       

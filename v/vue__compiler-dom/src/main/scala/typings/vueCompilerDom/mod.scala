@@ -851,7 +851,8 @@ object mod {
       __obj.asInstanceOf[DOMCompilerError]
     }
     
-    extension [Self <: DOMCompilerError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMCompilerError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: DOMErrorCodes): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }

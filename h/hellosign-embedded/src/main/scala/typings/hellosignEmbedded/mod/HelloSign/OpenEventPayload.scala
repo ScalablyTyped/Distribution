@@ -17,7 +17,8 @@ object OpenEventPayload {
     __obj.asInstanceOf[OpenEventPayload]
   }
   
-  extension [Self <: OpenEventPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenEventPayload] (val x: Self) extends AnyVal {
     
     inline def setIFrameUrl(value: String): Self = StObject.set(x, "iFrameUrl", value.asInstanceOf[js.Any])
     

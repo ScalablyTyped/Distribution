@@ -23,7 +23,8 @@ object StackInstanceFilter {
     __obj.asInstanceOf[StackInstanceFilter]
   }
   
-  extension [Self <: StackInstanceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackInstanceFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: StackInstanceFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

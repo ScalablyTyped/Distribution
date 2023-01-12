@@ -51,7 +51,8 @@ object RedirectOptions {
     __obj.asInstanceOf[RedirectOptions]
   }
   
-  extension [Self <: RedirectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedirectOptions] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object XScriptEventsSupplier {
     __obj.asInstanceOf[XScriptEventsSupplier]
   }
   
-  extension [Self <: XScriptEventsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XScriptEventsSupplier] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: XNameContainer): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

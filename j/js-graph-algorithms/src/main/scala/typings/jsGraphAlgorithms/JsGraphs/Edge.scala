@@ -37,7 +37,8 @@ object Edge {
     __obj.asInstanceOf[Edge]
   }
   
-  extension [Self <: Edge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
     
     inline def setEither(value: () => Double): Self = StObject.set(x, "either", js.Any.fromFunction0(value))
     

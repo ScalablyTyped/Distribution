@@ -39,7 +39,8 @@ object NotebookDocumentShowOptions {
     __obj.asInstanceOf[NotebookDocumentShowOptions]
   }
   
-  extension [Self <: NotebookDocumentShowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookDocumentShowOptions] (val x: Self) extends AnyVal {
     
     inline def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
     

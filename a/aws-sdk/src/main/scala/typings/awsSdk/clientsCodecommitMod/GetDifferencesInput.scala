@@ -48,7 +48,8 @@ object GetDifferencesInput {
     __obj.asInstanceOf[GetDifferencesInput]
   }
   
-  extension [Self <: GetDifferencesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDifferencesInput] (val x: Self) extends AnyVal {
     
     inline def setAfterCommitSpecifier(value: CommitName): Self = StObject.set(x, "afterCommitSpecifier", value.asInstanceOf[js.Any])
     

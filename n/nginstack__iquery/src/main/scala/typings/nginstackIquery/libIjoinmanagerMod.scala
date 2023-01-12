@@ -90,7 +90,8 @@ object libIjoinmanagerMod {
       __obj.asInstanceOf[IJoinManager]
     }
     
-    extension [Self <: IJoinManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJoinManager] (val x: Self) extends AnyVal {
       
       inline def setCreateExplicitJoin(
         value: (typings.nginstackIquery.libIqueryMod.^, Any) => typings.nginstackIquery.libIclausejoinMod.^

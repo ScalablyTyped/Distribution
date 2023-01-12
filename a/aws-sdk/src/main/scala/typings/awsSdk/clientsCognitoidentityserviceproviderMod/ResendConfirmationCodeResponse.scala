@@ -18,7 +18,8 @@ object ResendConfirmationCodeResponse {
     __obj.asInstanceOf[ResendConfirmationCodeResponse]
   }
   
-  extension [Self <: ResendConfirmationCodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResendConfirmationCodeResponse] (val x: Self) extends AnyVal {
     
     inline def setCodeDeliveryDetails(value: CodeDeliveryDetailsType): Self = StObject.set(x, "CodeDeliveryDetails", value.asInstanceOf[js.Any])
     

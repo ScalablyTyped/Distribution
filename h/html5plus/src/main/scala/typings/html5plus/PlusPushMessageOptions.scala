@@ -81,7 +81,8 @@ object PlusPushMessageOptions {
     __obj.asInstanceOf[PlusPushMessageOptions]
   }
   
-  extension [Self <: PlusPushMessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusPushMessageOptions] (val x: Self) extends AnyVal {
     
     inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     

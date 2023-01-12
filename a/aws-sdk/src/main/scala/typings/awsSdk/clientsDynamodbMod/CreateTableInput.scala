@@ -68,7 +68,8 @@ object CreateTableInput {
     __obj.asInstanceOf[CreateTableInput]
   }
   
-  extension [Self <: CreateTableInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTableInput] (val x: Self) extends AnyVal {
     
     inline def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
     

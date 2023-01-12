@@ -82,7 +82,8 @@ object libPreprocessorsRichRepliesPreprocessorMod {
       __obj.asInstanceOf[IRichReplyMetadata]
     }
     
-    extension [Self <: IRichReplyMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRichReplyMetadata] (val x: Self) extends AnyVal {
       
       inline def setFallbackHtmlBody(value: String): Self = StObject.set(x, "fallbackHtmlBody", value.asInstanceOf[js.Any])
       

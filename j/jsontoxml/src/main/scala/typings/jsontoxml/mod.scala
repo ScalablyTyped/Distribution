@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[JsonToXmlOptions]
     }
     
-    extension [Self <: JsonToXmlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonToXmlOptions] (val x: Self) extends AnyVal {
       
       inline def setDocType(value: String): Self = StObject.set(x, "docType", value.asInstanceOf[js.Any])
       

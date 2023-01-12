@@ -639,7 +639,8 @@ object sapMTablePersoControllerMod {
       __obj.asInstanceOf[TablePersoControllerSettings]
     }
     
-    extension [Self <: TablePersoControllerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablePersoControllerSettings] (val x: Self) extends AnyVal {
       
       inline def setComponentName(value: String | PropertyBindingInfo): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       

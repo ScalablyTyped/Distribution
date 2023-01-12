@@ -18,7 +18,8 @@ object ModifyAquaOutputMessage {
     __obj.asInstanceOf[ModifyAquaOutputMessage]
   }
   
-  extension [Self <: ModifyAquaOutputMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyAquaOutputMessage] (val x: Self) extends AnyVal {
     
     inline def setAquaConfiguration(value: AquaConfiguration): Self = StObject.set(x, "AquaConfiguration", value.asInstanceOf[js.Any])
     

@@ -524,7 +524,8 @@ object mod {
       __obj.asInstanceOf[DeviceOptions]
     }
     
-    extension [Self <: DeviceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
@@ -643,7 +644,8 @@ object mod {
       __obj.asInstanceOf[RegisterOptions]
     }
     
-    extension [Self <: RegisterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
       
       inline def setDiscardStale(value: Boolean): Self = StObject.set(x, "discardStale", value.asInstanceOf[js.Any])
       
@@ -677,7 +679,8 @@ object mod {
       __obj.asInstanceOf[ThingShadowOptions]
     }
     
-    extension [Self <: ThingShadowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThingShadowOptions] (val x: Self) extends AnyVal {
       
       inline def setOperationTimeout(value: Double): Self = StObject.set(x, "operationTimeout", value.asInstanceOf[js.Any])
       
@@ -761,7 +764,8 @@ object mod {
       __obj.asInstanceOf[jobStatus]
     }
     
-    extension [Self <: jobStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: jobStatus] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
@@ -780,7 +784,8 @@ object mod {
       __obj.asInstanceOf[statusDetails]
     }
     
-    extension [Self <: statusDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: statusDetails] (val x: Self) extends AnyVal {
       
       inline def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     }

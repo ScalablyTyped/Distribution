@@ -212,7 +212,8 @@ object ojSelectManyEventMap {
     __obj.asInstanceOf[ojSelectManyEventMap[K, D]]
   }
   
-  extension [Self <: ojSelectManyEventMap[?, ?], K, D](x: Self & (ojSelectManyEventMap[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojSelectManyEventMap[?, ?], K, D] (val x: Self & (ojSelectManyEventMap[K, D])) extends AnyVal {
     
     inline def setMinimumResultsForSearchChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "minimumResultsForSearchChanged", value.asInstanceOf[js.Any])
     

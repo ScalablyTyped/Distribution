@@ -26,7 +26,8 @@ object SpecWriteAck {
     __obj.asInstanceOf[SpecWriteAck]
   }
   
-  extension [Self <: SpecWriteAck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecWriteAck] (val x: Self) extends AnyVal {
     
     inline def setKeepInQueue(value: Boolean): Self = StObject.set(x, "keepInQueue", value.asInstanceOf[js.Any])
     

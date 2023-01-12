@@ -23,7 +23,8 @@ object InstallabilityError {
     __obj.asInstanceOf[InstallabilityError]
   }
   
-  extension [Self <: InstallabilityError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstallabilityError] (val x: Self) extends AnyVal {
     
     inline def setErrorArguments(value: js.Array[InstallabilityErrorArgument]): Self = StObject.set(x, "errorArguments", value.asInstanceOf[js.Any])
     

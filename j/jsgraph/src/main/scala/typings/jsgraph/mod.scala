@@ -51,7 +51,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Directed]
     }
     
-    extension [Self <: Directed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Directed] (val x: Self) extends AnyVal {
       
       inline def setBreadthFirstTraverse(value: TraversalParams => TraversalResult): Self = StObject.set(x, "breadthFirstTraverse", js.Any.fromFunction1(value))
       
@@ -157,7 +158,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Edge]
     }
     
-    extension [Self <: Edge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
       
       inline def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EdgeRequest]
     }
     
-    extension [Self <: EdgeRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EdgeRequest] (val x: Self) extends AnyVal {
       
       inline def setE(value: Edge): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JsGraphResponse]
     }
     
-    extension [Self <: JsGraphResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsGraphResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -226,7 +230,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TraversalContext]
     }
     
-    extension [Self <: TraversalContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversalContext] (val x: Self) extends AnyVal {
       
       inline def setColorMap(value: Any): Self = StObject.set(x, "colorMap", value.asInstanceOf[js.Any])
       
@@ -258,7 +263,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TraversalOptions]
     }
     
-    extension [Self <: TraversalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversalOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyStartVector(value: Boolean): Self = StObject.set(x, "allowEmptyStartVector", value.asInstanceOf[js.Any])
       
@@ -287,7 +293,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TraversalParams]
     }
     
-    extension [Self <: TraversalParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversalParams] (val x: Self) extends AnyVal {
       
       inline def setDigraph(value: DirectedGraph): Self = StObject.set(x, "digraph", value.asInstanceOf[js.Any])
       
@@ -312,7 +319,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TraversalResult]
     }
     
-    extension [Self <: TraversalResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversalResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -337,7 +345,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VertexRequest]
     }
     
-    extension [Self <: VertexRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VertexRequest] (val x: Self) extends AnyVal {
       
       inline def setP(value: Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
@@ -382,7 +391,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Visitor]
     }
     
-    extension [Self <: Visitor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visitor] (val x: Self) extends AnyVal {
       
       inline def setBlackTarget(value: E => Unit): Self = StObject.set(x, "blackTarget", js.Any.fromFunction1(value))
       
@@ -424,7 +434,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[colors]
     }
     
-    extension [Self <: colors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: colors] (val x: Self) extends AnyVal {
       
       inline def setBlack(value: `2`): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
@@ -445,7 +456,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[jsGraphStatic]
     }
     
-    extension [Self <: jsGraphStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: jsGraphStatic] (val x: Self) extends AnyVal {
       
       inline def setDirected(value: Directed): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     }

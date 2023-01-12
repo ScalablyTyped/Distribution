@@ -217,7 +217,8 @@ object PoolAttributes {
     __obj.asInstanceOf[PoolAttributes]
   }
   
-  extension [Self <: PoolAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoolAttributes] (val x: Self) extends AnyVal {
     
     inline def setConnectString(value: String): Self = StObject.set(x, "connectString", value.asInstanceOf[js.Any])
     

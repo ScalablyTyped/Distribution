@@ -17,7 +17,8 @@ object QueryRole {
     __obj.asInstanceOf[QueryRole]
   }
   
-  extension [Self <: QueryRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRole] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Org): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object TsInterfaceBody {
     __obj.asInstanceOf[TsInterfaceBody]
   }
   
-  extension [Self <: TsInterfaceBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsInterfaceBody] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[TsTypeElement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

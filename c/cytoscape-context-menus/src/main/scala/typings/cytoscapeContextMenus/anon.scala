@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[CoreAsWell]
     }
     
-    extension [Self <: CoreAsWell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoreAsWell] (val x: Self) extends AnyVal {
       
       inline def setCoreAsWell(value: String): Self = StObject.set(x, "coreAsWell", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Src]
     }
     
-    extension [Self <: Src](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Src] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetSamplingProfileReturnType {
     __obj.asInstanceOf[GetSamplingProfileReturnType]
   }
   
-  extension [Self <: GetSamplingProfileReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSamplingProfileReturnType] (val x: Self) extends AnyVal {
     
     inline def setProfile(value: SamplingHeapProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
   }

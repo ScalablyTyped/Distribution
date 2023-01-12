@@ -21,7 +21,8 @@ object CompletedDrag {
     __obj.asInstanceOf[CompletedDrag]
   }
   
-  extension [Self <: CompletedDrag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletedDrag] (val x: Self) extends AnyVal {
     
     inline def setAfterCritical(value: LiftEffect): Self = StObject.set(x, "afterCritical", value.asInstanceOf[js.Any])
     

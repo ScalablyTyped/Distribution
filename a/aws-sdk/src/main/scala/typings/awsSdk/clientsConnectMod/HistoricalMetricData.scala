@@ -23,7 +23,8 @@ object HistoricalMetricData {
     __obj.asInstanceOf[HistoricalMetricData]
   }
   
-  extension [Self <: HistoricalMetricData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoricalMetricData] (val x: Self) extends AnyVal {
     
     inline def setMetric(value: HistoricalMetric): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
     

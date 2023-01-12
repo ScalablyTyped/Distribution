@@ -28,7 +28,8 @@ object ZGInput {
     __obj.asInstanceOf[ZGInput]
   }
   
-  extension [Self <: ZGInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZGInput] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

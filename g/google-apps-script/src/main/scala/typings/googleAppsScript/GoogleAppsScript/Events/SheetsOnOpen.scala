@@ -21,7 +21,8 @@ object SheetsOnOpen {
     __obj.asInstanceOf[SheetsOnOpen]
   }
   
-  extension [Self <: SheetsOnOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetsOnOpen] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Spreadsheet): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

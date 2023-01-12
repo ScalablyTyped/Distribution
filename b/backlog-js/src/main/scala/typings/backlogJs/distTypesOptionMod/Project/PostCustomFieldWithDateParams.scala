@@ -25,7 +25,8 @@ object PostCustomFieldWithDateParams {
     __obj.asInstanceOf[PostCustomFieldWithDateParams]
   }
   
-  extension [Self <: PostCustomFieldWithDateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostCustomFieldWithDateParams] (val x: Self) extends AnyVal {
     
     inline def setInitialDate(value: String): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
     

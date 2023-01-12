@@ -46,7 +46,8 @@ object DriveId {
     __obj.asInstanceOf[DriveId]
   }
   
-  extension [Self <: DriveId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveId] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

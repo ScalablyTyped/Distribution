@@ -32,7 +32,8 @@ object UserDeletionRequest {
     __obj.asInstanceOf[UserDeletionRequest]
   }
   
-  extension [Self <: UserDeletionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDeletionRequest] (val x: Self) extends AnyVal {
     
     inline def setDeletionRequestTime(value: String): Self = StObject.set(x, "deletionRequestTime", value.asInstanceOf[js.Any])
     

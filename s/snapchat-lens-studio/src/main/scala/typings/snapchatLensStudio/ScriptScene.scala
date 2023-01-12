@@ -47,7 +47,8 @@ object ScriptScene {
     __obj.asInstanceOf[ScriptScene]
   }
   
-  extension [Self <: ScriptScene](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptScene] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderTargetTexture(value: () => Texture): Self = StObject.set(x, "createRenderTargetTexture", js.Any.fromFunction0(value))
     

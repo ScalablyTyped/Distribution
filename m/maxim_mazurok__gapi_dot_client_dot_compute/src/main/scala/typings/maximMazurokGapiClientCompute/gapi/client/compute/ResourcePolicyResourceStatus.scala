@@ -16,7 +16,8 @@ object ResourcePolicyResourceStatus {
     __obj.asInstanceOf[ResourcePolicyResourceStatus]
   }
   
-  extension [Self <: ResourcePolicyResourceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicyResourceStatus] (val x: Self) extends AnyVal {
     
     inline def setInstanceSchedulePolicy(value: ResourcePolicyResourceStatusInstanceSchedulePolicyStatus): Self = StObject.set(x, "instanceSchedulePolicy", value.asInstanceOf[js.Any])
     

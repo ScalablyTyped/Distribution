@@ -18,7 +18,8 @@ object DeleteServiceOutput {
     __obj.asInstanceOf[DeleteServiceOutput]
   }
   
-  extension [Self <: DeleteServiceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteServiceOutput] (val x: Self) extends AnyVal {
     
     inline def setService(value: Service): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

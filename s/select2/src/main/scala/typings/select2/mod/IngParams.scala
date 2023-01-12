@@ -21,7 +21,8 @@ object IngParams {
     __obj.asInstanceOf[IngParams]
   }
   
-  extension [Self <: IngParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngParams] (val x: Self) extends AnyVal {
     
     inline def setName(value: select | open | close | unselect): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

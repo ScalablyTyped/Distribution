@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[IcoSizes]
     }
     
-    extension [Self <: IcoSizes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IcoSizes] (val x: Self) extends AnyVal {
       
       inline def setIcoSizes(value: js.Array[Double]): Self = StObject.set(x, "icoSizes", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

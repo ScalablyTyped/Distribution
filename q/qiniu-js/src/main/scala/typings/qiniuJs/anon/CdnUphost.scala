@@ -19,7 +19,8 @@ object CdnUphost {
     __obj.asInstanceOf[CdnUphost]
   }
   
-  extension [Self <: CdnUphost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CdnUphost] (val x: Self) extends AnyVal {
     
     inline def setCdnUphost(value: js.Array[uploadDotqiniupDotcom]): Self = StObject.set(x, "cdnUphost", value.asInstanceOf[js.Any])
     

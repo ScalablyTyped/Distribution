@@ -18,7 +18,8 @@ object DialogProps {
     __obj.asInstanceOf[DialogProps]
   }
   
-  extension [Self <: DialogProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
     
     inline def setOnCancel(value: /* e */ Any => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
     

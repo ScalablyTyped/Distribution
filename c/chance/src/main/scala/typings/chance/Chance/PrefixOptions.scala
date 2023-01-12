@@ -20,7 +20,8 @@ object PrefixOptions {
     __obj.asInstanceOf[PrefixOptions]
   }
   
-  extension [Self <: PrefixOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrefixOptions] (val x: Self) extends AnyVal {
     
     inline def setGender(value: male | female | all): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
   }

@@ -54,7 +54,8 @@ object IFetchResult {
     __obj.asInstanceOf[IFetchResult[T]]
   }
   
-  extension [Self <: IFetchResult[?], T](x: Self & IFetchResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFetchResult[?], T] (val x: Self & IFetchResult[T]) extends AnyVal {
     
     inline def setAbsoluteIndex(value: Double): Self = StObject.set(x, "absoluteIndex", value.asInstanceOf[js.Any])
     

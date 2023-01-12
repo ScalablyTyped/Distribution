@@ -61,7 +61,8 @@ object OlkOptionButton {
     __obj.asInstanceOf[OlkOptionButton]
   }
   
-  extension [Self <: OlkOptionButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlkOptionButton] (val x: Self) extends AnyVal {
     
     inline def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     

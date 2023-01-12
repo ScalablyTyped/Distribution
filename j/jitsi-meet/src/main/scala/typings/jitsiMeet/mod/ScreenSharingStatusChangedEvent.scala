@@ -18,7 +18,8 @@ object ScreenSharingStatusChangedEvent {
     __obj.asInstanceOf[ScreenSharingStatusChangedEvent]
   }
   
-  extension [Self <: ScreenSharingStatusChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenSharingStatusChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: SourceType): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

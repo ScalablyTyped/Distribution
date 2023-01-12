@@ -261,7 +261,8 @@ object typesPollMod {
         __obj.asInstanceOf[IOptions[T, U, V]]
       }
       
-      extension [Self <: IOptions[?, ?, ?], T, U, V /* <: String */](x: Self & (IOptions[T, U, V])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?, ?, ?], T, U, V /* <: String */] (val x: Self & (IOptions[T, U, V])) extends AnyVal {
         
         inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
         

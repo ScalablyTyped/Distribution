@@ -36,7 +36,8 @@ object typesNotificationConfigurationMod {
       __obj.asInstanceOf[NotificationConfiguration]
     }
     
-    extension [Self <: NotificationConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
       
       inline def setLambdaFunctionConfigurations(value: js.Array[LambdaFunctionConfiguration] | js.Iterable[LambdaFunctionConfiguration]): Self = StObject.set(x, "LambdaFunctionConfigurations", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object typesNotificationConfigurationMod {
       __obj.asInstanceOf[UnmarshalledNotificationConfiguration]
     }
     
-    extension [Self <: UnmarshalledNotificationConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledNotificationConfiguration] (val x: Self) extends AnyVal {
       
       inline def setLambdaFunctionConfigurations(value: js.Array[UnmarshalledLambdaFunctionConfiguration]): Self = StObject.set(x, "LambdaFunctionConfigurations", value.asInstanceOf[js.Any])
       

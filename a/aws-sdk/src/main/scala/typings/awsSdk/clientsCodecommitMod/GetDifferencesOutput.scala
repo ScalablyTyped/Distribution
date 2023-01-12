@@ -23,7 +23,8 @@ object GetDifferencesOutput {
     __obj.asInstanceOf[GetDifferencesOutput]
   }
   
-  extension [Self <: GetDifferencesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDifferencesOutput] (val x: Self) extends AnyVal {
     
     inline def setDifferences(value: DifferenceList): Self = StObject.set(x, "differences", value.asInstanceOf[js.Any])
     

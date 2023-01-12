@@ -15,7 +15,8 @@ object StepAttrs {
     __obj.asInstanceOf[StepAttrs]
   }
   
-  extension [Self <: StepAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepAttrs] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
   }

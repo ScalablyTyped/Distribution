@@ -23,7 +23,8 @@ object DeleteQuickConnectRequest {
     __obj.asInstanceOf[DeleteQuickConnectRequest]
   }
   
-  extension [Self <: DeleteQuickConnectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteQuickConnectRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

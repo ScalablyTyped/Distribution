@@ -47,7 +47,8 @@ object BodyStylePropsArg {
     __obj.asInstanceOf[BodyStylePropsArg]
   }
   
-  extension [Self <: BodyStylePropsArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyStylePropsArg] (val x: Self) extends AnyVal {
     
     inline def set$animationDuration(value: Double): Self = StObject.set(x, "$animationDuration", value.asInstanceOf[js.Any])
     

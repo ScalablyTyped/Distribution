@@ -23,7 +23,8 @@ object MapShapeClickEvent {
     __obj.asInstanceOf[MapShapeClickEvent]
   }
   
-  extension [Self <: MapShapeClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapShapeClickEvent] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: Shape): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

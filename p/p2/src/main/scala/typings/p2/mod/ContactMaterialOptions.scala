@@ -27,7 +27,8 @@ object ContactMaterialOptions {
     __obj.asInstanceOf[ContactMaterialOptions]
   }
   
-  extension [Self <: ContactMaterialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactMaterialOptions] (val x: Self) extends AnyVal {
     
     inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     

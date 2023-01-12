@@ -59,7 +59,8 @@ object ViewportProps {
     __obj.asInstanceOf[ViewportProps]
   }
   
-  extension [Self <: ViewportProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewportProps] (val x: Self) extends AnyVal {
     
     inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     

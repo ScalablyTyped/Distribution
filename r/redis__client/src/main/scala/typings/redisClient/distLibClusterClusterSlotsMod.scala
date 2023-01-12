@@ -34,7 +34,8 @@ object distLibClusterClusterSlotsMod {
       __obj.asInstanceOf[ClusterNode[M, F, S]]
     }
     
-    extension [Self <: ClusterNode[?, ?, ?], M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */](x: Self & (ClusterNode[M, F, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClusterNode[?, ?, ?], M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */] (val x: Self & (ClusterNode[M, F, S])) extends AnyVal {
       
       inline def setClient(value: RedisClientType[M, F, S]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object distLibClusterClusterSlotsMod {
       __obj.asInstanceOf[NodeAddress]
     }
     
-    extension [Self <: NodeAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeAddress] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object libBoundedJoinSemilatticeMod {
       __obj.asInstanceOf[BoundedJoinSemilattice[A]]
     }
     
-    extension [Self <: BoundedJoinSemilattice[?], A](x: Self & BoundedJoinSemilattice[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundedJoinSemilattice[?], A] (val x: Self & BoundedJoinSemilattice[A]) extends AnyVal {
       
       inline def setZero(value: A): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
     }

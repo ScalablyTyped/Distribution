@@ -37,7 +37,8 @@ object Invisibles {
     __obj.asInstanceOf[Invisibles]
   }
   
-  extension [Self <: Invisibles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Invisibles] (val x: Self) extends AnyVal {
     
     inline def setCr(value: Boolean | String): Self = StObject.set(x, "cr", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object TabularDataProviderArguments {
     __obj.asInstanceOf[TabularDataProviderArguments]
   }
   
-  extension [Self <: TabularDataProviderArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabularDataProviderArguments] (val x: Self) extends AnyVal {
     
     inline def setCellRangeRepresentation(value: String): Self = StObject.set(x, "CellRangeRepresentation", value.asInstanceOf[js.Any])
     

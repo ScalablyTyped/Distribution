@@ -23,7 +23,8 @@ object LateDataRule {
     __obj.asInstanceOf[LateDataRule]
   }
   
-  extension [Self <: LateDataRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LateDataRule] (val x: Self) extends AnyVal {
     
     inline def setRuleConfiguration(value: LateDataRuleConfiguration): Self = StObject.set(x, "ruleConfiguration", value.asInstanceOf[js.Any])
     

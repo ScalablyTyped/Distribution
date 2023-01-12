@@ -29,7 +29,8 @@ object libModelsNotificationhubresultMod {
             __obj.asInstanceOf[NotificationHubResult]
           }
           
-          extension [Self <: NotificationHubResult](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: NotificationHubResult] (val x: Self) extends AnyVal {
             
             inline def setParse(value: js.Object => js.Object | js.Array[js.Object]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
             

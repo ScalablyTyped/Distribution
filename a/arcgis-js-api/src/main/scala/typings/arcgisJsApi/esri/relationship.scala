@@ -35,7 +35,8 @@ object relationship {
     __obj.asInstanceOf[relationship]
   }
   
-  extension [Self <: relationship](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: relationship] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderer(value: relationshipCreateRendererParams => js.Promise[relationshipRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
     

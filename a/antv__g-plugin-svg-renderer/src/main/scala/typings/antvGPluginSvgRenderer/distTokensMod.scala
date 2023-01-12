@@ -25,7 +25,8 @@ object distTokensMod {
     @js.native
     val ^ : DefinedToken = js.native
     
-    extension [Self <: ElementLifeCycleContribution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementLifeCycleContribution] (val x: Self) extends AnyVal {
       
       inline def setCreateElement(value: DisplayObject[Any, Any] => SVGElement): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
       
@@ -47,7 +48,8 @@ object distTokensMod {
     @js.native
     val ^ : DefinedToken = js.native
     
-    extension [Self <: SVGRendererPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGRendererPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setOutputSVGElementId(value: Boolean): Self = StObject.set(x, "outputSVGElementId", value.asInstanceOf[js.Any])
     }

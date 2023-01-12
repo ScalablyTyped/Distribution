@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[RawImageData[T]]
     }
     
-    extension [Self <: RawImageData[?], T](x: Self & RawImageData[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawImageData[?], T] (val x: Self & RawImageData[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

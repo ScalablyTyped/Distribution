@@ -64,7 +64,8 @@ object distListboxSrcListboxOptionMod {
       __obj.asInstanceOf[InnerListboxOptionProps]
     }
     
-    extension [Self <: InnerListboxOptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerListboxOptionProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

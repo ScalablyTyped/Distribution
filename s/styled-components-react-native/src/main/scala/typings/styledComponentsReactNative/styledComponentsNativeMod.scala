@@ -186,7 +186,8 @@ object styledComponentsNativeMod extends Shortcut {
       __obj.asInstanceOf[ReactNativeThemedStyledComponentsModule[T, U]]
     }
     
-    extension [Self <: ReactNativeThemedStyledComponentsModule[?, ?], T /* <: js.Object */, U /* <: js.Object */](x: Self & (ReactNativeThemedStyledComponentsModule[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactNativeThemedStyledComponentsModule[?, ?], T /* <: js.Object */, U /* <: js.Object */] (val x: Self & (ReactNativeThemedStyledComponentsModule[T, U])) extends AnyVal {
       
       inline def setCss(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemedCssFunction<T> */ Any

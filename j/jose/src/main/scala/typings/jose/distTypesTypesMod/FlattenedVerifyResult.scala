@@ -22,7 +22,8 @@ object FlattenedVerifyResult {
     __obj.asInstanceOf[FlattenedVerifyResult]
   }
   
-  extension [Self <: FlattenedVerifyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlattenedVerifyResult] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: js.typedarray.Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MKSliderProperties {
     __obj.asInstanceOf[MKSliderProperties]
   }
   
-  extension [Self <: MKSliderProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MKSliderProperties] (val x: Self) extends AnyVal {
     
     inline def setOnChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     

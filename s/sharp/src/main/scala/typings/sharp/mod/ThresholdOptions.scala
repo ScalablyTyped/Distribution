@@ -19,7 +19,8 @@ object ThresholdOptions {
     __obj.asInstanceOf[ThresholdOptions]
   }
   
-  extension [Self <: ThresholdOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThresholdOptions] (val x: Self) extends AnyVal {
     
     inline def setGrayscale(value: Boolean): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
     

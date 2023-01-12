@@ -20,7 +20,8 @@ object Dictk {
     __obj.asInstanceOf[Dictk]
   }
   
-  extension [Self <: Dictk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictk] (val x: Self) extends AnyVal {
     
     inline def setGeoObjects(value: js.Array[IGeoObject[IGeometry]]): Self = StObject.set(x, "geoObjects", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Notified[T]]
     }
     
-    extension [Self <: Notified[?], T /* <: js.Object */](x: Self & Notified[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notified[?], T /* <: js.Object */] (val x: Self & Notified[T]) extends AnyVal {
       
       inline def setNotified(value: Boolean): Self = StObject.set(x, "notified", value.asInstanceOf[js.Any])
       

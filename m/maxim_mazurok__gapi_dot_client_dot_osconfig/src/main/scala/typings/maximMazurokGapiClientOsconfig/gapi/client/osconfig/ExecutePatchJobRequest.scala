@@ -34,7 +34,8 @@ object ExecutePatchJobRequest {
     __obj.asInstanceOf[ExecutePatchJobRequest]
   }
   
-  extension [Self <: ExecutePatchJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutePatchJobRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

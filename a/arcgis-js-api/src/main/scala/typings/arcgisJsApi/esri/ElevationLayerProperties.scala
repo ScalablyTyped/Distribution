@@ -31,7 +31,8 @@ object ElevationLayerProperties {
     __obj.asInstanceOf[ElevationLayerProperties]
   }
   
-  extension [Self <: ElevationLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,8 @@ object typesSearchUtilsMod {
       __obj.asInstanceOf[BaseSearchOptions[T]]
     }
     
-    extension [Self <: BaseSearchOptions[?], T](x: Self & BaseSearchOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSearchOptions[?], T] (val x: Self & BaseSearchOptions[T]) extends AnyVal {
       
       inline def setGetItemValue(value: (T, /* valueKey */ String) => String): Self = StObject.set(x, "getItemValue", js.Any.fromFunction2(value))
       
@@ -134,7 +135,8 @@ object typesSearchUtilsMod {
       __obj.asInstanceOf[SearchOptions[T]]
     }
     
-    extension [Self <: SearchOptions[?], T](x: Self & SearchOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptions[?], T] (val x: Self & SearchOptions[T]) extends AnyVal {
       
       inline def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])
       

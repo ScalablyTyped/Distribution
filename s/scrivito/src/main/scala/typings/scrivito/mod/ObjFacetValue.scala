@@ -19,7 +19,8 @@ object ObjFacetValue {
     __obj.asInstanceOf[ObjFacetValue]
   }
   
-  extension [Self <: ObjFacetValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjFacetValue] (val x: Self) extends AnyVal {
     
     inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     

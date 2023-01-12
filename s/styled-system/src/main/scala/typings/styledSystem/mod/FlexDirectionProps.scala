@@ -22,7 +22,8 @@ object FlexDirectionProps {
     __obj.asInstanceOf[FlexDirectionProps[ThemeType]]
   }
   
-  extension [Self <: FlexDirectionProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & FlexDirectionProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexDirectionProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FlexDirectionProps[ThemeType]) extends AnyVal {
     
     inline def setFlexDirection(value: ResponsiveValue[FlexDirection, ThemeType]): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     

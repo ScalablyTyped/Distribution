@@ -33,7 +33,8 @@ object OAuthOptions {
     __obj.asInstanceOf[OAuthOptions]
   }
   
-  extension [Self <: OAuthOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthOptions] (val x: Self) extends AnyVal {
     
     inline def setBody_hash(value: `true` | String): Self = StObject.set(x, "body_hash", value.asInstanceOf[js.Any])
     

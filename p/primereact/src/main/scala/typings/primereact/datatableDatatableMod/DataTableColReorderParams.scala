@@ -24,7 +24,8 @@ object DataTableColReorderParams {
     __obj.asInstanceOf[DataTableColReorderParams]
   }
   
-  extension [Self <: DataTableColReorderParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableColReorderParams] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: ReactElement): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

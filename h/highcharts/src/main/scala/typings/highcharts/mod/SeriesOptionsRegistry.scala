@@ -347,7 +347,8 @@ object SeriesOptionsRegistry {
     __obj.asInstanceOf[SeriesOptionsRegistry]
   }
   
-  extension [Self <: SeriesOptionsRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesOptionsRegistry] (val x: Self) extends AnyVal {
     
     inline def setSeriesAbandsOptions(value: SeriesAbandsOptions): Self = StObject.set(x, "SeriesAbandsOptions", value.asInstanceOf[js.Any])
     

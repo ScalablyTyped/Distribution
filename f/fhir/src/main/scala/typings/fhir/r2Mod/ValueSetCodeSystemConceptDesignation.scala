@@ -34,7 +34,8 @@ object ValueSetCodeSystemConceptDesignation {
     __obj.asInstanceOf[ValueSetCodeSystemConceptDesignation]
   }
   
-  extension [Self <: ValueSetCodeSystemConceptDesignation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSetCodeSystemConceptDesignation] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object UpdateDeletionProtectionInput {
     __obj.asInstanceOf[UpdateDeletionProtectionInput]
   }
   
-  extension [Self <: UpdateDeletionProtectionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDeletionProtectionInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

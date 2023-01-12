@@ -36,7 +36,8 @@ object CreateTransitGatewayConnectRequest {
     __obj.asInstanceOf[CreateTransitGatewayConnectRequest]
   }
   
-  extension [Self <: CreateTransitGatewayConnectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransitGatewayConnectRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

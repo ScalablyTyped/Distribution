@@ -18,7 +18,8 @@ object DeleteBranchResult {
     __obj.asInstanceOf[DeleteBranchResult]
   }
   
-  extension [Self <: DeleteBranchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBranchResult] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: Branch): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
   }

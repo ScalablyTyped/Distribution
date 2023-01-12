@@ -42,7 +42,8 @@ object SubscribedSku {
     __obj.asInstanceOf[SubscribedSku]
   }
   
-  extension [Self <: SubscribedSku](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscribedSku] (val x: Self) extends AnyVal {
     
     inline def setAppliesTo(value: NullableOption[String]): Self = StObject.set(x, "appliesTo", value.asInstanceOf[js.Any])
     

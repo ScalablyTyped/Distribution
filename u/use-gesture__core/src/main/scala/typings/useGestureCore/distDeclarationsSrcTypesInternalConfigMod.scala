@@ -54,7 +54,8 @@ object distDeclarationsSrcTypesInternalConfigMod {
       __obj.asInstanceOf[InternalConfig]
     }
     
-    extension [Self <: InternalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalConfig] (val x: Self) extends AnyVal {
       
       inline def setDrag(value: InternalDragOptions): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object distDeclarationsSrcTypesInternalConfigMod {
       __obj.asInstanceOf[InternalCoordinatesOptions[Key]]
     }
     
-    extension [Self <: InternalCoordinatesOptions[?], Key /* <: CoordinatesKey */](x: Self & InternalCoordinatesOptions[Key]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalCoordinatesOptions[?], Key /* <: CoordinatesKey */] (val x: Self & InternalCoordinatesOptions[Key]) extends AnyVal {
       
       inline def setAxis(value: typings.useGestureCore.useGestureCoreStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object distDeclarationsSrcTypesInternalConfigMod {
       __obj.asInstanceOf[InternalDragOptions]
     }
     
-    extension [Self <: InternalDragOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalDragOptions] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: typings.useGestureCore.useGestureCoreStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -299,7 +302,8 @@ object distDeclarationsSrcTypesInternalConfigMod {
       __obj.asInstanceOf[InternalGenericOptions]
     }
     
-    extension [Self <: InternalGenericOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalGenericOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -369,7 +373,8 @@ object distDeclarationsSrcTypesInternalConfigMod {
       __obj.asInstanceOf[InternalGestureOptions[Key]]
     }
     
-    extension [Self <: InternalGestureOptions[?], Key /* <: GestureKey */](x: Self & InternalGestureOptions[Key]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalGestureOptions[?], Key /* <: GestureKey */] (val x: Self & InternalGestureOptions[Key]) extends AnyVal {
       
       inline def setBounds(
         value: (js.Tuple2[Vector2, Vector2]) | (js.Function1[
@@ -452,7 +457,8 @@ object distDeclarationsSrcTypesInternalConfigMod {
       __obj.asInstanceOf[InternalPinchOptions]
     }
     
-    extension [Self <: InternalPinchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalPinchOptions] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: gesture | pointer | touch): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -479,7 +485,8 @@ object distDeclarationsSrcTypesInternalConfigMod {
       __obj.asInstanceOf[MoveAndHoverMouseOnly]
     }
     
-    extension [Self <: MoveAndHoverMouseOnly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveAndHoverMouseOnly] (val x: Self) extends AnyVal {
       
       inline def setMouseOnly(value: Boolean): Self = StObject.set(x, "mouseOnly", value.asInstanceOf[js.Any])
     }

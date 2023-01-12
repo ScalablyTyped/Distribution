@@ -84,7 +84,8 @@ object UploadOperation {
     __obj.asInstanceOf[UploadOperation]
   }
   
-  extension [Self <: UploadOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadOperation] (val x: Self) extends AnyVal {
     
     inline def setAttachAsync(value: () => IPromiseWithIAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = StObject.set(x, "attachAsync", js.Any.fromFunction0(value))
     

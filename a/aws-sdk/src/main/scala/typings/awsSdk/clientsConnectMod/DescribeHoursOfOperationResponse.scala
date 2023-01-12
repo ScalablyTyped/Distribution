@@ -18,7 +18,8 @@ object DescribeHoursOfOperationResponse {
     __obj.asInstanceOf[DescribeHoursOfOperationResponse]
   }
   
-  extension [Self <: DescribeHoursOfOperationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHoursOfOperationResponse] (val x: Self) extends AnyVal {
     
     inline def setHoursOfOperation(value: HoursOfOperation): Self = StObject.set(x, "HoursOfOperation", value.asInstanceOf[js.Any])
     

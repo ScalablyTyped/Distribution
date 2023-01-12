@@ -83,7 +83,8 @@ object Typeofserial {
     __obj.asInstanceOf[Typeofserial]
   }
   
-  extension [Self <: Typeofserial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofserial] (val x: Self) extends AnyVal {
     
     inline def setClearBreak(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "clearBreak", js.Any.fromFunction2(value))
     

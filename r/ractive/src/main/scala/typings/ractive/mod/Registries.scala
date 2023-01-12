@@ -42,7 +42,8 @@ object Registries {
     __obj.asInstanceOf[Registries[T]]
   }
   
-  extension [Self <: Registries[?], T /* <: Ractive[T] */](x: Self & Registries[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Registries[?], T /* <: Ractive[T] */] (val x: Self & Registries[T]) extends AnyVal {
     
     inline def setAdaptors(value: Registry[Adaptor]): Self = StObject.set(x, "adaptors", value.asInstanceOf[js.Any])
     

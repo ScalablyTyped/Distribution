@@ -17,7 +17,8 @@ object Rate {
     __obj.asInstanceOf[Rate]
   }
   
-  extension [Self <: Rate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rate] (val x: Self) extends AnyVal {
     
     inline def setRate(value: Remaining): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     

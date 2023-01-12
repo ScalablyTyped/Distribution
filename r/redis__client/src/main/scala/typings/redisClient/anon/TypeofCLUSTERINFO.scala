@@ -24,7 +24,8 @@ object TypeofCLUSTERINFO {
     __obj.asInstanceOf[TypeofCLUSTERINFO]
   }
   
-  extension [Self <: TypeofCLUSTERINFO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLUSTERINFO] (val x: Self) extends AnyVal {
     
     inline def setExtractLineValue(value: String => String): Self = StObject.set(x, "extractLineValue", js.Any.fromFunction1(value))
     

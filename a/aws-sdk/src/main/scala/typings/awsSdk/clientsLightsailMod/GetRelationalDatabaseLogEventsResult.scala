@@ -28,7 +28,8 @@ object GetRelationalDatabaseLogEventsResult {
     __obj.asInstanceOf[GetRelationalDatabaseLogEventsResult]
   }
   
-  extension [Self <: GetRelationalDatabaseLogEventsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabaseLogEventsResult] (val x: Self) extends AnyVal {
     
     inline def setNextBackwardToken(value: String): Self = StObject.set(x, "nextBackwardToken", value.asInstanceOf[js.Any])
     

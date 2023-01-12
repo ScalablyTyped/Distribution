@@ -82,7 +82,8 @@ object BetterCurryModule {
       __obj.asInstanceOf[DelegateOptions]
     }
     
-    extension [Self <: DelegateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelegateOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

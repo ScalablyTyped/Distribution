@@ -24,7 +24,8 @@ object StylesheetCSS {
     __obj.asInstanceOf[StylesheetCSS]
   }
   
-  extension [Self <: StylesheetCSS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StylesheetCSS] (val x: Self) extends AnyVal {
     
     inline def setCss(value: Node | Edge | typings.cytoscape.mod.Css.Core): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     

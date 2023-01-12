@@ -27,7 +27,8 @@ object MgetOperation {
     __obj.asInstanceOf[MgetOperation]
   }
   
-  extension [Self <: MgetOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MgetOperation] (val x: Self) extends AnyVal {
     
     inline def setRouting(value: Routing): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
     

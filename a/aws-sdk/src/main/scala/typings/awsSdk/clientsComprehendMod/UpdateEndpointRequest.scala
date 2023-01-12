@@ -33,7 +33,8 @@ object UpdateEndpointRequest {
     __obj.asInstanceOf[UpdateEndpointRequest]
   }
   
-  extension [Self <: UpdateEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setDesiredDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DesiredDataAccessRoleArn", value.asInstanceOf[js.Any])
     

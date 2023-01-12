@@ -90,7 +90,8 @@ object AccessReviewInstanceDecisionItem {
     __obj.asInstanceOf[AccessReviewInstanceDecisionItem]
   }
   
-  extension [Self <: AccessReviewInstanceDecisionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewInstanceDecisionItem] (val x: Self) extends AnyVal {
     
     inline def setAccessReviewId(value: String): Self = StObject.set(x, "accessReviewId", value.asInstanceOf[js.Any])
     

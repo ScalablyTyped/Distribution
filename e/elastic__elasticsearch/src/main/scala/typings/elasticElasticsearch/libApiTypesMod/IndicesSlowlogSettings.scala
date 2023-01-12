@@ -21,7 +21,8 @@ object IndicesSlowlogSettings {
     __obj.asInstanceOf[IndicesSlowlogSettings]
   }
   
-  extension [Self <: IndicesSlowlogSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSlowlogSettings] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsWcMod extends Shortcut {
       __obj.asInstanceOf[WcProps]
     }
     
-    extension [Self <: WcProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WcProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

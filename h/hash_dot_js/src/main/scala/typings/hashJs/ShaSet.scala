@@ -39,7 +39,8 @@ object ShaSet {
     __obj.asInstanceOf[ShaSet]
   }
   
-  extension [Self <: ShaSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaSet] (val x: Self) extends AnyVal {
     
     inline def setSha1(value: () => Sha1): Self = StObject.set(x, "sha1", js.Any.fromFunction0(value))
     

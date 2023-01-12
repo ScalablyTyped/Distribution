@@ -74,7 +74,8 @@ object RecipientsChangedFields {
     __obj.asInstanceOf[RecipientsChangedFields]
   }
   
-  extension [Self <: RecipientsChangedFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientsChangedFields] (val x: Self) extends AnyVal {
     
     inline def setBcc(value: Boolean): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
     

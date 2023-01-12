@@ -179,7 +179,8 @@ object mod {
       __obj.asInstanceOf[ConversionData]
     }
     
-    extension [Self <: ConversionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversionData] (val x: Self) extends AnyVal {
       
       inline def setData(value: Dictkey): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -210,7 +211,8 @@ object mod {
       __obj.asInstanceOf[GenerateInviteLinkParams]
     }
     
-    extension [Self <: GenerateInviteLinkParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateInviteLinkParams] (val x: Self) extends AnyVal {
       
       inline def setCampaign(value: String): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
       
@@ -261,7 +263,8 @@ object mod {
       __obj.asInstanceOf[InAppPurchase]
     }
     
-    extension [Self <: InAppPurchase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InAppPurchase] (val x: Self) extends AnyVal {
       
       inline def setAdditionalParameters(value: js.Object): Self = StObject.set(x, "additionalParameters", value.asInstanceOf[js.Any])
       
@@ -308,7 +311,8 @@ object mod {
       __obj.asInstanceOf[InitSDKOptions]
     }
     
-    extension [Self <: InitSDKOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitSDKOptions] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -354,7 +358,8 @@ object mod {
       __obj.asInstanceOf[OnAppOpenAttributionData]
     }
     
-    extension [Self <: OnAppOpenAttributionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnAppOpenAttributionData] (val x: Self) extends AnyVal {
       
       inline def setData(value: Afadset): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -379,7 +384,8 @@ object mod {
       __obj.asInstanceOf[SetEmailsOptions]
     }
     
-    extension [Self <: SetEmailsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetEmailsOptions] (val x: Self) extends AnyVal {
       
       inline def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
       
@@ -418,7 +424,8 @@ object mod {
       __obj.asInstanceOf[UnifiedDeepLinkData]
     }
     
-    extension [Self <: UnifiedDeepLinkData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnifiedDeepLinkData] (val x: Self) extends AnyVal {
       
       inline def setData(value: Afsub1): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object typesTransportMod {
       __obj.asInstanceOf[BaseTransportOptions]
     }
     
-    extension [Self <: BaseTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesTransportMod {
       __obj.asInstanceOf[InternalBaseTransportOptions]
     }
     
-    extension [Self <: InternalBaseTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalBaseTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object typesTransportMod {
       __obj.asInstanceOf[TransportMakeRequestResponse]
     }
     
-    extension [Self <: TransportMakeRequestResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportMakeRequestResponse] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Dictkey): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object typesTransportMod {
       __obj.asInstanceOf[TransportRequest]
     }
     
-    extension [Self <: TransportRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportRequest] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }

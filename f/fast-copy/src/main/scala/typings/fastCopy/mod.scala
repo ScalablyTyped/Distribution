@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[Cache]
     }
     
-    extension [Self <: Cache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Any => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[CreateCopierOptions]
     }
     
-    extension [Self <: CreateCopierOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateCopierOptions] (val x: Self) extends AnyVal {
       
       inline def setArray(value: (js.Array[Any], /* state */ State) => js.Array[Any]): Self = StObject.set(x, "array", js.Any.fromFunction2(value))
       
@@ -149,7 +151,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Cache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

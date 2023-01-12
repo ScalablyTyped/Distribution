@@ -28,7 +28,8 @@ object AuditNotificationTarget {
     __obj.asInstanceOf[AuditNotificationTarget]
   }
   
-  extension [Self <: AuditNotificationTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditNotificationTarget] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Enabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

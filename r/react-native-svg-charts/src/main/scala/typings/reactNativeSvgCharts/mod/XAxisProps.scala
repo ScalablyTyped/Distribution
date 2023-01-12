@@ -20,7 +20,8 @@ object XAxisProps {
     __obj.asInstanceOf[XAxisProps[T]]
   }
   
-  extension [Self <: XAxisProps[?], T](x: Self & XAxisProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAxisProps[?], T] (val x: Self & XAxisProps[T]) extends AnyVal {
     
     inline def setContentInset(value: Left): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     

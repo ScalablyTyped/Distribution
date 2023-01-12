@@ -27,7 +27,8 @@ object libComponentsGroupedListGroupShowAllDottypesMod {
       __obj.asInstanceOf[IGroupShowAllProps]
     }
     
-    extension [Self <: IGroupShowAllProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupShowAllProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: IStyleFunctionOrObject[IGroupShowAllStyleProps, IGroupShowAllStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object libComponentsGroupedListGroupShowAllDottypesMod {
       __obj.asInstanceOf[IGroupShowAllStyleProps]
     }
     
-    extension [Self <: IGroupShowAllStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupShowAllStyleProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
@@ -66,7 +68,8 @@ object libComponentsGroupedListGroupShowAllDottypesMod {
       __obj.asInstanceOf[IGroupShowAllStyles]
     }
     
-    extension [Self <: IGroupShowAllStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupShowAllStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

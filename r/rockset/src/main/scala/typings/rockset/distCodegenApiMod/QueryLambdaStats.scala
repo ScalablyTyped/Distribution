@@ -41,7 +41,8 @@ object QueryLambdaStats {
     __obj.asInstanceOf[QueryLambdaStats]
   }
   
-  extension [Self <: QueryLambdaStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryLambdaStats] (val x: Self) extends AnyVal {
     
     inline def setLast_executed(value: String): Self = StObject.set(x, "last_executed", value.asInstanceOf[js.Any])
     

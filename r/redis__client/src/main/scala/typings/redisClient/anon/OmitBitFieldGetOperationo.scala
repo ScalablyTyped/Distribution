@@ -22,7 +22,8 @@ object OmitBitFieldGetOperationo {
     __obj.asInstanceOf[OmitBitFieldGetOperationo]
   }
   
-  extension [Self <: OmitBitFieldGetOperationo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitBitFieldGetOperationo] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: BitFieldEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

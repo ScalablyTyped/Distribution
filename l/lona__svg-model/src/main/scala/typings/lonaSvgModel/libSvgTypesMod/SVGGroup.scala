@@ -26,7 +26,8 @@ object SVGGroup {
     __obj.asInstanceOf[SVGGroup]
   }
   
-  extension [Self <: SVGGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGGroup] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: SVGBaseAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

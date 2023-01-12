@@ -32,7 +32,8 @@ object Table {
     __obj.asInstanceOf[Table]
   }
   
-  extension [Self <: Table](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     inline def setEncode(value: () => js.Array[Double]): Self = StObject.set(x, "encode", js.Any.fromFunction0(value))
     

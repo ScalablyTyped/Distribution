@@ -19,7 +19,8 @@ object DiagramConnectionEndCap {
     __obj.asInstanceOf[DiagramConnectionEndCap]
   }
   
-  extension [Self <: DiagramConnectionEndCap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramConnectionEndCap] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String | DiagramConnectionEndCapFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

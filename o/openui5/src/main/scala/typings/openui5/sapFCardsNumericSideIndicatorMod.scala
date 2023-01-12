@@ -256,7 +256,8 @@ object sapFCardsNumericSideIndicatorMod {
       __obj.asInstanceOf[NumericSideIndicatorSettings]
     }
     
-    extension [Self <: NumericSideIndicatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumericSideIndicatorSettings] (val x: Self) extends AnyVal {
       
       inline def setNumber(value: String | PropertyBindingInfo): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       

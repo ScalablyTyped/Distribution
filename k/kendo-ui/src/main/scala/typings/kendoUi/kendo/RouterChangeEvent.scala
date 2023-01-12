@@ -26,7 +26,8 @@ object RouterChangeEvent {
     __obj.asInstanceOf[RouterChangeEvent]
   }
   
-  extension [Self <: RouterChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setBackButtonPressed(value: Boolean): Self = StObject.set(x, "backButtonPressed", value.asInstanceOf[js.Any])
     

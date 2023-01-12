@@ -118,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Babel]
     }
     
-    extension [Self <: Babel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Babel] (val x: Self) extends AnyVal {
       
       inline def setBabel(
         value: (/* content */ String, /* filePath */ String, /* deps */ js.Array[String], /* rootDir */ String) => Node
@@ -248,7 +249,8 @@ object anon {
       __obj.asInstanceOf[Coffee]
     }
     
-    extension [Self <: Coffee](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coffee] (val x: Self) extends AnyVal {
       
       inline def setCoffee(
         value: (/* content */ String, /* filePath */ String, /* deps */ js.Array[String], /* rootDir */ String) => Node
@@ -301,7 +303,8 @@ object anon {
       __obj.asInstanceOf[Dependencies]
     }
     
-    extension [Self <: Dependencies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dependencies] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: PackageDependencies): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -381,7 +384,8 @@ object anon {
       __obj.asInstanceOf[ExportDeclaration]
     }
     
-    extension [Self <: ExportDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportDeclaration] (val x: Self) extends AnyVal {
       
       inline def setExportDeclaration(value: /* node */ Node => js.Array[String] | String): Self = StObject.set(x, "exportDeclaration", js.Any.fromFunction1(value))
       

@@ -67,7 +67,8 @@ object distAgiliteInterfaceMod {
       __obj.asInstanceOf[AppNameInterface]
     }
     
-    extension [Self <: AppNameInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppNameInterface] (val x: Self) extends AnyVal {
       
       inline def setMODULE_KEY_ADMIN_SOLUTIONS(value: String): Self = StObject.set(x, "MODULE_KEY_ADMIN_SOLUTIONS", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object distAgiliteInterfaceMod {
       __obj.asInstanceOf[ConfigInterface]
     }
     
-    extension [Self <: ConfigInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigInterface] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object distAgiliteInterfaceMod {
       __obj.asInstanceOf[ReqTypeInterface]
     }
     
-    extension [Self <: ReqTypeInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReqTypeInterface] (val x: Self) extends AnyVal {
       
       inline def setDELETE(value: String): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DescribePatchGroupsResult {
     __obj.asInstanceOf[DescribePatchGroupsResult]
   }
   
-  extension [Self <: DescribePatchGroupsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePatchGroupsResult] (val x: Self) extends AnyVal {
     
     inline def setMappings(value: PatchGroupPatchBaselineMappingList): Self = StObject.set(x, "Mappings", value.asInstanceOf[js.Any])
     

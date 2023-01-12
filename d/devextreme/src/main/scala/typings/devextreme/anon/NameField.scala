@@ -24,7 +24,8 @@ object NameField {
     __obj.asInstanceOf[NameField]
   }
   
-  extension [Self <: NameField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameField] (val x: Self) extends AnyVal {
     
     inline def setCustomizeSeries(value: /* seriesName */ Any => PieChartSeries): Self = StObject.set(x, "customizeSeries", js.Any.fromFunction1(value))
     

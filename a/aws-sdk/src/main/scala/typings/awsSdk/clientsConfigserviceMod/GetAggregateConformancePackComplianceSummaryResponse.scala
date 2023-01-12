@@ -28,7 +28,8 @@ object GetAggregateConformancePackComplianceSummaryResponse {
     __obj.asInstanceOf[GetAggregateConformancePackComplianceSummaryResponse]
   }
   
-  extension [Self <: GetAggregateConformancePackComplianceSummaryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAggregateConformancePackComplianceSummaryResponse] (val x: Self) extends AnyVal {
     
     inline def setAggregateConformancePackComplianceSummaries(value: AggregateConformancePackComplianceSummaryList): Self = StObject.set(x, "AggregateConformancePackComplianceSummaries", value.asInstanceOf[js.Any])
     

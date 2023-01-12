@@ -33,7 +33,8 @@ object ListBackendEnvironmentsRequest {
     __obj.asInstanceOf[ListBackendEnvironmentsRequest]
   }
   
-  extension [Self <: ListBackendEnvironmentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBackendEnvironmentsRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

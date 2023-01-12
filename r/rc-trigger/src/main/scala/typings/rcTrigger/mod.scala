@@ -146,7 +146,8 @@ object mod {
       __obj.asInstanceOf[TriggerProps]
     }
     
-    extension [Self <: TriggerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriggerProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ActionType | js.Array[ActionType]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

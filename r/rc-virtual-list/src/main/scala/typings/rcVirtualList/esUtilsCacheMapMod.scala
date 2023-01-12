@@ -39,7 +39,8 @@ object esUtilsCacheMapMod {
       __obj.asInstanceOf[CacheMap]
     }
     
-    extension [Self <: CacheMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheMap] (val x: Self) extends AnyVal {
       
       inline def setGet(value: ReactText => Double): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

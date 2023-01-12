@@ -15,7 +15,8 @@ object Privacy {
     __obj.asInstanceOf[Privacy]
   }
   
-  extension [Self <: Privacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Privacy] (val x: Self) extends AnyVal {
     
     inline def setSubjectRightsRequests(value: NullableOption[js.Array[SubjectRightsRequest]]): Self = StObject.set(x, "subjectRightsRequests", value.asInstanceOf[js.Any])
     

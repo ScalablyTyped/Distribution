@@ -98,7 +98,8 @@ object Stage {
     __obj.asInstanceOf[Stage]
   }
   
-  extension [Self <: Stage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stage] (val x: Self) extends AnyVal {
     
     inline def setAccessLogSettings(value: AccessLogSettings): Self = StObject.set(x, "accessLogSettings", value.asInstanceOf[js.Any])
     

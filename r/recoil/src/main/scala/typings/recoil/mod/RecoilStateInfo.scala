@@ -37,7 +37,8 @@ object RecoilStateInfo {
     __obj.asInstanceOf[RecoilStateInfo[T]]
   }
   
-  extension [Self <: RecoilStateInfo[?], T](x: Self & RecoilStateInfo[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoilStateInfo[?], T] (val x: Self & RecoilStateInfo[T]) extends AnyVal {
     
     inline def setDeps(value: js.Iterable[RecoilValue[T]]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

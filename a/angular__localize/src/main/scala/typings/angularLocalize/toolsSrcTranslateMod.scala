@@ -110,7 +110,8 @@ object toolsSrcTranslateMod {
       __obj.asInstanceOf[TranslateFilesOptions]
     }
     
-    extension [Self <: TranslateFilesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslateFilesOptions] (val x: Self) extends AnyVal {
       
       inline def setDiagnostics(value: Diagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
       

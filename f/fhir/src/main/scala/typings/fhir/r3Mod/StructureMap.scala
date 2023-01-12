@@ -144,7 +144,8 @@ object StructureMap {
     __obj.asInstanceOf[StructureMap]
   }
   
-  extension [Self <: StructureMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureMap] (val x: Self) extends AnyVal {
     
     inline def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

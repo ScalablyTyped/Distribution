@@ -38,7 +38,8 @@ object CstNode {
     __obj.asInstanceOf[CstNode]
   }
   
-  extension [Self <: CstNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CstNode] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: CstChildrenDictionary): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

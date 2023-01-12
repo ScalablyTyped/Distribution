@@ -39,7 +39,8 @@ object IEditActorCellContext {
     __obj.asInstanceOf[IEditActorCellContext]
   }
   
-  extension [Self <: IEditActorCellContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditActorCellContext] (val x: Self) extends AnyVal {
     
     inline def setCellExpandSpace(value: Bottom): Self = StObject.set(x, "cellExpandSpace", value.asInstanceOf[js.Any])
     

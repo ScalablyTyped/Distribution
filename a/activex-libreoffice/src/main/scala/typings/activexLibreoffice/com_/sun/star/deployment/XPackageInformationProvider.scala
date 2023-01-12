@@ -41,7 +41,8 @@ object XPackageInformationProvider {
     __obj.asInstanceOf[XPackageInformationProvider]
   }
   
-  extension [Self <: XPackageInformationProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPackageInformationProvider] (val x: Self) extends AnyVal {
     
     inline def setExtensionList(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "ExtensionList", value.asInstanceOf[js.Any])
     

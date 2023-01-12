@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[DecodeUtf16]
     }
     
-    extension [Self <: DecodeUtf16](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeUtf16] (val x: Self) extends AnyVal {
       
       inline def setDecodeUtf16(value: (Any, Any) => Any): Self = StObject.set(x, "decodeUtf16", js.Any.fromFunction2(value))
       
@@ -112,7 +113,8 @@ object anon {
       __obj.asInstanceOf[IsDecimalDigit]
     }
     
-    extension [Self <: IsDecimalDigit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsDecimalDigit] (val x: Self) extends AnyVal {
       
       inline def setIsDecimalDigit(value: Any => Boolean): Self = StObject.set(x, "isDecimalDigit", js.Any.fromFunction1(value))
       
@@ -162,7 +164,8 @@ object anon {
       __obj.asInstanceOf[IsExpression]
     }
     
-    extension [Self <: IsExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsExpression] (val x: Self) extends AnyVal {
       
       inline def setIsExpression(value: Any => Boolean): Self = StObject.set(x, "isExpression", js.Any.fromFunction1(value))
       

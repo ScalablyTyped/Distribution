@@ -79,7 +79,8 @@ object SPClientAutoFill {
     __obj.asInstanceOf[SPClientAutoFill]
   }
   
-  extension [Self <: SPClientAutoFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SPClientAutoFill] (val x: Self) extends AnyVal {
     
     inline def setAllOptionData(value: StringDictionary[ISPClientAutoFillData]): Self = StObject.set(x, "AllOptionData", value.asInstanceOf[js.Any])
     

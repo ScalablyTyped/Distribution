@@ -16,7 +16,8 @@ object PutRequestBodyContent312 {
     __obj.asInstanceOf[PutRequestBodyContent312]
   }
   
-  extension [Self <: PutRequestBodyContent312](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRequestBodyContent312] (val x: Self) extends AnyVal {
     
     inline def setPut(value: RequestBodyContent312): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }

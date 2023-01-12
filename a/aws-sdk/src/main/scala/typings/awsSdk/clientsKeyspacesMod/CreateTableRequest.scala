@@ -63,7 +63,8 @@ object CreateTableRequest {
     __obj.asInstanceOf[CreateTableRequest]
   }
   
-  extension [Self <: CreateTableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTableRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacitySpecification(value: CapacitySpecification): Self = StObject.set(x, "capacitySpecification", value.asInstanceOf[js.Any])
     

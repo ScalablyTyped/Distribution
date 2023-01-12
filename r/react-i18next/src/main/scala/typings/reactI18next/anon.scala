@@ -60,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Children[K, N, TKPrefix]]
     }
     
-    extension [Self <: Children[?, ?, ?], K /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<N, TKPrefix, i18next.i18next.Resources> extends infer A ? A : never */ js.Any */, N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix](x: Self & (Children[K, N, TKPrefix])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children[?, ?, ?], K /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<N, TKPrefix, i18next.i18next.Resources> extends infer A ? A : never */ js.Any */, N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix] (val x: Self & (Children[K, N, TKPrefix])) extends AnyVal {
       
       inline def setChildren(value: TransChild | js.Array[TransChild]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object anon {
       __obj.asInstanceOf[I18n[N, TKPrefix]]
     }
     
-    extension [Self <: I18n[?, ?], N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix](x: Self & (I18n[N, TKPrefix])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18n[?, ?], N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix] (val x: Self & (I18n[N, TKPrefix])) extends AnyVal {
       
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object anon {
       __obj.asInstanceOf[I18nI18n]
     }
     
-    extension [Self <: I18nI18n](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18nI18n] (val x: Self) extends AnyVal {
       
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     }
@@ -179,7 +182,8 @@ object anon {
       __obj.asInstanceOf[InitialI18nStore]
     }
     
-    extension [Self <: InitialI18nStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialI18nStore] (val x: Self) extends AnyVal {
       
       inline def setInitialI18nStore(value: StringDictionary[js.Object]): Self = StObject.set(x, "initialI18nStore", value.asInstanceOf[js.Any])
       
@@ -200,7 +204,8 @@ object anon {
       __obj.asInstanceOf[InitialLanguage]
     }
     
-    extension [Self <: InitialLanguage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialLanguage] (val x: Self) extends AnyVal {
       
       inline def setInitialI18nStore(value: Resource): Self = StObject.set(x, "initialI18nStore", value.asInstanceOf[js.Any])
       
@@ -221,7 +226,8 @@ object anon {
       __obj.asInstanceOf[KeyPrefix[TKPrefix, N]]
     }
     
-    extension [Self <: KeyPrefix[?, ?], TKPrefix /* <: typings.i18next.mod.KeyPrefix[N] */, N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](x: Self & (KeyPrefix[TKPrefix, N])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPrefix[?, ?], TKPrefix /* <: typings.i18next.mod.KeyPrefix[N] */, N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */] (val x: Self & (KeyPrefix[TKPrefix, N])) extends AnyVal {
       
       inline def setKeyPrefix(value: TKPrefix): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
       
@@ -246,7 +252,8 @@ object anon {
       __obj.asInstanceOf[Lng]
     }
     
-    extension [Self <: Lng](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lng] (val x: Self) extends AnyVal {
       
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       

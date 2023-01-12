@@ -27,7 +27,8 @@ object DateOptions {
     __obj.asInstanceOf[DateOptions]
   }
   
-  extension [Self <: DateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateOptions] (val x: Self) extends AnyVal {
     
     inline def setAmerican(value: Boolean): Self = StObject.set(x, "american", value.asInstanceOf[js.Any])
     

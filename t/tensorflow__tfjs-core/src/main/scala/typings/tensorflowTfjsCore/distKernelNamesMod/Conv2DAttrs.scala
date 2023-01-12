@@ -36,7 +36,8 @@ object Conv2DAttrs {
     __obj.asInstanceOf[Conv2DAttrs]
   }
   
-  extension [Self <: Conv2DAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conv2DAttrs] (val x: Self) extends AnyVal {
     
     inline def setDataFormat(value: NHWC | NCHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     

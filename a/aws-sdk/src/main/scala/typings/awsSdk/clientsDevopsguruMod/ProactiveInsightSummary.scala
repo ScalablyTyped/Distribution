@@ -49,7 +49,8 @@ object ProactiveInsightSummary {
     __obj.asInstanceOf[ProactiveInsightSummary]
   }
   
-  extension [Self <: ProactiveInsightSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProactiveInsightSummary] (val x: Self) extends AnyVal {
     
     inline def setAssociatedResourceArns(value: AssociatedResourceArns): Self = StObject.set(x, "AssociatedResourceArns", value.asInstanceOf[js.Any])
     

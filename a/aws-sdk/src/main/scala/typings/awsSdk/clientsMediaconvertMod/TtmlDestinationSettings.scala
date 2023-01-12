@@ -18,7 +18,8 @@ object TtmlDestinationSettings {
     __obj.asInstanceOf[TtmlDestinationSettings]
   }
   
-  extension [Self <: TtmlDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TtmlDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setStylePassthrough(value: TtmlStylePassthrough): Self = StObject.set(x, "StylePassthrough", value.asInstanceOf[js.Any])
     

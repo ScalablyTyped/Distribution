@@ -23,7 +23,8 @@ object typesEventsRequestMod {
       __obj.asInstanceOf[EventsRequest]
     }
     
-    extension [Self <: EventsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventsRequest] (val x: Self) extends AnyVal {
       
       inline def setBatchItem(value: StringDictionary[EventsBatch] | (js.Iterable[js.Tuple2[String, EventsBatch]])): Self = StObject.set(x, "BatchItem", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object typesEventsRequestMod {
       __obj.asInstanceOf[UnmarshalledEventsRequest]
     }
     
-    extension [Self <: UnmarshalledEventsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEventsRequest] (val x: Self) extends AnyVal {
       
       inline def setBatchItem(value: StringDictionary[UnmarshalledEventsBatch]): Self = StObject.set(x, "BatchItem", value.asInstanceOf[js.Any])
       

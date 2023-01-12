@@ -28,7 +28,8 @@ object ScannedItemCount {
     __obj.asInstanceOf[ScannedItemCount]
   }
   
-  extension [Self <: ScannedItemCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScannedItemCount] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: Integer): Self = StObject.set(x, "Files", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object WatcherPagerDutyEventProxy {
     __obj.asInstanceOf[WatcherPagerDutyEventProxy]
   }
   
-  extension [Self <: WatcherPagerDutyEventProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherPagerDutyEventProxy] (val x: Self) extends AnyVal {
     
     inline def setHost(value: Host): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

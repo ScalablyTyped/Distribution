@@ -32,7 +32,8 @@ object ContentHookProps {
     __obj.asInstanceOf[ContentHookProps[HookProps]]
   }
   
-  extension [Self <: ContentHookProps[?], HookProps](x: Self & ContentHookProps[HookProps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentHookProps[?], HookProps] (val x: Self & ContentHookProps[HookProps]) extends AnyVal {
     
     inline def setBackupElRef(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RefObject<any> */ Any

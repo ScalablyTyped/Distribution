@@ -52,7 +52,8 @@ object CommsModule {
     __obj.asInstanceOf[CommsModule]
   }
   
-  extension [Self <: CommsModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommsModule] (val x: Self) extends AnyVal {
     
     inline def setAddConnection(value: Client => js.Promise[Unit]): Self = StObject.set(x, "addConnection", js.Any.fromFunction1(value))
     

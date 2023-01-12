@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[ExtractOptions]
     }
     
-    extension [Self <: ExtractOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: (/* name */ String, /* header */ js.UndefOr[Headers]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDmode(value: Double): Self = StObject.set(x, "dmode", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object mod {
       __obj.asInstanceOf[PackOptions]
     }
     
-    extension [Self <: PackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackOptions] (val x: Self) extends AnyVal {
       
       inline def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object libSrcMockFxSystemMod {
       __obj.asInstanceOf[SSLCertificate]
     }
     
-    extension [Self <: SSLCertificate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSLCertificate] (val x: Self) extends AnyVal {
       
       inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object PartialCsvReadOptions {
     __obj.asInstanceOf[PartialCsvReadOptions]
   }
   
-  extension [Self <: PartialCsvReadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCsvReadOptions] (val x: Self) extends AnyVal {
     
     inline def setDateFormats(value: js.Array[String]): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
     

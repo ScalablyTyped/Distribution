@@ -34,7 +34,8 @@ object ElementDefinitionBase {
     __obj.asInstanceOf[ElementDefinitionBase]
   }
   
-  extension [Self <: ElementDefinitionBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementDefinitionBase] (val x: Self) extends AnyVal {
     
     inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

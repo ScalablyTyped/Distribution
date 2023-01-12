@@ -93,7 +93,8 @@ object SpreadsheetOptions {
     __obj.asInstanceOf[SpreadsheetOptions]
   }
   
-  extension [Self <: SpreadsheetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveSheet(value: String): Self = StObject.set(x, "activeSheet", value.asInstanceOf[js.Any])
     

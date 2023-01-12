@@ -49,7 +49,8 @@ object IMsoDownBars {
     __obj.asInstanceOf[IMsoDownBars]
   }
   
-  extension [Self <: IMsoDownBars](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMsoDownBars] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

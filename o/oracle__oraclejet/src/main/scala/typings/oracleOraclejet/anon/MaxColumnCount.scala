@@ -17,7 +17,8 @@ object MaxColumnCount {
     __obj.asInstanceOf[MaxColumnCount]
   }
   
-  extension [Self <: MaxColumnCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxColumnCount] (val x: Self) extends AnyVal {
     
     inline def setMaxColumnCount(value: Double): Self = StObject.set(x, "maxColumnCount", value.asInstanceOf[js.Any])
     

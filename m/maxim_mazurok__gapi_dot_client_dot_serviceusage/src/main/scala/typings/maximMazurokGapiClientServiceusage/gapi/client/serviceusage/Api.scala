@@ -41,7 +41,8 @@ object Api {
     __obj.asInstanceOf[Api]
   }
   
-  extension [Self <: Api](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
     
     inline def setMethods(value: js.Array[Method]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     

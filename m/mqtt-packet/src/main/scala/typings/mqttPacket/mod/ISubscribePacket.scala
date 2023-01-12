@@ -25,7 +25,8 @@ object ISubscribePacket {
     __obj.asInstanceOf[ISubscribePacket]
   }
   
-  extension [Self <: ISubscribePacket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISubscribePacket] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: subscribe): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

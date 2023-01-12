@@ -23,7 +23,8 @@ object FeaturizationMethod {
     __obj.asInstanceOf[FeaturizationMethod]
   }
   
-  extension [Self <: FeaturizationMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeaturizationMethod] (val x: Self) extends AnyVal {
     
     inline def setFeaturizationMethodName(value: FeaturizationMethodName): Self = StObject.set(x, "FeaturizationMethodName", value.asInstanceOf[js.Any])
     

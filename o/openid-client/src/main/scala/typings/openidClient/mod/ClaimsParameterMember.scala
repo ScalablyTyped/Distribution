@@ -22,7 +22,8 @@ object ClaimsParameterMember {
     __obj.asInstanceOf[ClaimsParameterMember]
   }
   
-  extension [Self <: ClaimsParameterMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimsParameterMember] (val x: Self) extends AnyVal {
     
     inline def setEssential(value: Boolean): Self = StObject.set(x, "essential", value.asInstanceOf[js.Any])
     

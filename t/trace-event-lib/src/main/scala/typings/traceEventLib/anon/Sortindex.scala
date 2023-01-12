@@ -19,7 +19,8 @@ object Sortindex {
     __obj.asInstanceOf[Sortindex]
   }
   
-  extension [Self <: Sortindex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sortindex] (val x: Self) extends AnyVal {
     
     inline def setSort_index(value: Double): Self = StObject.set(x, "sort_index", value.asInstanceOf[js.Any])
   }

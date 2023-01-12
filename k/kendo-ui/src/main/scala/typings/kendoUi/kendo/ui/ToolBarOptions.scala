@@ -31,7 +31,8 @@ object ToolBarOptions {
     __obj.asInstanceOf[ToolBarOptions]
   }
   
-  extension [Self <: ToolBarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolBarOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: /* e */ ToolBarClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     

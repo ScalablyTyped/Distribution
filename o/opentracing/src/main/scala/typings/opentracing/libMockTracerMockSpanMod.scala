@@ -70,7 +70,8 @@ object libMockTracerMockSpanMod {
       __obj.asInstanceOf[DebugInfo]
     }
     
-    extension [Self <: DebugInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugInfo] (val x: Self) extends AnyVal {
       
       inline def setMillis(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "millis", value.asInstanceOf[js.Any])
       

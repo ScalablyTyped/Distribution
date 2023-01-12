@@ -19,7 +19,8 @@ object SVGFitToViewBox {
     __obj.asInstanceOf[SVGFitToViewBox]
   }
   
-  extension [Self <: SVGFitToViewBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGFitToViewBox] (val x: Self) extends AnyVal {
     
     inline def setPreserveAspectRatio(value: SVGAnimatedPreserveAspectRatio): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
     

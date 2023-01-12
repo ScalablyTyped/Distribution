@@ -21,7 +21,8 @@ object CpuCacheData {
     __obj.asInstanceOf[CpuCacheData]
   }
   
-  extension [Self <: CpuCacheData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CpuCacheData] (val x: Self) extends AnyVal {
     
     inline def setL1d(value: Double): Self = StObject.set(x, "l1d", value.asInstanceOf[js.Any])
     

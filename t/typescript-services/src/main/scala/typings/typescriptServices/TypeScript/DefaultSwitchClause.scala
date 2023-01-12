@@ -41,7 +41,8 @@ object DefaultSwitchClause {
     __obj.asInstanceOf[DefaultSwitchClause]
   }
   
-  extension [Self <: DefaultSwitchClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultSwitchClause] (val x: Self) extends AnyVal {
     
     inline def setStatements(value: ISyntaxList2): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     

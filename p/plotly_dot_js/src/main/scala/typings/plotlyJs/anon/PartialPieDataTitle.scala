@@ -29,7 +29,8 @@ object PartialPieDataTitle {
     __obj.asInstanceOf[PartialPieDataTitle]
   }
   
-  extension [Self <: PartialPieDataTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPieDataTitle] (val x: Self) extends AnyVal {
     
     inline def setFont(value: PartialPieFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

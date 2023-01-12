@@ -29,7 +29,8 @@ object distCommandsSugaddMod {
       __obj.asInstanceOf[SugAddOptions]
     }
     
-    extension [Self <: SugAddOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SugAddOptions] (val x: Self) extends AnyVal {
       
       inline def setINCR(value: `true`): Self = StObject.set(x, "INCR", value.asInstanceOf[js.Any])
       

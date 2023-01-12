@@ -110,7 +110,8 @@ object Configuration {
     __obj.asInstanceOf[Configuration]
   }
   
-  extension [Self <: Configuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
     
     inline def setBrowserRevision(value: String): Self = StObject.set(x, "browserRevision", value.asInstanceOf[js.Any])
     

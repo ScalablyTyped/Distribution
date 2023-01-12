@@ -201,7 +201,8 @@ object mod {
       __obj.asInstanceOf[WorkerPoolOptions]
     }
     
-    extension [Self <: WorkerPoolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerPoolOptions] (val x: Self) extends AnyVal {
       
       inline def setForkArgs(value: js.Array[String]): Self = StObject.set(x, "forkArgs", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object mod {
       __obj.asInstanceOf[WorkerPoolStats]
     }
     
-    extension [Self <: WorkerPoolStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerPoolStats] (val x: Self) extends AnyVal {
       
       inline def setActiveTasks(value: Double): Self = StObject.set(x, "activeTasks", value.asInstanceOf[js.Any])
       

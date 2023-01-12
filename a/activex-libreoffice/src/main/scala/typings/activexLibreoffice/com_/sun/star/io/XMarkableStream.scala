@@ -57,7 +57,8 @@ object XMarkableStream {
     __obj.asInstanceOf[XMarkableStream]
   }
   
-  extension [Self <: XMarkableStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMarkableStream] (val x: Self) extends AnyVal {
     
     inline def setCreateMark(value: () => Double): Self = StObject.set(x, "createMark", js.Any.fromFunction0(value))
     

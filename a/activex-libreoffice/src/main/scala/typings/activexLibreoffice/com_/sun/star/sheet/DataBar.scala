@@ -65,7 +65,8 @@ object DataBar {
     __obj.asInstanceOf[DataBar]
   }
   
-  extension [Self <: DataBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataBar] (val x: Self) extends AnyVal {
     
     inline def setAxisColor(value: Color): Self = StObject.set(x, "AxisColor", value.asInstanceOf[js.Any])
     

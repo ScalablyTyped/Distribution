@@ -25,7 +25,8 @@ object TokenOutputProps {
     __obj.asInstanceOf[TokenOutputProps]
   }
   
-  extension [Self <: TokenOutputProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenOutputProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

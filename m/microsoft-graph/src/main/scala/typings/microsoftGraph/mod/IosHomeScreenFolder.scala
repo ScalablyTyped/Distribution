@@ -21,7 +21,8 @@ object IosHomeScreenFolder {
     __obj.asInstanceOf[IosHomeScreenFolder]
   }
   
-  extension [Self <: IosHomeScreenFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosHomeScreenFolder] (val x: Self) extends AnyVal {
     
     inline def setPages(value: js.Array[IosHomeScreenFolderPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     

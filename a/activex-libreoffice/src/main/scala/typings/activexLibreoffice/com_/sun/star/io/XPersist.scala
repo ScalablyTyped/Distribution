@@ -30,7 +30,8 @@ object XPersist {
     __obj.asInstanceOf[XPersist]
   }
   
-  extension [Self <: XPersist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPersist] (val x: Self) extends AnyVal {
     
     inline def setRead(value: String => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     

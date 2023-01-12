@@ -26,7 +26,8 @@ object MlTrainedModelStats {
     __obj.asInstanceOf[MlTrainedModelStats]
   }
   
-  extension [Self <: MlTrainedModelStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelStats] (val x: Self) extends AnyVal {
     
     inline def setDeployment_stats(value: MlTrainedModelDeploymentStats): Self = StObject.set(x, "deployment_stats", value.asInstanceOf[js.Any])
     

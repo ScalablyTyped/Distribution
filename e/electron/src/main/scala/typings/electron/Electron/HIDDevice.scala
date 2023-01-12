@@ -45,7 +45,8 @@ object HIDDevice {
     __obj.asInstanceOf[HIDDevice]
   }
   
-  extension [Self <: HIDDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HIDDevice] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

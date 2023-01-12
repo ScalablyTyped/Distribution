@@ -18,7 +18,8 @@ object DetailsMap {
     __obj.asInstanceOf[DetailsMap]
   }
   
-  extension [Self <: DetailsMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailsMap] (val x: Self) extends AnyVal {
     
     inline def setResourceShare(value: ResourceShareList): Self = StObject.set(x, "ResourceShare", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object Block {
     __obj.asInstanceOf[Block]
   }
   
-  extension [Self <: Block](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
     
     inline def setCloseBraceLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "closeBraceLeadingComments", value.asInstanceOf[js.Any])
     

@@ -145,7 +145,8 @@ object Authorizationsurl {
     __obj.asInstanceOf[Authorizationsurl]
   }
   
-  extension [Self <: Authorizationsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Authorizationsurl] (val x: Self) extends AnyVal {
     
     inline def setAuthorizations_url(value: String): Self = StObject.set(x, "authorizations_url", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object VoronoiPoint {
     __obj.asInstanceOf[VoronoiPoint]
   }
   
-  extension [Self <: VoronoiPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoronoiPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PureAction {
     __obj.asInstanceOf[PureAction[TContext, TEvent]]
   }
   
-  extension [Self <: PureAction[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (PureAction[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PureAction[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (PureAction[TContext, TEvent])) extends AnyVal {
     
     inline def setGet(value: (TContext, TEvent) => js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     

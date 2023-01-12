@@ -800,7 +800,8 @@ object AddAssignees {
     __obj.asInstanceOf[AddAssignees]
   }
   
-  extension [Self <: AddAssignees](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddAssignees] (val x: Self) extends AnyVal {
     
     inline def setAddAssignees(value: `311`): Self = StObject.set(x, "addAssignees", value.asInstanceOf[js.Any])
     

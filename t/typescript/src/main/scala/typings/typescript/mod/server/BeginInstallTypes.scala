@@ -24,7 +24,8 @@ object BeginInstallTypes {
     __obj.asInstanceOf[BeginInstallTypes]
   }
   
-  extension [Self <: BeginInstallTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeginInstallTypes] (val x: Self) extends AnyVal {
     
     inline def setKind(value: EventBeginInstallTypes): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

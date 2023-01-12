@@ -34,7 +34,8 @@ object PKCS8Info {
     __obj.asInstanceOf[PKCS8Info]
   }
   
-  extension [Self <: PKCS8Info](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PKCS8Info] (val x: Self) extends AnyVal {
     
     inline def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     

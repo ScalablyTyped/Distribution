@@ -19,7 +19,8 @@ object ReconfigureTrustRequest {
     __obj.asInstanceOf[ReconfigureTrustRequest]
   }
   
-  extension [Self <: ReconfigureTrustRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReconfigureTrustRequest] (val x: Self) extends AnyVal {
     
     inline def setTargetDnsIpAddresses(value: js.Array[String]): Self = StObject.set(x, "targetDnsIpAddresses", value.asInstanceOf[js.Any])
     

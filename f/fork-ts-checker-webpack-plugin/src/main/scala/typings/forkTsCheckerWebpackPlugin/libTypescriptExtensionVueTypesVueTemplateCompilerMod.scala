@@ -38,7 +38,8 @@ object libTypescriptExtensionVueTypesVueTemplateCompilerMod {
       __obj.asInstanceOf[SFCBlockV2]
     }
     
-    extension [Self <: SFCBlockV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFCBlockV2] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Record[String, String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object libTypescriptExtensionVueTypesVueTemplateCompilerMod {
       __obj.asInstanceOf[SFCDescriptorV2]
     }
     
-    extension [Self <: SFCDescriptorV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFCDescriptorV2] (val x: Self) extends AnyVal {
       
       inline def setCustomBlocks(value: js.Array[SFCBlockV2]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object libTypescriptExtensionVueTypesVueTemplateCompilerMod {
       __obj.asInstanceOf[SFCParserOptionsV2]
     }
     
-    extension [Self <: SFCParserOptionsV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFCParserOptionsV2] (val x: Self) extends AnyVal {
       
       inline def setPad(value: `true` | line | space): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
       

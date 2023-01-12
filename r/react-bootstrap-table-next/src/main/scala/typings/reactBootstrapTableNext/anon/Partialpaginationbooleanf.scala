@@ -24,7 +24,8 @@ object Partialpaginationbooleanf {
     __obj.asInstanceOf[Partialpaginationbooleanf]
   }
   
-  extension [Self <: Partialpaginationbooleanf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialpaginationbooleanf] (val x: Self) extends AnyVal {
     
     inline def setCellEdit(value: Boolean): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
     

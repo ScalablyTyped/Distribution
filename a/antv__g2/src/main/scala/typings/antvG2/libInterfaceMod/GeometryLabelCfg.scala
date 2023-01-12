@@ -124,7 +124,8 @@ object GeometryLabelCfg {
     __obj.asInstanceOf[GeometryLabelCfg]
   }
   
-  extension [Self <: GeometryLabelCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryLabelCfg] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: AnimateOption | `false`): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

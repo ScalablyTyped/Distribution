@@ -20,7 +20,8 @@ object SegmentIntegration {
     __obj.asInstanceOf[SegmentIntegration]
   }
   
-  extension [Self <: SegmentIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentIntegration] (val x: Self) extends AnyVal {
     
     inline def setConnection_string(value: String): Self = StObject.set(x, "connection_string", value.asInstanceOf[js.Any])
     

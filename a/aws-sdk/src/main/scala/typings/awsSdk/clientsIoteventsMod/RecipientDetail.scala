@@ -18,7 +18,8 @@ object RecipientDetail {
     __obj.asInstanceOf[RecipientDetail]
   }
   
-  extension [Self <: RecipientDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientDetail] (val x: Self) extends AnyVal {
     
     inline def setSsoIdentity(value: SSOIdentity): Self = StObject.set(x, "ssoIdentity", value.asInstanceOf[js.Any])
     

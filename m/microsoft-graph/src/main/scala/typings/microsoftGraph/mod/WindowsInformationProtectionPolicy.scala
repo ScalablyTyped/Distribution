@@ -82,7 +82,8 @@ object WindowsInformationProtectionPolicy {
     __obj.asInstanceOf[WindowsInformationProtectionPolicy]
   }
   
-  extension [Self <: WindowsInformationProtectionPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsInformationProtectionPolicy] (val x: Self) extends AnyVal {
     
     inline def setDaysWithoutContactBeforeUnenroll(value: Double): Self = StObject.set(x, "daysWithoutContactBeforeUnenroll", value.asInstanceOf[js.Any])
     

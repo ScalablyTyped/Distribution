@@ -21,7 +21,8 @@ object PagedObjectsResponse {
     __obj.asInstanceOf[PagedObjectsResponse[DataType]]
   }
   
-  extension [Self <: PagedObjectsResponse[?], DataType](x: Self & PagedObjectsResponse[DataType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagedObjectsResponse[?], DataType] (val x: Self & PagedObjectsResponse[DataType]) extends AnyVal {
     
     inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     

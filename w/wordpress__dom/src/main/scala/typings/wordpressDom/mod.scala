@@ -479,7 +479,8 @@ object mod {
       __obj.asInstanceOf[Focusable]
     }
     
-    extension [Self <: Focusable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Focusable] (val x: Self) extends AnyVal {
       
       inline def setFind(value: ParentNode => js.Array[Element]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     }
@@ -503,7 +504,8 @@ object mod {
       __obj.asInstanceOf[Tabbable]
     }
     
-    extension [Self <: Tabbable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tabbable] (val x: Self) extends AnyVal {
       
       inline def setIsTabbableIndex(value: Element => Boolean): Self = StObject.set(x, "isTabbableIndex", js.Any.fromFunction1(value))
     }

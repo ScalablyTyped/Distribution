@@ -21,7 +21,8 @@ object ThermometerOption {
     __obj.asInstanceOf[ThermometerOption]
   }
   
-  extension [Self <: ThermometerOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThermometerOption] (val x: Self) extends AnyVal {
     
     inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

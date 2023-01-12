@@ -32,7 +32,8 @@ object ContactReader {
     __obj.asInstanceOf[ContactReader]
   }
   
-  extension [Self <: ContactReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactReader] (val x: Self) extends AnyVal {
     
     inline def setGetMatchingPropertiesWithMatchReason(value: Contact => IVectorView[ContactMatchReason]): Self = StObject.set(x, "getMatchingPropertiesWithMatchReason", js.Any.fromFunction1(value))
     

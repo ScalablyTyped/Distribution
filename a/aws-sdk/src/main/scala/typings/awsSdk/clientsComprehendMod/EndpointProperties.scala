@@ -68,7 +68,8 @@ object EndpointProperties {
     __obj.asInstanceOf[EndpointProperties]
   }
   
-  extension [Self <: EndpointProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointProperties] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

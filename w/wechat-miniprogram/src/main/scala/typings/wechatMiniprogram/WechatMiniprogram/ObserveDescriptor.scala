@@ -43,7 +43,8 @@ object ObserveDescriptor {
     __obj.asInstanceOf[ObserveDescriptor]
   }
   
-  extension [Self <: ObserveDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObserveDescriptor] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

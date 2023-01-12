@@ -27,7 +27,8 @@ object PivotTupleModel {
     __obj.asInstanceOf[PivotTupleModel]
   }
   
-  extension [Self <: PivotTupleModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotTupleModel] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

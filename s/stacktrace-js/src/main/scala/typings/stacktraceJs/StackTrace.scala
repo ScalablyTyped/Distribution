@@ -107,7 +107,8 @@ object StackTrace {
       __obj.asInstanceOf[StackFrame]
     }
     
-    extension [Self <: StackFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -216,7 +217,8 @@ object StackTrace {
       __obj.asInstanceOf[StackTraceOptions]
     }
     
-    extension [Self <: StackTraceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackTraceOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* stackFrame */ StackFrame => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

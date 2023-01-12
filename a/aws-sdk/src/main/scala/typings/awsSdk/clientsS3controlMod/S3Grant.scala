@@ -23,7 +23,8 @@ object S3Grant {
     __obj.asInstanceOf[S3Grant]
   }
   
-  extension [Self <: S3Grant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3Grant] (val x: Self) extends AnyVal {
     
     inline def setGrantee(value: S3Grantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
     

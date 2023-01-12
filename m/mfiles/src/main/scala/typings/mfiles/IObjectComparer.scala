@@ -15,7 +15,8 @@ object IObjectComparer {
     __obj.asInstanceOf[IObjectComparer]
   }
   
-  extension [Self <: IObjectComparer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectComparer] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: (IObjectVersion, IObjectVersion) => Double): Self = StObject.set(x, "Compare", js.Any.fromFunction2(value))
   }

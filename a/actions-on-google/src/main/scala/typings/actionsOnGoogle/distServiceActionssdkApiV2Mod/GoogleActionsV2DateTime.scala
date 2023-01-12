@@ -26,7 +26,8 @@ object GoogleActionsV2DateTime {
     __obj.asInstanceOf[GoogleActionsV2DateTime]
   }
   
-  extension [Self <: GoogleActionsV2DateTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2DateTime] (val x: Self) extends AnyVal {
     
     inline def setDate(value: GoogleTypeDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

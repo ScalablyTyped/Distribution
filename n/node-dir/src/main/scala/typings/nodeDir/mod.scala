@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDoneOnErr(value: Boolean): Self = StObject.set(x, "doneOnErr", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object mod {
       __obj.asInstanceOf[PathsResult]
     }
     
-    extension [Self <: PathsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathsResult] (val x: Self) extends AnyVal {
       
       inline def setDirs(value: js.Array[String]): Self = StObject.set(x, "dirs", value.asInstanceOf[js.Any])
       

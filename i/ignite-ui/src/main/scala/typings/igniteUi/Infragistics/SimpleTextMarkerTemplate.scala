@@ -19,7 +19,8 @@ object SimpleTextMarkerTemplate {
     __obj.asInstanceOf[SimpleTextMarkerTemplate]
   }
   
-  extension [Self <: SimpleTextMarkerTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleTextMarkerTemplate] (val x: Self) extends AnyVal {
     
     inline def setGetText(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "getText", js.Any.fromFunction2(value))
     

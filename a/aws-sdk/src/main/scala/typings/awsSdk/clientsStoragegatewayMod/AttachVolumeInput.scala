@@ -38,7 +38,8 @@ object AttachVolumeInput {
     __obj.asInstanceOf[AttachVolumeInput]
   }
   
-  extension [Self <: AttachVolumeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachVolumeInput] (val x: Self) extends AnyVal {
     
     inline def setDiskId(value: DiskId): Self = StObject.set(x, "DiskId", value.asInstanceOf[js.Any])
     

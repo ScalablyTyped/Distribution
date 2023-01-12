@@ -96,7 +96,8 @@ object gridMod {
       __obj.asInstanceOf[ColProps]
     }
     
-    extension [Self <: ColProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
       
       inline def setHide(value: BreakpointsType | js.Array[BreakpointsType]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object gridMod {
       __obj.asInstanceOf[ContainerProps]
     }
     
-    extension [Self <: ContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
       
       inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       
@@ -206,7 +208,8 @@ object gridMod {
       __obj.asInstanceOf[HideProps]
     }
     
-    extension [Self <: HideProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HideProps] (val x: Self) extends AnyVal {
       
       inline def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
@@ -247,7 +250,8 @@ object gridMod {
       __obj.asInstanceOf[RowProps]
     }
     
-    extension [Self <: RowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

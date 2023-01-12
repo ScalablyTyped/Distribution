@@ -17,7 +17,8 @@ object IROOM_CREATION_ERROR {
     __obj.asInstanceOf[IROOM_CREATION_ERROR]
   }
   
-  extension [Self <: IROOM_CREATION_ERROR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IROOM_CREATION_ERROR] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

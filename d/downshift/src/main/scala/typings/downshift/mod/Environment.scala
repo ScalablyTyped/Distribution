@@ -24,7 +24,8 @@ object Environment {
     __obj.asInstanceOf[Environment]
   }
   
-  extension [Self <: Environment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.addEventListener */ Any

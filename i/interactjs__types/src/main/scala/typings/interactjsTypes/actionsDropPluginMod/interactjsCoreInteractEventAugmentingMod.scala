@@ -26,7 +26,8 @@ object interactjsCoreInteractEventAugmentingMod {
       __obj.asInstanceOf[InteractEvent]
     }
     
-    extension [Self <: InteractEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractEvent] (val x: Self) extends AnyVal {
       
       inline def setDragEnter(value: Element): Self = StObject.set(x, "dragEnter", value.asInstanceOf[js.Any])
       

@@ -63,7 +63,8 @@ object ConditionalIconCriterion {
     __obj.asInstanceOf[ConditionalIconCriterion]
   }
   
-  extension [Self <: ConditionalIconCriterion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalIconCriterion] (val x: Self) extends AnyVal {
     
     inline def setCustomIcon(value: Icon): Self = StObject.set(x, "customIcon", value.asInstanceOf[js.Any])
     

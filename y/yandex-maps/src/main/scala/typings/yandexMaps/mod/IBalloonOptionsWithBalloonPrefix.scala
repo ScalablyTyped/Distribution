@@ -63,7 +63,8 @@ object IBalloonOptionsWithBalloonPrefix {
     __obj.asInstanceOf[IBalloonOptionsWithBalloonPrefix]
   }
   
-  extension [Self <: IBalloonOptionsWithBalloonPrefix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBalloonOptionsWithBalloonPrefix] (val x: Self) extends AnyVal {
     
     inline def setBalloonAutoPan(value: Boolean): Self = StObject.set(x, "balloonAutoPan", value.asInstanceOf[js.Any])
     

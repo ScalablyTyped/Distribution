@@ -56,7 +56,8 @@ object Management {
       __obj.asInstanceOf[IIndexedResourceCandidate]
     }
     
-    extension [Self <: IIndexedResourceCandidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIndexedResourceCandidate] (val x: Self) extends AnyVal {
       
       inline def setGetQualifierValue(value: String => String): Self = StObject.set(x, "getQualifierValue", js.Any.fromFunction1(value))
       
@@ -85,7 +86,8 @@ object Management {
       __obj.asInstanceOf[IIndexedResourceQualifier]
     }
     
-    extension [Self <: IIndexedResourceQualifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIndexedResourceQualifier] (val x: Self) extends AnyVal {
       
       inline def setQualifierName(value: String): Self = StObject.set(x, "qualifierName", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object Management {
       __obj.asInstanceOf[IResourceIndexer]
     }
     
-    extension [Self <: IResourceIndexer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResourceIndexer] (val x: Self) extends AnyVal {
       
       inline def setIndexFileContentsAsync(value: Uri => IAsyncOperation[IVectorView[IndexedResourceCandidate]]): Self = StObject.set(x, "indexFileContentsAsync", js.Any.fromFunction1(value))
       
@@ -128,7 +131,8 @@ object Management {
       __obj.asInstanceOf[IResourceIndexerFactory]
     }
     
-    extension [Self <: IResourceIndexerFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResourceIndexerFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateResourceIndexer(value: Uri => ResourceIndexer): Self = StObject.set(x, "createResourceIndexer", js.Any.fromFunction1(value))
     }

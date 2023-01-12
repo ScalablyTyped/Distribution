@@ -70,7 +70,8 @@ object DescribeMonitoringScheduleResponse {
     __obj.asInstanceOf[DescribeMonitoringScheduleResponse]
   }
   
-  extension [Self <: DescribeMonitoringScheduleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMonitoringScheduleResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

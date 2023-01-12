@@ -19,7 +19,8 @@ object DefaultTimeout {
     __obj.asInstanceOf[DefaultTimeout]
   }
   
-  extension [Self <: DefaultTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultTimeout] (val x: Self) extends AnyVal {
     
     inline def setDefaultTimeout(value: Double): Self = StObject.set(x, "defaultTimeout", value.asInstanceOf[js.Any])
     

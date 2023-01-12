@@ -22,7 +22,8 @@ object GoogleAppsCardV1SelectionItem {
     __obj.asInstanceOf[GoogleAppsCardV1SelectionItem]
   }
   
-  extension [Self <: GoogleAppsCardV1SelectionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1SelectionItem] (val x: Self) extends AnyVal {
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     

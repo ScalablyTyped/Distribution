@@ -119,7 +119,8 @@ object ITokenConfig {
     __obj.asInstanceOf[ITokenConfig]
   }
   
-  extension [Self <: ITokenConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITokenConfig] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: TokenType | js.Array[TokenType]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

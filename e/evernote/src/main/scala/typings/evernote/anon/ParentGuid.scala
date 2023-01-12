@@ -21,7 +21,8 @@ object ParentGuid {
     __obj.asInstanceOf[ParentGuid]
   }
   
-  extension [Self <: ParentGuid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentGuid] (val x: Self) extends AnyVal {
     
     inline def setGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     

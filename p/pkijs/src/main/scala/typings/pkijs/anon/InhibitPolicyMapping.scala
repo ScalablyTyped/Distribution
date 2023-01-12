@@ -17,7 +17,8 @@ object InhibitPolicyMapping {
     __obj.asInstanceOf[InhibitPolicyMapping]
   }
   
-  extension [Self <: InhibitPolicyMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InhibitPolicyMapping] (val x: Self) extends AnyVal {
     
     inline def setInhibitPolicyMapping(value: String): Self = StObject.set(x, "inhibitPolicyMapping", value.asInstanceOf[js.Any])
     

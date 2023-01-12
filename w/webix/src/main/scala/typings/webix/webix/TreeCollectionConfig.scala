@@ -45,7 +45,8 @@ object TreeCollectionConfig {
     __obj.asInstanceOf[TreeCollectionConfig]
   }
   
-  extension [Self <: TreeCollectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeCollectionConfig] (val x: Self) extends AnyVal {
     
     inline def setData(value: String | js.Array[Any] | obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

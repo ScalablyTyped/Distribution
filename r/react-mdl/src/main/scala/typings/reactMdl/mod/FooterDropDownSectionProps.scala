@@ -22,7 +22,8 @@ object FooterDropDownSectionProps {
     __obj.asInstanceOf[FooterDropDownSectionProps]
   }
   
-  extension [Self <: FooterDropDownSectionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FooterDropDownSectionProps] (val x: Self) extends AnyVal {
     
     inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

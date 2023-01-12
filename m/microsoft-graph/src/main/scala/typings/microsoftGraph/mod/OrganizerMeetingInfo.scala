@@ -18,7 +18,8 @@ object OrganizerMeetingInfo {
     __obj.asInstanceOf[OrganizerMeetingInfo]
   }
   
-  extension [Self <: OrganizerMeetingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizerMeetingInfo] (val x: Self) extends AnyVal {
     
     inline def setOrganizer(value: IdentitySet): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
     

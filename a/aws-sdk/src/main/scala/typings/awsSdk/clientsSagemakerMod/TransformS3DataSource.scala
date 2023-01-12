@@ -23,7 +23,8 @@ object TransformS3DataSource {
     __obj.asInstanceOf[TransformS3DataSource]
   }
   
-  extension [Self <: TransformS3DataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformS3DataSource] (val x: Self) extends AnyVal {
     
     inline def setS3DataType(value: S3DataType): Self = StObject.set(x, "S3DataType", value.asInstanceOf[js.Any])
     

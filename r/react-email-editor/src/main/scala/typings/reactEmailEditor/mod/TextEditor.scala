@@ -21,7 +21,8 @@ object TextEditor {
     __obj.asInstanceOf[TextEditor]
   }
   
-  extension [Self <: TextEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEditor] (val x: Self) extends AnyVal {
     
     inline def setCleanPaste(value: Boolean): Self = StObject.set(x, "cleanPaste", value.asInstanceOf[js.Any])
     

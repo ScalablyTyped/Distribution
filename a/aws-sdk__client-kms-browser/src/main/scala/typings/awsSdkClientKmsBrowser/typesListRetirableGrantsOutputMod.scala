@@ -41,7 +41,8 @@ object typesListRetirableGrantsOutputMod {
       __obj.asInstanceOf[ListRetirableGrantsOutput]
     }
     
-    extension [Self <: ListRetirableGrantsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListRetirableGrantsOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

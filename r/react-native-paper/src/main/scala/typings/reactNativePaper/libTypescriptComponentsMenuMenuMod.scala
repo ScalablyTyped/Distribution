@@ -39,7 +39,8 @@ object libTypescriptComponentsMenuMenuMod extends Shortcut {
       __obj.asInstanceOf[Layout]
     }
     
-    extension [Self <: Layout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object libTypescriptComponentsMenuMenuMod extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: ReactNode | X): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -261,7 +263,8 @@ object libTypescriptComponentsMenuMenuMod extends Shortcut {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setAnchorLayout(value: Layout): Self = StObject.set(x, "anchorLayout", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object TodoTaskList {
     __obj.asInstanceOf[TodoTaskList]
   }
   
-  extension [Self <: TodoTaskList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TodoTaskList] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

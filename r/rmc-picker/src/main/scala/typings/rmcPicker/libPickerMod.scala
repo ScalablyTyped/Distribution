@@ -47,7 +47,8 @@ object libPickerMod {
       __obj.asInstanceOf[IPickerProp]
     }
     
-    extension [Self <: IPickerProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPickerProp] (val x: Self) extends AnyVal {
       
       inline def setComputeChildIndex(value: /* repeated */ Any => Double): Self = StObject.set(x, "computeChildIndex", js.Any.fromFunction1(value))
       

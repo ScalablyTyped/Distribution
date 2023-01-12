@@ -18,7 +18,8 @@ object LayoutRefreshedEventUIParam {
     __obj.asInstanceOf[LayoutRefreshedEventUIParam]
   }
   
-  extension [Self <: LayoutRefreshedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutRefreshedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

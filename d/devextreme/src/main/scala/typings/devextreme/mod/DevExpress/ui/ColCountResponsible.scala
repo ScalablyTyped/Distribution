@@ -33,7 +33,8 @@ object ColCountResponsible {
     __obj.asInstanceOf[ColCountResponsible]
   }
   
-  extension [Self <: ColCountResponsible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColCountResponsible] (val x: Self) extends AnyVal {
     
     inline def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
     

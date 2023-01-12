@@ -25,7 +25,8 @@ object HistogramRangeSliderSegmentDragEvent {
     __obj.asInstanceOf[HistogramRangeSliderSegmentDragEvent]
   }
   
-  extension [Self <: HistogramRangeSliderSegmentDragEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistogramRangeSliderSegmentDragEvent] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

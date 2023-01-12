@@ -23,7 +23,8 @@ object DeleteSiteRequest {
     __obj.asInstanceOf[DeleteSiteRequest]
   }
   
-  extension [Self <: DeleteSiteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSiteRequest] (val x: Self) extends AnyVal {
     
     inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GroupFieldRef {
     __obj.asInstanceOf[GroupFieldRef]
   }
   
-  extension [Self <: GroupFieldRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupFieldRef] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: Field): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     

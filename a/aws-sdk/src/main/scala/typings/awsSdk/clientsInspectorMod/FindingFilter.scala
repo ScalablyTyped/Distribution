@@ -53,7 +53,8 @@ object FindingFilter {
     __obj.asInstanceOf[FindingFilter]
   }
   
-  extension [Self <: FindingFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingFilter] (val x: Self) extends AnyVal {
     
     inline def setAgentIds(value: AgentIdList): Self = StObject.set(x, "agentIds", value.asInstanceOf[js.Any])
     

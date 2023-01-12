@@ -18,7 +18,8 @@ object GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension {
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension]
   }
   
-  extension [Self <: GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension] (val x: Self) extends AnyVal {
     
     inline def setTicketEvent(value: GoogleActionsOrdersV3VerticalsTicketTicketEvent): Self = StObject.set(x, "ticketEvent", value.asInstanceOf[js.Any])
     

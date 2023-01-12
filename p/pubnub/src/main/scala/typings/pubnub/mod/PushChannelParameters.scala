@@ -19,7 +19,8 @@ object PushChannelParameters {
     __obj.asInstanceOf[PushChannelParameters]
   }
   
-  extension [Self <: PushChannelParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushChannelParameters] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

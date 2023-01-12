@@ -50,7 +50,8 @@ object AssetShallow {
     __obj.asInstanceOf[AssetShallow]
   }
   
-  extension [Self <: AssetShallow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetShallow] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

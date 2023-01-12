@@ -23,7 +23,8 @@ object PipeableFunctor {
     __obj.asInstanceOf[PipeableFunctor[F]]
   }
   
-  extension [Self <: PipeableFunctor[?], F](x: Self & PipeableFunctor[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableFunctor[?], F] (val x: Self & PipeableFunctor[F]) extends AnyVal {
     
     inline def setMap(
       value: js.Function1[Any, Any] => js.Function1[

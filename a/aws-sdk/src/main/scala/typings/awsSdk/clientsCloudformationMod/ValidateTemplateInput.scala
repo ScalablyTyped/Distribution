@@ -23,7 +23,8 @@ object ValidateTemplateInput {
     __obj.asInstanceOf[ValidateTemplateInput]
   }
   
-  extension [Self <: ValidateTemplateInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateTemplateInput] (val x: Self) extends AnyVal {
     
     inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "TemplateBody", value.asInstanceOf[js.Any])
     

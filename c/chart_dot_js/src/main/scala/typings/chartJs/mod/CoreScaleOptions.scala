@@ -126,7 +126,8 @@ object CoreScaleOptions {
     __obj.asInstanceOf[CoreScaleOptions]
   }
   
-  extension [Self <: CoreScaleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreScaleOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterBuildTicks(value: Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterBuildTicks", js.Any.fromFunction1(value))
     

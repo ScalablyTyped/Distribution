@@ -37,7 +37,8 @@ object OMathBreaks {
     __obj.asInstanceOf[OMathBreaks]
   }
   
-  extension [Self <: OMathBreaks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMathBreaks] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Range => OMathBreak): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

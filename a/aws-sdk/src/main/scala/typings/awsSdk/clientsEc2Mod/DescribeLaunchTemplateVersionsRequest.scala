@@ -58,7 +58,8 @@ object DescribeLaunchTemplateVersionsRequest {
     __obj.asInstanceOf[DescribeLaunchTemplateVersionsRequest]
   }
   
-  extension [Self <: DescribeLaunchTemplateVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLaunchTemplateVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

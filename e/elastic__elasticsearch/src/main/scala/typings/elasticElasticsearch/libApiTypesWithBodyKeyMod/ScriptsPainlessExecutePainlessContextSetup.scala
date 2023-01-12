@@ -19,7 +19,8 @@ object ScriptsPainlessExecutePainlessContextSetup {
     __obj.asInstanceOf[ScriptsPainlessExecutePainlessContextSetup]
   }
   
-  extension [Self <: ScriptsPainlessExecutePainlessContextSetup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptsPainlessExecutePainlessContextSetup] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

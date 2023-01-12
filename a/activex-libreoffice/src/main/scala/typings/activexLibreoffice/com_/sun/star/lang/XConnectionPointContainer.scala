@@ -64,7 +64,8 @@ object XConnectionPointContainer {
     __obj.asInstanceOf[XConnectionPointContainer]
   }
   
-  extension [Self <: XConnectionPointContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConnectionPointContainer] (val x: Self) extends AnyVal {
     
     inline def setAdvise(value: (`type`, XInterface) => Unit): Self = StObject.set(x, "advise", js.Any.fromFunction2(value))
     

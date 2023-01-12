@@ -114,7 +114,8 @@ object srcRenderersShadersUniformsLibMod {
       __obj.asInstanceOf[IUniform[TValue]]
     }
     
-    extension [Self <: IUniform[?], TValue](x: Self & IUniform[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUniform[?], TValue] (val x: Self & IUniform[TValue]) extends AnyVal {
       
       inline def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

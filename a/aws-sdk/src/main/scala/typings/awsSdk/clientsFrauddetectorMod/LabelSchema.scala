@@ -23,7 +23,8 @@ object LabelSchema {
     __obj.asInstanceOf[LabelSchema]
   }
   
-  extension [Self <: LabelSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelSchema] (val x: Self) extends AnyVal {
     
     inline def setLabelMapper(value: labelMapper): Self = StObject.set(x, "labelMapper", value.asInstanceOf[js.Any])
     

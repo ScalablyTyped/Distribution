@@ -28,7 +28,8 @@ object GoogleCloudVisionV1p4beta1WebDetectionWebPage {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1WebDetectionWebPage]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1WebDetectionWebPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1WebDetectionWebPage] (val x: Self) extends AnyVal {
     
     inline def setFullMatchingImages(value: js.Array[GoogleCloudVisionV1p4beta1WebDetectionWebImage]): Self = StObject.set(x, "fullMatchingImages", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object TransactionRiskData {
     __obj.asInstanceOf[TransactionRiskData]
   }
   
-  extension [Self <: TransactionRiskData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionRiskData] (val x: Self) extends AnyVal {
     
     inline def setDecision(value: String): Self = StObject.set(x, "decision", value.asInstanceOf[js.Any])
     

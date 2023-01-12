@@ -566,7 +566,8 @@ object libShapeMod {
       __obj.asInstanceOf[ShapeConfig]
     }
     
-    extension [Self <: ShapeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShapeConfig] (val x: Self) extends AnyVal {
       
       inline def setDash(value: js.Array[Double]): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
       
@@ -807,7 +808,8 @@ object libShapeMod {
       __obj.asInstanceOf[ShapeGetClientRectConfig]
     }
     
-    extension [Self <: ShapeGetClientRectConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShapeGetClientRectConfig] (val x: Self) extends AnyVal {
       
       inline def setRelativeTo(value: Node[NodeConfig]): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
       

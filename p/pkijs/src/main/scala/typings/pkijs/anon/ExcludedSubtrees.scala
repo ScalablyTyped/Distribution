@@ -17,7 +17,8 @@ object ExcludedSubtrees {
     __obj.asInstanceOf[ExcludedSubtrees]
   }
   
-  extension [Self <: ExcludedSubtrees](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedSubtrees] (val x: Self) extends AnyVal {
     
     inline def setExcludedSubtrees(value: String): Self = StObject.set(x, "excludedSubtrees", value.asInstanceOf[js.Any])
     

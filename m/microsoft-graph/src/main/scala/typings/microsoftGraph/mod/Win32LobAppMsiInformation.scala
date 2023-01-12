@@ -34,7 +34,8 @@ object Win32LobAppMsiInformation {
     __obj.asInstanceOf[Win32LobAppMsiInformation]
   }
   
-  extension [Self <: Win32LobAppMsiInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Win32LobAppMsiInformation] (val x: Self) extends AnyVal {
     
     inline def setPackageType(value: Win32LobAppMsiPackageType): Self = StObject.set(x, "packageType", value.asInstanceOf[js.Any])
     

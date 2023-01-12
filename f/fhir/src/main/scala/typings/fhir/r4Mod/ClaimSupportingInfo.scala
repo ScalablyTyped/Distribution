@@ -76,7 +76,8 @@ object ClaimSupportingInfo {
     __obj.asInstanceOf[ClaimSupportingInfo]
   }
   
-  extension [Self <: ClaimSupportingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimSupportingInfo] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

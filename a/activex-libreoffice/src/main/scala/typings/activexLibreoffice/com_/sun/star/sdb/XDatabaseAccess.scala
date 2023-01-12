@@ -45,7 +45,8 @@ object XDatabaseAccess {
     __obj.asInstanceOf[XDatabaseAccess]
   }
   
-  extension [Self <: XDatabaseAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDatabaseAccess] (val x: Self) extends AnyVal {
     
     inline def setAddDatabaseAccessListener(value: XDatabaseAccessListener => Unit): Self = StObject.set(x, "addDatabaseAccessListener", js.Any.fromFunction1(value))
     

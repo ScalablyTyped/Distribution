@@ -15,7 +15,8 @@ object QName {
     __obj.asInstanceOf[QName]
   }
   
-  extension [Self <: QName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QName] (val x: Self) extends AnyVal {
     
     inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }

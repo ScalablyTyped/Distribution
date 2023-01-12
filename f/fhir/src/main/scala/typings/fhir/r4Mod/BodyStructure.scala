@@ -64,7 +64,8 @@ object BodyStructure {
     __obj.asInstanceOf[BodyStructure]
   }
   
-  extension [Self <: BodyStructure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyStructure] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

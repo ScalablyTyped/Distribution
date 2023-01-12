@@ -27,7 +27,8 @@ object IMapObjectCollection {
     __obj.asInstanceOf[IMapObjectCollection]
   }
   
-  extension [Self <: IMapObjectCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapObjectCollection] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: IOptionManager): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

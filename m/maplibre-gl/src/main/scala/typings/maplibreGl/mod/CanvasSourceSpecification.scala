@@ -37,7 +37,8 @@ object CanvasSourceSpecification {
     __obj.asInstanceOf[CanvasSourceSpecification]
   }
   
-  extension [Self <: CanvasSourceSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasSourceSpecification] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object Partialproductidstringnam {
     __obj.asInstanceOf[Partialproductidstringnam]
   }
   
-  extension [Self <: Partialproductidstringnam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialproductidstringnam] (val x: Self) extends AnyVal {
     
     inline def setBilling_cycles(value: js.Array[Frequency]): Self = StObject.set(x, "billing_cycles", value.asInstanceOf[js.Any])
     

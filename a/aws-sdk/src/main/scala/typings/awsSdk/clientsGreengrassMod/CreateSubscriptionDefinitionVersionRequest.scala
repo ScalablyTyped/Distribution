@@ -28,7 +28,8 @@ object CreateSubscriptionDefinitionVersionRequest {
     __obj.asInstanceOf[CreateSubscriptionDefinitionVersionRequest]
   }
   
-  extension [Self <: CreateSubscriptionDefinitionVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSubscriptionDefinitionVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     

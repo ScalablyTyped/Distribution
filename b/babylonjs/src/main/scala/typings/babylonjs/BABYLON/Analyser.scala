@@ -137,7 +137,8 @@ object Analyser {
     __obj.asInstanceOf[Analyser]
   }
   
-  extension [Self <: Analyser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Analyser] (val x: Self) extends AnyVal {
     
     inline def setBARGRAPHAMPLITUDE(value: Double): Self = StObject.set(x, "BARGRAPHAMPLITUDE", value.asInstanceOf[js.Any])
     

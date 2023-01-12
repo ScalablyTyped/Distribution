@@ -19,7 +19,8 @@ object ReturnTypeAddRuleResponse {
     __obj.asInstanceOf[ReturnTypeAddRuleResponse]
   }
   
-  extension [Self <: ReturnTypeAddRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeAddRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[AddRuleRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

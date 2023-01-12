@@ -19,7 +19,8 @@ object EditClickEventArgs {
     __obj.asInstanceOf[EditClickEventArgs]
   }
   
-  extension [Self <: EditClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

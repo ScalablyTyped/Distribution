@@ -48,7 +48,8 @@ object BluetoothDeviceInfo {
     __obj.asInstanceOf[BluetoothDeviceInfo]
   }
   
-  extension [Self <: BluetoothDeviceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothDeviceInfo] (val x: Self) extends AnyVal {
     
     inline def setAdvertisData(value: js.Array[Any]): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
     

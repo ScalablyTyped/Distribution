@@ -30,7 +30,8 @@ object ExportSchemaRequest {
     __obj.asInstanceOf[ExportSchemaRequest]
   }
   
-  extension [Self <: ExportSchemaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportSchemaRequest] (val x: Self) extends AnyVal {
     
     inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     

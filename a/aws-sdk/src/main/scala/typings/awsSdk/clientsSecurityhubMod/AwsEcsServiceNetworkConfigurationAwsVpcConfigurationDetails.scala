@@ -28,7 +28,8 @@ object AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetails {
     __obj.asInstanceOf[AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetails]
   }
   
-  extension [Self <: AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetails] (val x: Self) extends AnyVal {
     
     inline def setAssignPublicIp(value: NonEmptyString): Self = StObject.set(x, "AssignPublicIp", value.asInstanceOf[js.Any])
     

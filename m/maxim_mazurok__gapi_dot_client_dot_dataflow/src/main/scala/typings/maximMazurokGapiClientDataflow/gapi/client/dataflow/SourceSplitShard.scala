@@ -19,7 +19,8 @@ object SourceSplitShard {
     __obj.asInstanceOf[SourceSplitShard]
   }
   
-  extension [Self <: SourceSplitShard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceSplitShard] (val x: Self) extends AnyVal {
     
     inline def setDerivationMode(value: String): Self = StObject.set(x, "derivationMode", value.asInstanceOf[js.Any])
     

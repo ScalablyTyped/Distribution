@@ -69,7 +69,8 @@ object distTypingsAttributorStoreMod {
       __obj.asInstanceOf[AttributorStore]
     }
     
-    extension [Self <: AttributorStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributorStore] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: (typings.parchment.distTypingsAttributorAttributorMod.default, Any) => Unit): Self = StObject.set(x, "attribute", js.Any.fromFunction2(value))
       

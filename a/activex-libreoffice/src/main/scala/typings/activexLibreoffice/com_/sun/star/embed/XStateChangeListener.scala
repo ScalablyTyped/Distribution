@@ -46,7 +46,8 @@ object XStateChangeListener {
     __obj.asInstanceOf[XStateChangeListener]
   }
   
-  extension [Self <: XStateChangeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStateChangeListener] (val x: Self) extends AnyVal {
     
     inline def setChangingState(value: (EventObject, Double, Double) => Unit): Self = StObject.set(x, "changingState", js.Any.fromFunction3(value))
     

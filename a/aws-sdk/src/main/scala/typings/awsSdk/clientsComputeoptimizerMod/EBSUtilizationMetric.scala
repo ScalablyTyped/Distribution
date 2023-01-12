@@ -28,7 +28,8 @@ object EBSUtilizationMetric {
     __obj.asInstanceOf[EBSUtilizationMetric]
   }
   
-  extension [Self <: EBSUtilizationMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EBSUtilizationMetric] (val x: Self) extends AnyVal {
     
     inline def setName(value: EBSMetricName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

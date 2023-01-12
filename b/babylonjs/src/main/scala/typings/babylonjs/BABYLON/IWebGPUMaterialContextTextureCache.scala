@@ -20,7 +20,8 @@ object IWebGPUMaterialContextTextureCache {
     __obj.asInstanceOf[IWebGPUMaterialContextTextureCache]
   }
   
-  extension [Self <: IWebGPUMaterialContextTextureCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebGPUMaterialContextTextureCache] (val x: Self) extends AnyVal {
     
     inline def setIsExternalTexture(value: Boolean): Self = StObject.set(x, "isExternalTexture", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AssociatePhoneNumberContactFlowRequest {
     __obj.asInstanceOf[AssociatePhoneNumberContactFlowRequest]
   }
   
-  extension [Self <: AssociatePhoneNumberContactFlowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatePhoneNumberContactFlowRequest] (val x: Self) extends AnyVal {
     
     inline def setContactFlowId(value: ContactFlowId): Self = StObject.set(x, "ContactFlowId", value.asInstanceOf[js.Any])
     

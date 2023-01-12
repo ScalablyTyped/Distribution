@@ -86,7 +86,8 @@ object RaphaelShapeDescriptor {
     __obj.asInstanceOf[RaphaelShapeDescriptor]
   }
   
-  extension [Self <: RaphaelShapeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelShapeDescriptor] (val x: Self) extends AnyVal {
     
     inline def `setArrow-end`(value: String): Self = StObject.set(x, "arrow-end", value.asInstanceOf[js.Any])
     

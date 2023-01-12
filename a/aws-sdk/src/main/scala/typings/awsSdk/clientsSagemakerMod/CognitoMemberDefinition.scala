@@ -28,7 +28,8 @@ object CognitoMemberDefinition {
     __obj.asInstanceOf[CognitoMemberDefinition]
   }
   
-  extension [Self <: CognitoMemberDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CognitoMemberDefinition] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     

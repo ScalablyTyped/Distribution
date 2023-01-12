@@ -22,7 +22,8 @@ object OpenChannelsLiveOption {
     __obj.asInstanceOf[OpenChannelsLiveOption]
   }
   
-  extension [Self <: OpenChannelsLiveOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenChannelsLiveOption] (val x: Self) extends AnyVal {
     
     inline def setFeedId(value: String): Self = StObject.set(x, "feedId", value.asInstanceOf[js.Any])
     

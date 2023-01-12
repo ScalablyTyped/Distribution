@@ -43,7 +43,8 @@ object GetAnomaliesRequest {
     __obj.asInstanceOf[GetAnomaliesRequest]
   }
   
-  extension [Self <: GetAnomaliesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAnomaliesRequest] (val x: Self) extends AnyVal {
     
     inline def setDateInterval(value: AnomalyDateInterval): Self = StObject.set(x, "DateInterval", value.asInstanceOf[js.Any])
     

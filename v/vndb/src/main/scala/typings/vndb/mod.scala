@@ -60,7 +60,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[typings.vndb.mod.vndb]
     }
     
-    extension [Self <: typings.vndb.mod.vndb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.vndb.mod.vndb] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: () => js.Promise[Unit]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       

@@ -19,7 +19,8 @@ object HttpFaultDelay {
     __obj.asInstanceOf[HttpFaultDelay]
   }
   
-  extension [Self <: HttpFaultDelay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpFaultDelay] (val x: Self) extends AnyVal {
     
     inline def setFixedDelay(value: Duration): Self = StObject.set(x, "fixedDelay", value.asInstanceOf[js.Any])
     

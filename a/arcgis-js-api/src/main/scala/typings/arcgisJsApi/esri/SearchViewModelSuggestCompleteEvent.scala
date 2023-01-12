@@ -29,7 +29,8 @@ object SearchViewModelSuggestCompleteEvent {
     __obj.asInstanceOf[SearchViewModelSuggestCompleteEvent]
   }
   
-  extension [Self <: SearchViewModelSuggestCompleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchViewModelSuggestCompleteEvent] (val x: Self) extends AnyVal {
     
     inline def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
     

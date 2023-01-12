@@ -15,7 +15,8 @@ object EnumValuesInvalidFilterClause {
     __obj.asInstanceOf[EnumValuesInvalidFilterClause]
   }
   
-  extension [Self <: EnumValuesInvalidFilterClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesInvalidFilterClause] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: InvalidFilterClause): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

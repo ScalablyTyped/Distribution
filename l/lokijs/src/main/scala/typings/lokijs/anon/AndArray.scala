@@ -16,7 +16,8 @@ object AndArray {
     __obj.asInstanceOf[AndArray]
   }
   
-  extension [Self <: AndArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndArray] (val x: Self) extends AnyVal {
     
     inline def set$and(value: js.Array[Any]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object ProcessProperties {
     __obj.asInstanceOf[ProcessProperties]
   }
   
-  extension [Self <: ProcessProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessProperties] (val x: Self) extends AnyVal {
     
     inline def setClass(value: ProcessClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

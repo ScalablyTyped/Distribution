@@ -23,7 +23,8 @@ object UpdatePolicy {
     __obj.asInstanceOf[UpdatePolicy]
   }
   
-  extension [Self <: UpdatePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePolicy] (val x: Self) extends AnyVal {
     
     inline def setJobExecutionTimeoutMinutes(value: JobExecutionTimeoutMinutes): Self = StObject.set(x, "jobExecutionTimeoutMinutes", value.asInstanceOf[js.Any])
     

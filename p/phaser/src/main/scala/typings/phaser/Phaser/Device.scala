@@ -76,7 +76,8 @@ object Device {
       __obj.asInstanceOf[Audio]
     }
     
-    extension [Self <: Audio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
       
       inline def setAudioData(value: Boolean): Self = StObject.set(x, "audioData", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object Device {
       __obj.asInstanceOf[Browser]
     }
     
-    extension [Self <: Browser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
       
       inline def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
@@ -255,7 +257,8 @@ object Device {
       __obj.asInstanceOf[CanvasFeatures]
     }
     
-    extension [Self <: CanvasFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasFeatures] (val x: Self) extends AnyVal {
       
       inline def setSupportInverseAlpha(value: Boolean): Self = StObject.set(x, "supportInverseAlpha", value.asInstanceOf[js.Any])
       
@@ -351,7 +354,8 @@ object Device {
       __obj.asInstanceOf[Features]
     }
     
-    extension [Self <: Features](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
       
       inline def setCanvas(value: Boolean): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
@@ -414,7 +418,8 @@ object Device {
       __obj.asInstanceOf[Fullscreen]
     }
     
-    extension [Self <: Fullscreen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fullscreen] (val x: Self) extends AnyVal {
       
       inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
@@ -461,7 +466,8 @@ object Device {
       __obj.asInstanceOf[typings.phaser.Phaser.Device.Input]
     }
     
-    extension [Self <: typings.phaser.Phaser.Device.Input](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.phaser.Phaser.Device.Input] (val x: Self) extends AnyVal {
       
       inline def setGamepads(value: Boolean): Self = StObject.set(x, "gamepads", value.asInstanceOf[js.Any])
       
@@ -609,7 +615,8 @@ object Device {
       __obj.asInstanceOf[OS]
     }
     
-    extension [Self <: OS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OS] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -700,7 +707,8 @@ object Device {
       __obj.asInstanceOf[Video]
     }
     
-    extension [Self <: Video](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
       
       inline def setH264(value: Boolean): Self = StObject.set(x, "h264", value.asInstanceOf[js.Any])
       

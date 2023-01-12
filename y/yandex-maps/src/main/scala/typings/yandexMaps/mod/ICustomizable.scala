@@ -17,7 +17,8 @@ object ICustomizable {
     __obj.asInstanceOf[ICustomizable]
   }
   
-  extension [Self <: ICustomizable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomizable] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: IOptionManager): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

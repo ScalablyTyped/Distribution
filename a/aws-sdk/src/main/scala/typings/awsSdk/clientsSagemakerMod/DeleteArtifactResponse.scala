@@ -18,7 +18,8 @@ object DeleteArtifactResponse {
     __obj.asInstanceOf[DeleteArtifactResponse]
   }
   
-  extension [Self <: DeleteArtifactResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteArtifactResponse] (val x: Self) extends AnyVal {
     
     inline def setArtifactArn(value: ArtifactArn): Self = StObject.set(x, "ArtifactArn", value.asInstanceOf[js.Any])
     

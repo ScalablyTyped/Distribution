@@ -33,7 +33,8 @@ object Hover {
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Hover */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Hover */ Boolean]
   
-  extension [Self <: Hover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hover] (val x: Self) extends AnyVal {
     
     inline def setContents(value: MarkupContent | MarkedString | js.Array[MarkedString]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

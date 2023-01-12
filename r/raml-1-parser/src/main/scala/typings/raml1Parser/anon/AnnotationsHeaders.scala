@@ -29,7 +29,8 @@ object AnnotationsHeaders {
     __obj.asInstanceOf[AnnotationsHeaders]
   }
   
-  extension [Self <: AnnotationsHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsHeaders] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: NameString): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

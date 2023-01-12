@@ -43,7 +43,8 @@ object CaptionDescription {
     __obj.asInstanceOf[CaptionDescription]
   }
   
-  extension [Self <: CaptionDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionDescription] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: AccessibilityType): Self = StObject.set(x, "Accessibility", value.asInstanceOf[js.Any])
     

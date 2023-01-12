@@ -22,7 +22,8 @@ object TypeArray {
     __obj.asInstanceOf[TypeArray[T, IsPartial]]
   }
   
-  extension [Self <: TypeArray[?, ?], T, IsPartial /* <: Boolean */](x: Self & (TypeArray[T, IsPartial])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeArray[?, ?], T, IsPartial /* <: Boolean */] (val x: Self & (TypeArray[T, IsPartial])) extends AnyVal {
     
     inline def setType(
       value: js.Array[

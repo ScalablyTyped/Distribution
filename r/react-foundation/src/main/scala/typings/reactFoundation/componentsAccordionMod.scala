@@ -168,7 +168,8 @@ object componentsAccordionMod {
       __obj.asInstanceOf[AccordianContentProps]
     }
     
-    extension [Self <: AccordianContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordianContentProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -474,7 +475,8 @@ object componentsAccordionMod {
       __obj.asInstanceOf[AccordianItemProps]
     }
     
-    extension [Self <: AccordianItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordianItemProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -778,7 +780,8 @@ object componentsAccordionMod {
       __obj.asInstanceOf[AccordianProps]
     }
     
-    extension [Self <: AccordianProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordianProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1099,7 +1102,8 @@ object componentsAccordionMod {
       __obj.asInstanceOf[AccordionTitleProps]
     }
     
-    extension [Self <: AccordionTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionTitleProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

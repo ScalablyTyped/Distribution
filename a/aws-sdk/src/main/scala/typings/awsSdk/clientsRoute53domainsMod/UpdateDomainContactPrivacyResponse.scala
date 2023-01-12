@@ -18,7 +18,8 @@ object UpdateDomainContactPrivacyResponse {
     __obj.asInstanceOf[UpdateDomainContactPrivacyResponse]
   }
   
-  extension [Self <: UpdateDomainContactPrivacyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDomainContactPrivacyResponse] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
   }

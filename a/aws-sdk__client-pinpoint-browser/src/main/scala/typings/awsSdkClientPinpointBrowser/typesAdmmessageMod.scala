@@ -101,7 +101,8 @@ object typesAdmmessageMod {
       __obj.asInstanceOf[ADMMessage]
     }
     
-    extension [Self <: ADMMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ADMMessage] (val x: Self) extends AnyVal {
       
       inline def setAction(value: OPEN_APP | DEEP_LINK | URL | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object typesAdmmessageMod {
       __obj.asInstanceOf[UnmarshalledADMMessage]
     }
     
-    extension [Self <: UnmarshalledADMMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledADMMessage] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       

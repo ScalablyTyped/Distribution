@@ -17,7 +17,8 @@ object ISchema {
     __obj.asInstanceOf[ISchema]
   }
   
-  extension [Self <: ISchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISchema] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

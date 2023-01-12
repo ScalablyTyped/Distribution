@@ -37,7 +37,8 @@ object GoogleCloudAssetV1BigQueryDestination {
     __obj.asInstanceOf[GoogleCloudAssetV1BigQueryDestination]
   }
   
-  extension [Self <: GoogleCloudAssetV1BigQueryDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssetV1BigQueryDestination] (val x: Self) extends AnyVal {
     
     inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     

@@ -284,7 +284,8 @@ object buildSrcSubchannelMod {
       __obj.asInstanceOf[SubchannelCallStatsTracker]
     }
     
-    extension [Self <: SubchannelCallStatsTracker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubchannelCallStatsTracker] (val x: Self) extends AnyVal {
       
       inline def setAddMessageReceived(value: () => Unit): Self = StObject.set(x, "addMessageReceived", js.Any.fromFunction0(value))
       

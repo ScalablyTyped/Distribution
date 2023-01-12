@@ -16,7 +16,8 @@ object PartialClassesTwitterPick {
     __obj.asInstanceOf[PartialClassesTwitterPick]
   }
   
-  extension [Self <: PartialClassesTwitterPick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesTwitterPick] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: PartialTwitterPickerStyle): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

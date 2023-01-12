@@ -26,7 +26,8 @@ object DownAction {
     __obj.asInstanceOf[DownAction]
   }
   
-  extension [Self <: DownAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownAction] (val x: Self) extends AnyVal {
     
     inline def setDownAction(value: /* downPoint */ point => Any): Self = StObject.set(x, "downAction", js.Any.fromFunction1(value))
     

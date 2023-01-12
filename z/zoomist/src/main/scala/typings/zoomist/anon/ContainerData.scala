@@ -29,7 +29,8 @@ object ContainerData {
     __obj.asInstanceOf[ContainerData]
   }
   
-  extension [Self <: ContainerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerData] (val x: Self) extends AnyVal {
     
     inline def setContainerData(value: AspectRatio): Self = StObject.set(x, "containerData", value.asInstanceOf[js.Any])
     

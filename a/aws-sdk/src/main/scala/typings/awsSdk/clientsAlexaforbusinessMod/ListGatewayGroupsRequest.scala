@@ -23,7 +23,8 @@ object ListGatewayGroupsRequest {
     __obj.asInstanceOf[ListGatewayGroupsRequest]
   }
   
-  extension [Self <: ListGatewayGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGatewayGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

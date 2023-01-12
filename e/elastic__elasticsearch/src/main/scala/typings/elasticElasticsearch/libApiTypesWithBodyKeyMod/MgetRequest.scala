@@ -37,7 +37,8 @@ object MgetRequest {
     __obj.asInstanceOf[MgetRequest]
   }
   
-  extension [Self <: MgetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MgetRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Docs): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

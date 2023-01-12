@@ -54,7 +54,8 @@ object CommentsurlCommit {
     __obj.asInstanceOf[CommentsurlCommit]
   }
   
-  extension [Self <: CommentsurlCommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentsurlCommit] (val x: Self) extends AnyVal {
     
     inline def setAuthor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any

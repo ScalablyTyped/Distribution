@@ -83,7 +83,8 @@ object GetApplicationResponse {
     __obj.asInstanceOf[GetApplicationResponse]
   }
   
-  extension [Self <: GetApplicationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApplicationResponse] (val x: Self) extends AnyVal {
     
     inline def setApiGatewayProxy(value: ApiGatewayProxyConfig): Self = StObject.set(x, "ApiGatewayProxy", value.asInstanceOf[js.Any])
     

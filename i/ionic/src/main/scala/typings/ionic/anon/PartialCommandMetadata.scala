@@ -37,7 +37,8 @@ object PartialCommandMetadata {
     __obj.asInstanceOf[PartialCommandMetadata]
   }
   
-  extension [Self <: PartialCommandMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCommandMetadata] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

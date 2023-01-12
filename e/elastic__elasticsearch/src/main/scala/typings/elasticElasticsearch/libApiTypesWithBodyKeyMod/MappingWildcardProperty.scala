@@ -22,7 +22,8 @@ object MappingWildcardProperty {
     __obj.asInstanceOf[MappingWildcardProperty]
   }
   
-  extension [Self <: MappingWildcardProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingWildcardProperty] (val x: Self) extends AnyVal {
     
     inline def setNull_value(value: String): Self = StObject.set(x, "null_value", value.asInstanceOf[js.Any])
     

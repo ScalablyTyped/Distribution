@@ -502,7 +502,8 @@ object IgGrid {
     __obj.asInstanceOf[IgGrid]
   }
   
-  extension [Self <: IgGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGrid] (val x: Self) extends AnyVal {
     
     inline def setAdjustVirtualHeights(value: Boolean): Self = StObject.set(x, "adjustVirtualHeights", value.asInstanceOf[js.Any])
     

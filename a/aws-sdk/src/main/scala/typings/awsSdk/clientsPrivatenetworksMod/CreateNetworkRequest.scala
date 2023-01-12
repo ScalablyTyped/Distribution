@@ -33,7 +33,8 @@ object CreateNetworkRequest {
     __obj.asInstanceOf[CreateNetworkRequest]
   }
   
-  extension [Self <: CreateNetworkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNetworkRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

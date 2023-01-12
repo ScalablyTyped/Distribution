@@ -18,7 +18,8 @@ object TileSourceEventMap {
     __obj.asInstanceOf[TileSourceEventMap]
   }
   
-  extension [Self <: TileSourceEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileSourceEventMap] (val x: Self) extends AnyVal {
     
     inline def `setOpen-failed`(value: OpenFailedTileSourceEvent): Self = StObject.set(x, "open-failed", value.asInstanceOf[js.Any])
     

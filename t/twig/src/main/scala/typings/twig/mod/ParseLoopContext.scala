@@ -38,7 +38,8 @@ object ParseLoopContext {
     __obj.asInstanceOf[ParseLoopContext]
   }
   
-  extension [Self <: ParseLoopContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseLoopContext] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

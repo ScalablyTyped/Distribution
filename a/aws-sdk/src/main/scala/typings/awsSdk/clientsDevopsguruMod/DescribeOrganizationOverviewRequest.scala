@@ -33,7 +33,8 @@ object DescribeOrganizationOverviewRequest {
     __obj.asInstanceOf[DescribeOrganizationOverviewRequest]
   }
   
-  extension [Self <: DescribeOrganizationOverviewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOrganizationOverviewRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

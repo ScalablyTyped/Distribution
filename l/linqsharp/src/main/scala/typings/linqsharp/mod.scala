@@ -49,7 +49,8 @@ object mod {
         __obj.asInstanceOf[IEqualityComparer[T]]
       }
       
-      extension [Self <: IEqualityComparer[?], T](x: Self & IEqualityComparer[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IEqualityComparer[?], T] (val x: Self & IEqualityComparer[T]) extends AnyVal {
         
         inline def setEquals(value: (T, T) => Boolean): Self = StObject.set(x, "Equals", js.Any.fromFunction2(value))
         
@@ -70,7 +71,8 @@ object mod {
         __obj.asInstanceOf[IGrouping[TKey, T]]
       }
       
-      extension [Self <: IGrouping[?, ?], TKey, T](x: Self & (IGrouping[TKey, T])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IGrouping[?, ?], TKey, T] (val x: Self & (IGrouping[TKey, T])) extends AnyVal {
         
         inline def setElements(value: js.Array[T]): Self = StObject.set(x, "Elements", value.asInstanceOf[js.Any])
         

@@ -46,7 +46,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HeapDiff]
     }
     
-    extension [Self <: HeapDiff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapDiff] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: () => HeapDiffInformation): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     }
@@ -77,7 +78,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HeapDiffChange]
     }
     
-    extension [Self <: HeapDiffChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapDiffChange] (val x: Self) extends AnyVal {
       
       inline def setAllocated_nodes(value: Double): Self = StObject.set(x, "allocated_nodes", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HeapDiffDetail]
     }
     
-    extension [Self <: HeapDiffDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapDiffDetail] (val x: Self) extends AnyVal {
       
       inline def setPlussign(value: Double): Self = StObject.set(x, "+", value.asInstanceOf[js.Any])
       
@@ -145,7 +148,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HeapDiffInformation]
     }
     
-    extension [Self <: HeapDiffInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapDiffInformation] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: HeapDiffSnapshot): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -170,7 +174,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HeapDiffSnapshot]
     }
     
-    extension [Self <: HeapDiffSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapDiffSnapshot] (val x: Self) extends AnyVal {
       
       inline def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
@@ -199,7 +204,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LeakInformation]
     }
     
-    extension [Self <: LeakInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeakInformation] (val x: Self) extends AnyVal {
       
       inline def setGrowth(value: Double): Self = StObject.set(x, "growth", value.asInstanceOf[js.Any])
       
@@ -259,7 +265,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StatsInformation]
     }
     
-    extension [Self <: StatsInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsInformation] (val x: Self) extends AnyVal {
       
       inline def setCurrent_base(value: Double): Self = StObject.set(x, "current_base", value.asInstanceOf[js.Any])
       

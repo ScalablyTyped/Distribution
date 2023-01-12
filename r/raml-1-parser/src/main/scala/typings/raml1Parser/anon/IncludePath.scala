@@ -15,7 +15,8 @@ object IncludePath {
     __obj.asInstanceOf[IncludePath]
   }
   
-  extension [Self <: IncludePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludePath] (val x: Self) extends AnyVal {
     
     inline def setIncludePath(value: () => java.lang.String): Self = StObject.set(x, "includePath", js.Any.fromFunction0(value))
   }

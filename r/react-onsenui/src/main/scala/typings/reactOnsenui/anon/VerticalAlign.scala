@@ -20,7 +20,8 @@ object VerticalAlign {
     __obj.asInstanceOf[VerticalAlign]
   }
   
-  extension [Self <: VerticalAlign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerticalAlign] (val x: Self) extends AnyVal {
     
     inline def setVerticalAlign(value: top | bottom | center): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     

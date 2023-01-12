@@ -38,7 +38,8 @@ object libTypescriptSrcUseEventEmitterMod {
       __obj.asInstanceOf[NavigationEventEmitter[T]]
     }
     
-    extension [Self <: NavigationEventEmitter[?], T /* <: Record[String, Any] */](x: Self & NavigationEventEmitter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationEventEmitter[?], T /* <: Record[String, Any] */] (val x: Self & NavigationEventEmitter[T]) extends AnyVal {
       
       inline def setCreate(value: String => EventConsumer[T]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }

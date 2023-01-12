@@ -23,7 +23,8 @@ object ASPxClientFilterAppliedEventArgs {
     __obj.asInstanceOf[ASPxClientFilterAppliedEventArgs]
   }
   
-  extension [Self <: ASPxClientFilterAppliedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFilterAppliedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFilterExpression(value: String): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
   }

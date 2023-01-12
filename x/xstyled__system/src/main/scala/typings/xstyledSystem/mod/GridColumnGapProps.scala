@@ -16,7 +16,8 @@ object GridColumnGapProps {
     __obj.asInstanceOf[GridColumnGapProps[TLength]]
   }
   
-  extension [Self <: GridColumnGapProps[?], TLength](x: Self & GridColumnGapProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridColumnGapProps[?], TLength] (val x: Self & GridColumnGapProps[TLength]) extends AnyVal {
     
     inline def setGridColumnGap(value: ResponsiveValue[GridColumnGap[TLength]]): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
     

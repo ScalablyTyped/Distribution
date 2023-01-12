@@ -23,7 +23,8 @@ object OutputSource {
     __obj.asInstanceOf[OutputSource]
   }
   
-  extension [Self <: OutputSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputSource] (val x: Self) extends AnyVal {
     
     inline def setOutputSourceId(value: OutputSourceId): Self = StObject.set(x, "OutputSourceId", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object WorkflowRun {
     __obj.asInstanceOf[WorkflowRun]
   }
   
-  extension [Self <: WorkflowRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowRun] (val x: Self) extends AnyVal {
     
     inline def setCompletedOn(value: js.Date): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     

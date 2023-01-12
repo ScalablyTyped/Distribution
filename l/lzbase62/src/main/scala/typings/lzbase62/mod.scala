@@ -24,7 +24,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DataOption]
     }
     
-    extension [Self <: DataOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataOption] (val x: Self) extends AnyVal {
       
       inline def setOnData(value: String => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction1(value))
     }
@@ -41,7 +42,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EndOption]
     }
     
-    extension [Self <: EndOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndOption] (val x: Self) extends AnyVal {
       
       inline def setOnEnd(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
     }

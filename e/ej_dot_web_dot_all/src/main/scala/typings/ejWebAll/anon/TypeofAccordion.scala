@@ -20,7 +20,8 @@ object TypeofAccordion {
     __obj.asInstanceOf[TypeofAccordion]
   }
   
-  extension [Self <: TypeofAccordion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAccordion] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Accordion): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

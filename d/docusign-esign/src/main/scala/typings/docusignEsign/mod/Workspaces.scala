@@ -88,7 +88,8 @@ object Workspaces {
     __obj.asInstanceOf[Workspaces]
   }
   
-  extension [Self <: Workspaces](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Workspaces] (val x: Self) extends AnyVal {
     
     inline def setBillableAccountId(value: String): Self = StObject.set(x, "billableAccountId", value.asInstanceOf[js.Any])
     

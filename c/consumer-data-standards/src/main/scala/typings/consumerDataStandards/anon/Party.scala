@@ -29,7 +29,8 @@ object Party {
     __obj.asInstanceOf[Party]
   }
   
-  extension [Self <: Party](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Party] (val x: Self) extends AnyVal {
     
     inline def setParty(value: String): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
     

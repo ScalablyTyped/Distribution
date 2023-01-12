@@ -39,7 +39,8 @@ object ProviderResourceType {
     __obj.asInstanceOf[ProviderResourceType]
   }
   
-  extension [Self <: ProviderResourceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProviderResourceType] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[AliasType]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

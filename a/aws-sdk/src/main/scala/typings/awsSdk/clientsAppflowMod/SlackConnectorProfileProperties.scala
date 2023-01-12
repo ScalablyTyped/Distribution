@@ -18,7 +18,8 @@ object SlackConnectorProfileProperties {
     __obj.asInstanceOf[SlackConnectorProfileProperties]
   }
   
-  extension [Self <: SlackConnectorProfileProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlackConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }

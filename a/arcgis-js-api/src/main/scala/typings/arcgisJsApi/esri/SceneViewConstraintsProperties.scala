@@ -34,7 +34,8 @@ object SceneViewConstraintsProperties {
     __obj.asInstanceOf[SceneViewConstraintsProperties]
   }
   
-  extension [Self <: SceneViewConstraintsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewConstraintsProperties] (val x: Self) extends AnyVal {
     
     inline def setAltitude(value: SceneViewConstraintsAltitudeProperties): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     

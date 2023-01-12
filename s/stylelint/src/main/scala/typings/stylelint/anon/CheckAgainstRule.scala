@@ -57,7 +57,8 @@ object CheckAgainstRule {
     __obj.asInstanceOf[CheckAgainstRule]
   }
   
-  extension [Self <: CheckAgainstRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckAgainstRule] (val x: Self) extends AnyVal {
     
     inline def setCheckAgainstRule(value: (Context[Any, Any], js.Function1[/* warning */ Warning, Unit]) => Unit): Self = StObject.set(x, "checkAgainstRule", js.Any.fromFunction2(value))
     

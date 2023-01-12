@@ -37,7 +37,8 @@ object DestinationNotWorkingEvidence {
     __obj.asInstanceOf[DestinationNotWorkingEvidence]
   }
   
-  extension [Self <: DestinationNotWorkingEvidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationNotWorkingEvidence] (val x: Self) extends AnyVal {
     
     inline def setDnsError(value: String): Self = StObject.set(x, "dnsError", value.asInstanceOf[js.Any])
     

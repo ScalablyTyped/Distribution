@@ -23,7 +23,8 @@ object AssociatedClientDevice {
     __obj.asInstanceOf[AssociatedClientDevice]
   }
   
-  extension [Self <: AssociatedClientDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatedClientDevice] (val x: Self) extends AnyVal {
     
     inline def setAssociationTimestamp(value: js.Date): Self = StObject.set(x, "associationTimestamp", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeLocationS3Request {
     __obj.asInstanceOf[DescribeLocationS3Request]
   }
   
-  extension [Self <: DescribeLocationS3Request](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLocationS3Request] (val x: Self) extends AnyVal {
     
     inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
   }

@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[GrayMatterFile[I]]
     }
     
-    extension [Self <: GrayMatterFile[?], I /* <: Input */](x: Self & GrayMatterFile[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrayMatterFile[?], I /* <: Input */] (val x: Self & GrayMatterFile[I]) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object mod {
       __obj.asInstanceOf[GrayMatterOption[I, O]]
     }
     
-    extension [Self <: GrayMatterOption[?, ?], I /* <: Input */, O /* <: GrayMatterOption[I, O] */](x: Self & (GrayMatterOption[I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrayMatterOption[?, ?], I /* <: Input */, O /* <: GrayMatterOption[I, O] */] (val x: Self & (GrayMatterOption[I, O])) extends AnyVal {
       
       inline def setDelimiters(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       

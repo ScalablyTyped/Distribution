@@ -16,7 +16,8 @@ object GoogleDatastoreAdminV1PrepareStepDetails {
     __obj.asInstanceOf[GoogleDatastoreAdminV1PrepareStepDetails]
   }
   
-  extension [Self <: GoogleDatastoreAdminV1PrepareStepDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDatastoreAdminV1PrepareStepDetails] (val x: Self) extends AnyVal {
     
     inline def setConcurrencyMode(value: String): Self = StObject.set(x, "concurrencyMode", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object StackFrameFormat {
     __obj.asInstanceOf[StackFrameFormat]
   }
   
-  extension [Self <: StackFrameFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackFrameFormat] (val x: Self) extends AnyVal {
     
     inline def setIncludeAll(value: Boolean): Self = StObject.set(x, "includeAll", value.asInstanceOf[js.Any])
     

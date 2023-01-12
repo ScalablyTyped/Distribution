@@ -48,7 +48,8 @@ object UpdateProvisioningTemplateRequest {
     __obj.asInstanceOf[UpdateProvisioningTemplateRequest]
   }
   
-  extension [Self <: UpdateProvisioningTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateProvisioningTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultVersionId(value: TemplateVersionId): Self = StObject.set(x, "defaultVersionId", value.asInstanceOf[js.Any])
     

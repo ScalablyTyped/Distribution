@@ -18,7 +18,8 @@ object OpenMode {
     __obj.asInstanceOf[OpenMode]
   }
   
-  extension [Self <: OpenMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenMode] (val x: Self) extends AnyVal {
     
     inline def setOpenMode(value: Nullable[Double]): Self = StObject.set(x, "openMode", value.asInstanceOf[js.Any])
     

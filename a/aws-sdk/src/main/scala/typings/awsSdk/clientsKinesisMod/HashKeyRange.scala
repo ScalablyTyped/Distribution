@@ -23,7 +23,8 @@ object HashKeyRange {
     __obj.asInstanceOf[HashKeyRange]
   }
   
-  extension [Self <: HashKeyRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashKeyRange] (val x: Self) extends AnyVal {
     
     inline def setEndingHashKey(value: HashKey): Self = StObject.set(x, "EndingHashKey", value.asInstanceOf[js.Any])
     

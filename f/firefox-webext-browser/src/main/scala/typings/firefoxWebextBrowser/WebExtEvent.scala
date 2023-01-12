@@ -23,7 +23,8 @@ object WebExtEvent {
     __obj.asInstanceOf[WebExtEvent[TCallback]]
   }
   
-  extension [Self <: WebExtEvent[?], TCallback /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & WebExtEvent[TCallback]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtEvent[?], TCallback /* <: js.Function1[/* repeated */ Any, Any] */] (val x: Self & WebExtEvent[TCallback]) extends AnyVal {
     
     inline def setAddListener(value: TCallback => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     

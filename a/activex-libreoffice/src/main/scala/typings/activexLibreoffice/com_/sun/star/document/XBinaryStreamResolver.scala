@@ -49,7 +49,8 @@ object XBinaryStreamResolver {
     __obj.asInstanceOf[XBinaryStreamResolver]
   }
   
-  extension [Self <: XBinaryStreamResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBinaryStreamResolver] (val x: Self) extends AnyVal {
     
     inline def setCreateOutputStream(value: () => XOutputStream): Self = StObject.set(x, "createOutputStream", js.Any.fromFunction0(value))
     

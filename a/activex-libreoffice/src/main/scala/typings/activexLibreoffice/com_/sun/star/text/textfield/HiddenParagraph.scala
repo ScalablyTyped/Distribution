@@ -65,7 +65,8 @@ object HiddenParagraph {
     __obj.asInstanceOf[HiddenParagraph]
   }
   
-  extension [Self <: HiddenParagraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HiddenParagraph] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

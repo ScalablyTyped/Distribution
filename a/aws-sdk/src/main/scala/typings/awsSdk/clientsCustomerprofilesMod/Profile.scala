@@ -128,7 +128,8 @@ object Profile {
     __obj.asInstanceOf[Profile]
   }
   
-  extension [Self <: Profile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
     
     inline def setAccountNumber(value: string1To255): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetResourcePolicyRequest {
     __obj.asInstanceOf[GetResourcePolicyRequest]
   }
   
-  extension [Self <: GetResourcePolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourcePolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: GlueResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     

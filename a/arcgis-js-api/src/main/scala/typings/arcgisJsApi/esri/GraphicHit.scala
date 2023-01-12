@@ -40,7 +40,8 @@ object GraphicHit {
     __obj.asInstanceOf[GraphicHit]
   }
   
-  extension [Self <: GraphicHit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicHit] (val x: Self) extends AnyVal {
     
     inline def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     

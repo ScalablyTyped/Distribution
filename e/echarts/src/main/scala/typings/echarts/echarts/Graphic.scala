@@ -69,7 +69,8 @@ object Graphic {
     __obj.asInstanceOf[Graphic]
   }
   
-  extension [Self <: Graphic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Graphic] (val x: Self) extends AnyVal {
     
     inline def setClipPointsByRect(value: (js.Array[js.Array[Double]], ERectangle) => js.Array[js.Array[Double]]): Self = StObject.set(x, "clipPointsByRect", js.Any.fromFunction2(value))
     

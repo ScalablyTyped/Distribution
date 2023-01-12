@@ -58,7 +58,8 @@ object AggregationRequest {
     __obj.asInstanceOf[AggregationRequest]
   }
   
-  extension [Self <: AggregationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountAggregation(value: AccountAggregation): Self = StObject.set(x, "accountAggregation", value.asInstanceOf[js.Any])
     

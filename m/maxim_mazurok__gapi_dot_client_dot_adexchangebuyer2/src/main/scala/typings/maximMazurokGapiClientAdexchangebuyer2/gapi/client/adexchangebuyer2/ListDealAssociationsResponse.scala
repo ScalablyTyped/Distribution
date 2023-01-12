@@ -22,7 +22,8 @@ object ListDealAssociationsResponse {
     __obj.asInstanceOf[ListDealAssociationsResponse]
   }
   
-  extension [Self <: ListDealAssociationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDealAssociationsResponse] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: js.Array[CreativeDealAssociation]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
     

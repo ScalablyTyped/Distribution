@@ -23,7 +23,8 @@ object DeploymentReadyOption {
     __obj.asInstanceOf[DeploymentReadyOption]
   }
   
-  extension [Self <: DeploymentReadyOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentReadyOption] (val x: Self) extends AnyVal {
     
     inline def setActionOnTimeout(value: DeploymentReadyAction): Self = StObject.set(x, "actionOnTimeout", value.asInstanceOf[js.Any])
     

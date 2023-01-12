@@ -72,7 +72,8 @@ object ReactiveAnomaly {
     __obj.asInstanceOf[ReactiveAnomaly]
   }
   
-  extension [Self <: ReactiveAnomaly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactiveAnomaly] (val x: Self) extends AnyVal {
     
     inline def setAnomalyReportedTimeRange(value: AnomalyReportedTimeRange): Self = StObject.set(x, "AnomalyReportedTimeRange", value.asInstanceOf[js.Any])
     

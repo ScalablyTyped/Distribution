@@ -23,7 +23,8 @@ object FailoverShardRequest {
     __obj.asInstanceOf[FailoverShardRequest]
   }
   
-  extension [Self <: FailoverShardRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailoverShardRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterName(value: String): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
     

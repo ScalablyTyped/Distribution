@@ -27,7 +27,8 @@ object sdkRequestMod {
     @js.native
     def apply[ResponseType](options: Content[ResponseType]): STRequest[ResponseType] = js.native
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
@@ -70,7 +71,8 @@ object sdkRequestMod {
       __obj.asInstanceOf[BaseRequest]
     }
     
-    extension [Self <: BaseRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseRequest] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object sdkRequestMod {
       __obj.asInstanceOf[BaseResponse]
     }
     
-    extension [Self <: BaseResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseResponse] (val x: Self) extends AnyVal {
       
       inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object sdkRequestMod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setJson(value: js.Object): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }
@@ -187,7 +191,8 @@ object sdkRequestMod {
       __obj.asInstanceOf[STRequest[ResponseType]]
     }
     
-    extension [Self <: STRequest[?], ResponseType](x: Self & STRequest[ResponseType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: STRequest[?], ResponseType] (val x: Self & STRequest[ResponseType]) extends AnyVal {
       
       inline def setResponse(value: STResponse[ResponseType]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
@@ -204,7 +209,8 @@ object sdkRequestMod {
       __obj.asInstanceOf[STResponse[T]]
     }
     
-    extension [Self <: STResponse[?], T](x: Self & STResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: STResponse[?], T] (val x: Self & STResponse[T]) extends AnyVal {
       
       inline def setJson(value: T): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }

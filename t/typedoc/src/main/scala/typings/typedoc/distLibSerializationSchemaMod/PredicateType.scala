@@ -28,7 +28,8 @@ object PredicateType {
     __obj.asInstanceOf[PredicateType]
   }
   
-  extension [Self <: PredicateType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredicateType] (val x: Self) extends AnyVal {
     
     inline def setAsserts(value: ToSerialized[Boolean]): Self = StObject.set(x, "asserts", value.asInstanceOf[js.Any])
     

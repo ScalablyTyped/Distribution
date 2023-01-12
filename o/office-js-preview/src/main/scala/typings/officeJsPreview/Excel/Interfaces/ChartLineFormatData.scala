@@ -52,7 +52,8 @@ object ChartLineFormatData {
     __obj.asInstanceOf[ChartLineFormatData]
   }
   
-  extension [Self <: ChartLineFormatData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartLineFormatData] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

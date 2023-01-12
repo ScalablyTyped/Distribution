@@ -23,7 +23,8 @@ object AssetPropertyTimestamp {
     __obj.asInstanceOf[AssetPropertyTimestamp]
   }
   
-  extension [Self <: AssetPropertyTimestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetPropertyTimestamp] (val x: Self) extends AnyVal {
     
     inline def setOffsetInNanos(value: AssetPropertyOffsetInNanos): Self = StObject.set(x, "offsetInNanos", value.asInstanceOf[js.Any])
     

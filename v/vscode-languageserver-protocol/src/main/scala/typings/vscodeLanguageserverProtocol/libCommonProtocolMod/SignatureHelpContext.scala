@@ -42,7 +42,8 @@ object SignatureHelpContext {
     __obj.asInstanceOf[SignatureHelpContext]
   }
   
-  extension [Self <: SignatureHelpContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureHelpContext] (val x: Self) extends AnyVal {
     
     inline def setActiveSignatureHelp(value: SignatureHelp): Self = StObject.set(x, "activeSignatureHelp", value.asInstanceOf[js.Any])
     

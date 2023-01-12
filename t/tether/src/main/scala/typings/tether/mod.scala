@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[ITetherConstraint]
     }
     
-    extension [Self <: ITetherConstraint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITetherConstraint] (val x: Self) extends AnyVal {
       
       inline def setAttachment(value: String): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object mod {
       __obj.asInstanceOf[ITetherOptions]
     }
     
-    extension [Self <: ITetherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITetherOptions] (val x: Self) extends AnyVal {
       
       inline def setAttachment(value: String): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
       
@@ -202,7 +204,8 @@ object mod {
       __obj.asInstanceOf[Tether]
     }
     
-    extension [Self <: Tether](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tether] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

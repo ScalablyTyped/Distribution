@@ -23,7 +23,8 @@ object FrameTree {
     __obj.asInstanceOf[FrameTree]
   }
   
-  extension [Self <: FrameTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameTree] (val x: Self) extends AnyVal {
     
     inline def setChildFrames(value: js.Array[FrameTree]): Self = StObject.set(x, "childFrames", value.asInstanceOf[js.Any])
     

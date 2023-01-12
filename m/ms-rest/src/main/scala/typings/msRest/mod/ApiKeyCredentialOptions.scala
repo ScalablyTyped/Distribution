@@ -24,7 +24,8 @@ object ApiKeyCredentialOptions {
     __obj.asInstanceOf[ApiKeyCredentialOptions]
   }
   
-  extension [Self <: ApiKeyCredentialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiKeyCredentialOptions] (val x: Self) extends AnyVal {
     
     inline def setInHeader(value: StringDictionary[Any]): Self = StObject.set(x, "inHeader", value.asInstanceOf[js.Any])
     

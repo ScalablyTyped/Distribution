@@ -21,7 +21,8 @@ object RefSchema {
     __obj.asInstanceOf[RefSchema]
   }
   
-  extension [Self <: RefSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefSchema] (val x: Self) extends AnyVal {
     
     inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
   }

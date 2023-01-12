@@ -43,7 +43,8 @@ object NetworkConnectionAction {
     __obj.asInstanceOf[NetworkConnectionAction]
   }
   
-  extension [Self <: NetworkConnectionAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkConnectionAction] (val x: Self) extends AnyVal {
     
     inline def setBlocked(value: Boolean): Self = StObject.set(x, "Blocked", value.asInstanceOf[js.Any])
     

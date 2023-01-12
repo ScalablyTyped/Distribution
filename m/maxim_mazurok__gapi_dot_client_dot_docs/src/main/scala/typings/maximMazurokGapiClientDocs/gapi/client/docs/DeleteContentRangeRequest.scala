@@ -22,7 +22,8 @@ object DeleteContentRangeRequest {
     __obj.asInstanceOf[DeleteContentRangeRequest]
   }
   
-  extension [Self <: DeleteContentRangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteContentRangeRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

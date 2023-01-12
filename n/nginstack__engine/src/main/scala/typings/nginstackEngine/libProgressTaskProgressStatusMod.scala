@@ -64,7 +64,8 @@ object libProgressTaskProgressStatusMod {
       __obj.asInstanceOf[TaskProgressStatus]
     }
     
-    extension [Self <: TaskProgressStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskProgressStatus] (val x: Self) extends AnyVal {
       
       inline def setCompletedWork(value: Double): Self = StObject.set(x, "completedWork", value.asInstanceOf[js.Any])
       

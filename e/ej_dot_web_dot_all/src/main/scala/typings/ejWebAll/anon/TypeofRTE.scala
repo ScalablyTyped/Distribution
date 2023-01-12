@@ -20,7 +20,8 @@ object TypeofRTE {
     __obj.asInstanceOf[TypeofRTE]
   }
   
-  extension [Self <: TypeofRTE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRTE] (val x: Self) extends AnyVal {
     
     inline def setFn(value: RTE): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

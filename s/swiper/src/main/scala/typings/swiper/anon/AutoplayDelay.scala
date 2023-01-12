@@ -29,7 +29,8 @@ object AutoplayDelay {
     __obj.asInstanceOf[AutoplayDelay]
   }
   
-  extension [Self <: AutoplayDelay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoplayDelay] (val x: Self) extends AnyVal {
     
     inline def setAutoplayDelay(value: `data-swiper-autoplay`): Self = StObject.set(x, "autoplayDelay", value.asInstanceOf[js.Any])
     

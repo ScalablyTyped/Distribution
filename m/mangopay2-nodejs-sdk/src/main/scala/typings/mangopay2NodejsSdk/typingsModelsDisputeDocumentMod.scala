@@ -27,7 +27,8 @@ object typingsModelsDisputeDocumentMod {
         __obj.asInstanceOf[CreateDisputeDocument]
       }
       
-      extension [Self <: CreateDisputeDocument](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateDisputeDocument] (val x: Self) extends AnyVal {
         
         inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
         
@@ -68,7 +69,8 @@ object typingsModelsDisputeDocumentMod {
         __obj.asInstanceOf[CreateDisputeDocumentPage]
       }
       
-      extension [Self <: CreateDisputeDocumentPage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateDisputeDocumentPage] (val x: Self) extends AnyVal {
         
         inline def setFile(value: String): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
       }
@@ -131,7 +133,8 @@ object typingsModelsDisputeDocumentMod {
         __obj.asInstanceOf[DisputeDocumentData]
       }
       
-      extension [Self <: DisputeDocumentData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DisputeDocumentData] (val x: Self) extends AnyVal {
         
         inline def setDisputeId(value: String): Self = StObject.set(x, "DisputeId", value.asInstanceOf[js.Any])
         
@@ -195,7 +198,8 @@ object typingsModelsDisputeDocumentMod {
         __obj.asInstanceOf[DocumentPageConsult]
       }
       
-      extension [Self <: DocumentPageConsult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DocumentPageConsult] (val x: Self) extends AnyVal {
         
         inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
         
@@ -270,7 +274,8 @@ object typingsModelsDisputeDocumentMod {
         __obj.asInstanceOf[SubmitDisputeDocument]
       }
       
-      extension [Self <: SubmitDisputeDocument](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubmitDisputeDocument] (val x: Self) extends AnyVal {
         
         inline def setStatus(value: VALIDATION_ASKED): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
         

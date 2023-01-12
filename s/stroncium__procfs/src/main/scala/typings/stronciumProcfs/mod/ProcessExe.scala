@@ -17,7 +17,8 @@ object ProcessExe {
     __obj.asInstanceOf[ProcessExe]
   }
   
-  extension [Self <: ProcessExe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessExe] (val x: Self) extends AnyVal {
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

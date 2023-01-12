@@ -52,7 +52,8 @@ object RaycastResult {
     __obj.asInstanceOf[RaycastResult]
   }
   
-  extension [Self <: RaycastResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaycastResult] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Reorder {
     __obj.asInstanceOf[Reorder]
   }
   
-  extension [Self <: Reorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reorder] (val x: Self) extends AnyVal {
     
     inline def setReorder(value: Row): Self = StObject.set(x, "reorder", value.asInstanceOf[js.Any])
   }

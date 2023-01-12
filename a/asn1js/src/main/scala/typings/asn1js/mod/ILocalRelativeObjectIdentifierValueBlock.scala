@@ -15,7 +15,8 @@ object ILocalRelativeObjectIdentifierValueBlock {
     __obj.asInstanceOf[ILocalRelativeObjectIdentifierValueBlock]
   }
   
-  extension [Self <: ILocalRelativeObjectIdentifierValueBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocalRelativeObjectIdentifierValueBlock] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

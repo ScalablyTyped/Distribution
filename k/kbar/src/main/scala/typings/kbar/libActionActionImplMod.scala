@@ -64,7 +64,8 @@ object libActionActionImplMod {
       __obj.asInstanceOf[ActionImplOptions]
     }
     
-    extension [Self <: ActionImplOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionImplOptions] (val x: Self) extends AnyVal {
       
       inline def setAncestors(value: js.Array[ActionImpl]): Self = StObject.set(x, "ancestors", value.asInstanceOf[js.Any])
       

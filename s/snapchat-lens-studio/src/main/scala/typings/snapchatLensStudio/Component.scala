@@ -102,7 +102,8 @@ object Component {
       __obj.asInstanceOf[Animation]
     }
     
-    extension [Self <: Animation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
       
       inline def setGetAnimationLayerByName(value: String => AnimationLayer): Self = StObject.set(x, "getAnimationLayerByName", js.Any.fromFunction1(value))
       
@@ -202,7 +203,8 @@ object Component {
       __obj.asInstanceOf[AnimationMixer]
     }
     
-    extension [Self <: AnimationMixer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationMixer] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -309,7 +311,8 @@ object Component {
       __obj.asInstanceOf[AudioComponent]
     }
     
-    extension [Self <: AudioComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioComponent] (val x: Self) extends AnyVal {
       
       inline def setAudioTrack(value: AudioTrackAsset): Self = StObject.set(x, "audioTrack", value.asInstanceOf[js.Any])
       
@@ -411,7 +414,8 @@ object Component {
       __obj.asInstanceOf[BaseMeshVisual]
     }
     
-    extension [Self <: BaseMeshVisual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseMeshVisual] (val x: Self) extends AnyVal {
       
       inline def setExtentsTarget(value: ScreenTransform): Self = StObject.set(x, "extentsTarget", value.asInstanceOf[js.Any])
       
@@ -475,7 +479,8 @@ object Component {
       __obj.asInstanceOf[BlendShapes]
     }
     
-    extension [Self <: BlendShapes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlendShapes] (val x: Self) extends AnyVal {
       
       inline def setBlendNormals(value: Boolean): Self = StObject.set(x, "blendNormals", value.asInstanceOf[js.Any])
       
@@ -626,7 +631,8 @@ object Component {
       __obj.asInstanceOf[typings.snapchatLensStudio.Component.Camera]
     }
     
-    extension [Self <: typings.snapchatLensStudio.Component.Camera](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.snapchatLensStudio.Component.Camera] (val x: Self) extends AnyVal {
       
       inline def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
       
@@ -728,7 +734,8 @@ object Component {
       __obj.asInstanceOf[DeviceLocationTrackingComponent]
     }
     
-    extension [Self <: DeviceLocationTrackingComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceLocationTrackingComponent] (val x: Self) extends AnyVal {
       
       inline def setDistanceToLocation(value: Double): Self = StObject.set(x, "distanceToLocation", value.asInstanceOf[js.Any])
       
@@ -867,7 +874,8 @@ object Component {
       __obj.asInstanceOf[DeviceTracking]
     }
     
-    extension [Self <: DeviceTracking](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceTracking] (val x: Self) extends AnyVal {
       
       inline def setCalculateWorldMeshHistogram(value: (vec3, Double) => TrackedMeshHistogramResult): Self = StObject.set(x, "calculateWorldMeshHistogram", js.Any.fromFunction2(value))
       
@@ -951,7 +959,8 @@ object Component {
       __obj.asInstanceOf[EyeColorVisual]
     }
     
-    extension [Self <: EyeColorVisual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EyeColorVisual] (val x: Self) extends AnyVal {
       
       inline def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
     }
@@ -1030,7 +1039,8 @@ object Component {
       __obj.asInstanceOf[FaceInsetVisual]
     }
     
-    extension [Self <: FaceInsetVisual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceInsetVisual] (val x: Self) extends AnyVal {
       
       inline def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
       
@@ -1118,7 +1128,8 @@ object Component {
       __obj.asInstanceOf[FaceMaskVisual]
     }
     
-    extension [Self <: FaceMaskVisual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceMaskVisual] (val x: Self) extends AnyVal {
       
       inline def setCustomMaskOnMouthClosed(value: Texture): Self = StObject.set(x, "customMaskOnMouthClosed", value.asInstanceOf[js.Any])
       
@@ -1176,7 +1187,8 @@ object Component {
       __obj.asInstanceOf[FaceStretchVisual]
     }
     
-    extension [Self <: FaceStretchVisual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceStretchVisual] (val x: Self) extends AnyVal {
       
       inline def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
       
@@ -1237,7 +1249,8 @@ object Component {
       __obj.asInstanceOf[Head]
     }
     
-    extension [Self <: Head](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Head] (val x: Self) extends AnyVal {
       
       inline def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
       
@@ -1287,7 +1300,8 @@ object Component {
       __obj.asInstanceOf[HintsComponent]
     }
     
-    extension [Self <: HintsComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HintsComponent] (val x: Self) extends AnyVal {
       
       inline def setHideHint(
         value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(hintID : / * template literal string: lens_hint_${|blow_a_kiss|come_closer|do_not_${smile|try_with_a_friend}|find_face|keep_raising_your_eyebrows|kiss|kiss_again|look_${around|down|left|right|up}|make_some_noise|nod_your_head|now_${kiss|open_your_mouth|raise_your_eyebrows|smile}|open_your_${mouth|mouth_again}|raise_${eyebrows_or_open_mouth|your_eyebrows|your_eyebrows_again}|smile|smile_again|swap_camera|tap|tap_${a_surface|ground|ground_to_place|surface_to_place}|try_${friend|rear_camera}|turn_around|walk_through_the_door} * / string, time : number): boolean>[0] */ js.Any => Boolean
@@ -1359,7 +1373,8 @@ object Component {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
       
@@ -1457,7 +1472,8 @@ object Component {
       __obj.asInstanceOf[LightSource]
     }
     
-    extension [Self <: LightSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LightSource] (val x: Self) extends AnyVal {
       
       inline def setAutoLightSourcePosition(value: Boolean): Self = StObject.set(x, "autoLightSourcePosition", value.asInstanceOf[js.Any])
       
@@ -1533,7 +1549,8 @@ object Component {
       __obj.asInstanceOf[LiquifyVisual]
     }
     
-    extension [Self <: LiquifyVisual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiquifyVisual] (val x: Self) extends AnyVal {
       
       inline def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
       
@@ -1584,7 +1601,8 @@ object Component {
       __obj.asInstanceOf[typings.snapchatLensStudio.Component.LookAtComponent]
     }
     
-    extension [Self <: typings.snapchatLensStudio.Component.LookAtComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.snapchatLensStudio.Component.LookAtComponent] (val x: Self) extends AnyVal {
       
       inline def setAimVectors(value: AimVectors): Self = StObject.set(x, "aimVectors", value.asInstanceOf[js.Any])
       
@@ -1693,7 +1711,8 @@ object Component {
       __obj.asInstanceOf[MLComponent]
     }
     
-    extension [Self <: MLComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MLComponent] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: js.Array[BasePlaceholder] => Unit): Self = StObject.set(x, "build", js.Any.fromFunction1(value))
       
@@ -1817,7 +1836,8 @@ object Component {
       __obj.asInstanceOf[ManipulateComponent]
     }
     
-    extension [Self <: ManipulateComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManipulateComponent] (val x: Self) extends AnyVal {
       
       inline def setClampWorldPosition(value: () => Unit): Self = StObject.set(x, "clampWorldPosition", js.Any.fromFunction0(value))
       
@@ -1900,7 +1920,8 @@ object Component {
       __obj.asInstanceOf[MarkerTrackingComponent]
     }
     
-    extension [Self <: MarkerTrackingComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerTrackingComponent] (val x: Self) extends AnyVal {
       
       inline def setAutoEnableWhenTracking(value: Boolean): Self = StObject.set(x, "autoEnableWhenTracking", value.asInstanceOf[js.Any])
       
@@ -1977,7 +1998,8 @@ object Component {
       __obj.asInstanceOf[MaterialMeshVisual]
     }
     
-    extension [Self <: MaterialMeshVisual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaterialMeshVisual] (val x: Self) extends AnyVal {
       
       inline def setAddMaterial(value: Material => Unit): Self = StObject.set(x, "addMaterial", js.Any.fromFunction1(value))
       
@@ -1993,7 +2015,8 @@ object Component {
     }
   }
   
-  extension [Self <: Component](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
@@ -2052,7 +2075,8 @@ object Component {
       __obj.asInstanceOf[ObjectTracking]
     }
     
-    extension [Self <: ObjectTracking](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectTracking] (val x: Self) extends AnyVal {
       
       inline def setAutoEnableWhenTracking(value: Boolean): Self = StObject.set(x, "autoEnableWhenTracking", value.asInstanceOf[js.Any])
       
@@ -2122,7 +2146,8 @@ object Component {
       __obj.asInstanceOf[typings.snapchatLensStudio.Component.PinToMeshComponent]
     }
     
-    extension [Self <: typings.snapchatLensStudio.Component.PinToMeshComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.snapchatLensStudio.Component.PinToMeshComponent] (val x: Self) extends AnyVal {
       
       inline def setOffsetPosition(value: vec3): Self = StObject.set(x, "offsetPosition", value.asInstanceOf[js.Any])
       
@@ -2179,7 +2204,8 @@ object Component {
       __obj.asInstanceOf[RectangleSetter]
     }
     
-    extension [Self <: RectangleSetter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectangleSetter] (val x: Self) extends AnyVal {
       
       inline def setCropTexture(value: Texture): Self = StObject.set(x, "cropTexture", value.asInstanceOf[js.Any])
     }
@@ -2233,7 +2259,8 @@ object Component {
       __obj.asInstanceOf[RenderMeshVisual]
     }
     
-    extension [Self <: RenderMeshVisual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderMeshVisual] (val x: Self) extends AnyVal {
       
       inline def setBlendShape(value: BlendShapes): Self = StObject.set(x, "blendShape", value.asInstanceOf[js.Any])
       
@@ -2308,7 +2335,8 @@ object Component {
       __obj.asInstanceOf[RetouchVisual]
     }
     
-    extension [Self <: RetouchVisual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetouchVisual] (val x: Self) extends AnyVal {
       
       inline def setEyeWhiteningIntensity(value: Double): Self = StObject.set(x, "eyeWhiteningIntensity", value.asInstanceOf[js.Any])
       
@@ -2346,7 +2374,8 @@ object Component {
       __obj.asInstanceOf[ScreenRegionComponent]
     }
     
-    extension [Self <: ScreenRegionComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenRegionComponent] (val x: Self) extends AnyVal {
       
       inline def setRegion(value: ScreenRegionType): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     }
@@ -2453,7 +2482,8 @@ object Component {
       __obj.asInstanceOf[ScreenTransform]
     }
     
-    extension [Self <: ScreenTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenTransform] (val x: Self) extends AnyVal {
       
       inline def setAnchors(value: Rect): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
       
@@ -2537,7 +2567,8 @@ object Component {
       __obj.asInstanceOf[SpriteAligner]
     }
     
-    extension [Self <: SpriteAligner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpriteAligner] (val x: Self) extends AnyVal {
       
       inline def setBindingPoint(value: vec2): Self = StObject.set(x, "bindingPoint", value.asInstanceOf[js.Any])
       
@@ -2626,7 +2657,8 @@ object Component {
       __obj.asInstanceOf[SpriteVisual]
     }
     
-    extension [Self <: SpriteVisual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpriteVisual] (val x: Self) extends AnyVal {
       
       inline def setFillMode(value: `0` | `1` | `2`): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
       
@@ -2721,7 +2753,8 @@ object Component {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setBackgroundSettings(value: BackgroundSettings): Self = StObject.set(x, "backgroundSettings", value.asInstanceOf[js.Any])
       
@@ -2798,7 +2831,8 @@ object Component {
       __obj.asInstanceOf[TouchComponent]
     }
     
-    extension [Self <: TouchComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchComponent] (val x: Self) extends AnyVal {
       
       inline def setAddMeshVisual(value: BaseMeshVisual => Unit): Self = StObject.set(x, "addMeshVisual", js.Any.fromFunction1(value))
       
@@ -2844,7 +2878,8 @@ object Component {
       __obj.asInstanceOf[VertexCache]
     }
     
-    extension [Self <: VertexCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VertexCache] (val x: Self) extends AnyVal {
       
       inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
       
@@ -2880,7 +2915,8 @@ object Component {
       __obj.asInstanceOf[Visual]
     }
     
-    extension [Self <: Visual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visual] (val x: Self) extends AnyVal {
       
       inline def setGetRenderOrder(value: () => Double): Self = StObject.set(x, "getRenderOrder", js.Any.fromFunction0(value))
       

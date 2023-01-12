@@ -27,7 +27,8 @@ object TranslationProps {
     __obj.asInstanceOf[TranslationProps]
   }
   
-  extension [Self <: TranslationProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslationProps] (val x: Self) extends AnyVal {
     
     inline def setKeypath(value: String): Self = StObject.set(x, "keypath", value.asInstanceOf[js.Any])
     

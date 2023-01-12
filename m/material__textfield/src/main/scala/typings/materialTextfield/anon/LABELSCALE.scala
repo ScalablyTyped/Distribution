@@ -15,7 +15,8 @@ object LABELSCALE {
     __obj.asInstanceOf[LABELSCALE]
   }
   
-  extension [Self <: LABELSCALE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LABELSCALE] (val x: Self) extends AnyVal {
     
     inline def setLABEL_SCALE(value: Double): Self = StObject.set(x, "LABEL_SCALE", value.asInstanceOf[js.Any])
   }

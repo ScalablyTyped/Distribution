@@ -29,7 +29,8 @@ object PipeableProfunctor2C {
     __obj.asInstanceOf[PipeableProfunctor2C[F, E]]
   }
   
-  extension [Self <: PipeableProfunctor2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (PipeableProfunctor2C[F, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableProfunctor2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (PipeableProfunctor2C[F, E])) extends AnyVal {
     
     inline def setPromap(
       value: (js.Function1[Any, E], js.Function1[Any, Any]) => js.Function1[

@@ -39,7 +39,8 @@ object ProxyOptions {
     __obj.asInstanceOf[ProxyOptions]
   }
   
-  extension [Self <: ProxyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyOptions] (val x: Self) extends AnyVal {
     
     inline def setError(
       value: (/* err */ ErrnoException, /* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage]) => Unit

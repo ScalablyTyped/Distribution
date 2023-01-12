@@ -18,7 +18,8 @@ object IWindowEvents {
     __obj.asInstanceOf[IWindowEvents]
   }
   
-  extension [Self <: IWindowEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWindowEvents] (val x: Self) extends AnyVal {
     
     inline def setOnCloseWindow(value: () => Boolean): Self = StObject.set(x, "OnCloseWindow", js.Any.fromFunction0(value))
     

@@ -35,7 +35,8 @@ object LayerSet {
     __obj.asInstanceOf[LayerSet]
   }
   
-  extension [Self <: LayerSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerSet] (val x: Self) extends AnyVal {
     
     inline def setContains(value: LayerSet => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     

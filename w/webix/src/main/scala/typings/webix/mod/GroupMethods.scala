@@ -24,7 +24,8 @@ object GroupMethods {
   @js.native
   val ^ : GroupMethods = js.native
   
-  extension [Self <: GroupMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupMethods] (val x: Self) extends AnyVal {
     
     inline def setAny(value: (String, obj) => Unit): Self = StObject.set(x, "any", js.Any.fromFunction2(value))
     

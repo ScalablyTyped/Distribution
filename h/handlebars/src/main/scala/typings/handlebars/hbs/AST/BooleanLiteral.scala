@@ -23,7 +23,8 @@ object BooleanLiteral {
     __obj.asInstanceOf[BooleanLiteral]
   }
   
-  extension [Self <: BooleanLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanLiteral] (val x: Self) extends AnyVal {
     
     inline def setOriginal(value: Boolean): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     

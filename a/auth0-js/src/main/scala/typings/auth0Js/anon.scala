@@ -72,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Audience]
     }
     
-    extension [Self <: Audience](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Audience] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object anon {
       __obj.asInstanceOf[Connection]
     }
     
-    extension [Self <: Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object anon {
       __obj.asInstanceOf[CountryCode]
     }
     
-    extension [Self <: CountryCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountryCode] (val x: Self) extends AnyVal {
       
       inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     }
@@ -194,7 +197,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object anon {
       __obj.asInstanceOf[Hash]
     }
     
-    extension [Self <: Hash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -268,7 +273,8 @@ object anon {
       __obj.asInstanceOf[Jwksuri]
     }
     
-    extension [Self <: Jwksuri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Jwksuri] (val x: Self) extends AnyVal {
       
       inline def set__jwks_uri(value: String): Self = StObject.set(x, "__jwks_uri", value.asInstanceOf[js.Any])
       
@@ -297,7 +303,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -328,7 +335,8 @@ object anon {
       __obj.asInstanceOf[RedirectUri]
     }
     
-    extension [Self <: RedirectUri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectUri] (val x: Self) extends AnyVal {
       
       inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       
@@ -367,7 +375,8 @@ object anon {
       __obj.asInstanceOf[ResponseMode]
     }
     
-    extension [Self <: ResponseMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseMode] (val x: Self) extends AnyVal {
       
       inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       
@@ -433,7 +442,8 @@ object anon {
       __obj.asInstanceOf[emailstringpasswordstring]
     }
     
-    extension [Self <: emailstringpasswordstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: emailstringpasswordstring] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       

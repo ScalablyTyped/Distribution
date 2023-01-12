@@ -28,7 +28,8 @@ object ErrorCode {
     __obj.asInstanceOf[ErrorCode]
   }
   
-  extension [Self <: ErrorCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorCode] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[Document]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

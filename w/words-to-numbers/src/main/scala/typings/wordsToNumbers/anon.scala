@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Fuzzy]
     }
     
-    extension [Self <: Fuzzy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fuzzy] (val x: Self) extends AnyVal {
       
       inline def setFuzzy(value: Boolean): Self = StObject.set(x, "fuzzy", value.asInstanceOf[js.Any])
     }

@@ -604,7 +604,8 @@ object mod {
       __obj.asInstanceOf[ReCAPTCHAProps]
     }
     
-    extension [Self <: ReCAPTCHAProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReCAPTCHAProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

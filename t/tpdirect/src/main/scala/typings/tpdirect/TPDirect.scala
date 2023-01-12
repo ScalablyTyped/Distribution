@@ -40,7 +40,8 @@ object TPDirect {
     __obj.asInstanceOf[TPDirect]
   }
   
-  extension [Self <: TPDirect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TPDirect] (val x: Self) extends AnyVal {
     
     inline def setCard(value: DirectPay): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     

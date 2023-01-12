@@ -24,7 +24,8 @@ object TransitionOpts {
     __obj.asInstanceOf[TransitionOpts]
   }
   
-  extension [Self <: TransitionOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionOpts] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

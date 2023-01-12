@@ -21,7 +21,8 @@ object WatcherExecutionResultInput {
     __obj.asInstanceOf[WatcherExecutionResultInput]
   }
   
-  extension [Self <: WatcherExecutionResultInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherExecutionResultInput] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Record[String, Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

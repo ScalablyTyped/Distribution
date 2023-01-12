@@ -32,7 +32,8 @@ object EvidenceVariableCharacteristicCombination {
     __obj.asInstanceOf[EvidenceVariableCharacteristicCombination]
   }
   
-  extension [Self <: EvidenceVariableCharacteristicCombination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvidenceVariableCharacteristicCombination] (val x: Self) extends AnyVal {
     
     inline def setCode(value: `all-of` | `any-of` | `at-least` | `at-most` | `net-effect`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

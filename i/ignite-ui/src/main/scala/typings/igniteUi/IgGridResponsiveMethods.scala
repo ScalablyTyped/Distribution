@@ -23,7 +23,8 @@ object IgGridResponsiveMethods {
     __obj.asInstanceOf[IgGridResponsiveMethods]
   }
   
-  extension [Self <: IgGridResponsiveMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridResponsiveMethods] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

@@ -56,7 +56,8 @@ object LayoutAnimationsValues {
     __obj.asInstanceOf[LayoutAnimationsValues]
   }
   
-  extension [Self <: LayoutAnimationsValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutAnimationsValues] (val x: Self) extends AnyVal {
     
     inline def setCurrentGlobalOriginX(value: Double): Self = StObject.set(x, "currentGlobalOriginX", value.asInstanceOf[js.Any])
     

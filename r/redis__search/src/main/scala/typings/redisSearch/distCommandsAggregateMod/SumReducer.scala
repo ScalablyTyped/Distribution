@@ -21,7 +21,8 @@ object SumReducer {
     __obj.asInstanceOf[SumReducer]
   }
   
-  extension [Self <: SumReducer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SumReducer] (val x: Self) extends AnyVal {
     
     inline def setProperty(value: PropertyName): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }

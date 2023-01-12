@@ -160,7 +160,8 @@ object Iconanchor {
     __obj.asInstanceOf[Iconanchor]
   }
   
-  extension [Self <: Iconanchor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Iconanchor] (val x: Self) extends AnyVal {
     
     inline def `setIcon-allow-overlap`(value: PropertyValueSpecification[Boolean]): Self = StObject.set(x, "icon-allow-overlap", value.asInstanceOf[js.Any])
     

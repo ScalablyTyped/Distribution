@@ -28,7 +28,8 @@ object ListDeviceDefinitionVersionsRequest {
     __obj.asInstanceOf[ListDeviceDefinitionVersionsRequest]
   }
   
-  extension [Self <: ListDeviceDefinitionVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDeviceDefinitionVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceDefinitionId(value: string): Self = StObject.set(x, "DeviceDefinitionId", value.asInstanceOf[js.Any])
     

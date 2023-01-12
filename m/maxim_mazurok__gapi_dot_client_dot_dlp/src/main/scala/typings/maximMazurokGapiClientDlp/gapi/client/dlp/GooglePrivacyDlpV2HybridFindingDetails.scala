@@ -41,7 +41,8 @@ object GooglePrivacyDlpV2HybridFindingDetails {
     __obj.asInstanceOf[GooglePrivacyDlpV2HybridFindingDetails]
   }
   
-  extension [Self <: GooglePrivacyDlpV2HybridFindingDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2HybridFindingDetails] (val x: Self) extends AnyVal {
     
     inline def setContainerDetails(value: GooglePrivacyDlpV2Container): Self = StObject.set(x, "containerDetails", value.asInstanceOf[js.Any])
     

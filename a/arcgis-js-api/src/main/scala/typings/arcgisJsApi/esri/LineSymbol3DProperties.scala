@@ -25,7 +25,8 @@ object LineSymbol3DProperties {
     __obj.asInstanceOf[LineSymbol3DProperties]
   }
   
-  extension [Self <: LineSymbol3DProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineSymbol3DProperties] (val x: Self) extends AnyVal {
     
     inline def setSymbolLayers(value: CollectionProperties[LineSymbol3DLayerProperti | PathSymbol3DLayerProperti]): Self = StObject.set(x, "symbolLayers", value.asInstanceOf[js.Any])
     

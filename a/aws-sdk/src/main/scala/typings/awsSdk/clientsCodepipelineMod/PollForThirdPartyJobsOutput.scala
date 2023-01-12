@@ -18,7 +18,8 @@ object PollForThirdPartyJobsOutput {
     __obj.asInstanceOf[PollForThirdPartyJobsOutput]
   }
   
-  extension [Self <: PollForThirdPartyJobsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PollForThirdPartyJobsOutput] (val x: Self) extends AnyVal {
     
     inline def setJobs(value: ThirdPartyJobList): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     

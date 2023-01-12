@@ -37,7 +37,8 @@ object distServerMod {
       __obj.asInstanceOf[StaticRouterProps]
     }
     
-    extension [Self <: StaticRouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticRouterProps] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object distServerMod {
       __obj.asInstanceOf[StaticRouterProviderProps]
     }
     
-    extension [Self <: StaticRouterProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticRouterProviderProps] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object CreateRobotRequest {
     __obj.asInstanceOf[CreateRobotRequest]
   }
   
-  extension [Self <: CreateRobotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRobotRequest] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

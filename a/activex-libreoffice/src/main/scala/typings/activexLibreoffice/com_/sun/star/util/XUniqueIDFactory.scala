@@ -25,7 +25,8 @@ object XUniqueIDFactory {
     __obj.asInstanceOf[XUniqueIDFactory]
   }
   
-  extension [Self <: XUniqueIDFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUniqueIDFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateUniqueID(value: () => String): Self = StObject.set(x, "createUniqueID", js.Any.fromFunction0(value))
   }

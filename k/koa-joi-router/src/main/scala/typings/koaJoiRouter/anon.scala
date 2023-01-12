@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: SchemaLike): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object anon {
       __obj.asInstanceOf[ContinueOnError]
     }
     
-    extension [Self <: ContinueOnError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContinueOnError] (val x: Self) extends AnyVal {
       
       inline def setBody(value: SchemaLike): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: SchemaLike): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

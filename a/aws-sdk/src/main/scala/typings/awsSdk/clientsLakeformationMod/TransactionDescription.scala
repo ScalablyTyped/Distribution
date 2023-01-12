@@ -33,7 +33,8 @@ object TransactionDescription {
     __obj.asInstanceOf[TransactionDescription]
   }
   
-  extension [Self <: TransactionDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionDescription] (val x: Self) extends AnyVal {
     
     inline def setTransactionEndTime(value: js.Date): Self = StObject.set(x, "TransactionEndTime", value.asInstanceOf[js.Any])
     

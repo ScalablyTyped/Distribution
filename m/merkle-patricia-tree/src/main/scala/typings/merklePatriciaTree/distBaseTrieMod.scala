@@ -360,7 +360,8 @@ object distBaseTrieMod {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setNode(value: TrieNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       

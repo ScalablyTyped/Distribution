@@ -67,7 +67,8 @@ object CIMPictureFill {
     __obj.asInstanceOf[CIMPictureFill]
   }
   
-  extension [Self <: CIMPictureFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMPictureFill] (val x: Self) extends AnyVal {
     
     inline def setColorSubstitutions(value: js.Array[CIMColorSubstitution]): Self = StObject.set(x, "colorSubstitutions", value.asInstanceOf[js.Any])
     

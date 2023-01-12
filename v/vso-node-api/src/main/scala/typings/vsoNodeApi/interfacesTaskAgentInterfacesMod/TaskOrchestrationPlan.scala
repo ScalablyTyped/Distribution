@@ -57,7 +57,8 @@ object TaskOrchestrationPlan {
     __obj.asInstanceOf[TaskOrchestrationPlan]
   }
   
-  extension [Self <: TaskOrchestrationPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskOrchestrationPlan] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: PlanEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

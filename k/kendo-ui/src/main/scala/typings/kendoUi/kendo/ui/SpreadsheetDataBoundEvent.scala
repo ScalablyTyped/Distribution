@@ -18,7 +18,8 @@ object SpreadsheetDataBoundEvent {
     __obj.asInstanceOf[SpreadsheetDataBoundEvent]
   }
   
-  extension [Self <: SpreadsheetDataBoundEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetDataBoundEvent] (val x: Self) extends AnyVal {
     
     inline def setSheet(value: Sheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     

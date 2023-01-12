@@ -19,7 +19,8 @@ object ICallOptions {
     __obj.asInstanceOf[ICallOptions]
   }
   
-  extension [Self <: ICallOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICallOptions] (val x: Self) extends AnyVal {
     
     inline def setDisclose_me(value: Boolean): Self = StObject.set(x, "disclose_me", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object TContainerNode {
     __obj.asInstanceOf[TContainerNode]
   }
   
-  extension [Self <: TContainerNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TContainerNode] (val x: Self) extends AnyVal {
     
     inline def setChild(value: Null): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     

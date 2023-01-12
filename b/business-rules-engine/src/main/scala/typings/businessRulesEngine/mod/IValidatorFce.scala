@@ -20,7 +20,8 @@ object IValidatorFce {
     __obj.asInstanceOf[IValidatorFce]
   }
   
-  extension [Self <: IValidatorFce](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValidatorFce] (val x: Self) extends AnyVal {
     
     inline def setAsyncValidationFce(value: /* args */ IError => Promise[Any]): Self = StObject.set(x, "AsyncValidationFce", js.Any.fromFunction1(value))
     

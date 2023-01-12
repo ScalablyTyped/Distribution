@@ -101,7 +101,8 @@ object distImageSrcImageMod {
       __obj.asInstanceOf[InnerImageProps]
     }
     
-    extension [Self <: InnerImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerImageProps] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

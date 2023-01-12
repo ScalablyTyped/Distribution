@@ -18,7 +18,8 @@ object PutRetentionConfigurationRequest {
     __obj.asInstanceOf[PutRetentionConfigurationRequest]
   }
   
-  extension [Self <: PutRetentionConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRetentionConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setRetentionPeriodInDays(value: RetentionPeriodInDays): Self = StObject.set(x, "RetentionPeriodInDays", value.asInstanceOf[js.Any])
   }

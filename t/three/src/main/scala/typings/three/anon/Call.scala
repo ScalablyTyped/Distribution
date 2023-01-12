@@ -21,7 +21,8 @@ object Call {
     __obj.asInstanceOf[Call[P]]
   }
   
-  extension [Self <: Call[?], P /* <: FunctionNodeArguments */](x: Self & Call[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Call[?], P /* <: FunctionNodeArguments */] (val x: Self & Call[P]) extends AnyVal {
     
     inline def setCall(value: Fn_[P] => Swizzable[Node]): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
   }

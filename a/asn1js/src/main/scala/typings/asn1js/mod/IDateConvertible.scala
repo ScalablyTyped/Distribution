@@ -25,7 +25,8 @@ object IDateConvertible {
     __obj.asInstanceOf[IDateConvertible]
   }
   
-  extension [Self <: IDateConvertible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDateConvertible] (val x: Self) extends AnyVal {
     
     inline def setFromDate(value: js.Date => Unit): Self = StObject.set(x, "fromDate", js.Any.fromFunction1(value))
     

@@ -20,7 +20,8 @@ object Checked {
     __obj.asInstanceOf[Checked]
   }
   
-  extension [Self <: Checked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checked] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: js.Array[typings.rcTree.esInterfaceMod.Key]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

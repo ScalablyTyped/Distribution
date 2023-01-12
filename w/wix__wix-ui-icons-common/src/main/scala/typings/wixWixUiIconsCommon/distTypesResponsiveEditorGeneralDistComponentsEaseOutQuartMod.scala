@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsEaseOutQuartMod extends Sho
       __obj.asInstanceOf[EaseOutQuartProps]
     }
     
-    extension [Self <: EaseOutQuartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EaseOutQuartProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

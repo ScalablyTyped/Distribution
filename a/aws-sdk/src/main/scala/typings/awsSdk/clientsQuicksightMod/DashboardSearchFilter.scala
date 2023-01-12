@@ -28,7 +28,8 @@ object DashboardSearchFilter {
     __obj.asInstanceOf[DashboardSearchFilter]
   }
   
-  extension [Self <: DashboardSearchFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardSearchFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: DashboardFilterAttribute): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

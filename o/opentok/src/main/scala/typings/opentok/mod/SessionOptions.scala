@@ -19,7 +19,8 @@ object SessionOptions {
     __obj.asInstanceOf[SessionOptions]
   }
   
-  extension [Self <: SessionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
     
     inline def setArchiveMode(value: ArchiveMode): Self = StObject.set(x, "archiveMode", value.asInstanceOf[js.Any])
     

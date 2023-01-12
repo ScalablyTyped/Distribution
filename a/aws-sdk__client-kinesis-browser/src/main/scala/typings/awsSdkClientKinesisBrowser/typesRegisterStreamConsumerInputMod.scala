@@ -51,7 +51,8 @@ object typesRegisterStreamConsumerInputMod {
       __obj.asInstanceOf[RegisterStreamConsumerInput]
     }
     
-    extension [Self <: RegisterStreamConsumerInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterStreamConsumerInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object SeriesLines {
     __obj.asInstanceOf[SeriesLines]
   }
   
-  extension [Self <: SeriesLines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesLines] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

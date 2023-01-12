@@ -18,7 +18,8 @@ object DescribeIdentityPoolUsageRequest {
     __obj.asInstanceOf[DescribeIdentityPoolUsageRequest]
   }
   
-  extension [Self <: DescribeIdentityPoolUsageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIdentityPoolUsageRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
   }

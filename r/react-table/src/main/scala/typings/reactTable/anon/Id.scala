@@ -20,7 +20,8 @@ object Id {
     __obj.asInstanceOf[Id[D]]
   }
   
-  extension [Self <: Id[?], D /* <: js.Object */](x: Self & Id[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Id[?], D /* <: js.Object */] (val x: Self & Id[D]) extends AnyVal {
     
     inline def setHeader(value: Renderer[HeaderProps[D]]): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     

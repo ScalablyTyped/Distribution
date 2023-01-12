@@ -15,7 +15,8 @@ object GetCampaignStateBatchRequest {
     __obj.asInstanceOf[GetCampaignStateBatchRequest]
   }
   
-  extension [Self <: GetCampaignStateBatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCampaignStateBatchRequest] (val x: Self) extends AnyVal {
     
     inline def setCampaignIds(value: GetCampaignStateBatchRequestCampaignIdsList): Self = StObject.set(x, "campaignIds", value.asInstanceOf[js.Any])
     

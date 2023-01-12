@@ -23,7 +23,8 @@ object TemporalTypeDescriptor {
     __obj.asInstanceOf[TemporalTypeDescriptor]
   }
   
-  extension [Self <: TemporalTypeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemporalTypeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDay(value: Boolean): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

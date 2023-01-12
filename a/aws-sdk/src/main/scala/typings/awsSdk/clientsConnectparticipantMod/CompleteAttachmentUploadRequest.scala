@@ -32,7 +32,8 @@ object CompleteAttachmentUploadRequest {
     __obj.asInstanceOf[CompleteAttachmentUploadRequest]
   }
   
-  extension [Self <: CompleteAttachmentUploadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteAttachmentUploadRequest] (val x: Self) extends AnyVal {
     
     inline def setAttachmentIds(value: AttachmentIdList): Self = StObject.set(x, "AttachmentIds", value.asInstanceOf[js.Any])
     

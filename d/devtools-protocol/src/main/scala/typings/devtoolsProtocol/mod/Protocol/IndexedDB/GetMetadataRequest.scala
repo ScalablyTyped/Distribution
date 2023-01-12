@@ -34,7 +34,8 @@ object GetMetadataRequest {
     __obj.asInstanceOf[GetMetadataRequest]
   }
   
-  extension [Self <: GetMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     

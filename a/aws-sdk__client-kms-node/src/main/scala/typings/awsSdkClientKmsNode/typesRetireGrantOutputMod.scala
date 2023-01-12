@@ -25,7 +25,8 @@ object typesRetireGrantOutputMod {
       __obj.asInstanceOf[RetireGrantOutput]
     }
     
-    extension [Self <: RetireGrantOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetireGrantOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }

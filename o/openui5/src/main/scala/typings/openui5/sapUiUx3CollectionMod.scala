@@ -590,7 +590,8 @@ object sapUiUx3CollectionMod {
       __obj.asInstanceOf[CollectionSettings]
     }
     
-    extension [Self <: CollectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionSettings] (val x: Self) extends AnyVal {
       
       inline def setEditable(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       

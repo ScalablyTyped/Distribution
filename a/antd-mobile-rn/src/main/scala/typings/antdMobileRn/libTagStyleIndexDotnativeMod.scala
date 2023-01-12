@@ -169,7 +169,8 @@ object libTagStyleIndexDotnativeMod {
       __obj.asInstanceOf[ITagStyle]
     }
     
-    extension [Self <: ITagStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITagStyle] (val x: Self) extends AnyVal {
       
       inline def setActiveText(value: TextStyle): Self = StObject.set(x, "activeText", value.asInstanceOf[js.Any])
       

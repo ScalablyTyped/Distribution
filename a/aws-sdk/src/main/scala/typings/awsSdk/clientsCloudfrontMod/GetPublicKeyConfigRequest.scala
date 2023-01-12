@@ -18,7 +18,8 @@ object GetPublicKeyConfigRequest {
     __obj.asInstanceOf[GetPublicKeyConfigRequest]
   }
   
-  extension [Self <: GetPublicKeyConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPublicKeyConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

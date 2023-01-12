@@ -36,7 +36,8 @@ object BaseEventanynodeNodeModel {
     __obj.asInstanceOf[BaseEventanynodeNodeModel]
   }
   
-  extension [Self <: BaseEventanynodeNodeModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseEventanynodeNodeModel] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: BaseEntity[BaseListener[Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

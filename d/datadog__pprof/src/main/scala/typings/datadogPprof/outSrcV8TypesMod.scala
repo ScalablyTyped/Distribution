@@ -20,7 +20,8 @@ object outSrcV8TypesMod {
       __obj.asInstanceOf[Allocation]
     }
     
-    extension [Self <: Allocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Allocation] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object outSrcV8TypesMod {
       __obj.asInstanceOf[AllocationProfileNode]
     }
     
-    extension [Self <: AllocationProfileNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllocationProfileNode] (val x: Self) extends AnyVal {
       
       inline def setAllocations(value: js.Array[Allocation]): Self = StObject.set(x, "allocations", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object outSrcV8TypesMod {
       __obj.asInstanceOf[CodeEvent]
     }
     
-    extension [Self <: CodeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeEvent] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -123,7 +126,8 @@ object outSrcV8TypesMod {
       __obj.asInstanceOf[CpuProfile]
     }
     
-    extension [Self <: CpuProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CpuProfile] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -156,7 +160,8 @@ object outSrcV8TypesMod {
       __obj.asInstanceOf[CpuProfileNode]
     }
     
-    extension [Self <: CpuProfileNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CpuProfileNode] (val x: Self) extends AnyVal {
       
       inline def setCpuTime(value: Double): Self = StObject.set(x, "cpuTime", value.asInstanceOf[js.Any])
       
@@ -183,7 +188,8 @@ object outSrcV8TypesMod {
       __obj.asInstanceOf[CpuProfileSample]
     }
     
-    extension [Self <: CpuProfileSample](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CpuProfileSample] (val x: Self) extends AnyVal {
       
       inline def setCpuTime(value: Double): Self = StObject.set(x, "cpuTime", value.asInstanceOf[js.Any])
       
@@ -212,7 +218,8 @@ object outSrcV8TypesMod {
       __obj.asInstanceOf[InitialCpuProfile]
     }
     
-    extension [Self <: InitialCpuProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialCpuProfile] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -247,7 +254,8 @@ object outSrcV8TypesMod {
       __obj.asInstanceOf[ProfileNode]
     }
     
-    extension [Self <: ProfileNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfileNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ProfileNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -290,7 +298,8 @@ object outSrcV8TypesMod {
       __obj.asInstanceOf[TimeProfile]
     }
     
-    extension [Self <: TimeProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeProfile] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -313,7 +322,8 @@ object outSrcV8TypesMod {
       __obj.asInstanceOf[TimeProfileNode]
     }
     
-    extension [Self <: TimeProfileNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeProfileNode] (val x: Self) extends AnyVal {
       
       inline def setHitCount(value: Double): Self = StObject.set(x, "hitCount", value.asInstanceOf[js.Any])
     }

@@ -25,7 +25,8 @@ object CADESCOM_CADES_TYPE {
     __obj.asInstanceOf[CADESCOM_CADES_TYPE]
   }
   
-  extension [Self <: CADESCOM_CADES_TYPE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CADESCOM_CADES_TYPE] (val x: Self) extends AnyVal {
     
     inline def setCADESCOM_CADES_BES(value: `1`): Self = StObject.set(x, "CADESCOM_CADES_BES", value.asInstanceOf[js.Any])
     

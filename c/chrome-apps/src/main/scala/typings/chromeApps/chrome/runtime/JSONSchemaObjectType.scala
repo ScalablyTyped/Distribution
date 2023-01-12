@@ -27,7 +27,8 @@ object JSONSchemaObjectType {
     __obj.asInstanceOf[JSONSchemaObjectType]
   }
   
-  extension [Self <: JSONSchemaObjectType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONSchemaObjectType] (val x: Self) extends AnyVal {
     
     inline def setAdditionalProperties(value: JSONSchemaObjectType): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     

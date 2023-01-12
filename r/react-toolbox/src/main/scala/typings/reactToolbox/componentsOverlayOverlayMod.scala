@@ -76,7 +76,8 @@ object componentsOverlayOverlayMod {
       __obj.asInstanceOf[OverlayProps]
     }
     
-    extension [Self <: OverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object componentsOverlayOverlayMod {
       __obj.asInstanceOf[OverlayTheme]
     }
     
-    extension [Self <: OverlayTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayTheme] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

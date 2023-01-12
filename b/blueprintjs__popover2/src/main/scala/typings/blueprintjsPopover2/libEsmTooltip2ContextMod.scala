@@ -51,7 +51,8 @@ object libEsmTooltip2ContextMod {
       __obj.asInstanceOf[Tooltip2ContextState]
     }
     
-    extension [Self <: Tooltip2ContextState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tooltip2ContextState] (val x: Self) extends AnyVal {
       
       inline def setForceDisabled(value: Boolean): Self = StObject.set(x, "forceDisabled", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object libEsmTooltip2ContextMod {
       __obj.asInstanceOf[Tooltip2ProviderProps]
     }
     
-    extension [Self <: Tooltip2ProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tooltip2ProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | (js.Function1[/* ctxState */ Tooltip2ContextState, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

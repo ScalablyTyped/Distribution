@@ -29,7 +29,8 @@ object Kernel_ {
     __obj.asInstanceOf[Kernel_]
   }
   
-  extension [Self <: Kernel_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Kernel_] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

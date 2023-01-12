@@ -23,7 +23,8 @@ object IndexAttachment {
     __obj.asInstanceOf[IndexAttachment]
   }
   
-  extension [Self <: IndexAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexAttachment] (val x: Self) extends AnyVal {
     
     inline def setIndexedAttributes(value: AttributeKeyAndValueList): Self = StObject.set(x, "IndexedAttributes", value.asInstanceOf[js.Any])
     

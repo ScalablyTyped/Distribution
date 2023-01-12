@@ -28,7 +28,8 @@ object RemoteMutedState {
     __obj.asInstanceOf[RemoteMutedState]
   }
   
-  extension [Self <: RemoteMutedState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteMutedState] (val x: Self) extends AnyVal {
     
     inline def setAudioMuted(value: Boolean): Self = StObject.set(x, "audioMuted", value.asInstanceOf[js.Any])
     

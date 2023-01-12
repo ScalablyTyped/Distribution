@@ -48,7 +48,8 @@ object HyperParameterSpecification {
     __obj.asInstanceOf[HyperParameterSpecification]
   }
   
-  extension [Self <: HyperParameterSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperParameterSpecification] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: HyperParameterValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

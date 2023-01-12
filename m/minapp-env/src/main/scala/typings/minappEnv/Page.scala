@@ -29,7 +29,8 @@ object Page {
       __obj.asInstanceOf[ICustomShareContent]
     }
     
-    extension [Self <: ICustomShareContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomShareContent] (val x: Self) extends AnyVal {
       
       inline def setImageUrl(value: java.lang.String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object Page {
       __obj.asInstanceOf[IPageScrollOption]
     }
     
-    extension [Self <: IPageScrollOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageScrollOption] (val x: Self) extends AnyVal {
       
       inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     }
@@ -93,7 +95,8 @@ object Page {
       __obj.asInstanceOf[IShareAppMessageOption]
     }
     
-    extension [Self <: IShareAppMessageOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShareAppMessageOption] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: button | menu | java.lang.String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -123,7 +126,8 @@ object Page {
       __obj.asInstanceOf[ITabItemTapOption]
     }
     
-    extension [Self <: ITabItemTapOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITabItemTapOption] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: java.lang.String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -220,7 +224,8 @@ object Page {
       __obj.asInstanceOf[PageInstance[D, T]]
     }
     
-    extension [Self <: PageInstance[?, ?], D /* <: IAnyObject */, T /* <: IAnyObject */](x: Self & (PageInstance[D, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageInstance[?, ?], D /* <: IAnyObject */, T /* <: IAnyObject */] (val x: Self & (PageInstance[D, T])) extends AnyVal {
       
       inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
       
@@ -303,7 +308,8 @@ object Page {
       __obj.asInstanceOf[PageInstanceBaseProps[D]]
     }
     
-    extension [Self <: PageInstanceBaseProps[?], D /* <: IAnyObject */](x: Self & PageInstanceBaseProps[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageInstanceBaseProps[?], D /* <: IAnyObject */] (val x: Self & PageInstanceBaseProps[D]) extends AnyVal {
       
       inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

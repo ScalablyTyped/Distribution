@@ -143,7 +143,8 @@ object CsvParams {
     /* 0 */ val UNKNOWN: typings.rockset.distCodegenApiMod.CsvParams.ColumnTypesEnum.UNKNOWN & Double = js.native
   }
   
-  extension [Self <: CsvParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CsvParams] (val x: Self) extends AnyVal {
     
     inline def setColumnNames(value: js.Array[String]): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
     

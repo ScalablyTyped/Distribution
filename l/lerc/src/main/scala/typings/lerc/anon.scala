@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[InputOffset]
     }
     
-    extension [Self <: InputOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputOffset] (val x: Self) extends AnyVal {
       
       inline def setInputOffset(value: Double): Self = StObject.set(x, "inputOffset", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[LocateFile]
     }
     
-    extension [Self <: LocateFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocateFile] (val x: Self) extends AnyVal {
       
       inline def setLocateFile(value: (/* wasmFileName */ js.UndefOr[String], /* scriptDir */ js.UndefOr[String]) => String): Self = StObject.set(x, "locateFile", js.Any.fromFunction2(value))
       
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[MaxValues]
     }
     
-    extension [Self <: MaxValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxValues] (val x: Self) extends AnyVal {
       
       inline def setMaxValues(value: js.typedarray.Float64Array): Self = StObject.set(x, "maxValues", value.asInstanceOf[js.Any])
       

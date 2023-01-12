@@ -18,7 +18,8 @@ object ReplicationTimeValue {
     __obj.asInstanceOf[ReplicationTimeValue]
   }
   
-  extension [Self <: ReplicationTimeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationTimeValue] (val x: Self) extends AnyVal {
     
     inline def setMinutes(value: Minutes): Self = StObject.set(x, "Minutes", value.asInstanceOf[js.Any])
     

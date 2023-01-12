@@ -29,7 +29,8 @@ object userIdnumberundefinedPagi {
     __obj.asInstanceOf[userIdnumberundefinedPagi]
   }
   
-  extension [Self <: userIdnumberundefinedPagi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: userIdnumberundefinedPagi] (val x: Self) extends AnyVal {
     
     inline def setMaxPages(value: Double): Self = StObject.set(x, "maxPages", value.asInstanceOf[js.Any])
     

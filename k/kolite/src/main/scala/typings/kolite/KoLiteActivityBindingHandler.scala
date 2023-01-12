@@ -16,7 +16,8 @@ object KoLiteActivityBindingHandler {
     __obj.asInstanceOf[KoLiteActivityBindingHandler]
   }
   
-  extension [Self <: KoLiteActivityBindingHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KoLiteActivityBindingHandler] (val x: Self) extends AnyVal {
     
     inline def setDefaultOptions(value: KoLiteActivityDefaultOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
   }

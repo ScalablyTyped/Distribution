@@ -28,7 +28,8 @@ object GoogleCloudDialogflowV2WebhookRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowV2WebhookRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2WebhookRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2WebhookRequest] (val x: Self) extends AnyVal {
     
     inline def setOriginalDetectIntentRequest(value: GoogleCloudDialogflowV2OriginalDetectIntentRequest): Self = StObject.set(x, "originalDetectIntentRequest", value.asInstanceOf[js.Any])
     

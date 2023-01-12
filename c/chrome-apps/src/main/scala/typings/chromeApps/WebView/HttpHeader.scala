@@ -20,7 +20,8 @@ object HttpHeader {
     __obj.asInstanceOf[HttpHeader]
   }
   
-  extension [Self <: HttpHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpHeader] (val x: Self) extends AnyVal {
     
     inline def setBinaryValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "binaryValue", value.asInstanceOf[js.Any])
     

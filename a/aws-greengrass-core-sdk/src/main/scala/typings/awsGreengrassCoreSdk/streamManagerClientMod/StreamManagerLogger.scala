@@ -26,7 +26,8 @@ object StreamManagerLogger {
     __obj.asInstanceOf[StreamManagerLogger]
   }
   
-  extension [Self <: StreamManagerLogger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamManagerLogger] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: /* repeated */ scala.Nothing => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     

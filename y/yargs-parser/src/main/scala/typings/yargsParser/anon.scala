@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Boolean]
     }
     
-    extension [Self <: Boolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
       
       inline def setBoolean(value: scala.Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object anon {
       __obj.asInstanceOf[PartialConfiguration]
     }
     
-    extension [Self <: PartialConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConfiguration] (val x: Self) extends AnyVal {
       
       inline def `setBoolean-negation`(value: scala.Boolean): Self = StObject.set(x, "boolean-negation", value.asInstanceOf[js.Any])
       

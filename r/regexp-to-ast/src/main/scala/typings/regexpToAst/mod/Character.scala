@@ -25,7 +25,8 @@ object Character {
     __obj.asInstanceOf[Character]
   }
   
-  extension [Self <: Character](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Character] (val x: Self) extends AnyVal {
     
     inline def setQuantifier(value: Quantifier): Self = StObject.set(x, "quantifier", value.asInstanceOf[js.Any])
     

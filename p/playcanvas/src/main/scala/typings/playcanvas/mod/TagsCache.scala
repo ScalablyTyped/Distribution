@@ -32,7 +32,8 @@ object TagsCache {
     __obj.asInstanceOf[TagsCache]
   }
   
-  extension [Self <: TagsCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagsCache] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Any, Any) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

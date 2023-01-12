@@ -17,7 +17,8 @@ object KafkaJSServerDoesNotSupportApiKeyMetadata {
     __obj.asInstanceOf[KafkaJSServerDoesNotSupportApiKeyMetadata]
   }
   
-  extension [Self <: KafkaJSServerDoesNotSupportApiKeyMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaJSServerDoesNotSupportApiKeyMetadata] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: Double): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

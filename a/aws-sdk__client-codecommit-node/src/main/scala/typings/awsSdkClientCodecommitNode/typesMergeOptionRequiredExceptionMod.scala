@@ -21,7 +21,8 @@ object typesMergeOptionRequiredExceptionMod {
       __obj.asInstanceOf[MergeOptionRequiredException]
     }
     
-    extension [Self <: MergeOptionRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeOptionRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MergeOptionRequiredException

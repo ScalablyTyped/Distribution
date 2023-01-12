@@ -23,7 +23,8 @@ object RuleOption {
     __obj.asInstanceOf[RuleOption]
   }
   
-  extension [Self <: RuleOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleOption] (val x: Self) extends AnyVal {
     
     inline def setKeyword(value: Keyword): Self = StObject.set(x, "Keyword", value.asInstanceOf[js.Any])
     

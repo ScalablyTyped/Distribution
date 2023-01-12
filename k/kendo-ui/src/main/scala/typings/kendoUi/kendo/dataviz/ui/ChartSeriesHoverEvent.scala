@@ -33,7 +33,8 @@ object ChartSeriesHoverEvent {
     __obj.asInstanceOf[ChartSeriesHoverEvent]
   }
   
-  extension [Self <: ChartSeriesHoverEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartSeriesHoverEvent] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

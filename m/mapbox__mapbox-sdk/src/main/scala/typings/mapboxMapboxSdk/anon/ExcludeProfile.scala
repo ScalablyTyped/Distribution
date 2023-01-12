@@ -25,7 +25,8 @@ object ExcludeProfile {
     __obj.asInstanceOf[ExcludeProfile]
   }
   
-  extension [Self <: ExcludeProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludeProfile] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: js.Array[ferry | toll | motorway]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

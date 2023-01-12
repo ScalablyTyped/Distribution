@@ -18,7 +18,8 @@ object CommandOptionsprevSubjectPrevSubject {
     __obj.asInstanceOf[CommandOptionsprevSubjectPrevSubject]
   }
   
-  extension [Self <: CommandOptionsprevSubjectPrevSubject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandOptionsprevSubjectPrevSubject] (val x: Self) extends AnyVal {
     
     inline def setPrevSubject(
       value: Boolean | typings.cypress.Cypress.PrevSubject | js.Array[typings.cypress.Cypress.PrevSubject]

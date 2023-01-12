@@ -38,7 +38,8 @@ object GrpcRetryPolicy {
     __obj.asInstanceOf[GrpcRetryPolicy]
   }
   
-  extension [Self <: GrpcRetryPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrpcRetryPolicy] (val x: Self) extends AnyVal {
     
     inline def setGrpcRetryEvents(value: GrpcRetryPolicyEvents): Self = StObject.set(x, "grpcRetryEvents", value.asInstanceOf[js.Any])
     

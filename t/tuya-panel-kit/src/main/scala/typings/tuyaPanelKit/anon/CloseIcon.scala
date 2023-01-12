@@ -29,7 +29,8 @@ object CloseIcon {
     __obj.asInstanceOf[CloseIcon]
   }
   
-  extension [Self <: CloseIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseIcon] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

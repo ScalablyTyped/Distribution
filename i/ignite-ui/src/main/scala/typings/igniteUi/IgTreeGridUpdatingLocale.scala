@@ -31,7 +31,8 @@ object IgTreeGridUpdatingLocale {
     __obj.asInstanceOf[IgTreeGridUpdatingLocale]
   }
   
-  extension [Self <: IgTreeGridUpdatingLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridUpdatingLocale] (val x: Self) extends AnyVal {
     
     inline def setAddChildButtonLabel(value: String): Self = StObject.set(x, "addChildButtonLabel", value.asInstanceOf[js.Any])
     

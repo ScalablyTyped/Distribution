@@ -346,7 +346,8 @@ object ART {
     __obj.asInstanceOf[ART]
   }
   
-  extension [Self <: ART](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ART] (val x: Self) extends AnyVal {
     
     inline def setART(value: NativeStyled[Any, js.Object, Any]): Self = StObject.set(x, "ART", value.asInstanceOf[js.Any])
     

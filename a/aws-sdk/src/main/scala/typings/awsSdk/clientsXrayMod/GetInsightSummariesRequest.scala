@@ -48,7 +48,8 @@ object GetInsightSummariesRequest {
     __obj.asInstanceOf[GetInsightSummariesRequest]
   }
   
-  extension [Self <: GetInsightSummariesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInsightSummariesRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

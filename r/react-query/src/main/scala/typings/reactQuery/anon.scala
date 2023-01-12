@@ -157,7 +157,8 @@ object anon {
       __obj.asInstanceOf[Active]
     }
     
-    extension [Self <: Active](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Numbersign006bff): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object anon {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: typings.reactQuery.typesDevtoolsExplorerMod.Entry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     }
@@ -211,7 +213,8 @@ object anon {
       __obj.asInstanceOf[Mutate[TData, TError, TVariables, TContext]]
     }
     
-    extension [Self <: Mutate[?, ?, ?, ?], TData, TError, TVariables, TContext](x: Self & (Mutate[TData, TError, TVariables, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mutate[?, ?, ?, ?], TData, TError, TVariables, TContext] (val x: Self & (Mutate[TData, TError, TVariables, TContext])) extends AnyVal {
       
       inline def setMutate(value: /* args */ Parameters[MutateFunction[TData, TError, TVariables, TContext]] => Unit): Self = StObject.set(x, "mutate", js.Any.fromFunction1(value))
     }
@@ -230,7 +233,8 @@ object anon {
       __obj.asInstanceOf[MutateAsync[TData, TError, TVariables, TContext]]
     }
     
-    extension [Self <: MutateAsync[?, ?, ?, ?], TData, TError, TVariables, TContext](x: Self & (MutateAsync[TData, TError, TVariables, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutateAsync[?, ?, ?, ?], TData, TError, TVariables, TContext] (val x: Self & (MutateAsync[TData, TError, TVariables, TContext])) extends AnyVal {
       
       inline def setMutateAsync(
         value: (TVariables, /* options */ js.UndefOr[MutateOptions[TData, TError, TVariables, TContext]]) => js.Promise[TData]
@@ -251,7 +255,8 @@ object anon {
       __obj.asInstanceOf[Mutations]
     }
     
-    extension [Self <: Mutations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mutations] (val x: Self) extends AnyVal {
       
       inline def setMutations(value: MutationOptions[Any, Any, Unit, Any]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
       
@@ -279,7 +284,8 @@ object anon {
       __obj.asInstanceOf[OmitMutationFiltersmutati]
     }
     
-    extension [Self <: OmitMutationFiltersmutati](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitMutationFiltersmutati] (val x: Self) extends AnyVal {
       
       inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
@@ -841,7 +847,8 @@ object anon {
       __obj.asInstanceOf[PickDetailedHTMLPropsButt]
     }
     
-    extension [Self <: PickDetailedHTMLPropsButt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickDetailedHTMLPropsButt] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2511,7 +2518,8 @@ object anon {
       __obj.asInstanceOf[PickDetailedHTMLPropsInpu]
     }
     
-    extension [Self <: PickDetailedHTMLPropsInpu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickDetailedHTMLPropsInpu] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -4217,7 +4225,8 @@ object anon {
       __obj.asInstanceOf[PickDetailedHTMLPropsSele]
     }
     
-    extension [Self <: PickDetailedHTMLPropsSele](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickDetailedHTMLPropsSele] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

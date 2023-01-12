@@ -110,7 +110,8 @@ object CalendarType {
     __obj.asInstanceOf[CalendarType]
   }
   
-  extension [Self <: CalendarType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarType] (val x: Self) extends AnyVal {
     
     inline def setCalendarType(
       value: typings.openui5.sapUiCoreCalendarTypeMod.CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String)

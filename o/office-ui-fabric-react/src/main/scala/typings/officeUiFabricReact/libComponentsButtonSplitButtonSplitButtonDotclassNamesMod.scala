@@ -39,7 +39,8 @@ object libComponentsButtonSplitButtonSplitButtonDotclassNamesMod {
       __obj.asInstanceOf[ISplitButtonClassNames]
     }
     
-    extension [Self <: ISplitButtonClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISplitButtonClassNames] (val x: Self) extends AnyVal {
       
       inline def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       

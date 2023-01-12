@@ -68,7 +68,8 @@ object distRequestAuthorizationUrlRequestMod {
       __obj.asInstanceOf[AuthorizationUrlRequest]
     }
     
-    extension [Self <: AuthorizationUrlRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationUrlRequest] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: AccountInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       

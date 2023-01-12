@@ -139,7 +139,8 @@ object libTransportMod {
       __obj.asInstanceOf[EventObject]
     }
     
-    extension [Self <: EventObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* error */ js.Error, /* eventObject */ EventObject) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -176,7 +177,8 @@ object libTransportMod {
       __obj.asInstanceOf[InvokeOptions]
     }
     
-    extension [Self <: InvokeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvokeOptions] (val x: Self) extends AnyVal {
       
       inline def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object libTransportMod {
       __obj.asInstanceOf[OnCloseValue]
     }
     
-    extension [Self <: OnCloseValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnCloseValue] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -224,7 +227,8 @@ object libTransportMod {
       __obj.asInstanceOf[OnErrorValue]
     }
     
-    extension [Self <: OnErrorValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnErrorValue] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -243,7 +247,8 @@ object libTransportMod {
       __obj.asInstanceOf[OnEventValue]
     }
     
-    extension [Self <: OnEventValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnEventValue] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -264,7 +269,8 @@ object libTransportMod {
       __obj.asInstanceOf[OnInboundInvokeValue]
     }
     
-    extension [Self <: OnInboundInvokeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnInboundInvokeValue] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -285,7 +291,8 @@ object libTransportMod {
       __obj.asInstanceOf[OnInboundTransmitValue]
     }
     
-    extension [Self <: OnInboundTransmitValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnInboundTransmitValue] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -306,7 +313,8 @@ object libTransportMod {
       __obj.asInstanceOf[OnOpenAbortValue]
     }
     
-    extension [Self <: OnOpenAbortValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnOpenAbortValue] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -331,7 +339,8 @@ object libTransportMod {
       __obj.asInstanceOf[OnOpenValue]
     }
     
-    extension [Self <: OnOpenValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnOpenValue] (val x: Self) extends AnyVal {
       
       inline def setAuthToken(value: AuthToken): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
@@ -356,7 +365,8 @@ object libTransportMod {
       __obj.asInstanceOf[TransmitOptions]
     }
     
-    extension [Self <: TransmitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransmitOptions] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       

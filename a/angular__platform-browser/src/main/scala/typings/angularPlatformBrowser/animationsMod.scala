@@ -287,7 +287,8 @@ object animationsMod {
       __obj.asInstanceOf[BrowserAnimationsModuleConfig]
     }
     
-    extension [Self <: BrowserAnimationsModuleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserAnimationsModuleConfig] (val x: Self) extends AnyVal {
       
       inline def setDisableAnimations(value: Boolean): Self = StObject.set(x, "disableAnimations", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object Stroke {
     __obj.asInstanceOf[Stroke]
   }
   
-  extension [Self <: Stroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stroke] (val x: Self) extends AnyVal {
     
     inline def setStroke(value: IThemeConfig => String): Self = StObject.set(x, "stroke", js.Any.fromFunction1(value))
   }

@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[PinyinEngine]
     }
     
-    extension [Self <: PinyinEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinyinEngine] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: String => js.Array[String]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     }

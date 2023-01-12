@@ -43,7 +43,8 @@ object IUboDeclarationStatus {
     __obj.asInstanceOf[IUboDeclarationStatus]
   }
   
-  extension [Self <: IUboDeclarationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUboDeclarationStatus] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: CREATED): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     

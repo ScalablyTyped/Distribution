@@ -78,7 +78,8 @@ object mod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    extension [Self <: Match](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -131,7 +132,8 @@ object mod {
       __obj.asInstanceOf[LinkProps]
     }
     
-    extension [Self <: LinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object mod {
       __obj.asInstanceOf[LocationProps]
     }
     
-    extension [Self <: LocationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: RenderData => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -173,7 +176,8 @@ object mod {
       __obj.asInstanceOf[MatchProps]
     }
     
-    extension [Self <: MatchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: MatchingData => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -195,7 +199,8 @@ object mod {
       __obj.asInstanceOf[MatchingData]
     }
     
-    extension [Self <: MatchingData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchingData] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: Path): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
@@ -220,7 +225,8 @@ object mod {
       __obj.asInstanceOf[Other]
     }
     
-    extension [Self <: Other](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Other] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -254,7 +260,8 @@ object mod {
       __obj.asInstanceOf[RenderData]
     }
     
-    extension [Self <: RenderData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderData] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: PartialLocationAncestorOrigins): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -295,7 +302,8 @@ object mod {
       __obj.asInstanceOf[RouteProps]
     }
     
-    extension [Self <: RouteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -336,7 +344,8 @@ object mod {
       __obj.asInstanceOf[RouterData]
     }
     
-    extension [Self <: RouterData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterData] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: PartialLocationAncestorOrigins): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -363,7 +372,8 @@ object mod {
       __obj.asInstanceOf[StoryData]
     }
     
-    extension [Self <: StoryData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoryData] (val x: Self) extends AnyVal {
       
       inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       

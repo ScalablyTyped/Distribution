@@ -20,7 +20,8 @@ object BLEPeripheralService {
     __obj.asInstanceOf[BLEPeripheralService]
   }
   
-  extension [Self <: BLEPeripheralService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BLEPeripheralService] (val x: Self) extends AnyVal {
     
     inline def setCharacteristics(value: js.Array[Characteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
     

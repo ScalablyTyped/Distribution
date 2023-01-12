@@ -16,7 +16,8 @@ object BigIntegerParam {
     __obj.asInstanceOf[BigIntegerParam]
   }
   
-  extension [Self <: BigIntegerParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigIntegerParam] (val x: Self) extends AnyVal {
     
     inline def setBigint(value: BigInteger): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
   }

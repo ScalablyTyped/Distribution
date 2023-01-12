@@ -118,7 +118,8 @@ object libSavehandlerMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         

@@ -19,7 +19,8 @@ object Rotation {
     __obj.asInstanceOf[Rotation]
   }
   
-  extension [Self <: Rotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rotation] (val x: Self) extends AnyVal {
     
     inline def setRotation(value: QuaternionLike): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     

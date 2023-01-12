@@ -33,7 +33,8 @@ object Enablement {
     __obj.asInstanceOf[Enablement]
   }
   
-  extension [Self <: Enablement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enablement] (val x: Self) extends AnyVal {
     
     inline def setEnablement(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org-security-product-enablement'] */ js.Any

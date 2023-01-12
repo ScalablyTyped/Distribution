@@ -25,7 +25,8 @@ object typesUpdateGlobalSecondaryIndexActionMod {
       __obj.asInstanceOf[UnmarshalledUpdateGlobalSecondaryIndexAction]
     }
     
-    extension [Self <: UnmarshalledUpdateGlobalSecondaryIndexAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledUpdateGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
       
       inline def setProvisionedThroughput(value: UnmarshalledProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object typesUpdateGlobalSecondaryIndexActionMod {
       __obj.asInstanceOf[UpdateGlobalSecondaryIndexAction]
     }
     
-    extension [Self <: UpdateGlobalSecondaryIndexAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       

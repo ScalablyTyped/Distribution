@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[Flag[Type, Default, IsMultiple]]
     }
     
-    extension [Self <: Flag[?, ?, ?], Type /* <: FlagType */, Default, IsMultiple](x: Self & (Flag[Type, Default, IsMultiple])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flag[?, ?, ?], Type /* <: FlagType */, Default, IsMultiple] (val x: Self & (Flag[Type, Default, IsMultiple])) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -264,7 +265,8 @@ object mod {
       __obj.asInstanceOf[Options[Flags]]
     }
     
-    extension [Self <: Options[?], Flags /* <: AnyFlags */](x: Self & Options[Flags]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], Flags /* <: AnyFlags */] (val x: Self & Options[Flags]) extends AnyVal {
       
       inline def setAllowUnknownFlags(value: Boolean): Self = StObject.set(x, "allowUnknownFlags", value.asInstanceOf[js.Any])
       

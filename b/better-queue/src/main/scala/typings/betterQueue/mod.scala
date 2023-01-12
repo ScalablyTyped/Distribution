@@ -187,7 +187,8 @@ object mod {
       __obj.asInstanceOf[QueueOptions[T, K]]
     }
     
-    extension [Self <: QueueOptions[?, ?], T, K](x: Self & (QueueOptions[T, K])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueOptions[?, ?], T, K] (val x: Self & (QueueOptions[T, K])) extends AnyVal {
       
       inline def setAfterProcessDelay(value: Double): Self = StObject.set(x, "afterProcessDelay", value.asInstanceOf[js.Any])
       
@@ -306,7 +307,8 @@ object mod {
       __obj.asInstanceOf[QueueStats]
     }
     
-    extension [Self <: QueueStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueStats] (val x: Self) extends AnyVal {
       
       inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
       
@@ -352,7 +354,8 @@ object mod {
       __obj.asInstanceOf[Store[T]]
     }
     
-    extension [Self <: Store[?], T](x: Self & Store[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store[?], T] (val x: Self & Store[T]) extends AnyVal {
       
       inline def setConnect(value: js.Function2[/* error */ Any, /* length */ Double, Unit] => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
       
@@ -387,7 +390,8 @@ object mod {
       __obj.asInstanceOf[StoreOptions]
     }
     
-    extension [Self <: StoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -412,7 +416,8 @@ object mod {
       __obj.asInstanceOf[TickerProgress]
     }
     
-    extension [Self <: TickerProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TickerProgress] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Double): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       

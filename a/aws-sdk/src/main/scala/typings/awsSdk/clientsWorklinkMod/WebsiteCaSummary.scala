@@ -28,7 +28,8 @@ object WebsiteCaSummary {
     __obj.asInstanceOf[WebsiteCaSummary]
   }
   
-  extension [Self <: WebsiteCaSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebsiteCaSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

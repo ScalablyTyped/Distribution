@@ -237,7 +237,8 @@ object typesTypographyMod {
       __obj.asInstanceOf[TypographyProps]
     }
     
-    extension [Self <: TypographyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypographyProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: TextAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

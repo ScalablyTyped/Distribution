@@ -42,7 +42,8 @@ object GetTarget {
     __obj.asInstanceOf[GetTarget]
   }
   
-  extension [Self <: GetTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTarget] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: none | default): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

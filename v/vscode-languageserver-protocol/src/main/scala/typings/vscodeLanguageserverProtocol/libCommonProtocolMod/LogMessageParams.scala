@@ -24,7 +24,8 @@ object LogMessageParams {
     __obj.asInstanceOf[LogMessageParams]
   }
   
-  extension [Self <: LogMessageParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogMessageParams] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

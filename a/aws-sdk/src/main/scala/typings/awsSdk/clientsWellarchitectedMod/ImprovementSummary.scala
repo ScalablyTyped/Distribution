@@ -28,7 +28,8 @@ object ImprovementSummary {
     __obj.asInstanceOf[ImprovementSummary]
   }
   
-  extension [Self <: ImprovementSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImprovementSummary] (val x: Self) extends AnyVal {
     
     inline def setImprovementPlanUrl(value: ImprovementPlanUrl): Self = StObject.set(x, "ImprovementPlanUrl", value.asInstanceOf[js.Any])
     

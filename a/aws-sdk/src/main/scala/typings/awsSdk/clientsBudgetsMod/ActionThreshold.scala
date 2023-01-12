@@ -17,7 +17,8 @@ object ActionThreshold {
     __obj.asInstanceOf[ActionThreshold]
   }
   
-  extension [Self <: ActionThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionThreshold] (val x: Self) extends AnyVal {
     
     inline def setActionThresholdType(value: ThresholdType): Self = StObject.set(x, "ActionThresholdType", value.asInstanceOf[js.Any])
     

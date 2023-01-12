@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[IKeepResponse]
     }
     
-    extension [Self <: IKeepResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeepResponse] (val x: Self) extends AnyVal {
       
       inline def setKeptParams(value: js.Object): Self = StObject.set(x, "keptParams", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object mod {
       __obj.asInstanceOf[IOmitResponse]
     }
     
-    extension [Self <: IOmitResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOmitResponse] (val x: Self) extends AnyVal {
       
       inline def setQuerystring(value: String): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
       

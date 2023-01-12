@@ -47,7 +47,8 @@ object `0ValidPath` {
     __obj.asInstanceOf[`0ValidPath`[O, Path, I]]
   }
   
-  extension [Self <: `0ValidPath`[?, ?, ?], O, Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, I /* <: Iteration */](x: Self & (`0ValidPath`[O, Path, I])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0ValidPath`[?, ?, ?], O, Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, I /* <: Iteration */] (val x: Self & (`0ValidPath`[O, Path, I])) extends AnyVal {
     
     inline def set0(
       value: __ValidPath[

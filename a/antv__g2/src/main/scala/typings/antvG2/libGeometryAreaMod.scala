@@ -48,7 +48,8 @@ object libGeometryAreaMod {
       __obj.asInstanceOf[AreaCfg]
     }
     
-    extension [Self <: AreaCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreaCfg] (val x: Self) extends AnyVal {
       
       inline def setStartOnZero(value: Boolean): Self = StObject.set(x, "startOnZero", value.asInstanceOf[js.Any])
       

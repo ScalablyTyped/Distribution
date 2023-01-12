@@ -32,7 +32,8 @@ object metric {
     __obj.asInstanceOf[metric]
   }
   
-  extension [Self <: metric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: metric] (val x: Self) extends AnyVal {
     
     inline def setAggregator(value: Aggregator): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])
     

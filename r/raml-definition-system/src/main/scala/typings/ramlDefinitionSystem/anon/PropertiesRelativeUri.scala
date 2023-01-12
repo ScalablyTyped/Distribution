@@ -17,7 +17,8 @@ object PropertiesRelativeUri {
     __obj.asInstanceOf[PropertiesRelativeUri]
   }
   
-  extension [Self <: PropertiesRelativeUri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesRelativeUri] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

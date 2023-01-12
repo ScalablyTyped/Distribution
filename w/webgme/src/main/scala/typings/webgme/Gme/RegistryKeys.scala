@@ -15,7 +15,8 @@ object RegistryKeys {
     __obj.asInstanceOf[RegistryKeys]
   }
   
-  extension [Self <: RegistryKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistryKeys] (val x: Self) extends AnyVal {
     
     inline def setPOSITION(value: String): Self = StObject.set(x, "POSITION", value.asInstanceOf[js.Any])
   }

@@ -227,7 +227,8 @@ object PlusVideoVideoPlayerStyles {
     __obj.asInstanceOf[PlusVideoVideoPlayerStyles]
   }
   
-  extension [Self <: PlusVideoVideoPlayerStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusVideoVideoPlayerStyles] (val x: Self) extends AnyVal {
     
     inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     

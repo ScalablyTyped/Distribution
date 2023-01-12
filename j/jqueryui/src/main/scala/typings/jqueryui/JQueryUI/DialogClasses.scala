@@ -35,7 +35,8 @@ object DialogClasses {
     __obj.asInstanceOf[DialogClasses]
   }
   
-  extension [Self <: DialogClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogClasses] (val x: Self) extends AnyVal {
     
     inline def `setUi-dialog`(value: String): Self = StObject.set(x, "ui-dialog", value.asInstanceOf[js.Any])
     

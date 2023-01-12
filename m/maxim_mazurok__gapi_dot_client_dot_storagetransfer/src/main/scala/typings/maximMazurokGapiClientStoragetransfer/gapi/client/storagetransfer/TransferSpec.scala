@@ -64,7 +64,8 @@ object TransferSpec {
     __obj.asInstanceOf[TransferSpec]
   }
   
-  extension [Self <: TransferSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferSpec] (val x: Self) extends AnyVal {
     
     inline def setAwsS3CompatibleDataSource(value: AwsS3CompatibleData): Self = StObject.set(x, "awsS3CompatibleDataSource", value.asInstanceOf[js.Any])
     

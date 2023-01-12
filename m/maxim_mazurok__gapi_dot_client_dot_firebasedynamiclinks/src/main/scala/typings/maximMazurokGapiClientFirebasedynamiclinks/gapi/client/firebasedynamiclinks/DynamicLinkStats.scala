@@ -16,7 +16,8 @@ object DynamicLinkStats {
     __obj.asInstanceOf[DynamicLinkStats]
   }
   
-  extension [Self <: DynamicLinkStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicLinkStats] (val x: Self) extends AnyVal {
     
     inline def setLinkEventStats(value: js.Array[DynamicLinkEventStat]): Self = StObject.set(x, "linkEventStats", value.asInstanceOf[js.Any])
     

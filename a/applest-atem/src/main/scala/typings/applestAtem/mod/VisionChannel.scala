@@ -17,7 +17,8 @@ object VisionChannel {
     __obj.asInstanceOf[VisionChannel]
   }
   
-  extension [Self <: VisionChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisionChannel] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object DropDownSettings {
     __obj.asInstanceOf[DropDownSettings]
   }
   
-  extension [Self <: DropDownSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownSettings] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ Any => Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

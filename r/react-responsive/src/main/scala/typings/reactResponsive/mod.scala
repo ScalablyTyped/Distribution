@@ -110,7 +110,8 @@ object mod {
       __obj.asInstanceOf[MediaQueryFeatures]
     }
     
-    extension [Self <: MediaQueryFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaQueryFeatures] (val x: Self) extends AnyVal {
       
       inline def setMaxAspectRatio(value: String): Self = StObject.set(x, "maxAspectRatio", value.asInstanceOf[js.Any])
       
@@ -229,7 +230,8 @@ object mod {
       __obj.asInstanceOf[MediaQueryMatchers]
     }
     
-    extension [Self <: MediaQueryMatchers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaQueryMatchers] (val x: Self) extends AnyVal {
       
       inline def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
@@ -314,7 +316,8 @@ object mod {
       __obj.asInstanceOf[MediaQueryProps]
     }
     
-    extension [Self <: MediaQueryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaQueryProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | (js.Function1[/* matches */ Boolean, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -402,7 +405,8 @@ object mod {
       __obj.asInstanceOf[MediaQueryTypes]
     }
     
-    extension [Self <: MediaQueryTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaQueryTypes] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

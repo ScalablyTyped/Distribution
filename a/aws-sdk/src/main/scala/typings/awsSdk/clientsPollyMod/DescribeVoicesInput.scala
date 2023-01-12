@@ -33,7 +33,8 @@ object DescribeVoicesInput {
     __obj.asInstanceOf[DescribeVoicesInput]
   }
   
-  extension [Self <: DescribeVoicesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVoicesInput] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: Engine): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     

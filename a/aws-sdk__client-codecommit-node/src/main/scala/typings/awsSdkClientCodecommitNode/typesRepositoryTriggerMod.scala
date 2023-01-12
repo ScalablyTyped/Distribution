@@ -48,7 +48,8 @@ object typesRepositoryTriggerMod {
       __obj.asInstanceOf[RepositoryTrigger]
     }
     
-    extension [Self <: RepositoryTrigger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryTrigger] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object typesRepositoryTriggerMod {
       __obj.asInstanceOf[UnmarshalledRepositoryTrigger]
     }
     
-    extension [Self <: UnmarshalledRepositoryTrigger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledRepositoryTrigger] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       

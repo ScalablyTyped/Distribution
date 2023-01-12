@@ -196,7 +196,8 @@ object ConsequenceParamsPickSear {
     __obj.asInstanceOf[ConsequenceParamsPickSear]
   }
   
-  extension [Self <: ConsequenceParamsPickSear](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsequenceParamsPickSear] (val x: Self) extends AnyVal {
     
     inline def setAdvancedSyntax(value: Boolean): Self = StObject.set(x, "advancedSyntax", value.asInstanceOf[js.Any])
     

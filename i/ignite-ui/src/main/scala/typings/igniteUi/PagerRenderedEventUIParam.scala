@@ -23,7 +23,8 @@ object PagerRenderedEventUIParam {
     __obj.asInstanceOf[PagerRenderedEventUIParam]
   }
   
-  extension [Self <: PagerRenderedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagerRenderedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

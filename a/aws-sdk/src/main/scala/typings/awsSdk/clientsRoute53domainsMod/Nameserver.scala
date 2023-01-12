@@ -23,7 +23,8 @@ object Nameserver {
     __obj.asInstanceOf[Nameserver]
   }
   
-  extension [Self <: Nameserver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nameserver] (val x: Self) extends AnyVal {
     
     inline def setGlueIps(value: GlueIpList): Self = StObject.set(x, "GlueIps", value.asInstanceOf[js.Any])
     

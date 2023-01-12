@@ -2662,7 +2662,8 @@ object anon {
       __obj.asInstanceOf[PartialEvent]
     }
     
-    extension [Self <: PartialEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialEvent] (val x: Self) extends AnyVal {
       
       inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
       

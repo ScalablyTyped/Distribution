@@ -43,7 +43,8 @@ object ConfirmHold {
     __obj.asInstanceOf[ConfirmHold]
   }
   
-  extension [Self <: ConfirmHold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmHold] (val x: Self) extends AnyVal {
     
     inline def setConfirmHold(value: Boolean): Self = StObject.set(x, "confirmHold", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CreateAssociationBatchResult {
     __obj.asInstanceOf[CreateAssociationBatchResult]
   }
   
-  extension [Self <: CreateAssociationBatchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAssociationBatchResult] (val x: Self) extends AnyVal {
     
     inline def setFailed(value: FailedCreateAssociationList): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     

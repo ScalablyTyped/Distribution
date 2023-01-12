@@ -22,7 +22,8 @@ object Reference {
     __obj.asInstanceOf[Reference]
   }
   
-  extension [Self <: Reference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: typings.tabris.mod.Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

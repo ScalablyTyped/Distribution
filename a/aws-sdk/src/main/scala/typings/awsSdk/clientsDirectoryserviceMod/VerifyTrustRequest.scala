@@ -18,7 +18,8 @@ object VerifyTrustRequest {
     __obj.asInstanceOf[VerifyTrustRequest]
   }
   
-  extension [Self <: VerifyTrustRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyTrustRequest] (val x: Self) extends AnyVal {
     
     inline def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
   }

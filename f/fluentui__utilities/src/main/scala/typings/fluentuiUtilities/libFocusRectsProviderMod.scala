@@ -32,7 +32,8 @@ object libFocusRectsProviderMod {
       __obj.asInstanceOf[FocusRectsProviderProps]
     }
     
-    extension [Self <: FocusRectsProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusRectsProviderProps] (val x: Self) extends AnyVal {
       
       inline def setLayerRoot(value: Boolean): Self = StObject.set(x, "layerRoot", value.asInstanceOf[js.Any])
       

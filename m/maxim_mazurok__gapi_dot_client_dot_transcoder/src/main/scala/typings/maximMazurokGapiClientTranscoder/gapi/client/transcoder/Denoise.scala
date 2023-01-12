@@ -19,7 +19,8 @@ object Denoise {
     __obj.asInstanceOf[Denoise]
   }
   
-  extension [Self <: Denoise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Denoise] (val x: Self) extends AnyVal {
     
     inline def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     

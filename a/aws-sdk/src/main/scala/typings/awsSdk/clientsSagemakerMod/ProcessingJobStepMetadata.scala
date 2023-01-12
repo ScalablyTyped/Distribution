@@ -18,7 +18,8 @@ object ProcessingJobStepMetadata {
     __obj.asInstanceOf[ProcessingJobStepMetadata]
   }
   
-  extension [Self <: ProcessingJobStepMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingJobStepMetadata] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ProcessingJobArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

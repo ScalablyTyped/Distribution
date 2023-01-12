@@ -21,7 +21,8 @@ object UnixListener {
     __obj.asInstanceOf[UnixListener]
   }
   
-  extension [Self <: UnixListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnixListener] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

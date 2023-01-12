@@ -27,7 +27,8 @@ object distExpirationMonthMod {
       __obj.asInstanceOf[ExpirationMonthVerification]
     }
     
-    extension [Self <: ExpirationMonthVerification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpirationMonthVerification] (val x: Self) extends AnyVal {
       
       inline def setIsValidForThisYear(value: Boolean): Self = StObject.set(x, "isValidForThisYear", value.asInstanceOf[js.Any])
     }

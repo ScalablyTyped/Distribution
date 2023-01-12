@@ -26,7 +26,8 @@ object ResourcePolicy {
     __obj.asInstanceOf[ResourcePolicy]
   }
   
-  extension [Self <: ResourcePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicy] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String | js.Array[String] | StringDictionary[Any]): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

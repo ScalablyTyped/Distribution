@@ -218,7 +218,8 @@ object behaviorsMeshesBaseSixDofDragBehaviorMod {
       __obj.asInstanceOf[VirtualMeshInfo]
     }
     
-    extension [Self <: VirtualMeshInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualMeshInfo] (val x: Self) extends AnyVal {
       
       inline def setDragMesh(value: AbstractMesh): Self = StObject.set(x, "dragMesh", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object HlsRenditionGroupSettings {
     __obj.asInstanceOf[HlsRenditionGroupSettings]
   }
   
-  extension [Self <: HlsRenditionGroupSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsRenditionGroupSettings] (val x: Self) extends AnyVal {
     
     inline def setRenditionGroupId(value: string): Self = StObject.set(x, "RenditionGroupId", value.asInstanceOf[js.Any])
     

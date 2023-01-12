@@ -26,7 +26,8 @@ object FormulaTransform {
     __obj.asInstanceOf[FormulaTransform]
   }
   
-  extension [Self <: FormulaTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormulaTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

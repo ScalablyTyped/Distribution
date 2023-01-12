@@ -77,7 +77,8 @@ object anon {
       __obj.asInstanceOf[PartialServerOptions]
     }
     
-    extension [Self <: PartialServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: AdapterConstructor): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object anon {
       __obj.asInstanceOf[Typeofparser]
     }
     
-    extension [Self <: Typeofparser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofparser] (val x: Self) extends AnyVal {
       
       inline def setDecoder(value: TypeofDecoder): Self = StObject.set(x, "Decoder", value.asInstanceOf[js.Any])
       

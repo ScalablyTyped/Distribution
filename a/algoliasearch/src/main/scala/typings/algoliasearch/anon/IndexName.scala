@@ -19,7 +19,8 @@ object IndexName {
     __obj.asInstanceOf[IndexName]
   }
   
-  extension [Self <: IndexName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexName] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     

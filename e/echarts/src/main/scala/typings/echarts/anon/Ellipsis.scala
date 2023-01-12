@@ -497,7 +497,8 @@ object Ellipsis {
     __obj.asInstanceOf[Ellipsis]
   }
   
-  extension [Self <: Ellipsis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ellipsis] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

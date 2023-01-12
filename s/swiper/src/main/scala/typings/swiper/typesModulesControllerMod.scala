@@ -26,7 +26,8 @@ object typesModulesControllerMod {
       __obj.asInstanceOf[ControllerMethods]
     }
     
-    extension [Self <: ControllerMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControllerMethods] (val x: Self) extends AnyVal {
       
       inline def setControl(value: default | js.Array[default]): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object typesModulesControllerMod {
       __obj.asInstanceOf[ControllerOptions]
     }
     
-    extension [Self <: ControllerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControllerOptions] (val x: Self) extends AnyVal {
       
       inline def setBy(value: slide | container): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
       

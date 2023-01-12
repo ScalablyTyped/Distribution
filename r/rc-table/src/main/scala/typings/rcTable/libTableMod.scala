@@ -204,7 +204,8 @@ object libTableMod {
       __obj.asInstanceOf[TableProps[RecordType]]
     }
     
-    extension [Self <: TableProps[?], RecordType](x: Self & TableProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableProps[?], RecordType] (val x: Self & TableProps[RecordType]) extends AnyVal {
       
       inline def setCaption(value: String | ReactNode): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       

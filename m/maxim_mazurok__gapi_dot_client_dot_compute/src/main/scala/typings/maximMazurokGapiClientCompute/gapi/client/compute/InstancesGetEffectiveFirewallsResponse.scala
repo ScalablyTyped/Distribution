@@ -19,7 +19,8 @@ object InstancesGetEffectiveFirewallsResponse {
     __obj.asInstanceOf[InstancesGetEffectiveFirewallsResponse]
   }
   
-  extension [Self <: InstancesGetEffectiveFirewallsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesGetEffectiveFirewallsResponse] (val x: Self) extends AnyVal {
     
     inline def setFirewallPolicys(value: js.Array[InstancesGetEffectiveFirewallsResponseEffectiveFirewallPolicy]): Self = StObject.set(x, "firewallPolicys", value.asInstanceOf[js.Any])
     

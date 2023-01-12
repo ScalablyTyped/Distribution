@@ -33,7 +33,8 @@ object BusinessGoals {
     __obj.asInstanceOf[BusinessGoals]
   }
   
-  extension [Self <: BusinessGoals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessGoals] (val x: Self) extends AnyVal {
     
     inline def setLicenseCostReduction(value: BusinessGoalsInteger): Self = StObject.set(x, "licenseCostReduction", value.asInstanceOf[js.Any])
     

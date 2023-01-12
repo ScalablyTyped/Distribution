@@ -31,7 +31,8 @@ object VersionUpgradeEventObject {
     __obj.asInstanceOf[VersionUpgradeEventObject]
   }
   
-  extension [Self <: VersionUpgradeEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionUpgradeEventObject] (val x: Self) extends AnyVal {
     
     inline def setDocumentVersion(value: String): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     

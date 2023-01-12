@@ -91,7 +91,8 @@ object Static {
     __obj.asInstanceOf[Static]
   }
   
-  extension [Self <: Static](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
     
     inline def setGetAllFrames(value: GetAllFramesDetailsType => js.Promise[js.Array[GetAllFramesCallbackDetailsItemType]]): Self = StObject.set(x, "getAllFrames", js.Any.fromFunction1(value))
     

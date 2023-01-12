@@ -48,7 +48,8 @@ object DataSourceConfigurationsResult {
     __obj.asInstanceOf[DataSourceConfigurationsResult]
   }
   
-  extension [Self <: DataSourceConfigurationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceConfigurationsResult] (val x: Self) extends AnyVal {
     
     inline def setCloudTrail(value: CloudTrailConfigurationResult): Self = StObject.set(x, "CloudTrail", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object BaseEvent {
     __obj.asInstanceOf[BaseEvent[T, Detail]]
   }
   
-  extension [Self <: BaseEvent[?, ?], T /* <: String */, Detail](x: Self & (BaseEvent[T, Detail])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseEvent[?, ?], T /* <: String */, Detail] (val x: Self & (BaseEvent[T, Detail])) extends AnyVal {
     
     inline def setCurrentTarget(value: EventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     

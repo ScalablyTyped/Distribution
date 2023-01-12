@@ -33,7 +33,8 @@ object RemovePermissionRequest {
     __obj.asInstanceOf[RemovePermissionRequest]
   }
   
-  extension [Self <: RemovePermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemovePermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object NavigatorProps {
     __obj.asInstanceOf[NavigatorProps]
   }
   
-  extension [Self <: NavigatorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorProps] (val x: Self) extends AnyVal {
     
     inline def setInitialRoute(value: Route): Self = StObject.set(x, "initialRoute", value.asInstanceOf[js.Any])
   }

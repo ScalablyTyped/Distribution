@@ -22,7 +22,8 @@ object Path {
     __obj.asInstanceOf[Path[Options, NavigationScreenPropType, ScreenProps]]
   }
   
-  extension [Self <: Path[?, ?, ?], Options, NavigationScreenPropType, ScreenProps](x: Self & (Path[Options, NavigationScreenPropType, ScreenProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Path[?, ?, ?], Options, NavigationScreenPropType, ScreenProps] (val x: Self & (Path[Options, NavigationScreenPropType, ScreenProps])) extends AnyVal {
     
     inline def setNavigationOptions(value: NavigationScreenConfig[Options, NavigationScreenPropType, ScreenProps]): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     

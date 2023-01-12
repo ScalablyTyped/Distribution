@@ -47,7 +47,8 @@ object ASPxClientWeekDaysCheckEdit {
     __obj.asInstanceOf[ASPxClientWeekDaysCheckEdit]
   }
   
-  extension [Self <: ASPxClientWeekDaysCheckEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientWeekDaysCheckEdit] (val x: Self) extends AnyVal {
     
     inline def setGetValue(value: () => ASPxClientWeekDays): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     

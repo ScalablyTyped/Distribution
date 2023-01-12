@@ -21,7 +21,8 @@ object ParagraphOpenToken {
     __obj.asInstanceOf[ParagraphOpenToken]
   }
   
-  extension [Self <: ParagraphOpenToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphOpenToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: paragraph_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

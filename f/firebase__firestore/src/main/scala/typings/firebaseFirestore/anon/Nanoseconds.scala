@@ -17,7 +17,8 @@ object Nanoseconds {
     __obj.asInstanceOf[Nanoseconds]
   }
   
-  extension [Self <: Nanoseconds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nanoseconds] (val x: Self) extends AnyVal {
     
     inline def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
     

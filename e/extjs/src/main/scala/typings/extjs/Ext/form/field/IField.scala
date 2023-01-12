@@ -140,7 +140,8 @@ object IField {
     __obj.asInstanceOf[IField]
   }
   
-  extension [Self <: IField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
     
     inline def setBatchChanges(value: /* fn */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "batchChanges", js.Any.fromFunction1(value))
     

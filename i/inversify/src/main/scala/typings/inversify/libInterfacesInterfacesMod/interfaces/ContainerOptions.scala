@@ -19,7 +19,8 @@ object ContainerOptions {
     __obj.asInstanceOf[ContainerOptions]
   }
   
-  extension [Self <: ContainerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoBindInjectable(value: Boolean): Self = StObject.set(x, "autoBindInjectable", value.asInstanceOf[js.Any])
     

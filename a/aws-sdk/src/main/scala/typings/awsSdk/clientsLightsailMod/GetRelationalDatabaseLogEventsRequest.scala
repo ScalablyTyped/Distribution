@@ -43,7 +43,8 @@ object GetRelationalDatabaseLogEventsRequest {
     __obj.asInstanceOf[GetRelationalDatabaseLogEventsRequest]
   }
   
-  extension [Self <: GetRelationalDatabaseLogEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabaseLogEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object RefCountDisposable {
     __obj.asInstanceOf[RefCountDisposable]
   }
   
-  extension [Self <: RefCountDisposable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefCountDisposable] (val x: Self) extends AnyVal {
     
     inline def setGetDisposable(value: () => IDisposable): Self = StObject.set(x, "getDisposable", js.Any.fromFunction0(value))
     

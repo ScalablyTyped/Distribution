@@ -22,7 +22,8 @@ object typesLifecycleConfigurationMod {
       __obj.asInstanceOf[LifecycleConfiguration]
     }
     
-    extension [Self <: LifecycleConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LifecycleConfiguration] (val x: Self) extends AnyVal {
       
       inline def setRules(value: js.Array[Rule] | js.Iterable[Rule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesLifecycleConfigurationMod {
       __obj.asInstanceOf[UnmarshalledLifecycleConfiguration]
     }
     
-    extension [Self <: UnmarshalledLifecycleConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledLifecycleConfiguration] (val x: Self) extends AnyVal {
       
       inline def setRules(value: js.Array[UnmarshalledRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       

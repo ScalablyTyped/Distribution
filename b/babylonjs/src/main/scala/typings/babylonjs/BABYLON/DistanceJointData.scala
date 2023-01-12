@@ -20,7 +20,8 @@ object DistanceJointData {
     __obj.asInstanceOf[DistanceJointData]
   }
   
-  extension [Self <: DistanceJointData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceJointData] (val x: Self) extends AnyVal {
     
     inline def setMaxDistance(value: Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
   }

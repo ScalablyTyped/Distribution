@@ -34,7 +34,8 @@ object PartialdefaultProps {
     __obj.asInstanceOf[PartialdefaultProps]
   }
   
-  extension [Self <: PartialdefaultProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialdefaultProps] (val x: Self) extends AnyVal {
     
     inline def setFilterOption(value: (/* option */ typings.baseui.selectTypesMod.Option, /* filterValue */ String) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
     

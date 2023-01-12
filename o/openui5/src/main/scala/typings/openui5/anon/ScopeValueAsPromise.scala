@@ -25,7 +25,8 @@ object ScopeValueAsPromise {
     __obj.asInstanceOf[ScopeValueAsPromise]
   }
   
-  extension [Self <: ScopeValueAsPromise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScopeValueAsPromise] (val x: Self) extends AnyVal {
     
     inline def setDollarDollarvalueAsPromise(value: Boolean): Self = StObject.set(x, "$$valueAsPromise", value.asInstanceOf[js.Any])
     

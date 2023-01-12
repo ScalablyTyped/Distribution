@@ -24,7 +24,8 @@ object EventInteraction {
     __obj.asInstanceOf[EventInteraction]
   }
   
-  extension [Self <: EventInteraction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventInteraction] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: typings.std.Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

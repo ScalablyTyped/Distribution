@@ -39,7 +39,8 @@ object OAuthCredential {
     __obj.asInstanceOf[OAuthCredential]
   }
   
-  extension [Self <: OAuthCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthCredential] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

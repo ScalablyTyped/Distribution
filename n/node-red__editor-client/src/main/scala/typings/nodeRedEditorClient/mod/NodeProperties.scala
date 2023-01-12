@@ -23,7 +23,8 @@ object NodeProperties {
     __obj.asInstanceOf[NodeProperties]
   }
   
-  extension [Self <: NodeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeProperties] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: `0` | `1`): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     

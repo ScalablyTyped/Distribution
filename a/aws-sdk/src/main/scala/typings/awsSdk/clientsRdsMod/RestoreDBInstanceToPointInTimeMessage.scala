@@ -200,7 +200,8 @@ object RestoreDBInstanceToPointInTimeMessage {
     __obj.asInstanceOf[RestoreDBInstanceToPointInTimeMessage]
   }
   
-  extension [Self <: RestoreDBInstanceToPointInTimeMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreDBInstanceToPointInTimeMessage] (val x: Self) extends AnyVal {
     
     inline def setAutoMinorVersionUpgrade(value: BooleanOptional): Self = StObject.set(x, "AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
     

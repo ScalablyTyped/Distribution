@@ -28,7 +28,8 @@ object ReplaceOptions {
     __obj.asInstanceOf[ReplaceOptions]
   }
   
-  extension [Self <: ReplaceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceOptions] (val x: Self) extends AnyVal {
     
     inline def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
     

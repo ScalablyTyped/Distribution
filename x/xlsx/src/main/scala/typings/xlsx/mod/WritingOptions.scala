@@ -55,7 +55,8 @@ object WritingOptions {
     __obj.asInstanceOf[WritingOptions]
   }
   
-  extension [Self <: WritingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WritingOptions] (val x: Self) extends AnyVal {
     
     inline def setBookSST(value: Boolean): Self = StObject.set(x, "bookSST", value.asInstanceOf[js.Any])
     

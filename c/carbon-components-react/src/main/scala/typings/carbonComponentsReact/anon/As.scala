@@ -15,7 +15,8 @@ object As {
     __obj.asInstanceOf[As[K]]
   }
   
-  extension [Self <: As[?], K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */](x: Self & As[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: As[?], K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */] (val x: Self & As[K]) extends AnyVal {
     
     inline def setAs(value: K): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
   }

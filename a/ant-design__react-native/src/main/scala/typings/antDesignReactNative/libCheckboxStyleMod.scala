@@ -63,7 +63,8 @@ object libCheckboxStyleMod {
       __obj.asInstanceOf[CheckboxStyle]
     }
     
-    extension [Self <: CheckboxStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxStyle] (val x: Self) extends AnyVal {
       
       inline def setCheckbox(value: ViewStyle): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
       

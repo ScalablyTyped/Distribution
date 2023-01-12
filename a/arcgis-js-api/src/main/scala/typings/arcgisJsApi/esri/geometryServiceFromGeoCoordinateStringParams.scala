@@ -51,7 +51,8 @@ object geometryServiceFromGeoCoordinateStringParams {
     __obj.asInstanceOf[geometryServiceFromGeoCoordinateStringParams]
   }
   
-  extension [Self <: geometryServiceFromGeoCoordinateStringParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: geometryServiceFromGeoCoordinateStringParams] (val x: Self) extends AnyVal {
     
     inline def setConversionMode(value: String): Self = StObject.set(x, "conversionMode", value.asInstanceOf[js.Any])
     

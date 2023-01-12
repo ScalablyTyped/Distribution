@@ -30,7 +30,8 @@ object PropertyType {
       __obj.asInstanceOf[CheckBoxBoolean]
     }
     
-    extension [Self <: CheckBoxBoolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckBoxBoolean] (val x: Self) extends AnyVal {
       
       inline def setDataToLocalized(value: Any => java.lang.String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
       
@@ -58,7 +59,8 @@ object PropertyType {
       __obj.asInstanceOf[DropDownBoolean]
     }
     
-    extension [Self <: DropDownBoolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownBoolean] (val x: Self) extends AnyVal {
       
       inline def setDataToLocalized(value: Any => java.lang.String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
       
@@ -93,7 +95,8 @@ object PropertyType {
       __obj.asInstanceOf[HyperLink]
     }
     
-    extension [Self <: HyperLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HyperLink] (val x: Self) extends AnyVal {
       
       inline def setBHyperlink(value: Boolean): Self = StObject.set(x, "bHyperlink", value.asInstanceOf[js.Any])
       

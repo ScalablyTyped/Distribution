@@ -79,7 +79,8 @@ object libBankRedirectMod {
       __obj.asInstanceOf[BankRedirectOptions]
     }
     
-    extension [Self <: BankRedirectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BankRedirectOptions] (val x: Self) extends AnyVal {
       
       inline def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object libBankRedirectMod {
       __obj.asInstanceOf[LoadBanksOptions]
     }
     
-    extension [Self <: LoadBanksOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadBanksOptions] (val x: Self) extends AnyVal {
       
       inline def setPayment_method_type(value: PaymentMethodType): Self = StObject.set(x, "payment_method_type", value.asInstanceOf[js.Any])
     }

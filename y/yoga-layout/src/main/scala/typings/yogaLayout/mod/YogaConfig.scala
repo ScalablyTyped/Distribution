@@ -23,7 +23,8 @@ object YogaConfig {
     __obj.asInstanceOf[YogaConfig]
   }
   
-  extension [Self <: YogaConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YogaConfig] (val x: Self) extends AnyVal {
     
     inline def setIsExperimentalFeatureEnabled(value: YogaExperimentalFeature => Boolean): Self = StObject.set(x, "isExperimentalFeatureEnabled", js.Any.fromFunction1(value))
     

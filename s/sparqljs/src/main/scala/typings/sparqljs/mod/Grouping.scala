@@ -15,7 +15,8 @@ object Grouping {
     __obj.asInstanceOf[Grouping]
   }
   
-  extension [Self <: Grouping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grouping] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }

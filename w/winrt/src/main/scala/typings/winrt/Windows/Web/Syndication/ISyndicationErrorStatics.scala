@@ -15,7 +15,8 @@ object ISyndicationErrorStatics {
     __obj.asInstanceOf[ISyndicationErrorStatics]
   }
   
-  extension [Self <: ISyndicationErrorStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationErrorStatics] (val x: Self) extends AnyVal {
     
     inline def setGetStatus(value: Double => SyndicationErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
   }

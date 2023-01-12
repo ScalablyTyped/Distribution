@@ -43,7 +43,8 @@ object DescribedSecurityPolicy {
     __obj.asInstanceOf[DescribedSecurityPolicy]
   }
   
-  extension [Self <: DescribedSecurityPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribedSecurityPolicy] (val x: Self) extends AnyVal {
     
     inline def setFips(value: Fips): Self = StObject.set(x, "Fips", value.asInstanceOf[js.Any])
     

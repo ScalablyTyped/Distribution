@@ -167,7 +167,8 @@ object distSemaphoreMod {
       __obj.asInstanceOf[Semaphore]
     }
     
-    extension [Self <: Semaphore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Semaphore] (val x: Self) extends AnyVal {
       
       inline def setAcquire(value: () => js.Promise[Boolean]): Self = StObject.set(x, "acquire", js.Any.fromFunction0(value))
       

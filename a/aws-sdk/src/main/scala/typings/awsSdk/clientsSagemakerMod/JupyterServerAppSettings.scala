@@ -23,7 +23,8 @@ object JupyterServerAppSettings {
     __obj.asInstanceOf[JupyterServerAppSettings]
   }
   
-  extension [Self <: JupyterServerAppSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JupyterServerAppSettings] (val x: Self) extends AnyVal {
     
     inline def setDefaultResourceSpec(value: ResourceSpec): Self = StObject.set(x, "DefaultResourceSpec", value.asInstanceOf[js.Any])
     

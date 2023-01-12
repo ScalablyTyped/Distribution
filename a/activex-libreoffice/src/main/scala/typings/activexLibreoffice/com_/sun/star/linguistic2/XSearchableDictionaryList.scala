@@ -53,7 +53,8 @@ object XSearchableDictionaryList {
     __obj.asInstanceOf[XSearchableDictionaryList]
   }
   
-  extension [Self <: XSearchableDictionaryList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSearchableDictionaryList] (val x: Self) extends AnyVal {
     
     inline def setQueryDictionaryEntry(value: (String, Locale, Boolean, Boolean) => XDictionaryEntry): Self = StObject.set(x, "queryDictionaryEntry", js.Any.fromFunction4(value))
   }

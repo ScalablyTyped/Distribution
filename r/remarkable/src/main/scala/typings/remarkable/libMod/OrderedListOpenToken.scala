@@ -26,7 +26,8 @@ object OrderedListOpenToken {
     __obj.asInstanceOf[OrderedListOpenToken]
   }
   
-  extension [Self <: OrderedListOpenToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderedListOpenToken] (val x: Self) extends AnyVal {
     
     inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

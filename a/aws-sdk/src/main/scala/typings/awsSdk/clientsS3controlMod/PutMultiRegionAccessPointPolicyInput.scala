@@ -23,7 +23,8 @@ object PutMultiRegionAccessPointPolicyInput {
     __obj.asInstanceOf[PutMultiRegionAccessPointPolicyInput]
   }
   
-  extension [Self <: PutMultiRegionAccessPointPolicyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutMultiRegionAccessPointPolicyInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: MultiRegionAccessPointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object DeleteGitHubEnterpriseConfigOperationMetadata {
     __obj.asInstanceOf[DeleteGitHubEnterpriseConfigOperationMetadata]
   }
   
-  extension [Self <: DeleteGitHubEnterpriseConfigOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGitHubEnterpriseConfigOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setCompleteTime(value: String): Self = StObject.set(x, "completeTime", value.asInstanceOf[js.Any])
     

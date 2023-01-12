@@ -18,7 +18,8 @@ object RegisterTargetWithMaintenanceWindowResult {
     __obj.asInstanceOf[RegisterTargetWithMaintenanceWindowResult]
   }
   
-  extension [Self <: RegisterTargetWithMaintenanceWindowResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterTargetWithMaintenanceWindowResult] (val x: Self) extends AnyVal {
     
     inline def setWindowTargetId(value: MaintenanceWindowTargetId): Self = StObject.set(x, "WindowTargetId", value.asInstanceOf[js.Any])
     

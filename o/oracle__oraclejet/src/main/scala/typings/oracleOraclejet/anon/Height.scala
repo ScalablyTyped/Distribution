@@ -20,7 +20,8 @@ object Height {
     __obj.asInstanceOf[Height[K, D]]
   }
   
-  extension [Self <: Height[?, ?], K, D](x: Self & (Height[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Height[?, ?], K, D] (val x: Self & (Height[K, D])) extends AnyVal {
     
     inline def setHeight(value: enable | disable): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TransportMultiOptions {
     __obj.asInstanceOf[TransportMultiOptions[TransportOptions]]
   }
   
-  extension [Self <: TransportMultiOptions[?], TransportOptions](x: Self & TransportMultiOptions[TransportOptions]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransportMultiOptions[?], TransportOptions] (val x: Self & TransportMultiOptions[TransportOptions]) extends AnyVal {
     
     inline def setLevels(value: Record[String, Double]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     

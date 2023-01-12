@@ -19,7 +19,8 @@ object XpackUsageSecurityRolesDlsBitSetCache {
     __obj.asInstanceOf[XpackUsageSecurityRolesDlsBitSetCache]
   }
   
-  extension [Self <: XpackUsageSecurityRolesDlsBitSetCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageSecurityRolesDlsBitSetCache] (val x: Self) extends AnyVal {
     
     inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

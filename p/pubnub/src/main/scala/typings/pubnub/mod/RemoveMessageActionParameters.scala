@@ -19,7 +19,8 @@ object RemoveMessageActionParameters {
     __obj.asInstanceOf[RemoveMessageActionParameters]
   }
   
-  extension [Self <: RemoveMessageActionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveMessageActionParameters] (val x: Self) extends AnyVal {
     
     inline def setActionTimetoken(value: String): Self = StObject.set(x, "actionTimetoken", value.asInstanceOf[js.Any])
     

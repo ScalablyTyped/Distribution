@@ -23,7 +23,8 @@ object SchemaChangePolicy {
     __obj.asInstanceOf[SchemaChangePolicy]
   }
   
-  extension [Self <: SchemaChangePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaChangePolicy] (val x: Self) extends AnyVal {
     
     inline def setDeleteBehavior(value: DeleteBehavior): Self = StObject.set(x, "DeleteBehavior", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object V8IntrinsicIdentifier_ {
     __obj.asInstanceOf[V8IntrinsicIdentifier_]
   }
   
-  extension [Self <: V8IntrinsicIdentifier_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V8IntrinsicIdentifier_] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

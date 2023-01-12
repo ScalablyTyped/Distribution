@@ -146,7 +146,8 @@ object IVersion {
     __obj.asInstanceOf[IVersion]
   }
   
-  extension [Self <: IVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVersion] (val x: Self) extends AnyVal {
     
     inline def setDeprecate(
       value: (/* packageName */ js.UndefOr[java.lang.String], /* since */ js.UndefOr[java.lang.String], /* closure */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit

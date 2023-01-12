@@ -136,7 +136,8 @@ object BulletItemProps {
     __obj.asInstanceOf[BulletItemProps]
   }
   
-  extension [Self <: BulletItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulletItemProps] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

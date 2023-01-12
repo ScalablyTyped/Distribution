@@ -19,7 +19,8 @@ object NotebookSerializationProvider {
     __obj.asInstanceOf[NotebookSerializationProvider]
   }
   
-  extension [Self <: NotebookSerializationProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookSerializationProvider] (val x: Self) extends AnyVal {
     
     inline def setGetSerializationManager(value: Uri => Thenable[SerializationManager]): Self = StObject.set(x, "getSerializationManager", js.Any.fromFunction1(value))
     

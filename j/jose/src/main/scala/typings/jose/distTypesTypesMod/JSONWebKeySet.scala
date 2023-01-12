@@ -15,7 +15,8 @@ object JSONWebKeySet {
     __obj.asInstanceOf[JSONWebKeySet]
   }
   
-  extension [Self <: JSONWebKeySet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONWebKeySet] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: js.Array[JWK]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

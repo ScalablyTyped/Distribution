@@ -333,7 +333,8 @@ object XPackage {
     __obj.asInstanceOf[XPackage]
   }
   
-  extension [Self <: XPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPackage] (val x: Self) extends AnyVal {
     
     inline def setCheckDependencies(value: XCommandEnvironment => Boolean): Self = StObject.set(x, "checkDependencies", js.Any.fromFunction1(value))
     

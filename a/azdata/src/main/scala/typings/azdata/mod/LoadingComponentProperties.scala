@@ -36,7 +36,8 @@ object LoadingComponentProperties {
     __obj.asInstanceOf[LoadingComponentProperties]
   }
   
-  extension [Self <: LoadingComponentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadingComponentProperties] (val x: Self) extends AnyVal {
     
     inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     

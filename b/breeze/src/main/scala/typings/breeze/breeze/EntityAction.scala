@@ -58,7 +58,8 @@ object EntityAction {
     __obj.asInstanceOf[EntityAction]
   }
   
-  extension [Self <: EntityAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityAction] (val x: Self) extends AnyVal {
     
     inline def setAcceptChanges(value: EntityActionSymbol): Self = StObject.set(x, "AcceptChanges", value.asInstanceOf[js.Any])
     

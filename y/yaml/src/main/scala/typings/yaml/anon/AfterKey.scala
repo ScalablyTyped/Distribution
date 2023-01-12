@@ -21,7 +21,8 @@ object AfterKey {
     __obj.asInstanceOf[AfterKey]
   }
   
-  extension [Self <: AfterKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterKey] (val x: Self) extends AnyVal {
     
     inline def setAfterKey(value: Boolean): Self = StObject.set(x, "afterKey", value.asInstanceOf[js.Any])
     

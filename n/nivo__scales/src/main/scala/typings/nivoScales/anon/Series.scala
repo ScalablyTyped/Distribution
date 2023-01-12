@@ -54,7 +54,8 @@ object Series {
     __obj.asInstanceOf[Series[S, D]]
   }
   
-  extension [Self <: Series[?, ?], S, D /* <: SerieDatum */](x: Self & (Series[S, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Series[?, ?], S, D /* <: SerieDatum */] (val x: Self & (Series[S, D])) extends AnyVal {
     
     inline def setSeries(value: js.Array[ComputedSerie[S, D]]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     

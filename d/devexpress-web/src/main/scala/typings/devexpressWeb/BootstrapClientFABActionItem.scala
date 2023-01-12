@@ -48,7 +48,8 @@ object BootstrapClientFABActionItem {
     __obj.asInstanceOf[BootstrapClientFABActionItem]
   }
   
-  extension [Self <: BootstrapClientFABActionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientFABActionItem] (val x: Self) extends AnyVal {
     
     inline def setGetBadgeCssClass(value: () => String): Self = StObject.set(x, "GetBadgeCssClass", js.Any.fromFunction0(value))
     

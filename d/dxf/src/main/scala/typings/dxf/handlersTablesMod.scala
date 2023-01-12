@@ -21,7 +21,8 @@ object handlersTablesMod {
       __obj.asInstanceOf[DXFTable]
     }
     
-    extension [Self <: DXFTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DXFTable] (val x: Self) extends AnyVal {
       
       inline def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object Xml {
     __obj.asInstanceOf[Xml]
   }
   
-  extension [Self <: Xml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Xml] (val x: Self) extends AnyVal {
     
     inline def setXml(value: Node): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
   }

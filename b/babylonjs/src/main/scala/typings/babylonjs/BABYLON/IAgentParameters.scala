@@ -62,7 +62,8 @@ object IAgentParameters {
     __obj.asInstanceOf[IAgentParameters]
   }
   
-  extension [Self <: IAgentParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAgentParameters] (val x: Self) extends AnyVal {
     
     inline def setCollisionQueryRange(value: Double): Self = StObject.set(x, "collisionQueryRange", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object BabelOptions {
     __obj.asInstanceOf[BabelOptions]
   }
   
-  extension [Self <: BabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BabelOptions] (val x: Self) extends AnyVal {
     
     inline def setBabelOptions(value: TransformOptions): Self = StObject.set(x, "babelOptions", value.asInstanceOf[js.Any])
     

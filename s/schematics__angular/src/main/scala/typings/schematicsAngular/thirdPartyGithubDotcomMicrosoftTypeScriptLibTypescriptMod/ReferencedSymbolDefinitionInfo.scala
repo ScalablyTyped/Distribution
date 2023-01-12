@@ -25,7 +25,8 @@ object ReferencedSymbolDefinitionInfo {
     __obj.asInstanceOf[ReferencedSymbolDefinitionInfo]
   }
   
-  extension [Self <: ReferencedSymbolDefinitionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferencedSymbolDefinitionInfo] (val x: Self) extends AnyVal {
     
     inline def setDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "displayParts", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object IRawCellMetadata {
     __obj.asInstanceOf[IRawCellMetadata]
   }
   
-  extension [Self <: IRawCellMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRawCellMetadata] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }

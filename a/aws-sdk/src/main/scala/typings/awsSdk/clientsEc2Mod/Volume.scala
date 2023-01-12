@@ -93,7 +93,8 @@ object Volume {
     __obj.asInstanceOf[Volume]
   }
   
-  extension [Self <: Volume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: VolumeAttachmentList): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     

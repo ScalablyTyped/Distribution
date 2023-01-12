@@ -22,7 +22,8 @@ object InteractiveIOException {
     __obj.asInstanceOf[InteractiveIOException]
   }
   
-  extension [Self <: InteractiveIOException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveIOException] (val x: Self) extends AnyVal {
     
     inline def setCode(value: IOErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object GoogleCloudRunV2EnvVarSource {
     __obj.asInstanceOf[GoogleCloudRunV2EnvVarSource]
   }
   
-  extension [Self <: GoogleCloudRunV2EnvVarSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2EnvVarSource] (val x: Self) extends AnyVal {
     
     inline def setSecretKeyRef(value: GoogleCloudRunV2SecretKeySelector): Self = StObject.set(x, "secretKeyRef", value.asInstanceOf[js.Any])
     

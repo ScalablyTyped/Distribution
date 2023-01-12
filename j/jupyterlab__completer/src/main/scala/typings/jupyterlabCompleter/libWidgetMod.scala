@@ -232,7 +232,8 @@ object libWidgetMod {
         __obj.asInstanceOf[ICursorSpan]
       }
       
-      extension [Self <: ICursorSpan](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICursorSpan] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -262,7 +263,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IItem]
       }
       
-      extension [Self <: IItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IItem] (val x: Self) extends AnyVal {
         
         inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
         
@@ -396,7 +398,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setEditor(value: IEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
         
@@ -441,7 +444,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IPatch]
       }
       
-      extension [Self <: IPatch](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPatch] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -482,7 +486,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IRenderer]
       }
       
-      extension [Self <: IRenderer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
         
         inline def setCreateCompletionItemNode(value: (/* item */ ICompletionItem, /* orderedTypes */ js.Array[String]) => HTMLLIElement): Self = StObject.set(x, "createCompletionItemNode", js.Any.fromFunction2(value))
         
@@ -535,7 +540,8 @@ object libWidgetMod {
         __obj.asInstanceOf[ITextState]
       }
       
-      extension [Self <: ITextState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITextState] (val x: Self) extends AnyVal {
         
         inline def setCharWidth(value: Double): Self = StObject.set(x, "charWidth", value.asInstanceOf[js.Any])
         

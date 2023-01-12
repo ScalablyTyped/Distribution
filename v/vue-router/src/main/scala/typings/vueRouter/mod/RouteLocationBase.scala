@@ -51,7 +51,8 @@ object RouteLocationBase {
     __obj.asInstanceOf[RouteLocationBase]
   }
   
-  extension [Self <: RouteLocationBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteLocationBase] (val x: Self) extends AnyVal {
     
     inline def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
     

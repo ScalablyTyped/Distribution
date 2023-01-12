@@ -27,7 +27,8 @@ object CarouselKnockoutBindingHandler {
     __obj.asInstanceOf[CarouselKnockoutBindingHandler]
   }
   
-  extension [Self <: CarouselKnockoutBindingHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CarouselKnockoutBindingHandler] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: KnockstrapCarouselDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ClusterRerouteResponse {
     __obj.asInstanceOf[ClusterRerouteResponse]
   }
   
-  extension [Self <: ClusterRerouteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterRerouteResponse] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

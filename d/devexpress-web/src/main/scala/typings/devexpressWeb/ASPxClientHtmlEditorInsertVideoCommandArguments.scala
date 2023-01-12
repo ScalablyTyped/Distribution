@@ -35,7 +35,8 @@ object ASPxClientHtmlEditorInsertVideoCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertVideoCommandArguments]
   }
   
-  extension [Self <: ASPxClientHtmlEditorInsertVideoCommandArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorInsertVideoCommandArguments] (val x: Self) extends AnyVal {
     
     inline def setPosterUrl(value: String): Self = StObject.set(x, "posterUrl", value.asInstanceOf[js.Any])
   }

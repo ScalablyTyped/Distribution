@@ -33,7 +33,8 @@ object ExperimentReport {
     __obj.asInstanceOf[ExperimentReport]
   }
   
-  extension [Self <: ExperimentReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentReport] (val x: Self) extends AnyVal {
     
     inline def setContent(value: JsonValue): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

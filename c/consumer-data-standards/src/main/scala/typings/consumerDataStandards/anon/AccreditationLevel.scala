@@ -67,7 +67,8 @@ object AccreditationLevel {
     __obj.asInstanceOf[AccreditationLevel]
   }
   
-  extension [Self <: AccreditationLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccreditationLevel] (val x: Self) extends AnyVal {
     
     inline def setAccreditationLevel(value: UNRESTRICTED | SPONSORED): Self = StObject.set(x, "accreditationLevel", value.asInstanceOf[js.Any])
     

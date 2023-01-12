@@ -33,7 +33,8 @@ object Get {
     __obj.asInstanceOf[Get]
   }
   
-  extension [Self <: Get](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
     
     inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
     

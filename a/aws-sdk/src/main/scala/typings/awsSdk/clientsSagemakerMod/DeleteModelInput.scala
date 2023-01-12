@@ -18,7 +18,8 @@ object DeleteModelInput {
     __obj.asInstanceOf[DeleteModelInput]
   }
   
-  extension [Self <: DeleteModelInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteModelInput] (val x: Self) extends AnyVal {
     
     inline def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
   }

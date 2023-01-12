@@ -16,7 +16,8 @@ object CompilerOptions {
     __obj.asInstanceOf[CompilerOptions]
   }
   
-  extension [Self <: CompilerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilerOptions] (val x: Self) extends AnyVal {
     
     inline def setTypescript(value: js.Object): Self = StObject.set(x, "typescript", value.asInstanceOf[js.Any])
   }

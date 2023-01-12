@@ -36,7 +36,8 @@ object XAutoStylesSupplier {
     __obj.asInstanceOf[XAutoStylesSupplier]
   }
   
-  extension [Self <: XAutoStylesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAutoStylesSupplier] (val x: Self) extends AnyVal {
     
     inline def setAutoStyles(value: XAutoStyles): Self = StObject.set(x, "AutoStyles", value.asInstanceOf[js.Any])
     

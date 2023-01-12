@@ -23,7 +23,8 @@ object LiveConnectorSinkConfiguration {
     __obj.asInstanceOf[LiveConnectorSinkConfiguration]
   }
   
-  extension [Self <: LiveConnectorSinkConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveConnectorSinkConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRTMPConfiguration(value: LiveConnectorRTMPConfiguration): Self = StObject.set(x, "RTMPConfiguration", value.asInstanceOf[js.Any])
     

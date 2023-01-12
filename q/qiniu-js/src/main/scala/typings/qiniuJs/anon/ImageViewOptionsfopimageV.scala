@@ -30,7 +30,8 @@ object ImageViewOptionsfopimageV {
     __obj.asInstanceOf[ImageViewOptionsfopimageV]
   }
   
-  extension [Self <: ImageViewOptionsfopimageV](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageViewOptionsfopimageV] (val x: Self) extends AnyVal {
     
     inline def setFop(value: imageView2): Self = StObject.set(x, "fop", value.asInstanceOf[js.Any])
     

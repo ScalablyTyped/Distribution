@@ -18,7 +18,8 @@ object GamepadInputConfig {
     __obj.asInstanceOf[GamepadInputConfig]
   }
   
-  extension [Self <: GamepadInputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GamepadInputConfig] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

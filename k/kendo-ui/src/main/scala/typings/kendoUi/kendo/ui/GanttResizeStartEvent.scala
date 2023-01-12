@@ -18,7 +18,8 @@ object GanttResizeStartEvent {
     __obj.asInstanceOf[GanttResizeStartEvent]
   }
   
-  extension [Self <: GanttResizeStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttResizeStartEvent] (val x: Self) extends AnyVal {
     
     inline def setTask(value: GanttTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     

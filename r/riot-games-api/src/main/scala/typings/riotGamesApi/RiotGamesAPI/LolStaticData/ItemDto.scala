@@ -87,7 +87,8 @@ object ItemDto {
     __obj.asInstanceOf[ItemDto]
   }
   
-  extension [Self <: ItemDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemDto] (val x: Self) extends AnyVal {
     
     inline def setColloq(value: String): Self = StObject.set(x, "colloq", value.asInstanceOf[js.Any])
     

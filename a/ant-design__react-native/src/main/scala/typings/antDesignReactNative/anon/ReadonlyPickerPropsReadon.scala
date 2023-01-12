@@ -40,7 +40,8 @@ object ReadonlyPickerPropsReadon {
     __obj.asInstanceOf[ReadonlyPickerPropsReadon]
   }
   
-  extension [Self <: ReadonlyPickerPropsReadon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPickerPropsReadon] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

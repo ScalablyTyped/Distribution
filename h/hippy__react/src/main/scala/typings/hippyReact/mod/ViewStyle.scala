@@ -189,7 +189,8 @@ object ViewStyle {
     __obj.asInstanceOf[ViewStyle]
   }
   
-  extension [Self <: ViewStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewStyle] (val x: Self) extends AnyVal {
     
     inline def setAlignItems(value: stretch | center | `flex-start` | `flex-end` | baseline): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

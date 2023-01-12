@@ -19,7 +19,8 @@ object IMetadataCardView {
     __obj.asInstanceOf[IMetadataCardView]
   }
   
-  extension [Self <: IMetadataCardView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetadataCardView] (val x: Self) extends AnyVal {
     
     inline def setDashboardID(value: String): Self = StObject.set(x, "DashboardID", value.asInstanceOf[js.Any])
     

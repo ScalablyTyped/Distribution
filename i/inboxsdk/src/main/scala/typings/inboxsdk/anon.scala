@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Added]
     }
     
-    extension [Self <: Added](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Added] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: js.Array[typings.inboxsdk.mod.Common.Contact]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[ClosedByInboxSDK]
     }
     
-    extension [Self <: ClosedByInboxSDK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClosedByInboxSDK] (val x: Self) extends AnyVal {
       
       inline def setClosedByInboxSDK(value: Boolean): Self = StObject.set(x, "closedByInboxSDK", value.asInstanceOf[js.Any])
       
@@ -84,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Contact]
     }
     
-    extension [Self <: Contact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
       
       inline def setContact(value: typings.inboxsdk.mod.Common.Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     }
@@ -101,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Fullscreen]
     }
     
-    extension [Self <: Fullscreen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fullscreen] (val x: Self) extends AnyVal {
       
       inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     }
@@ -120,7 +125,8 @@ object anon {
       __obj.asInstanceOf[GetMessageID]
     }
     
-    extension [Self <: GetMessageID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetMessageID] (val x: Self) extends AnyVal {
       
       inline def setGetMessageID(value: () => js.Promise[String]): Self = StObject.set(x, "getMessageID", js.Any.fromFunction0(value))
       
@@ -139,7 +145,8 @@ object anon {
       __obj.asInstanceOf[IsForward]
     }
     
-    extension [Self <: IsForward](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsForward] (val x: Self) extends AnyVal {
       
       inline def setIsForward(value: Boolean): Self = StObject.set(x, "isForward", value.asInstanceOf[js.Any])
     }
@@ -160,7 +167,8 @@ object anon {
       __obj.asInstanceOf[MessageView]
     }
     
-    extension [Self <: MessageView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageView] (val x: Self) extends AnyVal {
       
       inline def setMessageView(value: MessageView): Self = StObject.set(x, "messageView", value.asInstanceOf[js.Any])
       
@@ -181,7 +189,8 @@ object anon {
       __obj.asInstanceOf[PreventDefault]
     }
     
-    extension [Self <: PreventDefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreventDefault] (val x: Self) extends AnyVal {
       
       inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     }

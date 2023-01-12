@@ -28,7 +28,8 @@ object ListTunnelsRequest {
     __obj.asInstanceOf[ListTunnelsRequest]
   }
   
-  extension [Self <: ListTunnelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTunnelsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

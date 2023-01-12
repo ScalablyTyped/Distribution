@@ -54,7 +54,8 @@ object MiddlewareArgumentsavaila {
     __obj.asInstanceOf[MiddlewareArgumentsavaila]
   }
   
-  extension [Self <: MiddlewareArgumentsavaila](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MiddlewareArgumentsavaila] (val x: Self) extends AnyVal {
     
     inline def setAvailableHeight(value: Double): Self = StObject.set(x, "availableHeight", value.asInstanceOf[js.Any])
     

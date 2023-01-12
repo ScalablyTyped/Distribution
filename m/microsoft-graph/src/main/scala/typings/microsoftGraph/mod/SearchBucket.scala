@@ -29,7 +29,8 @@ object SearchBucket {
     __obj.asInstanceOf[SearchBucket]
   }
   
-  extension [Self <: SearchBucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchBucket] (val x: Self) extends AnyVal {
     
     inline def setAggregationFilterToken(value: NullableOption[String]): Self = StObject.set(x, "aggregationFilterToken", value.asInstanceOf[js.Any])
     

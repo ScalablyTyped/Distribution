@@ -24,7 +24,8 @@ object GraphicFilterRequest {
     __obj.asInstanceOf[GraphicFilterRequest]
   }
   
-  extension [Self <: GraphicFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: Double): Self = StObject.set(x, "ErrCode", value.asInstanceOf[js.Any])
   }

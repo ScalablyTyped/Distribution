@@ -29,7 +29,8 @@ object cacheableResponseMod {
       __obj.asInstanceOf[CacheableResponseConfig]
     }
     
-    extension [Self <: CacheableResponseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheableResponseConfig] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

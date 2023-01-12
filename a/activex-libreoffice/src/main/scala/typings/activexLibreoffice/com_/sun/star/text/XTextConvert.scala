@@ -51,7 +51,8 @@ object XTextConvert {
     __obj.asInstanceOf[XTextConvert]
   }
   
-  extension [Self <: XTextConvert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextConvert] (val x: Self) extends AnyVal {
     
     inline def setConvertToTable(
       value: (SeqEquiv[SeqEquiv[sequence[XTextRange]]], SeqEquiv[SeqEquiv[PropertyValues]], SeqEquiv[PropertyValues], PropertyValues) => XTextTable

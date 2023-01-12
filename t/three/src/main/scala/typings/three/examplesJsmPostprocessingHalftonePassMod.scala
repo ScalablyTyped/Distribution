@@ -49,7 +49,8 @@ object examplesJsmPostprocessingHalftonePassMod {
       __obj.asInstanceOf[HalftonePassParameters]
     }
     
-    extension [Self <: HalftonePassParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HalftonePassParameters] (val x: Self) extends AnyVal {
       
       inline def setBlending(value: Double): Self = StObject.set(x, "blending", value.asInstanceOf[js.Any])
       

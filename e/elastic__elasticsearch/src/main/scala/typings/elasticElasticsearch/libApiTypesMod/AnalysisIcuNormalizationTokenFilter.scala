@@ -22,7 +22,8 @@ object AnalysisIcuNormalizationTokenFilter {
     __obj.asInstanceOf[AnalysisIcuNormalizationTokenFilter]
   }
   
-  extension [Self <: AnalysisIcuNormalizationTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisIcuNormalizationTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: AnalysisIcuNormalizationType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

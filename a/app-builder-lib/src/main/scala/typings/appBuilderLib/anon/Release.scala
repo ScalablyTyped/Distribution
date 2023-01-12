@@ -17,7 +17,8 @@ object Release {
     __obj.asInstanceOf[Release]
   }
   
-  extension [Self <: Release](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Release] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: Data): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

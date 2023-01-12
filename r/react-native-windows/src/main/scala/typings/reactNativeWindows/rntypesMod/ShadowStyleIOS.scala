@@ -22,7 +22,8 @@ object ShadowStyleIOS {
     __obj.asInstanceOf[ShadowStyleIOS]
   }
   
-  extension [Self <: ShadowStyleIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowStyleIOS] (val x: Self) extends AnyVal {
     
     inline def setShadowColor(value: ColorValue): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     

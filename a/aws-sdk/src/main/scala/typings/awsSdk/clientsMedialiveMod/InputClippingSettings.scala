@@ -28,7 +28,8 @@ object InputClippingSettings {
     __obj.asInstanceOf[InputClippingSettings]
   }
   
-  extension [Self <: InputClippingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputClippingSettings] (val x: Self) extends AnyVal {
     
     inline def setInputTimecodeSource(value: InputTimecodeSource): Self = StObject.set(x, "InputTimecodeSource", value.asInstanceOf[js.Any])
     

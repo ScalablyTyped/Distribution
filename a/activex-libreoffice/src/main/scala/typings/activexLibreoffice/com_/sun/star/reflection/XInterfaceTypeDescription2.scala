@@ -67,7 +67,8 @@ object XInterfaceTypeDescription2 {
     __obj.asInstanceOf[XInterfaceTypeDescription2]
   }
   
-  extension [Self <: XInterfaceTypeDescription2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInterfaceTypeDescription2] (val x: Self) extends AnyVal {
     
     inline def setBaseTypes(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "BaseTypes", value.asInstanceOf[js.Any])
     

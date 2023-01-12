@@ -18,7 +18,8 @@ object OpenFileRequestedEventOptions {
     __obj.asInstanceOf[OpenFileRequestedEventOptions]
   }
   
-  extension [Self <: OpenFileRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenFileRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }

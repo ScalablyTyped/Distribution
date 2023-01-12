@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[Classes[T]]
     }
     
-    extension [Self <: Classes[?], T](x: Self & Classes[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Classes[?], T] (val x: Self & Classes[T]) extends AnyVal {
       
       inline def setDefault(value: Partial[T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[HoverProps[T]]
     }
     
-    extension [Self <: HoverProps[?], T](x: Self & HoverProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverProps[?], T] (val x: Self & HoverProps[T]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object mod {
       __obj.asInstanceOf[LoopableProps]
     }
     
-    extension [Self <: LoopableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoopableProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

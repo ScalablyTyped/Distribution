@@ -49,7 +49,8 @@ object KeyColumn {
     __obj.asInstanceOf[KeyColumn]
   }
   
-  extension [Self <: KeyColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyColumn] (val x: Self) extends AnyVal {
     
     inline def setRelatedColumn(value: String): Self = StObject.set(x, "RelatedColumn", value.asInstanceOf[js.Any])
   }

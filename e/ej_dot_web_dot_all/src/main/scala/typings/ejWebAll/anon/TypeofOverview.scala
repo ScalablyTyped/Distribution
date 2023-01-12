@@ -20,7 +20,8 @@ object TypeofOverview {
     __obj.asInstanceOf[TypeofOverview]
   }
   
-  extension [Self <: TypeofOverview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofOverview] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Overview): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

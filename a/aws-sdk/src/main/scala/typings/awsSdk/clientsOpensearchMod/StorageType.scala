@@ -28,7 +28,8 @@ object StorageType {
     __obj.asInstanceOf[StorageType]
   }
   
-  extension [Self <: StorageType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageType] (val x: Self) extends AnyVal {
     
     inline def setStorageSubTypeName(value: StorageSubTypeName): Self = StObject.set(x, "StorageSubTypeName", value.asInstanceOf[js.Any])
     

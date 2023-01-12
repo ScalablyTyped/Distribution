@@ -28,7 +28,8 @@ object EdiscoveryReviewTag {
     __obj.asInstanceOf[EdiscoveryReviewTag]
   }
   
-  extension [Self <: EdiscoveryReviewTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdiscoveryReviewTag] (val x: Self) extends AnyVal {
     
     inline def setChildSelectability(value: NullableOption[ChildSelectability]): Self = StObject.set(x, "childSelectability", value.asInstanceOf[js.Any])
     

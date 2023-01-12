@@ -31,7 +31,8 @@ object intervalgameuinormalCallb {
     __obj.asInstanceOf[intervalgameuinormalCallb]
   }
   
-  extension [Self <: intervalgameuinormalCallb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: intervalgameuinormalCallb] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

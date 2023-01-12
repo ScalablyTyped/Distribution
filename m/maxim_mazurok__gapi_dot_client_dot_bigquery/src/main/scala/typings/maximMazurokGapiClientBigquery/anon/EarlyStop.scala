@@ -31,7 +31,8 @@ object EarlyStop {
     __obj.asInstanceOf[EarlyStop]
   }
   
-  extension [Self <: EarlyStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EarlyStop] (val x: Self) extends AnyVal {
     
     inline def setEarlyStop(value: Boolean): Self = StObject.set(x, "earlyStop", value.asInstanceOf[js.Any])
     

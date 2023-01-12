@@ -19,7 +19,8 @@ object TypeofPerson {
     __obj.asInstanceOf[TypeofPerson]
   }
   
-  extension [Self <: TypeofPerson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPerson] (val x: Self) extends AnyVal {
     
     inline def setFutureRequirements(value: TypeofFutureRequirements): Self = StObject.set(x, "FutureRequirements", value.asInstanceOf[js.Any])
     

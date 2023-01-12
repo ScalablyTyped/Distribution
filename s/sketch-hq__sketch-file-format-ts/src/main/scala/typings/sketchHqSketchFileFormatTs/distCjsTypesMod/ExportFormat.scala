@@ -36,7 +36,8 @@ object ExportFormat {
     __obj.asInstanceOf[ExportFormat]
   }
   
-  extension [Self <: ExportFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportFormat] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteSize(value: Double): Self = StObject.set(x, "absoluteSize", value.asInstanceOf[js.Any])
     

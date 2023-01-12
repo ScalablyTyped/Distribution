@@ -329,7 +329,8 @@ object distListListItemContentMod extends Shortcut {
       __obj.asInstanceOf[ItemContentProps]
     }
     
-    extension [Self <: ItemContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemContentProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

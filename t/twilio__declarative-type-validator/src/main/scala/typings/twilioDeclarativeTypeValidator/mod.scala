@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[RuleDefinition]
     }
     
-    extension [Self <: RuleDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleDefinition] (val x: Self) extends AnyVal {
       
       inline def setChecks(value: js.Array[RuleFunction]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
       

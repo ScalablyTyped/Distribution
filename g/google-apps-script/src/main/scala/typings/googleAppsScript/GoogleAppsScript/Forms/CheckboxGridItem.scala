@@ -78,7 +78,8 @@ object CheckboxGridItem {
     __obj.asInstanceOf[CheckboxGridItem]
   }
   
-  extension [Self <: CheckboxGridItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxGridItem] (val x: Self) extends AnyVal {
     
     inline def setClearValidation(value: () => CheckboxGridItem): Self = StObject.set(x, "clearValidation", js.Any.fromFunction0(value))
     

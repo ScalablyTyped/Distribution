@@ -84,7 +84,8 @@ object XAccessibleImage {
     __obj.asInstanceOf[XAccessibleImage]
   }
   
-  extension [Self <: XAccessibleImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleImage] (val x: Self) extends AnyVal {
     
     inline def setAccessibleImageDescription(value: String): Self = StObject.set(x, "AccessibleImageDescription", value.asInstanceOf[js.Any])
     

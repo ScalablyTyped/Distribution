@@ -28,7 +28,8 @@ object BaseHead_ {
     __obj.asInstanceOf[BaseHead_]
   }
   
-  extension [Self <: BaseHead_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseHead_] (val x: Self) extends AnyVal {
     
     inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

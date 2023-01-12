@@ -28,7 +28,8 @@ object ProviderUserIdentifierType {
     __obj.asInstanceOf[ProviderUserIdentifierType]
   }
   
-  extension [Self <: ProviderUserIdentifierType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProviderUserIdentifierType] (val x: Self) extends AnyVal {
     
     inline def setProviderAttributeName(value: StringType): Self = StObject.set(x, "ProviderAttributeName", value.asInstanceOf[js.Any])
     

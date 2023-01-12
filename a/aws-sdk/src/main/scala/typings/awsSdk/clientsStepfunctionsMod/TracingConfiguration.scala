@@ -18,7 +18,8 @@ object TracingConfiguration {
     __obj.asInstanceOf[TracingConfiguration]
   }
   
-  extension [Self <: TracingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TracingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Enabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object PickImplsearchButtonParti {
     __obj.asInstanceOf[PickImplsearchButtonParti]
   }
   
-  extension [Self <: PickImplsearchButtonParti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplsearchButtonParti] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

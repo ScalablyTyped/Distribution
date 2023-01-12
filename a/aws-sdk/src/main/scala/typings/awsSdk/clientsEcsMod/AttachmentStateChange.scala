@@ -23,7 +23,8 @@ object AttachmentStateChange {
     __obj.asInstanceOf[AttachmentStateChange]
   }
   
-  extension [Self <: AttachmentStateChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentStateChange] (val x: Self) extends AnyVal {
     
     inline def setAttachmentArn(value: String): Self = StObject.set(x, "attachmentArn", value.asInstanceOf[js.Any])
     

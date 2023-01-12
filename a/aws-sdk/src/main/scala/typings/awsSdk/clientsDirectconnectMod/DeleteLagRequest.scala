@@ -18,7 +18,8 @@ object DeleteLagRequest {
     __obj.asInstanceOf[DeleteLagRequest]
   }
   
-  extension [Self <: DeleteLagRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLagRequest] (val x: Self) extends AnyVal {
     
     inline def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
   }

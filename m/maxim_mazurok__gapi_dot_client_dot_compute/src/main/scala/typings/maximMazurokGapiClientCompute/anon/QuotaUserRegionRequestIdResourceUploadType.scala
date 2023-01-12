@@ -68,7 +68,8 @@ object QuotaUserRegionRequestIdResourceUploadType {
     __obj.asInstanceOf[QuotaUserRegionRequestIdResourceUploadType]
   }
   
-  extension [Self <: QuotaUserRegionRequestIdResourceUploadType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuotaUserRegionRequestIdResourceUploadType] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

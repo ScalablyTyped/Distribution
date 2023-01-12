@@ -26,7 +26,8 @@ object FixedOrPercent {
     __obj.asInstanceOf[FixedOrPercent]
   }
   
-  extension [Self <: FixedOrPercent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedOrPercent] (val x: Self) extends AnyVal {
     
     inline def setCalculated(value: Double): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
     

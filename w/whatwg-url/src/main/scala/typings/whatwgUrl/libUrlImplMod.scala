@@ -103,7 +103,8 @@ object libUrlImplMod {
       __obj.asInstanceOf[URLImpl]
     }
     
-    extension [Self <: URLImpl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLImpl] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

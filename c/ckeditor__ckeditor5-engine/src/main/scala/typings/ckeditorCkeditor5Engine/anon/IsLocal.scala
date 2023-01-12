@@ -21,7 +21,8 @@ object IsLocal {
     __obj.asInstanceOf[IsLocal]
   }
   
-  extension [Self <: IsLocal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsLocal] (val x: Self) extends AnyVal {
     
     inline def setIsLocal(value: Boolean): Self = StObject.set(x, "isLocal", value.asInstanceOf[js.Any])
     

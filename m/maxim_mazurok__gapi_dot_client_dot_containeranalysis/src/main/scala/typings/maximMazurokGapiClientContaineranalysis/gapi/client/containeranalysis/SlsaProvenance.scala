@@ -30,7 +30,8 @@ object SlsaProvenance {
     __obj.asInstanceOf[SlsaProvenance]
   }
   
-  extension [Self <: SlsaProvenance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlsaProvenance] (val x: Self) extends AnyVal {
     
     inline def setBuilder(value: SlsaBuilder): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
     

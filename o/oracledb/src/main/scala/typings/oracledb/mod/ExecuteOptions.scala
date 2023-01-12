@@ -141,7 +141,8 @@ object ExecuteOptions {
     __obj.asInstanceOf[ExecuteOptions]
   }
   
-  extension [Self <: ExecuteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
     

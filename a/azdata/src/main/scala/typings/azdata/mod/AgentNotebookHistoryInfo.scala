@@ -48,7 +48,8 @@ object AgentNotebookHistoryInfo {
     __obj.asInstanceOf[AgentNotebookHistoryInfo]
   }
   
-  extension [Self <: AgentNotebookHistoryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentNotebookHistoryInfo] (val x: Self) extends AnyVal {
     
     inline def setMaterializedNotebookDeleted(value: Boolean): Self = StObject.set(x, "materializedNotebookDeleted", value.asInstanceOf[js.Any])
     

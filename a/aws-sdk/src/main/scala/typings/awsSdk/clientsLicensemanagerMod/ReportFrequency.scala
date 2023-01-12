@@ -23,7 +23,8 @@ object ReportFrequency {
     __obj.asInstanceOf[ReportFrequency]
   }
   
-  extension [Self <: ReportFrequency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportFrequency] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: ReportFrequencyType): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

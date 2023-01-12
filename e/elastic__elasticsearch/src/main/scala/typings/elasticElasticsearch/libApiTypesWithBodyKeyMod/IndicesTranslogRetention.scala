@@ -17,7 +17,8 @@ object IndicesTranslogRetention {
     __obj.asInstanceOf[IndicesTranslogRetention]
   }
   
-  extension [Self <: IndicesTranslogRetention](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesTranslogRetention] (val x: Self) extends AnyVal {
     
     inline def setAge(value: Duration): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     

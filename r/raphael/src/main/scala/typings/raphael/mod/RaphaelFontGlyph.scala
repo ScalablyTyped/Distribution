@@ -19,7 +19,8 @@ object RaphaelFontGlyph {
     __obj.asInstanceOf[RaphaelFontGlyph]
   }
   
-  extension [Self <: RaphaelFontGlyph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelFontGlyph] (val x: Self) extends AnyVal {
     
     inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

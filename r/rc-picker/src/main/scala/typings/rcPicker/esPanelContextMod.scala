@@ -35,7 +35,8 @@ object esPanelContextMod extends Shortcut {
       __obj.asInstanceOf[ContextOperationRefProps]
     }
     
-    extension [Self <: ContextOperationRefProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextOperationRefProps] (val x: Self) extends AnyVal {
       
       inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
@@ -82,7 +83,8 @@ object esPanelContextMod extends Shortcut {
       __obj.asInstanceOf[PanelContextProps]
     }
     
-    extension [Self <: PanelContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelContextProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultOpenValue(value: Any): Self = StObject.set(x, "defaultOpenValue", value.asInstanceOf[js.Any])
       

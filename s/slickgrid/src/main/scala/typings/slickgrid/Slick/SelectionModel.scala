@@ -25,7 +25,8 @@ object SelectionModel {
     __obj.asInstanceOf[SelectionModel[T, E]]
   }
   
-  extension [Self <: SelectionModel[?, ?], T /* <: SlickData */, E](x: Self & (SelectionModel[T, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionModel[?, ?], T /* <: SlickData */, E] (val x: Self & (SelectionModel[T, E])) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

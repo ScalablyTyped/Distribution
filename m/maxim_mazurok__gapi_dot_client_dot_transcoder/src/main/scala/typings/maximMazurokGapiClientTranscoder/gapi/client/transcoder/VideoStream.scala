@@ -22,7 +22,8 @@ object VideoStream {
     __obj.asInstanceOf[VideoStream]
   }
   
-  extension [Self <: VideoStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoStream] (val x: Self) extends AnyVal {
     
     inline def setH264(value: H264CodecSettings): Self = StObject.set(x, "h264", value.asInstanceOf[js.Any])
     

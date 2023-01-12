@@ -19,7 +19,8 @@ object ServiceDeclaration {
     __obj.asInstanceOf[ServiceDeclaration]
   }
   
-  extension [Self <: ServiceDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceDeclaration] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     

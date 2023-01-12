@@ -253,7 +253,8 @@ object mod {
       __obj.asInstanceOf[CommandLineSwitches]
     }
     
-    extension [Self <: CommandLineSwitches](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandLineSwitches] (val x: Self) extends AnyVal {
       
       inline def setAlternateStreamExtract(value: Boolean): Self = StObject.set(x, "alternateStreamExtract", value.asInstanceOf[js.Any])
       
@@ -464,7 +465,8 @@ object mod {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: String): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -528,7 +530,8 @@ object mod {
       __obj.asInstanceOf[Node7zOptions]
     }
     
-    extension [Self <: Node7zOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node7zOptions] (val x: Self) extends AnyVal {
       
       inline def set$bin(value: String): Self = StObject.set(x, "$bin", value.asInstanceOf[js.Any])
       
@@ -579,7 +582,8 @@ object mod {
       __obj.asInstanceOf[Progress]
     }
     
-    extension [Self <: Progress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

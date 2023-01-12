@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Node): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[StylisElement]
     }
     
-    extension [Self <: StylisElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylisElement] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[StylisElement] | String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

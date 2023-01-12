@@ -41,7 +41,8 @@ object cryptoMod {
       __obj.asInstanceOf[CryptoKey]
     }
     
-    extension [Self <: CryptoKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoKey] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: js.Object): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object cryptoMod {
       __obj.asInstanceOf[Crypto_]
     }
     
-    extension [Self <: Crypto_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Crypto_] (val x: Self) extends AnyVal {
       
       inline def setGetRandomValues(value: Exclude[TypedArray, js.typedarray.Float32Array | js.typedarray.Float64Array] => TypedArray): Self = StObject.set(x, "getRandomValues", js.Any.fromFunction1(value))
       

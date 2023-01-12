@@ -21,7 +21,8 @@ object ViewRefTracker {
     __obj.asInstanceOf[ViewRefTracker]
   }
   
-  extension [Self <: ViewRefTracker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewRefTracker] (val x: Self) extends AnyVal {
     
     inline def setDetachView(value: ViewRef => Unit): Self = StObject.set(x, "detachView", js.Any.fromFunction1(value))
   }

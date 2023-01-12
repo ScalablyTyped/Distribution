@@ -39,7 +39,8 @@ object XPrintJobListener {
     __obj.asInstanceOf[XPrintJobListener]
   }
   
-  extension [Self <: XPrintJobListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrintJobListener] (val x: Self) extends AnyVal {
     
     inline def setPrintJobEvent(value: PrintJobEvent => Unit): Self = StObject.set(x, "printJobEvent", js.Any.fromFunction1(value))
   }

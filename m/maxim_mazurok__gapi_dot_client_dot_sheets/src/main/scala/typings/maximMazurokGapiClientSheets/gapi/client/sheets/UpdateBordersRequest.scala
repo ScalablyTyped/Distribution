@@ -34,7 +34,8 @@ object UpdateBordersRequest {
     __obj.asInstanceOf[UpdateBordersRequest]
   }
   
-  extension [Self <: UpdateBordersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBordersRequest] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Border): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

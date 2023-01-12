@@ -24,7 +24,8 @@ object WorkbookTableRow {
     __obj.asInstanceOf[WorkbookTableRow]
   }
   
-  extension [Self <: WorkbookTableRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookTableRow] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ManifestBaseApplications {
     __obj.asInstanceOf[ManifestBaseApplications]
   }
   
-  extension [Self <: ManifestBaseApplications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestBaseApplications] (val x: Self) extends AnyVal {
     
     inline def setGecko(value: FirefoxSpecificProperties): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
     

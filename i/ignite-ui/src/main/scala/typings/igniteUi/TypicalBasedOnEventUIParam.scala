@@ -48,7 +48,8 @@ object TypicalBasedOnEventUIParam {
     __obj.asInstanceOf[TypicalBasedOnEventUIParam]
   }
   
-  extension [Self <: TypicalBasedOnEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypicalBasedOnEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setBasedOn(value: Any): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     

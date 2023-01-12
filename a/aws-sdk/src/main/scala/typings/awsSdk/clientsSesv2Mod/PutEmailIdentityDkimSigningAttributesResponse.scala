@@ -23,7 +23,8 @@ object PutEmailIdentityDkimSigningAttributesResponse {
     __obj.asInstanceOf[PutEmailIdentityDkimSigningAttributesResponse]
   }
   
-  extension [Self <: PutEmailIdentityDkimSigningAttributesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutEmailIdentityDkimSigningAttributesResponse] (val x: Self) extends AnyVal {
     
     inline def setDkimStatus(value: DkimStatus): Self = StObject.set(x, "DkimStatus", value.asInstanceOf[js.Any])
     

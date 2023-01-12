@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Align]
     }
     
-    extension [Self <: Align](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: center | left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Href]
     }
     
-    extension [Self <: Href](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Href] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[InLink]
     }
     
-    extension [Self <: InLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InLink] (val x: Self) extends AnyVal {
       
       inline def setInLink(value: Boolean): Self = StObject.set(x, "inLink", value.asInstanceOf[js.Any])
       
@@ -163,7 +166,8 @@ object anon {
       __obj.asInstanceOf[MarkedOptionsasynctrue]
     }
     
-    extension [Self <: MarkedOptionsasynctrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkedOptionsasynctrue] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

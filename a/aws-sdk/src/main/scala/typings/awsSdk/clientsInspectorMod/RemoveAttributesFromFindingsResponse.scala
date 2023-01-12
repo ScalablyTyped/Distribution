@@ -18,7 +18,8 @@ object RemoveAttributesFromFindingsResponse {
     __obj.asInstanceOf[RemoveAttributesFromFindingsResponse]
   }
   
-  extension [Self <: RemoveAttributesFromFindingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveAttributesFromFindingsResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedItems(value: FailedItems): Self = StObject.set(x, "failedItems", value.asInstanceOf[js.Any])
   }

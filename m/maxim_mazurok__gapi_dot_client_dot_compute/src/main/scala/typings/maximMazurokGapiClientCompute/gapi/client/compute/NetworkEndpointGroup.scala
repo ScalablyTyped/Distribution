@@ -70,7 +70,8 @@ object NetworkEndpointGroup {
     __obj.asInstanceOf[NetworkEndpointGroup]
   }
   
-  extension [Self <: NetworkEndpointGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkEndpointGroup] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

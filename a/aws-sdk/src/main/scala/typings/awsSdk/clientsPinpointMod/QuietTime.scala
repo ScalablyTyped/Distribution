@@ -23,7 +23,8 @@ object QuietTime {
     __obj.asInstanceOf[QuietTime]
   }
   
-  extension [Self <: QuietTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuietTime] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: string): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     

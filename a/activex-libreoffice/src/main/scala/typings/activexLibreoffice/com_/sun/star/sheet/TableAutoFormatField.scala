@@ -236,7 +236,8 @@ object TableAutoFormatField {
     __obj.asInstanceOf[TableAutoFormatField]
   }
   
-  extension [Self <: TableAutoFormatField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableAutoFormatField] (val x: Self) extends AnyVal {
     
     inline def setCellBackColor(value: Color): Self = StObject.set(x, "CellBackColor", value.asInstanceOf[js.Any])
     

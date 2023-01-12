@@ -23,7 +23,8 @@ object TransferDomainToAnotherAwsAccountRequest {
     __obj.asInstanceOf[TransferDomainToAnotherAwsAccountRequest]
   }
   
-  extension [Self <: TransferDomainToAnotherAwsAccountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferDomainToAnotherAwsAccountRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

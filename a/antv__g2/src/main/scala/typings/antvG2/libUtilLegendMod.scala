@@ -63,7 +63,8 @@ object libUtilLegendMod {
       __obj.asInstanceOf[ComponentLegendItem]
     }
     
-    extension [Self <: ComponentLegendItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentLegendItem] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

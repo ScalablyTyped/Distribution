@@ -35,7 +35,8 @@ object BatchUpdateValuesByDataFilterRequest {
     __obj.asInstanceOf[BatchUpdateValuesByDataFilterRequest]
   }
   
-  extension [Self <: BatchUpdateValuesByDataFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateValuesByDataFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[DataFilterValueRange]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

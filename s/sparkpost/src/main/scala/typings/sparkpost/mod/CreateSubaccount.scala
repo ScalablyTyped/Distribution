@@ -28,7 +28,8 @@ object CreateSubaccount {
     __obj.asInstanceOf[CreateSubaccount]
   }
   
-  extension [Self <: CreateSubaccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSubaccount] (val x: Self) extends AnyVal {
     
     inline def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
     

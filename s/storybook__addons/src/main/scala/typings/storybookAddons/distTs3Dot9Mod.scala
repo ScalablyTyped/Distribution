@@ -98,7 +98,8 @@ object distTs3Dot9Mod {
       __obj.asInstanceOf[Addon]
     }
     
-    extension [Self <: Addon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Addon] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object distTs3Dot9Mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: ThemeVars): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object distTs3Dot9Mod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -203,7 +206,8 @@ object distTs3Dot9Mod {
       __obj.asInstanceOf[ToolbarConfig]
     }
     
-    extension [Self <: ToolbarConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarConfig] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

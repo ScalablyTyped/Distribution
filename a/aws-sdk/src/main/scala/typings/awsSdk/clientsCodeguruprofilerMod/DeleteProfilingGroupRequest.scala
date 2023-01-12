@@ -18,7 +18,8 @@ object DeleteProfilingGroupRequest {
     __obj.asInstanceOf[DeleteProfilingGroupRequest]
   }
   
-  extension [Self <: DeleteProfilingGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteProfilingGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }

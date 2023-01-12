@@ -37,7 +37,8 @@ object CommonHTMLOutputProcessor {
     __obj.asInstanceOf[CommonHTMLOutputProcessor]
   }
   
-  extension [Self <: CommonHTMLOutputProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonHTMLOutputProcessor] (val x: Self) extends AnyVal {
     
     inline def setLinebreaks(value: LineBreaks): Self = StObject.set(x, "linebreaks", value.asInstanceOf[js.Any])
     

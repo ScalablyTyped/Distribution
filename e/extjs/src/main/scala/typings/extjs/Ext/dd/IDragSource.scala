@@ -216,7 +216,8 @@ object IDragSource {
     __obj.asInstanceOf[IDragSource]
   }
   
-  extension [Self <: IDragSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDragSource] (val x: Self) extends AnyVal {
     
     inline def setAfterDragDrop(
       value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit

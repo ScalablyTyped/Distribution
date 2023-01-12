@@ -30,7 +30,8 @@ object libTypescriptSrcGetPathFromStateMod {
       __obj.asInstanceOf[Options[ParamList]]
     }
     
-    extension [Self <: Options[?], ParamList](x: Self & Options[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], ParamList] (val x: Self & Options[ParamList]) extends AnyVal {
       
       inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
       

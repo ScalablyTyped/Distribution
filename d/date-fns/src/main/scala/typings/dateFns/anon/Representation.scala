@@ -22,7 +22,8 @@ object Representation {
     __obj.asInstanceOf[Representation]
   }
   
-  extension [Self <: Representation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Representation] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: extended | basic): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

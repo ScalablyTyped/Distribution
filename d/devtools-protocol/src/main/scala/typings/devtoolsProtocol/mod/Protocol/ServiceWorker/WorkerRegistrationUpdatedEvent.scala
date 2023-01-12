@@ -15,7 +15,8 @@ object WorkerRegistrationUpdatedEvent {
     __obj.asInstanceOf[WorkerRegistrationUpdatedEvent]
   }
   
-  extension [Self <: WorkerRegistrationUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerRegistrationUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setRegistrations(value: js.Array[ServiceWorkerRegistration]): Self = StObject.set(x, "registrations", value.asInstanceOf[js.Any])
     

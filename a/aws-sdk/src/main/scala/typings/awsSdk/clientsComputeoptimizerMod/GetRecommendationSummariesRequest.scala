@@ -28,7 +28,8 @@ object GetRecommendationSummariesRequest {
     __obj.asInstanceOf[GetRecommendationSummariesRequest]
   }
   
-  extension [Self <: GetRecommendationSummariesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRecommendationSummariesRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object ClassMethod_ {
     __obj.asInstanceOf[ClassMethod_]
   }
   
-  extension [Self <: ClassMethod_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassMethod_] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

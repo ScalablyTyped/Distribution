@@ -20,7 +20,8 @@ object AbortRequestedEventOptions {
     __obj.asInstanceOf[AbortRequestedEventOptions]
   }
   
-  extension [Self <: AbortRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbortRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setOperationRequestId(value: integer): Self = StObject.set(x, "operationRequestId", value.asInstanceOf[js.Any])
   }

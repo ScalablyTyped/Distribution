@@ -17,7 +17,8 @@ object OnDragStateChangedData {
     __obj.asInstanceOf[OnDragStateChangedData[T]]
   }
   
-  extension [Self <: OnDragStateChangedData[?], T](x: Self & OnDragStateChangedData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDragStateChangedData[?], T] (val x: Self & OnDragStateChangedData[T]) extends AnyVal {
     
     inline def setDraggedNode(value: TreeItem[T]): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
     

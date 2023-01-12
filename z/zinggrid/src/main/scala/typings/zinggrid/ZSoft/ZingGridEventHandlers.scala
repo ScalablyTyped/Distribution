@@ -285,7 +285,8 @@ object ZingGridEventHandlers {
     __obj.asInstanceOf[ZingGridEventHandlers]
   }
   
-  extension [Self <: ZingGridEventHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZingGridEventHandlers] (val x: Self) extends AnyVal {
     
     inline def setOnCardClick(value: js.ThisFunction1[/* this */ Window, /* ev */ CustomEvent[Any], Any]): Self = StObject.set(x, "onCardClick", value.asInstanceOf[js.Any])
     

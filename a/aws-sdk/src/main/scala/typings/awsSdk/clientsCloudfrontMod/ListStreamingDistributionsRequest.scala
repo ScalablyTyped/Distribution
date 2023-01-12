@@ -23,7 +23,8 @@ object ListStreamingDistributionsRequest {
     __obj.asInstanceOf[ListStreamingDistributionsRequest]
   }
   
-  extension [Self <: ListStreamingDistributionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStreamingDistributionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

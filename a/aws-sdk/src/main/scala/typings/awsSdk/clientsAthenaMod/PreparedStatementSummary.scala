@@ -23,7 +23,8 @@ object PreparedStatementSummary {
     __obj.asInstanceOf[PreparedStatementSummary]
   }
   
-  extension [Self <: PreparedStatementSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreparedStatementSummary] (val x: Self) extends AnyVal {
     
     inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     

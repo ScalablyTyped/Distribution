@@ -23,7 +23,8 @@ object PartialSentenceOptions {
     __obj.asInstanceOf[PartialSentenceOptions]
   }
   
-  extension [Self <: PartialSentenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSentenceOptions] (val x: Self) extends AnyVal {
     
     inline def setPunctuation(value: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
     

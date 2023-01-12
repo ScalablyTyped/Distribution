@@ -17,7 +17,8 @@ object TypeofSCRIPTLOAD {
     __obj.asInstanceOf[TypeofSCRIPTLOAD]
   }
   
-  extension [Self <: TypeofSCRIPTLOAD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSCRIPTLOAD] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: String => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object QuotaBytes {
     __obj.asInstanceOf[QuotaBytes]
   }
   
-  extension [Self <: QuotaBytes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuotaBytes] (val x: Self) extends AnyVal {
     
     inline def setQuotaBytes(value: integer): Self = StObject.set(x, "quotaBytes", value.asInstanceOf[js.Any])
     

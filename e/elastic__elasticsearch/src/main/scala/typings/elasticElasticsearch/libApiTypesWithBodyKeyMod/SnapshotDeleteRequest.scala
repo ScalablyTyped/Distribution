@@ -21,7 +21,8 @@ object SnapshotDeleteRequest {
     __obj.asInstanceOf[SnapshotDeleteRequest]
   }
   
-  extension [Self <: SnapshotDeleteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotDeleteRequest] (val x: Self) extends AnyVal {
     
     inline def setMaster_timeout(value: Duration): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     

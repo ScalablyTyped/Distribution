@@ -21,7 +21,8 @@ object ArtUrl {
     __obj.asInstanceOf[ArtUrl]
   }
   
-  extension [Self <: ArtUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtUrl] (val x: Self) extends AnyVal {
     
     inline def setArtUrl(value: String): Self = StObject.set(x, "artUrl", value.asInstanceOf[js.Any])
     

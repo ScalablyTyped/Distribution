@@ -24,7 +24,8 @@ object `0Flatten` {
     __obj.asInstanceOf[`0Flatten`[L, strict, limit, I]]
   }
   
-  extension [Self <: `0Flatten`[?, ?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, strict /* <: Boolean */, limit /* <: Iteration */, I /* <: Iteration */](x: Self & (`0Flatten`[L, strict, limit, I])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0Flatten`[?, ?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, strict /* <: Boolean */, limit /* <: Iteration */, I /* <: Iteration */] (val x: Self & (`0Flatten`[L, strict, limit, I])) extends AnyVal {
     
     inline def set0(value: __Flatten[_UnNest[L, strict], L, strict, limit, Next[I]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

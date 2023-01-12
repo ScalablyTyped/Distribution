@@ -33,7 +33,8 @@ object buildHelpersAttachtoMod {
       __obj.asInstanceOf[AttachData]
     }
     
-    extension [Self <: AttachData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachData] (val x: Self) extends AnyVal {
       
       inline def setPlaceholder(value: Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       

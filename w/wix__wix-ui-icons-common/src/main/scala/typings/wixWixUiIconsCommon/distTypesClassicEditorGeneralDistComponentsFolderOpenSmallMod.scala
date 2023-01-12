@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsFolderOpenSmallMod extends Sho
       __obj.asInstanceOf[FolderOpenSmallProps]
     }
     
-    extension [Self <: FolderOpenSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FolderOpenSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

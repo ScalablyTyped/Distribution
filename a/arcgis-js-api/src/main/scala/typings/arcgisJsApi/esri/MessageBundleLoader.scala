@@ -37,7 +37,8 @@ object MessageBundleLoader {
     __obj.asInstanceOf[MessageBundleLoader]
   }
   
-  extension [Self <: MessageBundleLoader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageBundleLoader] (val x: Self) extends AnyVal {
     
     inline def setFetchMessageBundle(value: (/* bundleId */ String, /* locale */ String) => js.Promise[Any]): Self = StObject.set(x, "fetchMessageBundle", js.Any.fromFunction2(value))
     

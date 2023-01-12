@@ -31,7 +31,8 @@ object LookupColumn {
     __obj.asInstanceOf[LookupColumn]
   }
   
-  extension [Self <: LookupColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupColumn] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleValues(value: NullableOption[Boolean]): Self = StObject.set(x, "allowMultipleValues", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object ISingleEditOperation {
     __obj.asInstanceOf[ISingleEditOperation]
   }
   
-  extension [Self <: ISingleEditOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISingleEditOperation] (val x: Self) extends AnyVal {
     
     inline def setForceMoveMarkers(value: Boolean): Self = StObject.set(x, "forceMoveMarkers", value.asInstanceOf[js.Any])
     

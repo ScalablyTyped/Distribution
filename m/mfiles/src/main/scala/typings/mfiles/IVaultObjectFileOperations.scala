@@ -176,7 +176,8 @@ object IVaultObjectFileOperations {
     __obj.asInstanceOf[IVaultObjectFileOperations]
   }
   
-  extension [Self <: IVaultObjectFileOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultObjectFileOperations] (val x: Self) extends AnyVal {
     
     inline def setAddEmptyFile(value: (IObjVer, String, String) => IFileVer): Self = StObject.set(x, "AddEmptyFile", js.Any.fromFunction3(value))
     

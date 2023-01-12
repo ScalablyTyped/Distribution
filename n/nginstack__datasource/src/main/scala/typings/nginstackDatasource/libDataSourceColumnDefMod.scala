@@ -159,7 +159,8 @@ object libDataSourceColumnDefMod {
       __obj.asInstanceOf[DataSourceColumnDef]
     }
     
-    extension [Self <: DataSourceColumnDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceColumnDef] (val x: Self) extends AnyVal {
       
       inline def setAggregate(value: String): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
       

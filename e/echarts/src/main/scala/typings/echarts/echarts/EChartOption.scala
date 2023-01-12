@@ -767,7 +767,8 @@ object EChartOption {
       __obj.asInstanceOf[AxisPointer]
     }
     
-    extension [Self <: AxisPointer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisPointer] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -827,7 +828,8 @@ object EChartOption {
       __obj.asInstanceOf[BaseTextStyle]
     }
     
-    extension [Self <: BaseTextStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTextStyle] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -900,7 +902,8 @@ object EChartOption {
       __obj.asInstanceOf[BaseTextStyleWithRich]
     }
     
-    extension [Self <: BaseTextStyleWithRich](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTextStyleWithRich] (val x: Self) extends AnyVal {
       
       inline def setRich(value: RichStyle): Self = StObject.set(x, "rich", value.asInstanceOf[js.Any])
       
@@ -1084,7 +1087,8 @@ object EChartOption {
       __obj.asInstanceOf[BaseTooltip]
     }
     
-    extension [Self <: BaseTooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTooltip] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -1490,7 +1494,8 @@ object EChartOption {
           __obj.asInstanceOf[DataObject]
         }
         
-        extension [Self <: DataObject](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: DataObject] (val x: Self) extends AnyVal {
           
           inline def setTextStyle(value: TextStyleWithRich): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
           
@@ -1585,7 +1590,8 @@ object EChartOption {
           __obj.asInstanceOf[Label]
         }
         
-        extension [Self <: Label](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
           
           inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
           
@@ -1747,7 +1753,8 @@ object EChartOption {
           __obj.asInstanceOf[MinorSplitLine]
         }
         
-        extension [Self <: MinorSplitLine](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: MinorSplitLine] (val x: Self) extends AnyVal {
           
           inline def setLineStyle(value: LineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
           
@@ -1779,7 +1786,8 @@ object EChartOption {
           __obj.asInstanceOf[MinorTick]
         }
         
-        extension [Self <: MinorTick](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: MinorTick] (val x: Self) extends AnyVal {
           
           inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
           
@@ -1799,7 +1807,8 @@ object EChartOption {
         }
       }
       
-      extension [Self <: CartesianAxis](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CartesianAxis] (val x: Self) extends AnyVal {
         
         inline def setAxisLabel(value: Label): Self = StObject.set(x, "axisLabel", value.asInstanceOf[js.Any])
         
@@ -1968,7 +1977,8 @@ object EChartOption {
           __obj.asInstanceOf[Pointer]
         }
         
-        extension [Self <: Pointer](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Pointer] (val x: Self) extends AnyVal {
           
           inline def setHandle(value: Icon): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
           
@@ -2081,7 +2091,8 @@ object EChartOption {
           __obj.asInstanceOf[PointerLabel]
         }
         
-        extension [Self <: PointerLabel](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PointerLabel] (val x: Self) extends AnyVal {
           
           inline def setBackgroundColor(value: String | js.Object): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
           
@@ -2215,7 +2226,8 @@ object EChartOption {
           __obj.asInstanceOf[SplitArea]
         }
         
-        extension [Self <: SplitArea](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SplitArea] (val x: Self) extends AnyVal {
           
           inline def setAreaStyle(value: typings.echarts.anon.Color): Self = StObject.set(x, "areaStyle", value.asInstanceOf[js.Any])
           
@@ -2249,7 +2261,8 @@ object EChartOption {
           __obj.asInstanceOf[SplitLine]
         }
         
-        extension [Self <: SplitLine](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SplitLine] (val x: Self) extends AnyVal {
           
           inline def setInterval(value: Double | js.Function): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
           
@@ -2289,7 +2302,8 @@ object EChartOption {
           __obj.asInstanceOf[Tick]
         }
         
-        extension [Self <: Tick](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Tick] (val x: Self) extends AnyVal {
           
           inline def setAlignWithLabel(value: Boolean): Self = StObject.set(x, "alignWithLabel", value.asInstanceOf[js.Any])
           
@@ -2362,7 +2376,8 @@ object EChartOption {
         __obj.asInstanceOf[Line]
       }
       
-      extension [Self <: Line](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
         
         inline def setLineStyle(value: LineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
         
@@ -2587,7 +2602,8 @@ object EChartOption {
         __obj.asInstanceOf[DayLabel]
       }
       
-      extension [Self <: DayLabel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DayLabel] (val x: Self) extends AnyVal {
         
         inline def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
         
@@ -2630,7 +2646,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.Calendar.Label]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.Calendar.Label](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.Calendar.Label] (val x: Self) extends AnyVal {
         
         inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
         
@@ -2671,7 +2688,8 @@ object EChartOption {
         __obj.asInstanceOf[MonthLabel]
       }
       
-      extension [Self <: MonthLabel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MonthLabel] (val x: Self) extends AnyVal {
         
         inline def setFormatter(value: String | MonthLabelFormatter): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
         
@@ -2706,7 +2724,8 @@ object EChartOption {
         __obj.asInstanceOf[MonthLabelFormatterParams]
       }
       
-      extension [Self <: MonthLabelFormatterParams](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MonthLabelFormatterParams] (val x: Self) extends AnyVal {
         
         inline def setM(value: Double): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
         
@@ -2732,7 +2751,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: Calendar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -2836,7 +2856,8 @@ object EChartOption {
         __obj.asInstanceOf[YearLabel]
       }
       
-      extension [Self <: YearLabel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: YearLabel] (val x: Self) extends AnyVal {
         
         inline def setFormatter(value: String): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
         
@@ -2865,7 +2886,8 @@ object EChartOption {
         __obj.asInstanceOf[YearLabelFormatterParams]
       }
       
-      extension [Self <: YearLabelFormatterParams](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: YearLabelFormatterParams] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -2995,7 +3017,8 @@ object EChartOption {
         __obj.asInstanceOf[Inside]
       }
       
-      extension [Self <: Inside](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Inside] (val x: Self) extends AnyVal {
         
         inline def setAngleAxisIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "angleAxisIndex", value.asInstanceOf[js.Any])
         
@@ -3211,7 +3234,8 @@ object EChartOption {
         __obj.asInstanceOf[Slider]
       }
       
-      extension [Self <: Slider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Slider] (val x: Self) extends AnyVal {
         
         inline def setAngleAxisIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "angleAxisIndex", value.asInstanceOf[js.Any])
         
@@ -3458,7 +3482,8 @@ object EChartOption {
         __obj.asInstanceOf[DimensionObject]
       }
       
-      extension [Self <: DimensionObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DimensionObject] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -3474,7 +3499,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: Dataset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: js.Array[DimensionObject | String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
@@ -3675,7 +3701,8 @@ object EChartOption {
       __obj.asInstanceOf[Grid]
     }
     
-    extension [Self <: Grid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grid] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -4253,7 +4280,8 @@ object EChartOption {
         __obj.asInstanceOf[LegendDataObject]
       }
       
-      extension [Self <: LegendDataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LegendDataObject] (val x: Self) extends AnyVal {
         
         inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
@@ -4269,7 +4297,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: Legend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Legend] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: auto | left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -4517,7 +4546,8 @@ object EChartOption {
         __obj.asInstanceOf[PageIcons]
       }
       
-      extension [Self <: PageIcons](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PageIcons] (val x: Self) extends AnyVal {
         
         inline def setHorizontal(value: js.Array[String]): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
         
@@ -4746,7 +4776,8 @@ object EChartOption {
         __obj.asInstanceOf[SelectorLabel]
       }
       
-      extension [Self <: SelectorLabel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SelectorLabel] (val x: Self) extends AnyVal {
         
         inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
         
@@ -4899,7 +4930,8 @@ object EChartOption {
       __obj.asInstanceOf[LineStyle]
     }
     
-    extension [Self <: LineStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color | js.Array[Color]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -4970,7 +5002,8 @@ object EChartOption {
       __obj.asInstanceOf[LinearGradient]
     }
     
-    extension [Self <: LinearGradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearGradient] (val x: Self) extends AnyVal {
       
       inline def setColorStops(value: ColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
       
@@ -4990,7 +5023,8 @@ object EChartOption {
     }
   }
   
-  extension [Self <: EChartOption[?], TSeries](x: Self & EChartOption[TSeries]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EChartOption[?], TSeries] (val x: Self & EChartOption[TSeries]) extends AnyVal {
     
     inline def setAngleAxis(value: js.Object): Self = StObject.set(x, "angleAxis", value.asInstanceOf[js.Any])
     
@@ -5210,7 +5244,8 @@ object EChartOption {
       __obj.asInstanceOf[RadialGradient]
     }
     
-    extension [Self <: RadialGradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadialGradient] (val x: Self) extends AnyVal {
       
       inline def setColorStops(value: ColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
       
@@ -6192,7 +6227,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesBar.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesBar.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesBar.DataObject] (val x: Self) extends AnyVal {
         
         inline def setItemStyle(value: BarBorderRadius): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
         
@@ -6216,7 +6252,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesBar] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -6858,7 +6895,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesBoxplot.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesBoxplot.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesBoxplot.DataObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: `2`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -6884,7 +6922,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesBoxplot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesBoxplot] (val x: Self) extends AnyVal {
       
       inline def setAnimationDelay(value: js.Function | Double): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
       
@@ -7551,7 +7590,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesCandlestick.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesCandlestick.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesCandlestick.DataObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: `3`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -7577,7 +7617,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesCandlestick](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesCandlestick] (val x: Self) extends AnyVal {
       
       inline def setAnimationDelay(value: js.Function | Double): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
       
@@ -8610,7 +8651,8 @@ object EChartOption {
         __obj.asInstanceOf[CoordSys]
       }
       
-      extension [Self <: CoordSys](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CoordSys] (val x: Self) extends AnyVal {
         
         inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
         
@@ -8709,7 +8751,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesCustom.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesCustom.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesCustom.DataObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: `2`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -8735,7 +8778,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesCustom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesCustom] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -8906,7 +8950,8 @@ object EChartOption {
         __obj.asInstanceOf[RangeInfo]
       }
       
-      extension [Self <: RangeInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RangeInfo] (val x: Self) extends AnyVal {
         
         inline def setDayCount(value: Double): Self = StObject.set(x, "dayCount", value.asInstanceOf[js.Any])
         
@@ -9186,7 +9231,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemApi]
       }
       
-      extension [Self <: RenderItemApi](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemApi] (val x: Self) extends AnyVal {
         
         inline def setBarLayout(value: js.Function): Self = StObject.set(x, "barLayout", value.asInstanceOf[js.Any])
         
@@ -9318,7 +9364,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemParams]
       }
       
-      extension [Self <: RenderItemParams](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemParams] (val x: Self) extends AnyVal {
         
         inline def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
         
@@ -9681,7 +9728,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnArc]
       }
       
-      extension [Self <: RenderItemReturnArc](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnArc] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -10072,7 +10120,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnBezierCurve]
       }
       
-      extension [Self <: RenderItemReturnBezierCurve](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnBezierCurve] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -10463,7 +10512,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnCircle]
       }
       
-      extension [Self <: RenderItemReturnCircle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnCircle] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -10882,7 +10932,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnGroup]
       }
       
-      extension [Self <: RenderItemReturnGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnGroup] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
@@ -11252,7 +11303,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnImage]
       }
       
-      extension [Self <: RenderItemReturnImage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnImage] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -11639,7 +11691,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnLine]
       }
       
-      extension [Self <: RenderItemReturnLine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnLine] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -12040,7 +12093,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnPath]
       }
       
-      extension [Self <: RenderItemReturnPath](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnPath] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -12431,7 +12485,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnPolygon]
       }
       
-      extension [Self <: RenderItemReturnPolygon](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnPolygon] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -12822,7 +12877,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnPolyline]
       }
       
-      extension [Self <: RenderItemReturnPolyline](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnPolyline] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -13213,7 +13269,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnRect]
       }
       
-      extension [Self <: RenderItemReturnRect](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnRect] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -13604,7 +13661,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnRing]
       }
       
-      extension [Self <: RenderItemReturnRing](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnRing] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -13995,7 +14053,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnSector]
       }
       
-      extension [Self <: RenderItemReturnSector](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnSector] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -14358,7 +14417,8 @@ object EChartOption {
         __obj.asInstanceOf[RenderItemReturnText]
       }
       
-      extension [Self <: RenderItemReturnText](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderItemReturnText] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -15311,7 +15371,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesEffectScatter.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesEffectScatter.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesEffectScatter.DataObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: `5`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -15355,7 +15416,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesEffectScatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesEffectScatter] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -16104,7 +16166,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesFunnel.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesFunnel.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesFunnel.DataObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: LabelLabelLine): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -16136,7 +16199,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesFunnel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesFunnel] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -16685,7 +16749,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesGauge.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesGauge.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesGauge.DataObject] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -16697,7 +16762,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesGauge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesGauge] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -17781,7 +17847,8 @@ object EChartOption {
         __obj.asInstanceOf[CategoryObject]
       }
       
-      extension [Self <: CategoryObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CategoryObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -18007,7 +18074,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesGraph.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesGraph.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesGraph.DataObject] (val x: Self) extends AnyVal {
         
         inline def setCategory(value: Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
@@ -18150,7 +18218,8 @@ object EChartOption {
         __obj.asInstanceOf[LinkObject]
       }
       
-      extension [Self <: LinkObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LinkObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: LabelLineStyle): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -18190,7 +18259,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesGraph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesGraph] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -18910,7 +18980,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesHeatmap.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesHeatmap.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesHeatmap.DataObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -18936,7 +19007,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesHeatmap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesHeatmap] (val x: Self) extends AnyVal {
       
       inline def setBlurSize(value: Double): Self = StObject.set(x, "blurSize", value.asInstanceOf[js.Any])
       
@@ -20109,7 +20181,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesLine.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesLine.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesLine.DataObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: `10`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -20161,7 +20234,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesLine] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -20867,7 +20941,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesLines.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesLines.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesLines.DataObject] (val x: Self) extends AnyVal {
         
         inline def setCoords(value: js.Array[Any]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
         
@@ -20893,7 +20968,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesLines] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -21632,7 +21708,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesMap.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesMap.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesMap.DataObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: `16`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -21664,7 +21741,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesMap] (val x: Self) extends AnyVal {
       
       inline def setAspectScale(value: Double): Self = StObject.set(x, "aspectScale", value.asInstanceOf[js.Any])
       
@@ -22402,7 +22480,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesParallel.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesParallel.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesParallel.DataObject] (val x: Self) extends AnyVal {
         
         inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -22456,7 +22535,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesParallel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesParallel] (val x: Self) extends AnyVal {
       
       inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       
@@ -24538,7 +24618,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesPictorialBar.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesPictorialBar.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesPictorialBar.DataObject] (val x: Self) extends AnyVal {
         
         inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
         
@@ -24654,7 +24735,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesPictorialBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesPictorialBar] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -25482,7 +25564,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesPie.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesPie.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesPie.DataObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: `21`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -25518,7 +25601,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesPie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesPie] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -26256,7 +26340,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesRadar.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesRadar.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesRadar.DataObject] (val x: Self) extends AnyVal {
         
         inline def setAreaStyle(value: Opacity): Self = StObject.set(x, "areaStyle", value.asInstanceOf[js.Any])
         
@@ -26318,7 +26403,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesRadar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesRadar] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -26999,7 +27085,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesSankey.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesSankey.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesSankey.DataObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -27079,7 +27166,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesSankey.LinkObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesSankey.LinkObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesSankey.LinkObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: `22`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -27103,7 +27191,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesSankey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesSankey] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -28228,7 +28317,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesScatter.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesScatter.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesScatter.DataObject] (val x: Self) extends AnyVal {
         
         inline def setEmphasis(value: `5`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -28282,7 +28372,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesScatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesScatter] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -29081,7 +29172,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: js.Array[typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
@@ -29127,7 +29219,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesSunburst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesSunburst] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -29681,7 +29774,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesThemeRiver.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesThemeRiver.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesThemeRiver.DataObject] (val x: Self) extends AnyVal {
         
         inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
         
@@ -29699,7 +29793,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesThemeRiver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesThemeRiver] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -30398,7 +30493,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesTree.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesTree.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesTree.DataObject] (val x: Self) extends AnyVal {
         
         inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
         
@@ -30464,7 +30560,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesTree] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -31874,7 +31971,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.SeriesTreemap.DataObject]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.SeriesTreemap.DataObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.SeriesTreemap.DataObject] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: js.Array[typings.echarts.echarts.EChartOption.SeriesTreemap.DataObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
@@ -31954,7 +32052,8 @@ object EChartOption {
       }
     }
     
-    extension [Self <: SeriesTreemap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesTreemap] (val x: Self) extends AnyVal {
       
       inline def setAnimationDelay(value: js.Function | Double): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
       
@@ -32209,7 +32308,8 @@ object EChartOption {
       __obj.asInstanceOf[SingleAxis]
     }
     
-    extension [Self <: SingleAxis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleAxis] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String | Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -32278,7 +32378,8 @@ object EChartOption {
       __obj.asInstanceOf[TextStyle]
     }
     
-    extension [Self <: TextStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -32341,7 +32442,8 @@ object EChartOption {
       __obj.asInstanceOf[TextStyleWithRich]
     }
     
-    extension [Self <: TextStyleWithRich](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextStyleWithRich] (val x: Self) extends AnyVal {
       
       inline def setRich(value: RichStyle): Self = StObject.set(x, "rich", value.asInstanceOf[js.Any])
       
@@ -32373,7 +32475,8 @@ object EChartOption {
       __obj.asInstanceOf[Texture]
     }
     
-    extension [Self <: Texture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Texture] (val x: Self) extends AnyVal {
       
       inline def setImage(value: HTMLImageElement | HTMLCanvasElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
@@ -32602,7 +32705,8 @@ object EChartOption {
         __obj.asInstanceOf[typings.echarts.echarts.EChartOption.Tooltip.AxisPointer]
       }
       
-      extension [Self <: typings.echarts.echarts.EChartOption.Tooltip.AxisPointer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.echarts.echarts.EChartOption.Tooltip.AxisPointer] (val x: Self) extends AnyVal {
         
         inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
         
@@ -32737,7 +32841,8 @@ object EChartOption {
         __obj.asInstanceOf[Format]
       }
       
-      extension [Self <: Format](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
         
         inline def setAxisValue(value: Double | String): Self = StObject.set(x, "axisValue", value.asInstanceOf[js.Any])
         
@@ -32842,7 +32947,8 @@ object EChartOption {
         String
       ]
     
-    extension [Self <: Tooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowContent(value: Boolean): Self = StObject.set(x, "alwaysShowContent", value.asInstanceOf[js.Any])
       
@@ -32927,7 +33033,8 @@ object EChartOption {
           __obj.asInstanceOf[Obj]
         }
         
-        extension [Self <: Obj](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Obj] (val x: Self) extends AnyVal {
           
           inline def setBottom(value: String | Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
           
@@ -33045,7 +33152,8 @@ object EChartOption {
       __obj.asInstanceOf[XAxis]
     }
     
-    extension [Self <: XAxis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAxis] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: top | bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -33100,7 +33208,8 @@ object EChartOption {
       __obj.asInstanceOf[YAxis]
     }
     
-    extension [Self <: YAxis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YAxis] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       

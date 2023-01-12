@@ -19,7 +19,8 @@ object RemoteSystemStatusTypeFilter {
     __obj.asInstanceOf[RemoteSystemStatusTypeFilter]
   }
   
-  extension [Self <: RemoteSystemStatusTypeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteSystemStatusTypeFilter] (val x: Self) extends AnyVal {
     
     inline def setRemoteSystemStatusType(value: RemoteSystemStatusType): Self = StObject.set(x, "remoteSystemStatusType", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object Card {
       __obj.asInstanceOf[CardActionsProps]
     }
     
-    extension [Self <: CardActionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardActionsProps] (val x: Self) extends AnyVal {
       
       inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object Card {
       __obj.asInstanceOf[CardExpandableProps]
     }
     
-    extension [Self <: CardExpandableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardExpandableProps] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object Card {
       __obj.asInstanceOf[CardHeaderProps]
     }
     
-    extension [Self <: CardHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
@@ -235,7 +238,8 @@ object Card {
       __obj.asInstanceOf[CardMediaProps]
     }
     
-    extension [Self <: CardMediaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardMediaProps] (val x: Self) extends AnyVal {
       
       inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
@@ -304,7 +308,8 @@ object Card {
       __obj.asInstanceOf[CardProps]
     }
     
-    extension [Self <: CardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
       
       inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
@@ -371,7 +376,8 @@ object Card {
       __obj.asInstanceOf[CardTextProps]
     }
     
-    extension [Self <: CardTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardTextProps] (val x: Self) extends AnyVal {
       
       inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       
@@ -430,7 +436,8 @@ object Card {
       __obj.asInstanceOf[CardTitleProps]
     }
     
-    extension [Self <: CardTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardTitleProps] (val x: Self) extends AnyVal {
       
       inline def setActAsExpander(value: Boolean): Self = StObject.set(x, "actAsExpander", value.asInstanceOf[js.Any])
       

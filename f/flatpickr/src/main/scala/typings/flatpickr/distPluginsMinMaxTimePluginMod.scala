@@ -31,7 +31,8 @@ object distPluginsMinMaxTimePluginMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setGetTimeLimits(value: /* date */ Date => MinMaxTime): Self = StObject.set(x, "getTimeLimits", js.Any.fromFunction1(value))
       
@@ -60,7 +61,8 @@ object distPluginsMinMaxTimePluginMod {
       __obj.asInstanceOf[MinMaxTime]
     }
     
-    extension [Self <: MinMaxTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinMaxTime] (val x: Self) extends AnyVal {
       
       inline def setMaxTime(value: String): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object distPluginsMinMaxTimePluginMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: MinMaxTime): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object AuthenticateOptions {
     __obj.asInstanceOf[AuthenticateOptions]
   }
   
-  extension [Self <: AuthenticateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticateOptions] (val x: Self) extends AnyVal {
     
     inline def setAddAcceptedScopesHeader(value: Boolean): Self = StObject.set(x, "addAcceptedScopesHeader", value.asInstanceOf[js.Any])
     

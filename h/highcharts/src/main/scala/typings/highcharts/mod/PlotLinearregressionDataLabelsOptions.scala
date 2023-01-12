@@ -275,7 +275,8 @@ object PlotLinearregressionDataLabelsOptions {
     __obj.asInstanceOf[PlotLinearregressionDataLabelsOptions]
   }
   
-  extension [Self <: PlotLinearregressionDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotLinearregressionDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

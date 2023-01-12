@@ -34,7 +34,8 @@ object DocumentInsertParams {
     __obj.asInstanceOf[DocumentInsertParams]
   }
   
-  extension [Self <: DocumentInsertParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentInsertParams] (val x: Self) extends AnyVal {
     
     inline def setBatch(value: ok): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     

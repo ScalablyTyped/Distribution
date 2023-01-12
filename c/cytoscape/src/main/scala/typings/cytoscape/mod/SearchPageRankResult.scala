@@ -19,7 +19,8 @@ object SearchPageRankResult {
     __obj.asInstanceOf[SearchPageRankResult]
   }
   
-  extension [Self <: SearchPageRankResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPageRankResult] (val x: Self) extends AnyVal {
     
     inline def setRank(value: NodeCollection => Double): Self = StObject.set(x, "rank", js.Any.fromFunction1(value))
   }

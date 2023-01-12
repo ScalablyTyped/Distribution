@@ -29,7 +29,8 @@ object PseudoElementMatches {
     __obj.asInstanceOf[PseudoElementMatches]
   }
   
-  extension [Self <: PseudoElementMatches](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PseudoElementMatches] (val x: Self) extends AnyVal {
     
     inline def setMatches(value: js.Array[RuleMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     

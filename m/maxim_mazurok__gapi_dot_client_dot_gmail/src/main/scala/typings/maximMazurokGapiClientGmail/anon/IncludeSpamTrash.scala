@@ -65,7 +65,8 @@ object IncludeSpamTrash {
     __obj.asInstanceOf[IncludeSpamTrash]
   }
   
-  extension [Self <: IncludeSpamTrash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeSpamTrash] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

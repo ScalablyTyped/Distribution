@@ -33,7 +33,8 @@ object IndexHtmlTransformContext {
     __obj.asInstanceOf[IndexHtmlTransformContext]
   }
   
-  extension [Self <: IndexHtmlTransformContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexHtmlTransformContext] (val x: Self) extends AnyVal {
     
     inline def setBundle(value: OutputBundle): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     

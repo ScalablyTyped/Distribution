@@ -15,7 +15,8 @@ object OnExpireExpireHandler {
     __obj.asInstanceOf[OnExpireExpireHandler[ExpireHandler]]
   }
   
-  extension [Self <: OnExpireExpireHandler[?], ExpireHandler /* <: typings.moize.mod.OnExpire */](x: Self & OnExpireExpireHandler[ExpireHandler]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnExpireExpireHandler[?], ExpireHandler /* <: typings.moize.mod.OnExpire */] (val x: Self & OnExpireExpireHandler[ExpireHandler]) extends AnyVal {
     
     inline def setOnExpire(value: ExpireHandler): Self = StObject.set(x, "onExpire", value.asInstanceOf[js.Any])
   }

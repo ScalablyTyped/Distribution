@@ -43,7 +43,8 @@ object ScriptableContext {
     __obj.asInstanceOf[ScriptableContext[TType]]
   }
   
-  extension [Self <: ScriptableContext[?], TType /* <: ChartType */](x: Self & ScriptableContext[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptableContext[?], TType /* <: ChartType */] (val x: Self & ScriptableContext[TType]) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ManagedPropertyBundle {
     __obj.asInstanceOf[ManagedPropertyBundle]
   }
   
-  extension [Self <: ManagedPropertyBundle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedPropertyBundle] (val x: Self) extends AnyVal {
     
     inline def setManagedProperty(value: js.Array[ManagedProperty]): Self = StObject.set(x, "managedProperty", value.asInstanceOf[js.Any])
     

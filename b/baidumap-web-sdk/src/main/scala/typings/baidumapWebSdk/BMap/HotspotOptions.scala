@@ -23,7 +23,8 @@ object HotspotOptions {
     __obj.asInstanceOf[HotspotOptions]
   }
   
-  extension [Self <: HotspotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HotspotOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     

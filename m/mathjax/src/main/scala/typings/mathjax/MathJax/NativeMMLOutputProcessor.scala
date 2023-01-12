@@ -36,7 +36,8 @@ object NativeMMLOutputProcessor {
     __obj.asInstanceOf[NativeMMLOutputProcessor]
   }
   
-  extension [Self <: NativeMMLOutputProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeMMLOutputProcessor] (val x: Self) extends AnyVal {
     
     inline def setMatchFontHeight(value: Boolean): Self = StObject.set(x, "matchFontHeight", value.asInstanceOf[js.Any])
     

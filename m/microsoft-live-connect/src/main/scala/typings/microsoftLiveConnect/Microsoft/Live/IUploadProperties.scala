@@ -37,7 +37,8 @@ object IUploadProperties {
     __obj.asInstanceOf[IUploadProperties]
   }
   
-  extension [Self <: IUploadProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUploadProperties] (val x: Self) extends AnyVal {
     
     inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

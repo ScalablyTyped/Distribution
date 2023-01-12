@@ -42,7 +42,8 @@ object JQueryCLEditorButtonDefinition {
     __obj.asInstanceOf[JQueryCLEditorButtonDefinition]
   }
   
-  extension [Self <: JQueryCLEditorButtonDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryCLEditorButtonDefinition] (val x: Self) extends AnyVal {
     
     inline def setButtonClick(value: (/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean): Self = StObject.set(x, "buttonClick", js.Any.fromFunction2(value))
     

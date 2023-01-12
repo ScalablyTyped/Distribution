@@ -19,7 +19,8 @@ object NxAttrDimDef {
     __obj.asInstanceOf[NxAttrDimDef]
   }
   
-  extension [Self <: NxAttrDimDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxAttrDimDef] (val x: Self) extends AnyVal {
     
     inline def setQDef(value: String): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
     

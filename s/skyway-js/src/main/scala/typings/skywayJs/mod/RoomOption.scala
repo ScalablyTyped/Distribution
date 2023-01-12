@@ -32,7 +32,8 @@ object RoomOption {
     __obj.asInstanceOf[RoomOption]
   }
   
-  extension [Self <: RoomOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomOption] (val x: Self) extends AnyVal {
     
     inline def setAudioBandwidth(value: Double): Self = StObject.set(x, "audioBandwidth", value.asInstanceOf[js.Any])
     

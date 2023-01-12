@@ -42,7 +42,8 @@ object MolecularSequenceStructureVariant {
     __obj.asInstanceOf[MolecularSequenceStructureVariant]
   }
   
-  extension [Self <: MolecularSequenceStructureVariant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MolecularSequenceStructureVariant] (val x: Self) extends AnyVal {
     
     inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

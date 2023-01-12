@@ -37,7 +37,8 @@ object srcViewObserverFocusobserverMod {
         __obj.asInstanceOf[Observers]
       }
       
-      extension [Self <: Observers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Observers] (val x: Self) extends AnyVal {
         
         inline def setFocusObserver(value: FocusObserver): Self = StObject.set(x, "FocusObserver", value.asInstanceOf[js.Any])
       }

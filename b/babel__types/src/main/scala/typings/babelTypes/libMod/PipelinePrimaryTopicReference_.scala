@@ -22,7 +22,8 @@ object PipelinePrimaryTopicReference_ {
     __obj.asInstanceOf[PipelinePrimaryTopicReference_]
   }
   
-  extension [Self <: PipelinePrimaryTopicReference_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelinePrimaryTopicReference_] (val x: Self) extends AnyVal {
     
     inline def setType(value: PipelinePrimaryTopicReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object DiagramEditEvent {
     __obj.asInstanceOf[DiagramEditEvent]
   }
   
-  extension [Self <: DiagramEditEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramEditEvent] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: Model): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

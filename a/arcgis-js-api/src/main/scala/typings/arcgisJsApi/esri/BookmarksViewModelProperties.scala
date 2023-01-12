@@ -52,7 +52,8 @@ object BookmarksViewModelProperties {
     __obj.asInstanceOf[BookmarksViewModelProperties]
   }
   
-  extension [Self <: BookmarksViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookmarksViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setAbilities(value: Abilities): Self = StObject.set(x, "abilities", value.asInstanceOf[js.Any])
     

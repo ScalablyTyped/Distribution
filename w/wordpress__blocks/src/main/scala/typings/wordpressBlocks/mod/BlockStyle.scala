@@ -19,7 +19,8 @@ object BlockStyle {
     __obj.asInstanceOf[BlockStyle]
   }
   
-  extension [Self <: BlockStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockStyle] (val x: Self) extends AnyVal {
     
     inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     

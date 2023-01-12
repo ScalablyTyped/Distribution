@@ -18,7 +18,8 @@ object PanelBarSelectEvent {
     __obj.asInstanceOf[PanelBarSelectEvent]
   }
   
-  extension [Self <: PanelBarSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanelBarSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

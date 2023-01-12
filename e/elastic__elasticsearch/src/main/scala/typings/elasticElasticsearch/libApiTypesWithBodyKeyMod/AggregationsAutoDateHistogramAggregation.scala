@@ -34,7 +34,8 @@ object AggregationsAutoDateHistogramAggregation {
     __obj.asInstanceOf[AggregationsAutoDateHistogramAggregation]
   }
   
-  extension [Self <: AggregationsAutoDateHistogramAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsAutoDateHistogramAggregation] (val x: Self) extends AnyVal {
     
     inline def setBuckets(value: integer): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     

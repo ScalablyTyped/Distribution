@@ -21,7 +21,8 @@ object DictkeyStatus {
     __obj.asInstanceOf[DictkeyStatus]
   }
   
-  extension [Self <: DictkeyStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictkeyStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: queued_ | in_progress): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

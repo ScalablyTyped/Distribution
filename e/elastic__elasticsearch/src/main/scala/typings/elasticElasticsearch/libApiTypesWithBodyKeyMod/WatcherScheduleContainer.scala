@@ -27,7 +27,8 @@ object WatcherScheduleContainer {
     __obj.asInstanceOf[WatcherScheduleContainer]
   }
   
-  extension [Self <: WatcherScheduleContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherScheduleContainer] (val x: Self) extends AnyVal {
     
     inline def setCron(value: WatcherCronExpression): Self = StObject.set(x, "cron", value.asInstanceOf[js.Any])
     

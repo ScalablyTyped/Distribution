@@ -28,7 +28,8 @@ object DataBreakpoint {
     __obj.asInstanceOf[DataBreakpoint]
   }
   
-  extension [Self <: DataBreakpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataBreakpoint] (val x: Self) extends AnyVal {
     
     inline def setAccessType(value: DataBreakpointAccessType): Self = StObject.set(x, "accessType", value.asInstanceOf[js.Any])
     

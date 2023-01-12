@@ -16,7 +16,8 @@ object TypeofNavItem {
     __obj.asInstanceOf[TypeofNavItem]
   }
   
-  extension [Self <: TypeofNavItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofNavItem] (val x: Self) extends AnyVal {
     
     inline def setDefaultProps(value: OnSelect): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
   }

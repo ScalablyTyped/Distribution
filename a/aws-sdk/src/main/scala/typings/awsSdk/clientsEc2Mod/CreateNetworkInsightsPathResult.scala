@@ -18,7 +18,8 @@ object CreateNetworkInsightsPathResult {
     __obj.asInstanceOf[CreateNetworkInsightsPathResult]
   }
   
-  extension [Self <: CreateNetworkInsightsPathResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNetworkInsightsPathResult] (val x: Self) extends AnyVal {
     
     inline def setNetworkInsightsPath(value: NetworkInsightsPath): Self = StObject.set(x, "NetworkInsightsPath", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object JQueryCLEditorStatic {
     __obj.asInstanceOf[JQueryCLEditorStatic]
   }
   
-  extension [Self <: JQueryCLEditorStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryCLEditorStatic] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[JQueryCLEditorButtonDefinition]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

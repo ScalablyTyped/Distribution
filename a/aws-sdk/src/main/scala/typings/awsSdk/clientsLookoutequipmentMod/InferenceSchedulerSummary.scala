@@ -53,7 +53,8 @@ object InferenceSchedulerSummary {
     __obj.asInstanceOf[InferenceSchedulerSummary]
   }
   
-  extension [Self <: InferenceSchedulerSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceSchedulerSummary] (val x: Self) extends AnyVal {
     
     inline def setDataDelayOffsetInMinutes(value: DataDelayOffsetInMinutes): Self = StObject.set(x, "DataDelayOffsetInMinutes", value.asInstanceOf[js.Any])
     

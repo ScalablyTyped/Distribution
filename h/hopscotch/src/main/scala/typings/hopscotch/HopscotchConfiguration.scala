@@ -52,7 +52,8 @@ object HopscotchConfiguration {
     __obj.asInstanceOf[HopscotchConfiguration]
   }
   
-  extension [Self <: HopscotchConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HopscotchConfiguration] (val x: Self) extends AnyVal {
     
     inline def setArrowWidth(value: Double): Self = StObject.set(x, "arrowWidth", value.asInstanceOf[js.Any])
     

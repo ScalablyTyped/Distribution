@@ -33,7 +33,8 @@ object Field {
     __obj.asInstanceOf[Field[Value, Holder]]
   }
   
-  extension [Self <: Field[?, ?], Value, Holder /* <: Members[Holder] */](x: Self & (Field[Value, Holder])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Field[?, ?], Value, Holder /* <: Members[Holder] */] (val x: Self & (Field[Value, Holder])) extends AnyVal {
     
     inline def setFieldReturnType(value: Type): Self = StObject.set(x, "fieldReturnType", value.asInstanceOf[js.Any])
     

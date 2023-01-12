@@ -20,7 +20,8 @@ object ILocation {
     __obj.asInstanceOf[ILocation]
   }
   
-  extension [Self <: ILocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocation] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

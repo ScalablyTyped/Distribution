@@ -28,7 +28,8 @@ object ListContributorInsightsInput {
     __obj.asInstanceOf[ListContributorInsightsInput]
   }
   
-  extension [Self <: ListContributorInsightsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListContributorInsightsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListContributorInsightsLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeClientBrandingRequest {
     __obj.asInstanceOf[DescribeClientBrandingRequest]
   }
   
-  extension [Self <: DescribeClientBrandingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeClientBrandingRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: DirectoryId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object TimeSeriesFeedback {
     __obj.asInstanceOf[TimeSeriesFeedback]
   }
   
-  extension [Self <: TimeSeriesFeedback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesFeedback] (val x: Self) extends AnyVal {
     
     inline def setIsAnomaly(value: Boolean): Self = StObject.set(x, "IsAnomaly", value.asInstanceOf[js.Any])
     

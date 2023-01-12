@@ -868,7 +868,8 @@ object buildSrcInstanceMod {
       __obj.asInstanceOf[CreateDatabaseOptions]
     }
     
-    extension [Self <: CreateDatabaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateDatabaseOptions] (val x: Self) extends AnyVal {
       
       inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
       
@@ -973,7 +974,8 @@ object buildSrcInstanceMod {
       __obj.asInstanceOf[GetInstanceConfig]
     }
     
-    extension [Self <: GetInstanceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetInstanceConfig] (val x: Self) extends AnyVal {
       
       inline def setFieldNames(value: String | js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
       
@@ -998,7 +1000,8 @@ object buildSrcInstanceMod {
       __obj.asInstanceOf[GetInstanceMetadataOptions]
     }
     
-    extension [Self <: GetInstanceMetadataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetInstanceMetadataOptions] (val x: Self) extends AnyVal {
       
       inline def setFieldNames(value: String | js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object SerializableWithUID {
     __obj.asInstanceOf[SerializableWithUID]
   }
   
-  extension [Self <: SerializableWithUID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializableWithUID] (val x: Self) extends AnyVal {
     
     inline def setIsSame(value: SerializableWithUID => Boolean): Self = StObject.set(x, "isSame", js.Any.fromFunction1(value))
   }

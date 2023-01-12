@@ -53,7 +53,8 @@ object CreateContentRequest {
     __obj.asInstanceOf[CreateContentRequest]
   }
   
-  extension [Self <: CreateContentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateContentRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: NonEmptyString): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

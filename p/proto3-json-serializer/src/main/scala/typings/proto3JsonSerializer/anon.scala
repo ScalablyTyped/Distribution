@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String | Double | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Paths]
     }
     
-    extension [Self <: Paths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paths] (val x: Self) extends AnyVal {
       
       inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
@@ -56,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Typeurl]
     }
     
-    extension [Self <: Typeurl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeurl] (val x: Self) extends AnyVal {
       
       inline def setType_url(value: String): Self = StObject.set(x, "type_url", value.asInstanceOf[js.Any])
       
@@ -77,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setType_url(value: String): Self = StObject.set(x, "type_url", value.asInstanceOf[js.Any])
       
@@ -96,7 +100,8 @@ object anon {
       __obj.asInstanceOf[ValueBuffer]
     }
     
-    extension [Self <: ValueBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueBuffer] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -113,7 +118,8 @@ object anon {
       __obj.asInstanceOf[ValueNull]
     }
     
-    extension [Self <: ValueNull](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueNull] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Null): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

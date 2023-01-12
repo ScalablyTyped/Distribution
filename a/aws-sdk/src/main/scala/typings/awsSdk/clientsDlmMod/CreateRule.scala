@@ -38,7 +38,8 @@ object CreateRule {
     __obj.asInstanceOf[CreateRule]
   }
   
-  extension [Self <: CreateRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRule] (val x: Self) extends AnyVal {
     
     inline def setCronExpression(value: CronExpression): Self = StObject.set(x, "CronExpression", value.asInstanceOf[js.Any])
     

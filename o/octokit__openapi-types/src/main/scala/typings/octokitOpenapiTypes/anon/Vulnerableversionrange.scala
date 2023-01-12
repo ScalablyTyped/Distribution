@@ -24,7 +24,8 @@ object Vulnerableversionrange {
     __obj.asInstanceOf[Vulnerableversionrange]
   }
   
-  extension [Self <: Vulnerableversionrange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vulnerableversionrange] (val x: Self) extends AnyVal {
     
     inline def setFirst_patched_version(value: `390`): Self = StObject.set(x, "first_patched_version", value.asInstanceOf[js.Any])
     

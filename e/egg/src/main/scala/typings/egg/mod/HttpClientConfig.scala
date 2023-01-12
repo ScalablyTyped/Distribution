@@ -45,7 +45,8 @@ object HttpClientConfig {
     __obj.asInstanceOf[HttpClientConfig]
   }
   
-  extension [Self <: HttpClientConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpClientConfig] (val x: Self) extends AnyVal {
     
     inline def setDnsCacheLookupInterval(value: Double): Self = StObject.set(x, "dnsCacheLookupInterval", value.asInstanceOf[js.Any])
     

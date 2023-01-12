@@ -62,7 +62,8 @@ object ColorPickerOptions {
     __obj.asInstanceOf[ColorPickerOptions]
   }
   
-  extension [Self <: ColorPickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPickerOptions] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: Boolean): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

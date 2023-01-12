@@ -22,7 +22,8 @@ object DAVObjectOptions {
     __obj.asInstanceOf[DAVObjectOptions]
   }
   
-  extension [Self <: DAVObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DAVObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setConstructor(value: DAVObjectOptions => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     

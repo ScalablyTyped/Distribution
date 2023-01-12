@@ -29,7 +29,8 @@ object Noop {
     __obj.asInstanceOf[Noop]
   }
   
-  extension [Self <: Noop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Noop] (val x: Self) extends AnyVal {
     
     inline def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

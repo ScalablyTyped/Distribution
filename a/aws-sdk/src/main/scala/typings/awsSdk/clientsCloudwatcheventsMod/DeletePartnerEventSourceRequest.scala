@@ -23,7 +23,8 @@ object DeletePartnerEventSourceRequest {
     __obj.asInstanceOf[DeletePartnerEventSourceRequest]
   }
   
-  extension [Self <: DeletePartnerEventSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePartnerEventSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     

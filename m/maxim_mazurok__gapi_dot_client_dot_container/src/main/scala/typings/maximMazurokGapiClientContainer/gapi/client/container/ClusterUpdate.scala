@@ -140,7 +140,8 @@ object ClusterUpdate {
     __obj.asInstanceOf[ClusterUpdate]
   }
   
-  extension [Self <: ClusterUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterUpdate] (val x: Self) extends AnyVal {
     
     inline def setDesiredAddonsConfig(value: AddonsConfig): Self = StObject.set(x, "desiredAddonsConfig", value.asInstanceOf[js.Any])
     

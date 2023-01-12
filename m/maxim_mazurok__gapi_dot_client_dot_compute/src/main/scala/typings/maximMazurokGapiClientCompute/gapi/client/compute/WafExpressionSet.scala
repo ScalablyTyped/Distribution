@@ -25,7 +25,8 @@ object WafExpressionSet {
     __obj.asInstanceOf[WafExpressionSet]
   }
   
-  extension [Self <: WafExpressionSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WafExpressionSet] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

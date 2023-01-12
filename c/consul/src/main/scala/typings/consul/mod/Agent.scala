@@ -250,7 +250,8 @@ object Agent {
         __obj.asInstanceOf[DeregisterOptions]
       }
       
-      extension [Self <: DeregisterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeregisterOptions] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
@@ -271,7 +272,8 @@ object Agent {
         __obj.asInstanceOf[FailOptions]
       }
       
-      extension [Self <: FailOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FailOptions] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -298,7 +300,8 @@ object Agent {
         __obj.asInstanceOf[PassOptions]
       }
       
-      extension [Self <: PassOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PassOptions] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -337,7 +340,8 @@ object Agent {
         __obj.asInstanceOf[RegisterOptions]
       }
       
-      extension [Self <: RegisterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
         
         inline def setHttp(value: String): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
         
@@ -390,7 +394,8 @@ object Agent {
         __obj.asInstanceOf[WarnOptions]
       }
       
-      extension [Self <: WarnOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WarnOptions] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -421,7 +426,8 @@ object Agent {
       __obj.asInstanceOf[ForceLeaveOptions]
     }
     
-    extension [Self <: ForceLeaveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForceLeaveOptions] (val x: Self) extends AnyVal {
       
       inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
@@ -440,7 +446,8 @@ object Agent {
       __obj.asInstanceOf[JoinOptions]
     }
     
-    extension [Self <: JoinOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JoinOptions] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     }
@@ -461,7 +468,8 @@ object Agent {
       __obj.asInstanceOf[MaintenanceOptions]
     }
     
-    extension [Self <: MaintenanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaintenanceOptions] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -561,7 +569,8 @@ object Agent {
         __obj.asInstanceOf[typings.consul.mod.Agent.Service.DeregisterOptions]
       }
       
-      extension [Self <: typings.consul.mod.Agent.Service.DeregisterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.consul.mod.Agent.Service.DeregisterOptions] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
@@ -586,7 +595,8 @@ object Agent {
         __obj.asInstanceOf[typings.consul.mod.Agent.Service.MaintenanceOptions]
       }
       
-      extension [Self <: typings.consul.mod.Agent.Service.MaintenanceOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.consul.mod.Agent.Service.MaintenanceOptions] (val x: Self) extends AnyVal {
         
         inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
         
@@ -619,7 +629,8 @@ object Agent {
         __obj.asInstanceOf[RegisterCheck]
       }
       
-      extension [Self <: RegisterCheck](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegisterCheck] (val x: Self) extends AnyVal {
         
         inline def setHttp(value: String): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
         
@@ -674,7 +685,8 @@ object Agent {
         __obj.asInstanceOf[typings.consul.mod.Agent.Service.RegisterOptions]
       }
       
-      extension [Self <: typings.consul.mod.Agent.Service.RegisterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.consul.mod.Agent.Service.RegisterOptions] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         

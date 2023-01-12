@@ -30,7 +30,8 @@ object typesProvisionedCapacityDescriptionMod {
       __obj.asInstanceOf[ProvisionedCapacityDescription]
     }
     
-    extension [Self <: ProvisionedCapacityDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvisionedCapacityDescription] (val x: Self) extends AnyVal {
       
       inline def setCapacityId(value: String): Self = StObject.set(x, "CapacityId", value.asInstanceOf[js.Any])
       

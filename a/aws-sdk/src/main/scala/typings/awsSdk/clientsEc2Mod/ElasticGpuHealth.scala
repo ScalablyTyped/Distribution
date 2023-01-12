@@ -18,7 +18,8 @@ object ElasticGpuHealth {
     __obj.asInstanceOf[ElasticGpuHealth]
   }
   
-  extension [Self <: ElasticGpuHealth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticGpuHealth] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ElasticGpuStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

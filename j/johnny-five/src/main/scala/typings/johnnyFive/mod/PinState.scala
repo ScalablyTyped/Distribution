@@ -29,7 +29,8 @@ object PinState {
     __obj.asInstanceOf[PinState]
   }
   
-  extension [Self <: PinState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinState] (val x: Self) extends AnyVal {
     
     inline def setAnalogChannel(value: Double): Self = StObject.set(x, "analogChannel", value.asInstanceOf[js.Any])
     

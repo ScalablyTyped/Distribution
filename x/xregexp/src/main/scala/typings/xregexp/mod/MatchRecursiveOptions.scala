@@ -39,7 +39,8 @@ object MatchRecursiveOptions {
     __obj.asInstanceOf[MatchRecursiveOptions]
   }
   
-  extension [Self <: MatchRecursiveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchRecursiveOptions] (val x: Self) extends AnyVal {
     
     inline def setEscapeChar(value: String): Self = StObject.set(x, "escapeChar", value.asInstanceOf[js.Any])
     

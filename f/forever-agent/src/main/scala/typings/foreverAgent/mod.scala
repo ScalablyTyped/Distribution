@@ -43,7 +43,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ForeverAgentOptions]
     }
     
-    extension [Self <: ForeverAgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForeverAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setMinSockets(value: Double): Self = StObject.set(x, "minSockets", value.asInstanceOf[js.Any])
       

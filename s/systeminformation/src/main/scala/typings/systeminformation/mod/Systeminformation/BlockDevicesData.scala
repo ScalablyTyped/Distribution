@@ -54,7 +54,8 @@ object BlockDevicesData {
     __obj.asInstanceOf[BlockDevicesData]
   }
   
-  extension [Self <: BlockDevicesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockDevicesData] (val x: Self) extends AnyVal {
     
     inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     

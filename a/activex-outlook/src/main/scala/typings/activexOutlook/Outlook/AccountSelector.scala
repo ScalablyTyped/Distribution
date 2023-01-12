@@ -34,7 +34,8 @@ object AccountSelector {
     __obj.asInstanceOf[AccountSelector]
   }
   
-  extension [Self <: AccountSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSelector] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

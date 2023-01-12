@@ -43,7 +43,8 @@ object SessionOptions {
     __obj.asInstanceOf[SessionOptions]
   }
   
-  extension [Self <: SessionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
     
     inline def setCreateConnection(value: (/* authority */ URL, SessionOptions) => Duplex): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
     

@@ -20,7 +20,8 @@ object DPlayerDanmakuItem {
     __obj.asInstanceOf[DPlayerDanmakuItem]
   }
   
-  extension [Self <: DPlayerDanmakuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DPlayerDanmakuItem] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

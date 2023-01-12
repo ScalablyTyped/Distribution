@@ -43,7 +43,8 @@ object libSchedulerMod {
       __obj.asInstanceOf[SchedulerOptions]
     }
     
-    extension [Self <: SchedulerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchedulerOptions] (val x: Self) extends AnyVal {
       
       inline def setDeferEvents(value: Boolean): Self = StObject.set(x, "deferEvents", value.asInstanceOf[js.Any])
     }

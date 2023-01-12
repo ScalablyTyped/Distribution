@@ -18,7 +18,8 @@ object GetContactMethodsRequest {
     __obj.asInstanceOf[GetContactMethodsRequest]
   }
   
-  extension [Self <: GetContactMethodsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContactMethodsRequest] (val x: Self) extends AnyVal {
     
     inline def setProtocols(value: ContactProtocolsList): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     

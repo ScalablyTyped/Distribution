@@ -123,7 +123,8 @@ object ListLayout {
     __obj.asInstanceOf[ListLayout]
   }
   
-  extension [Self <: ListLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLayout] (val x: Self) extends AnyVal {
     
     inline def setBackdropColor(value: String): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
     

@@ -579,7 +579,8 @@ object typesFixedDialogMod {
       __obj.asInstanceOf[BaseFixedDialogProps]
     }
     
-    extension [Self <: BaseFixedDialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseFixedDialogProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ScalableTargetAction {
     __obj.asInstanceOf[ScalableTargetAction]
   }
   
-  extension [Self <: ScalableTargetAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalableTargetAction] (val x: Self) extends AnyVal {
     
     inline def setMaxCapacity(value: ResourceCapacity): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     

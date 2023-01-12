@@ -37,7 +37,8 @@ object PathAttachment {
     __obj.asInstanceOf[PathAttachment]
   }
   
-  extension [Self <: PathAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathAttachment] (val x: Self) extends AnyVal {
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object distTokenizerTrieMod {
       __obj.asInstanceOf[TrieNode]
     }
     
-    extension [Self <: TrieNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrieNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: StringDictionary[TrieNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

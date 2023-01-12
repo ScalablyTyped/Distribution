@@ -177,7 +177,8 @@ object srcNgtscTransformSrcTraitMod {
       __obj.asInstanceOf[ResolvedTrait[D, A, S, R]]
     }
     
-    extension [Self <: ResolvedTrait[?, ?, ?, ?], D, A, S /* <: SemanticSymbol | Null */, R](x: Self & (ResolvedTrait[D, A, S, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedTrait[?, ?, ?, ?], D, A, S /* <: SemanticSymbol | Null */, R] (val x: Self & (ResolvedTrait[D, A, S, R])) extends AnyVal {
       
       inline def setAnalysis(value: A): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
       
@@ -218,7 +219,8 @@ object srcNgtscTransformSrcTraitMod {
       __obj.asInstanceOf[SkippedTrait[D, A, S, R]]
     }
     
-    extension [Self <: SkippedTrait[?, ?, ?, ?], D, A, S /* <: SemanticSymbol | Null */, R](x: Self & (SkippedTrait[D, A, S, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkippedTrait[?, ?, ?, ?], D, A, S /* <: SemanticSymbol | Null */, R] (val x: Self & (SkippedTrait[D, A, S, R])) extends AnyVal {
       
       inline def setState(value: Skipped): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
@@ -253,7 +255,8 @@ object srcNgtscTransformSrcTraitMod {
       __obj.asInstanceOf[TraitBase[D, A, S, R]]
     }
     
-    extension [Self <: TraitBase[?, ?, ?, ?], D, A, S /* <: SemanticSymbol | Null */, R](x: Self & (TraitBase[D, A, S, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraitBase[?, ?, ?, ?], D, A, S /* <: SemanticSymbol | Null */, R] (val x: Self & (TraitBase[D, A, S, R])) extends AnyVal {
       
       inline def setDetected(value: DetectResult[D]): Self = StObject.set(x, "detected", value.asInstanceOf[js.Any])
       

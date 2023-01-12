@@ -55,7 +55,8 @@ object XUpdateInformationProvider {
     __obj.asInstanceOf[XUpdateInformationProvider]
   }
   
-  extension [Self <: XUpdateInformationProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUpdateInformationProvider] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

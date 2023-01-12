@@ -83,7 +83,8 @@ object TextDocumentView {
     __obj.asInstanceOf[TextDocumentView]
   }
   
-  extension [Self <: TextDocumentView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentView] (val x: Self) extends AnyVal {
     
     inline def setIsConstantSpellcheck(value: Boolean): Self = StObject.set(x, "IsConstantSpellcheck", value.asInstanceOf[js.Any])
     

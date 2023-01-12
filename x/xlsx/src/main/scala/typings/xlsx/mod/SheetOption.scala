@@ -19,7 +19,8 @@ object SheetOption {
     __obj.asInstanceOf[SheetOption]
   }
   
-  extension [Self <: SheetOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetOption] (val x: Self) extends AnyVal {
     
     inline def setSheet(value: String): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     

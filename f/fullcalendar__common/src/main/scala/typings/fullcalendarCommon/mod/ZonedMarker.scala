@@ -17,7 +17,8 @@ object ZonedMarker {
     __obj.asInstanceOf[ZonedMarker]
   }
   
-  extension [Self <: ZonedMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZonedMarker] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: js.Date): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     

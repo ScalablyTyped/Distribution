@@ -22,7 +22,8 @@ object AllowedCharacterCount {
     __obj.asInstanceOf[AllowedCharacterCount]
   }
   
-  extension [Self <: AllowedCharacterCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedCharacterCount] (val x: Self) extends AnyVal {
     
     inline def setAllowedCharacterCount(value: Double): Self = StObject.set(x, "allowedCharacterCount", value.asInstanceOf[js.Any])
     

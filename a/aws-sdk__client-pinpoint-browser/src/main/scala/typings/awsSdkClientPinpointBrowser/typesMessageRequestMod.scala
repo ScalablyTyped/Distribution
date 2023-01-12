@@ -51,7 +51,8 @@ object typesMessageRequestMod {
       __obj.asInstanceOf[MessageRequest]
     }
     
-    extension [Self <: MessageRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageRequest] (val x: Self) extends AnyVal {
       
       inline def setAddresses(
         value: StringDictionary[AddressConfiguration] | (js.Iterable[js.Tuple2[String, AddressConfiguration]])
@@ -114,7 +115,8 @@ object typesMessageRequestMod {
       __obj.asInstanceOf[UnmarshalledMessageRequest]
     }
     
-    extension [Self <: UnmarshalledMessageRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledMessageRequest] (val x: Self) extends AnyVal {
       
       inline def setAddresses(value: StringDictionary[UnmarshalledAddressConfiguration]): Self = StObject.set(x, "Addresses", value.asInstanceOf[js.Any])
       

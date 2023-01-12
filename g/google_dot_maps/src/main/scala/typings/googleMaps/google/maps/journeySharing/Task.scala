@@ -89,7 +89,8 @@ object Task {
     __obj.asInstanceOf[Task]
   }
   
-  extension [Self <: Task](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
     
     inline def setEstimatedCompletionTime(value: js.Date): Self = StObject.set(x, "estimatedCompletionTime", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object RangeSetUpdate {
     __obj.asInstanceOf[RangeSetUpdate[T]]
   }
   
-  extension [Self <: RangeSetUpdate[?], T /* <: RangeValue */](x: Self & RangeSetUpdate[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeSetUpdate[?], T /* <: RangeValue */] (val x: Self & RangeSetUpdate[T]) extends AnyVal {
     
     inline def setAdd(value: js.Array[Range[T]]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

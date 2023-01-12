@@ -30,7 +30,8 @@ object EMap {
     __obj.asInstanceOf[EMap[W, M]]
   }
   
-  extension [Self <: EMap[?, ?], W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & (EMap[W, M])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EMap[?, ?], W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & (EMap[W, M])) extends AnyVal {
     
     inline def setAp(
       value: (WriterT3[M, Any, Any, W, js.Function1[Any, Any]], WriterT3[M, Any, Any, W, Any]) => WriterT3[M, Any, Any, W, Any]

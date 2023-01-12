@@ -23,7 +23,8 @@ object DescribeComplianceByResourceResponse {
     __obj.asInstanceOf[DescribeComplianceByResourceResponse]
   }
   
-  extension [Self <: DescribeComplianceByResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeComplianceByResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setComplianceByResources(value: ComplianceByResources): Self = StObject.set(x, "ComplianceByResources", value.asInstanceOf[js.Any])
     

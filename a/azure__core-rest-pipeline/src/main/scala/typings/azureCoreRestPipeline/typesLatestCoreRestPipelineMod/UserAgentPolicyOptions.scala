@@ -19,7 +19,8 @@ object UserAgentPolicyOptions {
     __obj.asInstanceOf[UserAgentPolicyOptions]
   }
   
-  extension [Self <: UserAgentPolicyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAgentPolicyOptions] (val x: Self) extends AnyVal {
     
     inline def setUserAgentPrefix(value: String): Self = StObject.set(x, "userAgentPrefix", value.asInstanceOf[js.Any])
     

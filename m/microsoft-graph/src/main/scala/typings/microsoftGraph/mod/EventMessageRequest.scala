@@ -35,7 +35,8 @@ object EventMessageRequest {
     __obj.asInstanceOf[EventMessageRequest]
   }
   
-  extension [Self <: EventMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowNewTimeProposals(value: NullableOption[Boolean]): Self = StObject.set(x, "allowNewTimeProposals", value.asInstanceOf[js.Any])
     

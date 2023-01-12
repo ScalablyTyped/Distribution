@@ -22,7 +22,8 @@ object Finished {
     __obj.asInstanceOf[Finished]
   }
   
-  extension [Self <: Finished](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Finished] (val x: Self) extends AnyVal {
     
     inline def setFinished(value: Value): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
     

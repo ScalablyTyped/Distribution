@@ -15,7 +15,8 @@ object SearchContactsResult {
     __obj.asInstanceOf[SearchContactsResult]
   }
   
-  extension [Self <: SearchContactsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchContactsResult] (val x: Self) extends AnyVal {
     
     inline def setPerson(value: Person): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
   }

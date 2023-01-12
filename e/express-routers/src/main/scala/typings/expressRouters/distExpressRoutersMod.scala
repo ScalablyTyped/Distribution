@@ -64,7 +64,8 @@ object distExpressRoutersMod {
       __obj.asInstanceOf[RouteConfig]
     }
     
-    extension [Self <: RouteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteConfig] (val x: Self) extends AnyVal {
       
       inline def setHandler(
         value: (RequestHandler[

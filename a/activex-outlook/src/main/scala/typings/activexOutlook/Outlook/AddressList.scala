@@ -61,7 +61,8 @@ object AddressList {
     __obj.asInstanceOf[AddressList]
   }
   
-  extension [Self <: AddressList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressList] (val x: Self) extends AnyVal {
     
     inline def setAddressEntries(value: AddressEntries): Self = StObject.set(x, "AddressEntries", value.asInstanceOf[js.Any])
     

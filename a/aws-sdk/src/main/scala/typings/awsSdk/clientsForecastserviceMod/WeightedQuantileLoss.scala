@@ -23,7 +23,8 @@ object WeightedQuantileLoss {
     __obj.asInstanceOf[WeightedQuantileLoss]
   }
   
-  extension [Self <: WeightedQuantileLoss](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeightedQuantileLoss] (val x: Self) extends AnyVal {
     
     inline def setLossValue(value: Double): Self = StObject.set(x, "LossValue", value.asInstanceOf[js.Any])
     

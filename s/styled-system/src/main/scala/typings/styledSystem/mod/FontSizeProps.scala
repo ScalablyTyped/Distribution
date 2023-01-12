@@ -24,7 +24,8 @@ object FontSizeProps {
     __obj.asInstanceOf[FontSizeProps[ThemeType, TVal]]
   }
   
-  extension [Self <: FontSizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (FontSizeProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontSizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (FontSizeProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setFontSize(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object JoinAggregateFieldDef {
     __obj.asInstanceOf[JoinAggregateFieldDef]
   }
   
-  extension [Self <: JoinAggregateFieldDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinAggregateFieldDef] (val x: Self) extends AnyVal {
     
     inline def setAs(value: FieldName): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

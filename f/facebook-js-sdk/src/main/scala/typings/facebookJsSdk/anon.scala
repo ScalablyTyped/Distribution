@@ -164,7 +164,8 @@ object anon {
       __obj.asInstanceOf[About[TParam]]
     }
     
-    extension [Self <: About[?], TParam /* <: UserField */](x: Self & About[TParam]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: About[?], TParam /* <: UserField */] (val x: Self & About[TParam]) extends AnyVal {
       
       inline def setAbout(
         value: /* import warning: importer.ImportType#apply Failed type conversion: TParam extends 'about' ? string : never | undefined */ js.Any
@@ -391,7 +392,8 @@ object anon {
       __obj.asInstanceOf[Fields[TParam]]
     }
     
-    extension [Self <: Fields[?], TParam /* <: UserField */](x: Self & Fields[TParam]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields[?], TParam /* <: UserField */] (val x: Self & Fields[TParam]) extends AnyVal {
       
       inline def setFields(value: js.Array[TParam]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -414,7 +416,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setMax(value: `17`): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -437,7 +440,8 @@ object anon {
       __obj.asInstanceOf[MaxMin]
     }
     
-    extension [Self <: MaxMin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxMin] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Unit): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -460,7 +464,8 @@ object anon {
       __obj.asInstanceOf[Min]
     }
     
-    extension [Self <: Min](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Min] (val x: Self) extends AnyVal {
       
       inline def setMax(value: `20`): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -481,7 +486,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

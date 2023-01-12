@@ -83,7 +83,8 @@ object distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod {
       __obj.asInstanceOf[BrowserHistoryOptions]
     }
     
-    extension [Self <: BrowserHistoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserHistoryOptions] (val x: Self) extends AnyVal {
       
       inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod {
       __obj.asInstanceOf[HashHistoryOptions]
     }
     
-    extension [Self <: HashHistoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashHistoryOptions] (val x: Self) extends AnyVal {
       
       inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
@@ -251,7 +253,8 @@ object distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -280,7 +283,8 @@ object distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod {
       __obj.asInstanceOf[MemoryHistoryOptions]
     }
     
-    extension [Self <: MemoryHistoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryHistoryOptions] (val x: Self) extends AnyVal {
       
       inline def setInitialEntries(value: js.Array[InitialEntry]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
       
@@ -314,7 +318,8 @@ object distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod {
       __obj.asInstanceOf[PartialLocation]
     }
     
-    extension [Self <: PartialLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLocation] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -354,7 +359,8 @@ object distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod {
       __obj.asInstanceOf[PartialPath]
     }
     
-    extension [Self <: PartialPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPath] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -400,7 +406,8 @@ object distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -434,7 +441,8 @@ object distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod {
       __obj.asInstanceOf[Transition]
     }
     
-    extension [Self <: Transition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
       
       inline def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
     }
@@ -459,7 +467,8 @@ object distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod {
       __obj.asInstanceOf[Update]
     }
     
-    extension [Self <: Update](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

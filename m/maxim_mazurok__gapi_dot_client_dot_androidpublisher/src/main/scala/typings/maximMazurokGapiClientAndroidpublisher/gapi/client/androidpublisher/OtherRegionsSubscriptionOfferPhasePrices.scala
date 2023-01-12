@@ -19,7 +19,8 @@ object OtherRegionsSubscriptionOfferPhasePrices {
     __obj.asInstanceOf[OtherRegionsSubscriptionOfferPhasePrices]
   }
   
-  extension [Self <: OtherRegionsSubscriptionOfferPhasePrices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherRegionsSubscriptionOfferPhasePrices] (val x: Self) extends AnyVal {
     
     inline def setEurPrice(value: Money): Self = StObject.set(x, "eurPrice", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object libWellMod {
       __obj.asInstanceOf[WellProps]
     }
     
-    extension [Self <: WellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WellProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object Provider {
     __obj.asInstanceOf[Provider]
   }
   
-  extension [Self <: Provider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
     
     inline def setKeyArn(value: String): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
     

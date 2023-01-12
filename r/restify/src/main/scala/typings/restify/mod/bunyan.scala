@@ -107,7 +107,8 @@ object bunyan {
       __obj.asInstanceOf[RequestCaptureOptions]
     }
     
-    extension [Self <: RequestCaptureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestCaptureOptions] (val x: Self) extends AnyVal {
       
       inline def setDumpDefault(value: Boolean): Self = StObject.set(x, "dumpDefault", value.asInstanceOf[js.Any])
       

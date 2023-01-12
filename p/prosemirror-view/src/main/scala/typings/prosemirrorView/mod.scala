@@ -1250,7 +1250,8 @@ object mod {
       __obj.asInstanceOf[DecorationAttrs]
     }
     
-    extension [Self <: DecorationAttrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecorationAttrs] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -1286,7 +1287,8 @@ object mod {
       __obj.asInstanceOf[DecorationSource]
     }
     
-    extension [Self <: DecorationSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecorationSource] (val x: Self) extends AnyVal {
       
       inline def setMap(value: (Mapping, Node) => DecorationSource): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     }
@@ -1334,7 +1336,8 @@ object mod {
       __obj.asInstanceOf[DirectEditorProps]
     }
     
-    extension [Self <: DirectEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectEditorProps] (val x: Self) extends AnyVal {
       
       inline def setDispatchTransaction(value: /* tr */ Transaction => Unit): Self = StObject.set(x, "dispatchTransaction", js.Any.fromFunction1(value))
       
@@ -1719,7 +1722,8 @@ object mod {
       __obj.asInstanceOf[EditorProps[P]]
     }
     
-    extension [Self <: EditorProps[?], P](x: Self & EditorProps[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorProps[?], P] (val x: Self & EditorProps[P]) extends AnyVal {
       
       inline def setAttributes(
         value: StringDictionary[String] | (js.Function1[/* state */ EditorState, StringDictionary[String]])
@@ -2067,7 +2071,8 @@ object mod {
       __obj.asInstanceOf[NodeView]
     }
     
-    extension [Self <: NodeView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeView] (val x: Self) extends AnyVal {
       
       inline def setContentDOM(value: HTMLElement): Self = StObject.set(x, "contentDOM", value.asInstanceOf[js.Any])
       
@@ -2218,7 +2223,8 @@ object mod {
         __obj.asInstanceOf[typings.prosemirrorView.mod.global.Node]
       }
       
-      extension [Self <: typings.prosemirrorView.mod.global.Node](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.prosemirrorView.mod.global.Node] (val x: Self) extends AnyVal {
         
         inline def setPmViewDesc(value: ViewDesc): Self = StObject.set(x, "pmViewDesc", value.asInstanceOf[js.Any])
         

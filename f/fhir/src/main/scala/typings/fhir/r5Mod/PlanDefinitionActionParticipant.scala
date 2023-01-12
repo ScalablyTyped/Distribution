@@ -56,7 +56,8 @@ object PlanDefinitionActionParticipant {
     __obj.asInstanceOf[PlanDefinitionActionParticipant]
   }
   
-  extension [Self <: PlanDefinitionActionParticipant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanDefinitionActionParticipant] (val x: Self) extends AnyVal {
     
     inline def setActorId(value: String): Self = StObject.set(x, "actorId", value.asInstanceOf[js.Any])
     

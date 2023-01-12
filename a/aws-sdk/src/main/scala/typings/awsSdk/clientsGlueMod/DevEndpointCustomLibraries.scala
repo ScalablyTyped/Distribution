@@ -23,7 +23,8 @@ object DevEndpointCustomLibraries {
     __obj.asInstanceOf[DevEndpointCustomLibraries]
   }
   
-  extension [Self <: DevEndpointCustomLibraries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevEndpointCustomLibraries] (val x: Self) extends AnyVal {
     
     inline def setExtraJarsS3Path(value: GenericString): Self = StObject.set(x, "ExtraJarsS3Path", value.asInstanceOf[js.Any])
     

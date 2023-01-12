@@ -18,7 +18,8 @@ object AwsS3BucketServerSideEncryptionRule {
     __obj.asInstanceOf[AwsS3BucketServerSideEncryptionRule]
   }
   
-  extension [Self <: AwsS3BucketServerSideEncryptionRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketServerSideEncryptionRule] (val x: Self) extends AnyVal {
     
     inline def setApplyServerSideEncryptionByDefault(value: AwsS3BucketServerSideEncryptionByDefault): Self = StObject.set(x, "ApplyServerSideEncryptionByDefault", value.asInstanceOf[js.Any])
     

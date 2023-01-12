@@ -18,7 +18,8 @@ object GetTopLayerElementsResponse {
     __obj.asInstanceOf[GetTopLayerElementsResponse]
   }
   
-  extension [Self <: GetTopLayerElementsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTopLayerElementsResponse] (val x: Self) extends AnyVal {
     
     inline def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     

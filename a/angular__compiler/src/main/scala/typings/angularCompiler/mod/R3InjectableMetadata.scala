@@ -40,7 +40,8 @@ object R3InjectableMetadata {
     __obj.asInstanceOf[R3InjectableMetadata]
   }
   
-  extension [Self <: R3InjectableMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3InjectableMetadata] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[R3DependencyMetadata]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

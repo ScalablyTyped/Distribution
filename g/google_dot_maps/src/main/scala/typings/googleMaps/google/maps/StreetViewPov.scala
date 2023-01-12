@@ -30,7 +30,8 @@ object StreetViewPov {
     __obj.asInstanceOf[StreetViewPov]
   }
   
-  extension [Self <: StreetViewPov](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreetViewPov] (val x: Self) extends AnyVal {
     
     inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     

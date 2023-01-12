@@ -15,7 +15,8 @@ object JsonApiLink {
     __obj.asInstanceOf[JsonApiLink]
   }
   
-  extension [Self <: JsonApiLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonApiLink] (val x: Self) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
   }

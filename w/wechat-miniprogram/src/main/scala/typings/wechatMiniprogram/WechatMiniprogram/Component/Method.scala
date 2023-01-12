@@ -20,7 +20,8 @@ object Method {
     __obj.asInstanceOf[Method[M, TIsPage]]
   }
   
-  extension [Self <: Method[?, ?], M /* <: MethodOption */, TIsPage /* <: Boolean */](x: Self & (Method[M, TIsPage])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Method[?, ?], M /* <: MethodOption */, TIsPage /* <: Boolean */] (val x: Self & (Method[M, TIsPage])) extends AnyVal {
     
     inline def setMethods(
       value: M & (/* import warning: importer.ImportType#apply Failed type conversion: TIsPage extends true ? / * Inlined std.Partial<wechat-miniprogram.WechatMiniprogram.Page.ILifetime> * /

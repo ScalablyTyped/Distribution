@@ -68,7 +68,8 @@ object ImageStoreStatic {
     __obj.asInstanceOf[ImageStoreStatic]
   }
   
-  extension [Self <: ImageStoreStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageStoreStatic] (val x: Self) extends AnyVal {
     
     inline def setAddImageFromBase64(value: (String, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ Any, Unit]) => Unit): Self = StObject.set(x, "addImageFromBase64", js.Any.fromFunction3(value))
     

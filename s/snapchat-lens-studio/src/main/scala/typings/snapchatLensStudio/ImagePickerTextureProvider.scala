@@ -38,7 +38,8 @@ object ImagePickerTextureProvider {
     __obj.asInstanceOf[ImagePickerTextureProvider]
   }
   
-  extension [Self <: ImagePickerTextureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePickerTextureProvider] (val x: Self) extends AnyVal {
     
     inline def setAutoShowImagePicker(value: Boolean): Self = StObject.set(x, "autoShowImagePicker", value.asInstanceOf[js.Any])
     

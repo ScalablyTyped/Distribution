@@ -44,7 +44,8 @@ object EntranceElement {
     __obj.asInstanceOf[EntranceElement]
   }
   
-  extension [Self <: EntranceElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntranceElement] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

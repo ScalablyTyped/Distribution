@@ -23,7 +23,8 @@ object AssociateAttributeGroupResponse {
     __obj.asInstanceOf[AssociateAttributeGroupResponse]
   }
   
-  extension [Self <: AssociateAttributeGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateAttributeGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "applicationArn", value.asInstanceOf[js.Any])
     

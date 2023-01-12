@@ -30,7 +30,8 @@ object IWebXRPlaneDetectorOptions {
     __obj.asInstanceOf[IWebXRPlaneDetectorOptions]
   }
   
-  extension [Self <: IWebXRPlaneDetectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRPlaneDetectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDoNotRemovePlanesOnSessionEnded(value: Boolean): Self = StObject.set(x, "doNotRemovePlanesOnSessionEnded", value.asInstanceOf[js.Any])
     

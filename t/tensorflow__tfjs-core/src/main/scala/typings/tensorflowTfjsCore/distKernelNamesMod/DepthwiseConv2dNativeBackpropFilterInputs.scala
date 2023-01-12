@@ -18,7 +18,8 @@ object DepthwiseConv2dNativeBackpropFilterInputs {
     __obj.asInstanceOf[DepthwiseConv2dNativeBackpropFilterInputs]
   }
   
-  extension [Self <: DepthwiseConv2dNativeBackpropFilterInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthwiseConv2dNativeBackpropFilterInputs] (val x: Self) extends AnyVal {
     
     inline def setDy(value: scala.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     

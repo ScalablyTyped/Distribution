@@ -33,7 +33,8 @@ object ListThemesRequest {
     __obj.asInstanceOf[ListThemesRequest]
   }
   
-  extension [Self <: ListThemesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListThemesRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

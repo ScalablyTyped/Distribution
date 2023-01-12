@@ -38,7 +38,8 @@ object TSDeclareFunction_ {
     __obj.asInstanceOf[TSDeclareFunction_]
   }
   
-  extension [Self <: TSDeclareFunction_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSDeclareFunction_] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

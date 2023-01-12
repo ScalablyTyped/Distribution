@@ -41,7 +41,8 @@ object MapViewTakeScreenshotOptionsArea {
     __obj.asInstanceOf[MapViewTakeScreenshotOptionsArea]
   }
   
-  extension [Self <: MapViewTakeScreenshotOptionsArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapViewTakeScreenshotOptionsArea] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

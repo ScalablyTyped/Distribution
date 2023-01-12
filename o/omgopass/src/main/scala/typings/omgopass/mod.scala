@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[OmgopassOptions]
     }
     
-    extension [Self <: OmgopassOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmgopassOptions] (val x: Self) extends AnyVal {
       
       inline def setConsonants(value: String): Self = StObject.set(x, "consonants", value.asInstanceOf[js.Any])
       

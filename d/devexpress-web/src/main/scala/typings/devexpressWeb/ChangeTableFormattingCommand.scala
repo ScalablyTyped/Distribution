@@ -27,7 +27,8 @@ object ChangeTableFormattingCommand {
     __obj.asInstanceOf[ChangeTableFormattingCommand]
   }
   
-  extension [Self <: ChangeTableFormattingCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeTableFormattingCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: TableFormattingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

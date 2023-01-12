@@ -52,7 +52,8 @@ object PatchDeployment {
     __obj.asInstanceOf[PatchDeployment]
   }
   
-  extension [Self <: PatchDeployment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchDeployment] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofUploadbox {
     __obj.asInstanceOf[TypeofUploadbox]
   }
   
-  extension [Self <: TypeofUploadbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofUploadbox] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Uploadbox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

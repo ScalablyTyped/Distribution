@@ -33,7 +33,8 @@ object MediaStreamSourceStartingRequest {
     __obj.asInstanceOf[MediaStreamSourceStartingRequest]
   }
   
-  extension [Self <: MediaStreamSourceStartingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamSourceStartingRequest] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => MediaStreamSourceStartingRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

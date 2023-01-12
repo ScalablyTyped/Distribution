@@ -17,7 +17,8 @@ object Paused {
     __obj.asInstanceOf[Paused]
   }
   
-  extension [Self <: Paused](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paused] (val x: Self) extends AnyVal {
     
     inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     

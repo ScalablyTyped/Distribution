@@ -66,7 +66,8 @@ object EnvironmentProperties {
     __obj.asInstanceOf[EnvironmentProperties]
   }
   
-  extension [Self <: EnvironmentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentProperties] (val x: Self) extends AnyVal {
     
     inline def setAtmosphereEnabled(value: Boolean): Self = StObject.set(x, "atmosphereEnabled", value.asInstanceOf[js.Any])
     

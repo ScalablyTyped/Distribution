@@ -15,7 +15,8 @@ object GetMediaSession {
     __obj.asInstanceOf[GetMediaSession]
   }
   
-  extension [Self <: GetMediaSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMediaSession] (val x: Self) extends AnyVal {
     
     inline def setGetMediaSession(value: () => GetEstimatedTime): Self = StObject.set(x, "getMediaSession", js.Any.fromFunction0(value))
   }

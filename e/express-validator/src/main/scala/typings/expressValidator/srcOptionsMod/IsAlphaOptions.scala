@@ -15,7 +15,8 @@ object IsAlphaOptions {
     __obj.asInstanceOf[IsAlphaOptions]
   }
   
-  extension [Self <: IsAlphaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsAlphaOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnore(value: String | js.Array[String] | js.RegExp): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     

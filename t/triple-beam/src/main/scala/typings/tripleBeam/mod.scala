@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setColors(value: StringDictionary[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object mod {
       __obj.asInstanceOf[Configs_]
     }
     
-    extension [Self <: Configs_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configs_] (val x: Self) extends AnyVal {
       
       inline def setCli(value: Config): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object KiiMqttInstallationResponse {
     __obj.asInstanceOf[KiiMqttInstallationResponse]
   }
   
-  extension [Self <: KiiMqttInstallationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KiiMqttInstallationResponse] (val x: Self) extends AnyVal {
     
     inline def setInstallationID(value: String): Self = StObject.set(x, "installationID", value.asInstanceOf[js.Any])
     

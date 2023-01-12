@@ -21,7 +21,8 @@ object Xmax {
     __obj.asInstanceOf[Xmax]
   }
   
-  extension [Self <: Xmax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Xmax] (val x: Self) extends AnyVal {
     
     inline def setXmax(value: Double): Self = StObject.set(x, "xmax", value.asInstanceOf[js.Any])
     

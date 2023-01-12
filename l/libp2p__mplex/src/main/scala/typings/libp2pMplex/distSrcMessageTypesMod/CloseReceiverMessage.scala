@@ -21,7 +21,8 @@ object CloseReceiverMessage {
     __obj.asInstanceOf[CloseReceiverMessage]
   }
   
-  extension [Self <: CloseReceiverMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseReceiverMessage] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

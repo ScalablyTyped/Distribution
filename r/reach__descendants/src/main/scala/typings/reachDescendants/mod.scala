@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Descendant[ElementType]]
     }
     
-    extension [Self <: Descendant[?], ElementType](x: Self & Descendant[ElementType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Descendant[?], ElementType] (val x: Self & Descendant[ElementType]) extends AnyVal {
       
       inline def setElement(value: SomeElement[ElementType]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object mod {
       __obj.asInstanceOf[DescendantContextValue[DescendantType]]
     }
     
-    extension [Self <: DescendantContextValue[?], DescendantType /* <: Descendant[HTMLElement] */](x: Self & DescendantContextValue[DescendantType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescendantContextValue[?], DescendantType /* <: Descendant[HTMLElement] */] (val x: Self & DescendantContextValue[DescendantType]) extends AnyVal {
       
       inline def setDescendants(value: js.Array[DescendantType]): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
       

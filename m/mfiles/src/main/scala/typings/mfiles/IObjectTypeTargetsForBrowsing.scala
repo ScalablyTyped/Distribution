@@ -29,7 +29,8 @@ object IObjectTypeTargetsForBrowsing {
     __obj.asInstanceOf[IObjectTypeTargetsForBrowsing]
   }
   
-  extension [Self <: IObjectTypeTargetsForBrowsing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectTypeTargetsForBrowsing] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IObjectTypeTargetForBrowsing) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

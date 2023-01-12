@@ -77,7 +77,8 @@ object Timing {
     __obj.asInstanceOf[Timing]
   }
   
-  extension [Self <: Timing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timing] (val x: Self) extends AnyVal {
     
     inline def setAccelerate(value: Double): Self = StObject.set(x, "Accelerate", value.asInstanceOf[js.Any])
     

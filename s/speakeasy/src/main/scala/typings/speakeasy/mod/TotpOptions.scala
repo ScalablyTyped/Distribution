@@ -68,7 +68,8 @@ object TotpOptions {
     __obj.asInstanceOf[TotpOptions]
   }
   
-  extension [Self <: TotpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TotpOptions] (val x: Self) extends AnyVal {
     
     inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     

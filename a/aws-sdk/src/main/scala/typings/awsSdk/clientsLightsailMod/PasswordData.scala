@@ -23,7 +23,8 @@ object PasswordData {
     __obj.asInstanceOf[PasswordData]
   }
   
-  extension [Self <: PasswordData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordData] (val x: Self) extends AnyVal {
     
     inline def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     

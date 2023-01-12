@@ -19,7 +19,8 @@ object AchievementResetMultipleForAllRequest {
     __obj.asInstanceOf[AchievementResetMultipleForAllRequest]
   }
   
-  extension [Self <: AchievementResetMultipleForAllRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AchievementResetMultipleForAllRequest] (val x: Self) extends AnyVal {
     
     inline def setAchievement_ids(value: js.Array[String]): Self = StObject.set(x, "achievement_ids", value.asInstanceOf[js.Any])
     

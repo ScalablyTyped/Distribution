@@ -65,7 +65,8 @@ object MatterBodyRenderConfig {
     __obj.asInstanceOf[MatterBodyRenderConfig]
   }
   
-  extension [Self <: MatterBodyRenderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatterBodyRenderConfig] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: Double): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

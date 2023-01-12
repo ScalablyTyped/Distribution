@@ -16,7 +16,8 @@ object CompareWith {
     __obj.asInstanceOf[CompareWith]
   }
   
-  extension [Self <: CompareWith](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompareWith] (val x: Self) extends AnyVal {
     
     inline def setCompareWith(value: compareWith): Self = StObject.set(x, "compareWith", value.asInstanceOf[js.Any])
   }

@@ -36,7 +36,8 @@ object NamespaceType {
     __obj.asInstanceOf[NamespaceType]
   }
   
-  extension [Self <: NamespaceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamespaceType] (val x: Self) extends AnyVal {
     
     inline def setInheritance(value: Null): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
     

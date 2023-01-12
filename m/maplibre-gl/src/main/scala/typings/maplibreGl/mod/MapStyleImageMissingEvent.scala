@@ -22,7 +22,8 @@ object MapStyleImageMissingEvent {
     __obj.asInstanceOf[MapStyleImageMissingEvent]
   }
   
-  extension [Self <: MapStyleImageMissingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapStyleImageMissingEvent] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

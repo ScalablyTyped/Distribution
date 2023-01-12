@@ -105,7 +105,8 @@ object CellPropertiesFont {
     __obj.asInstanceOf[CellPropertiesFont]
   }
   
-  extension [Self <: CellPropertiesFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellPropertiesFont] (val x: Self) extends AnyVal {
     
     inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object EscapeCharacterSet {
     __obj.asInstanceOf[EscapeCharacterSet]
   }
   
-  extension [Self <: EscapeCharacterSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EscapeCharacterSet] (val x: Self) extends AnyVal {
     
     inline def setKind(value: digit | space | word): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

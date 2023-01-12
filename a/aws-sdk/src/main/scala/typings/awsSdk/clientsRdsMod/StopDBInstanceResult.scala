@@ -15,7 +15,8 @@ object StopDBInstanceResult {
     __obj.asInstanceOf[StopDBInstanceResult]
   }
   
-  extension [Self <: StopDBInstanceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopDBInstanceResult] (val x: Self) extends AnyVal {
     
     inline def setDBInstance(value: DBInstance): Self = StObject.set(x, "DBInstance", value.asInstanceOf[js.Any])
     

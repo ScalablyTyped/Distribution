@@ -56,7 +56,8 @@ object libTypescriptContextRefContextMod {
       __obj.asInstanceOf[RefContextValue[T]]
     }
     
-    extension [Self <: RefContextValue[?], T](x: Self & RefContextValue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefContextValue[?], T] (val x: Self & RefContextValue[T]) extends AnyVal {
       
       inline def setAnimationConfigRef(value: MutableRefObject[WithSpringConfig]): Self = StObject.set(x, "animationConfigRef", value.asInstanceOf[js.Any])
       

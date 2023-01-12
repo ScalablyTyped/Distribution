@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[DecodeArgs]
     }
     
-    extension [Self <: DecodeArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeArgs] (val x: Self) extends AnyVal {
       
       inline def setPacket(value: Buffer): Self = StObject.set(x, "packet", value.asInstanceOf[js.Any])
     }
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[DecodeArgsWithSecret]
     }
     
-    extension [Self <: DecodeArgsWithSecret](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeArgsWithSecret] (val x: Self) extends AnyVal {
       
       inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
@@ -96,7 +98,8 @@ object mod {
       __obj.asInstanceOf[EncodeArgs]
     }
     
-    extension [Self <: EncodeArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeArgs] (val x: Self) extends AnyVal {
       
       inline def setAdd_message_authenticator(value: Boolean): Self = StObject.set(x, "add_message_authenticator", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object mod {
       __obj.asInstanceOf[EncodeResponseArgs]
     }
     
-    extension [Self <: EncodeResponseArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeResponseArgs] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -175,7 +179,8 @@ object mod {
       __obj.asInstanceOf[RadiusPacket]
     }
     
-    extension [Self <: RadiusPacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadiusPacket] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -209,7 +214,8 @@ object mod {
       __obj.asInstanceOf[VerifyResponseArgs]
     }
     
-    extension [Self <: VerifyResponseArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyResponseArgs] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: Buffer): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       

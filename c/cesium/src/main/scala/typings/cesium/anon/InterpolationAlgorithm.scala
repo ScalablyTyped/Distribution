@@ -17,7 +17,8 @@ object InterpolationAlgorithm {
     __obj.asInstanceOf[InterpolationAlgorithm]
   }
   
-  extension [Self <: InterpolationAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolationAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setInterpolationAlgorithm(value: typings.cesium.mod.InterpolationAlgorithm): Self = StObject.set(x, "interpolationAlgorithm", value.asInstanceOf[js.Any])
     

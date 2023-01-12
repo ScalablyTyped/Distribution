@@ -37,7 +37,8 @@ object OauthtokenPqlQuery {
     __obj.asInstanceOf[OauthtokenPqlQuery]
   }
   
-  extension [Self <: OauthtokenPqlQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OauthtokenPqlQuery] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object TypeoftapScriptSig {
     __obj.asInstanceOf[TypeoftapScriptSig]
   }
   
-  extension [Self <: TypeoftapScriptSig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeoftapScriptSig] (val x: Self) extends AnyVal {
     
     inline def setCanAddToArray(value: (js.Array[TapScriptSig], TapScriptSig, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     

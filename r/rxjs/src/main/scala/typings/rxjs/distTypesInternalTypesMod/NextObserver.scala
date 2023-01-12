@@ -23,7 +23,8 @@ object NextObserver {
     __obj.asInstanceOf[NextObserver[T]]
   }
   
-  extension [Self <: NextObserver[?], T](x: Self & NextObserver[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextObserver[?], T] (val x: Self & NextObserver[T]) extends AnyVal {
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     

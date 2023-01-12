@@ -37,7 +37,8 @@ object WorksheetSearchCriteria {
     __obj.asInstanceOf[WorksheetSearchCriteria]
   }
   
-  extension [Self <: WorksheetSearchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetSearchCriteria] (val x: Self) extends AnyVal {
     
     inline def setCompleteMatch(value: Boolean): Self = StObject.set(x, "completeMatch", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object OptimizationObjective {
     __obj.asInstanceOf[OptimizationObjective]
   }
   
-  extension [Self <: OptimizationObjective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimizationObjective] (val x: Self) extends AnyVal {
     
     inline def setItemAttribute(value: ItemAttribute): Self = StObject.set(x, "itemAttribute", value.asInstanceOf[js.Any])
     

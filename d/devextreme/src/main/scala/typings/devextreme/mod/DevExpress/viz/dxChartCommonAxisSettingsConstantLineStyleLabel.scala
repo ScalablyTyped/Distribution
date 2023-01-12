@@ -29,7 +29,8 @@ object dxChartCommonAxisSettingsConstantLineStyleLabel {
     __obj.asInstanceOf[dxChartCommonAxisSettingsConstantLineStyleLabel]
   }
   
-  extension [Self <: dxChartCommonAxisSettingsConstantLineStyleLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartCommonAxisSettingsConstantLineStyleLabel] (val x: Self) extends AnyVal {
     
     inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

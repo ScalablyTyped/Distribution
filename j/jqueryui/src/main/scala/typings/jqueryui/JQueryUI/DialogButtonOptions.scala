@@ -25,7 +25,8 @@ object DialogButtonOptions {
     __obj.asInstanceOf[DialogButtonOptions]
   }
   
-  extension [Self <: DialogButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: /* eventObject */ JQueryEventObject => Any): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     

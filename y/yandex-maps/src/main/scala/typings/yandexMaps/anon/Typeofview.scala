@@ -31,7 +31,8 @@ object Typeofview {
     __obj.asInstanceOf[Typeofview]
   }
   
-  extension [Self <: Typeofview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofview] (val x: Self) extends AnyVal {
     
     inline def setEdge(value: Instantiable0[Edge]): Self = StObject.set(x, "Edge", value.asInstanceOf[js.Any])
     

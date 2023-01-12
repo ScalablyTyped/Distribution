@@ -19,7 +19,8 @@ object ApigatewayApiConfigFile {
     __obj.asInstanceOf[ApigatewayApiConfigFile]
   }
   
-  extension [Self <: ApigatewayApiConfigFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApigatewayApiConfigFile] (val x: Self) extends AnyVal {
     
     inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

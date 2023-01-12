@@ -72,7 +72,8 @@ object ISCEService {
     __obj.asInstanceOf[ISCEService]
   }
   
-  extension [Self <: ISCEService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISCEService] (val x: Self) extends AnyVal {
     
     inline def setGetTrusted(value: (String, Any) => Any): Self = StObject.set(x, "getTrusted", js.Any.fromFunction2(value))
     

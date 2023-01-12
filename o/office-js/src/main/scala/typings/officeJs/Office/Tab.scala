@@ -54,7 +54,8 @@ object Tab {
     __obj.asInstanceOf[Tab]
   }
   
-  extension [Self <: Tab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
     
     inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     

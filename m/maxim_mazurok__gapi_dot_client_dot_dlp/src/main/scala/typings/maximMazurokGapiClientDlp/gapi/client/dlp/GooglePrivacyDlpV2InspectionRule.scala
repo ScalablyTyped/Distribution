@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2InspectionRule {
     __obj.asInstanceOf[GooglePrivacyDlpV2InspectionRule]
   }
   
-  extension [Self <: GooglePrivacyDlpV2InspectionRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2InspectionRule] (val x: Self) extends AnyVal {
     
     inline def setExclusionRule(value: GooglePrivacyDlpV2ExclusionRule): Self = StObject.set(x, "exclusionRule", value.asInstanceOf[js.Any])
     

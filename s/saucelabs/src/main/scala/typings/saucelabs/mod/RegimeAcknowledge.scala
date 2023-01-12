@@ -22,7 +22,8 @@ object RegimeAcknowledge {
     __obj.asInstanceOf[RegimeAcknowledge]
   }
   
-  extension [Self <: RegimeAcknowledge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegimeAcknowledge] (val x: Self) extends AnyVal {
     
     inline def setMetric_names(value: js.Array[String]): Self = StObject.set(x, "metric_names", value.asInstanceOf[js.Any])
     

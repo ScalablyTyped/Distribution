@@ -18,7 +18,8 @@ object SuccessResp {
     __obj.asInstanceOf[SuccessResp]
   }
   
-  extension [Self <: SuccessResp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuccessResp] (val x: Self) extends AnyVal {
     
     inline def setEmail_id_list(value: js.Array[String]): Self = StObject.set(x, "email_id_list", value.asInstanceOf[js.Any])
     

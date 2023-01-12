@@ -26,7 +26,8 @@ object GetParametersQueryOrderPagePerpage {
     __obj.asInstanceOf[GetParametersQueryOrderPagePerpage]
   }
   
-  extension [Self <: GetParametersQueryOrderPagePerpage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersQueryOrderPagePerpage] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQueryOrderPagePerpage): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object WriteSegmentRequest {
     __obj.asInstanceOf[WriteSegmentRequest]
   }
   
-  extension [Self <: WriteSegmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteSegmentRequest] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: SegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

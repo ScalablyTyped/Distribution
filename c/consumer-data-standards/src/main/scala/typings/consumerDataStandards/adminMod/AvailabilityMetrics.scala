@@ -26,7 +26,8 @@ object AvailabilityMetrics {
     __obj.asInstanceOf[AvailabilityMetrics]
   }
   
-  extension [Self <: AvailabilityMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailabilityMetrics] (val x: Self) extends AnyVal {
     
     inline def setCurrentMonth(value: Double): Self = StObject.set(x, "currentMonth", value.asInstanceOf[js.Any])
     

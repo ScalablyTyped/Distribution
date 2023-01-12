@@ -78,7 +78,8 @@ object StreamingImage {
     __obj.asInstanceOf[StreamingImage]
   }
   
-  extension [Self <: StreamingImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingImage] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

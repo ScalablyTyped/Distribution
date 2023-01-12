@@ -102,7 +102,8 @@ object NotValidatedToastProps {
     __obj.asInstanceOf[NotValidatedToastProps]
   }
   
-  extension [Self <: NotValidatedToastProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotValidatedToastProps] (val x: Self) extends AnyVal {
     
     inline def setAutoClose(value: Double | `false`): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     

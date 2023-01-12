@@ -43,7 +43,8 @@ object distBrokerNativeBrokerNativeResponseMod {
       __obj.asInstanceOf[MATS]
     }
     
-    extension [Self <: MATS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MATS] (val x: Self) extends AnyVal {
       
       inline def setAccount_join_on_end(value: String): Self = StObject.set(x, "account_join_on_end", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object distBrokerNativeBrokerNativeResponseMod {
       __obj.asInstanceOf[NativeAccountInfo]
     }
     
-    extension [Self <: NativeAccountInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeAccountInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object distBrokerNativeBrokerNativeResponseMod {
       __obj.asInstanceOf[NativeResponse]
     }
     
-    extension [Self <: NativeResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeResponse] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -205,7 +208,8 @@ object distBrokerNativeBrokerNativeResponseMod {
       __obj.asInstanceOf[NativeResponseProperties]
     }
     
-    extension [Self <: NativeResponseProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeResponseProperties] (val x: Self) extends AnyVal {
       
       inline def setMATS(value: String): Self = StObject.set(x, "MATS", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object DepthToSpaceAttrs {
     __obj.asInstanceOf[DepthToSpaceAttrs]
   }
   
-  extension [Self <: DepthToSpaceAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthToSpaceAttrs] (val x: Self) extends AnyVal {
     
     inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
     

@@ -125,7 +125,8 @@ object distUtilJsonSerializerMod {
       __obj.asInstanceOf[SerializeOptions]
     }
     
-    extension [Self <: SerializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializeOptions] (val x: Self) extends AnyVal {
       
       inline def setDumpSchemaContents(value: Boolean): Self = StObject.set(x, "dumpSchemaContents", value.asInstanceOf[js.Any])
       

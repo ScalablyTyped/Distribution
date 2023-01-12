@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[FadeBackground]
     }
     
-    extension [Self <: FadeBackground](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FadeBackground] (val x: Self) extends AnyVal {
       
       inline def setFadeBackground(value: Boolean): Self = StObject.set(x, "fadeBackground", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Percentage]
     }
     
-    extension [Self <: Percentage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Percentage] (val x: Self) extends AnyVal {
       
       inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object anon {
       __obj.asInstanceOf[ToSections]
     }
     
-    extension [Self <: ToSections](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToSections] (val x: Self) extends AnyVal {
       
       inline def setToSections(value: () => Unit): Self = StObject.set(x, "toSections", js.Any.fromFunction0(value))
       

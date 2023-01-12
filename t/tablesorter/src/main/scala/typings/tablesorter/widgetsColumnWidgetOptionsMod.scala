@@ -30,7 +30,8 @@ object widgetsColumnWidgetOptionsMod {
       __obj.asInstanceOf[ColumnOptions]
     }
     
-    extension [Self <: ColumnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnOptions] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

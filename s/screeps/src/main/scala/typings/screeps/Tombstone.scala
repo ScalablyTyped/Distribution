@@ -59,7 +59,8 @@ object Tombstone {
     __obj.asInstanceOf[Tombstone]
   }
   
-  extension [Self <: Tombstone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tombstone] (val x: Self) extends AnyVal {
     
     inline def setCreep(value: AnyCreep): Self = StObject.set(x, "creep", value.asInstanceOf[js.Any])
     

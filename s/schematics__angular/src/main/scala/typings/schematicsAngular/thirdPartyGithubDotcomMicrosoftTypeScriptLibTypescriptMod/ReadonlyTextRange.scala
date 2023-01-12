@@ -17,7 +17,8 @@ object ReadonlyTextRange {
     __obj.asInstanceOf[ReadonlyTextRange]
   }
   
-  extension [Self <: ReadonlyTextRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyTextRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

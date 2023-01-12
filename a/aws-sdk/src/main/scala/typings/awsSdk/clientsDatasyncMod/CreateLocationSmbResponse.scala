@@ -18,7 +18,8 @@ object CreateLocationSmbResponse {
     __obj.asInstanceOf[CreateLocationSmbResponse]
   }
   
-  extension [Self <: CreateLocationSmbResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLocationSmbResponse] (val x: Self) extends AnyVal {
     
     inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     

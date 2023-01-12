@@ -24,7 +24,8 @@ object Card {
     __obj.asInstanceOf[Card]
   }
   
-  extension [Self <: Card](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
     
     inline def setCard(value: (BulmaComponent[js.Object, div]) & Title): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
     

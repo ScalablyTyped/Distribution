@@ -88,7 +88,8 @@ object distNodeEsmSrcCoreUtilTreeMod {
       __obj.asInstanceOf[TreeNode[T]]
     }
     
-    extension [Self <: TreeNode[?], T](x: Self & TreeNode[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeNode[?], T] (val x: Self & TreeNode[T]) extends AnyVal {
       
       inline def setChildCount(value: Double): Self = StObject.set(x, "childCount", value.asInstanceOf[js.Any])
       

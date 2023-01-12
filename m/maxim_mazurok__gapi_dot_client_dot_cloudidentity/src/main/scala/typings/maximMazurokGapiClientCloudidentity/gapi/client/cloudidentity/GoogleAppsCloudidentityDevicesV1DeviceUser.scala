@@ -46,7 +46,8 @@ object GoogleAppsCloudidentityDevicesV1DeviceUser {
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1DeviceUser]
   }
   
-  extension [Self <: GoogleAppsCloudidentityDevicesV1DeviceUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1DeviceUser] (val x: Self) extends AnyVal {
     
     inline def setCompromisedState(value: String): Self = StObject.set(x, "compromisedState", value.asInstanceOf[js.Any])
     

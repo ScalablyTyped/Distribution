@@ -26,7 +26,8 @@ object NamedBackreference {
     __obj.asInstanceOf[NamedBackreference]
   }
   
-  extension [Self <: NamedBackreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedBackreference] (val x: Self) extends AnyVal {
     
     inline def setKind(value: name): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

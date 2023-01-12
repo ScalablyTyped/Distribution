@@ -23,7 +23,8 @@ object GooglePrivacyDlpV2FileSet {
     __obj.asInstanceOf[GooglePrivacyDlpV2FileSet]
   }
   
-  extension [Self <: GooglePrivacyDlpV2FileSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2FileSet] (val x: Self) extends AnyVal {
     
     inline def setRegexFileSet(value: GooglePrivacyDlpV2CloudStorageRegexFileSet): Self = StObject.set(x, "regexFileSet", value.asInstanceOf[js.Any])
     

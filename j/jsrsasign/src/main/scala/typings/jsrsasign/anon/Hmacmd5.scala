@@ -128,7 +128,8 @@ object Hmacmd5 {
     __obj.asInstanceOf[Hmacmd5]
   }
   
-  extension [Self <: Hmacmd5](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hmacmd5] (val x: Self) extends AnyVal {
     
     inline def setHmacmd5(value: String): Self = StObject.set(x, "hmacmd5", value.asInstanceOf[js.Any])
     

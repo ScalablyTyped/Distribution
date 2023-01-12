@@ -39,7 +39,8 @@ object ConditionalDataBarPositiveFormatUpdateData {
     __obj.asInstanceOf[ConditionalDataBarPositiveFormatUpdateData]
   }
   
-  extension [Self <: ConditionalDataBarPositiveFormatUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalDataBarPositiveFormatUpdateData] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Firebasescreen {
     __obj.asInstanceOf[Firebasescreen]
   }
   
-  extension [Self <: Firebasescreen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Firebasescreen] (val x: Self) extends AnyVal {
     
     inline def setFirebase_screen(value: String): Self = StObject.set(x, "firebase_screen", value.asInstanceOf[js.Any])
     

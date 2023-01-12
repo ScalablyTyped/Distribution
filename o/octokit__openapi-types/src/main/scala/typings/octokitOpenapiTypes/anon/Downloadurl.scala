@@ -40,7 +40,8 @@ object Downloadurl {
     __obj.asInstanceOf[Downloadurl]
   }
   
-  extension [Self <: Downloadurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Downloadurl] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

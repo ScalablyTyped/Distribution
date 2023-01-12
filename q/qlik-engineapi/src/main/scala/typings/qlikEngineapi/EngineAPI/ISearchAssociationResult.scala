@@ -49,7 +49,8 @@ object ISearchAssociationResult {
     __obj.asInstanceOf[ISearchAssociationResult]
   }
   
-  extension [Self <: ISearchAssociationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchAssociationResult] (val x: Self) extends AnyVal {
     
     inline def setQFieldDictionaries(value: js.Array[ISearchFieldDictionary]): Self = StObject.set(x, "qFieldDictionaries", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object typesAppBarActionMod {
       __obj.asInstanceOf[AppBarActionProps]
     }
     
-    extension [Self <: AppBarActionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppBarActionProps] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       

@@ -67,7 +67,8 @@ object Worker2 {
     __obj.asInstanceOf[Worker2]
   }
   
-  extension [Self <: Worker2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Worker2] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: () => js.Promise[PoolExitResult]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     

@@ -270,7 +270,8 @@ object mod {
       __obj.asInstanceOf[AnnotationOptions]
     }
     
-    extension [Self <: AnnotationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationOptions] (val x: Self) extends AnyVal {
       
       inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
@@ -322,7 +323,8 @@ object mod {
       __obj.asInstanceOf[ImageOptions]
     }
     
-    extension [Self <: ImageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: LiteralUnion[auto, Double | String]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

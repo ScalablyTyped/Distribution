@@ -23,7 +23,8 @@ object InstancingData {
     __obj.asInstanceOf[InstancingData]
   }
   
-  extension [Self <: InstancingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancingData] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

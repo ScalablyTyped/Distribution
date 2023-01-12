@@ -35,7 +35,8 @@ object ChatMessageNotificationTriggerDetails {
     __obj.asInstanceOf[ChatMessageNotificationTriggerDetails]
   }
   
-  extension [Self <: ChatMessageNotificationTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessageNotificationTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setChatMessage(value: ChatMessage): Self = StObject.set(x, "chatMessage", value.asInstanceOf[js.Any])
     

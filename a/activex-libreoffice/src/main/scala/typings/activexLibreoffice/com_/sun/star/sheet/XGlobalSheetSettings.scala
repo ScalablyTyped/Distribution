@@ -119,7 +119,8 @@ object XGlobalSheetSettings {
     __obj.asInstanceOf[XGlobalSheetSettings]
   }
   
-  extension [Self <: XGlobalSheetSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGlobalSheetSettings] (val x: Self) extends AnyVal {
     
     inline def setDoAutoComplete(value: Boolean): Self = StObject.set(x, "DoAutoComplete", value.asInstanceOf[js.Any])
     

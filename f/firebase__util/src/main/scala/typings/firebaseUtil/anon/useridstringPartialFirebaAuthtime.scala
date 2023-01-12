@@ -46,7 +46,8 @@ object useridstringPartialFirebaAuthtime {
     __obj.asInstanceOf[useridstringPartialFirebaAuthtime]
   }
   
-  extension [Self <: useridstringPartialFirebaAuthtime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: useridstringPartialFirebaAuthtime] (val x: Self) extends AnyVal {
     
     inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
     

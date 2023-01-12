@@ -23,7 +23,8 @@ object ClassicLinkDnsSupport {
     __obj.asInstanceOf[ClassicLinkDnsSupport]
   }
   
-  extension [Self <: ClassicLinkDnsSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassicLinkDnsSupport] (val x: Self) extends AnyVal {
     
     inline def setClassicLinkDnsSupported(value: Boolean): Self = StObject.set(x, "ClassicLinkDnsSupported", value.asInstanceOf[js.Any])
     

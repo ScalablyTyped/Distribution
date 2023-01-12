@@ -102,7 +102,8 @@ object DateRangePickerInputControllerShape {
     __obj.asInstanceOf[DateRangePickerInputControllerShape]
   }
   
-  extension [Self <: DateRangePickerInputControllerShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateRangePickerInputControllerShape] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

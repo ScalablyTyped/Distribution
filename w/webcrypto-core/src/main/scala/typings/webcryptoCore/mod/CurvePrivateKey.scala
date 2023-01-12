@@ -28,7 +28,8 @@ object CurvePrivateKey {
     __obj.asInstanceOf[CurvePrivateKey]
   }
   
-  extension [Self <: CurvePrivateKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurvePrivateKey] (val x: Self) extends AnyVal {
     
     inline def setD(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
   }

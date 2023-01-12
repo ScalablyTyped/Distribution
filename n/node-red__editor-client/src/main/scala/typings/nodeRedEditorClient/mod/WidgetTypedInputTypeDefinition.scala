@@ -31,7 +31,8 @@ object WidgetTypedInputTypeDefinition {
     __obj.asInstanceOf[WidgetTypedInputTypeDefinition]
   }
   
-  extension [Self <: WidgetTypedInputTypeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetTypedInputTypeDefinition] (val x: Self) extends AnyVal {
     
     inline def setHasValue(value: Boolean): Self = StObject.set(x, "hasValue", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object SsmDocument {
     __obj.asInstanceOf[SsmDocument]
   }
   
-  extension [Self <: SsmDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsmDocument] (val x: Self) extends AnyVal {
     
     inline def setActionName(value: BoundedString): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     

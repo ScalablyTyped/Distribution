@@ -19,7 +19,8 @@ object LaneSet {
     __obj.asInstanceOf[LaneSet]
   }
   
-  extension [Self <: LaneSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaneSet] (val x: Self) extends AnyVal {
     
     inline def setLanes(value: js.Array[Lane]): Self = StObject.set(x, "lanes", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object EndpointsApiService {
     __obj.asInstanceOf[EndpointsApiService]
   }
   
-  extension [Self <: EndpointsApiService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointsApiService] (val x: Self) extends AnyVal {
     
     inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,8 @@ object UpdateServiceRequest {
     __obj.asInstanceOf[UpdateServiceRequest]
   }
   
-  extension [Self <: UpdateServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = StObject.set(x, "capacityProviderStrategy", value.asInstanceOf[js.Any])
     

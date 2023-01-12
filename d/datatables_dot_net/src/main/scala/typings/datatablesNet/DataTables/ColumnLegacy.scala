@@ -92,7 +92,8 @@ object ColumnLegacy {
     __obj.asInstanceOf[ColumnLegacy]
   }
   
-  extension [Self <: ColumnLegacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnLegacy] (val x: Self) extends AnyVal {
     
     inline def setADataSort(value: Any): Self = StObject.set(x, "aDataSort", value.asInstanceOf[js.Any])
     

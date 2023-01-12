@@ -31,7 +31,8 @@ object Recordreplaceprependappen {
     __obj.asInstanceOf[Recordreplaceprependappen]
   }
   
-  extension [Self <: Recordreplaceprependappen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recordreplaceprependappen] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
     

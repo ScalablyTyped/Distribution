@@ -18,7 +18,8 @@ object CodeSigningPolicies {
     __obj.asInstanceOf[CodeSigningPolicies]
   }
   
-  extension [Self <: CodeSigningPolicies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeSigningPolicies] (val x: Self) extends AnyVal {
     
     inline def setUntrustedArtifactOnDeployment(value: CodeSigningPolicy): Self = StObject.set(x, "UntrustedArtifactOnDeployment", value.asInstanceOf[js.Any])
     

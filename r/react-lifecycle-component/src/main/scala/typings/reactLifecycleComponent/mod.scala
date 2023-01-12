@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[LifecycleStateProps[P, S]]
     }
     
-    extension [Self <: LifecycleStateProps[?, ?], P, S](x: Self & (LifecycleStateProps[P, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LifecycleStateProps[?, ?], P, S] (val x: Self & (LifecycleStateProps[P, S])) extends AnyVal {
       
       inline def setComponent(value: ComponentClass[P, S]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }

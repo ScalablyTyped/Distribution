@@ -23,7 +23,8 @@ object AdminListDevicesResponse {
     __obj.asInstanceOf[AdminListDevicesResponse]
   }
   
-  extension [Self <: AdminListDevicesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminListDevicesResponse] (val x: Self) extends AnyVal {
     
     inline def setDevices(value: DeviceListType): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
     

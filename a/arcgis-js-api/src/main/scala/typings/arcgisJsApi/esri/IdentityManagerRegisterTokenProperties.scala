@@ -48,7 +48,8 @@ object IdentityManagerRegisterTokenProperties {
     __obj.asInstanceOf[IdentityManagerRegisterTokenProperties]
   }
   
-  extension [Self <: IdentityManagerRegisterTokenProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityManagerRegisterTokenProperties] (val x: Self) extends AnyVal {
     
     inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     

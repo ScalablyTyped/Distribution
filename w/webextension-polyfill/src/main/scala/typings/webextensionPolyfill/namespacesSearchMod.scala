@@ -34,7 +34,8 @@ object namespacesSearchMod {
         __obj.asInstanceOf[SearchEngine]
       }
       
-      extension [Self <: SearchEngine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchEngine] (val x: Self) extends AnyVal {
         
         inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
         
@@ -76,7 +77,8 @@ object namespacesSearchMod {
         __obj.asInstanceOf[SearchSearchPropertiesType]
       }
       
-      extension [Self <: SearchSearchPropertiesType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchSearchPropertiesType] (val x: Self) extends AnyVal {
         
         inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
         
@@ -113,7 +115,8 @@ object namespacesSearchMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setGet(value: () => js.Promise[js.Array[SearchEngine]]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         

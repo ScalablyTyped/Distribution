@@ -25,7 +25,8 @@ object SMTPError {
     __obj.asInstanceOf[SMTPError]
   }
   
-  extension [Self <: SMTPError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SMTPError] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

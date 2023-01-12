@@ -22,7 +22,8 @@ object AttendanceInterval {
     __obj.asInstanceOf[AttendanceInterval]
   }
   
-  extension [Self <: AttendanceInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttendanceInterval] (val x: Self) extends AnyVal {
     
     inline def setDurationInSeconds(value: NullableOption[Double]): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
     

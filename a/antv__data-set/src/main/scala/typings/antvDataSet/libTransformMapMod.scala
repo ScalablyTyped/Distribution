@@ -17,7 +17,8 @@ object libTransformMapMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* item */ Any, /* index */ Double, /* arr */ js.Array[Any]) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
       

@@ -24,7 +24,8 @@ object PlotTreemapBreadcrumbsEventsOptions {
     __obj.asInstanceOf[PlotTreemapBreadcrumbsEventsOptions]
   }
   
-  extension [Self <: PlotTreemapBreadcrumbsEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreemapBreadcrumbsEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: (/* event */ Event, /* options */ BreadcrumbOptions, /* e */ Event) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction3(value))
     

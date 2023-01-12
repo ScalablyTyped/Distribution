@@ -18,7 +18,8 @@ object CreateResourceGroupRequest {
     __obj.asInstanceOf[CreateResourceGroupRequest]
   }
   
-  extension [Self <: CreateResourceGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResourceGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceGroupTags(value: ResourceGroupTags): Self = StObject.set(x, "resourceGroupTags", value.asInstanceOf[js.Any])
     

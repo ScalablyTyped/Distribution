@@ -19,7 +19,8 @@ object NativeContentPositionAssignedTargetingOptionDetails {
     __obj.asInstanceOf[NativeContentPositionAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: NativeContentPositionAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeContentPositionAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setContentPosition(value: String): Self = StObject.set(x, "contentPosition", value.asInstanceOf[js.Any])
     

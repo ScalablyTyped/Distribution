@@ -23,7 +23,8 @@ object GridGapProps {
     __obj.asInstanceOf[GridGapProps[ThemeType, TVal]]
   }
   
-  extension [Self <: GridGapProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (GridGapProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridGapProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (GridGapProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setGridGap(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
     

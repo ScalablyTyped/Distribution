@@ -34,7 +34,8 @@ object Pixel {
     __obj.asInstanceOf[Pixel]
   }
   
-  extension [Self <: Pixel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pixel] (val x: Self) extends AnyVal {
     
     inline def setEquals_(value: Pixel => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     

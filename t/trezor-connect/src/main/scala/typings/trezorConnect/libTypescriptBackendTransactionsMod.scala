@@ -60,7 +60,8 @@ object libTypescriptBackendTransactionsMod {
       __obj.asInstanceOf[BlockbookTransaction]
     }
     
-    extension [Self <: BlockbookTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockbookTransaction] (val x: Self) extends AnyVal {
       
       inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object libTypescriptBackendTransactionsMod {
       __obj.asInstanceOf[RippleLibAdjustment]
     }
     
-    extension [Self <: RippleLibAdjustment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleLibAdjustment] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object libTypescriptBackendTransactionsMod {
       __obj.asInstanceOf[RippleLibAmount]
     }
     
-    extension [Self <: RippleLibAmount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleLibAmount] (val x: Self) extends AnyVal {
       
       inline def setCounterparty(value: String): Self = StObject.set(x, "counterparty", value.asInstanceOf[js.Any])
       
@@ -185,7 +188,8 @@ object libTypescriptBackendTransactionsMod {
       __obj.asInstanceOf[RippleLibMemo]
     }
     
-    extension [Self <: RippleLibMemo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleLibMemo] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -231,7 +235,8 @@ object libTypescriptBackendTransactionsMod {
       __obj.asInstanceOf[RippleLibOutcome]
     }
     
-    extension [Self <: RippleLibOutcome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleLibOutcome] (val x: Self) extends AnyVal {
       
       inline def setBalanceChanges(value: StringDictionary[js.Array[RippleLibAmount]]): Self = StObject.set(x, "balanceChanges", value.asInstanceOf[js.Any])
       
@@ -280,7 +285,8 @@ object libTypescriptBackendTransactionsMod {
       __obj.asInstanceOf[RippleLibTransaction]
     }
     
-    extension [Self <: RippleLibTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleLibTransaction] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -343,7 +349,8 @@ object libTypescriptBackendTransactionsMod {
       __obj.asInstanceOf[VinVout]
     }
     
-    extension [Self <: VinVout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VinVout] (val x: Self) extends AnyVal {
       
       inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       

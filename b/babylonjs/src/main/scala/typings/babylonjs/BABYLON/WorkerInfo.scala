@@ -23,7 +23,8 @@ object WorkerInfo {
     __obj.asInstanceOf[WorkerInfo]
   }
   
-  extension [Self <: WorkerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerInfo] (val x: Self) extends AnyVal {
     
     inline def setIdle(value: Boolean): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     

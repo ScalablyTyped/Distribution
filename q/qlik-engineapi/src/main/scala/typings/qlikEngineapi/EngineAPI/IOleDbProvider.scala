@@ -32,7 +32,8 @@ object IOleDbProvider {
     __obj.asInstanceOf[IOleDbProvider]
   }
   
-  extension [Self <: IOleDbProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOleDbProvider] (val x: Self) extends AnyVal {
     
     inline def setQBit32(value: Boolean): Self = StObject.set(x, "qBit32", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAutoCommands(value: String): Self = StObject.set(x, "autoCommands", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object mod {
       __obj.asInstanceOf[MathField]
     }
     
-    extension [Self <: MathField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MathField] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => MQ): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       

@@ -22,7 +22,8 @@ object TsTypeAnnotation {
     __obj.asInstanceOf[TsTypeAnnotation]
   }
   
-  extension [Self <: TsTypeAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsTypeAnnotation] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.swcCore.swcCoreStrings.TsTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

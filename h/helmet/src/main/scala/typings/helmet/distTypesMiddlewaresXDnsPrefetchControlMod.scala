@@ -47,7 +47,8 @@ object distTypesMiddlewaresXDnsPrefetchControlMod {
       __obj.asInstanceOf[XDnsPrefetchControlOptions]
     }
     
-    extension [Self <: XDnsPrefetchControlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XDnsPrefetchControlOptions] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       

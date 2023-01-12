@@ -55,7 +55,8 @@ object UpdateMetricSetRequest {
     __obj.asInstanceOf[UpdateMetricSetRequest]
   }
   
-  extension [Self <: UpdateMetricSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMetricSetRequest] (val x: Self) extends AnyVal {
     
     inline def setDimensionFilterList(value: MetricSetDimensionFilterList): Self = StObject.set(x, "DimensionFilterList", value.asInstanceOf[js.Any])
     

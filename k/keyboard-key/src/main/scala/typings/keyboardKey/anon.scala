@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[PickKeyboardEventkeykeyCo]
     }
     
-    extension [Self <: PickKeyboardEventkeykeyCo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickKeyboardEventkeykeyCo] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[PickKeyboardEventkeykeyCoKey]
     }
     
-    extension [Self <: PickKeyboardEventkeykeyCoKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickKeyboardEventkeykeyCoKey] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

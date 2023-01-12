@@ -21,7 +21,8 @@ object ClusterPutSettingsParams {
     __obj.asInstanceOf[ClusterPutSettingsParams]
   }
   
-  extension [Self <: ClusterPutSettingsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterPutSettingsParams] (val x: Self) extends AnyVal {
     
     inline def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
     

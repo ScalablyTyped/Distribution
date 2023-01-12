@@ -22,7 +22,8 @@ object PivotExportOptions {
     __obj.asInstanceOf[PivotExportOptions]
   }
   
-  extension [Self <: PivotExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotExportOptions] (val x: Self) extends AnyVal {
     
     inline def setPrintHeadersOnEveryPage(value: Boolean): Self = StObject.set(x, "PrintHeadersOnEveryPage", value.asInstanceOf[js.Any])
   }

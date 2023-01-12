@@ -19,7 +19,8 @@ object NodesRepositoryLocation {
     __obj.asInstanceOf[NodesRepositoryLocation]
   }
   
-  extension [Self <: NodesRepositoryLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesRepositoryLocation] (val x: Self) extends AnyVal {
     
     inline def setBase_path(value: String): Self = StObject.set(x, "base_path", value.asInstanceOf[js.Any])
     

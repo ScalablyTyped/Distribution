@@ -38,7 +38,8 @@ object UpdateGameServerGroupInput {
     __obj.asInstanceOf[UpdateGameServerGroupInput]
   }
   
-  extension [Self <: UpdateGameServerGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGameServerGroupInput] (val x: Self) extends AnyVal {
     
     inline def setBalancingStrategy(value: BalancingStrategy): Self = StObject.set(x, "BalancingStrategy", value.asInstanceOf[js.Any])
     

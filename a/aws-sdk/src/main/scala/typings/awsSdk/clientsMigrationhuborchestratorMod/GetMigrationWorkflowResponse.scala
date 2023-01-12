@@ -113,7 +113,8 @@ object GetMigrationWorkflowResponse {
     __obj.asInstanceOf[GetMigrationWorkflowResponse]
   }
   
-  extension [Self <: GetMigrationWorkflowResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMigrationWorkflowResponse] (val x: Self) extends AnyVal {
     
     inline def setAdsApplicationConfigurationId(value: String): Self = StObject.set(x, "adsApplicationConfigurationId", value.asInstanceOf[js.Any])
     

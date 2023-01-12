@@ -26,7 +26,8 @@ object IJscadExtrudeOptions {
     __obj.asInstanceOf[IJscadExtrudeOptions]
   }
   
-  extension [Self <: IJscadExtrudeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJscadExtrudeOptions] (val x: Self) extends AnyVal {
     
     inline def setExtrude(value: Double): Self = StObject.set(x, "extrude", value.asInstanceOf[js.Any])
     

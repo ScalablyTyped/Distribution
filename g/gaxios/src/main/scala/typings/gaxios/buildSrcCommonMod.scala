@@ -82,7 +82,8 @@ object buildSrcCommonMod {
       __obj.asInstanceOf[FetchRequestInit]
     }
     
-    extension [Self <: FetchRequestInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchRequestInit] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object buildSrcCommonMod {
       __obj.asInstanceOf[FetchResponse]
     }
     
-    extension [Self <: FetchResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchResponse] (val x: Self) extends AnyVal {
       
       inline def setArrayBuffer(value: () => js.Promise[Any]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
@@ -233,7 +235,8 @@ object buildSrcCommonMod {
       __obj.asInstanceOf[GaxiosOptions]
     }
     
-    extension [Self <: GaxiosOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaxiosOptions] (val x: Self) extends AnyVal {
       
       inline def setAdapter(
         value: (GaxiosOptions, /* defaultAdapter */ js.Function1[GaxiosOptions, js.Promise[GaxiosResponse[Any]]]) => js.Promise[GaxiosResponse[Any]]
@@ -369,7 +372,8 @@ object buildSrcCommonMod {
       __obj.asInstanceOf[GaxiosResponse[T]]
     }
     
-    extension [Self <: GaxiosResponse[?], T](x: Self & GaxiosResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaxiosResponse[?], T] (val x: Self & GaxiosResponse[T]) extends AnyVal {
       
       inline def setConfig(value: GaxiosOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -396,7 +400,8 @@ object buildSrcCommonMod {
       __obj.asInstanceOf[GaxiosXMLHttpRequest]
     }
     
-    extension [Self <: GaxiosXMLHttpRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaxiosXMLHttpRequest] (val x: Self) extends AnyVal {
       
       inline def setResponseURL(value: String): Self = StObject.set(x, "responseURL", value.asInstanceOf[js.Any])
     }
@@ -455,7 +460,8 @@ object buildSrcCommonMod {
       __obj.asInstanceOf[RetryConfig]
     }
     
-    extension [Self <: RetryConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryConfig] (val x: Self) extends AnyVal {
       
       inline def setCurrentRetryAttempt(value: Double): Self = StObject.set(x, "currentRetryAttempt", value.asInstanceOf[js.Any])
       

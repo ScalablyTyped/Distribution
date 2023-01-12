@@ -23,7 +23,8 @@ object ValidationErrorsEntry {
     __obj.asInstanceOf[ValidationErrorsEntry]
   }
   
-  extension [Self <: ValidationErrorsEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationErrorsEntry] (val x: Self) extends AnyVal {
     
     inline def setCheckName(value: NameType): Self = StObject.set(x, "CheckName", value.asInstanceOf[js.Any])
     

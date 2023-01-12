@@ -23,7 +23,8 @@ object CustomHeaders {
     __obj.asInstanceOf[CustomHeaders]
   }
   
-  extension [Self <: CustomHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomHeaders] (val x: Self) extends AnyVal {
     
     inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     

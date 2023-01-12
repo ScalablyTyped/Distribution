@@ -26,7 +26,8 @@ object RouterStatus {
     __obj.asInstanceOf[RouterStatus]
   }
   
-  extension [Self <: RouterStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterStatus] (val x: Self) extends AnyVal {
     
     inline def setBestRoutes(value: js.Array[Route]): Self = StObject.set(x, "bestRoutes", value.asInstanceOf[js.Any])
     

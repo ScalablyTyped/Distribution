@@ -75,7 +75,8 @@ object MergeField {
     __obj.asInstanceOf[MergeField]
   }
   
-  extension [Self <: MergeField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeField] (val x: Self) extends AnyVal {
     
     inline def setAllowSenderToEdit(value: String): Self = StObject.set(x, "allowSenderToEdit", value.asInstanceOf[js.Any])
     

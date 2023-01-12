@@ -25,7 +25,8 @@ object NewWindow {
     __obj.asInstanceOf[NewWindow]
   }
   
-  extension [Self <: NewWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewWindow] (val x: Self) extends AnyVal {
     
     inline def setAttach(value: HTMLWebViewElement => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     

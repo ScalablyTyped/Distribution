@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* response */ success | error, /* captcha */ Element, /* numberOfTries */ Double) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
       
@@ -106,7 +107,8 @@ object mod {
       __obj.asInstanceOf[jCaptcha]
     }
     
-    extension [Self <: jCaptcha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: jCaptcha] (val x: Self) extends AnyVal {
       
       inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       

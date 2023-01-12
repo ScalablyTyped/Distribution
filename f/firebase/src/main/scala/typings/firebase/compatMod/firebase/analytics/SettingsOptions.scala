@@ -19,7 +19,8 @@ object SettingsOptions {
     __obj.asInstanceOf[SettingsOptions]
   }
   
-  extension [Self <: SettingsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingsOptions] (val x: Self) extends AnyVal {
     
     inline def setDataLayerName(value: String): Self = StObject.set(x, "dataLayerName", value.asInstanceOf[js.Any])
     

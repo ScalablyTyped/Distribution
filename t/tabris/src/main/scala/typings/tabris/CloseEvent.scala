@@ -52,7 +52,8 @@ object CloseEvent {
     __obj.asInstanceOf[CloseEvent]
   }
   
-  extension [Self <: CloseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseEvent] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

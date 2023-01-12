@@ -20,7 +20,8 @@ object UntagResourceInput {
     __obj.asInstanceOf[UntagResourceInput]
   }
   
-  extension [Self <: UntagResourceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntagResourceInput] (val x: Self) extends AnyVal {
     
     inline def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     

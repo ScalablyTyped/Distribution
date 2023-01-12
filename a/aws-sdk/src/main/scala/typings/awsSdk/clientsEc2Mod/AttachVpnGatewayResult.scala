@@ -18,7 +18,8 @@ object AttachVpnGatewayResult {
     __obj.asInstanceOf[AttachVpnGatewayResult]
   }
   
-  extension [Self <: AttachVpnGatewayResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachVpnGatewayResult] (val x: Self) extends AnyVal {
     
     inline def setVpcAttachment(value: VpcAttachment): Self = StObject.set(x, "VpcAttachment", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetReadinessCheckRequest {
     __obj.asInstanceOf[GetReadinessCheckRequest]
   }
   
-  extension [Self <: GetReadinessCheckRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReadinessCheckRequest] (val x: Self) extends AnyVal {
     
     inline def setReadinessCheckName(value: string): Self = StObject.set(x, "ReadinessCheckName", value.asInstanceOf[js.Any])
   }

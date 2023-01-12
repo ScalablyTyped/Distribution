@@ -17,7 +17,8 @@ object TypeofREPLICAOF {
     __obj.asInstanceOf[TypeofREPLICAOF]
   }
   
-  extension [Self <: TypeofREPLICAOF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofREPLICAOF] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: (String, Double) => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction2(value))
     

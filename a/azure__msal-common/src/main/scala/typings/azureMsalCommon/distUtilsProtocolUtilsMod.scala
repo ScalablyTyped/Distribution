@@ -57,7 +57,8 @@ object distUtilsProtocolUtilsMod {
       __obj.asInstanceOf[LibraryStateObject]
     }
     
-    extension [Self <: LibraryStateObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibraryStateObject] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object distUtilsProtocolUtilsMod {
       __obj.asInstanceOf[RequestStateObject]
     }
     
-    extension [Self <: RequestStateObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestStateObject] (val x: Self) extends AnyVal {
       
       inline def setLibraryState(value: LibraryStateObject): Self = StObject.set(x, "libraryState", value.asInstanceOf[js.Any])
       

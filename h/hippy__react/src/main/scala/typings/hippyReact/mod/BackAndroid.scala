@@ -26,7 +26,8 @@ object BackAndroid {
     __obj.asInstanceOf[BackAndroid]
   }
   
-  extension [Self <: BackAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackAndroid] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: EventListener => BackAndroidRevoker): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     

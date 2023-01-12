@@ -53,7 +53,8 @@ object FormatCodeSettings {
     __obj.asInstanceOf[FormatCodeSettings]
   }
   
-  extension [Self <: FormatCodeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatCodeSettings] (val x: Self) extends AnyVal {
     
     inline def setIndentMultiLineObjectLiteralBeginningOnBlankLine(value: Boolean): Self = StObject.set(x, "indentMultiLineObjectLiteralBeginningOnBlankLine", value.asInstanceOf[js.Any])
     

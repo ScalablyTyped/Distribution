@@ -24,7 +24,8 @@ object PseudoEvents {
     __obj.asInstanceOf[PseudoEvents]
   }
   
-  extension [Self <: PseudoEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PseudoEvents] (val x: Self) extends AnyVal {
     
     inline def setOrder(value: Unit): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
   }

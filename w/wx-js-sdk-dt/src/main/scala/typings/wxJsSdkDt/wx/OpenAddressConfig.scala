@@ -24,7 +24,8 @@ object OpenAddressConfig {
     __obj.asInstanceOf[OpenAddressConfig]
   }
   
-  extension [Self <: OpenAddressConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenAddressConfig] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ OpenAddressResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

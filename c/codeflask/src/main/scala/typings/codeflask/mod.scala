@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[CodeFlask]
     }
     
-    extension [Self <: CodeFlask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeFlask] (val x: Self) extends AnyVal {
       
       inline def setAddLanguage(value: (String, Languages_) => Unit): Self = StObject.set(x, "addLanguage", js.Any.fromFunction2(value))
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[options]
     }
     
-    extension [Self <: options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: options] (val x: Self) extends AnyVal {
       
       inline def setAreaId(value: String): Self = StObject.set(x, "areaId", value.asInstanceOf[js.Any])
       

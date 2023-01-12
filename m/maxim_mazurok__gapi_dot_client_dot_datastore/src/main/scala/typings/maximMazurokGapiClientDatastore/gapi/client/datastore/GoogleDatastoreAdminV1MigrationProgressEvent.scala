@@ -22,7 +22,8 @@ object GoogleDatastoreAdminV1MigrationProgressEvent {
     __obj.asInstanceOf[GoogleDatastoreAdminV1MigrationProgressEvent]
   }
   
-  extension [Self <: GoogleDatastoreAdminV1MigrationProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDatastoreAdminV1MigrationProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setPrepareStepDetails(value: GoogleDatastoreAdminV1PrepareStepDetails): Self = StObject.set(x, "prepareStepDetails", value.asInstanceOf[js.Any])
     

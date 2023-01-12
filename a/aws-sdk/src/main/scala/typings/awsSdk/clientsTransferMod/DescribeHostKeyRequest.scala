@@ -23,7 +23,8 @@ object DescribeHostKeyRequest {
     __obj.asInstanceOf[DescribeHostKeyRequest]
   }
   
-  extension [Self <: DescribeHostKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHostKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setHostKeyId(value: HostKeyId): Self = StObject.set(x, "HostKeyId", value.asInstanceOf[js.Any])
     

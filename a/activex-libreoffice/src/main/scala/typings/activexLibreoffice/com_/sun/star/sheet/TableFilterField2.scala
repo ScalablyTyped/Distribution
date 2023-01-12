@@ -45,7 +45,8 @@ object TableFilterField2 {
     __obj.asInstanceOf[TableFilterField2]
   }
   
-  extension [Self <: TableFilterField2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableFilterField2] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: FilterConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     

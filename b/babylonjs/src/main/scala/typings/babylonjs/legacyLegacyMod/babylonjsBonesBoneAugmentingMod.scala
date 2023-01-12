@@ -36,7 +36,8 @@ object babylonjsBonesBoneAugmentingMod {
       __obj.asInstanceOf[typings.babylonjs.legacyLegacyMod.babylonjsBonesBoneAugmentingMod.Bone]
     }
     
-    extension [Self <: typings.babylonjs.legacyLegacyMod.babylonjsBonesBoneAugmentingMod.Bone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.babylonjs.legacyLegacyMod.babylonjsBonesBoneAugmentingMod.Bone] (val x: Self) extends AnyVal {
       
       inline def setCopyAnimationRange(
         value: (typings.babylonjs.animationsAnimatableMod.babylonjsBonesBoneAugmentingMod.Bone, String, Double, Boolean, Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector3]) => Boolean

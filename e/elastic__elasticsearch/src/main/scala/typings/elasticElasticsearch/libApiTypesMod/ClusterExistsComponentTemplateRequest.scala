@@ -21,7 +21,8 @@ object ClusterExistsComponentTemplateRequest {
     __obj.asInstanceOf[ClusterExistsComponentTemplateRequest]
   }
   
-  extension [Self <: ClusterExistsComponentTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterExistsComponentTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

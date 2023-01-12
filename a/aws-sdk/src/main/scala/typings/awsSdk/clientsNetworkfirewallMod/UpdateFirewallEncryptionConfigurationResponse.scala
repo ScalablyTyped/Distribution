@@ -30,7 +30,8 @@ object UpdateFirewallEncryptionConfigurationResponse {
     __obj.asInstanceOf[UpdateFirewallEncryptionConfigurationResponse]
   }
   
-  extension [Self <: UpdateFirewallEncryptionConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFirewallEncryptionConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
     

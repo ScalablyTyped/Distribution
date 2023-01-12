@@ -16,7 +16,8 @@ object Scrollable {
   @js.native
   val ^ : Scrollable = js.native
   
-  extension [Self <: Scrollable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scrollable] (val x: Self) extends AnyVal {
     
     inline def setGetScrollState(value: () => obj): Self = StObject.set(x, "getScrollState", js.Any.fromFunction0(value))
     

@@ -70,7 +70,8 @@ object FormatNumberOptions {
     __obj.asInstanceOf[FormatNumberOptions]
   }
   
-  extension [Self <: FormatNumberOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatNumberOptions] (val x: Self) extends AnyVal {
     
     inline def setCompactDisplay(value: short | long): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object CalloutStatusRow {
     __obj.asInstanceOf[CalloutStatusRow]
   }
   
-  extension [Self <: CalloutStatusRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalloutStatusRow] (val x: Self) extends AnyVal {
     
     inline def setCalloutStatusId(value: Double): Self = StObject.set(x, "calloutStatusId", value.asInstanceOf[js.Any])
     

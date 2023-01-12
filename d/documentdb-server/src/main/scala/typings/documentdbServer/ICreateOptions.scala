@@ -20,7 +20,8 @@ object ICreateOptions {
     __obj.asInstanceOf[ICreateOptions]
   }
   
-  extension [Self <: ICreateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableAutomaticIdGeneration(value: String): Self = StObject.set(x, "disableAutomaticIdGeneration", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Document {
     __obj.asInstanceOf[Document]
   }
   
-  extension [Self <: Document](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: Timestamp2): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

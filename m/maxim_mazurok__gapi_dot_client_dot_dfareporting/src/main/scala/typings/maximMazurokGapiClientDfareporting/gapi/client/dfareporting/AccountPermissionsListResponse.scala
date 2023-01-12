@@ -19,7 +19,8 @@ object AccountPermissionsListResponse {
     __obj.asInstanceOf[AccountPermissionsListResponse]
   }
   
-  extension [Self <: AccountPermissionsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountPermissionsListResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountPermissions(value: js.Array[AccountPermission]): Self = StObject.set(x, "accountPermissions", value.asInstanceOf[js.Any])
     

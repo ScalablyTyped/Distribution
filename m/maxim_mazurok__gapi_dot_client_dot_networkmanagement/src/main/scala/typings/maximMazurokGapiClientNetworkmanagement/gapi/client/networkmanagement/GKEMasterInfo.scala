@@ -25,7 +25,8 @@ object GKEMasterInfo {
     __obj.asInstanceOf[GKEMasterInfo]
   }
   
-  extension [Self <: GKEMasterInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GKEMasterInfo] (val x: Self) extends AnyVal {
     
     inline def setClusterNetworkUri(value: String): Self = StObject.set(x, "clusterNetworkUri", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object Hotspot {
     __obj.asInstanceOf[Hotspot]
   }
   
-  extension [Self <: Hotspot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hotspot] (val x: Self) extends AnyVal {
     
     inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     

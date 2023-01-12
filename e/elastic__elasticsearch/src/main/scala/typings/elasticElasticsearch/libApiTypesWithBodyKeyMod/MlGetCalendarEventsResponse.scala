@@ -17,7 +17,8 @@ object MlGetCalendarEventsResponse {
     __obj.asInstanceOf[MlGetCalendarEventsResponse]
   }
   
-  extension [Self <: MlGetCalendarEventsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetCalendarEventsResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

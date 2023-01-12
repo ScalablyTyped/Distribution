@@ -22,7 +22,8 @@ object Subscription {
     __obj.asInstanceOf[Subscription]
   }
   
-  extension [Self <: Subscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
     inline def setDeliveryConfig(value: DeliveryConfig): Self = StObject.set(x, "deliveryConfig", value.asInstanceOf[js.Any])
     

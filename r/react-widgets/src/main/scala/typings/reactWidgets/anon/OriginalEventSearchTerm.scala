@@ -29,7 +29,8 @@ object OriginalEventSearchTerm {
     __obj.asInstanceOf[OriginalEventSearchTerm[TDataItem]]
   }
   
-  extension [Self <: OriginalEventSearchTerm[?], TDataItem](x: Self & OriginalEventSearchTerm[TDataItem]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginalEventSearchTerm[?], TDataItem] (val x: Self & OriginalEventSearchTerm[TDataItem]) extends AnyVal {
     
     inline def setAction(value: insert | remove): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Next]
     }
     
-    extension [Self <: Next](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
       
       inline def setNext(value: Selector): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Prev]
     }
     
-    extension [Self <: Prev](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Prev] (val x: Self) extends AnyVal {
       
       inline def setNext(value: Arrow): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Scroll]
     }
     
-    extension [Self <: Scroll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scroll] (val x: Self) extends AnyVal {
       
       inline def setScroll(value: () => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction0(value))
     }
@@ -89,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Slide]
     }
     
-    extension [Self <: Slide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slide] (val x: Self) extends AnyVal {
       
       inline def setSlide(value: Double): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
     }
@@ -109,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: arrow | dot | slide): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

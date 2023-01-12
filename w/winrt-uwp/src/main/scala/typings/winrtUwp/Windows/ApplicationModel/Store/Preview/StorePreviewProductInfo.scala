@@ -36,7 +36,8 @@ object StorePreviewProductInfo {
     __obj.asInstanceOf[StorePreviewProductInfo]
   }
   
-  extension [Self <: StorePreviewProductInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorePreviewProductInfo] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Json]
     }
     
-    extension [Self <: Json](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Json] (val x: Self) extends AnyVal {
       
       inline def setJson(value: Any => String): Self = StObject.set(x, "json", js.Any.fromFunction1(value))
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Stderr]
     }
     
-    extension [Self <: Stderr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stderr] (val x: Self) extends AnyVal {
       
       inline def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setJson(value: String => Any): Self = StObject.set(x, "json", js.Any.fromFunction1(value))
       

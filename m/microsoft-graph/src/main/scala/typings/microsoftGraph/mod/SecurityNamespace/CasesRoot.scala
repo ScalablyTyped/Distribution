@@ -19,7 +19,8 @@ object CasesRoot {
     __obj.asInstanceOf[CasesRoot]
   }
   
-  extension [Self <: CasesRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CasesRoot] (val x: Self) extends AnyVal {
     
     inline def setEdiscoveryCases(value: NullableOption[js.Array[EdiscoveryCase]]): Self = StObject.set(x, "ediscoveryCases", value.asInstanceOf[js.Any])
     

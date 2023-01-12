@@ -106,7 +106,8 @@ object Product {
     __obj.asInstanceOf[Product]
   }
   
-  extension [Self <: Product](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
     
     inline def setContentLengths(value: js.Array[Double]): Self = StObject.set(x, "contentLengths", value.asInstanceOf[js.Any])
     

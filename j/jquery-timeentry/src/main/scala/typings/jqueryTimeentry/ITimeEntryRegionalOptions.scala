@@ -48,7 +48,8 @@ object ITimeEntryRegionalOptions {
     __obj.asInstanceOf[ITimeEntryRegionalOptions]
   }
   
-  extension [Self <: ITimeEntryRegionalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimeEntryRegionalOptions] (val x: Self) extends AnyVal {
     
     inline def setAmpmNames(value: js.Array[String]): Self = StObject.set(x, "ampmNames", value.asInstanceOf[js.Any])
     

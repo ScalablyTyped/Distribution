@@ -98,7 +98,8 @@ object mixin {
       __obj.asInstanceOf[IFilterable]
     }
     
-    extension [Self <: IFilterable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFilterable] (val x: Self) extends AnyVal {
       
       inline def setAddFilter(value: /* filter */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addFilter", js.Any.fromFunction1(value))
       
@@ -182,7 +183,8 @@ object mixin {
       __obj.asInstanceOf[IIdentifiable]
     }
     
-    extension [Self <: IIdentifiable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIdentifiable] (val x: Self) extends AnyVal {
       
       inline def setGetId(value: () => Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
@@ -557,7 +559,8 @@ object mixin {
       __obj.asInstanceOf[IObservable]
     }
     
-    extension [Self <: IObservable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObservable] (val x: Self) extends AnyVal {
       
       inline def setAddAfterListener(
         value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
@@ -808,7 +811,8 @@ object mixin {
       __obj.asInstanceOf[IProgressable]
     }
     
-    extension [Self <: IProgressable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgressable] (val x: Self) extends AnyVal {
       
       inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       
@@ -1073,7 +1077,8 @@ object mixin {
       __obj.asInstanceOf[ISelectable]
     }
     
-    extension [Self <: ISelectable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectable] (val x: Self) extends AnyVal {
       
       inline def setAllowDeselect(value: Boolean): Self = StObject.set(x, "allowDeselect", value.asInstanceOf[js.Any])
       
@@ -1346,7 +1351,8 @@ object mixin {
       __obj.asInstanceOf[ISortable]
     }
     
-    extension [Self <: ISortable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISortable] (val x: Self) extends AnyVal {
       
       inline def setAddSorter(value: (/* sorter */ js.UndefOr[Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit): Self = StObject.set(x, "addSorter", js.Any.fromFunction2(value))
       

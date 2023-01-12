@@ -19,7 +19,8 @@ object HintMessageDetail {
     __obj.asInstanceOf[HintMessageDetail]
   }
   
-  extension [Self <: HintMessageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HintMessageDetail] (val x: Self) extends AnyVal {
     
     inline def setHint(value: Exact): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     

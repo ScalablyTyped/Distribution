@@ -40,7 +40,8 @@ object IComponentDragger {
     __obj.asInstanceOf[IComponentDragger]
   }
   
-  extension [Self <: IComponentDragger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComponentDragger] (val x: Self) extends AnyVal {
     
     inline def setConstrain(value: Boolean): Self = StObject.set(x, "constrain", value.asInstanceOf[js.Any])
     

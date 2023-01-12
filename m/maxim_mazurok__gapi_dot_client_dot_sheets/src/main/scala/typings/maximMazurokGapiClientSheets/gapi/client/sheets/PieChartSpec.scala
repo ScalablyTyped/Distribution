@@ -28,7 +28,8 @@ object PieChartSpec {
     __obj.asInstanceOf[PieChartSpec]
   }
   
-  extension [Self <: PieChartSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieChartSpec] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: ChartData): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

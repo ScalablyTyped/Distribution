@@ -28,7 +28,8 @@ object GetInsightsRequest {
     __obj.asInstanceOf[GetInsightsRequest]
   }
   
-  extension [Self <: GetInsightsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInsightsRequest] (val x: Self) extends AnyVal {
     
     inline def setInsightArns(value: ArnList): Self = StObject.set(x, "InsightArns", value.asInstanceOf[js.Any])
     

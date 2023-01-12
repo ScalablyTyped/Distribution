@@ -35,7 +35,8 @@ object RowSelectionChanged {
     __obj.asInstanceOf[RowSelectionChanged[TEntity]]
   }
   
-  extension [Self <: RowSelectionChanged[?], TEntity](x: Self & RowSelectionChanged[TEntity]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowSelectionChanged[?], TEntity] (val x: Self & RowSelectionChanged[TEntity]) extends AnyVal {
     
     inline def setRowSelectionChanged(value: (IScope, rowSelectionChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowSelectionChanged", js.Any.fromFunction2(value))
     

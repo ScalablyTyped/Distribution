@@ -16,7 +16,8 @@ object AdbShellCommandEvent {
     __obj.asInstanceOf[AdbShellCommandEvent]
   }
   
-  extension [Self <: AdbShellCommandEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdbShellCommandEvent] (val x: Self) extends AnyVal {
     
     inline def setShellCmd(value: String): Self = StObject.set(x, "shellCmd", value.asInstanceOf[js.Any])
     

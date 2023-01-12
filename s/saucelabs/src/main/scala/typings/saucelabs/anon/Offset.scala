@@ -32,7 +32,8 @@ object Offset {
     __obj.asInstanceOf[Offset]
   }
   
-  extension [Self <: Offset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

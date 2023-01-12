@@ -18,7 +18,8 @@ object GetModelTemplateResponse {
     __obj.asInstanceOf[GetModelTemplateResponse]
   }
   
-  extension [Self <: GetModelTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetModelTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setValue(value: string): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PlaceholderInSubject {
     __obj.asInstanceOf[PlaceholderInSubject]
   }
   
-  extension [Self <: PlaceholderInSubject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceholderInSubject] (val x: Self) extends AnyVal {
     
     inline def setIncreasedBy(value: Position): Self = StObject.set(x, "increasedBy", value.asInstanceOf[js.Any])
     

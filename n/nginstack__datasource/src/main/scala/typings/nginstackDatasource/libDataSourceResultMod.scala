@@ -117,7 +117,8 @@ object libDataSourceResultMod {
       __obj.asInstanceOf[DataSourceResult]
     }
     
-    extension [Self <: DataSourceResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceResult] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: typings.nginstackDatasource.libDataSourceColumnsMod.^): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Command]
     }
     
-    extension [Self <: Command](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[DefaultTarget]
     }
     
-    extension [Self <: DefaultTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultTarget] (val x: Self) extends AnyVal {
       
       inline def setDefaultTarget(value: HTMLElement): Self = StObject.set(x, "defaultTarget", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Priority]
     }
     
-    extension [Self <: Priority](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Priority] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[PriorityNumber]
     }
     
-    extension [Self <: PriorityNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PriorityNumber] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     }

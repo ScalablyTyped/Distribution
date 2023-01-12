@@ -25,7 +25,8 @@ object PartnerRevenueModel {
     __obj.asInstanceOf[PartnerRevenueModel]
   }
   
-  extension [Self <: PartnerRevenueModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartnerRevenueModel] (val x: Self) extends AnyVal {
     
     inline def setMarkupAmount(value: String): Self = StObject.set(x, "markupAmount", value.asInstanceOf[js.Any])
     

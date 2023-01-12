@@ -36,7 +36,8 @@ object PartialCarouselOptions {
     __obj.asInstanceOf[PartialCarouselOptions]
   }
   
-  extension [Self <: PartialCarouselOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCarouselOptions] (val x: Self) extends AnyVal {
     
     inline def setDist(value: Double): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
     

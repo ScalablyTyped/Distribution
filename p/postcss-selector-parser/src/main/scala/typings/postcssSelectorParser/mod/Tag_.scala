@@ -41,7 +41,8 @@ object Tag_ {
     __obj.asInstanceOf[Tag_]
   }
   
-  extension [Self <: Tag_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tag_] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.tag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

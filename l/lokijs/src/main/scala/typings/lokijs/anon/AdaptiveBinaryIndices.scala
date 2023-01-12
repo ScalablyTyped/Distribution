@@ -15,7 +15,8 @@ object AdaptiveBinaryIndices {
     __obj.asInstanceOf[AdaptiveBinaryIndices]
   }
   
-  extension [Self <: AdaptiveBinaryIndices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdaptiveBinaryIndices] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveBinaryIndices(value: Boolean): Self = StObject.set(x, "adaptiveBinaryIndices", value.asInstanceOf[js.Any])
     

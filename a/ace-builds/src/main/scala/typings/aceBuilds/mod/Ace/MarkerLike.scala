@@ -36,7 +36,8 @@ object MarkerLike {
     __obj.asInstanceOf[MarkerLike]
   }
   
-  extension [Self <: MarkerLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerLike] (val x: Self) extends AnyVal {
     
     inline def setClazz(value: String): Self = StObject.set(x, "clazz", value.asInstanceOf[js.Any])
     

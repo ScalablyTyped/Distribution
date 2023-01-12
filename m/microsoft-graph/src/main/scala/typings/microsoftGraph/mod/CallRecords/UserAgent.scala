@@ -20,7 +20,8 @@ object UserAgent {
     __obj.asInstanceOf[UserAgent]
   }
   
-  extension [Self <: UserAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
     
     inline def setApplicationVersion(value: NullableOption[String]): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     

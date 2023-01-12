@@ -43,7 +43,8 @@ object Display {
     __obj.asInstanceOf[Display]
   }
   
-  extension [Self <: Display](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: typings.chartJs.mod.Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

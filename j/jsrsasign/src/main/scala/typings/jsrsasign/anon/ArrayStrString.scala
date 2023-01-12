@@ -18,7 +18,8 @@ object ArrayStrString {
     __obj.asInstanceOf[ArrayStrString]
   }
   
-  extension [Self <: ArrayStrString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayStrString] (val x: Self) extends AnyVal {
     
     inline def setArray(value: IdentityArray): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

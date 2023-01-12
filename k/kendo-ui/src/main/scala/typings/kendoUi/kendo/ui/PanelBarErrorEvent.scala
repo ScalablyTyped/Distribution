@@ -20,7 +20,8 @@ object PanelBarErrorEvent {
     __obj.asInstanceOf[PanelBarErrorEvent]
   }
   
-  extension [Self <: PanelBarErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanelBarErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object LowLevelStyleFunctionArguments {
     __obj.asInstanceOf[LowLevelStyleFunctionArguments[N, S]]
   }
   
-  extension [Self <: LowLevelStyleFunctionArguments[?, ?], N, S](x: Self & (LowLevelStyleFunctionArguments[N, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LowLevelStyleFunctionArguments[?, ?], N, S] (val x: Self & (LowLevelStyleFunctionArguments[N, S])) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

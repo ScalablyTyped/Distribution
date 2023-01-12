@@ -106,7 +106,8 @@ object ASPxClientProgressBar {
     __obj.asInstanceOf[ASPxClientProgressBar]
   }
   
-  extension [Self <: ASPxClientProgressBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientProgressBar] (val x: Self) extends AnyVal {
     
     inline def setGetDisplayText(value: () => String): Self = StObject.set(x, "GetDisplayText", js.Any.fromFunction0(value))
     

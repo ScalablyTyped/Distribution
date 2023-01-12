@@ -19,7 +19,8 @@ object Observer {
     __obj.asInstanceOf[Observer[T]]
   }
   
-  extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

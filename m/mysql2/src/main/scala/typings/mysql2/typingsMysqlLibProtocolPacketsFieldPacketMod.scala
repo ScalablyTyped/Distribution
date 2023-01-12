@@ -63,7 +63,8 @@ object typingsMysqlLibProtocolPacketsFieldPacketMod {
       __obj.asInstanceOf[FieldPacket]
     }
     
-    extension [Self <: FieldPacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldPacket] (val x: Self) extends AnyVal {
       
       inline def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
       

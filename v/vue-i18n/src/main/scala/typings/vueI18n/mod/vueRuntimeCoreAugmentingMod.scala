@@ -96,7 +96,8 @@ object vueRuntimeCoreAugmentingMod {
       __obj.asInstanceOf[ComponentCustomOptions]
     }
     
-    extension [Self <: ComponentCustomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentCustomOptions] (val x: Self) extends AnyVal {
       
       inline def setI18n(
         value: VueI18nOptions[

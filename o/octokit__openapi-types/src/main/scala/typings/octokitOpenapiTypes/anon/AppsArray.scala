@@ -16,7 +16,8 @@ object AppsArray {
     __obj.asInstanceOf[AppsArray]
   }
   
-  extension [Self <: AppsArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsArray] (val x: Self) extends AnyVal {
     
     inline def setApps(value: js.Array[String]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     

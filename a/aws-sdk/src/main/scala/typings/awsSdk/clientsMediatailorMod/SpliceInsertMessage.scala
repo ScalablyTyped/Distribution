@@ -33,7 +33,8 @@ object SpliceInsertMessage {
     __obj.asInstanceOf[SpliceInsertMessage]
   }
   
-  extension [Self <: SpliceInsertMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpliceInsertMessage] (val x: Self) extends AnyVal {
     
     inline def setAvailNum(value: _Integer): Self = StObject.set(x, "AvailNum", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PutStreamOptions {
     __obj.asInstanceOf[PutStreamOptions]
   }
   
-  extension [Self <: PutStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

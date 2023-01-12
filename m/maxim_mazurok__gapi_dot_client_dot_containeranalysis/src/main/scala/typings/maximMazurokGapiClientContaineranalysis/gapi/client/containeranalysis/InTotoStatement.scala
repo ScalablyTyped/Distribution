@@ -27,7 +27,8 @@ object InTotoStatement {
     __obj.asInstanceOf[InTotoStatement]
   }
   
-  extension [Self <: InTotoStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InTotoStatement] (val x: Self) extends AnyVal {
     
     inline def setPredicateType(value: String): Self = StObject.set(x, "predicateType", value.asInstanceOf[js.Any])
     

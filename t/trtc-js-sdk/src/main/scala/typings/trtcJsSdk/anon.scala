@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Audio]
     }
     
-    extension [Self <: Audio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object anon {
       __obj.asInstanceOf[IsBrowserSupported]
     }
     
-    extension [Self <: IsBrowserSupported](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsBrowserSupported] (val x: Self) extends AnyVal {
       
       inline def setIsBrowserSupported(value: Boolean): Self = StObject.set(x, "isBrowserSupported", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[PrevState]
     }
     
-    extension [Self <: PrevState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrevState] (val x: Self) extends AnyVal {
       
       inline def setPrevState(value: ConnectionState): Self = StObject.set(x, "prevState", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Reason]
     }
     
-    extension [Self <: Reason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
       
       inline def setReason(value: playing_ | mute | unmute | ended): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       

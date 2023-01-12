@@ -22,7 +22,8 @@ object EKUPlugin {
     __obj.asInstanceOf[EKUPlugin]
   }
   
-  extension [Self <: EKUPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EKUPlugin] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_EKU_CLIENT_AUTH(value: `2`): Self = StObject.set(x, "CAPICOM_EKU_CLIENT_AUTH", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object MetricTokenAggregationResult {
     __obj.asInstanceOf[MetricTokenAggregationResult]
   }
   
-  extension [Self <: MetricTokenAggregationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricTokenAggregationResult] (val x: Self) extends AnyVal {
     
     inline def setEvent_rate(value: Double): Self = StObject.set(x, "event_rate", value.asInstanceOf[js.Any])
     

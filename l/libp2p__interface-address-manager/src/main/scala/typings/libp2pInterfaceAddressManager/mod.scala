@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[AddressManagerEvents]
     }
     
-    extension [Self <: AddressManagerEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressManagerEvents] (val x: Self) extends AnyVal {
       
       inline def setChangeColonaddresses(value: CustomEvent[Any]): Self = StObject.set(x, "change:addresses", value.asInstanceOf[js.Any])
     }

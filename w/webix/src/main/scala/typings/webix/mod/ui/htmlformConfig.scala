@@ -75,7 +75,8 @@ object htmlformConfig {
     __obj.asInstanceOf[htmlformConfig]
   }
   
-  extension [Self <: htmlformConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: htmlformConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

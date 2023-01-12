@@ -68,7 +68,8 @@ object SendBulkTemplatedEmailRequest {
     __obj.asInstanceOf[SendBulkTemplatedEmailRequest]
   }
   
-  extension [Self <: SendBulkTemplatedEmailRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendBulkTemplatedEmailRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object FacetAttributeDefinition {
     __obj.asInstanceOf[FacetAttributeDefinition]
   }
   
-  extension [Self <: FacetAttributeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetAttributeDefinition] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: TypedAttributeValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

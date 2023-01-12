@@ -36,7 +36,8 @@ object XAsynchronousExecutableDialog {
     __obj.asInstanceOf[XAsynchronousExecutableDialog]
   }
   
-  extension [Self <: XAsynchronousExecutableDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAsynchronousExecutableDialog] (val x: Self) extends AnyVal {
     
     inline def setSetDialogTitle(value: String => Unit): Self = StObject.set(x, "setDialogTitle", js.Any.fromFunction1(value))
     

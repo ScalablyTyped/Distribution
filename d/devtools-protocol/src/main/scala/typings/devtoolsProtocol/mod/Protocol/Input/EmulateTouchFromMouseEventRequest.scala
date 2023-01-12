@@ -70,7 +70,8 @@ object EmulateTouchFromMouseEventRequest {
     __obj.asInstanceOf[EmulateTouchFromMouseEventRequest]
   }
   
-  extension [Self <: EmulateTouchFromMouseEventRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmulateTouchFromMouseEventRequest] (val x: Self) extends AnyVal {
     
     inline def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

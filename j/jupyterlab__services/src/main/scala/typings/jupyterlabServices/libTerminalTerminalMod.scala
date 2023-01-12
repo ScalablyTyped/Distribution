@@ -120,7 +120,8 @@ object libTerminalTerminalMod {
       __obj.asInstanceOf[IMessage]
     }
     
-    extension [Self <: IMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessage] (val x: Self) extends AnyVal {
       
       inline def setContent(value: js.Array[JSONPrimitive]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object libTerminalTerminalMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
         
@@ -256,7 +258,8 @@ object libTerminalTerminalMod {
         __obj.asInstanceOf[typings.jupyterlabServices.libTerminalTerminalMod.ITerminalConnection.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabServices.libTerminalTerminalMod.ITerminalConnection.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabServices.libTerminalTerminalMod.ITerminalConnection.IOptions] (val x: Self) extends AnyVal {
         
         inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
@@ -266,7 +269,8 @@ object libTerminalTerminalMod {
       }
     }
     
-    extension [Self <: ITerminalConnection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITerminalConnection] (val x: Self) extends AnyVal {
       
       inline def setConnectionStatus(value: ConnectionStatus): Self = StObject.set(x, "connectionStatus", value.asInstanceOf[js.Any])
       

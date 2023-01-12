@@ -38,7 +38,8 @@ object PlatformBranchSummary {
     __obj.asInstanceOf[PlatformBranchSummary]
   }
   
-  extension [Self <: PlatformBranchSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformBranchSummary] (val x: Self) extends AnyVal {
     
     inline def setBranchName(value: BranchName): Self = StObject.set(x, "BranchName", value.asInstanceOf[js.Any])
     

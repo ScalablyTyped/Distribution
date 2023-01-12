@@ -15,7 +15,8 @@ object EnumValuesAfterGatesAlways {
     __obj.asInstanceOf[EnumValuesAfterGatesAlways]
   }
   
-  extension [Self <: EnumValuesAfterGatesAlways](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAfterGatesAlways] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AfterGatesAlways): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

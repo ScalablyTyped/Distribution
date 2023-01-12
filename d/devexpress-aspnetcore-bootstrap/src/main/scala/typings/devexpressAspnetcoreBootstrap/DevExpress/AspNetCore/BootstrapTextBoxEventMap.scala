@@ -36,7 +36,8 @@ object BootstrapTextBoxEventMap {
     __obj.asInstanceOf[BootstrapTextBoxEventMap]
   }
   
-  extension [Self <: BootstrapTextBoxEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapTextBoxEventMap] (val x: Self) extends AnyVal {
     
     inline def setKeyDown(value: EditKeyEventArgs): Self = StObject.set(x, "keyDown", value.asInstanceOf[js.Any])
     

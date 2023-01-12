@@ -23,7 +23,8 @@ object IPropertyValuesWithIconCluesOfMultipleObjects {
     __obj.asInstanceOf[IPropertyValuesWithIconCluesOfMultipleObjects]
   }
   
-  extension [Self <: IPropertyValuesWithIconCluesOfMultipleObjects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyValuesWithIconCluesOfMultipleObjects] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IPropertyValuesWithIconCluesOfMultipleObjects): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

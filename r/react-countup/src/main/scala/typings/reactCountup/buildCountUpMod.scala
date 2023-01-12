@@ -43,7 +43,8 @@ object buildCountUpMod extends Shortcut {
       __obj.asInstanceOf[CountUpProps]
     }
     
-    extension [Self <: CountUpProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountUpProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* props */ RenderCounterProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

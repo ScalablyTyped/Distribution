@@ -17,7 +17,8 @@ object CreateWorkloadShareOutput {
     __obj.asInstanceOf[CreateWorkloadShareOutput]
   }
   
-  extension [Self <: CreateWorkloadShareOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkloadShareOutput] (val x: Self) extends AnyVal {
     
     inline def setShareId(value: ShareId): Self = StObject.set(x, "ShareId", value.asInstanceOf[js.Any])
     

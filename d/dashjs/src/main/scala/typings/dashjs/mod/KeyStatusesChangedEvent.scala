@@ -24,7 +24,8 @@ object KeyStatusesChangedEvent {
     __obj.asInstanceOf[KeyStatusesChangedEvent]
   }
   
-  extension [Self <: KeyStatusesChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyStatusesChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: SessionToken): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

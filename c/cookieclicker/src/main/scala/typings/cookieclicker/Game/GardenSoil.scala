@@ -71,7 +71,8 @@ object GardenSoil {
     __obj.asInstanceOf[GardenSoil]
   }
   
-  extension [Self <: GardenSoil](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GardenSoil] (val x: Self) extends AnyVal {
     
     inline def setEffMult(value: Double): Self = StObject.set(x, "effMult", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ElementHeight {
     __obj.asInstanceOf[ElementHeight]
   }
   
-  extension [Self <: ElementHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementHeight] (val x: Self) extends AnyVal {
     
     inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

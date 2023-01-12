@@ -21,7 +21,8 @@ object PolicyOptions {
     __obj.asInstanceOf[PolicyOptions]
   }
   
-  extension [Self <: PolicyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyOptions] (val x: Self) extends AnyVal {
     
     inline def `setIgnore-policy`(value: Boolean): Self = StObject.set(x, "ignore-policy", value.asInstanceOf[js.Any])
     

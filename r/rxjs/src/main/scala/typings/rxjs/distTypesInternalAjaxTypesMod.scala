@@ -175,7 +175,8 @@ object distTypesInternalAjaxTypesMod {
       __obj.asInstanceOf[AjaxConfig]
     }
     
-    extension [Self <: AjaxConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxConfig] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -342,7 +343,8 @@ object distTypesInternalAjaxTypesMod {
       __obj.asInstanceOf[AjaxRequest]
     }
     
-    extension [Self <: AjaxRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxRequest] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object RenewOfferingResult {
     __obj.asInstanceOf[RenewOfferingResult]
   }
   
-  extension [Self <: RenewOfferingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenewOfferingResult] (val x: Self) extends AnyVal {
     
     inline def setOfferingTransaction(value: OfferingTransaction): Self = StObject.set(x, "offeringTransaction", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PropertyNotification {
     __obj.asInstanceOf[PropertyNotification]
   }
   
-  extension [Self <: PropertyNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyNotification] (val x: Self) extends AnyVal {
     
     inline def setState(value: PropertyNotificationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

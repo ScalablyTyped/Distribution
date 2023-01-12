@@ -35,7 +35,8 @@ object ChangeOperation {
     __obj.asInstanceOf[ChangeOperation]
   }
   
-  extension [Self <: ChangeOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeOperation] (val x: Self) extends AnyVal {
     
     inline def setChangeOperation(value: SnippetUpdateOperation => Unit): Self = StObject.set(x, "changeOperation", js.Any.fromFunction1(value))
     

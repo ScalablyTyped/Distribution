@@ -23,7 +23,8 @@ object ReportTaskProgressInput {
     __obj.asInstanceOf[ReportTaskProgressInput]
   }
   
-  extension [Self <: ReportTaskProgressInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportTaskProgressInput] (val x: Self) extends AnyVal {
     
     inline def setFields(value: fieldList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

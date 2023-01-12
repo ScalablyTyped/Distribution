@@ -41,7 +41,8 @@ object buildTypesMod {
       __obj.asInstanceOf[PathService]
     }
     
-    extension [Self <: PathService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathService] (val x: Self) extends AnyVal {
       
       inline def setEnsureAbsolutePath(value: String => String): Self = StObject.set(x, "ensureAbsolutePath", js.Any.fromFunction1(value))
       

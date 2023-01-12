@@ -18,7 +18,8 @@ object ObjectIdentifierParams {
     __obj.asInstanceOf[ObjectIdentifierParams]
   }
   
-  extension [Self <: ObjectIdentifierParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectIdentifierParams] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

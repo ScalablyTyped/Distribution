@@ -48,7 +48,8 @@ object typesUseCloseOnOutsideClickMod {
       __obj.asInstanceOf[CloseOnOutsideClickOptions[E]]
     }
     
-    extension [Self <: CloseOnOutsideClickOptions[?], E /* <: HTMLElement */](x: Self & CloseOnOutsideClickOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseOnOutsideClickOptions[?], E /* <: HTMLElement */] (val x: Self & CloseOnOutsideClickOptions[E]) extends AnyVal {
       
       inline def setElement(value: E | (MutableRefObject[E | Null])): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

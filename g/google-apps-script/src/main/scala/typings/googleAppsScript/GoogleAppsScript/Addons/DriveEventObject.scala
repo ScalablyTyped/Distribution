@@ -21,7 +21,8 @@ object DriveEventObject {
     __obj.asInstanceOf[DriveEventObject]
   }
   
-  extension [Self <: DriveEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveEventObject] (val x: Self) extends AnyVal {
     
     inline def setActiveCursorItem(value: DriveItemObject): Self = StObject.set(x, "activeCursorItem", value.asInstanceOf[js.Any])
     

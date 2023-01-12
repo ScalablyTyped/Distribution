@@ -18,7 +18,8 @@ object PublishFunctionResult {
     __obj.asInstanceOf[PublishFunctionResult]
   }
   
-  extension [Self <: PublishFunctionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishFunctionResult] (val x: Self) extends AnyVal {
     
     inline def setFunctionSummary(value: FunctionSummary): Self = StObject.set(x, "FunctionSummary", value.asInstanceOf[js.Any])
     

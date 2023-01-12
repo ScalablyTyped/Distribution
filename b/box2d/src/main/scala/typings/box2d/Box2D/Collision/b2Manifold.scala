@@ -65,7 +65,8 @@ object b2Manifold {
     __obj.asInstanceOf[b2Manifold]
   }
   
-  extension [Self <: b2Manifold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2Manifold] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => b2Manifold): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     

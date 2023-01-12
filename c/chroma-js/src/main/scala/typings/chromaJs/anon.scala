@@ -123,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Accent]
     }
     
-    extension [Self <: Accent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accent] (val x: Self) extends AnyVal {
       
       inline def setAccent(value: js.Array[String]): Self = StObject.set(x, "Accent", value.asInstanceOf[js.Any])
       
@@ -286,7 +287,8 @@ object anon {
       __obj.asInstanceOf[Unclipped]
     }
     
-    extension [Self <: Unclipped](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unclipped] (val x: Self) extends AnyVal {
       
       inline def set_unclipped(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "_unclipped", value.asInstanceOf[js.Any])
     }

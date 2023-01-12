@@ -51,7 +51,8 @@ object gapi {
           __obj.asInstanceOf[DirectoryList]
         }
         
-        extension [Self <: DirectoryList](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: DirectoryList] (val x: Self) extends AnyVal {
           
           inline def setDiscoveryVersion(value: String): Self = StObject.set(x, "discoveryVersion", value.asInstanceOf[js.Any])
           
@@ -144,7 +145,8 @@ object gapi {
           __obj.asInstanceOf[JsonSchema]
         }
         
-        extension [Self <: JsonSchema](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: JsonSchema] (val x: Self) extends AnyVal {
           
           inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
           
@@ -343,7 +345,8 @@ object gapi {
           __obj.asInstanceOf[RestDescription]
         }
         
-        extension [Self <: RestDescription](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: RestDescription] (val x: Self) extends AnyVal {
           
           inline def setAuth(value: Oauth2): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
           
@@ -538,7 +541,8 @@ object gapi {
           __obj.asInstanceOf[RestMethod]
         }
         
-        extension [Self <: RestMethod](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: RestMethod] (val x: Self) extends AnyVal {
           
           inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
@@ -627,7 +631,8 @@ object gapi {
           __obj.asInstanceOf[RestResource]
         }
         
-        extension [Self <: RestResource](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: RestResource] (val x: Self) extends AnyVal {
           
           inline def setMethods(
             value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestMethod} */ js.Any

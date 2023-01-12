@@ -19,7 +19,8 @@ object TickCount {
     __obj.asInstanceOf[TickCount]
   }
   
-  extension [Self <: TickCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TickCount] (val x: Self) extends AnyVal {
     
     inline def setSync(value: String): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     

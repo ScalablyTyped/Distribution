@@ -23,7 +23,8 @@ object GetDelegationsResponse {
     __obj.asInstanceOf[GetDelegationsResponse]
   }
   
-  extension [Self <: GetDelegationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDelegationsResponse] (val x: Self) extends AnyVal {
     
     inline def setDelegations(value: DelegationMetadataList): Self = StObject.set(x, "delegations", value.asInstanceOf[js.Any])
     

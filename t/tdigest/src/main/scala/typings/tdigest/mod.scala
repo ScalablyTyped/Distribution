@@ -170,7 +170,8 @@ object mod {
       __obj.asInstanceOf[Centroid]
     }
     
-    extension [Self <: Centroid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Centroid] (val x: Self) extends AnyVal {
       
       inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
       
@@ -196,7 +197,8 @@ object mod {
       __obj.asInstanceOf[DigestConfiguration]
     }
     
-    extension [Self <: DigestConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DigestConfiguration] (val x: Self) extends AnyVal {
       
       inline def setMode(value: disc | cont | auto): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -221,7 +223,8 @@ object mod {
       __obj.asInstanceOf[FullCentroid]
     }
     
-    extension [Self <: FullCentroid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullCentroid] (val x: Self) extends AnyVal {
       
       inline def setCumn(value: Double): Self = StObject.set(x, "cumn", value.asInstanceOf[js.Any])
       

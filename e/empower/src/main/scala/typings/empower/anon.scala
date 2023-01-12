@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[RequiredOptions]
     }
     
-    extension [Self <: RequiredOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredOptions] (val x: Self) extends AnyVal {
       
       inline def setBindReceiver(value: Boolean): Self = StObject.set(x, "bindReceiver", value.asInstanceOf[js.Any])
       

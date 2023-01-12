@@ -83,7 +83,8 @@ object CreateCreatePropertiesType {
     __obj.asInstanceOf[CreateCreatePropertiesType]
   }
   
-  extension [Self <: CreateCreatePropertiesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCreatePropertiesType] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

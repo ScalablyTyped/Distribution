@@ -23,7 +23,8 @@ object MlUpdateModelSnapshotRequest {
     __obj.asInstanceOf[MlUpdateModelSnapshotRequest]
   }
   
-  extension [Self <: MlUpdateModelSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlUpdateModelSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Retain): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

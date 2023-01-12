@@ -889,7 +889,8 @@ object UserSettingsInformation {
     __obj.asInstanceOf[UserSettingsInformation]
   }
   
-  extension [Self <: UserSettingsInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserSettingsInformation] (val x: Self) extends AnyVal {
     
     inline def setAccountManagementGranular(
       value: /* Describes which account management capabilities a user has. */ UserAccountManagementGranularInformation

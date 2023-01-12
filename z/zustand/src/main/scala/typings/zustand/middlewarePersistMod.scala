@@ -95,7 +95,8 @@ object middlewarePersistMod {
       __obj.asInstanceOf[PersistOptions[S, PersistedState]]
     }
     
-    extension [Self <: PersistOptions[?, ?], S, PersistedState](x: Self & (PersistOptions[S, PersistedState])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistOptions[?, ?], S, PersistedState] (val x: Self & (PersistOptions[S, PersistedState])) extends AnyVal {
       
       inline def setDeserialize(value: /* str */ String => StorageValue[PersistedState] | js.Promise[StorageValue[PersistedState]]): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
@@ -170,7 +171,8 @@ object middlewarePersistMod {
       __obj.asInstanceOf[StateStorage]
     }
     
-    extension [Self <: StateStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateStorage] (val x: Self) extends AnyVal {
       
       inline def setGetItem(value: String => String | Null | (js.Promise[String | Null])): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
@@ -193,7 +195,8 @@ object middlewarePersistMod {
       __obj.asInstanceOf[StorageValue[S]]
     }
     
-    extension [Self <: StorageValue[?], S](x: Self & StorageValue[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageValue[?], S] (val x: Self & StorageValue[S]) extends AnyVal {
       
       inline def setState(value: S): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
@@ -214,7 +217,8 @@ object middlewarePersistMod {
       __obj.asInstanceOf[StorePersist[S, Ps]]
     }
     
-    extension [Self <: StorePersist[?, ?], S, Ps](x: Self & (StorePersist[S, Ps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorePersist[?, ?], S, Ps] (val x: Self & (StorePersist[S, Ps])) extends AnyVal {
       
       inline def setPersist(value: GetOptions[S, Ps]): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     }
@@ -248,7 +252,8 @@ object middlewarePersistMod {
         __obj.asInstanceOf[StoreMutators[S, A]]
       }
       
-      extension [Self <: StoreMutators[?, ?], S, A](x: Self & (StoreMutators[S, A])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StoreMutators[?, ?], S, A] (val x: Self & (StoreMutators[S, A])) extends AnyVal {
         
         inline def setZustandSlashpersist(value: WithPersist[S, A]): Self = StObject.set(x, "zustand/persist", value.asInstanceOf[js.Any])
       }

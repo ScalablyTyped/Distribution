@@ -62,7 +62,8 @@ object buildJimpMod {
       __obj.asInstanceOf[JimpGlobalOptions]
     }
     
-    extension [Self <: JimpGlobalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JimpGlobalOptions] (val x: Self) extends AnyVal {
       
       inline def setCompressionLevel(value: _empty): Self = StObject.set(x, "compressionLevel", value.asInstanceOf[js.Any])
       

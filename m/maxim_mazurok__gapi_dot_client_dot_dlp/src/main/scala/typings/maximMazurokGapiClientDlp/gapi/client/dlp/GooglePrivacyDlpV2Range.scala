@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2Range {
     __obj.asInstanceOf[GooglePrivacyDlpV2Range]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Range](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Range] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

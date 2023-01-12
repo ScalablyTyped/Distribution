@@ -83,7 +83,8 @@ object BaiduMessage {
     __obj.asInstanceOf[BaiduMessage]
   }
   
-  extension [Self <: BaiduMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaiduMessage] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

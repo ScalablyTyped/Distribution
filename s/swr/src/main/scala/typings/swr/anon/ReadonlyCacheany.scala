@@ -25,7 +25,8 @@ object ReadonlyCacheany {
     __obj.asInstanceOf[ReadonlyCacheany]
   }
   
-  extension [Self <: ReadonlyCacheany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyCacheany] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: /* key */ Key => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     

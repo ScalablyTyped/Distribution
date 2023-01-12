@@ -23,7 +23,8 @@ object BatchCreateAttendeeResponse {
     __obj.asInstanceOf[BatchCreateAttendeeResponse]
   }
   
-  extension [Self <: BatchCreateAttendeeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateAttendeeResponse] (val x: Self) extends AnyVal {
     
     inline def setAttendees(value: AttendeeList): Self = StObject.set(x, "Attendees", value.asInstanceOf[js.Any])
     

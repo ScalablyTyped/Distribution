@@ -15,7 +15,8 @@ object EnumValuesAzureSubscription {
     __obj.asInstanceOf[EnumValuesAzureSubscription]
   }
   
-  extension [Self <: EnumValuesAzureSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAzureSubscription] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AzureSubscription): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

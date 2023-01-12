@@ -48,7 +48,8 @@ object PacketHeaderStatement {
     __obj.asInstanceOf[PacketHeaderStatement]
   }
   
-  extension [Self <: PacketHeaderStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PacketHeaderStatement] (val x: Self) extends AnyVal {
     
     inline def setDestinationAddresses(value: ValueStringList): Self = StObject.set(x, "DestinationAddresses", value.asInstanceOf[js.Any])
     

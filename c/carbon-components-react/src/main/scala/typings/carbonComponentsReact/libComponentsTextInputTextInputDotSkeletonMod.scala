@@ -27,7 +27,8 @@ object libComponentsTextInputTextInputDotSkeletonMod extends Shortcut {
       __obj.asInstanceOf[TextInputSkeletonProps]
     }
     
-    extension [Self <: TextInputSkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputSkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setHideLabel(value: Boolean): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
       

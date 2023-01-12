@@ -31,7 +31,8 @@ object materialsTexturesHardwareTextureWrapperMod {
       __obj.asInstanceOf[HardwareTextureWrapper]
     }
     
-    extension [Self <: HardwareTextureWrapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HardwareTextureWrapper] (val x: Self) extends AnyVal {
       
       inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
       

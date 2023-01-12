@@ -23,7 +23,8 @@ object OnItemDragObjectResize {
     __obj.asInstanceOf[OnItemDragObjectResize]
   }
   
-  extension [Self <: OnItemDragObjectResize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnItemDragObjectResize] (val x: Self) extends AnyVal {
     
     inline def setEdge(value: left | right): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     

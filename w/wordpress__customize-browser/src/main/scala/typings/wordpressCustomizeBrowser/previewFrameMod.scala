@@ -54,7 +54,8 @@ object previewFrameMod {
       __obj.asInstanceOf[PreviewFrameParams]
     }
     
-    extension [Self <: PreviewFrameParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewFrameParams] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

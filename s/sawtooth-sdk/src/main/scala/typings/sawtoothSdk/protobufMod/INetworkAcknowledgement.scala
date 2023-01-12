@@ -17,7 +17,8 @@ object INetworkAcknowledgement {
     __obj.asInstanceOf[INetworkAcknowledgement]
   }
   
-  extension [Self <: INetworkAcknowledgement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INetworkAcknowledgement] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object NotesModule {
     __obj.asInstanceOf[NotesModule]
   }
   
-  extension [Self <: NotesModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotesModule] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

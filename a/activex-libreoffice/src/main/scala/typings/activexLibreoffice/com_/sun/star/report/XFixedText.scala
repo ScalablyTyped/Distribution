@@ -149,7 +149,8 @@ object XFixedText {
     __obj.asInstanceOf[XFixedText]
   }
   
-  extension [Self <: XFixedText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFixedText] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
   }

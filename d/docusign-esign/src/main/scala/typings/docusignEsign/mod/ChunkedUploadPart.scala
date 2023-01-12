@@ -25,7 +25,8 @@ object ChunkedUploadPart {
     __obj.asInstanceOf[ChunkedUploadPart]
   }
   
-  extension [Self <: ChunkedUploadPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkedUploadPart] (val x: Self) extends AnyVal {
     
     inline def setSequence(value: String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     

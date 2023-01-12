@@ -199,7 +199,8 @@ object UnoControlCheckBoxModel {
     __obj.asInstanceOf[UnoControlCheckBoxModel]
   }
   
-  extension [Self <: UnoControlCheckBoxModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlCheckBoxModel] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object libComponentsLayerLayerDotbaseMod {
       __obj.asInstanceOf[ILayerBaseState]
     }
     
-    extension [Self <: ILayerBaseState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILayerBaseState] (val x: Self) extends AnyVal {
       
       inline def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
       

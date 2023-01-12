@@ -25,7 +25,8 @@ object ProjectReference {
     __obj.asInstanceOf[ProjectReference]
   }
   
-  extension [Self <: ProjectReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectReference] (val x: Self) extends AnyVal {
     
     inline def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
     

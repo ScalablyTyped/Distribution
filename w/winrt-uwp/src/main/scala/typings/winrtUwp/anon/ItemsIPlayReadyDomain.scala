@@ -18,7 +18,8 @@ object ItemsIPlayReadyDomain {
     __obj.asInstanceOf[ItemsIPlayReadyDomain]
   }
   
-  extension [Self <: ItemsIPlayReadyDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsIPlayReadyDomain] (val x: Self) extends AnyVal {
     
     inline def setItems(value: IPlayReadyDomain): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UploadSuccessEvent {
     __obj.asInstanceOf[UploadSuccessEvent]
   }
   
-  extension [Self <: UploadSuccessEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadSuccessEvent] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: js.Array[Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

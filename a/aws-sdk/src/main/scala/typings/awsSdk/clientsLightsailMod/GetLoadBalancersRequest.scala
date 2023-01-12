@@ -18,7 +18,8 @@ object GetLoadBalancersRequest {
     __obj.asInstanceOf[GetLoadBalancersRequest]
   }
   
-  extension [Self <: GetLoadBalancersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLoadBalancersRequest] (val x: Self) extends AnyVal {
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     

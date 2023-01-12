@@ -32,7 +32,8 @@ object TestScriptScope {
     __obj.asInstanceOf[TestScriptScope]
   }
   
-  extension [Self <: TestScriptScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestScriptScope] (val x: Self) extends AnyVal {
     
     inline def setArtifact(value: String): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
     

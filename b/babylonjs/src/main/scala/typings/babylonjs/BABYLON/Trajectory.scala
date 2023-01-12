@@ -63,7 +63,8 @@ object Trajectory {
     __obj.asInstanceOf[Trajectory]
   }
   
-  extension [Self <: Trajectory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trajectory] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: DeepImmutable[Vector3] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

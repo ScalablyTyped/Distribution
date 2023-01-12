@@ -15,7 +15,8 @@ object CreateDBParameterGroupResult {
     __obj.asInstanceOf[CreateDBParameterGroupResult]
   }
   
-  extension [Self <: CreateDBParameterGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDBParameterGroupResult] (val x: Self) extends AnyVal {
     
     inline def setDBParameterGroup(value: DBParameterGroup): Self = StObject.set(x, "DBParameterGroup", value.asInstanceOf[js.Any])
     

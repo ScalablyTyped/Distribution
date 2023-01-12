@@ -26,7 +26,8 @@ object UpdateShapePropertiesRequest {
     __obj.asInstanceOf[UpdateShapePropertiesRequest]
   }
   
-  extension [Self <: UpdateShapePropertiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateShapePropertiesRequest] (val x: Self) extends AnyVal {
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

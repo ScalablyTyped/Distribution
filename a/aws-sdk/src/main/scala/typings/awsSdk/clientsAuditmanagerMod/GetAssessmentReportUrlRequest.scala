@@ -23,7 +23,8 @@ object GetAssessmentReportUrlRequest {
     __obj.asInstanceOf[GetAssessmentReportUrlRequest]
   }
   
-  extension [Self <: GetAssessmentReportUrlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssessmentReportUrlRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentId(value: UUID): Self = StObject.set(x, "assessmentId", value.asInstanceOf[js.Any])
     

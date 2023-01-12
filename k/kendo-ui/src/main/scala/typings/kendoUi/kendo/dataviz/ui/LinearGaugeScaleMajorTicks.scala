@@ -21,7 +21,8 @@ object LinearGaugeScaleMajorTicks {
     __obj.asInstanceOf[LinearGaugeScaleMajorTicks]
   }
   
-  extension [Self <: LinearGaugeScaleMajorTicks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGaugeScaleMajorTicks] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

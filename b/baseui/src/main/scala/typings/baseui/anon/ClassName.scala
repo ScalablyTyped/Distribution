@@ -19,7 +19,8 @@ object ClassName {
     __obj.asInstanceOf[ClassName[P]]
   }
   
-  extension [Self <: ClassName[?], P /* <: js.Object */](x: Self & ClassName[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassName[?], P /* <: js.Object */] (val x: Self & ClassName[P]) extends AnyVal {
     
     inline def set$style(value: StyleObject | (js.Function1[/* props */ P, StyleObject])): Self = StObject.set(x, "$style", value.asInstanceOf[js.Any])
     

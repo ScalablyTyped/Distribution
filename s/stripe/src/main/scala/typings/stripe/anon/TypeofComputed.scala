@@ -17,7 +17,8 @@ object TypeofComputed {
     __obj.asInstanceOf[TypeofComputed]
   }
   
-  extension [Self <: TypeofComputed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofComputed] (val x: Self) extends AnyVal {
     
     inline def setRecurring(value: TypeofRecurring): Self = StObject.set(x, "Recurring", value.asInstanceOf[js.Any])
     

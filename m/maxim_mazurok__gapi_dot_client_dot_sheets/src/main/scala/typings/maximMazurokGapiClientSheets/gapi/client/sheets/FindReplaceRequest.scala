@@ -44,7 +44,8 @@ object FindReplaceRequest {
     __obj.asInstanceOf[FindReplaceRequest]
   }
   
-  extension [Self <: FindReplaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindReplaceRequest] (val x: Self) extends AnyVal {
     
     inline def setAllSheets(value: Boolean): Self = StObject.set(x, "allSheets", value.asInstanceOf[js.Any])
     

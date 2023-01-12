@@ -16,7 +16,8 @@ object DimensionsCartesian3 {
     __obj.asInstanceOf[DimensionsCartesian3]
   }
   
-  extension [Self <: DimensionsCartesian3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionsCartesian3] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: Cartesian3): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
   }

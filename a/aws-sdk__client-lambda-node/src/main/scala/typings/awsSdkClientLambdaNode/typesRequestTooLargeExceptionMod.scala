@@ -21,7 +21,8 @@ object typesRequestTooLargeExceptionMod {
       __obj.asInstanceOf[RequestTooLargeException]
     }
     
-    extension [Self <: RequestTooLargeException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestTooLargeException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.RequestTooLargeException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesRequestTooLargeExceptionMod {
       __obj.asInstanceOf[RequestTooLargeExceptionDetails]
     }
     
-    extension [Self <: RequestTooLargeExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestTooLargeExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

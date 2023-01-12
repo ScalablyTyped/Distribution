@@ -28,7 +28,8 @@ object InventoryFilter {
     __obj.asInstanceOf[InventoryFilter]
   }
   
-  extension [Self <: InventoryFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryFilter] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: InventoryFilterCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

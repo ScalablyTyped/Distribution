@@ -25,7 +25,8 @@ object ConditionDefinitionObservation {
     __obj.asInstanceOf[ConditionDefinitionObservation]
   }
   
-  extension [Self <: ConditionDefinitionObservation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionDefinitionObservation] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

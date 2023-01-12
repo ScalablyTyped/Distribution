@@ -67,7 +67,8 @@ object GetDashboardEmbedUrlRequest {
     __obj.asInstanceOf[GetDashboardEmbedUrlRequest]
   }
   
-  extension [Self <: GetDashboardEmbedUrlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDashboardEmbedUrlRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalDashboardIds(value: AdditionalDashboardIdList): Self = StObject.set(x, "AdditionalDashboardIds", value.asInstanceOf[js.Any])
     

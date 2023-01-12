@@ -38,7 +38,8 @@ object EulaAcceptance {
     __obj.asInstanceOf[EulaAcceptance]
   }
   
-  extension [Self <: EulaAcceptance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EulaAcceptance] (val x: Self) extends AnyVal {
     
     inline def setAcceptedAt(value: js.Date): Self = StObject.set(x, "acceptedAt", value.asInstanceOf[js.Any])
     

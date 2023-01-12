@@ -100,7 +100,8 @@ object typesLatestSrcPoliciesRequestPolicyMod {
       __obj.asInstanceOf[RequestPolicy]
     }
     
-    extension [Self <: RequestPolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestPolicy] (val x: Self) extends AnyVal {
       
       inline def setSendRequest(value: WebResourceLike => js.Promise[HttpOperationResponse]): Self = StObject.set(x, "sendRequest", js.Any.fromFunction1(value))
     }
@@ -117,7 +118,8 @@ object typesLatestSrcPoliciesRequestPolicyMod {
       __obj.asInstanceOf[RequestPolicyFactory]
     }
     
-    extension [Self <: RequestPolicyFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestPolicyFactory] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (RequestPolicy, RequestPolicyOptionsLike) => RequestPolicy): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     }
@@ -147,7 +149,8 @@ object typesLatestSrcPoliciesRequestPolicyMod {
       __obj.asInstanceOf[RequestPolicyOptionsLike]
     }
     
-    extension [Self <: RequestPolicyOptionsLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestPolicyOptionsLike] (val x: Self) extends AnyVal {
       
       inline def setLog(value: (HttpPipelineLogLevel, String) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       

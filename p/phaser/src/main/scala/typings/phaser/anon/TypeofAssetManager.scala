@@ -19,7 +19,8 @@ object TypeofAssetManager {
     __obj.asInstanceOf[TypeofAssetManager]
   }
   
-  extension [Self <: TypeofAssetManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAssetManager] (val x: Self) extends AnyVal {
     
     inline def setDownloadBinary(value: Any): Self = StObject.set(x, "downloadBinary", value.asInstanceOf[js.Any])
     

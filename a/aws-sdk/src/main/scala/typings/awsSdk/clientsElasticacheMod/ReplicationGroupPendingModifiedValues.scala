@@ -43,7 +43,8 @@ object ReplicationGroupPendingModifiedValues {
     __obj.asInstanceOf[ReplicationGroupPendingModifiedValues]
   }
   
-  extension [Self <: ReplicationGroupPendingModifiedValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationGroupPendingModifiedValues] (val x: Self) extends AnyVal {
     
     inline def setAuthTokenStatus(value: AuthTokenUpdateStatus): Self = StObject.set(x, "AuthTokenStatus", value.asInstanceOf[js.Any])
     

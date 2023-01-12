@@ -39,7 +39,8 @@ object SpanIterator {
     __obj.asInstanceOf[SpanIterator[T]]
   }
   
-  extension [Self <: SpanIterator[?], T /* <: RangeValue */](x: Self & SpanIterator[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpanIterator[?], T /* <: RangeValue */] (val x: Self & SpanIterator[T]) extends AnyVal {
     
     inline def setPoint(value: (Double, Double, T, js.Array[T], Double, Double) => Unit): Self = StObject.set(x, "point", js.Any.fromFunction6(value))
     

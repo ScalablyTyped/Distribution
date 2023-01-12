@@ -18,7 +18,8 @@ object StopAppReplicationRequest {
     __obj.asInstanceOf[StopAppReplicationRequest]
   }
   
-  extension [Self <: StopAppReplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopAppReplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

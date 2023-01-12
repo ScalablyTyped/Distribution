@@ -43,7 +43,8 @@ object srcWorkspaceMod {
       __obj.asInstanceOf[ScandalResult]
     }
     
-    extension [Self <: ScandalResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScandalResult] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
@@ -390,7 +391,8 @@ object srcWorkspaceMod {
       __obj.asInstanceOf[WorkspaceOpenOptions]
     }
     
-    extension [Self <: WorkspaceOpenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceOpenOptions] (val x: Self) extends AnyVal {
       
       inline def setActivateItem(value: Boolean): Self = StObject.set(x, "activateItem", value.asInstanceOf[js.Any])
       
@@ -447,7 +449,8 @@ object srcWorkspaceMod {
       __obj.asInstanceOf[WorkspaceScanOptions]
     }
     
-    extension [Self <: WorkspaceScanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceScanOptions] (val x: Self) extends AnyVal {
       
       inline def setLeadingContextLineCount(value: Double): Self = StObject.set(x, "leadingContextLineCount", value.asInstanceOf[js.Any])
       

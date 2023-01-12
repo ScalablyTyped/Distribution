@@ -135,7 +135,8 @@ object anon {
       __obj.asInstanceOf[AddToCart]
     }
     
-    extension [Self <: AddToCart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddToCart] (val x: Self) extends AnyVal {
       
       inline def setAddToCart(value: typings.mparticleWebSdk.mod.ProductActionType.AddToCart): Self = StObject.set(x, "AddToCart", value.asInstanceOf[js.Any])
       
@@ -229,7 +230,8 @@ object anon {
       __obj.asInstanceOf[AliasUsers]
     }
     
-    extension [Self <: AliasUsers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AliasUsers] (val x: Self) extends AnyVal {
       
       inline def setAliasUsers(
         value: (/* aliasRequest */ UserAliasRequest, /* callback */ js.UndefOr[AliasUsersCallback]) => Unit
@@ -714,7 +716,8 @@ object anon {
       __obj.asInstanceOf[Cart]
     }
     
-    extension [Self <: Cart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cart] (val x: Self) extends AnyVal {
       
       inline def setCart(value: typings.mparticleWebSdk.mod.Cart): Self = StObject.set(x, "Cart", value.asInstanceOf[js.Any])
       
@@ -797,7 +800,8 @@ object anon {
       __obj.asInstanceOf[CreateCCPAConsent]
     }
     
-    extension [Self <: CreateCCPAConsent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateCCPAConsent] (val x: Self) extends AnyVal {
       
       inline def setCreateCCPAConsent(
         value: (/* consented */ Boolean, /* timestamp */ Double, /* consentDocument */ String, /* location */ String, /* hardwareId */ String) => PrivacyConsentState
@@ -884,7 +888,8 @@ object anon {
       __obj.asInstanceOf[CustomerId]
     }
     
-    extension [Self <: CustomerId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomerId] (val x: Self) extends AnyVal {
       
       inline def setCustomerId(value: typings.mparticleWebSdk.mod.IdentityType.CustomerId): Self = StObject.set(x, "CustomerId", value.asInstanceOf[js.Any])
       
@@ -943,7 +948,8 @@ object anon {
       __obj.asInstanceOf[GetSession]
     }
     
-    extension [Self <: GetSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSession] (val x: Self) extends AnyVal {
       
       inline def setGetSession(value: () => String): Self = StObject.set(x, "getSession", js.Any.fromFunction0(value))
     }
@@ -962,7 +968,8 @@ object anon {
       __obj.asInstanceOf[HttpCode]
     }
     
-    extension [Self <: HttpCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpCode] (val x: Self) extends AnyVal {
       
       inline def setHttpCode(value: Double): Self = StObject.set(x, "httpCode", value.asInstanceOf[js.Any])
       
@@ -983,7 +990,8 @@ object anon {
       __obj.asInstanceOf[Latitude]
     }
     
-    extension [Self <: Latitude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Latitude] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -1031,7 +1039,8 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: typings.mparticleWebSdk.mod.EventType.Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
       
@@ -1104,7 +1113,8 @@ object anon {
       __obj.asInstanceOf[ProductAddToCart]
     }
     
-    extension [Self <: ProductAddToCart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductAddToCart] (val x: Self) extends AnyVal {
       
       inline def setProductAddToCart(value: typings.mparticleWebSdk.mod.CommerceEventType.ProductAddToCart): Self = StObject.set(x, "ProductAddToCart", value.asInstanceOf[js.Any])
       
@@ -1153,7 +1163,8 @@ object anon {
       __obj.asInstanceOf[PromotionClick]
     }
     
-    extension [Self <: PromotionClick](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromotionClick] (val x: Self) extends AnyVal {
       
       inline def setPromotionClick(value: typings.mparticleWebSdk.mod.PromotionType.PromotionClick): Self = StObject.set(x, "PromotionClick", value.asInstanceOf[js.Any])
       

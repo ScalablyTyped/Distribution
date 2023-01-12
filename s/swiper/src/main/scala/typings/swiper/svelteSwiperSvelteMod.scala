@@ -63,7 +63,8 @@ object svelteSwiperSvelteMod {
       __obj.asInstanceOf[SwiperSlideProps]
     }
     
-    extension [Self <: SwiperSlideProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwiperSlideProps] (val x: Self) extends AnyVal {
       
       inline def setVirtualIndex(value: Double): Self = StObject.set(x, "virtualIndex", value.asInstanceOf[js.Any])
       

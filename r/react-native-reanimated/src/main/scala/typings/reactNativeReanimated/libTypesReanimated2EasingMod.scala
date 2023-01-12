@@ -121,7 +121,8 @@ object libTypesReanimated2EasingMod {
       __obj.asInstanceOf[EasingFactoryFn]
     }
     
-    extension [Self <: EasingFactoryFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EasingFactoryFn] (val x: Self) extends AnyVal {
       
       inline def setFactory(value: () => EasingFn): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
     }

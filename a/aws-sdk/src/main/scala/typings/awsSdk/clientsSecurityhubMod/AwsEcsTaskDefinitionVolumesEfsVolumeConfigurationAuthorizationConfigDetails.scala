@@ -23,7 +23,8 @@ object AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetai
     __obj.asInstanceOf[AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetails] (val x: Self) extends AnyVal {
     
     inline def setAccessPointId(value: NonEmptyString): Self = StObject.set(x, "AccessPointId", value.asInstanceOf[js.Any])
     

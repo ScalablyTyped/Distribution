@@ -41,7 +41,8 @@ object DubDelayOptions {
     __obj.asInstanceOf[DubDelayOptions]
   }
   
-  extension [Self <: DubDelayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DubDelayOptions] (val x: Self) extends AnyVal {
     
     inline def setCutoff(value: Double): Self = StObject.set(x, "cutoff", value.asInstanceOf[js.Any])
     

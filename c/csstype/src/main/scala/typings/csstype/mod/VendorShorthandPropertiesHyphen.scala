@@ -206,7 +206,8 @@ object VendorShorthandPropertiesHyphen {
     __obj.asInstanceOf[VendorShorthandPropertiesHyphen[TLength, TTime]]
   }
   
-  extension [Self <: VendorShorthandPropertiesHyphen[?, ?], TLength, TTime](x: Self & (VendorShorthandPropertiesHyphen[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VendorShorthandPropertiesHyphen[?, ?], TLength, TTime] (val x: Self & (VendorShorthandPropertiesHyphen[TLength, TTime])) extends AnyVal {
     
     inline def `set-moz-animation`(value: Animation[TTime]): Self = StObject.set(x, "-moz-animation", value.asInstanceOf[js.Any])
     

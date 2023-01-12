@@ -207,7 +207,8 @@ object ListMulti {
     __obj.asInstanceOf[ListMulti]
   }
   
-  extension [Self <: ListMulti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMulti] (val x: Self) extends AnyVal {
     
     inline def setList(value: PipeListSync): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

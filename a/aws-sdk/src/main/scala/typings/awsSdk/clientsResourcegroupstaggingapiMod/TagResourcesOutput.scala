@@ -18,7 +18,8 @@ object TagResourcesOutput {
     __obj.asInstanceOf[TagResourcesOutput]
   }
   
-  extension [Self <: TagResourcesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagResourcesOutput] (val x: Self) extends AnyVal {
     
     inline def setFailedResourcesMap(value: FailedResourcesMap): Self = StObject.set(x, "FailedResourcesMap", value.asInstanceOf[js.Any])
     

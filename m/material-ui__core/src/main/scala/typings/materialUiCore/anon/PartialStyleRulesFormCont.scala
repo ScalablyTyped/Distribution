@@ -33,7 +33,8 @@ object PartialStyleRulesFormCont {
     __obj.asInstanceOf[PartialStyleRulesFormCont]
   }
   
-  extension [Self <: PartialStyleRulesFormCont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesFormCont] (val x: Self) extends AnyVal {
     
     inline def setFullWidth(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

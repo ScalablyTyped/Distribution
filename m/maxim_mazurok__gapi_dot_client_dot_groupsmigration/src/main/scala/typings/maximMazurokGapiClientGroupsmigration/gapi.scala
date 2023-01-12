@@ -35,7 +35,8 @@ object gapi {
           __obj.asInstanceOf[Groups]
         }
         
-        extension [Self <: Groups](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Groups] (val x: Self) extends AnyVal {
           
           inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           

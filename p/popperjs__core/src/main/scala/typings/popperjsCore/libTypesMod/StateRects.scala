@@ -17,7 +17,8 @@ object StateRects {
     __obj.asInstanceOf[StateRects]
   }
   
-  extension [Self <: StateRects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateRects] (val x: Self) extends AnyVal {
     
     inline def setPopper(value: Rect): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object AssociationGeometriesResultProperties {
     __obj.asInstanceOf[AssociationGeometriesResultProperties]
   }
   
-  extension [Self <: AssociationGeometriesResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociationGeometriesResultProperties] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: js.Array[AssociationProperties]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
     

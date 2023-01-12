@@ -24,7 +24,8 @@ object revokeKeyReasonForRevocation {
     __obj.asInstanceOf[revokeKeyReasonForRevocation]
   }
   
-  extension [Self <: revokeKeyReasonForRevocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: revokeKeyReasonForRevocation] (val x: Self) extends AnyVal {
     
     inline def setFlag(value: reasonForRevocation): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     

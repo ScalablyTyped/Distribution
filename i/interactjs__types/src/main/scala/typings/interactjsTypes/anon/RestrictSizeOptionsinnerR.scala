@@ -42,7 +42,8 @@ object RestrictSizeOptionsinnerR {
     __obj.asInstanceOf[RestrictSizeOptionsinnerR]
   }
   
-  extension [Self <: RestrictSizeOptionsinnerR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestrictSizeOptionsinnerR] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

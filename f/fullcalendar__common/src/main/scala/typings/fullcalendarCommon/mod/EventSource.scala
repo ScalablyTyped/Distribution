@@ -54,7 +54,8 @@ object EventSource {
     __obj.asInstanceOf[EventSource[Meta]]
   }
   
-  extension [Self <: EventSource[?], Meta](x: Self & EventSource[Meta]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventSource[?], Meta] (val x: Self & EventSource[Meta]) extends AnyVal {
     
     inline def setDefaultAllDay(value: Boolean): Self = StObject.set(x, "defaultAllDay", value.asInstanceOf[js.Any])
     

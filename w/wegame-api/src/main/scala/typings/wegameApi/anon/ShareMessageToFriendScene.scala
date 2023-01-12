@@ -18,7 +18,8 @@ object ShareMessageToFriendScene {
     __obj.asInstanceOf[ShareMessageToFriendScene]
   }
   
-  extension [Self <: ShareMessageToFriendScene](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareMessageToFriendScene] (val x: Self) extends AnyVal {
     
     inline def setShareMessageToFriendScene(value: Double): Self = StObject.set(x, "shareMessageToFriendScene", value.asInstanceOf[js.Any])
   }

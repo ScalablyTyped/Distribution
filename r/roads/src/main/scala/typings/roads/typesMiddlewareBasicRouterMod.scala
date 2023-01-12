@@ -99,7 +99,8 @@ object typesMiddlewareBasicRouterMod {
       __obj.asInstanceOf[BasicRouterURL]
     }
     
-    extension [Self <: BasicRouterURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicRouterURL] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Record[String, String | Double]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object typesMiddlewareBasicRouterMod {
       __obj.asInstanceOf[RouteDetails]
     }
     
-    extension [Self <: RouteDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteDetails] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

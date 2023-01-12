@@ -51,7 +51,8 @@ object CellPropertiesBorderLoadOptions {
     __obj.asInstanceOf[CellPropertiesBorderLoadOptions]
   }
   
-  extension [Self <: CellPropertiesBorderLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellPropertiesBorderLoadOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SceneAnalyzedEventArgs {
     __obj.asInstanceOf[SceneAnalyzedEventArgs]
   }
   
-  extension [Self <: SceneAnalyzedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneAnalyzedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setResultFrame(value: SceneAnalysisEffectFrame): Self = StObject.set(x, "resultFrame", value.asInstanceOf[js.Any])
   }

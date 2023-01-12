@@ -18,7 +18,8 @@ object ResetTimerAction {
     __obj.asInstanceOf[ResetTimerAction]
   }
   
-  extension [Self <: ResetTimerAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetTimerAction] (val x: Self) extends AnyVal {
     
     inline def setTimerName(value: TimerName): Self = StObject.set(x, "timerName", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object PartialOptionsAltAxis {
     __obj.asInstanceOf[PartialOptionsAltAxis]
   }
   
-  extension [Self <: PartialOptionsAltAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptionsAltAxis] (val x: Self) extends AnyVal {
     
     inline def setAltAxis(value: Boolean): Self = StObject.set(x, "altAxis", value.asInstanceOf[js.Any])
     

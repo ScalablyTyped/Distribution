@@ -23,7 +23,8 @@ object DataReplicationError {
     __obj.asInstanceOf[DataReplicationError]
   }
   
-  extension [Self <: DataReplicationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataReplicationError] (val x: Self) extends AnyVal {
     
     inline def setError(value: DataReplicationErrorString): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

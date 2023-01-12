@@ -28,7 +28,8 @@ object layout {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
@@ -90,7 +91,8 @@ object layout {
       __obj.asInstanceOf[IBox]
     }
     
-    extension [Self <: IBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBox] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: java.lang.String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object layout {
       __obj.asInstanceOf[ICard]
     }
     
-    extension [Self <: ICard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICard] (val x: Self) extends AnyVal {
       
       inline def setOnItemInnerStateChange(
         value: (/* item */ js.UndefOr[Any], /* isInner */ js.UndefOr[Any], /* destroying */ js.UndefOr[Any]) => Unit
@@ -206,7 +209,8 @@ object layout {
       __obj.asInstanceOf[IDefault]
     }
     
-    extension [Self <: IDefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDefault] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: typings.senchaTouch.Ext.fx.layout.ICard): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -246,7 +250,8 @@ object layout {
       __obj.asInstanceOf[IFit]
     }
     
-    extension [Self <: IFit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFit] (val x: Self) extends AnyVal {
       
       inline def setOnItemInnerStateChange(value: (/* item */ js.UndefOr[Any], /* isInner */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onItemInnerStateChange", js.Any.fromFunction2(value))
       
@@ -273,7 +278,8 @@ object layout {
       __obj.asInstanceOf[IFlexBox]
     }
     
-    extension [Self <: IFlexBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFlexBox] (val x: Self) extends AnyVal {
       
       inline def setSetItemFlex(value: (/* item */ js.UndefOr[IComponent], /* flex */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "setItemFlex", js.Any.fromFunction2(value))
       
@@ -309,7 +315,8 @@ object layout {
       __obj.asInstanceOf[IFloat]
     }
     
-    extension [Self <: IFloat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFloat] (val x: Self) extends AnyVal {
       
       inline def setGetDirection(value: () => java.lang.String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
       
@@ -411,7 +418,8 @@ object layout {
         __obj.asInstanceOf[IBoxDock]
       }
       
-      extension [Self <: IBoxDock](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IBoxDock] (val x: Self) extends AnyVal {
         
         inline def setGetBodyElement(value: () => Any): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
         
@@ -534,7 +542,8 @@ object layout {
         __obj.asInstanceOf[IDock]
       }
       
-      extension [Self <: IDock](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDock] (val x: Self) extends AnyVal {
         
         inline def setGetBodyElement(value: () => Any): Self = StObject.set(x, "getBodyElement", js.Any.fromFunction0(value))
         
@@ -617,7 +626,8 @@ object layout {
         __obj.asInstanceOf[IInner]
       }
       
-      extension [Self <: IInner](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IInner] (val x: Self) extends AnyVal {
         
         inline def setGetContainer(value: () => Any): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
         

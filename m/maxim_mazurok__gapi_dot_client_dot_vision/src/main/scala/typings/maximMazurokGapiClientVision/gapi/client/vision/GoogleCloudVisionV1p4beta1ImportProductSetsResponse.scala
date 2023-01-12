@@ -22,7 +22,8 @@ object GoogleCloudVisionV1p4beta1ImportProductSetsResponse {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1ImportProductSetsResponse]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1ImportProductSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1ImportProductSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setReferenceImages(value: js.Array[GoogleCloudVisionV1p4beta1ReferenceImage]): Self = StObject.set(x, "referenceImages", value.asInstanceOf[js.Any])
     

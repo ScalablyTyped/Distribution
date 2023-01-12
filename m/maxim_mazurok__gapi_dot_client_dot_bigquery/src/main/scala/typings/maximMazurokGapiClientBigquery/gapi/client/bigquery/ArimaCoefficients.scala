@@ -22,7 +22,8 @@ object ArimaCoefficients {
     __obj.asInstanceOf[ArimaCoefficients]
   }
   
-  extension [Self <: ArimaCoefficients](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArimaCoefficients] (val x: Self) extends AnyVal {
     
     inline def setAutoRegressiveCoefficients(value: js.Array[Double]): Self = StObject.set(x, "autoRegressiveCoefficients", value.asInstanceOf[js.Any])
     

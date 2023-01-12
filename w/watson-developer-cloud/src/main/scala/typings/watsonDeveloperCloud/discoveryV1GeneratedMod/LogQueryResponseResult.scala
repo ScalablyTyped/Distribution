@@ -56,7 +56,8 @@ object LogQueryResponseResult {
     __obj.asInstanceOf[LogQueryResponseResult]
   }
   
-  extension [Self <: LogQueryResponseResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogQueryResponseResult] (val x: Self) extends AnyVal {
     
     inline def setClient_timestamp(value: String): Self = StObject.set(x, "client_timestamp", value.asInstanceOf[js.Any])
     

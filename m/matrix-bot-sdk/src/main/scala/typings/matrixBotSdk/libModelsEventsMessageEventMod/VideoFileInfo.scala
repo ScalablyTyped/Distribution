@@ -22,7 +22,8 @@ object VideoFileInfo {
     __obj.asInstanceOf[VideoFileInfo]
   }
   
-  extension [Self <: VideoFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoFileInfo] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
   }

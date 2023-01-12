@@ -68,7 +68,8 @@ object Workteam {
     __obj.asInstanceOf[Workteam]
   }
   
-  extension [Self <: Workteam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Workteam] (val x: Self) extends AnyVal {
     
     inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     

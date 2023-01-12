@@ -26,7 +26,8 @@ object CatIndicesParams {
     __obj.asInstanceOf[CatIndicesParams]
   }
   
-  extension [Self <: CatIndicesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatIndicesParams] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: CatBytes): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

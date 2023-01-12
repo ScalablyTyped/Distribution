@@ -22,7 +22,8 @@ object BoundariesIgnoreElementEnd {
     __obj.asInstanceOf[BoundariesIgnoreElementEnd]
   }
   
-  extension [Self <: BoundariesIgnoreElementEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundariesIgnoreElementEnd] (val x: Self) extends AnyVal {
     
     inline def setBoundaries(value: default): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object UserManagedStatus {
     __obj.asInstanceOf[UserManagedStatus]
   }
   
-  extension [Self <: UserManagedStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserManagedStatus] (val x: Self) extends AnyVal {
     
     inline def setReplicas(value: js.Array[ReplicaStatus]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     

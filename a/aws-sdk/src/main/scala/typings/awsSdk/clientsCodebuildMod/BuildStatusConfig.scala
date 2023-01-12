@@ -23,7 +23,8 @@ object BuildStatusConfig {
     __obj.asInstanceOf[BuildStatusConfig]
   }
   
-  extension [Self <: BuildStatusConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildStatusConfig] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

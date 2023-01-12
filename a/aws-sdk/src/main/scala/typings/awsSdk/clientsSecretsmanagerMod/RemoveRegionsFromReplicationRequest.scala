@@ -23,7 +23,8 @@ object RemoveRegionsFromReplicationRequest {
     __obj.asInstanceOf[RemoveRegionsFromReplicationRequest]
   }
   
-  extension [Self <: RemoveRegionsFromReplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveRegionsFromReplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setRemoveReplicaRegions(value: RemoveReplicaRegionListType): Self = StObject.set(x, "RemoveReplicaRegions", value.asInstanceOf[js.Any])
     

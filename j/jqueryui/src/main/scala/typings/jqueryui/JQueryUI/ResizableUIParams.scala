@@ -36,7 +36,8 @@ object ResizableUIParams {
     __obj.asInstanceOf[ResizableUIParams]
   }
   
-  extension [Self <: ResizableUIParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizableUIParams] (val x: Self) extends AnyVal {
     
     inline def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

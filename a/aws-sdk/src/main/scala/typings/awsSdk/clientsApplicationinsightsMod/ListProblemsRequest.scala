@@ -43,7 +43,8 @@ object ListProblemsRequest {
     __obj.asInstanceOf[ListProblemsRequest]
   }
   
-  extension [Self <: ListProblemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProblemsRequest] (val x: Self) extends AnyVal {
     
     inline def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
     

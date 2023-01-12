@@ -18,7 +18,8 @@ object GetComputedStyleForNodeResponse {
     __obj.asInstanceOf[GetComputedStyleForNodeResponse]
   }
   
-  extension [Self <: GetComputedStyleForNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComputedStyleForNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setComputedStyle(value: js.Array[CSSComputedStyleProperty]): Self = StObject.set(x, "computedStyle", value.asInstanceOf[js.Any])
     

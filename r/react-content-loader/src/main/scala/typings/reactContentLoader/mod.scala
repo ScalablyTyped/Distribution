@@ -79,7 +79,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IContentLoaderProps]
     }
     
-    extension [Self <: IContentLoaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContentLoaderProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

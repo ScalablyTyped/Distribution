@@ -38,7 +38,8 @@ object IconBackgroundOptions {
     __obj.asInstanceOf[IconBackgroundOptions]
   }
   
-  extension [Self <: IconBackgroundOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconBackgroundOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

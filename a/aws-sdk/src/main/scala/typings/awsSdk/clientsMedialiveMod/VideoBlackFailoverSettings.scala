@@ -23,7 +23,8 @@ object VideoBlackFailoverSettings {
     __obj.asInstanceOf[VideoBlackFailoverSettings]
   }
   
-  extension [Self <: VideoBlackFailoverSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoBlackFailoverSettings] (val x: Self) extends AnyVal {
     
     inline def setBlackDetectThreshold(value: doubleMin0Max1): Self = StObject.set(x, "BlackDetectThreshold", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object libTableHooksUseFilterMod {
       __obj.asInstanceOf[FilterConfig[RecordType]]
     }
     
-    extension [Self <: FilterConfig[?], RecordType](x: Self & FilterConfig[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterConfig[?], RecordType] (val x: Self & FilterConfig[RecordType]) extends AnyVal {
       
       inline def setDropdownPrefixCls(value: String): Self = StObject.set(x, "dropdownPrefixCls", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object libTableHooksUseFilterMod {
       __obj.asInstanceOf[FilterState[RecordType]]
     }
     
-    extension [Self <: FilterState[?], RecordType](x: Self & FilterState[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterState[?], RecordType] (val x: Self & FilterState[RecordType]) extends AnyVal {
       
       inline def setColumn(value: ColumnType[RecordType]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

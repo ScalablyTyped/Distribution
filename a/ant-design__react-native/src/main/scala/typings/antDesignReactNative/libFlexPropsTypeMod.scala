@@ -34,7 +34,8 @@ object libFlexPropsTypeMod {
       __obj.asInstanceOf[FlexItemPropsType]
     }
     
-    extension [Self <: FlexItemPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexItemPropsType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object libFlexPropsTypeMod {
       __obj.asInstanceOf[FlexPropsType]
     }
     
-    extension [Self <: FlexPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexPropsType] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: start | center | end | baseline | stretch): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

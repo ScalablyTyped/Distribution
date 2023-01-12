@@ -50,7 +50,8 @@ object MemData {
     __obj.asInstanceOf[MemData]
   }
   
-  extension [Self <: MemData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemData] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

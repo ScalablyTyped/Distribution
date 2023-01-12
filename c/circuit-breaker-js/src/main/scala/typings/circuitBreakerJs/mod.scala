@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[Metrics]
     }
     
-    extension [Self <: Metrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
       
       inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setErrorThreshold(value: Double): Self = StObject.set(x, "errorThreshold", value.asInstanceOf[js.Any])
       

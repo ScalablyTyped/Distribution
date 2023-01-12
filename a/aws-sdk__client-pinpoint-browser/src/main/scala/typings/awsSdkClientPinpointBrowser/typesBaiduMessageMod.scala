@@ -91,7 +91,8 @@ object typesBaiduMessageMod {
       __obj.asInstanceOf[BaiduMessage]
     }
     
-    extension [Self <: BaiduMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaiduMessage] (val x: Self) extends AnyVal {
       
       inline def setAction(value: OPEN_APP | DEEP_LINK | URL | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object typesBaiduMessageMod {
       __obj.asInstanceOf[UnmarshalledBaiduMessage]
     }
     
-    extension [Self <: UnmarshalledBaiduMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledBaiduMessage] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       

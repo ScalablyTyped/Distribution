@@ -21,7 +21,8 @@ object MappingShortNumberProperty {
     __obj.asInstanceOf[MappingShortNumberProperty]
   }
   
-  extension [Self <: MappingShortNumberProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingShortNumberProperty] (val x: Self) extends AnyVal {
     
     inline def setNull_value(value: short): Self = StObject.set(x, "null_value", value.asInstanceOf[js.Any])
     

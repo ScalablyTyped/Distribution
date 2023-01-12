@@ -26,7 +26,8 @@ object UpdateOptions {
     __obj.asInstanceOf[UpdateOptions]
   }
   
-  extension [Self <: UpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setWithoutChangeEvent(value: Boolean): Self = StObject.set(x, "withoutChangeEvent", value.asInstanceOf[js.Any])
     

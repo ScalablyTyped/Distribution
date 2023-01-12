@@ -17,7 +17,8 @@ object Transform {
     __obj.asInstanceOf[Transform]
   }
   
-  extension [Self <: Transform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
     
     inline def setTransform(value: js.Array[TranslateX]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     

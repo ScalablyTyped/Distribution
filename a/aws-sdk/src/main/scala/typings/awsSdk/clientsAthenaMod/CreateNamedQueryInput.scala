@@ -43,7 +43,8 @@ object CreateNamedQueryInput {
     __obj.asInstanceOf[CreateNamedQueryInput]
   }
   
-  extension [Self <: CreateNamedQueryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNamedQueryInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: IdempotencyToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

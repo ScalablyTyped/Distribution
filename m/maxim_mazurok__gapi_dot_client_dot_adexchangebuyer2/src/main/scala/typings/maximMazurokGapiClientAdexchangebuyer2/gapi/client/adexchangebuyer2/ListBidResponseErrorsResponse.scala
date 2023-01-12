@@ -22,7 +22,8 @@ object ListBidResponseErrorsResponse {
     __obj.asInstanceOf[ListBidResponseErrorsResponse]
   }
   
-  extension [Self <: ListBidResponseErrorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBidResponseErrorsResponse] (val x: Self) extends AnyVal {
     
     inline def setCalloutStatusRows(value: js.Array[CalloutStatusRow]): Self = StObject.set(x, "calloutStatusRows", value.asInstanceOf[js.Any])
     

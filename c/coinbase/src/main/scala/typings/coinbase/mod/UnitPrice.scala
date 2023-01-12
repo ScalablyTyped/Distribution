@@ -28,7 +28,8 @@ object UnitPrice {
     __obj.asInstanceOf[UnitPrice]
   }
   
-  extension [Self <: UnitPrice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnitPrice] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

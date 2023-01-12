@@ -33,7 +33,8 @@ object ResponseHeadersPolicyList {
     __obj.asInstanceOf[ResponseHeadersPolicyList]
   }
   
-  extension [Self <: ResponseHeadersPolicyList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeadersPolicyList] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ResponseHeadersPolicySummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object Addedby {
     __obj.asInstanceOf[Addedby]
   }
   
-  extension [Self <: Addedby](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Addedby] (val x: Self) extends AnyVal {
     
     inline def setAdded_by(value: String): Self = StObject.set(x, "added_by", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object WebApp {
     __obj.asInstanceOf[WebApp]
   }
   
-  extension [Self <: WebApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebApp] (val x: Self) extends AnyVal {
     
     inline def setDisplayMode(value: String): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     

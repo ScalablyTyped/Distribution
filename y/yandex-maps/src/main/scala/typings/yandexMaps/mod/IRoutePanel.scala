@@ -30,7 +30,8 @@ object IRoutePanel {
     __obj.asInstanceOf[IRoutePanel]
   }
   
-  extension [Self <: IRoutePanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRoutePanel] (val x: Self) extends AnyVal {
     
     inline def setGetRoute(value: () => MultiRoute): Self = StObject.set(x, "getRoute", js.Any.fromFunction0(value))
     

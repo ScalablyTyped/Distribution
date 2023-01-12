@@ -20,7 +20,8 @@ object ILogPreEntry {
     __obj.asInstanceOf[ILogPreEntry]
   }
   
-  extension [Self <: ILogPreEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILogPreEntry] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

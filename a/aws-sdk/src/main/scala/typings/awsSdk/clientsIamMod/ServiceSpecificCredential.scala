@@ -56,7 +56,8 @@ object ServiceSpecificCredential {
     __obj.asInstanceOf[ServiceSpecificCredential]
   }
   
-  extension [Self <: ServiceSpecificCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceSpecificCredential] (val x: Self) extends AnyVal {
     
     inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     

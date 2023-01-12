@@ -223,7 +223,8 @@ object ojcheckboxsetMod {
         __obj.asInstanceOf[Option]
       }
       
-      extension [Self <: Option](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
         
         inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
@@ -253,7 +254,8 @@ object ojcheckboxsetMod {
         __obj.asInstanceOf[OptionContext[D]]
       }
       
-      extension [Self <: OptionContext[?], D](x: Self & OptionContext[D]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OptionContext[?], D] (val x: Self & OptionContext[D]) extends AnyVal {
         
         inline def setComponent(value: Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
         
@@ -277,7 +279,8 @@ object ojcheckboxsetMod {
         __obj.asInstanceOf[OptionsKeys]
       }
       
-      extension [Self <: OptionsKeys](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OptionsKeys] (val x: Self) extends AnyVal {
         
         inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
@@ -440,7 +443,8 @@ object ojcheckboxsetMod {
       __obj.asInstanceOf[ojCheckboxsetEventMap[K, D]]
     }
     
-    extension [Self <: ojCheckboxsetEventMap[?, ?], K, D](x: Self & (ojCheckboxsetEventMap[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojCheckboxsetEventMap[?, ?], K, D] (val x: Self & (ojCheckboxsetEventMap[K, D])) extends AnyVal {
       
       inline def setLabelledByChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "labelledByChanged", value.asInstanceOf[js.Any])
       
@@ -495,7 +499,8 @@ object ojcheckboxsetMod {
       __obj.asInstanceOf[ojCheckboxsetSettableProperties[K, D]]
     }
     
-    extension [Self <: ojCheckboxsetSettableProperties[?, ?], K, D](x: Self & (ojCheckboxsetSettableProperties[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojCheckboxsetSettableProperties[?, ?], K, D] (val x: Self & (ojCheckboxsetSettableProperties[K, D])) extends AnyVal {
       
       inline def setLabelledBy(value: String): Self = StObject.set(x, "labelledBy", value.asInstanceOf[js.Any])
       
@@ -565,7 +570,8 @@ object ojcheckboxsetMod {
       __obj.asInstanceOf[ojCheckboxsetSettablePropertiesLenient[K, D]]
     }
     
-    extension [Self <: ojCheckboxsetSettablePropertiesLenient[?, ?], K, D](x: Self & (ojCheckboxsetSettablePropertiesLenient[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojCheckboxsetSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojCheckboxsetSettablePropertiesLenient[K, D])) extends AnyVal {
       
       inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       

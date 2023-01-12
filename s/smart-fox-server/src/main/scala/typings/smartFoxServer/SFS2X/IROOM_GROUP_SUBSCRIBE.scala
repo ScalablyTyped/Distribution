@@ -18,7 +18,8 @@ object IROOM_GROUP_SUBSCRIBE {
     __obj.asInstanceOf[IROOM_GROUP_SUBSCRIBE]
   }
   
-  extension [Self <: IROOM_GROUP_SUBSCRIBE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IROOM_GROUP_SUBSCRIBE] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

@@ -140,7 +140,8 @@ object CornerRadiusBottomLeft {
     __obj.asInstanceOf[CornerRadiusBottomLeft]
   }
   
-  extension [Self <: CornerRadiusBottomLeft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CornerRadiusBottomLeft] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

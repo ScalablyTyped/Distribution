@@ -22,7 +22,8 @@ object RuntimeData {
     __obj.asInstanceOf[RuntimeData]
   }
   
-  extension [Self <: RuntimeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeData] (val x: Self) extends AnyVal {
     
     inline def setEnableEvents(value: Boolean): Self = StObject.set(x, "enableEvents", value.asInstanceOf[js.Any])
     

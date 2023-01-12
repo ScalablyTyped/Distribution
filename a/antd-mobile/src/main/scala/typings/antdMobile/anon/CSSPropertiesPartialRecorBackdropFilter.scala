@@ -9977,7 +9977,8 @@ object CSSPropertiesPartialRecorBackdropFilter {
     __obj.asInstanceOf[CSSPropertiesPartialRecorBackdropFilter]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorBackdropFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorBackdropFilter] (val x: Self) extends AnyVal {
     
     inline def `set--color`(value: String): Self = StObject.set(x, "--color", value.asInstanceOf[js.Any])
     

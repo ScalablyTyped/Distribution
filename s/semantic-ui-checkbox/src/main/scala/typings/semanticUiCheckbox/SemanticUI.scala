@@ -177,7 +177,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
           
@@ -247,13 +248,15 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
       
-      extension [Self <: ErrorSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
@@ -270,7 +273,8 @@ object SemanticUI {
           __obj.asInstanceOf[typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings.Param]
         }
         
-        extension [Self <: typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings.Param](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings.Param] (val x: Self) extends AnyVal {
           
           inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
@@ -298,7 +302,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
           
@@ -500,7 +505,8 @@ object SemanticUI {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setBeforeChecked(value: () => Unit | `false`): Self = StObject.set(x, "beforeChecked", js.Any.fromFunction0(value))
         

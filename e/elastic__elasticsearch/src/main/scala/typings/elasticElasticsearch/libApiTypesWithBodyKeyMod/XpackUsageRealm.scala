@@ -31,7 +31,8 @@ object XpackUsageRealm {
     __obj.asInstanceOf[XpackUsageRealm]
   }
   
-  extension [Self <: XpackUsageRealm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageRealm] (val x: Self) extends AnyVal {
     
     inline def setCache(value: js.Array[XpackUsageRealmCache]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

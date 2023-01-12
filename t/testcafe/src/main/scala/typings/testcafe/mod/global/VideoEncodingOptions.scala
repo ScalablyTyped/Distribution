@@ -46,7 +46,8 @@ object VideoEncodingOptions {
     __obj.asInstanceOf[VideoEncodingOptions]
   }
   
-  extension [Self <: VideoEncodingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoEncodingOptions] (val x: Self) extends AnyVal {
     
     inline def setAspect(value: String): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     

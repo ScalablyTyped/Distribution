@@ -19,7 +19,8 @@ object GetBatteryInfoSuccessCallbackResult {
     __obj.asInstanceOf[GetBatteryInfoSuccessCallbackResult]
   }
   
-  extension [Self <: GetBatteryInfoSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBatteryInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setIsCharging(value: Boolean): Self = StObject.set(x, "isCharging", value.asInstanceOf[js.Any])
     

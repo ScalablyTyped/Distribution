@@ -49,7 +49,8 @@ object dxChartSeriesTypesRangeAreaSeries {
     __obj.asInstanceOf[dxChartSeriesTypesRangeAreaSeries]
   }
   
-  extension [Self <: dxChartSeriesTypesRangeAreaSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartSeriesTypesRangeAreaSeries] (val x: Self) extends AnyVal {
     
     inline def setAggregation(value: dxChartSeriesTypesRangeAreaSeriesAggregation): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     

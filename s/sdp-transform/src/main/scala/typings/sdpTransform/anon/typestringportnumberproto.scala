@@ -129,7 +129,8 @@ object typestringportnumberproto {
     __obj.asInstanceOf[typestringportnumberproto]
   }
   
-  extension [Self <: typestringportnumberproto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typestringportnumberproto] (val x: Self) extends AnyVal {
     
     inline def setBandwidth(value: js.Array[Limit]): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     

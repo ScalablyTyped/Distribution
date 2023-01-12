@@ -23,7 +23,8 @@ object DescribeEventAggregatesResponse {
     __obj.asInstanceOf[DescribeEventAggregatesResponse]
   }
   
-  extension [Self <: DescribeEventAggregatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEventAggregatesResponse] (val x: Self) extends AnyVal {
     
     inline def setEventAggregates(value: EventAggregateList): Self = StObject.set(x, "eventAggregates", value.asInstanceOf[js.Any])
     

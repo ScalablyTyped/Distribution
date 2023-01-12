@@ -517,7 +517,8 @@ object imgMod {
       __obj.asInstanceOf[ImgProps]
     }
     
-    extension [Self <: ImgProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImgProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

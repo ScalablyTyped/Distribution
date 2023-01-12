@@ -29,7 +29,8 @@ object ProviderContextValue {
     __obj.asInstanceOf[ProviderContextValue]
   }
   
-  extension [Self <: ProviderContextValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProviderContextValue] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

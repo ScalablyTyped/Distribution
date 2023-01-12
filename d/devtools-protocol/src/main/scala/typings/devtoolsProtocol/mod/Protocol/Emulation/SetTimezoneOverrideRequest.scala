@@ -19,7 +19,8 @@ object SetTimezoneOverrideRequest {
     __obj.asInstanceOf[SetTimezoneOverrideRequest]
   }
   
-  extension [Self <: SetTimezoneOverrideRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTimezoneOverrideRequest] (val x: Self) extends AnyVal {
     
     inline def setTimezoneId(value: String): Self = StObject.set(x, "timezoneId", value.asInstanceOf[js.Any])
   }

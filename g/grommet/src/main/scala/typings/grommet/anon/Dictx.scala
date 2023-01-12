@@ -22,7 +22,8 @@ object Dictx {
     __obj.asInstanceOf[Dictx]
   }
   
-  extension [Self <: Dictx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
     
     inline def setLarge(value: BorderSize): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     

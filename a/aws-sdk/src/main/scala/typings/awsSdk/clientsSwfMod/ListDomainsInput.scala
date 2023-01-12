@@ -33,7 +33,8 @@ object ListDomainsInput {
     __obj.asInstanceOf[ListDomainsInput]
   }
   
-  extension [Self <: ListDomainsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDomainsInput] (val x: Self) extends AnyVal {
     
     inline def setMaximumPageSize(value: PageSize): Self = StObject.set(x, "maximumPageSize", value.asInstanceOf[js.Any])
     

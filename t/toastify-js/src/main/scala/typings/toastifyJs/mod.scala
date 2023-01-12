@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
@@ -221,7 +223,8 @@ object mod {
       __obj.asInstanceOf[Toastify]
     }
     
-    extension [Self <: Toastify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Toastify] (val x: Self) extends AnyVal {
       
       inline def setHideToast(value: () => Unit): Self = StObject.set(x, "hideToast", js.Any.fromFunction0(value))
       

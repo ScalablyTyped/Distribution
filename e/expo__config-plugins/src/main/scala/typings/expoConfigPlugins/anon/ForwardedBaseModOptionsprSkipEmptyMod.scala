@@ -20,7 +20,8 @@ object ForwardedBaseModOptionsprSkipEmptyMod {
     __obj.asInstanceOf[ForwardedBaseModOptionsprSkipEmptyMod]
   }
   
-  extension [Self <: ForwardedBaseModOptionsprSkipEmptyMod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardedBaseModOptionsprSkipEmptyMod] (val x: Self) extends AnyVal {
     
     inline def setProviders(value: PartialIosDefaultProviderAppDelegate): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     

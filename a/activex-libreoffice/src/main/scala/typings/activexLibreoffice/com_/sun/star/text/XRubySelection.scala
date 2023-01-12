@@ -43,7 +43,8 @@ object XRubySelection {
     __obj.asInstanceOf[XRubySelection]
   }
   
-  extension [Self <: XRubySelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRubySelection] (val x: Self) extends AnyVal {
     
     inline def setGetRubyList(value: Boolean => SafeArray[PropertyValues]): Self = StObject.set(x, "getRubyList", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object DeleteWebhookInput {
     __obj.asInstanceOf[DeleteWebhookInput]
   }
   
-  extension [Self <: DeleteWebhookInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWebhookInput] (val x: Self) extends AnyVal {
     
     inline def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }

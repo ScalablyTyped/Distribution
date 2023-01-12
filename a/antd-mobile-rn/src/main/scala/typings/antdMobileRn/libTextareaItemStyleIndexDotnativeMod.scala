@@ -64,7 +64,8 @@ object libTextareaItemStyleIndexDotnativeMod {
       __obj.asInstanceOf[ITextareaItemStyle]
     }
     
-    extension [Self <: ITextareaItemStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextareaItemStyle] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

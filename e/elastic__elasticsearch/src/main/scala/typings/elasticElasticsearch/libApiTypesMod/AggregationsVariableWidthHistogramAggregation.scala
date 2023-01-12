@@ -21,7 +21,8 @@ object AggregationsVariableWidthHistogramAggregation {
     __obj.asInstanceOf[AggregationsVariableWidthHistogramAggregation]
   }
   
-  extension [Self <: AggregationsVariableWidthHistogramAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsVariableWidthHistogramAggregation] (val x: Self) extends AnyVal {
     
     inline def setBuckets(value: integer): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     

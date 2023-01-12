@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[AnalyticsProviderProps]
     }
     
-    extension [Self <: AnalyticsProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object mod {
       __obj.asInstanceOf[WithAnalyticsProps]
     }
     
-    extension [Self <: WithAnalyticsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithAnalyticsProps] (val x: Self) extends AnyVal {
       
       inline def setAnalytics(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnalyticsInstance */ Any

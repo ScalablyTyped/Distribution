@@ -95,7 +95,8 @@ object SFSymbol {
     __obj.asInstanceOf[SFSymbol]
   }
   
-  extension [Self <: SFSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFSymbol] (val x: Self) extends AnyVal {
     
     inline def setApplyBlackWeight(value: () => Unit): Self = StObject.set(x, "applyBlackWeight", js.Any.fromFunction0(value))
     

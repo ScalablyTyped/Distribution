@@ -123,7 +123,8 @@ object ReadonlyImageProps {
     __obj.asInstanceOf[ReadonlyImageProps]
   }
   
-  extension [Self <: ReadonlyImageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyImageProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

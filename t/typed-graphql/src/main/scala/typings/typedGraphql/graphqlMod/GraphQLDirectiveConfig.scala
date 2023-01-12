@@ -25,7 +25,8 @@ object GraphQLDirectiveConfig {
     __obj.asInstanceOf[GraphQLDirectiveConfig]
   }
   
-  extension [Self <: GraphQLDirectiveConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQLDirectiveConfig] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[GraphQLArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

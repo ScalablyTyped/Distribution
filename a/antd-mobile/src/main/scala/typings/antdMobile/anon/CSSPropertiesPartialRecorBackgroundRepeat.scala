@@ -9977,7 +9977,8 @@ object CSSPropertiesPartialRecorBackgroundRepeat {
     __obj.asInstanceOf[CSSPropertiesPartialRecorBackgroundRepeat]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorBackgroundRepeat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorBackgroundRepeat] (val x: Self) extends AnyVal {
     
     inline def `set--description-font-size`(value: String): Self = StObject.set(x, "--description-font-size", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object libTransferListBodyMod {
       __obj.asInstanceOf[TransferListBodyProps[RecordType]]
     }
     
-    extension [Self <: TransferListBodyProps[?], RecordType](x: Self & TransferListBodyProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferListBodyProps[?], RecordType] (val x: Self & TransferListBodyProps[RecordType]) extends AnyVal {
       
       inline def setFilteredItems(value: js.Array[RecordType]): Self = StObject.set(x, "filteredItems", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object libTransferListBodyMod {
       __obj.asInstanceOf[TransferListBodyState]
     }
     
-    extension [Self <: TransferListBodyState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferListBodyState] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }

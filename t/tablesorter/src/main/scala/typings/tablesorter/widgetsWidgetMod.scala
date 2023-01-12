@@ -105,7 +105,8 @@ object widgetsWidgetMod {
       __obj.asInstanceOf[Widget[TElement]]
     }
     
-    extension [Self <: Widget[?], TElement](x: Self & Widget[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Widget[?], TElement] (val x: Self & Widget[TElement]) extends AnyVal {
       
       inline def setFormat(value: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[Any], Boolean) => Unit): Self = StObject.set(x, "format", js.Any.fromFunction4(value))
       

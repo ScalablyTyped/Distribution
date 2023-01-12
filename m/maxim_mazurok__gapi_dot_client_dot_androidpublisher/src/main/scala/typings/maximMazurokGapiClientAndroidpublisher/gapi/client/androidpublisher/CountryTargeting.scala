@@ -19,7 +19,8 @@ object CountryTargeting {
     __obj.asInstanceOf[CountryTargeting]
   }
   
-  extension [Self <: CountryTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountryTargeting] (val x: Self) extends AnyVal {
     
     inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     

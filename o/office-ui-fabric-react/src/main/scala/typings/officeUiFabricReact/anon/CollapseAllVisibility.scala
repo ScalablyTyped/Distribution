@@ -24,7 +24,8 @@ object CollapseAllVisibility {
     __obj.asInstanceOf[CollapseAllVisibility]
   }
   
-  extension [Self <: CollapseAllVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapseAllVisibility] (val x: Self) extends AnyVal {
     
     inline def setCollapseAllVisibility(
       value: typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.CollapseAllVisibility

@@ -22,7 +22,8 @@ object DropLevelOffset {
     __obj.asInstanceOf[DropLevelOffset]
   }
   
-  extension [Self <: DropLevelOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropLevelOffset] (val x: Self) extends AnyVal {
     
     inline def setDropLevelOffset(value: Double): Self = StObject.set(x, "dropLevelOffset", value.asInstanceOf[js.Any])
     

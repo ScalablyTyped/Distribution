@@ -18,7 +18,8 @@ object EncoderResult {
     __obj.asInstanceOf[EncoderResult]
   }
   
-  extension [Self <: EncoderResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncoderResult] (val x: Self) extends AnyVal {
     
     inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

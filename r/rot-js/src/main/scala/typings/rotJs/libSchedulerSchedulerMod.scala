@@ -128,7 +128,8 @@ object libSchedulerSchedulerMod {
       __obj.asInstanceOf[Scheduler[T]]
     }
     
-    extension [Self <: Scheduler[?], T](x: Self & Scheduler[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scheduler[?], T] (val x: Self & Scheduler[T]) extends AnyVal {
       
       inline def setAdd(value: (T, Boolean) => Scheduler[T]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       

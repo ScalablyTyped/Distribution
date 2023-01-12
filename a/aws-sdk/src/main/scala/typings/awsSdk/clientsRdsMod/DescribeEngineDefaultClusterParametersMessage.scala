@@ -33,7 +33,8 @@ object DescribeEngineDefaultClusterParametersMessage {
     __obj.asInstanceOf[DescribeEngineDefaultClusterParametersMessage]
   }
   
-  extension [Self <: DescribeEngineDefaultClusterParametersMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEngineDefaultClusterParametersMessage] (val x: Self) extends AnyVal {
     
     inline def setDBParameterGroupFamily(value: String): Self = StObject.set(x, "DBParameterGroupFamily", value.asInstanceOf[js.Any])
     

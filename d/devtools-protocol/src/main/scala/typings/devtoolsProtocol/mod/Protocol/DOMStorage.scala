@@ -17,7 +17,8 @@ object DOMStorage {
       __obj.asInstanceOf[ClearRequest]
     }
     
-    extension [Self <: ClearRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearRequest] (val x: Self) extends AnyVal {
       
       inline def setStorageId(value: StorageId): Self = StObject.set(x, "storageId", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object DOMStorage {
       __obj.asInstanceOf[DomStorageItemAddedEvent]
     }
     
-    extension [Self <: DomStorageItemAddedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomStorageItemAddedEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object DOMStorage {
       __obj.asInstanceOf[DomStorageItemRemovedEvent]
     }
     
-    extension [Self <: DomStorageItemRemovedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomStorageItemRemovedEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -86,7 +89,8 @@ object DOMStorage {
       __obj.asInstanceOf[DomStorageItemUpdatedEvent]
     }
     
-    extension [Self <: DomStorageItemUpdatedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomStorageItemUpdatedEvent] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -109,7 +113,8 @@ object DOMStorage {
       __obj.asInstanceOf[DomStorageItemsClearedEvent]
     }
     
-    extension [Self <: DomStorageItemsClearedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomStorageItemsClearedEvent] (val x: Self) extends AnyVal {
       
       inline def setStorageId(value: StorageId): Self = StObject.set(x, "storageId", value.asInstanceOf[js.Any])
     }
@@ -126,7 +131,8 @@ object DOMStorage {
       __obj.asInstanceOf[GetDOMStorageItemsRequest]
     }
     
-    extension [Self <: GetDOMStorageItemsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDOMStorageItemsRequest] (val x: Self) extends AnyVal {
       
       inline def setStorageId(value: StorageId): Self = StObject.set(x, "storageId", value.asInstanceOf[js.Any])
     }
@@ -143,7 +149,8 @@ object DOMStorage {
       __obj.asInstanceOf[GetDOMStorageItemsResponse]
     }
     
-    extension [Self <: GetDOMStorageItemsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDOMStorageItemsResponse] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: js.Array[Item]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
@@ -166,7 +173,8 @@ object DOMStorage {
       __obj.asInstanceOf[RemoveDOMStorageItemRequest]
     }
     
-    extension [Self <: RemoveDOMStorageItemRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveDOMStorageItemRequest] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -191,7 +199,8 @@ object DOMStorage {
       __obj.asInstanceOf[SetDOMStorageItemRequest]
     }
     
-    extension [Self <: SetDOMStorageItemRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetDOMStorageItemRequest] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -225,7 +234,8 @@ object DOMStorage {
       __obj.asInstanceOf[StorageId]
     }
     
-    extension [Self <: StorageId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageId] (val x: Self) extends AnyVal {
       
       inline def setIsLocalStorage(value: Boolean): Self = StObject.set(x, "isLocalStorage", value.asInstanceOf[js.Any])
       

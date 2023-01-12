@@ -15,7 +15,8 @@ object ShardsOperationResponseBase {
     __obj.asInstanceOf[ShardsOperationResponseBase]
   }
   
-  extension [Self <: ShardsOperationResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShardsOperationResponseBase] (val x: Self) extends AnyVal {
     
     inline def set_shards(value: ShardStatistics): Self = StObject.set(x, "_shards", value.asInstanceOf[js.Any])
   }

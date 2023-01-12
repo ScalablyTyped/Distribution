@@ -37,7 +37,8 @@ object libAssetExtensionMod {
       __obj.asInstanceOf[AssetExtension[ASSET, META_DATA]]
     }
     
-    extension [Self <: AssetExtension[?, ?], ASSET, META_DATA](x: Self & (AssetExtension[ASSET, META_DATA])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetExtension[?, ?], ASSET, META_DATA] (val x: Self & (AssetExtension[ASSET, META_DATA])) extends AnyVal {
       
       inline def setCache(value: Partial[CacheParser[ASSET]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

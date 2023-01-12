@@ -15,7 +15,8 @@ object StyleFontSize {
     __obj.asInstanceOf[StyleFontSize]
   }
   
-  extension [Self <: StyleFontSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleFontSize] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: FontSize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }

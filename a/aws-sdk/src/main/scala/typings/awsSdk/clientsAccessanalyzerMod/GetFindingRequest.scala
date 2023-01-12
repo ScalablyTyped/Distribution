@@ -23,7 +23,8 @@ object GetFindingRequest {
     __obj.asInstanceOf[GetFindingRequest]
   }
   
-  extension [Self <: GetFindingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFindingRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
     

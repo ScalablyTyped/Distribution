@@ -19,7 +19,8 @@ object AssignmentOrder {
     __obj.asInstanceOf[AssignmentOrder]
   }
   
-  extension [Self <: AssignmentOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignmentOrder] (val x: Self) extends AnyVal {
     
     inline def setOrder(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

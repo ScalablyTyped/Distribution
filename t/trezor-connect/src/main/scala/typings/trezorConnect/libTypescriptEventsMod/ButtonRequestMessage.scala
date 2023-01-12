@@ -21,7 +21,8 @@ object ButtonRequestMessage {
     __obj.asInstanceOf[ButtonRequestMessage]
   }
   
-  extension [Self <: ButtonRequestMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonRequestMessage] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: OmitButtonRequestcodecodeCode): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetSchemaByDefinitionInput {
     __obj.asInstanceOf[GetSchemaByDefinitionInput]
   }
   
-  extension [Self <: GetSchemaByDefinitionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSchemaByDefinitionInput] (val x: Self) extends AnyVal {
     
     inline def setSchemaDefinition(value: SchemaDefinitionString): Self = StObject.set(x, "SchemaDefinition", value.asInstanceOf[js.Any])
     

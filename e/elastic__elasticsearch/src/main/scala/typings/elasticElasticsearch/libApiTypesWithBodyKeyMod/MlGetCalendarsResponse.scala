@@ -17,7 +17,8 @@ object MlGetCalendarsResponse {
     __obj.asInstanceOf[MlGetCalendarsResponse]
   }
   
-  extension [Self <: MlGetCalendarsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetCalendarsResponse] (val x: Self) extends AnyVal {
     
     inline def setCalendars(value: js.Array[MlGetCalendarsCalendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object SphereDirectedParticleEmitter {
     __obj.asInstanceOf[SphereDirectedParticleEmitter]
   }
   
-  extension [Self <: SphereDirectedParticleEmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SphereDirectedParticleEmitter] (val x: Self) extends AnyVal {
     
     inline def setDirection1(value: Vector3): Self = StObject.set(x, "direction1", value.asInstanceOf[js.Any])
     

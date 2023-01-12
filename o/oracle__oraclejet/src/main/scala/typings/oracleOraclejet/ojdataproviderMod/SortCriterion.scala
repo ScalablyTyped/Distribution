@@ -17,7 +17,8 @@ object SortCriterion {
     __obj.asInstanceOf[SortCriterion[D]]
   }
   
-  extension [Self <: SortCriterion[?], D](x: Self & SortCriterion[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortCriterion[?], D] (val x: Self & SortCriterion[D]) extends AnyVal {
     
     inline def setAttribute(value: /* keyof D */ String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

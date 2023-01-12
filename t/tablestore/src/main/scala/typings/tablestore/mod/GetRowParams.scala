@@ -33,7 +33,8 @@ object GetRowParams {
     __obj.asInstanceOf[GetRowParams]
   }
   
-  extension [Self <: GetRowParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRowParams] (val x: Self) extends AnyVal {
     
     inline def setColumnFilter(value: ColumnCondition): Self = StObject.set(x, "columnFilter", value.asInstanceOf[js.Any])
     

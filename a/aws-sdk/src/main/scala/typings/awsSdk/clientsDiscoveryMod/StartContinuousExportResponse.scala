@@ -38,7 +38,8 @@ object StartContinuousExportResponse {
     __obj.asInstanceOf[StartContinuousExportResponse]
   }
   
-  extension [Self <: StartContinuousExportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartContinuousExportResponse] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

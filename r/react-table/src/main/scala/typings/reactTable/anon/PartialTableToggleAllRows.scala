@@ -31,7 +31,8 @@ object PartialTableToggleAllRows {
     __obj.asInstanceOf[PartialTableToggleAllRows]
   }
   
-  extension [Self <: PartialTableToggleAllRows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTableToggleAllRows] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

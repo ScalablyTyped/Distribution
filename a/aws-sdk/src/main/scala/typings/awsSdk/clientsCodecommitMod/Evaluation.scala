@@ -33,7 +33,8 @@ object Evaluation {
     __obj.asInstanceOf[Evaluation]
   }
   
-  extension [Self <: Evaluation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Evaluation] (val x: Self) extends AnyVal {
     
     inline def setApprovalRulesNotSatisfied(value: ApprovalRulesNotSatisfiedList): Self = StObject.set(x, "approvalRulesNotSatisfied", value.asInstanceOf[js.Any])
     

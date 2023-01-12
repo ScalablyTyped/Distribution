@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CellSize]
     }
     
-    extension [Self <: CellSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSize] (val x: Self) extends AnyVal {
       
       inline def setCellSize(value: Double): Self = StObject.set(x, "cellSize", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object AwsEcsContainerDetails {
     __obj.asInstanceOf[AwsEcsContainerDetails]
   }
   
-  extension [Self <: AwsEcsContainerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsContainerDetails] (val x: Self) extends AnyVal {
     
     inline def setImage(value: NonEmptyString): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     

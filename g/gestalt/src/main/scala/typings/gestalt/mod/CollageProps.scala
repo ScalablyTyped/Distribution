@@ -29,7 +29,8 @@ object CollageProps {
     __obj.asInstanceOf[CollageProps]
   }
   
-  extension [Self <: CollageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollageProps] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

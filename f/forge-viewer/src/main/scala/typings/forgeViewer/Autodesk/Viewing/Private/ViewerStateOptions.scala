@@ -29,7 +29,8 @@ object ViewerStateOptions {
     __obj.asInstanceOf[ViewerStateOptions]
   }
   
-  extension [Self <: ViewerStateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewerStateOptions] (val x: Self) extends AnyVal {
     
     inline def setCutplanes(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "cutplanes", value.asInstanceOf[js.Any])
     

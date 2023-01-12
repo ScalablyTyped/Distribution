@@ -28,7 +28,8 @@ object ITextArea {
     __obj.asInstanceOf[ITextArea]
   }
   
-  extension [Self <: ITextArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextArea] (val x: Self) extends AnyVal {
     
     inline def setGetMaxRows(value: () => Double): Self = StObject.set(x, "getMaxRows", js.Any.fromFunction0(value))
     

@@ -233,7 +233,8 @@ object libCommonProtocolDotsemanticTokensMod {
       __obj.asInstanceOf[SemanticTokensClientCapabilities]
     }
     
-    extension [Self <: SemanticTokensClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticTokensClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setAugmentsSyntaxTokens(value: Boolean): Self = StObject.set(x, "augmentsSyntaxTokens", value.asInstanceOf[js.Any])
       
@@ -294,7 +295,8 @@ object libCommonProtocolDotsemanticTokensMod {
       __obj.asInstanceOf[SemanticTokensDeltaParams]
     }
     
-    extension [Self <: SemanticTokensDeltaParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticTokensDeltaParams] (val x: Self) extends AnyVal {
       
       inline def setPreviousResultId(value: String): Self = StObject.set(x, "previousResultId", value.asInstanceOf[js.Any])
       
@@ -313,7 +315,8 @@ object libCommonProtocolDotsemanticTokensMod {
       __obj.asInstanceOf[SemanticTokensDeltaPartialResult]
     }
     
-    extension [Self <: SemanticTokensDeltaPartialResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticTokensDeltaPartialResult] (val x: Self) extends AnyVal {
       
       inline def setEdits(value: js.Array[SemanticTokensEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
       
@@ -348,7 +351,8 @@ object libCommonProtocolDotsemanticTokensMod {
       __obj.asInstanceOf[SemanticTokensOptions]
     }
     
-    extension [Self <: SemanticTokensOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticTokensOptions] (val x: Self) extends AnyVal {
       
       inline def setFull(value: Boolean | Delta): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
@@ -379,7 +383,8 @@ object libCommonProtocolDotsemanticTokensMod {
       __obj.asInstanceOf[SemanticTokensParams]
     }
     
-    extension [Self <: SemanticTokensParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticTokensParams] (val x: Self) extends AnyVal {
       
       inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     }
@@ -396,7 +401,8 @@ object libCommonProtocolDotsemanticTokensMod {
       __obj.asInstanceOf[SemanticTokensPartialResult]
     }
     
-    extension [Self <: SemanticTokensPartialResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticTokensPartialResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[uinteger]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -426,7 +432,8 @@ object libCommonProtocolDotsemanticTokensMod {
       __obj.asInstanceOf[SemanticTokensRangeParams]
     }
     
-    extension [Self <: SemanticTokensRangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticTokensRangeParams] (val x: Self) extends AnyVal {
       
       inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
@@ -467,7 +474,8 @@ object libCommonProtocolDotsemanticTokensMod {
       __obj.asInstanceOf[SemanticTokensWorkspaceClientCapabilities]
     }
     
-    extension [Self <: SemanticTokensWorkspaceClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticTokensWorkspaceClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setRefreshSupport(value: Boolean): Self = StObject.set(x, "refreshSupport", value.asInstanceOf[js.Any])
       

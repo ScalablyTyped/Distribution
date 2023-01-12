@@ -481,7 +481,8 @@ object libTextStyleMod {
       __obj.asInstanceOf[ITextStyle]
     }
     
-    extension [Self <: ITextStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextStyle] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: TextStyleAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

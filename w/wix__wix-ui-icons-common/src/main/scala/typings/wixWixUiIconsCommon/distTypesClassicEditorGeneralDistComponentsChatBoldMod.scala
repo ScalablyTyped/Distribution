@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsChatBoldMod extends Shortcut {
       __obj.asInstanceOf[ChatBoldProps]
     }
     
-    extension [Self <: ChatBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChatBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object AnimationParam {
     __obj.asInstanceOf[AnimationParam]
   }
   
-  extension [Self <: AnimationParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationParam] (val x: Self) extends AnyVal {
     
     inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Referer {
     __obj.asInstanceOf[Referer]
   }
   
-  extension [Self <: Referer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Referer] (val x: Self) extends AnyVal {
     
     inline def setReferer(value: String): Self = StObject.set(x, "referer", value.asInstanceOf[js.Any])
     

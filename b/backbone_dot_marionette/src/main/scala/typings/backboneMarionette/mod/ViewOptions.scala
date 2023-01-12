@@ -41,7 +41,8 @@ object ViewOptions {
     __obj.asInstanceOf[ViewOptions[TModel]]
   }
   
-  extension [Self <: ViewOptions[?], TModel /* <: Model[Any, ModelSetOptions, Any] */](x: Self & ViewOptions[TModel]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewOptions[?], TModel /* <: Model[Any, ModelSetOptions, Any] */] (val x: Self & ViewOptions[TModel]) extends AnyVal {
     
     inline def setRegionClass(value: Any): Self = StObject.set(x, "regionClass", value.asInstanceOf[js.Any])
     

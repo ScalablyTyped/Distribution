@@ -40,7 +40,8 @@ object ChartDataChangeEvent {
     __obj.asInstanceOf[ChartDataChangeEvent]
   }
   
-  extension [Self <: ChartDataChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDataChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setEndColumn(value: Double): Self = StObject.set(x, "EndColumn", value.asInstanceOf[js.Any])
     

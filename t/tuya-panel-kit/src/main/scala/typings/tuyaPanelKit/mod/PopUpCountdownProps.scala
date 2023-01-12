@@ -221,7 +221,8 @@ object PopUpCountdownProps {
     __obj.asInstanceOf[PopUpCountdownProps]
   }
   
-  extension [Self <: PopUpCountdownProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopUpCountdownProps] (val x: Self) extends AnyVal {
     
     inline def setCountdownWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "countdownWrapperStyle", value.asInstanceOf[js.Any])
     

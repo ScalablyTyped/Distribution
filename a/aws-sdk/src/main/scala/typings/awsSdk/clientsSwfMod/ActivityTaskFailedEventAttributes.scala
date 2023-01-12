@@ -33,7 +33,8 @@ object ActivityTaskFailedEventAttributes {
     __obj.asInstanceOf[ActivityTaskFailedEventAttributes]
   }
   
-  extension [Self <: ActivityTaskFailedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityTaskFailedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

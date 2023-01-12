@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[Command]
     }
     
-    extension [Self <: Command](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
       
       inline def setBestMatchOnly(value: Boolean): Self = StObject.set(x, "bestMatchOnly", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[ListeningOptions]
     }
     
-    extension [Self <: ListeningOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListeningOptions] (val x: Self) extends AnyVal {
       
       inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object mod {
       __obj.asInstanceOf[SpeechRecognitionOptions]
     }
     
-    extension [Self <: SpeechRecognitionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeechRecognitionOptions] (val x: Self) extends AnyVal {
       
       inline def setClearTranscriptOnListen(value: Boolean): Self = StObject.set(x, "clearTranscriptOnListen", value.asInstanceOf[js.Any])
       

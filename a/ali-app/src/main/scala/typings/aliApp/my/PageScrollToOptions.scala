@@ -17,7 +17,8 @@ object PageScrollToOptions {
     __obj.asInstanceOf[PageScrollToOptions]
   }
   
-  extension [Self <: PageScrollToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageScrollToOptions] (val x: Self) extends AnyVal {
     
     inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
   }

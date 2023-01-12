@@ -26,7 +26,8 @@ object ListNode {
     __obj.asInstanceOf[ListNode]
   }
   
-  extension [Self <: ListNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNode] (val x: Self) extends AnyVal {
     
     inline def setExpr(value: SQLNode): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object ASPxClientSchedulerRefreshAction {
     __obj.asInstanceOf[ASPxClientSchedulerRefreshAction]
   }
   
-  extension [Self <: ASPxClientSchedulerRefreshAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSchedulerRefreshAction] (val x: Self) extends AnyVal {
     
     inline def setActiveViewTypeChanged(value: Double): Self = StObject.set(x, "ActiveViewTypeChanged", value.asInstanceOf[js.Any])
     

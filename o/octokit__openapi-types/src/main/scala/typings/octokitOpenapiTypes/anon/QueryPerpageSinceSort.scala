@@ -17,7 +17,8 @@ object QueryPerpageSinceSort {
     __obj.asInstanceOf[QueryPerpageSinceSort]
   }
   
-  extension [Self <: QueryPerpageSinceSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryPerpageSinceSort] (val x: Self) extends AnyVal {
     
     inline def setPath(value: OwnerString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

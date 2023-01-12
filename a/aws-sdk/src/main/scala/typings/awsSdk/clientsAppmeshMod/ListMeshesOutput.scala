@@ -23,7 +23,8 @@ object ListMeshesOutput {
     __obj.asInstanceOf[ListMeshesOutput]
   }
   
-  extension [Self <: ListMeshesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMeshesOutput] (val x: Self) extends AnyVal {
     
     inline def setMeshes(value: MeshList): Self = StObject.set(x, "meshes", value.asInstanceOf[js.Any])
     

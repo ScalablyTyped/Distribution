@@ -23,7 +23,8 @@ object TlsValidationContext {
     __obj.asInstanceOf[TlsValidationContext]
   }
   
-  extension [Self <: TlsValidationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TlsValidationContext] (val x: Self) extends AnyVal {
     
     inline def setSubjectAlternativeNames(value: SubjectAlternativeNames): Self = StObject.set(x, "subjectAlternativeNames", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetWirelessDeviceStatisticsRequest {
     __obj.asInstanceOf[GetWirelessDeviceStatisticsRequest]
   }
   
-  extension [Self <: GetWirelessDeviceStatisticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWirelessDeviceStatisticsRequest] (val x: Self) extends AnyVal {
     
     inline def setWirelessDeviceId(value: WirelessDeviceId): Self = StObject.set(x, "WirelessDeviceId", value.asInstanceOf[js.Any])
   }

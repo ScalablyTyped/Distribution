@@ -16,7 +16,8 @@ object AggregateStep {
     __obj.asInstanceOf[AggregateStep[T]]
   }
   
-  extension [Self <: AggregateStep[?], T /* <: AggregateSteps */](x: Self & AggregateStep[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateStep[?], T /* <: AggregateSteps */] (val x: Self & AggregateStep[T]) extends AnyVal {
     
     inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

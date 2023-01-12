@@ -23,7 +23,8 @@ object ConfigurationOverrides {
     __obj.asInstanceOf[ConfigurationOverrides]
   }
   
-  extension [Self <: ConfigurationOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationOverrides] (val x: Self) extends AnyVal {
     
     inline def setApplicationConfiguration(value: ConfigurationList): Self = StObject.set(x, "applicationConfiguration", value.asInstanceOf[js.Any])
     

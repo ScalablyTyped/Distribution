@@ -48,7 +48,8 @@ object ImageRendition {
     __obj.asInstanceOf[ImageRendition]
   }
   
-  extension [Self <: ImageRendition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageRendition] (val x: Self) extends AnyVal {
     
     inline def setGet_height(value: () => Double): Self = StObject.set(x, "get_height", js.Any.fromFunction0(value))
     

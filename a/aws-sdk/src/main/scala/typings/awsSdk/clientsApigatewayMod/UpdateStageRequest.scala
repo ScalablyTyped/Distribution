@@ -28,7 +28,8 @@ object UpdateStageRequest {
     __obj.asInstanceOf[UpdateStageRequest]
   }
   
-  extension [Self <: UpdateStageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStageRequest] (val x: Self) extends AnyVal {
     
     inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     

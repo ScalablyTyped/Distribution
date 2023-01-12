@@ -30,7 +30,8 @@ object UserGestureConfig {
     __obj.asInstanceOf[UserGestureConfig]
   }
   
-  extension [Self <: UserGestureConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserGestureConfig] (val x: Self) extends AnyVal {
     
     inline def setDrag(value: DragConfig): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     

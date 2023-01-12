@@ -27,7 +27,8 @@ object ExecuteBudgetActionRequest {
     __obj.asInstanceOf[ExecuteBudgetActionRequest]
   }
   
-  extension [Self <: ExecuteBudgetActionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteBudgetActionRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

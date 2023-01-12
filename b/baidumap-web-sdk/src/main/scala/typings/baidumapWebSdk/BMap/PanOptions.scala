@@ -15,7 +15,8 @@ object PanOptions {
     __obj.asInstanceOf[PanOptions]
   }
   
-  extension [Self <: PanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanOptions] (val x: Self) extends AnyVal {
     
     inline def setNoAnimation(value: Boolean): Self = StObject.set(x, "noAnimation", value.asInstanceOf[js.Any])
     

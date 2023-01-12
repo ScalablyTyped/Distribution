@@ -23,7 +23,8 @@ object ListEnvironmentProvisionedResourcesInput {
     __obj.asInstanceOf[ListEnvironmentProvisionedResourcesInput]
   }
   
-  extension [Self <: ListEnvironmentProvisionedResourcesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEnvironmentProvisionedResourcesInput] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentName(value: ResourceName): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
     

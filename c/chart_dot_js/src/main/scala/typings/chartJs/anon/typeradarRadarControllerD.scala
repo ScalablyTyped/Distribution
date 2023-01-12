@@ -232,7 +232,8 @@ object typeradarRadarControllerD {
     __obj.asInstanceOf[typeradarRadarControllerD]
   }
   
-  extension [Self <: typeradarRadarControllerD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typeradarRadarControllerD] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpecradaronProgr): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

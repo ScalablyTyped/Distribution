@@ -16,7 +16,8 @@ object IStringified {
     __obj.asInstanceOf[IStringified]
   }
   
-  extension [Self <: IStringified](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStringified] (val x: Self) extends AnyVal {
     
     inline def setToString_(value: /* repeated */ Any => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
   }

@@ -28,7 +28,8 @@ object DeleteMobileDeviceAccessOverrideRequest {
     __obj.asInstanceOf[DeleteMobileDeviceAccessOverrideRequest]
   }
   
-  extension [Self <: DeleteMobileDeviceAccessOverrideRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMobileDeviceAccessOverrideRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     

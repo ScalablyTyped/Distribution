@@ -25,7 +25,8 @@ object TranspileOptions {
     __obj.asInstanceOf[TranspileOptions]
   }
   
-  extension [Self <: TranspileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranspileOptions] (val x: Self) extends AnyVal {
     
     inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
     

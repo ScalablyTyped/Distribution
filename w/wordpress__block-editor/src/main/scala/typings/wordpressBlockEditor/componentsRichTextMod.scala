@@ -489,7 +489,8 @@ object componentsRichTextMod {
         __obj.asInstanceOf[typings.wordpressBlockEditor.componentsRichTextMod.RichTextShortcut.Props]
       }
       
-      extension [Self <: typings.wordpressBlockEditor.componentsRichTextMod.RichTextShortcut.Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.wordpressBlockEditor.componentsRichTextMod.RichTextShortcut.Props] (val x: Self) extends AnyVal {
         
         inline def setCharacter(value: String): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
         
@@ -532,7 +533,8 @@ object componentsRichTextMod {
         __obj.asInstanceOf[typings.wordpressBlockEditor.componentsRichTextMod.RichTextToolbarButton.Props]
       }
       
-      extension [Self <: typings.wordpressBlockEditor.componentsRichTextMod.RichTextToolbarButton.Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.wordpressBlockEditor.componentsRichTextMod.RichTextToolbarButton.Props] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -579,7 +581,8 @@ object componentsRichTextMod {
         __obj.asInstanceOf[ContentProps[T]]
       }
       
-      extension [Self <: ContentProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.wordpressBlockEditor.wordpressBlockEditorStrings.a, typings.wordpressBlockEditor.wordpressBlockEditorStrings.abbr, typings.wordpressBlockEditor.wordpressBlockEditorStrings.address */ Any */](x: Self & ContentProps[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContentProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.wordpressBlockEditor.wordpressBlockEditorStrings.a, typings.wordpressBlockEditor.wordpressBlockEditorStrings.abbr, typings.wordpressBlockEditor.wordpressBlockEditorStrings.address */ Any */] (val x: Self & ContentProps[T]) extends AnyVal {
         
         inline def setMultiline(value: Boolean | p | li): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
         
@@ -1243,7 +1246,8 @@ object componentsRichTextMod {
         __obj.asInstanceOf[Props[T]]
       }
       
-      extension [Self <: Props[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.wordpressBlockEditor.wordpressBlockEditorStrings.a, typings.wordpressBlockEditor.wordpressBlockEditorStrings.abbr, typings.wordpressBlockEditor.wordpressBlockEditorStrings.address */ Any */](x: Self & Props[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.wordpressBlockEditor.wordpressBlockEditorStrings.a, typings.wordpressBlockEditor.wordpressBlockEditorStrings.abbr, typings.wordpressBlockEditor.wordpressBlockEditorStrings.address */ Any */] (val x: Self & Props[T]) extends AnyVal {
         
         inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
         

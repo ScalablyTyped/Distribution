@@ -55,7 +55,8 @@ object ScenarioFile {
     __obj.asInstanceOf[ScenarioFile]
   }
   
-  extension [Self <: ScenarioFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScenarioFile] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: beginner | challenging | expert | real | other | dlc | build_your_own): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

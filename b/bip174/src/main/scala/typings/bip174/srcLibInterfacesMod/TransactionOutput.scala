@@ -18,7 +18,8 @@ object TransactionOutput {
     __obj.asInstanceOf[TransactionOutput]
   }
   
-  extension [Self <: TransactionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionOutput] (val x: Self) extends AnyVal {
     
     inline def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     

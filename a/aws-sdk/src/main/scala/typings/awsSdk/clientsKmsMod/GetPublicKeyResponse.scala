@@ -48,7 +48,8 @@ object GetPublicKeyResponse {
     __obj.asInstanceOf[GetPublicKeyResponse]
   }
   
-  extension [Self <: GetPublicKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPublicKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomerMasterKeySpec(value: CustomerMasterKeySpec): Self = StObject.set(x, "CustomerMasterKeySpec", value.asInstanceOf[js.Any])
     

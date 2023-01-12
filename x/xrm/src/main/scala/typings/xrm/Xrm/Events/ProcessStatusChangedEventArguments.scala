@@ -35,7 +35,8 @@ object ProcessStatusChangedEventArguments {
     __obj.asInstanceOf[ProcessStatusChangedEventArguments]
   }
   
-  extension [Self <: ProcessStatusChangedEventArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessStatusChangedEventArguments] (val x: Self) extends AnyVal {
     
     inline def setGetStage(value: () => Stage): Self = StObject.set(x, "getStage", js.Any.fromFunction0(value))
     

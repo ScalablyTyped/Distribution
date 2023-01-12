@@ -17,7 +17,8 @@ object InspectorNotification {
     __obj.asInstanceOf[InspectorNotification[T]]
   }
   
-  extension [Self <: InspectorNotification[?], T](x: Self & InspectorNotification[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectorNotification[?], T] (val x: Self & InspectorNotification[T]) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

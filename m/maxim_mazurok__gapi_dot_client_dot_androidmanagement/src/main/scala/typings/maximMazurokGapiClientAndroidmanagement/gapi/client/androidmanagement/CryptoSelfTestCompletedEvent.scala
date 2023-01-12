@@ -16,7 +16,8 @@ object CryptoSelfTestCompletedEvent {
     __obj.asInstanceOf[CryptoSelfTestCompletedEvent]
   }
   
-  extension [Self <: CryptoSelfTestCompletedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoSelfTestCompletedEvent] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     

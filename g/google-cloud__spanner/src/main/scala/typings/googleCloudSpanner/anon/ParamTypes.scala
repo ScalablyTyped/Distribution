@@ -26,7 +26,8 @@ object ParamTypes {
     __obj.asInstanceOf[ParamTypes]
   }
   
-  extension [Self <: ParamTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParamTypes] (val x: Self) extends AnyVal {
     
     inline def setParamTypes(
       value: StringDictionary[

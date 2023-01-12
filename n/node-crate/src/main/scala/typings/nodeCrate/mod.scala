@@ -102,7 +102,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DBResultObject]
     }
     
-    extension [Self <: DBResultObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DBResultObject] (val x: Self) extends AnyVal {
       
       inline def setCols(value: js.Array[String]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       

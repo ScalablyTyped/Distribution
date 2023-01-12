@@ -45,7 +45,8 @@ object distTypingsNewFormatSpec0Dot8MethodsMod {
       __obj.asInstanceOf[Method08]
     }
     
-    extension [Self <: Method08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method08] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteParentUri(value: String): Self = StObject.set(x, "absoluteParentUri", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object distTypingsNewFormatSpec0Dot8MethodsMod {
       __obj.asInstanceOf[MethodBase08]
     }
     
-    extension [Self <: MethodBase08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodBase08] (val x: Self) extends AnyVal {
       
       inline def setBaseUriParameters(value: js.Array[Parameter08]): Self = StObject.set(x, "baseUriParameters", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object distTypingsNewFormatSpec0Dot8MethodsMod {
       __obj.asInstanceOf[TemplateReference]
     }
     
-    extension [Self <: TemplateReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateReference] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -236,7 +239,8 @@ object distTypingsNewFormatSpec0Dot8MethodsMod {
       __obj.asInstanceOf[Trait]
     }
     
-    extension [Self <: Trait](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Trait] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

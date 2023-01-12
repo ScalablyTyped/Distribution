@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsBookmarkSmallMod extends Shortcut {
       __obj.asInstanceOf[BookmarkSmallProps]
     }
     
-    extension [Self <: BookmarkSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookmarkSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

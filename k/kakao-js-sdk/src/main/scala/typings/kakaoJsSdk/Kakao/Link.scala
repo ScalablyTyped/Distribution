@@ -35,7 +35,8 @@ object Link {
       __obj.asInstanceOf[BaseObject[ObjectType]]
     }
     
-    extension [Self <: BaseObject[?], ObjectType /* <: String */](x: Self & BaseObject[ObjectType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseObject[?], ObjectType /* <: String */] (val x: Self & BaseObject[ObjectType]) extends AnyVal {
       
       inline def setButtonTitle(value: String): Self = StObject.set(x, "buttonTitle", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object Link {
       __obj.asInstanceOf[ButtonObject]
     }
     
-    extension [Self <: ButtonObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonObject] (val x: Self) extends AnyVal {
       
       inline def setLink(value: LinkObject): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object Link {
       __obj.asInstanceOf[CommerceObject]
     }
     
-    extension [Self <: CommerceObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommerceObject] (val x: Self) extends AnyVal {
       
       inline def setDiscountPrice(value: Double): Self = StObject.set(x, "discountPrice", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object Link {
       __obj.asInstanceOf[ContentObject]
     }
     
-    extension [Self <: ContentObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentObject] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -184,7 +188,8 @@ object Link {
       __obj.asInstanceOf[DefaultCommerceSettings]
     }
     
-    extension [Self <: DefaultCommerceSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultCommerceSettings] (val x: Self) extends AnyVal {
       
       inline def setCommerce(value: CommerceObject): Self = StObject.set(x, "commerce", value.asInstanceOf[js.Any])
       
@@ -208,7 +213,8 @@ object Link {
       __obj.asInstanceOf[DefaultFeedSettings]
     }
     
-    extension [Self <: DefaultFeedSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultFeedSettings] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ContentObject): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -236,7 +242,8 @@ object Link {
       __obj.asInstanceOf[DefaultListSettings]
     }
     
-    extension [Self <: DefaultListSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultListSettings] (val x: Self) extends AnyVal {
       
       inline def setContents(value: js.Array[ContentObject]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -268,7 +275,8 @@ object Link {
       __obj.asInstanceOf[DefaultLocationSettings]
     }
     
-    extension [Self <: DefaultLocationSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultLocationSettings] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -336,7 +344,8 @@ object Link {
       __obj.asInstanceOf[DefaultTextSettings]
     }
     
-    extension [Self <: DefaultTextSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultTextSettings] (val x: Self) extends AnyVal {
       
       inline def setLink(value: LinkObject): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
@@ -355,7 +364,8 @@ object Link {
       __obj.asInstanceOf[ImageInfos]
     }
     
-    extension [Self <: ImageInfos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageInfos] (val x: Self) extends AnyVal {
       
       inline def setOriginal(value: Contenttype): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     }
@@ -384,7 +394,8 @@ object Link {
       __obj.asInstanceOf[LinkObject]
     }
     
-    extension [Self <: LinkObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkObject] (val x: Self) extends AnyVal {
       
       inline def setAndroidExecParams(value: String): Self = StObject.set(x, "androidExecParams", value.asInstanceOf[js.Any])
       
@@ -423,7 +434,8 @@ object Link {
       __obj.asInstanceOf[SocialObject]
     }
     
-    extension [Self <: SocialObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocialObject] (val x: Self) extends AnyVal {
       
       inline def setCommentCount(value: Double): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object ContextEntry {
     __obj.asInstanceOf[ContextEntry]
   }
   
-  extension [Self <: ContextEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextEntry] (val x: Self) extends AnyVal {
     
     inline def setContextKeyName(value: ContextKeyNameType): Self = StObject.set(x, "ContextKeyName", value.asInstanceOf[js.Any])
     

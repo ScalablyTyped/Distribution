@@ -40,7 +40,8 @@ object Types {
     __obj.asInstanceOf[Types]
   }
   
-  extension [Self <: Types](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
     
     inline def setDIAMOND(value: DIAMOND): Self = StObject.set(x, "DIAMOND", value.asInstanceOf[js.Any])
     

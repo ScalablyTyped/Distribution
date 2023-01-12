@@ -18,7 +18,8 @@ object AncillarySourceSettings {
     __obj.asInstanceOf[AncillarySourceSettings]
   }
   
-  extension [Self <: AncillarySourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AncillarySourceSettings] (val x: Self) extends AnyVal {
     
     inline def setSourceAncillaryChannelNumber(value: integerMin1Max4): Self = StObject.set(x, "SourceAncillaryChannelNumber", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object libRulesCompletedDocsExclusionsMod {
       __obj.asInstanceOf[DocTypeExclusions]
     }
     
-    extension [Self <: DocTypeExclusions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocTypeExclusions] (val x: Self) extends AnyVal {
       
       inline def setOverloadsSeparateDocs(value: Boolean): Self = StObject.set(x, "overloadsSeparateDocs", value.asInstanceOf[js.Any])
       

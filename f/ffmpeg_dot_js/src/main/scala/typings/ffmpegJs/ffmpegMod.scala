@@ -58,7 +58,8 @@ object ffmpegMod {
         __obj.asInstanceOf[Mount]
       }
       
-      extension [Self <: Mount](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Mount] (val x: Self) extends AnyVal {
         
         inline def setMountpoint(value: String): Self = StObject.set(x, "mountpoint", value.asInstanceOf[js.Any])
         
@@ -93,7 +94,8 @@ object ffmpegMod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
         
@@ -144,7 +146,8 @@ object ffmpegMod {
         __obj.asInstanceOf[Opts]
       }
       
-      extension [Self <: Opts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
         
         inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       }
@@ -161,7 +164,8 @@ object ffmpegMod {
         __obj.asInstanceOf[Result]
       }
       
-      extension [Self <: Result](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
         
         inline def setMEMFS(value: js.Array[Video]): Self = StObject.set(x, "MEMFS", value.asInstanceOf[js.Any])
         
@@ -182,7 +186,8 @@ object ffmpegMod {
         __obj.asInstanceOf[Video]
       }
       
-      extension [Self <: Video](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
         
         inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -223,7 +228,8 @@ object ffmpegMod {
           __obj.asInstanceOf[Data]
         }
         
-        extension [Self <: Data](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
           
           inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
           
@@ -231,7 +237,8 @@ object ffmpegMod {
         }
       }
       
-      extension [Self <: typings.ffmpegJs.ffmpegMod.ffmpeg.Worker](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.ffmpegJs.ffmpegMod.ffmpeg.Worker] (val x: Self) extends AnyVal {
         
         inline def setOnmessage(value: OnMessageOptions => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
         
@@ -251,7 +258,8 @@ object ffmpegMod {
           __obj.asInstanceOf[OnMessageOptions]
         }
         
-        extension [Self <: OnMessageOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: OnMessageOptions] (val x: Self) extends AnyVal {
           
           inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         }
@@ -271,7 +279,8 @@ object ffmpegMod {
           __obj.asInstanceOf[PostMessageOptions]
         }
         
-        extension [Self <: PostMessageOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PostMessageOptions] (val x: Self) extends AnyVal {
           
           inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
           

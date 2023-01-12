@@ -113,7 +113,8 @@ object RequestProfile {
     __obj.asInstanceOf[RequestProfile]
   }
   
-  extension [Self <: RequestProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestProfile] (val x: Self) extends AnyVal {
     
     inline def setConnectEnd(value: Double): Self = StObject.set(x, "connectEnd", value.asInstanceOf[js.Any])
     

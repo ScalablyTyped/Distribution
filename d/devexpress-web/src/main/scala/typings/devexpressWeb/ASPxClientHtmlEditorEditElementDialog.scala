@@ -70,7 +70,8 @@ object ASPxClientHtmlEditorEditElementDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorEditElementDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorEditElementDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorEditElementDialog] (val x: Self) extends AnyVal {
     
     inline def setGetBorderColorColorEdit(value: () => ASPxClientColorEdit): Self = StObject.set(x, "GetBorderColorColorEdit", js.Any.fromFunction0(value))
     

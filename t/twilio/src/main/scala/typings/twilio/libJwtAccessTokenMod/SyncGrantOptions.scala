@@ -17,7 +17,8 @@ object SyncGrantOptions {
     __obj.asInstanceOf[SyncGrantOptions]
   }
   
-  extension [Self <: SyncGrantOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncGrantOptions] (val x: Self) extends AnyVal {
     
     inline def setEndpointId(value: String): Self = StObject.set(x, "endpointId", value.asInstanceOf[js.Any])
     

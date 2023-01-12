@@ -24,7 +24,8 @@ object FirstValueReducer {
     __obj.asInstanceOf[FirstValueReducer]
   }
   
-  extension [Self <: FirstValueReducer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstValueReducer] (val x: Self) extends AnyVal {
     
     inline def setBY(value: PropertyName | Direction): Self = StObject.set(x, "BY", value.asInstanceOf[js.Any])
     

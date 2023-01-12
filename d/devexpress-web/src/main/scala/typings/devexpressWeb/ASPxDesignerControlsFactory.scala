@@ -44,7 +44,8 @@ object ASPxDesignerControlsFactory {
     __obj.asInstanceOf[ASPxDesignerControlsFactory]
   }
   
-  extension [Self <: ASPxDesignerControlsFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerControlsFactory] (val x: Self) extends AnyVal {
     
     inline def setCreatePopularBindingInfo(
       value: (ASPxDesignerElementSerializationInfoWithBindings, Boolean) => ASPxDesignerElementSerializationInfoWithBindings

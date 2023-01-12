@@ -68,7 +68,8 @@ object GitRefUpdateResult {
     __obj.asInstanceOf[GitRefUpdateResult]
   }
   
-  extension [Self <: GitRefUpdateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitRefUpdateResult] (val x: Self) extends AnyVal {
     
     inline def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
     

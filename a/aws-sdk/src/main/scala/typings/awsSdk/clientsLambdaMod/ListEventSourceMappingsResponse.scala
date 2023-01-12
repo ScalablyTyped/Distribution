@@ -23,7 +23,8 @@ object ListEventSourceMappingsResponse {
     __obj.asInstanceOf[ListEventSourceMappingsResponse]
   }
   
-  extension [Self <: ListEventSourceMappingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEventSourceMappingsResponse] (val x: Self) extends AnyVal {
     
     inline def setEventSourceMappings(value: EventSourceMappingsList): Self = StObject.set(x, "EventSourceMappings", value.asInstanceOf[js.Any])
     

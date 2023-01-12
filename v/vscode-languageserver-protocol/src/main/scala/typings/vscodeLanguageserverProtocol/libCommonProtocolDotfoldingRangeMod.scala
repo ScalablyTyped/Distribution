@@ -88,7 +88,8 @@ object libCommonProtocolDotfoldingRangeMod {
       __obj.asInstanceOf[FoldingRangeClientCapabilities]
     }
     
-    extension [Self <: FoldingRangeClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FoldingRangeClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object libCommonProtocolDotfoldingRangeMod {
       __obj.asInstanceOf[FoldingRangeParams]
     }
     
-    extension [Self <: FoldingRangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FoldingRangeParams] (val x: Self) extends AnyVal {
       
       inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     }

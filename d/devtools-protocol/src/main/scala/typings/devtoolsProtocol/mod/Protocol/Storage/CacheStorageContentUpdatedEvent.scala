@@ -23,7 +23,8 @@ object CacheStorageContentUpdatedEvent {
     __obj.asInstanceOf[CacheStorageContentUpdatedEvent]
   }
   
-  extension [Self <: CacheStorageContentUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheStorageContentUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
     

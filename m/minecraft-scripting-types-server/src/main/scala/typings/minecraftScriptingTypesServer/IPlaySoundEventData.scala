@@ -40,7 +40,8 @@ object IPlaySoundEventData {
     __obj.asInstanceOf[IPlaySoundEventData]
   }
   
-  extension [Self <: IPlaySoundEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlaySoundEventData] (val x: Self) extends AnyVal {
     
     inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     

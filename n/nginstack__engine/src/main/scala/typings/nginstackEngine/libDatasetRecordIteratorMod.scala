@@ -32,7 +32,8 @@ object libDatasetRecordIteratorMod {
       __obj.asInstanceOf[RecordIterator]
     }
     
-    extension [Self <: RecordIterator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordIterator] (val x: Self) extends AnyVal {
       
       inline def setNext(value: () => Any): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }

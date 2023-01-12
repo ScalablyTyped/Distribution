@@ -67,7 +67,8 @@ object libTwimlMessagingResponseMod {
       __obj.asInstanceOf[MessageAttributes]
     }
     
-    extension [Self <: MessageAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageAttributes] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object libTwimlMessagingResponseMod {
       __obj.asInstanceOf[RedirectAttributes]
     }
     
-    extension [Self <: RedirectAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectAttributes] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

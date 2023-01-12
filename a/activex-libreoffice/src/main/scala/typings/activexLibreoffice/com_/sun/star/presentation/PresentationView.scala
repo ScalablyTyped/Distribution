@@ -114,7 +114,8 @@ object PresentationView {
     __obj.asInstanceOf[PresentationView]
   }
   
-  extension [Self <: PresentationView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresentationView] (val x: Self) extends AnyVal {
     
     inline def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
   }

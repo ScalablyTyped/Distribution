@@ -422,7 +422,8 @@ object DescriptorProto {
       __obj.asInstanceOf[IExtensionRange]
     }
     
-    extension [Self <: IExtensionRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExtensionRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -460,7 +461,8 @@ object DescriptorProto {
       __obj.asInstanceOf[IReservedRange]
     }
     
-    extension [Self <: IReservedRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReservedRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

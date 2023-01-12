@@ -22,7 +22,8 @@ object AccountstatusesCustomBatchResponseEntry {
     __obj.asInstanceOf[AccountstatusesCustomBatchResponseEntry]
   }
   
-  extension [Self <: AccountstatusesCustomBatchResponseEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountstatusesCustomBatchResponseEntry] (val x: Self) extends AnyVal {
     
     inline def setAccountStatus(value: AccountStatus): Self = StObject.set(x, "accountStatus", value.asInstanceOf[js.Any])
     

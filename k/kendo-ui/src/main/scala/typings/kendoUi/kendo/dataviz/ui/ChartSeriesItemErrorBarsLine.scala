@@ -17,7 +17,8 @@ object ChartSeriesItemErrorBarsLine {
     __obj.asInstanceOf[ChartSeriesItemErrorBarsLine]
   }
   
-  extension [Self <: ChartSeriesItemErrorBarsLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartSeriesItemErrorBarsLine] (val x: Self) extends AnyVal {
     
     inline def setDashType(value: String): Self = StObject.set(x, "dashType", value.asInstanceOf[js.Any])
     

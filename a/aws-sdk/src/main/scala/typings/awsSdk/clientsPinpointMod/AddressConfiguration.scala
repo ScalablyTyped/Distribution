@@ -43,7 +43,8 @@ object AddressConfiguration {
     __obj.asInstanceOf[AddressConfiguration]
   }
   
-  extension [Self <: AddressConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBodyOverride(value: string): Self = StObject.set(x, "BodyOverride", value.asInstanceOf[js.Any])
     

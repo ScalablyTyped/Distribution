@@ -105,7 +105,8 @@ object errorErrorListenerMod {
       __obj.asInstanceOf[ErrorListener]
     }
     
-    extension [Self <: ErrorListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorListener] (val x: Self) extends AnyVal {
       
       inline def setReportAmbiguity(
         value: (typings.antlr4.recognizerMod.default, typings.antlr4.dfaDfaMod.default, Double, Double, Boolean, typings.antlr4.miscBitSetMod.default, typings.antlr4.atnAtnconfigsetMod.default) => Unit

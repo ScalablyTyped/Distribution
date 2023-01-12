@@ -23,7 +23,8 @@ object DeleteProgramRequest {
     __obj.asInstanceOf[DeleteProgramRequest]
   }
   
-  extension [Self <: DeleteProgramRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteProgramRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelName(value: _String): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     

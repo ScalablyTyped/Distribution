@@ -63,7 +63,8 @@ object ModifyTransitGatewayOptions {
     __obj.asInstanceOf[ModifyTransitGatewayOptions]
   }
   
-  extension [Self <: ModifyTransitGatewayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyTransitGatewayOptions] (val x: Self) extends AnyVal {
     
     inline def setAddTransitGatewayCidrBlocks(value: TransitGatewayCidrBlockStringList): Self = StObject.set(x, "AddTransitGatewayCidrBlocks", value.asInstanceOf[js.Any])
     

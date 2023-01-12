@@ -43,7 +43,8 @@ object ToRelativeOptions {
     __obj.asInstanceOf[ToRelativeOptions]
   }
   
-  extension [Self <: ToRelativeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToRelativeOptions] (val x: Self) extends AnyVal {
     
     inline def setBase(value: DateTime): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

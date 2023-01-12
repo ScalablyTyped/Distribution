@@ -43,7 +43,8 @@ object ResumeOptions {
     __obj.asInstanceOf[ResumeOptions]
   }
   
-  extension [Self <: ResumeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumeOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomKeys(value: js.Function): Self = StObject.set(x, "customKeys", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object InitializeHandlerOptions {
     __obj.asInstanceOf[InitializeHandlerOptions]
   }
   
-  extension [Self <: InitializeHandlerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializeHandlerOptions] (val x: Self) extends AnyVal {
     
     inline def setStep(value: initialize): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     

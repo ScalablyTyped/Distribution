@@ -35,7 +35,8 @@ object SearchMvtRequest {
     __obj.asInstanceOf[SearchMvtRequest]
   }
   
-  extension [Self <: SearchMvtRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchMvtRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Aggs): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

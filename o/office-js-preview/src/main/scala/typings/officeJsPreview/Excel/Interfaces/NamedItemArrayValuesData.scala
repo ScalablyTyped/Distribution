@@ -52,7 +52,8 @@ object NamedItemArrayValuesData {
     __obj.asInstanceOf[NamedItemArrayValuesData]
   }
   
-  extension [Self <: NamedItemArrayValuesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedItemArrayValuesData] (val x: Self) extends AnyVal {
     
     inline def setTypes(value: js.Array[js.Array[RangeValueType]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ComponentParameter {
     __obj.asInstanceOf[ComponentParameter]
   }
   
-  extension [Self <: ComponentParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentParameter] (val x: Self) extends AnyVal {
     
     inline def setName(value: ComponentParameterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

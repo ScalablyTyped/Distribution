@@ -17,7 +17,8 @@ object I18n {
     __obj.asInstanceOf[I18n]
   }
   
-  extension [Self <: I18n](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18n] (val x: Self) extends AnyVal {
     
     inline def setRendererFormattedStrings(value: RendererFormattedStrings): Self = StObject.set(x, "rendererFormattedStrings", value.asInstanceOf[js.Any])
     

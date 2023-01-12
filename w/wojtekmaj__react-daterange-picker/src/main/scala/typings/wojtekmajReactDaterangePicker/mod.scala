@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[DateRangePickerProps[TValue]]
     }
     
-    extension [Self <: DateRangePickerProps[?], TValue /* <: String | js.Date */](x: Self & DateRangePickerProps[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangePickerProps[?], TValue /* <: String | js.Date */] (val x: Self & DateRangePickerProps[TValue]) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

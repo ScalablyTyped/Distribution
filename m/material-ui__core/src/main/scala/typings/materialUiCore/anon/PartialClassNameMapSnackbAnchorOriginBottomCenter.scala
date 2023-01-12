@@ -28,7 +28,8 @@ object PartialClassNameMapSnackbAnchorOriginBottomCenter {
     __obj.asInstanceOf[PartialClassNameMapSnackbAnchorOriginBottomCenter]
   }
   
-  extension [Self <: PartialClassNameMapSnackbAnchorOriginBottomCenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapSnackbAnchorOriginBottomCenter] (val x: Self) extends AnyVal {
     
     inline def setAnchorOriginBottomCenter(value: String): Self = StObject.set(x, "anchorOriginBottomCenter", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object TabPaneProps {
     __obj.asInstanceOf[TabPaneProps]
   }
   
-  extension [Self <: TabPaneProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabPaneProps] (val x: Self) extends AnyVal {
     
     inline def setTab(value: ReactNode): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     

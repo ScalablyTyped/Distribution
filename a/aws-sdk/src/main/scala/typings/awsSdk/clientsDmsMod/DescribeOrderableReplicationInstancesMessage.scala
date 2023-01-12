@@ -23,7 +23,8 @@ object DescribeOrderableReplicationInstancesMessage {
     __obj.asInstanceOf[DescribeOrderableReplicationInstancesMessage]
   }
   
-  extension [Self <: DescribeOrderableReplicationInstancesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOrderableReplicationInstancesMessage] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

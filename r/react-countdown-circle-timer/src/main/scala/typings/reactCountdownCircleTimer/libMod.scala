@@ -55,7 +55,8 @@ object libMod {
       __obj.asInstanceOf[MultipleColors]
     }
     
-    extension [Self <: MultipleColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleColors] (val x: Self) extends AnyVal {
       
       inline def setColors(value: `0ColorHex1ColorHexArrayCo`): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object libMod {
       __obj.asInstanceOf[OnComplete]
     }
     
-    extension [Self <: OnComplete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnComplete] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object libMod {
       __obj.asInstanceOf[SingleColor]
     }
     
-    extension [Self <: SingleColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleColor] (val x: Self) extends AnyVal {
       
       inline def setColors(value: ColorFormat): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     }
@@ -151,7 +154,8 @@ object libMod {
       __obj.asInstanceOf[TimeProps]
     }
     
-    extension [Self <: TimeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: ColorFormat): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

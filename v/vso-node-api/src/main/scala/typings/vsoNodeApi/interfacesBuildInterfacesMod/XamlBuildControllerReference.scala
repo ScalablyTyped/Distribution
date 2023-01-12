@@ -28,7 +28,8 @@ object XamlBuildControllerReference {
     __obj.asInstanceOf[XamlBuildControllerReference]
   }
   
-  extension [Self <: XamlBuildControllerReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XamlBuildControllerReference] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

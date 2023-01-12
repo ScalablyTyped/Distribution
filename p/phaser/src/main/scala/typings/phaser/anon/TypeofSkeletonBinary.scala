@@ -95,7 +95,8 @@ object TypeofSkeletonBinary {
     __obj.asInstanceOf[TypeofSkeletonBinary]
   }
   
-  extension [Self <: TypeofSkeletonBinary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSkeletonBinary] (val x: Self) extends AnyVal {
     
     inline def setAttachmentTypeValues(value: js.Array[Double]): Self = StObject.set(x, "AttachmentTypeValues", value.asInstanceOf[js.Any])
     

@@ -140,7 +140,8 @@ object DatabaseInstance {
     __obj.asInstanceOf[DatabaseInstance]
   }
   
-  extension [Self <: DatabaseInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseInstance] (val x: Self) extends AnyVal {
     
     inline def setAvailableMaintenanceVersions(value: js.Array[String]): Self = StObject.set(x, "availableMaintenanceVersions", value.asInstanceOf[js.Any])
     

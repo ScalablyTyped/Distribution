@@ -31,7 +31,8 @@ object IEditorBreakpoint {
     __obj.asInstanceOf[IEditorBreakpoint]
   }
   
-  extension [Self <: IEditorBreakpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorBreakpoint] (val x: Self) extends AnyVal {
     
     inline def setQEnabled(value: Boolean): Self = StObject.set(x, "qEnabled", value.asInstanceOf[js.Any])
     

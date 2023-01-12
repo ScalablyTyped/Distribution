@@ -31,7 +31,8 @@ object PreProcessedFileInfo {
     __obj.asInstanceOf[PreProcessedFileInfo]
   }
   
-  extension [Self <: PreProcessedFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreProcessedFileInfo] (val x: Self) extends AnyVal {
     
     inline def setAmbientExternalModules(value: js.Array[java.lang.String]): Self = StObject.set(x, "ambientExternalModules", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object OlkContactPhoto {
     __obj.asInstanceOf[OlkContactPhoto]
   }
   
-  extension [Self <: OlkContactPhoto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlkContactPhoto] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

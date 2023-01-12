@@ -32,7 +32,8 @@ object XDocumentEventListener {
     __obj.asInstanceOf[XDocumentEventListener]
   }
   
-  extension [Self <: XDocumentEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentEventListener] (val x: Self) extends AnyVal {
     
     inline def setDocumentEventOccured(value: DocumentEvent => Unit): Self = StObject.set(x, "documentEventOccured", js.Any.fromFunction1(value))
   }

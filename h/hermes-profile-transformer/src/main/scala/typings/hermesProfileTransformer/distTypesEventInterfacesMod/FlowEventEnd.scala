@@ -20,7 +20,8 @@ object FlowEventEnd {
     __obj.asInstanceOf[FlowEventEnd]
   }
   
-  extension [Self <: FlowEventEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowEventEnd] (val x: Self) extends AnyVal {
     
     inline def setPh(value: FLOW_EVENTS_END): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }

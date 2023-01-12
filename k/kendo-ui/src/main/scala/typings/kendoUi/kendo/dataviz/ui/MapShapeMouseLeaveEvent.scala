@@ -23,7 +23,8 @@ object MapShapeMouseLeaveEvent {
     __obj.asInstanceOf[MapShapeMouseLeaveEvent]
   }
   
-  extension [Self <: MapShapeMouseLeaveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapShapeMouseLeaveEvent] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: Shape): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

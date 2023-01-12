@@ -619,7 +619,8 @@ object distMigrationBuilderMod {
       __obj.asInstanceOf[MigrationBuilderImpl]
     }
     
-    extension [Self <: MigrationBuilderImpl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MigrationBuilderImpl] (val x: Self) extends AnyVal {
       
       inline def setEnableReverseMode(value: () => MigrationBuilderImpl): Self = StObject.set(x, "enableReverseMode", js.Any.fromFunction0(value))
       

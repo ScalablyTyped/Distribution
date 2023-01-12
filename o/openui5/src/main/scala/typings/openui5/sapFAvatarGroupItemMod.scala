@@ -240,7 +240,8 @@ object sapFAvatarGroupItemMod {
       __obj.asInstanceOf[AvatarGroupItemSettings]
     }
     
-    extension [Self <: AvatarGroupItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarGroupItemSettings] (val x: Self) extends AnyVal {
       
       inline def setFallbackIcon(value: String | PropertyBindingInfo): Self = StObject.set(x, "fallbackIcon", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object APIBaseContract {
     __obj.asInstanceOf[APIBaseContract[PromiseReturn, CallbackReturn, Param, Context]]
   }
   
-  extension [Self <: APIBaseContract[?, ?, ?, ?], PromiseReturn, CallbackReturn, Param /* <: IAPIParam[Any] */, Context](x: Self & (APIBaseContract[PromiseReturn, CallbackReturn, Param, Context])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIBaseContract[?, ?, ?, ?], PromiseReturn, CallbackReturn, Param /* <: IAPIParam[Any] */, Context] (val x: Self & (APIBaseContract[PromiseReturn, CallbackReturn, Param, Context])) extends AnyVal {
     
     inline def setGetCallbackReturn(value: (Param, Context) => CallbackReturn): Self = StObject.set(x, "getCallbackReturn", js.Any.fromFunction2(value))
     

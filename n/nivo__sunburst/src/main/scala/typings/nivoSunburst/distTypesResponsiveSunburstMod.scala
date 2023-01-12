@@ -113,7 +113,8 @@ object distTypesResponsiveSunburstMod {
       __obj.asInstanceOf[ResponsiveSunburstProps[RawDatum]]
     }
     
-    extension [Self <: ResponsiveSunburstProps[?], RawDatum](x: Self & ResponsiveSunburstProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveSunburstProps[?], RawDatum] (val x: Self & ResponsiveSunburstProps[RawDatum]) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

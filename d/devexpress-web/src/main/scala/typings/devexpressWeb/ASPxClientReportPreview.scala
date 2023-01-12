@@ -29,7 +29,8 @@ object ASPxClientReportPreview {
     __obj.asInstanceOf[ASPxClientReportPreview]
   }
   
-  extension [Self <: ASPxClientReportPreview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportPreview] (val x: Self) extends AnyVal {
     
     inline def setDocumentBuilding(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any

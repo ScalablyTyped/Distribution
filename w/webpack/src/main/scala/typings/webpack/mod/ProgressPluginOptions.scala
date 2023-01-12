@@ -66,7 +66,8 @@ object ProgressPluginOptions {
     __obj.asInstanceOf[ProgressPluginOptions]
   }
   
-  extension [Self <: ProgressPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveModules(value: Boolean): Self = StObject.set(x, "activeModules", value.asInstanceOf[js.Any])
     

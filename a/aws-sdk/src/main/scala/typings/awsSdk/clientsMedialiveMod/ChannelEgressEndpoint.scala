@@ -18,7 +18,8 @@ object ChannelEgressEndpoint {
     __obj.asInstanceOf[ChannelEgressEndpoint]
   }
   
-  extension [Self <: ChannelEgressEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelEgressEndpoint] (val x: Self) extends AnyVal {
     
     inline def setSourceIp(value: string): Self = StObject.set(x, "SourceIp", value.asInstanceOf[js.Any])
     

@@ -236,7 +236,8 @@ object sapUiTableRowMod {
       __obj.asInstanceOf[RowSettings]
     }
     
-    extension [Self <: RowSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowSettings] (val x: Self) extends AnyVal {
       
       inline def setCells(
         value: js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

@@ -20,7 +20,8 @@ object DataEvent {
     __obj.asInstanceOf[DataEvent]
   }
   
-  extension [Self <: DataEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: Data[AllSeriesTypes]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DetachRolePolicyRequest {
     __obj.asInstanceOf[DetachRolePolicyRequest]
   }
   
-  extension [Self <: DetachRolePolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachRolePolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setPolicyArn(value: arnType): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     

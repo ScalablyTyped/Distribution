@@ -55,7 +55,8 @@ object Style {
     __obj.asInstanceOf[Style]
   }
   
-  extension [Self <: Style](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
     
     inline def setBlur(value: Blur): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     

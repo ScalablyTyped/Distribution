@@ -83,7 +83,8 @@ object ModelDescription {
     __obj.asInstanceOf[ModelDescription]
   }
   
-  extension [Self <: ModelDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelDescription] (val x: Self) extends AnyVal {
     
     inline def setCreationTimestamp(value: js.Date): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     

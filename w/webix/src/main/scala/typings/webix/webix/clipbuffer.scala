@@ -21,7 +21,8 @@ object clipbuffer {
     __obj.asInstanceOf[clipbuffer]
   }
   
-  extension [Self <: clipbuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: clipbuffer] (val x: Self) extends AnyVal {
     
     inline def setDestructor(value: () => Unit): Self = StObject.set(x, "destructor", js.Any.fromFunction0(value))
     

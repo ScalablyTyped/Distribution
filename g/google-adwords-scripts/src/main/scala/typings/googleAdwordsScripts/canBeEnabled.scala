@@ -22,7 +22,8 @@ object canBeEnabled {
     __obj.asInstanceOf[canBeEnabled]
   }
   
-  extension [Self <: canBeEnabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: canBeEnabled] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     

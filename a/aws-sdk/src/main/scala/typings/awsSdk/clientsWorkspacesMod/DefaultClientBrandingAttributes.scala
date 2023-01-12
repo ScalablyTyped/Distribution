@@ -38,7 +38,8 @@ object DefaultClientBrandingAttributes {
     __obj.asInstanceOf[DefaultClientBrandingAttributes]
   }
   
-  extension [Self <: DefaultClientBrandingAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultClientBrandingAttributes] (val x: Self) extends AnyVal {
     
     inline def setForgotPasswordLink(value: ClientUrl): Self = StObject.set(x, "ForgotPasswordLink", value.asInstanceOf[js.Any])
     

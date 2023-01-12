@@ -29,7 +29,8 @@ object Hillshadeaccentcolor {
     __obj.asInstanceOf[Hillshadeaccentcolor]
   }
   
-  extension [Self <: Hillshadeaccentcolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hillshadeaccentcolor] (val x: Self) extends AnyVal {
     
     inline def `setHillshade-accent-color`(value: PropertyValueSpecification[ColorSpecification]): Self = StObject.set(x, "hillshade-accent-color", value.asInstanceOf[js.Any])
     

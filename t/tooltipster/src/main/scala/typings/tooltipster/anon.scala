@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Click]
     }
     
-    extension [Self <: Click](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Click] (val x: Self) extends AnyVal {
       
       inline def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object anon {
       __obj.asInstanceOf[FixedLineage]
     }
     
-    extension [Self <: FixedLineage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedLineage] (val x: Self) extends AnyVal {
       
       inline def setFixedLineage(value: Boolean): Self = StObject.set(x, "fixedLineage", value.asInstanceOf[js.Any])
       
@@ -159,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -180,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -219,7 +224,8 @@ object anon {
       __obj.asInstanceOf[Mouseenter]
     }
     
-    extension [Self <: Mouseenter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mouseenter] (val x: Self) extends AnyVal {
       
       inline def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
@@ -252,7 +258,8 @@ object anon {
       __obj.asInstanceOf[Scroll]
     }
     
-    extension [Self <: Scroll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scroll] (val x: Self) extends AnyVal {
       
       inline def setScroll(value: Left): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
@@ -271,7 +278,8 @@ object anon {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }

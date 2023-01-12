@@ -42,7 +42,8 @@ object customSelectControlMod {
         __obj.asInstanceOf[Option]
       }
       
-      extension [Self <: Option](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -96,7 +97,8 @@ object customSelectControlMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         

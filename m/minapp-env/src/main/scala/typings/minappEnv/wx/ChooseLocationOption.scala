@@ -22,7 +22,8 @@ object ChooseLocationOption {
     __obj.asInstanceOf[ChooseLocationOption]
   }
   
-  extension [Self <: ChooseLocationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseLocationOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

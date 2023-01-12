@@ -49,7 +49,8 @@ object SpecificViewMountArg {
     __obj.asInstanceOf[SpecificViewMountArg]
   }
   
-  extension [Self <: SpecificViewMountArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecificViewMountArg] (val x: Self) extends AnyVal {
     
     inline def setBusinessHours(value: EventStore): Self = StObject.set(x, "businessHours", value.asInstanceOf[js.Any])
     

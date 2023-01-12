@@ -212,7 +212,8 @@ object TokenizerObject {
     __obj.asInstanceOf[TokenizerObject]
   }
   
-  extension [Self <: TokenizerObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenizerObject] (val x: Self) extends AnyVal {
     
     inline def setAutolink(
       value: js.ThisFunction2[

@@ -15,7 +15,8 @@ object ObjectObservationAdapter {
     __obj.asInstanceOf[ObjectObservationAdapter]
   }
   
-  extension [Self <: ObjectObservationAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectObservationAdapter] (val x: Self) extends AnyVal {
     
     inline def setGetObserver(value: (Any, String, js.PropertyDescriptor) => js.UndefOr[InternalPropertyObserver | Null]): Self = StObject.set(x, "getObserver", js.Any.fromFunction3(value))
   }

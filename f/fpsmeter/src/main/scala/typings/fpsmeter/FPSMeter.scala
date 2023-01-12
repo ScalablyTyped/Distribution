@@ -50,7 +50,8 @@ object FPSMeter {
     __obj.asInstanceOf[FPSMeter]
   }
   
-  extension [Self <: FPSMeter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FPSMeter] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

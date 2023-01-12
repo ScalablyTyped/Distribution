@@ -27,7 +27,8 @@ object TimeOffReason {
     __obj.asInstanceOf[TimeOffReason]
   }
   
-  extension [Self <: TimeOffReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeOffReason] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

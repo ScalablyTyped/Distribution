@@ -18,7 +18,8 @@ object DeleteContainerServiceRequest {
     __obj.asInstanceOf[DeleteContainerServiceRequest]
   }
   
-  extension [Self <: DeleteContainerServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteContainerServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }

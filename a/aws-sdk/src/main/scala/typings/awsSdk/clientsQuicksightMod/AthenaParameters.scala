@@ -18,7 +18,8 @@ object AthenaParameters {
     __obj.asInstanceOf[AthenaParameters]
   }
   
-  extension [Self <: AthenaParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AthenaParameters] (val x: Self) extends AnyVal {
     
     inline def setWorkGroup(value: WorkGroup): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
     

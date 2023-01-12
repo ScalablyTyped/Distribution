@@ -18,7 +18,8 @@ object FieldInfo {
     __obj.asInstanceOf[FieldInfo]
   }
   
-  extension [Self <: FieldInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldInfo] (val x: Self) extends AnyVal {
     
     inline def setName(value: FieldName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object ICryptographicEngineStatics {
     __obj.asInstanceOf[ICryptographicEngineStatics]
   }
   
-  extension [Self <: ICryptographicEngineStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICryptographicEngineStatics] (val x: Self) extends AnyVal {
     
     inline def setDecrypt(value: (CryptographicKey, IBuffer, IBuffer) => IBuffer): Self = StObject.set(x, "decrypt", js.Any.fromFunction3(value))
     

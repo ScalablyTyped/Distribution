@@ -25,7 +25,8 @@ object GoogleSecuritySafebrowsingV4ThreatHitThreatSource {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4ThreatHitThreatSource]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4ThreatHitThreatSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4ThreatHitThreatSource] (val x: Self) extends AnyVal {
     
     inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     

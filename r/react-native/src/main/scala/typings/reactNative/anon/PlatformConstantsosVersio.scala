@@ -20,7 +20,8 @@ object PlatformConstantsosVersio {
     __obj.asInstanceOf[PlatformConstantsosVersio]
   }
   
-  extension [Self <: PlatformConstantsosVersio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformConstantsosVersio] (val x: Self) extends AnyVal {
     
     inline def setIsTesting(value: Boolean): Self = StObject.set(x, "isTesting", value.asInstanceOf[js.Any])
     

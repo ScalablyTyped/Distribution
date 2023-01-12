@@ -28,7 +28,8 @@ object ListInstanceProfilesForRoleRequest {
     __obj.asInstanceOf[ListInstanceProfilesForRoleRequest]
   }
   
-  extension [Self <: ListInstanceProfilesForRoleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInstanceProfilesForRoleRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

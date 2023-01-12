@@ -62,7 +62,8 @@ object PlusWebviewWebviewSubNViewStyles {
     __obj.asInstanceOf[PlusWebviewWebviewSubNViewStyles]
   }
   
-  extension [Self <: PlusWebviewWebviewSubNViewStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewSubNViewStyles] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

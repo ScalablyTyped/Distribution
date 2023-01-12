@@ -18,7 +18,8 @@ object popoverMod {
     @js.native
     val ^ : Popover = js.native
     
-    extension [Self <: Popover](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popover] (val x: Self) extends AnyVal {
       
       inline def setProps(value: StringDictionary[Boolean]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }

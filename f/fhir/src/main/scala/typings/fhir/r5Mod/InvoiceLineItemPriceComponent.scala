@@ -44,7 +44,8 @@ object InvoiceLineItemPriceComponent {
     __obj.asInstanceOf[InvoiceLineItemPriceComponent]
   }
   
-  extension [Self <: InvoiceLineItemPriceComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvoiceLineItemPriceComponent] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

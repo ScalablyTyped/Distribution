@@ -16,7 +16,8 @@ object GradientMap {
     __obj.asInstanceOf[GradientMap]
   }
   
-  extension [Self <: GradientMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GradientMap] (val x: Self) extends AnyVal {
     
     inline def setGradientMap(value: IUniform[Any]): Self = StObject.set(x, "gradientMap", value.asInstanceOf[js.Any])
   }

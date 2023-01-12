@@ -271,7 +271,8 @@ object UninterpretedOption {
       __obj.asInstanceOf[INamePart]
     }
     
-    extension [Self <: INamePart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INamePart] (val x: Self) extends AnyVal {
       
       inline def setIsExtension(value: Boolean): Self = StObject.set(x, "isExtension", value.asInstanceOf[js.Any])
       

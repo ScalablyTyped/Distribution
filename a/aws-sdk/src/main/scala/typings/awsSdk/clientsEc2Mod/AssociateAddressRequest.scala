@@ -48,7 +48,8 @@ object AssociateAddressRequest {
     __obj.asInstanceOf[AssociateAddressRequest]
   }
   
-  extension [Self <: AssociateAddressRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateAddressRequest] (val x: Self) extends AnyVal {
     
     inline def setAllocationId(value: AllocationId): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     

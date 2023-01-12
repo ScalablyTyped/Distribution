@@ -20,7 +20,8 @@ object mod {
       __obj.asInstanceOf[CallbackOptions]
     }
     
-    extension [Self <: CallbackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterZoom(value: (/* start */ Double, /* end */ Double) => Unit): Self = StObject.set(x, "afterZoom", js.Any.fromFunction2(value))
       
@@ -51,7 +52,8 @@ object mod {
       __obj.asInstanceOf[CrosshairOptions]
     }
     
-    extension [Self <: CrosshairOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrosshairOptions] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: CallbackOptions): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object mod {
       __obj.asInstanceOf[LineOptions]
     }
     
-    extension [Self <: LineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object mod {
       __obj.asInstanceOf[SnapOptions]
     }
     
-    extension [Self <: SnapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -142,7 +146,8 @@ object mod {
       __obj.asInstanceOf[SyncOptions]
     }
     
-    extension [Self <: SyncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -177,7 +182,8 @@ object mod {
       __obj.asInstanceOf[ZoomOptions]
     }
     
-    extension [Self <: ZoomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -215,7 +221,8 @@ object mod {
         __obj.asInstanceOf[ChartDataSets]
       }
       
-      extension [Self <: ChartDataSets](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChartDataSets] (val x: Self) extends AnyVal {
         
         inline def setInterpolate(value: Boolean): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
         
@@ -234,7 +241,8 @@ object mod {
         __obj.asInstanceOf[ChartPluginsOptions]
       }
       
-      extension [Self <: ChartPluginsOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChartPluginsOptions] (val x: Self) extends AnyVal {
         
         inline def setCrosshair(value: CrosshairOptions): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
         
@@ -253,7 +261,8 @@ object mod {
         __obj.asInstanceOf[InteractionModeRegistry]
       }
       
-      extension [Self <: InteractionModeRegistry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InteractionModeRegistry] (val x: Self) extends AnyVal {
         
         inline def setInterpolate(value: interpolate): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
       }
@@ -276,7 +285,8 @@ object mod {
         __obj.asInstanceOf[Chart]
       }
       
-      extension [Self <: Chart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
         
         inline def setPanZoom(value: Double => Unit): Self = StObject.set(x, "panZoom", js.Any.fromFunction1(value))
       }

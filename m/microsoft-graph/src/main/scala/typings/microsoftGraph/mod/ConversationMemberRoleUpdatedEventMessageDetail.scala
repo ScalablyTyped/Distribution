@@ -24,7 +24,8 @@ object ConversationMemberRoleUpdatedEventMessageDetail {
     __obj.asInstanceOf[ConversationMemberRoleUpdatedEventMessageDetail]
   }
   
-  extension [Self <: ConversationMemberRoleUpdatedEventMessageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationMemberRoleUpdatedEventMessageDetail] (val x: Self) extends AnyVal {
     
     inline def setConversationMemberRoles(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "conversationMemberRoles", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object InvalidTagsMessages {
     __obj.asInstanceOf[InvalidTagsMessages]
   }
   
-  extension [Self <: InvalidTagsMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidTagsMessages] (val x: Self) extends AnyVal {
     
     inline def setDuplicate(value: String): Self = StObject.set(x, "duplicate", value.asInstanceOf[js.Any])
     

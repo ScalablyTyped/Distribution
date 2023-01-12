@@ -29,7 +29,8 @@ object IWalkPath {
     __obj.asInstanceOf[IWalkPath]
   }
   
-  extension [Self <: IWalkPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWalkPath] (val x: Self) extends AnyVal {
     
     inline def setPathContext(value: IPath): Self = StObject.set(x, "pathContext", value.asInstanceOf[js.Any])
   }

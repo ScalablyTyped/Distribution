@@ -249,7 +249,8 @@ object distLiteFirestoreSrcApiSnapshotMod {
       __obj.asInstanceOf[DocumentChange[T]]
     }
     
-    extension [Self <: DocumentChange[?], T](x: Self & DocumentChange[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentChange[?], T] (val x: Self & DocumentChange[T]) extends AnyVal {
       
       inline def setDoc(value: QueryDocumentSnapshot[T]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
@@ -317,7 +318,8 @@ object distLiteFirestoreSrcApiSnapshotMod {
       __obj.asInstanceOf[SnapshotOptions]
     }
     
-    extension [Self <: SnapshotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotOptions] (val x: Self) extends AnyVal {
       
       inline def setServerTimestamps(value: estimate | previous | none): Self = StObject.set(x, "serverTimestamps", value.asInstanceOf[js.Any])
       

@@ -74,7 +74,8 @@ object IView {
     __obj.asInstanceOf[IView]
   }
   
-  extension [Self <: IView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IView] (val x: Self) extends AnyVal {
     
     inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     

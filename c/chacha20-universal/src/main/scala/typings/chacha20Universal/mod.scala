@@ -122,7 +122,8 @@ object mod {
       __obj.asInstanceOf[Chacha20]
     }
     
-    extension [Self <: Chacha20](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chacha20] (val x: Self) extends AnyVal {
       
       inline def setFinal(value: () => Unit): Self = StObject.set(x, "final", js.Any.fromFunction0(value))
       

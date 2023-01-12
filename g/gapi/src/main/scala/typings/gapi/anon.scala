@@ -42,7 +42,8 @@ object anon {
       __obj.asInstanceOf[ApiKey]
     }
     
-    extension [Self <: ApiKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiKey] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Apppackagename]
     }
     
-    extension [Self <: Apppackagename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apppackagename] (val x: Self) extends AnyVal {
       
       inline def setApppackagename(value: String): Self = StObject.set(x, "apppackagename", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object anon {
       __obj.asInstanceOf[Authuser]
     }
     
-    extension [Self <: Authuser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authuser] (val x: Self) extends AnyVal {
       
       inline def setAuthuser(value: String): Self = StObject.set(x, "authuser", value.asInstanceOf[js.Any])
     }
@@ -182,7 +185,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -221,7 +225,8 @@ object anon {
       __obj.asInstanceOf[Callback]
     }
     
-    extension [Self <: Callback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (Any, Any) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -263,7 +268,8 @@ object anon {
       __obj.asInstanceOf[Clientid]
     }
     
-    extension [Self <: Clientid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clientid] (val x: Self) extends AnyVal {
       
       inline def setAuthuser(value: Double): Self = StObject.set(x, "authuser", value.asInstanceOf[js.Any])
       

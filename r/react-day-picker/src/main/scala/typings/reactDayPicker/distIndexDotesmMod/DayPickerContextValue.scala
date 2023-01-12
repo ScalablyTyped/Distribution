@@ -76,7 +76,8 @@ object DayPickerContextValue {
     __obj.asInstanceOf[DayPickerContextValue]
   }
   
-  extension [Self <: DayPickerContextValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayPickerContextValue] (val x: Self) extends AnyVal {
     
     inline def setCaptionLayout(value: CaptionLayout): Self = StObject.set(x, "captionLayout", value.asInstanceOf[js.Any])
     

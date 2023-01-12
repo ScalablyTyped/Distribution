@@ -24,7 +24,8 @@ object linkerSrcFileLinkerPartialLinkersPartialLinkerMod {
       __obj.asInstanceOf[LinkedDefinition]
     }
     
-    extension [Self <: LinkedDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkedDefinition] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object linkerSrcFileLinkerPartialLinkersPartialLinkerMod {
       __obj.asInstanceOf[PartialLinker[TExpression]]
     }
     
-    extension [Self <: PartialLinker[?], TExpression](x: Self & PartialLinker[TExpression]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLinker[?], TExpression] (val x: Self & PartialLinker[TExpression]) extends AnyVal {
       
       inline def setLinkPartialDeclaration(value: (ConstantPool, AstObject[R3PartialDeclaration, TExpression]) => LinkedDefinition): Self = StObject.set(x, "linkPartialDeclaration", js.Any.fromFunction2(value))
     }

@@ -26,7 +26,8 @@ object GridProps {
     __obj.asInstanceOf[GridProps[T]]
   }
   
-  extension [Self <: GridProps[?], T](x: Self & GridProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridProps[?], T] (val x: Self & GridProps[T]) extends AnyVal {
     
     inline def setBelowChart(value: Boolean): Self = StObject.set(x, "belowChart", value.asInstanceOf[js.Any])
     

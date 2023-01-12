@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[PumpifyFactoryOptions]
     }
     
-    extension [Self <: PumpifyFactoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PumpifyFactoryOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
       

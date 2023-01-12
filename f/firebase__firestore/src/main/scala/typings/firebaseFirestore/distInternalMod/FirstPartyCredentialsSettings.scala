@@ -27,7 +27,8 @@ object FirstPartyCredentialsSettings {
     __obj.asInstanceOf[FirstPartyCredentialsSettings]
   }
   
-  extension [Self <: FirstPartyCredentialsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstPartyCredentialsSettings] (val x: Self) extends AnyVal {
     
     inline def setAuthTokenFactory(value: () => String): Self = StObject.set(x, "authTokenFactory", js.Any.fromFunction0(value))
     

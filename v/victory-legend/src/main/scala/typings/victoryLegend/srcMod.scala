@@ -106,7 +106,8 @@ object srcMod {
       __obj.asInstanceOf[VictoryLegendProps]
     }
     
-    extension [Self <: VictoryLegendProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryLegendProps] (val x: Self) extends AnyVal {
       
       inline def setBorderComponent(value: ReactElement): Self = StObject.set(x, "borderComponent", value.asInstanceOf[js.Any])
       

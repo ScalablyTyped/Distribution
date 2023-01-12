@@ -18,7 +18,8 @@ object LocalWriteResult {
     __obj.asInstanceOf[LocalWriteResult]
   }
   
-  extension [Self <: LocalWriteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalWriteResult] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: BatchId): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

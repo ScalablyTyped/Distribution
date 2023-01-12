@@ -23,7 +23,8 @@ object DescribePendingAggregationRequestsRequest {
     __obj.asInstanceOf[DescribePendingAggregationRequestsRequest]
   }
   
-  extension [Self <: DescribePendingAggregationRequestsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePendingAggregationRequestsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: DescribePendingAggregationRequestsLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

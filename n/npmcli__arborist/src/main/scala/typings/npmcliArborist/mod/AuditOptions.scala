@@ -19,7 +19,8 @@ object AuditOptions {
     __obj.asInstanceOf[AuditOptions]
   }
   
-  extension [Self <: AuditOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditOptions] (val x: Self) extends AnyVal {
     
     inline def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
     

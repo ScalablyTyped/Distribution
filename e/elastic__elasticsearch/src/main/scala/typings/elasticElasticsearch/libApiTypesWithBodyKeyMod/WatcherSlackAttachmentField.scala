@@ -19,7 +19,8 @@ object WatcherSlackAttachmentField {
     __obj.asInstanceOf[WatcherSlackAttachmentField]
   }
   
-  extension [Self <: WatcherSlackAttachmentField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherSlackAttachmentField] (val x: Self) extends AnyVal {
     
     inline def setShort(value: Boolean): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     

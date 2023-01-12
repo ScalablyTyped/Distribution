@@ -42,7 +42,8 @@ object CIMMarkerPlacementPolygonCenter {
     __obj.asInstanceOf[CIMMarkerPlacementPolygonCenter]
   }
   
-  extension [Self <: CIMMarkerPlacementPolygonCenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementPolygonCenter] (val x: Self) extends AnyVal {
     
     inline def setClipAtBoundary(value: Boolean): Self = StObject.set(x, "clipAtBoundary", value.asInstanceOf[js.Any])
     

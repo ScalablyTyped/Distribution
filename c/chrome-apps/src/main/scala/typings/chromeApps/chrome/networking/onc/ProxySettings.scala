@@ -32,7 +32,8 @@ object ProxySettings {
     __obj.asInstanceOf[ProxySettings[M, S, SL]]
   }
   
-  extension [Self <: ProxySettings[?, ?, ?], M, S, SL](x: Self & (ProxySettings[M, S, SL])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxySettings[?, ?, ?], M, S, SL] (val x: Self & (ProxySettings[M, S, SL])) extends AnyVal {
     
     inline def setExcludeDomains(value: SL): Self = StObject.set(x, "ExcludeDomains", value.asInstanceOf[js.Any])
     

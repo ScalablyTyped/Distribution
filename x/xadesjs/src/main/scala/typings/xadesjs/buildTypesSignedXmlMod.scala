@@ -77,7 +77,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsNoticeReference]
     }
     
-    extension [Self <: OptionsNoticeReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsNoticeReference] (val x: Self) extends AnyVal {
       
       inline def setNoticeNumbers(value: js.Array[Double]): Self = StObject.set(x, "noticeNumbers", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsPolicyId]
     }
     
-    extension [Self <: OptionsPolicyId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsPolicyId] (val x: Self) extends AnyVal {
       
       inline def setDigestValue(value: String): Self = StObject.set(x, "digestValue", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsPolicyIdentifier]
     }
     
-    extension [Self <: OptionsPolicyIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsPolicyIdentifier] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -180,7 +183,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsPolicyUserNotice]
     }
     
-    extension [Self <: OptionsPolicyUserNotice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsPolicyUserNotice] (val x: Self) extends AnyVal {
       
       inline def setExplicitText(value: String): Self = StObject.set(x, "explicitText", value.asInstanceOf[js.Any])
       
@@ -209,7 +213,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsProductionPlace]
     }
     
-    extension [Self <: OptionsProductionPlace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsProductionPlace] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -242,7 +247,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsSignerRole]
     }
     
-    extension [Self <: OptionsSignerRole](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsSignerRole] (val x: Self) extends AnyVal {
       
       inline def setCertified(value: js.Array[String]): Self = StObject.set(x, "certified", value.asInstanceOf[js.Any])
       
@@ -271,7 +277,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsSigningCertificate]
     }
     
-    extension [Self <: OptionsSigningCertificate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsSigningCertificate] (val x: Self) extends AnyVal {
       
       inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
@@ -294,7 +301,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsSigningCertificateV2]
     }
     
-    extension [Self <: OptionsSigningCertificateV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsSigningCertificateV2] (val x: Self) extends AnyVal {
       
       inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
@@ -323,7 +331,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsSigningTime]
     }
     
-    extension [Self <: OptionsSigningTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsSigningTime] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -367,7 +376,8 @@ object buildTypesSignedXmlMod {
       __obj.asInstanceOf[OptionsXAdES]
     }
     
-    extension [Self <: OptionsXAdES](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsXAdES] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: OptionsPolicyId | Boolean): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       

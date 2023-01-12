@@ -103,7 +103,8 @@ object b2BodyDef {
     __obj.asInstanceOf[b2BodyDef]
   }
   
-  extension [Self <: b2BodyDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2BodyDef] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

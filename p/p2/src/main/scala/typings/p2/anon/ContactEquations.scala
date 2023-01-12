@@ -23,7 +23,8 @@ object ContactEquations {
     __obj.asInstanceOf[ContactEquations]
   }
   
-  extension [Self <: ContactEquations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactEquations] (val x: Self) extends AnyVal {
     
     inline def setContactEquations(value: js.Array[ContactEquation]): Self = StObject.set(x, "contactEquations", value.asInstanceOf[js.Any])
     

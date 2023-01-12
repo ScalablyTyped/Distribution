@@ -23,7 +23,8 @@ object Found {
     __obj.asInstanceOf[Found]
   }
   
-  extension [Self <: Found](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Found] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: typings.yandexMaps.mod.Cluster): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     

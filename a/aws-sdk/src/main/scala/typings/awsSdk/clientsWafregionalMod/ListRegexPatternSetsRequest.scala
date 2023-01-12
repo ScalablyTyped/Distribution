@@ -23,7 +23,8 @@ object ListRegexPatternSetsRequest {
     __obj.asInstanceOf[ListRegexPatternSetsRequest]
   }
   
-  extension [Self <: ListRegexPatternSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRegexPatternSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object RetentionProperties {
     __obj.asInstanceOf[RetentionProperties]
   }
   
-  extension [Self <: RetentionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetentionProperties] (val x: Self) extends AnyVal {
     
     inline def setMagneticStoreRetentionPeriodInDays(value: MagneticStoreRetentionPeriodInDays): Self = StObject.set(x, "MagneticStoreRetentionPeriodInDays", value.asInstanceOf[js.Any])
     

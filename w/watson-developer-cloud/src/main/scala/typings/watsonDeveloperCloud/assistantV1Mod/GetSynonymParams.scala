@@ -33,7 +33,8 @@ object GetSynonymParams {
     __obj.asInstanceOf[GetSynonymParams]
   }
   
-  extension [Self <: GetSynonymParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSynonymParams] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

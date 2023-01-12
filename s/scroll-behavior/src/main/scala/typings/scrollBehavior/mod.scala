@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[LocationBase]
     }
     
-    extension [Self <: LocationBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationBase] (val x: Self) extends AnyVal {
       
       inline def setAction(value: PUSH | String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[ScrollBehaviorOptions[TLocation, TContext]]
     }
     
-    extension [Self <: ScrollBehaviorOptions[?, ?], TLocation /* <: LocationBase */, TContext](x: Self & (ScrollBehaviorOptions[TLocation, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollBehaviorOptions[?, ?], TLocation /* <: LocationBase */, TContext] (val x: Self & (ScrollBehaviorOptions[TLocation, TContext])) extends AnyVal {
       
       inline def setAddNavigationListener(value: NavigationListener => js.Function0[Unit]): Self = StObject.set(x, "addNavigationListener", js.Any.fromFunction1(value))
       

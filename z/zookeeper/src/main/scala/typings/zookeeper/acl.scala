@@ -22,7 +22,8 @@ object acl {
     __obj.asInstanceOf[acl]
   }
   
-  extension [Self <: acl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: acl] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

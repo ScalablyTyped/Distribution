@@ -17,7 +17,8 @@ object OrientiationOption {
     __obj.asInstanceOf[OrientiationOption]
   }
   
-  extension [Self <: OrientiationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrientiationOption] (val x: Self) extends AnyVal {
     
     inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

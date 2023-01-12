@@ -23,7 +23,8 @@ object ASPxClientDashboardStateChangedEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardStateChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientDashboardStateChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardStateChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDashboardState(value: String): Self = StObject.set(x, "DashboardState", value.asInstanceOf[js.Any])
   }

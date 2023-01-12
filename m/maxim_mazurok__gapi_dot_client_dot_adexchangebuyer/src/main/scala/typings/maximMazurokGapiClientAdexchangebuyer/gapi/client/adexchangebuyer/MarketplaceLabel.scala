@@ -25,7 +25,8 @@ object MarketplaceLabel {
     __obj.asInstanceOf[MarketplaceLabel]
   }
   
-  extension [Self <: MarketplaceLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarketplaceLabel] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

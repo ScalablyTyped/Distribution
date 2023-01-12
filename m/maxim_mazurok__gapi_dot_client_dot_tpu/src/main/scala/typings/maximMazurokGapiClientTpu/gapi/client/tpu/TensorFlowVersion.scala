@@ -19,7 +19,8 @@ object TensorFlowVersion {
     __obj.asInstanceOf[TensorFlowVersion]
   }
   
-  extension [Self <: TensorFlowVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TensorFlowVersion] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

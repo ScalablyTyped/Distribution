@@ -100,7 +100,8 @@ object JsonWebKey2 {
     __obj.asInstanceOf[JsonWebKey2]
   }
   
-  extension [Self <: JsonWebKey2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonWebKey2] (val x: Self) extends AnyVal {
     
     inline def setCrv(value: KeyCurveName): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
     

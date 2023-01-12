@@ -29,7 +29,8 @@ object GetStreamingSessionReques {
     __obj.asInstanceOf[GetStreamingSessionReques]
   }
   
-  extension [Self <: GetStreamingSessionReques](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStreamingSessionReques] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

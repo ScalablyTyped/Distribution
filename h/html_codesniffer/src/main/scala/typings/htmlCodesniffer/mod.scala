@@ -402,7 +402,8 @@ object mod {
         __obj.asInstanceOf[CellHeaderInfo]
       }
       
-      extension [Self <: CellHeaderInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CellHeaderInfo] (val x: Self) extends AnyVal {
         
         inline def setCell(value: Element): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
         
@@ -427,7 +428,8 @@ object mod {
         __obj.asInstanceOf[Colour]
       }
       
-      extension [Self <: Colour](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Colour] (val x: Self) extends AnyVal {
         
         inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
         
@@ -481,7 +483,8 @@ object mod {
         __obj.asInstanceOf[HeaderInfo]
       }
       
-      extension [Self <: HeaderInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HeaderInfo] (val x: Self) extends AnyVal {
         
         inline def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
         
@@ -506,7 +509,8 @@ object mod {
         __obj.asInstanceOf[HsvColour]
       }
       
-      extension [Self <: HsvColour](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HsvColour] (val x: Self) extends AnyVal {
         
         inline def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
         
@@ -554,7 +558,8 @@ object mod {
         __obj.asInstanceOf[TestTableHeadersResult]
       }
       
-      extension [Self <: TestTableHeadersResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TestTableHeadersResult] (val x: Self) extends AnyVal {
         
         inline def setAllowScope(value: Boolean): Self = StObject.set(x, "allowScope", value.asInstanceOf[js.Any])
         
@@ -648,7 +653,8 @@ object mod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

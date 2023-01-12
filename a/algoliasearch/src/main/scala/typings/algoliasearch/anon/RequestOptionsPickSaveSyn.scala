@@ -55,7 +55,8 @@ object RequestOptionsPickSaveSyn {
     __obj.asInstanceOf[RequestOptionsPickSaveSyn]
   }
   
-  extension [Self <: RequestOptionsPickSaveSyn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestOptionsPickSaveSyn] (val x: Self) extends AnyVal {
     
     inline def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
     

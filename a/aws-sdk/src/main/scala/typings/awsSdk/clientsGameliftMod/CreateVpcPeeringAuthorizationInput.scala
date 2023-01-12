@@ -23,7 +23,8 @@ object CreateVpcPeeringAuthorizationInput {
     __obj.asInstanceOf[CreateVpcPeeringAuthorizationInput]
   }
   
-  extension [Self <: CreateVpcPeeringAuthorizationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVpcPeeringAuthorizationInput] (val x: Self) extends AnyVal {
     
     inline def setGameLiftAwsAccountId(value: NonZeroAndMaxString): Self = StObject.set(x, "GameLiftAwsAccountId", value.asInstanceOf[js.Any])
     

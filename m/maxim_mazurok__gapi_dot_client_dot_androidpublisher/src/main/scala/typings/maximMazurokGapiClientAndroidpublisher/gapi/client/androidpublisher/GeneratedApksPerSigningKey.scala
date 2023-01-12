@@ -28,7 +28,8 @@ object GeneratedApksPerSigningKey {
     __obj.asInstanceOf[GeneratedApksPerSigningKey]
   }
   
-  extension [Self <: GeneratedApksPerSigningKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratedApksPerSigningKey] (val x: Self) extends AnyVal {
     
     inline def setCertificateSha256Hash(value: String): Self = StObject.set(x, "certificateSha256Hash", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object INxDataAreaPage {
     __obj.asInstanceOf[INxDataAreaPage]
   }
   
-  extension [Self <: INxDataAreaPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxDataAreaPage] (val x: Self) extends AnyVal {
     
     inline def setQHeight(value: Double): Self = StObject.set(x, "qHeight", value.asInstanceOf[js.Any])
     

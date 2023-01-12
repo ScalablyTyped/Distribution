@@ -26,7 +26,8 @@ object InterconnectDiagnosticsLinkOpticalPower {
     __obj.asInstanceOf[InterconnectDiagnosticsLinkOpticalPower]
   }
   
-  extension [Self <: InterconnectDiagnosticsLinkOpticalPower](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectDiagnosticsLinkOpticalPower] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

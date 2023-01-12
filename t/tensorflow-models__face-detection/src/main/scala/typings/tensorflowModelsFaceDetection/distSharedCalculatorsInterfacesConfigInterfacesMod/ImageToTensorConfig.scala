@@ -24,7 +24,8 @@ object ImageToTensorConfig {
     __obj.asInstanceOf[ImageToTensorConfig]
   }
   
-  extension [Self <: ImageToTensorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageToTensorConfig] (val x: Self) extends AnyVal {
     
     inline def setBorderMode(value: zero | replicate): Self = StObject.set(x, "borderMode", value.asInstanceOf[js.Any])
     

@@ -133,7 +133,8 @@ object distAccountMod {
       __obj.asInstanceOf[AccountData]
     }
     
-    extension [Self <: AccountData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountData] (val x: Self) extends AnyVal {
       
       inline def setBalance(value: BNLike): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
       

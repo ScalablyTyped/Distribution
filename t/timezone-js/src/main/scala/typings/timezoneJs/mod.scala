@@ -201,7 +201,8 @@ object mod {
       __obj.asInstanceOf[TimezoneJsOptions]
     }
     
-    extension [Self <: TimezoneJsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimezoneJsOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

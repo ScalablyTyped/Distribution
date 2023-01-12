@@ -21,7 +21,8 @@ object PhoneMultiFactorSignInInfoOptions {
     __obj.asInstanceOf[PhoneMultiFactorSignInInfoOptions]
   }
   
-  extension [Self <: PhoneMultiFactorSignInInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneMultiFactorSignInInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setMultiFactorHint(value: MultiFactorInfo): Self = StObject.set(x, "multiFactorHint", value.asInstanceOf[js.Any])
     

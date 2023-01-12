@@ -69,7 +69,8 @@ object CreateNetworkAclEntryRequest {
     __obj.asInstanceOf[CreateNetworkAclEntryRequest]
   }
   
-  extension [Self <: CreateNetworkAclEntryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNetworkAclEntryRequest] (val x: Self) extends AnyVal {
     
     inline def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     

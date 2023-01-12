@@ -37,7 +37,8 @@ object LookbehindAssertion {
     __obj.asInstanceOf[LookbehindAssertion]
   }
   
-  extension [Self <: LookbehindAssertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookbehindAssertion] (val x: Self) extends AnyVal {
     
     inline def setAlternatives(value: js.Array[Alternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     

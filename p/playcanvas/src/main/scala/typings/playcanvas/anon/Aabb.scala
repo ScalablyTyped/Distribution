@@ -30,7 +30,8 @@ object Aabb {
     __obj.asInstanceOf[Aabb]
   }
   
-  extension [Self <: Aabb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aabb] (val x: Self) extends AnyVal {
     
     inline def setAabb(value: BoundingBox): Self = StObject.set(x, "aabb", value.asInstanceOf[js.Any])
     

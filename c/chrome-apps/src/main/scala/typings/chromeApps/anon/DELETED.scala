@@ -17,7 +17,8 @@ object DELETED {
     __obj.asInstanceOf[DELETED]
   }
   
-  extension [Self <: DELETED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DELETED] (val x: Self) extends AnyVal {
     
     inline def setCHANGED(value: typings.chromeApps.chromeAppsStrings.CHANGED): Self = StObject.set(x, "CHANGED", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object distSrcQuerySelfMod {
       __obj.asInstanceOf[QuerySelfInit]
     }
     
-    extension [Self <: QuerySelfInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuerySelfInit] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

@@ -140,7 +140,8 @@ object IServerConfig {
     __obj.asInstanceOf[IServerConfig]
   }
   
-  extension [Self <: IServerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IServerConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoAcceptConnections(value: Boolean): Self = StObject.set(x, "autoAcceptConnections", value.asInstanceOf[js.Any])
     

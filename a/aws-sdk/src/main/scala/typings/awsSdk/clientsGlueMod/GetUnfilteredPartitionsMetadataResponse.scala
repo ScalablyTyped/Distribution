@@ -17,7 +17,8 @@ object GetUnfilteredPartitionsMetadataResponse {
     __obj.asInstanceOf[GetUnfilteredPartitionsMetadataResponse]
   }
   
-  extension [Self <: GetUnfilteredPartitionsMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUnfilteredPartitionsMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

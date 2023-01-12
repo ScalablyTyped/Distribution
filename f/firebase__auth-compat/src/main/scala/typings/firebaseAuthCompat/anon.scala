@@ -81,7 +81,8 @@ object anon {
       __obj.asInstanceOf[DisableWarnings]
     }
     
-    extension [Self <: DisableWarnings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisableWarnings] (val x: Self) extends AnyVal {
       
       inline def setDisableWarnings(value: Boolean): Self = StObject.set(x, "disableWarnings", value.asInstanceOf[js.Any])
     }
@@ -100,7 +101,8 @@ object anon {
       __obj.asInstanceOf[DisplayName]
     }
     
-    extension [Self <: DisplayName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object anon {
       __obj.asInstanceOf[LOCAL]
     }
     
-    extension [Self <: LOCAL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LOCAL] (val x: Self) extends AnyVal {
       
       inline def setLOCAL(value: String): Self = StObject.set(x, "LOCAL", value.asInstanceOf[js.Any])
       

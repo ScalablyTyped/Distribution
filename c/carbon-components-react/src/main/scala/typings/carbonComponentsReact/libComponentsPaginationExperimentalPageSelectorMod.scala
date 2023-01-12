@@ -28,7 +28,8 @@ object libComponentsPaginationExperimentalPageSelectorMod extends Shortcut {
       __obj.asInstanceOf[PageSelectorProps]
     }
     
-    extension [Self <: PageSelectorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageSelectorProps] (val x: Self) extends AnyVal {
       
       inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       

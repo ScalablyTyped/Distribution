@@ -30,7 +30,8 @@ object distMediapipeTypesMod {
       __obj.asInstanceOf[MediaPipeFaceDetectorMediaPipeModelConfig]
     }
     
-    extension [Self <: MediaPipeFaceDetectorMediaPipeModelConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaPipeFaceDetectorMediaPipeModelConfig] (val x: Self) extends AnyVal {
       
       inline def setRuntime(value: mediapipe): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object distMediapipeTypesMod {
       __obj.asInstanceOf[MediaPipeFaceDetectorModelConfig]
     }
     
-    extension [Self <: MediaPipeFaceDetectorModelConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaPipeFaceDetectorModelConfig] (val x: Self) extends AnyVal {
       
       inline def setModelType(value: MediaPipeFaceDetectorModelType): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
       

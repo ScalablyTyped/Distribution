@@ -58,7 +58,8 @@ object PutMetricStreamInput {
     __obj.asInstanceOf[PutMetricStreamInput]
   }
   
-  extension [Self <: PutMetricStreamInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutMetricStreamInput] (val x: Self) extends AnyVal {
     
     inline def setExcludeFilters(value: MetricStreamFilters): Self = StObject.set(x, "ExcludeFilters", value.asInstanceOf[js.Any])
     

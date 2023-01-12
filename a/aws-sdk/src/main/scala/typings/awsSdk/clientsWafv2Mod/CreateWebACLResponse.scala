@@ -18,7 +18,8 @@ object CreateWebACLResponse {
     __obj.asInstanceOf[CreateWebACLResponse]
   }
   
-  extension [Self <: CreateWebACLResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWebACLResponse] (val x: Self) extends AnyVal {
     
     inline def setSummary(value: WebACLSummary): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
     

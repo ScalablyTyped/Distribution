@@ -18,7 +18,8 @@ object InstanceReusePolicy {
     __obj.asInstanceOf[InstanceReusePolicy]
   }
   
-  extension [Self <: InstanceReusePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceReusePolicy] (val x: Self) extends AnyVal {
     
     inline def setReuseOnScaleIn(value: ReuseOnScaleIn): Self = StObject.set(x, "ReuseOnScaleIn", value.asInstanceOf[js.Any])
     

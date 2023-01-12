@@ -28,7 +28,8 @@ object Parameters {
     __obj.asInstanceOf[Parameters]
   }
   
-  extension [Self <: Parameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
     
     inline def setExcludeBootVolume(value: ExcludeBootVolume): Self = StObject.set(x, "ExcludeBootVolume", value.asInstanceOf[js.Any])
     

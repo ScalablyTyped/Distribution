@@ -36,7 +36,8 @@ object XServiceName {
     __obj.asInstanceOf[XServiceName]
   }
   
-  extension [Self <: XServiceName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XServiceName] (val x: Self) extends AnyVal {
     
     inline def setGetServiceName(value: () => String): Self = StObject.set(x, "getServiceName", js.Any.fromFunction0(value))
     

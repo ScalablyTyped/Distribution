@@ -20,7 +20,8 @@ object ListStateMachinesOutput {
     __obj.asInstanceOf[ListStateMachinesOutput]
   }
   
-  extension [Self <: ListStateMachinesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStateMachinesOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

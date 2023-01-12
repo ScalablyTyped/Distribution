@@ -51,7 +51,8 @@ object ShareVideoContent {
     __obj.asInstanceOf[ShareVideoContent]
   }
   
-  extension [Self <: ShareVideoContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareVideoContent] (val x: Self) extends AnyVal {
     
     inline def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
     

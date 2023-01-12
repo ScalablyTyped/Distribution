@@ -23,7 +23,8 @@ object UpdatePrimaryRegionRequest {
     __obj.asInstanceOf[UpdatePrimaryRegionRequest]
   }
   
-  extension [Self <: UpdatePrimaryRegionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePrimaryRegionRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     

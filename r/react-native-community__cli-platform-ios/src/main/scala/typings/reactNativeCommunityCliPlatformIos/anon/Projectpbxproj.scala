@@ -17,7 +17,8 @@ object Projectpbxproj {
     __obj.asInstanceOf[Projectpbxproj]
   }
   
-  extension [Self <: Projectpbxproj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Projectpbxproj] (val x: Self) extends AnyVal {
     
     inline def setProjectDotpbxproj(value: Any): Self = StObject.set(x, "project.pbxproj", value.asInstanceOf[js.Any])
   }

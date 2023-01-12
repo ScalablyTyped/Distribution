@@ -20,7 +20,8 @@ object FGodRayIntensity {
     __obj.asInstanceOf[FGodRayIntensity]
   }
   
-  extension [Self <: FGodRayIntensity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FGodRayIntensity] (val x: Self) extends AnyVal {
     
     inline def setFGodRayIntensity(value: IUniform[Any]): Self = StObject.set(x, "fGodRayIntensity", value.asInstanceOf[js.Any])
     

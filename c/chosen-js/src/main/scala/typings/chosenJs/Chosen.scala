@@ -159,7 +159,8 @@ object Chosen {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllow_single_deselect(value: Boolean): Self = StObject.set(x, "allow_single_deselect", value.asInstanceOf[js.Any])
       

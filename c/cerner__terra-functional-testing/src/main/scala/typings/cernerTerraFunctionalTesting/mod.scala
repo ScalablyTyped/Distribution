@@ -172,7 +172,8 @@ object mod {
           __obj.asInstanceOf[DescribeTestsOptions]
         }
         
-        extension [Self <: DescribeTestsOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: DescribeTestsOptions] (val x: Self) extends AnyVal {
           
           inline def setFormFactors(value: js.Array[FormFactor]): Self = StObject.set(x, "formFactors", value.asInstanceOf[js.Any])
           
@@ -233,7 +234,8 @@ object mod {
           __obj.asInstanceOf[FormFactorDimensions]
         }
         
-        extension [Self <: FormFactorDimensions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: FormFactorDimensions] (val x: Self) extends AnyVal {
           
           inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
           
@@ -339,7 +341,8 @@ object mod {
           __obj.asInstanceOf[ValidationOptions]
         }
         
-        extension [Self <: ValidationOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
           
           inline def setMismatchTolerance(value: Double): Self = StObject.set(x, "mismatchTolerance", value.asInstanceOf[js.Any])
           

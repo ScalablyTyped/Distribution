@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: P5Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Stitch]
     }
     
-    extension [Self <: Stitch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stitch] (val x: Self) extends AnyVal {
       
       inline def setStitch(value: Node): Self = StObject.set(x, "stitch", value.asInstanceOf[js.Any])
     }

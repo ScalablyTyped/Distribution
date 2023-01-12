@@ -21,7 +21,8 @@ object Hook {
     __obj.asInstanceOf[Hook]
   }
   
-  extension [Self <: Hook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hook] (val x: Self) extends AnyVal {
     
     inline def setHook(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "hook", js.Any.fromFunction2(value))
   }

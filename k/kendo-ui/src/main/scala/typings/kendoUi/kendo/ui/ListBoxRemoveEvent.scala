@@ -19,7 +19,8 @@ object ListBoxRemoveEvent {
     __obj.asInstanceOf[ListBoxRemoveEvent]
   }
   
-  extension [Self <: ListBoxRemoveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBoxRemoveEvent] (val x: Self) extends AnyVal {
     
     inline def setDataItems(value: Any): Self = StObject.set(x, "dataItems", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AllowListStatus {
     __obj.asInstanceOf[AllowListStatus]
   }
   
-  extension [Self <: AllowListStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowListStatus] (val x: Self) extends AnyVal {
     
     inline def setCode(value: AllowListStatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

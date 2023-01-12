@@ -344,7 +344,8 @@ object mod {
         __obj.asInstanceOf[BasePlaylistConstructorProperties]
       }
       
-      extension [Self <: BasePlaylistConstructorProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BasePlaylistConstructorProperties] (val x: Self) extends AnyVal {
         
         inline def setIndependentSegments(value: Boolean): Self = StObject.set(x, "independentSegments", value.asInstanceOf[js.Any])
         
@@ -381,7 +382,8 @@ object mod {
         __obj.asInstanceOf[ByteRange]
       }
       
-      extension [Self <: ByteRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ByteRange] (val x: Self) extends AnyVal {
         
         inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
@@ -406,7 +408,8 @@ object mod {
         __obj.asInstanceOf[LowLatencyCompatibility]
       }
       
-      extension [Self <: LowLatencyCompatibility](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LowLatencyCompatibility] (val x: Self) extends AnyVal {
         
         inline def setCanBlockReload(value: Boolean): Self = StObject.set(x, "canBlockReload", value.asInstanceOf[js.Any])
         
@@ -440,7 +443,8 @@ object mod {
       __obj.asInstanceOf[Byterange]
     }
     
-    extension [Self <: Byterange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Byterange] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -459,7 +463,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
     }

@@ -27,7 +27,8 @@ object TeamsTab {
     __obj.asInstanceOf[TeamsTab]
   }
   
-  extension [Self <: TeamsTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamsTab] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: NullableOption[TeamsTabConfiguration]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

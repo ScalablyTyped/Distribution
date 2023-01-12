@@ -23,7 +23,8 @@ object DeleteConfigurationTemplateMessage {
     __obj.asInstanceOf[DeleteConfigurationTemplateMessage]
   }
   
-  extension [Self <: DeleteConfigurationTemplateMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteConfigurationTemplateMessage] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

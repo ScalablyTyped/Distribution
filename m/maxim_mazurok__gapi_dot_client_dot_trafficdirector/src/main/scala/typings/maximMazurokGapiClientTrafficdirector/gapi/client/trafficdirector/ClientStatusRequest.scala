@@ -16,7 +16,8 @@ object ClientStatusRequest {
     __obj.asInstanceOf[ClientStatusRequest]
   }
   
-  extension [Self <: ClientStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setNodeMatchers(value: js.Array[NodeMatcher]): Self = StObject.set(x, "nodeMatchers", value.asInstanceOf[js.Any])
     

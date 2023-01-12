@@ -33,7 +33,8 @@ object ModifyOptionGroupMessage {
     __obj.asInstanceOf[ModifyOptionGroupMessage]
   }
   
-  extension [Self <: ModifyOptionGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyOptionGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     

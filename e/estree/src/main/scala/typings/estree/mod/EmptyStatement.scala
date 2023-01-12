@@ -20,7 +20,8 @@ object EmptyStatement {
     __obj.asInstanceOf[EmptyStatement]
   }
   
-  extension [Self <: EmptyStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmptyStatement] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.estree.estreeStrings.EmptyStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

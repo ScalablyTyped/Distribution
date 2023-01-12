@@ -51,7 +51,8 @@ object Icon_ {
       __obj.asInstanceOf[DefaultIconOptions]
     }
     
-    extension [Self <: DefaultIconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultIconOptions] (val x: Self) extends AnyVal {
       
       inline def setImagePath(value: String): Self = StObject.set(x, "imagePath", value.asInstanceOf[js.Any])
       

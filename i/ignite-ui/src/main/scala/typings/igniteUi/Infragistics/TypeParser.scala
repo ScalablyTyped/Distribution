@@ -43,7 +43,8 @@ object TypeParser {
     __obj.asInstanceOf[TypeParser]
   }
   
-  extension [Self <: TypeParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeParser] (val x: Self) extends AnyVal {
     
     inline def setEmpty(value: () => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
     

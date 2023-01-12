@@ -26,7 +26,8 @@ object WeightedDiGraph {
     __obj.asInstanceOf[WeightedDiGraph]
   }
   
-  extension [Self <: WeightedDiGraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeightedDiGraph] (val x: Self) extends AnyVal {
     
     inline def setToDiGraph(value: () => DiGraph): Self = StObject.set(x, "toDiGraph", js.Any.fromFunction0(value))
   }

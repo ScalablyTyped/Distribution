@@ -103,7 +103,8 @@ object SimpleLineSymbolPropertie {
     __obj.asInstanceOf[SimpleLineSymbolPropertie]
   }
   
-  extension [Self <: SimpleLineSymbolPropertie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleLineSymbolPropertie] (val x: Self) extends AnyVal {
     
     inline def setCap(value: butt_ | round_ | square_): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     

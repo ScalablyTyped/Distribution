@@ -44,7 +44,8 @@ object PickCalendarMonthGridShap {
     __obj.asInstanceOf[PickCalendarMonthGridShap]
   }
   
-  extension [Self <: PickCalendarMonthGridShap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCalendarMonthGridShap] (val x: Self) extends AnyVal {
     
     inline def setDayAriaLabelFormat(value: Any): Self = StObject.set(x, "dayAriaLabelFormat", value.asInstanceOf[js.Any])
     

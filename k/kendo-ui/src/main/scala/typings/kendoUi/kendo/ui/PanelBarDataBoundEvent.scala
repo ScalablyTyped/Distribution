@@ -18,7 +18,8 @@ object PanelBarDataBoundEvent {
     __obj.asInstanceOf[PanelBarDataBoundEvent]
   }
   
-  extension [Self <: PanelBarDataBoundEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanelBarDataBoundEvent] (val x: Self) extends AnyVal {
     
     inline def setNode(value: JQuery): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

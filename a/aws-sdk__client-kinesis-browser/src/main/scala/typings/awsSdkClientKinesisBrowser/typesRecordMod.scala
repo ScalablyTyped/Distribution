@@ -46,7 +46,8 @@ object typesRecordMod {
       __obj.asInstanceOf[Record]
     }
     
-    extension [Self <: Record](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
       
       inline def setApproximateArrivalTimestamp(value: js.Date | String | Double): Self = StObject.set(x, "ApproximateArrivalTimestamp", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object typesRecordMod {
       __obj.asInstanceOf[UnmarshalledRecord]
     }
     
-    extension [Self <: UnmarshalledRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledRecord] (val x: Self) extends AnyVal {
       
       inline def setApproximateArrivalTimestamp(value: js.Date): Self = StObject.set(x, "ApproximateArrivalTimestamp", value.asInstanceOf[js.Any])
       

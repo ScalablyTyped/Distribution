@@ -41,7 +41,8 @@ object TableRowExpandableProps {
     __obj.asInstanceOf[TableRowExpandableProps]
   }
   
-  extension [Self <: TableRowExpandableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableRowExpandableProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityCollapseLabel(value: String): Self = StObject.set(x, "accessibilityCollapseLabel", value.asInstanceOf[js.Any])
     

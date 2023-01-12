@@ -43,7 +43,8 @@ object NavigationFolders {
     __obj.asInstanceOf[NavigationFolders]
   }
   
-  extension [Self <: NavigationFolders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationFolders] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Folder => NavigationFolder): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

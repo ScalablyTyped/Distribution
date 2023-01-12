@@ -47,7 +47,8 @@ object operationOptionCompresspdfCompressPdfOptionsMod {
       __obj.asInstanceOf[CompressionLevel]
     }
     
-    extension [Self <: CompressionLevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressionLevel] (val x: Self) extends AnyVal {
       
       inline def setHIGH(value: HIGH): Self = StObject.set(x, "HIGH", value.asInstanceOf[js.Any])
       

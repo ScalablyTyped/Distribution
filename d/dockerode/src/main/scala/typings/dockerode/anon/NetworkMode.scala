@@ -15,7 +15,8 @@ object NetworkMode {
     __obj.asInstanceOf[NetworkMode]
   }
   
-  extension [Self <: NetworkMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkMode] (val x: Self) extends AnyVal {
     
     inline def setNetworkMode(value: String): Self = StObject.set(x, "NetworkMode", value.asInstanceOf[js.Any])
   }

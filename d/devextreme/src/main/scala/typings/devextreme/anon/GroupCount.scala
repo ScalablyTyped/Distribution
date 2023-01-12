@@ -22,7 +22,8 @@ object GroupCount {
     __obj.asInstanceOf[GroupCount[TItem]]
   }
   
-  extension [Self <: GroupCount[?], TItem](x: Self & GroupCount[TItem]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupCount[?], TItem] (val x: Self & GroupCount[TItem]) extends AnyVal {
     
     inline def setData(value: js.Array[GroupItem[Any] | TItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

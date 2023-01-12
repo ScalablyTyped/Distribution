@@ -32,7 +32,8 @@ object PathElevationRequest {
     __obj.asInstanceOf[PathElevationRequest]
   }
   
-  extension [Self <: PathElevationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathElevationRequest] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[LatLng | LatLngLiteral]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

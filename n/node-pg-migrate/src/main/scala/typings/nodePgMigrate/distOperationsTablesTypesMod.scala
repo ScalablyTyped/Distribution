@@ -96,7 +96,8 @@ object distOperationsTablesTypesMod {
       __obj.asInstanceOf[AlterColumnOptions]
     }
     
-    extension [Self <: AlterColumnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlterColumnOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
       
@@ -163,7 +164,8 @@ object distOperationsTablesTypesMod {
       __obj.asInstanceOf[AlterTableOptions]
     }
     
-    extension [Self <: AlterTableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlterTableOptions] (val x: Self) extends AnyVal {
       
       inline def setLevelSecurity(value: DISABLE | ENABLE | FORCE | (`NO FORCE`)): Self = StObject.set(x, "levelSecurity", value.asInstanceOf[js.Any])
     }
@@ -221,7 +223,8 @@ object distOperationsTablesTypesMod {
       __obj.asInstanceOf[ColumnDefinition]
     }
     
-    extension [Self <: ColumnDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDefinition] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
@@ -332,7 +335,8 @@ object distOperationsTablesTypesMod {
       __obj.asInstanceOf[ConstraintOptions]
     }
     
-    extension [Self <: ConstraintOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstraintOptions] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: String | js.Array[String]): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
@@ -443,7 +447,8 @@ object distOperationsTablesTypesMod {
       __obj.asInstanceOf[ForeignKeyOptions]
     }
     
-    extension [Self <: ForeignKeyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForeignKeyOptions] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: Name | js.Array[Name]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -494,7 +499,8 @@ object distOperationsTablesTypesMod {
       __obj.asInstanceOf[LikeOptions]
     }
     
-    extension [Self <: LikeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LikeOptions] (val x: Self) extends AnyVal {
       
       inline def setExcluding(value: Like | js.Array[Like]): Self = StObject.set(x, "excluding", value.asInstanceOf[js.Any])
       
@@ -531,7 +537,8 @@ object distOperationsTablesTypesMod {
       __obj.asInstanceOf[ReferencesOptions]
     }
     
-    extension [Self <: ReferencesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferencesOptions] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: FULL | SIMPLE): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
@@ -610,7 +617,8 @@ object distOperationsTablesTypesMod {
       __obj.asInstanceOf[SequenceGeneratedOptions]
     }
     
-    extension [Self <: SequenceGeneratedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequenceGeneratedOptions] (val x: Self) extends AnyVal {
       
       inline def setPrecedence(value: ALWAYS | (`BY DEFAULT`)): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
     }
@@ -637,7 +645,8 @@ object distOperationsTablesTypesMod {
       __obj.asInstanceOf[TableOptions]
     }
     
-    extension [Self <: TableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       

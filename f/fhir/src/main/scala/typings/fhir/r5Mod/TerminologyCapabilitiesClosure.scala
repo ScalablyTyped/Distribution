@@ -22,7 +22,8 @@ object TerminologyCapabilitiesClosure {
     __obj.asInstanceOf[TerminologyCapabilitiesClosure]
   }
   
-  extension [Self <: TerminologyCapabilitiesClosure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminologyCapabilitiesClosure] (val x: Self) extends AnyVal {
     
     inline def setTranslation(value: Boolean): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
     

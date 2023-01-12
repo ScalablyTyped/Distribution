@@ -20,7 +20,8 @@ object meshUtilsCreateElevationSamplerOptions {
     __obj.asInstanceOf[meshUtilsCreateElevationSamplerOptions]
   }
   
-  extension [Self <: meshUtilsCreateElevationSamplerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: meshUtilsCreateElevationSamplerOptions] (val x: Self) extends AnyVal {
     
     inline def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
     

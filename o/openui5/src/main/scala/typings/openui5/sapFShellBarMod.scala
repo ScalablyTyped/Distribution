@@ -1627,7 +1627,8 @@ object sapFShellBarMod {
       __obj.asInstanceOf[ShellBarSettings]
     }
     
-    extension [Self <: ShellBarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBarSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalContent(
         value: js.Array[IShellBar] | IShellBar | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

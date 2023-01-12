@@ -25,7 +25,8 @@ object distTs3Dot9ModelsActionDisplayMod {
       __obj.asInstanceOf[ActionDisplay]
     }
     
-    extension [Self <: ActionDisplay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionDisplay] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

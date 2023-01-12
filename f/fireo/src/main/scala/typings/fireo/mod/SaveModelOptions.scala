@@ -19,7 +19,8 @@ object SaveModelOptions {
     __obj.asInstanceOf[SaveModelOptions]
   }
   
-  extension [Self <: SaveModelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveModelOptions] (val x: Self) extends AnyVal {
     
     inline def setBatch(value: Any): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     

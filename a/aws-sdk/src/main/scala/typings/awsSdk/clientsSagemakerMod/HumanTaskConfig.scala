@@ -82,7 +82,8 @@ object HumanTaskConfig {
     __obj.asInstanceOf[HumanTaskConfig]
   }
   
-  extension [Self <: HumanTaskConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HumanTaskConfig] (val x: Self) extends AnyVal {
     
     inline def setAnnotationConsolidationConfig(value: AnnotationConsolidationConfig): Self = StObject.set(x, "AnnotationConsolidationConfig", value.asInstanceOf[js.Any])
     

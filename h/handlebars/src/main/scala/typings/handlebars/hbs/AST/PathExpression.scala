@@ -27,7 +27,8 @@ object PathExpression {
     __obj.asInstanceOf[PathExpression]
   }
   
-  extension [Self <: PathExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathExpression] (val x: Self) extends AnyVal {
     
     inline def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

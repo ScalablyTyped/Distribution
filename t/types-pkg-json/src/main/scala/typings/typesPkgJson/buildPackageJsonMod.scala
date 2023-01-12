@@ -60,7 +60,8 @@ object buildPackageJsonMod {
       __obj.asInstanceOf[NonStandardEntryPoints]
     }
     
-    extension [Self <: NonStandardEntryPoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonStandardEntryPoints] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String | (StringDictionary[String | `false`])): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -272,7 +273,8 @@ object buildPackageJsonMod {
       __obj.asInstanceOf[PackageJSON]
     }
     
-    extension [Self <: PackageJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageJSON] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: Person): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

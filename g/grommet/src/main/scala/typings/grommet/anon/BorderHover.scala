@@ -17,7 +17,8 @@ object BorderHover {
     __obj.asInstanceOf[BorderHover]
   }
   
-  extension [Self <: BorderHover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderHover] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: `17`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

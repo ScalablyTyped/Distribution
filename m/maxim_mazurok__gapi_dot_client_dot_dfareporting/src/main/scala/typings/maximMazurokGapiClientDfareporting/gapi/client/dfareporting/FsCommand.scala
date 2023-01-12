@@ -28,7 +28,8 @@ object FsCommand {
     __obj.asInstanceOf[FsCommand]
   }
   
-  extension [Self <: FsCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FsCommand] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

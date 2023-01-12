@@ -32,7 +32,8 @@ object TezosRevealOp {
     __obj.asInstanceOf[TezosRevealOp]
   }
   
-  extension [Self <: TezosRevealOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TezosRevealOp] (val x: Self) extends AnyVal {
     
     inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     

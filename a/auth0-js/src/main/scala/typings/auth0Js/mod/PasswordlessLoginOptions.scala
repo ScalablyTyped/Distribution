@@ -23,7 +23,8 @@ object PasswordlessLoginOptions {
     __obj.asInstanceOf[PasswordlessLoginOptions]
   }
   
-  extension [Self <: PasswordlessLoginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordlessLoginOptions] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

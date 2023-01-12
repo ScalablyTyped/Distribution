@@ -23,7 +23,8 @@ object BluetoothLEScanFilter {
     __obj.asInstanceOf[BluetoothLEScanFilter]
   }
   
-  extension [Self <: BluetoothLEScanFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothLEScanFilter] (val x: Self) extends AnyVal {
     
     inline def setManufacturerData(value: js.Array[BluetoothManufacturerDataFilter]): Self = StObject.set(x, "manufacturerData", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object IBackgroundDownloadProperties {
     __obj.asInstanceOf[IBackgroundDownloadProperties]
   }
   
-  extension [Self <: IBackgroundDownloadProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBackgroundDownloadProperties] (val x: Self) extends AnyVal {
     
     inline def setFile_output(value: StorageFile): Self = StObject.set(x, "file_output", value.asInstanceOf[js.Any])
     

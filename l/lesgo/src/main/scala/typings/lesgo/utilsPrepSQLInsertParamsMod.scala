@@ -30,7 +30,8 @@ object utilsPrepSQLInsertParamsMod {
       __obj.asInstanceOf[SQLInsertParams]
     }
     
-    extension [Self <: SQLInsertParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQLInsertParams] (val x: Self) extends AnyVal {
       
       inline def setInsertColumns(value: String): Self = StObject.set(x, "insertColumns", value.asInstanceOf[js.Any])
       

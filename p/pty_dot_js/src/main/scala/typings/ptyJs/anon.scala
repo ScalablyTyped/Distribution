@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Cols]
     }
     
-    extension [Self <: Cols](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cols] (val x: Self) extends AnyVal {
       
       inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Fd]
     }
     
-    extension [Self <: Fd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fd] (val x: Self) extends AnyVal {
       
       inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
       
@@ -90,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Master]
     }
     
-    extension [Self <: Master](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Master] (val x: Self) extends AnyVal {
       
       inline def setMaster(value: Double): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
       
@@ -115,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Pid]
     }
     
-    extension [Self <: Pid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pid] (val x: Self) extends AnyVal {
       
       inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
       

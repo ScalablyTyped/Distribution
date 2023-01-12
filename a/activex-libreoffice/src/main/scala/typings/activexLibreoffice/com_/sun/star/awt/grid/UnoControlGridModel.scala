@@ -295,7 +295,8 @@ object UnoControlGridModel {
     __obj.asInstanceOf[UnoControlGridModel]
   }
   
-  extension [Self <: UnoControlGridModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlGridModel] (val x: Self) extends AnyVal {
     
     inline def setActiveSelectionBackgroundColor(value: Color): Self = StObject.set(x, "ActiveSelectionBackgroundColor", value.asInstanceOf[js.Any])
     

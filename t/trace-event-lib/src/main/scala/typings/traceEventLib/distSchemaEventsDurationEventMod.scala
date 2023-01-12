@@ -28,7 +28,8 @@ object distSchemaEventsDurationEventMod {
       __obj.asInstanceOf[DurationBeginEvent]
     }
     
-    extension [Self <: DurationBeginEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationBeginEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object distSchemaEventsDurationEventMod {
       __obj.asInstanceOf[DurationEndEvent]
     }
     
-    extension [Self <: DurationEndEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationEndEvent] (val x: Self) extends AnyVal {
       
       inline def setPh(value: E): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     }
@@ -78,7 +80,8 @@ object distSchemaEventsDurationEventMod {
       __obj.asInstanceOf[DurationEvent]
     }
     
-    extension [Self <: DurationEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationEvent] (val x: Self) extends AnyVal {
       
       inline def setPh(value: B | E): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     }

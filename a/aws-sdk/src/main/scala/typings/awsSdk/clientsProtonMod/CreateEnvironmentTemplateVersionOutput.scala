@@ -18,7 +18,8 @@ object CreateEnvironmentTemplateVersionOutput {
     __obj.asInstanceOf[CreateEnvironmentTemplateVersionOutput]
   }
   
-  extension [Self <: CreateEnvironmentTemplateVersionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEnvironmentTemplateVersionOutput] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentTemplateVersion(value: EnvironmentTemplateVersion): Self = StObject.set(x, "environmentTemplateVersion", value.asInstanceOf[js.Any])
   }

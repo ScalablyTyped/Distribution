@@ -19,7 +19,8 @@ object ZoomControlOptions {
     __obj.asInstanceOf[ZoomControlOptions]
   }
   
-  extension [Self <: ZoomControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomControlOptions] (val x: Self) extends AnyVal {
     
     inline def setLegendDisabled(value: Boolean): Self = StObject.set(x, "legendDisabled", value.asInstanceOf[js.Any])
     

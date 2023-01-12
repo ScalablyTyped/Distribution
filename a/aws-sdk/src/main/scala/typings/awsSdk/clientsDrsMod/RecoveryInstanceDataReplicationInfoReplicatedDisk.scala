@@ -38,7 +38,8 @@ object RecoveryInstanceDataReplicationInfoReplicatedDisk {
     __obj.asInstanceOf[RecoveryInstanceDataReplicationInfoReplicatedDisk]
   }
   
-  extension [Self <: RecoveryInstanceDataReplicationInfoReplicatedDisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryInstanceDataReplicationInfoReplicatedDisk] (val x: Self) extends AnyVal {
     
     inline def setBackloggedStorageBytes(value: PositiveInteger): Self = StObject.set(x, "backloggedStorageBytes", value.asInstanceOf[js.Any])
     

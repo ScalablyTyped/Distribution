@@ -50,7 +50,8 @@ object AutoFilterLoadOptions {
     __obj.asInstanceOf[AutoFilterLoadOptions]
   }
   
-  extension [Self <: AutoFilterLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoFilterLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

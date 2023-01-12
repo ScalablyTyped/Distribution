@@ -15,7 +15,8 @@ object CreateDBSecurityGroupResult {
     __obj.asInstanceOf[CreateDBSecurityGroupResult]
   }
   
-  extension [Self <: CreateDBSecurityGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDBSecurityGroupResult] (val x: Self) extends AnyVal {
     
     inline def setDBSecurityGroup(value: DBSecurityGroup): Self = StObject.set(x, "DBSecurityGroup", value.asInstanceOf[js.Any])
     

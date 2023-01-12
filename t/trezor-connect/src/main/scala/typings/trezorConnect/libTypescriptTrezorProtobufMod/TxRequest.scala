@@ -19,7 +19,8 @@ object TxRequest {
     __obj.asInstanceOf[TxRequest]
   }
   
-  extension [Self <: TxRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TxRequest] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: TxRequestDetailsType): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ExtraColors {
     __obj.asInstanceOf[ExtraColors]
   }
   
-  extension [Self <: ExtraColors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtraColors] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: MsoRGBType => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

@@ -28,7 +28,8 @@ object ListTaskExecutionsRequest {
     __obj.asInstanceOf[ListTaskExecutionsRequest]
   }
   
-  extension [Self <: ListTaskExecutionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTaskExecutionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

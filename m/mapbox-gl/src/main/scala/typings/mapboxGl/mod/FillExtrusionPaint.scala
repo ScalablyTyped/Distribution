@@ -45,7 +45,8 @@ object FillExtrusionPaint {
     __obj.asInstanceOf[FillExtrusionPaint]
   }
   
-  extension [Self <: FillExtrusionPaint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillExtrusionPaint] (val x: Self) extends AnyVal {
     
     inline def `setFill-extrusion-base`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "fill-extrusion-base", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteScalingPolicyInput {
     __obj.asInstanceOf[DeleteScalingPolicyInput]
   }
   
-  extension [Self <: DeleteScalingPolicyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteScalingPolicyInput] (val x: Self) extends AnyVal {
     
     inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     

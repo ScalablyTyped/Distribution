@@ -84,7 +84,8 @@ object nativeDistDistModelsGlobalStyleMod {
       __obj.asInstanceOf[GlobalStyle[Props]]
     }
     
-    extension [Self <: GlobalStyle[?], Props](x: Self & GlobalStyle[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalStyle[?], Props] (val x: Self & GlobalStyle[Props]) extends AnyVal {
       
       inline def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
       

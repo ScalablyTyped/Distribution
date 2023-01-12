@@ -44,7 +44,8 @@ object CellClickEventUIParam {
     __obj.asInstanceOf[CellClickEventUIParam]
   }
   
-  extension [Self <: CellClickEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellClickEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCellElement(value: Element): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
     

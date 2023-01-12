@@ -20,7 +20,8 @@ object Inspector {
       __obj.asInstanceOf[DetachedEvent]
     }
     
-    extension [Self <: DetachedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetachedEvent] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }

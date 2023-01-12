@@ -20,7 +20,8 @@ object AnalysisDictionaryDecompounderTokenFilter {
     __obj.asInstanceOf[AnalysisDictionaryDecompounderTokenFilter]
   }
   
-  extension [Self <: AnalysisDictionaryDecompounderTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisDictionaryDecompounderTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: dictionary_decompounder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

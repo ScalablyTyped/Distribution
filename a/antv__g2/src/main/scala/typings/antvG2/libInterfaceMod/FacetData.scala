@@ -92,7 +92,8 @@ object FacetData {
     __obj.asInstanceOf[FacetData]
   }
   
-  extension [Self <: FacetData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetData] (val x: Self) extends AnyVal {
     
     inline def setColumnField(value: String): Self = StObject.set(x, "columnField", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object AssetDiscoveryConfig {
     __obj.asInstanceOf[AssetDiscoveryConfig]
   }
   
-  extension [Self <: AssetDiscoveryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetDiscoveryConfig] (val x: Self) extends AnyVal {
     
     inline def setFolderIds(value: js.Array[String]): Self = StObject.set(x, "folderIds", value.asInstanceOf[js.Any])
     

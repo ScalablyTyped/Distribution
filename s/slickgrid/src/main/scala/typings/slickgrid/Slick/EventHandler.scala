@@ -23,7 +23,8 @@ object EventHandler {
     __obj.asInstanceOf[EventHandler[T]]
   }
   
-  extension [Self <: EventHandler[?], T](x: Self & EventHandler[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventHandler[?], T] (val x: Self & EventHandler[T]) extends AnyVal {
     
     inline def setSubscribe(value: (Event[T], js.Function2[/* e */ EventData, /* data */ T, Unit]) => EventHandler[Any]): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
     

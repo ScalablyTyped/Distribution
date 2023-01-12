@@ -23,7 +23,8 @@ object PutConfigurationSetReputationOptionsRequest {
     __obj.asInstanceOf[PutConfigurationSetReputationOptionsRequest]
   }
   
-  extension [Self <: PutConfigurationSetReputationOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutConfigurationSetReputationOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     

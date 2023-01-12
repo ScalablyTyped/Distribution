@@ -27,7 +27,8 @@ object distInterfacesPathMod {
       __obj.asInstanceOf[PathAncestorsOptions]
     }
     
-    extension [Self <: PathAncestorsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathAncestorsOptions] (val x: Self) extends AnyVal {
       
       inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object distInterfacesPathMod {
       __obj.asInstanceOf[PathLevelsOptions]
     }
     
-    extension [Self <: PathLevelsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathLevelsOptions] (val x: Self) extends AnyVal {
       
       inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object distInterfacesPathMod {
       __obj.asInstanceOf[PathTransformOptions]
     }
     
-    extension [Self <: PathTransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathTransformOptions] (val x: Self) extends AnyVal {
       
       inline def setAffinity(value: TextDirection): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
       

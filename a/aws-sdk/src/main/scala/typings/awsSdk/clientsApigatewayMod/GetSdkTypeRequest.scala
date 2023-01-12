@@ -18,7 +18,8 @@ object GetSdkTypeRequest {
     __obj.asInstanceOf[GetSdkTypeRequest]
   }
   
-  extension [Self <: GetSdkTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSdkTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

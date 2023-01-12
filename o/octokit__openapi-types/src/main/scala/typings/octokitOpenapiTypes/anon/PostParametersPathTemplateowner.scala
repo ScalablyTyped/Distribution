@@ -25,7 +25,8 @@ object PostParametersPathTemplateowner {
     __obj.asInstanceOf[PostParametersPathTemplateowner]
   }
   
-  extension [Self <: PostParametersPathTemplateowner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostParametersPathTemplateowner] (val x: Self) extends AnyVal {
     
     inline def setPost(value: ParametersPathTemplateowner): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object Material {
     __obj.asInstanceOf[Material]
   }
   
-  extension [Self <: Material](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Material] (val x: Self) extends AnyVal {
     
     inline def setDigest(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

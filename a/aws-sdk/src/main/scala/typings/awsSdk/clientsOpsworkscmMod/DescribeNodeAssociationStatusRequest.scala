@@ -23,7 +23,8 @@ object DescribeNodeAssociationStatusRequest {
     __obj.asInstanceOf[DescribeNodeAssociationStatusRequest]
   }
   
-  extension [Self <: DescribeNodeAssociationStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNodeAssociationStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setNodeAssociationStatusToken(value: NodeAssociationStatusToken): Self = StObject.set(x, "NodeAssociationStatusToken", value.asInstanceOf[js.Any])
     

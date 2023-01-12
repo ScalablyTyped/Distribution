@@ -33,7 +33,8 @@ object UpdateFailbackReplicationConfigurationRequest {
     __obj.asInstanceOf[UpdateFailbackReplicationConfigurationRequest]
   }
   
-  extension [Self <: UpdateFailbackReplicationConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFailbackReplicationConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setBandwidthThrottling(value: PositiveInteger): Self = StObject.set(x, "bandwidthThrottling", value.asInstanceOf[js.Any])
     

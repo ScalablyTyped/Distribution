@@ -45,7 +45,8 @@ object momentMod {
       __obj.asInstanceOf[HolidayDefinition]
     }
     
-    extension [Self <: HolidayDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HolidayDefinition] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object momentMod {
       __obj.asInstanceOf[Holidays_]
     }
     
-    extension [Self <: Holidays_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Holidays_] (val x: Self) extends AnyVal {
       
       inline def setActive(value: HolidaysMapping): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

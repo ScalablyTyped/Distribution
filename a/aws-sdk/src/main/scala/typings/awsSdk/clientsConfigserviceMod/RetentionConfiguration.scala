@@ -23,7 +23,8 @@ object RetentionConfiguration {
     __obj.asInstanceOf[RetentionConfiguration]
   }
   
-  extension [Self <: RetentionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetentionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setName(value: RetentionConfigurationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

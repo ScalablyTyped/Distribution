@@ -32,7 +32,8 @@ object AggregatedUtterancesFilter {
     __obj.asInstanceOf[AggregatedUtterancesFilter]
   }
   
-  extension [Self <: AggregatedUtterancesFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedUtterancesFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: AggregatedUtterancesFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

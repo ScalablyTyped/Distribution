@@ -17,7 +17,8 @@ object WrappedComponentPropsintlIntl {
     __obj.asInstanceOf[WrappedComponentPropsintlIntl]
   }
   
-  extension [Self <: WrappedComponentPropsintlIntl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WrappedComponentPropsintlIntl] (val x: Self) extends AnyVal {
     
     inline def setIntl(value: IntlShape): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
   }

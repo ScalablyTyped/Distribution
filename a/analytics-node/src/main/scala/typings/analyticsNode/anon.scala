@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Batch]
     }
     
-    extension [Self <: Batch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
       
       inline def setBatch(value: Any): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setLibrary(value: Name): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
     }
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Enable]
     }
     
-    extension [Self <: Enable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Identitycategorystringund]
     }
     
-    extension [Self <: Identitycategorystringund](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identitycategorystringund] (val x: Self) extends AnyVal {
       
       inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
       
@@ -193,7 +197,8 @@ object anon {
       __obj.asInstanceOf[Identityeventstringproper]
     }
     
-    extension [Self <: Identityeventstringproper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identityeventstringproper] (val x: Self) extends AnyVal {
       
       inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
       
@@ -247,7 +252,8 @@ object anon {
       __obj.asInstanceOf[IdentitygroupIdstringnumb]
     }
     
-    extension [Self <: IdentitygroupIdstringnumb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentitygroupIdstringnumb] (val x: Self) extends AnyVal {
       
       inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
       
@@ -301,7 +307,8 @@ object anon {
       __obj.asInstanceOf[Identitynamestringundefin]
     }
     
-    extension [Self <: Identitynamestringundefin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identitynamestringundefin] (val x: Self) extends AnyVal {
       
       inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
       
@@ -351,7 +358,8 @@ object anon {
       __obj.asInstanceOf[IdentitypreviousIdstringn]
     }
     
-    extension [Self <: IdentitypreviousIdstringn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentitypreviousIdstringn] (val x: Self) extends AnyVal {
       
       inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
       
@@ -391,7 +399,8 @@ object anon {
       __obj.asInstanceOf[Identitytraitsanyundefine]
     }
     
-    extension [Self <: Identitytraitsanyundefine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identitytraitsanyundefine] (val x: Self) extends AnyVal {
       
       inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
       
@@ -432,7 +441,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -453,7 +463,8 @@ object anon {
       __obj.asInstanceOf[NodeVersion]
     }
     
-    extension [Self <: NodeVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeVersion] (val x: Self) extends AnyVal {
       
       inline def setNodeVersion(value: String): Self = StObject.set(x, "nodeVersion", value.asInstanceOf[js.Any])
     }

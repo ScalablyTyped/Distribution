@@ -23,7 +23,8 @@ object PackageVersionError {
     __obj.asInstanceOf[PackageVersionError]
   }
   
-  extension [Self <: PackageVersionError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageVersionError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: PackageVersionErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

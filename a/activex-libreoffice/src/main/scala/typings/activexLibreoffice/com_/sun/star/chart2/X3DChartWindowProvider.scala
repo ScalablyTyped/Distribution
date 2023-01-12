@@ -15,7 +15,8 @@ object X3DChartWindowProvider {
     __obj.asInstanceOf[X3DChartWindowProvider]
   }
   
-  extension [Self <: X3DChartWindowProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X3DChartWindowProvider] (val x: Self) extends AnyVal {
     
     inline def setSetWindow(value: Double => Unit): Self = StObject.set(x, "setWindow", js.Any.fromFunction1(value))
   }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "appdynamics"
-version := "21.8-dt-20211202Z-7c000f"
+version := "21.8-dt-20211202Z-fa29b0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[immutableStateInvariantMiddlewareOptions]
     }
     
-    extension [Self <: immutableStateInvariantMiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: immutableStateInvariantMiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       

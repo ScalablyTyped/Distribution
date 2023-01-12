@@ -79,7 +79,8 @@ object TransferDomainRequest {
     __obj.asInstanceOf[TransferDomainRequest]
   }
   
-  extension [Self <: TransferDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setAdminContact(value: ContactDetail): Self = StObject.set(x, "AdminContact", value.asInstanceOf[js.Any])
     

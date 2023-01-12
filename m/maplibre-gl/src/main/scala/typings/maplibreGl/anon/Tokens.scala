@@ -33,7 +33,8 @@ object Tokens {
     __obj.asInstanceOf[Tokens]
   }
   
-  extension [Self <: Tokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tokens] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

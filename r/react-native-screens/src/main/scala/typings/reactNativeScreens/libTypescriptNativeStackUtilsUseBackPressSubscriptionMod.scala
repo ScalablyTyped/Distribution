@@ -25,7 +25,8 @@ object libTypescriptNativeStackUtilsUseBackPressSubscriptionMod {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object libTypescriptNativeStackUtilsUseBackPressSubscriptionMod {
       __obj.asInstanceOf[UseBackPressSubscription_]
     }
     
-    extension [Self <: UseBackPressSubscription_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseBackPressSubscription_] (val x: Self) extends AnyVal {
       
       inline def setClearSubscription(value: () => Unit): Self = StObject.set(x, "clearSubscription", js.Any.fromFunction0(value))
       

@@ -41,7 +41,8 @@ object distUtilsDispatchMockMod {
       __obj.asInstanceOf[MockDispatch[T]]
     }
     
-    extension [Self <: MockDispatch[?], T /* <: AnyAction */](x: Self & MockDispatch[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockDispatch[?], T /* <: AnyAction */] (val x: Self & MockDispatch[T]) extends AnyVal {
       
       inline def setDispatch(value: T => T): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       

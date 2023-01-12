@@ -30,7 +30,8 @@ object BodyStructureExcludedStructure {
     __obj.asInstanceOf[BodyStructureExcludedStructure]
   }
   
-  extension [Self <: BodyStructureExcludedStructure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyStructureExcludedStructure] (val x: Self) extends AnyVal {
     
     inline def setLaterality(value: CodeableConcept): Self = StObject.set(x, "laterality", value.asInstanceOf[js.Any])
     

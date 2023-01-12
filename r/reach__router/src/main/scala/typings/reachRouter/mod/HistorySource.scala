@@ -28,7 +28,8 @@ object HistorySource {
     __obj.asInstanceOf[HistorySource]
   }
   
-  extension [Self <: HistorySource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistorySource] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (String, js.Function1[/* event */ Event, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

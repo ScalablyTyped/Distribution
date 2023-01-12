@@ -16,7 +16,8 @@ object ListServiceAccountKeysResponse {
     __obj.asInstanceOf[ListServiceAccountKeysResponse]
   }
   
-  extension [Self <: ListServiceAccountKeysResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListServiceAccountKeysResponse] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: js.Array[ServiceAccountKey]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

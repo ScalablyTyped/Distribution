@@ -37,7 +37,8 @@ object XMouseMotionListener {
     __obj.asInstanceOf[XMouseMotionListener]
   }
   
-  extension [Self <: XMouseMotionListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMouseMotionListener] (val x: Self) extends AnyVal {
     
     inline def setMouseDragged(value: MouseEvent => Unit): Self = StObject.set(x, "mouseDragged", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object SavingResolver {
     __obj.asInstanceOf[SavingResolver]
   }
   
-  extension [Self <: SavingResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingResolver] (val x: Self) extends AnyVal {
     
     inline def setReject(value: () => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction0(value))
     

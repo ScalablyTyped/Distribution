@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[AckTimeout]
     }
     
-    extension [Self <: AckTimeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AckTimeout] (val x: Self) extends AnyVal {
       
       inline def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Channel]
     }
     
-    extension [Self <: Channel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -75,7 +78,8 @@ object anon {
       __obj.asInstanceOf[OldAuthToken]
     }
     
-    extension [Self <: OldAuthToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OldAuthToken] (val x: Self) extends AnyVal {
       
       inline def setOldAuthToken(value: AuthToken): Self = StObject.set(x, "oldAuthToken", value.asInstanceOf[js.Any])
     }

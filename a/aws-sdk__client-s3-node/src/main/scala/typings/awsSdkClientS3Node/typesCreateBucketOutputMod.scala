@@ -26,7 +26,8 @@ object typesCreateBucketOutputMod {
       __obj.asInstanceOf[CreateBucketOutput]
     }
     
-    extension [Self <: CreateBucketOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateBucketOutput] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object InstanceUserSummary {
     __obj.asInstanceOf[InstanceUserSummary]
   }
   
-  extension [Self <: InstanceUserSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceUserSummary] (val x: Self) extends AnyVal {
     
     inline def setAssociationDate(value: String): Self = StObject.set(x, "AssociationDate", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object IJsonValueStatics {
     __obj.asInstanceOf[IJsonValueStatics]
   }
   
-  extension [Self <: IJsonValueStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJsonValueStatics] (val x: Self) extends AnyVal {
     
     inline def setCreateBooleanValue(value: Boolean => JsonValue): Self = StObject.set(x, "createBooleanValue", js.Any.fromFunction1(value))
     

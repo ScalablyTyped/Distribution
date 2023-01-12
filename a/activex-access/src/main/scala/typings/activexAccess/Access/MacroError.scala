@@ -40,7 +40,8 @@ object MacroError {
     __obj.asInstanceOf[MacroError]
   }
   
-  extension [Self <: MacroError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MacroError] (val x: Self) extends AnyVal {
     
     inline def setAccessDotMacroError_typekey(value: MacroError): Self = StObject.set(x, "Access.MacroError_typekey", value.asInstanceOf[js.Any])
     

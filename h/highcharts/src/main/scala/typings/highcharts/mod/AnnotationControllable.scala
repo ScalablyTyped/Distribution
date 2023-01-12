@@ -21,7 +21,8 @@ object AnnotationControllable {
     __obj.asInstanceOf[AnnotationControllable]
   }
   
-  extension [Self <: AnnotationControllable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationControllable] (val x: Self) extends AnyVal {
     
     inline def setAnnotation(value: Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     

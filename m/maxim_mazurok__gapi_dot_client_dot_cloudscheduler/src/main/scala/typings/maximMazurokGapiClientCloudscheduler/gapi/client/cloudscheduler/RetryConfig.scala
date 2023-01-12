@@ -42,7 +42,8 @@ object RetryConfig {
     __obj.asInstanceOf[RetryConfig]
   }
   
-  extension [Self <: RetryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxBackoffDuration(value: String): Self = StObject.set(x, "maxBackoffDuration", value.asInstanceOf[js.Any])
     

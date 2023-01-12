@@ -23,7 +23,8 @@ object GetLoadBalancerTlsPoliciesResult {
     __obj.asInstanceOf[GetLoadBalancerTlsPoliciesResult]
   }
   
-  extension [Self <: GetLoadBalancerTlsPoliciesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLoadBalancerTlsPoliciesResult] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TreeTableSortParams {
     __obj.asInstanceOf[TreeTableSortParams]
   }
   
-  extension [Self <: TreeTableSortParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeTableSortParams] (val x: Self) extends AnyVal {
     
     inline def setMultiSortMeta(value: TreeTableMultiSortMetaType): Self = StObject.set(x, "multiSortMeta", value.asInstanceOf[js.Any])
     

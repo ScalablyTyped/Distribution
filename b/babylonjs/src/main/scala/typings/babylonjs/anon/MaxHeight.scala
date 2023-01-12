@@ -33,7 +33,8 @@ object MaxHeight {
     __obj.asInstanceOf[MaxHeight]
   }
   
-  extension [Self <: MaxHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxHeight] (val x: Self) extends AnyVal {
     
     inline def setAlphaFilter(value: Double): Self = StObject.set(x, "alphaFilter", value.asInstanceOf[js.Any])
     

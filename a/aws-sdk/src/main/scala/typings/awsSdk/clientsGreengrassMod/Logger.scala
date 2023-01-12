@@ -38,7 +38,8 @@ object Logger {
     __obj.asInstanceOf[Logger]
   }
   
-  extension [Self <: Logger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: LoggerComponent): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     

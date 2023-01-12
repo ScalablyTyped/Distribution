@@ -19,7 +19,8 @@ object distTypesMod {
       __obj.asInstanceOf[Verification]
     }
     
-    extension [Self <: Verification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Verification] (val x: Self) extends AnyVal {
       
       inline def setIsPotentiallyValid(value: Boolean): Self = StObject.set(x, "isPotentiallyValid", value.asInstanceOf[js.Any])
       

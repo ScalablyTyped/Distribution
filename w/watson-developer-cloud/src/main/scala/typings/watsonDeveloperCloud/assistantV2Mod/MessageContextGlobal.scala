@@ -17,7 +17,8 @@ object MessageContextGlobal {
     __obj.asInstanceOf[MessageContextGlobal]
   }
   
-  extension [Self <: MessageContextGlobal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageContextGlobal] (val x: Self) extends AnyVal {
     
     inline def setSystem(value: MessageContextGlobalSystem): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     

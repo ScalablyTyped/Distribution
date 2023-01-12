@@ -84,7 +84,8 @@ object esUtilsTreeUtilMod {
       __obj.asInstanceOf[TraverseDataNodesConfig]
     }
     
-    extension [Self <: TraverseDataNodesConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraverseDataNodesConfig] (val x: Self) extends AnyVal {
       
       inline def setChildrenPropName(value: String): Self = StObject.set(x, "childrenPropName", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object esUtilsTreeUtilMod {
       __obj.asInstanceOf[TreeNodeRequiredProps[TreeDataType]]
     }
     
-    extension [Self <: TreeNodeRequiredProps[?], TreeDataType /* <: BasicDataNode */](x: Self & TreeNodeRequiredProps[TreeDataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeNodeRequiredProps[?], TreeDataType /* <: BasicDataNode */] (val x: Self & TreeNodeRequiredProps[TreeDataType]) extends AnyVal {
       
       inline def setCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
       
@@ -186,7 +188,8 @@ object esUtilsTreeUtilMod {
       __obj.asInstanceOf[Wrapper]
     }
     
-    extension [Self <: Wrapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wrapper] (val x: Self) extends AnyVal {
       
       inline def setKeyEntities(value: Record[Key, DataEntity[DataNode]]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
       

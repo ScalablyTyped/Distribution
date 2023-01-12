@@ -52,7 +52,8 @@ object libVictoryUtilTextsizeMod {
       __obj.asInstanceOf[TextSizeStyleInterface]
     }
     
-    extension [Self <: TextSizeStyleInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextSizeStyleInterface] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       

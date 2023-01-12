@@ -40,7 +40,8 @@ object distNodeEsmSrcJwtMod {
       __obj.asInstanceOf[DecodedToken]
     }
     
-    extension [Self <: DecodedToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedToken] (val x: Self) extends AnyVal {
       
       inline def setClaims(value: Claims): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
       

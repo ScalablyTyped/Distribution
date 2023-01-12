@@ -27,7 +27,8 @@ object IconVisibilityOff {
     __obj.asInstanceOf[IconVisibilityOff]
   }
   
-  extension [Self <: IconVisibilityOff](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconVisibilityOff] (val x: Self) extends AnyVal {
     
     inline def setIconVisibilityOff(value: HTMLElement): Self = StObject.set(x, "iconVisibilityOff", value.asInstanceOf[js.Any])
     

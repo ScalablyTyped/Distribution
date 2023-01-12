@@ -23,7 +23,8 @@ object RuntimeHintDetails {
     __obj.asInstanceOf[RuntimeHintDetails]
   }
   
-  extension [Self <: RuntimeHintDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeHintDetails] (val x: Self) extends AnyVal {
     
     inline def setRuntimeHintValues(value: RuntimeHintValuesList): Self = StObject.set(x, "runtimeHintValues", value.asInstanceOf[js.Any])
     

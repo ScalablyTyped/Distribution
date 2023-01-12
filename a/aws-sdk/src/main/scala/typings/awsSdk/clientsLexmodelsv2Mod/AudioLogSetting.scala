@@ -20,7 +20,8 @@ object AudioLogSetting {
     __obj.asInstanceOf[AudioLogSetting]
   }
   
-  extension [Self <: AudioLogSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioLogSetting] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: AudioLogDestination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

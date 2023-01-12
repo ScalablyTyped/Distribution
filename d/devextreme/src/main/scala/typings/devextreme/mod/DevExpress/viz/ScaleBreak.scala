@@ -23,7 +23,8 @@ object ScaleBreak {
     __obj.asInstanceOf[ScaleBreak]
   }
   
-  extension [Self <: ScaleBreak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleBreak] (val x: Self) extends AnyVal {
     
     inline def setEndValue(value: Double | js.Date | String): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
     

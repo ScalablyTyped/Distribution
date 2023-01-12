@@ -29,7 +29,8 @@ object AddStoryArgs {
     __obj.asInstanceOf[AddStoryArgs[StoryFnReturnType]]
   }
   
-  extension [Self <: AddStoryArgs[?], StoryFnReturnType](x: Self & AddStoryArgs[StoryFnReturnType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddStoryArgs[?], StoryFnReturnType] (val x: Self & AddStoryArgs[StoryFnReturnType]) extends AnyVal {
     
     inline def setId(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any

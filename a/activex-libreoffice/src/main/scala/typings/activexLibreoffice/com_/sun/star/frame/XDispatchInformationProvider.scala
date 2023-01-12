@@ -54,7 +54,8 @@ object XDispatchInformationProvider {
     __obj.asInstanceOf[XDispatchInformationProvider]
   }
   
-  extension [Self <: XDispatchInformationProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDispatchInformationProvider] (val x: Self) extends AnyVal {
     
     inline def setGetConfigurableDispatchInformation(value: Double => SafeArray[DispatchInformation]): Self = StObject.set(x, "getConfigurableDispatchInformation", js.Any.fromFunction1(value))
     

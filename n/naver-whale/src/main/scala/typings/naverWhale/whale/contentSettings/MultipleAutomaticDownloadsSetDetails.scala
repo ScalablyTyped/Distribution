@@ -21,7 +21,8 @@ object MultipleAutomaticDownloadsSetDetails {
     __obj.asInstanceOf[MultipleAutomaticDownloadsSetDetails]
   }
   
-  extension [Self <: MultipleAutomaticDownloadsSetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleAutomaticDownloadsSetDetails] (val x: Self) extends AnyVal {
     
     inline def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }

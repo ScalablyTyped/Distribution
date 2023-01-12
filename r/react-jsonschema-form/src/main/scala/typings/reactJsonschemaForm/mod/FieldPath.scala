@@ -16,7 +16,8 @@ object FieldPath {
     __obj.asInstanceOf[FieldPath]
   }
   
-  extension [Self <: FieldPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldPath] (val x: Self) extends AnyVal {
     
     inline def set$name(value: String): Self = StObject.set(x, "$name", value.asInstanceOf[js.Any])
   }

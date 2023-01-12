@@ -24,7 +24,8 @@ object ListCollectionsOptions {
     __obj.asInstanceOf[ListCollectionsOptions]
   }
   
-  extension [Self <: ListCollectionsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCollectionsOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedCollections(value: Boolean): Self = StObject.set(x, "authorizedCollections", value.asInstanceOf[js.Any])
     

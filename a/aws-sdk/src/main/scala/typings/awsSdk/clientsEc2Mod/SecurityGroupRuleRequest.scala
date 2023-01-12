@@ -53,7 +53,8 @@ object SecurityGroupRuleRequest {
     __obj.asInstanceOf[SecurityGroupRuleRequest]
   }
   
-  extension [Self <: SecurityGroupRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGroupRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setCidrIpv4(value: String): Self = StObject.set(x, "CidrIpv4", value.asInstanceOf[js.Any])
     

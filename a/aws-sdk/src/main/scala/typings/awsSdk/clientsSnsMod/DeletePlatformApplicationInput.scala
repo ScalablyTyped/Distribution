@@ -18,7 +18,8 @@ object DeletePlatformApplicationInput {
     __obj.asInstanceOf[DeletePlatformApplicationInput]
   }
   
-  extension [Self <: DeletePlatformApplicationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePlatformApplicationInput] (val x: Self) extends AnyVal {
     
     inline def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
   }

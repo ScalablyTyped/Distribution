@@ -18,7 +18,8 @@ object TrendmicroConnectorProfileCredentials {
     __obj.asInstanceOf[TrendmicroConnectorProfileCredentials]
   }
   
-  extension [Self <: TrendmicroConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrendmicroConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setApiSecretKey(value: ApiSecretKey): Self = StObject.set(x, "apiSecretKey", value.asInstanceOf[js.Any])
   }

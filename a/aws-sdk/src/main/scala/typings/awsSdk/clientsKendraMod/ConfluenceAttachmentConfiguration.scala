@@ -23,7 +23,8 @@ object ConfluenceAttachmentConfiguration {
     __obj.asInstanceOf[ConfluenceAttachmentConfiguration]
   }
   
-  extension [Self <: ConfluenceAttachmentConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfluenceAttachmentConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAttachmentFieldMappings(value: ConfluenceAttachmentFieldMappingsList): Self = StObject.set(x, "AttachmentFieldMappings", value.asInstanceOf[js.Any])
     

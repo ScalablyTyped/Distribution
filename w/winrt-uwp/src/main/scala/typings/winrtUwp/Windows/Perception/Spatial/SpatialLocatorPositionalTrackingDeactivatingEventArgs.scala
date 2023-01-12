@@ -15,7 +15,8 @@ object SpatialLocatorPositionalTrackingDeactivatingEventArgs {
     __obj.asInstanceOf[SpatialLocatorPositionalTrackingDeactivatingEventArgs]
   }
   
-  extension [Self <: SpatialLocatorPositionalTrackingDeactivatingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialLocatorPositionalTrackingDeactivatingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCanceled(value: Any): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
   }

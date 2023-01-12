@@ -19,7 +19,8 @@ object QueryDslSpanContainingQuery {
     __obj.asInstanceOf[QueryDslSpanContainingQuery]
   }
   
-  extension [Self <: QueryDslSpanContainingQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslSpanContainingQuery] (val x: Self) extends AnyVal {
     
     inline def setBig(value: QueryDslSpanQuery): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
     

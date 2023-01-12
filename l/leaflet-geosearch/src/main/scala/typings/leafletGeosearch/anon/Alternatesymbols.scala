@@ -50,7 +50,8 @@ object Alternatesymbols {
     __obj.asInstanceOf[Alternatesymbols]
   }
   
-  extension [Self <: Alternatesymbols](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alternatesymbols] (val x: Self) extends AnyVal {
     
     inline def setAlternate_symbols(value: js.Array[String]): Self = StObject.set(x, "alternate_symbols", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object NextU2FCounter {
     __obj.asInstanceOf[NextU2FCounter]
   }
   
-  extension [Self <: NextU2FCounter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextU2FCounter] (val x: Self) extends AnyVal {
     
     inline def setU2f_counter(value: Double): Self = StObject.set(x, "u2f_counter", value.asInstanceOf[js.Any])
   }

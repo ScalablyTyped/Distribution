@@ -23,7 +23,8 @@ object CodeSigningCertificateChain {
     __obj.asInstanceOf[CodeSigningCertificateChain]
   }
   
-  extension [Self <: CodeSigningCertificateChain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeSigningCertificateChain] (val x: Self) extends AnyVal {
     
     inline def setCertificateName(value: CertificateName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BookingCurrency {
     __obj.asInstanceOf[BookingCurrency]
   }
   
-  extension [Self <: BookingCurrency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookingCurrency] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

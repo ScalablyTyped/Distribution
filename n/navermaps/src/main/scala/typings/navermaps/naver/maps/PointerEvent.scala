@@ -26,7 +26,8 @@ object PointerEvent {
     __obj.asInstanceOf[PointerEvent]
   }
   
-  extension [Self <: PointerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerEvent] (val x: Self) extends AnyVal {
     
     inline def setCoord(value: Coord): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
     

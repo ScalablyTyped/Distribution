@@ -21,7 +21,8 @@ object DBCoreQueryRequest {
     __obj.asInstanceOf[DBCoreQueryRequest]
   }
   
-  extension [Self <: DBCoreQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

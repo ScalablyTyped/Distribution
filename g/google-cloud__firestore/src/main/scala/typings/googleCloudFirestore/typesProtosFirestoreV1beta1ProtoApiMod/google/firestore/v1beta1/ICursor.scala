@@ -20,7 +20,8 @@ object ICursor {
     __obj.asInstanceOf[ICursor]
   }
   
-  extension [Self <: ICursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICursor] (val x: Self) extends AnyVal {
     
     inline def setBefore(value: Boolean): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object TouchBarSegmentedControlConstructorOptions {
     __obj.asInstanceOf[TouchBarSegmentedControlConstructorOptions]
   }
   
-  extension [Self <: TouchBarSegmentedControlConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchBarSegmentedControlConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: (/* selectedIndex */ Double, /* isSelected */ Boolean) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     

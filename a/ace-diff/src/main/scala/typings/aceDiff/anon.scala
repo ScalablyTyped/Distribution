@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Connector]
     }
     
-    extension [Self <: Connector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connector] (val x: Self) extends AnyVal {
       
       inline def setConnector(value: String): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

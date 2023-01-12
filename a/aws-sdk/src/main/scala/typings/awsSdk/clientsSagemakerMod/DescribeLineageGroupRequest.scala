@@ -18,7 +18,8 @@ object DescribeLineageGroupRequest {
     __obj.asInstanceOf[DescribeLineageGroupRequest]
   }
   
-  extension [Self <: DescribeLineageGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLineageGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setLineageGroupName(value: ExperimentEntityName): Self = StObject.set(x, "LineageGroupName", value.asInstanceOf[js.Any])
   }

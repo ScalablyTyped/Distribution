@@ -22,7 +22,8 @@ object mod {
       __obj.asInstanceOf[ShareAPIPolyfillData]
     }
     
-    extension [Self <: ShareAPIPolyfillData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareAPIPolyfillData] (val x: Self) extends AnyVal {
       
       inline def setFbId(value: String): Self = StObject.set(x, "fbId", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object mod {
       __obj.asInstanceOf[ShareAPIPolyfillOptions]
     }
     
-    extension [Self <: ShareAPIPolyfillOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareAPIPolyfillOptions] (val x: Self) extends AnyVal {
       
       inline def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       

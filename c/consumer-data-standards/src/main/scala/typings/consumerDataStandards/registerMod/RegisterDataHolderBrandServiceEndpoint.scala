@@ -52,7 +52,8 @@ object RegisterDataHolderBrandServiceEndpoint {
     __obj.asInstanceOf[RegisterDataHolderBrandServiceEndpoint]
   }
   
-  extension [Self <: RegisterDataHolderBrandServiceEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterDataHolderBrandServiceEndpoint] (val x: Self) extends AnyVal {
     
     inline def setExtensionBaseUri(value: String): Self = StObject.set(x, "extensionBaseUri", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object EndpointInput {
     __obj.asInstanceOf[EndpointInput]
   }
   
-  extension [Self <: EndpointInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointInput] (val x: Self) extends AnyVal {
     
     inline def setEndTimeOffset(value: MonitoringTimeOffsetString): Self = StObject.set(x, "EndTimeOffset", value.asInstanceOf[js.Any])
     

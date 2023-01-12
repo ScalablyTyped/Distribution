@@ -30,7 +30,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setFormats(value: js.Array[FormatName]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       

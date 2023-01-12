@@ -17,7 +17,8 @@ object IplaypausestopVoice {
     __obj.asInstanceOf[IplaypausestopVoice]
   }
   
-  extension [Self <: IplaypausestopVoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IplaypausestopVoice] (val x: Self) extends AnyVal {
     
     inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
   }

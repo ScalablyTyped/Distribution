@@ -82,7 +82,8 @@ object libModeMod {
         __obj.asInstanceOf[IMode]
       }
       
-      extension [Self <: IMode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IMode] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
@@ -108,7 +109,8 @@ object libModeMod {
         __obj.asInstanceOf[ISpec]
       }
       
-      extension [Self <: ISpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISpec] (val x: Self) extends AnyVal {
         
         inline def setExt(value: js.Array[String]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
         

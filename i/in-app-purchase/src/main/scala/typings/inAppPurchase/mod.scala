@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[Config_]
     }
     
-    extension [Self <: Config_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config_] (val x: Self) extends AnyVal {
       
       inline def setAmazonAPIVersion(value: Double): Self = StObject.set(x, "amazonAPIVersion", value.asInstanceOf[js.Any])
       
@@ -275,7 +276,8 @@ object mod {
       __obj.asInstanceOf[PurchasedItem]
     }
     
-    extension [Self <: PurchasedItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PurchasedItem] (val x: Self) extends AnyVal {
       
       inline def setAppItemId(value: String): Self = StObject.set(x, "appItemId", value.asInstanceOf[js.Any])
       
@@ -340,7 +342,8 @@ object mod {
       __obj.asInstanceOf[ValidationResponse]
     }
     
-    extension [Self <: ValidationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationResponse] (val x: Self) extends AnyVal {
       
       inline def setService(value: Service): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       

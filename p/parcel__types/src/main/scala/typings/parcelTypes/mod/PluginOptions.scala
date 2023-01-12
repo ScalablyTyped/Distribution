@@ -57,7 +57,8 @@ object PluginOptions {
     __obj.asInstanceOf[PluginOptions]
   }
   
-  extension [Self <: PluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheDir(value: FilePath): Self = StObject.set(x, "cacheDir", value.asInstanceOf[js.Any])
     

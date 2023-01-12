@@ -49,7 +49,8 @@ object IXmlProcessingInstruction {
     __obj.asInstanceOf[IXmlProcessingInstruction]
   }
   
-  extension [Self <: IXmlProcessingInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXmlProcessingInstruction] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

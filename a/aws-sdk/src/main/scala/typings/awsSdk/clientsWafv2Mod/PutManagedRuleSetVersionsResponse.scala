@@ -18,7 +18,8 @@ object PutManagedRuleSetVersionsResponse {
     __obj.asInstanceOf[PutManagedRuleSetVersionsResponse]
   }
   
-  extension [Self <: PutManagedRuleSetVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutManagedRuleSetVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextLockToken(value: LockToken): Self = StObject.set(x, "NextLockToken", value.asInstanceOf[js.Any])
     

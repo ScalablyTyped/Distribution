@@ -31,7 +31,8 @@ object StartBluetoothDevicesDiscoveryOptions {
     __obj.asInstanceOf[StartBluetoothDevicesDiscoveryOptions]
   }
   
-  extension [Self <: StartBluetoothDevicesDiscoveryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartBluetoothDevicesDiscoveryOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowDuplicatesKey(value: Boolean): Self = StObject.set(x, "allowDuplicatesKey", value.asInstanceOf[js.Any])
     

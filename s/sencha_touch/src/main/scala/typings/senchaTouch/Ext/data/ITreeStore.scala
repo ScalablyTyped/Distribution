@@ -117,7 +117,8 @@ object ITreeStore {
     __obj.asInstanceOf[ITreeStore]
   }
   
-  extension [Self <: ITreeStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITreeStore] (val x: Self) extends AnyVal {
     
     inline def setClearOnLoad(value: Boolean): Self = StObject.set(x, "clearOnLoad", value.asInstanceOf[js.Any])
     

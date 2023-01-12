@@ -19,7 +19,8 @@ object Equation {
     __obj.asInstanceOf[Equation]
   }
   
-  extension [Self <: Equation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Equation] (val x: Self) extends AnyVal {
     
     inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
     

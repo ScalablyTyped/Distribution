@@ -35,7 +35,8 @@ object buildSrcServiceConfigMod {
       __obj.asInstanceOf[MethodConfig]
     }
     
-    extension [Self <: MethodConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodConfig] (val x: Self) extends AnyVal {
       
       inline def setMaxRequestBytes(value: Double): Self = StObject.set(x, "maxRequestBytes", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object buildSrcServiceConfigMod {
       __obj.asInstanceOf[MethodConfigName]
     }
     
-    extension [Self <: MethodConfigName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodConfigName] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object buildSrcServiceConfigMod {
       __obj.asInstanceOf[ServiceConfig]
     }
     
-    extension [Self <: ServiceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceConfig] (val x: Self) extends AnyVal {
       
       inline def setLoadBalancingConfig(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "loadBalancingConfig", value.asInstanceOf[js.Any])
       
@@ -130,7 +133,8 @@ object buildSrcServiceConfigMod {
       __obj.asInstanceOf[ServiceConfigCanaryConfig]
     }
     
-    extension [Self <: ServiceConfigCanaryConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceConfigCanaryConfig] (val x: Self) extends AnyVal {
       
       inline def setClientHostname(value: js.Array[String]): Self = StObject.set(x, "clientHostname", value.asInstanceOf[js.Any])
       

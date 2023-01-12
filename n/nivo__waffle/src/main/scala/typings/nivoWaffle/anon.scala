@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[CellSize]
     }
     
-    extension [Self <: CellSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSize] (val x: Self) extends AnyVal {
       
       inline def setCellSize(value: Double): Self = StObject.set(x, "cellSize", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object anon {
       __obj.asInstanceOf[ComputedData[RawDatum]]
     }
     
-    extension [Self <: ComputedData[?], RawDatum /* <: Datum */](x: Self & ComputedData[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedData[?], RawDatum /* <: Datum */] (val x: Self & ComputedData[RawDatum]) extends AnyVal {
       
       inline def setComputedData(value: js.Array[ComputedDatum[RawDatum]]): Self = StObject.set(x, "computedData", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -135,7 +139,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

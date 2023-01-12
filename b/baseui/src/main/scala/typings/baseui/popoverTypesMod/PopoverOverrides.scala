@@ -20,7 +20,8 @@ object PopoverOverrides {
     __obj.asInstanceOf[PopoverOverrides]
   }
   
-  extension [Self <: PopoverOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopoverOverrides] (val x: Self) extends AnyVal {
     
     inline def setArrow(value: Override[Any]): Self = StObject.set(x, "Arrow", value.asInstanceOf[js.Any])
     

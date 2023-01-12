@@ -28,7 +28,8 @@ object SelectDataObject {
     __obj.asInstanceOf[SelectDataObject]
   }
   
-  extension [Self <: SelectDataObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectDataObject] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

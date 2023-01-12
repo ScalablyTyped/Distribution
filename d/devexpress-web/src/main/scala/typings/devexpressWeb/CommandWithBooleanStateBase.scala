@@ -23,7 +23,8 @@ object CommandWithBooleanStateBase {
     __obj.asInstanceOf[CommandWithBooleanStateBase]
   }
   
-  extension [Self <: CommandWithBooleanStateBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandWithBooleanStateBase] (val x: Self) extends AnyVal {
     
     inline def setGetState(value: () => CommandState[Boolean]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }

@@ -23,7 +23,8 @@ object AllowCredentials {
     __obj.asInstanceOf[AllowCredentials]
   }
   
-  extension [Self <: AllowCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowCredentials] (val x: Self) extends AnyVal {
     
     inline def setAllowCredentials(value: Boolean): Self = StObject.set(x, "allowCredentials", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ToArray {
     __obj.asInstanceOf[ToArray[T]]
   }
   
-  extension [Self <: ToArray[?], T](x: Self & ToArray[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToArray[?], T] (val x: Self & ToArray[T]) extends AnyVal {
     
     inline def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
   }

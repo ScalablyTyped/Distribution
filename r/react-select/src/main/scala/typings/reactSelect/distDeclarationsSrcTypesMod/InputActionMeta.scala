@@ -18,7 +18,8 @@ object InputActionMeta {
     __obj.asInstanceOf[InputActionMeta]
   }
   
-  extension [Self <: InputActionMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputActionMeta] (val x: Self) extends AnyVal {
     
     inline def setAction(value: InputAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

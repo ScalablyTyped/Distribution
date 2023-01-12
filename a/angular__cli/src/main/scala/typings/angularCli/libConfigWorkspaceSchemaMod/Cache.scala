@@ -28,7 +28,8 @@ object Cache {
     __obj.asInstanceOf[Cache]
   }
   
-  extension [Self <: Cache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

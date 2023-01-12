@@ -62,7 +62,8 @@ object InboxSDKInstance {
     __obj.asInstanceOf[InboxSDKInstance]
   }
   
-  extension [Self <: InboxSDKInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InboxSDKInstance] (val x: Self) extends AnyVal {
     
     inline def setButterBar(value: ButterBarInstance): Self = StObject.set(x, "ButterBar", value.asInstanceOf[js.Any])
     

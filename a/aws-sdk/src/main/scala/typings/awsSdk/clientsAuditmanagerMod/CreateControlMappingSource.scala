@@ -45,7 +45,8 @@ object CreateControlMappingSource {
     __obj.asInstanceOf[CreateControlMappingSource]
   }
   
-  extension [Self <: CreateControlMappingSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateControlMappingSource] (val x: Self) extends AnyVal {
     
     inline def setSourceDescription(value: SourceDescription): Self = StObject.set(x, "sourceDescription", value.asInstanceOf[js.Any])
     

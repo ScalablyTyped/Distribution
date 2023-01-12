@@ -27,7 +27,8 @@ object TextInput {
     __obj.asInstanceOf[TextInput]
   }
   
-  extension [Self <: TextInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInput] (val x: Self) extends AnyVal {
     
     inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     

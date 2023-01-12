@@ -64,7 +64,8 @@ object XParser {
     __obj.asInstanceOf[XParser]
   }
   
-  extension [Self <: XParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XParser] (val x: Self) extends AnyVal {
     
     inline def setParseStream(value: InputSource => Unit): Self = StObject.set(x, "parseStream", js.Any.fromFunction1(value))
     

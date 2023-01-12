@@ -31,7 +31,8 @@ object typesGetEmailChannelOutputMod {
       __obj.asInstanceOf[GetEmailChannelOutput]
     }
     
-    extension [Self <: GetEmailChannelOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetEmailChannelOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

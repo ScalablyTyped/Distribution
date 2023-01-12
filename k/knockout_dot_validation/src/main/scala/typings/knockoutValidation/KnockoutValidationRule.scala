@@ -21,7 +21,8 @@ object KnockoutValidationRule {
     __obj.asInstanceOf[KnockoutValidationRule]
   }
   
-  extension [Self <: KnockoutValidationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutValidationRule] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: () => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction0(value))
     

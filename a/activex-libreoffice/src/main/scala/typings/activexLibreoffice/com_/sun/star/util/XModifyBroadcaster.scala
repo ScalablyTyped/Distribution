@@ -34,7 +34,8 @@ object XModifyBroadcaster {
     __obj.asInstanceOf[XModifyBroadcaster]
   }
   
-  extension [Self <: XModifyBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XModifyBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddModifyListener(value: XModifyListener => Unit): Self = StObject.set(x, "addModifyListener", js.Any.fromFunction1(value))
     

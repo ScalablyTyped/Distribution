@@ -72,7 +72,8 @@ object distVnodeTransformersStubComponentsTransformerMod {
       __obj.asInstanceOf[CreateStubComponentsTransformerConfig]
     }
     
-    extension [Self <: CreateStubComponentsTransformerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateStubComponentsTransformerConfig] (val x: Self) extends AnyVal {
       
       inline def setRenderStubDefaultSlot(value: Boolean): Self = StObject.set(x, "renderStubDefaultSlot", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object distVnodeTransformersStubComponentsTransformerMod {
       __obj.asInstanceOf[StubOptions]
     }
     
-    extension [Self <: StubOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StubOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

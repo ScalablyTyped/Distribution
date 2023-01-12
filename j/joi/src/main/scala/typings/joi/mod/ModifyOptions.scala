@@ -21,7 +21,8 @@ object ModifyOptions {
     __obj.asInstanceOf[ModifyOptions]
   }
   
-  extension [Self <: ModifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyOptions] (val x: Self) extends AnyVal {
     
     inline def setEach(value: Boolean): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object rectMod {
       __obj.asInstanceOf[AbsoluteOptions]
     }
     
-    extension [Self <: AbsoluteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbsoluteOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object rectMod {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setClip(value: (Rect, Double, Double, Boolean) => Unit): Self = StObject.set(x, "clip", js.Any.fromFunction4(value))
       
@@ -186,7 +188,8 @@ object rectMod {
       __obj.asInstanceOf[Region]
     }
     
-    extension [Self <: Region](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
       
       inline def setXmax(value: Double): Self = StObject.set(x, "xmax", value.asInstanceOf[js.Any])
       

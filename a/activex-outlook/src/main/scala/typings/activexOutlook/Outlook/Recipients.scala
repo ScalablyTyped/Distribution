@@ -46,7 +46,8 @@ object Recipients {
     __obj.asInstanceOf[Recipients]
   }
   
-  extension [Self <: Recipients](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recipients] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => Recipient): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

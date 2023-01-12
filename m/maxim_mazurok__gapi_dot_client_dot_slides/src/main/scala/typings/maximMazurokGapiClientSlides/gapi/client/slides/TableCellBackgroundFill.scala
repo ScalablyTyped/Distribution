@@ -22,7 +22,8 @@ object TableCellBackgroundFill {
     __obj.asInstanceOf[TableCellBackgroundFill]
   }
   
-  extension [Self <: TableCellBackgroundFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCellBackgroundFill] (val x: Self) extends AnyVal {
     
     inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
     

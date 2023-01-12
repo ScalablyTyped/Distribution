@@ -48,7 +48,8 @@ object SuiteDefinitionConfiguration {
     __obj.asInstanceOf[SuiteDefinitionConfiguration]
   }
   
-  extension [Self <: SuiteDefinitionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuiteDefinitionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDevicePermissionRoleArn(value: AmazonResourceName): Self = StObject.set(x, "devicePermissionRoleArn", value.asInstanceOf[js.Any])
     

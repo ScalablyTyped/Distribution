@@ -36,7 +36,8 @@ object Amexexpresscheckout {
     __obj.asInstanceOf[Amexexpresscheckout]
   }
   
-  extension [Self <: Amexexpresscheckout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Amexexpresscheckout] (val x: Self) extends AnyVal {
     
     inline def setAmex_express_checkout(value: Any): Self = StObject.set(x, "amex_express_checkout", value.asInstanceOf[js.Any])
     

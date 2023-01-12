@@ -28,7 +28,8 @@ object BatchCreateTableRowsResult {
     __obj.asInstanceOf[BatchCreateTableRowsResult]
   }
   
-  extension [Self <: BatchCreateTableRowsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateTableRowsResult] (val x: Self) extends AnyVal {
     
     inline def setCreatedRows(value: CreatedRowsMap): Self = StObject.set(x, "createdRows", value.asInstanceOf[js.Any])
     

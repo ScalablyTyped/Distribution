@@ -38,7 +38,8 @@ object clientsEc2instanceconnectMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object clientsEc2instanceconnectMod {
       __obj.asInstanceOf[SendSSHPublicKeyRequest]
     }
     
-    extension [Self <: SendSSHPublicKeyRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendSSHPublicKeyRequest] (val x: Self) extends AnyVal {
       
       inline def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object clientsEc2instanceconnectMod {
       __obj.asInstanceOf[SendSSHPublicKeyResponse]
     }
     
-    extension [Self <: SendSSHPublicKeyResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendSSHPublicKeyResponse] (val x: Self) extends AnyVal {
       
       inline def setRequestId(value: RequestId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
       
@@ -192,7 +195,8 @@ object clientsEc2instanceconnectMod {
       __obj.asInstanceOf[SendSerialConsoleSSHPublicKeyRequest]
     }
     
-    extension [Self <: SendSerialConsoleSSHPublicKeyRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendSerialConsoleSSHPublicKeyRequest] (val x: Self) extends AnyVal {
       
       inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
       
@@ -223,7 +227,8 @@ object clientsEc2instanceconnectMod {
       __obj.asInstanceOf[SendSerialConsoleSSHPublicKeyResponse]
     }
     
-    extension [Self <: SendSerialConsoleSSHPublicKeyResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendSerialConsoleSSHPublicKeyResponse] (val x: Self) extends AnyVal {
       
       inline def setRequestId(value: RequestId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
       

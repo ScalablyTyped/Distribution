@@ -35,7 +35,8 @@ object MapType {
     __obj.asInstanceOf[MapType]
   }
   
-  extension [Self <: MapType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapType] (val x: Self) extends AnyVal {
     
     inline def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
     

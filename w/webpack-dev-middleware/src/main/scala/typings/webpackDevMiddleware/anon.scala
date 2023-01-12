@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[CreateReadStream]
     }
     
-    extension [Self <: CreateReadStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateReadStream] (val x: Self) extends AnyVal {
       
       inline def setCreateReadStream(value: FnCall): Self = StObject.set(x, "createReadStream", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object anon {
       __obj.asInstanceOf[DevMiddleware]
     }
     
-    extension [Self <: DevMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DevMiddleware] (val x: Self) extends AnyVal {
       
       inline def setDevMiddleware(value: Context[IncomingMessage, ServerResponse]): Self = StObject.set(x, "devMiddleware", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -141,7 +144,8 @@ object anon {
       __obj.asInstanceOf[OutputPath]
     }
     
-    extension [Self <: OutputPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputPath] (val x: Self) extends AnyVal {
       
       inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
       
@@ -186,7 +190,8 @@ object anon {
       __obj.asInstanceOf[Webpack]
     }
     
-    extension [Self <: Webpack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Webpack] (val x: Self) extends AnyVal {
       
       inline def setWebpack(value: DevMiddleware): Self = StObject.set(x, "webpack", value.asInstanceOf[js.Any])
       

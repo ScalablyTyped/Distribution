@@ -29,7 +29,8 @@ object libPopoverStyleMod {
       __obj.asInstanceOf[PopoverStyle]
     }
     
-    extension [Self <: PopoverStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverStyle] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: ViewStyle): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       

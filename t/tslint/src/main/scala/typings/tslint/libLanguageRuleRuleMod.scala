@@ -175,7 +175,8 @@ object libLanguageRuleRuleMod {
       __obj.asInstanceOf[ICodeExample]
     }
     
-    extension [Self <: ICodeExample](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICodeExample] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object libLanguageRuleRuleMod {
       __obj.asInstanceOf[IDisabledInterval]
     }
     
-    extension [Self <: IDisabledInterval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDisabledInterval] (val x: Self) extends AnyVal {
       
       inline def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
       
@@ -237,7 +239,8 @@ object libLanguageRuleRuleMod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setDisabledIntervals(value: js.Array[IDisabledInterval]): Self = StObject.set(x, "disabledIntervals", value.asInstanceOf[js.Any])
       
@@ -276,7 +279,8 @@ object libLanguageRuleRuleMod {
       __obj.asInstanceOf[IRule]
     }
     
-    extension [Self <: IRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRule] (val x: Self) extends AnyVal {
       
       inline def setApply(value: SourceFile => js.Array[RuleFailure]): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
@@ -318,7 +322,8 @@ object libLanguageRuleRuleMod {
       __obj.asInstanceOf[IRuleFailureJson]
     }
     
-    extension [Self <: IRuleFailureJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRuleFailureJson] (val x: Self) extends AnyVal {
       
       inline def setEndPosition(value: IRuleFailurePositionJson): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
       
@@ -355,7 +360,8 @@ object libLanguageRuleRuleMod {
       __obj.asInstanceOf[IRuleFailurePositionJson]
     }
     
-    extension [Self <: IRuleFailurePositionJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRuleFailurePositionJson] (val x: Self) extends AnyVal {
       
       inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
       
@@ -451,7 +457,8 @@ object libLanguageRuleRuleMod {
       __obj.asInstanceOf[IRuleMetadata]
     }
     
-    extension [Self <: IRuleMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRuleMetadata] (val x: Self) extends AnyVal {
       
       inline def setCodeExamples(value: js.Array[ICodeExample]): Self = StObject.set(x, "codeExamples", value.asInstanceOf[js.Any])
       
@@ -518,7 +525,8 @@ object libLanguageRuleRuleMod {
       __obj.asInstanceOf[ITypedRule]
     }
     
-    extension [Self <: ITypedRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITypedRule] (val x: Self) extends AnyVal {
       
       inline def setApplyWithProgram(value: (SourceFile, Program) => js.Array[RuleFailure]): Self = StObject.set(x, "applyWithProgram", js.Any.fromFunction2(value))
     }
@@ -539,7 +547,8 @@ object libLanguageRuleRuleMod {
       __obj.asInstanceOf[ReplacementJson]
     }
     
-    extension [Self <: ReplacementJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplacementJson] (val x: Self) extends AnyVal {
       
       inline def setInnerLength(value: Double): Self = StObject.set(x, "innerLength", value.asInstanceOf[js.Any])
       

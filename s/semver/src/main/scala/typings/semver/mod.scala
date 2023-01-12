@@ -735,7 +735,8 @@ object mod {
       __obj.asInstanceOf[CoerceOptions]
     }
     
-    extension [Self <: CoerceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoerceOptions] (val x: Self) extends AnyVal {
       
       inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
@@ -790,7 +791,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setLoose(value: Boolean): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
       
@@ -811,7 +813,8 @@ object mod {
       __obj.asInstanceOf[RangeOptions]
     }
     
-    extension [Self <: RangeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludePrerelease(value: Boolean): Self = StObject.set(x, "includePrerelease", value.asInstanceOf[js.Any])
       

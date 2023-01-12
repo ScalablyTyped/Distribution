@@ -18,7 +18,8 @@ object GetMigrationWorkflowTemplateRequest {
     __obj.asInstanceOf[GetMigrationWorkflowTemplateRequest]
   }
   
-  extension [Self <: GetMigrationWorkflowTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMigrationWorkflowTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: TemplateId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

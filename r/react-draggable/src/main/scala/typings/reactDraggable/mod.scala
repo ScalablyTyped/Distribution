@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[ControlPosition]
     }
     
-    extension [Self <: ControlPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object mod {
       __obj.asInstanceOf[DraggableBounds]
     }
     
-    extension [Self <: DraggableBounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggableBounds] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object mod {
       __obj.asInstanceOf[DraggableCoreProps]
     }
     
-    extension [Self <: DraggableCoreProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggableCoreProps] (val x: Self) extends AnyVal {
       
       inline def setAllowAnyClick(value: Boolean): Self = StObject.set(x, "allowAnyClick", value.asInstanceOf[js.Any])
       
@@ -239,7 +242,8 @@ object mod {
       __obj.asInstanceOf[DraggableData]
     }
     
-    extension [Self <: DraggableData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggableData] (val x: Self) extends AnyVal {
       
       inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
       
@@ -309,7 +313,8 @@ object mod {
       __obj.asInstanceOf[DraggableProps]
     }
     
-    extension [Self <: DraggableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggableProps] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: both | typings.reactDraggable.reactDraggableStrings.x | y | none): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -342,7 +347,8 @@ object mod {
       __obj.asInstanceOf[PositionOffsetControlPosition]
     }
     
-    extension [Self <: PositionOffsetControlPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionOffsetControlPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

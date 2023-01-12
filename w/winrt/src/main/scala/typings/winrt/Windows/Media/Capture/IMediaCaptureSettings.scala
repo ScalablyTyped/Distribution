@@ -29,7 +29,8 @@ object IMediaCaptureSettings {
     __obj.asInstanceOf[IMediaCaptureSettings]
   }
   
-  extension [Self <: IMediaCaptureSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaCaptureSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioDeviceId(value: String): Self = StObject.set(x, "audioDeviceId", value.asInstanceOf[js.Any])
     

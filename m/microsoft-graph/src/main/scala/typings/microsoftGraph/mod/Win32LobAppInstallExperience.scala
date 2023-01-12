@@ -19,7 +19,8 @@ object Win32LobAppInstallExperience {
     __obj.asInstanceOf[Win32LobAppInstallExperience]
   }
   
-  extension [Self <: Win32LobAppInstallExperience](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Win32LobAppInstallExperience] (val x: Self) extends AnyVal {
     
     inline def setDeviceRestartBehavior(value: Win32LobAppRestartBehavior): Self = StObject.set(x, "deviceRestartBehavior", value.asInstanceOf[js.Any])
     

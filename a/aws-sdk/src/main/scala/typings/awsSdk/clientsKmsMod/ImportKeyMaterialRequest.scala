@@ -38,7 +38,8 @@ object ImportKeyMaterialRequest {
     __obj.asInstanceOf[ImportKeyMaterialRequest]
   }
   
-  extension [Self <: ImportKeyMaterialRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportKeyMaterialRequest] (val x: Self) extends AnyVal {
     
     inline def setEncryptedKeyMaterial(value: CiphertextType): Self = StObject.set(x, "EncryptedKeyMaterial", value.asInstanceOf[js.Any])
     

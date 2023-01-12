@@ -25,7 +25,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[BeaconController]
     }
     
-    extension [Self <: BeaconController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeaconController] (val x: Self) extends AnyVal {
       
       inline def setDie(value: () => js.Promise[Unit]): Self = StObject.set(x, "die", js.Any.fromFunction0(value))
     }
@@ -64,7 +65,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setDetectKubernetes(value: Boolean): Self = StObject.set(x, "detectKubernetes", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[ConfigurationInput]
     }
     
-    extension [Self <: ConfigurationInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationInput] (val x: Self) extends AnyVal {
       
       inline def setDetectKubernetes(value: Boolean): Self = StObject.set(x, "detectKubernetes", value.asInstanceOf[js.Any])
       

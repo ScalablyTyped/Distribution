@@ -63,7 +63,8 @@ object distTypesLineBreakMod {
       __obj.asInstanceOf[Break]
     }
     
-    extension [Self <: Break](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Break] (val x: Self) extends AnyVal {
       
       inline def setCodePoints(value: Any): Self = StObject.set(x, "codePoints", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object distTypesLineBreakMod {
       __obj.asInstanceOf[ILineBreakIterator]
     }
     
-    extension [Self <: ILineBreakIterator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILineBreakIterator] (val x: Self) extends AnyVal {
       
       inline def setNext(value: () => LineBreak): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
@@ -107,7 +109,8 @@ object distTypesLineBreakMod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setLineBreak(value: LINE_BREAK): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
       

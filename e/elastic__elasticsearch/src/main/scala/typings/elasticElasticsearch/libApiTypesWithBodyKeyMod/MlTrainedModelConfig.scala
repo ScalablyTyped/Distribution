@@ -53,7 +53,8 @@ object MlTrainedModelConfig {
     __obj.asInstanceOf[MlTrainedModelConfig]
   }
   
-  extension [Self <: MlTrainedModelConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelConfig] (val x: Self) extends AnyVal {
     
     inline def setCompressed_definition(value: String): Self = StObject.set(x, "compressed_definition", value.asInstanceOf[js.Any])
     

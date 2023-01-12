@@ -86,7 +86,8 @@ object NavigationAnnotationsShapeOptions {
     __obj.asInstanceOf[NavigationAnnotationsShapeOptions]
   }
   
-  extension [Self <: NavigationAnnotationsShapeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationAnnotationsShapeOptions] (val x: Self) extends AnyVal {
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     

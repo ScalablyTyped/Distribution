@@ -311,7 +311,8 @@ object esComponentsIndexBarIndexBarMod {
       __obj.asInstanceOf[IndexBarProps]
     }
     
-    extension [Self <: IndexBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexBarProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -544,7 +545,8 @@ object esComponentsIndexBarIndexBarMod {
       __obj.asInstanceOf[IndexBarRef]
     }
     
-    extension [Self <: IndexBarRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexBarRef] (val x: Self) extends AnyVal {
       
       inline def setScrollTo(value: String => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
     }

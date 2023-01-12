@@ -372,7 +372,8 @@ object ContentTocItem {
     __obj.asInstanceOf[ContentTocItem]
   }
   
-  extension [Self <: ContentTocItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentTocItem] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     

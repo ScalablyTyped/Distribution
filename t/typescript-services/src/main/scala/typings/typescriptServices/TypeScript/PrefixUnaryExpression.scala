@@ -44,7 +44,8 @@ object PrefixUnaryExpression {
     __obj.asInstanceOf[PrefixUnaryExpression]
   }
   
-  extension [Self <: PrefixUnaryExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrefixUnaryExpression] (val x: Self) extends AnyVal {
     
     inline def setOperand(value: AST): Self = StObject.set(x, "operand", value.asInstanceOf[js.Any])
     

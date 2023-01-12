@@ -19,7 +19,8 @@ object distCacheInterfaceIserializabletokencacheMod {
       __obj.asInstanceOf[ISerializableTokenCache]
     }
     
-    extension [Self <: ISerializableTokenCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISerializableTokenCache] (val x: Self) extends AnyVal {
       
       inline def setDeserialize(value: String => Unit): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       

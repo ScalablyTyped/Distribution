@@ -25,7 +25,8 @@ object MoreMatchesFound {
     __obj.asInstanceOf[MoreMatchesFound]
   }
   
-  extension [Self <: MoreMatchesFound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoreMatchesFound] (val x: Self) extends AnyVal {
     
     inline def setFilterFurther(value: String): Self = StObject.set(x, "filterFurther", value.asInstanceOf[js.Any])
     

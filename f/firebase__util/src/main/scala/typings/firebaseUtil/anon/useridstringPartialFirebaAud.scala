@@ -46,7 +46,8 @@ object useridstringPartialFirebaAud {
     __obj.asInstanceOf[useridstringPartialFirebaAud]
   }
   
-  extension [Self <: useridstringPartialFirebaAud](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: useridstringPartialFirebaAud] (val x: Self) extends AnyVal {
     
     inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
     

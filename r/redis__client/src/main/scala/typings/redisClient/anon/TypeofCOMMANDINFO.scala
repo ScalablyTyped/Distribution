@@ -26,7 +26,8 @@ object TypeofCOMMANDINFO {
     __obj.asInstanceOf[TypeofCOMMANDINFO]
   }
   
-  extension [Self <: TypeofCOMMANDINFO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCOMMANDINFO] (val x: Self) extends AnyVal {
     
     inline def setIS_READ_ONLY(value: /* true */ Boolean): Self = StObject.set(x, "IS_READ_ONLY", value.asInstanceOf[js.Any])
     

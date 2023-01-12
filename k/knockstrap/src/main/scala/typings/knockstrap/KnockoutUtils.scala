@@ -17,7 +17,8 @@ object KnockoutUtils {
     __obj.asInstanceOf[KnockoutUtils]
   }
   
-  extension [Self <: KnockoutUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutUtils] (val x: Self) extends AnyVal {
     
     inline def setUniqueId(value: String => String): Self = StObject.set(x, "uniqueId", js.Any.fromFunction1(value))
     

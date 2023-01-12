@@ -17,7 +17,8 @@ object CursorStreamOptions {
     __obj.asInstanceOf[CursorStreamOptions]
   }
   
-  extension [Self <: CursorStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CursorStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setTransform(value: js.ThisFunction1[/* this */ Unit, /* doc */ Document, Document]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     

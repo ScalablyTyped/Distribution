@@ -391,7 +391,8 @@ object esComponentsFormFormItemMod {
       __obj.asInstanceOf[FormItemProps]
     }
     
-    extension [Self <: FormItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormItemProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -779,7 +780,8 @@ object esComponentsFormFormItemMod {
       __obj.asInstanceOf[RcFieldProps]
     }
     
-    extension [Self <: RcFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RcFieldProps] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[NamePath]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

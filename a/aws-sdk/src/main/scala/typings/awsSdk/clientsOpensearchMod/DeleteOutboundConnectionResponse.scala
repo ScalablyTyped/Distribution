@@ -18,7 +18,8 @@ object DeleteOutboundConnectionResponse {
     __obj.asInstanceOf[DeleteOutboundConnectionResponse]
   }
   
-  extension [Self <: DeleteOutboundConnectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOutboundConnectionResponse] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: OutboundConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     

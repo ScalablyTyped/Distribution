@@ -71,7 +71,8 @@ object NetworkInterfacesData {
     __obj.asInstanceOf[NetworkInterfacesData]
   }
   
-  extension [Self <: NetworkInterfacesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInterfacesData] (val x: Self) extends AnyVal {
     
     inline def setCarrierChanges(value: Double): Self = StObject.set(x, "carrierChanges", value.asInstanceOf[js.Any])
     

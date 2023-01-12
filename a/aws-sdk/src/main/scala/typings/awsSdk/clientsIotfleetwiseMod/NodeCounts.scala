@@ -38,7 +38,8 @@ object NodeCounts {
     __obj.asInstanceOf[NodeCounts]
   }
   
-  extension [Self <: NodeCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeCounts] (val x: Self) extends AnyVal {
     
     inline def setTotalActuators(value: Double): Self = StObject.set(x, "totalActuators", value.asInstanceOf[js.Any])
     

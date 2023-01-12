@@ -78,7 +78,8 @@ object Portal {
     __obj.asInstanceOf[Portal]
   }
   
-  extension [Self <: Portal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Portal] (val x: Self) extends AnyVal {
     
     inline def setBrowserSettingsArn(value: ARN): Self = StObject.set(x, "browserSettingsArn", value.asInstanceOf[js.Any])
     

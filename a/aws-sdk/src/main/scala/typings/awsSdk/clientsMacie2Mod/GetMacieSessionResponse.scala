@@ -38,7 +38,8 @@ object GetMacieSessionResponse {
     __obj.asInstanceOf[GetMacieSessionResponse]
   }
   
-  extension [Self <: GetMacieSessionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMacieSessionResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

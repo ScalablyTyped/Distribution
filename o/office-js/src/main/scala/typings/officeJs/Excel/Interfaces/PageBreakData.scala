@@ -30,7 +30,8 @@ object PageBreakData {
     __obj.asInstanceOf[PageBreakData]
   }
   
-  extension [Self <: PageBreakData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageBreakData] (val x: Self) extends AnyVal {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     

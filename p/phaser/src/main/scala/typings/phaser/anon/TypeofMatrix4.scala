@@ -28,7 +28,8 @@ object TypeofMatrix4 {
     __obj.asInstanceOf[TypeofMatrix4]
   }
   
-  extension [Self <: TypeofMatrix4](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMatrix4] (val x: Self) extends AnyVal {
     
     inline def setInitTemps(value: () => Unit): Self = StObject.set(x, "initTemps", js.Any.fromFunction0(value))
     

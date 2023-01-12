@@ -27,7 +27,8 @@ object DeviceWatcherEvent {
     __obj.asInstanceOf[DeviceWatcherEvent]
   }
   
-  extension [Self <: DeviceWatcherEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceWatcherEvent] (val x: Self) extends AnyVal {
     
     inline def setDeviceInformation(value: DeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
     

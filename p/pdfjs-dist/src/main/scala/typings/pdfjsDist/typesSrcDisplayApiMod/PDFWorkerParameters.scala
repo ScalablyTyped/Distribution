@@ -29,7 +29,8 @@ object PDFWorkerParameters {
     __obj.asInstanceOf[PDFWorkerParameters]
   }
   
-  extension [Self <: PDFWorkerParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFWorkerParameters] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

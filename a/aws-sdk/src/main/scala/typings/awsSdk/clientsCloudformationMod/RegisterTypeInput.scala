@@ -43,7 +43,8 @@ object RegisterTypeInput {
     __obj.asInstanceOf[RegisterTypeInput]
   }
   
-  extension [Self <: RegisterTypeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterTypeInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: RequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

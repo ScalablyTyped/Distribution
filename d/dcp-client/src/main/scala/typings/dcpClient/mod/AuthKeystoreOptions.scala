@@ -34,7 +34,8 @@ object AuthKeystoreOptions {
     __obj.asInstanceOf[AuthKeystoreOptions]
   }
   
-  extension [Self <: AuthKeystoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthKeystoreOptions] (val x: Self) extends AnyVal {
     
     inline def setCheckEmpty(value: Boolean): Self = StObject.set(x, "checkEmpty", value.asInstanceOf[js.Any])
     

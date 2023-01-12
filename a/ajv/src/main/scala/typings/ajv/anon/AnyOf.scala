@@ -17,7 +17,8 @@ object AnyOf {
     __obj.asInstanceOf[AnyOf[T, IsPartial]]
   }
   
-  extension [Self <: AnyOf[?, ?], T, IsPartial /* <: Boolean */](x: Self & (AnyOf[T, IsPartial])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnyOf[?, ?], T, IsPartial /* <: Boolean */] (val x: Self & (AnyOf[T, IsPartial])) extends AnyVal {
     
     inline def setAnyOf(value: js.Array[UncheckedJSONSchemaType[T, IsPartial]]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
     

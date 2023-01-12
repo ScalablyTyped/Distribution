@@ -23,7 +23,8 @@ object BarChartProps {
     __obj.asInstanceOf[BarChartProps]
   }
   
-  extension [Self <: BarChartProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarChartProps] (val x: Self) extends AnyVal {
     
     inline def setData(value: BarData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

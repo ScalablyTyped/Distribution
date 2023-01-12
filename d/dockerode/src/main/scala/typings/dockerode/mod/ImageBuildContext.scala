@@ -17,7 +17,8 @@ object ImageBuildContext {
     __obj.asInstanceOf[ImageBuildContext]
   }
   
-  extension [Self <: ImageBuildContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageBuildContext] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

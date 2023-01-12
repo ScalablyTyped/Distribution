@@ -18,7 +18,8 @@ object BatchGetRepositoryScanningConfigurationRequest {
     __obj.asInstanceOf[BatchGetRepositoryScanningConfigurationRequest]
   }
   
-  extension [Self <: BatchGetRepositoryScanningConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetRepositoryScanningConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setRepositoryNames(value: ScanningConfigurationRepositoryNameList): Self = StObject.set(x, "repositoryNames", value.asInstanceOf[js.Any])
     

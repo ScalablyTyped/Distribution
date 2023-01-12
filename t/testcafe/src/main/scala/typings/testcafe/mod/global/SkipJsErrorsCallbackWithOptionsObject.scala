@@ -22,7 +22,8 @@ object SkipJsErrorsCallbackWithOptionsObject {
     __obj.asInstanceOf[SkipJsErrorsCallbackWithOptionsObject]
   }
   
-  extension [Self <: SkipJsErrorsCallbackWithOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkipJsErrorsCallbackWithOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setDependencies(value: StringDictionary[Any]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     

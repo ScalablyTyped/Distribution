@@ -55,7 +55,8 @@ object distTypesScalesQuantizeColorScaleMod {
       __obj.asInstanceOf[QuantizeColorScaleColorsConfig]
     }
     
-    extension [Self <: QuantizeColorScaleColorsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantizeColorScaleColorsConfig] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object distTypesScalesQuantizeColorScaleMod {
       __obj.asInstanceOf[QuantizeColorScaleSchemeConfig]
     }
     
-    extension [Self <: QuantizeColorScaleSchemeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantizeColorScaleSchemeConfig] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object distTypesScalesQuantizeColorScaleMod {
       __obj.asInstanceOf[QuantizeColorScaleValues]
     }
     
-    extension [Self <: QuantizeColorScaleValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantizeColorScaleValues] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

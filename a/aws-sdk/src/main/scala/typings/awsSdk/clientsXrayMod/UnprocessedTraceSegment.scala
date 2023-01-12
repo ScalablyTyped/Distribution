@@ -28,7 +28,8 @@ object UnprocessedTraceSegment {
     __obj.asInstanceOf[UnprocessedTraceSegment]
   }
   
-  extension [Self <: UnprocessedTraceSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnprocessedTraceSegment] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object MaintenanceWindowExecutionTaskInvocationIdentity {
     __obj.asInstanceOf[MaintenanceWindowExecutionTaskInvocationIdentity]
   }
   
-  extension [Self <: MaintenanceWindowExecutionTaskInvocationIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceWindowExecutionTaskInvocationIdentity] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

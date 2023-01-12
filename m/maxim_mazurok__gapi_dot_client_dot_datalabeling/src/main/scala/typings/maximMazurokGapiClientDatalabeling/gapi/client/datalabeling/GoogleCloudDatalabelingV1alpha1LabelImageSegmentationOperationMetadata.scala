@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1alpha1LabelImageSegmentationOperationMetadata {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1alpha1LabelImageSegmentationOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1alpha1LabelImageSegmentationOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1alpha1LabelImageSegmentationOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setBasicConfig(value: GoogleCloudDatalabelingV1alpha1HumanAnnotationConfig): Self = StObject.set(x, "basicConfig", value.asInstanceOf[js.Any])
     

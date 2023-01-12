@@ -28,7 +28,8 @@ object AwsRedshiftClusterHsmStatus {
     __obj.asInstanceOf[AwsRedshiftClusterHsmStatus]
   }
   
-  extension [Self <: AwsRedshiftClusterHsmStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterHsmStatus] (val x: Self) extends AnyVal {
     
     inline def setHsmClientCertificateIdentifier(value: NonEmptyString): Self = StObject.set(x, "HsmClientCertificateIdentifier", value.asInstanceOf[js.Any])
     

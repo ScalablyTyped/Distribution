@@ -44,7 +44,8 @@ object ASPxClientValidationSummary {
     __obj.asInstanceOf[ASPxClientValidationSummary]
   }
   
-  extension [Self <: ASPxClientValidationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientValidationSummary] (val x: Self) extends AnyVal {
     
     inline def setVisibilityChanged(
       value: ASPxClientEvent[

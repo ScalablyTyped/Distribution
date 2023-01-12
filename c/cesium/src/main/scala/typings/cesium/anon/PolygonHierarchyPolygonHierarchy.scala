@@ -15,7 +15,8 @@ object PolygonHierarchyPolygonHierarchy {
     __obj.asInstanceOf[PolygonHierarchyPolygonHierarchy]
   }
   
-  extension [Self <: PolygonHierarchyPolygonHierarchy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonHierarchyPolygonHierarchy] (val x: Self) extends AnyVal {
     
     inline def setPolygonHierarchy(value: typings.cesium.mod.PolygonHierarchy): Self = StObject.set(x, "polygonHierarchy", value.asInstanceOf[js.Any])
   }

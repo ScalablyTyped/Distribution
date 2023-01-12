@@ -18,7 +18,8 @@ object InputParallelism {
     __obj.asInstanceOf[InputParallelism]
   }
   
-  extension [Self <: InputParallelism](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputParallelism] (val x: Self) extends AnyVal {
     
     inline def setCount(value: InputParallelismCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

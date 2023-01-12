@@ -28,7 +28,8 @@ object SimpleEmail {
     __obj.asInstanceOf[SimpleEmail]
   }
   
-  extension [Self <: SimpleEmail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleEmail] (val x: Self) extends AnyVal {
     
     inline def setHtmlPart(value: SimpleEmailPart): Self = StObject.set(x, "HtmlPart", value.asInstanceOf[js.Any])
     

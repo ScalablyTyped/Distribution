@@ -29,7 +29,8 @@ object stylesThemeProviderMod extends Shortcut {
       __obj.asInstanceOf[ThemeProviderProps]
     }
     
-    extension [Self <: ThemeProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeProviderProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

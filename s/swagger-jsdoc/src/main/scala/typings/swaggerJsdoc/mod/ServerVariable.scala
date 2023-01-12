@@ -22,7 +22,8 @@ object ServerVariable {
     __obj.asInstanceOf[ServerVariable]
   }
   
-  extension [Self <: ServerVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerVariable] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object InterpolationConfigType {
     __obj.asInstanceOf[InterpolationConfigType]
   }
   
-  extension [Self <: InterpolationConfigType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolationConfigType] (val x: Self) extends AnyVal {
     
     inline def setEasing(value: /* input */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     

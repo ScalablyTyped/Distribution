@@ -23,7 +23,8 @@ object CreateRelatedItemResponse {
     __obj.asInstanceOf[CreateRelatedItemResponse]
   }
   
-  extension [Self <: CreateRelatedItemResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRelatedItemResponse] (val x: Self) extends AnyVal {
     
     inline def setRelatedItemArn(value: RelatedItemArn): Self = StObject.set(x, "relatedItemArn", value.asInstanceOf[js.Any])
     

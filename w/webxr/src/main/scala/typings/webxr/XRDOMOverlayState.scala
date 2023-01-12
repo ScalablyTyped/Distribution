@@ -16,7 +16,8 @@ object XRDOMOverlayState {
     __obj.asInstanceOf[XRDOMOverlayState]
   }
   
-  extension [Self <: XRDOMOverlayState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRDOMOverlayState] (val x: Self) extends AnyVal {
     
     inline def setType(value: XRDOMOverlayType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

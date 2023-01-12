@@ -22,7 +22,8 @@ object ValidatorRule {
     __obj.asInstanceOf[ValidatorRule]
   }
   
-  extension [Self <: ValidatorRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidatorRule] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String | ReactElement): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AliasTarget {
     __obj.asInstanceOf[AliasTarget]
   }
   
-  extension [Self <: AliasTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AliasTarget] (val x: Self) extends AnyVal {
     
     inline def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
     

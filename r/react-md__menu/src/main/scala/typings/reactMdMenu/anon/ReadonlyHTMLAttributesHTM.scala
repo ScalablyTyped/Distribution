@@ -454,7 +454,8 @@ object ReadonlyHTMLAttributesHTM {
     __obj.asInstanceOf[ReadonlyHTMLAttributesHTM]
   }
   
-  extension [Self <: ReadonlyHTMLAttributesHTM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyHTMLAttributesHTM] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

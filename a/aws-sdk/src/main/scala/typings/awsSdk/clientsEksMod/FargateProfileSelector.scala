@@ -23,7 +23,8 @@ object FargateProfileSelector {
     __obj.asInstanceOf[FargateProfileSelector]
   }
   
-  extension [Self <: FargateProfileSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FargateProfileSelector] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: FargateProfileLabel): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

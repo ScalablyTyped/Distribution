@@ -19,7 +19,8 @@ object AlwaysOnVpnPackage {
     __obj.asInstanceOf[AlwaysOnVpnPackage]
   }
   
-  extension [Self <: AlwaysOnVpnPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlwaysOnVpnPackage] (val x: Self) extends AnyVal {
     
     inline def setLockdownEnabled(value: Boolean): Self = StObject.set(x, "lockdownEnabled", value.asInstanceOf[js.Any])
     

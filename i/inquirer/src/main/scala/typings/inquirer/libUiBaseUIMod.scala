@@ -82,7 +82,8 @@ object libUiBaseUIMod {
       __obj.asInstanceOf[UI]
     }
     
-    extension [Self <: UI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UI] (val x: Self) extends AnyVal {
       
       inline def setActivePrompt(value: PromptBase): Self = StObject.set(x, "activePrompt", value.asInstanceOf[js.Any])
       

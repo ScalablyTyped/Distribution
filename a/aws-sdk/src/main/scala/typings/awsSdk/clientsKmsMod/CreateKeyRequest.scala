@@ -63,7 +63,8 @@ object CreateKeyRequest {
     __obj.asInstanceOf[CreateKeyRequest]
   }
   
-  extension [Self <: CreateKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setBypassPolicyLockoutSafetyCheck(value: BooleanType): Self = StObject.set(x, "BypassPolicyLockoutSafetyCheck", value.asInstanceOf[js.Any])
     

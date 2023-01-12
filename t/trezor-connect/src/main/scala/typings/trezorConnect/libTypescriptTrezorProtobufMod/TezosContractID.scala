@@ -17,7 +17,8 @@ object TezosContractID {
     __obj.asInstanceOf[TezosContractID]
   }
   
-  extension [Self <: TezosContractID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TezosContractID] (val x: Self) extends AnyVal {
     
     inline def setHash(value: js.typedarray.Uint8Array): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

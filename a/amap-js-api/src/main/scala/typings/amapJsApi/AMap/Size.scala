@@ -27,7 +27,8 @@ object Size {
     __obj.asInstanceOf[Size]
   }
   
-  extension [Self <: Size](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
     
     inline def setContains(value: X => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     

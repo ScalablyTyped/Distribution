@@ -294,7 +294,8 @@ object Particles {
       __obj.asInstanceOf[GravityWell]
     }
     
-    extension [Self <: GravityWell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GravityWell] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -508,7 +509,8 @@ object Particles {
       __obj.asInstanceOf[Particle]
     }
     
-    extension [Self <: Particle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Particle] (val x: Self) extends AnyVal {
       
       inline def setAccelerationX(value: Double): Self = StObject.set(x, "accelerationX", value.asInstanceOf[js.Any])
       
@@ -1469,7 +1471,8 @@ object Particles {
         __obj.asInstanceOf[DeathZone]
       }
       
-      extension [Self <: DeathZone](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeathZone] (val x: Self) extends AnyVal {
         
         inline def setKillOnEnter(value: Boolean): Self = StObject.set(x, "killOnEnter", value.asInstanceOf[js.Any])
         
@@ -1557,7 +1560,8 @@ object Particles {
         __obj.asInstanceOf[EdgeZone]
       }
       
-      extension [Self <: EdgeZone](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EdgeZone] (val x: Self) extends AnyVal {
         
         inline def setChangeSource(value: EdgeZoneSource => EdgeZone): Self = StObject.set(x, "changeSource", js.Any.fromFunction1(value))
         
@@ -1606,7 +1610,8 @@ object Particles {
         __obj.asInstanceOf[RandomZone]
       }
       
-      extension [Self <: RandomZone](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RandomZone] (val x: Self) extends AnyVal {
         
         inline def setGetPoint(value: Particle => Unit): Self = StObject.set(x, "getPoint", js.Any.fromFunction1(value))
         

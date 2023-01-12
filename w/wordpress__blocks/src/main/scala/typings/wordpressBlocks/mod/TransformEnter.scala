@@ -27,7 +27,8 @@ object TransformEnter {
     __obj.asInstanceOf[TransformEnter[T]]
   }
   
-  extension [Self <: TransformEnter[?], T /* <: Record[String, Any] */](x: Self & TransformEnter[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformEnter[?], T /* <: Record[String, Any] */] (val x: Self & TransformEnter[T]) extends AnyVal {
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

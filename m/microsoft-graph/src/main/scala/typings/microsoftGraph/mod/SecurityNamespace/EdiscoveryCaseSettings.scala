@@ -26,7 +26,8 @@ object EdiscoveryCaseSettings {
     __obj.asInstanceOf[EdiscoveryCaseSettings]
   }
   
-  extension [Self <: EdiscoveryCaseSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdiscoveryCaseSettings] (val x: Self) extends AnyVal {
     
     inline def setOcr(value: NullableOption[OcrSettings]): Self = StObject.set(x, "ocr", value.asInstanceOf[js.Any])
     

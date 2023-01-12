@@ -20,7 +20,8 @@ object QueryReadTime {
     __obj.asInstanceOf[QueryReadTime]
   }
   
-  extension [Self <: QueryReadTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryReadTime] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: typings.firebaseFirestore.distLiteFirestoreSrcCoreQueryMod.Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

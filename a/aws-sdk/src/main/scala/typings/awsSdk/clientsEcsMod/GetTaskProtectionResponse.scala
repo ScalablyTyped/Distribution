@@ -23,7 +23,8 @@ object GetTaskProtectionResponse {
     __obj.asInstanceOf[GetTaskProtectionResponse]
   }
   
-  extension [Self <: GetTaskProtectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTaskProtectionResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

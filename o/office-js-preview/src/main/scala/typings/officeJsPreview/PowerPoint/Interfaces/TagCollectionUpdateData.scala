@@ -16,7 +16,8 @@ object TagCollectionUpdateData {
     __obj.asInstanceOf[TagCollectionUpdateData]
   }
   
-  extension [Self <: TagCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[TagData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

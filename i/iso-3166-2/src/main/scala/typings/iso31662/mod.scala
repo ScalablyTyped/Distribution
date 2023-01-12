@@ -37,7 +37,8 @@ object mod {
         __obj.asInstanceOf[Full]
       }
       
-      extension [Self <: Full](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       }
@@ -59,7 +60,8 @@ object mod {
         __obj.asInstanceOf[Partial]
       }
       
-      extension [Self <: Partial](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Partial] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -98,7 +100,8 @@ object mod {
         __obj.asInstanceOf[typings.iso31662.mod.SubdivisionInfo.Full]
       }
       
-      extension [Self <: typings.iso31662.mod.SubdivisionInfo.Full](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.iso31662.mod.SubdivisionInfo.Full] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -127,7 +130,8 @@ object mod {
         __obj.asInstanceOf[Partial]
       }
       
-      extension [Self <: Partial](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Partial] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         

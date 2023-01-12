@@ -22,7 +22,8 @@ object ValidatorOptions {
       __obj.asInstanceOf[IsDateOptions]
     }
     
-    extension [Self <: IsDateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsDateOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object ValidatorOptions {
       __obj.asInstanceOf[IsNumberOptions]
     }
     
-    extension [Self <: IsNumberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsNumberOptions] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Number): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object ValidatorOptions {
       __obj.asInstanceOf[IsStringOptions]
     }
     
-    extension [Self <: IsStringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsStringOptions] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

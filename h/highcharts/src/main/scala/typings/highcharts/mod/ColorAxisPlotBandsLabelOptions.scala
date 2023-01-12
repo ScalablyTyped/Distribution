@@ -70,7 +70,8 @@ object ColorAxisPlotBandsLabelOptions {
     __obj.asInstanceOf[ColorAxisPlotBandsLabelOptions]
   }
   
-  extension [Self <: ColorAxisPlotBandsLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorAxisPlotBandsLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

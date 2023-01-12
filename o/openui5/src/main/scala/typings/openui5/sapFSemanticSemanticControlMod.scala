@@ -168,7 +168,8 @@ object sapFSemanticSemanticControlMod {
       __obj.asInstanceOf[SemanticControlSettings]
     }
     
-    extension [Self <: SemanticControlSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticControlSettings] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       

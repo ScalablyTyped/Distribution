@@ -83,7 +83,8 @@ object AnnotationsMeasureShapeOptions {
     __obj.asInstanceOf[AnnotationsMeasureShapeOptions]
   }
   
-  extension [Self <: AnnotationsMeasureShapeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsMeasureShapeOptions] (val x: Self) extends AnyVal {
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     

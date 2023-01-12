@@ -25,7 +25,8 @@ object WindowsQuickFixEngineeringPackage {
     __obj.asInstanceOf[WindowsQuickFixEngineeringPackage]
   }
   
-  extension [Self <: WindowsQuickFixEngineeringPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsQuickFixEngineeringPackage] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Attachment]
     }
     
-    extension [Self <: Attachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
       
       inline def setAttachment(value: typings.nodeZendesk.mod.Attachments.Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setComment(value: Body): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Externalids]
     }
     
-    extension [Self <: Externalids](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Externalids] (val x: Self) extends AnyVal {
       
       inline def setExternal_ids(value: js.Array[ZendeskID]): Self = StObject.set(x, "external_ids", value.asInstanceOf[js.Any])
       
@@ -128,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Filename]
     }
     
-    extension [Self <: Filename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filename] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -151,7 +156,8 @@ object anon {
       __obj.asInstanceOf[Ids]
     }
     
-    extension [Self <: Ids](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ids] (val x: Self) extends AnyVal {
       
       inline def setIds(value: js.Array[ZendeskID]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       

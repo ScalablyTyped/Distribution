@@ -39,7 +39,8 @@ object XShapeEventListener {
     __obj.asInstanceOf[XShapeEventListener]
   }
   
-  extension [Self <: XShapeEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShapeEventListener] (val x: Self) extends AnyVal {
     
     inline def setClick(value: (XShape, MouseEvent) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
   }

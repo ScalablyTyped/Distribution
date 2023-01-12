@@ -39,7 +39,8 @@ object BatchOperationMetadata {
     __obj.asInstanceOf[BatchOperationMetadata]
   }
   
-  extension [Self <: BatchOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setBatch(value: String): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     

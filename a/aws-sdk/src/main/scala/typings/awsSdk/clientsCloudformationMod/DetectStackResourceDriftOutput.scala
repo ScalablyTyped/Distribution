@@ -18,7 +18,8 @@ object DetectStackResourceDriftOutput {
     __obj.asInstanceOf[DetectStackResourceDriftOutput]
   }
   
-  extension [Self <: DetectStackResourceDriftOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectStackResourceDriftOutput] (val x: Self) extends AnyVal {
     
     inline def setStackResourceDrift(value: StackResourceDrift): Self = StObject.set(x, "StackResourceDrift", value.asInstanceOf[js.Any])
   }

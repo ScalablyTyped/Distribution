@@ -143,7 +143,8 @@ object dxVectorMapOptions {
     __obj.asInstanceOf[dxVectorMapOptions]
   }
   
-  extension [Self <: dxVectorMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxVectorMapOptions] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[dxVectorMapAnnotationConfig | Any]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

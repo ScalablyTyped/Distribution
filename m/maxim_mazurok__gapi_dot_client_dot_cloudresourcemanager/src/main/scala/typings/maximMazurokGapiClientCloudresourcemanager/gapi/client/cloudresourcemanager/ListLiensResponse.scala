@@ -19,7 +19,8 @@ object ListLiensResponse {
     __obj.asInstanceOf[ListLiensResponse]
   }
   
-  extension [Self <: ListLiensResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLiensResponse] (val x: Self) extends AnyVal {
     
     inline def setLiens(value: js.Array[Lien]): Self = StObject.set(x, "liens", value.asInstanceOf[js.Any])
     

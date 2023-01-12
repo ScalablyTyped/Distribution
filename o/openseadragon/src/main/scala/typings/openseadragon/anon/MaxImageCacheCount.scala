@@ -15,7 +15,8 @@ object MaxImageCacheCount {
     __obj.asInstanceOf[MaxImageCacheCount]
   }
   
-  extension [Self <: MaxImageCacheCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxImageCacheCount] (val x: Self) extends AnyVal {
     
     inline def setMaxImageCacheCount(value: Double): Self = StObject.set(x, "maxImageCacheCount", value.asInstanceOf[js.Any])
     

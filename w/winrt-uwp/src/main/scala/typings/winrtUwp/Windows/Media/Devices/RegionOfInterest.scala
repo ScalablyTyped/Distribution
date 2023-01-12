@@ -45,7 +45,8 @@ object RegionOfInterest {
     __obj.asInstanceOf[RegionOfInterest]
   }
   
-  extension [Self <: RegionOfInterest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionOfInterest] (val x: Self) extends AnyVal {
     
     inline def setAutoExposureEnabled(value: Boolean): Self = StObject.set(x, "autoExposureEnabled", value.asInstanceOf[js.Any])
     

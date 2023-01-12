@@ -46,7 +46,8 @@ object V1Beta1QuotaOverride {
     __obj.asInstanceOf[V1Beta1QuotaOverride]
   }
   
-  extension [Self <: V1Beta1QuotaOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V1Beta1QuotaOverride] (val x: Self) extends AnyVal {
     
     inline def setAdminOverrideAncestor(value: String): Self = StObject.set(x, "adminOverrideAncestor", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object BuildingFilterBlockFilterMode {
     __obj.asInstanceOf[BuildingFilterBlockFilterMode]
   }
   
-  extension [Self <: BuildingFilterBlockFilterMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingFilterBlockFilterMode] (val x: Self) extends AnyVal {
     
     inline def setEdges(value: SolidEdges3D | SketchEdges3D): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     

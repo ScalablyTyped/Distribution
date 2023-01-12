@@ -35,7 +35,8 @@ object List {
     __obj.asInstanceOf[typings.stripeV3.stripe.List[T]]
   }
   
-  extension [Self <: typings.stripeV3.stripe.List[?], T](x: Self & typings.stripeV3.stripe.List[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.stripeV3.stripe.List[?], T] (val x: Self & typings.stripeV3.stripe.List[T]) extends AnyVal {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

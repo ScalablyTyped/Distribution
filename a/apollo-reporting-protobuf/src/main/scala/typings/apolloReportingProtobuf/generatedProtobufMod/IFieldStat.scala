@@ -32,7 +32,8 @@ object IFieldStat {
     __obj.asInstanceOf[IFieldStat]
   }
   
-  extension [Self <: IFieldStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldStat] (val x: Self) extends AnyVal {
     
     inline def setErrorsCount(value: Double): Self = StObject.set(x, "errorsCount", value.asInstanceOf[js.Any])
     

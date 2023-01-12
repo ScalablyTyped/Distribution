@@ -21,7 +21,8 @@ object SnapshotIndexDetails {
     __obj.asInstanceOf[SnapshotIndexDetails]
   }
   
-  extension [Self <: SnapshotIndexDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotIndexDetails] (val x: Self) extends AnyVal {
     
     inline def setMax_segments_per_shard(value: long): Self = StObject.set(x, "max_segments_per_shard", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[PartialCreditCardType]
     }
     
-    extension [Self <: PartialCreditCardType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCreditCardType] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Name): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setName(value: CreditCardTypeSecurityCodeLabel): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

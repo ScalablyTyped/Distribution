@@ -47,7 +47,8 @@ object fastTextEncoding {
       __obj.asInstanceOf[TextDecoderOptions]
     }
     
-    extension [Self <: TextDecoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDecoderOptions] (val x: Self) extends AnyVal {
       
       inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     }
@@ -84,7 +85,8 @@ object fastTextEncoding {
       __obj.asInstanceOf[TextEncodingOptions]
     }
     
-    extension [Self <: TextEncodingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextEncodingOptions] (val x: Self) extends AnyVal {
       
       inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }

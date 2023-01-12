@@ -63,7 +63,8 @@ object OmitNavigationStateParamL {
     __obj.asInstanceOf[OmitNavigationStateParamL]
   }
   
-  extension [Self <: OmitNavigationStateParamL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitNavigationStateParamL] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

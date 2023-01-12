@@ -58,7 +58,8 @@ object OnPremisesExtensionAttributes {
     __obj.asInstanceOf[OnPremisesExtensionAttributes]
   }
   
-  extension [Self <: OnPremisesExtensionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPremisesExtensionAttributes] (val x: Self) extends AnyVal {
     
     inline def setExtensionAttribute1(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute1", value.asInstanceOf[js.Any])
     

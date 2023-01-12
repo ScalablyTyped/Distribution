@@ -34,7 +34,8 @@ object KinkeyofStateStateKAck {
     __obj.asInstanceOf[KinkeyofStateStateKAck]
   }
   
-  extension [Self <: KinkeyofStateStateKAck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinkeyofStateStateKAck] (val x: Self) extends AnyVal {
     
     inline def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     

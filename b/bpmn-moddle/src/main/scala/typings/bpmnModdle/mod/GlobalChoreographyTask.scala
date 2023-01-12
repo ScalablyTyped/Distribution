@@ -36,7 +36,8 @@ object GlobalChoreographyTask {
     __obj.asInstanceOf[GlobalChoreographyTask]
   }
   
-  extension [Self <: GlobalChoreographyTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalChoreographyTask] (val x: Self) extends AnyVal {
     
     inline def setInitiatingParticipantRef(value: Participant): Self = StObject.set(x, "initiatingParticipantRef", value.asInstanceOf[js.Any])
   }

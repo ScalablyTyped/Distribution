@@ -15,7 +15,8 @@ object RangeOptions {
     __obj.asInstanceOf[RangeOptions]
   }
   
-  extension [Self <: RangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeOptions] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

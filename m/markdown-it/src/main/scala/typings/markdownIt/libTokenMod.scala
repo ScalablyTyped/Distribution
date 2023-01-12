@@ -280,7 +280,8 @@ object libTokenMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setAttrGet(value: String => String | Null): Self = StObject.set(x, "attrGet", js.Any.fromFunction1(value))
       

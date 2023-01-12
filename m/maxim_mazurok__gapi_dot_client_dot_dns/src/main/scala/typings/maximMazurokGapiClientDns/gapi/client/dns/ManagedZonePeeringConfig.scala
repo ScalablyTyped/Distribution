@@ -18,7 +18,8 @@ object ManagedZonePeeringConfig {
     __obj.asInstanceOf[ManagedZonePeeringConfig]
   }
   
-  extension [Self <: ManagedZonePeeringConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedZonePeeringConfig] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

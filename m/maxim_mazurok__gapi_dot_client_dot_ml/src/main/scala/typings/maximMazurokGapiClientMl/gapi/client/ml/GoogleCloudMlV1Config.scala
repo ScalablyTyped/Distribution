@@ -16,7 +16,8 @@ object GoogleCloudMlV1Config {
     __obj.asInstanceOf[GoogleCloudMlV1Config]
   }
   
-  extension [Self <: GoogleCloudMlV1Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1Config] (val x: Self) extends AnyVal {
     
     inline def setTpuServiceAccount(value: String): Self = StObject.set(x, "tpuServiceAccount", value.asInstanceOf[js.Any])
     

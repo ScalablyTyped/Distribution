@@ -53,7 +53,8 @@ object SipRule {
     __obj.asInstanceOf[SipRule]
   }
   
-  extension [Self <: SipRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SipRule] (val x: Self) extends AnyVal {
     
     inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object Pending {
     __obj.asInstanceOf[Pending]
   }
   
-  extension [Self <: Pending](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pending] (val x: Self) extends AnyVal {
     
     inline def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     

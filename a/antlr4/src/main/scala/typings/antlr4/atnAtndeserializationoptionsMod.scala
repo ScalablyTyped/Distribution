@@ -45,7 +45,8 @@ object atnAtndeserializationoptionsMod {
       __obj.asInstanceOf[ATNDeserializationOptions]
     }
     
-    extension [Self <: ATNDeserializationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ATNDeserializationOptions] (val x: Self) extends AnyVal {
       
       inline def setGenerateRuleBypassTransitions(value: Boolean): Self = StObject.set(x, "generateRuleBypassTransitions", value.asInstanceOf[js.Any])
       

@@ -56,7 +56,8 @@ object DependenciesBlock {
     __obj.asInstanceOf[DependenciesBlock]
   }
   
-  extension [Self <: DependenciesBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependenciesBlock] (val x: Self) extends AnyVal {
     
     inline def setAddBlock(value: AsyncDependenciesBlock => Unit): Self = StObject.set(x, "addBlock", js.Any.fromFunction1(value))
     

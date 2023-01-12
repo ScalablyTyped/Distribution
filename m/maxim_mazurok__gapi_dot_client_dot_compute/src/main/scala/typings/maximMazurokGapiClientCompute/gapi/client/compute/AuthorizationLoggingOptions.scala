@@ -16,7 +16,8 @@ object AuthorizationLoggingOptions {
     __obj.asInstanceOf[AuthorizationLoggingOptions]
   }
   
-  extension [Self <: AuthorizationLoggingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationLoggingOptions] (val x: Self) extends AnyVal {
     
     inline def setPermissionType(value: String): Self = StObject.set(x, "permissionType", value.asInstanceOf[js.Any])
     

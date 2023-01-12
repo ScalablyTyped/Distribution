@@ -18,7 +18,8 @@ object StartJobResult {
     __obj.asInstanceOf[StartJobResult]
   }
   
-  extension [Self <: StartJobResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartJobResult] (val x: Self) extends AnyVal {
     
     inline def setJobSummary(value: JobSummary): Self = StObject.set(x, "jobSummary", value.asInstanceOf[js.Any])
   }

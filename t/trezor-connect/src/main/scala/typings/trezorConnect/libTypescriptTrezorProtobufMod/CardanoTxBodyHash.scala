@@ -15,7 +15,8 @@ object CardanoTxBodyHash {
     __obj.asInstanceOf[CardanoTxBodyHash]
   }
   
-  extension [Self <: CardanoTxBodyHash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoTxBodyHash] (val x: Self) extends AnyVal {
     
     inline def setTx_hash(value: String): Self = StObject.set(x, "tx_hash", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object BizContext {
     __obj.asInstanceOf[BizContext]
   }
   
-  extension [Self <: BizContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BizContext] (val x: Self) extends AnyVal {
     
     inline def setBizContext(value: String): Self = StObject.set(x, "bizContext", value.asInstanceOf[js.Any])
     

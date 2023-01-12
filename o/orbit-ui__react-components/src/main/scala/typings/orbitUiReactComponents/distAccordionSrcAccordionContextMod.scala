@@ -35,7 +35,8 @@ object distAccordionSrcAccordionContextMod {
       __obj.asInstanceOf[AccordionContextType]
     }
     
-    extension [Self <: AccordionContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionContextType] (val x: Self) extends AnyVal {
       
       inline def setExpandedKeys(value: js.Array[String]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
       

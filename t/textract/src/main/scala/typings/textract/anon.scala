@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Cmd]
     }
     
-    extension [Self <: Cmd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cmd] (val x: Self) extends AnyVal {
       
       inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     }
@@ -81,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Crop]
     }
     
-    extension [Self <: Crop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
       
       inline def setCrop(value: H): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object anon {
       __obj.asInstanceOf[H]
     }
     
-    extension [Self <: H](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: H] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object anon {
       __obj.asInstanceOf[Lang]
     }
     
-    extension [Self <: Lang](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lang] (val x: Self) extends AnyVal {
       
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     }

@@ -18,7 +18,8 @@ object UnpreventedDefault {
     __obj.asInstanceOf[UnpreventedDefault]
   }
   
-  extension [Self <: UnpreventedDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnpreventedDefault] (val x: Self) extends AnyVal {
     
     inline def setKeyDef(value: keyboardKey): Self = StObject.set(x, "keyDef", value.asInstanceOf[js.Any])
     

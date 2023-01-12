@@ -24,7 +24,8 @@ object distTypesRequestErrorMod {
       __obj.asInstanceOf[RequestError]
     }
     
-    extension [Self <: RequestError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestError] (val x: Self) extends AnyVal {
       
       inline def setDocumentation_url(value: String): Self = StObject.set(x, "documentation_url", value.asInstanceOf[js.Any])
       

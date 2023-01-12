@@ -22,7 +22,8 @@ object SuggestedDocumentStyle {
     __obj.asInstanceOf[SuggestedDocumentStyle]
   }
   
-  extension [Self <: SuggestedDocumentStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestedDocumentStyle] (val x: Self) extends AnyVal {
     
     inline def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
     

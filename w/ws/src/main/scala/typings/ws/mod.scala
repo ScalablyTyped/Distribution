@@ -471,7 +471,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AddressInfo]
     }
     
-    extension [Self <: AddressInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressInfo] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -531,7 +532,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -623,7 +625,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CloseEvent]
     }
     
-    extension [Self <: CloseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEvent] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -660,7 +663,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ErrorEvent]
     }
     
-    extension [Self <: ErrorEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorEvent] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -686,7 +690,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: typings.ws.mod.WebSocket): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -705,7 +710,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EventListenerOptions]
     }
     
-    extension [Self <: EventListenerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventListenerOptions] (val x: Self) extends AnyVal {
       
       inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
@@ -729,7 +735,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MessageEvent]
     }
     
-    extension [Self <: MessageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -766,7 +773,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PerMessageDeflateOptions]
     }
     
-    extension [Self <: PerMessageDeflateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerMessageDeflateOptions] (val x: Self) extends AnyVal {
       
       inline def setClientMaxWindowBits(value: Double): Self = StObject.set(x, "clientMaxWindowBits", value.asInstanceOf[js.Any])
       
@@ -858,7 +866,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setBacklog(value: Double): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
       

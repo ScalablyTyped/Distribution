@@ -25,7 +25,8 @@ object GetParametersQueryHead {
     __obj.asInstanceOf[GetParametersQueryHead]
   }
   
-  extension [Self <: GetParametersQueryHead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersQueryHead] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQueryHead): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

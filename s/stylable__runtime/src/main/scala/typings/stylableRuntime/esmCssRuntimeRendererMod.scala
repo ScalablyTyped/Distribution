@@ -61,7 +61,8 @@ object esmCssRuntimeRendererMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def set__stylable_renderer_global_counter(value: Double): Self = StObject.set(x, "__stylable_renderer_global_counter", value.asInstanceOf[js.Any])
         

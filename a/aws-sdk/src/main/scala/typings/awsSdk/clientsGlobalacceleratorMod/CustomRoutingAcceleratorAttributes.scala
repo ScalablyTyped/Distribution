@@ -28,7 +28,8 @@ object CustomRoutingAcceleratorAttributes {
     __obj.asInstanceOf[CustomRoutingAcceleratorAttributes]
   }
   
-  extension [Self <: CustomRoutingAcceleratorAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomRoutingAcceleratorAttributes] (val x: Self) extends AnyVal {
     
     inline def setFlowLogsEnabled(value: GenericBoolean): Self = StObject.set(x, "FlowLogsEnabled", value.asInstanceOf[js.Any])
     

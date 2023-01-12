@@ -55,7 +55,8 @@ object CreateFunctionRequest {
     __obj.asInstanceOf[CreateFunctionRequest]
   }
   
-  extension [Self <: CreateFunctionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFunctionRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     

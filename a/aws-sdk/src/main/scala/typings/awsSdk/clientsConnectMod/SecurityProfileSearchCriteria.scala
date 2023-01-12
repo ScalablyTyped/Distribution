@@ -25,7 +25,8 @@ object SecurityProfileSearchCriteria {
     __obj.asInstanceOf[SecurityProfileSearchCriteria]
   }
   
-  extension [Self <: SecurityProfileSearchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityProfileSearchCriteria] (val x: Self) extends AnyVal {
     
     inline def setAndConditions(value: SecurityProfileSearchConditionList): Self = StObject.set(x, "AndConditions", value.asInstanceOf[js.Any])
     

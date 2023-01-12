@@ -56,7 +56,8 @@ object typesSplitShardInputMod {
       __obj.asInstanceOf[SplitShardInput]
     }
     
-    extension [Self <: SplitShardInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitShardInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

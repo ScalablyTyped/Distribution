@@ -54,7 +54,8 @@ object distTypesSankeyLabelsMod {
       __obj.asInstanceOf[SankeyLabelsProps[N, L]]
     }
     
-    extension [Self <: SankeyLabelsProps[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (SankeyLabelsProps[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyLabelsProps[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (SankeyLabelsProps[N, L])) extends AnyVal {
       
       inline def setGetLabelTextColor(value: SankeyNodeDatum[N, L] => String): Self = StObject.set(x, "getLabelTextColor", js.Any.fromFunction1(value))
       

@@ -25,7 +25,8 @@ object PlotPolygonJitterOptions {
     __obj.asInstanceOf[PlotPolygonJitterOptions]
   }
   
-  extension [Self <: PlotPolygonJitterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPolygonJitterOptions] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

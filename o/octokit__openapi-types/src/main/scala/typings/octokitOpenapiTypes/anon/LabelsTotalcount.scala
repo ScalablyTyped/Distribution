@@ -17,7 +17,8 @@ object LabelsTotalcount {
     __obj.asInstanceOf[LabelsTotalcount]
   }
   
-  extension [Self <: LabelsTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelsTotalcount] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: js.Array[IdName]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

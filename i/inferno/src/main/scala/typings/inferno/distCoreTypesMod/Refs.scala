@@ -30,7 +30,8 @@ object Refs {
     __obj.asInstanceOf[Refs[P]]
   }
   
-  extension [Self <: Refs[?], P](x: Self & Refs[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Refs[?], P] (val x: Self & Refs[P]) extends AnyVal {
     
     inline def setOnComponentDidAppear(value: /* domNode */ Element => Unit): Self = StObject.set(x, "onComponentDidAppear", js.Any.fromFunction1(value))
     

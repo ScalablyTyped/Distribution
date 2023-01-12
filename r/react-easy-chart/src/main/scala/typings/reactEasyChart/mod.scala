@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[AreaChartProps]
     }
     
-    extension [Self <: AreaChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreaChartProps] (val x: Self) extends AnyVal {
       
       inline def setNoAreaGradient(value: Boolean): Self = StObject.set(x, "noAreaGradient", value.asInstanceOf[js.Any])
       
@@ -200,7 +201,8 @@ object mod {
       __obj.asInstanceOf[BarChartProps]
     }
     
-    extension [Self <: BarChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarChartProps] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: Boolean): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -321,7 +323,8 @@ object mod {
       __obj.asInstanceOf[BarData]
     }
     
-    extension [Self <: BarData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarData] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -355,7 +358,8 @@ object mod {
       __obj.asInstanceOf[LegendProps]
     }
     
-    extension [Self <: LegendProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendProps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: js.Array[ColorString]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -453,7 +457,8 @@ object mod {
       __obj.asInstanceOf[LineChartProps]
     }
     
-    extension [Self <: LineChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineChartProps] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: Boolean): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -570,7 +575,8 @@ object mod {
       __obj.asInstanceOf[LineData]
     }
     
-    extension [Self <: LineData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineData] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double | js.Date | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -611,7 +617,8 @@ object mod {
       __obj.asInstanceOf[PieChartProps]
     }
     
-    extension [Self <: PieChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieChartProps] (val x: Self) extends AnyVal {
       
       inline def setClickHandler(value: (/* data */ PieData, /* mouseEvent */ MouseEvent) => Any): Self = StObject.set(x, "clickHandler", js.Any.fromFunction2(value))
       
@@ -670,7 +677,8 @@ object mod {
       __obj.asInstanceOf[PieData]
     }
     
-    extension [Self <: PieData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieData] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -743,7 +751,8 @@ object mod {
       __obj.asInstanceOf[ScatterplotChartProps]
     }
     
-    extension [Self <: ScatterplotChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterplotChartProps] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: Boolean): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -847,7 +856,8 @@ object mod {
       __obj.asInstanceOf[ScatterplotData]
     }
     
-    extension [Self <: ScatterplotData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterplotData] (val x: Self) extends AnyVal {
       
       inline def setType(value: String | Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

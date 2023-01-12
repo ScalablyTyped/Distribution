@@ -18,7 +18,8 @@ object Macros {
       __obj.asInstanceOf[ApplyTicketResponsePayload]
     }
     
-    extension [Self <: ApplyTicketResponsePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyTicketResponsePayload] (val x: Self) extends AnyVal {
       
       inline def setResult(value: Comment): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }

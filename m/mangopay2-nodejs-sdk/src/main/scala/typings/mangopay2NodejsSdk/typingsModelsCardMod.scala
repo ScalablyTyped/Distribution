@@ -93,7 +93,8 @@ object typingsModelsCardMod {
         __obj.asInstanceOf[CardData]
       }
       
-      extension [Self <: CardData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CardData] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
         
@@ -192,7 +193,8 @@ object typingsModelsCardMod {
         __obj.asInstanceOf[UpdateCard]
       }
       
-      extension [Self <: UpdateCard](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateCard] (val x: Self) extends AnyVal {
         
         inline def setActive(value: `false`): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
         

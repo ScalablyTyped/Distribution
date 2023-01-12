@@ -132,7 +132,8 @@ object IConstants {
     __obj.asInstanceOf[IConstants]
   }
   
-  extension [Self <: IConstants](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConstants] (val x: Self) extends AnyVal {
     
     inline def setFORCETEMPLATEURL(value: Boolean): Self = StObject.set(x, "FORCETEMPLATEURL", value.asInstanceOf[js.Any])
     

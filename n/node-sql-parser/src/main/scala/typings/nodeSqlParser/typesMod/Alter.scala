@@ -23,7 +23,8 @@ object Alter {
     __obj.asInstanceOf[Alter]
   }
   
-  extension [Self <: Alter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alter] (val x: Self) extends AnyVal {
     
     inline def setExpr(value: Any): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     

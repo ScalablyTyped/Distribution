@@ -23,7 +23,8 @@ object DescribeLocalGatewayRouteTablesResult {
     __obj.asInstanceOf[DescribeLocalGatewayRouteTablesResult]
   }
   
-  extension [Self <: DescribeLocalGatewayRouteTablesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLocalGatewayRouteTablesResult] (val x: Self) extends AnyVal {
     
     inline def setLocalGatewayRouteTables(value: LocalGatewayRouteTableSet): Self = StObject.set(x, "LocalGatewayRouteTables", value.asInstanceOf[js.Any])
     

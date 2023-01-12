@@ -21,7 +21,8 @@ object ManagedConfigurationTemplate {
     __obj.asInstanceOf[ManagedConfigurationTemplate]
   }
   
-  extension [Self <: ManagedConfigurationTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedConfigurationTemplate] (val x: Self) extends AnyVal {
     
     inline def setConfigurationVariables(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

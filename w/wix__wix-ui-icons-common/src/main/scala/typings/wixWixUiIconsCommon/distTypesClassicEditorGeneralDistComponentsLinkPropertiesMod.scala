@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsLinkPropertiesMod extends Shor
       __obj.asInstanceOf[LinkPropertiesProps]
     }
     
-    extension [Self <: LinkPropertiesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkPropertiesProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

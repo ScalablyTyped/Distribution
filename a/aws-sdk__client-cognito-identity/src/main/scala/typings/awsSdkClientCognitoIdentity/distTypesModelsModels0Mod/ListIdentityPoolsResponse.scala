@@ -23,7 +23,8 @@ object ListIdentityPoolsResponse {
     __obj.asInstanceOf[ListIdentityPoolsResponse]
   }
   
-  extension [Self <: ListIdentityPoolsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIdentityPoolsResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentityPools(value: js.Array[IdentityPoolShortDescription]): Self = StObject.set(x, "IdentityPools", value.asInstanceOf[js.Any])
     

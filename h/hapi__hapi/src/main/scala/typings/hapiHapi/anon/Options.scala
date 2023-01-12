@@ -29,7 +29,8 @@ object Options {
     __obj.asInstanceOf[Options[Refs]]
   }
   
-  extension [Self <: Options[?], Refs /* <: ReqRef */](x: Self & Options[Refs]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?], Refs /* <: ReqRef */] (val x: Self & Options[Refs]) extends AnyVal {
     
     inline def setOptions(value: ValidationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

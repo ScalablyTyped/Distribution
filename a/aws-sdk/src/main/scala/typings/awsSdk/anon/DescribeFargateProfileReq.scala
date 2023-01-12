@@ -29,7 +29,8 @@ object DescribeFargateProfileReq {
     __obj.asInstanceOf[DescribeFargateProfileReq]
   }
   
-  extension [Self <: DescribeFargateProfileReq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFargateProfileReq] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

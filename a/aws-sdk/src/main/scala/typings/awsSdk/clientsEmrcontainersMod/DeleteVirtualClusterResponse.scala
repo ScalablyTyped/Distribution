@@ -18,7 +18,8 @@ object DeleteVirtualClusterResponse {
     __obj.asInstanceOf[DeleteVirtualClusterResponse]
   }
   
-  extension [Self <: DeleteVirtualClusterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVirtualClusterResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: ResourceIdString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

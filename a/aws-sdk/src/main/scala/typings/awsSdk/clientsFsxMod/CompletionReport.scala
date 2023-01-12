@@ -33,7 +33,8 @@ object CompletionReport {
     __obj.asInstanceOf[CompletionReport]
   }
   
-  extension [Self <: CompletionReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionReport] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Flag): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

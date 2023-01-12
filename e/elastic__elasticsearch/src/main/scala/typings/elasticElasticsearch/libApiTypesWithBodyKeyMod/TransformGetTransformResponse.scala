@@ -17,7 +17,8 @@ object TransformGetTransformResponse {
     __obj.asInstanceOf[TransformGetTransformResponse]
   }
   
-  extension [Self <: TransformGetTransformResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformGetTransformResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

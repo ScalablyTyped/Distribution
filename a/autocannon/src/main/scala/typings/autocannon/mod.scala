@@ -240,7 +240,8 @@ object mod {
       __obj.asInstanceOf[Histogram]
     }
     
-    extension [Self <: Histogram](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Histogram] (val x: Self) extends AnyVal {
       
       inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
       
@@ -509,7 +510,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -638,7 +640,8 @@ object mod {
       __obj.asInstanceOf[PrintResultOptions]
     }
     
-    extension [Self <: PrintResultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintResultOptions] (val x: Self) extends AnyVal {
       
       inline def setOutputStream(value: WritableStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
       
@@ -673,7 +676,8 @@ object mod {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -795,7 +799,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def set1XX(value: Double): Self = StObject.set(x, "1XX", value.asInstanceOf[js.Any])
       
@@ -884,7 +889,8 @@ object mod {
       __obj.asInstanceOf[TrackingOptions]
     }
     
-    extension [Self <: TrackingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackingOptions] (val x: Self) extends AnyVal {
       
       inline def setOutputStream(value: WritableStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object JQueryPositionOptions {
     __obj.asInstanceOf[JQueryPositionOptions]
   }
   
-  extension [Self <: JQueryPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setAt(value: String): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     

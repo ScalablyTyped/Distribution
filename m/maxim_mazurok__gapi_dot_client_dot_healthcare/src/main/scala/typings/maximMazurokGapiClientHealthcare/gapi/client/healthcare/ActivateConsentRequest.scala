@@ -26,7 +26,8 @@ object ActivateConsentRequest {
     __obj.asInstanceOf[ActivateConsentRequest]
   }
   
-  extension [Self <: ActivateConsentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivateConsentRequest] (val x: Self) extends AnyVal {
     
     inline def setConsentArtifact(value: String): Self = StObject.set(x, "consentArtifact", value.asInstanceOf[js.Any])
     

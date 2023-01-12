@@ -17,7 +17,8 @@ object LocationActionPayload {
     __obj.asInstanceOf[LocationActionPayload]
   }
   
-  extension [Self <: LocationActionPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationActionPayload] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object UseResizeColumnsOptions {
     __obj.asInstanceOf[UseResizeColumnsOptions[D]]
   }
   
-  extension [Self <: UseResizeColumnsOptions[?], D /* <: js.Object */](x: Self & UseResizeColumnsOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseResizeColumnsOptions[?], D /* <: js.Object */] (val x: Self & UseResizeColumnsOptions[D]) extends AnyVal {
     
     inline def setAutoResetResize(value: Boolean): Self = StObject.set(x, "autoResetResize", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TargetTypeEventName {
     __obj.asInstanceOf[TargetTypeEventName[EventName, EventMap]]
   }
   
-  extension [Self <: TargetTypeEventName[?, ?], EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */](x: Self & (TargetTypeEventName[EventName, EventMap])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetTypeEventName[?, ?], EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */] (val x: Self & (TargetTypeEventName[EventName, EventMap])) extends AnyVal {
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

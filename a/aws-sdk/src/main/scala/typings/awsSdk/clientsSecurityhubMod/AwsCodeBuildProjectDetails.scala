@@ -58,7 +58,8 @@ object AwsCodeBuildProjectDetails {
     __obj.asInstanceOf[AwsCodeBuildProjectDetails]
   }
   
-  extension [Self <: AwsCodeBuildProjectDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCodeBuildProjectDetails] (val x: Self) extends AnyVal {
     
     inline def setArtifacts(value: AwsCodeBuildProjectArtifactsList): Self = StObject.set(x, "Artifacts", value.asInstanceOf[js.Any])
     

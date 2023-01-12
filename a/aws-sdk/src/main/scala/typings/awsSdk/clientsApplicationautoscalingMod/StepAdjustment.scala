@@ -28,7 +28,8 @@ object StepAdjustment {
     __obj.asInstanceOf[StepAdjustment]
   }
   
-  extension [Self <: StepAdjustment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepAdjustment] (val x: Self) extends AnyVal {
     
     inline def setMetricIntervalLowerBound(value: MetricScale): Self = StObject.set(x, "MetricIntervalLowerBound", value.asInstanceOf[js.Any])
     

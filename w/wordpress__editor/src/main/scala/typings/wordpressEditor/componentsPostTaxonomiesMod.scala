@@ -40,7 +40,8 @@ object componentsPostTaxonomiesMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setTaxonomyWrapper(value: (/* content */ ReactNode, /* taxonomy */ Taxonomy[edit]) => Element): Self = StObject.set(x, "taxonomyWrapper", js.Any.fromFunction2(value))
         

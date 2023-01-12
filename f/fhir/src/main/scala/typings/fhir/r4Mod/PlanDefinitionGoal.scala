@@ -50,7 +50,8 @@ object PlanDefinitionGoal {
     __obj.asInstanceOf[PlanDefinitionGoal]
   }
   
-  extension [Self <: PlanDefinitionGoal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanDefinitionGoal] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: js.Array[CodeableConcept]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     

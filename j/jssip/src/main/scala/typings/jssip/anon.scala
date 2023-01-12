@@ -57,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Event[T]]
     }
     
-    extension [Self <: Event[?], T](x: Self & Event[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event[?], T] (val x: Self & Event[T]) extends AnyVal {
       
       inline def setEvent(value: T): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[PartialMessageEventMap]
     }
     
-    extension [Self <: PartialMessageEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMessageEventMap] (val x: Self) extends AnyVal {
       
       inline def setFailed(value: /* event */ MessageFailedEvent => Unit): Self = StObject.set(x, "failed", js.Any.fromFunction1(value))
       
@@ -155,7 +157,8 @@ object anon {
       __obj.asInstanceOf[PartialRTCSessionEventMap]
     }
     
-    extension [Self <: PartialRTCSessionEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRTCSessionEventMap] (val x: Self) extends AnyVal {
       
       inline def setAccepted(value: (/* event */ IncomingEvent) | (/* event */ OutgoingEvent) => Unit): Self = StObject.set(x, "accepted", js.Any.fromFunction1(value))
       

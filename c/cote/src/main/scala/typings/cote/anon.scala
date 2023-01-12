@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Monitor]
     }
     
-    extension [Self <: Monitor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Monitor] (val x: Self) extends AnyVal {
       
       inline def setMonitor(value: typings.cote.mod.Monitor): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
       

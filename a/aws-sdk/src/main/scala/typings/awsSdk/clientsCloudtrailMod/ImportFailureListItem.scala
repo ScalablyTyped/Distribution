@@ -38,7 +38,8 @@ object ImportFailureListItem {
     __obj.asInstanceOf[ImportFailureListItem]
   }
   
-  extension [Self <: ImportFailureListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportFailureListItem] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     

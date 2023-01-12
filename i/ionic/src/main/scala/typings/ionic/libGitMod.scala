@@ -36,7 +36,8 @@ object libGitMod {
       __obj.asInstanceOf[GitUtilDeps]
     }
     
-    extension [Self <: GitUtilDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitUtilDeps] (val x: Self) extends AnyVal {
       
       inline def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     }

@@ -21,7 +21,8 @@ object outBlockMapApiMod {
       __obj.asInstanceOf[BlockMap]
     }
     
-    extension [Self <: BlockMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockMap] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[BlockMapFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object outBlockMapApiMod {
       __obj.asInstanceOf[BlockMapFile]
     }
     
-    extension [Self <: BlockMapFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockMapFile] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object outBlockMapApiMod {
       __obj.asInstanceOf[FileChunks]
     }
     
-    extension [Self <: FileChunks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileChunks] (val x: Self) extends AnyVal {
       
       inline def setChecksums(value: js.Array[String]): Self = StObject.set(x, "checksums", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object TypeofSilentRenderer {
     __obj.asInstanceOf[TypeofSilentRenderer]
   }
   
-  extension [Self <: TypeofSilentRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSilentRenderer] (val x: Self) extends AnyVal {
     
     inline def setNonTTY(value: Boolean): Self = StObject.set(x, "nonTTY", value.asInstanceOf[js.Any])
   }

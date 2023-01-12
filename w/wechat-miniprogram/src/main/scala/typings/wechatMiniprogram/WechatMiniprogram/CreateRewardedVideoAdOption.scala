@@ -21,7 +21,8 @@ object CreateRewardedVideoAdOption {
     __obj.asInstanceOf[CreateRewardedVideoAdOption]
   }
   
-  extension [Self <: CreateRewardedVideoAdOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRewardedVideoAdOption] (val x: Self) extends AnyVal {
     
     inline def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
     

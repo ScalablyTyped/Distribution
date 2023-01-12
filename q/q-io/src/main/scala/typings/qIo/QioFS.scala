@@ -84,7 +84,8 @@ object QioFS {
       __obj.asInstanceOf[NodeStats]
     }
     
-    extension [Self <: NodeStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeStats] (val x: Self) extends AnyVal {
       
       inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object QioFS {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setNode(value: NodeStats): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       

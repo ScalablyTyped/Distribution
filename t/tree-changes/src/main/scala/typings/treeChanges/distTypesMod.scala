@@ -29,7 +29,8 @@ object distTypesMod {
       __obj.asInstanceOf[CompareValuesOptions[T]]
     }
     
-    extension [Self <: CompareValuesOptions[?], T](x: Self & CompareValuesOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompareValuesOptions[?], T] (val x: Self & CompareValuesOptions[T]) extends AnyVal {
       
       inline def setKey(value: T): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object distTypesMod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setActual(value: Value): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       

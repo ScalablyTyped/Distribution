@@ -22,7 +22,8 @@ object MapCapabilities {
     __obj.asInstanceOf[MapCapabilities]
   }
   
-  extension [Self <: MapCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapCapabilities] (val x: Self) extends AnyVal {
     
     inline def setIsAdvancedMarkersAvailable(value: Boolean): Self = StObject.set(x, "isAdvancedMarkersAvailable", value.asInstanceOf[js.Any])
     

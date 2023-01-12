@@ -15,7 +15,8 @@ object ProcessingState {
     __obj.asInstanceOf[ProcessingState]
   }
   
-  extension [Self <: ProcessingState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingState] (val x: Self) extends AnyVal {
     
     inline def setProcessingState(value: String): Self = StObject.set(x, "processingState", value.asInstanceOf[js.Any])
     

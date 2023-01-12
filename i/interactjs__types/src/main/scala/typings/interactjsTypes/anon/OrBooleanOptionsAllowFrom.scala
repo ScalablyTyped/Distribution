@@ -79,7 +79,8 @@ object OrBooleanOptionsAllowFrom {
     __obj.asInstanceOf[OrBooleanOptionsAllowFrom]
   }
   
-  extension [Self <: OrBooleanOptionsAllowFrom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrBooleanOptionsAllowFrom] (val x: Self) extends AnyVal {
     
     inline def setActionChecker(value: Any | Boolean): Self = StObject.set(x, "actionChecker", value.asInstanceOf[js.Any])
     

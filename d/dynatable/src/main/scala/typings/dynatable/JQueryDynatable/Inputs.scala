@@ -267,7 +267,8 @@ object Inputs {
     __obj.asInstanceOf[Inputs]
   }
   
-  extension [Self <: Inputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inputs] (val x: Self) extends AnyVal {
     
     inline def setMultisort(value: js.Array[String]): Self = StObject.set(x, "multisort", value.asInstanceOf[js.Any])
     

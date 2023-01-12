@@ -24,7 +24,8 @@ object ScaleLogSpec {
     __obj.asInstanceOf[ScaleLogSpec]
   }
   
-  extension [Self <: ScaleLogSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleLogSpec] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

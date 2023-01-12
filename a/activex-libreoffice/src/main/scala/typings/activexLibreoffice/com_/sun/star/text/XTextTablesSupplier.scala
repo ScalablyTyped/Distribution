@@ -39,7 +39,8 @@ object XTextTablesSupplier {
     __obj.asInstanceOf[XTextTablesSupplier]
   }
   
-  extension [Self <: XTextTablesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextTablesSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetTextTables(value: () => XNameAccess): Self = StObject.set(x, "getTextTables", js.Any.fromFunction0(value))
     

@@ -114,7 +114,8 @@ object esTypingMod {
       __obj.asInstanceOf[PageInfo]
     }
     
-    extension [Self <: PageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object esTypingMod {
       __obj.asInstanceOf[ProFieldProps]
     }
     
-    extension [Self <: ProFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProFieldProps] (val x: Self) extends AnyVal {
       
       inline def setEmptyText(value: ReactNode): Self = StObject.set(x, "emptyText", value.asInstanceOf[js.Any])
       
@@ -231,7 +233,8 @@ object esTypingMod {
       __obj.asInstanceOf[ProFieldValueObjectType]
     }
     
-    extension [Self <: ProFieldValueObjectType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProFieldValueObjectType] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -400,7 +403,8 @@ object esTypingMod {
       __obj.asInstanceOf[ProFieldValueTypeWithFieldProps]
     }
     
-    extension [Self <: ProFieldValueTypeWithFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProFieldValueTypeWithFieldProps] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: AvatarProps): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
@@ -521,7 +525,8 @@ object esTypingMod {
       __obj.asInstanceOf[ProSchemaValueEnumType]
     }
     
-    extension [Self <: ProSchemaValueEnumType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProSchemaValueEnumType] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -565,7 +570,8 @@ object esTypingMod {
       __obj.asInstanceOf[RequestOptionsType]
     }
     
-    extension [Self <: RequestOptionsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptionsType] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -634,7 +640,8 @@ object esTypingMod {
       __obj.asInstanceOf[ValueTypeWithFieldPropsBase[Entity, ComponentsType, ExtraProps, Type]]
     }
     
-    extension [Self <: ValueTypeWithFieldPropsBase[?, ?, ?, ?], Entity, ComponentsType, ExtraProps, Type](x: Self & (ValueTypeWithFieldPropsBase[Entity, ComponentsType, ExtraProps, Type])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueTypeWithFieldPropsBase[?, ?, ?, ?], Entity, ComponentsType, ExtraProps, Type] (val x: Self & (ValueTypeWithFieldPropsBase[Entity, ComponentsType, ExtraProps, Type])) extends AnyVal {
       
       inline def setFieldProps(
         value: FieldPropsTypeBase[

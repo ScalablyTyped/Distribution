@@ -19,7 +19,8 @@ object PostDataCommon {
     __obj.asInstanceOf[PostDataCommon]
   }
   
-  extension [Self <: PostDataCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostDataCommon] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

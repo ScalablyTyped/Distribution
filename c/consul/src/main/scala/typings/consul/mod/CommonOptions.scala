@@ -31,7 +31,8 @@ object CommonOptions {
     __obj.asInstanceOf[CommonOptions]
   }
   
-  extension [Self <: CommonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
     
     inline def setConsistent(value: Boolean): Self = StObject.set(x, "consistent", value.asInstanceOf[js.Any])
     

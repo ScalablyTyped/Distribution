@@ -46,7 +46,8 @@ object buildSrcCompileHeaderComponentMod {
       __obj.asInstanceOf[HeaderComponent]
     }
     
-    extension [Self <: HeaderComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderComponent] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: js.Array[Axis]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object buildSrcCompileHeaderComponentMod {
       __obj.asInstanceOf[LayoutHeaderComponent]
     }
     
-    extension [Self <: LayoutHeaderComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutHeaderComponent] (val x: Self) extends AnyVal {
       
       inline def setFacetFieldDef(value: FacetFieldDef[String, SignalRef]): Self = StObject.set(x, "facetFieldDef", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object buildSrcCompileHeaderComponentMod {
       __obj.asInstanceOf[LayoutHeaderComponentIndex]
     }
     
-    extension [Self <: LayoutHeaderComponentIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutHeaderComponentIndex] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: LayoutHeaderComponent): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

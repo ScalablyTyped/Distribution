@@ -92,7 +92,8 @@ object DeletePackageForOrg {
     __obj.asInstanceOf[DeletePackageForOrg]
   }
   
-  extension [Self <: DeletePackageForOrg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePackageForOrg] (val x: Self) extends AnyVal {
     
     inline def setDeletePackageForAuthenticatedUser(value: `1219`): Self = StObject.set(x, "deletePackageForAuthenticatedUser", value.asInstanceOf[js.Any])
     

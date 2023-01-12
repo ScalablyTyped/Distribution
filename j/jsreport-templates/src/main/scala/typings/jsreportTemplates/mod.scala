@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[NamedTemplate]
     }
     
-    extension [Self <: NamedTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedTemplate] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object mod {
         __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: TemplateRegistry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TemplateRegistry] (val x: Self) extends AnyVal {
         
         inline def setNamedTemplate(value: NamedTemplate): Self = StObject.set(x, "NamedTemplate", value.asInstanceOf[js.Any])
       }

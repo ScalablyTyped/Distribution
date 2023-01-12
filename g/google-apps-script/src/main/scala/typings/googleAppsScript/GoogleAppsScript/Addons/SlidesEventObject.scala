@@ -23,7 +23,8 @@ object SlidesEventObject {
     __obj.asInstanceOf[SlidesEventObject]
   }
   
-  extension [Self <: SlidesEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlidesEventObject] (val x: Self) extends AnyVal {
     
     inline def setAddonHasFileScopePermission(value: Boolean): Self = StObject.set(x, "addonHasFileScopePermission", value.asInstanceOf[js.Any])
     

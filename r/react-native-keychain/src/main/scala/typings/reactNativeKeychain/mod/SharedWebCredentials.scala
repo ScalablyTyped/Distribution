@@ -17,7 +17,8 @@ object SharedWebCredentials {
     __obj.asInstanceOf[SharedWebCredentials]
   }
   
-  extension [Self <: SharedWebCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedWebCredentials] (val x: Self) extends AnyVal {
     
     inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
   }

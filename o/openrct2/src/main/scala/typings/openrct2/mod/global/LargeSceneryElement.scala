@@ -43,7 +43,8 @@ object LargeSceneryElement {
     __obj.asInstanceOf[LargeSceneryElement]
   }
   
-  extension [Self <: LargeSceneryElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LargeSceneryElement] (val x: Self) extends AnyVal {
     
     inline def setBannerIndex(value: Double): Self = StObject.set(x, "bannerIndex", value.asInstanceOf[js.Any])
     

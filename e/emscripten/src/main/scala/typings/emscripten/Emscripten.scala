@@ -19,7 +19,8 @@ object Emscripten {
       __obj.asInstanceOf[CCallOpts]
     }
     
-    extension [Self <: CCallOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CCallOpts] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

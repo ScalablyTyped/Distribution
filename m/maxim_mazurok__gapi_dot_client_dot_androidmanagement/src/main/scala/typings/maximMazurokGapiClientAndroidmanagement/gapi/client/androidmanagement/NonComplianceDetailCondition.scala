@@ -22,7 +22,8 @@ object NonComplianceDetailCondition {
     __obj.asInstanceOf[NonComplianceDetailCondition]
   }
   
-  extension [Self <: NonComplianceDetailCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonComplianceDetailCondition] (val x: Self) extends AnyVal {
     
     inline def setNonComplianceReason(value: String): Self = StObject.set(x, "nonComplianceReason", value.asInstanceOf[js.Any])
     

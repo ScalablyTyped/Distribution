@@ -158,7 +158,8 @@ object mod {
       __obj.asInstanceOf[CheckoutResponse]
     }
     
-    extension [Self <: CheckoutResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckoutResponse] (val x: Self) extends AnyVal {
       
       inline def setCheckout_url(value: String): Self = StObject.set(x, "checkout_url", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object mod {
       __obj.asInstanceOf[CustomerResponse]
     }
     
-    extension [Self <: CustomerResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomerResponse] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       

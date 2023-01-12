@@ -23,7 +23,8 @@ object ListScheduleGroupsOutput {
     __obj.asInstanceOf[ListScheduleGroupsOutput]
   }
   
-  extension [Self <: ListScheduleGroupsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListScheduleGroupsOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

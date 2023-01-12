@@ -35,7 +35,8 @@ object gapi {
           __obj.asInstanceOf[ListOperationsResponse]
         }
         
-        extension [Self <: ListOperationsResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ListOperationsResponse] (val x: Self) extends AnyVal {
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -63,7 +64,8 @@ object gapi {
           __obj.asInstanceOf[ModelOperationMetadata]
         }
         
-        extension [Self <: ModelOperationMetadata](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ModelOperationMetadata] (val x: Self) extends AnyVal {
           
           inline def setBasicOperationStatus(value: String): Self = StObject.set(x, "basicOperationStatus", value.asInstanceOf[js.Any])
           
@@ -113,7 +115,8 @@ object gapi {
           __obj.asInstanceOf[Operation]
         }
         
-        extension [Self <: Operation](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
           
           inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
           
@@ -195,7 +198,8 @@ object gapi {
           __obj.asInstanceOf[Status]
         }
         
-        extension [Self <: Status](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
           
           inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
           

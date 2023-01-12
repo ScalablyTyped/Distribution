@@ -54,7 +54,8 @@ object BitmapFontFileConfig {
     __obj.asInstanceOf[BitmapFontFileConfig]
   }
   
-  extension [Self <: BitmapFontFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitmapFontFileConfig] (val x: Self) extends AnyVal {
     
     inline def setFontDataExtension(value: String): Self = StObject.set(x, "fontDataExtension", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object Media {
     __obj.asInstanceOf[Media]
   }
   
-  extension [Self <: Media](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Attachment): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object Render {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       

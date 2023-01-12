@@ -18,7 +18,8 @@ object HibernationOptions {
     __obj.asInstanceOf[HibernationOptions]
   }
   
-  extension [Self <: HibernationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HibernationOptions] (val x: Self) extends AnyVal {
     
     inline def setConfigured(value: Boolean): Self = StObject.set(x, "Configured", value.asInstanceOf[js.Any])
     

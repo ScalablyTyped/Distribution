@@ -18,7 +18,8 @@ object PickX509CheckOptionssubje {
     __obj.asInstanceOf[PickX509CheckOptionssubje]
   }
   
-  extension [Self <: PickX509CheckOptionssubje](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickX509CheckOptionssubje] (val x: Self) extends AnyVal {
     
     inline def setSubject(value: always | never): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object AudienceSegmentGroup {
     __obj.asInstanceOf[AudienceSegmentGroup]
   }
   
-  extension [Self <: AudienceSegmentGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudienceSegmentGroup] (val x: Self) extends AnyVal {
     
     inline def setAudienceSegments(value: js.Array[AudienceSegment]): Self = StObject.set(x, "audienceSegments", value.asInstanceOf[js.Any])
     

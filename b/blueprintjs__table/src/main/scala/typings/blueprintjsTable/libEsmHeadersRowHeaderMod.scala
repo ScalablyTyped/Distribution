@@ -112,7 +112,8 @@ object libEsmHeadersRowHeaderMod {
       __obj.asInstanceOf[IRowHeights]
     }
     
-    extension [Self <: IRowHeights](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRowHeights] (val x: Self) extends AnyVal {
       
       inline def setDefaultRowHeight(value: Double): Self = StObject.set(x, "defaultRowHeight", value.asInstanceOf[js.Any])
       

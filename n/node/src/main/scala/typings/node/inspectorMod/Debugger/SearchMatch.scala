@@ -26,7 +26,8 @@ object SearchMatch {
     __obj.asInstanceOf[SearchMatch]
   }
   
-  extension [Self <: SearchMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchMatch] (val x: Self) extends AnyVal {
     
     inline def setLineContent(value: String): Self = StObject.set(x, "lineContent", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object XSessionManagerListener2 {
     __obj.asInstanceOf[XSessionManagerListener2]
   }
   
-  extension [Self <: XSessionManagerListener2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSessionManagerListener2] (val x: Self) extends AnyVal {
     
     inline def setDoQuit(value: () => Unit): Self = StObject.set(x, "doQuit", js.Any.fromFunction0(value))
   }

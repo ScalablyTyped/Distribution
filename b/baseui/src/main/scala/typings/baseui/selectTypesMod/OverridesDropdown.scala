@@ -26,7 +26,8 @@ object OverridesDropdown {
     __obj.asInstanceOf[OverridesDropdown]
   }
   
-  extension [Self <: OverridesDropdown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverridesDropdown] (val x: Self) extends AnyVal {
     
     inline def setDropdown(value: Override[Any]): Self = StObject.set(x, "Dropdown", value.asInstanceOf[js.Any])
     

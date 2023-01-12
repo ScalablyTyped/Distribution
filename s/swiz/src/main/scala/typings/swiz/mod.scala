@@ -184,7 +184,8 @@ object mod {
         __obj.asInstanceOf[IField]
       }
       
-      extension [Self <: IField](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
         
         inline def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
         
@@ -247,7 +248,8 @@ object mod {
         __obj.asInstanceOf[IFieldOptions]
       }
       
-      extension [Self <: IFieldOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFieldOptions] (val x: Self) extends AnyVal {
         
         inline def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
         
@@ -312,7 +314,8 @@ object mod {
         __obj.asInstanceOf[IObj]
       }
       
-      extension [Self <: IObj](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IObj] (val x: Self) extends AnyVal {
         
         inline def setFields(value: js.Array[IField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -343,7 +346,8 @@ object mod {
         __obj.asInstanceOf[IObjOptions]
       }
       
-      extension [Self <: IObjOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IObjOptions] (val x: Self) extends AnyVal {
         
         inline def setFields(value: js.Array[IField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -512,7 +516,8 @@ object mod {
       __obj.asInstanceOf[ICheckOptions]
     }
     
-    extension [Self <: ICheckOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckOptions] (val x: Self) extends AnyVal {
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
@@ -531,7 +536,8 @@ object mod {
       __obj.asInstanceOf[ISerializable]
     }
     
-    extension [Self <: ISerializable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISerializable] (val x: Self) extends AnyVal {
       
       inline def setGetSerializerType(value: () => String): Self = StObject.set(x, "getSerializerType", js.Any.fromFunction0(value))
     }
@@ -552,7 +558,8 @@ object mod {
       __obj.asInstanceOf[ISwizOptions]
     }
     
-    extension [Self <: ISwizOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISwizOptions] (val x: Self) extends AnyVal {
       
       inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
       
@@ -583,7 +590,8 @@ object mod {
       __obj.asInstanceOf[IValidator]
     }
     
-    extension [Self <: IValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValidator] (val x: Self) extends AnyVal {
       
       inline def setFunc(value: (Any, Any, js.Function) => Unit): Self = StObject.set(x, "func", js.Any.fromFunction3(value))
       

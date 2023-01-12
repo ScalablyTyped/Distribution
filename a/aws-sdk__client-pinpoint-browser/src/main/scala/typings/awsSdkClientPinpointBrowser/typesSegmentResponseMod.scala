@@ -75,7 +75,8 @@ object typesSegmentResponseMod {
       __obj.asInstanceOf[SegmentResponse]
     }
     
-    extension [Self <: SegmentResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentResponse] (val x: Self) extends AnyVal {
       
       inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object typesSegmentResponseMod {
       __obj.asInstanceOf[UnmarshalledSegmentResponse]
     }
     
-    extension [Self <: UnmarshalledSegmentResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSegmentResponse] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: UnmarshalledSegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object PointDragEventObject {
     __obj.asInstanceOf[PointDragEventObject]
   }
   
-  extension [Self <: PointDragEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointDragEventObject] (val x: Self) extends AnyVal {
     
     inline def setNewPoints(value: Dictionary[PointDragDropObject]): Self = StObject.set(x, "newPoints", value.asInstanceOf[js.Any])
     

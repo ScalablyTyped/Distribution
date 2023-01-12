@@ -62,7 +62,8 @@ object GeneratedSecret {
     __obj.asInstanceOf[GeneratedSecret]
   }
   
-  extension [Self <: GeneratedSecret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratedSecret] (val x: Self) extends AnyVal {
     
     inline def setAscii(value: String): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
     

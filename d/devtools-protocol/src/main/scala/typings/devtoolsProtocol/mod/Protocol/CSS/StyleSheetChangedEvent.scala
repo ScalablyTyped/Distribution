@@ -15,7 +15,8 @@ object StyleSheetChangedEvent {
     __obj.asInstanceOf[StyleSheetChangedEvent]
   }
   
-  extension [Self <: StyleSheetChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSheetChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
   }

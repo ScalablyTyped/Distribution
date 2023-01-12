@@ -22,7 +22,8 @@ object PropOptions {
     __obj.asInstanceOf[PropOptions[T, D]]
   }
   
-  extension [Self <: PropOptions[?, ?], T, D](x: Self & (PropOptions[T, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropOptions[?, ?], T, D] (val x: Self & (PropOptions[T, D])) extends AnyVal {
     
     inline def setDefault(value: D | DefaultFactory[D] | js.Object): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

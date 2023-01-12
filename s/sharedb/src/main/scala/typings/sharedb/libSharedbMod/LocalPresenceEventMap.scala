@@ -15,7 +15,8 @@ object LocalPresenceEventMap {
     __obj.asInstanceOf[LocalPresenceEventMap]
   }
   
-  extension [Self <: LocalPresenceEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalPresenceEventMap] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
   }

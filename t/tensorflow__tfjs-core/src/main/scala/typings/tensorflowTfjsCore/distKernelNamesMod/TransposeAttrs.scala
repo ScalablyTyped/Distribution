@@ -15,7 +15,8 @@ object TransposeAttrs {
     __obj.asInstanceOf[TransposeAttrs]
   }
   
-  extension [Self <: TransposeAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransposeAttrs] (val x: Self) extends AnyVal {
     
     inline def setPerm(value: js.Array[Double]): Self = StObject.set(x, "perm", value.asInstanceOf[js.Any])
     

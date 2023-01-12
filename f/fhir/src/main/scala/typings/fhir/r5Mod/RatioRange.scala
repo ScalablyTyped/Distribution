@@ -30,7 +30,8 @@ object RatioRange {
     __obj.asInstanceOf[RatioRange]
   }
   
-  extension [Self <: RatioRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RatioRange] (val x: Self) extends AnyVal {
     
     inline def setDenominator(value: Quantity): Self = StObject.set(x, "denominator", value.asInstanceOf[js.Any])
     

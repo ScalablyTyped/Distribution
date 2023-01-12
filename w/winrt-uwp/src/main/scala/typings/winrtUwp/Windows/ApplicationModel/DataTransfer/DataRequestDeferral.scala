@@ -17,7 +17,8 @@ object DataRequestDeferral {
     __obj.asInstanceOf[DataRequestDeferral]
   }
   
-  extension [Self <: DataRequestDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRequestDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

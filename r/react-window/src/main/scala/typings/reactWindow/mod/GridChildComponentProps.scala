@@ -24,7 +24,8 @@ object GridChildComponentProps {
     __obj.asInstanceOf[GridChildComponentProps[T]]
   }
   
-  extension [Self <: GridChildComponentProps[?], T](x: Self & GridChildComponentProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridChildComponentProps[?], T] (val x: Self & GridChildComponentProps[T]) extends AnyVal {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     

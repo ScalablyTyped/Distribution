@@ -23,7 +23,8 @@ object FindingTypeAggregationResponse {
     __obj.asInstanceOf[FindingTypeAggregationResponse]
   }
   
-  extension [Self <: FindingTypeAggregationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingTypeAggregationResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

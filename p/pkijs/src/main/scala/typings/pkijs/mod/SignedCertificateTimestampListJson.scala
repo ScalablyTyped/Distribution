@@ -15,7 +15,8 @@ object SignedCertificateTimestampListJson {
     __obj.asInstanceOf[SignedCertificateTimestampListJson]
   }
   
-  extension [Self <: SignedCertificateTimestampListJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedCertificateTimestampListJson] (val x: Self) extends AnyVal {
     
     inline def setTimestamps(value: js.Array[SignedCertificateTimestampJson]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     

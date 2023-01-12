@@ -48,7 +48,8 @@ object DirectTokenizationParameters {
     __obj.asInstanceOf[DirectTokenizationParameters]
   }
   
-  extension [Self <: DirectTokenizationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectTokenizationParameters] (val x: Self) extends AnyVal {
     
     inline def setProtocolVersion(value: String): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
     

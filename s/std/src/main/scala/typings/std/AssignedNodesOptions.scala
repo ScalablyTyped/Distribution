@@ -16,7 +16,8 @@ object AssignedNodesOptions {
     __obj.asInstanceOf[AssignedNodesOptions]
   }
   
-  extension [Self <: AssignedNodesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignedNodesOptions] (val x: Self) extends AnyVal {
     
     inline def setFlatten(value: scala.Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     

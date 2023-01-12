@@ -15,7 +15,8 @@ object IsSystem {
     __obj.asInstanceOf[IsSystem]
   }
   
-  extension [Self <: IsSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsSystem] (val x: Self) extends AnyVal {
     
     inline def setIsSystem(value: Boolean): Self = StObject.set(x, "isSystem", value.asInstanceOf[js.Any])
     

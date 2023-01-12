@@ -20,7 +20,8 @@ object FeatureTableSelectionChangeEvent {
     __obj.asInstanceOf[FeatureTableSelectionChangeEvent]
   }
   
-  extension [Self <: FeatureTableSelectionChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureTableSelectionChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[FeatureTableSelectionChangeEventAdded]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

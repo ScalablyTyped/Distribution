@@ -196,7 +196,8 @@ object distJsHistogramIteratorMod {
       __obj.asInstanceOf[JsHistogramIterator]
     }
     
-    extension [Self <: JsHistogramIterator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsHistogramIterator] (val x: Self) extends AnyVal {
       
       inline def setArrayTotalCount(value: Double): Self = StObject.set(x, "arrayTotalCount", value.asInstanceOf[js.Any])
       

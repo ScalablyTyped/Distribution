@@ -18,7 +18,8 @@ object DocumentOpenedEvent {
     __obj.asInstanceOf[DocumentOpenedEvent]
   }
   
-  extension [Self <: DocumentOpenedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentOpenedEvent] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
   }

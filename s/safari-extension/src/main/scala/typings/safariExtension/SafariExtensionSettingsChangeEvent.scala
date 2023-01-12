@@ -59,7 +59,8 @@ object SafariExtensionSettingsChangeEvent {
     __obj.asInstanceOf[SafariExtensionSettingsChangeEvent]
   }
   
-  extension [Self <: SafariExtensionSettingsChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafariExtensionSettingsChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setCurrentTarget(value: SafariExtensionSettings | SafariExtensionSecureSettings): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     

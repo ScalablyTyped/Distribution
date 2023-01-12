@@ -67,7 +67,8 @@ object srcCommandsAnalyticsSettingsCliMod {
       __obj.asInstanceOf[AnalyticsCommandArgs]
     }
     
-    extension [Self <: AnalyticsCommandArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsCommandArgs] (val x: Self) extends AnyVal {
       
       inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     }

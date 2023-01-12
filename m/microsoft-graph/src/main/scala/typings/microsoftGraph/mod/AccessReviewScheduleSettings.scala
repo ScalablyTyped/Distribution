@@ -68,7 +68,8 @@ object AccessReviewScheduleSettings {
     __obj.asInstanceOf[AccessReviewScheduleSettings]
   }
   
-  extension [Self <: AccessReviewScheduleSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewScheduleSettings] (val x: Self) extends AnyVal {
     
     inline def setApplyActions(value: NullableOption[js.Array[AccessReviewApplyAction]]): Self = StObject.set(x, "applyActions", value.asInstanceOf[js.Any])
     

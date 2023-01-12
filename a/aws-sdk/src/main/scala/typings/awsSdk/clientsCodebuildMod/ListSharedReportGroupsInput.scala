@@ -33,7 +33,8 @@ object ListSharedReportGroupsInput {
     __obj.asInstanceOf[ListSharedReportGroupsInput]
   }
   
-  extension [Self <: ListSharedReportGroupsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSharedReportGroupsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

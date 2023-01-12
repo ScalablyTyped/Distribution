@@ -41,7 +41,8 @@ object Dictx {
     __obj.asInstanceOf[Dictx[Shape]]
   }
   
-  extension [Self <: Dictx[?], Shape](x: Self & Dictx[Shape]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictx[?], Shape] (val x: Self & Dictx[Shape]) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

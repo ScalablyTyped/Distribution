@@ -18,7 +18,8 @@ object CopyProjectVersionResponse {
     __obj.asInstanceOf[CopyProjectVersionResponse]
   }
   
-  extension [Self <: CopyProjectVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyProjectVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setProjectVersionArn(value: ProjectVersionArn): Self = StObject.set(x, "ProjectVersionArn", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MessagingConditionResponse {
     __obj.asInstanceOf[MessagingConditionResponse]
   }
   
-  extension [Self <: MessagingConditionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagingConditionResponse] (val x: Self) extends AnyVal {
     
     inline def setMessageId(value: Double): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
   }

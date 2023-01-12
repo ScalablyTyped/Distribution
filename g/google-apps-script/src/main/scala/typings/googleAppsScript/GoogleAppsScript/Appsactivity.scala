@@ -29,7 +29,8 @@ object Appsactivity {
     }
   }
   
-  extension [Self <: Appsactivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Appsactivity] (val x: Self) extends AnyVal {
     
     inline def setActivities(value: ActivitiesCollection): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     
@@ -51,7 +52,8 @@ object Appsactivity {
         __obj.asInstanceOf[Activity]
       }
       
-      extension [Self <: Activity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
         
         inline def setCombinedEvent(value: Event): Self = StObject.set(x, "combinedEvent", value.asInstanceOf[js.Any])
         
@@ -92,7 +94,8 @@ object Appsactivity {
         __obj.asInstanceOf[Event]
       }
       
-      extension [Self <: Event](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
         
         inline def setAdditionalEventTypes(value: js.Array[String]): Self = StObject.set(x, "additionalEventTypes", value.asInstanceOf[js.Any])
         
@@ -149,7 +152,8 @@ object Appsactivity {
         __obj.asInstanceOf[ListActivitiesResponse]
       }
       
-      extension [Self <: ListActivitiesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListActivitiesResponse] (val x: Self) extends AnyVal {
         
         inline def setActivities(value: js.Array[Activity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
         
@@ -176,7 +180,8 @@ object Appsactivity {
         __obj.asInstanceOf[Move]
       }
       
-      extension [Self <: Move](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Move] (val x: Self) extends AnyVal {
         
         inline def setAddedParents(value: js.Array[Parent]): Self = StObject.set(x, "addedParents", value.asInstanceOf[js.Any])
         
@@ -207,7 +212,8 @@ object Appsactivity {
         __obj.asInstanceOf[Parent]
       }
       
-      extension [Self <: Parent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -244,7 +250,8 @@ object Appsactivity {
         __obj.asInstanceOf[Permission]
       }
       
-      extension [Self <: Permission](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -285,7 +292,8 @@ object Appsactivity {
         __obj.asInstanceOf[PermissionChange]
       }
       
-      extension [Self <: PermissionChange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PermissionChange] (val x: Self) extends AnyVal {
         
         inline def setAddedPermissions(value: js.Array[Permission]): Self = StObject.set(x, "addedPermissions", value.asInstanceOf[js.Any])
         
@@ -312,7 +320,8 @@ object Appsactivity {
         __obj.asInstanceOf[Photo]
       }
       
-      extension [Self <: Photo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Photo] (val x: Self) extends AnyVal {
         
         inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
@@ -333,7 +342,8 @@ object Appsactivity {
         __obj.asInstanceOf[Rename]
       }
       
-      extension [Self <: Rename](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Rename] (val x: Self) extends AnyVal {
         
         inline def setNewTitle(value: String): Self = StObject.set(x, "newTitle", value.asInstanceOf[js.Any])
         
@@ -360,7 +370,8 @@ object Appsactivity {
         __obj.asInstanceOf[Target]
       }
       
-      extension [Self <: Target](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -395,7 +406,8 @@ object Appsactivity {
         __obj.asInstanceOf[User]
       }
       
-      extension [Self <: User](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
         
         inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
         

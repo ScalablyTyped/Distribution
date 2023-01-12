@@ -28,7 +28,8 @@ object ConfluenceBlogToIndexFieldMapping {
     __obj.asInstanceOf[ConfluenceBlogToIndexFieldMapping]
   }
   
-  extension [Self <: ConfluenceBlogToIndexFieldMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfluenceBlogToIndexFieldMapping] (val x: Self) extends AnyVal {
     
     inline def setDataSourceFieldName(value: ConfluenceBlogFieldName): Self = StObject.set(x, "DataSourceFieldName", value.asInstanceOf[js.Any])
     

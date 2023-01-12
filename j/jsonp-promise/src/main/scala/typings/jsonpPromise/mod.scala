@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[JsonpOptions]
     }
     
-    extension [Self <: JsonpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonpOptions] (val x: Self) extends AnyVal {
       
       inline def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object mod {
       __obj.asInstanceOf[JsonpResult[R]]
     }
     
-    extension [Self <: JsonpResult[?], R](x: Self & JsonpResult[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonpResult[?], R] (val x: Self & JsonpResult[R]) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

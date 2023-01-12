@@ -23,7 +23,8 @@ object VirtualAgentAttributes {
     __obj.asInstanceOf[VirtualAgentAttributes]
   }
   
-  extension [Self <: VirtualAgentAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualAgentAttributes] (val x: Self) extends AnyVal {
     
     inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object HammerDefaults {
     __obj.asInstanceOf[HammerDefaults]
   }
   
-  extension [Self <: HammerDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HammerDefaults] (val x: Self) extends AnyVal {
     
     inline def setCssProps(value: CssProps): Self = StObject.set(x, "cssProps", value.asInstanceOf[js.Any])
     

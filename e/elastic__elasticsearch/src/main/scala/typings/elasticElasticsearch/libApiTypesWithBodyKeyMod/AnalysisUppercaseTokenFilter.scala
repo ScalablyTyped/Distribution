@@ -20,7 +20,8 @@ object AnalysisUppercaseTokenFilter {
     __obj.asInstanceOf[AnalysisUppercaseTokenFilter]
   }
   
-  extension [Self <: AnalysisUppercaseTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisUppercaseTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: uppercase): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

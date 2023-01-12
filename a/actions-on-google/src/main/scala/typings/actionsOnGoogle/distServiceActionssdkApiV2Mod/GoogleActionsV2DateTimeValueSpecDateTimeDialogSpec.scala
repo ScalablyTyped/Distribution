@@ -31,7 +31,8 @@ object GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec {
     __obj.asInstanceOf[GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec]
   }
   
-  extension [Self <: GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec] (val x: Self) extends AnyVal {
     
     inline def setRequestDateText(value: String): Self = StObject.set(x, "requestDateText", value.asInstanceOf[js.Any])
     

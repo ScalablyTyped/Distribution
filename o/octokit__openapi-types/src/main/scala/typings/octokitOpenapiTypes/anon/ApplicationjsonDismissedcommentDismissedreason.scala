@@ -17,7 +17,8 @@ object ApplicationjsonDismissedcommentDismissedreason {
     __obj.asInstanceOf[ApplicationjsonDismissedcommentDismissedreason]
   }
   
-  extension [Self <: ApplicationjsonDismissedcommentDismissedreason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonDismissedcommentDismissedreason] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: DismissedcommentDismissedreason): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

@@ -169,7 +169,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setActive01(value: String): Self = StObject.set(x, "active01", value.asInstanceOf[js.Any])
       
@@ -348,7 +349,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ThemePackage]
     }
     
-    extension [Self <: ThemePackage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemePackage] (val x: Self) extends AnyVal {
       
       inline def setG10(value: Theme): Self = StObject.set(x, "g10", value.asInstanceOf[js.Any])
       

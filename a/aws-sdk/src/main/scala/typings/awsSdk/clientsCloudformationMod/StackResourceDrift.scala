@@ -74,7 +74,8 @@ object StackResourceDrift {
     __obj.asInstanceOf[StackResourceDrift]
   }
   
-  extension [Self <: StackResourceDrift](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackResourceDrift] (val x: Self) extends AnyVal {
     
     inline def setActualProperties(value: Properties): Self = StObject.set(x, "ActualProperties", value.asInstanceOf[js.Any])
     

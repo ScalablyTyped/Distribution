@@ -49,7 +49,8 @@ object ExtremesObject {
     __obj.asInstanceOf[ExtremesObject]
   }
   
-  extension [Self <: ExtremesObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtremesObject] (val x: Self) extends AnyVal {
     
     inline def setDataMax(value: Double): Self = StObject.set(x, "dataMax", value.asInstanceOf[js.Any])
     

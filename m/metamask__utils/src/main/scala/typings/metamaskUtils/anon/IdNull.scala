@@ -21,7 +21,8 @@ object IdNull {
     __obj.asInstanceOf[IdNull]
   }
   
-  extension [Self <: IdNull](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdNull] (val x: Self) extends AnyVal {
     
     inline def setId(value: Null): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

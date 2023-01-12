@@ -23,7 +23,8 @@ object ListCloudFrontOriginAccessIdentitiesRequest {
     __obj.asInstanceOf[ListCloudFrontOriginAccessIdentitiesRequest]
   }
   
-  extension [Self <: ListCloudFrontOriginAccessIdentitiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCloudFrontOriginAccessIdentitiesRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

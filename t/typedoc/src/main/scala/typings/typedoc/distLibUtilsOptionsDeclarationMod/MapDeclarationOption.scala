@@ -45,7 +45,8 @@ object MapDeclarationOption {
     __obj.asInstanceOf[MapDeclarationOption[T]]
   }
   
-  extension [Self <: MapDeclarationOption[?], T](x: Self & MapDeclarationOption[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapDeclarationOption[?], T] (val x: Self & MapDeclarationOption[T]) extends AnyVal {
     
     inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

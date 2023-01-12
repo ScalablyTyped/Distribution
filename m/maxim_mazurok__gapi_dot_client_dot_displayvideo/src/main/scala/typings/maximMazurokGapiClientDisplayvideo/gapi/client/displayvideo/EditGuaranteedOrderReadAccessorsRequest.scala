@@ -25,7 +25,8 @@ object EditGuaranteedOrderReadAccessorsRequest {
     __obj.asInstanceOf[EditGuaranteedOrderReadAccessorsRequest]
   }
   
-  extension [Self <: EditGuaranteedOrderReadAccessorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditGuaranteedOrderReadAccessorsRequest] (val x: Self) extends AnyVal {
     
     inline def setAddedAdvertisers(value: js.Array[String]): Self = StObject.set(x, "addedAdvertisers", value.asInstanceOf[js.Any])
     

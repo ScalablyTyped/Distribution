@@ -126,7 +126,8 @@ object BootstrapSelectOptions {
     __obj.asInstanceOf[BootstrapSelectOptions]
   }
   
-  extension [Self <: BootstrapSelectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapSelectOptions] (val x: Self) extends AnyVal {
     
     inline def setActionsBox(value: Boolean): Self = StObject.set(x, "actionsBox", value.asInstanceOf[js.Any])
     

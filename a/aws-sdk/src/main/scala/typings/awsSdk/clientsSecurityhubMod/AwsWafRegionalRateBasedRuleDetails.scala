@@ -43,7 +43,8 @@ object AwsWafRegionalRateBasedRuleDetails {
     __obj.asInstanceOf[AwsWafRegionalRateBasedRuleDetails]
   }
   
-  extension [Self <: AwsWafRegionalRateBasedRuleDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsWafRegionalRateBasedRuleDetails] (val x: Self) extends AnyVal {
     
     inline def setMatchPredicates(value: AwsWafRegionalRateBasedRuleMatchPredicateList): Self = StObject.set(x, "MatchPredicates", value.asInstanceOf[js.Any])
     

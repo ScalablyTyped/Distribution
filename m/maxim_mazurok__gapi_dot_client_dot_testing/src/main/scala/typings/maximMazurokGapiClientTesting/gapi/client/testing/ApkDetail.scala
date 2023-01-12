@@ -15,7 +15,8 @@ object ApkDetail {
     __obj.asInstanceOf[ApkDetail]
   }
   
-  extension [Self <: ApkDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApkDetail] (val x: Self) extends AnyVal {
     
     inline def setApkManifest(value: ApkManifest): Self = StObject.set(x, "apkManifest", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object InfoPathEditorObject {
     __obj.asInstanceOf[InfoPathEditorObject]
   }
   
-  extension [Self <: InfoPathEditorObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoPathEditorObject] (val x: Self) extends AnyVal {
     
     inline def setCloseDocument(value: () => Unit): Self = StObject.set(x, "CloseDocument", js.Any.fromFunction0(value))
     

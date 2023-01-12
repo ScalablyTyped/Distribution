@@ -33,7 +33,8 @@ object libPlotsSankeyLayoutMod {
       __obj.asInstanceOf[InputLink]
     }
     
-    extension [Self <: InputLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputLink] (val x: Self) extends AnyVal {
       
       inline def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object libPlotsSankeyLayoutMod {
       __obj.asInstanceOf[InputNode]
     }
     
-    extension [Self <: InputNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputNode] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -98,7 +100,8 @@ object libPlotsSankeyLayoutMod {
       __obj.asInstanceOf[OutputLink]
     }
     
-    extension [Self <: OutputLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputLink] (val x: Self) extends AnyVal {
       
       inline def setSource(value: OutputNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -163,7 +166,8 @@ object libPlotsSankeyLayoutMod {
       __obj.asInstanceOf[OutputNode]
     }
     
-    extension [Self <: OutputNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputNode] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -202,7 +206,8 @@ object libPlotsSankeyLayoutMod {
       __obj.asInstanceOf[SankeyLayoutInputData]
     }
     
-    extension [Self <: SankeyLayoutInputData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyLayoutInputData] (val x: Self) extends AnyVal {
       
       inline def setLinks(value: js.Array[InputLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
@@ -235,7 +240,8 @@ object libPlotsSankeyLayoutMod {
       __obj.asInstanceOf[SankeyLayoutOptions]
     }
     
-    extension [Self <: SankeyLayoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyLayoutOptions] (val x: Self) extends AnyVal {
       
       inline def setNodeAlign(value: NodeAlign): Self = StObject.set(x, "nodeAlign", value.asInstanceOf[js.Any])
       
@@ -276,7 +282,8 @@ object libPlotsSankeyLayoutMod {
       __obj.asInstanceOf[SankeyLayoutOutputData]
     }
     
-    extension [Self <: SankeyLayoutOutputData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyLayoutOutputData] (val x: Self) extends AnyVal {
       
       inline def setLinks(value: js.Array[OutputLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       

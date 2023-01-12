@@ -21,7 +21,8 @@ object EmptyResult {
     __obj.asInstanceOf[EmptyResult]
   }
   
-  extension [Self <: EmptyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmptyResult] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     

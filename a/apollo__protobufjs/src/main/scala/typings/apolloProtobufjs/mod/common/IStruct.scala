@@ -17,7 +17,8 @@ object IStruct {
     __obj.asInstanceOf[IStruct]
   }
   
-  extension [Self <: IStruct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStruct] (val x: Self) extends AnyVal {
     
     inline def setFields(value: StringDictionary[IValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

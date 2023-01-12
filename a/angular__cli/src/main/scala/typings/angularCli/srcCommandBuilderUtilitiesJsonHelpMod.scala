@@ -31,7 +31,8 @@ object srcCommandBuilderUtilitiesJsonHelpMod {
       __obj.asInstanceOf[JsonHelp]
     }
     
-    extension [Self <: JsonHelp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonHelp] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object srcCommandBuilderUtilitiesJsonHelpMod {
       __obj.asInstanceOf[JsonHelpDescription]
     }
     
-    extension [Self <: JsonHelpDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonHelpDescription] (val x: Self) extends AnyVal {
       
       inline def setLongDescription(value: String): Self = StObject.set(x, "longDescription", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object srcCommandBuilderUtilitiesJsonHelpMod {
       __obj.asInstanceOf[JsonHelpOption]
     }
     
-    extension [Self <: JsonHelpOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonHelpOption] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object srcCommandBuilderUtilitiesJsonHelpMod {
       __obj.asInstanceOf[JsonHelpSubcommand]
     }
     
-    extension [Self <: JsonHelpSubcommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonHelpSubcommand] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       

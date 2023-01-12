@@ -149,7 +149,8 @@ object libEsmDatePickerCoreMod {
       __obj.asInstanceOf[DatePickerBaseProps]
     }
     
-    extension [Self <: DatePickerBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerBaseProps] (val x: Self) extends AnyVal {
       
       inline def setDayPickerProps(value: DayPickerProps): Self = StObject.set(x, "dayPickerProps", value.asInstanceOf[js.Any])
       

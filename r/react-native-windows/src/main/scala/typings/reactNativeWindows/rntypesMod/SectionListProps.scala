@@ -89,7 +89,8 @@ object SectionListProps {
     __obj.asInstanceOf[SectionListProps[ItemT, SectionT]]
   }
   
-  extension [Self <: SectionListProps[?, ?], ItemT, SectionT](x: Self & (SectionListProps[ItemT, SectionT])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionListProps[?, ?], ItemT, SectionT] (val x: Self & (SectionListProps[ItemT, SectionT])) extends AnyVal {
     
     inline def setGetItemLayout(
       value: (/* data */ (js.Array[SectionListData[ItemT, SectionT]]) | Null, /* index */ Double) => Index

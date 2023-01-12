@@ -38,7 +38,8 @@ object DataSourceConfig {
     __obj.asInstanceOf[DataSourceConfig]
   }
   
-  extension [Self <: DataSourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceConfig] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: Path): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

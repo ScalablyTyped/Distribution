@@ -22,7 +22,8 @@ object Stream {
     __obj.asInstanceOf[Stream]
   }
   
-  extension [Self <: Stream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
     
     inline def setLogger(value: PluginLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     

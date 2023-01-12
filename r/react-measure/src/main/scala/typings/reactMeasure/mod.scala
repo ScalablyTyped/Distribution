@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[BottomRight]
     }
     
-    extension [Self <: BottomRight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomRight] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[ContentRect]
     }
     
-    extension [Self <: ContentRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentRect] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: BoundingRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object mod {
       __obj.asInstanceOf[Dimensions]
     }
     
-    extension [Self <: Dimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -155,7 +158,8 @@ object mod {
       __obj.asInstanceOf[MeasureProps]
     }
     
-    extension [Self <: MeasureProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeasureProps] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Boolean): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -254,7 +258,8 @@ object mod {
       __obj.asInstanceOf[TopLeft]
     }
     
-    extension [Self <: TopLeft](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopLeft] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

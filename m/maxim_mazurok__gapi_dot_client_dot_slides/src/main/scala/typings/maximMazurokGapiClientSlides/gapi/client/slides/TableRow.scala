@@ -25,7 +25,8 @@ object TableRow {
     __obj.asInstanceOf[TableRow]
   }
   
-  extension [Self <: TableRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableRow] (val x: Self) extends AnyVal {
     
     inline def setRowHeight(value: Dimension): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     

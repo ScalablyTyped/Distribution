@@ -26,7 +26,8 @@ object ISize {
     __obj.asInstanceOf[ISize]
   }
   
-  extension [Self <: ISize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISize] (val x: Self) extends AnyVal {
     
     inline def setQcx(value: Double): Self = StObject.set(x, "qcx", value.asInstanceOf[js.Any])
     

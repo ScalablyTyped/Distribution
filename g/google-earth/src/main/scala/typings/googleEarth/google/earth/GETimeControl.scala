@@ -48,7 +48,8 @@ object GETimeControl {
     __obj.asInstanceOf[GETimeControl]
   }
   
-  extension [Self <: GETimeControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GETimeControl] (val x: Self) extends AnyVal {
     
     inline def setGetAvailableImageDates(value: () => KmlObjectList[KmlTimeStamp]): Self = StObject.set(x, "getAvailableImageDates", js.Any.fromFunction0(value))
     

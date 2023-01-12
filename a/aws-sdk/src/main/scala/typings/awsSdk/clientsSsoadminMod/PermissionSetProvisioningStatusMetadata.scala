@@ -28,7 +28,8 @@ object PermissionSetProvisioningStatusMetadata {
     __obj.asInstanceOf[PermissionSetProvisioningStatusMetadata]
   }
   
-  extension [Self <: PermissionSetProvisioningStatusMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionSetProvisioningStatusMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     

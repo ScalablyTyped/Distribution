@@ -35,7 +35,8 @@ object GoogleCloudMlV1RouteMap {
     __obj.asInstanceOf[GoogleCloudMlV1RouteMap]
   }
   
-  extension [Self <: GoogleCloudMlV1RouteMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1RouteMap] (val x: Self) extends AnyVal {
     
     inline def setHealth(value: String): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     

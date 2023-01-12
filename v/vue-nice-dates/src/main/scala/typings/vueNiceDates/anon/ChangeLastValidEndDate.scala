@@ -39,7 +39,8 @@ object ChangeLastValidEndDate {
     __obj.asInstanceOf[ChangeLastValidEndDate]
   }
   
-  extension [Self <: ChangeLastValidEndDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeLastValidEndDate] (val x: Self) extends AnyVal {
     
     inline def setChangeLastValidEndDate(value: String => Unit): Self = StObject.set(x, "changeLastValidEndDate", js.Any.fromFunction1(value))
     

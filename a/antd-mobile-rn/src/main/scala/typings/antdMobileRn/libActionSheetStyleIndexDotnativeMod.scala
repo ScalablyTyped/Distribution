@@ -664,7 +664,8 @@ object libActionSheetStyleIndexDotnativeMod {
       __obj.asInstanceOf[ActionSheetStyle]
     }
     
-    extension [Self <: ActionSheetStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSheetStyle] (val x: Self) extends AnyVal {
       
       inline def setBtn(value: ViewStyle): Self = StObject.set(x, "btn", value.asInstanceOf[js.Any])
       

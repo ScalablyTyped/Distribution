@@ -15,7 +15,8 @@ object Allvoices {
     __obj.asInstanceOf[Allvoices]
   }
   
-  extension [Self <: Allvoices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allvoices] (val x: Self) extends AnyVal {
     
     inline def setAll_voices(value: Boolean): Self = StObject.set(x, "all_voices", value.asInstanceOf[js.Any])
     

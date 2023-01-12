@@ -35,7 +35,8 @@ object PlotStreamgraphOnPointOptions {
     __obj.asInstanceOf[PlotStreamgraphOnPointOptions]
   }
   
-  extension [Self <: PlotStreamgraphOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotStreamgraphOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotStreamgraphOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

@@ -106,7 +106,8 @@ object Status {
     __obj.asInstanceOf[Status]
   }
   
-  extension [Self <: Status](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: js.Object): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

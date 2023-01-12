@@ -17,7 +17,8 @@ object TransitionParameters {
     __obj.asInstanceOf[TransitionParameters]
   }
   
-  extension [Self <: TransitionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionParameters] (val x: Self) extends AnyVal {
     
     inline def setNow(value: TimePoint): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
     

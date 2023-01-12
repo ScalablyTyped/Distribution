@@ -17,7 +17,8 @@ object TextAreaLabel {
     __obj.asInstanceOf[TextAreaLabel]
   }
   
-  extension [Self <: TextAreaLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextAreaLabel] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String | js.Function): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

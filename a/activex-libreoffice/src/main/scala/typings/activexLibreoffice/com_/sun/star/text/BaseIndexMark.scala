@@ -42,7 +42,8 @@ object BaseIndexMark {
     __obj.asInstanceOf[BaseIndexMark]
   }
   
-  extension [Self <: BaseIndexMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseIndexMark] (val x: Self) extends AnyVal {
     
     inline def setAlternativeText(value: String): Self = StObject.set(x, "AlternativeText", value.asInstanceOf[js.Any])
   }

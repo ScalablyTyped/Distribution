@@ -18,7 +18,8 @@ object GetEffectiveRecommendationPreferencesRequest {
     __obj.asInstanceOf[GetEffectiveRecommendationPreferencesRequest]
   }
   
-  extension [Self <: GetEffectiveRecommendationPreferencesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEffectiveRecommendationPreferencesRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
   }

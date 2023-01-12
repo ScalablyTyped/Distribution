@@ -24,7 +24,8 @@ object DynatreeNamespace {
     __obj.asInstanceOf[DynatreeNamespace]
   }
   
-  extension [Self <: DynatreeNamespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynatreeNamespace] (val x: Self) extends AnyVal {
     
     inline def setGetNode(value: HTMLElement => DynaTreeNode): Self = StObject.set(x, "getNode", js.Any.fromFunction1(value))
     

@@ -24,7 +24,8 @@ object HighlightConfig {
     __obj.asInstanceOf[HighlightConfig]
   }
   
-  extension [Self <: HighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setIds(value: js.Array[Double]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

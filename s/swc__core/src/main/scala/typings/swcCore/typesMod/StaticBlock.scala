@@ -23,7 +23,8 @@ object StaticBlock {
     __obj.asInstanceOf[StaticBlock]
   }
   
-  extension [Self <: StaticBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticBlock] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BlockStatement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

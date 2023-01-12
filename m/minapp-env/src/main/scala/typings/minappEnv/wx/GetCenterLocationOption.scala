@@ -22,7 +22,8 @@ object GetCenterLocationOption {
     __obj.asInstanceOf[GetCenterLocationOption]
   }
   
-  extension [Self <: GetCenterLocationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCenterLocationOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

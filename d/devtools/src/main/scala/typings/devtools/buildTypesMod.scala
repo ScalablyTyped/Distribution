@@ -35,7 +35,8 @@ object buildTypesMod {
       __obj.asInstanceOf[ActiveListener]
     }
     
-    extension [Self <: ActiveListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveListener] (val x: Self) extends AnyVal {
       
       inline def setBoundHandler(value: /* repeated */ Any => Any): Self = StObject.set(x, "boundHandler", js.Any.fromFunction1(value))
       
@@ -56,7 +57,8 @@ object buildTypesMod {
       __obj.asInstanceOf[AttachOptions]
     }
     
-    extension [Self <: AttachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachOptions] (val x: Self) extends AnyVal {
       
       inline def setCapabilities(value: GoogchromeOptions | MsedgeOptions): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     }
@@ -98,7 +100,8 @@ object buildTypesMod {
       __obj.asInstanceOf[DevToolsOptions]
     }
     
-    extension [Self <: DevToolsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DevToolsOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomPort(value: Double): Self = StObject.set(x, "customPort", value.asInstanceOf[js.Any])
       
@@ -130,7 +133,8 @@ object buildTypesMod {
       __obj.asInstanceOf[WDIODevtoolsOptions]
     }
     
-    extension [Self <: WDIODevtoolsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WDIODevtoolsOptions] (val x: Self) extends AnyVal {
       
       inline def setWdioColondevtoolsOptions(value: DevToolsOptions): Self = StObject.set(x, "wdio:devtoolsOptions", value.asInstanceOf[js.Any])
       

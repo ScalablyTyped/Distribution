@@ -77,7 +77,8 @@ object ChampionSpellDto {
     __obj.asInstanceOf[ChampionSpellDto]
   }
   
-  extension [Self <: ChampionSpellDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChampionSpellDto] (val x: Self) extends AnyVal {
     
     inline def setAltimages(value: js.Array[ImageDto]): Self = StObject.set(x, "altimages", value.asInstanceOf[js.Any])
     

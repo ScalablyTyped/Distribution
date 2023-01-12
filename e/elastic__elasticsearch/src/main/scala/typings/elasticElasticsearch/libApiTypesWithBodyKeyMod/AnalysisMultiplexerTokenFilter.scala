@@ -24,7 +24,8 @@ object AnalysisMultiplexerTokenFilter {
     __obj.asInstanceOf[AnalysisMultiplexerTokenFilter]
   }
   
-  extension [Self <: AnalysisMultiplexerTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisMultiplexerTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[String]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object ComputedCell {
     __obj.asInstanceOf[ComputedCell[Datum]]
   }
   
-  extension [Self <: ComputedCell[?], Datum /* <: HeatMapDatum */](x: Self & ComputedCell[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedCell[?], Datum /* <: HeatMapDatum */] (val x: Self & ComputedCell[Datum]) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

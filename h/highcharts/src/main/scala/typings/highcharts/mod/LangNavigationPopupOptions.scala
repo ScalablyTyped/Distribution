@@ -212,7 +212,8 @@ object LangNavigationPopupOptions {
     __obj.asInstanceOf[LangNavigationPopupOptions]
   }
   
-  extension [Self <: LangNavigationPopupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangNavigationPopupOptions] (val x: Self) extends AnyVal {
     
     inline def setAddButton(value: String): Self = StObject.set(x, "addButton", value.asInstanceOf[js.Any])
     

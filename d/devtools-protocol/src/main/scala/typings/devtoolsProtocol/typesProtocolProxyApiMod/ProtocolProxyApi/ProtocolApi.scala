@@ -152,7 +152,8 @@ object ProtocolApi {
     __obj.asInstanceOf[ProtocolApi]
   }
   
-  extension [Self <: ProtocolApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtocolApi] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: AccessibilityApi): Self = StObject.set(x, "Accessibility", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object LaunchedInstance {
     __obj.asInstanceOf[LaunchedInstance]
   }
   
-  extension [Self <: LaunchedInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchedInstance] (val x: Self) extends AnyVal {
     
     inline def setEc2InstanceID(value: EC2InstanceID): Self = StObject.set(x, "ec2InstanceID", value.asInstanceOf[js.Any])
     

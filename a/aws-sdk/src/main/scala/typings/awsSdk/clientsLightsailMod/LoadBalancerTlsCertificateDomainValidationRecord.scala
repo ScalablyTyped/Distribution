@@ -43,7 +43,8 @@ object LoadBalancerTlsCertificateDomainValidationRecord {
     __obj.asInstanceOf[LoadBalancerTlsCertificateDomainValidationRecord]
   }
   
-  extension [Self <: LoadBalancerTlsCertificateDomainValidationRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerTlsCertificateDomainValidationRecord] (val x: Self) extends AnyVal {
     
     inline def setDnsRecordCreationState(value: LoadBalancerTlsCertificateDnsRecordCreationState): Self = StObject.set(x, "dnsRecordCreationState", value.asInstanceOf[js.Any])
     

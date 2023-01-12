@@ -80,7 +80,8 @@ object distFieldMod {
       __obj.asInstanceOf[FieldConfig[V]]
     }
     
-    extension [Self <: FieldConfig[?], V](x: Self & FieldConfig[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldConfig[?], V] (val x: Self & FieldConfig[V]) extends AnyVal {
       
       inline def setAs(value: (ComponentType[FieldInputProps[V] | js.Object]) | String | ForwardRefExoticComponent[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object distFieldMod {
       __obj.asInstanceOf[FieldProps[V, FormValues]]
     }
     
-    extension [Self <: FieldProps[?, ?], V, FormValues](x: Self & (FieldProps[V, FormValues])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldProps[?, ?], V, FormValues] (val x: Self & (FieldProps[V, FormValues])) extends AnyVal {
       
       inline def setField(value: FieldInputProps[V]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       

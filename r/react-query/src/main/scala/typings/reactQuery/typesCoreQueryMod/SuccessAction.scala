@@ -23,7 +23,8 @@ object SuccessAction {
     __obj.asInstanceOf[SuccessAction[TData]]
   }
   
-  extension [Self <: SuccessAction[?], TData](x: Self & SuccessAction[TData]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuccessAction[?], TData] (val x: Self & SuccessAction[TData]) extends AnyVal {
     
     inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

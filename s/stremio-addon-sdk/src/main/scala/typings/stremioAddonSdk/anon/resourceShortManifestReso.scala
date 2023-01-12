@@ -25,7 +25,8 @@ object resourceShortManifestReso {
     __obj.asInstanceOf[resourceShortManifestReso]
   }
   
-  extension [Self <: resourceShortManifestReso](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: resourceShortManifestReso] (val x: Self) extends AnyVal {
     
     inline def setExtra(value: Genre): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     

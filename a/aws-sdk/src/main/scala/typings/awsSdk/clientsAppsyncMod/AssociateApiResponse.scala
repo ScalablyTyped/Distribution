@@ -18,7 +18,8 @@ object AssociateApiResponse {
     __obj.asInstanceOf[AssociateApiResponse]
   }
   
-  extension [Self <: AssociateApiResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateApiResponse] (val x: Self) extends AnyVal {
     
     inline def setApiAssociation(value: ApiAssociation): Self = StObject.set(x, "apiAssociation", value.asInstanceOf[js.Any])
     

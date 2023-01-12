@@ -24,7 +24,8 @@ object RowIndex {
     __obj.asInstanceOf[RowIndex[ComponentsType, Entity]]
   }
   
-  extension [Self <: RowIndex[?, ?], ComponentsType, Entity](x: Self & (RowIndex[ComponentsType, Entity])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowIndex[?, ?], ComponentsType, Entity] (val x: Self & (RowIndex[ComponentsType, Entity])) extends AnyVal {
     
     inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

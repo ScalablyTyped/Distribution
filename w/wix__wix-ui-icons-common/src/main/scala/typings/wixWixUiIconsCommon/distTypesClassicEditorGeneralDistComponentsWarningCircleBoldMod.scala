@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsWarningCircleBoldMod extends S
       __obj.asInstanceOf[WarningCircleBoldProps]
     }
     
-    extension [Self <: WarningCircleBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WarningCircleBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

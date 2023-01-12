@@ -17,7 +17,8 @@ object SetCustom {
     __obj.asInstanceOf[SetCustom[Custom]]
   }
   
-  extension [Self <: SetCustom[?], Custom /* <: ObjectCustom */](x: Self & SetCustom[Custom]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetCustom[?], Custom /* <: ObjectCustom */] (val x: Self & SetCustom[Custom]) extends AnyVal {
     
     inline def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

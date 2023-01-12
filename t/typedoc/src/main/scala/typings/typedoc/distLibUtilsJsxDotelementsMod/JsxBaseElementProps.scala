@@ -19,7 +19,8 @@ object JsxBaseElementProps {
     __obj.asInstanceOf[JsxBaseElementProps]
   }
   
-  extension [Self <: JsxBaseElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxBaseElementProps] (val x: Self) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Regex {
     __obj.asInstanceOf[Regex]
   }
   
-  extension [Self <: Regex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Regex] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: HEAD): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

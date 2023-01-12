@@ -20,7 +20,8 @@ object BatchNotificationOperation {
     __obj.asInstanceOf[BatchNotificationOperation]
   }
   
-  extension [Self <: BatchNotificationOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchNotificationOperation] (val x: Self) extends AnyVal {
     
     inline def setNotificationOperation(value: NotificationOperation): Self = StObject.set(x, "notificationOperation", value.asInstanceOf[js.Any])
     

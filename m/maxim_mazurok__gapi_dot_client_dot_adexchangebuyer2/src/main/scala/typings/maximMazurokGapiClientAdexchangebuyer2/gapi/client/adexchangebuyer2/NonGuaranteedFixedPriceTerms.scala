@@ -16,7 +16,8 @@ object NonGuaranteedFixedPriceTerms {
     __obj.asInstanceOf[NonGuaranteedFixedPriceTerms]
   }
   
-  extension [Self <: NonGuaranteedFixedPriceTerms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonGuaranteedFixedPriceTerms] (val x: Self) extends AnyVal {
     
     inline def setFixedPrices(value: js.Array[PricePerBuyer]): Self = StObject.set(x, "fixedPrices", value.asInstanceOf[js.Any])
     

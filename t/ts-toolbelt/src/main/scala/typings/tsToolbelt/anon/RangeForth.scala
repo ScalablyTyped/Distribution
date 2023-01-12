@@ -28,7 +28,8 @@ object RangeForth {
     __obj.asInstanceOf[RangeForth[To, From]]
   }
   
-  extension [Self <: RangeForth[?, ?], To /* <: Iteration */, From /* <: Iteration */](x: Self & (RangeForth[To, From])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeForth[?, ?], To /* <: Iteration */, From /* <: Iteration */] (val x: Self & (RangeForth[To, From])) extends AnyVal {
     
     inline def `set-Greaterthansign`(value: typings.tsToolbelt.outNumberRangeMod.RangeForth[To, Prev[From], js.Array[Any]]): Self = StObject.set(x, "->", value.asInstanceOf[js.Any])
     

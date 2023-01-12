@@ -15,7 +15,8 @@ object EnumValuesDeliveryTimelineView {
     __obj.asInstanceOf[EnumValuesDeliveryTimelineView]
   }
   
-  extension [Self <: EnumValuesDeliveryTimelineView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesDeliveryTimelineView] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: DeliveryTimelineView): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

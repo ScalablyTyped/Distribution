@@ -17,7 +17,8 @@ object ArrayType {
     __obj.asInstanceOf[ArrayType]
   }
   
-  extension [Self <: ArrayType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayType] (val x: Self) extends AnyVal {
     
     inline def setBase(value: TypeModel): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
   }

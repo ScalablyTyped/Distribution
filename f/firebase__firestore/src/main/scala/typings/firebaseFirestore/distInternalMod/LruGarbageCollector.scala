@@ -45,7 +45,8 @@ object LruGarbageCollector {
     __obj.asInstanceOf[LruGarbageCollector]
   }
   
-  extension [Self <: LruGarbageCollector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LruGarbageCollector] (val x: Self) extends AnyVal {
     
     inline def setCalculateTargetCount(value: (PersistenceTransaction, Double) => PersistencePromise[Double]): Self = StObject.set(x, "calculateTargetCount", js.Any.fromFunction2(value))
     

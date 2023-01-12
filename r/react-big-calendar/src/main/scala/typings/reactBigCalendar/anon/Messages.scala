@@ -15,7 +15,8 @@ object Messages {
     __obj.asInstanceOf[Messages]
   }
   
-  extension [Self <: Messages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: typings.reactBigCalendar.mod.Messages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
   }

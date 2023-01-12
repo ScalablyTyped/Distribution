@@ -266,7 +266,8 @@ object mod {
       __obj.asInstanceOf[CommonOptions]
     }
     
-    extension [Self <: CommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalManifestEntries(value: js.Array[Integrity | String]): Self = StObject.set(x, "additionalManifestEntries", value.asInstanceOf[js.Any])
       
@@ -542,7 +543,8 @@ object mod {
       __obj.asInstanceOf[GenerateSWOptions]
     }
     
-    extension [Self <: GenerateSWOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateSWOptions] (val x: Self) extends AnyVal {
       
       inline def setBabelPresetEnvTargets(value: js.Array[String]): Self = StObject.set(x, "babelPresetEnvTargets", value.asInstanceOf[js.Any])
       
@@ -659,7 +661,8 @@ object mod {
       __obj.asInstanceOf[InjectManifestOptions]
     }
     
-    extension [Self <: InjectManifestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectManifestOptions] (val x: Self) extends AnyVal {
       
       inline def setCompileSrc(value: Boolean): Self = StObject.set(x, "compileSrc", value.asInstanceOf[js.Any])
       
@@ -688,7 +691,8 @@ object mod {
       __obj.asInstanceOf[ManifestEntry]
     }
     
-    extension [Self <: ManifestEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManifestEntry] (val x: Self) extends AnyVal {
       
       inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
@@ -750,7 +754,8 @@ object mod {
       __obj.asInstanceOf[RuntimeCacheOptions]
     }
     
-    extension [Self <: RuntimeCacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuntimeCacheOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundSync(value: Name): Self = StObject.set(x, "backgroundSync", value.asInstanceOf[js.Any])
       
@@ -817,7 +822,8 @@ object mod {
       __obj.asInstanceOf[RuntimeCacheRule]
     }
     
-    extension [Self <: RuntimeCacheRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuntimeCacheRule] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: CacheStrategy): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object HttpRequestParametersValidation {
     __obj.asInstanceOf[HttpRequestParametersValidation]
   }
   
-  extension [Self <: HttpRequestParametersValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpRequestParametersValidation] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: StringDictionary[Boolean]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

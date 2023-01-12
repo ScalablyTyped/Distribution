@@ -18,7 +18,8 @@ object StopContinuousExportRequest {
     __obj.asInstanceOf[StopContinuousExportRequest]
   }
   
-  extension [Self <: StopContinuousExportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopContinuousExportRequest] (val x: Self) extends AnyVal {
     
     inline def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
   }

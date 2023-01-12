@@ -33,7 +33,8 @@ object ColorGradientMessages {
     __obj.asInstanceOf[ColorGradientMessages]
   }
   
-  extension [Self <: ColorGradientMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorGradientMessages] (val x: Self) extends AnyVal {
     
     inline def setBlue(value: String): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     

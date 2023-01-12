@@ -85,7 +85,8 @@ object SmartSectionDisplaySettings {
     __obj.asInstanceOf[SmartSectionDisplaySettings]
   }
   
-  extension [Self <: SmartSectionDisplaySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartSectionDisplaySettings] (val x: Self) extends AnyVal {
     
     inline def setCellStyle(value: String): Self = StObject.set(x, "cellStyle", value.asInstanceOf[js.Any])
     

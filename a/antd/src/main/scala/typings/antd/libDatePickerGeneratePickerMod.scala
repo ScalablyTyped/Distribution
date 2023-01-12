@@ -158,7 +158,8 @@ object libDatePickerGeneratePickerMod {
       __obj.asInstanceOf[AdditionalPickerLocaleLangProps]
     }
     
-    extension [Self <: AdditionalPickerLocaleLangProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalPickerLocaleLangProps] (val x: Self) extends AnyVal {
       
       inline def setMonthPlaceholder(value: String): Self = StObject.set(x, "monthPlaceholder", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object libDatePickerGeneratePickerMod {
       __obj.asInstanceOf[AdditionalPickerLocaleProps]
     }
     
-    extension [Self <: AdditionalPickerLocaleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalPickerLocaleProps] (val x: Self) extends AnyVal {
       
       inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
@@ -481,7 +483,8 @@ object libDatePickerGeneratePickerMod {
       __obj.asInstanceOf[PickerBaseProps[DateType]]
     }
     
-    extension [Self <: PickerBaseProps[?], DateType](x: Self & PickerBaseProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerBaseProps[?], DateType] (val x: Self & PickerBaseProps[DateType]) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -1163,7 +1166,8 @@ object libDatePickerGeneratePickerMod {
       __obj.asInstanceOf[PickerDateProps[DateType]]
     }
     
-    extension [Self <: PickerDateProps[?], DateType](x: Self & PickerDateProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerDateProps[?], DateType] (val x: Self & PickerDateProps[DateType]) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -1636,7 +1640,8 @@ object libDatePickerGeneratePickerMod {
       __obj.asInstanceOf[PickerLocale]
     }
     
-    extension [Self <: PickerLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerLocale] (val x: Self) extends AnyVal {
       
       inline def setLang(value: Locale & AdditionalPickerLocaleLangProps): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
@@ -1930,7 +1935,8 @@ object libDatePickerGeneratePickerMod {
       __obj.asInstanceOf[PickerTimeProps[DateType]]
     }
     
-    extension [Self <: PickerTimeProps[?], DateType](x: Self & PickerTimeProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerTimeProps[?], DateType] (val x: Self & PickerTimeProps[DateType]) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -2692,7 +2698,8 @@ object libDatePickerGeneratePickerMod {
       __obj.asInstanceOf[RangePickerBaseProps[DateType]]
     }
     
-    extension [Self <: RangePickerBaseProps[?], DateType](x: Self & RangePickerBaseProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangePickerBaseProps[?], DateType] (val x: Self & RangePickerBaseProps[DateType]) extends AnyVal {
       
       inline def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
       
@@ -3431,7 +3438,8 @@ object libDatePickerGeneratePickerMod {
       __obj.asInstanceOf[RangePickerDateProps[DateType]]
     }
     
-    extension [Self <: RangePickerDateProps[?], DateType](x: Self & RangePickerDateProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangePickerDateProps[?], DateType] (val x: Self & RangePickerDateProps[DateType]) extends AnyVal {
       
       inline def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
       
@@ -4228,7 +4236,8 @@ object libDatePickerGeneratePickerMod {
       __obj.asInstanceOf[RangePickerTimeProps[DateType]]
     }
     
-    extension [Self <: RangePickerTimeProps[?], DateType](x: Self & RangePickerTimeProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangePickerTimeProps[?], DateType] (val x: Self & RangePickerTimeProps[DateType]) extends AnyVal {
       
       inline def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
       

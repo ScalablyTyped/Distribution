@@ -456,7 +456,8 @@ object OmitHTMLAttributesHTMLSpa {
     __obj.asInstanceOf[OmitHTMLAttributesHTMLSpa]
   }
   
-  extension [Self <: OmitHTMLAttributesHTMLSpa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitHTMLAttributesHTMLSpa] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

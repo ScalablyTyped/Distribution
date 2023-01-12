@@ -173,7 +173,8 @@ object Condition {
     __obj.asInstanceOf[Condition]
   }
   
-  extension [Self <: Condition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
     
     inline def setAbatementBoolean(value: Boolean): Self = StObject.set(x, "abatementBoolean", value.asInstanceOf[js.Any])
     

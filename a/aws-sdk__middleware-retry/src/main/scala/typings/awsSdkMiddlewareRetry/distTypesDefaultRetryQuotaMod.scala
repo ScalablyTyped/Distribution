@@ -40,7 +40,8 @@ object distTypesDefaultRetryQuotaMod {
       __obj.asInstanceOf[DefaultRetryQuotaOptions]
     }
     
-    extension [Self <: DefaultRetryQuotaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultRetryQuotaOptions] (val x: Self) extends AnyVal {
       
       inline def setNoRetryIncrement(value: Double): Self = StObject.set(x, "noRetryIncrement", value.asInstanceOf[js.Any])
       

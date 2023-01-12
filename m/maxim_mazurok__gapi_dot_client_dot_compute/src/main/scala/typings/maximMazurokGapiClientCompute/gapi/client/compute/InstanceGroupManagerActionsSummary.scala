@@ -59,7 +59,8 @@ object InstanceGroupManagerActionsSummary {
     __obj.asInstanceOf[InstanceGroupManagerActionsSummary]
   }
   
-  extension [Self <: InstanceGroupManagerActionsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupManagerActionsSummary] (val x: Self) extends AnyVal {
     
     inline def setAbandoning(value: Double): Self = StObject.set(x, "abandoning", value.asInstanceOf[js.Any])
     

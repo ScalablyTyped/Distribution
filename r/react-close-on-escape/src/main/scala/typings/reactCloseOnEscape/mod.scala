@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[CloseOnEscapeProps]
     }
     
-    extension [Self <: CloseOnEscapeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseOnEscapeProps] (val x: Self) extends AnyVal {
       
       inline def setOnEscape(value: () => Unit): Self = StObject.set(x, "onEscape", js.Any.fromFunction0(value))
     }

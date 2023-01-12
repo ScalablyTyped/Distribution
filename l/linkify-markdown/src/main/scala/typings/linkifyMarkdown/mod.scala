@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[LinkifyOptions]
     }
     
-    extension [Self <: LinkifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkifyOptions] (val x: Self) extends AnyVal {
       
       inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       

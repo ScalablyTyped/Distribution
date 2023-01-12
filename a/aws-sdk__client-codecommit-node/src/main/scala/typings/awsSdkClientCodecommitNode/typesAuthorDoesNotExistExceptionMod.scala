@@ -21,7 +21,8 @@ object typesAuthorDoesNotExistExceptionMod {
       __obj.asInstanceOf[AuthorDoesNotExistException]
     }
     
-    extension [Self <: AuthorDoesNotExistException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorDoesNotExistException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.AuthorDoesNotExistException

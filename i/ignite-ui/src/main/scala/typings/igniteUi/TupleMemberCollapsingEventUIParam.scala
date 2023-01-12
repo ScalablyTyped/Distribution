@@ -38,7 +38,8 @@ object TupleMemberCollapsingEventUIParam {
     __obj.asInstanceOf[TupleMemberCollapsingEventUIParam]
   }
   
-  extension [Self <: TupleMemberCollapsingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TupleMemberCollapsingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setAxisName(value: String): Self = StObject.set(x, "axisName", value.asInstanceOf[js.Any])
     

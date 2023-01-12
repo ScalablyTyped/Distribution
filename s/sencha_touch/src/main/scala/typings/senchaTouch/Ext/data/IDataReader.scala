@@ -154,7 +154,8 @@ object IDataReader {
     __obj.asInstanceOf[IDataReader]
   }
   
-  extension [Self <: IDataReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataReader] (val x: Self) extends AnyVal {
     
     inline def setClientIdProperty(value: String): Self = StObject.set(x, "clientIdProperty", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object EvidenceReportRelatesTo {
     __obj.asInstanceOf[EvidenceReportRelatesTo]
   }
   
-  extension [Self <: EvidenceReportRelatesTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvidenceReportRelatesTo] (val x: Self) extends AnyVal {
     
     inline def setCode(
       value: replaces | amends | appends | transforms | replacedWith | amendedWith | appendedWith | transformedWith

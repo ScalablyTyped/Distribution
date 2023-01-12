@@ -28,7 +28,8 @@ object GetSnapshotRequest {
     __obj.asInstanceOf[GetSnapshotRequest]
   }
   
-  extension [Self <: GetSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setOwnerAccount(value: String): Self = StObject.set(x, "ownerAccount", value.asInstanceOf[js.Any])
     

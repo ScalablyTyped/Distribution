@@ -32,7 +32,8 @@ object Added {
     __obj.asInstanceOf[Added[T, R]]
   }
   
-  extension [Self <: Added[?, ?], T, R](x: Self & (Added[T, R])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Added[?, ?], T, R] (val x: Self & (Added[T, R])) extends AnyVal {
     
     inline def setAdded(value: SyncHook[js.Array[T], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

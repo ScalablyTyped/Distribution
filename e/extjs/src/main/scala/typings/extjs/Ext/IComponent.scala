@@ -406,7 +406,8 @@ object IComponent {
     __obj.asInstanceOf[IComponent]
   }
   
-  extension [Self <: IComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComponent] (val x: Self) extends AnyVal {
     
     inline def setAfterComponentLayout(value: () => Unit): Self = StObject.set(x, "afterComponentLayout", js.Any.fromFunction0(value))
     

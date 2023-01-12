@@ -50,7 +50,8 @@ object Collectsfullname {
     __obj.asInstanceOf[Collectsfullname]
   }
   
-  extension [Self <: Collectsfullname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collectsfullname] (val x: Self) extends AnyVal {
     
     inline def setCollects_billing_address(value: Boolean): Self = StObject.set(x, "collects_billing_address", value.asInstanceOf[js.Any])
     

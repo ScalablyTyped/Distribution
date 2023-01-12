@@ -69,7 +69,8 @@ object DirectoryAudit {
     __obj.asInstanceOf[DirectoryAudit]
   }
   
-  extension [Self <: DirectoryAudit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryAudit] (val x: Self) extends AnyVal {
     
     inline def setActivityDateTime(value: String): Self = StObject.set(x, "activityDateTime", value.asInstanceOf[js.Any])
     

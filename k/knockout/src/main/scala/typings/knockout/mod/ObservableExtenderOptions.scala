@@ -28,7 +28,8 @@ object ObservableExtenderOptions {
     __obj.asInstanceOf[ObservableExtenderOptions[T]]
   }
   
-  extension [Self <: ObservableExtenderOptions[?], T](x: Self & ObservableExtenderOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObservableExtenderOptions[?], T] (val x: Self & ObservableExtenderOptions[T]) extends AnyVal {
     
     inline def setDeferred(value: `true`): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object MKRippleProperties {
     __obj.asInstanceOf[MKRippleProperties]
   }
   
-  extension [Self <: MKRippleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MKRippleProperties] (val x: Self) extends AnyVal {
     
     inline def setMaskBorderRadius(value: Double): Self = StObject.set(x, "maskBorderRadius", value.asInstanceOf[js.Any])
     

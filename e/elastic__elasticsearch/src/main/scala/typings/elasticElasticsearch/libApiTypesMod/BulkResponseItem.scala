@@ -36,7 +36,8 @@ object BulkResponseItem {
     __obj.asInstanceOf[BulkResponseItem]
   }
   
-  extension [Self <: BulkResponseItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkResponseItem] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorCause): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

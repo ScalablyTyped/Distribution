@@ -20,7 +20,8 @@ object DevServerConfig {
     __obj.asInstanceOf[DevServerConfig]
   }
   
-  extension [Self <: DevServerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevServerConfig] (val x: Self) extends AnyVal {
     
     inline def setCypressConfig(value: PluginConfigOptions): Self = StObject.set(x, "cypressConfig", value.asInstanceOf[js.Any])
     

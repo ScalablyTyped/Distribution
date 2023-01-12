@@ -23,7 +23,8 @@ object DrawerHeaderAccountProps {
     __obj.asInstanceOf[DrawerHeaderAccountProps]
   }
   
-  extension [Self <: DrawerHeaderAccountProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawerHeaderAccountProps] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: js.Array[typings.reactNativeMaterialUi.anon.Avatar]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     

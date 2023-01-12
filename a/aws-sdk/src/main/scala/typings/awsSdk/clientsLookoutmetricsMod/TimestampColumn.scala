@@ -23,7 +23,8 @@ object TimestampColumn {
     __obj.asInstanceOf[TimestampColumn]
   }
   
-  extension [Self <: TimestampColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestampColumn] (val x: Self) extends AnyVal {
     
     inline def setColumnFormat(value: DateTimeFormat): Self = StObject.set(x, "ColumnFormat", value.asInstanceOf[js.Any])
     

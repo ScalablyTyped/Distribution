@@ -17,7 +17,8 @@ object ExtraButtonProps {
     __obj.asInstanceOf[ExtraButtonProps]
   }
   
-  extension [Self <: ExtraButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtraButtonProps] (val x: Self) extends AnyVal {
     
     inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
     

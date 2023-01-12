@@ -110,7 +110,8 @@ object PickImplonOnScreenPartial {
     __obj.asInstanceOf[PickImplonOnScreenPartial]
   }
   
-  extension [Self <: PickImplonOnScreenPartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplonOnScreenPartial] (val x: Self) extends AnyVal {
     
     inline def setCheckOnRefresh(value: Boolean): Self = StObject.set(x, "checkOnRefresh", value.asInstanceOf[js.Any])
     

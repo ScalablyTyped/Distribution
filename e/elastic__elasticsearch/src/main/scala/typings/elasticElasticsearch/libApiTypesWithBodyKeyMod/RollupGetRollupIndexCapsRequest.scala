@@ -17,7 +17,8 @@ object RollupGetRollupIndexCapsRequest {
     __obj.asInstanceOf[RollupGetRollupIndexCapsRequest]
   }
   
-  extension [Self <: RollupGetRollupIndexCapsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupGetRollupIndexCapsRequest] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Ids): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

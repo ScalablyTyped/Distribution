@@ -46,7 +46,8 @@ object IdentitytoolkitRelyingpartySetProjectConfigRequest {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySetProjectConfigRequest]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartySetProjectConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartySetProjectConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowPasswordUser(value: Boolean): Self = StObject.set(x, "allowPasswordUser", value.asInstanceOf[js.Any])
     

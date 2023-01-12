@@ -22,7 +22,8 @@ object CrossTenantAccessPolicyInboundTrust {
     __obj.asInstanceOf[CrossTenantAccessPolicyInboundTrust]
   }
   
-  extension [Self <: CrossTenantAccessPolicyInboundTrust](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossTenantAccessPolicyInboundTrust] (val x: Self) extends AnyVal {
     
     inline def setIsCompliantDeviceAccepted(value: NullableOption[Boolean]): Self = StObject.set(x, "isCompliantDeviceAccepted", value.asInstanceOf[js.Any])
     

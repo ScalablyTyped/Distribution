@@ -21,7 +21,8 @@ object KnockstrapModalDefaultsFooterTemplate {
     __obj.asInstanceOf[KnockstrapModalDefaultsFooterTemplate]
   }
   
-  extension [Self <: KnockstrapModalDefaultsFooterTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockstrapModalDefaultsFooterTemplate] (val x: Self) extends AnyVal {
     
     inline def setData(value: KnockstrapModalDefaultsFooterData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

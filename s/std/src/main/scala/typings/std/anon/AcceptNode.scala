@@ -17,7 +17,8 @@ object AcceptNode {
     __obj.asInstanceOf[AcceptNode]
   }
   
-  extension [Self <: AcceptNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptNode] (val x: Self) extends AnyVal {
     
     inline def setAcceptNode(value: Node => Double): Self = StObject.set(x, "acceptNode", js.Any.fromFunction1(value))
   }

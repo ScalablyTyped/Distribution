@@ -17,7 +17,8 @@ object LevelTipDto {
     __obj.asInstanceOf[LevelTipDto]
   }
   
-  extension [Self <: LevelTipDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelTipDto] (val x: Self) extends AnyVal {
     
     inline def setEffect(value: js.Array[String]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     

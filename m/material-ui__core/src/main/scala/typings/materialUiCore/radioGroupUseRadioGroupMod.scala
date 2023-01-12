@@ -32,7 +32,8 @@ object radioGroupUseRadioGroupMod {
       __obj.asInstanceOf[RadioGroupState]
     }
     
-    extension [Self <: RadioGroupState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioGroupState] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

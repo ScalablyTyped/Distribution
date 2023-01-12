@@ -15,7 +15,8 @@ object TypeofOutboundTransferRet {
     __obj.asInstanceOf[TypeofOutboundTransferRet]
   }
   
-  extension [Self <: TypeofOutboundTransferRet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofOutboundTransferRet] (val x: Self) extends AnyVal {
     
     inline def setReturnedDetails(value: Any): Self = StObject.set(x, "ReturnedDetails", value.asInstanceOf[js.Any])
   }

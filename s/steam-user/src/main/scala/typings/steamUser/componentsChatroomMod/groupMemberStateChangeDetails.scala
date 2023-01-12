@@ -20,7 +20,8 @@ object groupMemberStateChangeDetails {
     __obj.asInstanceOf[groupMemberStateChangeDetails]
   }
   
-  extension [Self <: groupMemberStateChangeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: groupMemberStateChangeDetails] (val x: Self) extends AnyVal {
     
     inline def setChange(value: EChatRoomMemberStateChange): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     

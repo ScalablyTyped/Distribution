@@ -15,7 +15,8 @@ object DEGREES {
     __obj.asInstanceOf[DEGREES]
   }
   
-  extension [Self <: DEGREES](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DEGREES] (val x: Self) extends AnyVal {
     
     inline def setDEGREES(value: Method): Self = StObject.set(x, "DEGREES", value.asInstanceOf[js.Any])
   }

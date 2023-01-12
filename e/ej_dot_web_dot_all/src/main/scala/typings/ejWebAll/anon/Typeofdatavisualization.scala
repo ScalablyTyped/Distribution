@@ -157,7 +157,8 @@ object Typeofdatavisualization {
     __obj.asInstanceOf[Typeofdatavisualization]
   }
   
-  extension [Self <: Typeofdatavisualization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofdatavisualization] (val x: Self) extends AnyVal {
     
     inline def setBarcode(value: Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], Barcode]): Self = StObject.set(x, "Barcode", value.asInstanceOf[js.Any])
     

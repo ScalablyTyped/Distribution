@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[PalxPalette]
     }
     
-    extension [Self <: PalxPalette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PalxPalette] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

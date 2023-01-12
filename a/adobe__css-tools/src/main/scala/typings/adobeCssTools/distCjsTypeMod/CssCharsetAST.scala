@@ -23,7 +23,8 @@ object CssCharsetAST {
     __obj.asInstanceOf[CssCharsetAST]
   }
   
-  extension [Self <: CssCharsetAST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssCharsetAST] (val x: Self) extends AnyVal {
     
     inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     

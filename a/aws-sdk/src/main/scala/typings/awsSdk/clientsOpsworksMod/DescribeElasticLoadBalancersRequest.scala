@@ -23,7 +23,8 @@ object DescribeElasticLoadBalancersRequest {
     __obj.asInstanceOf[DescribeElasticLoadBalancersRequest]
   }
   
-  extension [Self <: DescribeElasticLoadBalancersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeElasticLoadBalancersRequest] (val x: Self) extends AnyVal {
     
     inline def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object ItemAcl {
     __obj.asInstanceOf[ItemAcl]
   }
   
-  extension [Self <: ItemAcl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemAcl] (val x: Self) extends AnyVal {
     
     inline def setAclInheritanceType(value: String): Self = StObject.set(x, "aclInheritanceType", value.asInstanceOf[js.Any])
     

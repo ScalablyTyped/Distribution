@@ -37,7 +37,8 @@ object BatchDeleteRumMetricDefinitionsRequest {
     __obj.asInstanceOf[BatchDeleteRumMetricDefinitionsRequest]
   }
   
-  extension [Self <: BatchDeleteRumMetricDefinitionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteRumMetricDefinitionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAppMonitorName(value: AppMonitorName): Self = StObject.set(x, "AppMonitorName", value.asInstanceOf[js.Any])
     

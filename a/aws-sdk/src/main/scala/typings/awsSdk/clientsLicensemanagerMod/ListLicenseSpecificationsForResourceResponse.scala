@@ -23,7 +23,8 @@ object ListLicenseSpecificationsForResourceResponse {
     __obj.asInstanceOf[ListLicenseSpecificationsForResourceResponse]
   }
   
-  extension [Self <: ListLicenseSpecificationsForResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLicenseSpecificationsForResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setLicenseSpecifications(value: LicenseSpecifications): Self = StObject.set(x, "LicenseSpecifications", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ListDistributionsByRealtimeLogConfigResult {
     __obj.asInstanceOf[ListDistributionsByRealtimeLogConfigResult]
   }
   
-  extension [Self <: ListDistributionsByRealtimeLogConfigResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDistributionsByRealtimeLogConfigResult] (val x: Self) extends AnyVal {
     
     inline def setDistributionList(value: DistributionList): Self = StObject.set(x, "DistributionList", value.asInstanceOf[js.Any])
     

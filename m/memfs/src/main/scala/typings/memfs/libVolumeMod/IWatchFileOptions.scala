@@ -17,7 +17,8 @@ object IWatchFileOptions {
     __obj.asInstanceOf[IWatchFileOptions]
   }
   
-  extension [Self <: IWatchFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWatchFileOptions] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

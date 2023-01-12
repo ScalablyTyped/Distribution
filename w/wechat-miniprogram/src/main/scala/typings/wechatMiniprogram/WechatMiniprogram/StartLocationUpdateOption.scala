@@ -22,7 +22,8 @@ object StartLocationUpdateOption {
     __obj.asInstanceOf[StartLocationUpdateOption]
   }
   
-  extension [Self <: StartLocationUpdateOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartLocationUpdateOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

@@ -34,7 +34,8 @@ object IonMenuShareWeibo {
     __obj.asInstanceOf[IonMenuShareWeibo]
   }
   
-  extension [Self <: IonMenuShareWeibo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IonMenuShareWeibo] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

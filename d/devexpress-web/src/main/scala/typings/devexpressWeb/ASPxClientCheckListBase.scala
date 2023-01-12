@@ -71,7 +71,8 @@ object ASPxClientCheckListBase {
     __obj.asInstanceOf[ASPxClientCheckListBase]
   }
   
-  extension [Self <: ASPxClientCheckListBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCheckListBase] (val x: Self) extends AnyVal {
     
     inline def setGetItem(value: Double => ASPxClientListEditItem): Self = StObject.set(x, "GetItem", js.Any.fromFunction1(value))
     

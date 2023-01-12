@@ -119,7 +119,8 @@ object Emailfuzzy {
     __obj.asInstanceOf[Emailfuzzy]
   }
   
-  extension [Self <: Emailfuzzy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Emailfuzzy] (val x: Self) extends AnyVal {
     
     inline def setEmail_fuzzy(value: js.RegExp): Self = StObject.set(x, "email_fuzzy", value.asInstanceOf[js.Any])
     

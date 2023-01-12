@@ -28,7 +28,8 @@ object ResumeWorkflowRunRequest {
     __obj.asInstanceOf[ResumeWorkflowRunRequest]
   }
   
-  extension [Self <: ResumeWorkflowRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumeWorkflowRunRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

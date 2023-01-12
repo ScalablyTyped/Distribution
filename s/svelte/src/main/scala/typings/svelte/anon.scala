@@ -468,7 +468,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Any => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     }
@@ -487,7 +488,8 @@ object anon {
       __obj.asInstanceOf[Bubbles]
     }
     
-    extension [Self <: Bubbles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bubbles] (val x: Self) extends AnyVal {
       
       inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
@@ -512,7 +514,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -534,7 +537,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Map[Any, Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -571,7 +575,8 @@ object anon {
       __obj.asInstanceOf[CrossfadeParamsfallbackno]
     }
     
-    extension [Self <: CrossfadeParamsfallbackno](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrossfadeParamsfallbackno] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -611,7 +616,8 @@ object anon {
       __obj.asInstanceOf[CrossfadeParamskeyany]
     }
     
-    extension [Self <: CrossfadeParamskeyany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrossfadeParamskeyany] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -646,7 +652,8 @@ object anon {
       __obj.asInstanceOf[Css]
     }
     
-    extension [Self <: Css](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
       
       inline def setCss(value: Code): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -671,7 +678,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
@@ -694,7 +702,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: DOMRect): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -721,7 +730,8 @@ object anon {
       __obj.asInstanceOf[Lastindex]
     }
     
-    extension [Self <: Lastindex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lastindex] (val x: Self) extends AnyVal {
       
       inline def setLast_index(value: Double): Self = StObject.set(x, "last_index", value.asInstanceOf[js.Any])
       
@@ -6248,7 +6258,8 @@ object anon {
       __obj.asInstanceOf[To]
     }
     
-    extension [Self <: To](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: To] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: PositionRect): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

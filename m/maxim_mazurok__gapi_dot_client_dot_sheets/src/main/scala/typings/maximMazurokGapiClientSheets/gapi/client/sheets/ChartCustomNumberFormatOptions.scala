@@ -19,7 +19,8 @@ object ChartCustomNumberFormatOptions {
     __obj.asInstanceOf[ChartCustomNumberFormatOptions]
   }
   
-  extension [Self <: ChartCustomNumberFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartCustomNumberFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

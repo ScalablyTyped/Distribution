@@ -93,7 +93,8 @@ trait AllReservedOperationsInterface[AddOps /* <: AdditionalOperation */] extend
 }
 object AllReservedOperationsInterface {
   
-  extension [Self <: AllReservedOperationsInterface[?], AddOps /* <: AdditionalOperation */](x: Self & AllReservedOperationsInterface[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllReservedOperationsInterface[?], AddOps /* <: AdditionalOperation */] (val x: Self & AllReservedOperationsInterface[AddOps]) extends AnyVal {
     
     inline def setAll(value: js.Tuple2[js.Array[RulesLogic[AddOps]] | RulesLogic[AddOps], RulesLogic[AddOps]]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

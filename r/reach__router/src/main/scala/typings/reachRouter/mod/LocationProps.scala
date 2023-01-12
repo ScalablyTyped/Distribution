@@ -16,7 +16,8 @@ object LocationProps {
     __obj.asInstanceOf[LocationProps]
   }
   
-  extension [Self <: LocationProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: /* context */ LocationContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
   }

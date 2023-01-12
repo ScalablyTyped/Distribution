@@ -43,7 +43,8 @@ object SourceControlResourceDecorations {
     __obj.asInstanceOf[SourceControlResourceDecorations]
   }
   
-  extension [Self <: SourceControlResourceDecorations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceControlResourceDecorations] (val x: Self) extends AnyVal {
     
     inline def setDark(value: SourceControlResourceThemableDecorations): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

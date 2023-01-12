@@ -45,7 +45,8 @@ object XAutomationInvocation {
     __obj.asInstanceOf[XAutomationInvocation]
   }
   
-  extension [Self <: XAutomationInvocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAutomationInvocation] (val x: Self) extends AnyVal {
     
     inline def setInvokeGetProperty(value: (String, SeqEquiv[Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[Any]]) => Any): Self = StObject.set(x, "invokeGetProperty", js.Any.fromFunction4(value))
     

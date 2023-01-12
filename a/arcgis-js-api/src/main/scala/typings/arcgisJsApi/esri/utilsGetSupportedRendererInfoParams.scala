@@ -35,7 +35,8 @@ object utilsGetSupportedRendererInfoParams {
     __obj.asInstanceOf[utilsGetSupportedRendererInfoParams]
   }
   
-  extension [Self <: utilsGetSupportedRendererInfoParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: utilsGetSupportedRendererInfoParams] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: ImageryLayer | ImageryTileLayer | WCSLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object SuggestionClickData {
     __obj.asInstanceOf[SuggestionClickData[T]]
   }
   
-  extension [Self <: SuggestionClickData[?], T /* <: BaseTagData */](x: Self & SuggestionClickData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestionClickData[?], T /* <: BaseTagData */] (val x: Self & SuggestionClickData[T]) extends AnyVal {
     
     inline def setSuggestionElm(value: HTMLElement): Self = StObject.set(x, "suggestionElm", value.asInstanceOf[js.Any])
     

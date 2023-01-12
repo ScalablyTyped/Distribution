@@ -19,7 +19,8 @@ object PostureDetail {
     __obj.asInstanceOf[PostureDetail]
   }
   
-  extension [Self <: PostureDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostureDetail] (val x: Self) extends AnyVal {
     
     inline def setAdvice(value: js.Array[UserFacingMessage]): Self = StObject.set(x, "advice", value.asInstanceOf[js.Any])
     

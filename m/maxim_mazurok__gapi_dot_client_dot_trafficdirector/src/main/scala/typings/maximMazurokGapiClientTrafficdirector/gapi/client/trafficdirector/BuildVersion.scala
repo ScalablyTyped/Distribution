@@ -21,7 +21,8 @@ object BuildVersion {
     __obj.asInstanceOf[BuildVersion]
   }
   
-  extension [Self <: BuildVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildVersion] (val x: Self) extends AnyVal {
     
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

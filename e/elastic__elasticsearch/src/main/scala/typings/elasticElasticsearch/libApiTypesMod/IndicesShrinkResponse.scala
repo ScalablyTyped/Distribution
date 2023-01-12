@@ -19,7 +19,8 @@ object IndicesShrinkResponse {
     __obj.asInstanceOf[IndicesShrinkResponse]
   }
   
-  extension [Self <: IndicesShrinkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesShrinkResponse] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

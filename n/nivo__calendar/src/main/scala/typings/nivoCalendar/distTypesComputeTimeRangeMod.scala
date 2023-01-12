@@ -43,7 +43,8 @@ object distTypesComputeTimeRangeMod {
       __obj.asInstanceOf[ComputeBaseDimensionProps]
     }
     
-    extension [Self <: ComputeBaseDimensionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputeBaseDimensionProps] (val x: Self) extends AnyVal {
       
       inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object distTypesComputeTimeRangeMod {
       __obj.asInstanceOf[ComputeBaseProps]
     }
     
-    extension [Self <: ComputeBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputeBaseProps] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     }
@@ -81,7 +83,8 @@ object distTypesComputeTimeRangeMod {
       __obj.asInstanceOf[ComputeBaseSpaceProps]
     }
     
-    extension [Self <: ComputeBaseSpaceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputeBaseSpaceProps] (val x: Self) extends AnyVal {
       
       inline def setDaySpacing(value: Double): Self = StObject.set(x, "daySpacing", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object distTypesComputeTimeRangeMod {
       __obj.asInstanceOf[ComputeCellPositions_]
     }
     
-    extension [Self <: ComputeCellPositions_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputeCellPositions_] (val x: Self) extends AnyVal {
       
       inline def setColorScale(value: Double => String): Self = StObject.set(x, "colorScale", js.Any.fromFunction1(value))
       
@@ -169,7 +173,8 @@ object distTypesComputeTimeRangeMod {
       __obj.asInstanceOf[ComputeCellSize_]
     }
     
-    extension [Self <: ComputeCellSize_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputeCellSize_] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -209,7 +214,8 @@ object distTypesComputeTimeRangeMod {
       __obj.asInstanceOf[ComputeMonths]
     }
     
-    extension [Self <: ComputeMonths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputeMonths] (val x: Self) extends AnyVal {
       
       inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
       
@@ -240,7 +246,8 @@ object distTypesComputeTimeRangeMod {
       __obj.asInstanceOf[ComputeTotalDays_]
     }
     
-    extension [Self <: ComputeTotalDays_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputeTotalDays_] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[DateDay]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -280,7 +287,8 @@ object distTypesComputeTimeRangeMod {
       __obj.asInstanceOf[ComputeWeekdays_]
     }
     
-    extension [Self <: ComputeWeekdays_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputeWeekdays_] (val x: Self) extends AnyVal {
       
       inline def setArrayOfWeekdays(value: js.Array[String]): Self = StObject.set(x, "arrayOfWeekdays", value.asInstanceOf[js.Any])
       
@@ -337,7 +345,8 @@ object distTypesComputeTimeRangeMod {
       __obj.asInstanceOf[Day]
     }
     
-    extension [Self <: Day](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Day] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -378,7 +387,8 @@ object distTypesComputeTimeRangeMod {
       __obj.asInstanceOf[Month]
     }
     
-    extension [Self <: Month](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Month] (val x: Self) extends AnyVal {
       
       inline def setBbox(value: Height): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       

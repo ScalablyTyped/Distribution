@@ -18,7 +18,8 @@ object VueParentComponent {
     __obj.asInstanceOf[VueParentComponent]
   }
   
-  extension [Self <: VueParentComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VueParentComponent] (val x: Self) extends AnyVal {
     
     inline def set__vueParentComponent(value: ComponentInternalInstance): Self = StObject.set(x, "__vueParentComponent", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object TableOptions {
     __obj.asInstanceOf[TableOptions]
   }
   
-  extension [Self <: TableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
     

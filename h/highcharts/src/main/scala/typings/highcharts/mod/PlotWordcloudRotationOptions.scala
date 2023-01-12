@@ -30,7 +30,8 @@ object PlotWordcloudRotationOptions {
     __obj.asInstanceOf[PlotWordcloudRotationOptions]
   }
   
-  extension [Self <: PlotWordcloudRotationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotWordcloudRotationOptions] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

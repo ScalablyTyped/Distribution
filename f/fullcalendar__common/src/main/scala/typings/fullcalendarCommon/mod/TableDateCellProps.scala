@@ -37,7 +37,8 @@ object TableDateCellProps {
     __obj.asInstanceOf[TableDateCellProps]
   }
   
-  extension [Self <: TableDateCellProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableDateCellProps] (val x: Self) extends AnyVal {
     
     inline def setColCnt(value: Double): Self = StObject.set(x, "colCnt", value.asInstanceOf[js.Any])
     

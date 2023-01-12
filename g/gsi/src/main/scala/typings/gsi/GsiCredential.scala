@@ -19,7 +19,8 @@ object GsiCredential {
     __obj.asInstanceOf[GsiCredential]
   }
   
-  extension [Self <: GsiCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GsiCredential] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

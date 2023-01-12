@@ -15,7 +15,8 @@ object KnownCreateStatsOptionsContext {
     __obj.asInstanceOf[KnownCreateStatsOptionsContext]
   }
   
-  extension [Self <: KnownCreateStatsOptionsContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownCreateStatsOptionsContext] (val x: Self) extends AnyVal {
     
     inline def setForToString(value: Boolean): Self = StObject.set(x, "forToString", value.asInstanceOf[js.Any])
     

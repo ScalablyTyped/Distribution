@@ -319,7 +319,8 @@ object sapUiLayoutResponsiveFlowLayoutDataMod {
       __obj.asInstanceOf[ResponsiveFlowLayoutDataSettings]
     }
     
-    extension [Self <: ResponsiveFlowLayoutDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveFlowLayoutDataSettings] (val x: Self) extends AnyVal {
       
       inline def setLinebreak(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "linebreak", value.asInstanceOf[js.Any])
       

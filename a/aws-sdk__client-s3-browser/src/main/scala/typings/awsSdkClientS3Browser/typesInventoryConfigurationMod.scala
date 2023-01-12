@@ -77,7 +77,8 @@ object typesInventoryConfigurationMod {
       __obj.asInstanceOf[InventoryConfiguration]
     }
     
-    extension [Self <: InventoryConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InventoryConfiguration] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: InventoryDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object typesInventoryConfigurationMod {
       __obj.asInstanceOf[UnmarshalledInventoryConfiguration]
     }
     
-    extension [Self <: UnmarshalledInventoryConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledInventoryConfiguration] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: UnmarshalledInventoryDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
       

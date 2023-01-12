@@ -181,7 +181,8 @@ object XShape {
     __obj.asInstanceOf[XShape]
   }
   
-  extension [Self <: XShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShape] (val x: Self) extends AnyVal {
     
     inline def setCustomShapeData(value: String): Self = StObject.set(x, "CustomShapeData", value.asInstanceOf[js.Any])
     

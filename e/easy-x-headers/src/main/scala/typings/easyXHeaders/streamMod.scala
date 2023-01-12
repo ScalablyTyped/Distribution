@@ -88,7 +88,8 @@ object streamMod {
       __obj.asInstanceOf[DuplexOptions]
     }
     
-    extension [Self <: DuplexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuplexOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object streamMod {
       __obj.asInstanceOf[ReadableOptions]
     }
     
-    extension [Self <: ReadableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadableOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object streamMod {
       __obj.asInstanceOf[TransformOptions]
     }
     
-    extension [Self <: TransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
       
       inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,8 @@ object streamMod {
       __obj.asInstanceOf[WritableOptions]
     }
     
-    extension [Self <: WritableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WritableOptions] (val x: Self) extends AnyVal {
       
       inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
       

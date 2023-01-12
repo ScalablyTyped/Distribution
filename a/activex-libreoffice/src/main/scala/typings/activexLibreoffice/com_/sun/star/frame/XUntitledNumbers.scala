@@ -73,7 +73,8 @@ object XUntitledNumbers {
     __obj.asInstanceOf[XUntitledNumbers]
   }
   
-  extension [Self <: XUntitledNumbers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUntitledNumbers] (val x: Self) extends AnyVal {
     
     inline def setGetUntitledPrefix(value: () => String): Self = StObject.set(x, "getUntitledPrefix", js.Any.fromFunction0(value))
     

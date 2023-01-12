@@ -22,7 +22,8 @@ object CompositionConfig {
     __obj.asInstanceOf[CompositionConfig]
   }
   
-  extension [Self <: CompositionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositionConfig] (val x: Self) extends AnyVal {
     
     inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     

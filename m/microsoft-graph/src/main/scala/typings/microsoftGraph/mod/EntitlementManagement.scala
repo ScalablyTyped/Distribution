@@ -45,7 +45,8 @@ object EntitlementManagement {
     __obj.asInstanceOf[EntitlementManagement]
   }
   
-  extension [Self <: EntitlementManagement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntitlementManagement] (val x: Self) extends AnyVal {
     
     inline def setAccessPackageAssignmentApprovals(value: NullableOption[js.Array[Approval]]): Self = StObject.set(x, "accessPackageAssignmentApprovals", value.asInstanceOf[js.Any])
     

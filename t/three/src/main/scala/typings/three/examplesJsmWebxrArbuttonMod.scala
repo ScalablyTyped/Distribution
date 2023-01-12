@@ -35,7 +35,8 @@ object examplesJsmWebxrArbuttonMod {
       __obj.asInstanceOf[ARButtonSessionInit]
     }
     
-    extension [Self <: ARButtonSessionInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARButtonSessionInit] (val x: Self) extends AnyVal {
       
       inline def setDomOverlay(value: Root): Self = StObject.set(x, "domOverlay", value.asInstanceOf[js.Any])
     }

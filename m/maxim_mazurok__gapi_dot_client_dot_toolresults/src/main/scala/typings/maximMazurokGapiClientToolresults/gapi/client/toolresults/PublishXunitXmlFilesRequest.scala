@@ -16,7 +16,8 @@ object PublishXunitXmlFilesRequest {
     __obj.asInstanceOf[PublishXunitXmlFilesRequest]
   }
   
-  extension [Self <: PublishXunitXmlFilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishXunitXmlFilesRequest] (val x: Self) extends AnyVal {
     
     inline def setXunitXmlFiles(value: js.Array[FileReference]): Self = StObject.set(x, "xunitXmlFiles", value.asInstanceOf[js.Any])
     

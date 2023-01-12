@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[FilterAlgorithm]
     }
     
-    extension [Self <: FilterAlgorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterAlgorithm] (val x: Self) extends AnyVal {
       
       inline def setFilterAlgorithm(value: String): Self = StObject.set(x, "filterAlgorithm", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: Limit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[TagName]
     }
     
-    extension [Self <: TagName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagName] (val x: Self) extends AnyVal {
       
       inline def setTagName(value: Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }

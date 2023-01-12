@@ -18,7 +18,8 @@ object SpawnOptionsWithStdioTuple {
     __obj.asInstanceOf[SpawnOptionsWithStdioTuple[Stdin, Stdout, Stderr]]
   }
   
-  extension [Self <: SpawnOptionsWithStdioTuple[?, ?, ?], Stdin /* <: StdioNull | StdioPipe */, Stdout /* <: StdioNull | StdioPipe */, Stderr /* <: StdioNull | StdioPipe */](x: Self & (SpawnOptionsWithStdioTuple[Stdin, Stdout, Stderr])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpawnOptionsWithStdioTuple[?, ?, ?], Stdin /* <: StdioNull | StdioPipe */, Stdout /* <: StdioNull | StdioPipe */, Stderr /* <: StdioNull | StdioPipe */] (val x: Self & (SpawnOptionsWithStdioTuple[Stdin, Stdout, Stderr])) extends AnyVal {
     
     inline def setStdio(value: js.Tuple3[Stdin, Stdout, Stderr]): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
   }

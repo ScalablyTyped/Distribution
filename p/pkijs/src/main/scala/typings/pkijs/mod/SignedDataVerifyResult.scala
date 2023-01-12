@@ -29,7 +29,8 @@ object SignedDataVerifyResult {
     __obj.asInstanceOf[SignedDataVerifyResult]
   }
   
-  extension [Self <: SignedDataVerifyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedDataVerifyResult] (val x: Self) extends AnyVal {
     
     inline def setCertificatePath(value: js.Array[Certificate]): Self = StObject.set(x, "certificatePath", value.asInstanceOf[js.Any])
     

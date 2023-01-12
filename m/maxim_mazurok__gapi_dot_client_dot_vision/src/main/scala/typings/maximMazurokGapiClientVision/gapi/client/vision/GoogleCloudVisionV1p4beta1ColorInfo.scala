@@ -22,7 +22,8 @@ object GoogleCloudVisionV1p4beta1ColorInfo {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1ColorInfo]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1ColorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1ColorInfo] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

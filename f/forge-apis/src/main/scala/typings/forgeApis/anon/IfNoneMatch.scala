@@ -21,7 +21,8 @@ object IfNoneMatch {
     __obj.asInstanceOf[IfNoneMatch]
   }
   
-  extension [Self <: IfNoneMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfNoneMatch] (val x: Self) extends AnyVal {
     
     inline def setAcceptEncoding(value: String): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
     

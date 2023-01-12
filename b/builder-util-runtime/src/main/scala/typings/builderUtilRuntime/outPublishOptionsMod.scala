@@ -86,7 +86,8 @@ object outPublishOptionsMod {
       __obj.asInstanceOf[BaseS3Options]
     }
     
-    extension [Self <: BaseS3Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseS3Options] (val x: Self) extends AnyVal {
       
       inline def setAcl(value: `private` | `public-read`): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object outPublishOptionsMod {
       __obj.asInstanceOf[BitbucketOptions]
     }
     
-    extension [Self <: BitbucketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitbucketOptions] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -207,7 +209,8 @@ object outPublishOptionsMod {
       __obj.asInstanceOf[CustomPublishOptions]
     }
     
-    extension [Self <: CustomPublishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomPublishOptions] (val x: Self) extends AnyVal {
       
       inline def setProvider(value: custom): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
@@ -253,7 +256,8 @@ object outPublishOptionsMod {
       __obj.asInstanceOf[GenericServerOptions]
     }
     
-    extension [Self <: GenericServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericServerOptions] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -341,7 +345,8 @@ object outPublishOptionsMod {
       __obj.asInstanceOf[GithubOptions]
     }
     
-    extension [Self <: GithubOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GithubOptions] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -438,7 +443,8 @@ object outPublishOptionsMod {
       __obj.asInstanceOf[KeygenOptions]
     }
     
-    extension [Self <: KeygenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeygenOptions] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -508,7 +514,8 @@ object outPublishOptionsMod {
       __obj.asInstanceOf[PublishConfiguration]
     }
     
-    extension [Self <: PublishConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishConfiguration] (val x: Self) extends AnyVal {
       
       inline def setProvider(value: PublishProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
@@ -617,7 +624,8 @@ object outPublishOptionsMod {
       __obj.asInstanceOf[S3Options]
     }
     
-    extension [Self <: S3Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3Options] (val x: Self) extends AnyVal {
       
       inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
@@ -678,7 +686,8 @@ object outPublishOptionsMod {
       __obj.asInstanceOf[SnapStoreOptions]
     }
     
-    extension [Self <: SnapStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: String | js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
@@ -724,7 +733,8 @@ object outPublishOptionsMod {
       __obj.asInstanceOf[SpacesOptions]
     }
     
-    extension [Self <: SpacesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpacesOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

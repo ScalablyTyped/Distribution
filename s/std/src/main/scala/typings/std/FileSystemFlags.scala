@@ -19,7 +19,8 @@ object FileSystemFlags {
     __obj.asInstanceOf[FileSystemFlags]
   }
   
-  extension [Self <: FileSystemFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemFlags] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: scala.Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

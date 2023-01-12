@@ -29,7 +29,8 @@ object NavigatorYAxisLabelsSymbolOptions {
     __obj.asInstanceOf[NavigatorYAxisLabelsSymbolOptions]
   }
   
-  extension [Self <: NavigatorYAxisLabelsSymbolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorYAxisLabelsSymbolOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

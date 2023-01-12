@@ -18,7 +18,8 @@ object DnsOptions {
     __obj.asInstanceOf[DnsOptions]
   }
   
-  extension [Self <: DnsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsOptions] (val x: Self) extends AnyVal {
     
     inline def setDnsRecordIpType(value: DnsRecordIpType): Self = StObject.set(x, "DnsRecordIpType", value.asInstanceOf[js.Any])
     

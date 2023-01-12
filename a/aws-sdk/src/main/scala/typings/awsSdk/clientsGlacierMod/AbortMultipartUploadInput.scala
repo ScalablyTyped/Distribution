@@ -28,7 +28,8 @@ object AbortMultipartUploadInput {
     __obj.asInstanceOf[AbortMultipartUploadInput]
   }
   
-  extension [Self <: AbortMultipartUploadInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbortMultipartUploadInput] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

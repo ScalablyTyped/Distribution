@@ -36,7 +36,8 @@ object ParameterMetadata {
     __obj.asInstanceOf[ParameterMetadata]
   }
   
-  extension [Self <: ParameterMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterMetadata] (val x: Self) extends AnyVal {
     
     inline def setCustomMetadata(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

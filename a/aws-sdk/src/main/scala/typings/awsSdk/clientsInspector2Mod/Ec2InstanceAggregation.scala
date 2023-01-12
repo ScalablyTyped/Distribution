@@ -43,7 +43,8 @@ object Ec2InstanceAggregation {
     __obj.asInstanceOf[Ec2InstanceAggregation]
   }
   
-  extension [Self <: Ec2InstanceAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ec2InstanceAggregation] (val x: Self) extends AnyVal {
     
     inline def setAmis(value: StringFilterList): Self = StObject.set(x, "amis", value.asInstanceOf[js.Any])
     

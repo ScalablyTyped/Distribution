@@ -84,7 +84,8 @@ object DOMProgressEvent {
     __obj.asInstanceOf[DOMProgressEvent]
   }
   
-  extension [Self <: DOMProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

@@ -172,7 +172,8 @@ object anon {
       __obj.asInstanceOf[AllowUnsafeHref[E]]
     }
     
-    extension [Self <: AllowUnsafeHref[?], E /* <: ElementType[Any] */](x: Self & AllowUnsafeHref[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowUnsafeHref[?], E /* <: ElementType[Any] */] (val x: Self & AllowUnsafeHref[E]) extends AnyVal {
       
       inline def setAllowUnsafeHref(value: Boolean): Self = StObject.set(x, "allowUnsafeHref", value.asInstanceOf[js.Any])
       
@@ -490,7 +491,8 @@ object anon {
       __obj.asInstanceOf[BoxCssPropsCssProps]
     }
     
-    extension [Self <: BoxCssPropsCssProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxCssPropsCssProps] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(value: AlignContent | Double | `false`): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
@@ -1704,7 +1706,8 @@ object anon {
       __obj.asInstanceOf[BoxOwnPropsElementTypeany]
     }
     
-    extension [Self <: BoxOwnPropsElementTypeany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxOwnPropsElementTypeany] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(value: AlignContent | Double | `false`): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
@@ -2649,7 +2652,8 @@ object anon {
       __obj.asInstanceOf[Cache]
     }
     
-    extension [Self <: Cache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
       
       inline def setCache(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -2875,7 +2879,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordKeyframesTim]
     }
     
-    extension [Self <: PartialRecordKeyframesTim](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordKeyframesTim] (val x: Self) extends AnyVal {
       
       inline def set0(value: BoxCssPropsCssProps): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
@@ -3304,7 +3309,8 @@ object anon {
       __obj.asInstanceOf[SafeHref]
     }
     
-    extension [Self <: SafeHref](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SafeHref] (val x: Self) extends AnyVal {
       
       inline def setSafeHref(value: String): Self = StObject.set(x, "safeHref", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object ModuleWithProviders {
     __obj.asInstanceOf[ModuleWithProviders[T]]
   }
   
-  extension [Self <: ModuleWithProviders[?], T](x: Self & ModuleWithProviders[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleWithProviders[?], T] (val x: Self & ModuleWithProviders[T]) extends AnyVal {
     
     inline def setNgModule(value: Type[T]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object ImageFrameConfig {
     __obj.asInstanceOf[ImageFrameConfig]
   }
   
-  extension [Self <: ImageFrameConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageFrameConfig] (val x: Self) extends AnyVal {
     
     inline def setEndFrame(value: Double): Self = StObject.set(x, "endFrame", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object KnockoutBindingHandlers {
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
   
-  extension [Self <: KnockoutBindingHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutBindingHandlers] (val x: Self) extends AnyVal {
     
     inline def setModule(value: KnockoutAMDModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
   }

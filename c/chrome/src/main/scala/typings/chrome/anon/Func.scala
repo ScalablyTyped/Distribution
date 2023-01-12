@@ -16,7 +16,8 @@ object Func {
     __obj.asInstanceOf[Func[Result]]
   }
   
-  extension [Self <: Func[?], Result](x: Self & Func[Result]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Func[?], Result] (val x: Self & Func[Result]) extends AnyVal {
     
     inline def setFunc(value: () => Result): Self = StObject.set(x, "func", js.Any.fromFunction0(value))
   }

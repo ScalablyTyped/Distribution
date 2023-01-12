@@ -23,7 +23,8 @@ object ReplicationDestination {
     __obj.asInstanceOf[ReplicationDestination]
   }
   
-  extension [Self <: ReplicationDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationDestination] (val x: Self) extends AnyVal {
     
     inline def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     

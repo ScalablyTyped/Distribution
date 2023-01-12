@@ -92,7 +92,8 @@ object DiagramOptions {
     __obj.asInstanceOf[DiagramOptions]
   }
   
-  extension [Self <: DiagramOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramOptions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* e */ DiagramAddEvent => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

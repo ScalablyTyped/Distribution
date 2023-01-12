@@ -702,7 +702,8 @@ object distTypesArtifactsTypescriptAtlassianSpacingTokenNamesMod {
       __obj.asInstanceOf[CSSTokenMap]
     }
     
-    extension [Self <: CSSTokenMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSTokenMap] (val x: Self) extends AnyVal {
       
       inline def setSpacingDotcccDotcomponentDot2(value: /* var(--ds-ccc-component-2) */ String): Self = StObject.set(x, "spacing.ccc.component.2", value.asInstanceOf[js.Any])
       

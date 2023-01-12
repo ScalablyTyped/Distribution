@@ -30,7 +30,8 @@ object StatOption {
     __obj.asInstanceOf[StatOption]
   }
   
-  extension [Self <: StatOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

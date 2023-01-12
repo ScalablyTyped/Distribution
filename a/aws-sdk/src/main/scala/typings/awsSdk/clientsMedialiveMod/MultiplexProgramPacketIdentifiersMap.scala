@@ -39,7 +39,8 @@ object MultiplexProgramPacketIdentifiersMap {
     __obj.asInstanceOf[MultiplexProgramPacketIdentifiersMap]
   }
   
-  extension [Self <: MultiplexProgramPacketIdentifiersMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplexProgramPacketIdentifiersMap] (val x: Self) extends AnyVal {
     
     inline def setAudioPids(value: listOfInteger): Self = StObject.set(x, "AudioPids", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setDatauri(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DataUri */ Any
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[CustomPlugin]
     }
     
-    extension [Self <: CustomPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomPlugin] (val x: Self) extends AnyVal {
       
       inline def setFn(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginFn<void> */ Any
@@ -126,7 +128,8 @@ object mod {
       __obj.asInstanceOf[Output]
     }
     
-    extension [Self <: Output](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }

@@ -52,7 +52,8 @@ object distSrcDrawBorderMod {
       __obj.asInstanceOf[BorderGetterParameters]
     }
     
-    extension [Self <: BorderGetterParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderGetterParameters] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: BorderConfig): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object distSrcDrawBorderMod {
       __obj.asInstanceOf[DrawBorderParameters]
     }
     
-    extension [Self <: DrawBorderParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawBorderParameters] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: BorderConfig): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object distSrcDrawBorderMod {
       __obj.asInstanceOf[Separator]
     }
     
-    extension [Self <: Separator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Separator] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object BlurEvent {
     __obj.asInstanceOf[BlurEvent[TSuggestion]]
   }
   
-  extension [Self <: BlurEvent[?], TSuggestion](x: Self & BlurEvent[TSuggestion]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlurEvent[?], TSuggestion] (val x: Self & BlurEvent[TSuggestion]) extends AnyVal {
     
     inline def setHighlightedSuggestion(value: TSuggestion): Self = StObject.set(x, "highlightedSuggestion", value.asInstanceOf[js.Any])
   }

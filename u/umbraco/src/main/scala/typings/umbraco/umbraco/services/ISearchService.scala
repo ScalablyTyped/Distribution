@@ -80,7 +80,8 @@ object ISearchService {
     __obj.asInstanceOf[ISearchService]
   }
   
-  extension [Self <: ISearchService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchService] (val x: Self) extends AnyVal {
     
     inline def setSearchAll(value: ISearchArgs => IPromise[Any]): Self = StObject.set(x, "searchAll", js.Any.fromFunction1(value))
     

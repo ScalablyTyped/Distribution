@@ -86,7 +86,8 @@ object gridColumnsColumnGroupMod {
       __obj.asInstanceOf[ColumnGroupBreakpointOptions]
     }
     
-    extension [Self <: ColumnGroupBreakpointOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnGroupBreakpointOptions] (val x: Self) extends AnyVal {
       
       inline def setGapSize(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object gridColumnsColumnGroupMod {
       __obj.asInstanceOf[ColumnGroupModifierProps]
     }
     
-    extension [Self <: ColumnGroupModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnGroupModifierProps] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: mobile | tablet | desktop | widescreen | fullhd | touch): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
@@ -286,7 +288,8 @@ object gridColumnsColumnGroupMod {
       __obj.asInstanceOf[ColumnGroupProps]
     }
     
-    extension [Self <: ColumnGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnGroupProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -486,7 +489,8 @@ object gridColumnsColumnGroupMod {
       __obj.asInstanceOf[ColumnGroupVariables]
     }
     
-    extension [Self <: ColumnGroupVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnGroupVariables] (val x: Self) extends AnyVal {
       
       inline def setGapSizes(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSizes", value.asInstanceOf[js.Any])
     }
@@ -503,7 +507,8 @@ object gridColumnsColumnGroupMod {
       __obj.asInstanceOf[ColumnGroupVariablesDefaults]
     }
     
-    extension [Self <: ColumnGroupVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnGroupVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setGapSizes(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "gapSizes", value.asInstanceOf[js.Any])
     }

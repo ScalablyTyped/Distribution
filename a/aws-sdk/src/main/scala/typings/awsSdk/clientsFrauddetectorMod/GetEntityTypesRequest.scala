@@ -28,7 +28,8 @@ object GetEntityTypesRequest {
     __obj.asInstanceOf[GetEntityTypesRequest]
   }
   
-  extension [Self <: GetEntityTypesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEntityTypesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: entityTypesMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

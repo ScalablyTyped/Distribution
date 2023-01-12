@@ -18,7 +18,8 @@ object MarginMixin {
     __obj.asInstanceOf[MarginMixin[T]]
   }
   
-  extension [Self <: MarginMixin[?], T](x: Self & MarginMixin[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarginMixin[?], T] (val x: Self & MarginMixin[T]) extends AnyVal {
     
     inline def setMargins(value: IGetSet[Margins, T]): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
   }

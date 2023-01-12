@@ -23,7 +23,8 @@ object QueueApi {
     __obj.asInstanceOf[QueueApi]
   }
   
-  extension [Self <: QueueApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueApi] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

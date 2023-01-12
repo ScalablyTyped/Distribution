@@ -23,7 +23,8 @@ object AwsEksClusterLoggingClusterLoggingDetails {
     __obj.asInstanceOf[AwsEksClusterLoggingClusterLoggingDetails]
   }
   
-  extension [Self <: AwsEksClusterLoggingClusterLoggingDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEksClusterLoggingClusterLoggingDetails] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object TimeSeriesRatio {
     __obj.asInstanceOf[TimeSeriesRatio]
   }
   
-  extension [Self <: TimeSeriesRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesRatio] (val x: Self) extends AnyVal {
     
     inline def setBadServiceFilter(value: String): Self = StObject.set(x, "badServiceFilter", value.asInstanceOf[js.Any])
     

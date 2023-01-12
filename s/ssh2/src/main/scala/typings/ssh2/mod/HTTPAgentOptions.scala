@@ -18,7 +18,8 @@ object HTTPAgentOptions {
     __obj.asInstanceOf[HTTPAgentOptions]
   }
   
-  extension [Self <: HTTPAgentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTTPAgentOptions] (val x: Self) extends AnyVal {
     
     inline def setSrcIP(value: String): Self = StObject.set(x, "srcIP", value.asInstanceOf[js.Any])
     

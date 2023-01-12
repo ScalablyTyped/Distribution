@@ -96,7 +96,8 @@ object COMPILEWARNINGINLINEMATCHER {
     __obj.asInstanceOf[COMPILEWARNINGINLINEMATCHER]
   }
   
-  extension [Self <: COMPILEWARNINGINLINEMATCHER](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: COMPILEWARNINGINLINEMATCHER] (val x: Self) extends AnyVal {
     
     inline def setCOMPILE_WARNING_INLINE_MATCHER(value: js.RegExp): Self = StObject.set(x, "COMPILE_WARNING_INLINE_MATCHER", value.asInstanceOf[js.Any])
     

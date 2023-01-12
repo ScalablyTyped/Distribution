@@ -23,7 +23,8 @@ object DeploySystemInstanceResponse {
     __obj.asInstanceOf[DeploySystemInstanceResponse]
   }
   
-  extension [Self <: DeploySystemInstanceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploySystemInstanceResponse] (val x: Self) extends AnyVal {
     
     inline def setGreengrassDeploymentId(value: GreengrassDeploymentId): Self = StObject.set(x, "greengrassDeploymentId", value.asInstanceOf[js.Any])
     

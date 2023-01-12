@@ -33,7 +33,8 @@ object RetainedMessageSummary {
     __obj.asInstanceOf[RetainedMessageSummary]
   }
   
-  extension [Self <: RetainedMessageSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetainedMessageSummary] (val x: Self) extends AnyVal {
     
     inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
     

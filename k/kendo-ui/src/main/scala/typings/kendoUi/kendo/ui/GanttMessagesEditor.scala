@@ -37,7 +37,8 @@ object GanttMessagesEditor {
     __obj.asInstanceOf[GanttMessagesEditor]
   }
   
-  extension [Self <: GanttMessagesEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttMessagesEditor] (val x: Self) extends AnyVal {
     
     inline def setAssignButton(value: String): Self = StObject.set(x, "assignButton", value.asInstanceOf[js.Any])
     

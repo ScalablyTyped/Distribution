@@ -58,7 +58,8 @@ object RDSInstanceDetails {
     __obj.asInstanceOf[RDSInstanceDetails]
   }
   
-  extension [Self <: RDSInstanceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RDSInstanceDetails] (val x: Self) extends AnyVal {
     
     inline def setCurrentGeneration(value: GenericBoolean): Self = StObject.set(x, "CurrentGeneration", value.asInstanceOf[js.Any])
     

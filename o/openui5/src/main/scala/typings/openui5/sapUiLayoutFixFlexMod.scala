@@ -422,7 +422,8 @@ object sapUiLayoutFixFlexMod {
       __obj.asInstanceOf[FixFlexSettings]
     }
     
-    extension [Self <: FixFlexSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixFlexSettings] (val x: Self) extends AnyVal {
       
       inline def setFixContent(
         value: js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

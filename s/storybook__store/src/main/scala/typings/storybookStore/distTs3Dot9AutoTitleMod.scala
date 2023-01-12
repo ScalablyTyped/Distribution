@@ -35,7 +35,8 @@ object distTs3Dot9AutoTitleMod {
       __obj.asInstanceOf[NormalizedStoriesSpecifier]
     }
     
-    extension [Self <: NormalizedStoriesSpecifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedStoriesSpecifier] (val x: Self) extends AnyVal {
       
       inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object BulkEmailEntryResult {
     __obj.asInstanceOf[BulkEmailEntryResult]
   }
   
-  extension [Self <: BulkEmailEntryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkEmailEntryResult] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorMessage): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

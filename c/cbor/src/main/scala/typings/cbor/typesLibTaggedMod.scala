@@ -139,7 +139,8 @@ object typesLibTaggedMod {
       __obj.asInstanceOf[Tagged]
     }
     
-    extension [Self <: Tagged](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tagged] (val x: Self) extends AnyVal {
       
       inline def setConvert(value: js.Object => Any): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
       

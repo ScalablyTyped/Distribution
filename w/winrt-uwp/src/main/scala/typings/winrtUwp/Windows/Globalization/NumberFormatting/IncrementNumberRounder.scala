@@ -71,7 +71,8 @@ object IncrementNumberRounder {
     __obj.asInstanceOf[IncrementNumberRounder]
   }
   
-  extension [Self <: IncrementNumberRounder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncrementNumberRounder] (val x: Self) extends AnyVal {
     
     inline def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     

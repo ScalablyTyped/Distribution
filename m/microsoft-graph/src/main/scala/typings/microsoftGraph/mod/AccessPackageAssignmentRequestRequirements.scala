@@ -37,7 +37,8 @@ object AccessPackageAssignmentRequestRequirements {
     __obj.asInstanceOf[AccessPackageAssignmentRequestRequirements]
   }
   
-  extension [Self <: AccessPackageAssignmentRequestRequirements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPackageAssignmentRequestRequirements] (val x: Self) extends AnyVal {
     
     inline def setAllowCustomAssignmentSchedule(value: NullableOption[Boolean]): Self = StObject.set(x, "allowCustomAssignmentSchedule", value.asInstanceOf[js.Any])
     

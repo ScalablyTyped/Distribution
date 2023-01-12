@@ -19,7 +19,8 @@ object RegexMatcher {
     __obj.asInstanceOf[RegexMatcher]
   }
   
-  extension [Self <: RegexMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegexMatcher] (val x: Self) extends AnyVal {
     
     inline def setGoogleRe2(value: GoogleRE2): Self = StObject.set(x, "googleRe2", value.asInstanceOf[js.Any])
     

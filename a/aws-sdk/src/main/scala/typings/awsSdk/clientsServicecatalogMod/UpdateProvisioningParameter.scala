@@ -28,7 +28,8 @@ object UpdateProvisioningParameter {
     __obj.asInstanceOf[UpdateProvisioningParameter]
   }
   
-  extension [Self <: UpdateProvisioningParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateProvisioningParameter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: ParameterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

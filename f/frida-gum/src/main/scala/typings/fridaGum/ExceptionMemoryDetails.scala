@@ -23,7 +23,8 @@ object ExceptionMemoryDetails {
     __obj.asInstanceOf[ExceptionMemoryDetails]
   }
   
-  extension [Self <: ExceptionMemoryDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExceptionMemoryDetails] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

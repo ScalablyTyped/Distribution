@@ -37,7 +37,8 @@ object enginesExtensionsEngineDotexternalTextureMod {
         __obj.asInstanceOf[ThinEngine]
       }
       
-      extension [Self <: ThinEngine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThinEngine] (val x: Self) extends AnyVal {
         
         inline def setCreateExternalTexture(value: HTMLVideoElement => Nullable[ExternalTexture]): Self = StObject.set(x, "createExternalTexture", js.Any.fromFunction1(value))
         

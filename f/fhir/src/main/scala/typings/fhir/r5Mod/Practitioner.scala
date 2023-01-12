@@ -100,7 +100,8 @@ object Practitioner {
     __obj.asInstanceOf[Practitioner]
   }
   
-  extension [Self <: Practitioner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Practitioner] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

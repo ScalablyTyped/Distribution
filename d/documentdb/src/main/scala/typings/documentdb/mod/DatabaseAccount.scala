@@ -35,7 +35,8 @@ object DatabaseAccount {
     __obj.asInstanceOf[DatabaseAccount]
   }
   
-  extension [Self <: DatabaseAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseAccount] (val x: Self) extends AnyVal {
     
     inline def setConsistencyPolicy(value: ConsistencyPolicy): Self = StObject.set(x, "ConsistencyPolicy", value.asInstanceOf[js.Any])
     

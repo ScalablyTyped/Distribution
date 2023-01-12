@@ -33,7 +33,8 @@ object SegmentGroup {
     __obj.asInstanceOf[SegmentGroup]
   }
   
-  extension [Self <: SegmentGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentGroup] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: ListOfSegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

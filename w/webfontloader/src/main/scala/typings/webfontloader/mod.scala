@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setActive(value: () => Unit): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
       
@@ -142,7 +143,8 @@ object mod {
       __obj.asInstanceOf[Custom]
     }
     
-    extension [Self <: Custom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
       
       inline def setFamilies(value: js.Array[String]): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
       
@@ -173,7 +175,8 @@ object mod {
       __obj.asInstanceOf[Fontdeck]
     }
     
-    extension [Self <: Fontdeck](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fontdeck] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -196,7 +199,8 @@ object mod {
       __obj.asInstanceOf[Google]
     }
     
-    extension [Self <: Google](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Google] (val x: Self) extends AnyVal {
       
       inline def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -227,7 +231,8 @@ object mod {
       __obj.asInstanceOf[Monotype]
     }
     
-    extension [Self <: Monotype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Monotype] (val x: Self) extends AnyVal {
       
       inline def setLoadAllFonts(value: Boolean): Self = StObject.set(x, "loadAllFonts", value.asInstanceOf[js.Any])
       
@@ -254,7 +259,8 @@ object mod {
       __obj.asInstanceOf[Typekit]
     }
     
-    extension [Self <: Typekit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typekit] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

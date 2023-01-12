@@ -23,7 +23,8 @@ object DeleteDetectorVersionRequest {
     __obj.asInstanceOf[DeleteDetectorVersionRequest]
   }
   
-  extension [Self <: DeleteDetectorVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDetectorVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     

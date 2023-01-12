@@ -53,7 +53,8 @@ object ScheduledUpdateGroupActionRequest {
     __obj.asInstanceOf[ScheduledUpdateGroupActionRequest]
   }
   
-  extension [Self <: ScheduledUpdateGroupActionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledUpdateGroupActionRequest] (val x: Self) extends AnyVal {
     
     inline def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = StObject.set(x, "DesiredCapacity", value.asInstanceOf[js.Any])
     

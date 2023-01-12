@@ -17,7 +17,8 @@ object DeletingHookContext {
     __obj.asInstanceOf[DeletingHookContext[T, Key]]
   }
   
-  extension [Self <: DeletingHookContext[?, ?], T, Key](x: Self & (DeletingHookContext[T, Key])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletingHookContext[?, ?], T, Key] (val x: Self & (DeletingHookContext[T, Key])) extends AnyVal {
     
     inline def setOnerror(value: /* err */ Any => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
     

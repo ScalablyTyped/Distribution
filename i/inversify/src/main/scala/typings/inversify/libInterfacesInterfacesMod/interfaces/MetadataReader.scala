@@ -21,7 +21,8 @@ object MetadataReader {
     __obj.asInstanceOf[MetadataReader]
   }
   
-  extension [Self <: MetadataReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataReader] (val x: Self) extends AnyVal {
     
     inline def setGetConstructorMetadata(value: NewableFunction => ConstructorMetadata): Self = StObject.set(x, "getConstructorMetadata", js.Any.fromFunction1(value))
     

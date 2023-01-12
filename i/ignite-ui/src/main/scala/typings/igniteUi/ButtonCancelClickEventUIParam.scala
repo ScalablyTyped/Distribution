@@ -23,7 +23,8 @@ object ButtonCancelClickEventUIParam {
     __obj.asInstanceOf[ButtonCancelClickEventUIParam]
   }
   
-  extension [Self <: ButtonCancelClickEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonCancelClickEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setModalDialog(value: String): Self = StObject.set(x, "modalDialog", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object GetObjectMetadataOutput {
     __obj.asInstanceOf[GetObjectMetadataOutput]
   }
   
-  extension [Self <: GetObjectMetadataOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectMetadataOutput] (val x: Self) extends AnyVal {
     
     inline def setMetadataBlob(value: PayloadBlob): Self = StObject.set(x, "MetadataBlob", value.asInstanceOf[js.Any])
     

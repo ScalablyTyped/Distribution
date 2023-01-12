@@ -69,7 +69,8 @@ object distTypesInternalObservableGenerateMod {
       __obj.asInstanceOf[GenerateBaseOptions[S]]
     }
     
-    extension [Self <: GenerateBaseOptions[?], S](x: Self & GenerateBaseOptions[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateBaseOptions[?], S] (val x: Self & GenerateBaseOptions[S]) extends AnyVal {
       
       inline def setCondition(value: S => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
       
@@ -106,7 +107,8 @@ object distTypesInternalObservableGenerateMod {
       __obj.asInstanceOf[GenerateOptions[T, S]]
     }
     
-    extension [Self <: GenerateOptions[?, ?], T, S](x: Self & (GenerateOptions[T, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptions[?, ?], T, S] (val x: Self & (GenerateOptions[T, S])) extends AnyVal {
       
       inline def setResultSelector(value: S => T): Self = StObject.set(x, "resultSelector", js.Any.fromFunction1(value))
     }

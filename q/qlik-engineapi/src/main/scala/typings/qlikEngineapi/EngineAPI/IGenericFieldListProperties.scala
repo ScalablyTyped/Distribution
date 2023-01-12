@@ -23,7 +23,8 @@ object IGenericFieldListProperties {
     __obj.asInstanceOf[IGenericFieldListProperties]
   }
   
-  extension [Self <: IGenericFieldListProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericFieldListProperties] (val x: Self) extends AnyVal {
     
     inline def setQFieldListDef(value: IFieldListDef): Self = StObject.set(x, "qFieldListDef", value.asInstanceOf[js.Any])
   }

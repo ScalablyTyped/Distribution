@@ -32,7 +32,8 @@ object DeleteFileSystemRequest {
     __obj.asInstanceOf[DeleteFileSystemRequest]
   }
   
-  extension [Self <: DeleteFileSystemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileSystemRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

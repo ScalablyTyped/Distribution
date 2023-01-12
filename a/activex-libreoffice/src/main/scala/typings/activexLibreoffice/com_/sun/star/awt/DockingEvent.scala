@@ -39,7 +39,8 @@ object DockingEvent {
     __obj.asInstanceOf[DockingEvent]
   }
   
-  extension [Self <: DockingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DockingEvent] (val x: Self) extends AnyVal {
     
     inline def setBInteractive(value: Boolean): Self = StObject.set(x, "bInteractive", value.asInstanceOf[js.Any])
     

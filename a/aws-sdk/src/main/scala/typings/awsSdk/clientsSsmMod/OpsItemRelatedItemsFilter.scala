@@ -32,7 +32,8 @@ object OpsItemRelatedItemsFilter {
     __obj.asInstanceOf[OpsItemRelatedItemsFilter]
   }
   
-  extension [Self <: OpsItemRelatedItemsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpsItemRelatedItemsFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: OpsItemRelatedItemsFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

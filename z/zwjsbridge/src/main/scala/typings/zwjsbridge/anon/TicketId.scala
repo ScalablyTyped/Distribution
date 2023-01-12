@@ -15,7 +15,8 @@ object TicketId {
     __obj.asInstanceOf[TicketId]
   }
   
-  extension [Self <: TicketId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TicketId] (val x: Self) extends AnyVal {
     
     inline def setTicketId(value: String): Self = StObject.set(x, "ticketId", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object XDictionaryEntry {
     __obj.asInstanceOf[XDictionaryEntry]
   }
   
-  extension [Self <: XDictionaryEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDictionaryEntry] (val x: Self) extends AnyVal {
     
     inline def setDictionaryWord(value: String): Self = StObject.set(x, "DictionaryWord", value.asInstanceOf[js.Any])
     

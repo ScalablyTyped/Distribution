@@ -32,7 +32,8 @@ object AsyncType {
     __obj.asInstanceOf[AsyncType]
   }
   
-  extension [Self <: AsyncType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncType] (val x: Self) extends AnyVal {
     
     inline def setAsyncType(value: AsyncDependencyType): Self = StObject.set(x, "asyncType", value.asInstanceOf[js.Any])
     

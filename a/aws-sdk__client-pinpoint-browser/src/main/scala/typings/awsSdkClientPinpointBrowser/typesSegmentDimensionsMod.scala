@@ -62,7 +62,8 @@ object typesSegmentDimensionsMod {
       __obj.asInstanceOf[SegmentDimensions]
     }
     
-    extension [Self <: SegmentDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentDimensions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[AttributeDimension] | (js.Iterable[js.Tuple2[String, AttributeDimension]])): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object typesSegmentDimensionsMod {
       __obj.asInstanceOf[UnmarshalledSegmentDimensions]
     }
     
-    extension [Self <: UnmarshalledSegmentDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSegmentDimensions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[UnmarshalledAttributeDimension]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       

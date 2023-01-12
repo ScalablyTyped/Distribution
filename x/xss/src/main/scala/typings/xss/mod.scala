@@ -84,7 +84,8 @@ object mod {
           __obj.asInstanceOf[typings.xss.mod.global.XSS.ICSSFilter]
         }
         
-        extension [Self <: typings.xss.mod.global.XSS.ICSSFilter](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.xss.mod.global.XSS.ICSSFilter] (val x: Self) extends AnyVal {
           
           inline def setProcess(value: String => String): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
         }
@@ -125,7 +126,8 @@ object mod {
           __obj.asInstanceOf[typings.xss.mod.global.XSS.IFilterXSSOptions]
         }
         
-        extension [Self <: typings.xss.mod.global.XSS.IFilterXSSOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.xss.mod.global.XSS.IFilterXSSOptions] (val x: Self) extends AnyVal {
           
           inline def setAllowCommentTag(value: Boolean): Self = StObject.set(x, "allowCommentTag", value.asInstanceOf[js.Any])
           
@@ -333,7 +335,8 @@ object mod {
           __obj.asInstanceOf[typings.xss.mod.global.XSS.IWhiteList]
         }
         
-        extension [Self <: typings.xss.mod.global.XSS.IWhiteList](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.xss.mod.global.XSS.IWhiteList] (val x: Self) extends AnyVal {
           
           inline def setA(value: js.Array[String]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
           

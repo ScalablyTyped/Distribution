@@ -21,7 +21,8 @@ object TransformPivotGroupByContainer {
     __obj.asInstanceOf[TransformPivotGroupByContainer]
   }
   
-  extension [Self <: TransformPivotGroupByContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformPivotGroupByContainer] (val x: Self) extends AnyVal {
     
     inline def setDate_histogram(value: AggregationsDateHistogramAggregation): Self = StObject.set(x, "date_histogram", value.asInstanceOf[js.Any])
     

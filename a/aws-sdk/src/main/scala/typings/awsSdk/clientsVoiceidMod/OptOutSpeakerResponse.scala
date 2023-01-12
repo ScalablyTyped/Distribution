@@ -18,7 +18,8 @@ object OptOutSpeakerResponse {
     __obj.asInstanceOf[OptOutSpeakerResponse]
   }
   
-  extension [Self <: OptOutSpeakerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptOutSpeakerResponse] (val x: Self) extends AnyVal {
     
     inline def setSpeaker(value: Speaker): Self = StObject.set(x, "Speaker", value.asInstanceOf[js.Any])
     

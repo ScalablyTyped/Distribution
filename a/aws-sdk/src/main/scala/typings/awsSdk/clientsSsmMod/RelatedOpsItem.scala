@@ -18,7 +18,8 @@ object RelatedOpsItem {
     __obj.asInstanceOf[RelatedOpsItem]
   }
   
-  extension [Self <: RelatedOpsItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedOpsItem] (val x: Self) extends AnyVal {
     
     inline def setOpsItemId(value: String): Self = StObject.set(x, "OpsItemId", value.asInstanceOf[js.Any])
   }

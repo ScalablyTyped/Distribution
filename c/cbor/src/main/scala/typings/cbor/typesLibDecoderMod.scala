@@ -268,7 +268,8 @@ object typesLibDecoderMod {
       __obj.asInstanceOf[Decoder]
     }
     
-    extension [Self <: Decoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decoder] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -349,7 +350,8 @@ object typesLibDecoderMod {
       __obj.asInstanceOf[DecoderOptions]
     }
     
-    extension [Self <: DecoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoderOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -414,7 +416,8 @@ object typesLibDecoderMod {
       __obj.asInstanceOf[ExtendedResults]
     }
     
-    extension [Self <: ExtendedResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedResults] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Buffer): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       

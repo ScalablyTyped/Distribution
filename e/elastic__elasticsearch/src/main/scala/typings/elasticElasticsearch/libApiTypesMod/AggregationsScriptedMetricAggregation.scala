@@ -26,7 +26,8 @@ object AggregationsScriptedMetricAggregation {
     __obj.asInstanceOf[AggregationsScriptedMetricAggregation]
   }
   
-  extension [Self <: AggregationsScriptedMetricAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsScriptedMetricAggregation] (val x: Self) extends AnyVal {
     
     inline def setCombine_script(value: Script): Self = StObject.set(x, "combine_script", value.asInstanceOf[js.Any])
     

@@ -80,7 +80,8 @@ object ApplicationPolicy {
     __obj.asInstanceOf[ApplicationPolicy]
   }
   
-  extension [Self <: ApplicationPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationPolicy] (val x: Self) extends AnyVal {
     
     inline def setAccessibleTrackIds(value: js.Array[String]): Self = StObject.set(x, "accessibleTrackIds", value.asInstanceOf[js.Any])
     

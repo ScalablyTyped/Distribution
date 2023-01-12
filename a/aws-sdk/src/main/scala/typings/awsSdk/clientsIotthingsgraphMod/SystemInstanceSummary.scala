@@ -58,7 +58,8 @@ object SystemInstanceSummary {
     __obj.asInstanceOf[SystemInstanceSummary]
   }
   
-  extension [Self <: SystemInstanceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInstanceSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -174,7 +174,8 @@ object ICanvasRenderingContext2D {
     __obj.asInstanceOf[ICanvasRenderingContext2D]
   }
   
-  extension [Self <: ICanvasRenderingContext2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICanvasRenderingContext2D] (val x: Self) extends AnyVal {
     
     inline def setArc(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "arc", js.Any.fromFunction6(value))
     

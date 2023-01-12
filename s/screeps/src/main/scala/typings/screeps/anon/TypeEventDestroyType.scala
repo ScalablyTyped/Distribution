@@ -17,7 +17,8 @@ object TypeEventDestroyType {
     __obj.asInstanceOf[TypeEventDestroyType]
   }
   
-  extension [Self <: TypeEventDestroyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeEventDestroyType] (val x: Self) extends AnyVal {
     
     inline def setType(value: EventDestroyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

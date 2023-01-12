@@ -30,7 +30,8 @@ object ApplicationUpdateData {
     __obj.asInstanceOf[ApplicationUpdateData]
   }
   
-  extension [Self <: ApplicationUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationUpdateData] (val x: Self) extends AnyVal {
     
     inline def setShowBorders(value: Boolean): Self = StObject.set(x, "showBorders", value.asInstanceOf[js.Any])
     

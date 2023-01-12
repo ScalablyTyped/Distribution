@@ -33,7 +33,8 @@ object ArtifactContent {
     __obj.asInstanceOf[ArtifactContent]
   }
   
-  extension [Self <: ArtifactContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactContent] (val x: Self) extends AnyVal {
     
     inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     

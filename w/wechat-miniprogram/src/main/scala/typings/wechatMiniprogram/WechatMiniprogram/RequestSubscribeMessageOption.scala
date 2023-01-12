@@ -25,7 +25,8 @@ object RequestSubscribeMessageOption {
     __obj.asInstanceOf[RequestSubscribeMessageOption]
   }
   
-  extension [Self <: RequestSubscribeMessageOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestSubscribeMessageOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

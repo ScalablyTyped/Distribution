@@ -106,7 +106,8 @@ object TargetedUIEvent {
     __obj.asInstanceOf[TargetedUIEvent[Target]]
   }
   
-  extension [Self <: TargetedUIEvent[?], Target /* <: EventTarget */](x: Self & TargetedUIEvent[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedUIEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedUIEvent[Target]) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

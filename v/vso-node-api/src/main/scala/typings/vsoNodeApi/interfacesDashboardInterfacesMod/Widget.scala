@@ -89,7 +89,8 @@ object Widget {
     __obj.asInstanceOf[Widget]
   }
   
-  extension [Self <: Widget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Widget] (val x: Self) extends AnyVal {
     
     inline def setAllowedSizes(value: js.Array[WidgetSize]): Self = StObject.set(x, "allowedSizes", value.asInstanceOf[js.Any])
     

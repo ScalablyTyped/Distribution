@@ -777,7 +777,8 @@ object PlotAbandsOptions {
     __obj.asInstanceOf[PlotAbandsOptions]
   }
   
-  extension [Self <: PlotAbandsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotAbandsOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

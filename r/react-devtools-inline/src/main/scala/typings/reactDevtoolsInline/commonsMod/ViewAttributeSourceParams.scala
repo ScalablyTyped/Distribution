@@ -17,7 +17,8 @@ object ViewAttributeSourceParams {
     __obj.asInstanceOf[ViewAttributeSourceParams]
   }
   
-  extension [Self <: ViewAttributeSourceParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewAttributeSourceParams] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GetRolesData {
     __obj.asInstanceOf[GetRolesData]
   }
   
-  extension [Self <: GetRolesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRolesData] (val x: Self) extends AnyVal {
     
     inline def setName_filter(value: String): Self = StObject.set(x, "name_filter", value.asInstanceOf[js.Any])
     

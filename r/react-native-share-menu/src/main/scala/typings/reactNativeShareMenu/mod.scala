@@ -46,7 +46,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ShareData]
     }
     
-    extension [Self <: ShareData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareData] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | js.Array[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ShareListener]
     }
     
-    extension [Self <: ShareListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareListener] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }
@@ -99,7 +101,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ShareMenu]
     }
     
-    extension [Self <: ShareMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareMenu] (val x: Self) extends AnyVal {
       
       inline def setAddNewShareListener(value: ShareCallback => ShareListener): Self = StObject.set(x, "addNewShareListener", js.Any.fromFunction1(value))
       

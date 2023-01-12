@@ -27,7 +27,8 @@ object RegionFilterOption {
     __obj.asInstanceOf[RegionFilterOption]
   }
   
-  extension [Self <: RegionFilterOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionFilterOption] (val x: Self) extends AnyVal {
     
     inline def setApply(value: js.Array[String]): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     

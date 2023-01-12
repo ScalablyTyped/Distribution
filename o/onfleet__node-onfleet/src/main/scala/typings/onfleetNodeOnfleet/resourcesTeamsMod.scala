@@ -72,7 +72,8 @@ object resourcesTeamsMod {
       __obj.asInstanceOf[AutoDispatchTeamProps]
     }
     
-    extension [Self <: AutoDispatchTeamProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoDispatchTeamProps] (val x: Self) extends AnyVal {
       
       inline def setMaxAllowedDelay(value: Double): Self = StObject.set(x, "maxAllowedDelay", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object resourcesTeamsMod {
       __obj.asInstanceOf[AutoDispatchTeamResult]
     }
     
-    extension [Self <: AutoDispatchTeamResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoDispatchTeamResult] (val x: Self) extends AnyVal {
       
       inline def setDispatchId(value: String): Self = StObject.set(x, "dispatchId", value.asInstanceOf[js.Any])
     }
@@ -140,7 +142,8 @@ object resourcesTeamsMod {
       __obj.asInstanceOf[CreateTeamProps]
     }
     
-    extension [Self <: CreateTeamProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTeamProps] (val x: Self) extends AnyVal {
       
       inline def setHub(value: String): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
       
@@ -198,7 +201,8 @@ object resourcesTeamsMod {
       __obj.asInstanceOf[GetWorkerETAProps]
     }
     
-    extension [Self <: GetWorkerETAProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetWorkerETAProps] (val x: Self) extends AnyVal {
       
       inline def setDropoffLocation(value: String): Self = StObject.set(x, "dropoffLocation", value.asInstanceOf[js.Any])
       
@@ -237,7 +241,8 @@ object resourcesTeamsMod {
       __obj.asInstanceOf[GetWorkerEtaResult]
     }
     
-    extension [Self <: GetWorkerEtaResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetWorkerEtaResult] (val x: Self) extends AnyVal {
       
       inline def setSteps(value: js.Array[NavigationStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
@@ -277,7 +282,8 @@ object resourcesTeamsMod {
       __obj.asInstanceOf[NavigationStep]
     }
     
-    extension [Self <: NavigationStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationStep] (val x: Self) extends AnyVal {
       
       inline def setArrivalTime(value: Double): Self = StObject.set(x, "arrivalTime", value.asInstanceOf[js.Any])
       
@@ -324,7 +330,8 @@ object resourcesTeamsMod {
       __obj.asInstanceOf[OnfleetTeam]
     }
     
-    extension [Self <: OnfleetTeam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnfleetTeam] (val x: Self) extends AnyVal {
       
       inline def setHub(value: String): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
       
@@ -384,7 +391,8 @@ object resourcesTeamsMod {
       __obj.asInstanceOf[UpdateTeamProps]
     }
     
-    extension [Self <: UpdateTeamProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateTeamProps] (val x: Self) extends AnyVal {
       
       inline def setHub(value: String): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
       

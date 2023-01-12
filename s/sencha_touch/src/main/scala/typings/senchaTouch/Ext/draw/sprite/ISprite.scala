@@ -200,7 +200,8 @@ object ISprite {
     __obj.asInstanceOf[ISprite]
   }
   
-  extension [Self <: ISprite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISprite] (val x: Self) extends AnyVal {
     
     inline def setA(value: Double): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
     

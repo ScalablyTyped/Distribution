@@ -34,7 +34,8 @@ object JunctionSourceJSON {
     __obj.asInstanceOf[JunctionSourceJSON]
   }
   
-  extension [Self <: JunctionSourceJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JunctionSourceJSON] (val x: Self) extends AnyVal {
     
     inline def setAssetGroups(value: js.Array[AssetGroupJSON]): Self = StObject.set(x, "assetGroups", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object EChartsResponsiveOption {
     __obj.asInstanceOf[EChartsResponsiveOption]
   }
   
-  extension [Self <: EChartsResponsiveOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EChartsResponsiveOption] (val x: Self) extends AnyVal {
     
     inline def setBaseOption(value: EChartOption[Series]): Self = StObject.set(x, "baseOption", value.asInstanceOf[js.Any])
     

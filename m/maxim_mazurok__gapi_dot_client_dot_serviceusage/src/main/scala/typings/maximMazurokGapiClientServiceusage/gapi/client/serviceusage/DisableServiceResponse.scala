@@ -16,7 +16,8 @@ object DisableServiceResponse {
     __obj.asInstanceOf[DisableServiceResponse]
   }
   
-  extension [Self <: DisableServiceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableServiceResponse] (val x: Self) extends AnyVal {
     
     inline def setService(value: GoogleApiServiceusageV1Service): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

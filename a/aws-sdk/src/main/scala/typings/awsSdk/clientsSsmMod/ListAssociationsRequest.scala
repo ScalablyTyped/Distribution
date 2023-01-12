@@ -28,7 +28,8 @@ object ListAssociationsRequest {
     __obj.asInstanceOf[ListAssociationsRequest]
   }
   
-  extension [Self <: ListAssociationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssociationsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationFilterList(value: AssociationFilterList): Self = StObject.set(x, "AssociationFilterList", value.asInstanceOf[js.Any])
     

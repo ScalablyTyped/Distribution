@@ -17,7 +17,8 @@ object JsxMapElementProps {
     __obj.asInstanceOf[JsxMapElementProps]
   }
   
-  extension [Self <: JsxMapElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxMapElementProps] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

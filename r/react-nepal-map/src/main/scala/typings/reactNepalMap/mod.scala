@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[DistrictMapTypes]
     }
     
-    extension [Self <: DistrictMapTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistrictMapTypes] (val x: Self) extends AnyVal {
       
       inline def setProvince(value: Double): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod {
       __obj.asInstanceOf[MapMetaDataTypes]
     }
     
-    extension [Self <: MapMetaDataTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapMetaDataTypes] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object mod {
       __obj.asInstanceOf[MapPropsTypes]
     }
     
-    extension [Self <: MapPropsTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapPropsTypes] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -155,7 +158,8 @@ object mod {
       __obj.asInstanceOf[ProvinceMapPropsTypes]
     }
     
-    extension [Self <: ProvinceMapPropsTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvinceMapPropsTypes] (val x: Self) extends AnyVal {
       
       inline def setProvinceColor(value: js.Array[String]): Self = StObject.set(x, "provinceColor", value.asInstanceOf[js.Any])
       
@@ -178,7 +182,8 @@ object mod {
       __obj.asInstanceOf[ProvinceMapTypes]
     }
     
-    extension [Self <: ProvinceMapTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvinceMapTypes] (val x: Self) extends AnyVal {
       
       inline def setZip(value: Double): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     }
@@ -197,7 +202,8 @@ object mod {
       __obj.asInstanceOf[ZonalMapTypes]
     }
     
-    extension [Self <: ZonalMapTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZonalMapTypes] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -220,7 +226,8 @@ object mod {
       __obj.asInstanceOf[itemProps]
     }
     
-    extension [Self <: itemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: itemProps] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

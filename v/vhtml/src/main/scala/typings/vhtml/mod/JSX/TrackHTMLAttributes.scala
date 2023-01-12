@@ -25,7 +25,8 @@ object TrackHTMLAttributes {
     __obj.asInstanceOf[TrackHTMLAttributes]
   }
   
-  extension [Self <: TrackHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

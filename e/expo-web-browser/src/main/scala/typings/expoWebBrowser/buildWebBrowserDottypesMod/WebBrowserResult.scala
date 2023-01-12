@@ -21,7 +21,8 @@ object WebBrowserResult {
     __obj.asInstanceOf[WebBrowserResult]
   }
   
-  extension [Self <: WebBrowserResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebBrowserResult] (val x: Self) extends AnyVal {
     
     inline def setType(value: WebBrowserResultType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

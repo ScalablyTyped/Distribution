@@ -46,7 +46,8 @@ object WorkspaceSymbolProvider {
     __obj.asInstanceOf[WorkspaceSymbolProvider[T]]
   }
   
-  extension [Self <: WorkspaceSymbolProvider[?], T /* <: SymbolInformation */](x: Self & WorkspaceSymbolProvider[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceSymbolProvider[?], T /* <: SymbolInformation */] (val x: Self & WorkspaceSymbolProvider[T]) extends AnyVal {
     
     inline def setProvideWorkspaceSymbols(value: (String, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideWorkspaceSymbols", js.Any.fromFunction2(value))
     

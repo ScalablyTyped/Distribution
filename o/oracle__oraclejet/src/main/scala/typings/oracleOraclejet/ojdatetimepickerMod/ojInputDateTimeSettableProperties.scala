@@ -71,7 +71,8 @@ object ojInputDateTimeSettableProperties {
     __obj.asInstanceOf[ojInputDateTimeSettableProperties]
   }
   
-  extension [Self <: ojInputDateTimeSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojInputDateTimeSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setTimePicker(value: FooterLayout): Self = StObject.set(x, "timePicker", value.asInstanceOf[js.Any])
     

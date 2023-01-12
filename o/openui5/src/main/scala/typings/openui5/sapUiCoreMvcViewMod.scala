@@ -1303,7 +1303,8 @@ object sapUiCoreMvcViewMod {
       __obj.asInstanceOf[ViewSettings]
     }
     
-    extension [Self <: ViewSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewSettings] (val x: Self) extends AnyVal {
       
       inline def setAfterInit(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
       

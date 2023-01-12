@@ -18,7 +18,8 @@ object SpreadsheetRemoveSheetEvent {
     __obj.asInstanceOf[SpreadsheetRemoveSheetEvent]
   }
   
-  extension [Self <: SpreadsheetRemoveSheetEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetRemoveSheetEvent] (val x: Self) extends AnyVal {
     
     inline def setSheet(value: Sheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     

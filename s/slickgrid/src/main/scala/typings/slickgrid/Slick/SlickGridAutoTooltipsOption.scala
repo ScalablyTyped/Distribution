@@ -33,7 +33,8 @@ object SlickGridAutoTooltipsOption {
     __obj.asInstanceOf[SlickGridAutoTooltipsOption]
   }
   
-  extension [Self <: SlickGridAutoTooltipsOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlickGridAutoTooltipsOption] (val x: Self) extends AnyVal {
     
     inline def setEnableForCells(value: Boolean): Self = StObject.set(x, "enableForCells", value.asInstanceOf[js.Any])
     

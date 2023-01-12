@@ -38,7 +38,8 @@ object ASPxClientRadarDiagram {
     __obj.asInstanceOf[ASPxClientRadarDiagram]
   }
   
-  extension [Self <: ASPxClientRadarDiagram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRadarDiagram] (val x: Self) extends AnyVal {
     
     inline def setDiagramToPoint(value: (Any, Any) => ASPxClientControlCoordinates): Self = StObject.set(x, "DiagramToPoint", js.Any.fromFunction2(value))
     

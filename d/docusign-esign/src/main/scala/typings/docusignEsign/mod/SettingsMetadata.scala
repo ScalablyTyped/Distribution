@@ -46,7 +46,8 @@ object SettingsMetadata {
     __obj.asInstanceOf[SettingsMetadata]
   }
   
-  extension [Self <: SettingsMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingsMetadata] (val x: Self) extends AnyVal {
     
     inline def setIs21CFRPart11(value: String): Self = StObject.set(x, "is21CFRPart11", value.asInstanceOf[js.Any])
     

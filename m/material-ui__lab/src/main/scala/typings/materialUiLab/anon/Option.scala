@@ -17,7 +17,8 @@ object Option {
     __obj.asInstanceOf[Option[T]]
   }
   
-  extension [Self <: Option[?], T](x: Self & Option[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Option[?], T] (val x: Self & Option[T]) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

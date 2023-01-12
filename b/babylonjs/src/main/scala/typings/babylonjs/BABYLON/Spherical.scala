@@ -244,7 +244,8 @@ object Spherical {
     __obj.asInstanceOf[Spherical]
   }
   
-  extension [Self <: Spherical](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spherical] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Spherical => Spherical): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

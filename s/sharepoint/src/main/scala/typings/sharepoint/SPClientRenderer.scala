@@ -56,7 +56,8 @@ object SPClientRenderer {
     __obj.asInstanceOf[SPClientRenderer]
   }
   
-  extension [Self <: SPClientRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SPClientRenderer] (val x: Self) extends AnyVal {
     
     inline def setAddCallStackInfoToErrors(value: Boolean): Self = StObject.set(x, "AddCallStackInfoToErrors", value.asInstanceOf[js.Any])
     

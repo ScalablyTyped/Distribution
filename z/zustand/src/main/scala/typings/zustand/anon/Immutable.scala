@@ -23,7 +23,8 @@ object Immutable {
     __obj.asInstanceOf[Immutable]
   }
   
-  extension [Self <: Immutable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Immutable] (val x: Self) extends AnyVal {
     
     inline def setImmutable(value: Any): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
     

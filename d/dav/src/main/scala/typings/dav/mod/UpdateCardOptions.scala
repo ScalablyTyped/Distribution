@@ -24,7 +24,8 @@ object UpdateCardOptions {
     __obj.asInstanceOf[UpdateCardOptions]
   }
   
-  extension [Self <: UpdateCardOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCardOptions] (val x: Self) extends AnyVal {
     
     inline def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     

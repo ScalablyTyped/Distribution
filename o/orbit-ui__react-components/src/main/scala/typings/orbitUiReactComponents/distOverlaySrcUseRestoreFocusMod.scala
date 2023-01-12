@@ -27,7 +27,8 @@ object distOverlaySrcUseRestoreFocusMod {
       __obj.asInstanceOf[UseRestoreFocusOptions]
     }
     
-    extension [Self <: UseRestoreFocusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseRestoreFocusOptions] (val x: Self) extends AnyVal {
       
       inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       

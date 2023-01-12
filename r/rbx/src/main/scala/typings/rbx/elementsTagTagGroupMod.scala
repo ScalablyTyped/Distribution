@@ -80,7 +80,8 @@ object elementsTagTagGroupMod {
       __obj.asInstanceOf[TagGroupModifierProps]
     }
     
-    extension [Self <: TagGroupModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagGroupModifierProps] (val x: Self) extends AnyVal {
       
       inline def setGapless(value: Boolean): Self = StObject.set(x, "gapless", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object elementsTagTagGroupMod {
       __obj.asInstanceOf[TagGroupProps]
     }
     
-    extension [Self <: TagGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagGroupProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -340,7 +342,8 @@ object elementsTagTagGroupMod {
       __obj.asInstanceOf[TagGroupVariables]
     }
     
-    extension [Self <: TagGroupVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagGroupVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
@@ -357,7 +360,8 @@ object elementsTagTagGroupMod {
       __obj.asInstanceOf[TagGroupVariablesDefaults]
     }
     
-    extension [Self <: TagGroupVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagGroupVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }

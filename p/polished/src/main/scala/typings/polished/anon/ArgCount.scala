@@ -32,7 +32,8 @@ object ArgCount {
     __obj.asInstanceOf[ArgCount]
   }
   
-  extension [Self <: ArgCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgCount] (val x: Self) extends AnyVal {
     
     inline def setArgCount(value: `2`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     

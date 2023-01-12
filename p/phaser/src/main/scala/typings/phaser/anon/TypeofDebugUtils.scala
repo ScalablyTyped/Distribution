@@ -17,7 +17,8 @@ object TypeofDebugUtils {
     __obj.asInstanceOf[TypeofDebugUtils]
   }
   
-  extension [Self <: TypeofDebugUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDebugUtils] (val x: Self) extends AnyVal {
     
     inline def setLogBones(value: Skeleton => Unit): Self = StObject.set(x, "logBones", js.Any.fromFunction1(value))
   }

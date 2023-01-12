@@ -18,7 +18,8 @@ object IPSet {
     __obj.asInstanceOf[IPSet]
   }
   
-  extension [Self <: IPSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPSet] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: VariableDefinitionList): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     

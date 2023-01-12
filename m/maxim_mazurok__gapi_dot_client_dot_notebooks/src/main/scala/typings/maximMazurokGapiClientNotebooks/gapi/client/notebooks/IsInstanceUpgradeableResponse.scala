@@ -25,7 +25,8 @@ object IsInstanceUpgradeableResponse {
     __obj.asInstanceOf[IsInstanceUpgradeableResponse]
   }
   
-  extension [Self <: IsInstanceUpgradeableResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsInstanceUpgradeableResponse] (val x: Self) extends AnyVal {
     
     inline def setUpgradeImage(value: String): Self = StObject.set(x, "upgradeImage", value.asInstanceOf[js.Any])
     

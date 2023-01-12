@@ -60,7 +60,8 @@ object InputFieldOptions {
     __obj.asInstanceOf[InputFieldOptions]
   }
   
-  extension [Self <: InputFieldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputFieldOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoComplete(value: js.Array[String] | Autocompletion): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     

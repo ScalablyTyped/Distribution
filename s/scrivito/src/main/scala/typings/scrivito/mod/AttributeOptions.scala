@@ -17,7 +17,8 @@ object AttributeOptions {
     __obj.asInstanceOf[AttributeOptions]
   }
   
-  extension [Self <: AttributeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeOptions] (val x: Self) extends AnyVal {
     
     inline def setOnly(value: String | js.Array[String]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     

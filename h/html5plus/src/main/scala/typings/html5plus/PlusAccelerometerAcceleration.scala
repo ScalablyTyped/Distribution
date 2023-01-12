@@ -43,7 +43,8 @@ object PlusAccelerometerAcceleration {
     __obj.asInstanceOf[PlusAccelerometerAcceleration]
   }
   
-  extension [Self <: PlusAccelerometerAcceleration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusAccelerometerAcceleration] (val x: Self) extends AnyVal {
     
     inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object `5` {
     __obj.asInstanceOf[`5`[State]]
   }
   
-  extension [Self <: `5`[?], State /* <: Lookup[Any] */](x: Self & `5`[State]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `5`[?], State /* <: Lookup[Any] */] (val x: Self & `5`[State]) extends AnyVal {
     
     inline def setTo(value: GoalValues[State] | Falsy): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     

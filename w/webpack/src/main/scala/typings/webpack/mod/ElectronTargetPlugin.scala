@@ -19,7 +19,8 @@ object ElectronTargetPlugin {
     __obj.asInstanceOf[ElectronTargetPlugin]
   }
   
-  extension [Self <: ElectronTargetPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElectronTargetPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
   }

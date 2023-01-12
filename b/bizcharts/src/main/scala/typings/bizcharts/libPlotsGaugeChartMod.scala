@@ -29,7 +29,8 @@ object libPlotsGaugeChartMod extends Shortcut {
       __obj.asInstanceOf[GaugeOptions]
     }
     
-    extension [Self <: GaugeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaugeOptions] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

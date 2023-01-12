@@ -67,7 +67,8 @@ object libInputClearableLabeledInputMod {
       __obj.asInstanceOf[BasicProps]
     }
     
-    extension [Self <: BasicProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicProps] (val x: Self) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object libInputClearableLabeledInputMod {
       __obj.asInstanceOf[ClearableInputProps]
     }
     
-    extension [Self <: ClearableInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearableInputProps] (val x: Self) extends AnyVal {
       
       inline def setAddonAfter(value: ReactNode): Self = StObject.set(x, "addonAfter", value.asInstanceOf[js.Any])
       

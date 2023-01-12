@@ -114,7 +114,8 @@ object VMVerificationStatus {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setDependencyId(value: typings.libraCore.`lib@GeneratedLanguageStoragePbMod`.ModuleId.AsObject): Self = StObject.set(x, "dependencyId", value.asInstanceOf[js.Any])
       

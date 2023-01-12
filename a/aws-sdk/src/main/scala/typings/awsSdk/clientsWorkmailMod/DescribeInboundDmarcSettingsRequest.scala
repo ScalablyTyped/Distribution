@@ -18,7 +18,8 @@ object DescribeInboundDmarcSettingsRequest {
     __obj.asInstanceOf[DescribeInboundDmarcSettingsRequest]
   }
   
-  extension [Self <: DescribeInboundDmarcSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInboundDmarcSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }

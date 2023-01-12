@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Env]
     }
     
-    extension [Self <: Env](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
       
       inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       

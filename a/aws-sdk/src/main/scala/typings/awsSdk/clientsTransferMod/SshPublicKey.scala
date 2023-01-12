@@ -28,7 +28,8 @@ object SshPublicKey {
     __obj.asInstanceOf[SshPublicKey]
   }
   
-  extension [Self <: SshPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SshPublicKey] (val x: Self) extends AnyVal {
     
     inline def setDateImported(value: js.Date): Self = StObject.set(x, "DateImported", value.asInstanceOf[js.Any])
     

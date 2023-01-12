@@ -24,7 +24,8 @@ object mod {
       __obj.asInstanceOf[NodeLike]
     }
     
-    extension [Self <: NodeLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeLike] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: PositionLike): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object mod {
       __obj.asInstanceOf[PointLike]
     }
     
-    extension [Self <: PointLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointLike] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object mod {
       __obj.asInstanceOf[PositionLike]
     }
     
-    extension [Self <: PositionLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionLike] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: PointLike): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

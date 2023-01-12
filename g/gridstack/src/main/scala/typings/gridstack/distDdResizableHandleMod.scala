@@ -31,7 +31,8 @@ object distDdResizableHandleMod {
       __obj.asInstanceOf[DDResizableHandleOpt]
     }
     
-    extension [Self <: DDResizableHandleOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDResizableHandleOpt] (val x: Self) extends AnyVal {
       
       inline def setMove(value: /* event */ Any => Unit): Self = StObject.set(x, "move", js.Any.fromFunction1(value))
       

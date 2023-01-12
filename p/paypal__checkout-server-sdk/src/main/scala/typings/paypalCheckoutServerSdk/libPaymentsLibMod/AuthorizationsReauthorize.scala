@@ -17,7 +17,8 @@ object AuthorizationsReauthorize {
       __obj.asInstanceOf[RequestData]
     }
     
-    extension [Self <: RequestData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestData] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     }
@@ -39,7 +40,8 @@ object AuthorizationsReauthorize {
       __obj.asInstanceOf[RequestHeaders]
     }
     
-    extension [Self <: RequestHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHeaders] (val x: Self) extends AnyVal {
       
       inline def `setPayPal-Request-Id`(value: String): Self = StObject.set(x, "PayPal-Request-Id", value.asInstanceOf[js.Any])
       

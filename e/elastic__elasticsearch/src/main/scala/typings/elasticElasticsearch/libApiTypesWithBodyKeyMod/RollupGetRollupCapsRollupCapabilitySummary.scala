@@ -27,7 +27,8 @@ object RollupGetRollupCapsRollupCapabilitySummary {
     __obj.asInstanceOf[RollupGetRollupCapsRollupCapabilitySummary]
   }
   
-  extension [Self <: RollupGetRollupCapsRollupCapabilitySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupGetRollupCapsRollupCapabilitySummary] (val x: Self) extends AnyVal {
     
     inline def setFields(value: Record[Field, Record[String, Any]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

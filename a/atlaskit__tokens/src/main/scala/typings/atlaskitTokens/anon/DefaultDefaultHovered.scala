@@ -18,7 +18,8 @@ object DefaultDefaultHovered {
     __obj.asInstanceOf[DefaultDefaultHovered]
   }
   
-  extension [Self <: DefaultDefaultHovered](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultDefaultHovered] (val x: Self) extends AnyVal {
     
     inline def setBold(value: DefaultHovered): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

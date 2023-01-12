@@ -18,7 +18,8 @@ object Register {
     __obj.asInstanceOf[Register[T, TEngine]]
   }
   
-  extension [Self <: Register[?, ?], T /* <: Entity */, TEngine](x: Self & (Register[T, TEngine])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Register[?, ?], T /* <: Entity */, TEngine] (val x: Self & (Register[T, TEngine])) extends AnyVal {
     
     inline def setRegister(value: (EntitySource[T, Any], Any) => Adapter[TEngine]): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
   }

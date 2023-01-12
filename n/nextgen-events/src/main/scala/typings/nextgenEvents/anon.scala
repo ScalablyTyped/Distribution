@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Ack]
     }
     
-    extension [Self <: Ack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ack] (val x: Self) extends AnyVal {
       
       inline def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Async]
     }
     
-    extension [Self <: Async](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Async] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Any): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

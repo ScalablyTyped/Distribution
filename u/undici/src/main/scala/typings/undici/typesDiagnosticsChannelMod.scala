@@ -29,7 +29,8 @@ object typesDiagnosticsChannelMod {
         __obj.asInstanceOf[ClientBeforeConnectMessage]
       }
       
-      extension [Self <: ClientBeforeConnectMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientBeforeConnectMessage] (val x: Self) extends AnyVal {
         
         inline def setConnectParams(value: ConnectParams): Self = StObject.set(x, "connectParams", value.asInstanceOf[js.Any])
         
@@ -58,7 +59,8 @@ object typesDiagnosticsChannelMod {
         __obj.asInstanceOf[ClientConnectErrorMessage]
       }
       
-      extension [Self <: ClientConnectErrorMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientConnectErrorMessage] (val x: Self) extends AnyVal {
         
         inline def setConnectParams(value: ConnectParams): Self = StObject.set(x, "connectParams", value.asInstanceOf[js.Any])
         
@@ -89,7 +91,8 @@ object typesDiagnosticsChannelMod {
         __obj.asInstanceOf[ClientConnectedMessage]
       }
       
-      extension [Self <: ClientConnectedMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientConnectedMessage] (val x: Self) extends AnyVal {
         
         inline def setConnectParams(value: ConnectParams): Self = StObject.set(x, "connectParams", value.asInstanceOf[js.Any])
         
@@ -118,7 +121,8 @@ object typesDiagnosticsChannelMod {
         __obj.asInstanceOf[ClientSendHeadersMessage]
       }
       
-      extension [Self <: ClientSendHeadersMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientSendHeadersMessage] (val x: Self) extends AnyVal {
         
         inline def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
@@ -147,7 +151,8 @@ object typesDiagnosticsChannelMod {
         __obj.asInstanceOf[ConnectParams]
       }
       
-      extension [Self <: ConnectParams](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConnectParams] (val x: Self) extends AnyVal {
         
         inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
@@ -188,7 +193,8 @@ object typesDiagnosticsChannelMod {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setAddHeader(value: (String, String) => Request): Self = StObject.set(x, "addHeader", js.Any.fromFunction2(value))
         
@@ -219,7 +225,8 @@ object typesDiagnosticsChannelMod {
         __obj.asInstanceOf[RequestBodySentMessage]
       }
       
-      extension [Self <: RequestBodySentMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestBodySentMessage] (val x: Self) extends AnyVal {
         
         inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       }
@@ -236,7 +243,8 @@ object typesDiagnosticsChannelMod {
         __obj.asInstanceOf[RequestCreateMessage]
       }
       
-      extension [Self <: RequestCreateMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestCreateMessage] (val x: Self) extends AnyVal {
         
         inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       }
@@ -255,7 +263,8 @@ object typesDiagnosticsChannelMod {
         __obj.asInstanceOf[RequestErrorMessage]
       }
       
-      extension [Self <: RequestErrorMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestErrorMessage] (val x: Self) extends AnyVal {
         
         inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
@@ -276,7 +285,8 @@ object typesDiagnosticsChannelMod {
         __obj.asInstanceOf[RequestHeadersMessage]
       }
       
-      extension [Self <: RequestHeadersMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestHeadersMessage] (val x: Self) extends AnyVal {
         
         inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
@@ -297,7 +307,8 @@ object typesDiagnosticsChannelMod {
         __obj.asInstanceOf[RequestTrailersMessage]
       }
       
-      extension [Self <: RequestTrailersMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestTrailersMessage] (val x: Self) extends AnyVal {
         
         inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
@@ -322,7 +333,8 @@ object typesDiagnosticsChannelMod {
         __obj.asInstanceOf[Response]
       }
       
-      extension [Self <: Response](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
         
         inline def setHeaders(value: js.Array[Buffer]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         

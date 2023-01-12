@@ -17,7 +17,8 @@ object PaginatorState {
     __obj.asInstanceOf[PaginatorState]
   }
   
-  extension [Self <: PaginatorState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginatorState] (val x: Self) extends AnyVal {
     
     inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

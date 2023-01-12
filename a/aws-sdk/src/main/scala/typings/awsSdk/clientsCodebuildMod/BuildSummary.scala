@@ -38,7 +38,8 @@ object BuildSummary {
     __obj.asInstanceOf[BuildSummary]
   }
   
-  extension [Self <: BuildSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

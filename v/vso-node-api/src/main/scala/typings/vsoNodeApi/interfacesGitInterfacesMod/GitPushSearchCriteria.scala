@@ -35,7 +35,8 @@ object GitPushSearchCriteria {
     __obj.asInstanceOf[GitPushSearchCriteria]
   }
   
-  extension [Self <: GitPushSearchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPushSearchCriteria] (val x: Self) extends AnyVal {
     
     inline def setFromDate(value: js.Date): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     

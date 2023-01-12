@@ -47,7 +47,8 @@ object RadarChartProps {
     __obj.asInstanceOf[RadarChartProps]
   }
   
-  extension [Self <: RadarChartProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadarChartProps] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String | AnimationParam | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

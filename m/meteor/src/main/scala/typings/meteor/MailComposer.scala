@@ -26,7 +26,8 @@ object MailComposer {
     __obj.asInstanceOf[MailComposer]
   }
   
-  extension [Self <: MailComposer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailComposer] (val x: Self) extends AnyVal {
     
     inline def setAddHeader(value: (String, String) => Unit): Self = StObject.set(x, "addHeader", js.Any.fromFunction2(value))
     

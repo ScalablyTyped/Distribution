@@ -655,7 +655,8 @@ object lightsShadowsShadowGeneratorMod {
       __obj.asInstanceOf[ICustomShaderOptions]
     }
     
-    extension [Self <: ICustomShaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomShaderOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

@@ -71,7 +71,8 @@ object XProofreadingIterator {
     __obj.asInstanceOf[XProofreadingIterator]
   }
   
-  extension [Self <: XProofreadingIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XProofreadingIterator] (val x: Self) extends AnyVal {
     
     inline def setCheckSentenceAtPosition(value: (XInterface, XFlatParagraph, String, Locale, Double, Double, Double) => ProofreadingResult): Self = StObject.set(x, "checkSentenceAtPosition", js.Any.fromFunction7(value))
     

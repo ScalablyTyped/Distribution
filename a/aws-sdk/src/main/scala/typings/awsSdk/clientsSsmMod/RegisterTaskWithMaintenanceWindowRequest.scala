@@ -97,7 +97,8 @@ object RegisterTaskWithMaintenanceWindowRequest {
     __obj.asInstanceOf[RegisterTaskWithMaintenanceWindowRequest]
   }
   
-  extension [Self <: RegisterTaskWithMaintenanceWindowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterTaskWithMaintenanceWindowRequest] (val x: Self) extends AnyVal {
     
     inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "AlarmConfiguration", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object RadioGroupChangeEvent {
     __obj.asInstanceOf[RadioGroupChangeEvent]
   }
   
-  extension [Self <: RadioGroupChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioGroupChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     

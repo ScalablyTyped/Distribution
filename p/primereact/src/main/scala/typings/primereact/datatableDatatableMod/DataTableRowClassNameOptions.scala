@@ -15,7 +15,8 @@ object DataTableRowClassNameOptions {
     __obj.asInstanceOf[DataTableRowClassNameOptions]
   }
   
-  extension [Self <: DataTableRowClassNameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableRowClassNameOptions] (val x: Self) extends AnyVal {
     
     inline def setProps(value: DataTableProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }

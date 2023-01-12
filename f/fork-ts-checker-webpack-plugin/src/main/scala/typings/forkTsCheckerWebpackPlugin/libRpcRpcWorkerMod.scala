@@ -37,7 +37,8 @@ object libRpcRpcWorkerMod {
       __obj.asInstanceOf[RpcWorkerBase]
     }
     
-    extension [Self <: RpcWorkerBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RpcWorkerBase] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       

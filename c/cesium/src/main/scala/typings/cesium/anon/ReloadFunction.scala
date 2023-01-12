@@ -27,7 +27,8 @@ object ReloadFunction {
     __obj.asInstanceOf[ReloadFunction]
   }
   
-  extension [Self <: ReloadFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReloadFunction] (val x: Self) extends AnyVal {
     
     inline def setClock(value: typings.cesium.mod.Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     

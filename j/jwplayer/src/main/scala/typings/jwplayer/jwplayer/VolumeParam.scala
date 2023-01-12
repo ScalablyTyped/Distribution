@@ -15,7 +15,8 @@ object VolumeParam {
     __obj.asInstanceOf[VolumeParam]
   }
   
-  extension [Self <: VolumeParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeParam] (val x: Self) extends AnyVal {
     
     inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }

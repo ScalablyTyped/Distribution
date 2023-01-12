@@ -19,7 +19,8 @@ object MlNerInferenceOptions {
     __obj.asInstanceOf[MlNerInferenceOptions]
   }
   
-  extension [Self <: MlNerInferenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlNerInferenceOptions] (val x: Self) extends AnyVal {
     
     inline def setClassification_labels(value: js.Array[String]): Self = StObject.set(x, "classification_labels", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object AnnotationsResourceType {
     __obj.asInstanceOf[AnnotationsResourceType]
   }
   
-  extension [Self <: AnnotationsResourceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsResourceType] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: NameString): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

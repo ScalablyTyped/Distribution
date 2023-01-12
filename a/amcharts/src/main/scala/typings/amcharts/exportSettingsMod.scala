@@ -119,7 +119,8 @@ object exportSettingsMod {
       __obj.asInstanceOf[ExportSettings]
     }
     
-    extension [Self <: ExportSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportSettings] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: (Any, js.Function0[Unit]) => Any): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
       

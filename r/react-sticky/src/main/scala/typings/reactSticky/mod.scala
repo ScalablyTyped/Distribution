@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[StickyChildArgs]
     }
     
-    extension [Self <: StickyChildArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StickyChildArgs] (val x: Self) extends AnyVal {
       
       inline def setCalculatedHeight(value: Double): Self = StObject.set(x, "calculatedHeight", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[StickyProps]
     }
     
-    extension [Self <: StickyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StickyProps] (val x: Self) extends AnyVal {
       
       inline def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
       

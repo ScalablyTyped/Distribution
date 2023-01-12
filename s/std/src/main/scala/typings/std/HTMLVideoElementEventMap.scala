@@ -127,7 +127,8 @@ object HTMLVideoElementEventMap {
     __obj.asInstanceOf[HTMLVideoElementEventMap]
   }
   
-  extension [Self <: HTMLVideoElementEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLVideoElementEventMap] (val x: Self) extends AnyVal {
     
     inline def setEnterpictureinpicture(value: Event): Self = StObject.set(x, "enterpictureinpicture", value.asInstanceOf[js.Any])
     

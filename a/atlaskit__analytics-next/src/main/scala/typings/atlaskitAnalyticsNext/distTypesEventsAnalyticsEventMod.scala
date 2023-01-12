@@ -49,7 +49,8 @@ object distTypesEventsAnalyticsEventMod {
       __obj.asInstanceOf[AnalyticsEvent]
     }
     
-    extension [Self <: AnalyticsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsEvent] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: AnalyticsEventPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distTypesEventsAnalyticsEventMod {
       __obj.asInstanceOf[AnalyticsEventProps]
     }
     
-    extension [Self <: AnalyticsEventProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsEventProps] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: AnalyticsEventPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }

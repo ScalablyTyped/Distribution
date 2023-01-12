@@ -38,7 +38,8 @@ object SelectAggregateResourceConfigRequest {
     __obj.asInstanceOf[SelectAggregateResourceConfigRequest]
   }
   
-  extension [Self <: SelectAggregateResourceConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectAggregateResourceConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
     

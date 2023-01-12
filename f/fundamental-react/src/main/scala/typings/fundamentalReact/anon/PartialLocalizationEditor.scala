@@ -470,7 +470,8 @@ object PartialLocalizationEditor {
     __obj.asInstanceOf[PartialLocalizationEditor]
   }
   
-  extension [Self <: PartialLocalizationEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLocalizationEditor] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

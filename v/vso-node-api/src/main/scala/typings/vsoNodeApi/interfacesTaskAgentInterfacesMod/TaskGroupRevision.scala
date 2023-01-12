@@ -36,7 +36,8 @@ object TaskGroupRevision {
     __obj.asInstanceOf[TaskGroupRevision]
   }
   
-  extension [Self <: TaskGroupRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskGroupRevision] (val x: Self) extends AnyVal {
     
     inline def setChangeType(value: AuditAction): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

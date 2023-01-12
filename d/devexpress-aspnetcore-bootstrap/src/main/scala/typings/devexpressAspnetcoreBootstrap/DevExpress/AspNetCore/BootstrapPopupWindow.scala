@@ -61,7 +61,8 @@ object BootstrapPopupWindow {
     __obj.asInstanceOf[BootstrapPopupWindow]
   }
   
-  extension [Self <: BootstrapPopupWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapPopupWindow] (val x: Self) extends AnyVal {
     
     inline def setGetFooterImageUrl(value: () => String): Self = StObject.set(x, "getFooterImageUrl", js.Any.fromFunction0(value))
     

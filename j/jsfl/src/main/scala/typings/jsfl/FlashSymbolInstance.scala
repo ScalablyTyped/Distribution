@@ -95,7 +95,8 @@ object FlashSymbolInstance {
     __obj.asInstanceOf[FlashSymbolInstance]
   }
   
-  extension [Self <: FlashSymbolInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashSymbolInstance] (val x: Self) extends AnyVal {
     
     inline def setAccName(value: String): Self = StObject.set(x, "accName", value.asInstanceOf[js.Any])
     

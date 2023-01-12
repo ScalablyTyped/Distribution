@@ -41,7 +41,8 @@ object OrganizationConformancePackStatus {
     __obj.asInstanceOf[OrganizationConformancePackStatus]
   }
   
-  extension [Self <: OrganizationConformancePackStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationConformancePackStatus] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

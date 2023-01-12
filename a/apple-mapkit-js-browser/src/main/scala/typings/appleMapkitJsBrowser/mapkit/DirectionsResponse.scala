@@ -20,7 +20,8 @@ object DirectionsResponse {
     __obj.asInstanceOf[DirectionsResponse]
   }
   
-  extension [Self <: DirectionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsResponse] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

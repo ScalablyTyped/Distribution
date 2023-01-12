@@ -64,7 +64,8 @@ object GoogleCloudDatalabelingV1beta1LabelOperationMetadata {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1LabelOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1LabelOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1LabelOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setAnnotatedDataset(value: String): Self = StObject.set(x, "annotatedDataset", value.asInstanceOf[js.Any])
     

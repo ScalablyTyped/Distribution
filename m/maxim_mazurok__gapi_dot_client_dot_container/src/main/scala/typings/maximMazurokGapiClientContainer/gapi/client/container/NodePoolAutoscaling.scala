@@ -37,7 +37,8 @@ object NodePoolAutoscaling {
     __obj.asInstanceOf[NodePoolAutoscaling]
   }
   
-  extension [Self <: NodePoolAutoscaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodePoolAutoscaling] (val x: Self) extends AnyVal {
     
     inline def setAutoprovisioned(value: Boolean): Self = StObject.set(x, "autoprovisioned", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object PlusIoURLType {
     __obj.asInstanceOf[PlusIoURLType]
   }
   
-  extension [Self <: PlusIoURLType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusIoURLType] (val x: Self) extends AnyVal {
     
     inline def setLocalURL(value: PlusIoLocalURL): Self = StObject.set(x, "LocalURL", value.asInstanceOf[js.Any])
     

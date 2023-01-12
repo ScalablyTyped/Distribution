@@ -40,7 +40,8 @@ object ColorFormat {
     __obj.asInstanceOf[ColorFormat]
   }
   
-  extension [Self <: ColorFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorFormat] (val x: Self) extends AnyVal {
     
     inline def setAddGradientRange(value: (Any, Any, String, String, String) => Unit): Self = StObject.set(x, "addGradientRange", js.Any.fromFunction5(value))
     

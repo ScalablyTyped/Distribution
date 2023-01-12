@@ -2404,7 +2404,8 @@ object sapMInputMod {
       __obj.asInstanceOf[InputSettings]
     }
     
-    extension [Self <: InputSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputSettings] (val x: Self) extends AnyVal {
       
       inline def setAutocomplete(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       

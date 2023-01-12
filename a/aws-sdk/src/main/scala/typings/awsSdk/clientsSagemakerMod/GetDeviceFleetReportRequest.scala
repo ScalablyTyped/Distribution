@@ -18,7 +18,8 @@ object GetDeviceFleetReportRequest {
     __obj.asInstanceOf[GetDeviceFleetReportRequest]
   }
   
-  extension [Self <: GetDeviceFleetReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeviceFleetReportRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceFleetName(value: EntityName): Self = StObject.set(x, "DeviceFleetName", value.asInstanceOf[js.Any])
   }

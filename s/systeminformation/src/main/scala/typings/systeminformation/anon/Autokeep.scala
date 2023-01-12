@@ -38,7 +38,8 @@ object Autokeep {
     __obj.asInstanceOf[Autokeep]
   }
   
-  extension [Self <: Autokeep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autokeep] (val x: Self) extends AnyVal {
     
     inline def setAuto_keep(value: Boolean): Self = StObject.set(x, "auto_keep", value.asInstanceOf[js.Any])
     

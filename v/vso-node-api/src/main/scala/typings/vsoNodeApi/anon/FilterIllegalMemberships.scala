@@ -17,7 +17,8 @@ object FilterIllegalMemberships {
     __obj.asInstanceOf[FilterIllegalMemberships]
   }
   
-  extension [Self <: FilterIllegalMemberships](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterIllegalMemberships] (val x: Self) extends AnyVal {
     
     inline def setFilterIllegalMemberships(value: scala.Double): Self = StObject.set(x, "filterIllegalMemberships", value.asInstanceOf[js.Any])
     

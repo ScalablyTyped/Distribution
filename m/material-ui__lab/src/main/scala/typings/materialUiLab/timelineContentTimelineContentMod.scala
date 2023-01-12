@@ -50,7 +50,8 @@ object timelineContentTimelineContentMod {
       __obj.asInstanceOf[TimelineContentProps]
     }
     
-    extension [Self <: TimelineContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineContentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -83,7 +83,8 @@ object libPersonalizationLoginMod {
       __obj.asInstanceOf[Login]
     }
     
-    extension [Self <: Login](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Login] (val x: Self) extends AnyVal {
       
       inline def setCssFileKey(value: typings.nginstackEngine.libDbkeyDbkeyMod.^): Self = StObject.set(x, "cssFileKey", value.asInstanceOf[js.Any])
       

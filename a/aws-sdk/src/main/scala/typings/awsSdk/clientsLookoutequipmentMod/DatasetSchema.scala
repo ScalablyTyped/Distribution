@@ -18,7 +18,8 @@ object DatasetSchema {
     __obj.asInstanceOf[DatasetSchema]
   }
   
-  extension [Self <: DatasetSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetSchema] (val x: Self) extends AnyVal {
     
     inline def setInlineDataSchema(value: InlineDataSchema): Self = StObject.set(x, "InlineDataSchema", value.asInstanceOf[js.Any])
     

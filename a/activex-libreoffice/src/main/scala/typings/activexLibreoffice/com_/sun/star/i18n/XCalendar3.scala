@@ -97,7 +97,8 @@ object XCalendar3 {
     __obj.asInstanceOf[XCalendar3]
   }
   
-  extension [Self <: XCalendar3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCalendar3] (val x: Self) extends AnyVal {
     
     inline def setDays2(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "Days2", value.asInstanceOf[js.Any])
     

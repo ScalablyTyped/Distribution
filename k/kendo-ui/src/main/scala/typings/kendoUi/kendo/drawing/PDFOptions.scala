@@ -37,7 +37,8 @@ object PDFOptions {
     __obj.asInstanceOf[PDFOptions]
   }
   
-  extension [Self <: PDFOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFOptions] (val x: Self) extends AnyVal {
     
     inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     

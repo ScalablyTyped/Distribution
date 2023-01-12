@@ -17,7 +17,8 @@ object ChartBarColumnAnnotations {
     __obj.asInstanceOf[ChartBarColumnAnnotations]
   }
   
-  extension [Self <: ChartBarColumnAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartBarColumnAnnotations] (val x: Self) extends AnyVal {
     
     inline def setAlwaysOutside(value: Boolean): Self = StObject.set(x, "alwaysOutside", value.asInstanceOf[js.Any])
     

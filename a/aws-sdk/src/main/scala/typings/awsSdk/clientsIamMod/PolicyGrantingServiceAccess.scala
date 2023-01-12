@@ -35,7 +35,8 @@ object PolicyGrantingServiceAccess {
     __obj.asInstanceOf[PolicyGrantingServiceAccess]
   }
   
-  extension [Self <: PolicyGrantingServiceAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyGrantingServiceAccess] (val x: Self) extends AnyVal {
     
     inline def setEntityName(value: entityNameType): Self = StObject.set(x, "EntityName", value.asInstanceOf[js.Any])
     

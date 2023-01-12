@@ -19,7 +19,8 @@ object DialogflowV1Context {
     __obj.asInstanceOf[DialogflowV1Context]
   }
   
-  extension [Self <: DialogflowV1Context](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1Context] (val x: Self) extends AnyVal {
     
     inline def setLifespan(value: Double): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])
     

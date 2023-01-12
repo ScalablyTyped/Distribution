@@ -16,7 +16,8 @@ object BigQueryDestination {
     __obj.asInstanceOf[BigQueryDestination]
   }
   
-  extension [Self <: BigQueryDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigQueryDestination] (val x: Self) extends AnyVal {
     
     inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     

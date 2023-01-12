@@ -19,7 +19,8 @@ object Formatter {
     __obj.asInstanceOf[Formatter]
   }
   
-  extension [Self <: Formatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String => Double | `false`): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
   }

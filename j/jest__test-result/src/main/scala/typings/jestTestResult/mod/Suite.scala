@@ -19,7 +19,8 @@ object Suite {
     __obj.asInstanceOf[Suite]
   }
   
-  extension [Self <: Suite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Suite] (val x: Self) extends AnyVal {
     
     inline def setSuites(value: js.Array[Suite]): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
     

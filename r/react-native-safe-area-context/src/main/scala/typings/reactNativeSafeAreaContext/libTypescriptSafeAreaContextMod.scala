@@ -65,7 +65,8 @@ object libTypescriptSafeAreaContextMod {
       __obj.asInstanceOf[SafeAreaProviderProps]
     }
     
-    extension [Self <: SafeAreaProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SafeAreaProviderProps] (val x: Self) extends AnyVal {
       
       inline def setInitialMetrics(value: Metrics): Self = StObject.set(x, "initialMetrics", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object libTypescriptSafeAreaContextMod {
       __obj.asInstanceOf[WithSafeAreaInsetsProps]
     }
     
-    extension [Self <: WithSafeAreaInsetsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithSafeAreaInsetsProps] (val x: Self) extends AnyVal {
       
       inline def setInsets(value: EdgeInsets): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
     }

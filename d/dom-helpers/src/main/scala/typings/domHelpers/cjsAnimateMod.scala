@@ -3134,7 +3134,8 @@ object cjsAnimateMod {
       __obj.asInstanceOf[AnimateProperties]
     }
     
-    extension [Self <: AnimateProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimateProperties] (val x: Self) extends AnyVal {
       
       inline def `set-khtml-box-align`(value: String): Self = StObject.set(x, "-khtml-box-align", value.asInstanceOf[js.Any])
       
@@ -9267,7 +9268,8 @@ object cjsAnimateMod {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
@@ -9292,7 +9294,8 @@ object cjsAnimateMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: EventHandler[transitionend]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       

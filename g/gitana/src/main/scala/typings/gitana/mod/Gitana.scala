@@ -97,7 +97,8 @@ object Gitana {
     __obj.asInstanceOf[Gitana]
   }
   
-  extension [Self <: Gitana](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gitana] (val x: Self) extends AnyVal {
     
     inline def setAjax(value: (Any, Any, Any, Any, Any, Any, Any) => Any): Self = StObject.set(x, "ajax", js.Any.fromFunction7(value))
     

@@ -33,7 +33,8 @@ object metaMetaDetailCache {
     __obj.asInstanceOf[metaMetaDetailCache]
   }
   
-  extension [Self <: metaMetaDetailCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: metaMetaDetailCache] (val x: Self) extends AnyVal {
     
     inline def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
     

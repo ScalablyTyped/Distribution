@@ -706,7 +706,8 @@ object ZAxisOptions {
     __obj.asInstanceOf[ZAxisOptions]
   }
   
-  extension [Self <: ZAxisOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZAxisOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: AxisAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

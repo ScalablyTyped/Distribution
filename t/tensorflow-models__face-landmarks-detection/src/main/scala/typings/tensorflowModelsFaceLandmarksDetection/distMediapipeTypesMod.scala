@@ -30,7 +30,8 @@ object distMediapipeTypesMod {
       __obj.asInstanceOf[MediaPipeFaceMeshMediaPipeModelConfig]
     }
     
-    extension [Self <: MediaPipeFaceMeshMediaPipeModelConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaPipeFaceMeshMediaPipeModelConfig] (val x: Self) extends AnyVal {
       
       inline def setRuntime(value: mediapipe): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object distMediapipeTypesMod {
       __obj.asInstanceOf[MediaPipeFaceMeshModelConfig]
     }
     
-    extension [Self <: MediaPipeFaceMeshModelConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaPipeFaceMeshModelConfig] (val x: Self) extends AnyVal {
       
       inline def setRefineLandmarks(value: Boolean): Self = StObject.set(x, "refineLandmarks", value.asInstanceOf[js.Any])
       

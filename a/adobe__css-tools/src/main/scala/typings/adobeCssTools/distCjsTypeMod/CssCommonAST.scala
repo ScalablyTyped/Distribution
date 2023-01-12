@@ -16,7 +16,8 @@ object CssCommonAST {
     __obj.asInstanceOf[CssCommonAST]
   }
   
-  extension [Self <: CssCommonAST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssCommonAST] (val x: Self) extends AnyVal {
     
     inline def setType(value: CssTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

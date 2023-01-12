@@ -25,7 +25,8 @@ object PutScriptRequest {
     __obj.asInstanceOf[PutScriptRequest]
   }
   
-  extension [Self <: PutScriptRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutScriptRequest] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Name): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

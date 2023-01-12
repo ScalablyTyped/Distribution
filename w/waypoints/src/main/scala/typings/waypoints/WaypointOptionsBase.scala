@@ -23,7 +23,8 @@ object WaypointOptionsBase {
     __obj.asInstanceOf[WaypointOptionsBase]
   }
   
-  extension [Self <: WaypointOptionsBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaypointOptionsBase] (val x: Self) extends AnyVal {
     
     inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     

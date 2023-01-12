@@ -37,7 +37,8 @@ object thingMod {
       __obj.asInstanceOf[EmitEventOptions]
     }
     
-    extension [Self <: EmitEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmitEventOptions] (val x: Self) extends AnyVal {
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     }

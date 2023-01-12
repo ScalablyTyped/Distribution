@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setCurrentTag(value: String): Self = StObject.set(x, "currentTag", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object mod {
       __obj.asInstanceOf[GitRawCommitsOptions]
     }
     
-    extension [Self <: GitRawCommitsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitRawCommitsOptions] (val x: Self) extends AnyVal {
       
       inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object mod {
         __obj.asInstanceOf[ExtraContext]
       }
       
-      extension [Self <: ExtraContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtraContext] (val x: Self) extends AnyVal {
         
         inline def setGitSemverTags(value: js.Array[String]): Self = StObject.set(x, "gitSemverTags", value.asInstanceOf[js.Any])
         
@@ -300,7 +303,8 @@ object mod {
           __obj.asInstanceOf[ObjectType[TCommit, TContext]]
         }
         
-        extension [Self <: ObjectType[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](x: Self & (ObjectType[TCommit, TContext])) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ObjectType[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */] (val x: Self & (ObjectType[TCommit, TContext])) extends AnyVal {
           
           inline def setContext(value: Partial[TContext]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
           
@@ -329,7 +333,8 @@ object mod {
     
     type Logger = js.Function1[/* message */ js.UndefOr[Any], Unit]
     
-    extension [Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](x: Self & (Options[TCommit, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */] (val x: Self & (Options[TCommit, TContext])) extends AnyVal {
       
       inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
@@ -403,7 +408,8 @@ object mod {
         __obj.asInstanceOf[Pkg]
       }
       
-      extension [Self <: Pkg](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Pkg] (val x: Self) extends AnyVal {
         
         inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         

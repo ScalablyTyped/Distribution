@@ -43,7 +43,8 @@ object DescribeSnapshotScheduleOutput {
     __obj.asInstanceOf[DescribeSnapshotScheduleOutput]
   }
   
-  extension [Self <: DescribeSnapshotScheduleOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSnapshotScheduleOutput] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

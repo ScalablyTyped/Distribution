@@ -28,7 +28,8 @@ object LambdaDeviceMount {
     __obj.asInstanceOf[LambdaDeviceMount]
   }
   
-  extension [Self <: LambdaDeviceMount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaDeviceMount] (val x: Self) extends AnyVal {
     
     inline def setAddGroupOwner(value: OptionalBoolean): Self = StObject.set(x, "addGroupOwner", value.asInstanceOf[js.Any])
     

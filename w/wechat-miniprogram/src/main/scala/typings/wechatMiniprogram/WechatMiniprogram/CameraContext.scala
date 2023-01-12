@@ -64,7 +64,8 @@ object CameraContext {
     __obj.asInstanceOf[CameraContext]
   }
   
-  extension [Self <: CameraContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraContext] (val x: Self) extends AnyVal {
     
     inline def setOnCameraFrame(value: OnCameraFrameCallback => CameraFrameListener): Self = StObject.set(x, "onCameraFrame", js.Any.fromFunction1(value))
     

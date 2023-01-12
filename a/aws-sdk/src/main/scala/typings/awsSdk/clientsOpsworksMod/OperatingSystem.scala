@@ -48,7 +48,8 @@ object OperatingSystem {
     __obj.asInstanceOf[OperatingSystem]
   }
   
-  extension [Self <: OperatingSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperatingSystem] (val x: Self) extends AnyVal {
     
     inline def setConfigurationManagers(value: OperatingSystemConfigurationManagers): Self = StObject.set(x, "ConfigurationManagers", value.asInstanceOf[js.Any])
     

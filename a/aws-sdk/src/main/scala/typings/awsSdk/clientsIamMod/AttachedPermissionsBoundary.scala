@@ -23,7 +23,8 @@ object AttachedPermissionsBoundary {
     __obj.asInstanceOf[AttachedPermissionsBoundary]
   }
   
-  extension [Self <: AttachedPermissionsBoundary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachedPermissionsBoundary] (val x: Self) extends AnyVal {
     
     inline def setPermissionsBoundaryArn(value: arnType): Self = StObject.set(x, "PermissionsBoundaryArn", value.asInstanceOf[js.Any])
     

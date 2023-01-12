@@ -22,7 +22,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[AnalyticsReactContextInterface]
     }
     
-    extension [Self <: AnalyticsReactContextInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsReactContextInterface] (val x: Self) extends AnyVal {
       
       inline def setGetAtlaskitAnalyticsContext(value: () => js.Array[Any]): Self = StObject.set(x, "getAtlaskitAnalyticsContext", js.Any.fromFunction0(value))
       

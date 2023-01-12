@@ -18,7 +18,8 @@ object DescribeStackSummaryRequest {
     __obj.asInstanceOf[DescribeStackSummaryRequest]
   }
   
-  extension [Self <: DescribeStackSummaryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStackSummaryRequest] (val x: Self) extends AnyVal {
     
     inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
   }

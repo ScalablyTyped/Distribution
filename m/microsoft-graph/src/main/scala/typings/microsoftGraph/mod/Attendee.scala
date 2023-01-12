@@ -24,7 +24,8 @@ object Attendee {
     __obj.asInstanceOf[Attendee]
   }
   
-  extension [Self <: Attendee](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attendee] (val x: Self) extends AnyVal {
     
     inline def setProposedNewTime(value: NullableOption[TimeSlot]): Self = StObject.set(x, "proposedNewTime", value.asInstanceOf[js.Any])
     

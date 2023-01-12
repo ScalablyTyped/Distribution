@@ -16,7 +16,8 @@ object IdInferIdType {
     __obj.asInstanceOf[IdInferIdType[TSchema]]
   }
   
-  extension [Self <: IdInferIdType[?], TSchema](x: Self & IdInferIdType[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdInferIdType[?], TSchema] (val x: Self & IdInferIdType[TSchema]) extends AnyVal {
     
     inline def set_id(value: InferIdType[TSchema]): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }

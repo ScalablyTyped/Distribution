@@ -16,7 +16,8 @@ object DriveDataRef {
     __obj.asInstanceOf[DriveDataRef]
   }
   
-  extension [Self <: DriveDataRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveDataRef] (val x: Self) extends AnyVal {
     
     inline def setDriveFileId(value: String): Self = StObject.set(x, "driveFileId", value.asInstanceOf[js.Any])
     

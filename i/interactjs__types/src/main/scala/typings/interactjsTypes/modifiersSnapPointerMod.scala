@@ -85,7 +85,8 @@ object modifiersSnapPointerMod {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object modifiersSnapPointerMod {
       __obj.asInstanceOf[SnapOptions]
     }
     
-    extension [Self <: SnapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -196,7 +198,8 @@ object modifiersSnapPointerMod {
       __obj.asInstanceOf[SnapPosition]
     }
     
-    extension [Self <: SnapPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapPosition] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -240,7 +243,8 @@ object modifiersSnapPointerMod {
       __obj.asInstanceOf[SnapState]
     }
     
-    extension [Self <: SnapState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapState] (val x: Self) extends AnyVal {
       
       inline def setClosest(value: Any): Self = StObject.set(x, "closest", value.asInstanceOf[js.Any])
       

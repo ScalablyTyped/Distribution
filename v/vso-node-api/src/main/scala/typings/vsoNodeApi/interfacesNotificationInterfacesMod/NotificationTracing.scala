@@ -41,7 +41,8 @@ object NotificationTracing {
     __obj.asInstanceOf[NotificationTracing]
   }
   
-  extension [Self <: NotificationTracing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationTracing] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

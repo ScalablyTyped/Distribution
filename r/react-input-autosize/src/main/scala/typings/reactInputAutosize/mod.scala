@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[AutosizeInputProps]
     }
     
-    extension [Self <: AutosizeInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutosizeInputProps] (val x: Self) extends AnyVal {
       
       inline def setExtraWidth(value: String | Double): Self = StObject.set(x, "extraWidth", value.asInstanceOf[js.Any])
       

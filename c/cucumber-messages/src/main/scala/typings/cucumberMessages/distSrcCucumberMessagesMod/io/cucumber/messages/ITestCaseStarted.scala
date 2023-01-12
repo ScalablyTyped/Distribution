@@ -36,7 +36,8 @@ object ITestCaseStarted {
     __obj.asInstanceOf[ITestCaseStarted]
   }
   
-  extension [Self <: ITestCaseStarted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITestCaseStarted] (val x: Self) extends AnyVal {
     
     inline def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
     

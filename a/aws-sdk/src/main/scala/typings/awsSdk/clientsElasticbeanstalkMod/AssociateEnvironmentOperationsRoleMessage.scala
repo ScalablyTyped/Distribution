@@ -23,7 +23,8 @@ object AssociateEnvironmentOperationsRoleMessage {
     __obj.asInstanceOf[AssociateEnvironmentOperationsRoleMessage]
   }
   
-  extension [Self <: AssociateEnvironmentOperationsRoleMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateEnvironmentOperationsRoleMessage] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     

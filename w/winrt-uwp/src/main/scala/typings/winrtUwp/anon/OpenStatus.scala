@@ -21,7 +21,8 @@ object OpenStatus {
     __obj.asInstanceOf[OpenStatus]
   }
   
-  extension [Self <: OpenStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenStatus] (val x: Self) extends AnyVal {
     
     inline def setOpenStatus(value: GpioOpenStatus): Self = StObject.set(x, "openStatus", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PathStatement {
     __obj.asInstanceOf[PathStatement]
   }
   
-  extension [Self <: PathStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathStatement] (val x: Self) extends AnyVal {
     
     inline def setPacketHeaderStatement(value: PacketHeaderStatement): Self = StObject.set(x, "PacketHeaderStatement", value.asInstanceOf[js.Any])
     

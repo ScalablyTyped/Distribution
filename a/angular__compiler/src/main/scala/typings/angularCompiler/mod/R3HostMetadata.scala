@@ -37,7 +37,8 @@ object R3HostMetadata {
     __obj.asInstanceOf[R3HostMetadata]
   }
   
-  extension [Self <: R3HostMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3HostMetadata] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: StringDictionary[Expression]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

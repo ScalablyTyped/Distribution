@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[NtlmType2]
     }
     
-    extension [Self <: NtlmType2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NtlmType2] (val x: Self) extends AnyVal {
       
       inline def setChallenge(value: Buffer): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
       

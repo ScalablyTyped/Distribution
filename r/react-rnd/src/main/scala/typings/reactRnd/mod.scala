@@ -149,7 +149,8 @@ object mod {
       __obj.asInstanceOf[DefaultProps]
     }
     
-    extension [Self <: DefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
@@ -212,7 +213,8 @@ object mod {
       __obj.asInstanceOf[DraggableData]
     }
     
-    extension [Self <: DraggableData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggableData] (val x: Self) extends AnyVal {
       
       inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
       
@@ -253,7 +255,8 @@ object mod {
       __obj.asInstanceOf[HandleClasses]
     }
     
-    extension [Self <: HandleClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleClasses] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -314,7 +317,8 @@ object mod {
       __obj.asInstanceOf[HandleComponent]
     }
     
-    extension [Self <: HandleComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleComponent] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: ReactElement): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -375,7 +379,8 @@ object mod {
       __obj.asInstanceOf[HandleStyles]
     }
     
-    extension [Self <: HandleStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleStyles] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: CSSProperties): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -424,7 +429,8 @@ object mod {
       __obj.asInstanceOf[MaxSize]
     }
     
-    extension [Self <: MaxSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxSize] (val x: Self) extends AnyVal {
       
       inline def setMaxHeight(value: Double | String): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
@@ -445,7 +451,8 @@ object mod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -538,7 +545,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAllowAnyClick(value: Boolean): Self = StObject.set(x, "allowAnyClick", value.asInstanceOf[js.Any])
       
@@ -715,7 +723,8 @@ object mod {
       __obj.asInstanceOf[ResizableDelta]
     }
     
-    extension [Self <: ResizableDelta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizableDelta] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -758,7 +767,8 @@ object mod {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -783,7 +793,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Bottom): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       

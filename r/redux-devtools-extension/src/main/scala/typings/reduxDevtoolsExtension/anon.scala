@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Date]
     }
     
-    extension [Self <: Date](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Dispatch]
     }
     
-    extension [Self <: Dispatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dispatch] (val x: Self) extends AnyVal {
       
       inline def setDispatch(value: Boolean): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       

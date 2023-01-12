@@ -82,7 +82,8 @@ object TransferCounters {
     __obj.asInstanceOf[TransferCounters]
   }
   
-  extension [Self <: TransferCounters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferCounters] (val x: Self) extends AnyVal {
     
     inline def setBytesCopiedToSink(value: String): Self = StObject.set(x, "bytesCopiedToSink", value.asInstanceOf[js.Any])
     

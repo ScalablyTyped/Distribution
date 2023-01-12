@@ -53,7 +53,8 @@ object StorageLensConfiguration {
     __obj.asInstanceOf[StorageLensConfiguration]
   }
   
-  extension [Self <: StorageLensConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageLensConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAccountLevel(value: AccountLevel): Self = StObject.set(x, "AccountLevel", value.asInstanceOf[js.Any])
     

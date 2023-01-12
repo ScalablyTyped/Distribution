@@ -22,7 +22,8 @@ object HistogramSeries {
     __obj.asInstanceOf[HistogramSeries]
   }
   
-  extension [Self <: HistogramSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistogramSeries] (val x: Self) extends AnyVal {
     
     inline def setBarColor(value: Color): Self = StObject.set(x, "barColor", value.asInstanceOf[js.Any])
     

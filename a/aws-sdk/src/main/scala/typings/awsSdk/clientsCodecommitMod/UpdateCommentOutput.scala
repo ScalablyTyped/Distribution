@@ -18,7 +18,8 @@ object UpdateCommentOutput {
     __obj.asInstanceOf[UpdateCommentOutput]
   }
   
-  extension [Self <: UpdateCommentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCommentOutput] (val x: Self) extends AnyVal {
     
     inline def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

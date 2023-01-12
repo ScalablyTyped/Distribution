@@ -28,7 +28,8 @@ object SourceSchema {
     __obj.asInstanceOf[SourceSchema]
   }
   
-  extension [Self <: SourceSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceSchema] (val x: Self) extends AnyVal {
     
     inline def setRecordColumns(value: RecordColumns): Self = StObject.set(x, "RecordColumns", value.asInstanceOf[js.Any])
     

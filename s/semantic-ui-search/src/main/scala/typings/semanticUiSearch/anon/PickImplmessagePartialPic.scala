@@ -27,7 +27,8 @@ object PickImplmessagePartialPic {
     __obj.asInstanceOf[PickImplmessagePartialPic]
   }
   
-  extension [Self <: PickImplmessagePartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplmessagePartialPic] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: /* response */ Any => String): Self = StObject.set(x, "category", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object CameraPickerProps {
     __obj.asInstanceOf[CameraPickerProps]
   }
   
-  extension [Self <: CameraPickerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraPickerProps] (val x: Self) extends AnyVal {
     
     inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     

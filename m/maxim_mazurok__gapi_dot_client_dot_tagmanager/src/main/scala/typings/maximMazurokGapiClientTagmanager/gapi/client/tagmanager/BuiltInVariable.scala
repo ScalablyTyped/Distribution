@@ -31,7 +31,8 @@ object BuiltInVariable {
     __obj.asInstanceOf[BuiltInVariable]
   }
   
-  extension [Self <: BuiltInVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltInVariable] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

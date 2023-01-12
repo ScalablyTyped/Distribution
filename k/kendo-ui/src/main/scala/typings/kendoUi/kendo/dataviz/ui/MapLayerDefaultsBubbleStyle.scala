@@ -17,7 +17,8 @@ object MapLayerDefaultsBubbleStyle {
     __obj.asInstanceOf[MapLayerDefaultsBubbleStyle]
   }
   
-  extension [Self <: MapLayerDefaultsBubbleStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLayerDefaultsBubbleStyle] (val x: Self) extends AnyVal {
     
     inline def setFill(value: MapLayerDefaultsBubbleStyleFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

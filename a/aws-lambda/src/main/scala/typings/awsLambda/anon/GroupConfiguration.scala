@@ -21,7 +21,8 @@ object GroupConfiguration {
     __obj.asInstanceOf[GroupConfiguration]
   }
   
-  extension [Self <: GroupConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupConfiguration] (val x: Self) extends AnyVal {
     
     inline def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
     

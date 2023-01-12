@@ -46,7 +46,8 @@ object XTextContent {
     __obj.asInstanceOf[XTextContent]
   }
   
-  extension [Self <: XTextContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextContent] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: XTextRange): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     

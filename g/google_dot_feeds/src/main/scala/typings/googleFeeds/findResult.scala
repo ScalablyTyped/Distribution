@@ -19,7 +19,8 @@ object findResult {
     __obj.asInstanceOf[findResult]
   }
   
-  extension [Self <: findResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: findResult] (val x: Self) extends AnyVal {
     
     inline def setError(value: feedError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

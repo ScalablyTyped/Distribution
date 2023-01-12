@@ -54,7 +54,8 @@ object distPopoverSrcPopoverMod {
       __obj.asInstanceOf[InnerPopoverProps]
     }
     
-    extension [Self <: InnerPopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerPopoverProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

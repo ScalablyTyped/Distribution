@@ -18,7 +18,8 @@ object MediaCaptureFocusChangedEventArgs {
     __obj.asInstanceOf[MediaCaptureFocusChangedEventArgs]
   }
   
-  extension [Self <: MediaCaptureFocusChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaCaptureFocusChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFocusState(value: MediaCaptureFocusState): Self = StObject.set(x, "focusState", value.asInstanceOf[js.Any])
   }

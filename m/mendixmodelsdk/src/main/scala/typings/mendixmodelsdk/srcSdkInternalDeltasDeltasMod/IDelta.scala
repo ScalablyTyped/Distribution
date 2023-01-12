@@ -18,7 +18,8 @@ object IDelta {
     __obj.asInstanceOf[IDelta]
   }
   
-  extension [Self <: IDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDelta] (val x: Self) extends AnyVal {
     
     inline def setUnitId(value: String): Self = StObject.set(x, "unitId", value.asInstanceOf[js.Any])
   }

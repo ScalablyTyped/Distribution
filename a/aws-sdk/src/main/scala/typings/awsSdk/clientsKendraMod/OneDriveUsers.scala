@@ -23,7 +23,8 @@ object OneDriveUsers {
     __obj.asInstanceOf[OneDriveUsers]
   }
   
-  extension [Self <: OneDriveUsers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OneDriveUsers] (val x: Self) extends AnyVal {
     
     inline def setOneDriveUserList(value: OneDriveUserList): Self = StObject.set(x, "OneDriveUserList", value.asInstanceOf[js.Any])
     

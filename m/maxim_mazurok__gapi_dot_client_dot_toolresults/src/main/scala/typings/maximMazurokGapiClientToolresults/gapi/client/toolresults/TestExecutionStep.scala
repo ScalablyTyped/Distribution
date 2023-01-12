@@ -32,7 +32,8 @@ object TestExecutionStep {
     __obj.asInstanceOf[TestExecutionStep]
   }
   
-  extension [Self <: TestExecutionStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestExecutionStep] (val x: Self) extends AnyVal {
     
     inline def setTestIssues(value: js.Array[TestIssue]): Self = StObject.set(x, "testIssues", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ContentTypeInfo {
     __obj.asInstanceOf[ContentTypeInfo]
   }
   
-  extension [Self <: ContentTypeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentTypeInfo] (val x: Self) extends AnyVal {
     
     inline def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

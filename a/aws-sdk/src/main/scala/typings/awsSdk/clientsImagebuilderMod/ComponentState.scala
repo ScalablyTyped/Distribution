@@ -23,7 +23,8 @@ object ComponentState {
     __obj.asInstanceOf[ComponentState]
   }
   
-  extension [Self <: ComponentState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentState] (val x: Self) extends AnyVal {
     
     inline def setReason(value: NonEmptyString): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

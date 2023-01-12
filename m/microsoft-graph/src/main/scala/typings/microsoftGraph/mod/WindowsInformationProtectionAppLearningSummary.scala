@@ -24,7 +24,8 @@ object WindowsInformationProtectionAppLearningSummary {
     __obj.asInstanceOf[WindowsInformationProtectionAppLearningSummary]
   }
   
-  extension [Self <: WindowsInformationProtectionAppLearningSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsInformationProtectionAppLearningSummary] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: NullableOption[String]): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     

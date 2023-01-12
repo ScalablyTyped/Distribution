@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ToSqlString]
     }
     
-    extension [Self <: ToSqlString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToSqlString] (val x: Self) extends AnyVal {
       
       inline def setToSqlString(value: () => String): Self = StObject.set(x, "toSqlString", js.Any.fromFunction0(value))
     }

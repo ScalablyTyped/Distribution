@@ -25,7 +25,8 @@ object FindOptions {
     __obj.asInstanceOf[FindOptions]
   }
   
-  extension [Self <: FindOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
     
     inline def setDirectories(value: Boolean): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     

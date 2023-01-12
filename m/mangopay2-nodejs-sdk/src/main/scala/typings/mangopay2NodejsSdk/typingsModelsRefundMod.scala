@@ -31,7 +31,8 @@ object typingsModelsRefundMod {
         __obj.asInstanceOf[CreatePayInRefund]
       }
       
-      extension [Self <: CreatePayInRefund](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreatePayInRefund] (val x: Self) extends AnyVal {
         
         inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
         
@@ -62,7 +63,8 @@ object typingsModelsRefundMod {
         __obj.asInstanceOf[CreateTransferRefund]
       }
       
-      extension [Self <: CreateTransferRefund](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateTransferRefund] (val x: Self) extends AnyVal {
         
         inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
         
@@ -123,7 +125,8 @@ object typingsModelsRefundMod {
         __obj.asInstanceOf[RefundData]
       }
       
-      extension [Self <: RefundData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RefundData] (val x: Self) extends AnyVal {
         
         inline def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
         
@@ -146,7 +149,8 @@ object typingsModelsRefundMod {
         __obj.asInstanceOf[RefundReason]
       }
       
-      extension [Self <: RefundReason](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RefundReason] (val x: Self) extends AnyVal {
         
         inline def setRefundReasonType(value: RefundReasonType): Self = StObject.set(x, "RefundReasonType", value.asInstanceOf[js.Any])
       }

@@ -87,7 +87,8 @@ object distExpressFrappeMod {
       __obj.asInstanceOf[ExpressFrappeConfig]
     }
     
-    extension [Self <: ExpressFrappeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressFrappeConfig] (val x: Self) extends AnyVal {
       
       inline def setBodyParser(value: Boolean | Json): Self = StObject.set(x, "bodyParser", value.asInstanceOf[js.Any])
       

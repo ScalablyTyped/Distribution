@@ -310,7 +310,8 @@ object esComponentsDotLoadingDotLoadingMod {
       __obj.asInstanceOf[DotLoadingProps]
     }
     
-    extension [Self <: DotLoadingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotLoadingProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

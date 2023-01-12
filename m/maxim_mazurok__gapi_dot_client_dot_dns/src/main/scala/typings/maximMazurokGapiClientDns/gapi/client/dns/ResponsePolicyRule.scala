@@ -30,7 +30,8 @@ object ResponsePolicyRule {
     __obj.asInstanceOf[ResponsePolicyRule]
   }
   
-  extension [Self <: ResponsePolicyRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsePolicyRule] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: String): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

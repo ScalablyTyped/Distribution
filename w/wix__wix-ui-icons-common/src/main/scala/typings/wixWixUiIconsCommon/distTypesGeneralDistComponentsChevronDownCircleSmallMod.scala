@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsChevronDownCircleSmallMod extends Shortcut 
       __obj.asInstanceOf[ChevronDownCircleSmallProps]
     }
     
-    extension [Self <: ChevronDownCircleSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChevronDownCircleSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

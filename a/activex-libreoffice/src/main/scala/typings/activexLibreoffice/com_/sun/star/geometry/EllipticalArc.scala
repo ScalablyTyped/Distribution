@@ -48,7 +48,8 @@ object EllipticalArc {
     __obj.asInstanceOf[EllipticalArc]
   }
   
-  extension [Self <: EllipticalArc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EllipticalArc] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: RealPoint2D): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
     

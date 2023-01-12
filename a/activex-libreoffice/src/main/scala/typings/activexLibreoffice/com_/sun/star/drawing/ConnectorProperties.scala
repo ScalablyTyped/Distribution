@@ -35,7 +35,8 @@ object ConnectorProperties {
     __obj.asInstanceOf[ConnectorProperties]
   }
   
-  extension [Self <: ConnectorProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorProperties] (val x: Self) extends AnyVal {
     
     inline def setEdgeKind(value: ConnectorType): Self = StObject.set(x, "EdgeKind", value.asInstanceOf[js.Any])
     

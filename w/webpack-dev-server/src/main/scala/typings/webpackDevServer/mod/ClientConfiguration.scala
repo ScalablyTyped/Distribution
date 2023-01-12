@@ -32,7 +32,8 @@ object ClientConfiguration {
     __obj.asInstanceOf[ClientConfiguration]
   }
   
-  extension [Self <: ClientConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLogging(value: none | error | warn | info | log | verbose): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object HistogramOptions {
     __obj.asInstanceOf[HistogramOptions]
   }
   
-  extension [Self <: HistogramOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistogramOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: TransitionAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

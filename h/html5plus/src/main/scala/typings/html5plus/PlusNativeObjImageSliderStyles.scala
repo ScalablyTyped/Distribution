@@ -68,7 +68,8 @@ object PlusNativeObjImageSliderStyles {
     __obj.asInstanceOf[PlusNativeObjImageSliderStyles]
   }
   
-  extension [Self <: PlusNativeObjImageSliderStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeObjImageSliderStyles] (val x: Self) extends AnyVal {
     
     inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     

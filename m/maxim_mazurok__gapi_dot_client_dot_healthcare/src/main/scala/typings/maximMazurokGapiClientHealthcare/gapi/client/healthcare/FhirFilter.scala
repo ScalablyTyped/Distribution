@@ -16,7 +16,8 @@ object FhirFilter {
     __obj.asInstanceOf[FhirFilter]
   }
   
-  extension [Self <: FhirFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FhirFilter] (val x: Self) extends AnyVal {
     
     inline def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     

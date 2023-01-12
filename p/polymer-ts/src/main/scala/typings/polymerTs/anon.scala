@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[AddedCount]
     }
     
-    extension [Self <: AddedCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddedCount] (val x: Self) extends AnyVal {
       
       inline def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object GetDashboardEmbedUrlResponse {
     __obj.asInstanceOf[GetDashboardEmbedUrlResponse]
   }
   
-  extension [Self <: GetDashboardEmbedUrlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDashboardEmbedUrlResponse] (val x: Self) extends AnyVal {
     
     inline def setEmbedUrl(value: EmbeddingUrl): Self = StObject.set(x, "EmbedUrl", value.asInstanceOf[js.Any])
     

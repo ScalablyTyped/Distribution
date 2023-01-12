@@ -51,7 +51,8 @@ object MVCxClientFilterControl {
     __obj.asInstanceOf[MVCxClientFilterControl]
   }
   
-  extension [Self <: MVCxClientFilterControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MVCxClientFilterControl] (val x: Self) extends AnyVal {
     
     inline def setFillStateObject(value: Any => Unit): Self = StObject.set(x, "FillStateObject", js.Any.fromFunction1(value))
   }

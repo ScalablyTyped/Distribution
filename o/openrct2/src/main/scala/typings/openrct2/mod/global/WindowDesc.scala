@@ -49,7 +49,8 @@ object WindowDesc {
     __obj.asInstanceOf[WindowDesc]
   }
   
-  extension [Self <: WindowDesc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowDesc] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: String): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

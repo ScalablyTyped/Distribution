@@ -19,7 +19,8 @@ object AutoscalingPolicyLoadBalancingUtilization {
     __obj.asInstanceOf[AutoscalingPolicyLoadBalancingUtilization]
   }
   
-  extension [Self <: AutoscalingPolicyLoadBalancingUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingPolicyLoadBalancingUtilization] (val x: Self) extends AnyVal {
     
     inline def setUtilizationTarget(value: Double): Self = StObject.set(x, "utilizationTarget", value.asInstanceOf[js.Any])
     

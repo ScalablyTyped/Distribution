@@ -55,7 +55,8 @@ object babylonjsMeshesSubMeshAugmentingMod {
       __obj.asInstanceOf[typings.babylonjs.indexMod.babylonjsMeshesSubMeshAugmentingMod.SubMesh]
     }
     
-    extension [Self <: typings.babylonjs.indexMod.babylonjsMeshesSubMeshAugmentingMod.SubMesh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.babylonjs.indexMod.babylonjsMeshesSubMeshAugmentingMod.SubMesh] (val x: Self) extends AnyVal {
       
       inline def setProjectToRef(
         value: (typings.babylonjs.mathsMathDotvectorMod.Vector3, js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3], IndicesArray, typings.babylonjs.mathsMathDotvectorMod.Vector3) => Double

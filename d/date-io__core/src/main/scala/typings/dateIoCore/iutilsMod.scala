@@ -153,7 +153,8 @@ object iutilsMod {
       __obj.asInstanceOf[DateIOFormats[TLibFormatToken]]
     }
     
-    extension [Self <: DateIOFormats[?], TLibFormatToken](x: Self & DateIOFormats[TLibFormatToken]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateIOFormats[?], TLibFormatToken] (val x: Self & DateIOFormats[TLibFormatToken]) extends AnyVal {
       
       inline def setDayOfMonth(value: TLibFormatToken): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
       

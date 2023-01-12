@@ -16,7 +16,8 @@ object InventorySourceAssignedTargetingOptionDetails {
     __obj.asInstanceOf[InventorySourceAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: InventorySourceAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventorySourceAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setInventorySourceId(value: String): Self = StObject.set(x, "inventorySourceId", value.asInstanceOf[js.Any])
     

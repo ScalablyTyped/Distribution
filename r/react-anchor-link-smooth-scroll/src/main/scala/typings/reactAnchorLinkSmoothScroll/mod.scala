@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[AnchorLinkProps]
     }
     
-    extension [Self <: AnchorLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorLinkProps] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: String | Double | js.Function0[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

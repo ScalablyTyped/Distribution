@@ -28,7 +28,8 @@ object ResendValidationEmailRequest {
     __obj.asInstanceOf[ResendValidationEmailRequest]
   }
   
-  extension [Self <: ResendValidationEmailRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResendValidationEmailRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     

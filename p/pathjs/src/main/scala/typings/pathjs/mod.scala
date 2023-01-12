@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[IPath]
     }
     
-    extension [Self <: IPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPath] (val x: Self) extends AnyVal {
       
       inline def setCore(value: IPathCore): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[IPathCore]
     }
     
-    extension [Self <: IPathCore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPathCore] (val x: Self) extends AnyVal {
       
       inline def setRoute(value: IPathRouteConstructor): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
@@ -113,7 +115,8 @@ object mod {
       __obj.asInstanceOf[IPathHistory]
     }
     
-    extension [Self <: IPathHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPathHistory] (val x: Self) extends AnyVal {
       
       inline def setInitial(value: Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object mod {
       __obj.asInstanceOf[IPathRoutes]
     }
     
-    extension [Self <: IPathRoutes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPathRoutes] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

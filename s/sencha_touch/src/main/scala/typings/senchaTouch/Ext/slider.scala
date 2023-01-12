@@ -162,7 +162,8 @@ object slider {
       __obj.asInstanceOf[ISlider]
     }
     
-    extension [Self <: ISlider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISlider] (val x: Self) extends AnyVal {
       
       inline def setAllowThumbsOverlapping(value: Boolean): Self = StObject.set(x, "allowThumbsOverlapping", value.asInstanceOf[js.Any])
       
@@ -313,7 +314,8 @@ object slider {
       __obj.asInstanceOf[IThumb]
     }
     
-    extension [Self <: IThumb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThumb] (val x: Self) extends AnyVal {
       
       inline def setDraggable(value: Any): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -377,7 +379,8 @@ object slider {
       __obj.asInstanceOf[IToggle]
     }
     
-    extension [Self <: IToggle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToggle] (val x: Self) extends AnyVal {
       
       inline def setApplyIncrement(value: () => Double): Self = StObject.set(x, "applyIncrement", js.Any.fromFunction0(value))
       

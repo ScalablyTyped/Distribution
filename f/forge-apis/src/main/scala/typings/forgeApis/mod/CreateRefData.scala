@@ -20,7 +20,8 @@ object CreateRefData {
     __obj.asInstanceOf[CreateRefData]
   }
   
-  extension [Self <: CreateRefData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRefData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

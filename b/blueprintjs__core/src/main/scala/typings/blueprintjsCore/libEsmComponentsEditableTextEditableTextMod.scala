@@ -175,7 +175,8 @@ object libEsmComponentsEditableTextEditableTextMod {
       __obj.asInstanceOf[IEditableTextProps]
     }
     
-    extension [Self <: IEditableTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditableTextProps] (val x: Self) extends AnyVal {
       
       inline def setAlwaysRenderInput(value: Boolean): Self = StObject.set(x, "alwaysRenderInput", value.asInstanceOf[js.Any])
       
@@ -279,7 +280,8 @@ object libEsmComponentsEditableTextEditableTextMod {
       __obj.asInstanceOf[IEditableTextState]
     }
     
-    extension [Self <: IEditableTextState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditableTextState] (val x: Self) extends AnyVal {
       
       inline def setInputHeight(value: Double): Self = StObject.set(x, "inputHeight", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetLogRecordRequest {
     __obj.asInstanceOf[GetLogRecordRequest]
   }
   
-  extension [Self <: GetLogRecordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLogRecordRequest] (val x: Self) extends AnyVal {
     
     inline def setLogRecordPointer(value: LogRecordPointer): Self = StObject.set(x, "logRecordPointer", value.asInstanceOf[js.Any])
   }

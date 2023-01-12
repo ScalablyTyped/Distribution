@@ -18,7 +18,8 @@ object CidrBlock {
     __obj.asInstanceOf[CidrBlock]
   }
   
-  extension [Self <: CidrBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CidrBlock] (val x: Self) extends AnyVal {
     
     inline def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     

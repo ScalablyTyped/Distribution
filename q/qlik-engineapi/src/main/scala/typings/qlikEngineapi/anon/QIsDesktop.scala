@@ -17,7 +17,8 @@ object QIsDesktop {
     __obj.asInstanceOf[QIsDesktop]
   }
   
-  extension [Self <: QIsDesktop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QIsDesktop] (val x: Self) extends AnyVal {
     
     inline def setQIsDesktop(value: Boolean): Self = StObject.set(x, "qIsDesktop", value.asInstanceOf[js.Any])
     

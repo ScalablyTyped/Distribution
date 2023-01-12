@@ -54,7 +54,8 @@ object CollectionChange {
     __obj.asInstanceOf[CollectionChange]
   }
   
-  extension [Self <: CollectionChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionChange] (val x: Self) extends AnyVal {
     
     inline def setAction(value: NotifyCollectionChangedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

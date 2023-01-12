@@ -78,7 +78,8 @@ object buildSrcCompileDataBinMod {
       __obj.asInstanceOf[BinComponent]
     }
     
-    extension [Self <: BinComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinComponent] (val x: Self) extends AnyVal {
       
       inline def setAs(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

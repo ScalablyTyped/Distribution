@@ -29,7 +29,8 @@ object ExpressionFilterClause {
     __obj.asInstanceOf[ExpressionFilterClause]
   }
   
-  extension [Self <: ExpressionFilterClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionFilterClause] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     

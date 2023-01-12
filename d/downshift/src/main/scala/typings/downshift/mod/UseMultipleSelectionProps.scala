@@ -50,7 +50,8 @@ object UseMultipleSelectionProps {
     __obj.asInstanceOf[UseMultipleSelectionProps[Item]]
   }
   
-  extension [Self <: UseMultipleSelectionProps[?], Item](x: Self & UseMultipleSelectionProps[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseMultipleSelectionProps[?], Item] (val x: Self & UseMultipleSelectionProps[Item]) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

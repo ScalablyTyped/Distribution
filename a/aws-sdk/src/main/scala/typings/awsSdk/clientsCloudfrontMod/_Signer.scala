@@ -23,7 +23,8 @@ object _Signer {
     __obj.asInstanceOf[_Signer]
   }
   
-  extension [Self <: _Signer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _Signer] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountNumber(value: String): Self = StObject.set(x, "AwsAccountNumber", value.asInstanceOf[js.Any])
     

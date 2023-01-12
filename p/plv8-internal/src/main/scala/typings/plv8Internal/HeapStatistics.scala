@@ -32,7 +32,8 @@ object HeapStatistics {
     __obj.asInstanceOf[HeapStatistics]
   }
   
-  extension [Self <: HeapStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeapStatistics] (val x: Self) extends AnyVal {
     
     inline def setExternal_memory(value: Double): Self = StObject.set(x, "external_memory", value.asInstanceOf[js.Any])
     

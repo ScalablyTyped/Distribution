@@ -32,7 +32,8 @@ object Keypath {
     __obj.asInstanceOf[Keypath]
   }
   
-  extension [Self <: Keypath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Keypath] (val x: Self) extends AnyVal {
     
     inline def setI18n(value: TypeObjectConstructor): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     

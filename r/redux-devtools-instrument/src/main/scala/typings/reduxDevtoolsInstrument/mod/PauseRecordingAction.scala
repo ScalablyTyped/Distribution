@@ -21,7 +21,8 @@ object PauseRecordingAction {
     __obj.asInstanceOf[PauseRecordingAction]
   }
   
-  extension [Self <: PauseRecordingAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PauseRecordingAction] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[JSXBaseAttribute]
     }
     
-    extension [Self <: JSXBaseAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSXBaseAttribute] (val x: Self) extends AnyVal {
       
       inline def setType(
         value: typings.estreeJsx.estreeJsxStrings.JSXAttribute | typings.estreeJsx.estreeJsxStrings.JSXSpreadAttribute
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[JSXClosingElement]
     }
     
-    extension [Self <: JSXClosingElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSXClosingElement] (val x: Self) extends AnyVal {
       
       inline def setName(value: JSXIdentifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object mod {
       __obj.asInstanceOf[JSXElement]
     }
     
-    extension [Self <: JSXElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSXElement] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[BaseExpression]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object mod {
       __obj.asInstanceOf[JSXExpressionContainer]
     }
     
-    extension [Self <: JSXExpressionContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSXExpressionContainer] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: BaseExpression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
@@ -157,7 +161,8 @@ object mod {
       __obj.asInstanceOf[JSXFragment]
     }
     
-    extension [Self <: JSXFragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSXFragment] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[BaseExpression]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -184,7 +189,8 @@ object mod {
       __obj.asInstanceOf[JSXIdentifier]
     }
     
-    extension [Self <: JSXIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSXIdentifier] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -213,7 +219,8 @@ object mod {
       __obj.asInstanceOf[JSXOpeningElement]
     }
     
-    extension [Self <: JSXOpeningElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSXOpeningElement] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[JSXAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -247,7 +254,8 @@ object mod {
       __obj.asInstanceOf[JSXSimpleAttribute]
     }
     
-    extension [Self <: JSXSimpleAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSXSimpleAttribute] (val x: Self) extends AnyVal {
       
       inline def setName(value: JSXIdentifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -277,7 +285,8 @@ object mod {
       __obj.asInstanceOf[JSXSpreadAttribute]
     }
     
-    extension [Self <: JSXSpreadAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSXSpreadAttribute] (val x: Self) extends AnyVal {
       
       inline def setArgument(value: BaseExpression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
       
@@ -302,7 +311,8 @@ object mod {
       __obj.asInstanceOf[JSXText]
     }
     
-    extension [Self <: JSXText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSXText] (val x: Self) extends AnyVal {
       
       inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXText): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

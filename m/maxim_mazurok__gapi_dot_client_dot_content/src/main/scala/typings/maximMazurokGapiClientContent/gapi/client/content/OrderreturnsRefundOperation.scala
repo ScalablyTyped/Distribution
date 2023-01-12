@@ -31,7 +31,8 @@ object OrderreturnsRefundOperation {
     __obj.asInstanceOf[OrderreturnsRefundOperation]
   }
   
-  extension [Self <: OrderreturnsRefundOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderreturnsRefundOperation] (val x: Self) extends AnyVal {
     
     inline def setFullRefund(value: Boolean): Self = StObject.set(x, "fullRefund", value.asInstanceOf[js.Any])
     

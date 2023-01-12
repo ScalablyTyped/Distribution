@@ -28,7 +28,8 @@ object JoinAggregateTransform {
     __obj.asInstanceOf[JoinAggregateTransform]
   }
   
-  extension [Self <: JoinAggregateTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinAggregateTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: (js.Array[String | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

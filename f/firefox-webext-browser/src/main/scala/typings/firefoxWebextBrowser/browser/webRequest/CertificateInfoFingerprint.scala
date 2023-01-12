@@ -17,7 +17,8 @@ object CertificateInfoFingerprint {
     __obj.asInstanceOf[CertificateInfoFingerprint]
   }
   
-  extension [Self <: CertificateInfoFingerprint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateInfoFingerprint] (val x: Self) extends AnyVal {
     
     inline def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     

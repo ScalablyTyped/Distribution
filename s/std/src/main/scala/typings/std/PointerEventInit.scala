@@ -51,7 +51,8 @@ object PointerEventInit {
     __obj.asInstanceOf[PointerEventInit]
   }
   
-  extension [Self <: PointerEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerEventInit] (val x: Self) extends AnyVal {
     
     inline def setCoalescedEvents(value: js.Array[PointerEvent]): Self = StObject.set(x, "coalescedEvents", value.asInstanceOf[js.Any])
     

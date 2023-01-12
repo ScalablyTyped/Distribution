@@ -49,7 +49,8 @@ object buildAndroidSchemeMod {
       __obj.asInstanceOf[IntentFilterProps]
     }
     
-    extension [Self <: IntentFilterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntentFilterProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

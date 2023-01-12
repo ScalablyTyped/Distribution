@@ -17,7 +17,8 @@ object IDefaultAudioDeviceChangedEventArgs {
     __obj.asInstanceOf[IDefaultAudioDeviceChangedEventArgs]
   }
   
-  extension [Self <: IDefaultAudioDeviceChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDefaultAudioDeviceChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

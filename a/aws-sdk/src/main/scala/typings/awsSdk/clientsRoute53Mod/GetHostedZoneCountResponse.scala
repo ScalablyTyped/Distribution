@@ -18,7 +18,8 @@ object GetHostedZoneCountResponse {
     __obj.asInstanceOf[GetHostedZoneCountResponse]
   }
   
-  extension [Self <: GetHostedZoneCountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHostedZoneCountResponse] (val x: Self) extends AnyVal {
     
     inline def setHostedZoneCount(value: HostedZoneCount): Self = StObject.set(x, "HostedZoneCount", value.asInstanceOf[js.Any])
   }

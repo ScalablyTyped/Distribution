@@ -35,7 +35,8 @@ object Pkcs12CertificateInformation {
     __obj.asInstanceOf[Pkcs12CertificateInformation]
   }
   
-  extension [Self <: Pkcs12CertificateInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pkcs12CertificateInformation] (val x: Self) extends AnyVal {
     
     inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ListNotificationChannelsRequest {
     __obj.asInstanceOf[ListNotificationChannelsRequest]
   }
   
-  extension [Self <: ListNotificationChannelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNotificationChannelsRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: UuidNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

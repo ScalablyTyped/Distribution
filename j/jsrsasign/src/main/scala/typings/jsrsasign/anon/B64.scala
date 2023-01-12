@@ -15,7 +15,8 @@ object B64 {
     __obj.asInstanceOf[B64]
   }
   
-  extension [Self <: B64](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: B64] (val x: Self) extends AnyVal {
     
     inline def setB64(value: String): Self = StObject.set(x, "b64", value.asInstanceOf[js.Any])
   }

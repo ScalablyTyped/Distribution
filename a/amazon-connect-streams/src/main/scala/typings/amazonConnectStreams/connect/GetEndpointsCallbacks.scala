@@ -19,7 +19,8 @@ object GetEndpointsCallbacks {
     __obj.asInstanceOf[GetEndpointsCallbacks]
   }
   
-  extension [Self <: GetEndpointsCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEndpointsCallbacks] (val x: Self) extends AnyVal {
     
     inline def setFailure(value: js.Array[String] => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     

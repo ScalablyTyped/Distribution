@@ -27,7 +27,8 @@ object distTypesOnStageSystemDistComponentsIndeterminateXSmallMod extends Shortc
       __obj.asInstanceOf[IndeterminateXSmallProps]
     }
     
-    extension [Self <: IndeterminateXSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndeterminateXSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

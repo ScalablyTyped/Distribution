@@ -17,7 +17,8 @@ object QueryVisibletorepository {
     __obj.asInstanceOf[QueryVisibletorepository]
   }
   
-  extension [Self <: QueryVisibletorepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryVisibletorepository] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Org): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

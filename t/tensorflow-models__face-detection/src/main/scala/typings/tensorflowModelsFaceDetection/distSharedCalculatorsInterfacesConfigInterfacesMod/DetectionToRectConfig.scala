@@ -21,7 +21,8 @@ object DetectionToRectConfig {
     __obj.asInstanceOf[DetectionToRectConfig]
   }
   
-  extension [Self <: DetectionToRectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectionToRectConfig] (val x: Self) extends AnyVal {
     
     inline def setRotationVectorEndKeypointIndex(value: Double): Self = StObject.set(x, "rotationVectorEndKeypointIndex", value.asInstanceOf[js.Any])
     

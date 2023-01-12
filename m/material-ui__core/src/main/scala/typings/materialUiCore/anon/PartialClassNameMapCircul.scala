@@ -38,7 +38,8 @@ object PartialClassNameMapCircul {
     __obj.asInstanceOf[PartialClassNameMapCircul]
   }
   
-  extension [Self <: PartialClassNameMapCircul](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapCircul] (val x: Self) extends AnyVal {
     
     inline def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     

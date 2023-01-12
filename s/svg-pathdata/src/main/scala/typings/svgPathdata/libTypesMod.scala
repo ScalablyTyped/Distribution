@@ -56,7 +56,8 @@ object libTypesMod {
       __obj.asInstanceOf[CommandA]
     }
     
-    extension [Self <: CommandA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandA] (val x: Self) extends AnyVal {
       
       inline def setCX(value: Double): Self = StObject.set(x, "cX", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object libTypesMod {
       __obj.asInstanceOf[CommandC]
     }
     
-    extension [Self <: CommandC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandC] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object libTypesMod {
       __obj.asInstanceOf[CommandH]
     }
     
-    extension [Self <: CommandH](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandH] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
@@ -214,7 +217,8 @@ object libTypesMod {
       __obj.asInstanceOf[CommandL]
     }
     
-    extension [Self <: CommandL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandL] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
@@ -253,7 +257,8 @@ object libTypesMod {
       __obj.asInstanceOf[CommandM]
     }
     
-    extension [Self <: CommandM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandM] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
@@ -298,7 +303,8 @@ object libTypesMod {
       __obj.asInstanceOf[CommandQ]
     }
     
-    extension [Self <: CommandQ](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandQ] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
@@ -347,7 +353,8 @@ object libTypesMod {
       __obj.asInstanceOf[CommandS]
     }
     
-    extension [Self <: CommandS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandS] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
@@ -390,7 +397,8 @@ object libTypesMod {
       __obj.asInstanceOf[CommandT]
     }
     
-    extension [Self <: CommandT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandT] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
@@ -426,7 +434,8 @@ object libTypesMod {
       __obj.asInstanceOf[CommandV]
     }
     
-    extension [Self <: CommandV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandV] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
@@ -454,7 +463,8 @@ object libTypesMod {
       __obj.asInstanceOf[CommandZ]
     }
     
-    extension [Self <: CommandZ](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandZ] (val x: Self) extends AnyVal {
       
       inline def setType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SVGPathData.CLOSE_PATH */ Any

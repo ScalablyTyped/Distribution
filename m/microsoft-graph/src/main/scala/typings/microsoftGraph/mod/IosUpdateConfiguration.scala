@@ -27,7 +27,8 @@ object IosUpdateConfiguration {
     __obj.asInstanceOf[IosUpdateConfiguration]
   }
   
-  extension [Self <: IosUpdateConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosUpdateConfiguration] (val x: Self) extends AnyVal {
     
     inline def setActiveHoursEnd(value: String): Self = StObject.set(x, "activeHoursEnd", value.asInstanceOf[js.Any])
     

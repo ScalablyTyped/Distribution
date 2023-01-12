@@ -55,7 +55,8 @@ object WizardOptions {
     __obj.asInstanceOf[WizardOptions]
   }
   
-  extension [Self <: WizardOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WizardOptions] (val x: Self) extends AnyVal {
     
     inline def setFirstSelector(value: String): Self = StObject.set(x, "firstSelector", value.asInstanceOf[js.Any])
     

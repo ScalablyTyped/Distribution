@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsCouponSmallMod extends Shortcut {
       __obj.asInstanceOf[CouponSmallProps]
     }
     
-    extension [Self <: CouponSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CouponSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

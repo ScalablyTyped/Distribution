@@ -19,7 +19,8 @@ object AggregationsInferenceTopClassEntry {
     __obj.asInstanceOf[AggregationsInferenceTopClassEntry]
   }
   
-  extension [Self <: AggregationsInferenceTopClassEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsInferenceTopClassEntry] (val x: Self) extends AnyVal {
     
     inline def setClass_name(value: FieldValue): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
     

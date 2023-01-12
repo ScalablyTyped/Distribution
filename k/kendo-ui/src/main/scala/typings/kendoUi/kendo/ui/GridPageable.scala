@@ -37,7 +37,8 @@ object GridPageable {
     __obj.asInstanceOf[GridPageable]
   }
   
-  extension [Self <: GridPageable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridPageable] (val x: Self) extends AnyVal {
     
     inline def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
     

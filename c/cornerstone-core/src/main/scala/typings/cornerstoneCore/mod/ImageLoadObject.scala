@@ -19,7 +19,8 @@ object ImageLoadObject {
     __obj.asInstanceOf[ImageLoadObject]
   }
   
-  extension [Self <: ImageLoadObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageLoadObject] (val x: Self) extends AnyVal {
     
     inline def setCancelFn(value: () => Unit): Self = StObject.set(x, "cancelFn", js.Any.fromFunction0(value))
     

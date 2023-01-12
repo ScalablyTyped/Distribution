@@ -31,7 +31,8 @@ object RemoveHandlerOptions {
     __obj.asInstanceOf[RemoveHandlerOptions]
   }
   
-  extension [Self <: RemoveHandlerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveHandlerOptions] (val x: Self) extends AnyVal {
     
     inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     

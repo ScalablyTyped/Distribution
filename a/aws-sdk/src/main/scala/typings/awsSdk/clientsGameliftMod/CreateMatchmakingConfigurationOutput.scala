@@ -18,7 +18,8 @@ object CreateMatchmakingConfigurationOutput {
     __obj.asInstanceOf[CreateMatchmakingConfigurationOutput]
   }
   
-  extension [Self <: CreateMatchmakingConfigurationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMatchmakingConfigurationOutput] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: MatchmakingConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

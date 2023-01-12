@@ -23,7 +23,8 @@ object IModelLanguageChangedEvent {
     __obj.asInstanceOf[IModelLanguageChangedEvent]
   }
   
-  extension [Self <: IModelLanguageChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModelLanguageChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setNewLanguage(value: String): Self = StObject.set(x, "newLanguage", value.asInstanceOf[js.Any])
     

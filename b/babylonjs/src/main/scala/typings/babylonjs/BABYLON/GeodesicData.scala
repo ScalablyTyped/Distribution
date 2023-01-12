@@ -81,7 +81,8 @@ object GeodesicData {
     __obj.asInstanceOf[GeodesicData]
   }
   
-  extension [Self <: GeodesicData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeodesicData] (val x: Self) extends AnyVal {
     
     inline def setAdjacentFaces(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "adjacentFaces", value.asInstanceOf[js.Any])
     

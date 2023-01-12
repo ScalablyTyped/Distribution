@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setProfile(value: js.Object): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[Credentials1]
     }
     
-    extension [Self <: Credentials1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials1] (val x: Self) extends AnyVal {
       
       inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
@@ -132,7 +134,8 @@ object mod {
       __obj.asInstanceOf[Credentials2]
     }
     
-    extension [Self <: Credentials2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials2] (val x: Self) extends AnyVal {
       
       inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
@@ -175,7 +178,8 @@ object mod {
       __obj.asInstanceOf[CustomProtocol]
     }
     
-    extension [Self <: CustomProtocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomProtocol] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -223,7 +227,8 @@ object mod {
       __obj.asInstanceOf[CustomProtocol1]
     }
     
-    extension [Self <: CustomProtocol1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomProtocol1] (val x: Self) extends AnyVal {
       
       inline def setProfile(value: ProfileGetter[Credentials1]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
@@ -281,7 +286,8 @@ object mod {
       __obj.asInstanceOf[CustomProtocol2]
     }
     
-    extension [Self <: CustomProtocol2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomProtocol2] (val x: Self) extends AnyVal {
       
       inline def setPkce(value: PkceSetting): Self = StObject.set(x, "pkce", value.asInstanceOf[js.Any])
       
@@ -329,7 +335,8 @@ object mod {
       __obj.asInstanceOf[CustomProviderOptions]
     }
     
-    extension [Self <: CustomProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setProvider(value: CustomProtocol1 | CustomProtocol2): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     }
@@ -350,7 +357,8 @@ object mod {
       __obj.asInstanceOf[KnownProviderOptions]
     }
     
-    extension [Self <: KnownProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnownProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setProvider(value: Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     }
@@ -478,7 +486,8 @@ object mod {
       __obj.asInstanceOf[OptionalOptions]
     }
     
-    extension [Self <: OptionalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowRuntimeProviderParams(value: StringLikeMap | Boolean): Self = StObject.set(x, "allowRuntimeProviderParams", value.asInstanceOf[js.Any])
       
@@ -717,7 +726,8 @@ object mod {
       __obj.asInstanceOf[RequiredProviderOptions]
     }
     
-    extension [Self <: RequiredProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -744,7 +754,8 @@ object mod {
         __obj.asInstanceOf[ServerAuth]
       }
       
-      extension [Self <: ServerAuth](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ServerAuth] (val x: Self) extends AnyVal {
         
         inline def setStrategy(value: (String, bell, BellOptions) => Unit): Self = StObject.set(x, "strategy", js.Any.fromFunction3(value))
       }

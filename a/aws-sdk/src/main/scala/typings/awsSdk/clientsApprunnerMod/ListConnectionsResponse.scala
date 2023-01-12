@@ -23,7 +23,8 @@ object ListConnectionsResponse {
     __obj.asInstanceOf[ListConnectionsResponse]
   }
   
-  extension [Self <: ListConnectionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConnectionsResponse] (val x: Self) extends AnyVal {
     
     inline def setConnectionSummaryList(value: ConnectionSummaryList): Self = StObject.set(x, "ConnectionSummaryList", value.asInstanceOf[js.Any])
     

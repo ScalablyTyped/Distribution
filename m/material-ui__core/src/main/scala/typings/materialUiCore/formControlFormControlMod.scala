@@ -84,7 +84,8 @@ object formControlFormControlMod extends Shortcut {
       __obj.asInstanceOf[FormControlTypeMap[P, D]]
     }
     
-    extension [Self <: FormControlTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (FormControlTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormControlTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (FormControlTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: FormControlClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

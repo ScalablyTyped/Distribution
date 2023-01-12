@@ -28,7 +28,8 @@ object YarnApplication {
     __obj.asInstanceOf[YarnApplication]
   }
   
-  extension [Self <: YarnApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YarnApplication] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

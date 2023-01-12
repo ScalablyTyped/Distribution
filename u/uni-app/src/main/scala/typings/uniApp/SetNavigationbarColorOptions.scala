@@ -43,7 +43,8 @@ object SetNavigationbarColorOptions {
     __obj.asInstanceOf[SetNavigationbarColorOptions]
   }
   
-  extension [Self <: SetNavigationbarColorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetNavigationbarColorOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: NavigationBarAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

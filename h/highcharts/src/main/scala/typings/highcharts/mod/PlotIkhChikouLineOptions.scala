@@ -15,7 +15,8 @@ object PlotIkhChikouLineOptions {
     __obj.asInstanceOf[PlotIkhChikouLineOptions]
   }
   
-  extension [Self <: PlotIkhChikouLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotIkhChikouLineOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotIkhChikouLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

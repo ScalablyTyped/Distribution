@@ -75,7 +75,8 @@ object distFormatMod {
       __obj.asInstanceOf[ColumnarOptions]
     }
     
-    extension [Self <: ColumnarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnarOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object distFormatMod {
       __obj.asInstanceOf[WordWrapOptions]
     }
     
-    extension [Self <: WordWrapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WordWrapOptions] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: String): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       

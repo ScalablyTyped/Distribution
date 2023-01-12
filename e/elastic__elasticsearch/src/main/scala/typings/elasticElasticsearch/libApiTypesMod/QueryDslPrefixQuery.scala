@@ -21,7 +21,8 @@ object QueryDslPrefixQuery {
     __obj.asInstanceOf[QueryDslPrefixQuery]
   }
   
-  extension [Self <: QueryDslPrefixQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslPrefixQuery] (val x: Self) extends AnyVal {
     
     inline def setCase_insensitive(value: Boolean): Self = StObject.set(x, "case_insensitive", value.asInstanceOf[js.Any])
     

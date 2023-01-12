@@ -28,7 +28,8 @@ object CreatePopupTemplateOptions {
     __obj.asInstanceOf[CreatePopupTemplateOptions]
   }
   
-  extension [Self <: CreatePopupTemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePopupTemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreFieldTypes(value: js.Array[String]): Self = StObject.set(x, "ignoreFieldTypes", value.asInstanceOf[js.Any])
     

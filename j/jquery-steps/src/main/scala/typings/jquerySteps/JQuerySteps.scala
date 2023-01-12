@@ -98,7 +98,8 @@ object JQuerySteps {
       __obj.asInstanceOf[typings.jquerySteps.JQuerySteps.JQuerySteps]
     }
     
-    extension [Self <: typings.jquerySteps.JQuerySteps.JQuerySteps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.jquerySteps.JQuerySteps.JQuerySteps] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Step => typings.jquerySteps.JQuerySteps.JQuerySteps): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -170,7 +171,8 @@ object JQuerySteps {
       __obj.asInstanceOf[LabelSettings]
     }
     
-    extension [Self <: LabelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettings] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -376,7 +378,8 @@ object JQuerySteps {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setActionContainerTag(value: String): Self = StObject.set(x, "actionContainerTag", value.asInstanceOf[js.Any])
       
@@ -536,7 +539,8 @@ object JQuerySteps {
       __obj.asInstanceOf[Step]
     }
     
-    extension [Self <: Step](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

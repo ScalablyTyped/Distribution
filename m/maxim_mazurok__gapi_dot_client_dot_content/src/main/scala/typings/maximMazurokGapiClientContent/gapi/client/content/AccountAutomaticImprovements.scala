@@ -35,7 +35,8 @@ object AccountAutomaticImprovements {
     __obj.asInstanceOf[AccountAutomaticImprovements]
   }
   
-  extension [Self <: AccountAutomaticImprovements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountAutomaticImprovements] (val x: Self) extends AnyVal {
     
     inline def setImageImprovements(value: AccountImageImprovements): Self = StObject.set(x, "imageImprovements", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object CurrentBreakpoint {
     __obj.asInstanceOf[CurrentBreakpoint]
   }
   
-  extension [Self <: CurrentBreakpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentBreakpoint] (val x: Self) extends AnyVal {
     
     inline def setCurrentBreakpoint(value: String): Self = StObject.set(x, "currentBreakpoint", value.asInstanceOf[js.Any])
     

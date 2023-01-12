@@ -263,7 +263,8 @@ object DataSourceSettings {
     __obj.asInstanceOf[DataSourceSettings]
   }
   
-  extension [Self <: DataSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setAggregateTransactions(value: Boolean): Self = StObject.set(x, "aggregateTransactions", value.asInstanceOf[js.Any])
     

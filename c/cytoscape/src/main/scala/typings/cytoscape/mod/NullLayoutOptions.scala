@@ -21,7 +21,8 @@ object NullLayoutOptions {
     __obj.asInstanceOf[NullLayoutOptions]
   }
   
-  extension [Self <: NullLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setName(value: `null`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

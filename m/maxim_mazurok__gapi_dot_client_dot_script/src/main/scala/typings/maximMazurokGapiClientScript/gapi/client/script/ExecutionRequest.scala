@@ -39,7 +39,8 @@ object ExecutionRequest {
     __obj.asInstanceOf[ExecutionRequest]
   }
   
-  extension [Self <: ExecutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionRequest] (val x: Self) extends AnyVal {
     
     inline def setDevMode(value: Boolean): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
     

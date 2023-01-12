@@ -66,7 +66,8 @@ object PlusWebviewWebviewDragOptions {
     __obj.asInstanceOf[PlusWebviewWebviewDragOptions]
   }
   
-  extension [Self <: PlusWebviewWebviewDragOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewDragOptions] (val x: Self) extends AnyVal {
     
     inline def setCallbackStep(value: Double): Self = StObject.set(x, "callbackStep", value.asInstanceOf[js.Any])
     

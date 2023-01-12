@@ -23,7 +23,8 @@ object PathSupportOption {
     __obj.asInstanceOf[PathSupportOption]
   }
   
-  extension [Self <: PathSupportOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathSupportOption] (val x: Self) extends AnyVal {
     
     inline def setArray(value: `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

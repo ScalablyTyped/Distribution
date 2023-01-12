@@ -42,7 +42,8 @@ object PartialModifieranyanyEffect {
     __obj.asInstanceOf[PartialModifieranyanyEffect]
   }
   
-  extension [Self <: PartialModifieranyanyEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialModifieranyanyEffect] (val x: Self) extends AnyVal {
     
     inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListArchiveRulesResponse {
     __obj.asInstanceOf[ListArchiveRulesResponse]
   }
   
-  extension [Self <: ListArchiveRulesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListArchiveRulesResponse] (val x: Self) extends AnyVal {
     
     inline def setArchiveRules(value: ArchiveRulesList): Self = StObject.set(x, "archiveRules", value.asInstanceOf[js.Any])
     

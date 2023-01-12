@@ -27,7 +27,8 @@ object DeviceCredential {
     __obj.asInstanceOf[DeviceCredential]
   }
   
-  extension [Self <: DeviceCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceCredential] (val x: Self) extends AnyVal {
     
     inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     

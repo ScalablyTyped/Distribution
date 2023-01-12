@@ -24,7 +24,8 @@ object BridgeProtocol {
     __obj.asInstanceOf[BridgeProtocol]
   }
   
-  extension [Self <: BridgeProtocol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BridgeProtocol] (val x: Self) extends AnyVal {
     
     inline def setMaxNpmVersion(value: String): Self = StObject.set(x, "maxNpmVersion", value.asInstanceOf[js.Any])
     

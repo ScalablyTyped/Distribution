@@ -36,7 +36,8 @@ object AverageCycleTimeMs {
     __obj.asInstanceOf[AverageCycleTimeMs]
   }
   
-  extension [Self <: AverageCycleTimeMs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AverageCycleTimeMs] (val x: Self) extends AnyVal {
     
     inline def setAverageCycleTimeMs(value: RedisCommandArgument): Self = StObject.set(x, "averageCycleTimeMs", value.asInstanceOf[js.Any])
     

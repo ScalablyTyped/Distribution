@@ -19,7 +19,8 @@ object ExportFormatOptions {
     __obj.asInstanceOf[ExportFormatOptions]
   }
   
-  extension [Self <: ExportFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setJSON_BATCHED(value: `1`): Self = StObject.set(x, "JSON_BATCHED", value.asInstanceOf[js.Any])
     

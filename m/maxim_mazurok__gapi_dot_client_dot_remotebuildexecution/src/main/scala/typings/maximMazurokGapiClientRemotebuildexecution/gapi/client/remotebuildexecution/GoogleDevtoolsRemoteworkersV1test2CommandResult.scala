@@ -48,7 +48,8 @@ object GoogleDevtoolsRemoteworkersV1test2CommandResult {
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2CommandResult]
   }
   
-  extension [Self <: GoogleDevtoolsRemoteworkersV1test2CommandResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2CommandResult] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

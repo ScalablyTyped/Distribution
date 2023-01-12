@@ -73,7 +73,8 @@ object esUtilDiffMod {
       __obj.asInstanceOf[KeyObject]
     }
     
-    extension [Self <: KeyObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyObject] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

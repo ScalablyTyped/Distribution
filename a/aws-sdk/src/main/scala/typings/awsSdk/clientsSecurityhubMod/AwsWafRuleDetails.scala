@@ -33,7 +33,8 @@ object AwsWafRuleDetails {
     __obj.asInstanceOf[AwsWafRuleDetails]
   }
   
-  extension [Self <: AwsWafRuleDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsWafRuleDetails] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: NonEmptyString): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     

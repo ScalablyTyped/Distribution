@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[DuckBuilder[AppAction]]
     }
     
-    extension [Self <: DuckBuilder[?], AppAction /* <: Action[Any] */](x: Self & DuckBuilder[AppAction]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuckBuilder[?], AppAction /* <: Action[Any] */] (val x: Self & DuckBuilder[AppAction]) extends AnyVal {
       
       inline def setCreateAction(value: Any => ActionCreator[Extract[AppAction, Type[Any, AppAction]]]): Self = StObject.set(x, "createAction", js.Any.fromFunction1(value))
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[FSAHack]
     }
     
-    extension [Self <: FSAHack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FSAHack] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

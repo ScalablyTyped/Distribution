@@ -37,7 +37,8 @@ object MeshComponentProperties {
     __obj.asInstanceOf[MeshComponentProperties]
   }
   
-  extension [Self <: MeshComponentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshComponentProperties] (val x: Self) extends AnyVal {
     
     inline def setFaces(value: js.typedarray.Uint32Array | js.Array[Double] | js.typedarray.Uint16Array): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
     

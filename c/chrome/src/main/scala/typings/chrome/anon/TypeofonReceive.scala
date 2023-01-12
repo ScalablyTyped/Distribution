@@ -16,7 +16,8 @@ object TypeofonReceive {
     __obj.asInstanceOf[TypeofonReceive]
   }
   
-  extension [Self <: TypeofonReceive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofonReceive] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: js.Function1[/* info */ OnReceiveInfo, Unit] => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
   }

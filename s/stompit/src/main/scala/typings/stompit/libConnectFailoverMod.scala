@@ -38,7 +38,8 @@ object libConnectFailoverMod {
       __obj.asInstanceOf[ConnectError]
     }
     
-    extension [Self <: ConnectError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectError] (val x: Self) extends AnyVal {
       
       inline def setConnectArgs(value: ConnectOptions): Self = StObject.set(x, "connectArgs", value.asInstanceOf[js.Any])
     }
@@ -103,7 +104,8 @@ object libConnectFailoverMod {
       __obj.asInstanceOf[ConnectFailoverOptions]
     }
     
-    extension [Self <: ConnectFailoverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectFailoverOptions] (val x: Self) extends AnyVal {
       
       inline def setConnectFunction(
         value: (/* options */ ConnectOptions, /* connectionListener */ js.UndefOr[ConnectionListener]) => typings.stompit.libClientMod.^
@@ -165,7 +167,8 @@ object libConnectFailoverMod {
       __obj.asInstanceOf[Server]
     }
     
-    extension [Self <: Server](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
       
       inline def setConnectOptions(value: ConnectOptions): Self = StObject.set(x, "connectOptions", value.asInstanceOf[js.Any])
       

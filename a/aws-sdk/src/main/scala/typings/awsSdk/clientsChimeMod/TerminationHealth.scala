@@ -23,7 +23,8 @@ object TerminationHealth {
     __obj.asInstanceOf[TerminationHealth]
   }
   
-  extension [Self <: TerminationHealth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminationHealth] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     

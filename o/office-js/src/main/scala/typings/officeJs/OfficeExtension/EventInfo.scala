@@ -23,7 +23,8 @@ object EventInfo {
     __obj.asInstanceOf[EventInfo[T]]
   }
   
-  extension [Self <: EventInfo[?], T](x: Self & EventInfo[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventInfo[?], T] (val x: Self & EventInfo[T]) extends AnyVal {
     
     inline def setEventArgsTransformFunc(value: Any => js.Promise[T]): Self = StObject.set(x, "eventArgsTransformFunc", js.Any.fromFunction1(value))
     

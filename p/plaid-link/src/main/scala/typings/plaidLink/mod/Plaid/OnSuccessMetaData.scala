@@ -20,7 +20,8 @@ object OnSuccessMetaData {
     __obj.asInstanceOf[OnSuccessMetaData]
   }
   
-  extension [Self <: OnSuccessMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnSuccessMetaData] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: js.Array[Account]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     

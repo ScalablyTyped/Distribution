@@ -136,7 +136,8 @@ object PageContainerPropsprefixe {
     __obj.asInstanceOf[PageContainerPropsprefixe]
   }
   
-  extension [Self <: PageContainerPropsprefixe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageContainerPropsprefixe] (val x: Self) extends AnyVal {
     
     inline def setAffixProps(value: OmitAffixPropschildren): Self = StObject.set(x, "affixProps", value.asInstanceOf[js.Any])
     

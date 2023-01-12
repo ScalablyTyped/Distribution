@@ -218,7 +218,8 @@ object CreativeAsset {
     __obj.asInstanceOf[CreativeAsset]
   }
   
-  extension [Self <: CreativeAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeAsset] (val x: Self) extends AnyVal {
     
     inline def setActionScript3(value: Boolean): Self = StObject.set(x, "actionScript3", value.asInstanceOf[js.Any])
     

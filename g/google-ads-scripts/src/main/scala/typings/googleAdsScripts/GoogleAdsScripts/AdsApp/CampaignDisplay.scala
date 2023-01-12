@@ -95,7 +95,8 @@ object CampaignDisplay {
     __obj.asInstanceOf[CampaignDisplay]
   }
   
-  extension [Self <: CampaignDisplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignDisplay] (val x: Self) extends AnyVal {
     
     inline def setAudiences(value: () => AudienceSelector): Self = StObject.set(x, "audiences", js.Any.fromFunction0(value))
     

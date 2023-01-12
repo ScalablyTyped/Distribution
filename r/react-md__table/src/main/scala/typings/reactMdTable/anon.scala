@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[RequiredTableConfig]
     }
     
-    extension [Self <: RequiredTableConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredTableConfig] (val x: Self) extends AnyVal {
       
       inline def setDisableBorders(value: Boolean): Self = StObject.set(x, "disableBorders", value.asInstanceOf[js.Any])
       

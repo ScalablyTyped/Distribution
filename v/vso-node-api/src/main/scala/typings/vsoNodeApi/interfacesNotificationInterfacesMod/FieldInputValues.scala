@@ -29,7 +29,8 @@ object FieldInputValues {
     __obj.asInstanceOf[FieldInputValues]
   }
   
-  extension [Self <: FieldInputValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldInputValues] (val x: Self) extends AnyVal {
     
     inline def setOperators(value: js.Array[Double]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     

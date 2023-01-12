@@ -23,7 +23,8 @@ object DetectStackDriftInput {
     __obj.asInstanceOf[DetectStackDriftInput]
   }
   
-  extension [Self <: DetectStackDriftInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectStackDriftInput] (val x: Self) extends AnyVal {
     
     inline def setLogicalResourceIds(value: LogicalResourceIds): Self = StObject.set(x, "LogicalResourceIds", value.asInstanceOf[js.Any])
     

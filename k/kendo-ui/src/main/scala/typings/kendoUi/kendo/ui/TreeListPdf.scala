@@ -41,7 +41,8 @@ object TreeListPdf {
     __obj.asInstanceOf[TreeListPdf]
   }
   
-  extension [Self <: TreeListPdf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListPdf] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GoogleCloudDialogflowV2IntentFollowupIntentInfo {
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentFollowupIntentInfo]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2IntentFollowupIntentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2IntentFollowupIntentInfo] (val x: Self) extends AnyVal {
     
     inline def setFollowupIntentName(value: String): Self = StObject.set(x, "followupIntentName", value.asInstanceOf[js.Any])
     

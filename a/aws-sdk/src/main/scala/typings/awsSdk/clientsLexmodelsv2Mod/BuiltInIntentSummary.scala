@@ -23,7 +23,8 @@ object BuiltInIntentSummary {
     __obj.asInstanceOf[BuiltInIntentSummary]
   }
   
-  extension [Self <: BuiltInIntentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltInIntentSummary] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

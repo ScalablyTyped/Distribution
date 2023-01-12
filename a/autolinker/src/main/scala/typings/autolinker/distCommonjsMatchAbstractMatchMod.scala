@@ -181,7 +181,8 @@ object distCommonjsMatchAbstractMatchMod {
       __obj.asInstanceOf[AbstractMatchConfig]
     }
     
-    extension [Self <: AbstractMatchConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractMatchConfig] (val x: Self) extends AnyVal {
       
       inline def setMatchedText(value: String): Self = StObject.set(x, "matchedText", value.asInstanceOf[js.Any])
       

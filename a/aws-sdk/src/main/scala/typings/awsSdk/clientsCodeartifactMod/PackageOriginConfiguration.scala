@@ -18,7 +18,8 @@ object PackageOriginConfiguration {
     __obj.asInstanceOf[PackageOriginConfiguration]
   }
   
-  extension [Self <: PackageOriginConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageOriginConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRestrictions(value: PackageOriginRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     

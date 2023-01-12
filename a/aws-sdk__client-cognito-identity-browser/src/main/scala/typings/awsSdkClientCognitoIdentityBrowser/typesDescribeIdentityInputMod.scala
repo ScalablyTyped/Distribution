@@ -46,7 +46,8 @@ object typesDescribeIdentityInputMod {
       __obj.asInstanceOf[DescribeIdentityInput]
     }
     
-    extension [Self <: DescribeIdentityInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeIdentityInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

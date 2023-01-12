@@ -27,7 +27,8 @@ object MessageDescriptorBase {
     __obj.asInstanceOf[MessageDescriptorBase]
   }
   
-  extension [Self <: MessageDescriptorBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageDescriptorBase] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[MessageButtonDescriptor]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

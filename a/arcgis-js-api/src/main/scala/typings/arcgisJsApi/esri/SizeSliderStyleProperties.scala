@@ -31,7 +31,8 @@ object SizeSliderStyleProperties {
     __obj.asInstanceOf[SizeSliderStyleProperties]
   }
   
-  extension [Self <: SizeSliderStyleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeSliderStyleProperties] (val x: Self) extends AnyVal {
     
     inline def setTrackBackgroundColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "trackBackgroundColor", value.asInstanceOf[js.Any])
     

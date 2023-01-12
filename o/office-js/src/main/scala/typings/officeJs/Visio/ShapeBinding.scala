@@ -43,7 +43,8 @@ object ShapeBinding {
     __obj.asInstanceOf[ShapeBinding]
   }
   
-  extension [Self <: ShapeBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeBinding] (val x: Self) extends AnyVal {
     
     inline def setAlternativeTextColumnName(value: String): Self = StObject.set(x, "alternativeTextColumnName", value.asInstanceOf[js.Any])
     

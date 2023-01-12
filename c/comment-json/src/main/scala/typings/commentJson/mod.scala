@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[CommentLocation]
     }
     
-    extension [Self <: CommentLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentLocation] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object mod {
       __obj.asInstanceOf[CommentToken]
     }
     
-    extension [Self <: CommentToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentToken] (val x: Self) extends AnyVal {
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object mod {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -191,7 +194,8 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -216,7 +220,8 @@ object mod {
       __obj.asInstanceOf[TokenizeOptions]
     }
     
-    extension [Self <: TokenizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenizeOptions] (val x: Self) extends AnyVal {
       
       inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       

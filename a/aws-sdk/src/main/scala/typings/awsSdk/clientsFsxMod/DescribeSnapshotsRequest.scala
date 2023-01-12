@@ -27,7 +27,8 @@ object DescribeSnapshotsRequest {
     __obj.asInstanceOf[DescribeSnapshotsRequest]
   }
   
-  extension [Self <: DescribeSnapshotsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSnapshotsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: SnapshotFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

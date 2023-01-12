@@ -151,7 +151,8 @@ object NavigatorYAxisTitleOptions {
     __obj.asInstanceOf[NavigatorYAxisTitleOptions]
   }
   
-  extension [Self <: NavigatorYAxisTitleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorYAxisTitleOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AxisTitleAlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

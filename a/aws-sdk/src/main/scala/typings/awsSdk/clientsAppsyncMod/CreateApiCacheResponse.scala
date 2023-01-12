@@ -18,7 +18,8 @@ object CreateApiCacheResponse {
     __obj.asInstanceOf[CreateApiCacheResponse]
   }
   
-  extension [Self <: CreateApiCacheResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateApiCacheResponse] (val x: Self) extends AnyVal {
     
     inline def setApiCache(value: ApiCache): Self = StObject.set(x, "apiCache", value.asInstanceOf[js.Any])
     

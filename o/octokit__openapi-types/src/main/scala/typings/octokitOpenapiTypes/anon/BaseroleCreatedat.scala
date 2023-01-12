@@ -45,7 +45,8 @@ object BaseroleCreatedat {
     __obj.asInstanceOf[BaseroleCreatedat]
   }
   
-  extension [Self <: BaseroleCreatedat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseroleCreatedat] (val x: Self) extends AnyVal {
     
     inline def setBase_role(value: read | triage | write | maintain): Self = StObject.set(x, "base_role", value.asInstanceOf[js.Any])
     

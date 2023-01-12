@@ -499,7 +499,8 @@ object megamenuMegamenuMod {
       __obj.asInstanceOf[MegaMenuProps]
     }
     
-    extension [Self <: MegaMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MegaMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

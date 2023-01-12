@@ -121,7 +121,8 @@ object ASPxClientEdit {
     __obj.asInstanceOf[ASPxClientEdit]
   }
   
-  extension [Self <: ASPxClientEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientEdit] (val x: Self) extends AnyVal {
     
     inline def setFocus(value: () => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction0(value))
     

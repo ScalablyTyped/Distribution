@@ -23,7 +23,8 @@ object PutEmailIdentityFeedbackAttributesRequest {
     __obj.asInstanceOf[PutEmailIdentityFeedbackAttributesRequest]
   }
   
-  extension [Self <: PutEmailIdentityFeedbackAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutEmailIdentityFeedbackAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setEmailForwardingEnabled(value: Enabled): Self = StObject.set(x, "EmailForwardingEnabled", value.asInstanceOf[js.Any])
     

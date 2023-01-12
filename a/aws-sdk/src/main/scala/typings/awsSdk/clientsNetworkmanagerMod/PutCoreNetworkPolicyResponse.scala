@@ -18,7 +18,8 @@ object PutCoreNetworkPolicyResponse {
     __obj.asInstanceOf[PutCoreNetworkPolicyResponse]
   }
   
-  extension [Self <: PutCoreNetworkPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutCoreNetworkPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkPolicy(value: CoreNetworkPolicy): Self = StObject.set(x, "CoreNetworkPolicy", value.asInstanceOf[js.Any])
     

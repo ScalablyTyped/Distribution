@@ -103,7 +103,8 @@ object releaseProjectMod {
       __obj.asInstanceOf[ProjectInfo]
     }
     
-    extension [Self <: ProjectInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectInfo] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: ICompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       

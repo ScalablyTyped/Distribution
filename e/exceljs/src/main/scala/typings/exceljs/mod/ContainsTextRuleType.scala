@@ -24,7 +24,8 @@ object ContainsTextRuleType {
     __obj.asInstanceOf[ContainsTextRuleType]
   }
   
-  extension [Self <: ContainsTextRuleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainsTextRuleType] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: ContainsTextOperators): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

@@ -209,7 +209,8 @@ object QuestionnaireItem {
     __obj.asInstanceOf[QuestionnaireItem]
   }
   
-  extension [Self <: QuestionnaireItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuestionnaireItem] (val x: Self) extends AnyVal {
     
     inline def setCode(value: js.Array[Coding]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

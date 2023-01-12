@@ -71,7 +71,8 @@ object IRow {
     __obj.asInstanceOf[IRow]
   }
   
-  extension [Self <: IRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRow] (val x: Self) extends AnyVal {
     
     inline def setAfterSelectionChange(value: () => Unit): Self = StObject.set(x, "afterSelectionChange", js.Any.fromFunction0(value))
     

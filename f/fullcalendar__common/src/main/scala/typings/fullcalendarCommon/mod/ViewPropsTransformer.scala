@@ -15,7 +15,8 @@ object ViewPropsTransformer {
     __obj.asInstanceOf[ViewPropsTransformer]
   }
   
-  extension [Self <: ViewPropsTransformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPropsTransformer] (val x: Self) extends AnyVal {
     
     inline def setTransform(value: (ViewProps, CalendarContentProps) => Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
   }

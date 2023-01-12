@@ -34,7 +34,8 @@ object PlusKeyKeyEvent {
     __obj.asInstanceOf[PlusKeyKeyEvent]
   }
   
-  extension [Self <: PlusKeyKeyEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusKeyKeyEvent] (val x: Self) extends AnyVal {
     
     inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     

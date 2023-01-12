@@ -73,7 +73,8 @@ object MaintenanceWindowIdentity {
     __obj.asInstanceOf[MaintenanceWindowIdentity]
   }
   
-  extension [Self <: MaintenanceWindowIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceWindowIdentity] (val x: Self) extends AnyVal {
     
     inline def setCutoff(value: MaintenanceWindowCutoff): Self = StObject.set(x, "Cutoff", value.asInstanceOf[js.Any])
     

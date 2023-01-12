@@ -27,7 +27,8 @@ object EditorialNotes {
     __obj.asInstanceOf[EditorialNotes]
   }
   
-  extension [Self <: EditorialNotes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorialNotes] (val x: Self) extends AnyVal {
     
     inline def setHashValue(value: Double): Self = StObject.set(x, "hashValue", value.asInstanceOf[js.Any])
     

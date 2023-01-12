@@ -32,7 +32,8 @@ object SearchRoomResponse {
     __obj.asInstanceOf[SearchRoomResponse]
   }
   
-  extension [Self <: SearchRoomResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchRoomResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

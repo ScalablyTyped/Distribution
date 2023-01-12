@@ -29,7 +29,8 @@ object UriOptions {
     __obj.asInstanceOf[UriOptions]
   }
   
-  extension [Self <: UriOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UriOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowRelative(value: Boolean): Self = StObject.set(x, "allowRelative", value.asInstanceOf[js.Any])
     

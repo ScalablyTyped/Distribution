@@ -88,7 +88,8 @@ object UpdateReplicationConfigurationRequest {
     __obj.asInstanceOf[UpdateReplicationConfigurationRequest]
   }
   
-  extension [Self <: UpdateReplicationConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateReplicationConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociateDefaultSecurityGroup(value: Boolean): Self = StObject.set(x, "associateDefaultSecurityGroup", value.asInstanceOf[js.Any])
     

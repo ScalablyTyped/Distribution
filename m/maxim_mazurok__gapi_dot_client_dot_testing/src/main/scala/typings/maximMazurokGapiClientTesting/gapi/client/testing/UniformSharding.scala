@@ -19,7 +19,8 @@ object UniformSharding {
     __obj.asInstanceOf[UniformSharding]
   }
   
-  extension [Self <: UniformSharding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniformSharding] (val x: Self) extends AnyVal {
     
     inline def setNumShards(value: Double): Self = StObject.set(x, "numShards", value.asInstanceOf[js.Any])
     

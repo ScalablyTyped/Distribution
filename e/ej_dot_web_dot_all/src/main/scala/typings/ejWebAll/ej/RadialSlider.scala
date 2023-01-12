@@ -55,7 +55,8 @@ object RadialSlider {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object RadialSlider {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -228,7 +230,8 @@ object RadialSlider {
       __obj.asInstanceOf[typings.ejWebAll.ej.RadialSlider.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.RadialSlider.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.RadialSlider.Model] (val x: Self) extends AnyVal {
       
       inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
       
@@ -351,7 +354,8 @@ object RadialSlider {
       __obj.asInstanceOf[MouseoverEventArgs]
     }
     
-    extension [Self <: MouseoverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseoverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -404,7 +408,8 @@ object RadialSlider {
       __obj.asInstanceOf[SlideEventArgs]
     }
     
-    extension [Self <: SlideEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -453,7 +458,8 @@ object RadialSlider {
       __obj.asInstanceOf[StartEventArgs]
     }
     
-    extension [Self <: StartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -498,7 +504,8 @@ object RadialSlider {
       __obj.asInstanceOf[StopEventArgs]
     }
     
-    extension [Self <: StopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

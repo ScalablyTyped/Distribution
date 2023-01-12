@@ -23,7 +23,8 @@ object UpdateMacieSessionRequest {
     __obj.asInstanceOf[UpdateMacieSessionRequest]
   }
   
-  extension [Self <: UpdateMacieSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMacieSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "findingPublishingFrequency", value.asInstanceOf[js.Any])
     

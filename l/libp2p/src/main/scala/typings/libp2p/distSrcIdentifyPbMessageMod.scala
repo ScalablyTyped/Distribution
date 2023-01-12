@@ -42,7 +42,8 @@ object distSrcIdentifyPbMessageMod {
     
     inline def encode(obj: Identify): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: Identify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identify] (val x: Self) extends AnyVal {
       
       inline def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
       

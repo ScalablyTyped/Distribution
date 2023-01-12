@@ -35,7 +35,8 @@ object DOMContainerProperties {
     __obj.asInstanceOf[DOMContainerProperties]
   }
   
-  extension [Self <: DOMContainerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMContainerProperties] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: HTMLDivElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

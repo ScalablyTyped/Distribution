@@ -116,7 +116,8 @@ object Field {
     __obj.asInstanceOf[Field]
   }
   
-  extension [Self <: Field](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
     
     inline def setAggregate(value: typings.vegaLite.buildSrcAggregateMod.Aggregate | CompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ResourceCreationLimitPolicy {
     __obj.asInstanceOf[ResourceCreationLimitPolicy]
   }
   
-  extension [Self <: ResourceCreationLimitPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceCreationLimitPolicy] (val x: Self) extends AnyVal {
     
     inline def setNewGameSessionsPerCreator(value: WholeNumber): Self = StObject.set(x, "NewGameSessionsPerCreator", value.asInstanceOf[js.Any])
     

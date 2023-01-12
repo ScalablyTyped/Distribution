@@ -31,7 +31,8 @@ object PhonegapFacebookPlugin {
       __obj.asInstanceOf[BaseDialogOptions]
     }
     
-    extension [Self <: BaseDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object PhonegapFacebookPlugin {
       __obj.asInstanceOf[BaseDialogResult]
     }
     
-    extension [Self <: BaseDialogResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseDialogResult] (val x: Self) extends AnyVal {
       
       inline def setError_code(value: String): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
       
@@ -345,7 +347,8 @@ object PhonegapFacebookPlugin {
       __obj.asInstanceOf[FeedDialogOptions]
     }
     
-    extension [Self <: FeedDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
@@ -404,7 +407,8 @@ object PhonegapFacebookPlugin {
       __obj.asInstanceOf[FeedDialogResult]
     }
     
-    extension [Self <: FeedDialogResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedDialogResult] (val x: Self) extends AnyVal {
       
       inline def setPost_id(value: String): Self = StObject.set(x, "post_id", value.asInstanceOf[js.Any])
     }
@@ -428,7 +432,8 @@ object PhonegapFacebookPlugin {
       __obj.asInstanceOf[LoginResult]
     }
     
-    extension [Self <: LoginResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginResult] (val x: Self) extends AnyVal {
       
       inline def setAuthResponse(value: AccessToken): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
       
@@ -464,7 +469,8 @@ object PhonegapFacebookPlugin {
       __obj.asInstanceOf[SendDialogOptions]
     }
     
-    extension [Self <: SendDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
@@ -501,7 +507,8 @@ object PhonegapFacebookPlugin {
       __obj.asInstanceOf[ShareDialogOptions]
     }
     
-    extension [Self <: ShareDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     }
@@ -527,7 +534,8 @@ object PhonegapFacebookPlugin {
       __obj.asInstanceOf[ShareDialogResult]
     }
     
-    extension [Self <: ShareDialogResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareDialogResult] (val x: Self) extends AnyVal {
       
       inline def setPost_id(value: String): Self = StObject.set(x, "post_id", value.asInstanceOf[js.Any])
     }
@@ -564,7 +572,8 @@ object PhonegapFacebookPlugin {
       __obj.asInstanceOf[ShareOpenGraphDialogOptions]
     }
     
-    extension [Self <: ShareOpenGraphDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareOpenGraphDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setAction_properties(value: String): Self = StObject.set(x, "action_properties", value.asInstanceOf[js.Any])
       

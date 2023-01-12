@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[PromiseQueue]
     }
     
-    extension [Self <: PromiseQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseQueue] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: js.Function0[js.Promise[Any]] => js.Promise[Any]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[QueueOptions]
     }
     
-    extension [Self <: QueueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
       
       inline def setOnEmpty(value: () => Unit): Self = StObject.set(x, "onEmpty", js.Any.fromFunction0(value))
     }

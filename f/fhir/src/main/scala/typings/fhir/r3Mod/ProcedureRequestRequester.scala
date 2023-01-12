@@ -25,7 +25,8 @@ object ProcedureRequestRequester {
     __obj.asInstanceOf[ProcedureRequestRequester]
   }
   
-  extension [Self <: ProcedureRequestRequester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcedureRequestRequester] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Reference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

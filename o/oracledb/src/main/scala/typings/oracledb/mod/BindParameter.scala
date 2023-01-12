@@ -51,7 +51,8 @@ object BindParameter {
     __obj.asInstanceOf[BindParameter]
   }
   
-  extension [Self <: BindParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindParameter] (val x: Self) extends AnyVal {
     
     inline def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ServiceUpdatesMessage {
     __obj.asInstanceOf[ServiceUpdatesMessage]
   }
   
-  extension [Self <: ServiceUpdatesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceUpdatesMessage] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

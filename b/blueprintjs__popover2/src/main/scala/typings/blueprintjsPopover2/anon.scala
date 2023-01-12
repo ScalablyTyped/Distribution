@@ -138,7 +138,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setType(value: RESET_DISABLED_STATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -188,7 +189,8 @@ object anon {
       __obj.asInstanceOf[IOverlayLifecyclePropsPic]
     }
     
-    extension [Self <: IOverlayLifecyclePropsPic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlayLifecyclePropsPic] (val x: Self) extends AnyVal {
       
       inline def setOnClosed(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosed", js.Any.fromFunction1(value))
       
@@ -241,7 +243,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -275,7 +278,8 @@ object anon {
       __obj.asInstanceOf[PartialBreadcrumbs2Props]
     }
     
-    extension [Self <: PartialBreadcrumbs2Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialBreadcrumbs2Props] (val x: Self) extends AnyVal {
       
       inline def setBreadcrumbRenderer(value: /* props */ BreadcrumbProps => Element): Self = StObject.set(x, "breadcrumbRenderer", js.Any.fromFunction1(value))
       
@@ -679,7 +683,8 @@ object anon {
       __obj.asInstanceOf[PartialMenuProps]
     }
     
-    extension [Self <: PartialMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1427,7 +1432,8 @@ object anon {
       __obj.asInstanceOf[PartialOmitOverflowListPr]
     }
     
-    extension [Self <: PartialOmitOverflowListPr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOmitOverflowListPr] (val x: Self) extends AnyVal {
       
       inline def setAlwaysRenderOverflow(value: Boolean): Self = StObject.set(x, "alwaysRenderOverflow", value.asInstanceOf[js.Any])
       
@@ -1557,7 +1563,8 @@ object anon {
       __obj.asInstanceOf[PartialOmitPopover2PropsD]
     }
     
-    extension [Self <: PartialOmitPopover2PropsD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOmitPopover2PropsD] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -1827,7 +1834,8 @@ object anon {
       __obj.asInstanceOf[PartialOmitPopover2PropsDAutoFocus]
     }
     
-    extension [Self <: PartialOmitPopover2PropsDAutoFocus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOmitPopover2PropsDAutoFocus] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -2043,7 +2051,8 @@ object anon {
       __obj.asInstanceOf[PartialState]
     }
     
-    extension [Self <: PartialState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[StringDictionary[String | Boolean]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -2193,7 +2202,8 @@ object anon {
       __obj.asInstanceOf[PartialTooltip2PropsDefau]
     }
     
-    extension [Self <: PartialTooltip2PropsDefau](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTooltip2PropsDefau] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -2766,7 +2776,8 @@ object anon {
       __obj.asInstanceOf[Popover2PropsDefaultPopov]
     }
     
-    extension [Self <: Popover2PropsDefaultPopov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popover2PropsDefaultPopov] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -2972,7 +2983,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: FORCE_DISABLED_STATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

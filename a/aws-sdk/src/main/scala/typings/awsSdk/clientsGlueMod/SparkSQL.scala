@@ -38,7 +38,8 @@ object SparkSQL {
     __obj.asInstanceOf[SparkSQL]
   }
   
-  extension [Self <: SparkSQL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparkSQL] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: ManyInputs): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MlTrainedModelInferenceClassImportance {
     __obj.asInstanceOf[MlTrainedModelInferenceClassImportance]
   }
   
-  extension [Self <: MlTrainedModelInferenceClassImportance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelInferenceClassImportance] (val x: Self) extends AnyVal {
     
     inline def setClass_name(value: String): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SetZoomSuccessCallbackResult {
     __obj.asInstanceOf[SetZoomSuccessCallbackResult]
   }
   
-  extension [Self <: SetZoomSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetZoomSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetIntentsResponse {
     __obj.asInstanceOf[GetIntentsResponse]
   }
   
-  extension [Self <: GetIntentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIntentsResponse] (val x: Self) extends AnyVal {
     
     inline def setIntents(value: IntentMetadataList): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     

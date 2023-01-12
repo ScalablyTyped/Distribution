@@ -31,7 +31,8 @@ object XChapterNumberingSupplier {
     __obj.asInstanceOf[XChapterNumberingSupplier]
   }
   
-  extension [Self <: XChapterNumberingSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChapterNumberingSupplier] (val x: Self) extends AnyVal {
     
     inline def setChapterNumberingRules(value: XIndexReplace): Self = StObject.set(x, "ChapterNumberingRules", value.asInstanceOf[js.Any])
     

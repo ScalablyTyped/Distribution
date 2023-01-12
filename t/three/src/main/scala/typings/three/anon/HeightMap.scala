@@ -22,7 +22,8 @@ object HeightMap {
     __obj.asInstanceOf[HeightMap]
   }
   
-  extension [Self <: HeightMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeightMap] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: IUniform[Any]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

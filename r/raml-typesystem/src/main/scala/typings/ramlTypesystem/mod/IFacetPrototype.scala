@@ -58,7 +58,8 @@ object IFacetPrototype {
     __obj.asInstanceOf[IFacetPrototype]
   }
   
-  extension [Self <: IFacetPrototype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFacetPrototype] (val x: Self) extends AnyVal {
     
     inline def setCreateWithValue(value: Any => ITypeFacet): Self = StObject.set(x, "createWithValue", js.Any.fromFunction1(value))
     

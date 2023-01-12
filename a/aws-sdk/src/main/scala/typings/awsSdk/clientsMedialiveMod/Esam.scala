@@ -43,7 +43,8 @@ object Esam {
     __obj.asInstanceOf[Esam]
   }
   
-  extension [Self <: Esam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Esam] (val x: Self) extends AnyVal {
     
     inline def setAcquisitionPointId(value: stringMax256): Self = StObject.set(x, "AcquisitionPointId", value.asInstanceOf[js.Any])
     

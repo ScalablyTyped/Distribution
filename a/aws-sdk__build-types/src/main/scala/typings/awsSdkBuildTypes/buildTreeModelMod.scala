@@ -26,7 +26,8 @@ object buildTreeModelMod {
       __obj.asInstanceOf[Documented]
     }
     
-    extension [Self <: Documented](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Documented] (val x: Self) extends AnyVal {
       
       inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object buildTreeModelMod {
       __obj.asInstanceOf[Named]
     }
     
-    extension [Self <: Named](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Named] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -69,7 +71,8 @@ object buildTreeModelMod {
       __obj.asInstanceOf[NormalizedModel]
     }
     
-    extension [Self <: NormalizedModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedModel] (val x: Self) extends AnyVal {
       
       inline def setOperations(value: NormalizedOperationMap): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     }
@@ -101,7 +104,8 @@ object buildTreeModelMod {
       __obj.asInstanceOf[NormalizedOperation]
     }
     
-    extension [Self <: NormalizedOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedOperation] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[StructureMember]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -139,7 +143,8 @@ object buildTreeModelMod {
       __obj.asInstanceOf[TreeModel]
     }
     
-    extension [Self <: TreeModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeModel] (val x: Self) extends AnyVal {
       
       inline def setMetadata(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ Any
@@ -166,7 +171,8 @@ object buildTreeModelMod {
       __obj.asInstanceOf[TreeModelList]
     }
     
-    extension [Self <: TreeModelList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeModelList] (val x: Self) extends AnyVal {
       
       inline def setMember(value: TreeModelMember): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     }
@@ -200,7 +206,8 @@ object buildTreeModelMod {
       __obj.asInstanceOf[TreeModelMember]
     }
     
-    extension [Self <: TreeModelMember](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeModelMember] (val x: Self) extends AnyVal {
       
       inline def setShape(value: TreeModelShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     }
@@ -235,7 +242,8 @@ object buildTreeModelMod {
       __obj.asInstanceOf[TreeModelOperation]
     }
     
-    extension [Self <: TreeModelOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeModelOperation] (val x: Self) extends AnyVal {
       
       inline def setAuthtype(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SupportedSignatureVersion */ Any
@@ -269,7 +277,8 @@ object buildTreeModelMod {
       __obj.asInstanceOf[TreeModelOperationMember]
     }
     
-    extension [Self <: TreeModelOperationMember](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeModelOperationMember] (val x: Self) extends AnyVal {
       
       inline def setShape(value: TreeModelStructure): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     }
@@ -310,7 +319,8 @@ object buildTreeModelMod {
       __obj.asInstanceOf[TreeModelStructure]
     }
     
-    extension [Self <: TreeModelStructure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeModelStructure] (val x: Self) extends AnyVal {
       
       inline def setException(value: Boolean): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object GetBucketWebsiteOutput {
     __obj.asInstanceOf[GetBucketWebsiteOutput]
   }
   
-  extension [Self <: GetBucketWebsiteOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketWebsiteOutput] (val x: Self) extends AnyVal {
     
     inline def setErrorDocument(value: ErrorDocument): Self = StObject.set(x, "ErrorDocument", value.asInstanceOf[js.Any])
     

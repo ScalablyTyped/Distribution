@@ -48,7 +48,8 @@ object ItemsObject {
     __obj.asInstanceOf[ItemsObject]
   }
   
-  extension [Self <: ItemsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsObject] (val x: Self) extends AnyVal {
     
     inline def setCollectionFormat(value: String): Self = StObject.set(x, "collectionFormat", value.asInstanceOf[js.Any])
     

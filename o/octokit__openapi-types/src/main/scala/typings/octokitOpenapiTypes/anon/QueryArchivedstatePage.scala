@@ -17,7 +17,8 @@ object QueryArchivedstatePage {
     __obj.asInstanceOf[QueryArchivedstatePage]
   }
   
-  extension [Self <: QueryArchivedstatePage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryArchivedstatePage] (val x: Self) extends AnyVal {
     
     inline def setPath(value: ColumnidNumber): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

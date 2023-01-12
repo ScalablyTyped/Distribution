@@ -35,7 +35,8 @@ object FilePathIsSourceName {
     __obj.asInstanceOf[FilePathIsSourceName]
   }
   
-  extension [Self <: FilePathIsSourceName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePathIsSourceName] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Introduced): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

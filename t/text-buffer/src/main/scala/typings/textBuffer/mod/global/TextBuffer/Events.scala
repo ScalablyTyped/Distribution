@@ -32,7 +32,8 @@ object Events {
       __obj.asInstanceOf[BufferChanged]
     }
     
-    extension [Self <: BufferChanged](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferChanged] (val x: Self) extends AnyVal {
       
       inline def setNewRange(value: Range): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object Events {
       __obj.asInstanceOf[BufferChanging]
     }
     
-    extension [Self <: BufferChanging](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferChanging] (val x: Self) extends AnyVal {
       
       inline def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
     }
@@ -73,7 +75,8 @@ object Events {
       __obj.asInstanceOf[BufferStoppedChanging]
     }
     
-    extension [Self <: BufferStoppedChanging](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferStoppedChanging] (val x: Self) extends AnyVal {
       
       inline def setChanges(value: js.Array[TextChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object Events {
       __obj.asInstanceOf[BufferWatchError]
     }
     
-    extension [Self <: BufferWatchError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferWatchError] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -186,7 +190,8 @@ object Events {
       __obj.asInstanceOf[DisplayMarkerChanged]
     }
     
-    extension [Self <: DisplayMarkerChanged](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayMarkerChanged] (val x: Self) extends AnyVal {
       
       inline def setHadTail(value: Boolean): Self = StObject.set(x, "hadTail", value.asInstanceOf[js.Any])
       
@@ -232,7 +237,8 @@ object Events {
       __obj.asInstanceOf[FileSaved]
     }
     
-    extension [Self <: FileSaved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSaved] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -302,7 +308,8 @@ object Events {
       __obj.asInstanceOf[MarkerChanged]
     }
     
-    extension [Self <: MarkerChanged](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerChanged] (val x: Self) extends AnyVal {
       
       inline def setHadTail(value: Boolean): Self = StObject.set(x, "hadTail", value.asInstanceOf[js.Any])
       

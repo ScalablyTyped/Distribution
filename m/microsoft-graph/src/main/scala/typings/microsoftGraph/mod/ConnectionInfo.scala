@@ -16,7 +16,8 @@ object ConnectionInfo {
     __obj.asInstanceOf[ConnectionInfo]
   }
   
-  extension [Self <: ConnectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionInfo] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: NullableOption[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

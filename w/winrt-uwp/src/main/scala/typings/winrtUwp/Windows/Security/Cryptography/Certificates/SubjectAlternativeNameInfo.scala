@@ -40,7 +40,8 @@ object SubjectAlternativeNameInfo {
     __obj.asInstanceOf[SubjectAlternativeNameInfo]
   }
   
-  extension [Self <: SubjectAlternativeNameInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectAlternativeNameInfo] (val x: Self) extends AnyVal {
     
     inline def setDistinguishedName(value: IVectorView[String]): Self = StObject.set(x, "distinguishedName", value.asInstanceOf[js.Any])
     

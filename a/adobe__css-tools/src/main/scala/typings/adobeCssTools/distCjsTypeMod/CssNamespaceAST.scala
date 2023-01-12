@@ -23,7 +23,8 @@ object CssNamespaceAST {
     __obj.asInstanceOf[CssNamespaceAST]
   }
   
-  extension [Self <: CssNamespaceAST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssNamespaceAST] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     

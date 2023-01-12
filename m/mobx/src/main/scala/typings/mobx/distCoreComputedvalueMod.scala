@@ -151,7 +151,8 @@ object distCoreComputedvalueMod {
       __obj.asInstanceOf[IComputedDidChange[T]]
     }
     
-    extension [Self <: IComputedDidChange[?], T](x: Self & IComputedDidChange[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComputedDidChange[?], T] (val x: Self & IComputedDidChange[T]) extends AnyVal {
       
       inline def setDebugObjectName(value: String): Self = StObject.set(x, "debugObjectName", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object distCoreComputedvalueMod {
       __obj.asInstanceOf[IComputedValueOptions[T]]
     }
     
-    extension [Self <: IComputedValueOptions[?], T](x: Self & IComputedValueOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComputedValueOptions[?], T] (val x: Self & IComputedValueOptions[T]) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object SyntaxParseParams {
     __obj.asInstanceOf[SyntaxParseParams]
   }
   
-  extension [Self <: SyntaxParseParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxParseParams] (val x: Self) extends AnyVal {
     
     inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object TermvectorsFilter {
     __obj.asInstanceOf[TermvectorsFilter]
   }
   
-  extension [Self <: TermvectorsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermvectorsFilter] (val x: Self) extends AnyVal {
     
     inline def setMax_doc_freq(value: integer): Self = StObject.set(x, "max_doc_freq", value.asInstanceOf[js.Any])
     

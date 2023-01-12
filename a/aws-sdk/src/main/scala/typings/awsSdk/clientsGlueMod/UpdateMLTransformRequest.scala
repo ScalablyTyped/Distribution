@@ -68,7 +68,8 @@ object UpdateMLTransformRequest {
     __obj.asInstanceOf[UpdateMLTransformRequest]
   }
   
-  extension [Self <: UpdateMLTransformRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMLTransformRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

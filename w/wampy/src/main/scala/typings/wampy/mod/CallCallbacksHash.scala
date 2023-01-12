@@ -17,7 +17,8 @@ object CallCallbacksHash {
     __obj.asInstanceOf[CallCallbacksHash]
   }
   
-  extension [Self <: CallCallbacksHash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallCallbacksHash] (val x: Self) extends AnyVal {
     
     inline def setOnError(value: /* args */ ErrorArgs => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     

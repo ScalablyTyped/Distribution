@@ -33,7 +33,8 @@ object DeleteBGPPeerRequest {
     __obj.asInstanceOf[DeleteBGPPeerRequest]
   }
   
-  extension [Self <: DeleteBGPPeerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBGPPeerRequest] (val x: Self) extends AnyVal {
     
     inline def setAsn(value: ASN): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
     

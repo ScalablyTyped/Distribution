@@ -100,7 +100,8 @@ object distSrcCircuitTransportMod {
       __obj.asInstanceOf[CircuitComponents]
     }
     
-    extension [Self <: CircuitComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircuitComponents] (val x: Self) extends AnyVal {
       
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
       

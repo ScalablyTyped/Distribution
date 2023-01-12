@@ -24,7 +24,8 @@ object ILexingResult {
     __obj.asInstanceOf[ILexingResult]
   }
   
-  extension [Self <: ILexingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILexingResult] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[ILexingError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

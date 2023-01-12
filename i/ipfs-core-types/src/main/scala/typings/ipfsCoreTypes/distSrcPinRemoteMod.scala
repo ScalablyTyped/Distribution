@@ -54,7 +54,8 @@ object distSrcPinRemoteMod {
       __obj.asInstanceOf[API[OptionExtension]]
     }
     
-    extension [Self <: API[?], OptionExtension](x: Self & API[OptionExtension]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: API[?], OptionExtension] (val x: Self & API[OptionExtension]) extends AnyVal {
       
       inline def setAdd(
         value: (CID[Any, Double, Double, Version], AddOptions & AbortOptions & OptionExtension) => js.Promise[Pin]
@@ -99,7 +100,8 @@ object distSrcPinRemoteMod {
       __obj.asInstanceOf[AddOptions]
     }
     
-    extension [Self <: AddOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object distSrcPinRemoteMod {
       __obj.asInstanceOf[Pin]
     }
     
-    extension [Self <: Pin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pin] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object distSrcPinRemoteMod {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setCid(value: js.Array[CID[Any, Double, Double, Version]]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -205,7 +209,8 @@ object distSrcPinRemoteMod {
       __obj.asInstanceOf[RemoteServiceOptions]
     }
     
-    extension [Self <: RemoteServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }

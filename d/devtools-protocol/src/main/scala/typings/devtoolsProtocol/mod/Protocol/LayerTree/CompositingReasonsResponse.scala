@@ -23,7 +23,8 @@ object CompositingReasonsResponse {
     __obj.asInstanceOf[CompositingReasonsResponse]
   }
   
-  extension [Self <: CompositingReasonsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositingReasonsResponse] (val x: Self) extends AnyVal {
     
     inline def setCompositingReasonIds(value: js.Array[String]): Self = StObject.set(x, "compositingReasonIds", value.asInstanceOf[js.Any])
     

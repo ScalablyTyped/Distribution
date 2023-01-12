@@ -83,7 +83,8 @@ object XEntity {
     __obj.asInstanceOf[XEntity]
   }
   
-  extension [Self <: XEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEntity] (val x: Self) extends AnyVal {
     
     inline def setGetNotationName(value: () => String): Self = StObject.set(x, "getNotationName", js.Any.fromFunction0(value))
     

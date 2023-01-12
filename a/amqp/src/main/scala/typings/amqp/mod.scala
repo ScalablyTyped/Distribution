@@ -166,7 +166,8 @@ object mod {
       __obj.asInstanceOf[Ack]
     }
     
-    extension [Self <: Ack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ack] (val x: Self) extends AnyVal {
       
       inline def setAcknowledge(value: Boolean => Unit): Self = StObject.set(x, "acknowledge", js.Any.fromFunction1(value))
       
@@ -232,7 +233,8 @@ object mod {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthMechanism(value: String): Self = StObject.set(x, "authMechanism", value.asInstanceOf[js.Any])
       
@@ -347,7 +349,8 @@ object mod {
       __obj.asInstanceOf[DeliveryInfo]
     }
     
-    extension [Self <: DeliveryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeliveryInfo] (val x: Self) extends AnyVal {
       
       inline def setConsumerTag(value: String): Self = StObject.set(x, "consumerTag", value.asInstanceOf[js.Any])
       
@@ -388,7 +391,8 @@ object mod {
       __obj.asInstanceOf[DestroyOptions]
     }
     
-    extension [Self <: DestroyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyOptions] (val x: Self) extends AnyVal {
       
       inline def setIfEmpty(value: Boolean): Self = StObject.set(x, "ifEmpty", value.asInstanceOf[js.Any])
       
@@ -460,7 +464,8 @@ object mod {
       __obj.asInstanceOf[ExchangeOptions]
     }
     
-    extension [Self <: ExchangeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExchangeOptions] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: StringDictionary[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -602,7 +607,8 @@ object mod {
       __obj.asInstanceOf[ExchangePublishOptions]
     }
     
-    extension [Self <: ExchangePublishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExchangePublishOptions] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -694,7 +700,8 @@ object mod {
       __obj.asInstanceOf[QueueCallback]
     }
     
-    extension [Self <: QueueCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueCallback] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -779,7 +786,8 @@ object mod {
       __obj.asInstanceOf[QueueOptions]
     }
     
-    extension [Self <: QueueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: StringDictionary[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -868,7 +876,8 @@ object mod {
       __obj.asInstanceOf[SubscribeOptions]
     }
     
-    extension [Self <: SubscribeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
       
       inline def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
       

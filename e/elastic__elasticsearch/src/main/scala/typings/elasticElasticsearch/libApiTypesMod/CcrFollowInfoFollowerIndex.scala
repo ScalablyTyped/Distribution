@@ -28,7 +28,8 @@ object CcrFollowInfoFollowerIndex {
     __obj.asInstanceOf[CcrFollowInfoFollowerIndex]
   }
   
-  extension [Self <: CcrFollowInfoFollowerIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrFollowInfoFollowerIndex] (val x: Self) extends AnyVal {
     
     inline def setFollower_index(value: IndexName): Self = StObject.set(x, "follower_index", value.asInstanceOf[js.Any])
     

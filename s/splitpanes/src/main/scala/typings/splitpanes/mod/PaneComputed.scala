@@ -19,7 +19,8 @@ object PaneComputed {
     __obj.asInstanceOf[PaneComputed]
   }
   
-  extension [Self <: PaneComputed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaneComputed] (val x: Self) extends AnyVal {
     
     inline def setMaxSizeNumber(value: () => Double): Self = StObject.set(x, "maxSizeNumber", js.Any.fromFunction0(value))
     

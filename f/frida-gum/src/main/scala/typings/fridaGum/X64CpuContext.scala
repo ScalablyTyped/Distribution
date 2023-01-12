@@ -70,7 +70,8 @@ object X64CpuContext {
     __obj.asInstanceOf[X64CpuContext]
   }
   
-  extension [Self <: X64CpuContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X64CpuContext] (val x: Self) extends AnyVal {
     
     inline def setR10(value: NativePointer): Self = StObject.set(x, "r10", value.asInstanceOf[js.Any])
     

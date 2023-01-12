@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[ExecOptions]
     }
     
-    extension [Self <: ExecOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod {
       __obj.asInstanceOf[GitOptions]
     }
     
-    extension [Self <: GitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* message */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       

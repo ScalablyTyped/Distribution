@@ -22,7 +22,8 @@ object ThreeSymbols2Set {
     __obj.asInstanceOf[ThreeSymbols2Set]
   }
   
-  extension [Self <: ThreeSymbols2Set](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreeSymbols2Set] (val x: Self) extends AnyVal {
     
     inline def setGreenCheck(value: Icon): Self = StObject.set(x, "greenCheck", value.asInstanceOf[js.Any])
     

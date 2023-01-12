@@ -104,7 +104,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAssetsPath(value: Boolean | String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
       

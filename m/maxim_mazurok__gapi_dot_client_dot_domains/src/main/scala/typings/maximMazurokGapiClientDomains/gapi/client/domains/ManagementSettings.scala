@@ -19,7 +19,8 @@ object ManagementSettings {
     __obj.asInstanceOf[ManagementSettings]
   }
   
-  extension [Self <: ManagementSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagementSettings] (val x: Self) extends AnyVal {
     
     inline def setRenewalMethod(value: String): Self = StObject.set(x, "renewalMethod", value.asInstanceOf[js.Any])
     

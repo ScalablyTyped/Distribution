@@ -17,7 +17,8 @@ object ItemPocket {
     __obj.asInstanceOf[ItemPocket]
   }
   
-  extension [Self <: ItemPocket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemPocket] (val x: Self) extends AnyVal {
     
     inline def setGenerations(value: js.Array[Double]): Self = StObject.set(x, "generations", value.asInstanceOf[js.Any])
     

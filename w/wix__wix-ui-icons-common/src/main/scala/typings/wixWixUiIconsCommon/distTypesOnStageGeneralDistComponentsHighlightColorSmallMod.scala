@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsHighlightColorSmallMod extends Short
       __obj.asInstanceOf[HighlightColorSmallProps]
     }
     
-    extension [Self <: HighlightColorSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightColorSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

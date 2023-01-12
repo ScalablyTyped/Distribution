@@ -205,7 +205,8 @@ object libComponentsMembershipQueueMod {
       __obj.asInstanceOf[MembershipQueueOpts]
     }
     
-    extension [Self <: MembershipQueueOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MembershipQueueOpts] (val x: Self) extends AnyVal {
       
       inline def setActionDelayMs(value: Double): Self = StObject.set(x, "actionDelayMs", value.asInstanceOf[js.Any])
       
@@ -269,7 +270,8 @@ object libComponentsMembershipQueueMod {
       __obj.asInstanceOf[MembershipQueueOptsWithDefaults]
     }
     
-    extension [Self <: MembershipQueueOptsWithDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MembershipQueueOptsWithDefaults] (val x: Self) extends AnyVal {
       
       inline def setActionDelayMs(value: Double): Self = StObject.set(x, "actionDelayMs", value.asInstanceOf[js.Any])
       
@@ -322,7 +324,8 @@ object libComponentsMembershipQueueMod {
       __obj.asInstanceOf[QueueUserItem]
     }
     
-    extension [Self <: QueueUserItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueUserItem] (val x: Self) extends AnyVal {
       
       inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
@@ -361,7 +364,8 @@ object libComponentsMembershipQueueMod {
       __obj.asInstanceOf[ThinRequest]
     }
     
-    extension [Self <: ThinRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThinRequest] (val x: Self) extends AnyVal {
       
       inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     }

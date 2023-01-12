@@ -28,7 +28,8 @@ object SlotValueSelectionSetting {
     __obj.asInstanceOf[SlotValueSelectionSetting]
   }
   
-  extension [Self <: SlotValueSelectionSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotValueSelectionSetting] (val x: Self) extends AnyVal {
     
     inline def setAdvancedRecognitionSetting(value: AdvancedRecognitionSetting): Self = StObject.set(x, "advancedRecognitionSetting", value.asInstanceOf[js.Any])
     

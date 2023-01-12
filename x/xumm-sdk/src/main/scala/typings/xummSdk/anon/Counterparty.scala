@@ -19,7 +19,8 @@ object Counterparty {
     __obj.asInstanceOf[Counterparty]
   }
   
-  extension [Self <: Counterparty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Counterparty] (val x: Self) extends AnyVal {
     
     inline def setCounterparty(value: String): Self = StObject.set(x, "counterparty", value.asInstanceOf[js.Any])
     

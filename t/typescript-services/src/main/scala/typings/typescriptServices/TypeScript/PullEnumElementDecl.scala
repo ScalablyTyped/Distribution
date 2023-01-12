@@ -67,7 +67,8 @@ object PullEnumElementDecl {
     __obj.asInstanceOf[PullEnumElementDecl]
   }
   
-  extension [Self <: PullEnumElementDecl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullEnumElementDecl] (val x: Self) extends AnyVal {
     
     inline def setConstantValue(value: Double): Self = StObject.set(x, "constantValue", value.asInstanceOf[js.Any])
   }

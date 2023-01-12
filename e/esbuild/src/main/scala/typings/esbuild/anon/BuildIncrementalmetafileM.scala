@@ -41,7 +41,8 @@ object BuildIncrementalmetafileM {
     __obj.asInstanceOf[BuildIncrementalmetafileM]
   }
   
-  extension [Self <: BuildIncrementalmetafileM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildIncrementalmetafileM] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[Message]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

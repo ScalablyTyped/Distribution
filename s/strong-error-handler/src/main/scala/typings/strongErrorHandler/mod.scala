@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[ErrorHandlerOptions]
     }
     
-    extension [Self <: ErrorHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[ErrorWriterOptions]
     }
     
-    extension [Self <: ErrorWriterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorWriterOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

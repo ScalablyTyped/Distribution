@@ -33,7 +33,8 @@ object DeleteBackupPlanOutput {
     __obj.asInstanceOf[DeleteBackupPlanOutput]
   }
   
-  extension [Self <: DeleteBackupPlanOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBackupPlanOutput] (val x: Self) extends AnyVal {
     
     inline def setBackupPlanArn(value: ARN): Self = StObject.set(x, "BackupPlanArn", value.asInstanceOf[js.Any])
     

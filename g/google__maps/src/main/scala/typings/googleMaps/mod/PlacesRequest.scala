@@ -86,7 +86,8 @@ object PlacesRequest {
     __obj.asInstanceOf[PlacesRequest]
   }
   
-  extension [Self <: PlacesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacesRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

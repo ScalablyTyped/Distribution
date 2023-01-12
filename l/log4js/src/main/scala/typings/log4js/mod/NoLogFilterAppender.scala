@@ -25,7 +25,8 @@ object NoLogFilterAppender {
     __obj.asInstanceOf[NoLogFilterAppender]
   }
   
-  extension [Self <: NoLogFilterAppender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoLogFilterAppender] (val x: Self) extends AnyVal {
     
     inline def setAppender(value: String): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
     

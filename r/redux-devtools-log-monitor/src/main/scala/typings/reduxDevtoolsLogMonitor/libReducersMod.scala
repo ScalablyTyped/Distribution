@@ -30,7 +30,8 @@ object libReducersMod {
       __obj.asInstanceOf[LogMonitorState]
     }
     
-    extension [Self <: LogMonitorState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogMonitorState] (val x: Self) extends AnyVal {
       
       inline def setConsecutiveToggleStartId(value: Double): Self = StObject.set(x, "consecutiveToggleStartId", value.asInstanceOf[js.Any])
       

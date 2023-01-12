@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Key[K, T]]
     }
     
-    extension [Self <: Key[?, ?], K /* <: /* keyof T */ String */, T](x: Self & (Key[K, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key[?, ?], K /* <: /* keyof T */ String */, T] (val x: Self & (Key[K, T])) extends AnyVal {
       
       inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[MaxResults]
     }
     
-    extension [Self <: MaxResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxResults] (val x: Self) extends AnyVal {
       
       inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       

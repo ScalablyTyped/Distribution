@@ -44,7 +44,8 @@ object AggregationRule {
     __obj.asInstanceOf[AggregationRule]
   }
   
-  extension [Self <: AggregationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationRule] (val x: Self) extends AnyVal {
     
     inline def setEnum(value: js.Array[StoreValue]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     

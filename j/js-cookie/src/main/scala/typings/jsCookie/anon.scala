@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[RequiredConverterstring]
     }
     
-    extension [Self <: RequiredConverterstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredConverterstring] (val x: Self) extends AnyVal {
       
       inline def setRead(value: (/* value */ String, /* name */ String) => String | String): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       

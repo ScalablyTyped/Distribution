@@ -28,7 +28,8 @@ object DeployedImage {
     __obj.asInstanceOf[DeployedImage]
   }
   
-  extension [Self <: DeployedImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeployedImage] (val x: Self) extends AnyVal {
     
     inline def setResolutionTime(value: js.Date): Self = StObject.set(x, "ResolutionTime", value.asInstanceOf[js.Any])
     

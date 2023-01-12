@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Array]
     }
     
-    extension [Self <: Array](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
       
       inline def setArray(value: OptionsJSONEditorArrayOptions): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[BasePath]
     }
     
-    extension [Self <: BasePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePath] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     }
@@ -56,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Compile]
     }
     
-    extension [Self <: Compile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compile] (val x: Self) extends AnyVal {
       
       inline def setCompile(value: String => js.Function1[/* vars */ Any, String]): Self = StObject.set(x, "compile", js.Any.fromFunction1(value))
     }
@@ -73,7 +76,8 @@ object anon {
       __obj.asInstanceOf[EmoticonsEnabled]
     }
     
-    extension [Self <: EmoticonsEnabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmoticonsEnabled] (val x: Self) extends AnyVal {
       
       inline def setEmoticonsEnabled(value: Boolean): Self = StObject.set(x, "emoticonsEnabled", value.asInstanceOf[js.Any])
     }
@@ -90,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Enable]
     }
     
-    extension [Self <: Enable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     }
@@ -107,7 +112,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: JSONEditorObjectOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
@@ -124,7 +130,8 @@ object anon {
       __obj.asInstanceOf[OptionsJSONEditorArrayOptions]
     }
     
-    extension [Self <: OptionsJSONEditorArrayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsJSONEditorArrayOptions] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: JSONEditorArrayOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
@@ -141,7 +148,8 @@ object anon {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

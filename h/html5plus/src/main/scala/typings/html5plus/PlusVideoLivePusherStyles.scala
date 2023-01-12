@@ -140,7 +140,8 @@ object PlusVideoLivePusherStyles {
     __obj.asInstanceOf[PlusVideoLivePusherStyles]
   }
   
-  extension [Self <: PlusVideoLivePusherStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusVideoLivePusherStyles] (val x: Self) extends AnyVal {
     
     inline def setAspect(value: String): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     

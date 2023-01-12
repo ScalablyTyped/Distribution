@@ -462,7 +462,8 @@ object sapUiWebcMainRatingIndicatorMod {
       __obj.asInstanceOf[RatingIndicatorSettings]
     }
     
-    extension [Self <: RatingIndicatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatingIndicatorSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

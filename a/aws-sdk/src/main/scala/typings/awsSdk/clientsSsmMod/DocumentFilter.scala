@@ -23,7 +23,8 @@ object DocumentFilter {
     __obj.asInstanceOf[DocumentFilter]
   }
   
-  extension [Self <: DocumentFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: DocumentFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

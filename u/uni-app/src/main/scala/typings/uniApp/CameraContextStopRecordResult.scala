@@ -23,7 +23,8 @@ object CameraContextStopRecordResult {
     __obj.asInstanceOf[CameraContextStopRecordResult]
   }
   
-  extension [Self <: CameraContextStopRecordResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraContextStopRecordResult] (val x: Self) extends AnyVal {
     
     inline def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
     

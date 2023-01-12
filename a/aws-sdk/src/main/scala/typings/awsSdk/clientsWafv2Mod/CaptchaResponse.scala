@@ -28,7 +28,8 @@ object CaptchaResponse {
     __obj.asInstanceOf[CaptchaResponse]
   }
   
-  extension [Self <: CaptchaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptchaResponse] (val x: Self) extends AnyVal {
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object NthLastChild {
     __obj.asInstanceOf[NthLastChild]
   }
   
-  extension [Self <: NthLastChild](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NthLastChild] (val x: Self) extends AnyVal {
     
     inline def setType(value: `nth-last-child`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

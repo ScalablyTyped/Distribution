@@ -21,7 +21,8 @@ object SecretBagJson {
     __obj.asInstanceOf[SecretBagJson]
   }
   
-  extension [Self <: SecretBagJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretBagJson] (val x: Self) extends AnyVal {
     
     inline def setSecretTypeId(value: String): Self = StObject.set(x, "secretTypeId", value.asInstanceOf[js.Any])
     

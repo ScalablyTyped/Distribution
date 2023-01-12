@@ -99,7 +99,8 @@ object filteringFormatterOptionsUislideroptionsMod {
       __obj.asInstanceOf[UISliderOptions]
     }
     
-    extension [Self <: UISliderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UISliderOptions] (val x: Self) extends AnyVal {
       
       inline def setAllText(value: String): Self = StObject.set(x, "allText", value.asInstanceOf[js.Any])
       

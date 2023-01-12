@@ -26,7 +26,8 @@ object IMarkdownString {
     __obj.asInstanceOf[IMarkdownString]
   }
   
-  extension [Self <: IMarkdownString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMarkdownString] (val x: Self) extends AnyVal {
     
     inline def setBaseUri(value: UriComponents): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object Relationship {
     __obj.asInstanceOf[Relationship]
   }
   
-  extension [Self <: Relationship](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Relationship] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: RelationshipDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

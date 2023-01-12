@@ -20,7 +20,8 @@ object PendingThenable {
     __obj.asInstanceOf[PendingThenable[T]]
   }
   
-  extension [Self <: PendingThenable[?], T](x: Self & PendingThenable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingThenable[?], T] (val x: Self & PendingThenable[T]) extends AnyVal {
     
     inline def setStatus(value: pending): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

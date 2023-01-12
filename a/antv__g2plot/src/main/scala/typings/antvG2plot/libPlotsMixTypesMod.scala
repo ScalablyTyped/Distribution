@@ -45,7 +45,8 @@ object libPlotsMixTypesMod {
       __obj.asInstanceOf[IGeometry]
     }
     
-    extension [Self <: IGeometry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGeometry] (val x: Self) extends AnyVal {
       
       inline def setAdjust(value: AdjustOption): Self = StObject.set(x, "adjust", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object libPlotsMixTypesMod {
       __obj.asInstanceOf[IView]
     }
     
-    extension [Self <: IView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IView] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -260,7 +262,8 @@ object libPlotsMixTypesMod {
       __obj.asInstanceOf[MixOptions]
     }
     
-    extension [Self <: MixOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MixOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

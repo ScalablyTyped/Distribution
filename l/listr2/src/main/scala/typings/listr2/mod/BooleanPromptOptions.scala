@@ -18,7 +18,8 @@ object BooleanPromptOptions {
     __obj.asInstanceOf[BooleanPromptOptions]
   }
   
-  extension [Self <: BooleanPromptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanPromptOptions] (val x: Self) extends AnyVal {
     
     inline def setInitial(value: Boolean | (js.Function0[js.Promise[String] | String])): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     

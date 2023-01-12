@@ -32,7 +32,8 @@ object ObjectDirective {
     __obj.asInstanceOf[ObjectDirective[T, V]]
   }
   
-  extension [Self <: ObjectDirective[?, ?], T, V](x: Self & (ObjectDirective[T, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectDirective[?, ?], T, V] (val x: Self & (ObjectDirective[T, V])) extends AnyVal {
     
     inline def setBeforeMount(
       value: (T, /* binding */ DirectiveBinding[V], /* vnode */ VNode[Any, T, StringDictionary[Any]], Null) => Unit

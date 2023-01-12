@@ -38,7 +38,8 @@ object TestResultTrendFilter {
     __obj.asInstanceOf[TestResultTrendFilter]
   }
   
-  extension [Self <: TestResultTrendFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResultTrendFilter] (val x: Self) extends AnyVal {
     
     inline def setBranchNames(value: js.Array[String]): Self = StObject.set(x, "branchNames", value.asInstanceOf[js.Any])
     

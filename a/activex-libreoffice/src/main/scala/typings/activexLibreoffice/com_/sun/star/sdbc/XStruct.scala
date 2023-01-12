@@ -57,7 +57,8 @@ object XStruct {
     __obj.asInstanceOf[XStruct]
   }
   
-  extension [Self <: XStruct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStruct] (val x: Self) extends AnyVal {
     
     inline def setGetAttributes(value: XNameAccess => SafeArray[Any]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction1(value))
     

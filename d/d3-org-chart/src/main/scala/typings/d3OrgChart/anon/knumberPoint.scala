@@ -20,7 +20,8 @@ object knumberPoint {
     __obj.asInstanceOf[knumberPoint]
   }
   
-  extension [Self <: knumberPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: knumberPoint] (val x: Self) extends AnyVal {
     
     inline def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object CreateJobPlaylist {
     __obj.asInstanceOf[CreateJobPlaylist]
   }
   
-  extension [Self <: CreateJobPlaylist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateJobPlaylist] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: PlaylistFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     

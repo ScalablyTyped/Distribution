@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babel__code-frame"
-version := "7.0-dt-20211202Z-c49e13"
+version := "7.0-dt-20211202Z-b21522"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

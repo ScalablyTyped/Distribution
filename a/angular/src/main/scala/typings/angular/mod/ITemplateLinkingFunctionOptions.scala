@@ -22,7 +22,8 @@ object ITemplateLinkingFunctionOptions {
     __obj.asInstanceOf[ITemplateLinkingFunctionOptions]
   }
   
-  extension [Self <: ITemplateLinkingFunctionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITemplateLinkingFunctionOptions] (val x: Self) extends AnyVal {
     
     inline def setFutureParentElement(value: JQuery): Self = StObject.set(x, "futureParentElement", value.asInstanceOf[js.Any])
     

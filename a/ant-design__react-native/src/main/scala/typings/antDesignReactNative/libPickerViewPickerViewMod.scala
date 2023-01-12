@@ -62,7 +62,8 @@ object libPickerViewPickerViewMod {
       __obj.asInstanceOf[PickerViewProps]
     }
     
-    extension [Self <: PickerViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerViewProps] (val x: Self) extends AnyVal {
       
       inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       

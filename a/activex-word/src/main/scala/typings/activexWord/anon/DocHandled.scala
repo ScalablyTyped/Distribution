@@ -18,7 +18,8 @@ object DocHandled {
     __obj.asInstanceOf[DocHandled]
   }
   
-  extension [Self <: DocHandled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocHandled] (val x: Self) extends AnyVal {
     
     inline def setDoc(value: Document): Self = StObject.set(x, "Doc", value.asInstanceOf[js.Any])
     

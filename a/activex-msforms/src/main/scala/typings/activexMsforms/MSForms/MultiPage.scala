@@ -93,7 +93,8 @@ object MultiPage {
     __obj.asInstanceOf[MultiPage]
   }
   
-  extension [Self <: MultiPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiPage] (val x: Self) extends AnyVal {
     
     inline def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     

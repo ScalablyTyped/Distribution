@@ -15,7 +15,8 @@ object NoReplyWait {
     __obj.asInstanceOf[NoReplyWait]
   }
   
-  extension [Self <: NoReplyWait](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoReplyWait] (val x: Self) extends AnyVal {
     
     inline def setNoreplyWait(value: Boolean): Self = StObject.set(x, "noreplyWait", value.asInstanceOf[js.Any])
   }

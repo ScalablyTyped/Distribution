@@ -35,7 +35,8 @@ object Auth0Error {
     __obj.asInstanceOf[Auth0Error]
   }
   
-  extension [Self <: Auth0Error](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0Error] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

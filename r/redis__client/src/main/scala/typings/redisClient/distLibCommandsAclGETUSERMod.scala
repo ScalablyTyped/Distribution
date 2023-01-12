@@ -64,7 +64,8 @@ object distLibCommandsAclGETUSERMod {
       __obj.asInstanceOf[AclUser]
     }
     
-    extension [Self <: AclUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AclUser] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: js.Array[RedisCommandArgument] | RedisCommandArgument): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       

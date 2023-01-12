@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[NPM]
     }
     
-    extension [Self <: NPM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NPM] (val x: Self) extends AnyVal {
       
       inline def setName(value: npm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object mod {
       __obj.asInstanceOf[Other]
     }
     
-    extension [Self <: Other](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Other] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object mod {
       __obj.asInstanceOf[PNPM]
     }
     
-    extension [Self <: PNPM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PNPM] (val x: Self) extends AnyVal {
       
       inline def setName(value: pnpm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object mod {
       __obj.asInstanceOf[YARN]
     }
     
-    extension [Self <: YARN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YARN] (val x: Self) extends AnyVal {
       
       inline def setName(value: yarn): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

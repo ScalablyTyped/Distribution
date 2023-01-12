@@ -20,7 +20,8 @@ object CapturedPhoto {
     __obj.asInstanceOf[CapturedPhoto]
   }
   
-  extension [Self <: CapturedPhoto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapturedPhoto] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: CapturedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     

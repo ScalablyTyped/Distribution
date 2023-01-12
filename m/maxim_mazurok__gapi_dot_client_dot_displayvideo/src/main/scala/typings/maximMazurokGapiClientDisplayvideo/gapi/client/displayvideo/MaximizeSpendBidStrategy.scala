@@ -31,7 +31,8 @@ object MaximizeSpendBidStrategy {
     __obj.asInstanceOf[MaximizeSpendBidStrategy]
   }
   
-  extension [Self <: MaximizeSpendBidStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaximizeSpendBidStrategy] (val x: Self) extends AnyVal {
     
     inline def setCustomBiddingAlgorithmId(value: String): Self = StObject.set(x, "customBiddingAlgorithmId", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesRegionInfoGetHostnameFromVariantsMod {
       __obj.asInstanceOf[GetHostnameFromVariantsOptions]
     }
     
-    extension [Self <: GetHostnameFromVariantsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetHostnameFromVariantsOptions] (val x: Self) extends AnyVal {
       
       inline def setUseDualstackEndpoint(value: Boolean): Self = StObject.set(x, "useDualstackEndpoint", value.asInstanceOf[js.Any])
       

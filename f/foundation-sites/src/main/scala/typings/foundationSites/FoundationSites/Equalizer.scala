@@ -27,7 +27,8 @@ object Equalizer {
     __obj.asInstanceOf[Equalizer]
   }
   
-  extension [Self <: Equalizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Equalizer] (val x: Self) extends AnyVal {
     
     inline def setApplyHeight(value: js.Array[Any] => Unit): Self = StObject.set(x, "applyHeight", js.Any.fromFunction1(value))
     

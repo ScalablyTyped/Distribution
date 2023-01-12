@@ -55,7 +55,8 @@ object XResourceFactoryManager {
     __obj.asInstanceOf[XResourceFactoryManager]
   }
   
-  extension [Self <: XResourceFactoryManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XResourceFactoryManager] (val x: Self) extends AnyVal {
     
     inline def setAddResourceFactory(value: (String, XResourceFactory) => Unit): Self = StObject.set(x, "addResourceFactory", js.Any.fromFunction2(value))
     

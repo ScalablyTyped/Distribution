@@ -167,7 +167,8 @@ object ojSelectEventMap {
     __obj.asInstanceOf[ojSelectEventMap[V, SP, SV]]
   }
   
-  extension [Self <: ojSelectEventMap[?, ?, ?], V, SP /* <: ojSelectSettableProperties[V, SV] */, SV](x: Self & (ojSelectEventMap[V, SP, SV])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojSelectEventMap[?, ?, ?], V, SP /* <: ojSelectSettableProperties[V, SV] */, SV] (val x: Self & (ojSelectEventMap[V, SP, SV])) extends AnyVal {
     
     inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     

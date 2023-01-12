@@ -88,7 +88,8 @@ object ICheckbox {
     __obj.asInstanceOf[ICheckbox]
   }
   
-  extension [Self <: ICheckbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICheckbox] (val x: Self) extends AnyVal {
     
     inline def setCheck(value: () => ICheckbox): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
     

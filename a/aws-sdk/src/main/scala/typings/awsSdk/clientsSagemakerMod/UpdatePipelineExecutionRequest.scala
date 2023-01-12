@@ -33,7 +33,8 @@ object UpdatePipelineExecutionRequest {
     __obj.asInstanceOf[UpdatePipelineExecutionRequest]
   }
   
-  extension [Self <: UpdatePipelineExecutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePipelineExecutionRequest] (val x: Self) extends AnyVal {
     
     inline def setParallelismConfiguration(value: ParallelismConfiguration): Self = StObject.set(x, "ParallelismConfiguration", value.asInstanceOf[js.Any])
     

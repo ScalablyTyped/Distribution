@@ -21,7 +21,8 @@ object ConvolverOptions {
     __obj.asInstanceOf[ConvolverOptions]
   }
   
-  extension [Self <: ConvolverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConvolverOptions] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: AudioBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object distSrcModulesUiScreenTypesMod {
       __obj.asInstanceOf[IScreen]
     }
     
-    extension [Self <: IScreen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScreen] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -97,7 +98,8 @@ object distSrcModulesUiScreenTypesMod {
       __obj.asInstanceOf[IScreenAPI]
     }
     
-    extension [Self <: IScreenAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScreenAPI] (val x: Self) extends AnyVal {
       
       inline def setSetVideoViewMode(value: /* viewMode */ VideoViewMode => Unit): Self = StObject.set(x, "setVideoViewMode", js.Any.fromFunction1(value))
       
@@ -121,7 +123,8 @@ object distSrcModulesUiScreenTypesMod {
       __obj.asInstanceOf[IScreenViewCallbacks]
     }
     
-    extension [Self <: IScreenViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScreenViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnWrapperMouseClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onWrapperMouseClick", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object distSrcModulesUiScreenTypesMod {
       __obj.asInstanceOf[IScreenViewConfig]
     }
     
-    extension [Self <: IScreenViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScreenViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: IScreenViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -201,7 +205,8 @@ object distSrcModulesUiScreenTypesMod {
       __obj.asInstanceOf[IScreenViewStyles]
     }
     
-    extension [Self <: IScreenViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScreenViewStyles] (val x: Self) extends AnyVal {
       
       inline def setBlurMode(value: String): Self = StObject.set(x, "blurMode", value.asInstanceOf[js.Any])
       

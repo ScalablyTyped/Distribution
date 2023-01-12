@@ -16,7 +16,8 @@ object IRateLimiterMongoFunctionOptions {
     __obj.asInstanceOf[IRateLimiterMongoFunctionOptions]
   }
   
-  extension [Self <: IRateLimiterMongoFunctionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRateLimiterMongoFunctionOptions] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: StringDictionary[Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
   }

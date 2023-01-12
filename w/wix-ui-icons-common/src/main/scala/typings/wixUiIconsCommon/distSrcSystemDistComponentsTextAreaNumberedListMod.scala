@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsTextAreaNumberedListMod extends Shortcut {
       __obj.asInstanceOf[TextAreaNumberedListProps]
     }
     
-    extension [Self <: TextAreaNumberedListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaNumberedListProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

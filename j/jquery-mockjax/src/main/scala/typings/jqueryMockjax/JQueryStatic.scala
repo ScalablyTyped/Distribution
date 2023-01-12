@@ -21,7 +21,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setMockjax(value: MockJaxStatic): Self = StObject.set(x, "mockjax", value.asInstanceOf[js.Any])
     

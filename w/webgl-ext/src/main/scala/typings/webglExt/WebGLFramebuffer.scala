@@ -15,7 +15,8 @@ object WebGLFramebuffer {
     __obj.asInstanceOf[WebGLFramebuffer]
   }
   
-  extension [Self <: WebGLFramebuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLFramebuffer] (val x: Self) extends AnyVal {
     
     inline def set__WebGLFramebuffer(value: Unit): Self = StObject.set(x, "__WebGLFramebuffer", value.asInstanceOf[js.Any])
   }

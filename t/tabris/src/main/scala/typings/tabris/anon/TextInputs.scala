@@ -19,7 +19,8 @@ object TextInputs {
     __obj.asInstanceOf[TextInputs]
   }
   
-  extension [Self <: TextInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputs] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Flatten[String | TextInput | Cid]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

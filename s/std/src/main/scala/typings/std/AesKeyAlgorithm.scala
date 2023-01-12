@@ -18,7 +18,8 @@ object AesKeyAlgorithm {
     __obj.asInstanceOf[AesKeyAlgorithm]
   }
   
-  extension [Self <: AesKeyAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AesKeyAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

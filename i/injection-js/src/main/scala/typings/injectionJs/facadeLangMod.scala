@@ -415,7 +415,8 @@ object facadeLangMod {
       __obj.asInstanceOf[BrowserNodeGlobal]
     }
     
-    extension [Self <: BrowserNodeGlobal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserNodeGlobal] (val x: Self) extends AnyVal {
       
       inline def setArray(value: ArrayConstructor): Self = StObject.set(x, "Array", value.asInstanceOf[js.Any])
       

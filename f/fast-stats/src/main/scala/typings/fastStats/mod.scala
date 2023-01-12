@@ -184,7 +184,8 @@ object mod {
       __obj.asInstanceOf[Bucket]
     }
     
-    extension [Self <: Bucket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
       
       inline def setBucket(value: Double): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
@@ -241,7 +242,8 @@ object mod {
       __obj.asInstanceOf[StatsOpts]
     }
     
-    extension [Self <: StatsOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsOpts] (val x: Self) extends AnyVal {
       
       inline def setBucket_extension_interval(value: Double): Self = StObject.set(x, "bucket_extension_interval", value.asInstanceOf[js.Any])
       

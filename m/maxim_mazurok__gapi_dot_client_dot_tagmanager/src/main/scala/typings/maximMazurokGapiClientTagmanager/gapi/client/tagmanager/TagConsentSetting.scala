@@ -19,7 +19,8 @@ object TagConsentSetting {
     __obj.asInstanceOf[TagConsentSetting]
   }
   
-  extension [Self <: TagConsentSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagConsentSetting] (val x: Self) extends AnyVal {
     
     inline def setConsentStatus(value: String): Self = StObject.set(x, "consentStatus", value.asInstanceOf[js.Any])
     

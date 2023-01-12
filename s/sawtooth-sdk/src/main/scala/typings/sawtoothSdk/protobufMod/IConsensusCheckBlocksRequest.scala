@@ -16,7 +16,8 @@ object IConsensusCheckBlocksRequest {
     __obj.asInstanceOf[IConsensusCheckBlocksRequest]
   }
   
-  extension [Self <: IConsensusCheckBlocksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusCheckBlocksRequest] (val x: Self) extends AnyVal {
     
     inline def setBlockIds(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "blockIds", value.asInstanceOf[js.Any])
     

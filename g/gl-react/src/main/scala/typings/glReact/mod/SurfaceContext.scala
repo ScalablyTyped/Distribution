@@ -20,7 +20,8 @@ object SurfaceContext {
     __obj.asInstanceOf[SurfaceContext]
   }
   
-  extension [Self <: SurfaceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurfaceContext] (val x: Self) extends AnyVal {
     
     inline def setGlParent(value: Node | Surface[Any] | Bus): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
     

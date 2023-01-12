@@ -48,7 +48,8 @@ object HttpRedirectAction {
     __obj.asInstanceOf[HttpRedirectAction]
   }
   
-  extension [Self <: HttpRedirectAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpRedirectAction] (val x: Self) extends AnyVal {
     
     inline def setHostRedirect(value: String): Self = StObject.set(x, "hostRedirect", value.asInstanceOf[js.Any])
     

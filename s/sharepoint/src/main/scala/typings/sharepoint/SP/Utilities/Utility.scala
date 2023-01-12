@@ -17,7 +17,8 @@ object Utility {
     __obj.asInstanceOf[Utility]
   }
   
-  extension [Self <: Utility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Utility] (val x: Self) extends AnyVal {
     
     inline def setLAYOUTS_LATESTVERSION_RELATIVE_URL(value: String): Self = StObject.set(x, "lAYOUTS_LATESTVERSION_RELATIVE_URL", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BatchDeleteDetectorRequest {
     __obj.asInstanceOf[BatchDeleteDetectorRequest]
   }
   
-  extension [Self <: BatchDeleteDetectorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteDetectorRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectors(value: DeleteDetectorRequests): Self = StObject.set(x, "detectors", value.asInstanceOf[js.Any])
     

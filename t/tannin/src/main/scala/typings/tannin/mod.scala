@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[TanninDomainMetadata]
     }
     
-    extension [Self <: TanninDomainMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TanninDomainMetadata] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object mod {
       __obj.asInstanceOf[TanninLocaleDomain]
     }
     
-    extension [Self <: TanninLocaleDomain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TanninLocaleDomain] (val x: Self) extends AnyVal {
       
       inline def set_empty(value: TanninDomainMetadata | (js.Tuple2[String, String])): Self = StObject.set(x, "", value.asInstanceOf[js.Any])
     }
@@ -157,7 +159,8 @@ object mod {
       __obj.asInstanceOf[TanninOptions]
     }
     
-    extension [Self <: TanninOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TanninOptions] (val x: Self) extends AnyVal {
       
       inline def setContextDelimiter(value: String): Self = StObject.set(x, "contextDelimiter", value.asInstanceOf[js.Any])
       

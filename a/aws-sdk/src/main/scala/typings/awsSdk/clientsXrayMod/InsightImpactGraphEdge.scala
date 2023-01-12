@@ -18,7 +18,8 @@ object InsightImpactGraphEdge {
     __obj.asInstanceOf[InsightImpactGraphEdge]
   }
   
-  extension [Self <: InsightImpactGraphEdge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightImpactGraphEdge] (val x: Self) extends AnyVal {
     
     inline def setReferenceId(value: NullableInteger): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
     

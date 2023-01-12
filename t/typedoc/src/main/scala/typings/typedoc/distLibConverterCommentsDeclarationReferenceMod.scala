@@ -85,7 +85,8 @@ object distLibConverterCommentsDeclarationReferenceMod {
       __obj.asInstanceOf[ComponentPath]
     }
     
-    extension [Self <: ComponentPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentPath] (val x: Self) extends AnyVal {
       
       inline def setNavigation(value: Dot | Numbersign | Tilde): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object distLibConverterCommentsDeclarationReferenceMod {
       __obj.asInstanceOf[DeclarationReference]
     }
     
-    extension [Self <: DeclarationReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeclarationReference] (val x: Self) extends AnyVal {
       
       inline def setModuleSource(value: String): Self = StObject.set(x, "moduleSource", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object distLibConverterCommentsDeclarationReferenceMod {
       __obj.asInstanceOf[Meaning]
     }
     
-    extension [Self <: Meaning](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meaning] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -186,7 +189,8 @@ object distLibConverterCommentsDeclarationReferenceMod {
       __obj.asInstanceOf[SymbolReference]
     }
     
-    extension [Self <: SymbolReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymbolReference] (val x: Self) extends AnyVal {
       
       inline def setMeaning(value: Meaning): Self = StObject.set(x, "meaning", value.asInstanceOf[js.Any])
       

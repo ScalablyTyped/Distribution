@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[BackendOptions]
     }
     
-    extension [Self <: BackendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackendOptions] (val x: Self) extends AnyVal {
       
       inline def setClient(value: typings.memcached.mod.^): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object mod {
       __obj.asInstanceOf[CacheDefaults]
     }
     
-    extension [Self <: CacheDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheDefaults] (val x: Self) extends AnyVal {
       
       inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object mod {
       __obj.asInstanceOf[CacheOptions]
     }
     
-    extension [Self <: CacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
       
       inline def setBackend(value: BackendOptions): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
@@ -216,7 +219,8 @@ object mod {
       __obj.asInstanceOf[NewCacheOptions]
     }
     
-    extension [Self <: NewCacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewCacheOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

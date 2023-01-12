@@ -21,7 +21,8 @@ object CellAddress {
     __obj.asInstanceOf[CellAddress]
   }
   
-  extension [Self <: CellAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellAddress] (val x: Self) extends AnyVal {
     
     inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     

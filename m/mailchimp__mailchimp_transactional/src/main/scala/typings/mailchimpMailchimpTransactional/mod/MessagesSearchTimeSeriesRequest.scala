@@ -30,7 +30,8 @@ object MessagesSearchTimeSeriesRequest {
     __obj.asInstanceOf[MessagesSearchTimeSeriesRequest]
   }
   
-  extension [Self <: MessagesSearchTimeSeriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagesSearchTimeSeriesRequest] (val x: Self) extends AnyVal {
     
     inline def setDate_from(value: String): Self = StObject.set(x, "date_from", value.asInstanceOf[js.Any])
     

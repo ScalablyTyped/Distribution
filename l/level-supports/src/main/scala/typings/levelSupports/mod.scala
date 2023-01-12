@@ -188,7 +188,8 @@ object mod {
       __obj.asInstanceOf[IManifest]
     }
     
-    extension [Self <: IManifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IManifest] (val x: Self) extends AnyVal {
       
       inline def setAdditionalMethods(value: Record[String, Boolean]): Self = StObject.set(x, "additionalMethods", value.asInstanceOf[js.Any])
       

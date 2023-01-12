@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[EncryptorConfig]
     }
     
-    extension [Self <: EncryptorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptorConfig] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       

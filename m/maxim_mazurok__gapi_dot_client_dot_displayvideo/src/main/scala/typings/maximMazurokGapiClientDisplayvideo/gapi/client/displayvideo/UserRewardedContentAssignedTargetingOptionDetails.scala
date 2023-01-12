@@ -19,7 +19,8 @@ object UserRewardedContentAssignedTargetingOptionDetails {
     __obj.asInstanceOf[UserRewardedContentAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: UserRewardedContentAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserRewardedContentAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     

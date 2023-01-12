@@ -47,7 +47,8 @@ object PrimitiveOverrideValueExpressionInfo {
     __obj.asInstanceOf[PrimitiveOverrideValueExpressionInfo]
   }
   
-  extension [Self <: PrimitiveOverrideValueExpressionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimitiveOverrideValueExpressionInfo] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

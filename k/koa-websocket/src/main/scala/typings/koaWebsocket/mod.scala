@@ -101,7 +101,8 @@ object mod {
         __obj.asInstanceOf[typings.koaWebsocket.mod.koaAugmentingMod.Context]
       }
       
-      extension [Self <: typings.koaWebsocket.mod.koaAugmentingMod.Context](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.koaWebsocket.mod.koaAugmentingMod.Context] (val x: Self) extends AnyVal {
         
         inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         

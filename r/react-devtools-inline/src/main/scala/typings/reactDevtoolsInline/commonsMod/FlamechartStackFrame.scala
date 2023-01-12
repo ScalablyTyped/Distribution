@@ -25,7 +25,8 @@ object FlamechartStackFrame {
     __obj.asInstanceOf[FlamechartStackFrame]
   }
   
-  extension [Self <: FlamechartStackFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlamechartStackFrame] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Milliseconds): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

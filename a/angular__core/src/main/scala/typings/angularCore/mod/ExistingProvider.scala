@@ -28,7 +28,8 @@ object ExistingProvider {
     __obj.asInstanceOf[ExistingProvider]
   }
   
-  extension [Self <: ExistingProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExistingProvider] (val x: Self) extends AnyVal {
     
     inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     

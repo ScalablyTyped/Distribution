@@ -17,7 +17,8 @@ object Bag {
     __obj.asInstanceOf[Bag]
   }
   
-  extension [Self <: Bag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bag] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ReceivedAction | Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

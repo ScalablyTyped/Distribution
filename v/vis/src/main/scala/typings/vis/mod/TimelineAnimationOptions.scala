@@ -15,7 +15,8 @@ object TimelineAnimationOptions {
     __obj.asInstanceOf[TimelineAnimationOptions]
   }
   
-  extension [Self <: TimelineAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: TimelineAnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

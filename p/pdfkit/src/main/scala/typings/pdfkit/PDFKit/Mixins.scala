@@ -64,7 +64,8 @@ object Mixins {
       __obj.asInstanceOf[AnnotationOption]
     }
     
-    extension [Self <: AnnotationOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationOption] (val x: Self) extends AnyVal {
       
       inline def setA(value: Any): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object Mixins {
       __obj.asInstanceOf[ImageOption]
     }
     
-    extension [Self <: ImageOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageOption] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -226,7 +228,8 @@ object Mixins {
       __obj.asInstanceOf[MarkingOptions]
     }
     
-    extension [Self <: MarkingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkingOptions] (val x: Self) extends AnyVal {
       
       inline def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -1107,7 +1110,8 @@ object Mixins {
       __obj.asInstanceOf[PDFAttachmentOptions]
     }
     
-    extension [Self <: PDFAttachmentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFAttachmentOptions] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
@@ -1361,7 +1365,8 @@ object Mixins {
       __obj.asInstanceOf[PageMarking]
     }
     
-    extension [Self <: PageMarking](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageMarking] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: MarkingOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -1485,7 +1490,8 @@ object Mixins {
       __obj.asInstanceOf[TextOptions]
     }
     
-    extension [Self <: TextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: center | justify | left | right | String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

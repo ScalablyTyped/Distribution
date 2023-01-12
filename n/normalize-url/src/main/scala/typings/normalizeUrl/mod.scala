@@ -251,7 +251,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDefaultProtocol(value: https | http): Self = StObject.set(x, "defaultProtocol", value.asInstanceOf[js.Any])
       

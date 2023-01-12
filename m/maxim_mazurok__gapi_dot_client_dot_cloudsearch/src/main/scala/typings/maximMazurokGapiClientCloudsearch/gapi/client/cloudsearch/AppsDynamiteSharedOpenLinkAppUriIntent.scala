@@ -22,7 +22,8 @@ object AppsDynamiteSharedOpenLinkAppUriIntent {
     __obj.asInstanceOf[AppsDynamiteSharedOpenLinkAppUriIntent]
   }
   
-  extension [Self <: AppsDynamiteSharedOpenLinkAppUriIntent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedOpenLinkAppUriIntent] (val x: Self) extends AnyVal {
     
     inline def setExtraData(value: js.Array[AppsDynamiteSharedOpenLinkAppUriIntentExtraData]): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     

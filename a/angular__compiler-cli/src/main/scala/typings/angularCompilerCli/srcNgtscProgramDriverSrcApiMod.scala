@@ -65,7 +65,8 @@ object srcNgtscProgramDriverSrcApiMod {
       __obj.asInstanceOf[FileUpdate]
     }
     
-    extension [Self <: FileUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUpdate] (val x: Self) extends AnyVal {
       
       inline def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object srcNgtscProgramDriverSrcApiMod {
       __obj.asInstanceOf[ProgramDriver]
     }
     
-    extension [Self <: ProgramDriver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgramDriver] (val x: Self) extends AnyVal {
       
       inline def setGetProgram(value: () => Program): Self = StObject.set(x, "getProgram", js.Any.fromFunction0(value))
       

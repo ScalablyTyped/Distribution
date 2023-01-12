@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Memoization]
     }
     
-    extension [Self <: Memoization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Memoization] (val x: Self) extends AnyVal {
       
       inline def setMemoization(value: Boolean): Self = StObject.set(x, "memoization", value.asInstanceOf[js.Any])
       

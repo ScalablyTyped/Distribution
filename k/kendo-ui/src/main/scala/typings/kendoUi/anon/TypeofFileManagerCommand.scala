@@ -19,7 +19,8 @@ object TypeofFileManagerCommand {
     __obj.asInstanceOf[TypeofFileManagerCommand]
   }
   
-  extension [Self <: TypeofFileManagerCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFileManagerCommand] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

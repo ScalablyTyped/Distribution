@@ -17,7 +17,8 @@ object ICellOutput {
     __obj.asInstanceOf[ICellOutput]
   }
   
-  extension [Self <: ICellOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICellOutput] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: ICellOutputMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

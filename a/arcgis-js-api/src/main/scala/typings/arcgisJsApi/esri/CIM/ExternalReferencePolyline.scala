@@ -25,7 +25,8 @@ object ExternalReferencePolyline {
     __obj.asInstanceOf[ExternalReferencePolyline]
   }
   
-  extension [Self <: ExternalReferencePolyline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalReferencePolyline] (val x: Self) extends AnyVal {
     
     inline def setCurvePath(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "curvePath", value.asInstanceOf[js.Any])
     

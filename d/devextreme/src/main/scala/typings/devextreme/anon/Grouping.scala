@@ -28,7 +28,8 @@ object Grouping {
     __obj.asInstanceOf[Grouping]
   }
   
-  extension [Self <: Grouping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grouping] (val x: Self) extends AnyVal {
     
     inline def setFiltering(value: Boolean): Self = StObject.set(x, "filtering", value.asInstanceOf[js.Any])
     

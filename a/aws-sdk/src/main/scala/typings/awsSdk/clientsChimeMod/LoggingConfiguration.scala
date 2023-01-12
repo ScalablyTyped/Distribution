@@ -23,7 +23,8 @@ object LoggingConfiguration {
     __obj.asInstanceOf[LoggingConfiguration]
   }
   
-  extension [Self <: LoggingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEnableMediaMetricLogs(value: Boolean): Self = StObject.set(x, "EnableMediaMetricLogs", value.asInstanceOf[js.Any])
     

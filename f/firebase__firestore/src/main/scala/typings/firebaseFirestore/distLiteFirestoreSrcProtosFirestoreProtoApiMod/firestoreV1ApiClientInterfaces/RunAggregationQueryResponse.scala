@@ -19,7 +19,8 @@ object RunAggregationQueryResponse {
     __obj.asInstanceOf[RunAggregationQueryResponse]
   }
   
-  extension [Self <: RunAggregationQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunAggregationQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     

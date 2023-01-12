@@ -23,7 +23,8 @@ object RaftConfig {
     __obj.asInstanceOf[RaftConfig]
   }
   
-  extension [Self <: RaftConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaftConfig] (val x: Self) extends AnyVal {
     
     inline def setElectionTick(value: Double): Self = StObject.set(x, "ElectionTick", value.asInstanceOf[js.Any])
     

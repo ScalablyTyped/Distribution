@@ -15,7 +15,8 @@ object LevelsChangedParam {
     __obj.asInstanceOf[LevelsChangedParam]
   }
   
-  extension [Self <: LevelsChangedParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelsChangedParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentQuality(value: Double): Self = StObject.set(x, "currentQuality", value.asInstanceOf[js.Any])
   }

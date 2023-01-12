@@ -28,7 +28,8 @@ object ConsoleProfileFinishedEventDataType {
     __obj.asInstanceOf[ConsoleProfileFinishedEventDataType]
   }
   
-  extension [Self <: ConsoleProfileFinishedEventDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsoleProfileFinishedEventDataType] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

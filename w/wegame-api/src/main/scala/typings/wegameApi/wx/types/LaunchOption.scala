@@ -34,7 +34,8 @@ object LaunchOption {
     __obj.asInstanceOf[LaunchOption]
   }
   
-  extension [Self <: LaunchOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchOption] (val x: Self) extends AnyVal {
     
     inline def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object CustomFormatConfig {
     __obj.asInstanceOf[CustomFormatConfig[Source]]
   }
   
-  extension [Self <: CustomFormatConfig[?], Source](x: Self & CustomFormatConfig[Source]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomFormatConfig[?], Source] (val x: Self & CustomFormatConfig[Source]) extends AnyVal {
     
     inline def setFormat(
       value: /* import warning: importer.ImportType#apply Failed type conversion: Source extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats[Source] : string */ js.Any

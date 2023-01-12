@@ -28,7 +28,8 @@ object ServerProcess {
     __obj.asInstanceOf[ServerProcess]
   }
   
-  extension [Self <: ServerProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerProcess] (val x: Self) extends AnyVal {
     
     inline def setConcurrentExecutions(value: PositiveInteger): Self = StObject.set(x, "ConcurrentExecutions", value.asInstanceOf[js.Any])
     

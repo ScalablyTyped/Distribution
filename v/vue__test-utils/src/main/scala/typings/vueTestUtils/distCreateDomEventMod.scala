@@ -114,7 +114,8 @@ object distCreateDomEventMod {
       __obj.asInstanceOf[TriggerOptions]
     }
     
-    extension [Self <: TriggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriggerOptions] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

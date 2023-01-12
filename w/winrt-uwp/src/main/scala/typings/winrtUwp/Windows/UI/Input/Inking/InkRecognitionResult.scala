@@ -35,7 +35,8 @@ object InkRecognitionResult {
     __obj.asInstanceOf[InkRecognitionResult]
   }
   
-  extension [Self <: InkRecognitionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InkRecognitionResult] (val x: Self) extends AnyVal {
     
     inline def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
     

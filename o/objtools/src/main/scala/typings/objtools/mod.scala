@@ -378,7 +378,8 @@ object mod {
       __obj.asInstanceOf[SyncObjectOptions]
     }
     
-    extension [Self <: SyncObjectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncObjectOptions] (val x: Self) extends AnyVal {
       
       inline def setOnChange(
         value: (/* field */ String, /* toVal */ Any, /* fromVal */ Any, /* parentObj */ Record[String, Any]) => Any

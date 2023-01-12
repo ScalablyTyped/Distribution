@@ -20,7 +20,8 @@ object FixedBidStrategy {
     __obj.asInstanceOf[FixedBidStrategy]
   }
   
-  extension [Self <: FixedBidStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedBidStrategy] (val x: Self) extends AnyVal {
     
     inline def setBidAmountMicros(value: String): Self = StObject.set(x, "bidAmountMicros", value.asInstanceOf[js.Any])
     

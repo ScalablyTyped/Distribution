@@ -33,7 +33,8 @@ object UpdateUserProfileRequest {
     __obj.asInstanceOf[UpdateUserProfileRequest]
   }
   
-  extension [Self <: UpdateUserProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUserProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: UserProfileDisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

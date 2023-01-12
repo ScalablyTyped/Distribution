@@ -18,7 +18,8 @@ object CloudWatchDashboard {
     __obj.asInstanceOf[CloudWatchDashboard]
   }
   
-  extension [Self <: CloudWatchDashboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudWatchDashboard] (val x: Self) extends AnyVal {
     
     inline def setName(value: CloudWatchDashboardName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

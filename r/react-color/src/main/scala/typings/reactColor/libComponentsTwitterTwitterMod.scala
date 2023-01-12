@@ -44,7 +44,8 @@ object libComponentsTwitterTwitterMod {
       __obj.asInstanceOf[TwitterPickerProps]
     }
     
-    extension [Self <: TwitterPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwitterPickerProps] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object libComponentsTwitterTwitterMod {
       __obj.asInstanceOf[TwitterPickerStylesProps]
     }
     
-    extension [Self <: TwitterPickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwitterPickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

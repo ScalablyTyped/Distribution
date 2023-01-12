@@ -19,7 +19,8 @@ object IncludeEventContext {
     __obj.asInstanceOf[IncludeEventContext]
   }
   
-  extension [Self <: IncludeEventContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeEventContext] (val x: Self) extends AnyVal {
     
     inline def setAfter_limit(value: Double): Self = StObject.set(x, "after_limit", value.asInstanceOf[js.Any])
     

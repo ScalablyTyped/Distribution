@@ -35,7 +35,8 @@ object ASPxClientHtmlEditorTableElementPropertiesDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableElementPropertiesDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorTableElementPropertiesDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorTableElementPropertiesDialog] (val x: Self) extends AnyVal {
     
     inline def setGetHorizontalAlignmentComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHorizontalAlignmentComboBox", js.Any.fromFunction0(value))
     

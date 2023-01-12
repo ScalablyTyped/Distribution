@@ -78,7 +78,8 @@ object DescribeBatchPredictionsI {
     __obj.asInstanceOf[DescribeBatchPredictionsI]
   }
   
-  extension [Self <: DescribeBatchPredictionsI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBatchPredictionsI] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

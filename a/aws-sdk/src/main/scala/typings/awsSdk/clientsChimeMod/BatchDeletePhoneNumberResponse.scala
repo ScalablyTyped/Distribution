@@ -18,7 +18,8 @@ object BatchDeletePhoneNumberResponse {
     __obj.asInstanceOf[BatchDeletePhoneNumberResponse]
   }
   
-  extension [Self <: BatchDeletePhoneNumberResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeletePhoneNumberResponse] (val x: Self) extends AnyVal {
     
     inline def setPhoneNumberErrors(value: PhoneNumberErrorList): Self = StObject.set(x, "PhoneNumberErrors", value.asInstanceOf[js.Any])
     

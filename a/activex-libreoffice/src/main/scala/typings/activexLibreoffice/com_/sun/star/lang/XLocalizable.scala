@@ -34,7 +34,8 @@ object XLocalizable {
     __obj.asInstanceOf[XLocalizable]
   }
   
-  extension [Self <: XLocalizable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLocalizable] (val x: Self) extends AnyVal {
     
     inline def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
     

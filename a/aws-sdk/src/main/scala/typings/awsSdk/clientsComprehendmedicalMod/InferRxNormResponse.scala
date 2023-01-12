@@ -28,7 +28,8 @@ object InferRxNormResponse {
     __obj.asInstanceOf[InferRxNormResponse]
   }
   
-  extension [Self <: InferRxNormResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferRxNormResponse] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: RxNormEntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     

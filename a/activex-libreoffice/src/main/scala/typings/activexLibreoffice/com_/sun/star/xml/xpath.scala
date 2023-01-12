@@ -44,7 +44,8 @@ object xpath {
       __obj.asInstanceOf[Libxml2ExtensionHandle]
     }
     
-    extension [Self <: Libxml2ExtensionHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Libxml2ExtensionHandle] (val x: Self) extends AnyVal {
       
       inline def setFunctionData(value: Double): Self = StObject.set(x, "functionData", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object xpath {
       __obj.asInstanceOf[XPathExtension]
     }
     
-    extension [Self <: XPathExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XPathExtension] (val x: Self) extends AnyVal {
       
       inline def setCreateWithModel(value: (XModel, XNode) => Unit): Self = StObject.set(x, "createWithModel", js.Any.fromFunction2(value))
     }
@@ -221,7 +223,8 @@ object xpath {
       __obj.asInstanceOf[XXPathAPI]
     }
     
-    extension [Self <: XXPathAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XXPathAPI] (val x: Self) extends AnyVal {
       
       inline def setEval(value: (XNode, String) => XXPathObject): Self = StObject.set(x, "eval", js.Any.fromFunction2(value))
       
@@ -266,7 +269,8 @@ object xpath {
       __obj.asInstanceOf[XXPathExtension]
     }
     
-    extension [Self <: XXPathExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XXPathExtension] (val x: Self) extends AnyVal {
       
       inline def setGetLibxml2ExtensionHandle(value: () => Libxml2ExtensionHandle): Self = StObject.set(x, "getLibxml2ExtensionHandle", js.Any.fromFunction0(value))
       
@@ -369,7 +373,8 @@ object xpath {
       __obj.asInstanceOf[XXPathObject]
     }
     
-    extension [Self <: XXPathObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XXPathObject] (val x: Self) extends AnyVal {
       
       inline def setBoolean(value: Boolean): Self = StObject.set(x, "Boolean", value.asInstanceOf[js.Any])
       

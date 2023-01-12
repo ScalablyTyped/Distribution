@@ -20,7 +20,8 @@ object TypeofNavigationDrawer {
     __obj.asInstanceOf[TypeofNavigationDrawer]
   }
   
-  extension [Self <: TypeofNavigationDrawer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofNavigationDrawer] (val x: Self) extends AnyVal {
     
     inline def setFn(value: NavigationDrawer): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

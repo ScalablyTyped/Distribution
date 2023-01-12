@@ -116,7 +116,8 @@ object IFieldDescription {
     __obj.asInstanceOf[IFieldDescription]
   }
   
-  extension [Self <: IFieldDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldDescription] (val x: Self) extends AnyVal {
     
     inline def setQAlwaysOneSelected(value: Boolean): Self = StObject.set(x, "qAlwaysOneSelected", value.asInstanceOf[js.Any])
     

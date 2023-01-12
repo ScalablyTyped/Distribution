@@ -23,7 +23,8 @@ object AutoMLOutputDataConfig {
     __obj.asInstanceOf[AutoMLOutputDataConfig]
   }
   
-  extension [Self <: AutoMLOutputDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLOutputDataConfig] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

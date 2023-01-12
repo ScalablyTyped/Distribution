@@ -29,7 +29,8 @@ object ArrayFieldTitleProps {
     __obj.asInstanceOf[ArrayFieldTitleProps[T, F]]
   }
   
-  extension [Self <: ArrayFieldTitleProps[?, ?], T, F](x: Self & (ArrayFieldTitleProps[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayFieldTitleProps[?, ?], T, F] (val x: Self & (ArrayFieldTitleProps[T, F])) extends AnyVal {
     
     inline def setIdSchema(value: IdSchema[T]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
     

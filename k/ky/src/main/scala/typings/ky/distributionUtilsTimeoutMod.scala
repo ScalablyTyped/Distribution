@@ -38,7 +38,8 @@ object distributionUtilsTimeoutMod {
       __obj.asInstanceOf[TimeoutOptions]
     }
     
-    extension [Self <: TimeoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeoutOptions] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: FnCall): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       

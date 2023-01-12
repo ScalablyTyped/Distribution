@@ -33,7 +33,8 @@ object IEntityCarriedItemChangedEventData {
     __obj.asInstanceOf[IEntityCarriedItemChangedEventData]
   }
   
-  extension [Self <: IEntityCarriedItemChangedEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityCarriedItemChangedEventData] (val x: Self) extends AnyVal {
     
     inline def setCarried_item(value: IItemStack): Self = StObject.set(x, "carried_item", value.asInstanceOf[js.Any])
     

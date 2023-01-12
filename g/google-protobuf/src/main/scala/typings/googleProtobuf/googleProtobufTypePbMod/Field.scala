@@ -287,7 +287,8 @@ object Field {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setCardinality(value: Cardinality): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
       

@@ -57,7 +57,8 @@ object typesWriteCampaignRequestMod {
       __obj.asInstanceOf[UnmarshalledWriteCampaignRequest]
     }
     
-    extension [Self <: UnmarshalledWriteCampaignRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledWriteCampaignRequest] (val x: Self) extends AnyVal {
       
       inline def setAdditionalTreatments(value: js.Array[UnmarshalledWriteTreatmentResource]): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object typesWriteCampaignRequestMod {
       __obj.asInstanceOf[WriteCampaignRequest]
     }
     
-    extension [Self <: WriteCampaignRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteCampaignRequest] (val x: Self) extends AnyVal {
       
       inline def setAdditionalTreatments(value: js.Array[WriteTreatmentResource] | js.Iterable[WriteTreatmentResource]): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
       

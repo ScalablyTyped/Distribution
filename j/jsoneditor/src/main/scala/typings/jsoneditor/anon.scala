@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: SerializableNode): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -245,7 +247,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordTranslationK]
     }
     
-    extension [Self <: PartialRecordTranslationK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordTranslationK] (val x: Self) extends AnyVal {
       
       inline def setActionsMenu(value: String): Self = StObject.set(x, "actionsMenu", value.asInstanceOf[js.Any])
       
@@ -624,7 +627,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: JSONPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -647,7 +651,8 @@ object anon {
       __obj.asInstanceOf[Start]
     }
     
-    extension [Self <: Start](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: SelectionPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

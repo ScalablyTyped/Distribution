@@ -68,7 +68,8 @@ object dxPolarChartSeriesTypesCommonPolarChartSeriesPoint {
     __obj.asInstanceOf[dxPolarChartSeriesTypesCommonPolarChartSeriesPoint]
   }
   
-  extension [Self <: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

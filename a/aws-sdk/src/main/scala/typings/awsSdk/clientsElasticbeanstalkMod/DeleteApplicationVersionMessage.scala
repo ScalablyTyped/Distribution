@@ -28,7 +28,8 @@ object DeleteApplicationVersionMessage {
     __obj.asInstanceOf[DeleteApplicationVersionMessage]
   }
   
-  extension [Self <: DeleteApplicationVersionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteApplicationVersionMessage] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

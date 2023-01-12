@@ -22,7 +22,8 @@ object ReadonlySideEffectProps {
     __obj.asInstanceOf[ReadonlySideEffectProps]
   }
   
-  extension [Self <: ReadonlySideEffectProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlySideEffectProps] (val x: Self) extends AnyVal {
     
     inline def setHandleStateChange(value: /* state */ State => Unit): Self = StObject.set(x, "handleStateChange", js.Any.fromFunction1(value))
     

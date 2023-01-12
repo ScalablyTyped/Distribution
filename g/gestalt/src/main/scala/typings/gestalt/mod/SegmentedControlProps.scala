@@ -23,7 +23,8 @@ object SegmentedControlProps {
     __obj.asInstanceOf[SegmentedControlProps]
   }
   
-  extension [Self <: SegmentedControlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentedControlProps] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ReactNode]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

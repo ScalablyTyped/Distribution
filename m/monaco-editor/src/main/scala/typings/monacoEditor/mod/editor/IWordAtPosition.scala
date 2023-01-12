@@ -28,7 +28,8 @@ object IWordAtPosition {
     __obj.asInstanceOf[IWordAtPosition]
   }
   
-  extension [Self <: IWordAtPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWordAtPosition] (val x: Self) extends AnyVal {
     
     inline def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     

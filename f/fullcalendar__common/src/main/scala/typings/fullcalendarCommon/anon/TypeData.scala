@@ -19,7 +19,8 @@ object TypeData {
     __obj.asInstanceOf[TypeData]
   }
   
-  extension [Self <: TypeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeData] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: typings.fullcalendarCommon.mod.Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PlotCoordinate {
     __obj.asInstanceOf[PlotCoordinate]
   }
   
-  extension [Self <: PlotCoordinate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotCoordinate] (val x: Self) extends AnyVal {
     
     inline def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
     

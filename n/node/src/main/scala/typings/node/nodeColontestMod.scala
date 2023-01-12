@@ -242,7 +242,8 @@ object nodeColontestMod {
       __obj.asInstanceOf[HookOptions]
     }
     
-    extension [Self <: HookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookOptions] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
@@ -292,7 +293,8 @@ object nodeColontestMod {
       __obj.asInstanceOf[RunOptions]
     }
     
-    extension [Self <: RunOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double | Boolean): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
@@ -498,7 +500,8 @@ object nodeColontestMod {
       __obj.asInstanceOf[TestFail]
     }
     
-    extension [Self <: TestFail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestFail] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -580,7 +583,8 @@ object nodeColontestMod {
       __obj.asInstanceOf[TestOptions]
     }
     
-    extension [Self <: TestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
@@ -642,7 +646,8 @@ object nodeColontestMod {
       __obj.asInstanceOf[TestPass]
     }
     
-    extension [Self <: TestPass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestPass] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

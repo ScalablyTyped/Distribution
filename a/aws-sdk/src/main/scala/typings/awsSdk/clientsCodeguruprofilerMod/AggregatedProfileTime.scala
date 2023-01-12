@@ -23,7 +23,8 @@ object AggregatedProfileTime {
     __obj.asInstanceOf[AggregatedProfileTime]
   }
   
-  extension [Self <: AggregatedProfileTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedProfileTime] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: AggregationPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

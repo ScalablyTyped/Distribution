@@ -21,7 +21,8 @@ object distComponentsTypesTypesMod {
       __obj.asInstanceOf[KnobControlConfig[T]]
     }
     
-    extension [Self <: KnobControlConfig[?], T](x: Self & KnobControlConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnobControlConfig[?], T] (val x: Self & KnobControlConfig[T]) extends AnyVal {
       
       inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object distComponentsTypesTypesMod {
       __obj.asInstanceOf[KnobControlProps[T]]
     }
     
-    extension [Self <: KnobControlProps[?], T](x: Self & KnobControlProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnobControlProps[?], T] (val x: Self & KnobControlProps[T]) extends AnyVal {
       
       inline def setKnob(value: KnobControlConfig[T]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
       

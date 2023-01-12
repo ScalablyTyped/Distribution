@@ -24,7 +24,8 @@ object Datanavlink {
     __obj.asInstanceOf[Datanavlink]
   }
   
-  extension [Self <: Datanavlink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Datanavlink] (val x: Self) extends AnyVal {
     
     inline def `setAria-label`(value: scala.Unit): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object CleanOptions {
     __obj.asInstanceOf[CleanOptions]
   }
   
-  extension [Self <: CleanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CleanOptions] (val x: Self) extends AnyVal {
     
     inline def setDry(value: Boolean): Self = StObject.set(x, "dry", value.asInstanceOf[js.Any])
     

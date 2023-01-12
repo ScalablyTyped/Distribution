@@ -50,7 +50,8 @@ object FontWarnings {
     __obj.asInstanceOf[FontWarnings]
   }
   
-  extension [Self <: FontWarnings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontWarnings] (val x: Self) extends AnyVal {
     
     inline def setFadeoutSteps(value: Double): Self = StObject.set(x, "fadeoutSteps", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object DataState {
   @js.native
   val ^ : DataState = js.native
   
-  extension [Self <: DataState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataState] (val x: Self) extends AnyVal {
     
     inline def setGetState(value: () => obj): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     

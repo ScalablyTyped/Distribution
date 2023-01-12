@@ -51,7 +51,8 @@ object sourceviewtypeEventTypeid {
     __obj.asInstanceOf[sourceviewtypeEventTypeid]
   }
   
-  extension [Self <: sourceviewtypeEventTypeid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sourceviewtypeEventTypeid] (val x: Self) extends AnyVal {
     
     inline def setBetween(value: js.Tuple2[ID, ID]): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     

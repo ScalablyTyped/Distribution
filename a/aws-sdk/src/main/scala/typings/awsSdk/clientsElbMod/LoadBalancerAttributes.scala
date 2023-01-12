@@ -38,7 +38,8 @@ object LoadBalancerAttributes {
     __obj.asInstanceOf[LoadBalancerAttributes]
   }
   
-  extension [Self <: LoadBalancerAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerAttributes] (val x: Self) extends AnyVal {
     
     inline def setAccessLog(value: AccessLog): Self = StObject.set(x, "AccessLog", value.asInstanceOf[js.Any])
     

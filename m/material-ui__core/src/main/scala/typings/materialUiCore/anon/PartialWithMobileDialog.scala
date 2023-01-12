@@ -19,7 +19,8 @@ object PartialWithMobileDialog {
     __obj.asInstanceOf[PartialWithMobileDialog]
   }
   
-  extension [Self <: PartialWithMobileDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWithMobileDialog] (val x: Self) extends AnyVal {
     
     inline def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     

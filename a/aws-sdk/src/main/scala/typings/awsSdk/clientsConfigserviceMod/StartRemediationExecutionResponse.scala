@@ -23,7 +23,8 @@ object StartRemediationExecutionResponse {
     __obj.asInstanceOf[StartRemediationExecutionResponse]
   }
   
-  extension [Self <: StartRemediationExecutionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRemediationExecutionResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedItems(value: ResourceKeys): Self = StObject.set(x, "FailedItems", value.asInstanceOf[js.Any])
     

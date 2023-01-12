@@ -63,7 +63,8 @@ object ILegend {
     __obj.asInstanceOf[ILegend]
   }
   
-  extension [Self <: ILegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILegend] (val x: Self) extends AnyVal {
     
     inline def setBoxFill(value: String): Self = StObject.set(x, "boxFill", value.asInstanceOf[js.Any])
     

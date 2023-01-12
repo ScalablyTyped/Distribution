@@ -18,7 +18,8 @@ object Heatmap {
     __obj.asInstanceOf[Heatmap]
   }
   
-  extension [Self <: Heatmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Heatmap] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Opacity): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object UploadSession {
     __obj.asInstanceOf[UploadSession]
   }
   
-  extension [Self <: UploadSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadSession] (val x: Self) extends AnyVal {
     
     inline def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     

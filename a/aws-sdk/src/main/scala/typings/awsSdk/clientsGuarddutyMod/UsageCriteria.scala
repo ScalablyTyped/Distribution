@@ -28,7 +28,8 @@ object UsageCriteria {
     __obj.asInstanceOf[UsageCriteria]
   }
   
-  extension [Self <: UsageCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageCriteria] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetAssignmentResponse {
     __obj.asInstanceOf[GetAssignmentResponse]
   }
   
-  extension [Self <: GetAssignmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssignmentResponse] (val x: Self) extends AnyVal {
     
     inline def setAssignment(value: Assignment): Self = StObject.set(x, "Assignment", value.asInstanceOf[js.Any])
     

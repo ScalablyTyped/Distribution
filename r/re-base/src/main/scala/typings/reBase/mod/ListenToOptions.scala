@@ -44,7 +44,8 @@ object ListenToOptions {
     __obj.asInstanceOf[ListenToOptions]
   }
   
-  extension [Self <: ListenToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenToOptions] (val x: Self) extends AnyVal {
     
     inline def setAsArray(value: Boolean): Self = StObject.set(x, "asArray", value.asInstanceOf[js.Any])
     

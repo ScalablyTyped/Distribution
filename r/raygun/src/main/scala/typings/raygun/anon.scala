@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[HttpOptions]
     }
     
-    extension [Self <: HttpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
       
       inline def setHttpOptions(value: HTTPOptions): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object anon {
       __obj.asInstanceOf[PartialMessageDetails]
     }
     
-    extension [Self <: PartialMessageDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMessageDetails] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Name): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -176,7 +179,8 @@ object anon {
       __obj.asInstanceOf[hostnamestringCommonReque]
     }
     
-    extension [Self <: hostnamestringCommonReque](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: hostnamestringCommonReque] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -228,7 +232,8 @@ object anon {
       __obj.asInstanceOf[hoststringCommonRequestPa]
     }
     
-    extension [Self <: hoststringCommonRequestPa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: hoststringCommonRequestPa] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

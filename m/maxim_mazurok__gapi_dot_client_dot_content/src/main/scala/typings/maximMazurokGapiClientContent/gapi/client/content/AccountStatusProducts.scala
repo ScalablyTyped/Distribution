@@ -28,7 +28,8 @@ object AccountStatusProducts {
     __obj.asInstanceOf[AccountStatusProducts]
   }
   
-  extension [Self <: AccountStatusProducts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountStatusProducts] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

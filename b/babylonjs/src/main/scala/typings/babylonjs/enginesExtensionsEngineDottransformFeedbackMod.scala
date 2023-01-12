@@ -82,7 +82,8 @@ object enginesExtensionsEngineDottransformFeedbackMod {
         __obj.asInstanceOf[Engine]
       }
       
-      extension [Self <: Engine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
         
         inline def setBeginTransformFeedback(value: Boolean => Unit): Self = StObject.set(x, "beginTransformFeedback", js.Any.fromFunction1(value))
         

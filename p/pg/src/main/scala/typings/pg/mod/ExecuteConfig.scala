@@ -17,7 +17,8 @@ object ExecuteConfig {
     __obj.asInstanceOf[ExecuteConfig]
   }
   
-  extension [Self <: ExecuteConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteConfig] (val x: Self) extends AnyVal {
     
     inline def setPortal(value: String): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
     

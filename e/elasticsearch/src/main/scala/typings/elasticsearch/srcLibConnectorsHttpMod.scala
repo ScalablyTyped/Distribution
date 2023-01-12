@@ -56,7 +56,8 @@ object srcLibConnectorsHttpMod {
       __obj.asInstanceOf[HttpConnector]
     }
     
-    extension [Self <: HttpConnector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpConnector] (val x: Self) extends AnyVal {
       
       inline def setCreateAgent(value: Any => Any): Self = StObject.set(x, "createAgent", js.Any.fromFunction1(value))
       

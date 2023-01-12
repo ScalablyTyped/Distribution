@@ -23,7 +23,8 @@ object DescribeServicesResponse {
     __obj.asInstanceOf[DescribeServicesResponse]
   }
   
-  extension [Self <: DescribeServicesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeServicesResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

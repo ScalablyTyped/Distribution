@@ -45,7 +45,8 @@ object IndexType {
     __obj.asInstanceOf[IndexType]
   }
   
-  extension [Self <: IndexType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexType] (val x: Self) extends AnyVal {
     
     inline def setType(value: InstantiableType | UnionOrIntersectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

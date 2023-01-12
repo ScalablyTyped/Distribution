@@ -26,7 +26,8 @@ object treeViewStatefulContainerMod {
       __obj.asInstanceOf[StateType]
     }
     
-    extension [Self <: StateType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateType] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[TreeNodeData[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

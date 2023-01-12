@@ -19,7 +19,8 @@ object TxOutputBinType {
     __obj.asInstanceOf[TxOutputBinType]
   }
   
-  extension [Self <: TxOutputBinType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TxOutputBinType] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: UintType): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

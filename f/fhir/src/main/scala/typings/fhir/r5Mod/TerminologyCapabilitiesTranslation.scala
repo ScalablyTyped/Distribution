@@ -22,7 +22,8 @@ object TerminologyCapabilitiesTranslation {
     __obj.asInstanceOf[TerminologyCapabilitiesTranslation]
   }
   
-  extension [Self <: TerminologyCapabilitiesTranslation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminologyCapabilitiesTranslation] (val x: Self) extends AnyVal {
     
     inline def setNeedsMap(value: Boolean): Self = StObject.set(x, "needsMap", value.asInstanceOf[js.Any])
     

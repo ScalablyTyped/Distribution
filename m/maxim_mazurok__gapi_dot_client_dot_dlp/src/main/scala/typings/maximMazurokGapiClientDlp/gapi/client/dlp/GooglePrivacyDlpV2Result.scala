@@ -25,7 +25,8 @@ object GooglePrivacyDlpV2Result {
     __obj.asInstanceOf[GooglePrivacyDlpV2Result]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Result](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Result] (val x: Self) extends AnyVal {
     
     inline def setHybridStats(value: GooglePrivacyDlpV2HybridInspectStatistics): Self = StObject.set(x, "hybridStats", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object SpatialStationaryFrameOfReference {
     __obj.asInstanceOf[SpatialStationaryFrameOfReference]
   }
   
-  extension [Self <: SpatialStationaryFrameOfReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialStationaryFrameOfReference] (val x: Self) extends AnyVal {
     
     inline def setCoordinateSystem(value: Any): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
   }

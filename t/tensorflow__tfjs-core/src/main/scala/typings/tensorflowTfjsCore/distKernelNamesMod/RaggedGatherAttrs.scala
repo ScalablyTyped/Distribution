@@ -15,7 +15,8 @@ object RaggedGatherAttrs {
     __obj.asInstanceOf[RaggedGatherAttrs]
   }
   
-  extension [Self <: RaggedGatherAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaggedGatherAttrs] (val x: Self) extends AnyVal {
     
     inline def setOutputRaggedRank(value: Double): Self = StObject.set(x, "outputRaggedRank", value.asInstanceOf[js.Any])
   }

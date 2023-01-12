@@ -51,7 +51,8 @@ object AdGroupBidding {
     __obj.asInstanceOf[AdGroupBidding]
   }
   
-  extension [Self <: AdGroupBidding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdGroupBidding] (val x: Self) extends AnyVal {
     
     inline def setGetCpa(value: () => Double): Self = StObject.set(x, "getCpa", js.Any.fromFunction0(value))
     

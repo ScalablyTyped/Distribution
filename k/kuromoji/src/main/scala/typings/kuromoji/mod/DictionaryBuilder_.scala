@@ -49,7 +49,8 @@ object DictionaryBuilder_ {
     __obj.asInstanceOf[DictionaryBuilder_]
   }
   
-  extension [Self <: DictionaryBuilder_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictionaryBuilder_] (val x: Self) extends AnyVal {
     
     inline def setAddTokenInfoDictionary(value: String => DictionaryBuilder_): Self = StObject.set(x, "addTokenInfoDictionary", js.Any.fromFunction1(value))
     

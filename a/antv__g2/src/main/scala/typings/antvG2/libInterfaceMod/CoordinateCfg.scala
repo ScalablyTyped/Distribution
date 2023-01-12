@@ -37,7 +37,8 @@ object CoordinateCfg {
     __obj.asInstanceOf[CoordinateCfg]
   }
   
-  extension [Self <: CoordinateCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordinateCfg] (val x: Self) extends AnyVal {
     
     inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     

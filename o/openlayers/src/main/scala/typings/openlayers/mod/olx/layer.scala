@@ -40,7 +40,8 @@ object layer {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object layer {
       __obj.asInstanceOf[GroupOptions]
     }
     
-    extension [Self <: GroupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
       
       inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object layer {
       __obj.asInstanceOf[HeatmapOptions]
     }
     
-    extension [Self <: HeatmapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeatmapOptions] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
@@ -235,7 +238,8 @@ object layer {
       __obj.asInstanceOf[ImageOptions]
     }
     
-    extension [Self <: ImageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageOptions] (val x: Self) extends AnyVal {
       
       inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
@@ -292,7 +296,8 @@ object layer {
       __obj.asInstanceOf[LayerOptions]
     }
     
-    extension [Self <: LayerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerOptions] (val x: Self) extends AnyVal {
       
       inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
@@ -353,7 +358,8 @@ object layer {
       __obj.asInstanceOf[TileOptions]
     }
     
-    extension [Self <: TileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileOptions] (val x: Self) extends AnyVal {
       
       inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
@@ -434,7 +440,8 @@ object layer {
       __obj.asInstanceOf[VectorOptions]
     }
     
-    extension [Self <: VectorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VectorOptions] (val x: Self) extends AnyVal {
       
       inline def setDeclutter(value: Boolean): Self = StObject.set(x, "declutter", value.asInstanceOf[js.Any])
       
@@ -561,7 +568,8 @@ object layer {
       __obj.asInstanceOf[VectorTileOptions]
     }
     
-    extension [Self <: VectorTileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VectorTileOptions] (val x: Self) extends AnyVal {
       
       inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       

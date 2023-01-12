@@ -161,7 +161,8 @@ object InitOptions {
     __obj.asInstanceOf[InitOptions]
   }
   
-  extension [Self <: InitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
     

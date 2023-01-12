@@ -135,7 +135,8 @@ object libTypesMod {
       __obj.asInstanceOf[ConstructorProps]
     }
     
-    extension [Self <: ConstructorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorProps] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Double | `10`): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
@@ -233,7 +234,8 @@ object libTypesMod {
       __obj.asInstanceOf[EventData]
     }
     
-    extension [Self <: EventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
       
       inline def setAbsX(value: Double): Self = StObject.set(x, "absX", value.asInstanceOf[js.Any])
       
@@ -284,7 +286,8 @@ object libTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setIsSwiping(value: Boolean): Self = StObject.set(x, "isSwiping", value.asInstanceOf[js.Any])
       

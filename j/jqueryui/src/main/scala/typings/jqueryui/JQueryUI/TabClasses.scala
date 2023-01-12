@@ -29,7 +29,8 @@ object TabClasses {
     __obj.asInstanceOf[TabClasses]
   }
   
-  extension [Self <: TabClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabClasses] (val x: Self) extends AnyVal {
     
     inline def `setUi-tabs`(value: String): Self = StObject.set(x, "ui-tabs", value.asInstanceOf[js.Any])
     

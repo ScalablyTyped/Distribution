@@ -23,7 +23,8 @@ object ConfigTuple {
     __obj.asInstanceOf[ConfigTuple]
   }
   
-  extension [Self <: ConfigTuple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigTuple] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object distSrcStatsMod {
       __obj.asInstanceOf[BWOptions]
     }
     
-    extension [Self <: BWOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BWOptions] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double | String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object distSrcStatsMod {
       __obj.asInstanceOf[BWResult]
     }
     
-    extension [Self <: BWResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BWResult] (val x: Self) extends AnyVal {
       
       inline def setRateIn(value: Double): Self = StObject.set(x, "rateIn", value.asInstanceOf[js.Any])
       

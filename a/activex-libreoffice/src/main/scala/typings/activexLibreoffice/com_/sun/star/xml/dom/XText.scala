@@ -76,7 +76,8 @@ object XText {
     __obj.asInstanceOf[XText]
   }
   
-  extension [Self <: XText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XText] (val x: Self) extends AnyVal {
     
     inline def setSplitText(value: Double => XText): Self = StObject.set(x, "splitText", js.Any.fromFunction1(value))
   }

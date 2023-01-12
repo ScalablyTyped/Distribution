@@ -179,7 +179,8 @@ object Led {
       __obj.asInstanceOf[DigitsOption]
     }
     
-    extension [Self <: DigitsOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DigitsOption] (val x: Self) extends AnyVal {
       
       inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
@@ -212,7 +213,8 @@ object Led {
       __obj.asInstanceOf[MatrixIC2Option]
     }
     
-    extension [Self <: MatrixIC2Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatrixIC2Option] (val x: Self) extends AnyVal {
       
       inline def setAddresses(value: js.Array[Any]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
@@ -249,7 +251,8 @@ object Led {
       __obj.asInstanceOf[MatrixOption]
     }
     
-    extension [Self <: MatrixOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatrixOption] (val x: Self) extends AnyVal {
       
       inline def setDevices(value: Double): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
       
@@ -274,7 +277,8 @@ object Led {
       __obj.asInstanceOf[RGBOption]
     }
     
-    extension [Self <: RGBOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGBOption] (val x: Self) extends AnyVal {
       
       inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       

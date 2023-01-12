@@ -25,7 +25,8 @@ object CodeAction {
     __obj.asInstanceOf[CodeAction]
   }
   
-  extension [Self <: CodeAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeAction] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: js.Array[FileTextChanges]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     

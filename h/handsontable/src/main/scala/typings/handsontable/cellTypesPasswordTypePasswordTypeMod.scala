@@ -66,7 +66,8 @@ object cellTypesPasswordTypePasswordTypeMod {
       __obj.asInstanceOf[PasswordCellType]
     }
     
-    extension [Self <: PasswordCellType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasswordCellType] (val x: Self) extends AnyVal {
       
       inline def setEditor(value: Instantiable1[/* instance */ default, PasswordEditor]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       

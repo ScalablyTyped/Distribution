@@ -27,7 +27,8 @@ object typesCommentContentRequiredExceptionMod {
       __obj.asInstanceOf[CommentContentRequiredException]
     }
     
-    extension [Self <: CommentContentRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentContentRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentContentRequiredException

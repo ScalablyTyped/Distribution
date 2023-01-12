@@ -19,7 +19,8 @@ object WatchCreativeRequest {
     __obj.asInstanceOf[WatchCreativeRequest]
   }
   
-  extension [Self <: WatchCreativeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchCreativeRequest] (val x: Self) extends AnyVal {
     
     inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     

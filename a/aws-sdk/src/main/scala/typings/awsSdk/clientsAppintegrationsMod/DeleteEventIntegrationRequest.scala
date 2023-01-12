@@ -18,7 +18,8 @@ object DeleteEventIntegrationRequest {
     __obj.asInstanceOf[DeleteEventIntegrationRequest]
   }
   
-  extension [Self <: DeleteEventIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEventIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object xcodeProjectnamestringund {
     __obj.asInstanceOf[xcodeProjectnamestringund]
   }
   
-  extension [Self <: xcodeProjectnamestringund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: xcodeProjectnamestringund] (val x: Self) extends AnyVal {
     
     inline def setIsDebug(value: Boolean): Self = StObject.set(x, "isDebug", value.asInstanceOf[js.Any])
     

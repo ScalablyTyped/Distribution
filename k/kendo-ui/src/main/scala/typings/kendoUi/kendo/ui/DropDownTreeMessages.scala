@@ -19,7 +19,8 @@ object DropDownTreeMessages {
     __obj.asInstanceOf[DropDownTreeMessages]
   }
   
-  extension [Self <: DropDownTreeMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownTreeMessages] (val x: Self) extends AnyVal {
     
     inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     

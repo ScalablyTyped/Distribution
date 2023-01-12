@@ -103,7 +103,8 @@ object AwsLambdaFunctionDetails {
     __obj.asInstanceOf[AwsLambdaFunctionDetails]
   }
   
-  extension [Self <: AwsLambdaFunctionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsLambdaFunctionDetails] (val x: Self) extends AnyVal {
     
     inline def setCode(value: AwsLambdaFunctionCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object traverseMod {
       __obj.asInstanceOf[Hub]
     }
     
-    extension [Self <: Hub](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hub] (val x: Self) extends AnyVal {
       
       inline def setFile(value: BabelFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }

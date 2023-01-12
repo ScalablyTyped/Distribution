@@ -47,7 +47,8 @@ object ClassifyReturn {
     __obj.asInstanceOf[ClassifyReturn]
   }
   
-  extension [Self <: ClassifyReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassifyReturn] (val x: Self) extends AnyVal {
     
     inline def setContract_amounts(value: js.Array[ContractAmts]): Self = StObject.set(x, "contract_amounts", value.asInstanceOf[js.Any])
     

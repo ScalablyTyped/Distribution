@@ -76,7 +76,8 @@ object libContextBodyContextMod extends Shortcut {
       __obj.asInstanceOf[BodyContextProps[RecordType]]
     }
     
-    extension [Self <: BodyContextProps[?], RecordType](x: Self & BodyContextProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyContextProps[?], RecordType] (val x: Self & BodyContextProps[RecordType]) extends AnyVal {
       
       inline def setAllColumnsFixedLeft(value: Boolean): Self = StObject.set(x, "allColumnsFixedLeft", value.asInstanceOf[js.Any])
       

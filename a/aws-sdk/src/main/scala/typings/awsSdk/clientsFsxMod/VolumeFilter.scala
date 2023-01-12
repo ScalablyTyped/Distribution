@@ -23,7 +23,8 @@ object VolumeFilter {
     __obj.asInstanceOf[VolumeFilter]
   }
   
-  extension [Self <: VolumeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: VolumeFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

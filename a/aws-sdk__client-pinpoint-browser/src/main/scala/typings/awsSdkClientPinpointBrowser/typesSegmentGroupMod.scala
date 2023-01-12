@@ -44,7 +44,8 @@ object typesSegmentGroupMod {
       __obj.asInstanceOf[SegmentGroup]
     }
     
-    extension [Self <: SegmentGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentGroup] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: js.Array[SegmentDimensions] | js.Iterable[SegmentDimensions]): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object typesSegmentGroupMod {
       __obj.asInstanceOf[UnmarshalledSegmentGroup]
     }
     
-    extension [Self <: UnmarshalledSegmentGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSegmentGroup] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: js.Array[UnmarshalledSegmentDimensions]): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
       

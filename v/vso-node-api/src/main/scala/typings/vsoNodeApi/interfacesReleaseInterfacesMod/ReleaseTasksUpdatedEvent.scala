@@ -33,7 +33,8 @@ object ReleaseTasksUpdatedEvent {
     __obj.asInstanceOf[ReleaseTasksUpdatedEvent]
   }
   
-  extension [Self <: ReleaseTasksUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseTasksUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentId(value: Double): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     

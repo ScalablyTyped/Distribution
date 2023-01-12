@@ -19,7 +19,8 @@ object GoogleCloudDialogflowV2ImportConversationDataOperationResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowV2ImportConversationDataOperationResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2ImportConversationDataOperationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2ImportConversationDataOperationResponse] (val x: Self) extends AnyVal {
     
     inline def setConversationDataset(value: String): Self = StObject.set(x, "conversationDataset", value.asInstanceOf[js.Any])
     

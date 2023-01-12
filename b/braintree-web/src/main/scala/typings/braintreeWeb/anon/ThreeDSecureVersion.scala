@@ -15,7 +15,8 @@ object ThreeDSecureVersion {
     __obj.asInstanceOf[ThreeDSecureVersion]
   }
   
-  extension [Self <: ThreeDSecureVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreeDSecureVersion] (val x: Self) extends AnyVal {
     
     inline def setThreeDSecureVersion(value: String): Self = StObject.set(x, "threeDSecureVersion", value.asInstanceOf[js.Any])
   }

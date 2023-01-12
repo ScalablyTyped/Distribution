@@ -73,7 +73,8 @@ object TableStyle {
     __obj.asInstanceOf[TableStyle]
   }
   
-  extension [Self <: TableStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableStyle] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: WdRowAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

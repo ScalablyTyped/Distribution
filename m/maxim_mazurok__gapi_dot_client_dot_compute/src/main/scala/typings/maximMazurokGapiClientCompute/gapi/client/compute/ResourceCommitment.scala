@@ -25,7 +25,8 @@ object ResourceCommitment {
     __obj.asInstanceOf[ResourceCommitment]
   }
   
-  extension [Self <: ResourceCommitment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceCommitment] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
     

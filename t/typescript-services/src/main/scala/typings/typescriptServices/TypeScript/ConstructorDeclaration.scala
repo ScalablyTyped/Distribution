@@ -42,7 +42,8 @@ object ConstructorDeclaration {
     __obj.asInstanceOf[ConstructorDeclaration]
   }
   
-  extension [Self <: ConstructorDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstructorDeclaration] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

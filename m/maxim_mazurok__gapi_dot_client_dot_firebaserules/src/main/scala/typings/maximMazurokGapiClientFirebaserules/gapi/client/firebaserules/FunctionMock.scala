@@ -22,7 +22,8 @@ object FunctionMock {
     __obj.asInstanceOf[FunctionMock]
   }
   
-  extension [Self <: FunctionMock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionMock] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[Arg]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

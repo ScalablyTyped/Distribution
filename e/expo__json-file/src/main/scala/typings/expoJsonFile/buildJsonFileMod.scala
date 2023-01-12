@@ -227,7 +227,8 @@ object buildJsonFileMod {
       __obj.asInstanceOf[Options[TJSONObject]]
     }
     
-    extension [Self <: Options[?], TJSONObject /* <: JSONObject */](x: Self & Options[TJSONObject]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], TJSONObject /* <: JSONObject */] (val x: Self & Options[TJSONObject]) extends AnyVal {
       
       inline def setAddNewLineAtEOF(value: Boolean): Self = StObject.set(x, "addNewLineAtEOF", value.asInstanceOf[js.Any])
       

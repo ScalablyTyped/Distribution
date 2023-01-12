@@ -17,7 +17,8 @@ object X86BaseOperand {
     __obj.asInstanceOf[X86BaseOperand]
   }
   
-  extension [Self <: X86BaseOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X86BaseOperand] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: OperandAccess): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

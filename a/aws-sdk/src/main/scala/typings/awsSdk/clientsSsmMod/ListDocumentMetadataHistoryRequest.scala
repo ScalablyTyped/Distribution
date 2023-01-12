@@ -38,7 +38,8 @@ object ListDocumentMetadataHistoryRequest {
     __obj.asInstanceOf[ListDocumentMetadataHistoryRequest]
   }
   
-  extension [Self <: ListDocumentMetadataHistoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDocumentMetadataHistoryRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object MediaProperties {
     __obj.asInstanceOf[MediaProperties]
   }
   
-  extension [Self <: MediaProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaProperties] (val x: Self) extends AnyVal {
     
     inline def setFilterData(value: PropertyValues): Self = StObject.set(x, "FilterData", value.asInstanceOf[js.Any])
     

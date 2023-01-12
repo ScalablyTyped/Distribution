@@ -118,7 +118,8 @@ object mod {
       __obj.asInstanceOf[PosTaggedToken]
     }
     
-    extension [Self <: PosTaggedToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PosTaggedToken] (val x: Self) extends AnyVal {
       
       inline def setLemma(value: String): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
       
@@ -240,7 +241,8 @@ object mod {
       __obj.asInstanceOf[Tagger]
     }
     
-    extension [Self <: Tagger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tagger] (val x: Self) extends AnyVal {
       
       inline def setDefineConfig(value: Any => Lemma): Self = StObject.set(x, "defineConfig", js.Any.fromFunction1(value))
       

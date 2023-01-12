@@ -31,7 +31,8 @@ object KioskCustomization {
     __obj.asInstanceOf[KioskCustomization]
   }
   
-  extension [Self <: KioskCustomization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KioskCustomization] (val x: Self) extends AnyVal {
     
     inline def setDeviceSettings(value: String): Self = StObject.set(x, "deviceSettings", value.asInstanceOf[js.Any])
     

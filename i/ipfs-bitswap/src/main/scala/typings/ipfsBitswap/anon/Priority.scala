@@ -18,7 +18,8 @@ object Priority {
     __obj.asInstanceOf[Priority]
   }
   
-  extension [Self <: Priority](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Priority] (val x: Self) extends AnyVal {
     
     inline def setCid(value: CID): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object Parsers {
     __obj.asInstanceOf[Parsers]
   }
   
-  extension [Self <: Parsers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parsers] (val x: Self) extends AnyVal {
     
     inline def setGexf(
       value: (/* target */ String, /* sigma */ Sigma, /* callback */ js.Function1[/* graph */ Sigma, Unit]) => Unit

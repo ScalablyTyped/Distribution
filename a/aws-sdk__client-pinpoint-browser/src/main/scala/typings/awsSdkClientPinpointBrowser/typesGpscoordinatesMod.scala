@@ -25,7 +25,8 @@ object typesGpscoordinatesMod {
       __obj.asInstanceOf[GPSCoordinates]
     }
     
-    extension [Self <: GPSCoordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPSCoordinates] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "Latitude", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object CollectionPropertiesBase {
     __obj.asInstanceOf[CollectionPropertiesBase[T]]
   }
   
-  extension [Self <: CollectionPropertiesBase[?], T](x: Self & CollectionPropertiesBase[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionPropertiesBase[?], T] (val x: Self & CollectionPropertiesBase[T]) extends AnyVal {
     
     inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

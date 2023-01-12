@@ -23,7 +23,8 @@ object ListOnPremisesInstancesOutput {
     __obj.asInstanceOf[ListOnPremisesInstancesOutput]
   }
   
-  extension [Self <: ListOnPremisesInstancesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOnPremisesInstancesOutput] (val x: Self) extends AnyVal {
     
     inline def setInstanceNames(value: InstanceNameList): Self = StObject.set(x, "instanceNames", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeLayersRequest {
     __obj.asInstanceOf[DescribeLayersRequest]
   }
   
-  extension [Self <: DescribeLayersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLayersRequest] (val x: Self) extends AnyVal {
     
     inline def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
     

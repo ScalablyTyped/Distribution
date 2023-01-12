@@ -37,7 +37,8 @@ object distLoggerMod {
       __obj.asInstanceOf[CreateLoggerOptions]
     }
     
-    extension [Self <: CreateLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: LogContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

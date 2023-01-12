@@ -53,7 +53,8 @@ object Collection {
     __obj.asInstanceOf[Collection]
   }
   
-  extension [Self <: Collection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
     
     inline def setAddColumn(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
     

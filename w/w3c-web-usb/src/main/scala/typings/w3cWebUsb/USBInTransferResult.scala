@@ -17,7 +17,8 @@ object USBInTransferResult {
     __obj.asInstanceOf[USBInTransferResult]
   }
   
-  extension [Self <: USBInTransferResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USBInTransferResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.DataView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

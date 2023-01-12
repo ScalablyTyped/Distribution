@@ -48,7 +48,8 @@ object libPlotsGaugeTypesMod {
       __obj.asInstanceOf[GaugeCustomInfo]
     }
     
-    extension [Self <: GaugeCustomInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaugeCustomInfo] (val x: Self) extends AnyVal {
       
       inline def setMeter(value: StepRatio): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
       
@@ -184,7 +185,8 @@ object libPlotsGaugeTypesMod {
       __obj.asInstanceOf[GaugeOptions]
     }
     
-    extension [Self <: GaugeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaugeOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -379,7 +381,8 @@ object libPlotsGaugeTypesMod {
       __obj.asInstanceOf[Indicator]
     }
     
-    extension [Self <: Indicator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Indicator] (val x: Self) extends AnyVal {
       
       inline def setPin(value: `1`): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
       
@@ -420,7 +423,8 @@ object libPlotsGaugeTypesMod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String | js.Array[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

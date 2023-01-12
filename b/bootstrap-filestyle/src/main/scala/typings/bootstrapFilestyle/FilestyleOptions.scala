@@ -33,7 +33,8 @@ object FilestyleOptions {
     __obj.asInstanceOf[FilestyleOptions]
   }
   
-  extension [Self <: FilestyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilestyleOptions] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: Boolean): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

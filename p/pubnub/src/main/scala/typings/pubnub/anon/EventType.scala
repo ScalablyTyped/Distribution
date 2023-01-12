@@ -22,7 +22,8 @@ object EventType {
     __obj.asInstanceOf[EventType]
   }
   
-  extension [Self <: EventType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventType] (val x: Self) extends AnyVal {
     
     inline def setData(value: IdString): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

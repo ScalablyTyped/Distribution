@@ -20,7 +20,8 @@ object PartialArrayTypeProps {
     __obj.asInstanceOf[PartialArrayTypeProps]
   }
   
-  extension [Self <: PartialArrayTypeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialArrayTypeProps] (val x: Self) extends AnyVal {
     
     inline def setKnob(value: ArrayTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     

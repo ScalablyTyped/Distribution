@@ -69,7 +69,8 @@ object Hdpi {
     __obj.asInstanceOf[Hdpi]
   }
   
-  extension [Self <: Hdpi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hdpi] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

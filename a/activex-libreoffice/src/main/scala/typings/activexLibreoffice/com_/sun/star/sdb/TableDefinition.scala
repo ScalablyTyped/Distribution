@@ -42,7 +42,8 @@ object TableDefinition {
     __obj.asInstanceOf[TableDefinition]
   }
   
-  extension [Self <: TableDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableDefinition] (val x: Self) extends AnyVal {
     
     inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     

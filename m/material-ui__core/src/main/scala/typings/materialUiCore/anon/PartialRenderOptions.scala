@@ -16,7 +16,8 @@ object PartialRenderOptions {
     __obj.asInstanceOf[PartialRenderOptions]
   }
   
-  extension [Self <: PartialRenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRenderOptions] (val x: Self) extends AnyVal {
     
     inline def setRender(value: Fn0): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     

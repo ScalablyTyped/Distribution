@@ -23,7 +23,8 @@ object DeleteMemberInput {
     __obj.asInstanceOf[DeleteMemberInput]
   }
   
-  extension [Self <: DeleteMemberInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMemberInput] (val x: Self) extends AnyVal {
     
     inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object BlockPublicAccessConfigurationMetadata {
     __obj.asInstanceOf[BlockPublicAccessConfigurationMetadata]
   }
   
-  extension [Self <: BlockPublicAccessConfigurationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockPublicAccessConfigurationMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreatedByArn(value: ArnType): Self = StObject.set(x, "CreatedByArn", value.asInstanceOf[js.Any])
     

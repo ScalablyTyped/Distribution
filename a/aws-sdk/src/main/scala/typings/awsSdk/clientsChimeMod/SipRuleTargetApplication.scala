@@ -28,7 +28,8 @@ object SipRuleTargetApplication {
     __obj.asInstanceOf[SipRuleTargetApplication]
   }
   
-  extension [Self <: SipRuleTargetApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SipRuleTargetApplication] (val x: Self) extends AnyVal {
     
     inline def setAwsRegion(value: String): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     

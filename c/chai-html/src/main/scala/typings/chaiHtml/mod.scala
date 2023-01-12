@@ -29,7 +29,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HtmlAssertion]
       }
       
-      extension [Self <: HtmlAssertion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HtmlAssertion] (val x: Self) extends AnyVal {
         
         inline def setIgnoringComments(value: Assertion): Self = StObject.set(x, "ignoringComments", value.asInstanceOf[js.Any])
       }
@@ -56,7 +57,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[Assertion]
         }
         
-        extension [Self <: Assertion](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
           
           inline def setHtml(value: HtmlAssertion): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
         }

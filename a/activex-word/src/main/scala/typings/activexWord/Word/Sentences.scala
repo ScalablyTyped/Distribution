@@ -40,7 +40,8 @@ object Sentences {
     __obj.asInstanceOf[Sentences]
   }
   
-  extension [Self <: Sentences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sentences] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

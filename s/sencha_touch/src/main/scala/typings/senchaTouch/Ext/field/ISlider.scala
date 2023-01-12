@@ -104,7 +104,8 @@ object ISlider {
     __obj.asInstanceOf[ISlider]
   }
   
-  extension [Self <: ISlider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISlider] (val x: Self) extends AnyVal {
     
     inline def setGetCls(value: () => String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     

@@ -15,7 +15,8 @@ object OrderIndexNumber {
     __obj.asInstanceOf[OrderIndexNumber]
   }
   
-  extension [Self <: OrderIndexNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderIndexNumber] (val x: Self) extends AnyVal {
     
     inline def setOrderIndex(value: Double): Self = StObject.set(x, "orderIndex", value.asInstanceOf[js.Any])
   }

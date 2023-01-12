@@ -15,7 +15,8 @@ object PubSubOptions {
     __obj.asInstanceOf[PubSubOptions]
   }
   
-  extension [Self <: PubSubOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PubSubOptions] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

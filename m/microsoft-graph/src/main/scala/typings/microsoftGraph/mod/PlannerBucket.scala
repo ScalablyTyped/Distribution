@@ -27,7 +27,8 @@ object PlannerBucket {
     __obj.asInstanceOf[PlannerBucket]
   }
   
-  extension [Self <: PlannerBucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlannerBucket] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

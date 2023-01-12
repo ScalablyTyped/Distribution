@@ -48,7 +48,8 @@ object HoursOfOperation {
     __obj.asInstanceOf[HoursOfOperation]
   }
   
-  extension [Self <: HoursOfOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoursOfOperation] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: HoursOfOperationConfigList): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     

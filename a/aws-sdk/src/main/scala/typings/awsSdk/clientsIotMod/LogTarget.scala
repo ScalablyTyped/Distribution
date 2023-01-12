@@ -23,7 +23,8 @@ object LogTarget {
     __obj.asInstanceOf[LogTarget]
   }
   
-  extension [Self <: LogTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogTarget] (val x: Self) extends AnyVal {
     
     inline def setTargetName(value: LogTargetName): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
     

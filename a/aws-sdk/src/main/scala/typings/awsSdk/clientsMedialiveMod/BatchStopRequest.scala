@@ -23,7 +23,8 @@ object BatchStopRequest {
     __obj.asInstanceOf[BatchStopRequest]
   }
   
-  extension [Self <: BatchStopRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchStopRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelIds(value: listOfString): Self = StObject.set(x, "ChannelIds", value.asInstanceOf[js.Any])
     

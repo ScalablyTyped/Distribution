@@ -41,7 +41,8 @@ object CustomXmlPartLoadOptions {
     __obj.asInstanceOf[CustomXmlPartLoadOptions]
   }
   
-  extension [Self <: CustomXmlPartLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomXmlPartLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

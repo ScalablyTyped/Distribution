@@ -137,7 +137,8 @@ object srcMod {
       __obj.asInstanceOf[VictoryZoomContainerProps]
     }
     
-    extension [Self <: VictoryZoomContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryZoomContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAllowPan(value: Boolean): Self = StObject.set(x, "allowPan", value.asInstanceOf[js.Any])
       

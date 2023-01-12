@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Lossy]
     }
     
-    extension [Self <: Lossy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lossy] (val x: Self) extends AnyVal {
       
       inline def setLossy(value: Boolean): Self = StObject.set(x, "lossy", value.asInstanceOf[js.Any])
       

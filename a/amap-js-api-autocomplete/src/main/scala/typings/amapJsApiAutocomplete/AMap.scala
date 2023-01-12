@@ -118,7 +118,8 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      extension [Self <: EventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         inline def setChoose(value: Event_[choose, typings.amapJsApiAutocomplete.anon.Tip]): Self = StObject.set(x, "choose", value.asInstanceOf[js.Any])
         
@@ -179,7 +180,8 @@ object AMap {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
         
@@ -243,7 +245,8 @@ object AMap {
         __obj.asInstanceOf[SearchResult]
       }
       
-      extension [Self <: SearchResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
@@ -328,7 +331,8 @@ object AMap {
         __obj.asInstanceOf[Tip]
       }
       
-      extension [Self <: Tip](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Tip] (val x: Self) extends AnyVal {
         
         inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
         

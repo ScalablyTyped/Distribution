@@ -25,7 +25,8 @@ object EditOptions {
       __obj.asInstanceOf[EditPolyVerticesEditOptions]
     }
     
-    extension [Self <: EditPolyVerticesEditOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditPolyVerticesEditOptions] (val x: Self) extends AnyVal {
       
       inline def setDrawError(value: DrawErrorOptions): Self = StObject.set(x, "drawError", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object EditOptions {
       __obj.asInstanceOf[EditSimpleShapeOptions]
     }
     
-    extension [Self <: EditSimpleShapeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditSimpleShapeOptions] (val x: Self) extends AnyVal {
       
       inline def setMoveIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "moveIcon", value.asInstanceOf[js.Any])
       

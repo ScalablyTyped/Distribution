@@ -37,7 +37,8 @@ object ASPxClientFormBase {
     __obj.asInstanceOf[ASPxClientFormBase]
   }
   
-  extension [Self <: ASPxClientFormBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFormBase] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     

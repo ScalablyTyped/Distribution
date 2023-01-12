@@ -88,7 +88,8 @@ object InlinePictureData {
     __obj.asInstanceOf[InlinePictureData]
   }
   
-  extension [Self <: InlinePictureData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlinePictureData] (val x: Self) extends AnyVal {
     
     inline def setAltTextDescription(value: String): Self = StObject.set(x, "altTextDescription", value.asInstanceOf[js.Any])
     

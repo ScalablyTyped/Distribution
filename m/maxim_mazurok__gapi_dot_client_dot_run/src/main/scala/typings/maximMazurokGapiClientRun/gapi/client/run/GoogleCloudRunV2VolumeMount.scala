@@ -22,7 +22,8 @@ object GoogleCloudRunV2VolumeMount {
     __obj.asInstanceOf[GoogleCloudRunV2VolumeMount]
   }
   
-  extension [Self <: GoogleCloudRunV2VolumeMount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2VolumeMount] (val x: Self) extends AnyVal {
     
     inline def setMountPath(value: String): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
     

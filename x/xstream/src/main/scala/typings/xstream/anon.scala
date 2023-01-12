@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Ease]
     }
     
-    extension [Self <: Ease](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ease] (val x: Self) extends AnyVal {
       
       inline def setEase(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "ease", js.Any.fromFunction3(value))
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Subscribe]
     }
     
-    extension [Self <: Subscribe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscribe] (val x: Self) extends AnyVal {
       
       inline def setSubscribe(value: Any): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
     }

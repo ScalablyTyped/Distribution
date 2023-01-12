@@ -43,7 +43,8 @@ object UpdateComponentConfigurationRequest {
     __obj.asInstanceOf[UpdateComponentConfigurationRequest]
   }
   
-  extension [Self <: UpdateComponentConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateComponentConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoConfigEnabled(value: AutoConfigEnabled): Self = StObject.set(x, "AutoConfigEnabled", value.asInstanceOf[js.Any])
     

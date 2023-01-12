@@ -28,7 +28,8 @@ object AutoUpdateParentTasks {
     __obj.asInstanceOf[AutoUpdateParentTasks]
   }
   
-  extension [Self <: AutoUpdateParentTasks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoUpdateParentTasks] (val x: Self) extends AnyVal {
     
     inline def setAutoUpdateParentTasks(value: Boolean): Self = StObject.set(x, "autoUpdateParentTasks", value.asInstanceOf[js.Any])
     

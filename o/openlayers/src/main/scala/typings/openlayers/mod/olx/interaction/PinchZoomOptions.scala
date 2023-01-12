@@ -17,7 +17,8 @@ object PinchZoomOptions {
     __obj.asInstanceOf[PinchZoomOptions]
   }
   
-  extension [Self <: PinchZoomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinchZoomOptions] (val x: Self) extends AnyVal {
     
     inline def setConstrainResolution(value: Boolean): Self = StObject.set(x, "constrainResolution", value.asInstanceOf[js.Any])
     

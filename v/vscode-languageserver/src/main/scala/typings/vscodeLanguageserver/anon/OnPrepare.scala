@@ -55,7 +55,8 @@ object OnPrepare {
     __obj.asInstanceOf[OnPrepare]
   }
   
-  extension [Self <: OnPrepare](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPrepare] (val x: Self) extends AnyVal {
     
     inline def setOnPrepare(
       value: ServerRequestHandler[TypeHierarchyPrepareParams, js.Array[TypeHierarchyItem] | Null, scala.Nothing, Unit] => Disposable

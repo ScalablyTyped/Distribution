@@ -38,7 +38,8 @@ object JSONEditorShowDropDownListParams {
     __obj.asInstanceOf[JSONEditorShowDropDownListParams]
   }
   
-  extension [Self <: JSONEditorShowDropDownListParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorShowDropDownListParams] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

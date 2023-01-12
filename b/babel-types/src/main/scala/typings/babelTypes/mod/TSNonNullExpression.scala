@@ -20,7 +20,8 @@ object TSNonNullExpression {
   @js.native
   def apply(expression: Expression): TSNonNullExpression = js.native
   
-  extension [Self <: TSNonNullExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSNonNullExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object IThemeGrayScalePalette {
     __obj.asInstanceOf[IThemeGrayScalePalette]
   }
   
-  extension [Self <: IThemeGrayScalePalette](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IThemeGrayScalePalette] (val x: Self) extends AnyVal {
     
     inline def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     

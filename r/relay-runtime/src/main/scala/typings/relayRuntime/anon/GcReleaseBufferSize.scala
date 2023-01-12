@@ -23,7 +23,8 @@ object GcReleaseBufferSize {
     __obj.asInstanceOf[GcReleaseBufferSize]
   }
   
-  extension [Self <: GcReleaseBufferSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GcReleaseBufferSize] (val x: Self) extends AnyVal {
     
     inline def setGcReleaseBufferSize(value: Double): Self = StObject.set(x, "gcReleaseBufferSize", value.asInstanceOf[js.Any])
     

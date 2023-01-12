@@ -48,7 +48,8 @@ object Insights {
     __obj.asInstanceOf[Insights]
   }
   
-  extension [Self <: Insights](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Insights] (val x: Self) extends AnyVal {
     
     inline def setActiveAssessmentsCount(value: NullableInteger): Self = StObject.set(x, "activeAssessmentsCount", value.asInstanceOf[js.Any])
     

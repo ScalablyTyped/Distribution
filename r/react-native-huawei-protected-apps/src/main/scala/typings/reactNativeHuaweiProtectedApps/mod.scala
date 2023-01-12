@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[HuaweiProtectedAppsConfig]
     }
     
-    extension [Self <: HuaweiProtectedAppsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HuaweiProtectedAppsConfig] (val x: Self) extends AnyVal {
       
       inline def setDoNotShowAgainText(value: String): Self = StObject.set(x, "doNotShowAgainText", value.asInstanceOf[js.Any])
       

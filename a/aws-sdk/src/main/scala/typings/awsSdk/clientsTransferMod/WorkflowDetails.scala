@@ -23,7 +23,8 @@ object WorkflowDetails {
     __obj.asInstanceOf[WorkflowDetails]
   }
   
-  extension [Self <: WorkflowDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowDetails] (val x: Self) extends AnyVal {
     
     inline def setOnPartialUpload(value: OnPartialUploadWorkflowDetails): Self = StObject.set(x, "OnPartialUpload", value.asInstanceOf[js.Any])
     

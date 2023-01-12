@@ -69,7 +69,8 @@ object ISignInProperties {
     __obj.asInstanceOf[ISignInProperties]
   }
   
-  extension [Self <: ISignInProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISignInProperties] (val x: Self) extends AnyVal {
     
     inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     

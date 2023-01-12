@@ -113,7 +113,8 @@ object mod extends Shortcut {
         VError
       ] = js.native
     
-    extension [Self <: VError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VError] (val x: Self) extends AnyVal {
       
       inline def setCause(value: () => js.UndefOr[js.Error]): Self = StObject.set(x, "cause", js.Any.fromFunction0(value))
     }
@@ -207,7 +208,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCause(value: js.Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       

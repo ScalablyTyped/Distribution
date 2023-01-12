@@ -73,7 +73,8 @@ object TableRowUpdateData {
     __obj.asInstanceOf[TableRowUpdateData]
   }
   
-  extension [Self <: TableRowUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableRowUpdateData] (val x: Self) extends AnyVal {
     
     inline def setFont(value: FontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

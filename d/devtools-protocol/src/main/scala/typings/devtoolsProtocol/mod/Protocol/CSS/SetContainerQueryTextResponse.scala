@@ -18,7 +18,8 @@ object SetContainerQueryTextResponse {
     __obj.asInstanceOf[SetContainerQueryTextResponse]
   }
   
-  extension [Self <: SetContainerQueryTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetContainerQueryTextResponse] (val x: Self) extends AnyVal {
     
     inline def setContainerQuery(value: CSSContainerQuery): Self = StObject.set(x, "containerQuery", value.asInstanceOf[js.Any])
   }

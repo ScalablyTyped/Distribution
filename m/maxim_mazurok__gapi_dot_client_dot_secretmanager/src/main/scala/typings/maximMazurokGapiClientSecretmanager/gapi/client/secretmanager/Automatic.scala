@@ -19,7 +19,8 @@ object Automatic {
     __obj.asInstanceOf[Automatic]
   }
   
-  extension [Self <: Automatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Automatic] (val x: Self) extends AnyVal {
     
     inline def setCustomerManagedEncryption(value: CustomerManagedEncryption): Self = StObject.set(x, "customerManagedEncryption", value.asInstanceOf[js.Any])
     

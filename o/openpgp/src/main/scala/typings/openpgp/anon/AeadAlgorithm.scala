@@ -19,7 +19,8 @@ object AeadAlgorithm {
     __obj.asInstanceOf[AeadAlgorithm]
   }
   
-  extension [Self <: AeadAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AeadAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setAeadAlgorithm(value: String): Self = StObject.set(x, "aeadAlgorithm", value.asInstanceOf[js.Any])
     

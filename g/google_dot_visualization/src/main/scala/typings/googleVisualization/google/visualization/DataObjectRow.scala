@@ -17,7 +17,8 @@ object DataObjectRow {
     __obj.asInstanceOf[DataObjectRow]
   }
   
-  extension [Self <: DataObjectRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataObjectRow] (val x: Self) extends AnyVal {
     
     inline def setC(value: js.Array[DataObjectCell]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     

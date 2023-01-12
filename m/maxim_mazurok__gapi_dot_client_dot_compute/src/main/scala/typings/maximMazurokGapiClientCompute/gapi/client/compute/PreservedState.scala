@@ -23,7 +23,8 @@ object PreservedState {
     __obj.asInstanceOf[PreservedState]
   }
   
-  extension [Self <: PreservedState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreservedState] (val x: Self) extends AnyVal {
     
     inline def setDisks(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.PreservedStatePreservedDisk} */ js.Any

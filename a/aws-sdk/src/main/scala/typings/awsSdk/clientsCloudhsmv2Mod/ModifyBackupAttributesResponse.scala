@@ -15,7 +15,8 @@ object ModifyBackupAttributesResponse {
     __obj.asInstanceOf[ModifyBackupAttributesResponse]
   }
   
-  extension [Self <: ModifyBackupAttributesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyBackupAttributesResponse] (val x: Self) extends AnyVal {
     
     inline def setBackup(value: Backup): Self = StObject.set(x, "Backup", value.asInstanceOf[js.Any])
     

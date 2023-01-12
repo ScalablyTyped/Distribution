@@ -44,7 +44,8 @@ object appFrameworkAjaxSettings {
     __obj.asInstanceOf[appFrameworkAjaxSettings]
   }
   
-  extension [Self <: appFrameworkAjaxSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: appFrameworkAjaxSettings] (val x: Self) extends AnyVal {
     
     inline def setBeforeSend(value: (/* xhr */ XMLHttpRequest, appFrameworkAjaxSettings) => Boolean): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
     

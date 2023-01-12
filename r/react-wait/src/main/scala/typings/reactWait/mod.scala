@@ -126,7 +126,8 @@ object mod {
       __obj.asInstanceOf[UseWaitAPI]
     }
     
-    extension [Self <: UseWaitAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseWaitAPI] (val x: Self) extends AnyVal {
       
       inline def setAnyWaiting(value: () => Boolean): Self = StObject.set(x, "anyWaiting", js.Any.fromFunction0(value))
       
@@ -159,7 +160,8 @@ object mod {
       __obj.asInstanceOf[WaitProps]
     }
     
-    extension [Self <: WaitProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitProps] (val x: Self) extends AnyVal {
       
       inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     }
@@ -187,7 +189,8 @@ object mod {
       __obj.asInstanceOf[WaitingContext]
     }
     
-    extension [Self <: WaitingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitingContext] (val x: Self) extends AnyVal {
       
       inline def setEndWaiting(value: () => Unit): Self = StObject.set(x, "endWaiting", js.Any.fromFunction0(value))
       
@@ -212,7 +215,8 @@ object mod {
       __obj.asInstanceOf[WaitingContextWaitProps]
     }
     
-    extension [Self <: WaitingContextWaitProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitingContextWaitProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

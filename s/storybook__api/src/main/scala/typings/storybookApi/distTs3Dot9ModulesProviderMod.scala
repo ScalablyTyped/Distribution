@@ -52,7 +52,8 @@ object distTs3Dot9ModulesProviderMod {
       __obj.asInstanceOf[Provider]
     }
     
-    extension [Self <: Provider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object distTs3Dot9ModulesProviderMod {
       __obj.asInstanceOf[SidebarOptions]
     }
     
-    extension [Self <: SidebarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarOptions] (val x: Self) extends AnyVal {
       
       inline def setCollapsedRoots(value: js.Array[String]): Self = StObject.set(x, "collapsedRoots", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object distTs3Dot9ModulesProviderMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    extension [Self <: SubAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
       
       inline def setRenderPreview(
         value: (/* storyId */ String, /* viewMode */ ViewMode & js.UndefOr[String], /* id */ String, /* baseUrl */ String, /* scale */ Double, /* queryParams */ Record[String, Any]) => ReactNode

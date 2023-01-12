@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ExtendedProfile]
     }
     
-    extension [Self <: ExtendedProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedProfile] (val x: Self) extends AnyVal {
       
       inline def setExtendedProfile(value: Boolean): Self = StObject.set(x, "extendedProfile", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Uri]
     }
     
-    extension [Self <: Uri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uri] (val x: Self) extends AnyVal {
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       

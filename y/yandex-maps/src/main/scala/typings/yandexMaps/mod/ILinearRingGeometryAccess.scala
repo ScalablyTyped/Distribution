@@ -59,7 +59,8 @@ object ILinearRingGeometryAccess {
     __obj.asInstanceOf[ILinearRingGeometryAccess]
   }
   
-  extension [Self <: ILinearRingGeometryAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILinearRingGeometryAccess] (val x: Self) extends AnyVal {
     
     inline def setContain(value: Double => Boolean): Self = StObject.set(x, "contain", js.Any.fromFunction1(value))
     

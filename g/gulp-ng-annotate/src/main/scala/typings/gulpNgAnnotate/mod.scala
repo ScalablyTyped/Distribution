@@ -64,7 +64,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RenameOption]
     }
     
-    extension [Self <: RenameOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenameOption] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

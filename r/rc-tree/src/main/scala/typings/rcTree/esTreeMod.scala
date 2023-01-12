@@ -192,7 +192,8 @@ object esTreeMod {
       __obj.asInstanceOf[AllowDropOptions[TreeDataType]]
     }
     
-    extension [Self <: AllowDropOptions[?], TreeDataType /* <: BasicDataNode */](x: Self & AllowDropOptions[TreeDataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowDropOptions[?], TreeDataType /* <: BasicDataNode */] (val x: Self & AllowDropOptions[TreeDataType]) extends AnyVal {
       
       inline def setDragNode(value: TreeDataType): Self = StObject.set(x, "dragNode", value.asInstanceOf[js.Any])
       
@@ -230,7 +231,8 @@ object esTreeMod {
       __obj.asInstanceOf[CheckInfo[TreeDataType]]
     }
     
-    extension [Self <: CheckInfo[?], TreeDataType /* <: BasicDataNode */](x: Self & CheckInfo[TreeDataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckInfo[?], TreeDataType /* <: BasicDataNode */] (val x: Self & CheckInfo[TreeDataType]) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -271,7 +273,8 @@ object esTreeMod {
       __obj.asInstanceOf[DraggableConfig]
     }
     
-    extension [Self <: DraggableConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggableConfig] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: ReactNode | `false`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -582,7 +585,8 @@ object esTreeMod {
       __obj.asInstanceOf[TreeProps[TreeDataType]]
     }
     
-    extension [Self <: TreeProps[?], TreeDataType /* <: BasicDataNode */](x: Self & TreeProps[TreeDataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeProps[?], TreeDataType /* <: BasicDataNode */] (val x: Self & TreeProps[TreeDataType]) extends AnyVal {
       
       inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
@@ -939,7 +943,8 @@ object esTreeMod {
       __obj.asInstanceOf[TreeState[TreeDataType]]
     }
     
-    extension [Self <: TreeState[?], TreeDataType /* <: BasicDataNode */](x: Self & TreeState[TreeDataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeState[?], TreeDataType /* <: BasicDataNode */] (val x: Self & TreeState[TreeDataType]) extends AnyVal {
       
       inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       

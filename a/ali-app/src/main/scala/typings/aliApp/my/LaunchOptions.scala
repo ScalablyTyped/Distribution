@@ -60,7 +60,8 @@ object LaunchOptions {
     __obj.asInstanceOf[LaunchOptions]
   }
   
-  extension [Self <: LaunchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchOptions] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

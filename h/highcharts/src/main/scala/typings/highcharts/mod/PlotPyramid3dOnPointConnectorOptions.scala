@@ -29,7 +29,8 @@ object PlotPyramid3dOnPointConnectorOptions {
     __obj.asInstanceOf[PlotPyramid3dOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotPyramid3dOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPyramid3dOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

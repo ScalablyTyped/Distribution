@@ -18,7 +18,8 @@ object ProfileSnapshotResponse {
     __obj.asInstanceOf[ProfileSnapshotResponse]
   }
   
-  extension [Self <: ProfileSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setTimings(value: js.Array[PaintProfile]): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
     

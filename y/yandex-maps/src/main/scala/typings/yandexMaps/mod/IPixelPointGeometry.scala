@@ -27,7 +27,8 @@ object IPixelPointGeometry {
     __obj.asInstanceOf[IPixelPointGeometry]
   }
   
-  extension [Self <: IPixelPointGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPixelPointGeometry] (val x: Self) extends AnyVal {
     
     inline def setGetCoordinates(value: () => js.Array[Double]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
   }

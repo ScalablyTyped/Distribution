@@ -38,7 +38,8 @@ object BootstrapTreeViewEventMap {
     __obj.asInstanceOf[BootstrapTreeViewEventMap]
   }
   
-  extension [Self <: BootstrapTreeViewEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapTreeViewEventMap] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     

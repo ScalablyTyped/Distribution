@@ -21,7 +21,8 @@ object FullNameOptions {
     __obj.asInstanceOf[FullNameOptions]
   }
   
-  extension [Self <: FullNameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullNameOptions] (val x: Self) extends AnyVal {
     
     inline def setMiddle(value: Boolean): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object BaseOptions {
     __obj.asInstanceOf[BaseOptions]
   }
   
-  extension [Self <: BaseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
     
     inline def setFmt(value: Format): Self = StObject.set(x, "fmt", value.asInstanceOf[js.Any])
     

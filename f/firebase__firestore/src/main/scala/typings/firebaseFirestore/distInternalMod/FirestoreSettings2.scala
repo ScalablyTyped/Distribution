@@ -31,7 +31,8 @@ object FirestoreSettings2 {
     __obj.asInstanceOf[FirestoreSettings2]
   }
   
-  extension [Self <: FirestoreSettings2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirestoreSettings2] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

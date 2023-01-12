@@ -33,7 +33,8 @@ object PlanningStatistics {
     __obj.asInstanceOf[PlanningStatistics]
   }
   
-  extension [Self <: PlanningStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanningStatistics] (val x: Self) extends AnyVal {
     
     inline def setEstimatedDataToScanBytes(value: NumberOfBytes): Self = StObject.set(x, "EstimatedDataToScanBytes", value.asInstanceOf[js.Any])
     

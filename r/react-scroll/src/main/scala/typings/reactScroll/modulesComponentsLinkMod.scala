@@ -581,7 +581,8 @@ object modulesComponentsLinkMod {
       __obj.asInstanceOf[LinkProps]
     }
     
-    extension [Self <: LinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1552,7 +1553,8 @@ object modulesComponentsLinkMod {
       __obj.asInstanceOf[ReactScrollLinkProps]
     }
     
-    extension [Self <: ReactScrollLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactScrollLinkProps] (val x: Self) extends AnyVal {
       
       inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       

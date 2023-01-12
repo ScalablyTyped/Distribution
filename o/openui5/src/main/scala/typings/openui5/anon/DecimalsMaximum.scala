@@ -29,7 +29,8 @@ object DecimalsMaximum {
     __obj.asInstanceOf[DecimalsMaximum]
   }
   
-  extension [Self <: DecimalsMaximum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecimalsMaximum] (val x: Self) extends AnyVal {
     
     inline def setDecimals(value: float): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     

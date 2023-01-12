@@ -59,7 +59,8 @@ object typesLibMediaMod {
       __obj.asInstanceOf[MediaProps]
     }
     
-    extension [Self <: MediaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaProps] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

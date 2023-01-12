@@ -34,7 +34,8 @@ object ExtensionAuditLogEntry {
     __obj.asInstanceOf[ExtensionAuditLogEntry]
   }
   
-  extension [Self <: ExtensionAuditLogEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionAuditLogEntry] (val x: Self) extends AnyVal {
     
     inline def setAuditAction(value: String): Self = StObject.set(x, "auditAction", value.asInstanceOf[js.Any])
     

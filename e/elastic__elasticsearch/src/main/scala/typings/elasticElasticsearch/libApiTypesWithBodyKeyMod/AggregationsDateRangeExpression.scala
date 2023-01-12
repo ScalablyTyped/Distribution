@@ -19,7 +19,8 @@ object AggregationsDateRangeExpression {
     __obj.asInstanceOf[AggregationsDateRangeExpression]
   }
   
-  extension [Self <: AggregationsDateRangeExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsDateRangeExpression] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: AggregationsFieldDateMath): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

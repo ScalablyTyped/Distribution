@@ -18,7 +18,8 @@ object CreateIndexParams {
     __obj.asInstanceOf[CreateIndexParams]
   }
   
-  extension [Self <: CreateIndexParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIndexParams] (val x: Self) extends AnyVal {
     
     inline def setIndexMeta(value: DefinedColumn): Self = StObject.set(x, "indexMeta", value.asInstanceOf[js.Any])
     

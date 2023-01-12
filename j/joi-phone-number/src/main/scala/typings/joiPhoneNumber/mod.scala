@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[StringExtension]
     }
     
-    extension [Self <: StringExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringExtension] (val x: Self) extends AnyVal {
       
       inline def setBase(value: StringSchema[String]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
         __obj.asInstanceOf[PhoneNumberOptions]
       }
       
-      extension [Self <: PhoneNumberOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PhoneNumberOptions] (val x: Self) extends AnyVal {
         
         inline def setDefaultCountry(value: js.Array[String] | String | Reference): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
         

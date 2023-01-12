@@ -22,7 +22,8 @@ object mvc {
       __obj.asInstanceOf[IControllerExtension]
     }
     
-    extension [Self <: IControllerExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IControllerExtension] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_ui_core_mvc_IControllerExtension(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_core_mvc_IControllerExtension", value.asInstanceOf[js.Any])
     }

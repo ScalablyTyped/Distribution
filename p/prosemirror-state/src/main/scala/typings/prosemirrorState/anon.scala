@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: js.Array[Plugin[Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[FromJSON]
     }
     
-    extension [Self <: FromJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromJSON] (val x: Self) extends AnyVal {
       
       inline def setFromJSON(value: (Node, Any) => Selection): Self = StObject.set(x, "fromJSON", js.Any.fromFunction2(value))
     }
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Map]
     }
     
-    extension [Self <: Map](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
       
       inline def setMap(value: () => Any): Self = StObject.set(x, "map", js.Any.fromFunction0(value))
       
@@ -94,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Plugins]
     }
     
-    extension [Self <: Plugins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: js.Array[Plugin[Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
@@ -119,7 +123,8 @@ object anon {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setState(value: EditorState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       

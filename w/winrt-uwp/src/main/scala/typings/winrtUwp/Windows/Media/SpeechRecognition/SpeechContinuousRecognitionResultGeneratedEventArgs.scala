@@ -17,7 +17,8 @@ object SpeechContinuousRecognitionResultGeneratedEventArgs {
     __obj.asInstanceOf[SpeechContinuousRecognitionResultGeneratedEventArgs]
   }
   
-  extension [Self <: SpeechContinuousRecognitionResultGeneratedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechContinuousRecognitionResultGeneratedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setResult(value: SpeechRecognitionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

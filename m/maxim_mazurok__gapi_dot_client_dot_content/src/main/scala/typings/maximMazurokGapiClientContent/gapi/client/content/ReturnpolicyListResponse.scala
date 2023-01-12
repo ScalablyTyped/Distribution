@@ -18,7 +18,8 @@ object ReturnpolicyListResponse {
     __obj.asInstanceOf[ReturnpolicyListResponse]
   }
   
-  extension [Self <: ReturnpolicyListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnpolicyListResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

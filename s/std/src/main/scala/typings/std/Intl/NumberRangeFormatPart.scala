@@ -22,7 +22,8 @@ object NumberRangeFormatPart {
     __obj.asInstanceOf[NumberRangeFormatPart]
   }
   
-  extension [Self <: NumberRangeFormatPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberRangeFormatPart] (val x: Self) extends AnyVal {
     
     inline def setSource(value: startRange | endRange | shared): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

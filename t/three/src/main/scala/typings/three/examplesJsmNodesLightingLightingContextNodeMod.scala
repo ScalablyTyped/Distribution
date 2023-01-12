@@ -37,7 +37,8 @@ object examplesJsmNodesLightingLightingContextNodeMod {
       __obj.asInstanceOf[LightingModelNode]
     }
     
-    extension [Self <: LightingModelNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LightingModelNode] (val x: Self) extends AnyVal {
       
       inline def setAmbientOcclusion(value: ShaderNode[js.Object, Node]): Self = StObject.set(x, "ambientOcclusion", value.asInstanceOf[js.Any])
       

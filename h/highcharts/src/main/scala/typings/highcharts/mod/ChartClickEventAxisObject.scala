@@ -23,7 +23,8 @@ object ChartClickEventAxisObject {
     __obj.asInstanceOf[ChartClickEventAxisObject]
   }
   
-  extension [Self <: ChartClickEventAxisObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartClickEventAxisObject] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

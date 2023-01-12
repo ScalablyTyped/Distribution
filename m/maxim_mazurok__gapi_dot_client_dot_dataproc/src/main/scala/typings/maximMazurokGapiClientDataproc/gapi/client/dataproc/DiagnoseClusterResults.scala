@@ -16,7 +16,8 @@ object DiagnoseClusterResults {
     __obj.asInstanceOf[DiagnoseClusterResults]
   }
   
-  extension [Self <: DiagnoseClusterResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnoseClusterResults] (val x: Self) extends AnyVal {
     
     inline def setOutputUri(value: String): Self = StObject.set(x, "outputUri", value.asInstanceOf[js.Any])
     

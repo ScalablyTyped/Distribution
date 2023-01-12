@@ -44,7 +44,8 @@ object ContainerPluginOptions {
     __obj.asInstanceOf[ContainerPluginOptions]
   }
   
-  extension [Self <: ContainerPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setExposes(value: Exposes): Self = StObject.set(x, "exposes", value.asInstanceOf[js.Any])
     

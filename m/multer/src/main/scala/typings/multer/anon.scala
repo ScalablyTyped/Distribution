@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[FieldNameSize]
     }
     
-    extension [Self <: FieldNameSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldNameSize] (val x: Self) extends AnyVal {
       
       inline def setFieldNameSize(value: Double): Self = StObject.set(x, "fieldNameSize", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object anon {
       __obj.asInstanceOf[PartialFile]
     }
     
-    extension [Self <: PartialFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFile] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

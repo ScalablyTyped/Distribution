@@ -28,7 +28,8 @@ object GroupMembers {
     __obj.asInstanceOf[GroupMembers]
   }
   
-  extension [Self <: GroupMembers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupMembers] (val x: Self) extends AnyVal {
     
     inline def setMemberGroups(value: MemberGroups): Self = StObject.set(x, "MemberGroups", value.asInstanceOf[js.Any])
     

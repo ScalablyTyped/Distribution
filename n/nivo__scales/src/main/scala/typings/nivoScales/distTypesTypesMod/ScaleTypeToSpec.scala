@@ -32,7 +32,8 @@ object ScaleTypeToSpec {
     __obj.asInstanceOf[ScaleTypeToSpec]
   }
   
-  extension [Self <: ScaleTypeToSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleTypeToSpec] (val x: Self) extends AnyVal {
     
     inline def setBand(value: ScaleBandSpec): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object dxFormButtonItem {
     __obj.asInstanceOf[dxFormButtonItem]
   }
   
-  extension [Self <: dxFormButtonItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFormButtonItem] (val x: Self) extends AnyVal {
     
     inline def setButtonOptions(value: dxButtonOptions): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
     

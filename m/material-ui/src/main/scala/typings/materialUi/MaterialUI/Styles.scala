@@ -843,7 +843,8 @@ object Styles {
       __obj.asInstanceOf[Colors]
     }
     
-    extension [Self <: Colors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
       
       inline def setAmber100(value: String): Self = StObject.set(x, "amber100", value.asInstanceOf[js.Any])
       
@@ -1494,7 +1495,8 @@ object Styles {
       __obj.asInstanceOf[MuiTheme]
     }
     
-    extension [Self <: MuiTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MuiTheme] (val x: Self) extends AnyVal {
       
       inline def setAppBar(value: Color): Self = StObject.set(x, "appBar", value.asInstanceOf[js.Any])
       
@@ -1729,7 +1731,8 @@ object Styles {
       __obj.asInstanceOf[MuiThemeProviderProps]
     }
     
-    extension [Self <: MuiThemeProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MuiThemeProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1756,7 +1759,8 @@ object Styles {
       __obj.asInstanceOf[RawTheme]
     }
     
-    extension [Self <: RawTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawTheme] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -1803,7 +1807,8 @@ object Styles {
       __obj.asInstanceOf[Spacing]
     }
     
-    extension [Self <: Spacing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spacing] (val x: Self) extends AnyVal {
       
       inline def setDesktopDropDownMenuFontSize(value: Double): Self = StObject.set(x, "desktopDropDownMenuFontSize", value.asInstanceOf[js.Any])
       
@@ -1890,7 +1895,8 @@ object Styles {
       __obj.asInstanceOf[ThemePalette]
     }
     
-    extension [Self <: ThemePalette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemePalette] (val x: Self) extends AnyVal {
       
       inline def setAccent1Color(value: String): Self = StObject.set(x, "accent1Color", value.asInstanceOf[js.Any])
       
@@ -2048,7 +2054,8 @@ object Styles {
       __obj.asInstanceOf[Typography]
     }
     
-    extension [Self <: Typography](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typography] (val x: Self) extends AnyVal {
       
       inline def setFontStyleButtonFontSize(value: Double): Self = StObject.set(x, "fontStyleButtonFontSize", value.asInstanceOf[js.Any])
       
@@ -2114,7 +2121,8 @@ object Styles {
       __obj.asInstanceOf[zIndex]
     }
     
-    extension [Self <: zIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: zIndex] (val x: Self) extends AnyVal {
       
       inline def setAppBar(value: Double): Self = StObject.set(x, "appBar", value.asInstanceOf[js.Any])
       

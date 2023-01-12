@@ -43,7 +43,8 @@ object GetIntegrationResponseResponse {
     __obj.asInstanceOf[GetIntegrationResponseResponse]
   }
   
-  extension [Self <: GetIntegrationResponseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIntegrationResponseResponse] (val x: Self) extends AnyVal {
     
     inline def setContentHandlingStrategy(value: ContentHandlingStrategy): Self = StObject.set(x, "ContentHandlingStrategy", value.asInstanceOf[js.Any])
     

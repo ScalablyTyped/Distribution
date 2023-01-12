@@ -58,7 +58,8 @@ object DefineAggregateOptions {
     __obj.asInstanceOf[DefineAggregateOptions]
   }
   
-  extension [Self <: DefineAggregateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefineAggregateOptions] (val x: Self) extends AnyVal {
     
     inline def setApplyLastEvent(value: Boolean): Self = StObject.set(x, "applyLastEvent", value.asInstanceOf[js.Any])
     

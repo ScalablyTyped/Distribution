@@ -26,7 +26,8 @@ object PanelConfig {
     __obj.asInstanceOf[PanelConfig]
   }
   
-  extension [Self <: PanelConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanelConfig] (val x: Self) extends AnyVal {
     
     inline def setBottomContainer(value: HTMLElement): Self = StObject.set(x, "bottomContainer", value.asInstanceOf[js.Any])
     

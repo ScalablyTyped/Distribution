@@ -23,7 +23,8 @@ object ListDomainsResponse {
     __obj.asInstanceOf[ListDomainsResponse]
   }
   
-  extension [Self <: ListDomainsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDomainsResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: DomainList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

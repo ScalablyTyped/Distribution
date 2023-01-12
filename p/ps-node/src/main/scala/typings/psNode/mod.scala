@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[Program]
     }
     
-    extension [Self <: Program](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Program] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: String | js.RegExp): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object mod {
       __obj.asInstanceOf[Signal]
     }
     
-    extension [Self <: Signal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Signal] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       

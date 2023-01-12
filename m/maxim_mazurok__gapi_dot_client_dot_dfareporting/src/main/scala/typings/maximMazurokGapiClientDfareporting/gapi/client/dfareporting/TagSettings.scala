@@ -19,7 +19,8 @@ object TagSettings {
     __obj.asInstanceOf[TagSettings]
   }
   
-  extension [Self <: TagSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagSettings] (val x: Self) extends AnyVal {
     
     inline def setDynamicTagEnabled(value: Boolean): Self = StObject.set(x, "dynamicTagEnabled", value.asInstanceOf[js.Any])
     

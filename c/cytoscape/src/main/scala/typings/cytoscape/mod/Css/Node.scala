@@ -393,7 +393,8 @@ object Node {
     __obj.asInstanceOf[Node]
   }
   
-  extension [Self <: Node](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     inline def `setBackground-blacken`(value: PropertyValueNode[Double]): Self = StObject.set(x, "background-blacken", value.asInstanceOf[js.Any])
     

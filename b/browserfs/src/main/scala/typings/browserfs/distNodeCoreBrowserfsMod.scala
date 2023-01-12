@@ -505,7 +505,8 @@ object distNodeCoreBrowserfsMod {
       __obj.asInstanceOf[FileSystemConfiguration]
     }
     
-    extension [Self <: FileSystemConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystemConfiguration] (val x: Self) extends AnyVal {
       
       inline def setFs(value: String): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       

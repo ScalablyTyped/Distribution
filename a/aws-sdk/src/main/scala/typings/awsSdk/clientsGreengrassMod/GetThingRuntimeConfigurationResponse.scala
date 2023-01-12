@@ -18,7 +18,8 @@ object GetThingRuntimeConfigurationResponse {
     __obj.asInstanceOf[GetThingRuntimeConfigurationResponse]
   }
   
-  extension [Self <: GetThingRuntimeConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetThingRuntimeConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setRuntimeConfiguration(value: RuntimeConfiguration): Self = StObject.set(x, "RuntimeConfiguration", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object TypeofUniformsLib {
     __obj.asInstanceOf[TypeofUniformsLib]
   }
   
-  extension [Self <: TypeofUniformsLib](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofUniformsLib] (val x: Self) extends AnyVal {
     
     inline def setAomap(value: AoMap): Self = StObject.set(x, "aomap", value.asInstanceOf[js.Any])
     

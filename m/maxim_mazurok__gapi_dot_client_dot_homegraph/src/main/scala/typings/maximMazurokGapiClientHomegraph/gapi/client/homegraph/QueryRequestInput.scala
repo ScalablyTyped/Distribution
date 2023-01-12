@@ -16,7 +16,8 @@ object QueryRequestInput {
     __obj.asInstanceOf[QueryRequestInput]
   }
   
-  extension [Self <: QueryRequestInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRequestInput] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: QueryRequestPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

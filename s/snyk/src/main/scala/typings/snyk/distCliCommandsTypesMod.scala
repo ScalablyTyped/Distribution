@@ -64,7 +64,8 @@ object distCliCommandsTypesMod {
       __obj.asInstanceOf[IgnoreMetadata]
     }
     
-    extension [Self <: IgnoreMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreMetadata] (val x: Self) extends AnyVal {
       
       inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       

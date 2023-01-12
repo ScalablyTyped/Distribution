@@ -32,7 +32,8 @@ object SlotInfo {
     __obj.asInstanceOf[SlotInfo]
   }
   
-  extension [Self <: SlotInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotInfo] (val x: Self) extends AnyVal {
     
     inline def setAction(value: select | click | doubleClick): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

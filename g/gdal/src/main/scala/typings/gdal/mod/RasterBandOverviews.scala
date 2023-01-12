@@ -29,7 +29,8 @@ object RasterBandOverviews {
     __obj.asInstanceOf[RasterBandOverviews]
   }
   
-  extension [Self <: RasterBandOverviews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterBandOverviews] (val x: Self) extends AnyVal {
     
     inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     

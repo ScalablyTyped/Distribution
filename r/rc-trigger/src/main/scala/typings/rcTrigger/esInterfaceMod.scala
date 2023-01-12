@@ -66,7 +66,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[AlignType]
     }
     
-    extension [Self <: AlignType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignType] (val x: Self) extends AnyVal {
       
       inline def setIgnoreShake(value: Boolean): Self = StObject.set(x, "ignoreShake", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[CommonEventHandler]
     }
     
-    extension [Self <: CommonEventHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonEventHandler] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }
@@ -147,7 +149,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[MobileConfig]
     }
     
-    extension [Self <: MobileConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MobileConfig] (val x: Self) extends AnyVal {
       
       inline def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
       
@@ -180,7 +183,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       

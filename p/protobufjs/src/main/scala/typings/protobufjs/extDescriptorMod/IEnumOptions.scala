@@ -17,7 +17,8 @@ object IEnumOptions {
     __obj.asInstanceOf[IEnumOptions]
   }
   
-  extension [Self <: IEnumOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEnumOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowAlias(value: Boolean): Self = StObject.set(x, "allowAlias", value.asInstanceOf[js.Any])
     

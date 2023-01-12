@@ -34,7 +34,8 @@ object distCommandsSuggetWITHSCORESMod {
       __obj.asInstanceOf[SuggestionWithScores]
     }
     
-    extension [Self <: SuggestionWithScores](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestionWithScores] (val x: Self) extends AnyVal {
       
       inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object RelativeTo {
     __obj.asInstanceOf[RelativeTo]
   }
   
-  extension [Self <: RelativeTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeTo] (val x: Self) extends AnyVal {
     
     inline def setRelativeTo(value: Container[typings.konva.libNodeMod.Node[NodeConfig]]): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     

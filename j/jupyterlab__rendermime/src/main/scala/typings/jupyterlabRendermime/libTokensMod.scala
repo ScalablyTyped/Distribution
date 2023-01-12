@@ -190,7 +190,8 @@ object libTokensMod {
         __obj.asInstanceOf[ICloneOptions]
       }
       
-      extension [Self <: ICloneOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICloneOptions] (val x: Self) extends AnyVal {
         
         inline def setLatexTypesetter(value: typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.ILatexTypesetter): Self = StObject.set(x, "latexTypesetter", value.asInstanceOf[js.Any])
         

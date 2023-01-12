@@ -33,7 +33,8 @@ object EdgeModel {
     __obj.asInstanceOf[EdgeModel]
   }
   
-  extension [Self <: EdgeModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeModel] (val x: Self) extends AnyVal {
     
     inline def setLatestInference(value: js.Date): Self = StObject.set(x, "LatestInference", value.asInstanceOf[js.Any])
     

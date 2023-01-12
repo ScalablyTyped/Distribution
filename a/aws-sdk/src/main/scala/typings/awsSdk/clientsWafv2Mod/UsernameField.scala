@@ -18,7 +18,8 @@ object UsernameField {
     __obj.asInstanceOf[UsernameField]
   }
   
-  extension [Self <: UsernameField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsernameField] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: FieldIdentifier): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
   }

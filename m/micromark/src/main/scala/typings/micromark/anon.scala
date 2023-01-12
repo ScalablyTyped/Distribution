@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[OmitPointindexbufferIndex]
     }
     
-    extension [Self <: OmitPointindexbufferIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitPointindexbufferIndex] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

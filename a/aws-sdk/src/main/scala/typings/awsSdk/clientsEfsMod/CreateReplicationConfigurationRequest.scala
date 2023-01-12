@@ -23,7 +23,8 @@ object CreateReplicationConfigurationRequest {
     __obj.asInstanceOf[CreateReplicationConfigurationRequest]
   }
   
-  extension [Self <: CreateReplicationConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReplicationConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinations(value: DestinationsToCreate): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     

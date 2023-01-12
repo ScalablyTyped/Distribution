@@ -123,7 +123,8 @@ object ActiveIndex {
     __obj.asInstanceOf[ActiveIndex]
   }
   
-  extension [Self <: ActiveIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveIndex] (val x: Self) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

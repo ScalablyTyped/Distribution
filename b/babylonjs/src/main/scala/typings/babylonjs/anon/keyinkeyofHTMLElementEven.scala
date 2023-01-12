@@ -622,7 +622,8 @@ object keyinkeyofHTMLElementEven {
     __obj.asInstanceOf[keyinkeyofHTMLElementEven]
   }
   
-  extension [Self <: keyinkeyofHTMLElementEven](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinkeyofHTMLElementEven] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: /* e */ js.UndefOr[Event] => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     

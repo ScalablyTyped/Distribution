@@ -19,7 +19,8 @@ object UpdateSuccess {
     __obj.asInstanceOf[UpdateSuccess]
   }
   
-  extension [Self <: UpdateSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSuccess] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object distServiceActionssdkConversationResponseCardBasicMod {
       __obj.asInstanceOf[BasicCardOptions]
     }
     
-    extension [Self <: BasicCardOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicCardOptions] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: GoogleActionsV2UiElementsButton | js.Array[GoogleActionsV2UiElementsButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       

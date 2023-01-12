@@ -26,7 +26,8 @@ object ASPxClientAppointmentOperation {
     __obj.asInstanceOf[ASPxClientAppointmentOperation]
   }
   
-  extension [Self <: ASPxClientAppointmentOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientAppointmentOperation] (val x: Self) extends AnyVal {
     
     inline def setApply(value: () => Unit): Self = StObject.set(x, "Apply", js.Any.fromFunction0(value))
     

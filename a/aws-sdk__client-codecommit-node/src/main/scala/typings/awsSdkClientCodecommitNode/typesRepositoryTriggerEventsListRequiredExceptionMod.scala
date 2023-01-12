@@ -23,7 +23,8 @@ object typesRepositoryTriggerEventsListRequiredExceptionMod {
       __obj.asInstanceOf[RepositoryTriggerEventsListRequiredException]
     }
     
-    extension [Self <: RepositoryTriggerEventsListRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryTriggerEventsListRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerEventsListRequiredException

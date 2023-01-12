@@ -19,7 +19,8 @@ object ModeledVolume {
     __obj.asInstanceOf[ModeledVolume]
   }
   
-  extension [Self <: ModeledVolume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModeledVolume] (val x: Self) extends AnyVal {
     
     inline def setStrips(value: js.Array[TriangleStrip]): Self = StObject.set(x, "strips", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object ConditionalDataBarRule {
     __obj.asInstanceOf[ConditionalDataBarRule]
   }
   
-  extension [Self <: ConditionalDataBarRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalDataBarRule] (val x: Self) extends AnyVal {
     
     inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     

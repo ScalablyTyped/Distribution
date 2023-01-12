@@ -19,7 +19,8 @@ object FreeBusyGroup {
     __obj.asInstanceOf[FreeBusyGroup]
   }
   
-  extension [Self <: FreeBusyGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeBusyGroup] (val x: Self) extends AnyVal {
     
     inline def setCalendars(value: js.Array[String]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     

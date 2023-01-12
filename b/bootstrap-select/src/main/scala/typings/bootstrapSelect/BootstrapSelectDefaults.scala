@@ -75,7 +75,8 @@ object BootstrapSelectDefaults {
     __obj.asInstanceOf[BootstrapSelectDefaults]
   }
   
-  extension [Self <: BootstrapSelectDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapSelectDefaults] (val x: Self) extends AnyVal {
     
     inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
     

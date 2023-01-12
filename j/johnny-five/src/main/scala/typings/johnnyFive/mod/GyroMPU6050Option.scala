@@ -17,7 +17,8 @@ object GyroMPU6050Option {
     __obj.asInstanceOf[GyroMPU6050Option]
   }
   
-  extension [Self <: GyroMPU6050Option](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GyroMPU6050Option] (val x: Self) extends AnyVal {
     
     inline def setSensitivity(value: Double): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
   }

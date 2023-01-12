@@ -70,7 +70,8 @@ object SVGPolygonElement {
     __obj.asInstanceOf[SVGPolygonElement]
   }
   
-  extension [Self <: SVGPolygonElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPolygonElement] (val x: Self) extends AnyVal {
     
     inline def setAnimatedPoints(value: SVGPointList): Self = StObject.set(x, "animatedPoints", value.asInstanceOf[js.Any])
     

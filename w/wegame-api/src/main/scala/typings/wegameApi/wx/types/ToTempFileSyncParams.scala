@@ -55,7 +55,8 @@ object ToTempFileSyncParams {
     __obj.asInstanceOf[ToTempFileSyncParams]
   }
   
-  extension [Self <: ToTempFileSyncParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToTempFileSyncParams] (val x: Self) extends AnyVal {
     
     inline def setDestHeight(value: Double): Self = StObject.set(x, "destHeight", value.asInstanceOf[js.Any])
     

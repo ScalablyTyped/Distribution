@@ -30,7 +30,8 @@ object RemoteAssistancePartner {
     __obj.asInstanceOf[RemoteAssistancePartner]
   }
   
-  extension [Self <: RemoteAssistancePartner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteAssistancePartner] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

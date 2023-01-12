@@ -17,7 +17,8 @@ object ClientRequestOptions {
     __obj.asInstanceOf[ClientRequestOptions]
   }
   
-  extension [Self <: ClientRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setJar(value: Boolean): Self = StObject.set(x, "jar", value.asInstanceOf[js.Any])
     

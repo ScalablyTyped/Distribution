@@ -37,7 +37,8 @@ object Platform {
     __obj.asInstanceOf[Platform]
   }
   
-  extension [Self <: Platform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
     
     inline def setConvertOffsetParentRelativeRectToViewportRelativeRect(value: /* args */ OffsetParent => Promisable[Rect]): Self = StObject.set(x, "convertOffsetParentRelativeRectToViewportRelativeRect", js.Any.fromFunction1(value))
     

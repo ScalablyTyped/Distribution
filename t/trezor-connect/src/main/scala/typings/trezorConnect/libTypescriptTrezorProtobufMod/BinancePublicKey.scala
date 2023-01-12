@@ -15,7 +15,8 @@ object BinancePublicKey {
     __obj.asInstanceOf[BinancePublicKey]
   }
   
-  extension [Self <: BinancePublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinancePublicKey] (val x: Self) extends AnyVal {
     
     inline def setPublic_key(value: String): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
   }

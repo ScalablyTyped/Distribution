@@ -23,7 +23,8 @@ object ShardStatistics {
     __obj.asInstanceOf[ShardStatistics]
   }
   
-  extension [Self <: ShardStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShardStatistics] (val x: Self) extends AnyVal {
     
     inline def setFailed(value: uint): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     

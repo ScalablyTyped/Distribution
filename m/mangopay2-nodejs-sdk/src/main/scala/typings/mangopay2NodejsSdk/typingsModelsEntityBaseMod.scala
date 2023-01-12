@@ -23,7 +23,8 @@ object typingsModelsEntityBaseMod {
         __obj.asInstanceOf[EntityBaseData]
       }
       
-      extension [Self <: EntityBaseData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EntityBaseData] (val x: Self) extends AnyVal {
         
         inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
         

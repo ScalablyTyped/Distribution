@@ -38,7 +38,8 @@ object validateMod {
       __obj.asInstanceOf[OnViolation]
     }
     
-    extension [Self <: OnViolation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnViolation] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object validateMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMaxErrors(value: Double): Self = StObject.set(x, "maxErrors", value.asInstanceOf[js.Any])
       

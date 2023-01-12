@@ -23,7 +23,8 @@ object FromPixelsInputs {
     __obj.asInstanceOf[FromPixelsInputs]
   }
   
-  extension [Self <: FromPixelsInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FromPixelsInputs] (val x: Self) extends AnyVal {
     
     inline def setPixels(
       value: PixelData | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap

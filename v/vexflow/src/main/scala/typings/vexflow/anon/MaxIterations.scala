@@ -17,7 +17,8 @@ object MaxIterations {
     __obj.asInstanceOf[MaxIterations]
   }
   
-  extension [Self <: MaxIterations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxIterations] (val x: Self) extends AnyVal {
     
     inline def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
     

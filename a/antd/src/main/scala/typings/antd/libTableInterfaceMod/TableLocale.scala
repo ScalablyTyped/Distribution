@@ -48,7 +48,8 @@ object TableLocale {
     __obj.asInstanceOf[TableLocale]
   }
   
-  extension [Self <: TableLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableLocale] (val x: Self) extends AnyVal {
     
     inline def setCancelSort(value: String): Self = StObject.set(x, "cancelSort", value.asInstanceOf[js.Any])
     

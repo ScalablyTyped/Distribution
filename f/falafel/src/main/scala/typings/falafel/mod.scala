@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[FullOptionsObject]
     }
     
-    extension [Self <: FullOptionsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullOptionsObject] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object mod {
       __obj.asInstanceOf[OptionsObject]
     }
     
-    extension [Self <: OptionsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsObject] (val x: Self) extends AnyVal {
       
       inline def setParser(value: Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     }
@@ -71,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setChunks(value: js.Array[Any]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       

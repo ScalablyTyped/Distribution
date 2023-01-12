@@ -36,7 +36,8 @@ object Touchable {
   
   inline def renderDebugView(config: Color): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("renderDebugView")(config.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  extension [Self <: Touchable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Touchable] (val x: Self) extends AnyVal {
     
     inline def setOnTouchCancel(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
     

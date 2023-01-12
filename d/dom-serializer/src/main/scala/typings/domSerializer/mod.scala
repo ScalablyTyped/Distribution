@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[DomSerializerOptions]
     }
     
-    extension [Self <: DomSerializerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomSerializerOptions] (val x: Self) extends AnyVal {
       
       inline def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
       

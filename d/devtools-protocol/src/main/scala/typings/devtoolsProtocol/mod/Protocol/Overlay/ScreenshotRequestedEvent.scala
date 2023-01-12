@@ -19,7 +19,8 @@ object ScreenshotRequestedEvent {
     __obj.asInstanceOf[ScreenshotRequestedEvent]
   }
   
-  extension [Self <: ScreenshotRequestedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenshotRequestedEvent] (val x: Self) extends AnyVal {
     
     inline def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }

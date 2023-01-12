@@ -46,7 +46,8 @@ object RelativePosition {
     __obj.asInstanceOf[RelativePosition]
   }
   
-  extension [Self <: RelativePosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativePosition] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: Alignment): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     

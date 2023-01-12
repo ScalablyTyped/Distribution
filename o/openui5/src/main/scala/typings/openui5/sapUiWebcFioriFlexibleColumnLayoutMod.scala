@@ -667,7 +667,8 @@ object sapUiWebcFioriFlexibleColumnLayoutMod {
       __obj.asInstanceOf[FlexibleColumnLayoutSettings]
     }
     
-    extension [Self <: FlexibleColumnLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexibleColumnLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityRoles(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "accessibilityRoles", value.asInstanceOf[js.Any])
       

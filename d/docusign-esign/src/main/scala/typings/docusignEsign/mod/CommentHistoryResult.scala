@@ -28,7 +28,8 @@ object CommentHistoryResult {
     __obj.asInstanceOf[CommentHistoryResult]
   }
   
-  extension [Self <: CommentHistoryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentHistoryResult] (val x: Self) extends AnyVal {
     
     inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

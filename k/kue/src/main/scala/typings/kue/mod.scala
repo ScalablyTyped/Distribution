@@ -600,7 +600,8 @@ object mod {
       __obj.asInstanceOf[Priorities]
     }
     
-    extension [Self <: Priorities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Priorities] (val x: Self) extends AnyVal {
       
       inline def setCritical(value: Double): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
       
@@ -644,7 +645,8 @@ object mod {
       __obj.asInstanceOf[Redis]
     }
     
-    extension [Self <: Redis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Redis] (val x: Self) extends AnyVal {
       
       inline def setClient(value: () => Any): Self = StObject.set(x, "client", js.Any.fromFunction0(value))
       

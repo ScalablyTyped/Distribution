@@ -51,7 +51,8 @@ object XContainerWindowEventHandler {
     __obj.asInstanceOf[XContainerWindowEventHandler]
   }
   
-  extension [Self <: XContainerWindowEventHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContainerWindowEventHandler] (val x: Self) extends AnyVal {
     
     inline def setCallHandlerMethod(value: (XWindow, Any, String) => Boolean): Self = StObject.set(x, "callHandlerMethod", js.Any.fromFunction3(value))
     

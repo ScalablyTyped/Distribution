@@ -17,7 +17,8 @@ object NewWindowOptions {
     __obj.asInstanceOf[NewWindowOptions]
   }
   
-  extension [Self <: NewWindowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewWindowOptions] (val x: Self) extends AnyVal {
     
     inline def setWindowFeatures(value: String): Self = StObject.set(x, "windowFeatures", value.asInstanceOf[js.Any])
     

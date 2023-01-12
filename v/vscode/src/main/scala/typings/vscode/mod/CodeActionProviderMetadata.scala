@@ -39,7 +39,8 @@ object CodeActionProviderMetadata {
     __obj.asInstanceOf[CodeActionProviderMetadata]
   }
   
-  extension [Self <: CodeActionProviderMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeActionProviderMetadata] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: js.Array[typings.vscode.anon.Command]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeDBProxiesResponse {
     __obj.asInstanceOf[DescribeDBProxiesResponse]
   }
   
-  extension [Self <: DescribeDBProxiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDBProxiesResponse] (val x: Self) extends AnyVal {
     
     inline def setDBProxies(value: DBProxyList): Self = StObject.set(x, "DBProxies", value.asInstanceOf[js.Any])
     

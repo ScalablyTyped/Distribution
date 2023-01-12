@@ -18,7 +18,8 @@ object ExistingObjectReplication {
     __obj.asInstanceOf[ExistingObjectReplication]
   }
   
-  extension [Self <: ExistingObjectReplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExistingObjectReplication] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ExistingObjectReplicationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }

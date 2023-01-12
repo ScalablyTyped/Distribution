@@ -33,7 +33,8 @@ object GetCurrentUserDataRequest {
     __obj.asInstanceOf[GetCurrentUserDataRequest]
   }
   
-  extension [Self <: GetCurrentUserDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCurrentUserDataRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: UserDataFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

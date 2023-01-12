@@ -23,7 +23,8 @@ object RuleMark {
     __obj.asInstanceOf[RuleMark]
   }
   
-  extension [Self <: RuleMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleMark] (val x: Self) extends AnyVal {
     
     inline def setType(value: rule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

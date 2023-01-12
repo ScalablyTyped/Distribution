@@ -315,7 +315,8 @@ object renderingEdgesRendererMod {
       __obj.asInstanceOf[IEdgesRenderer]
     }
     
-    extension [Self <: IEdgesRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEdgesRenderer] (val x: Self) extends AnyVal {
       
       inline def setCustomInstances(value: SmartArray[Matrix]): Self = StObject.set(x, "customInstances", value.asInstanceOf[js.Any])
       
@@ -377,7 +378,8 @@ object renderingEdgesRendererMod {
       __obj.asInstanceOf[IEdgesRendererOptions]
     }
     
-    extension [Self <: IEdgesRendererOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEdgesRendererOptions] (val x: Self) extends AnyVal {
       
       inline def setApplyTessellation(value: Boolean): Self = StObject.set(x, "applyTessellation", value.asInstanceOf[js.Any])
       
@@ -422,7 +424,8 @@ object renderingEdgesRendererMod {
         __obj.asInstanceOf[typings.babylonjs.renderingEdgesRendererMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh]
       }
       
-      extension [Self <: typings.babylonjs.renderingEdgesRendererMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.renderingEdgesRendererMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh] (val x: Self) extends AnyVal {
         
         inline def setEdgesRenderer(value: Nullable[EdgesRenderer]): Self = StObject.set(x, "edgesRenderer", value.asInstanceOf[js.Any])
         
@@ -484,7 +487,8 @@ object renderingEdgesRendererMod {
         __obj.asInstanceOf[Scene]
       }
       
-      extension [Self <: Scene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
         
         inline def set_edgeRenderLineShader(value: Nullable[ShaderMaterial]): Self = StObject.set(x, "_edgeRenderLineShader", value.asInstanceOf[js.Any])
         

@@ -46,7 +46,8 @@ object Dictionaries {
     __obj.asInstanceOf[Dictionaries]
   }
   
-  extension [Self <: Dictionaries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictionaries] (val x: Self) extends AnyVal {
     
     inline def setActiveCustomDictionary(value: Dictionary): Self = StObject.set(x, "ActiveCustomDictionary", value.asInstanceOf[js.Any])
     

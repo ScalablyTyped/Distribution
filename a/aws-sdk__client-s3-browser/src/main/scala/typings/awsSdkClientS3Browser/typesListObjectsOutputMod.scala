@@ -74,7 +74,8 @@ object typesListObjectsOutputMod {
       __obj.asInstanceOf[ListObjectsOutput]
     }
     
-    extension [Self <: ListObjectsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListObjectsOutput] (val x: Self) extends AnyVal {
       
       inline def setCommonPrefixes(value: js.Array[UnmarshalledCommonPrefix]): Self = StObject.set(x, "CommonPrefixes", value.asInstanceOf[js.Any])
       

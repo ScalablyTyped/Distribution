@@ -19,7 +19,8 @@ object IEntityCollectionChangedEventArgs {
     __obj.asInstanceOf[IEntityCollectionChangedEventArgs]
   }
   
-  extension [Self <: IEntityCollectionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityCollectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCollection(value: EntityCollection): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     

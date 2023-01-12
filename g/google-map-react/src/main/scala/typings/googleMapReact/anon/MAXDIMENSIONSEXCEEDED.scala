@@ -35,7 +35,8 @@ object MAXDIMENSIONSEXCEEDED {
     __obj.asInstanceOf[MAXDIMENSIONSEXCEEDED]
   }
   
-  extension [Self <: MAXDIMENSIONSEXCEEDED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MAXDIMENSIONSEXCEEDED] (val x: Self) extends AnyVal {
     
     inline def setINVALID_REQUEST(value: String): Self = StObject.set(x, "INVALID_REQUEST", value.asInstanceOf[js.Any])
     

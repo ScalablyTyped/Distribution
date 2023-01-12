@@ -47,7 +47,8 @@ object AutoRefresh {
     __obj.asInstanceOf[AutoRefresh]
   }
   
-  extension [Self <: AutoRefresh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoRefresh] (val x: Self) extends AnyVal {
     
     inline def setAnimationOptions(value: typings.reactOnsenui.mod.AnimationOptions): Self = StObject.set(x, "animationOptions", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object HttpPackageConfiguration {
     __obj.asInstanceOf[HttpPackageConfiguration]
   }
   
-  extension [Self <: HttpPackageConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpPackageConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPath(value: _String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distComponentsContextAuthContextProviderMod {
       __obj.asInstanceOf[AuthContextConfig]
     }
     
-    extension [Self <: AuthContextConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthContextConfig] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object distComponentsContextAuthContextProviderMod {
       __obj.asInstanceOf[AuthContextProps]
     }
     
-    extension [Self <: AuthContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthContextProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

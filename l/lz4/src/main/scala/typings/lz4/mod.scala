@@ -119,7 +119,8 @@ object mod {
       __obj.asInstanceOf[DecoderOptions]
     }
     
-    extension [Self <: DecoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoderOptions] (val x: Self) extends AnyVal {
       
       inline def setUseJS(value: Boolean): Self = StObject.set(x, "useJS", value.asInstanceOf[js.Any])
       
@@ -232,7 +233,8 @@ object mod {
       __obj.asInstanceOf[EncoderOptions]
     }
     
-    extension [Self <: EncoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncoderOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockChecksum(value: Boolean): Self = StObject.set(x, "blockChecksum", value.asInstanceOf[js.Any])
       

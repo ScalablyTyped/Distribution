@@ -117,7 +117,8 @@ object buildSrcSubchannelCallMod {
       __obj.asInstanceOf[StatusObjectWithRstCode]
     }
     
-    extension [Self <: StatusObjectWithRstCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusObjectWithRstCode] (val x: Self) extends AnyVal {
       
       inline def setRstCode(value: Double): Self = StObject.set(x, "rstCode", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object buildSrcSubchannelCallMod {
       __obj.asInstanceOf[SubchannelCall]
     }
     
-    extension [Self <: SubchannelCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubchannelCall] (val x: Self) extends AnyVal {
       
       inline def setCancelWithStatus(value: (Status, String) => Unit): Self = StObject.set(x, "cancelWithStatus", js.Any.fromFunction2(value))
       
@@ -186,7 +188,8 @@ object buildSrcSubchannelCallMod {
       __obj.asInstanceOf[SubchannelCallInterceptingListener]
     }
     
-    extension [Self <: SubchannelCallInterceptingListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubchannelCallInterceptingListener] (val x: Self) extends AnyVal {
       
       inline def setOnReceiveStatus(value: StatusObjectWithRstCode => Unit): Self = StObject.set(x, "onReceiveStatus", js.Any.fromFunction1(value))
     }

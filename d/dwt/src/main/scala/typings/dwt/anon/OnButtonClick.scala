@@ -26,7 +26,8 @@ object OnButtonClick {
     __obj.asInstanceOf[OnButtonClick]
   }
   
-  extension [Self <: OnButtonClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnButtonClick] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

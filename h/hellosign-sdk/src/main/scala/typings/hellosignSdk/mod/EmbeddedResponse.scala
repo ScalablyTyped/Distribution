@@ -19,7 +19,8 @@ object EmbeddedResponse {
     __obj.asInstanceOf[EmbeddedResponse]
   }
   
-  extension [Self <: EmbeddedResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedResponse] (val x: Self) extends AnyVal {
     
     inline def setEmbedded(value: Editurl): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
   }

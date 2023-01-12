@@ -17,7 +17,8 @@ object ChromeExtensionInfo {
     __obj.asInstanceOf[ChromeExtensionInfo]
   }
   
-  extension [Self <: ChromeExtensionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChromeExtensionInfo] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

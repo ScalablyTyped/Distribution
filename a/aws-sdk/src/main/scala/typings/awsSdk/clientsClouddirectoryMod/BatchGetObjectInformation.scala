@@ -18,7 +18,8 @@ object BatchGetObjectInformation {
     __obj.asInstanceOf[BatchGetObjectInformation]
   }
   
-  extension [Self <: BatchGetObjectInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetObjectInformation] (val x: Self) extends AnyVal {
     
     inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
   }

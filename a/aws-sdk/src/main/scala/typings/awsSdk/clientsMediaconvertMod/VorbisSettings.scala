@@ -28,7 +28,8 @@ object VorbisSettings {
     __obj.asInstanceOf[VorbisSettings]
   }
   
-  extension [Self <: VorbisSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VorbisSettings] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: integerMin1Max2): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     

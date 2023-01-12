@@ -64,7 +64,8 @@ object HttpRequest {
     __obj.asInstanceOf[HttpRequest]
   }
   
-  extension [Self <: HttpRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpRequest] (val x: Self) extends AnyVal {
     
     inline def setCacheFillBytes(value: String): Self = StObject.set(x, "cacheFillBytes", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object IErrorHandlingConfig {
     __obj.asInstanceOf[IErrorHandlingConfig]
   }
   
-  extension [Self <: IErrorHandlingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IErrorHandlingConfig] (val x: Self) extends AnyVal {
     
     inline def setObjectMaxDepth(value: Double): Self = StObject.set(x, "objectMaxDepth", value.asInstanceOf[js.Any])
     

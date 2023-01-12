@@ -43,7 +43,8 @@ object Organization {
     __obj.asInstanceOf[Organization]
   }
   
-  extension [Self <: Organization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
     
     inline def setBase_role(value: read | triage | write | maintain): Self = StObject.set(x, "base_role", value.asInstanceOf[js.Any])
     

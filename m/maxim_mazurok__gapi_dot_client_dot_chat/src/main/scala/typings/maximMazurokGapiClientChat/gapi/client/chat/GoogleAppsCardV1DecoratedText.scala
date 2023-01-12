@@ -43,7 +43,8 @@ object GoogleAppsCardV1DecoratedText {
     __obj.asInstanceOf[GoogleAppsCardV1DecoratedText]
   }
   
-  extension [Self <: GoogleAppsCardV1DecoratedText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1DecoratedText] (val x: Self) extends AnyVal {
     
     inline def setBottomLabel(value: String): Self = StObject.set(x, "bottomLabel", value.asInstanceOf[js.Any])
     

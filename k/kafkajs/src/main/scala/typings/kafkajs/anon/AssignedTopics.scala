@@ -32,7 +32,8 @@ object AssignedTopics {
     __obj.asInstanceOf[AssignedTopics]
   }
   
-  extension [Self <: AssignedTopics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignedTopics] (val x: Self) extends AnyVal {
     
     inline def setAssignedTopics(value: js.Array[String]): Self = StObject.set(x, "assignedTopics", value.asInstanceOf[js.Any])
     

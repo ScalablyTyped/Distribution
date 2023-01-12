@@ -322,7 +322,8 @@ object esComponentsJumboTabsJumboTabsMod {
       __obj.asInstanceOf[JumboTabProps]
     }
     
-    extension [Self <: JumboTabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JumboTabProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -814,7 +815,8 @@ object esComponentsJumboTabsJumboTabsMod {
       __obj.asInstanceOf[JumboTabsProps]
     }
     
-    extension [Self <: JumboTabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JumboTabsProps] (val x: Self) extends AnyVal {
       
       inline def setActiveKey(value: String): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       

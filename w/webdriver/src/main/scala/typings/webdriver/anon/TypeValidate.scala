@@ -35,7 +35,8 @@ object TypeValidate {
     __obj.asInstanceOf[TypeValidate]
   }
   
-  extension [Self <: TypeValidate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeValidate] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: /* requestOptions */ RequestLibOptions => RequestLibOptions): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
     

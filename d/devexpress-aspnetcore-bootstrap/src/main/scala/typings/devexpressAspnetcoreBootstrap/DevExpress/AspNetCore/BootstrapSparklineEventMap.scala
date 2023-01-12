@@ -47,7 +47,8 @@ object BootstrapSparklineEventMap {
     __obj.asInstanceOf[BootstrapSparklineEventMap]
   }
   
-  extension [Self <: BootstrapSparklineEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapSparklineEventMap] (val x: Self) extends AnyVal {
     
     inline def setDisposing(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "disposing", value.asInstanceOf[js.Any])
     

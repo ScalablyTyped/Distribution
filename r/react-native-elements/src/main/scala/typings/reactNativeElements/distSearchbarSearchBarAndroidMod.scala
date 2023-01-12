@@ -79,7 +79,8 @@ object distSearchbarSearchBarAndroidMod {
       __obj.asInstanceOf[SearchBarState]
     }
     
-    extension [Self <: SearchBarState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchBarState] (val x: Self) extends AnyVal {
       
       inline def setHasFocus(value: Boolean): Self = StObject.set(x, "hasFocus", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object distTypesTooltipProviderMod {
       __obj.asInstanceOf[TooltipProviderProps]
     }
     
-    extension [Self <: TooltipProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProviderProps] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: MutableRefObject[HTMLDivElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     }

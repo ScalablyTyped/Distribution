@@ -68,7 +68,8 @@ object Schedule {
     __obj.asInstanceOf[Schedule]
   }
   
-  extension [Self <: Schedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
     
     inline def setArchiveRule(value: ArchiveRule): Self = StObject.set(x, "ArchiveRule", value.asInstanceOf[js.Any])
     

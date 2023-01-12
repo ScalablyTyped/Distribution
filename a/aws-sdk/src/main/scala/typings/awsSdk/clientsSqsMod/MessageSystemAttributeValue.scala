@@ -38,7 +38,8 @@ object MessageSystemAttributeValue {
     __obj.asInstanceOf[MessageSystemAttributeValue]
   }
   
-  extension [Self <: MessageSystemAttributeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageSystemAttributeValue] (val x: Self) extends AnyVal {
     
     inline def setBinaryListValues(value: BinaryList): Self = StObject.set(x, "BinaryListValues", value.asInstanceOf[js.Any])
     

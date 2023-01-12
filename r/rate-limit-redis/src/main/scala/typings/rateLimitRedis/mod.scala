@@ -131,7 +131,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,8 @@ object mod {
       __obj.asInstanceOf[RedisStore]
     }
     
-    extension [Self <: RedisStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisStore] (val x: Self) extends AnyVal {
       
       inline def setInit(value: typings.expressRateLimit.mod.Options => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       

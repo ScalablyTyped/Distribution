@@ -15,7 +15,8 @@ object OAuthCreateTokenFromRefreshTokenRequest {
     __obj.asInstanceOf[OAuthCreateTokenFromRefreshTokenRequest]
   }
   
-  extension [Self <: OAuthCreateTokenFromRefreshTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthCreateTokenFromRefreshTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
   }

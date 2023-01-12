@@ -55,7 +55,8 @@ object MediaInterface {
     __obj.asInstanceOf[MediaInterface]
   }
   
-  extension [Self <: MediaInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaInterface] (val x: Self) extends AnyVal {
     
     inline def `setMedia-back-coating`(value: MediaCoating): Self = StObject.set(x, "media-back-coating", value.asInstanceOf[js.Any])
     

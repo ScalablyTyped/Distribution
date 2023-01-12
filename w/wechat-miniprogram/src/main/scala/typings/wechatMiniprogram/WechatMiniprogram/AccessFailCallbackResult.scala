@@ -20,7 +20,8 @@ object AccessFailCallbackResult {
     __obj.asInstanceOf[AccessFailCallbackResult]
   }
   
-  extension [Self <: AccessFailCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessFailCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

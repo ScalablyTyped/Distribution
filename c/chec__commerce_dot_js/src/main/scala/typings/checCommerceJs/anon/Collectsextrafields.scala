@@ -53,7 +53,8 @@ object Collectsextrafields {
     __obj.asInstanceOf[Collectsextrafields]
   }
   
-  extension [Self <: Collectsextrafields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collectsextrafields] (val x: Self) extends AnyVal {
     
     inline def setCollects_billing_address(value: Boolean): Self = StObject.set(x, "collects_billing_address", value.asInstanceOf[js.Any])
     

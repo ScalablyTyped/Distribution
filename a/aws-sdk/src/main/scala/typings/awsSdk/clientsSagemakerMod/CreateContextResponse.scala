@@ -18,7 +18,8 @@ object CreateContextResponse {
     __obj.asInstanceOf[CreateContextResponse]
   }
   
-  extension [Self <: CreateContextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateContextResponse] (val x: Self) extends AnyVal {
     
     inline def setContextArn(value: ContextArn): Self = StObject.set(x, "ContextArn", value.asInstanceOf[js.Any])
     

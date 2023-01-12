@@ -100,7 +100,8 @@ object typesUseCollapseTransitionMod {
       __obj.asInstanceOf[CollapseConfigurationStyle]
     }
     
-    extension [Self <: CollapseConfigurationStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseConfigurationStyle] (val x: Self) extends AnyVal {
       
       inline def setMinHeight(value: Double | String): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object typesUseCollapseTransitionMod {
       __obj.asInstanceOf[CollapseElementProps[E]]
     }
     
-    extension [Self <: CollapseElementProps[?], E /* <: HTMLElement */](x: Self & CollapseElementProps[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseElementProps[?], E /* <: HTMLElement */] (val x: Self & CollapseElementProps[E]) extends AnyVal {
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object typesUseCollapseTransitionMod {
       __obj.asInstanceOf[CollapseStyle]
     }
     
-    extension [Self <: CollapseStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseStyle] (val x: Self) extends AnyVal {
       
       inline def setTransitionDuration(value: String): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object typesUseCollapseTransitionMod {
       __obj.asInstanceOf[CollapseTransitionHookOptions[E]]
     }
     
-    extension [Self <: CollapseTransitionHookOptions[?], E /* <: HTMLElement */](x: Self & CollapseTransitionHookOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseTransitionHookOptions[?], E /* <: HTMLElement */] (val x: Self & CollapseTransitionHookOptions[E]) extends AnyVal {
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -283,7 +287,8 @@ object typesUseCollapseTransitionMod {
       __obj.asInstanceOf[CollapseTransitionHookReturnValue[E]]
     }
     
-    extension [Self <: CollapseTransitionHookReturnValue[?], E /* <: HTMLElement */](x: Self & CollapseTransitionHookReturnValue[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseTransitionHookReturnValue[?], E /* <: HTMLElement */] (val x: Self & CollapseTransitionHookReturnValue[E]) extends AnyVal {
       
       inline def setElementProps(value: CollapseElementProps[E]): Self = StObject.set(x, "elementProps", value.asInstanceOf[js.Any])
       

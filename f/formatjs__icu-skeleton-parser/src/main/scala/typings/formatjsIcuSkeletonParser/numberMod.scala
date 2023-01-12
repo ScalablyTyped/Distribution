@@ -28,7 +28,8 @@ object numberMod {
       __obj.asInstanceOf[ExtendedNumberFormatOptions]
     }
     
-    extension [Self <: ExtendedNumberFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedNumberFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object numberMod {
       __obj.asInstanceOf[NumberSkeletonToken]
     }
     
-    extension [Self <: NumberSkeletonToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberSkeletonToken] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

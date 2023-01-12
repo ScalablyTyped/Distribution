@@ -19,7 +19,8 @@ object ListBiddersResponse {
     __obj.asInstanceOf[ListBiddersResponse]
   }
   
-  extension [Self <: ListBiddersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBiddersResponse] (val x: Self) extends AnyVal {
     
     inline def setBidders(value: js.Array[Bidder]): Self = StObject.set(x, "bidders", value.asInstanceOf[js.Any])
     

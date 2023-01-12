@@ -22,7 +22,8 @@ object BuildingSummaryStatisticsProperties {
     __obj.asInstanceOf[BuildingSummaryStatisticsProperties]
   }
   
-  extension [Self <: BuildingSummaryStatisticsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingSummaryStatisticsProperties] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[BuildingFieldStatistics]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

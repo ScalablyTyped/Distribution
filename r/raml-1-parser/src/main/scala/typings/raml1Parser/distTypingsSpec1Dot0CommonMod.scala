@@ -31,7 +31,8 @@ object distTypingsSpec1Dot0CommonMod {
       __obj.asInstanceOf[Annotable]
     }
     
-    extension [Self <: Annotable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Annotable] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: StringDictionary[AnnotationInstance | js.Array[AnnotationInstance]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object distTypingsSpec1Dot0CommonMod {
       __obj.asInstanceOf[AnnotationInstance]
     }
     
-    extension [Self <: AnnotationInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationInstance] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object distTypingsSpec1Dot0CommonMod {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -141,7 +144,8 @@ object distTypingsSpec1Dot0CommonMod {
       __obj.asInstanceOf[ErrorPosition]
     }
     
-    extension [Self <: ErrorPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorPosition] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -164,7 +168,8 @@ object distTypingsSpec1Dot0CommonMod {
       __obj.asInstanceOf[ErrorRange]
     }
     
-    extension [Self <: ErrorRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: ErrorPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -189,7 +194,8 @@ object distTypingsSpec1Dot0CommonMod {
       __obj.asInstanceOf[FragmentDeclaration]
     }
     
-    extension [Self <: FragmentDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FragmentDeclaration] (val x: Self) extends AnyVal {
       
       inline def setUses(value: js.Array[UsesDeclaration]): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
       
@@ -217,7 +223,8 @@ object distTypingsSpec1Dot0CommonMod {
       __obj.asInstanceOf[RAML10ParseResult]
     }
     
-    extension [Self <: RAML10ParseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RAML10ParseResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -246,7 +253,8 @@ object distTypingsSpec1Dot0CommonMod {
       __obj.asInstanceOf[UsesDeclaration]
     }
     
-    extension [Self <: UsesDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsesDeclaration] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

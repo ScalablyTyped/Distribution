@@ -45,7 +45,8 @@ object ShowSelectedButtonProps {
     __obj.asInstanceOf[ShowSelectedButtonProps]
   }
   
-  extension [Self <: ShowSelectedButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowSelectedButtonProps] (val x: Self) extends AnyVal {
     
     inline def setBtnContextual(value: String): Self = StObject.set(x, "btnContextual", value.asInstanceOf[js.Any])
     

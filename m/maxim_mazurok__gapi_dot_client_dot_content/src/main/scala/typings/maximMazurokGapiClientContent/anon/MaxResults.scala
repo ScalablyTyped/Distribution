@@ -65,7 +65,8 @@ object MaxResults {
     __obj.asInstanceOf[MaxResults]
   }
   
-  extension [Self <: MaxResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxResults] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RuntimeValueOptions {
     __obj.asInstanceOf[RuntimeValueOptions]
   }
   
-  extension [Self <: RuntimeValueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeValueOptions] (val x: Self) extends AnyVal {
     
     inline def setBuildDependencies(value: js.Array[String]): Self = StObject.set(x, "buildDependencies", value.asInstanceOf[js.Any])
     

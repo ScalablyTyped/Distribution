@@ -15,7 +15,8 @@ object CSVLayerRefreshEvent {
     __obj.asInstanceOf[CSVLayerRefreshEvent]
   }
   
-  extension [Self <: CSVLayerRefreshEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSVLayerRefreshEvent] (val x: Self) extends AnyVal {
     
     inline def setDataChanged(value: Boolean): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
   }

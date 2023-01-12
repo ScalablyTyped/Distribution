@@ -32,7 +32,8 @@ object ShippingSnakeCase {
     __obj.asInstanceOf[ShippingSnakeCase]
   }
   
-  extension [Self <: ShippingSnakeCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShippingSnakeCase] (val x: Self) extends AnyVal {
     
     inline def setAccount_address_id(value: String): Self = StObject.set(x, "account_address_id", value.asInstanceOf[js.Any])
     

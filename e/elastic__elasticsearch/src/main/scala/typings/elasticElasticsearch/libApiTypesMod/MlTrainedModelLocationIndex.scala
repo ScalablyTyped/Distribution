@@ -15,7 +15,8 @@ object MlTrainedModelLocationIndex {
     __obj.asInstanceOf[MlTrainedModelLocationIndex]
   }
   
-  extension [Self <: MlTrainedModelLocationIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelLocationIndex] (val x: Self) extends AnyVal {
     
     inline def setName(value: IndexName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

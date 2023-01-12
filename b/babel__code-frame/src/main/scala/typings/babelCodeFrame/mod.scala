@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[BabelCodeFrameOptions]
     }
     
-    extension [Self <: BabelCodeFrameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BabelCodeFrameOptions] (val x: Self) extends AnyVal {
       
       inline def setForceColor(value: Boolean): Self = StObject.set(x, "forceColor", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
       __obj.asInstanceOf[SourceLocation]
     }
     
-    extension [Self <: SourceLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Column): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

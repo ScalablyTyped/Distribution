@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[MockeryEnableArgs]
     }
     
-    extension [Self <: MockeryEnableArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockeryEnableArgs] (val x: Self) extends AnyVal {
       
       inline def setUseCleanCache(value: Boolean): Self = StObject.set(x, "useCleanCache", value.asInstanceOf[js.Any])
       

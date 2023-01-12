@@ -26,7 +26,8 @@ object PointsOfInterestSearchDelegate {
     __obj.asInstanceOf[PointsOfInterestSearchDelegate]
   }
   
-  extension [Self <: PointsOfInterestSearchDelegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointsOfInterestSearchDelegate] (val x: Self) extends AnyVal {
     
     inline def setSearchDidComplete(value: /* data */ PointsOfInterestSearchResponse => Unit): Self = StObject.set(x, "searchDidComplete", js.Any.fromFunction1(value))
     

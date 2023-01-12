@@ -22,7 +22,8 @@ object SampleTransform {
     __obj.asInstanceOf[SampleTransform]
   }
   
-  extension [Self <: SampleTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SampleTransform] (val x: Self) extends AnyVal {
     
     inline def setSample(value: Double): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
   }

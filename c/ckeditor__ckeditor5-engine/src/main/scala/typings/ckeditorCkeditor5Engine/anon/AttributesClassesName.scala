@@ -26,7 +26,8 @@ object AttributesClassesName {
     __obj.asInstanceOf[AttributesClassesName]
   }
   
-  extension [Self <: AttributesClassesName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributesClassesName] (val x: Self) extends AnyVal {
     
     inline def setAttributes(
       value: (js.Array[`15` | js.RegExp | String]) | Boolean | String | js.RegExp | (Record[String, String | js.RegExp | Boolean | Double])

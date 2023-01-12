@@ -295,7 +295,8 @@ object ClientBatchStatus {
       __obj.asInstanceOf[IInvalidTransaction]
     }
     
-    extension [Self <: IInvalidTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInvalidTransaction] (val x: Self) extends AnyVal {
       
       inline def setExtendedData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "extendedData", value.asInstanceOf[js.Any])
       

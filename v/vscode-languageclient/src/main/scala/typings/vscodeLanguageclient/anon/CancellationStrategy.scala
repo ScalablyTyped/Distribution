@@ -17,7 +17,8 @@ object CancellationStrategy {
     __obj.asInstanceOf[CancellationStrategy]
   }
   
-  extension [Self <: CancellationStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancellationStrategy] (val x: Self) extends AnyVal {
     
     inline def setCancellationStrategy(value: typings.vscodeJsonrpc.libCommonConnectionMod.CancellationStrategy): Self = StObject.set(x, "cancellationStrategy", value.asInstanceOf[js.Any])
     

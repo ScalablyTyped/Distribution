@@ -18,7 +18,8 @@ object TestCustomDataIdentifierResponse {
     __obj.asInstanceOf[TestCustomDataIdentifierResponse]
   }
   
-  extension [Self <: TestCustomDataIdentifierResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestCustomDataIdentifierResponse] (val x: Self) extends AnyVal {
     
     inline def setMatchCount(value: integer): Self = StObject.set(x, "matchCount", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object DatabaseAccessDataSource {
     __obj.asInstanceOf[DatabaseAccessDataSource]
   }
   
-  extension [Self <: DatabaseAccessDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseAccessDataSource] (val x: Self) extends AnyVal {
     
     inline def setPasswordMode(value: RememberAuthentication): Self = StObject.set(x, "PasswordMode", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object LinkFootnote {
     __obj.asInstanceOf[LinkFootnote]
   }
   
-  extension [Self <: LinkFootnote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkFootnote] (val x: Self) extends AnyVal {
     
     inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

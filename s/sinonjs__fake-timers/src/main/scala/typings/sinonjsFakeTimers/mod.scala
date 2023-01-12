@@ -474,7 +474,8 @@ object mod {
       __obj.asInstanceOf[FakeTimerInstallOpts]
     }
     
-    extension [Self <: FakeTimerInstallOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FakeTimerInstallOpts] (val x: Self) extends AnyVal {
       
       inline def setAdvanceTimeDelta(value: Double): Self = StObject.set(x, "advanceTimeDelta", value.asInstanceOf[js.Any])
       
@@ -601,7 +602,8 @@ object mod {
       __obj.asInstanceOf[GlobalTimers[TTimerId]]
     }
     
-    extension [Self <: GlobalTimers[?], TTimerId /* <: TimerId */](x: Self & GlobalTimers[TTimerId]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalTimers[?], TTimerId /* <: TimerId */] (val x: Self & GlobalTimers[TTimerId]) extends AnyVal {
       
       inline def setClearImmediate(value: TTimerId => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
       
@@ -638,7 +640,8 @@ object mod {
       __obj.asInstanceOf[InstalledMethods]
     }
     
-    extension [Self <: InstalledMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstalledMethods] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: js.Array[FakeMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
@@ -702,7 +705,8 @@ object mod {
       __obj.asInstanceOf[NodeTimer]
     }
     
-    extension [Self <: NodeTimer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeTimer] (val x: Self) extends AnyVal {
       
       inline def setRef(value: () => NodeTimer): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
       

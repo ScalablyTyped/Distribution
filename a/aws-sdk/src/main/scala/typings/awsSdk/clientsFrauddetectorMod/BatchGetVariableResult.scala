@@ -23,7 +23,8 @@ object BatchGetVariableResult {
     __obj.asInstanceOf[BatchGetVariableResult]
   }
   
-  extension [Self <: BatchGetVariableResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetVariableResult] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchGetVariableErrorList): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

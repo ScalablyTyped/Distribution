@@ -42,7 +42,8 @@ object IndexCreationQuery {
     __obj.asInstanceOf[IndexCreationQuery]
   }
   
-  extension [Self <: IndexCreationQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexCreationQuery] (val x: Self) extends AnyVal {
     
     inline def setFulltext(value: () => IndexCreationQuery): Self = StObject.set(x, "fulltext", js.Any.fromFunction0(value))
     

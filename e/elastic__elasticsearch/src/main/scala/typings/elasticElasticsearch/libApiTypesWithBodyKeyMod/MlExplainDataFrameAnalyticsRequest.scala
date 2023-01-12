@@ -21,7 +21,8 @@ object MlExplainDataFrameAnalyticsRequest {
     __obj.asInstanceOf[MlExplainDataFrameAnalyticsRequest]
   }
   
-  extension [Self <: MlExplainDataFrameAnalyticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlExplainDataFrameAnalyticsRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Allowlazystart): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

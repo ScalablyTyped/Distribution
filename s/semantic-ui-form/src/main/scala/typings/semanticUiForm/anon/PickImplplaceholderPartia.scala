@@ -25,7 +25,8 @@ object PickImplplaceholderPartia {
     __obj.asInstanceOf[PickImplplaceholderPartia]
   }
   
-  extension [Self <: PickImplplaceholderPartia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplplaceholderPartia] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

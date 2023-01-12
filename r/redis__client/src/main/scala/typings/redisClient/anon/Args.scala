@@ -19,7 +19,8 @@ object Args {
     __obj.asInstanceOf[Args[T]]
   }
   
-  extension [Self <: Args[?], T](x: Self & Args[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Args[?], T] (val x: Self & Args[T]) extends AnyVal {
     
     inline def setArgs(value: RedisCommandArguments): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

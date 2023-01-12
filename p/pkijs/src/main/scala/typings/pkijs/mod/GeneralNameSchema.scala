@@ -16,7 +16,8 @@ object GeneralNameSchema {
     __obj.asInstanceOf[GeneralNameSchema]
   }
   
-  extension [Self <: GeneralNameSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralNameSchema] (val x: Self) extends AnyVal {
     
     inline def setNames(value: BuiltInStandardAttributes): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     

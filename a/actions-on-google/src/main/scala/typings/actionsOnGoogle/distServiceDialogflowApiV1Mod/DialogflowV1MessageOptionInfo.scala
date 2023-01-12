@@ -17,7 +17,8 @@ object DialogflowV1MessageOptionInfo {
     __obj.asInstanceOf[DialogflowV1MessageOptionInfo]
   }
   
-  extension [Self <: DialogflowV1MessageOptionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1MessageOptionInfo] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

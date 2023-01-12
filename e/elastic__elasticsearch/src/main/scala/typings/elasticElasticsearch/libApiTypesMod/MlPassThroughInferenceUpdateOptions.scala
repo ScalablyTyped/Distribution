@@ -17,7 +17,8 @@ object MlPassThroughInferenceUpdateOptions {
     __obj.asInstanceOf[MlPassThroughInferenceUpdateOptions]
   }
   
-  extension [Self <: MlPassThroughInferenceUpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPassThroughInferenceUpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setResults_field(value: String): Self = StObject.set(x, "results_field", value.asInstanceOf[js.Any])
     

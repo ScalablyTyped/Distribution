@@ -25,7 +25,8 @@ object GetProps {
     __obj.asInstanceOf[GetProps]
   }
   
-  extension [Self <: GetProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProps] (val x: Self) extends AnyVal {
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

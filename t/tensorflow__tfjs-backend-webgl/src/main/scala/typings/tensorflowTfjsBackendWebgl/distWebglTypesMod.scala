@@ -47,7 +47,8 @@ object distWebglTypesMod {
       __obj.asInstanceOf[WebGL1DisjointQueryTimerExtension]
     }
     
-    extension [Self <: WebGL1DisjointQueryTimerExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGL1DisjointQueryTimerExtension] (val x: Self) extends AnyVal {
       
       inline def setBeginQueryEXT(value: (Double, WebGLQuery) => Unit): Self = StObject.set(x, "beginQueryEXT", js.Any.fromFunction2(value))
       
@@ -84,7 +85,8 @@ object distWebglTypesMod {
       __obj.asInstanceOf[WebGL2DisjointQueryTimerExtension]
     }
     
-    extension [Self <: WebGL2DisjointQueryTimerExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGL2DisjointQueryTimerExtension] (val x: Self) extends AnyVal {
       
       inline def setGPU_DISJOINT_EXT(value: Double): Self = StObject.set(x, "GPU_DISJOINT_EXT", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object distWebglTypesMod {
       __obj.asInstanceOf[WebGLContextAttributes]
     }
     
-    extension [Self <: WebGLContextAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLContextAttributes] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -158,7 +161,8 @@ object distWebglTypesMod {
       __obj.asInstanceOf[WebGLParallelCompilationExtension]
     }
     
-    extension [Self <: WebGLParallelCompilationExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLParallelCompilationExtension] (val x: Self) extends AnyVal {
       
       inline def setCOMPLETION_STATUS_KHR(value: Double): Self = StObject.set(x, "COMPLETION_STATUS_KHR", value.asInstanceOf[js.Any])
     }

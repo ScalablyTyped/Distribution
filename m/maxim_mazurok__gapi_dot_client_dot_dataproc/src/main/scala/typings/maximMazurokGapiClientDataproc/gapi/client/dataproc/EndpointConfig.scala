@@ -21,7 +21,8 @@ object EndpointConfig {
     __obj.asInstanceOf[EndpointConfig]
   }
   
-  extension [Self <: EndpointConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableHttpPortAccess(value: Boolean): Self = StObject.set(x, "enableHttpPortAccess", value.asInstanceOf[js.Any])
     

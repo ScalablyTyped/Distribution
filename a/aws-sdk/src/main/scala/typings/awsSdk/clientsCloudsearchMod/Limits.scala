@@ -17,7 +17,8 @@ object Limits {
     __obj.asInstanceOf[Limits]
   }
   
-  extension [Self <: Limits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Limits] (val x: Self) extends AnyVal {
     
     inline def setMaximumPartitionCount(value: MaximumPartitionCount): Self = StObject.set(x, "MaximumPartitionCount", value.asInstanceOf[js.Any])
     

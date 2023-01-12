@@ -16,7 +16,8 @@ object CopyLogEntriesResponse {
     __obj.asInstanceOf[CopyLogEntriesResponse]
   }
   
-  extension [Self <: CopyLogEntriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyLogEntriesResponse] (val x: Self) extends AnyVal {
     
     inline def setLogEntriesCopiedCount(value: String): Self = StObject.set(x, "logEntriesCopiedCount", value.asInstanceOf[js.Any])
     

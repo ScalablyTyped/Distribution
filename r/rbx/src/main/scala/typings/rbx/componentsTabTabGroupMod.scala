@@ -97,7 +97,8 @@ object componentsTabTabGroupMod {
       __obj.asInstanceOf[TabGroupModifierProps]
     }
     
-    extension [Self <: TabGroupModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabGroupModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object componentsTabTabGroupMod {
       __obj.asInstanceOf[TabGroupProps]
     }
     
-    extension [Self <: TabGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -385,7 +387,8 @@ object componentsTabTabGroupMod {
       __obj.asInstanceOf[TabGroupVariables]
     }
     
-    extension [Self <: TabGroupVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabGroupVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       
@@ -414,7 +417,8 @@ object componentsTabTabGroupMod {
       __obj.asInstanceOf[TabGroupVariablesDefaults]
     }
     
-    extension [Self <: TabGroupVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabGroupVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       

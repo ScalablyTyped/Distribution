@@ -407,7 +407,8 @@ object extensionsMod {
         __obj.asInstanceOf[JQueryAriaClickOptions]
       }
       
-      extension [Self <: JQueryAriaClickOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQueryAriaClickOptions] (val x: Self) extends AnyVal {
         
         inline def setControls(value: java.lang.String): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
         
@@ -458,7 +459,8 @@ object extensionsMod {
         __obj.asInstanceOf[JQueryStatic]
       }
       
-      extension [Self <: JQueryStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
         
         inline def setWiki(value: /* repeated */ java.lang.String => Unit): Self = StObject.set(x, "wiki", js.Any.fromFunction1(value))
       }
@@ -540,7 +542,8 @@ object extensionsMod {
         __obj.asInstanceOf[Number]
       }
       
-      extension [Self <: Number](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
         
         inline def setClamp(value: (Double, Double) => Double): Self = StObject.set(x, "clamp", js.Any.fromFunction2(value))
       }
@@ -674,7 +677,8 @@ object extensionsMod {
         __obj.asInstanceOf[RegExpConstructor]
       }
       
-      extension [Self <: RegExpConstructor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegExpConstructor] (val x: Self) extends AnyVal {
         
         inline def setEscape(value: java.lang.String => java.lang.String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       }
@@ -748,7 +752,8 @@ object extensionsMod {
         __obj.asInstanceOf[StringConstructor]
       }
       
-      extension [Self <: StringConstructor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StringConstructor] (val x: Self) extends AnyVal {
         
         inline def setFormat(value: (java.lang.String, /* repeated */ Any) => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       }

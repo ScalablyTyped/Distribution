@@ -18,7 +18,8 @@ object ConfigurationManagerCollectionAssignmentTarget {
     __obj.asInstanceOf[ConfigurationManagerCollectionAssignmentTarget]
   }
   
-  extension [Self <: ConfigurationManagerCollectionAssignmentTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationManagerCollectionAssignmentTarget] (val x: Self) extends AnyVal {
     
     inline def setCollectionId(value: NullableOption[String]): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     

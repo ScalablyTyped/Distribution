@@ -21,7 +21,8 @@ object ForParseResult {
     __obj.asInstanceOf[ForParseResult]
   }
   
-  extension [Self <: ForParseResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForParseResult] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: ExpressionNode): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

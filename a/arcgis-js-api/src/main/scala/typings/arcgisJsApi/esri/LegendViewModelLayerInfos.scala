@@ -27,7 +27,8 @@ object LegendViewModelLayerInfos {
     __obj.asInstanceOf[LegendViewModelLayerInfos]
   }
   
-  extension [Self <: LegendViewModelLayerInfos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendViewModelLayerInfos] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

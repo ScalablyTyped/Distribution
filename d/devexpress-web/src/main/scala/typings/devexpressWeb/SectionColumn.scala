@@ -26,7 +26,8 @@ object SectionColumn {
     __obj.asInstanceOf[SectionColumn]
   }
   
-  extension [Self <: SectionColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionColumn] (val x: Self) extends AnyVal {
     
     inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ComparedSourceImageFace {
     __obj.asInstanceOf[ComparedSourceImageFace]
   }
   
-  extension [Self <: ComparedSourceImageFace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComparedSourceImageFace] (val x: Self) extends AnyVal {
     
     inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     

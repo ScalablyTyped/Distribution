@@ -26,7 +26,8 @@ object pinCodeTypesMod {
       __obj.asInstanceOf[ChangeEvent]
     }
     
-    extension [Self <: ChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object pinCodeTypesMod {
       __obj.asInstanceOf[PinCodeOverrides]
     }
     
-    extension [Self <: PinCodeOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinCodeOverrides] (val x: Self) extends AnyVal {
       
       inline def setInput(value: Override[Any]): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object pinCodeTypesMod {
       __obj.asInstanceOf[PinCodeProps]
     }
     
-    extension [Self <: PinCodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinCodeProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
@@ -213,7 +216,8 @@ object pinCodeTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setHasFocus(value: Boolean): Self = StObject.set(x, "hasFocus", value.asInstanceOf[js.Any])
     }
@@ -261,7 +265,8 @@ object pinCodeTypesMod {
       __obj.asInstanceOf[StatefulPinCodeContainerProps]
     }
     
-    extension [Self <: StatefulPinCodeContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulPinCodeContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: PinCodeProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -284,7 +289,8 @@ object pinCodeTypesMod {
       __obj.asInstanceOf[StatefulPinCodeContainerState]
     }
     
-    extension [Self <: StatefulPinCodeContainerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulPinCodeContainerState] (val x: Self) extends AnyVal {
       
       inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
@@ -321,7 +327,8 @@ object pinCodeTypesMod {
       __obj.asInstanceOf[StatefulPinCodeProps]
     }
     
-    extension [Self <: StatefulPinCodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulPinCodeProps] (val x: Self) extends AnyVal {
       
       inline def setInitialState(value: StatefulPinCodeContainerState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       

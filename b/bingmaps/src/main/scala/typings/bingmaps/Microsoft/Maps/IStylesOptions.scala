@@ -22,7 +22,8 @@ object IStylesOptions {
     __obj.asInstanceOf[IStylesOptions]
   }
   
-  extension [Self <: IStylesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStylesOptions] (val x: Self) extends AnyVal {
     
     inline def setPolygonOptions(value: IPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
     

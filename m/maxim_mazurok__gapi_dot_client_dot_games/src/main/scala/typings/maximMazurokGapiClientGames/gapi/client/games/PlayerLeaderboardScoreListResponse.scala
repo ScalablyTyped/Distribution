@@ -25,7 +25,8 @@ object PlayerLeaderboardScoreListResponse {
     __obj.asInstanceOf[PlayerLeaderboardScoreListResponse]
   }
   
-  extension [Self <: PlayerLeaderboardScoreListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerLeaderboardScoreListResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[PlayerLeaderboardScore]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

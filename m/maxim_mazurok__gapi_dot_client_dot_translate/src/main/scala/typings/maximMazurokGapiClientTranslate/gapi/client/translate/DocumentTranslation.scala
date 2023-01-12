@@ -25,7 +25,8 @@ object DocumentTranslation {
     __obj.asInstanceOf[DocumentTranslation]
   }
   
-  extension [Self <: DocumentTranslation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentTranslation] (val x: Self) extends AnyVal {
     
     inline def setByteStreamOutputs(value: js.Array[String]): Self = StObject.set(x, "byteStreamOutputs", value.asInstanceOf[js.Any])
     

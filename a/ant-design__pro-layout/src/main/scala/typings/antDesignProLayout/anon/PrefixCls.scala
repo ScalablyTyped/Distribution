@@ -18,7 +18,8 @@ object PrefixCls {
     __obj.asInstanceOf[PrefixCls]
   }
   
-  extension [Self <: PrefixCls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrefixCls] (val x: Self) extends AnyVal {
     
     inline def setAppList(value: AppsLogoComponentsAppList): Self = StObject.set(x, "appList", value.asInstanceOf[js.Any])
     

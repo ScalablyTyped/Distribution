@@ -129,7 +129,8 @@ object libMapFeaturesMod {
       __obj.asInstanceOf[CorridorOptions]
     }
     
-    extension [Self <: CorridorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CorridorOptions] (val x: Self) extends AnyVal {
       
       inline def setCorridorLength(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "corridorLength", value.asInstanceOf[js.Any])
     }
@@ -159,7 +160,8 @@ object libMapFeaturesMod {
       __obj.asInstanceOf[Feature]
     }
     
-    extension [Self <: Feature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: DigCallback => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -180,7 +182,8 @@ object libMapFeaturesMod {
       __obj.asInstanceOf[FeatureConstructor]
     }
     
-    extension [Self <: FeatureConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureConstructor] (val x: Self) extends AnyVal {
       
       inline def setCreateRandomAt(value: (Double, Double, Double, Double, FeatureOptions) => Feature): Self = StObject.set(x, "createRandomAt", js.Any.fromFunction5(value))
     }
@@ -215,7 +218,8 @@ object libMapFeaturesMod {
       __obj.asInstanceOf[RoomOptions]
     }
     
-    extension [Self <: RoomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomOptions] (val x: Self) extends AnyVal {
       
       inline def setRoomHeight(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomHeight", value.asInstanceOf[js.Any])
       

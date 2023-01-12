@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[InitSettings]
     }
     
-    extension [Self <: InitSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitSettings] (val x: Self) extends AnyVal {
       
       inline def setAbove(value: String | Boolean): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
       __obj.asInstanceOf[MenuObject]
     }
     
-    extension [Self <: MenuObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuObject] (val x: Self) extends AnyVal {
       
       inline def setAction(value: /* e */ Event => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       

@@ -19,7 +19,8 @@ object DropDatabaseOptions {
     __obj.asInstanceOf[DropDatabaseOptions]
   }
   
-  extension [Self <: DropDatabaseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDatabaseOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: DatabaseOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

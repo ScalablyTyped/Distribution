@@ -19,7 +19,8 @@ object BLimitToList {
     __obj.asInstanceOf[BLimitToList]
   }
   
-  extension [Self <: BLimitToList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BLimitToList] (val x: Self) extends AnyVal {
     
     inline def setBLimitToList(value: Boolean): Self = StObject.set(x, "bLimitToList", value.asInstanceOf[js.Any])
     

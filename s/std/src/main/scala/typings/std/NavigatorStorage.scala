@@ -17,7 +17,8 @@ object NavigatorStorage {
     __obj.asInstanceOf[NavigatorStorage]
   }
   
-  extension [Self <: NavigatorStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorStorage] (val x: Self) extends AnyVal {
     
     inline def setStorage(value: StorageManager): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
   }

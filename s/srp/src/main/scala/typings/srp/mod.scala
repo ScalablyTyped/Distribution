@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Params_]
     }
     
-    extension [Self <: Params_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params_] (val x: Self) extends AnyVal {
       
       inline def setG(value: typings.bignum.mod.^): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object IIndexStateEnum {
     __obj.asInstanceOf[IIndexStateEnum]
   }
   
-  extension [Self <: IIndexStateEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIndexStateEnum] (val x: Self) extends AnyVal {
     
     inline def setCREATING(value: IndexState): Self = StObject.set(x, "CREATING", value.asInstanceOf[js.Any])
     

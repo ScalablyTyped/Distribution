@@ -19,7 +19,8 @@ object MetricCompatibility {
     __obj.asInstanceOf[MetricCompatibility]
   }
   
-  extension [Self <: MetricCompatibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricCompatibility] (val x: Self) extends AnyVal {
     
     inline def setCompatibility(value: String): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
     

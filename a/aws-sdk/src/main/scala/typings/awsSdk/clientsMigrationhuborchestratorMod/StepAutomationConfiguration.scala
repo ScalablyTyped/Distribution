@@ -38,7 +38,8 @@ object StepAutomationConfiguration {
     __obj.asInstanceOf[StepAutomationConfiguration]
   }
   
-  extension [Self <: StepAutomationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepAutomationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: PlatformCommand): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

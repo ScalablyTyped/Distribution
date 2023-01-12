@@ -16,7 +16,8 @@ object ScanRunWarningTrace {
     __obj.asInstanceOf[ScanRunWarningTrace]
   }
   
-  extension [Self <: ScanRunWarningTrace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanRunWarningTrace] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

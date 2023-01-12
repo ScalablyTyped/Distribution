@@ -17,7 +17,8 @@ object MulticastMessage {
     __obj.asInstanceOf[MulticastMessage]
   }
   
-  extension [Self <: MulticastMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MulticastMessage] (val x: Self) extends AnyVal {
     
     inline def setTokens(value: js.Array[String]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     

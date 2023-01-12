@@ -38,7 +38,8 @@ object PackageImportJobOutput {
     __obj.asInstanceOf[PackageImportJobOutput]
   }
   
-  extension [Self <: PackageImportJobOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageImportJobOutput] (val x: Self) extends AnyVal {
     
     inline def setOutputS3Location(value: OutPutS3Location): Self = StObject.set(x, "OutputS3Location", value.asInstanceOf[js.Any])
     

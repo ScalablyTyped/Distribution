@@ -18,7 +18,8 @@ object CreateDomainEntryResult {
     __obj.asInstanceOf[CreateDomainEntryResult]
   }
   
-  extension [Self <: CreateDomainEntryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDomainEntryResult] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

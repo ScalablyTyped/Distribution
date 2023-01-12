@@ -48,7 +48,8 @@ object SupportedLanguages {
     __obj.asInstanceOf[SupportedLanguages]
   }
   
-  extension [Self <: SupportedLanguages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportedLanguages] (val x: Self) extends AnyVal {
     
     inline def setLanguages(
       value: js.Array[

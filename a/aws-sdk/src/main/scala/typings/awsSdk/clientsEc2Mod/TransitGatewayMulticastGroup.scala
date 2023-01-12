@@ -68,7 +68,8 @@ object TransitGatewayMulticastGroup {
     __obj.asInstanceOf[TransitGatewayMulticastGroup]
   }
   
-  extension [Self <: TransitGatewayMulticastGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayMulticastGroup] (val x: Self) extends AnyVal {
     
     inline def setGroupIpAddress(value: String): Self = StObject.set(x, "GroupIpAddress", value.asInstanceOf[js.Any])
     

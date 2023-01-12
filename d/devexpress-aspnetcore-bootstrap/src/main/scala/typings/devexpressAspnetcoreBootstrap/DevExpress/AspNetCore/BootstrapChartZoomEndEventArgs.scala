@@ -19,7 +19,8 @@ object BootstrapChartZoomEndEventArgs {
     __obj.asInstanceOf[BootstrapChartZoomEndEventArgs]
   }
   
-  extension [Self <: BootstrapChartZoomEndEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapChartZoomEndEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRangeEnd(value: Any): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PartListElement {
     __obj.asInstanceOf[PartListElement]
   }
   
-  extension [Self <: PartListElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartListElement] (val x: Self) extends AnyVal {
     
     inline def setRangeInBytes(value: String): Self = StObject.set(x, "RangeInBytes", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MUIDataTableCurrentData {
     __obj.asInstanceOf[MUIDataTableCurrentData]
   }
   
-  extension [Self <: MUIDataTableCurrentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableCurrentData] (val x: Self) extends AnyVal {
     
     inline def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
     

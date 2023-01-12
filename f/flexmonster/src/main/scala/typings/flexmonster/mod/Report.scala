@@ -32,7 +32,8 @@ object Report {
     __obj.asInstanceOf[Report]
   }
   
-  extension [Self <: Report](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
     
     inline def setConditions(value: js.Array[ConditionalFormat]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     

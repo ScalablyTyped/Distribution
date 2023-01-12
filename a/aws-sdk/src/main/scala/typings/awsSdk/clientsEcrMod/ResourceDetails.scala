@@ -18,7 +18,8 @@ object ResourceDetails {
     __obj.asInstanceOf[ResourceDetails]
   }
   
-  extension [Self <: ResourceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDetails] (val x: Self) extends AnyVal {
     
     inline def setAwsEcrContainerImage(value: AwsEcrContainerImageDetails): Self = StObject.set(x, "awsEcrContainerImage", value.asInstanceOf[js.Any])
     

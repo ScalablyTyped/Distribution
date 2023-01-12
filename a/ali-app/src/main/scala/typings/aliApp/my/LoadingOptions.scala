@@ -25,7 +25,8 @@ object LoadingOptions {
     __obj.asInstanceOf[LoadingOptions]
   }
   
-  extension [Self <: LoadingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadingOptions] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

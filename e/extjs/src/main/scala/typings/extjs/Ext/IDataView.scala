@@ -34,7 +34,8 @@ object IDataView {
     __obj.asInstanceOf[IDataView]
   }
   
-  extension [Self <: IDataView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataView] (val x: Self) extends AnyVal {
     
     inline def setClearHighlight(value: () => Unit): Self = StObject.set(x, "clearHighlight", js.Any.fromFunction0(value))
     

@@ -22,7 +22,8 @@ object PlusUnaryOpAst {
     __obj.asInstanceOf[PlusUnaryOpAst]
   }
   
-  extension [Self <: PlusUnaryOpAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusUnaryOpAst] (val x: Self) extends AnyVal {
     
     inline def setType(value: PLUS_UNARY_OP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -82,7 +82,8 @@ object libMenufactoryMod {
         __obj.asInstanceOf[IMenuOptions]
       }
       
-      extension [Self <: IMenuOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IMenuOptions] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         

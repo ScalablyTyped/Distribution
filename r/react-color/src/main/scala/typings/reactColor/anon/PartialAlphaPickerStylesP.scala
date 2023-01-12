@@ -19,7 +19,8 @@ object PartialAlphaPickerStylesP {
     __obj.asInstanceOf[PartialAlphaPickerStylesP]
   }
   
-  extension [Self <: PartialAlphaPickerStylesP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAlphaPickerStylesP] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: CSSProperties): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

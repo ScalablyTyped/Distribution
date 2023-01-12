@@ -57,7 +57,8 @@ object CoreTextFormatUpdatingEventArgs {
     __obj.asInstanceOf[CoreTextFormatUpdatingEventArgs]
   }
   
-  extension [Self <: CoreTextFormatUpdatingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTextFormatUpdatingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: UIElementType): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

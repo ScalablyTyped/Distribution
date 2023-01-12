@@ -22,7 +22,8 @@ object DatabaseCreateParams {
     __obj.asInstanceOf[DatabaseCreateParams]
   }
   
-  extension [Self <: DatabaseCreateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseCreateParams] (val x: Self) extends AnyVal {
     
     inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     

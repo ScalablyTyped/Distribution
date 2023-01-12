@@ -19,7 +19,8 @@ object GoogleCloudVideointelligenceV1beta2LabelSegment {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2LabelSegment]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1beta2LabelSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2LabelSegment] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object EdgeOutputConfig {
     __obj.asInstanceOf[EdgeOutputConfig]
   }
   
-  extension [Self <: EdgeOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

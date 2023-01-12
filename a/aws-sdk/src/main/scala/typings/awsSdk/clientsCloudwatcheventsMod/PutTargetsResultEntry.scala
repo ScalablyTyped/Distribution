@@ -28,7 +28,8 @@ object PutTargetsResultEntry {
     __obj.asInstanceOf[PutTargetsResultEntry]
   }
   
-  extension [Self <: PutTargetsResultEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutTargetsResultEntry] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

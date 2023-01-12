@@ -33,7 +33,8 @@ object SearchChannelsRequest {
     __obj.asInstanceOf[SearchChannelsRequest]
   }
   
-  extension [Self <: SearchChannelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchChannelsRequest] (val x: Self) extends AnyVal {
     
     inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
     

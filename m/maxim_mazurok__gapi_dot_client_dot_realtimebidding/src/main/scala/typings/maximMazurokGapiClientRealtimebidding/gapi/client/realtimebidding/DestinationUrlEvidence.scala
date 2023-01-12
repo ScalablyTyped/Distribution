@@ -16,7 +16,8 @@ object DestinationUrlEvidence {
     __obj.asInstanceOf[DestinationUrlEvidence]
   }
   
-  extension [Self <: DestinationUrlEvidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationUrlEvidence] (val x: Self) extends AnyVal {
     
     inline def setDestinationUrl(value: String): Self = StObject.set(x, "destinationUrl", value.asInstanceOf[js.Any])
     

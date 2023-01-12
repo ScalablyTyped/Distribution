@@ -55,7 +55,8 @@ object AnomalyMonitor {
     __obj.asInstanceOf[AnomalyMonitor]
   }
   
-  extension [Self <: AnomalyMonitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnomalyMonitor] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: YearMonthDay): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

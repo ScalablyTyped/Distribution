@@ -78,7 +78,8 @@ object IsUpdating {
     __obj.asInstanceOf[IsUpdating]
   }
   
-  extension [Self <: IsUpdating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsUpdating] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

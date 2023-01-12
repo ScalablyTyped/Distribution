@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[HoganOptionsasStringfalse]
     }
     
-    extension [Self <: HoganOptionsasStringfalse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoganOptionsasStringfalse] (val x: Self) extends AnyVal {
       
       inline def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object anon {
       __obj.asInstanceOf[HoganOptionsasStringtrue]
     }
     
-    extension [Self <: HoganOptionsasStringtrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoganOptionsasStringtrue] (val x: Self) extends AnyVal {
       
       inline def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       

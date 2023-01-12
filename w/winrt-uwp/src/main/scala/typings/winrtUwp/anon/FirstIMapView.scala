@@ -19,7 +19,8 @@ object FirstIMapView {
     __obj.asInstanceOf[FirstIMapView]
   }
   
-  extension [Self <: FirstIMapView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstIMapView] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: IMapView[String, ResourceMap]): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

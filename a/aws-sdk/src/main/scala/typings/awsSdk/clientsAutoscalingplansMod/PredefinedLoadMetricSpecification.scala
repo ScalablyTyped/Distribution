@@ -23,7 +23,8 @@ object PredefinedLoadMetricSpecification {
     __obj.asInstanceOf[PredefinedLoadMetricSpecification]
   }
   
-  extension [Self <: PredefinedLoadMetricSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredefinedLoadMetricSpecification] (val x: Self) extends AnyVal {
     
     inline def setPredefinedLoadMetricType(value: LoadMetricType): Self = StObject.set(x, "PredefinedLoadMetricType", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object EnableMask {
     __obj.asInstanceOf[EnableMask]
   }
   
-  extension [Self <: EnableMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableMask] (val x: Self) extends AnyVal {
     
     inline def setEnableMask(value: Boolean): Self = StObject.set(x, "enableMask", value.asInstanceOf[js.Any])
     

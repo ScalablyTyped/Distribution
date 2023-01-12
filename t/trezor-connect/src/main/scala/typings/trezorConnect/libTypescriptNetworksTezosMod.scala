@@ -21,7 +21,8 @@ object libTypescriptNetworksTezosMod {
       __obj.asInstanceOf[TezosAddress]
     }
     
-    extension [Self <: TezosAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TezosAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object libTypescriptNetworksTezosMod {
       __obj.asInstanceOf[TezosDelegationOperation]
     }
     
-    extension [Self <: TezosDelegationOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TezosDelegationOperation] (val x: Self) extends AnyVal {
       
       inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object libTypescriptNetworksTezosMod {
       __obj.asInstanceOf[TezosGetAddress]
     }
     
-    extension [Self <: TezosGetAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TezosGetAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object libTypescriptNetworksTezosMod {
       __obj.asInstanceOf[TezosGetPublicKey]
     }
     
-    extension [Self <: TezosGetPublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TezosGetPublicKey] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String | js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -146,7 +150,8 @@ object libTypescriptNetworksTezosMod {
       __obj.asInstanceOf[TezosManagerTransfer]
     }
     
-    extension [Self <: TezosManagerTransfer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TezosManagerTransfer] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -171,7 +176,8 @@ object libTypescriptNetworksTezosMod {
       __obj.asInstanceOf[TezosOperation]
     }
     
-    extension [Self <: TezosOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TezosOperation] (val x: Self) extends AnyVal {
       
       inline def setDelegation(value: TezosDelegationOperation): Self = StObject.set(x, "delegation", value.asInstanceOf[js.Any])
       
@@ -224,7 +230,8 @@ object libTypescriptNetworksTezosMod {
       __obj.asInstanceOf[TezosOriginationOperation]
     }
     
-    extension [Self <: TezosOriginationOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TezosOriginationOperation] (val x: Self) extends AnyVal {
       
       inline def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
       
@@ -263,7 +270,8 @@ object libTypescriptNetworksTezosMod {
       __obj.asInstanceOf[TezosParametersManager]
     }
     
-    extension [Self <: TezosParametersManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TezosParametersManager] (val x: Self) extends AnyVal {
       
       inline def setCancel_delegate(value: Boolean): Self = StObject.set(x, "cancel_delegate", value.asInstanceOf[js.Any])
       
@@ -294,7 +302,8 @@ object libTypescriptNetworksTezosMod {
       __obj.asInstanceOf[TezosPublicKey]
     }
     
-    extension [Self <: TezosPublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TezosPublicKey] (val x: Self) extends AnyVal {
       
       inline def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -334,7 +343,8 @@ object libTypescriptNetworksTezosMod {
       __obj.asInstanceOf[TezosRevealOperation]
     }
     
-    extension [Self <: TezosRevealOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TezosRevealOperation] (val x: Self) extends AnyVal {
       
       inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
@@ -365,7 +375,8 @@ object libTypescriptNetworksTezosMod {
       __obj.asInstanceOf[TezosSignTransaction]
     }
     
-    extension [Self <: TezosSignTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TezosSignTransaction] (val x: Self) extends AnyVal {
       
       inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
@@ -412,7 +423,8 @@ object libTypescriptNetworksTezosMod {
       __obj.asInstanceOf[TezosTransactionOperation]
     }
     
-    extension [Self <: TezosTransactionOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TezosTransactionOperation] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       

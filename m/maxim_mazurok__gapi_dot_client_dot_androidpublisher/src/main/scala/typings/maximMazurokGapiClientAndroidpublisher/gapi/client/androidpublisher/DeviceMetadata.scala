@@ -46,7 +46,8 @@ object DeviceMetadata {
     __obj.asInstanceOf[DeviceMetadata]
   }
   
-  extension [Self <: DeviceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceMetadata] (val x: Self) extends AnyVal {
     
     inline def setCpuMake(value: String): Self = StObject.set(x, "cpuMake", value.asInstanceOf[js.Any])
     

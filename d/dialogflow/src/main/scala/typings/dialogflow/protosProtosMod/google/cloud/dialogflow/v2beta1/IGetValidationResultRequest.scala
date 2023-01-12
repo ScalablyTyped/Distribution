@@ -20,7 +20,8 @@ object IGetValidationResultRequest {
     __obj.asInstanceOf[IGetValidationResultRequest]
   }
   
-  extension [Self <: IGetValidationResultRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGetValidationResultRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

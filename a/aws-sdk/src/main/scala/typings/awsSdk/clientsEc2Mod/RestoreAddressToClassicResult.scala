@@ -23,7 +23,8 @@ object RestoreAddressToClassicResult {
     __obj.asInstanceOf[RestoreAddressToClassicResult]
   }
   
-  extension [Self <: RestoreAddressToClassicResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreAddressToClassicResult] (val x: Self) extends AnyVal {
     
     inline def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     

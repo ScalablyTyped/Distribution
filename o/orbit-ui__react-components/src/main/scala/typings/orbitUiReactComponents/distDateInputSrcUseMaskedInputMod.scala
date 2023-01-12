@@ -27,7 +27,8 @@ object distDateInputSrcUseMaskedInputMod {
       __obj.asInstanceOf[UseMaskedInputProps]
     }
     
-    extension [Self <: UseMaskedInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseMaskedInputProps] (val x: Self) extends AnyVal {
       
       inline def setInputElement(value: HTMLInputElement): Self = StObject.set(x, "inputElement", value.asInstanceOf[js.Any])
       

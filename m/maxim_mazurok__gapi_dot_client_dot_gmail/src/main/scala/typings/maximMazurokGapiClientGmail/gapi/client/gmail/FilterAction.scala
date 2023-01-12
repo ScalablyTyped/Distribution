@@ -22,7 +22,8 @@ object FilterAction {
     __obj.asInstanceOf[FilterAction]
   }
   
-  extension [Self <: FilterAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterAction] (val x: Self) extends AnyVal {
     
     inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
     

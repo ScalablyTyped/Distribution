@@ -95,7 +95,8 @@ object FindPathOpts {
     __obj.asInstanceOf[FindPathOpts]
   }
   
-  extension [Self <: FindPathOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindPathOpts] (val x: Self) extends AnyVal {
     
     inline def setAvoid(value: js.Array[Any | RoomPosition]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
     

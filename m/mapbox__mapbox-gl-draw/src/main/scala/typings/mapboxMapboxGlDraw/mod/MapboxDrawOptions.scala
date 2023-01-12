@@ -36,7 +36,8 @@ object MapboxDrawOptions {
     __obj.asInstanceOf[MapboxDrawOptions]
   }
   
-  extension [Self <: MapboxDrawOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapboxDrawOptions] (val x: Self) extends AnyVal {
     
     inline def setBoxSelect(value: Boolean): Self = StObject.set(x, "boxSelect", value.asInstanceOf[js.Any])
     

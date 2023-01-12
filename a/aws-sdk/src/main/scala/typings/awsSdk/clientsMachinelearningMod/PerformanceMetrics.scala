@@ -15,7 +15,8 @@ object PerformanceMetrics {
     __obj.asInstanceOf[PerformanceMetrics]
   }
   
-  extension [Self <: PerformanceMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceMetrics] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: PerformanceMetricsProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     

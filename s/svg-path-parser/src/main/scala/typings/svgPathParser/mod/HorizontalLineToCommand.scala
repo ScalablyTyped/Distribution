@@ -27,7 +27,8 @@ object HorizontalLineToCommand {
     __obj.asInstanceOf[HorizontalLineToCommand]
   }
   
-  extension [Self <: HorizontalLineToCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HorizontalLineToCommand] (val x: Self) extends AnyVal {
     
     inline def setCode(value: h_ | H): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object distSrcTypesMetaJwtPongMod {
       __obj.asInstanceOf[JwtPong]
     }
     
-    extension [Self <: JwtPong](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JwtPong] (val x: Self) extends AnyVal {
       
       inline def setApp_name(value: String): Self = StObject.set(x, "app_name", value.asInstanceOf[js.Any])
       

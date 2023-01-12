@@ -15,7 +15,8 @@ object UserSearchFilter {
     __obj.asInstanceOf[UserSearchFilter]
   }
   
-  extension [Self <: UserSearchFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserSearchFilter] (val x: Self) extends AnyVal {
     
     inline def setTagFilter(value: ControlPlaneTagFilter): Self = StObject.set(x, "TagFilter", value.asInstanceOf[js.Any])
     

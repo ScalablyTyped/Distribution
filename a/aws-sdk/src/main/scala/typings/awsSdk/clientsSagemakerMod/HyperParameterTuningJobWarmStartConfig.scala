@@ -26,7 +26,8 @@ object HyperParameterTuningJobWarmStartConfig {
     __obj.asInstanceOf[HyperParameterTuningJobWarmStartConfig]
   }
   
-  extension [Self <: HyperParameterTuningJobWarmStartConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperParameterTuningJobWarmStartConfig] (val x: Self) extends AnyVal {
     
     inline def setParentHyperParameterTuningJobs(value: ParentHyperParameterTuningJobs): Self = StObject.set(x, "ParentHyperParameterTuningJobs", value.asInstanceOf[js.Any])
     

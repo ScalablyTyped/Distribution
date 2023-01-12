@@ -51,7 +51,8 @@ object TranslateTextRequest {
     __obj.asInstanceOf[TranslateTextRequest]
   }
   
-  extension [Self <: TranslateTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslateTextRequest] (val x: Self) extends AnyVal {
     
     inline def setContents(value: js.Array[String]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

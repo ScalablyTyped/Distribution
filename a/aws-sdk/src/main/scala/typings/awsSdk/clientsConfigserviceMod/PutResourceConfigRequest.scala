@@ -48,7 +48,8 @@ object PutResourceConfigRequest {
     __obj.asInstanceOf[PutResourceConfigRequest]
   }
   
-  extension [Self <: PutResourceConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutResourceConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: Configuration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

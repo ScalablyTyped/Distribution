@@ -140,7 +140,8 @@ object JQueryTimepickerOptions {
     __obj.asInstanceOf[JQueryTimepickerOptions]
   }
   
-  extension [Self <: JQueryTimepickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryTimepickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAppendTo(value: String | (js.Function1[/* clickedElement */ JQuery, JQuery]) | JQuery): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     

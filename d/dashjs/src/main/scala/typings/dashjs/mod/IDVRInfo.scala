@@ -20,7 +20,8 @@ object IDVRInfo {
     __obj.asInstanceOf[IDVRInfo]
   }
   
-  extension [Self <: IDVRInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDVRInfo] (val x: Self) extends AnyVal {
     
     inline def setManifestInfo(value: IManifestInfo): Self = StObject.set(x, "manifestInfo", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object Cloud {
     __obj.asInstanceOf[Cloud]
   }
   
-  extension [Self <: Cloud](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cloud] (val x: Self) extends AnyVal {
     
     inline def setCollection(value: String => js.Object): Self = StObject.set(x, "collection", js.Any.fromFunction1(value))
     

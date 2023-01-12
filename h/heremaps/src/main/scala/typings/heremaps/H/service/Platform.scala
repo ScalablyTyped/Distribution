@@ -165,7 +165,8 @@ object Platform {
       __obj.asInstanceOf[DefaultLayersOptions]
     }
     
-    extension [Self <: DefaultLayersOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultLayersOptions] (val x: Self) extends AnyVal {
       
       inline def setCrossOrigin(value: String | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object Platform {
       __obj.asInstanceOf[MapTypes]
     }
     
-    extension [Self <: MapTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapTypes] (val x: Self) extends AnyVal {
       
       inline def setNormal(value: MapType): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
       
@@ -257,7 +259,8 @@ object Platform {
       __obj.asInstanceOf[typings.heremaps.H.service.Platform.Options]
     }
     
-    extension [Self <: typings.heremaps.H.service.Platform.Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.heremaps.H.service.Platform.Options] (val x: Self) extends AnyVal {
       
       inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
       

@@ -84,7 +84,8 @@ object srcServerMod {
       __obj.asInstanceOf[DefaultBundleOptions]
     }
     
-    extension [Self <: DefaultBundleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultBundleOptions] (val x: Self) extends AnyVal {
       
       inline def setExcludeSource(value: Boolean): Self = StObject.set(x, "excludeSource", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object srcServerMod {
       __obj.asInstanceOf[DefaultGraphOptions]
     }
     
-    extension [Self <: DefaultGraphOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultGraphOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomTransformOptions(value: CustomTransformOptions): Self = StObject.set(x, "customTransformOptions", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object srcServerMod {
       __obj.asInstanceOf[Server]
     }
     
-    extension [Self <: Server](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
@@ -186,7 +189,8 @@ object srcServerMod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setHasReducedPerformance(value: Boolean): Self = StObject.set(x, "hasReducedPerformance", value.asInstanceOf[js.Any])
       

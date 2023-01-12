@@ -53,7 +53,8 @@ object ASPxClientFormLayout {
     __obj.asInstanceOf[ASPxClientFormLayout]
   }
   
-  extension [Self <: ASPxClientFormLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFormLayout] (val x: Self) extends AnyVal {
     
     inline def setBeginUpdate(value: () => Unit): Self = StObject.set(x, "BeginUpdate", js.Any.fromFunction0(value))
     

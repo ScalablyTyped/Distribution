@@ -24,7 +24,8 @@ object IsInterleavedBufferAttribute {
     __obj.asInstanceOf[IsInterleavedBufferAttribute]
   }
   
-  extension [Self <: IsInterleavedBufferAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsInterleavedBufferAttribute] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

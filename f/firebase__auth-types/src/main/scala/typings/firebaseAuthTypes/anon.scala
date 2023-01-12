@@ -42,7 +42,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setDisableWarnings(value: Boolean): Self = StObject.set(x, "disableWarnings", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[BundleId]
     }
     
-    extension [Self <: BundleId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleId] (val x: Self) extends AnyVal {
       
       inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     }
@@ -126,7 +128,8 @@ object anon {
       __obj.asInstanceOf[DisableWarnings]
     }
     
-    extension [Self <: DisableWarnings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisableWarnings] (val x: Self) extends AnyVal {
       
       inline def setDisableWarnings(value: Boolean): Self = StObject.set(x, "disableWarnings", value.asInstanceOf[js.Any])
     }
@@ -145,7 +148,8 @@ object anon {
       __obj.asInstanceOf[DisplayName]
     }
     
-    extension [Self <: DisplayName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -189,7 +193,8 @@ object anon {
       __obj.asInstanceOf[EMAILSIGNIN]
     }
     
-    extension [Self <: EMAILSIGNIN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EMAILSIGNIN] (val x: Self) extends AnyVal {
       
       inline def setEMAIL_SIGNIN(value: Operation): Self = StObject.set(x, "EMAIL_SIGNIN", value.asInstanceOf[js.Any])
       
@@ -222,7 +227,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -265,7 +271,8 @@ object anon {
       __obj.asInstanceOf[InstallApp]
     }
     
-    extension [Self <: InstallApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallApp] (val x: Self) extends AnyVal {
       
       inline def setInstallApp(value: Boolean): Self = StObject.set(x, "installApp", value.asInstanceOf[js.Any])
       
@@ -294,7 +301,8 @@ object anon {
       __obj.asInstanceOf[LOCAL]
     }
     
-    extension [Self <: LOCAL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LOCAL] (val x: Self) extends AnyVal {
       
       inline def setLOCAL(value: Persistence): Self = StObject.set(x, "LOCAL", value.asInstanceOf[js.Any])
       

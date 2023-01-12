@@ -19,7 +19,8 @@ object AllowHalfOpen {
     __obj.asInstanceOf[AllowHalfOpen]
   }
   
-  extension [Self <: AllowHalfOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowHalfOpen] (val x: Self) extends AnyVal {
     
     inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
     

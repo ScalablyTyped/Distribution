@@ -23,7 +23,8 @@ object CreateCustomActionTypeOutput {
     __obj.asInstanceOf[CreateCustomActionTypeOutput]
   }
   
-  extension [Self <: CreateCustomActionTypeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomActionTypeOutput] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: ActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

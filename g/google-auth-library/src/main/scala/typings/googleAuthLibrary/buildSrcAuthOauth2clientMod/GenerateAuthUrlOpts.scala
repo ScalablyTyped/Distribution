@@ -143,7 +143,8 @@ object GenerateAuthUrlOpts {
     __obj.asInstanceOf[GenerateAuthUrlOpts]
   }
   
-  extension [Self <: GenerateAuthUrlOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateAuthUrlOpts] (val x: Self) extends AnyVal {
     
     inline def setAccess_type(value: String): Self = StObject.set(x, "access_type", value.asInstanceOf[js.Any])
     

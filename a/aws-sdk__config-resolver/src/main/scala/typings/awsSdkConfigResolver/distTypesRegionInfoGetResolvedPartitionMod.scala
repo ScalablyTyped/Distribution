@@ -24,7 +24,8 @@ object distTypesRegionInfoGetResolvedPartitionMod {
       __obj.asInstanceOf[GetResolvedPartitionOptions]
     }
     
-    extension [Self <: GetResolvedPartitionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetResolvedPartitionOptions] (val x: Self) extends AnyVal {
       
       inline def setPartitionHash(value: PartitionHash): Self = StObject.set(x, "partitionHash", value.asInstanceOf[js.Any])
     }

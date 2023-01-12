@@ -43,7 +43,8 @@ object AutoTuneStatus {
     __obj.asInstanceOf[AutoTuneStatus]
   }
   
-  extension [Self <: AutoTuneStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoTuneStatus] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

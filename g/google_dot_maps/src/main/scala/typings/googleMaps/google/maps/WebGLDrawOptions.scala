@@ -28,7 +28,8 @@ object WebGLDrawOptions {
     __obj.asInstanceOf[WebGLDrawOptions]
   }
   
-  extension [Self <: WebGLDrawOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLDrawOptions] (val x: Self) extends AnyVal {
     
     inline def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     

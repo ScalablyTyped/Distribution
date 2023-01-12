@@ -23,7 +23,8 @@ object GetFileUploadURLRequest {
     __obj.asInstanceOf[GetFileUploadURLRequest]
   }
   
-  extension [Self <: GetFileUploadURLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFileUploadURLRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
     

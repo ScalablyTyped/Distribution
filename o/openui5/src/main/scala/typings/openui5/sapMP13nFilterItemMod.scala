@@ -284,7 +284,8 @@ object sapMP13nFilterItemMod {
       __obj.asInstanceOf[P13nFilterItemSettings]
     }
     
-    extension [Self <: P13nFilterItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nFilterItemSettings] (val x: Self) extends AnyVal {
       
       inline def setColumnKey(value: String | PropertyBindingInfo): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
       

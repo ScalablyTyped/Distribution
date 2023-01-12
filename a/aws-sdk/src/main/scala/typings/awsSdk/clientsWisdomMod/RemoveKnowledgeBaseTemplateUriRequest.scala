@@ -18,7 +18,8 @@ object RemoveKnowledgeBaseTemplateUriRequest {
     __obj.asInstanceOf[RemoveKnowledgeBaseTemplateUriRequest]
   }
   
-  extension [Self <: RemoveKnowledgeBaseTemplateUriRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveKnowledgeBaseTemplateUriRequest] (val x: Self) extends AnyVal {
     
     inline def setKnowledgeBaseId(value: UuidOrArn): Self = StObject.set(x, "knowledgeBaseId", value.asInstanceOf[js.Any])
   }

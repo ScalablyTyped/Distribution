@@ -51,7 +51,8 @@ object distNodeSrcModelPopupRedirectMod {
       __obj.asInstanceOf[AuthEvent]
     }
     
-    extension [Self <: AuthEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthEvent] (val x: Self) extends AnyVal {
       
       inline def setError(value: AuthEventError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object distNodeSrcModelPopupRedirectMod {
       __obj.asInstanceOf[AuthEventConsumer]
     }
     
-    extension [Self <: AuthEventConsumer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthEventConsumer] (val x: Self) extends AnyVal {
       
       inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object distNodeSrcModelPopupRedirectMod {
       __obj.asInstanceOf[AuthEventError]
     }
     
-    extension [Self <: AuthEventError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthEventError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -188,7 +191,8 @@ object distNodeSrcModelPopupRedirectMod {
       __obj.asInstanceOf[EventManager]
     }
     
-    extension [Self <: EventManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventManager] (val x: Self) extends AnyVal {
       
       inline def setRegisterConsumer(value: AuthEventConsumer => Unit): Self = StObject.set(x, "registerConsumer", js.Any.fromFunction1(value))
       
@@ -210,7 +214,8 @@ object distNodeSrcModelPopupRedirectMod {
       __obj.asInstanceOf[GapiAuthEvent]
     }
     
-    extension [Self <: GapiAuthEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GapiAuthEvent] (val x: Self) extends AnyVal {
       
       inline def setAuthEvent(value: AuthEvent): Self = StObject.set(x, "authEvent", value.asInstanceOf[js.Any])
     }

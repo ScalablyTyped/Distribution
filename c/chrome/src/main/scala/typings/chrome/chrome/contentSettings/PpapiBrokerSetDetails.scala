@@ -21,7 +21,8 @@ object PpapiBrokerSetDetails {
     __obj.asInstanceOf[PpapiBrokerSetDetails]
   }
   
-  extension [Self <: PpapiBrokerSetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PpapiBrokerSetDetails] (val x: Self) extends AnyVal {
     
     inline def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }

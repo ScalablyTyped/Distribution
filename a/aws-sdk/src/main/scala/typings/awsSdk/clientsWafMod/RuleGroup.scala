@@ -28,7 +28,8 @@ object RuleGroup {
     __obj.asInstanceOf[RuleGroup]
   }
   
-  extension [Self <: RuleGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroup] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     

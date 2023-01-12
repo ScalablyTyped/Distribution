@@ -22,7 +22,8 @@ object EncodedVideoChunkInit {
     __obj.asInstanceOf[EncodedVideoChunkInit]
   }
   
-  extension [Self <: EncodedVideoChunkInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodedVideoChunkInit] (val x: Self) extends AnyVal {
     
     inline def setData(value: AllowSharedBufferSource): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

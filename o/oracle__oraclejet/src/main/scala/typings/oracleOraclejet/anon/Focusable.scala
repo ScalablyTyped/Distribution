@@ -20,7 +20,8 @@ object Focusable {
     __obj.asInstanceOf[Focusable[K, D]]
   }
   
-  extension [Self <: Focusable[?, ?], K, D](x: Self & (Focusable[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Focusable[?, ?], K, D] (val x: Self & (Focusable[K, D])) extends AnyVal {
     
     inline def setFocusable(value: (js.Function1[/* param0 */ ItemContext[K, D], Boolean]) | Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     

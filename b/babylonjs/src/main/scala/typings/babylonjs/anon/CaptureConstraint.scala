@@ -21,7 +21,8 @@ object CaptureConstraint {
     __obj.asInstanceOf[CaptureConstraint]
   }
   
-  extension [Self <: CaptureConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptureConstraint] (val x: Self) extends AnyVal {
     
     inline def setCapture(value: Null): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     

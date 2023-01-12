@@ -31,7 +31,8 @@ object TypeofsighashType {
     __obj.asInstanceOf[TypeofsighashType]
   }
   
-  extension [Self <: TypeofsighashType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofsighashType] (val x: Self) extends AnyVal {
     
     inline def setCanAdd(value: (Any, Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     

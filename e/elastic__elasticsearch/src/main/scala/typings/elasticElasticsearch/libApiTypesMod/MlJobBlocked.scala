@@ -17,7 +17,8 @@ object MlJobBlocked {
     __obj.asInstanceOf[MlJobBlocked]
   }
   
-  extension [Self <: MlJobBlocked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlJobBlocked] (val x: Self) extends AnyVal {
     
     inline def setReason(value: MlJobBlockedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

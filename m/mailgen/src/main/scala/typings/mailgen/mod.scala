@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setButton(value: Button): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[Button]
     }
     
-    extension [Self <: Button](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object mod {
       __obj.asInstanceOf[ColumnOptions]
     }
     
-    extension [Self <: ColumnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomAlignment(value: Any): Self = StObject.set(x, "customAlignment", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object mod {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setBody(value: ContentBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
@@ -142,7 +146,8 @@ object mod {
       __obj.asInstanceOf[ContentBody]
     }
     
-    extension [Self <: ContentBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentBody] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Action | js.Array[Action]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -207,7 +212,8 @@ object mod {
       __obj.asInstanceOf[CustomTheme]
     }
     
-    extension [Self <: CustomTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomTheme] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -232,7 +238,8 @@ object mod {
       __obj.asInstanceOf[GoToAction]
     }
     
-    extension [Self <: GoToAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoToAction] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -267,7 +274,8 @@ object mod {
       __obj.asInstanceOf[Mailgen]
     }
     
-    extension [Self <: Mailgen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mailgen] (val x: Self) extends AnyVal {
       
       inline def setCacheThemes(value: () => Unit): Self = StObject.set(x, "cacheThemes", js.Any.fromFunction0(value))
       
@@ -292,7 +300,8 @@ object mod {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setProduct(value: Product): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
@@ -319,7 +328,8 @@ object mod {
       __obj.asInstanceOf[Product]
     }
     
-    extension [Self <: Product](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
       
       inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
@@ -352,7 +362,8 @@ object mod {
       __obj.asInstanceOf[Table]
     }
     
-    extension [Self <: Table](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[ColumnOptions]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

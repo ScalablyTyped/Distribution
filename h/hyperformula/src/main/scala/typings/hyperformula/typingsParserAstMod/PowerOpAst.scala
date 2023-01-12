@@ -20,7 +20,8 @@ object PowerOpAst {
     __obj.asInstanceOf[PowerOpAst]
   }
   
-  extension [Self <: PowerOpAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PowerOpAst] (val x: Self) extends AnyVal {
     
     inline def setType(value: POWER_OP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

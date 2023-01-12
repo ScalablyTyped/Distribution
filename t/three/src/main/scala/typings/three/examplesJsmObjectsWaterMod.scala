@@ -59,7 +59,8 @@ object examplesJsmObjectsWaterMod {
       __obj.asInstanceOf[WaterOptions]
     }
     
-    extension [Self <: WaterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaterOptions] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

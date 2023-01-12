@@ -23,7 +23,8 @@ object GetTempFileURLResultItem {
     __obj.asInstanceOf[GetTempFileURLResultItem]
   }
   
-  extension [Self <: GetTempFileURLResultItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTempFileURLResultItem] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

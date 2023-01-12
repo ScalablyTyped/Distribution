@@ -53,7 +53,8 @@ object libMenuHooksUseItemsMod {
       __obj.asInstanceOf[MenuDividerType]
     }
     
-    extension [Self <: MenuDividerType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuDividerType] (val x: Self) extends AnyVal {
       
       inline def setDashed(value: Boolean): Self = StObject.set(x, "dashed", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object libMenuHooksUseItemsMod {
       __obj.asInstanceOf[MenuItemGroupType]
     }
     
-    extension [Self <: MenuItemGroupType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemGroupType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ItemType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object libMenuHooksUseItemsMod {
       __obj.asInstanceOf[MenuItemType]
     }
     
-    extension [Self <: MenuItemType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemType] (val x: Self) extends AnyVal {
       
       inline def setDanger(value: Boolean): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
       
@@ -202,7 +205,8 @@ object libMenuHooksUseItemsMod {
       __obj.asInstanceOf[SubMenuType]
     }
     
-    extension [Self <: SubMenuType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubMenuType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ItemType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object GetParametersPathTreesha {
     __obj.asInstanceOf[GetParametersPathTreesha]
   }
   
-  extension [Self <: GetParametersPathTreesha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPathTreesha] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPathTreesha): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

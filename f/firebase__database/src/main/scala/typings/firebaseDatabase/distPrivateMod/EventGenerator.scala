@@ -23,7 +23,8 @@ object EventGenerator {
     __obj.asInstanceOf[EventGenerator]
   }
   
-  extension [Self <: EventGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventGenerator] (val x: Self) extends AnyVal {
     
     inline def setIndex_(value: Index): Self = StObject.set(x, "index_", value.asInstanceOf[js.Any])
     

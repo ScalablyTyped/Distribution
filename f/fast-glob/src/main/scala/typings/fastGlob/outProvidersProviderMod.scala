@@ -81,7 +81,8 @@ object outProvidersProviderMod {
       __obj.asInstanceOf[Provider[T]]
     }
     
-    extension [Self <: Provider[?], T](x: Self & Provider[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Provider[?], T] (val x: Self & Provider[T]) extends AnyVal {
       
       inline def setDeepFilter(value: typings.fastGlob.outProvidersFiltersDeepMod.default): Self = StObject.set(x, "deepFilter", value.asInstanceOf[js.Any])
       

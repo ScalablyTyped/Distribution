@@ -65,7 +65,8 @@ object Twitter {
         __obj.asInstanceOf[ClassNames]
       }
       
-      extension [Self <: ClassNames](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClassNames] (val x: Self) extends AnyVal {
         
         inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
         
@@ -184,7 +185,8 @@ object Twitter {
         __obj.asInstanceOf[Dataset[T]]
       }
       
-      extension [Self <: Dataset[?], T](x: Self & Dataset[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dataset[?], T] (val x: Self & Dataset[T]) extends AnyVal {
         
         inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
         
@@ -255,7 +257,8 @@ object Twitter {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setClassNames(value: ClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
         
@@ -328,7 +331,8 @@ object Twitter {
         __obj.asInstanceOf[Templates[T]]
       }
       
-      extension [Self <: Templates[?], T](x: Self & Templates[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Templates[?], T] (val x: Self & Templates[T]) extends AnyVal {
         
         inline def setFooter(value: String | (js.Function2[/* query */ String, /* suggestions */ js.Array[T], String])): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
         

@@ -33,7 +33,8 @@ object ListReviewableHITsRequest {
     __obj.asInstanceOf[ListReviewableHITsRequest]
   }
   
-  extension [Self <: ListReviewableHITsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReviewableHITsRequest] (val x: Self) extends AnyVal {
     
     inline def setHITTypeId(value: EntityId): Self = StObject.set(x, "HITTypeId", value.asInstanceOf[js.Any])
     

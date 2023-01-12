@@ -41,7 +41,8 @@ object Triangulator {
     __obj.asInstanceOf[Triangulator]
   }
   
-  extension [Self <: Triangulator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Triangulator] (val x: Self) extends AnyVal {
     
     inline def setConvexPolygons(value: Any): Self = StObject.set(x, "convexPolygons", value.asInstanceOf[js.Any])
     

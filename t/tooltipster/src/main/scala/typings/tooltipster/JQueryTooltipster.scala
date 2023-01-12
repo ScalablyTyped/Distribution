@@ -65,7 +65,8 @@ object JQueryTooltipster {
       __obj.asInstanceOf[ITooltipEvent]
     }
     
-    extension [Self <: ITooltipEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: JQueryEventObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object JQueryTooltipster {
       __obj.asInstanceOf[ITooltipPosition]
     }
     
-    extension [Self <: ITooltipPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipPosition] (val x: Self) extends AnyVal {
       
       inline def setCoord(value: Left): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object JQueryTooltipster {
       __obj.asInstanceOf[ITooltipStatus]
     }
     
-    extension [Self <: ITooltipStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipStatus] (val x: Self) extends AnyVal {
       
       inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object JQueryTooltipster {
       __obj.asInstanceOf[ITooltipsterGeoHelper]
     }
     
-    extension [Self <: ITooltipsterGeoHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipsterGeoHelper] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: Size): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
@@ -219,7 +223,8 @@ object JQueryTooltipster {
       __obj.asInstanceOf[ITooltipsterHelper]
     }
     
-    extension [Self <: ITooltipsterHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipsterHelper] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: MouseEvent | TouchEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -731,7 +736,8 @@ object JQueryTooltipster {
       __obj.asInstanceOf[ITooltipsterOptions]
     }
     
-    extension [Self <: ITooltipsterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipsterOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: fade | grow | swing | slide | fall): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

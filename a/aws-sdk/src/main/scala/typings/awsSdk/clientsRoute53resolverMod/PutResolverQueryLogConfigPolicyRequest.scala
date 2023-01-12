@@ -23,7 +23,8 @@ object PutResolverQueryLogConfigPolicyRequest {
     __obj.asInstanceOf[PutResolverQueryLogConfigPolicyRequest]
   }
   
-  extension [Self <: PutResolverQueryLogConfigPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutResolverQueryLogConfigPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

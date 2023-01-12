@@ -28,7 +28,8 @@ object BatchDisassociateProjectAssetsRequest {
     __obj.asInstanceOf[BatchDisassociateProjectAssetsRequest]
   }
   
-  extension [Self <: BatchDisassociateProjectAssetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDisassociateProjectAssetsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssetIds(value: IDs): Self = StObject.set(x, "assetIds", value.asInstanceOf[js.Any])
     

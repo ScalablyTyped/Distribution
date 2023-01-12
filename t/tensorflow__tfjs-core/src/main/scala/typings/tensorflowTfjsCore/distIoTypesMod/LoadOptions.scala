@@ -82,7 +82,8 @@ object LoadOptions {
     __obj.asInstanceOf[LoadOptions]
   }
   
-  extension [Self <: LoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
     
     inline def setFetchFunc(value: js.Function): Self = StObject.set(x, "fetchFunc", value.asInstanceOf[js.Any])
     

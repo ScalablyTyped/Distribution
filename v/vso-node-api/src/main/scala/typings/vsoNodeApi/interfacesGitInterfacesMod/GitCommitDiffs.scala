@@ -39,7 +39,8 @@ object GitCommitDiffs {
     __obj.asInstanceOf[GitCommitDiffs]
   }
   
-  extension [Self <: GitCommitDiffs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitCommitDiffs] (val x: Self) extends AnyVal {
     
     inline def setAheadCount(value: Double): Self = StObject.set(x, "aheadCount", value.asInstanceOf[js.Any])
     

@@ -287,7 +287,8 @@ object Deletebranchonmerge {
     __obj.asInstanceOf[Deletebranchonmerge]
   }
   
-  extension [Self <: Deletebranchonmerge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deletebranchonmerge] (val x: Self) extends AnyVal {
     
     inline def setAllow_auto_merge(value: Boolean): Self = StObject.set(x, "allow_auto_merge", value.asInstanceOf[js.Any])
     

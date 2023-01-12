@@ -17,7 +17,8 @@ object CardanoPoolMargin {
     __obj.asInstanceOf[CardanoPoolMargin]
   }
   
-  extension [Self <: CardanoPoolMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoPoolMargin] (val x: Self) extends AnyVal {
     
     inline def setDenominator(value: String): Self = StObject.set(x, "denominator", value.asInstanceOf[js.Any])
     

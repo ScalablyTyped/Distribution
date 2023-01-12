@@ -21,7 +21,8 @@ object projectIdstringnumberundeDictkey {
     __obj.asInstanceOf[projectIdstringnumberundeDictkey]
   }
   
-  extension [Self <: projectIdstringnumberundeDictkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: projectIdstringnumberundeDictkey] (val x: Self) extends AnyVal {
     
     inline def setProjectId(value: String | Double): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

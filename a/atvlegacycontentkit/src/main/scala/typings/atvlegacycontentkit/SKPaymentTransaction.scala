@@ -49,7 +49,8 @@ object SKPaymentTransaction {
     __obj.asInstanceOf[SKPaymentTransaction]
   }
   
-  extension [Self <: SKPaymentTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SKPaymentTransaction] (val x: Self) extends AnyVal {
     
     inline def setOriginalTransaction(value: SKPaymentTransaction): Self = StObject.set(x, "originalTransaction", value.asInstanceOf[js.Any])
     

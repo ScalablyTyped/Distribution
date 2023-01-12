@@ -18,7 +18,8 @@ object DropdownSectionProps {
     __obj.asInstanceOf[DropdownSectionProps]
   }
   
-  extension [Self <: DropdownSectionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropdownSectionProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

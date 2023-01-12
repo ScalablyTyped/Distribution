@@ -33,7 +33,8 @@ object ListDocumentsRequest {
     __obj.asInstanceOf[ListDocumentsRequest]
   }
   
-  extension [Self <: ListDocumentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDocumentsRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentFilterList(value: DocumentFilterList): Self = StObject.set(x, "DocumentFilterList", value.asInstanceOf[js.Any])
     

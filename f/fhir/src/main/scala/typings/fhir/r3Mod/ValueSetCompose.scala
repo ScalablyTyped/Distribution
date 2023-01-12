@@ -39,7 +39,8 @@ object ValueSetCompose {
     __obj.asInstanceOf[ValueSetCompose]
   }
   
-  extension [Self <: ValueSetCompose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSetCompose] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: js.Array[ValueSetComposeInclude]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

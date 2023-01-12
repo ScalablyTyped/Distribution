@@ -77,7 +77,8 @@ object IFileInput {
     __obj.asInstanceOf[IFileInput]
   }
   
-  extension [Self <: IFileInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileInput] (val x: Self) extends AnyVal {
     
     inline def setApplyCapture(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "applyCapture", js.Any.fromFunction1(value))
     

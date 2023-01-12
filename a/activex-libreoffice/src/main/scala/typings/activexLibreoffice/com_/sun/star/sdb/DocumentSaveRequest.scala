@@ -40,7 +40,8 @@ object DocumentSaveRequest {
     __obj.asInstanceOf[DocumentSaveRequest]
   }
   
-  extension [Self <: DocumentSaveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSaveRequest] (val x: Self) extends AnyVal {
     
     inline def setContent(value: XContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

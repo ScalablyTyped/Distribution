@@ -22,7 +22,8 @@ object InstallationidRepositoryid {
     __obj.asInstanceOf[InstallationidRepositoryid]
   }
   
-  extension [Self <: InstallationidRepositoryid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstallationidRepositoryid] (val x: Self) extends AnyVal {
     
     inline def setInstallation_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['installation-id'] */ js.Any

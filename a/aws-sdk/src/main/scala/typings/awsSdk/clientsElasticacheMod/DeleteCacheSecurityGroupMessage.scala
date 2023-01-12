@@ -18,7 +18,8 @@ object DeleteCacheSecurityGroupMessage {
     __obj.asInstanceOf[DeleteCacheSecurityGroupMessage]
   }
   
-  extension [Self <: DeleteCacheSecurityGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCacheSecurityGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setCacheSecurityGroupName(value: String): Self = StObject.set(x, "CacheSecurityGroupName", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object OnCharacteristicSubscribedCallbackResult {
     __obj.asInstanceOf[OnCharacteristicSubscribedCallbackResult]
   }
   
-  extension [Self <: OnCharacteristicSubscribedCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCharacteristicSubscribedCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     

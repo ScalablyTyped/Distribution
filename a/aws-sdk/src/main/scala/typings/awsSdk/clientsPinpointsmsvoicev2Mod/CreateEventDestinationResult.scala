@@ -28,7 +28,8 @@ object CreateEventDestinationResult {
     __obj.asInstanceOf[CreateEventDestinationResult]
   }
   
-  extension [Self <: CreateEventDestinationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEventDestinationResult] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetArn(value: String): Self = StObject.set(x, "ConfigurationSetArn", value.asInstanceOf[js.Any])
     

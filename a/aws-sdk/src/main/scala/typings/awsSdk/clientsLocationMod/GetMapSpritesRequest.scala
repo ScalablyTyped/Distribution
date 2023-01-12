@@ -23,7 +23,8 @@ object GetMapSpritesRequest {
     __obj.asInstanceOf[GetMapSpritesRequest]
   }
   
-  extension [Self <: GetMapSpritesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMapSpritesRequest] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: GetMapSpritesRequestFileNameString): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     

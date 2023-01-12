@@ -36,7 +36,8 @@ object UpsellFormProps {
     __obj.asInstanceOf[UpsellFormProps]
   }
   
-  extension [Self <: UpsellFormProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpsellFormProps] (val x: Self) extends AnyVal {
     
     inline def setOnSubmit(
       value: /* arg */ js.Object & (Event[

@@ -39,7 +39,8 @@ object TypeofTestHelpers {
     __obj.asInstanceOf[TypeofTestHelpers]
   }
   
-  extension [Self <: TypeofTestHelpers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTestHelpers] (val x: Self) extends AnyVal {
     
     inline def setCustomersResource(value: Instantiable0[CustomersResource]): Self = StObject.set(x, "CustomersResource", value.asInstanceOf[js.Any])
     

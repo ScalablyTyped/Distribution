@@ -26,7 +26,8 @@ object XMessageBox {
     __obj.asInstanceOf[XMessageBox]
   }
   
-  extension [Self <: XMessageBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMessageBox] (val x: Self) extends AnyVal {
     
     inline def setCaptionText(value: String): Self = StObject.set(x, "CaptionText", value.asInstanceOf[js.Any])
     

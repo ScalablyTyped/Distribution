@@ -57,7 +57,8 @@ object XInterfaceAttributeTypeDescription {
     __obj.asInstanceOf[XInterfaceAttributeTypeDescription]
   }
   
-  extension [Self <: XInterfaceAttributeTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInterfaceAttributeTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGetType(value: () => XTypeDescription): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     

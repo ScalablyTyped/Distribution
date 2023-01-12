@@ -32,7 +32,8 @@ object Dailyreport {
     __obj.asInstanceOf[Dailyreport]
   }
   
-  extension [Self <: Dailyreport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dailyreport] (val x: Self) extends AnyVal {
     
     inline def setApilogs(value: String): Self = StObject.set(x, "apilogs", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object libSelectorMod {
       __obj.asInstanceOf[Rule]
     }
     
-    extension [Self <: Rule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: js.Array[RuleAttr]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object libSelectorMod {
       __obj.asInstanceOf[RuleSet]
     }
     
-    extension [Self <: RuleSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleSet] (val x: Self) extends AnyVal {
       
       inline def setRule(value: Rule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
@@ -213,7 +215,8 @@ object libSelectorMod {
       __obj.asInstanceOf[Selectors]
     }
     
-    extension [Self <: Selectors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selectors] (val x: Self) extends AnyVal {
       
       inline def setSelectors(value: js.Array[RuleSet]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       

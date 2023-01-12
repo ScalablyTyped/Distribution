@@ -39,7 +39,8 @@ object WatchableMatchInfo {
     __obj.asInstanceOf[WatchableMatchInfo]
   }
   
-  extension [Self <: WatchableMatchInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchableMatchInfo] (val x: Self) extends AnyVal {
     
     inline def setCl_decryptdata_key(value: Any): Self = StObject.set(x, "cl_decryptdata_key", value.asInstanceOf[js.Any])
     

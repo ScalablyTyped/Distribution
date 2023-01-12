@@ -28,7 +28,8 @@ object Treatment {
     __obj.asInstanceOf[Treatment]
   }
   
-  extension [Self <: Treatment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Treatment] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

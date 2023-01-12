@@ -215,7 +215,8 @@ object esTypesMod {
       __obj.asInstanceOf[OutputSelectorFields[Combiner]]
     }
     
-    extension [Self <: OutputSelectorFields[?], Combiner /* <: UnknownFunction */](x: Self & OutputSelectorFields[Combiner]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputSelectorFields[?], Combiner /* <: UnknownFunction */] (val x: Self & OutputSelectorFields[Combiner]) extends AnyVal {
       
       inline def setDependencies(value: SelectorArray): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

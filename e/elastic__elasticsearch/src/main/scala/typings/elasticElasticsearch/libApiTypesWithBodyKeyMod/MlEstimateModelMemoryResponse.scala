@@ -15,7 +15,8 @@ object MlEstimateModelMemoryResponse {
     __obj.asInstanceOf[MlEstimateModelMemoryResponse]
   }
   
-  extension [Self <: MlEstimateModelMemoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlEstimateModelMemoryResponse] (val x: Self) extends AnyVal {
     
     inline def setModel_memory_estimate(value: String): Self = StObject.set(x, "model_memory_estimate", value.asInstanceOf[js.Any])
   }

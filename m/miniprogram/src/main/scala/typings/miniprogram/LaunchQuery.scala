@@ -23,7 +23,8 @@ object LaunchQuery {
     __obj.asInstanceOf[LaunchQuery]
   }
   
-  extension [Self <: LaunchQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchQuery] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

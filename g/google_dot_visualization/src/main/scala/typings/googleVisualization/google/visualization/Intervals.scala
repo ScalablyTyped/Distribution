@@ -33,7 +33,8 @@ object Intervals {
     __obj.asInstanceOf[Intervals]
   }
   
-  extension [Self <: Intervals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Intervals] (val x: Self) extends AnyVal {
     
     inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
     

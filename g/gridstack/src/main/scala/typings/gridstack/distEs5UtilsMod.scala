@@ -162,7 +162,8 @@ object distEs5UtilsMod {
       __obj.asInstanceOf[HeightData]
     }
     
-    extension [Self <: HeightData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeightData] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       

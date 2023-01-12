@@ -34,7 +34,8 @@ object PathConstraintMixTimeline {
     __obj.asInstanceOf[PathConstraintMixTimeline]
   }
   
-  extension [Self <: PathConstraintMixTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathConstraintMixTimeline] (val x: Self) extends AnyVal {
     
     inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     

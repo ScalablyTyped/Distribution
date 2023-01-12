@@ -18,7 +18,8 @@ object PartialClassNameMapDialogDividers {
     __obj.asInstanceOf[PartialClassNameMapDialogDividers]
   }
   
-  extension [Self <: PartialClassNameMapDialogDividers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapDialogDividers] (val x: Self) extends AnyVal {
     
     inline def setDividers(value: String): Self = StObject.set(x, "dividers", value.asInstanceOf[js.Any])
     

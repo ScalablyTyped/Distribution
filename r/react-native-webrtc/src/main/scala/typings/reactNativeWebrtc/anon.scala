@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[IceConnectionState]
     }
     
-    extension [Self <: IceConnectionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IceConnectionState] (val x: Self) extends AnyVal {
       
       inline def setIceConnectionState(value: RTCIceConnectionState): Self = StObject.set(x, "iceConnectionState", value.asInstanceOf[js.Any])
     }

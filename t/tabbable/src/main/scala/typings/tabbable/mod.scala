@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[CheckOptions]
     }
     
-    extension [Self <: CheckOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckOptions] (val x: Self) extends AnyVal {
       
       inline def setDisplayCheck(value: full | `legacy-full` | `non-zero-area` | none): Self = StObject.set(x, "displayCheck", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[TabbableOptions]
     }
     
-    extension [Self <: TabbableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabbableOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeContainer(value: Boolean): Self = StObject.set(x, "includeContainer", value.asInstanceOf[js.Any])
       

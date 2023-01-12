@@ -21,7 +21,8 @@ object IUpdateFieldRequest {
     __obj.asInstanceOf[IUpdateFieldRequest]
   }
   
-  extension [Self <: IUpdateFieldRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUpdateFieldRequest] (val x: Self) extends AnyVal {
     
     inline def setField(value: IField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

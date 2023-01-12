@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Integer]
     }
     
-    extension [Self <: Integer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Integer] (val x: Self) extends AnyVal {
       
       inline def setInteger(value: js.Symbol): Self = StObject.set(x, "Integer", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Length]
     }
     
-    extension [Self <: Length](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
       
       inline def setLength(value: `1`): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     }
@@ -52,7 +54,8 @@ object anon {
       __obj.asInstanceOf[NonEmptyString]
     }
     
-    extension [Self <: NonEmptyString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonEmptyString] (val x: Self) extends AnyVal {
       
       inline def setNonEmptyString(value: js.Symbol): Self = StObject.set(x, "NonEmptyString", value.asInstanceOf[js.Any])
     }
@@ -69,7 +72,8 @@ object anon {
       __obj.asInstanceOf[NonNegative]
     }
     
-    extension [Self <: NonNegative](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonNegative] (val x: Self) extends AnyVal {
       
       inline def setNonNegative(value: js.Symbol): Self = StObject.set(x, "NonNegative", value.asInstanceOf[js.Any])
     }
@@ -86,7 +90,8 @@ object anon {
       __obj.asInstanceOf[NonPositive]
     }
     
-    extension [Self <: NonPositive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonPositive] (val x: Self) extends AnyVal {
       
       inline def setNonPositive(value: js.Symbol): Self = StObject.set(x, "NonPositive", value.asInstanceOf[js.Any])
     }
@@ -103,7 +108,8 @@ object anon {
       __obj.asInstanceOf[NonZero]
     }
     
-    extension [Self <: NonZero](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonZero] (val x: Self) extends AnyVal {
       
       inline def setNonZero(value: js.Symbol): Self = StObject.set(x, "NonZero", value.asInstanceOf[js.Any])
     }

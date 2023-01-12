@@ -574,7 +574,8 @@ object Templates {
     __obj.asInstanceOf[Templates]
   }
   
-  extension [Self <: Templates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Templates] (val x: Self) extends AnyVal {
     
     inline def setAccessControlListBase64(value: String): Self = StObject.set(x, "accessControlListBase64", value.asInstanceOf[js.Any])
     

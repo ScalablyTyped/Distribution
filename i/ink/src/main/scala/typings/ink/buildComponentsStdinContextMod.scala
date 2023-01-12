@@ -43,7 +43,8 @@ object buildComponentsStdinContextMod extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setInternal_exitOnCtrlC(value: Boolean): Self = StObject.set(x, "internal_exitOnCtrlC", value.asInstanceOf[js.Any])
       

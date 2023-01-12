@@ -38,7 +38,8 @@ object QueryTableRowsRequest {
     __obj.asInstanceOf[QueryTableRowsRequest]
   }
   
-  extension [Self <: QueryTableRowsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryTableRowsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterFormula(value: Filter): Self = StObject.set(x, "filterFormula", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,8 @@ object dxTagBox {
       __obj.asInstanceOf[MultiTagPreparingEvent]
     }
     
-    extension [Self <: MultiTagPreparingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiTagPreparingEvent] (val x: Self) extends AnyVal {
       
       inline def setMultiTagElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "multiTagElement", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object dxTagBox {
       __obj.asInstanceOf[SelectAllValueChangedEvent]
     }
     
-    extension [Self <: SelectAllValueChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectAllValueChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

@@ -27,7 +27,8 @@ object GhostAPI {
     __obj.asInstanceOf[GhostAPI]
   }
   
-  extension [Self <: GhostAPI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GhostAPI] (val x: Self) extends AnyVal {
     
     inline def setAuthors(value: Read): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     

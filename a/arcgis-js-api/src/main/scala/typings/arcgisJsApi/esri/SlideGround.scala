@@ -22,7 +22,8 @@ object SlideGround {
     __obj.asInstanceOf[SlideGround]
   }
   
-  extension [Self <: SlideGround](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideGround] (val x: Self) extends AnyVal {
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

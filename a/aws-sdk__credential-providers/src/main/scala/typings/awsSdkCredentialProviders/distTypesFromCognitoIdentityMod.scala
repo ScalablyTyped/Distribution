@@ -37,7 +37,8 @@ object distTypesFromCognitoIdentityMod {
       __obj.asInstanceOf[FromCognitoIdentityParameters]
     }
     
-    extension [Self <: FromCognitoIdentityParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromCognitoIdentityParameters] (val x: Self) extends AnyVal {
       
       inline def setClientConfig(value: CognitoIdentityClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
       

@@ -46,7 +46,8 @@ object ActivityContentDetails {
     __obj.asInstanceOf[ActivityContentDetails]
   }
   
-  extension [Self <: ActivityContentDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityContentDetails] (val x: Self) extends AnyVal {
     
     inline def setBulletin(value: ActivityContentDetailsBulletin): Self = StObject.set(x, "bulletin", value.asInstanceOf[js.Any])
     

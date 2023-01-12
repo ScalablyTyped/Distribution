@@ -17,7 +17,8 @@ object EosActionUnknown {
     __obj.asInstanceOf[EosActionUnknown]
   }
   
-  extension [Self <: EosActionUnknown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosActionUnknown] (val x: Self) extends AnyVal {
     
     inline def setData_chunk(value: String): Self = StObject.set(x, "data_chunk", value.asInstanceOf[js.Any])
     

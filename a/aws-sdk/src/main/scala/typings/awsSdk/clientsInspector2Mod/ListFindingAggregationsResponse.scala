@@ -28,7 +28,8 @@ object ListFindingAggregationsResponse {
     __obj.asInstanceOf[ListFindingAggregationsResponse]
   }
   
-  extension [Self <: ListFindingAggregationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFindingAggregationsResponse] (val x: Self) extends AnyVal {
     
     inline def setAggregationType(value: AggregationType): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
     

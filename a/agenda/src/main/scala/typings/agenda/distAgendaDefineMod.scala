@@ -92,7 +92,8 @@ object distAgendaDefineMod {
       __obj.asInstanceOf[DefineOptions]
     }
     
-    extension [Self <: DefineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefineOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       

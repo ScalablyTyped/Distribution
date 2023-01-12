@@ -17,7 +17,8 @@ object SelectionRange {
     __obj.asInstanceOf[SelectionRange]
   }
   
-  extension [Self <: SelectionRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionRange] (val x: Self) extends AnyVal {
     
     inline def setParent(value: SelectionRange): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

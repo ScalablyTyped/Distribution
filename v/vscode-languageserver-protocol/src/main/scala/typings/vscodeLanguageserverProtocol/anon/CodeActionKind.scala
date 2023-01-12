@@ -19,7 +19,8 @@ object CodeActionKind {
     __obj.asInstanceOf[CodeActionKind]
   }
   
-  extension [Self <: CodeActionKind](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeActionKind] (val x: Self) extends AnyVal {
     
     inline def setCodeActionKind(value: `4`): Self = StObject.set(x, "codeActionKind", value.asInstanceOf[js.Any])
   }

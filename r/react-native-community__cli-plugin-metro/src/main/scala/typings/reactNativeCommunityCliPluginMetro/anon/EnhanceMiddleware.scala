@@ -17,7 +17,8 @@ object EnhanceMiddleware {
     __obj.asInstanceOf[EnhanceMiddleware]
   }
   
-  extension [Self <: EnhanceMiddleware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhanceMiddleware] (val x: Self) extends AnyVal {
     
     inline def setEnhanceMiddleware(value: js.Function): Self = StObject.set(x, "enhanceMiddleware", value.asInstanceOf[js.Any])
     

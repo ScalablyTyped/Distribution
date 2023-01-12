@@ -31,7 +31,8 @@ object SpellingSuggestion {
     __obj.asInstanceOf[SpellingSuggestion]
   }
   
-  extension [Self <: SpellingSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpellingSuggestion] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

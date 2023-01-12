@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[Directive]
     }
     
-    extension [Self <: Directive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Directive] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -187,7 +189,8 @@ object mod {
       __obj.asInstanceOf[Section]
     }
     
-    extension [Self <: Section](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: SSHConfig[Line]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }

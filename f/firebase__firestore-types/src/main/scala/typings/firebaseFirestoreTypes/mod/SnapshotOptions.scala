@@ -18,7 +18,8 @@ object SnapshotOptions {
     __obj.asInstanceOf[SnapshotOptions]
   }
   
-  extension [Self <: SnapshotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotOptions] (val x: Self) extends AnyVal {
     
     inline def setServerTimestamps(value: estimate | previous | none): Self = StObject.set(x, "serverTimestamps", value.asInstanceOf[js.Any])
     

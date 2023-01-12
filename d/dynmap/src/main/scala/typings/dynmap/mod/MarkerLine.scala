@@ -54,7 +54,8 @@ object MarkerLine {
     __obj.asInstanceOf[MarkerLine]
   }
   
-  extension [Self <: MarkerLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerLine] (val x: Self) extends AnyVal {
     
     inline def setColor(value: HexColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

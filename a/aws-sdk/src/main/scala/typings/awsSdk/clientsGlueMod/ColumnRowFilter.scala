@@ -17,7 +17,8 @@ object ColumnRowFilter {
     __obj.asInstanceOf[ColumnRowFilter]
   }
   
-  extension [Self <: ColumnRowFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnRowFilter] (val x: Self) extends AnyVal {
     
     inline def setColumnName(value: NameString): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     

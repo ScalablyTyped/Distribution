@@ -454,7 +454,8 @@ object PartialHTMLAttributesHTML {
     __obj.asInstanceOf[PartialHTMLAttributesHTML]
   }
   
-  extension [Self <: PartialHTMLAttributesHTML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialHTMLAttributesHTML] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

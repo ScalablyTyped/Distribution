@@ -41,7 +41,8 @@ object BluetoothLEAdvertisementWatcherTrigger {
     __obj.asInstanceOf[BluetoothLEAdvertisementWatcherTrigger]
   }
   
-  extension [Self <: BluetoothLEAdvertisementWatcherTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothLEAdvertisementWatcherTrigger] (val x: Self) extends AnyVal {
     
     inline def setAdvertisementFilter(value: BluetoothLEAdvertisementFilter): Self = StObject.set(x, "advertisementFilter", value.asInstanceOf[js.Any])
     

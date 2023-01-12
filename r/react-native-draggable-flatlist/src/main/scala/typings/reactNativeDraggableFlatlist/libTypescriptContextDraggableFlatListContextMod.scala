@@ -32,7 +32,8 @@ object libTypescriptContextDraggableFlatListContextMod {
       __obj.asInstanceOf[DraggableFlatListContextValue[T]]
     }
     
-    extension [Self <: DraggableFlatListContextValue[?], T](x: Self & DraggableFlatListContextValue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggableFlatListContextValue[?], T] (val x: Self & DraggableFlatListContextValue[T]) extends AnyVal {
       
       inline def setActiveKey(value: String): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object libTypescriptContextDraggableFlatListContextMod {
       __obj.asInstanceOf[Props[T]]
     }
     
-    extension [Self <: Props[?], T](x: Self & Props[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], T] (val x: Self & Props[T]) extends AnyVal {
       
       inline def setActiveKey(value: String): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       

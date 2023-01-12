@@ -18,7 +18,8 @@ object DeleteAutoScalingConfigurationResponse {
     __obj.asInstanceOf[DeleteAutoScalingConfigurationResponse]
   }
   
-  extension [Self <: DeleteAutoScalingConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAutoScalingConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingConfiguration(value: AutoScalingConfiguration): Self = StObject.set(x, "AutoScalingConfiguration", value.asInstanceOf[js.Any])
   }

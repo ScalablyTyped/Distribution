@@ -24,7 +24,8 @@ object ZipDirectoryEntryExportOptions {
     __obj.asInstanceOf[ZipDirectoryEntryExportOptions]
   }
   
-  extension [Self <: ZipDirectoryEntryExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipDirectoryEntryExportOptions] (val x: Self) extends AnyVal {
     
     inline def setRelativePath(value: Boolean): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object FailedServiceActionAssociation {
     __obj.asInstanceOf[FailedServiceActionAssociation]
   }
   
-  extension [Self <: FailedServiceActionAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedServiceActionAssociation] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ServiceActionAssociationErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object libDistSrcInterfacesComponentEventsMod {
       __obj.asInstanceOf[ComponentDidAppearEvent]
     }
     
-    extension [Self <: ComponentDidAppearEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentDidAppearEvent] (val x: Self) extends AnyVal {
       
       inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object libDistSrcInterfacesComponentEventsMod {
       __obj.asInstanceOf[ComponentDidDisappearEvent]
     }
     
-    extension [Self <: ComponentDidDisappearEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentDidDisappearEvent] (val x: Self) extends AnyVal {
       
       inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object libDistSrcInterfacesComponentEventsMod {
       __obj.asInstanceOf[ComponentEvent]
     }
     
-    extension [Self <: ComponentEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentEvent] (val x: Self) extends AnyVal {
       
       inline def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
     }
@@ -110,7 +113,8 @@ object libDistSrcInterfacesComponentEventsMod {
       __obj.asInstanceOf[ComponentWillAppearEvent]
     }
     
-    extension [Self <: ComponentWillAppearEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentWillAppearEvent] (val x: Self) extends AnyVal {
       
       inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object libDistSrcInterfacesComponentEventsMod {
       __obj.asInstanceOf[ModalDismissedEvent]
     }
     
-    extension [Self <: ModalDismissedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalDismissedEvent] (val x: Self) extends AnyVal {
       
       inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
@@ -169,7 +174,8 @@ object libDistSrcInterfacesComponentEventsMod {
       __obj.asInstanceOf[NavigationButtonPressedEvent]
     }
     
-    extension [Self <: NavigationButtonPressedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationButtonPressedEvent] (val x: Self) extends AnyVal {
       
       inline def setButtonId(value: String): Self = StObject.set(x, "buttonId", value.asInstanceOf[js.Any])
     }
@@ -190,7 +196,8 @@ object libDistSrcInterfacesComponentEventsMod {
       __obj.asInstanceOf[PreviewCompletedEvent]
     }
     
-    extension [Self <: PreviewCompletedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewCompletedEvent] (val x: Self) extends AnyVal {
       
       inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
@@ -226,7 +233,8 @@ object libDistSrcInterfacesComponentEventsMod {
       __obj.asInstanceOf[SearchBarCancelPressedEvent]
     }
     
-    extension [Self <: SearchBarCancelPressedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchBarCancelPressedEvent] (val x: Self) extends AnyVal {
       
       inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
@@ -249,7 +257,8 @@ object libDistSrcInterfacesComponentEventsMod {
       __obj.asInstanceOf[SearchBarUpdatedEvent]
     }
     
-    extension [Self <: SearchBarUpdatedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchBarUpdatedEvent] (val x: Self) extends AnyVal {
       
       inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
       

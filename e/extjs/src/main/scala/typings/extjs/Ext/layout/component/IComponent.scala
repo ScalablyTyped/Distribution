@@ -48,7 +48,8 @@ object IComponent {
     __obj.asInstanceOf[IComponent]
   }
   
-  extension [Self <: IComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComponent] (val x: Self) extends AnyVal {
     
     inline def setBeginLayoutCycle(value: (/* ownerContext */ js.UndefOr[Any], /* firstCycle */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction2(value))
     

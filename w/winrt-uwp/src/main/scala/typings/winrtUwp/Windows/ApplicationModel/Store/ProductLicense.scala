@@ -26,7 +26,8 @@ object ProductLicense {
     __obj.asInstanceOf[ProductLicense]
   }
   
-  extension [Self <: ProductLicense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductLicense] (val x: Self) extends AnyVal {
     
     inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     

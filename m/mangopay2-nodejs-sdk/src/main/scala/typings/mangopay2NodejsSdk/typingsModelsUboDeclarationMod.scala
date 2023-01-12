@@ -44,7 +44,8 @@ object typingsModelsUboDeclarationMod {
         __obj.asInstanceOf[CreateUbo]
       }
       
-      extension [Self <: CreateUbo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateUbo] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: AddressType): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
         
@@ -71,7 +72,8 @@ object typingsModelsUboDeclarationMod {
         __obj.asInstanceOf[CreateUboDeclaration]
       }
       
-      extension [Self <: CreateUboDeclaration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateUboDeclaration] (val x: Self) extends AnyVal {
         
         inline def setUbos(value: js.Array[String]): Self = StObject.set(x, "Ubos", value.asInstanceOf[js.Any])
         
@@ -117,7 +119,8 @@ object typingsModelsUboDeclarationMod {
         __obj.asInstanceOf[UboData]
       }
       
-      extension [Self <: UboData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UboData] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: AddressType): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
         
@@ -187,7 +190,8 @@ object typingsModelsUboDeclarationMod {
         __obj.asInstanceOf[UboDeclarationData]
       }
       
-      extension [Self <: UboDeclarationData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UboDeclarationData] (val x: Self) extends AnyVal {
         
         inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
         
@@ -230,7 +234,8 @@ object typingsModelsUboDeclarationMod {
         __obj.asInstanceOf[UpdateUbo]
       }
       
-      extension [Self <: UpdateUbo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateUbo] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: AddressType): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
         
@@ -284,7 +289,8 @@ object typingsModelsUboDeclarationMod {
         __obj.asInstanceOf[UpdateUboDeclaration]
       }
       
-      extension [Self <: UpdateUboDeclaration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateUboDeclaration] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
         

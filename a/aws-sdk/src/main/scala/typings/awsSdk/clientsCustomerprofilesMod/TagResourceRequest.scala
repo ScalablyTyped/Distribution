@@ -23,7 +23,8 @@ object TagResourceRequest {
     __obj.asInstanceOf[TagResourceRequest]
   }
   
-  extension [Self <: TagResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: TagArn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     

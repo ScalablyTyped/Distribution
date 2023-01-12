@@ -17,7 +17,8 @@ object NodeRuntime {
       __obj.asInstanceOf[NotifyWhenWaitingForDisconnectParameterType]
     }
     
-    extension [Self <: NotifyWhenWaitingForDisconnectParameterType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyWhenWaitingForDisconnectParameterType] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }

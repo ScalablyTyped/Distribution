@@ -24,7 +24,8 @@ object ToolbarState {
     __obj.asInstanceOf[ToolbarState]
   }
   
-  extension [Self <: ToolbarState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolbarState] (val x: Self) extends AnyVal {
     
     inline def setGetViz(value: () => Viz): Self = StObject.set(x, "getViz", js.Any.fromFunction0(value))
     

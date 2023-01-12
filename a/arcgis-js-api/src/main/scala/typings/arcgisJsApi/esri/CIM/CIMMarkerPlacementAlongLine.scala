@@ -45,7 +45,8 @@ object CIMMarkerPlacementAlongLine {
     __obj.asInstanceOf[CIMMarkerPlacementAlongLine]
   }
   
-  extension [Self <: CIMMarkerPlacementAlongLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementAlongLine] (val x: Self) extends AnyVal {
     
     inline def setControlPointPlacement(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementEndings * / any */ String

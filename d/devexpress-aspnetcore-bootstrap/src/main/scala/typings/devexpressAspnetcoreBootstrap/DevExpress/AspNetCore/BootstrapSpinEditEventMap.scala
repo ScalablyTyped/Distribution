@@ -42,7 +42,8 @@ object BootstrapSpinEditEventMap {
     __obj.asInstanceOf[BootstrapSpinEditEventMap]
   }
   
-  extension [Self <: BootstrapSpinEditEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapSpinEditEventMap] (val x: Self) extends AnyVal {
     
     inline def setButtonClick(value: ButtonEditClickEventArgs): Self = StObject.set(x, "buttonClick", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object ListGeoLocationsResponse {
     __obj.asInstanceOf[ListGeoLocationsResponse]
   }
   
-  extension [Self <: ListGeoLocationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGeoLocationsResponse] (val x: Self) extends AnyVal {
     
     inline def setGeoLocationDetailsList(value: GeoLocationDetailsList): Self = StObject.set(x, "GeoLocationDetailsList", value.asInstanceOf[js.Any])
     

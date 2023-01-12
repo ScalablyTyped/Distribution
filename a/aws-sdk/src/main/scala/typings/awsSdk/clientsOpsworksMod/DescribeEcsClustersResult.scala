@@ -23,7 +23,8 @@ object DescribeEcsClustersResult {
     __obj.asInstanceOf[DescribeEcsClustersResult]
   }
   
-  extension [Self <: DescribeEcsClustersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEcsClustersResult] (val x: Self) extends AnyVal {
     
     inline def setEcsClusters(value: EcsClusters): Self = StObject.set(x, "EcsClusters", value.asInstanceOf[js.Any])
     

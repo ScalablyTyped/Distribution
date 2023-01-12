@@ -25,7 +25,8 @@ object GoogleIdentityAccesscontextmanagerV1ApiOperation {
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1ApiOperation]
   }
   
-  extension [Self <: GoogleIdentityAccesscontextmanagerV1ApiOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1ApiOperation] (val x: Self) extends AnyVal {
     
     inline def setMethodSelectors(value: js.Array[GoogleIdentityAccesscontextmanagerV1MethodSelector]): Self = StObject.set(x, "methodSelectors", value.asInstanceOf[js.Any])
     

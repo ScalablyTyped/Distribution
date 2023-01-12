@@ -34,7 +34,8 @@ object MerchantOrderReturn {
     __obj.asInstanceOf[MerchantOrderReturn]
   }
   
-  extension [Self <: MerchantOrderReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MerchantOrderReturn] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

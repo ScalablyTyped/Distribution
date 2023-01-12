@@ -28,7 +28,8 @@ object GetBehaviorModelTrainingSummariesRequest {
     __obj.asInstanceOf[GetBehaviorModelTrainingSummariesRequest]
   }
   
-  extension [Self <: GetBehaviorModelTrainingSummariesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBehaviorModelTrainingSummariesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: TinyMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

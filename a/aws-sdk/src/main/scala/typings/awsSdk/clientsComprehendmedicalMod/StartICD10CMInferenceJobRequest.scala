@@ -53,7 +53,8 @@ object StartICD10CMInferenceJobRequest {
     __obj.asInstanceOf[StartICD10CMInferenceJobRequest]
   }
   
-  extension [Self <: StartICD10CMInferenceJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartICD10CMInferenceJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

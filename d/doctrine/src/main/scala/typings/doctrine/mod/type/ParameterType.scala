@@ -23,7 +23,8 @@ object ParameterType {
     __obj.asInstanceOf[ParameterType]
   }
   
-  extension [Self <: ParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterType] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

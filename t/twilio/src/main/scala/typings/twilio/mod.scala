@@ -184,7 +184,8 @@ object mod {
       __obj.asInstanceOf[JwtInterface]
     }
     
-    extension [Self <: JwtInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JwtInterface] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(
         value: TypeofAccessToken & (Instantiable4[
@@ -228,7 +229,8 @@ object mod {
       __obj.asInstanceOf[TwimlInterface]
     }
     
-    extension [Self <: TwimlInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwimlInterface] (val x: Self) extends AnyVal {
       
       inline def setFaxResponse(value: TwimlConstructor[typings.twilio.libTwimlFaxResponseMod.^]): Self = StObject.set(x, "FaxResponse", value.asInstanceOf[js.Any])
       

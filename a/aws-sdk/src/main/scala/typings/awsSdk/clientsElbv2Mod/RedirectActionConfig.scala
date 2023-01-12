@@ -43,7 +43,8 @@ object RedirectActionConfig {
     __obj.asInstanceOf[RedirectActionConfig]
   }
   
-  extension [Self <: RedirectActionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedirectActionConfig] (val x: Self) extends AnyVal {
     
     inline def setHost(value: RedirectActionHost): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     

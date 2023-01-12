@@ -55,7 +55,8 @@ object ImagingSelectionInstance {
     __obj.asInstanceOf[ImagingSelectionInstance]
   }
   
-  extension [Self <: ImagingSelectionInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagingSelectionInstance] (val x: Self) extends AnyVal {
     
     inline def setFrameList(value: String): Self = StObject.set(x, "frameList", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object KnockoutValidationAsyncCallbackArgs {
     __obj.asInstanceOf[KnockoutValidationAsyncCallbackArgs]
   }
   
-  extension [Self <: KnockoutValidationAsyncCallbackArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutValidationAsyncCallbackArgs] (val x: Self) extends AnyVal {
     
     inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     

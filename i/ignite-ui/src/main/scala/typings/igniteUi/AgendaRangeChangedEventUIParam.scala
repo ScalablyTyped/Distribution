@@ -28,7 +28,8 @@ object AgendaRangeChangedEventUIParam {
     __obj.asInstanceOf[AgendaRangeChangedEventUIParam]
   }
   
-  extension [Self <: AgendaRangeChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgendaRangeChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setDateRangeInterval(value: Double): Self = StObject.set(x, "dateRangeInterval", value.asInstanceOf[js.Any])
     

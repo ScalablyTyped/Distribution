@@ -42,7 +42,8 @@ object _empty {
     __obj.asInstanceOf[_empty]
   }
   
-  extension [Self <: _empty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
     
     inline def setAnnotationTypes(value: Action): Self = StObject.set(x, "annotationTypes", value.asInstanceOf[js.Any])
     

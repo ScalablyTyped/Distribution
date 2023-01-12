@@ -72,7 +72,8 @@ object distPluginOptionsMod {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAddBanner(value: Boolean): Self = StObject.set(x, "addBanner", value.asInstanceOf[js.Any])
       

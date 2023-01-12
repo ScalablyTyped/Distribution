@@ -433,7 +433,8 @@ object formula {
       __obj.asInstanceOf[FormulaProperties]
     }
     
-    extension [Self <: FormulaProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormulaProperties] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
       
@@ -615,7 +616,8 @@ object formula {
       __obj.asInstanceOf[SymbolDescriptor]
     }
     
-    extension [Self <: SymbolDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymbolDescriptor] (val x: Self) extends AnyVal {
       
       inline def setNCharSet(value: Double): Self = StObject.set(x, "nCharSet", value.asInstanceOf[js.Any])
       

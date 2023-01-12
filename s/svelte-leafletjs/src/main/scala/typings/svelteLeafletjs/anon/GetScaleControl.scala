@@ -22,7 +22,8 @@ object GetScaleControl {
     __obj.asInstanceOf[GetScaleControl]
   }
   
-  extension [Self <: GetScaleControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScaleControl] (val x: Self) extends AnyVal {
     
     inline def setGetScaleControl(value: () => Scale): Self = StObject.set(x, "getScaleControl", js.Any.fromFunction0(value))
     

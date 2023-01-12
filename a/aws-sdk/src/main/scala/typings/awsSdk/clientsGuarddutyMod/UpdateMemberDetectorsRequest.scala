@@ -28,7 +28,8 @@ object UpdateMemberDetectorsRequest {
     __obj.asInstanceOf[UpdateMemberDetectorsRequest]
   }
   
-  extension [Self <: UpdateMemberDetectorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMemberDetectorsRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

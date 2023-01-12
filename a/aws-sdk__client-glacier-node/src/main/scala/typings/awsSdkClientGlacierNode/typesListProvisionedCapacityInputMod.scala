@@ -46,7 +46,8 @@ object typesListProvisionedCapacityInputMod {
       __obj.asInstanceOf[ListProvisionedCapacityInput]
     }
     
-    extension [Self <: ListProvisionedCapacityInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProvisionedCapacityInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

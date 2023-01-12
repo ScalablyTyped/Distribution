@@ -15,7 +15,8 @@ object EnumValuesForcePush {
     __obj.asInstanceOf[EnumValuesForcePush]
   }
   
-  extension [Self <: EnumValuesForcePush](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesForcePush] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: ForcePush): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

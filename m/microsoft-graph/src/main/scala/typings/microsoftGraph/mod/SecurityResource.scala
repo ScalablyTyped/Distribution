@@ -19,7 +19,8 @@ object SecurityResource {
     __obj.asInstanceOf[SecurityResource]
   }
   
-  extension [Self <: SecurityResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityResource] (val x: Self) extends AnyVal {
     
     inline def setResource(value: NullableOption[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

@@ -93,7 +93,8 @@ object CommandInvocation {
     __obj.asInstanceOf[CommandInvocation]
   }
   
-  extension [Self <: CommandInvocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandInvocation] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchOutputConfig(value: CloudWatchOutputConfig): Self = StObject.set(x, "CloudWatchOutputConfig", value.asInstanceOf[js.Any])
     

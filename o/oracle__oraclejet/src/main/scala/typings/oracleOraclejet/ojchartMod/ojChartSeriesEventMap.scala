@@ -300,7 +300,8 @@ object ojChartSeriesEventMap {
     __obj.asInstanceOf[ojChartSeriesEventMap]
   }
   
-  extension [Self <: ojChartSeriesEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojChartSeriesEventMap] (val x: Self) extends AnyVal {
     
     inline def setAreaColorChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "areaColorChanged", value.asInstanceOf[js.Any])
     

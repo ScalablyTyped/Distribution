@@ -43,7 +43,8 @@ object IndexRequest {
     __obj.asInstanceOf[IndexRequest[TDocument]]
   }
   
-  extension [Self <: IndexRequest[?], TDocument](x: Self & IndexRequest[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexRequest[?], TDocument] (val x: Self & IndexRequest[TDocument]) extends AnyVal {
     
     inline def setDocument(value: TDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MatchRange {
     __obj.asInstanceOf[MatchRange]
   }
   
-  extension [Self <: MatchRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

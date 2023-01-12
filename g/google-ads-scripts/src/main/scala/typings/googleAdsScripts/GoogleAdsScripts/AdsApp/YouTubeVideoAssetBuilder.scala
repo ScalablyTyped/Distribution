@@ -38,7 +38,8 @@ object YouTubeVideoAssetBuilder {
     __obj.asInstanceOf[YouTubeVideoAssetBuilder]
   }
   
-  extension [Self <: YouTubeVideoAssetBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YouTubeVideoAssetBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithName(value: String => YouTubeVideoAssetBuilder): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
     

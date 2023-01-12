@@ -67,7 +67,8 @@ object CAPICOM_PROV_TYPE {
     __obj.asInstanceOf[CAPICOM_PROV_TYPE]
   }
   
-  extension [Self <: CAPICOM_PROV_TYPE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_PROV_TYPE] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_PROV_DH_SCHANNEL(value: `18`): Self = StObject.set(x, "CAPICOM_PROV_DH_SCHANNEL", value.asInstanceOf[js.Any])
     

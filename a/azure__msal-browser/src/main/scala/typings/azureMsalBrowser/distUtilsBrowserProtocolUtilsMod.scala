@@ -44,7 +44,8 @@ object distUtilsBrowserProtocolUtilsMod {
       __obj.asInstanceOf[BrowserStateObject]
     }
     
-    extension [Self <: BrowserStateObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserStateObject] (val x: Self) extends AnyVal {
       
       inline def setInteractionType(value: InteractionType): Self = StObject.set(x, "interactionType", value.asInstanceOf[js.Any])
     }

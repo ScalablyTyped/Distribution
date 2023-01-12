@@ -51,7 +51,8 @@ object TimeDriven {
     __obj.asInstanceOf[TimeDriven]
   }
   
-  extension [Self <: TimeDriven](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeDriven] (val x: Self) extends AnyVal {
     
     inline def setAuthMode(value: AuthMode): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
     

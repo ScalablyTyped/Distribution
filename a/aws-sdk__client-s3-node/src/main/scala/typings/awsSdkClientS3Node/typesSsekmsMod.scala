@@ -22,7 +22,8 @@ object typesSsekmsMod {
       __obj.asInstanceOf[_SSEKMS]
     }
     
-    extension [Self <: _SSEKMS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _SSEKMS] (val x: Self) extends AnyVal {
       
       inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     }

@@ -74,7 +74,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[AwsAuthInputConfig]
     }
     
-    extension [Self <: AwsAuthInputConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwsAuthInputConfig] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    extension [Self <: PreviouslyResolved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
       
       inline def setCredentialDefaultProvider(value: Any => MemoizedProvider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       
@@ -244,7 +246,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[SigV4AuthInputConfig]
     }
     
-    extension [Self <: SigV4AuthInputConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SigV4AuthInputConfig] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
@@ -296,7 +299,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[SigV4PreviouslyResolved]
     }
     
-    extension [Self <: SigV4PreviouslyResolved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SigV4PreviouslyResolved] (val x: Self) extends AnyVal {
       
       inline def setCredentialDefaultProvider(value: Any => MemoizedProvider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       

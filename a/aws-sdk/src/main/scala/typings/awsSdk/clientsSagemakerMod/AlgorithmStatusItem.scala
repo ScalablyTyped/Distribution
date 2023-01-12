@@ -28,7 +28,8 @@ object AlgorithmStatusItem {
     __obj.asInstanceOf[AlgorithmStatusItem]
   }
   
-  extension [Self <: AlgorithmStatusItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlgorithmStatusItem] (val x: Self) extends AnyVal {
     
     inline def setFailureReason(value: String): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

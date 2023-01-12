@@ -37,7 +37,8 @@ object I18nPluginOptions {
     __obj.asInstanceOf[I18nPluginOptions]
   }
   
-  extension [Self <: I18nPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18nPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setGlobalInstall(value: Boolean): Self = StObject.set(x, "globalInstall", value.asInstanceOf[js.Any])
     

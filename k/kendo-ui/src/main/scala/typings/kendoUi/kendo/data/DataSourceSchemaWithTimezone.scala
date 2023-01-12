@@ -17,7 +17,8 @@ object DataSourceSchemaWithTimezone {
     __obj.asInstanceOf[DataSourceSchemaWithTimezone]
   }
   
-  extension [Self <: DataSourceSchemaWithTimezone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSchemaWithTimezone] (val x: Self) extends AnyVal {
     
     inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     

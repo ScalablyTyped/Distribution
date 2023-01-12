@@ -40,7 +40,8 @@ object distTypesRemoteProviderRemoteProviderInitMod {
       __obj.asInstanceOf[RemoteProviderConfig]
     }
     
-    extension [Self <: RemoteProviderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteProviderConfig] (val x: Self) extends AnyVal {
       
       inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object distTypesRemoteProviderRemoteProviderInitMod {
       __obj.asInstanceOf[RemoteProviderInit]
     }
     
-    extension [Self <: RemoteProviderInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteProviderInit] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       

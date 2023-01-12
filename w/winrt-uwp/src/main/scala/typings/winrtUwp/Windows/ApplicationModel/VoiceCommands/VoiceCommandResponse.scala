@@ -32,7 +32,8 @@ object VoiceCommandResponse {
     __obj.asInstanceOf[VoiceCommandResponse]
   }
   
-  extension [Self <: VoiceCommandResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceCommandResponse] (val x: Self) extends AnyVal {
     
     inline def setAppLaunchArgument(value: String): Self = StObject.set(x, "appLaunchArgument", value.asInstanceOf[js.Any])
     

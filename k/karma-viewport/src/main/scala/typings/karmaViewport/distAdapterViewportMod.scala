@@ -159,7 +159,8 @@ object distAdapterViewportMod {
       __obj.asInstanceOf[ViewportBreakpoint]
     }
     
-    extension [Self <: ViewportBreakpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewportBreakpoint] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object distAdapterViewportMod {
       __obj.asInstanceOf[ViewportConfiguration]
     }
     
-    extension [Self <: ViewportConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewportConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBreakpoints(value: js.Array[ViewportBreakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       

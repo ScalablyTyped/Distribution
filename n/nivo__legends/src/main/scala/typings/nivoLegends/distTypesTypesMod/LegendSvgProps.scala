@@ -72,7 +72,8 @@ object LegendSvgProps {
     __obj.asInstanceOf[LegendSvgProps]
   }
   
-  extension [Self <: LegendSvgProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendSvgProps] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Datum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

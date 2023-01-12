@@ -101,7 +101,8 @@ object PlaceSearchRequest {
     __obj.asInstanceOf[PlaceSearchRequest]
   }
   
-  extension [Self <: PlaceSearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceSearchRequest] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

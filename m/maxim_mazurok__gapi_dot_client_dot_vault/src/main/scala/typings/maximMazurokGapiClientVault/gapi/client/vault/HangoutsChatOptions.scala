@@ -16,7 +16,8 @@ object HangoutsChatOptions {
     __obj.asInstanceOf[HangoutsChatOptions]
   }
   
-  extension [Self <: HangoutsChatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HangoutsChatOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeRooms(value: Boolean): Self = StObject.set(x, "includeRooms", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object heatmap {
     __obj.asInstanceOf[heatmap]
   }
   
-  extension [Self <: heatmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: heatmap] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderer(value: heatmapCreateRendererParams => js.Promise[HeatmapRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object HashMsgHex {
     __obj.asInstanceOf[HashMsgHex]
   }
   
-  extension [Self <: HashMsgHex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashMsgHex] (val x: Self) extends AnyVal {
     
     inline def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     

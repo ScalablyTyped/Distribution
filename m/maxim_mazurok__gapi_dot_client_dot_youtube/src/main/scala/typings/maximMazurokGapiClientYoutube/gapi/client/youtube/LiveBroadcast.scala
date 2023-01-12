@@ -40,7 +40,8 @@ object LiveBroadcast {
     __obj.asInstanceOf[LiveBroadcast]
   }
   
-  extension [Self <: LiveBroadcast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveBroadcast] (val x: Self) extends AnyVal {
     
     inline def setContentDetails(value: LiveBroadcastContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     

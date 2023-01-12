@@ -17,7 +17,8 @@ object BootstrapGridBaseEventMap {
     __obj.asInstanceOf[BootstrapGridBaseEventMap]
   }
   
-  extension [Self <: BootstrapGridBaseEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapGridBaseEventMap] (val x: Self) extends AnyVal {
     
     inline def setToolbarItemClick(value: GridToolbarItemClickEventArgs): Self = StObject.set(x, "toolbarItemClick", value.asInstanceOf[js.Any])
   }

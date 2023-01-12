@@ -52,7 +52,8 @@ object RecurrencePattern {
     __obj.asInstanceOf[RecurrencePattern]
   }
   
-  extension [Self <: RecurrencePattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecurrencePattern] (val x: Self) extends AnyVal {
     
     inline def setDayOfMonth(value: Double): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
     

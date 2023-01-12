@@ -29,7 +29,8 @@ object Completer {
     __obj.asInstanceOf[Completer]
   }
   
-  extension [Self <: Completer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Completer] (val x: Self) extends AnyVal {
     
     inline def setGetCompletions(value: (Editor, IEditSession, Position, String, CompletionCallback) => Unit): Self = StObject.set(x, "getCompletions", js.Any.fromFunction5(value))
     

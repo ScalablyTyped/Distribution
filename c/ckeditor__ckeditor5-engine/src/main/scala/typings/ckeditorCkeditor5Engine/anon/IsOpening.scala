@@ -15,7 +15,8 @@ object IsOpening {
     __obj.asInstanceOf[IsOpening]
   }
   
-  extension [Self <: IsOpening](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsOpening] (val x: Self) extends AnyVal {
     
     inline def setIsOpening(value: Boolean): Self = StObject.set(x, "isOpening", value.asInstanceOf[js.Any])
   }

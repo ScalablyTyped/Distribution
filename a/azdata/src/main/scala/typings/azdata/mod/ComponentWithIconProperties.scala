@@ -35,7 +35,8 @@ object ComponentWithIconProperties {
     __obj.asInstanceOf[ComponentWithIconProperties]
   }
   
-  extension [Self <: ComponentWithIconProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentWithIconProperties] (val x: Self) extends AnyVal {
     
     inline def setIconHeight(value: Double | String): Self = StObject.set(x, "iconHeight", value.asInstanceOf[js.Any])
     

@@ -121,7 +121,8 @@ object componentsDropdownDropdownContainerMod {
       __obj.asInstanceOf[DropdownContainerModifierProps]
     }
     
-    extension [Self <: DropdownContainerModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownContainerModifierProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -259,7 +260,8 @@ object componentsDropdownDropdownContainerMod {
       __obj.asInstanceOf[DropdownContainerProps]
     }
     
-    extension [Self <: DropdownContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownContainerProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -444,7 +446,8 @@ object componentsDropdownDropdownContainerMod {
       __obj.asInstanceOf[DropdownContainerState]
     }
     
-    extension [Self <: DropdownContainerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownContainerState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
@@ -462,7 +465,8 @@ object componentsDropdownDropdownContainerMod {
       __obj.asInstanceOf[DropdownVariables]
     }
     
-    extension [Self <: DropdownVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }
@@ -479,7 +483,8 @@ object componentsDropdownDropdownContainerMod {
       __obj.asInstanceOf[DropdownVariablesDefaults]
     }
     
-    extension [Self <: DropdownVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }

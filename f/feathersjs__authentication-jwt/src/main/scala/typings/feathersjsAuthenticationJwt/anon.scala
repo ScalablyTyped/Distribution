@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[BodyKey]
     }
     
-    extension [Self <: BodyKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyKey] (val x: Self) extends AnyVal {
       
       inline def setBodyKey(value: String): Self = StObject.set(x, "bodyKey", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[FromAuthHeader]
     }
     
-    extension [Self <: FromAuthHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromAuthHeader] (val x: Self) extends AnyVal {
       
       inline def setFromAuthHeader(value: () => JwtFromRequestFunction): Self = StObject.set(x, "fromAuthHeader", js.Any.fromFunction0(value))
       
@@ -114,7 +116,8 @@ object anon {
       __obj.asInstanceOf[PartialFeathersAuthentica]
     }
     
-    extension [Self <: PartialFeathersAuthentica](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFeathersAuthentica] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       

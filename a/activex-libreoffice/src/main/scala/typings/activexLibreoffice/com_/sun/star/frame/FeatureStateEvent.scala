@@ -54,7 +54,8 @@ object FeatureStateEvent {
     __obj.asInstanceOf[FeatureStateEvent]
   }
   
-  extension [Self <: FeatureStateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureStateEvent] (val x: Self) extends AnyVal {
     
     inline def setFeatureDescriptor(value: String): Self = StObject.set(x, "FeatureDescriptor", value.asInstanceOf[js.Any])
     

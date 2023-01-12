@@ -17,7 +17,8 @@ object DoctorTreatmentStep {
     __obj.asInstanceOf[DoctorTreatmentStep]
   }
   
-  extension [Self <: DoctorTreatmentStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoctorTreatmentStep] (val x: Self) extends AnyVal {
     
     inline def setTreat(value: () => js.Promise[Unit]): Self = StObject.set(x, "treat", js.Any.fromFunction0(value))
   }

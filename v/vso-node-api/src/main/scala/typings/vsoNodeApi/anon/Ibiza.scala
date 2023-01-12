@@ -29,7 +29,8 @@ object Ibiza {
     __obj.asInstanceOf[Ibiza]
   }
   
-  extension [Self <: Ibiza](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ibiza] (val x: Self) extends AnyVal {
     
     inline def setIbiza(value: scala.Double): Self = StObject.set(x, "ibiza", value.asInstanceOf[js.Any])
     

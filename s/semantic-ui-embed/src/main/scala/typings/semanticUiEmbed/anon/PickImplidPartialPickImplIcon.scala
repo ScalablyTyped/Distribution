@@ -27,7 +27,8 @@ object PickImplidPartialPickImplIcon {
     __obj.asInstanceOf[PickImplidPartialPickImplIcon]
   }
   
-  extension [Self <: PickImplidPartialPickImplIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplidPartialPickImplIcon] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TypeofDocument {
     __obj.asInstanceOf[TypeofDocument]
   }
   
-  extension [Self <: TypeofDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDocument] (val x: Self) extends AnyVal {
     
     inline def setError(value: Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
   }

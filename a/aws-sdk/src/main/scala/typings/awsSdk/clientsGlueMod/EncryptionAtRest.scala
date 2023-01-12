@@ -23,7 +23,8 @@ object EncryptionAtRest {
     __obj.asInstanceOf[EncryptionAtRest]
   }
   
-  extension [Self <: EncryptionAtRest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptionAtRest] (val x: Self) extends AnyVal {
     
     inline def setCatalogEncryptionMode(value: CatalogEncryptionMode): Self = StObject.set(x, "CatalogEncryptionMode", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ResourcePolicy {
     __obj.asInstanceOf[ResourcePolicy]
   }
   
-  extension [Self <: ResourcePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicy] (val x: Self) extends AnyVal {
     
     inline def setLastUpdatedTime(value: Timestamp): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     

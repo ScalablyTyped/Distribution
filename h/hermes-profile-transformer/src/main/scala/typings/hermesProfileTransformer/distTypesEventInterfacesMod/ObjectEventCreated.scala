@@ -22,7 +22,8 @@ object ObjectEventCreated {
     __obj.asInstanceOf[ObjectEventCreated]
   }
   
-  extension [Self <: ObjectEventCreated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectEventCreated] (val x: Self) extends AnyVal {
     
     inline def setPh(value: OBJECT_EVENTS_CREATED): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     

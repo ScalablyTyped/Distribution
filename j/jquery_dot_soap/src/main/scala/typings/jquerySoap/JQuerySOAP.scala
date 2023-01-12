@@ -63,7 +63,8 @@ object JQuerySOAP {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAppendMethodToURL(value: Boolean): Self = StObject.set(x, "appendMethodToURL", value.asInstanceOf[js.Any])
       
@@ -242,7 +243,8 @@ object JQuerySOAP {
       __obj.asInstanceOf[SOAPResponse]
     }
     
-    extension [Self <: SOAPResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SOAPResponse] (val x: Self) extends AnyVal {
       
       inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       

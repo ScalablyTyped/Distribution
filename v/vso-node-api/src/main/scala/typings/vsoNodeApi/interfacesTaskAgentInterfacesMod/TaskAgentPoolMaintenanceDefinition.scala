@@ -53,7 +53,8 @@ object TaskAgentPoolMaintenanceDefinition {
     __obj.asInstanceOf[TaskAgentPoolMaintenanceDefinition]
   }
   
-  extension [Self <: TaskAgentPoolMaintenanceDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentPoolMaintenanceDefinition] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

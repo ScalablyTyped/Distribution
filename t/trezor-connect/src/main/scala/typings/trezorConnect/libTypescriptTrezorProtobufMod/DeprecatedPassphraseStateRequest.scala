@@ -15,7 +15,8 @@ object DeprecatedPassphraseStateRequest {
     __obj.asInstanceOf[DeprecatedPassphraseStateRequest]
   }
   
-  extension [Self <: DeprecatedPassphraseStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecatedPassphraseStateRequest] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

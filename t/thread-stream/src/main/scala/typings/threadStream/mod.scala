@@ -97,7 +97,8 @@ object mod {
       __obj.asInstanceOf[ThreadStreamOptions]
     }
     
-    extension [Self <: ThreadStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreadStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       

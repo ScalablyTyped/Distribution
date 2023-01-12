@@ -473,7 +473,8 @@ object BLECentralPlugin {
       __obj.asInstanceOf[BLEError]
     }
     
-    extension [Self <: BLEError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BLEError] (val x: Self) extends AnyVal {
       
       inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
@@ -563,7 +564,8 @@ object BLECentralPlugin {
       __obj.asInstanceOf[L2CAPOptions]
     }
     
-    extension [Self <: L2CAPOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: L2CAPOptions] (val x: Self) extends AnyVal {
       
       inline def setPsm(value: Double): Self = StObject.set(x, "psm", value.asInstanceOf[js.Any])
       
@@ -611,7 +613,8 @@ object BLECentralPlugin {
       __obj.asInstanceOf[PeripheralCharacteristic]
     }
     
-    extension [Self <: PeripheralCharacteristic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeripheralCharacteristic] (val x: Self) extends AnyVal {
       
       inline def setCharacteristic(value: String): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
       
@@ -654,7 +657,8 @@ object BLECentralPlugin {
       __obj.asInstanceOf[PeripheralData]
     }
     
-    extension [Self <: PeripheralData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeripheralData] (val x: Self) extends AnyVal {
       
       inline def setAdvertising(value: js.typedarray.ArrayBuffer | Any): Self = StObject.set(x, "advertising", value.asInstanceOf[js.Any])
       
@@ -691,7 +695,8 @@ object BLECentralPlugin {
       __obj.asInstanceOf[PeripheralDataExtended]
     }
     
-    extension [Self <: PeripheralDataExtended](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeripheralDataExtended] (val x: Self) extends AnyVal {
       
       inline def setCharacteristics(value: js.Array[PeripheralCharacteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
       
@@ -736,7 +741,8 @@ object BLECentralPlugin {
       __obj.asInstanceOf[RestoredState]
     }
     
-    extension [Self <: RestoredState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestoredState] (val x: Self) extends AnyVal {
       
       inline def setPeripherals(value: js.Array[PeripheralDataExtended]): Self = StObject.set(x, "peripherals", value.asInstanceOf[js.Any])
       
@@ -788,7 +794,8 @@ object BLECentralPlugin {
       __obj.asInstanceOf[StartScanOptions]
     }
     
-    extension [Self <: StartScanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartScanOptions] (val x: Self) extends AnyVal {
       
       inline def setCallbackType(value: all | first | lost): Self = StObject.set(x, "callbackType", value.asInstanceOf[js.Any])
       

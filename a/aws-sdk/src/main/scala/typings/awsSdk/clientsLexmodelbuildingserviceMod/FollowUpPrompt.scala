@@ -23,7 +23,8 @@ object FollowUpPrompt {
     __obj.asInstanceOf[FollowUpPrompt]
   }
   
-  extension [Self <: FollowUpPrompt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FollowUpPrompt] (val x: Self) extends AnyVal {
     
     inline def setPrompt(value: Prompt): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     

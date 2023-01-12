@@ -23,7 +23,8 @@ object DescribeAcceleratorsResponse {
     __obj.asInstanceOf[DescribeAcceleratorsResponse]
   }
   
-  extension [Self <: DescribeAcceleratorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAcceleratorsResponse] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorSet(value: ElasticInferenceAcceleratorSet): Self = StObject.set(x, "acceleratorSet", value.asInstanceOf[js.Any])
     

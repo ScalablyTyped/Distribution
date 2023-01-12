@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[FPSObject]
     }
     
-    extension [Self <: FPSObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FPSObject] (val x: Self) extends AnyVal {
       
       inline def setDecay(value: Double): Self = StObject.set(x, "decay", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[FPSOptions]
     }
     
-    extension [Self <: FPSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FPSOptions] (val x: Self) extends AnyVal {
       
       inline def setDecay(value: Double): Self = StObject.set(x, "decay", value.asInstanceOf[js.Any])
       

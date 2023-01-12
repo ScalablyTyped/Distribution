@@ -85,7 +85,8 @@ object IHistoryService {
     __obj.asInstanceOf[IHistoryService]
   }
   
-  extension [Self <: IHistoryService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHistoryService] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: IHistoryItem => IHistoryItem): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

@@ -101,7 +101,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IntlRelativeFormatOptions]
     }
     
-    extension [Self <: IntlRelativeFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntlRelativeFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: STYLE): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

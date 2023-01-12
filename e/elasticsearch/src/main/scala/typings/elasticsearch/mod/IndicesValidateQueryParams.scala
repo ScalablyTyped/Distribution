@@ -46,7 +46,8 @@ object IndicesValidateQueryParams {
     __obj.asInstanceOf[IndicesValidateQueryParams]
   }
   
-  extension [Self <: IndicesValidateQueryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesValidateQueryParams] (val x: Self) extends AnyVal {
     
     inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     

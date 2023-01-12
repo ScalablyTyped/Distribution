@@ -21,7 +21,8 @@ object Printing3DBaseMaterialGroup {
     __obj.asInstanceOf[Printing3DBaseMaterialGroup]
   }
   
-  extension [Self <: Printing3DBaseMaterialGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DBaseMaterialGroup] (val x: Self) extends AnyVal {
     
     inline def setBases(value: IVector[Printing3DBaseMaterial]): Self = StObject.set(x, "bases", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SqlFragmentType {
     __obj.asInstanceOf[SqlFragmentType]
   }
   
-  extension [Self <: SqlFragmentType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlFragmentType] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[PrimitiveValueExpressionType]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

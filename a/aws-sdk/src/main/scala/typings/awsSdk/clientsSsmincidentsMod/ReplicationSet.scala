@@ -61,7 +61,8 @@ object ReplicationSet {
     __obj.asInstanceOf[ReplicationSet]
   }
   
-  extension [Self <: ReplicationSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationSet] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

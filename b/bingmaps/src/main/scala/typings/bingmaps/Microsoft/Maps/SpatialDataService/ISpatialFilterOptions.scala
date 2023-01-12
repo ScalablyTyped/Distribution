@@ -43,7 +43,8 @@ object ISpatialFilterOptions {
     __obj.asInstanceOf[ISpatialFilterOptions]
   }
   
-  extension [Self <: ISpatialFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpatialFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: String | Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

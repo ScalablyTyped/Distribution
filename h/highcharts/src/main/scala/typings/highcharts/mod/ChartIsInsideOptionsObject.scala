@@ -27,7 +27,8 @@ object ChartIsInsideOptionsObject {
     __obj.asInstanceOf[ChartIsInsideOptionsObject]
   }
   
-  extension [Self <: ChartIsInsideOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartIsInsideOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

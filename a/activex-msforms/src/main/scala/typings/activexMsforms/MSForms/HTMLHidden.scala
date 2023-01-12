@@ -23,7 +23,8 @@ object HTMLHidden {
     __obj.asInstanceOf[HTMLHidden]
   }
   
-  extension [Self <: HTMLHidden](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLHidden] (val x: Self) extends AnyVal {
     
     inline def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     

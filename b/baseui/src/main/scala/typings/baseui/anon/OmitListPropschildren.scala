@@ -26,7 +26,8 @@ object OmitListPropschildren {
     __obj.asInstanceOf[OmitListPropschildren]
   }
   
-  extension [Self <: OmitListPropschildren](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitListPropschildren] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ReactNode]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

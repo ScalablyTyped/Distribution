@@ -86,7 +86,8 @@ object IScale {
     __obj.asInstanceOf[IScale]
   }
   
-  extension [Self <: IScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScale] (val x: Self) extends AnyVal {
     
     inline def setCalcNumberOfTickmarks(value: (float, float, int) => int): Self = StObject.set(x, "calcNumberOfTickmarks", js.Any.fromFunction3(value))
     

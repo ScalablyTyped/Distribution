@@ -72,7 +72,8 @@ object IBatch {
     __obj.asInstanceOf[IBatch]
   }
   
-  extension [Self <: IBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBatch] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* operation */ js.UndefOr[Any] => IBatch): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

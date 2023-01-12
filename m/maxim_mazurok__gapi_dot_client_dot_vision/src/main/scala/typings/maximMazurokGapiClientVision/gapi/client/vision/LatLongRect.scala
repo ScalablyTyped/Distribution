@@ -19,7 +19,8 @@ object LatLongRect {
     __obj.asInstanceOf[LatLongRect]
   }
   
-  extension [Self <: LatLongRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatLongRect] (val x: Self) extends AnyVal {
     
     inline def setMaxLatLng(value: LatLng): Self = StObject.set(x, "maxLatLng", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object internal {
       __obj.asInstanceOf[NetworkConfigBase[M, IF, OF]]
     }
     
-    extension [Self <: NetworkConfigBase[?, ?, ?], M /* <: ManagedObject */, IF /* <: InterfaceType */, OF /* <: ObjectFunction */](x: Self & (NetworkConfigBase[M, IF, OF])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkConfigBase[?, ?, ?], M /* <: ManagedObject */, IF /* <: InterfaceType */, OF /* <: ObjectFunction */] (val x: Self & (NetworkConfigBase[M, IF, OF])) extends AnyVal {
       
       inline def setCellular(
         value: /* import warning: importer.ImportType#apply Failed type conversion: IF extends 'partial' ? chrome-apps.chrome.networking.onc.CellularBase : chrome-apps.chrome.networking.onc.CellularProperties<M> | undefined */ js.Any

@@ -18,7 +18,8 @@ object DescribeDomainChangeProgressResponse {
     __obj.asInstanceOf[DescribeDomainChangeProgressResponse]
   }
   
-  extension [Self <: DescribeDomainChangeProgressResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDomainChangeProgressResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeProgressStatus(value: ChangeProgressStatusDetails): Self = StObject.set(x, "ChangeProgressStatus", value.asInstanceOf[js.Any])
     

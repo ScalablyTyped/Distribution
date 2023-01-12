@@ -38,7 +38,8 @@ object libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypes
       __obj.asInstanceOf[IPeoplePickerItemSelectedProps]
     }
     
-    extension [Self <: IPeoplePickerItemSelectedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeoplePickerItemSelectedProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(
         value: IStyleFunctionOrObject[IPeoplePickerItemSelectedStyleProps, IPeoplePickerItemSelectedStyles]
@@ -75,7 +76,8 @@ object libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypes
       __obj.asInstanceOf[IPeoplePickerItemSelectedStyleProps]
     }
     
-    extension [Self <: IPeoplePickerItemSelectedStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeoplePickerItemSelectedStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypes
       __obj.asInstanceOf[IPeoplePickerItemSelectedStyles]
     }
     
-    extension [Self <: IPeoplePickerItemSelectedStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeoplePickerItemSelectedStyles] (val x: Self) extends AnyVal {
       
       inline def setItemContent(value: IStyle): Self = StObject.set(x, "itemContent", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypes
       __obj.asInstanceOf[IPeoplePickerItemSelectedSubComponentStyles]
     }
     
-    extension [Self <: IPeoplePickerItemSelectedSubComponentStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeoplePickerItemSelectedSubComponentStyles] (val x: Self) extends AnyVal {
       
       inline def setPersona(value: IStyleFunctionOrObject[IPersonaStyleProps, Any]): Self = StObject.set(x, "persona", value.asInstanceOf[js.Any])
       
@@ -186,7 +190,8 @@ object libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypes
       __obj.asInstanceOf[IPeoplePickerItemSharedProps]
     }
     
-    extension [Self <: IPeoplePickerItemSharedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeoplePickerItemSharedProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -227,7 +232,8 @@ object libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypes
       __obj.asInstanceOf[IPeoplePickerItemSuggestionProps]
     }
     
-    extension [Self <: IPeoplePickerItemSuggestionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeoplePickerItemSuggestionProps] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
@@ -265,7 +271,8 @@ object libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypes
       __obj.asInstanceOf[IPeoplePickerItemSuggestionStyleProps]
     }
     
-    extension [Self <: IPeoplePickerItemSuggestionStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeoplePickerItemSuggestionStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -293,7 +300,8 @@ object libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypes
       __obj.asInstanceOf[IPeoplePickerItemSuggestionStyles]
     }
     
-    extension [Self <: IPeoplePickerItemSuggestionStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeoplePickerItemSuggestionStyles] (val x: Self) extends AnyVal {
       
       inline def setPersonaWrapper(value: IStyle): Self = StObject.set(x, "personaWrapper", value.asInstanceOf[js.Any])
       
@@ -327,7 +335,8 @@ object libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypes
       __obj.asInstanceOf[IPersonaWithMenu]
     }
     
-    extension [Self <: IPersonaWithMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPersonaWithMenu] (val x: Self) extends AnyVal {
       
       inline def setMenuItems(value: js.Array[IContextualMenuItem]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       

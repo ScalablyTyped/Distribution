@@ -273,7 +273,8 @@ object PlotTrendlineDataLabelsOptions {
     __obj.asInstanceOf[PlotTrendlineDataLabelsOptions]
   }
   
-  extension [Self <: PlotTrendlineDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTrendlineDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

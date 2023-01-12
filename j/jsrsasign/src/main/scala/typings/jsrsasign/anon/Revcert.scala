@@ -34,7 +34,8 @@ object Revcert {
     __obj.asInstanceOf[Revcert]
   }
   
-  extension [Self <: Revcert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Revcert] (val x: Self) extends AnyVal {
     
     inline def setExt(value: js.Array[ExtParam]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     

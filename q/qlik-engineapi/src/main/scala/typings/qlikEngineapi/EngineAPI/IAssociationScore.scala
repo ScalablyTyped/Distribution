@@ -58,7 +58,8 @@ object IAssociationScore {
     __obj.asInstanceOf[IAssociationScore]
   }
   
-  extension [Self <: IAssociationScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAssociationScore] (val x: Self) extends AnyVal {
     
     inline def setQField1Scores(value: IFieldScores): Self = StObject.set(x, "qField1Scores", value.asInstanceOf[js.Any])
     

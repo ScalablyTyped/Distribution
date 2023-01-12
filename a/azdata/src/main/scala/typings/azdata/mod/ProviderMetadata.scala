@@ -15,7 +15,8 @@ object ProviderMetadata {
     __obj.asInstanceOf[ProviderMetadata]
   }
   
-  extension [Self <: ProviderMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProviderMetadata] (val x: Self) extends AnyVal {
     
     inline def setObjectMetadata(value: js.Array[ObjectMetadata]): Self = StObject.set(x, "objectMetadata", value.asInstanceOf[js.Any])
     

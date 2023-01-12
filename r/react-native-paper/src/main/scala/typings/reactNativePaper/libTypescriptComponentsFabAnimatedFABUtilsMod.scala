@@ -34,7 +34,8 @@ object libTypescriptComponentsFabAnimatedFABUtilsMod {
       __obj.asInstanceOf[CombinedStyles]
     }
     
-    extension [Self <: CombinedStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CombinedStyles] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteFill(value: WithAnimatedValue[ViewStyle]): Self = StObject.set(x, "absoluteFill", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object libTypescriptComponentsFabAnimatedFABUtilsMod {
       __obj.asInstanceOf[GetCombinedStylesProps]
     }
     
-    extension [Self <: GetCombinedStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCombinedStylesProps] (val x: Self) extends AnyVal {
       
       inline def setAnimFAB(value: Value): Self = StObject.set(x, "animFAB", value.asInstanceOf[js.Any])
       

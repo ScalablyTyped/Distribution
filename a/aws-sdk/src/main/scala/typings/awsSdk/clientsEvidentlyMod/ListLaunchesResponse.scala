@@ -23,7 +23,8 @@ object ListLaunchesResponse {
     __obj.asInstanceOf[ListLaunchesResponse]
   }
   
-  extension [Self <: ListLaunchesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLaunchesResponse] (val x: Self) extends AnyVal {
     
     inline def setLaunches(value: LaunchesList): Self = StObject.set(x, "launches", value.asInstanceOf[js.Any])
     

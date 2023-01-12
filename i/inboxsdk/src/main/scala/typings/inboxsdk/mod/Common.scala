@@ -25,7 +25,8 @@ object Common {
       __obj.asInstanceOf[Contact]
     }
     
-    extension [Self <: Contact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
       
       inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object Common {
       __obj.asInstanceOf[PositionOptions]
     }
     
-    extension [Self <: PositionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionOptions] (val x: Self) extends AnyVal {
       
       inline def setBottomBuffer(value: Double): Self = StObject.set(x, "bottomBuffer", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object Common {
       __obj.asInstanceOf[PreAutoCloseEvent]
     }
     
-    extension [Self <: PreAutoCloseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreAutoCloseEvent] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -180,7 +183,8 @@ object Common {
       __obj.asInstanceOf[SimpleElementView]
     }
     
-    extension [Self <: SimpleElementView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleElementView] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

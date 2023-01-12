@@ -50,7 +50,8 @@ object PartialSharedStyleProps {
     __obj.asInstanceOf[PartialSharedStyleProps]
   }
   
-  extension [Self <: PartialSharedStyleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSharedStyleProps] (val x: Self) extends AnyVal {
     
     inline def set$colors(value: CustomColors): Self = StObject.set(x, "$colors", value.asInstanceOf[js.Any])
     

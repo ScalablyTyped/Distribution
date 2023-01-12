@@ -59,7 +59,8 @@ object AccountSignatureProvider {
     __obj.asInstanceOf[AccountSignatureProvider]
   }
   
-  extension [Self <: AccountSignatureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSignatureProvider] (val x: Self) extends AnyVal {
     
     inline def setIsRequired(value: String): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     

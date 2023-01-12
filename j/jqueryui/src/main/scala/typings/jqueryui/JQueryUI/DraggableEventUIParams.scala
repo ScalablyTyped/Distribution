@@ -24,7 +24,8 @@ object DraggableEventUIParams {
     __obj.asInstanceOf[DraggableEventUIParams]
   }
   
-  extension [Self <: DraggableEventUIParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableEventUIParams] (val x: Self) extends AnyVal {
     
     inline def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     

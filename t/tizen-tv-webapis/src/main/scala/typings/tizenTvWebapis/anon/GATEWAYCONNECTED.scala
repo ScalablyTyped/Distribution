@@ -93,7 +93,8 @@ object GATEWAYCONNECTED {
     __obj.asInstanceOf[GATEWAYCONNECTED]
   }
   
-  extension [Self <: GATEWAYCONNECTED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GATEWAYCONNECTED] (val x: Self) extends AnyVal {
     
     inline def setGATEWAY_CONNECTED(value: `4`): Self = StObject.set(x, "GATEWAY_CONNECTED", value.asInstanceOf[js.Any])
     

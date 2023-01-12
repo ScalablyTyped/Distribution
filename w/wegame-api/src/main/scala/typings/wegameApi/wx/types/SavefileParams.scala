@@ -25,7 +25,8 @@ object SavefileParams {
     __obj.asInstanceOf[SavefileParams]
   }
   
-  extension [Self <: SavefileParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavefileParams] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

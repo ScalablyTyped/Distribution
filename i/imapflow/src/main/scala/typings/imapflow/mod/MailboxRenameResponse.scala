@@ -17,7 +17,8 @@ object MailboxRenameResponse {
     __obj.asInstanceOf[MailboxRenameResponse]
   }
   
-  extension [Self <: MailboxRenameResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailboxRenameResponse] (val x: Self) extends AnyVal {
     
     inline def setNewPath(value: String): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
     

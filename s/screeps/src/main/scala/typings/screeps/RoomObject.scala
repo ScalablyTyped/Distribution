@@ -34,7 +34,8 @@ object RoomObject {
     __obj.asInstanceOf[RoomObject]
   }
   
-  extension [Self <: RoomObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomObject] (val x: Self) extends AnyVal {
     
     inline def setEffects(value: js.Array[RoomObjectEffect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     

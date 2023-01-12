@@ -16,7 +16,8 @@ object MaterialPluginGetAnimatables {
     __obj.asInstanceOf[MaterialPluginGetAnimatables]
   }
   
-  extension [Self <: MaterialPluginGetAnimatables](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterialPluginGetAnimatables] (val x: Self) extends AnyVal {
     
     inline def setAnimatables(value: js.Array[IAnimatable]): Self = StObject.set(x, "animatables", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object FirestoreStatics {
     __obj.asInstanceOf[FirestoreStatics]
   }
   
-  extension [Self <: FirestoreStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirestoreStatics] (val x: Self) extends AnyVal {
     
     inline def setBlob(value: TypeofBlob & Instantiable0[Blob]): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Constructor {
     __obj.asInstanceOf[Constructor[T]]
   }
   
-  extension [Self <: Constructor[?], T /* <: ClientOptions */](x: Self & Constructor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Constructor[?], T /* <: ClientOptions */] (val x: Self & Constructor[T]) extends AnyVal {
     
     inline def setConstructor(value: EnginePrototype[Any]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     

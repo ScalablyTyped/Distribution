@@ -86,7 +86,8 @@ object mod {
       __obj.asInstanceOf[ReactVideoRecorderProps]
     }
     
-    extension [Self <: ReactVideoRecorderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactVideoRecorderProps] (val x: Self) extends AnyVal {
       
       inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
@@ -272,7 +273,8 @@ object mod {
       __obj.asInstanceOf[VideoActionsProps]
     }
     
-    extension [Self <: VideoActionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoActionsProps] (val x: Self) extends AnyVal {
       
       inline def setCountdownTime(value: Double): Self = StObject.set(x, "countdownTime", value.asInstanceOf[js.Any])
       

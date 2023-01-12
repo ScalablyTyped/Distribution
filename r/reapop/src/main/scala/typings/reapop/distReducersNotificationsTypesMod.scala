@@ -43,7 +43,8 @@ object distReducersNotificationsTypesMod {
       __obj.asInstanceOf[NewNotification]
     }
     
-    extension [Self <: NewNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewNotification] (val x: Self) extends AnyVal {
       
       inline def setAllowHTML(value: Boolean): Self = StObject.set(x, "allowHTML", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object distReducersNotificationsTypesMod {
       __obj.asInstanceOf[Notification]
     }
     
-    extension [Self <: Notification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
       
       inline def setAllowHTML(value: Boolean): Self = StObject.set(x, "allowHTML", value.asInstanceOf[js.Any])
       
@@ -203,7 +205,8 @@ object distReducersNotificationsTypesMod {
       __obj.asInstanceOf[NotificationButton]
     }
     
-    extension [Self <: NotificationButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationButton] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

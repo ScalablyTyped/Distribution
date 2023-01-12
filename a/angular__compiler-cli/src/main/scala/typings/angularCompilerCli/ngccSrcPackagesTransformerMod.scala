@@ -72,7 +72,8 @@ object ngccSrcPackagesTransformerMod {
       __obj.asInstanceOf[ProgramAnalyses]
     }
     
-    extension [Self <: ProgramAnalyses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgramAnalyses] (val x: Self) extends AnyVal {
       
       inline def setDecorationAnalyses(value: Map[SourceFile, CompiledFile]): Self = StObject.set(x, "decorationAnalyses", value.asInstanceOf[js.Any])
       

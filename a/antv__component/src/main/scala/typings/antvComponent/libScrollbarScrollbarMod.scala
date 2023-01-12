@@ -127,7 +127,8 @@ object libScrollbarScrollbarMod {
       __obj.asInstanceOf[ScrollbarCfg]
     }
     
-    extension [Self <: ScrollbarCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarCfg] (val x: Self) extends AnyVal {
       
       inline def setIsHorizontal(value: Boolean): Self = StObject.set(x, "isHorizontal", value.asInstanceOf[js.Any])
       
@@ -184,7 +185,8 @@ object libScrollbarScrollbarMod {
       __obj.asInstanceOf[ScrollbarStyle]
     }
     
-    extension [Self <: ScrollbarStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarStyle] (val x: Self) extends AnyVal {
       
       inline def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object libScrollbarScrollbarMod {
       __obj.asInstanceOf[ScrollbarTheme]
     }
     
-    extension [Self <: ScrollbarTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarTheme] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: PartialReadonlyScrollbarS): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

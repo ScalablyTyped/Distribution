@@ -27,7 +27,8 @@ object HillshadeLayer {
     __obj.asInstanceOf[HillshadeLayer]
   }
   
-  extension [Self <: HillshadeLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HillshadeLayer] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: HillshadeLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

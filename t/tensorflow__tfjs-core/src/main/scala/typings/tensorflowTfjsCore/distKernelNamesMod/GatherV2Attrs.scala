@@ -17,7 +17,8 @@ object GatherV2Attrs {
     __obj.asInstanceOf[GatherV2Attrs]
   }
   
-  extension [Self <: GatherV2Attrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatherV2Attrs] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

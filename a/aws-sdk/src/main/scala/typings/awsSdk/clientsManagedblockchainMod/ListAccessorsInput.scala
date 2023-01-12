@@ -23,7 +23,8 @@ object ListAccessorsInput {
     __obj.asInstanceOf[ListAccessorsInput]
   }
   
-  extension [Self <: ListAccessorsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccessorsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: AccessorListMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

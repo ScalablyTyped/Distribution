@@ -94,7 +94,8 @@ object Dialogify {
       __obj.asInstanceOf[AlertDialogOptions]
     }
     
-    extension [Self <: AlertDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setClose(value: js.ThisFunction0[/* this */ Dialogify, Unit]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object Dialogify {
       __obj.asInstanceOf[Button]
     }
     
-    extension [Self <: Button](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
       
       inline def setClick(value: TypeEventHandler[Dialogify, Null, Dialogify, Dialogify, click]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,8 @@ object Dialogify {
       __obj.asInstanceOf[ButtonImpl]
     }
     
-    extension [Self <: ButtonImpl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonImpl] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -220,7 +223,8 @@ object Dialogify {
       __obj.asInstanceOf[ButtonOption]
     }
     
-    extension [Self <: ButtonOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonOption] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: BUTTON_CENTER | BUTTON_LEFT | String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
@@ -244,7 +248,8 @@ object Dialogify {
       __obj.asInstanceOf[ButtonStyle]
     }
     
-    extension [Self <: ButtonStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonStyle] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -283,7 +288,8 @@ object Dialogify {
       __obj.asInstanceOf[ConfirmDialogOptions]
     }
     
-    extension [Self <: ConfirmDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: js.ThisFunction0[/* this */ Dialogify, Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -334,7 +340,8 @@ object Dialogify {
       __obj.asInstanceOf[DialogOptions]
     }
     
-    extension [Self <: DialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogOptions] (val x: Self) extends AnyVal {
       
       inline def setAjaxComplete(value: js.ThisFunction0[/* this */ Dialogify, Unit]): Self = StObject.set(x, "ajaxComplete", value.asInstanceOf[js.Any])
       
@@ -395,7 +402,8 @@ object Dialogify {
       __obj.asInstanceOf[DialogStyle]
     }
     
-    extension [Self <: DialogStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogStyle] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -433,7 +441,8 @@ object Dialogify {
       __obj.asInstanceOf[DialogifyConfig]
     }
     
-    extension [Self <: DialogifyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogifyConfig] (val x: Self) extends AnyVal {
       
       inline def setCloseButton(value: ButtonStyle): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       
@@ -477,7 +486,8 @@ object Dialogify {
       __obj.asInstanceOf[LocalizableButtonActions]
     }
     
-    extension [Self <: LocalizableButtonActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizableButtonActions] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -514,7 +524,8 @@ object Dialogify {
       __obj.asInstanceOf[PromptDialogOptions]
     }
     
-    extension [Self <: PromptDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: js.ThisFunction0[/* this */ Dialogify, Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -544,7 +555,8 @@ object Dialogify {
       __obj.asInstanceOf[SimpleDialogOptions]
     }
     
-    extension [Self <: SimpleDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setDialogOptions(value: DialogOptions): Self = StObject.set(x, "dialogOptions", value.asInstanceOf[js.Any])
       

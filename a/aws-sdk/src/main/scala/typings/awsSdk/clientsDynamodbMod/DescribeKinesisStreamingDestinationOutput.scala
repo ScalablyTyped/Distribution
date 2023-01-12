@@ -23,7 +23,8 @@ object DescribeKinesisStreamingDestinationOutput {
     __obj.asInstanceOf[DescribeKinesisStreamingDestinationOutput]
   }
   
-  extension [Self <: DescribeKinesisStreamingDestinationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeKinesisStreamingDestinationOutput] (val x: Self) extends AnyVal {
     
     inline def setKinesisDataStreamDestinations(value: KinesisDataStreamDestinations): Self = StObject.set(x, "KinesisDataStreamDestinations", value.asInstanceOf[js.Any])
     

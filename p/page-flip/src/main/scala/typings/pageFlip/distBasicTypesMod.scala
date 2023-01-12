@@ -26,7 +26,8 @@ object distBasicTypesMod {
       __obj.asInstanceOf[PageRect]
     }
     
-    extension [Self <: PageRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageRect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object distBasicTypesMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object distBasicTypesMod {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -111,7 +114,8 @@ object distBasicTypesMod {
       __obj.asInstanceOf[RectPoints]
     }
     
-    extension [Self <: RectPoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectPoints] (val x: Self) extends AnyVal {
       
       inline def setBottomLeft(value: Point): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object SellFiatTradeQuoteRequest {
     __obj.asInstanceOf[SellFiatTradeQuoteRequest]
   }
   
-  extension [Self <: SellFiatTradeQuoteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SellFiatTradeQuoteRequest] (val x: Self) extends AnyVal {
     
     inline def setAmountInCrypto(value: Boolean): Self = StObject.set(x, "amountInCrypto", value.asInstanceOf[js.Any])
     

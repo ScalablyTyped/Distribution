@@ -62,7 +62,8 @@ object SubscriptionTopicCanFilterBy {
     __obj.asInstanceOf[SubscriptionTopicCanFilterBy]
   }
   
-  extension [Self <: SubscriptionTopicCanFilterBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionTopicCanFilterBy] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

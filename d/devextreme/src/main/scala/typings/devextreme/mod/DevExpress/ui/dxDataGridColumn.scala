@@ -116,7 +116,8 @@ object dxDataGridColumn {
     __obj.asInstanceOf[dxDataGridColumn[TRowData, TKey]]
   }
   
-  extension [Self <: dxDataGridColumn[?, ?], TRowData, TKey](x: Self & (dxDataGridColumn[TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDataGridColumn[?, ?], TRowData, TKey] (val x: Self & (dxDataGridColumn[TRowData, TKey])) extends AnyVal {
     
     inline def setAllowExporting(value: Boolean): Self = StObject.set(x, "allowExporting", value.asInstanceOf[js.Any])
     

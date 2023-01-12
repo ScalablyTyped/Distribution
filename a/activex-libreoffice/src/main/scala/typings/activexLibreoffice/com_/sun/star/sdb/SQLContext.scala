@@ -37,7 +37,8 @@ object SQLContext {
     __obj.asInstanceOf[SQLContext]
   }
   
-  extension [Self <: SQLContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SQLContext] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: String): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
   }

@@ -30,7 +30,8 @@ object Fillsortkey {
     __obj.asInstanceOf[Fillsortkey]
   }
   
-  extension [Self <: Fillsortkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fillsortkey] (val x: Self) extends AnyVal {
     
     inline def `setFill-sort-key`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "fill-sort-key", value.asInstanceOf[js.Any])
     

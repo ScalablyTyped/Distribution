@@ -23,7 +23,8 @@ object _WorkspaceMiddleware {
     __obj.asInstanceOf[_WorkspaceMiddleware]
   }
   
-  extension [Self <: _WorkspaceMiddleware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _WorkspaceMiddleware] (val x: Self) extends AnyVal {
     
     inline def setDidChangeWatchedFile(
       value: js.ThisFunction2[

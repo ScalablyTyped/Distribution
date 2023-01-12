@@ -79,7 +79,8 @@ object oc {
       __obj.asInstanceOf[ILazyLoadProvider]
     }
     
-    extension [Self <: ILazyLoadProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILazyLoadProvider] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IProviderConfig => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
     }
@@ -106,7 +107,8 @@ object oc {
       __obj.asInstanceOf[IModuleConfig]
     }
     
-    extension [Self <: IModuleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModuleConfig] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object oc {
       __obj.asInstanceOf[IOptionsConfig]
     }
     
-    extension [Self <: IOptionsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptionsConfig] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -209,7 +212,8 @@ object oc {
       __obj.asInstanceOf[IProviderConfig]
     }
     
-    extension [Self <: IProviderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProviderConfig] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -249,7 +253,8 @@ object oc {
       __obj.asInstanceOf[ITypedModuleConfig]
     }
     
-    extension [Self <: ITypedModuleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITypedModuleConfig] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

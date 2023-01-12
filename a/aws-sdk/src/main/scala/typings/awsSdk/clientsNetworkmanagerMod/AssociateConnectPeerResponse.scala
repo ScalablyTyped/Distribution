@@ -18,7 +18,8 @@ object AssociateConnectPeerResponse {
     __obj.asInstanceOf[AssociateConnectPeerResponse]
   }
   
-  extension [Self <: AssociateConnectPeerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateConnectPeerResponse] (val x: Self) extends AnyVal {
     
     inline def setConnectPeerAssociation(value: ConnectPeerAssociation): Self = StObject.set(x, "ConnectPeerAssociation", value.asInstanceOf[js.Any])
     

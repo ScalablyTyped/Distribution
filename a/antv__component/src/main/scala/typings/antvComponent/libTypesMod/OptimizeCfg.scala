@@ -19,7 +19,8 @@ object OptimizeCfg {
     __obj.asInstanceOf[OptimizeCfg]
   }
   
-  extension [Self <: OptimizeCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimizeCfg] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     

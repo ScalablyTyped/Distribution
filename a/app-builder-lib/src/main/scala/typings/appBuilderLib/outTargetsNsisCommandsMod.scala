@@ -31,7 +31,8 @@ object outTargetsNsisCommandsMod {
       __obj.asInstanceOf[Commands]
     }
     
-    extension [Self <: Commands](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
       

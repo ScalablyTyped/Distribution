@@ -19,7 +19,8 @@ object EgressPolicy {
     __obj.asInstanceOf[EgressPolicy]
   }
   
-  extension [Self <: EgressPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EgressPolicy] (val x: Self) extends AnyVal {
     
     inline def setEgressFrom(value: EgressFrom): Self = StObject.set(x, "egressFrom", value.asInstanceOf[js.Any])
     

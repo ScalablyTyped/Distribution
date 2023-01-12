@@ -49,7 +49,8 @@ object ResearchSubjectProgress {
     __obj.asInstanceOf[ResearchSubjectProgress]
   }
   
-  extension [Self <: ResearchSubjectProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResearchSubjectProgress] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

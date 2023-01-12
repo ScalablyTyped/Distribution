@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[ReporterOptions]
     }
     
-    extension [Self <: ReporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReporterOptions] (val x: Self) extends AnyVal {
       
       inline def setFail(value: Boolean): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
       

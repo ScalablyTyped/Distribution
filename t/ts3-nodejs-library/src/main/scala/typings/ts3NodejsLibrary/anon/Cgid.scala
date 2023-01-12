@@ -15,7 +15,8 @@ object Cgid {
     __obj.asInstanceOf[Cgid]
   }
   
-  extension [Self <: Cgid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cgid] (val x: Self) extends AnyVal {
     
     inline def setCgid(value: String): Self = StObject.set(x, "cgid", value.asInstanceOf[js.Any])
   }

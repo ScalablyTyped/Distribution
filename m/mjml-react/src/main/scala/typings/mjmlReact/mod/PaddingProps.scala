@@ -23,7 +23,8 @@ object PaddingProps {
     __obj.asInstanceOf[PaddingProps]
   }
   
-  extension [Self <: PaddingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaddingProps] (val x: Self) extends AnyVal {
     
     inline def setPadding(value: String | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

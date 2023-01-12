@@ -20,7 +20,8 @@ object Vulnerable {
     __obj.asInstanceOf[Vulnerable]
   }
   
-  extension [Self <: Vulnerable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vulnerable] (val x: Self) extends AnyVal {
     
     inline def setVulnerable(value: String | js.Array[String]): Self = StObject.set(x, "vulnerable", value.asInstanceOf[js.Any])
     

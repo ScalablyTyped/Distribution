@@ -16,7 +16,8 @@ object CountCollectionResult {
     __obj.asInstanceOf[CountCollectionResult]
   }
   
-  extension [Self <: CountCollectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountCollectionResult] (val x: Self) extends AnyVal {
     
     inline def setStats(value: Total): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }

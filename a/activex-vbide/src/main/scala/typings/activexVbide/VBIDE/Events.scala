@@ -25,7 +25,8 @@ object Events {
     __obj.asInstanceOf[Events]
   }
   
-  extension [Self <: Events](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
     
     inline def setCommandBarEvents(value: Any => CommandBarEvents): Self = StObject.set(x, "CommandBarEvents", js.Any.fromFunction1(value))
     

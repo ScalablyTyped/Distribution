@@ -62,7 +62,8 @@ object NotifySettings {
     __obj.asInstanceOf[NotifySettings]
   }
   
-  extension [Self <: NotifySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifySettings] (val x: Self) extends AnyVal {
     
     inline def setAllow_dismiss(value: Boolean): Self = StObject.set(x, "allow_dismiss", value.asInstanceOf[js.Any])
     

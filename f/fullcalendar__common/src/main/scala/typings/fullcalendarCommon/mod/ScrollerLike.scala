@@ -17,7 +17,8 @@ object ScrollerLike {
     __obj.asInstanceOf[ScrollerLike]
   }
   
-  extension [Self <: ScrollerLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollerLike] (val x: Self) extends AnyVal {
     
     inline def setNeedsXScrolling(value: () => Boolean): Self = StObject.set(x, "needsXScrolling", js.Any.fromFunction0(value))
     

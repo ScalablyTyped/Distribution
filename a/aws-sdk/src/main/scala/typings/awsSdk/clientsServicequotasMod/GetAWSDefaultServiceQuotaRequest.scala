@@ -23,7 +23,8 @@ object GetAWSDefaultServiceQuotaRequest {
     __obj.asInstanceOf[GetAWSDefaultServiceQuotaRequest]
   }
   
-  extension [Self <: GetAWSDefaultServiceQuotaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAWSDefaultServiceQuotaRequest] (val x: Self) extends AnyVal {
     
     inline def setQuotaCode(value: QuotaCode): Self = StObject.set(x, "QuotaCode", value.asInstanceOf[js.Any])
     

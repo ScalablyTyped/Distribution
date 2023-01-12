@@ -48,7 +48,8 @@ object PublicIpv4Pool {
     __obj.asInstanceOf[PublicIpv4Pool]
   }
   
-  extension [Self <: PublicIpv4Pool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicIpv4Pool] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

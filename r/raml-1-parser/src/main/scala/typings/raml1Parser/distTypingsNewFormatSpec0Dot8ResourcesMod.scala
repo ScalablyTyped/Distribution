@@ -64,7 +64,8 @@ object distTypingsNewFormatSpec0Dot8ResourcesMod {
       __obj.asInstanceOf[Resource08]
     }
     
-    extension [Self <: Resource08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource08] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteParentUri(value: String): Self = StObject.set(x, "absoluteParentUri", value.asInstanceOf[js.Any])
       
@@ -150,7 +151,8 @@ object distTypingsNewFormatSpec0Dot8ResourcesMod {
       __obj.asInstanceOf[ResourceBase08]
     }
     
-    extension [Self <: ResourceBase08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceBase08] (val x: Self) extends AnyVal {
       
       inline def setBaseUriParameters(value: js.Array[Parameter08]): Self = StObject.set(x, "baseUriParameters", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object distTypingsNewFormatSpec0Dot8ResourcesMod {
       __obj.asInstanceOf[ResourceType08]
     }
     
-    extension [Self <: ResourceType08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceType08] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

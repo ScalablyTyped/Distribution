@@ -15,7 +15,8 @@ object EnumValuesAlreadyUpToDate {
     __obj.asInstanceOf[EnumValuesAlreadyUpToDate]
   }
   
-  extension [Self <: EnumValuesAlreadyUpToDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAlreadyUpToDate] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AlreadyUpToDate): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object verifyTask {
     __obj.asInstanceOf[verifyTask]
   }
   
-  extension [Self <: verifyTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: verifyTask] (val x: Self) extends AnyVal {
     
     inline def setData(value: Result): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

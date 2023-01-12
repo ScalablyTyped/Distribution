@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[BitcoinAddress]
     }
     
-    extension [Self <: BitcoinAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitcoinAddress] (val x: Self) extends AnyVal {
       
       inline def setBitcoinAddress(value: String): Self = StObject.set(x, "bitcoinAddress", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: AddressFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -98,7 +101,8 @@ object anon {
       __obj.asInstanceOf[R]
     }
     
-    extension [Self <: R](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: R] (val x: Self) extends AnyVal {
       
       inline def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
@@ -121,7 +125,8 @@ object anon {
       __obj.asInstanceOf[TrustedInput]
     }
     
-    extension [Self <: TrustedInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrustedInput] (val x: Self) extends AnyVal {
       
       inline def setTrustedInput(value: Boolean): Self = StObject.set(x, "trustedInput", value.asInstanceOf[js.Any])
       

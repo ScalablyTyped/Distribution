@@ -25,7 +25,8 @@ object DbCollectionParent {
     __obj.asInstanceOf[DbCollectionParent]
   }
   
-  extension [Self <: DbCollectionParent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbCollectionParent] (val x: Self) extends AnyVal {
     
     inline def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     

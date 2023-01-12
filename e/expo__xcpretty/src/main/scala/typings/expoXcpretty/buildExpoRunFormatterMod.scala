@@ -56,7 +56,8 @@ object buildExpoRunFormatterMod {
       __obj.asInstanceOf[ExpoRunFormatterProps]
     }
     
-    extension [Self <: ExpoRunFormatterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpoRunFormatterProps] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       

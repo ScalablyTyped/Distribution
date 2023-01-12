@@ -21,7 +21,8 @@ object DownloadPauseState {
     __obj.asInstanceOf[DownloadPauseState]
   }
   
-  extension [Self <: DownloadPauseState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadPauseState] (val x: Self) extends AnyVal {
     
     inline def setFileUri(value: String): Self = StObject.set(x, "fileUri", value.asInstanceOf[js.Any])
     

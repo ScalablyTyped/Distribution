@@ -22,7 +22,8 @@ object Recipient {
     __obj.asInstanceOf[Recipient]
   }
   
-  extension [Self <: Recipient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recipient] (val x: Self) extends AnyVal {
     
     inline def setDeliveryType(value: String): Self = StObject.set(x, "deliveryType", value.asInstanceOf[js.Any])
     

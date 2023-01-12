@@ -18,7 +18,8 @@ object TtmlDestinationSettings {
     __obj.asInstanceOf[TtmlDestinationSettings]
   }
   
-  extension [Self <: TtmlDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TtmlDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setStyleControl(value: TtmlDestinationStyleControl): Self = StObject.set(x, "StyleControl", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object IPAllocationPolicy {
     __obj.asInstanceOf[IPAllocationPolicy]
   }
   
-  extension [Self <: IPAllocationPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPAllocationPolicy] (val x: Self) extends AnyVal {
     
     inline def setClusterIpv4Cidr(value: String): Self = StObject.set(x, "clusterIpv4Cidr", value.asInstanceOf[js.Any])
     

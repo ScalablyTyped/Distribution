@@ -31,7 +31,8 @@ object esDropdownMenuMod {
       __obj.asInstanceOf[DropdownMenuProps]
     }
     
-    extension [Self <: DropdownMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownMenuProps] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: js.Array[OptionProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

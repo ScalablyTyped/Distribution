@@ -20,7 +20,8 @@ object PartialShapeLine {
     __obj.asInstanceOf[PartialShapeLine]
   }
   
-  extension [Self <: PartialShapeLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialShapeLine] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

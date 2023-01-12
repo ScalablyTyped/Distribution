@@ -46,7 +46,8 @@ object USDetails {
     __obj.asInstanceOf[USDetails]
   }
   
-  extension [Self <: USDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USDetails] (val x: Self) extends AnyVal {
     
     inline def setABA(value: String): Self = StObject.set(x, "ABA", value.asInstanceOf[js.Any])
     

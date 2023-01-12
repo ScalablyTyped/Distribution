@@ -18,7 +18,8 @@ object SingleValueLegacyExtendedProperty {
     __obj.asInstanceOf[SingleValueLegacyExtendedProperty]
   }
   
-  extension [Self <: SingleValueLegacyExtendedProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleValueLegacyExtendedProperty] (val x: Self) extends AnyVal {
     
     inline def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object srcCryptoMod {
     @js.native
     val ^ : HashAlgorithm = js.native
     
-    extension [Self <: HashAlgorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashAlgorithm] (val x: Self) extends AnyVal {
       
       inline def setSHA2_256(value: `1`): Self = StObject.set(x, "SHA2_256", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object srcCryptoMod {
     @js.native
     val ^ : SignatureAlgorithm = js.native
     
-    extension [Self <: SignatureAlgorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureAlgorithm] (val x: Self) extends AnyVal {
       
       inline def setECDSA_P256(value: `2`): Self = StObject.set(x, "ECDSA_P256", value.asInstanceOf[js.Any])
       

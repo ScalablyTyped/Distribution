@@ -41,7 +41,8 @@ object DOCUMENTNOTFOUND {
     __obj.asInstanceOf[DOCUMENTNOTFOUND]
   }
   
-  extension [Self <: DOCUMENTNOTFOUND](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOCUMENTNOTFOUND] (val x: Self) extends AnyVal {
     
     inline def setDOCUMENT_NOT_FOUND(value: String): Self = StObject.set(x, "DOCUMENT_NOT_FOUND", value.asInstanceOf[js.Any])
     

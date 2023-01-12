@@ -60,7 +60,8 @@ object PlusBarcodeBarcodeOptions {
     __obj.asInstanceOf[PlusBarcodeBarcodeOptions]
   }
   
-  extension [Self <: PlusBarcodeBarcodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusBarcodeBarcodeOptions] (val x: Self) extends AnyVal {
     
     inline def setConserve(value: Boolean): Self = StObject.set(x, "conserve", value.asInstanceOf[js.Any])
     

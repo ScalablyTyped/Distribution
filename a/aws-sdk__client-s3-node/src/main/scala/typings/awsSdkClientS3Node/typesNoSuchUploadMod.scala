@@ -18,7 +18,8 @@ object typesNoSuchUploadMod {
       __obj.asInstanceOf[NoSuchUpload]
     }
     
-    extension [Self <: NoSuchUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoSuchUpload] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.NoSuchUpload): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

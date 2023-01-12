@@ -200,7 +200,8 @@ object mod {
         __obj.asInstanceOf[Frequency]
       }
       
-      extension [Self <: Frequency](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Frequency] (val x: Self) extends AnyVal {
         
         inline def setBackoff(value: Boolean | Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
         
@@ -210,7 +211,8 @@ object mod {
       }
     }
     
-    extension [Self <: IPoll[?, ?, ?], T, U, V /* <: String */](x: Self & (IPoll[T, U, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPoll[?, ?, ?], T, U, V /* <: String */] (val x: Self & (IPoll[T, U, V])) extends AnyVal {
       
       inline def setDisposed(value: ISignal[IPoll[T, U, V], Unit]): Self = StObject.set(x, "disposed", value.asInstanceOf[js.Any])
       
@@ -288,7 +290,8 @@ object mod {
         __obj.asInstanceOf[State[T, U, V]]
       }
       
-      extension [Self <: State[?, ?, ?], T, U, V /* <: String */](x: Self & (State[T, U, V])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: State[?, ?, ?], T, U, V /* <: String */] (val x: Self & (State[T, U, V])) extends AnyVal {
         
         inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
         
@@ -339,7 +342,8 @@ object mod {
       __obj.asInstanceOf[IRateLimiter[T, U, V]]
     }
     
-    extension [Self <: IRateLimiter[?, ?, ?], T, U, V /* <: js.Array[Any] */](x: Self & (IRateLimiter[T, U, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRateLimiter[?, ?, ?], T, U, V /* <: js.Array[Any] */] (val x: Self & (IRateLimiter[T, U, V])) extends AnyVal {
       
       inline def setInvoke(value: V => js.Promise[T]): Self = StObject.set(x, "invoke", js.Any.fromFunction1(value))
       

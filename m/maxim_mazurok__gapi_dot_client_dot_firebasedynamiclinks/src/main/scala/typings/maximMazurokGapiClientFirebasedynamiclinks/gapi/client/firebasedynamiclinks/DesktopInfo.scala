@@ -16,7 +16,8 @@ object DesktopInfo {
     __obj.asInstanceOf[DesktopInfo]
   }
   
-  extension [Self <: DesktopInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DesktopInfo] (val x: Self) extends AnyVal {
     
     inline def setDesktopFallbackLink(value: String): Self = StObject.set(x, "desktopFallbackLink", value.asInstanceOf[js.Any])
     

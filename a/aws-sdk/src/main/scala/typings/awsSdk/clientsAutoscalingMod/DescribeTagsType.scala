@@ -28,7 +28,8 @@ object DescribeTagsType {
     __obj.asInstanceOf[DescribeTagsType]
   }
   
-  extension [Self <: DescribeTagsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTagsType] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

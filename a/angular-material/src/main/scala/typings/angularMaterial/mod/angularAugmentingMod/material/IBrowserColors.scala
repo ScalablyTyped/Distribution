@@ -19,7 +19,8 @@ object IBrowserColors {
     __obj.asInstanceOf[IBrowserColors]
   }
   
-  extension [Self <: IBrowserColors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBrowserColors] (val x: Self) extends AnyVal {
     
     inline def setHue(value: String): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[CallbackCountSlides]
     }
     
-    extension [Self <: CallbackCountSlides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackCountSlides] (val x: Self) extends AnyVal {
       
       inline def setTotalSlide(value: Double): Self = StObject.set(x, "totalSlide", value.asInstanceOf[js.Any])
     }
@@ -58,7 +59,8 @@ object mod {
       __obj.asInstanceOf[CallbackOpen]
     }
     
-    extension [Self <: CallbackOpen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackOpen] (val x: Self) extends AnyVal {
       
       inline def setCurrentSlide(value: Slide): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object mod {
       __obj.asInstanceOf[CallbackSlideChange]
     }
     
-    extension [Self <: CallbackSlideChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackSlideChange] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -108,7 +111,8 @@ object mod {
       __obj.asInstanceOf[Callbacks]
     }
     
-    extension [Self <: Callbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
       
       inline def setOnCountSlides(value: /* param0 */ ReadonlyCallbackCountSlid => Unit): Self = StObject.set(x, "onCountSlides", js.Any.fromFunction1(value))
       
@@ -151,7 +155,8 @@ object mod {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -202,7 +207,8 @@ object mod {
       __obj.asInstanceOf[SRLWrapperOptions]
     }
     
-    extension [Self <: SRLWrapperOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SRLWrapperOptions] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: BackgroundColor): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -276,7 +282,8 @@ object mod {
       __obj.asInstanceOf[Slide]
     }
     
-    extension [Self <: Slide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slide] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
@@ -307,7 +314,8 @@ object mod {
       __obj.asInstanceOf[WrapperWithChildren]
     }
     
-    extension [Self <: WrapperWithChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperWithChildren] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -328,7 +336,8 @@ object mod {
       __obj.asInstanceOf[WrapperWithElements]
     }
     
-    extension [Self <: WrapperWithElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperWithElements] (val x: Self) extends AnyVal {
       
       inline def setElements(value: Elements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       

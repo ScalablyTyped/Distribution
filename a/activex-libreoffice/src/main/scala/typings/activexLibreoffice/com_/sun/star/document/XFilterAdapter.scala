@@ -37,7 +37,8 @@ object XFilterAdapter {
     __obj.asInstanceOf[XFilterAdapter]
   }
   
-  extension [Self <: XFilterAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFilterAdapter] (val x: Self) extends AnyVal {
     
     inline def setConvert(value: (XInputStream, XOutputStream, Boolean, String, String) => Unit): Self = StObject.set(x, "convert", js.Any.fromFunction5(value))
   }

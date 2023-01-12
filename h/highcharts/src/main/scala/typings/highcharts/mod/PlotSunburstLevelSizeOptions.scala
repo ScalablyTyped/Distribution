@@ -33,7 +33,8 @@ object PlotSunburstLevelSizeOptions {
     __obj.asInstanceOf[PlotSunburstLevelSizeOptions]
   }
   
-  extension [Self <: PlotSunburstLevelSizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSunburstLevelSizeOptions] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

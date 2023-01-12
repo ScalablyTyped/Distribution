@@ -28,7 +28,8 @@ object CustomAdStyle {
     __obj.asInstanceOf[CustomAdStyle]
   }
   
-  extension [Self <: CustomAdStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomAdStyle] (val x: Self) extends AnyVal {
     
     inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     

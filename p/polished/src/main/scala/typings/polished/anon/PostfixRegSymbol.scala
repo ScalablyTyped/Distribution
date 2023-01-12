@@ -20,7 +20,8 @@ object PostfixRegSymbol {
     __obj.asInstanceOf[PostfixRegSymbol]
   }
   
-  extension [Self <: PostfixRegSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostfixRegSymbol] (val x: Self) extends AnyVal {
     
     inline def setPostfix(value: ArgCountFNotation): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
     

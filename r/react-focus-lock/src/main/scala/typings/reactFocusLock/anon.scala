@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[ChildrenChildrenType[ChildrenType]]
     }
     
-    extension [Self <: ChildrenChildrenType[?], ChildrenType](x: Self & ChildrenChildrenType[ChildrenType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildrenChildrenType[?], ChildrenType] (val x: Self & ChildrenChildrenType[ChildrenType]) extends AnyVal {
       
       inline def setChildren(value: ChildrenType): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     }
@@ -174,7 +176,8 @@ object anon {
       __obj.asInstanceOf[ReactFocusLockPropsReactN]
     }
     
-    extension [Self <: ReactFocusLockPropsReactN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactFocusLockPropsReactN] (val x: Self) extends AnyVal {
       
       inline def setAllowTextSelection(value: Boolean): Self = StObject.set(x, "allowTextSelection", value.asInstanceOf[js.Any])
       

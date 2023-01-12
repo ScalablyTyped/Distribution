@@ -35,7 +35,8 @@ object location {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object location {
       __obj.asInstanceOf[LocationProps]
     }
     
-    extension [Self <: LocationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationProps] (val x: Self) extends AnyVal {
       
       inline def setAllowChooseLocation(value: Boolean): Self = StObject.set(x, "allowChooseLocation", value.asInstanceOf[js.Any])
       

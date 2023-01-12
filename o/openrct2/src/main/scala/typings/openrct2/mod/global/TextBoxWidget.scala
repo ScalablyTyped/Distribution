@@ -26,7 +26,8 @@ object TextBoxWidget {
     __obj.asInstanceOf[TextBoxWidget]
   }
   
-  extension [Self <: TextBoxWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBoxWidget] (val x: Self) extends AnyVal {
     
     inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     

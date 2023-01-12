@@ -50,7 +50,8 @@ object mod {
         __obj.asInstanceOf[CellProps]
       }
       
-      extension [Self <: CellProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -134,7 +135,8 @@ object mod {
         __obj.asInstanceOf[Column]
       }
       
-      extension [Self <: Column](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -370,7 +372,8 @@ object mod {
         __obj.asInstanceOf[DataGridProps]
       }
       
-      extension [Self <: DataGridProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataGridProps] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
@@ -548,7 +551,8 @@ object mod {
         __obj.asInstanceOf[PaginationToolbarProps]
       }
       
-      extension [Self <: PaginationToolbarProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PaginationToolbarProps] (val x: Self) extends AnyVal {
         
         inline def setIconProps(value: DisabledStyle): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
         
@@ -593,7 +597,8 @@ object mod {
         __obj.asInstanceOf[RowProps]
       }
       
-      extension [Self <: RowProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -618,7 +623,8 @@ object mod {
         __obj.asInstanceOf[SortInfo]
       }
       
-      extension [Self <: SortInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SortInfo] (val x: Self) extends AnyVal {
         
         inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
         

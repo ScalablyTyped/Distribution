@@ -96,7 +96,8 @@ object TaskAgentPoolMaintenanceJob {
     __obj.asInstanceOf[TaskAgentPoolMaintenanceJob]
   }
   
-  extension [Self <: TaskAgentPoolMaintenanceJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentPoolMaintenanceJob] (val x: Self) extends AnyVal {
     
     inline def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     

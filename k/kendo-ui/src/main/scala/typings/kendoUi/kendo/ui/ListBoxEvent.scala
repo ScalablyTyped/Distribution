@@ -19,7 +19,8 @@ object ListBoxEvent {
     __obj.asInstanceOf[ListBoxEvent]
   }
   
-  extension [Self <: ListBoxEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBoxEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

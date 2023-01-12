@@ -23,7 +23,8 @@ object RuntimeCompilerOptions {
     __obj.asInstanceOf[RuntimeCompilerOptions]
   }
   
-  extension [Self <: RuntimeCompilerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeCompilerOptions] (val x: Self) extends AnyVal {
     
     inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

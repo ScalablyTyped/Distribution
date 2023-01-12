@@ -24,7 +24,8 @@ object libStorageIappservicestorageproviderMod {
       __obj.asInstanceOf[IAppserviceCryptoStorageProvider]
     }
     
-    extension [Self <: IAppserviceCryptoStorageProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAppserviceCryptoStorageProvider] (val x: Self) extends AnyVal {
       
       inline def setStorageForUser(value: String => ICryptoStorageProvider): Self = StObject.set(x, "storageForUser", js.Any.fromFunction1(value))
     }
@@ -77,7 +78,8 @@ object libStorageIappservicestorageproviderMod {
       __obj.asInstanceOf[IAppserviceStorageProvider]
     }
     
-    extension [Self <: IAppserviceStorageProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAppserviceStorageProvider] (val x: Self) extends AnyVal {
       
       inline def setAddRegisteredUser(value: String => js.Promise[Any] | Unit): Self = StObject.set(x, "addRegisteredUser", js.Any.fromFunction1(value))
       

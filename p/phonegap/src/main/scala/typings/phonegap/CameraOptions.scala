@@ -35,7 +35,8 @@ object CameraOptions {
     __obj.asInstanceOf[CameraOptions]
   }
   
-  extension [Self <: CameraOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowEdit(value: Boolean): Self = StObject.set(x, "allowEdit", value.asInstanceOf[js.Any])
     

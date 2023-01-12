@@ -23,7 +23,8 @@ object ListReusableDelegationSetsRequest {
     __obj.asInstanceOf[ListReusableDelegationSetsRequest]
   }
   
-  extension [Self <: ListReusableDelegationSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReusableDelegationSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

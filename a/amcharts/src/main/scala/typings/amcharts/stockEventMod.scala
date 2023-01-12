@@ -194,7 +194,8 @@ object stockEventMod {
       __obj.asInstanceOf[StockEvent]
     }
     
-    extension [Self <: StockEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StockEvent] (val x: Self) extends AnyVal {
       
       inline def setBackgroundAlpha(value: Double): Self = StObject.set(x, "backgroundAlpha", value.asInstanceOf[js.Any])
       

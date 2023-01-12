@@ -38,7 +38,8 @@ object AwsKinesisStreamDetails {
     __obj.asInstanceOf[AwsKinesisStreamDetails]
   }
   
-  extension [Self <: AwsKinesisStreamDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsKinesisStreamDetails] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

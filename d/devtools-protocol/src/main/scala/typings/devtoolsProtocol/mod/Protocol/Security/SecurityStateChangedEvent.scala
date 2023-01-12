@@ -44,7 +44,8 @@ object SecurityStateChangedEvent {
     __obj.asInstanceOf[SecurityStateChangedEvent]
   }
   
-  extension [Self <: SecurityStateChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityStateChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setExplanations(value: js.Array[SecurityStateExplanation]): Self = StObject.set(x, "explanations", value.asInstanceOf[js.Any])
     

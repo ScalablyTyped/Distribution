@@ -27,7 +27,8 @@ object UnitData {
     __obj.asInstanceOf[UnitData]
   }
   
-  extension [Self <: UnitData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnitData] (val x: Self) extends AnyVal {
     
     inline def setLong(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     

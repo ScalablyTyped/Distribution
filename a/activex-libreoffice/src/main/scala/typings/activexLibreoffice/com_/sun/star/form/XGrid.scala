@@ -44,7 +44,8 @@ object XGrid {
     __obj.asInstanceOf[XGrid]
   }
   
-  extension [Self <: XGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGrid] (val x: Self) extends AnyVal {
     
     inline def setCurrentColumnPosition(value: Double): Self = StObject.set(x, "CurrentColumnPosition", value.asInstanceOf[js.Any])
     

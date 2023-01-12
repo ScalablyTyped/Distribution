@@ -34,7 +34,8 @@ object ManualTrigger {
     __obj.asInstanceOf[ManualTrigger]
   }
   
-  extension [Self <: ManualTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManualTrigger] (val x: Self) extends AnyVal {
     
     inline def setActivationDurationMinutes(value: String): Self = StObject.set(x, "activationDurationMinutes", value.asInstanceOf[js.Any])
     

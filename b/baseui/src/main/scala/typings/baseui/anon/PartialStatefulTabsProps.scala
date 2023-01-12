@@ -37,7 +37,8 @@ object PartialStatefulTabsProps {
     __obj.asInstanceOf[PartialStatefulTabsProps]
   }
   
-  extension [Self <: PartialStatefulTabsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStatefulTabsProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[ReactElement] | ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

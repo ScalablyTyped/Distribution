@@ -56,7 +56,8 @@ object DetailButtonExpanded {
     __obj.asInstanceOf[DetailButtonExpanded]
   }
   
-  extension [Self <: DetailButtonExpanded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailButtonExpanded] (val x: Self) extends AnyVal {
     
     inline def setActionsCell(value: String): Self = StObject.set(x, "actionsCell", value.asInstanceOf[js.Any])
     

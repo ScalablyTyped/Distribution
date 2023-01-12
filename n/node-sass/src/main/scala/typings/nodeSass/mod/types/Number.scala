@@ -22,7 +22,8 @@ object Number {
   @js.native
   val ^ : NumberConstructor = js.native
   
-  extension [Self <: Number](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
     
     inline def setGetUnit(value: () => java.lang.String): Self = StObject.set(x, "getUnit", js.Any.fromFunction0(value))
     

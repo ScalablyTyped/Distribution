@@ -59,7 +59,8 @@ object Story {
     __obj.asInstanceOf[Story]
   }
   
-  extension [Self <: Story](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Story] (val x: Self) extends AnyVal {
     
     inline def setActivateNextStoryPointAsync(value: () => js.Promise[StoryPoint]): Self = StObject.set(x, "activateNextStoryPointAsync", js.Any.fromFunction0(value))
     

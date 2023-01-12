@@ -25,7 +25,8 @@ object SplitpaneIndexedElementType {
     __obj.asInstanceOf[SplitpaneIndexedElementType]
   }
   
-  extension [Self <: SplitpaneIndexedElementType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitpaneIndexedElementType] (val x: Self) extends AnyVal {
     
     inline def setGivenSize(value: Double): Self = StObject.set(x, "givenSize", value.asInstanceOf[js.Any])
     

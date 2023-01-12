@@ -22,7 +22,8 @@ object DeletePath {
     __obj.asInstanceOf[DeletePath]
   }
   
-  extension [Self <: DeletePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePath] (val x: Self) extends AnyVal {
     
     inline def setHookID(value: Double): Self = StObject.set(x, "hookID", value.asInstanceOf[js.Any])
     

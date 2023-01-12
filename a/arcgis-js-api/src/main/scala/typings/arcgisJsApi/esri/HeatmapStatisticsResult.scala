@@ -34,7 +34,8 @@ object HeatmapStatisticsResult {
     __obj.asInstanceOf[HeatmapStatisticsResult]
   }
   
-  extension [Self <: HeatmapStatisticsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatmapStatisticsResult] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

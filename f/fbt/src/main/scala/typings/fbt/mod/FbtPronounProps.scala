@@ -20,7 +20,8 @@ object FbtPronounProps {
     __obj.asInstanceOf[FbtPronounProps]
   }
   
-  extension [Self <: FbtPronounProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FbtPronounProps] (val x: Self) extends AnyVal {
     
     inline def setGender(value: GenderConst): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     

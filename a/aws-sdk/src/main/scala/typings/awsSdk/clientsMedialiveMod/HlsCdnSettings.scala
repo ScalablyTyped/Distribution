@@ -23,7 +23,8 @@ object HlsCdnSettings {
     __obj.asInstanceOf[HlsCdnSettings]
   }
   
-  extension [Self <: HlsCdnSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsCdnSettings] (val x: Self) extends AnyVal {
     
     inline def setHlsAkamaiSettings(value: HlsAkamaiSettings): Self = StObject.set(x, "HlsAkamaiSettings", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object RoomSettings {
     __obj.asInstanceOf[RoomSettings]
   }
   
-  extension [Self <: RoomSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomSettings] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: RoomEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

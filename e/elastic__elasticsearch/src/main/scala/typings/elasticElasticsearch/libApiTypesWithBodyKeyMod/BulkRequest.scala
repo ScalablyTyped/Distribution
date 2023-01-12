@@ -42,7 +42,8 @@ object BulkRequest {
     __obj.asInstanceOf[BulkRequest[TDocument, TPartialDocument]]
   }
   
-  extension [Self <: BulkRequest[?, ?], TDocument, TPartialDocument](x: Self & (BulkRequest[TDocument, TPartialDocument])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkRequest[?, ?], TDocument, TPartialDocument] (val x: Self & (BulkRequest[TDocument, TPartialDocument])) extends AnyVal {
     
     inline def setBody(
       value: js.Array[

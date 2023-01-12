@@ -52,7 +52,8 @@ object distTypesUtilsTreeMod {
       __obj.asInstanceOf[TreeItemMutation]
     }
     
-    extension [Self <: TreeItemMutation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeItemMutation] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ItemId]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

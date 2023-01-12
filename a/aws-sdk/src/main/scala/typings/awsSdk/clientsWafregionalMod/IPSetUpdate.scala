@@ -23,7 +23,8 @@ object IPSetUpdate {
     __obj.asInstanceOf[IPSetUpdate]
   }
   
-  extension [Self <: IPSetUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPSetUpdate] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

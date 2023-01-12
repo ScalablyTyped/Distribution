@@ -15,7 +15,8 @@ object ModifyGlobalClusterResult {
     __obj.asInstanceOf[ModifyGlobalClusterResult]
   }
   
-  extension [Self <: ModifyGlobalClusterResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyGlobalClusterResult] (val x: Self) extends AnyVal {
     
     inline def setGlobalCluster(value: GlobalCluster): Self = StObject.set(x, "GlobalCluster", value.asInstanceOf[js.Any])
     

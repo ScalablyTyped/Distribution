@@ -29,7 +29,8 @@ object modelsCustomersSearchConfigurationDotmodelMod {
       __obj.asInstanceOf[CustomerQs]
     }
     
-    extension [Self <: CustomerQs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomerQs] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

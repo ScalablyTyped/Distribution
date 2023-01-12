@@ -23,7 +23,8 @@ object Noise {
     __obj.asInstanceOf[Noise]
   }
   
-  extension [Self <: Noise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Noise] (val x: Self) extends AnyVal {
     
     inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     

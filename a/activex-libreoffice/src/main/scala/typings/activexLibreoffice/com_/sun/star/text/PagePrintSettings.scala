@@ -51,7 +51,8 @@ object PagePrintSettings {
     __obj.asInstanceOf[PagePrintSettings]
   }
   
-  extension [Self <: PagePrintSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagePrintSettings] (val x: Self) extends AnyVal {
     
     inline def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
     

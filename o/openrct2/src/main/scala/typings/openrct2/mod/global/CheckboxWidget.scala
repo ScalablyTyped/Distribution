@@ -26,7 +26,8 @@ object CheckboxWidget {
     __obj.asInstanceOf[CheckboxWidget]
   }
   
-  extension [Self <: CheckboxWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxWidget] (val x: Self) extends AnyVal {
     
     inline def setIsChecked(value: Boolean): Self = StObject.set(x, "isChecked", value.asInstanceOf[js.Any])
     

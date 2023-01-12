@@ -15,7 +15,8 @@ object EventRequestFinished {
     __obj.asInstanceOf[EventRequestFinished]
   }
   
-  extension [Self <: EventRequestFinished](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventRequestFinished] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }

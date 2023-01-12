@@ -124,7 +124,8 @@ object handlersEntitySplineMod {
       __obj.asInstanceOf[SplineEntityData]
     }
     
-    extension [Self <: SplineEntityData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplineEntityData] (val x: Self) extends AnyVal {
       
       inline def set$INSUNITS(value: UnitTypes): Self = StObject.set(x, "$INSUNITS", value.asInstanceOf[js.Any])
       

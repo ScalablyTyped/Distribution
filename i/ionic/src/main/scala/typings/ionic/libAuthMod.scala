@@ -42,7 +42,8 @@ object libAuthMod {
       __obj.asInstanceOf[AuthClientDeps]
     }
     
-    extension [Self <: AuthClientDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthClientDeps] (val x: Self) extends AnyVal {
       
       inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
@@ -59,7 +60,8 @@ object libAuthMod {
       __obj.asInstanceOf[AuthConnection]
     }
     
-    extension [Self <: AuthConnection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthConnection] (val x: Self) extends AnyVal {
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }

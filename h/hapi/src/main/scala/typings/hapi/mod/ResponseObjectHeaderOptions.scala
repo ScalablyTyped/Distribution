@@ -21,7 +21,8 @@ object ResponseObjectHeaderOptions {
     __obj.asInstanceOf[ResponseObjectHeaderOptions]
   }
   
-  extension [Self <: ResponseObjectHeaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseObjectHeaderOptions] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     

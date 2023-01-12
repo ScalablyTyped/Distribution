@@ -47,7 +47,8 @@ object XControllerManager {
     __obj.asInstanceOf[XControllerManager]
   }
   
-  extension [Self <: XControllerManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XControllerManager] (val x: Self) extends AnyVal {
     
     inline def setConfigurationController(value: XConfigurationController): Self = StObject.set(x, "ConfigurationController", value.asInstanceOf[js.Any])
     

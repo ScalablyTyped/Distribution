@@ -23,7 +23,8 @@ object DOWN {
     __obj.asInstanceOf[DOWN]
   }
   
-  extension [Self <: DOWN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOWN] (val x: Self) extends AnyVal {
     
     inline def setDOWN(value: String): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
     

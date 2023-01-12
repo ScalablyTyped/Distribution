@@ -23,7 +23,8 @@ object PolylineOptions {
     __obj.asInstanceOf[PolylineOptions]
   }
   
-  extension [Self <: PolylineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineOptions] (val x: Self) extends AnyVal {
     
     inline def setEndCap(value: String | PolylineEndCap): Self = StObject.set(x, "endCap", value.asInstanceOf[js.Any])
     

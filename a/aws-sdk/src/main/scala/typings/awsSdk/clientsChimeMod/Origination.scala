@@ -23,7 +23,8 @@ object Origination {
     __obj.asInstanceOf[Origination]
   }
   
-  extension [Self <: Origination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Origination] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     

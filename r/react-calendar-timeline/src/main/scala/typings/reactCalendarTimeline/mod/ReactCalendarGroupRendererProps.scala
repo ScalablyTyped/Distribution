@@ -17,7 +17,8 @@ object ReactCalendarGroupRendererProps {
     __obj.asInstanceOf[ReactCalendarGroupRendererProps[CustomGroup]]
   }
   
-  extension [Self <: ReactCalendarGroupRendererProps[?], CustomGroup /* <: TimelineGroupBase */](x: Self & ReactCalendarGroupRendererProps[CustomGroup]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactCalendarGroupRendererProps[?], CustomGroup /* <: TimelineGroupBase */] (val x: Self & ReactCalendarGroupRendererProps[CustomGroup]) extends AnyVal {
     
     inline def setGroup(value: CustomGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     

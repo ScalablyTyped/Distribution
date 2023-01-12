@@ -17,7 +17,8 @@ object QueryVisibletoorganization {
     __obj.asInstanceOf[QueryVisibletoorganization]
   }
   
-  extension [Self <: QueryVisibletoorganization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryVisibletoorganization] (val x: Self) extends AnyVal {
     
     inline def setPath(value: EnterpriseString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

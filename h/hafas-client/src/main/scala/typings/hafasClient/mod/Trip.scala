@@ -84,7 +84,8 @@ object Trip {
     __obj.asInstanceOf[Trip]
   }
   
-  extension [Self <: Trip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trip] (val x: Self) extends AnyVal {
     
     inline def setAlternatives(value: js.Array[Alternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object ASPxClientSpreadsheetSelection {
     __obj.asInstanceOf[ASPxClientSpreadsheetSelection]
   }
   
-  extension [Self <: ASPxClientSpreadsheetSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSpreadsheetSelection] (val x: Self) extends AnyVal {
     
     inline def setActiveCellColumnIndex(value: Double): Self = StObject.set(x, "activeCellColumnIndex", value.asInstanceOf[js.Any])
     

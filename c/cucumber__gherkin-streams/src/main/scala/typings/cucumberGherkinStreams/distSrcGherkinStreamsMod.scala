@@ -41,7 +41,8 @@ object distSrcGherkinStreamsMod {
       __obj.asInstanceOf[IGherkinStreamOptions]
     }
     
-    extension [Self <: IGherkinStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGherkinStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setRelativeTo(value: String): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
       

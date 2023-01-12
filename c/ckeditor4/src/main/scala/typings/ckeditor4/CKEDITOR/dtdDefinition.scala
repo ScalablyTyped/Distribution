@@ -82,7 +82,8 @@ object dtdDefinition {
     __obj.asInstanceOf[dtdDefinition]
   }
   
-  extension [Self <: dtdDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dtdDefinition] (val x: Self) extends AnyVal {
     
     inline def set$block(value: StringDictionary[`1`]): Self = StObject.set(x, "$block", value.asInstanceOf[js.Any])
     

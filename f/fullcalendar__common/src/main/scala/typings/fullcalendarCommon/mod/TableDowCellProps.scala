@@ -27,7 +27,8 @@ object TableDowCellProps {
     __obj.asInstanceOf[TableDowCellProps]
   }
   
-  extension [Self <: TableDowCellProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableDowCellProps] (val x: Self) extends AnyVal {
     
     inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     

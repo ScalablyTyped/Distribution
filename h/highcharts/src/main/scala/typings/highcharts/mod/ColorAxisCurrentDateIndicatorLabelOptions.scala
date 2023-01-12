@@ -83,7 +83,8 @@ object ColorAxisCurrentDateIndicatorLabelOptions {
     __obj.asInstanceOf[ColorAxisCurrentDateIndicatorLabelOptions]
   }
   
-  extension [Self <: ColorAxisCurrentDateIndicatorLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorAxisCurrentDateIndicatorLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object AttrsUniqueAttrs {
     __obj.asInstanceOf[AttrsUniqueAttrs]
   }
   
-  extension [Self <: AttrsUniqueAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsUniqueAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: UniqueAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

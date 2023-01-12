@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[Exports]
     }
     
-    extension [Self <: Exports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exports] (val x: Self) extends AnyVal {
       
       inline def setCss(value: /* repeated */ CSSInputTypes => String): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[Extension]
     }
     
-    extension [Self <: Extension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
       
       inline def setSelectorHandler(
         value: (/* selector */ String, /* baseSelector */ String, /* callback */ js.Function1[/* selector */ String, String]) => String | Null
@@ -125,7 +127,8 @@ object mod {
       __obj.asInstanceOf[StaticRendererResult]
     }
     
-    extension [Self <: StaticRendererResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticRendererResult] (val x: Self) extends AnyVal {
       
       inline def setCss(value: Content): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object mod {
       __obj.asInstanceOf[StyleSheetServerStatic]
     }
     
-    extension [Self <: StyleSheetServerStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleSheetServerStatic] (val x: Self) extends AnyVal {
       
       inline def setRenderStatic(value: js.Function0[String] => StaticRendererResult): Self = StObject.set(x, "renderStatic", js.Any.fromFunction1(value))
     }
@@ -195,7 +199,8 @@ object mod {
       __obj.asInstanceOf[StyleSheetStatic]
     }
     
-    extension [Self <: StyleSheetStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleSheetStatic] (val x: Self) extends AnyVal {
       
       inline def setCreate(
         value: StyleDeclaration[Any] => /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue} */ js.Any
@@ -245,7 +250,8 @@ object mod {
       __obj.asInstanceOf[StyleSheetTestUtilsStatic]
     }
     
-    extension [Self <: StyleSheetTestUtilsStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleSheetTestUtilsStatic] (val x: Self) extends AnyVal {
       
       inline def setClearBufferAndResumeStyleInjection(value: () => Unit): Self = StObject.set(x, "clearBufferAndResumeStyleInjection", js.Any.fromFunction0(value))
       

@@ -23,7 +23,8 @@ object AssociateBrowserSettingsRequest {
     __obj.asInstanceOf[AssociateBrowserSettingsRequest]
   }
   
-  extension [Self <: AssociateBrowserSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateBrowserSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setBrowserSettingsArn(value: ARN): Self = StObject.set(x, "browserSettingsArn", value.asInstanceOf[js.Any])
     

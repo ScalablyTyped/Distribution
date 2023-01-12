@@ -22,7 +22,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setBaseGauge(value: BaseGauge): Self = StObject.set(x, "BaseGauge", value.asInstanceOf[js.Any])
     

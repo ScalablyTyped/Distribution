@@ -15,7 +15,8 @@ object SsmlWAttributes {
     __obj.asInstanceOf[SsmlWAttributes]
   }
   
-  extension [Self <: SsmlWAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsmlWAttributes] (val x: Self) extends AnyVal {
     
     inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

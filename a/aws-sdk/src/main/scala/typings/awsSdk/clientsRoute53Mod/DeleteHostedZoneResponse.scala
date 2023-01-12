@@ -18,7 +18,8 @@ object DeleteHostedZoneResponse {
     __obj.asInstanceOf[DeleteHostedZoneResponse]
   }
   
-  extension [Self <: DeleteHostedZoneResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteHostedZoneResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
   }

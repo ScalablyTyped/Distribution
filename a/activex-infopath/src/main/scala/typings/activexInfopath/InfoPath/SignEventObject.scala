@@ -28,7 +28,8 @@ object SignEventObject {
     __obj.asInstanceOf[SignEventObject]
   }
   
-  extension [Self <: SignEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignEventObject] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotSignEventObject_typekey(value: SignEventObject): Self = StObject.set(x, "InfoPath.SignEventObject_typekey", value.asInstanceOf[js.Any])
     

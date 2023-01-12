@@ -73,7 +73,8 @@ object anon {
       __obj.asInstanceOf[KarmaCoverageReporterrepo]
     }
     
-    extension [Self <: KarmaCoverageReporterrepo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KarmaCoverageReporterrepo] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: CheckTresholds): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       

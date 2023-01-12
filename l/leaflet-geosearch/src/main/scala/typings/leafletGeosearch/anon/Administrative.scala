@@ -30,7 +30,8 @@ object Administrative {
     __obj.asInstanceOf[Administrative]
   }
   
-  extension [Self <: Administrative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Administrative] (val x: Self) extends AnyVal {
     
     inline def setAdministrative(value: js.Array[ValueMatch]): Self = StObject.set(x, "administrative", value.asInstanceOf[js.Any])
     

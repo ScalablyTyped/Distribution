@@ -25,7 +25,8 @@ object UIkitOffcanvasOptions {
     __obj.asInstanceOf[UIkitOffcanvasOptions]
   }
   
-  extension [Self <: UIkitOffcanvasOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitOffcanvasOptions] (val x: Self) extends AnyVal {
     
     inline def `setBg-close`(value: Boolean): Self = StObject.set(x, "bg-close", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object SensitiveDataDetections {
     __obj.asInstanceOf[SensitiveDataDetections]
   }
   
-  extension [Self <: SensitiveDataDetections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SensitiveDataDetections] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Long): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

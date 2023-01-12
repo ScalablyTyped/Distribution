@@ -17,7 +17,8 @@ object MlGetFiltersResponse {
     __obj.asInstanceOf[MlGetFiltersResponse]
   }
   
-  extension [Self <: MlGetFiltersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetFiltersResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

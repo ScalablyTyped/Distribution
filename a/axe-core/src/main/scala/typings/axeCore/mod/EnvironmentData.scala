@@ -29,7 +29,8 @@ object EnvironmentData {
     __obj.asInstanceOf[EnvironmentData]
   }
   
-  extension [Self <: EnvironmentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentData] (val x: Self) extends AnyVal {
     
     inline def setTestEngine(value: TestEngine): Self = StObject.set(x, "testEngine", value.asInstanceOf[js.Any])
     

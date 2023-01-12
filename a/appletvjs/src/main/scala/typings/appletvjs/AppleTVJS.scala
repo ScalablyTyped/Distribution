@@ -80,7 +80,8 @@ object AppleTVJS {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setAppIdentifier(value: String): Self = StObject.set(x, "appIdentifier", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object AppleTVJS {
       __obj.asInstanceOf[Highlight]
     }
     
-    extension [Self <: Highlight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Highlight] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object AppleTVJS {
       __obj.asInstanceOf[HighlightGroup]
     }
     
-    extension [Self <: HighlightGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightGroup] (val x: Self) extends AnyVal {
       
       inline def setHightlights(value: js.Array[Highlight]): Self = StObject.set(x, "hightlights", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object AppleTVJS {
       __obj.asInstanceOf[Interstitial]
     }
     
-    extension [Self <: Interstitial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interstitial] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -209,7 +213,8 @@ object AppleTVJS {
       __obj.asInstanceOf[Keyboard]
     }
     
-    extension [Self <: Keyboard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keyboard] (val x: Self) extends AnyVal {
       
       inline def setOnTextChange(value: () => Unit): Self = StObject.set(x, "onTextChange", js.Any.fromFunction0(value))
       
@@ -312,7 +317,8 @@ object AppleTVJS {
       __obj.asInstanceOf[MediaItem]
     }
     
-    extension [Self <: MediaItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaItem] (val x: Self) extends AnyVal {
       
       inline def setArtworkImageURL(value: String): Self = StObject.set(x, "artworkImageURL", value.asInstanceOf[js.Any])
       
@@ -380,7 +386,8 @@ object AppleTVJS {
       __obj.asInstanceOf[MenuBarDocument]
     }
     
-    extension [Self <: MenuBarDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuBarDocument] (val x: Self) extends AnyVal {
       
       inline def setGetDocument(value: Element => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction1(value))
       
@@ -571,7 +578,8 @@ object AppleTVJS {
       __obj.asInstanceOf[Playlist]
     }
     
-    extension [Self <: Playlist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Playlist] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Double => MediaItem): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
@@ -615,7 +623,8 @@ object AppleTVJS {
       __obj.asInstanceOf[Restrictions]
     }
     
-    extension [Self <: Restrictions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Restrictions] (val x: Self) extends AnyVal {
       
       inline def setAllowsExplicit(value: Boolean): Self = StObject.set(x, "allowsExplicit", value.asInstanceOf[js.Any])
       
@@ -657,7 +666,8 @@ object AppleTVJS {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -714,7 +724,8 @@ object AppleTVJS {
       __obj.asInstanceOf[TVError]
     }
     
-    extension [Self <: TVError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TVError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

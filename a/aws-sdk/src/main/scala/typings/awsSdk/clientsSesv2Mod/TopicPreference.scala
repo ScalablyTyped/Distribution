@@ -23,7 +23,8 @@ object TopicPreference {
     __obj.asInstanceOf[TopicPreference]
   }
   
-  extension [Self <: TopicPreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicPreference] (val x: Self) extends AnyVal {
     
     inline def setSubscriptionStatus(value: SubscriptionStatus): Self = StObject.set(x, "SubscriptionStatus", value.asInstanceOf[js.Any])
     

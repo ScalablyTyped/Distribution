@@ -15,7 +15,8 @@ object DestinationRecordingNameString {
     __obj.asInstanceOf[DestinationRecordingNameString]
   }
   
-  extension [Self <: DestinationRecordingNameString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationRecordingNameString] (val x: Self) extends AnyVal {
     
     inline def setDestinationRecordingName(value: String): Self = StObject.set(x, "destinationRecordingName", value.asInstanceOf[js.Any])
   }

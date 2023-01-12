@@ -51,7 +51,8 @@ object typesLibNavMod {
       __obj.asInstanceOf[NavProps]
     }
     
-    extension [Self <: NavProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavProps] (val x: Self) extends AnyVal {
       
       inline def setCard(value: Boolean): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       

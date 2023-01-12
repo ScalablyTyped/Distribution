@@ -17,7 +17,8 @@ object AgentProxiesResult {
     __obj.asInstanceOf[AgentProxiesResult]
   }
   
-  extension [Self <: AgentProxiesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentProxiesResult] (val x: Self) extends AnyVal {
     
     inline def setProxies(value: js.Array[AgentProxyInfo]): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
     

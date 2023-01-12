@@ -29,7 +29,8 @@ object CodeFlow {
     __obj.asInstanceOf[CodeFlow]
   }
   
-  extension [Self <: CodeFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeFlow] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

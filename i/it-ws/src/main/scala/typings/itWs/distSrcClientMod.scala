@@ -29,7 +29,8 @@ object distSrcClientMod {
       __obj.asInstanceOf[WebSocketOptions]
     }
     
-    extension [Self <: WebSocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebSocketOptions] (val x: Self) extends AnyVal {
       
       inline def setWebsocket(value: ClientOptions): Self = StObject.set(x, "websocket", value.asInstanceOf[js.Any])
       

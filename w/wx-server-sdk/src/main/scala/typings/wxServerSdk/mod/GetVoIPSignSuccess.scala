@@ -15,7 +15,8 @@ object GetVoIPSignSuccess {
     __obj.asInstanceOf[GetVoIPSignSuccess]
   }
   
-  extension [Self <: GetVoIPSignSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVoIPSignSuccess] (val x: Self) extends AnyVal {
     
     inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }

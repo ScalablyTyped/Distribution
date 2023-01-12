@@ -38,7 +38,8 @@ object StartMigrationWorkflowResponse {
     __obj.asInstanceOf[StartMigrationWorkflowResponse]
   }
   
-  extension [Self <: StartMigrationWorkflowResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMigrationWorkflowResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

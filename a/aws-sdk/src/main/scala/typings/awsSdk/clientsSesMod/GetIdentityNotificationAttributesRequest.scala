@@ -18,7 +18,8 @@ object GetIdentityNotificationAttributesRequest {
     __obj.asInstanceOf[GetIdentityNotificationAttributesRequest]
   }
   
-  extension [Self <: GetIdentityNotificationAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIdentityNotificationAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentities(value: IdentityList): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
     

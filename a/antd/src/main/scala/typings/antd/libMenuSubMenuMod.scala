@@ -55,7 +55,8 @@ object libMenuSubMenuMod {
       __obj.asInstanceOf[SubMenuProps]
     }
     
-    extension [Self <: SubMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubMenuProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object libMenuSubMenuMod {
       __obj.asInstanceOf[TitleEventEntity]
     }
     
-    extension [Self <: TitleEventEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleEventEntity] (val x: Self) extends AnyVal {
       
       inline def setDomEvent(value: (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
       

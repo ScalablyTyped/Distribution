@@ -18,7 +18,8 @@ object DescribeLocationFsxWindowsRequest {
     __obj.asInstanceOf[DescribeLocationFsxWindowsRequest]
   }
   
-  extension [Self <: DescribeLocationFsxWindowsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLocationFsxWindowsRequest] (val x: Self) extends AnyVal {
     
     inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
   }

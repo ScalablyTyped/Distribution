@@ -21,7 +21,8 @@ object HardbreakToken {
     __obj.asInstanceOf[HardbreakToken]
   }
   
-  extension [Self <: HardbreakToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HardbreakToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: hardbreak): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

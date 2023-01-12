@@ -21,7 +21,8 @@ object SignalMetric {
     __obj.asInstanceOf[SignalMetric]
   }
   
-  extension [Self <: SignalMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalMetric] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: js.Object): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

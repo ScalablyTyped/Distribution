@@ -20,7 +20,8 @@ object EveryRepeatOptions {
     __obj.asInstanceOf[EveryRepeatOptions]
   }
   
-  extension [Self <: EveryRepeatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EveryRepeatOptions] (val x: Self) extends AnyVal {
     
     inline def setEvery(value: Double): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
   }

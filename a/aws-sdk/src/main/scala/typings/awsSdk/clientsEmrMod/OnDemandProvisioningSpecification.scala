@@ -23,7 +23,8 @@ object OnDemandProvisioningSpecification {
     __obj.asInstanceOf[OnDemandProvisioningSpecification]
   }
   
-  extension [Self <: OnDemandProvisioningSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDemandProvisioningSpecification] (val x: Self) extends AnyVal {
     
     inline def setAllocationStrategy(value: OnDemandProvisioningAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
     

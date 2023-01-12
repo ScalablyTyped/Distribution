@@ -96,7 +96,8 @@ object typingsMysqlLibPoolClusterMod {
       __obj.asInstanceOf[PoolClusterOptions]
     }
     
-    extension [Self <: PoolClusterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoolClusterOptions] (val x: Self) extends AnyVal {
       
       inline def setCanRetry(value: Boolean): Self = StObject.set(x, "canRetry", value.asInstanceOf[js.Any])
       

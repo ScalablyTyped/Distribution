@@ -53,7 +53,8 @@ object StartEngagementRequest {
     __obj.asInstanceOf[StartEngagementRequest]
   }
   
-  extension [Self <: StartEngagementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartEngagementRequest] (val x: Self) extends AnyVal {
     
     inline def setContactId(value: SsmContactsArn): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     

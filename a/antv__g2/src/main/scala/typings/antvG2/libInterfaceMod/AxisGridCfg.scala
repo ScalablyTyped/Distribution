@@ -48,7 +48,8 @@ object AxisGridCfg {
     __obj.asInstanceOf[AxisGridCfg]
   }
   
-  extension [Self <: AxisGridCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisGridCfg] (val x: Self) extends AnyVal {
     
     inline def setAlignTick(value: Boolean): Self = StObject.set(x, "alignTick", value.asInstanceOf[js.Any])
     

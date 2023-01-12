@@ -23,7 +23,8 @@ object ScalingAction {
     __obj.asInstanceOf[ScalingAction]
   }
   
-  extension [Self <: ScalingAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingAction] (val x: Self) extends AnyVal {
     
     inline def setMarket(value: MarketType): Self = StObject.set(x, "Market", value.asInstanceOf[js.Any])
     

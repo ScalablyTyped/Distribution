@@ -28,7 +28,8 @@ object DescribeCertificatesMessage {
     __obj.asInstanceOf[DescribeCertificatesMessage]
   }
   
-  extension [Self <: DescribeCertificatesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCertificatesMessage] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ASPxClientFileManagerFileOpenedEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerFileOpenedEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerFileOpenedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerFileOpenedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setProcessOnServer(value: Boolean): Self = StObject.set(x, "processOnServer", value.asInstanceOf[js.Any])
   }

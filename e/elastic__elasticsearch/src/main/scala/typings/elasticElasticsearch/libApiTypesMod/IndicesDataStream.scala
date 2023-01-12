@@ -45,7 +45,8 @@ object IndicesDataStream {
     __obj.asInstanceOf[IndicesDataStream]
   }
   
-  extension [Self <: IndicesDataStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesDataStream] (val x: Self) extends AnyVal {
     
     inline def setAllow_custom_routing(value: Boolean): Self = StObject.set(x, "allow_custom_routing", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object FSInfoResult {
     __obj.asInstanceOf[FSInfoResult]
   }
   
-  extension [Self <: FSInfoResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FSInfoResult] (val x: Self) extends AnyVal {
     
     inline def setFreeSpace(value: Double): Self = StObject.set(x, "freeSpace", value.asInstanceOf[js.Any])
     

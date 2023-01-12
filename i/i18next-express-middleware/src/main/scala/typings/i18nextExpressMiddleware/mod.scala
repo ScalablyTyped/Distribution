@@ -153,7 +153,8 @@ object mod {
       __obj.asInstanceOf[GetResourcesHandlerOptions]
     }
     
-    extension [Self <: GetResourcesHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetResourcesHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object mod {
       __obj.asInstanceOf[HandleOptions]
     }
     
-    extension [Self <: HandleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreRoutes(value: js.Array[String] | IgnoreRoutesFunction): Self = StObject.set(x, "ignoreRoutes", value.asInstanceOf[js.Any])
       
@@ -277,7 +279,8 @@ object mod {
       __obj.asInstanceOf[LanguageDetectorAllOptions]
     }
     
-    extension [Self <: LanguageDetectorAllOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageDetectorAllOptions] (val x: Self) extends AnyVal {
       
       inline def setFallbackLng(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
       
@@ -358,7 +361,8 @@ object mod {
       __obj.asInstanceOf[LanguageDetectorOptions]
     }
     
-    extension [Self <: LanguageDetectorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageDetectorOptions] (val x: Self) extends AnyVal {
       
       inline def setCaches(value: LanguageDetectorCaches): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
@@ -416,7 +420,8 @@ object mod {
       __obj.asInstanceOf[MissingKeyHandlerOptions]
     }
     
-    extension [Self <: MissingKeyHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MissingKeyHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setLngParam(value: String): Self = StObject.set(x, "lngParam", value.asInstanceOf[js.Any])
       

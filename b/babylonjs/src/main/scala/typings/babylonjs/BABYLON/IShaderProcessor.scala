@@ -132,7 +132,8 @@ object IShaderProcessor {
     __obj.asInstanceOf[IShaderProcessor]
   }
   
-  extension [Self <: IShaderProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShaderProcessor] (val x: Self) extends AnyVal {
     
     inline def setAttributeKeywordName(value: String): Self = StObject.set(x, "attributeKeywordName", value.asInstanceOf[js.Any])
     

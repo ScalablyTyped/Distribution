@@ -19,7 +19,8 @@ object TableCellProperties {
     __obj.asInstanceOf[TableCellProperties]
   }
   
-  extension [Self <: TableCellProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCellProperties] (val x: Self) extends AnyVal {
     
     inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
     

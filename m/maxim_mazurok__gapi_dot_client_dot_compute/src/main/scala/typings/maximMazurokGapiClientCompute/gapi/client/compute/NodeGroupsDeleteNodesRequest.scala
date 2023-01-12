@@ -16,7 +16,8 @@ object NodeGroupsDeleteNodesRequest {
     __obj.asInstanceOf[NodeGroupsDeleteNodesRequest]
   }
   
-  extension [Self <: NodeGroupsDeleteNodesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeGroupsDeleteNodesRequest] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

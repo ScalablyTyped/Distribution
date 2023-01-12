@@ -64,7 +64,8 @@ object Interconnect {
     __obj.asInstanceOf[Interconnect]
   }
   
-  extension [Self <: Interconnect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interconnect] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object typesGetBucketTaggingOutputMod {
       __obj.asInstanceOf[GetBucketTaggingOutput]
     }
     
-    extension [Self <: GetBucketTaggingOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBucketTaggingOutput] (val x: Self) extends AnyVal {
       
       inline def setTagSet(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
       

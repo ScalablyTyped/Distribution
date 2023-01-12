@@ -22,7 +22,8 @@ object EnableRequest {
     __obj.asInstanceOf[EnableRequest]
   }
   
-  extension [Self <: EnableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableRequest] (val x: Self) extends AnyVal {
     
     inline def setEnableUI(value: Boolean): Self = StObject.set(x, "enableUI", value.asInstanceOf[js.Any])
     

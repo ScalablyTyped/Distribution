@@ -40,7 +40,8 @@ object WalletActionActivatedEventArgs {
     __obj.asInstanceOf[WalletActionActivatedEventArgs]
   }
   
-  extension [Self <: WalletActionActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalletActionActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     

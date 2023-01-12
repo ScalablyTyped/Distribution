@@ -31,7 +31,8 @@ object DivContainerProperties {
     __obj.asInstanceOf[DivContainerProperties]
   }
   
-  extension [Self <: DivContainerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DivContainerProperties] (val x: Self) extends AnyVal {
     
     inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     

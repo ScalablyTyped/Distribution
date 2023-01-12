@@ -41,7 +41,8 @@ object IRowConfig {
     __obj.asInstanceOf[IRowConfig]
   }
   
-  extension [Self <: IRowConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRowConfig] (val x: Self) extends AnyVal {
     
     inline def setAfterSelectionChangeCallback(value: () => Unit): Self = StObject.set(x, "afterSelectionChangeCallback", js.Any.fromFunction0(value))
     

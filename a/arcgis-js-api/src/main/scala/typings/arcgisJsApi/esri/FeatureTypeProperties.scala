@@ -48,7 +48,8 @@ object FeatureTypeProperties {
     __obj.asInstanceOf[FeatureTypeProperties]
   }
   
-  extension [Self <: FeatureTypeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureTypeProperties] (val x: Self) extends AnyVal {
     
     inline def setDomains(
       value: HashMap[

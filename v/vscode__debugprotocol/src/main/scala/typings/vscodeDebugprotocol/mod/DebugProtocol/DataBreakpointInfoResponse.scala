@@ -31,7 +31,8 @@ object DataBreakpointInfoResponse {
     __obj.asInstanceOf[DataBreakpointInfoResponse]
   }
   
-  extension [Self <: DataBreakpointInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataBreakpointInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: AccessTypes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

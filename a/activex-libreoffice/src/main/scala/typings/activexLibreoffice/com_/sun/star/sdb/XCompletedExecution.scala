@@ -31,7 +31,8 @@ object XCompletedExecution {
     __obj.asInstanceOf[XCompletedExecution]
   }
   
-  extension [Self <: XCompletedExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCompletedExecution] (val x: Self) extends AnyVal {
     
     inline def setExecuteWithCompletion(value: XInteractionHandler => Unit): Self = StObject.set(x, "executeWithCompletion", js.Any.fromFunction1(value))
   }

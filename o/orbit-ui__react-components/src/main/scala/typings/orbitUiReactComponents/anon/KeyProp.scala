@@ -17,7 +17,8 @@ object KeyProp {
     __obj.asInstanceOf[KeyProp]
   }
   
-  extension [Self <: KeyProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyProp] (val x: Self) extends AnyVal {
     
     inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     

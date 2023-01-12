@@ -21,7 +21,8 @@ object typesCoreMod {
       __obj.asInstanceOf[LocaleData[T]]
     }
     
-    extension [Self <: LocaleData[?], T](x: Self & LocaleData[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocaleData[?], T] (val x: Self & LocaleData[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object typesCoreMod {
       __obj.asInstanceOf[LookupMatcherResult]
     }
     
-    extension [Self <: LookupMatcherResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LookupMatcherResult] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       

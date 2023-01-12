@@ -23,7 +23,8 @@ object Impact {
     __obj.asInstanceOf[Impact]
   }
   
-  extension [Self <: Impact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Impact] (val x: Self) extends AnyVal {
     
     inline def setMaxImpact(value: GenericDouble): Self = StObject.set(x, "MaxImpact", value.asInstanceOf[js.Any])
     

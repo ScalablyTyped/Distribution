@@ -137,7 +137,8 @@ object srcSdkInternalStructuresMod {
       __obj.asInstanceOf[IChildHandle]
     }
     
-    extension [Self <: IChildHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChildHandle] (val x: Self) extends AnyVal {
       
       inline def setContainingProperty(value: AbstractStructureProperty): Self = StObject.set(x, "containingProperty", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object srcSdkInternalStructuresMod {
       __obj.asInstanceOf[IStructure]
     }
     
-    extension [Self <: IStructure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStructure] (val x: Self) extends AnyVal {
       
       inline def setAllProperties(value: () => js.Array[AbstractProperty[Any, Any]]): Self = StObject.set(x, "allProperties", js.Any.fromFunction0(value))
       
@@ -260,7 +262,8 @@ object srcSdkInternalStructuresMod {
       __obj.asInstanceOf[IStructureClass]
     }
     
-    extension [Self <: IStructureClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStructureClass] (val x: Self) extends AnyVal {
       
       inline def setVersionInfo(value: StructureVersionInfo): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     }

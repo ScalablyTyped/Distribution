@@ -23,7 +23,8 @@ object SummariesTogglingEventUIParam {
     __obj.asInstanceOf[SummariesTogglingEventUIParam]
   }
   
-  extension [Self <: SummariesTogglingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SummariesTogglingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setIsToShow(value: Boolean): Self = StObject.set(x, "isToShow", value.asInstanceOf[js.Any])
     

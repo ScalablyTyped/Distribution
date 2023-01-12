@@ -34,7 +34,8 @@ object BaseUpdateMultiFactorInfoRequest {
     __obj.asInstanceOf[BaseUpdateMultiFactorInfoRequest]
   }
   
-  extension [Self <: BaseUpdateMultiFactorInfoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseUpdateMultiFactorInfoRequest] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

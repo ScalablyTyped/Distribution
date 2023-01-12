@@ -17,7 +17,8 @@ object WatcherThrottleState {
     __obj.asInstanceOf[WatcherThrottleState]
   }
   
-  extension [Self <: WatcherThrottleState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherThrottleState] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

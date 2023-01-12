@@ -45,7 +45,8 @@ object libInfoLabelInfoLabelMod extends Shortcut {
       __obj.asInstanceOf[InfoLabelProps]
     }
     
-    extension [Self <: InfoLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoLabelProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

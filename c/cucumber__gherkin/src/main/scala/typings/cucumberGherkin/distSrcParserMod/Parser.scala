@@ -255,7 +255,8 @@ object Parser {
     __obj.asInstanceOf[Parser[AstNode]]
   }
   
-  extension [Self <: Parser[?], AstNode](x: Self & Parser[AstNode]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parser[?], AstNode] (val x: Self & Parser[AstNode]) extends AnyVal {
     
     inline def setAddError(value: Any): Self = StObject.set(x, "addError", value.asInstanceOf[js.Any])
     

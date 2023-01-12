@@ -43,7 +43,8 @@ object TypedLinkAttributeDefinition {
     __obj.asInstanceOf[TypedLinkAttributeDefinition]
   }
   
-  extension [Self <: TypedLinkAttributeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedLinkAttributeDefinition] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: TypedAttributeValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

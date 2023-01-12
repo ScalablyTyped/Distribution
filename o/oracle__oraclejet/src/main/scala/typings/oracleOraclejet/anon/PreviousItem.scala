@@ -24,7 +24,8 @@ object PreviousItem {
     __obj.asInstanceOf[PreviousItem[K]]
   }
   
-  extension [Self <: PreviousItem[?], K](x: Self & PreviousItem[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviousItem[?], K] (val x: Self & PreviousItem[K]) extends AnyVal {
     
     inline def setItem(value: typings.std.Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

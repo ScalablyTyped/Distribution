@@ -35,7 +35,8 @@ object INxBookmark {
     __obj.asInstanceOf[INxBookmark]
   }
   
-  extension [Self <: INxBookmark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxBookmark] (val x: Self) extends AnyVal {
     
     inline def setQStateData(value: js.Array[IAlternateStateData]): Self = StObject.set(x, "qStateData", value.asInstanceOf[js.Any])
     

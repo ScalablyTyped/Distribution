@@ -195,7 +195,8 @@ object libEventGroupMod {
       __obj.asInstanceOf[IEventRecordList]
     }
     
-    extension [Self <: IEventRecordList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEventRecordList] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }

@@ -32,7 +32,8 @@ object babylonjsMeshesMeshAugmentingMod {
       __obj.asInstanceOf[Mesh]
     }
     
-    extension [Self <: Mesh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mesh] (val x: Self) extends AnyVal {
       
       inline def setGetEmittedParticleSystems(value: () => js.Array[IParticleSystem]): Self = StObject.set(x, "getEmittedParticleSystems", js.Any.fromFunction0(value))
       

@@ -18,7 +18,8 @@ object DescribePortfolioShareStatusInput {
     __obj.asInstanceOf[DescribePortfolioShareStatusInput]
   }
   
-  extension [Self <: DescribePortfolioShareStatusInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePortfolioShareStatusInput] (val x: Self) extends AnyVal {
     
     inline def setPortfolioShareToken(value: Id): Self = StObject.set(x, "PortfolioShareToken", value.asInstanceOf[js.Any])
   }

@@ -88,7 +88,8 @@ object anon {
       __obj.asInstanceOf[Anticipate]
     }
     
-    extension [Self <: Anticipate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Anticipate] (val x: Self) extends AnyVal {
       
       inline def setAnticipate(value: /* v */ Double => Double): Self = StObject.set(x, "anticipate", js.Any.fromFunction1(value))
       
@@ -127,7 +128,8 @@ object anon {
       __obj.asInstanceOf[Ease]
     }
     
-    extension [Self <: Ease](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ease] (val x: Self) extends AnyVal {
       
       inline def setEase(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TweenProps * / any['ease'] */ js.Any) | linear | easeIn | easeOut | easeInOut | circIn | circOut | circInOut | backIn | backOut | backInOut | anticipate | CubicBezierArgs
@@ -148,7 +150,8 @@ object anon {
       __obj.asInstanceOf[ElementStyler]
     }
     
-    extension [Self <: ElementStyler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementStyler] (val x: Self) extends AnyVal {
       
       inline def setElementStyler(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Styler */ Any
@@ -168,7 +171,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: tween): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

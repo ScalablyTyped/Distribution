@@ -23,7 +23,8 @@ object AudioSilenceFailoverSettings {
     __obj.asInstanceOf[AudioSilenceFailoverSettings]
   }
   
-  extension [Self <: AudioSilenceFailoverSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioSilenceFailoverSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioSelectorName(value: string): Self = StObject.set(x, "AudioSelectorName", value.asInstanceOf[js.Any])
     

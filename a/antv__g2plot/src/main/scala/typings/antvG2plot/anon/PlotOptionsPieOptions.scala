@@ -108,7 +108,8 @@ object PlotOptionsPieOptions {
     __obj.asInstanceOf[PlotOptionsPieOptions]
   }
   
-  extension [Self <: PlotOptionsPieOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotOptionsPieOptions] (val x: Self) extends AnyVal {
     
     inline def setAngleField(value: String): Self = StObject.set(x, "angleField", value.asInstanceOf[js.Any])
     

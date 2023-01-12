@@ -227,7 +227,8 @@ object subtagMod {
       __obj.asInstanceOf[Subtag]
     }
     
-    extension [Self <: Subtag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subtag] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: () => String): Self = StObject.set(x, "added", js.Any.fromFunction0(value))
       

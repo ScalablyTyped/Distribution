@@ -17,7 +17,8 @@ object VerifyEmailOptions {
     __obj.asInstanceOf[VerifyEmailOptions]
   }
   
-  extension [Self <: VerifyEmailOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyEmailOptions] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

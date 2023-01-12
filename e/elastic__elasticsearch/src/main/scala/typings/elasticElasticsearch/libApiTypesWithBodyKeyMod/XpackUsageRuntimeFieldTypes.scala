@@ -17,7 +17,8 @@ object XpackUsageRuntimeFieldTypes {
     __obj.asInstanceOf[XpackUsageRuntimeFieldTypes]
   }
   
-  extension [Self <: XpackUsageRuntimeFieldTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageRuntimeFieldTypes] (val x: Self) extends AnyVal {
     
     inline def setField_types(value: js.Array[XpackUsageRuntimeFieldsType]): Self = StObject.set(x, "field_types", value.asInstanceOf[js.Any])
     

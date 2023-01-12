@@ -38,7 +38,8 @@ object ScheduledInstanceRecurrenceRequest {
     __obj.asInstanceOf[ScheduledInstanceRecurrenceRequest]
   }
   
-  extension [Self <: ScheduledInstanceRecurrenceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledInstanceRecurrenceRequest] (val x: Self) extends AnyVal {
     
     inline def setFrequency(value: String): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
     

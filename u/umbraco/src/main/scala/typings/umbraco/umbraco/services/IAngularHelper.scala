@@ -92,7 +92,8 @@ object IAngularHelper {
     __obj.asInstanceOf[IAngularHelper]
   }
   
-  extension [Self <: IAngularHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAngularHelper] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentForm(value: IScope => Any): Self = StObject.set(x, "getCurrentForm", js.Any.fromFunction1(value))
     

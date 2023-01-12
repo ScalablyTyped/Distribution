@@ -29,7 +29,8 @@ object GetNodesForSubtreeByStyleRequest {
     __obj.asInstanceOf[GetNodesForSubtreeByStyleRequest]
   }
   
-  extension [Self <: GetNodesForSubtreeByStyleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNodesForSubtreeByStyleRequest] (val x: Self) extends AnyVal {
     
     inline def setComputedStyles(value: js.Array[CSSComputedStyleProperty]): Self = StObject.set(x, "computedStyles", value.asInstanceOf[js.Any])
     

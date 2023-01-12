@@ -20,7 +20,8 @@ object SubtypeGroupLayerCapabilitiesMetadata {
     __obj.asInstanceOf[SubtypeGroupLayerCapabilitiesMetadata]
   }
   
-  extension [Self <: SubtypeGroupLayerCapabilitiesMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerCapabilitiesMetadata] (val x: Self) extends AnyVal {
     
     inline def setSupportsAdvancedFieldProperties(value: Boolean): Self = StObject.set(x, "supportsAdvancedFieldProperties", value.asInstanceOf[js.Any])
   }

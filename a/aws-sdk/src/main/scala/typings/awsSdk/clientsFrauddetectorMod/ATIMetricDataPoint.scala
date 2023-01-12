@@ -33,7 +33,8 @@ object ATIMetricDataPoint {
     __obj.asInstanceOf[ATIMetricDataPoint]
   }
   
-  extension [Self <: ATIMetricDataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATIMetricDataPoint] (val x: Self) extends AnyVal {
     
     inline def setAdr(value: float): Self = StObject.set(x, "adr", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IResourceConfig {
     __obj.asInstanceOf[IResourceConfig]
   }
   
-  extension [Self <: IResourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResourceConfig] (val x: Self) extends AnyVal {
     
     inline def setConfigEntries(value: js.Array[IResourceConfigEntry]): Self = StObject.set(x, "configEntries", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object DefaultUndefinedTypePropType {
     __obj.asInstanceOf[DefaultUndefinedTypePropType]
   }
   
-  extension [Self <: DefaultUndefinedTypePropType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultUndefinedTypePropType] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Unit): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

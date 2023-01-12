@@ -15,7 +15,8 @@ object SourceIPAddress {
     __obj.asInstanceOf[SourceIPAddress]
   }
   
-  extension [Self <: SourceIPAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceIPAddress] (val x: Self) extends AnyVal {
     
     inline def setSourceIPAddress(value: String): Self = StObject.set(x, "sourceIPAddress", value.asInstanceOf[js.Any])
   }

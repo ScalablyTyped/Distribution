@@ -23,7 +23,8 @@ object AddCustomRoutingEndpointsRequest {
     __obj.asInstanceOf[AddCustomRoutingEndpointsRequest]
   }
   
-  extension [Self <: AddCustomRoutingEndpointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddCustomRoutingEndpointsRequest] (val x: Self) extends AnyVal {
     
     inline def setEndpointConfigurations(value: CustomRoutingEndpointConfigurations): Self = StObject.set(x, "EndpointConfigurations", value.asInstanceOf[js.Any])
     

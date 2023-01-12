@@ -18,7 +18,8 @@ object BaseHighPrecisionDistanceScalesInput {
     __obj.asInstanceOf[BaseHighPrecisionDistanceScalesInput]
   }
   
-  extension [Self <: BaseHighPrecisionDistanceScalesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseHighPrecisionDistanceScalesInput] (val x: Self) extends AnyVal {
     
     inline def setHighPrecision(value: `true`): Self = StObject.set(x, "highPrecision", value.asInstanceOf[js.Any])
   }

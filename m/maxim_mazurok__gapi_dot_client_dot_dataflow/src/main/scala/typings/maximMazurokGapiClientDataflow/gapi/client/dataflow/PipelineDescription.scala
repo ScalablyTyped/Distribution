@@ -22,7 +22,8 @@ object PipelineDescription {
     __obj.asInstanceOf[PipelineDescription]
   }
   
-  extension [Self <: PipelineDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineDescription] (val x: Self) extends AnyVal {
     
     inline def setDisplayData(value: js.Array[DisplayData]): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PageRequestSucceededEventArgs {
     __obj.asInstanceOf[PageRequestSucceededEventArgs]
   }
   
-  extension [Self <: PageRequestSucceededEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageRequestSucceededEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGet_executor(value: () => WebRequestExecutor): Self = StObject.set(x, "get_executor", js.Any.fromFunction0(value))
   }

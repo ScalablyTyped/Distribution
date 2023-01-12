@@ -18,7 +18,8 @@ object RollupOptions {
     __obj.asInstanceOf[RollupOptions]
   }
   
-  extension [Self <: RollupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupOptions] (val x: Self) extends AnyVal {
     
     inline def setOutput(value: OutputOptions | js.Array[OutputOptions]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

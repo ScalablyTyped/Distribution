@@ -28,7 +28,8 @@ object BannerConfig {
     __obj.asInstanceOf[BannerConfig]
   }
   
-  extension [Self <: BannerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BannerConfig] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: js.Array[String]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

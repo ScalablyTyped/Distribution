@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsSeatRowSmallMod extends Shortcut {
       __obj.asInstanceOf[SeatRowSmallProps]
     }
     
-    extension [Self <: SeatRowSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeatRowSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

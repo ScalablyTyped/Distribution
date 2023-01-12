@@ -28,7 +28,8 @@ object OriginalResponse {
     __obj.asInstanceOf[OriginalResponse[T]]
   }
   
-  extension [Self <: OriginalResponse[?], T](x: Self & OriginalResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginalResponse[?], T] (val x: Self & OriginalResponse[T]) extends AnyVal {
     
     inline def setOriginalResponse(value: typings.std.Response): Self = StObject.set(x, "originalResponse", value.asInstanceOf[js.Any])
     

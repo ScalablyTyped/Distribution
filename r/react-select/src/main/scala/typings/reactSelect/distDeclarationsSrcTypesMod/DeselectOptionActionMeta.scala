@@ -19,7 +19,8 @@ object DeselectOptionActionMeta {
     __obj.asInstanceOf[DeselectOptionActionMeta[Option]]
   }
   
-  extension [Self <: DeselectOptionActionMeta[?], Option](x: Self & DeselectOptionActionMeta[Option]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeselectOptionActionMeta[?], Option] (val x: Self & DeselectOptionActionMeta[Option]) extends AnyVal {
     
     inline def setAction(value: `deselect-option`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object ExecuteStatementResponse {
     __obj.asInstanceOf[ExecuteStatementResponse]
   }
   
-  extension [Self <: ExecuteStatementResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteStatementResponse] (val x: Self) extends AnyVal {
     
     inline def setColumnMetadata(value: Metadata): Self = StObject.set(x, "columnMetadata", value.asInstanceOf[js.Any])
     

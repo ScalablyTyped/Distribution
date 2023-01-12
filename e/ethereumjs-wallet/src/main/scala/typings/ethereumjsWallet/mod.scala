@@ -166,7 +166,8 @@ object mod {
       __obj.asInstanceOf[EthSaleKeystore]
     }
     
-    extension [Self <: EthSaleKeystore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EthSaleKeystore] (val x: Self) extends AnyVal {
       
       inline def setBtcaddr(value: String): Self = StObject.set(x, "btcaddr", value.asInstanceOf[js.Any])
       
@@ -215,7 +216,8 @@ object mod {
       __obj.asInstanceOf[PBKDFParamsOut]
     }
     
-    extension [Self <: PBKDFParamsOut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PBKDFParamsOut] (val x: Self) extends AnyVal {
       
       inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
@@ -248,7 +250,8 @@ object mod {
       __obj.asInstanceOf[ScryptKDFParamsOut]
     }
     
-    extension [Self <: ScryptKDFParamsOut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScryptKDFParamsOut] (val x: Self) extends AnyVal {
       
       inline def setDklen(value: Double): Self = StObject.set(x, "dklen", value.asInstanceOf[js.Any])
       
@@ -279,7 +282,8 @@ object mod {
       __obj.asInstanceOf[V1Keystore]
     }
     
-    extension [Self <: V1Keystore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V1Keystore] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       
@@ -306,7 +310,8 @@ object mod {
       __obj.asInstanceOf[V3Keystore]
     }
     
-    extension [Self <: V3Keystore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V3Keystore] (val x: Self) extends AnyVal {
       
       inline def setCrypto(value: Cipher): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
       
@@ -356,7 +361,8 @@ object mod {
       __obj.asInstanceOf[V3Params]
     }
     
-    extension [Self <: V3Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V3Params] (val x: Self) extends AnyVal {
       
       inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       

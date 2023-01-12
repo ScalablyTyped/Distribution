@@ -90,7 +90,8 @@ object LatLongFieldDef {
     __obj.asInstanceOf[LatLongFieldDef[F]]
   }
   
-  extension [Self <: LatLongFieldDef[?], F /* <: Field */](x: Self & LatLongFieldDef[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatLongFieldDef[?], F /* <: Field */] (val x: Self & LatLongFieldDef[F]) extends AnyVal {
     
     inline def setAggregate(value: Aggregate | HiddenCompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object RouterAggregatedList {
     __obj.asInstanceOf[RouterAggregatedList]
   }
   
-  extension [Self <: RouterAggregatedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterAggregatedList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

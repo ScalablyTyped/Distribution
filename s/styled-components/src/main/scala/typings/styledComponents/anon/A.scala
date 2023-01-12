@@ -1752,7 +1752,8 @@ trait A extends StObject {
 }
 object A {
   
-  extension [Self <: A](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: A] (val x: Self) extends AnyVal {
     
     inline def setA(
       value: Styled[

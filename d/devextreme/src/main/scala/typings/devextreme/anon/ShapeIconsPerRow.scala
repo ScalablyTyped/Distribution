@@ -40,7 +40,8 @@ object ShapeIconsPerRow {
     __obj.asInstanceOf[ShapeIconsPerRow]
   }
   
-  extension [Self <: ShapeIconsPerRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeIconsPerRow] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: js.Array[DiagramShapeCategory | DisplayMode]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     

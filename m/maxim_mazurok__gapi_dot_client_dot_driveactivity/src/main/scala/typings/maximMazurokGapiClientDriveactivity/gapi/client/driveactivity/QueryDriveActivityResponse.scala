@@ -19,7 +19,8 @@ object QueryDriveActivityResponse {
     __obj.asInstanceOf[QueryDriveActivityResponse]
   }
   
-  extension [Self <: QueryDriveActivityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDriveActivityResponse] (val x: Self) extends AnyVal {
     
     inline def setActivities(value: js.Array[DriveActivity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     

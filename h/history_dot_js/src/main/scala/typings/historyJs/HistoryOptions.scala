@@ -33,7 +33,8 @@ object HistoryOptions {
     __obj.asInstanceOf[HistoryOptions]
   }
   
-  extension [Self <: HistoryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryOptions] (val x: Self) extends AnyVal {
     
     inline def setBusyDelay(value: Double): Self = StObject.set(x, "busyDelay", value.asInstanceOf[js.Any])
     

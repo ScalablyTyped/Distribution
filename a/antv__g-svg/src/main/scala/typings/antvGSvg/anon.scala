@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[PartialDataURLOptions]
     }
     
-    extension [Self <: PartialDataURLOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDataURLOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoderOptions(value: Double): Self = StObject.set(x, "encoderOptions", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[PartialSVGRendererConfig]
     }
     
-    extension [Self <: PartialSVGRendererConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSVGRendererConfig] (val x: Self) extends AnyVal {
       
       inline def setEnableAutoRendering(value: Boolean): Self = StObject.set(x, "enableAutoRendering", value.asInstanceOf[js.Any])
       

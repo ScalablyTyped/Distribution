@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsPaidPlansSellMod extends Shortcut {
       __obj.asInstanceOf[PaidPlansSellProps]
     }
     
-    extension [Self <: PaidPlansSellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaidPlansSellProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

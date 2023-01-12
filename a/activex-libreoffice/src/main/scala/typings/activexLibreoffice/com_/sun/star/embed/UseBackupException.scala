@@ -29,7 +29,8 @@ object UseBackupException {
     __obj.asInstanceOf[UseBackupException]
   }
   
-  extension [Self <: UseBackupException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseBackupException] (val x: Self) extends AnyVal {
     
     inline def setTemporaryFileURL(value: String): Self = StObject.set(x, "TemporaryFileURL", value.asInstanceOf[js.Any])
   }

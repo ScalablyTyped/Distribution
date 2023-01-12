@@ -28,7 +28,8 @@ object DescribeRuleGroupResponse {
     __obj.asInstanceOf[DescribeRuleGroupResponse]
   }
   
-  extension [Self <: DescribeRuleGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRuleGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setRuleGroup(value: RuleGroup): Self = StObject.set(x, "RuleGroup", value.asInstanceOf[js.Any])
     

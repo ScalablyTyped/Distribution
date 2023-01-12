@@ -20,7 +20,8 @@ object KeyCredentialRetrievalResult {
     __obj.asInstanceOf[KeyCredentialRetrievalResult]
   }
   
-  extension [Self <: KeyCredentialRetrievalResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyCredentialRetrievalResult] (val x: Self) extends AnyVal {
     
     inline def setCredential(value: KeyCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     

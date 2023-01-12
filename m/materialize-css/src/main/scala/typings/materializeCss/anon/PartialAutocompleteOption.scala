@@ -26,7 +26,8 @@ object PartialAutocompleteOption {
     __obj.asInstanceOf[PartialAutocompleteOption]
   }
   
-  extension [Self <: PartialAutocompleteOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAutocompleteOption] (val x: Self) extends AnyVal {
     
     inline def setData(value: AutocompleteData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

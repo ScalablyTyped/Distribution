@@ -18,7 +18,8 @@ object GetTrafficPolicyInstanceCountResponse {
     __obj.asInstanceOf[GetTrafficPolicyInstanceCountResponse]
   }
   
-  extension [Self <: GetTrafficPolicyInstanceCountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTrafficPolicyInstanceCountResponse] (val x: Self) extends AnyVal {
     
     inline def setTrafficPolicyInstanceCount(value: TrafficPolicyInstanceCount): Self = StObject.set(x, "TrafficPolicyInstanceCount", value.asInstanceOf[js.Any])
   }

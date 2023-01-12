@@ -500,7 +500,8 @@ object anon {
       __obj.asInstanceOf[Bank]
     }
     
-    extension [Self <: Bank](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bank] (val x: Self) extends AnyVal {
       
       inline def setBank(value: MinigameObject[StocksMinigame]): Self = StObject.set(x, "Bank", value.asInstanceOf[js.Any])
       
@@ -551,7 +552,8 @@ object anon {
       __obj.asInstanceOf[Cost]
     }
     
-    extension [Self <: Cost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cost] (val x: Self) extends AnyVal {
       
       inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       
@@ -6209,7 +6211,8 @@ object anon {
       __obj.asInstanceOf[typings.cookieclicker.anon.Language]
     }
     
-    extension [Self <: typings.cookieclicker.anon.Language](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.cookieclicker.anon.Language] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -6228,7 +6231,8 @@ object anon {
       __obj.asInstanceOf[PlayersN]
     }
     
-    extension [Self <: PlayersN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayersN] (val x: Self) extends AnyVal {
       
       inline def setPlayersN(value: Double): Self = StObject.set(x, "playersN", value.asInstanceOf[js.Any])
     }
@@ -6378,7 +6382,8 @@ object anon {
       __obj.asInstanceOf[TypeofSteam]
     }
     
-    extension [Self <: TypeofSteam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofSteam] (val x: Self) extends AnyVal {
       
       inline def setAllowSteamAchievs(value: Boolean): Self = StObject.set(x, "allowSteamAchievs", value.asInstanceOf[js.Any])
       
@@ -6461,7 +6466,8 @@ object anon {
       __obj.asInstanceOf[_empty]
     }
     
-    extension [Self <: _empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
       
       inline def `setREPLACE ALL`(value: Record[String, String]): Self = StObject.set(x, "REPLACE ALL", value.asInstanceOf[js.Any])
       

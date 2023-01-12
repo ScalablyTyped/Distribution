@@ -23,7 +23,8 @@ object QuantileReducer {
     __obj.asInstanceOf[QuantileReducer]
   }
   
-  extension [Self <: QuantileReducer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuantileReducer] (val x: Self) extends AnyVal {
     
     inline def setProperty(value: PropertyName): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     

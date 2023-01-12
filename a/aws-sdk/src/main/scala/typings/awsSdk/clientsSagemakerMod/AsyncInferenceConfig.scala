@@ -23,7 +23,8 @@ object AsyncInferenceConfig {
     __obj.asInstanceOf[AsyncInferenceConfig]
   }
   
-  extension [Self <: AsyncInferenceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncInferenceConfig] (val x: Self) extends AnyVal {
     
     inline def setClientConfig(value: AsyncInferenceClientConfig): Self = StObject.set(x, "ClientConfig", value.asInstanceOf[js.Any])
     

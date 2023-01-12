@@ -43,7 +43,8 @@ object LastCrawlInfo {
     __obj.asInstanceOf[LastCrawlInfo]
   }
   
-  extension [Self <: LastCrawlInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastCrawlInfo] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: DescriptionString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     

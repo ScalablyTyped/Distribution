@@ -18,7 +18,8 @@ object CreateFilesParams {
     __obj.asInstanceOf[CreateFilesParams]
   }
   
-  extension [Self <: CreateFilesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFilesParams] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: js.Array[FileCreate]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

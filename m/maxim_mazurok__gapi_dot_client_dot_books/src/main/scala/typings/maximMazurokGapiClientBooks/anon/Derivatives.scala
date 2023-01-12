@@ -22,7 +22,8 @@ object Derivatives {
     __obj.asInstanceOf[Derivatives]
   }
   
-  extension [Self <: Derivatives](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Derivatives] (val x: Self) extends AnyVal {
     
     inline def setDerivatives(value: js.Array[Source]): Self = StObject.set(x, "derivatives", value.asInstanceOf[js.Any])
     

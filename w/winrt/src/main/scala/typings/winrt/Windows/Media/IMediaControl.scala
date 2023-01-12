@@ -66,7 +66,8 @@ object IMediaControl {
     __obj.asInstanceOf[IMediaControl]
   }
   
-  extension [Self <: IMediaControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaControl] (val x: Self) extends AnyVal {
     
     inline def setAlbumArt(value: Uri): Self = StObject.set(x, "albumArt", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object NumberOfLevelZeroTilesY {
     __obj.asInstanceOf[NumberOfLevelZeroTilesY]
   }
   
-  extension [Self <: NumberOfLevelZeroTilesY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberOfLevelZeroTilesY] (val x: Self) extends AnyVal {
     
     inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     

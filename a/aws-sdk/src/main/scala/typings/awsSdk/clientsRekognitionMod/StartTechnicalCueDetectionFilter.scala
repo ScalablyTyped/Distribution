@@ -23,7 +23,8 @@ object StartTechnicalCueDetectionFilter {
     __obj.asInstanceOf[StartTechnicalCueDetectionFilter]
   }
   
-  extension [Self <: StartTechnicalCueDetectionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTechnicalCueDetectionFilter] (val x: Self) extends AnyVal {
     
     inline def setBlackFrame(value: BlackFrame): Self = StObject.set(x, "BlackFrame", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object InsufficientSensorData {
     __obj.asInstanceOf[InsufficientSensorData]
   }
   
-  extension [Self <: InsufficientSensorData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsufficientSensorData] (val x: Self) extends AnyVal {
     
     inline def setMissingCompleteSensorData(value: MissingCompleteSensorData): Self = StObject.set(x, "MissingCompleteSensorData", value.asInstanceOf[js.Any])
     

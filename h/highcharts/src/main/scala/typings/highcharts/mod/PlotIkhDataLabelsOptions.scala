@@ -273,7 +273,8 @@ object PlotIkhDataLabelsOptions {
     __obj.asInstanceOf[PlotIkhDataLabelsOptions]
   }
   
-  extension [Self <: PlotIkhDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotIkhDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object distTypesMiddlewaresContentSecurityPolicyMod {
       __obj.asInstanceOf[ContentSecurityPolicyOptions]
     }
     
-    extension [Self <: ContentSecurityPolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentSecurityPolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setDirectives(value: Record[String, Null | js.Iterable[ContentSecurityPolicyDirectiveValue] | js.Symbol]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       

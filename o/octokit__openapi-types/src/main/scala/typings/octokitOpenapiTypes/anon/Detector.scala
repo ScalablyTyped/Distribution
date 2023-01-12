@@ -47,7 +47,8 @@ object Detector {
     __obj.asInstanceOf[Detector]
   }
   
-  extension [Self <: Detector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Detector] (val x: Self) extends AnyVal {
     
     inline def setDetector(value: UrlVersion): Self = StObject.set(x, "detector", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object DiagnosticServerCapabilities {
     __obj.asInstanceOf[DiagnosticServerCapabilities]
   }
   
-  extension [Self <: DiagnosticServerCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticServerCapabilities] (val x: Self) extends AnyVal {
     
     inline def setDiagnosticProvider(value: DiagnosticOptions): Self = StObject.set(x, "diagnosticProvider", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object TransactionAttributes {
     __obj.asInstanceOf[TransactionAttributes]
   }
   
-  extension [Self <: TransactionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionAttributes] (val x: Self) extends AnyVal {
     
     inline def setAffiliation(value: String): Self = StObject.set(x, "Affiliation", value.asInstanceOf[js.Any])
     

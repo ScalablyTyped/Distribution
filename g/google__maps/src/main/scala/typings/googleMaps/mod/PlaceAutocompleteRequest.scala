@@ -76,7 +76,8 @@ object PlaceAutocompleteRequest {
     __obj.asInstanceOf[PlaceAutocompleteRequest]
   }
   
-  extension [Self <: PlaceAutocompleteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceAutocompleteRequest] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

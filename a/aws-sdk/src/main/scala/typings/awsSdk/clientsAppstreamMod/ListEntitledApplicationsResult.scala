@@ -23,7 +23,8 @@ object ListEntitledApplicationsResult {
     __obj.asInstanceOf[ListEntitledApplicationsResult]
   }
   
-  extension [Self <: ListEntitledApplicationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEntitledApplicationsResult] (val x: Self) extends AnyVal {
     
     inline def setEntitledApplications(value: EntitledApplicationList): Self = StObject.set(x, "EntitledApplications", value.asInstanceOf[js.Any])
     

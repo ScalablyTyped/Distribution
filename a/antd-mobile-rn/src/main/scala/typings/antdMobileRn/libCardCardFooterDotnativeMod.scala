@@ -45,7 +45,8 @@ object libCardCardFooterDotnativeMod {
       __obj.asInstanceOf[CardFooterProps]
     }
     
-    extension [Self <: CardFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardFooterProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

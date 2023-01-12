@@ -46,7 +46,8 @@ object distKerasFormatLayersEmbeddingsSerializationMod {
       __obj.asInstanceOf[EmbeddingLayerConfig]
     }
     
-    extension [Self <: EmbeddingLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbeddingLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setActivity_regularizer(value: RegularizerSerialization): Self = StObject.set(x, "activity_regularizer", value.asInstanceOf[js.Any])
       

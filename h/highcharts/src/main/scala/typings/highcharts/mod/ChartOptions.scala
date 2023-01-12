@@ -455,7 +455,8 @@ object ChartOptions {
     __obj.asInstanceOf[ChartOptions]
   }
   
-  extension [Self <: ChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAlignThresholds(value: Boolean): Self = StObject.set(x, "alignThresholds", value.asInstanceOf[js.Any])
     

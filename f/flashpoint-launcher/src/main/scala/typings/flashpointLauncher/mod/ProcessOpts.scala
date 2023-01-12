@@ -19,7 +19,8 @@ object ProcessOpts {
     __obj.asInstanceOf[ProcessOpts]
   }
   
-  extension [Self <: ProcessOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessOpts] (val x: Self) extends AnyVal {
     
     inline def setAutoRestart(value: Boolean): Self = StObject.set(x, "autoRestart", value.asInstanceOf[js.Any])
     

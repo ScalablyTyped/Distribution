@@ -26,7 +26,8 @@ object ShareSheetProps {
     __obj.asInstanceOf[ShareSheetProps]
   }
   
-  extension [Self <: ShareSheetProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareSheetProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

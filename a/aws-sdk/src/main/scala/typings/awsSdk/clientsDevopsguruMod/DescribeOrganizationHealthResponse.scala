@@ -38,7 +38,8 @@ object DescribeOrganizationHealthResponse {
     __obj.asInstanceOf[DescribeOrganizationHealthResponse]
   }
   
-  extension [Self <: DescribeOrganizationHealthResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOrganizationHealthResponse] (val x: Self) extends AnyVal {
     
     inline def setMetricsAnalyzed(value: NumMetricsAnalyzed): Self = StObject.set(x, "MetricsAnalyzed", value.asInstanceOf[js.Any])
     

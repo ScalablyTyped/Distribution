@@ -15,7 +15,8 @@ object StartEditing {
     __obj.asInstanceOf[StartEditing]
   }
   
-  extension [Self <: StartEditing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartEditing] (val x: Self) extends AnyVal {
     
     inline def setStartEditing(value: (Double, Double) => Unit): Self = StObject.set(x, "startEditing", js.Any.fromFunction2(value))
   }

@@ -50,7 +50,8 @@ object Exchange {
     __obj.asInstanceOf[Exchange]
   }
   
-  extension [Self <: Exchange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exchange] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

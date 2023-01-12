@@ -34,7 +34,8 @@ object MuxStream {
     __obj.asInstanceOf[MuxStream]
   }
   
-  extension [Self <: MuxStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MuxStream] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

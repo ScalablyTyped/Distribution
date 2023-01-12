@@ -33,7 +33,8 @@ object AssociateConnectPeerRequest {
     __obj.asInstanceOf[AssociateConnectPeerRequest]
   }
   
-  extension [Self <: AssociateConnectPeerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateConnectPeerRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectPeerId(value: ConnectPeerId): Self = StObject.set(x, "ConnectPeerId", value.asInstanceOf[js.Any])
     

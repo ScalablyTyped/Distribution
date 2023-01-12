@@ -46,7 +46,8 @@ object lastLastMod {
       __obj.asInstanceOf[Last]
     }
     
-    extension [Self <: Last](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Last] (val x: Self) extends AnyVal {
       
       inline def setConcat(value: Last => Last): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
       

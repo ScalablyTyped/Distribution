@@ -24,7 +24,8 @@ object IdentityScale {
     __obj.asInstanceOf[IdentityScale]
   }
   
-  extension [Self <: IdentityScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityScale] (val x: Self) extends AnyVal {
     
     inline def setNice(value: Boolean | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     

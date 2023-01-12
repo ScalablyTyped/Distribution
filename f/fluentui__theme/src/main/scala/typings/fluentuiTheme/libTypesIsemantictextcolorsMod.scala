@@ -202,7 +202,8 @@ object libTypesIsemantictextcolorsMod {
       __obj.asInstanceOf[ISemanticTextColors]
     }
     
-    extension [Self <: ISemanticTextColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISemanticTextColors] (val x: Self) extends AnyVal {
       
       inline def setAccentButtonText(value: String): Self = StObject.set(x, "accentButtonText", value.asInstanceOf[js.Any])
       

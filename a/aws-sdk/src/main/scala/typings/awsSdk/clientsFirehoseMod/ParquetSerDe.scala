@@ -43,7 +43,8 @@ object ParquetSerDe {
     __obj.asInstanceOf[ParquetSerDe]
   }
   
-  extension [Self <: ParquetSerDe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParquetSerDe] (val x: Self) extends AnyVal {
     
     inline def setBlockSizeBytes(value: BlockSizeBytes): Self = StObject.set(x, "BlockSizeBytes", value.asInstanceOf[js.Any])
     

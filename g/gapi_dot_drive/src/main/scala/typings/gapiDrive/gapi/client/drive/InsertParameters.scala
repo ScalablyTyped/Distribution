@@ -33,7 +33,8 @@ object InsertParameters {
     __obj.asInstanceOf[InsertParameters]
   }
   
-  extension [Self <: InsertParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertParameters] (val x: Self) extends AnyVal {
     
     inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     

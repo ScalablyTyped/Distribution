@@ -20,7 +20,8 @@ object DecorationPropsChangedEvent {
     __obj.asInstanceOf[DecorationPropsChangedEvent]
   }
   
-  extension [Self <: DecorationPropsChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecorationPropsChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setNewProperties(value: DecorationOptions): Self = StObject.set(x, "newProperties", value.asInstanceOf[js.Any])
     

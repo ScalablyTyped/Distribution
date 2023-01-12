@@ -37,7 +37,8 @@ object NestingLevelSuggestionState {
     __obj.asInstanceOf[NestingLevelSuggestionState]
   }
   
-  extension [Self <: NestingLevelSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NestingLevelSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setBulletAlignmentSuggested(value: Boolean): Self = StObject.set(x, "bulletAlignmentSuggested", value.asInstanceOf[js.Any])
     

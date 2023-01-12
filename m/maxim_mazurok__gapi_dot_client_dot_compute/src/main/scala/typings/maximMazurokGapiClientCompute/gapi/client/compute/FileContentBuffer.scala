@@ -19,7 +19,8 @@ object FileContentBuffer {
     __obj.asInstanceOf[FileContentBuffer]
   }
   
-  extension [Self <: FileContentBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileContentBuffer] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

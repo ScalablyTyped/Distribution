@@ -29,7 +29,8 @@ object InputDeviceKey {
     __obj.asInstanceOf[InputDeviceKey]
   }
   
-  extension [Self <: InputDeviceKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDeviceKey] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

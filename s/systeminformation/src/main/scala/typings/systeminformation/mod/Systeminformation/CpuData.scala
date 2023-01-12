@@ -76,7 +76,8 @@ object CpuData {
     __obj.asInstanceOf[CpuData]
   }
   
-  extension [Self <: CpuData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CpuData] (val x: Self) extends AnyVal {
     
     inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     

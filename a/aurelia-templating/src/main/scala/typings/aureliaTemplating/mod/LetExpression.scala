@@ -15,7 +15,8 @@ object LetExpression {
     __obj.asInstanceOf[LetExpression]
   }
   
-  extension [Self <: LetExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LetExpression] (val x: Self) extends AnyVal {
     
     inline def setCreateBinding(value: () => LetBinding): Self = StObject.set(x, "createBinding", js.Any.fromFunction0(value))
   }

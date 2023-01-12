@@ -31,7 +31,8 @@ object RunInTerminalResponse {
     __obj.asInstanceOf[RunInTerminalResponse]
   }
   
-  extension [Self <: RunInTerminalResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunInTerminalResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: ProcessId): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

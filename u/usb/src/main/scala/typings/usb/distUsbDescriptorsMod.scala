@@ -37,7 +37,8 @@ object distUsbDescriptorsMod {
       __obj.asInstanceOf[BosDescriptor]
     }
     
-    extension [Self <: BosDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BosDescriptor] (val x: Self) extends AnyVal {
       
       inline def setBDescriptorType(value: Double): Self = StObject.set(x, "bDescriptorType", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distUsbDescriptorsMod {
       __obj.asInstanceOf[CapabilityDescriptor]
     }
     
-    extension [Self <: CapabilityDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CapabilityDescriptor] (val x: Self) extends AnyVal {
       
       inline def setBDescriptorType(value: Double): Self = StObject.set(x, "bDescriptorType", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object distUsbDescriptorsMod {
       __obj.asInstanceOf[ConfigDescriptor]
     }
     
-    extension [Self <: ConfigDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigDescriptor] (val x: Self) extends AnyVal {
       
       inline def setBConfigurationValue(value: Double): Self = StObject.set(x, "bConfigurationValue", value.asInstanceOf[js.Any])
       
@@ -228,7 +231,8 @@ object distUsbDescriptorsMod {
       __obj.asInstanceOf[DeviceDescriptor]
     }
     
-    extension [Self <: DeviceDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceDescriptor] (val x: Self) extends AnyVal {
       
       inline def setBDescriptorType(value: Double): Self = StObject.set(x, "bDescriptorType", value.asInstanceOf[js.Any])
       
@@ -310,7 +314,8 @@ object distUsbDescriptorsMod {
       __obj.asInstanceOf[EndpointDescriptor]
     }
     
-    extension [Self <: EndpointDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointDescriptor] (val x: Self) extends AnyVal {
       
       inline def setBDescriptorType(value: Double): Self = StObject.set(x, "bDescriptorType", value.asInstanceOf[js.Any])
       
@@ -386,7 +391,8 @@ object distUsbDescriptorsMod {
       __obj.asInstanceOf[InterfaceDescriptor]
     }
     
-    extension [Self <: InterfaceDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterfaceDescriptor] (val x: Self) extends AnyVal {
       
       inline def setBAlternateSetting(value: Double): Self = StObject.set(x, "bAlternateSetting", value.asInstanceOf[js.Any])
       

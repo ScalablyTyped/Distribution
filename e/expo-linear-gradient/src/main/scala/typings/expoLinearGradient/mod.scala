@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[LinearGradientProps]
     }
     
-    extension [Self <: LinearGradientProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearGradientProps] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       

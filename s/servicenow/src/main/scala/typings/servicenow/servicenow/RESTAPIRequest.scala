@@ -39,7 +39,8 @@ object RESTAPIRequest {
     __obj.asInstanceOf[RESTAPIRequest[T]]
   }
   
-  extension [Self <: RESTAPIRequest[?], T](x: Self & RESTAPIRequest[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RESTAPIRequest[?], T] (val x: Self & RESTAPIRequest[T]) extends AnyVal {
     
     inline def setBody(value: RESTAPIRequestBody[T]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

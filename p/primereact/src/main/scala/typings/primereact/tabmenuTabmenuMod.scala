@@ -483,7 +483,8 @@ object tabmenuTabmenuMod {
       __obj.asInstanceOf[TabMenuProps]
     }
     
-    extension [Self <: TabMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1236,7 +1237,8 @@ object tabmenuTabmenuMod {
       __obj.asInstanceOf[TabMenuTabChangeParams]
     }
     
-    extension [Self <: TabMenuTabChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabMenuTabChangeParams] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

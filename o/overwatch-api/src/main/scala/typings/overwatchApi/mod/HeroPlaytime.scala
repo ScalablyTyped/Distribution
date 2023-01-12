@@ -17,7 +17,8 @@ object HeroPlaytime {
     __obj.asInstanceOf[HeroPlaytime]
   }
   
-  extension [Self <: HeroPlaytime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeroPlaytime] (val x: Self) extends AnyVal {
     
     inline def setPlayed(value: String): Self = StObject.set(x, "played", value.asInstanceOf[js.Any])
   }

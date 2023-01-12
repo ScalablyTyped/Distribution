@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[NavigationBarButton]
     }
     
-    extension [Self <: NavigationBarButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationBarButton] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[NavigationBarProps]
     }
     
-    extension [Self <: NavigationBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationBarProps] (val x: Self) extends AnyVal {
       
       inline def setLeftButton(value: NavigationBarButton | ReactElement): Self = StObject.set(x, "leftButton", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object mod {
       __obj.asInstanceOf[NavigationBarTitle]
     }
     
-    extension [Self <: NavigationBarTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationBarTitle] (val x: Self) extends AnyVal {
       
       inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object mod {
       __obj.asInstanceOf[StatusBar]
     }
     
-    extension [Self <: StatusBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusBar] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

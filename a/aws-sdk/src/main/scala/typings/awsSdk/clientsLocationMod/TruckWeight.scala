@@ -23,7 +23,8 @@ object TruckWeight {
     __obj.asInstanceOf[TruckWeight]
   }
   
-  extension [Self <: TruckWeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TruckWeight] (val x: Self) extends AnyVal {
     
     inline def setTotal(value: TruckWeightTotalDouble): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     

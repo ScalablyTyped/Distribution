@@ -34,7 +34,8 @@ object TerminologyCapabilitiesCodeSystem {
     __obj.asInstanceOf[TerminologyCapabilitiesCodeSystem]
   }
   
-  extension [Self <: TerminologyCapabilitiesCodeSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminologyCapabilitiesCodeSystem] (val x: Self) extends AnyVal {
     
     inline def setSubsumption(value: Boolean): Self = StObject.set(x, "subsumption", value.asInstanceOf[js.Any])
     

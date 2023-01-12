@@ -23,7 +23,8 @@ object typesInvalidRepositoryDescriptionExceptionMod {
       __obj.asInstanceOf[InvalidRepositoryDescriptionException]
     }
     
-    extension [Self <: InvalidRepositoryDescriptionException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidRepositoryDescriptionException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryDescriptionException

@@ -230,7 +230,8 @@ object DatePickerProps {
     __obj.asInstanceOf[DatePickerProps]
   }
   
-  extension [Self <: DatePickerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

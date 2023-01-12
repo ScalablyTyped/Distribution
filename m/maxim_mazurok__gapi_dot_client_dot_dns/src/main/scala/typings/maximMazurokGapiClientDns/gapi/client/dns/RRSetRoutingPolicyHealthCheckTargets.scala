@@ -15,7 +15,8 @@ object RRSetRoutingPolicyHealthCheckTargets {
     __obj.asInstanceOf[RRSetRoutingPolicyHealthCheckTargets]
   }
   
-  extension [Self <: RRSetRoutingPolicyHealthCheckTargets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RRSetRoutingPolicyHealthCheckTargets] (val x: Self) extends AnyVal {
     
     inline def setInternalLoadBalancers(value: js.Array[RRSetRoutingPolicyLoadBalancerTarget]): Self = StObject.set(x, "internalLoadBalancers", value.asInstanceOf[js.Any])
     

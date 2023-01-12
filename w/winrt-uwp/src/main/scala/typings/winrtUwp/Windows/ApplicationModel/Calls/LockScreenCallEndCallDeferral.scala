@@ -17,7 +17,8 @@ object LockScreenCallEndCallDeferral {
     __obj.asInstanceOf[LockScreenCallEndCallDeferral]
   }
   
-  extension [Self <: LockScreenCallEndCallDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LockScreenCallEndCallDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

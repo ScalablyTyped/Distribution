@@ -187,7 +187,8 @@ object sapUiLayoutFormFormLayoutMod {
       __obj.asInstanceOf[FormLayoutSettings]
     }
     
-    extension [Self <: FormLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setBackgroundDesign(
         value: BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) | PropertyBindingInfo

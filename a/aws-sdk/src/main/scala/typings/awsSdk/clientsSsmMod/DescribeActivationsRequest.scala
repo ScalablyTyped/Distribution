@@ -28,7 +28,8 @@ object DescribeActivationsRequest {
     __obj.asInstanceOf[DescribeActivationsRequest]
   }
   
-  extension [Self <: DescribeActivationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeActivationsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: DescribeActivationsFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

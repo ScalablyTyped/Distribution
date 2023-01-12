@@ -53,7 +53,8 @@ object SpinButton {
     __obj.asInstanceOf[SpinButton]
   }
   
-  extension [Self <: SpinButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpinButton] (val x: Self) extends AnyVal {
     
     inline def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     

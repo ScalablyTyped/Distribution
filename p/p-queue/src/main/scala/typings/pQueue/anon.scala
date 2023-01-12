@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[PartialPriorityQueueOptio]
     }
     
-    extension [Self <: PartialPriorityQueueOptio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPriorityQueueOptio] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyPartialPriorityQu]
     }
     
-    extension [Self <: ReadonlyPartialPriorityQu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyPartialPriorityQu] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       

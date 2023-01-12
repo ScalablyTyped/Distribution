@@ -23,7 +23,8 @@ object TranslationResult {
     __obj.asInstanceOf[TranslationResult]
   }
   
-  extension [Self <: TranslationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslationResult] (val x: Self) extends AnyVal {
     
     inline def setCharacter_count(value: Double): Self = StObject.set(x, "character_count", value.asInstanceOf[js.Any])
     

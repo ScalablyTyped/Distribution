@@ -17,7 +17,8 @@ object MediaConstraints {
     __obj.asInstanceOf[MediaConstraints]
   }
   
-  extension [Self <: MediaConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaConstraints] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

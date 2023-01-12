@@ -17,7 +17,8 @@ object ChannelUpdatedEventArgs {
     __obj.asInstanceOf[ChannelUpdatedEventArgs]
   }
   
-  extension [Self <: ChannelUpdatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelUpdatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

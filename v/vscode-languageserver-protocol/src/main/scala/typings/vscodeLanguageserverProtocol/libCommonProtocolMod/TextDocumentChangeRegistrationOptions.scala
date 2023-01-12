@@ -20,7 +20,8 @@ object TextDocumentChangeRegistrationOptions {
     __obj.asInstanceOf[TextDocumentChangeRegistrationOptions]
   }
   
-  extension [Self <: TextDocumentChangeRegistrationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentChangeRegistrationOptions] (val x: Self) extends AnyVal {
     
     inline def setSyncKind(value: TextDocumentSyncKind): Self = StObject.set(x, "syncKind", value.asInstanceOf[js.Any])
   }

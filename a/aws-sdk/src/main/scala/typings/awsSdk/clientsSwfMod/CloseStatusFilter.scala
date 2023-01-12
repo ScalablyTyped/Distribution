@@ -18,7 +18,8 @@ object CloseStatusFilter {
     __obj.asInstanceOf[CloseStatusFilter]
   }
   
-  extension [Self <: CloseStatusFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseStatusFilter] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: CloseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

@@ -90,7 +90,8 @@ object XPasswordContainer {
     __obj.asInstanceOf[XPasswordContainer]
   }
   
-  extension [Self <: XPasswordContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPasswordContainer] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, String, SeqEquiv[String], XInteractionHandler) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction4(value))
     

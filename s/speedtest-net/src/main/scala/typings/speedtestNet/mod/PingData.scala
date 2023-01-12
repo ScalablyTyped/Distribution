@@ -21,7 +21,8 @@ object PingData {
     __obj.asInstanceOf[PingData]
   }
   
-  extension [Self <: PingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PingData] (val x: Self) extends AnyVal {
     
     inline def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
     

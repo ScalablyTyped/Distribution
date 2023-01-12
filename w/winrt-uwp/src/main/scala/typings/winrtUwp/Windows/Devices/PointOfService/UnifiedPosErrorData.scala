@@ -31,7 +31,8 @@ object UnifiedPosErrorData {
     __obj.asInstanceOf[UnifiedPosErrorData]
   }
   
-  extension [Self <: UnifiedPosErrorData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedPosErrorData] (val x: Self) extends AnyVal {
     
     inline def setExtendedReason(value: Double): Self = StObject.set(x, "extendedReason", value.asInstanceOf[js.Any])
     

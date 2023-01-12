@@ -33,7 +33,8 @@ object DescribeTestCasesInput {
     __obj.asInstanceOf[DescribeTestCasesInput]
   }
   
-  extension [Self <: DescribeTestCasesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTestCasesInput] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: TestCaseFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

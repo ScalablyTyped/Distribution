@@ -37,7 +37,8 @@ object ReplaceCriteria {
     __obj.asInstanceOf[ReplaceCriteria]
   }
   
-  extension [Self <: ReplaceCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceCriteria] (val x: Self) extends AnyVal {
     
     inline def setCompleteMatch(value: Boolean): Self = StObject.set(x, "completeMatch", value.asInstanceOf[js.Any])
     

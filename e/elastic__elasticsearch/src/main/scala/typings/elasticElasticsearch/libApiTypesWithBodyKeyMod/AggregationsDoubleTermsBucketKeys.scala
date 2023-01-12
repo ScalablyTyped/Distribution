@@ -19,7 +19,8 @@ object AggregationsDoubleTermsBucketKeys {
     __obj.asInstanceOf[AggregationsDoubleTermsBucketKeys]
   }
   
-  extension [Self <: AggregationsDoubleTermsBucketKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsDoubleTermsBucketKeys] (val x: Self) extends AnyVal {
     
     inline def setKey(value: double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

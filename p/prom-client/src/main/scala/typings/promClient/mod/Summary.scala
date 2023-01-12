@@ -81,7 +81,8 @@ object Summary {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setPercentiles(value: js.Array[Double]): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object Summary {
       __obj.asInstanceOf[Internal[T]]
     }
     
-    extension [Self <: Internal[?], T /* <: String */](x: Self & Internal[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Internal[?], T /* <: String */] (val x: Self & Internal[T]) extends AnyVal {
       
       inline def setObserve(value: Double => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
       

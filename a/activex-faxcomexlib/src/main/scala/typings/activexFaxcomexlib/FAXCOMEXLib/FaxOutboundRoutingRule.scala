@@ -52,7 +52,8 @@ object FaxOutboundRoutingRule {
     __obj.asInstanceOf[FaxOutboundRoutingRule]
   }
   
-  extension [Self <: FaxOutboundRoutingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxOutboundRoutingRule] (val x: Self) extends AnyVal {
     
     inline def setAreaCode(value: Double): Self = StObject.set(x, "AreaCode", value.asInstanceOf[js.Any])
     

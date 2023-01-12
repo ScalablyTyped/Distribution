@@ -223,7 +223,8 @@ object PivotGridDataSourceField {
     __obj.asInstanceOf[PivotGridDataSourceField]
   }
   
-  extension [Self <: PivotGridDataSourceField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridDataSourceField] (val x: Self) extends AnyVal {
     
     inline def setAllowCrossGroupCalculation(value: Boolean): Self = StObject.set(x, "allowCrossGroupCalculation", value.asInstanceOf[js.Any])
     

@@ -660,7 +660,8 @@ object PropsSVGFEMorphologyEleme {
     __obj.asInstanceOf[PropsSVGFEMorphologyEleme]
   }
   
-  extension [Self <: PropsSVGFEMorphologyEleme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGFEMorphologyEleme] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

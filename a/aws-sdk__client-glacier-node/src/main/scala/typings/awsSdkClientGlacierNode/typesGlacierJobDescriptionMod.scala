@@ -132,7 +132,8 @@ object typesGlacierJobDescriptionMod {
       __obj.asInstanceOf[GlacierJobDescription]
     }
     
-    extension [Self <: GlacierJobDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlacierJobDescription] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ArchiveRetrieval | InventoryRetrieval | Select | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -249,7 +250,8 @@ object typesGlacierJobDescriptionMod {
       __obj.asInstanceOf[UnmarshalledGlacierJobDescription]
     }
     
-    extension [Self <: UnmarshalledGlacierJobDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledGlacierJobDescription] (val x: Self) extends AnyVal {
       
       inline def setInventoryRetrievalParameters(value: UnmarshalledInventoryRetrievalJobDescription): Self = StObject.set(x, "InventoryRetrievalParameters", value.asInstanceOf[js.Any])
       

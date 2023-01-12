@@ -16,7 +16,8 @@ object ServiceWorkerRegistrationEventMap {
     __obj.asInstanceOf[ServiceWorkerRegistrationEventMap]
   }
   
-  extension [Self <: ServiceWorkerRegistrationEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceWorkerRegistrationEventMap] (val x: Self) extends AnyVal {
     
     inline def setUpdatefound(value: Event): Self = StObject.set(x, "updatefound", value.asInstanceOf[js.Any])
   }

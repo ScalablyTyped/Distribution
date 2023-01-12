@@ -26,7 +26,8 @@ object CircleProto {
     __obj.asInstanceOf[CircleProto]
   }
   
-  extension [Self <: CircleProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleProto] (val x: Self) extends AnyVal {
     
     inline def setCircleId(value: String): Self = StObject.set(x, "circleId", value.asInstanceOf[js.Any])
     

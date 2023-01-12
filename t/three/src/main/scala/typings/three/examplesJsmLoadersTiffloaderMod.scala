@@ -45,7 +45,8 @@ object examplesJsmLoadersTiffloaderMod {
       __obj.asInstanceOf[TIFFResult]
     }
     
-    extension [Self <: TIFFResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TIFFResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

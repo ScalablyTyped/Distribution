@@ -16,7 +16,8 @@ object ConstModulesConfig {
     __obj.asInstanceOf[ConstModulesConfig]
   }
   
-  extension [Self <: ConstModulesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstModulesConfig] (val x: Self) extends AnyVal {
     
     inline def setGlobals(value: StringDictionary[StringDictionary[String]]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     

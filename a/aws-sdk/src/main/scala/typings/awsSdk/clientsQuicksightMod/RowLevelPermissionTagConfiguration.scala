@@ -23,7 +23,8 @@ object RowLevelPermissionTagConfiguration {
     __obj.asInstanceOf[RowLevelPermissionTagConfiguration]
   }
   
-  extension [Self <: RowLevelPermissionTagConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowLevelPermissionTagConfiguration] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

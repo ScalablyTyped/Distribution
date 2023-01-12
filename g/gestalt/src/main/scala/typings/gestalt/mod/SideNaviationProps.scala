@@ -45,7 +45,8 @@ object SideNaviationProps {
     __obj.asInstanceOf[SideNaviationProps]
   }
   
-  extension [Self <: SideNaviationProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SideNaviationProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

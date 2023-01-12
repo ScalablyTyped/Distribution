@@ -33,7 +33,8 @@ object FunctionCodeLocation {
     __obj.asInstanceOf[FunctionCodeLocation]
   }
   
-  extension [Self <: FunctionCodeLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionCodeLocation] (val x: Self) extends AnyVal {
     
     inline def setImageUri(value: String): Self = StObject.set(x, "ImageUri", value.asInstanceOf[js.Any])
     

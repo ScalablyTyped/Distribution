@@ -53,7 +53,8 @@ object libObjectPropertyMapperMod {
       __obj.asInstanceOf[PropertyMapper]
     }
     
-    extension [Self <: PropertyMapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyMapper] (val x: Self) extends AnyVal {
       
       inline def setGet(value: (Any, String) => Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       

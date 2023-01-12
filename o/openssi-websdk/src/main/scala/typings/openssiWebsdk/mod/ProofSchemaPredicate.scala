@@ -21,7 +21,8 @@ object ProofSchemaPredicate {
     __obj.asInstanceOf[ProofSchemaPredicate]
   }
   
-  extension [Self <: ProofSchemaPredicate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProofSchemaPredicate] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

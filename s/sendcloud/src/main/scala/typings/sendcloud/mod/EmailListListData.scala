@@ -17,7 +17,8 @@ object EmailListListData {
     __obj.asInstanceOf[EmailListListData]
   }
   
-  extension [Self <: EmailListListData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailListListData] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

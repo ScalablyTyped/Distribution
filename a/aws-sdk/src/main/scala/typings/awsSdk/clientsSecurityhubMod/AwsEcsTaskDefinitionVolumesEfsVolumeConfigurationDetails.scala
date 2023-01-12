@@ -38,7 +38,8 @@ object AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetails] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationConfig(value: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetails): Self = StObject.set(x, "AuthorizationConfig", value.asInstanceOf[js.Any])
     

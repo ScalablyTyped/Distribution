@@ -17,7 +17,8 @@ object FancyReporterOptions {
     __obj.asInstanceOf[FancyReporterOptions]
   }
   
-  extension [Self <: FancyReporterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyReporterOptions] (val x: Self) extends AnyVal {
     
     inline def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
     

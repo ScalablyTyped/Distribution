@@ -22,7 +22,8 @@ object ExportStats {
     __obj.asInstanceOf[ExportStats]
   }
   
-  extension [Self <: ExportStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportStats] (val x: Self) extends AnyVal {
     
     inline def setExportedArtifactCount(value: String): Self = StObject.set(x, "exportedArtifactCount", value.asInstanceOf[js.Any])
     

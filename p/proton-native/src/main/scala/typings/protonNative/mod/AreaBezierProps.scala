@@ -64,7 +64,8 @@ object AreaBezierProps {
     __obj.asInstanceOf[AreaBezierProps]
   }
   
-  extension [Self <: AreaBezierProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaBezierProps] (val x: Self) extends AnyVal {
     
     inline def setCx1(value: Double | String): Self = StObject.set(x, "cx1", value.asInstanceOf[js.Any])
     

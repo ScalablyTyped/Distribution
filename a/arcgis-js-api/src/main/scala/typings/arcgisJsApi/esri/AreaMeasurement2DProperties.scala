@@ -71,7 +71,8 @@ object AreaMeasurement2DProperties {
     __obj.asInstanceOf[AreaMeasurement2DProperties]
   }
   
-  extension [Self <: AreaMeasurement2DProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaMeasurement2DProperties] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

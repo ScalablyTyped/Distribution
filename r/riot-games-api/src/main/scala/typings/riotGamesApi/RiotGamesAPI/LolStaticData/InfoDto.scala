@@ -21,7 +21,8 @@ object InfoDto {
     __obj.asInstanceOf[InfoDto]
   }
   
-  extension [Self <: InfoDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoDto] (val x: Self) extends AnyVal {
     
     inline def setAttack(value: Double): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
     

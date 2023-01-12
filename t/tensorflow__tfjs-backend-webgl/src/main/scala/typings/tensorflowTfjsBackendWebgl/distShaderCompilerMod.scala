@@ -33,7 +33,8 @@ object distShaderCompilerMod {
       __obj.asInstanceOf[InputInfo]
     }
     
-    extension [Self <: InputInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputInfo] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distShaderCompilerMod {
       __obj.asInstanceOf[ProgramParams]
     }
     
-    extension [Self <: ProgramParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgramParams] (val x: Self) extends AnyVal {
       
       inline def setCustomUniforms(value: js.Array[ArrayIndex]): Self = StObject.set(x, "customUniforms", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object distShaderCompilerMod {
       __obj.asInstanceOf[ShapeInfo]
     }
     
-    extension [Self <: ShapeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShapeInfo] (val x: Self) extends AnyVal {
       
       inline def setFlatOffset(value: Double): Self = StObject.set(x, "flatOffset", value.asInstanceOf[js.Any])
       

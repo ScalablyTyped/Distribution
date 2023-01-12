@@ -39,7 +39,8 @@ object SketchCreateEvent {
     __obj.asInstanceOf[SketchCreateEvent]
   }
   
-  extension [Self <: SketchCreateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchCreateEvent] (val x: Self) extends AnyVal {
     
     inline def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     

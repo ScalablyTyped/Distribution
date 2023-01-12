@@ -18,7 +18,8 @@ object UnassignVolumeRequest {
     __obj.asInstanceOf[UnassignVolumeRequest]
   }
   
-  extension [Self <: UnassignVolumeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnassignVolumeRequest] (val x: Self) extends AnyVal {
     
     inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
   }

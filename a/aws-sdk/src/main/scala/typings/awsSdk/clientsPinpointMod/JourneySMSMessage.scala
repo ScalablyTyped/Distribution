@@ -38,7 +38,8 @@ object JourneySMSMessage {
     __obj.asInstanceOf[JourneySMSMessage]
   }
   
-  extension [Self <: JourneySMSMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JourneySMSMessage] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: string): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     

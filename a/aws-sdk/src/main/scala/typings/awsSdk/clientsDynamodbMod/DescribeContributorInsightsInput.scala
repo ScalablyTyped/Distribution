@@ -23,7 +23,8 @@ object DescribeContributorInsightsInput {
     __obj.asInstanceOf[DescribeContributorInsightsInput]
   }
   
-  extension [Self <: DescribeContributorInsightsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeContributorInsightsInput] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     

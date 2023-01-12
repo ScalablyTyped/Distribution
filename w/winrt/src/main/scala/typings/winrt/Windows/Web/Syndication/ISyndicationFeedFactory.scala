@@ -16,7 +16,8 @@ object ISyndicationFeedFactory {
     __obj.asInstanceOf[ISyndicationFeedFactory]
   }
   
-  extension [Self <: ISyndicationFeedFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationFeedFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateSyndicationFeed(value: (String, String, Uri) => SyndicationFeed): Self = StObject.set(x, "createSyndicationFeed", js.Any.fromFunction3(value))
   }

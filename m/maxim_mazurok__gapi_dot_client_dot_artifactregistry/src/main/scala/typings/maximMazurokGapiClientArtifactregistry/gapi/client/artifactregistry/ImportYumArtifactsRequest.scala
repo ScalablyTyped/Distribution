@@ -16,7 +16,8 @@ object ImportYumArtifactsRequest {
     __obj.asInstanceOf[ImportYumArtifactsRequest]
   }
   
-  extension [Self <: ImportYumArtifactsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportYumArtifactsRequest] (val x: Self) extends AnyVal {
     
     inline def setGcsSource(value: ImportYumArtifactsGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     

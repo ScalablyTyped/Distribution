@@ -20,7 +20,8 @@ object distTypesRegionInfoEndpointVariantMod {
       __obj.asInstanceOf[EndpointVariant]
     }
     
-    extension [Self <: EndpointVariant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointVariant] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       

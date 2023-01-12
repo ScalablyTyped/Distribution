@@ -48,7 +48,8 @@ object libChartsPieMod {
       __obj.asInstanceOf[IPieProps]
     }
     
-    extension [Self <: IPieProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPieProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

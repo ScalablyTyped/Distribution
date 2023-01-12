@@ -35,7 +35,8 @@ object enterprise {
         __obj.asInstanceOf[NetworkDetails]
       }
       
-      extension [Self <: NetworkDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NetworkDetails] (val x: Self) extends AnyVal {
         
         inline def setIpv4(value: String): Self = StObject.set(x, "ipv4", value.asInstanceOf[js.Any])
         
@@ -93,7 +94,8 @@ object enterprise {
         __obj.asInstanceOf[Token]
       }
       
-      extension [Self <: Token](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         

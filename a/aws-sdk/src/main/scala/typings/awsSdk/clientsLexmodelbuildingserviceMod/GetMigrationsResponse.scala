@@ -23,7 +23,8 @@ object GetMigrationsResponse {
     __obj.asInstanceOf[GetMigrationsResponse]
   }
   
-  extension [Self <: GetMigrationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMigrationsResponse] (val x: Self) extends AnyVal {
     
     inline def setMigrationSummaries(value: MigrationSummaryList): Self = StObject.set(x, "migrationSummaries", value.asInstanceOf[js.Any])
     

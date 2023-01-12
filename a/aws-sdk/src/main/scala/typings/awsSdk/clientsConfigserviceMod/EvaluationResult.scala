@@ -43,7 +43,8 @@ object EvaluationResult {
     __obj.asInstanceOf[EvaluationResult]
   }
   
-  extension [Self <: EvaluationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluationResult] (val x: Self) extends AnyVal {
     
     inline def setAnnotation(value: StringWithCharLimit256): Self = StObject.set(x, "Annotation", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object PartialIEnvironmentHelperBackgroundYRotation {
     __obj.asInstanceOf[PartialIEnvironmentHelperBackgroundYRotation]
   }
   
-  extension [Self <: PartialIEnvironmentHelperBackgroundYRotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIEnvironmentHelperBackgroundYRotation] (val x: Self) extends AnyVal {
     
     inline def setBackgroundYRotation(value: Double): Self = StObject.set(x, "backgroundYRotation", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object Team {
     __obj.asInstanceOf[Team]
   }
   
-  extension [Self <: Team](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Team] (val x: Self) extends AnyVal {
     
     inline def setAllChannels(value: NullableOption[js.Array[Channel]]): Self = StObject.set(x, "allChannels", value.asInstanceOf[js.Any])
     

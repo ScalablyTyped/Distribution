@@ -25,7 +25,8 @@ object Page {
       __obj.asInstanceOf[BackPressOption]
     }
     
-    extension [Self <: BackPressOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackPressOption] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: backbutton | navigateBack): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object Page {
       __obj.asInstanceOf[CustomShareContent]
     }
     
-    extension [Self <: CustomShareContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomShareContent] (val x: Self) extends AnyVal {
       
       inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object Page {
       __obj.asInstanceOf[NavigationBarButtonTapOption]
     }
     
-    extension [Self <: NavigationBarButtonTapOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationBarButtonTapOption] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
@@ -107,7 +110,8 @@ object Page {
       __obj.asInstanceOf[NavigationBarSearchInputEvent]
     }
     
-    extension [Self <: NavigationBarSearchInputEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationBarSearchInputEvent] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -237,7 +241,8 @@ object Page {
       __obj.asInstanceOf[PageInstance[D, T]]
     }
     
-    extension [Self <: PageInstance[?, ?], D /* <: AnyObject */, T /* <: AnyObject */](x: Self & (PageInstance[D, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageInstance[?, ?], D /* <: AnyObject */, T /* <: AnyObject */] (val x: Self & (PageInstance[D, T])) extends AnyVal {
       
       inline def setOnBackPress(value: /* options */ BackPressOption => Any): Self = StObject.set(x, "onBackPress", js.Any.fromFunction1(value))
       
@@ -319,7 +324,8 @@ object Page {
       __obj.asInstanceOf[PageInstanceBaseProps[D]]
     }
     
-    extension [Self <: PageInstanceBaseProps[?], D /* <: AnyObject */](x: Self & PageInstanceBaseProps[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageInstanceBaseProps[?], D /* <: AnyObject */] (val x: Self & PageInstanceBaseProps[D]) extends AnyVal {
       
       inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       
@@ -341,7 +347,8 @@ object Page {
       __obj.asInstanceOf[PageScrollOption]
     }
     
-    extension [Self <: PageScrollOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageScrollOption] (val x: Self) extends AnyVal {
       
       inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     }
@@ -374,7 +381,8 @@ object Page {
       __obj.asInstanceOf[ShareAppMessageOption]
     }
     
-    extension [Self <: ShareAppMessageOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareAppMessageOption] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: button | menu): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -410,7 +418,8 @@ object Page {
       __obj.asInstanceOf[TabItemTapOption]
     }
     
-    extension [Self <: TabItemTapOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabItemTapOption] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

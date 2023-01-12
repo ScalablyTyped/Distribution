@@ -18,7 +18,8 @@ object CheckBoxGroupSelectEvent {
     __obj.asInstanceOf[CheckBoxGroupSelectEvent]
   }
   
-  extension [Self <: CheckBoxGroupSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckBoxGroupSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetInstanceProfileRequest {
     __obj.asInstanceOf[GetInstanceProfileRequest]
   }
   
-  extension [Self <: GetInstanceProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstanceProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }

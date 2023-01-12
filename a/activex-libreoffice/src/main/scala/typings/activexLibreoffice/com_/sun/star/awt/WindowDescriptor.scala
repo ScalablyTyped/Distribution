@@ -61,7 +61,8 @@ object WindowDescriptor {
     __obj.asInstanceOf[WindowDescriptor]
   }
   
-  extension [Self <: WindowDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowDescriptor] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Rectangle): Self = StObject.set(x, "Bounds", value.asInstanceOf[js.Any])
     

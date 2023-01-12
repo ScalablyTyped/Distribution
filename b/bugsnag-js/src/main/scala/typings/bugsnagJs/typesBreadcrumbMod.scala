@@ -51,7 +51,8 @@ object typesBreadcrumbMod {
       __obj.asInstanceOf[Breadcrumb]
     }
     
-    extension [Self <: Breadcrumb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Breadcrumb] (val x: Self) extends AnyVal {
       
       inline def setMetaData(value: js.Object): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
       

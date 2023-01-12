@@ -15,7 +15,8 @@ object JobConstraintsSupported {
     __obj.asInstanceOf[JobConstraintsSupported]
   }
   
-  extension [Self <: JobConstraintsSupported](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobConstraintsSupported] (val x: Self) extends AnyVal {
     
     inline def `setResolver-name`(value: String): Self = StObject.set(x, "resolver-name", value.asInstanceOf[js.Any])
     

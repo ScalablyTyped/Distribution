@@ -34,7 +34,8 @@ object DSAKeyPairOptions {
     __obj.asInstanceOf[DSAKeyPairOptions[PubF, PrivF]]
   }
   
-  extension [Self <: DSAKeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](x: Self & (DSAKeyPairOptions[PubF, PrivF])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSAKeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] (val x: Self & (DSAKeyPairOptions[PubF, PrivF])) extends AnyVal {
     
     inline def setDivisorLength(value: Double): Self = StObject.set(x, "divisorLength", value.asInstanceOf[js.Any])
     

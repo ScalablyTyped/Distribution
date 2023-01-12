@@ -28,7 +28,8 @@ object Direction {
     __obj.asInstanceOf[Direction[RawDatum]]
   }
   
-  extension [Self <: Direction[?], RawDatum /* <: BarDatum */](x: Self & Direction[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Direction[?], RawDatum /* <: BarDatum */] (val x: Self & Direction[RawDatum]) extends AnyVal {
     
     inline def setBars(value: BarsWithHidden[RawDatum]): Self = StObject.set(x, "bars", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object SearchQueryBreakdown {
     __obj.asInstanceOf[SearchQueryBreakdown]
   }
   
-  extension [Self <: SearchQueryBreakdown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchQueryBreakdown] (val x: Self) extends AnyVal {
     
     inline def setAdvance(value: long): Self = StObject.set(x, "advance", value.asInstanceOf[js.Any])
     

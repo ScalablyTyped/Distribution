@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[VerifyResult]
     }
     
-    extension [Self <: VerifyResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyResult] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     }

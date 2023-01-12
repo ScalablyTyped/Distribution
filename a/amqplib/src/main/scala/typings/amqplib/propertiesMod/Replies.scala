@@ -17,7 +17,8 @@ object Replies {
       __obj.asInstanceOf[AssertExchange]
     }
     
-    extension [Self <: AssertExchange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssertExchange] (val x: Self) extends AnyVal {
       
       inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object Replies {
       __obj.asInstanceOf[AssertQueue]
     }
     
-    extension [Self <: AssertQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssertQueue] (val x: Self) extends AnyVal {
       
       inline def setConsumerCount(value: Double): Self = StObject.set(x, "consumerCount", value.asInstanceOf[js.Any])
       
@@ -59,7 +61,8 @@ object Replies {
       __obj.asInstanceOf[Consume]
     }
     
-    extension [Self <: Consume](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consume] (val x: Self) extends AnyVal {
       
       inline def setConsumerTag(value: String): Self = StObject.set(x, "consumerTag", value.asInstanceOf[js.Any])
     }
@@ -76,7 +79,8 @@ object Replies {
       __obj.asInstanceOf[DeleteQueue]
     }
     
-    extension [Self <: DeleteQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteQueue] (val x: Self) extends AnyVal {
       
       inline def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
     }
@@ -95,7 +99,8 @@ object Replies {
       __obj.asInstanceOf[PurgeQueue]
     }
     
-    extension [Self <: PurgeQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PurgeQueue] (val x: Self) extends AnyVal {
       
       inline def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
     }

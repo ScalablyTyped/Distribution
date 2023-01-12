@@ -23,7 +23,8 @@ object HTMLReset {
     __obj.asInstanceOf[HTMLReset]
   }
   
-  extension [Self <: HTMLReset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLReset] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     

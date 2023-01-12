@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3ListDeploymentsResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ListDeploymentsResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ListDeploymentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ListDeploymentsResponse] (val x: Self) extends AnyVal {
     
     inline def setDeployments(value: js.Array[GoogleCloudDialogflowCxV3Deployment]): Self = StObject.set(x, "deployments", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object KeyColumnDescriptor {
     __obj.asInstanceOf[KeyColumnDescriptor]
   }
   
-  extension [Self <: KeyColumnDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyColumnDescriptor] (val x: Self) extends AnyVal {
     
     inline def setRelatedColumn(value: String): Self = StObject.set(x, "RelatedColumn", value.asInstanceOf[js.Any])
   }

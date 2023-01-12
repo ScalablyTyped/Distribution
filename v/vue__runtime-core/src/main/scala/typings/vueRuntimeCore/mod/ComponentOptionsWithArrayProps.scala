@@ -54,7 +54,8 @@ object ComponentOptionsWithArrayProps {
     __obj.asInstanceOf[ComponentOptionsWithArrayProps[PropNames, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props]]
   }
   
-  extension [Self <: ComponentOptionsWithArrayProps[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, Props](x: Self & (ComponentOptionsWithArrayProps[PropNames, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentOptionsWithArrayProps[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, Props] (val x: Self & (ComponentOptionsWithArrayProps[PropNames, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props])) extends AnyVal {
     
     inline def setProps(value: js.Array[PropNames]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

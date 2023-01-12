@@ -31,7 +31,8 @@ object IContentLibraryListItem {
     __obj.asInstanceOf[IContentLibraryListItem]
   }
   
-  extension [Self <: IContentLibraryListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContentLibraryListItem] (val x: Self) extends AnyVal {
     
     inline def setQAppSpecific(value: Boolean): Self = StObject.set(x, "qAppSpecific", value.asInstanceOf[js.Any])
     

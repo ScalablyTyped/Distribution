@@ -51,7 +51,8 @@ object PlusNetProgressEvent {
     __obj.asInstanceOf[PlusNetProgressEvent]
   }
   
-  extension [Self <: PlusNetProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNetProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setLengthComputable(value: Double): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
     

@@ -121,7 +121,8 @@ object mod {
     @js.native
     val ^ : SignaleConfig = js.native
     
-    extension [Self <: SignaleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignaleConfig] (val x: Self) extends AnyVal {
       
       inline def setDisplayBadge(value: Boolean): Self = StObject.set(x, "displayBadge", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object mod {
     @js.native
     val ^ : SignaleOptions[DefaultMethods] = js.native
     
-    extension [Self <: SignaleOptions[?], TTypes /* <: String */](x: Self & SignaleOptions[TTypes]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignaleOptions[?], TTypes /* <: String */] (val x: Self & SignaleOptions[TTypes]) extends AnyVal {
       
       inline def setConfig(value: SignaleConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -457,7 +459,8 @@ object mod {
       __obj.asInstanceOf[CommandType]
     }
     
-    extension [Self <: CommandType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandType] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       

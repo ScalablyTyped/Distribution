@@ -43,7 +43,8 @@ object GetColumnStatisticsForPartitionRequest {
     __obj.asInstanceOf[GetColumnStatisticsForPartitionRequest]
   }
   
-  extension [Self <: GetColumnStatisticsForPartitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetColumnStatisticsForPartitionRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

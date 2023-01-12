@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setO(value: `-_`): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
     }
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[`1`[T]]
     }
     
-    extension [Self <: `1`[?], T](x: Self & `1`[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`[?], T] (val x: Self & `1`[T]) extends AnyVal {
       
       inline def setO(value: L): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Accesstoken]
     }
     
-    extension [Self <: Accesstoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accesstoken] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -109,7 +112,8 @@ object anon {
       __obj.asInstanceOf[Authorize]
     }
     
-    extension [Self <: Authorize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authorize] (val x: Self) extends AnyVal {
       
       inline def setAuthorize(value: (String, String) => js.Promise[Accesstoken]): Self = StObject.set(x, "authorize", js.Any.fromFunction2(value))
       
@@ -136,7 +140,8 @@ object anon {
       __obj.asInstanceOf[Id[T]]
     }
     
-    extension [Self <: Id[?], T](x: Self & Id[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id[?], T] (val x: Self & Id[T]) extends AnyVal {
       
       inline def setId(value: EntityId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -161,7 +166,8 @@ object anon {
       __obj.asInstanceOf[O[T]]
     }
     
-    extension [Self <: O[?], T](x: Self & O[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: O[?], T] (val x: Self & O[T]) extends AnyVal {
       
       inline def setO(value: Plussign): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
       
@@ -184,7 +190,8 @@ object anon {
       __obj.asInstanceOf[OV]
     }
     
-    extension [Self <: OV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OV] (val x: Self) extends AnyVal {
       
       inline def setO(value: I): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
       
@@ -211,7 +218,8 @@ object anon {
       __obj.asInstanceOf[Object[T]]
     }
     
-    extension [Self <: Object[?], T](x: Self & Object[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Object[?], T] (val x: Self & Object[T]) extends AnyVal {
       
       inline def setObject(value: T): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
@@ -232,7 +240,8 @@ object anon {
       __obj.asInstanceOf[Sync]
     }
     
-    extension [Self <: Sync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sync] (val x: Self) extends AnyVal {
       
       inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     }
@@ -254,7 +263,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setId(value: EntityId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -277,7 +287,8 @@ object anon {
       __obj.asInstanceOf[V[T]]
     }
     
-    extension [Self <: V[?], T](x: Self & V[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V[?], T] (val x: Self & V[T]) extends AnyVal {
       
       inline def setO(value: r): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
       
@@ -300,7 +311,8 @@ object anon {
       __obj.asInstanceOf[VDMPDiff]
     }
     
-    extension [Self <: VDMPDiff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VDMPDiff] (val x: Self) extends AnyVal {
       
       inline def setO(value: d): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
       
@@ -323,7 +335,8 @@ object anon {
       __obj.asInstanceOf[VJSONDiff[T]]
     }
     
-    extension [Self <: VJSONDiff[?], T](x: Self & VJSONDiff[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VJSONDiff[?], T] (val x: Self & VJSONDiff[T]) extends AnyVal {
       
       inline def setO(value: typings.simperium.simperiumStrings.O): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
       

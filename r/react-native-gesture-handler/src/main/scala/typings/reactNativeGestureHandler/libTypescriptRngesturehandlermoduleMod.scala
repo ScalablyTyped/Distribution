@@ -47,7 +47,8 @@ object libTypescriptRngesturehandlermoduleMod extends Shortcut {
       __obj.asInstanceOf[RNGestureHandlerModuleProps]
     }
     
-    extension [Self <: RNGestureHandlerModuleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RNGestureHandlerModuleProps] (val x: Self) extends AnyVal {
       
       inline def setAttachGestureHandler(value: (Double, Double, ActionType) => Unit): Self = StObject.set(x, "attachGestureHandler", js.Any.fromFunction3(value))
       

@@ -17,7 +17,8 @@ object IndicesResponseBase {
     __obj.asInstanceOf[IndicesResponseBase]
   }
   
-  extension [Self <: IndicesResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesResponseBase] (val x: Self) extends AnyVal {
     
     inline def set_shards(value: ShardStatistics): Self = StObject.set(x, "_shards", value.asInstanceOf[js.Any])
     

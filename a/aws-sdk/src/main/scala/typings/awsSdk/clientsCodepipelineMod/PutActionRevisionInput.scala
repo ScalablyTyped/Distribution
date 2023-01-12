@@ -38,7 +38,8 @@ object PutActionRevisionInput {
     __obj.asInstanceOf[PutActionRevisionInput]
   }
   
-  extension [Self <: PutActionRevisionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutActionRevisionInput] (val x: Self) extends AnyVal {
     
     inline def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object IGroupOptions {
     __obj.asInstanceOf[IGroupOptions]
   }
   
-  extension [Self <: IGroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGroupOptions] (val x: Self) extends AnyVal {
     
     inline def setSubTargetCheck(value: Boolean): Self = StObject.set(x, "subTargetCheck", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ComboBoxSelectEvent {
     __obj.asInstanceOf[ComboBoxSelectEvent]
   }
   
-  extension [Self <: ComboBoxSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComboBoxSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setDataItem(value: Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     

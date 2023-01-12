@@ -625,7 +625,8 @@ object sapUiWebcMainIconMod {
       __obj.asInstanceOf[IconSettings]
     }
     
-    extension [Self <: IconSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

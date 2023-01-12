@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[ClearIcon]
     }
     
-    extension [Self <: ClearIcon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearIcon] (val x: Self) extends AnyVal {
       
       inline def setClearIcon(value: ReactNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object Restore {
     __obj.asInstanceOf[Restore]
   }
   
-  extension [Self <: Restore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Restore] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

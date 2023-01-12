@@ -19,7 +19,8 @@ object Occupation {
     __obj.asInstanceOf[Occupation]
   }
   
-  extension [Self <: Occupation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Occupation] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

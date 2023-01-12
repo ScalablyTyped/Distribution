@@ -28,7 +28,8 @@ object IFriend {
     __obj.asInstanceOf[IFriend]
   }
   
-  extension [Self <: IFriend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFriend] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object StandardSqlDataType {
     __obj.asInstanceOf[StandardSqlDataType]
   }
   
-  extension [Self <: StandardSqlDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardSqlDataType] (val x: Self) extends AnyVal {
     
     inline def setArrayElementType(value: StandardSqlDataType): Self = StObject.set(x, "arrayElementType", value.asInstanceOf[js.Any])
     

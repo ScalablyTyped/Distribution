@@ -20,7 +20,8 @@ object GPUComputePassDescriptor {
     __obj.asInstanceOf[GPUComputePassDescriptor]
   }
   
-  extension [Self <: GPUComputePassDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUComputePassDescriptor] (val x: Self) extends AnyVal {
     
     inline def setTimestampWrites(value: js.Iterable[GPUComputePassTimestampWrite]): Self = StObject.set(x, "timestampWrites", value.asInstanceOf[js.Any])
     

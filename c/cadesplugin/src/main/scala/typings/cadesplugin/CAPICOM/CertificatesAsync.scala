@@ -35,7 +35,8 @@ object CertificatesAsync {
     __obj.asInstanceOf[CertificatesAsync]
   }
   
-  extension [Self <: CertificatesAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificatesAsync] (val x: Self) extends AnyVal {
     
     inline def setCount(
       value: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types

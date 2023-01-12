@@ -22,7 +22,8 @@ object AttrsSliceAttrs {
     __obj.asInstanceOf[AttrsSliceAttrs]
   }
   
-  extension [Self <: AttrsSliceAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsSliceAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: SliceAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

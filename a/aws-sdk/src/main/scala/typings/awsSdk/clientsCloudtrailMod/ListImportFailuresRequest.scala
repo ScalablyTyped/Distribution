@@ -28,7 +28,8 @@ object ListImportFailuresRequest {
     __obj.asInstanceOf[ListImportFailuresRequest]
   }
   
-  extension [Self <: ListImportFailuresRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImportFailuresRequest] (val x: Self) extends AnyVal {
     
     inline def setImportId(value: UUID): Self = StObject.set(x, "ImportId", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object baseHelpersResponsiveMod {
       __obj.asInstanceOf[LimitedResponsiveBreakpointProps]
     }
     
-    extension [Self <: LimitedResponsiveBreakpointProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LimitedResponsiveBreakpointProps] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: Value): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object baseHelpersResponsiveMod {
       __obj.asInstanceOf[ResponsiveBreakpointProps]
     }
     
-    extension [Self <: ResponsiveBreakpointProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveBreakpointProps] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: Only): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object baseHelpersResponsiveMod {
       __obj.asInstanceOf[ResponsiveHelpersProps]
     }
     
-    extension [Self <: ResponsiveHelpersProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveHelpersProps] (val x: Self) extends AnyVal {
       
       inline def setResponsive(value: BinVariablesbreakpointsLi): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       

@@ -216,7 +216,8 @@ object PartialclassNamestringund {
     __obj.asInstanceOf[PartialclassNamestringund]
   }
   
-  extension [Self <: PartialclassNamestringund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialclassNamestringund] (val x: Self) extends AnyVal {
     
     inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     

@@ -138,7 +138,8 @@ object WebdriverIO {
     __obj.asInstanceOf[WebdriverIO]
   }
   
-  extension [Self <: WebdriverIO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebdriverIO] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Http): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

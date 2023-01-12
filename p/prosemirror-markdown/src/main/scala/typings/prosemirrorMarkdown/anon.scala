@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[EscapeExtraCharacters]
     }
     
-    extension [Self <: EscapeExtraCharacters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EscapeExtraCharacters] (val x: Self) extends AnyVal {
       
       inline def setEscapeExtraCharacters(value: js.RegExp): Self = StObject.set(x, "escapeExtraCharacters", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[EscapeExtraCharactersTightLists]
     }
     
-    extension [Self <: EscapeExtraCharactersTightLists](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EscapeExtraCharactersTightLists] (val x: Self) extends AnyVal {
       
       inline def setEscapeExtraCharacters(value: js.RegExp): Self = StObject.set(x, "escapeExtraCharacters", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Leading]
     }
     
-    extension [Self <: Leading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Leading] (val x: Self) extends AnyVal {
       
       inline def setLeading(value: String): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[TightLists]
     }
     
-    extension [Self <: TightLists](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TightLists] (val x: Self) extends AnyVal {
       
       inline def setTightLists(value: Boolean): Self = StObject.set(x, "tightLists", value.asInstanceOf[js.Any])
       

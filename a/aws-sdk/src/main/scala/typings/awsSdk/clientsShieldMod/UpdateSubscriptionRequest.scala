@@ -18,7 +18,8 @@ object UpdateSubscriptionRequest {
     __obj.asInstanceOf[UpdateSubscriptionRequest]
   }
   
-  extension [Self <: UpdateSubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoRenew(value: AutoRenew): Self = StObject.set(x, "AutoRenew", value.asInstanceOf[js.Any])
     

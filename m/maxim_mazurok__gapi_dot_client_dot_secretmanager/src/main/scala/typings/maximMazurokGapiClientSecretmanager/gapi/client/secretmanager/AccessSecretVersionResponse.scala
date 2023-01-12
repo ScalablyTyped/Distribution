@@ -19,7 +19,8 @@ object AccessSecretVersionResponse {
     __obj.asInstanceOf[AccessSecretVersionResponse]
   }
   
-  extension [Self <: AccessSecretVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessSecretVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

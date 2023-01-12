@@ -44,7 +44,8 @@ object ASPxClientToolTipController {
     __obj.asInstanceOf[ASPxClientToolTipController]
   }
   
-  extension [Self <: ASPxClientToolTipController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientToolTipController] (val x: Self) extends AnyVal {
     
     inline def setImagePosition(value: String): Self = StObject.set(x, "imagePosition", value.asInstanceOf[js.Any])
     

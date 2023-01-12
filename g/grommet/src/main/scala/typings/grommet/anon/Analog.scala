@@ -17,7 +17,8 @@ object Analog {
     __obj.asInstanceOf[Analog]
   }
   
-  extension [Self <: Analog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Analog] (val x: Self) extends AnyVal {
     
     inline def setAnalog(value: Hour): Self = StObject.set(x, "analog", value.asInstanceOf[js.Any])
     

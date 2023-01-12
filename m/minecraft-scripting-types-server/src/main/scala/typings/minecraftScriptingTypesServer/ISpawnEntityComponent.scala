@@ -92,7 +92,8 @@ object ISpawnEntityComponent {
     __obj.asInstanceOf[ISpawnEntityComponent]
   }
   
-  extension [Self <: ISpawnEntityComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpawnEntityComponent] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

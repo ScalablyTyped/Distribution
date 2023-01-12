@@ -38,7 +38,8 @@ object Shard {
     __obj.asInstanceOf[Shard]
   }
   
-  extension [Self <: Shard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shard] (val x: Self) extends AnyVal {
     
     inline def setAdjacentParentShardId(value: ShardId): Self = StObject.set(x, "AdjacentParentShardId", value.asInstanceOf[js.Any])
     

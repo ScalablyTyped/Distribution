@@ -71,7 +71,8 @@ object GetBindingDataOptions {
     __obj.asInstanceOf[GetBindingDataOptions]
   }
   
-  extension [Self <: GetBindingDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBindingDataOptions] (val x: Self) extends AnyVal {
     
     inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     

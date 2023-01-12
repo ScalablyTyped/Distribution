@@ -22,7 +22,8 @@ object DrawCanvasOptions {
     __obj.asInstanceOf[DrawCanvasOptions]
   }
   
-  extension [Self <: DrawCanvasOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawCanvasOptions] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[CanvasAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

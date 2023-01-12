@@ -20,7 +20,8 @@ object ComposeProps {
     __obj.asInstanceOf[ComposeProps]
   }
   
-  extension [Self <: ComposeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComposeProps] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: /* props */ js.Object => js.Array[Element]): Self = StObject.set(x, "Layout", js.Any.fromFunction1(value))
     

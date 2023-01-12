@@ -32,7 +32,8 @@ object PartialIGlowLayerOptions {
     __obj.asInstanceOf[PartialIGlowLayerOptions]
   }
   
-  extension [Self <: PartialIGlowLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIGlowLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
     

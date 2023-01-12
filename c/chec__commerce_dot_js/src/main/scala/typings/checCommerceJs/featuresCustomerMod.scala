@@ -82,7 +82,8 @@ object featuresCustomerMod {
       __obj.asInstanceOf[CustomerOrdersCollection]
     }
     
-    extension [Self <: CustomerOrdersCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomerOrdersCollection] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Order]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object featuresCustomerMod {
       __obj.asInstanceOf[CustomerUpdate]
     }
     
-    extension [Self <: CustomerUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomerUpdate] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

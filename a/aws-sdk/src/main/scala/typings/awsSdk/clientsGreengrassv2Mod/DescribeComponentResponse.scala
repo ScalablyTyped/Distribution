@@ -58,7 +58,8 @@ object DescribeComponentResponse {
     __obj.asInstanceOf[DescribeComponentResponse]
   }
   
-  extension [Self <: DescribeComponentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeComponentResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ComponentVersionARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

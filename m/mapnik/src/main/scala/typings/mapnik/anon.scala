@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Areathreshold]
     }
     
-    extension [Self <: Areathreshold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Areathreshold] (val x: Self) extends AnyVal {
       
       inline def setArea_threshold(value: Double): Self = StObject.set(x, "area_threshold", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Callback]
     }
     
-    extension [Self <: Callback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
       
       inline def setArea_threshold(value: Double): Self = StObject.set(x, "area_threshold", value.asInstanceOf[js.Any])
       
@@ -188,7 +190,8 @@ object anon {
       __obj.asInstanceOf[Compression]
     }
     
-    extension [Self <: Compression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compression] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -243,7 +246,8 @@ object anon {
       __obj.asInstanceOf[Filltype]
     }
     
-    extension [Self <: Filltype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filltype] (val x: Self) extends AnyVal {
       
       inline def setArea_threshold(value: Double): Self = StObject.set(x, "area_threshold", value.asInstanceOf[js.Any])
       
@@ -320,7 +324,8 @@ object anon {
       __obj.asInstanceOf[Imageformat]
     }
     
-    extension [Self <: Imageformat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Imageformat] (val x: Self) extends AnyVal {
       
       inline def setImage_format(value: String): Self = StObject.set(x, "image_format", value.asInstanceOf[js.Any])
       
@@ -345,7 +350,8 @@ object anon {
       __obj.asInstanceOf[Imagescaling]
     }
     
-    extension [Self <: Imagescaling](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Imagescaling] (val x: Self) extends AnyVal {
       
       inline def setImage_format(value: webp | jpeg | png | tiff): Self = StObject.set(x, "image_format", value.asInstanceOf[js.Any])
       
@@ -370,7 +376,8 @@ object anon {
       __obj.asInstanceOf[Layer]
     }
     
-    extension [Self <: Layer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
       
       inline def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
@@ -395,7 +402,8 @@ object anon {
       __obj.asInstanceOf[Upgrade]
     }
     
-    extension [Self <: Upgrade](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Upgrade] (val x: Self) extends AnyVal {
       
       inline def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
       

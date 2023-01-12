@@ -17,7 +17,8 @@ object PropertiesFormat {
     __obj.asInstanceOf[PropertiesFormat]
   }
   
-  extension [Self <: PropertiesFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesFormat] (val x: Self) extends AnyVal {
     
     inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

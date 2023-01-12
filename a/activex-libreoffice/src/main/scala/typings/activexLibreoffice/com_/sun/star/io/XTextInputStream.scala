@@ -74,7 +74,8 @@ object XTextInputStream {
     __obj.asInstanceOf[XTextInputStream]
   }
   
-  extension [Self <: XTextInputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextInputStream] (val x: Self) extends AnyVal {
     
     inline def setIsEOF(value: () => Boolean): Self = StObject.set(x, "isEOF", js.Any.fromFunction0(value))
     

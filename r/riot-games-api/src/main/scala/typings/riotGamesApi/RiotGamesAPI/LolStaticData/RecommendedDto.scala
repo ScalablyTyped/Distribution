@@ -36,7 +36,8 @@ object RecommendedDto {
     __obj.asInstanceOf[RecommendedDto]
   }
   
-  extension [Self <: RecommendedDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendedDto] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: js.Array[BlockDto]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

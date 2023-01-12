@@ -64,7 +64,8 @@ object distSrcCommandsBlockPutMod extends Shortcut {
       __obj.asInstanceOf[Argv]
     }
     
-    extension [Self <: Argv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argv] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       

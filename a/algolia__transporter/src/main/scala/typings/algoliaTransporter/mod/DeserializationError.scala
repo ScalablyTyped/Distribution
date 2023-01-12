@@ -22,7 +22,8 @@ object DeserializationError {
     __obj.asInstanceOf[DeserializationError]
   }
   
-  extension [Self <: DeserializationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeserializationError] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }

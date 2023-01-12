@@ -51,7 +51,8 @@ object Mineral {
     __obj.asInstanceOf[Mineral[T]]
   }
   
-  extension [Self <: Mineral[?], T /* <: MineralConstant */](x: Self & Mineral[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mineral[?], T /* <: MineralConstant */] (val x: Self & Mineral[T]) extends AnyVal {
     
     inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     

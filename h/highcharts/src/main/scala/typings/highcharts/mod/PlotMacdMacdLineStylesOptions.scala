@@ -23,7 +23,8 @@ object PlotMacdMacdLineStylesOptions {
     __obj.asInstanceOf[PlotMacdMacdLineStylesOptions]
   }
   
-  extension [Self <: PlotMacdMacdLineStylesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMacdMacdLineStylesOptions] (val x: Self) extends AnyVal {
     
     inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     

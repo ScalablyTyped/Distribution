@@ -21,7 +21,8 @@ object PickDialogLoadingPropsloa {
     __obj.asInstanceOf[PickDialogLoadingPropsloa]
   }
   
-  extension [Self <: PickDialogLoadingPropsloa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickDialogLoadingPropsloa] (val x: Self) extends AnyVal {
     
     inline def setLoadingProps(value: ActivityIndicatorProps): Self = StObject.set(x, "loadingProps", value.asInstanceOf[js.Any])
     

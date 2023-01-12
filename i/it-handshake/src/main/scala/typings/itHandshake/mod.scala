@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[Handshake_[TSink]]
     }
     
-    extension [Self <: Handshake_[?], TSink](x: Self & Handshake_[TSink]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handshake_[?], TSink] (val x: Self & Handshake_[TSink]) extends AnyVal {
       
       inline def setRead(value: () => js.Promise[js.UndefOr[Uint8ArrayList]]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       

@@ -42,7 +42,8 @@ object ZAxisGridOptions {
     __obj.asInstanceOf[ZAxisGridOptions]
   }
   
-  extension [Self <: ZAxisGridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZAxisGridOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

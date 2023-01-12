@@ -52,7 +52,8 @@ object AjaxSettingsObject {
     __obj.asInstanceOf[AjaxSettingsObject]
   }
   
-  extension [Self <: AjaxSettingsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AjaxSettingsObject] (val x: Self) extends AnyVal {
     
     inline def setData(value: String | Dictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

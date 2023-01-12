@@ -23,7 +23,8 @@ object CidrRoutingConfig {
     __obj.asInstanceOf[CidrRoutingConfig]
   }
   
-  extension [Self <: CidrRoutingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CidrRoutingConfig] (val x: Self) extends AnyVal {
     
     inline def setCollectionId(value: UUID): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     

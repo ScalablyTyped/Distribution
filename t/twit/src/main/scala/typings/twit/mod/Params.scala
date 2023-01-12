@@ -128,7 +128,8 @@ object Params {
     __obj.asInstanceOf[Params]
   }
   
-  extension [Self <: Params](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
     
     inline def setAlt_text(value: Text): Self = StObject.set(x, "alt_text", value.asInstanceOf[js.Any])
     

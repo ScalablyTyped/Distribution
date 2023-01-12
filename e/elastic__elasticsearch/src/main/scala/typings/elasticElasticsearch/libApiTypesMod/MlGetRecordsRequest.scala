@@ -35,7 +35,8 @@ object MlGetRecordsRequest {
     __obj.asInstanceOf[MlGetRecordsRequest]
   }
   
-  extension [Self <: MlGetRecordsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetRecordsRequest] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     

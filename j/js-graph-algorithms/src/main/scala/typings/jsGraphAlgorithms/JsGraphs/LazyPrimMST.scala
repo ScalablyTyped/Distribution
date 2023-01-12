@@ -21,7 +21,8 @@ object LazyPrimMST {
     __obj.asInstanceOf[LazyPrimMST]
   }
   
-  extension [Self <: LazyPrimMST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LazyPrimMST] (val x: Self) extends AnyVal {
     
     inline def setMarked(value: Any): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
     

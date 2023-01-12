@@ -442,7 +442,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Routes]
       }
       
-      extension [Self <: Routes](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Routes] (val x: Self) extends AnyVal {
         
         inline def setAcl(value: Method): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
         

@@ -39,7 +39,8 @@ object GitConflictFileDirectory {
     __obj.asInstanceOf[GitConflictFileDirectory]
   }
   
-  extension [Self <: GitConflictFileDirectory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitConflictFileDirectory] (val x: Self) extends AnyVal {
     
     inline def setResolution(value: GitResolutionPathConflict): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     

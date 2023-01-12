@@ -69,7 +69,8 @@ object anon {
       __obj.asInstanceOf[AdditionalProperties]
     }
     
-    extension [Self <: AdditionalProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalProperties] (val x: Self) extends AnyVal {
       
       inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object anon {
       __obj.asInstanceOf[DetectFormat]
     }
     
-    extension [Self <: DetectFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectFormat] (val x: Self) extends AnyVal {
       
       inline def setDetectFormat(value: Boolean): Self = StObject.set(x, "detectFormat", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object anon {
       __obj.asInstanceOf[Mode]
     }
     
-    extension [Self <: Mode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
       
       inline def setMode(value: all | first | uniform | tuple): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

@@ -73,7 +73,8 @@ object libComponentsDocumentCardDocumentCardLocationDottypesMod {
       __obj.asInstanceOf[IDocumentCardLocationProps]
     }
     
-    extension [Self <: IDocumentCardLocationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardLocationProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object libComponentsDocumentCardDocumentCardLocationDottypesMod {
       __obj.asInstanceOf[IDocumentCardLocationStyleProps]
     }
     
-    extension [Self <: IDocumentCardLocationStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardLocationStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object libComponentsDocumentCardDocumentCardLocationDottypesMod {
       __obj.asInstanceOf[IDocumentCardLocationStyles]
     }
     
-    extension [Self <: IDocumentCardLocationStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardLocationStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

@@ -126,7 +126,8 @@ object libUtilitiesSelectableOptionSelectableDroppableTextDottypesMod {
       __obj.asInstanceOf[ISelectableDroppableTextProps[TComponent, TListenerElement]]
     }
     
-    extension [Self <: ISelectableDroppableTextProps[?, ?], TComponent, TListenerElement](x: Self & (ISelectableDroppableTextProps[TComponent, TListenerElement])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectableDroppableTextProps[?, ?], TComponent, TListenerElement] (val x: Self & (ISelectableDroppableTextProps[TComponent, TListenerElement])) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

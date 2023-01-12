@@ -41,7 +41,8 @@ object SentMessageInfo {
     __obj.asInstanceOf[SentMessageInfo]
   }
   
-  extension [Self <: SentMessageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SentMessageInfo] (val x: Self) extends AnyVal {
     
     inline def setAccepted(value: js.Array[String]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     

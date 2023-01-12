@@ -31,7 +31,8 @@ object ASPxClientHtmlEditorTableCellPropertiesDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableCellPropertiesDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorTableCellPropertiesDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorTableCellPropertiesDialog] (val x: Self) extends AnyVal {
     
     inline def setGetApplyToAllCellsCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetApplyToAllCellsCheckBox", js.Any.fromFunction0(value))
   }

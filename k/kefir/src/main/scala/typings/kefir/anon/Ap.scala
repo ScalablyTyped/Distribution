@@ -45,7 +45,8 @@ object Ap {
     __obj.asInstanceOf[Ap]
   }
   
-  extension [Self <: Ap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ap] (val x: Self) extends AnyVal {
     
     inline def setAp(
       value: (typings.kefir.mod.Observable[js.Function1[Any, Any], Any], typings.kefir.mod.Observable[Any, Any]) => typings.kefir.mod.Observable[Any, Any | Any]

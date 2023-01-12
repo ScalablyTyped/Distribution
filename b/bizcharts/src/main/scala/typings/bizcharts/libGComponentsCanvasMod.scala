@@ -42,7 +42,8 @@ object libGComponentsCanvasMod extends Shortcut {
       __obj.asInstanceOf[ICanvasProps]
     }
     
-    extension [Self <: ICanvasProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICanvasProps] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       

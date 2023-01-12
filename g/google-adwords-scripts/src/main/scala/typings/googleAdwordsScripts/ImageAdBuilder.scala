@@ -30,7 +30,8 @@ object ImageAdBuilder {
     __obj.asInstanceOf[ImageAdBuilder[ImageAd]]
   }
   
-  extension [Self <: ImageAdBuilder[?], ImageAd](x: Self & ImageAdBuilder[ImageAd]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageAdBuilder[?], ImageAd] (val x: Self & ImageAdBuilder[ImageAd]) extends AnyVal {
     
     inline def setWithDisplayUrl(value: String => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
     

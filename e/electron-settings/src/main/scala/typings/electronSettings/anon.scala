@@ -73,7 +73,8 @@ object anon {
       __obj.asInstanceOf[PartialConfig]
     }
     
-    extension [Self <: PartialConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
       
       inline def setAtomicSave(value: Boolean): Self = StObject.set(x, "atomicSave", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object anon {
       __obj.asInstanceOf[TypeofCommon]
     }
     
-    extension [Self <: TypeofCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofCommon] (val x: Self) extends AnyVal {
       
       inline def setNativeImage(value: Any): Self = StObject.set(x, "nativeImage", value.asInstanceOf[js.Any])
     }
@@ -140,7 +142,8 @@ object anon {
       __obj.asInstanceOf[TypeofCrossProcessExports]
     }
     
-    extension [Self <: TypeofCrossProcessExports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofCrossProcessExports] (val x: Self) extends AnyVal {
       
       inline def setNativeImage(value: Any): Self = StObject.set(x, "nativeImage", value.asInstanceOf[js.Any])
       
@@ -218,7 +221,8 @@ object anon {
       __obj.asInstanceOf[TypeofElectron]
     }
     
-    extension [Self <: TypeofElectron](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofElectron] (val x: Self) extends AnyVal {
       
       inline def setBrowserWindow(value: Any): Self = StObject.set(x, "BrowserWindow", value.asInstanceOf[js.Any])
       
@@ -266,7 +270,8 @@ object anon {
       __obj.asInstanceOf[TypeofMain]
     }
     
-    extension [Self <: TypeofMain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofMain] (val x: Self) extends AnyVal {
       
       inline def setSession(value: Any): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       

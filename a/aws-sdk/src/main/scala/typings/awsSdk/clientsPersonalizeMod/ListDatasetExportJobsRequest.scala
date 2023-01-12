@@ -28,7 +28,8 @@ object ListDatasetExportJobsRequest {
     __obj.asInstanceOf[ListDatasetExportJobsRequest]
   }
   
-  extension [Self <: ListDatasetExportJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDatasetExportJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setDatasetArn(value: Arn): Self = StObject.set(x, "datasetArn", value.asInstanceOf[js.Any])
     

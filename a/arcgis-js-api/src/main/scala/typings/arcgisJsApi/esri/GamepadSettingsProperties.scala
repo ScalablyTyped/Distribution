@@ -25,7 +25,8 @@ object GamepadSettingsProperties {
     __obj.asInstanceOf[GamepadSettingsProperties]
   }
   
-  extension [Self <: GamepadSettingsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GamepadSettingsProperties] (val x: Self) extends AnyVal {
     
     inline def setEnabledFocusMode(value: document | view | none_): Self = StObject.set(x, "enabledFocusMode", value.asInstanceOf[js.Any])
     

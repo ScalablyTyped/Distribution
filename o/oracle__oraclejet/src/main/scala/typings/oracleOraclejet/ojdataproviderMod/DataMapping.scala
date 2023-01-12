@@ -27,7 +27,8 @@ object DataMapping {
     __obj.asInstanceOf[DataMapping[K, D, Kin, Din]]
   }
   
-  extension [Self <: DataMapping[?, ?, ?, ?], K, D, Kin, Din](x: Self & (DataMapping[K, D, Kin, Din])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataMapping[?, ?, ?, ?], K, D, Kin, Din] (val x: Self & (DataMapping[K, D, Kin, Din])) extends AnyVal {
     
     inline def setMapFields(value: Item[Kin, Din] => Item[K, D]): Self = StObject.set(x, "mapFields", js.Any.fromFunction1(value))
     

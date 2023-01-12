@@ -104,7 +104,8 @@ object basePointObject {
     __obj.asInstanceOf[basePointObject]
   }
   
-  extension [Self <: basePointObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: basePointObject] (val x: Self) extends AnyVal {
     
     inline def setClearHover(value: () => Unit): Self = StObject.set(x, "clearHover", js.Any.fromFunction0(value))
     

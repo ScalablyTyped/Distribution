@@ -95,7 +95,8 @@ object distSrcPeerStreamsMod {
       __obj.asInstanceOf[PeerStreamsInit]
     }
     
-    extension [Self <: PeerStreamsInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerStreamsInit] (val x: Self) extends AnyVal {
       
       inline def setId(value: PeerId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

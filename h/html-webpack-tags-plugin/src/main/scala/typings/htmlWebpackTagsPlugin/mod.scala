@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[BaseTagOptions]
     }
     
-    extension [Self <: BaseTagOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTagOptions] (val x: Self) extends AnyVal {
       
       inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object mod {
       __obj.asInstanceOf[CommonOptions]
     }
     
-    extension [Self <: CommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
       
       inline def setAddHash(value: (/* assetPath */ String, /* hash */ String) => String): Self = StObject.set(x, "addHash", js.Any.fromFunction2(value))
       
@@ -137,7 +139,8 @@ object mod {
       __obj.asInstanceOf[ExternalObject]
     }
     
-    extension [Self <: ExternalObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalObject] (val x: Self) extends AnyVal {
       
       inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object mod {
       __obj.asInstanceOf[HtmlWebpackTagsPlugin]
     }
     
-    extension [Self <: HtmlWebpackTagsPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlWebpackTagsPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -178,7 +182,8 @@ object mod {
       __obj.asInstanceOf[LinkTagOptions]
     }
     
-    extension [Self <: LinkTagOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkTagOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: AttributesObject): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -201,7 +206,8 @@ object mod {
       __obj.asInstanceOf[MaybeLinkTagOptions]
     }
     
-    extension [Self <: MaybeLinkTagOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaybeLinkTagOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: TypeString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -222,7 +228,8 @@ object mod {
       __obj.asInstanceOf[MaybeScriptTagOptions]
     }
     
-    extension [Self <: MaybeScriptTagOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaybeScriptTagOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: TypeString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -245,7 +252,8 @@ object mod {
       __obj.asInstanceOf[MetaTagOptions]
     }
     
-    extension [Self <: MetaTagOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaTagOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: AttributesObject): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -284,7 +292,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCssExtensions(value: String | js.Array[String]): Self = StObject.set(x, "cssExtensions", value.asInstanceOf[js.Any])
       
@@ -353,7 +362,8 @@ object mod {
       __obj.asInstanceOf[ScriptTagOptions]
     }
     
-    extension [Self <: ScriptTagOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptTagOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: AttributesObject): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

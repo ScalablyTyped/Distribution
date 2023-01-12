@@ -310,7 +310,8 @@ object sapUiUnifiedCalendarLegendMod {
       __obj.asInstanceOf[CalendarLegendSettings]
     }
     
-    extension [Self <: CalendarLegendSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarLegendSettings] (val x: Self) extends AnyVal {
       
       inline def setColumnWidth(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       

@@ -52,7 +52,8 @@ object typesTagResourceInputMod {
       __obj.asInstanceOf[TagResourceInput]
     }
     
-    extension [Self <: TagResourceInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagResourceInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

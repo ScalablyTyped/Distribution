@@ -19,7 +19,8 @@ object HtmlurlUrl {
     __obj.asInstanceOf[HtmlurlUrl]
   }
   
-  extension [Self <: HtmlurlUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlurlUrl] (val x: Self) extends AnyVal {
     
     inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     

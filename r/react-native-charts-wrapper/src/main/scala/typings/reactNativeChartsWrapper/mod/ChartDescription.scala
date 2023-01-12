@@ -23,7 +23,8 @@ object ChartDescription {
     __obj.asInstanceOf[ChartDescription]
   }
   
-  extension [Self <: ChartDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDescription] (val x: Self) extends AnyVal {
     
     inline def setPositionX(value: Double): Self = StObject.set(x, "positionX", value.asInstanceOf[js.Any])
     

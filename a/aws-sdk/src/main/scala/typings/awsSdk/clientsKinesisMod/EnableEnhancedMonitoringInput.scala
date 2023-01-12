@@ -23,7 +23,8 @@ object EnableEnhancedMonitoringInput {
     __obj.asInstanceOf[EnableEnhancedMonitoringInput]
   }
   
-  extension [Self <: EnableEnhancedMonitoringInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableEnhancedMonitoringInput] (val x: Self) extends AnyVal {
     
     inline def setShardLevelMetrics(value: MetricsNameList): Self = StObject.set(x, "ShardLevelMetrics", value.asInstanceOf[js.Any])
     

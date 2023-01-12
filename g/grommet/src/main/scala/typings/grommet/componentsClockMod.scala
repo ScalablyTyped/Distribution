@@ -74,7 +74,8 @@ object componentsClockMod {
       __obj.asInstanceOf[ClockProps]
     }
     
-    extension [Self <: ClockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClockProps] (val x: Self) extends AnyVal {
       
       inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       

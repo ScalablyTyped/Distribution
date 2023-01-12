@@ -82,7 +82,8 @@ object Frameset {
     __obj.asInstanceOf[Frameset]
   }
   
-  extension [Self <: Frameset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Frameset] (val x: Self) extends AnyVal {
     
     inline def setAddNewFrame(value: WdFramesetNewFrameLocation => Frameset): Self = StObject.set(x, "AddNewFrame", js.Any.fromFunction1(value))
     

@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsFormFieldWarningFilledMod extends Shortcut {
       __obj.asInstanceOf[FormFieldWarningFilledProps]
     }
     
-    extension [Self <: FormFieldWarningFilledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormFieldWarningFilledProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

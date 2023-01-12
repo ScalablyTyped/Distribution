@@ -49,7 +49,8 @@ object MediationReportSpec {
     __obj.asInstanceOf[MediationReportSpec]
   }
   
-  extension [Self <: MediationReportSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediationReportSpec] (val x: Self) extends AnyVal {
     
     inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     

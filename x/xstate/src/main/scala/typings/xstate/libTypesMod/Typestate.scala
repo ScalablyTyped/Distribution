@@ -17,7 +17,8 @@ object Typestate {
     __obj.asInstanceOf[Typestate[TContext]]
   }
   
-  extension [Self <: Typestate[?], TContext](x: Self & Typestate[TContext]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typestate[?], TContext] (val x: Self & Typestate[TContext]) extends AnyVal {
     
     inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

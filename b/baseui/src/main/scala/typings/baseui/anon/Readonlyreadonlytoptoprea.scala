@@ -20,7 +20,8 @@ object Readonlyreadonlytoptoprea {
     __obj.asInstanceOf[Readonlyreadonlytoptoprea]
   }
   
-  extension [Self <: Readonlyreadonlytoptoprea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlyreadonlytoptoprea] (val x: Self) extends AnyVal {
     
     inline def setTop(value: top): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     

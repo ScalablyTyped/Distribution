@@ -19,7 +19,8 @@ object AppInterface {
     __obj.asInstanceOf[AppInterface]
   }
   
-  extension [Self <: AppInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppInterface] (val x: Self) extends AnyVal {
     
     inline def setCable(value: Cable): Self = StObject.set(x, "cable", value.asInstanceOf[js.Any])
     

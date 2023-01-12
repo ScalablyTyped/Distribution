@@ -67,7 +67,8 @@ object distEvmInterpreterMod {
       __obj.asInstanceOf[InterpreterOpts]
     }
     
-    extension [Self <: InterpreterOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterpreterOpts] (val x: Self) extends AnyVal {
       
       inline def setPc(value: Double): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object distEvmInterpreterMod {
       __obj.asInstanceOf[InterpreterResult]
     }
     
-    extension [Self <: InterpreterResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterpreterResult] (val x: Self) extends AnyVal {
       
       inline def setExceptionError(value: VmError): Self = StObject.set(x, "exceptionError", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object distEvmInterpreterMod {
       __obj.asInstanceOf[InterpreterStep]
     }
     
-    extension [Self <: InterpreterStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterpreterStep] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: typings.ethereumjsAccount.mod.default): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -216,7 +219,8 @@ object distEvmInterpreterMod {
       __obj.asInstanceOf[RunState]
     }
     
-    extension [Self <: RunState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunState] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Buffer): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object distLoaderDnaMod {
       __obj.asInstanceOf[DNAProps]
     }
     
-    extension [Self <: DNAProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DNAProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object IRawQuery {
     __obj.asInstanceOf[IRawQuery]
   }
   
-  extension [Self <: IRawQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRawQuery] (val x: Self) extends AnyVal {
     
     inline def setModifyWhere(value: () => IRawQueryModify): Self = StObject.set(x, "ModifyWhere", js.Any.fromFunction0(value))
     

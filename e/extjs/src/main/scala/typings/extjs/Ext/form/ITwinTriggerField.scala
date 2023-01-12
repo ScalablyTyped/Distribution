@@ -69,7 +69,8 @@ object ITwinTriggerField {
     __obj.asInstanceOf[ITwinTriggerField]
   }
   
-  extension [Self <: ITwinTriggerField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITwinTriggerField] (val x: Self) extends AnyVal {
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     

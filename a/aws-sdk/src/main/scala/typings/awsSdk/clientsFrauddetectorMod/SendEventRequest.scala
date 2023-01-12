@@ -54,7 +54,8 @@ object SendEventRequest {
     __obj.asInstanceOf[SendEventRequest]
   }
   
-  extension [Self <: SendEventRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendEventRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignedLabel(value: identifier): Self = StObject.set(x, "assignedLabel", value.asInstanceOf[js.Any])
     

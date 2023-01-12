@@ -63,7 +63,8 @@ object StartOutboundVoiceContactRequest {
     __obj.asInstanceOf[StartOutboundVoiceContactRequest]
   }
   
-  extension [Self <: StartOutboundVoiceContactRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartOutboundVoiceContactRequest] (val x: Self) extends AnyVal {
     
     inline def setAnswerMachineDetectionConfig(value: AnswerMachineDetectionConfig): Self = StObject.set(x, "AnswerMachineDetectionConfig", value.asInstanceOf[js.Any])
     

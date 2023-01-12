@@ -39,7 +39,8 @@ object LazyRepeatOptions {
     __obj.asInstanceOf[LazyRepeatOptions]
   }
   
-  extension [Self <: LazyRepeatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LazyRepeatOptions] (val x: Self) extends AnyVal {
     
     inline def setCalculateItemHeight(value: Double): Self = StObject.set(x, "calculateItemHeight", value.asInstanceOf[js.Any])
     

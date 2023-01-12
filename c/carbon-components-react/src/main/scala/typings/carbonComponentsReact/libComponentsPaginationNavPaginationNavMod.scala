@@ -481,7 +481,8 @@ object libComponentsPaginationNavPaginationNavMod extends Shortcut {
       __obj.asInstanceOf[PaginationNavProps]
     }
     
-    extension [Self <: PaginationNavProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationNavProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

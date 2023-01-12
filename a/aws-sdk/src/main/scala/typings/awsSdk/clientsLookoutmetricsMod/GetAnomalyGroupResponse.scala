@@ -18,7 +18,8 @@ object GetAnomalyGroupResponse {
     __obj.asInstanceOf[GetAnomalyGroupResponse]
   }
   
-  extension [Self <: GetAnomalyGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAnomalyGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setAnomalyGroup(value: AnomalyGroup): Self = StObject.set(x, "AnomalyGroup", value.asInstanceOf[js.Any])
     

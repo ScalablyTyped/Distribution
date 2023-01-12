@@ -17,7 +17,8 @@ object NextPage {
     __obj.asInstanceOf[NextPage]
   }
   
-  extension [Self <: NextPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextPage] (val x: Self) extends AnyVal {
     
     inline def setNextPage(value: Double): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
     

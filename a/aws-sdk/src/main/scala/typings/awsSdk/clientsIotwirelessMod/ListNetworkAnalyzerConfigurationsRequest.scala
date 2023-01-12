@@ -20,7 +20,8 @@ object ListNetworkAnalyzerConfigurationsRequest {
     __obj.asInstanceOf[ListNetworkAnalyzerConfigurationsRequest]
   }
   
-  extension [Self <: ListNetworkAnalyzerConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNetworkAnalyzerConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

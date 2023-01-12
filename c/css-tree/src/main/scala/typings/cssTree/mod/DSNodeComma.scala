@@ -19,7 +19,8 @@ object DSNodeComma {
     __obj.asInstanceOf[DSNodeComma]
   }
   
-  extension [Self <: DSNodeComma](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSNodeComma] (val x: Self) extends AnyVal {
     
     inline def setType(value: Comma): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

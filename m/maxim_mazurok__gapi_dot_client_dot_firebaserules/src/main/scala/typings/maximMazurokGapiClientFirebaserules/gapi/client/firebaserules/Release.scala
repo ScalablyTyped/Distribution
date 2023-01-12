@@ -25,7 +25,8 @@ object Release {
     __obj.asInstanceOf[Release]
   }
   
-  extension [Self <: Release](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Release] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

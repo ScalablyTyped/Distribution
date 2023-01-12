@@ -23,7 +23,8 @@ object UpdateRepositoryNameInput {
     __obj.asInstanceOf[UpdateRepositoryNameInput]
   }
   
-  extension [Self <: UpdateRepositoryNameInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRepositoryNameInput] (val x: Self) extends AnyVal {
     
     inline def setNewName(value: RepositoryName): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
     

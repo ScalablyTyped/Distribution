@@ -17,7 +17,8 @@ object GHSNGN {
     __obj.asInstanceOf[GHSNGN]
   }
   
-  extension [Self <: GHSNGN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GHSNGN] (val x: Self) extends AnyVal {
     
     inline def setGHS(value: js.Array[String]): Self = StObject.set(x, "GHS", value.asInstanceOf[js.Any])
     

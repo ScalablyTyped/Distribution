@@ -28,7 +28,8 @@ object DeleteThemeRequest {
     __obj.asInstanceOf[DeleteThemeRequest]
   }
   
-  extension [Self <: DeleteThemeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteThemeRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

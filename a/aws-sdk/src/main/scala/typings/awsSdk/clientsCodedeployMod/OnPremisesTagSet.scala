@@ -18,7 +18,8 @@ object OnPremisesTagSet {
     __obj.asInstanceOf[OnPremisesTagSet]
   }
   
-  extension [Self <: OnPremisesTagSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPremisesTagSet] (val x: Self) extends AnyVal {
     
     inline def setOnPremisesTagSetList(value: OnPremisesTagSetList): Self = StObject.set(x, "onPremisesTagSetList", value.asInstanceOf[js.Any])
     

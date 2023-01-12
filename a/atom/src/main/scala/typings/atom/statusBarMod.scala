@@ -27,7 +27,8 @@ object statusBarMod {
       __obj.asInstanceOf[AddTileOptions]
     }
     
-    extension [Self <: AddTileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddTileOptions] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object statusBarMod {
       __obj.asInstanceOf[StatusBar]
     }
     
-    extension [Self <: StatusBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusBar] (val x: Self) extends AnyVal {
       
       inline def setAddLeftTile(value: AddTileOptions => Tile): Self = StObject.set(x, "addLeftTile", js.Any.fromFunction1(value))
       
@@ -97,7 +99,8 @@ object statusBarMod {
       __obj.asInstanceOf[Tile]
     }
     
-    extension [Self <: Tile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

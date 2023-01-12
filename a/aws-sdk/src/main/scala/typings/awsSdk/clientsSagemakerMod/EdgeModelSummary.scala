@@ -23,7 +23,8 @@ object EdgeModelSummary {
     __obj.asInstanceOf[EdgeModelSummary]
   }
   
-  extension [Self <: EdgeModelSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeModelSummary] (val x: Self) extends AnyVal {
     
     inline def setModelName(value: EntityName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
     

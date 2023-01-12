@@ -117,7 +117,8 @@ object Diagram {
     __obj.asInstanceOf[Diagram]
   }
   
-  extension [Self <: Diagram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Diagram] (val x: Self) extends AnyVal {
     
     inline def setAutomaticPosition(value: Boolean): Self = StObject.set(x, "AutomaticPosition", value.asInstanceOf[js.Any])
     

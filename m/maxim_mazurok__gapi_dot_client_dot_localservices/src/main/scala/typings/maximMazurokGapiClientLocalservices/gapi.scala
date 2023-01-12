@@ -97,7 +97,8 @@ object gapi {
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1AccountReport]
         }
         
-        extension [Self <: GoogleAdsHomeservicesLocalservicesV1AccountReport](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1AccountReport] (val x: Self) extends AnyVal {
           
           inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
           
@@ -181,7 +182,8 @@ object gapi {
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1AggregatorInfo]
         }
         
-        extension [Self <: GoogleAdsHomeservicesLocalservicesV1AggregatorInfo](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1AggregatorInfo] (val x: Self) extends AnyVal {
           
           inline def setAggregatorProviderId(value: String): Self = StObject.set(x, "aggregatorProviderId", value.asInstanceOf[js.Any])
           
@@ -213,7 +215,8 @@ object gapi {
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1BookingLead]
         }
         
-        extension [Self <: GoogleAdsHomeservicesLocalservicesV1BookingLead](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1BookingLead] (val x: Self) extends AnyVal {
           
           inline def setBookingAppointmentTimestamp(value: String): Self = StObject.set(x, "bookingAppointmentTimestamp", value.asInstanceOf[js.Any])
           
@@ -294,7 +297,8 @@ object gapi {
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport]
         }
         
-        extension [Self <: GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport] (val x: Self) extends AnyVal {
           
           inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
           
@@ -383,7 +387,8 @@ object gapi {
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1MessageLead]
         }
         
-        extension [Self <: GoogleAdsHomeservicesLocalservicesV1MessageLead](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1MessageLead] (val x: Self) extends AnyVal {
           
           inline def setConsumerPhoneNumber(value: String): Self = StObject.set(x, "consumerPhoneNumber", value.asInstanceOf[js.Any])
           
@@ -421,7 +426,8 @@ object gapi {
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1PhoneLead]
         }
         
-        extension [Self <: GoogleAdsHomeservicesLocalservicesV1PhoneLead](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1PhoneLead] (val x: Self) extends AnyVal {
           
           inline def setChargedCallTimestamp(value: String): Self = StObject.set(x, "chargedCallTimestamp", value.asInstanceOf[js.Any])
           
@@ -452,7 +458,8 @@ object gapi {
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse]
         }
         
-        extension [Self <: GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse] (val x: Self) extends AnyVal {
           
           inline def setAccountReports(value: js.Array[GoogleAdsHomeservicesLocalservicesV1AccountReport]): Self = StObject.set(x, "accountReports", value.asInstanceOf[js.Any])
           
@@ -481,7 +488,8 @@ object gapi {
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse]
         }
         
-        extension [Self <: GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse] (val x: Self) extends AnyVal {
           
           inline def setDetailedLeadReports(value: js.Array[GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport]): Self = StObject.set(x, "detailedLeadReports", value.asInstanceOf[js.Any])
           
@@ -510,7 +518,8 @@ object gapi {
           __obj.asInstanceOf[GoogleTypeTimeZone]
         }
         
-        extension [Self <: GoogleTypeTimeZone](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleTypeTimeZone] (val x: Self) extends AnyVal {
           
           inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           

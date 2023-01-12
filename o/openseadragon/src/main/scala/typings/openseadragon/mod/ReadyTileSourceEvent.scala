@@ -17,7 +17,8 @@ object ReadyTileSourceEvent {
     __obj.asInstanceOf[ReadyTileSourceEvent]
   }
   
-  extension [Self <: ReadyTileSourceEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadyTileSourceEvent] (val x: Self) extends AnyVal {
     
     inline def setTileSource(value: js.Object): Self = StObject.set(x, "tileSource", value.asInstanceOf[js.Any])
   }

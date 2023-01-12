@@ -31,7 +31,8 @@ object Aliases {
     __obj.asInstanceOf[Aliases]
   }
   
-  extension [Self <: Aliases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aliases] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Record[String, IndicesAliasDefinition]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

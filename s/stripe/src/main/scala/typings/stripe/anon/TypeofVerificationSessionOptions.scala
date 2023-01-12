@@ -15,7 +15,8 @@ object TypeofVerificationSessionOptions {
     __obj.asInstanceOf[TypeofVerificationSessionOptions]
   }
   
-  extension [Self <: TypeofVerificationSessionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofVerificationSessionOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: TypeofOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object DeleteFileResultItem {
     __obj.asInstanceOf[DeleteFileResultItem]
   }
   
-  extension [Self <: DeleteFileResultItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileResultItem] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

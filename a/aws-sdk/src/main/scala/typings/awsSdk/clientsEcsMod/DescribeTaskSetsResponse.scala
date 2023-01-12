@@ -23,7 +23,8 @@ object DescribeTaskSetsResponse {
     __obj.asInstanceOf[DescribeTaskSetsResponse]
   }
   
-  extension [Self <: DescribeTaskSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTaskSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

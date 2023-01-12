@@ -30,7 +30,8 @@ object alert {
       __obj.asInstanceOf[IAlert]
     }
     
-    extension [Self <: IAlert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAlert] (val x: Self) extends AnyVal {
       
       inline def set$promise(value: IPromise[Unit]): Self = StObject.set(x, "$promise", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object alert {
       __obj.asInstanceOf[IAlertOptions]
     }
     
-    extension [Self <: IAlertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAlertOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,8 @@ object alert {
       __obj.asInstanceOf[IAlertProvider]
     }
     
-    extension [Self <: IAlertProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAlertProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: IAlertOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

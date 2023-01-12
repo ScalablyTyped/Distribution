@@ -27,7 +27,8 @@ object EducationRubricOutcome {
     __obj.asInstanceOf[EducationRubricOutcome]
   }
   
-  extension [Self <: EducationRubricOutcome](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationRubricOutcome] (val x: Self) extends AnyVal {
     
     inline def setPublishedRubricQualityFeedback(value: NullableOption[js.Array[RubricQualityFeedbackModel]]): Self = StObject.set(x, "publishedRubricQualityFeedback", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object EbsVolumesResult {
     __obj.asInstanceOf[EbsVolumesResult]
   }
   
-  extension [Self <: EbsVolumesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbsVolumesResult] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object WrappedException {
     __obj.asInstanceOf[WrappedException]
   }
   
-  extension [Self <: WrappedException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WrappedException] (val x: Self) extends AnyVal {
     
     inline def setCustomProperties(value: StringDictionary[Any]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
     

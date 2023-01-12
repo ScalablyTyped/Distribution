@@ -63,7 +63,8 @@ object Core {
       __obj.asInstanceOf[IResourceCandidate]
     }
     
-    extension [Self <: IResourceCandidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResourceCandidate] (val x: Self) extends AnyVal {
       
       inline def setGetQualifierValue(value: String => String): Self = StObject.set(x, "getQualifierValue", js.Any.fromFunction1(value))
       
@@ -105,7 +106,8 @@ object Core {
       __obj.asInstanceOf[IResourceContextStatics]
     }
     
-    extension [Self <: IResourceContextStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResourceContextStatics] (val x: Self) extends AnyVal {
       
       inline def setCreateMatchingContext(value: IIterable[ResourceQualifier] => ResourceContext): Self = StObject.set(x, "createMatchingContext", js.Any.fromFunction1(value))
     }
@@ -136,7 +138,8 @@ object Core {
       __obj.asInstanceOf[IResourceManager]
     }
     
-    extension [Self <: IResourceManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResourceManager] (val x: Self) extends AnyVal {
       
       inline def setAllResourceMaps(value: IMapView[String, ResourceMap]): Self = StObject.set(x, "allResourceMaps", value.asInstanceOf[js.Any])
       
@@ -163,7 +166,8 @@ object Core {
       __obj.asInstanceOf[IResourceManagerStatics]
     }
     
-    extension [Self <: IResourceManagerStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResourceManagerStatics] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: ResourceManager): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -203,7 +207,8 @@ object Core {
       __obj.asInstanceOf[IResourceQualifier]
     }
     
-    extension [Self <: IResourceQualifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResourceQualifier] (val x: Self) extends AnyVal {
       
       inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       

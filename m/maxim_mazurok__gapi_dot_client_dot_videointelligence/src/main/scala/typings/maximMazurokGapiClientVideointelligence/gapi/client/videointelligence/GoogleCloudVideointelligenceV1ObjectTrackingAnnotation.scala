@@ -37,7 +37,8 @@ object GoogleCloudVideointelligenceV1ObjectTrackingAnnotation {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1ObjectTrackingAnnotation]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1ObjectTrackingAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1ObjectTrackingAnnotation] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsPlusMod extends Shortcut {
       __obj.asInstanceOf[PlusProps]
     }
     
-    extension [Self <: PlusProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlusProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

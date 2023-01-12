@@ -16,7 +16,8 @@ object ExpansionFilesUploadResponse {
     __obj.asInstanceOf[ExpansionFilesUploadResponse]
   }
   
-  extension [Self <: ExpansionFilesUploadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpansionFilesUploadResponse] (val x: Self) extends AnyVal {
     
     inline def setExpansionFile(value: ExpansionFile): Self = StObject.set(x, "expansionFile", value.asInstanceOf[js.Any])
     

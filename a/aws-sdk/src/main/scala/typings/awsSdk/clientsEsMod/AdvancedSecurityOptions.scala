@@ -38,7 +38,8 @@ object AdvancedSecurityOptions {
     __obj.asInstanceOf[AdvancedSecurityOptions]
   }
   
-  extension [Self <: AdvancedSecurityOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedSecurityOptions] (val x: Self) extends AnyVal {
     
     inline def setAnonymousAuthDisableDate(value: js.Date): Self = StObject.set(x, "AnonymousAuthDisableDate", value.asInstanceOf[js.Any])
     

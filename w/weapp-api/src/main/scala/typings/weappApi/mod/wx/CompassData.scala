@@ -16,7 +16,8 @@ object CompassData {
     __obj.asInstanceOf[CompassData]
   }
   
-  extension [Self <: CompassData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompassData] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }

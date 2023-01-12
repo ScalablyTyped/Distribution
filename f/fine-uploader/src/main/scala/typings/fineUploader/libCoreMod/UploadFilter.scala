@@ -28,7 +28,8 @@ object UploadFilter {
     __obj.asInstanceOf[UploadFilter]
   }
   
-  extension [Self <: UploadFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadFilter] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double | js.Array[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

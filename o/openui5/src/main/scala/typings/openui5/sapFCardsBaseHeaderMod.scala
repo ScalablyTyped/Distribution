@@ -204,7 +204,8 @@ object sapFCardsBaseHeaderMod {
       __obj.asInstanceOf[BaseHeaderSettings]
     }
     
-    extension [Self <: BaseHeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseHeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setDataTimestamp(value: String | PropertyBindingInfo): Self = StObject.set(x, "dataTimestamp", value.asInstanceOf[js.Any])
       

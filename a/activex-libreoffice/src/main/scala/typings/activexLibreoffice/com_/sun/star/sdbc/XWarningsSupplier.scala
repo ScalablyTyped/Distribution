@@ -53,7 +53,8 @@ object XWarningsSupplier {
     __obj.asInstanceOf[XWarningsSupplier]
   }
   
-  extension [Self <: XWarningsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XWarningsSupplier] (val x: Self) extends AnyVal {
     
     inline def setClearWarnings(value: () => Unit): Self = StObject.set(x, "clearWarnings", js.Any.fromFunction0(value))
     

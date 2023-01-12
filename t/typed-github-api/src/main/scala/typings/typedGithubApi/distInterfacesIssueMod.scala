@@ -85,7 +85,8 @@ object distInterfacesIssueMod {
       __obj.asInstanceOf[Issue]
     }
     
-    extension [Self <: Issue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Issue] (val x: Self) extends AnyVal {
       
       inline def setAge(value: Duration_): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object distInterfacesIssueMod {
       __obj.asInstanceOf[IssueComment]
     }
     
-    extension [Self <: IssueComment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueComment] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -204,7 +206,8 @@ object distInterfacesIssueMod {
       __obj.asInstanceOf[IssueRef]
     }
     
-    extension [Self <: IssueRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueRef] (val x: Self) extends AnyVal {
       
       inline def setLoadAsync(value: () => js.Promise[Issue | Null]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction0(value))
       

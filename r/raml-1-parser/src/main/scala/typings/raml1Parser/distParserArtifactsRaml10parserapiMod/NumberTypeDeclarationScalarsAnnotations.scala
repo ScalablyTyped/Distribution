@@ -58,7 +58,8 @@ object NumberTypeDeclarationScalarsAnnotations {
     __obj.asInstanceOf[NumberTypeDeclarationScalarsAnnotations]
   }
   
-  extension [Self <: NumberTypeDeclarationScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberTypeDeclarationScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setEnum(value: () => js.Array[js.Array[AnnotationRef]]): Self = StObject.set(x, "enum", js.Any.fromFunction0(value))
     

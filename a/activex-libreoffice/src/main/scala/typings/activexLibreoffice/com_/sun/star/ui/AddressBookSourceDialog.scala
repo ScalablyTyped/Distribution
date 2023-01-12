@@ -38,7 +38,8 @@ object AddressBookSourceDialog {
     __obj.asInstanceOf[AddressBookSourceDialog]
   }
   
-  extension [Self <: AddressBookSourceDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressBookSourceDialog] (val x: Self) extends AnyVal {
     
     inline def setCreateWithDataSource(value: (XWindow, XPropertySet, String, String, String) => Unit): Self = StObject.set(x, "createWithDataSource", js.Any.fromFunction5(value))
   }

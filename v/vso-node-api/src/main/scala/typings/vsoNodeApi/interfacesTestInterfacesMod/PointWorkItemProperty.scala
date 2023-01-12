@@ -16,7 +16,8 @@ object PointWorkItemProperty {
     __obj.asInstanceOf[PointWorkItemProperty]
   }
   
-  extension [Self <: PointWorkItemProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointWorkItemProperty] (val x: Self) extends AnyVal {
     
     inline def setWorkItem(value: ValueAny): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
   }

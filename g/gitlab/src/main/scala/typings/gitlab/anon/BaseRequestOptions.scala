@@ -19,7 +19,8 @@ object BaseRequestOptions {
     __obj.asInstanceOf[BaseRequestOptions]
   }
   
-  extension [Self <: BaseRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     

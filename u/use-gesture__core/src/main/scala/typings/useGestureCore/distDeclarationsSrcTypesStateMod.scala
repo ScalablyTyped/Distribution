@@ -215,7 +215,8 @@ object distDeclarationsSrcTypesStateMod {
       __obj.asInstanceOf[CommonGestureState]
     }
     
-    extension [Self <: CommonGestureState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonGestureState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -350,7 +351,8 @@ object distDeclarationsSrcTypesStateMod {
       __obj.asInstanceOf[CoordinatesState]
     }
     
-    extension [Self <: CoordinatesState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoordinatesState] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: typings.useGestureCore.useGestureCoreStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -446,7 +448,8 @@ object distDeclarationsSrcTypesStateMod {
       __obj.asInstanceOf[DragState]
     }
     
-    extension [Self <: DragState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragState] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -498,7 +501,8 @@ object distDeclarationsSrcTypesStateMod {
       __obj.asInstanceOf[EventTypes]
     }
     
-    extension [Self <: EventTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventTypes] (val x: Self) extends AnyVal {
       
       inline def setDrag(value: PointerEvent | TouchEvent | MouseEvent | KeyboardEvent): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
@@ -630,7 +634,8 @@ object distDeclarationsSrcTypesStateMod {
       __obj.asInstanceOf[PinchState]
     }
     
-    extension [Self <: PinchState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinchState] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: scale | angle): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -748,7 +753,8 @@ object distDeclarationsSrcTypesStateMod {
       __obj.asInstanceOf[SharedGestureState]
     }
     
-    extension [Self <: SharedGestureState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedGestureState] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -817,7 +823,8 @@ object distDeclarationsSrcTypesStateMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setDrag(value: DragStateeventEventTypesd): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       

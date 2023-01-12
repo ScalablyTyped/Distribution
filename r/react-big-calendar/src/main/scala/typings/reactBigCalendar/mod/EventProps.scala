@@ -38,7 +38,8 @@ object EventProps {
     __obj.asInstanceOf[EventProps[TEvent]]
   }
   
-  extension [Self <: EventProps[?], TEvent /* <: js.Object */](x: Self & EventProps[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventProps[?], TEvent /* <: js.Object */] (val x: Self & EventProps[TEvent]) extends AnyVal {
     
     inline def setContinuesAfter(value: Boolean): Self = StObject.set(x, "continuesAfter", value.asInstanceOf[js.Any])
     

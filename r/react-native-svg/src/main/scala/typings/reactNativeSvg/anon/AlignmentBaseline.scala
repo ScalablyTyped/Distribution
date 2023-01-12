@@ -44,7 +44,8 @@ object AlignmentBaseline {
     __obj.asInstanceOf[AlignmentBaseline]
   }
   
-  extension [Self <: AlignmentBaseline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignmentBaseline] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

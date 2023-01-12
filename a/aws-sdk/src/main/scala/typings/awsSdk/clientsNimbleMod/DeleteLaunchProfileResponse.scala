@@ -18,7 +18,8 @@ object DeleteLaunchProfileResponse {
     __obj.asInstanceOf[DeleteLaunchProfileResponse]
   }
   
-  extension [Self <: DeleteLaunchProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLaunchProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setLaunchProfile(value: LaunchProfile): Self = StObject.set(x, "launchProfile", value.asInstanceOf[js.Any])
     

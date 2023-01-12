@@ -23,7 +23,8 @@ object ConcatenationSink {
     __obj.asInstanceOf[ConcatenationSink]
   }
   
-  extension [Self <: ConcatenationSink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcatenationSink] (val x: Self) extends AnyVal {
     
     inline def setS3BucketSinkConfiguration(value: S3BucketSinkConfiguration): Self = StObject.set(x, "S3BucketSinkConfiguration", value.asInstanceOf[js.Any])
     

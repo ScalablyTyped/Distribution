@@ -28,7 +28,8 @@ object DeleteBucketAnalyticsConfigurationRequest {
     __obj.asInstanceOf[DeleteBucketAnalyticsConfigurationRequest]
   }
   
-  extension [Self <: DeleteBucketAnalyticsConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBucketAnalyticsConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

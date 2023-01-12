@@ -17,7 +17,8 @@ object TerminateArguments {
     __obj.asInstanceOf[TerminateArguments]
   }
   
-  extension [Self <: TerminateArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminateArguments] (val x: Self) extends AnyVal {
     
     inline def setRestart(value: Boolean): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
     

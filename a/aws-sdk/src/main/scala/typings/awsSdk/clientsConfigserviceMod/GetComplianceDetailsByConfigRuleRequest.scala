@@ -33,7 +33,8 @@ object GetComplianceDetailsByConfigRuleRequest {
     __obj.asInstanceOf[GetComplianceDetailsByConfigRuleRequest]
   }
   
-  extension [Self <: GetComplianceDetailsByConfigRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComplianceDetailsByConfigRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setComplianceTypes(value: ComplianceTypes): Self = StObject.set(x, "ComplianceTypes", value.asInstanceOf[js.Any])
     

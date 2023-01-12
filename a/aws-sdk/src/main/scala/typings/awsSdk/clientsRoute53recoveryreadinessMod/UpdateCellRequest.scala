@@ -23,7 +23,8 @@ object UpdateCellRequest {
     __obj.asInstanceOf[UpdateCellRequest]
   }
   
-  extension [Self <: UpdateCellRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCellRequest] (val x: Self) extends AnyVal {
     
     inline def setCellName(value: string): Self = StObject.set(x, "CellName", value.asInstanceOf[js.Any])
     

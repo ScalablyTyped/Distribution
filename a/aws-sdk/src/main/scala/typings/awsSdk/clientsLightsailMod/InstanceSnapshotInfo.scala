@@ -28,7 +28,8 @@ object InstanceSnapshotInfo {
     __obj.asInstanceOf[InstanceSnapshotInfo]
   }
   
-  extension [Self <: InstanceSnapshotInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceSnapshotInfo] (val x: Self) extends AnyVal {
     
     inline def setFromBlueprintId(value: NonEmptyString): Self = StObject.set(x, "fromBlueprintId", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object IndicesIndexTemplate {
     __obj.asInstanceOf[IndicesIndexTemplate]
   }
   
-  extension [Self <: IndicesIndexTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexTemplate] (val x: Self) extends AnyVal {
     
     inline def setAllow_auto_create(value: Boolean): Self = StObject.set(x, "allow_auto_create", value.asInstanceOf[js.Any])
     

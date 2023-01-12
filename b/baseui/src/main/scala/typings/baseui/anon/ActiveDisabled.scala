@@ -19,7 +19,8 @@ object ActiveDisabled {
     __obj.asInstanceOf[ActiveDisabled]
   }
   
-  extension [Self <: ActiveDisabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveDisabled] (val x: Self) extends AnyVal {
     
     inline def set$active(value: Boolean): Self = StObject.set(x, "$active", value.asInstanceOf[js.Any])
     

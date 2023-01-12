@@ -23,7 +23,8 @@ object OpenHoursRule {
     __obj.asInstanceOf[OpenHoursRule]
   }
   
-  extension [Self <: OpenHoursRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenHoursRule] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: string): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

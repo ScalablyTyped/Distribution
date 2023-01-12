@@ -23,7 +23,8 @@ object srcNgtscSourcemapsSrcRawSourceMapMod {
       __obj.asInstanceOf[MapAndPath]
     }
     
-    extension [Self <: MapAndPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapAndPath] (val x: Self) extends AnyVal {
       
       inline def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object srcNgtscSourcemapsSrcRawSourceMapMod {
       __obj.asInstanceOf[RawSourceMap]
     }
     
-    extension [Self <: RawSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawSourceMap] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object srcNgtscSourcemapsSrcRawSourceMapMod {
       __obj.asInstanceOf[SourceMapInfo]
     }
     
-    extension [Self <: SourceMapInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapInfo] (val x: Self) extends AnyVal {
       
       inline def setOrigin(value: ContentOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     }

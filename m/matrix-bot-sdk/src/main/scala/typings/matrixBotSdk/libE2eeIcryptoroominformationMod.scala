@@ -25,7 +25,8 @@ object libE2eeIcryptoroominformationMod {
       __obj.asInstanceOf[ICryptoRoomInformation]
     }
     
-    extension [Self <: ICryptoRoomInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICryptoRoomInformation] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String | RoomEncryptionAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

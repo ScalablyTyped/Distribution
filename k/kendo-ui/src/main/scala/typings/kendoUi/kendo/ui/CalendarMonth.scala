@@ -19,7 +19,8 @@ object CalendarMonth {
     __obj.asInstanceOf[CalendarMonth]
   }
   
-  extension [Self <: CalendarMonth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarMonth] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

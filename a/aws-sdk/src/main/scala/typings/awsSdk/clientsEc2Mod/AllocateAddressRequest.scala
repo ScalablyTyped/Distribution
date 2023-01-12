@@ -48,7 +48,8 @@ object AllocateAddressRequest {
     __obj.asInstanceOf[AllocateAddressRequest]
   }
   
-  extension [Self <: AllocateAddressRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllocateAddressRequest] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: PublicIpAddress): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

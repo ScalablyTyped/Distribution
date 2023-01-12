@@ -16,7 +16,8 @@ object PartialClassesSliderPicke {
     __obj.asInstanceOf[PartialClassesSliderPicke]
   }
   
-  extension [Self <: PartialClassesSliderPicke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesSliderPicke] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: PartialSliderPickerStyles): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

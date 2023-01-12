@@ -36,7 +36,8 @@ object distV4Mod {
       __obj.asInstanceOf[V4Options]
     }
     
-    extension [Self <: V4Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V4Options] (val x: Self) extends AnyVal {
       
       inline def setRandom(value: js.Array[Double]): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       

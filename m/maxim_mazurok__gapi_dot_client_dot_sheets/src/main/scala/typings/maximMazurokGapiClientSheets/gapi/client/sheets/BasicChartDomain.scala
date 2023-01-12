@@ -19,7 +19,8 @@ object BasicChartDomain {
     __obj.asInstanceOf[BasicChartDomain]
   }
   
-  extension [Self <: BasicChartDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicChartDomain] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: ChartData): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

@@ -224,7 +224,8 @@ object TargetedWheelEvent {
     __obj.asInstanceOf[TargetedWheelEvent[Target]]
   }
   
-  extension [Self <: TargetedWheelEvent[?], Target /* <: EventTarget */](x: Self & TargetedWheelEvent[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedWheelEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedWheelEvent[Target]) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

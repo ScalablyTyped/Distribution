@@ -17,7 +17,8 @@ object TextRangeSelection {
     __obj.asInstanceOf[TextRangeSelection]
   }
   
-  extension [Self <: TextRangeSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextRangeSelection] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: TextPosition): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     

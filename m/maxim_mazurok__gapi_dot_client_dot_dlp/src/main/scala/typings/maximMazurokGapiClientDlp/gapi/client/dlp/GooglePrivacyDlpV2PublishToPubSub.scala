@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2PublishToPubSub {
     __obj.asInstanceOf[GooglePrivacyDlpV2PublishToPubSub]
   }
   
-  extension [Self <: GooglePrivacyDlpV2PublishToPubSub](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2PublishToPubSub] (val x: Self) extends AnyVal {
     
     inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     

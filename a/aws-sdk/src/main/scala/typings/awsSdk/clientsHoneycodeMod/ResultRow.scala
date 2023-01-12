@@ -23,7 +23,8 @@ object ResultRow {
     __obj.asInstanceOf[ResultRow]
   }
   
-  extension [Self <: ResultRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultRow] (val x: Self) extends AnyVal {
     
     inline def setDataItems(value: DataItems): Self = StObject.set(x, "dataItems", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object typesToggleRadioMod {
       __obj.asInstanceOf[RadioProps]
     }
     
-    extension [Self <: RadioProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioProps] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[String] | String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

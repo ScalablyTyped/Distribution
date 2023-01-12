@@ -23,7 +23,8 @@ object MultiRegionAccessPointRegionalResponse {
     __obj.asInstanceOf[MultiRegionAccessPointRegionalResponse]
   }
   
-  extension [Self <: MultiRegionAccessPointRegionalResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRegionAccessPointRegionalResponse] (val x: Self) extends AnyVal {
     
     inline def setName(value: RegionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

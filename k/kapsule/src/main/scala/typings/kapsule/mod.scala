@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[PropCfg]
     }
     
-    extension [Self <: PropCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropCfg] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: PropVal): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setInitialised(value: Boolean): Self = StObject.set(x, "initialised", value.asInstanceOf[js.Any])
       

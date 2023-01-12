@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsBadgeSmallMod extends Shortcut {
       __obj.asInstanceOf[BadgeSmallProps]
     }
     
-    extension [Self <: BadgeSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

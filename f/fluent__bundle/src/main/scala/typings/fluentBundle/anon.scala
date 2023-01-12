@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[AllowOverrides]
     }
     
-    extension [Self <: AllowOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowOverrides] (val x: Self) extends AnyVal {
       
       inline def setAllowOverrides(value: Boolean): Self = StObject.set(x, "allowOverrides", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Functions]
     }
     
-    extension [Self <: Functions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Functions] (val x: Self) extends AnyVal {
       
       inline def setFunctions(value: Record[String, FluentFunction]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       

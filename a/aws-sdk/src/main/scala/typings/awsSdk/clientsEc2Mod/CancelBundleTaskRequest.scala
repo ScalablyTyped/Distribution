@@ -23,7 +23,8 @@ object CancelBundleTaskRequest {
     __obj.asInstanceOf[CancelBundleTaskRequest]
   }
   
-  extension [Self <: CancelBundleTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelBundleTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setBundleId(value: BundleId): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     

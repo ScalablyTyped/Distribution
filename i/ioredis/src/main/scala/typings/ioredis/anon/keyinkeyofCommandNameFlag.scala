@@ -38,7 +38,8 @@ object keyinkeyofCommandNameFlag {
     __obj.asInstanceOf[keyinkeyofCommandNameFlag]
   }
   
-  extension [Self <: keyinkeyofCommandNameFlag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinkeyofCommandNameFlag] (val x: Self) extends AnyVal {
     
     inline def setENTER_SUBSCRIBER_MODE(value: js.Tuple2[subscribe, psubscribe]): Self = StObject.set(x, "ENTER_SUBSCRIBER_MODE", value.asInstanceOf[js.Any])
     

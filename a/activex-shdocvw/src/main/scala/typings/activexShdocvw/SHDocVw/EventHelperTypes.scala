@@ -54,7 +54,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[InternetExplorerBeforeNavigate2Parameter]
     }
     
-    extension [Self <: InternetExplorerBeforeNavigate2Parameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternetExplorerBeforeNavigate2Parameter] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[InternetExplorerMediumBeforeNavigate2Parameter]
     }
     
-    extension [Self <: InternetExplorerMediumBeforeNavigate2Parameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternetExplorerMediumBeforeNavigate2Parameter] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ShellBrowserWindowBeforeNavigate2Parameter]
     }
     
-    extension [Self <: ShellBrowserWindowBeforeNavigate2Parameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBrowserWindowBeforeNavigate2Parameter] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
@@ -207,7 +210,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ShellNameSpaceFavoritesSelectionChangeParameter]
     }
     
-    extension [Self <: ShellNameSpaceFavoritesSelectionChangeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellNameSpaceFavoritesSelectionChangeParameter] (val x: Self) extends AnyVal {
       
       inline def setCItems(value: Double): Self = StObject.set(x, "cItems", value.asInstanceOf[js.Any])
       
@@ -258,7 +262,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[WebBrowserBeforeNavigate2Parameter]
     }
     
-    extension [Self <: WebBrowserBeforeNavigate2Parameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebBrowserBeforeNavigate2Parameter] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
@@ -306,7 +311,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[WebBrowserV1BeforeNavigateParameter]
     }
     
-    extension [Self <: WebBrowserV1BeforeNavigateParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebBrowserV1BeforeNavigateParameter] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
@@ -352,7 +358,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[WebBrowserV1FrameBeforeNavigateParameter]
     }
     
-    extension [Self <: WebBrowserV1FrameBeforeNavigateParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebBrowserV1FrameBeforeNavigateParameter] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
@@ -398,7 +405,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[WebBrowserV1FrameNewWindowParameter]
     }
     
-    extension [Self <: WebBrowserV1FrameNewWindowParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebBrowserV1FrameNewWindowParameter] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
       
@@ -444,7 +452,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[WebBrowserV1NewWindowParameter]
     }
     
-    extension [Self <: WebBrowserV1NewWindowParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebBrowserV1NewWindowParameter] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
       

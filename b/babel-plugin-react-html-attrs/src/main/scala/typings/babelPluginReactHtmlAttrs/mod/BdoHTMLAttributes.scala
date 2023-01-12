@@ -20,7 +20,8 @@ object BdoHTMLAttributes {
     __obj.asInstanceOf[BdoHTMLAttributes[T]]
   }
   
-  extension [Self <: BdoHTMLAttributes[?], T](x: Self & BdoHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BdoHTMLAttributes[?], T] (val x: Self & BdoHTMLAttributes[T]) extends AnyVal {
     
     inline def setDir(value: ltr | rtl): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

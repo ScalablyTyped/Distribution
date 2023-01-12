@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[OptionsExt]
     }
     
-    extension [Self <: OptionsExt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsExt] (val x: Self) extends AnyVal {
       
       inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       

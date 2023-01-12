@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[GenerateEmptyMapOptions]
     }
     
-    extension [Self <: GenerateEmptyMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateEmptyMapOptions] (val x: Self) extends AnyVal {
       
       inline def setLineOffset(value: Double): Self = StObject.set(x, "lineOffset", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object mod {
       __obj.asInstanceOf[IndexedMapping[T]]
     }
     
-    extension [Self <: IndexedMapping[?], T](x: Self & IndexedMapping[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexedMapping[?], T] (val x: Self & IndexedMapping[T]) extends AnyVal {
       
       inline def setGenerated(value: MappingPosition): Self = StObject.set(x, "generated", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object mod {
       __obj.asInstanceOf[MappingPosition]
     }
     
-    extension [Self <: MappingPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappingPosition] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -143,7 +146,8 @@ object mod {
       __obj.asInstanceOf[ParsedMap]
     }
     
-    extension [Self <: ParsedMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedMap] (val x: Self) extends AnyVal {
       
       inline def setMappings(value: js.Array[IndexedMapping[Double]]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
@@ -247,7 +251,8 @@ object mod {
       __obj.asInstanceOf[SourceMapStringifyOptions]
     }
     
-    extension [Self <: SourceMapStringifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapStringifyOptions] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -299,7 +304,8 @@ object mod {
       __obj.asInstanceOf[VLQMap]
     }
     
-    extension [Self <: VLQMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VLQMap] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

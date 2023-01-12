@@ -52,7 +52,8 @@ object distBackendsNonMaxSuppressionImplMod {
       __obj.asInstanceOf[NonMaxSuppressionResult]
     }
     
-    extension [Self <: NonMaxSuppressionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonMaxSuppressionResult] (val x: Self) extends AnyVal {
       
       inline def setSelectedIndices(value: js.Array[Double]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
       

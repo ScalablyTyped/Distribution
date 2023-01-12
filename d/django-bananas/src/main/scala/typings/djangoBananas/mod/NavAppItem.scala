@@ -15,7 +15,8 @@ object NavAppItem {
     __obj.asInstanceOf[NavAppItem]
   }
   
-  extension [Self <: NavAppItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavAppItem] (val x: Self) extends AnyVal {
     
     inline def setShowSubheader(value: Boolean): Self = StObject.set(x, "showSubheader", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object dxChartCommonAxisSettingsStripStyle {
     __obj.asInstanceOf[dxChartCommonAxisSettingsStripStyle]
   }
   
-  extension [Self <: dxChartCommonAxisSettingsStripStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartCommonAxisSettingsStripStyle] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: dxChartCommonAxisSettingsStripStyleLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

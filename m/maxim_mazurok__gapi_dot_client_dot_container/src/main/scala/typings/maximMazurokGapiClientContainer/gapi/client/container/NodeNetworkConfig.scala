@@ -36,7 +36,8 @@ object NodeNetworkConfig {
     __obj.asInstanceOf[NodeNetworkConfig]
   }
   
-  extension [Self <: NodeNetworkConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeNetworkConfig] (val x: Self) extends AnyVal {
     
     inline def setCreatePodRange(value: Boolean): Self = StObject.set(x, "createPodRange", value.asInstanceOf[js.Any])
     

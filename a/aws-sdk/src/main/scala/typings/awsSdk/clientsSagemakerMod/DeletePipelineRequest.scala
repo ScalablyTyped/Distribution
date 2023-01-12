@@ -23,7 +23,8 @@ object DeletePipelineRequest {
     __obj.asInstanceOf[DeletePipelineRequest]
   }
   
-  extension [Self <: DeletePipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: IdempotencyToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

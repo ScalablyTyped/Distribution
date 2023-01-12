@@ -78,7 +78,8 @@ object ListMonitoringSchedulesRequest {
     __obj.asInstanceOf[ListMonitoringSchedulesRequest]
   }
   
-  extension [Self <: ListMonitoringSchedulesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMonitoringSchedulesRequest] (val x: Self) extends AnyVal {
     
     inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     

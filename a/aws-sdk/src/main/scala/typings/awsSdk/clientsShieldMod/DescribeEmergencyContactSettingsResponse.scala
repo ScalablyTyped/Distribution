@@ -18,7 +18,8 @@ object DescribeEmergencyContactSettingsResponse {
     __obj.asInstanceOf[DescribeEmergencyContactSettingsResponse]
   }
   
-  extension [Self <: DescribeEmergencyContactSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEmergencyContactSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setEmergencyContactList(value: EmergencyContactList): Self = StObject.set(x, "EmergencyContactList", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object LoadedRouterConfig {
     __obj.asInstanceOf[LoadedRouterConfig]
   }
   
-  extension [Self <: LoadedRouterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadedRouterConfig] (val x: Self) extends AnyVal {
     
     inline def setInjector(value: EnvironmentInjector): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
     

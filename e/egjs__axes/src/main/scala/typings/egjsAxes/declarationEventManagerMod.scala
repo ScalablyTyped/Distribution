@@ -65,7 +65,8 @@ object declarationEventManagerMod {
       __obj.asInstanceOf[ChangeEventOption]
     }
     
-    extension [Self <: ChangeEventOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventOption] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       

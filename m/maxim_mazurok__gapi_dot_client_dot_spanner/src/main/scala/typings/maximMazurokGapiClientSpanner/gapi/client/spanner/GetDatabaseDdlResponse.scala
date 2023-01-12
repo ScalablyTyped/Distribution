@@ -16,7 +16,8 @@ object GetDatabaseDdlResponse {
     __obj.asInstanceOf[GetDatabaseDdlResponse]
   }
   
-  extension [Self <: GetDatabaseDdlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDatabaseDdlResponse] (val x: Self) extends AnyVal {
     
     inline def setStatements(value: js.Array[String]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     

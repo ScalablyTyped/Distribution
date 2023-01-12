@@ -23,7 +23,8 @@ object AutoMLJobArtifacts {
     __obj.asInstanceOf[AutoMLJobArtifacts]
   }
   
-  extension [Self <: AutoMLJobArtifacts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLJobArtifacts] (val x: Self) extends AnyVal {
     
     inline def setCandidateDefinitionNotebookLocation(value: CandidateDefinitionNotebookLocation): Self = StObject.set(x, "CandidateDefinitionNotebookLocation", value.asInstanceOf[js.Any])
     

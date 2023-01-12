@@ -33,7 +33,8 @@ object TimeAlignmentBoundary {
     __obj.asInstanceOf[TimeAlignmentBoundary]
   }
   
-  extension [Self <: TimeAlignmentBoundary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeAlignmentBoundary] (val x: Self) extends AnyVal {
     
     inline def setDayOfMonth(value: DayOfMonth): Self = StObject.set(x, "DayOfMonth", value.asInstanceOf[js.Any])
     

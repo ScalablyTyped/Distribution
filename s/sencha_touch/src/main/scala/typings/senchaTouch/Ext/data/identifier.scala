@@ -34,7 +34,8 @@ object identifier {
       __obj.asInstanceOf[ISequential]
     }
     
-    extension [Self <: ISequential](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISequential] (val x: Self) extends AnyVal {
       
       inline def setGetSeed(value: () => Double): Self = StObject.set(x, "getSeed", js.Any.fromFunction0(value))
       
@@ -75,7 +76,8 @@ object identifier {
       __obj.asInstanceOf[ISimple]
     }
     
-    extension [Self <: ISimple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISimple] (val x: Self) extends AnyVal {
       
       inline def setGetPrefix(value: () => String): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
       
@@ -135,7 +137,8 @@ object identifier {
       __obj.asInstanceOf[IUuid]
     }
     
-    extension [Self <: IUuid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUuid] (val x: Self) extends AnyVal {
       
       inline def setGetId(value: () => Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       

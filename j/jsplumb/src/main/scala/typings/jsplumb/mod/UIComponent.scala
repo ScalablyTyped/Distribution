@@ -27,7 +27,8 @@ object UIComponent {
     __obj.asInstanceOf[UIComponent]
   }
   
-  extension [Self <: UIComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIComponent] (val x: Self) extends AnyVal {
     
     inline def setGetParameter(value: String => Any): Self = StObject.set(x, "getParameter", js.Any.fromFunction1(value))
     

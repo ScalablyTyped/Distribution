@@ -20,7 +20,8 @@ object AllColumnsAsteriskNode {
     __obj.asInstanceOf[AllColumnsAsteriskNode]
   }
   
-  extension [Self <: AllColumnsAsteriskNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllColumnsAsteriskNode] (val x: Self) extends AnyVal {
     
     inline def setType(value: all_columns_asterisk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

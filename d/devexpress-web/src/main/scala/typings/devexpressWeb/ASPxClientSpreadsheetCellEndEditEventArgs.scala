@@ -32,7 +32,8 @@ object ASPxClientSpreadsheetCellEndEditEventArgs {
     __obj.asInstanceOf[ASPxClientSpreadsheetCellEndEditEventArgs]
   }
   
-  extension [Self <: ASPxClientSpreadsheetCellEndEditEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSpreadsheetCellEndEditEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEditorText(value: String): Self = StObject.set(x, "editorText", value.asInstanceOf[js.Any])
   }

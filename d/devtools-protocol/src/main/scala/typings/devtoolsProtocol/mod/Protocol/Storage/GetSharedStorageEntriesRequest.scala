@@ -15,7 +15,8 @@ object GetSharedStorageEntriesRequest {
     __obj.asInstanceOf[GetSharedStorageEntriesRequest]
   }
   
-  extension [Self <: GetSharedStorageEntriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSharedStorageEntriesRequest] (val x: Self) extends AnyVal {
     
     inline def setOwnerOrigin(value: String): Self = StObject.set(x, "ownerOrigin", value.asInstanceOf[js.Any])
   }

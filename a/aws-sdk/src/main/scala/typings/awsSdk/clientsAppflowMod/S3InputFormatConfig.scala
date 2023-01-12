@@ -18,7 +18,8 @@ object S3InputFormatConfig {
     __obj.asInstanceOf[S3InputFormatConfig]
   }
   
-  extension [Self <: S3InputFormatConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3InputFormatConfig] (val x: Self) extends AnyVal {
     
     inline def setS3InputFileType(value: S3InputFileType): Self = StObject.set(x, "s3InputFileType", value.asInstanceOf[js.Any])
     

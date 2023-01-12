@@ -28,7 +28,8 @@ object Prompt {
     __obj.asInstanceOf[Prompt]
   }
   
-  extension [Self <: Prompt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Prompt] (val x: Self) extends AnyVal {
     
     inline def setMaxAttempts(value: PromptMaxAttempts): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
     

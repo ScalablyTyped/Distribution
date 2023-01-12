@@ -113,7 +113,8 @@ object mod {
       __obj.asInstanceOf[Action[T]]
     }
     
-    extension [Self <: Action[?], T](x: Self & Action[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -221,7 +222,8 @@ object mod {
       __obj.asInstanceOf[MiddlewareAPI[D, S]]
     }
     
-    extension [Self <: MiddlewareAPI[?, ?], D /* <: Dispatch[AnyAction] */, S](x: Self & (MiddlewareAPI[D, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiddlewareAPI[?, ?], D /* <: Dispatch[AnyAction] */, S] (val x: Self & (MiddlewareAPI[D, S])) extends AnyVal {
       
       inline def setDispatch(value: D): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       
@@ -254,7 +256,8 @@ object mod {
       __obj.asInstanceOf[Observer[T]]
     }
     
-    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       inline def setNext(value: /* value */ T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       
@@ -443,7 +446,8 @@ object mod {
         __obj.asInstanceOf[SymbolConstructor]
       }
       
-      extension [Self <: SymbolConstructor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
         
         inline def setObservable(value: js.Symbol): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
       }

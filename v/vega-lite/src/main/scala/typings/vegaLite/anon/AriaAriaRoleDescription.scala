@@ -21,7 +21,8 @@ object AriaAriaRoleDescription {
     __obj.asInstanceOf[AriaAriaRoleDescription]
   }
   
-  extension [Self <: AriaAriaRoleDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AriaAriaRoleDescription] (val x: Self) extends AnyVal {
     
     inline def setAria(value: `true` | SignalRef): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     

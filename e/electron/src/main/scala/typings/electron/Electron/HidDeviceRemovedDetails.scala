@@ -17,7 +17,8 @@ object HidDeviceRemovedDetails {
     __obj.asInstanceOf[HidDeviceRemovedDetails]
   }
   
-  extension [Self <: HidDeviceRemovedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HidDeviceRemovedDetails] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: js.Array[HIDDevice]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     

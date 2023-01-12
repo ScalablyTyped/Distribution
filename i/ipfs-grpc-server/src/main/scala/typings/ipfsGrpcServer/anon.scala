@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Deserialize]
     }
     
-    extension [Self <: Deserialize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deserialize] (val x: Self) extends AnyVal {
       
       inline def setDeserialize(value: js.typedarray.Uint8Array => js.Object): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Errorcodestringundefined]
     }
     
-    extension [Self <: Errorcodestringundefined](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errorcodestringundefined] (val x: Self) extends AnyVal {
       
       inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Mtime]
     }
     
-    extension [Self <: Mtime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mtime] (val x: Self) extends AnyVal {
       
       inline def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       

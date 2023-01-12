@@ -273,7 +273,8 @@ object PlotHistogramDataLabelsOptions {
     __obj.asInstanceOf[PlotHistogramDataLabelsOptions]
   }
   
-  extension [Self <: PlotHistogramDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHistogramDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

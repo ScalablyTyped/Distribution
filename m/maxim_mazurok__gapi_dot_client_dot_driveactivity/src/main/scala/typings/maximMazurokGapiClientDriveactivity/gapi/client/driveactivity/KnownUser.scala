@@ -19,7 +19,8 @@ object KnownUser {
     __obj.asInstanceOf[KnownUser]
   }
   
-  extension [Self <: KnownUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownUser] (val x: Self) extends AnyVal {
     
     inline def setIsCurrentUser(value: Boolean): Self = StObject.set(x, "isCurrentUser", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PickImplloadingPartialPic {
     __obj.asInstanceOf[PickImplloadingPartialPic]
   }
   
-  extension [Self <: PickImplloadingPartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplloadingPartialPic] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

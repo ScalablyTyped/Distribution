@@ -29,7 +29,8 @@ object libSwitchIndexDotnativeMod {
       __obj.asInstanceOf[AntmSwitchProps]
     }
     
-    extension [Self <: AntmSwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AntmSwitchProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

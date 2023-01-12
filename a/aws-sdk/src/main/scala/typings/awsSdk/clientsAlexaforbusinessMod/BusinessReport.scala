@@ -38,7 +38,8 @@ object BusinessReport {
     __obj.asInstanceOf[BusinessReport]
   }
   
-  extension [Self <: BusinessReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessReport] (val x: Self) extends AnyVal {
     
     inline def setDeliveryTime(value: js.Date): Self = StObject.set(x, "DeliveryTime", value.asInstanceOf[js.Any])
     

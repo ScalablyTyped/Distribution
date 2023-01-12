@@ -27,7 +27,8 @@ object DepthRendererSceneComponent {
     __obj.asInstanceOf[DepthRendererSceneComponent]
   }
   
-  extension [Self <: DepthRendererSceneComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthRendererSceneComponent] (val x: Self) extends AnyVal {
     
     inline def set_gatherActiveCameraRenderTargets(value: Any): Self = StObject.set(x, "_gatherActiveCameraRenderTargets", value.asInstanceOf[js.Any])
     

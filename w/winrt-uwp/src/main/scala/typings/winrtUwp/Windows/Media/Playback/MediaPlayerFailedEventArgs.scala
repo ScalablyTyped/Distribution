@@ -24,7 +24,8 @@ object MediaPlayerFailedEventArgs {
     __obj.asInstanceOf[MediaPlayerFailedEventArgs]
   }
   
-  extension [Self <: MediaPlayerFailedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPlayerFailedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setError(value: MediaPlayerError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

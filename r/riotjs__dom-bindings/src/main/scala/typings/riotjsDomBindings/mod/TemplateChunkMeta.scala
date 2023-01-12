@@ -21,7 +21,8 @@ object TemplateChunkMeta {
     __obj.asInstanceOf[TemplateChunkMeta]
   }
   
-  extension [Self <: TemplateChunkMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateChunkMeta] (val x: Self) extends AnyVal {
     
     inline def setAvoidDOMInjection(value: Boolean): Self = StObject.set(x, "avoidDOMInjection", value.asInstanceOf[js.Any])
     

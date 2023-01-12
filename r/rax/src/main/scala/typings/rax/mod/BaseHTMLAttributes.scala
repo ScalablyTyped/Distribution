@@ -19,7 +19,8 @@ object BaseHTMLAttributes {
     __obj.asInstanceOf[BaseHTMLAttributes[T]]
   }
   
-  extension [Self <: BaseHTMLAttributes[?], T](x: Self & BaseHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseHTMLAttributes[?], T] (val x: Self & BaseHTMLAttributes[T]) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

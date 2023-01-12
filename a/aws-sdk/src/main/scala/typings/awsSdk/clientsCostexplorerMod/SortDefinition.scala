@@ -23,7 +23,8 @@ object SortDefinition {
     __obj.asInstanceOf[SortDefinition]
   }
   
-  extension [Self <: SortDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortDefinition] (val x: Self) extends AnyVal {
     
     inline def setKey(value: SortDefinitionKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

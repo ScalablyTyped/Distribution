@@ -25,7 +25,8 @@ object TestScriptMetadata {
     __obj.asInstanceOf[TestScriptMetadata]
   }
   
-  extension [Self <: TestScriptMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestScriptMetadata] (val x: Self) extends AnyVal {
     
     inline def setCapability(value: js.Array[TestScriptMetadataCapability]): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
     

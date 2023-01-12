@@ -41,7 +41,8 @@ object ChartLegendFormatLoadOptions {
     __obj.asInstanceOf[ChartLegendFormatLoadOptions]
   }
   
-  extension [Self <: ChartLegendFormatLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartLegendFormatLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

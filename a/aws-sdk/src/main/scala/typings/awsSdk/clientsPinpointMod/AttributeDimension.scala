@@ -23,7 +23,8 @@ object AttributeDimension {
     __obj.asInstanceOf[AttributeDimension]
   }
   
-  extension [Self <: AttributeDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeDimension] (val x: Self) extends AnyVal {
     
     inline def setAttributeType(value: AttributeType): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     

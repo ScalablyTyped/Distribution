@@ -55,7 +55,8 @@ object XSchema {
     __obj.asInstanceOf[XSchema]
   }
   
-  extension [Self <: XSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSchema] (val x: Self) extends AnyVal {
     
     inline def setReadComponent(value: XSchemaHandler => Unit): Self = StObject.set(x, "readComponent", js.Any.fromFunction1(value))
     

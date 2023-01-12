@@ -28,7 +28,8 @@ object GetPredictiveScalingForecastAnswer {
     __obj.asInstanceOf[GetPredictiveScalingForecastAnswer]
   }
   
-  extension [Self <: GetPredictiveScalingForecastAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPredictiveScalingForecastAnswer] (val x: Self) extends AnyVal {
     
     inline def setCapacityForecast(value: CapacityForecast): Self = StObject.set(x, "CapacityForecast", value.asInstanceOf[js.Any])
     

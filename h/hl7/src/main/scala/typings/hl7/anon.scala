@@ -99,7 +99,8 @@ object anon {
       __obj.asInstanceOf[PID51]
     }
     
-    extension [Self <: PID51](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PID51] (val x: Self) extends AnyVal {
       
       inline def setPIDDot5Dot1(value: String): Self = StObject.set(x, "PID.5.1", value.asInstanceOf[js.Any])
       

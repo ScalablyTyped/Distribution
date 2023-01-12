@@ -22,7 +22,8 @@ object ScheduleJobOptions {
     __obj.asInstanceOf[ScheduleJobOptions]
   }
   
-  extension [Self <: ScheduleJobOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleJobOptions] (val x: Self) extends AnyVal {
     
     inline def setDependencies(value: (Job[JsonValue, JsonValue, JsonValue]) | (js.Array[Job[JsonValue, JsonValue, JsonValue]])): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     

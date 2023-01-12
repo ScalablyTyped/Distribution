@@ -24,7 +24,8 @@ object IsStartIncluded {
     __obj.asInstanceOf[IsStartIncluded]
   }
   
-  extension [Self <: IsStartIncluded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsStartIncluded] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

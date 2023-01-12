@@ -31,7 +31,8 @@ object FileMatch {
     __obj.asInstanceOf[FileMatch]
   }
   
-  extension [Self <: FileMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileMatch] (val x: Self) extends AnyVal {
     
     inline def setFileMatch(value: js.Array[String]): Self = StObject.set(x, "fileMatch", value.asInstanceOf[js.Any])
     

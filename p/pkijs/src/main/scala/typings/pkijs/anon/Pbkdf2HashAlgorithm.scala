@@ -29,7 +29,8 @@ object Pbkdf2HashAlgorithm {
     __obj.asInstanceOf[Pbkdf2HashAlgorithm]
   }
   
-  extension [Self <: Pbkdf2HashAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pbkdf2HashAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setHmacHashAlgorithm(value: String): Self = StObject.set(x, "hmacHashAlgorithm", value.asInstanceOf[js.Any])
     

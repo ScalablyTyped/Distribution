@@ -240,7 +240,8 @@ object TypeDocOptionMap {
     __obj.asInstanceOf[TypeDocOptionMap]
   }
   
-  extension [Self <: TypeDocOptionMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeDocOptionMap] (val x: Self) extends AnyVal {
     
     inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     

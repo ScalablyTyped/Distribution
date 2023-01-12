@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xss-filters"
-version := "0.0-unknown-dt-20221103Z-f8c345"
+version := "0.0-unknown-dt-20221103Z-e99c42"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -19,7 +19,8 @@ object OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails {
     __obj.asInstanceOf[OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails]
   }
   
-  extension [Self <: OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails] (val x: Self) extends AnyVal {
     
     inline def setCarrierPhoneNumber(value: String): Self = StObject.set(x, "carrierPhoneNumber", value.asInstanceOf[js.Any])
     

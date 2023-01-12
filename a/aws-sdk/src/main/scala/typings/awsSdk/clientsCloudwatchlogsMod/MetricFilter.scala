@@ -35,7 +35,8 @@ object MetricFilter {
     __obj.asInstanceOf[MetricFilter]
   }
   
-  extension [Self <: MetricFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricFilter] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

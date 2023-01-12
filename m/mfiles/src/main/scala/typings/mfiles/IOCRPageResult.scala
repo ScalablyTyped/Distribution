@@ -17,7 +17,8 @@ object IOCRPageResult {
     __obj.asInstanceOf[IOCRPageResult]
   }
   
-  extension [Self <: IOCRPageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOCRPageResult] (val x: Self) extends AnyVal {
     
     inline def setOCRZoneResults(value: IOCRZoneResults): Self = StObject.set(x, "OCRZoneResults", value.asInstanceOf[js.Any])
     

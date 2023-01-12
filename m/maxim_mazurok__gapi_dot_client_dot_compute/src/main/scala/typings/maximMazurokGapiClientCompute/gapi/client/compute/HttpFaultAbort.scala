@@ -22,7 +22,8 @@ object HttpFaultAbort {
     __obj.asInstanceOf[HttpFaultAbort]
   }
   
-  extension [Self <: HttpFaultAbort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpFaultAbort] (val x: Self) extends AnyVal {
     
     inline def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object distCoreJsonPatchMod {
       __obj.asInstanceOf[IJsonPatch]
     }
     
-    extension [Self <: IJsonPatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJsonPatch] (val x: Self) extends AnyVal {
       
       inline def setOp(value: replace | add | remove): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object distCoreJsonPatchMod {
       __obj.asInstanceOf[IReversibleJsonPatch]
     }
     
-    extension [Self <: IReversibleJsonPatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReversibleJsonPatch] (val x: Self) extends AnyVal {
       
       inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     }

@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[Action[Payload]]
     }
     
-    extension [Self <: Action[?], Payload](x: Self & Action[Payload]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action[?], Payload] (val x: Self & Action[Payload]) extends AnyVal {
       
       inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[BaseAction]
     }
     
-    extension [Self <: BaseAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -106,7 +108,8 @@ object mod {
       __obj.asInstanceOf[MetaAction[Payload, Meta]]
     }
     
-    extension [Self <: MetaAction[?, ?], Payload, Meta](x: Self & (MetaAction[Payload, Meta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaAction[?, ?], Payload, Meta] (val x: Self & (MetaAction[Payload, Meta])) extends AnyVal {
       
       inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }

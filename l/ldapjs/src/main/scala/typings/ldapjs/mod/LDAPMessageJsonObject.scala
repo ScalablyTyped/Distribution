@@ -22,7 +22,8 @@ object LDAPMessageJsonObject {
     __obj.asInstanceOf[LDAPMessageJsonObject]
   }
   
-  extension [Self <: LDAPMessageJsonObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LDAPMessageJsonObject] (val x: Self) extends AnyVal {
     
     inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object TapScript {
     __obj.asInstanceOf[TapScript]
   }
   
-  extension [Self <: TapScript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TapScript] (val x: Self) extends AnyVal {
     
     inline def setLeafVersion(value: Double): Self = StObject.set(x, "leafVersion", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object People {
       __obj.asInstanceOf[HeadPose]
     }
     
-    extension [Self <: HeadPose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadPose] (val x: Self) extends AnyVal {
       
       inline def setForwardDirection(value: Any): Self = StObject.set(x, "forwardDirection", value.asInstanceOf[js.Any])
       

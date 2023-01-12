@@ -38,7 +38,8 @@ object FieldLevelEncryptionProfileSummary {
     __obj.asInstanceOf[FieldLevelEncryptionProfileSummary]
   }
   
-  extension [Self <: FieldLevelEncryptionProfileSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldLevelEncryptionProfileSummary] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

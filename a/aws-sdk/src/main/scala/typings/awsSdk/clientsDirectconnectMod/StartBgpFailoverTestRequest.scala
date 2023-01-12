@@ -28,7 +28,8 @@ object StartBgpFailoverTestRequest {
     __obj.asInstanceOf[StartBgpFailoverTestRequest]
   }
   
-  extension [Self <: StartBgpFailoverTestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartBgpFailoverTestRequest] (val x: Self) extends AnyVal {
     
     inline def setBgpPeers(value: BGPPeerIdList): Self = StObject.set(x, "bgpPeers", value.asInstanceOf[js.Any])
     

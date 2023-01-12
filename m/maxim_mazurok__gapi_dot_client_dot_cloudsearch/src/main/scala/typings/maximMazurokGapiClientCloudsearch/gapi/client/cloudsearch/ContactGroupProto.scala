@@ -25,7 +25,8 @@ object ContactGroupProto {
     __obj.asInstanceOf[ContactGroupProto]
   }
   
-  extension [Self <: ContactGroupProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactGroupProto] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

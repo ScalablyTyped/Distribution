@@ -33,7 +33,8 @@ object AddObjectInput {
     __obj.asInstanceOf[AddObjectInput]
   }
   
-  extension [Self <: AddObjectInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddObjectInput] (val x: Self) extends AnyVal {
     
     inline def setETag(value: ETagString): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     

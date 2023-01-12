@@ -15,7 +15,8 @@ object EndSemicolon {
     __obj.asInstanceOf[EndSemicolon]
   }
   
-  extension [Self <: EndSemicolon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndSemicolon] (val x: Self) extends AnyVal {
     
     inline def setEndSemicolon(value: Boolean): Self = StObject.set(x, "endSemicolon", value.asInstanceOf[js.Any])
     

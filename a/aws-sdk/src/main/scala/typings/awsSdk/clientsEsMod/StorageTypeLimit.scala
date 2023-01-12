@@ -23,7 +23,8 @@ object StorageTypeLimit {
     __obj.asInstanceOf[StorageTypeLimit]
   }
   
-  extension [Self <: StorageTypeLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageTypeLimit] (val x: Self) extends AnyVal {
     
     inline def setLimitName(value: LimitName): Self = StObject.set(x, "LimitName", value.asInstanceOf[js.Any])
     

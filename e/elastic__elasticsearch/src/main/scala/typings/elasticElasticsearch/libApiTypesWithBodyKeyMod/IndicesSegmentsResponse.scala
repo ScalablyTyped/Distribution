@@ -18,7 +18,8 @@ object IndicesSegmentsResponse {
     __obj.asInstanceOf[IndicesSegmentsResponse]
   }
   
-  extension [Self <: IndicesSegmentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSegmentsResponse] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: Record[String, IndicesSegmentsIndexSegment]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

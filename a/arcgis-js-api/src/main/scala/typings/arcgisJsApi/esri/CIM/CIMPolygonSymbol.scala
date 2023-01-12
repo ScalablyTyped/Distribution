@@ -20,7 +20,8 @@ object CIMPolygonSymbol {
     __obj.asInstanceOf[CIMPolygonSymbol]
   }
   
-  extension [Self <: CIMPolygonSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMPolygonSymbol] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPolygonSymbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

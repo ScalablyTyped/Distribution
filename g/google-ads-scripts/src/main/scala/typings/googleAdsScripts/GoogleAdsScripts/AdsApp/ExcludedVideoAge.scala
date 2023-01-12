@@ -39,7 +39,8 @@ object ExcludedVideoAge {
     __obj.asInstanceOf[ExcludedVideoAge]
   }
   
-  extension [Self <: ExcludedVideoAge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedVideoAge] (val x: Self) extends AnyVal {
     
     inline def setGetAgeRange(value: () => String): Self = StObject.set(x, "getAgeRange", js.Any.fromFunction0(value))
     

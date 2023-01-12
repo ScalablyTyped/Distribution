@@ -23,7 +23,8 @@ object ListLedgersResponse {
     __obj.asInstanceOf[ListLedgersResponse]
   }
   
-  extension [Self <: ListLedgersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLedgersResponse] (val x: Self) extends AnyVal {
     
     inline def setLedgers(value: LedgerList): Self = StObject.set(x, "Ledgers", value.asInstanceOf[js.Any])
     

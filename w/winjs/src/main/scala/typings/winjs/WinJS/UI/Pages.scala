@@ -73,7 +73,8 @@ object Pages {
       __obj.asInstanceOf[IPageControlMembers]
     }
     
-    extension [Self <: IPageControlMembers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageControlMembers] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* err */ Any => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       

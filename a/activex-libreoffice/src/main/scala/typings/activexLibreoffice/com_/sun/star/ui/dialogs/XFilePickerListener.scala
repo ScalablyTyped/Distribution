@@ -69,7 +69,8 @@ object XFilePickerListener {
     __obj.asInstanceOf[XFilePickerListener]
   }
   
-  extension [Self <: XFilePickerListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFilePickerListener] (val x: Self) extends AnyVal {
     
     inline def setControlStateChanged(value: FilePickerEvent => Unit): Self = StObject.set(x, "controlStateChanged", js.Any.fromFunction1(value))
     

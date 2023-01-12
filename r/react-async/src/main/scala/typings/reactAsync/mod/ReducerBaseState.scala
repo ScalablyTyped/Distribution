@@ -20,7 +20,8 @@ object ReducerBaseState {
     __obj.asInstanceOf[ReducerBaseState[T]]
   }
   
-  extension [Self <: ReducerBaseState[?], T](x: Self & ReducerBaseState[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReducerBaseState[?], T] (val x: Self & ReducerBaseState[T]) extends AnyVal {
     
     inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     

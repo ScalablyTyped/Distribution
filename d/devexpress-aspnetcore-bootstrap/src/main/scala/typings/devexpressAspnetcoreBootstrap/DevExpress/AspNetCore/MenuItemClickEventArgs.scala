@@ -27,7 +27,8 @@ object MenuItemClickEventArgs {
     __obj.asInstanceOf[MenuItemClickEventArgs]
   }
   
-  extension [Self <: MenuItemClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItemClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ViewContactEvent {
     __obj.asInstanceOf[ViewContactEvent]
   }
   
-  extension [Self <: ViewContactEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewContactEvent] (val x: Self) extends AnyVal {
     
     inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
   }

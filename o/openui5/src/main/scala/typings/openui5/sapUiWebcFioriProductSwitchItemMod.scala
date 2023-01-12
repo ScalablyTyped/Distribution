@@ -456,7 +456,8 @@ object sapUiWebcFioriProductSwitchItemMod {
       __obj.asInstanceOf[ProductSwitchItemSettings]
     }
     
-    extension [Self <: ProductSwitchItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductSwitchItemSettings] (val x: Self) extends AnyVal {
       
       inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
       

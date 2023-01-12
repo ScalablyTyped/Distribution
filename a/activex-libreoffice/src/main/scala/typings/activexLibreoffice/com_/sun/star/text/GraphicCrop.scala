@@ -33,7 +33,8 @@ object GraphicCrop {
     __obj.asInstanceOf[GraphicCrop]
   }
   
-  extension [Self <: GraphicCrop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicCrop] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "Bottom", value.asInstanceOf[js.Any])
     

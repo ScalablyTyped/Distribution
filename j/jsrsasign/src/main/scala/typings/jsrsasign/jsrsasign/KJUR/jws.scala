@@ -116,7 +116,8 @@ object jws {
         __obj.asInstanceOf[JWSResult]
       }
       
-      extension [Self <: JWSResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JWSResult] (val x: Self) extends AnyVal {
         
         inline def setHeaderObj(value: Typ): Self = StObject.set(x, "headerObj", value.asInstanceOf[js.Any])
         
@@ -157,7 +158,8 @@ object jws {
         __obj.asInstanceOf[JsonWebKey]
       }
       
-      extension [Self <: JsonWebKey](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JsonWebKey] (val x: Self) extends AnyVal {
         
         inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
         

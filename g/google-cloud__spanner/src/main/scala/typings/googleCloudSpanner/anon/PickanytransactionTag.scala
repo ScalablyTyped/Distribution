@@ -16,7 +16,8 @@ object PickanytransactionTag {
     __obj.asInstanceOf[PickanytransactionTag]
   }
   
-  extension [Self <: PickanytransactionTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickanytransactionTag] (val x: Self) extends AnyVal {
     
     inline def setTransactionTag(value: Any): Self = StObject.set(x, "transactionTag", value.asInstanceOf[js.Any])
     

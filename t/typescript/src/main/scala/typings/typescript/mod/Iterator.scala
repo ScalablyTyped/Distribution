@@ -18,7 +18,8 @@ object Iterator {
     __obj.asInstanceOf[Iterator[T]]
   }
   
-  extension [Self <: Iterator[?], T](x: Self & Iterator[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Iterator[?], T] (val x: Self & Iterator[T]) extends AnyVal {
     
     inline def setNext(value: () => Done[T] | Value): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
   }

@@ -18,7 +18,8 @@ object ScalarCrlRequest {
     __obj.asInstanceOf[ScalarCrlRequest]
   }
   
-  extension [Self <: ScalarCrlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalarCrlRequest] (val x: Self) extends AnyVal {
     
     inline def setCrlId(value: Uuid): Self = StObject.set(x, "crlId", value.asInstanceOf[js.Any])
   }

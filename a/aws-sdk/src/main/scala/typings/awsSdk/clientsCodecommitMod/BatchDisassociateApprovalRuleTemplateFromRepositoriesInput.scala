@@ -23,7 +23,8 @@ object BatchDisassociateApprovalRuleTemplateFromRepositoriesInput {
     __obj.asInstanceOf[BatchDisassociateApprovalRuleTemplateFromRepositoriesInput]
   }
   
-  extension [Self <: BatchDisassociateApprovalRuleTemplateFromRepositoriesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDisassociateApprovalRuleTemplateFromRepositoriesInput] (val x: Self) extends AnyVal {
     
     inline def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "approvalRuleTemplateName", value.asInstanceOf[js.Any])
     

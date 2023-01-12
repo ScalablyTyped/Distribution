@@ -17,7 +17,8 @@ object QRDecomposition {
     __obj.asInstanceOf[QRDecomposition]
   }
   
-  extension [Self <: QRDecomposition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRDecomposition] (val x: Self) extends AnyVal {
     
     inline def setQ(value: MathCollection): Self = StObject.set(x, "Q", value.asInstanceOf[js.Any])
     

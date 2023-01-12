@@ -16,7 +16,8 @@ object GoogleApiOAuth2TokenSessionState {
     __obj.asInstanceOf[GoogleApiOAuth2TokenSessionState]
   }
   
-  extension [Self <: GoogleApiOAuth2TokenSessionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiOAuth2TokenSessionState] (val x: Self) extends AnyVal {
     
     inline def setExtraQueryParams(value: Authuser): Self = StObject.set(x, "extraQueryParams", value.asInstanceOf[js.Any])
   }

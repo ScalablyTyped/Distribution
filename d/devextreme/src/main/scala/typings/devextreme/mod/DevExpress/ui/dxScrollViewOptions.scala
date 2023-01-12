@@ -47,7 +47,8 @@ object dxScrollViewOptions {
     __obj.asInstanceOf[dxScrollViewOptions]
   }
   
-  extension [Self <: dxScrollViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxScrollViewOptions] (val x: Self) extends AnyVal {
     
     inline def setOnPullDown(value: /* e */ PullDownEvent => Unit): Self = StObject.set(x, "onPullDown", js.Any.fromFunction1(value))
     

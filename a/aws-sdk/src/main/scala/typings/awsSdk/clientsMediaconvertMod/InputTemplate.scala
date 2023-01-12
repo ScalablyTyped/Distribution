@@ -103,7 +103,8 @@ object InputTemplate {
     __obj.asInstanceOf[InputTemplate]
   }
   
-  extension [Self <: InputTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputTemplate] (val x: Self) extends AnyVal {
     
     inline def setAudioSelectorGroups(value: mapOfAudioSelectorGroup): Self = StObject.set(x, "AudioSelectorGroups", value.asInstanceOf[js.Any])
     

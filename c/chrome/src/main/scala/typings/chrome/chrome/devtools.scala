@@ -35,7 +35,8 @@ object devtools {
         __obj.asInstanceOf[EvalOptions]
       }
       
-      extension [Self <: EvalOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EvalOptions] (val x: Self) extends AnyVal {
         
         inline def setContextSecurityOrigin(value: String): Self = StObject.set(x, "contextSecurityOrigin", value.asInstanceOf[js.Any])
         
@@ -85,7 +86,8 @@ object devtools {
         __obj.asInstanceOf[EvaluationExceptionInfo]
       }
       
-      extension [Self <: EvaluationExceptionInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EvaluationExceptionInfo] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -128,7 +130,8 @@ object devtools {
         __obj.asInstanceOf[ReloadOptions]
       }
       
-      extension [Self <: ReloadOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReloadOptions] (val x: Self) extends AnyVal {
         
         inline def setIgnoreCache(value: Boolean): Self = StObject.set(x, "ignoreCache", value.asInstanceOf[js.Any])
         
@@ -217,7 +220,8 @@ object devtools {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setGetContent(value: js.Function2[/* content */ String, /* encoding */ String, Unit] => Unit): Self = StObject.set(x, "getContent", js.Any.fromFunction1(value))
       }
@@ -314,7 +318,8 @@ object devtools {
         __obj.asInstanceOf[ExtensionPanel]
       }
       
-      extension [Self <: ExtensionPanel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtensionPanel] (val x: Self) extends AnyVal {
         
         inline def setCreateStatusBarButton(value: (String, String, Boolean) => Button): Self = StObject.set(x, "createStatusBarButton", js.Any.fromFunction3(value))
         

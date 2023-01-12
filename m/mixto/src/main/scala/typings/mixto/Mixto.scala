@@ -19,7 +19,8 @@ object Mixto {
       __obj.asInstanceOf[IMixinStatic]
     }
     
-    extension [Self <: IMixinStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMixinStatic] (val x: Self) extends AnyVal {
       
       inline def setExtend(value: Any => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
       

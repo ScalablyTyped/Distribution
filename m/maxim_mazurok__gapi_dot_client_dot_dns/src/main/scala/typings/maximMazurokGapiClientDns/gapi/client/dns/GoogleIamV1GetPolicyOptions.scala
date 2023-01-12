@@ -22,7 +22,8 @@ object GoogleIamV1GetPolicyOptions {
     __obj.asInstanceOf[GoogleIamV1GetPolicyOptions]
   }
   
-  extension [Self <: GoogleIamV1GetPolicyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIamV1GetPolicyOptions] (val x: Self) extends AnyVal {
     
     inline def setRequestedPolicyVersion(value: Double): Self = StObject.set(x, "requestedPolicyVersion", value.asInstanceOf[js.Any])
     

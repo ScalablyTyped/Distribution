@@ -19,7 +19,8 @@ object HttpSentEvent {
     __obj.asInstanceOf[HttpSentEvent]
   }
   
-  extension [Self <: HttpSentEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpSentEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: Sent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

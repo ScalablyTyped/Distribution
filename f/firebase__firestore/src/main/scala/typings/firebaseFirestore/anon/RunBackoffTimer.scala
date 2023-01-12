@@ -15,7 +15,8 @@ object RunBackoffTimer {
     __obj.asInstanceOf[RunBackoffTimer]
   }
   
-  extension [Self <: RunBackoffTimer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunBackoffTimer] (val x: Self) extends AnyVal {
     
     inline def setRunBackoffTimer(value: Boolean): Self = StObject.set(x, "runBackoffTimer", value.asInstanceOf[js.Any])
   }

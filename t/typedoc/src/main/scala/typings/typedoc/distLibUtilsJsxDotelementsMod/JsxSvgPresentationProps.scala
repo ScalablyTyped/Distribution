@@ -199,7 +199,8 @@ object JsxSvgPresentationProps {
     __obj.asInstanceOf[JsxSvgPresentationProps]
   }
   
-  extension [Self <: JsxSvgPresentationProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxSvgPresentationProps] (val x: Self) extends AnyVal {
     
     inline def `setAlignment-baseline`(
       value: baseline | `text-bottom` | `text-before-edge` | middle | central | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | top | center | bottom

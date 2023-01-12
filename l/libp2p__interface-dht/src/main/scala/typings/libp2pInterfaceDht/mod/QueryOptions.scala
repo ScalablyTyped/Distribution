@@ -18,7 +18,8 @@ object QueryOptions {
     __obj.asInstanceOf[QueryOptions]
   }
   
-  extension [Self <: QueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
     
     inline def setQueryFuncTimeout(value: Double): Self = StObject.set(x, "queryFuncTimeout", value.asInstanceOf[js.Any])
     

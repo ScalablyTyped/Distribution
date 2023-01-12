@@ -18,7 +18,8 @@ object StatusRequeryResponse {
     __obj.asInstanceOf[StatusRequeryResponse]
   }
   
-  extension [Self <: StatusRequeryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusRequeryResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Acctalias): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

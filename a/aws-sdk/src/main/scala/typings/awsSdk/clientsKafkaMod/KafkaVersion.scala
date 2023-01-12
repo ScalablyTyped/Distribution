@@ -17,7 +17,8 @@ object KafkaVersion {
     __obj.asInstanceOf[KafkaVersion]
   }
   
-  extension [Self <: KafkaVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaVersion] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: KafkaVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

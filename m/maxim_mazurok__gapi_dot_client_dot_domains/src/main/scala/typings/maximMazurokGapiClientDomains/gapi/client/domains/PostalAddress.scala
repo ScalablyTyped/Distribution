@@ -75,7 +75,8 @@ object PostalAddress {
     __obj.asInstanceOf[PostalAddress]
   }
   
-  extension [Self <: PostalAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostalAddress] (val x: Self) extends AnyVal {
     
     inline def setAddressLines(value: js.Array[String]): Self = StObject.set(x, "addressLines", value.asInstanceOf[js.Any])
     

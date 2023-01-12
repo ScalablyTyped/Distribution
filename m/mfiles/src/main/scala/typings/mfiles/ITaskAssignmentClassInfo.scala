@@ -23,7 +23,8 @@ object ITaskAssignmentClassInfo {
     __obj.asInstanceOf[ITaskAssignmentClassInfo]
   }
   
-  extension [Self <: ITaskAssignmentClassInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITaskAssignmentClassInfo] (val x: Self) extends AnyVal {
     
     inline def setAnyAssigneeCompletes(value: Boolean): Self = StObject.set(x, "AnyAssigneeCompletes", value.asInstanceOf[js.Any])
     

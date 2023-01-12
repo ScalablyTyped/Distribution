@@ -20,7 +20,8 @@ object ExpressionStatus {
     __obj.asInstanceOf[ExpressionStatus]
   }
   
-  extension [Self <: ExpressionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionStatus] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Expression): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

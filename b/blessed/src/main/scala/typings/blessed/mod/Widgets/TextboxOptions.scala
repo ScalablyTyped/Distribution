@@ -25,7 +25,8 @@ object TextboxOptions {
     __obj.asInstanceOf[TextboxOptions]
   }
   
-  extension [Self <: TextboxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextboxOptions] (val x: Self) extends AnyVal {
     
     inline def setCensor(value: Boolean): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
     

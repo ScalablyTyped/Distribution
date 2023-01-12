@@ -23,7 +23,8 @@ object IpRoute {
     __obj.asInstanceOf[IpRoute]
   }
   
-  extension [Self <: IpRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpRoute] (val x: Self) extends AnyVal {
     
     inline def setCidrIp(value: CidrIp): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
     

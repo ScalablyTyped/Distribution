@@ -93,7 +93,8 @@ object CommonServerOptions {
     __obj.asInstanceOf[CommonServerOptions]
   }
   
-  extension [Self <: CommonServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonServerOptions] (val x: Self) extends AnyVal {
     
     inline def setCors(value: CorsOptions | Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     

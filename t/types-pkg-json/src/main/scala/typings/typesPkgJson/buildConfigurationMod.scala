@@ -23,7 +23,8 @@ object buildConfigurationMod {
       __obj.asInstanceOf[ESLintConfiguration]
     }
     
-    extension [Self <: ESLintConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ESLintConfiguration] (val x: Self) extends AnyVal {
       
       inline def setEslintConfig(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ESLintConfig */ Any
@@ -47,7 +48,8 @@ object buildConfigurationMod {
       __obj.asInstanceOf[JSPMConfiguration]
     }
     
-    extension [Self <: JSPMConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSPMConfiguration] (val x: Self) extends AnyVal {
       
       inline def setJspm(value: PackageJSON): Self = StObject.set(x, "jspm", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object buildConfigurationMod {
       __obj.asInstanceOf[TypeScriptConfiguration]
     }
     
-    extension [Self <: TypeScriptConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeScriptConfiguration] (val x: Self) extends AnyVal {
       
       inline def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object DictkReads {
     __obj.asInstanceOf[DictkReads]
   }
   
-  extension [Self <: DictkReads](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictkReads] (val x: Self) extends AnyVal {
     
     inline def setReads(value: js.Array[BasicRead]): Self = StObject.set(x, "reads", value.asInstanceOf[js.Any])
     

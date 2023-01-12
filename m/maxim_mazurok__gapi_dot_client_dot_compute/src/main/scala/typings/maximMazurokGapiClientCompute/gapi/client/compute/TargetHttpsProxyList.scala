@@ -35,7 +35,8 @@ object TargetHttpsProxyList {
     __obj.asInstanceOf[TargetHttpsProxyList]
   }
   
-  extension [Self <: TargetHttpsProxyList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetHttpsProxyList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

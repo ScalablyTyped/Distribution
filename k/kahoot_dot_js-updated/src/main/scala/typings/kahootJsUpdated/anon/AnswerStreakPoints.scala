@@ -26,7 +26,8 @@ object AnswerStreakPoints {
     __obj.asInstanceOf[AnswerStreakPoints]
   }
   
-  extension [Self <: AnswerStreakPoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnswerStreakPoints] (val x: Self) extends AnyVal {
     
     inline def setAnswerStreakPoints(value: PreviousStreakBonus): Self = StObject.set(x, "answerStreakPoints", value.asInstanceOf[js.Any])
     

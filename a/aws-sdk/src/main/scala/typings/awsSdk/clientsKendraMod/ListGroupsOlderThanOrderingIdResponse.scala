@@ -23,7 +23,8 @@ object ListGroupsOlderThanOrderingIdResponse {
     __obj.asInstanceOf[ListGroupsOlderThanOrderingIdResponse]
   }
   
-  extension [Self <: ListGroupsOlderThanOrderingIdResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGroupsOlderThanOrderingIdResponse] (val x: Self) extends AnyVal {
     
     inline def setGroupsSummaries(value: ListOfGroupSummaries): Self = StObject.set(x, "GroupsSummaries", value.asInstanceOf[js.Any])
     

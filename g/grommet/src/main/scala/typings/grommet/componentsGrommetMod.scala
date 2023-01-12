@@ -65,7 +65,8 @@ object componentsGrommetMod {
       __obj.asInstanceOf[GrommetProps]
     }
     
-    extension [Self <: GrommetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrommetProps] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

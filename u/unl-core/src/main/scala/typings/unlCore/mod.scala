@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Bounds_): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object mod {
       __obj.asInstanceOf[Bounds_]
     }
     
-    extension [Self <: Bounds_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bounds_] (val x: Self) extends AnyVal {
       
       inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object mod {
       __obj.asInstanceOf[EncodeOptions]
     }
     
-    extension [Self <: EncodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeOptions] (val x: Self) extends AnyVal {
       
       inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
       
@@ -174,7 +177,8 @@ object mod {
       __obj.asInstanceOf[LocationIdWithElevation]
     }
     
-    extension [Self <: LocationIdWithElevation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationIdWithElevation] (val x: Self) extends AnyVal {
       
       inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
       
@@ -211,7 +215,8 @@ object mod {
       __obj.asInstanceOf[Neighbours_]
     }
     
-    extension [Self <: Neighbours_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Neighbours_] (val x: Self) extends AnyVal {
       
       inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
@@ -244,7 +249,8 @@ object mod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
@@ -269,7 +275,8 @@ object mod {
       __obj.asInstanceOf[PointWithElevation]
     }
     
-    extension [Self <: PointWithElevation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointWithElevation] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Bounds_): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -292,7 +299,8 @@ object mod {
       __obj.asInstanceOf[Polyhash]
     }
     
-    extension [Self <: Polyhash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Polyhash] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

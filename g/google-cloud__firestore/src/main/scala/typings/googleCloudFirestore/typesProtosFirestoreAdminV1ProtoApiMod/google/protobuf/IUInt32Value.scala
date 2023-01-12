@@ -17,7 +17,8 @@ object IUInt32Value {
     __obj.asInstanceOf[IUInt32Value]
   }
   
-  extension [Self <: IUInt32Value](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUInt32Value] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

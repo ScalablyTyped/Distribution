@@ -17,7 +17,8 @@ object CodeLensList {
     __obj.asInstanceOf[CodeLensList]
   }
   
-  extension [Self <: CodeLensList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeLensList] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

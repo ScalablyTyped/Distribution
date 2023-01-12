@@ -18,7 +18,8 @@ object ObjectLambdaContentTransformation {
     __obj.asInstanceOf[ObjectLambdaContentTransformation]
   }
   
-  extension [Self <: ObjectLambdaContentTransformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectLambdaContentTransformation] (val x: Self) extends AnyVal {
     
     inline def setAwsLambda(value: AwsLambdaTransformation): Self = StObject.set(x, "AwsLambda", value.asInstanceOf[js.Any])
     

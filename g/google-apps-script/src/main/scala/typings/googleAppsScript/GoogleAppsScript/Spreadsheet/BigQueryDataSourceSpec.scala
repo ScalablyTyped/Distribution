@@ -33,7 +33,8 @@ object BigQueryDataSourceSpec {
     __obj.asInstanceOf[BigQueryDataSourceSpec]
   }
   
-  extension [Self <: BigQueryDataSourceSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigQueryDataSourceSpec] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => DataSourceSpecBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     

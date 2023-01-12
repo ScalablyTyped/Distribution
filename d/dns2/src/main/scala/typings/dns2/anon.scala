@@ -95,7 +95,8 @@ object anon {
       __obj.asInstanceOf[A]
     }
     
-    extension [Self <: A](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: A] (val x: Self) extends AnyVal {
       
       inline def setA(value: `0x01`): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object anon {
       __obj.asInstanceOf[ANY]
     }
     
-    extension [Self <: ANY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ANY] (val x: Self) extends AnyVal {
       
       inline def setANY(value: `0xff`): Self = StObject.set(x, "ANY", value.asInstanceOf[js.Any])
       
@@ -207,7 +209,8 @@ object anon {
       __obj.asInstanceOf[Doh]
     }
     
-    extension [Self <: Doh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Doh] (val x: Self) extends AnyVal {
       
       inline def setDoh(value: Boolean): Self = StObject.set(x, "doh", value.asInstanceOf[js.Any])
       
@@ -238,7 +241,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -259,7 +263,8 @@ object anon {
       __obj.asInstanceOf[Tcp]
     }
     
-    extension [Self <: Tcp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tcp] (val x: Self) extends AnyVal {
       
       inline def setDoh(value: AddressInfo): Self = StObject.set(x, "doh", value.asInstanceOf[js.Any])
       
@@ -293,7 +298,8 @@ object anon {
       __obj.asInstanceOf[TypeofPacket]
     }
     
-    extension [Self <: TypeofPacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofPacket] (val x: Self) extends AnyVal {
       
       inline def setCLASS(value: ANY): Self = StObject.set(x, "CLASS", value.asInstanceOf[js.Any])
       
@@ -318,7 +324,8 @@ object anon {
       __obj.asInstanceOf[Udp]
     }
     
-    extension [Self <: Udp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Udp] (val x: Self) extends AnyVal {
       
       inline def setDoh(value: Double): Self = StObject.set(x, "doh", value.asInstanceOf[js.Any])
       

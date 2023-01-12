@@ -26,7 +26,8 @@ object ContextMenuMouseTrackerEvent {
     __obj.asInstanceOf[ContextMenuMouseTrackerEvent]
   }
   
-  extension [Self <: ContextMenuMouseTrackerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextMenuMouseTrackerEvent] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

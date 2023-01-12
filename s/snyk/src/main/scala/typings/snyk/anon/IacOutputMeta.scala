@@ -31,7 +31,8 @@ object IacOutputMeta {
     __obj.asInstanceOf[IacOutputMeta]
   }
   
-  extension [Self <: IacOutputMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IacOutputMeta] (val x: Self) extends AnyVal {
     
     inline def setIacIgnoredIssuesCount(value: Double): Self = StObject.set(x, "iacIgnoredIssuesCount", value.asInstanceOf[js.Any])
     

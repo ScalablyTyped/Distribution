@@ -18,7 +18,8 @@ object EksInfo {
     __obj.asInstanceOf[EksInfo]
   }
   
-  extension [Self <: EksInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EksInfo] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: KubernetesNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     

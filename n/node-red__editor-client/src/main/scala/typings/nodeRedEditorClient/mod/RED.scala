@@ -261,7 +261,8 @@ object RED {
     __obj.asInstanceOf[RED]
   }
   
-  extension [Self <: RED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RED] (val x: Self) extends AnyVal {
     
     inline def setActionList(value: ActionList): Self = StObject.set(x, "actionList", value.asInstanceOf[js.Any])
     

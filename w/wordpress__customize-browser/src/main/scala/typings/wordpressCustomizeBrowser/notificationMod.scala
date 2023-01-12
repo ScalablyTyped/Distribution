@@ -54,7 +54,8 @@ object notificationMod {
       __obj.asInstanceOf[NotificationParams]
     }
     
-    extension [Self <: NotificationParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationParams] (val x: Self) extends AnyVal {
       
       inline def setContainerClasses(value: String): Self = StObject.set(x, "containerClasses", value.asInstanceOf[js.Any])
       

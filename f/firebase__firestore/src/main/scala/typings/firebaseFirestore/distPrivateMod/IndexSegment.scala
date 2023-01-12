@@ -23,7 +23,8 @@ object IndexSegment {
     __obj.asInstanceOf[IndexSegment]
   }
   
-  extension [Self <: IndexSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexSegment] (val x: Self) extends AnyVal {
     
     inline def setFieldPath(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _FieldPath */ Any

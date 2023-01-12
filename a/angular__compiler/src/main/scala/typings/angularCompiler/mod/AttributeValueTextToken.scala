@@ -21,7 +21,8 @@ object AttributeValueTextToken {
     __obj.asInstanceOf[AttributeValueTextToken]
   }
   
-  extension [Self <: AttributeValueTextToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeValueTextToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: `16`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

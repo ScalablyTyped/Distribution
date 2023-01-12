@@ -15,7 +15,8 @@ object TypeofInteracPresent {
     __obj.asInstanceOf[TypeofInteracPresent]
   }
   
-  extension [Self <: TypeofInteracPresent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofInteracPresent] (val x: Self) extends AnyVal {
     
     inline def setReceipt(value: Any): Self = StObject.set(x, "Receipt", value.asInstanceOf[js.Any])
   }

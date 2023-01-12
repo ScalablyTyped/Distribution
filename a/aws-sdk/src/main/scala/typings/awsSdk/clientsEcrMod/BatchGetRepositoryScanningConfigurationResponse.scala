@@ -23,7 +23,8 @@ object BatchGetRepositoryScanningConfigurationResponse {
     __obj.asInstanceOf[BatchGetRepositoryScanningConfigurationResponse]
   }
   
-  extension [Self <: BatchGetRepositoryScanningConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetRepositoryScanningConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: RepositoryScanningConfigurationFailureList): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

@@ -80,7 +80,8 @@ object cipher {
       __obj.asInstanceOf[Mode]
     }
     
-    extension [Self <: Mode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
       
       inline def setTag(value: ByteStringBuffer): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
@@ -103,7 +104,8 @@ object cipher {
       __obj.asInstanceOf[StartOptions]
     }
     
-    extension [Self <: StartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalData(value: String): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       

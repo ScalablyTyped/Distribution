@@ -205,7 +205,8 @@ object SwipeoutProps {
     __obj.asInstanceOf[SwipeoutProps]
   }
   
-  extension [Self <: SwipeoutProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwipeoutProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

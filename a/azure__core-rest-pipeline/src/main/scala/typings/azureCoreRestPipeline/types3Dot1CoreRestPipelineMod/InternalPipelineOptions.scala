@@ -20,7 +20,8 @@ object InternalPipelineOptions {
     __obj.asInstanceOf[InternalPipelineOptions]
   }
   
-  extension [Self <: InternalPipelineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalPipelineOptions] (val x: Self) extends AnyVal {
     
     inline def setLoggingOptions(value: LogPolicyOptions): Self = StObject.set(x, "loggingOptions", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ContinueToLocationRequest {
     __obj.asInstanceOf[ContinueToLocationRequest]
   }
   
-  extension [Self <: ContinueToLocationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueToLocationRequest] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

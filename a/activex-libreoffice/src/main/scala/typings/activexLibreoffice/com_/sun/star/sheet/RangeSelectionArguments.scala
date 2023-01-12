@@ -34,7 +34,8 @@ object RangeSelectionArguments {
     __obj.asInstanceOf[RangeSelectionArguments]
   }
   
-  extension [Self <: RangeSelectionArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeSelectionArguments] (val x: Self) extends AnyVal {
     
     inline def setCloseOnMouseRelease(value: Boolean): Self = StObject.set(x, "CloseOnMouseRelease", value.asInstanceOf[js.Any])
     

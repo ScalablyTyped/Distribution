@@ -22,7 +22,8 @@ object StoreLocationPlugin {
     __obj.asInstanceOf[StoreLocationPlugin]
   }
   
-  extension [Self <: StoreLocationPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreLocationPlugin] (val x: Self) extends AnyVal {
     
     inline def setCADESCOM_CONTAINER_STORE(value: `100`): Self = StObject.set(x, "CADESCOM_CONTAINER_STORE", value.asInstanceOf[js.Any])
     

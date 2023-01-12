@@ -28,7 +28,8 @@ object EventsConfiguration {
     __obj.asInstanceOf[EventsConfiguration]
   }
   
-  extension [Self <: EventsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: String): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
     

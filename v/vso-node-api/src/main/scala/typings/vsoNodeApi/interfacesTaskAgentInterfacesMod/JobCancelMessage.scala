@@ -17,7 +17,8 @@ object JobCancelMessage {
     __obj.asInstanceOf[JobCancelMessage]
   }
   
-  extension [Self <: JobCancelMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobCancelMessage] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     

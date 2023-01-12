@@ -23,7 +23,8 @@ object DataViewCategoryColumn {
     __obj.asInstanceOf[DataViewCategoryColumn]
   }
   
-  extension [Self <: DataViewCategoryColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewCategoryColumn] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: js.Array[DataViewScopeIdentity]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object XRFrustum {
     __obj.asInstanceOf[XRFrustum]
   }
   
-  extension [Self <: XRFrustum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRFrustum] (val x: Self) extends AnyVal {
     
     inline def setFarDistance(value: Double): Self = StObject.set(x, "farDistance", value.asInstanceOf[js.Any])
     

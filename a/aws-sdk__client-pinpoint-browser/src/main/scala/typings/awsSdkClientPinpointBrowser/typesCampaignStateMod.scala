@@ -28,7 +28,8 @@ object typesCampaignStateMod {
       __obj.asInstanceOf[CampaignState]
     }
     
-    extension [Self <: CampaignState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CampaignState] (val x: Self) extends AnyVal {
       
       inline def setCampaignStatus(value: SCHEDULED | EXECUTING | PENDING_NEXT_RUN | COMPLETED | PAUSED | DELETED | String): Self = StObject.set(x, "CampaignStatus", value.asInstanceOf[js.Any])
       

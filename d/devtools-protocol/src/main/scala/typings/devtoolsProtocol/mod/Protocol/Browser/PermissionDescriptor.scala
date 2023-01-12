@@ -40,7 +40,8 @@ object PermissionDescriptor {
     __obj.asInstanceOf[PermissionDescriptor]
   }
   
-  extension [Self <: PermissionDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAllowWithoutSanitization(value: Boolean): Self = StObject.set(x, "allowWithoutSanitization", value.asInstanceOf[js.Any])
     

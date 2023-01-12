@@ -23,7 +23,8 @@ object TopicFilter {
     __obj.asInstanceOf[TopicFilter]
   }
   
-  extension [Self <: TopicFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicFilter] (val x: Self) extends AnyVal {
     
     inline def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
     

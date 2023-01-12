@@ -23,7 +23,8 @@ object EnableIoTLoggingParams {
     __obj.asInstanceOf[EnableIoTLoggingParams]
   }
   
-  extension [Self <: EnableIoTLoggingParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableIoTLoggingParams] (val x: Self) extends AnyVal {
     
     inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     

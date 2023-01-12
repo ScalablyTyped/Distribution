@@ -18,7 +18,8 @@ object DataSourceConfiguration {
     __obj.asInstanceOf[DataSourceConfiguration]
   }
   
-  extension [Self <: DataSourceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIntendedUse(value: IntendedUse): Self = StObject.set(x, "IntendedUse", value.asInstanceOf[js.Any])
     

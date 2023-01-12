@@ -28,7 +28,8 @@ object VideoOrPlaylistSettings {
     __obj.asInstanceOf[VideoOrPlaylistSettings]
   }
   
-  extension [Self <: VideoOrPlaylistSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoOrPlaylistSettings] (val x: Self) extends AnyVal {
     
     inline def setEndSeconds(value: Double): Self = StObject.set(x, "endSeconds", value.asInstanceOf[js.Any])
     

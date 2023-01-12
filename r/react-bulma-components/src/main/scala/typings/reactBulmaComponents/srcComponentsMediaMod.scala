@@ -28,7 +28,8 @@ object srcComponentsMediaMod extends Shortcut {
       __obj.asInstanceOf[MediaItemProps]
     }
     
-    extension [Self <: MediaItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaItemProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: center | right | left): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

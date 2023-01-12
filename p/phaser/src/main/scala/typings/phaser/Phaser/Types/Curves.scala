@@ -55,7 +55,8 @@ object Curves {
       __obj.asInstanceOf[EllipseCurveConfig]
     }
     
-    extension [Self <: EllipseCurveConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EllipseCurveConfig] (val x: Self) extends AnyVal {
       
       inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object Curves {
       __obj.asInstanceOf[JSONCurve]
     }
     
-    extension [Self <: JSONCurve](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONCurve] (val x: Self) extends AnyVal {
       
       inline def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
@@ -186,7 +188,8 @@ object Curves {
       __obj.asInstanceOf[JSONEllipseCurve]
     }
     
-    extension [Self <: JSONEllipseCurve](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONEllipseCurve] (val x: Self) extends AnyVal {
       
       inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
       
@@ -243,7 +246,8 @@ object Curves {
       __obj.asInstanceOf[JSONPath]
     }
     
-    extension [Self <: JSONPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONPath] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       

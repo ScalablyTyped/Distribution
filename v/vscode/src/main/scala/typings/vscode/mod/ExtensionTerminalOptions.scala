@@ -48,7 +48,8 @@ object ExtensionTerminalOptions {
     __obj.asInstanceOf[ExtensionTerminalOptions]
   }
   
-  extension [Self <: ExtensionTerminalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionTerminalOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ThemeColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

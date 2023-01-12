@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Definition]
     }
     
-    extension [Self <: Definition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[HasPredicates]
     }
     
-    extension [Self <: HasPredicates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasPredicates] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: js.Array[Alternative]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Idx]
     }
     
-    extension [Self <: Idx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Idx] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object anon {
       __obj.asInstanceOf[IgnoreAmbiguities]
     }
     
-    extension [Self <: IgnoreAmbiguities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreAmbiguities] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -154,7 +158,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -187,7 +192,8 @@ object anon {
       __obj.asInstanceOf[MaxLookahead]
     }
     
-    extension [Self <: MaxLookahead](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxLookahead] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -218,7 +224,8 @@ object anon {
       __obj.asInstanceOf[Separator]
     }
     
-    extension [Self <: Separator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Separator] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -246,7 +253,8 @@ object anon {
       __obj.asInstanceOf[definitionArrayIProductio]
     }
     
-    extension [Self <: definitionArrayIProductio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: definitionArrayIProductio] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: IGASTVisitor => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
       

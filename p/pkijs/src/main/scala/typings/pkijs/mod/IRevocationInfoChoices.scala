@@ -20,7 +20,8 @@ object IRevocationInfoChoices {
     __obj.asInstanceOf[IRevocationInfoChoices]
   }
   
-  extension [Self <: IRevocationInfoChoices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRevocationInfoChoices] (val x: Self) extends AnyVal {
     
     inline def setCrls(value: js.Array[CertificateRevocationList]): Self = StObject.set(x, "crls", value.asInstanceOf[js.Any])
     

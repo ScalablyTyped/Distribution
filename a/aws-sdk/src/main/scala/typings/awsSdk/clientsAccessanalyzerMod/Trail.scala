@@ -28,7 +28,8 @@ object Trail {
     __obj.asInstanceOf[Trail]
   }
   
-  extension [Self <: Trail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trail] (val x: Self) extends AnyVal {
     
     inline def setAllRegions(value: Boolean): Self = StObject.set(x, "allRegions", value.asInstanceOf[js.Any])
     

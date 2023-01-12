@@ -142,7 +142,8 @@ object distTs3Dot9HooksMod {
       __obj.asInstanceOf[Effect]
     }
     
-    extension [Self <: Effect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Effect] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: () => js.Function0[Unit] | Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
       
@@ -171,7 +172,8 @@ object distTs3Dot9HooksMod {
       __obj.asInstanceOf[Hook]
     }
     
-    extension [Self <: Hook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hook] (val x: Self) extends AnyVal {
       
       inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       

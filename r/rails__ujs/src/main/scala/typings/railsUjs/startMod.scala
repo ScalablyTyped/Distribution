@@ -25,7 +25,8 @@ object startMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def set_rails_loaded(value: Boolean): Self = StObject.set(x, "_rails_loaded", value.asInstanceOf[js.Any])
         

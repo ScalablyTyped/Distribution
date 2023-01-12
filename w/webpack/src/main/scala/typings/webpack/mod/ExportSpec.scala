@@ -53,7 +53,8 @@ object ExportSpec {
     __obj.asInstanceOf[ExportSpec]
   }
   
-  extension [Self <: ExportSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportSpec] (val x: Self) extends AnyVal {
     
     inline def setCanMangle(value: Boolean): Self = StObject.set(x, "canMangle", value.asInstanceOf[js.Any])
     

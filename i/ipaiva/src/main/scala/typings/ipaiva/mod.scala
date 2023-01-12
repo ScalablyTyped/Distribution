@@ -38,7 +38,8 @@ object mod {
         __obj.asInstanceOf[OnDidPickOption]
       }
       
-      extension [Self <: OnDidPickOption](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnDidPickOption] (val x: Self) extends AnyVal {
         
         inline def setType(value: image | video | audio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
@@ -106,7 +107,8 @@ object mod {
         __obj.asInstanceOf[Design]
       }
       
-      extension [Self <: Design](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Design] (val x: Self) extends AnyVal {
         
         inline def setControls(value: DesignControls): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
         
@@ -169,7 +171,8 @@ object mod {
         __obj.asInstanceOf[DesignControl]
       }
       
-      extension [Self <: DesignControl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DesignControl] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -195,7 +198,8 @@ object mod {
         __obj.asInstanceOf[DesignNodeEvents]
       }
       
-      extension [Self <: DesignNodeEvents](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DesignNodeEvents] (val x: Self) extends AnyVal {
         
         inline def setDblclick(value: (MouseEvent, Node) => Unit): Self = StObject.set(x, "dblclick", js.Any.fromFunction2(value))
       }
@@ -218,7 +222,8 @@ object mod {
         __obj.asInstanceOf[DesignOptions]
       }
       
-      extension [Self <: DesignOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DesignOptions] (val x: Self) extends AnyVal {
         
         inline def setAttrs(value: StringDictionary[Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
         
@@ -255,7 +260,8 @@ object mod {
         __obj.asInstanceOf[Node]
       }
       
-      extension [Self <: Node](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
         
         inline def setFind(value: String => HTMLElement | Null): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
         
@@ -285,7 +291,8 @@ object mod {
         __obj.asInstanceOf[Package]
       }
       
-      extension [Self <: Package](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -316,7 +323,8 @@ object mod {
         __obj.asInstanceOf[Transformer]
       }
       
-      extension [Self <: Transformer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Transformer] (val x: Self) extends AnyVal {
         
         inline def setKeepRatio(value: Boolean): Self = StObject.set(x, "keepRatio", value.asInstanceOf[js.Any])
         
@@ -348,7 +356,8 @@ object mod {
       __obj.asInstanceOf[TextEditorOptions]
     }
     
-    extension [Self <: TextEditorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextEditorOptions] (val x: Self) extends AnyVal {
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -368,7 +377,8 @@ object mod {
       __obj.asInstanceOf[TextEditor_]
     }
     
-    extension [Self <: TextEditor_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextEditor_] (val x: Self) extends AnyVal {
       
       inline def setOn(value: (completed, js.Function1[/* content */ String, Unit]) => TextEditor_): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }

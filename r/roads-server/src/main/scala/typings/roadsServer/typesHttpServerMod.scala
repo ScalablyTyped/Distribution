@@ -45,7 +45,8 @@ object typesHttpServerMod {
       __obj.asInstanceOf[RoadsServerOptions]
     }
     
-    extension [Self <: RoadsServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoadsServerOptions] (val x: Self) extends AnyVal {
       
       inline def setHttps(value: Enabled): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       

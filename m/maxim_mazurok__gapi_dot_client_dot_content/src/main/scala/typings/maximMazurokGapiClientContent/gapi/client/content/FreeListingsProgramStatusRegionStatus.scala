@@ -43,7 +43,8 @@ object FreeListingsProgramStatusRegionStatus {
     __obj.asInstanceOf[FreeListingsProgramStatusRegionStatus]
   }
   
-  extension [Self <: FreeListingsProgramStatusRegionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeListingsProgramStatusRegionStatus] (val x: Self) extends AnyVal {
     
     inline def setDisapprovalDate(value: String): Self = StObject.set(x, "disapprovalDate", value.asInstanceOf[js.Any])
     

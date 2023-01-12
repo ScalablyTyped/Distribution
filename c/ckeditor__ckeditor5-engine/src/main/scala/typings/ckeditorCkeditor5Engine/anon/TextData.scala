@@ -17,7 +17,8 @@ object TextData {
     __obj.asInstanceOf[TextData]
   }
   
-  extension [Self <: TextData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextData] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

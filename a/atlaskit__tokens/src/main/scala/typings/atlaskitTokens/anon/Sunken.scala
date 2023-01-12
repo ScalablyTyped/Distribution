@@ -29,7 +29,8 @@ object Sunken {
     __obj.asInstanceOf[Sunken]
   }
   
-  extension [Self <: Sunken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sunken] (val x: Self) extends AnyVal {
     
     inline def setOverlay(value: DefaultHovered): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     

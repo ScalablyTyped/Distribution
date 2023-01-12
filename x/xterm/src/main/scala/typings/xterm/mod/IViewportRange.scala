@@ -23,7 +23,8 @@ object IViewportRange {
     __obj.asInstanceOf[IViewportRange]
   }
   
-  extension [Self <: IViewportRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IViewportRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: IViewportRangePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

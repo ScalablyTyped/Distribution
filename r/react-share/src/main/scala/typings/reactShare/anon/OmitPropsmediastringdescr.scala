@@ -510,7 +510,8 @@ object OmitPropsmediastringdescr {
     __obj.asInstanceOf[OmitPropsmediastringdescr]
   }
   
-  extension [Self <: OmitPropsmediastringdescr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitPropsmediastringdescr] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

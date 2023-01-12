@@ -26,7 +26,8 @@ object BitmapPlaneDescription {
     __obj.asInstanceOf[BitmapPlaneDescription]
   }
   
-  extension [Self <: BitmapPlaneDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitmapPlaneDescription] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

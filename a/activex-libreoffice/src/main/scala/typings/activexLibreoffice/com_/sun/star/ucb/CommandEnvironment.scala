@@ -33,7 +33,8 @@ object CommandEnvironment {
     __obj.asInstanceOf[CommandEnvironment]
   }
   
-  extension [Self <: CommandEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandEnvironment] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (XInteractionHandler, XProgressHandler) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
   }

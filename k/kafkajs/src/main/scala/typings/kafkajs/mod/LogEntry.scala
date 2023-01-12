@@ -21,7 +21,8 @@ object LogEntry {
     __obj.asInstanceOf[LogEntry]
   }
   
-  extension [Self <: LogEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

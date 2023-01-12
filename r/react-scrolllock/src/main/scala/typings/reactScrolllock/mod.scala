@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[OneChildrenElement]
     }
     
-    extension [Self <: OneChildrenElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OneChildrenElement] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[ScrollLockProps]
     }
     
-    extension [Self <: ScrollLockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollLockProps] (val x: Self) extends AnyVal {
       
       inline def setAccountForScrollbars(value: Boolean): Self = StObject.set(x, "accountForScrollbars", value.asInstanceOf[js.Any])
       

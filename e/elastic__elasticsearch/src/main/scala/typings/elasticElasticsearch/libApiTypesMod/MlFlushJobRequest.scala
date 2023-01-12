@@ -27,7 +27,8 @@ object MlFlushJobRequest {
     __obj.asInstanceOf[MlFlushJobRequest]
   }
   
-  extension [Self <: MlFlushJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlFlushJobRequest] (val x: Self) extends AnyVal {
     
     inline def setAdvance_time(value: DateTime): Self = StObject.set(x, "advance_time", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CourseMaterialSet {
     __obj.asInstanceOf[CourseMaterialSet]
   }
   
-  extension [Self <: CourseMaterialSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CourseMaterialSet] (val x: Self) extends AnyVal {
     
     inline def setMaterials(value: js.Array[CourseMaterial]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
     

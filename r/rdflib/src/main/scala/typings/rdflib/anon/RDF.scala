@@ -17,7 +17,8 @@ object RDF {
     __obj.asInstanceOf[RDF]
   }
   
-  extension [Self <: RDF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RDF] (val x: Self) extends AnyVal {
     
     inline def setRDF(value: String): Self = StObject.set(x, "RDF", value.asInstanceOf[js.Any])
     

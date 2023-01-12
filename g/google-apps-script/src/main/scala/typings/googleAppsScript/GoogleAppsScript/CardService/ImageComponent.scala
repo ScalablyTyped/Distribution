@@ -41,7 +41,8 @@ object ImageComponent {
     __obj.asInstanceOf[ImageComponent]
   }
   
-  extension [Self <: ImageComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageComponent] (val x: Self) extends AnyVal {
     
     inline def setSetAltText(value: String => ImageComponent): Self = StObject.set(x, "setAltText", js.Any.fromFunction1(value))
     

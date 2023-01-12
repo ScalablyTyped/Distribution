@@ -33,7 +33,8 @@ object IsList {
     __obj.asInstanceOf[IsList]
   }
   
-  extension [Self <: IsList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsList] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

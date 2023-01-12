@@ -37,7 +37,8 @@ object IconToggleProps {
     __obj.asInstanceOf[IconToggleProps]
   }
   
-  extension [Self <: IconToggleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconToggleProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

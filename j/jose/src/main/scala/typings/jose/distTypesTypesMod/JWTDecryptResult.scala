@@ -19,7 +19,8 @@ object JWTDecryptResult {
     __obj.asInstanceOf[JWTDecryptResult]
   }
   
-  extension [Self <: JWTDecryptResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JWTDecryptResult] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: JWTPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

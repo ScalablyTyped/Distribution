@@ -32,7 +32,8 @@ object BuildIdealTreeOptions {
     __obj.asInstanceOf[BuildIdealTreeOptions]
   }
   
-  extension [Self <: BuildIdealTreeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildIdealTreeOptions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: js.Array[String]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

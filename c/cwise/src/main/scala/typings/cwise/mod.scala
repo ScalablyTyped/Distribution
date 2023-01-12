@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[UserArgs]
     }
     
-    extension [Self <: UserArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserArgs] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[ArgType]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

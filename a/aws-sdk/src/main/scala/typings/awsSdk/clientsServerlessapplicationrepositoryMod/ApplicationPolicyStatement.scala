@@ -34,7 +34,8 @@ object ApplicationPolicyStatement {
     __obj.asInstanceOf[ApplicationPolicyStatement]
   }
   
-  extension [Self <: ApplicationPolicyStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationPolicyStatement] (val x: Self) extends AnyVal {
     
     inline def setActions(value: listOfString): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

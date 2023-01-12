@@ -25,7 +25,8 @@ object ExternalDocServiceErrorDetails {
     __obj.asInstanceOf[ExternalDocServiceErrorDetails]
   }
   
-  extension [Self <: ExternalDocServiceErrorDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalDocServiceErrorDetails] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationUrl(value: String): Self = StObject.set(x, "authenticationUrl", value.asInstanceOf[js.Any])
     

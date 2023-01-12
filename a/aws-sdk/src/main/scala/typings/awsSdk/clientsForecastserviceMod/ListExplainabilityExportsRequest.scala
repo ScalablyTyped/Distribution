@@ -28,7 +28,8 @@ object ListExplainabilityExportsRequest {
     __obj.asInstanceOf[ListExplainabilityExportsRequest]
   }
   
-  extension [Self <: ListExplainabilityExportsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListExplainabilityExportsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

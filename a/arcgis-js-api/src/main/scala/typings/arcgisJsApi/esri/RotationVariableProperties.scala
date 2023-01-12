@@ -38,7 +38,8 @@ object RotationVariableProperties {
     __obj.asInstanceOf[RotationVariableProperties]
   }
   
-  extension [Self <: RotationVariableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotationVariableProperties] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: heading | tilt | roll): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

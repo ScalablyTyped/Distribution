@@ -27,7 +27,8 @@ object IconSymbol3DLayerAnchorPosition {
     __obj.asInstanceOf[IconSymbol3DLayerAnchorPosition]
   }
   
-  extension [Self <: IconSymbol3DLayerAnchorPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconSymbol3DLayerAnchorPosition] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

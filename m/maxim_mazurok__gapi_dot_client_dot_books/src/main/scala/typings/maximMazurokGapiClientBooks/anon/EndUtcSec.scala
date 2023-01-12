@@ -17,7 +17,8 @@ object EndUtcSec {
     __obj.asInstanceOf[EndUtcSec]
   }
   
-  extension [Self <: EndUtcSec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndUtcSec] (val x: Self) extends AnyVal {
     
     inline def setEndUtcSec(value: String): Self = StObject.set(x, "endUtcSec", value.asInstanceOf[js.Any])
     

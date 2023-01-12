@@ -18,7 +18,8 @@ object CustomMarkerChildrenProps {
     __obj.asInstanceOf[CustomMarkerChildrenProps]
   }
   
-  extension [Self <: CustomMarkerChildrenProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomMarkerChildrenProps] (val x: Self) extends AnyVal {
     
     inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

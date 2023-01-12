@@ -72,7 +72,8 @@ object CalendarListeners {
     __obj.asInstanceOf[CalendarListeners]
   }
   
-  extension [Self <: CalendarListeners](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarListeners] (val x: Self) extends AnyVal {
     
     inline def setDatesSet(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @fullcalendar/common.@fullcalendar/common.Identity<(arg : @fullcalendar/common.@fullcalendar/common.DatesSetArg): void> extends (input : any): infer RefinedType ? RefinedType : never */ js.Any

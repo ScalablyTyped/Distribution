@@ -26,7 +26,8 @@ object IInclinometer {
     __obj.asInstanceOf[IInclinometer]
   }
   
-  extension [Self <: IInclinometer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInclinometer] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentReading(value: () => InclinometerReading): Self = StObject.set(x, "getCurrentReading", js.Any.fromFunction0(value))
     

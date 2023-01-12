@@ -27,7 +27,8 @@ object Movement {
     __obj.asInstanceOf[Movement]
   }
   
-  extension [Self <: Movement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Movement] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

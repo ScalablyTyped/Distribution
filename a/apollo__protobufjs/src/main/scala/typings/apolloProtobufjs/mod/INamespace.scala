@@ -22,7 +22,8 @@ object INamespace {
     __obj.asInstanceOf[INamespace]
   }
   
-  extension [Self <: INamespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INamespace] (val x: Self) extends AnyVal {
     
     inline def setNested(value: StringDictionary[AnyNestedObject]): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
     

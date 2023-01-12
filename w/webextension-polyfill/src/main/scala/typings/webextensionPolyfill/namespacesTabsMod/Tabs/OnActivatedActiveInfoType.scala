@@ -29,7 +29,8 @@ object OnActivatedActiveInfoType {
     __obj.asInstanceOf[OnActivatedActiveInfoType]
   }
   
-  extension [Self <: OnActivatedActiveInfoType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnActivatedActiveInfoType] (val x: Self) extends AnyVal {
     
     inline def setPreviousTabId(value: Double): Self = StObject.set(x, "previousTabId", value.asInstanceOf[js.Any])
     

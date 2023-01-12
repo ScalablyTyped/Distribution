@@ -17,7 +17,8 @@ object ICLSIDs {
     __obj.asInstanceOf[ICLSIDs]
   }
   
-  extension [Self <: ICLSIDs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICLSIDs] (val x: Self) extends AnyVal {
     
     inline def setPreviewerCtrl(value: String): Self = StObject.set(x, "PreviewerCtrl", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object FullScreen {
     __obj.asInstanceOf[FullScreen]
   }
   
-  extension [Self <: FullScreen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullScreen] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: FullScreenType => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     

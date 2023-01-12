@@ -46,7 +46,8 @@ object TypeMixins {
     __obj.asInstanceOf[TypeMixins[T]]
   }
   
-  extension [Self <: TypeMixins[?], T /* <: Type */](x: Self & TypeMixins[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeMixins[?], T /* <: Type */] (val x: Self & TypeMixins[T]) extends AnyVal {
     
     inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

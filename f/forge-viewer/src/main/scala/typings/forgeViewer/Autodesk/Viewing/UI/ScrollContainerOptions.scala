@@ -22,7 +22,8 @@ object ScrollContainerOptions {
     __obj.asInstanceOf[ScrollContainerOptions]
   }
   
-  extension [Self <: ScrollContainerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollContainerOptions] (val x: Self) extends AnyVal {
     
     inline def setHeightAdjustment(value: Double): Self = StObject.set(x, "heightAdjustment", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object dxFormTabbedItem {
     __obj.asInstanceOf[dxFormTabbedItem]
   }
   
-  extension [Self <: dxFormTabbedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFormTabbedItem] (val x: Self) extends AnyVal {
     
     inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     

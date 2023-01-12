@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[ActionTransition]
     }
     
-    extension [Self <: ActionTransition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionTransition] (val x: Self) extends AnyVal {
       
       inline def setActionTransition(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Transition.ACTION */ Any

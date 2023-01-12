@@ -71,7 +71,8 @@ object TextFrame {
     __obj.asInstanceOf[TextFrame]
   }
   
-  extension [Self <: TextFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFrame] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

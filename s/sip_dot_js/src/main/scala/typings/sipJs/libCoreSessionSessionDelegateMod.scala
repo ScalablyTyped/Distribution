@@ -95,7 +95,8 @@ object libCoreSessionSessionDelegateMod {
       __obj.asInstanceOf[SessionDelegate]
     }
     
-    extension [Self <: SessionDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionDelegate] (val x: Self) extends AnyVal {
       
       inline def setOnAck(value: /* request */ IncomingAckRequest => js.Promise[Unit] | Unit): Self = StObject.set(x, "onAck", js.Any.fromFunction1(value))
       

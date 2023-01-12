@@ -28,7 +28,8 @@ object DescribeProvisioningArtifactOutput {
     __obj.asInstanceOf[DescribeProvisioningArtifactOutput]
   }
   
-  extension [Self <: DescribeProvisioningArtifactOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProvisioningArtifactOutput] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: ProvisioningArtifactInfo): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
     

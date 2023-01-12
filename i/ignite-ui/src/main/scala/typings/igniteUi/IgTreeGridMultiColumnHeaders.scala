@@ -45,7 +45,8 @@ object IgTreeGridMultiColumnHeaders {
     __obj.asInstanceOf[IgTreeGridMultiColumnHeaders]
   }
   
-  extension [Self <: IgTreeGridMultiColumnHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridMultiColumnHeaders] (val x: Self) extends AnyVal {
     
     inline def setGroupCollapsed(value: (/* event */ Event, /* ui */ GroupCollapsedEventUIParam) => Unit): Self = StObject.set(x, "groupCollapsed", js.Any.fromFunction2(value))
     

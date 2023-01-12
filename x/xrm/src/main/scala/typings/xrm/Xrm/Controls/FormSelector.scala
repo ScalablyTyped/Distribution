@@ -30,7 +30,8 @@ object FormSelector {
     __obj.asInstanceOf[FormSelector]
   }
   
-  extension [Self <: FormSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormSelector] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentItem(value: () => FormItem): Self = StObject.set(x, "getCurrentItem", js.Any.fromFunction0(value))
     

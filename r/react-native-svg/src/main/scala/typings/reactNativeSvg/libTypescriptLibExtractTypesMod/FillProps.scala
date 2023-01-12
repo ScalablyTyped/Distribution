@@ -20,7 +20,8 @@ object FillProps {
     __obj.asInstanceOf[FillProps]
   }
   
-  extension [Self <: FillProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillProps] (val x: Self) extends AnyVal {
     
     inline def setFill(value: ColorValue): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

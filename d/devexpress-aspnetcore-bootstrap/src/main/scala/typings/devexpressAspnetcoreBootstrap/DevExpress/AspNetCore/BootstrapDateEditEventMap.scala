@@ -57,7 +57,8 @@ object BootstrapDateEditEventMap {
     __obj.asInstanceOf[BootstrapDateEditEventMap]
   }
   
-  extension [Self <: BootstrapDateEditEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapDateEditEventMap] (val x: Self) extends AnyVal {
     
     inline def setButtonClick(value: ButtonEditClickEventArgs): Self = StObject.set(x, "buttonClick", value.asInstanceOf[js.Any])
     

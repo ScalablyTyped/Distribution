@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Auxs]
     }
     
-    extension [Self <: Auxs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Auxs] (val x: Self) extends AnyVal {
       
       inline def setAuxs(value: NumberDictionary[AuxChannelNumber]): Self = StObject.set(x, "auxs", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Channels]
     }
     
-    extension [Self <: Channels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channels] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: NumberDictionary[AudioChannel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object anon {
       __obj.asInstanceOf[NumberOfAUXs]
     }
     
-    extension [Self <: NumberOfAUXs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberOfAUXs] (val x: Self) extends AnyVal {
       
       inline def setNumberOfAUXs(value: Double): Self = StObject.set(x, "numberOfAUXs", value.asInstanceOf[js.Any])
       

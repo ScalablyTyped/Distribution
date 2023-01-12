@@ -88,7 +88,8 @@ object SubNVuesSetStyleOptions {
     __obj.asInstanceOf[SubNVuesSetStyleOptions]
   }
   
-  extension [Self <: SubNVuesSetStyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubNVuesSetStyleOptions] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

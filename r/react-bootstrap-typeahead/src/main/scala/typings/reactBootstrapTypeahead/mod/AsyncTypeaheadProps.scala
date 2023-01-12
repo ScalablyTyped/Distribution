@@ -35,7 +35,8 @@ object AsyncTypeaheadProps {
     __obj.asInstanceOf[AsyncTypeaheadProps[T]]
   }
   
-  extension [Self <: AsyncTypeaheadProps[?], T /* <: TypeaheadModel */](x: Self & AsyncTypeaheadProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncTypeaheadProps[?], T /* <: TypeaheadModel */] (val x: Self & AsyncTypeaheadProps[T]) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object XHandoutMasterSupplier {
     __obj.asInstanceOf[XHandoutMasterSupplier]
   }
   
-  extension [Self <: XHandoutMasterSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHandoutMasterSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetHandoutMasterPage(value: () => XDrawPage): Self = StObject.set(x, "getHandoutMasterPage", js.Any.fromFunction0(value))
     

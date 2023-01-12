@@ -46,7 +46,8 @@ object SelectableWordsSegmenter {
     __obj.asInstanceOf[SelectableWordsSegmenter]
   }
   
-  extension [Self <: SelectableWordsSegmenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectableWordsSegmenter] (val x: Self) extends AnyVal {
     
     inline def setGetTokenAt(value: (String, Double) => SelectableWordSegment): Self = StObject.set(x, "getTokenAt", js.Any.fromFunction2(value))
     

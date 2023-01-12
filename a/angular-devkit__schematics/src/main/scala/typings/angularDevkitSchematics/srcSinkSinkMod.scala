@@ -72,7 +72,8 @@ object srcSinkSinkMod {
       __obj.asInstanceOf[Sink]
     }
     
-    extension [Self <: Sink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sink] (val x: Self) extends AnyVal {
       
       inline def setCommit(value: Tree => Observable_[Unit]): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
     }

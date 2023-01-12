@@ -67,7 +67,8 @@ object CharacterPropertiesComplex {
     __obj.asInstanceOf[CharacterPropertiesComplex]
   }
   
-  extension [Self <: CharacterPropertiesComplex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacterPropertiesComplex] (val x: Self) extends AnyVal {
     
     inline def setCharFontCharSetComplex(value: Double): Self = StObject.set(x, "CharFontCharSetComplex", value.asInstanceOf[js.Any])
     

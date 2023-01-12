@@ -121,7 +121,8 @@ object YouTubeAnalytics {
     }
   }
   
-  extension [Self <: YouTubeAnalytics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YouTubeAnalytics] (val x: Self) extends AnyVal {
     
     inline def setGroupItems(value: GroupItemsCollection): Self = StObject.set(x, "GroupItems", value.asInstanceOf[js.Any])
     
@@ -163,7 +164,8 @@ object YouTubeAnalytics {
         __obj.asInstanceOf[EmptyResponse]
       }
       
-      extension [Self <: EmptyResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EmptyResponse] (val x: Self) extends AnyVal {
         
         inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
@@ -194,7 +196,8 @@ object YouTubeAnalytics {
         __obj.asInstanceOf[ErrorProto]
       }
       
-      extension [Self <: ErrorProto](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ErrorProto] (val x: Self) extends AnyVal {
         
         inline def setArgument(value: js.Array[String]): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
         
@@ -243,7 +246,8 @@ object YouTubeAnalytics {
         __obj.asInstanceOf[Errors]
       }
       
-      extension [Self <: Errors](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -282,7 +286,8 @@ object YouTubeAnalytics {
         __obj.asInstanceOf[Group]
       }
       
-      extension [Self <: Group](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
         
         inline def setContentDetails(value: GroupContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
         
@@ -323,7 +328,8 @@ object YouTubeAnalytics {
         __obj.asInstanceOf[GroupContentDetails]
       }
       
-      extension [Self <: GroupContentDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GroupContentDetails] (val x: Self) extends AnyVal {
         
         inline def setItemCount(value: String): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
         
@@ -356,7 +362,8 @@ object YouTubeAnalytics {
         __obj.asInstanceOf[GroupItem]
       }
       
-      extension [Self <: GroupItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GroupItem] (val x: Self) extends AnyVal {
         
         inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
@@ -397,7 +404,8 @@ object YouTubeAnalytics {
         __obj.asInstanceOf[GroupItemResource]
       }
       
-      extension [Self <: GroupItemResource](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GroupItemResource] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -422,7 +430,8 @@ object YouTubeAnalytics {
         __obj.asInstanceOf[GroupSnippet]
       }
       
-      extension [Self <: GroupSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GroupSnippet] (val x: Self) extends AnyVal {
         
         inline def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
         
@@ -451,7 +460,8 @@ object YouTubeAnalytics {
         __obj.asInstanceOf[ListGroupItemsResponse]
       }
       
-      extension [Self <: ListGroupItemsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListGroupItemsResponse] (val x: Self) extends AnyVal {
         
         inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
@@ -492,7 +502,8 @@ object YouTubeAnalytics {
         __obj.asInstanceOf[ListGroupsResponse]
       }
       
-      extension [Self <: ListGroupsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListGroupsResponse] (val x: Self) extends AnyVal {
         
         inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
@@ -535,7 +546,8 @@ object YouTubeAnalytics {
         __obj.asInstanceOf[QueryResponse]
       }
       
-      extension [Self <: QueryResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueryResponse] (val x: Self) extends AnyVal {
         
         inline def setColumnHeaders(value: js.Array[ResultTableColumnHeader]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
         
@@ -574,7 +586,8 @@ object YouTubeAnalytics {
         __obj.asInstanceOf[ResultTableColumnHeader]
       }
       
-      extension [Self <: ResultTableColumnHeader](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResultTableColumnHeader] (val x: Self) extends AnyVal {
         
         inline def setColumnType(value: String): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
         

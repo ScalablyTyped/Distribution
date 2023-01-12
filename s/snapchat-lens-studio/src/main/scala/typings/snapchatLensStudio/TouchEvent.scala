@@ -31,7 +31,8 @@ object TouchEvent {
     __obj.asInstanceOf[TouchEvent]
   }
   
-  extension [Self <: TouchEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchEvent] (val x: Self) extends AnyVal {
     
     inline def setGetTouchId(value: () => Double): Self = StObject.set(x, "getTouchId", js.Any.fromFunction0(value))
     

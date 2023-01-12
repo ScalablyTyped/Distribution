@@ -31,7 +31,8 @@ object RequestStreamFrame {
     __obj.asInstanceOf[RequestStreamFrame]
   }
   
-  extension [Self <: RequestStreamFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestStreamFrame] (val x: Self) extends AnyVal {
     
     inline def setData(value: Encodable): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object typesToggleSwitchTrackMod {
       __obj.asInstanceOf[SwitchTrackProps]
     }
     
-    extension [Self <: SwitchTrackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchTrackProps] (val x: Self) extends AnyVal {
       
       inline def setBallClassName(value: String): Self = StObject.set(x, "ballClassName", value.asInstanceOf[js.Any])
       

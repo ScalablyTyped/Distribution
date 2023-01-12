@@ -45,7 +45,8 @@ object PsbtInputUpdate {
     __obj.asInstanceOf[PsbtInputUpdate]
   }
   
-  extension [Self <: PsbtInputUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PsbtInputUpdate] (val x: Self) extends AnyVal {
     
     inline def setBip32Derivation(value: js.Array[Bip32Derivation]): Self = StObject.set(x, "bip32Derivation", value.asInstanceOf[js.Any])
     

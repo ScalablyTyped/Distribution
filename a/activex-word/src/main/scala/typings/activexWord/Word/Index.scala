@@ -64,7 +64,8 @@ object Index {
     __obj.asInstanceOf[Index]
   }
   
-  extension [Self <: Index](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
     
     inline def setAccentedLetters(value: Boolean): Self = StObject.set(x, "AccentedLetters", value.asInstanceOf[js.Any])
     

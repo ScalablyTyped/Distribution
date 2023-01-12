@@ -23,7 +23,8 @@ object ReadableStreamBYOBRequest {
     __obj.asInstanceOf[ReadableStreamBYOBRequest]
   }
   
-  extension [Self <: ReadableStreamBYOBRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadableStreamBYOBRequest] (val x: Self) extends AnyVal {
     
     inline def setRespond(value: Double => Unit): Self = StObject.set(x, "respond", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object IBufferLevel {
     __obj.asInstanceOf[IBufferLevel]
   }
   
-  extension [Self <: IBufferLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBufferLevel] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Imagegif]
     }
     
-    extension [Self <: Imagegif](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Imagegif] (val x: Self) extends AnyVal {
       
       inline def setImageSlashgif(value: js.Array[String]): Self = StObject.set(x, "image/gif", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[ImagegifDecoderFn]
     }
     
-    extension [Self <: ImagegifDecoderFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImagegifDecoderFn] (val x: Self) extends AnyVal {
       
       inline def setImageSlashgif(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/gif", js.Any.fromFunction1(value))
     }
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[MIMEGIF]
     }
     
-    extension [Self <: MIMEGIF](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MIMEGIF] (val x: Self) extends AnyVal {
       
       inline def setMIME_GIF(value: imageSlashgif): Self = StObject.set(x, "MIME_GIF", value.asInstanceOf[js.Any])
     }

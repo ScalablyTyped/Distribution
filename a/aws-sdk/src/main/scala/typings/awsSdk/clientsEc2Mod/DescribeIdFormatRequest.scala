@@ -18,7 +18,8 @@ object DescribeIdFormatRequest {
     __obj.asInstanceOf[DescribeIdFormatRequest]
   }
   
-  extension [Self <: DescribeIdFormatRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIdFormatRequest] (val x: Self) extends AnyVal {
     
     inline def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
     

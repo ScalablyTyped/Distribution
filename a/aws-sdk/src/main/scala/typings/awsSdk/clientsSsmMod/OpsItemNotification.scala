@@ -18,7 +18,8 @@ object OpsItemNotification {
     __obj.asInstanceOf[OpsItemNotification]
   }
   
-  extension [Self <: OpsItemNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpsItemNotification] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

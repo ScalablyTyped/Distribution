@@ -16,7 +16,8 @@ object Set {
     __obj.asInstanceOf[Set[T]]
   }
   
-  extension [Self <: Set[?], T](x: Self & Set[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Set[?], T] (val x: Self & Set[T]) extends AnyVal {
     
     inline def set__set(value: Partial[T]): Self = StObject.set(x, "__set", value.asInstanceOf[js.Any])
     

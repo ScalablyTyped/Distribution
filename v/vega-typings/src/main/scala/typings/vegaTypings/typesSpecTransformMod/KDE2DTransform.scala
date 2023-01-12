@@ -44,7 +44,8 @@ object KDE2DTransform {
     __obj.asInstanceOf[KDE2DTransform]
   }
   
-  extension [Self <: KDE2DTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KDE2DTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

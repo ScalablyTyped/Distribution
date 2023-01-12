@@ -24,7 +24,8 @@ object DatastoreType {
     __obj.asInstanceOf[DatastoreType]
   }
   
-  extension [Self <: DatastoreType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatastoreType] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

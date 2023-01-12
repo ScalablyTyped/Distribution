@@ -18,7 +18,8 @@ object RelativeObjectIdentifierParams {
     __obj.asInstanceOf[RelativeObjectIdentifierParams]
   }
   
-  extension [Self <: RelativeObjectIdentifierParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeObjectIdentifierParams] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -316,7 +316,8 @@ object sapUiCommonsLayoutMatrixLayoutRowMod {
       __obj.asInstanceOf[MatrixLayoutRowSettings]
     }
     
-    extension [Self <: MatrixLayoutRowSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatrixLayoutRowSettings] (val x: Self) extends AnyVal {
       
       inline def setCells(
         value: js.Array[typings.openui5.sapUiCommonsLayoutMatrixLayoutCellMod.default] | typings.openui5.sapUiCommonsLayoutMatrixLayoutCellMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

@@ -19,7 +19,8 @@ object SecurityGrantApiKeyRequest {
     __obj.asInstanceOf[SecurityGrantApiKeyRequest]
   }
   
-  extension [Self <: SecurityGrantApiKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGrantApiKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Apikey): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

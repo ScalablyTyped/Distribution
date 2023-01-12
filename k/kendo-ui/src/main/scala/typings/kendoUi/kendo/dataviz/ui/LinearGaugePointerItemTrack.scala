@@ -23,7 +23,8 @@ object LinearGaugePointerItemTrack {
     __obj.asInstanceOf[LinearGaugePointerItemTrack]
   }
   
-  extension [Self <: LinearGaugePointerItemTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGaugePointerItemTrack] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: LinearGaugePointerItemTrackBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

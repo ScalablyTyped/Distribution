@@ -20,7 +20,8 @@ object ReceivePassphraseAction {
     __obj.asInstanceOf[ReceivePassphraseAction]
   }
   
-  extension [Self <: ReceivePassphraseAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceivePassphraseAction] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Boolean): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

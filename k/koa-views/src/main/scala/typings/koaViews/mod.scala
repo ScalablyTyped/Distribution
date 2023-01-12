@@ -54,7 +54,8 @@ object mod {
     @js.native
     val ^ : viewsOptions = js.native
     
-    extension [Self <: viewsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: viewsOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoRender(value: Boolean): Self = StObject.set(x, "autoRender", value.asInstanceOf[js.Any])
       

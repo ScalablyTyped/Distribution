@@ -98,7 +98,8 @@ object SeriesFunnelOptions {
     __obj.asInstanceOf[SeriesFunnelOptions]
   }
   
-  extension [Self <: SeriesFunnelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesFunnelOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

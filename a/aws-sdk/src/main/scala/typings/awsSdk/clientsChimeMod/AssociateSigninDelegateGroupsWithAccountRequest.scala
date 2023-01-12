@@ -23,7 +23,8 @@ object AssociateSigninDelegateGroupsWithAccountRequest {
     __obj.asInstanceOf[AssociateSigninDelegateGroupsWithAccountRequest]
   }
   
-  extension [Self <: AssociateSigninDelegateGroupsWithAccountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateSigninDelegateGroupsWithAccountRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

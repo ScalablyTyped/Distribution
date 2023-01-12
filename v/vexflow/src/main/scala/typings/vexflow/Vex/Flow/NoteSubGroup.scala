@@ -42,7 +42,8 @@ object NoteSubGroup {
     __obj.asInstanceOf[NoteSubGroup]
   }
   
-  extension [Self <: NoteSubGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoteSubGroup] (val x: Self) extends AnyVal {
     
     inline def setPreFormat(value: () => Unit): Self = StObject.set(x, "preFormat", js.Any.fromFunction0(value))
   }

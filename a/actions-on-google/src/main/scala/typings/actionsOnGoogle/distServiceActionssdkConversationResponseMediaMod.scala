@@ -83,7 +83,8 @@ object distServiceActionssdkConversationResponseMediaMod {
       __obj.asInstanceOf[MediaObjectOptions]
     }
     
-    extension [Self <: MediaObjectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaObjectOptions] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object distServiceActionssdkConversationResponseMediaMod {
       __obj.asInstanceOf[MediaResponseOptions]
     }
     
-    extension [Self <: MediaResponseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaResponseOptions] (val x: Self) extends AnyVal {
       
       inline def setObjects(value: js.Array[MediaObjectString]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       

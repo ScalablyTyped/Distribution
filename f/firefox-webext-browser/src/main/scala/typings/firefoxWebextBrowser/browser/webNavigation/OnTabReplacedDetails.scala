@@ -22,7 +22,8 @@ object OnTabReplacedDetails {
     __obj.asInstanceOf[OnTabReplacedDetails]
   }
   
-  extension [Self <: OnTabReplacedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnTabReplacedDetails] (val x: Self) extends AnyVal {
     
     inline def setReplacedTabId(value: Double): Self = StObject.set(x, "replacedTabId", value.asInstanceOf[js.Any])
     

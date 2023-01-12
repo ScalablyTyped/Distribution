@@ -16,7 +16,8 @@ object BatchUpdateIngressRulesRequest {
     __obj.asInstanceOf[BatchUpdateIngressRulesRequest]
   }
   
-  extension [Self <: BatchUpdateIngressRulesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateIngressRulesRequest] (val x: Self) extends AnyVal {
     
     inline def setIngressRules(value: js.Array[FirewallRule]): Self = StObject.set(x, "ingressRules", value.asInstanceOf[js.Any])
     

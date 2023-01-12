@@ -23,7 +23,8 @@ object IncreaseStreamRetentionPeriodInput {
     __obj.asInstanceOf[IncreaseStreamRetentionPeriodInput]
   }
   
-  extension [Self <: IncreaseStreamRetentionPeriodInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncreaseStreamRetentionPeriodInput] (val x: Self) extends AnyVal {
     
     inline def setRetentionPeriodHours(value: RetentionPeriodHours): Self = StObject.set(x, "RetentionPeriodHours", value.asInstanceOf[js.Any])
     

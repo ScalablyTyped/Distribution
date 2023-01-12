@@ -73,7 +73,8 @@ object CreateVpcRequest {
     __obj.asInstanceOf[CreateVpcRequest]
   }
   
-  extension [Self <: CreateVpcRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVpcRequest] (val x: Self) extends AnyVal {
     
     inline def setAmazonProvidedIpv6CidrBlock(value: Boolean): Self = StObject.set(x, "AmazonProvidedIpv6CidrBlock", value.asInstanceOf[js.Any])
     

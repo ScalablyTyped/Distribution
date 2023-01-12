@@ -39,7 +39,8 @@ object distSrcRpcHandlersPutValueMod {
       __obj.asInstanceOf[PutValueHandlerComponents]
     }
     
-    extension [Self <: PutValueHandlerComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutValueHandlerComponents] (val x: Self) extends AnyVal {
       
       inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
     }
@@ -56,7 +57,8 @@ object distSrcRpcHandlersPutValueMod {
       __obj.asInstanceOf[PutValueHandlerInit]
     }
     
-    extension [Self <: PutValueHandlerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutValueHandlerInit] (val x: Self) extends AnyVal {
       
       inline def setValidators(value: Validators): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     }

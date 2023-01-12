@@ -67,7 +67,8 @@ object MoreLinkRootProps {
     __obj.asInstanceOf[MoreLinkRootProps]
   }
   
-  extension [Self <: MoreLinkRootProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoreLinkRootProps] (val x: Self) extends AnyVal {
     
     inline def setAlignGridTop(value: Boolean): Self = StObject.set(x, "alignGridTop", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object buildExpoMetroConfigMod {
       __obj.asInstanceOf[DefaultConfigOptions]
     }
     
-    extension [Self <: DefaultConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setMode(value: exotic): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object buildExpoMetroConfigMod {
       __obj.asInstanceOf[LoadOptions]
     }
     
-    extension [Self <: LoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

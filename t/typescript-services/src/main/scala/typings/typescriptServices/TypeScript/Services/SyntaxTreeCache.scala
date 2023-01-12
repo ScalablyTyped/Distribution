@@ -51,7 +51,8 @@ object SyntaxTreeCache {
     __obj.asInstanceOf[SyntaxTreeCache]
   }
   
-  extension [Self <: SyntaxTreeCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxTreeCache] (val x: Self) extends AnyVal {
     
     inline def setCreateSyntaxTree(value: (Any, Any) => Any): Self = StObject.set(x, "createSyntaxTree", js.Any.fromFunction2(value))
     

@@ -35,7 +35,8 @@ object distCommandsTDigestMergestoreMod {
       __obj.asInstanceOf[MergeStoreOptions]
     }
     
-    extension [Self <: MergeStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setCOMPRESSION(value: Double): Self = StObject.set(x, "COMPRESSION", value.asInstanceOf[js.Any])
       

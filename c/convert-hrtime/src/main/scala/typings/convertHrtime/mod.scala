@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[HighResolutionTime]
     }
     
-    extension [Self <: HighResolutionTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighResolutionTime] (val x: Self) extends AnyVal {
       
       inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object AttrsBackend {
     __obj.asInstanceOf[AttrsBackend]
   }
   
-  extension [Self <: AttrsBackend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsBackend] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: CumsumAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

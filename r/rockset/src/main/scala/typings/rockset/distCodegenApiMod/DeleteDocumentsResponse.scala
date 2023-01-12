@@ -20,7 +20,8 @@ object DeleteDocumentsResponse {
     __obj.asInstanceOf[DeleteDocumentsResponse]
   }
   
-  extension [Self <: DeleteDocumentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDocumentsResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[DocumentStatus]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

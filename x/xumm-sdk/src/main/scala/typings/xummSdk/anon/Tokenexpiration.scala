@@ -19,7 +19,8 @@ object Tokenexpiration {
     __obj.asInstanceOf[Tokenexpiration]
   }
   
-  extension [Self <: Tokenexpiration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tokenexpiration] (val x: Self) extends AnyVal {
     
     inline def setToken_expiration(value: Double): Self = StObject.set(x, "token_expiration", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object Capture {
     __obj.asInstanceOf[Capture]
   }
   
-  extension [Self <: Capture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Capture] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object Debit {
     __obj.asInstanceOf[Debit]
   }
   
-  extension [Self <: Debit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Debit] (val x: Self) extends AnyVal {
     
     inline def setCommercial(value: String): Self = StObject.set(x, "Commercial", value.asInstanceOf[js.Any])
     

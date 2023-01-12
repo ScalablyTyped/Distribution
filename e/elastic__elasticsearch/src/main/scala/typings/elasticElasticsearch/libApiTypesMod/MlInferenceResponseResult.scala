@@ -31,7 +31,8 @@ object MlInferenceResponseResult {
     __obj.asInstanceOf[MlInferenceResponseResult]
   }
   
-  extension [Self <: MlInferenceResponseResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlInferenceResponseResult] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[MlTrainedModelEntities]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

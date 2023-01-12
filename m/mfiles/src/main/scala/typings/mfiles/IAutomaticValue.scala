@@ -32,7 +32,8 @@ object IAutomaticValue {
     __obj.asInstanceOf[IAutomaticValue]
   }
   
-  extension [Self <: IAutomaticValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAutomaticValue] (val x: Self) extends AnyVal {
     
     inline def setANSIncrement(value: Double): Self = StObject.set(x, "ANSIncrement", value.asInstanceOf[js.Any])
     

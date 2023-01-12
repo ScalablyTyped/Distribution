@@ -53,7 +53,8 @@ object GenericStaticResponse {
     __obj.asInstanceOf[GenericStaticResponse[Fixture, Body]]
   }
   
-  extension [Self <: GenericStaticResponse[?, ?], Fixture, Body](x: Self & (GenericStaticResponse[Fixture, Body])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericStaticResponse[?, ?], Fixture, Body] (val x: Self & (GenericStaticResponse[Fixture, Body])) extends AnyVal {
     
     inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

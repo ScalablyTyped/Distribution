@@ -15,7 +15,8 @@ object WatcherTriggerEventContainer {
     __obj.asInstanceOf[WatcherTriggerEventContainer]
   }
   
-  extension [Self <: WatcherTriggerEventContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherTriggerEventContainer] (val x: Self) extends AnyVal {
     
     inline def setSchedule(value: WatcherScheduleTriggerEvent): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object LambdaConfigType {
     __obj.asInstanceOf[LambdaConfigType]
   }
   
-  extension [Self <: LambdaConfigType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaConfigType] (val x: Self) extends AnyVal {
     
     inline def setCreateAuthChallenge(value: ArnType): Self = StObject.set(x, "CreateAuthChallenge", value.asInstanceOf[js.Any])
     

@@ -127,7 +127,8 @@ object RuntimeConfigOptions {
     __obj.asInstanceOf[RuntimeConfigOptions]
   }
   
-  extension [Self <: RuntimeConfigOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeConfigOptions] (val x: Self) extends AnyVal {
     
     inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     

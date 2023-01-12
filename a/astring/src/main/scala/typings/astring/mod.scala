@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -102,7 +103,8 @@ object mod {
       __obj.asInstanceOf[Options[Output]]
     }
     
-    extension [Self <: Options[?], Output](x: Self & Options[Output]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], Output] (val x: Self & Options[Output]) extends AnyVal {
       
       inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object Insecuressl {
     __obj.asInstanceOf[Insecuressl]
   }
   
-  extension [Self <: Insecuressl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Insecuressl] (val x: Self) extends AnyVal {
     
     inline def setContent_type(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['webhook-config-content-type'] */ js.Any

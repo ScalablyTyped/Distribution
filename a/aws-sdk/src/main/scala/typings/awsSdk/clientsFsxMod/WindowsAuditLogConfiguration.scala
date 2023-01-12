@@ -31,7 +31,8 @@ object WindowsAuditLogConfiguration {
     __obj.asInstanceOf[WindowsAuditLogConfiguration]
   }
   
-  extension [Self <: WindowsAuditLogConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsAuditLogConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAuditLogDestination(value: GeneralARN): Self = StObject.set(x, "AuditLogDestination", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object AnonymousAccessor {
     __obj.asInstanceOf[AnonymousAccessor]
   }
   
-  extension [Self <: AnonymousAccessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnonymousAccessor] (val x: Self) extends AnyVal {
     
     inline def setGet(value: /* propertyName */ String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

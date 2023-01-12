@@ -45,7 +45,8 @@ object distRequestClientCredentialRequestMod {
       __obj.asInstanceOf[ClientCredentialRequest]
     }
     
-    extension [Self <: ClientCredentialRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCredentialRequest] (val x: Self) extends AnyVal {
       
       inline def setAuthenticationScheme(value: AuthenticationScheme): Self = StObject.set(x, "authenticationScheme", value.asInstanceOf[js.Any])
       

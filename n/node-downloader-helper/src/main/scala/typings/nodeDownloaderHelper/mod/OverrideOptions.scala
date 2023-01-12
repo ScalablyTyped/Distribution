@@ -17,7 +17,8 @@ object OverrideOptions {
     __obj.asInstanceOf[OverrideOptions]
   }
   
-  extension [Self <: OverrideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideOptions] (val x: Self) extends AnyVal {
     
     inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     

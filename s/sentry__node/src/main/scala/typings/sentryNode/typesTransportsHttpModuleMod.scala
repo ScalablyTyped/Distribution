@@ -48,7 +48,8 @@ object typesTransportsHttpModuleMod {
       __obj.asInstanceOf[HTTPModuleRequestIncomingMessage]
     }
     
-    extension [Self <: HTTPModuleRequestIncomingMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPModuleRequestIncomingMessage] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

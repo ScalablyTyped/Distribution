@@ -151,7 +151,8 @@ object CompositesFactory {
     __obj.asInstanceOf[CompositesFactory]
   }
   
-  extension [Self <: CompositesFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositesFactory] (val x: Self) extends AnyVal {
     
     inline def setCar(value: (Double, Double, Double, Double, Double) => CompositeType): Self = StObject.set(x, "car", js.Any.fromFunction5(value))
     

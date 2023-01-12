@@ -18,7 +18,8 @@ object UpdateAbpV11 {
     __obj.asInstanceOf[UpdateAbpV11]
   }
   
-  extension [Self <: UpdateAbpV11](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAbpV11] (val x: Self) extends AnyVal {
     
     inline def setFCntStart(value: FCntStart): Self = StObject.set(x, "FCntStart", value.asInstanceOf[js.Any])
     

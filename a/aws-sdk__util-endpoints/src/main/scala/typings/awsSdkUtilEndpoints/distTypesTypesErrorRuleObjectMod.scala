@@ -27,7 +27,8 @@ object distTypesTypesErrorRuleObjectMod {
       __obj.asInstanceOf[ErrorRuleObject]
     }
     
-    extension [Self <: ErrorRuleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorRuleObject] (val x: Self) extends AnyVal {
       
       inline def setConditions(value: js.Array[ConditionObject]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object PickPieOptionsannotations {
     __obj.asInstanceOf[PickPieOptionsannotations]
   }
   
-  extension [Self <: PickPieOptionsannotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPieOptionsannotations] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[Annotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object libComponentsNavNavDottypesMod {
       __obj.asInstanceOf[INavButtonProps]
     }
     
-    extension [Self <: INavButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavButtonProps] (val x: Self) extends AnyVal {
       
       inline def setLink(value: INavLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object libComponentsNavNavDottypesMod {
       __obj.asInstanceOf[INavLink]
     }
     
-    extension [Self <: INavLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavLink] (val x: Self) extends AnyVal {
       
       inline def setAriaCurrent(value: page | step | location | date | time | `true`): Self = StObject.set(x, "ariaCurrent", value.asInstanceOf[js.Any])
       
@@ -318,7 +320,8 @@ object libComponentsNavNavDottypesMod {
       __obj.asInstanceOf[INavLinkGroup]
     }
     
-    extension [Self <: INavLinkGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavLinkGroup] (val x: Self) extends AnyVal {
       
       inline def setAutomationId(value: String): Self = StObject.set(x, "automationId", value.asInstanceOf[js.Any])
       
@@ -471,7 +474,8 @@ object libComponentsNavNavDottypesMod {
       __obj.asInstanceOf[INavProps]
     }
     
-    extension [Self <: INavProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -642,7 +646,8 @@ object libComponentsNavNavDottypesMod {
       __obj.asInstanceOf[INavStyleProps]
     }
     
-    extension [Self <: INavStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -768,7 +773,8 @@ object libComponentsNavNavDottypesMod {
       __obj.asInstanceOf[INavStyles]
     }
     
-    extension [Self <: INavStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavStyles] (val x: Self) extends AnyVal {
       
       inline def setChevronButton(value: IStyle): Self = StObject.set(x, "chevronButton", value.asInstanceOf[js.Any])
       
@@ -848,7 +854,8 @@ object libComponentsNavNavDottypesMod {
       __obj.asInstanceOf[IRenderGroupHeaderProps]
     }
     
-    extension [Self <: IRenderGroupHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRenderGroupHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       

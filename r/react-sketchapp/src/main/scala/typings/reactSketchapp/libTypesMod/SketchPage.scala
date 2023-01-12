@@ -26,7 +26,8 @@ object SketchPage {
     __obj.asInstanceOf[SketchPage]
   }
   
-  extension [Self <: SketchPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchPage] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: () => js.Array[SketchLayer]): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
     

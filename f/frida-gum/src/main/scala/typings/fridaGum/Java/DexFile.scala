@@ -23,7 +23,8 @@ object DexFile {
     __obj.asInstanceOf[DexFile]
   }
   
-  extension [Self <: DexFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DexFile] (val x: Self) extends AnyVal {
     
     inline def setGetClassNames(value: () => js.Array[String]): Self = StObject.set(x, "getClassNames", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object UpdateConnectorResponse {
     __obj.asInstanceOf[UpdateConnectorResponse]
   }
   
-  extension [Self <: UpdateConnectorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateConnectorResponse] (val x: Self) extends AnyVal {
     
     inline def setConnectorArn(value: string): Self = StObject.set(x, "connectorArn", value.asInstanceOf[js.Any])
     

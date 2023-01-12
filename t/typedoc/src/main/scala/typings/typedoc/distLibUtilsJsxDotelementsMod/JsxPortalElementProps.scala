@@ -29,7 +29,8 @@ object JsxPortalElementProps {
     __obj.asInstanceOf[JsxPortalElementProps]
   }
   
-  extension [Self <: JsxPortalElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxPortalElementProps] (val x: Self) extends AnyVal {
     
     inline def setReferrerPolicy(
       value: `no-referrer` | `no-referrer-when-downgrade` | origin | `origin-when-cross-origin` | `same-origin` | `strict-origin` | `strict-origin-when-cross-origin` | `unsafe-url`

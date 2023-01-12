@@ -22,7 +22,8 @@ object AdvancedMachineFeatures {
     __obj.asInstanceOf[AdvancedMachineFeatures]
   }
   
-  extension [Self <: AdvancedMachineFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedMachineFeatures] (val x: Self) extends AnyVal {
     
     inline def setEnableNestedVirtualization(value: Boolean): Self = StObject.set(x, "enableNestedVirtualization", value.asInstanceOf[js.Any])
     

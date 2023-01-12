@@ -23,7 +23,8 @@ object FailureSummary {
     __obj.asInstanceOf[FailureSummary]
   }
   
-  extension [Self <: FailureSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailureSummary] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: WorldFailures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

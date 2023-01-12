@@ -35,7 +35,8 @@ object XUIFunctionListener {
     __obj.asInstanceOf[XUIFunctionListener]
   }
   
-  extension [Self <: XUIFunctionListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUIFunctionListener] (val x: Self) extends AnyVal {
     
     inline def setFunctionExecute(value: (String, String) => Unit): Self = StObject.set(x, "functionExecute", js.Any.fromFunction2(value))
   }

@@ -24,7 +24,8 @@ object ExceptionRevokedEvent {
     __obj.asInstanceOf[ExceptionRevokedEvent]
   }
   
-  extension [Self <: ExceptionRevokedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExceptionRevokedEvent] (val x: Self) extends AnyVal {
     
     inline def setExceptionId(value: integer): Self = StObject.set(x, "exceptionId", value.asInstanceOf[js.Any])
     

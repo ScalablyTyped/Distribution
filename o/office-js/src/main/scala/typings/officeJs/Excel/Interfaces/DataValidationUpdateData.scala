@@ -49,7 +49,8 @@ object DataValidationUpdateData {
     __obj.asInstanceOf[DataValidationUpdateData]
   }
   
-  extension [Self <: DataValidationUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataValidationUpdateData] (val x: Self) extends AnyVal {
     
     inline def setErrorAlert(value: DataValidationErrorAlert): Self = StObject.set(x, "errorAlert", value.asInstanceOf[js.Any])
     

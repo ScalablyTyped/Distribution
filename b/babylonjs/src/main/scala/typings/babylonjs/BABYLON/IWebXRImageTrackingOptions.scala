@@ -19,7 +19,8 @@ object IWebXRImageTrackingOptions {
     __obj.asInstanceOf[IWebXRImageTrackingOptions]
   }
   
-  extension [Self <: IWebXRImageTrackingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRImageTrackingOptions] (val x: Self) extends AnyVal {
     
     inline def setImages(value: js.Array[EstimatedRealWorldWidth]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     

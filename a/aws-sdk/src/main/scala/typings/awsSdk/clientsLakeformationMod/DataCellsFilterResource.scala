@@ -33,7 +33,8 @@ object DataCellsFilterResource {
     __obj.asInstanceOf[DataCellsFilterResource]
   }
   
-  extension [Self <: DataCellsFilterResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCellsFilterResource] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     

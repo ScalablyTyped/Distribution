@@ -18,7 +18,8 @@ object AwsEc2SecurityGroupPrefixListId {
     __obj.asInstanceOf[AwsEc2SecurityGroupPrefixListId]
   }
   
-  extension [Self <: AwsEc2SecurityGroupPrefixListId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2SecurityGroupPrefixListId] (val x: Self) extends AnyVal {
     
     inline def setPrefixListId(value: NonEmptyString): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MediaStreamTrackSignal {
     __obj.asInstanceOf[MediaStreamTrackSignal]
   }
   
-  extension [Self <: MediaStreamTrackSignal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamTrackSignal] (val x: Self) extends AnyVal {
     
     inline def setSignalType(value: MediaStreamTrackSignalType): Self = StObject.set(x, "signalType", value.asInstanceOf[js.Any])
   }

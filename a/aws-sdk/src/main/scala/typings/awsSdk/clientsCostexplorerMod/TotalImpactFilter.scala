@@ -28,7 +28,8 @@ object TotalImpactFilter {
     __obj.asInstanceOf[TotalImpactFilter]
   }
   
-  extension [Self <: TotalImpactFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TotalImpactFilter] (val x: Self) extends AnyVal {
     
     inline def setEndValue(value: GenericDouble): Self = StObject.set(x, "EndValue", value.asInstanceOf[js.Any])
     

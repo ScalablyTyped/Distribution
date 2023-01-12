@@ -21,7 +21,8 @@ object FrameworkIdentityInfo {
     __obj.asInstanceOf[FrameworkIdentityInfo]
   }
   
-  extension [Self <: FrameworkIdentityInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameworkIdentityInfo] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

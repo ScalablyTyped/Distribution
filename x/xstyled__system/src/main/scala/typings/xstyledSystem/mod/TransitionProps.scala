@@ -16,7 +16,8 @@ object TransitionProps {
     __obj.asInstanceOf[TransitionProps[TLength]]
   }
   
-  extension [Self <: TransitionProps[?], TLength](x: Self & TransitionProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionProps[?], TLength] (val x: Self & TransitionProps[TLength]) extends AnyVal {
     
     inline def setTransition(value: ResponsiveValue[Transition[TLength]]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     

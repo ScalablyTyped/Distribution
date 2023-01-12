@@ -30,7 +30,8 @@ object libTaskGroupMod {
     @js.native
     def apply[A /* <: js.Array[Any] */, R](tasks: js.Array[Task_[A, R]]): TaskGroup[A, R] = js.native
     
-    extension [Self <: TaskGroup[?, ?], A /* <: js.Array[Any] */, R](x: Self & (TaskGroup[A, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskGroup[?, ?], A /* <: js.Array[Any] */, R] (val x: Self & (TaskGroup[A, R])) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

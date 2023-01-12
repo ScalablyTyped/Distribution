@@ -30,7 +30,8 @@ object PartialClassNameMapMobile {
     __obj.asInstanceOf[PartialClassNameMapMobile]
   }
   
-  extension [Self <: PartialClassNameMapMobile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapMobile] (val x: Self) extends AnyVal {
     
     inline def setDot(value: String): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
     

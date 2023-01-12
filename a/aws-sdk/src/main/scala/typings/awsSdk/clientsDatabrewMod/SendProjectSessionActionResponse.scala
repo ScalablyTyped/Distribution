@@ -28,7 +28,8 @@ object SendProjectSessionActionResponse {
     __obj.asInstanceOf[SendProjectSessionActionResponse]
   }
   
-  extension [Self <: SendProjectSessionActionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendProjectSessionActionResponse] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: ActionId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     

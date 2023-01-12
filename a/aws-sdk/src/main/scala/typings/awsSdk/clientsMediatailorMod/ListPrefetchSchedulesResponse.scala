@@ -23,7 +23,8 @@ object ListPrefetchSchedulesResponse {
     __obj.asInstanceOf[ListPrefetchSchedulesResponse]
   }
   
-  extension [Self <: ListPrefetchSchedulesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPrefetchSchedulesResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: listOfPrefetchSchedule): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

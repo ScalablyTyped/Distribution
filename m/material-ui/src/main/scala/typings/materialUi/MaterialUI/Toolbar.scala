@@ -38,7 +38,8 @@ object Toolbar {
       __obj.asInstanceOf[ToolbarGroupProps]
     }
     
-    extension [Self <: ToolbarGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarGroupProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object Toolbar {
       __obj.asInstanceOf[ToolbarProps]
     }
     
-    extension [Self <: ToolbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object Toolbar {
       __obj.asInstanceOf[ToolbarSeparatorProps]
     }
     
-    extension [Self <: ToolbarSeparatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSeparatorProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -147,7 +150,8 @@ object Toolbar {
       __obj.asInstanceOf[ToolbarTitleProps]
     }
     
-    extension [Self <: ToolbarTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarTitleProps] (val x: Self) extends AnyVal {
       
       inline def setRef(value: LegacyRef[ToolbarTitle]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object DefaultPos2 {
     __obj.asInstanceOf[DefaultPos2]
   }
   
-  extension [Self <: DefaultPos2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultPos2] (val x: Self) extends AnyVal {
     
     inline def setDefaultPos(value: zeroOrMin | zeroOrMax | mid): Self = StObject.set(x, "defaultPos", value.asInstanceOf[js.Any])
     

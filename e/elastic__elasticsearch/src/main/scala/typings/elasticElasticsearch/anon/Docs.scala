@@ -18,7 +18,8 @@ object Docs {
     __obj.asInstanceOf[Docs]
   }
   
-  extension [Self <: Docs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Docs] (val x: Self) extends AnyVal {
     
     inline def setDocs(value: js.Array[MgetOperation]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     

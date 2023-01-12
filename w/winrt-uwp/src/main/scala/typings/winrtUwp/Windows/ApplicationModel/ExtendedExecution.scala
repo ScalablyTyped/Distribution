@@ -166,7 +166,8 @@ object ExtendedExecution {
         __obj.asInstanceOf[ExtendedExecutionForegroundRevokedEventArgs]
       }
       
-      extension [Self <: ExtendedExecutionForegroundRevokedEventArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtendedExecutionForegroundRevokedEventArgs] (val x: Self) extends AnyVal {
         
         inline def setReason(value: ExtendedExecutionForegroundRevokedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       }
@@ -220,7 +221,8 @@ object ExtendedExecution {
       __obj.asInstanceOf[ExtendedExecutionRevokedEventArgs]
     }
     
-    extension [Self <: ExtendedExecutionRevokedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedExecutionRevokedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setReason(value: ExtendedExecutionRevokedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }

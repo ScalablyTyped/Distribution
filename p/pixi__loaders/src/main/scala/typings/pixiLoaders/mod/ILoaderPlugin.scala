@@ -42,7 +42,8 @@ object ILoaderPlugin {
     __obj.asInstanceOf[ILoaderPlugin]
   }
   
-  extension [Self <: ILoaderPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILoaderPlugin] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: () => Unit): Self = StObject.set(x, "add", js.Any.fromFunction0(value))
     

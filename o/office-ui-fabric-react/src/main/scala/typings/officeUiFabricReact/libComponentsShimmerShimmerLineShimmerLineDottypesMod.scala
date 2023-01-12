@@ -56,7 +56,8 @@ object libComponentsShimmerShimmerLineShimmerLineDottypesMod {
       __obj.asInstanceOf[IShimmerLineProps]
     }
     
-    extension [Self <: IShimmerLineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerLineProps] (val x: Self) extends AnyVal {
       
       inline def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object libComponentsShimmerShimmerLineShimmerLineDottypesMod {
       __obj.asInstanceOf[IShimmerLineStyleProps]
     }
     
-    extension [Self <: IShimmerLineStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerLineStyleProps] (val x: Self) extends AnyVal {
       
       inline def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object libComponentsShimmerShimmerLineShimmerLineDottypesMod {
       __obj.asInstanceOf[IShimmerLineStyles]
     }
     
-    extension [Self <: IShimmerLineStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerLineStyles] (val x: Self) extends AnyVal {
       
       inline def setBottomLeftCorner(value: IStyle): Self = StObject.set(x, "bottomLeftCorner", value.asInstanceOf[js.Any])
       

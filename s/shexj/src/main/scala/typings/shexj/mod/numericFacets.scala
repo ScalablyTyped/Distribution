@@ -45,7 +45,8 @@ object numericFacets {
     __obj.asInstanceOf[numericFacets]
   }
   
-  extension [Self <: numericFacets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: numericFacets] (val x: Self) extends AnyVal {
     
     inline def setFractiondigits(value: INTEGER): Self = StObject.set(x, "fractiondigits", value.asInstanceOf[js.Any])
     

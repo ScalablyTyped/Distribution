@@ -19,7 +19,8 @@ object localizer {
     __obj.asInstanceOf[localizer]
   }
   
-  extension [Self <: localizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: localizer] (val x: Self) extends AnyVal {
     
     inline def setLocalize(value: () => String): Self = StObject.set(x, "localize", js.Any.fromFunction0(value))
     

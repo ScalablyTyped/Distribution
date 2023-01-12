@@ -58,7 +58,8 @@ object BackupPlansListMember {
     __obj.asInstanceOf[BackupPlansListMember]
   }
   
-  extension [Self <: BackupPlansListMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackupPlansListMember] (val x: Self) extends AnyVal {
     
     inline def setAdvancedBackupSettings(value: AdvancedBackupSettings): Self = StObject.set(x, "AdvancedBackupSettings", value.asInstanceOf[js.Any])
     

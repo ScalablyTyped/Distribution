@@ -26,7 +26,8 @@ object esCreateMigrateMod {
       __obj.asInstanceOf[MigrationConfig]
     }
     
-    extension [Self <: MigrationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MigrationConfig] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     }

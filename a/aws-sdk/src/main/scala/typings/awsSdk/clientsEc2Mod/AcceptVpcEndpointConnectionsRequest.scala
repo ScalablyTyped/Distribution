@@ -28,7 +28,8 @@ object AcceptVpcEndpointConnectionsRequest {
     __obj.asInstanceOf[AcceptVpcEndpointConnectionsRequest]
   }
   
-  extension [Self <: AcceptVpcEndpointConnectionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptVpcEndpointConnectionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

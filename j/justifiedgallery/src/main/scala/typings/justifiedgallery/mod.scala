@@ -44,7 +44,8 @@ object mod {
         __obj.asInstanceOf[CaptionSettings]
       }
       
-      extension [Self <: CaptionSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CaptionSettings] (val x: Self) extends AnyVal {
         
         inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
         
@@ -136,7 +137,8 @@ object mod {
         __obj.asInstanceOf[Settings]
       }
       
-      extension [Self <: Settings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
         
         inline def setBorder(value: Double): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
         

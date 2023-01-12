@@ -17,7 +17,8 @@ object SolutionsRoot {
     __obj.asInstanceOf[SolutionsRoot]
   }
   
-  extension [Self <: SolutionsRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SolutionsRoot] (val x: Self) extends AnyVal {
     
     inline def setBookingBusinesses(value: NullableOption[js.Array[BookingBusiness]]): Self = StObject.set(x, "bookingBusinesses", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DeleteDuplicatesRequest {
     __obj.asInstanceOf[DeleteDuplicatesRequest]
   }
   
-  extension [Self <: DeleteDuplicatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDuplicatesRequest] (val x: Self) extends AnyVal {
     
     inline def setComparisonColumns(value: js.Array[DimensionRange]): Self = StObject.set(x, "comparisonColumns", value.asInstanceOf[js.Any])
     

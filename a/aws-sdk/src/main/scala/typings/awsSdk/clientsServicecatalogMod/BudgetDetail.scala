@@ -18,7 +18,8 @@ object BudgetDetail {
     __obj.asInstanceOf[BudgetDetail]
   }
   
-  extension [Self <: BudgetDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BudgetDetail] (val x: Self) extends AnyVal {
     
     inline def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     

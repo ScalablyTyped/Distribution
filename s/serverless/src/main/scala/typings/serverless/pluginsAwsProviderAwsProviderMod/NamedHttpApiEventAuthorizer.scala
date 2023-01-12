@@ -17,7 +17,8 @@ object NamedHttpApiEventAuthorizer {
     __obj.asInstanceOf[NamedHttpApiEventAuthorizer]
   }
   
-  extension [Self <: NamedHttpApiEventAuthorizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedHttpApiEventAuthorizer] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object AvgPool3DAttrs {
     __obj.asInstanceOf[AvgPool3DAttrs]
   }
   
-  extension [Self <: AvgPool3DAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvgPool3DAttrs] (val x: Self) extends AnyVal {
     
     inline def setDataFormat(value: NDHWC | NCDHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     

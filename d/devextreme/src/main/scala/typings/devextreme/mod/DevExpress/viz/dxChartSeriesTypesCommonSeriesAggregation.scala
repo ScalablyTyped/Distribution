@@ -35,7 +35,8 @@ object dxChartSeriesTypesCommonSeriesAggregation {
     __obj.asInstanceOf[dxChartSeriesTypesCommonSeriesAggregation]
   }
   
-  extension [Self <: dxChartSeriesTypesCommonSeriesAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartSeriesTypesCommonSeriesAggregation] (val x: Self) extends AnyVal {
     
     inline def setCalculate(
       value: (/* aggregationInfo */ chartPointAggregationInfoObject, /* series */ chartSeriesObject) => Any | js.Array[Any]

@@ -28,7 +28,8 @@ object GetSegmentDetectionRequest {
     __obj.asInstanceOf[GetSegmentDetectionRequest]
   }
   
-  extension [Self <: GetSegmentDetectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSegmentDetectionRequest] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

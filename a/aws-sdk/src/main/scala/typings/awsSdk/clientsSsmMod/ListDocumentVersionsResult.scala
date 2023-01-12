@@ -23,7 +23,8 @@ object ListDocumentVersionsResult {
     __obj.asInstanceOf[ListDocumentVersionsResult]
   }
   
-  extension [Self <: ListDocumentVersionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDocumentVersionsResult] (val x: Self) extends AnyVal {
     
     inline def setDocumentVersions(value: DocumentVersionList): Self = StObject.set(x, "DocumentVersions", value.asInstanceOf[js.Any])
     

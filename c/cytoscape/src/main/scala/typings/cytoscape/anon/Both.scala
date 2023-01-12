@@ -20,7 +20,8 @@ object Both {
     __obj.asInstanceOf[Both]
   }
   
-  extension [Self <: Both](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Both] (val x: Self) extends AnyVal {
     
     inline def setBoth(value: CollectionReturnValue): Self = StObject.set(x, "both", value.asInstanceOf[js.Any])
     

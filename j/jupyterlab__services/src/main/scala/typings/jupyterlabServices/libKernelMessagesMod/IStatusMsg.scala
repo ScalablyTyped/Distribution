@@ -27,7 +27,8 @@ object IStatusMsg {
     __obj.asInstanceOf[IStatusMsg]
   }
   
-  extension [Self <: IStatusMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStatusMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Executionstate): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

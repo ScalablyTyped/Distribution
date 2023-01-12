@@ -136,7 +136,8 @@ object Encounter {
     __obj.asInstanceOf[Encounter]
   }
   
-  extension [Self <: Encounter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encounter] (val x: Self) extends AnyVal {
     
     inline def setAppointment(value: Reference): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
     

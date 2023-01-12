@@ -15,7 +15,8 @@ object Schema {
     __obj.asInstanceOf[Schema]
   }
   
-  extension [Self <: Schema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }

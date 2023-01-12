@@ -42,7 +42,8 @@ object State {
     __obj.asInstanceOf[State]
   }
   
-  extension [Self <: State](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: Channels): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object HeatmapPaint {
     __obj.asInstanceOf[HeatmapPaint]
   }
   
-  extension [Self <: HeatmapPaint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatmapPaint] (val x: Self) extends AnyVal {
     
     inline def `setHeatmap-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "heatmap-color", value.asInstanceOf[js.Any])
     

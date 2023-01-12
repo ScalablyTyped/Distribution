@@ -42,7 +42,8 @@ object libTransferListItemMod extends Shortcut {
       __obj.asInstanceOf[ListItemProps[RecordType]]
     }
     
-    extension [Self <: ListItemProps[?], RecordType](x: Self & ListItemProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemProps[?], RecordType] (val x: Self & ListItemProps[RecordType]) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

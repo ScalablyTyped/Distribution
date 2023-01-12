@@ -65,7 +65,8 @@ object AppCaptureAlternateShortcutKeys {
     __obj.asInstanceOf[AppCaptureAlternateShortcutKeys]
   }
   
-  extension [Self <: AppCaptureAlternateShortcutKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppCaptureAlternateShortcutKeys] (val x: Self) extends AnyVal {
     
     inline def setSaveHistoricalVideoKey(value: VirtualKey): Self = StObject.set(x, "saveHistoricalVideoKey", value.asInstanceOf[js.Any])
     

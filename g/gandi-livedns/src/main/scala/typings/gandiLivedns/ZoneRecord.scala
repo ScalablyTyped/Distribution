@@ -24,7 +24,8 @@ object ZoneRecord {
     __obj.asInstanceOf[ZoneRecord]
   }
   
-  extension [Self <: ZoneRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneRecord] (val x: Self) extends AnyVal {
     
     inline def setRrset_name(value: String): Self = StObject.set(x, "rrset_name", value.asInstanceOf[js.Any])
     

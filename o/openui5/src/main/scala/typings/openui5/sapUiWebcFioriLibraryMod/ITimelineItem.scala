@@ -15,7 +15,8 @@ object ITimelineItem {
     __obj.asInstanceOf[ITimelineItem]
   }
   
-  extension [Self <: ITimelineItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimelineItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_fiori_ITimelineItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_fiori_ITimelineItem", value.asInstanceOf[js.Any])
   }

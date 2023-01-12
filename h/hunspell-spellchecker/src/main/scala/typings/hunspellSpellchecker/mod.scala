@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Dictionary]
     }
     
-    extension [Self <: Dictionary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictionary] (val x: Self) extends AnyVal {
       
       inline def setCompoundRuleCodes(value: js.Object): Self = StObject.set(x, "compoundRuleCodes", value.asInstanceOf[js.Any])
       

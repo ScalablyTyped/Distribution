@@ -22,7 +22,8 @@ object ExceptionPathSegment {
     __obj.asInstanceOf[ExceptionPathSegment]
   }
   
-  extension [Self <: ExceptionPathSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExceptionPathSegment] (val x: Self) extends AnyVal {
     
     inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     

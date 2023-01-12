@@ -27,7 +27,8 @@ object CallCredentials {
     __obj.asInstanceOf[CallCredentials]
   }
   
-  extension [Self <: CallCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallCredentials] (val x: Self) extends AnyVal {
     
     inline def setCompose(value: CallCredentials => CallCredentials): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
     

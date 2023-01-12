@@ -16,7 +16,8 @@ object ActivityContentDetailsChannelItem {
     __obj.asInstanceOf[ActivityContentDetailsChannelItem]
   }
   
-  extension [Self <: ActivityContentDetailsChannelItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityContentDetailsChannelItem] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     

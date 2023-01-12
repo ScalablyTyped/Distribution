@@ -82,7 +82,8 @@ object TextValidationBuilder {
     __obj.asInstanceOf[TextValidationBuilder]
   }
   
-  extension [Self <: TextValidationBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextValidationBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => TextValidation): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

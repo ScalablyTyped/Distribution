@@ -19,7 +19,8 @@ object RenderDataPointOptions {
     __obj.asInstanceOf[RenderDataPointOptions]
   }
   
-  extension [Self <: RenderDataPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderDataPointOptions] (val x: Self) extends AnyVal {
     
     inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     

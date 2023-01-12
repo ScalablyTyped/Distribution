@@ -73,7 +73,8 @@ object libTreeTreeMod extends Shortcut {
       __obj.asInstanceOf[AntTreeNodeBaseEvent]
     }
     
-    extension [Self <: AntTreeNodeBaseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AntTreeNodeBaseEvent] (val x: Self) extends AnyVal {
       
       inline def setNativeEvent(value: MouseEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object libTreeTreeMod extends Shortcut {
       __obj.asInstanceOf[AntTreeNodeCheckedEvent]
     }
     
-    extension [Self <: AntTreeNodeCheckedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AntTreeNodeCheckedEvent] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object libTreeTreeMod extends Shortcut {
       __obj.asInstanceOf[AntTreeNodeDragEnterEvent]
     }
     
-    extension [Self <: AntTreeNodeDragEnterEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AntTreeNodeDragEnterEvent] (val x: Self) extends AnyVal {
       
       inline def setExpandedKeys(value: js.Array[Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object libTreeTreeMod extends Shortcut {
       __obj.asInstanceOf[AntTreeNodeDropEvent]
     }
     
-    extension [Self <: AntTreeNodeDropEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AntTreeNodeDropEvent] (val x: Self) extends AnyVal {
       
       inline def setDragNode(value: AntTreeNode): Self = StObject.set(x, "dragNode", value.asInstanceOf[js.Any])
       
@@ -195,7 +199,8 @@ object libTreeTreeMod extends Shortcut {
       __obj.asInstanceOf[AntTreeNodeExpandedEvent]
     }
     
-    extension [Self <: AntTreeNodeExpandedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AntTreeNodeExpandedEvent] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
@@ -216,7 +221,8 @@ object libTreeTreeMod extends Shortcut {
       __obj.asInstanceOf[AntTreeNodeMouseEvent]
     }
     
-    extension [Self <: AntTreeNodeMouseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AntTreeNodeMouseEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: DragEvent[HTMLElement]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -265,7 +271,8 @@ object libTreeTreeMod extends Shortcut {
       __obj.asInstanceOf[AntTreeNodeProps]
     }
     
-    extension [Self <: AntTreeNodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AntTreeNodeProps] (val x: Self) extends AnyVal {
       
       inline def setCheckable(value: Boolean): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       
@@ -348,7 +355,8 @@ object libTreeTreeMod extends Shortcut {
       __obj.asInstanceOf[AntTreeNodeSelectedEvent]
     }
     
-    extension [Self <: AntTreeNodeSelectedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AntTreeNodeSelectedEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: select_): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -423,7 +431,8 @@ object libTreeTreeMod extends Shortcut {
       __obj.asInstanceOf[AntdTreeNodeAttribute]
     }
     
-    extension [Self <: AntdTreeNodeAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AntdTreeNodeAttribute] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -478,7 +487,8 @@ object libTreeTreeMod extends Shortcut {
       __obj.asInstanceOf[DraggableConfig]
     }
     
-    extension [Self <: DraggableConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggableConfig] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: ReactNode | `false`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -663,7 +673,8 @@ object libTreeTreeMod extends Shortcut {
       __obj.asInstanceOf[TreeProps[T]]
     }
     
-    extension [Self <: TreeProps[?], T /* <: BasicDataNode */](x: Self & TreeProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeProps[?], T /* <: BasicDataNode */] (val x: Self & TreeProps[T]) extends AnyVal {
       
       inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       

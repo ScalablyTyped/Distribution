@@ -58,7 +58,8 @@ object ListBoxOptions {
     __obj.asInstanceOf[ListBoxOptions]
   }
   
-  extension [Self <: ListBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* e */ ListBoxAddEvent => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

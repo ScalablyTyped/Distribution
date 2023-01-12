@@ -23,7 +23,8 @@ object SafetyTipInfo {
     __obj.asInstanceOf[SafetyTipInfo]
   }
   
-  extension [Self <: SafetyTipInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafetyTipInfo] (val x: Self) extends AnyVal {
     
     inline def setSafeUrl(value: String): Self = StObject.set(x, "safeUrl", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object NOT {
     __obj.asInstanceOf[NOT]
   }
   
-  extension [Self <: NOT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NOT] (val x: Self) extends AnyVal {
     
     inline def setNOT(value: EXCLUDE): Self = StObject.set(x, "NOT", value.asInstanceOf[js.Any])
   }

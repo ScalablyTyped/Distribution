@@ -18,7 +18,8 @@ object BusinessReportRecurrence {
     __obj.asInstanceOf[BusinessReportRecurrence]
   }
   
-  extension [Self <: BusinessReportRecurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessReportRecurrence] (val x: Self) extends AnyVal {
     
     inline def setStartDate(value: Date): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     

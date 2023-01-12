@@ -38,7 +38,8 @@ object OnTypeFormattingEditProvider {
     __obj.asInstanceOf[OnTypeFormattingEditProvider]
   }
   
-  extension [Self <: OnTypeFormattingEditProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnTypeFormattingEditProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideOnTypeFormattingEdits(
       value: (TextDocument, Position, String, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]

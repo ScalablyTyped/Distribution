@@ -45,7 +45,8 @@ object PushpinOptions {
     __obj.asInstanceOf[PushpinOptions]
   }
   
-  extension [Self <: PushpinOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushpinOptions] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

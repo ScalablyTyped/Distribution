@@ -106,7 +106,8 @@ object OutputJax {
     __obj.asInstanceOf[OutputJax]
   }
   
-  extension [Self <: OutputJax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputJax] (val x: Self) extends AnyVal {
     
     inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     

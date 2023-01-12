@@ -40,7 +40,8 @@ object meteorMeteorMod {
       @js.native
       val ^ : ErrorStatic = js.native
       
-      extension [Self <: Error](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
         
         inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
@@ -272,7 +273,8 @@ object meteorMeteorMod {
         __obj.asInstanceOf[Connection]
       }
       
-      extension [Self <: Connection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
         
         inline def setClientAddress(value: String): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
         
@@ -341,7 +343,8 @@ object meteorMeteorMod {
         __obj.asInstanceOf[Event]
       }
       
-      extension [Self <: Event](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
         
         inline def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
         
@@ -388,7 +391,8 @@ object meteorMeteorMod {
         __obj.asInstanceOf[LiveQueryHandle]
       }
       
-      extension [Self <: LiveQueryHandle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveQueryHandle] (val x: Self) extends AnyVal {
         
         inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       }
@@ -411,7 +415,8 @@ object meteorMeteorMod {
         __obj.asInstanceOf[LocalStorage]
       }
       
-      extension [Self <: LocalStorage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LocalStorage] (val x: Self) extends AnyVal {
         
         inline def setGetItem(value: Any => Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
         
@@ -447,7 +452,8 @@ object meteorMeteorMod {
         __obj.asInstanceOf[LoginWithExternalServiceOptions]
       }
       
-      extension [Self <: LoginWithExternalServiceOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LoginWithExternalServiceOptions] (val x: Self) extends AnyVal {
         
         inline def setForceApprovalPrompt(value: Boolean): Self = StObject.set(x, "forceApprovalPrompt", value.asInstanceOf[js.Any])
         
@@ -496,7 +502,8 @@ object meteorMeteorMod {
         __obj.asInstanceOf[Settings_]
       }
       
-      extension [Self <: Settings_](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Settings_] (val x: Self) extends AnyVal {
         
         inline def setPublic(value: StringDictionary[Any]): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       }
@@ -517,7 +524,8 @@ object meteorMeteorMod {
         __obj.asInstanceOf[SubscriptionHandle]
       }
       
-      extension [Self <: SubscriptionHandle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubscriptionHandle] (val x: Self) extends AnyVal {
         
         inline def setReady(value: () => Boolean): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
         
@@ -540,7 +548,8 @@ object meteorMeteorMod {
         __obj.asInstanceOf[UserEmail]
       }
       
-      extension [Self <: UserEmail](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserEmail] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
@@ -569,7 +578,8 @@ object meteorMeteorMod {
         __obj.asInstanceOf[User_]
       }
       
-      extension [Self <: User_](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: User_] (val x: Self) extends AnyVal {
         
         inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
         
@@ -637,7 +647,8 @@ object meteorMeteorMod {
       __obj.asInstanceOf[typings.meteorTypings.meteorMeteorMod.Subscription]
     }
     
-    extension [Self <: typings.meteorTypings.meteorMeteorMod.Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteorTypings.meteorMeteorMod.Subscription] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "added", js.Any.fromFunction3(value))
       

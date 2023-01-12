@@ -92,7 +92,8 @@ object libCjsPuppeteerCommonUtilMod {
       __obj.asInstanceOf[PuppeteerEventListener]
     }
     
-    extension [Self <: PuppeteerEventListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PuppeteerEventListener] (val x: Self) extends AnyVal {
       
       inline def setEmitter(value: CommonEventEmitter): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       

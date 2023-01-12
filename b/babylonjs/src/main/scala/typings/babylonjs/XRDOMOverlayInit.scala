@@ -16,7 +16,8 @@ object XRDOMOverlayInit {
     __obj.asInstanceOf[XRDOMOverlayInit]
   }
   
-  extension [Self <: XRDOMOverlayInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRDOMOverlayInit] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: Element): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

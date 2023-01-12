@@ -32,7 +32,8 @@ object ReadonlyESMap {
     __obj.asInstanceOf[ReadonlyESMap[K, V]]
   }
   
-  extension [Self <: ReadonlyESMap[?, ?], K, V](x: Self & (ReadonlyESMap[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyESMap[?, ?], K, V] (val x: Self & (ReadonlyESMap[K, V])) extends AnyVal {
     
     inline def setEntries(value: () => Iterator[js.Tuple2[K, V]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
     

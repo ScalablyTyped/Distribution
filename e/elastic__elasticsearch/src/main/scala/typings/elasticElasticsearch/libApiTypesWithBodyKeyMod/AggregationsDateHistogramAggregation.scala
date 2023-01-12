@@ -47,7 +47,8 @@ object AggregationsDateHistogramAggregation {
     __obj.asInstanceOf[AggregationsDateHistogramAggregation]
   }
   
-  extension [Self <: AggregationsDateHistogramAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsDateHistogramAggregation] (val x: Self) extends AnyVal {
     
     inline def setCalendar_interval(value: AggregationsCalendarInterval): Self = StObject.set(x, "calendar_interval", value.asInstanceOf[js.Any])
     

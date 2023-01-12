@@ -39,7 +39,8 @@ object SearchTermSuggester {
     __obj.asInstanceOf[SearchTermSuggester]
   }
   
-  extension [Self <: SearchTermSuggester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchTermSuggester] (val x: Self) extends AnyVal {
     
     inline def setLowercase_terms(value: Boolean): Self = StObject.set(x, "lowercase_terms", value.asInstanceOf[js.Any])
     

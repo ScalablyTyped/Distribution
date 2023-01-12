@@ -15,7 +15,8 @@ object IJsonErrorStatics {
     __obj.asInstanceOf[IJsonErrorStatics]
   }
   
-  extension [Self <: IJsonErrorStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJsonErrorStatics] (val x: Self) extends AnyVal {
     
     inline def setGetStatus(value: Double => JsonErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
   }

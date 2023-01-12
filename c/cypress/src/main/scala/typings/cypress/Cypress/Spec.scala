@@ -30,7 +30,8 @@ object Spec {
     __obj.asInstanceOf[Spec]
   }
   
-  extension [Self <: Spec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
     
     inline def setAbsolute(value: String): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
     

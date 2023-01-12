@@ -760,7 +760,8 @@ object Trace {
         __obj.asInstanceOf[IValues]
       }
       
-      extension [Self <: IValues](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IValues] (val x: Self) extends AnyVal {
         
         inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
@@ -1661,7 +1662,8 @@ object Trace {
         __obj.asInstanceOf[IFetchNode]
       }
       
-      extension [Self <: IFetchNode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFetchNode] (val x: Self) extends AnyVal {
         
         inline def setReceivedTime(value: ITimestamp): Self = StObject.set(x, "receivedTime", value.asInstanceOf[js.Any])
         
@@ -1717,7 +1719,8 @@ object Trace {
         __obj.asInstanceOf[IFlattenNode]
       }
       
-      extension [Self <: IFlattenNode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFlattenNode] (val x: Self) extends AnyVal {
         
         inline def setNode(value: IQueryPlanNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
         
@@ -1748,7 +1751,8 @@ object Trace {
         __obj.asInstanceOf[IParallelNode]
       }
       
-      extension [Self <: IParallelNode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IParallelNode] (val x: Self) extends AnyVal {
         
         inline def setNodes(value: js.Array[IQueryPlanNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
         
@@ -1776,7 +1780,8 @@ object Trace {
         __obj.asInstanceOf[IResponsePathElement]
       }
       
-      extension [Self <: IResponsePathElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IResponsePathElement] (val x: Self) extends AnyVal {
         
         inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
         
@@ -1805,7 +1810,8 @@ object Trace {
         __obj.asInstanceOf[ISequenceNode]
       }
       
-      extension [Self <: ISequenceNode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISequenceNode] (val x: Self) extends AnyVal {
         
         inline def setNodes(value: js.Array[IQueryPlanNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
         
@@ -1899,7 +1905,8 @@ object Trace {
       __obj.asInstanceOf[ICachePolicy]
     }
     
-    extension [Self <: ICachePolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICachePolicy] (val x: Self) extends AnyVal {
       
       inline def setMaxAgeNs(value: Double): Self = StObject.set(x, "maxAgeNs", value.asInstanceOf[js.Any])
       
@@ -1931,7 +1938,8 @@ object Trace {
       __obj.asInstanceOf[IDetails]
     }
     
-    extension [Self <: IDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetails] (val x: Self) extends AnyVal {
       
       inline def setOperationName(value: String): Self = StObject.set(x, "operationName", value.asInstanceOf[js.Any])
       
@@ -1969,7 +1977,8 @@ object Trace {
       __obj.asInstanceOf[IError]
     }
     
-    extension [Self <: IError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IError] (val x: Self) extends AnyVal {
       
       inline def setJson(value: String): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
@@ -2033,7 +2042,8 @@ object Trace {
       __obj.asInstanceOf[IHTTP]
     }
     
-    extension [Self <: IHTTP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHTTP] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -2101,7 +2111,8 @@ object Trace {
       __obj.asInstanceOf[ILocation]
     }
     
-    extension [Self <: ILocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILocation] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -2157,7 +2168,8 @@ object Trace {
       __obj.asInstanceOf[INode]
     }
     
-    extension [Self <: INode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INode] (val x: Self) extends AnyVal {
       
       inline def setCachePolicy(value: ICachePolicy): Self = StObject.set(x, "cachePolicy", value.asInstanceOf[js.Any])
       
@@ -2247,7 +2259,8 @@ object Trace {
       __obj.asInstanceOf[IQueryPlanNode]
     }
     
-    extension [Self <: IQueryPlanNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IQueryPlanNode] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: IFetchNode): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       

@@ -47,7 +47,8 @@ object ProgressViewIOSProps {
     __obj.asInstanceOf[ProgressViewIOSProps]
   }
   
-  extension [Self <: ProgressViewIOSProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressViewIOSProps] (val x: Self) extends AnyVal {
     
     inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     

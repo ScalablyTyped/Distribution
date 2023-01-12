@@ -18,7 +18,8 @@ object SourceConfiguration {
     __obj.asInstanceOf[SourceConfiguration]
   }
   
-  extension [Self <: SourceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSelectedVideoStreams(value: SelectedVideoStreams): Self = StObject.set(x, "SelectedVideoStreams", value.asInstanceOf[js.Any])
     

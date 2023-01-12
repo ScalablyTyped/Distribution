@@ -27,7 +27,8 @@ object libComponentsDetailsListDetailsRowCheckDottypesMod {
       __obj.asInstanceOf[IDetailsCheckboxProps]
     }
     
-    extension [Self <: IDetailsCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object libComponentsDetailsListDetailsRowCheckDottypesMod {
       __obj.asInstanceOf[IDetailsRowCheckProps]
     }
     
-    extension [Self <: IDetailsRowCheckProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsRowCheckProps] (val x: Self) extends AnyVal {
       
       inline def setAnySelected(value: Boolean): Self = StObject.set(x, "anySelected", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object libComponentsDetailsListDetailsRowCheckDottypesMod {
       __obj.asInstanceOf[IDetailsRowCheckStyleProps]
     }
     
-    extension [Self <: IDetailsRowCheckStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsRowCheckStyleProps] (val x: Self) extends AnyVal {
       
       inline def setAnySelected(value: Boolean): Self = StObject.set(x, "anySelected", value.asInstanceOf[js.Any])
       
@@ -230,7 +233,8 @@ object libComponentsDetailsListDetailsRowCheckDottypesMod {
       __obj.asInstanceOf[IDetailsRowCheckStyles]
     }
     
-    extension [Self <: IDetailsRowCheckStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsRowCheckStyles] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: IStyle): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       

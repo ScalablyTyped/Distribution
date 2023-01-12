@@ -17,7 +17,8 @@ object SearchShardsResponse {
     __obj.asInstanceOf[SearchShardsResponse]
   }
   
-  extension [Self <: SearchShardsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchShardsResponse] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

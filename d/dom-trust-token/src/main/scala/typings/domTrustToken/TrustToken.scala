@@ -28,7 +28,8 @@ object TrustToken {
     __obj.asInstanceOf[TrustToken]
   }
   
-  extension [Self <: TrustToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustToken] (val x: Self) extends AnyVal {
     
     inline def setAdditionalSignedHeaders(value: js.Array[String]): Self = StObject.set(x, "additionalSignedHeaders", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object FrameWaitForFunctionOptions {
     __obj.asInstanceOf[FrameWaitForFunctionOptions]
   }
   
-  extension [Self <: FrameWaitForFunctionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameWaitForFunctionOptions] (val x: Self) extends AnyVal {
     
     inline def setPolling(value: raf | mutation | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
     

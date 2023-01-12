@@ -15,7 +15,8 @@ object ApplicationsResource {
     __obj.asInstanceOf[ApplicationsResource]
   }
   
-  extension [Self <: ApplicationsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationsResource] (val x: Self) extends AnyVal {
     
     inline def setDeviceTierConfigs(value: DeviceTierConfigsResource): Self = StObject.set(x, "deviceTierConfigs", value.asInstanceOf[js.Any])
   }

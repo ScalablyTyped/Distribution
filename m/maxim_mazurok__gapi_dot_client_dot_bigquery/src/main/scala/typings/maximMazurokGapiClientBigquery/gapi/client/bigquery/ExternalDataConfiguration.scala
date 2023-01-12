@@ -89,7 +89,8 @@ object ExternalDataConfiguration {
     __obj.asInstanceOf[ExternalDataConfiguration]
   }
   
-  extension [Self <: ExternalDataConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalDataConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutodetect(value: Boolean): Self = StObject.set(x, "autodetect", value.asInstanceOf[js.Any])
     

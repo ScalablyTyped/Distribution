@@ -38,7 +38,8 @@ object UpdateJobQueueRequest {
     __obj.asInstanceOf[UpdateJobQueueRequest]
   }
   
-  extension [Self <: UpdateJobQueueRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateJobQueueRequest] (val x: Self) extends AnyVal {
     
     inline def setComputeEnvironmentOrder(value: ComputeEnvironmentOrders): Self = StObject.set(x, "computeEnvironmentOrder", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object NetworkFirewallInternetTrafficNotInspectedViolation {
     __obj.asInstanceOf[NetworkFirewallInternetTrafficNotInspectedViolation]
   }
   
-  extension [Self <: NetworkFirewallInternetTrafficNotInspectedViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFirewallInternetTrafficNotInspectedViolation] (val x: Self) extends AnyVal {
     
     inline def setActualFirewallSubnetRoutes(value: Routes): Self = StObject.set(x, "ActualFirewallSubnetRoutes", value.asInstanceOf[js.Any])
     

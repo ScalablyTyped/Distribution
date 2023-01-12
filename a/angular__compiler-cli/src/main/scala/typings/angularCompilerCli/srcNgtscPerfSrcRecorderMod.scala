@@ -64,7 +64,8 @@ object srcNgtscPerfSrcRecorderMod {
       __obj.asInstanceOf[PerfResults]
     }
     
-    extension [Self <: PerfResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerfResults] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: Record[String, Double]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       

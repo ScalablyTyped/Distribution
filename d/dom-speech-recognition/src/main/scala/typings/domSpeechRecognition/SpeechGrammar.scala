@@ -18,7 +18,8 @@ object SpeechGrammar {
     __obj.asInstanceOf[SpeechGrammar]
   }
   
-  extension [Self <: SpeechGrammar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechGrammar] (val x: Self) extends AnyVal {
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object RegionMapInputValue {
     __obj.asInstanceOf[RegionMapInputValue]
   }
   
-  extension [Self <: RegionMapInputValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionMapInputValue] (val x: Self) extends AnyVal {
     
     inline def setSseKmsKeyId(value: SseKmsKey): Self = StObject.set(x, "sseKmsKeyId", value.asInstanceOf[js.Any])
     

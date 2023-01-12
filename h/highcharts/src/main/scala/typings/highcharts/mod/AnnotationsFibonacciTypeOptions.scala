@@ -58,7 +58,8 @@ object AnnotationsFibonacciTypeOptions {
     __obj.asInstanceOf[AnnotationsFibonacciTypeOptions]
   }
   
-  extension [Self <: AnnotationsFibonacciTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsFibonacciTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColors(value: js.Object): Self = StObject.set(x, "backgroundColors", value.asInstanceOf[js.Any])
     

@@ -77,7 +77,8 @@ object GanttLocaleLabels {
     __obj.asInstanceOf[GanttLocaleLabels]
   }
   
-  extension [Self <: GanttLocaleLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttLocaleLabels] (val x: Self) extends AnyVal {
     
     inline def setConfirm_closing(value: String): Self = StObject.set(x, "confirm_closing", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GatewayRouteTarget {
     __obj.asInstanceOf[GatewayRouteTarget]
   }
   
-  extension [Self <: GatewayRouteTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayRouteTarget] (val x: Self) extends AnyVal {
     
     inline def setPort(value: ListenerPort): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     

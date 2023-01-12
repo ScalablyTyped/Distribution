@@ -19,7 +19,8 @@ object MetrosListResponse {
     __obj.asInstanceOf[MetrosListResponse]
   }
   
-  extension [Self <: MetrosListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetrosListResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

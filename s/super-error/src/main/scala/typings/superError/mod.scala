@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[SuperError]
     }
     
-    extension [Self <: SuperError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuperError] (val x: Self) extends AnyVal {
       
       inline def setCause(value: js.Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       

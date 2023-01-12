@@ -39,7 +39,8 @@ object ExpansionProfileFixedVersion {
     __obj.asInstanceOf[ExpansionProfileFixedVersion]
   }
   
-  extension [Self <: ExpansionProfileFixedVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpansionProfileFixedVersion] (val x: Self) extends AnyVal {
     
     inline def setMode(value: default | check | `override`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

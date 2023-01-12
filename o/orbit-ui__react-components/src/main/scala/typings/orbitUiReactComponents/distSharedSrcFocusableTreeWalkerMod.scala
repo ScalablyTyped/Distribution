@@ -40,7 +40,8 @@ object distSharedSrcFocusableTreeWalkerMod {
       __obj.asInstanceOf[FocusableTreeWalkerOptions]
     }
     
-    extension [Self <: FocusableTreeWalkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusableTreeWalkerOptions] (val x: Self) extends AnyVal {
       
       inline def setTabbable(value: Boolean): Self = StObject.set(x, "tabbable", value.asInstanceOf[js.Any])
       

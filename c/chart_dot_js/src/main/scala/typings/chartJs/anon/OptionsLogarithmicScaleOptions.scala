@@ -16,7 +16,8 @@ object OptionsLogarithmicScaleOptions {
     __obj.asInstanceOf[OptionsLogarithmicScaleOptions]
   }
   
-  extension [Self <: OptionsLogarithmicScaleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsLogarithmicScaleOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: LogarithmicScaleOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

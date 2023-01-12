@@ -40,7 +40,8 @@ object TextOptions {
     __obj.asInstanceOf[TextOptions]
   }
   
-  extension [Self <: TextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
     
     inline def setAnalysisScheme(value: Word): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
     

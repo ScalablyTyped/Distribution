@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Ack]
     }
     
-    extension [Self <: Ack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ack] (val x: Self) extends AnyVal {
       
       inline def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Devices]
     }
     
-    extension [Self <: Devices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Devices] (val x: Self) extends AnyVal {
       
       inline def setDevices(value: States): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     }
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Intent]
     }
     
-    extension [Self <: Intent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Intent] (val x: Self) extends AnyVal {
       
       inline def setIntent(value: actionDotdevicesDotDISCONNECT): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     }
@@ -84,7 +87,8 @@ object anon {
       __obj.asInstanceOf[ProtoAnystringJsonObject]
     }
     
-    extension [Self <: ProtoAnystringJsonObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtoAnystringJsonObject] (val x: Self) extends AnyVal {
       
       inline def `set@type`(value: String): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
     }
@@ -101,7 +105,8 @@ object anon {
       __obj.asInstanceOf[States]
     }
     
-    extension [Self <: States](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: States] (val x: Self) extends AnyVal {
       
       inline def setStates(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     }
@@ -119,7 +124,8 @@ object anon {
       __obj.asInstanceOf[Type[TType]]
     }
     
-    extension [Self <: Type[?], TType](x: Self & Type[TType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type[?], TType] (val x: Self & Type[TType]) extends AnyVal {
       
       inline def `set@type`(value: TType): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
     }
@@ -137,7 +143,8 @@ object anon {
       __obj.asInstanceOf[TypeChallengeType]
     }
     
-    extension [Self <: TypeChallengeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeChallengeType] (val x: Self) extends AnyVal {
       
       inline def setType(value: challengeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

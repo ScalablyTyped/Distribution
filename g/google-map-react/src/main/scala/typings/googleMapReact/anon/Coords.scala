@@ -15,7 +15,8 @@ object Coords {
     __obj.asInstanceOf[Coords]
   }
   
-  extension [Self <: Coords](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Coords] (val x: Self) extends AnyVal {
     
     inline def setCoords(value: typings.googleMapReact.mod.Coords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
   }

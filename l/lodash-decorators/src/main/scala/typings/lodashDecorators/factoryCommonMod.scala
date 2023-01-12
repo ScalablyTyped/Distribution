@@ -70,7 +70,8 @@ object factoryCommonMod {
       __obj.asInstanceOf[InstanceChainContext]
     }
     
-    extension [Self <: InstanceChainContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceChainContext] (val x: Self) extends AnyVal {
       
       inline def setGetter(value: Boolean): Self = StObject.set(x, "getter", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object factoryCommonMod {
       __obj.asInstanceOf[InstanceChainData]
     }
     
-    extension [Self <: InstanceChainData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceChainData] (val x: Self) extends AnyVal {
       
       inline def setFns(value: js.Array[js.Function]): Self = StObject.set(x, "fns", value.asInstanceOf[js.Any])
       

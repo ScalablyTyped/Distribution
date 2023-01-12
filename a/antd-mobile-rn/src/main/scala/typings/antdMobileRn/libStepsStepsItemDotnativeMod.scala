@@ -47,7 +47,8 @@ object libStepsStepsItemDotnativeMod {
       __obj.asInstanceOf[StepsItemProps]
     }
     
-    extension [Self <: StepsItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepsItemProps] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

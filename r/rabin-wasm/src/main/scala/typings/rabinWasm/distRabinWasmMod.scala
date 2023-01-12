@@ -157,7 +157,8 @@ object distRabinWasmMod {
         __obj.asInstanceOf[Rabin]
       }
       
-      extension [Self <: Rabin](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Rabin] (val x: Self) extends AnyVal {
         
         inline def setChunk_cut_fingerprint(value: u64): Self = StObject.set(x, "chunk_cut_fingerprint", value.asInstanceOf[js.Any])
         

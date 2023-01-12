@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[IKoaContextContainer]
     }
     
-    extension [Self <: IKoaContextContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKoaContextContainer] (val x: Self) extends AnyVal {
       
       inline def setCtx(value: Context): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     }
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[IStrategyOptions]
     }
     
-    extension [Self <: IStrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object mod {
       __obj.asInstanceOf[IVerifyOptions]
     }
     
-    extension [Self <: IVerifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVerifyOptions] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object mod {
       __obj.asInstanceOf[KoaPassportExpressRequestMock]
     }
     
-    extension [Self <: KoaPassportExpressRequestMock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KoaPassportExpressRequestMock] (val x: Self) extends AnyVal {
       
       inline def setAccepted(value: js.Array[MediaType]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
       

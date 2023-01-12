@@ -48,7 +48,8 @@ object StreetViewTileData {
     __obj.asInstanceOf[StreetViewTileData]
   }
   
-  extension [Self <: StreetViewTileData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreetViewTileData] (val x: Self) extends AnyVal {
     
     inline def setCenterHeading(value: Double): Self = StObject.set(x, "centerHeading", value.asInstanceOf[js.Any])
     

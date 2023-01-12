@@ -259,7 +259,8 @@ object libRestPreviewHostedNumbersHostedNumberOrderMod {
       __obj.asInstanceOf[HostedNumberOrderInstanceUpdateOptions]
     }
     
-    extension [Self <: HostedNumberOrderInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostedNumberOrderInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setCallDelay(value: Double): Self = StObject.set(x, "callDelay", value.asInstanceOf[js.Any])
       
@@ -508,7 +509,8 @@ object libRestPreviewHostedNumbersHostedNumberOrderMod {
       __obj.asInstanceOf[HostedNumberOrderListInstanceCreateOptions]
     }
     
-    extension [Self <: HostedNumberOrderListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostedNumberOrderListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setAccountSid(value: String): Self = StObject.set(x, "accountSid", value.asInstanceOf[js.Any])
       
@@ -634,7 +636,8 @@ object libRestPreviewHostedNumbersHostedNumberOrderMod {
       __obj.asInstanceOf[HostedNumberOrderListInstanceEachOptions]
     }
     
-    extension [Self <: HostedNumberOrderListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostedNumberOrderListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ HostedNumberOrderInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -718,7 +721,8 @@ object libRestPreviewHostedNumbersHostedNumberOrderMod {
       __obj.asInstanceOf[HostedNumberOrderListInstanceOptions]
     }
     
-    extension [Self <: HostedNumberOrderListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostedNumberOrderListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
@@ -787,7 +791,8 @@ object libRestPreviewHostedNumbersHostedNumberOrderMod {
       __obj.asInstanceOf[HostedNumberOrderListInstancePageOptions]
     }
     
-    extension [Self <: HostedNumberOrderListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostedNumberOrderListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
@@ -946,7 +951,8 @@ object libRestPreviewHostedNumbersHostedNumberOrderMod {
       __obj.asInstanceOf[HostedNumberOrderResource]
     }
     
-    extension [Self <: HostedNumberOrderResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostedNumberOrderResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       

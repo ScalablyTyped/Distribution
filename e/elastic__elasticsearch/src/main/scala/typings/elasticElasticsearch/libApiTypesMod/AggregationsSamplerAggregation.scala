@@ -17,7 +17,8 @@ object AggregationsSamplerAggregation {
     __obj.asInstanceOf[AggregationsSamplerAggregation]
   }
   
-  extension [Self <: AggregationsSamplerAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsSamplerAggregation] (val x: Self) extends AnyVal {
     
     inline def setShard_size(value: integer): Self = StObject.set(x, "shard_size", value.asInstanceOf[js.Any])
     

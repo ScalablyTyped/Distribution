@@ -18,7 +18,8 @@ object SnowflakeMetadata {
     __obj.asInstanceOf[SnowflakeMetadata]
   }
   
-  extension [Self <: SnowflakeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnowflakeMetadata] (val x: Self) extends AnyVal {
     
     inline def setSupportedRegions(value: RegionList): Self = StObject.set(x, "supportedRegions", value.asInstanceOf[js.Any])
     

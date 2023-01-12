@@ -19,7 +19,8 @@ object Reviewer {
     __obj.asInstanceOf[Reviewer]
   }
   
-  extension [Self <: Reviewer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reviewer] (val x: Self) extends AnyVal {
     
     inline def setReviewer(value: Partial[Avatarurl] & Partial[Parent]): Self = StObject.set(x, "reviewer", value.asInstanceOf[js.Any])
     

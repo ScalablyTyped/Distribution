@@ -140,7 +140,8 @@ object distTs3Dot9ClientApiMod {
       __obj.asInstanceOf[GetStorybookKind[TFramework]]
     }
     
-    extension [Self <: GetStorybookKind[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & GetStorybookKind[TFramework]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetStorybookKind[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & GetStorybookKind[TFramework]) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object distTs3Dot9ClientApiMod {
       __obj.asInstanceOf[GetStorybookStory[TFramework]]
     }
     
-    extension [Self <: GetStorybookStory[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & GetStorybookStory[TFramework]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetStorybookStory[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & GetStorybookStory[TFramework]) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

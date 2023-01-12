@@ -42,7 +42,8 @@ object XActivationBroadcaster {
     __obj.asInstanceOf[XActivationBroadcaster]
   }
   
-  extension [Self <: XActivationBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XActivationBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddActivationEventListener(value: XActivationEventListener => Unit): Self = StObject.set(x, "addActivationEventListener", js.Any.fromFunction1(value))
     

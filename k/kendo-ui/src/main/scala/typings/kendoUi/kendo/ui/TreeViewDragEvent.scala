@@ -28,7 +28,8 @@ object TreeViewDragEvent {
     __obj.asInstanceOf[TreeViewDragEvent]
   }
   
-  extension [Self <: TreeViewDragEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeViewDragEvent] (val x: Self) extends AnyVal {
     
     inline def setDropTarget(value: Element): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
     

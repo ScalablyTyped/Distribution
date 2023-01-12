@@ -82,7 +82,8 @@ object declarationInputTypeWheelInputMod {
       __obj.asInstanceOf[WheelInputOption]
     }
     
-    extension [Self <: WheelInputOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WheelInputOption] (val x: Self) extends AnyVal {
       
       inline def setReleaseDelay(value: Double): Self = StObject.set(x, "releaseDelay", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object XPackageStructureCreator {
     __obj.asInstanceOf[XPackageStructureCreator]
   }
   
-  extension [Self <: XPackageStructureCreator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPackageStructureCreator] (val x: Self) extends AnyVal {
     
     inline def setConvertToPackage(value: (String, XOutputStream) => Unit): Self = StObject.set(x, "convertToPackage", js.Any.fromFunction2(value))
   }

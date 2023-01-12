@@ -48,7 +48,8 @@ object RowSelectorClickedEventUIParam {
     __obj.asInstanceOf[RowSelectorClickedEventUIParam]
   }
   
-  extension [Self <: RowSelectorClickedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowSelectorClickedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setFixedRow(value: String): Self = StObject.set(x, "fixedRow", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object libComplexTypesMod {
       __obj.asInstanceOf[ComponentsWithNodeOptions]
     }
     
-    extension [Self <: ComponentsWithNodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentsWithNodeOptions] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: PartialTagNameinkeyofIntr): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object libComplexTypesMod {
       __obj.asInstanceOf[ComponentsWithoutNodeOptions]
     }
     
-    extension [Self <: ComponentsWithoutNodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentsWithoutNodeOptions] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: PartialTagNameinkeyofIntrA): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object libComplexTypesMod {
       __obj.asInstanceOf[WithNode]
     }
     
-    extension [Self <: WithNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithNode] (val x: Self) extends AnyVal {
       
       inline def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }

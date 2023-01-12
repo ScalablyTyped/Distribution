@@ -25,7 +25,8 @@ object TsTypeReference {
     __obj.asInstanceOf[TsTypeReference]
   }
   
-  extension [Self <: TsTypeReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsTypeReference] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.swcCore.swcCoreStrings.TsTypeReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object StringOptions {
     __obj.asInstanceOf[StringOptions[Format]]
   }
   
-  extension [Self <: StringOptions[?], Format /* <: String */](x: Self & StringOptions[Format]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringOptions[?], Format /* <: String */] (val x: Self & StringOptions[Format]) extends AnyVal {
     
     inline def setContentEncoding(value: `7bit` | `8bit` | binary | `quoted-printable` | base64): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
     

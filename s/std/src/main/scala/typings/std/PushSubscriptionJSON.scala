@@ -22,7 +22,8 @@ object PushSubscriptionJSON {
     __obj.asInstanceOf[PushSubscriptionJSON]
   }
   
-  extension [Self <: PushSubscriptionJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushSubscriptionJSON] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: java.lang.String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

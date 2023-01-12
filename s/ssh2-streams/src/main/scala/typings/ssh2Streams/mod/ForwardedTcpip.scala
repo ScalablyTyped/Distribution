@@ -21,7 +21,8 @@ object ForwardedTcpip {
     __obj.asInstanceOf[ForwardedTcpip]
   }
   
-  extension [Self <: ForwardedTcpip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardedTcpip] (val x: Self) extends AnyVal {
     
     inline def setBindAddr(value: String): Self = StObject.set(x, "bindAddr", value.asInstanceOf[js.Any])
     

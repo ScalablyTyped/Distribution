@@ -23,7 +23,8 @@ object DeleteBucketAccessKeyRequest {
     __obj.asInstanceOf[DeleteBucketAccessKeyRequest]
   }
   
-  extension [Self <: DeleteBucketAccessKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBucketAccessKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyId(value: NonEmptyString): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     

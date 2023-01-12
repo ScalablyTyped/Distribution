@@ -53,7 +53,8 @@ object CreateScheduledActionMessage {
     __obj.asInstanceOf[CreateScheduledActionMessage]
   }
   
-  extension [Self <: CreateScheduledActionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateScheduledActionMessage] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: BooleanOptional): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
     

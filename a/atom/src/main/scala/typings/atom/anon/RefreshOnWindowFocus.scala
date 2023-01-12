@@ -15,7 +15,8 @@ object RefreshOnWindowFocus {
     __obj.asInstanceOf[RefreshOnWindowFocus]
   }
   
-  extension [Self <: RefreshOnWindowFocus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshOnWindowFocus] (val x: Self) extends AnyVal {
     
     inline def setRefreshOnWindowFocus(value: Boolean): Self = StObject.set(x, "refreshOnWindowFocus", value.asInstanceOf[js.Any])
     

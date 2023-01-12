@@ -24,7 +24,8 @@ object dragdropmanager {
       __obj.asInstanceOf[IElementWrapper]
     }
     
-    extension [Self <: IElementWrapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IElementWrapper] (val x: Self) extends AnyVal {
       
       inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       

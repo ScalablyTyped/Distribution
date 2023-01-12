@@ -15,7 +15,8 @@ object ChangeWipeCode {
     __obj.asInstanceOf[ChangeWipeCode]
   }
   
-  extension [Self <: ChangeWipeCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeWipeCode] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     

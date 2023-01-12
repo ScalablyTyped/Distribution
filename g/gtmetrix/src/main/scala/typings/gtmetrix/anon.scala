@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyAccountStatus]
     }
     
-    extension [Self <: ReadonlyAccountStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyAccountStatus] (val x: Self) extends AnyVal {
       
       inline def setApi_credits(value: Double): Self = StObject.set(x, "api_credits", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyBrowserFeatures]
     }
     
-    extension [Self <: ReadonlyBrowserFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyBrowserFeatures] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -414,7 +416,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyBuffer]
     }
     
-    extension [Self <: ReadonlyBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyBuffer] (val x: Self) extends AnyVal {
       
       inline def setAt(value: Double => js.UndefOr[Double]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       
@@ -618,7 +621,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyTestBasicInfo]
     }
     
-    extension [Self <: ReadonlyTestBasicInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyTestBasicInfo] (val x: Self) extends AnyVal {
       
       inline def setCredits_left(value: Double): Self = StObject.set(x, "credits_left", value.asInstanceOf[js.Any])
       
@@ -646,7 +650,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyTestDetails]
     }
     
-    extension [Self <: ReadonlyTestDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyTestDetails] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

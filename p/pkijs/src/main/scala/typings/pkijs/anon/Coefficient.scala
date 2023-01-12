@@ -19,7 +19,8 @@ object Coefficient {
     __obj.asInstanceOf[Coefficient]
   }
   
-  extension [Self <: Coefficient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Coefficient] (val x: Self) extends AnyVal {
     
     inline def setCoefficient(value: String): Self = StObject.set(x, "coefficient", value.asInstanceOf[js.Any])
     

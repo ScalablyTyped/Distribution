@@ -18,7 +18,8 @@ object DescribeTaskRequest {
     __obj.asInstanceOf[DescribeTaskRequest]
   }
   
-  extension [Self <: DescribeTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setTaskArn(value: TaskArn): Self = StObject.set(x, "TaskArn", value.asInstanceOf[js.Any])
   }

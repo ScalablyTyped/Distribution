@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsTextAlignRightMod extends Shor
       __obj.asInstanceOf[TextAlignRightProps]
     }
     
-    extension [Self <: TextAlignRightProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAlignRightProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Allow]
     }
     
-    extension [Self <: Allow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Allow] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Background]
     }
     
-    extension [Self <: Background](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
       
       inline def setBackground(
         value: typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentInts.`0`]
@@ -155,7 +158,8 @@ object anon {
       __obj.asInstanceOf[Border]
     }
     
-    extension [Self <: Border](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
       
       inline def setBackground(
         value: typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentInts.`0`]
@@ -188,7 +192,8 @@ object anon {
       __obj.asInstanceOf[Button]
     }
     
-    extension [Self <: Button](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
       
       inline def setButton(value: Border): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -221,7 +226,8 @@ object anon {
       __obj.asInstanceOf[Callback]
     }
     
-    extension [Self <: Callback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (js.Function1[/* resp */ ServiceResponse, Unit], String) => ServiceResponse): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -264,7 +270,8 @@ object anon {
       __obj.asInstanceOf[Close]
     }
     
-    extension [Self <: Close](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
@@ -311,7 +318,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -330,7 +338,8 @@ object anon {
       __obj.asInstanceOf[CountryCode]
     }
     
-    extension [Self <: CountryCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountryCode] (val x: Self) extends AnyVal {
       
       inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
       
@@ -361,7 +370,8 @@ object anon {
       __obj.asInstanceOf[Domain]
     }
     
-    extension [Self <: Domain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -400,7 +410,8 @@ object anon {
       __obj.asInstanceOf[ServiceDefinitions]
     }
     
-    extension [Self <: ServiceDefinitions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceDefinitions] (val x: Self) extends AnyVal {
       
       inline def setServiceDefinitions(value: StringDictionary[ServiceDefinition]): Self = StObject.set(x, "serviceDefinitions", value.asInstanceOf[js.Any])
       

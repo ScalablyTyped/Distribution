@@ -19,7 +19,8 @@ object SortProperty {
     __obj.asInstanceOf[SortProperty]
   }
   
-  extension [Self <: SortProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortProperty] (val x: Self) extends AnyVal {
     
     inline def setIsDescending(value: NullableOption[Boolean]): Self = StObject.set(x, "isDescending", value.asInstanceOf[js.Any])
     

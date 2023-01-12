@@ -52,7 +52,8 @@ object iframeConfig {
     __obj.asInstanceOf[iframeConfig]
   }
   
-  extension [Self <: iframeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: iframeConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PutItemInput {
     __obj.asInstanceOf[PutItemInput]
   }
   
-  extension [Self <: PutItemInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutItemInput] (val x: Self) extends AnyVal {
     
     inline def setTableName(value: TableName): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
   }

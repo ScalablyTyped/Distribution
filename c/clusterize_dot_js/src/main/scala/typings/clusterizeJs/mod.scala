@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[Callbacks]
     }
     
-    extension [Self <: Callbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
       
       inline def setClusterChanged(value: () => Unit): Self = StObject.set(x, "clusterChanged", js.Any.fromFunction0(value))
       

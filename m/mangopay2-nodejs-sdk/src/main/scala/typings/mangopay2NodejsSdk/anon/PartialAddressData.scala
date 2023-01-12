@@ -27,7 +27,8 @@ object PartialAddressData {
     __obj.asInstanceOf[PartialAddressData]
   }
   
-  extension [Self <: PartialAddressData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAddressData] (val x: Self) extends AnyVal {
     
     inline def setAddressLine1(value: String): Self = StObject.set(x, "AddressLine1", value.asInstanceOf[js.Any])
     

@@ -197,7 +197,8 @@ object CompletionItem {
     */
   inline def create(label: String): CompletionItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[CompletionItem]
   
-  extension [Self <: CompletionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionItem] (val x: Self) extends AnyVal {
     
     inline def setAdditionalTextEdits(value: js.Array[TextEdit]): Self = StObject.set(x, "additionalTextEdits", value.asInstanceOf[js.Any])
     

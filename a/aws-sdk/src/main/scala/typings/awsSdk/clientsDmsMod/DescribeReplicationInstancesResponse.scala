@@ -23,7 +23,8 @@ object DescribeReplicationInstancesResponse {
     __obj.asInstanceOf[DescribeReplicationInstancesResponse]
   }
   
-  extension [Self <: DescribeReplicationInstancesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReplicationInstancesResponse] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

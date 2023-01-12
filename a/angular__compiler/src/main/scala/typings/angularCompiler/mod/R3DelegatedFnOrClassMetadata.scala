@@ -32,7 +32,8 @@ object R3DelegatedFnOrClassMetadata {
     __obj.asInstanceOf[R3DelegatedFnOrClassMetadata]
   }
   
-  extension [Self <: R3DelegatedFnOrClassMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DelegatedFnOrClassMetadata] (val x: Self) extends AnyVal {
     
     inline def setDelegate(value: Expression): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     

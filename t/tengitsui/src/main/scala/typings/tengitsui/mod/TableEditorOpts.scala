@@ -17,7 +17,8 @@ object TableEditorOpts {
     __obj.asInstanceOf[TableEditorOpts]
   }
   
-  extension [Self <: TableEditorOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableEditorOpts] (val x: Self) extends AnyVal {
     
     inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
     

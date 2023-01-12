@@ -15,7 +15,8 @@ object IWwwFormUrlDecoderRuntimeClassFactory {
     __obj.asInstanceOf[IWwwFormUrlDecoderRuntimeClassFactory]
   }
   
-  extension [Self <: IWwwFormUrlDecoderRuntimeClassFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWwwFormUrlDecoderRuntimeClassFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateWwwFormUrlDecoder(value: String => WwwFormUrlDecoder): Self = StObject.set(x, "createWwwFormUrlDecoder", js.Any.fromFunction1(value))
   }

@@ -23,7 +23,8 @@ object GetScriptSourceResponse {
     __obj.asInstanceOf[GetScriptSourceResponse]
   }
   
-  extension [Self <: GetScriptSourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScriptSourceResponse] (val x: Self) extends AnyVal {
     
     inline def setBytecode(value: String): Self = StObject.set(x, "bytecode", value.asInstanceOf[js.Any])
     

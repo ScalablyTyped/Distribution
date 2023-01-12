@@ -16,7 +16,8 @@ object PendingGoogleUpdateInsight {
     __obj.asInstanceOf[PendingGoogleUpdateInsight]
   }
   
-  extension [Self <: PendingGoogleUpdateInsight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingGoogleUpdateInsight] (val x: Self) extends AnyVal {
     
     inline def setNameOfGoogleLibrary(value: String): Self = StObject.set(x, "nameOfGoogleLibrary", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object StepOutput {
     __obj.asInstanceOf[StepOutput]
   }
   
-  extension [Self <: StepOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOutput] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: DataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

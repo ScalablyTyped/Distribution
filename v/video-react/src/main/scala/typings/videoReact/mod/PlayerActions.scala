@@ -80,7 +80,8 @@ object PlayerActions {
     __obj.asInstanceOf[PlayerActions]
   }
   
-  extension [Self <: PlayerActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerActions] (val x: Self) extends AnyVal {
     
     inline def setAddTextTrack(value: () => Unit): Self = StObject.set(x, "addTextTrack", js.Any.fromFunction0(value))
     

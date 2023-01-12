@@ -28,7 +28,8 @@ object DeleteEventRequest {
     __obj.asInstanceOf[DeleteEventRequest]
   }
   
-  extension [Self <: DeleteEventRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEventRequest] (val x: Self) extends AnyVal {
     
     inline def setDeleteAuditHistory(value: DeleteAuditHistory): Self = StObject.set(x, "deleteAuditHistory", value.asInstanceOf[js.Any])
     

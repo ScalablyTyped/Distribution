@@ -25,7 +25,8 @@ object LexV2Bot {
     __obj.asInstanceOf[LexV2Bot]
   }
   
-  extension [Self <: LexV2Bot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2Bot] (val x: Self) extends AnyVal {
     
     inline def setAliasId(value: String): Self = StObject.set(x, "aliasId", value.asInstanceOf[js.Any])
     

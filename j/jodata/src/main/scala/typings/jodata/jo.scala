@@ -141,7 +141,8 @@ object jo {
       __obj.asInstanceOf[Concat]
     }
     
-    extension [Self <: Concat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Concat] (val x: Self) extends AnyVal {
       
       inline def setLeftSide(value: String | Concat): Self = StObject.set(x, "LeftSide", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object jo {
       __obj.asInstanceOf[ExpandSettings]
     }
     
-    extension [Self <: ExpandSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandSettings] (val x: Self) extends AnyVal {
       
       inline def setDefaultExpand(value: String): Self = StObject.set(x, "DefaultExpand", value.asInstanceOf[js.Any])
       
@@ -306,7 +308,8 @@ object jo {
       __obj.asInstanceOf[FilterSettings]
     }
     
-    extension [Self <: FilterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterSettings] (val x: Self) extends AnyVal {
       
       inline def setCapturedFilter(value: js.Array[FilterClause]): Self = StObject.set(x, "CapturedFilter", value.asInstanceOf[js.Any])
       
@@ -343,7 +346,8 @@ object jo {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setAtom(value: () => jo): Self = StObject.set(x, "atom", js.Any.fromFunction0(value))
       
@@ -370,7 +374,8 @@ object jo {
       __obj.asInstanceOf[FormatSettings]
     }
     
-    extension [Self <: FormatSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatSettings] (val x: Self) extends AnyVal {
       
       inline def setDefaultFormat(value: String): Self = StObject.set(x, "DefaultFormat", value.asInstanceOf[js.Any])
       
@@ -393,7 +398,8 @@ object jo {
       __obj.asInstanceOf[ISettings]
     }
     
-    extension [Self <: ISettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettings] (val x: Self) extends AnyVal {
       
       inline def setIsSet(value: () => Boolean): Self = StObject.set(x, "isSet", js.Any.fromFunction0(value))
       
@@ -414,7 +420,8 @@ object jo {
       __obj.asInstanceOf[InlineCountOptions]
     }
     
-    extension [Self <: InlineCountOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineCountOptions] (val x: Self) extends AnyVal {
       
       inline def setAllPages(value: () => jo): Self = StObject.set(x, "allPages", js.Any.fromFunction0(value))
       
@@ -437,7 +444,8 @@ object jo {
       __obj.asInstanceOf[InlineCountSettings]
     }
     
-    extension [Self <: InlineCountSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineCountSettings] (val x: Self) extends AnyVal {
       
       inline def setDefaultInlineCount(value: String): Self = StObject.set(x, "DefaultInlineCount", value.asInstanceOf[js.Any])
       
@@ -471,7 +479,8 @@ object jo {
       __obj.asInstanceOf[OrderBySettings]
     }
     
-    extension [Self <: OrderBySettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrderBySettings] (val x: Self) extends AnyVal {
       
       inline def setDefaultOrder(value: String): Self = StObject.set(x, "DefaultOrder", value.asInstanceOf[js.Any])
       
@@ -496,7 +505,8 @@ object jo {
       __obj.asInstanceOf[PrecedenceGroup]
     }
     
-    extension [Self <: PrecedenceGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrecedenceGroup] (val x: Self) extends AnyVal {
       
       inline def setAndFilter(value: FilterClause => FilterClause): Self = StObject.set(x, "andFilter", js.Any.fromFunction1(value))
       
@@ -519,7 +529,8 @@ object jo {
       __obj.asInstanceOf[SelectSettings]
     }
     
-    extension [Self <: SelectSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectSettings] (val x: Self) extends AnyVal {
       
       inline def setDefaultSelect(value: js.Array[String]): Self = StObject.set(x, "DefaultSelect", value.asInstanceOf[js.Any])
       
@@ -546,7 +557,8 @@ object jo {
       __obj.asInstanceOf[SkipSettings]
     }
     
-    extension [Self <: SkipSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipSettings] (val x: Self) extends AnyVal {
       
       inline def setDefaultSkip(value: Double): Self = StObject.set(x, "DefaultSkip", value.asInstanceOf[js.Any])
       
@@ -569,7 +581,8 @@ object jo {
       __obj.asInstanceOf[TopSettings]
     }
     
-    extension [Self <: TopSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopSettings] (val x: Self) extends AnyVal {
       
       inline def setDefaultTop(value: Double): Self = StObject.set(x, "DefaultTop", value.asInstanceOf[js.Any])
       

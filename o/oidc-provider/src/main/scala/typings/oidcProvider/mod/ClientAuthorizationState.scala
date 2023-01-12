@@ -19,7 +19,8 @@ object ClientAuthorizationState {
     __obj.asInstanceOf[ClientAuthorizationState]
   }
   
-  extension [Self <: ClientAuthorizationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientAuthorizationState] (val x: Self) extends AnyVal {
     
     inline def setGrantId(value: String): Self = StObject.set(x, "grantId", value.asInstanceOf[js.Any])
     

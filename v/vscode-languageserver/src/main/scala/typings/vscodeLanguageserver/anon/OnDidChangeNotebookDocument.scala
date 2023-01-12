@@ -32,7 +32,8 @@ object OnDidChangeNotebookDocument {
     __obj.asInstanceOf[OnDidChangeNotebookDocument]
   }
   
-  extension [Self <: OnDidChangeNotebookDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDidChangeNotebookDocument] (val x: Self) extends AnyVal {
     
     inline def setOnDidChangeNotebookDocument(value: NotificationHandler1[DidChangeNotebookDocumentParams] => Disposable): Self = StObject.set(x, "onDidChangeNotebookDocument", js.Any.fromFunction1(value))
     

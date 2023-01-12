@@ -23,7 +23,8 @@ object TxType {
     __obj.asInstanceOf[TxType]
   }
   
-  extension [Self <: TxType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TxType] (val x: Self) extends AnyVal {
     
     inline def setTx(value: RippleLibTransaction): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
     

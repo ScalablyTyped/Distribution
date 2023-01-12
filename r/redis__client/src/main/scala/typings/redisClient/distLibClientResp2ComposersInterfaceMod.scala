@@ -22,7 +22,8 @@ object distLibClientResp2ComposersInterfaceMod {
       __obj.asInstanceOf[Composer[T]]
     }
     
-    extension [Self <: Composer[?], T](x: Self & Composer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Composer[?], T] (val x: Self & Composer[T]) extends AnyVal {
       
       inline def setEnd(value: Buffer => T): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       

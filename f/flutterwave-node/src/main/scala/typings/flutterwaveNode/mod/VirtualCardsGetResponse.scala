@@ -18,7 +18,8 @@ object VirtualCardsGetResponse {
     __obj.asInstanceOf[VirtualCardsGetResponse]
   }
   
-  extension [Self <: VirtualCardsGetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualCardsGetResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Bincheckname): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

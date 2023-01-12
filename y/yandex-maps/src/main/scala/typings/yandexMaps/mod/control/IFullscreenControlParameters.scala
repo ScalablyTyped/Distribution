@@ -22,7 +22,8 @@ object IFullscreenControlParameters {
     __obj.asInstanceOf[IFullscreenControlParameters]
   }
   
-  extension [Self <: IFullscreenControlParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFullscreenControlParameters] (val x: Self) extends AnyVal {
     
     inline def setData(value: Title): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

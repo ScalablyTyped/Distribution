@@ -32,7 +32,8 @@ object ConformanceRestInteraction {
     __obj.asInstanceOf[ConformanceRestInteraction]
   }
   
-  extension [Self <: ConformanceRestInteraction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformanceRestInteraction] (val x: Self) extends AnyVal {
     
     inline def setCode(value: transaction | `search-system` | `history-system`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

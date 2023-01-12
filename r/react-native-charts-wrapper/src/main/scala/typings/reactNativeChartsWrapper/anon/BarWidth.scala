@@ -17,7 +17,8 @@ object BarWidth {
     __obj.asInstanceOf[BarWidth]
   }
   
-  extension [Self <: BarWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarWidth] (val x: Self) extends AnyVal {
     
     inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
     

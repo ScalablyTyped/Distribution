@@ -18,7 +18,8 @@ object NotifyWorkersResponse {
     __obj.asInstanceOf[NotifyWorkersResponse]
   }
   
-  extension [Self <: NotifyWorkersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyWorkersResponse] (val x: Self) extends AnyVal {
     
     inline def setNotifyWorkersFailureStatuses(value: NotifyWorkersFailureStatusList): Self = StObject.set(x, "NotifyWorkersFailureStatuses", value.asInstanceOf[js.Any])
     

@@ -658,7 +658,8 @@ object amLegendMod {
       __obj.asInstanceOf[AmLegend]
     }
     
-    extension [Self <: AmLegend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AmLegend] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: (String, js.Function1[/* e */ DataItem, Unit]) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       

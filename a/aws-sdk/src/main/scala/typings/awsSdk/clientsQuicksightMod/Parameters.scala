@@ -33,7 +33,8 @@ object Parameters {
     __obj.asInstanceOf[Parameters]
   }
   
-  extension [Self <: Parameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
     
     inline def setDateTimeParameters(value: DateTimeParameterList): Self = StObject.set(x, "DateTimeParameters", value.asInstanceOf[js.Any])
     

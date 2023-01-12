@@ -32,7 +32,8 @@ object TagNamesOptions {
     __obj.asInstanceOf[TagNamesOptions]
   }
   
-  extension [Self <: TagNamesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagNamesOptions] (val x: Self) extends AnyVal {
     
     inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     

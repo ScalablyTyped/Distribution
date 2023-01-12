@@ -33,7 +33,8 @@ object UpdateRevisionRequest {
     __obj.asInstanceOf[UpdateRevisionRequest]
   }
   
-  extension [Self <: UpdateRevisionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRevisionRequest] (val x: Self) extends AnyVal {
     
     inline def setComment(value: stringMin0Max16384): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

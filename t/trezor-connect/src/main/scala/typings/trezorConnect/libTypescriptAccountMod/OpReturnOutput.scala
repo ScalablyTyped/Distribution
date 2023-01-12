@@ -21,7 +21,8 @@ object OpReturnOutput {
     __obj.asInstanceOf[OpReturnOutput]
   }
   
-  extension [Self <: OpReturnOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpReturnOutput] (val x: Self) extends AnyVal {
     
     inline def setDataHex(value: String): Self = StObject.set(x, "dataHex", value.asInstanceOf[js.Any])
     

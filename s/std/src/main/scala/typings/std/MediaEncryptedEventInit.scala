@@ -21,7 +21,8 @@ object MediaEncryptedEventInit {
     __obj.asInstanceOf[MediaEncryptedEventInit]
   }
   
-  extension [Self <: MediaEncryptedEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaEncryptedEventInit] (val x: Self) extends AnyVal {
     
     inline def setInitData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "initData", value.asInstanceOf[js.Any])
     

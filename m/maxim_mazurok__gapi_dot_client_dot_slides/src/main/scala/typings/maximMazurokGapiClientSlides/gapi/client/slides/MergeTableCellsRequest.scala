@@ -22,7 +22,8 @@ object MergeTableCellsRequest {
     __obj.asInstanceOf[MergeTableCellsRequest]
   }
   
-  extension [Self <: MergeTableCellsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeTableCellsRequest] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

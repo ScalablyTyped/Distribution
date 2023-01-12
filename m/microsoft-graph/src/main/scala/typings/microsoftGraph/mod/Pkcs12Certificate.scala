@@ -24,7 +24,8 @@ object Pkcs12Certificate {
     __obj.asInstanceOf[Pkcs12Certificate]
   }
   
-  extension [Self <: Pkcs12Certificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pkcs12Certificate] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: NullableOption[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

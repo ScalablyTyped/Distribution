@@ -28,7 +28,8 @@ object ListExclusionsRequest {
     __obj.asInstanceOf[ListExclusionsRequest]
   }
   
-  extension [Self <: ListExclusionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListExclusionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
     

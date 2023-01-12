@@ -27,7 +27,8 @@ object AppStateStatic {
     __obj.asInstanceOf[AppStateStatic]
   }
   
-  extension [Self <: AppStateStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppStateStatic] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (AppStateEvent, js.Function1[/* state */ AppStateStatus, Unit]) => NativeEventSubscription): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

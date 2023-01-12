@@ -19,7 +19,8 @@ object JwtAuthorizer {
     __obj.asInstanceOf[JwtAuthorizer]
   }
   
-  extension [Self <: JwtAuthorizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JwtAuthorizer] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

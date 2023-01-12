@@ -32,7 +32,8 @@ object ISourceObjectFiles {
     __obj.asInstanceOf[ISourceObjectFiles]
   }
   
-  extension [Self <: ISourceObjectFiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISourceObjectFiles] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, ISourceObjectFile) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

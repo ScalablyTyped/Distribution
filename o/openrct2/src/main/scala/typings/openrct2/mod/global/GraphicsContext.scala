@@ -67,7 +67,8 @@ object GraphicsContext {
     __obj.asInstanceOf[GraphicsContext]
   }
   
-  extension [Self <: GraphicsContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicsContext] (val x: Self) extends AnyVal {
     
     inline def setBox(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "box", js.Any.fromFunction4(value))
     

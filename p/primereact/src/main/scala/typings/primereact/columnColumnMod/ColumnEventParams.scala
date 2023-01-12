@@ -47,7 +47,8 @@ object ColumnEventParams {
     __obj.asInstanceOf[ColumnEventParams]
   }
   
-  extension [Self <: ColumnEventParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnEventParams] (val x: Self) extends AnyVal {
     
     inline def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
     

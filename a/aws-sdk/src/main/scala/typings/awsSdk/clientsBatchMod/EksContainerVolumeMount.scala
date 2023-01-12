@@ -28,7 +28,8 @@ object EksContainerVolumeMount {
     __obj.asInstanceOf[EksContainerVolumeMount]
   }
   
-  extension [Self <: EksContainerVolumeMount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EksContainerVolumeMount] (val x: Self) extends AnyVal {
     
     inline def setMountPath(value: String): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
     

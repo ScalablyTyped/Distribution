@@ -19,7 +19,8 @@ object EnumerateLoadedClassesOptions {
     __obj.asInstanceOf[EnumerateLoadedClassesOptions]
   }
   
-  extension [Self <: EnumerateLoadedClassesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumerateLoadedClassesOptions] (val x: Self) extends AnyVal {
     
     inline def setOwnedBy(value: ModuleMap): Self = StObject.set(x, "ownedBy", value.asInstanceOf[js.Any])
     

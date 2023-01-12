@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[ActionURL]
     }
     
-    extension [Self <: ActionURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionURL] (val x: Self) extends AnyVal {
       
       inline def setActionURL(value: String): Self = StObject.set(x, "actionURL", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[AtMobiles]
     }
     
-    extension [Self <: AtMobiles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AtMobiles] (val x: Self) extends AnyVal {
       
       inline def setAtMobiles(value: js.Array[String]): Self = StObject.set(x, "atMobiles", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[BtnOrientation]
     }
     
-    extension [Self <: BtnOrientation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BtnOrientation] (val x: Self) extends AnyVal {
       
       inline def setBtnOrientation(value: `0` | `1`): Self = StObject.set(x, "btnOrientation", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
@@ -135,7 +139,8 @@ object anon {
       __obj.asInstanceOf[IsAtAll]
     }
     
-    extension [Self <: IsAtAll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsAtAll] (val x: Self) extends AnyVal {
       
       inline def setAtMobiles(value: js.Array[String]): Self = StObject.set(x, "atMobiles", value.asInstanceOf[js.Any])
       
@@ -164,7 +169,8 @@ object anon {
       __obj.asInstanceOf[MessageURL_]
     }
     
-    extension [Self <: MessageURL_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageURL_] (val x: Self) extends AnyVal {
       
       inline def setMessageURL(value: String): Self = StObject.set(x, "messageURL", value.asInstanceOf[js.Any])
       
@@ -191,7 +197,8 @@ object anon {
       __obj.asInstanceOf[MessageUrl]
     }
     
-    extension [Self <: MessageUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageUrl] (val x: Self) extends AnyVal {
       
       inline def setMessageUrl(value: String): Self = StObject.set(x, "messageUrl", value.asInstanceOf[js.Any])
       

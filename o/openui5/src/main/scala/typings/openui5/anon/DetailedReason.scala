@@ -20,7 +20,8 @@ object DetailedReason {
     __obj.asInstanceOf[DetailedReason]
   }
   
-  extension [Self <: DetailedReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedReason] (val x: Self) extends AnyVal {
     
     inline def setDetailedReason(value: String): Self = StObject.set(x, "detailedReason", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Buttonid]
     }
     
-    extension [Self <: Buttonid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buttonid] (val x: Self) extends AnyVal {
       
       inline def setButton_id(value: String): Self = StObject.set(x, "button_id", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[IsStateStable]
     }
     
-    extension [Self <: IsStateStable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsStateStable] (val x: Self) extends AnyVal {
       
       inline def setIsStateStable(value: Boolean): Self = StObject.set(x, "isStateStable", value.asInstanceOf[js.Any])
     }
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[typedefaultdestructivetex]
     }
     
-    extension [Self <: typedefaultdestructivetex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typedefaultdestructivetex] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -131,7 +134,8 @@ object anon {
       __obj.asInstanceOf[typeokclosecanceltextstri]
     }
     
-    extension [Self <: typeokclosecanceltextstri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typeokclosecanceltextstri] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object ERN {
     __obj.asInstanceOf[ERN]
   }
   
-  extension [Self <: ERN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ERN] (val x: Self) extends AnyVal {
     
     inline def setERN(value: js.Array[String]): Self = StObject.set(x, "ERN", value.asInstanceOf[js.Any])
     

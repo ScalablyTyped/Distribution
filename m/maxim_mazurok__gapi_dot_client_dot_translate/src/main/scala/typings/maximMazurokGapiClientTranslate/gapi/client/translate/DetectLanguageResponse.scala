@@ -16,7 +16,8 @@ object DetectLanguageResponse {
     __obj.asInstanceOf[DetectLanguageResponse]
   }
   
-  extension [Self <: DetectLanguageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectLanguageResponse] (val x: Self) extends AnyVal {
     
     inline def setLanguages(value: js.Array[DetectedLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     

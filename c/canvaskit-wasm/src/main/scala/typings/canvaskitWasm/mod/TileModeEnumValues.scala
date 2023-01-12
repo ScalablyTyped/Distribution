@@ -23,7 +23,8 @@ object TileModeEnumValues {
     __obj.asInstanceOf[TileModeEnumValues]
   }
   
-  extension [Self <: TileModeEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileModeEnumValues] (val x: Self) extends AnyVal {
     
     inline def setClamp(value: TileMode): Self = StObject.set(x, "Clamp", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object IndicesCloseCloseShardResult {
     __obj.asInstanceOf[IndicesCloseCloseShardResult]
   }
   
-  extension [Self <: IndicesCloseCloseShardResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesCloseCloseShardResult] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: js.Array[ShardFailure]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

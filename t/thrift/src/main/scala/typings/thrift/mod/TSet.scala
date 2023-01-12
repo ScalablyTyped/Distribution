@@ -18,7 +18,8 @@ object TSet {
     __obj.asInstanceOf[TSet]
   }
   
-  extension [Self <: TSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSet] (val x: Self) extends AnyVal {
     
     inline def setEtype(value: Type): Self = StObject.set(x, "etype", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ItunesOptions {
     __obj.asInstanceOf[ItunesOptions]
   }
   
-  extension [Self <: ItunesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItunesOptions] (val x: Self) extends AnyVal {
     
     inline def setAppleWidgetKey(value: String): Self = StObject.set(x, "appleWidgetKey", value.asInstanceOf[js.Any])
     

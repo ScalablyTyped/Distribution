@@ -78,7 +78,8 @@ object PageData {
     __obj.asInstanceOf[PageData]
   }
   
-  extension [Self <: PageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageData] (val x: Self) extends AnyVal {
     
     inline def setClassNotebookPageSource(value: String): Self = StObject.set(x, "classNotebookPageSource", value.asInstanceOf[js.Any])
     

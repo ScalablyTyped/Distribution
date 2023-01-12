@@ -755,7 +755,8 @@ object sapMPluginsDataStateIndicatorMod {
       __obj.asInstanceOf[DataStateIndicatorSettings]
     }
     
-    extension [Self <: DataStateIndicatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataStateIndicatorSettings] (val x: Self) extends AnyVal {
       
       inline def setApplyFilter(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "applyFilter", js.Any.fromFunction1(value))
       

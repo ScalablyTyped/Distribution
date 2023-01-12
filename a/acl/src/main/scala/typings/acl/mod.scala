@@ -221,7 +221,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AclAllow]
     }
     
-    extension [Self <: AclAllow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AclAllow] (val x: Self) extends AnyVal {
       
       inline def setPermissions(value: strings): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
@@ -246,7 +247,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AclSet]
     }
     
-    extension [Self <: AclSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AclSet] (val x: Self) extends AnyVal {
       
       inline def setAllows(value: js.Array[AclAllow]): Self = StObject.set(x, "allows", value.asInstanceOf[js.Any])
       
@@ -347,7 +349,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BucketsOption]
     }
     
-    extension [Self <: BucketsOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketsOption] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
@@ -408,7 +411,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: String => Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     }
@@ -449,7 +453,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NoOp]
     }
     
-    extension [Self <: NoOp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoOp] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
@@ -468,7 +473,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setBuckets(value: BucketsOption): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
       

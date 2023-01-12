@@ -20,7 +20,8 @@ object RowsChangeEvent {
     __obj.asInstanceOf[RowsChangeEvent]
   }
   
-  extension [Self <: RowsChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowsChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setBookmarks(value: SafeArray[Any]): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
   }

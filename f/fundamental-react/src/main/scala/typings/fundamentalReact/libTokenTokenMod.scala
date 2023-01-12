@@ -38,7 +38,8 @@ object libTokenTokenMod extends Shortcut {
       __obj.asInstanceOf[TokenProps]
     }
     
-    extension [Self <: TokenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenProps] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       

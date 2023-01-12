@@ -24,7 +24,8 @@ object ResolvingProgressEvent {
     __obj.asInstanceOf[ResolvingProgressEvent]
   }
   
-  extension [Self <: ResolvingProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvingProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setDependency(value: Dependency): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
     

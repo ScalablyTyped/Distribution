@@ -99,7 +99,8 @@ object ComputeResource {
     __obj.asInstanceOf[ComputeResource]
   }
   
-  extension [Self <: ComputeResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeResource] (val x: Self) extends AnyVal {
     
     inline def setAllocationStrategy(value: CRAllocationStrategy): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
     

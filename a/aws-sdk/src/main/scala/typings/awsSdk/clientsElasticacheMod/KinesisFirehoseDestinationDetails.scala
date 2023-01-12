@@ -18,7 +18,8 @@ object KinesisFirehoseDestinationDetails {
     __obj.asInstanceOf[KinesisFirehoseDestinationDetails]
   }
   
-  extension [Self <: KinesisFirehoseDestinationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisFirehoseDestinationDetails] (val x: Self) extends AnyVal {
     
     inline def setDeliveryStream(value: String): Self = StObject.set(x, "DeliveryStream", value.asInstanceOf[js.Any])
     

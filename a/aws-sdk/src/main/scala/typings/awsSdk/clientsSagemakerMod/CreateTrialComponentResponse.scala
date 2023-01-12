@@ -18,7 +18,8 @@ object CreateTrialComponentResponse {
     __obj.asInstanceOf[CreateTrialComponentResponse]
   }
   
-  extension [Self <: CreateTrialComponentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTrialComponentResponse] (val x: Self) extends AnyVal {
     
     inline def setTrialComponentArn(value: TrialComponentArn): Self = StObject.set(x, "TrialComponentArn", value.asInstanceOf[js.Any])
     

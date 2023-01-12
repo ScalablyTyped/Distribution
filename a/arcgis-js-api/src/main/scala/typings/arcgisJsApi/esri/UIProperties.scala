@@ -39,7 +39,8 @@ object UIProperties {
     __obj.asInstanceOf[UIProperties]
   }
   
-  extension [Self <: UIProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIProperties] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TicketType {
     __obj.asInstanceOf[TicketType]
   }
   
-  extension [Self <: TicketType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TicketType] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

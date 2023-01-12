@@ -21,7 +21,8 @@ object IndexReference {
     __obj.asInstanceOf[IndexReference]
   }
   
-  extension [Self <: IndexReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexReference] (val x: Self) extends AnyVal {
     
     inline def setMatchIndex(value: Double): Self = StObject.set(x, "matchIndex", value.asInstanceOf[js.Any])
     

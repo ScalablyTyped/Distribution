@@ -21,7 +21,8 @@ object MapLayerDefaultsBubbleStyleStroke {
     __obj.asInstanceOf[MapLayerDefaultsBubbleStyleStroke]
   }
   
-  extension [Self <: MapLayerDefaultsBubbleStyleStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLayerDefaultsBubbleStyleStroke] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

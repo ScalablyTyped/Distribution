@@ -17,7 +17,8 @@ object IKernelChangedArgs {
     __obj.asInstanceOf[IKernelChangedArgs]
   }
   
-  extension [Self <: IKernelChangedArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKernelChangedArgs] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: IKernel): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     

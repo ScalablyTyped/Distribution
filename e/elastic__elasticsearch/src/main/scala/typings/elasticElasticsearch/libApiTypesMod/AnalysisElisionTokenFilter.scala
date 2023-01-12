@@ -26,7 +26,8 @@ object AnalysisElisionTokenFilter {
     __obj.asInstanceOf[AnalysisElisionTokenFilter]
   }
   
-  extension [Self <: AnalysisElisionTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisElisionTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setArticles(value: js.Array[String]): Self = StObject.set(x, "articles", value.asInstanceOf[js.Any])
     

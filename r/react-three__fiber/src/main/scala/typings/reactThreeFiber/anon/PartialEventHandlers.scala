@@ -44,7 +44,8 @@ object PartialEventHandlers {
     __obj.asInstanceOf[PartialEventHandlers]
   }
   
-  extension [Self <: PartialEventHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialEventHandlers] (val x: Self) extends AnyVal {
     
     inline def setOnClick(value: /* event */ ThreeEvent[MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     

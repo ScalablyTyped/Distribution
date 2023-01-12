@@ -23,7 +23,8 @@ object UpdateContinuousBackupsInput {
     __obj.asInstanceOf[UpdateContinuousBackupsInput]
   }
   
-  extension [Self <: UpdateContinuousBackupsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateContinuousBackupsInput] (val x: Self) extends AnyVal {
     
     inline def setPointInTimeRecoverySpecification(value: PointInTimeRecoverySpecification): Self = StObject.set(x, "PointInTimeRecoverySpecification", value.asInstanceOf[js.Any])
     

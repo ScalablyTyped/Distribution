@@ -15,7 +15,8 @@ object ɵNOCHANGE {
   @js.native
   val ^ : ɵNOCHANGE = js.native
   
-  extension [Self <: ɵNOCHANGE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ɵNOCHANGE] (val x: Self) extends AnyVal {
     
     inline def set__brand__(value: NO_CHANGE): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }

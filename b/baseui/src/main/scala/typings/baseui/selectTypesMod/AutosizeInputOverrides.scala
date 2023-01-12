@@ -16,7 +16,8 @@ object AutosizeInputOverrides {
     __obj.asInstanceOf[AutosizeInputOverrides]
   }
   
-  extension [Self <: AutosizeInputOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutosizeInputOverrides] (val x: Self) extends AnyVal {
     
     inline def setInput(value: Override[Any]): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     

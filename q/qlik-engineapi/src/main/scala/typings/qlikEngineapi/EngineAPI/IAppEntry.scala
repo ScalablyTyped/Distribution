@@ -59,7 +59,8 @@ object IAppEntry {
     __obj.asInstanceOf[IAppEntry]
   }
   
-  extension [Self <: IAppEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAppEntry] (val x: Self) extends AnyVal {
     
     inline def setQID(value: String): Self = StObject.set(x, "qID", value.asInstanceOf[js.Any])
     

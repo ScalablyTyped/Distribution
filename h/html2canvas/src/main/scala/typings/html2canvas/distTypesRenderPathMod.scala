@@ -30,7 +30,8 @@ object distTypesRenderPathMod {
       __obj.asInstanceOf[IPath]
     }
     
-    extension [Self <: IPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPath] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (Double, Double) => IPath): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       

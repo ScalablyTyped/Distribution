@@ -23,7 +23,8 @@ object TimePeriod {
     __obj.asInstanceOf[TimePeriod]
   }
   
-  extension [Self <: TimePeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimePeriod] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: js.Date): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     

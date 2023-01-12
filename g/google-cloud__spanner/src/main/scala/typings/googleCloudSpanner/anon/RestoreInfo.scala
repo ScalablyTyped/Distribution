@@ -16,7 +16,8 @@ object RestoreInfo {
     __obj.asInstanceOf[RestoreInfo]
   }
   
-  extension [Self <: RestoreInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreInfo] (val x: Self) extends AnyVal {
     
     inline def setRestoreInfo(value: IRestoreInfoTranslatedEnum): Self = StObject.set(x, "restoreInfo", value.asInstanceOf[js.Any])
     

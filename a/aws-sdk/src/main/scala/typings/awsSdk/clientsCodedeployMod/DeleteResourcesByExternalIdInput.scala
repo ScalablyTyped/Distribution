@@ -18,7 +18,8 @@ object DeleteResourcesByExternalIdInput {
     __obj.asInstanceOf[DeleteResourcesByExternalIdInput]
   }
   
-  extension [Self <: DeleteResourcesByExternalIdInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResourcesByExternalIdInput] (val x: Self) extends AnyVal {
     
     inline def setExternalId(value: ExternalId): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     

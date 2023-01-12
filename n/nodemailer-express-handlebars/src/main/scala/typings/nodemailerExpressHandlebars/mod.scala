@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[NodemailerExpressHandlebarsOptions]
     }
     
-    extension [Self <: NodemailerExpressHandlebarsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodemailerExpressHandlebarsOptions] (val x: Self) extends AnyVal {
       
       inline def setExtName(value: String): Self = StObject.set(x, "extName", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[TemplateOptions]
     }
     
-    extension [Self <: TemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

@@ -59,7 +59,8 @@ object stylesTransitionsMod {
       __obj.asInstanceOf[Duration_]
     }
     
-    extension [Self <: Duration_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duration_] (val x: Self) extends AnyVal {
       
       inline def setComplex(value: Double): Self = StObject.set(x, "complex", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object stylesTransitionsMod {
       __obj.asInstanceOf[Easing_]
     }
     
-    extension [Self <: Easing_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Easing_] (val x: Self) extends AnyVal {
       
       inline def setEaseIn(value: String): Self = StObject.set(x, "easeIn", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object stylesTransitionsMod {
       __obj.asInstanceOf[TransitionsOptions]
     }
     
-    extension [Self <: TransitionsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionsOptions] (val x: Self) extends AnyVal {
       
       inline def setCreate(
         value: (/* props */ String | js.Array[String], /* options */ js.UndefOr[Partialdurationnumberstri]) => String

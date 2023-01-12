@@ -20,7 +20,8 @@ object WorkflowPreviousOptions {
     __obj.asInstanceOf[WorkflowPreviousOptions]
   }
   
-  extension [Self <: WorkflowPreviousOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowPreviousOptions] (val x: Self) extends AnyVal {
     
     inline def setCancelCurrentStep(value: Boolean): Self = StObject.set(x, "cancelCurrentStep", value.asInstanceOf[js.Any])
   }

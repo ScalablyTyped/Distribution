@@ -18,7 +18,8 @@ object ClassificationExportConfiguration {
     __obj.asInstanceOf[ClassificationExportConfiguration]
   }
   
-  extension [Self <: ClassificationExportConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassificationExportConfiguration] (val x: Self) extends AnyVal {
     
     inline def setS3Destination(value: S3Destination): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
     

@@ -128,7 +128,8 @@ object srcNgtscIncrementalSemanticGraphSrcGraphMod {
       __obj.asInstanceOf[SemanticDependencyResult]
     }
     
-    extension [Self <: SemanticDependencyResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticDependencyResult] (val x: Self) extends AnyVal {
       
       inline def setNeedsEmit(value: Set[AbsoluteFsPath]): Self = StObject.set(x, "needsEmit", value.asInstanceOf[js.Any])
       

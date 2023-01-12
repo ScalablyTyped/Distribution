@@ -19,7 +19,8 @@ object TaskBoardPreviewPane {
     __obj.asInstanceOf[TaskBoardPreviewPane]
   }
   
-  extension [Self <: TaskBoardPreviewPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardPreviewPane] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[TaskBoardPreviewPaneButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

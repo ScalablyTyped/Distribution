@@ -95,7 +95,8 @@ object DvtDiagramLayoutContextLink {
     __obj.asInstanceOf[DvtDiagramLayoutContextLink]
   }
   
-  extension [Self <: DvtDiagramLayoutContextLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DvtDiagramLayoutContextLink] (val x: Self) extends AnyVal {
     
     inline def setGetCoordinateSpace(value: () => Any): Self = StObject.set(x, "getCoordinateSpace", js.Any.fromFunction0(value))
     

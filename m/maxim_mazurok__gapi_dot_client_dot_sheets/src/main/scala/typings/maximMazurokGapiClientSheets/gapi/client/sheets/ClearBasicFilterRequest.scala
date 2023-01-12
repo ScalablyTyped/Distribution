@@ -16,7 +16,8 @@ object ClearBasicFilterRequest {
     __obj.asInstanceOf[ClearBasicFilterRequest]
   }
   
-  extension [Self <: ClearBasicFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearBasicFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     

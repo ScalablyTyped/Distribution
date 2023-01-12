@@ -36,7 +36,8 @@ object libCoreAccessTokenRequestMod {
       __obj.asInstanceOf[AccessTokenRequestHeaders]
     }
     
-    extension [Self <: AccessTokenRequestHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessTokenRequestHeaders] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
       

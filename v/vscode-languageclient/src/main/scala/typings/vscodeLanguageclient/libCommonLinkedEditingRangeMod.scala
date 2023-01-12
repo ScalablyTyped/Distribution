@@ -54,7 +54,8 @@ object libCommonLinkedEditingRangeMod {
       __obj.asInstanceOf[LinkedEditingRangeMiddleware]
     }
     
-    extension [Self <: LinkedEditingRangeMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkedEditingRangeMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideLinkedEditingRange(
         value: js.ThisFunction4[

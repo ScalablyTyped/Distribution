@@ -41,7 +41,8 @@ object AutoscalingPolicyScalingSchedule {
     __obj.asInstanceOf[AutoscalingPolicyScalingSchedule]
   }
   
-  extension [Self <: AutoscalingPolicyScalingSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingPolicyScalingSchedule] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

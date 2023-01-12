@@ -272,7 +272,8 @@ object ISyntaxVisitor {
     __obj.asInstanceOf[ISyntaxVisitor]
   }
   
-  extension [Self <: ISyntaxVisitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyntaxVisitor] (val x: Self) extends AnyVal {
     
     inline def setVisitArgumentList(value: ArgumentListSyntax => Any): Self = StObject.set(x, "visitArgumentList", js.Any.fromFunction1(value))
     

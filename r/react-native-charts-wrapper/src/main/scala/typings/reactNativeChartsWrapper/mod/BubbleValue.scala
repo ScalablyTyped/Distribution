@@ -21,7 +21,8 @@ object BubbleValue {
     __obj.asInstanceOf[BubbleValue]
   }
   
-  extension [Self <: BubbleValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BubbleValue] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     

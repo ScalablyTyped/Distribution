@@ -29,7 +29,8 @@ object libPlotsWaterfallTypesMod {
       __obj.asInstanceOf[LeaderLineCfg]
     }
     
-    extension [Self <: LeaderLineCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeaderLineCfg] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: ShapeStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object libPlotsWaterfallTypesMod {
       __obj.asInstanceOf[TotalCfg]
     }
     
-    extension [Self <: TotalCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TotalCfg] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object libPlotsWaterfallTypesMod {
       __obj.asInstanceOf[WaterfallOptions]
     }
     
-    extension [Self <: WaterfallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaterfallOptions] (val x: Self) extends AnyVal {
       
       inline def setColumnWidthRatio(value: Double): Self = StObject.set(x, "columnWidthRatio", value.asInstanceOf[js.Any])
       

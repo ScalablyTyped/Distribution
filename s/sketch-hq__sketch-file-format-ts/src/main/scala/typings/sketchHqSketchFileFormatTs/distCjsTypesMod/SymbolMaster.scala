@@ -137,7 +137,8 @@ object SymbolMaster {
     __obj.asInstanceOf[SymbolMaster]
   }
   
-  extension [Self <: SymbolMaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolMaster] (val x: Self) extends AnyVal {
     
     inline def setAllowsOverrides(value: Boolean): Self = StObject.set(x, "allowsOverrides", value.asInstanceOf[js.Any])
     

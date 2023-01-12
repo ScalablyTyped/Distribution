@@ -19,7 +19,8 @@ object ExcludeOrphans {
     __obj.asInstanceOf[ExcludeOrphans]
   }
   
-  extension [Self <: ExcludeOrphans](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludeOrphans] (val x: Self) extends AnyVal {
     
     inline def setExcludeOrphans(value: Boolean): Self = StObject.set(x, "excludeOrphans", value.asInstanceOf[js.Any])
     

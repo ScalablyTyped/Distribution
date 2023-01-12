@@ -21,7 +21,8 @@ object HistoryOptions {
     __obj.asInstanceOf[HistoryOptions]
   }
   
-  extension [Self <: HistoryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryOptions] (val x: Self) extends AnyVal {
     
     inline def setHashChange(value: Boolean): Self = StObject.set(x, "hashChange", value.asInstanceOf[js.Any])
     

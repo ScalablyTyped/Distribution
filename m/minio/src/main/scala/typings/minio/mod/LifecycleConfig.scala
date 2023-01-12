@@ -17,7 +17,8 @@ object LifecycleConfig {
     __obj.asInstanceOf[LifecycleConfig]
   }
   
-  extension [Self <: LifecycleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecycleConfig] (val x: Self) extends AnyVal {
     
     inline def setRule(value: js.Array[LifecycleRule]): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
     

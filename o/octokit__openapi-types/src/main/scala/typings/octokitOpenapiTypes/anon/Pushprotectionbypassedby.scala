@@ -85,7 +85,8 @@ object Pushprotectionbypassedby {
     __obj.asInstanceOf[Pushprotectionbypassedby]
   }
   
-  extension [Self <: Pushprotectionbypassedby](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pushprotectionbypassedby] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['alert-created-at'] */ js.Any

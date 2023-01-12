@@ -21,7 +21,8 @@ object Typeofgemfile {
     __obj.asInstanceOf[Typeofgemfile]
   }
   
-  extension [Self <: Typeofgemfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofgemfile] (val x: Self) extends AnyVal {
     
     inline def setCanHandle(value: String => Boolean): Self = StObject.set(x, "canHandle", js.Any.fromFunction1(value))
     

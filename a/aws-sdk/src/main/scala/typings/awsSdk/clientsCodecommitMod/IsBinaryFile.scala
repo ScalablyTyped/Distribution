@@ -28,7 +28,8 @@ object IsBinaryFile {
     __obj.asInstanceOf[IsBinaryFile]
   }
   
-  extension [Self <: IsBinaryFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsBinaryFile] (val x: Self) extends AnyVal {
     
     inline def setBase(value: CapitalBoolean): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object ContextInformation {
     __obj.asInstanceOf[ContextInformation]
   }
   
-  extension [Self <: ContextInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextInformation] (val x: Self) extends AnyVal {
     
     inline def setEndColumn(value: Double): Self = StObject.set(x, "EndColumn", value.asInstanceOf[js.Any])
     

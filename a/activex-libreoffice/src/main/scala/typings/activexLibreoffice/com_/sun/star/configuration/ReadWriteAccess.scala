@@ -44,7 +44,8 @@ object ReadWriteAccess {
     __obj.asInstanceOf[ReadWriteAccess]
   }
   
-  extension [Self <: ReadWriteAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadWriteAccess] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

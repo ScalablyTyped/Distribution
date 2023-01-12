@@ -30,7 +30,8 @@ object FilterOptionsRequest {
     __obj.asInstanceOf[FilterOptionsRequest]
   }
   
-  extension [Self <: FilterOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setRModel(value: XModel): Self = StObject.set(x, "rModel", value.asInstanceOf[js.Any])
     

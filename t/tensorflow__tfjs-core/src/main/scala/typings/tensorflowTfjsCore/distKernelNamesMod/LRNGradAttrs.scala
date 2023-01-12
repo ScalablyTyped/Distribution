@@ -21,7 +21,8 @@ object LRNGradAttrs {
     __obj.asInstanceOf[LRNGradAttrs]
   }
   
-  extension [Self <: LRNGradAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LRNGradAttrs] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

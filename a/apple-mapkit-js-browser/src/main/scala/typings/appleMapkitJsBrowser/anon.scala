@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Annotation]
     }
     
-    extension [Self <: Annotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
       
       inline def setAnnotation(value: typings.appleMapkitJsBrowser.mapkit.Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[AnnotationAnnotation]
     }
     
-    extension [Self <: AnnotationAnnotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationAnnotation] (val x: Self) extends AnyVal {
       
       inline def setAnnotation(value: typings.appleMapkitJsBrowser.mapkit.Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     }
@@ -94,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -118,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Coordinate]
     }
     
-    extension [Self <: Coordinate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
       
       inline def setAnnotation(value: typings.appleMapkitJsBrowser.mapkit.Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
       
@@ -155,7 +160,8 @@ object anon {
       __obj.asInstanceOf[DisplayRegion[Q]]
     }
     
-    extension [Self <: DisplayRegion[?], Q](x: Self & DisplayRegion[Q]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayRegion[?], Q] (val x: Self & DisplayRegion[Q]) extends AnyVal {
       
       inline def setDisplayRegion(value: CoordinateRegion): Self = StObject.set(x, "displayRegion", value.asInstanceOf[js.Any])
       
@@ -184,7 +190,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -204,7 +211,8 @@ object anon {
       __obj.asInstanceOf[PickGeocoderConstructorOp]
     }
     
-    extension [Self <: PickGeocoderConstructorOp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickGeocoderConstructorOp] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -225,7 +233,8 @@ object anon {
       __obj.asInstanceOf[Timestamp]
     }
     
-    extension [Self <: Timestamp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
       
       inline def setCoordinate(value: typings.appleMapkitJsBrowser.mapkit.Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
       

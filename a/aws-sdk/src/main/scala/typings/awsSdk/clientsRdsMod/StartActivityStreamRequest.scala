@@ -38,7 +38,8 @@ object StartActivityStreamRequest {
     __obj.asInstanceOf[StartActivityStreamRequest]
   }
   
-  extension [Self <: StartActivityStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartActivityStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setApplyImmediately(value: BooleanOptional): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     

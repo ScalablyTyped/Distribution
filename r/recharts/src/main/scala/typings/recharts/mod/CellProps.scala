@@ -178,7 +178,8 @@ object CellProps {
     __obj.asInstanceOf[CellProps]
   }
   
-  extension [Self <: CellProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

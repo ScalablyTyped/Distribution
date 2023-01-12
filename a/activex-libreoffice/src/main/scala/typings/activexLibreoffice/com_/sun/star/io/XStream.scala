@@ -38,7 +38,8 @@ object XStream {
     __obj.asInstanceOf[XStream]
   }
   
-  extension [Self <: XStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStream] (val x: Self) extends AnyVal {
     
     inline def setGetInputStream(value: () => XInputStream): Self = StObject.set(x, "getInputStream", js.Any.fromFunction0(value))
     

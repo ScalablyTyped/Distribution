@@ -51,7 +51,8 @@ object symbologyDotDensity {
     __obj.asInstanceOf[symbologyDotDensity]
   }
   
-  extension [Self <: symbologyDotDensity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: symbologyDotDensity] (val x: Self) extends AnyVal {
     
     inline def setCloneScheme(value: DotDensityScheme => DotDensityScheme): Self = StObject.set(x, "cloneScheme", js.Any.fromFunction1(value))
     

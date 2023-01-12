@@ -51,7 +51,8 @@ object PerceptionDepthCorrelatedCoordinateMapper {
     __obj.asInstanceOf[PerceptionDepthCorrelatedCoordinateMapper]
   }
   
-  extension [Self <: PerceptionDepthCorrelatedCoordinateMapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerceptionDepthCorrelatedCoordinateMapper] (val x: Self) extends AnyVal {
     
     inline def setMapAllPixelsToTargetAsync(value: PerceptionDepthFrame => TargetCoordinates): Self = StObject.set(x, "mapAllPixelsToTargetAsync", js.Any.fromFunction1(value))
     

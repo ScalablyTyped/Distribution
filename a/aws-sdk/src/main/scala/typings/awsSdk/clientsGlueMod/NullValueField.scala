@@ -23,7 +23,8 @@ object NullValueField {
     __obj.asInstanceOf[NullValueField]
   }
   
-  extension [Self <: NullValueField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullValueField] (val x: Self) extends AnyVal {
     
     inline def setDatatype(value: Datatype): Self = StObject.set(x, "Datatype", value.asInstanceOf[js.Any])
     

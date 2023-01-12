@@ -49,7 +49,8 @@ object PartialVisitor {
     __obj.asInstanceOf[PartialVisitor]
   }
   
-  extension [Self <: PartialVisitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialVisitor] (val x: Self) extends AnyVal {
     
     inline def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     

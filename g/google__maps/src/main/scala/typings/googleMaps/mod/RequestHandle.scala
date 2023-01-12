@@ -28,7 +28,8 @@ object RequestHandle {
     __obj.asInstanceOf[RequestHandle[T]]
   }
   
-  extension [Self <: RequestHandle[?], T](x: Self & RequestHandle[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestHandle[?], T] (val x: Self & RequestHandle[T]) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object typesReferenceDoesNotExistExceptionMod {
       __obj.asInstanceOf[ReferenceDoesNotExistException]
     }
     
-    extension [Self <: ReferenceDoesNotExistException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceDoesNotExistException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ReferenceDoesNotExistException

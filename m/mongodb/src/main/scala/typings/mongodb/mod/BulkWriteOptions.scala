@@ -31,7 +31,8 @@ object BulkWriteOptions {
     __obj.asInstanceOf[BulkWriteOptions]
   }
   
-  extension [Self <: BulkWriteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkWriteOptions] (val x: Self) extends AnyVal {
     
     inline def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
     

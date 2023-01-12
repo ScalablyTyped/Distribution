@@ -20,7 +20,8 @@ object IBItemidstringplaceholder {
     __obj.asInstanceOf[IBItemidstringplaceholder]
   }
   
-  extension [Self <: IBItemidstringplaceholder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBItemidstringplaceholder] (val x: Self) extends AnyVal {
     
     inline def set$(value: Id): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

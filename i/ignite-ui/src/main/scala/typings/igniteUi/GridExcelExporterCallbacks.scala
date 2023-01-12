@@ -151,7 +151,8 @@ object GridExcelExporterCallbacks {
     __obj.asInstanceOf[GridExcelExporterCallbacks]
   }
   
-  extension [Self <: GridExcelExporterCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridExcelExporterCallbacks] (val x: Self) extends AnyVal {
     
     inline def setCellExported(value: js.Function): Self = StObject.set(x, "cellExported", value.asInstanceOf[js.Any])
     

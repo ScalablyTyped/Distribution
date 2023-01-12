@@ -47,7 +47,8 @@ object XPagePrintable {
     __obj.asInstanceOf[XPagePrintable]
   }
   
-  extension [Self <: XPagePrintable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPagePrintable] (val x: Self) extends AnyVal {
     
     inline def setGetPagePrintSettings(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPagePrintSettings", js.Any.fromFunction0(value))
     

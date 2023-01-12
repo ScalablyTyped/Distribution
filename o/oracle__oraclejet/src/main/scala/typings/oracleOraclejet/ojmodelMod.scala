@@ -365,7 +365,8 @@ object ojmodelMod {
         __obj.asInstanceOf[CustomPagingOptionsReturn]
       }
       
-      extension [Self <: CustomPagingOptionsReturn](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomPagingOptionsReturn] (val x: Self) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
@@ -405,7 +406,8 @@ object ojmodelMod {
         __obj.asInstanceOf[SetRangeLocalPromise]
       }
       
-      extension [Self <: SetRangeLocalPromise](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetRangeLocalPromise] (val x: Self) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         

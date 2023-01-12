@@ -16,7 +16,8 @@ object SubExchangeAssignedTargetingOptionDetails {
     __obj.asInstanceOf[SubExchangeAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: SubExchangeAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubExchangeAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     

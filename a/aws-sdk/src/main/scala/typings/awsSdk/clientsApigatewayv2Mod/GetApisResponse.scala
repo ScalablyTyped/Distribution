@@ -23,7 +23,8 @@ object GetApisResponse {
     __obj.asInstanceOf[GetApisResponse]
   }
   
-  extension [Self <: GetApisResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApisResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: listOfApi): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

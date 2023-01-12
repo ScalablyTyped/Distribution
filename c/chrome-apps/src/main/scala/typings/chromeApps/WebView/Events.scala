@@ -336,7 +336,8 @@ object Events {
       __obj.asInstanceOf[LoadRedirectEvent]
     }
     
-    extension [Self <: LoadRedirectEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadRedirectEvent] (val x: Self) extends AnyVal {
       
       inline def setIsTopLevel(value: Boolean): Self = StObject.set(x, "isTopLevel", value.asInstanceOf[js.Any])
       
@@ -692,7 +693,8 @@ object Events {
       __obj.asInstanceOf[WebViewElementEventMap]
     }
     
-    extension [Self <: WebViewElementEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebViewElementEventMap] (val x: Self) extends AnyVal {
       
       inline def setClose(value: CloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       

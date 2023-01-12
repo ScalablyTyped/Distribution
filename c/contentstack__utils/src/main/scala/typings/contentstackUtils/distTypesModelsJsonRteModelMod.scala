@@ -20,7 +20,8 @@ object distTypesModelsJsonRteModelMod {
       __obj.asInstanceOf[EmbeddedConnection]
     }
     
-    extension [Self <: EmbeddedConnection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbeddedConnection] (val x: Self) extends AnyVal {
       
       inline def setEdges(value: js.Array[Node]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object distTypesModelsJsonRteModelMod {
       __obj.asInstanceOf[EntryNode]
     }
     
-    extension [Self <: EntryNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryNode] (val x: Self) extends AnyVal {
       
       inline def setSystem(value: SystemField): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     }
@@ -60,7 +62,8 @@ object distTypesModelsJsonRteModelMod {
       __obj.asInstanceOf[JsonRTE]
     }
     
-    extension [Self <: JsonRTE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonRTE] (val x: Self) extends AnyVal {
       
       inline def setEmbedded_itemsConnection(value: EmbeddedConnection): Self = StObject.set(x, "embedded_itemsConnection", value.asInstanceOf[js.Any])
       
@@ -87,7 +90,8 @@ object distTypesModelsJsonRteModelMod {
       __obj.asInstanceOf[SystemField]
     }
     
-    extension [Self <: SystemField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SystemField] (val x: Self) extends AnyVal {
       
       inline def setContent_type_uid(value: String): Self = StObject.set(x, "content_type_uid", value.asInstanceOf[js.Any])
       

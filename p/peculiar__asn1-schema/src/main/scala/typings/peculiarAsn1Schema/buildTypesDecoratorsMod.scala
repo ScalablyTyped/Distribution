@@ -72,7 +72,8 @@ object buildTypesDecoratorsMod {
       __obj.asInstanceOf[IAsn1PropOptions]
     }
     
-    extension [Self <: IAsn1PropOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsn1PropOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Double): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object buildTypesDecoratorsMod {
       __obj.asInstanceOf[IAsn1SequenceOptions]
     }
     
-    extension [Self <: IAsn1SequenceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsn1SequenceOptions] (val x: Self) extends AnyVal {
       
       inline def setItemType(value: AsnItemType[Any]): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object buildTypesDecoratorsMod {
       __obj.asInstanceOf[IAsn1SetOptions]
     }
     
-    extension [Self <: IAsn1SetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsn1SetOptions] (val x: Self) extends AnyVal {
       
       inline def setItemType(value: AsnItemType[Any]): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
     }
@@ -152,7 +155,8 @@ object buildTypesDecoratorsMod {
       __obj.asInstanceOf[IAsn1TypeOptions]
     }
     
-    extension [Self <: IAsn1TypeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsn1TypeOptions] (val x: Self) extends AnyVal {
       
       inline def setItemType(value: AsnItemType[Any]): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       

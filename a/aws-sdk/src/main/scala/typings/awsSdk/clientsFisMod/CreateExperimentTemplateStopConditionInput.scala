@@ -23,7 +23,8 @@ object CreateExperimentTemplateStopConditionInput {
     __obj.asInstanceOf[CreateExperimentTemplateStopConditionInput]
   }
   
-  extension [Self <: CreateExperimentTemplateStopConditionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateExperimentTemplateStopConditionInput] (val x: Self) extends AnyVal {
     
     inline def setSource(value: StopConditionSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

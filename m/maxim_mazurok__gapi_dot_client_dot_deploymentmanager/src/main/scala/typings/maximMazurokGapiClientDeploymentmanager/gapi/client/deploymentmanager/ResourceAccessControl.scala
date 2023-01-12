@@ -16,7 +16,8 @@ object ResourceAccessControl {
     __obj.asInstanceOf[ResourceAccessControl]
   }
   
-  extension [Self <: ResourceAccessControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceAccessControl] (val x: Self) extends AnyVal {
     
     inline def setGcpIamPolicy(value: String): Self = StObject.set(x, "gcpIamPolicy", value.asInstanceOf[js.Any])
     

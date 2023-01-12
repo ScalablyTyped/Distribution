@@ -18,7 +18,8 @@ object GetConnectPeerResponse {
     __obj.asInstanceOf[GetConnectPeerResponse]
   }
   
-  extension [Self <: GetConnectPeerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConnectPeerResponse] (val x: Self) extends AnyVal {
     
     inline def setConnectPeer(value: ConnectPeer): Self = StObject.set(x, "ConnectPeer", value.asInstanceOf[js.Any])
     

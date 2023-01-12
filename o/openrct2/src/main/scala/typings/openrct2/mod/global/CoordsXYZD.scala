@@ -23,7 +23,8 @@ object CoordsXYZD {
     __obj.asInstanceOf[CoordsXYZD]
   }
   
-  extension [Self <: CoordsXYZD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordsXYZD] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }

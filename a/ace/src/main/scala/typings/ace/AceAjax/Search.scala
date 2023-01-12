@@ -58,7 +58,8 @@ object Search {
     __obj.asInstanceOf[Search]
   }
   
-  extension [Self <: Search](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
     
     inline def setFind(value: IEditSession => Range): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     

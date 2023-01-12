@@ -19,7 +19,8 @@ object WatcherAckWatchRequest {
     __obj.asInstanceOf[WatcherAckWatchRequest]
   }
   
-  extension [Self <: WatcherAckWatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherAckWatchRequest] (val x: Self) extends AnyVal {
     
     inline def setAction_id(value: Names): Self = StObject.set(x, "action_id", value.asInstanceOf[js.Any])
     

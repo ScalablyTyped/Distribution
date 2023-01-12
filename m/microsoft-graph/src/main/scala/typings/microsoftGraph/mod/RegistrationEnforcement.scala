@@ -16,7 +16,8 @@ object RegistrationEnforcement {
     __obj.asInstanceOf[RegistrationEnforcement]
   }
   
-  extension [Self <: RegistrationEnforcement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistrationEnforcement] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationMethodsRegistrationCampaign(value: NullableOption[AuthenticationMethodsRegistrationCampaign]): Self = StObject.set(x, "authenticationMethodsRegistrationCampaign", value.asInstanceOf[js.Any])
     

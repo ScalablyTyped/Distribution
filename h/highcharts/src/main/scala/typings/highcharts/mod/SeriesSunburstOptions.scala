@@ -98,7 +98,8 @@ object SeriesSunburstOptions {
     __obj.asInstanceOf[SeriesSunburstOptions]
   }
   
-  extension [Self <: SeriesSunburstOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesSunburstOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

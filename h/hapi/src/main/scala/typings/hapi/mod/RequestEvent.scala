@@ -37,7 +37,8 @@ object RequestEvent {
     __obj.asInstanceOf[RequestEvent]
   }
   
-  extension [Self <: RequestEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestEvent] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: internal | app | error): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

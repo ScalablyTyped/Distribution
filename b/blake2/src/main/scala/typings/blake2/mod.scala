@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[Blake2Options]
     }
     
-    extension [Self <: Blake2Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blake2Options] (val x: Self) extends AnyVal {
       
       inline def setDigestLength(value: Double): Self = StObject.set(x, "digestLength", value.asInstanceOf[js.Any])
     }

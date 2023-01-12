@@ -38,7 +38,8 @@ object IStructuralType {
     __obj.asInstanceOf[IStructuralType]
   }
   
-  extension [Self <: IStructuralType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStructuralType] (val x: Self) extends AnyVal {
     
     inline def setComplexProperties(value: js.Array[DataProperty]): Self = StObject.set(x, "complexProperties", value.asInstanceOf[js.Any])
     

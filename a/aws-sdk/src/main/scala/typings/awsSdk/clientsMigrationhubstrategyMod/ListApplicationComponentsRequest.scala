@@ -43,7 +43,8 @@ object ListApplicationComponentsRequest {
     __obj.asInstanceOf[ListApplicationComponentsRequest]
   }
   
-  extension [Self <: ListApplicationComponentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListApplicationComponentsRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationComponentCriteria(value: ApplicationComponentCriteria): Self = StObject.set(x, "applicationComponentCriteria", value.asInstanceOf[js.Any])
     

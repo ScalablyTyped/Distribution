@@ -534,7 +534,8 @@ object SystemInfoDeviceCapability {
     __obj.asInstanceOf[SystemInfoDeviceCapability]
   }
   
-  extension [Self <: SystemInfoDeviceCapability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoDeviceCapability] (val x: Self) extends AnyVal {
     
     inline def setAccelerometer(value: Boolean): Self = StObject.set(x, "accelerometer", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object DeletePoolResult {
     __obj.asInstanceOf[DeletePoolResult]
   }
   
-  extension [Self <: DeletePoolResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePoolResult] (val x: Self) extends AnyVal {
     
     inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     

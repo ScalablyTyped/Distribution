@@ -51,7 +51,8 @@ object OverrideParams {
     __obj.asInstanceOf[OverrideParams]
   }
   
-  extension [Self <: OverrideParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideParams] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

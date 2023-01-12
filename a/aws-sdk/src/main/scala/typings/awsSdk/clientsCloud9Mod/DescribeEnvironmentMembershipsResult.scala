@@ -23,7 +23,8 @@ object DescribeEnvironmentMembershipsResult {
     __obj.asInstanceOf[DescribeEnvironmentMembershipsResult]
   }
   
-  extension [Self <: DescribeEnvironmentMembershipsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEnvironmentMembershipsResult] (val x: Self) extends AnyVal {
     
     inline def setMemberships(value: EnvironmentMembersList): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
     

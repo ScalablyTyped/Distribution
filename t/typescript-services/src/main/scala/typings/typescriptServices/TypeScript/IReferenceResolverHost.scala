@@ -29,7 +29,8 @@ object IReferenceResolverHost {
     __obj.asInstanceOf[IReferenceResolverHost]
   }
   
-  extension [Self <: IReferenceResolverHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReferenceResolverHost] (val x: Self) extends AnyVal {
     
     inline def setDirectoryExists(value: String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
     

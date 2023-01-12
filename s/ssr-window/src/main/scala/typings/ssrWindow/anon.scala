@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[ActiveElement]
     }
     
-    extension [Self <: ActiveElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveElement] (val x: Self) extends AnyVal {
       
       inline def setActiveElement(value: Blur): Self = StObject.set(x, "activeElement", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Back]
     }
     
-    extension [Self <: Back](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Back] (val x: Self) extends AnyVal {
       
       inline def setBack(value: () => Unit): Self = StObject.set(x, "back", js.Any.fromFunction0(value))
       
@@ -117,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Blur]
     }
     
-    extension [Self <: Blur](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blur] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
@@ -147,7 +150,8 @@ object anon {
       __obj.asInstanceOf[ChildNodes]
     }
     
-    extension [Self <: ChildNodes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildNodes] (val x: Self) extends AnyVal {
       
       inline def setChildNodes(value: js.Array[Any]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
       
@@ -174,7 +178,8 @@ object anon {
       __obj.asInstanceOf[GetPropertyValue]
     }
     
-    extension [Self <: GetPropertyValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPropertyValue] (val x: Self) extends AnyVal {
       
       inline def setGetPropertyValue(value: () => String): Self = StObject.set(x, "getPropertyValue", js.Any.fromFunction0(value))
     }
@@ -214,7 +219,8 @@ object anon {
       __obj.asInstanceOf[Hash]
     }
     
-    extension [Self <: Hash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -245,7 +251,8 @@ object anon {
       __obj.asInstanceOf[InitEvent]
     }
     
-    extension [Self <: InitEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitEvent] (val x: Self) extends AnyVal {
       
       inline def setInitEvent(value: () => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction0(value))
     }
@@ -262,7 +269,8 @@ object anon {
       __obj.asInstanceOf[UserAgent]
     }
     
-    extension [Self <: UserAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
       
       inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     }

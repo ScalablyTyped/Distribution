@@ -98,7 +98,8 @@ object PopupDropdownProps {
     __obj.asInstanceOf[PopupDropdownProps]
   }
   
-  extension [Self <: PopupDropdownProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupDropdownProps] (val x: Self) extends AnyVal {
     
     inline def setCorner(value: Boolean): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
     

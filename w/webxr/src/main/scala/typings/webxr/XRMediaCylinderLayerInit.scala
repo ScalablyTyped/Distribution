@@ -23,7 +23,8 @@ object XRMediaCylinderLayerInit {
     __obj.asInstanceOf[XRMediaCylinderLayerInit]
   }
   
-  extension [Self <: XRMediaCylinderLayerInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRMediaCylinderLayerInit] (val x: Self) extends AnyVal {
     
     inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     

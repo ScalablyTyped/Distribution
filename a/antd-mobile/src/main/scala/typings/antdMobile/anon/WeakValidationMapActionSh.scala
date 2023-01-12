@@ -282,7 +282,8 @@ object WeakValidationMapActionSh {
     __obj.asInstanceOf[WeakValidationMapActionSh]
   }
   
-  extension [Self <: WeakValidationMapActionSh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapActionSh] (val x: Self) extends AnyVal {
     
     inline def setActions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends std.Array<antd-mobile.antd-mobile/es/components/action-sheet/action-sheet.Action> ? react.react.Validator<std.Array<antd-mobile.antd-mobile/es/components/action-sheet/action-sheet.Action> | null | undefined> : undefined extends std.Array<antd-mobile.antd-mobile/es/components/action-sheet/action-sheet.Action> ? react.react.Validator<std.Array<antd-mobile.antd-mobile/es/components/action-sheet/action-sheet.Action> | null | undefined> : react.react.Validator<std.Array<antd-mobile.antd-mobile/es/components/action-sheet/action-sheet.Action>> */ js.Any

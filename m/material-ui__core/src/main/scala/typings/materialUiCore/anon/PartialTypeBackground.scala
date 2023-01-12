@@ -18,7 +18,8 @@ object PartialTypeBackground {
     __obj.asInstanceOf[PartialTypeBackground]
   }
   
-  extension [Self <: PartialTypeBackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTypeBackground] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

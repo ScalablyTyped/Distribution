@@ -32,7 +32,8 @@ object AggregatedResultsByOutcome {
     __obj.asInstanceOf[AggregatedResultsByOutcome]
   }
   
-  extension [Self <: AggregatedResultsByOutcome](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedResultsByOutcome] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

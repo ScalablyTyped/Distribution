@@ -30,7 +30,8 @@ object PipelineHandlerData {
     __obj.asInstanceOf[PipelineHandlerData]
   }
   
-  extension [Self <: PipelineHandlerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineHandlerData] (val x: Self) extends AnyVal {
     
     inline def setBody(value: typings.undici.typesReadableMod.^): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

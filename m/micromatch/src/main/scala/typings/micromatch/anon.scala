@@ -322,7 +322,8 @@ object anon {
       __obj.asInstanceOf[partstrueScanOptions]
     }
     
-    extension [Self <: partstrueScanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: partstrueScanOptions] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: Boolean): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -791,7 +792,8 @@ object anon {
       __obj.asInstanceOf[tokenstrueScanOptions]
     }
     
-    extension [Self <: tokenstrueScanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: tokenstrueScanOptions] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: Boolean): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       

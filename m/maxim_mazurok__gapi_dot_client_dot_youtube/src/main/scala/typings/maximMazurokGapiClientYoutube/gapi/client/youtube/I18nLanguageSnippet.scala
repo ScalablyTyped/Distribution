@@ -20,7 +20,8 @@ object I18nLanguageSnippet {
     __obj.asInstanceOf[I18nLanguageSnippet]
   }
   
-  extension [Self <: I18nLanguageSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18nLanguageSnippet] (val x: Self) extends AnyVal {
     
     inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
     

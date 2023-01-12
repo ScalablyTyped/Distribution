@@ -18,7 +18,8 @@ object ReturnTypeCanEmulateResponse {
     __obj.asInstanceOf[ReturnTypeCanEmulateResponse]
   }
   
-  extension [Self <: ReturnTypeCanEmulateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeCanEmulateResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object FboTime {
     __obj.asInstanceOf[FboTime]
   }
   
-  extension [Self <: FboTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FboTime] (val x: Self) extends AnyVal {
     
     inline def setCompileTime(value: Double): Self = StObject.set(x, "compileTime", value.asInstanceOf[js.Any])
     

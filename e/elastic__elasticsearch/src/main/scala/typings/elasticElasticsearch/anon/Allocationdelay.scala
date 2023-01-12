@@ -23,7 +23,8 @@ object Allocationdelay {
     __obj.asInstanceOf[Allocationdelay]
   }
   
-  extension [Self <: Allocationdelay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allocationdelay] (val x: Self) extends AnyVal {
     
     inline def setAllocation_delay(value: String): Self = StObject.set(x, "allocation_delay", value.asInstanceOf[js.Any])
     

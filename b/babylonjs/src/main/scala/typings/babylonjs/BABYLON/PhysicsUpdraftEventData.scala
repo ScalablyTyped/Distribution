@@ -18,7 +18,8 @@ object PhysicsUpdraftEventData {
     __obj.asInstanceOf[PhysicsUpdraftEventData]
   }
   
-  extension [Self <: PhysicsUpdraftEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicsUpdraftEventData] (val x: Self) extends AnyVal {
     
     inline def setCylinder(value: Mesh): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
   }

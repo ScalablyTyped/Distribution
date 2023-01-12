@@ -73,7 +73,8 @@ object Network {
     __obj.asInstanceOf[Network]
   }
   
-  extension [Self <: Network](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
     
     inline def setDestinationDomain(value: NonEmptyString): Self = StObject.set(x, "DestinationDomain", value.asInstanceOf[js.Any])
     

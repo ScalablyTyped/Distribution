@@ -24,7 +24,8 @@ object Range {
     __obj.asInstanceOf[Range]
   }
   
-  extension [Self <: Range](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
     
     inline def setGt(value: Literal): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
     

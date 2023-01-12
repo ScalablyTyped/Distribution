@@ -28,7 +28,8 @@ object OAuth2Properties {
     __obj.asInstanceOf[OAuth2Properties]
   }
   
-  extension [Self <: OAuth2Properties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuth2Properties] (val x: Self) extends AnyVal {
     
     inline def setOAuth2GrantType(value: OAuth2GrantType): Self = StObject.set(x, "oAuth2GrantType", value.asInstanceOf[js.Any])
     

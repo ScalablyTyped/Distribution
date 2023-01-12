@@ -27,7 +27,8 @@ object VPNProperties {
     __obj.asInstanceOf[VPNProperties[M, B, S]]
   }
   
-  extension [Self <: VPNProperties[?, ?, ?], M /* <: ManagedObject */, B, S](x: Self & (VPNProperties[M, B, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VPNProperties[?, ?, ?], M /* <: ManagedObject */, B, S] (val x: Self & (VPNProperties[M, B, S])) extends AnyVal {
     
     inline def setAutoConnect(value: B): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
     

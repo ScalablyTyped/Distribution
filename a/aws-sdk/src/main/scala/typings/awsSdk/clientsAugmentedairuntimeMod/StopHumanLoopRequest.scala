@@ -18,7 +18,8 @@ object StopHumanLoopRequest {
     __obj.asInstanceOf[StopHumanLoopRequest]
   }
   
-  extension [Self <: StopHumanLoopRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopHumanLoopRequest] (val x: Self) extends AnyVal {
     
     inline def setHumanLoopName(value: HumanLoopName): Self = StObject.set(x, "HumanLoopName", value.asInstanceOf[js.Any])
   }

@@ -46,7 +46,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CriteriaFilterOptionsObject]
     }
     
-    extension [Self <: CriteriaFilterOptionsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CriteriaFilterOptionsObject] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CriteriaObject]
     }
     
-    extension [Self <: CriteriaObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CriteriaObject] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Boolean | Double): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EventOptionsObject]
     }
     
-    extension [Self <: EventOptionsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventOptionsObject] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: String | js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       

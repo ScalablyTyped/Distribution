@@ -59,7 +59,8 @@ object AggregationCursorOptions {
     __obj.asInstanceOf[AggregationCursorOptions]
   }
   
-  extension [Self <: AggregationCursorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationCursorOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowDiskUse(value: Boolean): Self = StObject.set(x, "allowDiskUse", value.asInstanceOf[js.Any])
     

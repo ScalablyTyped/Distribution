@@ -141,7 +141,8 @@ object HammerInput {
     __obj.asInstanceOf[HammerInput]
   }
   
-  extension [Self <: HammerInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HammerInput] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

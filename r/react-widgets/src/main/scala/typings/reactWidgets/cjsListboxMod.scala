@@ -71,7 +71,8 @@ object cjsListboxMod extends Shortcut {
       __obj.asInstanceOf[BaseListboxProps[TDataItem]]
     }
     
-    extension [Self <: BaseListboxProps[?], TDataItem](x: Self & BaseListboxProps[TDataItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseListboxProps[?], TDataItem] (val x: Self & BaseListboxProps[TDataItem]) extends AnyVal {
       
       inline def setData(value: js.Array[TDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object cjsListboxMod extends Shortcut {
       __obj.asInstanceOf[ListboxHandle]
     }
     
-    extension [Self <: ListboxHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListboxHandle] (val x: Self) extends AnyVal {
       
       inline def setScrollIntoView(value: () => Unit): Self = StObject.set(x, "scrollIntoView", js.Any.fromFunction0(value))
     }
@@ -212,7 +214,8 @@ object cjsListboxMod extends Shortcut {
       __obj.asInstanceOf[MultipleListboxProps[TDataItem]]
     }
     
-    extension [Self <: MultipleListboxProps[?], TDataItem](x: Self & MultipleListboxProps[TDataItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleListboxProps[?], TDataItem] (val x: Self & MultipleListboxProps[TDataItem]) extends AnyVal {
       
       inline def setDefaultValue(value: js.Array[Value]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -261,7 +264,8 @@ object cjsListboxMod extends Shortcut {
       __obj.asInstanceOf[SingleListboxProps[TDataItem]]
     }
     
-    extension [Self <: SingleListboxProps[?], TDataItem](x: Self & SingleListboxProps[TDataItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleListboxProps[?], TDataItem] (val x: Self & SingleListboxProps[TDataItem]) extends AnyVal {
       
       inline def setMultiple(value: `false`): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object IngestCircleProcessor {
     __obj.asInstanceOf[IngestCircleProcessor]
   }
   
-  extension [Self <: IngestCircleProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestCircleProcessor] (val x: Self) extends AnyVal {
     
     inline def setError_distance(value: double): Self = StObject.set(x, "error_distance", value.asInstanceOf[js.Any])
     

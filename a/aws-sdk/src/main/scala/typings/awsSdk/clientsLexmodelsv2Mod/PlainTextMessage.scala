@@ -18,7 +18,8 @@ object PlainTextMessage {
     __obj.asInstanceOf[PlainTextMessage]
   }
   
-  extension [Self <: PlainTextMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlainTextMessage] (val x: Self) extends AnyVal {
     
     inline def setValue(value: PlainTextMessageValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

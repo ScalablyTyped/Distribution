@@ -22,7 +22,8 @@ object StyledComponent {
     __obj.asInstanceOf[StyledComponent]
   }
   
-  extension [Self <: StyledComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyledComponent] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

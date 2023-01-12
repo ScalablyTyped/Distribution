@@ -34,7 +34,8 @@ object Rtm {
     __obj.asInstanceOf[Rtm[T]]
   }
   
-  extension [Self <: Rtm[?], T](x: Self & Rtm[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rtm[?], T] (val x: Self & Rtm[T]) extends AnyVal {
     
     inline def setCalls(value: js.Array[RtmCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     

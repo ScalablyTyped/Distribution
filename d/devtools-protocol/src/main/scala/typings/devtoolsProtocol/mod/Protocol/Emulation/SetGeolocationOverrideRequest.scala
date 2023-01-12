@@ -28,7 +28,8 @@ object SetGeolocationOverrideRequest {
     __obj.asInstanceOf[SetGeolocationOverrideRequest]
   }
   
-  extension [Self <: SetGeolocationOverrideRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetGeolocationOverrideRequest] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object libMailComposerMod {
       __obj.asInstanceOf[MailComposer]
     }
     
-    extension [Self <: MailComposer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailComposer] (val x: Self) extends AnyVal {
       
       inline def setCompile(value: () => typings.nodemailer.libMimeNodeMod.^): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
       

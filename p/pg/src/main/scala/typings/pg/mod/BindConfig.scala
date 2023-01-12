@@ -22,7 +22,8 @@ object BindConfig {
     __obj.asInstanceOf[BindConfig]
   }
   
-  extension [Self <: BindConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindConfig] (val x: Self) extends AnyVal {
     
     inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     

@@ -251,7 +251,8 @@ object distNativeAwsIotMod {
       __obj.asInstanceOf[WebsocketConfig]
     }
     
-    extension [Self <: WebsocketConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebsocketConfig] (val x: Self) extends AnyVal {
       
       inline def setCredentials_provider(value: AwsCredentialsProvider): Self = StObject.set(x, "credentials_provider", value.asInstanceOf[js.Any])
       

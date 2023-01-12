@@ -23,7 +23,8 @@ object BaseOrderByAggregate {
     __obj.asInstanceOf[BaseOrderByAggregate[T]]
   }
   
-  extension [Self <: BaseOrderByAggregate[?], T](x: Self & BaseOrderByAggregate[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseOrderByAggregate[?], T] (val x: Self & BaseOrderByAggregate[T]) extends AnyVal {
     
     inline def setCount(value: ScalarOrderBy): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -85,7 +85,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[ListEachOptions[TInstance]]
     }
     
-    extension [Self <: ListEachOptions[?], TInstance](x: Self & ListEachOptions[TInstance]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListEachOptions[?], TInstance] (val x: Self & ListEachOptions[TInstance]) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ TInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -137,7 +138,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[ListOptions[TInstance]]
     }
     
-    extension [Self <: ListOptions[?], TInstance](x: Self & ListOptions[TInstance]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListOptions[?], TInstance] (val x: Self & ListOptions[TInstance]) extends AnyVal {
       
       inline def setCallback(value: /* items */ js.Array[TInstance] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -186,7 +188,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[PageOptions[TPage]]
     }
     
-    extension [Self <: PageOptions[?], TPage](x: Self & PageOptions[TPage]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageOptions[?], TPage] (val x: Self & PageOptions[TPage]) extends AnyVal {
       
       inline def setCallback(value: /* page */ TPage => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -225,7 +228,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[PhoneNumberCapabilities]
     }
     
-    extension [Self <: PhoneNumberCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhoneNumberCapabilities] (val x: Self) extends AnyVal {
       
       inline def setFax(value: Boolean): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
       

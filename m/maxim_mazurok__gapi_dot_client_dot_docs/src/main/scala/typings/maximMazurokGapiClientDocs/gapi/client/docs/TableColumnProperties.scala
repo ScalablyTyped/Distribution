@@ -19,7 +19,8 @@ object TableColumnProperties {
     __obj.asInstanceOf[TableColumnProperties]
   }
   
-  extension [Self <: TableColumnProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableColumnProperties] (val x: Self) extends AnyVal {
     
     inline def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

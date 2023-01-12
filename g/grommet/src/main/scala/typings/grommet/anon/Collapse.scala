@@ -20,7 +20,8 @@ object Collapse {
     __obj.asInstanceOf[Collapse]
   }
   
-  extension [Self <: Collapse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collapse] (val x: Self) extends AnyVal {
     
     inline def setCollapse(value: Any): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     

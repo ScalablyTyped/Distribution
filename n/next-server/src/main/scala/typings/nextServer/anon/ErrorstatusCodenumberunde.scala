@@ -28,7 +28,8 @@ object ErrorstatusCodenumberunde {
     __obj.asInstanceOf[ErrorstatusCodenumberunde]
   }
   
-  extension [Self <: ErrorstatusCodenumberunde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorstatusCodenumberunde] (val x: Self) extends AnyVal {
     
     inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

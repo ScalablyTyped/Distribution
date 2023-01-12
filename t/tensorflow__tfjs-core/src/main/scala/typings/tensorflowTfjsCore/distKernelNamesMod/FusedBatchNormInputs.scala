@@ -24,7 +24,8 @@ object FusedBatchNormInputs {
     __obj.asInstanceOf[FusedBatchNormInputs]
   }
   
-  extension [Self <: FusedBatchNormInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FusedBatchNormInputs] (val x: Self) extends AnyVal {
     
     inline def setMean(value: scala.Any): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     

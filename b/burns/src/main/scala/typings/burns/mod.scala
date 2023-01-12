@@ -75,7 +75,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[typings.burns.mod.Burns.Config]
       }
       
-      extension [Self <: typings.burns.mod.Burns.Config](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.burns.mod.Burns.Config] (val x: Self) extends AnyVal {
         
         inline def setBroadcaster(value: String): Self = StObject.set(x, "broadcaster", value.asInstanceOf[js.Any])
         
@@ -108,7 +109,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[EventConfig]
       }
       
-      extension [Self <: EventConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventConfig] (val x: Self) extends AnyVal {
         
         inline def setBroadcastIf(value: Boolean | (js.Function1[/* payload */ Any, Boolean])): Self = StObject.set(x, "broadcastIf", value.asInstanceOf[js.Any])
         

@@ -23,7 +23,8 @@ object CSSKeyframesRule {
     __obj.asInstanceOf[CSSKeyframesRule]
   }
   
-  extension [Self <: CSSKeyframesRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSKeyframesRule] (val x: Self) extends AnyVal {
     
     inline def setAnimationName(value: Value): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
     

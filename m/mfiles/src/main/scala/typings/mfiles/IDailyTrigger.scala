@@ -15,7 +15,8 @@ object IDailyTrigger {
     __obj.asInstanceOf[IDailyTrigger]
   }
   
-  extension [Self <: IDailyTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDailyTrigger] (val x: Self) extends AnyVal {
     
     inline def setDaysInterval(value: Double): Self = StObject.set(x, "DaysInterval", value.asInstanceOf[js.Any])
   }

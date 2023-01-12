@@ -119,7 +119,8 @@ object mod {
       __obj.asInstanceOf[TcpPortUsedOptions]
     }
     
-    extension [Self <: TcpPortUsedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TcpPortUsedOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

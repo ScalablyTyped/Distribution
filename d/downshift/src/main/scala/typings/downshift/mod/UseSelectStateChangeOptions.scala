@@ -19,7 +19,8 @@ object UseSelectStateChangeOptions {
     __obj.asInstanceOf[UseSelectStateChangeOptions[Item]]
   }
   
-  extension [Self <: UseSelectStateChangeOptions[?], Item](x: Self & UseSelectStateChangeOptions[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseSelectStateChangeOptions[?], Item] (val x: Self & UseSelectStateChangeOptions[Item]) extends AnyVal {
     
     inline def setChanges(value: Partial[UseSelectState[Item]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object IUserGroupsAdmin {
     __obj.asInstanceOf[IUserGroupsAdmin]
   }
   
-  extension [Self <: IUserGroupsAdmin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUserGroupsAdmin] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

@@ -96,7 +96,8 @@ object CanvasShapes {
     __obj.asInstanceOf[CanvasShapes]
   }
   
-  extension [Self <: CanvasShapes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasShapes] (val x: Self) extends AnyVal {
     
     inline def setAddCallout(value: (MsoCalloutType, Double, Double, Double, Double) => Shape): Self = StObject.set(x, "AddCallout", js.Any.fromFunction5(value))
     

@@ -26,7 +26,8 @@ object CookieParserOptionItem {
     __obj.asInstanceOf[CookieParserOptionItem]
   }
   
-  extension [Self <: CookieParserOptionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CookieParserOptionItem] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

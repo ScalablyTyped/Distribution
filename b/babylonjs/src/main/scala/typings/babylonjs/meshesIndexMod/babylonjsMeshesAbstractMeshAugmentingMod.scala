@@ -23,7 +23,8 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       __obj.asInstanceOf[typings.babylonjs.meshesIndexMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh]
     }
     
-    extension [Self <: typings.babylonjs.meshesIndexMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.babylonjs.meshesIndexMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh] (val x: Self) extends AnyVal {
       
       inline def setInstancedBuffers(value: StringDictionary[Any]): Self = StObject.set(x, "instancedBuffers", value.asInstanceOf[js.Any])
     }

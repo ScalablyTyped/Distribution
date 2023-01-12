@@ -17,7 +17,8 @@ object TrackButtonOptions {
     __obj.asInstanceOf[TrackButtonOptions]
   }
   
-  extension [Self <: TrackButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setTrack(value: js.Array[Track]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     

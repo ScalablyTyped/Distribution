@@ -41,7 +41,8 @@ object PrinterData {
     __obj.asInstanceOf[PrinterData]
   }
   
-  extension [Self <: PrinterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterData] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

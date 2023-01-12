@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Boolean): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[CustomStoreKey]
     }
     
-    extension [Self <: CustomStoreKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomStoreKey] (val x: Self) extends AnyVal {
       
       inline def setCustomStoreKey(value: String): Self = StObject.set(x, "customStoreKey", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(
         value: Instantiable3[
@@ -154,7 +157,8 @@ object anon {
       __obj.asInstanceOf[Get]
     }
     
-    extension [Self <: Get](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
       
       inline def setGet(value: () => js.Promise[String]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
@@ -204,7 +208,8 @@ object anon {
       __obj.asInstanceOf[HttpRequestOptionsrawtrue]
     }
     
-    extension [Self <: HttpRequestOptionsrawtrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequestOptionsrawtrue] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -316,7 +321,8 @@ object anon {
       __obj.asInstanceOf[HttpRequestOptionsrawtrueAgent]
     }
     
-    extension [Self <: HttpRequestOptionsrawtrueAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequestOptionsrawtrueAgent] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -428,7 +434,8 @@ object anon {
       __obj.asInstanceOf[HttpRequestOptionsurlstri]
     }
     
-    extension [Self <: HttpRequestOptionsurlstri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequestOptionsurlstri] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -509,7 +516,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -555,7 +563,8 @@ object anon {
       __obj.asInstanceOf[IsBulkRead]
     }
     
-    extension [Self <: IsBulkRead](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsBulkRead] (val x: Self) extends AnyVal {
       
       inline def setIsBulkRead(value: Boolean): Self = StObject.set(x, "isBulkRead", value.asInstanceOf[js.Any])
       
@@ -613,7 +622,8 @@ object anon {
       __obj.asInstanceOf[Parse]
     }
     
-    extension [Self <: Parse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parse] (val x: Self) extends AnyVal {
       
       inline def setParse(value: String => Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
@@ -639,7 +649,8 @@ object anon {
       __obj.asInstanceOf[PartialmethodHttpMethodqu]
     }
     
-    extension [Self <: PartialmethodHttpMethodqu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialmethodHttpMethodqu] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -677,7 +688,8 @@ object anon {
       __obj.asInstanceOf[PartialmethodHttpMethodquContent]
     }
     
-    extension [Self <: PartialmethodHttpMethodquContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialmethodHttpMethodquContent] (val x: Self) extends AnyVal {
       
       inline def setContent(value: StringDictionary[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

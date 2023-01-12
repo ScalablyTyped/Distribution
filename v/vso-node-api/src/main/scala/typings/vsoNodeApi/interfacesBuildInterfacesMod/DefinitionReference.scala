@@ -76,7 +76,8 @@ object DefinitionReference {
     __obj.asInstanceOf[DefinitionReference]
   }
   
-  extension [Self <: DefinitionReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefinitionReference] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AtomicStateNodeConfig {
     __obj.asInstanceOf[AtomicStateNodeConfig[TContext, TEvent]]
   }
   
-  extension [Self <: AtomicStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (AtomicStateNodeConfig[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtomicStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (AtomicStateNodeConfig[TContext, TEvent])) extends AnyVal {
     
     inline def setInitial(value: Unit): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     

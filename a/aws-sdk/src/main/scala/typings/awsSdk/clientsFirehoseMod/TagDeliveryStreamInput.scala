@@ -23,7 +23,8 @@ object TagDeliveryStreamInput {
     __obj.asInstanceOf[TagDeliveryStreamInput]
   }
   
-  extension [Self <: TagDeliveryStreamInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagDeliveryStreamInput] (val x: Self) extends AnyVal {
     
     inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     

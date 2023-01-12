@@ -21,7 +21,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setDetectBrowsers(value: KarmaDetectBrowsers): Self = StObject.set(x, "detectBrowsers", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object karmaMod {
       __obj.asInstanceOf[KarmaDetectBrowsers]
     }
     
-    extension [Self <: KarmaDetectBrowsers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KarmaDetectBrowsers] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

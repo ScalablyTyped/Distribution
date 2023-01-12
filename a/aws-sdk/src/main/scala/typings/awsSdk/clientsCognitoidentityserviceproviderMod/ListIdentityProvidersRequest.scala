@@ -28,7 +28,8 @@ object ListIdentityProvidersRequest {
     __obj.asInstanceOf[ListIdentityProvidersRequest]
   }
   
-  extension [Self <: ListIdentityProvidersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIdentityProvidersRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListProvidersLimitType): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object TypeofSubscriptionCreateP {
     __obj.asInstanceOf[TypeofSubscriptionCreateP]
   }
   
-  extension [Self <: TypeofSubscriptionCreateP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSubscriptionCreateP] (val x: Self) extends AnyVal {
     
     inline def setAddInvoiceItem(value: TypeofAddInvoiceItem): Self = StObject.set(x, "AddInvoiceItem", value.asInstanceOf[js.Any])
     

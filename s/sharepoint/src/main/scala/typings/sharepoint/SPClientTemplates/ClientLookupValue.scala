@@ -17,7 +17,8 @@ object ClientLookupValue {
     __obj.asInstanceOf[ClientLookupValue]
   }
   
-  extension [Self <: ClientLookupValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientLookupValue] (val x: Self) extends AnyVal {
     
     inline def setLookupId(value: Double): Self = StObject.set(x, "LookupId", value.asInstanceOf[js.Any])
     

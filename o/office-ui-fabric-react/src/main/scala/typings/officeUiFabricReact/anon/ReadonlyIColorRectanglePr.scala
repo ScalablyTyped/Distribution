@@ -52,7 +52,8 @@ object ReadonlyIColorRectanglePr {
     __obj.asInstanceOf[ReadonlyIColorRectanglePr]
   }
   
-  extension [Self <: ReadonlyIColorRectanglePr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyIColorRectanglePr] (val x: Self) extends AnyVal {
     
     inline def setAriaDescription(value: String): Self = StObject.set(x, "ariaDescription", value.asInstanceOf[js.Any])
     

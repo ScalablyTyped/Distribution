@@ -57,7 +57,8 @@ object DateRangePickerOptions {
     __obj.asInstanceOf[DateRangePickerOptions]
   }
   
-  extension [Self <: DateRangePickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateRangePickerOptions] (val x: Self) extends AnyVal {
     
     inline def setARIATemplate(value: String): Self = StObject.set(x, "ARIATemplate", value.asInstanceOf[js.Any])
     

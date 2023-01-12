@@ -2115,7 +2115,8 @@ object AlignContent {
     __obj.asInstanceOf[AlignContent]
   }
   
-  extension [Self <: AlignContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignContent] (val x: Self) extends AnyVal {
     
     inline def setAlignContent(value: typings.csstype.mod.Property.AlignContent): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     

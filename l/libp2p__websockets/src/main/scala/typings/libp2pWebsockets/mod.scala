@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[WebSocketsInit]
     }
     
-    extension [Self <: WebSocketsInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebSocketsInit] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* multiaddrs */ js.Array[Multiaddr_] => js.Array[Multiaddr_]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

@@ -66,7 +66,8 @@ object XLibraryContainer2 {
     __obj.asInstanceOf[XLibraryContainer2]
   }
   
-  extension [Self <: XLibraryContainer2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLibraryContainer2] (val x: Self) extends AnyVal {
     
     inline def setGetLibraryLinkURL(value: String => String): Self = StObject.set(x, "getLibraryLinkURL", js.Any.fromFunction1(value))
     

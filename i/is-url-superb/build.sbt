@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-url-superb"
-version := "6.1.0-8e56a2"
+version := "6.1.0-be4dbc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

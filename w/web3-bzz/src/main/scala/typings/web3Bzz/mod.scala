@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Pick]
     }
     
-    extension [Self <: Pick](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pick] (val x: Self) extends AnyVal {
       
       inline def setData(value: () => js.Promise[Any]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       

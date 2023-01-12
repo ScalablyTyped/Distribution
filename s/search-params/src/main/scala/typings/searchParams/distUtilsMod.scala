@@ -29,7 +29,8 @@ object distUtilsMod {
       __obj.asInstanceOf[IParsedName]
     }
     
-    extension [Self <: IParsedName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParsedName] (val x: Self) extends AnyVal {
       
       inline def setHasBrackets(value: Boolean): Self = StObject.set(x, "hasBrackets", value.asInstanceOf[js.Any])
       

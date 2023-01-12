@@ -19,7 +19,8 @@ object ListFoldersResponse {
     __obj.asInstanceOf[ListFoldersResponse]
   }
   
-  extension [Self <: ListFoldersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFoldersResponse] (val x: Self) extends AnyVal {
     
     inline def setFolders(value: js.Array[Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     

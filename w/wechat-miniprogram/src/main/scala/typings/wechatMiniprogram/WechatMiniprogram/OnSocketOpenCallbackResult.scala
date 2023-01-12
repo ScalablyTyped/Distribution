@@ -18,7 +18,8 @@ object OnSocketOpenCallbackResult {
     __obj.asInstanceOf[OnSocketOpenCallbackResult]
   }
   
-  extension [Self <: OnSocketOpenCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnSocketOpenCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: IAnyObject): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }

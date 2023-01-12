@@ -53,7 +53,8 @@ object ChartZoomingOptions {
     __obj.asInstanceOf[ChartZoomingOptions]
   }
   
-  extension [Self <: ChartZoomingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartZoomingOptions] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

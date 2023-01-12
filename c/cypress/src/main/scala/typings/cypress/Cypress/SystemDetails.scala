@@ -17,7 +17,8 @@ object SystemDetails {
     __obj.asInstanceOf[SystemDetails]
   }
   
-  extension [Self <: SystemDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemDetails] (val x: Self) extends AnyVal {
     
     inline def setOsName(value: String): Self = StObject.set(x, "osName", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteMultiOptions {
     __obj.asInstanceOf[DeleteMultiOptions]
   }
   
-  extension [Self <: DeleteMultiOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMultiOptions] (val x: Self) extends AnyVal {
     
     inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     

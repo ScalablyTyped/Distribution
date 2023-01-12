@@ -44,7 +44,8 @@ object UsbInterface {
     __obj.asInstanceOf[UsbInterface]
   }
   
-  extension [Self <: UsbInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsbInterface] (val x: Self) extends AnyVal {
     
     inline def setBulkInPipes(value: IVectorView[UsbBulkInPipe]): Self = StObject.set(x, "bulkInPipes", value.asInstanceOf[js.Any])
     

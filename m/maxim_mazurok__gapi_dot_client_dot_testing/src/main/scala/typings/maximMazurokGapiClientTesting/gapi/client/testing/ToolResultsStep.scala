@@ -25,7 +25,8 @@ object ToolResultsStep {
     __obj.asInstanceOf[ToolResultsStep]
   }
   
-  extension [Self <: ToolResultsStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolResultsStep] (val x: Self) extends AnyVal {
     
     inline def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     

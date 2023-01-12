@@ -2294,7 +2294,8 @@ object sapUxapObjectPageLayoutMod {
       __obj.asInstanceOf[ObjectPageLayoutSettings]
     }
     
-    extension [Self <: ObjectPageLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowContentHeader(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "alwaysShowContentHeader", value.asInstanceOf[js.Any])
       

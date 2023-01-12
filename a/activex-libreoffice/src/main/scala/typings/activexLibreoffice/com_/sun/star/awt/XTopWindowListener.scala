@@ -59,7 +59,8 @@ object XTopWindowListener {
     __obj.asInstanceOf[XTopWindowListener]
   }
   
-  extension [Self <: XTopWindowListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTopWindowListener] (val x: Self) extends AnyVal {
     
     inline def setWindowActivated(value: EventObject => Unit): Self = StObject.set(x, "windowActivated", js.Any.fromFunction1(value))
     

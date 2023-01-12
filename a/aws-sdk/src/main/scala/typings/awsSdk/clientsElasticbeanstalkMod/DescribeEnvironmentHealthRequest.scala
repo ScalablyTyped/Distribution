@@ -28,7 +28,8 @@ object DescribeEnvironmentHealthRequest {
     __obj.asInstanceOf[DescribeEnvironmentHealthRequest]
   }
   
-  extension [Self <: DescribeEnvironmentHealthRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEnvironmentHealthRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributeNames(value: EnvironmentHealthAttributes): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     

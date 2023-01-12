@@ -17,7 +17,8 @@ object Negative {
     __obj.asInstanceOf[Negative]
   }
   
-  extension [Self <: Negative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Negative] (val x: Self) extends AnyVal {
     
     inline def setNegative(value: String): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     

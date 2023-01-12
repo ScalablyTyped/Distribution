@@ -46,7 +46,8 @@ object libCardCardFooterMod {
       __obj.asInstanceOf[CardFooterProps]
     }
     
-    extension [Self <: CardFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardFooterProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object libCardCardFooterMod {
       __obj.asInstanceOf[CardFooterPropsType]
     }
     
-    extension [Self <: CardFooterPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardFooterPropsType] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object WebhooksAddRequest {
     __obj.asInstanceOf[WebhooksAddRequest]
   }
   
-  extension [Self <: WebhooksAddRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebhooksAddRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

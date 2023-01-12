@@ -22,7 +22,8 @@ object IRefModelInModel {
     __obj.asInstanceOf[IRefModelInModel]
   }
   
-  extension [Self <: IRefModelInModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRefModelInModel] (val x: Self) extends AnyVal {
     
     inline def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
     

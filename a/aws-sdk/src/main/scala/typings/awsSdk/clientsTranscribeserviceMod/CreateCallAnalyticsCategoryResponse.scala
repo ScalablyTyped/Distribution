@@ -18,7 +18,8 @@ object CreateCallAnalyticsCategoryResponse {
     __obj.asInstanceOf[CreateCallAnalyticsCategoryResponse]
   }
   
-  extension [Self <: CreateCallAnalyticsCategoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCallAnalyticsCategoryResponse] (val x: Self) extends AnyVal {
     
     inline def setCategoryProperties(value: CategoryProperties): Self = StObject.set(x, "CategoryProperties", value.asInstanceOf[js.Any])
     

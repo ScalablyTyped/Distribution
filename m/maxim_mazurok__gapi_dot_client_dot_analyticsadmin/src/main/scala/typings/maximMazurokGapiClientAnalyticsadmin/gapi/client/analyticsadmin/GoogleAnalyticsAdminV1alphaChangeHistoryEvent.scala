@@ -34,7 +34,8 @@ object GoogleAnalyticsAdminV1alphaChangeHistoryEvent {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaChangeHistoryEvent]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaChangeHistoryEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaChangeHistoryEvent] (val x: Self) extends AnyVal {
     
     inline def setActorType(value: String): Self = StObject.set(x, "actorType", value.asInstanceOf[js.Any])
     

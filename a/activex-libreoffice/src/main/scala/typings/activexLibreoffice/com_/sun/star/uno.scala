@@ -74,7 +74,8 @@ object uno {
       __obj.asInstanceOf[Exception]
     }
     
-    extension [Self <: Exception](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exception] (val x: Self) extends AnyVal {
       
       inline def setContext(value: XInterface): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       
@@ -272,7 +273,8 @@ object uno {
       __obj.asInstanceOf[Uik]
     }
     
-    extension [Self <: Uik](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uik] (val x: Self) extends AnyVal {
       
       inline def setData1(value: Double): Self = StObject.set(x, "Data1", value.asInstanceOf[js.Any])
       
@@ -323,7 +325,8 @@ object uno {
       __obj.asInstanceOf[XAdapter]
     }
     
-    extension [Self <: XAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddReference(value: XReference => Unit): Self = StObject.set(x, "addReference", js.Any.fromFunction1(value))
       
@@ -387,7 +390,8 @@ object uno {
       __obj.asInstanceOf[XAggregation]
     }
     
-    extension [Self <: XAggregation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAggregation] (val x: Self) extends AnyVal {
       
       inline def setQueryAggregation(value: `type` => Any): Self = StObject.set(x, "queryAggregation", js.Any.fromFunction1(value))
       
@@ -438,7 +442,8 @@ object uno {
       __obj.asInstanceOf[XComponentContext]
     }
     
-    extension [Self <: XComponentContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XComponentContext] (val x: Self) extends AnyVal {
       
       inline def setGetServiceManager(value: () => XMultiComponentFactory): Self = StObject.set(x, "getServiceManager", js.Any.fromFunction0(value))
       
@@ -476,7 +481,8 @@ object uno {
       __obj.asInstanceOf[XCurrentContext]
     }
     
-    extension [Self <: XCurrentContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XCurrentContext] (val x: Self) extends AnyVal {
       
       inline def setGetValueByName(value: String => Any): Self = StObject.set(x, "getValueByName", js.Any.fromFunction1(value))
     }
@@ -558,7 +564,8 @@ object uno {
       __obj.asInstanceOf[XInterface]
     }
     
-    extension [Self <: XInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XInterface] (val x: Self) extends AnyVal {
       
       inline def setAcquire(value: () => Unit): Self = StObject.set(x, "acquire", js.Any.fromFunction0(value))
       
@@ -604,7 +611,8 @@ object uno {
       __obj.asInstanceOf[XNamingService]
     }
     
-    extension [Self <: XNamingService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XNamingService] (val x: Self) extends AnyVal {
       
       inline def setGetRegisteredObject(value: String => XInterface): Self = StObject.set(x, "getRegisteredObject", js.Any.fromFunction1(value))
       
@@ -637,7 +645,8 @@ object uno {
       __obj.asInstanceOf[XReference]
     }
     
-    extension [Self <: XReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XReference] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
@@ -665,7 +674,8 @@ object uno {
       __obj.asInstanceOf[XUnloadingPreference]
     }
     
-    extension [Self <: XUnloadingPreference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XUnloadingPreference] (val x: Self) extends AnyVal {
       
       inline def setReleaseOnNotification(value: () => Boolean): Self = StObject.set(x, "releaseOnNotification", js.Any.fromFunction0(value))
     }
@@ -718,7 +728,8 @@ object uno {
       __obj.asInstanceOf[XWeak]
     }
     
-    extension [Self <: XWeak](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XWeak] (val x: Self) extends AnyVal {
       
       inline def setQueryAdapter(value: () => XAdapter): Self = StObject.set(x, "queryAdapter", js.Any.fromFunction0(value))
     }

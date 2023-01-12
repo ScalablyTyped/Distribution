@@ -28,7 +28,8 @@ object ListForecastExportJobsRequest {
     __obj.asInstanceOf[ListForecastExportJobsRequest]
   }
   
-  extension [Self <: ListForecastExportJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListForecastExportJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

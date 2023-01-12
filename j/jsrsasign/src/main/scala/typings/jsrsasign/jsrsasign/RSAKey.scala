@@ -68,7 +68,8 @@ object RSAKey {
     __obj.asInstanceOf[RSAKey]
   }
   
-  extension [Self <: RSAKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RSAKey] (val x: Self) extends AnyVal {
     
     inline def setReadCertPubKeyHex(value: (String, Double) => Unit): Self = StObject.set(x, "readCertPubKeyHex", js.Any.fromFunction2(value))
     

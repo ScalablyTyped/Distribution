@@ -18,7 +18,8 @@ object CreateDataSourceFromRDSOutput {
     __obj.asInstanceOf[CreateDataSourceFromRDSOutput]
   }
   
-  extension [Self <: CreateDataSourceFromRDSOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataSourceFromRDSOutput] (val x: Self) extends AnyVal {
     
     inline def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     

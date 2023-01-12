@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Amount]
     }
     
-    extension [Self <: Amount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Amount] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -434,7 +435,8 @@ object anon {
       __obj.asInstanceOf[Dictcustomkey]
     }
     
-    extension [Self <: Dictcustomkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictcustomkey] (val x: Self) extends AnyVal {
       
       inline def set$after_click_url(value: String): Self = StObject.set(x, "$after_click_url", value.asInstanceOf[js.Any])
       
@@ -695,7 +697,8 @@ object anon {
       __obj.asInstanceOf[Makenewlink]
     }
     
-    extension [Self <: Makenewlink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Makenewlink] (val x: Self) extends AnyVal {
       
       inline def setMake_new_link(value: Boolean): Self = StObject.set(x, "make_new_link", value.asInstanceOf[js.Any])
       

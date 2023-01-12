@@ -38,7 +38,8 @@ object UpdateApplicationComponentConfigRequest {
     __obj.asInstanceOf[UpdateApplicationComponentConfigRequest]
   }
   
-  extension [Self <: UpdateApplicationComponentConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateApplicationComponentConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationComponentId(value: ApplicationComponentId): Self = StObject.set(x, "applicationComponentId", value.asInstanceOf[js.Any])
     

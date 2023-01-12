@@ -16,7 +16,8 @@ object ClientStatusResponse {
     __obj.asInstanceOf[ClientStatusResponse]
   }
   
-  extension [Self <: ClientStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: js.Array[ClientConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

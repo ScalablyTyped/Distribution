@@ -182,7 +182,8 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
       __obj.asInstanceOf[InstalledAddOnExtensionInstanceUpdateOptions]
     }
     
-    extension [Self <: InstalledAddOnExtensionInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstalledAddOnExtensionInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
@@ -369,7 +370,8 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
       __obj.asInstanceOf[InstalledAddOnExtensionListInstanceEachOptions]
     }
     
-    extension [Self <: InstalledAddOnExtensionListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstalledAddOnExtensionListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ InstalledAddOnExtensionInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -418,7 +420,8 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
       __obj.asInstanceOf[InstalledAddOnExtensionListInstanceOptions]
     }
     
-    extension [Self <: InstalledAddOnExtensionListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstalledAddOnExtensionListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -452,7 +455,8 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
       __obj.asInstanceOf[InstalledAddOnExtensionListInstancePageOptions]
     }
     
-    extension [Self <: InstalledAddOnExtensionListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstalledAddOnExtensionListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -525,7 +529,8 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
       __obj.asInstanceOf[InstalledAddOnExtensionResource]
     }
     
-    extension [Self <: InstalledAddOnExtensionResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstalledAddOnExtensionResource] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -554,7 +559,8 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
       __obj.asInstanceOf[InstalledAddOnExtensionSolution]
     }
     
-    extension [Self <: InstalledAddOnExtensionSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstalledAddOnExtensionSolution] (val x: Self) extends AnyVal {
       
       inline def setInstalledAddOnSid(value: String): Self = StObject.set(x, "installedAddOnSid", value.asInstanceOf[js.Any])
       

@@ -68,7 +68,8 @@ object distCommMod {
       __obj.asInstanceOf[CommServerConnectionPayload]
     }
     
-    extension [Self <: CommServerConnectionPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommServerConnectionPayload] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       

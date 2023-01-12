@@ -83,7 +83,8 @@ object kdTreeMod {
       __obj.asInstanceOf[KDTree[V]]
     }
     
-    extension [Self <: KDTree[?], V](x: Self & KDTree[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KDTree[?], V] (val x: Self & KDTree[V]) extends AnyVal {
       
       inline def setDimensions(value: Double): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object ChooseContextConfig {
     __obj.asInstanceOf[ChooseContextConfig]
   }
   
-  extension [Self <: ChooseContextConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseContextConfig] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[ContextFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

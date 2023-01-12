@@ -352,7 +352,8 @@ object sapUiCommonsTextAreaMod {
       __obj.asInstanceOf[TextAreaSettings]
     }
     
-    extension [Self <: TextAreaSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaSettings] (val x: Self) extends AnyVal {
       
       inline def setCols(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       

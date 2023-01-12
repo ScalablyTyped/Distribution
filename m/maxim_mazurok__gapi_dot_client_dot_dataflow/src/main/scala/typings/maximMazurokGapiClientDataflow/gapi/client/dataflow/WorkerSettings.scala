@@ -38,7 +38,8 @@ object WorkerSettings {
     __obj.asInstanceOf[WorkerSettings]
   }
   
-  extension [Self <: WorkerSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerSettings] (val x: Self) extends AnyVal {
     
     inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     

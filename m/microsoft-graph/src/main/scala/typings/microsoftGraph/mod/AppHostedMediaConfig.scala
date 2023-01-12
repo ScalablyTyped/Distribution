@@ -18,7 +18,8 @@ object AppHostedMediaConfig {
     __obj.asInstanceOf[AppHostedMediaConfig]
   }
   
-  extension [Self <: AppHostedMediaConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppHostedMediaConfig] (val x: Self) extends AnyVal {
     
     inline def setBlob(value: NullableOption[String]): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     

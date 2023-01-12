@@ -38,7 +38,8 @@ object GetContactResult {
     __obj.asInstanceOf[GetContactResult]
   }
   
-  extension [Self <: GetContactResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContactResult] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: ContactAlias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     

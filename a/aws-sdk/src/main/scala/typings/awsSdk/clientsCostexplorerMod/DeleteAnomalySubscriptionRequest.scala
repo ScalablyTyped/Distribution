@@ -18,7 +18,8 @@ object DeleteAnomalySubscriptionRequest {
     __obj.asInstanceOf[DeleteAnomalySubscriptionRequest]
   }
   
-  extension [Self <: DeleteAnomalySubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAnomalySubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setSubscriptionArn(value: GenericString): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
   }

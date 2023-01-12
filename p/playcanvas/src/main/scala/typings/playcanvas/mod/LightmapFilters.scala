@@ -59,7 +59,8 @@ object LightmapFilters {
     __obj.asInstanceOf[LightmapFilters]
   }
   
-  extension [Self <: LightmapFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LightmapFilters] (val x: Self) extends AnyVal {
     
     inline def setBZnorm(value: Any): Self = StObject.set(x, "bZnorm", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IELangDBDelegates {
     __obj.asInstanceOf[IELangDBDelegates]
   }
   
-  extension [Self <: IELangDBDelegates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IELangDBDelegates] (val x: Self) extends AnyVal {
     
     inline def setInsertHandler(value: js.Function): Self = StObject.set(x, "insertHandler", value.asInstanceOf[js.Any])
     

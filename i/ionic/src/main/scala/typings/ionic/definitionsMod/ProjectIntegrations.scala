@@ -19,7 +19,8 @@ object ProjectIntegrations {
     __obj.asInstanceOf[ProjectIntegrations]
   }
   
-  extension [Self <: ProjectIntegrations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectIntegrations] (val x: Self) extends AnyVal {
     
     inline def setCapacitor(value: ProjectIntegration): Self = StObject.set(x, "capacitor", value.asInstanceOf[js.Any])
     

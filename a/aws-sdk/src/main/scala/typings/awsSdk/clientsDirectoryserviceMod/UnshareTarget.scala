@@ -23,7 +23,8 @@ object UnshareTarget {
     __obj.asInstanceOf[UnshareTarget]
   }
   
-  extension [Self <: UnshareTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnshareTarget] (val x: Self) extends AnyVal {
     
     inline def setId(value: TargetId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

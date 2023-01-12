@@ -15,7 +15,8 @@ object External {
     __obj.asInstanceOf[External]
   }
   
-  extension [Self <: External](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: External] (val x: Self) extends AnyVal {
     
     inline def setGetUnityObject(value: Double => Unity): Self = StObject.set(x, "getUnityObject", js.Any.fromFunction1(value))
   }

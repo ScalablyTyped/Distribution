@@ -21,7 +21,8 @@ object MlDataframeAnalyticsStatsMemoryUsage {
     __obj.asInstanceOf[MlDataframeAnalyticsStatsMemoryUsage]
   }
   
-  extension [Self <: MlDataframeAnalyticsStatsMemoryUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalyticsStatsMemoryUsage] (val x: Self) extends AnyVal {
     
     inline def setMemory_reestimate_bytes(value: long): Self = StObject.set(x, "memory_reestimate_bytes", value.asInstanceOf[js.Any])
     

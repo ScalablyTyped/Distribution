@@ -185,7 +185,8 @@ object srcNgtscCoreApiSrcAdapterMod {
       __obj.asInstanceOf[NgCompilerAdapter]
     }
     
-    extension [Self <: NgCompilerAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgCompilerAdapter] (val x: Self) extends AnyVal {
       
       inline def setConstructionDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "constructionDiagnostics", value.asInstanceOf[js.Any])
       
@@ -302,7 +303,8 @@ object srcNgtscCoreApiSrcAdapterMod {
       __obj.asInstanceOf[SourceFileTypeIdentifier]
     }
     
-    extension [Self <: SourceFileTypeIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceFileTypeIdentifier] (val x: Self) extends AnyVal {
       
       inline def setIsResource(value: SourceFile => Boolean): Self = StObject.set(x, "isResource", js.Any.fromFunction1(value))
       

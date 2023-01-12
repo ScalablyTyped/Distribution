@@ -521,7 +521,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
@@ -589,7 +590,8 @@ object mod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setConntimeout(value: Double): Self = StObject.set(x, "conntimeout", value.asInstanceOf[js.Any])
       

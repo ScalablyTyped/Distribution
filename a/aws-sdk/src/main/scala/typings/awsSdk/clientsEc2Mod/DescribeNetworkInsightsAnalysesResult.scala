@@ -23,7 +23,8 @@ object DescribeNetworkInsightsAnalysesResult {
     __obj.asInstanceOf[DescribeNetworkInsightsAnalysesResult]
   }
   
-  extension [Self <: DescribeNetworkInsightsAnalysesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNetworkInsightsAnalysesResult] (val x: Self) extends AnyVal {
     
     inline def setNetworkInsightsAnalyses(value: NetworkInsightsAnalysisList): Self = StObject.set(x, "NetworkInsightsAnalyses", value.asInstanceOf[js.Any])
     

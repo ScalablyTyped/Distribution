@@ -15,7 +15,8 @@ object NodeAPIComms {
     __obj.asInstanceOf[NodeAPIComms]
   }
   
-  extension [Self <: NodeAPIComms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeAPIComms] (val x: Self) extends AnyVal {
     
     inline def setPublish(value: (String, Any, Boolean) => Unit): Self = StObject.set(x, "publish", js.Any.fromFunction3(value))
   }

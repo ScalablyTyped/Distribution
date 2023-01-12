@@ -20,7 +20,8 @@ object EaseOption {
     __obj.asInstanceOf[EaseOption]
   }
   
-  extension [Self <: EaseOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EaseOption] (val x: Self) extends AnyVal {
     
     inline def setBounce(value: Fn): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ViewView {
     __obj.asInstanceOf[ViewView]
   }
   
-  extension [Self <: ViewView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewView] (val x: Self) extends AnyVal {
     
     inline def setView(value: typings.activexOutlook.Outlook.View): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
   }

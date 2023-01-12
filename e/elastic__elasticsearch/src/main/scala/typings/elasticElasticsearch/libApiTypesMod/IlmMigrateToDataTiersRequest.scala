@@ -21,7 +21,8 @@ object IlmMigrateToDataTiersRequest {
     __obj.asInstanceOf[IlmMigrateToDataTiersRequest]
   }
   
-  extension [Self <: IlmMigrateToDataTiersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmMigrateToDataTiersRequest] (val x: Self) extends AnyVal {
     
     inline def setDry_run(value: Boolean): Self = StObject.set(x, "dry_run", value.asInstanceOf[js.Any])
     

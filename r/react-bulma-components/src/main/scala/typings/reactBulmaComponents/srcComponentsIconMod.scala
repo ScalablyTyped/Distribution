@@ -38,7 +38,8 @@ object srcComponentsIconMod extends Shortcut {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

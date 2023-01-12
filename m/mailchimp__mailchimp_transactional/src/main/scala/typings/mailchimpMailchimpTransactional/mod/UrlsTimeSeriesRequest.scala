@@ -18,7 +18,8 @@ object UrlsTimeSeriesRequest {
     __obj.asInstanceOf[UrlsTimeSeriesRequest]
   }
   
-  extension [Self <: UrlsTimeSeriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlsTimeSeriesRequest] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

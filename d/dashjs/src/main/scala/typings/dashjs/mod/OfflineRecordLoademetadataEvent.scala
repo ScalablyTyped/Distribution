@@ -22,7 +22,8 @@ object OfflineRecordLoademetadataEvent {
     __obj.asInstanceOf[OfflineRecordLoademetadataEvent]
   }
   
-  extension [Self <: OfflineRecordLoademetadataEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineRecordLoademetadataEvent] (val x: Self) extends AnyVal {
     
     inline def setMadiaInfos(value: js.Array[MediaInfo]): Self = StObject.set(x, "madiaInfos", value.asInstanceOf[js.Any])
     

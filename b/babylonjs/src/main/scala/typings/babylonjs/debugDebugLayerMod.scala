@@ -180,7 +180,8 @@ object debugDebugLayerMod {
       __obj.asInstanceOf[IExplorerAdditionalChild]
     }
     
-    extension [Self <: IExplorerAdditionalChild](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExplorerAdditionalChild] (val x: Self) extends AnyVal {
       
       inline def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
       
@@ -211,7 +212,8 @@ object debugDebugLayerMod {
       __obj.asInstanceOf[IExplorerAdditionalNode]
     }
     
-    extension [Self <: IExplorerAdditionalNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExplorerAdditionalNode] (val x: Self) extends AnyVal {
       
       inline def setGetContent(value: () => js.Array[IExplorerAdditionalChild]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
@@ -238,7 +240,8 @@ object debugDebugLayerMod {
       __obj.asInstanceOf[IExplorerExtensibilityGroup]
     }
     
-    extension [Self <: IExplorerExtensibilityGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExplorerExtensibilityGroup] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: js.Array[IExplorerExtensibilityOption]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
@@ -267,7 +270,8 @@ object debugDebugLayerMod {
       __obj.asInstanceOf[IExplorerExtensibilityOption]
     }
     
-    extension [Self <: IExplorerExtensibilityOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExplorerExtensibilityOption] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Any => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
@@ -349,7 +353,8 @@ object debugDebugLayerMod {
       __obj.asInstanceOf[IInspectorOptions]
     }
     
-    extension [Self <: IInspectorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInspectorOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalNodes(value: js.Array[IExplorerAdditionalNode]): Self = StObject.set(x, "additionalNodes", value.asInstanceOf[js.Any])
       
@@ -433,7 +438,8 @@ object debugDebugLayerMod {
         __obj.asInstanceOf[typings.babylonjs.debugDebugLayerMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      extension [Self <: typings.babylonjs.debugDebugLayerMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.debugDebugLayerMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
         
         inline def setDebugLayer(value: DebugLayer): Self = StObject.set(x, "debugLayer", value.asInstanceOf[js.Any])
         

@@ -28,7 +28,8 @@ object PostCommandArgument2 {
     __obj.asInstanceOf[PostCommandArgument2]
   }
   
-  extension [Self <: PostCommandArgument2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostCommandArgument2] (val x: Self) extends AnyVal {
     
     inline def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     

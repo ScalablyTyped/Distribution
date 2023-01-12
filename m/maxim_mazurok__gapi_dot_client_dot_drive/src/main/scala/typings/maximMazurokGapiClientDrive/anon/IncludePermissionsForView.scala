@@ -67,7 +67,8 @@ object IncludePermissionsForView {
     __obj.asInstanceOf[IncludePermissionsForView]
   }
   
-  extension [Self <: IncludePermissionsForView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludePermissionsForView] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

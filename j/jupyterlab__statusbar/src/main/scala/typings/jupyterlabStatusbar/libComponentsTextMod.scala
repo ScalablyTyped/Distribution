@@ -39,7 +39,8 @@ object libComponentsTextMod {
         __obj.asInstanceOf[IProps]
       }
       
-      extension [Self <: IProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
         
         inline def setSource(value: String | Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         

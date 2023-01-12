@@ -23,7 +23,8 @@ object Validity {
     __obj.asInstanceOf[Validity]
   }
   
-  extension [Self <: Validity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Validity] (val x: Self) extends AnyVal {
     
     inline def setType(value: ValidityPeriodType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

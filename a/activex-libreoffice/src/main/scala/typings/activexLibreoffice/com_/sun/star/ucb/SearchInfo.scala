@@ -46,7 +46,8 @@ object SearchInfo {
     __obj.asInstanceOf[SearchInfo]
   }
   
-  extension [Self <: SearchInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchInfo] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: SafeArray[SearchCriterium]): Self = StObject.set(x, "Criteria", value.asInstanceOf[js.Any])
     

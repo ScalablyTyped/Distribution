@@ -20,7 +20,8 @@ object ReactScheduleRenderEvent {
     __obj.asInstanceOf[ReactScheduleRenderEvent]
   }
   
-  extension [Self <: ReactScheduleRenderEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactScheduleRenderEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: `schedule-render`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

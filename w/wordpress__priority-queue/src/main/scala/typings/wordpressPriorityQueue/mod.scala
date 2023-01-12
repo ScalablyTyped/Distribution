@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[WPPriorityQueue]
     }
     
-    extension [Self <: WPPriorityQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WPPriorityQueue] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (/* element */ WPPriorityQueueContext, /* item */ WPPriorityQueueCallback) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       

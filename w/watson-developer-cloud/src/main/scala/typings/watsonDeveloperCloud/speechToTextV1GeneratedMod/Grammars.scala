@@ -17,7 +17,8 @@ object Grammars {
     __obj.asInstanceOf[Grammars]
   }
   
-  extension [Self <: Grammars](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grammars] (val x: Self) extends AnyVal {
     
     inline def setGrammars(value: js.Array[Grammar]): Self = StObject.set(x, "grammars", value.asInstanceOf[js.Any])
     

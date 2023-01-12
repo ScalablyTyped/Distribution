@@ -94,7 +94,8 @@ object typingsCommonMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: StringDictionary[String]): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object IServerLicenseManagementOperations {
     __obj.asInstanceOf[IServerLicenseManagementOperations]
   }
   
-  extension [Self <: IServerLicenseManagementOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IServerLicenseManagementOperations] (val x: Self) extends AnyVal {
     
     inline def setGetLicenseStatus(value: () => ILicenseStatus): Self = StObject.set(x, "GetLicenseStatus", js.Any.fromFunction0(value))
     

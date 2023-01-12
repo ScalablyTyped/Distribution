@@ -926,7 +926,8 @@ object PrinterDescription {
     __obj.asInstanceOf[PrinterDescription]
   }
   
-  extension [Self <: PrinterDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterDescription] (val x: Self) extends AnyVal {
     
     inline def `setAccuracy-units-supported`(value: js.Array[AccuracyUnits]): Self = StObject.set(x, "accuracy-units-supported", value.asInstanceOf[js.Any])
     

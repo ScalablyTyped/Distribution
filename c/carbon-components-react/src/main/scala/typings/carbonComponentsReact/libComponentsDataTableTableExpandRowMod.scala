@@ -40,7 +40,8 @@ object libComponentsDataTableTableExpandRowMod extends Shortcut {
       __obj.asInstanceOf[TableExpandRowProps]
     }
     
-    extension [Self <: TableExpandRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableExpandRowProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

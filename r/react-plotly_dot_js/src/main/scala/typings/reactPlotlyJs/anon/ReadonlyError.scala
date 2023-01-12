@@ -22,7 +22,8 @@ object ReadonlyError {
     __obj.asInstanceOf[ReadonlyError]
   }
   
-  extension [Self <: ReadonlyError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyError] (val x: Self) extends AnyVal {
     
     inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object WorkforcePoolsResource {
     __obj.asInstanceOf[WorkforcePoolsResource]
   }
   
-  extension [Self <: WorkforcePoolsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkforcePoolsResource] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PartnerIntegrationOutputMessage {
     __obj.asInstanceOf[PartnerIntegrationOutputMessage]
   }
   
-  extension [Self <: PartnerIntegrationOutputMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartnerIntegrationOutputMessage] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: PartnerIntegrationDatabaseName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     

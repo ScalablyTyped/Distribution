@@ -38,7 +38,8 @@ object DescribeObjectResponse {
     __obj.asInstanceOf[DescribeObjectResponse]
   }
   
-  extension [Self <: DescribeObjectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeObjectResponse] (val x: Self) extends AnyVal {
     
     inline def setCacheControl(value: StringPrimitive): Self = StObject.set(x, "CacheControl", value.asInstanceOf[js.Any])
     

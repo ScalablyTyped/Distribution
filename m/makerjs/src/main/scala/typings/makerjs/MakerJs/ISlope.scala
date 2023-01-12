@@ -36,7 +36,8 @@ object ISlope {
     __obj.asInstanceOf[ISlope]
   }
   
-  extension [Self <: ISlope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISlope] (val x: Self) extends AnyVal {
     
     inline def setHasSlope(value: Boolean): Self = StObject.set(x, "hasSlope", value.asInstanceOf[js.Any])
     

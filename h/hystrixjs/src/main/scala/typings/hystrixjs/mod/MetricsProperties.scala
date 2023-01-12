@@ -25,7 +25,8 @@ object MetricsProperties {
     __obj.asInstanceOf[MetricsProperties]
   }
   
-  extension [Self <: MetricsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricsProperties] (val x: Self) extends AnyVal {
     
     inline def setCommandGroup(value: String): Self = StObject.set(x, "commandGroup", value.asInstanceOf[js.Any])
     

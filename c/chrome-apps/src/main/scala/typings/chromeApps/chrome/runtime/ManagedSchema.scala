@@ -37,7 +37,8 @@ object ManagedSchema {
     __obj.asInstanceOf[ManagedSchema]
   }
   
-  extension [Self <: ManagedSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedSchema] (val x: Self) extends AnyVal {
     
     inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
     

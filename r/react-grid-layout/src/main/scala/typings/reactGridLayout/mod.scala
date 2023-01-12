@@ -242,7 +242,8 @@ object mod {
       __obj.asInstanceOf[CoreProps]
     }
     
-    extension [Self <: CoreProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoreProps] (val x: Self) extends AnyVal {
       
       inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
       
@@ -492,7 +493,8 @@ object mod {
       __obj.asInstanceOf[Layout]
     }
     
-    extension [Self <: Layout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -601,7 +603,8 @@ object mod {
       __obj.asInstanceOf[ReactGridLayoutProps]
     }
     
-    extension [Self <: ReactGridLayoutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactGridLayoutProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -740,7 +743,8 @@ object mod {
       __obj.asInstanceOf[ResponsiveProps]
     }
     
-    extension [Self <: ResponsiveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveProps] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: String): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
@@ -802,7 +806,8 @@ object mod {
       __obj.asInstanceOf[WidthProviderProps]
     }
     
-    extension [Self <: WidthProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidthProviderProps] (val x: Self) extends AnyVal {
       
       inline def setMeasureBeforeMount(value: Boolean): Self = StObject.set(x, "measureBeforeMount", value.asInstanceOf[js.Any])
       

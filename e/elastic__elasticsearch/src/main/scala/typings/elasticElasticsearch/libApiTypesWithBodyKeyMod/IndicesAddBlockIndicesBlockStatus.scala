@@ -17,7 +17,8 @@ object IndicesAddBlockIndicesBlockStatus {
     __obj.asInstanceOf[IndicesAddBlockIndicesBlockStatus]
   }
   
-  extension [Self <: IndicesAddBlockIndicesBlockStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesAddBlockIndicesBlockStatus] (val x: Self) extends AnyVal {
     
     inline def setBlocked(value: Boolean): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     

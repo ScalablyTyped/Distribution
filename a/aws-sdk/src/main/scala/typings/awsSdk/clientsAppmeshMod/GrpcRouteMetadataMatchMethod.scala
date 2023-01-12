@@ -38,7 +38,8 @@ object GrpcRouteMetadataMatchMethod {
     __obj.asInstanceOf[GrpcRouteMetadataMatchMethod]
   }
   
-  extension [Self <: GrpcRouteMetadataMatchMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrpcRouteMetadataMatchMethod] (val x: Self) extends AnyVal {
     
     inline def setExact(value: HeaderMatch): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

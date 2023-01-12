@@ -19,7 +19,8 @@ object InvokeSourceDefinition {
     __obj.asInstanceOf[InvokeSourceDefinition]
   }
   
-  extension [Self <: InvokeSourceDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvokeSourceDefinition] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

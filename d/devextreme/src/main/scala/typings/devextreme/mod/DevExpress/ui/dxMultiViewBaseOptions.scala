@@ -36,7 +36,8 @@ object dxMultiViewBaseOptions {
     __obj.asInstanceOf[dxMultiViewBaseOptions[TComponent, TItem, TKey]]
   }
   
-  extension [Self <: dxMultiViewBaseOptions[?, ?, ?], TComponent /* <: dxMultiView[Any, TItem, TKey] */, TItem /* <: ItemLike */, TKey](x: Self & (dxMultiViewBaseOptions[TComponent, TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxMultiViewBaseOptions[?, ?, ?], TComponent /* <: dxMultiView[Any, TItem, TKey] */, TItem /* <: ItemLike */, TKey] (val x: Self & (dxMultiViewBaseOptions[TComponent, TItem, TKey])) extends AnyVal {
     
     inline def setAnimationEnabled(value: Boolean): Self = StObject.set(x, "animationEnabled", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object ProcessFlow {
       __obj.asInstanceOf[Process]
     }
     
-    extension [Self <: Process](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
       
       inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
@@ -406,7 +407,8 @@ object ProcessFlow {
       __obj.asInstanceOf[Stage]
     }
     
-    extension [Self <: Stage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stage] (val x: Self) extends AnyVal {
       
       inline def setGetCategory(value: () => GetValue): Self = StObject.set(x, "getCategory", js.Any.fromFunction0(value))
       
@@ -485,7 +487,8 @@ object ProcessFlow {
       __obj.asInstanceOf[Step]
     }
     
-    extension [Self <: Step](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
       
       inline def setGetAttribute(value: () => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction0(value))
       

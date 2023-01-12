@@ -21,7 +21,8 @@ object GetDataOptions {
     __obj.asInstanceOf[GetDataOptions]
   }
   
-  extension [Self <: GetDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataOptions] (val x: Self) extends AnyVal {
     
     inline def setFrequencyMode(value: V | P | R | N): Self = StObject.set(x, "frequencyMode", value.asInstanceOf[js.Any])
     

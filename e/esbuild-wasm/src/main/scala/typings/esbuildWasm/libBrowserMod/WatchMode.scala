@@ -17,7 +17,8 @@ object WatchMode {
     __obj.asInstanceOf[WatchMode]
   }
   
-  extension [Self <: WatchMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchMode] (val x: Self) extends AnyVal {
     
     inline def setOnRebuild(value: (/* error */ BuildFailure | Null, /* result */ BuildResult | Null) => Unit): Self = StObject.set(x, "onRebuild", js.Any.fromFunction2(value))
     

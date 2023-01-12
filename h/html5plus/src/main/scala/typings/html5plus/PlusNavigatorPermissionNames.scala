@@ -74,7 +74,8 @@ object PlusNavigatorPermissionNames {
     __obj.asInstanceOf[PlusNavigatorPermissionNames]
   }
   
-  extension [Self <: PlusNavigatorPermissionNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNavigatorPermissionNames] (val x: Self) extends AnyVal {
     
     inline def setCAMERA(value: String): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
     

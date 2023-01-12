@@ -23,7 +23,8 @@ object RouterRouteMissingEvent {
     __obj.asInstanceOf[RouterRouteMissingEvent]
   }
   
-  extension [Self <: RouterRouteMissingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterRouteMissingEvent] (val x: Self) extends AnyVal {
     
     inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }

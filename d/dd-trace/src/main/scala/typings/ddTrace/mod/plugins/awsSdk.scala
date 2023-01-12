@@ -40,7 +40,8 @@ object awsSdk {
     __obj.asInstanceOf[awsSdk]
   }
   
-  extension [Self <: awsSdk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: awsSdk] (val x: Self) extends AnyVal {
     
     inline def setHooks(value: `1`): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     

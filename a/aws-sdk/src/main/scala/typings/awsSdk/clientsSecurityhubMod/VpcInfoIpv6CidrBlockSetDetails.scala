@@ -18,7 +18,8 @@ object VpcInfoIpv6CidrBlockSetDetails {
     __obj.asInstanceOf[VpcInfoIpv6CidrBlockSetDetails]
   }
   
-  extension [Self <: VpcInfoIpv6CidrBlockSetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcInfoIpv6CidrBlockSetDetails] (val x: Self) extends AnyVal {
     
     inline def setIpv6CidrBlock(value: NonEmptyString): Self = StObject.set(x, "Ipv6CidrBlock", value.asInstanceOf[js.Any])
     

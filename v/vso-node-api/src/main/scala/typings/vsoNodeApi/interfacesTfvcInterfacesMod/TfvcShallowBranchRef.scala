@@ -18,7 +18,8 @@ object TfvcShallowBranchRef {
     __obj.asInstanceOf[TfvcShallowBranchRef]
   }
   
-  extension [Self <: TfvcShallowBranchRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcShallowBranchRef] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

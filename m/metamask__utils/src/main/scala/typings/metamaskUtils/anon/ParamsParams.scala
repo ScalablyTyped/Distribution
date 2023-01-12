@@ -16,7 +16,8 @@ object ParamsParams {
     __obj.asInstanceOf[ParamsParams[Params]]
   }
   
-  extension [Self <: ParamsParams[?], Params /* <: JsonRpcParams */](x: Self & ParamsParams[Params]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParamsParams[?], Params /* <: JsonRpcParams */] (val x: Self & ParamsParams[Params]) extends AnyVal {
     
     inline def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }

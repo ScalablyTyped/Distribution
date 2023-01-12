@@ -75,7 +75,8 @@ object XNotation {
     __obj.asInstanceOf[XNotation]
   }
   
-  extension [Self <: XNotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNotation] (val x: Self) extends AnyVal {
     
     inline def setGetPublicId(value: () => String): Self = StObject.set(x, "getPublicId", js.Any.fromFunction0(value))
     

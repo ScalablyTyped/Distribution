@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[TCPDialOptions]
     }
     
-    extension [Self <: TCPDialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TCPDialOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object mod {
       __obj.asInstanceOf[TCPOptions]
     }
     
-    extension [Self <: TCPOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TCPOptions] (val x: Self) extends AnyVal {
       
       inline def setInboundSocketInactivityTimeout(value: Double): Self = StObject.set(x, "inboundSocketInactivityTimeout", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object mod {
       __obj.asInstanceOf[TCPSocketOptions]
     }
     
-    extension [Self <: TCPSocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TCPSocketOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       

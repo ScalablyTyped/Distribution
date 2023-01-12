@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[OnMouseDown]
     }
     
-    extension [Self <: OnMouseDown](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnMouseDown] (val x: Self) extends AnyVal {
       
       inline def setOnMouseDown(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[OnMouseEnter]
     }
     
-    extension [Self <: OnMouseEnter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnMouseEnter] (val x: Self) extends AnyVal {
       
       inline def setOnMouseEnter(value: () => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
       
@@ -118,7 +120,8 @@ object anon {
       __obj.asInstanceOf[StateisActivebooleanevent]
     }
     
-    extension [Self <: StateisActivebooleanevent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateisActivebooleanevent] (val x: Self) extends AnyVal {
       
       inline def setCurrentlyDraggingId(value: Id): Self = StObject.set(x, "currentlyDraggingId", value.asInstanceOf[js.Any])
       
@@ -207,7 +210,8 @@ object anon {
       __obj.asInstanceOf[StateisOverAcceptedboolea]
     }
     
-    extension [Self <: StateisOverAcceptedboolea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateisOverAcceptedboolea] (val x: Self) extends AnyVal {
       
       inline def setCurrentlyDraggingId(value: Id): Self = StObject.set(x, "currentlyDraggingId", value.asInstanceOf[js.Any])
       
@@ -301,7 +305,8 @@ object anon {
       __obj.asInstanceOf[StateisOverbooleanwillAcc]
     }
     
-    extension [Self <: StateisOverbooleanwillAcc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateisOverbooleanwillAcc] (val x: Self) extends AnyVal {
       
       inline def setCurrentlyDraggingId(value: Id): Self = StObject.set(x, "currentlyDraggingId", value.asInstanceOf[js.Any])
       

@@ -172,7 +172,8 @@ object ASPxClientRibbon {
     __obj.asInstanceOf[ASPxClientRibbon]
   }
   
-  extension [Self <: ASPxClientRibbon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRibbon] (val x: Self) extends AnyVal {
     
     inline def setActiveTabChanged(value: ASPxClientEvent[ASPxClientRibbonTabEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "ActiveTabChanged", value.asInstanceOf[js.Any])
     

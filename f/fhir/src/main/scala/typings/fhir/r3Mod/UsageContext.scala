@@ -35,7 +35,8 @@ object UsageContext {
     __obj.asInstanceOf[UsageContext]
   }
   
-  extension [Self <: UsageContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageContext] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Coding): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

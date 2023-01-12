@@ -23,7 +23,8 @@ object CancelQuantumTaskResponse {
     __obj.asInstanceOf[CancelQuantumTaskResponse]
   }
   
-  extension [Self <: CancelQuantumTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelQuantumTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setCancellationStatus(value: CancellationStatus): Self = StObject.set(x, "cancellationStatus", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GPUPipelineLayoutDescriptor {
     __obj.asInstanceOf[GPUPipelineLayoutDescriptor]
   }
   
-  extension [Self <: GPUPipelineLayoutDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUPipelineLayoutDescriptor] (val x: Self) extends AnyVal {
     
     inline def setBindGroupLayouts(value: js.Array[GPUBindGroupLayout]): Self = StObject.set(x, "bindGroupLayouts", value.asInstanceOf[js.Any])
     

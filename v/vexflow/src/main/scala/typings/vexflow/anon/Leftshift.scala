@@ -19,7 +19,8 @@ object Leftshift {
     __obj.asInstanceOf[Leftshift]
   }
   
-  extension [Self <: Leftshift](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Leftshift] (val x: Self) extends AnyVal {
     
     inline def setLeft_shift(value: Double): Self = StObject.set(x, "left_shift", value.asInstanceOf[js.Any])
     

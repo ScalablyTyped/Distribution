@@ -19,7 +19,8 @@ object Decoder {
     __obj.asInstanceOf[Decoder[I, A]]
   }
   
-  extension [Self <: Decoder[?, ?], I, A](x: Self & (Decoder[I, A])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Decoder[?, ?], I, A] (val x: Self & (Decoder[I, A])) extends AnyVal {
     
     inline def setDecode(value: I => Validation[A]): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

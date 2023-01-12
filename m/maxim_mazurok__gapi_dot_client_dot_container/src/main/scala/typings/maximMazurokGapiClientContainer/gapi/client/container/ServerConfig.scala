@@ -31,7 +31,8 @@ object ServerConfig {
     __obj.asInstanceOf[ServerConfig]
   }
   
-  extension [Self <: ServerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerConfig] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: js.Array[ReleaseChannelConfig]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

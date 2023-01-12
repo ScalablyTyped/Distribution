@@ -28,7 +28,8 @@ object AssociateVpcCidrBlockResult {
     __obj.asInstanceOf[AssociateVpcCidrBlockResult]
   }
   
-  extension [Self <: AssociateVpcCidrBlockResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateVpcCidrBlockResult] (val x: Self) extends AnyVal {
     
     inline def setCidrBlockAssociation(value: VpcCidrBlockAssociation): Self = StObject.set(x, "CidrBlockAssociation", value.asInstanceOf[js.Any])
     

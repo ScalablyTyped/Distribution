@@ -97,7 +97,8 @@ object SubjectKeyIdentifier {
     __obj.asInstanceOf[SubjectKeyIdentifier]
   }
   
-  extension [Self <: SubjectKeyIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectKeyIdentifier] (val x: Self) extends AnyVal {
     
     inline def setSetKIDByParam(value: Any => Unit): Self = StObject.set(x, "setKIDByParam", js.Any.fromFunction1(value))
   }

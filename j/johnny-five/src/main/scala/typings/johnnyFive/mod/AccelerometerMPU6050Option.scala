@@ -17,7 +17,8 @@ object AccelerometerMPU6050Option {
     __obj.asInstanceOf[AccelerometerMPU6050Option]
   }
   
-  extension [Self <: AccelerometerMPU6050Option](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccelerometerMPU6050Option] (val x: Self) extends AnyVal {
     
     inline def setSensitivity(value: Double): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     

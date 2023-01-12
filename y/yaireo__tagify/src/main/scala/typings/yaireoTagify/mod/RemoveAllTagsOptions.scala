@@ -26,7 +26,8 @@ object RemoveAllTagsOptions {
     __obj.asInstanceOf[RemoveAllTagsOptions]
   }
   
-  extension [Self <: RemoveAllTagsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveAllTagsOptions] (val x: Self) extends AnyVal {
     
     inline def setWithoutChangeEvent(value: Boolean): Self = StObject.set(x, "withoutChangeEvent", value.asInstanceOf[js.Any])
     

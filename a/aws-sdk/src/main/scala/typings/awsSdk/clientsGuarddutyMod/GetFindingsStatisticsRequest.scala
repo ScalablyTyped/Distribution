@@ -28,7 +28,8 @@ object GetFindingsStatisticsRequest {
     __obj.asInstanceOf[GetFindingsStatisticsRequest]
   }
   
-  extension [Self <: GetFindingsStatisticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFindingsStatisticsRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     

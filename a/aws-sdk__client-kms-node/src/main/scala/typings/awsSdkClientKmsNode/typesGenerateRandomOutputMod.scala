@@ -30,7 +30,8 @@ object typesGenerateRandomOutputMod {
       __obj.asInstanceOf[GenerateRandomOutput]
     }
     
-    extension [Self <: GenerateRandomOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateRandomOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

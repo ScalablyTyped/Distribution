@@ -100,7 +100,8 @@ object distServicesRenderingServiceMod {
       __obj.asInstanceOf[PickingResult]
     }
     
-    extension [Self <: PickingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickingResult] (val x: Self) extends AnyVal {
       
       inline def setPicked(value: js.Array[DisplayObject[Any, Any]]): Self = StObject.set(x, "picked", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object distServicesRenderingServiceMod {
       __obj.asInstanceOf[RenderingPlugin]
     }
     
-    extension [Self <: RenderingPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderingPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: RenderingService => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }

@@ -28,7 +28,8 @@ object NetworkPayload {
     __obj.asInstanceOf[NetworkPayload]
   }
   
-  extension [Self <: NetworkPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkPayload] (val x: Self) extends AnyVal {
     
     inline def setEthernet0(value: EthernetPayload): Self = StObject.set(x, "Ethernet0", value.asInstanceOf[js.Any])
     

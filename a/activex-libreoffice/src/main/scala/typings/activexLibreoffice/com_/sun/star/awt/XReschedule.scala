@@ -25,7 +25,8 @@ object XReschedule {
     __obj.asInstanceOf[XReschedule]
   }
   
-  extension [Self <: XReschedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XReschedule] (val x: Self) extends AnyVal {
     
     inline def setReschedule(value: () => Unit): Self = StObject.set(x, "reschedule", js.Any.fromFunction0(value))
   }

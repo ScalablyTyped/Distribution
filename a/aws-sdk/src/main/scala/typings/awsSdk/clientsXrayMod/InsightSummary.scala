@@ -75,7 +75,8 @@ object InsightSummary {
     __obj.asInstanceOf[InsightSummary]
   }
   
-  extension [Self <: InsightSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightSummary] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: InsightCategoryList): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
     

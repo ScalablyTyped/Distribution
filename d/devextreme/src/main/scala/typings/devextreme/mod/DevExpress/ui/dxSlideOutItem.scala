@@ -23,7 +23,8 @@ object dxSlideOutItem {
     __obj.asInstanceOf[dxSlideOutItem]
   }
   
-  extension [Self <: dxSlideOutItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSlideOutItem] (val x: Self) extends AnyVal {
     
     inline def setMenuTemplate(value: template | (js.Function0[String | UserDefinedElement[Element]])): Self = StObject.set(x, "menuTemplate", value.asInstanceOf[js.Any])
     

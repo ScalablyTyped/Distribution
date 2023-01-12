@@ -35,7 +35,8 @@ object StartAccelerometerOption {
     __obj.asInstanceOf[StartAccelerometerOption]
   }
   
-  extension [Self <: StartAccelerometerOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartAccelerometerOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

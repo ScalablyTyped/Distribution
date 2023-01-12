@@ -19,7 +19,8 @@ object NotificationReplyMarkup {
     __obj.asInstanceOf[NotificationReplyMarkup]
   }
   
-  extension [Self <: NotificationReplyMarkup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationReplyMarkup] (val x: Self) extends AnyVal {
     
     inline def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     

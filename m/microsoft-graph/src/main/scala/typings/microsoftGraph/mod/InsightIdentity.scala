@@ -22,7 +22,8 @@ object InsightIdentity {
     __obj.asInstanceOf[InsightIdentity]
   }
   
-  extension [Self <: InsightIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightIdentity] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: NullableOption[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

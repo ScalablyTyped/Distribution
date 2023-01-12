@@ -16,7 +16,8 @@ object UploadRef {
     __obj.asInstanceOf[UploadRef]
   }
   
-  extension [Self <: UploadRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadRef] (val x: Self) extends AnyVal {
     
     inline def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
     

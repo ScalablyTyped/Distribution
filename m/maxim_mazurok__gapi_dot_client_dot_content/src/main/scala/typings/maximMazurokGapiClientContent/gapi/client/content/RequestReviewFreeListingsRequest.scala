@@ -16,7 +16,8 @@ object RequestReviewFreeListingsRequest {
     __obj.asInstanceOf[RequestReviewFreeListingsRequest]
   }
   
-  extension [Self <: RequestReviewFreeListingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestReviewFreeListingsRequest] (val x: Self) extends AnyVal {
     
     inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     

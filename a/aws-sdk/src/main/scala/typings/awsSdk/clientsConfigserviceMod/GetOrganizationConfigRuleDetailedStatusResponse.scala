@@ -23,7 +23,8 @@ object GetOrganizationConfigRuleDetailedStatusResponse {
     __obj.asInstanceOf[GetOrganizationConfigRuleDetailedStatusResponse]
   }
   
-  extension [Self <: GetOrganizationConfigRuleDetailedStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOrganizationConfigRuleDetailedStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

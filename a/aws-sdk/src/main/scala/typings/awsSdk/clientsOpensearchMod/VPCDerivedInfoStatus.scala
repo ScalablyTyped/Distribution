@@ -23,7 +23,8 @@ object VPCDerivedInfoStatus {
     __obj.asInstanceOf[VPCDerivedInfoStatus]
   }
   
-  extension [Self <: VPCDerivedInfoStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VPCDerivedInfoStatus] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: VPCDerivedInfo): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

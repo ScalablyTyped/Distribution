@@ -28,7 +28,8 @@ object ShipmentInvoiceLineItemInvoice {
     __obj.asInstanceOf[ShipmentInvoiceLineItemInvoice]
   }
   
-  extension [Self <: ShipmentInvoiceLineItemInvoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShipmentInvoiceLineItemInvoice] (val x: Self) extends AnyVal {
     
     inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     

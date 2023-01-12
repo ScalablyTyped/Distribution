@@ -78,7 +78,8 @@ object ElasticsearchDestinationDescription {
     __obj.asInstanceOf[ElasticsearchDestinationDescription]
   }
   
-  extension [Self <: ElasticsearchDestinationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticsearchDestinationDescription] (val x: Self) extends AnyVal {
     
     inline def setBufferingHints(value: ElasticsearchBufferingHints): Self = StObject.set(x, "BufferingHints", value.asInstanceOf[js.Any])
     

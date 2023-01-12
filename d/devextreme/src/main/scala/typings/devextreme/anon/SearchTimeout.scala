@@ -43,7 +43,8 @@ object SearchTimeout {
     __obj.asInstanceOf[SearchTimeout]
   }
   
-  extension [Self <: SearchTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchTimeout] (val x: Self) extends AnyVal {
     
     inline def setAllowSearch(value: Boolean): Self = StObject.set(x, "allowSearch", value.asInstanceOf[js.Any])
     

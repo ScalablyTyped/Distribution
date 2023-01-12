@@ -33,7 +33,8 @@ object StartSyncExecutionInput {
     __obj.asInstanceOf[StartSyncExecutionInput]
   }
   
-  extension [Self <: StartSyncExecutionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSyncExecutionInput] (val x: Self) extends AnyVal {
     
     inline def setInput(value: SensitiveData): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

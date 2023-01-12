@@ -26,7 +26,8 @@ object Jobid {
     __obj.asInstanceOf[Jobid]
   }
   
-  extension [Self <: Jobid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Jobid] (val x: Self) extends AnyVal {
     
     inline def setJob_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['job-id'] */ js.Any

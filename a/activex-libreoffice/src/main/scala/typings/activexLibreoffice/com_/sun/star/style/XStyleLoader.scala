@@ -43,7 +43,8 @@ object XStyleLoader {
     __obj.asInstanceOf[XStyleLoader]
   }
   
-  extension [Self <: XStyleLoader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStyleLoader] (val x: Self) extends AnyVal {
     
     inline def setGetStyleLoaderOptions(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getStyleLoaderOptions", js.Any.fromFunction0(value))
     

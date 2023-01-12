@@ -100,7 +100,8 @@ object Polygon {
     __obj.asInstanceOf[Polygon]
   }
   
-  extension [Self <: Polygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Polygon] (val x: Self) extends AnyVal {
     
     inline def setBooleanOperation(value: BooleanOperation): Self = StObject.set(x, "booleanOperation", value.asInstanceOf[js.Any])
     

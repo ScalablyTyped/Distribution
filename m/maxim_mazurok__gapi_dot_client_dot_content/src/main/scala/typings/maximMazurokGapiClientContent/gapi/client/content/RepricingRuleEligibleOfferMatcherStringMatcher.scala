@@ -19,7 +19,8 @@ object RepricingRuleEligibleOfferMatcherStringMatcher {
     __obj.asInstanceOf[RepricingRuleEligibleOfferMatcherStringMatcher]
   }
   
-  extension [Self <: RepricingRuleEligibleOfferMatcherStringMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepricingRuleEligibleOfferMatcherStringMatcher] (val x: Self) extends AnyVal {
     
     inline def setStrAttributes(value: js.Array[String]): Self = StObject.set(x, "strAttributes", value.asInstanceOf[js.Any])
     

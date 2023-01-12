@@ -51,7 +51,8 @@ object APIGatewayRequestAuthorizerEventV2 {
     __obj.asInstanceOf[APIGatewayRequestAuthorizerEventV2]
   }
   
-  extension [Self <: APIGatewayRequestAuthorizerEventV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIGatewayRequestAuthorizerEventV2] (val x: Self) extends AnyVal {
     
     inline def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     

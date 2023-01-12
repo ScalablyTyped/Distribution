@@ -91,7 +91,8 @@ object QualityReportTestReport {
     __obj.asInstanceOf[QualityReportTestReport]
   }
   
-  extension [Self <: QualityReportTestReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QualityReportTestReport] (val x: Self) extends AnyVal {
     
     inline def setAppVersionId(value: Double): Self = StObject.set(x, "appVersionId", value.asInstanceOf[js.Any])
     

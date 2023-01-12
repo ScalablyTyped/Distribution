@@ -19,7 +19,8 @@ object OverrideMimeType {
     __obj.asInstanceOf[OverrideMimeType]
   }
   
-  extension [Self <: OverrideMimeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideMimeType] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

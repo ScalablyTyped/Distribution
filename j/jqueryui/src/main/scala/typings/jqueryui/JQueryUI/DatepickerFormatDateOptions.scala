@@ -21,7 +21,8 @@ object DatepickerFormatDateOptions {
     __obj.asInstanceOf[DatepickerFormatDateOptions]
   }
   
-  extension [Self <: DatepickerFormatDateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatepickerFormatDateOptions] (val x: Self) extends AnyVal {
     
     inline def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
     

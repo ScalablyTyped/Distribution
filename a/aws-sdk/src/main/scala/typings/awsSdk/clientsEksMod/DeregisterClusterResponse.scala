@@ -15,7 +15,8 @@ object DeregisterClusterResponse {
     __obj.asInstanceOf[DeregisterClusterResponse]
   }
   
-  extension [Self <: DeregisterClusterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterClusterResponse] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: Cluster): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     

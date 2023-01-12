@@ -23,7 +23,8 @@ object ImageObject {
     __obj.asInstanceOf[ImageObject]
   }
   
-  extension [Self <: ImageObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageObject] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

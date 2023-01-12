@@ -390,7 +390,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setCleanUrls(value: Boolean | js.Array[String]): Self = StObject.set(x, "cleanUrls", value.asInstanceOf[js.Any])
       
@@ -463,7 +464,8 @@ object mod {
       __obj.asInstanceOf[Header]
     }
     
-    extension [Self <: Header](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Array[Key]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -492,7 +494,8 @@ object mod {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setCreateReadStream(value: FnCall): Self = StObject.set(x, "createReadStream", value.asInstanceOf[js.Any])
       
@@ -532,7 +535,8 @@ object mod {
       __obj.asInstanceOf[Redirect]
     }
     
-    extension [Self <: Redirect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
       
       inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -551,7 +555,8 @@ object mod {
       __obj.asInstanceOf[Rewrite]
     }
     
-    extension [Self <: Rewrite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rewrite] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       

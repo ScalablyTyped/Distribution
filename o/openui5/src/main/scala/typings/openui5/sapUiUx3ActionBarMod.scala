@@ -820,7 +820,8 @@ object sapUiUx3ActionBarMod {
       __obj.asInstanceOf[ActionBarSettings]
     }
     
-    extension [Self <: ActionBarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBarSettings] (val x: Self) extends AnyVal {
       
       inline def setActionSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "actionSelected", js.Any.fromFunction1(value))
       

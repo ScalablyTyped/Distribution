@@ -15,7 +15,8 @@ object InteropSubscribable {
     __obj.asInstanceOf[InteropSubscribable[T]]
   }
   
-  extension [Self <: InteropSubscribable[?], T](x: Self & InteropSubscribable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteropSubscribable[?], T] (val x: Self & InteropSubscribable[T]) extends AnyVal {
     
     inline def setSubscribe(value: Observer[T] => Subscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
   }

@@ -93,7 +93,8 @@ object SeriesXrangeOptions {
     __obj.asInstanceOf[SeriesXrangeOptions]
   }
   
-  extension [Self <: SeriesXrangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesXrangeOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[XrangePointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

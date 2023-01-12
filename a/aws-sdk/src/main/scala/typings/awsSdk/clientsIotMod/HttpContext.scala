@@ -23,7 +23,8 @@ object HttpContext {
     __obj.asInstanceOf[HttpContext]
   }
   
-  extension [Self <: HttpContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpContext] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

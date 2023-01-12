@@ -23,7 +23,8 @@ object OSPolicyResourceGroup {
     __obj.asInstanceOf[OSPolicyResourceGroup]
   }
   
-  extension [Self <: OSPolicyResourceGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyResourceGroup] (val x: Self) extends AnyVal {
     
     inline def setInventoryFilters(value: js.Array[OSPolicyInventoryFilter]): Self = StObject.set(x, "inventoryFilters", value.asInstanceOf[js.Any])
     

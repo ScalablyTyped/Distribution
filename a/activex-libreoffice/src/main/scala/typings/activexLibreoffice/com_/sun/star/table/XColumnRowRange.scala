@@ -53,7 +53,8 @@ object XColumnRowRange {
     __obj.asInstanceOf[XColumnRowRange]
   }
   
-  extension [Self <: XColumnRowRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XColumnRowRange] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: XTableColumns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     

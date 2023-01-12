@@ -47,7 +47,8 @@ object distTypesAdaptorsGetEndpointFromInstructionsMod {
       __obj.asInstanceOf[EndpointParameterInstructionsSupplier]
     }
     
-    extension [Self <: EndpointParameterInstructionsSupplier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointParameterInstructionsSupplier] (val x: Self) extends AnyVal {
       
       inline def setGetEndpointParameterInstructions(value: () => EndpointParameterInstructions): Self = StObject.set(x, "getEndpointParameterInstructions", js.Any.fromFunction0(value))
       

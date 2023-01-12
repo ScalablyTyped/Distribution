@@ -48,7 +48,8 @@ object VideoMetadata {
     __obj.asInstanceOf[VideoMetadata]
   }
   
-  extension [Self <: VideoMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoMetadata] (val x: Self) extends AnyVal {
     
     inline def setCodec(value: String): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     

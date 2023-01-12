@@ -21,7 +21,8 @@ object typesIncorrectKeyMaterialExceptionMod {
       __obj.asInstanceOf[IncorrectKeyMaterialException]
     }
     
-    extension [Self <: IncorrectKeyMaterialException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncorrectKeyMaterialException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.IncorrectKeyMaterialException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object typesIncorrectKeyMaterialExceptionMod {
       __obj.asInstanceOf[IncorrectKeyMaterialExceptionDetails]
     }
     
-    extension [Self <: IncorrectKeyMaterialExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncorrectKeyMaterialExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

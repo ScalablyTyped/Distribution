@@ -23,7 +23,8 @@ object TaskAgentSessionKey {
     __obj.asInstanceOf[TaskAgentSessionKey]
   }
   
-  extension [Self <: TaskAgentSessionKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentSessionKey] (val x: Self) extends AnyVal {
     
     inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     

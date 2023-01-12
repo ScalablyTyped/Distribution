@@ -21,7 +21,8 @@ object EosActionNewAccount {
     __obj.asInstanceOf[EosActionNewAccount]
   }
   
-  extension [Self <: EosActionNewAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosActionNewAccount] (val x: Self) extends AnyVal {
     
     inline def setActive(value: EosAuthorization): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

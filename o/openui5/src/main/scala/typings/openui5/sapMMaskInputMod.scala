@@ -479,7 +479,8 @@ object sapMMaskInputMod {
       __obj.asInstanceOf[MaskInputSettings]
     }
     
-    extension [Self <: MaskInputSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaskInputSettings] (val x: Self) extends AnyVal {
       
       inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       

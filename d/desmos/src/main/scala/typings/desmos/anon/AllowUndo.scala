@@ -25,7 +25,8 @@ object AllowUndo {
     __obj.asInstanceOf[AllowUndo]
   }
   
-  extension [Self <: AllowUndo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowUndo] (val x: Self) extends AnyVal {
     
     inline def setAllowUndo(value: Boolean): Self = StObject.set(x, "allowUndo", value.asInstanceOf[js.Any])
     

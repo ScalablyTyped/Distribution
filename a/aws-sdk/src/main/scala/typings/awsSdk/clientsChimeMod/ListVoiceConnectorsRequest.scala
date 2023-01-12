@@ -23,7 +23,8 @@ object ListVoiceConnectorsRequest {
     __obj.asInstanceOf[ListVoiceConnectorsRequest]
   }
   
-  extension [Self <: ListVoiceConnectorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVoiceConnectorsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ResultMax): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object BShowIndicator {
     __obj.asInstanceOf[BShowIndicator]
   }
   
-  extension [Self <: BShowIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BShowIndicator] (val x: Self) extends AnyVal {
     
     inline def setBShowIndicator(value: Boolean): Self = StObject.set(x, "bShowIndicator", value.asInstanceOf[js.Any])
     

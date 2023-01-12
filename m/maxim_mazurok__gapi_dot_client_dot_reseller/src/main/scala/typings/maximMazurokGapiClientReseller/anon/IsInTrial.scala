@@ -19,7 +19,8 @@ object IsInTrial {
     __obj.asInstanceOf[IsInTrial]
   }
   
-  extension [Self <: IsInTrial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsInTrial] (val x: Self) extends AnyVal {
     
     inline def setIsInTrial(value: Boolean): Self = StObject.set(x, "isInTrial", value.asInstanceOf[js.Any])
     

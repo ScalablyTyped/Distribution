@@ -28,7 +28,8 @@ object StartPreciseCoverageRequest {
     __obj.asInstanceOf[StartPreciseCoverageRequest]
   }
   
-  extension [Self <: StartPreciseCoverageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartPreciseCoverageRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowTriggeredUpdates(value: Boolean): Self = StObject.set(x, "allowTriggeredUpdates", value.asInstanceOf[js.Any])
     

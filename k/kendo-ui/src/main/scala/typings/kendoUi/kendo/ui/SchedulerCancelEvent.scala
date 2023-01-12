@@ -20,7 +20,8 @@ object SchedulerCancelEvent {
     __obj.asInstanceOf[SchedulerCancelEvent]
   }
   
-  extension [Self <: SchedulerCancelEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerCancelEvent] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SDPIceParameters {
     __obj.asInstanceOf[SDPIceParameters]
   }
   
-  extension [Self <: SDPIceParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPIceParameters] (val x: Self) extends AnyVal {
     
     inline def setIceLite(value: Boolean): Self = StObject.set(x, "iceLite", value.asInstanceOf[js.Any])
     

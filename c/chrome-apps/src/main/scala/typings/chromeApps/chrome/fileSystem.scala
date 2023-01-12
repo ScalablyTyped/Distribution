@@ -54,7 +54,8 @@ object fileSystem {
       __obj.asInstanceOf[AcceptOptions]
     }
     
-    extension [Self <: AcceptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AcceptOptions] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object fileSystem {
       __obj.asInstanceOf[ChooseDirectoryEntryOptions]
     }
     
-    extension [Self <: ChooseDirectoryEntryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChooseDirectoryEntryOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: openDirectory): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -170,7 +172,8 @@ object fileSystem {
       __obj.asInstanceOf[ChooseEntryOptionsBase]
     }
     
-    extension [Self <: ChooseEntryOptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChooseEntryOptionsBase] (val x: Self) extends AnyVal {
       
       inline def setAccepts(value: js.Array[AcceptOptions]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
       
@@ -212,7 +215,8 @@ object fileSystem {
       __obj.asInstanceOf[ChooseFileEntryOptions]
     }
     
-    extension [Self <: ChooseFileEntryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChooseFileEntryOptions] (val x: Self) extends AnyVal {
       
       inline def setAcceptsMultiple(value: `false`): Self = StObject.set(x, "acceptsMultiple", value.asInstanceOf[js.Any])
       
@@ -246,7 +250,8 @@ object fileSystem {
       __obj.asInstanceOf[ChooseMultipleFilesEntryOptions]
     }
     
-    extension [Self <: ChooseMultipleFilesEntryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChooseMultipleFilesEntryOptions] (val x: Self) extends AnyVal {
       
       inline def setAcceptsMultiple(value: `true`): Self = StObject.set(x, "acceptsMultiple", value.asInstanceOf[js.Any])
       
@@ -269,7 +274,8 @@ object fileSystem {
       __obj.asInstanceOf[ChooseSaveFileEntryOptions]
     }
     
-    extension [Self <: ChooseSaveFileEntryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChooseSaveFileEntryOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: saveFile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -299,7 +305,8 @@ object fileSystem {
       __obj.asInstanceOf[Volume]
     }
     
-    extension [Self <: Volume](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
       
       inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
       

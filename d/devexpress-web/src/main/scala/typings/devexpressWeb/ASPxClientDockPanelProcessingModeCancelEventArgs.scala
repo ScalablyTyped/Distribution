@@ -23,7 +23,8 @@ object ASPxClientDockPanelProcessingModeCancelEventArgs {
     __obj.asInstanceOf[ASPxClientDockPanelProcessingModeCancelEventArgs]
   }
   
-  extension [Self <: ASPxClientDockPanelProcessingModeCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDockPanelProcessingModeCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setZone(value: ASPxClientDockZone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
   }

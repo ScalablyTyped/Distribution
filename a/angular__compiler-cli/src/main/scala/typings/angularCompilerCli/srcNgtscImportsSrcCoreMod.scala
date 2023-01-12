@@ -105,7 +105,8 @@ object srcNgtscImportsSrcCoreMod {
       __obj.asInstanceOf[ImportRewriter]
     }
     
-    extension [Self <: ImportRewriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportRewriter] (val x: Self) extends AnyVal {
       
       inline def setRewriteSpecifier(value: (String, String) => String): Self = StObject.set(x, "rewriteSpecifier", js.Any.fromFunction2(value))
       

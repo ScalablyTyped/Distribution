@@ -161,7 +161,8 @@ object MCustomScrollbar {
       __obj.asInstanceOf[CustomScrollbarOptions]
     }
     
-    extension [Self <: CustomScrollbarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomScrollbarOptions] (val x: Self) extends AnyVal {
       
       inline def setAdvanced(value: AutoExpandHorizontalScroll): Self = StObject.set(x, "advanced", value.asInstanceOf[js.Any])
       
@@ -297,7 +298,8 @@ object MCustomScrollbar {
       __obj.asInstanceOf[ScrollToParameterOptions]
     }
     
-    extension [Self <: ScrollToParameterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollToParameterOptions] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: Boolean): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       

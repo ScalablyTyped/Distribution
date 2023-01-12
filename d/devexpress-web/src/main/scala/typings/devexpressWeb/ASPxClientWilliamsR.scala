@@ -30,7 +30,8 @@ object ASPxClientWilliamsR {
     __obj.asInstanceOf[ASPxClientWilliamsR]
   }
   
-  extension [Self <: ASPxClientWilliamsR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientWilliamsR] (val x: Self) extends AnyVal {
     
     inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
   }

@@ -48,7 +48,8 @@ object distRandomMod {
       __obj.asInstanceOf[ColorBound]
     }
     
-    extension [Self <: ColorBound](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorBound] (val x: Self) extends AnyVal {
       
       inline def setHueRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "hueRange", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object distRandomMod {
       __obj.asInstanceOf[RandomCountOptions]
     }
     
-    extension [Self <: RandomCountOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomCountOptions] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object distRandomMod {
       __obj.asInstanceOf[RandomOptions]
     }
     
-    extension [Self <: RandomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomOptions] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

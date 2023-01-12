@@ -49,7 +49,8 @@ object QuickPickOptions {
     __obj.asInstanceOf[QuickPickOptions]
   }
   
-  extension [Self <: QuickPickOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickPickOptions] (val x: Self) extends AnyVal {
     
     inline def setCanPickMany(value: Boolean): Self = StObject.set(x, "canPickMany", value.asInstanceOf[js.Any])
     

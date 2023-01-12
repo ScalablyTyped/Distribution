@@ -31,7 +31,8 @@ object DataTables {
       __obj.asInstanceOf[AutoFillSettings]
     }
     
-    extension [Self <: AutoFillSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoFillSettings] (val x: Self) extends AnyVal {
       
       inline def setAlwaysAsk(value: Boolean): Self = StObject.set(x, "alwaysAsk", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object DataTables {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setAutoFill(value: Boolean | AutoFillSettings): Self = StObject.set(x, "autoFill", value.asInstanceOf[js.Any])
       

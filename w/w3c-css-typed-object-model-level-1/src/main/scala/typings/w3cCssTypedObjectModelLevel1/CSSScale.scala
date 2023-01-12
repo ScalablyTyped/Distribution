@@ -28,7 +28,8 @@ object CSSScale {
     __obj.asInstanceOf[CSSScale]
   }
   
-  extension [Self <: CSSScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSScale] (val x: Self) extends AnyVal {
     
     inline def setX(value: CSSNumberOrNumeric): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object NGram {
     __obj.asInstanceOf[NGram]
   }
   
-  extension [Self <: NGram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NGram] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

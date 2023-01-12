@@ -18,7 +18,8 @@ object ExportBundleResult {
     __obj.asInstanceOf[ExportBundleResult]
   }
   
-  extension [Self <: ExportBundleResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportBundleResult] (val x: Self) extends AnyVal {
     
     inline def setDownloadUrl(value: DownloadUrl): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     

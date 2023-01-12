@@ -72,7 +72,8 @@ object FilePondStyleProps {
     __obj.asInstanceOf[FilePondStyleProps]
   }
   
-  extension [Self <: FilePondStyleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePondStyleProps] (val x: Self) extends AnyVal {
     
     inline def setStyleButtonProcessItemPosition(value: String): Self = StObject.set(x, "styleButtonProcessItemPosition", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SmartHomeV1SyncPayload {
     __obj.asInstanceOf[SmartHomeV1SyncPayload]
   }
   
-  extension [Self <: SmartHomeV1SyncPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartHomeV1SyncPayload] (val x: Self) extends AnyVal {
     
     inline def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     

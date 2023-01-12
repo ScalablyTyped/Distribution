@@ -23,7 +23,8 @@ object InternalPropertyDescriptor {
     __obj.asInstanceOf[InternalPropertyDescriptor]
   }
   
-  extension [Self <: InternalPropertyDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalPropertyDescriptor] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

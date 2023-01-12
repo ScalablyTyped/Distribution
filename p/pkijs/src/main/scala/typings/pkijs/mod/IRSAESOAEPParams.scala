@@ -23,7 +23,8 @@ object IRSAESOAEPParams {
     __obj.asInstanceOf[IRSAESOAEPParams]
   }
   
-  extension [Self <: IRSAESOAEPParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRSAESOAEPParams] (val x: Self) extends AnyVal {
     
     inline def setHashAlgorithm(value: AlgorithmIdentifier): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

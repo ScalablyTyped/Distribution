@@ -65,7 +65,8 @@ object SmsWapMessage {
     __obj.asInstanceOf[SmsWapMessage]
   }
   
-  extension [Self <: SmsWapMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmsWapMessage] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GoogleAudienceGroup {
     __obj.asInstanceOf[GoogleAudienceGroup]
   }
   
-  extension [Self <: GoogleAudienceGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAudienceGroup] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: js.Array[GoogleAudienceTargetingSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     

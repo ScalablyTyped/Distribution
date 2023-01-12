@@ -30,7 +30,8 @@ object SunburstPoint {
     __obj.asInstanceOf[SunburstPoint]
   }
   
-  extension [Self <: SunburstPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SunburstPoint] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[SunburstPoint]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

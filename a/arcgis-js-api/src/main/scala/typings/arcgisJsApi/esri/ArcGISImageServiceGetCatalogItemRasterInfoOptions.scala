@@ -21,7 +21,8 @@ object ArcGISImageServiceGetCatalogItemRasterInfoOptions {
     __obj.asInstanceOf[ArcGISImageServiceGetCatalogItemRasterInfoOptions]
   }
   
-  extension [Self <: ArcGISImageServiceGetCatalogItemRasterInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGISImageServiceGetCatalogItemRasterInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

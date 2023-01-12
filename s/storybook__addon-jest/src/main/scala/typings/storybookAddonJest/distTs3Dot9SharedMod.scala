@@ -43,7 +43,8 @@ object distTs3Dot9SharedMod {
       __obj.asInstanceOf[AddonParameters]
     }
     
-    extension [Self <: AddonParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddonParameters] (val x: Self) extends AnyVal {
       
       inline def setJest(value: String | js.Array[String] | Disabled): Self = StObject.set(x, "jest", value.asInstanceOf[js.Any])
       

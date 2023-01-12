@@ -80,7 +80,8 @@ object PickImplmobileTransitionP {
     __obj.asInstanceOf[PickImplmobileTransitionP]
   }
   
-  extension [Self <: PickImplmobileTransitionP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplmobileTransitionP] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

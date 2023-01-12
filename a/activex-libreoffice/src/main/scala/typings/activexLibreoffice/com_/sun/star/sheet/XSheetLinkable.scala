@@ -99,7 +99,8 @@ object XSheetLinkable {
     __obj.asInstanceOf[XSheetLinkable]
   }
   
-  extension [Self <: XSheetLinkable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetLinkable] (val x: Self) extends AnyVal {
     
     inline def setGetLinkMode(value: () => SheetLinkMode): Self = StObject.set(x, "getLinkMode", js.Any.fromFunction0(value))
     

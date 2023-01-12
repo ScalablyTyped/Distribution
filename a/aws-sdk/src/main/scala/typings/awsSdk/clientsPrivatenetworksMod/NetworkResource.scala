@@ -88,7 +88,8 @@ object NetworkResource {
     __obj.asInstanceOf[NetworkResource]
   }
   
-  extension [Self <: NetworkResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkResource] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: NameValuePairs): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

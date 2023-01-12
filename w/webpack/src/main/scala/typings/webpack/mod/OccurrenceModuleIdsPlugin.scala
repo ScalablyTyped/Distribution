@@ -21,7 +21,8 @@ object OccurrenceModuleIdsPlugin {
     __obj.asInstanceOf[OccurrenceModuleIdsPlugin]
   }
   
-  extension [Self <: OccurrenceModuleIdsPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OccurrenceModuleIdsPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     

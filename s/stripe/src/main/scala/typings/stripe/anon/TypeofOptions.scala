@@ -15,7 +15,8 @@ object TypeofOptions {
     __obj.asInstanceOf[TypeofOptions]
   }
   
-  extension [Self <: TypeofOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofOptions] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Any): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
   }

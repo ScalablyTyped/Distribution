@@ -136,7 +136,8 @@ object slidemenuSlidemenuMod {
       __obj.asInstanceOf[SlideMenuNavigateParams]
     }
     
-    extension [Self <: SlideMenuNavigateParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideMenuNavigateParams] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
@@ -540,7 +541,8 @@ object slidemenuSlidemenuMod {
       __obj.asInstanceOf[SlideMenuProps]
     }
     
-    extension [Self <: SlideMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

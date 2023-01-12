@@ -29,7 +29,8 @@ object ValueDefinition {
     __obj.asInstanceOf[ValueDefinition]
   }
   
-  extension [Self <: ValueDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueDefinition] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: js.Array[InputValue]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

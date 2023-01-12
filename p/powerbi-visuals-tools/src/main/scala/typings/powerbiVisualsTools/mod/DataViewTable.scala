@@ -25,7 +25,8 @@ object DataViewTable {
     __obj.asInstanceOf[DataViewTable]
   }
   
-  extension [Self <: DataViewTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewTable] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[DataViewMetadataColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

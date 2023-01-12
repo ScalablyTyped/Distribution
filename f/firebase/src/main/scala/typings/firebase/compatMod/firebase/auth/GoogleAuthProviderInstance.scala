@@ -44,7 +44,8 @@ object GoogleAuthProviderInstance {
     __obj.asInstanceOf[GoogleAuthProviderInstance]
   }
   
-  extension [Self <: GoogleAuthProviderInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAuthProviderInstance] (val x: Self) extends AnyVal {
     
     inline def setAddScope(value: String => AuthProvider): Self = StObject.set(x, "addScope", js.Any.fromFunction1(value))
     

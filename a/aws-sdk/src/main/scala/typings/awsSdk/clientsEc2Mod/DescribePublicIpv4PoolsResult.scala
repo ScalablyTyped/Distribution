@@ -23,7 +23,8 @@ object DescribePublicIpv4PoolsResult {
     __obj.asInstanceOf[DescribePublicIpv4PoolsResult]
   }
   
-  extension [Self <: DescribePublicIpv4PoolsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePublicIpv4PoolsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

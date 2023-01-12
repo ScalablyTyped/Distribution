@@ -18,7 +18,8 @@ object GetRandomValuesSuccessCallbackResult {
     __obj.asInstanceOf[GetRandomValuesSuccessCallbackResult]
   }
   
-  extension [Self <: GetRandomValuesSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRandomValuesSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

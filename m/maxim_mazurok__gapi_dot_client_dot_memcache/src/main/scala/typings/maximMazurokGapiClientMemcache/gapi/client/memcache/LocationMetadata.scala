@@ -21,7 +21,8 @@ object LocationMetadata {
     __obj.asInstanceOf[LocationMetadata]
   }
   
-  extension [Self <: LocationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationMetadata] (val x: Self) extends AnyVal {
     
     inline def setAvailableZones(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

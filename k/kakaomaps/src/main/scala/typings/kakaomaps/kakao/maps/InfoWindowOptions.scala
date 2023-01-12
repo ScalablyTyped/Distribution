@@ -30,7 +30,8 @@ object InfoWindowOptions {
     __obj.asInstanceOf[InfoWindowOptions]
   }
   
-  extension [Self <: InfoWindowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoWindowOptions] (val x: Self) extends AnyVal {
     
     inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     

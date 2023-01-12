@@ -18,7 +18,8 @@ object OutputGroupDetail {
     __obj.asInstanceOf[OutputGroupDetail]
   }
   
-  extension [Self <: OutputGroupDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputGroupDetail] (val x: Self) extends AnyVal {
     
     inline def setOutputDetails(value: listOfOutputDetail): Self = StObject.set(x, "OutputDetails", value.asInstanceOf[js.Any])
     

@@ -287,7 +287,8 @@ object mod {
       __obj.asInstanceOf[HashMap[TKey, TValue]]
     }
     
-    extension [Self <: HashMap[?, ?], TKey, TValue](x: Self & (HashMap[TKey, TValue])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashMap[?, ?], TKey, TValue] (val x: Self & (HashMap[TKey, TValue])) extends AnyVal {
       
       inline def setClear(value: () => HashMap[TKey, TValue]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

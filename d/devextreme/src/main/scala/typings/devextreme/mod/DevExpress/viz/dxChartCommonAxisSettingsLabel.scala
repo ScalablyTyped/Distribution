@@ -90,7 +90,8 @@ object dxChartCommonAxisSettingsLabel {
     __obj.asInstanceOf[dxChartCommonAxisSettingsLabel]
   }
   
-  extension [Self <: dxChartCommonAxisSettingsLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartCommonAxisSettingsLabel] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

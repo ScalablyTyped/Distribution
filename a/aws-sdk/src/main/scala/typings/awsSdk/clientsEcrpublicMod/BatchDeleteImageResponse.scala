@@ -23,7 +23,8 @@ object BatchDeleteImageResponse {
     __obj.asInstanceOf[BatchDeleteImageResponse]
   }
   
-  extension [Self <: BatchDeleteImageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteImageResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: ImageFailureList): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

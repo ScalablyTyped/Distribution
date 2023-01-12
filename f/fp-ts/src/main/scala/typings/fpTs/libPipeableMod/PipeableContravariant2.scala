@@ -23,7 +23,8 @@ object PipeableContravariant2 {
     __obj.asInstanceOf[PipeableContravariant2[F]]
   }
   
-  extension [Self <: PipeableContravariant2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & PipeableContravariant2[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableContravariant2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & PipeableContravariant2[F]) extends AnyVal {
     
     inline def setContramap(
       value: js.Function1[Any, Any] => js.Function1[

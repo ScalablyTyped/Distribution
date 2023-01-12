@@ -15,7 +15,8 @@ object ContentApplicationjsonBypasspullrequestallowances {
     __obj.asInstanceOf[ContentApplicationjsonBypasspullrequestallowances]
   }
   
-  extension [Self <: ContentApplicationjsonBypasspullrequestallowances](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonBypasspullrequestallowances] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonBypasspullrequestallowances): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

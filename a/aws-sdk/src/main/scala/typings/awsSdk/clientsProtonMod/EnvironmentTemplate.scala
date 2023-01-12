@@ -58,7 +58,8 @@ object EnvironmentTemplate {
     __obj.asInstanceOf[EnvironmentTemplate]
   }
   
-  extension [Self <: EnvironmentTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentTemplate] (val x: Self) extends AnyVal {
     
     inline def setArn(value: EnvironmentTemplateArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object KnockoutComponentTypes {
       __obj.asInstanceOf[AMDModule]
     }
     
-    extension [Self <: AMDModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AMDModule] (val x: Self) extends AnyVal {
       
       inline def setRequire(value: String): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     }
@@ -44,7 +45,8 @@ object KnockoutComponentTypes {
       __obj.asInstanceOf[ComponentConfig]
     }
     
-    extension [Self <: ComponentConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentConfig] (val x: Self) extends AnyVal {
       
       inline def setCreateViewModel(value: Any): Self = StObject.set(x, "createViewModel", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object KnockoutComponentTypes {
       __obj.asInstanceOf[ComponentInfo]
     }
     
-    extension [Self <: ComponentInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentInfo] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -94,7 +97,8 @@ object KnockoutComponentTypes {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setSynchronous(value: Boolean): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
       
@@ -125,7 +129,8 @@ object KnockoutComponentTypes {
       __obj.asInstanceOf[Definition]
     }
     
-    extension [Self <: Definition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
       
       inline def setCreateViewModel(value: (/* params */ Any, /* options */ Element) => Any): Self = StObject.set(x, "createViewModel", js.Any.fromFunction2(value))
       
@@ -185,7 +190,8 @@ object KnockoutComponentTypes {
       __obj.asInstanceOf[Loader]
     }
     
-    extension [Self <: Loader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
       
       inline def setGetConfig(
         value: (/* componentName */ String, /* callback */ js.Function1[/* result */ ComponentConfig, Unit]) => Unit
@@ -228,7 +234,8 @@ object KnockoutComponentTypes {
       __obj.asInstanceOf[TemplateElement]
     }
     
-    extension [Self <: TemplateElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateElement] (val x: Self) extends AnyVal {
       
       inline def setElement(value: String | Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     }
@@ -257,7 +264,8 @@ object KnockoutComponentTypes {
       __obj.asInstanceOf[ViewModelSharedInstance]
     }
     
-    extension [Self <: ViewModelSharedInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewModelSharedInstance] (val x: Self) extends AnyVal {
       
       inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     }

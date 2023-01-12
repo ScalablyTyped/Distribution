@@ -30,7 +30,8 @@ object XFormattedString {
     __obj.asInstanceOf[XFormattedString]
   }
   
-  extension [Self <: XFormattedString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFormattedString] (val x: Self) extends AnyVal {
     
     inline def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     

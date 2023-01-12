@@ -38,7 +38,8 @@ object NodeCheckstateChangingEventUIParam {
     __obj.asInstanceOf[NodeCheckstateChangingEventUIParam]
   }
   
-  extension [Self <: NodeCheckstateChangingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeCheckstateChangingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentCheckedNodes(value: js.Array[Any]): Self = StObject.set(x, "currentCheckedNodes", value.asInstanceOf[js.Any])
     

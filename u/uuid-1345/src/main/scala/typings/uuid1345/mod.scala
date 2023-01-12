@@ -125,7 +125,8 @@ object mod {
       __obj.asInstanceOf[UUID]
     }
     
-    extension [Self <: UUID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UUID] (val x: Self) extends AnyVal {
       
       inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
       

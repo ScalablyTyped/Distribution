@@ -23,7 +23,8 @@ object ItemsBinding {
     __obj.asInstanceOf[ItemsBinding]
   }
   
-  extension [Self <: ItemsBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsBinding] (val x: Self) extends AnyVal {
     
     inline def setItemsBinding(value: Any): Self = StObject.set(x, "itemsBinding", value.asInstanceOf[js.Any])
     

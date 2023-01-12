@@ -20,7 +20,8 @@ object CategoriesOptions {
     __obj.asInstanceOf[CategoriesOptions]
   }
   
-  extension [Self <: CategoriesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoriesOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

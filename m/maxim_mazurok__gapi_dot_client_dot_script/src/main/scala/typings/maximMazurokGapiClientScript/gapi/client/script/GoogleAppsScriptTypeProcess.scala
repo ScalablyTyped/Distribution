@@ -34,7 +34,8 @@ object GoogleAppsScriptTypeProcess {
     __obj.asInstanceOf[GoogleAppsScriptTypeProcess]
   }
   
-  extension [Self <: GoogleAppsScriptTypeProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsScriptTypeProcess] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

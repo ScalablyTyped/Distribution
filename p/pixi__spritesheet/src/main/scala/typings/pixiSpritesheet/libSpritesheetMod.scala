@@ -156,7 +156,8 @@ object libSpritesheetMod {
       __obj.asInstanceOf[ISpritesheetData]
     }
     
-    extension [Self <: ISpritesheetData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpritesheetData] (val x: Self) extends AnyVal {
       
       inline def setAnimations(value: Dict[js.Array[String]]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
@@ -189,7 +190,8 @@ object libSpritesheetMod {
       __obj.asInstanceOf[ISpritesheetFrameData]
     }
     
-    extension [Self <: ISpritesheetFrameData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpritesheetFrameData] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: IPointData): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

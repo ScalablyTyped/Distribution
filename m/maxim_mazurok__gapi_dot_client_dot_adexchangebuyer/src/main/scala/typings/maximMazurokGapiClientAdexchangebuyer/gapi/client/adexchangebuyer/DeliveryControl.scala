@@ -19,7 +19,8 @@ object DeliveryControl {
     __obj.asInstanceOf[DeliveryControl]
   }
   
-  extension [Self <: DeliveryControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryControl] (val x: Self) extends AnyVal {
     
     inline def setCreativeBlockingLevel(value: String): Self = StObject.set(x, "creativeBlockingLevel", value.asInstanceOf[js.Any])
     

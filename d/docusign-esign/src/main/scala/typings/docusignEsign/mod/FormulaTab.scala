@@ -813,7 +813,8 @@ object FormulaTab {
     __obj.asInstanceOf[FormulaTab]
   }
   
-  extension [Self <: FormulaTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormulaTab] (val x: Self) extends AnyVal {
     
     inline def setAnchorAllowWhiteSpaceInCharacters(value: String): Self = StObject.set(x, "anchorAllowWhiteSpaceInCharacters", value.asInstanceOf[js.Any])
     

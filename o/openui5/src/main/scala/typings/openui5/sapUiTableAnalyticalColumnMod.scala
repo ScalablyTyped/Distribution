@@ -307,7 +307,8 @@ object sapUiTableAnalyticalColumnMod {
       __obj.asInstanceOf[AnalyticalColumnSettings]
     }
     
-    extension [Self <: AnalyticalColumnSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticalColumnSettings] (val x: Self) extends AnyVal {
       
       inline def setGroupHeaderFormatter(value: js.Function | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "groupHeaderFormatter", value.asInstanceOf[js.Any])
       

@@ -66,7 +66,8 @@ object XLogFormatter {
     __obj.asInstanceOf[XLogFormatter]
   }
   
-  extension [Self <: XLogFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLogFormatter] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: LogRecord => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     

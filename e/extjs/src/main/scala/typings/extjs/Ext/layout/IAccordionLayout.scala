@@ -40,7 +40,8 @@ object IAccordionLayout {
     __obj.asInstanceOf[IAccordionLayout]
   }
   
-  extension [Self <: IAccordionLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccordionLayout] (val x: Self) extends AnyVal {
     
     inline def setActiveOnTop(value: Boolean): Self = StObject.set(x, "activeOnTop", value.asInstanceOf[js.Any])
     

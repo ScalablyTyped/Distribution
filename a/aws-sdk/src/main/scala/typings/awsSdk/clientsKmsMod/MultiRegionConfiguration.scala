@@ -28,7 +28,8 @@ object MultiRegionConfiguration {
     __obj.asInstanceOf[MultiRegionConfiguration]
   }
   
-  extension [Self <: MultiRegionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRegionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMultiRegionKeyType(value: MultiRegionKeyType): Self = StObject.set(x, "MultiRegionKeyType", value.asInstanceOf[js.Any])
     

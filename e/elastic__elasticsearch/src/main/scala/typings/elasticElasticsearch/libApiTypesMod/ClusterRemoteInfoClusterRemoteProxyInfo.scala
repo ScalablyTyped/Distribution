@@ -40,7 +40,8 @@ object ClusterRemoteInfoClusterRemoteProxyInfo {
     __obj.asInstanceOf[ClusterRemoteInfoClusterRemoteProxyInfo]
   }
   
-  extension [Self <: ClusterRemoteInfoClusterRemoteProxyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterRemoteInfoClusterRemoteProxyInfo] (val x: Self) extends AnyVal {
     
     inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     

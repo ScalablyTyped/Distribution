@@ -76,7 +76,8 @@ object WorkspaceSummary {
     __obj.asInstanceOf[WorkspaceSummary]
   }
   
-  extension [Self <: WorkspaceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceSummary] (val x: Self) extends AnyVal {
     
     inline def setAuthentication(value: AuthenticationSummary): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     

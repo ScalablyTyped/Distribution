@@ -17,7 +17,8 @@ object PlaybackContext {
     __obj.asInstanceOf[PlaybackContext]
   }
   
-  extension [Self <: PlaybackContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackContext] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: PlaybackContextMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object srcCoreDataResultsMod {
       __obj.asInstanceOf[IDataRowGroup[T]]
     }
     
-    extension [Self <: IDataRowGroup[?], T](x: Self & IDataRowGroup[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDataRowGroup[?], T] (val x: Self & IDataRowGroup[T]) extends AnyVal {
       
       inline def set$hideRows(value: Boolean): Self = StObject.set(x, "$hideRows", value.asInstanceOf[js.Any])
       

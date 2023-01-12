@@ -102,7 +102,8 @@ object typesWiaAriaMovementUseKeyboardMovementMod {
       __obj.asInstanceOf[BaseKeyboardMovementOptions[D, CE, IE]]
     }
     
-    extension [Self <: BaseKeyboardMovementOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](x: Self & (BaseKeyboardMovementOptions[D, CE, IE])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseKeyboardMovementOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (BaseKeyboardMovementOptions[D, CE, IE])) extends AnyVal {
       
       inline def setDecrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object typesWiaAriaMovementUseKeyboardMovementMod {
       __obj.asInstanceOf[KeyboardMovementOptions[D, CE, IE]]
     }
     
-    extension [Self <: KeyboardMovementOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](x: Self & (KeyboardMovementOptions[D, CE, IE])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardMovementOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (KeyboardMovementOptions[D, CE, IE])) extends AnyVal {
       
       inline def setFocusedIndex(value: Double): Self = StObject.set(x, "focusedIndex", value.asInstanceOf[js.Any])
       

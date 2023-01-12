@@ -23,7 +23,8 @@ object DataTables {
       __obj.asInstanceOf[Api]
     }
     
-    extension [Self <: Api](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
       
       inline def setSelect(value: Style): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     }
@@ -48,7 +49,8 @@ object DataTables {
       __obj.asInstanceOf[CellMethods]
     }
     
-    extension [Self <: CellMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellMethods] (val x: Self) extends AnyVal {
       
       inline def setDeselect(value: () => Api): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
       
@@ -75,7 +77,8 @@ object DataTables {
       __obj.asInstanceOf[CellsMethods]
     }
     
-    extension [Self <: CellsMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellsMethods] (val x: Self) extends AnyVal {
       
       inline def setDeselect(value: () => Api): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
       
@@ -102,7 +105,8 @@ object DataTables {
       __obj.asInstanceOf[RowMethods]
     }
     
-    extension [Self <: RowMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowMethods] (val x: Self) extends AnyVal {
       
       inline def setDeselect(value: () => Api): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
       
@@ -129,7 +133,8 @@ object DataTables {
       __obj.asInstanceOf[RowsMethods]
     }
     
-    extension [Self <: RowsMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowsMethods] (val x: Self) extends AnyVal {
       
       inline def setDeselect(value: () => Api): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
       
@@ -176,7 +181,8 @@ object DataTables {
       __obj.asInstanceOf[SelectSettings]
     }
     
-    extension [Self <: SelectSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectSettings] (val x: Self) extends AnyVal {
       
       inline def setBlurable(value: Boolean): Self = StObject.set(x, "blurable", value.asInstanceOf[js.Any])
       
@@ -218,7 +224,8 @@ object DataTables {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setSelect(value: Boolean | String | SelectSettings): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       

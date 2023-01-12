@@ -72,7 +72,8 @@ object EmailMeetingInfo {
     __obj.asInstanceOf[EmailMeetingInfo]
   }
   
-  extension [Self <: EmailMeetingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMeetingInfo] (val x: Self) extends AnyVal {
     
     inline def setAllowNewTimeProposal(value: Boolean): Self = StObject.set(x, "allowNewTimeProposal", value.asInstanceOf[js.Any])
     

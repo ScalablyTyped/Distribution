@@ -35,7 +35,8 @@ object SeriesStatesInactiveOptionsObject {
     __obj.asInstanceOf[SeriesStatesInactiveOptionsObject]
   }
   
-  extension [Self <: SeriesStatesInactiveOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesStatesInactiveOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

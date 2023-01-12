@@ -19,7 +19,8 @@ object XpackUsageDataStreams {
     __obj.asInstanceOf[XpackUsageDataStreams]
   }
   
-  extension [Self <: XpackUsageDataStreams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageDataStreams] (val x: Self) extends AnyVal {
     
     inline def setData_streams(value: long): Self = StObject.set(x, "data_streams", value.asInstanceOf[js.Any])
     

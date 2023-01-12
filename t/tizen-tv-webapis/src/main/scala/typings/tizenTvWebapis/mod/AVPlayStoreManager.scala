@@ -30,7 +30,8 @@ object AVPlayStoreManager {
     __obj.asInstanceOf[AVPlayStoreManager]
   }
   
-  extension [Self <: AVPlayStoreManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AVPlayStoreManager] (val x: Self) extends AnyVal {
     
     inline def setGetPlayer(value: () => AVPlayManager): Self = StObject.set(x, "getPlayer", js.Any.fromFunction0(value))
   }

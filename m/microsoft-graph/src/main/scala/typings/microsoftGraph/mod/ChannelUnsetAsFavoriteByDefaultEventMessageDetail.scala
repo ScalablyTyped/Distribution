@@ -21,7 +21,8 @@ object ChannelUnsetAsFavoriteByDefaultEventMessageDetail {
     __obj.asInstanceOf[ChannelUnsetAsFavoriteByDefaultEventMessageDetail]
   }
   
-  extension [Self <: ChannelUnsetAsFavoriteByDefaultEventMessageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelUnsetAsFavoriteByDefaultEventMessageDetail] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: NullableOption[String]): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

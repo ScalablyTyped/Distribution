@@ -17,7 +17,8 @@ object FetchOptions {
     __obj.asInstanceOf[FetchOptions]
   }
   
-  extension [Self <: FetchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
     
     inline def setCancelRefetch(value: Boolean): Self = StObject.set(x, "cancelRefetch", value.asInstanceOf[js.Any])
     

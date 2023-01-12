@@ -31,7 +31,8 @@ object streamMod {
       __obj.asInstanceOf[Sink[InputStream, OutputStream]]
     }
     
-    extension [Self <: Sink[?, ?], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](x: Self & (Sink[InputStream, OutputStream])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sink[?, ?], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] (val x: Self & (Sink[InputStream, OutputStream])) extends AnyVal {
       
       inline def setImport(value: InputStream => OutputStream): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
     }
@@ -65,7 +66,8 @@ object streamMod {
       __obj.asInstanceOf[Source[Q]]
     }
     
-    extension [Self <: Source[?], Q /* <: BaseQuad */](x: Self & Source[Q]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source[?], Q /* <: BaseQuad */] (val x: Self & Source[Q]) extends AnyVal {
       
       inline def setMatch(
         value: (js.UndefOr[Term | Null], js.UndefOr[Term | Null], js.UndefOr[Term | Null], js.UndefOr[Term | Null]) => Stream[Q]

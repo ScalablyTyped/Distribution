@@ -52,7 +52,8 @@ object componentsTextInputTextInputMod {
       __obj.asInstanceOf[TextInput]
     }
     
-    extension [Self <: TextInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInput] (val x: Self) extends AnyVal {
       
       inline def set_setIconVisibility(value: IconVisibilityOff => Unit): Self = StObject.set(x, "_setIconVisibility", js.Any.fromFunction1(value))
       
@@ -91,7 +92,8 @@ object componentsTextInputTextInputMod {
       __obj.asInstanceOf[TextInputOptions]
     }
     
-    extension [Self <: TextInputOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputOptions] (val x: Self) extends AnyVal {
       
       inline def setPasswordIsVisible(value: String): Self = StObject.set(x, "passwordIsVisible", value.asInstanceOf[js.Any])
       

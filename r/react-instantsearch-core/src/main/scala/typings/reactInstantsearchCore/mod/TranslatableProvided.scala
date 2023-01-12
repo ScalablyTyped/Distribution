@@ -15,7 +15,8 @@ object TranslatableProvided {
     __obj.asInstanceOf[TranslatableProvided]
   }
   
-  extension [Self <: TranslatableProvided](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslatableProvided] (val x: Self) extends AnyVal {
     
     inline def setTranslate(value: (String, /* repeated */ Any) => String): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
   }

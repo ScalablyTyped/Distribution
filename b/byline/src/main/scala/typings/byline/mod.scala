@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[LineStreamOptions]
     }
     
-    extension [Self <: LineStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepEmptyLines(value: Boolean): Self = StObject.set(x, "keepEmptyLines", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object PermissionRequestHandlerHandlerDetails {
     __obj.asInstanceOf[PermissionRequestHandlerHandlerDetails]
   }
   
-  extension [Self <: PermissionRequestHandlerHandlerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionRequestHandlerHandlerDetails] (val x: Self) extends AnyVal {
     
     inline def setExternalURL(value: String): Self = StObject.set(x, "externalURL", value.asInstanceOf[js.Any])
     

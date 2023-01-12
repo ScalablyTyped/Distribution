@@ -26,7 +26,8 @@ object GraphicObjectResolver {
     __obj.asInstanceOf[GraphicObjectResolver]
   }
   
-  extension [Self <: GraphicObjectResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicObjectResolver] (val x: Self) extends AnyVal {
     
     inline def setCreateWithStorage(value: XStorage => Unit): Self = StObject.set(x, "createWithStorage", js.Any.fromFunction1(value))
   }

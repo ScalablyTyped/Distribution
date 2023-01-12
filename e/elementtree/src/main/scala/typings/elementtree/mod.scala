@@ -156,7 +156,8 @@ object mod {
       __obj.asInstanceOf[ElementTreeWriteOptions]
     }
     
-    extension [Self <: ElementTreeWriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementTreeWriteOptions] (val x: Self) extends AnyVal {
       
       inline def setDefault_namespace(value: String): Self = StObject.set(x, "default_namespace", value.asInstanceOf[js.Any])
       

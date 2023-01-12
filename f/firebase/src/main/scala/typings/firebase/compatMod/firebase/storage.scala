@@ -26,7 +26,8 @@ object storage {
       __obj.asInstanceOf[FirebaseStorageError]
     }
     
-    extension [Self <: FirebaseStorageError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseStorageError] (val x: Self) extends AnyVal {
       
       inline def setServerResponse(value: String): Self = StObject.set(x, "serverResponse", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object storage {
       __obj.asInstanceOf[FullMetadata]
     }
     
-    extension [Self <: FullMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullMetadata] (val x: Self) extends AnyVal {
       
       inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object storage {
       __obj.asInstanceOf[ListOptions]
     }
     
-    extension [Self <: ListOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
@@ -193,7 +196,8 @@ object storage {
       __obj.asInstanceOf[ListResult]
     }
     
-    extension [Self <: ListResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListResult] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Reference]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -402,7 +406,8 @@ object storage {
       __obj.asInstanceOf[SettableMetadata]
     }
     
-    extension [Self <: SettableMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettableMetadata] (val x: Self) extends AnyVal {
       
       inline def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       
@@ -536,7 +541,8 @@ object storage {
       __obj.asInstanceOf[StorageObserver[T]]
     }
     
-    extension [Self <: StorageObserver[?], T](x: Self & StorageObserver[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageObserver[?], T] (val x: Self & StorageObserver[T]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -594,7 +600,8 @@ object storage {
       __obj.asInstanceOf[UploadMetadata]
     }
     
-    extension [Self <: UploadMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadMetadata] (val x: Self) extends AnyVal {
       
       inline def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
       
@@ -883,7 +890,8 @@ object storage {
       __obj.asInstanceOf[UploadTaskSnapshot]
     }
     
-    extension [Self <: UploadTaskSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadTaskSnapshot] (val x: Self) extends AnyVal {
       
       inline def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
       

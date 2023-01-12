@@ -23,7 +23,8 @@ object CompromisedCredentialsRiskConfigurationType {
     __obj.asInstanceOf[CompromisedCredentialsRiskConfigurationType]
   }
   
-  extension [Self <: CompromisedCredentialsRiskConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompromisedCredentialsRiskConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setActions(value: CompromisedCredentialsActionsType): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

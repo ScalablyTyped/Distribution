@@ -33,7 +33,8 @@ object distKerasFormatOptimizerConfigMod {
       __obj.asInstanceOf[AdadeltaOptimizerConfig]
     }
     
-    extension [Self <: AdadeltaOptimizerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdadeltaOptimizerConfig] (val x: Self) extends AnyVal {
       
       inline def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distKerasFormatOptimizerConfigMod {
       __obj.asInstanceOf[AdagradOptimizerConfig]
     }
     
-    extension [Self <: AdagradOptimizerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdagradOptimizerConfig] (val x: Self) extends AnyVal {
       
       inline def setInitial_accumulator_value(value: Double): Self = StObject.set(x, "initial_accumulator_value", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object distKerasFormatOptimizerConfigMod {
       __obj.asInstanceOf[AdamOptimizerConfig]
     }
     
-    extension [Self <: AdamOptimizerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdamOptimizerConfig] (val x: Self) extends AnyVal {
       
       inline def setBeta1(value: Double): Self = StObject.set(x, "beta1", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object distKerasFormatOptimizerConfigMod {
       __obj.asInstanceOf[AdamaxOptimizerConfig]
     }
     
-    extension [Self <: AdamaxOptimizerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdamaxOptimizerConfig] (val x: Self) extends AnyVal {
       
       inline def setBeta1(value: Double): Self = StObject.set(x, "beta1", value.asInstanceOf[js.Any])
       
@@ -157,7 +161,8 @@ object distKerasFormatOptimizerConfigMod {
       __obj.asInstanceOf[MomentumOptimizerConfig]
     }
     
-    extension [Self <: MomentumOptimizerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MomentumOptimizerConfig] (val x: Self) extends AnyVal {
       
       inline def setLearning_rate(value: Double): Self = StObject.set(x, "learning_rate", value.asInstanceOf[js.Any])
       
@@ -220,7 +225,8 @@ object distKerasFormatOptimizerConfigMod {
       __obj.asInstanceOf[RMSPropOptimizerConfig]
     }
     
-    extension [Self <: RMSPropOptimizerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RMSPropOptimizerConfig] (val x: Self) extends AnyVal {
       
       inline def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
       
@@ -255,7 +261,8 @@ object distKerasFormatOptimizerConfigMod {
       __obj.asInstanceOf[SGDOptimizerConfig]
     }
     
-    extension [Self <: SGDOptimizerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SGDOptimizerConfig] (val x: Self) extends AnyVal {
       
       inline def setLearning_rate(value: Double): Self = StObject.set(x, "learning_rate", value.asInstanceOf[js.Any])
     }

@@ -61,7 +61,8 @@ object typesGetCampaignVersionsInputMod {
       __obj.asInstanceOf[GetCampaignVersionsInput]
     }
     
-    extension [Self <: GetCampaignVersionsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCampaignVersionsInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object distTypesTooltipWrapperMod {
       __obj.asInstanceOf[TooltipWrapperProps]
     }
     
-    extension [Self <: TooltipWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: TooltipAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

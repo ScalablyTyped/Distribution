@@ -69,7 +69,8 @@ object XHeaderFooterContent {
     __obj.asInstanceOf[XHeaderFooterContent]
   }
   
-  extension [Self <: XHeaderFooterContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHeaderFooterContent] (val x: Self) extends AnyVal {
     
     inline def setCenterText(value: XText): Self = StObject.set(x, "CenterText", value.asInstanceOf[js.Any])
     

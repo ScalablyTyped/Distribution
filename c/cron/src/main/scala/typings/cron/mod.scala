@@ -228,7 +228,8 @@ object mod {
       __obj.asInstanceOf[CronJobParameters]
     }
     
-    extension [Self <: CronJobParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CronJobParameters] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

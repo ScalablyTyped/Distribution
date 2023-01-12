@@ -20,7 +20,8 @@ object ActivatedOperation {
     __obj.asInstanceOf[ActivatedOperation]
   }
   
-  extension [Self <: ActivatedOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivatedOperation] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => ActivatedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }

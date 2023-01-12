@@ -16,7 +16,8 @@ object GetBluetoothDevicesSuccessCallbackResult {
     __obj.asInstanceOf[GetBluetoothDevicesSuccessCallbackResult]
   }
   
-  extension [Self <: GetBluetoothDevicesSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBluetoothDevicesSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setDevices(value: GetBluetoothDevicesSuccessCallbackResultBlueToothDevice): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
   }

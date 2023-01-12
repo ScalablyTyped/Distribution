@@ -31,7 +31,8 @@ object ReachReportCompatibleFields {
     __obj.asInstanceOf[ReachReportCompatibleFields]
   }
   
-  extension [Self <: ReachReportCompatibleFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReachReportCompatibleFields] (val x: Self) extends AnyVal {
     
     inline def setDimensionFilters(value: js.Array[Dimension]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     

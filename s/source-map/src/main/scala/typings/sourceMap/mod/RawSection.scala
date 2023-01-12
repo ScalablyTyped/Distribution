@@ -17,7 +17,8 @@ object RawSection {
     __obj.asInstanceOf[RawSection]
   }
   
-  extension [Self <: RawSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawSection] (val x: Self) extends AnyVal {
     
     inline def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     

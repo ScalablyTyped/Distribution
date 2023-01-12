@@ -19,7 +19,8 @@ object Chromestyle {
     __obj.asInstanceOf[Chromestyle]
   }
   
-  extension [Self <: Chromestyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chromestyle] (val x: Self) extends AnyVal {
     
     inline def setChrome_style(value: Boolean): Self = StObject.set(x, "chrome_style", value.asInstanceOf[js.Any])
     

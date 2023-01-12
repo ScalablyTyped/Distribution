@@ -23,7 +23,8 @@ object PutSnapshotBlockResponse {
     __obj.asInstanceOf[PutSnapshotBlockResponse]
   }
   
-  extension [Self <: PutSnapshotBlockResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutSnapshotBlockResponse] (val x: Self) extends AnyVal {
     
     inline def setChecksum(value: Checksum): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
     

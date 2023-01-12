@@ -54,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Cid]
     }
     
-    extension [Self <: Cid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cid] (val x: Self) extends AnyVal {
       
       inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object anon {
       __obj.asInstanceOf[TrackAction]
     }
     
-    extension [Self <: TrackAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackAction] (val x: Self) extends AnyVal {
       
       inline def setTrackAction(value: Action => js.UndefOr[js.Promise[Response]]): Self = StObject.set(x, "trackAction", js.Any.fromFunction1(value))
       
@@ -182,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Uid]
     }
     
-    extension [Self <: Uid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uid] (val x: Self) extends AnyVal {
       
       inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       

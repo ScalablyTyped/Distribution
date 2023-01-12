@@ -312,7 +312,8 @@ object mod {
       __obj.asInstanceOf[RandomNumberGenerationSource]
     }
     
-    extension [Self <: RandomNumberGenerationSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomNumberGenerationSource] (val x: Self) extends AnyVal {
       
       inline def setSource(value: js.Function0[Double] => RandomNumberGenerationSource): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
     }

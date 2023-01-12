@@ -24,7 +24,8 @@ object ConfigVideoQuality {
     __obj.asInstanceOf[ConfigVideoQuality]
   }
   
-  extension [Self <: ConfigVideoQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigVideoQuality] (val x: Self) extends AnyVal {
     
     inline def setDisabledCodec(value: String): Self = StObject.set(x, "disabledCodec", value.asInstanceOf[js.Any])
     

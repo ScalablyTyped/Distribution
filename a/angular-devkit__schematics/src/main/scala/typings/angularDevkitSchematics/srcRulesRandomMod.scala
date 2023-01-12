@@ -28,7 +28,8 @@ object srcRulesRandomMod {
       __obj.asInstanceOf[RandomOptions]
     }
     
-    extension [Self <: RandomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomOptions] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: Boolean | Double): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       

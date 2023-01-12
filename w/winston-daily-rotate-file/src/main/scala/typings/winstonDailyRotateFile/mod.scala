@@ -129,7 +129,8 @@ object mod {
       __obj.asInstanceOf[GeneralDailyRotateFileTransportOptions]
     }
     
-    extension [Self <: GeneralDailyRotateFileTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneralDailyRotateFileTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setAuditFile(value: String): Self = StObject.set(x, "auditFile", value.asInstanceOf[js.Any])
       
@@ -231,7 +232,8 @@ object mod {
         __obj.asInstanceOf[Transports]
       }
       
-      extension [Self <: Transports](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Transports] (val x: Self) extends AnyVal {
         
         inline def setDailyRotateFile(value: Instantiable1[/* options */ js.UndefOr[DailyRotateFileTransportOptions], DailyRotateFile]): Self = StObject.set(x, "DailyRotateFile", value.asInstanceOf[js.Any])
         

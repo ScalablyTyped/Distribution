@@ -48,7 +48,8 @@ object CreateWorkspaceParams {
     __obj.asInstanceOf[CreateWorkspaceParams]
   }
   
-  extension [Self <: CreateWorkspaceParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkspaceParams] (val x: Self) extends AnyVal {
     
     inline def setCounterexamples(value: js.Array[Counterexample]): Self = StObject.set(x, "counterexamples", value.asInstanceOf[js.Any])
     

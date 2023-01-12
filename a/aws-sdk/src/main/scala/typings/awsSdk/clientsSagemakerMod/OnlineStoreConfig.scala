@@ -23,7 +23,8 @@ object OnlineStoreConfig {
     __obj.asInstanceOf[OnlineStoreConfig]
   }
   
-  extension [Self <: OnlineStoreConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnlineStoreConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableOnlineStore(value: Boolean): Self = StObject.set(x, "EnableOnlineStore", value.asInstanceOf[js.Any])
     

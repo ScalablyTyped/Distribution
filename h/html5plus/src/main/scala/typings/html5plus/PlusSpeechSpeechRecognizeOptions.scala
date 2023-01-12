@@ -104,7 +104,8 @@ object PlusSpeechSpeechRecognizeOptions {
     __obj.asInstanceOf[PlusSpeechSpeechRecognizeOptions]
   }
   
-  extension [Self <: PlusSpeechSpeechRecognizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusSpeechSpeechRecognizeOptions] (val x: Self) extends AnyVal {
     
     inline def setContinue(value: Boolean): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
     

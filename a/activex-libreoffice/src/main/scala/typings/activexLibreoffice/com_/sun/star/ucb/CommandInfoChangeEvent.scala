@@ -39,7 +39,8 @@ object CommandInfoChangeEvent {
     __obj.asInstanceOf[CommandInfoChangeEvent]
   }
   
-  extension [Self <: CommandInfoChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandInfoChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
     

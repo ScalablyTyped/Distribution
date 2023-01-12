@@ -26,7 +26,8 @@ object UpdatesParams {
     __obj.asInstanceOf[UpdatesParams]
   }
   
-  extension [Self <: UpdatesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatesParams] (val x: Self) extends AnyVal {
     
     inline def setFeed(value: longpoll | continuous | eventsource): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
     

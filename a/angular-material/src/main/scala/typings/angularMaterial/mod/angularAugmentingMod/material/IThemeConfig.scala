@@ -32,7 +32,8 @@ object IThemeConfig {
     __obj.asInstanceOf[IThemeConfig]
   }
   
-  extension [Self <: IThemeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IThemeConfig] (val x: Self) extends AnyVal {
     
     inline def setAlwaysWatchTheme(value: Boolean): Self = StObject.set(x, "alwaysWatchTheme", value.asInstanceOf[js.Any])
     

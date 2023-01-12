@@ -56,7 +56,8 @@ object LexV2Event {
     __obj.asInstanceOf[LexV2Event]
   }
   
-  extension [Self <: LexV2Event](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2Event] (val x: Self) extends AnyVal {
     
     inline def setBot(value: LexV2Bot): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
     

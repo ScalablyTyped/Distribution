@@ -162,7 +162,8 @@ object mod {
       __obj.asInstanceOf[ImapSimpleOptions]
     }
     
-    extension [Self <: ImapSimpleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImapSimpleOptions] (val x: Self) extends AnyVal {
       
       inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object mod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: ImapMessageAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -225,7 +227,8 @@ object mod {
       __obj.asInstanceOf[MessageBodyPart]
     }
     
-    extension [Self <: MessageBodyPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageBodyPart] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }

@@ -181,7 +181,8 @@ object ChartOptions {
     __obj.asInstanceOf[ChartOptions]
   }
   
-  extension [Self <: ChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     

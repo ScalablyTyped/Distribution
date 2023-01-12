@@ -23,7 +23,8 @@ object ExtendRadius {
     __obj.asInstanceOf[ExtendRadius]
   }
   
-  extension [Self <: ExtendRadius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendRadius] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     

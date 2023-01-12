@@ -59,7 +59,8 @@ object CustomFieldTemplate {
     __obj.asInstanceOf[CustomFieldTemplate]
   }
   
-  extension [Self <: CustomFieldTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomFieldTemplate] (val x: Self) extends AnyVal {
     
     inline def setApi_id(value: String): Self = StObject.set(x, "api_id", value.asInstanceOf[js.Any])
     

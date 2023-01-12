@@ -21,7 +21,8 @@ object WorkbookChartGridlines {
     __obj.asInstanceOf[WorkbookChartGridlines]
   }
   
-  extension [Self <: WorkbookChartGridlines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookChartGridlines] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: NullableOption[WorkbookChartGridlinesFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

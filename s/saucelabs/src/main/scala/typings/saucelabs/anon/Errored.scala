@@ -47,7 +47,8 @@ object Errored {
     __obj.asInstanceOf[Errored]
   }
   
-  extension [Self <: Errored](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Errored] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     

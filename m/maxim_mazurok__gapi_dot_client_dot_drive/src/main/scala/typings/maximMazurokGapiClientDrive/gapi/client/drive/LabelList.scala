@@ -25,7 +25,8 @@ object LabelList {
     __obj.asInstanceOf[LabelList]
   }
   
-  extension [Self <: LabelList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelList] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

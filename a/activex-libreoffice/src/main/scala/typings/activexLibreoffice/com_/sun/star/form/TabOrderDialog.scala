@@ -30,7 +30,8 @@ object TabOrderDialog {
     __obj.asInstanceOf[TabOrderDialog]
   }
   
-  extension [Self <: TabOrderDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabOrderDialog] (val x: Self) extends AnyVal {
     
     inline def setCreateWithModel(value: (XTabControllerModel, XControlContainer, XWindow) => Unit): Self = StObject.set(x, "createWithModel", js.Any.fromFunction3(value))
   }

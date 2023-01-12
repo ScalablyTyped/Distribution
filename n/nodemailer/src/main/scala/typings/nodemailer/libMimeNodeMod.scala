@@ -51,7 +51,8 @@ object libMimeNodeMod {
       __obj.asInstanceOf[Addresses]
     }
     
-    extension [Self <: Addresses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Addresses] (val x: Self) extends AnyVal {
       
       inline def setBcc(value: js.Array[String]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object libMimeNodeMod {
       __obj.asInstanceOf[Envelope]
     }
     
-    extension [Self <: Envelope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String | `false`): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -253,7 +255,8 @@ object libMimeNodeMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBaseBoundary(value: String): Self = StObject.set(x, "baseBoundary", value.asInstanceOf[js.Any])
       

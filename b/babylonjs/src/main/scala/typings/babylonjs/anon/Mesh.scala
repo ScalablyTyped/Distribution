@@ -19,7 +19,8 @@ object Mesh {
     __obj.asInstanceOf[Mesh]
   }
   
-  extension [Self <: Mesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mesh] (val x: Self) extends AnyVal {
     
     inline def setController(value: WebVRController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

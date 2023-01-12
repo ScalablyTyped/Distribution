@@ -20,7 +20,8 @@ object ChatMessageChangedEventArgs {
     __obj.asInstanceOf[ChatMessageChangedEventArgs]
   }
   
-  extension [Self <: ChatMessageChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessageChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => ChatMessageChangedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }

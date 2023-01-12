@@ -17,7 +17,8 @@ object DataProvider {
     __obj.asInstanceOf[DataProvider]
   }
   
-  extension [Self <: DataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProvider] (val x: Self) extends AnyVal {
     
     inline def setHandle(value: Double): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     

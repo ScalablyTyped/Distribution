@@ -33,7 +33,8 @@ object RenewalSummary {
     __obj.asInstanceOf[RenewalSummary]
   }
   
-  extension [Self <: RenewalSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenewalSummary] (val x: Self) extends AnyVal {
     
     inline def setDomainValidationRecords(value: DomainValidationRecordList): Self = StObject.set(x, "domainValidationRecords", value.asInstanceOf[js.Any])
     

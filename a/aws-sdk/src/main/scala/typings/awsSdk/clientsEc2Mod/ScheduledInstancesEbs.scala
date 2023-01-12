@@ -43,7 +43,8 @@ object ScheduledInstancesEbs {
     __obj.asInstanceOf[ScheduledInstancesEbs]
   }
   
-  extension [Self <: ScheduledInstancesEbs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledInstancesEbs] (val x: Self) extends AnyVal {
     
     inline def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
     

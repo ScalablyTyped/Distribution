@@ -28,7 +28,8 @@ object ProxyConfiguration {
     __obj.asInstanceOf[ProxyConfiguration]
   }
   
-  extension [Self <: ProxyConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyConfiguration] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     

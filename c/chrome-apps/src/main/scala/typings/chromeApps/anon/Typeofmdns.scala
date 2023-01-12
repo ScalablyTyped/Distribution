@@ -56,7 +56,8 @@ object Typeofmdns {
     __obj.asInstanceOf[Typeofmdns]
   }
   
-  extension [Self <: Typeofmdns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofmdns] (val x: Self) extends AnyVal {
     
     inline def setForceDiscovery(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "forceDiscovery", js.Any.fromFunction1(value))
     

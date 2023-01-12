@@ -19,7 +19,8 @@ object ShapeFillGradientStop {
     __obj.asInstanceOf[ShapeFillGradientStop]
   }
   
-  extension [Self <: ShapeFillGradientStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeFillGradientStop] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object SDPEvent {
     __obj.asInstanceOf[SDPEvent]
   }
   
-  extension [Self <: SDPEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPEvent] (val x: Self) extends AnyVal {
     
     inline def setOriginator(value: Originator): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CustomSMSLambdaVersionConfigType {
     __obj.asInstanceOf[CustomSMSLambdaVersionConfigType]
   }
   
-  extension [Self <: CustomSMSLambdaVersionConfigType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomSMSLambdaVersionConfigType] (val x: Self) extends AnyVal {
     
     inline def setLambdaArn(value: ArnType): Self = StObject.set(x, "LambdaArn", value.asInstanceOf[js.Any])
     

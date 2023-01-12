@@ -22,7 +22,8 @@ object ChannelGrouping {
     __obj.asInstanceOf[ChannelGrouping]
   }
   
-  extension [Self <: ChannelGrouping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelGrouping] (val x: Self) extends AnyVal {
     
     inline def setFallbackName(value: String): Self = StObject.set(x, "fallbackName", value.asInstanceOf[js.Any])
     

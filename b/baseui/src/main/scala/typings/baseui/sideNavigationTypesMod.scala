@@ -21,7 +21,8 @@ object sideNavigationTypesMod {
       __obj.asInstanceOf[Exclude]
     }
     
-    extension [Self <: Exclude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: NavigationProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -53,7 +54,8 @@ object sideNavigationTypesMod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object sideNavigationTypesMod {
       __obj.asInstanceOf[NavItemOverrides]
     }
     
-    extension [Self <: NavItemOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavItemOverrides] (val x: Self) extends AnyVal {
       
       inline def setNavItem(value: Override[Any]): Self = StObject.set(x, "NavItem", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object sideNavigationTypesMod {
       __obj.asInstanceOf[NavItemProps]
     }
     
-    extension [Self <: NavItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavItemProps] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -164,7 +168,8 @@ object sideNavigationTypesMod {
       __obj.asInstanceOf[NavigationOverrides]
     }
     
-    extension [Self <: NavigationOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationOverrides] (val x: Self) extends AnyVal {
       
       inline def setNavItem(value: Override[Any]): Self = StObject.set(x, "NavItem", value.asInstanceOf[js.Any])
       
@@ -223,7 +228,8 @@ object sideNavigationTypesMod {
       __obj.asInstanceOf[NavigationProps]
     }
     
-    extension [Self <: NavigationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationProps] (val x: Self) extends AnyVal {
       
       inline def setActiveItemId(value: String): Self = StObject.set(x, "activeItemId", value.asInstanceOf[js.Any])
       
@@ -282,7 +288,8 @@ object sideNavigationTypesMod {
       __obj.asInstanceOf[SharedProps]
     }
     
-    extension [Self <: SharedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedProps] (val x: Self) extends AnyVal {
       
       inline def set$active(value: Boolean): Self = StObject.set(x, "$active", value.asInstanceOf[js.Any])
       
@@ -305,7 +312,8 @@ object sideNavigationTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setActiveItemId(value: String): Self = StObject.set(x, "activeItemId", value.asInstanceOf[js.Any])
       
@@ -336,7 +344,8 @@ object sideNavigationTypesMod {
       __obj.asInstanceOf[StatefulContainerProps]
     }
     
-    extension [Self <: StatefulContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: NavigationProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -370,7 +379,8 @@ object sideNavigationTypesMod {
       __obj.asInstanceOf[StatefulNavProps]
     }
     
-    extension [Self <: StatefulNavProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulNavProps] (val x: Self) extends AnyVal {
       
       inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       

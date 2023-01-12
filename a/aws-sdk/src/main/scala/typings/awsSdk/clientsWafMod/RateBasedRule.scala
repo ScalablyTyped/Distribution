@@ -43,7 +43,8 @@ object RateBasedRule {
     __obj.asInstanceOf[RateBasedRule]
   }
   
-  extension [Self <: RateBasedRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RateBasedRule] (val x: Self) extends AnyVal {
     
     inline def setMatchPredicates(value: Predicates): Self = StObject.set(x, "MatchPredicates", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1p2alpha1LabelVideoObjectDetectionOperationMetada
     __obj.asInstanceOf[GoogleCloudDatalabelingV1p2alpha1LabelVideoObjectDetectionOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1p2alpha1LabelVideoObjectDetectionOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1p2alpha1LabelVideoObjectDetectionOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setBasicConfig(value: GoogleCloudDatalabelingV1p2alpha1HumanAnnotationConfig): Self = StObject.set(x, "basicConfig", value.asInstanceOf[js.Any])
     

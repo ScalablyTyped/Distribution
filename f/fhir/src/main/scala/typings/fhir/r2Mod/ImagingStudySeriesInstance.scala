@@ -53,7 +53,8 @@ object ImagingStudySeriesInstance {
     __obj.asInstanceOf[ImagingStudySeriesInstance]
   }
   
-  extension [Self <: ImagingStudySeriesInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagingStudySeriesInstance] (val x: Self) extends AnyVal {
     
     inline def setContent(value: js.Array[Attachment]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

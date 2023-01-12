@@ -17,7 +17,8 @@ object IOneofOptions {
     __obj.asInstanceOf[IOneofOptions]
   }
   
-  extension [Self <: IOneofOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOneofOptions] (val x: Self) extends AnyVal {
     
     inline def setUninterpretedOption(value: js.Array[IUninterpretedOption]): Self = StObject.set(x, "uninterpretedOption", value.asInstanceOf[js.Any])
     

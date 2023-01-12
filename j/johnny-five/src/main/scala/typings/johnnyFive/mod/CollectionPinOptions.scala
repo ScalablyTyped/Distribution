@@ -18,7 +18,8 @@ object CollectionPinOptions {
     __obj.asInstanceOf[CollectionPinOptions]
   }
   
-  extension [Self <: CollectionPinOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionPinOptions] (val x: Self) extends AnyVal {
     
     inline def setPins(value: js.Array[String | Double]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     

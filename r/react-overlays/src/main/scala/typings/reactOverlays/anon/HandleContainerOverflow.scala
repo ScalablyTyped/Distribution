@@ -17,7 +17,8 @@ object HandleContainerOverflow {
     __obj.asInstanceOf[HandleContainerOverflow]
   }
   
-  extension [Self <: HandleContainerOverflow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleContainerOverflow] (val x: Self) extends AnyVal {
     
     inline def setHandleContainerOverflow(value: Boolean): Self = StObject.set(x, "handleContainerOverflow", value.asInstanceOf[js.Any])
     

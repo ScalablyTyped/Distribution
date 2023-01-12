@@ -21,7 +21,8 @@ object `3` {
     __obj.asInstanceOf[`3`[T]]
   }
   
-  extension [Self <: `3`[?], T /* <: SpringValue[Any] | Controller[Any] */](x: Self & `3`[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `3`[?], T /* <: SpringValue[Any] | Controller[Any] */] (val x: Self & `3`[T]) extends AnyVal {
     
     inline def setTo(value: SpringToFn[T] | Falsy): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     

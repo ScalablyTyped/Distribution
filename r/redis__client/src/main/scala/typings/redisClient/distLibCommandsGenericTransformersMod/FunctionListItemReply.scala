@@ -20,7 +20,8 @@ object FunctionListItemReply {
     __obj.asInstanceOf[FunctionListItemReply]
   }
   
-  extension [Self <: FunctionListItemReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionListItemReply] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     

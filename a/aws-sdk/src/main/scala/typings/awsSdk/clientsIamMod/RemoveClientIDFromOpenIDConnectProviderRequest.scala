@@ -23,7 +23,8 @@ object RemoveClientIDFromOpenIDConnectProviderRequest {
     __obj.asInstanceOf[RemoveClientIDFromOpenIDConnectProviderRequest]
   }
   
-  extension [Self <: RemoveClientIDFromOpenIDConnectProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveClientIDFromOpenIDConnectProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setClientID(value: clientIDType): Self = StObject.set(x, "ClientID", value.asInstanceOf[js.Any])
     

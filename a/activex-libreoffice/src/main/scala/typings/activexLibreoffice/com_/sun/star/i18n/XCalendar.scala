@@ -160,7 +160,8 @@ object XCalendar {
     __obj.asInstanceOf[XCalendar]
   }
   
-  extension [Self <: XCalendar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCalendar] (val x: Self) extends AnyVal {
     
     inline def setAddValue(value: (Double, Double) => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction2(value))
     

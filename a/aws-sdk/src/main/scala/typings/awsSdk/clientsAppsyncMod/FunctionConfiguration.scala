@@ -60,7 +60,8 @@ object FunctionConfiguration {
     __obj.asInstanceOf[FunctionConfiguration]
   }
   
-  extension [Self <: FunctionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDataSourceName(value: ResourceName): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     

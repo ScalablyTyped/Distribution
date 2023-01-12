@@ -41,7 +41,8 @@ object ILocaleNumberPatternDescriptor {
     __obj.asInstanceOf[ILocaleNumberPatternDescriptor]
   }
   
-  extension [Self <: ILocaleNumberPatternDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocaleNumberPatternDescriptor] (val x: Self) extends AnyVal {
     
     inline def setGSize(value: Double): Self = StObject.set(x, "gSize", value.asInstanceOf[js.Any])
     

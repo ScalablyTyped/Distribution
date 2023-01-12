@@ -20,7 +20,8 @@ object Binormals {
     __obj.asInstanceOf[Binormals]
   }
   
-  extension [Self <: Binormals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Binormals] (val x: Self) extends AnyVal {
     
     inline def setBinormals(value: js.Array[Vector3]): Self = StObject.set(x, "binormals", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object NormalizeEmailOptions {
     __obj.asInstanceOf[NormalizeEmailOptions]
   }
   
-  extension [Self <: NormalizeEmailOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizeEmailOptions] (val x: Self) extends AnyVal {
     
     inline def setAll_lowercase(value: Boolean): Self = StObject.set(x, "all_lowercase", value.asInstanceOf[js.Any])
     

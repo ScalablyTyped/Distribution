@@ -17,7 +17,8 @@ object SegSpan {
     __obj.asInstanceOf[SegSpan]
   }
   
-  extension [Self <: SegSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegSpan] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

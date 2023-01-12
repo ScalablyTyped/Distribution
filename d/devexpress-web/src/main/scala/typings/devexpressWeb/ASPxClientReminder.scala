@@ -55,7 +55,8 @@ object ASPxClientReminder {
     __obj.asInstanceOf[ASPxClientReminder]
   }
   
-  extension [Self <: ASPxClientReminder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReminder] (val x: Self) extends AnyVal {
     
     inline def setDismiss(value: () => Unit): Self = StObject.set(x, "Dismiss", js.Any.fromFunction0(value))
     

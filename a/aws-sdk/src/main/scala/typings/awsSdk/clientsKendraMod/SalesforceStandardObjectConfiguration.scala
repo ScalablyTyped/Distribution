@@ -33,7 +33,8 @@ object SalesforceStandardObjectConfiguration {
     __obj.asInstanceOf[SalesforceStandardObjectConfiguration]
   }
   
-  extension [Self <: SalesforceStandardObjectConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SalesforceStandardObjectConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDocumentDataFieldName(value: DataSourceFieldName): Self = StObject.set(x, "DocumentDataFieldName", value.asInstanceOf[js.Any])
     

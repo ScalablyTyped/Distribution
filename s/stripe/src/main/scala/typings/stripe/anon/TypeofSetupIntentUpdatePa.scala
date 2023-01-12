@@ -20,7 +20,8 @@ object TypeofSetupIntentUpdatePa {
     __obj.asInstanceOf[TypeofSetupIntentUpdatePa]
   }
   
-  extension [Self <: TypeofSetupIntentUpdatePa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSetupIntentUpdatePa] (val x: Self) extends AnyVal {
     
     inline def setPaymentMethodData(value: TypeofPaymentMethodData): Self = StObject.set(x, "PaymentMethodData", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,8 @@ object CategoryLegendCfg {
     __obj.asInstanceOf[CategoryLegendCfg]
   }
   
-  extension [Self <: CategoryLegendCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryLegendCfg] (val x: Self) extends AnyVal {
     
     inline def setFlipNavigation(value: LegendPageNavigatorCfg): Self = StObject.set(x, "flipNavigation", value.asInstanceOf[js.Any])
     

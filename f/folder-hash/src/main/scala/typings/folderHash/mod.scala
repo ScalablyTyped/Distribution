@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[FolderAndFileOptions]
     }
     
-    extension [Self <: FolderAndFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FolderAndFileOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.Array[String] | PathGlobFunction): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object mod {
       __obj.asInstanceOf[HashElementNode]
     }
     
-    extension [Self <: HashElementNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashElementNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[HashElementNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object mod {
       __obj.asInstanceOf[HashElementOptions]
     }
     
-    extension [Self <: HashElementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashElementOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgo(value: String): Self = StObject.set(x, "algo", value.asInstanceOf[js.Any])
       
@@ -211,7 +214,8 @@ object mod {
       __obj.asInstanceOf[SymbolicLinkOptions]
     }
     
-    extension [Self <: SymbolicLinkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymbolicLinkOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreBasename(value: Boolean): Self = StObject.set(x, "ignoreBasename", value.asInstanceOf[js.Any])
       

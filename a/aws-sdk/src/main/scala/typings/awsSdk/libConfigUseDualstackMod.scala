@@ -23,7 +23,8 @@ object libConfigUseDualstackMod {
       __obj.asInstanceOf[UseDualstackConfigOptions]
     }
     
-    extension [Self <: UseDualstackConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseDualstackConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setUseDualstack(value: Boolean): Self = StObject.set(x, "useDualstack", value.asInstanceOf[js.Any])
       

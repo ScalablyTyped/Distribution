@@ -39,7 +39,8 @@ object EdgeTraversal {
     __obj.asInstanceOf[EdgeTraversal]
   }
   
-  extension [Self <: EdgeTraversal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeTraversal] (val x: Self) extends AnyVal {
     
     inline def setEdgeId(value: String): Self = StObject.set(x, "edgeId", value.asInstanceOf[js.Any])
     

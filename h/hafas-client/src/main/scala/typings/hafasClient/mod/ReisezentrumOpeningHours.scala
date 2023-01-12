@@ -27,7 +27,8 @@ object ReisezentrumOpeningHours {
     __obj.asInstanceOf[ReisezentrumOpeningHours]
   }
   
-  extension [Self <: ReisezentrumOpeningHours](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReisezentrumOpeningHours] (val x: Self) extends AnyVal {
     
     inline def setDi(value: String): Self = StObject.set(x, "Di", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object Exporturl {
     __obj.asInstanceOf[Exporturl]
   }
   
-  extension [Self <: Exporturl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exporturl] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

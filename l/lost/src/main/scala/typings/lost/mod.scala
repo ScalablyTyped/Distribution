@@ -69,7 +69,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setClearing(value: String): Self = StObject.set(x, "clearing", value.asInstanceOf[js.Any])
       

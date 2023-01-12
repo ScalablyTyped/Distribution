@@ -23,7 +23,8 @@ object VirtualNodeHttpConnectionPool {
     __obj.asInstanceOf[VirtualNodeHttpConnectionPool]
   }
   
-  extension [Self <: VirtualNodeHttpConnectionPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualNodeHttpConnectionPool] (val x: Self) extends AnyVal {
     
     inline def setMaxConnections(value: MaxConnections): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     

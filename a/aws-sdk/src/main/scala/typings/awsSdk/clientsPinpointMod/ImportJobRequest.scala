@@ -53,7 +53,8 @@ object ImportJobRequest {
     __obj.asInstanceOf[ImportJobRequest]
   }
   
-  extension [Self <: ImportJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportJobRequest] (val x: Self) extends AnyVal {
     
     inline def setDefineSegment(value: boolean): Self = StObject.set(x, "DefineSegment", value.asInstanceOf[js.Any])
     

@@ -175,7 +175,8 @@ object PageSetup {
     __obj.asInstanceOf[PageSetup]
   }
   
-  extension [Self <: PageSetup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageSetup] (val x: Self) extends AnyVal {
     
     inline def setAlignMarginsHeaderFooter(value: Boolean): Self = StObject.set(x, "AlignMarginsHeaderFooter", value.asInstanceOf[js.Any])
     

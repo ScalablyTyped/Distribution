@@ -352,7 +352,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BoundApi]
     }
     
-    extension [Self <: BoundApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundApi] (val x: Self) extends AnyVal {
       
       inline def setDict(
         value: /* params */ DropFirst[

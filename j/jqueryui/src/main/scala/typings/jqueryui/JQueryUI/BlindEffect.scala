@@ -15,7 +15,8 @@ object BlindEffect {
     __obj.asInstanceOf[BlindEffect]
   }
   
-  extension [Self <: BlindEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlindEffect] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object Date {
     __obj.asInstanceOf[Date]
   }
   
-  extension [Self <: Date](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
     
     inline def setGetDisplayText(value: () => String): Self = StObject.set(x, "getDisplayText", js.Any.fromFunction0(value))
     

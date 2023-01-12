@@ -28,7 +28,8 @@ object PrivateConnectionProvisioningState {
     __obj.asInstanceOf[PrivateConnectionProvisioningState]
   }
   
-  extension [Self <: PrivateConnectionProvisioningState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateConnectionProvisioningState] (val x: Self) extends AnyVal {
     
     inline def setFailureCause(value: PrivateConnectionProvisioningFailureCause): Self = StObject.set(x, "failureCause", value.asInstanceOf[js.Any])
     

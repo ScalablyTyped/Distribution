@@ -26,7 +26,8 @@ object IError {
     __obj.asInstanceOf[IError]
   }
   
-  extension [Self <: IError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IError] (val x: Self) extends AnyVal {
     
     inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     

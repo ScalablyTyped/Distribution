@@ -55,7 +55,8 @@ object PageLayoutCreationInformation {
     __obj.asInstanceOf[PageLayoutCreationInformation]
   }
   
-  extension [Self <: PageLayoutCreationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageLayoutCreationInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_associatedContentTypeId(value: () => String): Self = StObject.set(x, "get_associatedContentTypeId", js.Any.fromFunction0(value))
     

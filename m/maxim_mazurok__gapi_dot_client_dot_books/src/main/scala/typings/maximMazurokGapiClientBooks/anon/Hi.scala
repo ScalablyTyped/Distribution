@@ -17,7 +17,8 @@ object Hi {
     __obj.asInstanceOf[Hi]
   }
   
-  extension [Self <: Hi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hi] (val x: Self) extends AnyVal {
     
     inline def setHi(value: Latitude): Self = StObject.set(x, "hi", value.asInstanceOf[js.Any])
     

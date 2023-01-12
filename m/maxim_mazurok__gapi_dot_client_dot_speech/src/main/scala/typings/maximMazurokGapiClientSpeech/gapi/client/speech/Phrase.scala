@@ -24,7 +24,8 @@ object Phrase {
     __obj.asInstanceOf[Phrase]
   }
   
-  extension [Self <: Phrase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Phrase] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

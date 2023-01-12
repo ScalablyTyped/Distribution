@@ -109,7 +109,8 @@ object RequestOptions {
     __obj.asInstanceOf[RequestOptions]
   }
   
-  extension [Self <: RequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthMode(value: auto | anonymous | immediate | `no-prompt`): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
     

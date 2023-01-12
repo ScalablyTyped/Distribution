@@ -23,7 +23,8 @@ object ResourceIdPreference {
     __obj.asInstanceOf[ResourceIdPreference]
   }
   
-  extension [Self <: ResourceIdPreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceIdPreference] (val x: Self) extends AnyVal {
     
     inline def setResourceIdType(value: ResourceIdType): Self = StObject.set(x, "ResourceIdType", value.asInstanceOf[js.Any])
     

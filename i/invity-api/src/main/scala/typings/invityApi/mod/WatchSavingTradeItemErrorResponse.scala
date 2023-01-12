@@ -24,7 +24,8 @@ object WatchSavingTradeItemErrorResponse {
     __obj.asInstanceOf[WatchSavingTradeItemErrorResponse]
   }
   
-  extension [Self <: WatchSavingTradeItemErrorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchSavingTradeItemErrorResponse] (val x: Self) extends AnyVal {
     
     inline def setCode(
       value: SavingsTradeIdRequired | SavingsTradeItemIdRequired | SavingsTradeItemNotFound | SavingsTransactionNotFound

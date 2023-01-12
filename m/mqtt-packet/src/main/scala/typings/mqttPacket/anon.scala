@@ -51,7 +51,8 @@ object anon {
       __obj.asInstanceOf[AssignedClientIdentifier]
     }
     
-    extension [Self <: AssignedClientIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssignedClientIdentifier] (val x: Self) extends AnyVal {
       
       inline def setAssignedClientIdentifier(value: String): Self = StObject.set(x, "assignedClientIdentifier", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object anon {
       __obj.asInstanceOf[AuthenticationData]
     }
     
-    extension [Self <: AuthenticationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticationData] (val x: Self) extends AnyVal {
       
       inline def setAuthenticationData(value: Buffer): Self = StObject.set(x, "authenticationData", value.asInstanceOf[js.Any])
       
@@ -187,7 +189,8 @@ object anon {
       __obj.asInstanceOf[AuthenticationMethod]
     }
     
-    extension [Self <: AuthenticationMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticationMethod] (val x: Self) extends AnyVal {
       
       inline def setAuthenticationData(value: Buffer): Self = StObject.set(x, "authenticationData", value.asInstanceOf[js.Any])
       
@@ -250,7 +253,8 @@ object anon {
       __obj.asInstanceOf[ContentType]
     }
     
-    extension [Self <: ContentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -307,7 +311,8 @@ object anon {
       __obj.asInstanceOf[CorrelationData]
     }
     
-    extension [Self <: CorrelationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CorrelationData] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -364,7 +369,8 @@ object anon {
       __obj.asInstanceOf[Payload]
     }
     
-    extension [Self <: Payload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Buffer): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -399,7 +405,8 @@ object anon {
       __obj.asInstanceOf[ReasonString]
     }
     
-    extension [Self <: ReasonString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReasonString] (val x: Self) extends AnyVal {
       
       inline def setReasonString(value: String): Self = StObject.set(x, "reasonString", value.asInstanceOf[js.Any])
       
@@ -432,7 +439,8 @@ object anon {
       __obj.asInstanceOf[ServerReference]
     }
     
-    extension [Self <: ServerReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerReference] (val x: Self) extends AnyVal {
       
       inline def setReasonString(value: String): Self = StObject.set(x, "reasonString", value.asInstanceOf[js.Any])
       
@@ -465,7 +473,8 @@ object anon {
       __obj.asInstanceOf[UserProperties]
     }
     
-    extension [Self <: UserProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserProperties] (val x: Self) extends AnyVal {
       
       inline def setReasonString(value: String): Self = StObject.set(x, "reasonString", value.asInstanceOf[js.Any])
       

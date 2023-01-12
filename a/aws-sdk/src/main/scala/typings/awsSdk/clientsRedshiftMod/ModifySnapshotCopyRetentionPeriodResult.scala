@@ -15,7 +15,8 @@ object ModifySnapshotCopyRetentionPeriodResult {
     __obj.asInstanceOf[ModifySnapshotCopyRetentionPeriodResult]
   }
   
-  extension [Self <: ModifySnapshotCopyRetentionPeriodResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifySnapshotCopyRetentionPeriodResult] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
     

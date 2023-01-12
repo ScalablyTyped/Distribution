@@ -28,7 +28,8 @@ object ExportAssetToSignedUrlRequestDetails {
     __obj.asInstanceOf[ExportAssetToSignedUrlRequestDetails]
   }
   
-  extension [Self <: ExportAssetToSignedUrlRequestDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportAssetToSignedUrlRequestDetails] (val x: Self) extends AnyVal {
     
     inline def setAssetId(value: Id): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     

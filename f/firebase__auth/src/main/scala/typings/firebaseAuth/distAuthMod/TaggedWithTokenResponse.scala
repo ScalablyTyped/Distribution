@@ -18,7 +18,8 @@ object TaggedWithTokenResponse {
     __obj.asInstanceOf[TaggedWithTokenResponse]
   }
   
-  extension [Self <: TaggedWithTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaggedWithTokenResponse] (val x: Self) extends AnyVal {
     
     inline def set_tokenResponse(value: PhoneOrOauthTokenResponse): Self = StObject.set(x, "_tokenResponse", value.asInstanceOf[js.Any])
     

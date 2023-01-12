@@ -58,7 +58,8 @@ object DatasourceAdministrationDialog {
     __obj.asInstanceOf[DatasourceAdministrationDialog]
   }
   
-  extension [Self <: DatasourceAdministrationDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasourceAdministrationDialog] (val x: Self) extends AnyVal {
     
     inline def setParentWindow(value: XWindow): Self = StObject.set(x, "ParentWindow", value.asInstanceOf[js.Any])
     

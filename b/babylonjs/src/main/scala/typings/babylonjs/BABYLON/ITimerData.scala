@@ -39,7 +39,8 @@ object ITimerData {
     __obj.asInstanceOf[ITimerData[T]]
   }
   
-  extension [Self <: ITimerData[?], T](x: Self & ITimerData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimerData[?], T] (val x: Self & ITimerData[T]) extends AnyVal {
     
     inline def setCompleteRate(value: Double): Self = StObject.set(x, "completeRate", value.asInstanceOf[js.Any])
     

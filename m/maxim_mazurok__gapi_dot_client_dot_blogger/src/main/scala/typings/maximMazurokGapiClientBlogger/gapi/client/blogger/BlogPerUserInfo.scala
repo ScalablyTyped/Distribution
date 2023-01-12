@@ -31,7 +31,8 @@ object BlogPerUserInfo {
     __obj.asInstanceOf[BlogPerUserInfo]
   }
   
-  extension [Self <: BlogPerUserInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlogPerUserInfo] (val x: Self) extends AnyVal {
     
     inline def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     

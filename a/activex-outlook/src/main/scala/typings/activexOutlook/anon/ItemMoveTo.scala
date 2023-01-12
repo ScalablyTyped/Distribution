@@ -19,7 +19,8 @@ object ItemMoveTo {
     __obj.asInstanceOf[ItemMoveTo]
   }
   
-  extension [Self <: ItemMoveTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemMoveTo] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

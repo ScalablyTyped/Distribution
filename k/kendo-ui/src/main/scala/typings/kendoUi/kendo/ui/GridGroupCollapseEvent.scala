@@ -20,7 +20,8 @@ object GridGroupCollapseEvent {
     __obj.asInstanceOf[GridGroupCollapseEvent]
   }
   
-  extension [Self <: GridGroupCollapseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridGroupCollapseEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

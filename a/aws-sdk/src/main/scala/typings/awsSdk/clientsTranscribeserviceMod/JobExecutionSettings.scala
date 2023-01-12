@@ -23,7 +23,8 @@ object JobExecutionSettings {
     __obj.asInstanceOf[JobExecutionSettings]
   }
   
-  extension [Self <: JobExecutionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobExecutionSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowDeferredExecution(value: Boolean): Self = StObject.set(x, "AllowDeferredExecution", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[ClusterProperties]
     }
     
-    extension [Self <: ClusterProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClusterProperties] (val x: Self) extends AnyVal {
       
       inline def setCluster(value: `true`): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object mod {
       __obj.asInstanceOf[Options[P, C]]
     }
     
-    extension [Self <: Options[?, ?], P, C](x: Self & (Options[P, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], P, C] (val x: Self & (Options[P, C])) extends AnyVal {
       
       inline def setExtent(value: Double): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object mod {
       __obj.asInstanceOf[Tile[C, P]]
     }
     
-    extension [Self <: Tile[?, ?], C, P](x: Self & (Tile[C, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tile[?, ?], C, P] (val x: Self & (Tile[C, P])) extends AnyVal {
       
       inline def setFeatures(value: js.Array[TileFeature[C, P]]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
@@ -299,7 +302,8 @@ object mod {
       __obj.asInstanceOf[TileFeature[C, P]]
     }
     
-    extension [Self <: TileFeature[?, ?], C, P](x: Self & (TileFeature[C, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileFeature[?, ?], C, P] (val x: Self & (TileFeature[C, P])) extends AnyVal {
       
       inline def setGeometry(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       

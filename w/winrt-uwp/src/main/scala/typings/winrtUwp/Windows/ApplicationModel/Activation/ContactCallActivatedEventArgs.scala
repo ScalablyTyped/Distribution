@@ -44,7 +44,8 @@ object ContactCallActivatedEventArgs {
     __obj.asInstanceOf[ContactCallActivatedEventArgs]
   }
   
-  extension [Self <: ContactCallActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactCallActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

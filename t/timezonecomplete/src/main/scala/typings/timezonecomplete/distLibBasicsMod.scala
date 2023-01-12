@@ -345,7 +345,8 @@ object distLibBasicsMod {
       __obj.asInstanceOf[TimeComponentOpts]
     }
     
-    extension [Self <: TimeComponentOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeComponentOpts] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -429,7 +430,8 @@ object distLibBasicsMod {
       __obj.asInstanceOf[TimeComponents]
     }
     
-    extension [Self <: TimeComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeComponents] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       

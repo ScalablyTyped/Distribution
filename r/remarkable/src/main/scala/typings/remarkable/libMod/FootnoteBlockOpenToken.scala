@@ -21,7 +21,8 @@ object FootnoteBlockOpenToken {
     __obj.asInstanceOf[FootnoteBlockOpenToken]
   }
   
-  extension [Self <: FootnoteBlockOpenToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FootnoteBlockOpenToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: footnote_block_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

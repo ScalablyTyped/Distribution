@@ -89,7 +89,8 @@ object RequiredTheme {
     __obj.asInstanceOf[RequiredTheme]
   }
   
-  extension [Self <: RequiredTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredTheme] (val x: Self) extends AnyVal {
     
     inline def setBorderStyles(value: ObjectOrArray[Border[js.Object], /* keyof any */ String]): Self = StObject.set(x, "borderStyles", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object PickBoxLegendSvgPropsdire {
     __obj.asInstanceOf[PickBoxLegendSvgPropsdire]
   }
   
-  extension [Self <: PickBoxLegendSvgPropsdire](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickBoxLegendSvgPropsdire] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: LegendDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

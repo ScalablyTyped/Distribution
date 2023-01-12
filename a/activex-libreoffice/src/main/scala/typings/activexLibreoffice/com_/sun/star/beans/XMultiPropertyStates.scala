@@ -65,7 +65,8 @@ object XMultiPropertyStates {
     __obj.asInstanceOf[XMultiPropertyStates]
   }
   
-  extension [Self <: XMultiPropertyStates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMultiPropertyStates] (val x: Self) extends AnyVal {
     
     inline def setGetPropertyDefaults(value: SeqEquiv[String] => SafeArray[Any]): Self = StObject.set(x, "getPropertyDefaults", js.Any.fromFunction1(value))
     

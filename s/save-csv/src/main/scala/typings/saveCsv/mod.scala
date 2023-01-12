@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[SaveCsvProps]
     }
     
-    extension [Self <: SaveCsvProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveCsvProps] (val x: Self) extends AnyVal {
       
       inline def setBom(value: Boolean): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
       

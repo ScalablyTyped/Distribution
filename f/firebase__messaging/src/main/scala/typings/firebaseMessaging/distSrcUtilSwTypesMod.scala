@@ -45,7 +45,8 @@ object distSrcUtilSwTypesMod {
       __obj.asInstanceOf[ClientQueryOptions]
     }
     
-    extension [Self <: ClientQueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientQueryOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeReserved(value: Boolean): Self = StObject.set(x, "includeReserved", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object distSrcUtilSwTypesMod {
       __obj.asInstanceOf[PushMessageData]
     }
     
-    extension [Self <: PushMessageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushMessageData] (val x: Self) extends AnyVal {
       
       inline def setArrayBuffer(value: () => js.typedarray.ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
@@ -222,7 +224,8 @@ object distSrcUtilSwTypesMod {
       __obj.asInstanceOf[ServiceWorkerGlobalScopeEventMap]
     }
     
-    extension [Self <: ServiceWorkerGlobalScopeEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceWorkerGlobalScopeEventMap] (val x: Self) extends AnyVal {
       
       inline def setNotificationclick(value: NotificationEvent): Self = StObject.set(x, "notificationclick", value.asInstanceOf[js.Any])
       
@@ -283,7 +286,8 @@ object distSrcUtilSwTypesMod {
       __obj.asInstanceOf[WorkerLocation]
     }
     
-    extension [Self <: WorkerLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerLocation] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object GoogleCloudServicenetworkingV1ConsumerConfigReservedRange {
     __obj.asInstanceOf[GoogleCloudServicenetworkingV1ConsumerConfigReservedRange]
   }
   
-  extension [Self <: GoogleCloudServicenetworkingV1ConsumerConfigReservedRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudServicenetworkingV1ConsumerConfigReservedRange] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

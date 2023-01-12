@@ -110,7 +110,8 @@ object CellRequiredText {
     __obj.asInstanceOf[CellRequiredText]
   }
   
-  extension [Self <: CellRequiredText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellRequiredText] (val x: Self) extends AnyVal {
     
     inline def setActionsCell(value: String): Self = StObject.set(x, "actionsCell", value.asInstanceOf[js.Any])
     

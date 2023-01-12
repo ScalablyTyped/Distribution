@@ -48,7 +48,8 @@ object Index {
     __obj.asInstanceOf[Index]
   }
   
-  extension [Self <: Index](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
     
     inline def setADOXDotIndex_typekey(value: Index): Self = StObject.set(x, "ADOX.Index_typekey", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CloneBindings {
     __obj.asInstanceOf[CloneBindings]
   }
   
-  extension [Self <: CloneBindings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloneBindings] (val x: Self) extends AnyVal {
     
     inline def setCloneBindings(value: Boolean): Self = StObject.set(x, "cloneBindings", value.asInstanceOf[js.Any])
     

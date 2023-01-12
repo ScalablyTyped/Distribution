@@ -25,7 +25,8 @@ object MetricDescriptorMetadata {
     __obj.asInstanceOf[MetricDescriptorMetadata]
   }
   
-  extension [Self <: MetricDescriptorMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricDescriptorMetadata] (val x: Self) extends AnyVal {
     
     inline def setIngestDelay(value: String): Self = StObject.set(x, "ingestDelay", value.asInstanceOf[js.Any])
     

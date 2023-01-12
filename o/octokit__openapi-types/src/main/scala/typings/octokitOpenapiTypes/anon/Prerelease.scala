@@ -34,7 +34,8 @@ object Prerelease {
     __obj.asInstanceOf[Prerelease]
   }
   
-  extension [Self <: Prerelease](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Prerelease] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

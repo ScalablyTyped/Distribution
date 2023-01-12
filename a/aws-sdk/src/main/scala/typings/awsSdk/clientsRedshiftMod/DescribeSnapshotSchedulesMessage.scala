@@ -43,7 +43,8 @@ object DescribeSnapshotSchedulesMessage {
     __obj.asInstanceOf[DescribeSnapshotSchedulesMessage]
   }
   
-  extension [Self <: DescribeSnapshotSchedulesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSnapshotSchedulesMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     

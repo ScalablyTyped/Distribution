@@ -106,7 +106,8 @@ object SeriesArearangeOptions {
     __obj.asInstanceOf[SeriesArearangeOptions]
   }
   
-  extension [Self <: SeriesArearangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesArearangeOptions] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: js.Array[

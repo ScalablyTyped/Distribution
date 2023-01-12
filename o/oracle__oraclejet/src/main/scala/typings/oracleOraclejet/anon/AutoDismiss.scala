@@ -37,7 +37,8 @@ object AutoDismiss {
     __obj.asInstanceOf[AutoDismiss]
   }
   
-  extension [Self <: AutoDismiss](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoDismiss] (val x: Self) extends AnyVal {
     
     inline def setAutoDismiss(value: focusLoss | none): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
     

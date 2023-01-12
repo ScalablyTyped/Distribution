@@ -25,7 +25,8 @@ object SelectionConfig {
     __obj.asInstanceOf[SelectionConfig]
   }
   
-  extension [Self <: SelectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionConfig] (val x: Self) extends AnyVal {
     
     inline def setCursorBlinkRate(value: Double): Self = StObject.set(x, "cursorBlinkRate", value.asInstanceOf[js.Any])
     

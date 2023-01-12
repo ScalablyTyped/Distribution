@@ -52,7 +52,8 @@ object Collections {
       __obj.asInstanceOf[HashTable[TKey, TValue]]
     }
     
-    extension [Self <: HashTable[?, ?], TKey, TValue](x: Self & (HashTable[TKey, TValue])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashTable[?, ?], TKey, TValue] (val x: Self & (HashTable[TKey, TValue])) extends AnyVal {
       
       inline def setAdd(value: (TKey, TValue) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
@@ -108,7 +109,8 @@ object Collections {
       __obj.asInstanceOf[StringTable]
     }
     
-    extension [Self <: StringTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringTable] (val x: Self) extends AnyVal {
       
       inline def setAddCharArray(value: (js.Array[Double], Double, Double) => String): Self = StObject.set(x, "addCharArray", js.Any.fromFunction3(value))
       

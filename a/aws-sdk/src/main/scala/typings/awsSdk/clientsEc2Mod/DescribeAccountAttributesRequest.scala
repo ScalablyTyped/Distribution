@@ -23,7 +23,8 @@ object DescribeAccountAttributesRequest {
     __obj.asInstanceOf[DescribeAccountAttributesRequest]
   }
   
-  extension [Self <: DescribeAccountAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccountAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributeNames(value: AccountAttributeNameStringList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     

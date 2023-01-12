@@ -55,7 +55,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Mechanism]
     }
     
-    extension [Self <: Mechanism](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
       
       inline def setChallenge(value: String => Unit): Self = StObject.set(x, "challenge", js.Any.fromFunction1(value))
       

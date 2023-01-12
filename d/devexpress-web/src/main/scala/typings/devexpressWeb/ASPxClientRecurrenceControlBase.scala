@@ -47,7 +47,8 @@ object ASPxClientRecurrenceControlBase {
     __obj.asInstanceOf[ASPxClientRecurrenceControlBase]
   }
   
-  extension [Self <: ASPxClientRecurrenceControlBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRecurrenceControlBase] (val x: Self) extends AnyVal {
     
     inline def setCreateValueAccessor(value: () => DefaultRecurrenceRuleValuesAccessor): Self = StObject.set(x, "CreateValueAccessor", js.Any.fromFunction0(value))
     

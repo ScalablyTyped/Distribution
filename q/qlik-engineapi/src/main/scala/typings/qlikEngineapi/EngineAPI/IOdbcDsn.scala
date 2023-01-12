@@ -39,7 +39,8 @@ object IOdbcDsn {
     __obj.asInstanceOf[IOdbcDsn]
   }
   
-  extension [Self <: IOdbcDsn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOdbcDsn] (val x: Self) extends AnyVal {
     
     inline def setQBit32(value: Boolean): Self = StObject.set(x, "qBit32", value.asInstanceOf[js.Any])
     

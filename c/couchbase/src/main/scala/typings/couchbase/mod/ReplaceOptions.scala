@@ -20,7 +20,8 @@ object ReplaceOptions {
     __obj.asInstanceOf[ReplaceOptions]
   }
   
-  extension [Self <: ReplaceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceOptions] (val x: Self) extends AnyVal {
     
     inline def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     

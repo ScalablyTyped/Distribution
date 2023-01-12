@@ -17,7 +17,8 @@ object ITemplateManipulators {
     __obj.asInstanceOf[ITemplateManipulators]
   }
   
-  extension [Self <: ITemplateManipulators](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITemplateManipulators] (val x: Self) extends AnyVal {
     
     inline def setPostWrapper(value: js.Array[ITemplateManipulator]): Self = StObject.set(x, "postWrapper", value.asInstanceOf[js.Any])
     

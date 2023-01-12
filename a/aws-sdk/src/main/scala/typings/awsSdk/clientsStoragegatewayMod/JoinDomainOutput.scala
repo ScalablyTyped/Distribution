@@ -23,7 +23,8 @@ object JoinDomainOutput {
     __obj.asInstanceOf[JoinDomainOutput]
   }
   
-  extension [Self <: JoinDomainOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinDomainOutput] (val x: Self) extends AnyVal {
     
     inline def setActiveDirectoryStatus(value: ActiveDirectoryStatus): Self = StObject.set(x, "ActiveDirectoryStatus", value.asInstanceOf[js.Any])
     

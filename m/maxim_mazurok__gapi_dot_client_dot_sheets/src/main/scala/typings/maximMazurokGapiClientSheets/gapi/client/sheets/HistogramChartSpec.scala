@@ -38,7 +38,8 @@ object HistogramChartSpec {
     __obj.asInstanceOf[HistogramChartSpec]
   }
   
-  extension [Self <: HistogramChartSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistogramChartSpec] (val x: Self) extends AnyVal {
     
     inline def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     

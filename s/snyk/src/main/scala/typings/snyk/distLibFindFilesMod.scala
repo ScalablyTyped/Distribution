@@ -37,7 +37,8 @@ object distLibFindFilesMod {
       __obj.asInstanceOf[FindFilesRes]
     }
     
-    extension [Self <: FindFilesRes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindFilesRes] (val x: Self) extends AnyVal {
       
       inline def setAllFilesFound(value: js.Array[String]): Self = StObject.set(x, "allFilesFound", value.asInstanceOf[js.Any])
       

@@ -131,7 +131,8 @@ object libCreateClassFromSpecMod {
       __obj.asInstanceOf[FixedVegaChartProps]
     }
     
-    extension [Self <: FixedVegaChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedVegaChartProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Boolean | Actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

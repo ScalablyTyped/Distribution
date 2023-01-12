@@ -58,7 +58,8 @@ object Query {
     __obj.asInstanceOf[Query]
   }
   
-  extension [Self <: Query](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
     
     inline def setMerge(value: Query => Query): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
     

@@ -38,7 +38,8 @@ object StartContactRecordingRequest {
     __obj.asInstanceOf[StartContactRecordingRequest]
   }
   
-  extension [Self <: StartContactRecordingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartContactRecordingRequest] (val x: Self) extends AnyVal {
     
     inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     

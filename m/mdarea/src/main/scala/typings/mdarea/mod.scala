@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[Editor]
     }
     
-    extension [Self <: Editor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Editor] (val x: Self) extends AnyVal {
       
       inline def setElem(value: HTMLTextAreaElement): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object mod {
       __obj.asInstanceOf[EditorOptions]
     }
     
-    extension [Self <: EditorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorOptions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: js.Array[MarkdownAreaExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object mod {
       __obj.asInstanceOf[EditorState]
     }
     
-    extension [Self <: EditorState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorState] (val x: Self) extends AnyVal {
       
       inline def setC(value: Boolean): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object mod {
       __obj.asInstanceOf[KeyCombo]
     }
     
-    extension [Self <: KeyCombo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyCombo] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -246,7 +250,8 @@ object mod {
       __obj.asInstanceOf[Keymap]
     }
     
-    extension [Self <: Keymap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keymap] (val x: Self) extends AnyVal {
       
       inline def setEnter(value: String | js.Array[String]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
@@ -302,7 +307,8 @@ object mod {
       __obj.asInstanceOf[MarkdownAreaExtension]
     }
     
-    extension [Self <: MarkdownAreaExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkdownAreaExtension] (val x: Self) extends AnyVal {
       
       inline def setCleanup(value: /* editor */ MarkdownArea => Unit): Self = StObject.set(x, "cleanup", js.Any.fromFunction1(value))
       
@@ -339,7 +345,8 @@ object mod {
       __obj.asInstanceOf[NewState]
     }
     
-    extension [Self <: NewState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewState] (val x: Self) extends AnyVal {
       
       inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
@@ -383,7 +390,8 @@ object mod {
       __obj.asInstanceOf[NormalisedOptions]
     }
     
-    extension [Self <: NormalisedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalisedOptions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: js.Array[MarkdownAreaExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       

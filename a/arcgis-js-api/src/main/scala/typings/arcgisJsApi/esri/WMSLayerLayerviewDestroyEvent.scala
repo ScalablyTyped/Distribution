@@ -17,7 +17,8 @@ object WMSLayerLayerviewDestroyEvent {
     __obj.asInstanceOf[WMSLayerLayerviewDestroyEvent]
   }
   
-  extension [Self <: WMSLayerLayerviewDestroyEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WMSLayerLayerviewDestroyEvent] (val x: Self) extends AnyVal {
     
     inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     

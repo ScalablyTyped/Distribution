@@ -33,7 +33,8 @@ object FulfillmentUpdatesSpecification {
     __obj.asInstanceOf[FulfillmentUpdatesSpecification]
   }
   
-  extension [Self <: FulfillmentUpdatesSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FulfillmentUpdatesSpecification] (val x: Self) extends AnyVal {
     
     inline def setActive(value: BoxedBoolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object UploadFileParam {
     __obj.asInstanceOf[UploadFileParam]
   }
   
-  extension [Self <: UploadFileParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadFileParam] (val x: Self) extends AnyVal {
     
     inline def setCloudPath(value: String): Self = StObject.set(x, "cloudPath", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object RemoteVideoStats {
     __obj.asInstanceOf[RemoteVideoStats]
   }
   
-  extension [Self <: RemoteVideoStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteVideoStats] (val x: Self) extends AnyVal {
     
     inline def setFrameHeight(value: Double): Self = StObject.set(x, "frameHeight", value.asInstanceOf[js.Any])
     

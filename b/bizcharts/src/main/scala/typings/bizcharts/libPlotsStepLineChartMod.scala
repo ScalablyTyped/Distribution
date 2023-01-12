@@ -32,7 +32,8 @@ object libPlotsStepLineChartMod extends Shortcut {
       __obj.asInstanceOf[StepLineOptions]
     }
     
-    extension [Self <: StepLineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepLineOptions] (val x: Self) extends AnyVal {
       
       inline def setStep(value: hv | vh | vhv | hvh): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object Reduce {
     __obj.asInstanceOf[Reduce]
   }
   
-  extension [Self <: Reduce](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reduce] (val x: Self) extends AnyVal {
     
     inline def setReduce(value: String): Self = StObject.set(x, "reduce", value.asInstanceOf[js.Any])
   }

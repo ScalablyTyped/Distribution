@@ -38,7 +38,8 @@ object DescribeTargetGroupsInput {
     __obj.asInstanceOf[DescribeTargetGroupsInput]
   }
   
-  extension [Self <: DescribeTargetGroupsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTargetGroupsInput] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
     

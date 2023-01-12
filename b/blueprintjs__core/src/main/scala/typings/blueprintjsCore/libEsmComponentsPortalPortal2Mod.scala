@@ -81,7 +81,8 @@ object libEsmComponentsPortalPortal2Mod {
       __obj.asInstanceOf[Portal2Props]
     }
     
-    extension [Self <: Portal2Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Portal2Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

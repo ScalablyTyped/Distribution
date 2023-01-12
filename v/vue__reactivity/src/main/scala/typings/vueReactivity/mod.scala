@@ -374,7 +374,8 @@ object mod {
       __obj.asInstanceOf[DebuggerEvent]
     }
     
-    extension [Self <: DebuggerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebuggerEvent] (val x: Self) extends AnyVal {
       
       inline def setEffect(value: ReactiveEffect[Any]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     }
@@ -402,7 +403,8 @@ object mod {
       __obj.asInstanceOf[DebuggerEventExtraInfo]
     }
     
-    extension [Self <: DebuggerEventExtraInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebuggerEventExtraInfo] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -437,7 +439,8 @@ object mod {
       __obj.asInstanceOf[DebuggerOptions]
     }
     
-    extension [Self <: DebuggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebuggerOptions] (val x: Self) extends AnyVal {
       
       inline def setOnTrack(value: /* event */ DebuggerEvent => Unit): Self = StObject.set(x, "onTrack", js.Any.fromFunction1(value))
       
@@ -497,7 +500,8 @@ object mod {
       __obj.asInstanceOf[ReactiveEffectOptions]
     }
     
-    extension [Self <: ReactiveEffectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactiveEffectOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowRecurse(value: Boolean): Self = StObject.set(x, "allowRecurse", value.asInstanceOf[js.Any])
       
@@ -630,7 +634,8 @@ object mod {
       __obj.asInstanceOf[TrackedMarkers]
     }
     
-    extension [Self <: TrackedMarkers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackedMarkers] (val x: Self) extends AnyVal {
       
       inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
@@ -702,7 +707,8 @@ object mod {
       __obj.asInstanceOf[WritableComputedOptions[T]]
     }
     
-    extension [Self <: WritableComputedOptions[?], T](x: Self & WritableComputedOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WritableComputedOptions[?], T] (val x: Self & WritableComputedOptions[T]) extends AnyVal {
       
       inline def setGet(value: ComputedGetter[T]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       

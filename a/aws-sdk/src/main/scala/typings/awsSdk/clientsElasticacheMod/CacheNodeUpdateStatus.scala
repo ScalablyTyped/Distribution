@@ -53,7 +53,8 @@ object CacheNodeUpdateStatus {
     __obj.asInstanceOf[CacheNodeUpdateStatus]
   }
   
-  extension [Self <: CacheNodeUpdateStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheNodeUpdateStatus] (val x: Self) extends AnyVal {
     
     inline def setCacheNodeId(value: String): Self = StObject.set(x, "CacheNodeId", value.asInstanceOf[js.Any])
     

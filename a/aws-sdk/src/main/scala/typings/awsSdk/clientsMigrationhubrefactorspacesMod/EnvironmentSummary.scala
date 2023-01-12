@@ -73,7 +73,8 @@ object EnvironmentSummary {
     __obj.asInstanceOf[EnvironmentSummary]
   }
   
-  extension [Self <: EnvironmentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ResourceArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object Astc {
     __obj.asInstanceOf[Astc]
   }
   
-  extension [Self <: Astc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Astc] (val x: Self) extends AnyVal {
     
     inline def setAstc(value: Boolean): Self = StObject.set(x, "astc", value.asInstanceOf[js.Any])
     

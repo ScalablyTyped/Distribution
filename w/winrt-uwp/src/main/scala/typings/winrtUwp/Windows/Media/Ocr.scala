@@ -35,7 +35,8 @@ object Ocr {
       __obj.asInstanceOf[OcrEngine]
     }
     
-    extension [Self <: OcrEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OcrEngine] (val x: Self) extends AnyVal {
       
       inline def setRecognizeAsync(value: SoftwareBitmap => IPromiseWithIAsyncOperation[OcrResult]): Self = StObject.set(x, "recognizeAsync", js.Any.fromFunction1(value))
       
@@ -59,7 +60,8 @@ object Ocr {
       __obj.asInstanceOf[OcrLine]
     }
     
-    extension [Self <: OcrLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OcrLine] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object Ocr {
       __obj.asInstanceOf[OcrResult]
     }
     
-    extension [Self <: OcrResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OcrResult] (val x: Self) extends AnyVal {
       
       inline def setLines(value: IVectorView[OcrLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object Ocr {
       __obj.asInstanceOf[OcrWord]
     }
     
-    extension [Self <: OcrWord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OcrWord] (val x: Self) extends AnyVal {
       
       inline def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
       

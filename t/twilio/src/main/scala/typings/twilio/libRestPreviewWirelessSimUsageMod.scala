@@ -163,7 +163,8 @@ object libRestPreviewWirelessSimUsageMod {
       __obj.asInstanceOf[UsageInstanceFetchOptions]
     }
     
-    extension [Self <: UsageInstanceFetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsageInstanceFetchOptions] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -259,7 +260,8 @@ object libRestPreviewWirelessSimUsageMod {
       __obj.asInstanceOf[UsageResource]
     }
     
-    extension [Self <: UsageResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsageResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -292,7 +294,8 @@ object libRestPreviewWirelessSimUsageMod {
       __obj.asInstanceOf[UsageSolution]
     }
     
-    extension [Self <: UsageSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsageSolution] (val x: Self) extends AnyVal {
       
       inline def setSimSid(value: String): Self = StObject.set(x, "simSid", value.asInstanceOf[js.Any])
       

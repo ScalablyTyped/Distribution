@@ -97,7 +97,8 @@ object libDsvVisualizationDefMod {
       __obj.asInstanceOf[VisualizationDef]
     }
     
-    extension [Self <: VisualizationDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisualizationDef] (val x: Self) extends AnyVal {
       
       inline def setCanExport(value: Boolean): Self = StObject.set(x, "canExport", value.asInstanceOf[js.Any])
       

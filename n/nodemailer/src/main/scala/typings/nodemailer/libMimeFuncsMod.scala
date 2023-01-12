@@ -70,7 +70,8 @@ object libMimeFuncsMod {
       __obj.asInstanceOf[HeaderValue]
     }
     
-    extension [Self <: HeaderValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderValue] (val x: Self) extends AnyVal {
       
       inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object libMimeFuncsMod {
       __obj.asInstanceOf[ParsedHeaderParam]
     }
     
-    extension [Self <: ParsedHeaderParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedHeaderParam] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object libMimeFuncsMod {
       __obj.asInstanceOf[ParsedHeaderValue]
     }
     
-    extension [Self <: ParsedHeaderValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedHeaderValue] (val x: Self) extends AnyVal {
       
       inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }

@@ -111,7 +111,8 @@ object HeatmapLayer {
       __obj.asInstanceOf[BandwidthStop]
     }
     
-    extension [Self <: BandwidthStop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BandwidthStop] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object HeatmapLayer {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAggregation(value: Aggregation): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
       
@@ -263,7 +265,8 @@ object HeatmapLayer {
       __obj.asInstanceOf[Row]
     }
     
-    extension [Self <: Row](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -307,7 +310,8 @@ object HeatmapLayer {
       __obj.asInstanceOf[TilePoint]
     }
     
-    extension [Self <: TilePoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TilePoint] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object MapContextGetRegionOptions {
     __obj.asInstanceOf[MapContextGetRegionOptions]
   }
   
-  extension [Self <: MapContextGetRegionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapContextGetRegionOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

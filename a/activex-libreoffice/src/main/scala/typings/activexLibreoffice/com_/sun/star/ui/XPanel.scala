@@ -93,7 +93,8 @@ object XPanel {
     __obj.asInstanceOf[XPanel]
   }
   
-  extension [Self <: XPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPanel] (val x: Self) extends AnyVal {
     
     inline def setCollapse(value: () => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
     

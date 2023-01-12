@@ -20,7 +20,8 @@ object TypeofMultiSelect {
     __obj.asInstanceOf[TypeofMultiSelect]
   }
   
-  extension [Self <: TypeofMultiSelect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMultiSelect] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => MultiSelect): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

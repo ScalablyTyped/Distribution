@@ -16,7 +16,8 @@ object TranscriptOutputConfig {
     __obj.asInstanceOf[TranscriptOutputConfig]
   }
   
-  extension [Self <: TranscriptOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranscriptOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setGcsUri(value: String): Self = StObject.set(x, "gcsUri", value.asInstanceOf[js.Any])
     

@@ -190,7 +190,8 @@ object libObservablemapMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      extension [Self <: IOptions[?], T](x: Self & IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?], T] (val x: Self & IOptions[T]) extends AnyVal {
         
         inline def setItemCmp(value: (/* first */ T, /* second */ T) => Boolean): Self = StObject.set(x, "itemCmp", js.Any.fromFunction2(value))
         
@@ -353,7 +354,8 @@ object libObservablemapMod {
         __obj.asInstanceOf[IChangedArgs[T]]
       }
       
-      extension [Self <: IChangedArgs[?], T](x: Self & IChangedArgs[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IChangedArgs[?], T] (val x: Self & IChangedArgs[T]) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
@@ -369,7 +371,8 @@ object libObservablemapMod {
       }
     }
     
-    extension [Self <: IObservableMap[?], T](x: Self & IObservableMap[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObservableMap[?], T] (val x: Self & IObservableMap[T]) extends AnyVal {
       
       inline def setChanged(value: ISignal[IObservableMap[T], IChangedArgs[T]]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       

@@ -339,7 +339,8 @@ object WeakValidationMapvalueDat {
     __obj.asInstanceOf[WeakValidationMapvalueDat]
   }
   
-  extension [Self <: WeakValidationMapvalueDat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapvalueDat] (val x: Self) extends AnyVal {
     
     inline def setAfterClose(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends (): void | undefined ? react.react.Validator<(): void | undefined | null | undefined> : undefined extends (): void | undefined ? react.react.Validator<(): void | undefined | null | undefined> : react.react.Validator<(): void | undefined> */ js.Any

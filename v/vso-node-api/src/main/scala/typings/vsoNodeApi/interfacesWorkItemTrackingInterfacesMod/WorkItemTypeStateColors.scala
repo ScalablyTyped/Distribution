@@ -23,7 +23,8 @@ object WorkItemTypeStateColors {
     __obj.asInstanceOf[WorkItemTypeStateColors]
   }
   
-  extension [Self <: WorkItemTypeStateColors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemTypeStateColors] (val x: Self) extends AnyVal {
     
     inline def setStateColors(value: js.Array[WorkItemStateColor]): Self = StObject.set(x, "stateColors", value.asInstanceOf[js.Any])
     

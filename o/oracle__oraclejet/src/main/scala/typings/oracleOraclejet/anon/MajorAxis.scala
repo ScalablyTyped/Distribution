@@ -17,7 +17,8 @@ object MajorAxis {
     __obj.asInstanceOf[MajorAxis]
   }
   
-  extension [Self <: MajorAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MajorAxis] (val x: Self) extends AnyVal {
     
     inline def setMajorAxis(value: js.Object): Self = StObject.set(x, "majorAxis", value.asInstanceOf[js.Any])
     

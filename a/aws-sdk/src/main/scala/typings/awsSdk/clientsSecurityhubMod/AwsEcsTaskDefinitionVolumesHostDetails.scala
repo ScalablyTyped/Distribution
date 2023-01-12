@@ -18,7 +18,8 @@ object AwsEcsTaskDefinitionVolumesHostDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionVolumesHostDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionVolumesHostDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionVolumesHostDetails] (val x: Self) extends AnyVal {
     
     inline def setSourcePath(value: NonEmptyString): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
     

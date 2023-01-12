@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[StackFrame]
     }
     
-    extension [Self <: StackFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       

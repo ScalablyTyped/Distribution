@@ -145,7 +145,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IConfig]
       }
       
-      extension [Self <: IConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
         
         inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
         
@@ -196,7 +197,8 @@ object libWidgetMod {
         __obj.asInstanceOf[typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownViewer.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownViewer.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownViewer.IOptions] (val x: Self) extends AnyVal {
         
         inline def setContext(value: IContext[IModel]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
@@ -247,7 +249,8 @@ object libWidgetMod {
         __obj.asInstanceOf[typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownViewerFactory.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownViewerFactory.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabMarkdownviewer.libWidgetMod.MarkdownViewerFactory.IOptions] (val x: Self) extends AnyVal {
         
         inline def setPrimaryFileType(value: IFileType): Self = StObject.set(x, "primaryFileType", value.asInstanceOf[js.Any])
         

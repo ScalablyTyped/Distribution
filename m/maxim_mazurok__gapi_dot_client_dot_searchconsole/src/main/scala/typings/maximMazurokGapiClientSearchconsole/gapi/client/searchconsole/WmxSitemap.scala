@@ -40,7 +40,8 @@ object WmxSitemap {
     __obj.asInstanceOf[WmxSitemap]
   }
   
-  extension [Self <: WmxSitemap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WmxSitemap] (val x: Self) extends AnyVal {
     
     inline def setContents(value: js.Array[WmxSitemapContent]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

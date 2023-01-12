@@ -25,7 +25,8 @@ object MaterialDesignLite {
       __obj.asInstanceOf[ComponentConfigPublic]
     }
     
-    extension [Self <: ComponentConfigPublic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentConfigPublic] (val x: Self) extends AnyVal {
       
       inline def setClassAsString(value: String): Self = StObject.set(x, "classAsString", value.asInstanceOf[js.Any])
       

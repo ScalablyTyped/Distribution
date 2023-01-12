@@ -16,7 +16,8 @@ object IBatchList {
     __obj.asInstanceOf[IBatchList]
   }
   
-  extension [Self <: IBatchList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBatchList] (val x: Self) extends AnyVal {
     
     inline def setBatches(value: js.Array[IBatch]): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
     

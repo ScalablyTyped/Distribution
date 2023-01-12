@@ -38,7 +38,8 @@ object SatelliteListItem {
     __obj.asInstanceOf[SatelliteListItem]
   }
   
-  extension [Self <: SatelliteListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SatelliteListItem] (val x: Self) extends AnyVal {
     
     inline def setCurrentEphemeris(value: EphemerisMetaData): Self = StObject.set(x, "currentEphemeris", value.asInstanceOf[js.Any])
     

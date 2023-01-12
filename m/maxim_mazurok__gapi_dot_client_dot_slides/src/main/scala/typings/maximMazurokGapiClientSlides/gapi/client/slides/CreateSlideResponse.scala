@@ -16,7 +16,8 @@ object CreateSlideResponse {
     __obj.asInstanceOf[CreateSlideResponse]
   }
   
-  extension [Self <: CreateSlideResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSlideResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

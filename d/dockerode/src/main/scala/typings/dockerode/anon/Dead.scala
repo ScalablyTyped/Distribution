@@ -49,7 +49,8 @@ object Dead {
     __obj.asInstanceOf[Dead]
   }
   
-  extension [Self <: Dead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dead] (val x: Self) extends AnyVal {
     
     inline def setDead(value: Boolean): Self = StObject.set(x, "Dead", value.asInstanceOf[js.Any])
     

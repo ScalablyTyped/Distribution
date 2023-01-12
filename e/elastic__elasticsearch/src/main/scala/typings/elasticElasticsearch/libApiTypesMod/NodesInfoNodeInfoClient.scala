@@ -16,7 +16,8 @@ object NodesInfoNodeInfoClient {
     __obj.asInstanceOf[NodesInfoNodeInfoClient]
   }
   
-  extension [Self <: NodesInfoNodeInfoClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoClient] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object SessionStateEventData {
     __obj.asInstanceOf[SessionStateEventData]
   }
   
-  extension [Self <: SessionStateEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionStateEventData] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

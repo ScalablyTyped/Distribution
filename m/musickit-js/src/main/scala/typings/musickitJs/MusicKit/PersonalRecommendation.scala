@@ -32,7 +32,8 @@ object PersonalRecommendation {
     __obj.asInstanceOf[PersonalRecommendation]
   }
   
-  extension [Self <: PersonalRecommendation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersonalRecommendation] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Kind): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

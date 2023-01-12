@@ -23,7 +23,8 @@ object ReservedNodeOfferingsMessage {
     __obj.asInstanceOf[ReservedNodeOfferingsMessage]
   }
   
-  extension [Self <: ReservedNodeOfferingsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservedNodeOfferingsMessage] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

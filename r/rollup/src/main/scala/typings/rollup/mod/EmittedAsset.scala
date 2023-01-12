@@ -25,7 +25,8 @@ object EmittedAsset {
     __obj.asInstanceOf[EmittedAsset]
   }
   
-  extension [Self <: EmittedAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmittedAsset] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

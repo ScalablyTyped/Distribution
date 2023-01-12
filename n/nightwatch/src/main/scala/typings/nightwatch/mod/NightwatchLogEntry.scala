@@ -46,7 +46,8 @@ object NightwatchLogEntry {
     __obj.asInstanceOf[NightwatchLogEntry]
   }
   
-  extension [Self <: NightwatchLogEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchLogEntry] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: ALL | DEBUG | FINE | FINER | FINEST | INFO | OFF | SEVERE | WARNING | Level | Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

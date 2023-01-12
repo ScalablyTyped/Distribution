@@ -23,7 +23,8 @@ object EndpointIdentifier {
     __obj.asInstanceOf[EndpointIdentifier]
   }
   
-  extension [Self <: EndpointIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointIdentifier] (val x: Self) extends AnyVal {
     
     inline def setClientIPPreservationEnabled(value: GenericBoolean): Self = StObject.set(x, "ClientIPPreservationEnabled", value.asInstanceOf[js.Any])
     

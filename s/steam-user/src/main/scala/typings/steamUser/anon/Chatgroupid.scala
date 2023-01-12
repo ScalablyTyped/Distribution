@@ -21,7 +21,8 @@ object Chatgroupid {
     __obj.asInstanceOf[Chatgroupid]
   }
   
-  extension [Self <: Chatgroupid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chatgroupid] (val x: Self) extends AnyVal {
     
     inline def setChat_group_id(value: String): Self = StObject.set(x, "chat_group_id", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object typesListKeyPoliciesInputMod {
       __obj.asInstanceOf[ListKeyPoliciesInput]
     }
     
-    extension [Self <: ListKeyPoliciesInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListKeyPoliciesInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

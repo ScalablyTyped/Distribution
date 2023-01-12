@@ -15,7 +15,8 @@ object ListDistributionsByKeyGroupResult {
     __obj.asInstanceOf[ListDistributionsByKeyGroupResult]
   }
   
-  extension [Self <: ListDistributionsByKeyGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDistributionsByKeyGroupResult] (val x: Self) extends AnyVal {
     
     inline def setDistributionIdList(value: DistributionIdList): Self = StObject.set(x, "DistributionIdList", value.asInstanceOf[js.Any])
     

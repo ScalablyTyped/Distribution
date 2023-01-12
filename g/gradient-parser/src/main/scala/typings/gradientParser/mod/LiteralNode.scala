@@ -23,7 +23,8 @@ object LiteralNode {
     __obj.asInstanceOf[LiteralNode]
   }
   
-  extension [Self <: LiteralNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiteralNode] (val x: Self) extends AnyVal {
     
     inline def setLength(value: PxNode | EmNode | PercentNode): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

@@ -1160,7 +1160,8 @@ object sapUiCommonsRowRepeaterMod {
       __obj.asInstanceOf[RowRepeaterSettings]
     }
     
-    extension [Self <: RowRepeaterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowRepeaterSettings] (val x: Self) extends AnyVal {
       
       inline def setCurrentPage(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       

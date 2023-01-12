@@ -19,7 +19,8 @@ object ContourSeriesPoint {
     __obj.asInstanceOf[ContourSeriesPoint]
   }
   
-  extension [Self <: ContourSeriesPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContourSeriesPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

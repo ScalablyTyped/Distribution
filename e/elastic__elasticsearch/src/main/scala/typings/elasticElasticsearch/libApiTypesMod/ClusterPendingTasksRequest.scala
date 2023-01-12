@@ -19,7 +19,8 @@ object ClusterPendingTasksRequest {
     __obj.asInstanceOf[ClusterPendingTasksRequest]
   }
   
-  extension [Self <: ClusterPendingTasksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterPendingTasksRequest] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

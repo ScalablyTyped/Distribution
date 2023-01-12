@@ -17,7 +17,8 @@ object TooltipAnimation {
     __obj.asInstanceOf[TooltipAnimation]
   }
   
-  extension [Self <: TooltipAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipAnimation] (val x: Self) extends AnyVal {
     
     inline def setClose(value: TooltipAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

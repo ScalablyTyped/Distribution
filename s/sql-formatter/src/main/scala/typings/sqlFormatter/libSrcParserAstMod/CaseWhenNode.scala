@@ -34,7 +34,8 @@ object CaseWhenNode {
     __obj.asInstanceOf[CaseWhenNode]
   }
   
-  extension [Self <: CaseWhenNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaseWhenNode] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: js.Array[AstNode]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

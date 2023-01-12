@@ -31,7 +31,8 @@ object RequiredLoggerOptions {
     __obj.asInstanceOf[RequiredLoggerOptions]
   }
   
-  extension [Self <: RequiredLoggerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredLoggerOptions] (val x: Self) extends AnyVal {
     
     inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     

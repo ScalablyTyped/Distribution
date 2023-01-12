@@ -84,7 +84,8 @@ object WebControls {
       __obj.asInstanceOf[ControlMessage]
     }
     
-    extension [Self <: ControlMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlMessage] (val x: Self) extends AnyVal {
       
       inline def setGet_code(value: () => Double): Self = StObject.set(x, "get_code", js.Any.fromFunction0(value))
       

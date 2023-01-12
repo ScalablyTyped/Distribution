@@ -46,7 +46,8 @@ object R3DependencyMetadata {
     __obj.asInstanceOf[R3DependencyMetadata]
   }
   
-  extension [Self <: R3DependencyMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DependencyMetadata] (val x: Self) extends AnyVal {
     
     inline def setAttributeNameType(value: Expression): Self = StObject.set(x, "attributeNameType", value.asInstanceOf[js.Any])
     

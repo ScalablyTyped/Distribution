@@ -23,7 +23,8 @@ object FailedRemediationExceptionBatch {
     __obj.asInstanceOf[FailedRemediationExceptionBatch]
   }
   
-  extension [Self <: FailedRemediationExceptionBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedRemediationExceptionBatch] (val x: Self) extends AnyVal {
     
     inline def setFailedItems(value: RemediationExceptions): Self = StObject.set(x, "FailedItems", value.asInstanceOf[js.Any])
     

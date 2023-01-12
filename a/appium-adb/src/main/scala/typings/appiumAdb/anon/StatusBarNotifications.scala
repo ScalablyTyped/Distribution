@@ -16,7 +16,8 @@ object StatusBarNotifications {
     __obj.asInstanceOf[StatusBarNotifications]
   }
   
-  extension [Self <: StatusBarNotifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusBarNotifications] (val x: Self) extends AnyVal {
     
     inline def setStatusBarNotifications(value: js.Array[StatusBarNotification]): Self = StObject.set(x, "statusBarNotifications", value.asInstanceOf[js.Any])
     

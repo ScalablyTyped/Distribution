@@ -20,7 +20,8 @@ object JsonSqlTokenType {
     __obj.asInstanceOf[JsonSqlTokenType]
   }
   
-  extension [Self <: JsonSqlTokenType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonSqlTokenType] (val x: Self) extends AnyVal {
     
     inline def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object distTypesNameManagerMod {
       __obj.asInstanceOf[NameManager]
     }
     
-    extension [Self <: NameManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameManager] (val x: Self) extends AnyVal {
       
       inline def setClaimFreeName(value: String => String): Self = StObject.set(x, "claimFreeName", js.Any.fromFunction1(value))
       

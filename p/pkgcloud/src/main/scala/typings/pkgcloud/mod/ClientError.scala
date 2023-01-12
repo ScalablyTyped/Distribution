@@ -31,7 +31,8 @@ object ClientError {
     __obj.asInstanceOf[ClientError]
   }
   
-  extension [Self <: ClientError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientError] (val x: Self) extends AnyVal {
     
     inline def setFailCode(value: String): Self = StObject.set(x, "failCode", value.asInstanceOf[js.Any])
     

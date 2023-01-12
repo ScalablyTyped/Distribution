@@ -44,7 +44,8 @@ object contextVendorMod {
       __obj.asInstanceOf[ThemeColors]
     }
     
-    extension [Self <: ThemeColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeColors] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

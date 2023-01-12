@@ -34,7 +34,8 @@ object StepBackRequest {
     __obj.asInstanceOf[StepBackRequest]
   }
   
-  extension [Self <: StepBackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepBackRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: StepBackArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

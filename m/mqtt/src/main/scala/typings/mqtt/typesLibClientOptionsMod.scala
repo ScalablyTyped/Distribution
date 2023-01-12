@@ -129,7 +129,8 @@ object typesLibClientOptionsMod {
       __obj.asInstanceOf[IClientOptions]
     }
     
-    extension [Self <: IClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClientOptions] (val x: Self) extends AnyVal {
       
       inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
       
@@ -269,7 +270,8 @@ object typesLibClientOptionsMod {
       __obj.asInstanceOf[IClientPublishOptions]
     }
     
-    extension [Self <: IClientPublishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClientPublishOptions] (val x: Self) extends AnyVal {
       
       inline def setCbStorePut(value: () => Unit): Self = StObject.set(x, "cbStorePut", js.Any.fromFunction0(value))
       
@@ -312,7 +314,8 @@ object typesLibClientOptionsMod {
       __obj.asInstanceOf[IClientReconnectOptions]
     }
     
-    extension [Self <: IClientReconnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClientReconnectOptions] (val x: Self) extends AnyVal {
       
       inline def setIncomingStore(value: Store): Self = StObject.set(x, "incomingStore", value.asInstanceOf[js.Any])
       
@@ -358,7 +361,8 @@ object typesLibClientOptionsMod {
       __obj.asInstanceOf[IClientSubscribeOptions]
     }
     
-    extension [Self <: IClientSubscribeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClientSubscribeOptions] (val x: Self) extends AnyVal {
       
       inline def setNl(value: Boolean): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
       
@@ -413,7 +417,8 @@ object typesLibClientOptionsMod {
       __obj.asInstanceOf[ISecureClientOptions]
     }
     
-    extension [Self <: ISecureClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISecureClientOptions] (val x: Self) extends AnyVal {
       
       inline def setALPNProtocols(value: (js.Array[Buffer | String | js.typedarray.Uint8Array]) | Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
       

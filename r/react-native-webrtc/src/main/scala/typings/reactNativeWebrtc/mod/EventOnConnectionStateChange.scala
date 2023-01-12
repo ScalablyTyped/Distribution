@@ -16,7 +16,8 @@ object EventOnConnectionStateChange {
     __obj.asInstanceOf[EventOnConnectionStateChange]
   }
   
-  extension [Self <: EventOnConnectionStateChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventOnConnectionStateChange] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: IceConnectionState): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

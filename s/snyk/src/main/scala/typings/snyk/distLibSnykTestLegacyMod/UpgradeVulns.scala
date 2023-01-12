@@ -17,7 +17,8 @@ object UpgradeVulns {
     __obj.asInstanceOf[UpgradeVulns]
   }
   
-  extension [Self <: UpgradeVulns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeVulns] (val x: Self) extends AnyVal {
     
     inline def setVulns(value: js.Array[String]): Self = StObject.set(x, "vulns", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object _empty {
     __obj.asInstanceOf[_empty[H]]
   }
   
-  extension [Self <: _empty[?], H /* <: Record[String, Any] */](x: Self & _empty[H]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _empty[?], H /* <: Record[String, Any] */] (val x: Self & _empty[H]) extends AnyVal {
     
     inline def set$(value: H): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

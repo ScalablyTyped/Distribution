@@ -23,7 +23,8 @@ object ResponseSpecification {
     __obj.asInstanceOf[ResponseSpecification]
   }
   
-  extension [Self <: ResponseSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseSpecification] (val x: Self) extends AnyVal {
     
     inline def setAllowInterrupt(value: BoxedBoolean): Self = StObject.set(x, "allowInterrupt", value.asInstanceOf[js.Any])
     

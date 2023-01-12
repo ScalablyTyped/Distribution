@@ -46,7 +46,8 @@ object KmlLineStyle {
     __obj.asInstanceOf[KmlLineStyle]
   }
   
-  extension [Self <: KmlLineStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlLineStyle] (val x: Self) extends AnyVal {
     
     inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     

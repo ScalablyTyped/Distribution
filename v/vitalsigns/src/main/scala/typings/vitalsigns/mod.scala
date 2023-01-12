@@ -158,7 +158,8 @@ object mod {
         __obj.asInstanceOf[Constraint]
       }
       
-      extension [Self <: Constraint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Constraint] (val x: Self) extends AnyVal {
         
         inline def setComparator(value: String): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
         
@@ -192,7 +193,8 @@ object mod {
         __obj.asInstanceOf[ConstraintWrapper]
       }
       
-      extension [Self <: ConstraintWrapper](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConstraintWrapper] (val x: Self) extends AnyVal {
         
         inline def setEquals_(value: /* num */ Double => ConstraintWrapper): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
         
@@ -227,7 +229,8 @@ object mod {
         __obj.asInstanceOf[Monitor]
       }
       
-      extension [Self <: Monitor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Monitor] (val x: Self) extends AnyVal {
         
         inline def setConnections(value: Any): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       }
@@ -254,7 +257,8 @@ object mod {
         __obj.asInstanceOf[MonitorField]
       }
       
-      extension [Self <: MonitorField](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MonitorField] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -293,7 +297,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAutoCheck(value: Double | Boolean): Self = StObject.set(x, "autoCheck", value.asInstanceOf[js.Any])
         
@@ -334,7 +339,8 @@ object mod {
         __obj.asInstanceOf[ReportOptions]
       }
       
-      extension [Self <: ReportOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportOptions] (val x: Self) extends AnyVal {
         
         inline def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
         

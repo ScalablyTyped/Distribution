@@ -18,7 +18,8 @@ object GetSchemaVersionsDiffResponse {
     __obj.asInstanceOf[GetSchemaVersionsDiffResponse]
   }
   
-  extension [Self <: GetSchemaVersionsDiffResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSchemaVersionsDiffResponse] (val x: Self) extends AnyVal {
     
     inline def setDiff(value: SchemaDefinitionDiff): Self = StObject.set(x, "Diff", value.asInstanceOf[js.Any])
     

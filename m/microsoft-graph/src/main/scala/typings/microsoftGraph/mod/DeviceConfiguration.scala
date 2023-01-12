@@ -48,7 +48,8 @@ object DeviceConfiguration {
     __obj.asInstanceOf[DeviceConfiguration]
   }
   
-  extension [Self <: DeviceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAssignments(value: NullableOption[js.Array[DeviceConfigurationAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     

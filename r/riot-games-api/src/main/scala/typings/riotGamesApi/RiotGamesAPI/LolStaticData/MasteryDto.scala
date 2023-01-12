@@ -38,7 +38,8 @@ object MasteryDto {
     __obj.asInstanceOf[MasteryDto]
   }
   
-  extension [Self <: MasteryDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MasteryDto] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

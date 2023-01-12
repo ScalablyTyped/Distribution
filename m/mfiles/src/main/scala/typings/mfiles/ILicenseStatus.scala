@@ -41,7 +41,8 @@ object ILicenseStatus {
     __obj.asInstanceOf[ILicenseStatus]
   }
   
-  extension [Self <: ILicenseStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILicenseStatus] (val x: Self) extends AnyVal {
     
     inline def setClearLicenseCode(value: () => Unit): Self = StObject.set(x, "ClearLicenseCode", js.Any.fromFunction0(value))
     

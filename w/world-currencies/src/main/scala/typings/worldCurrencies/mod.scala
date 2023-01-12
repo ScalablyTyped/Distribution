@@ -26,7 +26,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CashValues]
     }
     
-    extension [Self <: CashValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CashValues] (val x: Self) extends AnyVal {
       
       inline def setFrequent(value: js.Array[String]): Self = StObject.set(x, "frequent", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Currency]
     }
     
-    extension [Self <: Currency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
       
       inline def setBanknotes(value: CashValues): Self = StObject.set(x, "banknotes", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IsoData]
     }
     
-    extension [Self <: IsoData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsoData] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MinorUnit]
     }
     
-    extension [Self <: MinorUnit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinorUnit] (val x: Self) extends AnyVal {
       
       inline def setMajorValue(value: Double): Self = StObject.set(x, "majorValue", value.asInstanceOf[js.Any])
     }
@@ -124,7 +128,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Unit]
     }
     
-    extension [Self <: Unit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

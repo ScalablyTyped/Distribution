@@ -24,7 +24,8 @@ object IWebXRAnchorSystemOptions {
     __obj.asInstanceOf[IWebXRAnchorSystemOptions]
   }
   
-  extension [Self <: IWebXRAnchorSystemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRAnchorSystemOptions] (val x: Self) extends AnyVal {
     
     inline def setDoNotRemoveAnchorsOnSessionEnded(value: Boolean): Self = StObject.set(x, "doNotRemoveAnchorsOnSessionEnded", value.asInstanceOf[js.Any])
     

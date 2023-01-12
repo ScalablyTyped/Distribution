@@ -16,7 +16,8 @@ object SourceScoringConfig {
     __obj.asInstanceOf[SourceScoringConfig]
   }
   
-  extension [Self <: SourceScoringConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceScoringConfig] (val x: Self) extends AnyVal {
     
     inline def setSourceImportance(value: String): Self = StObject.set(x, "sourceImportance", value.asInstanceOf[js.Any])
     

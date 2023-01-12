@@ -37,7 +37,8 @@ object EntityUserLinks {
     __obj.asInstanceOf[EntityUserLinks]
   }
   
-  extension [Self <: EntityUserLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityUserLinks] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[EntityUserLink]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

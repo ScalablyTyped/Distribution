@@ -17,7 +17,8 @@ object BatchWriteRowResult {
     __obj.asInstanceOf[BatchWriteRowResult]
   }
   
-  extension [Self <: BatchWriteRowResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchWriteRowResult] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     

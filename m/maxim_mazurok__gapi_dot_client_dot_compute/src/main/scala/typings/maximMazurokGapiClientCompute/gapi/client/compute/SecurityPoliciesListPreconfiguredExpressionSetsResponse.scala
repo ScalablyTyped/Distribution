@@ -15,7 +15,8 @@ object SecurityPoliciesListPreconfiguredExpressionSetsResponse {
     __obj.asInstanceOf[SecurityPoliciesListPreconfiguredExpressionSetsResponse]
   }
   
-  extension [Self <: SecurityPoliciesListPreconfiguredExpressionSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPoliciesListPreconfiguredExpressionSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setPreconfiguredExpressionSets(value: SecurityPoliciesWafConfig): Self = StObject.set(x, "preconfiguredExpressionSets", value.asInstanceOf[js.Any])
     

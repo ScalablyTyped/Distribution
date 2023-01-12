@@ -36,7 +36,8 @@ object MountHookProps {
     __obj.asInstanceOf[MountHookProps[ContentArg]]
   }
   
-  extension [Self <: MountHookProps[?], ContentArg](x: Self & MountHookProps[ContentArg]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MountHookProps[?], ContentArg] (val x: Self & MountHookProps[ContentArg]) extends AnyVal {
     
     inline def setChildren(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ref<any> */ Any => Any

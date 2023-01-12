@@ -31,7 +31,8 @@ object PartialnameSHA256PBKDF2en {
     __obj.asInstanceOf[PartialnameSHA256PBKDF2en]
   }
   
-  extension [Self <: PartialnameSHA256PBKDF2en](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialnameSHA256PBKDF2en] (val x: Self) extends AnyVal {
     
     inline def setEncode(value: base64 | base32 | base16): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     

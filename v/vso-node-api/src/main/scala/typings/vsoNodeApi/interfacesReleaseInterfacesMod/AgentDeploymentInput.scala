@@ -32,7 +32,8 @@ object AgentDeploymentInput {
     __obj.asInstanceOf[AgentDeploymentInput]
   }
   
-  extension [Self <: AgentDeploymentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentDeploymentInput] (val x: Self) extends AnyVal {
     
     inline def setImageId(value: Double): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     

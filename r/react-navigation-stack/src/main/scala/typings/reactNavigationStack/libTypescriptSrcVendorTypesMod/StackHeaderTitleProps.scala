@@ -42,7 +42,8 @@ object StackHeaderTitleProps {
     __obj.asInstanceOf[StackHeaderTitleProps]
   }
   
-  extension [Self <: StackHeaderTitleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackHeaderTitleProps] (val x: Self) extends AnyVal {
     
     inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
     

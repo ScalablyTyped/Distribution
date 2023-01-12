@@ -18,7 +18,8 @@ object SketchMSImageCollection {
     __obj.asInstanceOf[SketchMSImageCollection]
   }
   
-  extension [Self <: SketchMSImageCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSImageCollection] (val x: Self) extends AnyVal {
     
     inline def setImages(value: js.Array[Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     

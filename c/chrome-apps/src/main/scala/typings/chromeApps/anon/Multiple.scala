@@ -18,7 +18,8 @@ object Multiple {
     __obj.asInstanceOf[Multiple]
   }
   
-  extension [Self <: Multiple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Multiple] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[DeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

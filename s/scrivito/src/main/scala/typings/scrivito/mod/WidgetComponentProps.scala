@@ -21,7 +21,8 @@ object WidgetComponentProps {
     __obj.asInstanceOf[WidgetComponentProps]
   }
   
-  extension [Self <: WidgetComponentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetComponentProps] (val x: Self) extends AnyVal {
     
     inline def setWidget(value: Widget): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
   }

@@ -681,7 +681,8 @@ object esComponentsSiderMenuBaseMenuMod {
       __obj.asInstanceOf[BaseMenuProps]
     }
     
-    extension [Self <: BaseMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

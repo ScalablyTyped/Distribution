@@ -28,7 +28,8 @@ object UpdateWorkspaceAuthenticationRequest {
     __obj.asInstanceOf[UpdateWorkspaceAuthenticationRequest]
   }
   
-  extension [Self <: UpdateWorkspaceAuthenticationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWorkspaceAuthenticationRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationProviders(value: AuthenticationProviders): Self = StObject.set(x, "authenticationProviders", value.asInstanceOf[js.Any])
     

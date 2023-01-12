@@ -68,7 +68,8 @@ object XTabControllerModel {
     __obj.asInstanceOf[XTabControllerModel]
   }
   
-  extension [Self <: XTabControllerModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTabControllerModel] (val x: Self) extends AnyVal {
     
     inline def setControlModels(value: SafeArray[XControlModel]): Self = StObject.set(x, "ControlModels", value.asInstanceOf[js.Any])
     

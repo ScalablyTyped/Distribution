@@ -18,7 +18,8 @@ object TrustStoreSummary {
     __obj.asInstanceOf[TrustStoreSummary]
   }
   
-  extension [Self <: TrustStoreSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustStoreSummary] (val x: Self) extends AnyVal {
     
     inline def setTrustStoreArn(value: ARN): Self = StObject.set(x, "trustStoreArn", value.asInstanceOf[js.Any])
     

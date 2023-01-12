@@ -27,7 +27,8 @@ object middlewareDevtoolsMod {
       __obj.asInstanceOf[Action[T]]
     }
     
-    extension [Self <: Action[?], T](x: Self & Action[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -48,7 +49,8 @@ object middlewareDevtoolsMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object middlewareDevtoolsMod {
       __obj.asInstanceOf[DevtoolsOptions]
     }
     
-    extension [Self <: DevtoolsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DevtoolsOptions] (val x: Self) extends AnyVal {
       
       inline def setAnonymousActionType(value: String): Self = StObject.set(x, "anonymousActionType", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object middlewareDevtoolsMod {
       __obj.asInstanceOf[EnhancerOptions]
     }
     
-    extension [Self <: EnhancerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnhancerOptions] (val x: Self) extends AnyVal {
       
       inline def setActionCreators(
         value: (js.Array[ActionCreator[Any, js.Array[Any]]]) | (StringDictionary[ActionCreator[Any, js.Array[Any]]])
@@ -295,7 +299,8 @@ object middlewareDevtoolsMod {
         __obj.asInstanceOf[StoreMutators[S, A]]
       }
       
-      extension [Self <: StoreMutators[?, ?], S, A](x: Self & (StoreMutators[S, A])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StoreMutators[?, ?], S, A] (val x: Self & (StoreMutators[S, A])) extends AnyVal {
         
         inline def setZustandSlashdevtools(value: WithDevtools[S]): Self = StObject.set(x, "zustand/devtools", value.asInstanceOf[js.Any])
       }

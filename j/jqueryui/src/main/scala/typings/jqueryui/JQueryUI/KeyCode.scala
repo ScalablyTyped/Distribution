@@ -80,7 +80,8 @@ object KeyCode {
     __obj.asInstanceOf[KeyCode]
   }
   
-  extension [Self <: KeyCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyCode] (val x: Self) extends AnyVal {
     
     inline def setBACKSPACE(value: Double): Self = StObject.set(x, "BACKSPACE", value.asInstanceOf[js.Any])
     

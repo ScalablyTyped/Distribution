@@ -48,7 +48,8 @@ object libCollapseMod {
       __obj.asInstanceOf[CollapseProps]
     }
     
-    extension [Self <: CollapseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

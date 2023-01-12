@@ -19,7 +19,8 @@ object EosActionBuyRam {
     __obj.asInstanceOf[EosActionBuyRam]
   }
   
-  extension [Self <: EosActionBuyRam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosActionBuyRam] (val x: Self) extends AnyVal {
     
     inline def setPayer(value: String): Self = StObject.set(x, "payer", value.asInstanceOf[js.Any])
     

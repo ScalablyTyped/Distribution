@@ -28,7 +28,8 @@ object DeviceExchangeAccessStateSummary {
     __obj.asInstanceOf[DeviceExchangeAccessStateSummary]
   }
   
-  extension [Self <: DeviceExchangeAccessStateSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceExchangeAccessStateSummary] (val x: Self) extends AnyVal {
     
     inline def setAllowedDeviceCount(value: Double): Self = StObject.set(x, "allowedDeviceCount", value.asInstanceOf[js.Any])
     

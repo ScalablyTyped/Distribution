@@ -22,7 +22,8 @@ object PublicKeyCredentialParameters {
     __obj.asInstanceOf[PublicKeyCredentialParameters]
   }
   
-  extension [Self <: PublicKeyCredentialParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeyCredentialParameters] (val x: Self) extends AnyVal {
     
     inline def setAlg(value: Double): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     

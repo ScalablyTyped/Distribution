@@ -18,7 +18,8 @@ object TAGS {
     __obj.asInstanceOf[TAGS]
   }
   
-  extension [Self <: TAGS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TAGS] (val x: Self) extends AnyVal {
     
     inline def setFIELDS(value: PropertyName | js.Array[PropertyName]): Self = StObject.set(x, "FIELDS", value.asInstanceOf[js.Any])
     

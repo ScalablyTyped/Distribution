@@ -17,7 +17,8 @@ object INDProximityDetectionCompletedEventArgs {
     __obj.asInstanceOf[INDProximityDetectionCompletedEventArgs]
   }
   
-  extension [Self <: INDProximityDetectionCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDProximityDetectionCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setProximityDetectionRetryCount(value: Double): Self = StObject.set(x, "proximityDetectionRetryCount", value.asInstanceOf[js.Any])
   }

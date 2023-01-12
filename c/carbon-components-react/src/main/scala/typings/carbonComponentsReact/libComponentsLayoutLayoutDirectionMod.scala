@@ -611,7 +611,8 @@ object libComponentsLayoutLayoutDirectionMod {
       __obj.asInstanceOf[LayoutDirectionBaseProps]
     }
     
-    extension [Self <: LayoutDirectionBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutDirectionBaseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -932,7 +933,8 @@ object libComponentsLayoutLayoutDirectionMod {
       __obj.asInstanceOf[LayoutDirectionDefaultProps]
     }
     
-    extension [Self <: LayoutDirectionDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutDirectionDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

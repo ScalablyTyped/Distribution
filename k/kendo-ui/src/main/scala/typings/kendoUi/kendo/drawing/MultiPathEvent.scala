@@ -19,7 +19,8 @@ object MultiPathEvent {
     __obj.asInstanceOf[MultiPathEvent]
   }
   
-  extension [Self <: MultiPathEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiPathEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

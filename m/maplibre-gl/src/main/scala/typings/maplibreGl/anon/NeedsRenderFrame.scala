@@ -24,7 +24,8 @@ object NeedsRenderFrame {
     __obj.asInstanceOf[NeedsRenderFrame]
   }
   
-  extension [Self <: NeedsRenderFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NeedsRenderFrame] (val x: Self) extends AnyVal {
     
     inline def setAround(value: ^): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
     

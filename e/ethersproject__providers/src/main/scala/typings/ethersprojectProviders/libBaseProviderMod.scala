@@ -262,7 +262,8 @@ object libBaseProviderMod {
       __obj.asInstanceOf[Avatar]
     }
     
-    extension [Self <: Avatar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Avatar] (val x: Self) extends AnyVal {
       
       inline def setLinkage(value: js.Array[Content]): Self = StObject.set(x, "linkage", value.asInstanceOf[js.Any])
       
@@ -291,7 +292,8 @@ object libBaseProviderMod {
       __obj.asInstanceOf[EnsProvider]
     }
     
-    extension [Self <: EnsProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnsProvider] (val x: Self) extends AnyVal {
       
       inline def setGetResolver(value: String => js.Promise[Null | EnsResolver]): Self = StObject.set(x, "getResolver", js.Any.fromFunction1(value))
       

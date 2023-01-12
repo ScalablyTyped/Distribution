@@ -18,7 +18,8 @@ object PublicDnsNamespaceProperties {
     __obj.asInstanceOf[PublicDnsNamespaceProperties]
   }
   
-  extension [Self <: PublicDnsNamespaceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicDnsNamespaceProperties] (val x: Self) extends AnyVal {
     
     inline def setDnsProperties(value: PublicDnsPropertiesMutable): Self = StObject.set(x, "DnsProperties", value.asInstanceOf[js.Any])
   }

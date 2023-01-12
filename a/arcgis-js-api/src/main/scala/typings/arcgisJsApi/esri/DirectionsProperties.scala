@@ -135,7 +135,8 @@ object DirectionsProperties {
     __obj.asInstanceOf[DirectionsProperties]
   }
   
-  extension [Self <: DirectionsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsProperties] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

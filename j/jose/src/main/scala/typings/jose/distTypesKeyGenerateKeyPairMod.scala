@@ -42,7 +42,8 @@ object distTypesKeyGenerateKeyPairMod {
       __obj.asInstanceOf[GenerateKeyPairOptions]
     }
     
-    extension [Self <: GenerateKeyPairOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateKeyPairOptions] (val x: Self) extends AnyVal {
       
       inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object distTypesKeyGenerateKeyPairMod {
       __obj.asInstanceOf[GenerateKeyPairResult]
     }
     
-    extension [Self <: GenerateKeyPairResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateKeyPairResult] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: KeyLike): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       

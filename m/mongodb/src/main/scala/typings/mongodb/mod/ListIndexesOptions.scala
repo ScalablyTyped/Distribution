@@ -18,7 +18,8 @@ object ListIndexesOptions {
     __obj.asInstanceOf[ListIndexesOptions]
   }
   
-  extension [Self <: ListIndexesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIndexesOptions] (val x: Self) extends AnyVal {
     
     inline def setBatchSize(value: scala.Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     

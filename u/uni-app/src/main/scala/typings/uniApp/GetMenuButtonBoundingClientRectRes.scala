@@ -43,7 +43,8 @@ object GetMenuButtonBoundingClientRectRes {
     __obj.asInstanceOf[GetMenuButtonBoundingClientRectRes]
   }
   
-  extension [Self <: GetMenuButtonBoundingClientRectRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMenuButtonBoundingClientRectRes] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

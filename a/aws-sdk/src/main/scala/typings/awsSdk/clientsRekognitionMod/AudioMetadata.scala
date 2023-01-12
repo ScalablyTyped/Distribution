@@ -33,7 +33,8 @@ object AudioMetadata {
     __obj.asInstanceOf[AudioMetadata]
   }
   
-  extension [Self <: AudioMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioMetadata] (val x: Self) extends AnyVal {
     
     inline def setCodec(value: String): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     

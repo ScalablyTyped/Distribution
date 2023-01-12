@@ -23,7 +23,8 @@ object GooglePrivacyDlpV2Key {
     __obj.asInstanceOf[GooglePrivacyDlpV2Key]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Key](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Key] (val x: Self) extends AnyVal {
     
     inline def setPartitionId(value: GooglePrivacyDlpV2PartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
     

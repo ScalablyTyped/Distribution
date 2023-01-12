@@ -18,7 +18,8 @@ object LifecycleEventConfiguration {
     __obj.asInstanceOf[LifecycleEventConfiguration]
   }
   
-  extension [Self <: LifecycleEventConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecycleEventConfiguration] (val x: Self) extends AnyVal {
     
     inline def setShutdown(value: ShutdownEventConfiguration): Self = StObject.set(x, "Shutdown", value.asInstanceOf[js.Any])
     

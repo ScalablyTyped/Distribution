@@ -22,7 +22,8 @@ object PartialClassNameMapTimeli {
     __obj.asInstanceOf[PartialClassNameMapTimeli]
   }
   
-  extension [Self <: PartialClassNameMapTimeli](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapTimeli] (val x: Self) extends AnyVal {
     
     inline def setAlignAlternate(value: String): Self = StObject.set(x, "alignAlternate", value.asInstanceOf[js.Any])
     

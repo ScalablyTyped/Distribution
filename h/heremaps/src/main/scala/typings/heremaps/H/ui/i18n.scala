@@ -52,7 +52,8 @@ object i18n {
       __obj.asInstanceOf[Localization]
     }
     
-    extension [Self <: Localization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Localization] (val x: Self) extends AnyVal {
       
       inline def setGetKeys(value: () => js.Array[String]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
       

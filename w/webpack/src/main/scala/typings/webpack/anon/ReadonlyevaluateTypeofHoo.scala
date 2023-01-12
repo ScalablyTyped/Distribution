@@ -548,7 +548,8 @@ object ReadonlyevaluateTypeofHoo {
     __obj.asInstanceOf[ReadonlyevaluateTypeofHoo]
   }
   
-  extension [Self <: ReadonlyevaluateTypeofHoo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyevaluateTypeofHoo] (val x: Self) extends AnyVal {
     
     inline def setAssign(
       value: HookMap[

@@ -87,7 +87,8 @@ object ICalendar {
     __obj.asInstanceOf[ICalendar]
   }
   
-  extension [Self <: ICalendar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICalendar] (val x: Self) extends AnyVal {
     
     inline def setCreated_time(value: String): Self = StObject.set(x, "created_time", value.asInstanceOf[js.Any])
     

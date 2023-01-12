@@ -40,7 +40,8 @@ object GetTextDetectionResponse {
     __obj.asInstanceOf[GetTextDetectionResponse]
   }
   
-  extension [Self <: GetTextDetectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTextDetectionResponse] (val x: Self) extends AnyVal {
     
     inline def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     

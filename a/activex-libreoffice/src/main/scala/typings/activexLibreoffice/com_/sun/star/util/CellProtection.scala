@@ -26,7 +26,8 @@ object CellProtection {
     __obj.asInstanceOf[CellProtection]
   }
   
-  extension [Self <: CellProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellProtection] (val x: Self) extends AnyVal {
     
     inline def setIsFormulaHidden(value: Boolean): Self = StObject.set(x, "IsFormulaHidden", value.asInstanceOf[js.Any])
     

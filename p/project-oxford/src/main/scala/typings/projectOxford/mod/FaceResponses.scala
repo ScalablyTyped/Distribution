@@ -23,7 +23,8 @@ object FaceResponses {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object FaceResponses {
       __obj.asInstanceOf[Detect]
     }
     
-    extension [Self <: Detect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Detect] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object FaceResponses {
       __obj.asInstanceOf[FaceLandmarks]
     }
     
-    extension [Self <: FaceLandmarks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceLandmarks] (val x: Self) extends AnyVal {
       
       inline def setEyeLeftBottom(value: point): Self = StObject.set(x, "eyeLeftBottom", value.asInstanceOf[js.Any])
       
@@ -228,7 +231,8 @@ object FaceResponses {
       __obj.asInstanceOf[FaceRectangle]
     }
     
-    extension [Self <: FaceRectangle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceRectangle] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -253,7 +257,8 @@ object FaceResponses {
       __obj.asInstanceOf[Grouping]
     }
     
-    extension [Self <: Grouping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grouping] (val x: Self) extends AnyVal {
       
       inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
@@ -278,7 +283,8 @@ object FaceResponses {
       __obj.asInstanceOf[Identify]
     }
     
-    extension [Self <: Identify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identify] (val x: Self) extends AnyVal {
       
       inline def setCandidates(value: js.Array[Confidence]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
       
@@ -299,7 +305,8 @@ object FaceResponses {
       __obj.asInstanceOf[Similar]
     }
     
-    extension [Self <: Similar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Similar] (val x: Self) extends AnyVal {
       
       inline def setFaceIds(value: js.Array[String]): Self = StObject.set(x, "faceIds", value.asInstanceOf[js.Any])
       
@@ -320,7 +327,8 @@ object FaceResponses {
       __obj.asInstanceOf[Verify]
     }
     
-    extension [Self <: Verify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Verify] (val x: Self) extends AnyVal {
       
       inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
@@ -341,7 +349,8 @@ object FaceResponses {
       __obj.asInstanceOf[point]
     }
     
-    extension [Self <: point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

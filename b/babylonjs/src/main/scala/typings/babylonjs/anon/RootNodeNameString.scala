@@ -15,7 +15,8 @@ object RootNodeNameString {
     __obj.asInstanceOf[RootNodeNameString]
   }
   
-  extension [Self <: RootNodeNameString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootNodeNameString] (val x: Self) extends AnyVal {
     
     inline def setRootNodeName(value: String): Self = StObject.set(x, "rootNodeName", value.asInstanceOf[js.Any])
   }

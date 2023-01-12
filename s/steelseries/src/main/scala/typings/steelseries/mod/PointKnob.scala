@@ -25,7 +25,8 @@ object PointKnob {
     __obj.asInstanceOf[PointKnob]
   }
   
-  extension [Self <: PointKnob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointKnob] (val x: Self) extends AnyVal {
     
     inline def setKnobStyle(value: KnobStyle): Self = StObject.set(x, "knobStyle", value.asInstanceOf[js.Any])
     

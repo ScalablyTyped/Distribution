@@ -28,7 +28,8 @@ object SyncConfig {
     __obj.asInstanceOf[SyncConfig]
   }
   
-  extension [Self <: SyncConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncConfig] (val x: Self) extends AnyVal {
     
     inline def setConflictDetection(value: ConflictDetectionType): Self = StObject.set(x, "conflictDetection", value.asInstanceOf[js.Any])
     

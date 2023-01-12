@@ -27,7 +27,8 @@ object DnsChallenge {
     __obj.asInstanceOf[DnsChallenge]
   }
   
-  extension [Self <: DnsChallenge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsChallenge] (val x: Self) extends AnyVal {
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     

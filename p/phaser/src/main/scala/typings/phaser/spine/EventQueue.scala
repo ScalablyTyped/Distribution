@@ -47,7 +47,8 @@ object EventQueue {
     __obj.asInstanceOf[EventQueue]
   }
   
-  extension [Self <: EventQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventQueue] (val x: Self) extends AnyVal {
     
     inline def setAnimState(value: AnimationState): Self = StObject.set(x, "animState", value.asInstanceOf[js.Any])
     

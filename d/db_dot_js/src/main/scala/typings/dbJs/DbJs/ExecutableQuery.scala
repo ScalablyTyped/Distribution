@@ -16,7 +16,8 @@ object ExecutableQuery {
     __obj.asInstanceOf[ExecutableQuery[T]]
   }
   
-  extension [Self <: ExecutableQuery[?], T](x: Self & ExecutableQuery[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutableQuery[?], T] (val x: Self & ExecutableQuery[T]) extends AnyVal {
     
     inline def setExecute(value: () => js.Promise[js.Array[T]]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

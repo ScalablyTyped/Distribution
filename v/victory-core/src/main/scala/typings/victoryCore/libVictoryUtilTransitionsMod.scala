@@ -31,7 +31,8 @@ object libVictoryUtilTransitionsMod {
       __obj.asInstanceOf[TransitionProps]
     }
     
-    extension [Self <: TransitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: AnimatePropTypeInterface): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

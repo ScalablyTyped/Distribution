@@ -20,7 +20,8 @@ object ReportEntry {
     __obj.asInstanceOf[ReportEntry]
   }
   
-  extension [Self <: ReportEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportEntry] (val x: Self) extends AnyVal {
     
     inline def setKey(value: ReportKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

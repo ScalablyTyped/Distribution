@@ -31,7 +31,8 @@ object ASPxClientFloatingActionButtonCollapseReason {
     __obj.asInstanceOf[ASPxClientFloatingActionButtonCollapseReason]
   }
   
-  extension [Self <: ASPxClientFloatingActionButtonCollapseReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFloatingActionButtonCollapseReason] (val x: Self) extends AnyVal {
     
     inline def setAPI(value: String): Self = StObject.set(x, "API", value.asInstanceOf[js.Any])
     

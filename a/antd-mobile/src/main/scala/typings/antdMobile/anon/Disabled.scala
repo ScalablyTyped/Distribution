@@ -27,7 +27,8 @@ object Disabled {
     __obj.asInstanceOf[Disabled]
   }
   
-  extension [Self <: Disabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
     
     inline def setCheck(value: RadioValue => Unit): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     

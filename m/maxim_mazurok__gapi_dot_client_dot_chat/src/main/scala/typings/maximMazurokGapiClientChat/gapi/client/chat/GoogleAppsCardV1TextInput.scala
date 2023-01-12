@@ -40,7 +40,8 @@ object GoogleAppsCardV1TextInput {
     __obj.asInstanceOf[GoogleAppsCardV1TextInput]
   }
   
-  extension [Self <: GoogleAppsCardV1TextInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1TextInput] (val x: Self) extends AnyVal {
     
     inline def setAutoCompleteAction(value: GoogleAppsCardV1Action): Self = StObject.set(x, "autoCompleteAction", value.asInstanceOf[js.Any])
     

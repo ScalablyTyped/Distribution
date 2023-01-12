@@ -112,7 +112,8 @@ object distEvmEvmMod {
       __obj.asInstanceOf[EVMResult]
     }
     
-    extension [Self <: EVMResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EVMResult] (val x: Self) extends AnyVal {
       
       inline def setCreatedAddress(value: Buffer): Self = StObject.set(x, "createdAddress", value.asInstanceOf[js.Any])
       
@@ -170,7 +171,8 @@ object distEvmEvmMod {
       __obj.asInstanceOf[ExecResult]
     }
     
-    extension [Self <: ExecResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecResult] (val x: Self) extends AnyVal {
       
       inline def setExceptionError(value: VmError): Self = StObject.set(x, "exceptionError", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object distEvmEvmMod {
       __obj.asInstanceOf[NewContractEvent]
     }
     
-    extension [Self <: NewContractEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewContractEvent] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Buffer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object JsxMetaElementProps {
     __obj.asInstanceOf[JsxMetaElementProps]
   }
   
-  extension [Self <: JsxMetaElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxMetaElementProps] (val x: Self) extends AnyVal {
     
     inline def setCharSet(value: `utf-8`): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object PostResponses201Content40 {
     __obj.asInstanceOf[PostResponses201Content40]
   }
   
-  extension [Self <: PostResponses201Content40](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostResponses201Content40] (val x: Self) extends AnyVal {
     
     inline def setPost(value: Responses201Content40): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }

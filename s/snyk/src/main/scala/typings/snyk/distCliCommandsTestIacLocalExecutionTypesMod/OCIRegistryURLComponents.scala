@@ -19,7 +19,8 @@ object OCIRegistryURLComponents {
     __obj.asInstanceOf[OCIRegistryURLComponents]
   }
   
-  extension [Self <: OCIRegistryURLComponents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OCIRegistryURLComponents] (val x: Self) extends AnyVal {
     
     inline def setRegistryBase(value: String): Self = StObject.set(x, "registryBase", value.asInstanceOf[js.Any])
     

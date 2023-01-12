@@ -18,7 +18,8 @@ object CoordinatorMetadata {
     __obj.asInstanceOf[CoordinatorMetadata]
   }
   
-  extension [Self <: CoordinatorMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordinatorMetadata] (val x: Self) extends AnyVal {
     
     inline def setCoordinator(value: Host): Self = StObject.set(x, "coordinator", value.asInstanceOf[js.Any])
     

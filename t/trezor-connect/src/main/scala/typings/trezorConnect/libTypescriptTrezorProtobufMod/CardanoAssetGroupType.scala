@@ -17,7 +17,8 @@ object CardanoAssetGroupType {
     __obj.asInstanceOf[CardanoAssetGroupType]
   }
   
-  extension [Self <: CardanoAssetGroupType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoAssetGroupType] (val x: Self) extends AnyVal {
     
     inline def setPolicy_id(value: String): Self = StObject.set(x, "policy_id", value.asInstanceOf[js.Any])
     

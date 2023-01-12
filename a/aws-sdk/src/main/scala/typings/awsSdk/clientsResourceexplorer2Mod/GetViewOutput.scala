@@ -23,7 +23,8 @@ object GetViewOutput {
     __obj.asInstanceOf[GetViewOutput]
   }
   
-  extension [Self <: GetViewOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetViewOutput] (val x: Self) extends AnyVal {
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

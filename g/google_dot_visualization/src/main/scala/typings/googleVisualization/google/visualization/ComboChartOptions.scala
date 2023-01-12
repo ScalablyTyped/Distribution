@@ -97,7 +97,8 @@ object ComboChartOptions {
     __obj.asInstanceOf[ComboChartOptions]
   }
   
-  extension [Self <: ComboChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComboChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAggregationTarget(value: String): Self = StObject.set(x, "aggregationTarget", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object UpdateExtensionRequest {
     __obj.asInstanceOf[UpdateExtensionRequest]
   }
   
-  extension [Self <: UpdateExtensionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateExtensionRequest] (val x: Self) extends AnyVal {
     
     inline def setActions(value: ActionsMap): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

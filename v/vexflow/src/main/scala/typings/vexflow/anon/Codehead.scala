@@ -59,7 +59,8 @@ object Codehead {
     __obj.asInstanceOf[Codehead]
   }
   
-  extension [Self <: Codehead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Codehead] (val x: Self) extends AnyVal {
     
     inline def setCode_head(value: String): Self = StObject.set(x, "code_head", value.asInstanceOf[js.Any])
     

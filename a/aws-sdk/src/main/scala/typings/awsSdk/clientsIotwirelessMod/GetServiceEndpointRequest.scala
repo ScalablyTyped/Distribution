@@ -18,7 +18,8 @@ object GetServiceEndpointRequest {
     __obj.asInstanceOf[GetServiceEndpointRequest]
   }
   
-  extension [Self <: GetServiceEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setServiceType(value: WirelessGatewayServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
     

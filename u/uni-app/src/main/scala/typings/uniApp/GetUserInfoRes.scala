@@ -43,7 +43,8 @@ object GetUserInfoRes {
     __obj.asInstanceOf[GetUserInfoRes]
   }
   
-  extension [Self <: GetUserInfoRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserInfoRes] (val x: Self) extends AnyVal {
     
     inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     

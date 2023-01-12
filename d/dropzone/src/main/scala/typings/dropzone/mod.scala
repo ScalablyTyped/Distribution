@@ -694,7 +694,8 @@ object mod {
       __obj.asInstanceOf[DropzoneDictFileSizeUnits]
     }
     
-    extension [Self <: DropzoneDictFileSizeUnits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropzoneDictFileSizeUnits] (val x: Self) extends AnyVal {
       
       inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -759,7 +760,8 @@ object mod {
       __obj.asInstanceOf[DropzoneFileUpload]
     }
     
-    extension [Self <: DropzoneFileUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropzoneFileUpload] (val x: Self) extends AnyVal {
       
       inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
       
@@ -788,7 +790,8 @@ object mod {
       __obj.asInstanceOf[DropzoneListener]
     }
     
-    extension [Self <: DropzoneListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropzoneListener] (val x: Self) extends AnyVal {
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -811,7 +814,8 @@ object mod {
       __obj.asInstanceOf[DropzoneMockFile]
     }
     
-    extension [Self <: DropzoneMockFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropzoneMockFile] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -1059,7 +1063,8 @@ object mod {
       __obj.asInstanceOf[DropzoneOptions]
     }
     
-    extension [Self <: DropzoneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropzoneOptions] (val x: Self) extends AnyVal {
       
       inline def setAccept(
         value: (/* file */ DropzoneFile, /* done */ js.Function1[/* error */ js.UndefOr[String | js.Error], Unit]) => Unit
@@ -1458,7 +1463,8 @@ object mod {
       __obj.asInstanceOf[DropzoneResizeInfo]
     }
     
-    extension [Self <: DropzoneResizeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropzoneResizeInfo] (val x: Self) extends AnyVal {
       
       inline def setSrcHeight(value: Double): Self = StObject.set(x, "srcHeight", value.asInstanceOf[js.Any])
       
@@ -1507,7 +1513,8 @@ object mod {
         __obj.asInstanceOf[HTMLElement]
       }
       
-      extension [Self <: HTMLElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
         
         inline def setDropzone(value: Dropzone): Self = StObject.set(x, "dropzone", value.asInstanceOf[js.Any])
       }
@@ -1524,7 +1531,8 @@ object mod {
         __obj.asInstanceOf[JQuery]
       }
       
-      extension [Self <: JQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
         
         inline def setDropzone(value: DropzoneOptions => Dropzone): Self = StObject.set(x, "dropzone", js.Any.fromFunction1(value))
       }

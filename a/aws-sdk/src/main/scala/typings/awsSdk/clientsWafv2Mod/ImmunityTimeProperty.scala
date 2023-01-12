@@ -18,7 +18,8 @@ object ImmunityTimeProperty {
     __obj.asInstanceOf[ImmunityTimeProperty]
   }
   
-  extension [Self <: ImmunityTimeProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImmunityTimeProperty] (val x: Self) extends AnyVal {
     
     inline def setImmunityTime(value: TimeWindowSecond): Self = StObject.set(x, "ImmunityTime", value.asInstanceOf[js.Any])
   }

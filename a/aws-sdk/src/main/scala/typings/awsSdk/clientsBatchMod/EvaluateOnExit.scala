@@ -33,7 +33,8 @@ object EvaluateOnExit {
     __obj.asInstanceOf[EvaluateOnExit]
   }
   
-  extension [Self <: EvaluateOnExit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluateOnExit] (val x: Self) extends AnyVal {
     
     inline def setAction(value: RetryAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

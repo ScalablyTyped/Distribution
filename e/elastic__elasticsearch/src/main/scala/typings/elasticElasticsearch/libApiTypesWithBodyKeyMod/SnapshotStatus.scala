@@ -39,7 +39,8 @@ object SnapshotStatus {
     __obj.asInstanceOf[SnapshotStatus]
   }
   
-  extension [Self <: SnapshotStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotStatus] (val x: Self) extends AnyVal {
     
     inline def setInclude_global_state(value: Boolean): Self = StObject.set(x, "include_global_state", value.asInstanceOf[js.Any])
     

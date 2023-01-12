@@ -56,7 +56,8 @@ object distDeclarationsSrcAccessibilityMod {
       __obj.asInstanceOf[AriaGuidanceProps]
     }
     
-    extension [Self <: AriaGuidanceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaGuidanceProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object distDeclarationsSrcAccessibilityMod {
       __obj.asInstanceOf[AriaLiveMessages[Option, IsMulti, Group]]
     }
     
-    extension [Self <: AriaLiveMessages[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (AriaLiveMessages[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaLiveMessages[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (AriaLiveMessages[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setGuidance(value: /* props */ AriaGuidanceProps => String): Self = StObject.set(x, "guidance", js.Any.fromFunction1(value))
       
@@ -138,7 +140,8 @@ object distDeclarationsSrcAccessibilityMod {
       __obj.asInstanceOf[AriaOnFilterProps]
     }
     
-    extension [Self <: AriaOnFilterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaOnFilterProps] (val x: Self) extends AnyVal {
       
       inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
@@ -186,7 +189,8 @@ object distDeclarationsSrcAccessibilityMod {
       __obj.asInstanceOf[AriaOnFocusProps[Option, Group]]
     }
     
-    extension [Self <: AriaOnFocusProps[?, ?], Option, Group /* <: GroupBase[Option] */](x: Self & (AriaOnFocusProps[Option, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaOnFocusProps[?, ?], Option, Group /* <: GroupBase[Option] */] (val x: Self & (AriaOnFocusProps[Option, Group])) extends AnyVal {
       
       inline def setContext(value: OptionContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

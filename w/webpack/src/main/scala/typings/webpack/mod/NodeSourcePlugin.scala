@@ -19,7 +19,8 @@ object NodeSourcePlugin {
     __obj.asInstanceOf[NodeSourcePlugin]
   }
   
-  extension [Self <: NodeSourcePlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeSourcePlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
   }

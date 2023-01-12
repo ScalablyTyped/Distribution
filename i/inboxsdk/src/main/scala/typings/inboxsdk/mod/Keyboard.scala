@@ -17,7 +17,8 @@ object Keyboard {
       __obj.asInstanceOf[KeyboardInstance]
     }
     
-    extension [Self <: KeyboardInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardInstance] (val x: Self) extends AnyVal {
       
       inline def setCreateShortcutHandle(value: KeyboardShortcutDescriptor => KeyboardShortcutHandle): Self = StObject.set(x, "createShortcutHandle", js.Any.fromFunction1(value))
     }
@@ -36,7 +37,8 @@ object Keyboard {
       __obj.asInstanceOf[KeyboardShortcutDescriptor]
     }
     
-    extension [Self <: KeyboardShortcutDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardShortcutDescriptor] (val x: Self) extends AnyVal {
       
       inline def setChord(value: String): Self = StObject.set(x, "chord", value.asInstanceOf[js.Any])
       
@@ -55,7 +57,8 @@ object Keyboard {
       __obj.asInstanceOf[KeyboardShortcutHandle]
     }
     
-    extension [Self <: KeyboardShortcutHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardShortcutHandle] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }

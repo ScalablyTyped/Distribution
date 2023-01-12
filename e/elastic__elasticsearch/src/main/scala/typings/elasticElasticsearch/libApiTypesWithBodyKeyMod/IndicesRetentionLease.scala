@@ -15,7 +15,8 @@ object IndicesRetentionLease {
     __obj.asInstanceOf[IndicesRetentionLease]
   }
   
-  extension [Self <: IndicesRetentionLease](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRetentionLease] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: Duration): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
   }

@@ -66,7 +66,8 @@ object SubstanceDefinitionMoiety {
     __obj.asInstanceOf[SubstanceDefinitionMoiety]
   }
   
-  extension [Self <: SubstanceDefinitionMoiety](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceDefinitionMoiety] (val x: Self) extends AnyVal {
     
     inline def setAmountQuantity(value: Quantity): Self = StObject.set(x, "amountQuantity", value.asInstanceOf[js.Any])
     

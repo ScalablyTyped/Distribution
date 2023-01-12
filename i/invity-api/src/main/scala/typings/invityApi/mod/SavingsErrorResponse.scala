@@ -20,7 +20,8 @@ object SavingsErrorResponse {
     __obj.asInstanceOf[SavingsErrorResponse]
   }
   
-  extension [Self <: SavingsErrorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsErrorResponse] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

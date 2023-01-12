@@ -25,7 +25,8 @@ object PostCommandArgument {
     __obj.asInstanceOf[PostCommandArgument]
   }
   
-  extension [Self <: PostCommandArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostCommandArgument] (val x: Self) extends AnyVal {
     
     inline def setSink(value: XInterface): Self = StObject.set(x, "Sink", value.asInstanceOf[js.Any])
     

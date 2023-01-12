@@ -236,7 +236,8 @@ object distSrcModulesRootContainerRootContainerMod {
       __obj.asInstanceOf[RootContainer]
     }
     
-    extension [Self <: RootContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootContainer] (val x: Self) extends AnyVal {
       
       inline def setAttachToElement(value: Element => Unit): Self = StObject.set(x, "attachToElement", js.Any.fromFunction1(value))
       

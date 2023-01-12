@@ -25,7 +25,8 @@ object typesSetDataRetrievalPolicyOutputMod {
       __obj.asInstanceOf[SetDataRetrievalPolicyOutput]
     }
     
-    extension [Self <: SetDataRetrievalPolicyOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetDataRetrievalPolicyOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }

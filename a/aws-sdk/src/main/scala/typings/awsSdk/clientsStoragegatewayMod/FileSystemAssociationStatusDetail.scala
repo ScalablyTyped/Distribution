@@ -18,7 +18,8 @@ object FileSystemAssociationStatusDetail {
     __obj.asInstanceOf[FileSystemAssociationStatusDetail]
   }
   
-  extension [Self <: FileSystemAssociationStatusDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemAssociationStatusDetail] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: FileSystemAssociationSyncErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

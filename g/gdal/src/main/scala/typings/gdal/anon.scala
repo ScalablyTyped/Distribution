@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[GeoTransform]
     }
     
-    extension [Self <: GeoTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoTransform] (val x: Self) extends AnyVal {
       
       inline def setGeoTransform(value: Any): Self = StObject.set(x, "geoTransform", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Unit]
     }
     
-    extension [Self <: Unit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
       
       inline def setUnit(value: Any): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       

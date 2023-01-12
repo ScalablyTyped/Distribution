@@ -37,7 +37,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PortConfig]
     }
     
-    extension [Self <: PortConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortConfig] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* err */ js.Error, /* _port */ Double) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       

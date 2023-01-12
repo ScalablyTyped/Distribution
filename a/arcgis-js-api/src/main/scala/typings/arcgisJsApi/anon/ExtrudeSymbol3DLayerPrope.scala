@@ -52,7 +52,8 @@ object ExtrudeSymbol3DLayerPrope {
     __obj.asInstanceOf[ExtrudeSymbol3DLayerPrope]
   }
   
-  extension [Self <: ExtrudeSymbol3DLayerPrope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtrudeSymbol3DLayerPrope] (val x: Self) extends AnyVal {
     
     inline def setCastShadows(value: Boolean): Self = StObject.set(x, "castShadows", value.asInstanceOf[js.Any])
     

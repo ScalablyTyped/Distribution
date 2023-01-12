@@ -29,7 +29,8 @@ object BreakpointEdgeSize {
     __obj.asInstanceOf[BreakpointEdgeSize]
   }
   
-  extension [Self <: BreakpointEdgeSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakpointEdgeSize] (val x: Self) extends AnyVal {
     
     inline def setHair(value: String): Self = StObject.set(x, "hair", value.asInstanceOf[js.Any])
     

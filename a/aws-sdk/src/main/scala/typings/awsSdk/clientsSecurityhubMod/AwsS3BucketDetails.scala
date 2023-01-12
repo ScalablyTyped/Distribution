@@ -73,7 +73,8 @@ object AwsS3BucketDetails {
     __obj.asInstanceOf[AwsS3BucketDetails]
   }
   
-  extension [Self <: AwsS3BucketDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketDetails] (val x: Self) extends AnyVal {
     
     inline def setAccessControlList(value: NonEmptyString): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object MultiRegionKey {
     __obj.asInstanceOf[MultiRegionKey]
   }
   
-  extension [Self <: MultiRegionKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRegionKey] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ArnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -105,7 +105,8 @@ object distNodeGenericEmscriptenFsMod {
       __obj.asInstanceOf[EmscriptenFSNode]
     }
     
-    extension [Self <: EmscriptenFSNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmscriptenFSNode] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object distNodeGenericEmscriptenFsMod {
       __obj.asInstanceOf[EmscriptenNodeOps]
     }
     
-    extension [Self <: EmscriptenNodeOps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmscriptenNodeOps] (val x: Self) extends AnyVal {
       
       inline def setGetattr(value: EmscriptenFSNode => Stats): Self = StObject.set(x, "getattr", js.Any.fromFunction1(value))
       
@@ -202,7 +204,8 @@ object distNodeGenericEmscriptenFsMod {
       __obj.asInstanceOf[EmscriptenStream]
     }
     
-    extension [Self <: EmscriptenStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmscriptenStream] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -251,7 +254,8 @@ object distNodeGenericEmscriptenFsMod {
       __obj.asInstanceOf[EmscriptenStreamOps]
     }
     
-    extension [Self <: EmscriptenStreamOps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmscriptenStreamOps] (val x: Self) extends AnyVal {
       
       inline def setClose(value: EmscriptenStream => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
@@ -316,7 +320,8 @@ object distNodeGenericEmscriptenFsMod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       

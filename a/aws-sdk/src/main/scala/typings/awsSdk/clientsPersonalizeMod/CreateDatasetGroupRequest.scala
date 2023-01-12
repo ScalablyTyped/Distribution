@@ -38,7 +38,8 @@ object CreateDatasetGroupRequest {
     __obj.asInstanceOf[CreateDatasetGroupRequest]
   }
   
-  extension [Self <: CreateDatasetGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDatasetGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

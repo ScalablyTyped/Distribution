@@ -20,7 +20,8 @@ object AnalysisLowercaseTokenizer {
     __obj.asInstanceOf[AnalysisLowercaseTokenizer]
   }
   
-  extension [Self <: AnalysisLowercaseTokenizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisLowercaseTokenizer] (val x: Self) extends AnyVal {
     
     inline def setType(value: lowercase): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

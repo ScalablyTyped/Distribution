@@ -17,7 +17,8 @@ object TextPosition {
     __obj.asInstanceOf[TextPosition]
   }
   
-  extension [Self <: TextPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextPosition] (val x: Self) extends AnyVal {
     
     inline def setParagraph(value: Double): Self = StObject.set(x, "Paragraph", value.asInstanceOf[js.Any])
     

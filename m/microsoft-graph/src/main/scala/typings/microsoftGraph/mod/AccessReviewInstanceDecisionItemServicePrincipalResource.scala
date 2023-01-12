@@ -17,7 +17,8 @@ object AccessReviewInstanceDecisionItemServicePrincipalResource {
     __obj.asInstanceOf[AccessReviewInstanceDecisionItemServicePrincipalResource]
   }
   
-  extension [Self <: AccessReviewInstanceDecisionItemServicePrincipalResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewInstanceDecisionItemServicePrincipalResource] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

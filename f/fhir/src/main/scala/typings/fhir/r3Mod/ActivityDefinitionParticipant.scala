@@ -31,7 +31,8 @@ object ActivityDefinitionParticipant {
     __obj.asInstanceOf[ActivityDefinitionParticipant]
   }
   
-  extension [Self <: ActivityDefinitionParticipant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityDefinitionParticipant] (val x: Self) extends AnyVal {
     
     inline def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

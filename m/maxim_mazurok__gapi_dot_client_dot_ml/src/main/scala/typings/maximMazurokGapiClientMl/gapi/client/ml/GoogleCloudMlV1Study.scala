@@ -28,7 +28,8 @@ object GoogleCloudMlV1Study {
     __obj.asInstanceOf[GoogleCloudMlV1Study]
   }
   
-  extension [Self <: GoogleCloudMlV1Study](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1Study] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

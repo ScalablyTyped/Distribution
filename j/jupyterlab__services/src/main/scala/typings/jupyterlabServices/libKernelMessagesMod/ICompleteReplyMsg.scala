@@ -30,7 +30,8 @@ object ICompleteReplyMsg {
     __obj.asInstanceOf[ICompleteReplyMsg]
   }
   
-  extension [Self <: ICompleteReplyMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICompleteReplyMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ReplyContent[ICompleteReply]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

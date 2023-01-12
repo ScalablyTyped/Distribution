@@ -56,7 +56,8 @@ object libHandlesMod extends Shortcut {
       __obj.asInstanceOf[HandlesRef]
     }
     
-    extension [Self <: HandlesRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandlesRef] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: Double => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
     }

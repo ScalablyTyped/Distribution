@@ -284,7 +284,8 @@ object streamManagerDataMessageStreamInfoMod {
       __obj.asInstanceOf[MessageStreamInfoExportStatusesMap]
     }
     
-    extension [Self <: MessageStreamInfoExportStatusesMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageStreamInfoExportStatusesMap] (val x: Self) extends AnyVal {
       
       inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
@@ -379,7 +380,8 @@ object streamManagerDataMessageStreamInfoMod {
       __obj.asInstanceOf[MessageStreamInfoStorageStatusMap]
     }
     
-    extension [Self <: MessageStreamInfoStorageStatusMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageStreamInfoStorageStatusMap] (val x: Self) extends AnyVal {
       
       inline def setNewestSequenceNumber(value: Double): Self = StObject.set(x, "newestSequenceNumber", value.asInstanceOf[js.Any])
       

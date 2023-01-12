@@ -41,7 +41,8 @@ object DeprecationStatus {
     __obj.asInstanceOf[DeprecationStatus]
   }
   
-  extension [Self <: DeprecationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecationStatus] (val x: Self) extends AnyVal {
     
     inline def setDeleted(value: String): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

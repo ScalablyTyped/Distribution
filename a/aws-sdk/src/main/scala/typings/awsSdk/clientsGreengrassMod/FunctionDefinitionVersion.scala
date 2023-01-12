@@ -23,7 +23,8 @@ object FunctionDefinitionVersion {
     __obj.asInstanceOf[FunctionDefinitionVersion]
   }
   
-  extension [Self <: FunctionDefinitionVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionDefinitionVersion] (val x: Self) extends AnyVal {
     
     inline def setDefaultConfig(value: FunctionDefaultConfig): Self = StObject.set(x, "DefaultConfig", value.asInstanceOf[js.Any])
     

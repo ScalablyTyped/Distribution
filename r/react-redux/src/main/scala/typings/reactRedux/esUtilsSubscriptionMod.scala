@@ -30,7 +30,8 @@ object esUtilsSubscriptionMod {
       __obj.asInstanceOf[Listener]
     }
     
-    extension [Self <: Listener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -79,7 +80,8 @@ object esUtilsSubscriptionMod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setAddNestedSub(value: VoidFunc => VoidFunc): Self = StObject.set(x, "addNestedSub", js.Any.fromFunction1(value))
       

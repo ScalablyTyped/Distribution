@@ -53,7 +53,8 @@ object UpdateRecordsRequest {
     __obj.asInstanceOf[UpdateRecordsRequest]
   }
   
-  extension [Self <: UpdateRecordsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRecordsRequest] (val x: Self) extends AnyVal {
     
     inline def setClientContext(value: ClientContext): Self = StObject.set(x, "ClientContext", value.asInstanceOf[js.Any])
     

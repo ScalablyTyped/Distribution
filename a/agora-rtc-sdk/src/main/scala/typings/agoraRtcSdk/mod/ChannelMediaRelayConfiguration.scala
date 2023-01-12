@@ -81,7 +81,8 @@ object ChannelMediaRelayConfiguration {
     __obj.asInstanceOf[ChannelMediaRelayConfiguration]
   }
   
-  extension [Self <: ChannelMediaRelayConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelMediaRelayConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRemoveDestChannelInfo(value: String => Unit): Self = StObject.set(x, "removeDestChannelInfo", js.Any.fromFunction1(value))
     

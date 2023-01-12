@@ -58,7 +58,8 @@ object TileLayerEvents {
     __obj.asInstanceOf[TileLayerEvents]
   }
   
-  extension [Self <: TileLayerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayerEvents] (val x: Self) extends AnyVal {
     
     inline def setOnload(
       value: NonNullable[

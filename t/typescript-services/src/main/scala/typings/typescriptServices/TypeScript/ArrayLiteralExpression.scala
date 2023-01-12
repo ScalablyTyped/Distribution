@@ -41,7 +41,8 @@ object ArrayLiteralExpression {
     __obj.asInstanceOf[ArrayLiteralExpression]
   }
   
-  extension [Self <: ArrayLiteralExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayLiteralExpression] (val x: Self) extends AnyVal {
     
     inline def setExpressions(value: ISeparatedSyntaxList2): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     

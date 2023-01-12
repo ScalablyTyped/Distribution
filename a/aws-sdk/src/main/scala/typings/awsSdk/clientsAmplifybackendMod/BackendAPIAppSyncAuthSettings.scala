@@ -53,7 +53,8 @@ object BackendAPIAppSyncAuthSettings {
     __obj.asInstanceOf[BackendAPIAppSyncAuthSettings]
   }
   
-  extension [Self <: BackendAPIAppSyncAuthSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendAPIAppSyncAuthSettings] (val x: Self) extends AnyVal {
     
     inline def setCognitoUserPoolId(value: string): Self = StObject.set(x, "CognitoUserPoolId", value.asInstanceOf[js.Any])
     

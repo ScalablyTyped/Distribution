@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsAnimatedSlideMod extends Short
       __obj.asInstanceOf[AnimatedSlideProps]
     }
     
-    extension [Self <: AnimatedSlideProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedSlideProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

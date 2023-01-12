@@ -52,7 +52,8 @@ object libVictoryUtilSelectionMod {
       __obj.asInstanceOf[ComputedCommonProps]
     }
     
-    extension [Self <: ComputedCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedCommonProps] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object libVictoryUtilSelectionMod {
       __obj.asInstanceOf[SVGCoordinateBounds]
     }
     
-    extension [Self <: SVGCoordinateBounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGCoordinateBounds] (val x: Self) extends AnyVal {
       
       inline def setX(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object libVictoryUtilSelectionMod {
       __obj.asInstanceOf[SVGCoordinateType]
     }
     
-    extension [Self <: SVGCoordinateType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGCoordinateType] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

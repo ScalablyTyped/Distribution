@@ -37,7 +37,8 @@ object PartialStyleRulesCollapse {
     __obj.asInstanceOf[PartialStyleRulesCollapse]
   }
   
-  extension [Self <: PartialStyleRulesCollapse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesCollapse] (val x: Self) extends AnyVal {
     
     inline def setEntered(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

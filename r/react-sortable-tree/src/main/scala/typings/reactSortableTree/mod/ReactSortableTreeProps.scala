@@ -64,7 +64,8 @@ object ReactSortableTreeProps {
     __obj.asInstanceOf[ReactSortableTreeProps[T]]
   }
   
-  extension [Self <: ReactSortableTreeProps[?], T](x: Self & ReactSortableTreeProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactSortableTreeProps[?], T] (val x: Self & ReactSortableTreeProps[T]) extends AnyVal {
     
     inline def setCanDrag(value: (js.Function1[/* data */ ExtendedNodeData[js.Object], Boolean]) | Boolean): Self = StObject.set(x, "canDrag", value.asInstanceOf[js.Any])
     

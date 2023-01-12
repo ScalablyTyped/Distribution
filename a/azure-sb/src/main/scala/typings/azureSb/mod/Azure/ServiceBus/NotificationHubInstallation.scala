@@ -43,7 +43,8 @@ object NotificationHubInstallation {
     __obj.asInstanceOf[NotificationHubInstallation]
   }
   
-  extension [Self <: NotificationHubInstallation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationHubInstallation] (val x: Self) extends AnyVal {
     
     inline def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     

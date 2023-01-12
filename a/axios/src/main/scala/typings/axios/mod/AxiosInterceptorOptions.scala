@@ -17,7 +17,8 @@ object AxiosInterceptorOptions {
     __obj.asInstanceOf[AxiosInterceptorOptions]
   }
   
-  extension [Self <: AxiosInterceptorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxiosInterceptorOptions] (val x: Self) extends AnyVal {
     
     inline def setRunWhen(value: /* config */ AxiosRequestConfig[Any] => Boolean): Self = StObject.set(x, "runWhen", js.Any.fromFunction1(value))
     

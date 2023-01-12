@@ -18,7 +18,8 @@ object LogFileGeneratedEventArgs {
     __obj.asInstanceOf[LogFileGeneratedEventArgs]
   }
   
-  extension [Self <: LogFileGeneratedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogFileGeneratedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
   }

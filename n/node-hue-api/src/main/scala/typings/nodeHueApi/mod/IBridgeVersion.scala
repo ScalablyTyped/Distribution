@@ -18,7 +18,8 @@ object IBridgeVersion {
     __obj.asInstanceOf[IBridgeVersion]
   }
   
-  extension [Self <: IBridgeVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBridgeVersion] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

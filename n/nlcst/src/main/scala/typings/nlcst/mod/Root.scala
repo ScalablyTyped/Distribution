@@ -22,7 +22,8 @@ object Root {
     __obj.asInstanceOf[Root]
   }
   
-  extension [Self <: Root](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
     
     inline def setType(value: RootNode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

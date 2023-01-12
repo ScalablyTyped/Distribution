@@ -24,7 +24,8 @@ object CaptionRenderedEventUIParam {
     __obj.asInstanceOf[CaptionRenderedEventUIParam]
   }
   
-  extension [Self <: CaptionRenderedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionRenderedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCaptionContainer(value: Element): Self = StObject.set(x, "captionContainer", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofGroupButton {
     __obj.asInstanceOf[TypeofGroupButton]
   }
   
-  extension [Self <: TypeofGroupButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofGroupButton] (val x: Self) extends AnyVal {
     
     inline def setFn(value: GroupButton): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

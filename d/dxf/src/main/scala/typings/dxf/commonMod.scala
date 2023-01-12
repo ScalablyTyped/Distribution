@@ -159,7 +159,8 @@ object commonMod {
       __obj.asInstanceOf[Point2D]
     }
     
-    extension [Self <: Point2D](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point2D] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object commonMod {
       __obj.asInstanceOf[Point3D]
     }
     
-    extension [Self <: Point3D](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point3D] (val x: Self) extends AnyVal {
       
       inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }

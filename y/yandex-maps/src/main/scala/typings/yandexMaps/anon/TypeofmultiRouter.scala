@@ -69,7 +69,8 @@ object TypeofmultiRouter {
     __obj.asInstanceOf[TypeofmultiRouter]
   }
   
-  extension [Self <: TypeofmultiRouter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofmultiRouter] (val x: Self) extends AnyVal {
     
     inline def setDriving(value: Typeofdriving): Self = StObject.set(x, "driving", value.asInstanceOf[js.Any])
     

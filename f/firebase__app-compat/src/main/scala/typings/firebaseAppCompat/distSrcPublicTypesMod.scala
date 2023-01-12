@@ -26,7 +26,8 @@ object distSrcPublicTypesMod {
       __obj.asInstanceOf[FirebaseAppConfig]
     }
     
-    extension [Self <: FirebaseAppConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseAppConfig] (val x: Self) extends AnyVal {
       
       inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object distSrcPublicTypesMod {
       __obj.asInstanceOf[FirebaseOptions]
     }
     
-    extension [Self <: FirebaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object distSrcPublicTypesMod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setApp-compat`(value: FirebaseApp): Self = StObject.set(x, "app-compat", value.asInstanceOf[js.Any])
       }

@@ -38,7 +38,8 @@ object IError {
     __obj.asInstanceOf[IError]
   }
   
-  extension [Self <: IError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IError] (val x: Self) extends AnyVal {
     
     inline def setEname(value: String): Self = StObject.set(x, "ename", value.asInstanceOf[js.Any])
     

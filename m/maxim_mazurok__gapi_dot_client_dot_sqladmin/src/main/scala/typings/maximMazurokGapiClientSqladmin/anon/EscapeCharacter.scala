@@ -28,7 +28,8 @@ object EscapeCharacter {
     __obj.asInstanceOf[EscapeCharacter]
   }
   
-  extension [Self <: EscapeCharacter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EscapeCharacter] (val x: Self) extends AnyVal {
     
     inline def setEscapeCharacter(value: String): Self = StObject.set(x, "escapeCharacter", value.asInstanceOf[js.Any])
     

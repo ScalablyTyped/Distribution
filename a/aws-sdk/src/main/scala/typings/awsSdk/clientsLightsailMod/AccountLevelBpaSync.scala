@@ -33,7 +33,8 @@ object AccountLevelBpaSync {
     __obj.asInstanceOf[AccountLevelBpaSync]
   }
   
-  extension [Self <: AccountLevelBpaSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountLevelBpaSync] (val x: Self) extends AnyVal {
     
     inline def setBpaImpactsLightsail(value: Boolean): Self = StObject.set(x, "bpaImpactsLightsail", value.asInstanceOf[js.Any])
     

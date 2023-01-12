@@ -29,7 +29,8 @@ object typingsModelsMandateMod {
         __obj.asInstanceOf[CreateMandate]
       }
       
-      extension [Self <: CreateMandate](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateMandate] (val x: Self) extends AnyVal {
         
         inline def setBankAccountId(value: String): Self = StObject.set(x, "BankAccountId", value.asInstanceOf[js.Any])
         
@@ -163,7 +164,8 @@ object typingsModelsMandateMod {
         __obj.asInstanceOf[MandateData]
       }
       
-      extension [Self <: MandateData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MandateData] (val x: Self) extends AnyVal {
         
         inline def setBankAccountId(value: String): Self = StObject.set(x, "BankAccountId", value.asInstanceOf[js.Any])
         

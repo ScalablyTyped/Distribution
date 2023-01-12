@@ -18,7 +18,8 @@ object TestMetricFilterResponse {
     __obj.asInstanceOf[TestMetricFilterResponse]
   }
   
-  extension [Self <: TestMetricFilterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestMetricFilterResponse] (val x: Self) extends AnyVal {
     
     inline def setMatches(value: MetricFilterMatches): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     

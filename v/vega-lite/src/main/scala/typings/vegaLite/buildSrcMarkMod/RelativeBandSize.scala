@@ -18,7 +18,8 @@ object RelativeBandSize {
     __obj.asInstanceOf[RelativeBandSize]
   }
   
-  extension [Self <: RelativeBandSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeBandSize] (val x: Self) extends AnyVal {
     
     inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
   }

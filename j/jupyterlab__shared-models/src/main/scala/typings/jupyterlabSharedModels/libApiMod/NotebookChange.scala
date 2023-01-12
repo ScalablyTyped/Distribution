@@ -24,7 +24,8 @@ object NotebookChange {
     __obj.asInstanceOf[NotebookChange]
   }
   
-  extension [Self <: NotebookChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookChange] (val x: Self) extends AnyVal {
     
     inline def setCellsChange(value: Delta[js.Array[ISharedCell]]): Self = StObject.set(x, "cellsChange", value.asInstanceOf[js.Any])
     

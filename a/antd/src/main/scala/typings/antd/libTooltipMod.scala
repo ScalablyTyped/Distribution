@@ -56,7 +56,8 @@ object libTooltipMod extends Shortcut {
       __obj.asInstanceOf[AbstractTooltipProps]
     }
     
-    extension [Self <: AbstractTooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractTooltipProps] (val x: Self) extends AnyVal {
       
       inline def setArrowPointAtCenter(value: Boolean): Self = StObject.set(x, "arrowPointAtCenter", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object libTooltipMod extends Shortcut {
       __obj.asInstanceOf[LegacyTooltipProps]
     }
     
-    extension [Self <: LegacyTooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyTooltipProps] (val x: Self) extends AnyVal {
       
       inline def setAfterOpenChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "afterOpenChange", js.Any.fromFunction1(value))
       
@@ -335,7 +337,8 @@ object libTooltipMod extends Shortcut {
       __obj.asInstanceOf[TooltipAlignConfig]
     }
     
-    extension [Self <: TooltipAlignConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipAlignConfig] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: js.Tuple2[Double | String, Double | String]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -444,7 +447,8 @@ object libTooltipMod extends Shortcut {
       __obj.asInstanceOf[TooltipPropsWithOverlay]
     }
     
-    extension [Self <: TooltipPropsWithOverlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipPropsWithOverlay] (val x: Self) extends AnyVal {
       
       inline def setOverlay(value: ReactNode | RenderFunction): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
@@ -477,7 +481,8 @@ object libTooltipMod extends Shortcut {
       __obj.asInstanceOf[TooltipPropsWithTitle]
     }
     
-    extension [Self <: TooltipPropsWithTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipPropsWithTitle] (val x: Self) extends AnyVal {
       
       inline def setOverlay(value: ReactNode | RenderFunction): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       

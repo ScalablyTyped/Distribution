@@ -23,7 +23,8 @@ object PriorityConfiguration {
     __obj.asInstanceOf[PriorityConfiguration]
   }
   
-  extension [Self <: PriorityConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PriorityConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLocationOrder(value: LocationList): Self = StObject.set(x, "LocationOrder", value.asInstanceOf[js.Any])
     

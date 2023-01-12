@@ -28,7 +28,8 @@ object TypeofSession {
     __obj.asInstanceOf[TypeofSession]
   }
   
-  extension [Self <: TypeofSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSession] (val x: Self) extends AnyVal {
     
     inline def setFind(value: String => js.Promise[js.UndefOr[Any]]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     

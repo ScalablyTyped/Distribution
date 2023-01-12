@@ -19,7 +19,8 @@ object MapLayerDefaultsMarker {
     __obj.asInstanceOf[MapLayerDefaultsMarker]
   }
   
-  extension [Self <: MapLayerDefaultsMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLayerDefaultsMarker] (val x: Self) extends AnyVal {
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

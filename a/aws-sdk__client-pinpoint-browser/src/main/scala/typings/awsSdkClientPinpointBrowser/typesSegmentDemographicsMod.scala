@@ -47,7 +47,8 @@ object typesSegmentDemographicsMod {
       __obj.asInstanceOf[SegmentDemographics]
     }
     
-    extension [Self <: SegmentDemographics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentDemographics] (val x: Self) extends AnyVal {
       
       inline def setAppVersion(value: SetDimension): Self = StObject.set(x, "AppVersion", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object typesSegmentDemographicsMod {
       __obj.asInstanceOf[UnmarshalledSegmentDemographics]
     }
     
-    extension [Self <: UnmarshalledSegmentDemographics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSegmentDemographics] (val x: Self) extends AnyVal {
       
       inline def setAppVersion(value: UnmarshalledSetDimension): Self = StObject.set(x, "AppVersion", value.asInstanceOf[js.Any])
       

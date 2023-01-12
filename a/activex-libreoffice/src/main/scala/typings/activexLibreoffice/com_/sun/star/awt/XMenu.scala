@@ -231,7 +231,8 @@ object XMenu {
     __obj.asInstanceOf[XMenu]
   }
   
-  extension [Self <: XMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMenu] (val x: Self) extends AnyVal {
     
     inline def setAddMenuListener(value: XMenuListener => Unit): Self = StObject.set(x, "addMenuListener", js.Any.fromFunction1(value))
     

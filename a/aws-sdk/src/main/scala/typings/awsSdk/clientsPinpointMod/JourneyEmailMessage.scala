@@ -18,7 +18,8 @@ object JourneyEmailMessage {
     __obj.asInstanceOf[JourneyEmailMessage]
   }
   
-  extension [Self <: JourneyEmailMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JourneyEmailMessage] (val x: Self) extends AnyVal {
     
     inline def setFromAddress(value: string): Self = StObject.set(x, "FromAddress", value.asInstanceOf[js.Any])
     

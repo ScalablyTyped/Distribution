@@ -18,7 +18,8 @@ object PrefixLevel {
     __obj.asInstanceOf[PrefixLevel]
   }
   
-  extension [Self <: PrefixLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrefixLevel] (val x: Self) extends AnyVal {
     
     inline def setStorageMetrics(value: PrefixLevelStorageMetrics): Self = StObject.set(x, "StorageMetrics", value.asInstanceOf[js.Any])
   }

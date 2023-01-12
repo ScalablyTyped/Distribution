@@ -31,7 +31,8 @@ object ChampionListDto {
     __obj.asInstanceOf[ChampionListDto]
   }
   
-  extension [Self <: ChampionListDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChampionListDto] (val x: Self) extends AnyVal {
     
     inline def setData(value: StringDictionary[ChampionDto]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

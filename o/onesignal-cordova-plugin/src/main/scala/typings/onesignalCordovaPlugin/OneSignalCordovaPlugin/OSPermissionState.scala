@@ -26,7 +26,8 @@ object OSPermissionState {
     __obj.asInstanceOf[OSPermissionState]
   }
   
-  extension [Self <: OSPermissionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPermissionState] (val x: Self) extends AnyVal {
     
     inline def setHasPrompted(value: Boolean): Self = StObject.set(x, "hasPrompted", value.asInstanceOf[js.Any])
     

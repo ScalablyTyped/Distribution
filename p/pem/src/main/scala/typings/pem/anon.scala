@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ClientKey]
     }
     
-    extension [Self <: ClientKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientKey] (val x: Self) extends AnyVal {
       
       inline def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Dhparam]
     }
     
-    extension [Self <: Dhparam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dhparam] (val x: Self) extends AnyVal {
       
       inline def setDhparam(value: Any): Self = StObject.set(x, "dhparam", value.asInstanceOf[js.Any])
     }
@@ -55,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Fingerprint]
     }
     
-    extension [Self <: Fingerprint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fingerprint] (val x: Self) extends AnyVal {
       
       inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     }
@@ -72,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -89,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Modulus]
     }
     
-    extension [Self <: Modulus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modulus] (val x: Self) extends AnyVal {
       
       inline def setModulus(value: Any): Self = StObject.set(x, "modulus", value.asInstanceOf[js.Any])
     }
@@ -106,7 +111,8 @@ object anon {
       __obj.asInstanceOf[Pkcs12]
     }
     
-    extension [Self <: Pkcs12](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pkcs12] (val x: Self) extends AnyVal {
       
       inline def setPkcs12(value: Any): Self = StObject.set(x, "pkcs12", value.asInstanceOf[js.Any])
     }
@@ -125,7 +131,8 @@ object anon {
       __obj.asInstanceOf[Prime]
     }
     
-    extension [Self <: Prime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Prime] (val x: Self) extends AnyVal {
       
       inline def setPrime(value: Any): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
       
@@ -144,7 +151,8 @@ object anon {
       __obj.asInstanceOf[PublicKey]
     }
     
-    extension [Self <: PublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
       
       inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     }

@@ -17,7 +17,8 @@ object MouseWheelOptions {
     __obj.asInstanceOf[MouseWheelOptions]
   }
   
-  extension [Self <: MouseWheelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseWheelOptions] (val x: Self) extends AnyVal {
     
     inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     

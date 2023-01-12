@@ -62,7 +62,8 @@ object componentsTableCellMod {
       __obj.asInstanceOf[TableCellProps]
     }
     
-    extension [Self <: TableCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCellProps] (val x: Self) extends AnyVal {
       
       inline def setPlain(value: Boolean | noPad): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
       

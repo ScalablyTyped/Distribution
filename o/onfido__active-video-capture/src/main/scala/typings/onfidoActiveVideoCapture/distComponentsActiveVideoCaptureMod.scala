@@ -55,7 +55,8 @@ object distComponentsActiveVideoCaptureMod {
       __obj.asInstanceOf[SuccessData]
     }
     
-    extension [Self <: SuccessData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessData] (val x: Self) extends AnyVal {
       
       inline def setVideoPayload(value: Blob): Self = StObject.set(x, "videoPayload", value.asInstanceOf[js.Any])
     }

@@ -37,7 +37,8 @@ object PartialTransferLocale {
     __obj.asInstanceOf[PartialTransferLocale]
   }
   
-  extension [Self <: PartialTransferLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTransferLocale] (val x: Self) extends AnyVal {
     
     inline def setItemUnit(value: String): Self = StObject.set(x, "itemUnit", value.asInstanceOf[js.Any])
     

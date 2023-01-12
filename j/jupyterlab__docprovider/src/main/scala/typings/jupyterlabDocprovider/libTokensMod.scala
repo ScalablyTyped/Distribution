@@ -41,7 +41,8 @@ object libTokensMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
         
@@ -107,7 +108,8 @@ object libTokensMod {
       __obj.asInstanceOf[IDocumentProvider]
     }
     
-    extension [Self <: IDocumentProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentProvider] (val x: Self) extends AnyVal {
       
       inline def setAcquireLock(value: () => js.Promise[Double]): Self = StObject.set(x, "acquireLock", js.Any.fromFunction0(value))
       

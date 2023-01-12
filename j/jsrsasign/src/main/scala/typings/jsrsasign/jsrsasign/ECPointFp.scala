@@ -23,7 +23,8 @@ object ECPointFp {
     __obj.asInstanceOf[ECPointFp]
   }
   
-  extension [Self <: ECPointFp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ECPointFp] (val x: Self) extends AnyVal {
     
     inline def setCurve(value: ECFieldElementFp): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     

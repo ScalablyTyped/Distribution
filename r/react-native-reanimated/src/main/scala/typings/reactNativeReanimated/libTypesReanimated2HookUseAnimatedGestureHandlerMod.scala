@@ -84,7 +84,8 @@ object libTypesReanimated2HookUseAnimatedGestureHandlerMod {
       __obj.asInstanceOf[GestureHandlerEvent[T]]
     }
     
-    extension [Self <: GestureHandlerEvent[?], T](x: Self & GestureHandlerEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureHandlerEvent[?], T] (val x: Self & GestureHandlerEvent[T]) extends AnyVal {
       
       inline def setNativeEvent(value: T): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }
@@ -107,7 +108,8 @@ object libTypesReanimated2HookUseAnimatedGestureHandlerMod {
       __obj.asInstanceOf[GestureHandlerStateChangeNativeEvent]
     }
     
-    extension [Self <: GestureHandlerStateChangeNativeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureHandlerStateChangeNativeEvent] (val x: Self) extends AnyVal {
       
       inline def setHandlerTag(value: Double): Self = StObject.set(x, "handlerTag", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object libTypesReanimated2HookUseAnimatedGestureHandlerMod {
       __obj.asInstanceOf[GestureHandlers[T, TContext]]
     }
     
-    extension [Self <: GestureHandlers[?, ?], T, TContext /* <: Context */](x: Self & (GestureHandlers[T, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureHandlers[?, ?], T, TContext /* <: Context */] (val x: Self & (GestureHandlers[T, TContext])) extends AnyVal {
       
       inline def setOnActive(value: Handler[T, TContext]): Self = StObject.set(x, "onActive", value.asInstanceOf[js.Any])
       

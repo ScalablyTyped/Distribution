@@ -23,7 +23,8 @@ object EnableFastSnapshotRestoreStateErrorItem {
     __obj.asInstanceOf[EnableFastSnapshotRestoreStateErrorItem]
   }
   
-  extension [Self <: EnableFastSnapshotRestoreStateErrorItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableFastSnapshotRestoreStateErrorItem] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

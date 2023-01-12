@@ -23,7 +23,8 @@ object PartitionMetadata {
     __obj.asInstanceOf[PartitionMetadata]
   }
   
-  extension [Self <: PartitionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionMetadata] (val x: Self) extends AnyVal {
     
     inline def setPartitionMetadata(value: js.Array[typings.kafkajs.mod.PartitionMetadata]): Self = StObject.set(x, "partitionMetadata", value.asInstanceOf[js.Any])
     

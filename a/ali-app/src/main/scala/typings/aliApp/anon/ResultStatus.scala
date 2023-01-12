@@ -27,7 +27,8 @@ object ResultStatus {
     __obj.asInstanceOf[ResultStatus]
   }
   
-  extension [Self <: ResultStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultStatus] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Admitstate): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

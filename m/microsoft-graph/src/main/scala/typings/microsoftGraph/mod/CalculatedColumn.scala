@@ -22,7 +22,8 @@ object CalculatedColumn {
     __obj.asInstanceOf[CalculatedColumn]
   }
   
-  extension [Self <: CalculatedColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculatedColumn] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: NullableOption[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

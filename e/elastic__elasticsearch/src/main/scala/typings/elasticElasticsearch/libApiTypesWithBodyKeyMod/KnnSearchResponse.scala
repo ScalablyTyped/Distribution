@@ -26,7 +26,8 @@ object KnnSearchResponse {
     __obj.asInstanceOf[KnnSearchResponse[TDocument]]
   }
   
-  extension [Self <: KnnSearchResponse[?], TDocument](x: Self & KnnSearchResponse[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnnSearchResponse[?], TDocument] (val x: Self & KnnSearchResponse[TDocument]) extends AnyVal {
     
     inline def setFields(value: Record[String, Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

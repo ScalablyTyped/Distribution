@@ -121,7 +121,8 @@ object PartialFunnelOptions {
     __obj.asInstanceOf[PartialFunnelOptions]
   }
   
-  extension [Self <: PartialFunnelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFunnelOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

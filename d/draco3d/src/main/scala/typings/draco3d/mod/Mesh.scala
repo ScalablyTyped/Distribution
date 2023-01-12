@@ -19,7 +19,8 @@ object Mesh {
     __obj.asInstanceOf[Mesh]
   }
   
-  extension [Self <: Mesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mesh] (val x: Self) extends AnyVal {
     
     inline def setNum_faces(value: () => Double): Self = StObject.set(x, "num_faces", js.Any.fromFunction0(value))
     

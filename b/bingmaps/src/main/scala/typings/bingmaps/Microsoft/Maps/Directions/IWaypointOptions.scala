@@ -28,7 +28,8 @@ object IWaypointOptions {
     __obj.asInstanceOf[IWaypointOptions]
   }
   
-  extension [Self <: IWaypointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWaypointOptions] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

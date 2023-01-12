@@ -31,7 +31,8 @@ object foreachWithNullKeysMod {
       __obj.asInstanceOf[ForEachTrait[K, V]]
     }
     
-    extension [Self <: ForEachTrait[?, ?], K, V](x: Self & (ForEachTrait[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForEachTrait[?, ?], K, V] (val x: Self & (ForEachTrait[K, V])) extends AnyVal {
       
       inline def setForEach(value: js.Function3[/* value */ V, /* key */ K, ForEachTrait[K, V], Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     }

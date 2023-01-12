@@ -19,7 +19,8 @@ object ScrollerMessages {
     __obj.asInstanceOf[ScrollerMessages]
   }
   
-  extension [Self <: ScrollerMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollerMessages] (val x: Self) extends AnyVal {
     
     inline def setPullTemplate(value: String): Self = StObject.set(x, "pullTemplate", value.asInstanceOf[js.Any])
     

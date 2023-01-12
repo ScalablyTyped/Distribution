@@ -9977,7 +9977,8 @@ object CSSPropertiesPartialRecorBackgroundClip {
     __obj.asInstanceOf[CSSPropertiesPartialRecorBackgroundClip]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorBackgroundClip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorBackgroundClip] (val x: Self) extends AnyVal {
     
     inline def `set--fill-color`(value: String): Self = StObject.set(x, "--fill-color", value.asInstanceOf[js.Any])
     

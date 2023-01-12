@@ -24,7 +24,8 @@ object TSExternalModuleReference_ {
     __obj.asInstanceOf[TSExternalModuleReference_]
   }
   
-  extension [Self <: TSExternalModuleReference_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSExternalModuleReference_] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: StringLiteral_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

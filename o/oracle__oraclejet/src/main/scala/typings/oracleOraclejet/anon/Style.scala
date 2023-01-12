@@ -24,7 +24,8 @@ object Style {
     __obj.asInstanceOf[Style[K, D]]
   }
   
-  extension [Self <: Style[?, ?], K, D](x: Self & (Style[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Style[?, ?], K, D] (val x: Self & (Style[K, D])) extends AnyVal {
     
     inline def setClassName(value: (js.Function1[/* context */ LabelContext[K, D], String | Unit | Null]) | String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

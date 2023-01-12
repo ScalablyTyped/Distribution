@@ -18,7 +18,8 @@ object GetGroupRequest {
     __obj.asInstanceOf[GetGroupRequest]
   }
   
-  extension [Self <: GetGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupIdentifier(value: GroupIdentifier): Self = StObject.set(x, "GroupIdentifier", value.asInstanceOf[js.Any])
   }

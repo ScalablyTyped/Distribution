@@ -16,7 +16,8 @@ object DataLeakPreventionChange {
     __obj.asInstanceOf[DataLeakPreventionChange]
   }
   
-  extension [Self <: DataLeakPreventionChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataLeakPreventionChange] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

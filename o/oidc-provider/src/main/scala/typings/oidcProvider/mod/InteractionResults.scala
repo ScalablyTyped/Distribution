@@ -22,7 +22,8 @@ object InteractionResults {
     __obj.asInstanceOf[InteractionResults]
   }
   
-  extension [Self <: InteractionResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionResults] (val x: Self) extends AnyVal {
     
     inline def setConsent(value: GrantId): Self = StObject.set(x, "consent", value.asInstanceOf[js.Any])
     

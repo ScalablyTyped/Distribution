@@ -56,7 +56,8 @@ object libJavaJavaServerMod {
       __obj.asInstanceOf[JavaServer]
     }
     
-    extension [Self <: JavaServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JavaServer] (val x: Self) extends AnyVal {
       
       inline def setConfigFileName(value: String): Self = StObject.set(x, "configFileName", value.asInstanceOf[js.Any])
       

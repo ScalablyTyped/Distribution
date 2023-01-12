@@ -23,7 +23,8 @@ object DescribeRdsDbInstancesRequest {
     __obj.asInstanceOf[DescribeRdsDbInstancesRequest]
   }
   
-  extension [Self <: DescribeRdsDbInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRdsDbInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setRdsDbInstanceArns(value: Strings): Self = StObject.set(x, "RdsDbInstanceArns", value.asInstanceOf[js.Any])
     

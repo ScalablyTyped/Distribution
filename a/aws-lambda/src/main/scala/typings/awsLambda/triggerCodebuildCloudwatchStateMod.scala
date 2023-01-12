@@ -49,7 +49,8 @@ object triggerCodebuildCloudwatchStateMod {
       __obj.asInstanceOf[CodeBuildCloudWatchStateEvent]
     }
     
-    extension [Self <: CodeBuildCloudWatchStateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeBuildCloudWatchStateEvent] (val x: Self) extends AnyVal {
       
       inline def setSource(value: awsDotcodebuild): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -247,7 +248,8 @@ object triggerCodebuildCloudwatchStateMod {
       __obj.asInstanceOf[CodeBuildStateEventDetail]
     }
     
-    extension [Self <: CodeBuildStateEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeBuildStateEventDetail] (val x: Self) extends AnyVal {
       
       inline def `setAdditional-information`(value: Artifact): Self = StObject.set(x, "additional-information", value.asInstanceOf[js.Any])
       

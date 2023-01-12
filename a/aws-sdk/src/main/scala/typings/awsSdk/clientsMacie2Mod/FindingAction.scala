@@ -23,7 +23,8 @@ object FindingAction {
     __obj.asInstanceOf[FindingAction]
   }
   
-  extension [Self <: FindingAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingAction] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: FindingActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

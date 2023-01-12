@@ -92,7 +92,8 @@ object KmlLayerRoot {
     __obj.asInstanceOf[KmlLayerRoot]
   }
   
-  extension [Self <: KmlLayerRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlLayerRoot] (val x: Self) extends AnyVal {
     
     inline def setEnableLayerById(value: (String, Boolean) => Unit): Self = StObject.set(x, "enableLayerById", js.Any.fromFunction2(value))
     

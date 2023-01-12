@@ -28,7 +28,8 @@ object ShapeOutsideInfo {
     __obj.asInstanceOf[ShapeOutsideInfo]
   }
   
-  extension [Self <: ShapeOutsideInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeOutsideInfo] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Quad): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

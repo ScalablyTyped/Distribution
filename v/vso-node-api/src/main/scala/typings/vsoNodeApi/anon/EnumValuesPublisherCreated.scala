@@ -15,7 +15,8 @@ object EnumValuesPublisherCreated {
     __obj.asInstanceOf[EnumValuesPublisherCreated]
   }
   
-  extension [Self <: EnumValuesPublisherCreated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesPublisherCreated] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: PublisherCreated): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

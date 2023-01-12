@@ -22,7 +22,8 @@ object Formaterror {
     __obj.asInstanceOf[Formaterror]
   }
   
-  extension [Self <: Formaterror](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Formaterror] (val x: Self) extends AnyVal {
     
     inline def `setFormat-error`(value: String): Self = StObject.set(x, "format-error", value.asInstanceOf[js.Any])
     

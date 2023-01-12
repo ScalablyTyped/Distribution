@@ -53,7 +53,8 @@ object distEs2015ComponentGeometryGeometryMod {
       __obj.asInstanceOf[GeometryDataType]
     }
     
-    extension [Self <: GeometryDataType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryDataType] (val x: Self) extends AnyVal {
       
       inline def setFaces(value: js.Array[Face3]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       

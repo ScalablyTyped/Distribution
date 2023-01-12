@@ -23,7 +23,8 @@ object GetLayerVersionRequest {
     __obj.asInstanceOf[GetLayerVersionRequest]
   }
   
-  extension [Self <: GetLayerVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLayerVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
     

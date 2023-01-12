@@ -18,7 +18,8 @@ object UpdateVTLDeviceTypeOutput {
     __obj.asInstanceOf[UpdateVTLDeviceTypeOutput]
   }
   
-  extension [Self <: UpdateVTLDeviceTypeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVTLDeviceTypeOutput] (val x: Self) extends AnyVal {
     
     inline def setVTLDeviceARN(value: VTLDeviceARN): Self = StObject.set(x, "VTLDeviceARN", value.asInstanceOf[js.Any])
     

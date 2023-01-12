@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBadrequest(value: Handler): Self = StObject.set(x, "badrequest", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[RequestNtlm]
     }
     
-    extension [Self <: RequestNtlm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestNtlm] (val x: Self) extends AnyVal {
       
       inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object mod {
           __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
           
           inline def setNtlm(value: RequestNtlm): Self = StObject.set(x, "ntlm", value.asInstanceOf[js.Any])
           

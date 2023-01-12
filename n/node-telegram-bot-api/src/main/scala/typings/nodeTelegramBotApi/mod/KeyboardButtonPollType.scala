@@ -16,7 +16,8 @@ object KeyboardButtonPollType {
     __obj.asInstanceOf[KeyboardButtonPollType]
   }
   
-  extension [Self <: KeyboardButtonPollType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardButtonPollType] (val x: Self) extends AnyVal {
     
     inline def setType(value: PollType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

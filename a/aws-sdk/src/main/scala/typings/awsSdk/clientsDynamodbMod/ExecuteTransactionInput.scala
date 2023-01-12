@@ -28,7 +28,8 @@ object ExecuteTransactionInput {
     __obj.asInstanceOf[ExecuteTransactionInput]
   }
   
-  extension [Self <: ExecuteTransactionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteTransactionInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

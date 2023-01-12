@@ -28,7 +28,8 @@ object SNOMEDCTDetails {
     __obj.asInstanceOf[SNOMEDCTDetails]
   }
   
-  extension [Self <: SNOMEDCTDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SNOMEDCTDetails] (val x: Self) extends AnyVal {
     
     inline def setEdition(value: String): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
     

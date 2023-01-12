@@ -28,7 +28,8 @@ object complexTypesMod {
       __obj.asInstanceOf[MdxjsEsm]
     }
     
-    extension [Self <: MdxjsEsm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MdxjsEsm] (val x: Self) extends AnyVal {
       
       inline def setData(value: Estree & js.UndefOr[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object complexTypesMod {
         __obj.asInstanceOf[ElementContentMap]
       }
       
-      extension [Self <: ElementContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ElementContentMap] (val x: Self) extends AnyVal {
         
         inline def setMdxjsEsm(value: MdxjsEsm): Self = StObject.set(x, "mdxjsEsm", value.asInstanceOf[js.Any])
       }
@@ -69,7 +71,8 @@ object complexTypesMod {
         __obj.asInstanceOf[RootContentMap]
       }
       
-      extension [Self <: RootContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RootContentMap] (val x: Self) extends AnyVal {
         
         inline def setMdxjsEsm(value: MdxjsEsm): Self = StObject.set(x, "mdxjsEsm", value.asInstanceOf[js.Any])
       }
@@ -90,7 +93,8 @@ object complexTypesMod {
         __obj.asInstanceOf[BlockContentMap]
       }
       
-      extension [Self <: BlockContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BlockContentMap] (val x: Self) extends AnyVal {
         
         inline def setMdxjsEsm(value: MdxjsEsm): Self = StObject.set(x, "mdxjsEsm", value.asInstanceOf[js.Any])
       }

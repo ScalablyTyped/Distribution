@@ -22,7 +22,8 @@ object IArrayStore {
     __obj.asInstanceOf[IArrayStore]
   }
   
-  extension [Self <: IArrayStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IArrayStore] (val x: Self) extends AnyVal {
     
     inline def setLoadData(value: (/* data */ js.UndefOr[Any], /* append */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "loadData", js.Any.fromFunction2(value))
     

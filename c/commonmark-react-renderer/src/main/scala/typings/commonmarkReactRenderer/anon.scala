@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object anon {
       __obj.asInstanceOf[PartialRenderers]
     }
     
-    extension [Self <: PartialRenderers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRenderers] (val x: Self) extends AnyVal {
       
       inline def setBlockquote(value: String | ComponentType[CommonProps]): Self = StObject.set(x, "Blockquote", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object anon {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

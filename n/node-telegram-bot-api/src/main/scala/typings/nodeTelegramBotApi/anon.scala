@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setChat_id(value: Double): Self = StObject.set(x, "chat_id", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setFor_channels(value: Boolean): Self = StObject.set(x, "for_channels", value.asInstanceOf[js.Any])
       
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Chatid]
     }
     
-    extension [Self <: Chatid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chatid] (val x: Self) extends AnyVal {
       
       inline def setChat_id(value: Double): Self = StObject.set(x, "chat_id", value.asInstanceOf[js.Any])
       
@@ -85,7 +88,8 @@ object anon {
       __obj.asInstanceOf[Forchannels]
     }
     
-    extension [Self <: Forchannels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Forchannels] (val x: Self) extends AnyVal {
       
       inline def setFor_channels(value: Boolean): Self = StObject.set(x, "for_channels", value.asInstanceOf[js.Any])
       
@@ -110,7 +114,8 @@ object anon {
       __obj.asInstanceOf[Languagecode]
     }
     
-    extension [Self <: Languagecode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Languagecode] (val x: Self) extends AnyVal {
       
       inline def setLanguage_code(value: String): Self = StObject.set(x, "language_code", value.asInstanceOf[js.Any])
       
@@ -142,7 +147,8 @@ object anon {
       __obj.asInstanceOf[PartialAnswerCallbackQuer]
     }
     
-    extension [Self <: PartialAnswerCallbackQuer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAnswerCallbackQuer] (val x: Self) extends AnyVal {
       
       inline def setCache_time(value: Double): Self = StObject.set(x, "cache_time", value.asInstanceOf[js.Any])
       

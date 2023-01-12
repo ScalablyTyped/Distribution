@@ -81,7 +81,8 @@ object IngestProcessorContainer {
     __obj.asInstanceOf[IngestProcessorContainer]
   }
   
-  extension [Self <: IngestProcessorContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestProcessorContainer] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: IngestAppendProcessor): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     

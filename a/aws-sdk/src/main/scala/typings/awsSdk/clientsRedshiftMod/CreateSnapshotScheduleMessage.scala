@@ -43,7 +43,8 @@ object CreateSnapshotScheduleMessage {
     __obj.asInstanceOf[CreateSnapshotScheduleMessage]
   }
   
-  extension [Self <: CreateSnapshotScheduleMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSnapshotScheduleMessage] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: BooleanOptional): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SankeyNodeStyleOptions {
     __obj.asInstanceOf[SankeyNodeStyleOptions]
   }
   
-  extension [Self <: SankeyNodeStyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SankeyNodeStyleOptions] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: Any): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

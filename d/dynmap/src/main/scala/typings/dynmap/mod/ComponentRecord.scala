@@ -37,7 +37,8 @@ object ComponentRecord {
     __obj.asInstanceOf[ComponentRecord]
   }
   
-  extension [Self <: ComponentRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentRecord] (val x: Self) extends AnyVal {
     
     inline def setChat(value: typings.dynmap.anon.Component): Self = StObject.set(x, "chat", value.asInstanceOf[js.Any])
     

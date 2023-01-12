@@ -15,7 +15,8 @@ object TypeofSubscriptionCancel {
     __obj.asInstanceOf[TypeofSubscriptionCancel]
   }
   
-  extension [Self <: TypeofSubscriptionCancel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSubscriptionCancel] (val x: Self) extends AnyVal {
     
     inline def setCancellationReason(value: Any): Self = StObject.set(x, "CancellationReason", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object CopyMode {
     __obj.asInstanceOf[CopyMode]
   }
   
-  extension [Self <: CopyMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyMode] (val x: Self) extends AnyVal {
     
     inline def setCopyMode(value: String): Self = StObject.set(x, "copyMode", value.asInstanceOf[js.Any])
     

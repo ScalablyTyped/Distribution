@@ -23,7 +23,8 @@ object CSSTransitionComponentImplementation {
     __obj.asInstanceOf[CSSTransitionComponentImplementation[E]]
   }
   
-  extension [Self <: CSSTransitionComponentImplementation[?], E /* <: HTMLElement */](x: Self & CSSTransitionComponentImplementation[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSTransitionComponentImplementation[?], E /* <: HTMLElement */] (val x: Self & CSSTransitionComponentImplementation[E]) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }

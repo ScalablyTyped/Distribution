@@ -34,7 +34,8 @@ object SetExpressionRequest {
     __obj.asInstanceOf[SetExpressionRequest]
   }
   
-  extension [Self <: SetExpressionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetExpressionRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: SetExpressionArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

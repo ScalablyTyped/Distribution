@@ -43,7 +43,8 @@ object DBSubnetGroup {
     __obj.asInstanceOf[DBSubnetGroup]
   }
   
-  extension [Self <: DBSubnetGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBSubnetGroup] (val x: Self) extends AnyVal {
     
     inline def setDBSubnetGroupArn(value: String): Self = StObject.set(x, "DBSubnetGroupArn", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object distNotmodifiedMod {
       __obj.asInstanceOf[NotModifiedError]
     }
     
-    extension [Self <: NotModifiedError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotModifiedError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }

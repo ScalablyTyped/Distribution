@@ -16,7 +16,8 @@ object DigitalContentLabelTargetingOptionDetails {
     __obj.asInstanceOf[DigitalContentLabelTargetingOptionDetails]
   }
   
-  extension [Self <: DigitalContentLabelTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DigitalContentLabelTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setContentRatingTier(value: String): Self = StObject.set(x, "contentRatingTier", value.asInstanceOf[js.Any])
     

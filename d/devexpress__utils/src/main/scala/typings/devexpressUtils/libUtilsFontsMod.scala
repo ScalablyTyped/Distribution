@@ -64,7 +64,8 @@ object libUtilsFontsMod {
       __obj.asInstanceOf[IFontFace]
     }
     
-    extension [Self <: IFontFace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFontFace] (val x: Self) extends AnyVal {
       
       inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object libUtilsFontsMod {
       __obj.asInstanceOf[IFontFaceDescriptors]
     }
     
-    extension [Self <: IFontFaceDescriptors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFontFaceDescriptors] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       

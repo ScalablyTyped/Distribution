@@ -20,7 +20,8 @@ object ComponentLoadFailedEventArgs {
     __obj.asInstanceOf[ComponentLoadFailedEventArgs]
   }
   
-  extension [Self <: ComponentLoadFailedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentLoadFailedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCompletion(value: MediaProtectionServiceCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
     

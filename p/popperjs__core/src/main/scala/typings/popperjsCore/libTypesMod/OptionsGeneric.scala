@@ -23,7 +23,8 @@ object OptionsGeneric {
     __obj.asInstanceOf[OptionsGeneric[TModifier]]
   }
   
-  extension [Self <: OptionsGeneric[?], TModifier](x: Self & OptionsGeneric[TModifier]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsGeneric[?], TModifier] (val x: Self & OptionsGeneric[TModifier]) extends AnyVal {
     
     inline def setModifiers(value: js.Array[TModifier]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     

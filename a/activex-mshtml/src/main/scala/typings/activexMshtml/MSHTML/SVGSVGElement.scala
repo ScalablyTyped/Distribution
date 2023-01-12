@@ -196,7 +196,8 @@ object SVGSVGElement {
     __obj.asInstanceOf[SVGSVGElement]
   }
   
-  extension [Self <: SVGSVGElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGSVGElement] (val x: Self) extends AnyVal {
     
     inline def setAnimationsPaused(value: () => Boolean): Self = StObject.set(x, "animationsPaused", js.Any.fromFunction0(value))
     

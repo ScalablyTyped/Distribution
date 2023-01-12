@@ -31,7 +31,8 @@ object DataLabelsFilterOptionsObject {
     __obj.asInstanceOf[DataLabelsFilterOptionsObject]
   }
   
-  extension [Self <: DataLabelsFilterOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataLabelsFilterOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

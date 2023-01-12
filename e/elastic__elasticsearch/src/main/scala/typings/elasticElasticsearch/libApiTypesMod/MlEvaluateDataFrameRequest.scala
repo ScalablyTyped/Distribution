@@ -21,7 +21,8 @@ object MlEvaluateDataFrameRequest {
     __obj.asInstanceOf[MlEvaluateDataFrameRequest]
   }
   
-  extension [Self <: MlEvaluateDataFrameRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlEvaluateDataFrameRequest] (val x: Self) extends AnyVal {
     
     inline def setEvaluation(value: MlDataframeEvaluationContainer): Self = StObject.set(x, "evaluation", value.asInstanceOf[js.Any])
     

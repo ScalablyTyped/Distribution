@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Promises]
     }
     
-    extension [Self <: Promises](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promises] (val x: Self) extends AnyVal {
       
       inline def setPromises(value: PromisesFn & RecordCommandPromisesFn): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
     }
@@ -421,7 +422,8 @@ object anon {
       __obj.asInstanceOf[RecordCommandApiFn]
     }
     
-    extension [Self <: RecordCommandApiFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordCommandApiFn] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: ApiFn): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -957,7 +959,8 @@ object anon {
       __obj.asInstanceOf[RecordCommandPromisesFn]
     }
     
-    extension [Self <: RecordCommandPromisesFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordCommandPromisesFn] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: PromisesFn): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

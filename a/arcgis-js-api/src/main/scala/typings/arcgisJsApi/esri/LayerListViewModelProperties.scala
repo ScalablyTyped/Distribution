@@ -38,7 +38,8 @@ object LayerListViewModelProperties {
     __obj.asInstanceOf[LayerListViewModelProperties]
   }
   
-  extension [Self <: LayerListViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerListViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setCheckPublishStatusEnabled(value: Boolean): Self = StObject.set(x, "checkPublishStatusEnabled", value.asInstanceOf[js.Any])
     

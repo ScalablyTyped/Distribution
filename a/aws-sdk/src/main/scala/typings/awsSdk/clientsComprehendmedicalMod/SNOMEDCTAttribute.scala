@@ -68,7 +68,8 @@ object SNOMEDCTAttribute {
     __obj.asInstanceOf[SNOMEDCTAttribute]
   }
   
-  extension [Self <: SNOMEDCTAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SNOMEDCTAttribute] (val x: Self) extends AnyVal {
     
     inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     

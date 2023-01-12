@@ -33,7 +33,8 @@ object ReplaceContentEntry {
     __obj.asInstanceOf[ReplaceContentEntry]
   }
   
-  extension [Self <: ReplaceContentEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceContentEntry] (val x: Self) extends AnyVal {
     
     inline def setContent(value: FileContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

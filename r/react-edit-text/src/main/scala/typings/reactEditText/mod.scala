@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[EditTextProps]
     }
     
-    extension [Self <: EditTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditTextProps] (val x: Self) extends AnyVal {
       
       inline def setEditButtonContent(value: ReactNode): Self = StObject.set(x, "editButtonContent", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object mod {
       __obj.asInstanceOf[EditTextareaProps]
     }
     
-    extension [Self <: EditTextareaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditTextareaProps] (val x: Self) extends AnyVal {
       
       inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object mod {
       __obj.asInstanceOf[SharedProps]
     }
     
-    extension [Self <: SharedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -331,7 +334,8 @@ object mod {
       __obj.asInstanceOf[onSaveProps]
     }
     
-    extension [Self <: onSaveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: onSaveProps] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

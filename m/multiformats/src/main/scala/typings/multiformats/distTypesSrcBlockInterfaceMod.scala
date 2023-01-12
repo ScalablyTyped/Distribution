@@ -23,7 +23,8 @@ object distTypesSrcBlockInterfaceMod {
       __obj.asInstanceOf[Block[T, C, A, V]]
     }
     
-    extension [Self <: Block[?, ?, ?, ?], T, C /* <: Double */, A /* <: Double */, V /* <: Version */](x: Self & (Block[T, C, A, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Block[?, ?, ?, ?], T, C /* <: Double */, A /* <: Double */, V /* <: Version */] (val x: Self & (Block[T, C, A, V])) extends AnyVal {
       
       inline def setBytes(value: ByteView[T]): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object distTypesSrcBlockInterfaceMod {
       __obj.asInstanceOf[BlockView[T, C, A, V]]
     }
     
-    extension [Self <: BlockView[?, ?, ?, ?], T, C /* <: Double */, A /* <: Double */, V /* <: Version */](x: Self & (BlockView[T, C, A, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockView[?, ?, ?, ?], T, C /* <: Double */, A /* <: Double */, V /* <: Version */] (val x: Self & (BlockView[T, C, A, V])) extends AnyVal {
       
       inline def setCid(value: CID[T, C, A, V]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object HookConfiguration {
     __obj.asInstanceOf[HookConfiguration]
   }
   
-  extension [Self <: HookConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInvocationCondition(value: DocumentAttributeCondition): Self = StObject.set(x, "InvocationCondition", value.asInstanceOf[js.Any])
     

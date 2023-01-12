@@ -20,7 +20,8 @@ object IOCROptions {
     __obj.asInstanceOf[IOCROptions]
   }
   
-  extension [Self <: IOCROptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOCROptions] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IOCROptions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

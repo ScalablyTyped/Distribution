@@ -37,7 +37,8 @@ object ElevationProfileLineViewProperties {
     __obj.asInstanceOf[ElevationProfileLineViewProperties]
   }
   
-  extension [Self <: ElevationProfileLineViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationProfileLineViewProperties] (val x: Self) extends AnyVal {
     
     inline def setExclude(
       value: (js.Array[

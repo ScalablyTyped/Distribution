@@ -44,7 +44,8 @@ object DatagramSocketMessageReceivedEventArgs {
     __obj.asInstanceOf[DatagramSocketMessageReceivedEventArgs]
   }
   
-  extension [Self <: DatagramSocketMessageReceivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatagramSocketMessageReceivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetDataReader(value: () => DataReader): Self = StObject.set(x, "getDataReader", js.Any.fromFunction0(value))
     

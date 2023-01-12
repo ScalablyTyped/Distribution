@@ -50,7 +50,8 @@ object IgDataChartSeriesLegend {
     __obj.asInstanceOf[IgDataChartSeriesLegend]
   }
   
-  extension [Self <: IgDataChartSeriesLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgDataChartSeriesLegend] (val x: Self) extends AnyVal {
     
     inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

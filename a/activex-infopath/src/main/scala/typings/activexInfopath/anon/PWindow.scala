@@ -19,7 +19,8 @@ object PWindow {
     __obj.asInstanceOf[PWindow]
   }
   
-  extension [Self <: PWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PWindow] (val x: Self) extends AnyVal {
     
     inline def setPDocument(value: _XDocument): Self = StObject.set(x, "pDocument", value.asInstanceOf[js.Any])
     

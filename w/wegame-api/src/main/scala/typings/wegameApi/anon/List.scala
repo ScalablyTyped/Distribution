@@ -18,7 +18,8 @@ object List {
     __obj.asInstanceOf[typings.wegameApi.anon.List]
   }
   
-  extension [Self <: typings.wegameApi.anon.List](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.wegameApi.anon.List] (val x: Self) extends AnyVal {
     
     inline def setList(value: js.Array[AvatarUrl]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

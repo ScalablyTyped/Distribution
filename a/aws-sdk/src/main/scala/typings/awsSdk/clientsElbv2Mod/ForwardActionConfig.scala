@@ -23,7 +23,8 @@ object ForwardActionConfig {
     __obj.asInstanceOf[ForwardActionConfig]
   }
   
-  extension [Self <: ForwardActionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardActionConfig] (val x: Self) extends AnyVal {
     
     inline def setTargetGroupStickinessConfig(value: TargetGroupStickinessConfig): Self = StObject.set(x, "TargetGroupStickinessConfig", value.asInstanceOf[js.Any])
     

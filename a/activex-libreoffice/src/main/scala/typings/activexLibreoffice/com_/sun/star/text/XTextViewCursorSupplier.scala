@@ -35,7 +35,8 @@ object XTextViewCursorSupplier {
     __obj.asInstanceOf[XTextViewCursorSupplier]
   }
   
-  extension [Self <: XTextViewCursorSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextViewCursorSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetViewCursor(value: () => XTextViewCursor): Self = StObject.set(x, "getViewCursor", js.Any.fromFunction0(value))
     

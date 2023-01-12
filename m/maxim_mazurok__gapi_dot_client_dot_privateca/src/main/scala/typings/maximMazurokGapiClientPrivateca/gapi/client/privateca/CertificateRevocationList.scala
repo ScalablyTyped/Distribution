@@ -45,7 +45,8 @@ object CertificateRevocationList {
     __obj.asInstanceOf[CertificateRevocationList]
   }
   
-  extension [Self <: CertificateRevocationList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateRevocationList] (val x: Self) extends AnyVal {
     
     inline def setAccessUrl(value: String): Self = StObject.set(x, "accessUrl", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DetailsHTMLAttributes {
     __obj.asInstanceOf[DetailsHTMLAttributes]
   }
   
-  extension [Self <: DetailsHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailsHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setOntoggle(value: String): Self = StObject.set(x, "ontoggle", value.asInstanceOf[js.Any])
     

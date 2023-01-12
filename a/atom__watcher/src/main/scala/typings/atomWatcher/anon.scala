@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[PartialWatcherOptions]
     }
     
-    extension [Self <: PartialWatcherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialWatcherOptions] (val x: Self) extends AnyVal {
       
       inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[PartialWatcherSettings]
     }
     
-    extension [Self <: PartialWatcherSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialWatcherSettings] (val x: Self) extends AnyVal {
       
       inline def setJsLog(value: LogTarget): Self = StObject.set(x, "jsLog", value.asInstanceOf[js.Any])
       

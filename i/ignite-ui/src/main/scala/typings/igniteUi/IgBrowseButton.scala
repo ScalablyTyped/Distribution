@@ -28,7 +28,8 @@ object IgBrowseButton {
     __obj.asInstanceOf[IgBrowseButton]
   }
   
-  extension [Self <: IgBrowseButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgBrowseButton] (val x: Self) extends AnyVal {
     
     inline def setAutoselect(value: Boolean): Self = StObject.set(x, "autoselect", value.asInstanceOf[js.Any])
     

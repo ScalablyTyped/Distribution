@@ -46,7 +46,8 @@ object BankingPayeeV2 {
     __obj.asInstanceOf[BankingPayeeV2]
   }
   
-  extension [Self <: BankingPayeeV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BankingPayeeV2] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

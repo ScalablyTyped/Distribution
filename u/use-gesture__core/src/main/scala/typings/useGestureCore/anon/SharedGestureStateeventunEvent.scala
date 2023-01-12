@@ -105,7 +105,8 @@ object SharedGestureStateeventunEvent {
     __obj.asInstanceOf[SharedGestureStateeventunEvent]
   }
   
-  extension [Self <: SharedGestureStateeventunEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedGestureStateeventunEvent] (val x: Self) extends AnyVal {
     
     inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteResourceDataSyncRequest {
     __obj.asInstanceOf[DeleteResourceDataSyncRequest]
   }
   
-  extension [Self <: DeleteResourceDataSyncRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResourceDataSyncRequest] (val x: Self) extends AnyVal {
     
     inline def setSyncName(value: ResourceDataSyncName): Self = StObject.set(x, "SyncName", value.asInstanceOf[js.Any])
     

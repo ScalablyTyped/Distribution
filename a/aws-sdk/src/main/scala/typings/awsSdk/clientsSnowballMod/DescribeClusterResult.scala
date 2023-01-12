@@ -18,7 +18,8 @@ object DescribeClusterResult {
     __obj.asInstanceOf[DescribeClusterResult]
   }
   
-  extension [Self <: DescribeClusterResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeClusterResult] (val x: Self) extends AnyVal {
     
     inline def setClusterMetadata(value: ClusterMetadata): Self = StObject.set(x, "ClusterMetadata", value.asInstanceOf[js.Any])
     

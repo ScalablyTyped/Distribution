@@ -48,7 +48,8 @@ object KeyboardNavigationSeriesNavigationOptionsObject {
     __obj.asInstanceOf[KeyboardNavigationSeriesNavigationOptionsObject]
   }
   
-  extension [Self <: KeyboardNavigationSeriesNavigationOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardNavigationSeriesNavigationOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

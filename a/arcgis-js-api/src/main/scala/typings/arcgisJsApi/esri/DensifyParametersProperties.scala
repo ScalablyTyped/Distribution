@@ -47,7 +47,8 @@ object DensifyParametersProperties {
     __obj.asInstanceOf[DensifyParametersProperties]
   }
   
-  extension [Self <: DensifyParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DensifyParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
     

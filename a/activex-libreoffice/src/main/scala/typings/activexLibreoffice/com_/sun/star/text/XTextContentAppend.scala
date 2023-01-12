@@ -45,7 +45,8 @@ object XTextContentAppend {
     __obj.asInstanceOf[XTextContentAppend]
   }
   
-  extension [Self <: XTextContentAppend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextContentAppend] (val x: Self) extends AnyVal {
     
     inline def setAppendTextContent(value: (XTextContent, PropertyValues) => XTextRange): Self = StObject.set(x, "appendTextContent", js.Any.fromFunction2(value))
     

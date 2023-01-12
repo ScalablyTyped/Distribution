@@ -87,7 +87,8 @@ object anon {
       __obj.asInstanceOf[AllOf]
     }
     
-    extension [Self <: AllOf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllOf] (val x: Self) extends AnyVal {
       
       inline def setAllOf(value: (Any, Any, Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "allOf", js.Any.fromFunction3(value))
       
@@ -166,7 +167,8 @@ object anon {
       __obj.asInstanceOf[Array]
     }
     
-    extension [Self <: Array](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
       
       inline def setArray(value: Any => Boolean): Self = StObject.set(x, "array", js.Any.fromFunction1(value))
       
@@ -213,7 +215,8 @@ object anon {
       __obj.asInstanceOf[Integer]
     }
     
-    extension [Self <: Integer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Integer] (val x: Self) extends AnyVal {
       
       inline def setArray(value: (Any, Any, Any) => js.Array[SchemaValidationError]): Self = StObject.set(x, "array", js.Any.fromFunction3(value))
       
@@ -307,7 +310,8 @@ object anon {
       __obj.asInstanceOf[_empty]
     }
     
-    extension [Self <: _empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
       
       inline def setContains(value: (Any, Any) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
       

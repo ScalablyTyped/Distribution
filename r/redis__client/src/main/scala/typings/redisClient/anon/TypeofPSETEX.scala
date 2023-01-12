@@ -25,7 +25,8 @@ object TypeofPSETEX {
     __obj.asInstanceOf[TypeofPSETEX]
   }
   
-  extension [Self <: TypeofPSETEX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPSETEX] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

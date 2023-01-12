@@ -27,7 +27,8 @@ object distSrcOnStageGeneralDistComponentsEmailFillMod extends Shortcut {
       __obj.asInstanceOf[EmailFillProps]
     }
     
-    extension [Self <: EmailFillProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailFillProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

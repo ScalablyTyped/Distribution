@@ -18,7 +18,8 @@ object StartDataSourceSyncJobResponse {
     __obj.asInstanceOf[StartDataSourceSyncJobResponse]
   }
   
-  extension [Self <: StartDataSourceSyncJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartDataSourceSyncJobResponse] (val x: Self) extends AnyVal {
     
     inline def setExecutionId(value: String): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
     

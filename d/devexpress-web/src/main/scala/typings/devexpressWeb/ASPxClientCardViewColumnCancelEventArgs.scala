@@ -23,7 +23,8 @@ object ASPxClientCardViewColumnCancelEventArgs {
     __obj.asInstanceOf[ASPxClientCardViewColumnCancelEventArgs]
   }
   
-  extension [Self <: ASPxClientCardViewColumnCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCardViewColumnCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: ASPxClientCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }

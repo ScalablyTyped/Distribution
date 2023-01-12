@@ -16,7 +16,8 @@ object DataViewRepetitionObjectDescriptor {
     __obj.asInstanceOf[DataViewRepetitionObjectDescriptor]
   }
   
-  extension [Self <: DataViewRepetitionObjectDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewRepetitionObjectDescriptor] (val x: Self) extends AnyVal {
     
     inline def setFormattingProperties(value: js.Array[String]): Self = StObject.set(x, "formattingProperties", value.asInstanceOf[js.Any])
     

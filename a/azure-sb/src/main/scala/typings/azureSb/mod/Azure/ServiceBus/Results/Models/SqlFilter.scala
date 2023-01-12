@@ -25,7 +25,8 @@ object SqlFilter {
     __obj.asInstanceOf[SqlFilter]
   }
   
-  extension [Self <: SqlFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlFilter] (val x: Self) extends AnyVal {
     
     inline def setCompatibilityLevel(value: String): Self = StObject.set(x, "CompatibilityLevel", value.asInstanceOf[js.Any])
     

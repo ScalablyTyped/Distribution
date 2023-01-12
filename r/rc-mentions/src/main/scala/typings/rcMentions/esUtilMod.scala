@@ -45,7 +45,8 @@ object esUtilMod {
       __obj.asInstanceOf[MeasureConfig]
     }
     
-    extension [Self <: MeasureConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeasureConfig] (val x: Self) extends AnyVal {
       
       inline def setMeasureLocation(value: Double): Self = StObject.set(x, "measureLocation", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object esUtilMod {
       __obj.asInstanceOf[MeasureIndex]
     }
     
-    extension [Self <: MeasureIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeasureIndex] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       

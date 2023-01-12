@@ -17,7 +17,8 @@ object ViewPagerAndroidOnPageScrollEventData {
     __obj.asInstanceOf[ViewPagerAndroidOnPageScrollEventData]
   }
   
-  extension [Self <: ViewPagerAndroidOnPageScrollEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPagerAndroidOnPageScrollEventData] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

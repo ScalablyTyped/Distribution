@@ -74,7 +74,8 @@ object SourceMapper {
     __obj.asInstanceOf[SourceMapper]
   }
   
-  extension [Self <: SourceMapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMapper] (val x: Self) extends AnyVal {
     
     inline def setAllSourceMappings(value: Any): Self = StObject.set(x, "allSourceMappings", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CreateMeetingDialOutResponse {
     __obj.asInstanceOf[CreateMeetingDialOutResponse]
   }
   
-  extension [Self <: CreateMeetingDialOutResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMeetingDialOutResponse] (val x: Self) extends AnyVal {
     
     inline def setTransactionId(value: GuidString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
     

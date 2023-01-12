@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Ref]
     }
     
-    extension [Self <: Ref](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
       
       inline def setRef(value: Any => Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     }

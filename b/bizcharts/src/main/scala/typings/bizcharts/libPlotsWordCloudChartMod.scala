@@ -163,7 +163,8 @@ object libPlotsWordCloudChartMod extends Shortcut {
       __obj.asInstanceOf[WordCloudCfg]
     }
     
-    extension [Self <: WordCloudCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WordCloudCfg] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -400,7 +401,8 @@ object libPlotsWordCloudChartMod extends Shortcut {
       __obj.asInstanceOf[WordStylePolyfill]
     }
     
-    extension [Self <: WordStylePolyfill](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WordStylePolyfill] (val x: Self) extends AnyVal {
       
       inline def setActive(value: ShapeStyle): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

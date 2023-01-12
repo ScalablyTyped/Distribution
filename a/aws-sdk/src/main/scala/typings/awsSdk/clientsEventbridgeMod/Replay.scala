@@ -58,7 +58,8 @@ object Replay {
     __obj.asInstanceOf[Replay]
   }
   
-  extension [Self <: Replay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Replay] (val x: Self) extends AnyVal {
     
     inline def setEventEndTime(value: js.Date): Self = StObject.set(x, "EventEndTime", value.asInstanceOf[js.Any])
     

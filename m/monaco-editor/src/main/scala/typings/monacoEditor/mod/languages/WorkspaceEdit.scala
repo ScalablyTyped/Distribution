@@ -15,7 +15,8 @@ object WorkspaceEdit {
     __obj.asInstanceOf[WorkspaceEdit]
   }
   
-  extension [Self <: WorkspaceEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceEdit] (val x: Self) extends AnyVal {
     
     inline def setEdits(value: js.Array[IWorkspaceTextEdit | IWorkspaceFileEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     

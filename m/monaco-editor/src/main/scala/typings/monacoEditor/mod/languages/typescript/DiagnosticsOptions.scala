@@ -27,7 +27,8 @@ object DiagnosticsOptions {
     __obj.asInstanceOf[DiagnosticsOptions]
   }
   
-  extension [Self <: DiagnosticsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticsOptions] (val x: Self) extends AnyVal {
     
     inline def setDiagnosticCodesToIgnore(value: js.Array[Double]): Self = StObject.set(x, "diagnosticCodesToIgnore", value.asInstanceOf[js.Any])
     

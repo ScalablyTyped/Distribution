@@ -27,7 +27,8 @@ object ApplicativeCompositionHKT2C {
     __obj.asInstanceOf[ApplicativeCompositionHKT2C[F, G, E]]
   }
   
-  extension [Self <: ApplicativeCompositionHKT2C[?, ?, ?], F, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (ApplicativeCompositionHKT2C[F, G, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicativeCompositionHKT2C[?, ?, ?], F, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (ApplicativeCompositionHKT2C[F, G, E])) extends AnyVal {
     
     inline def setAp(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, A>> */ Any) => Any

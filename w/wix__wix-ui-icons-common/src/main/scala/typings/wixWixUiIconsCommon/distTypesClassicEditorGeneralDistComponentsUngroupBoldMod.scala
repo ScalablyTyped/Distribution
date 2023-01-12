@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsUngroupBoldMod extends Shortcu
       __obj.asInstanceOf[UngroupBoldProps]
     }
     
-    extension [Self <: UngroupBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UngroupBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

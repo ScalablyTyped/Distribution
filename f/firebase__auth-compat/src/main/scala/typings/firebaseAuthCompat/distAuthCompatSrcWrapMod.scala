@@ -25,7 +25,8 @@ object distAuthCompatSrcWrapMod {
       __obj.asInstanceOf[ReverseWrapper[T]]
     }
     
-    extension [Self <: ReverseWrapper[?], T](x: Self & ReverseWrapper[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReverseWrapper[?], T] (val x: Self & ReverseWrapper[T]) extends AnyVal {
       
       inline def setWrapped(value: () => T): Self = StObject.set(x, "wrapped", js.Any.fromFunction0(value))
     }
@@ -42,7 +43,8 @@ object distAuthCompatSrcWrapMod {
       __obj.asInstanceOf[Wrapper[T]]
     }
     
-    extension [Self <: Wrapper[?], T](x: Self & Wrapper[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wrapper[?], T] (val x: Self & Wrapper[T]) extends AnyVal {
       
       inline def setUnwrap(value: () => T): Self = StObject.set(x, "unwrap", js.Any.fromFunction0(value))
     }

@@ -18,7 +18,8 @@ object ColdStorageOptions {
     __obj.asInstanceOf[ColdStorageOptions]
   }
   
-  extension [Self <: ColdStorageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColdStorageOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
   }

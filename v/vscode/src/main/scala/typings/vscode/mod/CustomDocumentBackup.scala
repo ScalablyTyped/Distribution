@@ -31,7 +31,8 @@ object CustomDocumentBackup {
     __obj.asInstanceOf[CustomDocumentBackup]
   }
   
-  extension [Self <: CustomDocumentBackup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDocumentBackup] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     

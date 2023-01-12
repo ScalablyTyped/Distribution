@@ -54,7 +54,8 @@ object DataTableCustomRowProps {
     __obj.asInstanceOf[DataTableCustomRowProps[R]]
   }
   
-  extension [Self <: DataTableCustomRowProps[?], R /* <: DataTableRow[String] */](x: Self & DataTableCustomRowProps[R]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableCustomRowProps[?], R /* <: DataTableRow[String] */] (val x: Self & DataTableCustomRowProps[R]) extends AnyVal {
     
     inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
     

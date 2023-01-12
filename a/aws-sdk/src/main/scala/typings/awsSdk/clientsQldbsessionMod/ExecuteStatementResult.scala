@@ -28,7 +28,8 @@ object ExecuteStatementResult {
     __obj.asInstanceOf[ExecuteStatementResult]
   }
   
-  extension [Self <: ExecuteStatementResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteStatementResult] (val x: Self) extends AnyVal {
     
     inline def setConsumedIOs(value: IOUsage): Self = StObject.set(x, "ConsumedIOs", value.asInstanceOf[js.Any])
     

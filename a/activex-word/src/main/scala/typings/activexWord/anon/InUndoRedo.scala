@@ -17,7 +17,8 @@ object InUndoRedo {
     __obj.asInstanceOf[InUndoRedo]
   }
   
-  extension [Self <: InUndoRedo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InUndoRedo] (val x: Self) extends AnyVal {
     
     inline def setInUndoRedo(value: Boolean): Self = StObject.set(x, "InUndoRedo", value.asInstanceOf[js.Any])
     

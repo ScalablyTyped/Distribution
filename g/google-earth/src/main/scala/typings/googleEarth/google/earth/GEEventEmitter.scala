@@ -56,7 +56,8 @@ object GEEventEmitter {
     __obj.asInstanceOf[GEEventEmitter]
   }
   
-  extension [Self <: GEEventEmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GEEventEmitter] (val x: Self) extends AnyVal {
     
     inline def setClick(value: KmlMouseEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     

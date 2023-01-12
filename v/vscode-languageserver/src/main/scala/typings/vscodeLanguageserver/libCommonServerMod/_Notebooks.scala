@@ -35,7 +35,8 @@ object _Notebooks {
     __obj.asInstanceOf[_Notebooks]
   }
   
-  extension [Self <: _Notebooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _Notebooks] (val x: Self) extends AnyVal {
     
     inline def setAttachPartialResultProgress(value: (ProgressType[Any], PartialResultParams) => js.UndefOr[ResultProgressReporter[Any]]): Self = StObject.set(x, "attachPartialResultProgress", js.Any.fromFunction2(value))
     

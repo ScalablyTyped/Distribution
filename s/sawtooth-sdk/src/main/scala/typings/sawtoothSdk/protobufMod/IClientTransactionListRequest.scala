@@ -25,7 +25,8 @@ object IClientTransactionListRequest {
     __obj.asInstanceOf[IClientTransactionListRequest]
   }
   
-  extension [Self <: IClientTransactionListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientTransactionListRequest] (val x: Self) extends AnyVal {
     
     inline def setHeadId(value: String): Self = StObject.set(x, "headId", value.asInstanceOf[js.Any])
     

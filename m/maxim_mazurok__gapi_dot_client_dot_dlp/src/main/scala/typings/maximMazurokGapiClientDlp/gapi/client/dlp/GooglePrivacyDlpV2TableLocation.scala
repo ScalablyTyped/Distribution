@@ -20,7 +20,8 @@ object GooglePrivacyDlpV2TableLocation {
     __obj.asInstanceOf[GooglePrivacyDlpV2TableLocation]
   }
   
-  extension [Self <: GooglePrivacyDlpV2TableLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2TableLocation] (val x: Self) extends AnyVal {
     
     inline def setRowIndex(value: String): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     

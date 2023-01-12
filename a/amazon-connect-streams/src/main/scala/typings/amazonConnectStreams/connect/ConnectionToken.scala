@@ -16,7 +16,8 @@ object ConnectionToken {
     __obj.asInstanceOf[ConnectionToken]
   }
   
-  extension [Self <: ConnectionToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionToken] (val x: Self) extends AnyVal {
     
     inline def setChatTokenTransport(value: Expiry): Self = StObject.set(x, "chatTokenTransport", value.asInstanceOf[js.Any])
   }

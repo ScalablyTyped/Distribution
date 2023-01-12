@@ -19,7 +19,8 @@ object InapplicabilityDetails {
     __obj.asInstanceOf[InapplicabilityDetails]
   }
   
-  extension [Self <: InapplicabilityDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InapplicabilityDetails] (val x: Self) extends AnyVal {
     
     inline def setInapplicableCount(value: String): Self = StObject.set(x, "inapplicableCount", value.asInstanceOf[js.Any])
     

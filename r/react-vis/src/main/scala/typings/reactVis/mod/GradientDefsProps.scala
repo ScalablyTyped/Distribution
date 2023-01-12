@@ -15,7 +15,8 @@ object GradientDefsProps {
     __obj.asInstanceOf[GradientDefsProps]
   }
   
-  extension [Self <: GradientDefsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GradientDefsProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

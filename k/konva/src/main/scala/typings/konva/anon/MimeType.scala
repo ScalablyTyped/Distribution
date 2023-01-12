@@ -30,7 +30,8 @@ object MimeType {
     __obj.asInstanceOf[MimeType]
   }
   
-  extension [Self <: MimeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MimeType] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* img */ HTMLImageElement => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

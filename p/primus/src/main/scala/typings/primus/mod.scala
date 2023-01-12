@@ -144,7 +144,8 @@ object mod {
       __obj.asInstanceOf[Parser]
     }
     
-    extension [Self <: Parser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parser] (val x: Self) extends AnyVal {
       
       inline def setDecoder(value: (Any, js.Function2[/* error */ js.Error, /* response */ Any, Unit]) => Unit): Self = StObject.set(x, "decoder", js.Any.fromFunction2(value))
       
@@ -271,7 +272,8 @@ object mod {
       __obj.asInstanceOf[PrimusOptions]
     }
     
-    extension [Self <: PrimusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimusOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(
         value: (/* req */ IncomingMessage, /* done */ js.Function1[/* err */ js.UndefOr[String | js.Error | Authenticate], Unit]) => Unit
@@ -356,7 +358,8 @@ object mod {
       __obj.asInstanceOf[PrimusPacket]
     }
     
-    extension [Self <: PrimusPacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimusPacket] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -404,7 +407,8 @@ object mod {
       __obj.asInstanceOf[ReconnectEventOpts]
     }
     
-    extension [Self <: ReconnectEventOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReconnectEventOpts] (val x: Self) extends AnyVal {
       
       inline def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
       
@@ -447,7 +451,8 @@ object mod {
       __obj.asInstanceOf[ReconnectOpts]
     }
     
-    extension [Self <: ReconnectOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReconnectOpts] (val x: Self) extends AnyVal {
       
       inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
@@ -508,7 +513,8 @@ object mod {
       __obj.asInstanceOf[SocketOptions]
     }
     
-    extension [Self <: SocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
       
       inline def setManual(value: Boolean): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
       

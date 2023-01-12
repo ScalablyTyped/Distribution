@@ -23,7 +23,8 @@ object ResolveComponentCandidatesRequest {
     __obj.asInstanceOf[ResolveComponentCandidatesRequest]
   }
   
-  extension [Self <: ResolveComponentCandidatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveComponentCandidatesRequest] (val x: Self) extends AnyVal {
     
     inline def setComponentCandidates(value: ComponentCandidateList): Self = StObject.set(x, "componentCandidates", value.asInstanceOf[js.Any])
     

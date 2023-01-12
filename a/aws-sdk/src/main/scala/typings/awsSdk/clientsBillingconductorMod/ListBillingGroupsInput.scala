@@ -33,7 +33,8 @@ object ListBillingGroupsInput {
     __obj.asInstanceOf[ListBillingGroupsInput]
   }
   
-  extension [Self <: ListBillingGroupsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBillingGroupsInput] (val x: Self) extends AnyVal {
     
     inline def setBillingPeriod(value: BillingPeriod): Self = StObject.set(x, "BillingPeriod", value.asInstanceOf[js.Any])
     

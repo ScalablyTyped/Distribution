@@ -25,7 +25,8 @@ object Confirmdeleteurl {
     __obj.asInstanceOf[Confirmdeleteurl]
   }
   
-  extension [Self <: Confirmdeleteurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Confirmdeleteurl] (val x: Self) extends AnyVal {
     
     inline def setConfirm_delete_url(value: String): Self = StObject.set(x, "confirm_delete_url", value.asInstanceOf[js.Any])
     

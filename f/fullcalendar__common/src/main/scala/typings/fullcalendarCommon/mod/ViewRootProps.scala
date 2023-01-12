@@ -27,7 +27,8 @@ object ViewRootProps {
     __obj.asInstanceOf[ViewRootProps]
   }
   
-  extension [Self <: ViewRootProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewRootProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ref<any> */ Any, js.Array[String]) => Any

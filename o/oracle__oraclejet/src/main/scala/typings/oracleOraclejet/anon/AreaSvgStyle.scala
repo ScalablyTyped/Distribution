@@ -25,7 +25,8 @@ object AreaSvgStyle {
     __obj.asInstanceOf[AreaSvgStyle]
   }
   
-  extension [Self <: AreaSvgStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaSvgStyle] (val x: Self) extends AnyVal {
     
     inline def setAreaSvgStyle(value: js.Object): Self = StObject.set(x, "areaSvgStyle", value.asInstanceOf[js.Any])
     

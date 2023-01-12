@@ -18,7 +18,8 @@ object CertificateOptions {
     __obj.asInstanceOf[CertificateOptions]
   }
   
-  extension [Self <: CertificateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateOptions] (val x: Self) extends AnyVal {
     
     inline def setCertificateTransparencyLoggingPreference(value: CertificateTransparencyLoggingPreference): Self = StObject.set(x, "CertificateTransparencyLoggingPreference", value.asInstanceOf[js.Any])
     

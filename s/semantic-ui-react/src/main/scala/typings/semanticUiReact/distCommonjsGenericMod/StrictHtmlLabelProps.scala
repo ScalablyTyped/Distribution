@@ -16,7 +16,8 @@ object StrictHtmlLabelProps {
     __obj.asInstanceOf[StrictHtmlLabelProps]
   }
   
-  extension [Self <: StrictHtmlLabelProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrictHtmlLabelProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object InstanceStatusDetails {
     __obj.asInstanceOf[InstanceStatusDetails]
   }
   
-  extension [Self <: InstanceStatusDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceStatusDetails] (val x: Self) extends AnyVal {
     
     inline def setImpairedSince(value: js.Date): Self = StObject.set(x, "ImpairedSince", value.asInstanceOf[js.Any])
     

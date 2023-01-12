@@ -17,7 +17,8 @@ object UIkitOffcanvasElement {
     __obj.asInstanceOf[UIkitOffcanvasElement]
   }
   
-  extension [Self <: UIkitOffcanvasElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitOffcanvasElement] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

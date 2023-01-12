@@ -39,7 +39,8 @@ object IndividualElementOptionss {
     __obj.asInstanceOf[IndividualElementOptionss]
   }
   
-  extension [Self <: IndividualElementOptionss](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndividualElementOptionss] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

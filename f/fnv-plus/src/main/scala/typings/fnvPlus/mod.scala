@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[FnvHash]
     }
     
-    extension [Self <: FnvHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FnvHash] (val x: Self) extends AnyVal {
       
       inline def setDec(value: () => String): Self = StObject.set(x, "dec", js.Any.fromFunction0(value))
       

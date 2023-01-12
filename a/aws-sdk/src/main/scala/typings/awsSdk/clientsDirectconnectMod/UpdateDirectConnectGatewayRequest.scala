@@ -26,7 +26,8 @@ object UpdateDirectConnectGatewayRequest {
     __obj.asInstanceOf[UpdateDirectConnectGatewayRequest]
   }
   
-  extension [Self <: UpdateDirectConnectGatewayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDirectConnectGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
     

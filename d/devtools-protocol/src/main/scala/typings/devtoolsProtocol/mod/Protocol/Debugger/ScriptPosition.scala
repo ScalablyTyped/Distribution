@@ -18,7 +18,8 @@ object ScriptPosition {
     __obj.asInstanceOf[ScriptPosition]
   }
   
-  extension [Self <: ScriptPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptPosition] (val x: Self) extends AnyVal {
     
     inline def setColumnNumber(value: integer): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     

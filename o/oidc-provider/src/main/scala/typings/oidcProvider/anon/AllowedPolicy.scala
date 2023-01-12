@@ -28,7 +28,8 @@ object AllowedPolicy {
     __obj.asInstanceOf[AllowedPolicy]
   }
   
-  extension [Self <: AllowedPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedPolicy] (val x: Self) extends AnyVal {
     
     inline def setAllowedPolicy(
       value: (/* ctx */ KoaContextWithOIDC, /* client */ typings.oidcProvider.mod.Client, /* token */ typings.oidcProvider.mod.AccessToken | ClientCredentials | RefreshToken) => CanBePromise[Boolean]

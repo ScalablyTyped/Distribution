@@ -34,7 +34,8 @@ object ReplacementDetail {
     __obj.asInstanceOf[ReplacementDetail]
   }
   
-  extension [Self <: ReplacementDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplacementDetail] (val x: Self) extends AnyVal {
     
     inline def set0(value: Pattern): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

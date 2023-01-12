@@ -19,7 +19,8 @@ object HolderJson {
     __obj.asInstanceOf[HolderJson]
   }
   
-  extension [Self <: HolderJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HolderJson] (val x: Self) extends AnyVal {
     
     inline def setBaseCertificateID(value: IssuerSerialJson): Self = StObject.set(x, "baseCertificateID", value.asInstanceOf[js.Any])
     

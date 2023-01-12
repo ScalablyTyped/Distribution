@@ -19,7 +19,8 @@ object Facebook {
     __obj.asInstanceOf[Facebook]
   }
   
-  extension [Self <: Facebook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Facebook] (val x: Self) extends AnyVal {
     
     inline def setOg_description(value: Nullable[String]): Self = StObject.set(x, "og_description", value.asInstanceOf[js.Any])
     

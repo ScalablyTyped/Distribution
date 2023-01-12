@@ -45,7 +45,8 @@ object CheckBox {
     __obj.asInstanceOf[CheckBox]
   }
   
-  extension [Self <: CheckBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckBox] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: BorderType & Error): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object VRLayer {
     __obj.asInstanceOf[VRLayer]
   }
   
-  extension [Self <: VRLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VRLayer] (val x: Self) extends AnyVal {
     
     inline def setLeftBounds(value: js.Array[Double] | js.typedarray.Float32Array): Self = StObject.set(x, "leftBounds", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object GoogleCloudVisionV1p4beta1ProductSearchResultsResult {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1ProductSearchResultsResult]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1ProductSearchResultsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1ProductSearchResultsResult] (val x: Self) extends AnyVal {
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

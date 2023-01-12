@@ -65,7 +65,8 @@ object libComponentsCoachmarkBeakBeakDottypesMod {
       __obj.asInstanceOf[IBeakProps]
     }
     
-    extension [Self <: IBeakProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBeakProps] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object libComponentsCoachmarkBeakBeakDottypesMod {
       __obj.asInstanceOf[IBeakStylesProps]
     }
     
-    extension [Self <: IBeakStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBeakStylesProps] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

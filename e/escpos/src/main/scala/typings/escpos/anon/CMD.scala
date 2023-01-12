@@ -24,7 +24,8 @@ object CMD {
     __obj.asInstanceOf[CMD]
   }
   
-  extension [Self <: CMD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMD] (val x: Self) extends AnyVal {
     
     inline def setCMD(value: EscapeNumbersignNumbersignQPIX): Self = StObject.set(x, "CMD", value.asInstanceOf[js.Any])
     

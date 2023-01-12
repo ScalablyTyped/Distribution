@@ -461,7 +461,8 @@ object PartialTreeHeadProps {
     __obj.asInstanceOf[PartialTreeHeadProps]
   }
   
-  extension [Self <: PartialTreeHeadProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTreeHeadProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

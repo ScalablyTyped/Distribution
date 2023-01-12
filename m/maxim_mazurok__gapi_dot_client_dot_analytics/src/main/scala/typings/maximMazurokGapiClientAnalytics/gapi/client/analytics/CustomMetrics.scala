@@ -40,7 +40,8 @@ object CustomMetrics {
     __obj.asInstanceOf[CustomMetrics]
   }
   
-  extension [Self <: CustomMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomMetrics] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[CustomMetric]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

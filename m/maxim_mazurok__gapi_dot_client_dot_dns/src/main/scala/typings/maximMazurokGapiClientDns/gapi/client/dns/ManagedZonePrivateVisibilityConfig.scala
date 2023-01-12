@@ -18,7 +18,8 @@ object ManagedZonePrivateVisibilityConfig {
     __obj.asInstanceOf[ManagedZonePrivateVisibilityConfig]
   }
   
-  extension [Self <: ManagedZonePrivateVisibilityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedZonePrivateVisibilityConfig] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

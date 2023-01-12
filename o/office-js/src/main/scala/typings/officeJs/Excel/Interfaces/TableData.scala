@@ -136,7 +136,8 @@ object TableData {
     __obj.asInstanceOf[TableData]
   }
   
-  extension [Self <: TableData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableData] (val x: Self) extends AnyVal {
     
     inline def setAutoFilter(value: AutoFilterData): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
     

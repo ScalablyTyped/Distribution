@@ -74,7 +74,8 @@ object appInitialization {
       __obj.asInstanceOf[IExpectedFailureRequest]
     }
     
-    extension [Self <: IExpectedFailureRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExpectedFailureRequest] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object appInitialization {
       __obj.asInstanceOf[IFailedRequest]
     }
     
-    extension [Self <: IFailedRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFailedRequest] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

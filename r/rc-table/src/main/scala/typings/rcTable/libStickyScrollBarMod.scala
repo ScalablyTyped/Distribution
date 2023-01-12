@@ -40,7 +40,8 @@ object libStickyScrollBarMod extends Shortcut {
       __obj.asInstanceOf[StickyScrollBarProps]
     }
     
-    extension [Self <: StickyScrollBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StickyScrollBarProps] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLElement | Window): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

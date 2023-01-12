@@ -15,7 +15,8 @@ object Offsets {
     __obj.asInstanceOf[Offsets]
   }
   
-  extension [Self <: Offsets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Offsets] (val x: Self) extends AnyVal {
     
     inline def setTopics(value: js.Array[TopicOffsets]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     

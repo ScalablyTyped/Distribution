@@ -72,7 +72,8 @@ object PlotPolygonClusterOptions {
     __obj.asInstanceOf[PlotPolygonClusterOptions]
   }
   
-  extension [Self <: PlotPolygonClusterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPolygonClusterOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
     

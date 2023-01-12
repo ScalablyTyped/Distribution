@@ -22,7 +22,8 @@ object LexV2ContentMessage {
     __obj.asInstanceOf[LexV2ContentMessage]
   }
   
-  extension [Self <: LexV2ContentMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2ContentMessage] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

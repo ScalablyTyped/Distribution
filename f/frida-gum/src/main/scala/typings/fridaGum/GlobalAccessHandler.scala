@@ -26,7 +26,8 @@ object GlobalAccessHandler {
     __obj.asInstanceOf[GlobalAccessHandler]
   }
   
-  extension [Self <: GlobalAccessHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalAccessHandler] (val x: Self) extends AnyVal {
     
     inline def setEnumerate(value: () => js.Array[String]): Self = StObject.set(x, "enumerate", js.Any.fromFunction0(value))
     

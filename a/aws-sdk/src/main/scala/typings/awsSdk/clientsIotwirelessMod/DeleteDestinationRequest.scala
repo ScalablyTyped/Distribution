@@ -18,7 +18,8 @@ object DeleteDestinationRequest {
     __obj.asInstanceOf[DeleteDestinationRequest]
   }
   
-  extension [Self <: DeleteDestinationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDestinationRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: DestinationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

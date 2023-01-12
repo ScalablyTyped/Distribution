@@ -27,7 +27,8 @@ object SnapshotCreateRequest {
     __obj.asInstanceOf[SnapshotCreateRequest]
   }
   
-  extension [Self <: SnapshotCreateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotCreateRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Featurestates): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

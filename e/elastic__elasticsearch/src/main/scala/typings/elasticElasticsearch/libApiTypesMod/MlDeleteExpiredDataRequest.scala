@@ -21,7 +21,8 @@ object MlDeleteExpiredDataRequest {
     __obj.asInstanceOf[MlDeleteExpiredDataRequest]
   }
   
-  extension [Self <: MlDeleteExpiredDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDeleteExpiredDataRequest] (val x: Self) extends AnyVal {
     
     inline def setJob_id(value: Id): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     

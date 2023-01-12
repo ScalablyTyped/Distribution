@@ -140,7 +140,8 @@ object distClientModelsStreamsMessageStreamMod {
       __obj.asInstanceOf[MessageStream]
     }
     
-    extension [Self <: MessageStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageStream] (val x: Self) extends AnyVal {
       
       inline def setArchivedAt(value: String): Self = StObject.set(x, "ArchivedAt", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object distClientModelsStreamsMessageStreamMod {
       __obj.asInstanceOf[MessageStreamArchiveResponse]
     }
     
-    extension [Self <: MessageStreamArchiveResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageStreamArchiveResponse] (val x: Self) extends AnyVal {
       
       inline def setExpectedPurgeDate(value: String): Self = StObject.set(x, "ExpectedPurgeDate", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object distClientModelsStreamsMessageStreamMod {
       __obj.asInstanceOf[MessageStreamUnarchiveResponse]
     }
     
-    extension [Self <: MessageStreamUnarchiveResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageStreamUnarchiveResponse] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: String): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
       
@@ -271,7 +274,8 @@ object distClientModelsStreamsMessageStreamMod {
       __obj.asInstanceOf[MessageStreams]
     }
     
-    extension [Self <: MessageStreams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageStreams] (val x: Self) extends AnyVal {
       
       inline def setMessageStreams(value: js.Array[MessageStream]): Self = StObject.set(x, "MessageStreams", value.asInstanceOf[js.Any])
       
@@ -292,7 +296,8 @@ object distClientModelsStreamsMessageStreamMod {
       __obj.asInstanceOf[SubscriptionManagementConfiguration]
     }
     
-    extension [Self <: SubscriptionManagementConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionManagementConfiguration] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribeHandlingType(value: UnsubscribeHandlingTypes): Self = StObject.set(x, "UnsubscribeHandlingType", value.asInstanceOf[js.Any])
     }

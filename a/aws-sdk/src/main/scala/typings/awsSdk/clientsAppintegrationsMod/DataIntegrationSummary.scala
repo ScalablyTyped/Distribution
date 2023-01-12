@@ -28,7 +28,8 @@ object DataIntegrationSummary {
     __obj.asInstanceOf[DataIntegrationSummary]
   }
   
-  extension [Self <: DataIntegrationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataIntegrationSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object CollapsibleSectionView {
     __obj.asInstanceOf[CollapsibleSectionView]
   }
   
-  extension [Self <: CollapsibleSectionView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapsibleSectionView] (val x: Self) extends AnyVal {
     
     inline def setOn(value: (destroy | expanded_ | collapsed_, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     

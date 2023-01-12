@@ -19,7 +19,8 @@ object SettingOptions {
     __obj.asInstanceOf[SettingOptions]
   }
   
-  extension [Self <: SettingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ AuthSetting => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

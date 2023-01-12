@@ -23,7 +23,8 @@ object GetCloudFrontOriginAccessIdentityResult {
     __obj.asInstanceOf[GetCloudFrontOriginAccessIdentityResult]
   }
   
-  extension [Self <: GetCloudFrontOriginAccessIdentityResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCloudFrontOriginAccessIdentityResult] (val x: Self) extends AnyVal {
     
     inline def setCloudFrontOriginAccessIdentity(value: CloudFrontOriginAccessIdentity): Self = StObject.set(x, "CloudFrontOriginAccessIdentity", value.asInstanceOf[js.Any])
     

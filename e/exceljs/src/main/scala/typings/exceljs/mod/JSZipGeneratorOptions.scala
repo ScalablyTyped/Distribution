@@ -23,7 +23,8 @@ object JSZipGeneratorOptions {
     __obj.asInstanceOf[JSZipGeneratorOptions]
   }
   
-  extension [Self <: JSZipGeneratorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSZipGeneratorOptions] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: STORE | DEFLATE): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

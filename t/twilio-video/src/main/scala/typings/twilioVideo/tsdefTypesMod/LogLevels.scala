@@ -21,7 +21,8 @@ object LogLevels {
     __obj.asInstanceOf[LogLevels]
   }
   
-  extension [Self <: LogLevels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogLevels] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: LogLevel): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

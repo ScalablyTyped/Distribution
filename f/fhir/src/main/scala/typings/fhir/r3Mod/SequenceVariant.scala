@@ -51,7 +51,8 @@ object SequenceVariant {
     __obj.asInstanceOf[SequenceVariant]
   }
   
-  extension [Self <: SequenceVariant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceVariant] (val x: Self) extends AnyVal {
     
     inline def setCigar(value: String): Self = StObject.set(x, "cigar", value.asInstanceOf[js.Any])
     

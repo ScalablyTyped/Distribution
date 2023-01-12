@@ -42,7 +42,8 @@ object libApiPublisherOptionsMod {
       __obj.asInstanceOf[PublisherOptions]
     }
     
-    extension [Self <: PublisherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublisherOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

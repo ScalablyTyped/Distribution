@@ -15,7 +15,8 @@ object GroupAttributes {
     __obj.asInstanceOf[GroupAttributes]
   }
   
-  extension [Self <: GroupAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupAttributes] (val x: Self) extends AnyVal {
     
     inline def setPointerBBox(value: Boolean): Self = StObject.set(x, "pointerBBox", value.asInstanceOf[js.Any])
   }

@@ -36,7 +36,8 @@ object EventIceCandidateFoundcan {
     __obj.asInstanceOf[EventIceCandidateFoundcan]
   }
   
-  extension [Self <: EventIceCandidateFoundcan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventIceCandidateFoundcan] (val x: Self) extends AnyVal {
     
     inline def setCandidate(value: IceCandidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
     

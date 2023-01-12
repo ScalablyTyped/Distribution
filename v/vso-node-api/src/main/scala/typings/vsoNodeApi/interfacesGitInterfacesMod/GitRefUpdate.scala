@@ -23,7 +23,8 @@ object GitRefUpdate {
     __obj.asInstanceOf[GitRefUpdate]
   }
   
-  extension [Self <: GitRefUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitRefUpdate] (val x: Self) extends AnyVal {
     
     inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     

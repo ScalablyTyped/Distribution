@@ -18,7 +18,8 @@ object AnonymousUserDashboardVisualEmbeddingConfiguration {
     __obj.asInstanceOf[AnonymousUserDashboardVisualEmbeddingConfiguration]
   }
   
-  extension [Self <: AnonymousUserDashboardVisualEmbeddingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnonymousUserDashboardVisualEmbeddingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInitialDashboardVisualId(value: DashboardVisualId): Self = StObject.set(x, "InitialDashboardVisualId", value.asInstanceOf[js.Any])
   }

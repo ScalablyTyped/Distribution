@@ -19,7 +19,8 @@ object SenderApplication {
     __obj.asInstanceOf[SenderApplication]
   }
   
-  extension [Self <: SenderApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SenderApplication] (val x: Self) extends AnyVal {
     
     inline def setPackageId(value: String): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
     

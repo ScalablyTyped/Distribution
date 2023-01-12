@@ -27,7 +27,8 @@ object typesRouteMatchCallbackMod {
       __obj.asInstanceOf[RouteMatchCallbackOptions]
     }
     
-    extension [Self <: RouteMatchCallbackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteMatchCallbackOptions] (val x: Self) extends AnyVal {
       
       inline def setEvent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ Any

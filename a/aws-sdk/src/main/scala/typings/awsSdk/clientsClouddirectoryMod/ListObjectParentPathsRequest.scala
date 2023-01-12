@@ -33,7 +33,8 @@ object ListObjectParentPathsRequest {
     __obj.asInstanceOf[ListObjectParentPathsRequest]
   }
   
-  extension [Self <: ListObjectParentPathsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListObjectParentPathsRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object IgTablePropertiesDialog {
     __obj.asInstanceOf[IgTablePropertiesDialog]
   }
   
-  extension [Self <: IgTablePropertiesDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTablePropertiesDialog] (val x: Self) extends AnyVal {
     
     inline def setApply(value: (/* event */ Event, /* ui */ ApplyEventUIParam) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     

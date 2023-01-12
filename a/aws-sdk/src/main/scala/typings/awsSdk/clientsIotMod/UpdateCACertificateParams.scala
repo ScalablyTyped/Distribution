@@ -18,7 +18,8 @@ object UpdateCACertificateParams {
     __obj.asInstanceOf[UpdateCACertificateParams]
   }
   
-  extension [Self <: UpdateCACertificateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCACertificateParams] (val x: Self) extends AnyVal {
     
     inline def setAction(value: CACertificateUpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

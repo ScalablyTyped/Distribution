@@ -35,7 +35,8 @@ object PublicKeyAsync {
     __obj.asInstanceOf[PublicKeyAsync]
   }
   
-  extension [Self <: PublicKeyAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeyAsync] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(
       value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.OID extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.OID> : // tslint:disable-line ban-types

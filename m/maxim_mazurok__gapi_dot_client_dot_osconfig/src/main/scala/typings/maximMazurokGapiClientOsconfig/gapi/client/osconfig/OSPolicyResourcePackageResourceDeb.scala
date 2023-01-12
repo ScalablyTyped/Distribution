@@ -19,7 +19,8 @@ object OSPolicyResourcePackageResourceDeb {
     __obj.asInstanceOf[OSPolicyResourcePackageResourceDeb]
   }
   
-  extension [Self <: OSPolicyResourcePackageResourceDeb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyResourcePackageResourceDeb] (val x: Self) extends AnyVal {
     
     inline def setPullDeps(value: Boolean): Self = StObject.set(x, "pullDeps", value.asInstanceOf[js.Any])
     

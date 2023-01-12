@@ -23,7 +23,8 @@ object ProjectSummary {
     __obj.asInstanceOf[ProjectSummary]
   }
   
-  extension [Self <: ProjectSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectSummary] (val x: Self) extends AnyVal {
     
     inline def setProjectArn(value: ProjectArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     

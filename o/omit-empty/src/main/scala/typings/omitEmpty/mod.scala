@@ -24,7 +24,8 @@ object mod {
       __obj.asInstanceOf[OmitOptions]
     }
     
-    extension [Self <: OmitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitOptions] (val x: Self) extends AnyVal {
       
       inline def setOmitZero(value: Boolean): Self = StObject.set(x, "omitZero", value.asInstanceOf[js.Any])
       

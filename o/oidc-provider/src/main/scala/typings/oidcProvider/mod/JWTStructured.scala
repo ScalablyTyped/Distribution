@@ -17,7 +17,8 @@ object JWTStructured {
     __obj.asInstanceOf[JWTStructured]
   }
   
-  extension [Self <: JWTStructured](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JWTStructured] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: UnknownObject): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

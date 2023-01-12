@@ -63,7 +63,8 @@ object XMLToStringOptions {
     __obj.asInstanceOf[XMLToStringOptions]
   }
   
-  extension [Self <: XMLToStringOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLToStringOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     

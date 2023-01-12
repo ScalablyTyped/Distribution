@@ -25,7 +25,8 @@ object PageOptions {
     __obj.asInstanceOf[PageOptions]
   }
   
-  extension [Self <: PageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableAudioDeviceSettings(value: Boolean): Self = StObject.set(x, "enableAudioDeviceSettings", value.asInstanceOf[js.Any])
     

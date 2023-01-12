@@ -59,7 +59,8 @@ object OrderedJob {
     __obj.asInstanceOf[OrderedJob]
   }
   
-  extension [Self <: OrderedJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderedJob] (val x: Self) extends AnyVal {
     
     inline def setHadoopJob(value: HadoopJob): Self = StObject.set(x, "hadoopJob", value.asInstanceOf[js.Any])
     

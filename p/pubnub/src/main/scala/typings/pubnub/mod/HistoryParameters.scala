@@ -31,7 +31,8 @@ object HistoryParameters {
     __obj.asInstanceOf[HistoryParameters]
   }
   
-  extension [Self <: HistoryParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryParameters] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

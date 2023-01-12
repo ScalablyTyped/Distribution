@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[AuthConfig]
     }
     
-    extension [Self <: AuthConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthConfig] (val x: Self) extends AnyVal {
       
       inline def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: AuthConfig): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object mod {
       __obj.asInstanceOf[FissionConfig]
     }
     
-    extension [Self <: FissionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FissionConfig] (val x: Self) extends AnyVal {
       
       inline def setFfmpeg(value: String): Self = StObject.set(x, "ffmpeg", value.asInstanceOf[js.Any])
       
@@ -158,7 +161,8 @@ object mod {
       __obj.asInstanceOf[FissionTaskConfig]
     }
     
-    extension [Self <: FissionTaskConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FissionTaskConfig] (val x: Self) extends AnyVal {
       
       inline def setModel(value: js.Array[FissionTaskModel]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -185,7 +189,8 @@ object mod {
       __obj.asInstanceOf[FissionTaskModel]
     }
     
-    extension [Self <: FissionTaskModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FissionTaskModel] (val x: Self) extends AnyVal {
       
       inline def setAb(value: String): Self = StObject.set(x, "ab", value.asInstanceOf[js.Any])
       
@@ -212,7 +217,8 @@ object mod {
       __obj.asInstanceOf[HttpConfig]
     }
     
-    extension [Self <: HttpConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpConfig] (val x: Self) extends AnyVal {
       
       inline def setAllow_origin(value: String): Self = StObject.set(x, "allow_origin", value.asInstanceOf[js.Any])
       
@@ -251,7 +257,8 @@ object mod {
       __obj.asInstanceOf[NodeMediaServer]
     }
     
-    extension [Self <: NodeMediaServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeMediaServer] (val x: Self) extends AnyVal {
       
       inline def setGetSession(value: String => Map[String, Any]): Self = StObject.set(x, "getSession", js.Any.fromFunction1(value))
       
@@ -278,7 +285,8 @@ object mod {
       __obj.asInstanceOf[RelayConfig]
     }
     
-    extension [Self <: RelayConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelayConfig] (val x: Self) extends AnyVal {
       
       inline def setFfmpeg(value: String): Self = StObject.set(x, "ffmpeg", value.asInstanceOf[js.Any])
       
@@ -307,7 +315,8 @@ object mod {
       __obj.asInstanceOf[RelayTaskConfig]
     }
     
-    extension [Self <: RelayTaskConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelayTaskConfig] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -346,7 +355,8 @@ object mod {
       __obj.asInstanceOf[RtmpConfig]
     }
     
-    extension [Self <: RtmpConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RtmpConfig] (val x: Self) extends AnyVal {
       
       inline def setChunk_size(value: Double): Self = StObject.set(x, "chunk_size", value.asInstanceOf[js.Any])
       
@@ -389,7 +399,8 @@ object mod {
       __obj.asInstanceOf[SslConfig]
     }
     
-    extension [Self <: SslConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SslConfig] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -414,7 +425,8 @@ object mod {
       __obj.asInstanceOf[TransConfig]
     }
     
-    extension [Self <: TransConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransConfig] (val x: Self) extends AnyVal {
       
       inline def setFfmpeg(value: String): Self = StObject.set(x, "ffmpeg", value.asInstanceOf[js.Any])
       
@@ -459,7 +471,8 @@ object mod {
       __obj.asInstanceOf[TransTaskConfig]
     }
     
-    extension [Self <: TransTaskConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransTaskConfig] (val x: Self) extends AnyVal {
       
       inline def setAc(value: String): Self = StObject.set(x, "ac", value.asInstanceOf[js.Any])
       

@@ -49,7 +49,8 @@ object libMultipartMultipartFormDataOptionsMod {
       __obj.asInstanceOf[MultipartFormDataOptions]
     }
     
-    extension [Self <: MultipartFormDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipartFormDataOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxEntries(value: Double): Self = StObject.set(x, "maxEntries", value.asInstanceOf[js.Any])
       

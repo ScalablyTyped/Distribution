@@ -17,7 +17,8 @@ object ResolvedServerUrls {
     __obj.asInstanceOf[ResolvedServerUrls]
   }
   
-  extension [Self <: ResolvedServerUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedServerUrls] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: js.Array[String]): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

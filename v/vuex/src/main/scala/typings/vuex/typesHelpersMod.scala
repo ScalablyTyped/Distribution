@@ -180,7 +180,8 @@ object typesHelpersMod {
       __obj.asInstanceOf[NamespacedMappers]
     }
     
-    extension [Self <: NamespacedMappers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamespacedMappers] (val x: Self) extends AnyVal {
       
       inline def setMapActions(value: Mapper[ActionMethod] & MapperForAction): Self = StObject.set(x, "mapActions", value.asInstanceOf[js.Any])
       

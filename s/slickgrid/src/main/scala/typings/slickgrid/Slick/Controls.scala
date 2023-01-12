@@ -19,7 +19,8 @@ object Controls {
       __obj.asInstanceOf[ColumnPicker[T]]
     }
     
-    extension [Self <: ColumnPicker[?], T /* <: SlickData */](x: Self & ColumnPicker[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnPicker[?], T /* <: SlickData */] (val x: Self & ColumnPicker[T]) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -38,7 +39,8 @@ object Controls {
       __obj.asInstanceOf[SlickColumnPickerOptions]
     }
     
-    extension [Self <: SlickColumnPickerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlickColumnPickerOptions] (val x: Self) extends AnyVal {
       
       inline def setFadeSpeed(value: Double): Self = StObject.set(x, "fadeSpeed", value.asInstanceOf[js.Any])
       

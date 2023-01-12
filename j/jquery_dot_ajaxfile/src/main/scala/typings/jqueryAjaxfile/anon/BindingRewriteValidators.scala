@@ -17,7 +17,8 @@ object BindingRewriteValidators {
     __obj.asInstanceOf[BindingRewriteValidators]
   }
   
-  extension [Self <: BindingRewriteValidators](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingRewriteValidators] (val x: Self) extends AnyVal {
     
     inline def setBindingRewriteValidators(value: Any): Self = StObject.set(x, "bindingRewriteValidators", value.asInstanceOf[js.Any])
     

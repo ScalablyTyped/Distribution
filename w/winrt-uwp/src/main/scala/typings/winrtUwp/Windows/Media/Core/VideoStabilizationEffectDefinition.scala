@@ -21,7 +21,8 @@ object VideoStabilizationEffectDefinition {
     __obj.asInstanceOf[VideoStabilizationEffectDefinition]
   }
   
-  extension [Self <: VideoStabilizationEffectDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoStabilizationEffectDefinition] (val x: Self) extends AnyVal {
     
     inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     

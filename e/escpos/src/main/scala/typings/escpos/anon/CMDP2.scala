@@ -19,7 +19,8 @@ object CMDP2 {
     __obj.asInstanceOf[CMDP2]
   }
   
-  extension [Self <: CMDP2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMDP2] (val x: Self) extends AnyVal {
     
     inline def setCMD_P1(value: /* (k */ String): Self = StObject.set(x, "CMD_P1", value.asInstanceOf[js.Any])
     

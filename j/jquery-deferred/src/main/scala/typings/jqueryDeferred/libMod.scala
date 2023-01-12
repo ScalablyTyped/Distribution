@@ -75,7 +75,8 @@ object libMod {
       __obj.asInstanceOf[JQueryCallback]
     }
     
-    extension [Self <: JQueryCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JQueryCallback] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: /* repeated */ Any => Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

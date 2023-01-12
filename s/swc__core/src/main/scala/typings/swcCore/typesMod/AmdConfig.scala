@@ -22,7 +22,8 @@ object AmdConfig {
     __obj.asInstanceOf[AmdConfig]
   }
   
-  extension [Self <: AmdConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmdConfig] (val x: Self) extends AnyVal {
     
     inline def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
     

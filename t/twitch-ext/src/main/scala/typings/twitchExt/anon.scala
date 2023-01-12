@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[HostedChannelId]
     }
     
-    extension [Self <: HostedChannelId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostedChannelId] (val x: Self) extends AnyVal {
       
       inline def setHostedChannelId(value: String): Self = StObject.set(x, "hostedChannelId", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object anon {
       __obj.asInstanceOf[PartialContext]
     }
     
-    extension [Self <: PartialContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialContext] (val x: Self) extends AnyVal {
       
       inline def setArePlayerControlsVisible(value: Boolean): Self = StObject.set(x, "arePlayerControlsVisible", value.asInstanceOf[js.Any])
       
@@ -192,7 +195,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

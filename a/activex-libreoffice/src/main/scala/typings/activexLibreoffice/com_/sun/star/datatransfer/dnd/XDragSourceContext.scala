@@ -71,7 +71,8 @@ object XDragSourceContext {
     __obj.asInstanceOf[XDragSourceContext]
   }
   
-  extension [Self <: XDragSourceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDragSourceContext] (val x: Self) extends AnyVal {
     
     inline def setCurrentCursor(value: Double): Self = StObject.set(x, "CurrentCursor", value.asInstanceOf[js.Any])
     

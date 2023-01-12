@@ -23,7 +23,8 @@ object Placeholder {
     __obj.asInstanceOf[Placeholder]
   }
   
-  extension [Self <: Placeholder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Placeholder] (val x: Self) extends AnyVal {
     
     inline def setInvalid(value: CommonElementStyle): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     

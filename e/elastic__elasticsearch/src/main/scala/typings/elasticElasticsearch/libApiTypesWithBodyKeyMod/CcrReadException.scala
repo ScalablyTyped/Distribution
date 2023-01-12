@@ -19,7 +19,8 @@ object CcrReadException {
     __obj.asInstanceOf[CcrReadException]
   }
   
-  extension [Self <: CcrReadException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrReadException] (val x: Self) extends AnyVal {
     
     inline def setException(value: ErrorCause): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     

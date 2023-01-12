@@ -80,7 +80,8 @@ object WorkbookModel {
     __obj.asInstanceOf[WorkbookModel]
   }
   
-  extension [Self <: WorkbookModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookModel] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

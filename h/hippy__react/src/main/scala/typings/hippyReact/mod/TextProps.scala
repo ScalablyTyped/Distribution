@@ -61,7 +61,8 @@ object TextProps {
     __obj.asInstanceOf[TextProps]
   }
   
-  extension [Self <: TextProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[String] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

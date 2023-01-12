@@ -19,7 +19,8 @@ object OIDPlugin {
     __obj.asInstanceOf[OIDPlugin]
   }
   
-  extension [Self <: OIDPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OIDPlugin] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_OID_KEY_USAGE_EXTENSION(value: `10`): Self = StObject.set(x, "CAPICOM_OID_KEY_USAGE_EXTENSION", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object typesInvalidAliasNameExceptionMod {
       __obj.asInstanceOf[InvalidAliasNameException]
     }
     
-    extension [Self <: InvalidAliasNameException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidAliasNameException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidAliasNameException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object typesInvalidAliasNameExceptionMod {
       __obj.asInstanceOf[InvalidAliasNameExceptionDetails]
     }
     
-    extension [Self <: InvalidAliasNameExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidAliasNameExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

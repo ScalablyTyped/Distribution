@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[BoardObject]
     }
     
-    extension [Self <: BoardObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoardObject] (val x: Self) extends AnyVal {
       
       inline def setFilterId(value: String): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[CreateIssueMetadataObject]
     }
     
-    extension [Self <: CreateIssueMetadataObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateIssueMetadataObject] (val x: Self) extends AnyVal {
       
       inline def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
@@ -1729,7 +1731,8 @@ object mod {
       __obj.asInstanceOf[JiraApiOptions]
     }
     
-    extension [Self <: JiraApiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JiraApiOptions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -1820,7 +1823,8 @@ object mod {
       __obj.asInstanceOf[OAuth]
     }
     
-    extension [Self <: OAuth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuth] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -1865,7 +1869,8 @@ object mod {
       __obj.asInstanceOf[SearchQuery]
     }
     
-    extension [Self <: SearchQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchQuery] (val x: Self) extends AnyVal {
       
       inline def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
@@ -1922,7 +1927,8 @@ object mod {
       __obj.asInstanceOf[SearchUserOptions]
     }
     
-    extension [Self <: SearchUserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchUserOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeActive(value: Boolean): Self = StObject.set(x, "includeActive", value.asInstanceOf[js.Any])
       
@@ -1963,7 +1969,8 @@ object mod {
       __obj.asInstanceOf[UriOptions]
     }
     
-    extension [Self <: UriOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UriOptions] (val x: Self) extends AnyVal {
       
       inline def setIntermediatePath(value: String): Self = StObject.set(x, "intermediatePath", value.asInstanceOf[js.Any])
       

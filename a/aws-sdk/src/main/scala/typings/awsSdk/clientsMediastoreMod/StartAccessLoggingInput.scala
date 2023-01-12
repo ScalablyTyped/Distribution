@@ -18,7 +18,8 @@ object StartAccessLoggingInput {
     __obj.asInstanceOf[StartAccessLoggingInput]
   }
   
-  extension [Self <: StartAccessLoggingInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartAccessLoggingInput] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
   }

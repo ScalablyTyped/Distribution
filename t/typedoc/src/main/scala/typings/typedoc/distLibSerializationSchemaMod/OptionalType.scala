@@ -23,7 +23,8 @@ object OptionalType {
     __obj.asInstanceOf[OptionalType]
   }
   
-  extension [Self <: OptionalType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalType] (val x: Self) extends AnyVal {
     
     inline def setElementType(value: ToSerialized[typings.typedoc.distLibModelsTypesMod.SomeType]): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     

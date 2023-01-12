@@ -49,7 +49,8 @@ object INxDerivedField {
     __obj.asInstanceOf[INxDerivedField]
   }
   
-  extension [Self <: INxDerivedField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxDerivedField] (val x: Self) extends AnyVal {
     
     inline def setQExpr(value: String): Self = StObject.set(x, "qExpr", value.asInstanceOf[js.Any])
     

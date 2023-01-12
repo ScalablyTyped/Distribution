@@ -39,7 +39,8 @@ object CellColor {
     __obj.asInstanceOf[CellColor]
   }
   
-  extension [Self <: CellColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellColor] (val x: Self) extends AnyVal {
     
     inline def setCellColor(value: ChartStrokeOpacity): Self = StObject.set(x, "cellColor", value.asInstanceOf[js.Any])
     

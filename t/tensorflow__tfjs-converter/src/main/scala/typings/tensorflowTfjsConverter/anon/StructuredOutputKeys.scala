@@ -15,7 +15,8 @@ object StructuredOutputKeys {
     __obj.asInstanceOf[StructuredOutputKeys]
   }
   
-  extension [Self <: StructuredOutputKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructuredOutputKeys] (val x: Self) extends AnyVal {
     
     inline def setStructuredOutputKeys(value: js.Array[String]): Self = StObject.set(x, "structuredOutputKeys", value.asInstanceOf[js.Any])
     

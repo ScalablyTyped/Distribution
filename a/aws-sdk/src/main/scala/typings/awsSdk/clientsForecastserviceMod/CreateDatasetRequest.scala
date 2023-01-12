@@ -48,7 +48,8 @@ object CreateDatasetRequest {
     __obj.asInstanceOf[CreateDatasetRequest]
   }
   
-  extension [Self <: CreateDatasetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDatasetRequest] (val x: Self) extends AnyVal {
     
     inline def setDataFrequency(value: Frequency): Self = StObject.set(x, "DataFrequency", value.asInstanceOf[js.Any])
     

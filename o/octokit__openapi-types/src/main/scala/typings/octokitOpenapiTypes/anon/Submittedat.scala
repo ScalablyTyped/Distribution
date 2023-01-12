@@ -75,7 +75,8 @@ object Submittedat {
     __obj.asInstanceOf[Submittedat]
   }
   
-  extension [Self <: Submittedat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Submittedat] (val x: Self) extends AnyVal {
     
     inline def setAuthor_association(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any

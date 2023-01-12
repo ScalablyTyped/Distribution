@@ -27,7 +27,8 @@ object TransformPrefix {
     __obj.asInstanceOf[TransformPrefix[T]]
   }
   
-  extension [Self <: TransformPrefix[?], T /* <: Record[String, Any] */](x: Self & TransformPrefix[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformPrefix[?], T /* <: Record[String, Any] */] (val x: Self & TransformPrefix[T]) extends AnyVal {
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

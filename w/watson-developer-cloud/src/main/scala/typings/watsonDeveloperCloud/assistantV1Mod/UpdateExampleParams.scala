@@ -33,7 +33,8 @@ object UpdateExampleParams {
     __obj.asInstanceOf[UpdateExampleParams]
   }
   
-  extension [Self <: UpdateExampleParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateExampleParams] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

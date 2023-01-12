@@ -28,7 +28,8 @@ object SuiteRunConfiguration {
     __obj.asInstanceOf[SuiteRunConfiguration]
   }
   
-  extension [Self <: SuiteRunConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuiteRunConfiguration] (val x: Self) extends AnyVal {
     
     inline def setParallelRun(value: ParallelRun): Self = StObject.set(x, "parallelRun", value.asInstanceOf[js.Any])
     

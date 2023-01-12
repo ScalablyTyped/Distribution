@@ -23,7 +23,8 @@ object ScrollGridSectionConfig {
     __obj.asInstanceOf[ScrollGridSectionConfig]
   }
   
-  extension [Self <: ScrollGridSectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollGridSectionConfig] (val x: Self) extends AnyVal {
     
     inline def setChunks(value: js.Array[ScrollGridChunkConfig]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
     

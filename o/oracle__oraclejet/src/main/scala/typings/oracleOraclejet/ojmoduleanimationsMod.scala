@@ -155,7 +155,8 @@ object ojmoduleanimationsMod {
       __obj.asInstanceOf[SwitcherCallBackParam]
     }
     
-    extension [Self <: SwitcherCallBackParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitcherCallBackParam] (val x: Self) extends AnyVal {
       
       inline def setIsInitial(value: Boolean): Self = StObject.set(x, "isInitial", value.asInstanceOf[js.Any])
       

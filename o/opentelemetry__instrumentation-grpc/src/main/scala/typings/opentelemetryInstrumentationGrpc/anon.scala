@@ -75,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: typings.grpcGrpcJs.mod.Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
@@ -94,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object anon {
       __obj.asInstanceOf[OriginalName]
     }
     
-    extension [Self <: OriginalName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginalName] (val x: Self) extends AnyVal {
       
       inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -161,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: typings.grpc.mod.Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -369,7 +374,8 @@ object anon {
       __obj.asInstanceOf[Typeofcredentials]
     }
     
-    extension [Self <: Typeofcredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofcredentials] (val x: Self) extends AnyVal {
       
       inline def setCombineCallCredentials(
         value: (typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials, /* repeated */ typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials) => typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials

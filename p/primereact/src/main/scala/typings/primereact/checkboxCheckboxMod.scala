@@ -152,7 +152,8 @@ object checkboxCheckboxMod {
       __obj.asInstanceOf[CheckboxChangeParams]
     }
     
-    extension [Self <: CheckboxChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxChangeParams] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object checkboxCheckboxMod {
       __obj.asInstanceOf[CheckboxChangeTargetOptions]
     }
     
-    extension [Self <: CheckboxChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -646,7 +648,8 @@ object checkboxCheckboxMod {
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    extension [Self <: CheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

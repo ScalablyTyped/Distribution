@@ -19,7 +19,8 @@ object ParagraphContentMap {
     __obj.asInstanceOf[ParagraphContentMap]
   }
   
-  extension [Self <: ParagraphContentMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphContentMap] (val x: Self) extends AnyVal {
     
     inline def setSentence(value: Sentence): Self = StObject.set(x, "sentence", value.asInstanceOf[js.Any])
     

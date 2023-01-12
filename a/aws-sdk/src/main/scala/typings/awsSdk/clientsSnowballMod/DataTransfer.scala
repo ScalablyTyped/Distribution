@@ -33,7 +33,8 @@ object DataTransfer {
     __obj.asInstanceOf[DataTransfer]
   }
   
-  extension [Self <: DataTransfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTransfer] (val x: Self) extends AnyVal {
     
     inline def setBytesTransferred(value: Long): Self = StObject.set(x, "BytesTransferred", value.asInstanceOf[js.Any])
     

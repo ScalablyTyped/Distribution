@@ -29,7 +29,8 @@ object libRulesCompletedDocsConstructorExclusionMod {
       __obj.asInstanceOf[IConstructorExclusionDescriptor]
     }
     
-    extension [Self <: IConstructorExclusionDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConstructorExclusionDescriptor] (val x: Self) extends AnyVal {
       
       inline def setPrivacies(value: js.Array[Privacy]): Self = StObject.set(x, "privacies", value.asInstanceOf[js.Any])
       

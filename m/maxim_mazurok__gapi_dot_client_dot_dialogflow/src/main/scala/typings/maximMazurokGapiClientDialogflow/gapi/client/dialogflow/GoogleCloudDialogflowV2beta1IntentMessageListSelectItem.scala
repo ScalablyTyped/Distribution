@@ -25,7 +25,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageListSelectItem {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageListSelectItem]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageListSelectItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageListSelectItem] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

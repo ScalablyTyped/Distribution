@@ -19,7 +19,8 @@ object TokenizeResultSuccess {
     __obj.asInstanceOf[TokenizeResultSuccess]
   }
   
-  extension [Self <: TokenizeResultSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenizeResultSuccess] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Mask): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

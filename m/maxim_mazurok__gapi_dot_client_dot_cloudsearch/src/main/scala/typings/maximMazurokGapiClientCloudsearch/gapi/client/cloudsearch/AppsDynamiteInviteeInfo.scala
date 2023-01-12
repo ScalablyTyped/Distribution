@@ -19,7 +19,8 @@ object AppsDynamiteInviteeInfo {
     __obj.asInstanceOf[AppsDynamiteInviteeInfo]
   }
   
-  extension [Self <: AppsDynamiteInviteeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteInviteeInfo] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

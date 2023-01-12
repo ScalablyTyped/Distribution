@@ -36,7 +36,8 @@ object ILightGizmo {
     __obj.asInstanceOf[ILightGizmo]
   }
   
-  extension [Self <: ILightGizmo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILightGizmo] (val x: Self) extends AnyVal {
     
     inline def setLight(value: Nullable[Light]): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object MergeTagData {
     __obj.asInstanceOf[MergeTagData]
   }
   
-  extension [Self <: MergeTagData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeTagData] (val x: Self) extends AnyVal {
     
     inline def setMakeAlias(value: Boolean): Self = StObject.set(x, "makeAlias", value.asInstanceOf[js.Any])
     

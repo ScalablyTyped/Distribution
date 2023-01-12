@@ -19,7 +19,8 @@ object Fixed {
     __obj.asInstanceOf[Fixed]
   }
   
-  extension [Self <: Fixed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fixed] (val x: Self) extends AnyVal {
     
     inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     

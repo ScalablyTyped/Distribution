@@ -17,7 +17,8 @@ object Agents {
     __obj.asInstanceOf[Agents]
   }
   
-  extension [Self <: Agents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Agents] (val x: Self) extends AnyVal {
     
     inline def setHttp(value: Any): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object HierarchyGroupSummaryReference {
     __obj.asInstanceOf[HierarchyGroupSummaryReference]
   }
   
-  extension [Self <: HierarchyGroupSummaryReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HierarchyGroupSummaryReference] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

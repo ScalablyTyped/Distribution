@@ -23,7 +23,8 @@ object UpdateEndpointWeightsAndCapacitiesInput {
     __obj.asInstanceOf[UpdateEndpointWeightsAndCapacitiesInput]
   }
   
-  extension [Self <: UpdateEndpointWeightsAndCapacitiesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEndpointWeightsAndCapacitiesInput] (val x: Self) extends AnyVal {
     
     inline def setDesiredWeightsAndCapacities(value: DesiredWeightAndCapacityList): Self = StObject.set(x, "DesiredWeightsAndCapacities", value.asInstanceOf[js.Any])
     

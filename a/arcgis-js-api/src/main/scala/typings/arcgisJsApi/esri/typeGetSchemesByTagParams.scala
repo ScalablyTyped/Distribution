@@ -81,7 +81,8 @@ object typeGetSchemesByTagParams {
     __obj.asInstanceOf[typeGetSchemesByTagParams]
   }
   
-  extension [Self <: typeGetSchemesByTagParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typeGetSchemesByTagParams] (val x: Self) extends AnyVal {
     
     inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     

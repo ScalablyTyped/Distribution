@@ -32,7 +32,8 @@ object Ranking {
     __obj.asInstanceOf[Ranking]
   }
   
-  extension [Self <: Ranking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ranking] (val x: Self) extends AnyVal {
     
     inline def setAccount_id(value: Double): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
     

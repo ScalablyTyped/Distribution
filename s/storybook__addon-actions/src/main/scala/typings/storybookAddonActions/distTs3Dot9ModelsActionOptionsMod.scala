@@ -40,7 +40,8 @@ object distTs3Dot9ModelsActionOptionsMod {
       __obj.asInstanceOf[ActionOptions]
     }
     
-    extension [Self <: ActionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowClass(value: Boolean): Self = StObject.set(x, "allowClass", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object distTs3Dot9ModelsActionOptionsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClearOnStoryChange(value: Boolean): Self = StObject.set(x, "clearOnStoryChange", value.asInstanceOf[js.Any])
       

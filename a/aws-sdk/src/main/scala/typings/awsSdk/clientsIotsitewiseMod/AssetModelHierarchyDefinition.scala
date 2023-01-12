@@ -23,7 +23,8 @@ object AssetModelHierarchyDefinition {
     __obj.asInstanceOf[AssetModelHierarchyDefinition]
   }
   
-  extension [Self <: AssetModelHierarchyDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetModelHierarchyDefinition] (val x: Self) extends AnyVal {
     
     inline def setChildAssetModelId(value: ID): Self = StObject.set(x, "childAssetModelId", value.asInstanceOf[js.Any])
     

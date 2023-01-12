@@ -23,7 +23,8 @@ object ListCustomLineItemVersionsBillingPeriodRangeFilter {
     __obj.asInstanceOf[ListCustomLineItemVersionsBillingPeriodRangeFilter]
   }
   
-  extension [Self <: ListCustomLineItemVersionsBillingPeriodRangeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomLineItemVersionsBillingPeriodRangeFilter] (val x: Self) extends AnyVal {
     
     inline def setEndBillingPeriod(value: BillingPeriod): Self = StObject.set(x, "EndBillingPeriod", value.asInstanceOf[js.Any])
     

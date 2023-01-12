@@ -55,7 +55,8 @@ object XRenderable {
     __obj.asInstanceOf[XRenderable]
   }
   
-  extension [Self <: XRenderable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRenderable] (val x: Self) extends AnyVal {
     
     inline def setGetRenderer(value: (Double, Any, SeqEquiv[PropertyValue]) => SafeArray[PropertyValue]): Self = StObject.set(x, "getRenderer", js.Any.fromFunction3(value))
     

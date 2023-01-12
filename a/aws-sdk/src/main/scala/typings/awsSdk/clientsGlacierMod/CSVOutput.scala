@@ -38,7 +38,8 @@ object CSVOutput {
     __obj.asInstanceOf[CSVOutput]
   }
   
-  extension [Self <: CSVOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSVOutput] (val x: Self) extends AnyVal {
     
     inline def setFieldDelimiter(value: String): Self = StObject.set(x, "FieldDelimiter", value.asInstanceOf[js.Any])
     

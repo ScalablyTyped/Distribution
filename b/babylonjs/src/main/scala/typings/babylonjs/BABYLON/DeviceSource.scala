@@ -39,7 +39,8 @@ object DeviceSource {
     __obj.asInstanceOf[DeviceSource[T]]
   }
   
-  extension [Self <: DeviceSource[?], T /* <: DeviceType */](x: Self & DeviceSource[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceSource[?], T /* <: DeviceType */] (val x: Self & DeviceSource[T]) extends AnyVal {
     
     inline def setDeviceSlot(value: Double): Self = StObject.set(x, "deviceSlot", value.asInstanceOf[js.Any])
     

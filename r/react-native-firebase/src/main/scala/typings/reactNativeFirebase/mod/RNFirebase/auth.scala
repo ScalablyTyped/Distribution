@@ -226,7 +226,8 @@ object auth {
       __obj.asInstanceOf[AuthSettings]
     }
     
-    extension [Self <: AuthSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthSettings] (val x: Self) extends AnyVal {
       
       inline def setAppVerificationDisabledForTesting(value: Boolean): Self = StObject.set(x, "appVerificationDisabledForTesting", value.asInstanceOf[js.Any])
       
@@ -271,7 +272,8 @@ object auth {
       __obj.asInstanceOf[AuthStatics]
     }
     
-    extension [Self <: AuthStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthStatics] (val x: Self) extends AnyVal {
       
       inline def setAppleAuthProvider(value: AuthProvider): Self = StObject.set(x, "AppleAuthProvider", value.asInstanceOf[js.Any])
       
@@ -318,7 +320,8 @@ object auth {
       __obj.asInstanceOf[EmailAuthProvider]
     }
     
-    extension [Self <: EmailAuthProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailAuthProvider] (val x: Self) extends AnyVal {
       
       inline def setCredential(value: (String, String) => AuthCredential): Self = StObject.set(x, "credential", js.Any.fromFunction2(value))
       

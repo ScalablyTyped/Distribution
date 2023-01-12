@@ -24,7 +24,8 @@ object Transient {
     __obj.asInstanceOf[Transient]
   }
   
-  extension [Self <: Transient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transient] (val x: Self) extends AnyVal {
     
     inline def setData(value: IMimeBundle): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object ICircle {
     __obj.asInstanceOf[ICircle]
   }
   
-  extension [Self <: ICircle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICircle] (val x: Self) extends AnyVal {
     
     inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object CSRHexResult {
     __obj.asInstanceOf[CSRHexResult]
   }
   
-  extension [Self <: CSRHexResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSRHexResult] (val x: Self) extends AnyVal {
     
     inline def setP8pubkeyhex(value: String): Self = StObject.set(x, "p8pubkeyhex", value.asInstanceOf[js.Any])
   }

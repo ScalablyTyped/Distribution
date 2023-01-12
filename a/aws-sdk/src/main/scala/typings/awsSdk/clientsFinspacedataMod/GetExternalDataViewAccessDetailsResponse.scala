@@ -23,7 +23,8 @@ object GetExternalDataViewAccessDetailsResponse {
     __obj.asInstanceOf[GetExternalDataViewAccessDetailsResponse]
   }
   
-  extension [Self <: GetExternalDataViewAccessDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExternalDataViewAccessDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: AwsCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     

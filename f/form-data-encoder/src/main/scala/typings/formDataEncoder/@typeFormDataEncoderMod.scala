@@ -177,7 +177,8 @@ object `@typeFormDataEncoderMod` {
       __obj.asInstanceOf[FormDataEncoderOptions]
     }
     
-    extension [Self <: FormDataEncoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormDataEncoderOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableAdditionalHeaders(value: Boolean): Self = StObject.set(x, "enableAdditionalHeaders", value.asInstanceOf[js.Any])
       

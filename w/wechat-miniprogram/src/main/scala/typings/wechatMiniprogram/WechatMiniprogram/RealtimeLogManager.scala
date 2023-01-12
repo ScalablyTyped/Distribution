@@ -78,7 +78,8 @@ object RealtimeLogManager {
     __obj.asInstanceOf[RealtimeLogManager]
   }
   
-  extension [Self <: RealtimeLogManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealtimeLogManager] (val x: Self) extends AnyVal {
     
     inline def setAddFilterMsg(value: String => Unit): Self = StObject.set(x, "addFilterMsg", js.Any.fromFunction1(value))
     

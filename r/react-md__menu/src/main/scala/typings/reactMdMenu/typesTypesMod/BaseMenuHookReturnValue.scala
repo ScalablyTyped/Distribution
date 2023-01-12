@@ -32,7 +32,8 @@ object BaseMenuHookReturnValue {
     __obj.asInstanceOf[BaseMenuHookReturnValue]
   }
   
-  extension [Self <: BaseMenuHookReturnValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMenuHookReturnValue] (val x: Self) extends AnyVal {
     
     inline def setMenuNodeRef(value: RefObject[HTMLDivElement]): Self = StObject.set(x, "menuNodeRef", value.asInstanceOf[js.Any])
     

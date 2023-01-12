@@ -23,7 +23,8 @@ object ListAssessmentFrameworksResponse {
     __obj.asInstanceOf[ListAssessmentFrameworksResponse]
   }
   
-  extension [Self <: ListAssessmentFrameworksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssessmentFrameworksResponse] (val x: Self) extends AnyVal {
     
     inline def setFrameworkMetadataList(value: FrameworkMetadataList): Self = StObject.set(x, "frameworkMetadataList", value.asInstanceOf[js.Any])
     

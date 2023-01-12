@@ -26,7 +26,8 @@ object distOverlaySrcUseTriggerWidthMod {
       __obj.asInstanceOf[UseTriggerWidthOptions]
     }
     
-    extension [Self <: UseTriggerWidthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseTriggerWidthOptions] (val x: Self) extends AnyVal {
       
       inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object GeneratedCodeOptions {
     __obj.asInstanceOf[GeneratedCodeOptions]
   }
   
-  extension [Self <: GeneratedCodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratedCodeOptions] (val x: Self) extends AnyVal {
     
     inline def setArrowFunctions(value: Boolean): Self = StObject.set(x, "arrowFunctions", value.asInstanceOf[js.Any])
     

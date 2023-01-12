@@ -88,7 +88,8 @@ object styleIconImageCacheMod {
       __obj.asInstanceOf[IconImageCache]
     }
     
-    extension [Self <: IconImageCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconImageCache] (val x: Self) extends AnyVal {
       
       inline def setCanExpireCache(value: () => Boolean): Self = StObject.set(x, "canExpireCache", js.Any.fromFunction0(value))
       

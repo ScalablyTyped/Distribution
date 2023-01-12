@@ -21,7 +21,8 @@ object GreenPercentage {
     __obj.asInstanceOf[GreenPercentage]
   }
   
-  extension [Self <: GreenPercentage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GreenPercentage] (val x: Self) extends AnyVal {
     
     inline def setGreenPercentage(value: String): Self = StObject.set(x, "greenPercentage", value.asInstanceOf[js.Any])
   }

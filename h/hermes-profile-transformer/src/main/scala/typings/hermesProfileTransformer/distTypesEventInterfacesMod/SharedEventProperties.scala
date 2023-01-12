@@ -66,7 +66,8 @@ object SharedEventProperties {
     __obj.asInstanceOf[SharedEventProperties]
   }
   
-  extension [Self <: SharedEventProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedEventProperties] (val x: Self) extends AnyVal {
     
     inline def setArgs(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in string ]: any} */ js.Any

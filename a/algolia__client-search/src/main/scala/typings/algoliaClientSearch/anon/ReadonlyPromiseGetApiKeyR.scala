@@ -28,7 +28,8 @@ object ReadonlyPromiseGetApiKeyR {
     __obj.asInstanceOf[ReadonlyPromiseGetApiKeyR]
   }
   
-  extension [Self <: ReadonlyPromiseGetApiKeyR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseGetApiKeyR] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[GetApiKeyResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

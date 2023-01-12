@@ -21,7 +21,8 @@ object IngestJoinProcessor {
     __obj.asInstanceOf[IngestJoinProcessor]
   }
   
-  extension [Self <: IngestJoinProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestJoinProcessor] (val x: Self) extends AnyVal {
     
     inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

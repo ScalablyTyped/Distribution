@@ -18,7 +18,8 @@ object DeletePeeringResponse {
     __obj.asInstanceOf[DeletePeeringResponse]
   }
   
-  extension [Self <: DeletePeeringResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePeeringResponse] (val x: Self) extends AnyVal {
     
     inline def setPeering(value: Peering): Self = StObject.set(x, "Peering", value.asInstanceOf[js.Any])
     

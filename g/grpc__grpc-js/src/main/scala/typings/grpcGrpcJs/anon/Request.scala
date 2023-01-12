@@ -15,7 +15,8 @@ object Request {
     __obj.asInstanceOf[Request[RequestType]]
   }
   
-  extension [Self <: Request[?], RequestType](x: Self & Request[RequestType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Request[?], RequestType] (val x: Self & Request[RequestType]) extends AnyVal {
     
     inline def setRequest(value: RequestType): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

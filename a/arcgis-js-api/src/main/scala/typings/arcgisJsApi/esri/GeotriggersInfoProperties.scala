@@ -22,7 +22,8 @@ object GeotriggersInfoProperties {
     __obj.asInstanceOf[GeotriggersInfoProperties]
   }
   
-  extension [Self <: GeotriggersInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeotriggersInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setGeotriggers(value: js.Array[GeotriggerProperties]): Self = StObject.set(x, "geotriggers", value.asInstanceOf[js.Any])
     

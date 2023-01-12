@@ -33,7 +33,8 @@ object Root {
     __obj.asInstanceOf[Root]
   }
   
-  extension [Self <: Root](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
     
     inline def setArn(value: RootArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

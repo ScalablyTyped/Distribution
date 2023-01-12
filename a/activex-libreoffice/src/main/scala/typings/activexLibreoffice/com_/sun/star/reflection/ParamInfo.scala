@@ -23,7 +23,8 @@ object ParamInfo {
     __obj.asInstanceOf[ParamInfo]
   }
   
-  extension [Self <: ParamInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParamInfo] (val x: Self) extends AnyVal {
     
     inline def setAMode(value: ParamMode): Self = StObject.set(x, "aMode", value.asInstanceOf[js.Any])
     

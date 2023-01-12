@@ -18,7 +18,8 @@ object IFieldRuntimeObject {
     __obj.asInstanceOf[IFieldRuntimeObject]
   }
   
-  extension [Self <: IFieldRuntimeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldRuntimeObject] (val x: Self) extends AnyVal {
     
     inline def setModel(value: StringDictionary[Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }

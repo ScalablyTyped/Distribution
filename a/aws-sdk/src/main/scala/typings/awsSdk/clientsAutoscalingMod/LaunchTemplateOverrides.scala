@@ -33,7 +33,8 @@ object LaunchTemplateOverrides {
     __obj.asInstanceOf[LaunchTemplateOverrides]
   }
   
-  extension [Self <: LaunchTemplateOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateOverrides] (val x: Self) extends AnyVal {
     
     inline def setInstanceRequirements(value: InstanceRequirements): Self = StObject.set(x, "InstanceRequirements", value.asInstanceOf[js.Any])
     

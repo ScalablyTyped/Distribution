@@ -23,7 +23,8 @@ object OptionsConfig {
     __obj.asInstanceOf[OptionsConfig]
   }
   
-  extension [Self <: OptionsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsConfig] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: Record[Any, String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

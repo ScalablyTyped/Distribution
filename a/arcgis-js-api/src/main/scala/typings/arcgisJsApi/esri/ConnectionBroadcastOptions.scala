@@ -21,7 +21,8 @@ object ConnectionBroadcastOptions {
     __obj.asInstanceOf[ConnectionBroadcastOptions]
   }
   
-  extension [Self <: ConnectionBroadcastOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionBroadcastOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

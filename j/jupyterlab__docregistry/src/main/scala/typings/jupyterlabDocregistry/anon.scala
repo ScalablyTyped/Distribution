@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[PartialIFileType]
     }
     
-    extension [Self <: PartialIFileType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIFileType] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object anon {
       __obj.asInstanceOf[PartialIModel]
     }
     
-    extension [Self <: PartialIModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIModel] (val x: Self) extends AnyVal {
       
       inline def setConnections(value: Double): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object anon {
       __obj.asInstanceOf[PartialIModelChunk]
     }
     
-    extension [Self <: PartialIModelChunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIModelChunk] (val x: Self) extends AnyVal {
       
       inline def setChunk(value: Double): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       

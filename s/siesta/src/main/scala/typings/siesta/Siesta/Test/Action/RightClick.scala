@@ -23,7 +23,8 @@ object RightClick {
     __obj.asInstanceOf[RightClick]
   }
   
-  extension [Self <: RightClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RightClick] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

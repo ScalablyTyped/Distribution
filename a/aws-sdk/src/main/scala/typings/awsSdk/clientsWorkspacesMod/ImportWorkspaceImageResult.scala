@@ -18,7 +18,8 @@ object ImportWorkspaceImageResult {
     __obj.asInstanceOf[ImportWorkspaceImageResult]
   }
   
-  extension [Self <: ImportWorkspaceImageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportWorkspaceImageResult] (val x: Self) extends AnyVal {
     
     inline def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     

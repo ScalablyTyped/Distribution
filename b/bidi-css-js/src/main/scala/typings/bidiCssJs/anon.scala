@@ -125,7 +125,8 @@ object anon {
       __obj.asInstanceOf[RecordPropertystringnumbe]
     }
     
-    extension [Self <: RecordPropertystringnumbe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordPropertystringnumbe] (val x: Self) extends AnyVal {
       
       inline def setBorderBottomEndRadius(value: String | Double | js.Symbol): Self = StObject.set(x, "borderBottomEndRadius", value.asInstanceOf[js.Any])
       

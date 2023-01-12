@@ -25,7 +25,8 @@ object GuardPredicate {
     __obj.asInstanceOf[GuardPredicate[TContext, TEvent]]
   }
   
-  extension [Self <: GuardPredicate[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (GuardPredicate[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuardPredicate[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (GuardPredicate[TContext, TEvent])) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

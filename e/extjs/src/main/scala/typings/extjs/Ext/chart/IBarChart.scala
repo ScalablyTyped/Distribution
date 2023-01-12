@@ -50,7 +50,8 @@ object IBarChart {
     __obj.asInstanceOf[IBarChart]
   }
   
-  extension [Self <: IBarChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBarChart] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Boolean): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

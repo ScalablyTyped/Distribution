@@ -23,7 +23,8 @@ object DescribeAccessPointsOutput {
     __obj.asInstanceOf[DescribeAccessPointsOutput]
   }
   
-  extension [Self <: DescribeAccessPointsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccessPointsOutput] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancerDescriptions(value: LoadBalancerDescriptions): Self = StObject.set(x, "LoadBalancerDescriptions", value.asInstanceOf[js.Any])
     

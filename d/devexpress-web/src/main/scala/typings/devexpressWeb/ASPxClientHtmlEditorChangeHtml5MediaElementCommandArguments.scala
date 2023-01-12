@@ -49,7 +49,8 @@ object ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments]
   }
   
-  extension [Self <: ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments] (val x: Self) extends AnyVal {
     
     inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     

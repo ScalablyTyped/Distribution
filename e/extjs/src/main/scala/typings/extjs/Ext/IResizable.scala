@@ -89,7 +89,8 @@ object IResizable {
     __obj.asInstanceOf[IResizable]
   }
   
-  extension [Self <: IResizable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResizable] (val x: Self) extends AnyVal {
     
     inline def setConstrainTo(value: Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
     

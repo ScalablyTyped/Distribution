@@ -22,7 +22,8 @@ object DeleteResponses422ContentApplicationjsonDocumentationurl {
     __obj.asInstanceOf[DeleteResponses422ContentApplicationjsonDocumentationurl]
   }
   
-  extension [Self <: DeleteResponses422ContentApplicationjsonDocumentationurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResponses422ContentApplicationjsonDocumentationurl] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: Responses422ContentApplicationjsonDocumentationurl): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object WorksheetDeletedEventArgs {
     __obj.asInstanceOf[WorksheetDeletedEventArgs]
   }
   
-  extension [Self <: WorksheetDeletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetDeletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object SourceFork {
     __obj.asInstanceOf[SourceFork]
   }
   
-  extension [Self <: SourceFork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceFork] (val x: Self) extends AnyVal {
     
     inline def setPrimary(value: SourceSplitShard): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     

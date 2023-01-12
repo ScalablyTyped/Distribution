@@ -20,7 +20,8 @@ object ConnectivityInterval {
     __obj.asInstanceOf[ConnectivityInterval]
   }
   
-  extension [Self <: ConnectivityInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectivityInterval] (val x: Self) extends AnyVal {
     
     inline def setConnectionDuration(value: Double): Self = StObject.set(x, "connectionDuration", value.asInstanceOf[js.Any])
     

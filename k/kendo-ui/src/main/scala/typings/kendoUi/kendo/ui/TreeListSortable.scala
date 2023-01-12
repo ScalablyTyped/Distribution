@@ -17,7 +17,8 @@ object TreeListSortable {
     __obj.asInstanceOf[TreeListSortable]
   }
   
-  extension [Self <: TreeListSortable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListSortable] (val x: Self) extends AnyVal {
     
     inline def setAllowUnsort(value: Boolean): Self = StObject.set(x, "allowUnsort", value.asInstanceOf[js.Any])
     

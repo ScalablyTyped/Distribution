@@ -54,7 +54,8 @@ object SparkConnectorTarget {
     __obj.asInstanceOf[SparkConnectorTarget]
   }
   
-  extension [Self <: SparkConnectorTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparkConnectorTarget] (val x: Self) extends AnyVal {
     
     inline def setAdditionalOptions(value: AdditionalOptions): Self = StObject.set(x, "AdditionalOptions", value.asInstanceOf[js.Any])
     

@@ -621,7 +621,8 @@ object CustomText {
     __obj.asInstanceOf[CustomText]
   }
   
-  extension [Self <: CustomText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomText] (val x: Self) extends AnyVal {
     
     inline def setActionPaymentCompleted(value: String): Self = StObject.set(x, "actionPaymentCompleted", value.asInstanceOf[js.Any])
     

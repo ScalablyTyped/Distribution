@@ -43,7 +43,8 @@ object IPersonaStyleProps {
     __obj.asInstanceOf[IPersonaStyleProps]
   }
   
-  extension [Self <: IPersonaStyleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPersonaStyleProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

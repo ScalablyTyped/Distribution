@@ -45,7 +45,8 @@ object OperationMetadata {
     __obj.asInstanceOf[OperationMetadata]
   }
   
-  extension [Self <: OperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setAdditionalStatus(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

@@ -24,7 +24,8 @@ object distTypingsNewFormatSpec0Dot8CommonMod {
       __obj.asInstanceOf[ElementSourceInfo]
     }
     
-    extension [Self <: ElementSourceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementSourceInfo] (val x: Self) extends AnyVal {
       
       inline def setScalarsSources(value: StringDictionary[js.Array[SourceInfo]]): Self = StObject.set(x, "scalarsSources", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object distTypingsNewFormatSpec0Dot8CommonMod {
       __obj.asInstanceOf[HasSource]
     }
     
-    extension [Self <: HasSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasSource] (val x: Self) extends AnyVal {
       
       inline def setSourceMap(value: ElementSourceInfo): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object distTypingsNewFormatSpec0Dot8CommonMod {
       __obj.asInstanceOf[SourceInfo]
     }
     
-    extension [Self <: SourceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceInfo] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       

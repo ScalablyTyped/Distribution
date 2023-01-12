@@ -130,7 +130,8 @@ object CalendarCanvasProps {
     __obj.asInstanceOf[CalendarCanvasProps]
   }
   
-  extension [Self <: CalendarCanvasProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarCanvasProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: BoxAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

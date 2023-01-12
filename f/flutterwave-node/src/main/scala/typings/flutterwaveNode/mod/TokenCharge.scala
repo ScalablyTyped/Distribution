@@ -21,7 +21,8 @@ object TokenCharge {
     __obj.asInstanceOf[TokenCharge]
   }
   
-  extension [Self <: TokenCharge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenCharge] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: TokenChargeCardRequest => js.Promise[AxiosResponse[TokenChargeCardResponse, Any]]): Self = StObject.set(x, "account", js.Any.fromFunction1(value))
     

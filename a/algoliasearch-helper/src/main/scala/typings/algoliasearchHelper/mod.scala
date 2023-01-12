@@ -1274,7 +1274,8 @@ object mod {
         __obj.asInstanceOf[HierarchicalFacet]
       }
       
-      extension [Self <: HierarchicalFacet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HierarchicalFacet] (val x: Self) extends AnyVal {
         
         inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
         
@@ -1350,7 +1351,8 @@ object mod {
         __obj.asInstanceOf[OperatorList]
       }
       
-      extension [Self <: OperatorList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OperatorList] (val x: Self) extends AnyVal {
         
         inline def setEqualssign(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "=", value.asInstanceOf[js.Any])
         
@@ -1628,7 +1630,8 @@ object mod {
         __obj.asInstanceOf[typings.algoliasearchHelper.mod.SearchResults.Facet]
       }
       
-      extension [Self <: typings.algoliasearchHelper.mod.SearchResults.Facet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.algoliasearchHelper.mod.SearchResults.Facet] (val x: Self) extends AnyVal {
         
         inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -1659,7 +1662,8 @@ object mod {
         __obj.asInstanceOf[FacetValue]
       }
       
-      extension [Self <: FacetValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FacetValue] (val x: Self) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
@@ -1701,7 +1705,8 @@ object mod {
         __obj.asInstanceOf[typings.algoliasearchHelper.mod.SearchResults.HierarchicalFacet]
       }
       
-      extension [Self <: typings.algoliasearchHelper.mod.SearchResults.HierarchicalFacet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.algoliasearchHelper.mod.SearchResults.HierarchicalFacet] (val x: Self) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
@@ -1751,7 +1756,8 @@ object mod {
         __obj.asInstanceOf[Refinement]
       }
       
-      extension [Self <: Refinement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Refinement] (val x: Self) extends AnyVal {
         
         inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
         
@@ -1914,7 +1920,8 @@ object mod {
       __obj.asInstanceOf[PlainSearchParameters]
     }
     
-    extension [Self <: PlainSearchParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlainSearchParameters] (val x: Self) extends AnyVal {
       
       inline def setDisjunctiveFacets(value: js.Array[String]): Self = StObject.set(x, "disjunctiveFacets", value.asInstanceOf[js.Any])
       
@@ -2003,7 +2010,8 @@ object mod {
         __obj.asInstanceOf[Hit]
       }
       
-      extension [Self <: Hit](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Hit] (val x: Self) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
@@ -2030,7 +2038,8 @@ object mod {
         __obj.asInstanceOf[Result]
       }
       
-      extension [Self <: Result](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
         
         inline def setFacetHits(value: js.Array[Hit]): Self = StObject.set(x, "facetHits", value.asInstanceOf[js.Any])
         
@@ -2056,7 +2065,8 @@ object mod {
       __obj.asInstanceOf[SearchResultsOptions]
     }
     
-    extension [Self <: SearchResultsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResultsOptions] (val x: Self) extends AnyVal {
       
       inline def set__isArtificial(value: Boolean): Self = StObject.set(x, "__isArtificial", value.asInstanceOf[js.Any])
       

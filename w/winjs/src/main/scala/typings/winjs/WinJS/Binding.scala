@@ -127,7 +127,8 @@ object Binding {
       __obj.asInstanceOf[IGroupKeyDataPair[T]]
     }
     
-    extension [Self <: IGroupKeyDataPair[?], T](x: Self & IGroupKeyDataPair[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupKeyDataPair[?], T] (val x: Self & IGroupKeyDataPair[T]) extends AnyVal {
       
       inline def setFirstItemIndexHint(value: Double): Self = StObject.set(x, "firstItemIndexHint", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object Binding {
       __obj.asInstanceOf[IKeyDataPair[T]]
     }
     
-    extension [Self <: IKeyDataPair[?], T](x: Self & IKeyDataPair[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeyDataPair[?], T] (val x: Self & IKeyDataPair[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object TraversalActions {
     __obj.asInstanceOf[TraversalActions]
   }
   
-  extension [Self <: TraversalActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraversalActions] (val x: Self) extends AnyVal {
     
     inline def setSkipChildren(value: () => Unit): Self = StObject.set(x, "skipChildren", js.Any.fromFunction0(value))
     

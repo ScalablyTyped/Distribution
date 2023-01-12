@@ -52,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Aggregationkey]
     }
     
-    extension [Self <: Aggregationkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aggregationkey] (val x: Self) extends AnyVal {
       
       inline def setAggregation_key(value: String): Self = StObject.set(x, "aggregation_key", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Apihost]
     }
     
-    extension [Self <: Apihost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apihost] (val x: Self) extends AnyVal {
       
       inline def setApi_host(value: String): Self = StObject.set(x, "api_host", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object anon {
       __obj.asInstanceOf[Datehappened]
     }
     
-    extension [Self <: Datehappened](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Datehappened] (val x: Self) extends AnyVal {
       
       inline def setDate_happened(value: Double): Self = StObject.set(x, "date_happened", value.asInstanceOf[js.Any])
       
@@ -194,7 +197,8 @@ object anon {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object anon {
       __obj.asInstanceOf[Metric]
     }
     
-    extension [Self <: Metric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
       
       inline def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
       

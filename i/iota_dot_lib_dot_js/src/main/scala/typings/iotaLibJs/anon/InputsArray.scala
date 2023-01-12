@@ -16,7 +16,8 @@ object InputsArray {
     __obj.asInstanceOf[InputsArray]
   }
   
-  extension [Self <: InputsArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputsArray] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: js.Array[TransactionObject]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     

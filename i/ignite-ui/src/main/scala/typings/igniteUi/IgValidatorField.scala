@@ -29,7 +29,8 @@ object IgValidatorField {
     __obj.asInstanceOf[IgValidatorField]
   }
   
-  extension [Self <: IgValidatorField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgValidatorField] (val x: Self) extends AnyVal {
     
     inline def setSelector(value: String | js.Object): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

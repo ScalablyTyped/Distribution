@@ -24,7 +24,8 @@ object TransportRequestParams {
     __obj.asInstanceOf[TransportRequestParams]
   }
   
-  extension [Self <: TransportRequestParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransportRequestParams] (val x: Self) extends AnyVal {
     
     inline def setBody(value: anyObject): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

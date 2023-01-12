@@ -64,7 +64,8 @@ object esmLocalizationMod {
       __obj.asInstanceOf[DateFormats[TFormat]]
     }
     
-    extension [Self <: DateFormats[?], TFormat](x: Self & DateFormats[TFormat]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateFormats[?], TFormat] (val x: Self & DateFormats[TFormat]) extends AnyVal {
       
       inline def setCentury(value: TFormat): Self = StObject.set(x, "century", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object esmLocalizationMod {
       __obj.asInstanceOf[DateTimePart]
     }
     
-    extension [Self <: DateTimePart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimePart] (val x: Self) extends AnyVal {
       
       inline def setType(value: DateTimePartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -231,7 +233,8 @@ object esmLocalizationMod {
       __obj.asInstanceOf[FormatterOverrides[TD, TN]]
     }
     
-    extension [Self <: FormatterOverrides[?, ?], TD, TN](x: Self & (FormatterOverrides[TD, TN])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatterOverrides[?, ?], TD, TN] (val x: Self & (FormatterOverrides[TD, TN])) extends AnyVal {
       
       inline def setCentury(value: TD): Self = StObject.set(x, "century", value.asInstanceOf[js.Any])
       
@@ -332,7 +335,8 @@ object esmLocalizationMod {
       __obj.asInstanceOf[ProviderProps]
     }
     
-    extension [Self <: ProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

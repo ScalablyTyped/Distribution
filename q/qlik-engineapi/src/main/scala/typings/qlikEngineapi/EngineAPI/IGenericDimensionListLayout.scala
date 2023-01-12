@@ -20,7 +20,8 @@ object IGenericDimensionListLayout {
     __obj.asInstanceOf[IGenericDimensionListLayout]
   }
   
-  extension [Self <: IGenericDimensionListLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericDimensionListLayout] (val x: Self) extends AnyVal {
     
     inline def setQDimensionList(value: IDimensionList): Self = StObject.set(x, "qDimensionList", value.asInstanceOf[js.Any])
   }

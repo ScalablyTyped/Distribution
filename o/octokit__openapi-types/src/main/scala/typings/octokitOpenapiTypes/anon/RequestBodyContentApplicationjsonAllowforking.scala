@@ -19,7 +19,8 @@ object RequestBodyContentApplicationjsonAllowforking {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAllowforking]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonAllowforking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonAllowforking] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `135`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object Epoch {
     __obj.asInstanceOf[Epoch]
   }
   
-  extension [Self <: Epoch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Epoch] (val x: Self) extends AnyVal {
     
     inline def setDataCallback(value: /* repeated */ Any => Any): Self = StObject.set(x, "dataCallback", js.Any.fromFunction1(value))
     

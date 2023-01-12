@@ -15,7 +15,8 @@ object DeleteFileResponse {
     __obj.asInstanceOf[DeleteFileResponse]
   }
   
-  extension [Self <: DeleteFileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

@@ -43,7 +43,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[FailReporterOptions]
       }
       
-      extension [Self <: FailReporterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FailReporterOptions] (val x: Self) extends AnyVal {
         
         inline def setFailOnWarning(value: `true`): Self = StObject.set(x, "failOnWarning", value.asInstanceOf[js.Any])
       }
@@ -64,7 +65,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
         
@@ -91,7 +93,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ReporterOptions]
       }
       
-      extension [Self <: ReporterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReporterOptions] (val x: Self) extends AnyVal {
         
         inline def setLogger(value: () => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction0(value))
         

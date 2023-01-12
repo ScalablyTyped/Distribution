@@ -40,7 +40,8 @@ object libFilesChangeMod {
       __obj.asInstanceOf[FilesChange]
     }
     
-    extension [Self <: FilesChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilesChange] (val x: Self) extends AnyVal {
       
       inline def setChangedFiles(value: js.Array[String]): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
       

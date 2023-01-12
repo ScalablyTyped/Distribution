@@ -54,7 +54,8 @@ object XRangeSelection {
     __obj.asInstanceOf[XRangeSelection]
   }
   
-  extension [Self <: XRangeSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRangeSelection] (val x: Self) extends AnyVal {
     
     inline def setAbortRangeSelection(value: () => Unit): Self = StObject.set(x, "abortRangeSelection", js.Any.fromFunction0(value))
     

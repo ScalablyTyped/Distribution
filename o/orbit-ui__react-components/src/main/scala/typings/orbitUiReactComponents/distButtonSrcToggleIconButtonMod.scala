@@ -138,7 +138,8 @@ object distButtonSrcToggleIconButtonMod {
       __obj.asInstanceOf[InnerToggleIconButtonProps]
     }
     
-    extension [Self <: InnerToggleIconButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerToggleIconButtonProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       

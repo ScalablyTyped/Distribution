@@ -85,7 +85,8 @@ object distTypesBucketHostnameUtilsMod {
       __obj.asInstanceOf[AccessPointArn]
     }
     
-    extension [Self <: AccessPointArn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessPointArn] (val x: Self) extends AnyVal {
       
       inline def setAccessPointName(value: String): Self = StObject.set(x, "accessPointName", value.asInstanceOf[js.Any])
     }
@@ -127,7 +128,8 @@ object distTypesBucketHostnameUtilsMod {
       __obj.asInstanceOf[ArnHostnameParams]
     }
     
-    extension [Self <: ArnHostnameParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArnHostnameParams] (val x: Self) extends AnyVal {
       
       inline def setAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "accelerateEndpoint", value.asInstanceOf[js.Any])
       
@@ -204,7 +206,8 @@ object distTypesBucketHostnameUtilsMod {
       __obj.asInstanceOf[BucketHostnameParams]
     }
     
-    extension [Self <: BucketHostnameParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketHostnameParams] (val x: Self) extends AnyVal {
       
       inline def setAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "accelerateEndpoint", value.asInstanceOf[js.Any])
       

@@ -115,7 +115,8 @@ object helperMod {
       __obj.asInstanceOf[Helper]
     }
     
-    extension [Self <: Helper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Helper] (val x: Self) extends AnyVal {
       
       inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       

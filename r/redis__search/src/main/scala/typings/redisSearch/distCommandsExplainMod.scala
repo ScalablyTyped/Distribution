@@ -33,7 +33,8 @@ object distCommandsExplainMod {
       __obj.asInstanceOf[ExplainOptions]
     }
     
-    extension [Self <: ExplainOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplainOptions] (val x: Self) extends AnyVal {
       
       inline def setDIALECT(value: Double): Self = StObject.set(x, "DIALECT", value.asInstanceOf[js.Any])
       

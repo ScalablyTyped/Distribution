@@ -212,7 +212,8 @@ object mod {
       __obj.asInstanceOf[CompressionOptions]
     }
     
-    extension [Self <: CompressionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressionOptions] (val x: Self) extends AnyVal {
       
       inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
@@ -271,7 +272,8 @@ object mod {
           __obj.asInstanceOf[Response]
         }
         
-        extension [Self <: Response](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
           
           inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
         }

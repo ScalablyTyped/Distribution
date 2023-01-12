@@ -19,7 +19,8 @@ object OnKeyDownEventArgs {
     __obj.asInstanceOf[OnKeyDownEventArgs[T]]
   }
   
-  extension [Self <: OnKeyDownEventArgs[?], T /* <: SlickData */](x: Self & OnKeyDownEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnKeyDownEventArgs[?], T /* <: SlickData */] (val x: Self & OnKeyDownEventArgs[T]) extends AnyVal {
     
     inline def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

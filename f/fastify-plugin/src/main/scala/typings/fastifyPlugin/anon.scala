@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Fastify]
     }
     
-    extension [Self <: Fastify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fastify] (val x: Self) extends AnyVal {
       
       inline def setFastify(value: js.Array[String | js.Symbol]): Self = StObject.set(x, "fastify", value.asInstanceOf[js.Any])
       

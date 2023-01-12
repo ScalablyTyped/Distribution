@@ -16,7 +16,8 @@ object TableBorderRow {
     __obj.asInstanceOf[TableBorderRow]
   }
   
-  extension [Self <: TableBorderRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableBorderRow] (val x: Self) extends AnyVal {
     
     inline def setTableBorderCells(value: js.Array[TableBorderCell]): Self = StObject.set(x, "tableBorderCells", value.asInstanceOf[js.Any])
     

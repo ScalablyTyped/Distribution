@@ -29,7 +29,8 @@ object OpacityVariableProperties {
     __obj.asInstanceOf[OpacityVariableProperties]
   }
   
-  extension [Self <: OpacityVariableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpacityVariableProperties] (val x: Self) extends AnyVal {
     
     inline def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object MapPanEndEvent {
     __obj.asInstanceOf[MapPanEndEvent]
   }
   
-  extension [Self <: MapPanEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapPanEndEvent] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

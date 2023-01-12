@@ -174,7 +174,8 @@ object PickImplpreserveHTMLParti {
     __obj.asInstanceOf[PickImplpreserveHTMLParti]
   }
   
-  extension [Self <: PickImplpreserveHTMLParti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplpreserveHTMLParti] (val x: Self) extends AnyVal {
     
     inline def setAction(
       value: activate | select | combo | nothing | hide | (js.ThisFunction3[

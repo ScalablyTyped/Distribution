@@ -41,7 +41,8 @@ object SerialPortIds {
     __obj.asInstanceOf[SerialPortIds]
   }
   
-  extension [Self <: SerialPortIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialPortIds] (val x: Self) extends AnyVal {
     
     inline def setDEFAULT(value: SERIAL_PORT_ID): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
     

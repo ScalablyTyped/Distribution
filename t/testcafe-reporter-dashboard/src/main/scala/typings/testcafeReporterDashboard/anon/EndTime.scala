@@ -44,7 +44,8 @@ object EndTime {
     __obj.asInstanceOf[EndTime]
   }
   
-  extension [Self <: EndTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndTime] (val x: Self) extends AnyVal {
     
     inline def setBuildId(value: UnionC[js.Tuple2[BrandC[StringC, MaxLengthString[`100`]], UndefinedC]]): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object HistoryUpdate {
     __obj.asInstanceOf[HistoryUpdate]
   }
   
-  extension [Self <: HistoryUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryUpdate] (val x: Self) extends AnyVal {
     
     inline def setHistoryUpdate(value: String): Self = StObject.set(x, "historyUpdate", value.asInstanceOf[js.Any])
   }

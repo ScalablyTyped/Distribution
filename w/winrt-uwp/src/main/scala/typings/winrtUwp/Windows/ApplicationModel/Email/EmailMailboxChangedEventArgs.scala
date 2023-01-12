@@ -20,7 +20,8 @@ object EmailMailboxChangedEventArgs {
     __obj.asInstanceOf[EmailMailboxChangedEventArgs]
   }
   
-  extension [Self <: EmailMailboxChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMailboxChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => EmailMailboxChangedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }

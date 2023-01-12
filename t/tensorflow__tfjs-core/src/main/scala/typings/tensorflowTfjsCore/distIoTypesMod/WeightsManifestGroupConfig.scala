@@ -26,7 +26,8 @@ object WeightsManifestGroupConfig {
     __obj.asInstanceOf[WeightsManifestGroupConfig]
   }
   
-  extension [Self <: WeightsManifestGroupConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeightsManifestGroupConfig] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     

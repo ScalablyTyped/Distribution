@@ -30,7 +30,8 @@ object PickRequiredCalendarSvgPrColorScale {
     __obj.asInstanceOf[PickRequiredCalendarSvgPrColorScale]
   }
   
-  extension [Self <: PickRequiredCalendarSvgPrColorScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickRequiredCalendarSvgPrColorScale] (val x: Self) extends AnyVal {
     
     inline def setColorScale(value: (ScaleQuantize_[String, scala.Nothing]) | ColorScale): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
     

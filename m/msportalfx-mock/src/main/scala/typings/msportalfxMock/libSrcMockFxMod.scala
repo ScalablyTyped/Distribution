@@ -246,7 +246,8 @@ object libSrcMockFxMod {
         __obj.asInstanceOf[Configuration]
       }
       
-      extension [Self <: Configuration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
         
         inline def setLogToConsole(value: Boolean): Self = StObject.set(x, "logToConsole", value.asInstanceOf[js.Any])
         
@@ -339,7 +340,8 @@ object libSrcMockFxMod {
         __obj.asInstanceOf[Context]
       }
       
-      extension [Self <: Context](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
         
         inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
@@ -405,7 +407,8 @@ object libSrcMockFxMod {
         __obj.asInstanceOf[Endpoints]
       }
       
-      extension [Self <: Endpoints](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Endpoints] (val x: Self) extends AnyVal {
         
         inline def setFinalizeStage(value: String): Self = StObject.set(x, "finalizeStage", value.asInstanceOf[js.Any])
         
@@ -492,7 +495,8 @@ object libSrcMockFxMod {
         __obj.asInstanceOf[Finalization]
       }
       
-      extension [Self <: Finalization](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Finalization] (val x: Self) extends AnyVal {
         
         inline def setRunId(value: String): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
         
@@ -622,7 +626,8 @@ object libSrcMockFxMod {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -693,7 +698,8 @@ object libSrcMockFxMod {
         __obj.asInstanceOf[Stage]
       }
       
-      extension [Self <: Stage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Stage] (val x: Self) extends AnyVal {
         
         inline def setRunId(value: String): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
         
@@ -962,7 +968,8 @@ object libSrcMockFxMod {
         __obj.asInstanceOf[Telemetry]
       }
       
-      extension [Self <: Telemetry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Telemetry] (val x: Self) extends AnyVal {
         
         inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
@@ -1029,7 +1036,8 @@ object libSrcMockFxMod {
       __obj.asInstanceOf[FullContext]
     }
     
-    extension [Self <: FullContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullContext] (val x: Self) extends AnyVal {
       
       inline def setCurrentStage(value: String): Self = StObject.set(x, "currentStage", value.asInstanceOf[js.Any])
       

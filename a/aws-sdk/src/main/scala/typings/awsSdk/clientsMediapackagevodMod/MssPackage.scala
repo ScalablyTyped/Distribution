@@ -25,7 +25,8 @@ object MssPackage {
     __obj.asInstanceOf[MssPackage]
   }
   
-  extension [Self <: MssPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MssPackage] (val x: Self) extends AnyVal {
     
     inline def setEncryption(value: MssEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     

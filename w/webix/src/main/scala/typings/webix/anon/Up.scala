@@ -26,7 +26,8 @@ object Up {
     __obj.asInstanceOf[Up]
   }
   
-  extension [Self <: Up](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Up] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Event => EnvContext): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
     

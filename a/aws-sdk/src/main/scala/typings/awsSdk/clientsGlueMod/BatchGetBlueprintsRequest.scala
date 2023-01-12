@@ -28,7 +28,8 @@ object BatchGetBlueprintsRequest {
     __obj.asInstanceOf[BatchGetBlueprintsRequest]
   }
   
-  extension [Self <: BatchGetBlueprintsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetBlueprintsRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeBlueprint(value: NullableBoolean): Self = StObject.set(x, "IncludeBlueprint", value.asInstanceOf[js.Any])
     

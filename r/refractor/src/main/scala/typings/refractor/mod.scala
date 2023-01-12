@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[RefractorElement]
     }
     
-    extension [Self <: RefractorElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefractorElement] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: js.Array[
@@ -109,7 +110,8 @@ object mod {
       __obj.asInstanceOf[RefractorRoot]
     }
     
-    extension [Self <: RefractorRoot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefractorRoot] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: js.Array[
@@ -156,7 +158,8 @@ object mod {
       __obj.asInstanceOf[Root]
     }
     
-    extension [Self <: Root](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: js.Array[

@@ -26,7 +26,8 @@ object LabelWidget {
     __obj.asInstanceOf[LabelWidget]
   }
   
-  extension [Self <: LabelWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelWidget] (val x: Self) extends AnyVal {
     
     inline def setOnChange(value: /* index */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     

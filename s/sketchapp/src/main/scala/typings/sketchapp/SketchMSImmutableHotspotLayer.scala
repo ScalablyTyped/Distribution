@@ -42,7 +42,8 @@ object SketchMSImmutableHotspotLayer {
     __obj.asInstanceOf[SketchMSImmutableHotspotLayer]
   }
   
-  extension [Self <: SketchMSImmutableHotspotLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSImmutableHotspotLayer] (val x: Self) extends AnyVal {
     
     inline def setFlow(value: SketchMSFlow): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     

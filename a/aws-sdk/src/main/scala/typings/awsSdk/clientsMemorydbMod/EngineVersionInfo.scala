@@ -28,7 +28,8 @@ object EngineVersionInfo {
     __obj.asInstanceOf[EngineVersionInfo]
   }
   
-  extension [Self <: EngineVersionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EngineVersionInfo] (val x: Self) extends AnyVal {
     
     inline def setEnginePatchVersion(value: String): Self = StObject.set(x, "EnginePatchVersion", value.asInstanceOf[js.Any])
     

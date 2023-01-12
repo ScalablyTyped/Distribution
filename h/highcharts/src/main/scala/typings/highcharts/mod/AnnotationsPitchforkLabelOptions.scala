@@ -143,7 +143,8 @@ object AnnotationsPitchforkLabelOptions {
     __obj.asInstanceOf[AnnotationsPitchforkLabelOptions]
   }
   
-  extension [Self <: AnnotationsPitchforkLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsPitchforkLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: AnnotationLabelAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

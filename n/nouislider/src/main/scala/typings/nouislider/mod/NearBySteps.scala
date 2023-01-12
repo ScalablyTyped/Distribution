@@ -19,7 +19,8 @@ object NearBySteps {
     __obj.asInstanceOf[NearBySteps]
   }
   
-  extension [Self <: NearBySteps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NearBySteps] (val x: Self) extends AnyVal {
     
     inline def setStepAfter(value: NearByStep): Self = StObject.set(x, "stepAfter", value.asInstanceOf[js.Any])
     

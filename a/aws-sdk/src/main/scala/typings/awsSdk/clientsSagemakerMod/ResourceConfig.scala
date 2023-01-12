@@ -43,7 +43,8 @@ object ResourceConfig {
     __obj.asInstanceOf[ResourceConfig]
   }
   
-  extension [Self <: ResourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceConfig] (val x: Self) extends AnyVal {
     
     inline def setInstanceCount(value: TrainingInstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     

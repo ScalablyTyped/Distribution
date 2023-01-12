@@ -23,7 +23,8 @@ object DeleteBranchRequest {
     __obj.asInstanceOf[DeleteBranchRequest]
   }
   
-  extension [Self <: DeleteBranchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBranchRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

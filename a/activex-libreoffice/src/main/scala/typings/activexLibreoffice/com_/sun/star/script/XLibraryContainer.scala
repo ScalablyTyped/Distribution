@@ -56,7 +56,8 @@ object XLibraryContainer {
     __obj.asInstanceOf[XLibraryContainer]
   }
   
-  extension [Self <: XLibraryContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLibraryContainer] (val x: Self) extends AnyVal {
     
     inline def setCreateLibrary(value: String => XNameContainer): Self = StObject.set(x, "createLibrary", js.Any.fromFunction1(value))
     

@@ -22,7 +22,8 @@ object RepricingRuleStatsBasedRule {
     __obj.asInstanceOf[RepricingRuleStatsBasedRule]
   }
   
-  extension [Self <: RepricingRuleStatsBasedRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepricingRuleStatsBasedRule] (val x: Self) extends AnyVal {
     
     inline def setPercentageDelta(value: Double): Self = StObject.set(x, "percentageDelta", value.asInstanceOf[js.Any])
     

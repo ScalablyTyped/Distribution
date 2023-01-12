@@ -19,7 +19,8 @@ object AdministratorWebTokenSpecPlaySearch {
     __obj.asInstanceOf[AdministratorWebTokenSpecPlaySearch]
   }
   
-  extension [Self <: AdministratorWebTokenSpecPlaySearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdministratorWebTokenSpecPlaySearch] (val x: Self) extends AnyVal {
     
     inline def setApproveApps(value: Boolean): Self = StObject.set(x, "approveApps", value.asInstanceOf[js.Any])
     

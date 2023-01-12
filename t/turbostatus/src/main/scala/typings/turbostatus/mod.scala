@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[Description]
     }
     
-    extension [Self <: Description](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
       
       inline def setCommitsSinceTag(value: String | `false`): Self = StObject.set(x, "commitsSinceTag", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object mod {
       __obj.asInstanceOf[Repository]
     }
     
-    extension [Self <: Repository](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Repository] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object providerMod {
       __obj.asInstanceOf[ClassProvider]
     }
     
-    extension [Self <: ClassProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassProvider] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object providerMod {
       __obj.asInstanceOf[ExistingProvider]
     }
     
-    extension [Self <: ExistingProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExistingProvider] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object providerMod {
       __obj.asInstanceOf[FactoryProvider]
     }
     
-    extension [Self <: FactoryProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FactoryProvider] (val x: Self) extends AnyVal {
       
       inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
@@ -192,7 +195,8 @@ object providerMod {
       __obj.asInstanceOf[ValueProvider]
     }
     
-    extension [Self <: ValueProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueProvider] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       

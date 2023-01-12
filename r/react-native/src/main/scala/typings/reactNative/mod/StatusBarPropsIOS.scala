@@ -31,7 +31,8 @@ object StatusBarPropsIOS {
     __obj.asInstanceOf[StatusBarPropsIOS]
   }
   
-  extension [Self <: StatusBarPropsIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusBarPropsIOS] (val x: Self) extends AnyVal {
     
     inline def setNetworkActivityIndicatorVisible(value: Boolean): Self = StObject.set(x, "networkActivityIndicatorVisible", value.asInstanceOf[js.Any])
     

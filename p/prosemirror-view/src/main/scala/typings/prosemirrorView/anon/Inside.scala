@@ -17,7 +17,8 @@ object Inside {
     __obj.asInstanceOf[Inside]
   }
   
-  extension [Self <: Inside](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inside] (val x: Self) extends AnyVal {
     
     inline def setInside(value: Double): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
     

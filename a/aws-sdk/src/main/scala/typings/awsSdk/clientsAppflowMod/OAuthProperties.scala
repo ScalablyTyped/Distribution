@@ -28,7 +28,8 @@ object OAuthProperties {
     __obj.asInstanceOf[OAuthProperties]
   }
   
-  extension [Self <: OAuthProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthProperties] (val x: Self) extends AnyVal {
     
     inline def setAuthCodeUrl(value: AuthCodeUrl): Self = StObject.set(x, "authCodeUrl", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object NextWasmDisassemblyChunkResponse {
     __obj.asInstanceOf[NextWasmDisassemblyChunkResponse]
   }
   
-  extension [Self <: NextWasmDisassemblyChunkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextWasmDisassemblyChunkResponse] (val x: Self) extends AnyVal {
     
     inline def setChunk(value: WasmDisassemblyChunk): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
   }

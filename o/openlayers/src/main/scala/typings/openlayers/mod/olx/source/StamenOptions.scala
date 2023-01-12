@@ -31,7 +31,8 @@ object StamenOptions {
     __obj.asInstanceOf[StamenOptions]
   }
   
-  extension [Self <: StamenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StamenOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     

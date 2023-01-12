@@ -20,7 +20,8 @@ object PlotArcdiagramLevelsDataLabelsAnimationOptions {
     __obj.asInstanceOf[PlotArcdiagramLevelsDataLabelsAnimationOptions]
   }
   
-  extension [Self <: PlotArcdiagramLevelsDataLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotArcdiagramLevelsDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

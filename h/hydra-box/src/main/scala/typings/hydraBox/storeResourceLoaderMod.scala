@@ -80,7 +80,8 @@ object storeResourceLoaderMod {
       __obj.asInstanceOf[StoreResourceLoader]
     }
     
-    extension [Self <: StoreResourceLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreResourceLoader] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: Term => js.Promise[Resource]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     }

@@ -34,7 +34,8 @@ object GoogleDocsMetadata {
     __obj.asInstanceOf[GoogleDocsMetadata]
   }
   
-  extension [Self <: GoogleDocsMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDocsMetadata] (val x: Self) extends AnyVal {
     
     inline def setAclInfo(value: AclInfo): Self = StObject.set(x, "aclInfo", value.asInstanceOf[js.Any])
     

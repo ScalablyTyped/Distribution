@@ -21,7 +21,8 @@ object PlayReadyDomainIterable {
     __obj.asInstanceOf[PlayReadyDomainIterable]
   }
   
-  extension [Self <: PlayReadyDomainIterable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadyDomainIterable] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: () => IIterator[IPlayReadyDomain]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
   }

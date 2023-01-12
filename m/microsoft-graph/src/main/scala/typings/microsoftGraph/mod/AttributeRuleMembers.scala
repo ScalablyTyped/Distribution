@@ -24,7 +24,8 @@ object AttributeRuleMembers {
     __obj.asInstanceOf[AttributeRuleMembers]
   }
   
-  extension [Self <: AttributeRuleMembers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeRuleMembers] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

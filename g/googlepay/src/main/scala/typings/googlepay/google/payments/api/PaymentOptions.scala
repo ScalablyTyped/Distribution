@@ -55,7 +55,8 @@ object PaymentOptions {
     __obj.asInstanceOf[PaymentOptions]
   }
   
-  extension [Self <: PaymentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentOptions] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

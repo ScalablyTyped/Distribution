@@ -63,7 +63,8 @@ object PackageMetadata {
     __obj.asInstanceOf[PackageMetadata]
   }
   
-  extension [Self <: PackageMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     

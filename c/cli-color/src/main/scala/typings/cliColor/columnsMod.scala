@@ -35,7 +35,8 @@ object columnsMod {
       __obj.asInstanceOf[ColumnOptions]
     }
     
-    extension [Self <: ColumnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnOptions] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object columnsMod {
       __obj.asInstanceOf[ColumnsOptions]
     }
     
-    extension [Self <: ColumnsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnsOptions] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[ColumnOptions | Null]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

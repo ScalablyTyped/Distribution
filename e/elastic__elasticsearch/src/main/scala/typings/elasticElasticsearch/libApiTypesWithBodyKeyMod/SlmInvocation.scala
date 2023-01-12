@@ -17,7 +17,8 @@ object SlmInvocation {
     __obj.asInstanceOf[SlmInvocation]
   }
   
-  extension [Self <: SlmInvocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlmInvocation] (val x: Self) extends AnyVal {
     
     inline def setSnapshot_name(value: Name): Self = StObject.set(x, "snapshot_name", value.asInstanceOf[js.Any])
     

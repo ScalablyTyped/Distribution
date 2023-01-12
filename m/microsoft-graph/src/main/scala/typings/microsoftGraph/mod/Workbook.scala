@@ -36,7 +36,8 @@ object Workbook {
     __obj.asInstanceOf[Workbook]
   }
   
-  extension [Self <: Workbook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Workbook] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: NullableOption[WorkbookApplication]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

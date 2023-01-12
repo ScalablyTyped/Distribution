@@ -25,7 +25,8 @@ object SwitchTabOption {
     __obj.asInstanceOf[SwitchTabOption]
   }
   
-  extension [Self <: SwitchTabOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchTabOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

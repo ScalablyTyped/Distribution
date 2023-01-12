@@ -18,7 +18,8 @@ object DeregisterAccountResponse {
     __obj.asInstanceOf[DeregisterAccountResponse]
   }
   
-  extension [Self <: DeregisterAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: AccountStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

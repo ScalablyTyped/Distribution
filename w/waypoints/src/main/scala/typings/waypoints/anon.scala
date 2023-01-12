@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Adapter]
     }
     
-    extension [Self <: Adapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Adapter] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: WaypointAdapter): Self = StObject.set(x, "Adapter", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

@@ -57,7 +57,8 @@ object distTypesRadarSliceMod {
       __obj.asInstanceOf[RadarSliceProps[D]]
     }
     
-    extension [Self <: RadarSliceProps[?], D /* <: Record[String, Any] */](x: Self & RadarSliceProps[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadarSliceProps[?], D /* <: Record[String, Any] */] (val x: Self & RadarSliceProps[D]) extends AnyVal {
       
       inline def setArcGenerator(value: Arc_[Unit, EndAngle]): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
       

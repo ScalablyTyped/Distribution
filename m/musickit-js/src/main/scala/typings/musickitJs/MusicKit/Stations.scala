@@ -27,7 +27,8 @@ object Stations {
     __obj.asInstanceOf[Stations]
   }
   
-  extension [Self <: Stations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stations] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: typings.musickitJs.anon.ContentRating): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

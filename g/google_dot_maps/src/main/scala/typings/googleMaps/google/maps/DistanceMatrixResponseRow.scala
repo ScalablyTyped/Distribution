@@ -23,7 +23,8 @@ object DistanceMatrixResponseRow {
     __obj.asInstanceOf[DistanceMatrixResponseRow]
   }
   
-  extension [Self <: DistanceMatrixResponseRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceMatrixResponseRow] (val x: Self) extends AnyVal {
     
     inline def setElements(value: js.Array[DistanceMatrixResponseElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

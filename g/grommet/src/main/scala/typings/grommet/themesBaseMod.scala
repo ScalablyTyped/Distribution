@@ -444,7 +444,8 @@ object themesBaseMod {
       __obj.asInstanceOf[ButtonKindType]
     }
     
-    extension [Self <: ButtonKindType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonKindType] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -527,7 +528,8 @@ object themesBaseMod {
       __obj.asInstanceOf[ButtonType]
     }
     
-    extension [Self <: ButtonType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonType] (val x: Self) extends AnyVal {
       
       inline def setActive(value: ButtonKindTypedefaultButt | StringDictionary[ButtonKindType]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -708,7 +710,8 @@ object themesBaseMod {
       __obj.asInstanceOf[Colors]
     }
     
-    extension [Self <: Colors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
       
       inline def `setAccent-1`(value: ColorType): Self = StObject.set(x, "accent-1", value.asInstanceOf[js.Any])
       
@@ -949,7 +952,8 @@ object themesBaseMod {
       __obj.asInstanceOf[FormFieldLabelType]
     }
     
-    extension [Self <: FormFieldLabelType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormFieldLabelType] (val x: Self) extends AnyVal {
       
       inline def setRequiredIndicator(value: Boolean | Element | String): Self = StObject.set(x, "requiredIndicator", value.asInstanceOf[js.Any])
       
@@ -1074,7 +1078,8 @@ object themesBaseMod {
       __obj.asInstanceOf[ThemeType]
     }
     
-    extension [Self <: ThemeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeType] (val x: Self) extends AnyVal {
       
       inline def setAccordion(value: Hover): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
       

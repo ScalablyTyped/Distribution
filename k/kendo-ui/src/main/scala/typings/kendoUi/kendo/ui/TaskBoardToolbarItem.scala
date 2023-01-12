@@ -51,7 +51,8 @@ object TaskBoardToolbarItem {
     __obj.asInstanceOf[TaskBoardToolbarItem]
   }
   
-  extension [Self <: TaskBoardToolbarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardToolbarItem] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

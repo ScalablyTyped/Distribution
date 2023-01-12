@@ -169,7 +169,8 @@ object flexMod {
         __obj.asInstanceOf[FlexProps]
       }
       
-      extension [Self <: FlexProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FlexProps] (val x: Self) extends AnyVal {
         
         inline def setAlign(value: AlignItems | top | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
         
@@ -814,7 +815,8 @@ object flexMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
         

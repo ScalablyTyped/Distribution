@@ -57,7 +57,8 @@ object PolyOffsetBuilder {
     __obj.asInstanceOf[PolyOffsetBuilder]
   }
   
-  extension [Self <: PolyOffsetBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolyOffsetBuilder] (val x: Self) extends AnyVal {
     
     inline def setAddPoint(value: IntPoint => Unit): Self = StObject.set(x, "AddPoint", js.Any.fromFunction1(value))
     

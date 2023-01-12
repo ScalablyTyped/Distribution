@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyOptions]
     }
     
-    extension [Self <: ReadonlyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyOptions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: js.Function0[js.Promise[Any]] | (js.Function1[/* done */ js.Function0[Unit], Any])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

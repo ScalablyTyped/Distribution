@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Types]
     }
     
-    extension [Self <: Types](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
       
       inline def setTypes(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ButtonTypes */ Any): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
       

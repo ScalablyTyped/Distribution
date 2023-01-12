@@ -38,7 +38,8 @@ object libErrorBarMod {
       __obj.asInstanceOf[ErrorBarProps]
     }
     
-    extension [Self <: ErrorBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBarProps] (val x: Self) extends AnyVal {
       
       inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object libErrorBarMod {
       __obj.asInstanceOf[ErrorProps]
     }
     
-    extension [Self <: ErrorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorProps] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Error): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

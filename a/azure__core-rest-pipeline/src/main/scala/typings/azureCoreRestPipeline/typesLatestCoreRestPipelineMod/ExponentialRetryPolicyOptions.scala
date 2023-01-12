@@ -31,7 +31,8 @@ object ExponentialRetryPolicyOptions {
     __obj.asInstanceOf[ExponentialRetryPolicyOptions]
   }
   
-  extension [Self <: ExponentialRetryPolicyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExponentialRetryPolicyOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     

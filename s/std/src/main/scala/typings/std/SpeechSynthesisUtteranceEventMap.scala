@@ -42,7 +42,8 @@ object SpeechSynthesisUtteranceEventMap {
     __obj.asInstanceOf[SpeechSynthesisUtteranceEventMap]
   }
   
-  extension [Self <: SpeechSynthesisUtteranceEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechSynthesisUtteranceEventMap] (val x: Self) extends AnyVal {
     
     inline def setBoundary(value: SpeechSynthesisEvent): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     

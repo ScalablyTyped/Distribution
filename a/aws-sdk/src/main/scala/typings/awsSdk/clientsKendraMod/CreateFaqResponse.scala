@@ -18,7 +18,8 @@ object CreateFaqResponse {
     __obj.asInstanceOf[CreateFaqResponse]
   }
   
-  extension [Self <: CreateFaqResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFaqResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: FaqId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

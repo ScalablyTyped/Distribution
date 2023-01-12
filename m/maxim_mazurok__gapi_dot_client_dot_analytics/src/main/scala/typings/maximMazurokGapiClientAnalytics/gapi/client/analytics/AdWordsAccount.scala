@@ -22,7 +22,8 @@ object AdWordsAccount {
     __obj.asInstanceOf[AdWordsAccount]
   }
   
-  extension [Self <: AdWordsAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdWordsAccount] (val x: Self) extends AnyVal {
     
     inline def setAutoTaggingEnabled(value: Boolean): Self = StObject.set(x, "autoTaggingEnabled", value.asInstanceOf[js.Any])
     

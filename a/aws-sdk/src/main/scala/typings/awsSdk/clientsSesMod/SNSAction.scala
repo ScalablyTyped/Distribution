@@ -23,7 +23,8 @@ object SNSAction {
     __obj.asInstanceOf[SNSAction]
   }
   
-  extension [Self <: SNSAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SNSAction] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: SNSActionEncoding): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     

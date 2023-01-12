@@ -28,7 +28,8 @@ object DropDownOKClickedEventUIParam {
     __obj.asInstanceOf[DropDownOKClickedEventUIParam]
   }
   
-  extension [Self <: DropDownOKClickedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownOKClickedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     

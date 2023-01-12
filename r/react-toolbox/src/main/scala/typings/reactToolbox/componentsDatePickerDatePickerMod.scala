@@ -89,7 +89,8 @@ object componentsDatePickerDatePickerMod {
       __obj.asInstanceOf[DatePickerLocale]
     }
     
-    extension [Self <: DatePickerLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerLocale] (val x: Self) extends AnyVal {
       
       inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
@@ -267,7 +268,8 @@ object componentsDatePickerDatePickerMod {
       __obj.asInstanceOf[DatePickerProps]
     }
     
-    extension [Self <: DatePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -486,7 +488,8 @@ object componentsDatePickerDatePickerMod {
       __obj.asInstanceOf[DatePickerTheme]
     }
     
-    extension [Self <: DatePickerTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerTheme] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object TcpRouteMatch {
     __obj.asInstanceOf[TcpRouteMatch]
   }
   
-  extension [Self <: TcpRouteMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcpRouteMatch] (val x: Self) extends AnyVal {
     
     inline def setPort(value: ListenerPort): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object PointInstrumentMappingObject {
     __obj.asInstanceOf[PointInstrumentMappingObject]
   }
   
-  extension [Self <: PointInstrumentMappingObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointInstrumentMappingObject] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double | String | js.Function): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

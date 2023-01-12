@@ -28,7 +28,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CurrencyFormat]
     }
     
-    extension [Self <: CurrencyFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrencyFormat] (val x: Self) extends AnyVal {
       
       inline def setNeg(value: String): Self = StObject.set(x, "neg", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CurrencySettings[TFormat]]
     }
     
-    extension [Self <: CurrencySettings[?], TFormat](x: Self & CurrencySettings[TFormat]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrencySettings[?], TFormat] (val x: Self & CurrencySettings[TFormat]) extends AnyVal {
       
       inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NumberSettings]
     }
     
-    extension [Self <: NumberSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberSettings] (val x: Self) extends AnyVal {
       
       inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
@@ -135,7 +138,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: CurrencySettings[Any]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       

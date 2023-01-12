@@ -158,7 +158,8 @@ object enginesExtensionsIndexMod {
         __obj.asInstanceOf[Camera]
       }
       
-      extension [Self <: Camera](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
         
         inline def set_multiviewTexture(value: Nullable[RenderTargetTexture]): Self = StObject.set(x, "_multiviewTexture", value.asInstanceOf[js.Any])
         
@@ -1840,7 +1841,8 @@ object enginesExtensionsIndexMod {
         __obj.asInstanceOf[AbstractMesh]
       }
       
-      extension [Self <: AbstractMesh](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AbstractMesh] (val x: Self) extends AnyVal {
         
         inline def setForceRenderingWhenOccluded(value: Boolean): Self = StObject.set(x, "forceRenderingWhenOccluded", value.asInstanceOf[js.Any])
         

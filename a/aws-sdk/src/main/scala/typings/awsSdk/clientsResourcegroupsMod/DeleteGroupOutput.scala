@@ -18,7 +18,8 @@ object DeleteGroupOutput {
     __obj.asInstanceOf[DeleteGroupOutput]
   }
   
-  extension [Self <: DeleteGroupOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGroupOutput] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: Group): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     

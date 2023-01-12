@@ -44,7 +44,8 @@ object UpdateAuthEventFeedbackRequest {
     __obj.asInstanceOf[UpdateAuthEventFeedbackRequest]
   }
   
-  extension [Self <: UpdateAuthEventFeedbackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAuthEventFeedbackRequest] (val x: Self) extends AnyVal {
     
     inline def setEventId(value: EventIdType): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsCardsMod extends Shortcut {
       __obj.asInstanceOf[CardsProps]
     }
     
-    extension [Self <: CardsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

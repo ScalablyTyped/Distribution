@@ -20,7 +20,8 @@ object MaintenanceTrigger {
     __obj.asInstanceOf[MaintenanceTrigger]
   }
   
-  extension [Self <: MaintenanceTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceTrigger] (val x: Self) extends AnyVal {
     
     inline def setFreshnessTime(value: Double): Self = StObject.set(x, "freshnessTime", value.asInstanceOf[js.Any])
     

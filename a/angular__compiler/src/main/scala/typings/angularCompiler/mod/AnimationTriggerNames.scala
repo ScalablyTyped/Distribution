@@ -17,7 +17,8 @@ object AnimationTriggerNames {
     __obj.asInstanceOf[AnimationTriggerNames]
   }
   
-  extension [Self <: AnimationTriggerNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationTriggerNames] (val x: Self) extends AnyVal {
     
     inline def setIncludesDynamicAnimations(value: Boolean): Self = StObject.set(x, "includesDynamicAnimations", value.asInstanceOf[js.Any])
     

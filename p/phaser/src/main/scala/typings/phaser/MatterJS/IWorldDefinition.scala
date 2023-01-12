@@ -19,7 +19,8 @@ object IWorldDefinition {
     __obj.asInstanceOf[IWorldDefinition]
   }
   
-  extension [Self <: IWorldDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWorldDefinition] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: IBound): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

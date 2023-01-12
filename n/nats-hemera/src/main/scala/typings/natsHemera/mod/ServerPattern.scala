@@ -24,7 +24,8 @@ object ServerPattern {
     __obj.asInstanceOf[ServerPattern]
   }
   
-  extension [Self <: ServerPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerPattern] (val x: Self) extends AnyVal {
     
     inline def setMaxMessages$(value: Double): Self = StObject.set(x, "maxMessages$", value.asInstanceOf[js.Any])
     

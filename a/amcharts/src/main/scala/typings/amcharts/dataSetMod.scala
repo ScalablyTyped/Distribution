@@ -145,7 +145,8 @@ object dataSetMod {
       __obj.asInstanceOf[DataSet]
     }
     
-    extension [Self <: DataSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSet] (val x: Self) extends AnyVal {
       
       inline def setCategoryField(value: String): Self = StObject.set(x, "categoryField", value.asInstanceOf[js.Any])
       

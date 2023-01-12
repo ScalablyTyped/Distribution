@@ -36,7 +36,8 @@ object Enforceadmins {
     __obj.asInstanceOf[Enforceadmins]
   }
   
-  extension [Self <: Enforceadmins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enforceadmins] (val x: Self) extends AnyVal {
     
     inline def setAllow_deletions(value: EnabledBoolean): Self = StObject.set(x, "allow_deletions", value.asInstanceOf[js.Any])
     

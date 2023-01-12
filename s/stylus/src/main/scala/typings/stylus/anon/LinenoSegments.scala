@@ -36,7 +36,8 @@ object LinenoSegments {
     __obj.asInstanceOf[LinenoSegments]
   }
   
-  extension [Self <: LinenoSegments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinenoSegments] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: typings.stylus.mod.Stylus.Nodes.Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

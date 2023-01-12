@@ -28,7 +28,8 @@ object ActionSource {
     __obj.asInstanceOf[ActionSource]
   }
   
-  extension [Self <: ActionSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionSource] (val x: Self) extends AnyVal {
     
     inline def setSourceId(value: String256): Self = StObject.set(x, "SourceId", value.asInstanceOf[js.Any])
     

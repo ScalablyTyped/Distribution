@@ -33,7 +33,8 @@ object DescribeSpotFleetRequestsRequest {
     __obj.asInstanceOf[DescribeSpotFleetRequestsRequest]
   }
   
-  extension [Self <: DescribeSpotFleetRequestsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSpotFleetRequestsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

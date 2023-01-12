@@ -22,7 +22,8 @@ object DocumentationQueryResult {
     __obj.asInstanceOf[DocumentationQueryResult]
   }
   
-  extension [Self <: DocumentationQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentationQueryResult] (val x: Self) extends AnyVal {
     
     inline def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     

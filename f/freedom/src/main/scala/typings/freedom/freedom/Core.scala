@@ -31,7 +31,8 @@ object Core {
     __obj.asInstanceOf[Core]
   }
   
-  extension [Self <: Core](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Core] (val x: Self) extends AnyVal {
     
     inline def setBindChannel(value: String => js.Promise[Channel]): Self = StObject.set(x, "bindChannel", js.Any.fromFunction1(value))
     

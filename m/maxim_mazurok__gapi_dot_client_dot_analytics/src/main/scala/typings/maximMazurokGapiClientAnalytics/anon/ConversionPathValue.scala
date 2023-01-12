@@ -19,7 +19,8 @@ object ConversionPathValue {
     __obj.asInstanceOf[ConversionPathValue]
   }
   
-  extension [Self <: ConversionPathValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversionPathValue] (val x: Self) extends AnyVal {
     
     inline def setConversionPathValue(value: js.Array[InteractionType]): Self = StObject.set(x, "conversionPathValue", value.asInstanceOf[js.Any])
     

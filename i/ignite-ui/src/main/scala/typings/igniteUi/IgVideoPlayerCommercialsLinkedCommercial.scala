@@ -43,7 +43,8 @@ object IgVideoPlayerCommercialsLinkedCommercial {
     __obj.asInstanceOf[IgVideoPlayerCommercialsLinkedCommercial]
   }
   
-  extension [Self <: IgVideoPlayerCommercialsLinkedCommercial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgVideoPlayerCommercialsLinkedCommercial] (val x: Self) extends AnyVal {
     
     inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     

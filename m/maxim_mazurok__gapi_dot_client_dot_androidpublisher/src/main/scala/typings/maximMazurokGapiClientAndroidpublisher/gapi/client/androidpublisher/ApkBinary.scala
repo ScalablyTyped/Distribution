@@ -19,7 +19,8 @@ object ApkBinary {
     __obj.asInstanceOf[ApkBinary]
   }
   
-  extension [Self <: ApkBinary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApkBinary] (val x: Self) extends AnyVal {
     
     inline def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     

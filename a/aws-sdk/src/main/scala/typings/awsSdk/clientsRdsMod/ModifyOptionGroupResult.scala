@@ -15,7 +15,8 @@ object ModifyOptionGroupResult {
     __obj.asInstanceOf[ModifyOptionGroupResult]
   }
   
-  extension [Self <: ModifyOptionGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyOptionGroupResult] (val x: Self) extends AnyVal {
     
     inline def setOptionGroup(value: OptionGroup): Self = StObject.set(x, "OptionGroup", value.asInstanceOf[js.Any])
     

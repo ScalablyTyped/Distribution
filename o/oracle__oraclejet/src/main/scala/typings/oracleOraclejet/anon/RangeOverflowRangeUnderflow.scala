@@ -17,7 +17,8 @@ object RangeOverflowRangeUnderflow {
     __obj.asInstanceOf[RangeOverflowRangeUnderflow]
   }
   
-  extension [Self <: RangeOverflowRangeUnderflow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeOverflowRangeUnderflow] (val x: Self) extends AnyVal {
     
     inline def setRangeOverflow(value: String): Self = StObject.set(x, "rangeOverflow", value.asInstanceOf[js.Any])
     

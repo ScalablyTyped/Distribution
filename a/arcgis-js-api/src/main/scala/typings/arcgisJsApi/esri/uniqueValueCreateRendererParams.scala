@@ -56,7 +56,8 @@ object uniqueValueCreateRendererParams {
     __obj.asInstanceOf[uniqueValueCreateRendererParams]
   }
   
-  extension [Self <: uniqueValueCreateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: uniqueValueCreateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setClassFieldName(value: String): Self = StObject.set(x, "classFieldName", value.asInstanceOf[js.Any])
     

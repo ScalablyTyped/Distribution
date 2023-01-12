@@ -38,7 +38,8 @@ object GatewayResponse {
     __obj.asInstanceOf[GatewayResponse]
   }
   
-  extension [Self <: GatewayResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayResponse] (val x: Self) extends AnyVal {
     
     inline def setDefaultResponse(value: Boolean): Self = StObject.set(x, "defaultResponse", value.asInstanceOf[js.Any])
     

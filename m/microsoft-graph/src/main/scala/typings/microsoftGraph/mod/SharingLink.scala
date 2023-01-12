@@ -40,7 +40,8 @@ object SharingLink {
     __obj.asInstanceOf[SharingLink]
   }
   
-  extension [Self <: SharingLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharingLink] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: NullableOption[Identity]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

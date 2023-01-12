@@ -23,7 +23,8 @@ object ILogOptions {
     __obj.asInstanceOf[ILogOptions]
   }
   
-  extension [Self <: ILogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILogOptions] (val x: Self) extends AnyVal {
     
     inline def setAction(value: (/* message */ String, /* tags */ String, /* type */ String) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction3(value))
     

@@ -398,7 +398,8 @@ object GlobalEventHandlersEventMap {
     __obj.asInstanceOf[GlobalEventHandlersEventMap]
   }
   
-  extension [Self <: GlobalEventHandlersEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalEventHandlersEventMap] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: UIEvent): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     

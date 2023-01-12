@@ -17,7 +17,8 @@ object ArrivalDeparture {
     __obj.asInstanceOf[ArrivalDeparture]
   }
   
-  extension [Self <: ArrivalDeparture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrivalDeparture] (val x: Self) extends AnyVal {
     
     inline def setArrival(value: Double): Self = StObject.set(x, "arrival", value.asInstanceOf[js.Any])
     

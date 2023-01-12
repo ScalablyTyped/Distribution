@@ -22,7 +22,8 @@ object DirectionHeader {
     __obj.asInstanceOf[DirectionHeader]
   }
   
-  extension [Self <: DirectionHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionHeader] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: ascending | descending): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

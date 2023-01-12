@@ -15,7 +15,8 @@ object CopyOptionGroupResult {
     __obj.asInstanceOf[CopyOptionGroupResult]
   }
   
-  extension [Self <: CopyOptionGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyOptionGroupResult] (val x: Self) extends AnyVal {
     
     inline def setOptionGroup(value: OptionGroup): Self = StObject.set(x, "OptionGroup", value.asInstanceOf[js.Any])
     

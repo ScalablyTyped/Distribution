@@ -40,7 +40,8 @@ object Container {
     __obj.asInstanceOf[Container]
   }
   
-  extension [Self <: Container](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
     
     inline def setAlways(value: /* param */ AuthSuccessObject | AuthError => Unit): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
     

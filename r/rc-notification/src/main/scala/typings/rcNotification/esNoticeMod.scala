@@ -46,7 +46,8 @@ object esNoticeMod {
       __obj.asInstanceOf[DivProps]
     }
     
-    extension [Self <: DivProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DivProps] (val x: Self) extends AnyVal {
       
       inline def `setData-testid`(value: String): Self = StObject.set(x, "data-testid", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object esNoticeMod {
       __obj.asInstanceOf[NoticeProps]
     }
     
-    extension [Self <: NoticeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoticeProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

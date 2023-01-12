@@ -21,7 +21,8 @@ object HierarchySeparatorOptions {
     __obj.asInstanceOf[HierarchySeparatorOptions]
   }
   
-  extension [Self <: HierarchySeparatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HierarchySeparatorOptions] (val x: Self) extends AnyVal {
     
     inline def setSeparator(value: String | `false`): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     

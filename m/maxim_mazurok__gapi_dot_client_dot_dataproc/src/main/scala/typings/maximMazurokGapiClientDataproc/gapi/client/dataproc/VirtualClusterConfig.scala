@@ -27,7 +27,8 @@ object VirtualClusterConfig {
     __obj.asInstanceOf[VirtualClusterConfig]
   }
   
-  extension [Self <: VirtualClusterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualClusterConfig] (val x: Self) extends AnyVal {
     
     inline def setAuxiliaryServicesConfig(value: AuxiliaryServicesConfig): Self = StObject.set(x, "auxiliaryServicesConfig", value.asInstanceOf[js.Any])
     

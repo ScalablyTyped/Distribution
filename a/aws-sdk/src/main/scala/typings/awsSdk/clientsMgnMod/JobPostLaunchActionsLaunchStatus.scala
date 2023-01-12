@@ -38,7 +38,8 @@ object JobPostLaunchActionsLaunchStatus {
     __obj.asInstanceOf[JobPostLaunchActionsLaunchStatus]
   }
   
-  extension [Self <: JobPostLaunchActionsLaunchStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobPostLaunchActionsLaunchStatus] (val x: Self) extends AnyVal {
     
     inline def setExecutionID(value: BoundedString): Self = StObject.set(x, "executionID", value.asInstanceOf[js.Any])
     

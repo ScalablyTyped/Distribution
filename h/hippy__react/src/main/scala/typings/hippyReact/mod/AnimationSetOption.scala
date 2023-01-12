@@ -20,7 +20,8 @@ object AnimationSetOption {
     __obj.asInstanceOf[AnimationSetOption]
   }
   
-  extension [Self <: AnimationSetOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationSetOption] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[AnimationChild]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

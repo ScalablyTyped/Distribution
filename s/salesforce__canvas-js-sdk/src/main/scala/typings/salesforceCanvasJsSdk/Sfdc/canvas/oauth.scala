@@ -21,7 +21,8 @@ object oauth {
       __obj.asInstanceOf[LoginContext]
     }
     
-    extension [Self <: LoginContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginContext] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object oauth {
       __obj.asInstanceOf[LoginParams]
     }
     
-    extension [Self <: LoginParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginParams] (val x: Self) extends AnyVal {
       
       inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       

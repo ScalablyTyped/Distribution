@@ -44,7 +44,8 @@ object BezierCurve {
     __obj.asInstanceOf[BezierCurve]
   }
   
-  extension [Self <: BezierCurve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BezierCurve] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

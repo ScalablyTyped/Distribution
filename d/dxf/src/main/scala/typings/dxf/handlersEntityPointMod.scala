@@ -61,7 +61,8 @@ object handlersEntityPointMod {
       __obj.asInstanceOf[PointEntityData]
     }
     
-    extension [Self <: PointEntityData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointEntityData] (val x: Self) extends AnyVal {
       
       inline def set$INSUNITS(value: UnitTypes): Self = StObject.set(x, "$INSUNITS", value.asInstanceOf[js.Any])
       

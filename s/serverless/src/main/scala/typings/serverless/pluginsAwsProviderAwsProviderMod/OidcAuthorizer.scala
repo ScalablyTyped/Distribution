@@ -48,7 +48,8 @@ object OidcAuthorizer {
     __obj.asInstanceOf[OidcAuthorizer]
   }
   
-  extension [Self <: OidcAuthorizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OidcAuthorizer] (val x: Self) extends AnyVal {
     
     inline def setAllowUnauthenticated(value: Boolean): Self = StObject.set(x, "allowUnauthenticated", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object RecordStatusnumber {
     __obj.asInstanceOf[RecordStatusnumber]
   }
   
-  extension [Self <: RecordStatusnumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordStatusnumber] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

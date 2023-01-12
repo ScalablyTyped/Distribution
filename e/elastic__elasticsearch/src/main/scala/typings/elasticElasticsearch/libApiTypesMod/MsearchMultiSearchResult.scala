@@ -17,7 +17,8 @@ object MsearchMultiSearchResult {
     __obj.asInstanceOf[MsearchMultiSearchResult[TDocument]]
   }
   
-  extension [Self <: MsearchMultiSearchResult[?], TDocument](x: Self & MsearchMultiSearchResult[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsearchMultiSearchResult[?], TDocument] (val x: Self & MsearchMultiSearchResult[TDocument]) extends AnyVal {
     
     inline def setResponses(value: js.Array[MsearchResponseItem[TDocument]]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     

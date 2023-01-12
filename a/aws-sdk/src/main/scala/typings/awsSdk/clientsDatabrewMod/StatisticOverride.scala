@@ -23,7 +23,8 @@ object StatisticOverride {
     __obj.asInstanceOf[StatisticOverride]
   }
   
-  extension [Self <: StatisticOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatisticOverride] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: ParameterMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     

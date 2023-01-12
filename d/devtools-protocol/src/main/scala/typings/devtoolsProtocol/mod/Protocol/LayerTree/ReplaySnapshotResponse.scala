@@ -18,7 +18,8 @@ object ReplaySnapshotResponse {
     __obj.asInstanceOf[ReplaySnapshotResponse]
   }
   
-  extension [Self <: ReplaySnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaySnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setDataURL(value: String): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
   }

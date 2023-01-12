@@ -23,7 +23,8 @@ object SyncDeploymentJobRequest {
     __obj.asInstanceOf[SyncDeploymentJobRequest]
   }
   
-  extension [Self <: SyncDeploymentJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncDeploymentJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

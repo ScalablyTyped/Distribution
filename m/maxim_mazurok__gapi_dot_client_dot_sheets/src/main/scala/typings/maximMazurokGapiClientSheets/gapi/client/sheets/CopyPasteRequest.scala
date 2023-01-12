@@ -28,7 +28,8 @@ object CopyPasteRequest {
     __obj.asInstanceOf[CopyPasteRequest]
   }
   
-  extension [Self <: CopyPasteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyPasteRequest] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: GridRange): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

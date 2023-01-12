@@ -49,7 +49,8 @@ object ReactiveOrganizationInsightSummary {
     __obj.asInstanceOf[ReactiveOrganizationInsightSummary]
   }
   
-  extension [Self <: ReactiveOrganizationInsightSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactiveOrganizationInsightSummary] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AwsAccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CreateUserHierarchyGroupResponse {
     __obj.asInstanceOf[CreateUserHierarchyGroupResponse]
   }
   
-  extension [Self <: CreateUserHierarchyGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUserHierarchyGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setHierarchyGroupArn(value: ARN): Self = StObject.set(x, "HierarchyGroupArn", value.asInstanceOf[js.Any])
     

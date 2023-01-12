@@ -24,7 +24,8 @@ object EmptyTypeAnnotation_ {
     __obj.asInstanceOf[EmptyTypeAnnotation_]
   }
   
-  extension [Self <: EmptyTypeAnnotation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmptyTypeAnnotation_] (val x: Self) extends AnyVal {
     
     inline def setType(value: EmptyTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

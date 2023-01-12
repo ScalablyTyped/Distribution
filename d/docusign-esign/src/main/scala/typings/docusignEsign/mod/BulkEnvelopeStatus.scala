@@ -83,7 +83,8 @@ object BulkEnvelopeStatus {
     __obj.asInstanceOf[BulkEnvelopeStatus]
   }
   
-  extension [Self <: BulkEnvelopeStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkEnvelopeStatus] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

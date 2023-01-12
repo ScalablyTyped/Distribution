@@ -17,7 +17,8 @@ object ContentApplicationjsonMergeable {
     __obj.asInstanceOf[ContentApplicationjsonMergeable]
   }
   
-  extension [Self <: ContentApplicationjsonMergeable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonMergeable] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonMergeable): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object AthenzConfig {
     __obj.asInstanceOf[AthenzConfig]
   }
   
-  extension [Self <: AthenzConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AthenzConfig] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     

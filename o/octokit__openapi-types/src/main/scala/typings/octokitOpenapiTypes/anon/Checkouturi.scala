@@ -40,7 +40,8 @@ object Checkouturi {
     __obj.asInstanceOf[Checkouturi]
   }
   
-  extension [Self <: Checkouturi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checkouturi] (val x: Self) extends AnyVal {
     
     inline def setCheckout_uri(value: String): Self = StObject.set(x, "checkout_uri", value.asInstanceOf[js.Any])
     

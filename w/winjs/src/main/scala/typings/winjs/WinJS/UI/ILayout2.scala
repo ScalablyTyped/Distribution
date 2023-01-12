@@ -105,7 +105,8 @@ object ILayout2 {
     __obj.asInstanceOf[ILayout2]
   }
   
-  extension [Self <: ILayout2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILayout2] (val x: Self) extends AnyVal {
     
     inline def setDragLeave(value: () => Unit): Self = StObject.set(x, "dragLeave", js.Any.fromFunction0(value))
     

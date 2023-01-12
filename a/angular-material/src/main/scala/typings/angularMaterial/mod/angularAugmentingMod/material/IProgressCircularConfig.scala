@@ -33,7 +33,8 @@ object IProgressCircularConfig {
     __obj.asInstanceOf[IProgressCircularConfig]
   }
   
-  extension [Self <: IProgressCircularConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProgressCircularConfig] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

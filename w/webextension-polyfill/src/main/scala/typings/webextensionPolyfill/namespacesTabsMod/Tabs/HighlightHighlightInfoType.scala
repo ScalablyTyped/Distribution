@@ -33,7 +33,8 @@ object HighlightHighlightInfoType {
     __obj.asInstanceOf[HighlightHighlightInfoType]
   }
   
-  extension [Self <: HighlightHighlightInfoType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightHighlightInfoType] (val x: Self) extends AnyVal {
     
     inline def setPopulate(value: Boolean): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
     

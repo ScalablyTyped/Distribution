@@ -199,7 +199,8 @@ object SpreadsheetDocumentSettings {
     __obj.asInstanceOf[SpreadsheetDocumentSettings]
   }
   
-  extension [Self <: SpreadsheetDocumentSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetDocumentSettings] (val x: Self) extends AnyVal {
     
     inline def setCalcAsShown(value: Boolean): Self = StObject.set(x, "CalcAsShown", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object MaxSchemaAgreementWaitSeconds {
     __obj.asInstanceOf[MaxSchemaAgreementWaitSeconds]
   }
   
-  extension [Self <: MaxSchemaAgreementWaitSeconds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxSchemaAgreementWaitSeconds] (val x: Self) extends AnyVal {
     
     inline def setMaxSchemaAgreementWaitSeconds(value: Double): Self = StObject.set(x, "maxSchemaAgreementWaitSeconds", value.asInstanceOf[js.Any])
     

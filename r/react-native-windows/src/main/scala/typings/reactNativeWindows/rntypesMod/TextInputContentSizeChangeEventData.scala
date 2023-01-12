@@ -16,7 +16,8 @@ object TextInputContentSizeChangeEventData {
     __obj.asInstanceOf[TextInputContentSizeChangeEventData]
   }
   
-  extension [Self <: TextInputContentSizeChangeEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputContentSizeChangeEventData] (val x: Self) extends AnyVal {
     
     inline def setContentSize(value: Height): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
   }

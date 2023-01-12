@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2PubSubCondition {
     __obj.asInstanceOf[GooglePrivacyDlpV2PubSubCondition]
   }
   
-  extension [Self <: GooglePrivacyDlpV2PubSubCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2PubSubCondition] (val x: Self) extends AnyVal {
     
     inline def setMinimumRiskScore(value: String): Self = StObject.set(x, "minimumRiskScore", value.asInstanceOf[js.Any])
     

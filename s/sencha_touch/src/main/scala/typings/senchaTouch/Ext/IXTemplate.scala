@@ -31,7 +31,8 @@ object IXTemplate {
     __obj.asInstanceOf[IXTemplate]
   }
   
-  extension [Self <: IXTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXTemplate] (val x: Self) extends AnyVal {
     
     inline def setApplyOut(
       value: (/* values */ js.UndefOr[Any], /* out */ js.UndefOr[Array], /* parent */ js.UndefOr[Any]) => Array

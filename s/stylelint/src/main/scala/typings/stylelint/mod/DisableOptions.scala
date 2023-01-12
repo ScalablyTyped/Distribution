@@ -17,7 +17,8 @@ object DisableOptions {
     __obj.asInstanceOf[DisableOptions]
   }
   
-  extension [Self <: DisableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableOptions] (val x: Self) extends AnyVal {
     
     inline def setExcept(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
     

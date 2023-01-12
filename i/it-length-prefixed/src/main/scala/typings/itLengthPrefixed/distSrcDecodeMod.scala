@@ -63,7 +63,8 @@ object distSrcDecodeMod {
       __obj.asInstanceOf[DecoderOptions]
     }
     
-    extension [Self <: DecoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoderOptions] (val x: Self) extends AnyVal {
       
       inline def setLengthDecoder(value: LengthDecoderFunction): Self = StObject.set(x, "lengthDecoder", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object distSrcDecodeMod {
       __obj.asInstanceOf[ReadResult]
     }
     
-    extension [Self <: ReadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadResult] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Uint8ArrayList): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object distSrcDecodeMod {
       __obj.asInstanceOf[ReadState]
     }
     
-    extension [Self <: ReadState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadState] (val x: Self) extends AnyVal {
       
       inline def setDataLength(value: Double): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
     }

@@ -32,7 +32,8 @@ object RangeElement {
     __obj.asInstanceOf[RangeElement]
   }
   
-  extension [Self <: RangeElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeElement] (val x: Self) extends AnyVal {
     
     inline def setGetElement(value: () => Element): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     

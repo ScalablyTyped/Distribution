@@ -30,7 +30,8 @@ object JWSHeaderParameters {
     __obj.asInstanceOf[JWSHeaderParameters]
   }
   
-  extension [Self <: JWSHeaderParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JWSHeaderParameters] (val x: Self) extends AnyVal {
     
     inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     

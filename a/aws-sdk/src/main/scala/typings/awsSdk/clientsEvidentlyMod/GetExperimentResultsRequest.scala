@@ -68,7 +68,8 @@ object GetExperimentResultsRequest {
     __obj.asInstanceOf[GetExperimentResultsRequest]
   }
   
-  extension [Self <: GetExperimentResultsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExperimentResultsRequest] (val x: Self) extends AnyVal {
     
     inline def setBaseStat(value: ExperimentBaseStat): Self = StObject.set(x, "baseStat", value.asInstanceOf[js.Any])
     

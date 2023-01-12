@@ -17,7 +17,8 @@ object ReadFileOptions {
     __obj.asInstanceOf[ReadFileOptions]
   }
   
-  extension [Self <: ReadFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadFileOptions] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

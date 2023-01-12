@@ -26,7 +26,8 @@ object WriteableMetadata {
     __obj.asInstanceOf[WriteableMetadata]
   }
   
-  extension [Self <: WriteableMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteableMetadata] (val x: Self) extends AnyVal {
     
     inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     

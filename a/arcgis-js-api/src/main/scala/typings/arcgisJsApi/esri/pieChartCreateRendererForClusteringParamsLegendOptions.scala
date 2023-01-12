@@ -20,7 +20,8 @@ object pieChartCreateRendererForClusteringParamsLegendOptions {
     __obj.asInstanceOf[pieChartCreateRendererForClusteringParamsLegendOptions]
   }
   
-  extension [Self <: pieChartCreateRendererForClusteringParamsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pieChartCreateRendererForClusteringParamsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object typesResourceConflictExceptionMod {
       __obj.asInstanceOf[ResourceConflictException]
     }
     
-    extension [Self <: ResourceConflictException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceConflictException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ResourceConflictException
@@ -65,7 +66,8 @@ object typesResourceConflictExceptionMod {
       __obj.asInstanceOf[ResourceConflictExceptionDetails]
     }
     
-    extension [Self <: ResourceConflictExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceConflictExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object MaxStalenessSeconds {
     __obj.asInstanceOf[MaxStalenessSeconds]
   }
   
-  extension [Self <: MaxStalenessSeconds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxStalenessSeconds] (val x: Self) extends AnyVal {
     
     inline def setMaxStalenessSeconds(value: Double): Self = StObject.set(x, "maxStalenessSeconds", value.asInstanceOf[js.Any])
     

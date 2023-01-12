@@ -23,7 +23,8 @@ object PutResourcePolicyResponse {
     __obj.asInstanceOf[PutResourcePolicyResponse]
   }
   
-  extension [Self <: PutResourcePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutResourcePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

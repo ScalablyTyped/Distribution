@@ -18,7 +18,8 @@ object UndeprecateDomainInput {
     __obj.asInstanceOf[UndeprecateDomainInput]
   }
   
-  extension [Self <: UndeprecateDomainInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UndeprecateDomainInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

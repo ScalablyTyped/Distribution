@@ -19,7 +19,8 @@ object Encoding {
     __obj.asInstanceOf[Encoding]
   }
   
-  extension [Self <: Encoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
     
     inline def setCharToGlyphIndex(value: String => Double): Self = StObject.set(x, "charToGlyphIndex", js.Any.fromFunction1(value))
     

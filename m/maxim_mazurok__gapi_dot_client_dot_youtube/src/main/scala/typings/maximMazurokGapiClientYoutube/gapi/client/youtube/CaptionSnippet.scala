@@ -59,7 +59,8 @@ object CaptionSnippet {
     __obj.asInstanceOf[CaptionSnippet]
   }
   
-  extension [Self <: CaptionSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionSnippet] (val x: Self) extends AnyVal {
     
     inline def setAudioTrackType(value: String): Self = StObject.set(x, "audioTrackType", value.asInstanceOf[js.Any])
     

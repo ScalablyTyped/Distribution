@@ -47,7 +47,8 @@ object FileManagerMessagesToolbar {
     __obj.asInstanceOf[FileManagerMessagesToolbar]
   }
   
-  extension [Self <: FileManagerMessagesToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerMessagesToolbar] (val x: Self) extends AnyVal {
     
     inline def setCreateFolder(value: String): Self = StObject.set(x, "createFolder", value.asInstanceOf[js.Any])
     

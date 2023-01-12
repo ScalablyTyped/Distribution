@@ -33,7 +33,8 @@ object DeviceFleetSummary {
     __obj.asInstanceOf[DeviceFleetSummary]
   }
   
-  extension [Self <: DeviceFleetSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceFleetSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object VeevaConnectorProfileProperties {
     __obj.asInstanceOf[VeevaConnectorProfileProperties]
   }
   
-  extension [Self <: VeevaConnectorProfileProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VeevaConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }

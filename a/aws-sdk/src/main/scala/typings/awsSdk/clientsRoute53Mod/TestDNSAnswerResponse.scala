@@ -50,7 +50,8 @@ object TestDNSAnswerResponse {
     __obj.asInstanceOf[TestDNSAnswerResponse]
   }
   
-  extension [Self <: TestDNSAnswerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestDNSAnswerResponse] (val x: Self) extends AnyVal {
     
     inline def setNameserver(value: Nameserver): Self = StObject.set(x, "Nameserver", value.asInstanceOf[js.Any])
     

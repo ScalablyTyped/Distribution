@@ -23,7 +23,8 @@ object DescribeMeshInput {
     __obj.asInstanceOf[DescribeMeshInput]
   }
   
-  extension [Self <: DescribeMeshInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMeshInput] (val x: Self) extends AnyVal {
     
     inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     

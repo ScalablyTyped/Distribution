@@ -28,7 +28,8 @@ object ListComponentBuildVersionsResponse {
     __obj.asInstanceOf[ListComponentBuildVersionsResponse]
   }
   
-  extension [Self <: ListComponentBuildVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListComponentBuildVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setComponentSummaryList(value: ComponentSummaryList): Self = StObject.set(x, "componentSummaryList", value.asInstanceOf[js.Any])
     

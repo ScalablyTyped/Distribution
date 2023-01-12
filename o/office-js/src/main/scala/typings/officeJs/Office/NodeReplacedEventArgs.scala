@@ -36,7 +36,8 @@ object NodeReplacedEventArgs {
     __obj.asInstanceOf[NodeReplacedEventArgs]
   }
   
-  extension [Self <: NodeReplacedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeReplacedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsUndoRedo(value: Boolean): Self = StObject.set(x, "isUndoRedo", value.asInstanceOf[js.Any])
     

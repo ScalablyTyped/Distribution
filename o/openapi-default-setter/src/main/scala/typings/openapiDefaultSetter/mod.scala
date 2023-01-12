@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[IOpenAPIDefaultSetter]
     }
     
-    extension [Self <: IOpenAPIDefaultSetter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOpenAPIDefaultSetter] (val x: Self) extends AnyVal {
       
       inline def setHandle(value: Request => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
     }
@@ -57,7 +58,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIDefaultSetter]
     }
     
-    extension [Self <: OpenAPIDefaultSetter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIDefaultSetter] (val x: Self) extends AnyVal {
       
       inline def setHeadersDefaults(value: Any): Self = StObject.set(x, "headersDefaults", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIDefaultSetterArgs]
     }
     
-    extension [Self <: OpenAPIDefaultSetterArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIDefaultSetterArgs] (val x: Self) extends AnyVal {
       
       inline def setLoggingKey(value: String): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
       

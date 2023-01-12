@@ -18,7 +18,8 @@ object HeaderContext {
     __obj.asInstanceOf[HeaderContext]
   }
   
-  extension [Self <: HeaderContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderContext] (val x: Self) extends AnyVal {
     
     inline def setIntervals(value: js.Array[StartTime]): Self = StObject.set(x, "intervals", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListV2LoggingLevelsRequest {
     __obj.asInstanceOf[ListV2LoggingLevelsRequest]
   }
   
-  extension [Self <: ListV2LoggingLevelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListV2LoggingLevelsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: SkyfallMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

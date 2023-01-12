@@ -16,7 +16,8 @@ object MediaStreamAudioSourceOptions {
     __obj.asInstanceOf[MediaStreamAudioSourceOptions]
   }
   
-  extension [Self <: MediaStreamAudioSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamAudioSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setMediaStream(value: MediaStream): Self = StObject.set(x, "mediaStream", value.asInstanceOf[js.Any])
   }

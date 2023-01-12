@@ -25,7 +25,8 @@ object BlockCommentNode {
     __obj.asInstanceOf[BlockCommentNode]
   }
   
-  extension [Self <: BlockCommentNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockCommentNode] (val x: Self) extends AnyVal {
     
     inline def setPrecedingWhitespace(value: String): Self = StObject.set(x, "precedingWhitespace", value.asInstanceOf[js.Any])
     

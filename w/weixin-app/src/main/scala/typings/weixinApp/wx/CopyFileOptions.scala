@@ -20,7 +20,8 @@ object CopyFileOptions {
     __obj.asInstanceOf[CopyFileOptions]
   }
   
-  extension [Self <: CopyFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyFileOptions] (val x: Self) extends AnyVal {
     
     inline def setDestPath(value: String): Self = StObject.set(x, "destPath", value.asInstanceOf[js.Any])
     

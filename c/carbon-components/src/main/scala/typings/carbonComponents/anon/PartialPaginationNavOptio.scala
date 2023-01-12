@@ -36,7 +36,8 @@ object PartialPaginationNavOptio {
     __obj.asInstanceOf[PartialPaginationNavOptio]
   }
   
-  extension [Self <: PartialPaginationNavOptio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaginationNavOptio] (val x: Self) extends AnyVal {
     
     inline def setAttribActive(value: String): Self = StObject.set(x, "attribActive", value.asInstanceOf[js.Any])
     

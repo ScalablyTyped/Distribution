@@ -20,7 +20,8 @@ object CreateTimeSeriesRequest {
     __obj.asInstanceOf[CreateTimeSeriesRequest]
   }
   
-  extension [Self <: CreateTimeSeriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTimeSeriesRequest] (val x: Self) extends AnyVal {
     
     inline def setTimeSeries(value: js.Array[TimeSeries]): Self = StObject.set(x, "timeSeries", value.asInstanceOf[js.Any])
     

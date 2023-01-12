@@ -21,7 +21,8 @@ object EducationAssignmentResource {
     __obj.asInstanceOf[EducationAssignmentResource]
   }
   
-  extension [Self <: EducationAssignmentResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationAssignmentResource] (val x: Self) extends AnyVal {
     
     inline def setDistributeForStudentWork(value: NullableOption[Boolean]): Self = StObject.set(x, "distributeForStudentWork", value.asInstanceOf[js.Any])
     

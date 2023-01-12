@@ -17,7 +17,8 @@ object OwnedStructureJSON {
     __obj.asInstanceOf[OwnedStructureJSON]
   }
   
-  extension [Self <: OwnedStructureJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OwnedStructureJSON] (val x: Self) extends AnyVal {
     
     inline def setMy(value: Boolean): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     

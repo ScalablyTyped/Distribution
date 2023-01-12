@@ -83,7 +83,8 @@ object esGenerateMod {
       __obj.asInstanceOf[GenerateConfig[DateType]]
     }
     
-    extension [Self <: GenerateConfig[?], DateType](x: Self & GenerateConfig[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateConfig[?], DateType] (val x: Self & GenerateConfig[DateType]) extends AnyVal {
       
       inline def setAddDate(value: (DateType, Double) => DateType): Self = StObject.set(x, "addDate", js.Any.fromFunction2(value))
       

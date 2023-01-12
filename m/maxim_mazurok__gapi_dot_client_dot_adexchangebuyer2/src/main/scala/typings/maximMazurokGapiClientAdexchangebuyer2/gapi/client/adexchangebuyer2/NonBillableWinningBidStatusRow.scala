@@ -22,7 +22,8 @@ object NonBillableWinningBidStatusRow {
     __obj.asInstanceOf[NonBillableWinningBidStatusRow]
   }
   
-  extension [Self <: NonBillableWinningBidStatusRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonBillableWinningBidStatusRow] (val x: Self) extends AnyVal {
     
     inline def setBidCount(value: MetricValue): Self = StObject.set(x, "bidCount", value.asInstanceOf[js.Any])
     

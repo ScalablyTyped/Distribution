@@ -23,7 +23,8 @@ object GoToHeaderCommand {
     __obj.asInstanceOf[GoToHeaderCommand]
   }
   
-  extension [Self <: GoToHeaderCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoToHeaderCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

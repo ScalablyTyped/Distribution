@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[ResolveExtendsContext]
     }
     
-    extension [Self <: ResolveExtendsContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveExtendsContext] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

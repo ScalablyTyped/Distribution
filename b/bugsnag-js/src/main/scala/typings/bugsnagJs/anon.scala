@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setReleaseStage(value: String): Self = StObject.set(x, "releaseStage", value.asInstanceOf[js.Any])
     }
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[ErrorClass]
     }
     
-    extension [Self <: ErrorClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorClass] (val x: Self) extends AnyVal {
       
       inline def setErrorClass(value: String): Self = StObject.set(x, "errorClass", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Handled]
     }
     
-    extension [Self <: Handled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handled] (val x: Self) extends AnyVal {
       
       inline def set_handled(value: Double): Self = StObject.set(x, "_handled", value.asInstanceOf[js.Any])
       
@@ -88,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -111,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -136,7 +141,8 @@ object anon {
       __obj.asInstanceOf[Notify]
     }
     
-    extension [Self <: Notify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notify] (val x: Self) extends AnyVal {
       
       inline def setNotify_(value: String): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
       
@@ -158,7 +164,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -191,7 +198,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

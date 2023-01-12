@@ -24,7 +24,8 @@ object UseFiltersOptions {
     __obj.asInstanceOf[UseFiltersOptions[D]]
   }
   
-  extension [Self <: UseFiltersOptions[?], D /* <: js.Object */](x: Self & UseFiltersOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseFiltersOptions[?], D /* <: js.Object */] (val x: Self & UseFiltersOptions[D]) extends AnyVal {
     
     inline def setAutoResetFilters(value: Boolean): Self = StObject.set(x, "autoResetFilters", value.asInstanceOf[js.Any])
     

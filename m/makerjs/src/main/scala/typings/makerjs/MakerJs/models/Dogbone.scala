@@ -20,7 +20,8 @@ object Dogbone {
     __obj.asInstanceOf[Dogbone]
   }
   
-  extension [Self <: Dogbone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dogbone] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }

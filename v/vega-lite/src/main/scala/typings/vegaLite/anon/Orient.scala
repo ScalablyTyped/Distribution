@@ -29,7 +29,8 @@ object Orient {
     __obj.asInstanceOf[Orient]
   }
   
-  extension [Self <: Orient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Orient] (val x: Self) extends AnyVal {
     
     inline def setOrient(value: Orientation): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     

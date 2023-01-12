@@ -20,7 +20,8 @@ object Func {
     __obj.asInstanceOf[Func]
   }
   
-  extension [Self <: Func](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Func] (val x: Self) extends AnyVal {
     
     inline def setFunc(value: PrecedenceRightToLeft): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     

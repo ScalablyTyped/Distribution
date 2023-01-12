@@ -23,7 +23,8 @@ object DeregisterTargetsInput {
     __obj.asInstanceOf[DeregisterTargetsInput]
   }
   
-  extension [Self <: DeregisterTargetsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterTargetsInput] (val x: Self) extends AnyVal {
     
     inline def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
     

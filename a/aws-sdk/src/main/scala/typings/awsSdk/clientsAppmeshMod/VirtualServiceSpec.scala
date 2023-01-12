@@ -18,7 +18,8 @@ object VirtualServiceSpec {
     __obj.asInstanceOf[VirtualServiceSpec]
   }
   
-  extension [Self <: VirtualServiceSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualServiceSpec] (val x: Self) extends AnyVal {
     
     inline def setProvider(value: VirtualServiceProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     

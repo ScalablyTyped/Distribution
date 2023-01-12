@@ -21,7 +21,8 @@ object DevicePickerFilter {
     __obj.asInstanceOf[DevicePickerFilter]
   }
   
-  extension [Self <: DevicePickerFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevicePickerFilter] (val x: Self) extends AnyVal {
     
     inline def setSupportedDeviceClasses(value: IVector[DeviceClass]): Self = StObject.set(x, "supportedDeviceClasses", value.asInstanceOf[js.Any])
     

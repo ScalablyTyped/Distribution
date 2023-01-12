@@ -23,7 +23,8 @@ object RadioStyle {
     __obj.asInstanceOf[RadioStyle]
   }
   
-  extension [Self <: RadioStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioStyle] (val x: Self) extends AnyVal {
     
     inline def setBorderOffColor(value: String): Self = StObject.set(x, "borderOffColor", value.asInstanceOf[js.Any])
     

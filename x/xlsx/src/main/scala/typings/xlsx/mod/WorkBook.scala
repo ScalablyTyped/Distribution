@@ -33,7 +33,8 @@ object WorkBook {
     __obj.asInstanceOf[WorkBook]
   }
   
-  extension [Self <: WorkBook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkBook] (val x: Self) extends AnyVal {
     
     inline def setCustprops(value: js.Object): Self = StObject.set(x, "Custprops", value.asInstanceOf[js.Any])
     

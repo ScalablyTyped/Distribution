@@ -17,7 +17,8 @@ object EventPortalSelected {
     __obj.asInstanceOf[EventPortalSelected]
   }
   
-  extension [Self <: EventPortalSelected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventPortalSelected] (val x: Self) extends AnyVal {
     
     inline def setSelectedPortalGuid(value: String): Self = StObject.set(x, "selectedPortalGuid", value.asInstanceOf[js.Any])
     

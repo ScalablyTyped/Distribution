@@ -100,7 +100,8 @@ object typesPositioningTypesMod {
       __obj.asInstanceOf[CalculateFixedPositionOptions]
     }
     
-    extension [Self <: CalculateFixedPositionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalculateFixedPositionOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object typesPositioningTypesMod {
       __obj.asInstanceOf[Coords]
     }
     
-    extension [Self <: Coords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coords] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -219,7 +221,8 @@ object typesPositioningTypesMod {
       __obj.asInstanceOf[FixedPosition]
     }
     
-    extension [Self <: FixedPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedPosition] (val x: Self) extends AnyVal {
       
       inline def setActualX(value: HorizontalPosition): Self = StObject.set(x, "actualX", value.asInstanceOf[js.Any])
       
@@ -252,7 +255,8 @@ object typesPositioningTypesMod {
       __obj.asInstanceOf[FixedPositionOptions]
     }
     
-    extension [Self <: FixedPositionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedPositionOptions] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -287,7 +291,8 @@ object typesPositioningTypesMod {
       __obj.asInstanceOf[FixedPositionStyle]
     }
     
-    extension [Self <: FixedPositionStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedPositionStyle] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: fixed | absolute): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -343,7 +348,8 @@ object typesPositioningTypesMod {
       __obj.asInstanceOf[InitialCoords]
     }
     
-    extension [Self <: InitialCoords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialCoords] (val x: Self) extends AnyVal {
       
       inline def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
       
@@ -368,7 +374,8 @@ object typesPositioningTypesMod {
       __obj.asInstanceOf[PositionAnchor]
     }
     
-    extension [Self <: PositionAnchor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionAnchor] (val x: Self) extends AnyVal {
       
       inline def setX(value: HorizontalPosition): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

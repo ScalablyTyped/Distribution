@@ -23,7 +23,8 @@ object TransferContactResponse {
     __obj.asInstanceOf[TransferContactResponse]
   }
   
-  extension [Self <: TransferContactResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferContactResponse] (val x: Self) extends AnyVal {
     
     inline def setContactArn(value: ARN): Self = StObject.set(x, "ContactArn", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object IosTestSetup {
     __obj.asInstanceOf[IosTestSetup]
   }
   
-  extension [Self <: IosTestSetup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosTestSetup] (val x: Self) extends AnyVal {
     
     inline def setAdditionalIpas(value: js.Array[FileReference]): Self = StObject.set(x, "additionalIpas", value.asInstanceOf[js.Any])
     

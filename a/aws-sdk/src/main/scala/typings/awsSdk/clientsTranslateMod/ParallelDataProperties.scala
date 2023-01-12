@@ -95,7 +95,8 @@ object ParallelDataProperties {
     __obj.asInstanceOf[ParallelDataProperties]
   }
   
-  extension [Self <: ParallelDataProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParallelDataProperties] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ParallelDataArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

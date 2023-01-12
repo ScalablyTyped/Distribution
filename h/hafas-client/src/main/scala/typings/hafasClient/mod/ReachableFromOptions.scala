@@ -55,7 +55,8 @@ object ReachableFromOptions {
     __obj.asInstanceOf[ReachableFromOptions]
   }
   
-  extension [Self <: ReachableFromOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReachableFromOptions] (val x: Self) extends AnyVal {
     
     inline def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     

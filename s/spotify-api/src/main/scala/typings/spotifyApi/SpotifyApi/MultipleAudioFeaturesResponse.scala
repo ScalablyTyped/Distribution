@@ -21,7 +21,8 @@ object MultipleAudioFeaturesResponse {
     __obj.asInstanceOf[MultipleAudioFeaturesResponse]
   }
   
-  extension [Self <: MultipleAudioFeaturesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleAudioFeaturesResponse] (val x: Self) extends AnyVal {
     
     inline def setAudio_features(value: js.Array[AudioFeaturesObject]): Self = StObject.set(x, "audio_features", value.asInstanceOf[js.Any])
     

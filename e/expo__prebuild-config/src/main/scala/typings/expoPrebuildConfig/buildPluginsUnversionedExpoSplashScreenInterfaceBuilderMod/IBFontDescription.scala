@@ -21,7 +21,8 @@ object IBFontDescription {
     __obj.asInstanceOf[IBFontDescription]
   }
   
-  extension [Self <: IBFontDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBFontDescription] (val x: Self) extends AnyVal {
     
     inline def set$(value: Family): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

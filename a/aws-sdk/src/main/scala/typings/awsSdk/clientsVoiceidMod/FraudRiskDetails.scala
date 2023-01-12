@@ -23,7 +23,8 @@ object FraudRiskDetails {
     __obj.asInstanceOf[FraudRiskDetails]
   }
   
-  extension [Self <: FraudRiskDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FraudRiskDetails] (val x: Self) extends AnyVal {
     
     inline def setKnownFraudsterRisk(value: KnownFraudsterRisk): Self = StObject.set(x, "KnownFraudsterRisk", value.asInstanceOf[js.Any])
     

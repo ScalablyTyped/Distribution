@@ -23,7 +23,8 @@ object Scte20SourceSettings {
     __obj.asInstanceOf[Scte20SourceSettings]
   }
   
-  extension [Self <: Scte20SourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scte20SourceSettings] (val x: Self) extends AnyVal {
     
     inline def setConvert608To708(value: Scte20Convert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
     

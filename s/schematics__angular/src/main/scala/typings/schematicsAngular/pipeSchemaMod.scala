@@ -60,7 +60,8 @@ object pipeSchemaMod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setExport(value: Boolean): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
       

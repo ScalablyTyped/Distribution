@@ -46,7 +46,8 @@ object AccessReviewHistoryInstance {
     __obj.asInstanceOf[AccessReviewHistoryInstance]
   }
   
-  extension [Self <: AccessReviewHistoryInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewHistoryInstance] (val x: Self) extends AnyVal {
     
     inline def setDownloadUri(value: NullableOption[String]): Self = StObject.set(x, "downloadUri", value.asInstanceOf[js.Any])
     

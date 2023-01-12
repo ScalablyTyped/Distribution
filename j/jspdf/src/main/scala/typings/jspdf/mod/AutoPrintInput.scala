@@ -17,7 +17,8 @@ object AutoPrintInput {
     __obj.asInstanceOf[AutoPrintInput]
   }
   
-  extension [Self <: AutoPrintInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoPrintInput] (val x: Self) extends AnyVal {
     
     inline def setVariant(value: `non-conform` | javascript): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
   }

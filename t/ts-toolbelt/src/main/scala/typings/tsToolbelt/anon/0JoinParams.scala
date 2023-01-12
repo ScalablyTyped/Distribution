@@ -38,7 +38,8 @@ object `0JoinParams` {
     __obj.asInstanceOf[`0JoinParams`[PSplit, L]]
   }
   
-  extension [Self <: `0JoinParams`[?, ?], PSplit /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */, L /* <: typings.tsToolbelt.outListListMod.List[Any] */](x: Self & (`0JoinParams`[PSplit, L])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0JoinParams`[?, ?], PSplit /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */, L /* <: typings.tsToolbelt.outListListMod.List[Any] */] (val x: Self & (`0JoinParams`[PSplit, L])) extends AnyVal {
     
     inline def set0(
       value: _JoinParams[

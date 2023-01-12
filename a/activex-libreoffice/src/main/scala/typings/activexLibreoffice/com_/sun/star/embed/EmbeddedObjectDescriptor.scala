@@ -50,7 +50,8 @@ object EmbeddedObjectDescriptor {
     __obj.asInstanceOf[EmbeddedObjectDescriptor]
   }
   
-  extension [Self <: EmbeddedObjectDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedObjectDescriptor] (val x: Self) extends AnyVal {
     
     inline def setOutplaceDispatchInterceptor(value: XDispatchProviderInterceptor): Self = StObject.set(x, "OutplaceDispatchInterceptor", value.asInstanceOf[js.Any])
     

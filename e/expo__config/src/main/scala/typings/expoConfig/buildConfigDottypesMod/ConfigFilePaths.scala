@@ -17,7 +17,8 @@ object ConfigFilePaths {
     __obj.asInstanceOf[ConfigFilePaths]
   }
   
-  extension [Self <: ConfigFilePaths](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigFilePaths] (val x: Self) extends AnyVal {
     
     inline def setDynamicConfigPath(value: String): Self = StObject.set(x, "dynamicConfigPath", value.asInstanceOf[js.Any])
     

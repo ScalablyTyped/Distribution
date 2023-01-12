@@ -216,7 +216,8 @@ object libBitmapFontMod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setAlphaMode(value: ALPHA_MODES): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
       
@@ -264,7 +265,8 @@ object libBitmapFontMod {
       __obj.asInstanceOf[IBitmapFontCharacter]
     }
     
-    extension [Self <: IBitmapFontCharacter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBitmapFontCharacter] (val x: Self) extends AnyVal {
       
       inline def setKerning(value: Dict[Double]): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
       
@@ -324,7 +326,8 @@ object libBitmapFontMod {
       __obj.asInstanceOf[IBitmapFontOptions]
     }
     
-    extension [Self <: IBitmapFontOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBitmapFontOptions] (val x: Self) extends AnyVal {
       
       inline def setChars(value: String | (js.Array[String | js.Array[String]])): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       

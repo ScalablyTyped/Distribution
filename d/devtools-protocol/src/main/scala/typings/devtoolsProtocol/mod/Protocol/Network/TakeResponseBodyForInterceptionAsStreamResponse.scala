@@ -16,7 +16,8 @@ object TakeResponseBodyForInterceptionAsStreamResponse {
     __obj.asInstanceOf[TakeResponseBodyForInterceptionAsStreamResponse]
   }
   
-  extension [Self <: TakeResponseBodyForInterceptionAsStreamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakeResponseBodyForInterceptionAsStreamResponse] (val x: Self) extends AnyVal {
     
     inline def setStream(value: StreamHandle): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }

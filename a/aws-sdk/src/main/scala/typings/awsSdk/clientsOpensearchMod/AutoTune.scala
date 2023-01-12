@@ -23,7 +23,8 @@ object AutoTune {
     __obj.asInstanceOf[AutoTune]
   }
   
-  extension [Self <: AutoTune](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoTune] (val x: Self) extends AnyVal {
     
     inline def setAutoTuneDetails(value: AutoTuneDetails): Self = StObject.set(x, "AutoTuneDetails", value.asInstanceOf[js.Any])
     

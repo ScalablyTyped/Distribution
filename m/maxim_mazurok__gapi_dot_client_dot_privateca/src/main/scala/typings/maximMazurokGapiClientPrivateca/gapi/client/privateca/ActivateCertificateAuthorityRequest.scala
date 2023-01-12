@@ -28,7 +28,8 @@ object ActivateCertificateAuthorityRequest {
     __obj.asInstanceOf[ActivateCertificateAuthorityRequest]
   }
   
-  extension [Self <: ActivateCertificateAuthorityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivateCertificateAuthorityRequest] (val x: Self) extends AnyVal {
     
     inline def setPemCaCertificate(value: String): Self = StObject.set(x, "pemCaCertificate", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object List {
     __obj.asInstanceOf[typings.tuyaPanelKit.themeMod.List]
   }
   
-  extension [Self <: typings.tuyaPanelKit.themeMod.List](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.tuyaPanelKit.themeMod.List] (val x: Self) extends AnyVal {
     
     inline def setBoardBg(value: String): Self = StObject.set(x, "boardBg", value.asInstanceOf[js.Any])
     

@@ -672,7 +672,8 @@ object PropsSVGMarkerElementcont {
     __obj.asInstanceOf[PropsSVGMarkerElementcont]
   }
   
-  extension [Self <: PropsSVGMarkerElementcont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGMarkerElementcont] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

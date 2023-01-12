@@ -23,7 +23,8 @@ object EndpointState {
     __obj.asInstanceOf[EndpointState]
   }
   
-  extension [Self <: EndpointState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointState] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: EndpointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

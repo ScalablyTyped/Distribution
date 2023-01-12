@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[AudioOptions]
     }
     
-    extension [Self <: AudioOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioOptions] (val x: Self) extends AnyVal {
       
       inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
       
@@ -189,7 +190,8 @@ object mod {
       __obj.asInstanceOf[DeviceInfo]
     }
     
-    extension [Self <: DeviceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
       
       inline def setDefaultHighInputLatency(value: Double): Self = StObject.set(x, "defaultHighInputLatency", value.asInstanceOf[js.Any])
       
@@ -257,7 +259,8 @@ object mod {
       __obj.asInstanceOf[HostInfo]
     }
     
-    extension [Self <: HostInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostInfo] (val x: Self) extends AnyVal {
       
       inline def setDefaultInput(value: Double): Self = StObject.set(x, "defaultInput", value.asInstanceOf[js.Any])
       

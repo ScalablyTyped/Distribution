@@ -25,7 +25,8 @@ object clusters {
     __obj.asInstanceOf[clusters]
   }
   
-  extension [Self <: clusters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: clusters] (val x: Self) extends AnyVal {
     
     inline def setGetLabelSchemes(value: clustersGetLabelSchemesParams => js.Promise[Schemes]): Self = StObject.set(x, "getLabelSchemes", js.Any.fromFunction1(value))
   }

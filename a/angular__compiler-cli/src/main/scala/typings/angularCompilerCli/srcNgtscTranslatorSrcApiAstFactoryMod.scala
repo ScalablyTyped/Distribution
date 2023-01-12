@@ -295,7 +295,8 @@ object srcNgtscTranslatorSrcApiAstFactoryMod {
       __obj.asInstanceOf[LeadingComment]
     }
     
-    extension [Self <: LeadingComment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeadingComment] (val x: Self) extends AnyVal {
       
       inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
       
@@ -321,7 +322,8 @@ object srcNgtscTranslatorSrcApiAstFactoryMod {
       __obj.asInstanceOf[ObjectLiteralProperty[TExpression]]
     }
     
-    extension [Self <: ObjectLiteralProperty[?], TExpression](x: Self & ObjectLiteralProperty[TExpression]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectLiteralProperty[?], TExpression] (val x: Self & ObjectLiteralProperty[TExpression]) extends AnyVal {
       
       inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
       
@@ -349,7 +351,8 @@ object srcNgtscTranslatorSrcApiAstFactoryMod {
       __obj.asInstanceOf[SourceMapLocation]
     }
     
-    extension [Self <: SourceMapLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapLocation] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -376,7 +379,8 @@ object srcNgtscTranslatorSrcApiAstFactoryMod {
       __obj.asInstanceOf[SourceMapRange]
     }
     
-    extension [Self <: SourceMapRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapRange] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -406,7 +410,8 @@ object srcNgtscTranslatorSrcApiAstFactoryMod {
       __obj.asInstanceOf[TemplateElement]
     }
     
-    extension [Self <: TemplateElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateElement] (val x: Self) extends AnyVal {
       
       inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
       
@@ -437,7 +442,8 @@ object srcNgtscTranslatorSrcApiAstFactoryMod {
       __obj.asInstanceOf[TemplateLiteral[TExpression]]
     }
     
-    extension [Self <: TemplateLiteral[?], TExpression](x: Self & TemplateLiteral[TExpression]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateLiteral[?], TExpression] (val x: Self & TemplateLiteral[TExpression]) extends AnyVal {
       
       inline def setElements(value: js.Array[TemplateElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       

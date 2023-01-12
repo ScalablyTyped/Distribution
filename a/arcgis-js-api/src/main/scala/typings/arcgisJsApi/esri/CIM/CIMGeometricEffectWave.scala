@@ -42,7 +42,8 @@ object CIMGeometricEffectWave {
     __obj.asInstanceOf[CIMGeometricEffectWave]
   }
   
-  extension [Self <: CIMGeometricEffectWave](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectWave] (val x: Self) extends AnyVal {
     
     inline def setAmplitude(value: Double): Self = StObject.set(x, "amplitude", value.asInstanceOf[js.Any])
     

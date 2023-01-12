@@ -27,7 +27,8 @@ object MacroOpts {
     __obj.asInstanceOf[MacroOpts]
   }
   
-  extension [Self <: MacroOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MacroOpts] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -164,7 +164,8 @@ object mod {
       __obj.asInstanceOf[Accessibility]
     }
     
-    extension [Self <: Accessibility](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accessibility] (val x: Self) extends AnyVal {
       
       inline def setAlterTextSpace(value: Boolean => Unit): Self = StObject.set(x, "alterTextSpace", js.Any.fromFunction1(value))
       
@@ -221,7 +222,8 @@ object mod {
       __obj.asInstanceOf[Dimensions]
     }
     
-    extension [Self <: Dimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: SizeOrPosition): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -252,7 +254,8 @@ object mod {
       __obj.asInstanceOf[HotKeys]
     }
     
-    extension [Self <: HotKeys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HotKeys] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -311,7 +314,8 @@ object mod {
       __obj.asInstanceOf[Icon]
     }
     
-    extension [Self <: Icon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -416,7 +420,8 @@ object mod {
       __obj.asInstanceOf[Labels]
     }
     
-    extension [Self <: Labels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
       
       inline def setBigCursor(value: String): Self = StObject.set(x, "bigCursor", value.asInstanceOf[js.Any])
       
@@ -551,7 +556,8 @@ object mod {
       __obj.asInstanceOf[Modules]
     }
     
-    extension [Self <: Modules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modules] (val x: Self) extends AnyVal {
       
       inline def setBigCursor(value: Boolean): Self = StObject.set(x, "bigCursor", value.asInstanceOf[js.Any])
       
@@ -638,7 +644,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAnimations(value: Buttons): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
@@ -714,7 +721,8 @@ object mod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: SizeOrPosition): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -749,7 +757,8 @@ object mod {
       __obj.asInstanceOf[SizeOrPosition]
     }
     
-    extension [Self <: SizeOrPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeOrPosition] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

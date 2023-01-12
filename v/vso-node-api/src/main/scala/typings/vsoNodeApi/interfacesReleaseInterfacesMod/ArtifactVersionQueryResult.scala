@@ -15,7 +15,8 @@ object ArtifactVersionQueryResult {
     __obj.asInstanceOf[ArtifactVersionQueryResult]
   }
   
-  extension [Self <: ArtifactVersionQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactVersionQueryResult] (val x: Self) extends AnyVal {
     
     inline def setArtifactVersions(value: js.Array[ArtifactVersion]): Self = StObject.set(x, "artifactVersions", value.asInstanceOf[js.Any])
     

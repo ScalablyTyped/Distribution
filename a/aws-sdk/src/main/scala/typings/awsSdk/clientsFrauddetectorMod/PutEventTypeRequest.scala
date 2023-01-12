@@ -48,7 +48,8 @@ object PutEventTypeRequest {
     __obj.asInstanceOf[PutEventTypeRequest]
   }
   
-  extension [Self <: PutEventTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutEventTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

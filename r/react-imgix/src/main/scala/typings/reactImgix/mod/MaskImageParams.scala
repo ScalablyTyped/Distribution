@@ -19,7 +19,8 @@ object MaskImageParams {
     __obj.asInstanceOf[MaskImageParams]
   }
   
-  extension [Self <: MaskImageParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaskImageParams] (val x: Self) extends AnyVal {
     
     inline def `setCorner-radius`(value: ImgixParamType): Self = StObject.set(x, "corner-radius", value.asInstanceOf[js.Any])
     

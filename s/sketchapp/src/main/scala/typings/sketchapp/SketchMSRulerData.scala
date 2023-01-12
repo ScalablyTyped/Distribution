@@ -20,7 +20,8 @@ object SketchMSRulerData {
     __obj.asInstanceOf[SketchMSRulerData]
   }
   
-  extension [Self <: SketchMSRulerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSRulerData] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

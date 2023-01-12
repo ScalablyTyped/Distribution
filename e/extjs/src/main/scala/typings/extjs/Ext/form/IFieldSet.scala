@@ -108,7 +108,8 @@ object IFieldSet {
     __obj.asInstanceOf[IFieldSet]
   }
   
-  extension [Self <: IFieldSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldSet] (val x: Self) extends AnyVal {
     
     inline def setCheckboxCmp(value: typings.extjs.Ext.form.field.ICheckbox): Self = StObject.set(x, "checkboxCmp", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object UtilityApi {
       __obj.asInstanceOf[LookupOptions]
     }
     
-    extension [Self <: LookupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LookupOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowMultiSelect(value: Boolean): Self = StObject.set(x, "allowMultiSelect", value.asInstanceOf[js.Any])
       

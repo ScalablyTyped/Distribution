@@ -49,7 +49,8 @@ object RepricingProductReport {
     __obj.asInstanceOf[RepricingProductReport]
   }
   
-  extension [Self <: RepricingProductReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepricingProductReport] (val x: Self) extends AnyVal {
     
     inline def setApplicationCount(value: String): Self = StObject.set(x, "applicationCount", value.asInstanceOf[js.Any])
     

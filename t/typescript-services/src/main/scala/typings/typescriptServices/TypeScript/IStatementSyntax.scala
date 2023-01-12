@@ -41,7 +41,8 @@ object IStatementSyntax {
     __obj.asInstanceOf[IStatementSyntax]
   }
   
-  extension [Self <: IStatementSyntax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStatementSyntax] (val x: Self) extends AnyVal {
     
     inline def setIsStatement(value: () => Boolean): Self = StObject.set(x, "isStatement", js.Any.fromFunction0(value))
   }

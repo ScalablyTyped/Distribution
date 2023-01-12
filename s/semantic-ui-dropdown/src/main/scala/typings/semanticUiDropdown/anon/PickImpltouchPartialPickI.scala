@@ -25,7 +25,8 @@ object PickImpltouchPartialPickI {
     __obj.asInstanceOf[PickImpltouchPartialPickI]
   }
   
-  extension [Self <: PickImpltouchPartialPickI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpltouchPartialPickI] (val x: Self) extends AnyVal {
     
     inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     

@@ -806,7 +806,8 @@ object GanttConfigOptions {
     __obj.asInstanceOf[GanttConfigOptions]
   }
   
-  extension [Self <: GanttConfigOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttConfigOptions] (val x: Self) extends AnyVal {
     
     inline def setAuto_scheduling(value: Boolean): Self = StObject.set(x, "auto_scheduling", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ElementChartOptions {
     __obj.asInstanceOf[ElementChartOptions[TType]]
   }
   
-  extension [Self <: ElementChartOptions[?], TType /* <: ChartType */](x: Self & ElementChartOptions[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementChartOptions[?], TType /* <: ChartType */] (val x: Self & ElementChartOptions[TType]) extends AnyVal {
     
     inline def setElements(value: ElementOptionsByType[TType]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
   }

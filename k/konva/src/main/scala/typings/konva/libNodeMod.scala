@@ -953,7 +953,8 @@ object libNodeMod {
       __obj.asInstanceOf[AnimTo]
     }
     
-    extension [Self <: AnimTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimTo] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -1001,7 +1002,8 @@ object libNodeMod {
       __obj.asInstanceOf[KonvaEventObject[EventType]]
     }
     
-    extension [Self <: KonvaEventObject[?], EventType](x: Self & KonvaEventObject[EventType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KonvaEventObject[?], EventType] (val x: Self & KonvaEventObject[EventType]) extends AnyVal {
       
       inline def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
       
@@ -1076,7 +1078,8 @@ object libNodeMod {
       __obj.asInstanceOf[NodeConfig]
     }
     
-    extension [Self <: NodeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeConfig] (val x: Self) extends AnyVal {
       
       inline def setDragBoundFunc(value: js.ThisFunction1[/* this */ Node[NodeConfig], /* pos */ Vector2d, Vector2d]): Self = StObject.set(x, "dragBoundFunc", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object ASPxClientCardViewBatchEditChangesCancelingEventArgs {
     __obj.asInstanceOf[ASPxClientCardViewBatchEditChangesCancelingEventArgs]
   }
   
-  extension [Self <: ASPxClientCardViewBatchEditChangesCancelingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCardViewBatchEditChangesCancelingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDeletedValues(value: Any): Self = StObject.set(x, "deletedValues", value.asInstanceOf[js.Any])
     

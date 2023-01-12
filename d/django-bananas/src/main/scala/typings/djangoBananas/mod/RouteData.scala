@@ -24,7 +24,8 @@ object RouteData {
     __obj.asInstanceOf[RouteData]
   }
   
-  extension [Self <: RouteData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteData] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

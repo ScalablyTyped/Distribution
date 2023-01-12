@@ -22,7 +22,8 @@ object Realmname {
     __obj.asInstanceOf[Realmname]
   }
   
-  extension [Self <: Realmname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Realmname] (val x: Self) extends AnyVal {
     
     inline def setRealm_name(value: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Name): Self = StObject.set(x, "realm_name", value.asInstanceOf[js.Any])
     

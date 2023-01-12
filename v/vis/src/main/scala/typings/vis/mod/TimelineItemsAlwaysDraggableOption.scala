@@ -17,7 +17,8 @@ object TimelineItemsAlwaysDraggableOption {
     __obj.asInstanceOf[TimelineItemsAlwaysDraggableOption]
   }
   
-  extension [Self <: TimelineItemsAlwaysDraggableOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineItemsAlwaysDraggableOption] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Boolean): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

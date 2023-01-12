@@ -30,7 +30,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CPConv]
     }
     
-    extension [Self <: CPConv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CPConv] (val x: Self) extends AnyVal {
       
       inline def setDec(value: NumberDictionary[String]): Self = StObject.set(x, "dec", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CPModule]
     }
     
-    extension [Self <: CPModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CPModule] (val x: Self) extends AnyVal {
       
       inline def setUtils(value: CPUtils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
       

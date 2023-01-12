@@ -23,7 +23,8 @@ object MlNlpBertTokenizationConfig {
     __obj.asInstanceOf[MlNlpBertTokenizationConfig]
   }
   
-  extension [Self <: MlNlpBertTokenizationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlNlpBertTokenizationConfig] (val x: Self) extends AnyVal {
     
     inline def setDo_lower_case(value: Boolean): Self = StObject.set(x, "do_lower_case", value.asInstanceOf[js.Any])
     

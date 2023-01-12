@@ -46,7 +46,8 @@ object GoogleActionsV2ExpectedIntent {
     __obj.asInstanceOf[GoogleActionsV2ExpectedIntent]
   }
   
-  extension [Self <: GoogleActionsV2ExpectedIntent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2ExpectedIntent] (val x: Self) extends AnyVal {
     
     inline def setInputValueData(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "inputValueData", value.asInstanceOf[js.Any])
     

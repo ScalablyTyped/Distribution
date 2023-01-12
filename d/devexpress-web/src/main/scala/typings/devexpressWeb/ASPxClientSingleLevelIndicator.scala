@@ -23,7 +23,8 @@ object ASPxClientSingleLevelIndicator {
     __obj.asInstanceOf[ASPxClientSingleLevelIndicator]
   }
   
-  extension [Self <: ASPxClientSingleLevelIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSingleLevelIndicator] (val x: Self) extends AnyVal {
     
     inline def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
   }

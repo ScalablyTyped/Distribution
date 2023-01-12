@@ -43,7 +43,8 @@ object BluetoothCharacteristicProperties {
     __obj.asInstanceOf[BluetoothCharacteristicProperties]
   }
   
-  extension [Self <: BluetoothCharacteristicProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothCharacteristicProperties] (val x: Self) extends AnyVal {
     
     inline def setAuthenticatedSignedWrites(value: Boolean): Self = StObject.set(x, "authenticatedSignedWrites", value.asInstanceOf[js.Any])
     

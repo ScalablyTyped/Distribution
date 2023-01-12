@@ -38,7 +38,8 @@ object ImportStatistics {
     __obj.asInstanceOf[ImportStatistics]
   }
   
-  extension [Self <: ImportStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportStatistics] (val x: Self) extends AnyVal {
     
     inline def setEventsCompleted(value: Long): Self = StObject.set(x, "EventsCompleted", value.asInstanceOf[js.Any])
     

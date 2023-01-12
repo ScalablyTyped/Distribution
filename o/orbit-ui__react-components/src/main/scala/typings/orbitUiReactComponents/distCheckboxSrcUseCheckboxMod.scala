@@ -76,7 +76,8 @@ object distCheckboxSrcUseCheckboxMod {
       __obj.asInstanceOf[UseCheckboxProps]
     }
     
-    extension [Self <: UseCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object distCheckboxSrcUseCheckboxMod {
       __obj.asInstanceOf[UseCheckboxReturn]
     }
     
-    extension [Self <: UseCheckboxReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseCheckboxReturn] (val x: Self) extends AnyVal {
       
       inline def setInputProps(value: Ariachecked): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       

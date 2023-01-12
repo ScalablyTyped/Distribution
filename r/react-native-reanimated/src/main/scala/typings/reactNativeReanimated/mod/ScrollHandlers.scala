@@ -24,7 +24,8 @@ object ScrollHandlers {
     __obj.asInstanceOf[ScrollHandlers[TContext]]
   }
   
-  extension [Self <: ScrollHandlers[?], TContext /* <: Context */](x: Self & ScrollHandlers[TContext]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollHandlers[?], TContext /* <: Context */] (val x: Self & ScrollHandlers[TContext]) extends AnyVal {
     
     inline def setOnBeginDrag(value: (/* event */ NativeScrollEvent, TContext) => Unit): Self = StObject.set(x, "onBeginDrag", js.Any.fromFunction2(value))
     

@@ -492,7 +492,8 @@ object anon {
       __obj.asInstanceOf[PickLinkWithComponentProp]
     }
     
-    extension [Self <: PickLinkWithComponentProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickLinkWithComponentProp] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

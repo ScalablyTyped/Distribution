@@ -15,7 +15,8 @@ object AntLocaleDatePickerView {
     __obj.asInstanceOf[AntLocaleDatePickerView]
   }
   
-  extension [Self <: AntLocaleDatePickerView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AntLocaleDatePickerView] (val x: Self) extends AnyVal {
     
     inline def setAntLocale(value: DatePickerView): Self = StObject.set(x, "antLocale", value.asInstanceOf[js.Any])
   }

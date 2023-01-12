@@ -15,7 +15,8 @@ object Filter {
     __obj.asInstanceOf[Filter]
   }
   
-  extension [Self <: Filter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     inline def setIsFiltered(value: Any => Boolean): Self = StObject.set(x, "isFiltered", js.Any.fromFunction1(value))
   }

@@ -25,7 +25,8 @@ object MoveCursor {
     __obj.asInstanceOf[MoveCursor]
   }
   
-  extension [Self <: MoveCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveCursor] (val x: Self) extends AnyVal {
     
     inline def setBy(value: Any): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
     

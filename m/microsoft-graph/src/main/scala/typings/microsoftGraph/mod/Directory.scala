@@ -27,7 +27,8 @@ object Directory {
     __obj.asInstanceOf[Directory]
   }
   
-  extension [Self <: Directory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Directory] (val x: Self) extends AnyVal {
     
     inline def setAdministrativeUnits(value: NullableOption[js.Array[AdministrativeUnit]]): Self = StObject.set(x, "administrativeUnits", value.asInstanceOf[js.Any])
     

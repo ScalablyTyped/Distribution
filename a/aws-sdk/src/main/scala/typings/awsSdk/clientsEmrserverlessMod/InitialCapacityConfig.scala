@@ -23,7 +23,8 @@ object InitialCapacityConfig {
     __obj.asInstanceOf[InitialCapacityConfig]
   }
   
-  extension [Self <: InitialCapacityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialCapacityConfig] (val x: Self) extends AnyVal {
     
     inline def setWorkerConfiguration(value: WorkerResourceConfig): Self = StObject.set(x, "workerConfiguration", value.asInstanceOf[js.Any])
     

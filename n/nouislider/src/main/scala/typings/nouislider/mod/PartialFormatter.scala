@@ -18,7 +18,8 @@ object PartialFormatter {
     __obj.asInstanceOf[PartialFormatter]
   }
   
-  extension [Self <: PartialFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFormatter] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: /* value */ String => Double | `false`): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
     

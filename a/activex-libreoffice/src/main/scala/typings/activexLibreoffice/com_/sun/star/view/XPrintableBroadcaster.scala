@@ -36,7 +36,8 @@ object XPrintableBroadcaster {
     __obj.asInstanceOf[XPrintableBroadcaster]
   }
   
-  extension [Self <: XPrintableBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrintableBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddPrintableListener(value: XPrintableListener => Unit): Self = StObject.set(x, "addPrintableListener", js.Any.fromFunction1(value))
     

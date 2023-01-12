@@ -28,7 +28,8 @@ object EnvironmentTextureSpecularInfoV1 {
     __obj.asInstanceOf[EnvironmentTextureSpecularInfoV1]
   }
   
-  extension [Self <: EnvironmentTextureSpecularInfoV1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentTextureSpecularInfoV1] (val x: Self) extends AnyVal {
     
     inline def setLodGenerationScale(value: Double): Self = StObject.set(x, "lodGenerationScale", value.asInstanceOf[js.Any])
     

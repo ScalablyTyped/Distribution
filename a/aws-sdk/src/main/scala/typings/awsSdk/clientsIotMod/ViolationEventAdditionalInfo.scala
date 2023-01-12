@@ -18,7 +18,8 @@ object ViolationEventAdditionalInfo {
     __obj.asInstanceOf[ViolationEventAdditionalInfo]
   }
   
-  extension [Self <: ViolationEventAdditionalInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViolationEventAdditionalInfo] (val x: Self) extends AnyVal {
     
     inline def setConfidenceLevel(value: ConfidenceLevel): Self = StObject.set(x, "confidenceLevel", value.asInstanceOf[js.Any])
     

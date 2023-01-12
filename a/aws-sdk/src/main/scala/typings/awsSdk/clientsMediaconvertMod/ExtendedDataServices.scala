@@ -23,7 +23,8 @@ object ExtendedDataServices {
     __obj.asInstanceOf[ExtendedDataServices]
   }
   
-  extension [Self <: ExtendedDataServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedDataServices] (val x: Self) extends AnyVal {
     
     inline def setCopyProtectionAction(value: CopyProtectionAction): Self = StObject.set(x, "CopyProtectionAction", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object ParagraphFormatData {
     __obj.asInstanceOf[ParagraphFormatData]
   }
   
-  extension [Self <: ParagraphFormatData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphFormatData] (val x: Self) extends AnyVal {
     
     inline def setHorizontalAlignment(
       value: ParagraphHorizontalAlignment | Left | Center | Right | Justify | JustifyLow | Distributed | ThaiDistributed

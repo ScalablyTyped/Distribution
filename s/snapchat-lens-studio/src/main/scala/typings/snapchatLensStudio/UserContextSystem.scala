@@ -73,7 +73,8 @@ object UserContextSystem {
     __obj.asInstanceOf[UserContextSystem]
   }
   
-  extension [Self <: UserContextSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserContextSystem] (val x: Self) extends AnyVal {
     
     inline def setRequestAltitudeFormatted(value: js.Function1[/* formattedData */ String, Unit] => Unit): Self = StObject.set(x, "requestAltitudeFormatted", js.Any.fromFunction1(value))
     

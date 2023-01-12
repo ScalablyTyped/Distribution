@@ -126,7 +126,8 @@ object IFaxServer {
     __obj.asInstanceOf[IFaxServer]
   }
   
-  extension [Self <: IFaxServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFaxServer] (val x: Self) extends AnyVal {
     
     inline def setAPIVersion(value: FAX_SERVER_APIVERSION_ENUM): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
     

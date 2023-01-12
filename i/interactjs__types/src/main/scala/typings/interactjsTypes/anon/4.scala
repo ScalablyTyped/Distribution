@@ -18,7 +18,8 @@ object `4` {
     __obj.asInstanceOf[`4`[T]]
   }
   
-  extension [Self <: `4`[?], T /* <: ActionName | Null */](x: Self & `4`[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `4`[?], T /* <: ActionName | Null */] (val x: Self & `4`[T]) extends AnyVal {
     
     inline def setIEvent(value: InteractEvent[T, reflow]): Self = StObject.set(x, "iEvent", value.asInstanceOf[js.Any])
     

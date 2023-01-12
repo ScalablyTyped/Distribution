@@ -69,7 +69,8 @@ object PointInstrumentOptionsObject {
     __obj.asInstanceOf[PointInstrumentOptionsObject]
   }
   
-  extension [Self <: PointInstrumentOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointInstrumentOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     

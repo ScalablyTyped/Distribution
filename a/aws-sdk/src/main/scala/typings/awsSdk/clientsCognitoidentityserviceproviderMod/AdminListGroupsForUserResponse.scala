@@ -23,7 +23,8 @@ object AdminListGroupsForUserResponse {
     __obj.asInstanceOf[AdminListGroupsForUserResponse]
   }
   
-  extension [Self <: AdminListGroupsForUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminListGroupsForUserResponse] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: GroupListType): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     

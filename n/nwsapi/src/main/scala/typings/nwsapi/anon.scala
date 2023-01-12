@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[AttributeOperatorp1p2p3tr]
     }
     
-    extension [Self <: AttributeOperatorp1p2p3tr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeOperatorp1p2p3tr] (val x: Self) extends AnyVal {
       
       inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[AttributeOperatorp1p2p3trP1]
     }
     
-    extension [Self <: AttributeOperatorp1p2p3trP1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeOperatorp1p2p3trP1] (val x: Self) extends AnyVal {
       
       inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object anon {
       __obj.asInstanceOf[AttributeOperatorp1p2p3trP1P1]
     }
     
-    extension [Self <: AttributeOperatorp1p2p3trP1P1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeOperatorp1p2p3trP1P1] (val x: Self) extends AnyVal {
       
       inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
@@ -145,7 +148,8 @@ object anon {
       __obj.asInstanceOf[AttributeOperatorp1p2p3trP2]
     }
     
-    extension [Self <: AttributeOperatorp1p2p3trP2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeOperatorp1p2p3trP2] (val x: Self) extends AnyVal {
       
       inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
@@ -180,7 +184,8 @@ object anon {
       __obj.asInstanceOf[AttributeOperatorp1p2p3trP3]
     }
     
-    extension [Self <: AttributeOperatorp1p2p3trP3](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeOperatorp1p2p3trP3] (val x: Self) extends AnyVal {
       
       inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
@@ -215,7 +220,8 @@ object anon {
       __obj.asInstanceOf[AttributeOperatorp1sp2sp3]
     }
     
-    extension [Self <: AttributeOperatorp1sp2sp3](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeOperatorp1sp2sp3] (val x: Self) extends AnyVal {
       
       inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
@@ -264,7 +270,8 @@ object anon {
       __obj.asInstanceOf[Callback[F]]
     }
     
-    extension [Self <: Callback[?], F /* <: js.ThisFunction1[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callback[?], F /* <: js.ThisFunction1[
         /* import warning: importer.ImportType#apply Failed type conversion: { readonly Expression :string,  readonly Callback :F} */ /* this */ js.Any, 
         /* args */ Parameters[
           js.ThisFunction4[
@@ -277,7 +284,7 @@ object anon {
           ]
         ], 
         CustomSelectorResult
-      ] */](x: Self & Callback[F]) {
+      ] */] (val x: Self & Callback[F]) extends AnyVal {
       
       inline def setCallback(value: F): Self = StObject.set(x, "Callback", value.asInstanceOf[js.Any])
       
@@ -324,7 +331,8 @@ object anon {
       __obj.asInstanceOf[CallbackExpression[R, F]]
     }
     
-    extension [Self <: CallbackExpression[?, ?], R /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[Symbol.match] : (string : string): std.RegExpMatchArray | null} */ js.Any */, F /* <: js.ThisFunction1[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackExpression[?, ?], R /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[Symbol.match] : (string : string): std.RegExpMatchArray | null} */ js.Any */, F /* <: js.ThisFunction1[
         /* import warning: importer.ImportType#apply Failed type conversion: { readonly Expression :R,  readonly Callback :F} */ /* this */ js.Any, 
         /* args */ Parameters[
           js.ThisFunction4[
@@ -337,7 +345,7 @@ object anon {
           ]
         ], 
         CustomSelectorResult
-      ] */](x: Self & (CallbackExpression[R, F])) {
+      ] */] (val x: Self & (CallbackExpression[R, F])) extends AnyVal {
       
       inline def setCallback(value: F): Self = StObject.set(x, "Callback", value.asInstanceOf[js.Any])
       
@@ -387,7 +395,8 @@ object anon {
       __obj.asInstanceOf[Dictoperator]
     }
     
-    extension [Self <: Dictoperator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictoperator] (val x: Self) extends AnyVal {
       
       inline def set$Equalssign(value: AttributeOperatorp1p2p3trP2): Self = StObject.set(x, "$=", value.asInstanceOf[js.Any])
       
@@ -442,7 +451,8 @@ object anon {
       __obj.asInstanceOf[Expression[F]]
     }
     
-    extension [Self <: Expression[?], F /* <: js.ThisFunction1[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expression[?], F /* <: js.ThisFunction1[
         /* import warning: importer.ImportType#apply Failed type conversion: { readonly Expression :std.RegExp,  readonly Callback :F} */ /* this */ js.Any, 
         /* args */ Parameters[
           js.ThisFunction4[
@@ -455,7 +465,7 @@ object anon {
           ]
         ], 
         CustomSelectorResult
-      ] */](x: Self & Expression[F]) {
+      ] */] (val x: Self & Expression[F]) extends AnyVal {
       
       inline def setCallback(value: F): Self = StObject.set(x, "Callback", value.asInstanceOf[js.Any])
       
@@ -488,7 +498,8 @@ object anon {
       __obj.asInstanceOf[PartialConfig]
     }
     
-    extension [Self <: PartialConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
       
       inline def setIDS_DUPES(value: Boolean): Self = StObject.set(x, "IDS_DUPES", value.asInstanceOf[js.Any])
       

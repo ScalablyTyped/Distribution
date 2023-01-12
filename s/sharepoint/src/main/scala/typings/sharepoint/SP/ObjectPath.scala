@@ -15,7 +15,8 @@ object ObjectPath {
     __obj.asInstanceOf[ObjectPath]
   }
   
-  extension [Self <: ObjectPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectPath] (val x: Self) extends AnyVal {
     
     inline def setSetPendingReplace(value: () => Unit): Self = StObject.set(x, "setPendingReplace", js.Any.fromFunction0(value))
   }

@@ -174,7 +174,8 @@ object AndroidGeneralDeviceConfiguration {
     __obj.asInstanceOf[AndroidGeneralDeviceConfiguration]
   }
   
-  extension [Self <: AndroidGeneralDeviceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidGeneralDeviceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAppsBlockClipboardSharing(value: Boolean): Self = StObject.set(x, "appsBlockClipboardSharing", value.asInstanceOf[js.Any])
     

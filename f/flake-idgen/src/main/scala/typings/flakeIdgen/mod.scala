@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setDatacenter(value: Double): Self = StObject.set(x, "datacenter", value.asInstanceOf[js.Any])
       

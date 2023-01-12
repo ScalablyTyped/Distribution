@@ -25,7 +25,8 @@ object ToMoneyOptions {
     __obj.asInstanceOf[ToMoneyOptions]
   }
   
-  extension [Self <: ToMoneyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToMoneyOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     

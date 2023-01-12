@@ -27,7 +27,8 @@ object EndPopupModeEvent {
     __obj.asInstanceOf[EndPopupModeEvent]
   }
   
-  extension [Self <: EndPopupModeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndPopupModeEvent] (val x: Self) extends AnyVal {
     
     inline def setBTearoff(value: Boolean): Self = StObject.set(x, "bTearoff", value.asInstanceOf[js.Any])
     

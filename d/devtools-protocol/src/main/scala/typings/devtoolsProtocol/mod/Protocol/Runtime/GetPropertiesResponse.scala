@@ -33,7 +33,8 @@ object GetPropertiesResponse {
     __obj.asInstanceOf[GetPropertiesResponse]
   }
   
-  extension [Self <: GetPropertiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPropertiesResponse] (val x: Self) extends AnyVal {
     
     inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object typesVpcConfigResponseMod {
       __obj.asInstanceOf[UnmarshalledVpcConfigResponse]
     }
     
-    extension [Self <: UnmarshalledVpcConfigResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledVpcConfigResponse] (val x: Self) extends AnyVal {
       
       inline def setSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object typesVpcConfigResponseMod {
       __obj.asInstanceOf[VpcConfigResponse]
     }
     
-    extension [Self <: VpcConfigResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VpcConfigResponse] (val x: Self) extends AnyVal {
       
       inline def setSecurityGroupIds(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
       

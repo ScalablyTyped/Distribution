@@ -6340,7 +6340,8 @@ object LoDashFp {
     __obj.asInstanceOf[LoDashFp]
   }
   
-  extension [Self <: LoDashFp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoDashFp] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: LodashAdd): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

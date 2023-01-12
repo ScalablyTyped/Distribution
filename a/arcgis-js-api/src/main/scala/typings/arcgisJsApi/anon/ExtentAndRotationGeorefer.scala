@@ -37,7 +37,8 @@ object ExtentAndRotationGeorefer {
     __obj.asInstanceOf[ExtentAndRotationGeorefer]
   }
   
-  extension [Self <: ExtentAndRotationGeorefer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtentAndRotationGeorefer] (val x: Self) extends AnyVal {
     
     inline def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     

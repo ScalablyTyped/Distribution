@@ -19,7 +19,8 @@ object ParseLinkDestination {
     __obj.asInstanceOf[ParseLinkDestination]
   }
   
-  extension [Self <: ParseLinkDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseLinkDestination] (val x: Self) extends AnyVal {
     
     inline def setParseLinkDestination(value: scala.Any): Self = StObject.set(x, "parseLinkDestination", value.asInstanceOf[js.Any])
     

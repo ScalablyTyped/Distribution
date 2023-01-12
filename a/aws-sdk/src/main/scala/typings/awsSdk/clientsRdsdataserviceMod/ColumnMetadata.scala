@@ -83,7 +83,8 @@ object ColumnMetadata {
     __obj.asInstanceOf[ColumnMetadata]
   }
   
-  extension [Self <: ColumnMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnMetadata] (val x: Self) extends AnyVal {
     
     inline def setArrayBaseColumnType(value: Integer): Self = StObject.set(x, "arrayBaseColumnType", value.asInstanceOf[js.Any])
     

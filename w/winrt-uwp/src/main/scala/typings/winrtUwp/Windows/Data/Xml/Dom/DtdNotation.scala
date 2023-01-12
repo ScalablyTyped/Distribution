@@ -177,7 +177,8 @@ object DtdNotation {
     __obj.asInstanceOf[DtdNotation]
   }
   
-  extension [Self <: DtdNotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DtdNotation] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: IXmlNode => IXmlNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

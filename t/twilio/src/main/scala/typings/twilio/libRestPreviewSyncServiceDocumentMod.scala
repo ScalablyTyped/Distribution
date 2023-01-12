@@ -221,7 +221,8 @@ object libRestPreviewSyncServiceDocumentMod {
       __obj.asInstanceOf[DocumentInstanceUpdateOptions]
     }
     
-    extension [Self <: DocumentInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -386,7 +387,8 @@ object libRestPreviewSyncServiceDocumentMod {
       __obj.asInstanceOf[DocumentListInstanceCreateOptions]
     }
     
-    extension [Self <: DocumentListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -439,7 +441,8 @@ object libRestPreviewSyncServiceDocumentMod {
       __obj.asInstanceOf[DocumentListInstanceEachOptions]
     }
     
-    extension [Self <: DocumentListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ DocumentInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -488,7 +491,8 @@ object libRestPreviewSyncServiceDocumentMod {
       __obj.asInstanceOf[DocumentListInstanceOptions]
     }
     
-    extension [Self <: DocumentListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -522,7 +526,8 @@ object libRestPreviewSyncServiceDocumentMod {
       __obj.asInstanceOf[DocumentListInstancePageOptions]
     }
     
-    extension [Self <: DocumentListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -611,7 +616,8 @@ object libRestPreviewSyncServiceDocumentMod {
       __obj.asInstanceOf[DocumentResource]
     }
     
-    extension [Self <: DocumentResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -648,7 +654,8 @@ object libRestPreviewSyncServiceDocumentMod {
       __obj.asInstanceOf[DocumentSolution]
     }
     
-    extension [Self <: DocumentSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentSolution] (val x: Self) extends AnyVal {
       
       inline def setServiceSid(value: String): Self = StObject.set(x, "serviceSid", value.asInstanceOf[js.Any])
       

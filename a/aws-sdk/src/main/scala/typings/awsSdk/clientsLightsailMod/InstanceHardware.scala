@@ -28,7 +28,8 @@ object InstanceHardware {
     __obj.asInstanceOf[InstanceHardware]
   }
   
-  extension [Self <: InstanceHardware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceHardware] (val x: Self) extends AnyVal {
     
     inline def setCpuCount(value: integer): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
     

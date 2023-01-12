@@ -21,7 +21,8 @@ object ResetAction {
     __obj.asInstanceOf[ResetAction]
   }
   
-  extension [Self <: ResetAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetAction] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

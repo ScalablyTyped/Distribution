@@ -37,7 +37,8 @@ object TestResult {
     __obj.asInstanceOf[TestResult]
   }
   
-  extension [Self <: TestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
     
     inline def setDisplayTargetFile(value: String): Self = StObject.set(x, "displayTargetFile", value.asInstanceOf[js.Any])
     

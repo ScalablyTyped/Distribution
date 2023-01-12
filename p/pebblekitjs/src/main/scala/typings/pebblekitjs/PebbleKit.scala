@@ -22,7 +22,8 @@ object PebbleKit {
       __obj.asInstanceOf[AppGlanceSlice]
     }
     
-    extension [Self <: AppGlanceSlice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppGlanceSlice] (val x: Self) extends AnyVal {
       
       inline def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object PebbleKit {
       __obj.asInstanceOf[AppMessageData]
     }
     
-    extension [Self <: AppMessageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppMessageData] (val x: Self) extends AnyVal {
       
       inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     }
@@ -62,7 +64,8 @@ object PebbleKit {
       __obj.asInstanceOf[AppMessageEvent]
     }
     
-    extension [Self <: AppMessageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppMessageEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: AppMessageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -83,7 +86,8 @@ object PebbleKit {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -105,7 +109,8 @@ object PebbleKit {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -139,7 +144,8 @@ object PebbleKit {
       __obj.asInstanceOf[Firmware]
     }
     
-    extension [Self <: Firmware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Firmware] (val x: Self) extends AnyVal {
       
       inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
@@ -164,7 +170,8 @@ object PebbleKit {
       __obj.asInstanceOf[Layout]
     }
     
-    extension [Self <: Layout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -351,7 +358,8 @@ object PebbleKit {
       __obj.asInstanceOf[WatchInfo]
     }
     
-    extension [Self <: WatchInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchInfo] (val x: Self) extends AnyVal {
       
       inline def setFirmware(value: Firmware): Self = StObject.set(x, "firmware", value.asInstanceOf[js.Any])
       

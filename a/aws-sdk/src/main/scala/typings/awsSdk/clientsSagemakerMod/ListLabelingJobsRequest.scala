@@ -63,7 +63,8 @@ object ListLabelingJobsRequest {
     __obj.asInstanceOf[ListLabelingJobsRequest]
   }
   
-  extension [Self <: ListLabelingJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLabelingJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     

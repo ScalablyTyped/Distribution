@@ -21,7 +21,8 @@ object PostVersionsParams {
     __obj.asInstanceOf[PostVersionsParams]
   }
   
-  extension [Self <: PostVersionsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostVersionsParams] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

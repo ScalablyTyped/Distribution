@@ -24,7 +24,8 @@ object routeRouteTabPressEvent {
     __obj.asInstanceOf[routeRouteTabPressEvent]
   }
   
-  extension [Self <: routeRouteTabPressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: routeRouteTabPressEvent] (val x: Self) extends AnyVal {
     
     inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ASPxClientGlobalCallbackErrorEventArgs {
     __obj.asInstanceOf[ASPxClientGlobalCallbackErrorEventArgs]
   }
   
-  extension [Self <: ASPxClientGlobalCallbackErrorEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGlobalCallbackErrorEventArgs] (val x: Self) extends AnyVal {
     
     inline def setControl(value: ASPxClientControl): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
   }

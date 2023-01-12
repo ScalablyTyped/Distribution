@@ -20,7 +20,8 @@ object DataTableSelectAllChangeParams {
     __obj.asInstanceOf[DataTableSelectAllChangeParams]
   }
   
-  extension [Self <: DataTableSelectAllChangeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableSelectAllChangeParams] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

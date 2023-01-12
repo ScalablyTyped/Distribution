@@ -23,7 +23,8 @@ object EbsBlockDevice {
     __obj.asInstanceOf[EbsBlockDevice]
   }
   
-  extension [Self <: EbsBlockDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbsBlockDevice] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: String): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     

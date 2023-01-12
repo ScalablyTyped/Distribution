@@ -33,7 +33,8 @@ object I18nManagerStatic {
     __obj.asInstanceOf[I18nManagerStatic]
   }
   
-  extension [Self <: I18nManagerStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18nManagerStatic] (val x: Self) extends AnyVal {
     
     inline def setAllowRTL(value: Boolean => Unit): Self = StObject.set(x, "allowRTL", js.Any.fromFunction1(value))
     

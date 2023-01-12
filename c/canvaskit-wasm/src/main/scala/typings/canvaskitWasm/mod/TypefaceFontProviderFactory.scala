@@ -18,7 +18,8 @@ object TypefaceFontProviderFactory {
     __obj.asInstanceOf[TypefaceFontProviderFactory]
   }
   
-  extension [Self <: TypefaceFontProviderFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypefaceFontProviderFactory] (val x: Self) extends AnyVal {
     
     inline def setMake(value: () => TypefaceFontProvider): Self = StObject.set(x, "Make", js.Any.fromFunction0(value))
   }

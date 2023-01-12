@@ -35,7 +35,8 @@ object esHooksUseValueTextsMod {
       __obj.asInstanceOf[ValueTextConfig[DateType]]
     }
     
-    extension [Self <: ValueTextConfig[?], DateType](x: Self & ValueTextConfig[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueTextConfig[?], DateType] (val x: Self & ValueTextConfig[DateType]) extends AnyVal {
       
       inline def setFormatList(value: js.Array[String | CustomFormat[DateType]]): Self = StObject.set(x, "formatList", value.asInstanceOf[js.Any])
       

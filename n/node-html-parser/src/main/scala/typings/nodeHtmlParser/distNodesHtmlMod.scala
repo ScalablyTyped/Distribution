@@ -363,7 +363,8 @@ object distNodesHtmlMod {
       __obj.asInstanceOf[KeyAttributes]
     }
     
-    extension [Self <: KeyAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyAttributes] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -399,7 +400,8 @@ object distNodesHtmlMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBlockTextElements(value: StringDictionary[Boolean]): Self = StObject.set(x, "blockTextElements", value.asInstanceOf[js.Any])
       

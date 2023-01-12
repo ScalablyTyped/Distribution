@@ -116,7 +116,8 @@ object distRouteNodeMod {
       __obj.asInstanceOf[BuildOptions]
     }
     
-    extension [Self <: BuildOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildOptions] (val x: Self) extends AnyVal {
       
       inline def setQueryParams(value: IOptions): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object distRouteNodeMod {
       __obj.asInstanceOf[MatchOptions]
     }
     
-    extension [Self <: MatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
@@ -210,7 +212,8 @@ object distRouteNodeMod {
       __obj.asInstanceOf[MatchResponse]
     }
     
-    extension [Self <: MatchResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchResponse] (val x: Self) extends AnyVal {
       
       inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -257,7 +260,8 @@ object distRouteNodeMod {
       __obj.asInstanceOf[RouteDefinition]
     }
     
-    extension [Self <: RouteDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteDefinition] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -282,7 +286,8 @@ object distRouteNodeMod {
       __obj.asInstanceOf[RouteNodeOptions]
     }
     
-    extension [Self <: RouteNodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteNodeOptions] (val x: Self) extends AnyVal {
       
       inline def setFinalSort(value: Boolean): Self = StObject.set(x, "finalSort", value.asInstanceOf[js.Any])
       
@@ -317,7 +322,8 @@ object distRouteNodeMod {
       __obj.asInstanceOf[RouteNodeState]
     }
     
-    extension [Self <: RouteNodeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteNodeState] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: RouteNodeStateMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       

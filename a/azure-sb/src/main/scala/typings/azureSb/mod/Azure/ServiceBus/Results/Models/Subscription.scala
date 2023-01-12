@@ -64,7 +64,8 @@ object Subscription {
     __obj.asInstanceOf[Subscription]
   }
   
-  extension [Self <: Subscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
     inline def setCountDetails(value: StringDictionary[String]): Self = StObject.set(x, "CountDetails", value.asInstanceOf[js.Any])
     

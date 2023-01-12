@@ -23,7 +23,8 @@ object IBatchDeleteEntitiesRequest {
     __obj.asInstanceOf[IBatchDeleteEntitiesRequest]
   }
   
-  extension [Self <: IBatchDeleteEntitiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBatchDeleteEntitiesRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityValues(value: js.Array[String]): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
     

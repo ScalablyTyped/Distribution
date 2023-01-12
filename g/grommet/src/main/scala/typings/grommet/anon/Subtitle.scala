@@ -21,7 +21,8 @@ object Subtitle {
     __obj.asInstanceOf[Subtitle]
   }
   
-  extension [Self <: Subtitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subtitle] (val x: Self) extends AnyVal {
     
     inline def setPad(value: PadType): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     

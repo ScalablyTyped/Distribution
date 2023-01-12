@@ -23,7 +23,8 @@ object AssetRelationshipSummary {
     __obj.asInstanceOf[AssetRelationshipSummary]
   }
   
-  extension [Self <: AssetRelationshipSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetRelationshipSummary] (val x: Self) extends AnyVal {
     
     inline def setHierarchyInfo(value: AssetHierarchyInfo): Self = StObject.set(x, "hierarchyInfo", value.asInstanceOf[js.Any])
     

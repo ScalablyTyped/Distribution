@@ -28,7 +28,8 @@ object GetPlayerConnectionStatusRequest {
     __obj.asInstanceOf[GetPlayerConnectionStatusRequest]
   }
   
-  extension [Self <: GetPlayerConnectionStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPlayerConnectionStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setGameName(value: GameName): Self = StObject.set(x, "GameName", value.asInstanceOf[js.Any])
     

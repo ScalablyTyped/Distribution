@@ -51,7 +51,8 @@ object usersClientMod {
       __obj.asInstanceOf[Avatar]
     }
     
-    extension [Self <: Avatar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Avatar] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object usersClientMod {
       __obj.asInstanceOf[SearchUserResponse]
     }
     
-    extension [Self <: SearchUserResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchUserResponse] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -134,7 +136,8 @@ object usersClientMod {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setAccountType(value: String): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
       
@@ -193,7 +196,8 @@ object usersClientMod {
       __obj.asInstanceOf[UserFilter]
     }
     
-    extension [Self <: UserFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserFilter] (val x: Self) extends AnyVal {
       
       inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
       
@@ -220,7 +224,8 @@ object usersClientMod {
       __obj.asInstanceOf[UsersList]
     }
     
-    extension [Self <: UsersList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsersList] (val x: Self) extends AnyVal {
       
       inline def setUsers(value: js.Array[User]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       

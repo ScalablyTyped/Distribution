@@ -86,7 +86,8 @@ object EaseInBack {
     __obj.asInstanceOf[EaseInBack]
   }
   
-  extension [Self <: EaseInBack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EaseInBack] (val x: Self) extends AnyVal {
     
     inline def setEaseInBack(value: js.Array[Double]): Self = StObject.set(x, "easeInBack", value.asInstanceOf[js.Any])
     

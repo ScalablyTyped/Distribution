@@ -50,7 +50,8 @@ object BuildBazelRemoteExecutionV2ExecutedActionMetadata {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2ExecutedActionMetadata]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2ExecutedActionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2ExecutedActionMetadata] (val x: Self) extends AnyVal {
     
     inline def setAuxiliaryMetadata(
       value: js.Array[

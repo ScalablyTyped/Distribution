@@ -58,7 +58,8 @@ object SecurityPolicyViolationEventInit {
     __obj.asInstanceOf[SecurityPolicyViolationEventInit]
   }
   
-  extension [Self <: SecurityPolicyViolationEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPolicyViolationEventInit] (val x: Self) extends AnyVal {
     
     inline def setBlockedURI(value: java.lang.String): Self = StObject.set(x, "blockedURI", value.asInstanceOf[js.Any])
     

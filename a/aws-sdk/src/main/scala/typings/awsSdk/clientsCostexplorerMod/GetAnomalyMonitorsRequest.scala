@@ -28,7 +28,8 @@ object GetAnomalyMonitorsRequest {
     __obj.asInstanceOf[GetAnomalyMonitorsRequest]
   }
   
-  extension [Self <: GetAnomalyMonitorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAnomalyMonitorsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

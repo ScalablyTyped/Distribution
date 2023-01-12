@@ -97,7 +97,8 @@ object linkerSrcFileLinkerPartialLinkersPartialLinkerSelectorMod {
       __obj.asInstanceOf[LinkerRange[TExpression]]
     }
     
-    extension [Self <: LinkerRange[?], TExpression](x: Self & LinkerRange[TExpression]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkerRange[?], TExpression] (val x: Self & LinkerRange[TExpression]) extends AnyVal {
       
       inline def setLinker(value: PartialLinker[TExpression]): Self = StObject.set(x, "linker", value.asInstanceOf[js.Any])
       

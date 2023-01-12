@@ -21,7 +21,8 @@ object AllowlistOnly {
     __obj.asInstanceOf[AllowlistOnly]
   }
   
-  extension [Self <: AllowlistOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowlistOnly] (val x: Self) extends AnyVal {
     
     inline def setAllowedRegions(value: js.Array[String]): Self = StObject.set(x, "allowedRegions", value.asInstanceOf[js.Any])
     

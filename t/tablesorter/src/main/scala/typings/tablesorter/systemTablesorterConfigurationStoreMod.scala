@@ -369,7 +369,8 @@ object systemTablesorterConfigurationStoreMod {
       __obj.asInstanceOf[TablesorterConfigurationStore[TElement]]
     }
     
-    extension [Self <: TablesorterConfigurationStore[?], TElement](x: Self & TablesorterConfigurationStore[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablesorterConfigurationStore[?], TElement] (val x: Self & TablesorterConfigurationStore[TElement]) extends AnyVal {
       
       inline def set$filters(value: JQuery[HTMLElement]): Self = StObject.set(x, "$filters", value.asInstanceOf[js.Any])
       

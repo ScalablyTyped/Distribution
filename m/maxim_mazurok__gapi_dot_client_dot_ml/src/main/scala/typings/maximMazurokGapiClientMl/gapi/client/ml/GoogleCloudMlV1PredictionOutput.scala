@@ -25,7 +25,8 @@ object GoogleCloudMlV1PredictionOutput {
     __obj.asInstanceOf[GoogleCloudMlV1PredictionOutput]
   }
   
-  extension [Self <: GoogleCloudMlV1PredictionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1PredictionOutput] (val x: Self) extends AnyVal {
     
     inline def setErrorCount(value: String): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     

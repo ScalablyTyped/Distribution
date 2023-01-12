@@ -18,7 +18,8 @@ object DeleteAccountAliasRequest {
     __obj.asInstanceOf[DeleteAccountAliasRequest]
   }
   
-  extension [Self <: DeleteAccountAliasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAccountAliasRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountAlias(value: accountAliasType): Self = StObject.set(x, "AccountAlias", value.asInstanceOf[js.Any])
   }

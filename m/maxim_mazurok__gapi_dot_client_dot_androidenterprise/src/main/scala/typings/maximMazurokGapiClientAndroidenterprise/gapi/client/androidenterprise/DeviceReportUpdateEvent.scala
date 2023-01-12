@@ -22,7 +22,8 @@ object DeviceReportUpdateEvent {
     __obj.asInstanceOf[DeviceReportUpdateEvent]
   }
   
-  extension [Self <: DeviceReportUpdateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceReportUpdateEvent] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

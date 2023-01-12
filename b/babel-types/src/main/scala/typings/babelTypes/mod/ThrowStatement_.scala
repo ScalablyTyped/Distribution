@@ -25,7 +25,8 @@ object ThrowStatement_ {
     __obj.asInstanceOf[ThrowStatement_]
   }
   
-  extension [Self <: ThrowStatement_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThrowStatement_] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

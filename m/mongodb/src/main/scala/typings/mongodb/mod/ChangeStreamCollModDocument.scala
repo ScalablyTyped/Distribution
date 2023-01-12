@@ -21,7 +21,8 @@ object ChangeStreamCollModDocument {
     __obj.asInstanceOf[ChangeStreamCollModDocument]
   }
   
-  extension [Self <: ChangeStreamCollModDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamCollModDocument] (val x: Self) extends AnyVal {
     
     inline def setOperationType(value: modify): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
   }

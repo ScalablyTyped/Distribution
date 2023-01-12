@@ -42,7 +42,8 @@ object XFocusListener {
     __obj.asInstanceOf[XFocusListener]
   }
   
-  extension [Self <: XFocusListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFocusListener] (val x: Self) extends AnyVal {
     
     inline def setFocusGained(value: FocusEvent => Unit): Self = StObject.set(x, "focusGained", js.Any.fromFunction1(value))
     

@@ -354,7 +354,8 @@ object sapUiWebcMainTableColumnMod {
       __obj.asInstanceOf[TableColumnSettings]
     }
     
-    extension [Self <: TableColumnSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableColumnSettings] (val x: Self) extends AnyVal {
       
       inline def setContent(
         value: js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

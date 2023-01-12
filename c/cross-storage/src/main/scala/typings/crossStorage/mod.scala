@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[CrossStorageClientOptions]
     }
     
-    extension [Self <: CrossStorageClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrossStorageClientOptions] (val x: Self) extends AnyVal {
       
       inline def setFrameId(value: String): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object mod {
       __obj.asInstanceOf[SubDomain]
     }
     
-    extension [Self <: SubDomain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubDomain] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: js.Array[CrossStorageMethod]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object ParagraphStyle {
     __obj.asInstanceOf[ParagraphStyle]
   }
   
-  extension [Self <: ParagraphStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphStyle] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: TextHorizontalAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

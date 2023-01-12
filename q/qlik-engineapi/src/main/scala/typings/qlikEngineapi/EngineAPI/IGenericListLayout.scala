@@ -20,7 +20,8 @@ object IGenericListLayout {
     __obj.asInstanceOf[IGenericListLayout]
   }
   
-  extension [Self <: IGenericListLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericListLayout] (val x: Self) extends AnyVal {
     
     inline def setQListObject(value: IListObject): Self = StObject.set(x, "qListObject", value.asInstanceOf[js.Any])
   }

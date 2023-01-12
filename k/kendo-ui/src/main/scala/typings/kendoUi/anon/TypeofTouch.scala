@@ -20,7 +20,8 @@ object TypeofTouch {
     __obj.asInstanceOf[TypeofTouch]
   }
   
-  extension [Self <: TypeofTouch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTouch] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Touch): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

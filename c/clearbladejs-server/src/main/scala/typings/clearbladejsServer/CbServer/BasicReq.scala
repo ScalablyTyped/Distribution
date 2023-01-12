@@ -36,7 +36,8 @@ object BasicReq {
     __obj.asInstanceOf[BasicReq]
   }
   
-  extension [Self <: BasicReq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicReq] (val x: Self) extends AnyVal {
     
     inline def setIsLogging(value: Boolean): Self = StObject.set(x, "isLogging", value.asInstanceOf[js.Any])
     

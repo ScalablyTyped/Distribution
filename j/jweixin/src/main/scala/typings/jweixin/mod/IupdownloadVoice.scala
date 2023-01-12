@@ -24,7 +24,8 @@ object IupdownloadVoice {
     __obj.asInstanceOf[IupdownloadVoice]
   }
   
-  extension [Self <: IupdownloadVoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IupdownloadVoice] (val x: Self) extends AnyVal {
     
     inline def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
     

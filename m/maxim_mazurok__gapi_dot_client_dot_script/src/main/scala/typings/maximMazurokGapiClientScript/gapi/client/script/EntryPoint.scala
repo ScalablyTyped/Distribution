@@ -25,7 +25,8 @@ object EntryPoint {
     __obj.asInstanceOf[EntryPoint]
   }
   
-  extension [Self <: EntryPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryPoint] (val x: Self) extends AnyVal {
     
     inline def setAddOn(value: GoogleAppsScriptTypeAddOnEntryPoint): Self = StObject.set(x, "addOn", value.asInstanceOf[js.Any])
     

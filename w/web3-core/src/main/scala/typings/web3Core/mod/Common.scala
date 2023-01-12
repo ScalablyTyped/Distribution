@@ -19,7 +19,8 @@ object Common {
     __obj.asInstanceOf[Common]
   }
   
-  extension [Self <: Common](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Common] (val x: Self) extends AnyVal {
     
     inline def setBaseChain(value: chain): Self = StObject.set(x, "baseChain", value.asInstanceOf[js.Any])
     

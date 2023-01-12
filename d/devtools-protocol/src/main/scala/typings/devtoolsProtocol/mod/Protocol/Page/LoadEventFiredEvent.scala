@@ -16,7 +16,8 @@ object LoadEventFiredEvent {
     __obj.asInstanceOf[LoadEventFiredEvent]
   }
   
-  extension [Self <: LoadEventFiredEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadEventFiredEvent] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object ZeppelinMonitoringConfigurationUpdate {
     __obj.asInstanceOf[ZeppelinMonitoringConfigurationUpdate]
   }
   
-  extension [Self <: ZeppelinMonitoringConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZeppelinMonitoringConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setLogLevelUpdate(value: LogLevel): Self = StObject.set(x, "LogLevelUpdate", value.asInstanceOf[js.Any])
   }

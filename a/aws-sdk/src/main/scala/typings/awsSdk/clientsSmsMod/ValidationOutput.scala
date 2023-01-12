@@ -48,7 +48,8 @@ object ValidationOutput {
     __obj.asInstanceOf[ValidationOutput]
   }
   
-  extension [Self <: ValidationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationOutput] (val x: Self) extends AnyVal {
     
     inline def setAppValidationOutput(value: AppValidationOutput): Self = StObject.set(x, "appValidationOutput", value.asInstanceOf[js.Any])
     

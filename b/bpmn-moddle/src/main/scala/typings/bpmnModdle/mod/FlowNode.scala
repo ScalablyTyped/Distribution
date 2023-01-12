@@ -31,7 +31,8 @@ object FlowNode {
     __obj.asInstanceOf[FlowNode]
   }
   
-  extension [Self <: FlowNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowNode] (val x: Self) extends AnyVal {
     
     inline def setIncoming(value: js.Array[SequenceFlow]): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
     

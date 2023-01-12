@@ -19,7 +19,8 @@ object QRCodeEvent {
     __obj.asInstanceOf[QRCodeEvent]
   }
   
-  extension [Self <: QRCodeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

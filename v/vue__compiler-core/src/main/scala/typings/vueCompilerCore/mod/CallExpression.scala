@@ -34,7 +34,8 @@ object CallExpression {
     __obj.asInstanceOf[CallExpression]
   }
   
-  extension [Self <: CallExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallExpression] (val x: Self) extends AnyVal {
     
     inline def setArguments(
       value: js.Array[

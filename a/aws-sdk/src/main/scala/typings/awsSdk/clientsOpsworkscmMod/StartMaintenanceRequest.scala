@@ -23,7 +23,8 @@ object StartMaintenanceRequest {
     __obj.asInstanceOf[StartMaintenanceRequest]
   }
   
-  extension [Self <: StartMaintenanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMaintenanceRequest] (val x: Self) extends AnyVal {
     
     inline def setEngineAttributes(value: EngineAttributes): Self = StObject.set(x, "EngineAttributes", value.asInstanceOf[js.Any])
     

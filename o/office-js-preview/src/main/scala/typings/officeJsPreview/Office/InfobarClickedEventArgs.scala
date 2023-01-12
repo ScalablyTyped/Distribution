@@ -37,7 +37,8 @@ object InfobarClickedEventArgs {
     __obj.asInstanceOf[InfobarClickedEventArgs]
   }
   
-  extension [Self <: InfobarClickedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfobarClickedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInfobarDetails(value: InfobarDetails): Self = StObject.set(x, "infobarDetails", value.asInstanceOf[js.Any])
     

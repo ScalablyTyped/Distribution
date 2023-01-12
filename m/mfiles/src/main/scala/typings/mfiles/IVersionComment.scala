@@ -26,7 +26,8 @@ object IVersionComment {
     __obj.asInstanceOf[IVersionComment]
   }
   
-  extension [Self <: IVersionComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVersionComment] (val x: Self) extends AnyVal {
     
     inline def setLastModifiedBy(value: IPropertyValue): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
     

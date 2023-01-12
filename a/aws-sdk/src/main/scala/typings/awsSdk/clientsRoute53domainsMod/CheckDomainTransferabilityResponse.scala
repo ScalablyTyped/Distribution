@@ -18,7 +18,8 @@ object CheckDomainTransferabilityResponse {
     __obj.asInstanceOf[CheckDomainTransferabilityResponse]
   }
   
-  extension [Self <: CheckDomainTransferabilityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckDomainTransferabilityResponse] (val x: Self) extends AnyVal {
     
     inline def setTransferability(value: DomainTransferability): Self = StObject.set(x, "Transferability", value.asInstanceOf[js.Any])
   }

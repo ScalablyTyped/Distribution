@@ -62,7 +62,8 @@ object PublisherLinks {
     __obj.asInstanceOf[PublisherLinks]
   }
   
-  extension [Self <: PublisherLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublisherLinks] (val x: Self) extends AnyVal {
     
     inline def setCompany(value: Link): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     

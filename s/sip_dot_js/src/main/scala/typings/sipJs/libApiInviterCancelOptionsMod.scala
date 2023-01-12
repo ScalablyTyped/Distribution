@@ -21,7 +21,8 @@ object libApiInviterCancelOptionsMod {
       __obj.asInstanceOf[InviterCancelOptions]
     }
     
-    extension [Self <: InviterCancelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InviterCancelOptions] (val x: Self) extends AnyVal {
       
       inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
       

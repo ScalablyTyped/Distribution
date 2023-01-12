@@ -23,7 +23,8 @@ object BatchDescribeModelPackageOutput {
     __obj.asInstanceOf[BatchDescribeModelPackageOutput]
   }
   
-  extension [Self <: BatchDescribeModelPackageOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDescribeModelPackageOutput] (val x: Self) extends AnyVal {
     
     inline def setBatchDescribeModelPackageErrorMap(value: BatchDescribeModelPackageErrorMap): Self = StObject.set(x, "BatchDescribeModelPackageErrorMap", value.asInstanceOf[js.Any])
     

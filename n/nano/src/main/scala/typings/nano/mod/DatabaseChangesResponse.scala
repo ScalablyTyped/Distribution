@@ -24,7 +24,8 @@ object DatabaseChangesResponse {
     __obj.asInstanceOf[DatabaseChangesResponse]
   }
   
-  extension [Self <: DatabaseChangesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseChangesResponse] (val x: Self) extends AnyVal {
     
     inline def setLast_seq(value: Any): Self = StObject.set(x, "last_seq", value.asInstanceOf[js.Any])
     

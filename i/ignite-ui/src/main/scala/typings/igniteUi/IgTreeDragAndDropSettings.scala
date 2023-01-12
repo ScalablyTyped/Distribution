@@ -166,7 +166,8 @@ object IgTreeDragAndDropSettings {
     __obj.asInstanceOf[IgTreeDragAndDropSettings]
   }
   
-  extension [Self <: IgTreeDragAndDropSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeDragAndDropSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowDrop(value: Boolean): Self = StObject.set(x, "allowDrop", value.asInstanceOf[js.Any])
     

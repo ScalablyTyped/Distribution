@@ -17,7 +17,8 @@ object OwnershipProof {
     __obj.asInstanceOf[OwnershipProof]
   }
   
-  extension [Self <: OwnershipProof](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OwnershipProof] (val x: Self) extends AnyVal {
     
     inline def setOwnership_proof(value: String): Self = StObject.set(x, "ownership_proof", value.asInstanceOf[js.Any])
     

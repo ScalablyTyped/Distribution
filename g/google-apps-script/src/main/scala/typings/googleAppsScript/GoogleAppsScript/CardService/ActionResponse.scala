@@ -42,7 +42,8 @@ object ActionResponse {
     __obj.asInstanceOf[ActionResponse]
   }
   
-  extension [Self <: ActionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionResponse] (val x: Self) extends AnyVal {
     
     inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }

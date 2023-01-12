@@ -73,7 +73,8 @@ object List {
       __obj.asInstanceOf[ListItemProps]
     }
     
-    extension [Self <: ListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
       
       inline def setAutoGenerateNestedIndicator(value: Boolean): Self = StObject.set(x, "autoGenerateNestedIndicator", value.asInstanceOf[js.Any])
       
@@ -184,7 +185,8 @@ object List {
       __obj.asInstanceOf[SelectableProps]
     }
     
-    extension [Self <: SelectableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectableProps] (val x: Self) extends AnyVal {
       
       inline def setOnChange(value: (/* e */ SyntheticEvent[js.Object, Event], /* value */ Any) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       

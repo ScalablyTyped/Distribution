@@ -25,7 +25,8 @@ object typesAccountUsageMod {
       __obj.asInstanceOf[AccountUsage]
     }
     
-    extension [Self <: AccountUsage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountUsage] (val x: Self) extends AnyVal {
       
       inline def setFunctionCount(value: Double): Self = StObject.set(x, "FunctionCount", value.asInstanceOf[js.Any])
       

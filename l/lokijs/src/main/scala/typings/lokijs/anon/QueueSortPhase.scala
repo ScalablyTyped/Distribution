@@ -15,7 +15,8 @@ object QueueSortPhase {
     __obj.asInstanceOf[QueueSortPhase]
   }
   
-  extension [Self <: QueueSortPhase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueSortPhase] (val x: Self) extends AnyVal {
     
     inline def setQueueSortPhase(value: Boolean): Self = StObject.set(x, "queueSortPhase", value.asInstanceOf[js.Any])
     

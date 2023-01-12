@@ -354,7 +354,8 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
       __obj.asInstanceOf[BarcodeScannerDialogSettings]
     }
     
-    extension [Self <: BarcodeScannerDialogSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarcodeScannerDialogSettings] (val x: Self) extends AnyVal {
       
       inline def setScanError(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "scanError", js.Any.fromFunction1(value))
       

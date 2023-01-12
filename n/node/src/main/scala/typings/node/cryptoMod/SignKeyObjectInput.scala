@@ -17,7 +17,8 @@ object SignKeyObjectInput {
     __obj.asInstanceOf[SignKeyObjectInput]
   }
   
-  extension [Self <: SignKeyObjectInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignKeyObjectInput] (val x: Self) extends AnyVal {
     
     inline def setKey(value: KeyObject): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

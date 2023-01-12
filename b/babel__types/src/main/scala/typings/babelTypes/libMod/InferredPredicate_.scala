@@ -23,7 +23,8 @@ object InferredPredicate_ {
     __obj.asInstanceOf[InferredPredicate_]
   }
   
-  extension [Self <: InferredPredicate_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferredPredicate_] (val x: Self) extends AnyVal {
     
     inline def setType(value: InferredPredicate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

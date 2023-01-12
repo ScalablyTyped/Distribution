@@ -17,7 +17,8 @@ object ParticipantJoinedEvent {
     __obj.asInstanceOf[ParticipantJoinedEvent]
   }
   
-  extension [Self <: ParticipantJoinedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantJoinedEvent] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

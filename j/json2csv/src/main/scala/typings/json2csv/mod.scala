@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[FieldInfo[T]]
     }
     
-    extension [Self <: FieldInfo[?], T](x: Self & FieldInfo[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldInfo[?], T] (val x: Self & FieldInfo[T]) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object mod {
       __obj.asInstanceOf[FieldValueCallbackInfo]
     }
     
-    extension [Self <: FieldValueCallbackInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldValueCallbackInfo] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object mod {
       __obj.asInstanceOf[FlattenOptions]
     }
     
-    extension [Self <: FlattenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlattenOptions] (val x: Self) extends AnyVal {
       
       inline def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
       
@@ -185,7 +188,8 @@ object mod {
       __obj.asInstanceOf[NormalizedFieldInfo[T]]
     }
     
-    extension [Self <: NormalizedFieldInfo[?], T](x: Self & NormalizedFieldInfo[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedFieldInfo[?], T] (val x: Self & NormalizedFieldInfo[T]) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -230,7 +234,8 @@ object mod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -299,7 +304,8 @@ object mod {
       __obj.asInstanceOf[UnwindOptions]
     }
     
-    extension [Self <: UnwindOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnwindOptions] (val x: Self) extends AnyVal {
       
       inline def setBlankOut(value: Boolean): Self = StObject.set(x, "blankOut", value.asInstanceOf[js.Any])
       

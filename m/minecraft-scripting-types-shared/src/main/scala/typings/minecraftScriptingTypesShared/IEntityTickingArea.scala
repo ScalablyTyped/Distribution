@@ -26,7 +26,8 @@ object IEntityTickingArea {
     __obj.asInstanceOf[IEntityTickingArea]
   }
   
-  extension [Self <: IEntityTickingArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityTickingArea] (val x: Self) extends AnyVal {
     
     inline def setEntity_ticking_area_id(value: Int64): Self = StObject.set(x, "entity_ticking_area_id", value.asInstanceOf[js.Any])
     

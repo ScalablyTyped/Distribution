@@ -19,7 +19,8 @@ object CoinInfo {
     __obj.asInstanceOf[CoinInfo]
   }
   
-  extension [Self <: CoinInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoinInfo] (val x: Self) extends AnyVal {
     
     inline def setCoinInfo(value: BitcoinNetworkInfo): Self = StObject.set(x, "coinInfo", value.asInstanceOf[js.Any])
     

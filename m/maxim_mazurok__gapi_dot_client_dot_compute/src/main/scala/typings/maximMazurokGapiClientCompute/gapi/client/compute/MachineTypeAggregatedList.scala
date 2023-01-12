@@ -40,7 +40,8 @@ object MachineTypeAggregatedList {
     __obj.asInstanceOf[MachineTypeAggregatedList]
   }
   
-  extension [Self <: MachineTypeAggregatedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MachineTypeAggregatedList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

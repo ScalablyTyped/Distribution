@@ -29,7 +29,8 @@ object ASPxClientSeriesTitle {
     __obj.asInstanceOf[ASPxClientSeriesTitle]
   }
   
-  extension [Self <: ASPxClientSeriesTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSeriesTitle] (val x: Self) extends AnyVal {
     
     inline def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
   }

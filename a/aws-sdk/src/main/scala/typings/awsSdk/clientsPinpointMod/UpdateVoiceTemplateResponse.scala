@@ -15,7 +15,8 @@ object UpdateVoiceTemplateResponse {
     __obj.asInstanceOf[UpdateVoiceTemplateResponse]
   }
   
-  extension [Self <: UpdateVoiceTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVoiceTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setMessageBody(value: MessageBody): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
   }

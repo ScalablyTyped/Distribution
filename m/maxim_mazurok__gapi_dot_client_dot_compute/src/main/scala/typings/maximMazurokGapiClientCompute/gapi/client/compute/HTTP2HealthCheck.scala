@@ -38,7 +38,8 @@ object HTTP2HealthCheck {
     __obj.asInstanceOf[HTTP2HealthCheck]
   }
   
-  extension [Self <: HTTP2HealthCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTTP2HealthCheck] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

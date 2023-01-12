@@ -50,7 +50,8 @@ object MlTrainedModelDeploymentNodesStats {
     __obj.asInstanceOf[MlTrainedModelDeploymentNodesStats]
   }
   
-  extension [Self <: MlTrainedModelDeploymentNodesStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelDeploymentNodesStats] (val x: Self) extends AnyVal {
     
     inline def setAverage_inference_time_ms(value: DurationValue[UnitFloatMillis]): Self = StObject.set(x, "average_inference_time_ms", value.asInstanceOf[js.Any])
     

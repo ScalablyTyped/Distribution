@@ -21,7 +21,8 @@ object SSECommand {
     __obj.asInstanceOf[SSECommand]
   }
   
-  extension [Self <: SSECommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSECommand] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: String): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

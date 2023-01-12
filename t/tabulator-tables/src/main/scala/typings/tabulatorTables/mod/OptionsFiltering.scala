@@ -31,7 +31,8 @@ object OptionsFiltering {
     __obj.asInstanceOf[OptionsFiltering]
   }
   
-  extension [Self <: OptionsFiltering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsFiltering] (val x: Self) extends AnyVal {
     
     inline def setDataFiltered(value: (/* filters */ js.Array[Filter], /* rows */ js.Array[RowComponent]) => Unit): Self = StObject.set(x, "dataFiltered", js.Any.fromFunction2(value))
     

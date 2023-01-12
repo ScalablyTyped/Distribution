@@ -94,7 +94,8 @@ object SmartMappingSliderBaseProperties {
     __obj.asInstanceOf[SmartMappingSliderBaseProperties]
   }
   
-  extension [Self <: SmartMappingSliderBaseProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartMappingSliderBaseProperties] (val x: Self) extends AnyVal {
     
     inline def setHistogramConfig(value: HistogramConfig): Self = StObject.set(x, "histogramConfig", value.asInstanceOf[js.Any])
     

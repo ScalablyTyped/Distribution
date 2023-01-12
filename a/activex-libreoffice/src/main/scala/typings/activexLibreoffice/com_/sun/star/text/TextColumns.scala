@@ -74,7 +74,8 @@ object TextColumns {
     __obj.asInstanceOf[TextColumns]
   }
   
-  extension [Self <: TextColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextColumns] (val x: Self) extends AnyVal {
     
     inline def setAutomaticDistance(value: Double): Self = StObject.set(x, "AutomaticDistance", value.asInstanceOf[js.Any])
     

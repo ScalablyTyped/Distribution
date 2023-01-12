@@ -52,7 +52,8 @@ object ContainingView {
     __obj.asInstanceOf[ContainingView]
   }
   
-  extension [Self <: ContainingView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainingView] (val x: Self) extends AnyVal {
     
     inline def setContainingView(value: default): Self = StObject.set(x, "containingView", value.asInstanceOf[js.Any])
     

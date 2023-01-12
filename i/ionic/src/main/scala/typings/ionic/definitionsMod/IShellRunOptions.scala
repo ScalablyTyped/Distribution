@@ -22,7 +22,8 @@ object IShellRunOptions {
     __obj.asInstanceOf[IShellRunOptions]
   }
   
-  extension [Self <: IShellRunOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellRunOptions] (val x: Self) extends AnyVal {
     
     inline def setKillOnExit(value: Boolean): Self = StObject.set(x, "killOnExit", value.asInstanceOf[js.Any])
     

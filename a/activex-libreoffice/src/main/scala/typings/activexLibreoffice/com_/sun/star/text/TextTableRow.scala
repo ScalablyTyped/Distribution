@@ -89,7 +89,8 @@ object TextTableRow {
     __obj.asInstanceOf[TextTableRow]
   }
   
-  extension [Self <: TextTableRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextTableRow] (val x: Self) extends AnyVal {
     
     inline def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     

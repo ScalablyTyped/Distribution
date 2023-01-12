@@ -78,7 +78,8 @@ object componentsCardCardHeaderTitleMod {
       __obj.asInstanceOf[CardHeaderTitleModifierProps]
     }
     
-    extension [Self <: CardHeaderTitleModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderTitleModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object componentsCardCardHeaderTitleMod {
       __obj.asInstanceOf[CardHeaderTitleProps]
     }
     
-    extension [Self <: CardHeaderTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderTitleProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -328,7 +330,8 @@ object componentsCardCardHeaderTitleMod {
       __obj.asInstanceOf[CardHeaderTitleVariables]
     }
     
-    extension [Self <: CardHeaderTitleVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderTitleVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }
@@ -345,7 +348,8 @@ object componentsCardCardHeaderTitleMod {
       __obj.asInstanceOf[CardHeaderTitleVariablesDefaults]
     }
     
-    extension [Self <: CardHeaderTitleVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderTitleVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }

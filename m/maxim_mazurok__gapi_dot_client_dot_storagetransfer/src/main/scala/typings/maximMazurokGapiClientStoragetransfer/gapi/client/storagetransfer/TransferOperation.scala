@@ -43,7 +43,8 @@ object TransferOperation {
     __obj.asInstanceOf[TransferOperation]
   }
   
-  extension [Self <: TransferOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferOperation] (val x: Self) extends AnyVal {
     
     inline def setCounters(value: TransferCounters): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
     

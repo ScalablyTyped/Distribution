@@ -45,7 +45,8 @@ object distributionTypesOptionsMod {
       __obj.asInstanceOf[DownloadProgress]
     }
     
-    extension [Self <: DownloadProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadProgress] (val x: Self) extends AnyVal {
       
       inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object distributionTypesOptionsMod {
       __obj.asInstanceOf[InternalOptions]
     }
     
-    extension [Self <: InternalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -261,7 +263,8 @@ object distributionTypesOptionsMod {
       __obj.asInstanceOf[NormalizedOptions]
     }
     
-    extension [Self <: NormalizedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedOptions] (val x: Self) extends AnyVal {
       
       inline def setOnDownloadProgress(value: (/* progress */ DownloadProgress, /* chunk */ js.typedarray.Uint8Array) => Unit): Self = StObject.set(x, "onDownloadProgress", js.Any.fromFunction2(value))
       
@@ -464,7 +467,8 @@ object distributionTypesOptionsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

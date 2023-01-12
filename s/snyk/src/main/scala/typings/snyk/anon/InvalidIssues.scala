@@ -19,7 +19,8 @@ object InvalidIssues {
     __obj.asInstanceOf[InvalidIssues]
   }
   
-  extension [Self <: InvalidIssues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidIssues] (val x: Self) extends AnyVal {
     
     inline def setInvalidIssues(value: js.Array[IacFileInDirectory]): Self = StObject.set(x, "invalidIssues", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object AreaRectangleProps {
     __obj.asInstanceOf[AreaRectangleProps]
   }
   
-  extension [Self <: AreaRectangleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaRectangleProps] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

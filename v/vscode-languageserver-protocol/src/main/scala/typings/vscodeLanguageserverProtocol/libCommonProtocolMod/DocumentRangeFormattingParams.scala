@@ -33,7 +33,8 @@ object DocumentRangeFormattingParams {
     __obj.asInstanceOf[DocumentRangeFormattingParams]
   }
   
-  extension [Self <: DocumentRangeFormattingParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentRangeFormattingParams] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: FormattingOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

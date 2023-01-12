@@ -22,7 +22,8 @@ object GoogleCloudDatacatalogV1GcsFileSpec {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1GcsFileSpec]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1GcsFileSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1GcsFileSpec] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

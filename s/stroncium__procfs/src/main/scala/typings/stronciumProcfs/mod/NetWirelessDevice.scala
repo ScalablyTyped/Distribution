@@ -44,7 +44,8 @@ object NetWirelessDevice {
     __obj.asInstanceOf[NetWirelessDevice]
   }
   
-  extension [Self <: NetWirelessDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetWirelessDevice] (val x: Self) extends AnyVal {
     
     inline def setDiscardedCrypt(value: Double): Self = StObject.set(x, "discardedCrypt", value.asInstanceOf[js.Any])
     

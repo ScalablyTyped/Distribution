@@ -105,7 +105,8 @@ object typesSelectNativeSelectMod {
       __obj.asInstanceOf[NativeSelectProps]
     }
     
-    extension [Self <: NativeSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeSelectProps] (val x: Self) extends AnyVal {
       
       inline def setContainerRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
       

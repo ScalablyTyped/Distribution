@@ -25,7 +25,8 @@ object InitialStateConfig {
     __obj.asInstanceOf[InitialStateConfig]
   }
   
-  extension [Self <: InitialStateConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialStateConfig] (val x: Self) extends AnyVal {
     
     inline def setDbs(value: js.Array[FileContentBuffer]): Self = StObject.set(x, "dbs", value.asInstanceOf[js.Any])
     

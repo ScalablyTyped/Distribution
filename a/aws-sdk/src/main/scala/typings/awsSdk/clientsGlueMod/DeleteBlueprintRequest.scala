@@ -18,7 +18,8 @@ object DeleteBlueprintRequest {
     __obj.asInstanceOf[DeleteBlueprintRequest]
   }
   
-  extension [Self <: DeleteBlueprintRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBlueprintRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

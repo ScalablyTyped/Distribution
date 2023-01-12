@@ -97,7 +97,8 @@ object MediaControllerChangeRequestPlaybackInfoCallback {
     __obj.asInstanceOf[MediaControllerChangeRequestPlaybackInfoCallback]
   }
   
-  extension [Self <: MediaControllerChangeRequestPlaybackInfoCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerChangeRequestPlaybackInfoCallback] (val x: Self) extends AnyVal {
     
     inline def setOnplaybackitemrequest(value: (String, String, MediaControllerPlaybackState, Double, ApplicationId) => Unit): Self = StObject.set(x, "onplaybackitemrequest", js.Any.fromFunction5(value))
     

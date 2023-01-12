@@ -208,7 +208,8 @@ object libViewViewMod {
       __obj.asInstanceOf[ViewTuple]
     }
     
-    extension [Self <: ViewTuple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewTuple] (val x: Self) extends AnyVal {
       
       inline def setUiView(value: ActiveUIView): Self = StObject.set(x, "uiView", value.asInstanceOf[js.Any])
       

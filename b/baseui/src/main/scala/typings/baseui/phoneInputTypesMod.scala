@@ -33,7 +33,8 @@ object phoneInputTypesMod {
       __obj.asInstanceOf[Countries]
     }
     
-    extension [Self <: Countries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Countries] (val x: Self) extends AnyVal {
       
       inline def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object phoneInputTypesMod {
       __obj.asInstanceOf[Country]
     }
     
-    extension [Self <: Country](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
       
       inline def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
       
@@ -346,7 +348,8 @@ object phoneInputTypesMod {
       __obj.asInstanceOf[CountrySelectDropdownProps]
     }
     
-    extension [Self <: CountrySelectDropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountrySelectDropdownProps] (val x: Self) extends AnyVal {
       
       inline def set$country(value: Country): Self = StObject.set(x, "$country", value.asInstanceOf[js.Any])
       
@@ -414,7 +417,8 @@ object phoneInputTypesMod {
       __obj.asInstanceOf[CountrySelectProps]
     }
     
-    extension [Self <: CountrySelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountrySelectProps] (val x: Self) extends AnyVal {
       
       inline def setCountries(value: StringDictionary[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
@@ -473,7 +477,8 @@ object phoneInputTypesMod {
       __obj.asInstanceOf[PhoneInputLiteProps]
     }
     
-    extension [Self <: PhoneInputLiteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhoneInputLiteProps] (val x: Self) extends AnyVal {
       
       inline def setCountries(value: StringDictionary[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     }
@@ -510,7 +515,8 @@ object phoneInputTypesMod {
       __obj.asInstanceOf[PhoneInputOverrides]
     }
     
-    extension [Self <: PhoneInputOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhoneInputOverrides] (val x: Self) extends AnyVal {
       
       inline def setCountrySelect(value: Override[Any]): Self = StObject.set(x, "CountrySelect", value.asInstanceOf[js.Any])
       
@@ -639,7 +645,8 @@ object phoneInputTypesMod {
       __obj.asInstanceOf[PhoneInputProps]
     }
     
-    extension [Self <: PhoneInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhoneInputProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
@@ -730,7 +737,8 @@ object phoneInputTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: Country): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
@@ -779,7 +787,8 @@ object phoneInputTypesMod {
       __obj.asInstanceOf[StatefulPhoneInputContainerProps]
     }
     
-    extension [Self <: StatefulPhoneInputContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulPhoneInputContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: PhoneInputProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -819,7 +828,8 @@ object phoneInputTypesMod {
       __obj.asInstanceOf[StatefulPhoneInputProps]
     }
     
-    extension [Self <: StatefulPhoneInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulPhoneInputProps] (val x: Self) extends AnyVal {
       
       inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       

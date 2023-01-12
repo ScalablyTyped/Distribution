@@ -23,7 +23,8 @@ object GetOpsSummaryResult {
     __obj.asInstanceOf[GetOpsSummaryResult]
   }
   
-  extension [Self <: GetOpsSummaryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOpsSummaryResult] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: OpsEntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     

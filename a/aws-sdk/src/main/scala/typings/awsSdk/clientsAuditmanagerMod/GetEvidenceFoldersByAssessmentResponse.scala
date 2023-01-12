@@ -23,7 +23,8 @@ object GetEvidenceFoldersByAssessmentResponse {
     __obj.asInstanceOf[GetEvidenceFoldersByAssessmentResponse]
   }
   
-  extension [Self <: GetEvidenceFoldersByAssessmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEvidenceFoldersByAssessmentResponse] (val x: Self) extends AnyVal {
     
     inline def setEvidenceFolders(value: AssessmentEvidenceFolders): Self = StObject.set(x, "evidenceFolders", value.asInstanceOf[js.Any])
     

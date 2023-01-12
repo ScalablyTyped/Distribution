@@ -28,7 +28,8 @@ object GooglePrivacyDlpV2HotwordRule {
     __obj.asInstanceOf[GooglePrivacyDlpV2HotwordRule]
   }
   
-  extension [Self <: GooglePrivacyDlpV2HotwordRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2HotwordRule] (val x: Self) extends AnyVal {
     
     inline def setHotwordRegex(value: GooglePrivacyDlpV2Regex): Self = StObject.set(x, "hotwordRegex", value.asInstanceOf[js.Any])
     

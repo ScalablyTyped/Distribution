@@ -20,7 +20,8 @@ object IClientReceiptGetResponse {
     __obj.asInstanceOf[IClientReceiptGetResponse]
   }
   
-  extension [Self <: IClientReceiptGetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientReceiptGetResponse] (val x: Self) extends AnyVal {
     
     inline def setReceipts(value: js.Array[ITransactionReceipt]): Self = StObject.set(x, "receipts", value.asInstanceOf[js.Any])
     

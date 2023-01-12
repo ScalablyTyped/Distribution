@@ -32,7 +32,8 @@ object srcNetworksMod {
       __obj.asInstanceOf[Bip32]
     }
     
-    extension [Self <: Bip32](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bip32] (val x: Self) extends AnyVal {
       
       inline def setPrivate(value: Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object srcNetworksMod {
       __obj.asInstanceOf[Network]
     }
     
-    extension [Self <: Network](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
       
       inline def setBech32(value: String): Self = StObject.set(x, "bech32", value.asInstanceOf[js.Any])
       

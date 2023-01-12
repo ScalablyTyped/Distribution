@@ -22,7 +22,8 @@ object GoogleCloudRunV2SecretKeySelector {
     __obj.asInstanceOf[GoogleCloudRunV2SecretKeySelector]
   }
   
-  extension [Self <: GoogleCloudRunV2SecretKeySelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2SecretKeySelector] (val x: Self) extends AnyVal {
     
     inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ListGuardianInvitationsResponse {
     __obj.asInstanceOf[ListGuardianInvitationsResponse]
   }
   
-  extension [Self <: ListGuardianInvitationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGuardianInvitationsResponse] (val x: Self) extends AnyVal {
     
     inline def setGuardianInvitations(value: js.Array[GuardianInvitation]): Self = StObject.set(x, "guardianInvitations", value.asInstanceOf[js.Any])
     

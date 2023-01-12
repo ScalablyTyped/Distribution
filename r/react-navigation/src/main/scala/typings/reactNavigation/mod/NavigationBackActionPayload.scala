@@ -17,7 +17,8 @@ object NavigationBackActionPayload {
     __obj.asInstanceOf[NavigationBackActionPayload]
   }
   
-  extension [Self <: NavigationBackActionPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBackActionPayload] (val x: Self) extends AnyVal {
     
     inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ServiceMetadata {
     __obj.asInstanceOf[ServiceMetadata]
   }
   
-  extension [Self <: ServiceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceMetadata] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: NonEmptyString): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

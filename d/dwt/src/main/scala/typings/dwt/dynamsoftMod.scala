@@ -85,7 +85,8 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[Container]
     }
     
-    extension [Self <: Container](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
       
       inline def setBLocalService(value: Boolean): Self = StObject.set(x, "bLocalService", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[DSLibDetect]
     }
     
-    extension [Self <: DSLibDetect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DSLibDetect] (val x: Self) extends AnyVal {
       
       inline def setScriptLoaded(value: Boolean): Self = StObject.set(x, "scriptLoaded", value.asInstanceOf[js.Any])
       
@@ -295,7 +297,8 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[DSLibEnv]
     }
     
-    extension [Self <: DSLibEnv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DSLibEnv] (val x: Self) extends AnyVal {
       
       inline def setBChrome(value: Boolean): Self = StObject.set(x, "bChrome", value.asInstanceOf[js.Any])
       
@@ -366,7 +369,8 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[DWTInitialConfig]
     }
     
-    extension [Self <: DWTInitialConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DWTInitialConfig] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
       
@@ -403,7 +407,8 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[DisplayInfo]
     }
     
-    extension [Self <: DisplayInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayInfo] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -484,7 +489,8 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[DynamsoftLib]
     }
     
-    extension [Self <: DynamsoftLib](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamsoftLib] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (HTMLElement, String, EventListenerOrEventListenerObject) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
       
@@ -521,7 +527,8 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[ManagerEnv]
     }
     
-    extension [Self <: ManagerEnv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagerEnv] (val x: Self) extends AnyVal {
       
       inline def setIfUpdateService(value: Boolean): Self = StObject.set(x, "IfUpdateService", value.asInstanceOf[js.Any])
       
@@ -623,7 +630,8 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[Messages]
     }
     
-    extension [Self <: Messages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
       
       inline def setConvertingToBase64(value: String): Self = StObject.set(x, "ConvertingToBase64", value.asInstanceOf[js.Any])
       
@@ -711,7 +719,8 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[Product]
     }
     
-    extension [Self <: Product](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
       
       inline def setBActiveXEdition(value: Boolean): Self = StObject.set(x, "bActiveXEdition", value.asInstanceOf[js.Any])
       

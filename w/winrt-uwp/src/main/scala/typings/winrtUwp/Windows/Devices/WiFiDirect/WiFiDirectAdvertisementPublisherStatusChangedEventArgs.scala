@@ -20,7 +20,8 @@ object WiFiDirectAdvertisementPublisherStatusChangedEventArgs {
     __obj.asInstanceOf[WiFiDirectAdvertisementPublisherStatusChangedEventArgs]
   }
   
-  extension [Self <: WiFiDirectAdvertisementPublisherStatusChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiDirectAdvertisementPublisherStatusChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setError(value: WiFiDirectError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

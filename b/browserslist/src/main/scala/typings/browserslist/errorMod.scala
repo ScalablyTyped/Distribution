@@ -46,7 +46,8 @@ object errorMod {
       __obj.asInstanceOf[BrowserslistError]
     }
     
-    extension [Self <: BrowserslistError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserslistError] (val x: Self) extends AnyVal {
       
       inline def setBrowserslist(value: `true`): Self = StObject.set(x, "browserslist", value.asInstanceOf[js.Any])
       

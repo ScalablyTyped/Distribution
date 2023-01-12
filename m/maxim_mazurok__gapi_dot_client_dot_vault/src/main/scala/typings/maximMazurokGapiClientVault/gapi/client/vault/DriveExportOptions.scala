@@ -16,7 +16,8 @@ object DriveExportOptions {
     __obj.asInstanceOf[DriveExportOptions]
   }
   
-  extension [Self <: DriveExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveExportOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeAccessInfo(value: Boolean): Self = StObject.set(x, "includeAccessInfo", value.asInstanceOf[js.Any])
     

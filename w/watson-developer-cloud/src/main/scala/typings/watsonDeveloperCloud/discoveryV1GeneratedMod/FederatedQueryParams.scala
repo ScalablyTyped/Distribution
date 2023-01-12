@@ -84,7 +84,8 @@ object FederatedQueryParams {
     __obj.asInstanceOf[FederatedQueryParams]
   }
   
-  extension [Self <: FederatedQueryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FederatedQueryParams] (val x: Self) extends AnyVal {
     
     inline def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     

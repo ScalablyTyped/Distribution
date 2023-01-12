@@ -49,7 +49,8 @@ object ViewPropsdateProfileDateP {
     __obj.asInstanceOf[ViewPropsdateProfileDateP]
   }
   
-  extension [Self <: ViewPropsdateProfileDateP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPropsdateProfileDateP] (val x: Self) extends AnyVal {
     
     inline def setBusinessHours(value: typings.fullcalendarCommon.mod.EventStore): Self = StObject.set(x, "businessHours", value.asInstanceOf[js.Any])
     

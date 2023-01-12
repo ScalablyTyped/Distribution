@@ -153,7 +153,8 @@ object interfacesPolicyInterfacesMod {
       __obj.asInstanceOf[PolicyConfiguration]
     }
     
-    extension [Self <: PolicyConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
@@ -196,7 +197,8 @@ object interfacesPolicyInterfacesMod {
       __obj.asInstanceOf[PolicyConfigurationRef]
     }
     
-    extension [Self <: PolicyConfigurationRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyConfigurationRef] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -264,7 +266,8 @@ object interfacesPolicyInterfacesMod {
       __obj.asInstanceOf[PolicyEvaluationRecord]
     }
     
-    extension [Self <: PolicyEvaluationRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyEvaluationRecord] (val x: Self) extends AnyVal {
       
       inline def setArtifactId(value: String): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
       
@@ -305,7 +308,8 @@ object interfacesPolicyInterfacesMod {
       __obj.asInstanceOf[PolicyType]
     }
     
-    extension [Self <: PolicyType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyType] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -337,7 +341,8 @@ object interfacesPolicyInterfacesMod {
       __obj.asInstanceOf[PolicyTypeRef]
     }
     
-    extension [Self <: PolicyTypeRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyTypeRef] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -364,7 +369,8 @@ object interfacesPolicyInterfacesMod {
       __obj.asInstanceOf[VersionedPolicyConfigurationRef]
     }
     
-    extension [Self <: VersionedPolicyConfigurationRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionedPolicyConfigurationRef] (val x: Self) extends AnyVal {
       
       inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     }

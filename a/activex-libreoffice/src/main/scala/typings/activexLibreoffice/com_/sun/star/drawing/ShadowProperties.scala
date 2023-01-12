@@ -40,7 +40,8 @@ object ShadowProperties {
     __obj.asInstanceOf[ShadowProperties]
   }
   
-  extension [Self <: ShadowProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowProperties] (val x: Self) extends AnyVal {
     
     inline def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     

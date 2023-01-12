@@ -20,7 +20,8 @@ object ElseClause_ {
     __obj.asInstanceOf[ElseClause_]
   }
   
-  extension [Self <: ElseClause_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElseClause_] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

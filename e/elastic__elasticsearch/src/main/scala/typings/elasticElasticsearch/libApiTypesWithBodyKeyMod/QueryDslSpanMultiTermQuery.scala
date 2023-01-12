@@ -18,7 +18,8 @@ object QueryDslSpanMultiTermQuery {
     __obj.asInstanceOf[QueryDslSpanMultiTermQuery]
   }
   
-  extension [Self <: QueryDslSpanMultiTermQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslSpanMultiTermQuery] (val x: Self) extends AnyVal {
     
     inline def setMatch(value: QueryDslQueryContainer): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
   }

@@ -60,7 +60,8 @@ object SelectChangeEventDataeven {
     __obj.asInstanceOf[SelectChangeEventDataeven]
   }
   
-  extension [Self <: SelectChangeEventDataeven](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectChangeEventDataeven] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Poi]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

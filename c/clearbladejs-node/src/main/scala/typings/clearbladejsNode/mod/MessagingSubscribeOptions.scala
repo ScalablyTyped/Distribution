@@ -17,7 +17,8 @@ object MessagingSubscribeOptions {
     __obj.asInstanceOf[MessagingSubscribeOptions]
   }
   
-  extension [Self <: MessagingSubscribeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagingSubscribeOptions] (val x: Self) extends AnyVal {
     
     inline def setQos(value: MessagingQOS): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
     

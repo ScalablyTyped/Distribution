@@ -20,7 +20,8 @@ object PeerProtocolsChangeData {
     __obj.asInstanceOf[PeerProtocolsChangeData]
   }
   
-  extension [Self <: PeerProtocolsChangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerProtocolsChangeData] (val x: Self) extends AnyVal {
     
     inline def setOldProtocols(value: js.Array[String]): Self = StObject.set(x, "oldProtocols", value.asInstanceOf[js.Any])
     

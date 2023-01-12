@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Tip]
     }
     
-    extension [Self <: Tip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tip] (val x: Self) extends AnyVal {
       
       inline def setTip(value: typings.amapJsApiAutocomplete.AMap.Autocomplete.Tip): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
     }

@@ -20,7 +20,8 @@ object NavigateBackMiniProgramOptions {
     __obj.asInstanceOf[NavigateBackMiniProgramOptions]
   }
   
-  extension [Self <: NavigateBackMiniProgramOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateBackMiniProgramOptions] (val x: Self) extends AnyVal {
     
     inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     

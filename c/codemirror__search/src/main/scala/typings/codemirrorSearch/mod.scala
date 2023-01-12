@@ -498,7 +498,8 @@ object mod {
       __obj.asInstanceOf[HighlightOptions]
     }
     
-    extension [Self <: HighlightOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightOptions] (val x: Self) extends AnyVal {
       
       inline def setHighlightWordAroundCursor(value: Boolean): Self = StObject.set(x, "highlightWordAroundCursor", value.asInstanceOf[js.Any])
       
@@ -533,7 +534,8 @@ object mod {
       __obj.asInstanceOf[RegExpCursorOptions]
     }
     
-    extension [Self <: RegExpCursorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegExpCursorOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
@@ -595,7 +597,8 @@ object mod {
       __obj.asInstanceOf[SearchConfig]
     }
     
-    extension [Self <: SearchConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchConfig] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       

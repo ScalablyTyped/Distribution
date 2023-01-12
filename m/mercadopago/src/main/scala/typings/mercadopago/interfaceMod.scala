@@ -71,7 +71,8 @@ object interfaceMod {
       __obj.asInstanceOf[MercadoPago]
     }
     
-    extension [Self <: MercadoPago](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MercadoPago] (val x: Self) extends AnyVal {
       
       inline def setCard(value: MercadoPagoCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       

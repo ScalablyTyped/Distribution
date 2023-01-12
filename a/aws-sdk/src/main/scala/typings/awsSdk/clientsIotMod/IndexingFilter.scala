@@ -18,7 +18,8 @@ object IndexingFilter {
     __obj.asInstanceOf[IndexingFilter]
   }
   
-  extension [Self <: IndexingFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexingFilter] (val x: Self) extends AnyVal {
     
     inline def setNamedShadowNames(value: NamedShadowNamesFilter): Self = StObject.set(x, "namedShadowNames", value.asInstanceOf[js.Any])
     

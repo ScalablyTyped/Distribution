@@ -48,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Array]
     }
     
-    extension [Self <: Array](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
       
       inline def setArray(value: ValidateMessage[js.Tuple2[FullField, Type]]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: ValidateMessage[js.Array[Any]]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -184,7 +186,8 @@ object anon {
       __obj.asInstanceOf[Len]
     }
     
-    extension [Self <: Len](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Len] (val x: Self) extends AnyVal {
       
       inline def setLen(value: ValidateMessage[js.Tuple2[FullField, Range]]): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
       
@@ -223,7 +226,8 @@ object anon {
       __obj.asInstanceOf[Mismatch]
     }
     
-    extension [Self <: Mismatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mismatch] (val x: Self) extends AnyVal {
       
       inline def setMismatch(value: ValidateMessage[js.Tuple3[FullField, Value, Pattern]]): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
       
@@ -263,7 +267,8 @@ object anon {
       __obj.asInstanceOf[PartialValidateMessages]
     }
     
-    extension [Self <: PartialValidateMessages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialValidateMessages] (val x: Self) extends AnyVal {
       
       inline def setArray(value: Len): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       

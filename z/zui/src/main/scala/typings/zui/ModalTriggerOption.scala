@@ -68,7 +68,8 @@ object ModalTriggerOption {
     __obj.asInstanceOf[ModalTriggerOption]
   }
   
-  extension [Self <: ModalTriggerOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalTriggerOption] (val x: Self) extends AnyVal {
     
     inline def setBackdrop(value: Boolean): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object PlotDependencywheelOnPointOptions {
     __obj.asInstanceOf[PlotDependencywheelOnPointOptions]
   }
   
-  extension [Self <: PlotDependencywheelOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDependencywheelOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotDependencywheelOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

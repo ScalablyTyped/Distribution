@@ -21,7 +21,8 @@ object TBodyOpenToken {
     __obj.asInstanceOf[TBodyOpenToken]
   }
   
-  extension [Self <: TBodyOpenToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TBodyOpenToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: tbody_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

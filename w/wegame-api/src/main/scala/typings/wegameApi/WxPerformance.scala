@@ -18,7 +18,8 @@ object WxPerformance {
     __obj.asInstanceOf[WxPerformance]
   }
   
-  extension [Self <: WxPerformance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WxPerformance] (val x: Self) extends AnyVal {
     
     inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
   }

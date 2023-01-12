@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[AsyncFunction]
     }
     
-    extension [Self <: AsyncFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncFunction] (val x: Self) extends AnyVal {
       
       inline def setAsyncFunction(value: String): Self = StObject.set(x, "AsyncFunction", value.asInstanceOf[js.Any])
       

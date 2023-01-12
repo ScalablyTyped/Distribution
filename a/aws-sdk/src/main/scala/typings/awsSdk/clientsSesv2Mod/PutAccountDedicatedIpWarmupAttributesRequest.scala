@@ -18,7 +18,8 @@ object PutAccountDedicatedIpWarmupAttributesRequest {
     __obj.asInstanceOf[PutAccountDedicatedIpWarmupAttributesRequest]
   }
   
-  extension [Self <: PutAccountDedicatedIpWarmupAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAccountDedicatedIpWarmupAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoWarmupEnabled(value: Enabled): Self = StObject.set(x, "AutoWarmupEnabled", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object EmailMailboxAutoReply {
     __obj.asInstanceOf[EmailMailboxAutoReply]
   }
   
-  extension [Self <: EmailMailboxAutoReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMailboxAutoReply] (val x: Self) extends AnyVal {
     
     inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     

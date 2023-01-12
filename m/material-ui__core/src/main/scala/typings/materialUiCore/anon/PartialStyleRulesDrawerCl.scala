@@ -65,7 +65,8 @@ object PartialStyleRulesDrawerCl {
     __obj.asInstanceOf[PartialStyleRulesDrawerCl]
   }
   
-  extension [Self <: PartialStyleRulesDrawerCl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesDrawerCl] (val x: Self) extends AnyVal {
     
     inline def setDocked(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

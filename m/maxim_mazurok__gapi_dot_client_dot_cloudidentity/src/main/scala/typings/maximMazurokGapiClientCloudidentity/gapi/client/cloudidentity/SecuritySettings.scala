@@ -19,7 +19,8 @@ object SecuritySettings {
     __obj.asInstanceOf[SecuritySettings]
   }
   
-  extension [Self <: SecuritySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySettings] (val x: Self) extends AnyVal {
     
     inline def setMemberRestriction(value: MemberRestriction): Self = StObject.set(x, "memberRestriction", value.asInstanceOf[js.Any])
     

@@ -108,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Arrow]
     }
     
-    extension [Self <: Arrow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arrow] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: Boolean): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
@@ -221,7 +222,8 @@ object anon {
       __obj.asInstanceOf[Chrome]
     }
     
-    extension [Self <: Chrome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chrome] (val x: Self) extends AnyVal {
       
       inline def setChrome(
         value: `48` | `49` | `50` | `51` | `52` | `53` | `54` | `55` | `56` | `57` | `58` | `59` | `60` | `61` | `62` | `63` | `64` | `65` | `66` | `67` | `68` | `69` | `70` | `71`

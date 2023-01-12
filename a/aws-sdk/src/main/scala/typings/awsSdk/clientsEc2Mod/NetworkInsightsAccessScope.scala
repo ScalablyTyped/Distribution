@@ -38,7 +38,8 @@ object NetworkInsightsAccessScope {
     __obj.asInstanceOf[NetworkInsightsAccessScope]
   }
   
-  extension [Self <: NetworkInsightsAccessScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInsightsAccessScope] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     

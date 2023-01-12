@@ -20,7 +20,8 @@ object FStepSize {
     __obj.asInstanceOf[FStepSize]
   }
   
-  extension [Self <: FStepSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FStepSize] (val x: Self) extends AnyVal {
     
     inline def setFStepSize(value: IUniform[Any]): Self = StObject.set(x, "fStepSize", value.asInstanceOf[js.Any])
     

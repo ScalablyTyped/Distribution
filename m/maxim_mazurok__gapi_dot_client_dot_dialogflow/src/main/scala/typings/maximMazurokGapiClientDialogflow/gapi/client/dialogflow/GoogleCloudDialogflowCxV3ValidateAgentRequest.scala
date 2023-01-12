@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3ValidateAgentRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ValidateAgentRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ValidateAgentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ValidateAgentRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

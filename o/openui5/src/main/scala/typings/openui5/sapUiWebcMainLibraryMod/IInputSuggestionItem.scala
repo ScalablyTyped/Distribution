@@ -15,7 +15,8 @@ object IInputSuggestionItem {
     __obj.asInstanceOf[IInputSuggestionItem]
   }
   
-  extension [Self <: IInputSuggestionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInputSuggestionItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_main_IInputSuggestionItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_main_IInputSuggestionItem", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object OauthErrorOptions {
     __obj.asInstanceOf[OauthErrorOptions]
   }
   
-  extension [Self <: OauthErrorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OauthErrorOptions] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

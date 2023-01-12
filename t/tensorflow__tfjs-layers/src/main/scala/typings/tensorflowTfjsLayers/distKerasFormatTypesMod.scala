@@ -23,7 +23,8 @@ object distKerasFormatTypesMod {
       __obj.asInstanceOf[BaseSerialization[N, T]]
     }
     
-    extension [Self <: BaseSerialization[?, ?], N /* <: String */, T /* <: PyJson[Extract[/* keyof T */ String, String]] */](x: Self & (BaseSerialization[N, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSerialization[?, ?], N /* <: String */, T /* <: PyJson[Extract[/* keyof T */ String, String]] */] (val x: Self & (BaseSerialization[N, T])) extends AnyVal {
       
       inline def setClass_name(value: N): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
       

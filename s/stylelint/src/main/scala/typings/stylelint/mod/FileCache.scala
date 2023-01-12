@@ -29,7 +29,8 @@ object FileCache {
     __obj.asInstanceOf[FileCache]
   }
   
-  extension [Self <: FileCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileCache] (val x: Self) extends AnyVal {
     
     inline def setCalcHashOfConfig(value: Config => Unit): Self = StObject.set(x, "calcHashOfConfig", js.Any.fromFunction1(value))
     

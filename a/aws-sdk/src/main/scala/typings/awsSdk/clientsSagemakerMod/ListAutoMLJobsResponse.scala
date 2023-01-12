@@ -23,7 +23,8 @@ object ListAutoMLJobsResponse {
     __obj.asInstanceOf[ListAutoMLJobsResponse]
   }
   
-  extension [Self <: ListAutoMLJobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAutoMLJobsResponse] (val x: Self) extends AnyVal {
     
     inline def setAutoMLJobSummaries(value: AutoMLJobSummaries): Self = StObject.set(x, "AutoMLJobSummaries", value.asInstanceOf[js.Any])
     

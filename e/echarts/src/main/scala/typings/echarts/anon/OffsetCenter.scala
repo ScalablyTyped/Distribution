@@ -324,7 +324,8 @@ object OffsetCenter {
     __obj.asInstanceOf[OffsetCenter]
   }
   
-  extension [Self <: OffsetCenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffsetCenter] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: js.Object | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

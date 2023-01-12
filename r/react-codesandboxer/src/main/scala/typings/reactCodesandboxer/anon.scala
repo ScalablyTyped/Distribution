@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -53,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Files]
     }
     
-    extension [Self <: Files](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: typings.reactCodesandboxer.mod.Files): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -78,7 +81,8 @@ object anon {
       __obj.asInstanceOf[IsLoading]
     }
     
-    extension [Self <: IsLoading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsLoading] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: typings.reactCodesandboxer.mod.Files): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       

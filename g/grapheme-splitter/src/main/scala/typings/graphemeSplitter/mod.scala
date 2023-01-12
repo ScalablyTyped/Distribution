@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[GraphemeSplitter]
     }
     
-    extension [Self <: GraphemeSplitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphemeSplitter] (val x: Self) extends AnyVal {
       
       inline def setCountGraphemes(value: String => Double): Self = StObject.set(x, "countGraphemes", js.Any.fromFunction1(value))
       

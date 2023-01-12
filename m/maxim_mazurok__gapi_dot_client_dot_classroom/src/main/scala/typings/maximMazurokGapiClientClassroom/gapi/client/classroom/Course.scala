@@ -80,7 +80,8 @@ object Course {
     __obj.asInstanceOf[Course]
   }
   
-  extension [Self <: Course](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Course] (val x: Self) extends AnyVal {
     
     inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
     

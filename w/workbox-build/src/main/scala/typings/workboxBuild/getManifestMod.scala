@@ -127,7 +127,8 @@ object getManifestMod {
       __obj.asInstanceOf[GetManifestConfig]
     }
     
-    extension [Self <: GetManifestConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetManifestConfig] (val x: Self) extends AnyVal {
       
       inline def setAdditionalManifestEntries(value: js.Array[ManifestEntry]): Self = StObject.set(x, "additionalManifestEntries", value.asInstanceOf[js.Any])
       

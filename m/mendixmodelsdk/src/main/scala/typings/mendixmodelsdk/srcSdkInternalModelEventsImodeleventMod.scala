@@ -27,7 +27,8 @@ object srcSdkInternalModelEventsImodeleventMod {
       __obj.asInstanceOf[IDeltaEvent]
     }
     
-    extension [Self <: IDeltaEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDeltaEvent] (val x: Self) extends AnyVal {
       
       inline def setDeltas(value: js.Array[Delta]): Self = StObject.set(x, "deltas", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object srcSdkInternalModelEventsImodeleventMod {
       __obj.asInstanceOf[IFileEvent]
     }
     
-    extension [Self <: IFileEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileEvent] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       

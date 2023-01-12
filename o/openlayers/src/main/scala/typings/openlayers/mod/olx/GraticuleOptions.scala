@@ -38,7 +38,8 @@ object GraticuleOptions {
     __obj.asInstanceOf[GraticuleOptions]
   }
   
-  extension [Self <: GraticuleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraticuleOptions] (val x: Self) extends AnyVal {
     
     inline def setLatLabelFormatter(value: /* lat */ Double => String): Self = StObject.set(x, "latLabelFormatter", js.Any.fromFunction1(value))
     

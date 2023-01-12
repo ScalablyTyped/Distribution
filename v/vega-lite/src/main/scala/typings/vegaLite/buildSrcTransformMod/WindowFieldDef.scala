@@ -37,7 +37,8 @@ object WindowFieldDef {
     __obj.asInstanceOf[WindowFieldDef]
   }
   
-  extension [Self <: WindowFieldDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowFieldDef] (val x: Self) extends AnyVal {
     
     inline def setAs(value: FieldName): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

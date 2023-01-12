@@ -34,7 +34,8 @@ object MailEnvelopeObject {
     __obj.asInstanceOf[MailEnvelopeObject]
   }
   
-  extension [Self <: MailEnvelopeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailEnvelopeObject] (val x: Self) extends AnyVal {
     
     inline def setBCC(value: String): Self = StObject.set(x, "BCC", value.asInstanceOf[js.Any])
     

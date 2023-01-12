@@ -145,7 +145,8 @@ object EmbeddedLineChartBuilder {
     __obj.asInstanceOf[EmbeddedLineChartBuilder]
   }
   
-  extension [Self <: EmbeddedLineChartBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedLineChartBuilder] (val x: Self) extends AnyVal {
     
     inline def setAddRange(value: Range => EmbeddedChartBuilder): Self = StObject.set(x, "addRange", js.Any.fromFunction1(value))
     

@@ -30,7 +30,8 @@ object Lnglat {
     __obj.asInstanceOf[Lnglat[I]]
   }
   
-  extension [Self <: Lnglat[?], I](x: Self & Lnglat[I]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lnglat[?], I] (val x: Self & Lnglat[I]) extends AnyVal {
     
     inline def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
     

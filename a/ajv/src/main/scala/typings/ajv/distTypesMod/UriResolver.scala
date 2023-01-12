@@ -24,7 +24,8 @@ object UriResolver {
     __obj.asInstanceOf[UriResolver]
   }
   
-  extension [Self <: UriResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UriResolver] (val x: Self) extends AnyVal {
     
     inline def setParse(value: String => URIComponents): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     

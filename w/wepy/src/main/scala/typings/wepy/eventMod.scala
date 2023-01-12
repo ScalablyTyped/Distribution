@@ -42,7 +42,8 @@ object eventMod {
       __obj.asInstanceOf[event]
     }
     
-    extension [Self <: event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: event] (val x: Self) extends AnyVal {
       
       inline def set$destroy(value: () => Unit): Self = StObject.set(x, "$destroy", js.Any.fromFunction0(value))
       

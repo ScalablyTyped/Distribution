@@ -311,7 +311,8 @@ object JQuerySlickOptions {
     __obj.asInstanceOf[JQuerySlickOptions]
   }
   
-  extension [Self <: JQuerySlickOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuerySlickOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: Boolean): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

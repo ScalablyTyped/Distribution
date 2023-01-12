@@ -17,7 +17,8 @@ object MagnetometerReadingChangedEventArgs {
     __obj.asInstanceOf[MagnetometerReadingChangedEventArgs]
   }
   
-  extension [Self <: MagnetometerReadingChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagnetometerReadingChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReading(value: MagnetometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }

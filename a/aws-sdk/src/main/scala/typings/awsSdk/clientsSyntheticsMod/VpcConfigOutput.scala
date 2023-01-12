@@ -28,7 +28,8 @@ object VpcConfigOutput {
     __obj.asInstanceOf[VpcConfigOutput]
   }
   
-  extension [Self <: VpcConfigOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcConfigOutput] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroupIds(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     

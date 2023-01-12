@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Category]
     }
     
-    extension [Self <: Category](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Issuets]
     }
     
-    extension [Self <: Issuets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Issuets] (val x: Self) extends AnyVal {
       
       inline def setIssue_ts(value: Double): Self = StObject.set(x, "issue_ts", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Linkedid]
     }
     
-    extension [Self <: Linkedid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Linkedid] (val x: Self) extends AnyVal {
       
       inline def setLinked_id(value: Double): Self = StObject.set(x, "linked_id", value.asInstanceOf[js.Any])
     }
@@ -102,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Mappings]
     }
     
-    extension [Self <: Mappings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mappings] (val x: Self) extends AnyVal {
       
       inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object SharedAppMessage {
     __obj.asInstanceOf[SharedAppMessage]
   }
   
-  extension [Self <: SharedAppMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedAppMessage] (val x: Self) extends AnyVal {
     
     inline def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
     

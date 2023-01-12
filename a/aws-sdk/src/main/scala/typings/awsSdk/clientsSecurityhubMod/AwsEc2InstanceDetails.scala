@@ -73,7 +73,8 @@ object AwsEc2InstanceDetails {
     __obj.asInstanceOf[AwsEc2InstanceDetails]
   }
   
-  extension [Self <: AwsEc2InstanceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2InstanceDetails] (val x: Self) extends AnyVal {
     
     inline def setIamInstanceProfileArn(value: NonEmptyString): Self = StObject.set(x, "IamInstanceProfileArn", value.asInstanceOf[js.Any])
     

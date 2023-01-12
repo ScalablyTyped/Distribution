@@ -954,7 +954,8 @@ object mod {
         __obj.asInstanceOf[typings.infernoCompat.mod.global.Event]
       }
       
-      extension [Self <: typings.infernoCompat.mod.global.Event](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.infernoCompat.mod.global.Event] (val x: Self) extends AnyVal {
         
         inline def setPersist(value: js.Function): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
       }

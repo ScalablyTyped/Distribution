@@ -49,7 +49,8 @@ object libTypescriptElementsStopMod {
       __obj.asInstanceOf[StopProps]
     }
     
-    extension [Self <: StopProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StopProps] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: NumberProp): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

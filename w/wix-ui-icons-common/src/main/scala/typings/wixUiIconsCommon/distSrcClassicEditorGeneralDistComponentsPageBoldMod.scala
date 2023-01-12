@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsPageBoldMod extends Shortcut {
       __obj.asInstanceOf[PageBoldProps]
     }
     
-    extension [Self <: PageBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

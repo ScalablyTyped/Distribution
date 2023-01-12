@@ -19,7 +19,8 @@ object CodespacenameExportid {
     __obj.asInstanceOf[CodespacenameExportid]
   }
   
-  extension [Self <: CodespacenameExportid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodespacenameExportid] (val x: Self) extends AnyVal {
     
     inline def setCodespace_name(value: String): Self = StObject.set(x, "codespace_name", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object esStyleHeaderMod {
       __obj.asInstanceOf[ProLayoutHeaderToken]
     }
     
-    extension [Self <: ProLayoutHeaderToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProLayoutHeaderToken] (val x: Self) extends AnyVal {
       
       inline def setComponentCls(value: String): Self = StObject.set(x, "componentCls", value.asInstanceOf[js.Any])
       

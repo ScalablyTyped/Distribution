@@ -29,7 +29,8 @@ object ContactHoverEvent {
     __obj.asInstanceOf[ContactHoverEvent]
   }
   
-  extension [Self <: ContactHoverEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactHoverEvent] (val x: Self) extends AnyVal {
     
     inline def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

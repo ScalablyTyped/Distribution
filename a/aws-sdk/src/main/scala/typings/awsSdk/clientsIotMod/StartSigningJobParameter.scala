@@ -28,7 +28,8 @@ object StartSigningJobParameter {
     __obj.asInstanceOf[StartSigningJobParameter]
   }
   
-  extension [Self <: StartSigningJobParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSigningJobParameter] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: Destination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

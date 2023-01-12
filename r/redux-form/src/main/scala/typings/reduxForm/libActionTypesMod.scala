@@ -125,7 +125,8 @@ object libActionTypesMod {
       __obj.asInstanceOf[ActionTypes_]
     }
     
-    extension [Self <: ActionTypes_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionTypes_] (val x: Self) extends AnyVal {
       
       inline def setARRAY_INSERT(value: String): Self = StObject.set(x, "ARRAY_INSERT", value.asInstanceOf[js.Any])
       

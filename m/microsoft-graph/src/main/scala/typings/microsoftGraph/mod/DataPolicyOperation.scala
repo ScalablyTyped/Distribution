@@ -39,7 +39,8 @@ object DataPolicyOperation {
     __obj.asInstanceOf[DataPolicyOperation]
   }
   
-  extension [Self <: DataPolicyOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPolicyOperation] (val x: Self) extends AnyVal {
     
     inline def setCompletedDateTime(value: NullableOption[String]): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
     

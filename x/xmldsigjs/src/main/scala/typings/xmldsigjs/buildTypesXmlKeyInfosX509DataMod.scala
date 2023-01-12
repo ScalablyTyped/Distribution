@@ -156,7 +156,8 @@ object buildTypesXmlKeyInfosX509DataMod {
       __obj.asInstanceOf[IX509IssuerSerial]
     }
     
-    extension [Self <: IX509IssuerSerial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IX509IssuerSerial] (val x: Self) extends AnyVal {
       
       inline def setIssuerName(value: String): Self = StObject.set(x, "issuerName", value.asInstanceOf[js.Any])
       

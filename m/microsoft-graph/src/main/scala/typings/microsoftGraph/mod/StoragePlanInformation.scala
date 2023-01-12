@@ -16,7 +16,8 @@ object StoragePlanInformation {
     __obj.asInstanceOf[StoragePlanInformation]
   }
   
-  extension [Self <: StoragePlanInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoragePlanInformation] (val x: Self) extends AnyVal {
     
     inline def setUpgradeAvailable(value: NullableOption[Boolean]): Self = StObject.set(x, "upgradeAvailable", value.asInstanceOf[js.Any])
     

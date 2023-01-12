@@ -28,7 +28,8 @@ object DefaultHyperParameterRanges {
     __obj.asInstanceOf[DefaultHyperParameterRanges]
   }
   
-  extension [Self <: DefaultHyperParameterRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultHyperParameterRanges] (val x: Self) extends AnyVal {
     
     inline def setCategoricalHyperParameterRanges(value: DefaultCategoricalHyperParameterRanges): Self = StObject.set(x, "categoricalHyperParameterRanges", value.asInstanceOf[js.Any])
     

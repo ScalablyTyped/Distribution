@@ -48,7 +48,8 @@ object PersonalResultSuggestion {
     __obj.asInstanceOf[PersonalResultSuggestion]
   }
   
-  extension [Self <: PersonalResultSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersonalResultSuggestion] (val x: Self) extends AnyVal {
     
     inline def setGet_highlightedTitle(value: () => String): Self = StObject.set(x, "get_highlightedTitle", js.Any.fromFunction0(value))
     

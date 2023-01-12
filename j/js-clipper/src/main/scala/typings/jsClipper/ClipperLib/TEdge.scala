@@ -83,7 +83,8 @@ object TEdge {
     __obj.asInstanceOf[TEdge]
   }
   
-  extension [Self <: TEdge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TEdge] (val x: Self) extends AnyVal {
     
     inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     

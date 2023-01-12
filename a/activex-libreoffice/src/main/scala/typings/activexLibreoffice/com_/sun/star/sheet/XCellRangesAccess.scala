@@ -66,7 +66,8 @@ object XCellRangesAccess {
     __obj.asInstanceOf[XCellRangesAccess]
   }
   
-  extension [Self <: XCellRangesAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCellRangesAccess] (val x: Self) extends AnyVal {
     
     inline def setGetCellByPosition(value: (Double, Double, Double) => XCell): Self = StObject.set(x, "getCellByPosition", js.Any.fromFunction3(value))
     

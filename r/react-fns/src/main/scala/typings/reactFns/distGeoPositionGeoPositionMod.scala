@@ -51,7 +51,8 @@ object distGeoPositionGeoPositionMod {
       __obj.asInstanceOf[GeoPositionProps]
     }
     
-    extension [Self <: GeoPositionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoPositionProps] (val x: Self) extends AnyVal {
       
       inline def setCoords(value: Latitude): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       

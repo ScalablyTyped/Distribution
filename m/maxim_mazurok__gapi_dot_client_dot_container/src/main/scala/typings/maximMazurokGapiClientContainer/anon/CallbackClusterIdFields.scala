@@ -66,7 +66,8 @@ object CallbackClusterIdFields {
     __obj.asInstanceOf[CallbackClusterIdFields]
   }
   
-  extension [Self <: CallbackClusterIdFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackClusterIdFields] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

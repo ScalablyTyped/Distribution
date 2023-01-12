@@ -38,7 +38,8 @@ object UpdateAnalysisResponse {
     __obj.asInstanceOf[UpdateAnalysisResponse]
   }
   
-  extension [Self <: UpdateAnalysisResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAnalysisResponse] (val x: Self) extends AnyVal {
     
     inline def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     

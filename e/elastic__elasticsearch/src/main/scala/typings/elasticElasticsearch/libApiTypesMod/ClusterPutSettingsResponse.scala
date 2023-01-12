@@ -20,7 +20,8 @@ object ClusterPutSettingsResponse {
     __obj.asInstanceOf[ClusterPutSettingsResponse]
   }
   
-  extension [Self <: ClusterPutSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterPutSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

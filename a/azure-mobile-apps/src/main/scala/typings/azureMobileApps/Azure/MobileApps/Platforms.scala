@@ -22,7 +22,8 @@ object Platforms {
         __obj.asInstanceOf[Api]
       }
       
-      extension [Self <: Api](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
         
         inline def setAdd(value: (String, ApiDefinition) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
         

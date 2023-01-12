@@ -24,7 +24,8 @@ object BaseBandScale {
     __obj.asInstanceOf[BaseBandScale]
   }
   
-  extension [Self <: BaseBandScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseBandScale] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double | SignalRef): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

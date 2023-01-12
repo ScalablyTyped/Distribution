@@ -18,7 +18,8 @@ object ZendeskSourceProperties {
     __obj.asInstanceOf[ZendeskSourceProperties]
   }
   
-  extension [Self <: ZendeskSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZendeskSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Object): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
   }

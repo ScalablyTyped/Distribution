@@ -28,7 +28,8 @@ object RotationRulesType {
     __obj.asInstanceOf[RotationRulesType]
   }
   
-  extension [Self <: RotationRulesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotationRulesType] (val x: Self) extends AnyVal {
     
     inline def setAutomaticallyAfterDays(value: AutomaticallyRotateAfterDaysType): Self = StObject.set(x, "AutomaticallyAfterDays", value.asInstanceOf[js.Any])
     

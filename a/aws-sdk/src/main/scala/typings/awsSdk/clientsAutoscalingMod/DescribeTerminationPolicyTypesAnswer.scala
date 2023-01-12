@@ -18,7 +18,8 @@ object DescribeTerminationPolicyTypesAnswer {
     __obj.asInstanceOf[DescribeTerminationPolicyTypesAnswer]
   }
   
-  extension [Self <: DescribeTerminationPolicyTypesAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTerminationPolicyTypesAnswer] (val x: Self) extends AnyVal {
     
     inline def setTerminationPolicyTypes(value: TerminationPolicies): Self = StObject.set(x, "TerminationPolicyTypes", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[Through2MapOptions]
     }
     
-    extension [Self <: Through2MapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Through2MapOptions] (val x: Self) extends AnyVal {
       
       inline def setWantStrings(value: Boolean): Self = StObject.set(x, "wantStrings", value.asInstanceOf[js.Any])
       

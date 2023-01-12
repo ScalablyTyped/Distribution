@@ -32,7 +32,8 @@ object IKnownContactFieldStatics {
     __obj.asInstanceOf[IKnownContactFieldStatics]
   }
   
-  extension [Self <: IKnownContactFieldStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKnownContactFieldStatics] (val x: Self) extends AnyVal {
     
     inline def setConvertNameToType(value: String => ContactFieldType): Self = StObject.set(x, "convertNameToType", js.Any.fromFunction1(value))
     

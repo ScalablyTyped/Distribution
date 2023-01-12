@@ -23,7 +23,8 @@ object Cfg {
     __obj.asInstanceOf[Cfg]
   }
   
-  extension [Self <: Cfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cfg] (val x: Self) extends AnyVal {
     
     inline def setCfg(value: DotPatternCfg): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ImportedWindowsAutopilotDeviceIdentityState {
     __obj.asInstanceOf[ImportedWindowsAutopilotDeviceIdentityState]
   }
   
-  extension [Self <: ImportedWindowsAutopilotDeviceIdentityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportedWindowsAutopilotDeviceIdentityState] (val x: Self) extends AnyVal {
     
     inline def setDeviceErrorCode(value: Double): Self = StObject.set(x, "deviceErrorCode", value.asInstanceOf[js.Any])
     

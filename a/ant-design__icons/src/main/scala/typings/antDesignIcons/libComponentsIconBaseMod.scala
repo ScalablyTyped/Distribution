@@ -51,7 +51,8 @@ object libComponentsIconBaseMod extends Shortcut {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object libComponentsIconBaseMod extends Shortcut {
       __obj.asInstanceOf[TwoToneColorPalette]
     }
     
-    extension [Self <: TwoToneColorPalette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwoToneColorPalette] (val x: Self) extends AnyVal {
       
       inline def setCalculated(value: Boolean): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object libComponentsIconBaseMod extends Shortcut {
       __obj.asInstanceOf[TwoToneColorPaletteSetter]
     }
     
-    extension [Self <: TwoToneColorPaletteSetter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwoToneColorPaletteSetter] (val x: Self) extends AnyVal {
       
       inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
       

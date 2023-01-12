@@ -109,7 +109,8 @@ object IPaginationConfig {
     __obj.asInstanceOf[IPaginationConfig]
   }
   
-  extension [Self <: IPaginationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPaginationConfig] (val x: Self) extends AnyVal {
     
     inline def setBoundaryLinkNumbers(value: Boolean): Self = StObject.set(x, "boundaryLinkNumbers", value.asInstanceOf[js.Any])
     

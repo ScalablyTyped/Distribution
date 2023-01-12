@@ -15,7 +15,8 @@ object FoldersResource {
     __obj.asInstanceOf[FoldersResource]
   }
   
-  extension [Self <: FoldersResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldersResource] (val x: Self) extends AnyVal {
     
     inline def setTimeSeries(value: TimeSeriesResource): Self = StObject.set(x, "timeSeries", value.asInstanceOf[js.Any])
   }

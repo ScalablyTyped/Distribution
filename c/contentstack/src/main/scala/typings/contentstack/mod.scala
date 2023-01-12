@@ -426,7 +426,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
       
@@ -465,7 +466,8 @@ object mod {
       __obj.asInstanceOf[ContentTypeCollection]
     }
     
-    extension [Self <: ContentTypeCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentTypeCollection] (val x: Self) extends AnyVal {
       
       inline def setContent_types(value: js.Array[Any]): Self = StObject.set(x, "content_types", value.asInstanceOf[js.Any])
       
@@ -492,7 +494,8 @@ object mod {
       __obj.asInstanceOf[LivePreview]
     }
     
-    extension [Self <: LivePreview](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LivePreview] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -515,7 +518,8 @@ object mod {
       __obj.asInstanceOf[LivePreviewQuery]
     }
     
-    extension [Self <: LivePreviewQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LivePreviewQuery] (val x: Self) extends AnyVal {
       
       inline def setContent_type_uid(value: String): Self = StObject.set(x, "content_type_uid", value.asInstanceOf[js.Any])
       
@@ -540,7 +544,8 @@ object mod {
       __obj.asInstanceOf[StackConfig]
     }
     
-    extension [Self <: StackConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackConfig] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -573,7 +578,8 @@ object mod {
       __obj.asInstanceOf[SyncResult]
     }
     
-    extension [Self <: SyncResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncResult] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

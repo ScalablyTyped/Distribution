@@ -45,7 +45,8 @@ object libPatternsMod {
       __obj.asInstanceOf[SequencePatternOptions[TEvent]]
     }
     
-    extension [Self <: SequencePatternOptions[?], TEvent /* <: EventObject */](x: Self & SequencePatternOptions[TEvent]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequencePatternOptions[?], TEvent /* <: EventObject */] (val x: Self & SequencePatternOptions[TEvent]) extends AnyVal {
       
       inline def setNextEvent(value: Event[TEvent]): Self = StObject.set(x, "nextEvent", value.asInstanceOf[js.Any])
       

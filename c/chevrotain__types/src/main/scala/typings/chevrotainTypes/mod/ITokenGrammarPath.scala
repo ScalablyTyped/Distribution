@@ -24,7 +24,8 @@ object ITokenGrammarPath {
     __obj.asInstanceOf[ITokenGrammarPath]
   }
   
-  extension [Self <: ITokenGrammarPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITokenGrammarPath] (val x: Self) extends AnyVal {
     
     inline def setLastTok(value: TokenType): Self = StObject.set(x, "lastTok", value.asInstanceOf[js.Any])
     

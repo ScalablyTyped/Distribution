@@ -74,7 +74,8 @@ object XInterfaceAttributeTypeDescription2 {
     __obj.asInstanceOf[XInterfaceAttributeTypeDescription2]
   }
   
-  extension [Self <: XInterfaceAttributeTypeDescription2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInterfaceAttributeTypeDescription2] (val x: Self) extends AnyVal {
     
     inline def setGetExceptions(value: SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "GetExceptions", value.asInstanceOf[js.Any])
     

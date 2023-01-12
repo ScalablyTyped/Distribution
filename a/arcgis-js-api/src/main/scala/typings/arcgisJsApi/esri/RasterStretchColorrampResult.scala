@@ -27,7 +27,8 @@ object RasterStretchColorrampResult {
     __obj.asInstanceOf[RasterStretchColorrampResult]
   }
   
-  extension [Self <: RasterStretchColorrampResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterStretchColorrampResult] (val x: Self) extends AnyVal {
     
     inline def setBandId(value: Double): Self = StObject.set(x, "bandId", value.asInstanceOf[js.Any])
     

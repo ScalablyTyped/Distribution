@@ -27,7 +27,8 @@ object ProvisionedProfile {
     __obj.asInstanceOf[ProvisionedProfile]
   }
   
-  extension [Self <: ProvisionedProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionedProfile] (val x: Self) extends AnyVal {
     
     inline def setUpdateCost(value: NetworkCostType => Unit): Self = StObject.set(x, "updateCost", js.Any.fromFunction1(value))
     

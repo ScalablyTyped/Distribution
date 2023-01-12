@@ -32,7 +32,8 @@ object TextChangeRange {
     __obj.asInstanceOf[TextChangeRange]
   }
   
-  extension [Self <: TextChangeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextChangeRange] (val x: Self) extends AnyVal {
     
     inline def setIsUnchanged(value: () => Boolean): Self = StObject.set(x, "isUnchanged", js.Any.fromFunction0(value))
     

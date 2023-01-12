@@ -17,7 +17,8 @@ object RipemdSet {
     __obj.asInstanceOf[RipemdSet]
   }
   
-  extension [Self <: RipemdSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RipemdSet] (val x: Self) extends AnyVal {
     
     inline def setRipemd160(value: () => Ripemd160): Self = StObject.set(x, "ripemd160", js.Any.fromFunction0(value))
   }

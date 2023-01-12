@@ -61,7 +61,8 @@ object distCjsSrcTreeRegexpMod {
       __obj.asInstanceOf[TreeRegexp]
     }
     
-    extension [Self <: TreeRegexp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeRegexp] (val x: Self) extends AnyVal {
       
       inline def setGroupBuilder(value: typings.cucumberCucumberExpressions.distCjsSrcGroupBuilderMod.default): Self = StObject.set(x, "groupBuilder", value.asInstanceOf[js.Any])
       

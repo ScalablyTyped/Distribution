@@ -28,7 +28,8 @@ object NodeProperties {
     __obj.asInstanceOf[NodeProperties]
   }
   
-  extension [Self <: NodeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeProperties] (val x: Self) extends AnyVal {
     
     inline def setMainNode(value: Integer): Self = StObject.set(x, "mainNode", value.asInstanceOf[js.Any])
     

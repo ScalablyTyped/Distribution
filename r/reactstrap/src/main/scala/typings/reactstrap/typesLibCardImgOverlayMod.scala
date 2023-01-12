@@ -35,7 +35,8 @@ object typesLibCardImgOverlayMod {
       __obj.asInstanceOf[CardImgOverlayProps]
     }
     
-    extension [Self <: CardImgOverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardImgOverlayProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

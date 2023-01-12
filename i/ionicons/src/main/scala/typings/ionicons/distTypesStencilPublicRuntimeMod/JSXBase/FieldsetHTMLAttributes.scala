@@ -21,7 +21,8 @@ object FieldsetHTMLAttributes {
     __obj.asInstanceOf[FieldsetHTMLAttributes[T]]
   }
   
-  extension [Self <: FieldsetHTMLAttributes[?], T](x: Self & FieldsetHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsetHTMLAttributes[?], T] (val x: Self & FieldsetHTMLAttributes[T]) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SignedCertificateTimestampListParameters {
     __obj.asInstanceOf[SignedCertificateTimestampListParameters]
   }
   
-  extension [Self <: SignedCertificateTimestampListParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedCertificateTimestampListParameters] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: SchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object sinonMod {
       __obj.asInstanceOf[SinonStub]
     }
     
-    extension [Self <: SinonStub](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinonStub] (val x: Self) extends AnyVal {
       
       inline def setChain(value: String => SinonStub): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
     }

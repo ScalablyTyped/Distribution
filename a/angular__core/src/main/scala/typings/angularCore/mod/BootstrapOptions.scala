@@ -64,7 +64,8 @@ object BootstrapOptions {
     __obj.asInstanceOf[BootstrapOptions]
   }
   
-  extension [Self <: BootstrapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapOptions] (val x: Self) extends AnyVal {
     
     inline def setNgZone(value: NgZone | zoneDotjs | noop): Self = StObject.set(x, "ngZone", value.asInstanceOf[js.Any])
     

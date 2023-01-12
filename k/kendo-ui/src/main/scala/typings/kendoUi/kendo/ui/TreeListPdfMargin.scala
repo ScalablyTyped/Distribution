@@ -21,7 +21,8 @@ object TreeListPdfMargin {
     __obj.asInstanceOf[TreeListPdfMargin]
   }
   
-  extension [Self <: TreeListPdfMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListPdfMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

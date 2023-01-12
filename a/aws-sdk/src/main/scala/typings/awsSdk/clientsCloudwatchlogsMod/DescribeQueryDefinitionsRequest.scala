@@ -25,7 +25,8 @@ object DescribeQueryDefinitionsRequest {
     __obj.asInstanceOf[DescribeQueryDefinitionsRequest]
   }
   
-  extension [Self <: DescribeQueryDefinitionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeQueryDefinitionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: QueryListMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

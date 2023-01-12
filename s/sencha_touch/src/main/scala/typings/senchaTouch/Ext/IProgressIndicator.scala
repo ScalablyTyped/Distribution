@@ -125,7 +125,8 @@ object IProgressIndicator {
     __obj.asInstanceOf[IProgressIndicator]
   }
   
-  extension [Self <: IProgressIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProgressIndicator] (val x: Self) extends AnyVal {
     
     inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object Wrinkler {
     __obj.asInstanceOf[Wrinkler]
   }
   
-  extension [Self <: Wrinkler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Wrinkler] (val x: Self) extends AnyVal {
     
     inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

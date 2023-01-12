@@ -128,7 +128,8 @@ object DocumentReference {
     __obj.asInstanceOf[DocumentReference]
   }
   
-  extension [Self <: DocumentReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentReference] (val x: Self) extends AnyVal {
     
     inline def setAuthenticator(value: Reference): Self = StObject.set(x, "authenticator", value.asInstanceOf[js.Any])
     

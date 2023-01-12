@@ -17,7 +17,8 @@ object DayPickerNavigationPhrases {
     __obj.asInstanceOf[DayPickerNavigationPhrases]
   }
   
-  extension [Self <: DayPickerNavigationPhrases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayPickerNavigationPhrases] (val x: Self) extends AnyVal {
     
     inline def setJumpToNextMonth(value: String): Self = StObject.set(x, "jumpToNextMonth", value.asInstanceOf[js.Any])
     

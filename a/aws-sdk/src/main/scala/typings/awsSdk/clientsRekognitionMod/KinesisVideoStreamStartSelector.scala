@@ -23,7 +23,8 @@ object KinesisVideoStreamStartSelector {
     __obj.asInstanceOf[KinesisVideoStreamStartSelector]
   }
   
-  extension [Self <: KinesisVideoStreamStartSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisVideoStreamStartSelector] (val x: Self) extends AnyVal {
     
     inline def setFragmentNumber(value: KinesisVideoStreamFragmentNumber): Self = StObject.set(x, "FragmentNumber", value.asInstanceOf[js.Any])
     

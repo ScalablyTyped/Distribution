@@ -22,7 +22,8 @@ object EnableLibraryPlugin {
     __obj.asInstanceOf[EnableLibraryPlugin]
   }
   
-  extension [Self <: EnableLibraryPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableLibraryPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     

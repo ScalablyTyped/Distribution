@@ -40,7 +40,8 @@ object ConnectParams {
     __obj.asInstanceOf[ConnectParams]
   }
   
-  extension [Self <: ConnectParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectParams] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: AnchorSpec): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

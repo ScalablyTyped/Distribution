@@ -38,7 +38,8 @@ object ProvisioningArtifactSummary {
     __obj.asInstanceOf[ProvisioningArtifactSummary]
   }
   
-  extension [Self <: ProvisioningArtifactSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisioningArtifactSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

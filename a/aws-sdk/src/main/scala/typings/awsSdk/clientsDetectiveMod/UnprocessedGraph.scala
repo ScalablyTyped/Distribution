@@ -23,7 +23,8 @@ object UnprocessedGraph {
     __obj.asInstanceOf[UnprocessedGraph]
   }
   
-  extension [Self <: UnprocessedGraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnprocessedGraph] (val x: Self) extends AnyVal {
     
     inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
     

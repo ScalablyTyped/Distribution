@@ -20,7 +20,8 @@ object TypeofWindow {
     __obj.asInstanceOf[TypeofWindow]
   }
   
-  extension [Self <: TypeofWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofWindow] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Window): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

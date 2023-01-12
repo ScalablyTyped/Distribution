@@ -42,7 +42,8 @@ object IgScrollMethods {
     __obj.asInstanceOf[IgScrollMethods]
   }
   
-  extension [Self <: IgScrollMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgScrollMethods] (val x: Self) extends AnyVal {
     
     inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     

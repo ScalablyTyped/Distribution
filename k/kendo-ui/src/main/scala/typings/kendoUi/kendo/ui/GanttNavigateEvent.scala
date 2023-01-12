@@ -17,7 +17,8 @@ object GanttNavigateEvent {
     __obj.asInstanceOf[GanttNavigateEvent]
   }
   
-  extension [Self <: GanttNavigateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttNavigateEvent] (val x: Self) extends AnyVal {
     
     inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

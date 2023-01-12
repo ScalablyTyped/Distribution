@@ -24,7 +24,8 @@ object TextEditinsertAsSnippetbo {
     __obj.asInstanceOf[TextEditinsertAsSnippetbo]
   }
   
-  extension [Self <: TextEditinsertAsSnippetbo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEditinsertAsSnippetbo] (val x: Self) extends AnyVal {
     
     inline def setEol(value: EndOfLineSequence): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
     

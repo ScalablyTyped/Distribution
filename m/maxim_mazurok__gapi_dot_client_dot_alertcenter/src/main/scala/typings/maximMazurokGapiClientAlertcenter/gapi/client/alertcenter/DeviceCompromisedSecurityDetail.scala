@@ -34,7 +34,8 @@ object DeviceCompromisedSecurityDetail {
     __obj.asInstanceOf[DeviceCompromisedSecurityDetail]
   }
   
-  extension [Self <: DeviceCompromisedSecurityDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceCompromisedSecurityDetail] (val x: Self) extends AnyVal {
     
     inline def setDeviceCompromisedState(value: String): Self = StObject.set(x, "deviceCompromisedState", value.asInstanceOf[js.Any])
     

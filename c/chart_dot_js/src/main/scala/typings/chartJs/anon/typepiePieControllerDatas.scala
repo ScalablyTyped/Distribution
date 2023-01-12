@@ -161,7 +161,8 @@ object typepiePieControllerDatas {
     __obj.asInstanceOf[typepiePieControllerDatas]
   }
   
-  extension [Self <: typepiePieControllerDatas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typepiePieControllerDatas] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpecdoughnutonPr): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object PointOptions {
     __obj.asInstanceOf[PointOptions]
   }
   
-  extension [Self <: PointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

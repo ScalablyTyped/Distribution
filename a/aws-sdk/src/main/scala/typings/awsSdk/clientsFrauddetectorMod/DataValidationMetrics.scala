@@ -23,7 +23,8 @@ object DataValidationMetrics {
     __obj.asInstanceOf[DataValidationMetrics]
   }
   
-  extension [Self <: DataValidationMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataValidationMetrics] (val x: Self) extends AnyVal {
     
     inline def setFieldLevelMessages(value: fieldValidationMessageList): Self = StObject.set(x, "fieldLevelMessages", value.asInstanceOf[js.Any])
     

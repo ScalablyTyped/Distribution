@@ -18,7 +18,8 @@ object SketchMSTextStyle {
     __obj.asInstanceOf[SketchMSTextStyle]
   }
   
-  extension [Self <: SketchMSTextStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSTextStyle] (val x: Self) extends AnyVal {
     
     inline def setEncodedAttributes(value: SketchMSAttributes): Self = StObject.set(x, "encodedAttributes", value.asInstanceOf[js.Any])
     

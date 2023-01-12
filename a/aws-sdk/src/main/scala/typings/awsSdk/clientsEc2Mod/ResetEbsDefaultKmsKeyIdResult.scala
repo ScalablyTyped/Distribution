@@ -18,7 +18,8 @@ object ResetEbsDefaultKmsKeyIdResult {
     __obj.asInstanceOf[ResetEbsDefaultKmsKeyIdResult]
   }
   
-  extension [Self <: ResetEbsDefaultKmsKeyIdResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetEbsDefaultKmsKeyIdResult] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

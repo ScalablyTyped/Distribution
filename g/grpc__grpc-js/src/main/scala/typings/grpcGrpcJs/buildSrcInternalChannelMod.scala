@@ -237,7 +237,8 @@ object buildSrcInternalChannelMod {
       __obj.asInstanceOf[ErrorConfigResult]
     }
     
-    extension [Self <: ErrorConfigResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorConfigResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: StatusObject): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -286,7 +287,8 @@ object buildSrcInternalChannelMod {
       __obj.asInstanceOf[NoneConfigResult]
     }
     
-    extension [Self <: NoneConfigResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoneConfigResult] (val x: Self) extends AnyVal {
       
       inline def setType(value: NONE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -308,7 +310,8 @@ object buildSrcInternalChannelMod {
       __obj.asInstanceOf[SuccessConfigResult]
     }
     
-    extension [Self <: SuccessConfigResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessConfigResult] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: CallConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

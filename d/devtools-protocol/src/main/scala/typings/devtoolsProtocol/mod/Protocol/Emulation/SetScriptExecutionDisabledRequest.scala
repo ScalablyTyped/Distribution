@@ -18,7 +18,8 @@ object SetScriptExecutionDisabledRequest {
     __obj.asInstanceOf[SetScriptExecutionDisabledRequest]
   }
   
-  extension [Self <: SetScriptExecutionDisabledRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetScriptExecutionDisabledRequest] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

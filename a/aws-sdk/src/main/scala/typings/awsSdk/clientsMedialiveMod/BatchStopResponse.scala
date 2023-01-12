@@ -23,7 +23,8 @@ object BatchStopResponse {
     __obj.asInstanceOf[BatchStopResponse]
   }
   
-  extension [Self <: BatchStopResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchStopResponse] (val x: Self) extends AnyVal {
     
     inline def setFailed(value: listOfBatchFailedResultModel): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     

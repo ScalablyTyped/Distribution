@@ -21,7 +21,8 @@ object GoogleDevtoolsRemotebuildbotResourceUsage {
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildbotResourceUsage]
   }
   
-  extension [Self <: GoogleDevtoolsRemotebuildbotResourceUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemotebuildbotResourceUsage] (val x: Self) extends AnyVal {
     
     inline def setCpuUsedPercent(value: Double): Self = StObject.set(x, "cpuUsedPercent", value.asInstanceOf[js.Any])
     

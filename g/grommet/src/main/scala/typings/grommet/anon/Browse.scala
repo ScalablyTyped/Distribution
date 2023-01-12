@@ -27,7 +27,8 @@ object Browse {
     __obj.asInstanceOf[Browse]
   }
   
-  extension [Self <: Browse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Browse] (val x: Self) extends AnyVal {
     
     inline def setBrowse(value: String): Self = StObject.set(x, "browse", value.asInstanceOf[js.Any])
     

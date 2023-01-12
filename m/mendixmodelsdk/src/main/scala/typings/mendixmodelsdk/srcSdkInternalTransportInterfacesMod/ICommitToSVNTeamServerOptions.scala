@@ -31,7 +31,8 @@ object ICommitToSVNTeamServerOptions {
     __obj.asInstanceOf[ICommitToSVNTeamServerOptions]
   }
   
-  extension [Self <: ICommitToSVNTeamServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommitToSVNTeamServerOptions] (val x: Self) extends AnyVal {
     
     inline def setRepositoryType(value: svn): Self = StObject.set(x, "repositoryType", value.asInstanceOf[js.Any])
     

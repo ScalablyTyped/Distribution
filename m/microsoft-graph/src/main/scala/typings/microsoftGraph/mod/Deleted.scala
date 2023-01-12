@@ -16,7 +16,8 @@ object Deleted {
     __obj.asInstanceOf[Deleted]
   }
   
-  extension [Self <: Deleted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deleted] (val x: Self) extends AnyVal {
     
     inline def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

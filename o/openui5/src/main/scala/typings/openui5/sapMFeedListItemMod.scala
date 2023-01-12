@@ -1147,7 +1147,8 @@ object sapMFeedListItemMod {
       __obj.asInstanceOf[FeedListItemSettings]
     }
     
-    extension [Self <: FeedListItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedListItemSettings] (val x: Self) extends AnyVal {
       
       inline def setActions(
         value: js.Array[typings.openui5.sapMFeedListItemActionMod.default] | typings.openui5.sapMFeedListItemActionMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

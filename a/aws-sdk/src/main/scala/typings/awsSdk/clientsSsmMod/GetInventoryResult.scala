@@ -23,7 +23,8 @@ object GetInventoryResult {
     __obj.asInstanceOf[GetInventoryResult]
   }
   
-  extension [Self <: GetInventoryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInventoryResult] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: InventoryResultEntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     

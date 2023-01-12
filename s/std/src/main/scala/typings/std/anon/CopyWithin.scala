@@ -42,7 +42,8 @@ object CopyWithin {
     __obj.asInstanceOf[CopyWithin]
   }
   
-  extension [Self <: CopyWithin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyWithin] (val x: Self) extends AnyVal {
     
     inline def setCopyWithin(value: Boolean): Self = StObject.set(x, "copyWithin", value.asInstanceOf[js.Any])
     

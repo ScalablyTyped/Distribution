@@ -21,7 +21,8 @@ object ToScreenLocationSuccessCallbackResult {
     __obj.asInstanceOf[ToScreenLocationSuccessCallbackResult]
   }
   
-  extension [Self <: ToScreenLocationSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToScreenLocationSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

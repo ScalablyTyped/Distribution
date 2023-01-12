@@ -147,7 +147,8 @@ object libTypesMod {
       __obj.asInstanceOf[BaseProps]
     }
     
-    extension [Self <: BaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
       
       inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
       
@@ -266,7 +267,8 @@ object libTypesMod {
       __obj.asInstanceOf[CustomComponent]
     }
     
-    extension [Self <: CustomComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomComponent] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -293,7 +295,8 @@ object libTypesMod {
       __obj.asInstanceOf[LogOptions]
     }
     
-    extension [Self <: LogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -322,7 +325,8 @@ object libTypesMod {
       __obj.asInstanceOf[RenderProps]
     }
     
-    extension [Self <: RenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
       
       inline def setCloseFn(value: /* event */ SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "closeFn", js.Any.fromFunction1(value))
     }
@@ -352,7 +356,8 @@ object libTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setCurrentPlacement(value: PlacementOptions): Self = StObject.set(x, "currentPlacement", value.asInstanceOf[js.Any])
       
@@ -447,7 +452,8 @@ object libTypesMod {
       __obj.asInstanceOf[Styles]
     }
     
-    extension [Self <: Styles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: CSSPropertieslengthnumber): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
@@ -494,7 +500,8 @@ object libTypesMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setReactFloaterDebug(value: Boolean): Self = StObject.set(x, "ReactFloaterDebug", value.asInstanceOf[js.Any])
         

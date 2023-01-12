@@ -33,7 +33,8 @@ object ClientVpnAuthentication {
     __obj.asInstanceOf[ClientVpnAuthentication]
   }
   
-  extension [Self <: ClientVpnAuthentication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientVpnAuthentication] (val x: Self) extends AnyVal {
     
     inline def setActiveDirectory(value: DirectoryServiceAuthentication): Self = StObject.set(x, "ActiveDirectory", value.asInstanceOf[js.Any])
     

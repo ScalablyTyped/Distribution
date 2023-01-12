@@ -33,7 +33,8 @@ object BatchListObjectAttributes {
     __obj.asInstanceOf[BatchListObjectAttributes]
   }
   
-  extension [Self <: BatchListObjectAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchListObjectAttributes] (val x: Self) extends AnyVal {
     
     inline def setFacetFilter(value: SchemaFacet): Self = StObject.set(x, "FacetFilter", value.asInstanceOf[js.Any])
     

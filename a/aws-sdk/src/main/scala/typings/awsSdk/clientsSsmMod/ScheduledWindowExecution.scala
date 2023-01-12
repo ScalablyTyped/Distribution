@@ -28,7 +28,8 @@ object ScheduledWindowExecution {
     __obj.asInstanceOf[ScheduledWindowExecution]
   }
   
-  extension [Self <: ScheduledWindowExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledWindowExecution] (val x: Self) extends AnyVal {
     
     inline def setExecutionTime(value: MaintenanceWindowStringDateTime): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
     

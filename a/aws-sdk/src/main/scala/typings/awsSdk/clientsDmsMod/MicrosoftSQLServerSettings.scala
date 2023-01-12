@@ -88,7 +88,8 @@ object MicrosoftSQLServerSettings {
     __obj.asInstanceOf[MicrosoftSQLServerSettings]
   }
   
-  extension [Self <: MicrosoftSQLServerSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MicrosoftSQLServerSettings] (val x: Self) extends AnyVal {
     
     inline def setBcpPacketSize(value: IntegerOptional): Self = StObject.set(x, "BcpPacketSize", value.asInstanceOf[js.Any])
     

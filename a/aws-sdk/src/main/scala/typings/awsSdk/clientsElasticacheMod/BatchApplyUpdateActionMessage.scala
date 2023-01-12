@@ -28,7 +28,8 @@ object BatchApplyUpdateActionMessage {
     __obj.asInstanceOf[BatchApplyUpdateActionMessage]
   }
   
-  extension [Self <: BatchApplyUpdateActionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchApplyUpdateActionMessage] (val x: Self) extends AnyVal {
     
     inline def setCacheClusterIds(value: CacheClusterIdList): Self = StObject.set(x, "CacheClusterIds", value.asInstanceOf[js.Any])
     

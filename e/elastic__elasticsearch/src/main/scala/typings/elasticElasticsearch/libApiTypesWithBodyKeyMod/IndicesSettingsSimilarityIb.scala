@@ -23,7 +23,8 @@ object IndicesSettingsSimilarityIb {
     __obj.asInstanceOf[IndicesSettingsSimilarityIb]
   }
   
-  extension [Self <: IndicesSettingsSimilarityIb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSettingsSimilarityIb] (val x: Self) extends AnyVal {
     
     inline def setDistribution(value: IBDistribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     

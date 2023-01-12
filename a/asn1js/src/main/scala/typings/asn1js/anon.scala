@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[BlockLength]
     }
     
-    extension [Self <: BlockLength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockLength] (val x: Self) extends AnyVal {
       
       inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -153,7 +155,8 @@ object anon {
       __obj.asInstanceOf[PartialILocalIdentificati]
     }
     
-    extension [Self <: PartialILocalIdentificati](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialILocalIdentificati] (val x: Self) extends AnyVal {
       
       inline def setIsConstructed(value: Boolean): Self = StObject.set(x, "isConstructed", value.asInstanceOf[js.Any])
       
@@ -193,7 +196,8 @@ object anon {
       __obj.asInstanceOf[PartialILocalLengthBlock]
     }
     
-    extension [Self <: PartialILocalLengthBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialILocalLengthBlock] (val x: Self) extends AnyVal {
       
       inline def setIsIndefiniteForm(value: Boolean): Self = StObject.set(x, "isIndefiniteForm", value.asInstanceOf[js.Any])
       

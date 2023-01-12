@@ -97,7 +97,8 @@ object XChartDataArray {
     __obj.asInstanceOf[XChartDataArray]
   }
   
-  extension [Self <: XChartDataArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChartDataArray] (val x: Self) extends AnyVal {
     
     inline def setColumnDescriptions(value: SafeArray[String]): Self = StObject.set(x, "ColumnDescriptions", value.asInstanceOf[js.Any])
     

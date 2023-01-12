@@ -31,7 +31,8 @@ object Activecachescount {
     __obj.asInstanceOf[Activecachescount]
   }
   
-  extension [Self <: Activecachescount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Activecachescount] (val x: Self) extends AnyVal {
     
     inline def setActive_caches_count(value: Double): Self = StObject.set(x, "active_caches_count", value.asInstanceOf[js.Any])
     

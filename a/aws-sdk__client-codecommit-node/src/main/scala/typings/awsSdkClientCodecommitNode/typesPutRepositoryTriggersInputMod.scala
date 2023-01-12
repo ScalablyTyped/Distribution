@@ -52,7 +52,8 @@ object typesPutRepositoryTriggersInputMod {
       __obj.asInstanceOf[PutRepositoryTriggersInput]
     }
     
-    extension [Self <: PutRepositoryTriggersInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutRepositoryTriggersInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

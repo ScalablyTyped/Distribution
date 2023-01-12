@@ -63,7 +63,8 @@ object VpcLink {
     __obj.asInstanceOf[VpcLink]
   }
   
-  extension [Self <: VpcLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcLink] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     

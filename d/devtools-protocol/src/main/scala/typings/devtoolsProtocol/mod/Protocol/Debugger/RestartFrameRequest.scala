@@ -25,7 +25,8 @@ object RestartFrameRequest {
     __obj.asInstanceOf[RestartFrameRequest]
   }
   
-  extension [Self <: RestartFrameRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestartFrameRequest] (val x: Self) extends AnyVal {
     
     inline def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
     

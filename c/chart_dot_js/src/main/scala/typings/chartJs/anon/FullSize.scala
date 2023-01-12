@@ -20,7 +20,8 @@ object FullSize {
     __obj.asInstanceOf[FullSize]
   }
   
-  extension [Self <: FullSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullSize] (val x: Self) extends AnyVal {
     
     inline def setFullSize(value: Double): Self = StObject.set(x, "fullSize", value.asInstanceOf[js.Any])
     

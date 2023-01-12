@@ -23,7 +23,8 @@ object ComponentVariant {
     __obj.asInstanceOf[ComponentVariant]
   }
   
-  extension [Self <: ComponentVariant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentVariant] (val x: Self) extends AnyVal {
     
     inline def setOverrides(value: ComponentOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     

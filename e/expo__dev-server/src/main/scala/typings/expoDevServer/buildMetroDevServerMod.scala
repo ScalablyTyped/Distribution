@@ -79,7 +79,8 @@ object buildMetroDevServerMod {
       __obj.asInstanceOf[BundleAssetWithFileHashes]
     }
     
-    extension [Self <: BundleAssetWithFileHashes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleAssetWithFileHashes] (val x: Self) extends AnyVal {
       
       inline def setFileHashes(value: js.Array[String]): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object buildMetroDevServerMod {
       __obj.asInstanceOf[BundleOptions]
     }
     
-    extension [Self <: BundleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleOptions] (val x: Self) extends AnyVal {
       
       inline def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object buildMetroDevServerMod {
       __obj.asInstanceOf[BundleOutput]
     }
     
-    extension [Self <: BundleOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleOutput] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: js.Array[BundleAssetWithFileHashes]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object buildMetroDevServerMod {
       __obj.asInstanceOf[MetroDevServerOptions]
     }
     
-    extension [Self <: MetroDevServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetroDevServerOptions] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: typings.expoBunyan.mod.^): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       

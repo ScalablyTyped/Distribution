@@ -42,7 +42,8 @@ object distReducersNotificationsActionsMod {
       __obj.asInstanceOf[DismissNotificationAction]
     }
     
-    extension [Self <: DismissNotificationAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DismissNotificationAction] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object distReducersNotificationsActionsMod {
       __obj.asInstanceOf[DismissNotificationsAction]
     }
     
-    extension [Self <: DismissNotificationsAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DismissNotificationsAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: DismissNotifications): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -113,7 +115,8 @@ object distReducersNotificationsActionsMod {
       __obj.asInstanceOf[UpsertNotificationAction]
     }
     
-    extension [Self <: UpsertNotificationAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpsertNotificationAction] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Notification): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

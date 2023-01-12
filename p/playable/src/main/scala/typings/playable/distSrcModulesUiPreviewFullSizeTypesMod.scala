@@ -24,7 +24,8 @@ object distSrcModulesUiPreviewFullSizeTypesMod {
       __obj.asInstanceOf[IPreviewFullSize]
     }
     
-    extension [Self <: IPreviewFullSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPreviewFullSize] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -51,7 +52,8 @@ object distSrcModulesUiPreviewFullSizeTypesMod {
       __obj.asInstanceOf[IPreviewFullSizeViewStyles]
     }
     
-    extension [Self <: IPreviewFullSizeViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPreviewFullSizeViewStyles] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

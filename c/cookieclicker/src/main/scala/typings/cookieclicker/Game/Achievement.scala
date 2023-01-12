@@ -84,7 +84,8 @@ object Achievement {
     __obj.asInstanceOf[Achievement]
   }
   
-  extension [Self <: Achievement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Achievement] (val x: Self) extends AnyVal {
     
     inline def setBaseDesc(value: String): Self = StObject.set(x, "baseDesc", value.asInstanceOf[js.Any])
     

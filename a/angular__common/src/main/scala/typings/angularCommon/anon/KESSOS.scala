@@ -29,7 +29,8 @@ object KESSOS {
     __obj.asInstanceOf[KESSOS]
   }
   
-  extension [Self <: KESSOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KESSOS] (val x: Self) extends AnyVal {
     
     inline def setBBD(value: js.Array[String]): Self = StObject.set(x, "BBD", value.asInstanceOf[js.Any])
     

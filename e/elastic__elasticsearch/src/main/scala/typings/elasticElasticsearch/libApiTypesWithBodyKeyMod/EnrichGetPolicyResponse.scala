@@ -15,7 +15,8 @@ object EnrichGetPolicyResponse {
     __obj.asInstanceOf[EnrichGetPolicyResponse]
   }
   
-  extension [Self <: EnrichGetPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrichGetPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicies(value: js.Array[EnrichSummary]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     

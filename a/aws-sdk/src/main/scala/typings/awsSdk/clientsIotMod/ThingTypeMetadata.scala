@@ -28,7 +28,8 @@ object ThingTypeMetadata {
     __obj.asInstanceOf[ThingTypeMetadata]
   }
   
-  extension [Self <: ThingTypeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThingTypeMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

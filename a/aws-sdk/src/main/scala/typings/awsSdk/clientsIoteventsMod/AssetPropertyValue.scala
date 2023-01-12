@@ -28,7 +28,8 @@ object AssetPropertyValue {
     __obj.asInstanceOf[AssetPropertyValue]
   }
   
-  extension [Self <: AssetPropertyValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetPropertyValue] (val x: Self) extends AnyVal {
     
     inline def setQuality(value: AssetPropertyQuality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

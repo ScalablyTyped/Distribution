@@ -28,7 +28,8 @@ object ValidateConfigurationRequest {
     __obj.asInstanceOf[ValidateConfigurationRequest]
   }
   
-  extension [Self <: ValidateConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object NxListobjectExpressionDef {
     __obj.asInstanceOf[NxListobjectExpressionDef]
   }
   
-  extension [Self <: NxListobjectExpressionDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxListobjectExpressionDef] (val x: Self) extends AnyVal {
     
     inline def setQExpr(value: String): Self = StObject.set(x, "qExpr", value.asInstanceOf[js.Any])
     

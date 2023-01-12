@@ -18,7 +18,8 @@ object KinesisVideoStream {
     __obj.asInstanceOf[KinesisVideoStream]
   }
   
-  extension [Self <: KinesisVideoStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisVideoStream] (val x: Self) extends AnyVal {
     
     inline def setArn(value: KinesisVideoArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

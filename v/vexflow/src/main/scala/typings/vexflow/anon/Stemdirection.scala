@@ -27,7 +27,8 @@ object Stemdirection {
     __obj.asInstanceOf[Stemdirection]
   }
   
-  extension [Self <: Stemdirection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stemdirection] (val x: Self) extends AnyVal {
     
     inline def setStem_direction(value: Double): Self = StObject.set(x, "stem_direction", value.asInstanceOf[js.Any])
     

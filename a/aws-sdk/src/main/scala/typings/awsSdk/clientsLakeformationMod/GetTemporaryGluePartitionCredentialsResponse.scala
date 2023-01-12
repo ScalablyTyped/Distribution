@@ -33,7 +33,8 @@ object GetTemporaryGluePartitionCredentialsResponse {
     __obj.asInstanceOf[GetTemporaryGluePartitionCredentialsResponse]
   }
   
-  extension [Self <: GetTemporaryGluePartitionCredentialsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTemporaryGluePartitionCredentialsResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyId(value: AccessKeyIdString): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     

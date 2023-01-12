@@ -33,7 +33,8 @@ object IRadio {
     __obj.asInstanceOf[IRadio]
   }
   
-  extension [Self <: IRadio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRadio] (val x: Self) extends AnyVal {
     
     inline def setGetGroupValue(value: () => String): Self = StObject.set(x, "getGroupValue", js.Any.fromFunction0(value))
     

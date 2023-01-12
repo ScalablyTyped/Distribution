@@ -42,7 +42,8 @@ object PolygonOptions {
     __obj.asInstanceOf[PolygonOptions]
   }
   
-  extension [Self <: PolygonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonOptions] (val x: Self) extends AnyVal {
     
     inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     

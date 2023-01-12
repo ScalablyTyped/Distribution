@@ -20,7 +20,8 @@ object SemanticRolesVerb {
     __obj.asInstanceOf[SemanticRolesVerb]
   }
   
-  extension [Self <: SemanticRolesVerb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SemanticRolesVerb] (val x: Self) extends AnyVal {
     
     inline def setTense(value: String): Self = StObject.set(x, "tense", value.asInstanceOf[js.Any])
     

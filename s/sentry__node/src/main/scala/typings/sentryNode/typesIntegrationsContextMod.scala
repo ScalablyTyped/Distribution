@@ -108,7 +108,8 @@ object typesIntegrationsContextMod {
       __obj.asInstanceOf[ContextOptions]
     }
     
-    extension [Self <: ContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: Boolean): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object typesIntegrationsContextMod {
       __obj.asInstanceOf[DeviceContextOptions]
     }
     
-    extension [Self <: DeviceContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceContextOptions] (val x: Self) extends AnyVal {
       
       inline def setCpu(value: Boolean): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object DirectoryVpcSettingsDescription {
     __obj.asInstanceOf[DirectoryVpcSettingsDescription]
   }
   
-  extension [Self <: DirectoryVpcSettingsDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryVpcSettingsDescription] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

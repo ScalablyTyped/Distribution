@@ -31,7 +31,8 @@ object Dictkeyword {
     __obj.asInstanceOf[Dictkeyword]
   }
   
-  extension [Self <: Dictkeyword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictkeyword] (val x: Self) extends AnyVal {
     
     inline def set$defs(value: Record[String, UncheckedJSONSchemaType[Known, `true`]]): Self = StObject.set(x, "$defs", value.asInstanceOf[js.Any])
     

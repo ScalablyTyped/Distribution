@@ -170,7 +170,8 @@ object vba {
       __obj.asInstanceOf[VBAScriptEvent]
     }
     
-    extension [Self <: VBAScriptEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VBAScriptEvent] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: Double): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
       
@@ -228,7 +229,8 @@ object vba {
       __obj.asInstanceOf[XVBACompatibility]
     }
     
-    extension [Self <: XVBACompatibility](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XVBACompatibility] (val x: Self) extends AnyVal {
       
       inline def setAddVBAScriptListener(value: XVBAScriptListener => Unit): Self = StObject.set(x, "addVBAScriptListener", js.Any.fromFunction1(value))
       
@@ -275,7 +277,8 @@ object vba {
       __obj.asInstanceOf[XVBAEventProcessor]
     }
     
-    extension [Self <: XVBAEventProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XVBAEventProcessor] (val x: Self) extends AnyVal {
       
       inline def setHasVbaEventHandler(value: (Double, SeqEquiv[Any]) => Boolean): Self = StObject.set(x, "hasVbaEventHandler", js.Any.fromFunction2(value))
       
@@ -309,7 +312,8 @@ object vba {
       __obj.asInstanceOf[XVBAMacroResolver]
     }
     
-    extension [Self <: XVBAMacroResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XVBAMacroResolver] (val x: Self) extends AnyVal {
       
       inline def setResolveScriptURLtoVBAMacro(value: String => String): Self = StObject.set(x, "resolveScriptURLtoVBAMacro", js.Any.fromFunction1(value))
       
@@ -339,7 +343,8 @@ object vba {
       __obj.asInstanceOf[XVBAModuleInfo]
     }
     
-    extension [Self <: XVBAModuleInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XVBAModuleInfo] (val x: Self) extends AnyVal {
       
       inline def setGetModuleInfo(value: String => ModuleInfo): Self = StObject.set(x, "getModuleInfo", js.Any.fromFunction1(value))
       
@@ -370,7 +375,8 @@ object vba {
       __obj.asInstanceOf[XVBAScriptListener]
     }
     
-    extension [Self <: XVBAScriptListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XVBAScriptListener] (val x: Self) extends AnyVal {
       
       inline def setNotifyVBAScriptEvent(value: VBAScriptEvent => Unit): Self = StObject.set(x, "notifyVBAScriptEvent", js.Any.fromFunction1(value))
     }

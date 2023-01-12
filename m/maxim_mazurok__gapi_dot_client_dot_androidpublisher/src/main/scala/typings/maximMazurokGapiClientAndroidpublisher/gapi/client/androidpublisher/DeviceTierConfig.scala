@@ -22,7 +22,8 @@ object DeviceTierConfig {
     __obj.asInstanceOf[DeviceTierConfig]
   }
   
-  extension [Self <: DeviceTierConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceTierConfig] (val x: Self) extends AnyVal {
     
     inline def setDeviceGroups(value: js.Array[DeviceGroup]): Self = StObject.set(x, "deviceGroups", value.asInstanceOf[js.Any])
     

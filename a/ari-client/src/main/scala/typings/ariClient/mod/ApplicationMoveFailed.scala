@@ -38,7 +38,8 @@ object ApplicationMoveFailed {
     __obj.asInstanceOf[ApplicationMoveFailed]
   }
   
-  extension [Self <: ApplicationMoveFailed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationMoveFailed] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: String | js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

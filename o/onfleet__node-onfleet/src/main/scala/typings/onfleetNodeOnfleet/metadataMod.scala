@@ -22,7 +22,8 @@ object metadataMod {
       __obj.asInstanceOf[MatchMetadataResult]
     }
     
-    extension [Self <: MatchMetadataResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchMetadataResult] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object metadataMod {
       __obj.asInstanceOf[OnfleetMetadata]
     }
     
-    extension [Self <: OnfleetMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnfleetMetadata] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

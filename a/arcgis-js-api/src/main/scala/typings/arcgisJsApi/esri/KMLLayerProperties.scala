@@ -32,7 +32,8 @@ object KMLLayerProperties {
     __obj.asInstanceOf[KMLLayerProperties]
   }
   
-  extension [Self <: KMLLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KMLLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setSublayers(value: CollectionProperties[KMLSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     

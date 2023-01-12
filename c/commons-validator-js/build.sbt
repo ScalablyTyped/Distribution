@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "commons-validator-js"
-version := "1.0.1668-e6889f"
+version := "1.0.1668-f5c907"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

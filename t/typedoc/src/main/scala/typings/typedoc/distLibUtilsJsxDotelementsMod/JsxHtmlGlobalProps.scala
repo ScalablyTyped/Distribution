@@ -70,7 +70,8 @@ object JsxHtmlGlobalProps {
     __obj.asInstanceOf[JsxHtmlGlobalProps]
   }
   
-  extension [Self <: JsxHtmlGlobalProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxHtmlGlobalProps] (val x: Self) extends AnyVal {
     
     inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
     

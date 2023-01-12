@@ -18,7 +18,8 @@ object GetReplicationSetOutput {
     __obj.asInstanceOf[GetReplicationSetOutput]
   }
   
-  extension [Self <: GetReplicationSetOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReplicationSetOutput] (val x: Self) extends AnyVal {
     
     inline def setReplicationSet(value: ReplicationSet): Self = StObject.set(x, "replicationSet", value.asInstanceOf[js.Any])
   }

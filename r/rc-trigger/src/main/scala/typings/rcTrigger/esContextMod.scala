@@ -27,7 +27,8 @@ object esContextMod extends Shortcut {
       __obj.asInstanceOf[TriggerContextProps]
     }
     
-    extension [Self <: TriggerContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriggerContextProps] (val x: Self) extends AnyVal {
       
       inline def setOnPopupMouseDown(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onPopupMouseDown", js.Any.fromFunction1(value))
     }

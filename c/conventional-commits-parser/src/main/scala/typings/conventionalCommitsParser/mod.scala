@@ -56,7 +56,8 @@ object mod {
         __obj.asInstanceOf[Note]
       }
       
-      extension [Self <: Note](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Note] (val x: Self) extends AnyVal {
         
         inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
@@ -97,7 +98,8 @@ object mod {
         __obj.asInstanceOf[Reference]
       }
       
-      extension [Self <: Reference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
         
         inline def setAction(value: Field): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
@@ -134,7 +136,8 @@ object mod {
         __obj.asInstanceOf[Revert]
       }
       
-      extension [Self <: Revert](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Revert] (val x: Self) extends AnyVal {
         
         inline def setHash(value: Field): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
         
@@ -215,7 +218,8 @@ object mod {
       __obj.asInstanceOf[CommitBase]
     }
     
-    extension [Self <: CommitBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitBase] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Field): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -448,7 +452,8 @@ object mod {
     
     type Keywords = js.Array[String] | String | Null
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCommentChar(value: String): Self = StObject.set(x, "commentChar", value.asInstanceOf[js.Any])
       

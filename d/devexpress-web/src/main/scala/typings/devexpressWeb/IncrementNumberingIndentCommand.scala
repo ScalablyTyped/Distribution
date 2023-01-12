@@ -23,7 +23,8 @@ object IncrementNumberingIndentCommand {
     __obj.asInstanceOf[IncrementNumberingIndentCommand]
   }
   
-  extension [Self <: IncrementNumberingIndentCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncrementNumberingIndentCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

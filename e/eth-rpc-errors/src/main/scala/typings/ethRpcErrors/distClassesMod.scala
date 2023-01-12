@@ -61,7 +61,8 @@ object distClassesMod {
       __obj.asInstanceOf[SerializedEthereumRpcError]
     }
     
-    extension [Self <: SerializedEthereumRpcError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedEthereumRpcError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

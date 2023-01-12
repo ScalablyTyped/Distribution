@@ -19,7 +19,8 @@ object NetworkComponentAPI {
     __obj.asInstanceOf[NetworkComponentAPI]
   }
   
-  extension [Self <: NetworkComponentAPI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkComponentAPI] (val x: Self) extends AnyVal {
     
     inline def setStartLoad(value: Double => Unit): Self = StObject.set(x, "startLoad", js.Any.fromFunction1(value))
     

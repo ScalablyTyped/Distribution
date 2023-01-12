@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[CorsOptions]
     }
     
-    extension [Self <: CorsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CorsOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowedHeaders(value: String | js.Array[String]): Self = StObject.set(x, "allowedHeaders", value.asInstanceOf[js.Any])
       
@@ -150,7 +151,8 @@ object mod {
       __obj.asInstanceOf[CorsRequest]
     }
     
-    extension [Self <: CorsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CorsRequest] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object UpdateStackSetOutput {
     __obj.asInstanceOf[UpdateStackSetOutput]
   }
   
-  extension [Self <: UpdateStackSetOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStackSetOutput] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     

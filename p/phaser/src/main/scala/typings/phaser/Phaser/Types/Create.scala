@@ -64,7 +64,8 @@ object Create {
       __obj.asInstanceOf[GenerateTextureConfig]
     }
     
-    extension [Self <: GenerateTextureConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateTextureConfig] (val x: Self) extends AnyVal {
       
       inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
@@ -222,7 +223,8 @@ object Create {
       __obj.asInstanceOf[Palette]
     }
     
-    extension [Self <: Palette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Palette] (val x: Self) extends AnyVal {
       
       inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       

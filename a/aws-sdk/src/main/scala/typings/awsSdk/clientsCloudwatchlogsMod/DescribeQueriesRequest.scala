@@ -30,7 +30,8 @@ object DescribeQueriesRequest {
     __obj.asInstanceOf[DescribeQueriesRequest]
   }
   
-  extension [Self <: DescribeQueriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeQueriesRequest] (val x: Self) extends AnyVal {
     
     inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     

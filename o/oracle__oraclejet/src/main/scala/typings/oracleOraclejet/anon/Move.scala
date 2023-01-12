@@ -15,7 +15,8 @@ object Move {
     __obj.asInstanceOf[Move]
   }
   
-  extension [Self <: Move](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Move] (val x: Self) extends AnyVal {
     
     inline def setMove(value: Tasks): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     

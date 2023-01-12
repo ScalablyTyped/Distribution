@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[IObserverOptionsforwardRe]
     }
     
-    extension [Self <: IObserverOptionsforwardRe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObserverOptionsforwardRe] (val x: Self) extends AnyVal {
       
       inline def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
       

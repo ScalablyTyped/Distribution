@@ -226,7 +226,8 @@ object distOpsConvUtilMod {
       __obj.asInstanceOf[Conv2DInfo]
     }
     
-    extension [Self <: Conv2DInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Conv2DInfo] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
@@ -358,7 +359,8 @@ object distOpsConvUtilMod {
       __obj.asInstanceOf[Conv3DInfo]
     }
     
-    extension [Self <: Conv3DInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Conv3DInfo] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
@@ -441,7 +443,8 @@ object distOpsConvUtilMod {
       __obj.asInstanceOf[PadInfo]
     }
     
-    extension [Self <: PadInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PadInfo] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -487,7 +490,8 @@ object distOpsConvUtilMod {
       __obj.asInstanceOf[PadInfo3D]
     }
     
-    extension [Self <: PadInfo3D](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PadInfo3D] (val x: Self) extends AnyVal {
       
       inline def setBack(value: Double): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
       

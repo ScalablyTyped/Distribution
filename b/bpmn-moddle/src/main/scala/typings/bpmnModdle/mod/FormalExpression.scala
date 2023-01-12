@@ -26,7 +26,8 @@ object FormalExpression {
     __obj.asInstanceOf[FormalExpression]
   }
   
-  extension [Self <: FormalExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormalExpression] (val x: Self) extends AnyVal {
     
     inline def setEvaluatesToTypeRef(value: ItemDefinition): Self = StObject.set(x, "evaluatesToTypeRef", value.asInstanceOf[js.Any])
     

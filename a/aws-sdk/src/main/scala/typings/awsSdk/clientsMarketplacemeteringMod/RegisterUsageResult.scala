@@ -23,7 +23,8 @@ object RegisterUsageResult {
     __obj.asInstanceOf[RegisterUsageResult]
   }
   
-  extension [Self <: RegisterUsageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterUsageResult] (val x: Self) extends AnyVal {
     
     inline def setPublicKeyRotationTimestamp(value: js.Date): Self = StObject.set(x, "PublicKeyRotationTimestamp", value.asInstanceOf[js.Any])
     

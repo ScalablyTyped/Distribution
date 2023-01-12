@@ -18,7 +18,8 @@ object GetInstanceSnapshotRequest {
     __obj.asInstanceOf[GetInstanceSnapshotRequest]
   }
   
-  extension [Self <: GetInstanceSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstanceSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceSnapshotName(value: ResourceName): Self = StObject.set(x, "instanceSnapshotName", value.asInstanceOf[js.Any])
   }

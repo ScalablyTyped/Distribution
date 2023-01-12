@@ -27,7 +27,8 @@ object sizeCreateContinuousRendererParamsLegendOptions {
     __obj.asInstanceOf[sizeCreateContinuousRendererParamsLegendOptions]
   }
   
-  extension [Self <: sizeCreateContinuousRendererParamsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sizeCreateContinuousRendererParamsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setShowLegend(value: Boolean): Self = StObject.set(x, "showLegend", value.asInstanceOf[js.Any])
     

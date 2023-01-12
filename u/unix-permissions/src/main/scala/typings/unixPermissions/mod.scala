@@ -272,7 +272,8 @@ object mod {
       __obj.asInstanceOf[PermissionObject]
     }
     
-    extension [Self <: PermissionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionObject] (val x: Self) extends AnyVal {
       
       inline def setAll(value: PermissionObjectClass): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -312,7 +313,8 @@ object mod {
       __obj.asInstanceOf[PermissionObjectClass]
     }
     
-    extension [Self <: PermissionObjectClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionObjectClass] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: PermissionObjectValue): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
       
@@ -344,7 +346,8 @@ object mod {
       __obj.asInstanceOf[PermissionObjectSpecial]
     }
     
-    extension [Self <: PermissionObjectSpecial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionObjectSpecial] (val x: Self) extends AnyVal {
       
       inline def setSetgid(value: PermissionObjectValue): Self = StObject.set(x, "setgid", value.asInstanceOf[js.Any])
       

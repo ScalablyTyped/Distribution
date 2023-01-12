@@ -29,7 +29,8 @@ object ISearchAttribute {
     __obj.asInstanceOf[ISearchAttribute]
   }
   
-  extension [Self <: ISearchAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchAttribute] (val x: Self) extends AnyVal {
     
     inline def setQKey(value: String): Self = StObject.set(x, "qKey", value.asInstanceOf[js.Any])
     

@@ -131,7 +131,8 @@ object linkerSrcAstAstHostMod {
       __obj.asInstanceOf[AstHost[TExpression]]
     }
     
-    extension [Self <: AstHost[?], TExpression](x: Self & AstHost[TExpression]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AstHost[?], TExpression] (val x: Self & AstHost[TExpression]) extends AnyVal {
       
       inline def setGetRange(value: TExpression => Range): Self = StObject.set(x, "getRange", js.Any.fromFunction1(value))
       
@@ -190,7 +191,8 @@ object linkerSrcAstAstHostMod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
       

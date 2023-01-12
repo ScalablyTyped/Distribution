@@ -23,7 +23,8 @@ object ShutdownEventConfiguration {
     __obj.asInstanceOf[ShutdownEventConfiguration]
   }
   
-  extension [Self <: ShutdownEventConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShutdownEventConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDelayUntilElbConnectionsDrained(value: Boolean): Self = StObject.set(x, "DelayUntilElbConnectionsDrained", value.asInstanceOf[js.Any])
     

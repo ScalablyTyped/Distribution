@@ -25,7 +25,8 @@ object Acr {
     __obj.asInstanceOf[Acr]
   }
   
-  extension [Self <: Acr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acr] (val x: Self) extends AnyVal {
     
     inline def setEssential(value: Boolean): Self = StObject.set(x, "essential", value.asInstanceOf[js.Any])
     

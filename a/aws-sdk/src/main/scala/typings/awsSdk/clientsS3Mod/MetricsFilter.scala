@@ -33,7 +33,8 @@ object MetricsFilter {
     __obj.asInstanceOf[MetricsFilter]
   }
   
-  extension [Self <: MetricsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricsFilter] (val x: Self) extends AnyVal {
     
     inline def setAccessPointArn(value: AccessPointArn): Self = StObject.set(x, "AccessPointArn", value.asInstanceOf[js.Any])
     

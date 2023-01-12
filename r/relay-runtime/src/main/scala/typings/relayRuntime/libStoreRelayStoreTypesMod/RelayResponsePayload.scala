@@ -26,7 +26,8 @@ object RelayResponsePayload {
     __obj.asInstanceOf[RelayResponsePayload]
   }
   
-  extension [Self <: RelayResponsePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelayResponsePayload] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[PayloadError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

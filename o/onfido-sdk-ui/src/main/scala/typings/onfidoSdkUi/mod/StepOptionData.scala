@@ -38,7 +38,8 @@ object StepOptionData {
     __obj.asInstanceOf[StepOptionData]
   }
   
-  extension [Self <: StepOptionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOptionData] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Country): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

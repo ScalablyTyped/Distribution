@@ -23,7 +23,8 @@ object ListVPCEConfigurationsResult {
     __obj.asInstanceOf[ListVPCEConfigurationsResult]
   }
   
-  extension [Self <: ListVPCEConfigurationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVPCEConfigurationsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

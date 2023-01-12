@@ -33,7 +33,8 @@ object SpatialLocatorAttachedFrameOfReference {
     __obj.asInstanceOf[SpatialLocatorAttachedFrameOfReference]
   }
   
-  extension [Self <: SpatialLocatorAttachedFrameOfReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialLocatorAttachedFrameOfReference] (val x: Self) extends AnyVal {
     
     inline def setAdjustHeading(value: Any): Self = StObject.set(x, "adjustHeading", value.asInstanceOf[js.Any])
     

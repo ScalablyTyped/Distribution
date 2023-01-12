@@ -18,7 +18,8 @@ object DescribeTargetHealthOutput {
     __obj.asInstanceOf[DescribeTargetHealthOutput]
   }
   
-  extension [Self <: DescribeTargetHealthOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTargetHealthOutput] (val x: Self) extends AnyVal {
     
     inline def setTargetHealthDescriptions(value: TargetHealthDescriptions): Self = StObject.set(x, "TargetHealthDescriptions", value.asInstanceOf[js.Any])
     

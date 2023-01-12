@@ -37,7 +37,8 @@ object BuilderOptions {
     __obj.asInstanceOf[BuilderOptions]
   }
   
-  extension [Self <: BuilderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuilderOptions] (val x: Self) extends AnyVal {
     
     inline def setCache(value: FileSystemCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

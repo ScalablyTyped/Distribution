@@ -62,7 +62,8 @@ object CommonTxInputTypeaddressnAddressn {
     __obj.asInstanceOf[CommonTxInputTypeaddressnAddressn]
   }
   
-  extension [Self <: CommonTxInputTypeaddressnAddressn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonTxInputTypeaddressnAddressn] (val x: Self) extends AnyVal {
     
     inline def setAddress_n(value: scala.Unit): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
     

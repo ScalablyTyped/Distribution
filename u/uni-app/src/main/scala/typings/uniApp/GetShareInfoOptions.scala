@@ -38,7 +38,8 @@ object GetShareInfoOptions {
     __obj.asInstanceOf[GetShareInfoOptions]
   }
   
-  extension [Self <: GetShareInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetShareInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

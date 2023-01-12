@@ -67,7 +67,8 @@ object SizeMappingBuilder {
     __obj.asInstanceOf[SizeMappingBuilder]
   }
   
-  extension [Self <: SizeMappingBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeMappingBuilder] (val x: Self) extends AnyVal {
     
     inline def setAddSize(value: (SingleSizeArray, GeneralSize) => SizeMappingBuilder): Self = StObject.set(x, "addSize", js.Any.fromFunction2(value))
     

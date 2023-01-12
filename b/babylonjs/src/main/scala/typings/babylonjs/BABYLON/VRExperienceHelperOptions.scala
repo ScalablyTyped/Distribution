@@ -45,7 +45,8 @@ object VRExperienceHelperOptions {
     __obj.asInstanceOf[VRExperienceHelperOptions]
   }
   
-  extension [Self <: VRExperienceHelperOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VRExperienceHelperOptions] (val x: Self) extends AnyVal {
     
     inline def setCreateDeviceOrientationCamera(value: Boolean): Self = StObject.set(x, "createDeviceOrientationCamera", value.asInstanceOf[js.Any])
     

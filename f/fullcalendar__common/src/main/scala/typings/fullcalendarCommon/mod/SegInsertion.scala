@@ -35,7 +35,8 @@ object SegInsertion {
     __obj.asInstanceOf[SegInsertion]
   }
   
-  extension [Self <: SegInsertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegInsertion] (val x: Self) extends AnyVal {
     
     inline def setLateral(value: Double): Self = StObject.set(x, "lateral", value.asInstanceOf[js.Any])
     

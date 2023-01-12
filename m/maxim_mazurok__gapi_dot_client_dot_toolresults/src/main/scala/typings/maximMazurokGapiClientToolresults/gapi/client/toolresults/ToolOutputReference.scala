@@ -22,7 +22,8 @@ object ToolOutputReference {
     __obj.asInstanceOf[ToolOutputReference]
   }
   
-  extension [Self <: ToolOutputReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolOutputReference] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

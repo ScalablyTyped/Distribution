@@ -48,7 +48,8 @@ object UpdateLaunchRequest {
     __obj.asInstanceOf[UpdateLaunchRequest]
   }
   
-  extension [Self <: UpdateLaunchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLaunchRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

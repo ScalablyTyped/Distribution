@@ -41,7 +41,8 @@ object IndicesAnalyzeExplainAnalyzeTokenKeys {
     __obj.asInstanceOf[IndicesAnalyzeExplainAnalyzeTokenKeys]
   }
   
-  extension [Self <: IndicesAnalyzeExplainAnalyzeTokenKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesAnalyzeExplainAnalyzeTokenKeys] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: String): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

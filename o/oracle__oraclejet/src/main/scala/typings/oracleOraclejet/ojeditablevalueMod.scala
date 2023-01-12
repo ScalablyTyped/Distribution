@@ -468,7 +468,8 @@ object ojeditablevalueMod {
       __obj.asInstanceOf[editableValueEventMap[V, SP, SV, RV]]
     }
     
-    extension [Self <: editableValueEventMap[?, ?, ?, ?], V, SP /* <: editableValueSettableProperties[V, SV, RV] */, SV, RV](x: Self & (editableValueEventMap[V, SP, SV, RV])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: editableValueEventMap[?, ?, ?, ?], V, SP /* <: editableValueSettableProperties[V, SV, RV] */, SV, RV] (val x: Self & (editableValueEventMap[V, SP, SV, RV])) extends AnyVal {
       
       inline def setDescribedByChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "describedByChanged", value.asInstanceOf[js.Any])
       
@@ -532,7 +533,8 @@ object ojeditablevalueMod {
       __obj.asInstanceOf[editableValueSettableProperties[V, SV, RV]]
     }
     
-    extension [Self <: editableValueSettableProperties[?, ?, ?], V, SV, RV](x: Self & (editableValueSettableProperties[V, SV, RV])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: editableValueSettableProperties[?, ?, ?], V, SV, RV] (val x: Self & (editableValueSettableProperties[V, SV, RV])) extends AnyVal {
       
       inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       
@@ -592,7 +594,8 @@ object ojeditablevalueMod {
       __obj.asInstanceOf[editableValueSettablePropertiesLenient[V, SV, RV]]
     }
     
-    extension [Self <: editableValueSettablePropertiesLenient[?, ?, ?], V, SV, RV](x: Self & (editableValueSettablePropertiesLenient[V, SV, RV])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: editableValueSettablePropertiesLenient[?, ?, ?], V, SV, RV] (val x: Self & (editableValueSettablePropertiesLenient[V, SV, RV])) extends AnyVal {
       
       inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ArcHoverOptions {
     __obj.asInstanceOf[ArcHoverOptions]
   }
   
-  extension [Self <: ArcHoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcHoverOptions] (val x: Self) extends AnyVal {
     
     inline def setHoverOffset(value: Double): Self = StObject.set(x, "hoverOffset", value.asInstanceOf[js.Any])
   }

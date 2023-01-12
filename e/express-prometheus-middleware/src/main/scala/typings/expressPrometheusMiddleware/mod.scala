@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[Labels]
     }
     
-    extension [Self <: Labels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[UserOptions]
     }
     
-    extension [Self <: UserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthenticate(
         value: /* req */ Request_[

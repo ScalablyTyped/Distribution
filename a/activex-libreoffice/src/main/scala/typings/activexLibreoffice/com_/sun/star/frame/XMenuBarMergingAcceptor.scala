@@ -40,7 +40,8 @@ object XMenuBarMergingAcceptor {
     __obj.asInstanceOf[XMenuBarMergingAcceptor]
   }
   
-  extension [Self <: XMenuBarMergingAcceptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMenuBarMergingAcceptor] (val x: Self) extends AnyVal {
     
     inline def setRemoveMergedMenuBar(value: () => Unit): Self = StObject.set(x, "removeMergedMenuBar", js.Any.fromFunction0(value))
     

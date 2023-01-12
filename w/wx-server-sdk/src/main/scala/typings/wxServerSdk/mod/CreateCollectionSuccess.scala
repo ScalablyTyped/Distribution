@@ -19,7 +19,8 @@ object CreateCollectionSuccess {
     __obj.asInstanceOf[CreateCollectionSuccess]
   }
   
-  extension [Self <: CreateCollectionSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCollectionSuccess] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

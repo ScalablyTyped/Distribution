@@ -58,7 +58,8 @@ object VLOnlyMarkConfig {
     __obj.asInstanceOf[VLOnlyMarkConfig[ES]]
   }
   
-  extension [Self <: VLOnlyMarkConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & VLOnlyMarkConfig[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VLOnlyMarkConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & VLOnlyMarkConfig[ES]) extends AnyVal {
     
     inline def setFilled(value: Boolean): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     

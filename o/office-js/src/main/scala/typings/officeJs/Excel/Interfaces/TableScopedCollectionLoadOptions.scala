@@ -155,7 +155,8 @@ object TableScopedCollectionLoadOptions {
     __obj.asInstanceOf[TableScopedCollectionLoadOptions]
   }
   
-  extension [Self <: TableScopedCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableScopedCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

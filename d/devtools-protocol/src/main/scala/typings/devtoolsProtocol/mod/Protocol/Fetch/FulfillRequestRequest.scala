@@ -50,7 +50,8 @@ object FulfillRequestRequest {
     __obj.asInstanceOf[FulfillRequestRequest]
   }
   
-  extension [Self <: FulfillRequestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FulfillRequestRequest] (val x: Self) extends AnyVal {
     
     inline def setBinaryResponseHeaders(value: String): Self = StObject.set(x, "binaryResponseHeaders", value.asInstanceOf[js.Any])
     

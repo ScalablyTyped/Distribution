@@ -44,7 +44,8 @@ object libAnchorAnchorMod extends Shortcut {
       __obj.asInstanceOf[AnchorDefaultProps]
     }
     
-    extension [Self <: AnchorDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAffix(value: Boolean): Self = StObject.set(x, "affix", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object libAnchorAnchorMod extends Shortcut {
       __obj.asInstanceOf[AnchorProps]
     }
     
-    extension [Self <: AnchorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorProps] (val x: Self) extends AnyVal {
       
       inline def setAffix(value: Boolean): Self = StObject.set(x, "affix", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object libAnchorAnchorMod extends Shortcut {
       __obj.asInstanceOf[AnchorState]
     }
     
-    extension [Self <: AnchorState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorState] (val x: Self) extends AnyVal {
       
       inline def setActiveLink(value: String): Self = StObject.set(x, "activeLink", value.asInstanceOf[js.Any])
       
@@ -192,7 +195,8 @@ object libAnchorAnchorMod extends Shortcut {
       __obj.asInstanceOf[AntAnchor]
     }
     
-    extension [Self <: AntAnchor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AntAnchor] (val x: Self) extends AnyVal {
       
       inline def setActiveLink(value: String): Self = StObject.set(x, "activeLink", value.asInstanceOf[js.Any])
       

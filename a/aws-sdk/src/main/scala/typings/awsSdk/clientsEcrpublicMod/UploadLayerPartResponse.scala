@@ -33,7 +33,8 @@ object UploadLayerPartResponse {
     __obj.asInstanceOf[UploadLayerPartResponse]
   }
   
-  extension [Self <: UploadLayerPartResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadLayerPartResponse] (val x: Self) extends AnyVal {
     
     inline def setLastByteReceived(value: PartSize): Self = StObject.set(x, "lastByteReceived", value.asInstanceOf[js.Any])
     

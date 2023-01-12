@@ -18,7 +18,8 @@ object StopStackRequest {
     __obj.asInstanceOf[StopStackRequest]
   }
   
-  extension [Self <: StopStackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopStackRequest] (val x: Self) extends AnyVal {
     
     inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
   }

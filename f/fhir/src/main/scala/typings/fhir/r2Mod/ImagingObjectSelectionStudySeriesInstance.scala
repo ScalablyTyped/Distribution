@@ -41,7 +41,8 @@ object ImagingObjectSelectionStudySeriesInstance {
     __obj.asInstanceOf[ImagingObjectSelectionStudySeriesInstance]
   }
   
-  extension [Self <: ImagingObjectSelectionStudySeriesInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagingObjectSelectionStudySeriesInstance] (val x: Self) extends AnyVal {
     
     inline def setFrames(value: js.Array[ImagingObjectSelectionStudySeriesInstanceFrames]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     

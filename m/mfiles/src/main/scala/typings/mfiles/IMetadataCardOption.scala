@@ -35,7 +35,8 @@ object IMetadataCardOption {
     __obj.asInstanceOf[IMetadataCardOption]
   }
   
-  extension [Self <: IMetadataCardOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetadataCardOption] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

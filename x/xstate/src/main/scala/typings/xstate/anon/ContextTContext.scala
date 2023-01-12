@@ -17,7 +17,8 @@ object ContextTContext {
     __obj.asInstanceOf[ContextTContext[TContext]]
   }
   
-  extension [Self <: ContextTContext[?], TContext](x: Self & ContextTContext[TContext]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextTContext[?], TContext] (val x: Self & ContextTContext[TContext]) extends AnyVal {
     
     inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

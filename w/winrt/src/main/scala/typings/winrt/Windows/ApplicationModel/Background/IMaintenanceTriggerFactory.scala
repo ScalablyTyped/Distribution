@@ -15,7 +15,8 @@ object IMaintenanceTriggerFactory {
     __obj.asInstanceOf[IMaintenanceTriggerFactory]
   }
   
-  extension [Self <: IMaintenanceTriggerFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMaintenanceTriggerFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (Double, Boolean) => MaintenanceTrigger): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
   }

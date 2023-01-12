@@ -29,7 +29,8 @@ object libStrategiesStrategyMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setCacheKey(value: () => String): Self = StObject.set(x, "cacheKey", js.Any.fromFunction0(value))
       
@@ -62,7 +63,8 @@ object libStrategiesStrategyMod {
       __obj.asInstanceOf[InstrumentationSchema]
     }
     
-    extension [Self <: InstrumentationSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstrumentationSchema] (val x: Self) extends AnyVal {
       
       inline def setPersistentCacheHit(value: Double): Self = StObject.set(x, "persistentCacheHit", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object libStrategiesStrategyMod {
       __obj.asInstanceOf[Strategy]
     }
     
-    extension [Self <: Strategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Strategy] (val x: Self) extends AnyVal {
       
       inline def setInit(value: Context => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       

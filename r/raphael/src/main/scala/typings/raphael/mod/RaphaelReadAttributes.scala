@@ -69,7 +69,8 @@ object RaphaelReadAttributes {
     __obj.asInstanceOf[RaphaelReadAttributes]
   }
   
-  extension [Self <: RaphaelReadAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelReadAttributes] (val x: Self) extends AnyVal {
     
     inline def setTransform(value: js.Array[RaphaelTransformSegment]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     

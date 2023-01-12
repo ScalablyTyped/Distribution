@@ -18,7 +18,8 @@ object SignedObject {
     __obj.asInstanceOf[SignedObject]
   }
   
-  extension [Self <: SignedObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedObject] (val x: Self) extends AnyVal {
     
     inline def setS3(value: S3SignedObject): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object GridFilterableOperatorsNumber {
     __obj.asInstanceOf[GridFilterableOperatorsNumber]
   }
   
-  extension [Self <: GridFilterableOperatorsNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFilterableOperatorsNumber] (val x: Self) extends AnyVal {
     
     inline def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     

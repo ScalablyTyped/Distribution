@@ -114,7 +114,8 @@ object libListListMod {
       __obj.asInstanceOf[ListBylineProps]
     }
     
-    extension [Self <: ListBylineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBylineProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object libListListMod {
       __obj.asInstanceOf[ListFooterProps]
     }
     
-    extension [Self <: ListFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListFooterProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object libListListMod {
       __obj.asInstanceOf[ListHeaderProps]
     }
     
-    extension [Self <: ListHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -192,7 +195,8 @@ object libListListMod {
   }
   object ListIconProps {
     
-    extension [Self <: ListIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListIconProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -219,7 +223,8 @@ object libListListMod {
       __obj.asInstanceOf[ListItemProps]
     }
     
-    extension [Self <: ListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -272,7 +277,8 @@ object libListListMod {
       __obj.asInstanceOf[ListProps]
     }
     
-    extension [Self <: ListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
@@ -347,7 +353,8 @@ object libListListMod {
       __obj.asInstanceOf[ListSelectionProps]
     }
     
-    extension [Self <: ListSelectionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSelectionProps] (val x: Self) extends AnyVal {
       
       inline def setCheckBoxAriaLabel(value: String): Self = StObject.set(x, "checkBoxAriaLabel", value.asInstanceOf[js.Any])
       
@@ -382,7 +389,8 @@ object libListListMod {
       __obj.asInstanceOf[ListTextProps]
     }
     
-    extension [Self <: ListTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListTextProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

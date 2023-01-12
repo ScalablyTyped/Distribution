@@ -86,7 +86,8 @@ object IRenderDefinition {
     __obj.asInstanceOf[IRenderDefinition]
   }
   
-  extension [Self <: IRenderDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRenderDefinition] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

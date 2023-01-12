@@ -60,7 +60,8 @@ object cjsPopupMod extends Shortcut {
       __obj.asInstanceOf[PopupProps]
     }
     
-    extension [Self <: PopupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object cjsPopupMod extends Shortcut {
       __obj.asInstanceOf[StaticContainerProps]
     }
     
-    extension [Self <: StaticContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

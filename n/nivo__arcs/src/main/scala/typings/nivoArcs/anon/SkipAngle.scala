@@ -23,7 +23,8 @@ object SkipAngle {
     __obj.asInstanceOf[SkipAngle[Datum, ExtraProps]]
   }
   
-  extension [Self <: SkipAngle[?, ?], Datum /* <: DatumWithArc */, ExtraProps /* <: Record[String, Any] */](x: Self & (SkipAngle[Datum, ExtraProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkipAngle[?, ?], Datum /* <: DatumWithArc */, ExtraProps /* <: Record[String, Any] */] (val x: Self & (SkipAngle[Datum, ExtraProps])) extends AnyVal {
     
     inline def setComputeExtraProps(value: /* datum */ Datum => ExtraProps): Self = StObject.set(x, "computeExtraProps", js.Any.fromFunction1(value))
     

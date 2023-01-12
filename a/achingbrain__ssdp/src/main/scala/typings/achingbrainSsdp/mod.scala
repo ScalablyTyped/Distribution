@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[Advertisment]
     }
     
-    extension [Self <: Advertisment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Advertisment] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: (Record[String, Any]) | (js.Function0[js.Promise[Record[String, Any]]])): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[NetworkAddress]
     }
     
-    extension [Self <: NetworkAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object mod {
       __obj.asInstanceOf[NotfiyMessage]
     }
     
-    extension [Self <: NotfiyMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotfiyMessage] (val x: Self) extends AnyVal {
       
       inline def setLOCATION(value: String): Self = StObject.set(x, "LOCATION", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object mod {
       __obj.asInstanceOf[SSDPOptions]
     }
     
-    extension [Self <: SSDPOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSDPOptions] (val x: Self) extends AnyVal {
       
       inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
@@ -267,7 +271,8 @@ object mod {
       __obj.asInstanceOf[SSDPSocketOptions]
     }
     
-    extension [Self <: SSDPSocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSDPSocketOptions] (val x: Self) extends AnyVal {
       
       inline def setBind(value: NetworkAddress): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
@@ -296,7 +301,8 @@ object mod {
       __obj.asInstanceOf[SearchMessage]
     }
     
-    extension [Self <: SearchMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchMessage] (val x: Self) extends AnyVal {
       
       inline def setLOCATION(value: String): Self = StObject.set(x, "LOCATION", value.asInstanceOf[js.Any])
       
@@ -333,7 +339,8 @@ object mod {
       __obj.asInstanceOf[Service[DeviceDescription]]
     }
     
-    extension [Self <: Service[?], DeviceDescription](x: Self & Service[DeviceDescription]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service[?], DeviceDescription] (val x: Self & Service[DeviceDescription]) extends AnyVal {
       
       inline def setDetails(value: DeviceDescription): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       

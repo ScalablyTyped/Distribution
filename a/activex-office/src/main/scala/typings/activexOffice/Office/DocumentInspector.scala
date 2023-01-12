@@ -40,7 +40,8 @@ object DocumentInspector {
     __obj.asInstanceOf[DocumentInspector]
   }
   
-  extension [Self <: DocumentInspector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentInspector] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

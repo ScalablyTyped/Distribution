@@ -21,7 +21,8 @@ object Keyhash {
     __obj.asInstanceOf[Keyhash]
   }
   
-  extension [Self <: Keyhash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Keyhash] (val x: Self) extends AnyVal {
     
     inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     

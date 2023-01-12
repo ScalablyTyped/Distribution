@@ -117,7 +117,8 @@ object libTypesMod {
       __obj.asInstanceOf[LocaleData]
     }
     
-    extension [Self <: LocaleData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocaleData] (val x: Self) extends AnyVal {
       
       inline def setFields(value: finDATAFIELDdisplayNamest): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

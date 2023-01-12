@@ -41,7 +41,8 @@ object FloatingObjectAlignmentPositionSettings {
     __obj.asInstanceOf[FloatingObjectAlignmentPositionSettings]
   }
   
-  extension [Self <: FloatingObjectAlignmentPositionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingObjectAlignmentPositionSettings] (val x: Self) extends AnyVal {
     
     inline def setHorizontalPositionAlignment(value: FloatingObjectHorizontalPositionAlignment): Self = StObject.set(x, "horizontalPositionAlignment", value.asInstanceOf[js.Any])
     

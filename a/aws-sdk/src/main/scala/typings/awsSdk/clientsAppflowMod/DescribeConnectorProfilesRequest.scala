@@ -38,7 +38,8 @@ object DescribeConnectorProfilesRequest {
     __obj.asInstanceOf[DescribeConnectorProfilesRequest]
   }
   
-  extension [Self <: DescribeConnectorProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConnectorProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectorLabel(value: ConnectorLabel): Self = StObject.set(x, "connectorLabel", value.asInstanceOf[js.Any])
     

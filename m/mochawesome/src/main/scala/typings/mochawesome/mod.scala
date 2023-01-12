@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object mod {
       __obj.asInstanceOf[Mochawesome]
     }
     
-    extension [Self <: Mochawesome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mochawesome] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setInlineDiffs(value: Boolean): Self = StObject.set(x, "inlineDiffs", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object mod {
       __obj.asInstanceOf[Output]
     }
     
-    extension [Self <: Output](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: OutputMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
@@ -215,7 +219,8 @@ object mod {
       __obj.asInstanceOf[OutputMeta]
     }
     
-    extension [Self <: OutputMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputMeta] (val x: Self) extends AnyVal {
       
       inline def setMarge(value: OptionsVersion): Self = StObject.set(x, "marge", value.asInstanceOf[js.Any])
       
@@ -317,7 +322,8 @@ object mod {
       __obj.asInstanceOf[PlainSuite]
     }
     
-    extension [Self <: PlainSuite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlainSuite] (val x: Self) extends AnyVal {
       
       inline def setAfterHooks(value: js.Array[PlainTest]): Self = StObject.set(x, "afterHooks", value.asInstanceOf[js.Any])
       
@@ -425,7 +431,8 @@ object mod {
       __obj.asInstanceOf[PlainTest]
     }
     
-    extension [Self <: PlainTest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlainTest] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -505,7 +512,8 @@ object mod {
       __obj.asInstanceOf[ReporterOptions]
     }
     
-    extension [Self <: ReporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReporterOptions] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -554,7 +562,8 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setHasOther(value: Boolean): Self = StObject.set(x, "hasOther", value.asInstanceOf[js.Any])
       
@@ -587,7 +596,8 @@ object mod {
       __obj.asInstanceOf[TestError]
     }
     
-    extension [Self <: TestError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestError] (val x: Self) extends AnyVal {
       
       inline def setDiff(value: String | js.Array[String]): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
       

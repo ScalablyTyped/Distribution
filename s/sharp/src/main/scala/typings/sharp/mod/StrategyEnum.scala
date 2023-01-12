@@ -17,7 +17,8 @@ object StrategyEnum {
     __obj.asInstanceOf[StrategyEnum]
   }
   
-  extension [Self <: StrategyEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrategyEnum] (val x: Self) extends AnyVal {
     
     inline def setAttention(value: Double): Self = StObject.set(x, "attention", value.asInstanceOf[js.Any])
     

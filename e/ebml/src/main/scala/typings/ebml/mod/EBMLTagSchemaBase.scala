@@ -50,7 +50,8 @@ object EBMLTagSchemaBase {
     __obj.asInstanceOf[EBMLTagSchemaBase]
   }
   
-  extension [Self <: EBMLTagSchemaBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EBMLTagSchemaBase] (val x: Self) extends AnyVal {
     
     inline def setCppname(value: String): Self = StObject.set(x, "cppname", value.asInstanceOf[js.Any])
     

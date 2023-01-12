@@ -47,7 +47,8 @@ object typesHoverUseHoverModeContextMod {
       __obj.asInstanceOf[HoverModeActions]
     }
     
-    extension [Self <: HoverModeActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverModeActions] (val x: Self) extends AnyVal {
       
       inline def setDisableHoverMode(value: () => Unit): Self = StObject.set(x, "disableHoverMode", js.Any.fromFunction0(value))
       
@@ -79,7 +80,8 @@ object typesHoverUseHoverModeContextMod {
       __obj.asInstanceOf[HoverModeContext]
     }
     
-    extension [Self <: HoverModeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverModeContext] (val x: Self) extends AnyVal {
       
       inline def setVisibleInTime(value: Double): Self = StObject.set(x, "visibleInTime", value.asInstanceOf[js.Any])
     }

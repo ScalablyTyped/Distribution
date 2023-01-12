@@ -30,7 +30,8 @@ object XPresentationSupplier {
     __obj.asInstanceOf[XPresentationSupplier]
   }
   
-  extension [Self <: XPresentationSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPresentationSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetPresentation(value: () => XPresentation): Self = StObject.set(x, "getPresentation", js.Any.fromFunction0(value))
     

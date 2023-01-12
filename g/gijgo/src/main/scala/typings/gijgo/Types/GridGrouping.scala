@@ -15,7 +15,8 @@ object GridGrouping {
     __obj.asInstanceOf[GridGrouping]
   }
   
-  extension [Self <: GridGrouping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridGrouping] (val x: Self) extends AnyVal {
     
     inline def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
   }

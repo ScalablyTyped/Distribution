@@ -31,7 +31,8 @@ object TbsCertListNextUpdate {
     __obj.asInstanceOf[TbsCertListNextUpdate]
   }
   
-  extension [Self <: TbsCertListNextUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TbsCertListNextUpdate] (val x: Self) extends AnyVal {
     
     inline def setCrlExtensions(value: ExtensionsSchema): Self = StObject.set(x, "crlExtensions", value.asInstanceOf[js.Any])
     

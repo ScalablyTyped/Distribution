@@ -26,7 +26,8 @@ object LegendMixins {
     __obj.asInstanceOf[LegendMixins]
   }
   
-  extension [Self <: LegendMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendMixins] (val x: Self) extends AnyVal {
     
     inline def setLegend(value: Legend[ExprRef | SignalRef]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     

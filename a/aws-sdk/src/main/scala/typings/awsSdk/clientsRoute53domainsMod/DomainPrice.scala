@@ -43,7 +43,8 @@ object DomainPrice {
     __obj.asInstanceOf[DomainPrice]
   }
   
-  extension [Self <: DomainPrice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainPrice] (val x: Self) extends AnyVal {
     
     inline def setChangeOwnershipPrice(value: PriceWithCurrency): Self = StObject.set(x, "ChangeOwnershipPrice", value.asInstanceOf[js.Any])
     

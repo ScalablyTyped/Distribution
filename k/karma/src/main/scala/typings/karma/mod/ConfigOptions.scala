@@ -462,7 +462,8 @@ object ConfigOptions {
     __obj.asInstanceOf[ConfigOptions]
   }
   
-  extension [Self <: ConfigOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoWatch(value: Boolean): Self = StObject.set(x, "autoWatch", value.asInstanceOf[js.Any])
     

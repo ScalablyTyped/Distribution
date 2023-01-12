@@ -17,7 +17,8 @@ object RankEvalRankEvalMetricRatingTreshold {
     __obj.asInstanceOf[RankEvalRankEvalMetricRatingTreshold]
   }
   
-  extension [Self <: RankEvalRankEvalMetricRatingTreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RankEvalRankEvalMetricRatingTreshold] (val x: Self) extends AnyVal {
     
     inline def setRelevant_rating_threshold(value: integer): Self = StObject.set(x, "relevant_rating_threshold", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ED448KeyPairOptions {
     __obj.asInstanceOf[ED448KeyPairOptions[PubF, PrivF]]
   }
   
-  extension [Self <: ED448KeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](x: Self & (ED448KeyPairOptions[PubF, PrivF])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ED448KeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] (val x: Self & (ED448KeyPairOptions[PubF, PrivF])) extends AnyVal {
     
     inline def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] & `0`): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object distBottomSheetBottomSheetMod extends Shortcut {
       __obj.asInstanceOf[BottomSheetProps]
     }
     
-    extension [Self <: BottomSheetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomSheetProps] (val x: Self) extends AnyVal {
       
       inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       

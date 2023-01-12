@@ -23,7 +23,8 @@ object Ec2Config {
     __obj.asInstanceOf[Ec2Config]
   }
   
-  extension [Self <: Ec2Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ec2Config] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroupArns(value: Ec2SecurityGroupArnList): Self = StObject.set(x, "SecurityGroupArns", value.asInstanceOf[js.Any])
     

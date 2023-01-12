@@ -15,7 +15,8 @@ object Rules {
     __obj.asInstanceOf[Rules]
   }
   
-  extension [Self <: Rules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
     
     inline def setRules(value: typings.matrixAppserviceBridge.libComponentsRoomLinkValidatorMod.Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
   }

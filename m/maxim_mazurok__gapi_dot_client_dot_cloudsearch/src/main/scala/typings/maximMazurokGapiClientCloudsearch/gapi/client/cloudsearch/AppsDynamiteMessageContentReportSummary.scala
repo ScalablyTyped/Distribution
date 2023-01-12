@@ -19,7 +19,8 @@ object AppsDynamiteMessageContentReportSummary {
     __obj.asInstanceOf[AppsDynamiteMessageContentReportSummary]
   }
   
-  extension [Self <: AppsDynamiteMessageContentReportSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteMessageContentReportSummary] (val x: Self) extends AnyVal {
     
     inline def setNumberReports(value: Double): Self = StObject.set(x, "numberReports", value.asInstanceOf[js.Any])
     

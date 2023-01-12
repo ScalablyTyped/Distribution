@@ -25,7 +25,8 @@ object IColumnDragDropDetails {
     __obj.asInstanceOf[IColumnDragDropDetails]
   }
   
-  extension [Self <: IColumnDragDropDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnDragDropDetails] (val x: Self) extends AnyVal {
     
     inline def setDraggedIndex(value: Double): Self = StObject.set(x, "draggedIndex", value.asInstanceOf[js.Any])
     

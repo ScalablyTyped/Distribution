@@ -23,7 +23,8 @@ object ListEnvironmentsResponse {
     __obj.asInstanceOf[ListEnvironmentsResponse]
   }
   
-  extension [Self <: ListEnvironmentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEnvironmentsResponse] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentSummaryList(value: EnvironmentSummaries): Self = StObject.set(x, "EnvironmentSummaryList", value.asInstanceOf[js.Any])
     

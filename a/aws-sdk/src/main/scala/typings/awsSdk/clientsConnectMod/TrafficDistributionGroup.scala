@@ -48,7 +48,8 @@ object TrafficDistributionGroup {
     __obj.asInstanceOf[TrafficDistributionGroup]
   }
   
-  extension [Self <: TrafficDistributionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficDistributionGroup] (val x: Self) extends AnyVal {
     
     inline def setArn(value: TrafficDistributionGroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

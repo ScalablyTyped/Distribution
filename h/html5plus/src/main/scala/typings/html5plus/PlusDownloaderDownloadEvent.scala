@@ -26,7 +26,8 @@ object PlusDownloaderDownloadEvent {
     __obj.asInstanceOf[PlusDownloaderDownloadEvent]
   }
   
-  extension [Self <: PlusDownloaderDownloadEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusDownloaderDownloadEvent] (val x: Self) extends AnyVal {
     
     inline def setStatechanged(value: String): Self = StObject.set(x, "statechanged", value.asInstanceOf[js.Any])
     

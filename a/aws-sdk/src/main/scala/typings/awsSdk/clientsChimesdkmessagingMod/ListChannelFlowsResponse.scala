@@ -23,7 +23,8 @@ object ListChannelFlowsResponse {
     __obj.asInstanceOf[ListChannelFlowsResponse]
   }
   
-  extension [Self <: ListChannelFlowsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChannelFlowsResponse] (val x: Self) extends AnyVal {
     
     inline def setChannelFlows(value: ChannelFlowSummaryList): Self = StObject.set(x, "ChannelFlows", value.asInstanceOf[js.Any])
     

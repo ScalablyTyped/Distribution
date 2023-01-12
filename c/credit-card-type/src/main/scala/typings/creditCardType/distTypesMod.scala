@@ -47,7 +47,8 @@ object distTypesMod {
       __obj.asInstanceOf[BuiltInCreditCardType]
     }
     
-    extension [Self <: BuiltInCreditCardType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuiltInCreditCardType] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Size): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object distTypesMod {
       __obj.asInstanceOf[CreditCardType]
     }
     
-    extension [Self <: CreditCardType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreditCardType] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Name): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

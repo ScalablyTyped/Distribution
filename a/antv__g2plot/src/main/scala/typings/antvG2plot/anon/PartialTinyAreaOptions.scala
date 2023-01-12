@@ -101,7 +101,8 @@ object PartialTinyAreaOptions {
     __obj.asInstanceOf[PartialTinyAreaOptions]
   }
   
-  extension [Self <: PartialTinyAreaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTinyAreaOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

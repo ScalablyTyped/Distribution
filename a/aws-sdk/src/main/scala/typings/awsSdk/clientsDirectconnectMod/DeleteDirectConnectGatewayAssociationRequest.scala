@@ -28,7 +28,8 @@ object DeleteDirectConnectGatewayAssociationRequest {
     __obj.asInstanceOf[DeleteDirectConnectGatewayAssociationRequest]
   }
   
-  extension [Self <: DeleteDirectConnectGatewayAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDirectConnectGatewayAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: DirectConnectGatewayAssociationId): Self = StObject.set(x, "associationId", value.asInstanceOf[js.Any])
     

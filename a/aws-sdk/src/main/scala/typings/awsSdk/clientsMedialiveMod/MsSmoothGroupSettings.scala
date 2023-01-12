@@ -118,7 +118,8 @@ object MsSmoothGroupSettings {
     __obj.asInstanceOf[MsSmoothGroupSettings]
   }
   
-  extension [Self <: MsSmoothGroupSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsSmoothGroupSettings] (val x: Self) extends AnyVal {
     
     inline def setAcquisitionPointId(value: string): Self = StObject.set(x, "AcquisitionPointId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BumpMap {
     __obj.asInstanceOf[BumpMap]
   }
   
-  extension [Self <: BumpMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BumpMap] (val x: Self) extends AnyVal {
     
     inline def setBumpMap(value: IUniform[Any]): Self = StObject.set(x, "bumpMap", value.asInstanceOf[js.Any])
     

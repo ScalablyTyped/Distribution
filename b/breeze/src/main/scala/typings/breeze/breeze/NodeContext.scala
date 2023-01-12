@@ -20,7 +20,8 @@ object NodeContext {
     __obj.asInstanceOf[NodeContext]
   }
   
-  extension [Self <: NodeContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeContext] (val x: Self) extends AnyVal {
     
     inline def setNavigationProperty(value: EntityTypeName): Self = StObject.set(x, "navigationProperty", value.asInstanceOf[js.Any])
     

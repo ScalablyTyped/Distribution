@@ -33,7 +33,8 @@ object PlatformManifest {
     __obj.asInstanceOf[PlatformManifest]
   }
   
-  extension [Self <: PlatformManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformManifest] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: AndroidManifest): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     

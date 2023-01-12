@@ -20,7 +20,8 @@ object RemoteSystemConnectionRequest {
     __obj.asInstanceOf[RemoteSystemConnectionRequest]
   }
   
-  extension [Self <: RemoteSystemConnectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteSystemConnectionRequest] (val x: Self) extends AnyVal {
     
     inline def setRemoteSystem(value: RemoteSystem): Self = StObject.set(x, "remoteSystem", value.asInstanceOf[js.Any])
     

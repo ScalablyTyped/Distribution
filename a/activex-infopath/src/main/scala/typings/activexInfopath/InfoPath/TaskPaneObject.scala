@@ -21,7 +21,8 @@ object TaskPaneObject {
     __obj.asInstanceOf[TaskPaneObject]
   }
   
-  extension [Self <: TaskPaneObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskPaneObject] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotTaskPaneObject_typekey(value: TaskPaneObject): Self = StObject.set(x, "InfoPath.TaskPaneObject_typekey", value.asInstanceOf[js.Any])
     

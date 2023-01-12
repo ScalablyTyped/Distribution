@@ -181,7 +181,8 @@ object libEsmComponentsFormsControlGroupMod {
       __obj.asInstanceOf[IControlGroupProps]
     }
     
-    extension [Self <: IControlGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IControlGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

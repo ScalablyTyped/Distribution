@@ -19,7 +19,8 @@ object RuntimeGuestOsFeature {
     __obj.asInstanceOf[RuntimeGuestOsFeature]
   }
   
-  extension [Self <: RuntimeGuestOsFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeGuestOsFeature] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

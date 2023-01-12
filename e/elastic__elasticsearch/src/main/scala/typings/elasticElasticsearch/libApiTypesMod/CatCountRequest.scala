@@ -17,7 +17,8 @@ object CatCountRequest {
     __obj.asInstanceOf[CatCountRequest]
   }
   
-  extension [Self <: CatCountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatCountRequest] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Indices): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

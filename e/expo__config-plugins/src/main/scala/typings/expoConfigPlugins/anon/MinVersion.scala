@@ -17,7 +17,8 @@ object MinVersion {
     __obj.asInstanceOf[MinVersion]
   }
   
-  extension [Self <: MinVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinVersion] (val x: Self) extends AnyVal {
     
     inline def setMinVersion(value: Double): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Migrations {
     __obj.asInstanceOf[Migrations]
   }
   
-  extension [Self <: Migrations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Migrations] (val x: Self) extends AnyVal {
     
     inline def setMigrations(value: String): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
     

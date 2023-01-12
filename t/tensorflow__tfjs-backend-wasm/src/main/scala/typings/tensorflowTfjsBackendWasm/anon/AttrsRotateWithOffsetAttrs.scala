@@ -22,7 +22,8 @@ object AttrsRotateWithOffsetAttrs {
     __obj.asInstanceOf[AttrsRotateWithOffsetAttrs]
   }
   
-  extension [Self <: AttrsRotateWithOffsetAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsRotateWithOffsetAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: RotateWithOffsetAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

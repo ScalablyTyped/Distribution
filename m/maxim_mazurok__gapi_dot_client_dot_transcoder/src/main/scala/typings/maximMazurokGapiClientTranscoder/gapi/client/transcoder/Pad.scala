@@ -25,7 +25,8 @@ object Pad {
     __obj.asInstanceOf[Pad]
   }
   
-  extension [Self <: Pad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pad] (val x: Self) extends AnyVal {
     
     inline def setBottomPixels(value: Double): Self = StObject.set(x, "bottomPixels", value.asInstanceOf[js.Any])
     

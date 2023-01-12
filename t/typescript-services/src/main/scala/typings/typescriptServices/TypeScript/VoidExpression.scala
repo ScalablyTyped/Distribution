@@ -41,7 +41,8 @@ object VoidExpression {
     __obj.asInstanceOf[VoidExpression]
   }
   
-  extension [Self <: VoidExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoidExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

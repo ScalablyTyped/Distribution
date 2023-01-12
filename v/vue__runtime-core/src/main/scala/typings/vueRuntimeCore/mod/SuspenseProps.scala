@@ -21,7 +21,8 @@ object SuspenseProps {
     __obj.asInstanceOf[SuspenseProps]
   }
   
-  extension [Self <: SuspenseProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuspenseProps] (val x: Self) extends AnyVal {
     
     inline def setOnFallback(value: () => Unit): Self = StObject.set(x, "onFallback", js.Any.fromFunction0(value))
     

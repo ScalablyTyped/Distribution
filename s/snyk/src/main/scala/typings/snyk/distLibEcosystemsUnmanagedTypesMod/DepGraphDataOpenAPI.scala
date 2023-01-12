@@ -21,7 +21,8 @@ object DepGraphDataOpenAPI {
     __obj.asInstanceOf[DepGraphDataOpenAPI]
   }
   
-  extension [Self <: DepGraphDataOpenAPI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepGraphDataOpenAPI] (val x: Self) extends AnyVal {
     
     inline def setGraph(value: GraphOpenApi): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object typesSrcCoreStrategiesCachedStrategyMod {
       __obj.asInstanceOf[CachedStrategy]
     }
     
-    extension [Self <: CachedStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachedStrategy] (val x: Self) extends AnyVal {
       
       inline def setStrategy(value: Strategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       

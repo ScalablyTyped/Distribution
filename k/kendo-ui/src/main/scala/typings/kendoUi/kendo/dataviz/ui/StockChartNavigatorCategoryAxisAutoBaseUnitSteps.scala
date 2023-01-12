@@ -27,7 +27,8 @@ object StockChartNavigatorCategoryAxisAutoBaseUnitSteps {
     __obj.asInstanceOf[StockChartNavigatorCategoryAxisAutoBaseUnitSteps]
   }
   
-  extension [Self <: StockChartNavigatorCategoryAxisAutoBaseUnitSteps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartNavigatorCategoryAxisAutoBaseUnitSteps] (val x: Self) extends AnyVal {
     
     inline def setDays(value: Any): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     

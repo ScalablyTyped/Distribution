@@ -27,7 +27,8 @@ object permissions {
       __obj.asInstanceOf[AnyPermissions]
     }
     
-    extension [Self <: AnyPermissions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnyPermissions] (val x: Self) extends AnyVal {
       
       inline def setOrigins(value: js.Array[MatchPattern]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object permissions {
       __obj.asInstanceOf[Permissions]
     }
     
-    extension [Self <: Permissions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Permissions] (val x: Self) extends AnyVal {
       
       inline def setOrigins(value: js.Array[MatchPattern]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object RemoveTargetsResponse {
     __obj.asInstanceOf[RemoveTargetsResponse]
   }
   
-  extension [Self <: RemoveTargetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveTargetsResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedEntries(value: RemoveTargetsResultEntryList): Self = StObject.set(x, "FailedEntries", value.asInstanceOf[js.Any])
     

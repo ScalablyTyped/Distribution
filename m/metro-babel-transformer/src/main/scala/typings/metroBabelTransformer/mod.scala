@@ -20,7 +20,8 @@ object mod {
       __obj.asInstanceOf[CustomTransformOptions]
     }
     
-    extension [Self <: CustomTransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomTransformOptions] (val x: Self) extends AnyVal {
       
       inline def set__proto__(value: Null): Self = StObject.set(x, "__proto__", value.asInstanceOf[js.Any])
     }

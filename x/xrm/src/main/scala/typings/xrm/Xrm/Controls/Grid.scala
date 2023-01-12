@@ -98,7 +98,8 @@ object Grid {
       __obj.asInstanceOf[GridEntity]
     }
     
-    extension [Self <: GridEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridEntity] (val x: Self) extends AnyVal {
       
       inline def setGetEntityName(value: () => String): Self = StObject.set(x, "getEntityName", js.Any.fromFunction0(value))
       
@@ -136,7 +137,8 @@ object Grid {
       __obj.asInstanceOf[GridRow]
     }
     
-    extension [Self <: GridRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridRow] (val x: Self) extends AnyVal {
       
       inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -164,13 +166,15 @@ object Grid {
       __obj.asInstanceOf[GridRowData]
     }
     
-    extension [Self <: GridRowData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridRowData] (val x: Self) extends AnyVal {
       
       inline def setGetEntity(value: () => GridEntity): Self = StObject.set(x, "getEntity", js.Any.fromFunction0(value))
     }
   }
   
-  extension [Self <: Grid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grid] (val x: Self) extends AnyVal {
     
     inline def setGetRows(value: () => ItemCollection[GridRow]): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
     

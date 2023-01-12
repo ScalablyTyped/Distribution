@@ -51,7 +51,8 @@ object ojTextAreaSettableProperties {
     __obj.asInstanceOf[ojTextAreaSettableProperties]
   }
   
-  extension [Self <: ojTextAreaSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojTextAreaSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setConverter(value: Converter[Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     

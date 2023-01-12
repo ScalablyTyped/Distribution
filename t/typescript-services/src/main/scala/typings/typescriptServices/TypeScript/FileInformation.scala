@@ -17,7 +17,8 @@ object FileInformation {
     __obj.asInstanceOf[FileInformation]
   }
   
-  extension [Self <: FileInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileInformation] (val x: Self) extends AnyVal {
     
     inline def setByteOrderMark(value: ByteOrderMark): Self = StObject.set(x, "byteOrderMark", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object MlDetectionRule {
     __obj.asInstanceOf[MlDetectionRule]
   }
   
-  extension [Self <: MlDetectionRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDetectionRule] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[MlRuleAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

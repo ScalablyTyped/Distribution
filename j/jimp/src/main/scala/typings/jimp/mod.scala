@@ -95,7 +95,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Bitmap]
     }
     
-    extension [Self <: Bitmap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bitmap] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BlendMode]
     }
     
-    extension [Self <: BlendMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlendMode] (val x: Self) extends AnyVal {
       
       inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ColorAction]
     }
     
-    extension [Self <: ColorAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorAction] (val x: Self) extends AnyVal {
       
       inline def setApply(value: ColorActionName): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
       
@@ -818,7 +821,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Font]
     }
     
-    extension [Self <: Font](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
       
       inline def setChars(value: StringDictionary[FontChar]): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
@@ -877,7 +881,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FontChar]
     }
     
-    extension [Self <: FontChar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontChar] (val x: Self) extends AnyVal {
       
       inline def setChnl(value: Double): Self = StObject.set(x, "chnl", value.asInstanceOf[js.Any])
       
@@ -944,7 +949,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FontCommon]
     }
     
-    extension [Self <: FontCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontCommon] (val x: Self) extends AnyVal {
       
       inline def setAlphaChnl(value: Double): Self = StObject.set(x, "alphaChnl", value.asInstanceOf[js.Any])
       
@@ -1014,7 +1020,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FontInfo]
     }
     
-    extension [Self <: FontInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontInfo] (val x: Self) extends AnyVal {
       
       inline def setAa(value: Double): Self = StObject.set(x, "aa", value.asInstanceOf[js.Any])
       
@@ -1113,7 +1120,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RGB]
     }
     
-    extension [Self <: RGB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -1143,7 +1151,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RGBA]
     }
     
-    extension [Self <: RGBA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -1170,7 +1179,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[URLOptions]
     }
     
-    extension [Self <: URLOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLOptions] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       

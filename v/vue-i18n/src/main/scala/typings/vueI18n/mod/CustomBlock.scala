@@ -19,7 +19,8 @@ object CustomBlock {
     __obj.asInstanceOf[CustomBlock[Message]]
   }
   
-  extension [Self <: CustomBlock[?], Message](x: Self & CustomBlock[Message]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomBlock[?], Message] (val x: Self & CustomBlock[Message]) extends AnyVal {
     
     inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

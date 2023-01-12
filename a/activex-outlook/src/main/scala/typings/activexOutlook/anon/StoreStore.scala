@@ -15,7 +15,8 @@ object StoreStore {
     __obj.asInstanceOf[StoreStore]
   }
   
-  extension [Self <: StoreStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreStore] (val x: Self) extends AnyVal {
     
     inline def setStore(value: typings.activexOutlook.Outlook.Store): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
   }

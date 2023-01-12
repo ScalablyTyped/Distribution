@@ -46,7 +46,8 @@ object LineOfSightAnalysisResult {
     __obj.asInstanceOf[LineOfSightAnalysisResult]
   }
   
-  extension [Self <: LineOfSightAnalysisResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineOfSightAnalysisResult] (val x: Self) extends AnyVal {
     
     inline def setIntersectedGraphic(value: Graphic): Self = StObject.set(x, "intersectedGraphic", value.asInstanceOf[js.Any])
     

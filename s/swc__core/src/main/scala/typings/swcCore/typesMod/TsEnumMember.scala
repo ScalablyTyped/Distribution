@@ -24,7 +24,8 @@ object TsEnumMember {
     __obj.asInstanceOf[TsEnumMember]
   }
   
-  extension [Self <: TsEnumMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsEnumMember] (val x: Self) extends AnyVal {
     
     inline def setId(value: TsEnumMemberId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

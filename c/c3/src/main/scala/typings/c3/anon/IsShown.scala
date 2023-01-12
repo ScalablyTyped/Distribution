@@ -28,7 +28,8 @@ object IsShown {
     __obj.asInstanceOf[IsShown]
   }
   
-  extension [Self <: IsShown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsShown] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

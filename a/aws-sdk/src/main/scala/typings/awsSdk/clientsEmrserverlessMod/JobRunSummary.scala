@@ -84,7 +84,8 @@ object JobRunSummary {
     __obj.asInstanceOf[JobRunSummary]
   }
   
-  extension [Self <: JobRunSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobRunSummary] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     

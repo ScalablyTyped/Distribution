@@ -59,7 +59,8 @@ object generateHtmlMod {
       __obj.asInstanceOf[GenerateHTMLOptions]
     }
     
-    extension [Self <: GenerateHTMLOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateHTMLOptions] (val x: Self) extends AnyVal {
       
       inline def setWhitespaceMode(value: `inline` | block): Self = StObject.set(x, "whitespaceMode", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object generateHtmlMod {
       __obj.asInstanceOf[ImgAttributes[AddedAttributes]]
     }
     
-    extension [Self <: ImgAttributes[?], AddedAttributes](x: Self & ImgAttributes[AddedAttributes]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImgAttributes[?], AddedAttributes] (val x: Self & ImgAttributes[AddedAttributes]) extends AnyVal {
       
       inline def setImg(value: AddedAttributes & Height): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     }
@@ -103,7 +105,8 @@ object generateHtmlMod {
       __obj.asInstanceOf[PictureAttributes[AddedAttributes]]
     }
     
-    extension [Self <: PictureAttributes[?], AddedAttributes](x: Self & PictureAttributes[AddedAttributes]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PictureAttributes[?], AddedAttributes] (val x: Self & PictureAttributes[AddedAttributes]) extends AnyVal {
       
       inline def setPicture(value: Array[ImgAttributes[AddedAttributes] | SourceAttributes]): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     }
@@ -123,7 +126,8 @@ object generateHtmlMod {
       __obj.asInstanceOf[SourceAttributes]
     }
     
-    extension [Self <: SourceAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceAttributes] (val x: Self) extends AnyVal {
       
       inline def setSource(value: Sizes): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }

@@ -45,7 +45,8 @@ object examplesJsmExportersExrexporterMod {
       __obj.asInstanceOf[EXRExporterParseOptions]
     }
     
-    extension [Self <: EXRExporterParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EXRExporterParseOptions] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       

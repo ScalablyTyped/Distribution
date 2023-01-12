@@ -23,7 +23,8 @@ object OnBehalfOfContentOwner {
     __obj.asInstanceOf[OnBehalfOfContentOwner]
   }
   
-  extension [Self <: OnBehalfOfContentOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBehalfOfContentOwner] (val x: Self) extends AnyVal {
     
     inline def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object ConstraintType {
     __obj.asInstanceOf[ConstraintType]
   }
   
-  extension [Self <: ConstraintType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstraintType] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "additionalInfo", value.asInstanceOf[js.Any])
     

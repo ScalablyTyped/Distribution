@@ -19,7 +19,8 @@ object PartialDataURLOptions {
     __obj.asInstanceOf[PartialDataURLOptions]
   }
   
-  extension [Self <: PartialDataURLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDataURLOptions] (val x: Self) extends AnyVal {
     
     inline def setEncoderOptions(value: Double): Self = StObject.set(x, "encoderOptions", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object ServiceTask {
     __obj.asInstanceOf[ServiceTask]
   }
   
-  extension [Self <: ServiceTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceTask] (val x: Self) extends AnyVal {
     
     inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     

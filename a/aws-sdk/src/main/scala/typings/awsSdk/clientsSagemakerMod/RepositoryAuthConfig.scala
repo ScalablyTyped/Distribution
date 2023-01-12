@@ -18,7 +18,8 @@ object RepositoryAuthConfig {
     __obj.asInstanceOf[RepositoryAuthConfig]
   }
   
-  extension [Self <: RepositoryAuthConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryAuthConfig] (val x: Self) extends AnyVal {
     
     inline def setRepositoryCredentialsProviderArn(value: RepositoryCredentialsProviderArn): Self = StObject.set(x, "RepositoryCredentialsProviderArn", value.asInstanceOf[js.Any])
   }

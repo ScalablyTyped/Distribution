@@ -241,7 +241,8 @@ object mod {
       __obj.asInstanceOf[IMessageHandler]
     }
     
-    extension [Self <: IMessageHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessageHandler] (val x: Self) extends AnyVal {
       
       inline def setProcessMessage(value: Message => Unit): Self = StObject.set(x, "processMessage", js.Any.fromFunction1(value))
     }
@@ -268,7 +269,8 @@ object mod {
       __obj.asInstanceOf[IMessageHook]
     }
     
-    extension [Self <: IMessageHook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessageHook] (val x: Self) extends AnyVal {
       
       inline def setMessageHook(value: (IMessageHandler, Message) => Boolean): Self = StObject.set(x, "messageHook", js.Any.fromFunction2(value))
     }

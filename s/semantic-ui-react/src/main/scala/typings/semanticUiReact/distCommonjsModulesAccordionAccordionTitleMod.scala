@@ -88,7 +88,8 @@ object distCommonjsModulesAccordionAccordionTitleMod extends Shortcut {
       __obj.asInstanceOf[StrictAccordionTitleProps]
     }
     
-    extension [Self <: StrictAccordionTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictAccordionTitleProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

@@ -106,7 +106,8 @@ object distSchemaTypesMod {
       __obj.asInstanceOf[ScalarTag]
     }
     
-    extension [Self <: ScalarTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalarTag] (val x: Self) extends AnyVal {
       
       inline def setResolve(value: (String, js.Function1[/* message */ String, Unit], ParseOptions) => Any): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
       
@@ -164,7 +165,8 @@ object distSchemaTypesMod {
       __obj.asInstanceOf[TagBase]
     }
     
-    extension [Self <: TagBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagBase] (val x: Self) extends AnyVal {
       
       inline def setCreateNode(value: (/* schema */ Schema, /* value */ Any, /* ctx */ CreateNodeContext) => Node[Any]): Self = StObject.set(x, "createNode", js.Any.fromFunction3(value))
       

@@ -17,7 +17,8 @@ object TimedMetadataTrackFailedEventArgs {
     __obj.asInstanceOf[TimedMetadataTrackFailedEventArgs]
   }
   
-  extension [Self <: TimedMetadataTrackFailedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedMetadataTrackFailedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setError(value: TimedMetadataTrackError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

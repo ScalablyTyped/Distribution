@@ -18,7 +18,8 @@ object FacetQuery {
     __obj.asInstanceOf[FacetQuery]
   }
   
-  extension [Self <: FacetQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetQuery] (val x: Self) extends AnyVal {
     
     inline def setFacetQuery(value: String): Self = StObject.set(x, "facetQuery", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Fill_ {
     __obj.asInstanceOf[Fill_]
   }
   
-  extension [Self <: Fill_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fill_] (val x: Self) extends AnyVal {
     
     inline def setParts(value: js.Array[Doc]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     

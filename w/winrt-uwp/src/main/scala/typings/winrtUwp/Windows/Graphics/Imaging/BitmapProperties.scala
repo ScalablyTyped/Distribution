@@ -35,7 +35,8 @@ object BitmapProperties {
     __obj.asInstanceOf[BitmapProperties]
   }
   
-  extension [Self <: BitmapProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitmapProperties] (val x: Self) extends AnyVal {
     
     inline def setGetPropertiesAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
     

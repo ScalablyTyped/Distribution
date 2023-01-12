@@ -102,7 +102,8 @@ object buildSrcCompileSplitMod {
       __obj.asInstanceOf[Explicit[T]]
     }
     
-    extension [Self <: Explicit[?], T](x: Self & Explicit[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Explicit[?], T] (val x: Self & Explicit[T]) extends AnyVal {
       
       inline def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
       

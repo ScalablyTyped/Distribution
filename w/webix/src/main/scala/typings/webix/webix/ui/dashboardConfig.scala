@@ -79,7 +79,8 @@ object dashboardConfig {
     __obj.asInstanceOf[dashboardConfig]
   }
   
-  extension [Self <: dashboardConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dashboardConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

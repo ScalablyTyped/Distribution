@@ -32,7 +32,8 @@ object ExponentialRolloutRate {
     __obj.asInstanceOf[ExponentialRolloutRate]
   }
   
-  extension [Self <: ExponentialRolloutRate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExponentialRolloutRate] (val x: Self) extends AnyVal {
     
     inline def setBaseRatePerMinute(value: RolloutRatePerMinute): Self = StObject.set(x, "baseRatePerMinute", value.asInstanceOf[js.Any])
     

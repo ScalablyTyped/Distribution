@@ -18,7 +18,8 @@ object DescribeSpotDatafeedSubscriptionRequest {
     __obj.asInstanceOf[DescribeSpotDatafeedSubscriptionRequest]
   }
   
-  extension [Self <: DescribeSpotDatafeedSubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSpotDatafeedSubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

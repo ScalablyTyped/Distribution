@@ -38,7 +38,8 @@ object PersistenceSettings {
     __obj.asInstanceOf[PersistenceSettings]
   }
   
-  extension [Self <: PersistenceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceSettings] (val x: Self) extends AnyVal {
     
     inline def setExperimentalForceOwningTab(value: Boolean): Self = StObject.set(x, "experimentalForceOwningTab", value.asInstanceOf[js.Any])
     

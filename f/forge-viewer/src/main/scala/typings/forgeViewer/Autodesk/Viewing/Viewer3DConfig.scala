@@ -34,7 +34,8 @@ object Viewer3DConfig {
     __obj.asInstanceOf[Viewer3DConfig]
   }
   
-  extension [Self <: Viewer3DConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Viewer3DConfig] (val x: Self) extends AnyVal {
     
     inline def setAddFooter(value: Boolean): Self = StObject.set(x, "addFooter", value.asInstanceOf[js.Any])
     

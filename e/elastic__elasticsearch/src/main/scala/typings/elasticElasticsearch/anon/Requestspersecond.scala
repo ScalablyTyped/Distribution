@@ -18,7 +18,8 @@ object Requestspersecond {
     __obj.asInstanceOf[Requestspersecond]
   }
   
-  extension [Self <: Requestspersecond](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Requestspersecond] (val x: Self) extends AnyVal {
     
     inline def setRequests_per_second(value: float): Self = StObject.set(x, "requests_per_second", value.asInstanceOf[js.Any])
     

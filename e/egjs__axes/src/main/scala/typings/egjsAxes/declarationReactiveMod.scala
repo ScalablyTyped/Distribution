@@ -36,7 +36,8 @@ object declarationReactiveMod {
       __obj.asInstanceOf[AxesData]
     }
     
-    extension [Self <: AxesData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesData] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: ObjectInterface[AxisOption]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       

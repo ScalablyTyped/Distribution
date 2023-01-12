@@ -23,7 +23,8 @@ object UpdateFieldLevelEncryptionConfigResult {
     __obj.asInstanceOf[UpdateFieldLevelEncryptionConfigResult]
   }
   
-  extension [Self <: UpdateFieldLevelEncryptionConfigResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFieldLevelEncryptionConfigResult] (val x: Self) extends AnyVal {
     
     inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     

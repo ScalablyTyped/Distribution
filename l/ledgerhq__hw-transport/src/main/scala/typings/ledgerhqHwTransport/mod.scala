@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[DescriptorEvent[Descriptor]]
     }
     
-    extension [Self <: DescriptorEvent[?], Descriptor](x: Self & DescriptorEvent[Descriptor]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescriptorEvent[?], Descriptor] (val x: Self & DescriptorEvent[Descriptor]) extends AnyVal {
       
       inline def setDescriptor(value: Descriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object mod {
       __obj.asInstanceOf[Observer[Ev]]
     }
     
-    extension [Self <: Observer[?], Ev](x: Self & Observer[Ev]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?], Ev] (val x: Self & Observer[Ev]) extends AnyVal {
       
       inline def setComplete(value: () => Any): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -130,7 +132,8 @@ object mod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }

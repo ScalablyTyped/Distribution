@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsTableReservationMod extends Shortcut {
       __obj.asInstanceOf[TableReservationProps]
     }
     
-    extension [Self <: TableReservationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableReservationProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

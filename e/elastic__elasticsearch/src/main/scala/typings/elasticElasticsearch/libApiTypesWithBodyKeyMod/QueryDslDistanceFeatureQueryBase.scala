@@ -21,7 +21,8 @@ object QueryDslDistanceFeatureQueryBase {
     __obj.asInstanceOf[QueryDslDistanceFeatureQueryBase[TOrigin, TDistance]]
   }
   
-  extension [Self <: QueryDslDistanceFeatureQueryBase[?, ?], TOrigin, TDistance](x: Self & (QueryDslDistanceFeatureQueryBase[TOrigin, TDistance])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslDistanceFeatureQueryBase[?, ?], TOrigin, TDistance] (val x: Self & (QueryDslDistanceFeatureQueryBase[TOrigin, TDistance])) extends AnyVal {
     
     inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

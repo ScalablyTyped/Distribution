@@ -24,7 +24,8 @@ object ProjectConfig {
     __obj.asInstanceOf[ProjectConfig]
   }
   
-  extension [Self <: ProjectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectConfig] (val x: Self) extends AnyVal {
     
     inline def setEnablePrivateKeyCheck(value: Boolean): Self = StObject.set(x, "enablePrivateKeyCheck", value.asInstanceOf[js.Any])
     

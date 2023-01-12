@@ -36,7 +36,8 @@ object Footer {
     __obj.asInstanceOf[Footer]
   }
   
-  extension [Self <: Footer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Footer] (val x: Self) extends AnyVal {
     
     inline def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     

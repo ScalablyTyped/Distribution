@@ -88,7 +88,8 @@ object anon {
       __obj.asInstanceOf[Asciionly]
     }
     
-    extension [Self <: Asciionly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Asciionly] (val x: Self) extends AnyVal {
       
       inline def setAscii_only(value: Boolean): Self = StObject.set(x, "ascii_only", value.asInstanceOf[js.Any])
       
@@ -254,7 +255,8 @@ object anon {
       __obj.asInstanceOf[Booleans]
     }
     
-    extension [Self <: Booleans](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Booleans] (val x: Self) extends AnyVal {
       
       inline def setBooleans(value: Boolean): Self = StObject.set(x, "booleans", value.asInstanceOf[js.Any])
       
@@ -353,7 +355,8 @@ object anon {
       __obj.asInstanceOf[Min]
     }
     
-    extension [Self <: Min](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Min] (val x: Self) extends AnyVal {
       
       inline def setMin(value: String | js.Array[String]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       

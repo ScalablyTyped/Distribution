@@ -43,7 +43,8 @@ object ASPxClientHtmlEditorTableColumnPropertiesDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableColumnPropertiesDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorTableColumnPropertiesDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorTableColumnPropertiesDialog] (val x: Self) extends AnyVal {
     
     inline def setGetWidthTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetWidthTypeComboBox", js.Any.fromFunction0(value))
     

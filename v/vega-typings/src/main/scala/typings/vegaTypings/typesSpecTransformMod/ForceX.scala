@@ -23,7 +23,8 @@ object ForceX {
     __obj.asInstanceOf[ForceX]
   }
   
-  extension [Self <: ForceX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceX] (val x: Self) extends AnyVal {
     
     inline def setForce(value: typings.vegaTypings.vegaTypingsStrings.x): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

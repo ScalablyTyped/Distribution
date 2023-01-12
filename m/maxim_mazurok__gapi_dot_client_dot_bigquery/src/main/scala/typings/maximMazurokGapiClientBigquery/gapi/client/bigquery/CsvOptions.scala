@@ -59,7 +59,8 @@ object CsvOptions {
     __obj.asInstanceOf[CsvOptions]
   }
   
-  extension [Self <: CsvOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CsvOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowJaggedRows(value: Boolean): Self = StObject.set(x, "allowJaggedRows", value.asInstanceOf[js.Any])
     

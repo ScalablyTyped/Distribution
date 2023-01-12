@@ -72,7 +72,8 @@ object IsoSpeedControl {
     __obj.asInstanceOf[IsoSpeedControl]
   }
   
-  extension [Self <: IsoSpeedControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsoSpeedControl] (val x: Self) extends AnyVal {
     
     inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

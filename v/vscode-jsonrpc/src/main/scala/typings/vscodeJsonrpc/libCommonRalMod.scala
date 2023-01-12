@@ -103,7 +103,8 @@ object libCommonRalMod {
     
     type MessageBufferEncoding = typings.vscodeJsonrpc.libCommonRalMod.MessageBufferEncoding
     
-    extension [Self <: RAL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RAL] (val x: Self) extends AnyVal {
       
       inline def setApplicationJson(value: Decoder): Self = StObject.set(x, "applicationJson", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object libCommonRalMod {
       __obj.asInstanceOf[ReadableStream]
     }
     
-    extension [Self <: ReadableStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadableStream] (val x: Self) extends AnyVal {
       
       inline def setOnClose(value: js.Function0[Unit] => Disposable): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       

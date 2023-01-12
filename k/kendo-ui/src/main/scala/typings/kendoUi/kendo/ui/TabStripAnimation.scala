@@ -17,7 +17,8 @@ object TabStripAnimation {
     __obj.asInstanceOf[TabStripAnimation]
   }
   
-  extension [Self <: TabStripAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabStripAnimation] (val x: Self) extends AnyVal {
     
     inline def setClose(value: TabStripAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

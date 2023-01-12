@@ -73,7 +73,8 @@ object AwsApiGatewayMethodSettings {
     __obj.asInstanceOf[AwsApiGatewayMethodSettings]
   }
   
-  extension [Self <: AwsApiGatewayMethodSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsApiGatewayMethodSettings] (val x: Self) extends AnyVal {
     
     inline def setCacheDataEncrypted(value: Boolean): Self = StObject.set(x, "CacheDataEncrypted", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object TypedPropertyDescriptor {
     __obj.asInstanceOf[TypedPropertyDescriptor[T]]
   }
   
-  extension [Self <: TypedPropertyDescriptor[?], T](x: Self & TypedPropertyDescriptor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedPropertyDescriptor[?], T] (val x: Self & TypedPropertyDescriptor[T]) extends AnyVal {
     
     inline def setConfigurable(value: scala.Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     

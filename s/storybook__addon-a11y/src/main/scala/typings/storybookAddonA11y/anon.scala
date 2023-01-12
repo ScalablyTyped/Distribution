@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[BoxShadow]
     }
     
-    extension [Self <: BoxShadow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxShadow] (val x: Self) extends AnyVal {
       
       inline def setBoxShadow(value: String): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Items]
     }
     
-    extension [Self <: Items](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Result]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

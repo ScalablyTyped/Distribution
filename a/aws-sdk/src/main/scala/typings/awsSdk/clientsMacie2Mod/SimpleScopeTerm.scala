@@ -28,7 +28,8 @@ object SimpleScopeTerm {
     __obj.asInstanceOf[SimpleScopeTerm]
   }
   
-  extension [Self <: SimpleScopeTerm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleScopeTerm] (val x: Self) extends AnyVal {
     
     inline def setComparator(value: JobComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     

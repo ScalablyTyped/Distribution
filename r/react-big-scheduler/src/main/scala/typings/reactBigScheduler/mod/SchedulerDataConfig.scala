@@ -109,7 +109,8 @@ object SchedulerDataConfig {
     __obj.asInstanceOf[SchedulerDataConfig]
   }
   
-  extension [Self <: SchedulerDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerDataConfig] (val x: Self) extends AnyVal {
     
     inline def setAgendaMaxEventWidth(value: Double): Self = StObject.set(x, "agendaMaxEventWidth", value.asInstanceOf[js.Any])
     

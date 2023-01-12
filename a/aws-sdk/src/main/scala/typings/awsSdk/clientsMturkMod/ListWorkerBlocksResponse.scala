@@ -25,7 +25,8 @@ object ListWorkerBlocksResponse {
     __obj.asInstanceOf[ListWorkerBlocksResponse]
   }
   
-  extension [Self <: ListWorkerBlocksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWorkerBlocksResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

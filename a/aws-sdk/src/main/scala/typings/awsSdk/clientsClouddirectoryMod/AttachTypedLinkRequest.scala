@@ -44,7 +44,8 @@ object AttachTypedLinkRequest {
     __obj.asInstanceOf[AttachTypedLinkRequest]
   }
   
-  extension [Self <: AttachTypedLinkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachTypedLinkRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: AttributeNameAndValueList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

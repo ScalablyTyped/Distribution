@@ -42,7 +42,8 @@ object IgGridGroupByGroupedColumn {
     __obj.asInstanceOf[IgGridGroupByGroupedColumn]
   }
   
-  extension [Self <: IgGridGroupByGroupedColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridGroupByGroupedColumn] (val x: Self) extends AnyVal {
     
     inline def setCol(value: Any): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     

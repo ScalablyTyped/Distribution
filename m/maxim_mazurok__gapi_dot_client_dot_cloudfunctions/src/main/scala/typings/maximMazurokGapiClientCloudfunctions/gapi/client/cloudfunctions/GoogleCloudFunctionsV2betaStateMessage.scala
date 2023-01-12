@@ -22,7 +22,8 @@ object GoogleCloudFunctionsV2betaStateMessage {
     __obj.asInstanceOf[GoogleCloudFunctionsV2betaStateMessage]
   }
   
-  extension [Self <: GoogleCloudFunctionsV2betaStateMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudFunctionsV2betaStateMessage] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FieldPatterns {
     __obj.asInstanceOf[FieldPatterns]
   }
   
-  extension [Self <: FieldPatterns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldPatterns] (val x: Self) extends AnyVal {
     
     inline def setItems(value: FieldPatternList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

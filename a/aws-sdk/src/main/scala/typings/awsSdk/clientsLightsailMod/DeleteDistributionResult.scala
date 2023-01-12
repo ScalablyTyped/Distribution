@@ -18,7 +18,8 @@ object DeleteDistributionResult {
     __obj.asInstanceOf[DeleteDistributionResult]
   }
   
-  extension [Self <: DeleteDistributionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDistributionResult] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

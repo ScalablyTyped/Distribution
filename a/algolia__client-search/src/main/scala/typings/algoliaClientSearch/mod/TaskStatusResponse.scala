@@ -24,7 +24,8 @@ object TaskStatusResponse {
     __obj.asInstanceOf[TaskStatusResponse]
   }
   
-  extension [Self <: TaskStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setPendingTask(value: Boolean): Self = StObject.set(x, "pendingTask", value.asInstanceOf[js.Any])
     

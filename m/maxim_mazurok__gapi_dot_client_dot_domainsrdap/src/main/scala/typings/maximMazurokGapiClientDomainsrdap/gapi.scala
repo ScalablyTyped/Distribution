@@ -63,7 +63,8 @@ object gapi {
           __obj.asInstanceOf[HttpBody]
         }
         
-        extension [Self <: HttpBody](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: HttpBody] (val x: Self) extends AnyVal {
           
           inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
           
@@ -125,7 +126,8 @@ object gapi {
           __obj.asInstanceOf[Link]
         }
         
-        extension [Self <: Link](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
           
           inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
           
@@ -189,7 +191,8 @@ object gapi {
           __obj.asInstanceOf[Notice]
         }
         
-        extension [Self <: Notice](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Notice] (val x: Self) extends AnyVal {
           
           inline def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
@@ -243,7 +246,8 @@ object gapi {
           __obj.asInstanceOf[RdapResponse]
         }
         
-        extension [Self <: RdapResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: RdapResponse] (val x: Self) extends AnyVal {
           
           inline def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           

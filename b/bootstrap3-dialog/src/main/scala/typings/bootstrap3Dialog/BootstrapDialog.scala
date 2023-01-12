@@ -43,7 +43,8 @@ object BootstrapDialog {
       __obj.asInstanceOf[DialogButton]
     }
     
-    extension [Self <: DialogButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogButton] (val x: Self) extends AnyVal {
       
       inline def setAction(value: /* dialog */ DialogContext => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
@@ -111,7 +112,8 @@ object BootstrapDialog {
       __obj.asInstanceOf[DialogButtonInstance]
     }
     
-    extension [Self <: DialogButtonInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogButtonInstance] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -211,7 +213,8 @@ object BootstrapDialog {
       __obj.asInstanceOf[DialogContext]
     }
     
-    extension [Self <: DialogContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogContext] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -291,7 +294,8 @@ object BootstrapDialog {
       __obj.asInstanceOf[DialogInstance]
     }
     
-    extension [Self <: DialogInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogInstance] (val x: Self) extends AnyVal {
       
       inline def set$modal(value: JQuery[HTMLElement]): Self = StObject.set(x, "$modal", value.asInstanceOf[js.Any])
       
@@ -416,7 +420,8 @@ object BootstrapDialog {
       __obj.asInstanceOf[DialogOptions]
     }
     
-    extension [Self <: DialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

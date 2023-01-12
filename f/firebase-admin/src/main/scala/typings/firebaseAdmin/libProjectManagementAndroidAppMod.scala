@@ -119,7 +119,8 @@ object libProjectManagementAndroidAppMod {
       __obj.asInstanceOf[AndroidAppMetadata]
     }
     
-    extension [Self <: AndroidAppMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndroidAppMetadata] (val x: Self) extends AnyVal {
       
       inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
       

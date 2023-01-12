@@ -17,7 +17,8 @@ object D33 {
     __obj.asInstanceOf[D33]
   }
   
-  extension [Self <: D33](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: D33] (val x: Self) extends AnyVal {
     
     inline def setSlashBackslashdLeftcurlybracket3Comma3RightcurlybracketSlash(value: java.lang.String): Self = StObject.set(x, "/\\d{3,3}/", value.asInstanceOf[js.Any])
   }

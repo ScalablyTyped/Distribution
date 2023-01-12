@@ -23,7 +23,8 @@ object Remove {
     __obj.asInstanceOf[Remove]
   }
   
-  extension [Self <: Remove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
     
     inline def setNewKey(value: Unit): Self = StObject.set(x, "newKey", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PagingAbility {
     __obj.asInstanceOf[PagingAbility]
   }
   
-  extension [Self <: PagingAbility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagingAbility] (val x: Self) extends AnyVal {
     
     inline def setGetPage(value: () => Double): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
     

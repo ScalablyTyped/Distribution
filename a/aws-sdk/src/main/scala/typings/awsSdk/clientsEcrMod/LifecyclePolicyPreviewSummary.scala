@@ -18,7 +18,8 @@ object LifecyclePolicyPreviewSummary {
     __obj.asInstanceOf[LifecyclePolicyPreviewSummary]
   }
   
-  extension [Self <: LifecyclePolicyPreviewSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecyclePolicyPreviewSummary] (val x: Self) extends AnyVal {
     
     inline def setExpiringImageTotalCount(value: ImageCount): Self = StObject.set(x, "expiringImageTotalCount", value.asInstanceOf[js.Any])
     

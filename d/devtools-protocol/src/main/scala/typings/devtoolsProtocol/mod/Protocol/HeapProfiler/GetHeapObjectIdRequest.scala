@@ -19,7 +19,8 @@ object GetHeapObjectIdRequest {
     __obj.asInstanceOf[GetHeapObjectIdRequest]
   }
   
-  extension [Self <: GetHeapObjectIdRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHeapObjectIdRequest] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }

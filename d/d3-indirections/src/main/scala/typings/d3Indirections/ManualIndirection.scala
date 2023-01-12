@@ -22,7 +22,8 @@ object ManualIndirection {
     __obj.asInstanceOf[ManualIndirection]
   }
   
-  extension [Self <: ManualIndirection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManualIndirection] (val x: Self) extends AnyVal {
     
     inline def setManualIndirection(value: ResourceUid): Self = StObject.set(x, "manualIndirection", value.asInstanceOf[js.Any])
   }

@@ -157,7 +157,8 @@ object NomnomInternal {
         __obj.asInstanceOf[Command]
       }
       
-      extension [Self <: Command](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
         
         inline def setCallback(value: js.Function1[/* options */ Any, Unit] => Command): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
         
@@ -252,7 +253,8 @@ object NomnomInternal {
         __obj.asInstanceOf[Option]
       }
       
-      extension [Self <: Option](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
         
         inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
         

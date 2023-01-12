@@ -15,7 +15,8 @@ object RequiredOnly {
     __obj.asInstanceOf[RequiredOnly]
   }
   
-  extension [Self <: RequiredOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredOnly] (val x: Self) extends AnyVal {
     
     inline def setRequiredOnly(value: Boolean): Self = StObject.set(x, "requiredOnly", value.asInstanceOf[js.Any])
   }

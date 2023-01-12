@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[ActionTypes_]
     }
     
-    extension [Self <: ActionTypes_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionTypes_] (val x: Self) extends AnyVal {
       
       inline def setINIT(value: String): Self = StObject.set(x, "INIT", value.asInstanceOf[js.Any])
     }
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[StorageAdapter[A]]
     }
     
-    extension [Self <: StorageAdapter[?], A](x: Self & StorageAdapter[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageAdapter[?], A] (val x: Self & StorageAdapter[A]) extends AnyVal {
       
       inline def set0(value: A): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       

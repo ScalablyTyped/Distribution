@@ -19,7 +19,8 @@ object AuthenticationProviderOptions {
     __obj.asInstanceOf[AuthenticationProviderOptions]
   }
   
-  extension [Self <: AuthenticationProviderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationProviderOptions] (val x: Self) extends AnyVal {
     
     inline def setSupportsMultipleAccounts(value: Boolean): Self = StObject.set(x, "supportsMultipleAccounts", value.asInstanceOf[js.Any])
     

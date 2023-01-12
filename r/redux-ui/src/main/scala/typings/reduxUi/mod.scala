@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[uiParams[UIStateShape]]
     }
     
-    extension [Self <: uiParams[?], UIStateShape](x: Self & uiParams[UIStateShape]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: uiParams[?], UIStateShape] (val x: Self & uiParams[UIStateShape]) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

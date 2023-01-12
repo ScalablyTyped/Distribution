@@ -18,7 +18,8 @@ object DeleteEntityRecognizerRequest {
     __obj.asInstanceOf[DeleteEntityRecognizerRequest]
   }
   
-  extension [Self <: DeleteEntityRecognizerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEntityRecognizerRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityRecognizerArn(value: EntityRecognizerArn): Self = StObject.set(x, "EntityRecognizerArn", value.asInstanceOf[js.Any])
   }

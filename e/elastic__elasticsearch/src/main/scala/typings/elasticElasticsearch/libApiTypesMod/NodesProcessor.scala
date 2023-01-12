@@ -21,7 +21,8 @@ object NodesProcessor {
     __obj.asInstanceOf[NodesProcessor]
   }
   
-  extension [Self <: NodesProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesProcessor] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

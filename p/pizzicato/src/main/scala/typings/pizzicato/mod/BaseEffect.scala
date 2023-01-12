@@ -18,7 +18,8 @@ object BaseEffect {
     __obj.asInstanceOf[BaseEffect]
   }
   
-  extension [Self <: BaseEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseEffect] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: AudioNode => BaseEffect): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     

@@ -79,7 +79,8 @@ object cjsDropdownToggleMod {
       __obj.asInstanceOf[DropdownToggleProps]
     }
     
-    extension [Self <: DropdownToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownToggleProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (UseDropdownToggleProps, UseDropdownToggleMetadata) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
     }
@@ -105,7 +106,8 @@ object cjsDropdownToggleMod {
       __obj.asInstanceOf[UseDropdownToggleMetadata]
     }
     
-    extension [Self <: UseDropdownToggleMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseDropdownToggleMetadata] (val x: Self) extends AnyVal {
       
       inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object cjsDropdownToggleMod {
       __obj.asInstanceOf[UseDropdownToggleProps]
     }
     
-    extension [Self <: UseDropdownToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseDropdownToggleProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object TypeofDrawerExtend {
     __obj.asInstanceOf[TypeofDrawerExtend]
   }
   
-  extension [Self <: TypeofDrawerExtend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDrawerExtend] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Drawer): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

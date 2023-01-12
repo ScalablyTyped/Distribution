@@ -30,7 +30,8 @@ object SpatialIndex {
     __obj.asInstanceOf[SpatialIndex]
   }
   
-  extension [Self <: SpatialIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialIndex] (val x: Self) extends AnyVal {
     
     inline def setLax(value: Boolean): Self = StObject.set(x, "lax", value.asInstanceOf[js.Any])
     

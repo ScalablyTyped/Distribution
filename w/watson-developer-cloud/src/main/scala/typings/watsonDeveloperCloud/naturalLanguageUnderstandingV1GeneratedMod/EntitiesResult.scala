@@ -38,7 +38,8 @@ object EntitiesResult {
     __obj.asInstanceOf[EntitiesResult]
   }
   
-  extension [Self <: EntitiesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntitiesResult] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

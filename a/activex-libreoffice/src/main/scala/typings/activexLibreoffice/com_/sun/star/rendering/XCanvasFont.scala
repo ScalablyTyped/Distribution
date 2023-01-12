@@ -94,7 +94,8 @@ object XCanvasFont {
     __obj.asInstanceOf[XCanvasFont]
   }
   
-  extension [Self <: XCanvasFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCanvasFont] (val x: Self) extends AnyVal {
     
     inline def setAvailableSizes(value: SafeArray[Double]): Self = StObject.set(x, "AvailableSizes", value.asInstanceOf[js.Any])
     

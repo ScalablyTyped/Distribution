@@ -23,7 +23,8 @@ object DimensionValueContribution {
     __obj.asInstanceOf[DimensionValueContribution]
   }
   
-  extension [Self <: DimensionValueContribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionValueContribution] (val x: Self) extends AnyVal {
     
     inline def setContributionScore(value: Score): Self = StObject.set(x, "ContributionScore", value.asInstanceOf[js.Any])
     

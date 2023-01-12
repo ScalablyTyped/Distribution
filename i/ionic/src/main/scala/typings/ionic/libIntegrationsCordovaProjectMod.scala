@@ -28,7 +28,8 @@ object libIntegrationsCordovaProjectMod {
       __obj.asInstanceOf[GetPackagePathOptions]
     }
     
-    extension [Self <: GetPackagePathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPackagePathOptions] (val x: Self) extends AnyVal {
       
       inline def setEmulator(value: Boolean): Self = StObject.set(x, "emulator", value.asInstanceOf[js.Any])
       

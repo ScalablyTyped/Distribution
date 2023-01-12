@@ -52,7 +52,8 @@ object CalendarProviderProps {
     __obj.asInstanceOf[CalendarProviderProps]
   }
   
-  extension [Self <: CalendarProviderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarProviderProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

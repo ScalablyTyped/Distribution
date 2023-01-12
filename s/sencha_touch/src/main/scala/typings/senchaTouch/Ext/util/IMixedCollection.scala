@@ -61,7 +61,8 @@ object IMixedCollection {
     __obj.asInstanceOf[IMixedCollection]
   }
   
-  extension [Self <: IMixedCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMixedCollection] (val x: Self) extends AnyVal {
     
     inline def setDefaultSortDirection(value: String): Self = StObject.set(x, "defaultSortDirection", value.asInstanceOf[js.Any])
     

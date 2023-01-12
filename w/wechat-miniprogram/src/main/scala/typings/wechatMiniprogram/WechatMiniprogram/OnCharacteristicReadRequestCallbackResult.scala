@@ -22,7 +22,8 @@ object OnCharacteristicReadRequestCallbackResult {
     __obj.asInstanceOf[OnCharacteristicReadRequestCallbackResult]
   }
   
-  extension [Self <: OnCharacteristicReadRequestCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCharacteristicReadRequestCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setCallbackId(value: Double): Self = StObject.set(x, "callbackId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object RendererThis {
     __obj.asInstanceOf[RendererThis]
   }
   
-  extension [Self <: RendererThis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RendererThis] (val x: Self) extends AnyVal {
     
     inline def setParser(value: Parser_): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
   }

@@ -30,7 +30,8 @@ object Exemplar {
     __obj.asInstanceOf[Exemplar]
   }
   
-  extension [Self <: Exemplar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exemplar] (val x: Self) extends AnyVal {
     
     inline def setAttachments(
       value: js.Array[

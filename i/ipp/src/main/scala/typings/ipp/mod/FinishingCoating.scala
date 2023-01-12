@@ -17,7 +17,8 @@ object FinishingCoating {
     __obj.asInstanceOf[FinishingCoating]
   }
   
-  extension [Self <: FinishingCoating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishingCoating] (val x: Self) extends AnyVal {
     
     inline def `setCoating-sides`(value: FinishingSides): Self = StObject.set(x, "coating-sides", value.asInstanceOf[js.Any])
     

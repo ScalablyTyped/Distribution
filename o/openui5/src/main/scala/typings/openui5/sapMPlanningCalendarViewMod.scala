@@ -580,7 +580,8 @@ object sapMPlanningCalendarViewMod {
       __obj.asInstanceOf[PlanningCalendarViewSettings]
     }
     
-    extension [Self <: PlanningCalendarViewSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanningCalendarViewSettings] (val x: Self) extends AnyVal {
       
       inline def setAppointmentHeight(
         value: CalendarAppointmentHeight | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarAppointmentHeight * / any */ String) | PropertyBindingInfo

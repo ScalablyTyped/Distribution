@@ -26,7 +26,8 @@ object XpackUsageVector {
     __obj.asInstanceOf[XpackUsageVector]
   }
   
-  extension [Self <: XpackUsageVector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageVector] (val x: Self) extends AnyVal {
     
     inline def setDense_vector_dims_avg_count(value: integer): Self = StObject.set(x, "dense_vector_dims_avg_count", value.asInstanceOf[js.Any])
     

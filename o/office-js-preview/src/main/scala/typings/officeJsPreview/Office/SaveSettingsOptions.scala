@@ -28,7 +28,8 @@ object SaveSettingsOptions {
     __obj.asInstanceOf[SaveSettingsOptions]
   }
   
-  extension [Self <: SaveSettingsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveSettingsOptions] (val x: Self) extends AnyVal {
     
     inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     

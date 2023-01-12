@@ -102,7 +102,8 @@ object mod {
       __obj.asInstanceOf[DecodedPacket]
     }
     
-    extension [Self <: DecodedPacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedPacket] (val x: Self) extends AnyVal {
       
       inline def setChecksum(value: Double): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowNullChecksum(value: Boolean): Self = StObject.set(x, "allowNullChecksum", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object mod {
       __obj.asInstanceOf[Packet]
     }
     
-    extension [Self <: Packet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Packet] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

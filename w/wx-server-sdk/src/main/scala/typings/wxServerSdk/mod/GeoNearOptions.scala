@@ -23,7 +23,8 @@ object GeoNearOptions {
     __obj.asInstanceOf[GeoNearOptions]
   }
   
-  extension [Self <: GeoNearOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoNearOptions] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: Point): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

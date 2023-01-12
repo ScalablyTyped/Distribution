@@ -37,7 +37,8 @@ object XEmbeddedScripts {
     __obj.asInstanceOf[XEmbeddedScripts]
   }
   
-  extension [Self <: XEmbeddedScripts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEmbeddedScripts] (val x: Self) extends AnyVal {
     
     inline def setAllowMacroExecution(value: Boolean): Self = StObject.set(x, "AllowMacroExecution", value.asInstanceOf[js.Any])
     

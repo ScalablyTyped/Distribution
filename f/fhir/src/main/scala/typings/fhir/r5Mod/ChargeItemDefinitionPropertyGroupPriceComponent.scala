@@ -44,7 +44,8 @@ object ChargeItemDefinitionPropertyGroupPriceComponent {
     __obj.asInstanceOf[ChargeItemDefinitionPropertyGroupPriceComponent]
   }
   
-  extension [Self <: ChargeItemDefinitionPropertyGroupPriceComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChargeItemDefinitionPropertyGroupPriceComponent] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

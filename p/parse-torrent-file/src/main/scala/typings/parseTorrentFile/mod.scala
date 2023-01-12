@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[Instance]
     }
     
-    extension [Self <: Instance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
       
       inline def setAnnounce(value: js.Array[String]): Self = StObject.set(x, "announce", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object mod {
       __obj.asInstanceOf[ParsedFile]
     }
     
-    extension [Self <: ParsedFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedFile] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -191,7 +193,8 @@ object mod {
       __obj.asInstanceOf[Torrent]
     }
     
-    extension [Self <: Torrent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Torrent] (val x: Self) extends AnyVal {
       
       inline def setAnnounce(value: String): Self = StObject.set(x, "announce", value.asInstanceOf[js.Any])
       
@@ -247,7 +250,8 @@ object mod {
       __obj.asInstanceOf[TorrentInfo]
     }
     
-    extension [Self <: TorrentInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TorrentInfo] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       

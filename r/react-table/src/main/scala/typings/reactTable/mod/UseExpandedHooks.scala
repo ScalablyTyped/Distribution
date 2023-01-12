@@ -21,7 +21,8 @@ object UseExpandedHooks {
     __obj.asInstanceOf[UseExpandedHooks[D]]
   }
   
-  extension [Self <: UseExpandedHooks[?], D /* <: js.Object */](x: Self & UseExpandedHooks[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseExpandedHooks[?], D /* <: js.Object */] (val x: Self & UseExpandedHooks[D]) extends AnyVal {
     
     inline def setGetToggleAllRowsExpandedProps(value: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]): Self = StObject.set(x, "getToggleAllRowsExpandedProps", value.asInstanceOf[js.Any])
     

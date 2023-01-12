@@ -22,7 +22,8 @@ object TSConfigPathsOptions {
     __obj.asInstanceOf[TSConfigPathsOptions]
   }
   
-  extension [Self <: TSConfigPathsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSConfigPathsOptions] (val x: Self) extends AnyVal {
     
     inline def setAddMatchAll(value: Boolean): Self = StObject.set(x, "addMatchAll", value.asInstanceOf[js.Any])
     

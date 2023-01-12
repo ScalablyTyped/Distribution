@@ -23,7 +23,8 @@ object SourceCodeLocation {
     __obj.asInstanceOf[SourceCodeLocation]
   }
   
-  extension [Self <: SourceCodeLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceCodeLocation] (val x: Self) extends AnyVal {
     
     inline def setColumnNumber(value: integer): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     

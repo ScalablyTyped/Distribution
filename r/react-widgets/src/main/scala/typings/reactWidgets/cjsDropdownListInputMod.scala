@@ -70,7 +70,8 @@ object cjsDropdownListInputMod extends Shortcut {
       __obj.asInstanceOf[Props[TDataItem]]
     }
     
-    extension [Self <: Props[?], TDataItem](x: Self & Props[TDataItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], TDataItem] (val x: Self & Props[TDataItem]) extends AnyVal {
       
       inline def setAllowSearch(value: Boolean): Self = StObject.set(x, "allowSearch", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object ValidSetup {
     __obj.asInstanceOf[ValidSetup]
   }
   
-  extension [Self <: ValidSetup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidSetup] (val x: Self) extends AnyVal {
     
     inline def setIssues(value: js.Array[String]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     

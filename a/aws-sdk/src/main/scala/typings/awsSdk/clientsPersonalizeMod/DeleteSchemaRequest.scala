@@ -18,7 +18,8 @@ object DeleteSchemaRequest {
     __obj.asInstanceOf[DeleteSchemaRequest]
   }
   
-  extension [Self <: DeleteSchemaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSchemaRequest] (val x: Self) extends AnyVal {
     
     inline def setSchemaArn(value: Arn): Self = StObject.set(x, "schemaArn", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object ConvertRegionPricesRequest {
     __obj.asInstanceOf[ConvertRegionPricesRequest]
   }
   
-  extension [Self <: ConvertRegionPricesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConvertRegionPricesRequest] (val x: Self) extends AnyVal {
     
     inline def setPrice(value: Money): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     

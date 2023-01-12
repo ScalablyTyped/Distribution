@@ -63,7 +63,8 @@ object XTableChart {
     __obj.asInstanceOf[XTableChart]
   }
   
-  extension [Self <: XTableChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTableChart] (val x: Self) extends AnyVal {
     
     inline def setGetHasColumnHeaders(value: () => Boolean): Self = StObject.set(x, "getHasColumnHeaders", js.Any.fromFunction0(value))
     

@@ -15,7 +15,8 @@ object CreateLensShareOutput {
     __obj.asInstanceOf[CreateLensShareOutput]
   }
   
-  extension [Self <: CreateLensShareOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLensShareOutput] (val x: Self) extends AnyVal {
     
     inline def setShareId(value: ShareId): Self = StObject.set(x, "ShareId", value.asInstanceOf[js.Any])
     

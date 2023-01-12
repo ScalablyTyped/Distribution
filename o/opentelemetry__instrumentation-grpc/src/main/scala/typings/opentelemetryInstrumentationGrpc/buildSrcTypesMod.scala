@@ -20,7 +20,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[GrpcInstrumentationConfig]
     }
     
-    extension [Self <: GrpcInstrumentationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrpcInstrumentationConfig] (val x: Self) extends AnyVal {
       
       inline def setIgnoreGrpcMethods(value: js.Array[IgnoreMatcher]): Self = StObject.set(x, "ignoreGrpcMethods", value.asInstanceOf[js.Any])
       

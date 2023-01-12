@@ -18,7 +18,8 @@ object BatchDeleteClusterSnapshotsRequest {
     __obj.asInstanceOf[BatchDeleteClusterSnapshotsRequest]
   }
   
-  extension [Self <: BatchDeleteClusterSnapshotsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteClusterSnapshotsRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentifiers(value: DeleteClusterSnapshotMessageList): Self = StObject.set(x, "Identifiers", value.asInstanceOf[js.Any])
     

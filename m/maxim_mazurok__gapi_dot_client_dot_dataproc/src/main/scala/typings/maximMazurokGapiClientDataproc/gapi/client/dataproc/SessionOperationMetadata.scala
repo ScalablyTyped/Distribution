@@ -39,7 +39,8 @@ object SessionOperationMetadata {
     __obj.asInstanceOf[SessionOperationMetadata]
   }
   
-  extension [Self <: SessionOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

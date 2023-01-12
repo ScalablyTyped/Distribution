@@ -64,7 +64,8 @@ object FilterableComposition {
     __obj.asInstanceOf[FilterableComposition[F, G]]
   }
   
-  extension [Self <: FilterableComposition[?, ?], F, G](x: Self & (FilterableComposition[F, G])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterableComposition[?, ?], F, G] (val x: Self & (FilterableComposition[F, G])) extends AnyVal {
     
     inline def setFilter(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ Any, Predicate[Any]) => Any

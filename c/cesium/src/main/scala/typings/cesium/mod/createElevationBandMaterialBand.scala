@@ -19,7 +19,8 @@ object createElevationBandMaterialBand {
     __obj.asInstanceOf[createElevationBandMaterialBand]
   }
   
-  extension [Self <: createElevationBandMaterialBand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: createElevationBandMaterialBand] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[createElevationBandMaterialEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

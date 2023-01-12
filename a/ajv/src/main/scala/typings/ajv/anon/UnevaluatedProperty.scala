@@ -15,7 +15,8 @@ object UnevaluatedProperty {
     __obj.asInstanceOf[UnevaluatedProperty]
   }
   
-  extension [Self <: UnevaluatedProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnevaluatedProperty] (val x: Self) extends AnyVal {
     
     inline def setUnevaluatedProperty(value: String): Self = StObject.set(x, "unevaluatedProperty", value.asInstanceOf[js.Any])
   }

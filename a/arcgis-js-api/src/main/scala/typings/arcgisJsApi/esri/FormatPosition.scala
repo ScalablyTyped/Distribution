@@ -27,7 +27,8 @@ object FormatPosition {
     __obj.asInstanceOf[FormatPosition]
   }
   
-  extension [Self <: FormatPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatPosition] (val x: Self) extends AnyVal {
     
     inline def setCoordinate(value: String): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object gapi {
           __obj.asInstanceOf[LicenseAssignment]
         }
         
-        extension [Self <: LicenseAssignment](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LicenseAssignment] (val x: Self) extends AnyVal {
           
           inline def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
           
@@ -104,7 +105,8 @@ object gapi {
           __obj.asInstanceOf[LicenseAssignmentInsert]
         }
         
-        extension [Self <: LicenseAssignmentInsert](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LicenseAssignmentInsert] (val x: Self) extends AnyVal {
           
           inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
           
@@ -136,7 +138,8 @@ object gapi {
           __obj.asInstanceOf[LicenseAssignmentList]
         }
         
-        extension [Self <: LicenseAssignmentList](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LicenseAssignmentList] (val x: Self) extends AnyVal {
           
           inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
           

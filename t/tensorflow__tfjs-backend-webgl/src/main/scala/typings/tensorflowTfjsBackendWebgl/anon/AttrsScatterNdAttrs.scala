@@ -22,7 +22,8 @@ object AttrsScatterNdAttrs {
     __obj.asInstanceOf[AttrsScatterNdAttrs]
   }
   
-  extension [Self <: AttrsScatterNdAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsScatterNdAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: ScatterNdAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

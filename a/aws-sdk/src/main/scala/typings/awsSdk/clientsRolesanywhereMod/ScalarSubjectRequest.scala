@@ -18,7 +18,8 @@ object ScalarSubjectRequest {
     __obj.asInstanceOf[ScalarSubjectRequest]
   }
   
-  extension [Self <: ScalarSubjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalarSubjectRequest] (val x: Self) extends AnyVal {
     
     inline def setSubjectId(value: Uuid): Self = StObject.set(x, "subjectId", value.asInstanceOf[js.Any])
   }

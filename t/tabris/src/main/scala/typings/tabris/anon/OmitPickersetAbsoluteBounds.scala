@@ -676,7 +676,8 @@ object OmitPickersetAbsoluteBounds {
     __obj.asInstanceOf[OmitPickersetAbsoluteBounds]
   }
   
-  extension [Self <: OmitPickersetAbsoluteBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitPickersetAbsoluteBounds] (val x: Self) extends AnyVal {
     
     inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     

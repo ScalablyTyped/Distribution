@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[BalancerOptions]
     }
     
-    extension [Self <: BalancerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BalancerOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[LogOptions]
     }
     
-    extension [Self <: LogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogOptions] (val x: Self) extends AnyVal {
       
       inline def setRespawns(value: Boolean): Self = StObject.set(x, "respawns", value.asInstanceOf[js.Any])
       

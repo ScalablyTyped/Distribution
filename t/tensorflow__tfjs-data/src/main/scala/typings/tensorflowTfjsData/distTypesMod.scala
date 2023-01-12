@@ -84,7 +84,8 @@ object distTypesMod {
       __obj.asInstanceOf[CSVConfig]
     }
     
-    extension [Self <: CSVConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSVConfig] (val x: Self) extends AnyVal {
       
       inline def setColumnConfigs(value: StringDictionary[ColumnConfig]): Self = StObject.set(x, "columnConfigs", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object distTypesMod {
       __obj.asInstanceOf[ColumnConfig]
     }
     
-    extension [Self <: ColumnConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnConfig] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: TensorContainer): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -220,7 +222,8 @@ object distTypesMod {
       __obj.asInstanceOf[MicrophoneConfig]
     }
     
-    extension [Self <: MicrophoneConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MicrophoneConfig] (val x: Self) extends AnyVal {
       
       inline def setAudioTrackConstraints(value: MediaTrackConstraints): Self = StObject.set(x, "audioTrackConstraints", value.asInstanceOf[js.Any])
       
@@ -301,7 +304,8 @@ object distTypesMod {
       __obj.asInstanceOf[WebcamConfig]
     }
     
-    extension [Self <: WebcamConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebcamConfig] (val x: Self) extends AnyVal {
       
       inline def setCenterCrop(value: Boolean): Self = StObject.set(x, "centerCrop", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object Indexing {
     __obj.asInstanceOf[Indexing]
   }
   
-  extension [Self <: Indexing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Indexing] (val x: Self) extends AnyVal {
     
     inline def setIndexing(value: String): Self = StObject.set(x, "indexing", value.asInstanceOf[js.Any])
     

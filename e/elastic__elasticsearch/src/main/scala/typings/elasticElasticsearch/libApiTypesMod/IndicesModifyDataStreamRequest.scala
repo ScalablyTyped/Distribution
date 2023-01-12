@@ -17,7 +17,8 @@ object IndicesModifyDataStreamRequest {
     __obj.asInstanceOf[IndicesModifyDataStreamRequest]
   }
   
-  extension [Self <: IndicesModifyDataStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesModifyDataStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[IndicesModifyDataStreamAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

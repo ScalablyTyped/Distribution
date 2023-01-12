@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Assign]
     }
     
-    extension [Self <: Assign](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Assign] (val x: Self) extends AnyVal {
       
       inline def set_assign(value: /* value */ Any => Unit): Self = StObject.set(x, "_assign", js.Any.fromFunction1(value))
     }
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Enter]
     }
     
-    extension [Self <: Enter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enter] (val x: Self) extends AnyVal {
       
       inline def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def set$props(value: TransitionGroupProps): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
     }
@@ -101,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Styles]
     }
     
-    extension [Self <: Styles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

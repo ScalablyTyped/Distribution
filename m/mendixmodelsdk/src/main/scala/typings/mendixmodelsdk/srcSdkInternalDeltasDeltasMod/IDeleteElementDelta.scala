@@ -19,7 +19,8 @@ object IDeleteElementDelta {
     __obj.asInstanceOf[IDeleteElementDelta]
   }
   
-  extension [Self <: IDeleteElementDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDeleteElementDelta] (val x: Self) extends AnyVal {
     
     inline def setDeltaType(value: DELETE_ELEMENT): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
   }

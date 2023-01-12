@@ -20,7 +20,8 @@ object AggregationsMatrixStatsAggregate {
     __obj.asInstanceOf[AggregationsMatrixStatsAggregate]
   }
   
-  extension [Self <: AggregationsMatrixStatsAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMatrixStatsAggregate] (val x: Self) extends AnyVal {
     
     inline def setDoc_count(value: long): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
     

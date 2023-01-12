@@ -53,7 +53,8 @@ object PostCommentForPullRequestOutput {
     __obj.asInstanceOf[PostCommentForPullRequestOutput]
   }
   
-  extension [Self <: PostCommentForPullRequestOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostCommentForPullRequestOutput] (val x: Self) extends AnyVal {
     
     inline def setAfterBlobId(value: ObjectId): Self = StObject.set(x, "afterBlobId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DisassociateFileSystemAliasesResponse {
     __obj.asInstanceOf[DisassociateFileSystemAliasesResponse]
   }
   
-  extension [Self <: DisassociateFileSystemAliasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateFileSystemAliasesResponse] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     

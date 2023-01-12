@@ -94,7 +94,8 @@ object libAgentMod {
       __obj.asInstanceOf[Agent[TCustom]]
     }
     
-    extension [Self <: Agent[?], TCustom](x: Self & Agent[TCustom]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Agent[?], TCustom] (val x: Self & Agent[TCustom]) extends AnyVal {
       
       inline def setBackend(value: typings.sharedb.mod.^): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       

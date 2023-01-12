@@ -53,7 +53,8 @@ object LocalGatewayRouteTableVpcAssociation {
     __obj.asInstanceOf[LocalGatewayRouteTableVpcAssociation]
   }
   
-  extension [Self <: LocalGatewayRouteTableVpcAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalGatewayRouteTableVpcAssociation] (val x: Self) extends AnyVal {
     
     inline def setLocalGatewayId(value: String): Self = StObject.set(x, "LocalGatewayId", value.asInstanceOf[js.Any])
     

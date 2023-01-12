@@ -72,7 +72,8 @@ object SymbolPaintPropsPossiblyEvaluated {
     __obj.asInstanceOf[SymbolPaintPropsPossiblyEvaluated]
   }
   
-  extension [Self <: SymbolPaintPropsPossiblyEvaluated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolPaintPropsPossiblyEvaluated] (val x: Self) extends AnyVal {
     
     inline def `setIcon-color`(value: PossiblyEvaluatedPropertyValue[Color]): Self = StObject.set(x, "icon-color", value.asInstanceOf[js.Any])
     

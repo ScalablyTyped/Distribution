@@ -29,7 +29,8 @@ object PickImploffsetPartialPickContent {
     __obj.asInstanceOf[PickImploffsetPartialPickContent]
   }
   
-  extension [Self <: PickImploffsetPartialPickContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImploffsetPartialPickContent] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DateSelectionApi {
     __obj.asInstanceOf[DateSelectionApi]
   }
   
-  extension [Self <: DateSelectionApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateSelectionApi] (val x: Self) extends AnyVal {
     
     inline def setJsEvent(value: UIEvent): Self = StObject.set(x, "jsEvent", value.asInstanceOf[js.Any])
     

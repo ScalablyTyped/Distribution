@@ -27,7 +27,8 @@ object librariesUtilitiesCodegenNativeCommandsMod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T /* <: String */](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T /* <: String */] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setSupportedCommands(value: js.Array[T]): Self = StObject.set(x, "supportedCommands", value.asInstanceOf[js.Any])
       

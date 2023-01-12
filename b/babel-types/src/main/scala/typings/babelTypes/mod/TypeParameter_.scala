@@ -26,7 +26,8 @@ object TypeParameter_ {
     __obj.asInstanceOf[TypeParameter_]
   }
   
-  extension [Self <: TypeParameter_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeParameter_] (val x: Self) extends AnyVal {
     
     inline def setBound(value: TypeAnnotation_): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
     

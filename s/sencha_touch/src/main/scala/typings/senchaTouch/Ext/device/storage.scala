@@ -59,7 +59,8 @@ object storage {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setGetDatabaseDisplayName(value: () => String): Self = StObject.set(x, "getDatabaseDisplayName", js.Any.fromFunction0(value))
       
@@ -128,7 +129,8 @@ object storage {
         __obj.asInstanceOf[IDatabase]
       }
       
-      extension [Self <: IDatabase](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDatabase] (val x: Self) extends AnyVal {
         
         inline def setTransaction(
           value: (/* sql */ js.UndefOr[Any], /* success */ js.UndefOr[Any], /* failure */ js.UndefOr[Any]) => Unit

@@ -28,7 +28,8 @@ object ImageConfiguration {
     __obj.asInstanceOf[ImageConfiguration]
   }
   
-  extension [Self <: ImageConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPort(value: String): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     

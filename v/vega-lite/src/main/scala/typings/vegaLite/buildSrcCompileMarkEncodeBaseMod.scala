@@ -100,7 +100,8 @@ object buildSrcCompileMarkEncodeBaseMod {
       __obj.asInstanceOf[Ignore]
     }
     
-    extension [Self <: Ignore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ignore] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: ignore | include): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

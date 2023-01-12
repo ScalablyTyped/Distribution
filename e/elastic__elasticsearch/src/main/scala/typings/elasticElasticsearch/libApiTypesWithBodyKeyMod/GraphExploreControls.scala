@@ -21,7 +21,8 @@ object GraphExploreControls {
     __obj.asInstanceOf[GraphExploreControls]
   }
   
-  extension [Self <: GraphExploreControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphExploreControls] (val x: Self) extends AnyVal {
     
     inline def setSample_diversity(value: GraphSampleDiversity): Self = StObject.set(x, "sample_diversity", value.asInstanceOf[js.Any])
     

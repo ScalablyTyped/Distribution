@@ -33,7 +33,8 @@ object AddPermissionRequest {
     __obj.asInstanceOf[AddPermissionRequest]
   }
   
-  extension [Self <: AddPermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddPermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setAWSAccountIds(value: AWSAccountIdList): Self = StObject.set(x, "AWSAccountIds", value.asInstanceOf[js.Any])
     

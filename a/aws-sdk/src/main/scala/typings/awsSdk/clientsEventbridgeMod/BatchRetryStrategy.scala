@@ -18,7 +18,8 @@ object BatchRetryStrategy {
     __obj.asInstanceOf[BatchRetryStrategy]
   }
   
-  extension [Self <: BatchRetryStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchRetryStrategy] (val x: Self) extends AnyVal {
     
     inline def setAttempts(value: Integer): Self = StObject.set(x, "Attempts", value.asInstanceOf[js.Any])
     

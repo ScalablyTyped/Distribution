@@ -43,7 +43,8 @@ object PlayReadyDrm {
     __obj.asInstanceOf[PlayReadyDrm]
   }
   
-  extension [Self <: PlayReadyDrm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadyDrm] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: PlayReadyDrmFormatString): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     

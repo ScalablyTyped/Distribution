@@ -36,7 +36,8 @@ object libTransformImputeMod {
       __obj.asInstanceOf[Imputations]
     }
     
-    extension [Self <: Imputations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Imputations] (val x: Self) extends AnyVal {
       
       inline def setMax(value: (Any, js.Array[Any]) => Double): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
       
@@ -82,7 +83,8 @@ object libTransformImputeMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       

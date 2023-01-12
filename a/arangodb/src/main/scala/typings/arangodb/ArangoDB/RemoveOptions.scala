@@ -21,7 +21,8 @@ object RemoveOptions {
     __obj.asInstanceOf[RemoveOptions]
   }
   
-  extension [Self <: RemoveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveOptions] (val x: Self) extends AnyVal {
     
     inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object PartialTabOptions {
     __obj.asInstanceOf[PartialTabOptions]
   }
   
-  extension [Self <: PartialTabOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTabOptions] (val x: Self) extends AnyVal {
     
     inline def setClassActive(value: String): Self = StObject.set(x, "classActive", value.asInstanceOf[js.Any])
     

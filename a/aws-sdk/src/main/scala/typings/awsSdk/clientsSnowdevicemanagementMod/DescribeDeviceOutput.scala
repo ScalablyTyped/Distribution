@@ -68,7 +68,8 @@ object DescribeDeviceOutput {
     __obj.asInstanceOf[DescribeDeviceOutput]
   }
   
-  extension [Self <: DescribeDeviceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDeviceOutput] (val x: Self) extends AnyVal {
     
     inline def setAssociatedWithJob(value: String): Self = StObject.set(x, "associatedWithJob", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object CreateNamespaceRequest {
     __obj.asInstanceOf[CreateNamespaceRequest]
   }
   
-  extension [Self <: CreateNamespaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNamespaceRequest] (val x: Self) extends AnyVal {
     
     inline def setAdminUserPassword(value: DbPassword): Self = StObject.set(x, "adminUserPassword", value.asInstanceOf[js.Any])
     

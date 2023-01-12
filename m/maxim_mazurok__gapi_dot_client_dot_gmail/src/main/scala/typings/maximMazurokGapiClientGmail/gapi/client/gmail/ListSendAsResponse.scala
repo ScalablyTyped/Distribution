@@ -16,7 +16,8 @@ object ListSendAsResponse {
     __obj.asInstanceOf[ListSendAsResponse]
   }
   
-  extension [Self <: ListSendAsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSendAsResponse] (val x: Self) extends AnyVal {
     
     inline def setSendAs(value: js.Array[SendAs]): Self = StObject.set(x, "sendAs", value.asInstanceOf[js.Any])
     

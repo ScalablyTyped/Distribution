@@ -35,7 +35,8 @@ object IAttachElementDelta {
     __obj.asInstanceOf[IAttachElementDelta]
   }
   
-  extension [Self <: IAttachElementDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAttachElementDelta] (val x: Self) extends AnyVal {
     
     inline def setDeltaType(value: ATTACH_ELEMENT): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
     

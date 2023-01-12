@@ -23,7 +23,8 @@ object Maintain {
     __obj.asInstanceOf[Maintain]
   }
   
-  extension [Self <: Maintain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Maintain] (val x: Self) extends AnyVal {
     
     inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     

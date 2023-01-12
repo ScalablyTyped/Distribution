@@ -35,7 +35,8 @@ object BottomNavigationItem {
     __obj.asInstanceOf[BottomNavigationItem]
   }
   
-  extension [Self <: BottomNavigationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BottomNavigationItem] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

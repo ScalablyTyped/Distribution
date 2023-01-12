@@ -37,7 +37,8 @@ object PlotDisparityindexParamsOptions {
     __obj.asInstanceOf[PlotDisparityindexParamsOptions]
   }
   
-  extension [Self <: PlotDisparityindexParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDisparityindexParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: String): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     

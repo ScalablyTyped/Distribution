@@ -30,7 +30,8 @@ object ViewName {
     __obj.asInstanceOf[ViewName]
   }
   
-  extension [Self <: ViewName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewName] (val x: Self) extends AnyVal {
     
     inline def setController(value: default): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

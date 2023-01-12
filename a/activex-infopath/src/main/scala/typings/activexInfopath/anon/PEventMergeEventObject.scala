@@ -16,7 +16,8 @@ object PEventMergeEventObject {
     __obj.asInstanceOf[PEventMergeEventObject]
   }
   
-  extension [Self <: PEventMergeEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PEventMergeEventObject] (val x: Self) extends AnyVal {
     
     inline def setPEvent(value: MergeEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
   }

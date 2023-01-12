@@ -43,7 +43,8 @@ object ISimplificationTask {
     __obj.asInstanceOf[ISimplificationTask]
   }
   
-  extension [Self <: ISimplificationTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISimplificationTask] (val x: Self) extends AnyVal {
     
     inline def setMesh(value: Mesh): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
     

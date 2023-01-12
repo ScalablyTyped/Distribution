@@ -17,7 +17,8 @@ object OnEnd {
     __obj.asInstanceOf[OnEnd]
   }
   
-  extension [Self <: OnEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnEnd] (val x: Self) extends AnyVal {
     
     inline def setOnEnd(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
     

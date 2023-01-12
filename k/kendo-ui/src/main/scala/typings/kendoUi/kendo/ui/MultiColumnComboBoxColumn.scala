@@ -23,7 +23,8 @@ object MultiColumnComboBoxColumn {
     __obj.asInstanceOf[MultiColumnComboBoxColumn]
   }
   
-  extension [Self <: MultiColumnComboBoxColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiColumnComboBoxColumn] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

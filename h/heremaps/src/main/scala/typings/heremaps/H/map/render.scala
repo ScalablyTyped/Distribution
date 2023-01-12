@@ -221,7 +221,8 @@ object render {
       __obj.asInstanceOf[RenderingParams]
     }
     
-    extension [Self <: RenderingParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderingParams] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: typings.heremaps.H.geo.Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -306,7 +307,8 @@ object render {
           __obj.asInstanceOf[Options]
         }
         
-        extension [Self <: Options](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
           
           inline def setEnableSubpixelRendering(value: Boolean): Self = StObject.set(x, "enableSubpixelRendering", value.asInstanceOf[js.Any])
           

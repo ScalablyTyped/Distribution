@@ -106,7 +106,8 @@ object nlobjSearchColumn {
     __obj.asInstanceOf[nlobjSearchColumn]
   }
   
-  extension [Self <: nlobjSearchColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: nlobjSearchColumn] (val x: Self) extends AnyVal {
     
     inline def setGetFormula(value: () => String): Self = StObject.set(x, "getFormula", js.Any.fromFunction0(value))
     

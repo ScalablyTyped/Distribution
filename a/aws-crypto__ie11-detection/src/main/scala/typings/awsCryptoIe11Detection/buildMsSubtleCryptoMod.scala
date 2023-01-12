@@ -24,7 +24,8 @@ object buildMsSubtleCryptoMod {
       __obj.asInstanceOf[HashAlgorithm]
     }
     
-    extension [Self <: HashAlgorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashAlgorithm] (val x: Self) extends AnyVal {
       
       inline def setName(value: Ie11DigestAlgorithm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object buildMsSubtleCryptoMod {
       __obj.asInstanceOf[HmacAlgorithm]
     }
     
-    extension [Self <: HmacAlgorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HmacAlgorithm] (val x: Self) extends AnyVal {
       
       inline def setHash(value: HashAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

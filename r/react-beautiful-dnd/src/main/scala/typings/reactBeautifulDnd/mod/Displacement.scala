@@ -17,7 +17,8 @@ object Displacement {
     __obj.asInstanceOf[Displacement]
   }
   
-  extension [Self <: Displacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Displacement] (val x: Self) extends AnyVal {
     
     inline def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
     

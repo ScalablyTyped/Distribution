@@ -47,7 +47,8 @@ object RatingControl {
     __obj.asInstanceOf[RatingControl]
   }
   
-  extension [Self <: RatingControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RatingControl] (val x: Self) extends AnyVal {
     
     inline def setHasUserSetRating(value: Boolean): Self = StObject.set(x, "hasUserSetRating", value.asInstanceOf[js.Any])
     

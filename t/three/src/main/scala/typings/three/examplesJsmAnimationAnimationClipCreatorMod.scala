@@ -28,7 +28,8 @@ object examplesJsmAnimationAnimationClipCreatorMod {
     @js.native
     val ^ : AnimationClipCreator = js.native
     
-    extension [Self <: AnimationClipCreator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationClipCreator] (val x: Self) extends AnyVal {
       
       inline def setCreateMaterialColorAnimation(value: (Double, js.Array[Double]) => AnimationClip): Self = StObject.set(x, "CreateMaterialColorAnimation", js.Any.fromFunction2(value))
       

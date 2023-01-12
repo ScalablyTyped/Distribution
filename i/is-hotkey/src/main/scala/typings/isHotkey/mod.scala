@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[HotKey]
     }
     
-    extension [Self <: HotKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HotKey] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[HotKeyOptions]
     }
     
-    extension [Self <: HotKeyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HotKeyOptions] (val x: Self) extends AnyVal {
       
       inline def setByKey(value: Boolean): Self = StObject.set(x, "byKey", value.asInstanceOf[js.Any])
     }
@@ -126,7 +128,8 @@ object mod {
       __obj.asInstanceOf[KeyboardEventLike]
     }
     
-    extension [Self <: KeyboardEventLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardEventLike] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       

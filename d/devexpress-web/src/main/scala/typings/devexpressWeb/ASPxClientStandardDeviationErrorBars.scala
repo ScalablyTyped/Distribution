@@ -23,7 +23,8 @@ object ASPxClientStandardDeviationErrorBars {
     __obj.asInstanceOf[ASPxClientStandardDeviationErrorBars]
   }
   
-  extension [Self <: ASPxClientStandardDeviationErrorBars](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientStandardDeviationErrorBars] (val x: Self) extends AnyVal {
     
     inline def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
   }

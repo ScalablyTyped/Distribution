@@ -63,7 +63,8 @@ object ResourceDataSyncItem {
     __obj.asInstanceOf[ResourceDataSyncItem]
   }
   
-  extension [Self <: ResourceDataSyncItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDataSyncItem] (val x: Self) extends AnyVal {
     
     inline def setLastStatus(value: LastResourceDataSyncStatus): Self = StObject.set(x, "LastStatus", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object distEsmSrcClientMod {
       __obj.asInstanceOf[AppCheckRequest]
     }
     
-    extension [Self <: AppCheckRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckRequest] (val x: Self) extends AnyVal {
       
       inline def setBody(value: StringDictionary[String]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object GetUtterancesViewResponse {
     __obj.asInstanceOf[GetUtterancesViewResponse]
   }
   
-  extension [Self <: GetUtterancesViewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUtterancesViewResponse] (val x: Self) extends AnyVal {
     
     inline def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     

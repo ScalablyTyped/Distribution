@@ -15,7 +15,8 @@ object LiveQueryHandle {
     __obj.asInstanceOf[LiveQueryHandle]
   }
   
-  extension [Self <: LiveQueryHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveQueryHandle] (val x: Self) extends AnyVal {
     
     inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }

@@ -31,7 +31,8 @@ object NEMAggregateModificationTransaction {
     __obj.asInstanceOf[NEMAggregateModificationTransaction]
   }
   
-  extension [Self <: NEMAggregateModificationTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMAggregateModificationTransaction] (val x: Self) extends AnyVal {
     
     inline def setMinCosignatories(value: RelativeChange): Self = StObject.set(x, "minCosignatories", value.asInstanceOf[js.Any])
     

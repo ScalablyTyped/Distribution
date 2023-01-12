@@ -23,7 +23,8 @@ object Mobile {
     __obj.asInstanceOf[Mobile]
   }
   
-  extension [Self <: Mobile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mobile] (val x: Self) extends AnyVal {
     
     inline def setMobile(value: String): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     

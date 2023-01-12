@@ -19,7 +19,8 @@ object SasPortalUpdateSignedDeviceRequest {
     __obj.asInstanceOf[SasPortalUpdateSignedDeviceRequest]
   }
   
-  extension [Self <: SasPortalUpdateSignedDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalUpdateSignedDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setEncodedDevice(value: String): Self = StObject.set(x, "encodedDevice", value.asInstanceOf[js.Any])
     

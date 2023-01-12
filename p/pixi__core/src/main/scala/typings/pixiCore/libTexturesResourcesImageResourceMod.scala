@@ -113,7 +113,8 @@ object libTexturesResourcesImageResourceMod {
       __obj.asInstanceOf[IImageResourceOptions]
     }
     
-    extension [Self <: IImageResourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImageResourceOptions] (val x: Self) extends AnyVal {
       
       inline def setAlphaMode(value: ALPHA_MODES): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object Small {
     __obj.asInstanceOf[Small]
   }
   
-  extension [Self <: Small](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Small] (val x: Self) extends AnyVal {
     
     inline def setLarge(value: String): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     

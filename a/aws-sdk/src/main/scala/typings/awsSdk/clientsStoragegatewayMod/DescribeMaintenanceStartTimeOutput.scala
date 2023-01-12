@@ -40,7 +40,8 @@ object DescribeMaintenanceStartTimeOutput {
     __obj.asInstanceOf[DescribeMaintenanceStartTimeOutput]
   }
   
-  extension [Self <: DescribeMaintenanceStartTimeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMaintenanceStartTimeOutput] (val x: Self) extends AnyVal {
     
     inline def setDayOfMonth(value: DayOfMonth): Self = StObject.set(x, "DayOfMonth", value.asInstanceOf[js.Any])
     

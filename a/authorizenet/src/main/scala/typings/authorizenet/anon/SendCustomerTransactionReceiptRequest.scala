@@ -17,7 +17,8 @@ object SendCustomerTransactionReceiptRequest {
     __obj.asInstanceOf[SendCustomerTransactionReceiptRequest]
   }
   
-  extension [Self <: SendCustomerTransactionReceiptRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendCustomerTransactionReceiptRequest] (val x: Self) extends AnyVal {
     
     inline def setSendCustomerTransactionReceiptRequest(value: typings.authorizenet.mod.APIContracts.SendCustomerTransactionReceiptRequest): Self = StObject.set(x, "sendCustomerTransactionReceiptRequest", value.asInstanceOf[js.Any])
   }

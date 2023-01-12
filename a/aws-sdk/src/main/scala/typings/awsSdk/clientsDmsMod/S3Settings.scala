@@ -213,7 +213,8 @@ object S3Settings {
     __obj.asInstanceOf[S3Settings]
   }
   
-  extension [Self <: S3Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3Settings] (val x: Self) extends AnyVal {
     
     inline def setAddColumnName(value: BooleanOptional): Self = StObject.set(x, "AddColumnName", value.asInstanceOf[js.Any])
     

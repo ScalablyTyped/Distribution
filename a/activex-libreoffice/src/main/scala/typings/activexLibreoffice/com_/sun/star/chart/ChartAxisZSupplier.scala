@@ -63,7 +63,8 @@ object ChartAxisZSupplier {
     __obj.asInstanceOf[ChartAxisZSupplier]
   }
   
-  extension [Self <: ChartAxisZSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAxisZSupplier] (val x: Self) extends AnyVal {
     
     inline def setHasZAxis(value: Boolean): Self = StObject.set(x, "HasZAxis", value.asInstanceOf[js.Any])
     

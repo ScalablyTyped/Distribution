@@ -34,7 +34,8 @@ object UserAuthenticationStatusChangingEventArgs {
     __obj.asInstanceOf[UserAuthenticationStatusChangingEventArgs]
   }
   
-  extension [Self <: UserAuthenticationStatusChangingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAuthenticationStatusChangingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCurrentStatus(value: UserAuthenticationStatus): Self = StObject.set(x, "currentStatus", value.asInstanceOf[js.Any])
     

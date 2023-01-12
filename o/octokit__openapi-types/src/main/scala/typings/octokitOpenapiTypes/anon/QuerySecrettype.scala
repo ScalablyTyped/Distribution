@@ -17,7 +17,8 @@ object QuerySecrettype {
     __obj.asInstanceOf[QuerySecrettype]
   }
   
-  extension [Self <: QuerySecrettype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuerySecrettype] (val x: Self) extends AnyVal {
     
     inline def setPath(value: EnterpriseString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

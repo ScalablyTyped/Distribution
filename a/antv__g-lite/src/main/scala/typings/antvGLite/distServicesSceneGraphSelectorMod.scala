@@ -44,7 +44,8 @@ object distServicesSceneGraphSelectorMod {
     @js.native
     val ^ : DefinedToken = js.native
     
-    extension [Self <: SceneGraphSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneGraphSelector] (val x: Self) extends AnyVal {
       
       inline def setIs(value: (String, Any) => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction2(value))
       

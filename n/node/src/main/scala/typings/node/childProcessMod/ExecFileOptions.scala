@@ -26,7 +26,8 @@ object ExecFileOptions {
     __obj.asInstanceOf[ExecFileOptions]
   }
   
-  extension [Self <: ExecFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecFileOptions] (val x: Self) extends AnyVal {
     
     inline def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
     

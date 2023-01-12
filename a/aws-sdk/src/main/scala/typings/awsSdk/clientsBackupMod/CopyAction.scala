@@ -20,7 +20,8 @@ object CopyAction {
     __obj.asInstanceOf[CopyAction]
   }
   
-  extension [Self <: CopyAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyAction] (val x: Self) extends AnyVal {
     
     inline def setDestinationBackupVaultArn(value: ARN): Self = StObject.set(x, "DestinationBackupVaultArn", value.asInstanceOf[js.Any])
     

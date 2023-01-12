@@ -68,7 +68,8 @@ object UpdateWorkspaceRequest {
     __obj.asInstanceOf[UpdateWorkspaceRequest]
   }
   
-  extension [Self <: UpdateWorkspaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWorkspaceRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountAccessType(value: AccountAccessType): Self = StObject.set(x, "accountAccessType", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteSnapshotResponse {
     __obj.asInstanceOf[DeleteSnapshotResponse]
   }
   
-  extension [Self <: DeleteSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setLifecycle(value: SnapshotLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     

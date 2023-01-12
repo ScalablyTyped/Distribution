@@ -15,7 +15,8 @@ object AuthorizeClusterSecurityGroupIngressResult {
     __obj.asInstanceOf[AuthorizeClusterSecurityGroupIngressResult]
   }
   
-  extension [Self <: AuthorizeClusterSecurityGroupIngressResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeClusterSecurityGroupIngressResult] (val x: Self) extends AnyVal {
     
     inline def setClusterSecurityGroup(value: ClusterSecurityGroup): Self = StObject.set(x, "ClusterSecurityGroup", value.asInstanceOf[js.Any])
     

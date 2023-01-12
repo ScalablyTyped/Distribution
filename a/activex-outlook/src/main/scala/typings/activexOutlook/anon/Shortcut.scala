@@ -21,7 +21,8 @@ object Shortcut {
     __obj.asInstanceOf[Shortcut]
   }
   
-  extension [Self <: Shortcut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shortcut] (val x: Self) extends AnyVal {
     
     inline def setCommandBar(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ Any

@@ -1929,7 +1929,8 @@ object enginesEngineMod {
       __obj.asInstanceOf[IDisplayChangedEventArgs]
     }
     
-    extension [Self <: IDisplayChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDisplayChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setVrDisplay(value: Nullable[Any]): Self = StObject.set(x, "vrDisplay", value.asInstanceOf[js.Any])
       
@@ -1956,7 +1957,8 @@ object enginesEngineMod {
       __obj.asInstanceOf[IViewportOwnerLike]
     }
     
-    extension [Self <: IViewportOwnerLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IViewportOwnerLike] (val x: Self) extends AnyVal {
       
       inline def setViewport(value: IViewportLike): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     }

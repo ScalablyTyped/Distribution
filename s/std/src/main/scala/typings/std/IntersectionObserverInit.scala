@@ -22,7 +22,8 @@ object IntersectionObserverInit {
     __obj.asInstanceOf[IntersectionObserverInit]
   }
   
-  extension [Self <: IntersectionObserverInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntersectionObserverInit] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: Element | Document): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

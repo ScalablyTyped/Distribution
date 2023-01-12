@@ -18,7 +18,8 @@ object GetRegexMatchSetRequest {
     __obj.asInstanceOf[GetRegexMatchSetRequest]
   }
   
-  extension [Self <: GetRegexMatchSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRegexMatchSetRequest] (val x: Self) extends AnyVal {
     
     inline def setRegexMatchSetId(value: ResourceId): Self = StObject.set(x, "RegexMatchSetId", value.asInstanceOf[js.Any])
   }

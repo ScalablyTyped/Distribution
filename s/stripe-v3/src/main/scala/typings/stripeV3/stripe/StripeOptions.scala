@@ -21,7 +21,8 @@ object StripeOptions {
     __obj.asInstanceOf[StripeOptions]
   }
   
-  extension [Self <: StripeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeOptions] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

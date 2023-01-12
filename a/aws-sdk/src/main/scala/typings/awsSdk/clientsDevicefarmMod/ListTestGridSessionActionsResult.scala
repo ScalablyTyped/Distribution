@@ -23,7 +23,8 @@ object ListTestGridSessionActionsResult {
     __obj.asInstanceOf[ListTestGridSessionActionsResult]
   }
   
-  extension [Self <: ListTestGridSessionActionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTestGridSessionActionsResult] (val x: Self) extends AnyVal {
     
     inline def setActions(value: TestGridSessionActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

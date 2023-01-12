@@ -26,7 +26,8 @@ object SilenceTimeEndHour {
     __obj.asInstanceOf[SilenceTimeEndHour]
   }
   
-  extension [Self <: SilenceTimeEndHour](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SilenceTimeEndHour] (val x: Self) extends AnyVal {
     
     inline def setSilenceTimeEndHour(value: Double): Self = StObject.set(x, "silenceTimeEndHour", value.asInstanceOf[js.Any])
     

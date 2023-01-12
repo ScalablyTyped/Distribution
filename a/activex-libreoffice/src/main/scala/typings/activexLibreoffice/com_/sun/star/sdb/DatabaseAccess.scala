@@ -89,7 +89,8 @@ object DatabaseAccess {
     __obj.asInstanceOf[DatabaseAccess]
   }
   
-  extension [Self <: DatabaseAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseAccess] (val x: Self) extends AnyVal {
     
     inline def setConnectInfo(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ConnectInfo", value.asInstanceOf[js.Any])
     

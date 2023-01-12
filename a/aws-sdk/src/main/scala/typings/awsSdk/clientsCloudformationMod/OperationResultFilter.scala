@@ -23,7 +23,8 @@ object OperationResultFilter {
     __obj.asInstanceOf[OperationResultFilter]
   }
   
-  extension [Self <: OperationResultFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationResultFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: OperationResultFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

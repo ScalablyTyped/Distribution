@@ -92,7 +92,8 @@ object ISPClientPeoplePickerSchema {
     __obj.asInstanceOf[ISPClientPeoplePickerSchema]
   }
   
-  extension [Self <: ISPClientPeoplePickerSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISPClientPeoplePickerSchema] (val x: Self) extends AnyVal {
     
     inline def setAllUrlZones(value: Boolean): Self = StObject.set(x, "AllUrlZones", value.asInstanceOf[js.Any])
     

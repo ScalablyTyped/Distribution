@@ -28,7 +28,8 @@ object QueryDslNumberRangeQuery {
     __obj.asInstanceOf[QueryDslNumberRangeQuery]
   }
   
-  extension [Self <: QueryDslNumberRangeQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslNumberRangeQuery] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

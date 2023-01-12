@@ -63,7 +63,8 @@ object DescribedAgreement {
     __obj.asInstanceOf[DescribedAgreement]
   }
   
-  extension [Self <: DescribedAgreement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribedAgreement] (val x: Self) extends AnyVal {
     
     inline def setAccessRole(value: Role): Self = StObject.set(x, "AccessRole", value.asInstanceOf[js.Any])
     

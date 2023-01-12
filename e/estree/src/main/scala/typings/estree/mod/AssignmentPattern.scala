@@ -24,7 +24,8 @@ object AssignmentPattern {
     __obj.asInstanceOf[AssignmentPattern]
   }
   
-  extension [Self <: AssignmentPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignmentPattern] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Pattern): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

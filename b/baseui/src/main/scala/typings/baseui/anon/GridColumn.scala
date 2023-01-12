@@ -25,7 +25,8 @@ object GridColumn {
     __obj.asInstanceOf[GridColumn]
   }
   
-  extension [Self <: GridColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridColumn] (val x: Self) extends AnyVal {
     
     inline def set$gridColumn(value: String): Self = StObject.set(x, "$gridColumn", value.asInstanceOf[js.Any])
     

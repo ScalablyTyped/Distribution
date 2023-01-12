@@ -19,7 +19,8 @@ object DoubleVerifyDisplayViewability {
     __obj.asInstanceOf[DoubleVerifyDisplayViewability]
   }
   
-  extension [Self <: DoubleVerifyDisplayViewability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoubleVerifyDisplayViewability] (val x: Self) extends AnyVal {
     
     inline def setIab(value: String): Self = StObject.set(x, "iab", value.asInstanceOf[js.Any])
     

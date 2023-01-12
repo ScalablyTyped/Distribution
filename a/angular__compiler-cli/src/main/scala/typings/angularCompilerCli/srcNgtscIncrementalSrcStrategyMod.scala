@@ -127,7 +127,8 @@ object srcNgtscIncrementalSrcStrategyMod {
       __obj.asInstanceOf[IncrementalBuildStrategy]
     }
     
-    extension [Self <: IncrementalBuildStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncrementalBuildStrategy] (val x: Self) extends AnyVal {
       
       inline def setGetIncrementalState(value: Program => IncrementalState | Null): Self = StObject.set(x, "getIncrementalState", js.Any.fromFunction1(value))
       

@@ -23,7 +23,8 @@ object `380` {
     __obj.asInstanceOf[`380`]
   }
   
-  extension [Self <: `380`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `380`] (val x: Self) extends AnyVal {
     
     inline def setPer_page(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any

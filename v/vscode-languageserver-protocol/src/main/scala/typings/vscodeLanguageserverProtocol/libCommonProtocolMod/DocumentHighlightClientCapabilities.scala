@@ -18,7 +18,8 @@ object DocumentHighlightClientCapabilities {
     __obj.asInstanceOf[DocumentHighlightClientCapabilities]
   }
   
-  extension [Self <: DocumentHighlightClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentHighlightClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     

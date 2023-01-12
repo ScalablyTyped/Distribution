@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[As[T]]
     }
     
-    extension [Self <: As[?], T /* <: ElementType[Any] */](x: Self & As[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: As[?], T /* <: ElementType[Any] */] (val x: Self & As[T]) extends AnyVal {
       
       inline def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

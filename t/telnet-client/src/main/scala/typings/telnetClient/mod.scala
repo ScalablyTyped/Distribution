@@ -166,7 +166,8 @@ object mod {
       __obj.asInstanceOf[ConnectOptions]
     }
     
-    extension [Self <: ConnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -303,7 +304,8 @@ object mod {
       __obj.asInstanceOf[ExecOptions]
     }
     
-    extension [Self <: ExecOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecOptions] (val x: Self) extends AnyVal {
       
       inline def setEchoLines(value: Double): Self = StObject.set(x, "echoLines", value.asInstanceOf[js.Any])
       
@@ -379,7 +381,8 @@ object mod {
       __obj.asInstanceOf[SendOptions]
     }
     
-    extension [Self <: SendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxBufferLength(value: Double): Self = StObject.set(x, "maxBufferLength", value.asInstanceOf[js.Any])
       

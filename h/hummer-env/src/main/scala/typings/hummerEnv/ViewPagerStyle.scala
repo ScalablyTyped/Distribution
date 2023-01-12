@@ -50,7 +50,8 @@ object ViewPagerStyle {
     __obj.asInstanceOf[ViewPagerStyle]
   }
   
-  extension [Self <: ViewPagerStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPagerStyle] (val x: Self) extends AnyVal {
     
     inline def setAlphaFactor(value: Double): Self = StObject.set(x, "alphaFactor", value.asInstanceOf[js.Any])
     

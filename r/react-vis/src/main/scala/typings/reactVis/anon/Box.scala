@@ -20,7 +20,8 @@ object Box {
     __obj.asInstanceOf[Box]
   }
   
-  extension [Self <: Box](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
     
     inline def setBox(value: CSSProperties): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DashIsoEncryptionSettings {
     __obj.asInstanceOf[DashIsoEncryptionSettings]
   }
   
-  extension [Self <: DashIsoEncryptionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashIsoEncryptionSettings] (val x: Self) extends AnyVal {
     
     inline def setPlaybackDeviceCompatibility(value: DashIsoPlaybackDeviceCompatibility): Self = StObject.set(x, "PlaybackDeviceCompatibility", value.asInstanceOf[js.Any])
     

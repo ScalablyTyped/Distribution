@@ -54,7 +54,8 @@ object RecognizeTextRequest {
     __obj.asInstanceOf[RecognizeTextRequest]
   }
   
-  extension [Self <: RecognizeTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecognizeTextRequest] (val x: Self) extends AnyVal {
     
     inline def setBotAliasId(value: BotAliasIdentifier): Self = StObject.set(x, "botAliasId", value.asInstanceOf[js.Any])
     

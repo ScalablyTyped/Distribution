@@ -88,7 +88,8 @@ object ClientEventMap {
     __obj.asInstanceOf[ClientEventMap]
   }
   
-  extension [Self <: ClientEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientEventMap] (val x: Self) extends AnyVal {
     
     inline def `setClient-banned`(value: RtcError): Self = StObject.set(x, "client-banned", value.asInstanceOf[js.Any])
     

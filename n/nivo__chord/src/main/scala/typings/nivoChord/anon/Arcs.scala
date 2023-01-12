@@ -19,7 +19,8 @@ object Arcs {
     __obj.asInstanceOf[Arcs]
   }
   
-  extension [Self <: Arcs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arcs] (val x: Self) extends AnyVal {
     
     inline def setArcs(value: js.Array[ArcDatum]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
     

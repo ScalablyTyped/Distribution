@@ -19,7 +19,8 @@ object PoiSearchTerms {
     __obj.asInstanceOf[PoiSearchTerms]
   }
   
-  extension [Self <: PoiSearchTerms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoiSearchTerms] (val x: Self) extends AnyVal {
     
     inline def setPoiQuery(value: String): Self = StObject.set(x, "poiQuery", value.asInstanceOf[js.Any])
     

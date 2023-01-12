@@ -23,7 +23,8 @@ object NetworkBandwidthGbps {
     __obj.asInstanceOf[NetworkBandwidthGbps]
   }
   
-  extension [Self <: NetworkBandwidthGbps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkBandwidthGbps] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     

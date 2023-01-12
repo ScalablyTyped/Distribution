@@ -20,7 +20,8 @@ object IRefPathIdInModel {
     __obj.asInstanceOf[IRefPathIdInModel]
   }
   
-  extension [Self <: IRefPathIdInModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRefPathIdInModel] (val x: Self) extends AnyVal {
     
     inline def setModelContext(value: IModel): Self = StObject.set(x, "modelContext", value.asInstanceOf[js.Any])
     

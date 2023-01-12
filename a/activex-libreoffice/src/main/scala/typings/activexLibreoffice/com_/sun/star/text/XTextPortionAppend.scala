@@ -42,7 +42,8 @@ object XTextPortionAppend {
     __obj.asInstanceOf[XTextPortionAppend]
   }
   
-  extension [Self <: XTextPortionAppend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextPortionAppend] (val x: Self) extends AnyVal {
     
     inline def setAppendTextPortion(value: (String, PropertyValues) => XTextRange): Self = StObject.set(x, "appendTextPortion", js.Any.fromFunction2(value))
     

@@ -48,7 +48,8 @@ object ScrollBar {
     __obj.asInstanceOf[ScrollBar]
   }
   
-  extension [Self <: ScrollBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollBar] (val x: Self) extends AnyVal {
     
     inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     

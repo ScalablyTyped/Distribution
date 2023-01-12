@@ -19,7 +19,8 @@ object DKKJPY {
     __obj.asInstanceOf[DKKJPY]
   }
   
-  extension [Self <: DKKJPY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DKKJPY] (val x: Self) extends AnyVal {
     
     inline def setDKK(value: js.Array[String]): Self = StObject.set(x, "DKK", value.asInstanceOf[js.Any])
     

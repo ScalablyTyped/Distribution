@@ -53,7 +53,8 @@ object typingsPickerIOSMod {
       __obj.asInstanceOf[PickerIOSItemProps]
     }
     
-    extension [Self <: PickerIOSItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerIOSItemProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object typingsPickerIOSMod {
       __obj.asInstanceOf[PickerIOSProps]
     }
     
-    extension [Self <: PickerIOSProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerIOSProps] (val x: Self) extends AnyVal {
       
       inline def setItemStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
       

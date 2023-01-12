@@ -23,7 +23,8 @@ object EksAttemptContainerDetail {
     __obj.asInstanceOf[EksAttemptContainerDetail]
   }
   
-  extension [Self <: EksAttemptContainerDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EksAttemptContainerDetail] (val x: Self) extends AnyVal {
     
     inline def setExitCode(value: Integer): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     

@@ -91,7 +91,8 @@ object TransformOptions {
     __obj.asInstanceOf[TransformOptions]
   }
   
-  extension [Self <: TransformOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
     
     inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
     

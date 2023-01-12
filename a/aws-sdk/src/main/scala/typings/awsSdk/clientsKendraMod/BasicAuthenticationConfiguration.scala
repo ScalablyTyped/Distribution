@@ -28,7 +28,8 @@ object BasicAuthenticationConfiguration {
     __obj.asInstanceOf[BasicAuthenticationConfiguration]
   }
   
-  extension [Self <: BasicAuthenticationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicAuthenticationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: SecretArn): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     

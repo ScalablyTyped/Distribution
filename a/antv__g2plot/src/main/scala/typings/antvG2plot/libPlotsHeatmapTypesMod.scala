@@ -93,7 +93,8 @@ object libPlotsHeatmapTypesMod {
       __obj.asInstanceOf[HeatmapOptions]
     }
     
-    extension [Self <: HeatmapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeatmapOptions] (val x: Self) extends AnyVal {
       
       inline def setColorField(value: String): Self = StObject.set(x, "colorField", value.asInstanceOf[js.Any])
       

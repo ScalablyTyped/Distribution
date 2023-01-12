@@ -23,7 +23,8 @@ object CreateIntegrationAssociationResponse {
     __obj.asInstanceOf[CreateIntegrationAssociationResponse]
   }
   
-  extension [Self <: CreateIntegrationAssociationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIntegrationAssociationResponse] (val x: Self) extends AnyVal {
     
     inline def setIntegrationAssociationArn(value: ARN): Self = StObject.set(x, "IntegrationAssociationArn", value.asInstanceOf[js.Any])
     

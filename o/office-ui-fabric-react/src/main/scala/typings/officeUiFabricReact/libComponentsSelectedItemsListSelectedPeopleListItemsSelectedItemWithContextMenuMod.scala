@@ -36,7 +36,8 @@ object libComponentsSelectedItemsListSelectedPeopleListItemsSelectedItemWithCont
       __obj.asInstanceOf[IPeoplePickerItemState]
     }
     
-    extension [Self <: IPeoplePickerItemState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeoplePickerItemState] (val x: Self) extends AnyVal {
       
       inline def setContextualMenuVisible(value: Boolean): Self = StObject.set(x, "contextualMenuVisible", value.asInstanceOf[js.Any])
     }
@@ -61,7 +62,8 @@ object libComponentsSelectedItemsListSelectedPeopleListItemsSelectedItemWithCont
       __obj.asInstanceOf[ISelectedItemWithContextMenuProps]
     }
     
-    extension [Self <: ISelectedItemWithContextMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectedItemWithContextMenuProps] (val x: Self) extends AnyVal {
       
       inline def setBeginEditing(value: /* item */ IExtendedPersonaProps => Unit): Self = StObject.set(x, "beginEditing", js.Any.fromFunction1(value))
       

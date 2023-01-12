@@ -25,7 +25,8 @@ object ISVGPathSegCurvetoQuadraticSmoothRel {
     __obj.asInstanceOf[ISVGPathSegCurvetoQuadraticSmoothRel]
   }
   
-  extension [Self <: ISVGPathSegCurvetoQuadraticSmoothRel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISVGPathSegCurvetoQuadraticSmoothRel] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotISVGPathSegCurvetoQuadraticSmoothRel_typekey(value: ISVGPathSegCurvetoQuadraticSmoothRel): Self = StObject.set(x, "MSHTML.ISVGPathSegCurvetoQuadraticSmoothRel_typekey", value.asInstanceOf[js.Any])
     

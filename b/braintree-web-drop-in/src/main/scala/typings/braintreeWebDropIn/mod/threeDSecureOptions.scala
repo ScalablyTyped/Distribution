@@ -15,7 +15,8 @@ object threeDSecureOptions {
     __obj.asInstanceOf[threeDSecureOptions]
   }
   
-  extension [Self <: threeDSecureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: threeDSecureOptions] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
   }

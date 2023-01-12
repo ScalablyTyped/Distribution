@@ -88,7 +88,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FeathersAuthClientConfig]
     }
     
-    extension [Self <: FeathersAuthClientConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeathersAuthClientConfig] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FeathersAuthCredentials]
     }
     
-    extension [Self <: FeathersAuthCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeathersAuthCredentials] (val x: Self) extends AnyVal {
       
       inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     }

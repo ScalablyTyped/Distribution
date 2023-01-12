@@ -54,7 +54,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CarouselModalProps]
     }
     
-    extension [Self <: CarouselModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselModalProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFullscreen(value: Boolean): Self = StObject.set(x, "allowFullscreen", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CarouselProps]
     }
     
-    extension [Self <: CarouselProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: Components): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CarouselState]
     }
     
-    extension [Self <: CarouselState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselState] (val x: Self) extends AnyVal {
       
       inline def setInteractionIsIdle(value: Boolean): Self = StObject.set(x, "interactionIsIdle", value.asInstanceOf[js.Any])
       
@@ -203,7 +206,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CarouselStyles]
     }
     
-    extension [Self <: CarouselStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselStyles] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: (/* base */ CSSProperties, /* state */ CarouselState) => CSSProperties): Self = StObject.set(x, "container", js.Any.fromFunction2(value))
       
@@ -284,7 +288,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CommonProps]
     }
     
-    extension [Self <: CommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
       
       inline def setCarouselProps(value: CarouselProps): Self = StObject.set(x, "carouselProps", value.asInstanceOf[js.Any])
       
@@ -369,7 +374,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Components]
     }
     
-    extension [Self <: Components](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Components] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: ComponentType[CommonProps]): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
       
@@ -440,7 +446,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Formatters]
     }
     
-    extension [Self <: Formatters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Formatters] (val x: Self) extends AnyVal {
       
       inline def setGetAltText(value: /* props */ CommonProps => String): Self = StObject.set(x, "getAltText", js.Any.fromFunction1(value))
       
@@ -489,7 +496,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FrameProps]
     }
     
-    extension [Self <: FrameProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibility(value: Boolean): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
       
@@ -530,7 +538,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ModalProps]
     }
     
-    extension [Self <: ModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFullscreen(value: Boolean): Self = StObject.set(x, "allowFullscreen", value.asInstanceOf[js.Any])
       
@@ -607,7 +616,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TrackProps]
     }
     
-    extension [Self <: TrackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -708,7 +718,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ViewType]
     }
     
-    extension [Self <: ViewType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewType] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

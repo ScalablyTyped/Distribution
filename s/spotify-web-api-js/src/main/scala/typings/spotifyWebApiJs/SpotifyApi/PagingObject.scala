@@ -39,7 +39,8 @@ object PagingObject {
     __obj.asInstanceOf[PagingObject[T]]
   }
   
-  extension [Self <: PagingObject[?], T](x: Self & PagingObject[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagingObject[?], T] (val x: Self & PagingObject[T]) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

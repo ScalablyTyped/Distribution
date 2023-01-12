@@ -109,7 +109,8 @@ object PartialCirclePackingOptio {
     __obj.asInstanceOf[PartialCirclePackingOptio]
   }
   
-  extension [Self <: PartialCirclePackingOptio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCirclePackingOptio] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

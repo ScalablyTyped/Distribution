@@ -33,7 +33,8 @@ object PublishVersionRequest {
     __obj.asInstanceOf[PublishVersionRequest]
   }
   
-  extension [Self <: PublishVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setCodeSha256(value: String): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
     

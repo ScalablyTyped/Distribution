@@ -40,7 +40,8 @@ object BaseArt {
     __obj.asInstanceOf[BaseArt]
   }
   
-  extension [Self <: BaseArt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseArt] (val x: Self) extends AnyVal {
     
     inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

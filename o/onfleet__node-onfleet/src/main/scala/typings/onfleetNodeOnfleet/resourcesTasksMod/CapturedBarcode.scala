@@ -37,7 +37,8 @@ object CapturedBarcode {
     __obj.asInstanceOf[CapturedBarcode]
   }
   
-  extension [Self <: CapturedBarcode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapturedBarcode] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

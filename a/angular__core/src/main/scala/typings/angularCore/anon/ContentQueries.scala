@@ -163,7 +163,8 @@ object ContentQueries {
     __obj.asInstanceOf[ContentQueries[T]]
   }
   
-  extension [Self <: ContentQueries[?], T](x: Self & ContentQueries[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentQueries[?], T] (val x: Self & ContentQueries[T]) extends AnyVal {
     
     inline def setContentQueries(value: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit): Self = StObject.set(x, "contentQueries", js.Any.fromFunction3(value))
     

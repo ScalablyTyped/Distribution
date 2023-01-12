@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[CommonOptions]
     }
     
-    extension [Self <: CommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
       
       inline def setAudit(value: Boolean): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: (js.Object, /* repeated */ Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
     }
@@ -189,7 +191,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCustomMaskBodyFunc(value: /* req */ Request => String): Self = StObject.set(x, "customMaskBodyFunc", js.Any.fromFunction1(value))
       
@@ -237,7 +240,8 @@ object mod {
       __obj.asInstanceOf[ResponseOptions]
     }
     
-    extension [Self <: ResponseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseOptions] (val x: Self) extends AnyVal {
       
       inline def setLevels(value: StatusCodeMap): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
       
@@ -262,7 +266,8 @@ object mod {
           __obj.asInstanceOf[typings.expressRequestsLogger.mod.global.Express.Request]
         }
         
-        extension [Self <: typings.expressRequestsLogger.mod.global.Express.Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.expressRequestsLogger.mod.global.Express.Request] (val x: Self) extends AnyVal {
           
           inline def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
         }
@@ -281,7 +286,8 @@ object mod {
           __obj.asInstanceOf[Response]
         }
         
-        extension [Self <: Response](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
           
           inline def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
           

@@ -147,7 +147,8 @@ object WindowEventMap {
     __obj.asInstanceOf[WindowEventMap]
   }
   
-  extension [Self <: WindowEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowEventMap] (val x: Self) extends AnyVal {
     
     inline def setDOMContentLoaded(value: Event): Self = StObject.set(x, "DOMContentLoaded", value.asInstanceOf[js.Any])
     

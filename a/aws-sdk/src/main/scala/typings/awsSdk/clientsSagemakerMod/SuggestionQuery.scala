@@ -18,7 +18,8 @@ object SuggestionQuery {
     __obj.asInstanceOf[SuggestionQuery]
   }
   
-  extension [Self <: SuggestionQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestionQuery] (val x: Self) extends AnyVal {
     
     inline def setPropertyNameQuery(value: PropertyNameQuery): Self = StObject.set(x, "PropertyNameQuery", value.asInstanceOf[js.Any])
     

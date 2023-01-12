@@ -58,7 +58,8 @@ object AlignLabelEventUIParam {
     __obj.asInstanceOf[AlignLabelEventUIParam]
   }
   
-  extension [Self <: AlignLabelEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignLabelEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setActualMaximumValue(value: Any): Self = StObject.set(x, "actualMaximumValue", value.asInstanceOf[js.Any])
     

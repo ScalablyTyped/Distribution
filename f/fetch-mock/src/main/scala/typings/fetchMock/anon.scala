@@ -115,7 +115,8 @@ object anon {
       __obj.asInstanceOf[FallbackToNetwork]
     }
     
-    extension [Self <: FallbackToNetwork](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FallbackToNetwork] (val x: Self) extends AnyVal {
       
       inline def setFallbackToNetwork(value: Boolean | always): Self = StObject.set(x, "fallbackToNetwork", value.asInstanceOf[js.Any])
       

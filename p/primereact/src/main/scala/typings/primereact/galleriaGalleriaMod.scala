@@ -130,7 +130,8 @@ object galleriaGalleriaMod {
       __obj.asInstanceOf[GalleriaItemChangeParams]
     }
     
-    extension [Self <: GalleriaItemChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GalleriaItemChangeParams] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
@@ -576,7 +577,8 @@ object galleriaGalleriaMod {
       __obj.asInstanceOf[GalleriaProps]
     }
     
-    extension [Self <: GalleriaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GalleriaProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1421,7 +1423,8 @@ object galleriaGalleriaMod {
       __obj.asInstanceOf[GalleriaResponsiveOptions]
     }
     
-    extension [Self <: GalleriaResponsiveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GalleriaResponsiveOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: String): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       

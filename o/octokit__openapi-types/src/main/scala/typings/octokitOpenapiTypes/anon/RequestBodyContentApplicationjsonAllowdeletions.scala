@@ -23,7 +23,8 @@ object RequestBodyContentApplicationjsonAllowdeletions {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAllowdeletions]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonAllowdeletions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonAllowdeletions] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathBranch): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

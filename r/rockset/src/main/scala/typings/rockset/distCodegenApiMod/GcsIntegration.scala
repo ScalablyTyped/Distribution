@@ -20,7 +20,8 @@ object GcsIntegration {
     __obj.asInstanceOf[GcsIntegration]
   }
   
-  extension [Self <: GcsIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GcsIntegration] (val x: Self) extends AnyVal {
     
     inline def setGcp_service_account(value: GcpServiceAccount): Self = StObject.set(x, "gcp_service_account", value.asInstanceOf[js.Any])
     

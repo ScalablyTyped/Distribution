@@ -33,7 +33,8 @@ object streamsArrayStreamCache {
     __obj.asInstanceOf[streamsArrayStreamCache]
   }
   
-  extension [Self <: streamsArrayStreamCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: streamsArrayStreamCache] (val x: Self) extends AnyVal {
     
     inline def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
     

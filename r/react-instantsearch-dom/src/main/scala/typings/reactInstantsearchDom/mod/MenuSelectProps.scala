@@ -31,7 +31,8 @@ object MenuSelectProps {
     __obj.asInstanceOf[MenuSelectProps]
   }
   
-  extension [Self <: MenuSelectProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuSelectProps] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

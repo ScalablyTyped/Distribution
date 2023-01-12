@@ -28,7 +28,8 @@ object wfsUtilsGetCapabilitiesOptions {
     __obj.asInstanceOf[wfsUtilsGetCapabilitiesOptions]
   }
   
-  extension [Self <: wfsUtilsGetCapabilitiesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: wfsUtilsGetCapabilitiesOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object Data {
     __obj.asInstanceOf[Data]
   }
   
-  extension [Self <: Data](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
     
     inline def setGetBytes(value: () => js.Array[Double]): Self = StObject.set(x, "getBytes", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object GetVpcAttachmentRequest {
     __obj.asInstanceOf[GetVpcAttachmentRequest]
   }
   
-  extension [Self <: GetVpcAttachmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVpcAttachmentRequest] (val x: Self) extends AnyVal {
     
     inline def setAttachmentId(value: AttachmentId): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
   }

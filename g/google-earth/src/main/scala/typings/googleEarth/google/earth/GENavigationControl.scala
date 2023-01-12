@@ -80,7 +80,8 @@ object GENavigationControl {
     __obj.asInstanceOf[GENavigationControl]
   }
   
-  extension [Self <: GENavigationControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GENavigationControl] (val x: Self) extends AnyVal {
     
     inline def setGetControlType(value: () => GENavigationControlEnum): Self = StObject.set(x, "getControlType", js.Any.fromFunction0(value))
     

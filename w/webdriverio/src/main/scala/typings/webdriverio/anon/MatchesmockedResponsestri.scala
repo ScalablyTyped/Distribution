@@ -97,7 +97,8 @@ object MatchesmockedResponsestri {
     __obj.asInstanceOf[MatchesmockedResponsestri]
   }
   
-  extension [Self <: MatchesmockedResponsestri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchesmockedResponsestri] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String | Buffer | JsonCompatible): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

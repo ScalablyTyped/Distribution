@@ -23,7 +23,8 @@ object LangAccessibilityAnnounceNewDataOptions {
     __obj.asInstanceOf[LangAccessibilityAnnounceNewDataOptions]
   }
   
-  extension [Self <: LangAccessibilityAnnounceNewDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilityAnnounceNewDataOptions] (val x: Self) extends AnyVal {
     
     inline def setNewDataAnnounce(value: String): Self = StObject.set(x, "newDataAnnounce", value.asInstanceOf[js.Any])
     

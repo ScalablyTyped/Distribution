@@ -18,7 +18,8 @@ object GetSellPriceOpts {
     __obj.asInstanceOf[GetSellPriceOpts]
   }
   
-  extension [Self <: GetSellPriceOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSellPriceOpts] (val x: Self) extends AnyVal {
     
     inline def setCurrencyPair(value: String): Self = StObject.set(x, "currencyPair", value.asInstanceOf[js.Any])
   }

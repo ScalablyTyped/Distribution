@@ -56,7 +56,8 @@ object StoreCode {
     __obj.asInstanceOf[StoreCode]
   }
   
-  extension [Self <: StoreCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreCode] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

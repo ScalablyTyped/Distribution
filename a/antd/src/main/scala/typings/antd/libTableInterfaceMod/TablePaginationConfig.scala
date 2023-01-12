@@ -18,7 +18,8 @@ object TablePaginationConfig {
     __obj.asInstanceOf[TablePaginationConfig]
   }
   
-  extension [Self <: TablePaginationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TablePaginationConfig] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: js.Array[TablePaginationPosition]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

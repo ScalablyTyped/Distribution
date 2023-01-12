@@ -21,7 +21,8 @@ object UnknownReference {
     __obj.asInstanceOf[UnknownReference]
   }
   
-  extension [Self <: UnknownReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnknownReference] (val x: Self) extends AnyVal {
     
     inline def setKind(value: `3`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

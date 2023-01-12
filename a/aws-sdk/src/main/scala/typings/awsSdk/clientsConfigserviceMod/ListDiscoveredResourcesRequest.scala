@@ -43,7 +43,8 @@ object ListDiscoveredResourcesRequest {
     __obj.asInstanceOf[ListDiscoveredResourcesRequest]
   }
   
-  extension [Self <: ListDiscoveredResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDiscoveredResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeDeletedResources(value: Boolean): Self = StObject.set(x, "includeDeletedResources", value.asInstanceOf[js.Any])
     

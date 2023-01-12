@@ -16,7 +16,8 @@ object GoogleCloudMlV1ExplainRequest {
     __obj.asInstanceOf[GoogleCloudMlV1ExplainRequest]
   }
   
-  extension [Self <: GoogleCloudMlV1ExplainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1ExplainRequest] (val x: Self) extends AnyVal {
     
     inline def setHttpBody(value: GoogleApiHttpBody): Self = StObject.set(x, "httpBody", value.asInstanceOf[js.Any])
     

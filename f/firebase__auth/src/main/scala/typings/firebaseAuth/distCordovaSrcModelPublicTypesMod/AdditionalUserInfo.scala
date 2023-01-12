@@ -34,7 +34,8 @@ object AdditionalUserInfo {
     __obj.asInstanceOf[AdditionalUserInfo]
   }
   
-  extension [Self <: AdditionalUserInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalUserInfo] (val x: Self) extends AnyVal {
     
     inline def setIsNewUser(value: Boolean): Self = StObject.set(x, "isNewUser", value.asInstanceOf[js.Any])
     

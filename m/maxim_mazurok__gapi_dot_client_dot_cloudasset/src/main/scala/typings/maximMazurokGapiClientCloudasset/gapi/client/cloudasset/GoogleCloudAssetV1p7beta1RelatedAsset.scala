@@ -28,7 +28,8 @@ object GoogleCloudAssetV1p7beta1RelatedAsset {
     __obj.asInstanceOf[GoogleCloudAssetV1p7beta1RelatedAsset]
   }
   
-  extension [Self <: GoogleCloudAssetV1p7beta1RelatedAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssetV1p7beta1RelatedAsset] (val x: Self) extends AnyVal {
     
     inline def setAncestors(value: js.Array[String]): Self = StObject.set(x, "ancestors", value.asInstanceOf[js.Any])
     

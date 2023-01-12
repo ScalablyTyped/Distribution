@@ -15,7 +15,8 @@ object OnDismissStart {
     __obj.asInstanceOf[OnDismissStart]
   }
   
-  extension [Self <: OnDismissStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDismissStart] (val x: Self) extends AnyVal {
     
     inline def setOnDismissStart(value: () => Unit): Self = StObject.set(x, "onDismissStart", js.Any.fromFunction0(value))
   }

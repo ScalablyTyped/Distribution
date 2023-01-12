@@ -219,7 +219,8 @@ object LanguageService {
     __obj.asInstanceOf[LanguageService]
   }
   
-  extension [Self <: LanguageService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageService] (val x: Self) extends AnyVal {
     
     inline def setActiveCompletionSession(value: Any): Self = StObject.set(x, "activeCompletionSession", value.asInstanceOf[js.Any])
     

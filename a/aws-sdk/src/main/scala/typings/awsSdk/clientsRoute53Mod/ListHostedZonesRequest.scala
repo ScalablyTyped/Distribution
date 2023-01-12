@@ -28,7 +28,8 @@ object ListHostedZonesRequest {
     __obj.asInstanceOf[ListHostedZonesRequest]
   }
   
-  extension [Self <: ListHostedZonesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHostedZonesRequest] (val x: Self) extends AnyVal {
     
     inline def setDelegationSetId(value: ResourceId): Self = StObject.set(x, "DelegationSetId", value.asInstanceOf[js.Any])
     

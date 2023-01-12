@@ -28,7 +28,8 @@ object CommandFailedException {
     __obj.asInstanceOf[CommandFailedException]
   }
   
-  extension [Self <: CommandFailedException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandFailedException] (val x: Self) extends AnyVal {
     
     inline def setReason(value: Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }

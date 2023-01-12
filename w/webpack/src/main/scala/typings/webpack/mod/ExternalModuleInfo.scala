@@ -19,7 +19,8 @@ object ExternalModuleInfo {
     __obj.asInstanceOf[ExternalModuleInfo]
   }
   
-  extension [Self <: ExternalModuleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalModuleInfo] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

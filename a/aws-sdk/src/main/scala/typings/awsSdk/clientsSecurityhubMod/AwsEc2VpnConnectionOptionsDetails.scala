@@ -23,7 +23,8 @@ object AwsEc2VpnConnectionOptionsDetails {
     __obj.asInstanceOf[AwsEc2VpnConnectionOptionsDetails]
   }
   
-  extension [Self <: AwsEc2VpnConnectionOptionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2VpnConnectionOptionsDetails] (val x: Self) extends AnyVal {
     
     inline def setStaticRoutesOnly(value: Boolean): Self = StObject.set(x, "StaticRoutesOnly", value.asInstanceOf[js.Any])
     

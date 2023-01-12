@@ -15,7 +15,8 @@ object IsBinary {
     __obj.asInstanceOf[IsBinary]
   }
   
-  extension [Self <: IsBinary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsBinary] (val x: Self) extends AnyVal {
     
     inline def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
   }

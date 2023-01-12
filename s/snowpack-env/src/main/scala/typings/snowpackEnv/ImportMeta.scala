@@ -23,7 +23,8 @@ object ImportMeta {
     __obj.asInstanceOf[ImportMeta]
   }
   
-  extension [Self <: ImportMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportMeta] (val x: Self) extends AnyVal {
     
     inline def setEnv(value: Dictkey): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

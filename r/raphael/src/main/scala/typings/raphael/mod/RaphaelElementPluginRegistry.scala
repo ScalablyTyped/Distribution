@@ -219,7 +219,8 @@ object RaphaelElementPluginRegistry {
     __obj.asInstanceOf[RaphaelElementPluginRegistry[TTechnology]]
   }
   
-  extension [Self <: RaphaelElementPluginRegistry[?], TTechnology /* <: RaphaelTechnology */](x: Self & RaphaelElementPluginRegistry[TTechnology]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelElementPluginRegistry[?], TTechnology /* <: RaphaelTechnology */] (val x: Self & RaphaelElementPluginRegistry[TTechnology]) extends AnyVal {
     
     inline def setAnimate(
       value: /* import warning: importer.ImportType#apply Failed type conversion: (targetAttributes : / * Inlined std.Partial<raphael.raphael.RaphaelAttributes> * /

@@ -17,7 +17,8 @@ object TimeZoneList {
     __obj.asInstanceOf[TimeZoneList]
   }
   
-  extension [Self <: TimeZoneList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeZoneList] (val x: Self) extends AnyVal {
     
     inline def setUtcTimeZone(value: TimeZone): Self = StObject.set(x, "utcTimeZone", value.asInstanceOf[js.Any])
     

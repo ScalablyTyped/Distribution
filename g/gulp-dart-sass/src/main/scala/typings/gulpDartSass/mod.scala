@@ -35,7 +35,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[GulpSassOptions]
     }
     
-    extension [Self <: GulpSassOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GulpSassOptions] (val x: Self) extends AnyVal {
       
       inline def setErrLogToConsole(value: Boolean): Self = StObject.set(x, "errLogToConsole", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SassOptions]
     }
     
-    extension [Self <: SassOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SassOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* err */ js.Error => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -118,7 +120,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SassResults]
     }
     
-    extension [Self <: SassResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SassResults] (val x: Self) extends AnyVal {
       
       inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       

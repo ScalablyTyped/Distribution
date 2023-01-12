@@ -36,7 +36,8 @@ object CreateLineRequest {
     __obj.asInstanceOf[CreateLineRequest]
   }
   
-  extension [Self <: CreateLineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLineRequest] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

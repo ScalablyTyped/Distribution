@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[ABOVE]
     }
     
-    extension [Self <: ABOVE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ABOVE] (val x: Self) extends AnyVal {
       
       inline def setABOVE(value: String): Self = StObject.set(x, "ABOVE", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[ALIGNEND]
     }
     
-    extension [Self <: ALIGNEND](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ALIGNEND] (val x: Self) extends AnyVal {
       
       inline def setALIGN_END(value: String): Self = StObject.set(x, "ALIGN_END", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[BOTTOM]
     }
     
-    extension [Self <: BOTTOM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BOTTOM] (val x: Self) extends AnyVal {
       
       inline def setBOTTOM(value: String): Self = StObject.set(x, "BOTTOM", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[CLICKOUTSIDE]
     }
     
-    extension [Self <: CLICKOUTSIDE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CLICKOUTSIDE] (val x: Self) extends AnyVal {
       
       inline def setCLICK_OUTSIDE(value: String): Self = StObject.set(x, "CLICK_OUTSIDE", value.asInstanceOf[js.Any])
       
@@ -134,7 +138,8 @@ object anon {
       __obj.asInstanceOf[CLOSE_]
     }
     
-    extension [Self <: CLOSE_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CLOSE_] (val x: Self) extends AnyVal {
       
       inline def setCLOSE(value: String): Self = StObject.set(x, "CLOSE", value.asInstanceOf[js.Any])
     }
@@ -153,7 +158,8 @@ object anon {
       __obj.asInstanceOf[Close]
     }
     
-    extension [Self <: Close](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
       
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -176,7 +182,8 @@ object anon {
       __obj.asInstanceOf[FADE]
     }
     
-    extension [Self <: FADE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FADE] (val x: Self) extends AnyVal {
       
       inline def setFADE(value: String): Self = StObject.set(x, "FADE", value.asInstanceOf[js.Any])
       
@@ -199,7 +206,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -220,7 +228,8 @@ object anon {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
@@ -245,7 +254,8 @@ object anon {
       __obj.asInstanceOf[Open]
     }
     
-    extension [Self <: Open](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Open] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       

@@ -115,7 +115,8 @@ object distGroupSrcGroupMod {
       __obj.asInstanceOf[InnerGroupProps]
     }
     
-    extension [Self <: InnerGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: start | end | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

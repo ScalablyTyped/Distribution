@@ -25,7 +25,8 @@ object AutoCorrect {
     __obj.asInstanceOf[AutoCorrect]
   }
   
-  extension [Self <: AutoCorrect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCorrect] (val x: Self) extends AnyVal {
     
     inline def setDisplayAutoCorrectOptions(value: Boolean): Self = StObject.set(x, "DisplayAutoCorrectOptions", value.asInstanceOf[js.Any])
     

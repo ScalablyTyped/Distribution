@@ -27,7 +27,8 @@ object ValidationErrorsCollection {
     __obj.asInstanceOf[ValidationErrorsCollection]
   }
   
-  extension [Self <: ValidationErrorsCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationErrorsCollection] (val x: Self) extends AnyVal {
     
     inline def setDeepErrors(value: () => js.Array[ValidationError]): Self = StObject.set(x, "deepErrors", js.Any.fromFunction0(value))
     

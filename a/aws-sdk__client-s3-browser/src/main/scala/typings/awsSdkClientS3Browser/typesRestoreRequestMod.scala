@@ -60,7 +60,8 @@ object typesRestoreRequestMod {
       __obj.asInstanceOf[RestoreRequest]
     }
     
-    extension [Self <: RestoreRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestoreRequest] (val x: Self) extends AnyVal {
       
       inline def setDays(value: Double): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object typesRestoreRequestMod {
       __obj.asInstanceOf[UnmarshalledRestoreRequest]
     }
     
-    extension [Self <: UnmarshalledRestoreRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledRestoreRequest] (val x: Self) extends AnyVal {
       
       inline def setGlacierJobParameters(value: UnmarshalledGlacierJobParameters): Self = StObject.set(x, "GlacierJobParameters", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object QueryRelationsArgument {
     __obj.asInstanceOf[QueryRelationsArgument]
   }
   
-  extension [Self <: QueryRelationsArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRelationsArgument] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[QueryEntitiesEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

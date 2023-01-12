@@ -17,7 +17,8 @@ object InclinometerReadingChangedEventArgs {
     __obj.asInstanceOf[InclinometerReadingChangedEventArgs]
   }
   
-  extension [Self <: InclinometerReadingChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InclinometerReadingChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReading(value: InclinometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object IPrintManager {
     __obj.asInstanceOf[IPrintManager]
   }
   
-  extension [Self <: IPrintManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintManager] (val x: Self) extends AnyVal {
     
     inline def setOnprinttaskrequested(value: Any): Self = StObject.set(x, "onprinttaskrequested", value.asInstanceOf[js.Any])
   }

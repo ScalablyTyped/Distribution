@@ -101,7 +101,8 @@ object AttachmentQueryProperties {
     __obj.asInstanceOf[AttachmentQueryProperties]
   }
   
-  extension [Self <: AttachmentQueryProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentQueryProperties] (val x: Self) extends AnyVal {
     
     inline def setAttachmentTypes(value: js.Array[String]): Self = StObject.set(x, "attachmentTypes", value.asInstanceOf[js.Any])
     

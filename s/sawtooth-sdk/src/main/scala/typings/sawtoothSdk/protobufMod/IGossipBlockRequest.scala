@@ -22,7 +22,8 @@ object IGossipBlockRequest {
     __obj.asInstanceOf[IGossipBlockRequest]
   }
   
-  extension [Self <: IGossipBlockRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGossipBlockRequest] (val x: Self) extends AnyVal {
     
     inline def setBlockId(value: String): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     

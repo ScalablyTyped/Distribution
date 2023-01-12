@@ -20,7 +20,8 @@ object BuildBazelRemoteExecutionV2ResultsCachePolicy {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2ResultsCachePolicy]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2ResultsCachePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2ResultsCachePolicy] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

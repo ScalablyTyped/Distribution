@@ -38,7 +38,8 @@ object XDrop {
     __obj.asInstanceOf[XDrop]
   }
   
-  extension [Self <: XDrop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDrop] (val x: Self) extends AnyVal {
     
     inline def setDropByIndex(value: Double => Unit): Self = StObject.set(x, "dropByIndex", js.Any.fromFunction1(value))
     

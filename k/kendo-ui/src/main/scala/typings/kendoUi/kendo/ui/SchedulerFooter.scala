@@ -15,7 +15,8 @@ object SchedulerFooter {
     __obj.asInstanceOf[SchedulerFooter]
   }
   
-  extension [Self <: SchedulerFooter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerFooter] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String | Boolean): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object InsightsByAssessment {
     __obj.asInstanceOf[InsightsByAssessment]
   }
   
-  extension [Self <: InsightsByAssessment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightsByAssessment] (val x: Self) extends AnyVal {
     
     inline def setAssessmentControlsCountByNoncompliantEvidence(value: NullableInteger): Self = StObject.set(x, "assessmentControlsCountByNoncompliantEvidence", value.asInstanceOf[js.Any])
     

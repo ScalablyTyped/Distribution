@@ -198,7 +198,8 @@ object typesDatamodelMod {
         __obj.asInstanceOf[CellsChangedArgs]
       }
       
-      extension [Self <: CellsChangedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CellsChangedArgs] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
@@ -319,7 +320,8 @@ object typesDatamodelMod {
         __obj.asInstanceOf[ColumnsChangedArgs]
       }
       
-      extension [Self <: ColumnsChangedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ColumnsChangedArgs] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -375,7 +377,8 @@ object typesDatamodelMod {
         __obj.asInstanceOf[ColumnsMovedArgs]
       }
       
-      extension [Self <: ColumnsMovedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ColumnsMovedArgs] (val x: Self) extends AnyVal {
         
         inline def setDestination(value: Double): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
         
@@ -423,7 +426,8 @@ object typesDatamodelMod {
         __obj.asInstanceOf[ModelResetArgs]
       }
       
-      extension [Self <: ModelResetArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModelResetArgs] (val x: Self) extends AnyVal {
         
         inline def setType(value: `model-reset`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
@@ -483,7 +487,8 @@ object typesDatamodelMod {
         __obj.asInstanceOf[RowsChangedArgs]
       }
       
-      extension [Self <: RowsChangedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RowsChangedArgs] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -539,7 +544,8 @@ object typesDatamodelMod {
         __obj.asInstanceOf[RowsMovedArgs]
       }
       
-      extension [Self <: RowsMovedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RowsMovedArgs] (val x: Self) extends AnyVal {
         
         inline def setDestination(value: Double): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
         

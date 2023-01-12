@@ -32,7 +32,8 @@ object ContractTermAssetContext {
     __obj.asInstanceOf[ContractTermAssetContext]
   }
   
-  extension [Self <: ContractTermAssetContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContractTermAssetContext] (val x: Self) extends AnyVal {
     
     inline def setCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

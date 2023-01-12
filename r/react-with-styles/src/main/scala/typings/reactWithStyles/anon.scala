@@ -1918,7 +1918,8 @@ object anon {
       __obj.asInstanceOf[CSSPropertiespseudoSelect]
     }
     
-    extension [Self <: CSSPropertiespseudoSelect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSPropertiespseudoSelect] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(
         value: CSSWideKeyword | `flex-start` | `flex-end` | center | `space-between` | `space-around` | stretch
@@ -3339,7 +3340,8 @@ object anon {
       __obj.asInstanceOf[Css[TStyles]]
     }
     
-    extension [Self <: Css[?], TStyles /* <: Styles */](x: Self & Css[TStyles]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Css[?], TStyles /* <: Styles */] (val x: Self & Css[TStyles]) extends AnyVal {
       
       inline def setCss(value: js.Function): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -3362,7 +3364,8 @@ object anon {
       __obj.asInstanceOf[Direction]
     }
     
-    extension [Self <: Direction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Any): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -3385,7 +3388,8 @@ object anon {
       __obj.asInstanceOf[StylesFn[TStyles]]
     }
     
-    extension [Self <: StylesFn[?], TStyles /* <: Styles */](x: Self & StylesFn[TStyles]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylesFn[?], TStyles /* <: Styles */] (val x: Self & StylesFn[TStyles]) extends AnyVal {
       
       inline def setStylesFn(value: /* repeated */ Any => TStyles): Self = StObject.set(x, "stylesFn", js.Any.fromFunction1(value))
     }

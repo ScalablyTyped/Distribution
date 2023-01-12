@@ -73,7 +73,8 @@ object ReactFlexr {
       __obj.asInstanceOf[CellProps]
     }
     
-    extension [Self <: CellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: top | center | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object ReactFlexr {
       __obj.asInstanceOf[GridProps]
     }
     
-    extension [Self <: GridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: top | center | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object ReactFlexr {
       __obj.asInstanceOf[OptimizedResize]
     }
     
-    extension [Self <: OptimizedResize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptimizedResize] (val x: Self) extends AnyVal {
       
       inline def setInit(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }

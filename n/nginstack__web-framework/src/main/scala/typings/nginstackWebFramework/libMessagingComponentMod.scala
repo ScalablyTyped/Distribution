@@ -125,7 +125,8 @@ object libMessagingComponentMod {
       __obj.asInstanceOf[Component]
     }
     
-    extension [Self <: Component](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
       inline def setAct_dispose_(value: Any): Self = StObject.set(x, "act_dispose_", value.asInstanceOf[js.Any])
       

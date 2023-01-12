@@ -27,7 +27,8 @@ object CustomTimeZone {
     __obj.asInstanceOf[CustomTimeZone]
   }
   
-  extension [Self <: CustomTimeZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTimeZone] (val x: Self) extends AnyVal {
     
     inline def setBias(value: NullableOption[Double]): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     

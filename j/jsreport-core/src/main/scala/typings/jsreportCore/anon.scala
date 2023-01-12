@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[AllowedModules]
     }
     
-    extension [Self <: AllowedModules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowedModules] (val x: Self) extends AnyVal {
       
       inline def setAllowedModules(value: String | js.Array[String]): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[DataDirectory]
     }
     
-    extension [Self <: DataDirectory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataDirectory] (val x: Self) extends AnyVal {
       
       inline def setDataDirectory(value: String): Self = StObject.set(x, "dataDirectory", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: Enabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object anon {
       __obj.asInstanceOf[ExecArgv]
     }
     
-    extension [Self <: ExecArgv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecArgv] (val x: Self) extends AnyVal {
       
       inline def setExecArgv(value: String | js.Array[String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
       
@@ -150,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -174,7 +179,8 @@ object anon {
       __obj.asInstanceOf[PartialRequestOptions]
     }
     
-    extension [Self <: PartialRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
@@ -201,7 +207,8 @@ object anon {
       __obj.asInstanceOf[Provider]
     }
     
-    extension [Self <: Provider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
       
       inline def setProvider(value: ReporterOptionsStoreProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
@@ -224,7 +231,8 @@ object anon {
       __obj.asInstanceOf[SecretKey]
     }
     
-    extension [Self <: SecretKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecretKey] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -245,7 +253,8 @@ object anon {
       __obj.asInstanceOf[Silent]
     }
     
-    extension [Self <: Silent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Silent] (val x: Self) extends AnyVal {
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       

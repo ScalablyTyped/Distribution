@@ -59,7 +59,8 @@ object GlobalTheme {
     __obj.asInstanceOf[GlobalTheme]
   }
   
-  extension [Self <: GlobalTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalTheme] (val x: Self) extends AnyVal {
     
     inline def setBrickButton(value: BrickButton): Self = StObject.set(x, "brickButton", value.asInstanceOf[js.Any])
     

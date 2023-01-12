@@ -19,7 +19,8 @@ object PropertyBag {
     __obj.asInstanceOf[PropertyBag]
   }
   
-  extension [Self <: PropertyBag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyBag] (val x: Self) extends AnyVal {
     
     inline def setBag(value: StringDictionary[String]): Self = StObject.set(x, "bag", value.asInstanceOf[js.Any])
   }

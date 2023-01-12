@@ -34,7 +34,8 @@ object Dispatch {
     __obj.asInstanceOf[Dispatch]
   }
   
-  extension [Self <: Dispatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dispatch] (val x: Self) extends AnyVal {
     
     inline def setDispatch(value: Boolean): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     

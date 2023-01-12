@@ -53,7 +53,8 @@ object GreengrassConfiguration {
     __obj.asInstanceOf[GreengrassConfiguration]
   }
   
-  extension [Self <: GreengrassConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GreengrassConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "CompilerOptions", value.asInstanceOf[js.Any])
     

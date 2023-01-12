@@ -19,7 +19,8 @@ object BaseOrderHeaders {
     __obj.asInstanceOf[BaseOrderHeaders]
   }
   
-  extension [Self <: BaseOrderHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseOrderHeaders] (val x: Self) extends AnyVal {
     
     inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     

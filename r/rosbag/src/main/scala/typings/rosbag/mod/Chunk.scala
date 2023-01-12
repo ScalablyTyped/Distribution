@@ -31,7 +31,8 @@ object Chunk {
     __obj.asInstanceOf[Chunk]
   }
   
-  extension [Self <: Chunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

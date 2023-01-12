@@ -18,7 +18,8 @@ object AssociateServiceRoleToAccountRequest {
     __obj.asInstanceOf[AssociateServiceRoleToAccountRequest]
   }
   
-  extension [Self <: AssociateServiceRoleToAccountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateServiceRoleToAccountRequest] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }

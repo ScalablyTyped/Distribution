@@ -29,7 +29,8 @@ object LocalizableContent {
     __obj.asInstanceOf[LocalizableContent]
   }
   
-  extension [Self <: LocalizableContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalizableContent] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ModuleFactoryCreateDataContextInfo {
     __obj.asInstanceOf[ModuleFactoryCreateDataContextInfo]
   }
   
-  extension [Self <: ModuleFactoryCreateDataContextInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleFactoryCreateDataContextInfo] (val x: Self) extends AnyVal {
     
     inline def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     

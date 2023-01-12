@@ -80,7 +80,8 @@ object PickImpldefaultTransition {
     __obj.asInstanceOf[PickImpldefaultTransition]
   }
   
-  extension [Self <: PickImpldefaultTransition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpldefaultTransition] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

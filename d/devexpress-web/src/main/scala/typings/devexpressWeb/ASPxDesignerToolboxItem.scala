@@ -36,7 +36,8 @@ object ASPxDesignerToolboxItem {
     __obj.asInstanceOf[ASPxDesignerToolboxItem]
   }
   
-  extension [Self <: ASPxDesignerToolboxItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerToolboxItem] (val x: Self) extends AnyVal {
     
     inline def setDefaultVal(value: Any): Self = StObject.set(x, "defaultVal", value.asInstanceOf[js.Any])
     

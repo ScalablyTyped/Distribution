@@ -58,7 +58,8 @@ object ChartMapOptionsUpdateData {
     __obj.asInstanceOf[ChartMapOptionsUpdateData]
   }
   
-  extension [Self <: ChartMapOptionsUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartMapOptionsUpdateData] (val x: Self) extends AnyVal {
     
     inline def setLabelStrategy(value: ChartMapLabelStrategy | None | BestFit | ShowAll): Self = StObject.set(x, "labelStrategy", value.asInstanceOf[js.Any])
     

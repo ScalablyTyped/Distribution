@@ -18,7 +18,8 @@ object LinkText {
     __obj.asInstanceOf[LinkText]
   }
   
-  extension [Self <: LinkText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkText] (val x: Self) extends AnyVal {
     
     inline def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
   }

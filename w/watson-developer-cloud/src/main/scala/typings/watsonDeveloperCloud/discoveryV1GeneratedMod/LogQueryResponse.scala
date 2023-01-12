@@ -20,7 +20,8 @@ object LogQueryResponse {
     __obj.asInstanceOf[LogQueryResponse]
   }
   
-  extension [Self <: LogQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
     

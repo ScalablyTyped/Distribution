@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[FailOnErrors]
     }
     
-    extension [Self <: FailOnErrors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailOnErrors] (val x: Self) extends AnyVal {
       
       inline def setFailOnErrors(value: Boolean): Self = StObject.set(x, "failOnErrors", value.asInstanceOf[js.Any])
       

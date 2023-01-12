@@ -41,7 +41,8 @@ object MessageWebSocketControl {
     __obj.asInstanceOf[MessageWebSocketControl]
   }
   
-  extension [Self <: MessageWebSocketControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageWebSocketControl] (val x: Self) extends AnyVal {
     
     inline def setMaxMessageSize(value: Double): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
     

@@ -81,7 +81,8 @@ object EvidenceVariableCharacteristic {
     __obj.asInstanceOf[EvidenceVariableCharacteristic]
   }
   
-  extension [Self <: EvidenceVariableCharacteristic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvidenceVariableCharacteristic] (val x: Self) extends AnyVal {
     
     inline def setDefinitionCanonical(value: String): Self = StObject.set(x, "definitionCanonical", value.asInstanceOf[js.Any])
     

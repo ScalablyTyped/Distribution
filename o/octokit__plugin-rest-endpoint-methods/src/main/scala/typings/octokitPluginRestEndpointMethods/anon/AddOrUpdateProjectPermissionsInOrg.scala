@@ -104,7 +104,8 @@ object AddOrUpdateProjectPermissionsInOrg {
     __obj.asInstanceOf[AddOrUpdateProjectPermissionsInOrg]
   }
   
-  extension [Self <: AddOrUpdateProjectPermissionsInOrg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddOrUpdateProjectPermissionsInOrg] (val x: Self) extends AnyVal {
     
     inline def setAddOrUpdateMembershipForUserInOrg(value: `1501`): Self = StObject.set(x, "addOrUpdateMembershipForUserInOrg", value.asInstanceOf[js.Any])
     

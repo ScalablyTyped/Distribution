@@ -38,7 +38,8 @@ object CalloutProps {
     __obj.asInstanceOf[CalloutProps]
   }
   
-  extension [Self <: CalloutProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalloutProps] (val x: Self) extends AnyVal {
     
     inline def setDismissButton(value: AccessibilityLabel): Self = StObject.set(x, "dismissButton", value.asInstanceOf[js.Any])
     

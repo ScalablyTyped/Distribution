@@ -59,7 +59,8 @@ object FakeTimersConfig {
     __obj.asInstanceOf[FakeTimersConfig]
   }
   
-  extension [Self <: FakeTimersConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FakeTimersConfig] (val x: Self) extends AnyVal {
     
     inline def setAdvanceTimers(value: Boolean | Double): Self = StObject.set(x, "advanceTimers", value.asInstanceOf[js.Any])
     

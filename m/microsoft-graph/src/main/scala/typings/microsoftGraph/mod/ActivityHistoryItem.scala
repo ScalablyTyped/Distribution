@@ -51,7 +51,8 @@ object ActivityHistoryItem {
     __obj.asInstanceOf[ActivityHistoryItem]
   }
   
-  extension [Self <: ActivityHistoryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityHistoryItem] (val x: Self) extends AnyVal {
     
     inline def setActiveDurationSeconds(value: NullableOption[Double]): Self = StObject.set(x, "activeDurationSeconds", value.asInstanceOf[js.Any])
     

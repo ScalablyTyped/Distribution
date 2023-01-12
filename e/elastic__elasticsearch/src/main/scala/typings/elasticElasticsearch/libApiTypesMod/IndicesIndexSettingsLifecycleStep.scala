@@ -15,7 +15,8 @@ object IndicesIndexSettingsLifecycleStep {
     __obj.asInstanceOf[IndicesIndexSettingsLifecycleStep]
   }
   
-  extension [Self <: IndicesIndexSettingsLifecycleStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexSettingsLifecycleStep] (val x: Self) extends AnyVal {
     
     inline def setWait_time_threshold(value: Duration): Self = StObject.set(x, "wait_time_threshold", value.asInstanceOf[js.Any])
     

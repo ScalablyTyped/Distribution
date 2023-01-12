@@ -123,7 +123,8 @@ object PretargetingConfig {
     __obj.asInstanceOf[PretargetingConfig]
   }
   
-  extension [Self <: PretargetingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PretargetingConfig] (val x: Self) extends AnyVal {
     
     inline def setAllowedUserTargetingModes(value: js.Array[String]): Self = StObject.set(x, "allowedUserTargetingModes", value.asInstanceOf[js.Any])
     

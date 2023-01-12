@@ -22,7 +22,8 @@ object distSrcModulesUiControlsPlayTypesMod {
       __obj.asInstanceOf[IPlayControl]
     }
     
-    extension [Self <: IPlayControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlayControl] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -41,7 +42,8 @@ object distSrcModulesUiControlsPlayTypesMod {
       __obj.asInstanceOf[IPlayViewCallbacks]
     }
     
-    extension [Self <: IPlayViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlayViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnButtonClick(value: () => Unit): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction0(value))
     }
@@ -62,7 +64,8 @@ object distSrcModulesUiControlsPlayTypesMod {
       __obj.asInstanceOf[IPlayViewConfig]
     }
     
-    extension [Self <: IPlayViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlayViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: IPlayViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -91,7 +94,8 @@ object distSrcModulesUiControlsPlayTypesMod {
       __obj.asInstanceOf[IPlayViewStyles]
     }
     
-    extension [Self <: IPlayViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlayViewStyles] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object libSyncCriticalSectionMod {
       __obj.asInstanceOf[CriticalSection]
     }
     
-    extension [Self <: CriticalSection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CriticalSection] (val x: Self) extends AnyVal {
       
       inline def setEnter(value: String => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       

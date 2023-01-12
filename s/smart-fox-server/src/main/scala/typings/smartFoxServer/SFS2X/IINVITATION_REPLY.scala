@@ -20,7 +20,8 @@ object IINVITATION_REPLY {
     __obj.asInstanceOf[IINVITATION_REPLY]
   }
   
-  extension [Self <: IINVITATION_REPLY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IINVITATION_REPLY] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

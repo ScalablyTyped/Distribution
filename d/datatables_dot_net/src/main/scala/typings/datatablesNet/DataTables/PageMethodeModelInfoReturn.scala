@@ -38,7 +38,8 @@ object PageMethodeModelInfoReturn {
     __obj.asInstanceOf[PageMethodeModelInfoReturn]
   }
   
-  extension [Self <: PageMethodeModelInfoReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageMethodeModelInfoReturn] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

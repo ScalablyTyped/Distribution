@@ -421,7 +421,8 @@ object libComponentsPanelPanelDottypesMod {
       __obj.asInstanceOf[IPanelProps]
     }
     
-    extension [Self <: IPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPanelProps] (val x: Self) extends AnyVal {
       
       inline def setAllowTouchBodyScroll(value: Boolean): Self = StObject.set(x, "allowTouchBodyScroll", value.asInstanceOf[js.Any])
       
@@ -662,7 +663,8 @@ object libComponentsPanelPanelDottypesMod {
       __obj.asInstanceOf[IPanelStyleProps]
     }
     
-    extension [Self <: IPanelStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPanelStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -801,7 +803,8 @@ object libComponentsPanelPanelDottypesMod {
       __obj.asInstanceOf[IPanelStyles]
     }
     
-    extension [Self <: IPanelStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPanelStyles] (val x: Self) extends AnyVal {
       
       inline def setCloseButton(value: IStyle): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       
@@ -905,7 +908,8 @@ object libComponentsPanelPanelDottypesMod {
       __obj.asInstanceOf[IPanelSubComponentStyles]
     }
     
-    extension [Self <: IPanelSubComponentStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPanelSubComponentStyles] (val x: Self) extends AnyVal {
       
       inline def setCloseButton(value: PartialIButtonStyles): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     }

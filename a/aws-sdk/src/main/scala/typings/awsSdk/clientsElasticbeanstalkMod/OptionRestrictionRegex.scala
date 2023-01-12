@@ -23,7 +23,8 @@ object OptionRestrictionRegex {
     __obj.asInstanceOf[OptionRestrictionRegex]
   }
   
-  extension [Self <: OptionRestrictionRegex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionRestrictionRegex] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: RegexLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     

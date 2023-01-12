@@ -34,7 +34,8 @@ object LicenseException {
     __obj.asInstanceOf[LicenseException]
   }
   
-  extension [Self <: LicenseException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseException] (val x: Self) extends AnyVal {
     
     inline def setAcceptBy(value: String): Self = StObject.set(x, "AcceptBy", value.asInstanceOf[js.Any])
     

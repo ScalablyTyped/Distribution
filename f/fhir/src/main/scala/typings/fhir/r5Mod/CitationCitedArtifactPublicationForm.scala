@@ -86,7 +86,8 @@ object CitationCitedArtifactPublicationForm {
     __obj.asInstanceOf[CitationCitedArtifactPublicationForm]
   }
   
-  extension [Self <: CitationCitedArtifactPublicationForm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactPublicationForm] (val x: Self) extends AnyVal {
     
     inline def setAccessionNumber(value: String): Self = StObject.set(x, "accessionNumber", value.asInstanceOf[js.Any])
     

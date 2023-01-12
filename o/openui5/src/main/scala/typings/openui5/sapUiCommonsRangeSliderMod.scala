@@ -177,7 +177,8 @@ object sapUiCommonsRangeSliderMod {
       __obj.asInstanceOf[RangeSliderSettings]
     }
     
-    extension [Self <: RangeSliderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeSliderSettings] (val x: Self) extends AnyVal {
       
       inline def setValue2(value: float | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "value2", value.asInstanceOf[js.Any])
       

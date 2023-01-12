@@ -21,7 +21,8 @@ object DefaultAzureCredentialClientIdOptions {
     __obj.asInstanceOf[DefaultAzureCredentialClientIdOptions]
   }
   
-  extension [Self <: DefaultAzureCredentialClientIdOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultAzureCredentialClientIdOptions] (val x: Self) extends AnyVal {
     
     inline def setManagedIdentityClientId(value: String): Self = StObject.set(x, "managedIdentityClientId", value.asInstanceOf[js.Any])
     

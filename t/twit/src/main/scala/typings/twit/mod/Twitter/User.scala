@@ -136,7 +136,8 @@ object User {
     __obj.asInstanceOf[User]
   }
   
-  extension [Self <: User](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     inline def setContributors_enabled(value: Boolean): Self = StObject.set(x, "contributors_enabled", value.asInstanceOf[js.Any])
     

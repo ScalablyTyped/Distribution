@@ -23,7 +23,8 @@ object AwsEcsServicePlacementConstraintsDetails {
     __obj.asInstanceOf[AwsEcsServicePlacementConstraintsDetails]
   }
   
-  extension [Self <: AwsEcsServicePlacementConstraintsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsServicePlacementConstraintsDetails] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: NonEmptyString): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     

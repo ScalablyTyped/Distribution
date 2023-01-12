@@ -23,7 +23,8 @@ object VpcCidrBlockState {
     __obj.asInstanceOf[VpcCidrBlockState]
   }
   
-  extension [Self <: VpcCidrBlockState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcCidrBlockState] (val x: Self) extends AnyVal {
     
     inline def setState(value: VpcCidrBlockStateCode): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

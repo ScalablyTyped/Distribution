@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[MapParams]
     }
     
-    extension [Self <: MapParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapParams] (val x: Self) extends AnyVal {
       
       inline def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[MaxBodySize]
     }
     
-    extension [Self <: MaxBodySize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxBodySize] (val x: Self) extends AnyVal {
       
       inline def setMaxBodySize(value: Double): Self = StObject.set(x, "maxBodySize", value.asInstanceOf[js.Any])
       
@@ -86,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -103,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Server]
     }
     
-    extension [Self <: Server](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
       
       inline def setServer(value: typings.restify.mod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
@@ -120,7 +125,8 @@ object anon {
       __obj.asInstanceOf[UserAgentRegExp]
     }
     
-    extension [Self <: UserAgentRegExp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgentRegExp] (val x: Self) extends AnyVal {
       
       inline def setUserAgentRegExp(value: Any): Self = StObject.set(x, "userAgentRegExp", value.asInstanceOf[js.Any])
     }

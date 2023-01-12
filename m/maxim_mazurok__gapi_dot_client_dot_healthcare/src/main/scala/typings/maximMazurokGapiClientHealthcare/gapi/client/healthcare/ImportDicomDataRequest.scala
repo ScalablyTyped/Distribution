@@ -19,7 +19,8 @@ object ImportDicomDataRequest {
     __obj.asInstanceOf[ImportDicomDataRequest]
   }
   
-  extension [Self <: ImportDicomDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportDicomDataRequest] (val x: Self) extends AnyVal {
     
     inline def setGcsSource(value: GoogleCloudHealthcareV1DicomGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     

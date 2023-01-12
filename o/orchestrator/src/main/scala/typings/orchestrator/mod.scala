@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[Meta]
     }
     
-    extension [Self <: Meta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[OnAllCallbackEvent]
     }
     
-    extension [Self <: OnAllCallbackEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnAllCallbackEvent] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
@@ -134,7 +136,8 @@ object mod {
       __obj.asInstanceOf[OnCallbackEvent]
     }
     
-    extension [Self <: OnCallbackEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnCallbackEvent] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -370,7 +373,8 @@ object mod {
       __obj.asInstanceOf[Task]
     }
     
-    extension [Self <: Task](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
       
       inline def setDep(value: js.Array[String]): Self = StObject.set(x, "dep", value.asInstanceOf[js.Any])
       

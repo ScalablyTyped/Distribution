@@ -34,7 +34,8 @@ object CreateUploadRequest {
     __obj.asInstanceOf[CreateUploadRequest]
   }
   
-  extension [Self <: CreateUploadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUploadRequest] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

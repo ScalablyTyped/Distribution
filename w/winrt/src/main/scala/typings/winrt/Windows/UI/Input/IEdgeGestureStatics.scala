@@ -15,7 +15,8 @@ object IEdgeGestureStatics {
     __obj.asInstanceOf[IEdgeGestureStatics]
   }
   
-  extension [Self <: IEdgeGestureStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEdgeGestureStatics] (val x: Self) extends AnyVal {
     
     inline def setGetForCurrentView(value: () => EdgeGesture): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
   }

@@ -68,7 +68,8 @@ object enginesNativeNativeInterfacesMod {
       __obj.asInstanceOf[INative]
     }
     
-    extension [Self <: INative](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INative] (val x: Self) extends AnyVal {
       
       inline def setCamera(value: INativeCameraConstructor): Self = StObject.set(x, "Camera", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object enginesNativeNativeInterfacesMod {
       __obj.asInstanceOf[INativeCamera]
     }
     
-    extension [Self <: INativeCamera](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INativeCamera] (val x: Self) extends AnyVal {
       
       inline def setCreateVideo(value: MediaTrackConstraints => Any): Self = StObject.set(x, "createVideo", js.Any.fromFunction1(value))
       
@@ -136,7 +138,8 @@ object enginesNativeNativeInterfacesMod {
       __obj.asInstanceOf[INativeDataStream]
     }
     
-    extension [Self <: INativeDataStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INativeDataStream] (val x: Self) extends AnyVal {
       
       inline def setWriteBuffer(value: (js.typedarray.ArrayBuffer, Double) => Unit): Self = StObject.set(x, "writeBuffer", js.Any.fromFunction2(value))
     }

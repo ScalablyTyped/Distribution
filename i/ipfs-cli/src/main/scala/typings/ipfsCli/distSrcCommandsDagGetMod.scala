@@ -58,7 +58,8 @@ object distSrcCommandsDagGetMod extends Shortcut {
       __obj.asInstanceOf[Argv]
     }
     
-    extension [Self <: Argv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argv] (val x: Self) extends AnyVal {
       
       inline def setCidpath(value: String): Self = StObject.set(x, "cidpath", value.asInstanceOf[js.Any])
       

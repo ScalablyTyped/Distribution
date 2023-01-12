@@ -18,7 +18,8 @@ object DeleteKnownHostKeysResult {
     __obj.asInstanceOf[DeleteKnownHostKeysResult]
   }
   
-  extension [Self <: DeleteKnownHostKeysResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteKnownHostKeysResult] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

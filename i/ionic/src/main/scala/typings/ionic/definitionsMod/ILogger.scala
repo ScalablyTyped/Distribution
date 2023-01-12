@@ -22,7 +22,8 @@ object ILogger {
     __obj.asInstanceOf[ILogger]
   }
   
-  extension [Self <: ILogger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILogger] (val x: Self) extends AnyVal {
     
     inline def setOk(value: /* msg */ String => Unit): Self = StObject.set(x, "ok", js.Any.fromFunction1(value))
     

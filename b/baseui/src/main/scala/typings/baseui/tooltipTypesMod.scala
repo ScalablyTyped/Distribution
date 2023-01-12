@@ -108,7 +108,8 @@ object tooltipTypesMod {
       __obj.asInstanceOf[StatefulTooltipContainerProps]
     }
     
-    extension [Self <: StatefulTooltipContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulTooltipContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityType(value: AccessibilityType): Self = StObject.set(x, "accessibilityType", value.asInstanceOf[js.Any])
       
@@ -318,7 +319,8 @@ object tooltipTypesMod {
       __obj.asInstanceOf[TooltipPropsWithoutChildren]
     }
     
-    extension [Self <: TooltipPropsWithoutChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipPropsWithoutChildren] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityType(value: AccessibilityType): Self = StObject.set(x, "accessibilityType", value.asInstanceOf[js.Any])
       

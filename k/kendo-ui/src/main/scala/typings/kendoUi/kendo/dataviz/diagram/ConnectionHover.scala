@@ -15,7 +15,8 @@ object ConnectionHover {
     __obj.asInstanceOf[ConnectionHover]
   }
   
-  extension [Self <: ConnectionHover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionHover] (val x: Self) extends AnyVal {
     
     inline def setStroke(value: ConnectionHoverStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     

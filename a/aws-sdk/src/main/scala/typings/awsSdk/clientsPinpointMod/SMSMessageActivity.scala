@@ -33,7 +33,8 @@ object SMSMessageActivity {
     __obj.asInstanceOf[SMSMessageActivity]
   }
   
-  extension [Self <: SMSMessageActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SMSMessageActivity] (val x: Self) extends AnyVal {
     
     inline def setMessageConfig(value: JourneySMSMessage): Self = StObject.set(x, "MessageConfig", value.asInstanceOf[js.Any])
     

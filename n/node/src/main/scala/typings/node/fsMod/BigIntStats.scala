@@ -53,7 +53,8 @@ object BigIntStats {
     __obj.asInstanceOf[BigIntStats]
   }
   
-  extension [Self <: BigIntStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigIntStats] (val x: Self) extends AnyVal {
     
     inline def setAtimeNs(value: js.BigInt): Self = StObject.set(x, "atimeNs", value.asInstanceOf[js.Any])
     

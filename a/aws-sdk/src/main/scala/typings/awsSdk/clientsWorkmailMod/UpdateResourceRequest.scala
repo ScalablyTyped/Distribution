@@ -33,7 +33,8 @@ object UpdateResourceRequest {
     __obj.asInstanceOf[UpdateResourceRequest]
   }
   
-  extension [Self <: UpdateResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setBookingOptions(value: BookingOptions): Self = StObject.set(x, "BookingOptions", value.asInstanceOf[js.Any])
     

@@ -85,7 +85,8 @@ object typesInvalidParameterValueExceptionMod {
       __obj.asInstanceOf[InvalidParameterValueException]
     }
     
-    extension [Self <: InvalidParameterValueException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidParameterValueException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.InvalidParameterValueException
@@ -117,7 +118,8 @@ object typesInvalidParameterValueExceptionMod {
       __obj.asInstanceOf[InvalidParameterValueExceptionDetails]
     }
     
-    extension [Self <: InvalidParameterValueExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidParameterValueExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -194,7 +194,8 @@ object RequestGroupAction {
     __obj.asInstanceOf[RequestGroupAction]
   }
   
-  extension [Self <: RequestGroupAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestGroupAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: js.Array[RequestGroupAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

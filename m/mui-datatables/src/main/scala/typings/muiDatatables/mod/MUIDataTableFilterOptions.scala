@@ -67,7 +67,8 @@ object MUIDataTableFilterOptions {
     __obj.asInstanceOf[MUIDataTableFilterOptions]
   }
   
-  extension [Self <: MUIDataTableFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplay(
       value: (/* filterList */ js.Array[js.Array[String]], /* onChange */ js.Function3[

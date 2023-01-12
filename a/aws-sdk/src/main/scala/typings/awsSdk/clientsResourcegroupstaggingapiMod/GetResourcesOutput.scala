@@ -23,7 +23,8 @@ object GetResourcesOutput {
     __obj.asInstanceOf[GetResourcesOutput]
   }
   
-  extension [Self <: GetResourcesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourcesOutput] (val x: Self) extends AnyVal {
     
     inline def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     

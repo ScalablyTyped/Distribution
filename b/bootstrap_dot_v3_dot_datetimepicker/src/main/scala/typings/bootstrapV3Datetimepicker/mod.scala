@@ -709,7 +709,8 @@ object mod {
       __obj.asInstanceOf[DatetimepickerOptions]
     }
     
-    extension [Self <: DatetimepickerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatetimepickerOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowInputToggle(value: Boolean): Self = StObject.set(x, "allowInputToggle", value.asInstanceOf[js.Any])
       
@@ -946,7 +947,8 @@ object mod {
       __obj.asInstanceOf[Icons]
     }
     
-    extension [Self <: Icons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Icons] (val x: Self) extends AnyVal {
       
       inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
@@ -1047,7 +1049,8 @@ object mod {
       __obj.asInstanceOf[Tooltips]
     }
     
-    extension [Self <: Tooltips](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tooltips] (val x: Self) extends AnyVal {
       
       inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
@@ -1176,7 +1179,8 @@ object mod {
       __obj.asInstanceOf[WidgetPositioningOptions]
     }
     
-    extension [Self <: WidgetPositioningOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetPositioningOptions] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: auto | left | right): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       

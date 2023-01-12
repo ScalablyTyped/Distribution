@@ -30,7 +30,8 @@ object AndroidManifestAttributes {
     __obj.asInstanceOf[AndroidManifestAttributes]
   }
   
-  extension [Self <: AndroidManifestAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidManifestAttributes] (val x: Self) extends AnyVal {
     
     inline def setAndroidColonenabled(value: StringBoolean): Self = StObject.set(x, "android:enabled", value.asInstanceOf[js.Any])
     

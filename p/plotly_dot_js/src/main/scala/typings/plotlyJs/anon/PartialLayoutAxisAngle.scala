@@ -233,7 +233,8 @@ object PartialLayoutAxisAngle {
     __obj.asInstanceOf[PartialLayoutAxisAngle]
   }
   
-  extension [Self <: PartialLayoutAxisAngle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLayoutAxisAngle] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: free | AxisName): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

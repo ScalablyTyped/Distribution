@@ -41,7 +41,8 @@ object FleetEngineShipmentLocationProvider {
     __obj.asInstanceOf[FleetEngineShipmentLocationProvider]
   }
   
-  extension [Self <: FleetEngineShipmentLocationProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetEngineShipmentLocationProvider] (val x: Self) extends AnyVal {
     
     inline def setGetTask(value: () => Task | Null): Self = StObject.set(x, "getTask", js.Any.fromFunction0(value))
     

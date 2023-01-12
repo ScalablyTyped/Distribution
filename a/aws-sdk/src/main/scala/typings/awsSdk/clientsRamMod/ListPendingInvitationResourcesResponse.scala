@@ -23,7 +23,8 @@ object ListPendingInvitationResourcesResponse {
     __obj.asInstanceOf[ListPendingInvitationResourcesResponse]
   }
   
-  extension [Self <: ListPendingInvitationResourcesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPendingInvitationResourcesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

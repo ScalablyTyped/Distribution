@@ -38,7 +38,8 @@ object BaselineEnd {
     __obj.asInstanceOf[BaselineEnd[K2, D2]]
   }
   
-  extension [Self <: BaselineEnd[?, ?], K2, D2](x: Self & (BaselineEnd[K2, D2])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaselineEnd[?, ?], K2, D2] (val x: Self & (BaselineEnd[K2, D2])) extends AnyVal {
     
     inline def setBaselineEnd(value: String): Self = StObject.set(x, "baselineEnd", value.asInstanceOf[js.Any])
     

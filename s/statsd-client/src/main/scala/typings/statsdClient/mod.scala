@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[CommonOptions]
     }
     
-    extension [Self <: CommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object mod {
       __obj.asInstanceOf[ExpressMiddlewareOptions]
     }
     
-    extension [Self <: ExpressMiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressMiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setNotFoundRouteName(value: String): Self = StObject.set(x, "notFoundRouteName", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object mod {
       __obj.asInstanceOf[HttpOptions]
     }
     
-    extension [Self <: HttpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -270,7 +273,8 @@ object mod {
       __obj.asInstanceOf[TcpOptions]
     }
     
-    extension [Self <: TcpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TcpOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -305,7 +309,8 @@ object mod {
       __obj.asInstanceOf[UdpOptions]
     }
     
-    extension [Self <: UdpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UdpOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -333,7 +338,8 @@ object mod {
       __obj.asInstanceOf[WrappedCallbackOptions]
     }
     
-    extension [Self <: WrappedCallbackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappedCallbackOptions] (val x: Self) extends AnyVal {
       
       inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       

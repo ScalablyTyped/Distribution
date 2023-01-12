@@ -23,7 +23,8 @@ object mod {
         __obj.asInstanceOf[IDynamicLocale]
       }
       
-      extension [Self <: IDynamicLocale](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDynamicLocale] (val x: Self) extends AnyVal {
         
         inline def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
@@ -44,7 +45,8 @@ object mod {
         __obj.asInstanceOf[IDynamicLocaleProvider]
       }
       
-      extension [Self <: IDynamicLocaleProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDynamicLocaleProvider] (val x: Self) extends AnyVal {
         
         inline def setDefaultLocale(value: String => Unit): Self = StObject.set(x, "defaultLocale", js.Any.fromFunction1(value))
         

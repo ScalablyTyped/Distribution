@@ -23,7 +23,8 @@ object CustomDeliveryConfiguration {
     __obj.asInstanceOf[CustomDeliveryConfiguration]
   }
   
-  extension [Self <: CustomDeliveryConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDeliveryConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDeliveryUri(value: string): Self = StObject.set(x, "DeliveryUri", value.asInstanceOf[js.Any])
     

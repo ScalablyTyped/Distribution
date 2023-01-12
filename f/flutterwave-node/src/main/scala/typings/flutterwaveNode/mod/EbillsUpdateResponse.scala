@@ -18,7 +18,8 @@ object EbillsUpdateResponse {
     __obj.asInstanceOf[EbillsUpdateResponse]
   }
   
-  extension [Self <: EbillsUpdateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbillsUpdateResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Updated): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

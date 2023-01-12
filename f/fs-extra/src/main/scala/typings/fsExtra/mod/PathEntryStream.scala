@@ -15,7 +15,8 @@ object PathEntryStream {
     __obj.asInstanceOf[PathEntryStream]
   }
   
-  extension [Self <: PathEntryStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathEntryStream] (val x: Self) extends AnyVal {
     
     inline def setRead(value: () => PathEntry | Null): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
   }

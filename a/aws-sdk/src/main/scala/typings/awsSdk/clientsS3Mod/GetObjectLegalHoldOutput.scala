@@ -18,7 +18,8 @@ object GetObjectLegalHoldOutput {
     __obj.asInstanceOf[GetObjectLegalHoldOutput]
   }
   
-  extension [Self <: GetObjectLegalHoldOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectLegalHoldOutput] (val x: Self) extends AnyVal {
     
     inline def setLegalHold(value: ObjectLockLegalHold): Self = StObject.set(x, "LegalHold", value.asInstanceOf[js.Any])
     

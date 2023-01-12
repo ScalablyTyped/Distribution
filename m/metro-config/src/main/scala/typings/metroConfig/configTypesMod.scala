@@ -93,7 +93,8 @@ object configTypesMod {
       __obj.asInstanceOf[ConfigT]
     }
     
-    extension [Self <: ConfigT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigT] (val x: Self) extends AnyVal {
       
       inline def setCacheStores(
         value: js.Array[
@@ -161,7 +162,8 @@ object configTypesMod {
       __obj.asInstanceOf[ExtraTransformOptions]
     }
     
-    extension [Self <: ExtraTransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtraTransformOptions] (val x: Self) extends AnyVal {
       
       inline def setPreloadedModules(value: StringDictionary[`true`] | `false`): Self = StObject.set(x, "preloadedModules", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object configTypesMod {
       __obj.asInstanceOf[GetTransformOptionsOpts]
     }
     
-    extension [Self <: GetTransformOptionsOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTransformOptionsOpts] (val x: Self) extends AnyVal {
       
       inline def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
@@ -290,7 +293,8 @@ object configTypesMod {
       __obj.asInstanceOf[InputConfigT]
     }
     
-    extension [Self <: InputConfigT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputConfigT] (val x: Self) extends AnyVal {
       
       inline def setCacheStores(
         value: (js.Array[
@@ -397,7 +401,8 @@ object configTypesMod {
       __obj.asInstanceOf[IntermediateConfigT]
     }
     
-    extension [Self <: IntermediateConfigT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntermediateConfigT] (val x: Self) extends AnyVal {
       
       inline def setResolver(value: ResolverConfigT): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
       
@@ -458,7 +463,8 @@ object configTypesMod {
       __obj.asInstanceOf[MetalConfigT]
     }
     
-    extension [Self <: MetalConfigT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetalConfigT] (val x: Self) extends AnyVal {
       
       inline def setCacheStores(
         value: js.Array[
@@ -554,7 +560,8 @@ object configTypesMod {
       __obj.asInstanceOf[ResolverConfigT]
     }
     
-    extension [Self <: ResolverConfigT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolverConfigT] (val x: Self) extends AnyVal {
       
       inline def setAssetExts(value: js.Array[String]): Self = StObject.set(x, "assetExts", value.asInstanceOf[js.Any])
       
@@ -681,7 +688,8 @@ object configTypesMod {
       __obj.asInstanceOf[ServerConfigT]
     }
     
-    extension [Self <: ServerConfigT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerConfigT] (val x: Self) extends AnyVal {
       
       inline def setEnhanceMiddleware(
         value: (Middleware, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Server */ Any) => Middleware
@@ -710,7 +718,8 @@ object configTypesMod {
       __obj.asInstanceOf[SymbolicatorConfigT]
     }
     
-    extension [Self <: SymbolicatorConfigT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymbolicatorConfigT] (val x: Self) extends AnyVal {
       
       inline def setCustomizeFrame(value: Column => js.UndefOr[Collapse | (js.Promise[Collapse | Unit])]): Self = StObject.set(x, "customizeFrame", js.Any.fromFunction1(value))
     }
@@ -762,7 +771,8 @@ object configTypesMod {
       __obj.asInstanceOf[TransformerConfigT]
     }
     
-    extension [Self <: TransformerConfigT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformerConfigT] (val x: Self) extends AnyVal {
       
       inline def setGetTransformOptions(
         value: (/* entryPoints */ js.Array[String], /* options */ GetTransformOptionsOpts, /* getDependenciesOf */ js.Function1[/* filePath */ String, js.Promise[js.Array[String]]]) => js.Promise[ExtraTransformOptions]
@@ -817,7 +827,8 @@ object configTypesMod {
       __obj.asInstanceOf[YargArguments]
     }
     
-    extension [Self <: YargArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YargArguments] (val x: Self) extends AnyVal {
       
       inline def setAssetExts(value: js.Array[String]): Self = StObject.set(x, "assetExts", value.asInstanceOf[js.Any])
       

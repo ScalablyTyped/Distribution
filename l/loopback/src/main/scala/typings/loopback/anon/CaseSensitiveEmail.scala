@@ -45,7 +45,8 @@ object CaseSensitiveEmail {
     __obj.asInstanceOf[CaseSensitiveEmail]
   }
   
-  extension [Self <: CaseSensitiveEmail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaseSensitiveEmail] (val x: Self) extends AnyVal {
     
     inline def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
     

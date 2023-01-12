@@ -19,7 +19,8 @@ object OffsetFetchRequest {
     __obj.asInstanceOf[OffsetFetchRequest]
   }
   
-  extension [Self <: OffsetFetchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffsetFetchRequest] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

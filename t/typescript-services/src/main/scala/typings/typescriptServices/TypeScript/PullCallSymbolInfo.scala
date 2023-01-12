@@ -32,7 +32,8 @@ object PullCallSymbolInfo {
     __obj.asInstanceOf[PullCallSymbolInfo]
   }
   
-  extension [Self <: PullCallSymbolInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullCallSymbolInfo] (val x: Self) extends AnyVal {
     
     inline def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

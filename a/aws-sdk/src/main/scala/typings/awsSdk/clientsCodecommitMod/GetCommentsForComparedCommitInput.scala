@@ -38,7 +38,8 @@ object GetCommentsForComparedCommitInput {
     __obj.asInstanceOf[GetCommentsForComparedCommitInput]
   }
   
-  extension [Self <: GetCommentsForComparedCommitInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCommentsForComparedCommitInput] (val x: Self) extends AnyVal {
     
     inline def setAfterCommitId(value: CommitId): Self = StObject.set(x, "afterCommitId", value.asInstanceOf[js.Any])
     

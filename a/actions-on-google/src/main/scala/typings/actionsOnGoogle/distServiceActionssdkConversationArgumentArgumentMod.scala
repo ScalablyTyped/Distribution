@@ -362,7 +362,8 @@ object distServiceActionssdkConversationArgumentArgumentMod {
       __obj.asInstanceOf[ArgumentsNamed]
     }
     
-    extension [Self <: ArgumentsNamed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgumentsNamed] (val x: Self) extends AnyVal {
       
       inline def setCOMPLETE_PURCHASE_VALUE(value: CompletePurchaseArgument): Self = StObject.set(x, "COMPLETE_PURCHASE_VALUE", value.asInstanceOf[js.Any])
       

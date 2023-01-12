@@ -30,7 +30,8 @@ object distEsmLoaderRevolvingDotMod extends Shortcut {
       __obj.asInstanceOf[RevolvingDotProps]
     }
     
-    extension [Self <: RevolvingDotProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RevolvingDotProps] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       

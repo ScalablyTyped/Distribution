@@ -39,7 +39,8 @@ object typesUtilsCompatibleAPIMod {
       __obj.asInstanceOf[ExpectedRequest]
     }
     
-    extension [Self <: ExpectedRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpectedRequest] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }

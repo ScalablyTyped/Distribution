@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[OptionsObject]
     }
     
-    extension [Self <: OptionsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsObject] (val x: Self) extends AnyVal {
       
       inline def setNoBinary(value: NoBinaryOption): Self = StObject.set(x, "noBinary", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[TextOptions]
     }
     
-    extension [Self <: TextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
       
       inline def setNoBinary(value: NoBinaryOption): Self = StObject.set(x, "noBinary", value.asInstanceOf[js.Any])
       

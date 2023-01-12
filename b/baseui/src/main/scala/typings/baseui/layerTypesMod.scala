@@ -48,7 +48,8 @@ object layerTypesMod {
       __obj.asInstanceOf[LayerComponentProps]
     }
     
-    extension [Self <: LayerComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerComponentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object layerTypesMod {
       __obj.asInstanceOf[LayerProps]
     }
     
-    extension [Self <: LayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -235,7 +237,8 @@ object layerTypesMod {
       __obj.asInstanceOf[LayerState]
     }
     
-    extension [Self <: LayerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerState] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -289,7 +292,8 @@ object layerTypesMod {
       __obj.asInstanceOf[LayersContextProps]
     }
     
-    extension [Self <: LayersContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersContextProps] (val x: Self) extends AnyVal {
       
       inline def setAddDocClickHandler(value: js.Function0[Any] => Unit): Self = StObject.set(x, "addDocClickHandler", js.Any.fromFunction1(value))
       
@@ -338,7 +342,8 @@ object layerTypesMod {
       __obj.asInstanceOf[LayersManagerProps]
     }
     
-    extension [Self <: LayersManagerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersManagerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -379,7 +384,8 @@ object layerTypesMod {
       __obj.asInstanceOf[LayersManagerState]
     }
     
-    extension [Self <: LayersManagerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersManagerState] (val x: Self) extends AnyVal {
       
       inline def setDocClickHandlers(value: js.Array[js.Function1[/* event */ MouseEvent, Any]]): Self = StObject.set(x, "docClickHandlers", value.asInstanceOf[js.Any])
       
@@ -416,7 +422,8 @@ object layerTypesMod {
       __obj.asInstanceOf[NormalizedOffset]
     }
     
-    extension [Self <: NormalizedOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedOffset] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -437,7 +444,8 @@ object layerTypesMod {
       __obj.asInstanceOf[NormalizedOffsets]
     }
     
-    extension [Self <: NormalizedOffsets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedOffsets] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: NormalizedOffset): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
@@ -460,7 +468,8 @@ object layerTypesMod {
       __obj.asInstanceOf[PopperDataObject]
     }
     
-    extension [Self <: PopperDataObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopperDataObject] (val x: Self) extends AnyVal {
       
       inline def setOffsets(value: Arrow): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
       
@@ -481,7 +490,8 @@ object layerTypesMod {
       __obj.asInstanceOf[PopperOffset]
     }
     
-    extension [Self <: PopperOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopperOffset] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -510,7 +520,8 @@ object layerTypesMod {
       __obj.asInstanceOf[PopperOptions]
     }
     
-    extension [Self <: PopperOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopperOptions] (val x: Self) extends AnyVal {
       
       inline def setModifiers(value: ApplyReactStyle): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
@@ -572,7 +583,8 @@ object layerTypesMod {
       __obj.asInstanceOf[TetherProps]
     }
     
-    extension [Self <: TetherProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TetherProps] (val x: Self) extends AnyVal {
       
       inline def setAnchorRef(value: HTMLElement): Self = StObject.set(x, "anchorRef", value.asInstanceOf[js.Any])
       
@@ -615,7 +627,8 @@ object layerTypesMod {
       __obj.asInstanceOf[TetherState]
     }
     
-    extension [Self <: TetherState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TetherState] (val x: Self) extends AnyVal {
       
       inline def setIsMounted(value: Boolean): Self = StObject.set(x, "isMounted", value.asInstanceOf[js.Any])
     }

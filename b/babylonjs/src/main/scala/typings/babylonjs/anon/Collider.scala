@@ -17,7 +17,8 @@ object Collider {
     __obj.asInstanceOf[Collider]
   }
   
-  extension [Self <: Collider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collider] (val x: Self) extends AnyVal {
     
     inline def setCollider(value: typings.babylonjs.meshesMeshMod.Mesh): Self = StObject.set(x, "collider", value.asInstanceOf[js.Any])
     

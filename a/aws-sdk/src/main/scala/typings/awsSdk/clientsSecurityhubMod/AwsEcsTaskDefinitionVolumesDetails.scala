@@ -33,7 +33,8 @@ object AwsEcsTaskDefinitionVolumesDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionVolumesDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionVolumesDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionVolumesDetails] (val x: Self) extends AnyVal {
     
     inline def setDockerVolumeConfiguration(value: AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetails): Self = StObject.set(x, "DockerVolumeConfiguration", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object MessageRecipientMetadata {
     __obj.asInstanceOf[MessageRecipientMetadata]
   }
   
-  extension [Self <: MessageRecipientMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageRecipientMetadata] (val x: Self) extends AnyVal {
     
     inline def setRcpt(value: String): Self = StObject.set(x, "rcpt", value.asInstanceOf[js.Any])
     

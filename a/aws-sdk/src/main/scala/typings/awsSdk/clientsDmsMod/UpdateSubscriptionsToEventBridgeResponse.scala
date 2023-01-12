@@ -18,7 +18,8 @@ object UpdateSubscriptionsToEventBridgeResponse {
     __obj.asInstanceOf[UpdateSubscriptionsToEventBridgeResponse]
   }
   
-  extension [Self <: UpdateSubscriptionsToEventBridgeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSubscriptionsToEventBridgeResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     

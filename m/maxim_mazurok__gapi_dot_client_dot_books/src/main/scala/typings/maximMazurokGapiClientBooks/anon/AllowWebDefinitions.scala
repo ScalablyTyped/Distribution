@@ -77,7 +77,8 @@ object AllowWebDefinitions {
     __obj.asInstanceOf[AllowWebDefinitions]
   }
   
-  extension [Self <: AllowWebDefinitions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowWebDefinitions] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

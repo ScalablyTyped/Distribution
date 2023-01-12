@@ -43,7 +43,8 @@ object ElastiCacheInstanceDetails {
     __obj.asInstanceOf[ElastiCacheInstanceDetails]
   }
   
-  extension [Self <: ElastiCacheInstanceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElastiCacheInstanceDetails] (val x: Self) extends AnyVal {
     
     inline def setCurrentGeneration(value: GenericBoolean): Self = StObject.set(x, "CurrentGeneration", value.asInstanceOf[js.Any])
     

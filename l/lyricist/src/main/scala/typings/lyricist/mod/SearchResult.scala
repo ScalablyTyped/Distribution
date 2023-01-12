@@ -63,7 +63,8 @@ object SearchResult {
     __obj.asInstanceOf[SearchResult]
   }
   
-  extension [Self <: SearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
     
     inline def setAnnotation_count(value: Double): Self = StObject.set(x, "annotation_count", value.asInstanceOf[js.Any])
     

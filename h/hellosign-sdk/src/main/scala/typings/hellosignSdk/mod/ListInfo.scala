@@ -16,7 +16,8 @@ object ListInfo {
     __obj.asInstanceOf[ListInfo]
   }
   
-  extension [Self <: ListInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInfo] (val x: Self) extends AnyVal {
     
     inline def setList_info(value: Numpages): Self = StObject.set(x, "list_info", value.asInstanceOf[js.Any])
   }

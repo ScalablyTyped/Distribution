@@ -38,7 +38,8 @@ object OutputGroup {
     __obj.asInstanceOf[OutputGroup]
   }
   
-  extension [Self <: OutputGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputGroup] (val x: Self) extends AnyVal {
     
     inline def setAutomatedEncodingSettings(value: AutomatedEncodingSettings): Self = StObject.set(x, "AutomatedEncodingSettings", value.asInstanceOf[js.Any])
     

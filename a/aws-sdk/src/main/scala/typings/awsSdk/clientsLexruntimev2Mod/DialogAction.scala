@@ -34,7 +34,8 @@ object DialogAction {
     __obj.asInstanceOf[DialogAction]
   }
   
-  extension [Self <: DialogAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogAction] (val x: Self) extends AnyVal {
     
     inline def setSlotElicitationStyle(value: StyleType): Self = StObject.set(x, "slotElicitationStyle", value.asInstanceOf[js.Any])
     

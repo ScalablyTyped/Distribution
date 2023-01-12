@@ -160,7 +160,8 @@ object libTexturesResourcesVideoResourceMod {
       __obj.asInstanceOf[IVideoResourceOptions]
     }
     
-    extension [Self <: IVideoResourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVideoResourceOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object libTexturesResourcesVideoResourceMod {
       __obj.asInstanceOf[IVideoResourceOptionsElement]
     }
     
-    extension [Self <: IVideoResourceOptionsElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVideoResourceOptionsElement] (val x: Self) extends AnyVal {
       
       inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       

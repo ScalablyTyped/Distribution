@@ -19,7 +19,8 @@ object FontSizePaddingLeft {
     __obj.asInstanceOf[FontSizePaddingLeft]
   }
   
-  extension [Self <: FontSizePaddingLeft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontSizePaddingLeft] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

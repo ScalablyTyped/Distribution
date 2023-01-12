@@ -19,7 +19,8 @@ object APIResponsePageTokenMeta {
     __obj.asInstanceOf[APIResponsePageTokenMeta]
   }
   
-  extension [Self <: APIResponsePageTokenMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIResponsePageTokenMeta] (val x: Self) extends AnyVal {
     
     inline def setNext_page_token(value: String): Self = StObject.set(x, "next_page_token", value.asInstanceOf[js.Any])
     

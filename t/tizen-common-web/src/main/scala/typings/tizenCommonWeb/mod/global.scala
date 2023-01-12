@@ -278,7 +278,8 @@ object global {
       __obj.asInstanceOf[Window]
     }
     
-    extension [Self <: Window](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
       
       inline def setTizen(value: Tizen): Self = StObject.set(x, "tizen", value.asInstanceOf[js.Any])
       

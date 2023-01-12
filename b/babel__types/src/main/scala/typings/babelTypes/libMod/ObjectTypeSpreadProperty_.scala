@@ -25,7 +25,8 @@ object ObjectTypeSpreadProperty_ {
     __obj.asInstanceOf[ObjectTypeSpreadProperty_]
   }
   
-  extension [Self <: ObjectTypeSpreadProperty_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTypeSpreadProperty_] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: FlowType): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

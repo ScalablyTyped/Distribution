@@ -46,7 +46,8 @@ object distEs5SiblingMod {
       __obj.asInstanceOf[FocusNextOptions]
     }
     
-    extension [Self <: FocusNextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusNextOptions] (val x: Self) extends AnyVal {
       
       inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
       

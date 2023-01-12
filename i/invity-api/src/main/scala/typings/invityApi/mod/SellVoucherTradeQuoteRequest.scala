@@ -24,7 +24,8 @@ object SellVoucherTradeQuoteRequest {
     __obj.asInstanceOf[SellVoucherTradeQuoteRequest]
   }
   
-  extension [Self <: SellVoucherTradeQuoteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SellVoucherTradeQuoteRequest] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

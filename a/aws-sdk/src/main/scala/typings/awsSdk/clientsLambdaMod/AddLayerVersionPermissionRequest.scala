@@ -54,7 +54,8 @@ object AddLayerVersionPermissionRequest {
     __obj.asInstanceOf[AddLayerVersionPermissionRequest]
   }
   
-  extension [Self <: AddLayerVersionPermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddLayerVersionPermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: LayerPermissionAllowedAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

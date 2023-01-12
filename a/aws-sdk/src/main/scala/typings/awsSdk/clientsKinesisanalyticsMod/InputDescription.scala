@@ -60,7 +60,8 @@ object InputDescription {
     __obj.asInstanceOf[InputDescription]
   }
   
-  extension [Self <: InputDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDescription] (val x: Self) extends AnyVal {
     
     inline def setInAppStreamNames(value: InAppStreamNames): Self = StObject.set(x, "InAppStreamNames", value.asInstanceOf[js.Any])
     

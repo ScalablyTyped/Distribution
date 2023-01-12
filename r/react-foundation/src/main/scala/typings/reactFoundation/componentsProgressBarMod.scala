@@ -175,7 +175,8 @@ object componentsProgressBarMod {
       __obj.asInstanceOf[NativeProgressProps]
     }
     
-    extension [Self <: NativeProgressProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProgressProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -495,7 +496,8 @@ object componentsProgressBarMod {
       __obj.asInstanceOf[PaginationProps]
     }
     
-    extension [Self <: PaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -815,7 +817,8 @@ object componentsProgressBarMod {
       __obj.asInstanceOf[ProgressMeterProps]
     }
     
-    extension [Self <: ProgressMeterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressMeterProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1118,7 +1121,8 @@ object componentsProgressBarMod {
       __obj.asInstanceOf[ProgressMeterTextProps]
     }
     
-    extension [Self <: ProgressMeterTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressMeterTextProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1424,7 +1428,8 @@ object componentsProgressBarMod {
       __obj.asInstanceOf[ProgressMeterWithTextProps]
     }
     
-    extension [Self <: ProgressMeterWithTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressMeterWithTextProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

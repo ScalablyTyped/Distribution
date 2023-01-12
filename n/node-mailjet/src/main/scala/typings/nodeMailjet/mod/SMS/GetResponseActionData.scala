@@ -15,7 +15,8 @@ object GetResponseActionData {
     __obj.asInstanceOf[GetResponseActionData]
   }
   
-  extension [Self <: GetResponseActionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResponseActionData] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
   }

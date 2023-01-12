@@ -19,7 +19,8 @@ object Total {
     __obj.asInstanceOf[Total]
   }
   
-  extension [Self <: Total](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Total] (val x: Self) extends AnyVal {
     
     inline def setCurrent_page(value: String): Self = StObject.set(x, "current_page", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object dxTextBoxOptions {
     __obj.asInstanceOf[dxTextBoxOptions[TComponent]]
   }
   
-  extension [Self <: dxTextBoxOptions[?], TComponent](x: Self & dxTextBoxOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTextBoxOptions[?], TComponent] (val x: Self & dxTextBoxOptions[TComponent]) extends AnyVal {
     
     inline def setMaxLength(value: String | Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     

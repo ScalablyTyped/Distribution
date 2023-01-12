@@ -17,7 +17,8 @@ object DataFormatPreference {
     __obj.asInstanceOf[DataFormatPreference]
   }
   
-  extension [Self <: DataFormatPreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataFormatPreference] (val x: Self) extends AnyVal {
     
     inline def setDataFormatPreference(value: String): Self = StObject.set(x, "dataFormatPreference", value.asInstanceOf[js.Any])
     

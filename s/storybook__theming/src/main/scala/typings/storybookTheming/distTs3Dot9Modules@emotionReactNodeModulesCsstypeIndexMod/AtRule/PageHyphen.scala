@@ -19,7 +19,8 @@ object PageHyphen {
     __obj.asInstanceOf[PageHyphen[TLength, TTime]]
   }
   
-  extension [Self <: PageHyphen[?, ?], TLength, TTime](x: Self & (PageHyphen[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageHyphen[?, ?], TLength, TTime] (val x: Self & (PageHyphen[TLength, TTime])) extends AnyVal {
     
     inline def setBleed(value: Bleed[TLength]): Self = StObject.set(x, "bleed", value.asInstanceOf[js.Any])
     

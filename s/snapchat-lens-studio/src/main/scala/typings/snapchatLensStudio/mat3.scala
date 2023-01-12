@@ -67,7 +67,8 @@ object mat3 {
     __obj.asInstanceOf[mat3]
   }
   
-  extension [Self <: mat3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: mat3] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: mat3 => mat3): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

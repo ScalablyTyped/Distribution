@@ -43,7 +43,8 @@ object runnerMod {
       __obj.asInstanceOf[Create]
     }
     
-    extension [Self <: Create](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object runnerMod {
       __obj.asInstanceOf[Runner]
     }
     
-    extension [Self <: Runner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Runner] (val x: Self) extends AnyVal {
       
       inline def setFinished(value: js.Promise[Any]): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
       

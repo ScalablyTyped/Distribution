@@ -34,7 +34,8 @@ object SliderTheme {
     __obj.asInstanceOf[SliderTheme]
   }
   
-  extension [Self <: SliderTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderTheme] (val x: Self) extends AnyVal {
     
     inline def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
     

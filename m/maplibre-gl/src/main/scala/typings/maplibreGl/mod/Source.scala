@@ -75,7 +75,8 @@ object Source {
     __obj.asInstanceOf[Source]
   }
   
-  extension [Self <: Source](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     inline def setAbortTile(value: (/* tile */ Tile, /* callback */ Callback[scala.Unit]) => scala.Unit): Self = StObject.set(x, "abortTile", js.Any.fromFunction2(value))
     

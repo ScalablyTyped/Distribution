@@ -32,7 +32,8 @@ object CompletionsRequest {
     __obj.asInstanceOf[CompletionsRequest]
   }
   
-  extension [Self <: CompletionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionsRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: CompletionsArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

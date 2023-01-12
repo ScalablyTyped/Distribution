@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Attrs]
     }
     
-    extension [Self <: Attrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attrs] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: typings.prosemirrorModel.mod.Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[FromJSON]
     }
     
-    extension [Self <: FromJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromJSON] (val x: Self) extends AnyVal {
       
       inline def setFromJSON(value: (Schema[Any, Any], Any) => Step): Self = StObject.set(x, "fromJSON", js.Any.fromFunction2(value))
     }
@@ -66,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: typings.prosemirrorModel.mod.Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object SubstancePolymerRepeatRepeatUnitStructuralRepresentation {
     __obj.asInstanceOf[SubstancePolymerRepeatRepeatUnitStructuralRepresentation]
   }
   
-  extension [Self <: SubstancePolymerRepeatRepeatUnitStructuralRepresentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstancePolymerRepeatRepeatUnitStructuralRepresentation] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     

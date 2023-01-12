@@ -18,7 +18,8 @@ object GetContextKeysForPolicyResponse {
     __obj.asInstanceOf[GetContextKeysForPolicyResponse]
   }
   
-  extension [Self <: GetContextKeysForPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContextKeysForPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setContextKeyNames(value: ContextKeyNamesResultListType): Self = StObject.set(x, "ContextKeyNames", value.asInstanceOf[js.Any])
     

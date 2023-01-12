@@ -22,7 +22,8 @@ object ReportStatus {
     __obj.asInstanceOf[ReportStatus]
   }
   
-  extension [Self <: ReportStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportStatus] (val x: Self) extends AnyVal {
     
     inline def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     

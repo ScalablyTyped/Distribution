@@ -28,7 +28,8 @@ object SymbolDictionary {
     __obj.asInstanceOf[SymbolDictionary]
   }
   
-  extension [Self <: SymbolDictionary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolDictionary] (val x: Self) extends AnyVal {
     
     inline def setArc(value: js.Function): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

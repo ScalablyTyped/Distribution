@@ -112,7 +112,8 @@ object reactInputCalendar {
       __obj.asInstanceOf[ReactInputCalendarProps]
     }
     
-    extension [Self <: ReactInputCalendarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactInputCalendarProps] (val x: Self) extends AnyVal {
       
       inline def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
       

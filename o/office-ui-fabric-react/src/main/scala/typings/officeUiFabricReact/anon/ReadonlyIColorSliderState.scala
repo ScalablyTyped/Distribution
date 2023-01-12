@@ -16,7 +16,8 @@ object ReadonlyIColorSliderState {
     __obj.asInstanceOf[ReadonlyIColorSliderState]
   }
   
-  extension [Self <: ReadonlyIColorSliderState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyIColorSliderState] (val x: Self) extends AnyVal {
     
     inline def setCurrentValue(value: Double): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
   }

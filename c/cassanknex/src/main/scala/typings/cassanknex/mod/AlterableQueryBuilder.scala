@@ -23,7 +23,8 @@ object AlterableQueryBuilder {
     __obj.asInstanceOf[AlterableQueryBuilder[T]]
   }
   
-  extension [Self <: AlterableQueryBuilder[?], T](x: Self & AlterableQueryBuilder[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlterableQueryBuilder[?], T] (val x: Self & AlterableQueryBuilder[T]) extends AnyVal {
     
     inline def setAlter(value: (Any, String) => AlterableQueryBuilder[T]): Self = StObject.set(x, "alter", js.Any.fromFunction2(value))
     

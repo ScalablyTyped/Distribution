@@ -113,7 +113,8 @@ object DescribeDeviceResponse {
     __obj.asInstanceOf[DescribeDeviceResponse]
   }
   
-  extension [Self <: DescribeDeviceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDeviceResponse] (val x: Self) extends AnyVal {
     
     inline def setAlternateSoftwares(value: AlternateSoftwares): Self = StObject.set(x, "AlternateSoftwares", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ReplyMarkup {
     __obj.asInstanceOf[ReplyMarkup]
   }
   
-  extension [Self <: ReplyMarkup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplyMarkup] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

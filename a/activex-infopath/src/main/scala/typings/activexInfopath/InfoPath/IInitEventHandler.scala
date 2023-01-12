@@ -22,7 +22,8 @@ object IInitEventHandler {
     __obj.asInstanceOf[IInitEventHandler]
   }
   
-  extension [Self <: IInitEventHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInitEventHandler] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotIInitEventHandler_typekey(value: IInitEventHandler): Self = StObject.set(x, "InfoPath.IInitEventHandler_typekey", value.asInstanceOf[js.Any])
     

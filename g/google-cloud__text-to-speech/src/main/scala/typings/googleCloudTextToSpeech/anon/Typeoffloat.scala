@@ -86,7 +86,8 @@ object Typeoffloat {
     __obj.asInstanceOf[Typeoffloat]
   }
   
-  extension [Self <: Typeoffloat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeoffloat] (val x: Self) extends AnyVal {
     
     inline def setReadDoubleBE(value: (js.typedarray.Uint8Array, Double) => Double): Self = StObject.set(x, "readDoubleBE", js.Any.fromFunction2(value))
     

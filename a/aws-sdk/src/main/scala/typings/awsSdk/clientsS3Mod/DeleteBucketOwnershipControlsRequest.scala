@@ -23,7 +23,8 @@ object DeleteBucketOwnershipControlsRequest {
     __obj.asInstanceOf[DeleteBucketOwnershipControlsRequest]
   }
   
-  extension [Self <: DeleteBucketOwnershipControlsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBucketOwnershipControlsRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

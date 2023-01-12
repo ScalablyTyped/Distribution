@@ -19,7 +19,8 @@ object Optgroup {
     __obj.asInstanceOf[Optgroup]
   }
   
-  extension [Self <: Optgroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Optgroup] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[Option | Optgroup]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

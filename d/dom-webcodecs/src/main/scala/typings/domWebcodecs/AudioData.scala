@@ -41,7 +41,8 @@ object AudioData {
     __obj.asInstanceOf[AudioData]
   }
   
-  extension [Self <: AudioData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioData] (val x: Self) extends AnyVal {
     
     inline def setAllocationSize(value: AudioDataCopyToOptions => Double): Self = StObject.set(x, "allocationSize", js.Any.fromFunction1(value))
     

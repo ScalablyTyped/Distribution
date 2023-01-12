@@ -17,7 +17,8 @@ object SecurityHasPrivilegesUserProfileResponse {
     __obj.asInstanceOf[SecurityHasPrivilegesUserProfileResponse]
   }
   
-  extension [Self <: SecurityHasPrivilegesUserProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityHasPrivilegesUserProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: SecurityHasPrivilegesUserProfileHasPrivilegesUserProfileErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

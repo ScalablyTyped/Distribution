@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[EnvironmentVariables]
     }
     
-    extension [Self <: EnvironmentVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentVariables] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object mod {
       __obj.asInstanceOf[ServiceConfigOptions]
     }
     
-    extension [Self <: ServiceConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setAbortOnError(value: Boolean): Self = StObject.set(x, "abortOnError", value.asInstanceOf[js.Any])
       

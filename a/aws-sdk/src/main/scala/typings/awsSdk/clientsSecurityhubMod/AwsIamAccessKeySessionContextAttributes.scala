@@ -23,7 +23,8 @@ object AwsIamAccessKeySessionContextAttributes {
     __obj.asInstanceOf[AwsIamAccessKeySessionContextAttributes]
   }
   
-  extension [Self <: AwsIamAccessKeySessionContextAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsIamAccessKeySessionContextAttributes] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: NonEmptyString): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

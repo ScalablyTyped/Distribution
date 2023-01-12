@@ -22,7 +22,8 @@ object AllocationSpecificSKUReservation {
     __obj.asInstanceOf[AllocationSpecificSKUReservation]
   }
   
-  extension [Self <: AllocationSpecificSKUReservation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllocationSpecificSKUReservation] (val x: Self) extends AnyVal {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

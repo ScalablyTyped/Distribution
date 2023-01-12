@@ -28,7 +28,8 @@ object SortedEventUIParam {
     __obj.asInstanceOf[SortedEventUIParam]
   }
   
-  extension [Self <: SortedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setAppliedSortDirections(value: js.Array[Any]): Self = StObject.set(x, "appliedSortDirections", value.asInstanceOf[js.Any])
     

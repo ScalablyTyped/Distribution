@@ -54,7 +54,8 @@ object XMergeableCell {
     __obj.asInstanceOf[XMergeableCell]
   }
   
-  extension [Self <: XMergeableCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMergeableCell] (val x: Self) extends AnyVal {
     
     inline def setColumnSpan(value: Double): Self = StObject.set(x, "ColumnSpan", value.asInstanceOf[js.Any])
     

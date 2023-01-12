@@ -18,7 +18,8 @@ object DeleteVpcLinkRequest {
     __obj.asInstanceOf[DeleteVpcLinkRequest]
   }
   
-  extension [Self <: DeleteVpcLinkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVpcLinkRequest] (val x: Self) extends AnyVal {
     
     inline def setVpcLinkId(value: String): Self = StObject.set(x, "vpcLinkId", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object ParamsHandler_ {
     __obj.asInstanceOf[ParamsHandler_]
   }
   
-  extension [Self <: ParamsHandler_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParamsHandler_] (val x: Self) extends AnyVal {
     
     inline def setRequestHandler(value: APIGatewayProxyEvent => js.Promise[APIGatewayProxyResult]): Self = StObject.set(x, "requestHandler", js.Any.fromFunction1(value))
   }

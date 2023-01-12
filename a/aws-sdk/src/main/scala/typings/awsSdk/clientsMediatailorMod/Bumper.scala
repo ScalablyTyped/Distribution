@@ -23,7 +23,8 @@ object Bumper {
     __obj.asInstanceOf[Bumper]
   }
   
-  extension [Self <: Bumper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bumper] (val x: Self) extends AnyVal {
     
     inline def setEndUrl(value: _String): Self = StObject.set(x, "EndUrl", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DescribeCacheParameterGroupsMessage {
     __obj.asInstanceOf[DescribeCacheParameterGroupsMessage]
   }
   
-  extension [Self <: DescribeCacheParameterGroupsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCacheParameterGroupsMessage] (val x: Self) extends AnyVal {
     
     inline def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
     

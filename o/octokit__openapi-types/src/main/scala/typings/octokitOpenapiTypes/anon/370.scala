@@ -20,7 +20,8 @@ object `370` {
     __obj.asInstanceOf[`370`]
   }
   
-  extension [Self <: `370`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `370`] (val x: Self) extends AnyVal {
     
     inline def setState(value: active): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

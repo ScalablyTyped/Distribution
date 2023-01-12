@@ -32,7 +32,8 @@ object BackForwardCacheNotRestoredExplanationTree {
     __obj.asInstanceOf[BackForwardCacheNotRestoredExplanationTree]
   }
   
-  extension [Self <: BackForwardCacheNotRestoredExplanationTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackForwardCacheNotRestoredExplanationTree] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[BackForwardCacheNotRestoredExplanationTree]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

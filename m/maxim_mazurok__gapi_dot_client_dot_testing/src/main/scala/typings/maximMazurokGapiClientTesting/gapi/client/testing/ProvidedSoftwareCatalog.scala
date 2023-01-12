@@ -25,7 +25,8 @@ object ProvidedSoftwareCatalog {
     __obj.asInstanceOf[ProvidedSoftwareCatalog]
   }
   
-  extension [Self <: ProvidedSoftwareCatalog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvidedSoftwareCatalog] (val x: Self) extends AnyVal {
     
     inline def setAndroidxOrchestratorVersion(value: String): Self = StObject.set(x, "androidxOrchestratorVersion", value.asInstanceOf[js.Any])
     

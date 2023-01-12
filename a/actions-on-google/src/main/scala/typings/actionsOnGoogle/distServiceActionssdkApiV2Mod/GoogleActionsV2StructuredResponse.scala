@@ -24,7 +24,8 @@ object GoogleActionsV2StructuredResponse {
     __obj.asInstanceOf[GoogleActionsV2StructuredResponse]
   }
   
-  extension [Self <: GoogleActionsV2StructuredResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2StructuredResponse] (val x: Self) extends AnyVal {
     
     inline def setOrderUpdate(value: GoogleActionsV2OrdersOrderUpdate): Self = StObject.set(x, "orderUpdate", value.asInstanceOf[js.Any])
     

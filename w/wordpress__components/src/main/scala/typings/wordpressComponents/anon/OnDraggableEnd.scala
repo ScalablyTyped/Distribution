@@ -20,7 +20,8 @@ object OnDraggableEnd {
     __obj.asInstanceOf[OnDraggableEnd]
   }
   
-  extension [Self <: OnDraggableEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDraggableEnd] (val x: Self) extends AnyVal {
     
     inline def setOnDraggableEnd(value: DragEvent[Element] => Unit): Self = StObject.set(x, "onDraggableEnd", js.Any.fromFunction1(value))
     

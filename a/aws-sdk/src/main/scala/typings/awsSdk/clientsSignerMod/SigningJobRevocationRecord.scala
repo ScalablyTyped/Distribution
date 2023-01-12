@@ -28,7 +28,8 @@ object SigningJobRevocationRecord {
     __obj.asInstanceOf[SigningJobRevocationRecord]
   }
   
-  extension [Self <: SigningJobRevocationRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigningJobRevocationRecord] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object typesWorkboxEventMapMod {
       __obj.asInstanceOf[WorkboxEventMap]
     }
     
-    extension [Self <: WorkboxEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkboxEventMap] (val x: Self) extends AnyVal {
       
       inline def setActivated(value: WorkboxUpdatableEvent): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object typesWorkboxEventMapMod {
       __obj.asInstanceOf[WorkboxExtendableEvent]
     }
     
-    extension [Self <: WorkboxExtendableEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkboxExtendableEvent] (val x: Self) extends AnyVal {
       
       inline def setSw(value: ServiceWorker): Self = StObject.set(x, "sw", value.asInstanceOf[js.Any])
     }
@@ -103,7 +105,8 @@ object typesWorkboxEventMapMod {
       __obj.asInstanceOf[WorkboxMessageEvent]
     }
     
-    extension [Self <: WorkboxMessageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkboxMessageEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -123,7 +126,8 @@ object typesWorkboxEventMapMod {
       __obj.asInstanceOf[WorkboxUpdatableEvent]
     }
     
-    extension [Self <: WorkboxUpdatableEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkboxUpdatableEvent] (val x: Self) extends AnyVal {
       
       inline def setIsUpdate(value: Boolean): Self = StObject.set(x, "isUpdate", value.asInstanceOf[js.Any])
       
@@ -145,7 +149,8 @@ object typesWorkboxEventMapMod {
       __obj.asInstanceOf[WorkboxWaitingEvent]
     }
     
-    extension [Self <: WorkboxWaitingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkboxWaitingEvent] (val x: Self) extends AnyVal {
       
       inline def setWasWaitingBeforeRegister(value: Boolean): Self = StObject.set(x, "wasWaitingBeforeRegister", value.asInstanceOf[js.Any])
       

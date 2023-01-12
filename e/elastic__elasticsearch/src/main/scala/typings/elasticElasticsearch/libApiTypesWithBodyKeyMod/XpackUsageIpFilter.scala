@@ -17,7 +17,8 @@ object XpackUsageIpFilter {
     __obj.asInstanceOf[XpackUsageIpFilter]
   }
   
-  extension [Self <: XpackUsageIpFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageIpFilter] (val x: Self) extends AnyVal {
     
     inline def setHttp(value: Boolean): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     

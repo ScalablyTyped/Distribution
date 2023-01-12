@@ -64,7 +64,8 @@ object srcLemmaMod {
       __obj.asInstanceOf[LemmaOptions]
     }
     
-    extension [Self <: LemmaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LemmaOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

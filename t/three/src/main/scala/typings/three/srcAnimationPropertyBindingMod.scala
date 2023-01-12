@@ -94,7 +94,8 @@ object srcAnimationPropertyBindingMod {
       __obj.asInstanceOf[ParseTrackNameResults]
     }
     
-    extension [Self <: ParseTrackNameResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseTrackNameResults] (val x: Self) extends AnyVal {
       
       inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       

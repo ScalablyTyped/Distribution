@@ -23,7 +23,8 @@ object CreateQueryLoggingConfigRequest {
     __obj.asInstanceOf[CreateQueryLoggingConfigRequest]
   }
   
-  extension [Self <: CreateQueryLoggingConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateQueryLoggingConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogsLogGroupArn(value: CloudWatchLogsLogGroupArn): Self = StObject.set(x, "CloudWatchLogsLogGroupArn", value.asInstanceOf[js.Any])
     

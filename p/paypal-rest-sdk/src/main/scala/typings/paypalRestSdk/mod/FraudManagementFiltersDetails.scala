@@ -21,7 +21,8 @@ object FraudManagementFiltersDetails {
     __obj.asInstanceOf[FraudManagementFiltersDetails]
   }
   
-  extension [Self <: FraudManagementFiltersDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FraudManagementFiltersDetails] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

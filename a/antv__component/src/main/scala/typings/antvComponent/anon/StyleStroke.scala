@@ -15,7 +15,8 @@ object StyleStroke {
     __obj.asInstanceOf[StyleStroke]
   }
   
-  extension [Self <: StyleStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleStroke] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: Stroke): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }

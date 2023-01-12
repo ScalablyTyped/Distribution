@@ -15,7 +15,8 @@ object IParentOnMap {
     __obj.asInstanceOf[IParentOnMap]
   }
   
-  extension [Self <: IParentOnMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParentOnMap] (val x: Self) extends AnyVal {
     
     inline def setGetMap(value: () => Map_): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
   }

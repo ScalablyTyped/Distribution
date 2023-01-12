@@ -25,7 +25,8 @@ object TypeofHTMLTrackElement {
     __obj.asInstanceOf[TypeofHTMLTrackElement]
   }
   
-  extension [Self <: TypeofHTMLTrackElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofHTMLTrackElement] (val x: Self) extends AnyVal {
     
     inline def setERROR(value: Double): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     

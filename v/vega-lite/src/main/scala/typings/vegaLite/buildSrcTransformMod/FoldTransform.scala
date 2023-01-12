@@ -27,7 +27,8 @@ object FoldTransform {
     __obj.asInstanceOf[FoldTransform]
   }
   
-  extension [Self <: FoldTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

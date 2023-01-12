@@ -15,7 +15,8 @@ object CreateClusterParameterGroupResult {
     __obj.asInstanceOf[CreateClusterParameterGroupResult]
   }
   
-  extension [Self <: CreateClusterParameterGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateClusterParameterGroupResult] (val x: Self) extends AnyVal {
     
     inline def setClusterParameterGroup(value: ClusterParameterGroup): Self = StObject.set(x, "ClusterParameterGroup", value.asInstanceOf[js.Any])
     

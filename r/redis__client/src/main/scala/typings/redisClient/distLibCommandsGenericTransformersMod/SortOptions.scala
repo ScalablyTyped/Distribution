@@ -27,7 +27,8 @@ object SortOptions {
     __obj.asInstanceOf[SortOptions]
   }
   
-  extension [Self <: SortOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortOptions] (val x: Self) extends AnyVal {
     
     inline def setALPHA(value: `true`): Self = StObject.set(x, "ALPHA", value.asInstanceOf[js.Any])
     

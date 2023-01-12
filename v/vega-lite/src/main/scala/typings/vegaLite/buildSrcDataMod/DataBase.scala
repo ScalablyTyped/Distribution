@@ -23,7 +23,8 @@ object DataBase {
     __obj.asInstanceOf[DataBase]
   }
   
-  extension [Self <: DataBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataBase] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: DataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

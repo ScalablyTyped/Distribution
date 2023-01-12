@@ -23,7 +23,8 @@ object S3DataRepositoryConfiguration {
     __obj.asInstanceOf[S3DataRepositoryConfiguration]
   }
   
-  extension [Self <: S3DataRepositoryConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3DataRepositoryConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutoExportPolicy(value: AutoExportPolicy): Self = StObject.set(x, "AutoExportPolicy", value.asInstanceOf[js.Any])
     

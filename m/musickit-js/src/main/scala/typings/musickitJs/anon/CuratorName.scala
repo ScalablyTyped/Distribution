@@ -46,7 +46,8 @@ object CuratorName {
     __obj.asInstanceOf[CuratorName]
   }
   
-  extension [Self <: CuratorName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CuratorName] (val x: Self) extends AnyVal {
     
     inline def setArtwork(value: typings.musickitJs.MusicKit.Artwork): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
     

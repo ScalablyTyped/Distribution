@@ -25,7 +25,8 @@ object CheckIsSupportSoterAuthenticationSuccessCallbackResult {
     __obj.asInstanceOf[CheckIsSupportSoterAuthenticationSuccessCallbackResult]
   }
   
-  extension [Self <: CheckIsSupportSoterAuthenticationSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckIsSupportSoterAuthenticationSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setSupportMode(value: Array[fingerPrint | facial | speech]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
   }

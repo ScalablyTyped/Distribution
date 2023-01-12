@@ -125,7 +125,8 @@ object ojThematicMapSettableProperties {
     __obj.asInstanceOf[ojThematicMapSettableProperties[K1, K2, K3, D1, D2, D3]]
   }
   
-  extension [Self <: ojThematicMapSettableProperties[?, ?, ?, ?, ?, ?], K1, K2, K3, D1, D2, D3](x: Self & (ojThematicMapSettableProperties[K1, K2, K3, D1, D2, D3])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojThematicMapSettableProperties[?, ?, ?, ?, ?, ?], K1, K2, K3, D1, D2, D3] (val x: Self & (ojThematicMapSettableProperties[K1, K2, K3, D1, D2, D3])) extends AnyVal {
     
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     

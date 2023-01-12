@@ -20,7 +20,8 @@ object PopupsSetDetails {
     __obj.asInstanceOf[PopupsSetDetails]
   }
   
-  extension [Self <: PopupsSetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupsSetDetails] (val x: Self) extends AnyVal {
     
     inline def setSetting(value: allow | block): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }

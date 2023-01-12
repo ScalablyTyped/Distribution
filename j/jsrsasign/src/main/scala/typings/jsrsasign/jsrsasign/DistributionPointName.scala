@@ -15,7 +15,8 @@ object DistributionPointName {
     __obj.asInstanceOf[DistributionPointName]
   }
   
-  extension [Self <: DistributionPointName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionPointName] (val x: Self) extends AnyVal {
     
     inline def setFull(value: js.Array[GeneralName]): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     

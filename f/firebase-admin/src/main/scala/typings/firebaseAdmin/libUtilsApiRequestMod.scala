@@ -246,7 +246,8 @@ object libUtilsApiRequestMod {
       __obj.asInstanceOf[HttpRequestConfig]
     }
     
-    extension [Self <: HttpRequestConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequestConfig] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | js.Object | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -300,7 +301,8 @@ object libUtilsApiRequestMod {
       __obj.asInstanceOf[HttpResponse]
     }
     
-    extension [Self <: HttpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -352,7 +354,8 @@ object libUtilsApiRequestMod {
       __obj.asInstanceOf[RetryConfig]
     }
     
-    extension [Self <: RetryConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryConfig] (val x: Self) extends AnyVal {
       
       inline def setBackOffFactor(value: Double): Self = StObject.set(x, "backOffFactor", value.asInstanceOf[js.Any])
       

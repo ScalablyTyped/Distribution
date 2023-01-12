@@ -31,7 +31,8 @@ object Leaderboard {
     __obj.asInstanceOf[Leaderboard]
   }
   
-  extension [Self <: Leaderboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Leaderboard] (val x: Self) extends AnyVal {
     
     inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     

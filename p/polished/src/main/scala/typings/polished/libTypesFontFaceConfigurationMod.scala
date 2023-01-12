@@ -41,7 +41,8 @@ object libTypesFontFaceConfigurationMod {
       __obj.asInstanceOf[FontFaceConfiguration]
     }
     
-    extension [Self <: FontFaceConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontFaceConfiguration] (val x: Self) extends AnyVal {
       
       inline def setFileFormats(value: js.Array[String]): Self = StObject.set(x, "fileFormats", value.asInstanceOf[js.Any])
       

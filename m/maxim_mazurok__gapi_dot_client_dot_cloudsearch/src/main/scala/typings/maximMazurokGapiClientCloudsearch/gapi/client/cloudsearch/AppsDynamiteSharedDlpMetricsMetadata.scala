@@ -16,7 +16,8 @@ object AppsDynamiteSharedDlpMetricsMetadata {
     __obj.asInstanceOf[AppsDynamiteSharedDlpMetricsMetadata]
   }
   
-  extension [Self <: AppsDynamiteSharedDlpMetricsMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedDlpMetricsMetadata] (val x: Self) extends AnyVal {
     
     inline def setDlpStatus(value: String): Self = StObject.set(x, "dlpStatus", value.asInstanceOf[js.Any])
     

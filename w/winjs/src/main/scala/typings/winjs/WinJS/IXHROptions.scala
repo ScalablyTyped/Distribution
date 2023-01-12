@@ -32,7 +32,8 @@ object IXHROptions {
     __obj.asInstanceOf[IXHROptions]
   }
   
-  extension [Self <: IXHROptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXHROptions] (val x: Self) extends AnyVal {
     
     inline def setCustomRequestInitializer(value: /* request */ XMLHttpRequest => Unit): Self = StObject.set(x, "customRequestInitializer", js.Any.fromFunction1(value))
     

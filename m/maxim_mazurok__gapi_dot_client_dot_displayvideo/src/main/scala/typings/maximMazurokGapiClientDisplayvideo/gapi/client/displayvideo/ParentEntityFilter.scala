@@ -22,7 +22,8 @@ object ParentEntityFilter {
     __obj.asInstanceOf[ParentEntityFilter]
   }
   
-  extension [Self <: ParentEntityFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentEntityFilter] (val x: Self) extends AnyVal {
     
     inline def setFileType(value: js.Array[String]): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     

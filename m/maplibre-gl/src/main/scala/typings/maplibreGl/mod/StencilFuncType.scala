@@ -19,7 +19,8 @@ object StencilFuncType {
     __obj.asInstanceOf[StencilFuncType]
   }
   
-  extension [Self <: StencilFuncType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StencilFuncType] (val x: Self) extends AnyVal {
     
     inline def setFunc(value: CompareFuncType): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     

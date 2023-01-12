@@ -36,7 +36,8 @@ object libChartsGaugeMod {
       __obj.asInstanceOf[IGaugeProps]
     }
     
-    extension [Self <: IGaugeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGaugeProps] (val x: Self) extends AnyVal {
       
       inline def setBgColor(value: Double): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
       

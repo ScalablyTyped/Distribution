@@ -58,7 +58,8 @@ object ChangeMonth {
     __obj.asInstanceOf[ChangeMonth]
   }
   
-  extension [Self <: ChangeMonth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeMonth] (val x: Self) extends AnyVal {
     
     inline def setChangeMonth(value: select | none): Self = StObject.set(x, "changeMonth", value.asInstanceOf[js.Any])
     

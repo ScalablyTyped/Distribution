@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsBackgroundSmallMod extends Shortcut {
       __obj.asInstanceOf[BackgroundSmallProps]
     }
     
-    extension [Self <: BackgroundSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

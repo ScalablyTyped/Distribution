@@ -15,7 +15,8 @@ object BLOCKSIZE {
     __obj.asInstanceOf[BLOCKSIZE]
   }
   
-  extension [Self <: BLOCKSIZE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BLOCKSIZE] (val x: Self) extends AnyVal {
     
     inline def setBLOCK_SIZE(value: Double): Self = StObject.set(x, "BLOCK_SIZE", value.asInstanceOf[js.Any])
     

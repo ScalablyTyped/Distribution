@@ -45,7 +45,8 @@ object Stack {
     __obj.asInstanceOf[Stack]
   }
   
-  extension [Self <: Stack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stack] (val x: Self) extends AnyVal {
     
     inline def setDirection(
       value: `down-push` | `up-push` | `left-push` | `right-push` | `down-stack` | `up-stack` | `left-stack` | `right-stack`

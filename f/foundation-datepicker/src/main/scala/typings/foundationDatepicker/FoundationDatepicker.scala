@@ -41,7 +41,8 @@ object FoundationDatepicker {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     }
@@ -75,7 +76,8 @@ object FoundationDatepicker {
       __obj.asInstanceOf[OutOfRangeEvent]
     }
     
-    extension [Self <: OutOfRangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutOfRangeEvent] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object FoundationDatepicker {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setAppendTo(value: Selector | htmlString | (TypeOrArray[Element | DocumentFragment]) | JQuery[HTMLElement]): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       

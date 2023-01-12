@@ -199,7 +199,8 @@ object PolygonProps {
     __obj.asInstanceOf[PolygonProps]
   }
   
-  extension [Self <: PolygonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

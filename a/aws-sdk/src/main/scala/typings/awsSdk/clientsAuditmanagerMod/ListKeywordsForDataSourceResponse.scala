@@ -23,7 +23,8 @@ object ListKeywordsForDataSourceResponse {
     __obj.asInstanceOf[ListKeywordsForDataSourceResponse]
   }
   
-  extension [Self <: ListKeywordsForDataSourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListKeywordsForDataSourceResponse] (val x: Self) extends AnyVal {
     
     inline def setKeywords(value: Keywords): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     

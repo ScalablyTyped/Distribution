@@ -28,7 +28,8 @@ object RefreshCacheInput {
     __obj.asInstanceOf[RefreshCacheInput]
   }
   
-  extension [Self <: RefreshCacheInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshCacheInput] (val x: Self) extends AnyVal {
     
     inline def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     

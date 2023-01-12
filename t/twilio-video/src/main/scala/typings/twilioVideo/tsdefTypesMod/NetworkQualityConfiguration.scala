@@ -17,7 +17,8 @@ object NetworkQualityConfiguration {
     __obj.asInstanceOf[NetworkQualityConfiguration]
   }
   
-  extension [Self <: NetworkQualityConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkQualityConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: NetworkQualityVerbosity): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

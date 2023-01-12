@@ -319,7 +319,8 @@ object sapMP13nSelectionPanelMod {
       __obj.asInstanceOf[SelectionPanelSettings]
     }
     
-    extension [Self <: SelectionPanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionPanelSettings] (val x: Self) extends AnyVal {
       
       inline def setActiveColumn(value: String | PropertyBindingInfo): Self = StObject.set(x, "activeColumn", value.asInstanceOf[js.Any])
       

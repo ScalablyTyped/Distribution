@@ -25,7 +25,8 @@ object DestinationUris {
     __obj.asInstanceOf[DestinationUris]
   }
   
-  extension [Self <: DestinationUris](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationUris] (val x: Self) extends AnyVal {
     
     inline def `setDestination-attributes`(value: js.Array[js.Object]): Self = StObject.set(x, "destination-attributes", value.asInstanceOf[js.Any])
     

@@ -115,7 +115,8 @@ object libGridRecordBufferMod {
       __obj.asInstanceOf[RecordBuffer]
     }
     
-    extension [Self <: RecordBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordBuffer] (val x: Self) extends AnyVal {
       
       inline def setBookmark(value: Any): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
       

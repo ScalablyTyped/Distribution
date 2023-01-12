@@ -24,7 +24,8 @@ object CallbackOptions {
     __obj.asInstanceOf[CallbackOptions]
   }
   
-  extension [Self <: CallbackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: (/* err */ Unit, /* value */ js.UndefOr[js.Array[Change]]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
   }

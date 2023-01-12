@@ -24,7 +24,8 @@ object BarcodeScannerReport {
     __obj.asInstanceOf[BarcodeScannerReport]
   }
   
-  extension [Self <: BarcodeScannerReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarcodeScannerReport] (val x: Self) extends AnyVal {
     
     inline def setScanData(value: IBuffer): Self = StObject.set(x, "scanData", value.asInstanceOf[js.Any])
     

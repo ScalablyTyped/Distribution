@@ -69,7 +69,8 @@ object componentsMenuMenuListItemMod {
       __obj.asInstanceOf[MenuListItemModifierProps]
     }
     
-    extension [Self <: MenuListItemModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuListItemModifierProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object componentsMenuMenuListItemMod {
       __obj.asInstanceOf[MenuListItemProps]
     }
     
-    extension [Self <: MenuListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuListItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

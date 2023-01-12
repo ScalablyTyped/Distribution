@@ -19,7 +19,8 @@ object DeliverPushMessageRequest {
     __obj.asInstanceOf[DeliverPushMessageRequest]
   }
   
-  extension [Self <: DeliverPushMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliverPushMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

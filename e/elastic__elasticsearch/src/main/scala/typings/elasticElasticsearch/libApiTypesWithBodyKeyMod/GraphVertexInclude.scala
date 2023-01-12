@@ -17,7 +17,8 @@ object GraphVertexInclude {
     __obj.asInstanceOf[GraphVertexInclude]
   }
   
-  extension [Self <: GraphVertexInclude](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphVertexInclude] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

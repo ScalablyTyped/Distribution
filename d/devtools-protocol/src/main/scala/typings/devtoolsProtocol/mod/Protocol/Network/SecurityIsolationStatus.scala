@@ -17,7 +17,8 @@ object SecurityIsolationStatus {
     __obj.asInstanceOf[SecurityIsolationStatus]
   }
   
-  extension [Self <: SecurityIsolationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityIsolationStatus] (val x: Self) extends AnyVal {
     
     inline def setCoep(value: CrossOriginEmbedderPolicyStatus): Self = StObject.set(x, "coep", value.asInstanceOf[js.Any])
     

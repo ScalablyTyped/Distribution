@@ -20,7 +20,8 @@ object Size {
     __obj.asInstanceOf[Size]
   }
   
-  extension [Self <: Size](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
     
     inline def setSize(value: typings.bmapgl.BMapGL.Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

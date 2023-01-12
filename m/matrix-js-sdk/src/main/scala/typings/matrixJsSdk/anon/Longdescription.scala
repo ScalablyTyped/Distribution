@@ -24,7 +24,8 @@ object Longdescription {
     __obj.asInstanceOf[Longdescription]
   }
   
-  extension [Self <: Longdescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Longdescription] (val x: Self) extends AnyVal {
     
     inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     

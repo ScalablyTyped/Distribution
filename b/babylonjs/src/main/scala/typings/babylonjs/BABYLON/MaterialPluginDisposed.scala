@@ -15,7 +15,8 @@ object MaterialPluginDisposed {
     __obj.asInstanceOf[MaterialPluginDisposed]
   }
   
-  extension [Self <: MaterialPluginDisposed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterialPluginDisposed] (val x: Self) extends AnyVal {
     
     inline def setForceDisposeTextures(value: Boolean): Self = StObject.set(x, "forceDisposeTextures", value.asInstanceOf[js.Any])
     

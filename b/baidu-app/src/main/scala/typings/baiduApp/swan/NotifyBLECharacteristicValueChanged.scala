@@ -44,7 +44,8 @@ object NotifyBLECharacteristicValueChanged {
     __obj.asInstanceOf[NotifyBLECharacteristicValueChanged]
   }
   
-  extension [Self <: NotifyBLECharacteristicValueChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyBLECharacteristicValueChanged] (val x: Self) extends AnyVal {
     
     inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     

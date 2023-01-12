@@ -103,7 +103,8 @@ object typesSrcCoreTimelineTimelineMod {
       __obj.asInstanceOf[Timeline]
     }
     
-    extension [Self <: Timeline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timeline] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
@@ -156,7 +157,8 @@ object typesSrcCoreTimelineTimelineMod {
       __obj.asInstanceOf[TimelineOptions]
     }
     
-    extension [Self <: TimelineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineOptions] (val x: Self) extends AnyVal {
       
       inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       

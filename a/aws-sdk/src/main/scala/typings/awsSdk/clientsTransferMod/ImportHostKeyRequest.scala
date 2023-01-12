@@ -33,7 +33,8 @@ object ImportHostKeyRequest {
     __obj.asInstanceOf[ImportHostKeyRequest]
   }
   
-  extension [Self <: ImportHostKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportHostKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: HostKeyDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object LastValueOriginalEvent {
     __obj.asInstanceOf[LastValueOriginalEvent]
   }
   
-  extension [Self <: LastValueOriginalEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastValueOriginalEvent] (val x: Self) extends AnyVal {
     
     inline def setLastValue(value: Value): Self = StObject.set(x, "lastValue", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object IdentityDocument {
     __obj.asInstanceOf[IdentityDocument]
   }
   
-  extension [Self <: IdentityDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityDocument] (val x: Self) extends AnyVal {
     
     inline def setExpiration_date(value: String): Self = StObject.set(x, "expiration_date", value.asInstanceOf[js.Any])
     

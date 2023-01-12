@@ -28,7 +28,8 @@ object libConnectionGetAddressesAndPortsMod {
       __obj.asInstanceOf[AddressesAndPorts]
     }
     
-    extension [Self <: AddressesAndPorts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressesAndPorts] (val x: Self) extends AnyVal {
       
       inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       

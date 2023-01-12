@@ -49,7 +49,8 @@ object distTypesJwtUnsecuredMod {
       __obj.asInstanceOf[UnsecuredResult]
     }
     
-    extension [Self <: UnsecuredResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsecuredResult] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: JWSHeaderParameters): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       

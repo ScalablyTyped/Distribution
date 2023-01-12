@@ -60,7 +60,8 @@ object MinAccessRole {
     __obj.asInstanceOf[MinAccessRole]
   }
   
-  extension [Self <: MinAccessRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinAccessRole] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

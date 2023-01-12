@@ -23,7 +23,8 @@ object MonotonicValues {
     __obj.asInstanceOf[MonotonicValues]
   }
   
-  extension [Self <: MonotonicValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonotonicValues] (val x: Self) extends AnyVal {
     
     inline def setMonotonicity(value: Monotonicity): Self = StObject.set(x, "Monotonicity", value.asInstanceOf[js.Any])
     

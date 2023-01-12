@@ -47,7 +47,8 @@ object libContentContainerMod extends Shortcut {
       __obj.asInstanceOf[ContentContainerProps]
     }
     
-    extension [Self <: ContentContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentContainerProps] (val x: Self) extends AnyVal {
       
       inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       

@@ -80,7 +80,8 @@ object OrbitOptions {
     __obj.asInstanceOf[OrbitOptions]
   }
   
-  extension [Self <: OrbitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrbitOptions] (val x: Self) extends AnyVal {
     
     inline def setActive_slide_class(value: String): Self = StObject.set(x, "active_slide_class", value.asInstanceOf[js.Any])
     

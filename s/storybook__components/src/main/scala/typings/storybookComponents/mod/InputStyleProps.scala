@@ -21,7 +21,8 @@ object InputStyleProps {
     __obj.asInstanceOf[InputStyleProps]
   }
   
-  extension [Self <: InputStyleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputStyleProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Alignments): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

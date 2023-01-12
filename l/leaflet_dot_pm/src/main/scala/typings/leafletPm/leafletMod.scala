@@ -21,7 +21,8 @@ object leafletMod {
       __obj.asInstanceOf[LayerGroup]
     }
     
-    extension [Self <: LayerGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerGroup] (val x: Self) extends AnyVal {
       
       inline def setPm(value: typings.leafletPm.leafletMod.PM.Edit.LayerGroup): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object leafletMod {
       __obj.asInstanceOf[Map]
     }
     
-    extension [Self <: Map](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
       
       inline def setPm(value: typings.leafletPm.leafletMod.PM.Map): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
     }
@@ -55,7 +57,8 @@ object leafletMod {
       __obj.asInstanceOf[Marker]
     }
     
-    extension [Self <: Marker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Marker] (val x: Self) extends AnyVal {
       
       inline def setPm(value: typings.leafletPm.leafletMod.PM.Edit.Marker): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
     }
@@ -74,7 +77,8 @@ object leafletMod {
         __obj.asInstanceOf[Draw]
       }
       
-      extension [Self <: Draw](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Draw] (val x: Self) extends AnyVal {
         
         inline def setGetShapes(value: () => js.Array[String]): Self = StObject.set(x, "getShapes", js.Any.fromFunction0(value))
       }
@@ -95,7 +99,8 @@ object leafletMod {
         __obj.asInstanceOf[DrawOptions]
       }
       
-      extension [Self <: DrawOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DrawOptions] (val x: Self) extends AnyVal {
         
         inline def setHintlineStyle(value: PathOptions): Self = StObject.set(x, "hintlineStyle", value.asInstanceOf[js.Any])
         
@@ -178,7 +183,8 @@ object leafletMod {
         __obj.asInstanceOf[EditOptions]
       }
       
-      extension [Self <: EditOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EditOptions] (val x: Self) extends AnyVal {
         
         inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
         
@@ -239,7 +245,8 @@ object leafletMod {
         __obj.asInstanceOf[ToolbarOptions]
       }
       
-      extension [Self <: ToolbarOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ToolbarOptions] (val x: Self) extends AnyVal {
         
         inline def setDeleteLayer(value: Boolean): Self = StObject.set(x, "deleteLayer", value.asInstanceOf[js.Any])
         
@@ -279,7 +286,8 @@ object leafletMod {
       __obj.asInstanceOf[Polygon]
     }
     
-    extension [Self <: Polygon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Polygon] (val x: Self) extends AnyVal {
       
       inline def setPm(value: Line): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
     }
@@ -296,7 +304,8 @@ object leafletMod {
       __obj.asInstanceOf[Polyline]
     }
     
-    extension [Self <: Polyline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Polyline] (val x: Self) extends AnyVal {
       
       inline def setPm(value: Line): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
     }

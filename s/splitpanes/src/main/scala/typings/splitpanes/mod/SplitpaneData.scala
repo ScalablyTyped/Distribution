@@ -29,7 +29,8 @@ object SplitpaneData {
     __obj.asInstanceOf[SplitpaneData]
   }
   
-  extension [Self <: SplitpaneData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitpaneData] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: ContainerType): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

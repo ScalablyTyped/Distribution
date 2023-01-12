@@ -37,7 +37,8 @@ object IComputePipelineContext {
     __obj.asInstanceOf[IComputePipelineContext]
   }
   
-  extension [Self <: IComputePipelineContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComputePipelineContext] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

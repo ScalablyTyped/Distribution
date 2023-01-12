@@ -78,7 +78,8 @@ object CreateApiRequest {
     __obj.asInstanceOf[CreateApiRequest]
   }
   
-  extension [Self <: CreateApiRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateApiRequest] (val x: Self) extends AnyVal {
     
     inline def setApiKeySelectionExpression(value: SelectionExpression): Self = StObject.set(x, "ApiKeySelectionExpression", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object TableDefinition {
     __obj.asInstanceOf[TableDefinition[Name, Row]]
   }
   
-  extension [Self <: TableDefinition[?, ?], Name /* <: String */, Row](x: Self & (TableDefinition[Name, Row])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableDefinition[?, ?], Name /* <: String */, Row] (val x: Self & (TableDefinition[Name, Row])) extends AnyVal {
     
     inline def setColumns(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ CName in keyof Row ]: node-sql-2.node-sql-2.ColumnDefinition<CName, Row[CName]>} */ js.Any

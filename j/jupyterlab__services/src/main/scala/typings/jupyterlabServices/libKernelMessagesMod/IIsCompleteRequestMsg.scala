@@ -27,7 +27,8 @@ object IIsCompleteRequestMsg {
     __obj.asInstanceOf[IIsCompleteRequestMsg]
   }
   
-  extension [Self <: IIsCompleteRequestMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIsCompleteRequestMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: CodeString): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

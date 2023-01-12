@@ -15,7 +15,8 @@ object PressableStateCallbackType {
     __obj.asInstanceOf[PressableStateCallbackType]
   }
   
-  extension [Self <: PressableStateCallbackType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressableStateCallbackType] (val x: Self) extends AnyVal {
     
     inline def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
   }

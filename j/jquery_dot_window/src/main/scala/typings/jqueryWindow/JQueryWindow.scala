@@ -42,7 +42,8 @@ object JQueryWindow {
       __obj.asInstanceOf[Button]
     }
     
-    extension [Self <: Button](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (Button, Window) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -153,7 +154,8 @@ object JQueryWindow {
       __obj.asInstanceOf[StaticOptions]
     }
     
-    extension [Self <: StaticOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
@@ -629,7 +631,8 @@ object JQueryWindow {
       __obj.asInstanceOf[WindowOptions]
     }
     
-    extension [Self <: WindowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterCascade(value: /* wnd */ Window => Unit): Self = StObject.set(x, "afterCascade", js.Any.fromFunction1(value))
       

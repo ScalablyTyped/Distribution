@@ -18,7 +18,8 @@ object DimensionDetail {
     __obj.asInstanceOf[DimensionDetail]
   }
   
-  extension [Self <: DimensionDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionDetail] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     

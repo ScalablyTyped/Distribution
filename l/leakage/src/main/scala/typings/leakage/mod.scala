@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[IterateOptions]
     }
     
-    extension [Self <: IterateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IterateOptions] (val x: Self) extends AnyVal {
       
       inline def setGcollections(value: Double): Self = StObject.set(x, "gcollections", value.asInstanceOf[js.Any])
       

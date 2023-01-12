@@ -27,7 +27,8 @@ object EdgeDataDefinition {
     __obj.asInstanceOf[EdgeDataDefinition]
   }
   
-  extension [Self <: EdgeDataDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeDataDefinition] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

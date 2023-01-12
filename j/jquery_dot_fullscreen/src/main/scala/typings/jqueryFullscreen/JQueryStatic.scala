@@ -19,7 +19,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setFullscreen(value: JQueryFullscreen): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
   }

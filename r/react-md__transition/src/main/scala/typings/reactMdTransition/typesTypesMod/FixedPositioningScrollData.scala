@@ -23,7 +23,8 @@ object FixedPositioningScrollData {
     __obj.asInstanceOf[FixedPositioningScrollData[FixedToElement, FixedElement]]
   }
   
-  extension [Self <: FixedPositioningScrollData[?, ?], FixedToElement /* <: HTMLElement */, FixedElement /* <: HTMLElement */](x: Self & (FixedPositioningScrollData[FixedToElement, FixedElement])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedPositioningScrollData[?, ?], FixedToElement /* <: HTMLElement */, FixedElement /* <: HTMLElement */] (val x: Self & (FixedPositioningScrollData[FixedToElement, FixedElement])) extends AnyVal {
     
     inline def setFixedElement(value: FixedElement): Self = StObject.set(x, "fixedElement", value.asInstanceOf[js.Any])
     

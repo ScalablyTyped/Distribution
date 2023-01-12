@@ -17,7 +17,8 @@ object `404ContentApplicationjsonDocumentationurlMessage` {
     __obj.asInstanceOf[`404ContentApplicationjsonDocumentationurlMessage`]
   }
   
-  extension [Self <: `404ContentApplicationjsonDocumentationurlMessage`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `404ContentApplicationjsonDocumentationurlMessage`] (val x: Self) extends AnyVal {
     
     inline def set404(value: ContentApplicationjsonDocumentationurlMessage): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }

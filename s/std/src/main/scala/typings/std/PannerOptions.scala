@@ -57,7 +57,8 @@ object PannerOptions {
     __obj.asInstanceOf[PannerOptions]
   }
   
-  extension [Self <: PannerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PannerOptions] (val x: Self) extends AnyVal {
     
     inline def setConeInnerAngle(value: Double): Self = StObject.set(x, "coneInnerAngle", value.asInstanceOf[js.Any])
     

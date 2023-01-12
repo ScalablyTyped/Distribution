@@ -47,7 +47,8 @@ object `3D` {
     __obj.asInstanceOf[`3D`]
   }
   
-  extension [Self <: `3D`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `3D`] (val x: Self) extends AnyVal {
     
     inline def set3D(value: Features): Self = StObject.set(x, "3D", value.asInstanceOf[js.Any])
     

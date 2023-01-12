@@ -167,7 +167,8 @@ object StandardShorthandPropertiesFallback {
     __obj.asInstanceOf[StandardShorthandPropertiesFallback[TLength, TTime]]
   }
   
-  extension [Self <: StandardShorthandPropertiesFallback[?, ?], TLength, TTime](x: Self & (StandardShorthandPropertiesFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardShorthandPropertiesFallback[?, ?], TLength, TTime] (val x: Self & (StandardShorthandPropertiesFallback[TLength, TTime])) extends AnyVal {
     
     inline def setAll(value: All | js.Array[NonNullable[js.UndefOr[All]]]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

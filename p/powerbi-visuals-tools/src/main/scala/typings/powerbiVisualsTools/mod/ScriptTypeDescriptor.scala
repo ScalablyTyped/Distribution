@@ -15,7 +15,8 @@ object ScriptTypeDescriptor {
     __obj.asInstanceOf[ScriptTypeDescriptor]
   }
   
-  extension [Self <: ScriptTypeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptTypeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

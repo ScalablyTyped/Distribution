@@ -28,7 +28,8 @@ object InstantExperiencesAdsDialogParams {
     __obj.asInstanceOf[InstantExperiencesAdsDialogParams]
   }
   
-  extension [Self <: InstantExperiencesAdsDialogParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstantExperiencesAdsDialogParams] (val x: Self) extends AnyVal {
     
     inline def setBusiness_id(value: String): Self = StObject.set(x, "business_id", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BatchDeleteObject {
     __obj.asInstanceOf[BatchDeleteObject]
   }
   
-  extension [Self <: BatchDeleteObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteObject] (val x: Self) extends AnyVal {
     
     inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
   }

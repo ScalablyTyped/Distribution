@@ -20,7 +20,8 @@ object StreamType {
     __obj.asInstanceOf[StreamType]
   }
   
-  extension [Self <: StreamType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamType] (val x: Self) extends AnyVal {
     
     inline def setType(value: IM | MIM | ROOM | POST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

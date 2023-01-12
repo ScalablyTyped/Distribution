@@ -21,7 +21,8 @@ object typesDeveloperUserAlreadyRegisteredExceptionMod {
       __obj.asInstanceOf[DeveloperUserAlreadyRegisteredException]
     }
     
-    extension [Self <: DeveloperUserAlreadyRegisteredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeveloperUserAlreadyRegisteredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.DeveloperUserAlreadyRegisteredException
@@ -43,7 +44,8 @@ object typesDeveloperUserAlreadyRegisteredExceptionMod {
       __obj.asInstanceOf[DeveloperUserAlreadyRegisteredExceptionDetails]
     }
     
-    extension [Self <: DeveloperUserAlreadyRegisteredExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeveloperUserAlreadyRegisteredExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object PropertiesFileTypes {
     __obj.asInstanceOf[PropertiesFileTypes]
   }
   
-  extension [Self <: PropertiesFileTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesFileTypes] (val x: Self) extends AnyVal {
     
     inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

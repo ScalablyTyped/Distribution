@@ -23,7 +23,8 @@ object DescribeDomainAutoTunesResponse {
     __obj.asInstanceOf[DescribeDomainAutoTunesResponse]
   }
   
-  extension [Self <: DescribeDomainAutoTunesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDomainAutoTunesResponse] (val x: Self) extends AnyVal {
     
     inline def setAutoTunes(value: AutoTuneList): Self = StObject.set(x, "AutoTunes", value.asInstanceOf[js.Any])
     

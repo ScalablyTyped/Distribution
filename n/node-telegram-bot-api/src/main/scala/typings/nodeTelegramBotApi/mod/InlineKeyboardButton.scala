@@ -31,7 +31,8 @@ object InlineKeyboardButton {
     __obj.asInstanceOf[InlineKeyboardButton]
   }
   
-  extension [Self <: InlineKeyboardButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineKeyboardButton] (val x: Self) extends AnyVal {
     
     inline def setCallback_data(value: String): Self = StObject.set(x, "callback_data", value.asInstanceOf[js.Any])
     

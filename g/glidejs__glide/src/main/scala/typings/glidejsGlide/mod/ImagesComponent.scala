@@ -37,7 +37,8 @@ object ImagesComponent {
     __obj.asInstanceOf[ImagesComponent]
   }
   
-  extension [Self <: ImagesComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagesComponent] (val x: Self) extends AnyVal {
     
     inline def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
     

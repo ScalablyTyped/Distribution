@@ -23,7 +23,8 @@ object BarHoverOptions {
     __obj.asInstanceOf[BarHoverOptions]
   }
   
-  extension [Self <: BarHoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarHoverOptions] (val x: Self) extends AnyVal {
     
     inline def setHoverBorderRadius(value: Double | BorderRadius): Self = StObject.set(x, "hoverBorderRadius", value.asInstanceOf[js.Any])
   }

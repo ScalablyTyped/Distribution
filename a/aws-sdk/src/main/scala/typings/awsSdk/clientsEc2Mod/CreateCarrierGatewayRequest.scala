@@ -33,7 +33,8 @@ object CreateCarrierGatewayRequest {
     __obj.asInstanceOf[CreateCarrierGatewayRequest]
   }
   
-  extension [Self <: CreateCarrierGatewayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCarrierGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

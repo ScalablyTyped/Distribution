@@ -38,7 +38,8 @@ object SortableEvents {
     __obj.asInstanceOf[SortableEvents]
   }
   
-  extension [Self <: SortableEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortableEvents] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
     

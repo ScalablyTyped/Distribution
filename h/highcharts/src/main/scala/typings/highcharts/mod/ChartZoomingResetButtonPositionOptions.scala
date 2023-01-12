@@ -37,7 +37,8 @@ object ChartZoomingResetButtonPositionOptions {
     __obj.asInstanceOf[ChartZoomingResetButtonPositionOptions]
   }
   
-  extension [Self <: ChartZoomingResetButtonPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartZoomingResetButtonPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

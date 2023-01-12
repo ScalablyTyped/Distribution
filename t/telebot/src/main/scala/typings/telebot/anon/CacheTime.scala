@@ -21,7 +21,8 @@ object CacheTime {
     __obj.asInstanceOf[CacheTime]
   }
   
-  extension [Self <: CacheTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheTime] (val x: Self) extends AnyVal {
     
     inline def setCacheTime(value: Double): Self = StObject.set(x, "cacheTime", value.asInstanceOf[js.Any])
     

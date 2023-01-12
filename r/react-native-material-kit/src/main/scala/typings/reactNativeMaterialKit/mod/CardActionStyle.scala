@@ -24,7 +24,8 @@ object CardActionStyle {
     __obj.asInstanceOf[CardActionStyle]
   }
   
-  extension [Self <: CardActionStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardActionStyle] (val x: Self) extends AnyVal {
     
     inline def setBorderStyle(value: solid | dotted | dashed): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     

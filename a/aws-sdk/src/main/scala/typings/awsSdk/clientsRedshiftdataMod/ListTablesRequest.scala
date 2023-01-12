@@ -63,7 +63,8 @@ object ListTablesRequest {
     __obj.asInstanceOf[ListTablesRequest]
   }
   
-  extension [Self <: ListTablesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTablesRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: Location): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     

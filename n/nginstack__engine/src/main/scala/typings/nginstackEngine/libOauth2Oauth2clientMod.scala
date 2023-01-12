@@ -40,7 +40,8 @@ object libOauth2Oauth2clientMod {
       __obj.asInstanceOf[AuthorizationRequestOptions]
     }
     
-    extension [Self <: AuthorizationRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setCodeChallenge(value: String): Self = StObject.set(x, "codeChallenge", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object libOauth2Oauth2clientMod {
       __obj.asInstanceOf[DeviceAuthorizationResponse]
     }
     
-    extension [Self <: DeviceAuthorizationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceAuthorizationResponse] (val x: Self) extends AnyVal {
       
       inline def setDeviceCode(value: String): Self = StObject.set(x, "deviceCode", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object libOauth2Oauth2clientMod {
       __obj.asInstanceOf[OAuth2ClientConstructorOptions]
     }
     
-    extension [Self <: OAuth2ClientConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuth2ClientConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthEndpoint(value: String): Self = StObject.set(x, "authEndpoint", value.asInstanceOf[js.Any])
       
@@ -229,7 +232,8 @@ object libOauth2Oauth2clientMod {
       __obj.asInstanceOf[TokenIntrospectionResponse]
     }
     
-    extension [Self <: TokenIntrospectionResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenIntrospectionResponse] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -286,7 +290,8 @@ object libOauth2Oauth2clientMod {
       __obj.asInstanceOf[TokenResponse]
     }
     
-    extension [Self <: TokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenResponse] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       

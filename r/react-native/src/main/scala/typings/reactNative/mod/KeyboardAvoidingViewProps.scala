@@ -38,7 +38,8 @@ object KeyboardAvoidingViewProps {
     __obj.asInstanceOf[KeyboardAvoidingViewProps]
   }
   
-  extension [Self <: KeyboardAvoidingViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardAvoidingViewProps] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: height | position | padding): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

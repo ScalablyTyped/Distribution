@@ -35,7 +35,8 @@ object IpConfiguration {
     __obj.asInstanceOf[IpConfiguration]
   }
   
-  extension [Self <: IpConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllocatedIpRange(value: String): Self = StObject.set(x, "allocatedIpRange", value.asInstanceOf[js.Any])
     

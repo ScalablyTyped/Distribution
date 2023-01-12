@@ -73,7 +73,8 @@ object PlaidLinkOptionsWithPublicKey {
     __obj.asInstanceOf[PlaidLinkOptionsWithPublicKey]
   }
   
-  extension [Self <: PlaidLinkOptionsWithPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaidLinkOptionsWithPublicKey] (val x: Self) extends AnyVal {
     
     inline def setAccountSubtypes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "accountSubtypes", value.asInstanceOf[js.Any])
     

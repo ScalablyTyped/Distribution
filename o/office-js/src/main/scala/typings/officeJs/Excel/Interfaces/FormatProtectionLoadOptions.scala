@@ -41,7 +41,8 @@ object FormatProtectionLoadOptions {
     __obj.asInstanceOf[FormatProtectionLoadOptions]
   }
   
-  extension [Self <: FormatProtectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatProtectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

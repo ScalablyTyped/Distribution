@@ -20,7 +20,8 @@ object Global {
     __obj.asInstanceOf[Global]
   }
   
-  extension [Self <: Global](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
     
     inline def `set@global`(
       value: Fontface & (Record[String, js.UndefOr[JSSFontface | js.Array[JSSFontface] | CSSProperties]])

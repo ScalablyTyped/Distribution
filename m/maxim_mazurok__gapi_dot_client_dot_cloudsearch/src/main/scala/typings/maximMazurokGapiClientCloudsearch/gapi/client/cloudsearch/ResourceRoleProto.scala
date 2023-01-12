@@ -21,7 +21,8 @@ object ResourceRoleProto {
     __obj.asInstanceOf[ResourceRoleProto]
   }
   
-  extension [Self <: ResourceRoleProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceRoleProto] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     

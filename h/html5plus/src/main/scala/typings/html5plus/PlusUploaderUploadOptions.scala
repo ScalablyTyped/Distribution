@@ -67,7 +67,8 @@ object PlusUploaderUploadOptions {
     __obj.asInstanceOf[PlusUploaderUploadOptions]
   }
   
-  extension [Self <: PlusUploaderUploadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusUploaderUploadOptions] (val x: Self) extends AnyVal {
     
     inline def setBlocksize(value: Double): Self = StObject.set(x, "blocksize", value.asInstanceOf[js.Any])
     

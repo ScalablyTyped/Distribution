@@ -44,7 +44,8 @@ object XStorable2 {
     __obj.asInstanceOf[XStorable2]
   }
   
-  extension [Self <: XStorable2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStorable2] (val x: Self) extends AnyVal {
     
     inline def setStoreSelf(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "storeSelf", js.Any.fromFunction1(value))
   }

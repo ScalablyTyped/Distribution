@@ -318,7 +318,8 @@ object BootstrapTableProps {
     __obj.asInstanceOf[BootstrapTableProps]
   }
   
-  extension [Self <: BootstrapTableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapTableProps] (val x: Self) extends AnyVal {
     
     inline def setAutoCollapse(value: typings.reactBootstrapTable.anon.Filter): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
     

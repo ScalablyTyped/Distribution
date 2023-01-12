@@ -15,7 +15,8 @@ object InheritanceOptions {
     __obj.asInstanceOf[InheritanceOptions]
   }
   
-  extension [Self <: InheritanceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InheritanceOptions] (val x: Self) extends AnyVal {
     
     inline def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     

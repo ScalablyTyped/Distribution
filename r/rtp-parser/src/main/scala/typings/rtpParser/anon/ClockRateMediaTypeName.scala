@@ -22,7 +22,8 @@ object ClockRateMediaTypeName {
     __obj.asInstanceOf[ClockRateMediaTypeName]
   }
   
-  extension [Self <: ClockRateMediaTypeName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClockRateMediaTypeName] (val x: Self) extends AnyVal {
     
     inline def setClockRate(value: `90000`): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
     

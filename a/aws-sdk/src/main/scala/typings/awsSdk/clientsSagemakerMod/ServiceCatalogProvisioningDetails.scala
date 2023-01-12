@@ -33,7 +33,8 @@ object ServiceCatalogProvisioningDetails {
     __obj.asInstanceOf[ServiceCatalogProvisioningDetails]
   }
   
-  extension [Self <: ServiceCatalogProvisioningDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceCatalogProvisioningDetails] (val x: Self) extends AnyVal {
     
     inline def setPathId(value: ServiceCatalogEntityId): Self = StObject.set(x, "PathId", value.asInstanceOf[js.Any])
     

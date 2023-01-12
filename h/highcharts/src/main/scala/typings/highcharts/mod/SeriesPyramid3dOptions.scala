@@ -159,7 +159,8 @@ object SeriesPyramid3dOptions {
     __obj.asInstanceOf[SeriesPyramid3dOptions]
   }
   
-  extension [Self <: SeriesPyramid3dOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesPyramid3dOptions] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: js.Array[Double | String]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

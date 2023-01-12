@@ -60,7 +60,8 @@ object DatabaseReplicationHistoryItem {
     __obj.asInstanceOf[DatabaseReplicationHistoryItem]
   }
   
-  extension [Self <: DatabaseReplicationHistoryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseReplicationHistoryItem] (val x: Self) extends AnyVal {
     
     inline def setDoc_write_failures(value: Double): Self = StObject.set(x, "doc_write_failures", value.asInstanceOf[js.Any])
     

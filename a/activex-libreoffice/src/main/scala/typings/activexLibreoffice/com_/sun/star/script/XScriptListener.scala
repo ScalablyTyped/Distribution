@@ -35,7 +35,8 @@ object XScriptListener {
     __obj.asInstanceOf[XScriptListener]
   }
   
-  extension [Self <: XScriptListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XScriptListener] (val x: Self) extends AnyVal {
     
     inline def setApproveFiring(value: ScriptEvent => Any): Self = StObject.set(x, "approveFiring", js.Any.fromFunction1(value))
     

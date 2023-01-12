@@ -22,7 +22,8 @@ object IgChartLegendMethods {
     __obj.asInstanceOf[IgChartLegendMethods]
   }
   
-  extension [Self <: IgChartLegendMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgChartLegendMethods] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object TabbedArgsTableProps {
     __obj.asInstanceOf[TabbedArgsTableProps]
   }
   
-  extension [Self <: TabbedArgsTableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabbedArgsTableProps] (val x: Self) extends AnyVal {
     
     inline def setSort(value: SortType): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     

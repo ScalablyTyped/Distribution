@@ -29,7 +29,8 @@ object libTypescriptNetworksBitcoinMod {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object libTypescriptNetworksBitcoinMod {
       __obj.asInstanceOf[GetAddress]
     }
     
-    extension [Self <: GetAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object libTypescriptNetworksBitcoinMod {
       __obj.asInstanceOf[GetPublicKey]
     }
     
-    extension [Self <: GetPublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPublicKey] (val x: Self) extends AnyVal {
       
       inline def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
       
@@ -167,7 +170,8 @@ object libTypescriptNetworksBitcoinMod {
       __obj.asInstanceOf[HDNodeResponse]
     }
     
-    extension [Self <: HDNodeResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HDNodeResponse] (val x: Self) extends AnyVal {
       
       inline def setChainCode(value: String): Self = StObject.set(x, "chainCode", value.asInstanceOf[js.Any])
       
@@ -206,7 +210,8 @@ object libTypescriptNetworksBitcoinMod {
       __obj.asInstanceOf[PushTransaction]
     }
     
-    extension [Self <: PushTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushTransaction] (val x: Self) extends AnyVal {
       
       inline def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
       
@@ -225,7 +230,8 @@ object libTypescriptNetworksBitcoinMod {
       __obj.asInstanceOf[PushedTransaction]
     }
     
-    extension [Self <: PushedTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushedTransaction] (val x: Self) extends AnyVal {
       
       inline def setTxid(value: String): Self = StObject.set(x, "txid", value.asInstanceOf[js.Any])
     }
@@ -282,7 +288,8 @@ object libTypescriptNetworksBitcoinMod {
       __obj.asInstanceOf[SignMessage]
     }
     
-    extension [Self <: SignMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignMessage] (val x: Self) extends AnyVal {
       
       inline def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
       
@@ -339,7 +346,8 @@ object libTypescriptNetworksBitcoinMod {
       __obj.asInstanceOf[SignTransaction]
     }
     
-    extension [Self <: SignTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignTransaction] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: AddressesAccountAddresses): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -414,7 +422,8 @@ object libTypescriptNetworksBitcoinMod {
       __obj.asInstanceOf[SignedTransaction]
     }
     
-    extension [Self <: SignedTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignedTransaction] (val x: Self) extends AnyVal {
       
       inline def setSerializedTx(value: String): Self = StObject.set(x, "serializedTx", value.asInstanceOf[js.Any])
       
@@ -453,7 +462,8 @@ object libTypescriptNetworksBitcoinMod {
       __obj.asInstanceOf[TransactionOptions]
     }
     
-    extension [Self <: TransactionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
       
       inline def setBranch_id(value: Double): Self = StObject.set(x, "branch_id", value.asInstanceOf[js.Any])
       
@@ -508,7 +518,8 @@ object libTypescriptNetworksBitcoinMod {
       __obj.asInstanceOf[VerifyMessage]
     }
     
-    extension [Self <: VerifyMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyMessage] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

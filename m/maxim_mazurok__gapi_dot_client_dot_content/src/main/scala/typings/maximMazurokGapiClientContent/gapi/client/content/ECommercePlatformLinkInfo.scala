@@ -16,7 +16,8 @@ object ECommercePlatformLinkInfo {
     __obj.asInstanceOf[ECommercePlatformLinkInfo]
   }
   
-  extension [Self <: ECommercePlatformLinkInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ECommercePlatformLinkInfo] (val x: Self) extends AnyVal {
     
     inline def setExternalAccountId(value: String): Self = StObject.set(x, "externalAccountId", value.asInstanceOf[js.Any])
     

@@ -147,7 +147,8 @@ object libTypescriptWebDetectorsRotationGestureDetectorMod {
       __obj.asInstanceOf[RotationGestureDetector]
     }
     
-    extension [Self <: RotationGestureDetector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotationGestureDetector] (val x: Self) extends AnyVal {
       
       inline def setAnchorX(value: Any): Self = StObject.set(x, "anchorX", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object libTypescriptWebDetectorsRotationGestureDetectorMod {
       __obj.asInstanceOf[RotationGestureListener]
     }
     
-    extension [Self <: RotationGestureListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotationGestureListener] (val x: Self) extends AnyVal {
       
       inline def setOnRotation(value: RotationGestureDetector => Boolean): Self = StObject.set(x, "onRotation", js.Any.fromFunction1(value))
       

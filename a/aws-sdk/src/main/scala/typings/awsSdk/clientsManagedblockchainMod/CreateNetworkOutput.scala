@@ -23,7 +23,8 @@ object CreateNetworkOutput {
     __obj.asInstanceOf[CreateNetworkOutput]
   }
   
-  extension [Self <: CreateNetworkOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNetworkOutput] (val x: Self) extends AnyVal {
     
     inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     

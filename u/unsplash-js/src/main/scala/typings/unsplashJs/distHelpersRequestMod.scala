@@ -65,7 +65,8 @@ object distHelpersRequestMod {
       __obj.asInstanceOf[AdditionalFetchOptions]
     }
     
-    extension [Self <: AdditionalFetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalFetchOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object distHelpersRequestMod {
       __obj.asInstanceOf[BaseRequestParams]
     }
     
-    extension [Self <: BaseRequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseRequestParams] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object distHelpersRequestMod {
       __obj.asInstanceOf[CompleteRequestParams]
     }
     
-    extension [Self <: CompleteRequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompleteRequestParams] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -277,7 +280,8 @@ object distHelpersRequestMod {
       __obj.asInstanceOf[Endpoint[PathnameParams, RequestArgs, ResponseType]]
     }
     
-    extension [Self <: Endpoint[?, ?, ?], PathnameParams, RequestArgs, ResponseType](x: Self & (Endpoint[PathnameParams, RequestArgs, ResponseType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endpoint[?, ?, ?], PathnameParams, RequestArgs, ResponseType] (val x: Self & (Endpoint[PathnameParams, RequestArgs, ResponseType])) extends AnyVal {
       
       inline def setGetPathname(value: PathnameParams => String): Self = StObject.set(x, "getPathname", js.Any.fromFunction1(value))
     }
@@ -295,7 +299,8 @@ object distHelpersRequestMod {
       __obj.asInstanceOf[FetchParams]
     }
     
-    extension [Self <: FetchParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchParams] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -355,7 +360,8 @@ object distHelpersRequestMod {
       __obj.asInstanceOf[RequestGenerator[Args, ResponseType]]
     }
     
-    extension [Self <: RequestGenerator[?, ?], Args, ResponseType](x: Self & (RequestGenerator[Args, ResponseType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestGenerator[?, ?], Args, ResponseType] (val x: Self & (RequestGenerator[Args, ResponseType])) extends AnyVal {
       
       inline def setHandleRequest(
         value: (Args, /* additionalFetchOptions */ js.UndefOr[AdditionalFetchOptions]) => CompleteRequestParams

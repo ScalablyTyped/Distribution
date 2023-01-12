@@ -19,7 +19,8 @@ object DataSourceSpec {
     __obj.asInstanceOf[DataSourceSpec]
   }
   
-  extension [Self <: DataSourceSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSpec] (val x: Self) extends AnyVal {
     
     inline def setBigQuery(value: BigQueryDataSourceSpec): Self = StObject.set(x, "bigQuery", value.asInstanceOf[js.Any])
     

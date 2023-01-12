@@ -63,7 +63,8 @@ object AppProps {
     __obj.asInstanceOf[AppProps]
   }
   
-  extension [Self <: AppProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppProps] (val x: Self) extends AnyVal {
     
     inline def setApi(value: ApiSetting): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     

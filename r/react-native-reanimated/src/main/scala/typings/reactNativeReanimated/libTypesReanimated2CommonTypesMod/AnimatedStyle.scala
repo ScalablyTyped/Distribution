@@ -20,7 +20,8 @@ object AnimatedStyle {
     __obj.asInstanceOf[AnimatedStyle]
   }
   
-  extension [Self <: AnimatedStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedStyle] (val x: Self) extends AnyVal {
     
     inline def setTransform(value: js.Array[Record[String, Animation[AnimationObject]]]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     

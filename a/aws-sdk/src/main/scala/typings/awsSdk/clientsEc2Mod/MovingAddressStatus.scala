@@ -23,7 +23,8 @@ object MovingAddressStatus {
     __obj.asInstanceOf[MovingAddressStatus]
   }
   
-  extension [Self <: MovingAddressStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MovingAddressStatus] (val x: Self) extends AnyVal {
     
     inline def setMoveStatus(value: MoveStatus): Self = StObject.set(x, "MoveStatus", value.asInstanceOf[js.Any])
     

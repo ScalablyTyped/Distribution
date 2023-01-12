@@ -229,7 +229,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCSelectAdapter]
     }
     
-    extension [Self <: MDCSelectAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCSelectAdapter] (val x: Self) extends AnyVal {
       
       inline def setActivateBottomLine(value: () => Unit): Self = StObject.set(x, "activateBottomLine", js.Any.fromFunction0(value))
       

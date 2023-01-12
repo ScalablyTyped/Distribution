@@ -23,7 +23,8 @@ object DeleteLicenseRequest {
     __obj.asInstanceOf[DeleteLicenseRequest]
   }
   
-  extension [Self <: DeleteLicenseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLicenseRequest] (val x: Self) extends AnyVal {
     
     inline def setLicenseArn(value: Arn): Self = StObject.set(x, "LicenseArn", value.asInstanceOf[js.Any])
     

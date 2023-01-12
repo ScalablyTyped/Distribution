@@ -25,7 +25,8 @@ object BillingDetailsAddress {
     __obj.asInstanceOf[BillingDetailsAddress]
   }
   
-  extension [Self <: BillingDetailsAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingDetailsAddress] (val x: Self) extends AnyVal {
     
     inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     

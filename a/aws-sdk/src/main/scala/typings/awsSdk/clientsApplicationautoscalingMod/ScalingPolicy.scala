@@ -73,7 +73,8 @@ object ScalingPolicy {
     __obj.asInstanceOf[ScalingPolicy]
   }
   
-  extension [Self <: ScalingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingPolicy] (val x: Self) extends AnyVal {
     
     inline def setAlarms(value: Alarms): Self = StObject.set(x, "Alarms", value.asInstanceOf[js.Any])
     

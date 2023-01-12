@@ -117,7 +117,8 @@ object libMimedocumentMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setContext(value: IContext[IModel]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
@@ -203,7 +204,8 @@ object libMimedocumentMod {
         __obj.asInstanceOf[typings.jupyterlabDocregistry.libMimedocumentMod.MimeDocumentFactory.IOptions[T]]
       }
       
-      extension [Self <: typings.jupyterlabDocregistry.libMimedocumentMod.MimeDocumentFactory.IOptions[?], T /* <: MimeDocument */](x: Self & typings.jupyterlabDocregistry.libMimedocumentMod.MimeDocumentFactory.IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabDocregistry.libMimedocumentMod.MimeDocumentFactory.IOptions[?], T /* <: MimeDocument */] (val x: Self & typings.jupyterlabDocregistry.libMimedocumentMod.MimeDocumentFactory.IOptions[T]) extends AnyVal {
         
         inline def setDataType(value: string | json): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
         

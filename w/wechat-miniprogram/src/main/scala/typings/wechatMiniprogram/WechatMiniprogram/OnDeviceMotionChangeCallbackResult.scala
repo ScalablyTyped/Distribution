@@ -22,7 +22,8 @@ object OnDeviceMotionChangeCallbackResult {
     __obj.asInstanceOf[OnDeviceMotionChangeCallbackResult]
   }
   
-  extension [Self <: OnDeviceMotionChangeCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDeviceMotionChangeCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

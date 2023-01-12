@@ -27,7 +27,8 @@ object PickImplpopupVisibleParti {
     __obj.asInstanceOf[PickImplpopupVisibleParti]
   }
   
-  extension [Self <: PickImplpopupVisibleParti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplpopupVisibleParti] (val x: Self) extends AnyVal {
     
     inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     

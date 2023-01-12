@@ -33,7 +33,8 @@ object BeforePasteData {
     __obj.asInstanceOf[BeforePasteData[T]]
   }
   
-  extension [Self <: BeforePasteData[?], T /* <: BaseTagData */](x: Self & BeforePasteData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforePasteData[?], T /* <: BaseTagData */] (val x: Self & BeforePasteData[T]) extends AnyVal {
     
     inline def setClipboardData(value: DataTransfer): Self = StObject.set(x, "clipboardData", value.asInstanceOf[js.Any])
     

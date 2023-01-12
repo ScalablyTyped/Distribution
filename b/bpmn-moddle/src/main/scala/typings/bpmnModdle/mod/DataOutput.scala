@@ -39,7 +39,8 @@ object DataOutput {
     __obj.asInstanceOf[DataOutput]
   }
   
-  extension [Self <: DataOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataOutput] (val x: Self) extends AnyVal {
     
     inline def setIsCollection(value: Boolean): Self = StObject.set(x, "isCollection", value.asInstanceOf[js.Any])
     

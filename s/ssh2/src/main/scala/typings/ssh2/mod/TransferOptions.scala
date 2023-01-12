@@ -23,7 +23,8 @@ object TransferOptions {
     __obj.asInstanceOf[TransferOptions]
   }
   
-  extension [Self <: TransferOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferOptions] (val x: Self) extends AnyVal {
     
     inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     

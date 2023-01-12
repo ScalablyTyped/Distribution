@@ -22,7 +22,8 @@ object typesS3KeyFilterMod {
       __obj.asInstanceOf[S3KeyFilter]
     }
     
-    extension [Self <: S3KeyFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3KeyFilter] (val x: Self) extends AnyVal {
       
       inline def setFilterRules(value: js.Array[FilterRule] | js.Iterable[FilterRule]): Self = StObject.set(x, "FilterRules", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object typesS3KeyFilterMod {
       __obj.asInstanceOf[UnmarshalledS3KeyFilter]
     }
     
-    extension [Self <: UnmarshalledS3KeyFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledS3KeyFilter] (val x: Self) extends AnyVal {
       
       inline def setFilterRules(value: js.Array[UnmarshalledFilterRule]): Self = StObject.set(x, "FilterRules", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object ServerContextTypechildren {
     __obj.asInstanceOf[ServerContextTypechildren]
   }
   
-  extension [Self <: ServerContextTypechildren](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerContextTypechildren] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object MlTextClassificationInferenceOptions {
     __obj.asInstanceOf[MlTextClassificationInferenceOptions]
   }
   
-  extension [Self <: MlTextClassificationInferenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTextClassificationInferenceOptions] (val x: Self) extends AnyVal {
     
     inline def setClassification_labels(value: js.Array[String]): Self = StObject.set(x, "classification_labels", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object MUIDataTableCustomHeadRenderer {
     __obj.asInstanceOf[MUIDataTableCustomHeadRenderer]
   }
   
-  extension [Self <: MUIDataTableCustomHeadRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableCustomHeadRenderer] (val x: Self) extends AnyVal {
     
     inline def setCustomHeadRender(
       value: (MUIDataTableCustomHeadRenderer, /* handleToggleColumn */ js.Function1[/* columnIndex */ Double, Unit], /* sortOrder */ MUISortOptions) => String | ReactNode

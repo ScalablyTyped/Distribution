@@ -30,7 +30,8 @@ object DrawOrderTimeline {
     __obj.asInstanceOf[DrawOrderTimeline]
   }
   
-  extension [Self <: DrawOrderTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawOrderTimeline] (val x: Self) extends AnyVal {
     
     inline def setDrawOrders(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "drawOrders", value.asInstanceOf[js.Any])
     

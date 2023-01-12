@@ -283,7 +283,8 @@ object EnvelopeConsumerDisclosures {
     __obj.asInstanceOf[EnvelopeConsumerDisclosures]
   }
   
-  extension [Self <: EnvelopeConsumerDisclosures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeConsumerDisclosures] (val x: Self) extends AnyVal {
     
     inline def setAccountEsignId(value: String): Self = StObject.set(x, "accountEsignId", value.asInstanceOf[js.Any])
     

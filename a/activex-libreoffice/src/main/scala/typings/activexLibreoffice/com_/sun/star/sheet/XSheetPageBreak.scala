@@ -70,7 +70,8 @@ object XSheetPageBreak {
     __obj.asInstanceOf[XSheetPageBreak]
   }
   
-  extension [Self <: XSheetPageBreak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetPageBreak] (val x: Self) extends AnyVal {
     
     inline def setColumnPageBreaks(value: SafeArray[TablePageBreakData]): Self = StObject.set(x, "ColumnPageBreaks", value.asInstanceOf[js.Any])
     

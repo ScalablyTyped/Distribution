@@ -25,7 +25,8 @@ object symbolsSupportJsonUtils {
     __obj.asInstanceOf[symbolsSupportJsonUtils]
   }
   
-  extension [Self <: symbolsSupportJsonUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: symbolsSupportJsonUtils] (val x: Self) extends AnyVal {
     
     inline def setFromJSON(value: Any => Symbol): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
   }

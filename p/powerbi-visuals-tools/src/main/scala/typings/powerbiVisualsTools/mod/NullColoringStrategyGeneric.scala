@@ -20,7 +20,8 @@ object NullColoringStrategyGeneric {
     __obj.asInstanceOf[NullColoringStrategyGeneric[TStrategy, TColor]]
   }
   
-  extension [Self <: NullColoringStrategyGeneric[?, ?], TStrategy, TColor](x: Self & (NullColoringStrategyGeneric[TStrategy, TColor])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullColoringStrategyGeneric[?, ?], TStrategy, TColor] (val x: Self & (NullColoringStrategyGeneric[TStrategy, TColor])) extends AnyVal {
     
     inline def setColor(value: TColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

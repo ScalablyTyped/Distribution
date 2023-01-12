@@ -49,7 +49,8 @@ object proxyConfig {
     __obj.asInstanceOf[proxyConfig]
   }
   
-  extension [Self <: proxyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: proxyConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

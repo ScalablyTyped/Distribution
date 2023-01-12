@@ -56,7 +56,8 @@ object SliceSlicePlaneProperties {
     __obj.asInstanceOf[SliceSlicePlaneProperties]
   }
   
-  extension [Self <: SliceSlicePlaneProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliceSlicePlaneProperties] (val x: Self) extends AnyVal {
     
     inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     

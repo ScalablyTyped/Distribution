@@ -17,7 +17,8 @@ object IDatagramSocketControl {
     __obj.asInstanceOf[IDatagramSocketControl]
   }
   
-  extension [Self <: IDatagramSocketControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDatagramSocketControl] (val x: Self) extends AnyVal {
     
     inline def setOutboundUnicastHopLimit(value: Double): Self = StObject.set(x, "outboundUnicastHopLimit", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object PipeableCompactable {
     __obj.asInstanceOf[PipeableCompactable[F]]
   }
   
-  extension [Self <: PipeableCompactable[?], F](x: Self & PipeableCompactable[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableCompactable[?], F] (val x: Self & PipeableCompactable[F]) extends AnyVal {
     
     inline def setCompact(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Option<A>> */ Any => Any

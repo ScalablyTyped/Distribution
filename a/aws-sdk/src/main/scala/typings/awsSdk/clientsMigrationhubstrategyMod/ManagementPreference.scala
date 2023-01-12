@@ -28,7 +28,8 @@ object ManagementPreference {
     __obj.asInstanceOf[ManagementPreference]
   }
   
-  extension [Self <: ManagementPreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagementPreference] (val x: Self) extends AnyVal {
     
     inline def setAwsManagedResources(value: AwsManagedResources): Self = StObject.set(x, "awsManagedResources", value.asInstanceOf[js.Any])
     

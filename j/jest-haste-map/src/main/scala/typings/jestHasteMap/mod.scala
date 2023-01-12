@@ -71,7 +71,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ChangeEvent]
     }
     
-    extension [Self <: ChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setEventsQueue(value: EventsQueue): Self = StObject.set(x, "eventsQueue", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DuplicateHasteCandidatesError]
     }
     
-    extension [Self <: DuplicateHasteCandidatesError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuplicateHasteCandidatesError] (val x: Self) extends AnyVal {
       
       inline def setDuplicatesSet(value: DuplicatesSet): Self = StObject.set(x, "duplicatesSet", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HType]
     }
     
-    extension [Self <: HType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HType] (val x: Self) extends AnyVal {
       
       inline def setDEPENDENCIES(value: `4`): Self = StObject.set(x, "DEPENDENCIES", value.asInstanceOf[js.Any])
       
@@ -272,7 +275,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HasteMapStatic[S]]
     }
     
-    extension [Self <: HasteMapStatic[?], S](x: Self & HasteMapStatic[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasteMapStatic[?], S] (val x: Self & HasteMapStatic[S]) extends AnyVal {
       
       inline def setGetCacheFilePath(value: (String, String, /* repeated */ String) => String): Self = StObject.set(x, "getCacheFilePath", js.Any.fromFunction3(value))
       
@@ -319,7 +323,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IHasteMap]
     }
     
-    extension [Self <: IHasteMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHasteMap] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: () => js.Promise[typings.jestHasteMap.anon.HasteFS]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
       
@@ -347,7 +352,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IJestHasteMap]
     }
     
-    extension [Self <: IJestHasteMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJestHasteMap] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: Options => js.Promise[IHasteMap]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -479,7 +485,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCacheDirectory(value: String): Self = StObject.set(x, "cacheDirectory", value.asInstanceOf[js.Any])
       
@@ -588,7 +595,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RawModuleMap]
     }
     
-    extension [Self <: RawModuleMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawModuleMap] (val x: Self) extends AnyVal {
       
       inline def setDuplicates(value: DuplicatesIndex): Self = StObject.set(x, "duplicates", value.asInstanceOf[js.Any])
       
@@ -626,7 +634,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SerializableModuleMap]
     }
     
-    extension [Self <: SerializableModuleMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializableModuleMap] (val x: Self) extends AnyVal {
       
       inline def setDuplicates(
         value: js.Array[

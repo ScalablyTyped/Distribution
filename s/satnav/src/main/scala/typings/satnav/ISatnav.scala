@@ -26,7 +26,8 @@ object ISatnav {
     __obj.asInstanceOf[ISatnav]
   }
   
-  extension [Self <: ISatnav](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISatnav] (val x: Self) extends AnyVal {
     
     inline def setChange(value: js.Function3[/* hash */ String, /* params */ Any, /* old */ Any, Any] => ISatnav): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

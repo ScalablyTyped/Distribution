@@ -98,7 +98,8 @@ object Manifest {
     __obj.asInstanceOf[Manifest]
   }
   
-  extension [Self <: Manifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Manifest] (val x: Self) extends AnyVal {
     
     inline def setAddonCatalogs(value: js.Array[ManifestCatalog]): Self = StObject.set(x, "addonCatalogs", value.asInstanceOf[js.Any])
     

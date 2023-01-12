@@ -23,7 +23,8 @@ object CreateFileOptions {
     __obj.asInstanceOf[CreateFileOptions]
   }
   
-  extension [Self <: CreateFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFileOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreIfExists(value: Boolean): Self = StObject.set(x, "ignoreIfExists", value.asInstanceOf[js.Any])
     

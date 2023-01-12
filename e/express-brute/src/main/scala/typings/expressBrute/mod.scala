@@ -224,7 +224,8 @@ object mod {
       __obj.asInstanceOf[ExpressBrute]
     }
     
-    extension [Self <: ExpressBrute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressBrute] (val x: Self) extends AnyVal {
       
       inline def setGetMiddleware(
         value: Middleware => RequestHandler[
@@ -293,7 +294,8 @@ object mod {
       __obj.asInstanceOf[MemoryStoreOptions]
     }
     
-    extension [Self <: MemoryStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
@@ -339,7 +341,8 @@ object mod {
       __obj.asInstanceOf[Middleware]
     }
     
-    extension [Self <: Middleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
       
       inline def setFailCallback(
         value: (/* req */ Request_[
@@ -420,7 +423,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAttachResetToRequest(value: Boolean): Self = StObject.set(x, "attachResetToRequest", value.asInstanceOf[js.Any])
       
@@ -478,7 +482,8 @@ object mod {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setBrute(value: Reset): Self = StObject.set(x, "brute", value.asInstanceOf[js.Any])
         

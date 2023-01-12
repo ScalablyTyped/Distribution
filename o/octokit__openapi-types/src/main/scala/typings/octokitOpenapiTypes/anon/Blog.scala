@@ -133,7 +133,8 @@ object Blog {
     __obj.asInstanceOf[Blog]
   }
   
-  extension [Self <: Blog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blog] (val x: Self) extends AnyVal {
     
     inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     

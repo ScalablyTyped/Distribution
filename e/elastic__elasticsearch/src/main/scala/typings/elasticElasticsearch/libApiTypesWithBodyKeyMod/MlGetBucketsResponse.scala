@@ -17,7 +17,8 @@ object MlGetBucketsResponse {
     __obj.asInstanceOf[MlGetBucketsResponse]
   }
   
-  extension [Self <: MlGetBucketsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetBucketsResponse] (val x: Self) extends AnyVal {
     
     inline def setBuckets(value: js.Array[MlBucketSummary]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     

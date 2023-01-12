@@ -19,7 +19,8 @@ object RsaKeyGenParams {
     __obj.asInstanceOf[RsaKeyGenParams]
   }
   
-  extension [Self <: RsaKeyGenParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaKeyGenParams] (val x: Self) extends AnyVal {
     
     inline def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
     

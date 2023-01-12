@@ -28,7 +28,8 @@ object SuperuserParameters {
     __obj.asInstanceOf[SuperuserParameters]
   }
   
-  extension [Self <: SuperuserParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuperuserParameters] (val x: Self) extends AnyVal {
     
     inline def setEmailAddress(value: EmailId): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     

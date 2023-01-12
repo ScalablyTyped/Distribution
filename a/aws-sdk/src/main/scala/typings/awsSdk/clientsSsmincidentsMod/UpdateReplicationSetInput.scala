@@ -28,7 +28,8 @@ object UpdateReplicationSetInput {
     __obj.asInstanceOf[UpdateReplicationSetInput]
   }
   
-  extension [Self <: UpdateReplicationSetInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateReplicationSetInput] (val x: Self) extends AnyVal {
     
     inline def setActions(value: UpdateReplicationSetInputActionsList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

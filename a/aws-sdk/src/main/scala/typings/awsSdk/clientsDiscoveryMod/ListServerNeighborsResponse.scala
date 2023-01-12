@@ -28,7 +28,8 @@ object ListServerNeighborsResponse {
     __obj.asInstanceOf[ListServerNeighborsResponse]
   }
   
-  extension [Self <: ListServerNeighborsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListServerNeighborsResponse] (val x: Self) extends AnyVal {
     
     inline def setKnownDependencyCount(value: Long): Self = StObject.set(x, "knownDependencyCount", value.asInstanceOf[js.Any])
     

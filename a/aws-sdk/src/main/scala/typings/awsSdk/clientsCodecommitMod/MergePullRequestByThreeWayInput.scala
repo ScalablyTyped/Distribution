@@ -63,7 +63,8 @@ object MergePullRequestByThreeWayInput {
     __obj.asInstanceOf[MergePullRequestByThreeWayInput]
   }
   
-  extension [Self <: MergePullRequestByThreeWayInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergePullRequestByThreeWayInput] (val x: Self) extends AnyVal {
     
     inline def setAuthorName(value: Name): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     

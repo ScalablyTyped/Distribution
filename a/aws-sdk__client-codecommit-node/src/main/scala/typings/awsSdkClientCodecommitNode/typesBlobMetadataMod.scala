@@ -30,7 +30,8 @@ object typesBlobMetadataMod {
       __obj.asInstanceOf[BlobMetadata]
     }
     
-    extension [Self <: BlobMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlobMetadata] (val x: Self) extends AnyVal {
       
       inline def setBlobId(value: String): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
       

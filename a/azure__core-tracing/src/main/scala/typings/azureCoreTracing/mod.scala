@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[InstrumenterSpanOptions]
     }
     
-    extension [Self <: InstrumenterSpanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstrumenterSpanOptions] (val x: Self) extends AnyVal {
       
       inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object mod {
       __obj.asInstanceOf[OperationTracingOptions]
     }
     
-    extension [Self <: OperationTracingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationTracingOptions] (val x: Self) extends AnyVal {
       
       inline def setTracingContext(value: TracingContext): Self = StObject.set(x, "tracingContext", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object mod {
       __obj.asInstanceOf[SpanStatusError]
     }
     
-    extension [Self <: SpanStatusError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanStatusError] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error | String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -185,7 +188,8 @@ object mod {
       __obj.asInstanceOf[SpanStatusSuccess]
     }
     
-    extension [Self <: SpanStatusSuccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanStatusSuccess] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: success): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -283,7 +287,8 @@ object mod {
       __obj.asInstanceOf[TracingClientOptions]
     }
     
-    extension [Self <: TracingClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracingClientOptions] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
@@ -331,7 +336,8 @@ object mod {
       __obj.asInstanceOf[TracingContext]
     }
     
-    extension [Self <: TracingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracingContext] (val x: Self) extends AnyVal {
       
       inline def setDeleteValue(value: js.Symbol => TracingContext): Self = StObject.set(x, "deleteValue", js.Any.fromFunction1(value))
       
@@ -419,7 +425,8 @@ object mod {
       __obj.asInstanceOf[TracingSpanLink]
     }
     
-    extension [Self <: TracingSpanLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracingSpanLink] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -447,7 +454,8 @@ object mod {
       __obj.asInstanceOf[TracingSpanOptions]
     }
     
-    extension [Self <: TracingSpanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracingSpanOptions] (val x: Self) extends AnyVal {
       
       inline def setSpanAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "spanAttributes", value.asInstanceOf[js.Any])
       

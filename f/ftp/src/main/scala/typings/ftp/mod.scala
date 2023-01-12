@@ -310,7 +310,8 @@ object mod {
       __obj.asInstanceOf[FilePermissions]
     }
     
-    extension [Self <: FilePermissions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePermissions] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
@@ -375,7 +376,8 @@ object mod {
       __obj.asInstanceOf[ListingElement]
     }
     
-    extension [Self <: ListingElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListingElement] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -467,7 +469,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConnTimeout(value: Double): Self = StObject.set(x, "connTimeout", value.asInstanceOf[js.Any])
       

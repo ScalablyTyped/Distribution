@@ -16,7 +16,8 @@ object CanvasFilters {
     __obj.asInstanceOf[CanvasFilters]
   }
   
-  extension [Self <: CanvasFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasFilters] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: java.lang.String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
   }

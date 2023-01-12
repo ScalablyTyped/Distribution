@@ -15,7 +15,8 @@ object PragmaOptions {
     __obj.asInstanceOf[PragmaOptions]
   }
   
-  extension [Self <: PragmaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PragmaOptions] (val x: Self) extends AnyVal {
     
     inline def setSimple(value: Boolean): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
     

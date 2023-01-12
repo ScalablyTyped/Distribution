@@ -58,7 +58,8 @@ object AccessibilityPropsIOS {
     __obj.asInstanceOf[AccessibilityPropsIOS]
   }
   
-  extension [Self <: AccessibilityPropsIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibilityPropsIOS] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     

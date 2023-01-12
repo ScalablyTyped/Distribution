@@ -17,7 +17,8 @@ object _ThemeType {
     __obj.asInstanceOf[_ThemeType]
   }
   
-  extension [Self <: _ThemeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _ThemeType] (val x: Self) extends AnyVal {
     
     inline def setAdditional_backgrounds_alignment(value: js.Array[ThemeTypeAdditionalBackgroundsAlignment]): Self = StObject.set(x, "additional_backgrounds_alignment", value.asInstanceOf[js.Any])
     

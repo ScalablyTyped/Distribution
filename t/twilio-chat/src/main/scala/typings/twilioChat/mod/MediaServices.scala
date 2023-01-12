@@ -16,7 +16,8 @@ object MediaServices {
     __obj.asInstanceOf[MediaServices]
   }
   
-  extension [Self <: MediaServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaServices] (val x: Self) extends AnyVal {
     
     inline def setMcsClient(value: McsClient): Self = StObject.set(x, "mcsClient", value.asInstanceOf[js.Any])
   }

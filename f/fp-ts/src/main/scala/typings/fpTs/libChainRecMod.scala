@@ -51,7 +51,8 @@ object libChainRecMod {
       __obj.asInstanceOf[ChainRec[F]]
     }
     
-    extension [Self <: ChainRec[?], F](x: Self & ChainRec[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChainRec[?], F] (val x: Self & ChainRec[F]) extends AnyVal {
       
       inline def setChainRec(
         value: (Any, js.Function1[
@@ -93,7 +94,8 @@ object libChainRecMod {
       __obj.asInstanceOf[ChainRec1[F]]
     }
     
-    extension [Self <: ChainRec1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & ChainRec1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChainRec1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & ChainRec1[F]) extends AnyVal {
       
       inline def setChainRec(
         value: (Any, js.Function1[
@@ -135,7 +137,8 @@ object libChainRecMod {
       __obj.asInstanceOf[ChainRec2[F]]
     }
     
-    extension [Self <: ChainRec2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & ChainRec2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChainRec2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & ChainRec2[F]) extends AnyVal {
       
       inline def setChainRec(
         value: (Any, js.Function1[
@@ -178,7 +181,8 @@ object libChainRecMod {
       __obj.asInstanceOf[ChainRec2C[F, E]]
     }
     
-    extension [Self <: ChainRec2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (ChainRec2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChainRec2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (ChainRec2C[F, E])) extends AnyVal {
       
       inline def setChainRec(
         value: (Any, js.Function1[
@@ -220,7 +224,8 @@ object libChainRecMod {
       __obj.asInstanceOf[ChainRec3[F]]
     }
     
-    extension [Self <: ChainRec3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & ChainRec3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChainRec3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & ChainRec3[F]) extends AnyVal {
       
       inline def setChainRec(
         value: (Any, js.Function1[
@@ -263,7 +268,8 @@ object libChainRecMod {
       __obj.asInstanceOf[ChainRec3C[F, E]]
     }
     
-    extension [Self <: ChainRec3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (ChainRec3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChainRec3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (ChainRec3C[F, E])) extends AnyVal {
       
       inline def setChainRec(
         value: (Any, js.Function1[
@@ -305,7 +311,8 @@ object libChainRecMod {
       __obj.asInstanceOf[ChainRec4[F]]
     }
     
-    extension [Self <: ChainRec4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & ChainRec4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChainRec4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & ChainRec4[F]) extends AnyVal {
       
       inline def setChainRec(
         value: (Any, js.Function1[

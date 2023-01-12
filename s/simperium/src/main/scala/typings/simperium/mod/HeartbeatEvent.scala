@@ -19,7 +19,8 @@ object HeartbeatEvent {
     __obj.asInstanceOf[HeartbeatEvent]
   }
   
-  extension [Self <: HeartbeatEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeartbeatEvent] (val x: Self) extends AnyVal {
     
     inline def setBeat(value: Double => Unit): Self = StObject.set(x, "beat", js.Any.fromFunction1(value))
     

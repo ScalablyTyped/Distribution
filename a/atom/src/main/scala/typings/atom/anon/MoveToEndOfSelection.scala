@@ -15,7 +15,8 @@ object MoveToEndOfSelection {
     __obj.asInstanceOf[MoveToEndOfSelection]
   }
   
-  extension [Self <: MoveToEndOfSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveToEndOfSelection] (val x: Self) extends AnyVal {
     
     inline def setMoveToEndOfSelection(value: Boolean): Self = StObject.set(x, "moveToEndOfSelection", value.asInstanceOf[js.Any])
     

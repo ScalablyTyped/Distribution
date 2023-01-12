@@ -23,7 +23,8 @@ object EvaluationResult {
     __obj.asInstanceOf[EvaluationResult]
   }
   
-  extension [Self <: EvaluationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluationResult] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmArn(value: Arn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
     

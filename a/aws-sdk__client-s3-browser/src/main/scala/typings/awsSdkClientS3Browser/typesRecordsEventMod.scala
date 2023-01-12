@@ -20,7 +20,8 @@ object typesRecordsEventMod {
       __obj.asInstanceOf[RecordsEvent]
     }
     
-    extension [Self <: RecordsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordsEvent] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object typesRecordsEventMod {
       __obj.asInstanceOf[UnmarshalledRecordsEvent]
     }
     
-    extension [Self <: UnmarshalledRecordsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledRecordsEvent] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
       

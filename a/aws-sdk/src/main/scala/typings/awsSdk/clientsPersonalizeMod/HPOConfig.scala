@@ -28,7 +28,8 @@ object HPOConfig {
     __obj.asInstanceOf[HPOConfig]
   }
   
-  extension [Self <: HPOConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HPOConfig] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmHyperParameterRanges(value: HyperParameterRanges): Self = StObject.set(x, "algorithmHyperParameterRanges", value.asInstanceOf[js.Any])
     

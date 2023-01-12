@@ -96,7 +96,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Scan]
     }
     
-    extension [Self <: Scan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scan] (val x: Self) extends AnyVal {
       
       inline def setQty(value: Double): Self = StObject.set(x, "qty", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ScanError]
     }
     
-    extension [Self <: ScanError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanError] (val x: Self) extends AnyVal {
       
       inline def setAvgTimeByChar(value: Double): Self = StObject.set(x, "avgTimeByChar", value.asInstanceOf[js.Any])
       
@@ -313,7 +315,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ScanOptions]
     }
     
-    extension [Self <: ScanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanOptions] (val x: Self) extends AnyVal {
       
       inline def setAvgTimeByChar(value: Double): Self = StObject.set(x, "avgTimeByChar", value.asInstanceOf[js.Any])
       
@@ -425,7 +428,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[DocumentEventMap]
       }
       
-      extension [Self <: DocumentEventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DocumentEventMap] (val x: Self) extends AnyVal {
         
         inline def setScan(value: ScanEvent): Self = StObject.set(x, "scan", value.asInstanceOf[js.Any])
         

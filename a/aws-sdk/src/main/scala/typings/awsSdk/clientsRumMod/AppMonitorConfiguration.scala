@@ -58,7 +58,8 @@ object AppMonitorConfiguration {
     __obj.asInstanceOf[AppMonitorConfiguration]
   }
   
-  extension [Self <: AppMonitorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppMonitorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowCookies(value: Boolean): Self = StObject.set(x, "AllowCookies", value.asInstanceOf[js.Any])
     

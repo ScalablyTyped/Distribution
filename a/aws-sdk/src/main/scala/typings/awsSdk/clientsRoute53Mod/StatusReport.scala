@@ -23,7 +23,8 @@ object StatusReport {
     __obj.asInstanceOf[StatusReport]
   }
   
-  extension [Self <: StatusReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusReport] (val x: Self) extends AnyVal {
     
     inline def setCheckedTime(value: js.Date): Self = StObject.set(x, "CheckedTime", value.asInstanceOf[js.Any])
     

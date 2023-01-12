@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2InfoTypeStats {
     __obj.asInstanceOf[GooglePrivacyDlpV2InfoTypeStats]
   }
   
-  extension [Self <: GooglePrivacyDlpV2InfoTypeStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2InfoTypeStats] (val x: Self) extends AnyVal {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

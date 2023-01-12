@@ -16,7 +16,8 @@ object DeviceTypeTargetingOptionDetails {
     __obj.asInstanceOf[DeviceTypeTargetingOptionDetails]
   }
   
-  extension [Self <: DeviceTypeTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceTypeTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     

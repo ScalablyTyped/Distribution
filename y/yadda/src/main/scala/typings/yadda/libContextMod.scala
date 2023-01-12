@@ -34,7 +34,8 @@ object libContextMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setMerge(value: Properties => Context): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
       

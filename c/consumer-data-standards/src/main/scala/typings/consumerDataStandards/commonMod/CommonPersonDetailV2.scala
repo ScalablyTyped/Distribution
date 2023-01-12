@@ -39,7 +39,8 @@ object CommonPersonDetailV2 {
     __obj.asInstanceOf[CommonPersonDetailV2]
   }
   
-  extension [Self <: CommonPersonDetailV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonPersonDetailV2] (val x: Self) extends AnyVal {
     
     inline def setEmailAddresses(value: js.Array[IsPreferred]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
     

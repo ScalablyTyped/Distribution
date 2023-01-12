@@ -18,7 +18,8 @@ object SkipSelf {
     __obj.asInstanceOf[SkipSelf]
   }
   
-  extension [Self <: SkipSelf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkipSelf] (val x: Self) extends AnyVal {
     
     inline def setHost(value: `true`): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

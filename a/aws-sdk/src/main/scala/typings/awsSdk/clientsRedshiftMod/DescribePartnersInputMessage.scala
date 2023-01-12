@@ -33,7 +33,8 @@ object DescribePartnersInputMessage {
     __obj.asInstanceOf[DescribePartnersInputMessage]
   }
   
-  extension [Self <: DescribePartnersInputMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePartnersInputMessage] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: PartnerIntegrationAccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

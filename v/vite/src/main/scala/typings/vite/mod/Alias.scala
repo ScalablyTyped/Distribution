@@ -24,7 +24,8 @@ object Alias {
     __obj.asInstanceOf[Alias]
   }
   
-  extension [Self <: Alias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
     
     inline def setCustomResolver(value: ResolverFunction | ResolverObject): Self = StObject.set(x, "customResolver", value.asInstanceOf[js.Any])
     

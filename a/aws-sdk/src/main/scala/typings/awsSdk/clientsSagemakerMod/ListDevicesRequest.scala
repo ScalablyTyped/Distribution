@@ -38,7 +38,8 @@ object ListDevicesRequest {
     __obj.asInstanceOf[ListDevicesRequest]
   }
   
-  extension [Self <: ListDevicesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDevicesRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceFleetName(value: EntityName): Self = StObject.set(x, "DeviceFleetName", value.asInstanceOf[js.Any])
     

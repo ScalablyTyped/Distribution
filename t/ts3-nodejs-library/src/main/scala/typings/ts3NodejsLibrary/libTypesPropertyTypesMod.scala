@@ -31,7 +31,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[ApiKeyAdd]
     }
     
-    extension [Self <: ApiKeyAdd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiKeyAdd] (val x: Self) extends AnyVal {
       
       inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[ApiKeyList]
     }
     
-    extension [Self <: ApiKeyList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiKeyList] (val x: Self) extends AnyVal {
       
       inline def setCldbid(value: String | Asterisk): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[BanAdd]
     }
     
-    extension [Self <: BanAdd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BanAdd] (val x: Self) extends AnyVal {
       
       inline def setBanreason(value: String): Self = StObject.set(x, "banreason", value.asInstanceOf[js.Any])
       
@@ -161,7 +164,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[BanClient]
     }
     
-    extension [Self <: BanClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BanClient] (val x: Self) extends AnyVal {
       
       inline def setBanreason(value: String): Self = StObject.set(x, "banreason", value.asInstanceOf[js.Any])
       
@@ -234,7 +238,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[ChannelEdit]
     }
     
-    extension [Self <: ChannelEdit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelEdit] (val x: Self) extends AnyVal {
       
       inline def setChannelCodec(value: Codec): Self = StObject.set(x, "channelCodec", value.asInstanceOf[js.Any])
       
@@ -331,7 +336,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[ClientDBEdit]
     }
     
-    extension [Self <: ClientDBEdit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientDBEdit] (val x: Self) extends AnyVal {
       
       inline def setClientDescription(value: String): Self = StObject.set(x, "clientDescription", value.asInstanceOf[js.Any])
     }
@@ -352,7 +358,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[ClientEdit]
     }
     
-    extension [Self <: ClientEdit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientEdit] (val x: Self) extends AnyVal {
       
       inline def setClientDescription(value: String): Self = StObject.set(x, "clientDescription", value.asInstanceOf[js.Any])
       
@@ -377,7 +384,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[ClientUpdate]
     }
     
-    extension [Self <: ClientUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientUpdate] (val x: Self) extends AnyVal {
       
       inline def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
     }
@@ -414,7 +422,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[InstanceEdit]
     }
     
-    extension [Self <: InstanceEdit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceEdit] (val x: Self) extends AnyVal {
       
       inline def setServerinstanceFiletransferPort(value: Double): Self = StObject.set(x, "serverinstanceFiletransferPort", value.asInstanceOf[js.Any])
       
@@ -565,7 +574,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[ServerEdit]
     }
     
-    extension [Self <: ServerEdit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerEdit] (val x: Self) extends AnyVal {
       
       inline def setVirtualserverAntifloodPointsNeededCommandBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededCommandBlock", value.asInstanceOf[js.Any])
       
@@ -787,7 +797,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[ServerTempPasswordAdd]
     }
     
-    extension [Self <: ServerTempPasswordAdd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerTempPasswordAdd] (val x: Self) extends AnyVal {
       
       inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
@@ -832,7 +843,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[TransferDownload]
     }
     
-    extension [Self <: TransferDownload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferDownload] (val x: Self) extends AnyVal {
       
       inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -885,7 +897,8 @@ object libTypesPropertyTypesMod {
       __obj.asInstanceOf[TransferUpload]
     }
     
-    extension [Self <: TransferUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferUpload] (val x: Self) extends AnyVal {
       
       inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       

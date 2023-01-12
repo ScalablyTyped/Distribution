@@ -61,7 +61,8 @@ object typesLibCollapseMod {
       __obj.asInstanceOf[CollapseProps]
     }
     
-    extension [Self <: CollapseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object typesLibCollapseMod {
       __obj.asInstanceOf[UncontrolledCollapseProps]
     }
     
-    extension [Self <: UncontrolledCollapseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UncontrolledCollapseProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultOpen(value: Boolean): Self = StObject.set(x, "defaultOpen", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object ProvisionPublicIpv4PoolCidrRequest {
     __obj.asInstanceOf[ProvisionPublicIpv4PoolCidrRequest]
   }
   
-  extension [Self <: ProvisionPublicIpv4PoolCidrRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionPublicIpv4PoolCidrRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

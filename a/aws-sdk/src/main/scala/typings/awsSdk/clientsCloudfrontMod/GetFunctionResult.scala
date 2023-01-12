@@ -28,7 +28,8 @@ object GetFunctionResult {
     __obj.asInstanceOf[GetFunctionResult]
   }
   
-  extension [Self <: GetFunctionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFunctionResult] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     

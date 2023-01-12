@@ -16,7 +16,8 @@ object IELangSearchEvents {
     __obj.asInstanceOf[IELangSearchEvents]
   }
   
-  extension [Self <: IELangSearchEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IELangSearchEvents] (val x: Self) extends AnyVal {
     
     inline def setSelect(value: JQueryDeferred[Any]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
   }

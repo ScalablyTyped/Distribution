@@ -17,7 +17,8 @@ object FieldErrors {
     __obj.asInstanceOf[FieldErrors]
   }
   
-  extension [Self <: FieldErrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldErrors] (val x: Self) extends AnyVal {
     
     inline def set__errors(value: js.Array[FieldError]): Self = StObject.set(x, "__errors", value.asInstanceOf[js.Any])
     

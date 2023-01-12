@@ -32,7 +32,8 @@ object FixedWidth {
     __obj.asInstanceOf[FixedWidth]
   }
   
-  extension [Self <: FixedWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedWidth] (val x: Self) extends AnyVal {
     
     inline def setFixedWidth(value: Boolean): Self = StObject.set(x, "fixedWidth", value.asInstanceOf[js.Any])
     

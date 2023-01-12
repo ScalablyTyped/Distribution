@@ -26,7 +26,8 @@ object OnScreenPositionAssignedTargetingOptionDetails {
     __obj.asInstanceOf[OnScreenPositionAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: OnScreenPositionAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnScreenPositionAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setAdType(value: String): Self = StObject.set(x, "adType", value.asInstanceOf[js.Any])
     

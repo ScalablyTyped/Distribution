@@ -39,7 +39,8 @@ object SlickGridCheckBoxSelectColumnOptions {
     __obj.asInstanceOf[SlickGridCheckBoxSelectColumnOptions]
   }
   
-  extension [Self <: SlickGridCheckBoxSelectColumnOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlickGridCheckBoxSelectColumnOptions] (val x: Self) extends AnyVal {
     
     inline def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
     

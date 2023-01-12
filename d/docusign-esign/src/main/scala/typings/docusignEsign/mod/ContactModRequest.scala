@@ -18,7 +18,8 @@ object ContactModRequest {
     __obj.asInstanceOf[ContactModRequest]
   }
   
-  extension [Self <: ContactModRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactModRequest] (val x: Self) extends AnyVal {
     
     inline def setContactList(value: js.Array[Contact]): Self = StObject.set(x, "contactList", value.asInstanceOf[js.Any])
     

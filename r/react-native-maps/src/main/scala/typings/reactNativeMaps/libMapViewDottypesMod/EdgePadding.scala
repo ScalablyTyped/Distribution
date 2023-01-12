@@ -22,7 +22,8 @@ object EdgePadding {
     __obj.asInstanceOf[EdgePadding]
   }
   
-  extension [Self <: EdgePadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgePadding] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Number): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

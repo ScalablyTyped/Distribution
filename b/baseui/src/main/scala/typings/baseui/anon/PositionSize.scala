@@ -21,7 +21,8 @@ object PositionSize {
     __obj.asInstanceOf[PositionSize]
   }
   
-  extension [Self <: PositionSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionSize] (val x: Self) extends AnyVal {
     
     inline def set$position(value: BadgePosition): Self = StObject.set(x, "$position", value.asInstanceOf[js.Any])
     

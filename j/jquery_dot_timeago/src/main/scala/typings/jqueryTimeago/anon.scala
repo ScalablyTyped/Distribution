@@ -50,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Day]
     }
     
-    extension [Self <: Day](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Day] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Any): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       

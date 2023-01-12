@@ -30,7 +30,8 @@ object StoreImage {
     __obj.asInstanceOf[StoreImage]
   }
   
-  extension [Self <: StoreImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreImage] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

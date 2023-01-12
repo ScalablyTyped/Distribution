@@ -47,7 +47,8 @@ object namespacesDevtoolsPanelsMod {
         __obj.asInstanceOf[ElementsPanel]
       }
       
-      extension [Self <: ElementsPanel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ElementsPanel] (val x: Self) extends AnyVal {
         
         inline def setCreateSidebarPane(value: String => js.Promise[ExtensionSidebarPane]): Self = StObject.set(x, "createSidebarPane", js.Any.fromFunction1(value))
         
@@ -79,7 +80,8 @@ object namespacesDevtoolsPanelsMod {
         __obj.asInstanceOf[ExtensionPanel]
       }
       
-      extension [Self <: ExtensionPanel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtensionPanel] (val x: Self) extends AnyVal {
         
         inline def setOnHidden(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onHidden", value.asInstanceOf[js.Any])
         

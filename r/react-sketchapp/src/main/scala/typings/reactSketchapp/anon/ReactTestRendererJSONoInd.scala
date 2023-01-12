@@ -25,7 +25,8 @@ object ReactTestRendererJSONoInd {
     __obj.asInstanceOf[ReactTestRendererJSONoInd]
   }
   
-  extension [Self <: ReactTestRendererJSONoInd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactTestRendererJSONoInd] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[ReactTestRendererNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

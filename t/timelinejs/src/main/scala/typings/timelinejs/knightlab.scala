@@ -27,7 +27,8 @@ object knightlab {
       __obj.asInstanceOf[ITimeLine]
     }
     
-    extension [Self <: ITimeLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimeLine] (val x: Self) extends AnyVal {
       
       inline def setAsset(value: ITimeLineAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object knightlab {
       __obj.asInstanceOf[ITimeLineAsset]
     }
     
-    extension [Self <: ITimeLineAsset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimeLineAsset] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object knightlab {
       __obj.asInstanceOf[ITimeLineConfiguration]
     }
     
-    extension [Self <: ITimeLineConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimeLineConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -278,7 +281,8 @@ object knightlab {
       __obj.asInstanceOf[ITimelineDate]
     }
     
-    extension [Self <: ITimelineDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimelineDate] (val x: Self) extends AnyVal {
       
       inline def setAsset(value: ITimeLineAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
       
@@ -315,7 +319,8 @@ object knightlab {
       __obj.asInstanceOf[ITimelineEra]
     }
     
-    extension [Self <: ITimelineEra](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimelineEra] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
@@ -342,7 +347,8 @@ object knightlab {
       __obj.asInstanceOf[ITimelineModel]
     }
     
-    extension [Self <: ITimelineModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimelineModel] (val x: Self) extends AnyVal {
       
       inline def setTimeline(value: ITimeLine): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     }

@@ -28,7 +28,8 @@ object ListEffectiveDeploymentsRequest {
     __obj.asInstanceOf[ListEffectiveDeploymentsRequest]
   }
   
-  extension [Self <: ListEffectiveDeploymentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEffectiveDeploymentsRequest] (val x: Self) extends AnyVal {
     
     inline def setCoreDeviceThingName(value: CoreDeviceThingName): Self = StObject.set(x, "coreDeviceThingName", value.asInstanceOf[js.Any])
     

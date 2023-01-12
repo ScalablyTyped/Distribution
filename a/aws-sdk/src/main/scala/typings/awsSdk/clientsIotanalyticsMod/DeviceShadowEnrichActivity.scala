@@ -38,7 +38,8 @@ object DeviceShadowEnrichActivity {
     __obj.asInstanceOf[DeviceShadowEnrichActivity]
   }
   
-  extension [Self <: DeviceShadowEnrichActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceShadowEnrichActivity] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: AttributeName): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

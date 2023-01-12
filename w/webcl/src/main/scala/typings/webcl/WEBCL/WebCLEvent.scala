@@ -27,7 +27,8 @@ object WebCLEvent {
     __obj.asInstanceOf[WebCLEvent]
   }
   
-  extension [Self <: WebCLEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebCLEvent] (val x: Self) extends AnyVal {
     
     inline def setGetInfo(value: EventInfo => Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     

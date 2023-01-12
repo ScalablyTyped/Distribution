@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[ByteArray]
     }
     
-    extension [Self <: ByteArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteArray] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[GIFOptions]
     }
     
-    extension [Self <: GIFOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GIFOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Cwd]
     }
     
-    extension [Self <: Cwd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cwd] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Log]
     }
     
-    extension [Self <: Log](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -139,7 +143,8 @@ object anon {
       __obj.asInstanceOf[NonInteractive]
     }
     
-    extension [Self <: NonInteractive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonInteractive] (val x: Self) extends AnyVal {
       
       inline def setNonInteractive(value: Boolean): Self = StObject.set(x, "nonInteractive", value.asInstanceOf[js.Any])
       
@@ -163,7 +168,8 @@ object anon {
       __obj.asInstanceOf[PickSpawnOptionscwd]
     }
     
-    extension [Self <: PickSpawnOptionscwd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickSpawnOptionscwd] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -184,7 +190,8 @@ object anon {
       __obj.asInstanceOf[ShouldUpdateRepo]
     }
     
-    extension [Self <: ShouldUpdateRepo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShouldUpdateRepo] (val x: Self) extends AnyVal {
       
       inline def setShouldUpdateRepo(value: Boolean): Self = StObject.set(x, "shouldUpdateRepo", value.asInstanceOf[js.Any])
       
@@ -205,7 +212,8 @@ object anon {
       __obj.asInstanceOf[Spinner]
     }
     
-    extension [Self <: Spinner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spinner] (val x: Self) extends AnyVal {
       
       inline def setSpinner(value: Ora): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
       

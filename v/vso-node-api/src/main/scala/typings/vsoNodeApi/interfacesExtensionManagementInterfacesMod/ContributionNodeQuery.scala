@@ -32,7 +32,8 @@ object ContributionNodeQuery {
     __obj.asInstanceOf[ContributionNodeQuery]
   }
   
-  extension [Self <: ContributionNodeQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContributionNodeQuery] (val x: Self) extends AnyVal {
     
     inline def setContributionIds(value: js.Array[String]): Self = StObject.set(x, "contributionIds", value.asInstanceOf[js.Any])
     

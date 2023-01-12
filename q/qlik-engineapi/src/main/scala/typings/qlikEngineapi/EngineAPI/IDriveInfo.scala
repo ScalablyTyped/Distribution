@@ -40,7 +40,8 @@ object IDriveInfo {
     __obj.asInstanceOf[IDriveInfo]
   }
   
-  extension [Self <: IDriveInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDriveInfo] (val x: Self) extends AnyVal {
     
     inline def setQDrive(value: String): Self = StObject.set(x, "qDrive", value.asInstanceOf[js.Any])
     

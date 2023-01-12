@@ -54,7 +54,8 @@ object MjmlTableProps {
     __obj.asInstanceOf[MjmlTableProps]
   }
   
-  extension [Self <: MjmlTableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlTableProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | right | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object EpicDiscussions {
     __obj.asInstanceOf[EpicDiscussions]
   }
   
-  extension [Self <: EpicDiscussions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EpicDiscussions] (val x: Self) extends AnyVal {
     
     inline def setEpicDiscussions(
       value: Instantiable1[

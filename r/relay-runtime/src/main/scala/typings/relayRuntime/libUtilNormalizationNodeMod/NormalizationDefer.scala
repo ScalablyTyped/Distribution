@@ -27,7 +27,8 @@ object NormalizationDefer {
     __obj.asInstanceOf[NormalizationDefer]
   }
   
-  extension [Self <: NormalizationDefer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationDefer] (val x: Self) extends AnyVal {
     
     inline def setIf(value: String): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
     

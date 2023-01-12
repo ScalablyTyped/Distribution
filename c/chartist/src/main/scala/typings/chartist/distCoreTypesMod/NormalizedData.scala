@@ -21,7 +21,8 @@ object NormalizedData {
     __obj.asInstanceOf[NormalizedData[T]]
   }
   
-  extension [Self <: NormalizedData[?], T /* <: AllNormalizedSeriesTypes */](x: Self & NormalizedData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizedData[?], T /* <: AllNormalizedSeriesTypes */] (val x: Self & NormalizedData[T]) extends AnyVal {
     
     inline def setLabels(value: js.Array[Label]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

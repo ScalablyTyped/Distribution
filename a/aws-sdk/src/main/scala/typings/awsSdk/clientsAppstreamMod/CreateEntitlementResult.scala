@@ -18,7 +18,8 @@ object CreateEntitlementResult {
     __obj.asInstanceOf[CreateEntitlementResult]
   }
   
-  extension [Self <: CreateEntitlementResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEntitlementResult] (val x: Self) extends AnyVal {
     
     inline def setEntitlement(value: Entitlement): Self = StObject.set(x, "Entitlement", value.asInstanceOf[js.Any])
     

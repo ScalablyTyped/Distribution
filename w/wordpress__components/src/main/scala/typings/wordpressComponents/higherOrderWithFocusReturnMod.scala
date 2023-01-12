@@ -37,7 +37,8 @@ object higherOrderWithFocusReturnMod {
       __obj.asInstanceOf[WFROptions]
     }
     
-    extension [Self <: WFROptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WFROptions] (val x: Self) extends AnyVal {
       
       inline def setOnFocusReturn(value: () => Boolean | Unit): Self = StObject.set(x, "onFocusReturn", js.Any.fromFunction0(value))
       

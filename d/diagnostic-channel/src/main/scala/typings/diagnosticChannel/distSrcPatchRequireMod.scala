@@ -32,7 +32,8 @@ object distSrcPatchRequireMod {
       __obj.asInstanceOf[IModulePatcher]
     }
     
-    extension [Self <: IModulePatcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModulePatcher] (val x: Self) extends AnyVal {
       
       inline def setPatch(value: (/* module */ Any, /* path */ String) => Any): Self = StObject.set(x, "patch", js.Any.fromFunction2(value))
       

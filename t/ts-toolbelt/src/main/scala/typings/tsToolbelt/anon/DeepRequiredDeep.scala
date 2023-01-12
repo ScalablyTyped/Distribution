@@ -19,7 +19,8 @@ object DeepRequiredDeep {
     __obj.asInstanceOf[DeepRequiredDeep[O]]
   }
   
-  extension [Self <: DeepRequiredDeep[?], O /* <: js.Object */](x: Self & DeepRequiredDeep[O]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepRequiredDeep[?], O /* <: js.Object */] (val x: Self & DeepRequiredDeep[O]) extends AnyVal {
     
     inline def setDeep(value: RequiredDeep[O]): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     

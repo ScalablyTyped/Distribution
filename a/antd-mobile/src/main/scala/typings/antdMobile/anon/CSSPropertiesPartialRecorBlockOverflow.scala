@@ -9977,7 +9977,8 @@ object CSSPropertiesPartialRecorBlockOverflow {
     __obj.asInstanceOf[CSSPropertiesPartialRecorBlockOverflow]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorBlockOverflow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorBlockOverflow] (val x: Self) extends AnyVal {
     
     inline def `set--border-radius`(value: String): Self = StObject.set(x, "--border-radius", value.asInstanceOf[js.Any])
     

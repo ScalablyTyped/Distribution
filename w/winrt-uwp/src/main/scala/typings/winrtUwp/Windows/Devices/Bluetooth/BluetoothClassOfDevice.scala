@@ -31,7 +31,8 @@ object BluetoothClassOfDevice {
     __obj.asInstanceOf[BluetoothClassOfDevice]
   }
   
-  extension [Self <: BluetoothClassOfDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothClassOfDevice] (val x: Self) extends AnyVal {
     
     inline def setMajorClass(value: BluetoothMajorClass): Self = StObject.set(x, "majorClass", value.asInstanceOf[js.Any])
     

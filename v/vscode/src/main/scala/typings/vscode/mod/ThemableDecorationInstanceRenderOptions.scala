@@ -23,7 +23,8 @@ object ThemableDecorationInstanceRenderOptions {
     __obj.asInstanceOf[ThemableDecorationInstanceRenderOptions]
   }
   
-  extension [Self <: ThemableDecorationInstanceRenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemableDecorationInstanceRenderOptions] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: ThemableDecorationAttachmentRenderOptions): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

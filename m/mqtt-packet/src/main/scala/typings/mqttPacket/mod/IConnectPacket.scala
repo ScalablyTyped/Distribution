@@ -46,7 +46,8 @@ object IConnectPacket {
     __obj.asInstanceOf[IConnectPacket]
   }
   
-  extension [Self <: IConnectPacket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConnectPacket] (val x: Self) extends AnyVal {
     
     inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
     

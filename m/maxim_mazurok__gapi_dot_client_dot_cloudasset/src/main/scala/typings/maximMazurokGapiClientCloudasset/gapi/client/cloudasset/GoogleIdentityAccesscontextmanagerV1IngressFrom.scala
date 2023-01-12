@@ -25,7 +25,8 @@ object GoogleIdentityAccesscontextmanagerV1IngressFrom {
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1IngressFrom]
   }
   
-  extension [Self <: GoogleIdentityAccesscontextmanagerV1IngressFrom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1IngressFrom] (val x: Self) extends AnyVal {
     
     inline def setIdentities(value: js.Array[String]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     

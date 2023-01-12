@@ -108,7 +108,8 @@ object UpdateFlowSourceRequest {
     __obj.asInstanceOf[UpdateFlowSourceRequest]
   }
   
-  extension [Self <: UpdateFlowSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFlowSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setDecryption(value: UpdateEncryption): Self = StObject.set(x, "Decryption", value.asInstanceOf[js.Any])
     

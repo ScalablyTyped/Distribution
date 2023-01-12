@@ -92,7 +92,8 @@ object distSrcBucketMod {
       __obj.asInstanceOf[BucketChild[V]]
     }
     
-    extension [Self <: BucketChild[?], V](x: Self & BucketChild[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketChild[?], V] (val x: Self & BucketChild[V]) extends AnyVal {
       
       inline def setHash(value: InfiniteHash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object distSrcBucketMod {
       __obj.asInstanceOf[BucketPosition[T]]
     }
     
-    extension [Self <: BucketPosition[?], T](x: Self & BucketPosition[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketPosition[?], T] (val x: Self & BucketPosition[T]) extends AnyVal {
       
       inline def setBucket(value: Bucket[T]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object distSrcBucketMod {
       __obj.asInstanceOf[SA[B]]
     }
     
-    extension [Self <: SA[?], B](x: Self & SA[B]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SA[?], B] (val x: Self & SA[B]) extends AnyVal {
       
       inline def setBitField(value: () => js.Array[Double]): Self = StObject.set(x, "bitField", js.Any.fromFunction0(value))
       

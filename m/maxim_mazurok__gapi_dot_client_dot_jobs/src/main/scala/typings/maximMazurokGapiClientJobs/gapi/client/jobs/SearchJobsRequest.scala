@@ -122,7 +122,8 @@ object SearchJobsRequest {
     __obj.asInstanceOf[SearchJobsRequest]
   }
   
-  extension [Self <: SearchJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomRankingInfo(value: CustomRankingInfo): Self = StObject.set(x, "customRankingInfo", value.asInstanceOf[js.Any])
     

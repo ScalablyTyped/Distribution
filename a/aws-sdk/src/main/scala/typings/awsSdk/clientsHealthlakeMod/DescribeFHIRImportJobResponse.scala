@@ -18,7 +18,8 @@ object DescribeFHIRImportJobResponse {
     __obj.asInstanceOf[DescribeFHIRImportJobResponse]
   }
   
-  extension [Self <: DescribeFHIRImportJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFHIRImportJobResponse] (val x: Self) extends AnyVal {
     
     inline def setImportJobProperties(value: ImportJobProperties): Self = StObject.set(x, "ImportJobProperties", value.asInstanceOf[js.Any])
   }

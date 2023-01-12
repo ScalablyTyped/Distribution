@@ -16,7 +16,8 @@ object DataReadonlyArray {
     __obj.asInstanceOf[DataReadonlyArray]
   }
   
-  extension [Self <: DataReadonlyArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataReadonlyArray] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[UserInfo]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

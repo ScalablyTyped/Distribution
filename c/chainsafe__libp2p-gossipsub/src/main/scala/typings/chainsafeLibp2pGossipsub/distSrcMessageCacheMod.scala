@@ -106,7 +106,8 @@ object distSrcMessageCacheMod {
       __obj.asInstanceOf[CacheEntry]
     }
     
-    extension [Self <: CacheEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheEntry] (val x: Self) extends AnyVal {
       
       inline def setTopic(value: TopicStr): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
@@ -143,7 +144,8 @@ object distSrcMessageCacheMod {
       __obj.asInstanceOf[MessageCacheEntry]
     }
     
-    extension [Self <: MessageCacheEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageCacheEntry] (val x: Self) extends AnyVal {
       
       inline def setIwantCounts(value: Map[PeerIdStr, Double]): Self = StObject.set(x, "iwantCounts", value.asInstanceOf[js.Any])
       

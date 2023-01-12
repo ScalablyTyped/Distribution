@@ -33,7 +33,8 @@ object ListQueuesRequest {
     __obj.asInstanceOf[ListQueuesRequest]
   }
   
-  extension [Self <: ListQueuesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListQueuesRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

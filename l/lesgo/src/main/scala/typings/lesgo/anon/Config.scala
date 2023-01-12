@@ -17,7 +17,8 @@ object Config {
     __obj.asInstanceOf[Config[TDecoded]]
   }
   
-  extension [Self <: Config[?], TDecoded /* <: js.Object | String */](x: Self & Config[TDecoded]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Config[?], TDecoded /* <: js.Object | String */] (val x: Self & Config[TDecoded]) extends AnyVal {
     
     inline def setConfig(value: Iss[TDecoded]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

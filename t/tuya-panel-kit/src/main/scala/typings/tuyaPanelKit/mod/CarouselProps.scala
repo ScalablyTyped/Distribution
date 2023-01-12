@@ -237,7 +237,8 @@ object CarouselProps {
     __obj.asInstanceOf[CarouselProps]
   }
   
-  extension [Self <: CarouselProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
     
     inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     

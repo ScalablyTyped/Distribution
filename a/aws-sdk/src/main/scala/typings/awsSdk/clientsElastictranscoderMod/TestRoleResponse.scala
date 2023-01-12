@@ -23,7 +23,8 @@ object TestRoleResponse {
     __obj.asInstanceOf[TestRoleResponse]
   }
   
-  extension [Self <: TestRoleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRoleResponse] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: ExceptionMessages): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     

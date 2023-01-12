@@ -21,7 +21,8 @@ object EthereumFieldType {
     __obj.asInstanceOf[EthereumFieldType]
   }
   
-  extension [Self <: EthereumFieldType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumFieldType] (val x: Self) extends AnyVal {
     
     inline def setData_type(value: EthereumDataType): Self = StObject.set(x, "data_type", value.asInstanceOf[js.Any])
     

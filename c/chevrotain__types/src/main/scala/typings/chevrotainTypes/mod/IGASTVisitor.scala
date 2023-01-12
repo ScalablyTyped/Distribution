@@ -15,7 +15,8 @@ object IGASTVisitor {
     __obj.asInstanceOf[IGASTVisitor]
   }
   
-  extension [Self <: IGASTVisitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGASTVisitor] (val x: Self) extends AnyVal {
     
     inline def setVisit(value: IProduction => Any): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
   }

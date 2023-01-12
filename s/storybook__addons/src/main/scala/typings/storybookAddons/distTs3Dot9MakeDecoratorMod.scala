@@ -37,7 +37,8 @@ object distTs3Dot9MakeDecoratorMod {
       __obj.asInstanceOf[MakeDecoratorOptions]
     }
     
-    extension [Self <: MakeDecoratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MakeDecoratorOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

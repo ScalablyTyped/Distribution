@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsCornersBoldMod extends Shortcu
       __obj.asInstanceOf[CornersBoldProps]
     }
     
-    extension [Self <: CornersBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CornersBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

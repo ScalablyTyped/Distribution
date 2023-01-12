@@ -19,7 +19,8 @@ object OutgoingOptionsEvent {
     __obj.asInstanceOf[OutgoingOptionsEvent]
   }
   
-  extension [Self <: OutgoingOptionsEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutgoingOptionsEvent] (val x: Self) extends AnyVal {
     
     inline def setOriginator(value: LOCAL): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
     

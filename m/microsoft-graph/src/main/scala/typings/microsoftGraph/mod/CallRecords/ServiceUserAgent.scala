@@ -26,7 +26,8 @@ object ServiceUserAgent {
     __obj.asInstanceOf[ServiceUserAgent]
   }
   
-  extension [Self <: ServiceUserAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceUserAgent] (val x: Self) extends AnyVal {
     
     inline def setRole(value: ServiceRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

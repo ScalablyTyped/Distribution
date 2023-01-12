@@ -17,7 +17,8 @@ object TagOptions {
     __obj.asInstanceOf[TagOptions]
   }
   
-  extension [Self <: TagOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagOptions] (val x: Self) extends AnyVal {
     
     inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     

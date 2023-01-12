@@ -19,7 +19,8 @@ object SurfaceTooltipCloseEvent {
     __obj.asInstanceOf[SurfaceTooltipCloseEvent]
   }
   
-  extension [Self <: SurfaceTooltipCloseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurfaceTooltipCloseEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteAccessRequest {
     __obj.asInstanceOf[DeleteAccessRequest]
   }
   
-  extension [Self <: DeleteAccessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAccessRequest] (val x: Self) extends AnyVal {
     
     inline def setExternalId(value: ExternalId): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     

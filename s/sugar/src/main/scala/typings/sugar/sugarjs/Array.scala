@@ -33,7 +33,8 @@ object Array {
       __obj.asInstanceOf[ArrayOptions]
     }
     
-    extension [Self <: ArrayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayOptions] (val x: Self) extends AnyVal {
       
       inline def setSortCollate(value: typings.sugar.Function): Self = StObject.set(x, "sortCollate", value.asInstanceOf[js.Any])
       

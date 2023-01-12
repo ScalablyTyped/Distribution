@@ -82,7 +82,8 @@ object libShellbarShellbarMod {
       __obj.asInstanceOf[ShellbarProps]
     }
     
-    extension [Self <: ShellbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellbarProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Glyph]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object AppCapture {
     __obj.asInstanceOf[AppCapture]
   }
   
-  extension [Self <: AppCapture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppCapture] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object OnLocalServiceResolveFailCallbackResult {
     __obj.asInstanceOf[OnLocalServiceResolveFailCallbackResult]
   }
   
-  extension [Self <: OnLocalServiceResolveFailCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnLocalServiceResolveFailCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     

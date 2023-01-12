@@ -47,7 +47,8 @@ object RenderProperties {
     __obj.asInstanceOf[RenderProperties]
   }
   
-  extension [Self <: RenderProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderProperties] (val x: Self) extends AnyVal {
     
     inline def setGetEncodedQuery(value: () => String): Self = StObject.set(x, "getEncodedQuery", js.Any.fromFunction0(value))
     

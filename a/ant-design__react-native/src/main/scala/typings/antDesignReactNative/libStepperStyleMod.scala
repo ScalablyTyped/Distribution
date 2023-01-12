@@ -49,7 +49,8 @@ object libStepperStyleMod {
       __obj.asInstanceOf[StepperStyle]
     }
     
-    extension [Self <: StepperStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepperStyle] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

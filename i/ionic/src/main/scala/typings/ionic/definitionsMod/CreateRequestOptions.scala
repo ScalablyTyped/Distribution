@@ -17,7 +17,8 @@ object CreateRequestOptions {
     __obj.asInstanceOf[CreateRequestOptions]
   }
   
-  extension [Self <: CreateRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     

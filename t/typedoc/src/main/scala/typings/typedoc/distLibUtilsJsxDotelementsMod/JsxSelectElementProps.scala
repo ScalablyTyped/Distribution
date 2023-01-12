@@ -31,7 +31,8 @@ object JsxSelectElementProps {
     __obj.asInstanceOf[JsxSelectElementProps]
   }
   
-  extension [Self <: JsxSelectElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxSelectElementProps] (val x: Self) extends AnyVal {
     
     inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     

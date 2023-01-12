@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[Algorithms_]
     }
     
-    extension [Self <: Algorithms_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Algorithms_] (val x: Self) extends AnyVal {
       
       inline def `setAes-128-ctr`(value: IvBits): Self = StObject.set(x, "aes-128-ctr", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[GenerateKeyOptions]
     }
     
-    extension [Self <: GenerateKeyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateKeyOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: `aes-128-ctr` | `aes-256-cbc` | sha256): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object mod {
       __obj.asInstanceOf[HMacResult]
     }
     
-    extension [Self <: HMacResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HMacResult] (val x: Self) extends AnyVal {
       
       inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object mod {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
@@ -202,7 +206,8 @@ object mod {
       __obj.asInstanceOf[SealOptions]
     }
     
-    extension [Self <: SealOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SealOptions] (val x: Self) extends AnyVal {
       
       inline def setEncryption(value: SealOptionsSub): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
       
@@ -251,7 +256,8 @@ object mod {
       __obj.asInstanceOf[SealOptionsSub]
     }
     
-    extension [Self <: SealOptionsSub](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SealOptionsSub] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: `aes-128-ctr` | `aes-256-cbc` | sha256): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

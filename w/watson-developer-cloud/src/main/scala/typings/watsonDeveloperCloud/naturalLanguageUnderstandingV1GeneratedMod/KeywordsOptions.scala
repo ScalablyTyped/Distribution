@@ -23,7 +23,8 @@ object KeywordsOptions {
     __obj.asInstanceOf[KeywordsOptions]
   }
   
-  extension [Self <: KeywordsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordsOptions] (val x: Self) extends AnyVal {
     
     inline def setEmotion(value: Boolean): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object distTypesInternalSchedulerIntervalProviderMod {
       __obj.asInstanceOf[IntervalProvider_]
     }
     
-    extension [Self <: IntervalProvider_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntervalProvider_] (val x: Self) extends AnyVal {
       
       inline def setClearInterval(value: /* handle */ TimerHandle => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
       

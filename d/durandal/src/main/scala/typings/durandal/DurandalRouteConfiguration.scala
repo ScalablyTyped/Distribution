@@ -33,7 +33,8 @@ object DurandalRouteConfiguration {
     __obj.asInstanceOf[DurandalRouteConfiguration]
   }
   
-  extension [Self <: DurandalRouteConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurandalRouteConfiguration] (val x: Self) extends AnyVal {
     
     inline def setHasChildRoutes(value: Boolean): Self = StObject.set(x, "hasChildRoutes", value.asInstanceOf[js.Any])
     

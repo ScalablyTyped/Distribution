@@ -16,7 +16,8 @@ object JSONSchemaBasicType {
     __obj.asInstanceOf[JSONSchemaBasicType]
   }
   
-  extension [Self <: JSONSchemaBasicType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONSchemaBasicType] (val x: Self) extends AnyVal {
     
     inline def setType(value: JSONBasicTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

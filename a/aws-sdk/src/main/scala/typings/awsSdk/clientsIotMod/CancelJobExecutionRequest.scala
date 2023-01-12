@@ -38,7 +38,8 @@ object CancelJobExecutionRequest {
     __obj.asInstanceOf[CancelJobExecutionRequest]
   }
   
-  extension [Self <: CancelJobExecutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelJobExecutionRequest] (val x: Self) extends AnyVal {
     
     inline def setExpectedVersion(value: ExpectedVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     

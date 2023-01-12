@@ -78,7 +78,8 @@ object NotebookExecution {
     __obj.asInstanceOf[NotebookExecution]
   }
   
-  extension [Self <: NotebookExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookExecution] (val x: Self) extends AnyVal {
     
     inline def setArn(value: XmlStringMaxLen256): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

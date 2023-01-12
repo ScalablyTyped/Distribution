@@ -51,7 +51,8 @@ object PackageJSON {
     __obj.asInstanceOf[PackageJSON]
   }
   
-  extension [Self <: PackageJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageJSON] (val x: Self) extends AnyVal {
     
     inline def setAlias(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @parcel/types.@parcel/types.PackageName | @parcel/types.@parcel/types.FilePath | @parcel/types.@parcel/types.Glob ]:? @parcel/types.@parcel/types.PackageName | @parcel/types.@parcel/types.FilePath | {  global :string}} */ js.Any

@@ -32,7 +32,8 @@ object SpecUtilsBaseNode {
     __obj.asInstanceOf[SpecUtilsBaseNode]
   }
   
-  extension [Self <: SpecUtilsBaseNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecUtilsBaseNode] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

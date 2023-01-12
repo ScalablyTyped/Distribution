@@ -48,7 +48,8 @@ object MapContextTranslateMarkerOptions {
     __obj.asInstanceOf[MapContextTranslateMarkerOptions]
   }
   
-  extension [Self <: MapContextTranslateMarkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapContextTranslateMarkerOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimationEnd(value: () => Unit): Self = StObject.set(x, "animationEnd", js.Any.fromFunction0(value))
     

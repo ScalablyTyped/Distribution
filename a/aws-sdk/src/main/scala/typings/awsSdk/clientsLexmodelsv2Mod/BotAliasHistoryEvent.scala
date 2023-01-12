@@ -28,7 +28,8 @@ object BotAliasHistoryEvent {
     __obj.asInstanceOf[BotAliasHistoryEvent]
   }
   
-  extension [Self <: BotAliasHistoryEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotAliasHistoryEvent] (val x: Self) extends AnyVal {
     
     inline def setBotVersion(value: BotVersion): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
     

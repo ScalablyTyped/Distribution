@@ -31,7 +31,8 @@ object MetaCardRuleminnumbermaxn {
     __obj.asInstanceOf[MetaCardRuleminnumbermaxn]
   }
   
-  extension [Self <: MetaCardRuleminnumbermaxn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaCardRuleminnumbermaxn] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Path]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

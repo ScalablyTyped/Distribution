@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[OmitProcessOptionsparserp]
     }
     
-    extension [Self <: OmitProcessOptionsparserp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitProcessOptionsparserp] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ReplicationTaskAssessmentRunProgress {
     __obj.asInstanceOf[ReplicationTaskAssessmentRunProgress]
   }
   
-  extension [Self <: ReplicationTaskAssessmentRunProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationTaskAssessmentRunProgress] (val x: Self) extends AnyVal {
     
     inline def setIndividualAssessmentCompletedCount(value: Integer): Self = StObject.set(x, "IndividualAssessmentCompletedCount", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MGetResponse {
     __obj.asInstanceOf[MGetResponse[T]]
   }
   
-  extension [Self <: MGetResponse[?], T](x: Self & MGetResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MGetResponse[?], T] (val x: Self & MGetResponse[T]) extends AnyVal {
     
     inline def setDocs(value: js.Array[GetResponse[T]]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     

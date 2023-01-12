@@ -23,7 +23,8 @@ object BatchUpdateDevicePositionRequest {
     __obj.asInstanceOf[BatchUpdateDevicePositionRequest]
   }
   
-  extension [Self <: BatchUpdateDevicePositionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateDevicePositionRequest] (val x: Self) extends AnyVal {
     
     inline def setTrackerName(value: ResourceName): Self = StObject.set(x, "TrackerName", value.asInstanceOf[js.Any])
     

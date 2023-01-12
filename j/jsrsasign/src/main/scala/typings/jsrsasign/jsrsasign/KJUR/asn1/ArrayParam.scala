@@ -15,7 +15,8 @@ object ArrayParam {
     __obj.asInstanceOf[ArrayParam[T]]
   }
   
-  extension [Self <: ArrayParam[?], T](x: Self & ArrayParam[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayParam[?], T] (val x: Self & ArrayParam[T]) extends AnyVal {
     
     inline def setArray(value: js.Array[T]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Page {
   @js.native
   val ^ : PageConstructor = js.native
   
-  extension [Self <: Page](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
     
     inline def setSetData(value: Any => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
   }

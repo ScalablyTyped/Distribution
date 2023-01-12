@@ -38,7 +38,8 @@ object SendUsersMessageRequest {
     __obj.asInstanceOf[SendUsersMessageRequest]
   }
   
-  extension [Self <: SendUsersMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendUsersMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setContext(value: MapOfString): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     

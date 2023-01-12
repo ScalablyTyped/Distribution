@@ -28,7 +28,8 @@ object ActionDescriptor {
     __obj.asInstanceOf[ActionDescriptor]
   }
   
-  extension [Self <: ActionDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionDescriptor] (val x: Self) extends AnyVal {
     
     inline def setActionTitle(value: String): Self = StObject.set(x, "actionTitle", value.asInstanceOf[js.Any])
     

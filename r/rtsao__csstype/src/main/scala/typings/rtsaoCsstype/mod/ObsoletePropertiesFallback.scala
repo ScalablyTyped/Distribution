@@ -922,7 +922,8 @@ object ObsoletePropertiesFallback {
     __obj.asInstanceOf[ObsoletePropertiesFallback[TLength]]
   }
   
-  extension [Self <: ObsoletePropertiesFallback[?], TLength](x: Self & ObsoletePropertiesFallback[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObsoletePropertiesFallback[?], TLength] (val x: Self & ObsoletePropertiesFallback[TLength]) extends AnyVal {
     
     inline def setBoxAlign(value: BoxAlignProperty | js.Array[BoxAlignProperty]): Self = StObject.set(x, "boxAlign", value.asInstanceOf[js.Any])
     

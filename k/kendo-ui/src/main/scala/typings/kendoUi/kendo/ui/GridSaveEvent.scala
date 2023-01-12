@@ -23,7 +23,8 @@ object GridSaveEvent {
     __obj.asInstanceOf[GridSaveEvent]
   }
   
-  extension [Self <: GridSaveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridSaveEvent] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ResolveOptions {
     __obj.asInstanceOf[ResolveOptions]
   }
   
-  extension [Self <: ResolveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveOptions] (val x: Self) extends AnyVal {
     
     inline def setBrowserField(value: Boolean): Self = StObject.set(x, "browserField", value.asInstanceOf[js.Any])
     

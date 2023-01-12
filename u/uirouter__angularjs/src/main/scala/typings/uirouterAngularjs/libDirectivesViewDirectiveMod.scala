@@ -38,7 +38,8 @@ object libDirectivesViewDirectiveMod {
       __obj.asInstanceOf[UIViewAnimData]
     }
     
-    extension [Self <: UIViewAnimData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIViewAnimData] (val x: Self) extends AnyVal {
       
       inline def set$animEnter(value: js.Promise[Any]): Self = StObject.set(x, "$animEnter", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object libDirectivesViewDirectiveMod {
       __obj.asInstanceOf[UIViewData]
     }
     
-    extension [Self <: UIViewData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIViewData] (val x: Self) extends AnyVal {
       
       inline def set$cfg(value: Ng1ViewConfig): Self = StObject.set(x, "$cfg", value.asInstanceOf[js.Any])
       

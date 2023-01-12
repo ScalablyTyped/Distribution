@@ -23,7 +23,8 @@ object BatchAssociateResourcesToCustomLineItemOutput {
     __obj.asInstanceOf[BatchAssociateResourcesToCustomLineItemOutput]
   }
   
-  extension [Self <: BatchAssociateResourcesToCustomLineItemOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAssociateResourcesToCustomLineItemOutput] (val x: Self) extends AnyVal {
     
     inline def setFailedAssociatedResources(value: AssociateResourcesResponseList): Self = StObject.set(x, "FailedAssociatedResources", value.asInstanceOf[js.Any])
     

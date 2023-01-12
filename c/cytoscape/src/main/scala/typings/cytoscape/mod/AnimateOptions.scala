@@ -24,7 +24,8 @@ object AnimateOptions {
     __obj.asInstanceOf[AnimateOptions]
   }
   
-  extension [Self <: AnimateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimateOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

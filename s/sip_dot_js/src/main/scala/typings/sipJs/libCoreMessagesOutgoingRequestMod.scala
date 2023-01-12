@@ -73,7 +73,8 @@ object libCoreMessagesOutgoingRequestMod {
       __obj.asInstanceOf[OutgoingRequestDelegate]
     }
     
-    extension [Self <: OutgoingRequestDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutgoingRequestDelegate] (val x: Self) extends AnyVal {
       
       inline def setOnAccept(value: /* response */ IncomingResponse => Unit): Self = StObject.set(x, "onAccept", js.Any.fromFunction1(value))
       
@@ -112,7 +113,8 @@ object libCoreMessagesOutgoingRequestMod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object XConfirmDeleteListener {
     __obj.asInstanceOf[XConfirmDeleteListener]
   }
   
-  extension [Self <: XConfirmDeleteListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConfirmDeleteListener] (val x: Self) extends AnyVal {
     
     inline def setConfirmDelete(value: RowChangeEvent => Boolean): Self = StObject.set(x, "confirmDelete", js.Any.fromFunction1(value))
   }

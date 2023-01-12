@@ -66,7 +66,8 @@ object AuthenticationGetSessionOClearSessionPreference {
     __obj.asInstanceOf[AuthenticationGetSessionOClearSessionPreference]
   }
   
-  extension [Self <: AuthenticationGetSessionOClearSessionPreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationGetSessionOClearSessionPreference] (val x: Self) extends AnyVal {
     
     inline def setClearSessionPreference(value: Boolean): Self = StObject.set(x, "clearSessionPreference", value.asInstanceOf[js.Any])
     

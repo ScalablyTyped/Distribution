@@ -20,7 +20,8 @@ object TypeofProgressBar {
     __obj.asInstanceOf[TypeofProgressBar]
   }
   
-  extension [Self <: TypeofProgressBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofProgressBar] (val x: Self) extends AnyVal {
     
     inline def setFn(value: ProgressBar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

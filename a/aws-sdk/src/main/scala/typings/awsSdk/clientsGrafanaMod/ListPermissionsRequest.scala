@@ -43,7 +43,8 @@ object ListPermissionsRequest {
     __obj.asInstanceOf[ListPermissionsRequest]
   }
   
-  extension [Self <: ListPermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: SsoId): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

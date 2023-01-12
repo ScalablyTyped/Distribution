@@ -18,7 +18,8 @@ object DeleteQueuedSavingsPlanRequest {
     __obj.asInstanceOf[DeleteQueuedSavingsPlanRequest]
   }
   
-  extension [Self <: DeleteQueuedSavingsPlanRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteQueuedSavingsPlanRequest] (val x: Self) extends AnyVal {
     
     inline def setSavingsPlanId(value: SavingsPlanId): Self = StObject.set(x, "savingsPlanId", value.asInstanceOf[js.Any])
   }

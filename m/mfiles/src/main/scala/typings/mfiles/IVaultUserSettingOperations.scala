@@ -29,7 +29,8 @@ object IVaultUserSettingOperations {
     __obj.asInstanceOf[IVaultUserSettingOperations]
   }
   
-  extension [Self <: IVaultUserSettingOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultUserSettingOperations] (val x: Self) extends AnyVal {
     
     inline def setChangeVaultLanguage(value: Double => Unit): Self = StObject.set(x, "ChangeVaultLanguage", js.Any.fromFunction1(value))
     

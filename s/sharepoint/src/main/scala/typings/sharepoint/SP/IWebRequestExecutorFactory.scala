@@ -16,7 +16,8 @@ object IWebRequestExecutorFactory {
     __obj.asInstanceOf[IWebRequestExecutorFactory]
   }
   
-  extension [Self <: IWebRequestExecutorFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebRequestExecutorFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateWebRequestExecutor(value: () => WebRequestExecutor): Self = StObject.set(x, "createWebRequestExecutor", js.Any.fromFunction0(value))
   }

@@ -24,7 +24,8 @@ object ChartOptions {
     __obj.asInstanceOf[ChartOptions]
   }
   
-  extension [Self <: ChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartOptions] (val x: Self) extends AnyVal {
     
     inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }

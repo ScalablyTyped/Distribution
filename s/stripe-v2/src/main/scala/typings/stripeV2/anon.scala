@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Bankname]
     }
     
-    extension [Self <: Bankname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bankname] (val x: Self) extends AnyVal {
       
       inline def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }

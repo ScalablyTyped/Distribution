@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Default]
     }
     
-    extension [Self <: Default](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[ImportedHelpers]
     }
     
-    extension [Self <: ImportedHelpers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportedHelpers] (val x: Self) extends AnyVal {
       
       inline def setImportedHelpers(value: js.Array[String]): Self = StObject.set(x, "importedHelpers", value.asInstanceOf[js.Any])
       

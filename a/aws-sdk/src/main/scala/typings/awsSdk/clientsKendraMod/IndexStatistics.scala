@@ -23,7 +23,8 @@ object IndexStatistics {
     __obj.asInstanceOf[IndexStatistics]
   }
   
-  extension [Self <: IndexStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexStatistics] (val x: Self) extends AnyVal {
     
     inline def setFaqStatistics(value: FaqStatistics): Self = StObject.set(x, "FaqStatistics", value.asInstanceOf[js.Any])
     

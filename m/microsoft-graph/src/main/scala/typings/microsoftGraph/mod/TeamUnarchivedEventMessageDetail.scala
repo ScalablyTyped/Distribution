@@ -21,7 +21,8 @@ object TeamUnarchivedEventMessageDetail {
     __obj.asInstanceOf[TeamUnarchivedEventMessageDetail]
   }
   
-  extension [Self <: TeamUnarchivedEventMessageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamUnarchivedEventMessageDetail] (val x: Self) extends AnyVal {
     
     inline def setInitiator(value: NullableOption[IdentitySet]): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     

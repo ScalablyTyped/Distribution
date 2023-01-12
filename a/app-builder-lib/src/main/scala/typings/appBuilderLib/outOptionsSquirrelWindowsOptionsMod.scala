@@ -60,7 +60,8 @@ object outOptionsSquirrelWindowsOptionsMod {
       __obj.asInstanceOf[SquirrelWindowsOptions]
     }
     
-    extension [Self <: SquirrelWindowsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SquirrelWindowsOptions] (val x: Self) extends AnyVal {
       
       inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       

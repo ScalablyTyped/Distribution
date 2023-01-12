@@ -19,7 +19,8 @@ object IdentityUpdateData {
     __obj.asInstanceOf[IdentityUpdateData]
   }
   
-  extension [Self <: IdentityUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityUpdateData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

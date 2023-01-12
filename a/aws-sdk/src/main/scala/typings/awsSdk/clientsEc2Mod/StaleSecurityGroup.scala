@@ -43,7 +43,8 @@ object StaleSecurityGroup {
     __obj.asInstanceOf[StaleSecurityGroup]
   }
   
-  extension [Self <: StaleSecurityGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaleSecurityGroup] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

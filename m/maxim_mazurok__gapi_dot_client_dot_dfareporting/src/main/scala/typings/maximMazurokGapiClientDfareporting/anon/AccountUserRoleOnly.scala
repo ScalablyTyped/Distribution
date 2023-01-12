@@ -78,7 +78,8 @@ object AccountUserRoleOnly {
     __obj.asInstanceOf[AccountUserRoleOnly]
   }
   
-  extension [Self <: AccountUserRoleOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountUserRoleOnly] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

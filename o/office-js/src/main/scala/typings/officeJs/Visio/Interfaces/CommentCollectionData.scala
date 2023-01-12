@@ -16,7 +16,8 @@ object CommentCollectionData {
     __obj.asInstanceOf[CommentCollectionData]
   }
   
-  extension [Self <: CommentCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[CommentData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

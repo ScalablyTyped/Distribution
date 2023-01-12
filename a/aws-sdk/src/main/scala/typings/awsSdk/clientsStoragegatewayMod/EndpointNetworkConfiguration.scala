@@ -18,7 +18,8 @@ object EndpointNetworkConfiguration {
     __obj.asInstanceOf[EndpointNetworkConfiguration]
   }
   
-  extension [Self <: EndpointNetworkConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointNetworkConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIpAddresses(value: IpAddressList): Self = StObject.set(x, "IpAddresses", value.asInstanceOf[js.Any])
     

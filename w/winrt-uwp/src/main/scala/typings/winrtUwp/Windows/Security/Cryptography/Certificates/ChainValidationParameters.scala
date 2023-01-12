@@ -21,7 +21,8 @@ object ChainValidationParameters {
     __obj.asInstanceOf[ChainValidationParameters]
   }
   
-  extension [Self <: ChainValidationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChainValidationParameters] (val x: Self) extends AnyVal {
     
     inline def setCertificateChainPolicy(value: CertificateChainPolicy): Self = StObject.set(x, "certificateChainPolicy", value.asInstanceOf[js.Any])
     

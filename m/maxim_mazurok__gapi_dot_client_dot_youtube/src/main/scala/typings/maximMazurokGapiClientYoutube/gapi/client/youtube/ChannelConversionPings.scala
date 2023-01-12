@@ -16,7 +16,8 @@ object ChannelConversionPings {
     __obj.asInstanceOf[ChannelConversionPings]
   }
   
-  extension [Self <: ChannelConversionPings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelConversionPings] (val x: Self) extends AnyVal {
     
     inline def setPings(value: js.Array[ChannelConversionPing]): Self = StObject.set(x, "pings", value.asInstanceOf[js.Any])
     

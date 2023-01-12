@@ -49,7 +49,8 @@ object IAngularEvent {
     __obj.asInstanceOf[IAngularEvent]
   }
   
-  extension [Self <: IAngularEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAngularEvent] (val x: Self) extends AnyVal {
     
     inline def setCurrentScope(value: IScope): Self = StObject.set(x, "currentScope", value.asInstanceOf[js.Any])
     

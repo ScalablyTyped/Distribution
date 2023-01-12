@@ -33,7 +33,8 @@ object MitigationAction {
     __obj.asInstanceOf[MitigationAction]
   }
   
-  extension [Self <: MitigationAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MitigationAction] (val x: Self) extends AnyVal {
     
     inline def setActionParams(value: MitigationActionParams): Self = StObject.set(x, "actionParams", value.asInstanceOf[js.Any])
     

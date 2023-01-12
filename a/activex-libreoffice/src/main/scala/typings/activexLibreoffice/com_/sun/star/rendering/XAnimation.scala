@@ -65,7 +65,8 @@ object XAnimation {
     __obj.asInstanceOf[XAnimation]
   }
   
-  extension [Self <: XAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAnimation] (val x: Self) extends AnyVal {
     
     inline def setAnimationAttributes(value: AnimationAttributes): Self = StObject.set(x, "AnimationAttributes", value.asInstanceOf[js.Any])
     

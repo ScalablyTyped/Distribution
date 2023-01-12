@@ -24,7 +24,8 @@ object WatcherRequestedEventOptions {
     __obj.asInstanceOf[WatcherRequestedEventOptions]
   }
   
-  extension [Self <: WatcherRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
   }

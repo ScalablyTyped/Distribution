@@ -49,7 +49,8 @@ object ASPxClientAppointmentResizeEventArgs {
     __obj.asInstanceOf[ASPxClientAppointmentResizeEventArgs]
   }
   
-  extension [Self <: ASPxClientAppointmentResizeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientAppointmentResizeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     

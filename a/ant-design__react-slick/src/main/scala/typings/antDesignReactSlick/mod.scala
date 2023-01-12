@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[CustomArrowProps]
     }
     
-    extension [Self <: CustomArrowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomArrowProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[ResponsiveObject]
     }
     
-    extension [Self <: ResponsiveObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveObject] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object mod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setAccessibility(value: Boolean): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
       

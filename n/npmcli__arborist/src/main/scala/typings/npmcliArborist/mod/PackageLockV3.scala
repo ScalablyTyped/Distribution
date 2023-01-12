@@ -33,7 +33,8 @@ object PackageLockV3 {
     __obj.asInstanceOf[PackageLockV3]
   }
   
-  extension [Self <: PackageLockV3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageLockV3] (val x: Self) extends AnyVal {
     
     inline def setLockfileVersion(value: `3`): Self = StObject.set(x, "lockfileVersion", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object ObjectFieldTemplateProps {
     __obj.asInstanceOf[ObjectFieldTemplateProps[T]]
   }
   
-  extension [Self <: ObjectFieldTemplateProps[?], T](x: Self & ObjectFieldTemplateProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectFieldTemplateProps[?], T] (val x: Self & ObjectFieldTemplateProps[T]) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

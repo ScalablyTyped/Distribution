@@ -34,7 +34,8 @@ object TouchBarPopoverConstructorOptions {
     __obj.asInstanceOf[TouchBarPopoverConstructorOptions]
   }
   
-  extension [Self <: TouchBarPopoverConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchBarPopoverConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

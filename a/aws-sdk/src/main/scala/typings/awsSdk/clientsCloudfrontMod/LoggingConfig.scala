@@ -33,7 +33,8 @@ object LoggingConfig {
     __obj.asInstanceOf[LoggingConfig]
   }
   
-  extension [Self <: LoggingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingConfig] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

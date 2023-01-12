@@ -31,7 +31,8 @@ object ASPxSchedulerGroupType {
     __obj.asInstanceOf[ASPxSchedulerGroupType]
   }
   
-  extension [Self <: ASPxSchedulerGroupType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxSchedulerGroupType] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     

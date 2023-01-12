@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "sinon-chrome"
-version := "v2.2.4-dt-20220913Z-331641"
+version := "v2.2.4-dt-20220913Z-4d5b0e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20221115Z-f2f55f",
-  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20221103Z-aa4104",
-  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20221103Z-1e67f3",
-  "org.scalablytyped" %%% "har-format" % "1.2-dt-20220923Z-e23c06",
-  "org.scalablytyped" %%% "sinon" % "10.0-dt-20220720Z-e69298",
-  "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-ad21fc",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f")
+  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20221115Z-e6771e",
+  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20221103Z-26773c",
+  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20221103Z-21bff3",
+  "org.scalablytyped" %%% "har-format" % "1.2-dt-20220923Z-490dc7",
+  "org.scalablytyped" %%% "sinon" % "10.0-dt-20220720Z-a1b7c7",
+  "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-ea1648",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

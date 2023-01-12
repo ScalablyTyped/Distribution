@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[PostFunctionOptions[T]]
     }
     
-    extension [Self <: PostFunctionOptions[?], T](x: Self & PostFunctionOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostFunctionOptions[?], T] (val x: Self & PostFunctionOptions[T]) extends AnyVal {
       
       inline def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
       
@@ -190,7 +191,8 @@ object mod {
       __obj.asInstanceOf[RecurseOptions[T]]
     }
     
-    extension [Self <: RecurseOptions[?], T](x: Self & RecurseOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecurseOptions[?], T] (val x: Self & RecurseOptions[T]) extends AnyVal {
       
       inline def setDebugLog(value: Boolean): Self = StObject.set(x, "debugLog", value.asInstanceOf[js.Any])
       

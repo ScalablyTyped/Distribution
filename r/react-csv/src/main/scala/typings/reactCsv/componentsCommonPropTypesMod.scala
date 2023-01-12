@@ -39,7 +39,8 @@ object componentsCommonPropTypesMod {
       __obj.asInstanceOf[CommonPropTypes]
     }
     
-    extension [Self <: CommonPropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonPropTypes] (val x: Self) extends AnyVal {
       
       inline def setAsyncOnClick(value: Boolean): Self = StObject.set(x, "asyncOnClick", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object componentsCommonPropTypesMod {
       __obj.asInstanceOf[LabelKeyObject]
     }
     
-    extension [Self <: LabelKeyObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelKeyObject] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object BottomNavigationOptions {
     __obj.asInstanceOf[BottomNavigationOptions]
   }
   
-  extension [Self <: BottomNavigationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BottomNavigationOptions] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DynamoDbSettings {
     __obj.asInstanceOf[DynamoDbSettings]
   }
   
-  extension [Self <: DynamoDbSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamoDbSettings] (val x: Self) extends AnyVal {
     
     inline def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
   }

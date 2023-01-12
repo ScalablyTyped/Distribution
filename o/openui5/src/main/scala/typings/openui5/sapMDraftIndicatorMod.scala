@@ -223,7 +223,8 @@ object sapMDraftIndicatorMod {
       __obj.asInstanceOf[DraftIndicatorSettings]
     }
     
-    extension [Self <: DraftIndicatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraftIndicatorSettings] (val x: Self) extends AnyVal {
       
       inline def setMinDisplayTime(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "minDisplayTime", value.asInstanceOf[js.Any])
       

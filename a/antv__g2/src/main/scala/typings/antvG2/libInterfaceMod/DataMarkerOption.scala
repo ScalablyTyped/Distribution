@@ -45,7 +45,8 @@ object DataMarkerOption {
     __obj.asInstanceOf[DataMarkerOption]
   }
   
-  extension [Self <: DataMarkerOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataMarkerOption] (val x: Self) extends AnyVal {
     
     inline def setAutoAdjust(value: Boolean): Self = StObject.set(x, "autoAdjust", value.asInstanceOf[js.Any])
     

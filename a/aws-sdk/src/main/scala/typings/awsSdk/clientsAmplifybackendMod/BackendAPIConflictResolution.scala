@@ -18,7 +18,8 @@ object BackendAPIConflictResolution {
     __obj.asInstanceOf[BackendAPIConflictResolution]
   }
   
-  extension [Self <: BackendAPIConflictResolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendAPIConflictResolution] (val x: Self) extends AnyVal {
     
     inline def setResolutionStrategy(value: ResolutionStrategy): Self = StObject.set(x, "ResolutionStrategy", value.asInstanceOf[js.Any])
     

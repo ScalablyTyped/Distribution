@@ -48,7 +48,8 @@ object typesModulesPaginationMod {
       __obj.asInstanceOf[PaginationEvents]
     }
     
-    extension [Self <: PaginationEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationEvents] (val x: Self) extends AnyVal {
       
       inline def setPaginationHide(value: default => Unit): Self = StObject.set(x, "paginationHide", js.Any.fromFunction1(value))
       
@@ -108,7 +109,8 @@ object typesModulesPaginationMod {
       __obj.asInstanceOf[PaginationMethods]
     }
     
-    extension [Self <: PaginationMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationMethods] (val x: Self) extends AnyVal {
       
       inline def setBullets(value: Dom7Array): Self = StObject.set(x, "bullets", value.asInstanceOf[js.Any])
       
@@ -372,7 +374,8 @@ object typesModulesPaginationMod {
       __obj.asInstanceOf[PaginationOptions]
     }
     
-    extension [Self <: PaginationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
       
       inline def setBulletActiveClass(value: String): Self = StObject.set(x, "bulletActiveClass", value.asInstanceOf[js.Any])
       

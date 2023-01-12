@@ -103,7 +103,8 @@ object SendCommandRequest {
     __obj.asInstanceOf[SendCommandRequest]
   }
   
-  extension [Self <: SendCommandRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendCommandRequest] (val x: Self) extends AnyVal {
     
     inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "AlarmConfiguration", value.asInstanceOf[js.Any])
     

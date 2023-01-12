@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object IndicesIndexSegmentSort {
     __obj.asInstanceOf[IndicesIndexSegmentSort]
   }
   
-  extension [Self <: IndicesIndexSegmentSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexSegmentSort] (val x: Self) extends AnyVal {
     
     inline def setField(value: Fields): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

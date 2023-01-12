@@ -50,7 +50,8 @@ object JsxImgElementProps {
     __obj.asInstanceOf[JsxImgElementProps]
   }
   
-  extension [Self <: JsxImgElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxImgElementProps] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

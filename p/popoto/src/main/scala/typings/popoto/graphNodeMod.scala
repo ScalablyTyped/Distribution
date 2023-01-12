@@ -441,7 +441,8 @@ object graphNodeMod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setAddBackgroundElements(value: SVGGElement => Unit): Self = StObject.set(x, "addBackgroundElements", js.Any.fromFunction1(value))
       

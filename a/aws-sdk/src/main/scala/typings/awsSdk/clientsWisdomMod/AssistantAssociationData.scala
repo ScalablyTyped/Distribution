@@ -55,7 +55,8 @@ object AssistantAssociationData {
     __obj.asInstanceOf[AssistantAssociationData]
   }
   
-  extension [Self <: AssistantAssociationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssistantAssociationData] (val x: Self) extends AnyVal {
     
     inline def setAssistantArn(value: Arn): Self = StObject.set(x, "assistantArn", value.asInstanceOf[js.Any])
     

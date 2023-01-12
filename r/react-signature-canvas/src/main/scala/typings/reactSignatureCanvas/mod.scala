@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[ReactSignatureCanvasProps]
     }
     
-    extension [Self <: ReactSignatureCanvasProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactSignatureCanvasProps] (val x: Self) extends AnyVal {
       
       inline def setCanvasProps(value: CanvasHTMLAttributes[HTMLCanvasElement]): Self = StObject.set(x, "canvasProps", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object ItemTargetRef {
     __obj.asInstanceOf[ItemTargetRef]
   }
   
-  extension [Self <: ItemTargetRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemTargetRef] (val x: Self) extends AnyVal {
     
     inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

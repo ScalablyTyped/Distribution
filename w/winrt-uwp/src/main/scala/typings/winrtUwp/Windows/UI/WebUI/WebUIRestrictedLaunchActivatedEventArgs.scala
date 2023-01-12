@@ -38,7 +38,8 @@ object WebUIRestrictedLaunchActivatedEventArgs {
     __obj.asInstanceOf[WebUIRestrictedLaunchActivatedEventArgs]
   }
   
-  extension [Self <: WebUIRestrictedLaunchActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUIRestrictedLaunchActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

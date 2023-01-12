@@ -29,7 +29,8 @@ object VirtualCardsFetchTransactionsResponse {
     __obj.asInstanceOf[VirtualCardsFetchTransactionsResponse]
   }
   
-  extension [Self <: VirtualCardsFetchTransactionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualCardsFetchTransactionsResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

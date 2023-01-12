@@ -23,7 +23,8 @@ object DataTypesDrag {
     __obj.asInstanceOf[DataTypesDrag[K, D]]
   }
   
-  extension [Self <: DataTypesDrag[?, ?], K, D](x: Self & (DataTypesDrag[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTypesDrag[?, ?], K, D] (val x: Self & (DataTypesDrag[K, D])) extends AnyVal {
     
     inline def setDataTypes(value: String | js.Array[String]): Self = StObject.set(x, "dataTypes", value.asInstanceOf[js.Any])
     

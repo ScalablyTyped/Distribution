@@ -23,7 +23,8 @@ object TopicRuleDestinationConfiguration {
     __obj.asInstanceOf[TopicRuleDestinationConfiguration]
   }
   
-  extension [Self <: TopicRuleDestinationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicRuleDestinationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setHttpUrlConfiguration(value: HttpUrlDestinationConfiguration): Self = StObject.set(x, "httpUrlConfiguration", value.asInstanceOf[js.Any])
     

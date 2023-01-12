@@ -26,7 +26,8 @@ object MapProjection {
     __obj.asInstanceOf[MapProjection]
   }
   
-  extension [Self <: MapProjection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapProjection] (val x: Self) extends AnyVal {
     
     inline def setContainerPointFromCoords(value: LatLng => Point): Self = StObject.set(x, "containerPointFromCoords", js.Any.fromFunction1(value))
     

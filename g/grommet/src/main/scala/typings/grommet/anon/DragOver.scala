@@ -44,7 +44,8 @@ object DragOver {
     __obj.asInstanceOf[DragOver]
   }
   
-  extension [Self <: DragOver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragOver] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

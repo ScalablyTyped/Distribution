@@ -16,7 +16,8 @@ object ExchangeRate {
     __obj.asInstanceOf[ExchangeRate]
   }
   
-  extension [Self <: ExchangeRate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangeRate] (val x: Self) extends AnyVal {
     
     inline def setData(value: Currency): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

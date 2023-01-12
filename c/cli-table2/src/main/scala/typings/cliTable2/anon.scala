@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Border]
     }
     
-    extension [Self <: Border](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: js.Array[String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Head]
     }
     
-    extension [Self <: Head](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Head] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: js.Array[String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordCharNamestri]
     }
     
-    extension [Self <: PartialRecordCharNamestri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordCharNamestri] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -261,7 +264,8 @@ object anon {
       __obj.asInstanceOf[RecordCharNamestring]
     }
     
-    extension [Self <: RecordCharNamestring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordCharNamestring] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

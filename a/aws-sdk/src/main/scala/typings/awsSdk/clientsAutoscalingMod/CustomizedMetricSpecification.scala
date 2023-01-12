@@ -38,7 +38,8 @@ object CustomizedMetricSpecification {
     __obj.asInstanceOf[CustomizedMetricSpecification]
   }
   
-  extension [Self <: CustomizedMetricSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomizedMetricSpecification] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: MetricDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

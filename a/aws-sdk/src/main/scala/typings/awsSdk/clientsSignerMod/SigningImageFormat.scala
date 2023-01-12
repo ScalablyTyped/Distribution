@@ -23,7 +23,8 @@ object SigningImageFormat {
     __obj.asInstanceOf[SigningImageFormat]
   }
   
-  extension [Self <: SigningImageFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigningImageFormat] (val x: Self) extends AnyVal {
     
     inline def setDefaultFormat(value: ImageFormat): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
     

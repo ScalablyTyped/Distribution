@@ -22,7 +22,8 @@ object RatingChangeEvent {
     __obj.asInstanceOf[RatingChangeEvent]
   }
   
-  extension [Self <: RatingChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RatingChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     

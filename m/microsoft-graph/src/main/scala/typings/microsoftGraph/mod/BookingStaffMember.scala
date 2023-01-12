@@ -53,7 +53,8 @@ object BookingStaffMember {
     __obj.asInstanceOf[BookingStaffMember]
   }
   
-  extension [Self <: BookingStaffMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookingStaffMember] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityIsAffectedByPersonalCalendar(value: Boolean): Self = StObject.set(x, "availabilityIsAffectedByPersonalCalendar", value.asInstanceOf[js.Any])
     

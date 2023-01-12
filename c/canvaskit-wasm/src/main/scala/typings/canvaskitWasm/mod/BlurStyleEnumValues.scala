@@ -23,7 +23,8 @@ object BlurStyleEnumValues {
     __obj.asInstanceOf[BlurStyleEnumValues]
   }
   
-  extension [Self <: BlurStyleEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlurStyleEnumValues] (val x: Self) extends AnyVal {
     
     inline def setInner(value: BlurStyle): Self = StObject.set(x, "Inner", value.asInstanceOf[js.Any])
     

@@ -95,7 +95,8 @@ object syntheticsUploaderMod extends Shortcut {
       __obj.asInstanceOf[SyntheticsUploader]
     }
     
-    extension [Self <: SyntheticsUploader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyntheticsUploader] (val x: Self) extends AnyVal {
       
       inline def setBucketLocationError(value: String): Self = StObject.set(x, "bucketLocationError", value.asInstanceOf[js.Any])
       

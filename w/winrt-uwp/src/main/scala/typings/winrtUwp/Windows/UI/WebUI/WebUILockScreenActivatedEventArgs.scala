@@ -42,7 +42,8 @@ object WebUILockScreenActivatedEventArgs {
     __obj.asInstanceOf[WebUILockScreenActivatedEventArgs]
   }
   
-  extension [Self <: WebUILockScreenActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUILockScreenActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

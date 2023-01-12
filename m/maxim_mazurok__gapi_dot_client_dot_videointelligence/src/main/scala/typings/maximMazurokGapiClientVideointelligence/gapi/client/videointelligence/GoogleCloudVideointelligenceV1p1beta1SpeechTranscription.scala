@@ -25,7 +25,8 @@ object GoogleCloudVideointelligenceV1p1beta1SpeechTranscription {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p1beta1SpeechTranscription]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1p1beta1SpeechTranscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1p1beta1SpeechTranscription] (val x: Self) extends AnyVal {
     
     inline def setAlternatives(value: js.Array[GoogleCloudVideointelligenceV1p1beta1SpeechRecognitionAlternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListInferenceSchedulersResponse {
     __obj.asInstanceOf[ListInferenceSchedulersResponse]
   }
   
-  extension [Self <: ListInferenceSchedulersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInferenceSchedulersResponse] (val x: Self) extends AnyVal {
     
     inline def setInferenceSchedulerSummaries(value: InferenceSchedulerSummaries): Self = StObject.set(x, "InferenceSchedulerSummaries", value.asInstanceOf[js.Any])
     

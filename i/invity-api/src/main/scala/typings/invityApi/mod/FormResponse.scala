@@ -18,7 +18,8 @@ object FormResponse {
     __obj.asInstanceOf[FormResponse]
   }
   
-  extension [Self <: FormResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

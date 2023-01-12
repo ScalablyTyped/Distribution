@@ -32,7 +32,8 @@ object CreateScopeInfo {
     __obj.asInstanceOf[CreateScopeInfo]
   }
   
-  extension [Self <: CreateScopeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateScopeInfo] (val x: Self) extends AnyVal {
     
     inline def setAdminGroupDescription(value: String): Self = StObject.set(x, "adminGroupDescription", value.asInstanceOf[js.Any])
     

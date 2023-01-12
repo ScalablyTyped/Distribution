@@ -45,7 +45,8 @@ object srcNavigationNavmeshCorridorMod {
       __obj.asInstanceOf[CorridorPortalEdge]
     }
     
-    extension [Self <: CorridorPortalEdge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CorridorPortalEdge] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Vector3): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

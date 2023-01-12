@@ -30,7 +30,8 @@ object UserInstallStateSummary {
     __obj.asInstanceOf[UserInstallStateSummary]
   }
   
-  extension [Self <: UserInstallStateSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserInstallStateSummary] (val x: Self) extends AnyVal {
     
     inline def setDeviceStates(value: NullableOption[js.Array[DeviceInstallState]]): Self = StObject.set(x, "deviceStates", value.asInstanceOf[js.Any])
     

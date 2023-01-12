@@ -245,7 +245,8 @@ object Gmail {
           __obj.asInstanceOf[LabelsCollection]
         }
         
-        extension [Self <: LabelsCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LabelsCollection] (val x: Self) extends AnyVal {
           
           inline def setCreate(value: (Label, String) => Label): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
           
@@ -275,7 +276,8 @@ object Gmail {
             __obj.asInstanceOf[AttachmentsCollection]
           }
           
-          extension [Self <: AttachmentsCollection](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: AttachmentsCollection] (val x: Self) extends AnyVal {
             
             inline def setGet(value: (String, String, String) => MessagePartBody): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
           }
@@ -372,7 +374,8 @@ object Gmail {
             __obj.asInstanceOf[DelegatesCollection]
           }
           
-          extension [Self <: DelegatesCollection](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: DelegatesCollection] (val x: Self) extends AnyVal {
             
             inline def setCreate(value: (Delegate, String) => Delegate): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
             
@@ -410,7 +413,8 @@ object Gmail {
             __obj.asInstanceOf[FiltersCollection]
           }
           
-          extension [Self <: FiltersCollection](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: FiltersCollection] (val x: Self) extends AnyVal {
             
             inline def setCreate(value: (Filter, String) => Filter): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
             
@@ -450,7 +454,8 @@ object Gmail {
             __obj.asInstanceOf[ForwardingAddressesCollection]
           }
           
-          extension [Self <: ForwardingAddressesCollection](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: ForwardingAddressesCollection] (val x: Self) extends AnyVal {
             
             inline def setCreate(value: (ForwardingAddress, String) => ForwardingAddress): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
             
@@ -494,7 +499,8 @@ object Gmail {
               __obj.asInstanceOf[SmimeInfoCollection]
             }
             
-            extension [Self <: SmimeInfoCollection](x: Self) {
+            @scala.inline
+            implicit open class MutableBuilder[Self <: SmimeInfoCollection] (val x: Self) extends AnyVal {
               
               inline def setGet(value: (String, String, String) => SmimeInfo): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
               
@@ -554,7 +560,8 @@ object Gmail {
             __obj.asInstanceOf[SendAsCollection]
           }
           
-          extension [Self <: SendAsCollection](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: SendAsCollection] (val x: Self) extends AnyVal {
             
             inline def setCreate(value: (SendAs, String) => SendAs): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
             
@@ -628,7 +635,8 @@ object Gmail {
           __obj.asInstanceOf[SettingsCollection]
         }
         
-        extension [Self <: SettingsCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SettingsCollection] (val x: Self) extends AnyVal {
           
           inline def setDelegates(value: DelegatesCollection): Self = StObject.set(x, "Delegates", value.asInstanceOf[js.Any])
           
@@ -725,7 +733,8 @@ object Gmail {
         __obj.asInstanceOf[UsersCollection]
       }
       
-      extension [Self <: UsersCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UsersCollection] (val x: Self) extends AnyVal {
         
         inline def setDrafts(value: DraftsCollection): Self = StObject.set(x, "Drafts", value.asInstanceOf[js.Any])
         
@@ -817,7 +826,8 @@ object Gmail {
       __obj.asInstanceOf[GmailAdvancedOptions]
     }
     
-    extension [Self <: GmailAdvancedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GmailAdvancedOptions] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[BlobSource]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
@@ -1062,7 +1072,8 @@ object Gmail {
       __obj.asInstanceOf[GmailAttachmentOptions]
     }
     
-    extension [Self <: GmailAttachmentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GmailAttachmentOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeAttachments(value: Boolean): Self = StObject.set(x, "includeAttachments", value.asInstanceOf[js.Any])
       
@@ -1290,7 +1301,8 @@ object Gmail {
     def replyAll(body: String, options: GmailAdvancedOptions): GmailThread = js.native
   }
   
-  extension [Self <: Gmail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gmail] (val x: Self) extends AnyVal {
     
     inline def setNewAutoForwarding(value: () => AutoForwarding): Self = StObject.set(x, "newAutoForwarding", js.Any.fromFunction0(value))
     
@@ -1362,7 +1374,8 @@ object Gmail {
         __obj.asInstanceOf[AutoForwarding]
       }
       
-      extension [Self <: AutoForwarding](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AutoForwarding] (val x: Self) extends AnyVal {
         
         inline def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
         
@@ -1389,7 +1402,8 @@ object Gmail {
         __obj.asInstanceOf[BatchDeleteMessagesRequest]
       }
       
-      extension [Self <: BatchDeleteMessagesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchDeleteMessagesRequest] (val x: Self) extends AnyVal {
         
         inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
         
@@ -1414,7 +1428,8 @@ object Gmail {
         __obj.asInstanceOf[BatchModifyMessagesRequest]
       }
       
-      extension [Self <: BatchModifyMessagesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchModifyMessagesRequest] (val x: Self) extends AnyVal {
         
         inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
         
@@ -1449,7 +1464,8 @@ object Gmail {
         __obj.asInstanceOf[Delegate]
       }
       
-      extension [Self <: Delegate](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
         
         inline def setDelegateEmail(value: String): Self = StObject.set(x, "delegateEmail", value.asInstanceOf[js.Any])
         
@@ -1474,7 +1490,8 @@ object Gmail {
         __obj.asInstanceOf[Draft]
       }
       
-      extension [Self <: Draft](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Draft] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1501,7 +1518,8 @@ object Gmail {
         __obj.asInstanceOf[Filter]
       }
       
-      extension [Self <: Filter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
         
         inline def setAction(value: FilterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
@@ -1532,7 +1550,8 @@ object Gmail {
         __obj.asInstanceOf[FilterAction]
       }
       
-      extension [Self <: FilterAction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FilterAction] (val x: Self) extends AnyVal {
         
         inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
         
@@ -1579,7 +1598,8 @@ object Gmail {
         __obj.asInstanceOf[FilterCriteria]
       }
       
-      extension [Self <: FilterCriteria](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
         
         inline def setExcludeChats(value: Boolean): Self = StObject.set(x, "excludeChats", value.asInstanceOf[js.Any])
         
@@ -1632,7 +1652,8 @@ object Gmail {
         __obj.asInstanceOf[ForwardingAddress]
       }
       
-      extension [Self <: ForwardingAddress](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ForwardingAddress] (val x: Self) extends AnyVal {
         
         inline def setForwardingEmail(value: String): Self = StObject.set(x, "forwardingEmail", value.asInstanceOf[js.Any])
         
@@ -1665,7 +1686,8 @@ object Gmail {
         __obj.asInstanceOf[History]
       }
       
-      extension [Self <: History](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: History] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1716,7 +1738,8 @@ object Gmail {
         __obj.asInstanceOf[HistoryLabelAdded]
       }
       
-      extension [Self <: HistoryLabelAdded](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HistoryLabelAdded] (val x: Self) extends AnyVal {
         
         inline def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
         
@@ -1743,7 +1766,8 @@ object Gmail {
         __obj.asInstanceOf[HistoryLabelRemoved]
       }
       
-      extension [Self <: HistoryLabelRemoved](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HistoryLabelRemoved] (val x: Self) extends AnyVal {
         
         inline def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
         
@@ -1768,7 +1792,8 @@ object Gmail {
         __obj.asInstanceOf[HistoryMessageAdded]
       }
       
-      extension [Self <: HistoryMessageAdded](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HistoryMessageAdded] (val x: Self) extends AnyVal {
         
         inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
@@ -1787,7 +1812,8 @@ object Gmail {
         __obj.asInstanceOf[HistoryMessageDeleted]
       }
       
-      extension [Self <: HistoryMessageDeleted](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HistoryMessageDeleted] (val x: Self) extends AnyVal {
         
         inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
@@ -1812,7 +1838,8 @@ object Gmail {
         __obj.asInstanceOf[ImapSettings]
       }
       
-      extension [Self <: ImapSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ImapSettings] (val x: Self) extends AnyVal {
         
         inline def setAutoExpunge(value: Boolean): Self = StObject.set(x, "autoExpunge", value.asInstanceOf[js.Any])
         
@@ -1861,7 +1888,8 @@ object Gmail {
         __obj.asInstanceOf[Label]
       }
       
-      extension [Self <: Label](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
         
         inline def setColor(value: LabelColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -1918,7 +1946,8 @@ object Gmail {
         __obj.asInstanceOf[LabelColor]
       }
       
-      extension [Self <: LabelColor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LabelColor] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
@@ -1941,7 +1970,8 @@ object Gmail {
         __obj.asInstanceOf[ListDelegatesResponse]
       }
       
-      extension [Self <: ListDelegatesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListDelegatesResponse] (val x: Self) extends AnyVal {
         
         inline def setDelegates(value: js.Array[Delegate]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
         
@@ -1966,7 +1996,8 @@ object Gmail {
         __obj.asInstanceOf[ListDraftsResponse]
       }
       
-      extension [Self <: ListDraftsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListDraftsResponse] (val x: Self) extends AnyVal {
         
         inline def setDrafts(value: js.Array[Draft]): Self = StObject.set(x, "drafts", value.asInstanceOf[js.Any])
         
@@ -1995,7 +2026,8 @@ object Gmail {
         __obj.asInstanceOf[ListFiltersResponse]
       }
       
-      extension [Self <: ListFiltersResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListFiltersResponse] (val x: Self) extends AnyVal {
         
         inline def setFilter(value: js.Array[Filter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
@@ -2016,7 +2048,8 @@ object Gmail {
         __obj.asInstanceOf[ListForwardingAddressesResponse]
       }
       
-      extension [Self <: ListForwardingAddressesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListForwardingAddressesResponse] (val x: Self) extends AnyVal {
         
         inline def setForwardingAddresses(value: js.Array[ForwardingAddress]): Self = StObject.set(x, "forwardingAddresses", value.asInstanceOf[js.Any])
         
@@ -2041,7 +2074,8 @@ object Gmail {
         __obj.asInstanceOf[ListHistoryResponse]
       }
       
-      extension [Self <: ListHistoryResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListHistoryResponse] (val x: Self) extends AnyVal {
         
         inline def setHistory(value: js.Array[History]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
         
@@ -2070,7 +2104,8 @@ object Gmail {
         __obj.asInstanceOf[ListLabelsResponse]
       }
       
-      extension [Self <: ListLabelsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListLabelsResponse] (val x: Self) extends AnyVal {
         
         inline def setLabels(value: js.Array[Label]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
         
@@ -2095,7 +2130,8 @@ object Gmail {
         __obj.asInstanceOf[ListMessagesResponse]
       }
       
-      extension [Self <: ListMessagesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListMessagesResponse] (val x: Self) extends AnyVal {
         
         inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
         
@@ -2124,7 +2160,8 @@ object Gmail {
         __obj.asInstanceOf[ListSendAsResponse]
       }
       
-      extension [Self <: ListSendAsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListSendAsResponse] (val x: Self) extends AnyVal {
         
         inline def setSendAs(value: js.Array[SendAs]): Self = StObject.set(x, "sendAs", value.asInstanceOf[js.Any])
         
@@ -2145,7 +2182,8 @@ object Gmail {
         __obj.asInstanceOf[ListSmimeInfoResponse]
       }
       
-      extension [Self <: ListSmimeInfoResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListSmimeInfoResponse] (val x: Self) extends AnyVal {
         
         inline def setSmimeInfo(value: js.Array[SmimeInfo]): Self = StObject.set(x, "smimeInfo", value.asInstanceOf[js.Any])
         
@@ -2170,7 +2208,8 @@ object Gmail {
         __obj.asInstanceOf[ListThreadsResponse]
       }
       
-      extension [Self <: ListThreadsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListThreadsResponse] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2215,7 +2254,8 @@ object Gmail {
         __obj.asInstanceOf[Message]
       }
       
-      extension [Self <: Message](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
         
         inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
         
@@ -2278,7 +2318,8 @@ object Gmail {
         __obj.asInstanceOf[MessagePart]
       }
       
-      extension [Self <: MessagePart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MessagePart] (val x: Self) extends AnyVal {
         
         inline def setBody(value: MessagePartBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -2325,7 +2366,8 @@ object Gmail {
         __obj.asInstanceOf[MessagePartBody]
       }
       
-      extension [Self <: MessagePartBody](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MessagePartBody] (val x: Self) extends AnyVal {
         
         inline def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
         
@@ -2354,7 +2396,8 @@ object Gmail {
         __obj.asInstanceOf[MessagePartHeader]
       }
       
-      extension [Self <: MessagePartHeader](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MessagePartHeader] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -2379,7 +2422,8 @@ object Gmail {
         __obj.asInstanceOf[ModifyMessageRequest]
       }
       
-      extension [Self <: ModifyMessageRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModifyMessageRequest] (val x: Self) extends AnyVal {
         
         inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
         
@@ -2408,7 +2452,8 @@ object Gmail {
         __obj.asInstanceOf[ModifyThreadRequest]
       }
       
-      extension [Self <: ModifyThreadRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModifyThreadRequest] (val x: Self) extends AnyVal {
         
         inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
         
@@ -2437,7 +2482,8 @@ object Gmail {
         __obj.asInstanceOf[PopSettings]
       }
       
-      extension [Self <: PopSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PopSettings] (val x: Self) extends AnyVal {
         
         inline def setAccessWindow(value: String): Self = StObject.set(x, "accessWindow", value.asInstanceOf[js.Any])
         
@@ -2466,7 +2512,8 @@ object Gmail {
         __obj.asInstanceOf[Profile]
       }
       
-      extension [Self <: Profile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
         
         inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
         
@@ -2513,7 +2560,8 @@ object Gmail {
         __obj.asInstanceOf[SendAs]
       }
       
-      extension [Self <: SendAs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SendAs] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -2576,7 +2624,8 @@ object Gmail {
         __obj.asInstanceOf[SmimeInfo]
       }
       
-      extension [Self <: SmimeInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SmimeInfo] (val x: Self) extends AnyVal {
         
         inline def setEncryptedKeyPassword(value: String): Self = StObject.set(x, "encryptedKeyPassword", value.asInstanceOf[js.Any])
         
@@ -2627,7 +2676,8 @@ object Gmail {
         __obj.asInstanceOf[SmtpMsa]
       }
       
-      extension [Self <: SmtpMsa](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SmtpMsa] (val x: Self) extends AnyVal {
         
         inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
@@ -2668,7 +2718,8 @@ object Gmail {
         __obj.asInstanceOf[Thread]
       }
       
-      extension [Self <: Thread](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Thread] (val x: Self) extends AnyVal {
         
         inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
         
@@ -2715,7 +2766,8 @@ object Gmail {
         __obj.asInstanceOf[VacationSettings]
       }
       
-      extension [Self <: VacationSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VacationSettings] (val x: Self) extends AnyVal {
         
         inline def setEnableAutoReply(value: Boolean): Self = StObject.set(x, "enableAutoReply", value.asInstanceOf[js.Any])
         
@@ -2766,7 +2818,8 @@ object Gmail {
         __obj.asInstanceOf[WatchRequest]
       }
       
-      extension [Self <: WatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WatchRequest] (val x: Self) extends AnyVal {
         
         inline def setLabelFilterAction(value: String): Self = StObject.set(x, "labelFilterAction", value.asInstanceOf[js.Any])
         
@@ -2797,7 +2850,8 @@ object Gmail {
         __obj.asInstanceOf[WatchResponse]
       }
       
-      extension [Self <: WatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WatchResponse] (val x: Self) extends AnyVal {
         
         inline def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
         

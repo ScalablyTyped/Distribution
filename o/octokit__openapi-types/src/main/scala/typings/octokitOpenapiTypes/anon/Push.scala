@@ -23,7 +23,8 @@ object Push {
     __obj.asInstanceOf[Push]
   }
   
-  extension [Self <: Push](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Push] (val x: Self) extends AnyVal {
     
     inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     

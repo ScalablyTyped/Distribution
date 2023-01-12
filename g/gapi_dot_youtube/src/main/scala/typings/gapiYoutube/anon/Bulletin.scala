@@ -74,7 +74,8 @@ object Bulletin {
     __obj.asInstanceOf[Bulletin]
   }
   
-  extension [Self <: Bulletin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bulletin] (val x: Self) extends AnyVal {
     
     inline def setBulletin(value: ResourceIdKindPlaylistId): Self = StObject.set(x, "bulletin", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ICreateIntentRequest {
     __obj.asInstanceOf[ICreateIntentRequest]
   }
   
-  extension [Self <: ICreateIntentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateIntentRequest] (val x: Self) extends AnyVal {
     
     inline def setIntent(value: IIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     

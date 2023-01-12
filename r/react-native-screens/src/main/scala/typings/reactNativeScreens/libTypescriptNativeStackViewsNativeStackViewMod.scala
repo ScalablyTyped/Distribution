@@ -36,7 +36,8 @@ object libTypescriptNativeStackViewsNativeStackViewMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setDescriptors(value: NativeStackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       

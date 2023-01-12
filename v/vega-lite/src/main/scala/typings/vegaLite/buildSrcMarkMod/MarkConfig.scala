@@ -417,7 +417,8 @@ object MarkConfig {
     __obj.asInstanceOf[MarkConfig[ES]]
   }
   
-  extension [Self <: MarkConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & MarkConfig[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & MarkConfig[ES]) extends AnyVal {
     
     inline def setAlign(value: Align | ES): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

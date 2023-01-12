@@ -18,7 +18,8 @@ object SkipDecimalsValidation {
     __obj.asInstanceOf[SkipDecimalsValidation]
   }
   
-  extension [Self <: SkipDecimalsValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkipDecimalsValidation] (val x: Self) extends AnyVal {
     
     inline def setSkipDecimalsValidation(value: Boolean): Self = StObject.set(x, "skipDecimalsValidation", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ListQueueTagsResult {
     __obj.asInstanceOf[ListQueueTagsResult]
   }
   
-  extension [Self <: ListQueueTagsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListQueueTagsResult] (val x: Self) extends AnyVal {
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

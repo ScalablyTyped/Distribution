@@ -52,7 +52,8 @@ object ITensor {
     __obj.asInstanceOf[ITensor]
   }
   
-  extension [Self <: ITensor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITensor] (val x: Self) extends AnyVal {
     
     inline def setBoolVal(value: js.Array[Boolean]): Self = StObject.set(x, "boolVal", value.asInstanceOf[js.Any])
     

@@ -275,7 +275,8 @@ object mod {
       __obj.asInstanceOf[RecordingOptions]
     }
     
-    extension [Self <: RecordingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordingOptions] (val x: Self) extends AnyVal {
       
       inline def setAudioEncoding(value: AudioEncodingType): Self = StObject.set(x, "AudioEncoding", value.asInstanceOf[js.Any])
       

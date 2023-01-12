@@ -18,7 +18,8 @@ object ComputedStyle {
     __obj.asInstanceOf[ComputedStyle]
   }
   
-  extension [Self <: ComputedStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedStyle] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: js.Array[NameValue]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

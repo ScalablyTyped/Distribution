@@ -16,7 +16,8 @@ object AppsDynamiteBackendLabelsPersonalLabelTag {
     __obj.asInstanceOf[AppsDynamiteBackendLabelsPersonalLabelTag]
   }
   
-  extension [Self <: AppsDynamiteBackendLabelsPersonalLabelTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteBackendLabelsPersonalLabelTag] (val x: Self) extends AnyVal {
     
     inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
     

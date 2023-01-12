@@ -29,7 +29,8 @@ object ConformanceImplementation {
     __obj.asInstanceOf[ConformanceImplementation]
   }
   
-  extension [Self <: ConformanceImplementation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformanceImplementation] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

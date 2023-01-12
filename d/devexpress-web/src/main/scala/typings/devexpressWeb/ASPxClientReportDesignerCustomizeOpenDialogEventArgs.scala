@@ -30,7 +30,8 @@ object ASPxClientReportDesignerCustomizeOpenDialogEventArgs {
     __obj.asInstanceOf[ASPxClientReportDesignerCustomizeOpenDialogEventArgs]
   }
   
-  extension [Self <: ASPxClientReportDesignerCustomizeOpenDialogEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportDesignerCustomizeOpenDialogEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCustomize(value: (String, ASPxDesignerDialogModel) => Unit): Self = StObject.set(x, "Customize", js.Any.fromFunction2(value))
     

@@ -25,7 +25,8 @@ object AggregateOperator {
     __obj.asInstanceOf[AggregateOperator]
   }
   
-  extension [Self <: AggregateOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateOperator] (val x: Self) extends AnyVal {
     
     inline def setParams(value: As): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

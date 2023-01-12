@@ -28,7 +28,8 @@ object KinesisStreamSourceDescription {
     __obj.asInstanceOf[KinesisStreamSourceDescription]
   }
   
-  extension [Self <: KinesisStreamSourceDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisStreamSourceDescription] (val x: Self) extends AnyVal {
     
     inline def setDeliveryStartTimestamp(value: js.Date): Self = StObject.set(x, "DeliveryStartTimestamp", value.asInstanceOf[js.Any])
     

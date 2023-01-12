@@ -18,7 +18,8 @@ object PutAccountSuppressionAttributesRequest {
     __obj.asInstanceOf[PutAccountSuppressionAttributesRequest]
   }
   
-  extension [Self <: PutAccountSuppressionAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAccountSuppressionAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setSuppressedReasons(value: SuppressionListReasons): Self = StObject.set(x, "SuppressedReasons", value.asInstanceOf[js.Any])
     

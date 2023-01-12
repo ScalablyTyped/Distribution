@@ -33,7 +33,8 @@ object ImportInstanceTaskDetails {
     __obj.asInstanceOf[ImportInstanceTaskDetails]
   }
   
-  extension [Self <: ImportInstanceTaskDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportInstanceTaskDetails] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

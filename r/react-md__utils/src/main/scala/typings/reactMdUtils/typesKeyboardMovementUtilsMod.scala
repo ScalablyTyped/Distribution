@@ -54,7 +54,8 @@ object typesKeyboardMovementUtilsMod {
       __obj.asInstanceOf[NextFocusableIndexOptions]
     }
     
-    extension [Self <: NextFocusableIndexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NextFocusableIndexOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrentFocusIndex(value: Double): Self = StObject.set(x, "currentFocusIndex", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object PlotBbBottomLineStylesOptions {
     __obj.asInstanceOf[PlotBbBottomLineStylesOptions]
   }
   
-  extension [Self <: PlotBbBottomLineStylesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotBbBottomLineStylesOptions] (val x: Self) extends AnyVal {
     
     inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     

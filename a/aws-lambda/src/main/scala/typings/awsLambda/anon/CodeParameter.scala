@@ -27,7 +27,8 @@ object CodeParameter {
     __obj.asInstanceOf[CodeParameter]
   }
   
-  extension [Self <: CodeParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeParameter] (val x: Self) extends AnyVal {
     
     inline def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
     

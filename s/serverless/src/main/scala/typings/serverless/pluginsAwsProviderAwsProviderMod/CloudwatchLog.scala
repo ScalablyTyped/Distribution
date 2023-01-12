@@ -17,7 +17,8 @@ object CloudwatchLog {
     __obj.asInstanceOf[CloudwatchLog]
   }
   
-  extension [Self <: CloudwatchLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudwatchLog] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

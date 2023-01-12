@@ -90,7 +90,8 @@ object SignalR {
       __obj.asInstanceOf[AjaxDefaults]
     }
     
-    extension [Self <: AjaxDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxDefaults] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object SignalR {
       __obj.asInstanceOf[AvailableEvents]
     }
     
-    extension [Self <: AvailableEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvailableEvents] (val x: Self) extends AnyVal {
       
       inline def setOnConnectionSlow(value: String): Self = StObject.set(x, "onConnectionSlow", value.asInstanceOf[js.Any])
       
@@ -343,7 +345,8 @@ object SignalR {
       __obj.asInstanceOf[ConnectionError]
     }
     
-    extension [Self <: ConnectionError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionError] (val x: Self) extends AnyVal {
       
       inline def setContext(value: ConnectionErrorContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -374,7 +377,8 @@ object SignalR {
       __obj.asInstanceOf[ConnectionErrorContext]
     }
     
-    extension [Self <: ConnectionErrorContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionErrorContext] (val x: Self) extends AnyVal {
       
       inline def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
       
@@ -407,7 +411,8 @@ object SignalR {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -472,7 +477,8 @@ object SignalR {
       __obj.asInstanceOf[ConnectionStates]
     }
     
-    extension [Self <: ConnectionStates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionStates] (val x: Self) extends AnyVal {
       
       inline def setConnected(value: Double): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
@@ -503,7 +509,8 @@ object SignalR {
         __obj.asInstanceOf[ClientHubInvocation]
       }
       
-      extension [Self <: ClientHubInvocation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientHubInvocation] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: String): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
         
@@ -550,7 +557,8 @@ object SignalR {
         __obj.asInstanceOf[IHub]
       }
       
-      extension [Self <: IHub](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IHub] (val x: Self) extends AnyVal {
         
         inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       }
@@ -571,7 +579,8 @@ object SignalR {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
         
@@ -711,7 +720,8 @@ object SignalR {
       __obj.asInstanceOf[Resources]
     }
     
-    extension [Self <: Resources](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resources] (val x: Self) extends AnyVal {
       
       inline def setErrorDuringStartRequest(value: String): Self = StObject.set(x, "errorDuringStartRequest", value.asInstanceOf[js.Any])
       
@@ -778,7 +788,8 @@ object SignalR {
       __obj.asInstanceOf[SimplifyLocation]
     }
     
-    extension [Self <: SimplifyLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimplifyLocation] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -799,7 +810,8 @@ object SignalR {
       __obj.asInstanceOf[StateChanged]
     }
     
-    extension [Self <: StateChanged](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateChanged] (val x: Self) extends AnyVal {
       
       inline def setNewState(value: Double): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
       
@@ -845,7 +857,8 @@ object SignalR {
       __obj.asInstanceOf[Transport]
     }
     
-    extension [Self <: Transport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: (Connection, Boolean) => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction2(value))
       
@@ -889,7 +902,8 @@ object SignalR {
       __obj.asInstanceOf[Transports]
     }
     
-    extension [Self <: Transports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transports] (val x: Self) extends AnyVal {
       
       inline def setForeverFrame(value: Transport): Self = StObject.set(x, "foreverFrame", value.asInstanceOf[js.Any])
       

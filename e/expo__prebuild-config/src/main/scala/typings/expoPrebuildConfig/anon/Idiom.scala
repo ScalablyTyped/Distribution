@@ -18,7 +18,8 @@ object Idiom {
     __obj.asInstanceOf[Idiom]
   }
   
-  extension [Self <: Idiom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Idiom] (val x: Self) extends AnyVal {
     
     inline def setIdiom(value: ContentsJsonImageIdiom): Self = StObject.set(x, "idiom", value.asInstanceOf[js.Any])
     

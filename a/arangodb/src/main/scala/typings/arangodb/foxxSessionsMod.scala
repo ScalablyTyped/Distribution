@@ -36,7 +36,8 @@ object foxxSessionsMod {
       __obj.asInstanceOf[SessionsOptions]
     }
     
-    extension [Self <: SessionsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionsOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       

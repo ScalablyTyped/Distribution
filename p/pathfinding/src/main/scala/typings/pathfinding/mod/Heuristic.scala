@@ -27,7 +27,8 @@ object Heuristic {
   
   inline def octile(dx: Double, dy: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("octile")(dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  extension [Self <: Heuristic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Heuristic] (val x: Self) extends AnyVal {
     
     inline def setHeuristic(value: (/* dx */ Double, /* dy */ Double) => Double): Self = StObject.set(x, "heuristic", js.Any.fromFunction2(value))
     

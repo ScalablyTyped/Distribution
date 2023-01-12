@@ -31,7 +31,8 @@ object typesTextFieldTextFieldAddonMod {
       __obj.asInstanceOf[TextFieldAddonProps]
     }
     
-    extension [Self <: TextFieldAddonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFieldAddonProps] (val x: Self) extends AnyVal {
       
       inline def setPresentational(value: Boolean): Self = StObject.set(x, "presentational", value.asInstanceOf[js.Any])
       

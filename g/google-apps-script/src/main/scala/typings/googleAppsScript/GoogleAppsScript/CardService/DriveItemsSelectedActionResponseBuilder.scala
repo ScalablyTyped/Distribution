@@ -23,7 +23,8 @@ object DriveItemsSelectedActionResponseBuilder {
     __obj.asInstanceOf[DriveItemsSelectedActionResponseBuilder]
   }
   
-  extension [Self <: DriveItemsSelectedActionResponseBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveItemsSelectedActionResponseBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => DriveItemsSelectedActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

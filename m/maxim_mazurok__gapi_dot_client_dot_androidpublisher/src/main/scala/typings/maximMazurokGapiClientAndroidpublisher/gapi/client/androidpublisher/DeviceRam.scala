@@ -19,7 +19,8 @@ object DeviceRam {
     __obj.asInstanceOf[DeviceRam]
   }
   
-  extension [Self <: DeviceRam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceRam] (val x: Self) extends AnyVal {
     
     inline def setMaxBytes(value: String): Self = StObject.set(x, "maxBytes", value.asInstanceOf[js.Any])
     

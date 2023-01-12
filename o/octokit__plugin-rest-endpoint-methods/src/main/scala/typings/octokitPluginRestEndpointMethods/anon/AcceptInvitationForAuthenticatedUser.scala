@@ -539,7 +539,8 @@ object AcceptInvitationForAuthenticatedUser {
     __obj.asInstanceOf[AcceptInvitationForAuthenticatedUser]
   }
   
-  extension [Self <: AcceptInvitationForAuthenticatedUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptInvitationForAuthenticatedUser] (val x: Self) extends AnyVal {
     
     inline def setAcceptInvitation(value: `1317`): Self = StObject.set(x, "acceptInvitation", value.asInstanceOf[js.Any])
     

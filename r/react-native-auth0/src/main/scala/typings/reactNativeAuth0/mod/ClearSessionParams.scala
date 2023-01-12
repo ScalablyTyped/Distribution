@@ -17,7 +17,8 @@ object ClearSessionParams {
     __obj.asInstanceOf[ClearSessionParams]
   }
   
-  extension [Self <: ClearSessionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearSessionParams] (val x: Self) extends AnyVal {
     
     inline def setCustomScheme(value: String): Self = StObject.set(x, "customScheme", value.asInstanceOf[js.Any])
     

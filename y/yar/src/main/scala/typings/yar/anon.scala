@@ -84,7 +84,8 @@ object anon {
       __obj.asInstanceOf[ClearInvalid]
     }
     
-    extension [Self <: ClearInvalid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearInvalid] (val x: Self) extends AnyVal {
       
       inline def setClearInvalid(value: Boolean): Self = StObject.set(x, "clearInvalid", value.asInstanceOf[js.Any])
       

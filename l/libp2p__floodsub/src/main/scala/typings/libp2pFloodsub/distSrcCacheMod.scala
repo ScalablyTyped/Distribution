@@ -39,7 +39,8 @@ object distSrcCacheMod {
       __obj.asInstanceOf[SimpleTimeCacheOpts]
     }
     
-    extension [Self <: SimpleTimeCacheOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleTimeCacheOpts] (val x: Self) extends AnyVal {
       
       inline def setValidityMs(value: Double): Self = StObject.set(x, "validityMs", value.asInstanceOf[js.Any])
     }

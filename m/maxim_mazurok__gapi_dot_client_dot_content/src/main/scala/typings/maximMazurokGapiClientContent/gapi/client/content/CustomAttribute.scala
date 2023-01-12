@@ -22,7 +22,8 @@ object CustomAttribute {
     __obj.asInstanceOf[CustomAttribute]
   }
   
-  extension [Self <: CustomAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomAttribute] (val x: Self) extends AnyVal {
     
     inline def setGroupValues(value: js.Array[CustomAttribute]): Self = StObject.set(x, "groupValues", value.asInstanceOf[js.Any])
     

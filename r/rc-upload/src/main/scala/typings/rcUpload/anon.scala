@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Abort]
     }
     
-    extension [Self <: Abort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Abort] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     }
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: RcFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Uid]
     }
     
-    extension [Self <: Uid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uid] (val x: Self) extends AnyVal {
       
       inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }

@@ -24,7 +24,8 @@ object ManagedZoneServiceDirectoryConfigNamespace {
     __obj.asInstanceOf[ManagedZoneServiceDirectoryConfigNamespace]
   }
   
-  extension [Self <: ManagedZoneServiceDirectoryConfigNamespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedZoneServiceDirectoryConfigNamespace] (val x: Self) extends AnyVal {
     
     inline def setDeletionTime(value: String): Self = StObject.set(x, "deletionTime", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object NamePriority {
     __obj.asInstanceOf[NamePriority]
   }
   
-  extension [Self <: NamePriority](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamePriority] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

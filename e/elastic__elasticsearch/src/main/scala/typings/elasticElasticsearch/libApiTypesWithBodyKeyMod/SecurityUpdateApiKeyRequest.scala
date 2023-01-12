@@ -20,7 +20,8 @@ object SecurityUpdateApiKeyRequest {
     __obj.asInstanceOf[SecurityUpdateApiKeyRequest]
   }
   
-  extension [Self <: SecurityUpdateApiKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityUpdateApiKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: typings.elasticElasticsearch.anon.Metadata): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

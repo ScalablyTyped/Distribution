@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setCollapseContent(value: Boolean): Self = StObject.set(x, "collapseContent", value.asInstanceOf[js.Any])
       

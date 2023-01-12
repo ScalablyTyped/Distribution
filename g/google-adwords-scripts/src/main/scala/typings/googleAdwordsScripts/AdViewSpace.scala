@@ -35,7 +35,8 @@ object AdViewSpace {
     __obj.asInstanceOf[AdViewSpace]
   }
   
-  extension [Self <: AdViewSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdViewSpace] (val x: Self) extends AnyVal {
     
     inline def setExpandedTextAd(value: () => ExpandedTextAd): Self = StObject.set(x, "expandedTextAd", js.Any.fromFunction0(value))
     

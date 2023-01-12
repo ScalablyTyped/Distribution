@@ -23,7 +23,8 @@ object TopicScoreWeights {
     __obj.asInstanceOf[TopicScoreWeights[T]]
   }
   
-  extension [Self <: TopicScoreWeights[?], T](x: Self & TopicScoreWeights[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicScoreWeights[?], T] (val x: Self & TopicScoreWeights[T]) extends AnyVal {
     
     inline def setP1w(value: T): Self = StObject.set(x, "p1w", value.asInstanceOf[js.Any])
     

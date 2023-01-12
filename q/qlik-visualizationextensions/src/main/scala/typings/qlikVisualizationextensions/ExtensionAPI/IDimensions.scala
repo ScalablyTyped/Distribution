@@ -20,7 +20,8 @@ object IDimensions {
     __obj.asInstanceOf[IDimensions]
   }
   
-  extension [Self <: IDimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDimensions] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

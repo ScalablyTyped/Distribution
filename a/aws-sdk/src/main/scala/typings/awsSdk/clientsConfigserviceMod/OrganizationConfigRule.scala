@@ -51,7 +51,8 @@ object OrganizationConfigRule {
     __obj.asInstanceOf[OrganizationConfigRule]
   }
   
-  extension [Self <: OrganizationConfigRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationConfigRule] (val x: Self) extends AnyVal {
     
     inline def setExcludedAccounts(value: ExcludedAccounts): Self = StObject.set(x, "ExcludedAccounts", value.asInstanceOf[js.Any])
     

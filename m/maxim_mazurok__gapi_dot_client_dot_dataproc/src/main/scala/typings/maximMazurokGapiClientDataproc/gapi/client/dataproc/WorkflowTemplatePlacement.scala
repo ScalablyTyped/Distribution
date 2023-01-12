@@ -19,7 +19,8 @@ object WorkflowTemplatePlacement {
     __obj.asInstanceOf[WorkflowTemplatePlacement]
   }
   
-  extension [Self <: WorkflowTemplatePlacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowTemplatePlacement] (val x: Self) extends AnyVal {
     
     inline def setClusterSelector(value: ClusterSelector): Self = StObject.set(x, "clusterSelector", value.asInstanceOf[js.Any])
     

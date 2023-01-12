@@ -33,7 +33,8 @@ object ResourceManagementErrorWithDetails {
     __obj.asInstanceOf[ResourceManagementErrorWithDetails]
   }
   
-  extension [Self <: ResourceManagementErrorWithDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceManagementErrorWithDetails] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

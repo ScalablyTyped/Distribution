@@ -27,7 +27,8 @@ object GetImageInfoOptions {
     __obj.asInstanceOf[GetImageInfoOptions]
   }
   
-  extension [Self <: GetImageInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetImageInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object MountOptions {
     __obj.asInstanceOf[MountOptions]
   }
   
-  extension [Self <: MountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MountOptions] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String | js.Array[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

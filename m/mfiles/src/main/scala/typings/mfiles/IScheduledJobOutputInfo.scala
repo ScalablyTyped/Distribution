@@ -20,7 +20,8 @@ object IScheduledJobOutputInfo {
     __obj.asInstanceOf[IScheduledJobOutputInfo]
   }
   
-  extension [Self <: IScheduledJobOutputInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScheduledJobOutputInfo] (val x: Self) extends AnyVal {
     
     inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     

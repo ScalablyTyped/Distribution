@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[KeyboardSpacerProps]
     }
     
-    extension [Self <: KeyboardSpacerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardSpacerProps] (val x: Self) extends AnyVal {
       
       inline def setOnToggle(value: (/* keyboardIsOpen */ Boolean, /* keyboardSpace */ Double) => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction2(value))
       

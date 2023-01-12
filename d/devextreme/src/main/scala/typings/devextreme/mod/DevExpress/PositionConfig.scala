@@ -56,7 +56,8 @@ object PositionConfig {
     __obj.asInstanceOf[PositionConfig]
   }
   
-  extension [Self <: PositionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionConfig] (val x: Self) extends AnyVal {
     
     inline def setAt(value: PositionAlignment | X): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     

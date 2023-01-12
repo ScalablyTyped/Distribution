@@ -54,7 +54,8 @@ object DropdownLinkProps {
     __obj.asInstanceOf[DropdownLinkProps]
   }
   
-  extension [Self <: DropdownLinkProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropdownLinkProps] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: BadgeObject): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

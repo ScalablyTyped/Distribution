@@ -45,7 +45,8 @@ object ContentDirectory {
     __obj.asInstanceOf[ContentDirectory]
   }
   
-  extension [Self <: ContentDirectory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentDirectory] (val x: Self) extends AnyVal {
     
     inline def setDirectoryURI(value: String): Self = StObject.set(x, "directoryURI", value.asInstanceOf[js.Any])
     

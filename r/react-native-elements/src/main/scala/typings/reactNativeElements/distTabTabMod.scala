@@ -413,7 +413,8 @@ object distTabTabMod extends Shortcut {
       __obj.asInstanceOf[TabItemProps]
     }
     
-    extension [Self <: TabItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabItemProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -732,7 +733,8 @@ object distTabTabMod extends Shortcut {
       __obj.asInstanceOf[TabProps]
     }
     
-    extension [Self <: TabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
       
       inline def setDisableIndicator(value: Boolean): Self = StObject.set(x, "disableIndicator", value.asInstanceOf[js.Any])
       

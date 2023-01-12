@@ -26,7 +26,8 @@ object typesBroadcastQueryClientExperimentalMod {
       __obj.asInstanceOf[BroadcastQueryClientOptions]
     }
     
-    extension [Self <: BroadcastQueryClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastQueryClientOptions] (val x: Self) extends AnyVal {
       
       inline def setBroadcastChannel(value: String): Self = StObject.set(x, "broadcastChannel", value.asInstanceOf[js.Any])
       

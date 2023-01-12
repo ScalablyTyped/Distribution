@@ -322,7 +322,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Codec]
     }
     
-    extension [Self <: Codec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Codec] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: String => js.typedarray.Uint8Array): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       

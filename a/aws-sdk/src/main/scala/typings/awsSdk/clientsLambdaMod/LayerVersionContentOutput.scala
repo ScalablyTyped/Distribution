@@ -38,7 +38,8 @@ object LayerVersionContentOutput {
     __obj.asInstanceOf[LayerVersionContentOutput]
   }
   
-  extension [Self <: LayerVersionContentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerVersionContentOutput] (val x: Self) extends AnyVal {
     
     inline def setCodeSha256(value: String): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
     

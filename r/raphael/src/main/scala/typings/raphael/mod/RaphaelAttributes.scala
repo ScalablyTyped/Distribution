@@ -253,7 +253,8 @@ object RaphaelAttributes {
     __obj.asInstanceOf[RaphaelAttributes]
   }
   
-  extension [Self <: RaphaelAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelAttributes] (val x: Self) extends AnyVal {
     
     inline def `setArrow-end`(value: String): Self = StObject.set(x, "arrow-end", value.asInstanceOf[js.Any])
     

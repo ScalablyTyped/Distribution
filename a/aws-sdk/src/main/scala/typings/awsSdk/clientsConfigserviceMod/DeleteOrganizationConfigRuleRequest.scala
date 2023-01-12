@@ -18,7 +18,8 @@ object DeleteOrganizationConfigRuleRequest {
     __obj.asInstanceOf[DeleteOrganizationConfigRuleRequest]
   }
   
-  extension [Self <: DeleteOrganizationConfigRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOrganizationConfigRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setOrganizationConfigRuleName(value: OrganizationConfigRuleName): Self = StObject.set(x, "OrganizationConfigRuleName", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object Substring {
     __obj.asInstanceOf[Substring]
   }
   
-  extension [Self <: Substring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Substring] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Integer): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

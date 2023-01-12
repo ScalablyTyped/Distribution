@@ -23,7 +23,8 @@ object DescribeDBProxyTargetGroupsResponse {
     __obj.asInstanceOf[DescribeDBProxyTargetGroupsResponse]
   }
   
-  extension [Self <: DescribeDBProxyTargetGroupsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDBProxyTargetGroupsResponse] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

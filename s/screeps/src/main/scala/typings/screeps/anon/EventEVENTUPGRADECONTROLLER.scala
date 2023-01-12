@@ -27,7 +27,8 @@ object EventEVENTUPGRADECONTROLLER {
     __obj.asInstanceOf[EventEVENTUPGRADECONTROLLER]
   }
   
-  extension [Self <: EventEVENTUPGRADECONTROLLER](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventEVENTUPGRADECONTROLLER] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_UPGRADE_CONTROLLER] */ js.Any

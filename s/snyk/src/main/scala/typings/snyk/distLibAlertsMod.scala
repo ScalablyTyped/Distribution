@@ -33,7 +33,8 @@ object distLibAlertsMod {
       __obj.asInstanceOf[Alert]
     }
     
-    extension [Self <: Alert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alert] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object ChangeSetHook {
     __obj.asInstanceOf[ChangeSetHook]
   }
   
-  extension [Self <: ChangeSetHook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeSetHook] (val x: Self) extends AnyVal {
     
     inline def setFailureMode(value: HookFailureMode): Self = StObject.set(x, "FailureMode", value.asInstanceOf[js.Any])
     

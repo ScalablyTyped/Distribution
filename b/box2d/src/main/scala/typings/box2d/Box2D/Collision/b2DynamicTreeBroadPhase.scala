@@ -51,7 +51,8 @@ object b2DynamicTreeBroadPhase {
     __obj.asInstanceOf[b2DynamicTreeBroadPhase]
   }
   
-  extension [Self <: b2DynamicTreeBroadPhase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2DynamicTreeBroadPhase] (val x: Self) extends AnyVal {
     
     inline def setTestOverlap(value: (b2DynamicTreeNode, b2DynamicTreeNode) => Boolean): Self = StObject.set(x, "TestOverlap", js.Any.fromFunction2(value))
     

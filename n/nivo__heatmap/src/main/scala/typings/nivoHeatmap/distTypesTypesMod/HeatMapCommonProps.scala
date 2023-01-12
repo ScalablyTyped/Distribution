@@ -151,7 +151,8 @@ object HeatMapCommonProps {
     __obj.asInstanceOf[HeatMapCommonProps[Datum]]
   }
   
-  extension [Self <: HeatMapCommonProps[?], Datum /* <: HeatMapDatum */](x: Self & HeatMapCommonProps[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatMapCommonProps[?], Datum /* <: HeatMapDatum */] (val x: Self & HeatMapCommonProps[Datum]) extends AnyVal {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

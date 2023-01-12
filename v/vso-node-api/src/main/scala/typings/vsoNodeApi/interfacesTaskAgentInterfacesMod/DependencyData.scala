@@ -18,7 +18,8 @@ object DependencyData {
     __obj.asInstanceOf[DependencyData]
   }
   
-  extension [Self <: DependencyData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependencyData] (val x: Self) extends AnyVal {
     
     inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

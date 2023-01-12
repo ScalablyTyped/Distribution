@@ -33,7 +33,8 @@ object PNotifyStack {
     __obj.asInstanceOf[PNotifyStack]
   }
   
-  extension [Self <: PNotifyStack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PNotifyStack] (val x: Self) extends AnyVal {
     
     inline def setContext(value: JQuery[HTMLElement]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

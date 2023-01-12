@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[OnVolumeChangeParam]
     }
     
-    extension [Self <: OnVolumeChangeParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnVolumeChangeParam] (val x: Self) extends AnyVal {
       
       inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAutopause(value: Boolean): Self = StObject.set(x, "autopause", value.asInstanceOf[js.Any])
       

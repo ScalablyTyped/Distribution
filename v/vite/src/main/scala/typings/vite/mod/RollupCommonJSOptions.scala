@@ -247,7 +247,8 @@ object RollupCommonJSOptions {
     __obj.asInstanceOf[RollupCommonJSOptions]
   }
   
-  extension [Self <: RollupCommonJSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupCommonJSOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultIsModuleExports(value: Boolean | auto | (js.Function1[/* id */ String, Boolean | auto])): Self = StObject.set(x, "defaultIsModuleExports", value.asInstanceOf[js.Any])
     

@@ -543,7 +543,8 @@ object sapTntNavigationListItemMod {
       __obj.asInstanceOf[NavigationListItemSettings]
     }
     
-    extension [Self <: NavigationListItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationListItemSettings] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       

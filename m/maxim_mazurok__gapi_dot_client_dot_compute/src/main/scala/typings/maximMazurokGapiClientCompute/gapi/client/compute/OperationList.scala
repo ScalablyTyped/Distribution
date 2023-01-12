@@ -35,7 +35,8 @@ object OperationList {
     __obj.asInstanceOf[OperationList]
   }
   
-  extension [Self <: OperationList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

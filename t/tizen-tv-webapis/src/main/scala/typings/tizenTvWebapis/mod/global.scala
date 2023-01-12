@@ -21,7 +21,8 @@ object global {
       __obj.asInstanceOf[Window]
     }
     
-    extension [Self <: Window](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
       
       inline def setWebapis(value: Webapis): Self = StObject.set(x, "webapis", value.asInstanceOf[js.Any])
     }

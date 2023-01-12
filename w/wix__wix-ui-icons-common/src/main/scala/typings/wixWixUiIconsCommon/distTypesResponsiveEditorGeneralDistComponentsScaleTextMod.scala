@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsScaleTextMod extends Shortc
       __obj.asInstanceOf[ScaleTextProps]
     }
     
-    extension [Self <: ScaleTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleTextProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -57,7 +57,8 @@ object PartialStyleRulesFabClass {
     __obj.asInstanceOf[PartialStyleRulesFabClass]
   }
   
-  extension [Self <: PartialStyleRulesFabClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesFabClass] (val x: Self) extends AnyVal {
     
     inline def setColorInherit(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

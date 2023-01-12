@@ -195,7 +195,8 @@ object IEntityMetadata {
     __obj.asInstanceOf[IEntityMetadata]
   }
   
-  extension [Self <: IEntityMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityMetadata] (val x: Self) extends AnyVal {
     
     inline def setActivityTypeMask(value: Double): Self = StObject.set(x, "ActivityTypeMask", value.asInstanceOf[js.Any])
     

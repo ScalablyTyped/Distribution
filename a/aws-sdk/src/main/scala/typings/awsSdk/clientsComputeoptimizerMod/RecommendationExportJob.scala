@@ -48,7 +48,8 @@ object RecommendationExportJob {
     __obj.asInstanceOf[RecommendationExportJob]
   }
   
-  extension [Self <: RecommendationExportJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationExportJob] (val x: Self) extends AnyVal {
     
     inline def setCreationTimestamp(value: js.Date): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     

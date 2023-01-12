@@ -31,7 +31,8 @@ object ocrVehicleLicenseOptions {
     __obj.asInstanceOf[ocrVehicleLicenseOptions]
   }
   
-  extension [Self <: ocrVehicleLicenseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ocrVehicleLicenseOptions] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: String): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

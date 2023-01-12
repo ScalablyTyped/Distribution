@@ -20,7 +20,8 @@ object IndeterminateProgressProperties {
     __obj.asInstanceOf[IndeterminateProgressProperties]
   }
   
-  extension [Self <: IndeterminateProgressProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndeterminateProgressProperties] (val x: Self) extends AnyVal {
     
     inline def setProgressAniDuration(value: Double): Self = StObject.set(x, "progressAniDuration", value.asInstanceOf[js.Any])
     

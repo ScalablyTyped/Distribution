@@ -17,7 +17,8 @@ object ContextMenuAnimationOpen {
     __obj.asInstanceOf[ContextMenuAnimationOpen]
   }
   
-  extension [Self <: ContextMenuAnimationOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextMenuAnimationOpen] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

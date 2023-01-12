@@ -1106,7 +1106,8 @@ object modulesTreemapMod {
         __obj.asInstanceOf[BreadcrumbsOptions]
       }
       
-      extension [Self <: BreadcrumbsOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BreadcrumbsOptions] (val x: Self) extends AnyVal {
         
         inline def setButtonTheme(value: SVGAttributes): Self = StObject.set(x, "buttonTheme", value.asInstanceOf[js.Any])
         

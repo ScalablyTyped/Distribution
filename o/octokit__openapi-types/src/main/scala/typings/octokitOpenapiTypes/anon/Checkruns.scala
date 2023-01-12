@@ -24,7 +24,8 @@ object Checkruns {
     __obj.asInstanceOf[Checkruns]
   }
   
-  extension [Self <: Checkruns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checkruns] (val x: Self) extends AnyVal {
     
     inline def setCheck_runs(
       value: js.Array[

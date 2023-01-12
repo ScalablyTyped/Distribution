@@ -29,7 +29,8 @@ object AudioConferencing {
     __obj.asInstanceOf[AudioConferencing]
   }
   
-  extension [Self <: AudioConferencing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioConferencing] (val x: Self) extends AnyVal {
     
     inline def setConferenceId(value: NullableOption[String]): Self = StObject.set(x, "conferenceId", value.asInstanceOf[js.Any])
     

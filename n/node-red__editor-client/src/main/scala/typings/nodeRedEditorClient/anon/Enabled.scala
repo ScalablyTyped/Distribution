@@ -24,7 +24,8 @@ object Enabled {
     __obj.asInstanceOf[Enabled[TInstProps, TProps]]
   }
   
-  extension [Self <: Enabled[?, ?], TInstProps /* <: TProps */, TProps /* <: NodeProperties */](x: Self & (Enabled[TInstProps, TProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enabled[?, ?], TInstProps /* <: TProps */, TProps /* <: NodeProperties */] (val x: Self & (Enabled[TInstProps, TProps])) extends AnyVal {
     
     inline def setEnabled(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

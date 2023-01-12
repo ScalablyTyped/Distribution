@@ -19,7 +19,8 @@ object GeneratedStandaloneApk {
     __obj.asInstanceOf[GeneratedStandaloneApk]
   }
   
-  extension [Self <: GeneratedStandaloneApk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratedStandaloneApk] (val x: Self) extends AnyVal {
     
     inline def setDownloadId(value: String): Self = StObject.set(x, "downloadId", value.asInstanceOf[js.Any])
     

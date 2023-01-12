@@ -22,7 +22,8 @@ object HostNative {
     __obj.asInstanceOf[HostNative]
   }
   
-  extension [Self <: HostNative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostNative] (val x: Self) extends AnyVal {
     
     inline def setHardware(value: Cpus): Self = StObject.set(x, "hardware", value.asInstanceOf[js.Any])
     

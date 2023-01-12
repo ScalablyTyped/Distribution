@@ -22,7 +22,8 @@ object SwatchContainer {
     __obj.asInstanceOf[SwatchContainer]
   }
   
-  extension [Self <: SwatchContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwatchContainer] (val x: Self) extends AnyVal {
     
     inline def setDo_objectID(value: Uuid): Self = StObject.set(x, "do_objectID", value.asInstanceOf[js.Any])
     

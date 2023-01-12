@@ -29,7 +29,8 @@ object typesInterfacesMod {
       __obj.asInstanceOf[RangeOptions[K]]
     }
     
-    extension [Self <: RangeOptions[?], K](x: Self & RangeOptions[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeOptions[?], K] (val x: Self & RangeOptions[K]) extends AnyVal {
       
       inline def setGt(value: K): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
       

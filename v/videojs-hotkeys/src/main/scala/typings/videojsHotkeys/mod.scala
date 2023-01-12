@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[VideoJsCustomHotkey]
     }
     
-    extension [Self <: VideoJsCustomHotkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoJsCustomHotkey] (val x: Self) extends AnyVal {
       
       inline def setHandler(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VideoJsPlayer */ Any, VideoJsHotkeysOptions, KeyboardEvent) => Unit
@@ -141,7 +142,8 @@ object mod {
       __obj.asInstanceOf[VideoJsHotkeysOptions]
     }
     
-    extension [Self <: VideoJsHotkeysOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoJsHotkeysOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysCaptureHotkeys(value: Boolean): Self = StObject.set(x, "alwaysCaptureHotkeys", value.asInstanceOf[js.Any])
       

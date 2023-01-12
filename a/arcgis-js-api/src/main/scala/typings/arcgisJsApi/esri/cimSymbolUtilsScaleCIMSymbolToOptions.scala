@@ -20,7 +20,8 @@ object cimSymbolUtilsScaleCIMSymbolToOptions {
     __obj.asInstanceOf[cimSymbolUtilsScaleCIMSymbolToOptions]
   }
   
-  extension [Self <: cimSymbolUtilsScaleCIMSymbolToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: cimSymbolUtilsScaleCIMSymbolToOptions] (val x: Self) extends AnyVal {
     
     inline def setPreserveOutlineWidth(value: Boolean): Self = StObject.set(x, "preserveOutlineWidth", value.asInstanceOf[js.Any])
     

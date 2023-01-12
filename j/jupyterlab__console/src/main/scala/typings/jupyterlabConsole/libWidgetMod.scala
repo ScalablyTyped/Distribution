@@ -407,7 +407,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      extension [Self <: IContentFactory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
         
         inline def setCreateCodeCell(value: typings.jupyterlabCells.libWidgetMod.CodeCell.IOptions => CodeCell): Self = StObject.set(x, "createCodeCell", js.Any.fromFunction1(value))
         
@@ -456,7 +457,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IModelFactory]
       }
       
-      extension [Self <: IModelFactory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IModelFactory] (val x: Self) extends AnyVal {
         
         inline def setCodeCellContentFactory(value: typings.jupyterlabCells.libModelMod.CodeCellModel.IContentFactory): Self = StObject.set(x, "codeCellContentFactory", value.asInstanceOf[js.Any])
         
@@ -483,7 +485,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IModelFactoryOptions]
       }
       
-      extension [Self <: IModelFactoryOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IModelFactoryOptions] (val x: Self) extends AnyVal {
         
         inline def setCodeCellContentFactory(value: typings.jupyterlabCells.libModelMod.CodeCellModel.IContentFactory): Self = StObject.set(x, "codeCellContentFactory", value.asInstanceOf[js.Any])
         
@@ -533,7 +536,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         

@@ -23,7 +23,8 @@ object ASPxClientFileManagerFileEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerFileEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerFileEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerFileEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFile(value: ASPxClientFileManagerFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
   }

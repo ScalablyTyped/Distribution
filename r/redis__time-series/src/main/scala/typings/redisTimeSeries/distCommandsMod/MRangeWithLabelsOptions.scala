@@ -17,7 +17,8 @@ object MRangeWithLabelsOptions {
     __obj.asInstanceOf[MRangeWithLabelsOptions]
   }
   
-  extension [Self <: MRangeWithLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MRangeWithLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setSELECTED_LABELS(value: SelectedLabels): Self = StObject.set(x, "SELECTED_LABELS", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object UpdateCheckIPCMessage {
     __obj.asInstanceOf[UpdateCheckIPCMessage]
   }
   
-  extension [Self <: UpdateCheckIPCMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCheckIPCMessage] (val x: Self) extends AnyVal {
     
     inline def setType(value: `update-check`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

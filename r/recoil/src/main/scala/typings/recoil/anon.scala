@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setEviction(value: `keep-all`): Self = StObject.set(x, "eviction", value.asInstanceOf[js.Any])
     }
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setEviction(value: `most-recent`): Self = StObject.set(x, "eviction", value.asInstanceOf[js.Any])
     }
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -113,7 +116,8 @@ object anon {
       __obj.asInstanceOf[ChildrenReactNode]
     }
     
-    extension [Self <: ChildrenReactNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildrenReactNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -134,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Components[T]]
     }
     
-    extension [Self <: Components[?], T](x: Self & Components[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Components[?], T] (val x: Self & Components[T]) extends AnyVal {
       
       inline def setComponents(value: js.Iterable[ComponentInfo]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -157,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Eviction]
     }
     
-    extension [Self <: Eviction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Eviction] (val x: Self) extends AnyVal {
       
       inline def setEviction(value: lru): Self = StObject.set(x, "eviction", value.asInstanceOf[js.Any])
       
@@ -184,7 +190,8 @@ object anon {
       __obj.asInstanceOf[Get]
     }
     
-    extension [Self <: Get](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
       
       inline def setGet(value: /* recoilVal */ RecoilValue[Any] => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -244,7 +251,8 @@ object anon {
       __obj.asInstanceOf[IsInitialized]
     }
     
-    extension [Self <: IsInitialized](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsInitialized] (val x: Self) extends AnyVal {
       
       inline def setIsInitialized(value: Boolean): Self = StObject.set(x, "isInitialized", value.asInstanceOf[js.Any])
       
@@ -267,7 +275,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -289,7 +298,8 @@ object anon {
       __obj.asInstanceOf[Override]
     }
     
-    extension [Self <: Override](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Override] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -312,7 +322,8 @@ object anon {
       __obj.asInstanceOf[PreviousSnapshot]
     }
     
-    extension [Self <: PreviousSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviousSnapshot] (val x: Self) extends AnyVal {
       
       inline def setPreviousSnapshot(value: Snapshot): Self = StObject.set(x, "previousSnapshot", value.asInstanceOf[js.Any])
       
@@ -339,7 +350,8 @@ object anon {
       __obj.asInstanceOf[Reset]
     }
     
-    extension [Self <: Reset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reset] (val x: Self) extends AnyVal {
       
       inline def setGet(value: /* recoilVal */ RecoilValue[Any] => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

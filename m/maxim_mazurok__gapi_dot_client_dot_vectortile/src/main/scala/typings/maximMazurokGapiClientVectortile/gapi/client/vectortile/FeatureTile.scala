@@ -38,7 +38,8 @@ object FeatureTile {
     __obj.asInstanceOf[FeatureTile]
   }
   
-  extension [Self <: FeatureTile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureTile] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: TileCoordinates): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

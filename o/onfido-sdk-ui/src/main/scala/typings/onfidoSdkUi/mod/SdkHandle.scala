@@ -21,7 +21,8 @@ object SdkHandle {
     __obj.asInstanceOf[SdkHandle]
   }
   
-  extension [Self <: SdkHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdkHandle] (val x: Self) extends AnyVal {
     
     inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     

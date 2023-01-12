@@ -120,7 +120,8 @@ object mod {
       __obj.asInstanceOf[DownloadOptions]
     }
     
-    extension [Self <: DownloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object mod {
       __obj.asInstanceOf[DownloadResultClean]
     }
     
-    extension [Self <: DownloadResultClean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadResultClean] (val x: Self) extends AnyVal {
       
       inline def setCode(value: DONE_CLEAN): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object mod {
       __obj.asInstanceOf[DownloadResultFileExists]
     }
     
-    extension [Self <: DownloadResultFileExists](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadResultFileExists] (val x: Self) extends AnyVal {
       
       inline def setCode(value: FILE_EXISTS): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -263,7 +266,8 @@ object mod {
       __obj.asInstanceOf[DownloadResultFromCache]
     }
     
-    extension [Self <: DownloadResultFromCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadResultFromCache] (val x: Self) extends AnyVal {
       
       inline def setCode(value: DONE_FROM_CACHE): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -290,7 +294,8 @@ object mod {
       __obj.asInstanceOf[LocateBinariesOptions]
     }
     
-    extension [Self <: LocateBinariesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocateBinariesOptions] (val x: Self) extends AnyVal {
       
       inline def setEnsureExecutable(value: Boolean): Self = StObject.set(x, "ensureExecutable", value.asInstanceOf[js.Any])
       
@@ -341,7 +346,8 @@ object mod {
       __obj.asInstanceOf[LocateResultFound]
     }
     
-    extension [Self <: LocateResultFound](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocateResultFound] (val x: Self) extends AnyVal {
       
       inline def setFound(value: `true`): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
       
@@ -372,7 +378,8 @@ object mod {
       __obj.asInstanceOf[LocateResultNotFound]
     }
     
-    extension [Self <: LocateResultNotFound](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocateResultNotFound] (val x: Self) extends AnyVal {
       
       inline def setFound(value: `false`): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
       
@@ -426,7 +433,8 @@ object mod {
       __obj.asInstanceOf[VersionData]
     }
     
-    extension [Self <: VersionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionData] (val x: Self) extends AnyVal {
       
       inline def setBin(value: KinPlatformffmpegstringff): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       

@@ -47,7 +47,8 @@ object GetSignedUrlConfig {
     __obj.asInstanceOf[GetSignedUrlConfig]
   }
   
-  extension [Self <: GetSignedUrlConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSignedUrlConfig] (val x: Self) extends AnyVal {
     
     inline def setAccessibleAt(value: String | Double | js.Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
     

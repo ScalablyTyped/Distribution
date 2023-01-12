@@ -32,7 +32,8 @@ object ParticleCPUUpdater {
     __obj.asInstanceOf[ParticleCPUUpdater]
   }
   
-  extension [Self <: ParticleCPUUpdater](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticleCPUUpdater] (val x: Self) extends AnyVal {
     
     inline def setCalcSpawnPosition(value: (Any, Any, Any, Any, Any) => Unit): Self = StObject.set(x, "calcSpawnPosition", js.Any.fromFunction5(value))
     

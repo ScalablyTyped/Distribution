@@ -37,7 +37,8 @@ object distReadabilityMod {
       __obj.asInstanceOf[WCAG2FallbackParms]
     }
     
-    extension [Self <: WCAG2FallbackParms](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WCAG2FallbackParms] (val x: Self) extends AnyVal {
       
       inline def setIncludeFallbackColors(value: Boolean): Self = StObject.set(x, "includeFallbackColors", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distReadabilityMod {
       __obj.asInstanceOf[WCAG2Parms]
     }
     
-    extension [Self <: WCAG2Parms](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WCAG2Parms] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: AA | AAA): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

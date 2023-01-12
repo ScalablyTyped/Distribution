@@ -23,7 +23,8 @@ object MeetingTimeSuggestionsResult {
     __obj.asInstanceOf[MeetingTimeSuggestionsResult]
   }
   
-  extension [Self <: MeetingTimeSuggestionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeetingTimeSuggestionsResult] (val x: Self) extends AnyVal {
     
     inline def setEmptySuggestionsReason(value: NullableOption[String]): Self = StObject.set(x, "emptySuggestionsReason", value.asInstanceOf[js.Any])
     

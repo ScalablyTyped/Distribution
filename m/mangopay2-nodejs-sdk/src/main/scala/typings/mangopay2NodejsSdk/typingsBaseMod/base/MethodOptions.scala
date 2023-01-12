@@ -29,7 +29,8 @@ object MethodOptions {
     __obj.asInstanceOf[MethodOptions]
   }
   
-  extension [Self <: MethodOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: WithToJson[js.Object] | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

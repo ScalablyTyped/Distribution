@@ -18,7 +18,8 @@ object ReplicationConfiguration {
     __obj.asInstanceOf[ReplicationConfiguration]
   }
   
-  extension [Self <: ReplicationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRules(value: ReplicationRuleList): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

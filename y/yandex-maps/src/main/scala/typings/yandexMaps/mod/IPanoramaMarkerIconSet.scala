@@ -21,7 +21,8 @@ object IPanoramaMarkerIconSet {
     __obj.asInstanceOf[IPanoramaMarkerIconSet]
   }
   
-  extension [Self <: IPanoramaMarkerIconSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanoramaMarkerIconSet] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: IPanoramaMarkerIcon): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

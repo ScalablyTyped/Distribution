@@ -23,7 +23,8 @@ object TimerFiredEventAttributes {
     __obj.asInstanceOf[TimerFiredEventAttributes]
   }
   
-  extension [Self <: TimerFiredEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimerFiredEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
     

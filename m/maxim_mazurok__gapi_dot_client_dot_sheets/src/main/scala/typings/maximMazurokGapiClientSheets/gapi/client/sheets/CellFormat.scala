@@ -52,7 +52,8 @@ object CellFormat {
     __obj.asInstanceOf[CellFormat]
   }
   
-  extension [Self <: CellFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellFormat] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

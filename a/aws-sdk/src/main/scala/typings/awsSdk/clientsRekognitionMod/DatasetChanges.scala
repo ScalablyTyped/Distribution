@@ -18,7 +18,8 @@ object DatasetChanges {
     __obj.asInstanceOf[DatasetChanges]
   }
   
-  extension [Self <: DatasetChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetChanges] (val x: Self) extends AnyVal {
     
     inline def setGroundTruth(value: GroundTruthBlob): Self = StObject.set(x, "GroundTruth", value.asInstanceOf[js.Any])
   }

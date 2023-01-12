@@ -43,7 +43,8 @@ object componentsAvatarMod {
       __obj.asInstanceOf[AvatarProps]
     }
     
-    extension [Self <: AvatarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: xsmall | small | medium | large | xlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

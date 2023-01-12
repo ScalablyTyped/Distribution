@@ -37,7 +37,8 @@ object OSPolicyResourcePackageResource {
     __obj.asInstanceOf[OSPolicyResourcePackageResource]
   }
   
-  extension [Self <: OSPolicyResourcePackageResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyResourcePackageResource] (val x: Self) extends AnyVal {
     
     inline def setApt(value: OSPolicyResourcePackageResourceAPT): Self = StObject.set(x, "apt", value.asInstanceOf[js.Any])
     

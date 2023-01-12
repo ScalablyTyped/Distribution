@@ -352,7 +352,8 @@ object sapMNotificationListItemMod {
       __obj.asInstanceOf[NotificationListItemSettings]
     }
     
-    extension [Self <: NotificationListItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationListItemSettings] (val x: Self) extends AnyVal {
       
       inline def setAuthorAvatarColor(
         value: AvatarColor | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AvatarColor * / any */ String) | PropertyBindingInfo

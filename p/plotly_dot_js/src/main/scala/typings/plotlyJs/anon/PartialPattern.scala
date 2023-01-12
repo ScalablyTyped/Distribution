@@ -37,7 +37,8 @@ object PartialPattern {
     __obj.asInstanceOf[PartialPattern]
   }
   
-  extension [Self <: PartialPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPattern] (val x: Self) extends AnyVal {
     
     inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     

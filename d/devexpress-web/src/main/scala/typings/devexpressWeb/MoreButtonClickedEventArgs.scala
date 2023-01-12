@@ -44,7 +44,8 @@ object MoreButtonClickedEventArgs {
     __obj.asInstanceOf[MoreButtonClickedEventArgs]
   }
   
-  extension [Self <: MoreButtonClickedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoreButtonClickedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     

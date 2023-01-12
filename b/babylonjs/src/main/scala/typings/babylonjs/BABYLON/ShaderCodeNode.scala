@@ -30,7 +30,8 @@ object ShaderCodeNode {
     __obj.asInstanceOf[ShaderCodeNode]
   }
   
-  extension [Self <: ShaderCodeNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaderCodeNode] (val x: Self) extends AnyVal {
     
     inline def setAdditionalDefineKey(value: String): Self = StObject.set(x, "additionalDefineKey", value.asInstanceOf[js.Any])
     

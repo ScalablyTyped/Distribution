@@ -17,7 +17,8 @@ object FsSaveFileOptions {
     __obj.asInstanceOf[FsSaveFileOptions]
   }
   
-  extension [Self <: FsSaveFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FsSaveFileOptions] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
   }

@@ -25,7 +25,8 @@ object MinimumFrameRateAfterWarmup {
     __obj.asInstanceOf[MinimumFrameRateAfterWarmup]
   }
   
-  extension [Self <: MinimumFrameRateAfterWarmup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinimumFrameRateAfterWarmup] (val x: Self) extends AnyVal {
     
     inline def setMinimumFrameRateAfterWarmup(value: Double): Self = StObject.set(x, "minimumFrameRateAfterWarmup", value.asInstanceOf[js.Any])
     

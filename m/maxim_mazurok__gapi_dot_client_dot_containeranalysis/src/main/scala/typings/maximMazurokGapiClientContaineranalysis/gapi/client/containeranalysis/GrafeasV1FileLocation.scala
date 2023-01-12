@@ -16,7 +16,8 @@ object GrafeasV1FileLocation {
     __obj.asInstanceOf[GrafeasV1FileLocation]
   }
   
-  extension [Self <: GrafeasV1FileLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrafeasV1FileLocation] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

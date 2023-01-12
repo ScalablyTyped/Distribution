@@ -47,7 +47,8 @@ object triggerEventbridgeMod {
       __obj.asInstanceOf[EventBridgeEvent[TDetailType, TDetail]]
     }
     
-    extension [Self <: EventBridgeEvent[?, ?], TDetailType /* <: String */, TDetail](x: Self & (EventBridgeEvent[TDetailType, TDetail])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventBridgeEvent[?, ?], TDetailType /* <: String */, TDetail] (val x: Self & (EventBridgeEvent[TDetailType, TDetail])) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       

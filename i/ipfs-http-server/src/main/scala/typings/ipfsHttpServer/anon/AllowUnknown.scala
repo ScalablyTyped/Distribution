@@ -17,7 +17,8 @@ object AllowUnknown {
     __obj.asInstanceOf[AllowUnknown]
   }
   
-  extension [Self <: AllowUnknown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowUnknown] (val x: Self) extends AnyVal {
     
     inline def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
     

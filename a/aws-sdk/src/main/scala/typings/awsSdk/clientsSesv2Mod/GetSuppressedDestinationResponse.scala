@@ -18,7 +18,8 @@ object GetSuppressedDestinationResponse {
     __obj.asInstanceOf[GetSuppressedDestinationResponse]
   }
   
-  extension [Self <: GetSuppressedDestinationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSuppressedDestinationResponse] (val x: Self) extends AnyVal {
     
     inline def setSuppressedDestination(value: SuppressedDestination): Self = StObject.set(x, "SuppressedDestination", value.asInstanceOf[js.Any])
   }

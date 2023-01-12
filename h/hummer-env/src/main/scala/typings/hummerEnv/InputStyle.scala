@@ -73,7 +73,8 @@ object InputStyle {
     __obj.asInstanceOf[InputStyle]
   }
   
-  extension [Self <: InputStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputStyle] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object UnclaimedDraftModule {
     __obj.asInstanceOf[UnclaimedDraftModule]
   }
   
-  extension [Self <: UnclaimedDraftModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnclaimedDraftModule] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: UnclaimedDraftRequestOptions[StringDictionary[Any]] => js.Promise[UnclaimedDraftResponse]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

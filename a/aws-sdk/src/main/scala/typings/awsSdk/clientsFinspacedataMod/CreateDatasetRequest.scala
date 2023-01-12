@@ -53,7 +53,8 @@ object CreateDatasetRequest {
     __obj.asInstanceOf[CreateDatasetRequest]
   }
   
-  extension [Self <: CreateDatasetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDatasetRequest] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: AliasString): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

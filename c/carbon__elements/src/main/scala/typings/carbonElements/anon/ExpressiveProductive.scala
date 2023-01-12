@@ -17,7 +17,8 @@ object ExpressiveProductive {
     __obj.asInstanceOf[ExpressiveProductive]
   }
   
-  extension [Self <: ExpressiveProductive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressiveProductive] (val x: Self) extends AnyVal {
     
     inline def setExpressive(value: /* cubic-bezier(0.4, 0.14, 1, 1) */ String): Self = StObject.set(x, "expressive", value.asInstanceOf[js.Any])
     

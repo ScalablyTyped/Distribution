@@ -16,7 +16,8 @@ object LocalIdentificationBlockParams {
     __obj.asInstanceOf[LocalIdentificationBlockParams]
   }
   
-  extension [Self <: LocalIdentificationBlockParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalIdentificationBlockParams] (val x: Self) extends AnyVal {
     
     inline def setIdBlock(value: PartialILocalIdentificati): Self = StObject.set(x, "idBlock", value.asInstanceOf[js.Any])
     

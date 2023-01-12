@@ -48,7 +48,8 @@ object HidOutputReport {
     __obj.asInstanceOf[HidOutputReport]
   }
   
-  extension [Self <: HidOutputReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HidOutputReport] (val x: Self) extends AnyVal {
     
     inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

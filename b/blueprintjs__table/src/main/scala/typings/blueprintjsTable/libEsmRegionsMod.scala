@@ -454,7 +454,8 @@ object libEsmRegionsMod {
       __obj.asInstanceOf[IRegion]
     }
     
-    extension [Self <: IRegion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRegion] (val x: Self) extends AnyVal {
       
       inline def setCols(value: CellInterval): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
@@ -483,7 +484,8 @@ object libEsmRegionsMod {
       __obj.asInstanceOf[IStyledRegionGroup]
     }
     
-    extension [Self <: IStyledRegionGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStyledRegionGroup] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -509,7 +511,8 @@ object libEsmRegionsMod {
       __obj.asInstanceOf[NonNullRegion]
     }
     
-    extension [Self <: NonNullRegion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonNullRegion] (val x: Self) extends AnyVal {
       
       inline def setCols(value: NonNullable[js.UndefOr[CellInterval | Null]]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       

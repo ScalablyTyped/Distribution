@@ -18,7 +18,8 @@ object ListenerHandle {
     __obj.asInstanceOf[ListenerHandle]
   }
   
-  extension [Self <: ListenerHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenerHandle] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
   }

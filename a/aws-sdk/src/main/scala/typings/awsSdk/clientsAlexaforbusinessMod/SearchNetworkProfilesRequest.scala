@@ -33,7 +33,8 @@ object SearchNetworkProfilesRequest {
     __obj.asInstanceOf[SearchNetworkProfilesRequest]
   }
   
-  extension [Self <: SearchNetworkProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchNetworkProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

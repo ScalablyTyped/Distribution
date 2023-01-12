@@ -58,7 +58,8 @@ object GetBotChannelAssociationResponse {
     __obj.asInstanceOf[GetBotChannelAssociationResponse]
   }
   
-  extension [Self <: GetBotChannelAssociationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBotChannelAssociationResponse] (val x: Self) extends AnyVal {
     
     inline def setBotAlias(value: AliasName): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
     

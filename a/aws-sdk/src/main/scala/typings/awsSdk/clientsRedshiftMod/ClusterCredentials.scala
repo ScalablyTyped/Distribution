@@ -28,7 +28,8 @@ object ClusterCredentials {
     __obj.asInstanceOf[ClusterCredentials]
   }
   
-  extension [Self <: ClusterCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterCredentials] (val x: Self) extends AnyVal {
     
     inline def setDbPassword(value: SensitiveString): Self = StObject.set(x, "DbPassword", value.asInstanceOf[js.Any])
     

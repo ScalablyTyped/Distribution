@@ -33,7 +33,8 @@ object TimeZoneRequest {
     __obj.asInstanceOf[TimeZoneRequest]
   }
   
-  extension [Self <: TimeZoneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeZoneRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object KnockoutMemoization {
     __obj.asInstanceOf[KnockoutMemoization]
   }
   
-  extension [Self <: KnockoutMemoization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutMemoization] (val x: Self) extends AnyVal {
     
     inline def setMemoize(value: js.Function0[String] => String): Self = StObject.set(x, "memoize", js.Any.fromFunction1(value))
     

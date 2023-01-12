@@ -29,7 +29,8 @@ object PointerActionEntity {
     __obj.asInstanceOf[PointerActionEntity]
   }
   
-  extension [Self <: PointerActionEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerActionEntity] (val x: Self) extends AnyVal {
     
     inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

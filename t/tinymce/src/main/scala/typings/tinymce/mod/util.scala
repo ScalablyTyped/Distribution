@@ -127,7 +127,8 @@ object util {
       __obj.asInstanceOf[JSONRequest]
     }
     
-    extension [Self <: JSONRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONRequest] (val x: Self) extends AnyVal {
       
       inline def setSend(value: js.Object => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
@@ -163,7 +164,8 @@ object util {
       __obj.asInstanceOf[LocalStorage]
     }
     
-    extension [Self <: LocalStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalStorage] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -269,7 +271,8 @@ object util {
       __obj.asInstanceOf[i18n]
     }
     
-    extension [Self <: i18n](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: i18n] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (String, js.Array[js.Object]) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       

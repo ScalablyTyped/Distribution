@@ -36,7 +36,8 @@ object ImageSourceSpecification {
     __obj.asInstanceOf[ImageSourceSpecification]
   }
   
-  extension [Self <: ImageSourceSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageSourceSpecification] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(
       value: js.Tuple4[

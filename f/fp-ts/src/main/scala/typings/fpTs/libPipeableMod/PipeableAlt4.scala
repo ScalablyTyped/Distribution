@@ -30,7 +30,8 @@ object PipeableAlt4 {
     __obj.asInstanceOf[PipeableAlt4[F]]
   }
   
-  extension [Self <: PipeableAlt4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & PipeableAlt4[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableAlt4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & PipeableAlt4[F]) extends AnyVal {
     
     inline def setAlt(
       value: Lazy[

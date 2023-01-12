@@ -20,7 +20,8 @@ object TabStripErrorEvent {
     __obj.asInstanceOf[TabStripErrorEvent]
   }
   
-  extension [Self <: TabStripErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabStripErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

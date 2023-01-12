@@ -25,7 +25,8 @@ object ServerResponseError {
     __obj.asInstanceOf[ServerResponseError]
   }
   
-  extension [Self <: ServerResponseError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerResponseError] (val x: Self) extends AnyVal {
     
     inline def setB(value: BulkRequestData): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     

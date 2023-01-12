@@ -67,7 +67,8 @@ object AltCallbackFieldsKeyOauthtokenPrettyPrintProject {
     __obj.asInstanceOf[AltCallbackFieldsKeyOauthtokenPrettyPrintProject]
   }
   
-  extension [Self <: AltCallbackFieldsKeyOauthtokenPrettyPrintProject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AltCallbackFieldsKeyOauthtokenPrettyPrintProject] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

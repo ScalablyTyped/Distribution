@@ -17,7 +17,8 @@ object TripResults {
     __obj.asInstanceOf[TripResults]
   }
   
-  extension [Self <: TripResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TripResults] (val x: Self) extends AnyVal {
     
     inline def setTrips(value: js.Array[Route]): Self = StObject.set(x, "trips", value.asInstanceOf[js.Any])
     

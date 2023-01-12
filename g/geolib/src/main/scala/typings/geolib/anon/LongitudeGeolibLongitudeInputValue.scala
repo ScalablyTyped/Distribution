@@ -19,7 +19,8 @@ object LongitudeGeolibLongitudeInputValue {
     __obj.asInstanceOf[LongitudeGeolibLongitudeInputValue]
   }
   
-  extension [Self <: LongitudeGeolibLongitudeInputValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongitudeGeolibLongitudeInputValue] (val x: Self) extends AnyVal {
     
     inline def setLongitude(value: GeolibLongitudeInputValue): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
   }

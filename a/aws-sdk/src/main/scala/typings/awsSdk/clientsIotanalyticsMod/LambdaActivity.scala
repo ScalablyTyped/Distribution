@@ -33,7 +33,8 @@ object LambdaActivity {
     __obj.asInstanceOf[LambdaActivity]
   }
   
-  extension [Self <: LambdaActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaActivity] (val x: Self) extends AnyVal {
     
     inline def setBatchSize(value: ActivityBatchSize): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     

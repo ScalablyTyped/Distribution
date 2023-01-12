@@ -77,7 +77,8 @@ object libFieldAggregatorCountFieldAggregatorMod {
       __obj.asInstanceOf[CountFieldAggregator]
     }
     
-    extension [Self <: CountFieldAggregator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountFieldAggregator] (val x: Self) extends AnyVal {
       
       inline def setDecimalPrecision(value: Double): Self = StObject.set(x, "decimalPrecision", value.asInstanceOf[js.Any])
       

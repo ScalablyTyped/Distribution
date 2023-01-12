@@ -102,7 +102,8 @@ object mod {
       __obj.asInstanceOf[CallOptions]
     }
     
-    extension [Self <: CallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object mod {
       __obj.asInstanceOf[ContractOptions]
     }
     
-    extension [Self <: ContractOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContractOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -194,7 +196,8 @@ object mod {
       __obj.asInstanceOf[DeployOptions]
     }
     
-    extension [Self <: DeployOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeployOptions] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: js.Array[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object mod {
       __obj.asInstanceOf[EstimateGasOptions]
     }
     
-    extension [Self <: EstimateGasOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EstimateGasOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -277,7 +281,8 @@ object mod {
       __obj.asInstanceOf[EventData]
     }
     
-    extension [Self <: EventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -314,7 +319,8 @@ object mod {
       __obj.asInstanceOf[EventOptions]
     }
     
-    extension [Self <: EventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -339,7 +345,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -362,7 +369,8 @@ object mod {
       __obj.asInstanceOf[PastEventOptions]
     }
     
-    extension [Self <: PastEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PastEventOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -389,7 +397,8 @@ object mod {
       __obj.asInstanceOf[SendOptions]
     }
     
-    extension [Self <: SendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

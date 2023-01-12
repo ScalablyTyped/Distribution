@@ -93,7 +93,8 @@ object mod {
       __obj.asInstanceOf[Input]
     }
     
-    extension [Self <: Input](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -276,7 +277,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowUrlPathVarMatching(value: Boolean): Self = StObject.set(x, "allowUrlPathVarMatching", value.asInstanceOf[js.Any])
       
@@ -383,7 +385,8 @@ object mod {
       __obj.asInstanceOf[OptionsBase]
     }
     
-    extension [Self <: OptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsBase] (val x: Self) extends AnyVal {
       
       inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
@@ -408,7 +411,8 @@ object mod {
       __obj.asInstanceOf[OptionsCriteria]
     }
     
-    extension [Self <: OptionsCriteria](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsCriteria] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: OptionsVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
@@ -452,7 +456,8 @@ object mod {
       __obj.asInstanceOf[OptionsDocument[T]]
     }
     
-    extension [Self <: OptionsDocument[?], T /* <: boolean | `enum` | string | integer | array */](x: Self & OptionsDocument[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsDocument[?], T /* <: boolean | `enum` | string | integer | array */] (val x: Self & OptionsDocument[T]) extends AnyVal {
       
       inline def setDefault(
         value: js.Array[
@@ -498,7 +503,8 @@ object mod {
       __obj.asInstanceOf[OptionsTypes]
     }
     
-    extension [Self <: OptionsTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsTypes] (val x: Self) extends AnyVal {
       
       inline def setArray(value: js.Array[Any]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -555,7 +561,8 @@ object mod {
       __obj.asInstanceOf[SuccessfulValidationResult]
     }
     
-    extension [Self <: SuccessfulValidationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessfulValidationResult] (val x: Self) extends AnyVal {
       
       inline def setResult(value: `true`): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
@@ -576,7 +583,8 @@ object mod {
       __obj.asInstanceOf[UnsuccessfulValidationResult]
     }
     
-    extension [Self <: UnsuccessfulValidationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsuccessfulValidationResult] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       

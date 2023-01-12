@@ -106,7 +106,8 @@ object SeriesMappointOptions {
     __obj.asInstanceOf[SeriesMappointOptions]
   }
   
-  extension [Self <: SeriesMappointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesMappointOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double | (js.Tuple2[Double, Double | Null]) | Null | SeriesMappointDataOptions]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

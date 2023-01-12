@@ -43,7 +43,8 @@ object ServiceError {
     __obj.asInstanceOf[ServiceError]
   }
   
-  extension [Self <: ServiceError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceError] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: DateTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

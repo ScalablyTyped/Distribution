@@ -18,7 +18,8 @@ object JsonLogicOr {
     __obj.asInstanceOf[JsonLogicOr[AddOps]]
   }
   
-  extension [Self <: JsonLogicOr[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicOr[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicOr[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicOr[AddOps]) extends AnyVal {
     
     inline def setOr(value: js.Array[RulesLogic[AddOps]]): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     

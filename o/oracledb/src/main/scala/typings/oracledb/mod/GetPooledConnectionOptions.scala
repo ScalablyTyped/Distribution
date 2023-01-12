@@ -25,7 +25,8 @@ object GetPooledConnectionOptions {
     __obj.asInstanceOf[GetPooledConnectionOptions]
   }
   
-  extension [Self <: GetPooledConnectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPooledConnectionOptions] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

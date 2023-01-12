@@ -24,7 +24,8 @@ object NumberOfRows {
     __obj.asInstanceOf[NumberOfRows]
   }
   
-  extension [Self <: NumberOfRows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberOfRows] (val x: Self) extends AnyVal {
     
     inline def setNumberOfRows(value: int): Self = StObject.set(x, "numberOfRows", value.asInstanceOf[js.Any])
     

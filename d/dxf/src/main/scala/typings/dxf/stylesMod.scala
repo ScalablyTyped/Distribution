@@ -37,7 +37,8 @@ object stylesMod {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setBigFontFileName(value: String): Self = StObject.set(x, "bigFontFileName", value.asInstanceOf[js.Any])
       

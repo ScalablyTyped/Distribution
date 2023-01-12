@@ -38,7 +38,8 @@ object WebResponseDetails {
     __obj.asInstanceOf[WebResponseDetails]
   }
   
-  extension [Self <: WebResponseDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebResponseDetails] (val x: Self) extends AnyVal {
     
     inline def setStatusCode(value: integer): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     

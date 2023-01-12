@@ -29,7 +29,8 @@ object LineElementProps {
     __obj.asInstanceOf[LineElementProps]
   }
   
-  extension [Self <: LineElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineElementProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

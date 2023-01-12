@@ -216,7 +216,8 @@ object TypeDocOptionValues {
     __obj.asInstanceOf[TypeDocOptionValues]
   }
   
-  extension [Self <: TypeDocOptionValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeDocOptionValues] (val x: Self) extends AnyVal {
     
     inline def setBasePath(
       value: /* import warning: importer.ImportType#apply Failed type conversion: unknown extends string ? unknown : string extends typedoc.typedoc/dist/lib/utils/options/declaration.ManuallyValidatedOption<infer ManuallyValidated> ? ManuallyValidated : string extends string | std.Array<string> | number | boolean | std.Record<string, boolean> ? string : string[any | undefined] */ js.Any

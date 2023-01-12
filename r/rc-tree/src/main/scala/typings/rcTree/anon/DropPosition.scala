@@ -26,7 +26,8 @@ object DropPosition {
     __obj.asInstanceOf[DropPosition]
   }
   
-  extension [Self <: DropPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropPosition] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: typings.rcTree.esInterfaceMod.Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

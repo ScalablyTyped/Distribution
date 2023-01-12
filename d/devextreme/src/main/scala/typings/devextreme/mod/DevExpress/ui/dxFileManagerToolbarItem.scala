@@ -35,7 +35,8 @@ object dxFileManagerToolbarItem {
     __obj.asInstanceOf[dxFileManagerToolbarItem]
   }
   
-  extension [Self <: dxFileManagerToolbarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFileManagerToolbarItem] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

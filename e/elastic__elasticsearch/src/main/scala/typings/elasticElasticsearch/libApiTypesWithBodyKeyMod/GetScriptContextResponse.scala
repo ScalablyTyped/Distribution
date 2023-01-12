@@ -15,7 +15,8 @@ object GetScriptContextResponse {
     __obj.asInstanceOf[GetScriptContextResponse]
   }
   
-  extension [Self <: GetScriptContextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScriptContextResponse] (val x: Self) extends AnyVal {
     
     inline def setContexts(value: js.Array[GetScriptContextContext]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     

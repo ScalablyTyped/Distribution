@@ -16,7 +16,8 @@ object VerticalAlignProps {
     __obj.asInstanceOf[VerticalAlignProps[TLength]]
   }
   
-  extension [Self <: VerticalAlignProps[?], TLength](x: Self & VerticalAlignProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerticalAlignProps[?], TLength] (val x: Self & VerticalAlignProps[TLength]) extends AnyVal {
     
     inline def setVerticalAlign(value: ResponsiveValue[VerticalAlign[TLength]]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     

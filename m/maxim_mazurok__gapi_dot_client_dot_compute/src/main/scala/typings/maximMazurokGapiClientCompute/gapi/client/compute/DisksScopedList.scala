@@ -20,7 +20,8 @@ object DisksScopedList {
     __obj.asInstanceOf[DisksScopedList]
   }
   
-  extension [Self <: DisksScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisksScopedList] (val x: Self) extends AnyVal {
     
     inline def setDisks(value: js.Array[Disk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     

@@ -518,7 +518,8 @@ trait ParentMaps extends StObject {
 }
 object ParentMaps {
   
-  extension [Self <: ParentMaps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentMaps] (val x: Self) extends AnyVal {
     
     inline def setAnyTypeAnnotation(
       value: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_

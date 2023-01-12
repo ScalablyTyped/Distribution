@@ -22,7 +22,8 @@ object sdkPageModMod {
     @js.native
     def apply(options: AttachTo): PageMod = js.native
     
-    extension [Self <: PageMod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageMod] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

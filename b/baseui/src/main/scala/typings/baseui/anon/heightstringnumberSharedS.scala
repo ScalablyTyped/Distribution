@@ -32,7 +32,8 @@ object heightstringnumberSharedS {
     __obj.asInstanceOf[heightstringnumberSharedS]
   }
   
-  extension [Self <: heightstringnumberSharedS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: heightstringnumberSharedS] (val x: Self) extends AnyVal {
     
     inline def set$color(value: String): Self = StObject.set(x, "$color", value.asInstanceOf[js.Any])
     

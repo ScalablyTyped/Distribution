@@ -43,7 +43,8 @@ object GetMigrationsRequest {
     __obj.asInstanceOf[GetMigrationsRequest]
   }
   
-  extension [Self <: GetMigrationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMigrationsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

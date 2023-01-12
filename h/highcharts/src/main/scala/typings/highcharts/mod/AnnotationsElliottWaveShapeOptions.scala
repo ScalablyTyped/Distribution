@@ -83,7 +83,8 @@ object AnnotationsElliottWaveShapeOptions {
     __obj.asInstanceOf[AnnotationsElliottWaveShapeOptions]
   }
   
-  extension [Self <: AnnotationsElliottWaveShapeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsElliottWaveShapeOptions] (val x: Self) extends AnyVal {
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     

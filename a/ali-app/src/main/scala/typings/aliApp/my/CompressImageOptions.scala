@@ -42,7 +42,8 @@ object CompressImageOptions {
     __obj.asInstanceOf[CompressImageOptions]
   }
   
-  extension [Self <: CompressImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompressImageOptions] (val x: Self) extends AnyVal {
     
     inline def setApFilePaths(value: js.Array[String]): Self = StObject.set(x, "apFilePaths", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object ASPxClientMenu {
     __obj.asInstanceOf[ASPxClientMenu]
   }
   
-  extension [Self <: ASPxClientMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientMenu] (val x: Self) extends AnyVal {
     
     inline def setGetOrientation(value: () => String): Self = StObject.set(x, "GetOrientation", js.Any.fromFunction0(value))
     

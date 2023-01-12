@@ -23,7 +23,8 @@ object DeleteFileShareInput {
     __obj.asInstanceOf[DeleteFileShareInput]
   }
   
-  extension [Self <: DeleteFileShareInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileShareInput] (val x: Self) extends AnyVal {
     
     inline def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     

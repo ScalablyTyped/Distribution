@@ -17,7 +17,8 @@ object TeamFieldValue {
     __obj.asInstanceOf[TeamFieldValue]
   }
   
-  extension [Self <: TeamFieldValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamFieldValue] (val x: Self) extends AnyVal {
     
     inline def setIncludeChildren(value: Boolean): Self = StObject.set(x, "includeChildren", value.asInstanceOf[js.Any])
     

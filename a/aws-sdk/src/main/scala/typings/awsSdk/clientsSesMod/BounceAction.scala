@@ -38,7 +38,8 @@ object BounceAction {
     __obj.asInstanceOf[BounceAction]
   }
   
-  extension [Self <: BounceAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BounceAction] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: BounceMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TitleContainer {
     __obj.asInstanceOf[TitleContainer]
   }
   
-  extension [Self <: TitleContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleContainer] (val x: Self) extends AnyVal {
     
     inline def setTitleContainer(value: ViewStyle): Self = StObject.set(x, "titleContainer", value.asInstanceOf[js.Any])
     

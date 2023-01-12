@@ -25,7 +25,8 @@ object GoogleCloudDialogflowCxV3CalculateCoverageResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3CalculateCoverageResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3CalculateCoverageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3CalculateCoverageResponse] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

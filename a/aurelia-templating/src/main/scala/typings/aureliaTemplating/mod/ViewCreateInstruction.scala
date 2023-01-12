@@ -23,7 +23,8 @@ object ViewCreateInstruction {
     __obj.asInstanceOf[ViewCreateInstruction]
   }
   
-  extension [Self <: ViewCreateInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewCreateInstruction] (val x: Self) extends AnyVal {
     
     inline def setEnhance(value: Boolean): Self = StObject.set(x, "enhance", value.asInstanceOf[js.Any])
     

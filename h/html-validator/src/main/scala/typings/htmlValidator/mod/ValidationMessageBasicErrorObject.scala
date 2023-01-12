@@ -20,7 +20,8 @@ object ValidationMessageBasicErrorObject {
     __obj.asInstanceOf[ValidationMessageBasicErrorObject]
   }
   
-  extension [Self <: ValidationMessageBasicErrorObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationMessageBasicErrorObject] (val x: Self) extends AnyVal {
     
     inline def setSubType(value: fatal): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
     

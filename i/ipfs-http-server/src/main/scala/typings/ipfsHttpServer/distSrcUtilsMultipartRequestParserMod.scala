@@ -42,7 +42,8 @@ object distSrcUtilsMultipartRequestParserMod {
       __obj.asInstanceOf[MultipartUpload]
     }
     
-    extension [Self <: MultipartUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipartUpload] (val x: Self) extends AnyVal {
       
       inline def setBody(value: AsyncIterable[js.typedarray.Uint8Array]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

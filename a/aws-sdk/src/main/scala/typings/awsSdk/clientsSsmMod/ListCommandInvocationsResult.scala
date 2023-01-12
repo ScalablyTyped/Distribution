@@ -23,7 +23,8 @@ object ListCommandInvocationsResult {
     __obj.asInstanceOf[ListCommandInvocationsResult]
   }
   
-  extension [Self <: ListCommandInvocationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCommandInvocationsResult] (val x: Self) extends AnyVal {
     
     inline def setCommandInvocations(value: CommandInvocationList): Self = StObject.set(x, "CommandInvocations", value.asInstanceOf[js.Any])
     

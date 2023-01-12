@@ -23,7 +23,8 @@ object BasicAuthenticator {
   @js.native
   val ^ : BasicAuthenticatorStatic = js.native
   
-  extension [Self <: BasicAuthenticator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicAuthenticator] (val x: Self) extends AnyVal {
     
     inline def setAuthenticateRequest(value: BasicAuthenticatorRequest => BasicAuthenticatorRequest): Self = StObject.set(x, "authenticateRequest", js.Any.fromFunction1(value))
   }

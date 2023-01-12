@@ -23,7 +23,8 @@ object ScrollRequest {
     __obj.asInstanceOf[ScrollRequest]
   }
   
-  extension [Self <: ScrollRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Scroll): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

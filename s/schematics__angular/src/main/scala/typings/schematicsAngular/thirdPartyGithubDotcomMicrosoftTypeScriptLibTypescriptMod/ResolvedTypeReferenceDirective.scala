@@ -22,7 +22,8 @@ object ResolvedTypeReferenceDirective {
     __obj.asInstanceOf[ResolvedTypeReferenceDirective]
   }
   
-  extension [Self <: ResolvedTypeReferenceDirective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedTypeReferenceDirective] (val x: Self) extends AnyVal {
     
     inline def setIsExternalLibraryImport(value: Boolean): Self = StObject.set(x, "isExternalLibraryImport", value.asInstanceOf[js.Any])
     

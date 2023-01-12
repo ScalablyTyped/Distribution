@@ -28,7 +28,8 @@ object TrainingResult {
     __obj.asInstanceOf[TrainingResult]
   }
   
-  extension [Self <: TrainingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingResult] (val x: Self) extends AnyVal {
     
     inline def setDataValidationMetrics(value: DataValidationMetrics): Self = StObject.set(x, "dataValidationMetrics", value.asInstanceOf[js.Any])
     

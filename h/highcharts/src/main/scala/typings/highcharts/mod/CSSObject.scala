@@ -136,7 +136,8 @@ object CSSObject {
     __obj.asInstanceOf[CSSObject]
   }
   
-  extension [Self <: CSSObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSObject] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

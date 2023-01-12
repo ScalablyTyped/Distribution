@@ -64,7 +64,8 @@ object libApiStatisticsMod {
       __obj.asInstanceOf[StatisticsApi]
     }
     
-    extension [Self <: StatisticsApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatisticsApi] (val x: Self) extends AnyVal {
       
       inline def setAverage(value: String => Double): Self = StObject.set(x, "average", js.Any.fromFunction1(value))
       

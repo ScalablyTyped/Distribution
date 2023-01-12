@@ -19,7 +19,8 @@ object DeviceMetrics {
     __obj.asInstanceOf[DeviceMetrics]
   }
   
-  extension [Self <: DeviceMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceMetrics] (val x: Self) extends AnyVal {
     
     inline def setDeviceMetrics(value: Height): Self = StObject.set(x, "deviceMetrics", value.asInstanceOf[js.Any])
     

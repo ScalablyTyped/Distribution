@@ -2288,7 +2288,8 @@ object sapMSplitContainerMod {
       __obj.asInstanceOf[SplitContainerSettings]
     }
     
-    extension [Self <: SplitContainerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitContainerSettings] (val x: Self) extends AnyVal {
       
       inline def setAfterDetailNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterDetailNavigate", js.Any.fromFunction1(value))
       

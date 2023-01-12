@@ -46,7 +46,8 @@ object ISmsTextMessage {
     __obj.asInstanceOf[ISmsTextMessage]
   }
   
-  extension [Self <: ISmsTextMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISmsTextMessage] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object DeleteExpressionRequest {
     __obj.asInstanceOf[DeleteExpressionRequest]
   }
   
-  extension [Self <: DeleteExpressionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteExpressionRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

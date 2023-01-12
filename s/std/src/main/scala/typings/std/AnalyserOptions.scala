@@ -27,7 +27,8 @@ object AnalyserOptions {
     __obj.asInstanceOf[AnalyserOptions]
   }
   
-  extension [Self <: AnalyserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyserOptions] (val x: Self) extends AnyVal {
     
     inline def setFftSize(value: Double): Self = StObject.set(x, "fftSize", value.asInstanceOf[js.Any])
     

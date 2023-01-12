@@ -28,7 +28,8 @@ object GetReportGroupTrendInput {
     __obj.asInstanceOf[GetReportGroupTrendInput]
   }
   
-  extension [Self <: GetReportGroupTrendInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReportGroupTrendInput] (val x: Self) extends AnyVal {
     
     inline def setNumOfReports(value: PageSize): Self = StObject.set(x, "numOfReports", value.asInstanceOf[js.Any])
     

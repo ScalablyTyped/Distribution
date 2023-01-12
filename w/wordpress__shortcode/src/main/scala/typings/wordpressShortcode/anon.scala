@@ -55,7 +55,8 @@ object anon {
       __obj.asInstanceOf[PartialShortcodeAttrs]
     }
     
-    extension [Self <: PartialShortcodeAttrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialShortcodeAttrs] (val x: Self) extends AnyVal {
       
       inline def setNamed(value: Record[String, js.UndefOr[String]]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object anon {
       __obj.asInstanceOf[PartialShortcodeOptions]
     }
     
-    extension [Self <: PartialShortcodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialShortcodeOptions] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: PartialShortcodeAttrs | String): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object anon {
       __obj.asInstanceOf[typeclosedcontentstringat]
     }
     
-    extension [Self <: typeclosedcontentstringat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typeclosedcontentstringat] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: ShortcodeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -159,7 +162,8 @@ object anon {
       __obj.asInstanceOf[typeselfclosingsingleattr]
     }
     
-    extension [Self <: typeselfclosingsingleattr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typeselfclosingsingleattr] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: ShortcodeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

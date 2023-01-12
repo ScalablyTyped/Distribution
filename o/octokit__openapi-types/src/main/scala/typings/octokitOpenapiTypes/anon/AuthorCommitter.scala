@@ -56,7 +56,8 @@ object AuthorCommitter {
     __obj.asInstanceOf[AuthorCommitter]
   }
   
-  extension [Self <: AuthorCommitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorCommitter] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: DateString): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

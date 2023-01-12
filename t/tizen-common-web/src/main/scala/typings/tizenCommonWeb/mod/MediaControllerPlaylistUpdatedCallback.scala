@@ -32,7 +32,8 @@ object MediaControllerPlaylistUpdatedCallback {
     __obj.asInstanceOf[MediaControllerPlaylistUpdatedCallback]
   }
   
-  extension [Self <: MediaControllerPlaylistUpdatedCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerPlaylistUpdatedCallback] (val x: Self) extends AnyVal {
     
     inline def setOnplaylistdeleted(value: (String, String) => Unit): Self = StObject.set(x, "onplaylistdeleted", js.Any.fromFunction2(value))
     

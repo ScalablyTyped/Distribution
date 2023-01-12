@@ -28,7 +28,8 @@ object MessageDsn {
     __obj.asInstanceOf[MessageDsn]
   }
   
-  extension [Self <: MessageDsn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageDsn] (val x: Self) extends AnyVal {
     
     inline def setArrivalDate(value: js.Date): Self = StObject.set(x, "ArrivalDate", value.asInstanceOf[js.Any])
     

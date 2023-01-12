@@ -20,7 +20,8 @@ object ICreateSessionEntityTypeRequest {
     __obj.asInstanceOf[ICreateSessionEntityTypeRequest]
   }
   
-  extension [Self <: ICreateSessionEntityTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateSessionEntityTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

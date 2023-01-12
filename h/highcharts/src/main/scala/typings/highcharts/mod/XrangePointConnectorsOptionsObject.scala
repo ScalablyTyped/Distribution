@@ -95,7 +95,8 @@ object XrangePointConnectorsOptionsObject {
     __obj.asInstanceOf[XrangePointConnectorsOptionsObject]
   }
   
-  extension [Self <: XrangePointConnectorsOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XrangePointConnectorsOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmMargin(value: Double): Self = StObject.set(x, "algorithmMargin", value.asInstanceOf[js.Any])
     

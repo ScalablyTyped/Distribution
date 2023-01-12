@@ -18,7 +18,8 @@ object IControlParent {
     __obj.asInstanceOf[IControlParent]
   }
   
-  extension [Self <: IControlParent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IControlParent] (val x: Self) extends AnyVal {
     
     inline def setGetChildElement(value: IControl => js.Promise[HTMLElement]): Self = StObject.set(x, "getChildElement", js.Any.fromFunction1(value))
   }

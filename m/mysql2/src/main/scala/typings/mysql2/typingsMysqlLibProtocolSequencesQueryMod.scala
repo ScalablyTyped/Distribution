@@ -102,7 +102,8 @@ object typingsMysqlLibProtocolSequencesQueryMod {
       __obj.asInstanceOf[QueryError]
     }
     
-    extension [Self <: QueryError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -183,7 +184,8 @@ object typingsMysqlLibProtocolSequencesQueryMod {
       __obj.asInstanceOf[QueryOptions]
     }
     
-    extension [Self <: QueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
       
       inline def setNestTables(value: Any): Self = StObject.set(x, "nestTables", value.asInstanceOf[js.Any])
       
@@ -230,7 +232,8 @@ object typingsMysqlLibProtocolSequencesQueryMod {
       __obj.asInstanceOf[StreamOptions]
     }
     
-    extension [Self <: StreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
       
       inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object ProcedurePerformer {
     __obj.asInstanceOf[ProcedurePerformer]
   }
   
-  extension [Self <: ProcedurePerformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcedurePerformer] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

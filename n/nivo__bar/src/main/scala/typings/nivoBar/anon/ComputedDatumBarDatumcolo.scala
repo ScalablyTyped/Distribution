@@ -45,7 +45,8 @@ object ComputedDatumBarDatumcolo {
     __obj.asInstanceOf[ComputedDatumBarDatumcolo]
   }
   
-  extension [Self <: ComputedDatumBarDatumcolo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedDatumBarDatumcolo] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BeaconHistory {
     __obj.asInstanceOf[BeaconHistory]
   }
   
-  extension [Self <: BeaconHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeaconHistory] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

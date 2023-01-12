@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[TaskerJs]
     }
     
-    extension [Self <: TaskerJs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskerJs] (val x: Self) extends AnyVal {
       
       inline def setHotReload(value: () => js.Promise[Unit]): Self = StObject.set(x, "hotReload", js.Any.fromFunction0(value))
       
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[TaskerJsModule]
     }
     
-    extension [Self <: TaskerJsModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskerJsModule] (val x: Self) extends AnyVal {
       
       inline def setEnter(
         value: (StringDictionary[String], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify tasker */ Any) => Unit

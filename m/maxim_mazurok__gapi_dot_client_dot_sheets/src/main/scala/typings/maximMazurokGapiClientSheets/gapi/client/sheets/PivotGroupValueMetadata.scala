@@ -19,7 +19,8 @@ object PivotGroupValueMetadata {
     __obj.asInstanceOf[PivotGroupValueMetadata]
   }
   
-  extension [Self <: PivotGroupValueMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGroupValueMetadata] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

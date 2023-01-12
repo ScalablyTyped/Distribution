@@ -22,7 +22,8 @@ object AnalysisSnowballTokenFilter {
     __obj.asInstanceOf[AnalysisSnowballTokenFilter]
   }
   
-  extension [Self <: AnalysisSnowballTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisSnowballTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: AnalysisSnowballLanguage): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

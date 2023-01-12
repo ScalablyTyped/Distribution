@@ -19,7 +19,8 @@ object AttrsLinSpaceAttrs {
     __obj.asInstanceOf[AttrsLinSpaceAttrs]
   }
   
-  extension [Self <: AttrsLinSpaceAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsLinSpaceAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: LinSpaceAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

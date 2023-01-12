@@ -35,7 +35,8 @@ object ProducerMessage {
     __obj.asInstanceOf[ProducerMessage]
   }
   
-  extension [Self <: ProducerMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProducerMessage] (val x: Self) extends AnyVal {
     
     inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

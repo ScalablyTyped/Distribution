@@ -22,7 +22,8 @@ object MenuOption {
     __obj.asInstanceOf[MenuOption]
   }
   
-  extension [Self <: MenuOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuOption] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

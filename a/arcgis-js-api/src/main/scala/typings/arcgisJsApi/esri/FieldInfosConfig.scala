@@ -34,7 +34,8 @@ object FieldInfosConfig {
     __obj.asInstanceOf[FieldInfosConfig]
   }
   
-  extension [Self <: FieldInfosConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldInfosConfig] (val x: Self) extends AnyVal {
     
     inline def setEditFieldsInfo(value: EditFieldsInfo): Self = StObject.set(x, "editFieldsInfo", value.asInstanceOf[js.Any])
     

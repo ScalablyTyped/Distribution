@@ -21,7 +21,8 @@ object ConsoleLogEvent {
     __obj.asInstanceOf[ConsoleLogEvent]
   }
   
-  extension [Self <: ConsoleLogEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsoleLogEvent] (val x: Self) extends AnyVal {
     
     inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     

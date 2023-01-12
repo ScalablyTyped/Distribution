@@ -51,7 +51,8 @@ object libStateInterfaceMod {
       __obj.asInstanceOf[HrefOptions]
     }
     
-    extension [Self <: HrefOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HrefOptions] (val x: Self) extends AnyVal {
       
       inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object libStateInterfaceMod {
       __obj.asInstanceOf[LazyLoadResult]
     }
     
-    extension [Self <: LazyLoadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LazyLoadResult] (val x: Self) extends AnyVal {
       
       inline def setStates(value: js.Array[StateDeclaration]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
       
@@ -705,7 +707,8 @@ object libStateInterfaceMod {
       __obj.asInstanceOf[StateDeclaration]
     }
     
-    extension [Self <: StateDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateDeclaration] (val x: Self) extends AnyVal {
       
       inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
       
@@ -805,7 +808,8 @@ object libStateInterfaceMod {
       __obj.asInstanceOf[TargetStateDef]
     }
     
-    extension [Self <: TargetStateDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetStateDef] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: TransitionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -878,7 +882,8 @@ object libStateInterfaceMod {
       __obj.asInstanceOf[ViewDeclaration]
     }
     
-    extension [Self <: ViewDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewDeclaration] (val x: Self) extends AnyVal {
       
       inline def set$context(value: ViewContext): Self = StObject.set(x, "$context", value.asInstanceOf[js.Any])
       

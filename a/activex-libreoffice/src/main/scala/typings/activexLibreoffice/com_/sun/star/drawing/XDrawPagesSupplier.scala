@@ -30,7 +30,8 @@ object XDrawPagesSupplier {
     __obj.asInstanceOf[XDrawPagesSupplier]
   }
   
-  extension [Self <: XDrawPagesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDrawPagesSupplier] (val x: Self) extends AnyVal {
     
     inline def setDrawPages(value: XDrawPages): Self = StObject.set(x, "DrawPages", value.asInstanceOf[js.Any])
     

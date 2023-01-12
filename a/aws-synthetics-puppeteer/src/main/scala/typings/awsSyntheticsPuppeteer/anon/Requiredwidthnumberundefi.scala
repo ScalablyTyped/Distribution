@@ -33,7 +33,8 @@ object Requiredwidthnumberundefi {
     __obj.asInstanceOf[Requiredwidthnumberundefi]
   }
   
-  extension [Self <: Requiredwidthnumberundefi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Requiredwidthnumberundefi] (val x: Self) extends AnyVal {
     
     inline def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
     

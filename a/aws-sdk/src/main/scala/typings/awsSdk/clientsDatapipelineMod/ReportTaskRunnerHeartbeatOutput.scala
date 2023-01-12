@@ -18,7 +18,8 @@ object ReportTaskRunnerHeartbeatOutput {
     __obj.asInstanceOf[ReportTaskRunnerHeartbeatOutput]
   }
   
-  extension [Self <: ReportTaskRunnerHeartbeatOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportTaskRunnerHeartbeatOutput] (val x: Self) extends AnyVal {
     
     inline def setTerminate(value: Boolean): Self = StObject.set(x, "terminate", value.asInstanceOf[js.Any])
   }

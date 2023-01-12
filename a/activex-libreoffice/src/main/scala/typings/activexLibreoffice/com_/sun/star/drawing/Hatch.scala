@@ -31,7 +31,8 @@ object Hatch {
     __obj.asInstanceOf[Hatch]
   }
   
-  extension [Self <: Hatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hatch] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "Angle", value.asInstanceOf[js.Any])
     

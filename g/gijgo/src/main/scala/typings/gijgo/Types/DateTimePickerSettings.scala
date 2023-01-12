@@ -35,7 +35,8 @@ object DateTimePickerSettings {
     __obj.asInstanceOf[DateTimePickerSettings]
   }
   
-  extension [Self <: DateTimePickerSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimePickerSettings] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ Any => Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

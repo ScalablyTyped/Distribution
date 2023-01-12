@@ -140,7 +140,8 @@ object mod {
       __obj.asInstanceOf[StreamOptions]
     }
     
-    extension [Self <: StreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
       
       inline def setFacility(value: Facility): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
       

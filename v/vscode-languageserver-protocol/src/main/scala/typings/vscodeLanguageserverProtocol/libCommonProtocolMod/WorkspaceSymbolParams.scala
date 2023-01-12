@@ -22,7 +22,8 @@ object WorkspaceSymbolParams {
     __obj.asInstanceOf[WorkspaceSymbolParams]
   }
   
-  extension [Self <: WorkspaceSymbolParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceSymbolParams] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

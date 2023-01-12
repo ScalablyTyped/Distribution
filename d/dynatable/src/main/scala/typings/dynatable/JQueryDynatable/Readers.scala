@@ -47,7 +47,8 @@ object Readers {
     __obj.asInstanceOf[Readers]
   }
   
-  extension [Self <: Readers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readers] (val x: Self) extends AnyVal {
     
     inline def set_attributeReader(value: (/* cell */ Element, /* record */ Any) => Any): Self = StObject.set(x, "_attributeReader", js.Any.fromFunction2(value))
     

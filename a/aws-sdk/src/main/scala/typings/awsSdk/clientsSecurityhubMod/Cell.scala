@@ -33,7 +33,8 @@ object Cell {
     __obj.asInstanceOf[Cell]
   }
   
-  extension [Self <: Cell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
     
     inline def setCellReference(value: NonEmptyString): Self = StObject.set(x, "CellReference", value.asInstanceOf[js.Any])
     

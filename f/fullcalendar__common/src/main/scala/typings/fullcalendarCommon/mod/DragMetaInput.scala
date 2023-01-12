@@ -33,7 +33,8 @@ object DragMetaInput {
     __obj.asInstanceOf[DragMetaInput]
   }
   
-  extension [Self <: DragMetaInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragMetaInput] (val x: Self) extends AnyVal {
     
     inline def setCreate(
       value: /* import warning: importer.ImportType#apply Failed type conversion: std.BooleanConstructor extends (input : infer RawType): infer RefinedType ? any extends RawType ? RefinedType : RawType : never */ js.Any

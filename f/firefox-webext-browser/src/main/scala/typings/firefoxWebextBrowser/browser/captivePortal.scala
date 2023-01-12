@@ -37,7 +37,8 @@ object captivePortal {
       __obj.asInstanceOf[OnStateChangedDetails]
     }
     
-    extension [Self <: OnStateChangedDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnStateChangedDetails] (val x: Self) extends AnyVal {
       
       inline def setState(value: OnStateChangedDetailsState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }

@@ -96,7 +96,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DisqusJSConfig]
     }
     
-    extension [Self <: DisqusJSConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisqusJSConfig] (val x: Self) extends AnyVal {
       
       inline def setAdmin(value: String): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       

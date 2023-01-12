@@ -40,7 +40,8 @@ object AppDetailsOptions {
     __obj.asInstanceOf[AppDetailsOptions]
   }
   
-  extension [Self <: AppDetailsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppDetailsOptions] (val x: Self) extends AnyVal {
     
     inline def setAppIconIndex(value: Double): Self = StObject.set(x, "appIconIndex", value.asInstanceOf[js.Any])
     

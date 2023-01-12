@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[PartialDisqusJSConfig]
     }
     
-    extension [Self <: PartialDisqusJSConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDisqusJSConfig] (val x: Self) extends AnyVal {
       
       inline def setAdmin(value: String): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       

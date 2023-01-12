@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[DisplayTypeInput]
     }
     
-    extension [Self <: DisplayTypeInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayTypeInput] (val x: Self) extends AnyVal {
       
       inline def setCustomInput(value: ComponentType[Any]): Self = StObject.set(x, "customInput", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[DisplayTypeText]
     }
     
-    extension [Self <: DisplayTypeText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayTypeText] (val x: Self) extends AnyVal {
       
       inline def setDisplayType(value: text): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
       
@@ -134,7 +136,8 @@ object mod {
       __obj.asInstanceOf[Values]
     }
     
-    extension [Self <: Values](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Values] (val x: Self) extends AnyVal {
       
       inline def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
       

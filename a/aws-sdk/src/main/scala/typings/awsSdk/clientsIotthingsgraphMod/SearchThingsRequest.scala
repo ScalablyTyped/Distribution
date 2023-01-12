@@ -33,7 +33,8 @@ object SearchThingsRequest {
     __obj.asInstanceOf[SearchThingsRequest]
   }
   
-  extension [Self <: SearchThingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchThingsRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: Urn): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Expose]
     }
     
-    extension [Self <: Expose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expose] (val x: Self) extends AnyVal {
       
       inline def setExpose(value: String | `false`): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
       

@@ -226,7 +226,8 @@ object RadarControllerDatasetOptions {
     __obj.asInstanceOf[RadarControllerDatasetOptions]
   }
   
-  extension [Self <: RadarControllerDatasetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadarControllerDatasetOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpecradaronProgr): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

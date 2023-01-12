@@ -63,7 +63,8 @@ object InitializeRequestArguments {
     __obj.asInstanceOf[InitializeRequestArguments]
   }
   
-  extension [Self <: InitializeRequestArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializeRequestArguments] (val x: Self) extends AnyVal {
     
     inline def setAdapterID(value: String): Self = StObject.set(x, "adapterID", value.asInstanceOf[js.Any])
     

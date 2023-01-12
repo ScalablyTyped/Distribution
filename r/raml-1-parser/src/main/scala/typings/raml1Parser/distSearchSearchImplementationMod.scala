@@ -157,7 +157,8 @@ object distSearchSearchImplementationMod {
       __obj.asInstanceOf[FindUsagesResult]
     }
     
-    extension [Self <: FindUsagesResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindUsagesResult] (val x: Self) extends AnyVal {
       
       inline def setNode(value: IHighLevelNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       

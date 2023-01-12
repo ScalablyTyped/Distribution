@@ -18,7 +18,8 @@ object ResolveCustomerRequest {
     __obj.asInstanceOf[ResolveCustomerRequest]
   }
   
-  extension [Self <: ResolveCustomerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveCustomerRequest] (val x: Self) extends AnyVal {
     
     inline def setRegistrationToken(value: NonEmptyString): Self = StObject.set(x, "RegistrationToken", value.asInstanceOf[js.Any])
   }

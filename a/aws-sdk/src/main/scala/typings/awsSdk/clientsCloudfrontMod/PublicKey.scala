@@ -28,7 +28,8 @@ object PublicKey {
     __obj.asInstanceOf[PublicKey]
   }
   
-  extension [Self <: PublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object SAXParseException {
     __obj.asInstanceOf[SAXParseException]
   }
   
-  extension [Self <: SAXParseException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAXParseException] (val x: Self) extends AnyVal {
     
     inline def setColumnNumber(value: Double): Self = StObject.set(x, "ColumnNumber", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object BorderDiagonal {
     __obj.asInstanceOf[BorderDiagonal]
   }
   
-  extension [Self <: BorderDiagonal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderDiagonal] (val x: Self) extends AnyVal {
     
     inline def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     

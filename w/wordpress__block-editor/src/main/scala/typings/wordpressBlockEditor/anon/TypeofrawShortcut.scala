@@ -44,7 +44,8 @@ object TypeofrawShortcut {
     __obj.asInstanceOf[TypeofrawShortcut]
   }
   
-  extension [Self <: TypeofrawShortcut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofrawShortcut] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: String => String): Self = StObject.set(x, "access", js.Any.fromFunction1(value))
     

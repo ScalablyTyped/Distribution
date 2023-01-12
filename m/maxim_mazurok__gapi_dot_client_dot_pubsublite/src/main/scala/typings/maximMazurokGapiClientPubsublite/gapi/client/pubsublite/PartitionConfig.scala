@@ -29,7 +29,8 @@ object PartitionConfig {
     __obj.asInstanceOf[PartitionConfig]
   }
   
-  extension [Self <: PartitionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionConfig] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: Capacity): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     

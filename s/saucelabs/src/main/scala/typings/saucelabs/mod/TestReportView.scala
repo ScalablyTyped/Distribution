@@ -27,7 +27,8 @@ object TestReportView {
     __obj.asInstanceOf[TestReportView]
   }
   
-  extension [Self <: TestReportView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestReportView] (val x: Self) extends AnyVal {
     
     inline def setReportId(value: Id): Self = StObject.set(x, "reportId", value.asInstanceOf[js.Any])
     

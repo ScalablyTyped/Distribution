@@ -17,7 +17,8 @@ object CustomGestureProps {
     __obj.asInstanceOf[CustomGestureProps]
   }
   
-  extension [Self <: CustomGestureProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomGestureProps] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: js.Array[moves]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object EntityUInfo {
     __obj.asInstanceOf[EntityUInfo]
   }
   
-  extension [Self <: EntityUInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityUInfo] (val x: Self) extends AnyVal {
     
     inline def setEntityUInfo(value: String): Self = StObject.set(x, "entityUInfo", value.asInstanceOf[js.Any])
     

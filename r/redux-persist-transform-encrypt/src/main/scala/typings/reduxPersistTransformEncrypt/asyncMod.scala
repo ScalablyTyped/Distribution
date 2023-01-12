@@ -24,7 +24,8 @@ object asyncMod {
       __obj.asInstanceOf[AsyncEncryptorConfig]
     }
     
-    extension [Self <: AsyncEncryptorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncEncryptorConfig] (val x: Self) extends AnyVal {
       
       inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     }

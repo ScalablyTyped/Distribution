@@ -16,7 +16,8 @@ object IntArrayHparamSearchSpace {
     __obj.asInstanceOf[IntArrayHparamSearchSpace]
   }
   
-  extension [Self <: IntArrayHparamSearchSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntArrayHparamSearchSpace] (val x: Self) extends AnyVal {
     
     inline def setCandidates(value: js.Array[IntArray]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     

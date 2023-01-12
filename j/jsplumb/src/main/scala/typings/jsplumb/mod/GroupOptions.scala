@@ -43,7 +43,8 @@ object GroupOptions {
     __obj.asInstanceOf[GroupOptions]
   }
   
-  extension [Self <: GroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: AnchorSpec): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

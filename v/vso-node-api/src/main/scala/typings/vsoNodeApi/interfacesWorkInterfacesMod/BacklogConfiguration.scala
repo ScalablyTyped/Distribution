@@ -59,7 +59,8 @@ object BacklogConfiguration {
     __obj.asInstanceOf[BacklogConfiguration]
   }
   
-  extension [Self <: BacklogConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BacklogConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBacklogFields(value: BacklogFields): Self = StObject.set(x, "backlogFields", value.asInstanceOf[js.Any])
     

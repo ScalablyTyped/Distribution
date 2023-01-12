@@ -36,7 +36,8 @@ object MapType {
     __obj.asInstanceOf[MapType]
   }
   
-  extension [Self <: MapType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapType] (val x: Self) extends AnyVal {
     
     inline def setGetTile(value: (Double, Double, Double) => HTMLElement | CanvasTile | ImageTile | Tile): Self = StObject.set(x, "getTile", js.Any.fromFunction3(value))
     

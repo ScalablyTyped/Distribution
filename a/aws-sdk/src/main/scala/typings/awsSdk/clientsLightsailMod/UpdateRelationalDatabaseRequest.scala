@@ -63,7 +63,8 @@ object UpdateRelationalDatabaseRequest {
     __obj.asInstanceOf[UpdateRelationalDatabaseRequest]
   }
   
-  extension [Self <: UpdateRelationalDatabaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRelationalDatabaseRequest] (val x: Self) extends AnyVal {
     
     inline def setApplyImmediately(value: Boolean): Self = StObject.set(x, "applyImmediately", value.asInstanceOf[js.Any])
     

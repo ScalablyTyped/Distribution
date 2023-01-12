@@ -28,7 +28,8 @@ object DeploymentCanarySettings {
     __obj.asInstanceOf[DeploymentCanarySettings]
   }
   
-  extension [Self <: DeploymentCanarySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentCanarySettings] (val x: Self) extends AnyVal {
     
     inline def setPercentTraffic(value: Double): Self = StObject.set(x, "percentTraffic", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object mod {
       __obj.asInstanceOf[CellProps]
     }
     
-    extension [Self <: CellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
       
       inline def setColumnKey(value: String | Double): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[ColumnCellProps]
     }
     
-    extension [Self <: ColumnCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnCellProps] (val x: Self) extends AnyVal {
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     }
@@ -158,7 +160,8 @@ object mod {
       __obj.asInstanceOf[ColumnGroupHeaderProps]
     }
     
-    extension [Self <: ColumnGroupHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnGroupHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -219,7 +222,8 @@ object mod {
       __obj.asInstanceOf[ColumnGroupProps]
     }
     
-    extension [Self <: ColumnGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -264,7 +268,8 @@ object mod {
       __obj.asInstanceOf[ColumnHeaderProps]
     }
     
-    extension [Self <: ColumnHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
       
@@ -448,7 +453,8 @@ object mod {
       __obj.asInstanceOf[ColumnProps]
     }
     
-    extension [Self <: ColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -538,7 +544,8 @@ object mod {
       __obj.asInstanceOf[ColumnReorderEndEvent]
     }
     
-    extension [Self <: ColumnReorderEndEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnReorderEndEvent] (val x: Self) extends AnyVal {
       
       inline def setColumnAfter(value: String): Self = StObject.set(x, "columnAfter", value.asInstanceOf[js.Any])
       
@@ -572,7 +579,8 @@ object mod {
       __obj.asInstanceOf[RowProps]
     }
     
-    extension [Self <: RowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -912,7 +920,8 @@ object mod {
       __obj.asInstanceOf[TableProps]
     }
     
-    extension [Self <: TableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
       
       inline def setBufferRowCount(value: Double): Self = StObject.set(x, "bufferRowCount", value.asInstanceOf[js.Any])
       

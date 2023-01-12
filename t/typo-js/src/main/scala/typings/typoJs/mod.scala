@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[TypoSettings]
     }
     
-    extension [Self <: TypoSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypoSettings] (val x: Self) extends AnyVal {
       
       inline def setAsyncLoad(value: Boolean): Self = StObject.set(x, "asyncLoad", value.asInstanceOf[js.Any])
       

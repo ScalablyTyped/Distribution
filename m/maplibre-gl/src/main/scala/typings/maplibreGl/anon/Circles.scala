@@ -19,7 +19,8 @@ object Circles {
     __obj.asInstanceOf[Circles]
   }
   
-  extension [Self <: Circles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Circles] (val x: Self) extends AnyVal {
     
     inline def setCircles(value: js.Array[Double]): Self = StObject.set(x, "circles", value.asInstanceOf[js.Any])
     

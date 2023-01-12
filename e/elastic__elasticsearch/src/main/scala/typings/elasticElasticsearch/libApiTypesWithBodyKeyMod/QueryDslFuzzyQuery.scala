@@ -27,7 +27,8 @@ object QueryDslFuzzyQuery {
     __obj.asInstanceOf[QueryDslFuzzyQuery]
   }
   
-  extension [Self <: QueryDslFuzzyQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslFuzzyQuery] (val x: Self) extends AnyVal {
     
     inline def setFuzziness(value: Fuzziness): Self = StObject.set(x, "fuzziness", value.asInstanceOf[js.Any])
     

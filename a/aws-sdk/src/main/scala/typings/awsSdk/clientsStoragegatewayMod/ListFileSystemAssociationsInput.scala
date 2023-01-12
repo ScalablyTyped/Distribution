@@ -25,7 +25,8 @@ object ListFileSystemAssociationsInput {
     __obj.asInstanceOf[ListFileSystemAssociationsInput]
   }
   
-  extension [Self <: ListFileSystemAssociationsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFileSystemAssociationsInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

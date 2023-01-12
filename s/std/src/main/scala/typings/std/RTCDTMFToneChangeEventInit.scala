@@ -18,7 +18,8 @@ object RTCDTMFToneChangeEventInit {
     __obj.asInstanceOf[RTCDTMFToneChangeEventInit]
   }
   
-  extension [Self <: RTCDTMFToneChangeEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCDTMFToneChangeEventInit] (val x: Self) extends AnyVal {
     
     inline def setTone(value: java.lang.String): Self = StObject.set(x, "tone", value.asInstanceOf[js.Any])
     

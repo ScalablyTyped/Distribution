@@ -20,7 +20,8 @@ object IGenericDimensionProperties {
     __obj.asInstanceOf[IGenericDimensionProperties]
   }
   
-  extension [Self <: IGenericDimensionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericDimensionProperties] (val x: Self) extends AnyVal {
     
     inline def setQDim(value: INxLibraryDimensionDef): Self = StObject.set(x, "qDim", value.asInstanceOf[js.Any])
   }

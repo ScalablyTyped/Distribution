@@ -18,7 +18,8 @@ object MedicalTranscript {
     __obj.asInstanceOf[MedicalTranscript]
   }
   
-  extension [Self <: MedicalTranscript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicalTranscript] (val x: Self) extends AnyVal {
     
     inline def setTranscriptFileUri(value: Uri): Self = StObject.set(x, "TranscriptFileUri", value.asInstanceOf[js.Any])
     

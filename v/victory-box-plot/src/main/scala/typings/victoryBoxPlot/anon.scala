@@ -477,7 +477,8 @@ object anon {
       __obj.asInstanceOf[Animate]
     }
     
-    extension [Self <: Animate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animate] (val x: Self) extends AnyVal {
       
       inline def setAnimate(
         value: Validator[
@@ -825,7 +826,8 @@ object anon {
       __obj.asInstanceOf[Boxes]
     }
     
-    extension [Self <: Boxes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Boxes] (val x: Self) extends AnyVal {
       
       inline def setBoxes(value: Requireable[js.Object]): Self = StObject.set(x, "boxes", value.asInstanceOf[js.Any])
       
@@ -924,7 +926,8 @@ object anon {
       __obj.asInstanceOf[ContainerComponent]
     }
     
-    extension [Self <: ContainerComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerComponent] (val x: Self) extends AnyVal {
       
       inline def setContainerComponent(value: Element): Self = StObject.set(x, "containerComponent", value.asInstanceOf[js.Any])
       
@@ -989,7 +992,8 @@ object anon {
       __obj.asInstanceOf[EventHandlers]
     }
     
-    extension [Self <: EventHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventHandlers] (val x: Self) extends AnyVal {
       
       inline def setEventHandlers(value: Requireable[js.Object]): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
       
@@ -1012,7 +1016,8 @@ object anon {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -1080,7 +1085,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Requireable[String]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -1115,7 +1121,8 @@ object anon {
       __obj.asInstanceOf[Median]
     }
     
-    extension [Self <: Median](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Median] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -1189,7 +1196,8 @@ object anon {
       __obj.asInstanceOf[TypeofVictoryBoxPlotBase]
     }
     
-    extension [Self <: TypeofVictoryBoxPlotBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofVictoryBoxPlotBase] (val x: Self) extends AnyVal {
       
       inline def setAnimationWhitelist(
         value: js.Array[
@@ -1244,7 +1252,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -1269,7 +1278,8 @@ object anon {
       __obj.asInstanceOf[XY]
     }
     
-    extension [Self <: XY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XY] (val x: Self) extends AnyVal {
       
       inline def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -1298,7 +1308,8 @@ object anon {
       __obj.asInstanceOf[Y]
     }
     
-    extension [Self <: Y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
       
       inline def setX(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_victory-core.D3Scale<any> */ Any

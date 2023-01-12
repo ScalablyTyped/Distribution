@@ -53,7 +53,8 @@ object typesKeyboardMovementTypesMod {
       __obj.asInstanceOf[KeyboardFocusContext]
     }
     
-    extension [Self <: KeyboardFocusContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardFocusContext] (val x: Self) extends AnyVal {
       
       inline def setAttach(value: Any => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
       
@@ -94,7 +95,8 @@ object typesKeyboardMovementTypesMod {
       __obj.asInstanceOf[KeyboardFocusElementData]
     }
     
-    extension [Self <: KeyboardFocusElementData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardFocusElementData] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object typesKeyboardMovementTypesMod {
       __obj.asInstanceOf[KeyboardMovementBehavior]
     }
     
-    extension [Self <: KeyboardMovementBehavior](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardMovementBehavior] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -194,7 +197,8 @@ object typesKeyboardMovementTypesMod {
       __obj.asInstanceOf[KeyboardMovementConfig]
     }
     
-    extension [Self <: KeyboardMovementConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardMovementConfig] (val x: Self) extends AnyVal {
       
       inline def setDecrementKeys(value: js.Array[String]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
       
@@ -251,7 +255,8 @@ object typesKeyboardMovementTypesMod {
       __obj.asInstanceOf[KeyboardMovementConfiguration]
     }
     
-    extension [Self <: KeyboardMovementConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardMovementConfiguration] (val x: Self) extends AnyVal {
       
       inline def setDecrementKeys(value: js.Array[String]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
       

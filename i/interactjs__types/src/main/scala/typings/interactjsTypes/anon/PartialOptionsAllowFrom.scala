@@ -80,7 +80,8 @@ object PartialOptionsAllowFrom {
     __obj.asInstanceOf[PartialOptionsAllowFrom]
   }
   
-  extension [Self <: PartialOptionsAllowFrom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptionsAllowFrom] (val x: Self) extends AnyVal {
     
     inline def setActionChecker(value: Any): Self = StObject.set(x, "actionChecker", value.asInstanceOf[js.Any])
     

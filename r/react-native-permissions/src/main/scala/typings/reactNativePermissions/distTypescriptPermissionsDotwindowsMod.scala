@@ -461,7 +461,8 @@ object distTypescriptPermissionsDotwindowsMod {
       __obj.asInstanceOf[WindowsPermissionMap]
     }
     
-    extension [Self <: WindowsPermissionMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowsPermissionMap] (val x: Self) extends AnyVal {
       
       inline def setACCESSORY_MANAGER(value: windowsDotpermissionDotaccessoryManager): Self = StObject.set(x, "ACCESSORY_MANAGER", value.asInstanceOf[js.Any])
       

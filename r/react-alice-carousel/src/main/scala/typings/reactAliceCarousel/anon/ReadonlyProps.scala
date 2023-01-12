@@ -122,7 +122,8 @@ object ReadonlyProps {
     __obj.asInstanceOf[ReadonlyProps]
   }
   
-  extension [Self <: ReadonlyProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyProps] (val x: Self) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AnalysisNoriTokenizer {
     __obj.asInstanceOf[AnalysisNoriTokenizer]
   }
   
-  extension [Self <: AnalysisNoriTokenizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisNoriTokenizer] (val x: Self) extends AnyVal {
     
     inline def setDecompound_mode(value: AnalysisNoriDecompoundMode): Self = StObject.set(x, "decompound_mode", value.asInstanceOf[js.Any])
     

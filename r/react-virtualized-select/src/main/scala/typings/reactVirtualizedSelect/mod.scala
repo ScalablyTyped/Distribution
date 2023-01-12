@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[AdditionalVirtualizedSelectProps[TValue]]
     }
     
-    extension [Self <: AdditionalVirtualizedSelectProps[?], TValue](x: Self & AdditionalVirtualizedSelectProps[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalVirtualizedSelectProps[?], TValue] (val x: Self & AdditionalVirtualizedSelectProps[TValue]) extends AnyVal {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object mod {
       __obj.asInstanceOf[VirtualizedOptionRenderOptions[T]]
     }
     
-    extension [Self <: VirtualizedOptionRenderOptions[?], T](x: Self & VirtualizedOptionRenderOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualizedOptionRenderOptions[?], T] (val x: Self & VirtualizedOptionRenderOptions[T]) extends AnyVal {
       
       inline def setFocusOption(value: T => Unit): Self = StObject.set(x, "focusOption", js.Any.fromFunction1(value))
       

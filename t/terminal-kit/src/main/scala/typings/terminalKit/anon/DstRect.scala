@@ -26,7 +26,8 @@ object DstRect {
     __obj.asInstanceOf[DstRect]
   }
   
-  extension [Self <: DstRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DstRect] (val x: Self) extends AnyVal {
     
     inline def setDstRect(value: Rect): Self = StObject.set(x, "dstRect", value.asInstanceOf[js.Any])
     

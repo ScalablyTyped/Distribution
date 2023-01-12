@@ -23,7 +23,8 @@ object FileAccessLog {
     __obj.asInstanceOf[FileAccessLog]
   }
   
-  extension [Self <: FileAccessLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileAccessLog] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: LoggingFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

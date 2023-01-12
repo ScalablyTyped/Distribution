@@ -115,7 +115,8 @@ object CAG {
       __obj.asInstanceOf[Vertex]
     }
     
-    extension [Self <: Vertex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vertex] (val x: Self) extends AnyVal {
       
       inline def setGetTag(value: () => Double): Self = StObject.set(x, "getTag", js.Any.fromFunction0(value))
       
@@ -147,7 +148,8 @@ object CAG {
       __obj.asInstanceOf[fuzzyCAGFactory]
     }
     
-    extension [Self <: fuzzyCAGFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: fuzzyCAGFactory] (val x: Self) extends AnyVal {
       
       inline def setGetCAG(value: CAG => CAG): Self = StObject.set(x, "getCAG", js.Any.fromFunction1(value))
       

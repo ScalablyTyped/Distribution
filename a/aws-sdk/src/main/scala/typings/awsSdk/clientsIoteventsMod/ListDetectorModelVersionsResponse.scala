@@ -23,7 +23,8 @@ object ListDetectorModelVersionsResponse {
     __obj.asInstanceOf[ListDetectorModelVersionsResponse]
   }
   
-  extension [Self <: ListDetectorModelVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDetectorModelVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setDetectorModelVersionSummaries(value: DetectorModelVersionSummaries): Self = StObject.set(x, "detectorModelVersionSummaries", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FilterDialogOpenedEventUIParam {
     __obj.asInstanceOf[FilterDialogOpenedEventUIParam]
   }
   
-  extension [Self <: FilterDialogOpenedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterDialogOpenedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setDialog(value: String): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
     

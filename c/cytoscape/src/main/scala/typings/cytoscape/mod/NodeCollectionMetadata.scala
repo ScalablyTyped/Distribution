@@ -66,7 +66,8 @@ object NodeCollectionMetadata {
     __obj.asInstanceOf[NodeCollectionMetadata]
   }
   
-  extension [Self <: NodeCollectionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeCollectionMetadata] (val x: Self) extends AnyVal {
     
     inline def setMaxDegree(value: Boolean => Double): Self = StObject.set(x, "maxDegree", js.Any.fromFunction1(value))
     

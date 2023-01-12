@@ -44,7 +44,8 @@ object ChatMessageAttachment {
     __obj.asInstanceOf[ChatMessageAttachment]
   }
   
-  extension [Self <: ChatMessageAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessageAttachment] (val x: Self) extends AnyVal {
     
     inline def setDataStreamReference(value: IRandomAccessStreamReference): Self = StObject.set(x, "dataStreamReference", value.asInstanceOf[js.Any])
     

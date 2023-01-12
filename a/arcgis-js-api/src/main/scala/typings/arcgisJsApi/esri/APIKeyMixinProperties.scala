@@ -20,7 +20,8 @@ object APIKeyMixinProperties {
     __obj.asInstanceOf[APIKeyMixinProperties]
   }
   
-  extension [Self <: APIKeyMixinProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIKeyMixinProperties] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

@@ -168,7 +168,8 @@ object XModel {
     __obj.asInstanceOf[XModel]
   }
   
-  extension [Self <: XModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XModel] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     

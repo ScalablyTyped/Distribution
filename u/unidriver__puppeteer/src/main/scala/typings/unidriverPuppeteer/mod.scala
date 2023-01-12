@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[BaseElementContainer]
     }
     
-    extension [Self <: BaseElementContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseElementContainer] (val x: Self) extends AnyVal {
       
       inline def setPage(value: Page | Frame): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object mod {
       __obj.asInstanceOf[ElementContainer]
     }
     
-    extension [Self <: ElementContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementContainer] (val x: Self) extends AnyVal {
       
       inline def setElement(value: ElementHandle): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object mod {
       __obj.asInstanceOf[ElementsContainer]
     }
     
-    extension [Self <: ElementsContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementsContainer] (val x: Self) extends AnyVal {
       
       inline def setElements(value: js.Array[ElementHandle]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       

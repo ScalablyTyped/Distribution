@@ -16,7 +16,8 @@ object IClientReceiptGetRequest {
     __obj.asInstanceOf[IClientReceiptGetRequest]
   }
   
-  extension [Self <: IClientReceiptGetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientReceiptGetRequest] (val x: Self) extends AnyVal {
     
     inline def setTransactionIds(value: js.Array[String]): Self = StObject.set(x, "transactionIds", value.asInstanceOf[js.Any])
     

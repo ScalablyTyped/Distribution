@@ -23,7 +23,8 @@ object BgpPattern {
     __obj.asInstanceOf[BgpPattern]
   }
   
-  extension [Self <: BgpPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BgpPattern] (val x: Self) extends AnyVal {
     
     inline def setTriples(value: js.Array[Triple]): Self = StObject.set(x, "triples", value.asInstanceOf[js.Any])
     

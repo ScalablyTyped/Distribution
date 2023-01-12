@@ -19,7 +19,8 @@ object GetJSONWebKeysResponse {
     __obj.asInstanceOf[GetJSONWebKeysResponse]
   }
   
-  extension [Self <: GetJSONWebKeysResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetJSONWebKeysResponse] (val x: Self) extends AnyVal {
     
     inline def setCacheHeader(value: HttpCacheControlResponseHeader): Self = StObject.set(x, "cacheHeader", value.asInstanceOf[js.Any])
     

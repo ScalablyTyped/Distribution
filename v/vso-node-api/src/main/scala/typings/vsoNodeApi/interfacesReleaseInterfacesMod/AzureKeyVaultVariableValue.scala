@@ -21,7 +21,8 @@ object AzureKeyVaultVariableValue {
     __obj.asInstanceOf[AzureKeyVaultVariableValue]
   }
   
-  extension [Self <: AzureKeyVaultVariableValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureKeyVaultVariableValue] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

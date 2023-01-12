@@ -18,7 +18,8 @@ object buildSrcConfigMod {
       __obj.asInstanceOf[ResourceDetectionConfig]
     }
     
-    extension [Self <: ResourceDetectionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceDetectionConfig] (val x: Self) extends AnyVal {
       
       inline def setDetectors(value: js.Array[Detector]): Self = StObject.set(x, "detectors", value.asInstanceOf[js.Any])
       

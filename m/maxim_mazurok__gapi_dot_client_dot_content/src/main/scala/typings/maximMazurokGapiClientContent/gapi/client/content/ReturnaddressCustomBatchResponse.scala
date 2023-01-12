@@ -19,7 +19,8 @@ object ReturnaddressCustomBatchResponse {
     __obj.asInstanceOf[ReturnaddressCustomBatchResponse]
   }
   
-  extension [Self <: ReturnaddressCustomBatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnaddressCustomBatchResponse] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[ReturnaddressCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

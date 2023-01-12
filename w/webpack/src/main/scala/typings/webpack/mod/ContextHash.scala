@@ -20,7 +20,8 @@ object ContextHash {
     __obj.asInstanceOf[ContextHash]
   }
   
-  extension [Self <: ContextHash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextHash] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

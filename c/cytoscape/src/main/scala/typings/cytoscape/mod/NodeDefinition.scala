@@ -18,7 +18,8 @@ object NodeDefinition {
     __obj.asInstanceOf[NodeDefinition]
   }
   
-  extension [Self <: NodeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeDefinition] (val x: Self) extends AnyVal {
     
     inline def setData(value: NodeDataDefinition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

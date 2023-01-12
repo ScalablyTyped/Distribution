@@ -17,7 +17,8 @@ object RequestItem {
     __obj.asInstanceOf[RequestItem]
   }
   
-  extension [Self <: RequestItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestItem] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: (Any, Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     

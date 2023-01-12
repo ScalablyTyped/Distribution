@@ -172,7 +172,8 @@ object XImageControl {
     __obj.asInstanceOf[XImageControl]
   }
   
-  extension [Self <: XImageControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XImageControl] (val x: Self) extends AnyVal {
     
     inline def setImageURL(value: String): Self = StObject.set(x, "ImageURL", value.asInstanceOf[js.Any])
     

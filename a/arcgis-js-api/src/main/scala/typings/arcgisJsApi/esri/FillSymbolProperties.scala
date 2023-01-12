@@ -31,7 +31,8 @@ object FillSymbolProperties {
     __obj.asInstanceOf[FillSymbolProperties]
   }
   
-  extension [Self <: FillSymbolProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillSymbolProperties] (val x: Self) extends AnyVal {
     
     inline def setOutline(value: SimpleLineSymbolProperties): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetSnapshotLimitsResult {
     __obj.asInstanceOf[GetSnapshotLimitsResult]
   }
   
-  extension [Self <: GetSnapshotLimitsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSnapshotLimitsResult] (val x: Self) extends AnyVal {
     
     inline def setSnapshotLimits(value: SnapshotLimits): Self = StObject.set(x, "SnapshotLimits", value.asInstanceOf[js.Any])
     

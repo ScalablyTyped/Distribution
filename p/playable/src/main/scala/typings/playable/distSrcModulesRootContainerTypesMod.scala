@@ -55,7 +55,8 @@ object distSrcModulesRootContainerTypesMod {
       __obj.asInstanceOf[IRootContainer]
     }
     
-    extension [Self <: IRootContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRootContainer] (val x: Self) extends AnyVal {
       
       inline def setAppendComponentElement(value: HTMLElement => Unit): Self = StObject.set(x, "appendComponentElement", js.Any.fromFunction1(value))
       
@@ -112,7 +113,8 @@ object distSrcModulesRootContainerTypesMod {
       __obj.asInstanceOf[IRootContainerAPI]
     }
     
-    extension [Self <: IRootContainerAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRootContainerAPI] (val x: Self) extends AnyVal {
       
       inline def setAttachToElement(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "attachToElement", js.Any.fromFunction1(value))
       
@@ -181,7 +183,8 @@ object distSrcModulesRootContainerTypesMod {
       __obj.asInstanceOf[IRootContainerViewCallbacks]
     }
     
-    extension [Self <: IRootContainerViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRootContainerViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnMouseEnter(value: /* evt */ Event => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
@@ -216,7 +219,8 @@ object distSrcModulesRootContainerTypesMod {
       __obj.asInstanceOf[IRootContainerViewConfig]
     }
     
-    extension [Self <: IRootContainerViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRootContainerViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: IRootContainerViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -249,7 +253,8 @@ object distSrcModulesRootContainerTypesMod {
       __obj.asInstanceOf[IRootContainerViewStyles]
     }
     
-    extension [Self <: IRootContainerViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRootContainerViewStyles] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

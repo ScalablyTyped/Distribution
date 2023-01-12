@@ -112,7 +112,8 @@ object Adc {
         __obj.asInstanceOf[IAdcControllerProvider]
       }
       
-      extension [Self <: IAdcControllerProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAdcControllerProvider] (val x: Self) extends AnyVal {
         
         inline def setAcquireChannel(value: Double => Unit): Self = StObject.set(x, "acquireChannel", js.Any.fromFunction1(value))
         
@@ -150,7 +151,8 @@ object Adc {
         __obj.asInstanceOf[IAdcProvider]
       }
       
-      extension [Self <: IAdcProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAdcProvider] (val x: Self) extends AnyVal {
         
         inline def setGetControllers(value: () => IVectorView[IAdcControllerProvider]): Self = StObject.set(x, "getControllers", js.Any.fromFunction0(value))
       }
@@ -185,7 +187,8 @@ object Adc {
       __obj.asInstanceOf[AdcChannel]
     }
     
-    extension [Self <: AdcChannel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdcChannel] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -244,7 +247,8 @@ object Adc {
       __obj.asInstanceOf[AdcController]
     }
     
-    extension [Self <: AdcController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdcController] (val x: Self) extends AnyVal {
       
       inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object typesEnvelopeMod {
       __obj.asInstanceOf[AttachmentItemHeaders]
     }
     
-    extension [Self <: AttachmentItemHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachmentItemHeaders] (val x: Self) extends AnyVal {
       
       inline def setAttachment_type(value: String): Self = StObject.set(x, "attachment_type", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object typesEnvelopeMod {
       __obj.asInstanceOf[BaseEnvelopeHeaders]
     }
     
-    extension [Self <: BaseEnvelopeHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseEnvelopeHeaders] (val x: Self) extends AnyVal {
       
       inline def setDsn(value: String): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object typesEnvelopeMod {
       __obj.asInstanceOf[BaseEnvelopeItemHeaders]
     }
     
-    extension [Self <: BaseEnvelopeItemHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseEnvelopeItemHeaders] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -138,7 +141,8 @@ object typesEnvelopeMod {
       __obj.asInstanceOf[ClientReportItemHeaders]
     }
     
-    extension [Self <: ClientReportItemHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientReportItemHeaders] (val x: Self) extends AnyVal {
       
       inline def setType(value: client_report): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -167,7 +171,8 @@ object typesEnvelopeMod {
       __obj.asInstanceOf[DynamicSamplingContext]
     }
     
-    extension [Self <: DynamicSamplingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicSamplingContext] (val x: Self) extends AnyVal {
       
       inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
@@ -245,7 +250,8 @@ object typesEnvelopeMod {
       __obj.asInstanceOf[EventEnvelopeHeaders]
     }
     
-    extension [Self <: EventEnvelopeHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventEnvelopeHeaders] (val x: Self) extends AnyVal {
       
       inline def setEvent_id(value: String): Self = StObject.set(x, "event_id", value.asInstanceOf[js.Any])
       
@@ -271,7 +277,8 @@ object typesEnvelopeMod {
       __obj.asInstanceOf[EventItemHeaders]
     }
     
-    extension [Self <: EventItemHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventItemHeaders] (val x: Self) extends AnyVal {
       
       inline def setType(value: event | transaction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -289,7 +296,8 @@ object typesEnvelopeMod {
       __obj.asInstanceOf[SessionAggregatesItemHeaders]
     }
     
-    extension [Self <: SessionAggregatesItemHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionAggregatesItemHeaders] (val x: Self) extends AnyVal {
       
       inline def setType(value: sessions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -308,7 +316,8 @@ object typesEnvelopeMod {
       __obj.asInstanceOf[SessionEnvelopeHeaders]
     }
     
-    extension [Self <: SessionEnvelopeHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionEnvelopeHeaders] (val x: Self) extends AnyVal {
       
       inline def setSent_at(value: String): Self = StObject.set(x, "sent_at", value.asInstanceOf[js.Any])
     }
@@ -328,7 +337,8 @@ object typesEnvelopeMod {
       __obj.asInstanceOf[SessionItemHeaders]
     }
     
-    extension [Self <: SessionItemHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionItemHeaders] (val x: Self) extends AnyVal {
       
       inline def setType(value: session): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -348,7 +358,8 @@ object typesEnvelopeMod {
       __obj.asInstanceOf[UserFeedbackItemHeaders]
     }
     
-    extension [Self <: UserFeedbackItemHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserFeedbackItemHeaders] (val x: Self) extends AnyVal {
       
       inline def setType(value: user_report): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

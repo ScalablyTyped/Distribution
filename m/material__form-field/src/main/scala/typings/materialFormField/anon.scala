@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[LABELSELECTOR]
     }
     
-    extension [Self <: LABELSELECTOR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LABELSELECTOR] (val x: Self) extends AnyVal {
       
       inline def setLABEL_SELECTOR(value: String): Self = StObject.set(x, "LABEL_SELECTOR", value.asInstanceOf[js.Any])
     }
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCFormFieldAdapte]
     }
     
-    extension [Self <: PartialMDCFormFieldAdapte](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCFormFieldAdapte] (val x: Self) extends AnyVal {
       
       inline def setActivateInputRipple(value: () => Unit): Self = StObject.set(x, "activateInputRipple", js.Any.fromFunction0(value))
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[ROOT]
     }
     
-    extension [Self <: ROOT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ROOT] (val x: Self) extends AnyVal {
       
       inline def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
     }

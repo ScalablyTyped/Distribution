@@ -15,7 +15,8 @@ object TypeofProductCreateParams {
     __obj.asInstanceOf[TypeofProductCreateParams]
   }
   
-  extension [Self <: TypeofProductCreateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofProductCreateParams] (val x: Self) extends AnyVal {
     
     inline def setDefaultPriceData(value: TypeofDefaultPriceData): Self = StObject.set(x, "DefaultPriceData", value.asInstanceOf[js.Any])
   }

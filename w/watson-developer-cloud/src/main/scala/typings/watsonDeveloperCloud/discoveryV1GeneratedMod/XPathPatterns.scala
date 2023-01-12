@@ -17,7 +17,8 @@ object XPathPatterns {
     __obj.asInstanceOf[XPathPatterns]
   }
   
-  extension [Self <: XPathPatterns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPathPatterns] (val x: Self) extends AnyVal {
     
     inline def setXpaths(value: js.Array[String]): Self = StObject.set(x, "xpaths", value.asInstanceOf[js.Any])
     

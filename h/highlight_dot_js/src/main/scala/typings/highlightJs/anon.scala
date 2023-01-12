@@ -58,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Block]
     }
     
-    extension [Self <: Block](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Element): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object anon {
       __obj.asInstanceOf[BlockLanguage]
     }
     
-    extension [Self <: BlockLanguage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockLanguage] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Element): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[El]
     }
     
-    extension [Self <: El](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: El] (val x: Self) extends AnyVal {
       
       inline def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Emit]
     }
     
-    extension [Self <: Emit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Emit] (val x: Self) extends AnyVal {
       
       inline def set_emit(value: Record[Double, Boolean]): Self = StObject.set(x, "_emit", value.asInstanceOf[js.Any])
       
@@ -158,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Language]
     }
     
-    extension [Self <: Language](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
       
       inline def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
@@ -177,7 +182,8 @@ object anon {
       __obj.asInstanceOf[LanguageName]
     }
     
-    extension [Self <: LanguageName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageName] (val x: Self) extends AnyVal {
       
       inline def setLanguageName(value: String): Self = StObject.set(x, "languageName", value.asInstanceOf[js.Any])
     }
@@ -213,7 +219,8 @@ object anon {
       __obj.asInstanceOf[OmitHighlightResultsecond]
     }
     
-    extension [Self <: OmitHighlightResultsecond](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitHighlightResultsecond] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -275,7 +282,8 @@ object anon {
       __obj.asInstanceOf[PartialHLJSOptions]
     }
     
-    extension [Self <: PartialHLJSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHLJSOptions] (val x: Self) extends AnyVal {
       
       inline def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
       
@@ -389,7 +397,8 @@ object anon {
       __obj.asInstanceOf[PartialModebinarystringRe]
     }
     
-    extension [Self <: PartialModebinarystringRe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialModebinarystringRe] (val x: Self) extends AnyVal {
       
       inline def setBegin(value: js.RegExp | String | (js.Array[js.RegExp | String])): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
       

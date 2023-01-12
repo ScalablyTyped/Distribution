@@ -23,7 +23,8 @@ object DeleteEntitlementRequest {
     __obj.asInstanceOf[DeleteEntitlementRequest]
   }
   
-  extension [Self <: DeleteEntitlementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEntitlementRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

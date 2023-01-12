@@ -32,7 +32,8 @@ object RegionalConfiguration {
     __obj.asInstanceOf[RegionalConfiguration]
   }
   
-  extension [Self <: RegionalConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionalConfiguration] (val x: Self) extends AnyVal {
     
     inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     

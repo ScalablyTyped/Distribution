@@ -45,7 +45,8 @@ object diffOptionsMod {
       __obj.asInstanceOf[DiffOptions]
     }
     
-    extension [Self <: DiffOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffOptions] (val x: Self) extends AnyVal {
       
       inline def setContextLines(value: Double): Self = StObject.set(x, "contextLines", value.asInstanceOf[js.Any])
       

@@ -81,7 +81,8 @@ object buttonMod {
       __obj.asInstanceOf[ButtonProps]
     }
     
-    extension [Self <: ButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
       
       inline def set$as(value: Element | String): Self = StObject.set(x, "$as", value.asInstanceOf[js.Any])
       

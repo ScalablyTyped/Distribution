@@ -33,7 +33,8 @@ object VerifySoftwareTokenRequest {
     __obj.asInstanceOf[VerifySoftwareTokenRequest]
   }
   
-  extension [Self <: VerifySoftwareTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifySoftwareTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     

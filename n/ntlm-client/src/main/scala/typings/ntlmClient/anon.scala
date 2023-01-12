@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Buffer]
     }
     
-    extension [Self <: Buffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: typings.node.bufferMod.global.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[DNS]
     }
     
-    extension [Self <: DNS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DNS] (val x: Self) extends AnyVal {
       
       inline def setDNS(value: String): Self = StObject.set(x, "DNS", value.asInstanceOf[js.Any])
       

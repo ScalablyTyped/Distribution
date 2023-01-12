@@ -28,7 +28,8 @@ object MultipleGetObject {
     __obj.asInstanceOf[MultipleGetObject]
   }
   
-  extension [Self <: MultipleGetObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleGetObject] (val x: Self) extends AnyVal {
     
     inline def setAttributesToRetrieve(value: js.Array[String]): Self = StObject.set(x, "attributesToRetrieve", value.asInstanceOf[js.Any])
     

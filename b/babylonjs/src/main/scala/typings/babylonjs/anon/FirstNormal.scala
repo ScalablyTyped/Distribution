@@ -50,7 +50,8 @@ object FirstNormal {
     __obj.asInstanceOf[FirstNormal]
   }
   
-  extension [Self <: FirstNormal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstNormal] (val x: Self) extends AnyVal {
     
     inline def setAdjustFrame(value: Boolean): Self = StObject.set(x, "adjustFrame", value.asInstanceOf[js.Any])
     

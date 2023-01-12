@@ -31,7 +31,8 @@ object libModalFooterMod {
       __obj.asInstanceOf[ModalFooterProps]
     }
     
-    extension [Self <: ModalFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalFooterProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object HttpEndpointRetryOptions {
     __obj.asInstanceOf[HttpEndpointRetryOptions]
   }
   
-  extension [Self <: HttpEndpointRetryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpEndpointRetryOptions] (val x: Self) extends AnyVal {
     
     inline def setDurationInSeconds(value: HttpEndpointRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     

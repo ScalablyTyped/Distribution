@@ -28,7 +28,8 @@ object libNodesXmlDtdElementMod {
       __obj.asInstanceOf[IXmlDtdElementOptions]
     }
     
-    extension [Self <: IXmlDtdElementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXmlDtdElementOptions] (val x: Self) extends AnyVal {
       
       inline def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
     }

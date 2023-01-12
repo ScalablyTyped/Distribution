@@ -185,7 +185,8 @@ object libCoreMessagesOutgoingRequestMessageMod {
       __obj.asInstanceOf[OutgoingRequestMessageOptions]
     }
     
-    extension [Self <: OutgoingRequestMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutgoingRequestMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setCallId(value: String): Self = StObject.set(x, "callId", value.asInstanceOf[js.Any])
       

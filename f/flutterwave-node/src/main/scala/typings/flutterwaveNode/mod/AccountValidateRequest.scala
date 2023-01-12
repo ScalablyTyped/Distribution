@@ -17,7 +17,8 @@ object AccountValidateRequest {
     __obj.asInstanceOf[AccountValidateRequest]
   }
   
-  extension [Self <: AccountValidateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountValidateRequest] (val x: Self) extends AnyVal {
     
     inline def setOtp(value: String | Double): Self = StObject.set(x, "otp", value.asInstanceOf[js.Any])
     

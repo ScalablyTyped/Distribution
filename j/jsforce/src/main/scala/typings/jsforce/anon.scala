@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: RecordAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object anon {
       __obj.asInstanceOf[CreatedDate]
     }
     
-    extension [Self <: CreatedDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreatedDate] (val x: Self) extends AnyVal {
       
       inline def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
@@ -222,7 +225,8 @@ object anon {
       __obj.asInstanceOf[Customdomain]
     }
     
-    extension [Self <: Customdomain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Customdomain] (val x: Self) extends AnyVal {
       
       inline def setCustom_domain(value: String): Self = StObject.set(x, "custom_domain", value.asInstanceOf[js.Any])
       
@@ -273,7 +277,8 @@ object anon {
       __obj.asInstanceOf[ExtIdField]
     }
     
-    extension [Self <: ExtIdField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtIdField] (val x: Self) extends AnyVal {
       
       inline def setExtIdField(value: String): Self = StObject.set(x, "extIdField", value.asInstanceOf[js.Any])
       
@@ -294,7 +299,8 @@ object anon {
       __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: Limit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -324,7 +330,8 @@ object anon {
       __obj.asInstanceOf[PartialPartialOAuth2Optio]
     }
     
-    extension [Self <: PartialPartialOAuth2Optio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPartialOAuth2Optio] (val x: Self) extends AnyVal {
       
       inline def setAuthzServiceUrl(value: String): Self = StObject.set(x, "authzServiceUrl", value.asInstanceOf[js.Any])
       
@@ -365,7 +372,8 @@ object anon {
       __obj.asInstanceOf[Picture]
     }
     
-    extension [Self <: Picture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Picture] (val x: Self) extends AnyVal {
       
       inline def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
       
@@ -386,7 +394,8 @@ object anon {
       __obj.asInstanceOf[Scope]
     }
     
-    extension [Self <: Scope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
       
       inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       

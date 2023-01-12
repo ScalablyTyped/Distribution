@@ -18,7 +18,8 @@ object SortCapability {
     __obj.asInstanceOf[SortCapability[D]]
   }
   
-  extension [Self <: SortCapability[?], D](x: Self & SortCapability[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortCapability[?], D] (val x: Self & SortCapability[D]) extends AnyVal {
     
     inline def setAttributes(value: none | single | multiple): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
   }

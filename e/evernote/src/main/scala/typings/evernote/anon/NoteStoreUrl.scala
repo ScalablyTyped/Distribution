@@ -25,7 +25,8 @@ object NoteStoreUrl {
     __obj.asInstanceOf[NoteStoreUrl]
   }
   
-  extension [Self <: NoteStoreUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoteStoreUrl] (val x: Self) extends AnyVal {
     
     inline def setNoteStoreUrl(value: String): Self = StObject.set(x, "noteStoreUrl", value.asInstanceOf[js.Any])
     

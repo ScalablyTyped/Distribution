@@ -68,7 +68,8 @@ object schematicsUtilsNgComponentTemplateMod {
       __obj.asInstanceOf[ResolvedTemplate]
     }
     
-    extension [Self <: ResolvedTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedTemplate] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: ClassDeclaration): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

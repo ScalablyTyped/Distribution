@@ -20,7 +20,8 @@ object RequestAsJSON {
     __obj.asInstanceOf[RequestAsJSON]
   }
   
-  extension [Self <: RequestAsJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestAsJSON] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

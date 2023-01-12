@@ -81,7 +81,8 @@ object EndpointOptions {
     __obj.asInstanceOf[EndpointOptions]
   }
   
-  extension [Self <: EndpointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: AnchorSpec): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

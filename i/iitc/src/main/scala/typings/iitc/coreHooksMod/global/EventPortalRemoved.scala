@@ -19,7 +19,8 @@ object EventPortalRemoved {
     __obj.asInstanceOf[EventPortalRemoved]
   }
   
-  extension [Self <: EventPortalRemoved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventPortalRemoved] (val x: Self) extends AnyVal {
     
     inline def setData(value: PortalData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

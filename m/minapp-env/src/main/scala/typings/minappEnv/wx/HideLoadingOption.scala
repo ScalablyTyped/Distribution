@@ -22,7 +22,8 @@ object HideLoadingOption {
     __obj.asInstanceOf[HideLoadingOption]
   }
   
-  extension [Self <: HideLoadingOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HideLoadingOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

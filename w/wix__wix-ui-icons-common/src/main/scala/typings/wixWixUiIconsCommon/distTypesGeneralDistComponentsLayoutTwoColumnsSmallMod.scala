@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsLayoutTwoColumnsSmallMod extends Shortcut {
       __obj.asInstanceOf[LayoutTwoColumnsSmallProps]
     }
     
-    extension [Self <: LayoutTwoColumnsSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutTwoColumnsSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

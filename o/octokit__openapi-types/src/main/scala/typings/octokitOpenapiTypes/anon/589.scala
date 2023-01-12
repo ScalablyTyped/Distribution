@@ -15,7 +15,8 @@ object `589` {
     __obj.asInstanceOf[`589`]
   }
   
-  extension [Self <: `589`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `589`] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: PackagetypeVisibility): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

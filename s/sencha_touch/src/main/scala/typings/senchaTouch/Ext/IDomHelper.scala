@@ -129,7 +129,8 @@ object IDomHelper {
     __obj.asInstanceOf[IDomHelper]
   }
   
-  extension [Self <: IDomHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDomHelper] (val x: Self) extends AnyVal {
     
     inline def setAppend(
       value: (/* el */ js.UndefOr[Any], /* o */ js.UndefOr[Any], /* returnElement */ js.UndefOr[Boolean]) => Any

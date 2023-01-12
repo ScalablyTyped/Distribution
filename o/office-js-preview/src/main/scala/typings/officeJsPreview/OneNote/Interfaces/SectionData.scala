@@ -70,7 +70,8 @@ object SectionData {
     __obj.asInstanceOf[SectionData]
   }
   
-  extension [Self <: SectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionData] (val x: Self) extends AnyVal {
     
     inline def setClientUrl(value: String): Self = StObject.set(x, "clientUrl", value.asInstanceOf[js.Any])
     

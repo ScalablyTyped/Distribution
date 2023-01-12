@@ -82,7 +82,8 @@ object PlusNetworkinfo {
     __obj.asInstanceOf[PlusNetworkinfo]
   }
   
-  extension [Self <: PlusNetworkinfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNetworkinfo] (val x: Self) extends AnyVal {
     
     inline def setCONNECTION_CELL2G(value: Double): Self = StObject.set(x, "CONNECTION_CELL2G", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object WaitTitleSequenceCommand {
     __obj.asInstanceOf[WaitTitleSequenceCommand]
   }
   
-  extension [Self <: WaitTitleSequenceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaitTitleSequenceCommand] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

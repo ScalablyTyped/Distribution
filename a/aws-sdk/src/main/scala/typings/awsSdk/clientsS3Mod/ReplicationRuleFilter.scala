@@ -28,7 +28,8 @@ object ReplicationRuleFilter {
     __obj.asInstanceOf[ReplicationRuleFilter]
   }
   
-  extension [Self <: ReplicationRuleFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationRuleFilter] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: ReplicationRuleAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
     

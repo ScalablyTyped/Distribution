@@ -45,7 +45,8 @@ object RelativeTimeSpec {
     __obj.asInstanceOf[RelativeTimeSpec]
   }
   
-  extension [Self <: RelativeTimeSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeTimeSpec] (val x: Self) extends AnyVal {
     
     inline def setD(value: RelativeTimeSpecVal): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

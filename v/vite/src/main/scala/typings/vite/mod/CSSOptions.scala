@@ -32,7 +32,8 @@ object CSSOptions {
     __obj.asInstanceOf[CSSOptions]
   }
   
-  extension [Self <: CSSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSOptions] (val x: Self) extends AnyVal {
     
     inline def setDevSourcemap(value: Boolean): Self = StObject.set(x, "devSourcemap", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object Slice {
     __obj.asInstanceOf[Slice]
   }
   
-  extension [Self <: Slice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slice] (val x: Self) extends AnyVal {
     
     inline def setConflicts(value: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Conflicts): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     

@@ -758,7 +758,8 @@ object ojTable {
       __obj.asInstanceOf[ColumnsRendererContext[K, D]]
     }
     
-    extension [Self <: ColumnsRendererContext[?, ?], K, D](x: Self & (ColumnsRendererContext[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnsRendererContext[?, ?], K, D] (val x: Self & (ColumnsRendererContext[K, D])) extends AnyVal {
       
       inline def setCellContext(value: Datasource[K, D]): Self = StObject.set(x, "cellContext", value.asInstanceOf[js.Any])
       
@@ -790,7 +791,8 @@ object ojTable {
       __obj.asInstanceOf[ContextStatus[K]]
     }
     
-    extension [Self <: ContextStatus[?], K](x: Self & ContextStatus[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextStatus[?], K] (val x: Self & ContextStatus[K]) extends AnyVal {
       
       inline def setCurrentRow(value: CurrentRow[K]): Self = StObject.set(x, "currentRow", value.asInstanceOf[js.Any])
       
@@ -830,7 +832,8 @@ object ojTable {
       __obj.asInstanceOf[DragRowContext[K, D]]
     }
     
-    extension [Self <: DragRowContext[?, ?], K, D](x: Self & (DragRowContext[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragRowContext[?, ?], K, D] (val x: Self & (DragRowContext[K, D])) extends AnyVal {
       
       inline def setRows(value: js.Array[DataIndex[D, K]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
@@ -850,7 +853,8 @@ object ojTable {
       __obj.asInstanceOf[DropColumnContext]
     }
     
-    extension [Self <: DropColumnContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropColumnContext] (val x: Self) extends AnyVal {
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     }
@@ -868,7 +872,8 @@ object ojTable {
       __obj.asInstanceOf[DropRowContext]
     }
     
-    extension [Self <: DropRowContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropRowContext] (val x: Self) extends AnyVal {
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     }
@@ -892,7 +897,8 @@ object ojTable {
       __obj.asInstanceOf[FooterRendererContext[K, D]]
     }
     
-    extension [Self <: FooterRendererContext[?, ?], K, D](x: Self & (FooterRendererContext[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FooterRendererContext[?, ?], K, D] (val x: Self & (FooterRendererContext[K, D])) extends AnyVal {
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -946,7 +952,8 @@ object ojTable {
       __obj.asInstanceOf[HeaderRendererContext[K, D]]
     }
     
-    extension [Self <: HeaderRendererContext[?, ?], K, D](x: Self & (HeaderRendererContext[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderRendererContext[?, ?], K, D] (val x: Self & (HeaderRendererContext[K, D])) extends AnyVal {
       
       inline def setColumnHeaderDefaultRenderer(value: (/* param0 */ js.Object, /* param1 */ js.Function1[/* param0 */ js.Object, Unit]) => Unit): Self = StObject.set(x, "columnHeaderDefaultRenderer", js.Any.fromFunction2(value))
       
@@ -991,7 +998,8 @@ object ojTable {
       __obj.asInstanceOf[RowRendererContext[K, D]]
     }
     
-    extension [Self <: RowRendererContext[?, ?], K, D](x: Self & (RowRendererContext[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowRendererContext[?, ?], K, D] (val x: Self & (RowRendererContext[K, D])) extends AnyVal {
       
       inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object TemplateSymbol {
     __obj.asInstanceOf[TemplateSymbol]
   }
   
-  extension [Self <: TemplateSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateSymbol] (val x: Self) extends AnyVal {
     
     inline def setDirectives(value: js.Array[DirectiveSymbol]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     

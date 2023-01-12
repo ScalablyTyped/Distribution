@@ -25,7 +25,8 @@ object DataTableSelectionChangeParams {
     __obj.asInstanceOf[DataTableSelectionChangeParams]
   }
   
-  extension [Self <: DataTableSelectionChangeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableSelectionChangeParams] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object RetentionPolicy {
     __obj.asInstanceOf[RetentionPolicy]
   }
   
-  extension [Self <: RetentionPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetentionPolicy] (val x: Self) extends AnyVal {
     
     inline def setArtifactTypesToDelete(value: js.Array[String]): Self = StObject.set(x, "artifactTypesToDelete", value.asInstanceOf[js.Any])
     

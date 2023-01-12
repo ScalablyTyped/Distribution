@@ -74,7 +74,8 @@ object libTableHooksUseFilterFilterDropdownMod {
       __obj.asInstanceOf[FilterDropdownProps[RecordType]]
     }
     
-    extension [Self <: FilterDropdownProps[?], RecordType](x: Self & FilterDropdownProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterDropdownProps[?], RecordType] (val x: Self & FilterDropdownProps[RecordType]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object libTableHooksUseFilterFilterDropdownMod {
       __obj.asInstanceOf[FilterTreeDataNode]
     }
     
-    extension [Self <: FilterTreeDataNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterTreeDataNode] (val x: Self) extends AnyVal {
       
       inline def setCheckable(value: Boolean): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       
@@ -250,7 +252,8 @@ object libTableHooksUseFilterFilterDropdownMod {
       __obj.asInstanceOf[TreeColumnFilterItem]
     }
     
-    extension [Self <: TreeColumnFilterItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeColumnFilterItem] (val x: Self) extends AnyVal {
       
       inline def setCheckable(value: Boolean): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       

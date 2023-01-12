@@ -36,7 +36,8 @@ object ListDataValidation {
     __obj.asInstanceOf[ListDataValidation]
   }
   
-  extension [Self <: ListDataValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataValidation] (val x: Self) extends AnyVal {
     
     inline def setInCellDropDown(value: Boolean): Self = StObject.set(x, "inCellDropDown", value.asInstanceOf[js.Any])
     

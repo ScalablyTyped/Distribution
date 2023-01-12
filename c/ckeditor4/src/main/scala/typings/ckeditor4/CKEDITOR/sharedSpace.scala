@@ -18,7 +18,8 @@ object sharedSpace {
     __obj.asInstanceOf[sharedSpace]
   }
   
-  extension [Self <: sharedSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sharedSpace] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: String | HTMLElement): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

@@ -87,7 +87,8 @@ object libEsmHeadersHeaderCell2Mod {
       __obj.asInstanceOf[HeaderCell2Props]
     }
     
-    extension [Self <: HeaderCell2Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderCell2Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object libEsmHeadersHeaderCell2Mod {
       __obj.asInstanceOf[HeaderCell2State]
     }
     
-    extension [Self <: HeaderCell2State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderCell2State] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     }

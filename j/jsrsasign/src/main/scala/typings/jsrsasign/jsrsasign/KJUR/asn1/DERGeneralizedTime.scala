@@ -63,7 +63,8 @@ object DERGeneralizedTime {
     __obj.asInstanceOf[DERGeneralizedTime]
   }
   
-  extension [Self <: DERGeneralizedTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DERGeneralizedTime] (val x: Self) extends AnyVal {
     
     inline def setSetByDate(value: js.Date => Unit): Self = StObject.set(x, "setByDate", js.Any.fromFunction1(value))
     

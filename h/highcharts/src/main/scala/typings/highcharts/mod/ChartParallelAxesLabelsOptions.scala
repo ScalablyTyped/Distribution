@@ -228,7 +228,8 @@ object ChartParallelAxesLabelsOptions {
     __obj.asInstanceOf[ChartParallelAxesLabelsOptions]
   }
   
-  extension [Self <: ChartParallelAxesLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartParallelAxesLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

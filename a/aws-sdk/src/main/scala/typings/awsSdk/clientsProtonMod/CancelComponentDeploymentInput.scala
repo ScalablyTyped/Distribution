@@ -18,7 +18,8 @@ object CancelComponentDeploymentInput {
     __obj.asInstanceOf[CancelComponentDeploymentInput]
   }
   
-  extension [Self <: CancelComponentDeploymentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelComponentDeploymentInput] (val x: Self) extends AnyVal {
     
     inline def setComponentName(value: ResourceName): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
   }

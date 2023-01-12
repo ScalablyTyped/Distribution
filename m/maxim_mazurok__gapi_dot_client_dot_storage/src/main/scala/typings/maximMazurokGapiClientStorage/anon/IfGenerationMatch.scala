@@ -19,7 +19,8 @@ object IfGenerationMatch {
     __obj.asInstanceOf[IfGenerationMatch]
   }
   
-  extension [Self <: IfGenerationMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfGenerationMatch] (val x: Self) extends AnyVal {
     
     inline def setIfGenerationMatch(value: String): Self = StObject.set(x, "ifGenerationMatch", value.asInstanceOf[js.Any])
     

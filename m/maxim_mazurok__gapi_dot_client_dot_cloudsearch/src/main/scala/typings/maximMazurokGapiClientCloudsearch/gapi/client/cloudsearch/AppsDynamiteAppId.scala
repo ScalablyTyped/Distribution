@@ -25,7 +25,8 @@ object AppsDynamiteAppId {
     __obj.asInstanceOf[AppsDynamiteAppId]
   }
   
-  extension [Self <: AppsDynamiteAppId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteAppId] (val x: Self) extends AnyVal {
     
     inline def setAppType(value: String): Self = StObject.set(x, "appType", value.asInstanceOf[js.Any])
     

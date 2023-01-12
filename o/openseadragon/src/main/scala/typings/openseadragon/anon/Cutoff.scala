@@ -25,7 +25,8 @@ object Cutoff {
     __obj.asInstanceOf[Cutoff]
   }
   
-  extension [Self <: Cutoff](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cutoff] (val x: Self) extends AnyVal {
     
     inline def setCutoff(value: Double): Self = StObject.set(x, "cutoff", value.asInstanceOf[js.Any])
     

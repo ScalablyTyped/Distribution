@@ -23,7 +23,8 @@ object DeleteMessageBatchRequest {
     __obj.asInstanceOf[DeleteMessageBatchRequest]
   }
   
-  extension [Self <: DeleteMessageBatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMessageBatchRequest] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: DeleteMessageBatchRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     

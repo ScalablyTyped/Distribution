@@ -172,7 +172,8 @@ object buildSrcClientInterceptorsMod {
       __obj.asInstanceOf[FullRequester]
     }
     
-    extension [Self <: FullRequester](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullRequester] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
@@ -231,7 +232,8 @@ object buildSrcClientInterceptorsMod {
       __obj.asInstanceOf[InterceptorArguments]
     }
     
-    extension [Self <: InterceptorArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterceptorArguments] (val x: Self) extends AnyVal {
       
       inline def setCallInterceptorProviders(value: js.Array[InterceptorProvider]): Self = StObject.set(x, "callInterceptorProviders", value.asInstanceOf[js.Any])
       
@@ -264,7 +266,8 @@ object buildSrcClientInterceptorsMod {
       __obj.asInstanceOf[InterceptorOptions]
     }
     
-    extension [Self <: InterceptorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterceptorOptions] (val x: Self) extends AnyVal {
       
       inline def setMethod_definition(value: ClientMethodDefinition[Any, Any]): Self = StObject.set(x, "method_definition", value.asInstanceOf[js.Any])
     }
@@ -301,7 +304,8 @@ object buildSrcClientInterceptorsMod {
       __obj.asInstanceOf[Requester]
     }
     
-    extension [Self <: Requester](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Requester] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       

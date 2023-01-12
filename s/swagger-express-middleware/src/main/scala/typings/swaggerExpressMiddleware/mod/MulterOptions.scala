@@ -41,7 +41,8 @@ object MulterOptions {
     __obj.asInstanceOf[MulterOptions]
   }
   
-  extension [Self <: MulterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MulterOptions] (val x: Self) extends AnyVal {
     
     inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
     

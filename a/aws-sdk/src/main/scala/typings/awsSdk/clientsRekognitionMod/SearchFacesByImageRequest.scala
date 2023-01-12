@@ -38,7 +38,8 @@ object SearchFacesByImageRequest {
     __obj.asInstanceOf[SearchFacesByImageRequest]
   }
   
-  extension [Self <: SearchFacesByImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFacesByImageRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     

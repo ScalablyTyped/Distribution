@@ -64,7 +64,8 @@ object UserSecurityState {
     __obj.asInstanceOf[UserSecurityState]
   }
   
-  extension [Self <: UserSecurityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserSecurityState] (val x: Self) extends AnyVal {
     
     inline def setAadUserId(value: NullableOption[String]): Self = StObject.set(x, "aadUserId", value.asInstanceOf[js.Any])
     

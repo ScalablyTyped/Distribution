@@ -35,7 +35,8 @@ object Plugins {
       __obj.asInstanceOf[CorePluginContainer]
     }
     
-    extension [Self <: CorePluginContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CorePluginContainer] (val x: Self) extends AnyVal {
       
       inline def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object Plugins {
       __obj.asInstanceOf[CustomPluginContainer]
     }
     
-    extension [Self <: CustomPluginContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomPluginContainer] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object Plugins {
       __obj.asInstanceOf[GlobalPlugin]
     }
     
-    extension [Self <: GlobalPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalPlugin] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

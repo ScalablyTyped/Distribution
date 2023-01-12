@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[PickAriaModalPropstitleId]
     }
     
-    extension [Self <: PickAriaModalPropstitleId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickAriaModalPropstitleId] (val x: Self) extends AnyVal {
       
       inline def setTitleId(value: String): Self = StObject.set(x, "titleId", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[PickAriaModalPropstitleTe]
     }
     
-    extension [Self <: PickAriaModalPropstitleTe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickAriaModalPropstitleTe] (val x: Self) extends AnyVal {
       
       inline def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
       

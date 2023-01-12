@@ -18,7 +18,8 @@ object ReadPipelineRequest {
     __obj.asInstanceOf[ReadPipelineRequest]
   }
   
-  extension [Self <: ReadPipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadPipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

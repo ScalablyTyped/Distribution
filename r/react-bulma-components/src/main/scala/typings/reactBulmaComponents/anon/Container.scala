@@ -19,7 +19,8 @@ object Container {
     __obj.asInstanceOf[Container]
   }
   
-  extension [Self <: Container](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: /* props */ js.Object & (ElementProps[js.Object, div]) => ReactElement): Self = StObject.set(x, "Container", js.Any.fromFunction1(value))
   }

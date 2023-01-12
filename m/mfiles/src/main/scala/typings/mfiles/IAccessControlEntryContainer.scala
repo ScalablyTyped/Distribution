@@ -41,7 +41,8 @@ object IAccessControlEntryContainer {
     __obj.asInstanceOf[IAccessControlEntryContainer]
   }
   
-  extension [Self <: IAccessControlEntryContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccessControlEntryContainer] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (IAccessControlEntryKey, IAccessControlEntryData) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

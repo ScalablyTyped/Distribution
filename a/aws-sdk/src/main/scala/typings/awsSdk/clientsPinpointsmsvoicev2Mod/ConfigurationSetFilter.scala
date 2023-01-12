@@ -23,7 +23,8 @@ object ConfigurationSetFilter {
     __obj.asInstanceOf[ConfigurationSetFilter]
   }
   
-  extension [Self <: ConfigurationSetFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationSetFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: ConfigurationSetFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

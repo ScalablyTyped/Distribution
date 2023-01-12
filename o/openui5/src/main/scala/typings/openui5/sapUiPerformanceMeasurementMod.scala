@@ -45,7 +45,8 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setACategories(value: String | js.Array[String]): Self = StObject.set(x, "aCategories", value.asInstanceOf[js.Any])
       

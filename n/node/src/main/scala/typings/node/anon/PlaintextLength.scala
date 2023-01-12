@@ -15,7 +15,8 @@ object PlaintextLength {
     __obj.asInstanceOf[PlaintextLength]
   }
   
-  extension [Self <: PlaintextLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaintextLength] (val x: Self) extends AnyVal {
     
     inline def setPlaintextLength(value: Double): Self = StObject.set(x, "plaintextLength", value.asInstanceOf[js.Any])
   }

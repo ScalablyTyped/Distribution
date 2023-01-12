@@ -19,7 +19,8 @@ object FaceDetectionParams {
     __obj.asInstanceOf[FaceDetectionParams]
   }
   
-  extension [Self <: FaceDetectionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceDetectionParams] (val x: Self) extends AnyVal {
     
     inline def setFaceindex(value: ImgixParamType): Self = StObject.set(x, "faceindex", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PickOptionsinteractions {
     __obj.asInstanceOf[PickOptionsinteractions]
   }
   
-  extension [Self <: PickOptionsinteractions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickOptionsinteractions] (val x: Self) extends AnyVal {
     
     inline def setInteractions(value: js.Array[Interaction]): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
     

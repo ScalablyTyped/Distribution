@@ -40,7 +40,8 @@ object Compactable {
     __obj.asInstanceOf[Compactable[F]]
   }
   
-  extension [Self <: Compactable[?], F](x: Self & Compactable[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compactable[?], F] (val x: Self & Compactable[F]) extends AnyVal {
     
     inline def setCompact(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Option<A>> */ Any => Any

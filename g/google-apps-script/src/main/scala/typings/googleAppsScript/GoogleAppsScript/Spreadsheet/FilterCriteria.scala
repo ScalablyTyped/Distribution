@@ -32,7 +32,8 @@ object FilterCriteria {
     __obj.asInstanceOf[FilterCriteria]
   }
   
-  extension [Self <: FilterCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => FilterCriteriaBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     

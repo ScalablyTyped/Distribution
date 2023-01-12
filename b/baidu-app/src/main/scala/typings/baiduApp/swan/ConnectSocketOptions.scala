@@ -31,7 +31,8 @@ object ConnectSocketOptions {
     __obj.asInstanceOf[ConnectSocketOptions]
   }
   
-  extension [Self <: ConnectSocketOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectSocketOptions] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: RequestHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object RevisionCheckResponse {
     __obj.asInstanceOf[RevisionCheckResponse]
   }
   
-  extension [Self <: RevisionCheckResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevisionCheckResponse] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

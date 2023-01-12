@@ -27,7 +27,8 @@ object LinearGaugeOptions {
     __obj.asInstanceOf[LinearGaugeOptions]
   }
   
-  extension [Self <: LinearGaugeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGaugeOptions] (val x: Self) extends AnyVal {
     
     inline def setGaugeArea(value: LinearGaugeGaugeArea): Self = StObject.set(x, "gaugeArea", value.asInstanceOf[js.Any])
     

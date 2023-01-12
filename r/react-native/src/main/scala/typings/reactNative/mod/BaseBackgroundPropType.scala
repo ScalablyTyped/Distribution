@@ -18,7 +18,8 @@ object BaseBackgroundPropType {
     __obj.asInstanceOf[BaseBackgroundPropType]
   }
   
-  extension [Self <: BaseBackgroundPropType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseBackgroundPropType] (val x: Self) extends AnyVal {
     
     inline def setRippleRadius(value: Double): Self = StObject.set(x, "rippleRadius", value.asInstanceOf[js.Any])
     

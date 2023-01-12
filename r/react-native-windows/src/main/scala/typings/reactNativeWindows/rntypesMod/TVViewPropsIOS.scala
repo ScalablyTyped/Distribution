@@ -63,7 +63,8 @@ object TVViewPropsIOS {
     __obj.asInstanceOf[TVViewPropsIOS]
   }
   
-  extension [Self <: TVViewPropsIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TVViewPropsIOS] (val x: Self) extends AnyVal {
     
     inline def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
     

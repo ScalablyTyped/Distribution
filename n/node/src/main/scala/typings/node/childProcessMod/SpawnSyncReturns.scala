@@ -28,7 +28,8 @@ object SpawnSyncReturns {
     __obj.asInstanceOf[SpawnSyncReturns[T]]
   }
   
-  extension [Self <: SpawnSyncReturns[?], T](x: Self & SpawnSyncReturns[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpawnSyncReturns[?], T] (val x: Self & SpawnSyncReturns[T]) extends AnyVal {
     
     inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

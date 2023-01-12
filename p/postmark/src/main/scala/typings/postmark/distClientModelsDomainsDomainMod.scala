@@ -53,7 +53,8 @@ object distClientModelsDomainsDomainMod {
       __obj.asInstanceOf[Domain]
     }
     
-    extension [Self <: Domain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
       
       inline def setDKIMVerified(value: Boolean): Self = StObject.set(x, "DKIMVerified", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object distClientModelsDomainsDomainMod {
       __obj.asInstanceOf[DomainDetails]
     }
     
-    extension [Self <: DomainDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomainDetails] (val x: Self) extends AnyVal {
       
       inline def setDKIMHost(value: String): Self = StObject.set(x, "DKIMHost", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object distClientModelsDomainsDomainMod {
       __obj.asInstanceOf[Domains]
     }
     
-    extension [Self <: Domains](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domains] (val x: Self) extends AnyVal {
       
       inline def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
       

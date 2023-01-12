@@ -167,7 +167,8 @@ object ASPxClientDateEdit {
     __obj.asInstanceOf[ASPxClientDateEdit]
   }
   
-  extension [Self <: ASPxClientDateEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDateEdit] (val x: Self) extends AnyVal {
     
     inline def setCalendarCellClick(value: ASPxClientEvent[ASPxClientCalendarCellClickEventHandler[ASPxClientDateEdit]]): Self = StObject.set(x, "CalendarCellClick", value.asInstanceOf[js.Any])
     

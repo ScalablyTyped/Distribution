@@ -81,7 +81,8 @@ object ObjectMap {
     __obj.asInstanceOf[ObjectMap[KeyType, ValueType]]
   }
   
-  extension [Self <: ObjectMap[?, ?], KeyType, ValueType](x: Self & (ObjectMap[KeyType, ValueType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectMap[?, ?], KeyType, ValueType] (val x: Self & (ObjectMap[KeyType, ValueType])) extends AnyVal {
     
     inline def setDelete(value: KeyType => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     

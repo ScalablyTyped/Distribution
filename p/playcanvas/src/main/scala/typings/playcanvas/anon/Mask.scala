@@ -17,7 +17,8 @@ object Mask {
     __obj.asInstanceOf[Mask]
   }
   
-  extension [Self <: Mask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mask] (val x: Self) extends AnyVal {
     
     inline def setMask(value: Any): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     

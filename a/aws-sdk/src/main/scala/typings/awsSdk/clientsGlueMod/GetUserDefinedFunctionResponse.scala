@@ -18,7 +18,8 @@ object GetUserDefinedFunctionResponse {
     __obj.asInstanceOf[GetUserDefinedFunctionResponse]
   }
   
-  extension [Self <: GetUserDefinedFunctionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserDefinedFunctionResponse] (val x: Self) extends AnyVal {
     
     inline def setUserDefinedFunction(value: UserDefinedFunction): Self = StObject.set(x, "UserDefinedFunction", value.asInstanceOf[js.Any])
     

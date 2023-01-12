@@ -55,7 +55,8 @@ object ImageSampleProperties {
     __obj.asInstanceOf[ImageSampleProperties]
   }
   
-  extension [Self <: ImageSampleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageSampleProperties] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

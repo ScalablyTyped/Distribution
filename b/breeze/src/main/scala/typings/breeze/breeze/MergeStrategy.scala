@@ -34,7 +34,8 @@ object MergeStrategy {
     __obj.asInstanceOf[MergeStrategy]
   }
   
-  extension [Self <: MergeStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeStrategy] (val x: Self) extends AnyVal {
     
     inline def setDisallowed(value: MergeStrategySymbol): Self = StObject.set(x, "Disallowed", value.asInstanceOf[js.Any])
     

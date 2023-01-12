@@ -39,7 +39,8 @@ object WebUICachedFileUpdaterActivatedEventArgs {
     __obj.asInstanceOf[WebUICachedFileUpdaterActivatedEventArgs]
   }
   
-  extension [Self <: WebUICachedFileUpdaterActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUICachedFileUpdaterActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

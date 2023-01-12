@@ -18,7 +18,8 @@ object InventorySchedule {
     __obj.asInstanceOf[InventorySchedule]
   }
   
-  extension [Self <: InventorySchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventorySchedule] (val x: Self) extends AnyVal {
     
     inline def setFrequency(value: InventoryFrequency): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object FlowConnection {
     __obj.asInstanceOf[FlowConnection]
   }
   
-  extension [Self <: FlowConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowConnection] (val x: Self) extends AnyVal {
     
     inline def setAnimationType(value: AnimationType): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     

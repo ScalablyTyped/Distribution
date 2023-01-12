@@ -15,7 +15,8 @@ object AnalysisTokenizerBase {
     __obj.asInstanceOf[AnalysisTokenizerBase]
   }
   
-  extension [Self <: AnalysisTokenizerBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisTokenizerBase] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: VersionString): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

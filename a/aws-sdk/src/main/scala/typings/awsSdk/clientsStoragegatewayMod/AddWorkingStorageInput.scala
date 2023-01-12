@@ -20,7 +20,8 @@ object AddWorkingStorageInput {
     __obj.asInstanceOf[AddWorkingStorageInput]
   }
   
-  extension [Self <: AddWorkingStorageInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddWorkingStorageInput] (val x: Self) extends AnyVal {
     
     inline def setDiskIds(value: DiskIds): Self = StObject.set(x, "DiskIds", value.asInstanceOf[js.Any])
     

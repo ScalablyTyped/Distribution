@@ -36,7 +36,8 @@ object LowTextContrastIssueDetails {
     __obj.asInstanceOf[LowTextContrastIssueDetails]
   }
   
-  extension [Self <: LowTextContrastIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LowTextContrastIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setContrastRatio(value: Double): Self = StObject.set(x, "contrastRatio", value.asInstanceOf[js.Any])
     

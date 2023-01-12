@@ -298,7 +298,8 @@ object HistoryEvent {
     __obj.asInstanceOf[HistoryEvent]
   }
   
-  extension [Self <: HistoryEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryEvent] (val x: Self) extends AnyVal {
     
     inline def setActivityTaskCancelRequestedEventAttributes(value: ActivityTaskCancelRequestedEventAttributes): Self = StObject.set(x, "activityTaskCancelRequestedEventAttributes", value.asInstanceOf[js.Any])
     

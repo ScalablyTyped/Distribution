@@ -25,7 +25,8 @@ object InitMultipartUploadResult {
     __obj.asInstanceOf[InitMultipartUploadResult]
   }
   
-  extension [Self <: InitMultipartUploadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitMultipartUploadResult] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object esUtilsNameMapMod {
       __obj.asInstanceOf[KV[T]]
     }
     
-    extension [Self <: KV[?], T](x: Self & KV[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KV[?], T] (val x: Self & KV[T]) extends AnyVal {
       
       inline def setKey(value: InternalNamePath): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object esUtilsNameMapMod {
       __obj.asInstanceOf[NameMap[T]]
     }
     
-    extension [Self <: NameMap[?], T](x: Self & NameMap[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameMap[?], T] (val x: Self & NameMap[T]) extends AnyVal {
       
       inline def setDelete(value: InternalNamePath => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       

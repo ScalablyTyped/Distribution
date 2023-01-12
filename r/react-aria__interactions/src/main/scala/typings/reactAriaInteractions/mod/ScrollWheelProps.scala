@@ -19,7 +19,8 @@ object ScrollWheelProps {
     __obj.asInstanceOf[ScrollWheelProps]
   }
   
-  extension [Self <: ScrollWheelProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollWheelProps] (val x: Self) extends AnyVal {
     
     inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     

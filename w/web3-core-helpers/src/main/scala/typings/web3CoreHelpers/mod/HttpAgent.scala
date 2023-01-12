@@ -20,7 +20,8 @@ object HttpAgent {
     __obj.asInstanceOf[HttpAgent]
   }
   
-  extension [Self <: HttpAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpAgent] (val x: Self) extends AnyVal {
     
     inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     

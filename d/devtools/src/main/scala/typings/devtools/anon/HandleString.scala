@@ -15,7 +15,8 @@ object HandleString {
     __obj.asInstanceOf[HandleString]
   }
   
-  extension [Self <: HandleString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleString] (val x: Self) extends AnyVal {
     
     inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object PutBackupPolicyRequest {
     __obj.asInstanceOf[PutBackupPolicyRequest]
   }
   
-  extension [Self <: PutBackupPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutBackupPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setBackupPolicy(value: BackupPolicy): Self = StObject.set(x, "BackupPolicy", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object StopDBInstanceAutomatedBackupsReplicationResult {
     __obj.asInstanceOf[StopDBInstanceAutomatedBackupsReplicationResult]
   }
   
-  extension [Self <: StopDBInstanceAutomatedBackupsReplicationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopDBInstanceAutomatedBackupsReplicationResult] (val x: Self) extends AnyVal {
     
     inline def setDBInstanceAutomatedBackup(value: DBInstanceAutomatedBackup): Self = StObject.set(x, "DBInstanceAutomatedBackup", value.asInstanceOf[js.Any])
     

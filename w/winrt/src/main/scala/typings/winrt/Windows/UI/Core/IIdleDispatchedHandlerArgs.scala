@@ -15,7 +15,8 @@ object IIdleDispatchedHandlerArgs {
     __obj.asInstanceOf[IIdleDispatchedHandlerArgs]
   }
   
-  extension [Self <: IIdleDispatchedHandlerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIdleDispatchedHandlerArgs] (val x: Self) extends AnyVal {
     
     inline def setIsDispatcherIdle(value: Boolean): Self = StObject.set(x, "isDispatcherIdle", value.asInstanceOf[js.Any])
   }

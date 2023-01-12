@@ -39,7 +39,8 @@ object ATVColor {
     __obj.asInstanceOf[ATVColor]
   }
   
-  extension [Self <: ATVColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVColor] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

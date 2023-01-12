@@ -27,7 +27,8 @@ object VarianceScalingArgs {
     __obj.asInstanceOf[VarianceScalingArgs]
   }
   
-  extension [Self <: VarianceScalingArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VarianceScalingArgs] (val x: Self) extends AnyVal {
     
     inline def setDistribution(value: Distribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object srcConcreteMenuItemMod {
       __obj.asInstanceOf[ConcreteMenuItem]
     }
     
-    extension [Self <: ConcreteMenuItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcreteMenuItem] (val x: Self) extends AnyVal {
       
       inline def setHandleClick(value: () => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction0(value))
     }

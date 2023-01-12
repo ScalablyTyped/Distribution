@@ -23,7 +23,8 @@ object libTypescriptTypeScriptDiagnosticsOptionsMod {
       __obj.asInstanceOf[TypeScriptDiagnosticsOptions]
     }
     
-    extension [Self <: TypeScriptDiagnosticsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeScriptDiagnosticsOptions] (val x: Self) extends AnyVal {
       
       inline def setDeclaration(value: Boolean): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       

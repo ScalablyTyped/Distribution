@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Cb]
     }
     
-    extension [Self <: Cb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cb] (val x: Self) extends AnyVal {
       
       inline def setCb(value: Any): Self = StObject.set(x, "cb", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Cookies): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Cookies]
     }
     
-    extension [Self <: Cookies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cookies] (val x: Self) extends AnyVal {
       
       inline def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       

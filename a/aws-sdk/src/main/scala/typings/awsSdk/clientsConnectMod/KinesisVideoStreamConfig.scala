@@ -28,7 +28,8 @@ object KinesisVideoStreamConfig {
     __obj.asInstanceOf[KinesisVideoStreamConfig]
   }
   
-  extension [Self <: KinesisVideoStreamConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisVideoStreamConfig] (val x: Self) extends AnyVal {
     
     inline def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
     

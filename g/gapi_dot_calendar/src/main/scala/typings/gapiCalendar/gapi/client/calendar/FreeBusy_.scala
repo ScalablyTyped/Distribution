@@ -32,7 +32,8 @@ object FreeBusy_ {
     __obj.asInstanceOf[FreeBusy_]
   }
   
-  extension [Self <: FreeBusy_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeBusy_] (val x: Self) extends AnyVal {
     
     inline def setCalendars(value: StringDictionary[Busy]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     

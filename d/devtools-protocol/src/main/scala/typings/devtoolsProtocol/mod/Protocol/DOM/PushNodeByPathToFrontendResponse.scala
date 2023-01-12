@@ -18,7 +18,8 @@ object PushNodeByPathToFrontendResponse {
     __obj.asInstanceOf[PushNodeByPathToFrontendResponse]
   }
   
-  extension [Self <: PushNodeByPathToFrontendResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushNodeByPathToFrontendResponse] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }

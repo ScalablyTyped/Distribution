@@ -17,7 +17,8 @@ object FeatureLayerLayerviewCreateErrorEvent {
     __obj.asInstanceOf[FeatureLayerLayerviewCreateErrorEvent]
   }
   
-  extension [Self <: FeatureLayerLayerviewCreateErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

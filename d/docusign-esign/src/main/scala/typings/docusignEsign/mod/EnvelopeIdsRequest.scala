@@ -23,7 +23,8 @@ object EnvelopeIdsRequest {
     __obj.asInstanceOf[EnvelopeIdsRequest]
   }
   
-  extension [Self <: EnvelopeIdsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeIdsRequest] (val x: Self) extends AnyVal {
     
     inline def setEnvelopeIds(value: js.Array[String]): Self = StObject.set(x, "envelopeIds", value.asInstanceOf[js.Any])
     

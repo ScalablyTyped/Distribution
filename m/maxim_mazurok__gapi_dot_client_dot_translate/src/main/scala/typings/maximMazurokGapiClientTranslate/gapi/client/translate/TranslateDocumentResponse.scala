@@ -28,7 +28,8 @@ object TranslateDocumentResponse {
     __obj.asInstanceOf[TranslateDocumentResponse]
   }
   
-  extension [Self <: TranslateDocumentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslateDocumentResponse] (val x: Self) extends AnyVal {
     
     inline def setDocumentTranslation(value: DocumentTranslation): Self = StObject.set(x, "documentTranslation", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object BarLineChartBase {
     __obj.asInstanceOf[BarLineChartBase]
   }
   
-  extension [Self <: BarLineChartBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarLineChartBase] (val x: Self) extends AnyVal {
     
     inline def setAutoScaleMinMaxEnabled(value: Boolean): Self = StObject.set(x, "autoScaleMinMaxEnabled", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[IgnoreLineComment]
     }
     
-    extension [Self <: IgnoreLineComment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreLineComment] (val x: Self) extends AnyVal {
       
       inline def setIgnoreLineComment(value: Boolean): Self = StObject.set(x, "ignoreLineComment", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[IgnoreNesting]
     }
     
-    extension [Self <: IgnoreNesting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreNesting] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -102,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Src]
     }
     
-    extension [Self <: Src](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Src] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

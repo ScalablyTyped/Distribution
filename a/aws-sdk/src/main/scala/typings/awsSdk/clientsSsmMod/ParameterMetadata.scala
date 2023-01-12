@@ -68,7 +68,8 @@ object ParameterMetadata {
     __obj.asInstanceOf[ParameterMetadata]
   }
   
-  extension [Self <: ParameterMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterMetadata] (val x: Self) extends AnyVal {
     
     inline def setAllowedPattern(value: AllowedPattern): Self = StObject.set(x, "AllowedPattern", value.asInstanceOf[js.Any])
     

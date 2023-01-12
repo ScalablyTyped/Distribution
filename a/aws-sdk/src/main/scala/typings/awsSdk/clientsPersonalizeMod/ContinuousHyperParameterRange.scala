@@ -28,7 +28,8 @@ object ContinuousHyperParameterRange {
     __obj.asInstanceOf[ContinuousHyperParameterRange]
   }
   
-  extension [Self <: ContinuousHyperParameterRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousHyperParameterRange] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: ContinuousMaxValue): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

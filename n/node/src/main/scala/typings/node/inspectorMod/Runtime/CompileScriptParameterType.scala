@@ -33,7 +33,8 @@ object CompileScriptParameterType {
     __obj.asInstanceOf[CompileScriptParameterType]
   }
   
-  extension [Self <: CompileScriptParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompileScriptParameterType] (val x: Self) extends AnyVal {
     
     inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     

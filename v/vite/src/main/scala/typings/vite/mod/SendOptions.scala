@@ -23,7 +23,8 @@ object SendOptions {
     __obj.asInstanceOf[SendOptions]
   }
   
-  extension [Self <: SendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
     

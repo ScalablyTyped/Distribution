@@ -28,7 +28,8 @@ object PaymentsError {
     __obj.asInstanceOf[PaymentsError]
   }
   
-  extension [Self <: PaymentsError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentsError] (val x: Self) extends AnyVal {
     
     inline def setStatusCode(value: PaymentsErrorStatusCode | String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     

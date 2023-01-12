@@ -85,7 +85,8 @@ object miscDataReaderMod {
       __obj.asInstanceOf[IDataBuffer]
     }
     
-    extension [Self <: IDataBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDataBuffer] (val x: Self) extends AnyVal {
       
       inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
       

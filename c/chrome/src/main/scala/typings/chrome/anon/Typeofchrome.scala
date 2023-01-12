@@ -675,7 +675,8 @@ object Typeofchrome {
     __obj.asInstanceOf[Typeofchrome]
   }
   
-  extension [Self <: Typeofchrome](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofchrome] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityFeatures(value: TypeofaccessibilityFeatur): Self = StObject.set(x, "accessibilityFeatures", value.asInstanceOf[js.Any])
     

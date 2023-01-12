@@ -21,7 +21,8 @@ object PlotlyDataLayoutConfig {
     __obj.asInstanceOf[PlotlyDataLayoutConfig]
   }
   
-  extension [Self <: PlotlyDataLayoutConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotlyDataLayoutConfig] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: PartialConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

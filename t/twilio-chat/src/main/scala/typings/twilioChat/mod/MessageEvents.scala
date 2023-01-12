@@ -15,7 +15,8 @@ object MessageEvents {
     __obj.asInstanceOf[MessageEvents]
   }
   
-  extension [Self <: MessageEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageEvents] (val x: Self) extends AnyVal {
     
     inline def setUpdated(value: typings.twilioChat.anon.Message => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction1(value))
   }

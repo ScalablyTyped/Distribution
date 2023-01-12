@@ -18,7 +18,8 @@ object LogDelivery {
     __obj.asInstanceOf[LogDelivery]
   }
   
-  extension [Self <: LogDelivery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogDelivery] (val x: Self) extends AnyVal {
     
     inline def setWorkerLogDelivery(value: WorkerLogDelivery): Self = StObject.set(x, "workerLogDelivery", value.asInstanceOf[js.Any])
   }

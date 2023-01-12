@@ -38,7 +38,8 @@ object DirectKinesisSource {
     __obj.asInstanceOf[DirectKinesisSource]
   }
   
-  extension [Self <: DirectKinesisSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectKinesisSource] (val x: Self) extends AnyVal {
     
     inline def setDataPreviewOptions(value: StreamingDataPreviewOptions): Self = StObject.set(x, "DataPreviewOptions", value.asInstanceOf[js.Any])
     

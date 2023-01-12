@@ -101,7 +101,8 @@ object DeviceThumbnail {
     __obj.asInstanceOf[DeviceThumbnail]
   }
   
-  extension [Self <: DeviceThumbnail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceThumbnail] (val x: Self) extends AnyVal {
     
     inline def setCanRead(value: Boolean): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
     

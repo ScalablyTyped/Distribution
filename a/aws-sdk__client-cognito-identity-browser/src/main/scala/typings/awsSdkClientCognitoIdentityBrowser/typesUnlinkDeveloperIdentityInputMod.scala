@@ -66,7 +66,8 @@ object typesUnlinkDeveloperIdentityInputMod {
       __obj.asInstanceOf[UnlinkDeveloperIdentityInput]
     }
     
-    extension [Self <: UnlinkDeveloperIdentityInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnlinkDeveloperIdentityInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

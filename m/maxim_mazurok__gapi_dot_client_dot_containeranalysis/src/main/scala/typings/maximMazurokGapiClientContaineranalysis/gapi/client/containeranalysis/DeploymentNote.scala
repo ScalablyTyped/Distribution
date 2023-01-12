@@ -16,7 +16,8 @@ object DeploymentNote {
     __obj.asInstanceOf[DeploymentNote]
   }
   
-  extension [Self <: DeploymentNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentNote] (val x: Self) extends AnyVal {
     
     inline def setResourceUri(value: js.Array[String]): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     

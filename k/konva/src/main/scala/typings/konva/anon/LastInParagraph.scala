@@ -19,7 +19,8 @@ object LastInParagraph {
     __obj.asInstanceOf[LastInParagraph]
   }
   
-  extension [Self <: LastInParagraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastInParagraph] (val x: Self) extends AnyVal {
     
     inline def setLastInParagraph(value: Boolean): Self = StObject.set(x, "lastInParagraph", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object AadUserConversationMemberResult {
     __obj.asInstanceOf[AadUserConversationMemberResult]
   }
   
-  extension [Self <: AadUserConversationMemberResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AadUserConversationMemberResult] (val x: Self) extends AnyVal {
     
     inline def setUserId(value: NullableOption[String]): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     

@@ -523,7 +523,8 @@ object mod {
       __obj.asInstanceOf[Highlighter]
     }
     
-    extension [Self <: Highlighter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Highlighter] (val x: Self) extends AnyVal {
       
       inline def setScope(value: /* node */ NodeType => Boolean): Self = StObject.set(x, "scope", js.Any.fromFunction1(value))
       

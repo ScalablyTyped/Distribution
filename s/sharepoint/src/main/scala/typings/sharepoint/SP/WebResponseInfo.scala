@@ -39,7 +39,8 @@ object WebResponseInfo {
     __obj.asInstanceOf[WebResponseInfo]
   }
   
-  extension [Self <: WebResponseInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebResponseInfo] (val x: Self) extends AnyVal {
     
     inline def setGet_body(value: () => String): Self = StObject.set(x, "get_body", js.Any.fromFunction0(value))
     

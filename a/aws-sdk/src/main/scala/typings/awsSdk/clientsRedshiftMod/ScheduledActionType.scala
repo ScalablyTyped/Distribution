@@ -28,7 +28,8 @@ object ScheduledActionType {
     __obj.asInstanceOf[ScheduledActionType]
   }
   
-  extension [Self <: ScheduledActionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledActionType] (val x: Self) extends AnyVal {
     
     inline def setPauseCluster(value: PauseClusterMessage): Self = StObject.set(x, "PauseCluster", value.asInstanceOf[js.Any])
     

@@ -194,7 +194,8 @@ object Acctalias {
     __obj.asInstanceOf[Acctalias]
   }
   
-  extension [Self <: Acctalias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acctalias] (val x: Self) extends AnyVal {
     
     inline def setAccountid(value: Double): Self = StObject.set(x, "accountid", value.asInstanceOf[js.Any])
     

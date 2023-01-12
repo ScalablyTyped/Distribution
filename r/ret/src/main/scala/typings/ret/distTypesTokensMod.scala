@@ -38,7 +38,8 @@ object distTypesTokensMod {
       __obj.asInstanceOf[Char]
     }
     
-    extension [Self <: Char](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Char] (val x: Self) extends AnyVal {
       
       inline def setType(value: CHAR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object distTypesTokensMod {
       __obj.asInstanceOf[Group]
     }
     
-    extension [Self <: Group](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
       
       inline def setFollowedBy(value: Boolean): Self = StObject.set(x, "followedBy", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object distTypesTokensMod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setType(value: POSITION): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object distTypesTokensMod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -176,7 +180,8 @@ object distTypesTokensMod {
       __obj.asInstanceOf[Reference]
     }
     
-    extension [Self <: Reference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
       
       inline def setType(value: REFERENCE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -205,7 +210,8 @@ object distTypesTokensMod {
       __obj.asInstanceOf[Repetition]
     }
     
-    extension [Self <: Repetition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Repetition] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -238,7 +244,8 @@ object distTypesTokensMod {
       __obj.asInstanceOf[Root]
     }
     
-    extension [Self <: Root](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -281,7 +288,8 @@ object distTypesTokensMod {
       __obj.asInstanceOf[Set]
     }
     
-    extension [Self <: Set](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Set] (val x: Self) extends AnyVal {
       
       inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
       
@@ -423,7 +431,8 @@ object distTypesTokensMod {
       __obj.asInstanceOf[ValueType[T, K]]
     }
     
-    extension [Self <: ValueType[?, ?], T, K](x: Self & (ValueType[T, K])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueType[?, ?], T, K] (val x: Self & (ValueType[T, K])) extends AnyVal {
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

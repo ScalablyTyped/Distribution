@@ -28,7 +28,8 @@ object CreateConnectClientAddInRequest {
     __obj.asInstanceOf[CreateConnectClientAddInRequest]
   }
   
-  extension [Self <: CreateConnectClientAddInRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConnectClientAddInRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: AddInName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

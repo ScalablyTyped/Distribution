@@ -45,7 +45,8 @@ object GetItemInput {
     __obj.asInstanceOf[GetItemInput]
   }
   
-  extension [Self <: GetItemInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetItemInput] (val x: Self) extends AnyVal {
     
     inline def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
     

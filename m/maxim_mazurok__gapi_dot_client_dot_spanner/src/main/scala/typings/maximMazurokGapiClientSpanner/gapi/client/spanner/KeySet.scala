@@ -28,7 +28,8 @@ object KeySet {
     __obj.asInstanceOf[KeySet]
   }
   
-  extension [Self <: KeySet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeySet] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object MetadataRequestedEventOptions {
     __obj.asInstanceOf[MetadataRequestedEventOptions]
   }
   
-  extension [Self <: MetadataRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
     

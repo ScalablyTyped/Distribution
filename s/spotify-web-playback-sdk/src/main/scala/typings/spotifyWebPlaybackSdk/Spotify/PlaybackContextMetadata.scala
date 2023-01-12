@@ -35,7 +35,8 @@ object PlaybackContextMetadata {
     __obj.asInstanceOf[PlaybackContextMetadata]
   }
   
-  extension [Self <: PlaybackContextMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackContextMetadata] (val x: Self) extends AnyVal {
     
     inline def setCurrent_item(value: PlaybackContextTrack): Self = StObject.set(x, "current_item", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GooglePlusUserId {
     __obj.asInstanceOf[GooglePlusUserId]
   }
   
-  extension [Self <: GooglePlusUserId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePlusUserId] (val x: Self) extends AnyVal {
     
     inline def setGooglePlusUserId(value: String): Self = StObject.set(x, "googlePlusUserId", value.asInstanceOf[js.Any])
     

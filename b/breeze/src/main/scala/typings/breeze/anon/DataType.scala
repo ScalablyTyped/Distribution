@@ -19,7 +19,8 @@ object DataType {
     __obj.asInstanceOf[DataType]
   }
   
-  extension [Self <: DataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataType] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: typings.breeze.breeze.DataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

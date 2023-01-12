@@ -23,7 +23,8 @@ object BatchGetCommitsOutput {
     __obj.asInstanceOf[BatchGetCommitsOutput]
   }
   
-  extension [Self <: BatchGetCommitsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetCommitsOutput] (val x: Self) extends AnyVal {
     
     inline def setCommits(value: CommitObjectsList): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     

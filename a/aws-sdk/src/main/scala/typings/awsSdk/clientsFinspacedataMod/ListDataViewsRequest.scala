@@ -28,7 +28,8 @@ object ListDataViewsRequest {
     __obj.asInstanceOf[ListDataViewsRequest]
   }
   
-  extension [Self <: ListDataViewsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataViewsRequest] (val x: Self) extends AnyVal {
     
     inline def setDatasetId(value: DatasetId): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     

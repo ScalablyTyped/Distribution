@@ -19,7 +19,8 @@ object FailAuthentication {
     __obj.asInstanceOf[FailAuthentication]
   }
   
-  extension [Self <: FailAuthentication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailAuthentication] (val x: Self) extends AnyVal {
     
     inline def setChallengeName(value: String): Self = StObject.set(x, "challengeName", value.asInstanceOf[js.Any])
     

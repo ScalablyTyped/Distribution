@@ -29,7 +29,8 @@ object libNodeMod {
       __obj.asInstanceOf[ConvertOptions]
     }
     
-    extension [Self <: ConvertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertOptions] (val x: Self) extends AnyVal {
       
       inline def setConvertQuadraticsToCubics(value: Boolean): Self = StObject.set(x, "convertQuadraticsToCubics", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object libNodeMod {
       __obj.asInstanceOf[ConvertedNode]
     }
     
-    extension [Self <: ConvertedNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertedNode] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Path_): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

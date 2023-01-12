@@ -107,7 +107,8 @@ object spinnerOptionsMod {
       __obj.asInstanceOf[SpinnerOptions]
     }
     
-    extension [Self <: SpinnerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpinnerOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

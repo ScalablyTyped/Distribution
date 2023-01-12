@@ -44,7 +44,8 @@ object ReleaseSchedule {
     __obj.asInstanceOf[ReleaseSchedule]
   }
   
-  extension [Self <: ReleaseSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseSchedule] (val x: Self) extends AnyVal {
     
     inline def setDaysToRelease(value: ScheduleDays): Self = StObject.set(x, "daysToRelease", value.asInstanceOf[js.Any])
     

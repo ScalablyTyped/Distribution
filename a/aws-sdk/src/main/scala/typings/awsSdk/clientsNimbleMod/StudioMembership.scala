@@ -33,7 +33,8 @@ object StudioMembership {
     __obj.asInstanceOf[StudioMembership]
   }
   
-  extension [Self <: StudioMembership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StudioMembership] (val x: Self) extends AnyVal {
     
     inline def setIdentityStoreId(value: String): Self = StObject.set(x, "identityStoreId", value.asInstanceOf[js.Any])
     

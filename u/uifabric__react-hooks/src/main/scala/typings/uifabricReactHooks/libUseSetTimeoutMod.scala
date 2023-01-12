@@ -25,7 +25,8 @@ object libUseSetTimeoutMod {
       __obj.asInstanceOf[UseSetTimeoutReturnType]
     }
     
-    extension [Self <: UseSetTimeoutReturnType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseSetTimeoutReturnType] (val x: Self) extends AnyVal {
       
       inline def setClearTimeout(value: Double => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       

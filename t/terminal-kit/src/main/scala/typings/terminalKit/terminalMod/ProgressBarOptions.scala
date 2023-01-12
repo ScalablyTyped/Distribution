@@ -51,7 +51,8 @@ object ProgressBarOptions {
     __obj.asInstanceOf[ProgressBarOptions]
   }
   
-  extension [Self <: ProgressBarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressBarOptions] (val x: Self) extends AnyVal {
     
     inline def setBarBracketStyle(value: CTerminal): Self = StObject.set(x, "barBracketStyle", value.asInstanceOf[js.Any])
     

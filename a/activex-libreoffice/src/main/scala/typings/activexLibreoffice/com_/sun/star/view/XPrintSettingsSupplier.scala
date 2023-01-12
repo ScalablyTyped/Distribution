@@ -37,7 +37,8 @@ object XPrintSettingsSupplier {
     __obj.asInstanceOf[XPrintSettingsSupplier]
   }
   
-  extension [Self <: XPrintSettingsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrintSettingsSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetPrintSettings(value: () => XPropertySet): Self = StObject.set(x, "getPrintSettings", js.Any.fromFunction0(value))
     

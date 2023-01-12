@@ -53,7 +53,8 @@ object CreateRuleGroupRequest {
     __obj.asInstanceOf[CreateRuleGroupRequest]
   }
   
-  extension [Self <: CreateRuleGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRuleGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: CapacityUnit): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
     

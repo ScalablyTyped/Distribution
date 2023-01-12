@@ -23,7 +23,8 @@ object CatRecoveryRequest {
     __obj.asInstanceOf[CatRecoveryRequest]
   }
   
-  extension [Self <: CatRecoveryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatRecoveryRequest] (val x: Self) extends AnyVal {
     
     inline def setActive_only(value: Boolean): Self = StObject.set(x, "active_only", value.asInstanceOf[js.Any])
     

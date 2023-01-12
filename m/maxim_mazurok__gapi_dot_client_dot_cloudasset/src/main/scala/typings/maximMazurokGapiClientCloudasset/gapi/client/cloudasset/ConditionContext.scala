@@ -16,7 +16,8 @@ object ConditionContext {
     __obj.asInstanceOf[ConditionContext]
   }
   
-  extension [Self <: ConditionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionContext] (val x: Self) extends AnyVal {
     
     inline def setAccessTime(value: String): Self = StObject.set(x, "accessTime", value.asInstanceOf[js.Any])
     

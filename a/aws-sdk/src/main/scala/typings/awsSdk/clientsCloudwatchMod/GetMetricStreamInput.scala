@@ -18,7 +18,8 @@ object GetMetricStreamInput {
     __obj.asInstanceOf[GetMetricStreamInput]
   }
   
-  extension [Self <: GetMetricStreamInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMetricStreamInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: MetricStreamName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

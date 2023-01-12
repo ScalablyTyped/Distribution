@@ -33,7 +33,8 @@ object networkStatus {
       __obj.asInstanceOf[NetworkLinkInfo]
     }
     
-    extension [Self <: NetworkLinkInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkLinkInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

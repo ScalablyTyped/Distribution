@@ -47,9 +47,10 @@ object buildSrcNormalizeBaseMod {
       __obj.asInstanceOf[ExtraNormalizer[S, O, SN]]
     }
     
-    extension [Self <: ExtraNormalizer[?, ?, ?], S /* <: GenericSpec[Any, Any, Any, FieldName] */, // Input type
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtraNormalizer[?, ?, ?], S /* <: GenericSpec[Any, Any, Any, FieldName] */, // Input type
     O /* <: NormalizedSpec */, // Output Type
-    SN /* <: GenericSpec[Any, Any, Any, FieldName] */](x: Self & (ExtraNormalizer[S, O, SN])) {
+    SN /* <: GenericSpec[Any, Any, Any, FieldName] */] (val x: Self & (ExtraNormalizer[S, O, SN])) extends AnyVal {
       
       inline def setHasMatchingType(value: (GenericSpec[Any, Any, Any, Any], Config[ExprRef | SignalRef]) => /* is S */ Boolean): Self = StObject.set(x, "hasMatchingType", js.Any.fromFunction2(value))
       
@@ -99,7 +100,8 @@ object buildSrcNormalizeBaseMod {
       __obj.asInstanceOf[NormalizerParams]
     }
     
-    extension [Self <: NormalizerParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizerParams] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

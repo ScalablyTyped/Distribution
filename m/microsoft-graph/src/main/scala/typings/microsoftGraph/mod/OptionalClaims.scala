@@ -22,7 +22,8 @@ object OptionalClaims {
     __obj.asInstanceOf[OptionalClaims]
   }
   
-  extension [Self <: OptionalClaims](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalClaims] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: NullableOption[js.Array[OptionalClaim]]): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

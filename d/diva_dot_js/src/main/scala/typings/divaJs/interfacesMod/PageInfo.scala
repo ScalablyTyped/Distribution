@@ -21,7 +21,8 @@ object PageInfo {
     __obj.asInstanceOf[PageInfo]
   }
   
-  extension [Self <: PageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object jsUsaBannerMod extends Shortcut {
       __obj.asInstanceOf[Banner]
     }
     
-    extension [Self <: Banner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Banner] (val x: Self) extends AnyVal {
       
       inline def setOff(value: HTMLElement => Unit): Self = StObject.set(x, "off", js.Any.fromFunction1(value))
       

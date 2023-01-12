@@ -31,7 +31,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[JsonStringPointerListItem]
     }
     
-    extension [Self <: JsonStringPointerListItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonStringPointerListItem] (val x: Self) extends AnyVal {
       
       inline def setPointer(value: JsonStringPointer): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[UriFragmentIdentifierPointerListItem]
     }
     
-    extension [Self <: UriFragmentIdentifierPointerListItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UriFragmentIdentifierPointerListItem] (val x: Self) extends AnyVal {
       
       inline def setFragmentId(value: UriFragmentIdentifierPointer): Self = StObject.set(x, "fragmentId", value.asInstanceOf[js.Any])
       

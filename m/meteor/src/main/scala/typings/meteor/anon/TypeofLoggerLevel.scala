@@ -33,7 +33,8 @@ object TypeofLoggerLevel {
     __obj.asInstanceOf[TypeofLoggerLevel]
   }
   
-  extension [Self <: TypeofLoggerLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofLoggerLevel] (val x: Self) extends AnyVal {
     
     inline def setDEBUG(value: debug): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
     

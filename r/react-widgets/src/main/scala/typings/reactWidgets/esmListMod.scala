@@ -69,7 +69,8 @@ object esmListMod {
       __obj.asInstanceOf[ListHandle]
     }
     
-    extension [Self <: ListHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListHandle] (val x: Self) extends AnyVal {
       
       inline def setScrollIntoView(value: () => Unit): Self = StObject.set(x, "scrollIntoView", js.Any.fromFunction0(value))
     }
@@ -120,7 +121,8 @@ object esmListMod {
       __obj.asInstanceOf[ListProps[TDataItem]]
     }
     
-    extension [Self <: ListProps[?], TDataItem](x: Self & ListProps[TDataItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps[?], TDataItem] (val x: Self & ListProps[TDataItem]) extends AnyVal {
       
       inline def setAccessors(value: Accessors): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])
       

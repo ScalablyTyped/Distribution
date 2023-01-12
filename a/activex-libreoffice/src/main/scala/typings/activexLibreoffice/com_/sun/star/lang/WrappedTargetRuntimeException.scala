@@ -26,7 +26,8 @@ object WrappedTargetRuntimeException {
     __obj.asInstanceOf[WrappedTargetRuntimeException]
   }
   
-  extension [Self <: WrappedTargetRuntimeException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WrappedTargetRuntimeException] (val x: Self) extends AnyVal {
     
     inline def setTargetException(value: Any): Self = StObject.set(x, "TargetException", value.asInstanceOf[js.Any])
   }

@@ -87,7 +87,8 @@ object TestSuite {
     __obj.asInstanceOf[TestSuite]
   }
   
-  extension [Self <: TestSuite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestSuite] (val x: Self) extends AnyVal {
     
     inline def setAreaUri(value: String): Self = StObject.set(x, "areaUri", value.asInstanceOf[js.Any])
     

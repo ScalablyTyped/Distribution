@@ -32,7 +32,8 @@ object LookupTagClickEventArguments {
     __obj.asInstanceOf[LookupTagClickEventArguments]
   }
   
-  extension [Self <: LookupTagClickEventArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupTagClickEventArguments] (val x: Self) extends AnyVal {
     
     inline def setGetTagValue(value: () => TagValue): Self = StObject.set(x, "getTagValue", js.Any.fromFunction0(value))
     

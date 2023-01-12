@@ -24,7 +24,8 @@ object PopupWindowCancelEventArgs {
     __obj.asInstanceOf[PopupWindowCancelEventArgs]
   }
   
-  extension [Self <: PopupWindowCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupWindowCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCloseReason(value: BootstrapPopupControlCloseReason): Self = StObject.set(x, "closeReason", value.asInstanceOf[js.Any])
     

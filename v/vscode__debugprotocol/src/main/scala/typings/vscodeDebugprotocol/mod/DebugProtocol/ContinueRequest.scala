@@ -31,7 +31,8 @@ object ContinueRequest {
     __obj.asInstanceOf[ContinueRequest]
   }
   
-  extension [Self <: ContinueRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: ContinueArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

@@ -41,7 +41,8 @@ object foxxSessionsTransportsCookieMod {
       __obj.asInstanceOf[CookieTransportOptions]
     }
     
-    extension [Self <: CookieTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: HashAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

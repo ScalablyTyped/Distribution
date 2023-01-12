@@ -25,7 +25,8 @@ object TSTupleType_ {
     __obj.asInstanceOf[TSTupleType_]
   }
   
-  extension [Self <: TSTupleType_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTupleType_] (val x: Self) extends AnyVal {
     
     inline def setElementTypes(value: js.Array[TSType | TSNamedTupleMember_]): Self = StObject.set(x, "elementTypes", value.asInstanceOf[js.Any])
     

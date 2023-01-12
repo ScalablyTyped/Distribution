@@ -54,7 +54,8 @@ object DataMarkerAnnotationCfg {
     __obj.asInstanceOf[DataMarkerAnnotationCfg]
   }
   
-  extension [Self <: DataMarkerAnnotationCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataMarkerAnnotationCfg] (val x: Self) extends AnyVal {
     
     inline def setAutoAdjust(value: Boolean): Self = StObject.set(x, "autoAdjust", value.asInstanceOf[js.Any])
     

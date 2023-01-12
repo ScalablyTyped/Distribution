@@ -51,7 +51,8 @@ object typesLibCommentRemoverMod {
       __obj.asInstanceOf[CommentRemover]
     }
     
-    extension [Self <: CommentRemover](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentRemover] (val x: Self) extends AnyVal {
       
       inline def setCanRemove(value: String => js.UndefOr[Boolean]): Self = StObject.set(x, "canRemove", js.Any.fromFunction1(value))
       

@@ -21,7 +21,8 @@ object RollbackAction {
     __obj.asInstanceOf[RollbackAction]
   }
   
-  extension [Self <: RollbackAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollbackAction] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

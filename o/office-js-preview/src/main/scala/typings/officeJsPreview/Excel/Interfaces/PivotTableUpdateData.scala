@@ -54,7 +54,8 @@ object PivotTableUpdateData {
     __obj.asInstanceOf[PivotTableUpdateData]
   }
   
-  extension [Self <: PivotTableUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotTableUpdateData] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleFiltersPerField(value: Boolean): Self = StObject.set(x, "allowMultipleFiltersPerField", value.asInstanceOf[js.Any])
     

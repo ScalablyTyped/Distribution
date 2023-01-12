@@ -15,7 +15,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setJsonRpcClient(value: JsonRpcClientFactory): Self = StObject.set(x, "JsonRpcClient", value.asInstanceOf[js.Any])
   }

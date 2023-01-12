@@ -19,7 +19,8 @@ object PartiallyResolved {
     __obj.asInstanceOf[PartiallyResolved]
   }
   
-  extension [Self <: PartiallyResolved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartiallyResolved] (val x: Self) extends AnyVal {
     
     inline def setPartiallyResolved(value: scala.Double): Self = StObject.set(x, "partiallyResolved", value.asInstanceOf[js.Any])
     

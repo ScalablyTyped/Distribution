@@ -335,7 +335,8 @@ object mod {
       __obj.asInstanceOf[ConverterExtensions]
     }
     
-    extension [Self <: ConverterExtensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConverterExtensions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: js.Array[ShowdownExtension]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -382,7 +383,8 @@ object mod {
       __obj.asInstanceOf[ConverterGlobals]
     }
     
-    extension [Self <: ConverterGlobals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConverterGlobals] (val x: Self) extends AnyVal {
       
       inline def setConverter(value: Converter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       
@@ -470,7 +472,8 @@ object mod {
       __obj.asInstanceOf[ConverterOptions]
     }
     
-    extension [Self <: ConverterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConverterOptions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(
         value: js.Array[
@@ -532,7 +535,8 @@ object mod {
       __obj.asInstanceOf[Extension_]
     }
     
-    extension [Self <: Extension_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extension_] (val x: Self) extends AnyVal {
       
       inline def setListeners(value: StringDictionary[EventListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
@@ -575,7 +579,8 @@ object mod {
       __obj.asInstanceOf[FilterExtension]
     }
     
-    extension [Self <: FilterExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterExtension] (val x: Self) extends AnyVal {
       
       inline def setFilter(
         value: (/* text */ String, /* converter */ Converter, /* options */ js.UndefOr[ConverterOptions]) => String
@@ -625,7 +630,8 @@ object mod {
       __obj.asInstanceOf[Helper_]
     }
     
-    extension [Self <: Helper_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Helper_] (val x: Self) extends AnyVal {
       
       inline def setReplaceRecursiveRegExp(value: /* repeated */ Any => String): Self = StObject.set(x, "replaceRecursiveRegExp", js.Any.fromFunction1(value))
     }
@@ -673,7 +679,8 @@ object mod {
       __obj.asInstanceOf[RegexReplaceExtension]
     }
     
-    extension [Self <: RegexReplaceExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegexReplaceExtension] (val x: Self) extends AnyVal {
       
       inline def setRegex(value: String | js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
@@ -736,7 +743,8 @@ object mod {
       __obj.asInstanceOf[ShowdownExtension]
     }
     
-    extension [Self <: ShowdownExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowdownExtension] (val x: Self) extends AnyVal {
       
       inline def setFilter(
         value: (/* text */ String, /* converter */ Converter, /* options */ js.UndefOr[ConverterOptions]) => String
@@ -778,7 +786,8 @@ object mod {
       __obj.asInstanceOf[ShowdownOptionDescription]
     }
     
-    extension [Self <: ShowdownOptionDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowdownOptionDescription] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -1495,7 +1504,8 @@ object mod {
       __obj.asInstanceOf[ShowdownOptions]
     }
     
-    extension [Self <: ShowdownOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowdownOptions] (val x: Self) extends AnyVal {
       
       inline def setBackslashEscapesHTMLTags(value: Boolean): Self = StObject.set(x, "backslashEscapesHTMLTags", value.asInstanceOf[js.Any])
       

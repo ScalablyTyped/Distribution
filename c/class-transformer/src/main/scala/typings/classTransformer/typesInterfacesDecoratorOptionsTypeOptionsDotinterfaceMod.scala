@@ -30,7 +30,8 @@ object typesInterfacesDecoratorOptionsTypeOptionsDotinterfaceMod {
       __obj.asInstanceOf[TypeOptions]
     }
     
-    extension [Self <: TypeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeOptions] (val x: Self) extends AnyVal {
       
       inline def setDiscriminator(value: DiscriminatorDescriptor): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object TransitionState {
     __obj.asInstanceOf[TransitionState]
   }
   
-  extension [Self <: TransitionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionState] (val x: Self) extends AnyVal {
     
     inline def setDisabledReason(value: DisabledReason): Self = StObject.set(x, "disabledReason", value.asInstanceOf[js.Any])
     

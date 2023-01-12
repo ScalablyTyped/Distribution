@@ -23,7 +23,8 @@ object helpers {
     __obj.asInstanceOf[helpers]
   }
   
-  extension [Self <: helpers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: helpers] (val x: Self) extends AnyVal {
     
     inline def setHelperExpression(value: Node => Boolean): Self = StObject.set(x, "helperExpression", js.Any.fromFunction1(value))
     

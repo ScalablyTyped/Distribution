@@ -28,7 +28,8 @@ object ListTestGridSessionActionsRequest {
     __obj.asInstanceOf[ListTestGridSessionActionsRequest]
   }
   
-  extension [Self <: ListTestGridSessionActionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTestGridSessionActionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResult(value: MaxPageSize): Self = StObject.set(x, "maxResult", value.asInstanceOf[js.Any])
     

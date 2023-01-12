@@ -30,7 +30,8 @@ object TermsAndConditionsAcceptanceStatus {
     __obj.asInstanceOf[TermsAndConditionsAcceptanceStatus]
   }
   
-  extension [Self <: TermsAndConditionsAcceptanceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermsAndConditionsAcceptanceStatus] (val x: Self) extends AnyVal {
     
     inline def setAcceptedDateTime(value: String): Self = StObject.set(x, "acceptedDateTime", value.asInstanceOf[js.Any])
     

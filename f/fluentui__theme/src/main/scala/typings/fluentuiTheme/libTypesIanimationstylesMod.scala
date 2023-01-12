@@ -131,7 +131,8 @@ object libTypesIanimationstylesMod {
       __obj.asInstanceOf[IAnimationStyles]
     }
     
-    extension [Self <: IAnimationStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnimationStyles] (val x: Self) extends AnyVal {
       
       inline def setFadeIn100(value: IRawStyle): Self = StObject.set(x, "fadeIn100", value.asInstanceOf[js.Any])
       
@@ -239,7 +240,8 @@ object libTypesIanimationstylesMod {
       __obj.asInstanceOf[IAnimationVariables]
     }
     
-    extension [Self <: IAnimationVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnimationVariables] (val x: Self) extends AnyVal {
       
       inline def setDurationValue1(value: String): Self = StObject.set(x, "durationValue1", value.asInstanceOf[js.Any])
       

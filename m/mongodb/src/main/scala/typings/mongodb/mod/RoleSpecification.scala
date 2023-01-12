@@ -22,7 +22,8 @@ object RoleSpecification {
     __obj.asInstanceOf[RoleSpecification]
   }
   
-  extension [Self <: RoleSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoleSpecification] (val x: Self) extends AnyVal {
     
     inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     

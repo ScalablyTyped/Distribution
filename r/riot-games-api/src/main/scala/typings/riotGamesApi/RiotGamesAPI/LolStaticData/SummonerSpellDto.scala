@@ -83,7 +83,8 @@ object SummonerSpellDto {
     __obj.asInstanceOf[SummonerSpellDto]
   }
   
-  extension [Self <: SummonerSpellDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SummonerSpellDto] (val x: Self) extends AnyVal {
     
     inline def setCooldown(value: js.Array[Double]): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     

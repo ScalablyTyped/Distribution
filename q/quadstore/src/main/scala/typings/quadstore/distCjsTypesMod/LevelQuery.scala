@@ -20,7 +20,8 @@ object LevelQuery {
     __obj.asInstanceOf[LevelQuery[LK, LV]]
   }
   
-  extension [Self <: LevelQuery[?, ?], LK, LV](x: Self & (LevelQuery[LK, LV])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelQuery[?, ?], LK, LV] (val x: Self & (LevelQuery[LK, LV])) extends AnyVal {
     
     inline def setIndex(value: InternalIndex): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

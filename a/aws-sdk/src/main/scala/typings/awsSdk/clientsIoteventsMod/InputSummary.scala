@@ -43,7 +43,8 @@ object InputSummary {
     __obj.asInstanceOf[InputSummary]
   }
   
-  extension [Self <: InputSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

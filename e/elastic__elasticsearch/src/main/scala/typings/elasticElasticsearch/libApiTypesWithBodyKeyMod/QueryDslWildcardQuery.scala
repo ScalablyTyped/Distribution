@@ -23,7 +23,8 @@ object QueryDslWildcardQuery {
     __obj.asInstanceOf[QueryDslWildcardQuery]
   }
   
-  extension [Self <: QueryDslWildcardQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslWildcardQuery] (val x: Self) extends AnyVal {
     
     inline def setCase_insensitive(value: Boolean): Self = StObject.set(x, "case_insensitive", value.asInstanceOf[js.Any])
     

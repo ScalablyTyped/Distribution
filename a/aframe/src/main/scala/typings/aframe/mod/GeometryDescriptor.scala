@@ -17,7 +17,8 @@ object GeometryDescriptor {
     __obj.asInstanceOf[GeometryDescriptor[T]]
   }
   
-  extension [Self <: GeometryDescriptor[?], T /* <: Geometry[Any] */](x: Self & GeometryDescriptor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryDescriptor[?], T /* <: Geometry[Any] */] (val x: Self & GeometryDescriptor[T]) extends AnyVal {
     
     inline def setGeometry(value: GeometryConstructor[T]): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     

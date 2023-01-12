@@ -29,7 +29,8 @@ object IBackgroundTaskBuilder {
     __obj.asInstanceOf[IBackgroundTaskBuilder]
   }
   
-  extension [Self <: IBackgroundTaskBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBackgroundTaskBuilder] (val x: Self) extends AnyVal {
     
     inline def setAddCondition(value: IBackgroundCondition => Unit): Self = StObject.set(x, "addCondition", js.Any.fromFunction1(value))
     

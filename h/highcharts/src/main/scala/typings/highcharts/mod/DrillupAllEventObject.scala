@@ -30,7 +30,8 @@ object DrillupAllEventObject {
     __obj.asInstanceOf[DrillupAllEventObject]
   }
   
-  extension [Self <: DrillupAllEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrillupAllEventObject] (val x: Self) extends AnyVal {
     
     inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     

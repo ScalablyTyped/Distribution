@@ -16,7 +16,8 @@ object DiffuseColor {
     __obj.asInstanceOf[DiffuseColor]
   }
   
-  extension [Self <: DiffuseColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiffuseColor] (val x: Self) extends AnyVal {
     
     inline def setDiffuseColor(value: default): Self = StObject.set(x, "diffuseColor", value.asInstanceOf[js.Any])
   }

@@ -83,7 +83,8 @@ object utilsMercadopagoResposeMod {
       __obj.asInstanceOf[ExecOptions[K, P]]
     }
     
-    extension [Self <: ExecOptions[?, ?], K, P](x: Self & (ExecOptions[K, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecOptions[?, ?], K, P] (val x: Self & (ExecOptions[K, P])) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object utilsMercadopagoResposeMod {
       __obj.asInstanceOf[Pagination]
     }
     
-    extension [Self <: Pagination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pagination] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       

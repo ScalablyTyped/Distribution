@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[ReplConfig]
     }
     
-    extension [Self <: ReplConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplConfig] (val x: Self) extends AnyVal {
       
       inline def setCommandTimeout(value: Double): Self = StObject.set(x, "commandTimeout", value.asInstanceOf[js.Any])
       

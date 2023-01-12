@@ -15,7 +15,8 @@ object ChatRoomGroup {
     __obj.asInstanceOf[ChatRoomGroup]
   }
   
-  extension [Self <: ChatRoomGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRoomGroup] (val x: Self) extends AnyVal {
     
     inline def setGroup_summary(value: ChatRoomGroupSummary): Self = StObject.set(x, "group_summary", value.asInstanceOf[js.Any])
   }

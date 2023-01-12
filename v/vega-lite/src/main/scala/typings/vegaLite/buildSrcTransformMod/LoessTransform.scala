@@ -45,7 +45,8 @@ object LoessTransform {
     __obj.asInstanceOf[LoessTransform]
   }
   
-  extension [Self <: LoessTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoessTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

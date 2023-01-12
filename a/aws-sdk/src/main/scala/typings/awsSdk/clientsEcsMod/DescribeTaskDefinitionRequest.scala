@@ -23,7 +23,8 @@ object DescribeTaskDefinitionRequest {
     __obj.asInstanceOf[DescribeTaskDefinitionRequest]
   }
   
-  extension [Self <: DescribeTaskDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTaskDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setInclude(value: TaskDefinitionFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     

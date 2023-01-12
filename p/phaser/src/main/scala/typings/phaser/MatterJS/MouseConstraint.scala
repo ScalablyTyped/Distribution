@@ -58,7 +58,8 @@ object MouseConstraint {
     __obj.asInstanceOf[MouseConstraint]
   }
   
-  extension [Self <: MouseConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseConstraint] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BodyType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

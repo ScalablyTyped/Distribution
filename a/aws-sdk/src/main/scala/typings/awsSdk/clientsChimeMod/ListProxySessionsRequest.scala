@@ -33,7 +33,8 @@ object ListProxySessionsRequest {
     __obj.asInstanceOf[ListProxySessionsRequest]
   }
   
-  extension [Self <: ListProxySessionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProxySessionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ResultMax): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object TextType {
     __obj.asInstanceOf[TextType]
   }
   
-  extension [Self <: TextType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextType] (val x: Self) extends AnyVal {
     
     inline def setConverter(value: typings.oracleOraclejet.ojvalidationBaseMod.Converter[String]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ContainerAccess {
     __obj.asInstanceOf[ContainerAccess]
   }
   
-  extension [Self <: ContainerAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerAccess] (val x: Self) extends AnyVal {
     
     inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     

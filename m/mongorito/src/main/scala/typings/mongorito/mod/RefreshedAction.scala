@@ -21,7 +21,8 @@ object RefreshedAction {
     __obj.asInstanceOf[RefreshedAction]
   }
   
-  extension [Self <: RefreshedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshedAction] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

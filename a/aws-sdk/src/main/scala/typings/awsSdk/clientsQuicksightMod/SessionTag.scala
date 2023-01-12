@@ -23,7 +23,8 @@ object SessionTag {
     __obj.asInstanceOf[SessionTag]
   }
   
-  extension [Self <: SessionTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionTag] (val x: Self) extends AnyVal {
     
     inline def setKey(value: SessionTagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PressedNodeName {
     __obj.asInstanceOf[PressedNodeName]
   }
   
-  extension [Self <: PressedNodeName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressedNodeName] (val x: Self) extends AnyVal {
     
     inline def setPressedNodeName(value: String): Self = StObject.set(x, "pressedNodeName", value.asInstanceOf[js.Any])
     

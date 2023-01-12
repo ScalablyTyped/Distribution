@@ -37,7 +37,8 @@ object CMsgClientLogon {
     __obj.asInstanceOf[CMsgClientLogon]
   }
   
-  extension [Self <: CMsgClientLogon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMsgClientLogon] (val x: Self) extends AnyVal {
     
     inline def setAccount_name(value: String): Self = StObject.set(x, "account_name", value.asInstanceOf[js.Any])
     

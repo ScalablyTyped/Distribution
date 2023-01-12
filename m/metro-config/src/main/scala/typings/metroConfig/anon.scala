@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[BlockList]
     }
     
-    extension [Self <: BlockList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockList] (val x: Self) extends AnyVal {
       
       inline def setBlockList(value: StringDictionary[`true`]): Self = StObject.set(x, "blockList", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Buffer | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[CodeMap]
     }
     
-    extension [Self <: CodeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeMap] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -91,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Collapse]
     }
     
-    extension [Self <: Collapse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collapse] (val x: Self) extends AnyVal {
       
       inline def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
       
@@ -116,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -153,7 +158,8 @@ object anon {
       __obj.asInstanceOf[ExperimentalImportSupport]
     }
     
-    extension [Self <: ExperimentalImportSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExperimentalImportSupport] (val x: Self) extends AnyVal {
       
       inline def setExperimentalImportSupport(value: Boolean): Self = StObject.set(x, "experimentalImportSupport", value.asInstanceOf[js.Any])
       
@@ -184,7 +190,8 @@ object anon {
       __obj.asInstanceOf[Map]
     }
     
-    extension [Self <: Map](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Buffer | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -203,7 +210,8 @@ object anon {
       __obj.asInstanceOf[Platform]
     }
     
-    extension [Self <: Platform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
       
       inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
@@ -257,7 +265,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyResolverConfigT]
     }
     
-    extension [Self <: ReadonlyResolverConfigT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyResolverConfigT] (val x: Self) extends AnyVal {
       
       inline def setAssetExts(value: js.Array[String]): Self = StObject.set(x, "assetExts", value.asInstanceOf[js.Any])
       
@@ -384,7 +393,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyServerConfigT]
     }
     
-    extension [Self <: ReadonlyServerConfigT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyServerConfigT] (val x: Self) extends AnyVal {
       
       inline def setEnhanceMiddleware(
         value: (Middleware, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Server */ Any) => Middleware
@@ -414,7 +424,8 @@ object anon {
       __obj.asInstanceOf[ReadonlySymbolicatorConfi]
     }
     
-    extension [Self <: ReadonlySymbolicatorConfi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlySymbolicatorConfi] (val x: Self) extends AnyVal {
       
       inline def setCustomizeFrame(value: Column => js.UndefOr[Collapse | (js.Promise[Collapse | Unit])]): Self = StObject.set(x, "customizeFrame", js.Any.fromFunction1(value))
     }
@@ -503,7 +514,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyTransformerConfig]
     }
     
-    extension [Self <: ReadonlyTransformerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyTransformerConfig] (val x: Self) extends AnyVal {
       
       inline def setAllowOptionalDependencies(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowOptionalDependencies */ Any

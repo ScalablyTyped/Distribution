@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[BackendTraceId]
     }
     
-    extension [Self <: BackendTraceId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackendTraceId] (val x: Self) extends AnyVal {
       
       inline def setBackendTraceId(value: String): Self = StObject.set(x, "backendTraceId", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[ComponentStack]
     }
     
-    extension [Self <: ComponentStack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentStack] (val x: Self) extends AnyVal {
       
       inline def setComponentStack(value: String): Self = StObject.set(x, "componentStack", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object QueryFilterPage {
     __obj.asInstanceOf[QueryFilterPage]
   }
   
-  extension [Self <: QueryFilterPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryFilterPage] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Org): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

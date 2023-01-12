@@ -31,7 +31,8 @@ object distSrcBaseDriverMod {
       __obj.asInstanceOf[BaseUniDriver]
     }
     
-    extension [Self <: BaseUniDriver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseUniDriver] (val x: Self) extends AnyVal {
       
       inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       

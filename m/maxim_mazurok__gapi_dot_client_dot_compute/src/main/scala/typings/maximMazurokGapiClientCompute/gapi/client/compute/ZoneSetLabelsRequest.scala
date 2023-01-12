@@ -25,7 +25,8 @@ object ZoneSetLabelsRequest {
     __obj.asInstanceOf[ZoneSetLabelsRequest]
   }
   
-  extension [Self <: ZoneSetLabelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneSetLabelsRequest] (val x: Self) extends AnyVal {
     
     inline def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
     

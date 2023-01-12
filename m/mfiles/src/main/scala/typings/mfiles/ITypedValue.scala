@@ -88,7 +88,8 @@ object ITypedValue {
     __obj.asInstanceOf[ITypedValue]
   }
   
-  extension [Self <: ITypedValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITypedValue] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => ITypedValue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

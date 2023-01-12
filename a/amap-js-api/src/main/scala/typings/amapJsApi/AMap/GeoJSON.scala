@@ -129,7 +129,8 @@ object GeoJSON {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCoordsToLatLng(value: /* lnglat */ LngLat => LngLat): Self = StObject.set(x, "coordsToLatLng", js.Any.fromFunction1(value))
       

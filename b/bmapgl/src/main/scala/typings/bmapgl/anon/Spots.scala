@@ -21,7 +21,8 @@ object Spots {
     __obj.asInstanceOf[Spots]
   }
   
-  extension [Self <: Spots](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spots] (val x: Self) extends AnyVal {
     
     inline def setSpots(value: HotspotOptions): Self = StObject.set(x, "spots", value.asInstanceOf[js.Any])
     

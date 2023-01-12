@@ -39,7 +39,8 @@ object ErrorLoadable {
     __obj.asInstanceOf[ErrorLoadable[T]]
   }
   
-  extension [Self <: ErrorLoadable[?], T](x: Self & ErrorLoadable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorLoadable[?], T] (val x: Self & ErrorLoadable[T]) extends AnyVal {
     
     inline def setContents(value: Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

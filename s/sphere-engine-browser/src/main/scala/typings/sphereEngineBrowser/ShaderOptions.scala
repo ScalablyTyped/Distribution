@@ -22,7 +22,8 @@ object ShaderOptions {
     __obj.asInstanceOf[ShaderOptions]
   }
   
-  extension [Self <: ShaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaderOptions] (val x: Self) extends AnyVal {
     
     inline def setFragmentFile(value: String): Self = StObject.set(x, "fragmentFile", value.asInstanceOf[js.Any])
     

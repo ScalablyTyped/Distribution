@@ -21,7 +21,8 @@ object DataTableRow {
     __obj.asInstanceOf[DataTableRow[ID]]
   }
   
-  extension [Self <: DataTableRow[?], ID /* <: String */](x: Self & DataTableRow[ID]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableRow[?], ID /* <: String */] (val x: Self & DataTableRow[ID]) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

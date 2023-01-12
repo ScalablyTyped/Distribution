@@ -122,7 +122,8 @@ object ControlValueAccessor {
     __obj.asInstanceOf[ControlValueAccessor]
   }
   
-  extension [Self <: ControlValueAccessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlValueAccessor] (val x: Self) extends AnyVal {
     
     inline def setRegisterOnChange(value: Any => Unit): Self = StObject.set(x, "registerOnChange", js.Any.fromFunction1(value))
     

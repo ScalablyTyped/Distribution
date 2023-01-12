@@ -17,7 +17,8 @@ object RemoteSystemAddedEventArgs {
     __obj.asInstanceOf[RemoteSystemAddedEventArgs]
   }
   
-  extension [Self <: RemoteSystemAddedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteSystemAddedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRemoteSystem(value: RemoteSystem): Self = StObject.set(x, "remoteSystem", value.asInstanceOf[js.Any])
   }

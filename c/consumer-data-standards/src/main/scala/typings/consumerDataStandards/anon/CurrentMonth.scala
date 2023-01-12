@@ -26,7 +26,8 @@ object CurrentMonth {
     __obj.asInstanceOf[CurrentMonth]
   }
   
-  extension [Self <: CurrentMonth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentMonth] (val x: Self) extends AnyVal {
     
     inline def setCurrentMonth(value: Double): Self = StObject.set(x, "currentMonth", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object RotateTitleSequenceCommand {
     __obj.asInstanceOf[RotateTitleSequenceCommand]
   }
   
-  extension [Self <: RotateTitleSequenceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotateTitleSequenceCommand] (val x: Self) extends AnyVal {
     
     inline def setRotations(value: Double): Self = StObject.set(x, "rotations", value.asInstanceOf[js.Any])
     

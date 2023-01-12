@@ -48,7 +48,8 @@ object FillExtrusionPaintPropsPossiblyEvaluated {
     __obj.asInstanceOf[FillExtrusionPaintPropsPossiblyEvaluated]
   }
   
-  extension [Self <: FillExtrusionPaintPropsPossiblyEvaluated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillExtrusionPaintPropsPossiblyEvaluated] (val x: Self) extends AnyVal {
     
     inline def `setFill-extrusion-base`(value: PossiblyEvaluatedPropertyValue[Double]): Self = StObject.set(x, "fill-extrusion-base", value.asInstanceOf[js.Any])
     

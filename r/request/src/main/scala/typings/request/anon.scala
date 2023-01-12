@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: MultipartBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Connect]
     }
     
-    extension [Self <: Connect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connect] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: Double): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Dns]
     }
     
-    extension [Self <: Dns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dns] (val x: Self) extends AnyVal {
       
       inline def setDns(value: Double): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
       
@@ -120,7 +123,8 @@ object anon {
       __obj.asInstanceOf[MimeType]
     }
     
-    extension [Self <: MimeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MimeType] (val x: Self) extends AnyVal {
       
       inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
@@ -168,7 +172,8 @@ object anon {
       __obj.asInstanceOf[Urlhrefstringpathnamestri]
     }
     
-    extension [Self <: Urlhrefstringpathnamestri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Urlhrefstringpathnamestri] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -233,7 +238,8 @@ object anon {
       __obj.asInstanceOf[keystringAgentAgentExtraP]
     }
     
-    extension [Self <: keystringAgentAgentExtraP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: keystringAgentAgentExtraP] (val x: Self) extends AnyVal {
       
       inline def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
       

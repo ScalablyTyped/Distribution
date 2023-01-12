@@ -30,7 +30,8 @@ object TabsStateProps {
     __obj.asInstanceOf[TabsStateProps]
   }
   
-  extension [Self <: TabsStateProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabsStateProps] (val x: Self) extends AnyVal {
     
     inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
     

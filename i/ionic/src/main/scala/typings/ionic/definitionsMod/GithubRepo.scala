@@ -17,7 +17,8 @@ object GithubRepo {
     __obj.asInstanceOf[GithubRepo]
   }
   
-  extension [Self <: GithubRepo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GithubRepo] (val x: Self) extends AnyVal {
     
     inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     

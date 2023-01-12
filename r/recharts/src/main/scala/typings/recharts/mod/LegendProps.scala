@@ -59,7 +59,8 @@ object LegendProps {
     __obj.asInstanceOf[LegendProps]
   }
   
-  extension [Self <: LegendProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

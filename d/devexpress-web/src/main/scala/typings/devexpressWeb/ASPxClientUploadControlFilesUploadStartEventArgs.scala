@@ -23,7 +23,8 @@ object ASPxClientUploadControlFilesUploadStartEventArgs {
     __obj.asInstanceOf[ASPxClientUploadControlFilesUploadStartEventArgs]
   }
   
-  extension [Self <: ASPxClientUploadControlFilesUploadStartEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientUploadControlFilesUploadStartEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }

@@ -56,7 +56,8 @@ object GoogleActionsV2RichResponseItem {
     __obj.asInstanceOf[GoogleActionsV2RichResponseItem]
   }
   
-  extension [Self <: GoogleActionsV2RichResponseItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2RichResponseItem] (val x: Self) extends AnyVal {
     
     inline def setBasicCard(value: GoogleActionsV2UiElementsBasicCard): Self = StObject.set(x, "basicCard", value.asInstanceOf[js.Any])
     

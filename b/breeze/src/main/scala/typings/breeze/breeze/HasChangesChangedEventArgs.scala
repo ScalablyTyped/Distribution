@@ -17,7 +17,8 @@ object HasChangesChangedEventArgs {
     __obj.asInstanceOf[HasChangesChangedEventArgs]
   }
   
-  extension [Self <: HasChangesChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasChangesChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEntityManager(value: EntityManager): Self = StObject.set(x, "entityManager", value.asInstanceOf[js.Any])
     

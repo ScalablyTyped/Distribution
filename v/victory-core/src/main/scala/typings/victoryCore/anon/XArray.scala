@@ -17,7 +17,8 @@ object XArray {
     __obj.asInstanceOf[XArray]
   }
   
-  extension [Self <: XArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XArray] (val x: Self) extends AnyVal {
     
     inline def setX(value: js.Array[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

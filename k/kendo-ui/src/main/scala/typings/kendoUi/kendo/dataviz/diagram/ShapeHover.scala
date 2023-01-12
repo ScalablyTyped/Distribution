@@ -15,7 +15,8 @@ object ShapeHover {
     __obj.asInstanceOf[ShapeHover]
   }
   
-  extension [Self <: ShapeHover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeHover] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String | ShapeHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

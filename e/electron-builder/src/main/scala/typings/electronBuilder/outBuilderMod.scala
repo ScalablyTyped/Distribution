@@ -69,7 +69,8 @@ object outBuilderMod {
       __obj.asInstanceOf[CliOptions]
     }
     
-    extension [Self <: CliOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CliOptions] (val x: Self) extends AnyVal {
       
       inline def setArm64(value: Boolean): Self = StObject.set(x, "arm64", value.asInstanceOf[js.Any])
       

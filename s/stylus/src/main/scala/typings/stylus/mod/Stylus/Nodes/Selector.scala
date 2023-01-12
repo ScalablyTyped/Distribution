@@ -36,7 +36,8 @@ object Selector {
     __obj.asInstanceOf[Selector]
   }
   
-  extension [Self <: Selector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Selector] (val x: Self) extends AnyVal {
     
     inline def setInherits(value: scala.Boolean): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     

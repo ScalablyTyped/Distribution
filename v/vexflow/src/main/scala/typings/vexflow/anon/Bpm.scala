@@ -21,7 +21,8 @@ object Bpm {
     __obj.asInstanceOf[Bpm]
   }
   
-  extension [Self <: Bpm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bpm] (val x: Self) extends AnyVal {
     
     inline def setBpm(value: Double): Self = StObject.set(x, "bpm", value.asInstanceOf[js.Any])
     

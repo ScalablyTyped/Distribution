@@ -264,7 +264,8 @@ object buildSrcSpecMod {
       __obj.asInstanceOf[TopLevelFacetSpec]
     }
     
-    extension [Self <: TopLevelFacetSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopLevelFacetSpec] (val x: Self) extends AnyVal {
       
       inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
       

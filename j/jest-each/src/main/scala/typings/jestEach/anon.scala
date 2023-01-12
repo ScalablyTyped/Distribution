@@ -79,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Describe]
     }
     
-    extension [Self <: Describe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Describe] (val x: Self) extends AnyVal {
       
       inline def setDescribe(value: Call): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       

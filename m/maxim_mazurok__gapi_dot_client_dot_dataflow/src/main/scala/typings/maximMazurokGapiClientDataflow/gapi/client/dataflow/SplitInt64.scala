@@ -19,7 +19,8 @@ object SplitInt64 {
     __obj.asInstanceOf[SplitInt64]
   }
   
-  extension [Self <: SplitInt64](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitInt64] (val x: Self) extends AnyVal {
     
     inline def setHighBits(value: Double): Self = StObject.set(x, "highBits", value.asInstanceOf[js.Any])
     

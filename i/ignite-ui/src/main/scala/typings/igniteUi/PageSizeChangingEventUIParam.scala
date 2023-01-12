@@ -28,7 +28,8 @@ object PageSizeChangingEventUIParam {
     __obj.asInstanceOf[PageSizeChangingEventUIParam]
   }
   
-  extension [Self <: PageSizeChangingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageSizeChangingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentPageSize(value: Double): Self = StObject.set(x, "currentPageSize", value.asInstanceOf[js.Any])
     

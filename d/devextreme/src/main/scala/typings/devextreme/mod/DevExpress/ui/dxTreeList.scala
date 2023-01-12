@@ -247,7 +247,8 @@ object dxTreeList {
       __obj.asInstanceOf[CellHoverChangedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: CellHoverChangedEvent[?, ?], TRowData, TKey](x: Self & (CellHoverChangedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellHoverChangedEvent[?, ?], TRowData, TKey] (val x: Self & (CellHoverChangedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     }
@@ -297,7 +298,8 @@ object dxTreeList {
       __obj.asInstanceOf[CellInfo[TRowData, TKey]]
     }
     
-    extension [Self <: CellInfo[?, ?], TRowData, TKey](x: Self & (CellInfo[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellInfo[?, ?], TRowData, TKey] (val x: Self & (CellInfo[TRowData, TKey])) extends AnyVal {
       
       inline def setCellElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
@@ -361,7 +363,8 @@ object dxTreeList {
       __obj.asInstanceOf[CellPreparedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: CellPreparedEvent[?, ?], TRowData, TKey](x: Self & (CellPreparedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellPreparedEvent[?, ?], TRowData, TKey] (val x: Self & (CellPreparedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
@@ -404,7 +407,8 @@ object dxTreeList {
       __obj.asInstanceOf[ColumnButtonClickEvent[TRowData, TKey]]
     }
     
-    extension [Self <: ColumnButtonClickEvent[?, ?], TRowData, TKey](x: Self & (ColumnButtonClickEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnButtonClickEvent[?, ?], TRowData, TKey] (val x: Self & (ColumnButtonClickEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -450,7 +454,8 @@ object dxTreeList {
       __obj.asInstanceOf[ColumnButtonTemplateData[TRowData, TKey]]
     }
     
-    extension [Self <: ColumnButtonTemplateData[?, ?], TRowData, TKey](x: Self & (ColumnButtonTemplateData[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnButtonTemplateData[?, ?], TRowData, TKey] (val x: Self & (ColumnButtonTemplateData[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -512,7 +517,8 @@ object dxTreeList {
       __obj.asInstanceOf[ColumnCellTemplateData[TRowData, TKey]]
     }
     
-    extension [Self <: ColumnCellTemplateData[?, ?], TRowData, TKey](x: Self & (ColumnCellTemplateData[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnCellTemplateData[?, ?], TRowData, TKey] (val x: Self & (ColumnCellTemplateData[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -590,7 +596,8 @@ object dxTreeList {
       __obj.asInstanceOf[ColumnEditCellTemplateData[TRowData, TKey]]
     }
     
-    extension [Self <: ColumnEditCellTemplateData[?, ?], TRowData, TKey](x: Self & (ColumnEditCellTemplateData[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnEditCellTemplateData[?, ?], TRowData, TKey] (val x: Self & (ColumnEditCellTemplateData[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -641,7 +648,8 @@ object dxTreeList {
       __obj.asInstanceOf[ColumnHeaderCellTemplateData[TRowData, TKey]]
     }
     
-    extension [Self <: ColumnHeaderCellTemplateData[?, ?], TRowData, TKey](x: Self & (ColumnHeaderCellTemplateData[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnHeaderCellTemplateData[?, ?], TRowData, TKey] (val x: Self & (ColumnHeaderCellTemplateData[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -685,7 +693,8 @@ object dxTreeList {
       __obj.asInstanceOf[ContextMenuPreparingEvent[TRowData, TKey]]
     }
     
-    extension [Self <: ContextMenuPreparingEvent[?, ?], TRowData, TKey](x: Self & (ContextMenuPreparingEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuPreparingEvent[?, ?], TRowData, TKey] (val x: Self & (ContextMenuPreparingEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -796,7 +805,8 @@ object dxTreeList {
       __obj.asInstanceOf[Editing[TRowData, TKey]]
     }
     
-    extension [Self <: Editing[?, ?], TRowData, TKey](x: Self & (Editing[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Editing[?, ?], TRowData, TKey] (val x: Self & (Editing[TRowData, TKey])) extends AnyVal {
       
       inline def setAllowAdding(value: Boolean | (js.Function1[/* options */ ComponentDxTreeList[TRowData, TKey], Boolean])): Self = StObject.set(x, "allowAdding", value.asInstanceOf[js.Any])
       
@@ -846,7 +856,8 @@ object dxTreeList {
       __obj.asInstanceOf[EditingStartEvent[TRowData, TKey]]
     }
     
-    extension [Self <: EditingStartEvent[?, ?], TRowData, TKey](x: Self & (EditingStartEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditingStartEvent[?, ?], TRowData, TKey] (val x: Self & (EditingStartEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -872,7 +883,8 @@ object dxTreeList {
       __obj.asInstanceOf[EditingTexts]
     }
     
-    extension [Self <: EditingTexts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditingTexts] (val x: Self) extends AnyVal {
       
       inline def setAddRowToNode(value: String): Self = StObject.set(x, "addRowToNode", value.asInstanceOf[js.Any])
       
@@ -921,7 +933,8 @@ object dxTreeList {
       __obj.asInstanceOf[EditorPreparedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: EditorPreparedEvent[?, ?], TRowData, TKey](x: Self & (EditorPreparedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorPreparedEvent[?, ?], TRowData, TKey] (val x: Self & (EditorPreparedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
       
@@ -1007,7 +1020,8 @@ object dxTreeList {
       __obj.asInstanceOf[EditorPreparingEvent[TRowData, TKey]]
     }
     
-    extension [Self <: EditorPreparingEvent[?, ?], TRowData, TKey](x: Self & (EditorPreparingEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorPreparingEvent[?, ?], TRowData, TKey] (val x: Self & (EditorPreparingEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
       
@@ -1236,7 +1250,8 @@ object dxTreeList {
       __obj.asInstanceOf[ExplicitTypes[TRowData, TKey]]
     }
     
-    extension [Self <: ExplicitTypes[?, ?], TRowData, TKey](x: Self & (ExplicitTypes[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplicitTypes[?, ?], TRowData, TKey] (val x: Self & (ExplicitTypes[TRowData, TKey])) extends AnyVal {
       
       inline def setAdaptiveDetailRowPreparingEvent(value: AdaptiveDetailRowPreparingEvent[TRowData, TKey]): Self = StObject.set(x, "AdaptiveDetailRowPreparingEvent", value.asInstanceOf[js.Any])
       
@@ -1387,7 +1402,8 @@ object dxTreeList {
       __obj.asInstanceOf[FocusedCellChangedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: FocusedCellChangedEvent[?, ?], TRowData, TKey](x: Self & (FocusedCellChangedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusedCellChangedEvent[?, ?], TRowData, TKey] (val x: Self & (FocusedCellChangedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setCellElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
@@ -1440,7 +1456,8 @@ object dxTreeList {
       __obj.asInstanceOf[FocusedCellChangingEvent[TRowData, TKey]]
     }
     
-    extension [Self <: FocusedCellChangingEvent[?, ?], TRowData, TKey](x: Self & (FocusedCellChangingEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusedCellChangingEvent[?, ?], TRowData, TKey] (val x: Self & (FocusedCellChangingEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setCellElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
@@ -1487,7 +1504,8 @@ object dxTreeList {
       __obj.asInstanceOf[FocusedRowChangedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: FocusedRowChangedEvent[?, ?], TRowData, TKey](x: Self & (FocusedRowChangedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusedRowChangedEvent[?, ?], TRowData, TKey] (val x: Self & (FocusedRowChangedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setRow(value: Row[TRowData, TKey]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
@@ -1524,7 +1542,8 @@ object dxTreeList {
       __obj.asInstanceOf[FocusedRowChangingEvent[TRowData, TKey]]
     }
     
-    extension [Self <: FocusedRowChangingEvent[?, ?], TRowData, TKey](x: Self & (FocusedRowChangingEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusedRowChangingEvent[?, ?], TRowData, TKey] (val x: Self & (FocusedRowChangingEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setNewRowIndex(value: Double): Self = StObject.set(x, "newRowIndex", value.asInstanceOf[js.Any])
       
@@ -1608,7 +1627,8 @@ object dxTreeList {
       __obj.asInstanceOf[Node[TRowData, TKey]]
     }
     
-    extension [Self <: Node[?, ?], TRowData, TKey](x: Self & (Node[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node[?, ?], TRowData, TKey] (val x: Self & (Node[TRowData, TKey])) extends AnyVal {
       
       inline def setChildren(value: js.Array[Node[TRowData, TKey]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1655,7 +1675,8 @@ object dxTreeList {
       __obj.asInstanceOf[NodesInitializedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: NodesInitializedEvent[?, ?], TRowData, TKey](x: Self & (NodesInitializedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesInitializedEvent[?, ?], TRowData, TKey] (val x: Self & (NodesInitializedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setRoot(value: Node[TRowData, TKey]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
@@ -1763,7 +1784,8 @@ object dxTreeList {
       __obj.asInstanceOf[Row[TRowData, TKey]]
     }
     
-    extension [Self <: Row[?, ?], TRowData, TKey](x: Self & (Row[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Row[?, ?], TRowData, TKey] (val x: Self & (Row[TRowData, TKey])) extends AnyVal {
       
       inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -1849,7 +1871,8 @@ object dxTreeList {
       __obj.asInstanceOf[RowClickEvent[TRowData, TKey]]
     }
     
-    extension [Self <: RowClickEvent[?, ?], TRowData, TKey](x: Self & (RowClickEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowClickEvent[?, ?], TRowData, TKey] (val x: Self & (RowClickEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setColumns(value: js.Array[Column[TRowData, TKey]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -1955,7 +1978,8 @@ object dxTreeList {
       __obj.asInstanceOf[RowDblClickEvent[TRowData, TKey]]
     }
     
-    extension [Self <: RowDblClickEvent[?, ?], TRowData, TKey](x: Self & (RowDblClickEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDblClickEvent[?, ?], TRowData, TKey] (val x: Self & (RowDblClickEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setColumns(value: js.Array[Column[TRowData, TKey]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -2225,7 +2249,8 @@ object dxTreeList {
       __obj.asInstanceOf[RowPreparedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: RowPreparedEvent[?, ?], TRowData, TKey](x: Self & (RowPreparedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowPreparedEvent[?, ?], TRowData, TKey] (val x: Self & (RowPreparedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setColumns(value: js.Array[Column[TRowData, TKey]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -2517,7 +2542,8 @@ object dxTreeList {
       __obj.asInstanceOf[Scrollable]
     }
     
-    extension [Self <: Scrollable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scrollable] (val x: Self) extends AnyVal {
       
       inline def set$element(value: () => UserDefinedElement[Element]): Self = StObject.set(x, "$element", js.Any.fromFunction0(value))
       
@@ -2581,7 +2607,8 @@ object dxTreeList {
       __obj.asInstanceOf[Scrolling]
     }
     
-    extension [Self <: Scrolling](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scrolling] (val x: Self) extends AnyVal {
       
       inline def setMode(value: ScrollMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -2605,7 +2632,8 @@ object dxTreeList {
       __obj.asInstanceOf[Selection]
     }
     
-    extension [Self <: Selection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
       
       inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
@@ -2656,7 +2684,8 @@ object dxTreeList {
       __obj.asInstanceOf[Toolbar]
     }
     
-    extension [Self <: Toolbar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Toolbar] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -2690,7 +2719,8 @@ object dxTreeList {
       __obj.asInstanceOf[ToolbarItem]
     }
     
-    extension [Self <: ToolbarItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarItem] (val x: Self) extends AnyVal {
       
       inline def setName(value: TreeListPredefinedToolbarItem | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

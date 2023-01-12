@@ -19,7 +19,8 @@ object PickISearchBoxPropsdisabl {
     __obj.asInstanceOf[PickISearchBoxPropsdisabl]
   }
   
-  extension [Self <: PickISearchBoxPropsdisabl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickISearchBoxPropsdisabl] (val x: Self) extends AnyVal {
     
     inline def setClearButtonProps(value: IButtonProps): Self = StObject.set(x, "clearButtonProps", value.asInstanceOf[js.Any])
     

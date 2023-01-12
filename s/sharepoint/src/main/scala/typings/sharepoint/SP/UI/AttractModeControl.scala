@@ -66,7 +66,8 @@ object AttractModeControl {
     __obj.asInstanceOf[AttractModeControl]
   }
   
-  extension [Self <: AttractModeControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttractModeControl] (val x: Self) extends AnyVal {
     
     inline def setCssAttractMode(value: String): Self = StObject.set(x, "cssAttractMode", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object FrameInfo {
     __obj.asInstanceOf[FrameInfo]
   }
   
-  extension [Self <: FrameInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameInfo] (val x: Self) extends AnyVal {
     
     inline def setTimeSinceFirstFrame(value: Double): Self = StObject.set(x, "timeSinceFirstFrame", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteTrafficDistributionGroupRequest {
     __obj.asInstanceOf[DeleteTrafficDistributionGroupRequest]
   }
   
-  extension [Self <: DeleteTrafficDistributionGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTrafficDistributionGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setTrafficDistributionGroupId(value: TrafficDistributionGroupIdOrArn): Self = StObject.set(x, "TrafficDistributionGroupId", value.asInstanceOf[js.Any])
   }

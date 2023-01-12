@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsMoveBackwardBoldMod extends Shor
       __obj.asInstanceOf[MoveBackwardBoldProps]
     }
     
-    extension [Self <: MoveBackwardBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveBackwardBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

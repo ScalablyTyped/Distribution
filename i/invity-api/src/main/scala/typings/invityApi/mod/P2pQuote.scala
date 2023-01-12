@@ -49,7 +49,8 @@ object P2pQuote {
     __obj.asInstanceOf[P2pQuote]
   }
   
-  extension [Self <: P2pQuote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: P2pQuote] (val x: Self) extends AnyVal {
     
     inline def setAmountRange(value: P2pAmountRange): Self = StObject.set(x, "amountRange", value.asInstanceOf[js.Any])
     

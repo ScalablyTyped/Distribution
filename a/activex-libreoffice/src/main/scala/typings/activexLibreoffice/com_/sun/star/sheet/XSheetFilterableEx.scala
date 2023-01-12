@@ -32,7 +32,8 @@ object XSheetFilterableEx {
     __obj.asInstanceOf[XSheetFilterableEx]
   }
   
-  extension [Self <: XSheetFilterableEx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetFilterableEx] (val x: Self) extends AnyVal {
     
     inline def setCreateFilterDescriptorByObject(value: XSheetFilterable => XSheetFilterDescriptor): Self = StObject.set(x, "createFilterDescriptorByObject", js.Any.fromFunction1(value))
   }

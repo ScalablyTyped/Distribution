@@ -18,7 +18,8 @@ object JQueryEventInterface {
     __obj.asInstanceOf[JQueryEventInterface]
   }
   
-  extension [Self <: JQueryEventInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryEventInterface] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: JQueryEventConstructor): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
   }

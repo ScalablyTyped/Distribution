@@ -23,7 +23,8 @@ object ListGraphsRequest {
     __obj.asInstanceOf[ListGraphsRequest]
   }
   
-  extension [Self <: ListGraphsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGraphsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MemberResultsLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

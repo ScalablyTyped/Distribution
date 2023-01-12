@@ -15,7 +15,8 @@ object JsonObjectResult {
     __obj.asInstanceOf[JsonObjectResult]
   }
   
-  extension [Self <: JsonObjectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonObjectResult] (val x: Self) extends AnyVal {
     
     inline def setGet_value(value: () => Any): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
   }

@@ -27,7 +27,8 @@ object distLoaderCommentMod {
       __obj.asInstanceOf[CommentProps]
     }
     
-    extension [Self <: CommentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

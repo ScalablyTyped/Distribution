@@ -75,7 +75,8 @@ object SimplifyContext {
     __obj.asInstanceOf[SimplifyContext]
   }
   
-  extension [Self <: SimplifyContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimplifyContext] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Associative): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

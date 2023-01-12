@@ -18,7 +18,8 @@ object GetUsageAndQuotaRequest {
     __obj.asInstanceOf[GetUsageAndQuotaRequest]
   }
   
-  extension [Self <: GetUsageAndQuotaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUsageAndQuotaRequest] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }

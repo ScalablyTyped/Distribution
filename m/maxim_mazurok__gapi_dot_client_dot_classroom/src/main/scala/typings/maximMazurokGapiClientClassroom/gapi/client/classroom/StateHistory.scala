@@ -22,7 +22,8 @@ object StateHistory {
     __obj.asInstanceOf[StateHistory]
   }
   
-  extension [Self <: StateHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateHistory] (val x: Self) extends AnyVal {
     
     inline def setActorUserId(value: String): Self = StObject.set(x, "actorUserId", value.asInstanceOf[js.Any])
     

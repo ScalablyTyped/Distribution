@@ -22,7 +22,8 @@ object CustomResolution {
     __obj.asInstanceOf[CustomResolution]
   }
   
-  extension [Self <: CustomResolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomResolution] (val x: Self) extends AnyVal {
     
     inline def setCustomResolution(value: String): Self = StObject.set(x, "customResolution", value.asInstanceOf[js.Any])
     

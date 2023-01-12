@@ -18,7 +18,8 @@ object ViewDocument {
     __obj.asInstanceOf[ViewDocument[D]]
   }
   
-  extension [Self <: ViewDocument[?], D](x: Self & ViewDocument[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewDocument[?], D] (val x: Self & ViewDocument[D]) extends AnyVal {
     
     inline def setViews(value: StringDictionary[View[D]]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
   }

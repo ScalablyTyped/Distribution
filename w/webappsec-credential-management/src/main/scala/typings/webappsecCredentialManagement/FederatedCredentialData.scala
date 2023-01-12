@@ -22,7 +22,8 @@ object FederatedCredentialData {
     __obj.asInstanceOf[FederatedCredentialData]
   }
   
-  extension [Self <: FederatedCredentialData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FederatedCredentialData] (val x: Self) extends AnyVal {
     
     inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     

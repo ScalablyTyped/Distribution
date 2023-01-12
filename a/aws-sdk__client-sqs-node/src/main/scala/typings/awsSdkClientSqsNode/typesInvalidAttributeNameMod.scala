@@ -18,7 +18,8 @@ object typesInvalidAttributeNameMod {
       __obj.asInstanceOf[InvalidAttributeName]
     }
     
-    extension [Self <: InvalidAttributeName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidAttributeName] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidAttributeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

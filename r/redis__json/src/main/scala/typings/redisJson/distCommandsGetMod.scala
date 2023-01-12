@@ -46,7 +46,8 @@ object distCommandsGetMod {
       __obj.asInstanceOf[GetOptions]
     }
     
-    extension [Self <: GetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
       
       inline def setINDENT(value: String): Self = StObject.set(x, "INDENT", value.asInstanceOf[js.Any])
       

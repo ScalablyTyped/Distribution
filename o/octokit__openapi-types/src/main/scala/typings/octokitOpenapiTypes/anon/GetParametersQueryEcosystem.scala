@@ -20,7 +20,8 @@ object GetParametersQueryEcosystem {
     __obj.asInstanceOf[GetParametersQueryEcosystem]
   }
   
-  extension [Self <: GetParametersQueryEcosystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersQueryEcosystem] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQueryEcosystem): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

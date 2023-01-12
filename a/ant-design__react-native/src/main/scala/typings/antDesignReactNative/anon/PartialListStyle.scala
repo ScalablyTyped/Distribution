@@ -51,7 +51,8 @@ object PartialListStyle {
     __obj.asInstanceOf[PartialListStyle]
   }
   
-  extension [Self <: PartialListStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialListStyle] (val x: Self) extends AnyVal {
     
     inline def setArrow(value: TextStyle): Self = StObject.set(x, "Arrow", value.asInstanceOf[js.Any])
     

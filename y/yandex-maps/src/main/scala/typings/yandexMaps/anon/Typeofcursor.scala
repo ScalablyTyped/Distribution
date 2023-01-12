@@ -24,7 +24,8 @@ object Typeofcursor {
     __obj.asInstanceOf[Typeofcursor]
   }
   
-  extension [Self <: Typeofcursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofcursor] (val x: Self) extends AnyVal {
     
     inline def setAccessor(value: Instantiable1[/* key */ String, Accessor]): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
     

@@ -86,7 +86,8 @@ object FeatureLayerCapabilitiesEditing {
     __obj.asInstanceOf[FeatureLayerCapabilitiesEditing]
   }
   
-  extension [Self <: FeatureLayerCapabilitiesEditing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerCapabilitiesEditing] (val x: Self) extends AnyVal {
     
     inline def setSupportsDeleteByAnonymous(value: Boolean): Self = StObject.set(x, "supportsDeleteByAnonymous", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object libRootDropTargetsMod {
       __obj.asInstanceOf[RootDropTargetsProps]
     }
     
-    extension [Self <: RootDropTargetsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootDropTargetsProps] (val x: Self) extends AnyVal {
       
       inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
     }

@@ -15,7 +15,8 @@ object Html {
     __obj.asInstanceOf[Html]
   }
   
-  extension [Self <: Html](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
     
     inline def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
   }

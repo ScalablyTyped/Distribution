@@ -67,7 +67,8 @@ object TextRangeLoadOptions {
     __obj.asInstanceOf[TextRangeLoadOptions]
   }
   
-  extension [Self <: TextRangeLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextRangeLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AttackVolume {
     __obj.asInstanceOf[AttackVolume]
   }
   
-  extension [Self <: AttackVolume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttackVolume] (val x: Self) extends AnyVal {
     
     inline def setBitsPerSecond(value: AttackVolumeStatistics): Self = StObject.set(x, "BitsPerSecond", value.asInstanceOf[js.Any])
     

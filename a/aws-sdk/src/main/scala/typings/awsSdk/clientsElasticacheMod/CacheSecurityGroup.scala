@@ -38,7 +38,8 @@ object CacheSecurityGroup {
     __obj.asInstanceOf[CacheSecurityGroup]
   }
   
-  extension [Self <: CacheSecurityGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheSecurityGroup] (val x: Self) extends AnyVal {
     
     inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

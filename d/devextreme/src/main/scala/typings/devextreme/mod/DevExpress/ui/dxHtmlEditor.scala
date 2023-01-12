@@ -508,7 +508,8 @@ object dxHtmlEditor {
       __obj.asInstanceOf[MentionTemplateData]
     }
     
-    extension [Self <: MentionTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionTemplateData] (val x: Self) extends AnyVal {
       
       inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

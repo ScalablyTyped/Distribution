@@ -155,7 +155,8 @@ object IGridInstance {
     __obj.asInstanceOf[IGridInstance]
   }
   
-  extension [Self <: IGridInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGridInstance] (val x: Self) extends AnyVal {
     
     inline def set$canvas(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any

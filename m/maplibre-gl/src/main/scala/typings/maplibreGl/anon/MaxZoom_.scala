@@ -25,7 +25,8 @@ object MaxZoom_ {
     __obj.asInstanceOf[MaxZoom_]
   }
   
-  extension [Self <: MaxZoom_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxZoom_] (val x: Self) extends AnyVal {
     
     inline def setInterpolationType(value: typings.maplibreGl.mod.InterpolationType): Self = StObject.set(x, "interpolationType", value.asInstanceOf[js.Any])
     

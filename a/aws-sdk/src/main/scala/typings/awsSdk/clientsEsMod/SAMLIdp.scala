@@ -23,7 +23,8 @@ object SAMLIdp {
     __obj.asInstanceOf[SAMLIdp]
   }
   
-  extension [Self <: SAMLIdp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAMLIdp] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: SAMLEntityId): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     

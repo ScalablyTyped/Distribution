@@ -17,7 +17,8 @@ object TypeofpageCapture {
     __obj.asInstanceOf[TypeofpageCapture]
   }
   
-  extension [Self <: TypeofpageCapture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofpageCapture] (val x: Self) extends AnyVal {
     
     inline def setSaveAsMHTML(value: (SaveDetails, js.Function1[/* mhtmlData */ js.UndefOr[Blob], Unit]) => Unit): Self = StObject.set(x, "saveAsMHTML", js.Any.fromFunction2(value))
   }

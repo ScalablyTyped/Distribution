@@ -18,7 +18,8 @@ object CreateDataSourceFromS3Output {
     __obj.asInstanceOf[CreateDataSourceFromS3Output]
   }
   
-  extension [Self <: CreateDataSourceFromS3Output](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataSourceFromS3Output] (val x: Self) extends AnyVal {
     
     inline def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     

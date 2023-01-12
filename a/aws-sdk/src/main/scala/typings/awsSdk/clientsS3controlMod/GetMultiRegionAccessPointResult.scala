@@ -18,7 +18,8 @@ object GetMultiRegionAccessPointResult {
     __obj.asInstanceOf[GetMultiRegionAccessPointResult]
   }
   
-  extension [Self <: GetMultiRegionAccessPointResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMultiRegionAccessPointResult] (val x: Self) extends AnyVal {
     
     inline def setAccessPoint(value: MultiRegionAccessPointReport): Self = StObject.set(x, "AccessPoint", value.asInstanceOf[js.Any])
     

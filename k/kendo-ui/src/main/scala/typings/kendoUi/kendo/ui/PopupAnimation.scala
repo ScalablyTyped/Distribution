@@ -17,7 +17,8 @@ object PopupAnimation {
     __obj.asInstanceOf[PopupAnimation]
   }
   
-  extension [Self <: PopupAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupAnimation] (val x: Self) extends AnyVal {
     
     inline def setClose(value: PopupAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

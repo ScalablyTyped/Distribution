@@ -62,7 +62,8 @@ object distComponentsPropFormMod {
       __obj.asInstanceOf[PropFormProps]
     }
     
-    extension [Self <: PropFormProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropFormProps] (val x: Self) extends AnyVal {
       
       inline def setKnobs(value: js.Array[KnobStoreKnob]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
       

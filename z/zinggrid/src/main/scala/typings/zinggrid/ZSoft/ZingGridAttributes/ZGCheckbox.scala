@@ -18,7 +18,8 @@ object ZGCheckbox {
     __obj.asInstanceOf[ZGCheckbox]
   }
   
-  extension [Self <: ZGCheckbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZGCheckbox] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

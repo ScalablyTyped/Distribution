@@ -131,7 +131,8 @@ object XPrintAreas {
     __obj.asInstanceOf[XPrintAreas]
   }
   
-  extension [Self <: XPrintAreas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrintAreas] (val x: Self) extends AnyVal {
     
     inline def setGetPrintAreas(value: () => SafeArray[CellRangeAddress]): Self = StObject.set(x, "getPrintAreas", js.Any.fromFunction0(value))
     

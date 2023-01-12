@@ -43,7 +43,8 @@ object UpdateProfileRequest {
     __obj.asInstanceOf[UpdateProfileRequest]
   }
   
-  extension [Self <: UpdateProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setDurationSeconds(value: UpdateProfileRequestDurationSecondsInteger): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
     

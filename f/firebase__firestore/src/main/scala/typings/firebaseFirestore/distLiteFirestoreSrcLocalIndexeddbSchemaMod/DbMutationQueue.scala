@@ -41,7 +41,8 @@ object DbMutationQueue {
     __obj.asInstanceOf[DbMutationQueue]
   }
   
-  extension [Self <: DbMutationQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbMutationQueue] (val x: Self) extends AnyVal {
     
     inline def setLastAcknowledgedBatchId(value: Double): Self = StObject.set(x, "lastAcknowledgedBatchId", value.asInstanceOf[js.Any])
     

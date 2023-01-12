@@ -139,7 +139,8 @@ object mod {
       __obj.asInstanceOf[CertSigningKey]
     }
     
-    extension [Self <: CertSigningKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertSigningKey] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object mod {
       __obj.asInstanceOf[DecodedToken]
     }
     
-    extension [Self <: DecodedToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedToken] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: TokenHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     }
@@ -187,7 +189,8 @@ object mod {
       __obj.asInstanceOf[ExpressJwtOptions]
     }
     
-    extension [Self <: ExpressJwtOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressJwtOptions] (val x: Self) extends AnyVal {
       
       inline def setHandleSigningKeyError(value: (/* err */ js.Error | Null, /* cb */ js.Function1[/* err */ js.Error | Null, Unit]) => Unit): Self = StObject.set(x, "handleSigningKeyError", js.Any.fromFunction2(value))
       
@@ -223,7 +226,8 @@ object mod {
       __obj.asInstanceOf[HapiJwtOptions]
     }
     
-    extension [Self <: HapiJwtOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HapiJwtOptions] (val x: Self) extends AnyVal {
       
       inline def setHandleSigningKeyError(value: (/* err */ js.Error | Null, /* cb */ HapiCallback) => Unit): Self = StObject.set(x, "handleSigningKeyError", js.Any.fromFunction2(value))
       
@@ -248,7 +252,8 @@ object mod {
       __obj.asInstanceOf[JSONWebKey]
     }
     
-    extension [Self <: JSONWebKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONWebKey] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -269,7 +274,8 @@ object mod {
       __obj.asInstanceOf[KoaJwtOptions]
     }
     
-    extension [Self <: KoaJwtOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KoaJwtOptions] (val x: Self) extends AnyVal {
       
       inline def setHandleSigningKeyError(value: /* err */ js.Error | Null => js.Promise[Unit]): Self = StObject.set(x, "handleSigningKeyError", js.Any.fromFunction1(value))
       
@@ -310,7 +316,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -379,7 +386,8 @@ object mod {
       __obj.asInstanceOf[RsaSigningKey]
     }
     
-    extension [Self <: RsaSigningKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RsaSigningKey] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -449,7 +457,8 @@ object mod {
       __obj.asInstanceOf[TokenHeader]
     }
     
-    extension [Self <: TokenHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenHeader] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       

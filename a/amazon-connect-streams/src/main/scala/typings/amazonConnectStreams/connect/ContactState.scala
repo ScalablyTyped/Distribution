@@ -20,7 +20,8 @@ object ContactState {
     __obj.asInstanceOf[ContactState]
   }
   
-  extension [Self <: ContactState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactState] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

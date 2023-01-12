@@ -23,7 +23,8 @@ object DescribeDirectConnectGatewayAssociationProposalsResult {
     __obj.asInstanceOf[DescribeDirectConnectGatewayAssociationProposalsResult]
   }
   
-  extension [Self <: DescribeDirectConnectGatewayAssociationProposalsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDirectConnectGatewayAssociationProposalsResult] (val x: Self) extends AnyVal {
     
     inline def setDirectConnectGatewayAssociationProposals(value: DirectConnectGatewayAssociationProposalList): Self = StObject.set(x, "directConnectGatewayAssociationProposals", value.asInstanceOf[js.Any])
     

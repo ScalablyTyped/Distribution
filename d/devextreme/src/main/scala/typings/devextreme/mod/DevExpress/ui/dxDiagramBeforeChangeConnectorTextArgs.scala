@@ -23,7 +23,8 @@ object dxDiagramBeforeChangeConnectorTextArgs {
     __obj.asInstanceOf[dxDiagramBeforeChangeConnectorTextArgs]
   }
   
-  extension [Self <: dxDiagramBeforeChangeConnectorTextArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDiagramBeforeChangeConnectorTextArgs] (val x: Self) extends AnyVal {
     
     inline def setConnector(value: dxDiagramConnector): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
     

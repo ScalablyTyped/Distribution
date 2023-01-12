@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsVerticalMenuBoldMod extends Sh
       __obj.asInstanceOf[VerticalMenuBoldProps]
     }
     
-    extension [Self <: VerticalMenuBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerticalMenuBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

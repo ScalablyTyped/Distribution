@@ -23,7 +23,8 @@ object NetworkInterfaceCount {
     __obj.asInstanceOf[NetworkInterfaceCount]
   }
   
-  extension [Self <: NetworkInterfaceCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInterfaceCount] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Integer): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     

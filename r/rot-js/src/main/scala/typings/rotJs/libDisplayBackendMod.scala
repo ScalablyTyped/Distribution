@@ -80,7 +80,8 @@ object libDisplayBackendMod {
       __obj.asInstanceOf[Backend]
     }
     
-    extension [Self <: Backend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Backend] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

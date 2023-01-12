@@ -15,7 +15,8 @@ object TypeofCreditNotePreviewPa {
     __obj.asInstanceOf[TypeofCreditNotePreviewPa]
   }
   
-  extension [Self <: TypeofCreditNotePreviewPa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCreditNotePreviewPa] (val x: Self) extends AnyVal {
     
     inline def setLine(value: Any): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
   }

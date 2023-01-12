@@ -35,7 +35,8 @@ object TaskSuggestion {
     __obj.asInstanceOf[TaskSuggestion]
   }
   
-  extension [Self <: TaskSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskSuggestion] (val x: Self) extends AnyVal {
     
     inline def setAssignees(value: js.Array[EmailUser]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
     

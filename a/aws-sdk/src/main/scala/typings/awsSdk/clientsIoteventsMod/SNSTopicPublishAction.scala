@@ -23,7 +23,8 @@ object SNSTopicPublishAction {
     __obj.asInstanceOf[SNSTopicPublishAction]
   }
   
-  extension [Self <: SNSTopicPublishAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SNSTopicPublishAction] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

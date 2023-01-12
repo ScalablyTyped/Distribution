@@ -23,7 +23,8 @@ object Denied {
     __obj.asInstanceOf[Denied]
   }
   
-  extension [Self <: Denied](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Denied] (val x: Self) extends AnyVal {
     
     inline def setExplicitDeny(value: ExplicitDeny): Self = StObject.set(x, "explicitDeny", value.asInstanceOf[js.Any])
     

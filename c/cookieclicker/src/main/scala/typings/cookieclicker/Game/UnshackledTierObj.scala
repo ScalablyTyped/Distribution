@@ -17,7 +17,8 @@ object UnshackledTierObj {
     __obj.asInstanceOf[UnshackledTierObj]
   }
   
-  extension [Self <: UnshackledTierObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnshackledTierObj] (val x: Self) extends AnyVal {
     
     inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     

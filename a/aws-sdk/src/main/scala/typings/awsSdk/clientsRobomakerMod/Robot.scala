@@ -58,7 +58,8 @@ object Robot {
     __obj.asInstanceOf[Robot]
   }
   
-  extension [Self <: Robot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Robot] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

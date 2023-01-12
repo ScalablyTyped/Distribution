@@ -17,7 +17,8 @@ object HighlightedIndex {
     __obj.asInstanceOf[HighlightedIndex]
   }
   
-  extension [Self <: HighlightedIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightedIndex] (val x: Self) extends AnyVal {
     
     inline def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ImageEditorMessagesPanesResize {
     __obj.asInstanceOf[ImageEditorMessagesPanesResize]
   }
   
-  extension [Self <: ImageEditorMessagesPanesResize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageEditorMessagesPanesResize] (val x: Self) extends AnyVal {
     
     inline def setPercents(value: String): Self = StObject.set(x, "percents", value.asInstanceOf[js.Any])
     

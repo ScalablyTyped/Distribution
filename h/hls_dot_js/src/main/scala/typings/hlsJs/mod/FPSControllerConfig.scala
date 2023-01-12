@@ -23,7 +23,8 @@ object FPSControllerConfig {
     __obj.asInstanceOf[FPSControllerConfig]
   }
   
-  extension [Self <: FPSControllerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FPSControllerConfig] (val x: Self) extends AnyVal {
     
     inline def setCapLevelOnFPSDrop(value: Boolean): Self = StObject.set(x, "capLevelOnFPSDrop", value.asInstanceOf[js.Any])
     

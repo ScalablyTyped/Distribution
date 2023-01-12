@@ -19,7 +19,8 @@ object ShowCompass {
     __obj.asInstanceOf[ShowCompass]
   }
   
-  extension [Self <: ShowCompass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowCompass] (val x: Self) extends AnyVal {
     
     inline def setShowCompass(value: Boolean): Self = StObject.set(x, "showCompass", value.asInstanceOf[js.Any])
     

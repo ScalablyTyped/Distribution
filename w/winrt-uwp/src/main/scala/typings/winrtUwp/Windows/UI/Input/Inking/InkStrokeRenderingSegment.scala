@@ -44,7 +44,8 @@ object InkStrokeRenderingSegment {
     __obj.asInstanceOf[InkStrokeRenderingSegment]
   }
   
-  extension [Self <: InkStrokeRenderingSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InkStrokeRenderingSegment] (val x: Self) extends AnyVal {
     
     inline def setBezierControlPoint1(value: Point): Self = StObject.set(x, "bezierControlPoint1", value.asInstanceOf[js.Any])
     

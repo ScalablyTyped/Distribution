@@ -40,7 +40,8 @@ object libTypescriptExtensionTypeScriptEmbeddedExtensionMod {
       __obj.asInstanceOf[TypeScriptEmbeddedExtensionHost]
     }
     
-    extension [Self <: TypeScriptEmbeddedExtensionHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeScriptEmbeddedExtensionHost] (val x: Self) extends AnyVal {
       
       inline def setEmbeddedExtensions(value: js.Array[String]): Self = StObject.set(x, "embeddedExtensions", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object libTypescriptExtensionTypeScriptEmbeddedExtensionMod {
       __obj.asInstanceOf[TypeScriptEmbeddedSource]
     }
     
-    extension [Self <: TypeScriptEmbeddedSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeScriptEmbeddedSource] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: Dotts | Dottsx | Dotjs): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       

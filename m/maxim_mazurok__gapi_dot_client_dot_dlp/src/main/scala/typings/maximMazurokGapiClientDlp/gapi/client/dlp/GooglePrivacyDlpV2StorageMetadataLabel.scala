@@ -15,7 +15,8 @@ object GooglePrivacyDlpV2StorageMetadataLabel {
     __obj.asInstanceOf[GooglePrivacyDlpV2StorageMetadataLabel]
   }
   
-  extension [Self <: GooglePrivacyDlpV2StorageMetadataLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2StorageMetadataLabel] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

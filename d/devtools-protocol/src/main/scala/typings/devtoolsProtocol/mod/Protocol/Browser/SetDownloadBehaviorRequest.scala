@@ -40,7 +40,8 @@ object SetDownloadBehaviorRequest {
     __obj.asInstanceOf[SetDownloadBehaviorRequest]
   }
   
-  extension [Self <: SetDownloadBehaviorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDownloadBehaviorRequest] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: deny | allow_ | allowAndName | default_): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object GF256 {
     __obj.asInstanceOf[GF256]
   }
   
-  extension [Self <: GF256](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GF256] (val x: Self) extends AnyVal {
     
     inline def setBuildMonomial(value: (Double, Double) => GF256Poly): Self = StObject.set(x, "buildMonomial", js.Any.fromFunction2(value))
     

@@ -25,7 +25,8 @@ object HoverClientCapabilities {
     __obj.asInstanceOf[HoverClientCapabilities]
   }
   
-  extension [Self <: HoverClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoverClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setContentFormat(value: js.Array[MarkupKind]): Self = StObject.set(x, "contentFormat", value.asInstanceOf[js.Any])
     

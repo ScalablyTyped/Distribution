@@ -70,7 +70,8 @@ object RemoteMethodOptions {
     __obj.asInstanceOf[RemoteMethodOptions]
   }
   
-  extension [Self <: RemoteMethodOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteMethodOptions] (val x: Self) extends AnyVal {
     
     inline def setAccepts(value: js.Array[RemoteMethodArgument]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
     

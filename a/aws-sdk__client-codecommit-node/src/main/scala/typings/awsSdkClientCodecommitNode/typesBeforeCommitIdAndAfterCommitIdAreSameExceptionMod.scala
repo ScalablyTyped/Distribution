@@ -23,7 +23,8 @@ object typesBeforeCommitIdAndAfterCommitIdAreSameExceptionMod {
       __obj.asInstanceOf[BeforeCommitIdAndAfterCommitIdAreSameException]
     }
     
-    extension [Self <: BeforeCommitIdAndAfterCommitIdAreSameException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeCommitIdAndAfterCommitIdAreSameException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BeforeCommitIdAndAfterCommitIdAreSameException

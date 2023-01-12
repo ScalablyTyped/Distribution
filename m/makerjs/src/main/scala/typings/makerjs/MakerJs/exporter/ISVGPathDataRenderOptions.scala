@@ -36,7 +36,8 @@ object ISVGPathDataRenderOptions {
     __obj.asInstanceOf[ISVGPathDataRenderOptions]
   }
   
-  extension [Self <: ISVGPathDataRenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISVGPathDataRenderOptions] (val x: Self) extends AnyVal {
     
     inline def setByLayers(value: Boolean): Self = StObject.set(x, "byLayers", value.asInstanceOf[js.Any])
     

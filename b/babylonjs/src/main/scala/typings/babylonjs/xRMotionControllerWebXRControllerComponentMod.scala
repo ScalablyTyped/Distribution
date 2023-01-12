@@ -230,7 +230,8 @@ object xRMotionControllerWebXRControllerComponentMod {
       __obj.asInstanceOf[IWebXRMotionControllerAxesValue]
     }
     
-    extension [Self <: IWebXRMotionControllerAxesValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRMotionControllerAxesValue] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -267,7 +268,8 @@ object xRMotionControllerWebXRControllerComponentMod {
       __obj.asInstanceOf[IWebXRMotionControllerComponentChanges]
     }
     
-    extension [Self <: IWebXRMotionControllerComponentChanges](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRMotionControllerComponentChanges] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: IWebXRMotionControllerComponentChangesValues[IWebXRMotionControllerAxesValue]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -306,7 +308,8 @@ object xRMotionControllerWebXRControllerComponentMod {
       __obj.asInstanceOf[IWebXRMotionControllerComponentChangesValues[T]]
     }
     
-    extension [Self <: IWebXRMotionControllerComponentChangesValues[?], T](x: Self & IWebXRMotionControllerComponentChangesValues[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRMotionControllerComponentChangesValues[?], T] (val x: Self & IWebXRMotionControllerComponentChangesValues[T]) extends AnyVal {
       
       inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

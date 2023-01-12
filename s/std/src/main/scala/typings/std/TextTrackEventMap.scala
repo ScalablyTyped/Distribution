@@ -16,7 +16,8 @@ object TextTrackEventMap {
     __obj.asInstanceOf[TextTrackEventMap]
   }
   
-  extension [Self <: TextTrackEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextTrackEventMap] (val x: Self) extends AnyVal {
     
     inline def setCuechange(value: Event): Self = StObject.set(x, "cuechange", value.asInstanceOf[js.Any])
   }

@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[Channel]
     }
     
-    extension [Self <: Channel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
       
       inline def setChannel_avatar_large(value: String): Self = StObject.set(x, "channel_avatar_large", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[ChannelResults]
     }
     
-    extension [Self <: ChannelResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelResults] (val x: Self) extends AnyVal {
       
       inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object mod {
       __obj.asInstanceOf[CommandMetadata]
     }
     
-    extension [Self <: CommandMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandMetadata] (val x: Self) extends AnyVal {
       
       inline def setWebCommandMetadata(value: WebCommandMetadata): Self = StObject.set(x, "webCommandMetadata", value.asInstanceOf[js.Any])
     }
@@ -141,7 +144,8 @@ object mod {
       __obj.asInstanceOf[NavigationEndpoint]
     }
     
-    extension [Self <: NavigationEndpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationEndpoint] (val x: Self) extends AnyVal {
       
       inline def setClickTrackingParams(value: String): Self = StObject.set(x, "clickTrackingParams", value.asInstanceOf[js.Any])
       
@@ -166,7 +170,8 @@ object mod {
       __obj.asInstanceOf[URLEndpoint]
     }
     
-    extension [Self <: URLEndpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLEndpoint] (val x: Self) extends AnyVal {
       
       inline def setNofollow(value: Boolean): Self = StObject.set(x, "nofollow", value.asInstanceOf[js.Any])
       
@@ -206,7 +211,8 @@ object mod {
       __obj.asInstanceOf[Video]
     }
     
-    extension [Self <: Video](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
       
       inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
       
@@ -235,7 +241,8 @@ object mod {
       __obj.asInstanceOf[VideoDesc]
     }
     
-    extension [Self <: VideoDesc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoDesc] (val x: Self) extends AnyVal {
       
       inline def setNavigationEndpoint(value: NavigationEndpoint): Self = StObject.set(x, "navigationEndpoint", value.asInstanceOf[js.Any])
       
@@ -260,7 +267,8 @@ object mod {
       __obj.asInstanceOf[WebCommandMetadata]
     }
     
-    extension [Self <: WebCommandMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebCommandMetadata] (val x: Self) extends AnyVal {
       
       inline def setRootVe(value: Double): Self = StObject.set(x, "rootVe", value.asInstanceOf[js.Any])
       
@@ -287,7 +295,8 @@ object mod {
       __obj.asInstanceOf[YouTubeResults]
     }
     
-    extension [Self <: YouTubeResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YouTubeResults] (val x: Self) extends AnyVal {
       
       inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
       

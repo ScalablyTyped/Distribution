@@ -25,7 +25,8 @@ object BaseRecipient {
     __obj.asInstanceOf[BaseRecipient]
   }
   
-  extension [Self <: BaseRecipient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseRecipient] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

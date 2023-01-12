@@ -144,7 +144,8 @@ object mod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setEnvironment(value: js.Array[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
@@ -214,7 +215,8 @@ object mod {
       __obj.asInstanceOf[PurchasedProducts]
     }
     
-    extension [Self <: PurchasedProducts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PurchasedProducts] (val x: Self) extends AnyVal {
       
       inline def setApplicationVersion(value: String): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
       
@@ -269,7 +271,8 @@ object mod {
       __obj.asInstanceOf[ValidateOptions]
     }
     
-    extension [Self <: ValidateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateOptions] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -294,7 +297,8 @@ object mod {
       __obj.asInstanceOf[ValidationError]
     }
     
-    extension [Self <: ValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
       
       inline def setAppleStatus(value: Double): Self = StObject.set(x, "appleStatus", value.asInstanceOf[js.Any])
       

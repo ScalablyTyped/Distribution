@@ -24,7 +24,8 @@ object ImageAnnotationConstructorOptions {
     __obj.asInstanceOf[ImageAnnotationConstructorOptions]
   }
   
-  extension [Self <: ImageAnnotationConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageAnnotationConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: `1`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

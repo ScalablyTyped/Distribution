@@ -19,7 +19,8 @@ object GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

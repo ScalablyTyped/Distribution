@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Colspan]
     }
     
-    extension [Self <: Colspan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colspan] (val x: Self) extends AnyVal {
       
       inline def setColspan(value: Double): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: CellValue): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

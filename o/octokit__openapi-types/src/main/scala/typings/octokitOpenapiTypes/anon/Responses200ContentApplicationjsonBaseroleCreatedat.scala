@@ -23,7 +23,8 @@ object Responses200ContentApplicationjsonBaseroleCreatedat {
     __obj.asInstanceOf[Responses200ContentApplicationjsonBaseroleCreatedat]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonBaseroleCreatedat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonBaseroleCreatedat] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathOrgRoleid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

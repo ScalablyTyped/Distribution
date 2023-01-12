@@ -23,7 +23,8 @@ object CaptureContentTypeHeader {
     __obj.asInstanceOf[CaptureContentTypeHeader]
   }
   
-  extension [Self <: CaptureContentTypeHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptureContentTypeHeader] (val x: Self) extends AnyVal {
     
     inline def setCsvContentTypes(value: CsvContentTypes): Self = StObject.set(x, "CsvContentTypes", value.asInstanceOf[js.Any])
     

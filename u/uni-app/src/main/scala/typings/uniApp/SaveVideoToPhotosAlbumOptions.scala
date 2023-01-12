@@ -33,7 +33,8 @@ object SaveVideoToPhotosAlbumOptions {
     __obj.asInstanceOf[SaveVideoToPhotosAlbumOptions]
   }
   
-  extension [Self <: SaveVideoToPhotosAlbumOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveVideoToPhotosAlbumOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

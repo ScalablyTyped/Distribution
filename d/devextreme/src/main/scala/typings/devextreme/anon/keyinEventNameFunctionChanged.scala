@@ -20,7 +20,8 @@ object keyinEventNameFunctionChanged {
     __obj.asInstanceOf[keyinEventNameFunctionChanged]
   }
   
-  extension [Self <: keyinEventNameFunctionChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinEventNameFunctionChanged] (val x: Self) extends AnyVal {
     
     inline def setChanged(value: js.Function): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     

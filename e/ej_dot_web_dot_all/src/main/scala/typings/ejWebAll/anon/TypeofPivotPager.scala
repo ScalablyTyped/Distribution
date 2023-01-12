@@ -20,7 +20,8 @@ object TypeofPivotPager {
     __obj.asInstanceOf[TypeofPivotPager]
   }
   
-  extension [Self <: TypeofPivotPager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPivotPager] (val x: Self) extends AnyVal {
     
     inline def setFn(value: PivotPager): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

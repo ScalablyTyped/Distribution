@@ -20,7 +20,8 @@ object Mention {
     __obj.asInstanceOf[Mention]
   }
   
-  extension [Self <: Mention](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mention] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

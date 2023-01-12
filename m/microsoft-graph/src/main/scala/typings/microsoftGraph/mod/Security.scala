@@ -24,7 +24,8 @@ object Security {
     __obj.asInstanceOf[Security]
   }
   
-  extension [Self <: Security](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Security] (val x: Self) extends AnyVal {
     
     inline def setAlerts(value: NullableOption[js.Array[Alert]]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
     

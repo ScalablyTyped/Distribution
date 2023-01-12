@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[AlignmentX]
     }
     
-    extension [Self <: AlignmentX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignmentX] (val x: Self) extends AnyVal {
       
       inline def setAlignmentX(value: Double): Self = StObject.set(x, "alignmentX", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[AutoGreyscale]
     }
     
-    extension [Self <: AutoGreyscale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoGreyscale] (val x: Self) extends AnyVal {
       
       inline def setAutoGreyscale(value: Boolean): Self = StObject.set(x, "autoGreyscale", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[B]
     }
     
-    extension [Self <: B](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: B] (val x: Self) extends AnyVal {
       
       inline def setB(value: js.Array[Double]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -109,7 +112,8 @@ object anon {
       __obj.asInstanceOf[CropOnlyFrames]
     }
     
-    extension [Self <: CropOnlyFrames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropOnlyFrames] (val x: Self) extends AnyVal {
       
       inline def setCropOnlyFrames(value: Boolean): Self = StObject.set(x, "cropOnlyFrames", value.asInstanceOf[js.Any])
       
@@ -146,7 +150,8 @@ object anon {
       __obj.asInstanceOf[Idx]
     }
     
-    extension [Self <: Idx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Idx] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -171,7 +176,8 @@ object anon {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setImage(value: DepreciatedJimp): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
@@ -196,7 +202,8 @@ object anon {
       __obj.asInstanceOf[Opacity]
     }
     
-    extension [Self <: Opacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
@@ -227,7 +234,8 @@ object anon {
       __obj.asInstanceOf[R]
     }
     
-    extension [Self <: R](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: R] (val x: Self) extends AnyVal {
       
       inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
@@ -248,7 +256,8 @@ object anon {
       __obj.asInstanceOf[Radius]
     }
     
-    extension [Self <: Radius](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Radius] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
@@ -271,7 +280,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

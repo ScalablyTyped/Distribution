@@ -228,7 +228,8 @@ object BuildOptionswritefalse {
     __obj.asInstanceOf[BuildOptionswritefalse]
   }
   
-  extension [Self <: BuildOptionswritefalse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildOptionswritefalse] (val x: Self) extends AnyVal {
     
     inline def setAbsWorkingDir(value: String): Self = StObject.set(x, "absWorkingDir", value.asInstanceOf[js.Any])
     

@@ -140,7 +140,8 @@ object RemoteMainInterface {
     __obj.asInstanceOf[RemoteMainInterface]
   }
   
-  extension [Self <: RemoteMainInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteMainInterface] (val x: Self) extends AnyVal {
     
     inline def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

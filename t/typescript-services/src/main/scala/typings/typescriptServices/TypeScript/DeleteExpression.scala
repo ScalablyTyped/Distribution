@@ -41,7 +41,8 @@ object DeleteExpression {
     __obj.asInstanceOf[DeleteExpression]
   }
   
-  extension [Self <: DeleteExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

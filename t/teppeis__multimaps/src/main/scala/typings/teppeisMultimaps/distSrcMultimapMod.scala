@@ -95,7 +95,8 @@ object distSrcMultimapMod {
       __obj.asInstanceOf[CollectionOperator[V, I]]
     }
     
-    extension [Self <: CollectionOperator[?, ?], V, I](x: Self & (CollectionOperator[V, I])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionOperator[?, ?], V, I] (val x: Self & (CollectionOperator[V, I])) extends AnyVal {
       
       inline def setAdd(value: (V, I) => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       

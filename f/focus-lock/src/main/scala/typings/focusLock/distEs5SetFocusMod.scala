@@ -35,7 +35,8 @@ object distEs5SetFocusMod {
       __obj.asInstanceOf[FocusLockFocusOptions]
     }
     
-    extension [Self <: FocusLockFocusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusLockFocusOptions] (val x: Self) extends AnyVal {
       
       inline def setFocusOptions(value: FocusOptions): Self = StObject.set(x, "focusOptions", value.asInstanceOf[js.Any])
       

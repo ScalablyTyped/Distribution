@@ -28,7 +28,8 @@ object AdminGroupsMigration {
     }
   }
   
-  extension [Self <: AdminGroupsMigration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminGroupsMigration] (val x: Self) extends AnyVal {
     
     inline def setArchive(value: ArchiveCollection): Self = StObject.set(x, "Archive", value.asInstanceOf[js.Any])
     
@@ -50,7 +51,8 @@ object AdminGroupsMigration {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         

@@ -18,7 +18,8 @@ object DynamicComponentGetViewStrategy {
     __obj.asInstanceOf[DynamicComponentGetViewStrategy]
   }
   
-  extension [Self <: DynamicComponentGetViewStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicComponentGetViewStrategy] (val x: Self) extends AnyVal {
     
     inline def setGetViewStrategy(value: () => String | ViewStrategy_): Self = StObject.set(x, "getViewStrategy", js.Any.fromFunction0(value))
   }

@@ -24,7 +24,8 @@ object Unregistration {
     __obj.asInstanceOf[Unregistration]
   }
   
-  extension [Self <: Unregistration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Unregistration] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

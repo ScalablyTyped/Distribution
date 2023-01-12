@@ -41,7 +41,8 @@ object InitRegistration {
     __obj.asInstanceOf[InitRegistration]
   }
   
-  extension [Self <: InitRegistration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitRegistration] (val x: Self) extends AnyVal {
     
     inline def setMessage_types(value: js.Array[String]): Self = StObject.set(x, "message_types", value.asInstanceOf[js.Any])
     

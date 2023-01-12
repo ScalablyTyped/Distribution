@@ -51,7 +51,8 @@ object XMetadatable {
     __obj.asInstanceOf[XMetadatable]
   }
   
-  extension [Self <: XMetadatable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMetadatable] (val x: Self) extends AnyVal {
     
     inline def setEnsureMetadataReference(value: () => Unit): Self = StObject.set(x, "ensureMetadataReference", js.Any.fromFunction0(value))
     

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[PartialPlayOpts]
     }
     
-    extension [Self <: PartialPlayOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPlayOpts] (val x: Self) extends AnyVal {
       
       inline def setPlayer(value: Players): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
       

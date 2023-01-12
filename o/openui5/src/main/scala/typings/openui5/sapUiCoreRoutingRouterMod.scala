@@ -3155,7 +3155,8 @@ object sapUiCoreRoutingRouterMod {
       __obj.asInstanceOf[RouteInfo]
     }
     
-    extension [Self <: RouteInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteInfo] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: Record[String, String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       

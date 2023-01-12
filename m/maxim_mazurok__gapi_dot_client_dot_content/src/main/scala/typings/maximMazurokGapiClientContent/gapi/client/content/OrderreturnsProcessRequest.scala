@@ -25,7 +25,8 @@ object OrderreturnsProcessRequest {
     __obj.asInstanceOf[OrderreturnsProcessRequest]
   }
   
-  extension [Self <: OrderreturnsProcessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderreturnsProcessRequest] (val x: Self) extends AnyVal {
     
     inline def setFullChargeReturnShippingCost(value: Boolean): Self = StObject.set(x, "fullChargeReturnShippingCost", value.asInstanceOf[js.Any])
     

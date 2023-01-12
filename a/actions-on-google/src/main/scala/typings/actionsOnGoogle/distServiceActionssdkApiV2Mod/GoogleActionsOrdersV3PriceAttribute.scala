@@ -48,7 +48,8 @@ object GoogleActionsOrdersV3PriceAttribute {
     __obj.asInstanceOf[GoogleActionsOrdersV3PriceAttribute]
   }
   
-  extension [Self <: GoogleActionsOrdersV3PriceAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3PriceAttribute] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: GoogleActionsOrdersV3Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

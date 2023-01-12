@@ -29,7 +29,8 @@ object SSOLOGIN {
     __obj.asInstanceOf[SSOLOGIN]
   }
   
-  extension [Self <: SSOLOGIN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSOLOGIN] (val x: Self) extends AnyVal {
     
     inline def setSSO_LOGIN(value: `1`): Self = StObject.set(x, "SSO_LOGIN", value.asInstanceOf[js.Any])
     

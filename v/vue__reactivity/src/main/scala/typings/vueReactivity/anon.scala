@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Get[T]]
     }
     
-    extension [Self <: Get[?], T](x: Self & Get[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get[?], T] (val x: Self & Get[T]) extends AnyVal {
       
       inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       

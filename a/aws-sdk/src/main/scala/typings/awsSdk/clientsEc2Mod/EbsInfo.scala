@@ -33,7 +33,8 @@ object EbsInfo {
     __obj.asInstanceOf[EbsInfo]
   }
   
-  extension [Self <: EbsInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbsInfo] (val x: Self) extends AnyVal {
     
     inline def setEbsOptimizedInfo(value: EbsOptimizedInfo): Self = StObject.set(x, "EbsOptimizedInfo", value.asInstanceOf[js.Any])
     

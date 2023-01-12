@@ -26,7 +26,8 @@ object Applicative4 {
     __obj.asInstanceOf[Applicative4[F]]
   }
   
-  extension [Self <: Applicative4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Applicative4[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Applicative4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Applicative4[F]) extends AnyVal {
     
     inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
   }

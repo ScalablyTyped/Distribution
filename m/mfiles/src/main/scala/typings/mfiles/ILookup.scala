@@ -55,7 +55,8 @@ object ILookup {
     __obj.asInstanceOf[ILookup]
   }
   
-  extension [Self <: ILookup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILookup] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => ILookup): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

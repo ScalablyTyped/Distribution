@@ -18,7 +18,8 @@ object ModuleInfo {
     __obj.asInstanceOf[ModuleInfo]
   }
   
-  extension [Self <: ModuleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleInfo] (val x: Self) extends AnyVal {
     
     inline def setModuleObject(value: XInterface): Self = StObject.set(x, "ModuleObject", value.asInstanceOf[js.Any])
     

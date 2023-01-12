@@ -15,7 +15,8 @@ object TagParam {
     __obj.asInstanceOf[TagParam]
   }
   
-  extension [Self <: TagParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagParam] (val x: Self) extends AnyVal {
     
     inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
   }

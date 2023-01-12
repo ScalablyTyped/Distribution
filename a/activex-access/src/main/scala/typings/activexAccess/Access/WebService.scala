@@ -33,7 +33,8 @@ object WebService {
     __obj.asInstanceOf[WebService]
   }
   
-  extension [Self <: WebService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebService] (val x: Self) extends AnyVal {
     
     inline def setAccessDotWebService_typekey(value: WebService): Self = StObject.set(x, "Access.WebService_typekey", value.asInstanceOf[js.Any])
     

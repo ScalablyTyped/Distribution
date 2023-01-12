@@ -46,7 +46,8 @@ object IFileOpenPickerUI {
     __obj.asInstanceOf[IFileOpenPickerUI]
   }
   
-  extension [Self <: IFileOpenPickerUI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileOpenPickerUI] (val x: Self) extends AnyVal {
     
     inline def setAddFile(value: (String, IStorageFile) => AddFileResult): Self = StObject.set(x, "addFile", js.Any.fromFunction2(value))
     

@@ -15,7 +15,8 @@ object TypeofPurchaseDetails {
     __obj.asInstanceOf[TypeofPurchaseDetails]
   }
   
-  extension [Self <: TypeofPurchaseDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPurchaseDetails] (val x: Self) extends AnyVal {
     
     inline def setFlight(value: Any): Self = StObject.set(x, "Flight", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object ComposedChartProps {
     __obj.asInstanceOf[ComposedChartProps]
   }
   
-  extension [Self <: ComposedChartProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComposedChartProps] (val x: Self) extends AnyVal {
     
     inline def setOnMouseOut(value: RechartsFunction): Self = StObject.set(x, "onMouseOut", value.asInstanceOf[js.Any])
     

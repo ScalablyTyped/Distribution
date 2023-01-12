@@ -18,7 +18,8 @@ object DeviceAndAppManagementRoleAssignment {
     __obj.asInstanceOf[DeviceAndAppManagementRoleAssignment]
   }
   
-  extension [Self <: DeviceAndAppManagementRoleAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceAndAppManagementRoleAssignment] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     

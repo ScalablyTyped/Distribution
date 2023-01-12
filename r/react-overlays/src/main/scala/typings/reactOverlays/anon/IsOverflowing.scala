@@ -20,7 +20,8 @@ object IsOverflowing {
     __obj.asInstanceOf[IsOverflowing]
   }
   
-  extension [Self <: IsOverflowing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsOverflowing] (val x: Self) extends AnyVal {
     
     inline def setIsOverflowing(value: Boolean): Self = StObject.set(x, "isOverflowing", value.asInstanceOf[js.Any])
     

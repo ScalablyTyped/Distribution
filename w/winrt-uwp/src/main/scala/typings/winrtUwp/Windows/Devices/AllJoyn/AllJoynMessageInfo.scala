@@ -17,7 +17,8 @@ object AllJoynMessageInfo {
     __obj.asInstanceOf[AllJoynMessageInfo]
   }
   
-  extension [Self <: AllJoynMessageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllJoynMessageInfo] (val x: Self) extends AnyVal {
     
     inline def setSenderUniqueName(value: String): Self = StObject.set(x, "senderUniqueName", value.asInstanceOf[js.Any])
   }

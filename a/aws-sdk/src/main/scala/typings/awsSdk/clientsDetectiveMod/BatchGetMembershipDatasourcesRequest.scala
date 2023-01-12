@@ -18,7 +18,8 @@ object BatchGetMembershipDatasourcesRequest {
     __obj.asInstanceOf[BatchGetMembershipDatasourcesRequest]
   }
   
-  extension [Self <: BatchGetMembershipDatasourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetMembershipDatasourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setGraphArns(value: GraphArnList): Self = StObject.set(x, "GraphArns", value.asInstanceOf[js.Any])
     

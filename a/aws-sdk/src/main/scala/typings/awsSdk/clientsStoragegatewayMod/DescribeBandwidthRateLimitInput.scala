@@ -15,7 +15,8 @@ object DescribeBandwidthRateLimitInput {
     __obj.asInstanceOf[DescribeBandwidthRateLimitInput]
   }
   
-  extension [Self <: DescribeBandwidthRateLimitInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBandwidthRateLimitInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }

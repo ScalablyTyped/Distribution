@@ -31,7 +31,8 @@ object XTextRangeMover {
     __obj.asInstanceOf[XTextRangeMover]
   }
   
-  extension [Self <: XTextRangeMover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextRangeMover] (val x: Self) extends AnyVal {
     
     inline def setMoveTextRange(value: (XTextRange, Double) => Unit): Self = StObject.set(x, "moveTextRange", js.Any.fromFunction2(value))
   }

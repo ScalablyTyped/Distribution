@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsAdvancedPitchforkOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsAdvancedPitchforkOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsAdvancedPitchforkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsAdvancedPitchforkOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

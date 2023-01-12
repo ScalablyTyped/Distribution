@@ -27,7 +27,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReactSizeReporterRef]
     }
     
-    extension [Self <: ReactSizeReporterRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactSizeReporterRef] (val x: Self) extends AnyVal {
       
       inline def setReattachResizeListener(value: () => Unit): Self = StObject.set(x, "reattachResizeListener", js.Any.fromFunction0(value))
     }

@@ -19,7 +19,8 @@ object BloomrunConfig {
     __obj.asInstanceOf[BloomrunConfig]
   }
   
-  extension [Self <: BloomrunConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BloomrunConfig] (val x: Self) extends AnyVal {
     
     inline def setIndexing(value: insertion | depth): Self = StObject.set(x, "indexing", value.asInstanceOf[js.Any])
     

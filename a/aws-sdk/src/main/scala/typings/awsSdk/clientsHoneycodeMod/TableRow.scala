@@ -23,7 +23,8 @@ object TableRow {
     __obj.asInstanceOf[TableRow]
   }
   
-  extension [Self <: TableRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableRow] (val x: Self) extends AnyVal {
     
     inline def setCells(value: Cells): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     

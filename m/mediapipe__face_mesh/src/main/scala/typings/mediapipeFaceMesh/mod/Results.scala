@@ -23,7 +23,8 @@ object Results {
     __obj.asInstanceOf[Results]
   }
   
-  extension [Self <: Results](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
     
     inline def setImage(value: GpuBuffer): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

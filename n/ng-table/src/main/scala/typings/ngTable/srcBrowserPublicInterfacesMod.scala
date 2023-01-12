@@ -250,7 +250,8 @@ object srcBrowserPublicInterfacesMod {
       __obj.asInstanceOf[IColumnDef]
     }
     
-    extension [Self <: IColumnDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColumnDef] (val x: Self) extends AnyVal {
       
       inline def setClass(value: IColumnField[String]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -359,7 +360,8 @@ object srcBrowserPublicInterfacesMod {
       __obj.asInstanceOf[IDynamicTableColDef]
     }
     
-    extension [Self <: IDynamicTableColDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDynamicTableColDef] (val x: Self) extends AnyVal {
       
       inline def setClass(value: DynamicTableColField[String]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -456,7 +458,8 @@ object srcBrowserPublicInterfacesMod {
       __obj.asInstanceOf[IFilterConfigValues]
     }
     
-    extension [Self <: IFilterConfigValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFilterConfigValues] (val x: Self) extends AnyVal {
       
       inline def setAliasUrls(value: StringDictionary[String]): Self = StObject.set(x, "aliasUrls", value.asInstanceOf[js.Any])
       
@@ -491,7 +494,8 @@ object srcBrowserPublicInterfacesMod {
       __obj.asInstanceOf[IFilterTemplateDef]
     }
     
-    extension [Self <: IFilterTemplateDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFilterTemplateDef] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -516,7 +520,8 @@ object srcBrowserPublicInterfacesMod {
       __obj.asInstanceOf[ISelectOption]
     }
     
-    extension [Self <: ISelectOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectOption] (val x: Self) extends AnyVal {
       
       inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -557,7 +562,8 @@ object srcBrowserPublicInterfacesMod {
       __obj.asInstanceOf[ITableInputAttributes]
     }
     
-    extension [Self <: ITableInputAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITableInputAttributes] (val x: Self) extends AnyVal {
       
       inline def setDisableFilter(value: String): Self = StObject.set(x, "disableFilter", value.asInstanceOf[js.Any])
       

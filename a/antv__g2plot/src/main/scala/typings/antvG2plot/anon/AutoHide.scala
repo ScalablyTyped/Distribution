@@ -17,7 +17,8 @@ object AutoHide {
     __obj.asInstanceOf[AutoHide]
   }
   
-  extension [Self <: AutoHide](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoHide] (val x: Self) extends AnyVal {
     
     inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     

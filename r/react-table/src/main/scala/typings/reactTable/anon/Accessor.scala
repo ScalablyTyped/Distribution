@@ -16,7 +16,8 @@ object Accessor {
     __obj.asInstanceOf[Accessor[D]]
   }
   
-  extension [Self <: Accessor[?], D /* <: js.Object */](x: Self & Accessor[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Accessor[?], D /* <: js.Object */] (val x: Self & Accessor[D]) extends AnyVal {
     
     inline def setAccessor(value: (D, /* index */ Double, /* sub */ Data[D]) => CellValue[Any]): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
     

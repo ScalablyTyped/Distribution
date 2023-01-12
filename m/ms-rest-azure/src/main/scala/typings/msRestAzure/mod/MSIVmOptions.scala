@@ -20,7 +20,8 @@ object MSIVmOptions {
     __obj.asInstanceOf[MSIVmOptions]
   }
   
-  extension [Self <: MSIVmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MSIVmOptions] (val x: Self) extends AnyVal {
     
     inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     

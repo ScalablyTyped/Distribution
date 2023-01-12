@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1Schema {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1Schema]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1Schema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1Schema] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[GoogleCloudDatacatalogV1ColumnSchema]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

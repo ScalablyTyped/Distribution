@@ -23,7 +23,8 @@ object FormErrorEventUIParam {
     __obj.asInstanceOf[FormErrorEventUIParam]
   }
   
-  extension [Self <: FormErrorEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormErrorEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

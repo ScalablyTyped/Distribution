@@ -16,7 +16,8 @@ object ApplicationReference {
     __obj.asInstanceOf[ApplicationReference]
   }
   
-  extension [Self <: ApplicationReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationReference] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -100,7 +100,8 @@ object anon {
       __obj.asInstanceOf[PartialWaitOnOptions]
     }
     
-    extension [Self <: PartialWaitOnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialWaitOnOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: WaitOnAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

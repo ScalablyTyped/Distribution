@@ -38,7 +38,8 @@ object PostLaunchActions {
     __obj.asInstanceOf[PostLaunchActions]
   }
   
-  extension [Self <: PostLaunchActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostLaunchActions] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogGroupName(value: CloudWatchLogGroupName): Self = StObject.set(x, "cloudWatchLogGroupName", value.asInstanceOf[js.Any])
     

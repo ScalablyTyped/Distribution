@@ -37,7 +37,8 @@ object StatusEvent {
     __obj.asInstanceOf[StatusEvent]
   }
   
-  extension [Self <: StatusEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusEvent] (val x: Self) extends AnyVal {
     
     inline def setAffectedChannelGroups(value: js.Array[String]): Self = StObject.set(x, "affectedChannelGroups", value.asInstanceOf[js.Any])
     

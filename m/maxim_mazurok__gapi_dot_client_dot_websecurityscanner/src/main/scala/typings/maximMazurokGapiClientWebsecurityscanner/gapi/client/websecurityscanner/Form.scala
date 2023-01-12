@@ -19,7 +19,8 @@ object Form {
     __obj.asInstanceOf[Form]
   }
   
-  extension [Self <: Form](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
     
     inline def setActionUri(value: String): Self = StObject.set(x, "actionUri", value.asInstanceOf[js.Any])
     

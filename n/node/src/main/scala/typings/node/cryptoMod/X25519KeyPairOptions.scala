@@ -22,7 +22,8 @@ object X25519KeyPairOptions {
     __obj.asInstanceOf[X25519KeyPairOptions[PubF, PrivF]]
   }
   
-  extension [Self <: X25519KeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](x: Self & (X25519KeyPairOptions[PubF, PrivF])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X25519KeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] (val x: Self & (X25519KeyPairOptions[PubF, PrivF])) extends AnyVal {
     
     inline def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] & `0`): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
     

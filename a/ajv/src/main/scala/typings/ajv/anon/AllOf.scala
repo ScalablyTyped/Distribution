@@ -28,7 +28,8 @@ object AllOf {
     __obj.asInstanceOf[AllOf[T]]
   }
   
-  extension [Self <: AllOf[?], T](x: Self & AllOf[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllOf[?], T] (val x: Self & AllOf[T]) extends AnyVal {
     
     inline def setAllOf(value: js.Array[UncheckedPartialSchema[T]]): Self = StObject.set(x, "allOf", value.asInstanceOf[js.Any])
     

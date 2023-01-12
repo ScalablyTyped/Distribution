@@ -35,7 +35,8 @@ object INxValidationError {
     __obj.asInstanceOf[INxValidationError]
   }
   
-  extension [Self <: INxValidationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxValidationError] (val x: Self) extends AnyVal {
     
     inline def setQContext(value: String): Self = StObject.set(x, "qContext", value.asInstanceOf[js.Any])
     

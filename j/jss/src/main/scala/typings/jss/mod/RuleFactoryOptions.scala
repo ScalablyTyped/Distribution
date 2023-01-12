@@ -27,7 +27,8 @@ object RuleFactoryOptions {
     __obj.asInstanceOf[RuleFactoryOptions]
   }
   
-  extension [Self <: RuleFactoryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleFactoryOptions] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

@@ -261,7 +261,8 @@ object XSingleSelectQueryAnalyzer {
     __obj.asInstanceOf[XSingleSelectQueryAnalyzer]
   }
   
-  extension [Self <: XSingleSelectQueryAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSingleSelectQueryAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object GoogleSecuritySafebrowsingV4FindFullHashesResponse {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4FindFullHashesResponse]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4FindFullHashesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4FindFullHashesResponse] (val x: Self) extends AnyVal {
     
     inline def setMatches(value: js.Array[GoogleSecuritySafebrowsingV4ThreatMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     

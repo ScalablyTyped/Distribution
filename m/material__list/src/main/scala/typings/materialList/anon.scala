@@ -76,7 +76,8 @@ object anon {
       __obj.asInstanceOf[ACTIONEVENT]
     }
     
-    extension [Self <: ACTIONEVENT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ACTIONEVENT] (val x: Self) extends AnyVal {
       
       inline def setACTION_EVENT(value: String): Self = StObject.set(x, "ACTION_EVENT", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object anon {
       __obj.asInstanceOf[LISTITEMACTIVATEDCLASS]
     }
     
-    extension [Self <: LISTITEMACTIVATEDCLASS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LISTITEMACTIVATEDCLASS] (val x: Self) extends AnyVal {
       
       inline def setLIST_ITEM_ACTIVATED_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_ACTIVATED_CLASS", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCListAdapter]
     }
     
-    extension [Self <: PartialMDCListAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCListAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClassForElementIndex(value: (/* index */ Double, /* className */ String) => Unit): Self = StObject.set(x, "addClassForElementIndex", js.Any.fromFunction2(value))
       
@@ -306,7 +309,8 @@ object anon {
       __obj.asInstanceOf[TYPEAHEADBUFFERCLEARTIMEOUTMS]
     }
     
-    extension [Self <: TYPEAHEADBUFFERCLEARTIMEOUTMS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TYPEAHEADBUFFERCLEARTIMEOUTMS] (val x: Self) extends AnyVal {
       
       inline def setTYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS(value: Double): Self = StObject.set(x, "TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS", value.asInstanceOf[js.Any])
       

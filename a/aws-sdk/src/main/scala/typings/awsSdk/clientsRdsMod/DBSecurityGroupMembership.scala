@@ -23,7 +23,8 @@ object DBSecurityGroupMembership {
     __obj.asInstanceOf[DBSecurityGroupMembership]
   }
   
-  extension [Self <: DBSecurityGroupMembership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBSecurityGroupMembership] (val x: Self) extends AnyVal {
     
     inline def setDBSecurityGroupName(value: String): Self = StObject.set(x, "DBSecurityGroupName", value.asInstanceOf[js.Any])
     

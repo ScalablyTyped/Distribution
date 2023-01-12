@@ -43,7 +43,8 @@ object IgComboMultiSelection {
     __obj.asInstanceOf[IgComboMultiSelection]
   }
   
-  extension [Self <: IgComboMultiSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgComboMultiSelection] (val x: Self) extends AnyVal {
     
     inline def setAddWithKeyModifier(value: Boolean): Self = StObject.set(x, "addWithKeyModifier", value.asInstanceOf[js.Any])
     

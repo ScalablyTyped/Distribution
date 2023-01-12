@@ -36,7 +36,8 @@ object IdGeneration {
     __obj.asInstanceOf[IdGeneration[T, U]]
   }
   
-  extension [Self <: IdGeneration[?, ?], T, U](x: Self & (IdGeneration[T, U])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdGeneration[?, ?], T, U] (val x: Self & (IdGeneration[T, U])) extends AnyVal {
     
     inline def setConnection(value: js.Object): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

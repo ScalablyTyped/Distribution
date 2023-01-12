@@ -23,7 +23,8 @@ object R53ResourceRecord {
     __obj.asInstanceOf[R53ResourceRecord]
   }
   
-  extension [Self <: R53ResourceRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R53ResourceRecord] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: string): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

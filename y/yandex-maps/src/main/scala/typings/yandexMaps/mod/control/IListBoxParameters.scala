@@ -19,7 +19,8 @@ object IListBoxParameters {
     __obj.asInstanceOf[IListBoxParameters]
   }
   
-  extension [Self <: IListBoxParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListBoxParameters] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: IBaseButtonParametersOptiFloat): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

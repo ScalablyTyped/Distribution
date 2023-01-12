@@ -18,7 +18,8 @@ object StartRecordOptions {
     __obj.asInstanceOf[StartRecordOptions]
   }
   
-  extension [Self <: StartRecordOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRecordOptions] (val x: Self) extends AnyVal {
     
     inline def setTimeoutCallback(value: /* res */ RecordResponse => Unit): Self = StObject.set(x, "timeoutCallback", js.Any.fromFunction1(value))
     

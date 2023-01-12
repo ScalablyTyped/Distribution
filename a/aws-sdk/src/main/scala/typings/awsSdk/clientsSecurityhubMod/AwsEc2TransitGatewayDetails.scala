@@ -73,7 +73,8 @@ object AwsEc2TransitGatewayDetails {
     __obj.asInstanceOf[AwsEc2TransitGatewayDetails]
   }
   
-  extension [Self <: AwsEc2TransitGatewayDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2TransitGatewayDetails] (val x: Self) extends AnyVal {
     
     inline def setAmazonSideAsn(value: Integer): Self = StObject.set(x, "AmazonSideAsn", value.asInstanceOf[js.Any])
     

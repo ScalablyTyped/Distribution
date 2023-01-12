@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[ZipCelXCell]
     }
     
-    extension [Self <: ZipCelXCell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZipCelXCell] (val x: Self) extends AnyVal {
       
       inline def setType(value: string | number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[ZipCelXConfig]
     }
     
-    extension [Self <: ZipCelXConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZipCelXConfig] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object mod {
       __obj.asInstanceOf[ZipCelXSheet]
     }
     
-    extension [Self <: ZipCelXSheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZipCelXSheet] (val x: Self) extends AnyVal {
       
       inline def setData(value: ZipCelXDataSet): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -336,7 +336,8 @@ object IgValidator {
     __obj.asInstanceOf[IgValidator]
   }
   
-  extension [Self <: IgValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgValidator] (val x: Self) extends AnyVal {
     
     inline def setCreditCard(value: Boolean | js.Object): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
     

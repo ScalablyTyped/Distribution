@@ -28,7 +28,8 @@ object IncreaseReplicationFactorRequest {
     __obj.asInstanceOf[IncreaseReplicationFactorRequest]
   }
   
-  extension [Self <: IncreaseReplicationFactorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncreaseReplicationFactorRequest] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

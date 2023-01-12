@@ -32,7 +32,8 @@ object Config_ {
     __obj.asInstanceOf[Config_]
   }
   
-  extension [Self <: Config_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Config_] (val x: Self) extends AnyVal {
     
     inline def setLOG_DEBUG(value: String): Self = StObject.set(x, "LOG_DEBUG", value.asInstanceOf[js.Any])
     

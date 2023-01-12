@@ -23,7 +23,8 @@ object FormatDiagnosticsHost {
     __obj.asInstanceOf[FormatDiagnosticsHost]
   }
   
-  extension [Self <: FormatDiagnosticsHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatDiagnosticsHost] (val x: Self) extends AnyVal {
     
     inline def setGetCanonicalFileName(value: java.lang.String => java.lang.String): Self = StObject.set(x, "getCanonicalFileName", js.Any.fromFunction1(value))
     

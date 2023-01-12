@@ -732,7 +732,8 @@ object Gantt {
       __obj.asInstanceOf[ActionBeginEventArgs]
     }
     
-    extension [Self <: ActionBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -821,7 +822,8 @@ object Gantt {
       __obj.asInstanceOf[ActionCompleteEventArgs]
     }
     
-    extension [Self <: ActionCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -883,7 +885,8 @@ object Gantt {
       __obj.asInstanceOf[AddDialogField]
     }
     
-    extension [Self <: AddDialogField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddDialogField] (val x: Self) extends AnyVal {
       
       inline def setDisplayInGeneralTab(value: Boolean): Self = StObject.set(x, "displayInGeneralTab", value.asInstanceOf[js.Any])
       
@@ -928,7 +931,8 @@ object Gantt {
       __obj.asInstanceOf[BeginEditEventArgs]
     }
     
-    extension [Self <: BeginEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeginEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1009,7 +1013,8 @@ object Gantt {
       __obj.asInstanceOf[CellSelectedEventArgs]
     }
     
-    extension [Self <: CellSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1098,7 +1103,8 @@ object Gantt {
       __obj.asInstanceOf[CellSelectingEventArgs]
     }
     
-    extension [Self <: CellSelectingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSelectingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1159,7 +1165,8 @@ object Gantt {
       __obj.asInstanceOf[CollapsedEventArgs]
     }
     
-    extension [Self <: CollapsedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapsedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1208,7 +1215,8 @@ object Gantt {
       __obj.asInstanceOf[CollapsingEventArgs]
     }
     
-    extension [Self <: CollapsingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapsingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1257,7 +1265,8 @@ object Gantt {
       __obj.asInstanceOf[ContextMenuOpenEventArgs]
     }
     
-    extension [Self <: ContextMenuOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1304,7 +1313,8 @@ object Gantt {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1344,7 +1354,8 @@ object Gantt {
       __obj.asInstanceOf[DragTooltip]
     }
     
-    extension [Self <: DragTooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragTooltip] (val x: Self) extends AnyVal {
       
       inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
       
@@ -1384,7 +1395,8 @@ object Gantt {
       __obj.asInstanceOf[EditDialogField]
     }
     
-    extension [Self <: EditDialogField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditDialogField] (val x: Self) extends AnyVal {
       
       inline def setDisplayInGeneralTab(value: Boolean): Self = StObject.set(x, "displayInGeneralTab", value.asInstanceOf[js.Any])
       
@@ -1449,7 +1461,8 @@ object Gantt {
       __obj.asInstanceOf[EditSettings]
     }
     
-    extension [Self <: EditSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowAdding(value: Boolean): Self = StObject.set(x, "allowAdding", value.asInstanceOf[js.Any])
       
@@ -1510,7 +1523,8 @@ object Gantt {
       __obj.asInstanceOf[EjPredicate]
     }
     
-    extension [Self <: EjPredicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EjPredicate] (val x: Self) extends AnyVal {
       
       inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       
@@ -1563,7 +1577,8 @@ object Gantt {
       __obj.asInstanceOf[EndEditEventArgs]
     }
     
-    extension [Self <: EndEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1620,7 +1635,8 @@ object Gantt {
       __obj.asInstanceOf[ExpandedEventArgs]
     }
     
-    extension [Self <: ExpandedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1669,7 +1685,8 @@ object Gantt {
       __obj.asInstanceOf[ExpandingEventArgs]
     }
     
-    extension [Self <: ExpandingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1703,7 +1720,8 @@ object Gantt {
       __obj.asInstanceOf[FilterSettings]
     }
     
-    extension [Self <: FilterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterSettings] (val x: Self) extends AnyVal {
       
       inline def setFilteredColumns(value: js.Array[FilterSettingsFilteredColumn]): Self = StObject.set(x, "filteredColumns", value.asInstanceOf[js.Any])
       
@@ -1738,7 +1756,8 @@ object Gantt {
       __obj.asInstanceOf[FilterSettingsFilteredColumn]
     }
     
-    extension [Self <: FilterSettingsFilteredColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterSettingsFilteredColumn] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -1779,7 +1798,8 @@ object Gantt {
       __obj.asInstanceOf[Holiday]
     }
     
-    extension [Self <: Holiday](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Holiday] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -1816,7 +1836,8 @@ object Gantt {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2513,7 +2534,8 @@ object Gantt {
       __obj.asInstanceOf[typings.ejWebAll.ej.Gantt.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Gantt.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Gantt.Model] (val x: Self) extends AnyVal {
       
       inline def setActionBegin(value: /* e */ ActionBeginEventArgs => Unit): Self = StObject.set(x, "actionBegin", js.Any.fromFunction1(value))
       
@@ -3168,7 +3190,8 @@ object Gantt {
       __obj.asInstanceOf[QueryCellInfoEventArgs]
     }
     
-    extension [Self <: QueryCellInfoEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryCellInfoEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3253,7 +3276,8 @@ object Gantt {
       __obj.asInstanceOf[QueryTaskbarInfoEventArgs]
     }
     
-    extension [Self <: QueryTaskbarInfoEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryTaskbarInfoEventArgs] (val x: Self) extends AnyVal {
       
       inline def setBaselineBackground(value: String): Self = StObject.set(x, "baselineBackground", value.asInstanceOf[js.Any])
       
@@ -3330,7 +3354,8 @@ object Gantt {
       __obj.asInstanceOf[RowDataBoundEventArgs]
     }
     
-    extension [Self <: RowDataBoundEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDataBoundEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3399,7 +3424,8 @@ object Gantt {
       __obj.asInstanceOf[RowDragEventArgs]
     }
     
-    extension [Self <: RowDragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCanDrop(value: Boolean): Self = StObject.set(x, "canDrop", value.asInstanceOf[js.Any])
       
@@ -3480,7 +3506,8 @@ object Gantt {
       __obj.asInstanceOf[RowDragStartEventArgs]
     }
     
-    extension [Self <: RowDragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3549,7 +3576,8 @@ object Gantt {
       __obj.asInstanceOf[RowDragStopEventArgs]
     }
     
-    extension [Self <: RowDragStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDragStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3610,7 +3638,8 @@ object Gantt {
       __obj.asInstanceOf[RowSelectedEventArgs]
     }
     
-    extension [Self <: RowSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3675,7 +3704,8 @@ object Gantt {
       __obj.asInstanceOf[RowSelectingEventArgs]
     }
     
-    extension [Self <: RowSelectingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowSelectingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3784,7 +3814,8 @@ object Gantt {
       __obj.asInstanceOf[ScheduleHeaderSettings]
     }
     
-    extension [Self <: ScheduleHeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScheduleHeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setDayHeaderFormat(value: String): Self = StObject.set(x, "dayHeaderFormat", value.asInstanceOf[js.Any])
       
@@ -3855,7 +3886,8 @@ object Gantt {
       __obj.asInstanceOf[SelectedCellIndex]
     }
     
-    extension [Self <: SelectedCellIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectedCellIndex] (val x: Self) extends AnyVal {
       
       inline def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
       
@@ -3884,7 +3916,8 @@ object Gantt {
       __obj.asInstanceOf[SizeSettings]
     }
     
-    extension [Self <: SizeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeSettings] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -3910,7 +3943,8 @@ object Gantt {
       __obj.asInstanceOf[SortSettings]
     }
     
-    extension [Self <: SortSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortSettings] (val x: Self) extends AnyVal {
       
       inline def setSortedColumns(value: js.Array[SortSettingsSortedColumn]): Self = StObject.set(x, "sortedColumns", value.asInstanceOf[js.Any])
       
@@ -3937,7 +3971,8 @@ object Gantt {
       __obj.asInstanceOf[SortSettingsSortedColumn]
     }
     
-    extension [Self <: SortSettingsSortedColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortSettingsSortedColumn] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -3982,7 +4017,8 @@ object Gantt {
       __obj.asInstanceOf[SplitterResizedEventArgs]
     }
     
-    extension [Self <: SplitterResizedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterResizedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4027,7 +4063,8 @@ object Gantt {
       __obj.asInstanceOf[SplitterSettings]
     }
     
-    extension [Self <: SplitterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterSettings] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -4068,7 +4105,8 @@ object Gantt {
       __obj.asInstanceOf[StripLine]
     }
     
-    extension [Self <: StripLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripLine] (val x: Self) extends AnyVal {
       
       inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -4125,7 +4163,8 @@ object Gantt {
       __obj.asInstanceOf[TaskbarClickEventArgs]
     }
     
-    extension [Self <: TaskbarClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskbarClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -4198,7 +4237,8 @@ object Gantt {
       __obj.asInstanceOf[TaskbarEditedEventArgs]
     }
     
-    extension [Self <: TaskbarEditedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskbarEditedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4271,7 +4311,8 @@ object Gantt {
       __obj.asInstanceOf[TaskbarEditingEventArgs]
     }
     
-    extension [Self <: TaskbarEditingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskbarEditingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4328,7 +4369,8 @@ object Gantt {
       __obj.asInstanceOf[ToolbarClickEventArgs]
     }
     
-    extension [Self <: ToolbarClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4375,7 +4417,8 @@ object Gantt {
       __obj.asInstanceOf[ToolbarSettings]
     }
     
-    extension [Self <: ToolbarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomToolbarItems(value: js.Array[ToolbarSettingsCustomToolbarItem]): Self = StObject.set(x, "customToolbarItems", value.asInstanceOf[js.Any])
       
@@ -4416,7 +4459,8 @@ object Gantt {
       __obj.asInstanceOf[ToolbarSettingsCustomToolbarItem]
     }
     
-    extension [Self <: ToolbarSettingsCustomToolbarItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSettingsCustomToolbarItem] (val x: Self) extends AnyVal {
       
       inline def setTemplateID(value: String): Self = StObject.set(x, "templateID", value.asInstanceOf[js.Any])
       

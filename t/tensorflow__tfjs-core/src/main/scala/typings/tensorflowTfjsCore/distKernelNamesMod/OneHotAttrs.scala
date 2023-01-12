@@ -22,7 +22,8 @@ object OneHotAttrs {
     __obj.asInstanceOf[OneHotAttrs]
   }
   
-  extension [Self <: OneHotAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OneHotAttrs] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

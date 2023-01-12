@@ -27,7 +27,8 @@ object FieldValuesQuery {
     __obj.asInstanceOf[FieldValuesQuery]
   }
   
-  extension [Self <: FieldValuesQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldValuesQuery] (val x: Self) extends AnyVal {
     
     inline def setInputValues(value: js.Array[FieldInputValues]): Self = StObject.set(x, "inputValues", value.asInstanceOf[js.Any])
     

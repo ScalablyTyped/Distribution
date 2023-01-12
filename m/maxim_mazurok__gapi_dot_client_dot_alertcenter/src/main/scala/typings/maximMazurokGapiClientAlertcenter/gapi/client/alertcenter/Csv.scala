@@ -19,7 +19,8 @@ object Csv {
     __obj.asInstanceOf[Csv]
   }
   
-  extension [Self <: Csv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Csv] (val x: Self) extends AnyVal {
     
     inline def setDataRows(value: js.Array[CsvRow]): Self = StObject.set(x, "dataRows", value.asInstanceOf[js.Any])
     

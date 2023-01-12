@@ -29,7 +29,8 @@ object GetUserPurchaseListAPIResult {
     __obj.asInstanceOf[GetUserPurchaseListAPIResult]
   }
   
-  extension [Self <: GetUserPurchaseListAPIResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserPurchaseListAPIResult] (val x: Self) extends AnyVal {
     
     inline def setCPResult(value: String): Self = StObject.set(x, "CPResult", value.asInstanceOf[js.Any])
     

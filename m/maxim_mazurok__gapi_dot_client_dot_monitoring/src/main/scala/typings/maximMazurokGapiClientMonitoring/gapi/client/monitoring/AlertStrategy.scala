@@ -19,7 +19,8 @@ object AlertStrategy {
     __obj.asInstanceOf[AlertStrategy]
   }
   
-  extension [Self <: AlertStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertStrategy] (val x: Self) extends AnyVal {
     
     inline def setAutoClose(value: String): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     

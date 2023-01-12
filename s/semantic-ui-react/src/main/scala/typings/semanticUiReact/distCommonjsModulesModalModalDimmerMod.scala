@@ -63,7 +63,8 @@ object distCommonjsModulesModalModalDimmerMod extends Shortcut {
       __obj.asInstanceOf[StrictModalDimmerProps]
     }
     
-    extension [Self <: StrictModalDimmerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictModalDimmerProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

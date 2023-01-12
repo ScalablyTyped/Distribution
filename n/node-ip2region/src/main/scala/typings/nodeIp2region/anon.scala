@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[City]
     }
     
-    extension [Self <: City](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: City] (val x: Self) extends AnyVal {
       
       inline def setCity(value: Double): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[DbPath]
     }
     
-    extension [Self <: DbPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DbPath] (val x: Self) extends AnyVal {
       
       inline def setDbPath(value: String): Self = StObject.set(x, "dbPath", value.asInstanceOf[js.Any])
     }

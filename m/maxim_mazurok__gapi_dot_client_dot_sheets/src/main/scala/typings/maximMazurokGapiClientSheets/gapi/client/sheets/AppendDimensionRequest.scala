@@ -22,7 +22,8 @@ object AppendDimensionRequest {
     __obj.asInstanceOf[AppendDimensionRequest]
   }
   
-  extension [Self <: AppendDimensionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppendDimensionRequest] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object libTypesReanimated2InterpolateColorMod {
       __obj.asInstanceOf[InterpolateConfig]
     }
     
-    extension [Self <: InterpolateConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterpolateConfig] (val x: Self) extends AnyVal {
       
       inline def setCache(value: SharedValue[InterpolateRGB | InterpolateHSV | Null]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object libTypesReanimated2InterpolateColorMod {
       __obj.asInstanceOf[InterpolateHSV]
     }
     
-    extension [Self <: InterpolateHSV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterpolateHSV] (val x: Self) extends AnyVal {
       
       inline def setH(value: js.Array[Double]): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -134,7 +136,8 @@ object libTypesReanimated2InterpolateColorMod {
       __obj.asInstanceOf[InterpolateRGB]
     }
     
-    extension [Self <: InterpolateRGB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterpolateRGB] (val x: Self) extends AnyVal {
       
       inline def setA(value: js.Array[Double]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

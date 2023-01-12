@@ -53,7 +53,8 @@ object ReferenceDelegate {
     __obj.asInstanceOf[ReferenceDelegate]
   }
   
-  extension [Self <: ReferenceDelegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceDelegate] (val x: Self) extends AnyVal {
     
     inline def setAddReference(value: (PersistenceTransaction, TargetId, DocumentKey) => PersistencePromise[Unit]): Self = StObject.set(x, "addReference", js.Any.fromFunction3(value))
     

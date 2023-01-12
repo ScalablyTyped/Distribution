@@ -15,7 +15,8 @@ object HostCancellationToken {
     __obj.asInstanceOf[HostCancellationToken]
   }
   
-  extension [Self <: HostCancellationToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostCancellationToken] (val x: Self) extends AnyVal {
     
     inline def setIsCancellationRequested(value: () => Boolean): Self = StObject.set(x, "isCancellationRequested", js.Any.fromFunction0(value))
   }

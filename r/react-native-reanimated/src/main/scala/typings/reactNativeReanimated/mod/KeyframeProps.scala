@@ -17,7 +17,8 @@ object KeyframeProps {
     __obj.asInstanceOf[KeyframeProps]
   }
   
-  extension [Self <: KeyframeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyframeProps] (val x: Self) extends AnyVal {
     
     inline def setEasing(value: /* t */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     

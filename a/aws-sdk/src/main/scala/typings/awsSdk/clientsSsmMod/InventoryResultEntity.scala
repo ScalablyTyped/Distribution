@@ -23,7 +23,8 @@ object InventoryResultEntity {
     __obj.asInstanceOf[InventoryResultEntity]
   }
   
-  extension [Self <: InventoryResultEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryResultEntity] (val x: Self) extends AnyVal {
     
     inline def setData(value: InventoryResultItemMap): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

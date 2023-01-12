@@ -34,7 +34,8 @@ object TestOptions {
     __obj.asInstanceOf[TestOptions]
   }
   
-  extension [Self <: TestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestOptions] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

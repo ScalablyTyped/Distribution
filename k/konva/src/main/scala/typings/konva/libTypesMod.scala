@@ -156,7 +156,8 @@ object libTypesMod {
       __obj.asInstanceOf[IFrame]
     }
     
-    extension [Self <: IFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFrame] (val x: Self) extends AnyVal {
       
       inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object libTypesMod {
       __obj.asInstanceOf[IRect]
     }
     
-    extension [Self <: IRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object libTypesMod {
       __obj.asInstanceOf[RGB]
     }
     
-    extension [Self <: RGB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -235,7 +238,8 @@ object libTypesMod {
       __obj.asInstanceOf[RGBA]
     }
     
-    extension [Self <: RGBA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     }
@@ -254,7 +258,8 @@ object libTypesMod {
       __obj.asInstanceOf[Vector2d]
     }
     
-    extension [Self <: Vector2d](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vector2d] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

@@ -131,7 +131,8 @@ object AddLabels {
     __obj.asInstanceOf[AddLabels]
   }
   
-  extension [Self <: AddLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddLabels] (val x: Self) extends AnyVal {
     
     inline def setAddAssignees(value: `1098`): Self = StObject.set(x, "addAssignees", value.asInstanceOf[js.Any])
     

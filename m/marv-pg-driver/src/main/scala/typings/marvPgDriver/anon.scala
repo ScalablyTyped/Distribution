@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Connection]
     }
     
-    extension [Self <: Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: ClientConfig): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Typeofpg]
     }
     
-    extension [Self <: Typeofpg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofpg] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Instantiable0[Client]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object anon {
       __obj.asInstanceOf[Warn]
     }
     
-    extension [Self <: Warn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Warn] (val x: Self) extends AnyVal {
       
       inline def setWarn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }

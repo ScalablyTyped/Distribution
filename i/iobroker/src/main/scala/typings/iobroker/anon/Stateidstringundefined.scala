@@ -46,7 +46,8 @@ object Stateidstringundefined {
     __obj.asInstanceOf[Stateidstringundefined]
   }
   
-  extension [Self <: Stateidstringundefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stateidstringundefined] (val x: Self) extends AnyVal {
     
     inline def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     

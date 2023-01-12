@@ -73,7 +73,8 @@ object DocumentEditor {
       __obj.asInstanceOf[ImportExportSettings]
     }
     
-    extension [Self <: ImportExportSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportExportSettings] (val x: Self) extends AnyVal {
       
       inline def setImportUrl(value: String): Self = StObject.set(x, "importUrl", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object DocumentEditor {
       __obj.asInstanceOf[typings.ejWebAll.ej.DocumentEditor.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.DocumentEditor.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.DocumentEditor.Model] (val x: Self) extends AnyVal {
       
       inline def setImportExportSettings(value: ImportExportSettings): Self = StObject.set(x, "importExportSettings", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object DocumentEditor {
       __obj.asInstanceOf[OnDocumentChangeEventArgs]
     }
     
-    extension [Self <: OnDocumentChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnDocumentChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -196,7 +199,8 @@ object DocumentEditor {
       __obj.asInstanceOf[OnRequestNavigateEventArgs]
     }
     
-    extension [Self <: OnRequestNavigateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnRequestNavigateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -237,7 +241,8 @@ object DocumentEditor {
       __obj.asInstanceOf[OnSelectionChangeEventArgs]
     }
     
-    extension [Self <: OnSelectionChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnSelectionChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -274,7 +279,8 @@ object DocumentEditor {
       __obj.asInstanceOf[OnZoomFactorChangeEventArgs]
     }
     
-    extension [Self <: OnZoomFactorChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnZoomFactorChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

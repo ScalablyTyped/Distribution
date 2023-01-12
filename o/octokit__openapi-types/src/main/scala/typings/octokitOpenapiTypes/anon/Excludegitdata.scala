@@ -67,7 +67,8 @@ object Excludegitdata {
     __obj.asInstanceOf[Excludegitdata]
   }
   
-  extension [Self <: Excludegitdata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Excludegitdata] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: js.Array[repositories]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

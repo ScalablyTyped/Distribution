@@ -33,7 +33,8 @@ object CustomAttribute {
       __obj.asInstanceOf[CustomAttributes]
     }
     
-    extension [Self <: CustomAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomAttributes] (val x: Self) extends AnyVal {
       
       inline def setCustom(value: Map): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     }

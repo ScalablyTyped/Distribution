@@ -18,7 +18,8 @@ object IosMobileAppIdentifier {
     __obj.asInstanceOf[IosMobileAppIdentifier]
   }
   
-  extension [Self <: IosMobileAppIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosMobileAppIdentifier] (val x: Self) extends AnyVal {
     
     inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     

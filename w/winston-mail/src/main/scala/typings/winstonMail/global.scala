@@ -30,7 +30,8 @@ object global {
           __obj.asInstanceOf[Transports]
         }
         
-        extension [Self <: Transports](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Transports] (val x: Self) extends AnyVal {
           
           inline def setMail(value: typings.winstonMail.mod.Mail): Self = StObject.set(x, "Mail", value.asInstanceOf[js.Any])
         }

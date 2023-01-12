@@ -15,7 +15,8 @@ object QBnfHash {
     __obj.asInstanceOf[QBnfHash]
   }
   
-  extension [Self <: QBnfHash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QBnfHash] (val x: Self) extends AnyVal {
     
     inline def setQBnfHash(value: String): Self = StObject.set(x, "qBnfHash", value.asInstanceOf[js.Any])
   }

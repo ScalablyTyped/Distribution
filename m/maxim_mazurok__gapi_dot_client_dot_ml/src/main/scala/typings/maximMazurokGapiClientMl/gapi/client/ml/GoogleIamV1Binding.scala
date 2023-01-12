@@ -38,7 +38,8 @@ object GoogleIamV1Binding {
     __obj.asInstanceOf[GoogleIamV1Binding]
   }
   
-  extension [Self <: GoogleIamV1Binding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIamV1Binding] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: GoogleTypeExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

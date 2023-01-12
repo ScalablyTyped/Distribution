@@ -16,7 +16,8 @@ object MaterialPluginGetDefineNames {
     __obj.asInstanceOf[MaterialPluginGetDefineNames]
   }
   
-  extension [Self <: MaterialPluginGetDefineNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterialPluginGetDefineNames] (val x: Self) extends AnyVal {
     
     inline def setDefineNames(value: org.scalablytyped.runtime.StringDictionary[Default]): Self = StObject.set(x, "defineNames", value.asInstanceOf[js.Any])
     

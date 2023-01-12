@@ -17,7 +17,8 @@ object EmailChangeEvent {
     __obj.asInstanceOf[EmailChangeEvent]
   }
   
-  extension [Self <: EmailChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

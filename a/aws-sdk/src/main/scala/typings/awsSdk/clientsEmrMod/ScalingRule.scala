@@ -33,7 +33,8 @@ object ScalingRule {
     __obj.asInstanceOf[ScalingRule]
   }
   
-  extension [Self <: ScalingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingRule] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ScalingAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

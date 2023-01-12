@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Android]
     }
     
-    extension [Self <: Android](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: AndroidProjectParams): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Cmd]
     }
     
-    extension [Self <: Cmd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cmd] (val x: Self) extends AnyVal {
       
       inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setAndroid(
         value: Exclude[
@@ -156,7 +159,8 @@ object anon {
       __obj.asInstanceOf[Dictname]
     }
     
-    extension [Self <: Dictname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictname] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: AndroidPlatformConfig): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -177,7 +181,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -197,7 +202,8 @@ object anon {
       __obj.asInstanceOf[OmitDependencyConfignamer]
     }
     
-    extension [Self <: OmitDependencyConfignamer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitDependencyConfignamer] (val x: Self) extends AnyVal {
       
       inline def setPlatforms(value: Dictkey): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     }
@@ -235,7 +241,8 @@ object anon {
       __obj.asInstanceOf[pathstringnamestringshell]
     }
     
-    extension [Self <: pathstringnamestringshell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pathstringnamestringshell] (val x: Self) extends AnyVal {
       
       inline def setDependency_file(value: String): Self = StObject.set(x, "dependency_file", value.asInstanceOf[js.Any])
       
@@ -315,7 +322,8 @@ object anon {
       __obj.asInstanceOf[scriptstringnamestringshe]
     }
     
-    extension [Self <: scriptstringnamestringshe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: scriptstringnamestringshe] (val x: Self) extends AnyVal {
       
       inline def setDependency_file(value: String): Self = StObject.set(x, "dependency_file", value.asInstanceOf[js.Any])
       

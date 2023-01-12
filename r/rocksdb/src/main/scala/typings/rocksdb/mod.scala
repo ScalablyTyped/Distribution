@@ -90,7 +90,8 @@ object mod {
         __obj.asInstanceOf[BatchOptions]
       }
       
-      extension [Self <: BatchOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchOptions] (val x: Self) extends AnyVal {
         
         inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
         
@@ -121,7 +122,8 @@ object mod {
         __obj.asInstanceOf[DelOptions]
       }
       
-      extension [Self <: DelOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DelOptions] (val x: Self) extends AnyVal {
         
         inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
         
@@ -144,7 +146,8 @@ object mod {
         __obj.asInstanceOf[GetOptions]
       }
       
-      extension [Self <: GetOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
         
         inline def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
         
@@ -182,7 +185,8 @@ object mod {
         __obj.asInstanceOf[Iterator]
       }
       
-      extension [Self <: Iterator](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Iterator] (val x: Self) extends AnyVal {
         
         inline def setBinding(value: Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
         
@@ -209,7 +213,8 @@ object mod {
         __obj.asInstanceOf[IteratorOptions]
       }
       
-      extension [Self <: IteratorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IteratorOptions] (val x: Self) extends AnyVal {
         
         inline def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
         
@@ -233,7 +238,8 @@ object mod {
         __obj.asInstanceOf[PutOptions]
       }
       
-      extension [Self <: PutOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PutOptions] (val x: Self) extends AnyVal {
         
         inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
         

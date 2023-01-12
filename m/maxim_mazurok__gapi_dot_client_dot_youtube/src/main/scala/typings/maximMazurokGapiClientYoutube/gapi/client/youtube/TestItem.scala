@@ -21,7 +21,8 @@ object TestItem {
     __obj.asInstanceOf[TestItem]
   }
   
-  extension [Self <: TestItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestItem] (val x: Self) extends AnyVal {
     
     inline def setFeaturedPart(value: Boolean): Self = StObject.set(x, "featuredPart", value.asInstanceOf[js.Any])
     

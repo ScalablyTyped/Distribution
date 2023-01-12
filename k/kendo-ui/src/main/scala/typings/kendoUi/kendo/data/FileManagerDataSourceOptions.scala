@@ -18,7 +18,8 @@ object FileManagerDataSourceOptions {
     __obj.asInstanceOf[FileManagerDataSourceOptions]
   }
   
-  extension [Self <: FileManagerDataSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerDataSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: FileManagerDataSourceSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

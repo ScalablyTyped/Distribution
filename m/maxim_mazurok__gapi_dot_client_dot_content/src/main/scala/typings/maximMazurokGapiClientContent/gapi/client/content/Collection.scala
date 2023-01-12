@@ -62,7 +62,8 @@ object Collection {
     __obj.asInstanceOf[Collection]
   }
   
-  extension [Self <: Collection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
     
     inline def setCustomLabel0(value: String): Self = StObject.set(x, "customLabel0", value.asInstanceOf[js.Any])
     

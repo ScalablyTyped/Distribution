@@ -21,7 +21,8 @@ object HTCDescBehavior {
     __obj.asInstanceOf[HTCDescBehavior]
   }
   
-  extension [Self <: HTCDescBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTCDescBehavior] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotHTCDescBehavior_typekey(value: HTCDescBehavior): Self = StObject.set(x, "MSHTML.HTCDescBehavior_typekey", value.asInstanceOf[js.Any])
     

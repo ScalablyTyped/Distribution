@@ -28,7 +28,8 @@ object buildRendererMod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       

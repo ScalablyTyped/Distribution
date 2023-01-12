@@ -21,7 +21,8 @@ object Family {
     __obj.asInstanceOf[Family]
   }
   
-  extension [Self <: Family](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Family] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: js.Array[String]): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

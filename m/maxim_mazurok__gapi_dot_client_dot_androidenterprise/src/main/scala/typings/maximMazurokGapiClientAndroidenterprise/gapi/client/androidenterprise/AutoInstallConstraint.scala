@@ -22,7 +22,8 @@ object AutoInstallConstraint {
     __obj.asInstanceOf[AutoInstallConstraint]
   }
   
-  extension [Self <: AutoInstallConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoInstallConstraint] (val x: Self) extends AnyVal {
     
     inline def setChargingStateConstraint(value: String): Self = StObject.set(x, "chargingStateConstraint", value.asInstanceOf[js.Any])
     

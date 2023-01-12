@@ -23,7 +23,8 @@ object DeregisterRobotResponse {
     __obj.asInstanceOf[DeregisterRobotResponse]
   }
   
-  extension [Self <: DeregisterRobotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterRobotResponse] (val x: Self) extends AnyVal {
     
     inline def setFleet(value: Arn): Self = StObject.set(x, "fleet", value.asInstanceOf[js.Any])
     

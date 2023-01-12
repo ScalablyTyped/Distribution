@@ -19,7 +19,8 @@ object CustomAppender {
     __obj.asInstanceOf[CustomAppender]
   }
   
-  extension [Self <: CustomAppender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomAppender] (val x: Self) extends AnyVal {
     
     inline def setType(value: String | AppenderModule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

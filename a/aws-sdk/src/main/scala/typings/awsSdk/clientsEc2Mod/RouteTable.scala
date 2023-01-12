@@ -48,7 +48,8 @@ object RouteTable {
     __obj.asInstanceOf[RouteTable]
   }
   
-  extension [Self <: RouteTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteTable] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: RouteTableAssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     

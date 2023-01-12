@@ -20,7 +20,8 @@ object ModuleImportPointer {
     __obj.asInstanceOf[ModuleImportPointer]
   }
   
-  extension [Self <: ModuleImportPointer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleImportPointer] (val x: Self) extends AnyVal {
     
     inline def set$fragmentSpreads(value: Any): Self = StObject.set(x, "$fragmentSpreads", value.asInstanceOf[js.Any])
     

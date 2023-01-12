@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsParagraphMod extends Shortc
       __obj.asInstanceOf[ParagraphProps]
     }
     
-    extension [Self <: ParagraphProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParagraphProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

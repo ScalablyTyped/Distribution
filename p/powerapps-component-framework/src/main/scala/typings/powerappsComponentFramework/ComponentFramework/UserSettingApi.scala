@@ -53,7 +53,8 @@ object UserSettingApi {
       __obj.asInstanceOf[Calendar]
     }
     
-    extension [Self <: Calendar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
       
       inline def setAlgorithmType(value: Double): Self = StObject.set(x, "algorithmType", value.asInstanceOf[js.Any])
       
@@ -219,7 +220,8 @@ object UserSettingApi {
       __obj.asInstanceOf[DateFormattingInfo]
     }
     
-    extension [Self <: DateFormattingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateFormattingInfo] (val x: Self) extends AnyVal {
       
       inline def setAbbreviatedDayNames(value: js.Array[String]): Self = StObject.set(x, "abbreviatedDayNames", value.asInstanceOf[js.Any])
       
@@ -453,7 +455,8 @@ object UserSettingApi {
       __obj.asInstanceOf[NumberFormattingInfo]
     }
     
-    extension [Self <: NumberFormattingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberFormattingInfo] (val x: Self) extends AnyVal {
       
       inline def setCurrencyDecimalDigits(value: Double): Self = StObject.set(x, "currencyDecimalDigits", value.asInstanceOf[js.Any])
       

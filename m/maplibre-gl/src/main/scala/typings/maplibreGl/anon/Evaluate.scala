@@ -29,7 +29,8 @@ object Evaluate {
     __obj.asInstanceOf[Evaluate]
   }
   
-  extension [Self <: Evaluate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Evaluate] (val x: Self) extends AnyVal {
     
     inline def setEvaluate(value: (ZoomAny, Any) => Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction2(value))
     

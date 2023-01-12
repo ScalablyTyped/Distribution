@@ -30,7 +30,8 @@ object NewUploadOptionalArgs {
     __obj.asInstanceOf[NewUploadOptionalArgs]
   }
   
-  extension [Self <: NewUploadOptionalArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewUploadOptionalArgs] (val x: Self) extends AnyVal {
     
     inline def setFileLocale(value: String): Self = StObject.set(x, "fileLocale", value.asInstanceOf[js.Any])
     

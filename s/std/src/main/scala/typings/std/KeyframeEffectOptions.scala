@@ -24,7 +24,8 @@ object KeyframeEffectOptions {
     __obj.asInstanceOf[KeyframeEffectOptions]
   }
   
-  extension [Self <: KeyframeEffectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyframeEffectOptions] (val x: Self) extends AnyVal {
     
     inline def setComposite(value: CompositeOperation): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     

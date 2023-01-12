@@ -27,7 +27,8 @@ object SocketPermission {
     __obj.asInstanceOf[SocketPermission]
   }
   
-  extension [Self <: SocketPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketPermission] (val x: Self) extends AnyVal {
     
     inline def setSocket(value: js.Array[String]): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     

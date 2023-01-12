@@ -31,7 +31,8 @@ object DeliverySchedule {
     __obj.asInstanceOf[DeliverySchedule]
   }
   
-  extension [Self <: DeliverySchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliverySchedule] (val x: Self) extends AnyVal {
     
     inline def setFrequencyCap(value: FrequencyCap): Self = StObject.set(x, "frequencyCap", value.asInstanceOf[js.Any])
     

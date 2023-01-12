@@ -46,7 +46,8 @@ object StatusReportingSettings {
     __obj.asInstanceOf[StatusReportingSettings]
   }
   
-  extension [Self <: StatusReportingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusReportingSettings] (val x: Self) extends AnyVal {
     
     inline def setApplicationReportingSettings(value: ApplicationReportingSettings): Self = StObject.set(x, "applicationReportingSettings", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object Layer {
     __obj.asInstanceOf[Layer]
   }
   
-  extension [Self <: Layer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: js.Array[Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

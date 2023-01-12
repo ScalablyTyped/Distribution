@@ -230,7 +230,8 @@ object JourneySharingMapViewOptions {
     __obj.asInstanceOf[JourneySharingMapViewOptions]
   }
   
-  extension [Self <: JourneySharingMapViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JourneySharingMapViewOptions] (val x: Self) extends AnyVal {
     
     inline def setAnticipatedRoutePolylineSetup(
       value: PolylineSetupOptions | (js.Function1[/* a */ DefaultPolylineSetupOptions, PolylineSetupOptions])

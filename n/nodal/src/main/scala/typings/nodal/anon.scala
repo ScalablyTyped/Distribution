@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[As]
     }
     
-    extension [Self <: As](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: As] (val x: Self) extends AnyVal {
       
       inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Columns]
     }
     
-    extension [Self <: Columns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Convert]
     }
     
-    extension [Self <: Convert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Convert] (val x: Self) extends AnyVal {
       
       inline def setConvert(value: js.Function): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     }
@@ -116,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -151,7 +155,8 @@ object anon {
       __obj.asInstanceOf[Createdat]
     }
     
-    extension [Self <: Createdat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Createdat] (val x: Self) extends AnyVal {
       
       inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
@@ -174,7 +179,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -195,7 +201,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -216,7 +223,8 @@ object anon {
       __obj.asInstanceOf[Joins]
     }
     
-    extension [Self <: Joins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Joins] (val x: Self) extends AnyVal {
       
       inline def setStructure(value: Any): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     }
@@ -235,7 +243,8 @@ object anon {
       __obj.asInstanceOf[Meta]
     }
     
-    extension [Self <: Meta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[scala.Nothing]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -258,7 +267,8 @@ object anon {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

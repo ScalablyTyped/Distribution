@@ -23,7 +23,8 @@ object ResourceFilter {
     __obj.asInstanceOf[ResourceFilter]
   }
   
-  extension [Self <: ResourceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: ResourceFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

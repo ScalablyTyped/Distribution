@@ -27,7 +27,8 @@ object StylizeParams {
     __obj.asInstanceOf[StylizeParams]
   }
   
-  extension [Self <: StylizeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StylizeParams] (val x: Self) extends AnyVal {
     
     inline def setBlur(value: ImgixParamType): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     

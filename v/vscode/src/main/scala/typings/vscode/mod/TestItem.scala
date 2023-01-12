@@ -103,7 +103,8 @@ object TestItem {
     __obj.asInstanceOf[TestItem]
   }
   
-  extension [Self <: TestItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestItem] (val x: Self) extends AnyVal {
     
     inline def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
     

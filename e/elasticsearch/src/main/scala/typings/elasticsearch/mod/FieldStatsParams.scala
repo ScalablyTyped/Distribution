@@ -29,7 +29,8 @@ object FieldStatsParams {
     __obj.asInstanceOf[FieldStatsParams]
   }
   
-  extension [Self <: FieldStatsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldStatsParams] (val x: Self) extends AnyVal {
     
     inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     

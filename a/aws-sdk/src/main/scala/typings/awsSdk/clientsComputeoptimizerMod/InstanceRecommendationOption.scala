@@ -48,7 +48,8 @@ object InstanceRecommendationOption {
     __obj.asInstanceOf[InstanceRecommendationOption]
   }
   
-  extension [Self <: InstanceRecommendationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceRecommendationOption] (val x: Self) extends AnyVal {
     
     inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     

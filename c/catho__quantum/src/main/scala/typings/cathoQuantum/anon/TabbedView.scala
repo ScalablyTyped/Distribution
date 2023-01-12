@@ -15,7 +15,8 @@ object TabbedView {
     __obj.asInstanceOf[TabbedView]
   }
   
-  extension [Self <: TabbedView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabbedView] (val x: Self) extends AnyVal {
     
     inline def setTabbedView(value: js.Object): Self = StObject.set(x, "tabbedView", value.asInstanceOf[js.Any])
     

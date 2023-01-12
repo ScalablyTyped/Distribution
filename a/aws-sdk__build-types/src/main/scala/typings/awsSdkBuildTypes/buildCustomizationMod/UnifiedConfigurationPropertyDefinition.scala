@@ -63,7 +63,8 @@ object UnifiedConfigurationPropertyDefinition {
     __obj.asInstanceOf[UnifiedConfigurationPropertyDefinition]
   }
   
-  extension [Self <: UnifiedConfigurationPropertyDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedConfigurationPropertyDefinition] (val x: Self) extends AnyVal {
     
     inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     

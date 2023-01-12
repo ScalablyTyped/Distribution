@@ -27,7 +27,8 @@ object namespacesPrivacyWebsitesMod {
         __obj.asInstanceOf[CookieConfig]
       }
       
-      extension [Self <: CookieConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CookieConfig] (val x: Self) extends AnyVal {
         
         inline def setBehavior(value: CookieConfigBehaviorEnum): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
         
@@ -121,7 +122,8 @@ object namespacesPrivacyWebsitesMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setCookieConfig(value: Setting): Self = StObject.set(x, "cookieConfig", value.asInstanceOf[js.Any])
         

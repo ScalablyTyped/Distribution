@@ -24,7 +24,8 @@ object TargetAggregation {
     __obj.asInstanceOf[TargetAggregation]
   }
   
-  extension [Self <: TargetAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetAggregation] (val x: Self) extends AnyVal {
     
     inline def setControl(value: default): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     

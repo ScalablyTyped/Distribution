@@ -330,7 +330,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[CreateTokenRequest]
     }
     
-    extension [Self <: CreateTokenRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTokenRequest] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -412,7 +413,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[CreateTokenResponse]
     }
     
-    extension [Self <: CreateTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTokenResponse] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -462,7 +464,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[RegisterClientRequest]
     }
     
-    extension [Self <: RegisterClientRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterClientRequest] (val x: Self) extends AnyVal {
       
       inline def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
       
@@ -523,7 +526,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[RegisterClientResponse]
     }
     
-    extension [Self <: RegisterClientResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterClientResponse] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationEndpoint(value: String): Self = StObject.set(x, "authorizationEndpoint", value.asInstanceOf[js.Any])
       
@@ -579,7 +583,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[StartDeviceAuthorizationRequest]
     }
     
-    extension [Self <: StartDeviceAuthorizationRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartDeviceAuthorizationRequest] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -638,7 +643,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[StartDeviceAuthorizationResponse]
     }
     
-    extension [Self <: StartDeviceAuthorizationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartDeviceAuthorizationResponse] (val x: Self) extends AnyVal {
       
       inline def setDeviceCode(value: String): Self = StObject.set(x, "deviceCode", value.asInstanceOf[js.Any])
       

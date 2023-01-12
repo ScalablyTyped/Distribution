@@ -23,7 +23,8 @@ object typesInvalidPullRequestStatusExceptionMod {
       __obj.asInstanceOf[InvalidPullRequestStatusException]
     }
     
-    extension [Self <: InvalidPullRequestStatusException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidPullRequestStatusException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidPullRequestStatusException

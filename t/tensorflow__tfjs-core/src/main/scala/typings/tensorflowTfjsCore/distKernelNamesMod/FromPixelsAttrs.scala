@@ -15,7 +15,8 @@ object FromPixelsAttrs {
     __obj.asInstanceOf[FromPixelsAttrs]
   }
   
-  extension [Self <: FromPixelsAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FromPixelsAttrs] (val x: Self) extends AnyVal {
     
     inline def setNumChannels(value: Double): Self = StObject.set(x, "numChannels", value.asInstanceOf[js.Any])
   }

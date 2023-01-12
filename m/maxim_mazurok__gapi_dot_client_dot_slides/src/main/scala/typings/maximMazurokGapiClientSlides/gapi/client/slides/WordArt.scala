@@ -16,7 +16,8 @@ object WordArt {
     __obj.asInstanceOf[WordArt]
   }
   
-  extension [Self <: WordArt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordArt] (val x: Self) extends AnyVal {
     
     inline def setRenderedText(value: String): Self = StObject.set(x, "renderedText", value.asInstanceOf[js.Any])
     

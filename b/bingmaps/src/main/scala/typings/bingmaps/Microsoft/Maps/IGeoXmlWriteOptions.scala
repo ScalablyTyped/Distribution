@@ -34,7 +34,8 @@ object IGeoXmlWriteOptions {
     __obj.asInstanceOf[IGeoXmlWriteOptions]
   }
   
-  extension [Self <: IGeoXmlWriteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoXmlWriteOptions] (val x: Self) extends AnyVal {
     
     inline def setIndentChars(value: String): Self = StObject.set(x, "indentChars", value.asInstanceOf[js.Any])
     

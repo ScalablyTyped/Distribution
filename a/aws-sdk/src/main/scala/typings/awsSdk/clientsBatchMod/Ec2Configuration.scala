@@ -28,7 +28,8 @@ object Ec2Configuration {
     __obj.asInstanceOf[Ec2Configuration]
   }
   
-  extension [Self <: Ec2Configuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ec2Configuration] (val x: Self) extends AnyVal {
     
     inline def setImageIdOverride(value: ImageIdOverride): Self = StObject.set(x, "imageIdOverride", value.asInstanceOf[js.Any])
     

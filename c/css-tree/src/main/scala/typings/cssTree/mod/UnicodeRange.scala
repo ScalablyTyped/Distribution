@@ -23,7 +23,8 @@ object UnicodeRange {
     __obj.asInstanceOf[UnicodeRange]
   }
   
-  extension [Self <: UnicodeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnicodeRange] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.cssTree.cssTreeStrings.UnicodeRange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[StaticObject]
     }
     
-    extension [Self <: StaticObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticObject] (val x: Self) extends AnyVal {
       
       inline def setGlob(value: String | js.Array[String]): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object mod {
       __obj.asInstanceOf[WebpackPluginServeOptions]
     }
     
-    extension [Self <: WebpackPluginServeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackPluginServeOptions] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Address): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

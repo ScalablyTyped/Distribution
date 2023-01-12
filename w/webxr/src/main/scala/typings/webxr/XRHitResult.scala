@@ -16,7 +16,8 @@ object XRHitResult {
     __obj.asInstanceOf[XRHitResult]
   }
   
-  extension [Self <: XRHitResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRHitResult] (val x: Self) extends AnyVal {
     
     inline def setHitMatrix(value: js.typedarray.Float32Array): Self = StObject.set(x, "hitMatrix", value.asInstanceOf[js.Any])
   }

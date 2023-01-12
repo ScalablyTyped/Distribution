@@ -26,7 +26,8 @@ object LDMLPluralRuleMap {
     __obj.asInstanceOf[LDMLPluralRuleMap[T]]
   }
   
-  extension [Self <: LDMLPluralRuleMap[?], T](x: Self & LDMLPluralRuleMap[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LDMLPluralRuleMap[?], T] (val x: Self & LDMLPluralRuleMap[T]) extends AnyVal {
     
     inline def setFew(value: T): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object EventContentTypeAudioMessage {
     __obj.asInstanceOf[EventContentTypeAudioMessage]
   }
   
-  extension [Self <: EventContentTypeAudioMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventContentTypeAudioMessage] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: Duration): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

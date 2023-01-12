@@ -30,7 +30,8 @@ object PartialRecordPrecisionval {
     __obj.asInstanceOf[PartialRecordPrecisionval]
   }
   
-  extension [Self <: PartialRecordPrecisionval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordPrecisionval] (val x: Self) extends AnyVal {
     
     inline def setDay(value: (/* val */ Double, /* extend */ Date) => Boolean): Self = StObject.set(x, "day", js.Any.fromFunction2(value))
     

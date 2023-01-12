@@ -38,7 +38,8 @@ object DataViewMatrixGroupValue {
     __obj.asInstanceOf[DataViewMatrixGroupValue]
   }
   
-  extension [Self <: DataViewMatrixGroupValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewMatrixGroupValue] (val x: Self) extends AnyVal {
     
     inline def setLevelSourceIndex(value: Double): Self = StObject.set(x, "levelSourceIndex", value.asInstanceOf[js.Any])
   }

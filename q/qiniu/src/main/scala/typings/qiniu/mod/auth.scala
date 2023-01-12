@@ -35,7 +35,8 @@ object auth {
         __obj.asInstanceOf[MacOptions]
       }
       
-      extension [Self <: MacOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MacOptions] (val x: Self) extends AnyVal {
         
         inline def setDisableQiniuTimestampSignature(value: Boolean): Self = StObject.set(x, "disableQiniuTimestampSignature", value.asInstanceOf[js.Any])
         

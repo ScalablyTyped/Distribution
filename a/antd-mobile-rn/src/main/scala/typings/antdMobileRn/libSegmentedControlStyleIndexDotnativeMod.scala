@@ -71,7 +71,8 @@ object libSegmentedControlStyleIndexDotnativeMod {
       __obj.asInstanceOf[ISegmentControlStyle]
     }
     
-    extension [Self <: ISegmentControlStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISegmentControlStyle] (val x: Self) extends AnyVal {
       
       inline def setItem(value: ViewStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       

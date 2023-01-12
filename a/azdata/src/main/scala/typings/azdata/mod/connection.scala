@@ -127,7 +127,8 @@ object connection {
       __obj.asInstanceOf[Connection]
     }
     
-    extension [Self <: Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
       
       inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object connection {
       __obj.asInstanceOf[ConnectionEventListener]
     }
     
-    extension [Self <: ConnectionEventListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionEventListener] (val x: Self) extends AnyVal {
       
       inline def setOnConnectionEvent(value: (ConnectionEventType, String, IConnectionProfile) => Unit): Self = StObject.set(x, "onConnectionEvent", js.Any.fromFunction3(value))
     }

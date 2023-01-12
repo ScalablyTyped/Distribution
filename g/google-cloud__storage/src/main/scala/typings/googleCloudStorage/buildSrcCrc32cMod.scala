@@ -216,7 +216,8 @@ object buildSrcCrc32cMod {
       __obj.asInstanceOf[CRC32CValidator]
     }
     
-    extension [Self <: CRC32CValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CRC32CValidator] (val x: Self) extends AnyVal {
       
       inline def setUpdate(value: Buffer => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
       

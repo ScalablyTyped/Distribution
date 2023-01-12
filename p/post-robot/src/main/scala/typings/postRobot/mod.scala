@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[CancelableType]
     }
     
-    extension [Self <: CancelableType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelableType] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
@@ -81,7 +82,8 @@ object mod {
       __obj.asInstanceOf[FireAndForgetRequestOptionsType]
     }
     
-    extension [Self <: FireAndForgetRequestOptionsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FireAndForgetRequestOptionsType] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: DomainMatcher): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object mod {
       __obj.asInstanceOf[RegularRequestOptionsType]
     }
     
-    extension [Self <: RegularRequestOptionsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegularRequestOptionsType] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: DomainMatcher): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object mod {
       __obj.asInstanceOf[ResponseMessageEvent]
     }
     
-    extension [Self <: ResponseMessageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseMessageEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -184,7 +188,8 @@ object mod {
       __obj.asInstanceOf[ServerOptionsType]
     }
     
-    extension [Self <: ServerOptionsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptionsType] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: DomainMatcher): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       

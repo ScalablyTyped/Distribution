@@ -98,7 +98,8 @@ object Charts {
     __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Charts.Charts]
   }
   
-  extension [Self <: typings.googleAppsScript.GoogleAppsScript.Charts.Charts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Charts.Charts] (val x: Self) extends AnyVal {
     
     inline def setChartHiddenDimensionStrategy(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ Any

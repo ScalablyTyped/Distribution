@@ -25,7 +25,8 @@ object DeviceDefinitionHasPart {
     __obj.asInstanceOf[DeviceDefinitionHasPart]
   }
   
-  extension [Self <: DeviceDefinitionHasPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionHasPart] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

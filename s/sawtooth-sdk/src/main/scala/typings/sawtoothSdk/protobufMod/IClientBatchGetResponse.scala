@@ -20,7 +20,8 @@ object IClientBatchGetResponse {
     __obj.asInstanceOf[IClientBatchGetResponse]
   }
   
-  extension [Self <: IClientBatchGetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientBatchGetResponse] (val x: Self) extends AnyVal {
     
     inline def setBatch(value: IBatch): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     

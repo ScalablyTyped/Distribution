@@ -17,7 +17,8 @@ object Since {
     __obj.asInstanceOf[Since[Value]]
   }
   
-  extension [Self <: Since[?], Value](x: Self & Since[Value]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Since[?], Value] (val x: Self & Since[Value]) extends AnyVal {
     
     inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     

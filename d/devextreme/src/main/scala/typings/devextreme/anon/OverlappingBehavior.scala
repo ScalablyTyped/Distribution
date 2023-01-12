@@ -44,7 +44,8 @@ object OverlappingBehavior {
     __obj.asInstanceOf[OverlappingBehavior]
   }
   
-  extension [Self <: OverlappingBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverlappingBehavior] (val x: Self) extends AnyVal {
     
     inline def setCustomizeText(value: /* scaleValue */ ValueValueText => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     

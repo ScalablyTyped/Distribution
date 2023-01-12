@@ -35,7 +35,8 @@ object RingModulatorOptions {
     __obj.asInstanceOf[RingModulatorOptions]
   }
   
-  extension [Self <: RingModulatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RingModulatorOptions] (val x: Self) extends AnyVal {
     
     inline def setDistortion(value: Double): Self = StObject.set(x, "distortion", value.asInstanceOf[js.Any])
     

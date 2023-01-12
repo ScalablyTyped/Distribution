@@ -89,7 +89,8 @@ object typesSrcDisplayNetworkMod {
       __obj.asInstanceOf[NetworkManager]
     }
     
-    extension [Self <: NetworkManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkManager] (val x: Self) extends AnyVal {
       
       inline def setAbortRequest(value: Any => Unit): Self = StObject.set(x, "abortRequest", js.Any.fromFunction1(value))
       

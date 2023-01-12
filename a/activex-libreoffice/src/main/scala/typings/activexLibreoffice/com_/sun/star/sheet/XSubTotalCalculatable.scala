@@ -47,7 +47,8 @@ object XSubTotalCalculatable {
     __obj.asInstanceOf[XSubTotalCalculatable]
   }
   
-  extension [Self <: XSubTotalCalculatable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSubTotalCalculatable] (val x: Self) extends AnyVal {
     
     inline def setApplySubTotals(value: (XSubTotalDescriptor, Boolean) => Unit): Self = StObject.set(x, "applySubTotals", js.Any.fromFunction2(value))
     

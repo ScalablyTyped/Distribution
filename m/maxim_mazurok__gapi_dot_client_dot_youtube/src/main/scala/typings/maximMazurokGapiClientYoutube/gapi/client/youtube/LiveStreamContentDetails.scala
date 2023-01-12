@@ -25,7 +25,8 @@ object LiveStreamContentDetails {
     __obj.asInstanceOf[LiveStreamContentDetails]
   }
   
-  extension [Self <: LiveStreamContentDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveStreamContentDetails] (val x: Self) extends AnyVal {
     
     inline def setClosedCaptionsIngestionUrl(value: String): Self = StObject.set(x, "closedCaptionsIngestionUrl", value.asInstanceOf[js.Any])
     

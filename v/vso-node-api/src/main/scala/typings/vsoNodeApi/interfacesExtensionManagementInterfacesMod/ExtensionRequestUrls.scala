@@ -20,7 +20,8 @@ object ExtensionRequestUrls {
     __obj.asInstanceOf[ExtensionRequestUrls]
   }
   
-  extension [Self <: ExtensionRequestUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionRequestUrls] (val x: Self) extends AnyVal {
     
     inline def setRequestPage(value: String): Self = StObject.set(x, "requestPage", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object RdsHttpEndpointConfig {
     __obj.asInstanceOf[RdsHttpEndpointConfig]
   }
   
-  extension [Self <: RdsHttpEndpointConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RdsHttpEndpointConfig] (val x: Self) extends AnyVal {
     
     inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
     

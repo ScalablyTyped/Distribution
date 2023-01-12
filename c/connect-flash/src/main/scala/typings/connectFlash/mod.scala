@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[IConnectFlashOptions]
     }
     
-    extension [Self <: IConnectFlashOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConnectFlashOptions] (val x: Self) extends AnyVal {
       
       inline def setUnsafe(value: Boolean): Self = StObject.set(x, "unsafe", value.asInstanceOf[js.Any])
       

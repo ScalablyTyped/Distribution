@@ -28,7 +28,8 @@ object CardanoGetAddress {
     __obj.asInstanceOf[CardanoGetAddress]
   }
   
-  extension [Self <: CardanoGetAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoGetAddress] (val x: Self) extends AnyVal {
     
     inline def setAddress_parameters(value: CardanoAddressParametersType): Self = StObject.set(x, "address_parameters", value.asInstanceOf[js.Any])
     

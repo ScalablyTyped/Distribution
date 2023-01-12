@@ -23,7 +23,8 @@ object OpenInstancePublicPortsRequest {
     __obj.asInstanceOf[OpenInstancePublicPortsRequest]
   }
   
-  extension [Self <: OpenInstancePublicPortsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenInstancePublicPortsRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     

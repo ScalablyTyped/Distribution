@@ -15,7 +15,8 @@ object IInkRippleProvider {
     __obj.asInstanceOf[IInkRippleProvider]
   }
   
-  extension [Self <: IInkRippleProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInkRippleProvider] (val x: Self) extends AnyVal {
     
     inline def setDisableInkRipple(value: () => Unit): Self = StObject.set(x, "disableInkRipple", js.Any.fromFunction0(value))
   }

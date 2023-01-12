@@ -39,7 +39,8 @@ object Ternary {
     __obj.asInstanceOf[Ternary]
   }
   
-  extension [Self <: Ternary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ternary] (val x: Self) extends AnyVal {
     
     inline def setFalseExpr(value: Expression): Self = StObject.set(x, "falseExpr", value.asInstanceOf[js.Any])
     

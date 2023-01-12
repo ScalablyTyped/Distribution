@@ -355,7 +355,8 @@ object esComponentsTextAreaTextAreaMod {
       __obj.asInstanceOf[TextAreaProps]
     }
     
-    extension [Self <: TextAreaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -662,7 +663,8 @@ object esComponentsTextAreaTextAreaMod {
       __obj.asInstanceOf[TextAreaRef]
     }
     
-    extension [Self <: TextAreaRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaRef] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       

@@ -53,7 +53,8 @@ object FLATConnectionProperties {
     __obj.asInstanceOf[FLATConnectionProperties]
   }
   
-  extension [Self <: FLATConnectionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FLATConnectionProperties] (val x: Self) extends AnyVal {
     
     inline def setDecimalDelimiter(value: String): Self = StObject.set(x, "DecimalDelimiter", value.asInstanceOf[js.Any])
     

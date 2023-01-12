@@ -35,7 +35,8 @@ object ApnsConfig {
     __obj.asInstanceOf[ApnsConfig]
   }
   
-  extension [Self <: ApnsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApnsConfig] (val x: Self) extends AnyVal {
     
     inline def setFcmOptions(value: ApnsFcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
     

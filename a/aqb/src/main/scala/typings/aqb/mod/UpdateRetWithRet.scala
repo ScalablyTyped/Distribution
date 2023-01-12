@@ -33,7 +33,8 @@ object UpdateRetWithRet {
     __obj.asInstanceOf[UpdateRetWithRet]
   }
   
-  extension [Self <: UpdateRetWithRet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRetWithRet] (val x: Self) extends AnyVal {
     
     inline def setIn(value: /* collection */ Any => UpdateExpression): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     

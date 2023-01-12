@@ -50,7 +50,8 @@ object GenerationKey {
     __obj.asInstanceOf[GenerationKey]
   }
   
-  extension [Self <: GenerationKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerationKey] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

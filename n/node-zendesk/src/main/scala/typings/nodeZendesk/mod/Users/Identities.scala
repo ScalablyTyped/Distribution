@@ -31,7 +31,8 @@ object Identities {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.CreateModel]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Users.Identities.CreateModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.CreateModel] (val x: Self) extends AnyVal {
       
       inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object Identities {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.CreatePayload]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Users.Identities.CreatePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.CreatePayload] (val x: Self) extends AnyVal {
       
       inline def setIdentity(value: typings.nodeZendesk.mod.Users.Identities.CreateModel): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     }
@@ -113,7 +115,8 @@ object Identities {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.ListPayload]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Users.Identities.ListPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.ListPayload] (val x: Self) extends AnyVal {
       
       inline def setIdentities(value: js.Array[typings.nodeZendesk.mod.Users.Identities.ResponseModel]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
       
@@ -206,7 +209,8 @@ object Identities {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.ResponseModel]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Users.Identities.ResponseModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.ResponseModel] (val x: Self) extends AnyVal {
       
       inline def setDeliverable_state(value: DeliverableState): Self = StObject.set(x, "deliverable_state", value.asInstanceOf[js.Any])
       
@@ -237,7 +241,8 @@ object Identities {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.ResponsePayload]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Users.Identities.ResponsePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.ResponsePayload] (val x: Self) extends AnyVal {
       
       inline def setIdentity(value: typings.nodeZendesk.mod.Users.Identities.ResponseModel): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     }
@@ -256,7 +261,8 @@ object Identities {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.UpdateModel]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Users.Identities.UpdateModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.UpdateModel] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -279,7 +285,8 @@ object Identities {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Users.Identities.UpdatePayload]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Users.Identities.UpdatePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Users.Identities.UpdatePayload] (val x: Self) extends AnyVal {
       
       inline def setIdentity(value: typings.nodeZendesk.mod.Users.Identities.UpdateModel): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     }

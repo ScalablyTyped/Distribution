@@ -18,7 +18,8 @@ object ExpressionFilter {
     __obj.asInstanceOf[ExpressionFilter]
   }
   
-  extension [Self <: ExpressionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionFilter] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: ExpressionFilterModel): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
   }

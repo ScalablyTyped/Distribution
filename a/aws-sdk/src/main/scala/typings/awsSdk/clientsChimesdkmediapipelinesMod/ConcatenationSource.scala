@@ -26,7 +26,8 @@ object ConcatenationSource {
     __obj.asInstanceOf[ConcatenationSource]
   }
   
-  extension [Self <: ConcatenationSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcatenationSource] (val x: Self) extends AnyVal {
     
     inline def setMediaCapturePipelineSourceConfiguration(value: MediaCapturePipelineSourceConfiguration): Self = StObject.set(x, "MediaCapturePipelineSourceConfiguration", value.asInstanceOf[js.Any])
     

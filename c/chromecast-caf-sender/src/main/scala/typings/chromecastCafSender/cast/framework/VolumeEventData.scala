@@ -20,7 +20,8 @@ object VolumeEventData {
     __obj.asInstanceOf[VolumeEventData]
   }
   
-  extension [Self <: VolumeEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeEventData] (val x: Self) extends AnyVal {
     
     inline def setIsMute(value: Boolean): Self = StObject.set(x, "isMute", value.asInstanceOf[js.Any])
     

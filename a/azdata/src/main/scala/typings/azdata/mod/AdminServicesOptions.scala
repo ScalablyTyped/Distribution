@@ -23,7 +23,8 @@ object AdminServicesOptions {
     __obj.asInstanceOf[AdminServicesOptions]
   }
   
-  extension [Self <: AdminServicesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminServicesOptions] (val x: Self) extends AnyVal {
     
     inline def setDatabaseFileInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "databaseFileInfoOptions", value.asInstanceOf[js.Any])
     

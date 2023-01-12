@@ -93,7 +93,8 @@ object SpatialGestureRecognizer {
     __obj.asInstanceOf[SpatialGestureRecognizer]
   }
   
-  extension [Self <: SpatialGestureRecognizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialGestureRecognizer] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     

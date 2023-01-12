@@ -17,7 +17,8 @@ object IndicesSimulateTemplateResponse {
     __obj.asInstanceOf[IndicesSimulateTemplateResponse]
   }
   
-  extension [Self <: IndicesSimulateTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSimulateTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setOverlapping(value: js.Array[IndicesSimulateTemplateOverlapping]): Self = StObject.set(x, "overlapping", value.asInstanceOf[js.Any])
     

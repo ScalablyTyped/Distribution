@@ -41,7 +41,8 @@ object KafkaConfig {
     __obj.asInstanceOf[KafkaConfig]
   }
   
-  extension [Self <: KafkaConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaConfig] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationTimeout(value: Double): Self = StObject.set(x, "authenticationTimeout", value.asInstanceOf[js.Any])
     

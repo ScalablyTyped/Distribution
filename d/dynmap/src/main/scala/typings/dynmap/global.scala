@@ -190,7 +190,8 @@ object global {
           __obj.asInstanceOf[CustomIconOptions]
         }
         
-        extension [Self <: CustomIconOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CustomIconOptions] (val x: Self) extends AnyVal {
           
           inline def setClassName(value: _empty): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
           
@@ -227,7 +228,8 @@ object global {
           __obj.asInstanceOf[CustomMarkerOptions]
         }
         
-        extension [Self <: CustomMarkerOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CustomMarkerOptions] (val x: Self) extends AnyVal {
           
           inline def setClickable(value: `true`): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
           

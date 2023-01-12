@@ -22,7 +22,8 @@ object Pair {
     __obj.asInstanceOf[Pair]
   }
   
-  extension [Self <: Pair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pair] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     

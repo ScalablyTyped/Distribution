@@ -24,7 +24,8 @@ object GetOutpostInstanceTypesOutput {
     __obj.asInstanceOf[GetOutpostInstanceTypesOutput]
   }
   
-  extension [Self <: GetOutpostInstanceTypesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOutpostInstanceTypesOutput] (val x: Self) extends AnyVal {
     
     inline def setInstanceTypes(value: InstanceTypeListDefinition): Self = StObject.set(x, "InstanceTypes", value.asInstanceOf[js.Any])
     

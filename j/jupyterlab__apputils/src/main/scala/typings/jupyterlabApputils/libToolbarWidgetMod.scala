@@ -84,7 +84,8 @@ object libToolbarWidgetMod {
         __obj.asInstanceOf[IProps]
       }
       
-      extension [Self <: IProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -307,7 +308,8 @@ object libToolbarWidgetMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
         
@@ -438,7 +440,8 @@ object libToolbarWidgetMod {
         __obj.asInstanceOf[typings.jupyterlabApputils.libToolbarWidgetMod.ToolbarButtonComponent.IProps]
       }
       
-      extension [Self <: typings.jupyterlabApputils.libToolbarWidgetMod.ToolbarButtonComponent.IProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabApputils.libToolbarWidgetMod.ToolbarButtonComponent.IProps] (val x: Self) extends AnyVal {
         
         inline def setActualOnClick(value: Boolean): Self = StObject.set(x, "actualOnClick", value.asInstanceOf[js.Any])
         

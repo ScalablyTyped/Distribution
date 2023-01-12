@@ -46,7 +46,8 @@ object TechnologyTargeting {
     __obj.asInstanceOf[TechnologyTargeting]
   }
   
-  extension [Self <: TechnologyTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TechnologyTargeting] (val x: Self) extends AnyVal {
     
     inline def setBrowsers(value: js.Array[Browser]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
     

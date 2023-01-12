@@ -178,7 +178,8 @@ object PlotPackedbubbleLayoutAlgorithmOptions {
     __obj.asInstanceOf[PlotPackedbubbleLayoutAlgorithmOptions]
   }
   
-  extension [Self <: PlotPackedbubbleLayoutAlgorithmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPackedbubbleLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
     inline def setApproximation(value: String): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
     

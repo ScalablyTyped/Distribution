@@ -33,7 +33,8 @@ object ColorSpaceEnumValues {
     __obj.asInstanceOf[ColorSpaceEnumValues]
   }
   
-  extension [Self <: ColorSpaceEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorSpaceEnumValues] (val x: Self) extends AnyVal {
     
     inline def setADOBE_RGB(value: ColorSpace): Self = StObject.set(x, "ADOBE_RGB", value.asInstanceOf[js.Any])
     

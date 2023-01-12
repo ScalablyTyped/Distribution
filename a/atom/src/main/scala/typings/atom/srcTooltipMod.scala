@@ -64,7 +64,8 @@ object srcTooltipMod {
       __obj.asInstanceOf[Tooltip]
     }
     
-    extension [Self <: Tooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -145,7 +146,8 @@ object srcTooltipMod {
       __obj.asInstanceOf[TooltipOptions]
     }
     
-    extension [Self <: TooltipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

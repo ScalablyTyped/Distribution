@@ -33,7 +33,8 @@ object GridsterCollisionData {
     __obj.asInstanceOf[GridsterCollisionData]
   }
   
-  extension [Self <: GridsterCollisionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridsterCollisionData] (val x: Self) extends AnyVal {
     
     inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

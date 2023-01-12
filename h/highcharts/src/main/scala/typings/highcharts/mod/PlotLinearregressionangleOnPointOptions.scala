@@ -33,7 +33,8 @@ object PlotLinearregressionangleOnPointOptions {
     __obj.asInstanceOf[PlotLinearregressionangleOnPointOptions]
   }
   
-  extension [Self <: PlotLinearregressionangleOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotLinearregressionangleOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotLinearregressionangleOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

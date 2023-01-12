@@ -72,7 +72,8 @@ object libDatabaseKeyPrefetcherMod {
       __obj.asInstanceOf[KeyPrefetcher]
     }
     
-    extension [Self <: KeyPrefetcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPrefetcher] (val x: Self) extends AnyVal {
       
       inline def setCreateKey(value: () => Double): Self = StObject.set(x, "createKey", js.Any.fromFunction0(value))
       

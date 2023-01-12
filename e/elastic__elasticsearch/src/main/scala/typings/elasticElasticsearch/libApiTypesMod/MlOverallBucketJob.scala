@@ -17,7 +17,8 @@ object MlOverallBucketJob {
     __obj.asInstanceOf[MlOverallBucketJob]
   }
   
-  extension [Self <: MlOverallBucketJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlOverallBucketJob] (val x: Self) extends AnyVal {
     
     inline def setJob_id(value: Id): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     

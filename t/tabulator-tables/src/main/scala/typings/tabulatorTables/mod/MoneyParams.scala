@@ -26,7 +26,8 @@ object MoneyParams {
     __obj.asInstanceOf[MoneyParams]
   }
   
-  extension [Self <: MoneyParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoneyParams] (val x: Self) extends AnyVal {
     
     inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     

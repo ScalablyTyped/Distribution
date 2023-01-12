@@ -61,7 +61,8 @@ object typesListStreamConsumersInputMod {
       __obj.asInstanceOf[ListStreamConsumersInput]
     }
     
-    extension [Self <: ListStreamConsumersInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListStreamConsumersInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

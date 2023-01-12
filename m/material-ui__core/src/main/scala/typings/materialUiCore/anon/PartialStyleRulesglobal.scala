@@ -21,7 +21,8 @@ object PartialStyleRulesglobal {
     __obj.asInstanceOf[PartialStyleRulesglobal]
   }
   
-  extension [Self <: PartialStyleRulesglobal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesglobal] (val x: Self) extends AnyVal {
     
     inline def `set@global`(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

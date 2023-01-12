@@ -49,7 +49,8 @@ object ListLoadOptions {
     __obj.asInstanceOf[ListLoadOptions]
   }
   
-  extension [Self <: ListLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

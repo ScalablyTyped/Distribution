@@ -16,7 +16,8 @@ object GeneratedApksListResponse {
     __obj.asInstanceOf[GeneratedApksListResponse]
   }
   
-  extension [Self <: GeneratedApksListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratedApksListResponse] (val x: Self) extends AnyVal {
     
     inline def setGeneratedApks(value: js.Array[GeneratedApksPerSigningKey]): Self = StObject.set(x, "generatedApks", value.asInstanceOf[js.Any])
     

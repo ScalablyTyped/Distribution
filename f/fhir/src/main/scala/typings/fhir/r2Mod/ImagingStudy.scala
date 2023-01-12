@@ -114,7 +114,8 @@ object ImagingStudy {
     __obj.asInstanceOf[ImagingStudy]
   }
   
-  extension [Self <: ImagingStudy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagingStudy] (val x: Self) extends AnyVal {
     
     inline def setAccession(value: Identifier): Self = StObject.set(x, "accession", value.asInstanceOf[js.Any])
     

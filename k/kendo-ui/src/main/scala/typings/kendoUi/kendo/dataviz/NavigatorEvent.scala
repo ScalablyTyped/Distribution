@@ -19,7 +19,8 @@ object NavigatorEvent {
     __obj.asInstanceOf[NavigatorEvent]
   }
   
-  extension [Self <: NavigatorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

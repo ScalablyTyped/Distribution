@@ -348,7 +348,8 @@ object IconFontProps {
     __obj.asInstanceOf[IconFontProps]
   }
   
-  extension [Self <: IconFontProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconFontProps] (val x: Self) extends AnyVal {
     
     inline def setAscent(value: Double): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object borderWidthnumberundefine {
     __obj.asInstanceOf[borderWidthnumberundefine]
   }
   
-  extension [Self <: borderWidthnumberundefine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: borderWidthnumberundefine] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | AnimatePropTypeInterface): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

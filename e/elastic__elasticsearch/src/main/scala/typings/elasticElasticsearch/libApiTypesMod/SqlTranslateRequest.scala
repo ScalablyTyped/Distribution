@@ -23,7 +23,8 @@ object SqlTranslateRequest {
     __obj.asInstanceOf[SqlTranslateRequest]
   }
   
-  extension [Self <: SqlTranslateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlTranslateRequest] (val x: Self) extends AnyVal {
     
     inline def setFetch_size(value: integer): Self = StObject.set(x, "fetch_size", value.asInstanceOf[js.Any])
     

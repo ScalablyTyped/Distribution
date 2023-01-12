@@ -83,7 +83,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[CellData]
     }
     
-    extension [Self <: CellData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellData] (val x: Self) extends AnyVal {
       
       inline def setMeasurements(value: Offset): Self = StObject.set(x, "measurements", value.asInstanceOf[js.Any])
     }
@@ -120,7 +121,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[DefaultProps]
     }
     
-    extension [Self <: DefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
       
       inline def setActivationDistance(value: Double): Self = StObject.set(x, "activationDistance", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[DragEndParams[T]]
     }
     
-    extension [Self <: DragEndParams[?], T](x: Self & DragEndParams[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEndParams[?], T] (val x: Self & DragEndParams[T]) extends AnyVal {
       
       inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -539,7 +542,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[DraggableFlatListProps[T]]
     }
     
-    extension [Self <: DraggableFlatListProps[?], T](x: Self & DraggableFlatListProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggableFlatListProps[?], T] (val x: Self & DraggableFlatListProps[T]) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -1326,7 +1330,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[RenderItemParams[T]]
     }
     
-    extension [Self <: RenderItemParams[?], T](x: Self & RenderItemParams[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderItemParams[?], T] (val x: Self & RenderItemParams[T]) extends AnyVal {
       
       inline def setDrag(value: () => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction0(value))
       

@@ -18,7 +18,8 @@ object BatchAssociateUserStackRequest {
     __obj.asInstanceOf[BatchAssociateUserStackRequest]
   }
   
-  extension [Self <: BatchAssociateUserStackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAssociateUserStackRequest] (val x: Self) extends AnyVal {
     
     inline def setUserStackAssociations(value: UserStackAssociationList): Self = StObject.set(x, "UserStackAssociations", value.asInstanceOf[js.Any])
     

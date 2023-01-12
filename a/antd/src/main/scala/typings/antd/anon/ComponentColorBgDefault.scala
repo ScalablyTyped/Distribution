@@ -17,7 +17,8 @@ object ComponentColorBgDefault {
     __obj.asInstanceOf[ComponentColorBgDefault]
   }
   
-  extension [Self <: ComponentColorBgDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentColorBgDefault] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: ColorBgDefault): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

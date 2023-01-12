@@ -25,7 +25,8 @@ object SplitViewLayout {
     __obj.asInstanceOf[SplitViewLayout]
   }
   
-  extension [Self <: SplitViewLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitViewLayout] (val x: Self) extends AnyVal {
     
     inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     

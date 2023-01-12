@@ -78,7 +78,8 @@ object distCommonjsModulesSearchSearchCategoryMod extends Shortcut {
       __obj.asInstanceOf[StrictSearchCategoryProps]
     }
     
-    extension [Self <: StrictSearchCategoryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictSearchCategoryProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

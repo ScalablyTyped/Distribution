@@ -76,7 +76,8 @@ object servicesAuroraDbServiceMod {
       __obj.asInstanceOf[AuroraDbServiceParams]
     }
     
-    extension [Self <: AuroraDbServiceParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuroraDbServiceParams] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: Any): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       

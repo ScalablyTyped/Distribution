@@ -37,7 +37,8 @@ object CommonEventObject {
     __obj.asInstanceOf[CommonEventObject]
   }
   
-  extension [Self <: CommonEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonEventObject] (val x: Self) extends AnyVal {
     
     inline def setFormInputs(value: StringDictionary[_empty]): Self = StObject.set(x, "formInputs", value.asInstanceOf[js.Any])
     

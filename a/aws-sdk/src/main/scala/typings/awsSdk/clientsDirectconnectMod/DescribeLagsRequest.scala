@@ -18,7 +18,8 @@ object DescribeLagsRequest {
     __obj.asInstanceOf[DescribeLagsRequest]
   }
   
-  extension [Self <: DescribeLagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLagsRequest] (val x: Self) extends AnyVal {
     
     inline def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
     

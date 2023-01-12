@@ -65,7 +65,8 @@ object Collab {
     __obj.asInstanceOf[Collab]
   }
   
-  extension [Self <: Collab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collab] (val x: Self) extends AnyVal {
     
     inline def setCollab(value: Boolean): Self = StObject.set(x, "collab", value.asInstanceOf[js.Any])
     

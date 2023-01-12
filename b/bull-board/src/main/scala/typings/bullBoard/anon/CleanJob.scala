@@ -23,7 +23,8 @@ object CleanJob {
     __obj.asInstanceOf[CleanJob]
   }
   
-  extension [Self <: CleanJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CleanJob] (val x: Self) extends AnyVal {
     
     inline def setCleanJob(value: () => js.Promise[Unit]): Self = StObject.set(x, "cleanJob", js.Any.fromFunction0(value))
     

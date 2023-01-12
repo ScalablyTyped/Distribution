@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[AlertOptions]
     }
     
-    extension [Self <: AlertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertOptions] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object mod {
       __obj.asInstanceOf[AllOptions]
     }
     
-    extension [Self <: AllOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllOptions] (val x: Self) extends AnyVal {
       
       inline def setAlertTime(value: Double): Self = StObject.set(x, "alertTime", value.asInstanceOf[js.Any])
       
@@ -241,7 +243,8 @@ object mod {
       __obj.asInstanceOf[ConfirmOptions]
     }
     
-    extension [Self <: ConfirmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmOptions] (val x: Self) extends AnyVal {
       
       inline def setCancelCallback(value: () => Unit): Self = StObject.set(x, "cancelCallback", js.Any.fromFunction0(value))
       
@@ -291,7 +294,8 @@ object mod {
       __obj.asInstanceOf[DateOptions]
     }
     
-    extension [Self <: DateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateOptions] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -339,7 +343,8 @@ object mod {
       __obj.asInstanceOf[ForceOptions]
     }
     
-    extension [Self <: ForceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForceOptions] (val x: Self) extends AnyVal {
       
       inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
@@ -427,7 +432,8 @@ object mod {
       __obj.asInstanceOf[InputOptions]
     }
     
-    extension [Self <: InputOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowed(value: (js.Array[an | a | n | s]) | js.RegExp): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       
@@ -541,7 +547,8 @@ object mod {
       __obj.asInstanceOf[SelectChoice]
     }
     
-    extension [Self <: SelectChoice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectChoice] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
       
@@ -574,7 +581,8 @@ object mod {
       __obj.asInstanceOf[SelectOptions]
     }
     
-    extension [Self <: SelectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectOptions] (val x: Self) extends AnyVal {
       
       inline def setCancelCallback(value: () => Unit): Self = StObject.set(x, "cancelCallback", js.Any.fromFunction0(value))
       

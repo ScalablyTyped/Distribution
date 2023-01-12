@@ -15,7 +15,8 @@ object SoftmaxAttrs {
     __obj.asInstanceOf[SoftmaxAttrs]
   }
   
-  extension [Self <: SoftmaxAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftmaxAttrs] (val x: Self) extends AnyVal {
     
     inline def setDim(value: Double): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
   }

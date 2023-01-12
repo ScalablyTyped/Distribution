@@ -24,7 +24,8 @@ object NthPlain {
     __obj.asInstanceOf[NthPlain]
   }
   
-  extension [Self <: NthPlain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NthPlain] (val x: Self) extends AnyVal {
     
     inline def setNth(value: AnPlusB | Identifier): Self = StObject.set(x, "nth", value.asInstanceOf[js.Any])
     

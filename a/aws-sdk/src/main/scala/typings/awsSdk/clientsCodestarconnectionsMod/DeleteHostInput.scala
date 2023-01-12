@@ -18,7 +18,8 @@ object DeleteHostInput {
     __obj.asInstanceOf[DeleteHostInput]
   }
   
-  extension [Self <: DeleteHostInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteHostInput] (val x: Self) extends AnyVal {
     
     inline def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
   }

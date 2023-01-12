@@ -100,7 +100,8 @@ object ParsingOptions {
     __obj.asInstanceOf[ParsingOptions]
   }
   
-  extension [Self <: ParsingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsingOptions] (val x: Self) extends AnyVal {
     
     inline def setBookDeps(value: Boolean): Self = StObject.set(x, "bookDeps", value.asInstanceOf[js.Any])
     

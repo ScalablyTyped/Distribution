@@ -19,7 +19,8 @@ object SnapshotListenOptions {
     __obj.asInstanceOf[SnapshotListenOptions]
   }
   
-  extension [Self <: SnapshotListenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotListenOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeMetadataChanges(value: Boolean): Self = StObject.set(x, "includeMetadataChanges", value.asInstanceOf[js.Any])
     

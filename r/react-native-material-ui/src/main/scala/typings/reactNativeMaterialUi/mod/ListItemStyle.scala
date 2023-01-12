@@ -41,7 +41,8 @@ object ListItemStyle {
     __obj.asInstanceOf[ListItemStyle]
   }
   
-  extension [Self <: ListItemStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemStyle] (val x: Self) extends AnyVal {
     
     inline def setCenterElementContainer(value: ViewStyle): Self = StObject.set(x, "centerElementContainer", value.asInstanceOf[js.Any])
     

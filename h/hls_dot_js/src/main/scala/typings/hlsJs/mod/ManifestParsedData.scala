@@ -38,7 +38,8 @@ object ManifestParsedData {
     __obj.asInstanceOf[ManifestParsedData]
   }
   
-  extension [Self <: ManifestParsedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestParsedData] (val x: Self) extends AnyVal {
     
     inline def setAltAudio(value: Boolean): Self = StObject.set(x, "altAudio", value.asInstanceOf[js.Any])
     

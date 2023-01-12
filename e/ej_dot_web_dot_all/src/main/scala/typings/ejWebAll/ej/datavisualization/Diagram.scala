@@ -3372,7 +3372,8 @@ object Diagram {
       __obj.asInstanceOf[AutoScrollChangeEventArgs]
     }
     
-    extension [Self <: AutoScrollChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScrollChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -3398,7 +3399,8 @@ object Diagram {
       __obj.asInstanceOf[BackgroundImage]
     }
     
-    extension [Self <: BackgroundImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundImage] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: ImageAlignment | String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -3447,7 +3449,8 @@ object Diagram {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActualObject(value: Double): Self = StObject.set(x, "actualObject", value.asInstanceOf[js.Any])
       
@@ -3497,7 +3500,8 @@ object Diagram {
       __obj.asInstanceOf[CommandManager]
     }
     
-    extension [Self <: CommandManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandManager] (val x: Self) extends AnyVal {
       
       inline def setCommands(value: CommandManagerCommands): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
@@ -3531,7 +3535,8 @@ object Diagram {
       __obj.asInstanceOf[CommandManagerCommands]
     }
     
-    extension [Self <: CommandManagerCommands](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandManagerCommands] (val x: Self) extends AnyVal {
       
       inline def setCanExecute(value: Any): Self = StObject.set(x, "canExecute", value.asInstanceOf[js.Any])
       
@@ -3570,7 +3575,8 @@ object Diagram {
       __obj.asInstanceOf[CommandManagerCommandsGesture]
     }
     
-    extension [Self <: CommandManagerCommandsGesture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandManagerCommandsGesture] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Keys | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -3611,7 +3617,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectionChangeEventArgs]
     }
     
-    extension [Self <: ConnectionChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3811,7 +3818,8 @@ object Diagram {
       __obj.asInstanceOf[Connector]
     }
     
-    extension [Self <: Connector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connector] (val x: Self) extends AnyVal {
       
       inline def setAddInfo(value: Any): Self = StObject.set(x, "addInfo", value.asInstanceOf[js.Any])
       
@@ -3988,7 +3996,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorCollectionChangeEventArgs]
     }
     
-    extension [Self <: ConnectorCollectionChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorCollectionChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4049,7 +4058,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorSourceChangeEventArgs]
     }
     
-    extension [Self <: ConnectorSourceChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorSourceChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4118,7 +4128,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorTargetChangeEventArgs]
     }
     
-    extension [Self <: ConnectorTargetChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorTargetChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4317,7 +4328,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorsLabel]
     }
     
-    extension [Self <: ConnectorsLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorsLabel] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: Alignment | String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -4478,7 +4490,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorsLabelsDragLimit]
     }
     
-    extension [Self <: ConnectorsLabelsDragLimit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorsLabelsDragLimit] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -4527,7 +4540,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorsLabelsMargin]
     }
     
-    extension [Self <: ConnectorsLabelsMargin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorsLabelsMargin] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -4595,7 +4609,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorsSegment]
     }
     
-    extension [Self <: ConnectorsSegment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorsSegment] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -4680,7 +4695,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorsShape]
     }
     
-    extension [Self <: ConnectorsShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorsShape] (val x: Self) extends AnyVal {
       
       inline def setActivityFlow(value: UMLActivityFlow | String): Self = StObject.set(x, "ActivityFlow", value.asInstanceOf[js.Any])
       
@@ -4739,7 +4755,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorsShapeMultiplicity]
     }
     
-    extension [Self <: ConnectorsShapeMultiplicity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorsShapeMultiplicity] (val x: Self) extends AnyVal {
       
       inline def setSource(value: ConnectorsShapeMultiplicitySource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -4779,7 +4796,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorsShapeMultiplicitySource]
     }
     
-    extension [Self <: ConnectorsShapeMultiplicitySource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorsShapeMultiplicitySource] (val x: Self) extends AnyVal {
       
       inline def setLowerBounds(value: Double): Self = StObject.set(x, "lowerBounds", value.asInstanceOf[js.Any])
       
@@ -4842,7 +4860,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorsSourceDecorator]
     }
     
-    extension [Self <: ConnectorsSourceDecorator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorsSourceDecorator] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -4897,7 +4916,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorsSourcePoint]
     }
     
-    extension [Self <: ConnectorsSourcePoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorsSourcePoint] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -4951,7 +4971,8 @@ object Diagram {
       __obj.asInstanceOf[ConnectorsTargetDecorator]
     }
     
-    extension [Self <: ConnectorsTargetDecorator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorsTargetDecorator] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -5002,7 +5023,8 @@ object Diagram {
       __obj.asInstanceOf[ContextMenu]
     }
     
-    extension [Self <: ContextMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenu] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[ContextMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -5053,7 +5075,8 @@ object Diagram {
       __obj.asInstanceOf[ContextMenuBeforeOpenEventArgs]
     }
     
-    extension [Self <: ContextMenuBeforeOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuBeforeOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5138,7 +5161,8 @@ object Diagram {
       __obj.asInstanceOf[ContextMenuClickEventArgs]
     }
     
-    extension [Self <: ContextMenuClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCanExecute(value: Boolean): Self = StObject.set(x, "canExecute", value.asInstanceOf[js.Any])
       
@@ -5220,7 +5244,8 @@ object Diagram {
       __obj.asInstanceOf[ContextMenuItem]
     }
     
-    extension [Self <: ContextMenuItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuItem] (val x: Self) extends AnyVal {
       
       inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
@@ -5267,7 +5292,8 @@ object Diagram {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setDiagramId(value: String): Self = StObject.set(x, "diagramId", value.asInstanceOf[js.Any])
       
@@ -5335,7 +5361,8 @@ object Diagram {
       __obj.asInstanceOf[DataSourceSettings]
     }
     
-    extension [Self <: DataSourceSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceSettings] (val x: Self) extends AnyVal {
       
       inline def setConnectionDataSource(value: DataSourceSettingsConnectionDataSource): Self = StObject.set(x, "connectionDataSource", value.asInstanceOf[js.Any])
       
@@ -5436,7 +5463,8 @@ object Diagram {
       __obj.asInstanceOf[DataSourceSettingsConnectionDataSource]
     }
     
-    extension [Self <: DataSourceSettingsConnectionDataSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceSettingsConnectionDataSource] (val x: Self) extends AnyVal {
       
       inline def setCrudAction(value: DataSourceSettingsConnectionDataSourceCrudAction): Self = StObject.set(x, "crudAction", value.asInstanceOf[js.Any])
       
@@ -5511,7 +5539,8 @@ object Diagram {
       __obj.asInstanceOf[DataSourceSettingsConnectionDataSourceCrudAction]
     }
     
-    extension [Self <: DataSourceSettingsConnectionDataSourceCrudAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceSettingsConnectionDataSourceCrudAction] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
@@ -5560,7 +5589,8 @@ object Diagram {
       __obj.asInstanceOf[DataSourceSettingsCrudAction]
     }
     
-    extension [Self <: DataSourceSettingsCrudAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceSettingsCrudAction] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
@@ -5604,7 +5634,8 @@ object Diagram {
       __obj.asInstanceOf[DefaultSettings]
     }
     
-    extension [Self <: DefaultSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultSettings] (val x: Self) extends AnyVal {
       
       inline def setConnector(value: Any): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
       
@@ -5645,7 +5676,8 @@ object Diagram {
       __obj.asInstanceOf[DoubleClickEventArgs]
     }
     
-    extension [Self <: DoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActualObject(value: Any): Self = StObject.set(x, "actualObject", value.asInstanceOf[js.Any])
       
@@ -5686,7 +5718,8 @@ object Diagram {
       __obj.asInstanceOf[DragEnterEventArgs]
     }
     
-    extension [Self <: DragEnterEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEnterEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5739,7 +5772,8 @@ object Diagram {
       __obj.asInstanceOf[DragEventArgs]
     }
     
-    extension [Self <: DragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5792,7 +5826,8 @@ object Diagram {
       __obj.asInstanceOf[DragLeaveEventArgs]
     }
     
-    extension [Self <: DragLeaveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragLeaveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5845,7 +5880,8 @@ object Diagram {
       __obj.asInstanceOf[DragOverEventArgs]
     }
     
-    extension [Self <: DragOverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragOverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAllowDrop(value: Boolean): Self = StObject.set(x, "allowDrop", value.asInstanceOf[js.Any])
       
@@ -5910,7 +5946,8 @@ object Diagram {
       __obj.asInstanceOf[DropEventArgs]
     }
     
-    extension [Self <: DropEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5963,7 +6000,8 @@ object Diagram {
       __obj.asInstanceOf[EditorFocusChangeEventArgs]
     }
     
-    extension [Self <: EditorFocusChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorFocusChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setDiagramId(value: String): Self = StObject.set(x, "diagramId", value.asInstanceOf[js.Any])
       
@@ -6028,7 +6066,8 @@ object Diagram {
       __obj.asInstanceOf[ExportImageSettings]
     }
     
-    extension [Self <: ExportImageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportImageSettings] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -6097,7 +6136,8 @@ object Diagram {
       __obj.asInstanceOf[GroupChangeEventArgs]
     }
     
-    extension [Self <: GroupChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -6150,7 +6190,8 @@ object Diagram {
       __obj.asInstanceOf[HistoryChangeEventArgs]
     }
     
-    extension [Self <: HistoryChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -6231,7 +6272,8 @@ object Diagram {
       __obj.asInstanceOf[HistoryManager]
     }
     
-    extension [Self <: HistoryManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryManager] (val x: Self) extends AnyVal {
       
       inline def setCanPop(value: Any): Self = StObject.set(x, "canPop", value.asInstanceOf[js.Any])
       
@@ -6308,7 +6350,8 @@ object Diagram {
       __obj.asInstanceOf[ItemClickEventArgs]
     }
     
-    extension [Self <: ItemClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActualObject(value: Any): Self = StObject.set(x, "actualObject", value.asInstanceOf[js.Any])
       
@@ -6370,7 +6413,8 @@ object Diagram {
       __obj.asInstanceOf[Layer]
     }
     
-    extension [Self <: Layer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -6488,7 +6532,8 @@ object Diagram {
       __obj.asInstanceOf[Layout]
     }
     
-    extension [Self <: Layout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
       
       inline def setAvoidSegmentOverlapping(value: Boolean): Self = StObject.set(x, "avoidSegmentOverlapping", value.asInstanceOf[js.Any])
       
@@ -6837,7 +6882,8 @@ object Diagram {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.Diagram.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.Diagram.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.Diagram.Model] (val x: Self) extends AnyVal {
       
       inline def setAutoScrollChange(value: /* e */ AutoScrollChangeEventArgs => Unit): Self = StObject.set(x, "autoScrollChange", js.Any.fromFunction1(value))
       
@@ -7128,7 +7174,8 @@ object Diagram {
       __obj.asInstanceOf[MouseEnterEventArgs]
     }
     
-    extension [Self <: MouseEnterEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseEnterEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7181,7 +7228,8 @@ object Diagram {
       __obj.asInstanceOf[MouseLeaveEventArgs]
     }
     
-    extension [Self <: MouseLeaveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseLeaveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7234,7 +7282,8 @@ object Diagram {
       __obj.asInstanceOf[MouseOverEventArgs]
     }
     
-    extension [Self <: MouseOverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseOverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7631,7 +7680,8 @@ object Diagram {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setActivity(value: BPMNActivity | String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
@@ -7980,7 +8030,8 @@ object Diagram {
       __obj.asInstanceOf[NodeCollectionChangeEventArgs]
     }
     
-    extension [Self <: NodeCollectionChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeCollectionChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -8042,7 +8093,8 @@ object Diagram {
       __obj.asInstanceOf[NodesAnnotation]
     }
     
-    extension [Self <: NodesAnnotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesAnnotation] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -8093,7 +8145,8 @@ object Diagram {
       __obj.asInstanceOf[NodesClass]
     }
     
-    extension [Self <: NodesClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesClass] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[NodesClassAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -8135,7 +8188,8 @@ object Diagram {
       __obj.asInstanceOf[NodesClassAttribute]
     }
     
-    extension [Self <: NodesClassAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesClassAttribute] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -8165,7 +8219,8 @@ object Diagram {
       __obj.asInstanceOf[NodesClassMethod]
     }
     
-    extension [Self <: NodesClassMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesClassMethod] (val x: Self) extends AnyVal {
       
       inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
@@ -8227,7 +8282,8 @@ object Diagram {
       __obj.asInstanceOf[NodesCollapseIcon]
     }
     
-    extension [Self <: NodesCollapseIcon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesCollapseIcon] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -8286,7 +8342,8 @@ object Diagram {
       __obj.asInstanceOf[NodesContainer]
     }
     
-    extension [Self <: NodesContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesContainer] (val x: Self) extends AnyVal {
       
       inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
@@ -8317,7 +8374,8 @@ object Diagram {
       __obj.asInstanceOf[NodesData]
     }
     
-    extension [Self <: NodesData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesData] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: Boolean): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
@@ -8347,7 +8405,8 @@ object Diagram {
       __obj.asInstanceOf[NodesEnumeration]
     }
     
-    extension [Self <: NodesEnumeration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesEnumeration] (val x: Self) extends AnyVal {
       
       inline def setMembers(value: js.Array[NodesEnumerationMember]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
@@ -8374,7 +8433,8 @@ object Diagram {
       __obj.asInstanceOf[NodesEnumerationMember]
     }
     
-    extension [Self <: NodesEnumerationMember](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesEnumerationMember] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -8436,7 +8496,8 @@ object Diagram {
       __obj.asInstanceOf[NodesExpandIcon]
     }
     
-    extension [Self <: NodesExpandIcon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesExpandIcon] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -8497,7 +8558,8 @@ object Diagram {
       __obj.asInstanceOf[NodesGradient]
     }
     
-    extension [Self <: NodesGradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesGradient] (val x: Self) extends AnyVal {
       
       inline def setLinearGradient(value: NodesGradientLinearGradient): Self = StObject.set(x, "LinearGradient", value.asInstanceOf[js.Any])
       
@@ -8552,7 +8614,8 @@ object Diagram {
       __obj.asInstanceOf[NodesGradientLinearGradient]
     }
     
-    extension [Self <: NodesGradientLinearGradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesGradientLinearGradient] (val x: Self) extends AnyVal {
       
       inline def setStops(value: js.Array[Any]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
       
@@ -8621,7 +8684,8 @@ object Diagram {
       __obj.asInstanceOf[NodesGradientRadialGradient]
     }
     
-    extension [Self <: NodesGradientRadialGradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesGradientRadialGradient] (val x: Self) extends AnyVal {
       
       inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
@@ -8674,7 +8738,8 @@ object Diagram {
       __obj.asInstanceOf[NodesGradientStop]
     }
     
-    extension [Self <: NodesGradientStop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesGradientStop] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -8713,7 +8778,8 @@ object Diagram {
       __obj.asInstanceOf[NodesInterface]
     }
     
-    extension [Self <: NodesInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesInterface] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[NodesInterfaceAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -8754,7 +8820,8 @@ object Diagram {
       __obj.asInstanceOf[NodesInterfaceAttribute]
     }
     
-    extension [Self <: NodesInterfaceAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesInterfaceAttribute] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -8783,7 +8850,8 @@ object Diagram {
       __obj.asInstanceOf[NodesInterfaceMethod]
     }
     
-    extension [Self <: NodesInterfaceMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesInterfaceMethod] (val x: Self) extends AnyVal {
       
       inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
@@ -8946,7 +9014,8 @@ object Diagram {
       __obj.asInstanceOf[NodesLabel]
     }
     
-    extension [Self <: NodesLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesLabel] (val x: Self) extends AnyVal {
       
       inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
@@ -9132,7 +9201,8 @@ object Diagram {
       __obj.asInstanceOf[NodesLane]
     }
     
-    extension [Self <: NodesLane](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesLane] (val x: Self) extends AnyVal {
       
       inline def setAddInfo(value: Any): Self = StObject.set(x, "addInfo", value.asInstanceOf[js.Any])
       
@@ -9226,7 +9296,8 @@ object Diagram {
       __obj.asInstanceOf[NodesPaletteItem]
     }
     
-    extension [Self <: NodesPaletteItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesPaletteItem] (val x: Self) extends AnyVal {
       
       inline def setEnableScale(value: Boolean): Self = StObject.set(x, "enableScale", value.asInstanceOf[js.Any])
       
@@ -9306,7 +9377,8 @@ object Diagram {
       __obj.asInstanceOf[NodesPhase]
     }
     
-    extension [Self <: NodesPhase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesPhase] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -9412,7 +9484,8 @@ object Diagram {
       __obj.asInstanceOf[NodesPort]
     }
     
-    extension [Self <: NodesPort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesPort] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -9492,7 +9565,8 @@ object Diagram {
       __obj.asInstanceOf[NodesShadow]
     }
     
-    extension [Self <: NodesShadow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesShadow] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -9566,7 +9640,8 @@ object Diagram {
       __obj.asInstanceOf[NodesSubProcess]
     }
     
-    extension [Self <: NodesSubProcess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesSubProcess] (val x: Self) extends AnyVal {
       
       inline def setAdhoc(value: Boolean): Self = StObject.set(x, "adhoc", value.asInstanceOf[js.Any])
       
@@ -9652,7 +9727,8 @@ object Diagram {
       __obj.asInstanceOf[NodesSubProcessEvent]
     }
     
-    extension [Self <: NodesSubProcessEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesSubProcessEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: BPMNEvents | String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -9717,7 +9793,8 @@ object Diagram {
       __obj.asInstanceOf[NodesTask]
     }
     
-    extension [Self <: NodesTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesTask] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
@@ -9796,7 +9873,8 @@ object Diagram {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -9918,7 +9996,8 @@ object Diagram {
       __obj.asInstanceOf[PageSettings]
     }
     
-    extension [Self <: PageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageSettings] (val x: Self) extends AnyVal {
       
       inline def setAutoScrollBorder(value: Any): Self = StObject.set(x, "autoScrollBorder", value.asInstanceOf[js.Any])
       
@@ -10007,7 +10086,8 @@ object Diagram {
       __obj.asInstanceOf[PrintImageSettings]
     }
     
-    extension [Self <: PrintImageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintImageSettings] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -10072,7 +10152,8 @@ object Diagram {
       __obj.asInstanceOf[PrintSettings]
     }
     
-    extension [Self <: PrintSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintSettings] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -10141,7 +10222,8 @@ object Diagram {
       __obj.asInstanceOf[PropertyChangeEventArgs]
     }
     
-    extension [Self <: PropertyChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -10206,7 +10288,8 @@ object Diagram {
       __obj.asInstanceOf[RotationChangeEventArgs]
     }
     
-    extension [Self <: RotationChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotationChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -10256,7 +10339,8 @@ object Diagram {
       __obj.asInstanceOf[RulerSettings]
     }
     
-    extension [Self <: RulerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RulerSettings] (val x: Self) extends AnyVal {
       
       inline def setHorizontalRuler(value: RulerSettingsHorizontalRuler): Self = StObject.set(x, "horizontalRuler", value.asInstanceOf[js.Any])
       
@@ -10316,7 +10400,8 @@ object Diagram {
       __obj.asInstanceOf[RulerSettingsHorizontalRuler]
     }
     
-    extension [Self <: RulerSettingsHorizontalRuler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RulerSettingsHorizontalRuler] (val x: Self) extends AnyVal {
       
       inline def setArrangeTick(value: Any): Self = StObject.set(x, "arrangeTick", value.asInstanceOf[js.Any])
       
@@ -10392,7 +10477,8 @@ object Diagram {
       __obj.asInstanceOf[RulerSettingsVerticalRuler]
     }
     
-    extension [Self <: RulerSettingsVerticalRuler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RulerSettingsVerticalRuler] (val x: Self) extends AnyVal {
       
       inline def setArrangeTick(value: Any): Self = StObject.set(x, "arrangeTick", value.asInstanceOf[js.Any])
       
@@ -10453,7 +10539,8 @@ object Diagram {
       __obj.asInstanceOf[ScrollChangeEventArgs]
     }
     
-    extension [Self <: ScrollChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -10516,7 +10603,8 @@ object Diagram {
       __obj.asInstanceOf[ScrollSettings]
     }
     
-    extension [Self <: ScrollSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollSettings] (val x: Self) extends AnyVal {
       
       inline def setCurrentZoom(value: Double): Self = StObject.set(x, "currentZoom", value.asInstanceOf[js.Any])
       
@@ -10573,7 +10661,8 @@ object Diagram {
       __obj.asInstanceOf[SegmentChangeEventArgs]
     }
     
-    extension [Self <: SegmentChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -10656,7 +10745,8 @@ object Diagram {
       __obj.asInstanceOf[SelectedItems]
     }
     
-    extension [Self <: SelectedItems](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectedItems] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -10780,7 +10870,8 @@ object Diagram {
       __obj.asInstanceOf[SelectedItemsUserHandle]
     }
     
-    extension [Self <: SelectedItemsUserHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectedItemsUserHandle] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -10886,7 +10977,8 @@ object Diagram {
       __obj.asInstanceOf[SelectionChangeEventArgs]
     }
     
-    extension [Self <: SelectionChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -10946,7 +11038,8 @@ object Diagram {
       __obj.asInstanceOf[SerializationSettings]
     }
     
-    extension [Self <: SerializationSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializationSettings] (val x: Self) extends AnyVal {
       
       inline def setPreventDefaultValues(value: Boolean): Self = StObject.set(x, "preventDefaultValues", value.asInstanceOf[js.Any])
       
@@ -10971,7 +11064,8 @@ object Diagram {
       __obj.asInstanceOf[SetToolEventArgs]
     }
     
-    extension [Self <: SetToolEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetToolEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ActiveTool): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -11024,7 +11118,8 @@ object Diagram {
       __obj.asInstanceOf[SizeChangeEventArgs]
     }
     
-    extension [Self <: SizeChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -11096,7 +11191,8 @@ object Diagram {
       __obj.asInstanceOf[SnapSettings]
     }
     
-    extension [Self <: SnapSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableSnapToObject(value: Boolean): Self = StObject.set(x, "enableSnapToObject", value.asInstanceOf[js.Any])
       
@@ -11152,7 +11248,8 @@ object Diagram {
       __obj.asInstanceOf[SnapSettingsHorizontalGridLines]
     }
     
-    extension [Self <: SnapSettingsHorizontalGridLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapSettingsHorizontalGridLines] (val x: Self) extends AnyVal {
       
       inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
       
@@ -11204,7 +11301,8 @@ object Diagram {
       __obj.asInstanceOf[SnapSettingsVerticalGridLines]
     }
     
-    extension [Self <: SnapSettingsVerticalGridLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapSettingsVerticalGridLines] (val x: Self) extends AnyVal {
       
       inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
       
@@ -11257,7 +11355,8 @@ object Diagram {
       __obj.asInstanceOf[TextChangeEventArgs]
     }
     
-    extension [Self <: TextChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -11308,7 +11407,8 @@ object Diagram {
       __obj.asInstanceOf[Tooltip]
     }
     
-    extension [Self <: Tooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: TooltipAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -11347,7 +11447,8 @@ object Diagram {
       __obj.asInstanceOf[TooltipAlignment]
     }
     
-    extension [Self <: TooltipAlignment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipAlignment] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: HorizontalAlignment | String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -11380,7 +11481,8 @@ object Diagram {
       __obj.asInstanceOf[Zoom]
     }
     
-    extension [Self <: Zoom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zoom] (val x: Self) extends AnyVal {
       
       inline def setFocusPoint(value: ConnectorsSourcePoint): Self = StObject.set(x, "focusPoint", value.asInstanceOf[js.Any])
       

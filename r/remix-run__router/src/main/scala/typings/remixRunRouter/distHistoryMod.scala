@@ -177,7 +177,8 @@ object distHistoryMod {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object distHistoryMod {
       __obj.asInstanceOf[MemoryHistoryOptions]
     }
     
-    extension [Self <: MemoryHistoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryHistoryOptions] (val x: Self) extends AnyVal {
       
       inline def setInitialEntries(value: js.Array[InitialEntry]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
       
@@ -253,7 +255,8 @@ object distHistoryMod {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -284,7 +287,8 @@ object distHistoryMod {
       __obj.asInstanceOf[Update]
     }
     
-    extension [Self <: Update](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -307,7 +311,8 @@ object distHistoryMod {
       __obj.asInstanceOf[UrlHistoryOptions]
     }
     
-    extension [Self <: UrlHistoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlHistoryOptions] (val x: Self) extends AnyVal {
       
       inline def setV5Compat(value: Boolean): Self = StObject.set(x, "v5Compat", value.asInstanceOf[js.Any])
       

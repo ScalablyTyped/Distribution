@@ -18,7 +18,8 @@ object Remediation {
     __obj.asInstanceOf[Remediation]
   }
   
-  extension [Self <: Remediation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Remediation] (val x: Self) extends AnyVal {
     
     inline def setRecommendation(value: Recommendation): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
     

@@ -488,7 +488,8 @@ object AwsSecurityFindingFilters {
     __obj.asInstanceOf[AwsSecurityFindingFilters]
   }
   
-  extension [Self <: AwsSecurityFindingFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsSecurityFindingFilters] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: StringFilterList): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

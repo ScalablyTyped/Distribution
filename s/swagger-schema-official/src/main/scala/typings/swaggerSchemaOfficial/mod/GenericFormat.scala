@@ -19,7 +19,8 @@ object GenericFormat {
     __obj.asInstanceOf[GenericFormat]
   }
   
-  extension [Self <: GenericFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericFormat] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

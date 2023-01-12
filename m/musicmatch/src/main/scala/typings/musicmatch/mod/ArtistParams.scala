@@ -17,7 +17,8 @@ object ArtistParams {
     __obj.asInstanceOf[ArtistParams]
   }
   
-  extension [Self <: ArtistParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtistParams] (val x: Self) extends AnyVal {
     
     inline def setArtist_id(value: Double): Self = StObject.set(x, "artist_id", value.asInstanceOf[js.Any])
     

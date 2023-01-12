@@ -56,7 +56,8 @@ object typesMergeShardsInputMod {
       __obj.asInstanceOf[MergeShardsInput]
     }
     
-    extension [Self <: MergeShardsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeShardsInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object PartialRendererConfig {
     __obj.asInstanceOf[PartialRendererConfig]
   }
   
-  extension [Self <: PartialRendererConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRendererConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableAutoRendering(value: Boolean): Self = StObject.set(x, "enableAutoRendering", value.asInstanceOf[js.Any])
     

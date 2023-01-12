@@ -51,7 +51,8 @@ object distCryptoJoseHeaderMod {
       __obj.asInstanceOf[JoseHeaderOptions]
     }
     
-    extension [Self <: JoseHeaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JoseHeaderOptions] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       

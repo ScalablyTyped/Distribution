@@ -28,7 +28,8 @@ object RubricQuality {
     __obj.asInstanceOf[RubricQuality]
   }
   
-  extension [Self <: RubricQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RubricQuality] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: NullableOption[js.Array[RubricCriterion]]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     

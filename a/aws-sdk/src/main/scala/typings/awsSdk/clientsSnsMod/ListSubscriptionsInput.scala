@@ -18,7 +18,8 @@ object ListSubscriptionsInput {
     __obj.asInstanceOf[ListSubscriptionsInput]
   }
   
-  extension [Self <: ListSubscriptionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSubscriptionsInput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: nextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

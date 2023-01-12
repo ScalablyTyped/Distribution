@@ -62,7 +62,8 @@ object CommandDefinition {
     __obj.asInstanceOf[CommandDefinition]
   }
   
-  extension [Self <: CommandDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandDefinition] (val x: Self) extends AnyVal {
     
     inline def setAggregate(value: String): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     

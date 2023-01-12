@@ -33,7 +33,8 @@ object AppValidationConfiguration {
     __obj.asInstanceOf[AppValidationConfiguration]
   }
   
-  extension [Self <: AppValidationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppValidationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAppValidationStrategy(value: AppValidationStrategy): Self = StObject.set(x, "appValidationStrategy", value.asInstanceOf[js.Any])
     

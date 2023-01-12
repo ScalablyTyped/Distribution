@@ -19,7 +19,8 @@ object ManagedService {
     __obj.asInstanceOf[ManagedService]
   }
   
-  extension [Self <: ManagedService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedService] (val x: Self) extends AnyVal {
     
     inline def setProducerProjectId(value: String): Self = StObject.set(x, "producerProjectId", value.asInstanceOf[js.Any])
     

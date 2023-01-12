@@ -18,7 +18,8 @@ object DocumentHtmlDefinitions {
     __obj.asInstanceOf[DocumentHtmlDefinitions]
   }
   
-  extension [Self <: DocumentHtmlDefinitions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentHtmlDefinitions] (val x: Self) extends AnyVal {
     
     inline def setHtmlDefinitions(value: js.Array[String]): Self = StObject.set(x, "htmlDefinitions", value.asInstanceOf[js.Any])
     

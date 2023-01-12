@@ -30,7 +30,8 @@ object StoryPointSwitchEvent {
     __obj.asInstanceOf[StoryPointSwitchEvent]
   }
   
-  extension [Self <: StoryPointSwitchEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoryPointSwitchEvent] (val x: Self) extends AnyVal {
     
     inline def setGetNewStoryPoint(value: () => StoryPoint): Self = StObject.set(x, "getNewStoryPoint", js.Any.fromFunction0(value))
     

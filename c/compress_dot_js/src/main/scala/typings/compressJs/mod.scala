@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Compress]
     }
     
-    extension [Self <: Compress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compress] (val x: Self) extends AnyVal {
       
       inline def setAttach(value: (String, CompressOptions) => js.Promise[js.Array[CompressResult]]): Self = StObject.set(x, "attach", js.Any.fromFunction2(value))
       
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[CompressOptions]
     }
     
-    extension [Self <: CompressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object mod {
       __obj.asInstanceOf[CompressResult]
     }
     
-    extension [Self <: CompressResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressResult] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

@@ -69,7 +69,8 @@ object GraphicsControllerData {
     __obj.asInstanceOf[GraphicsControllerData]
   }
   
-  extension [Self <: GraphicsControllerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicsControllerData] (val x: Self) extends AnyVal {
     
     inline def setBus(value: String): Self = StObject.set(x, "bus", value.asInstanceOf[js.Any])
     

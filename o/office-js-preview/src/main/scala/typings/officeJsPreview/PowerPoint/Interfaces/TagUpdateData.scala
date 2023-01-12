@@ -22,7 +22,8 @@ object TagUpdateData {
     __obj.asInstanceOf[TagUpdateData]
   }
   
-  extension [Self <: TagUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagUpdateData] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

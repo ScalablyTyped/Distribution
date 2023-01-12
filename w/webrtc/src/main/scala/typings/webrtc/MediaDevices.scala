@@ -24,7 +24,8 @@ object MediaDevices {
     __obj.asInstanceOf[MediaDevices]
   }
   
-  extension [Self <: MediaDevices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaDevices] (val x: Self) extends AnyVal {
     
     inline def setEnumerateDevices(value: () => js.Promise[js.Array[MediaDeviceInfo]]): Self = StObject.set(x, "enumerateDevices", js.Any.fromFunction0(value))
     

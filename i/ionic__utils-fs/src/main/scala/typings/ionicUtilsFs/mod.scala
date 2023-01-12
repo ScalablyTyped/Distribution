@@ -3206,7 +3206,8 @@ object mod {
       __obj.asInstanceOf[DirectoryNode]
     }
     
-    extension [Self <: DirectoryNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[FileNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -3288,7 +3289,8 @@ object mod {
       __obj.asInstanceOf[GetFileTreeOptions[RE, DE]]
     }
     
-    extension [Self <: GetFileTreeOptions[?, ?], RE, DE](x: Self & (GetFileTreeOptions[RE, DE])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetFileTreeOptions[?, ?], RE, DE] (val x: Self & (GetFileTreeOptions[RE, DE])) extends AnyVal {
       
       inline def setOnDirectoryNode(value: /* node */ DirectoryNode => DirectoryNode & DE): Self = StObject.set(x, "onDirectoryNode", js.Any.fromFunction1(value))
       
@@ -3333,7 +3335,8 @@ object mod {
       __obj.asInstanceOf[ReaddirPOptions]
     }
     
-    extension [Self <: ReaddirPOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReaddirPOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* item */ WalkerItem => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -3367,7 +3370,8 @@ object mod {
       __obj.asInstanceOf[RegularFileNode]
     }
     
-    extension [Self <: RegularFileNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegularFileNode] (val x: Self) extends AnyVal {
       
       inline def setParent(value: FileNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
@@ -3390,7 +3394,8 @@ object mod {
       __obj.asInstanceOf[WalkerItem]
     }
     
-    extension [Self <: WalkerItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkerItem] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -3421,7 +3426,8 @@ object mod {
       __obj.asInstanceOf[WalkerOptions]
     }
     
-    extension [Self <: WalkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkerOptions] (val x: Self) extends AnyVal {
       
       inline def setPathFilter(value: /* p */ String => Boolean): Self = StObject.set(x, "pathFilter", js.Any.fromFunction1(value))
       

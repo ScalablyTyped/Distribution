@@ -19,7 +19,8 @@ object Responsemessage {
     __obj.asInstanceOf[Responsemessage]
   }
   
-  extension [Self <: Responsemessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responsemessage] (val x: Self) extends AnyVal {
     
     inline def setData(value: Amount): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

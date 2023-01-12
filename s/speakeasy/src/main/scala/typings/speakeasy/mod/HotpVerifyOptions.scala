@@ -45,7 +45,8 @@ object HotpVerifyOptions {
     __obj.asInstanceOf[HotpVerifyOptions]
   }
   
-  extension [Self <: HotpVerifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HotpVerifyOptions] (val x: Self) extends AnyVal {
     
     inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     

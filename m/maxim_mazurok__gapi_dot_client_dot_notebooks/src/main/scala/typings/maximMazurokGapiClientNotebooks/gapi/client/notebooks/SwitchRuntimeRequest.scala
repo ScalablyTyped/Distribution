@@ -22,7 +22,8 @@ object SwitchRuntimeRequest {
     __obj.asInstanceOf[SwitchRuntimeRequest]
   }
   
-  extension [Self <: SwitchRuntimeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchRuntimeRequest] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorConfig(value: RuntimeAcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
     

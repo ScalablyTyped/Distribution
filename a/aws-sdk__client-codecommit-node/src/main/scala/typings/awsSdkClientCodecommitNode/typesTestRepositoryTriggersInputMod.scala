@@ -52,7 +52,8 @@ object typesTestRepositoryTriggersInputMod {
       __obj.asInstanceOf[TestRepositoryTriggersInput]
     }
     
-    extension [Self <: TestRepositoryTriggersInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestRepositoryTriggersInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object NotificationResponse {
     __obj.asInstanceOf[NotificationResponse]
   }
   
-  extension [Self <: NotificationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationResponse] (val x: Self) extends AnyVal {
     
     inline def setActionIdentifier(value: String): Self = StObject.set(x, "actionIdentifier", value.asInstanceOf[js.Any])
     

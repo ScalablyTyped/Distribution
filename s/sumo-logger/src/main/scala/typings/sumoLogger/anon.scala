@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[PartialPerMessageOptions]
     }
     
-    extension [Self <: PartialPerMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPerMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       

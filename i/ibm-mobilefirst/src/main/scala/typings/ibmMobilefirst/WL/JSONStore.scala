@@ -27,7 +27,8 @@ object JSONStore {
       __obj.asInstanceOf[AddOptions]
     }
     
-    extension [Self <: AddOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalSearchFields(value: Any): Self = StObject.set(x, "additionalSearchFields", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object JSONStore {
       __obj.asInstanceOf[AdvancedFindOptions]
     }
     
-    extension [Self <: AdvancedFindOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdvancedFindOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object JSONStore {
       __obj.asInstanceOf[BasicFindOptions]
     }
     
-    extension [Self <: BasicFindOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicFindOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: js.Array[String]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object JSONStore {
       __obj.asInstanceOf[ChangeOptions]
     }
     
-    extension [Self <: ChangeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeOptions] (val x: Self) extends AnyVal {
       
       inline def setAddNew(value: Boolean): Self = StObject.set(x, "addNew", value.asInstanceOf[js.Any])
       
@@ -149,7 +153,8 @@ object JSONStore {
       __obj.asInstanceOf[EraseOptions]
     }
     
-    extension [Self <: EraseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EraseOptions] (val x: Self) extends AnyVal {
       
       inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
@@ -174,7 +179,8 @@ object JSONStore {
       __obj.asInstanceOf[FindOptions]
     }
     
-    extension [Self <: FindOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
       
       inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
@@ -209,7 +215,8 @@ object JSONStore {
       __obj.asInstanceOf[InitOptions]
     }
     
-    extension [Self <: InitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
       
       inline def setAnalytics(value: Boolean): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
       
@@ -439,7 +446,8 @@ object JSONStore {
       __obj.asInstanceOf[QueryPartObj]
     }
     
-    extension [Self <: QueryPartObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryPartObj] (val x: Self) extends AnyVal {
       
       inline def setBetween(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
       
@@ -488,7 +496,8 @@ object JSONStore {
       __obj.asInstanceOf[RefreshOptions]
     }
     
-    extension [Self <: RefreshOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshOptions] (val x: Self) extends AnyVal {
       
       inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     }
@@ -514,7 +523,8 @@ object JSONStore {
       __obj.asInstanceOf[RemoveOptions]
     }
     
-    extension [Self <: RemoveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveOptions] (val x: Self) extends AnyVal {
       
       inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
@@ -548,7 +558,8 @@ object JSONStore {
       __obj.asInstanceOf[ReplaceOptions]
     }
     
-    extension [Self <: ReplaceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplaceOptions] (val x: Self) extends AnyVal {
       
       inline def setMarkDirty(value: Boolean): Self = StObject.set(x, "markDirty", value.asInstanceOf[js.Any])
       
@@ -575,7 +586,8 @@ object JSONStore {
       __obj.asInstanceOf[StoreOptions]
     }
     
-    extension [Self <: StoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalSearchFields(value: js.Object): Self = StObject.set(x, "additionalSearchFields", value.asInstanceOf[js.Any])
       

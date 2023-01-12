@@ -18,7 +18,8 @@ object HasuraQueryResponse {
     __obj.asInstanceOf[HasuraQueryResponse[K, T]]
   }
   
-  extension [Self <: HasuraQueryResponse[?, ?], K /* <: String */, T /* <: Record[String, Any] */](x: Self & (HasuraQueryResponse[K, T])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasuraQueryResponse[?, ?], K /* <: String */, T /* <: Record[String, Any] */] (val x: Self & (HasuraQueryResponse[K, T])) extends AnyVal {
     
     inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: std.Array<hasura.hasura.HasuraDataItem<T>>} */ js.Any

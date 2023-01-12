@@ -28,7 +28,8 @@ object Note {
     __obj.asInstanceOf[Note]
   }
   
-  extension [Self <: Note](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Note] (val x: Self) extends AnyVal {
     
     inline def setText(value: NonEmptyString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     

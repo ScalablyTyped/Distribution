@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Ctrl]
     }
     
-    extension [Self <: Ctrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ctrl] (val x: Self) extends AnyVal {
       
       inline def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Ctrl): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

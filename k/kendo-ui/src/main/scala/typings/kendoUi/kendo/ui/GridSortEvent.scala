@@ -17,7 +17,8 @@ object GridSortEvent {
     __obj.asInstanceOf[GridSortEvent]
   }
   
-  extension [Self <: GridSortEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridSortEvent] (val x: Self) extends AnyVal {
     
     inline def setSort(value: Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ViewState {
     __obj.asInstanceOf[ViewState]
   }
   
-  extension [Self <: ViewState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewState] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Coordinate_): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

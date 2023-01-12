@@ -21,7 +21,8 @@ object FlushStats {
     __obj.asInstanceOf[FlushStats]
   }
   
-  extension [Self <: FlushStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlushStats] (val x: Self) extends AnyVal {
     
     inline def setPeriodic(value: long): Self = StObject.set(x, "periodic", value.asInstanceOf[js.Any])
     

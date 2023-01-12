@@ -22,7 +22,8 @@ object typesAnalyticsExportDestinationMod {
       __obj.asInstanceOf[AnalyticsExportDestination]
     }
     
-    extension [Self <: AnalyticsExportDestination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsExportDestination] (val x: Self) extends AnyVal {
       
       inline def setS3BucketDestination(value: AnalyticsS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object typesAnalyticsExportDestinationMod {
       __obj.asInstanceOf[UnmarshalledAnalyticsExportDestination]
     }
     
-    extension [Self <: UnmarshalledAnalyticsExportDestination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledAnalyticsExportDestination] (val x: Self) extends AnyVal {
       
       inline def setS3BucketDestination(value: UnmarshalledAnalyticsS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
     }

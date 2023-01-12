@@ -35,7 +35,8 @@ object distSrcNominalsMod {
       __obj.asInstanceOf[TypeCustomizer]
     }
     
-    extension [Self <: TypeCustomizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeCustomizer] (val x: Self) extends AnyVal {
       
       inline def setConstructProperty(value: String => Property): Self = StObject.set(x, "constructProperty", js.Any.fromFunction1(value))
       

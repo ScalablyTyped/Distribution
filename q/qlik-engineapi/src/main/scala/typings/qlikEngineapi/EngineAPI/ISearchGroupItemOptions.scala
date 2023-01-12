@@ -39,7 +39,8 @@ object ISearchGroupItemOptions {
     __obj.asInstanceOf[ISearchGroupItemOptions]
   }
   
-  extension [Self <: ISearchGroupItemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchGroupItemOptions] (val x: Self) extends AnyVal {
     
     inline def setQCount(value: Double): Self = StObject.set(x, "qCount", value.asInstanceOf[js.Any])
     

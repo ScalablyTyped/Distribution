@@ -21,7 +21,8 @@ object P2pTrader {
     __obj.asInstanceOf[P2pTrader]
   }
   
-  extension [Self <: P2pTrader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: P2pTrader] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

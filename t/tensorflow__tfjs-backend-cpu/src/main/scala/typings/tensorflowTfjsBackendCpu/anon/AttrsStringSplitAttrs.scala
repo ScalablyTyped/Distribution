@@ -22,7 +22,8 @@ object AttrsStringSplitAttrs {
     __obj.asInstanceOf[AttrsStringSplitAttrs]
   }
   
-  extension [Self <: AttrsStringSplitAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsStringSplitAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: StringSplitAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

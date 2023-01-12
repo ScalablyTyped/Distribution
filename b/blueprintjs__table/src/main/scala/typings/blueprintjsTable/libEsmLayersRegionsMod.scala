@@ -52,7 +52,8 @@ object libEsmLayersRegionsMod {
       __obj.asInstanceOf[RegionLayerProps]
     }
     
-    extension [Self <: RegionLayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegionLayerProps] (val x: Self) extends AnyVal {
       
       inline def setRegionStyles(value: js.Array[CSSProperties]): Self = StObject.set(x, "regionStyles", value.asInstanceOf[js.Any])
       

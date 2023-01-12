@@ -22,7 +22,8 @@ object CacheOptions {
     __obj.asInstanceOf[CacheOptions]
   }
   
-  extension [Self <: CacheOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

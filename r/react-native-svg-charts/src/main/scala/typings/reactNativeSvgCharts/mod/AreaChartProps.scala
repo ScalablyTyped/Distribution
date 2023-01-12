@@ -17,7 +17,8 @@ object AreaChartProps {
     __obj.asInstanceOf[AreaChartProps[T]]
   }
   
-  extension [Self <: AreaChartProps[?], T](x: Self & AreaChartProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaChartProps[?], T] (val x: Self & AreaChartProps[T]) extends AnyVal {
     
     inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

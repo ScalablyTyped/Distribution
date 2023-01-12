@@ -33,7 +33,8 @@ object PlaceAutocompleteResponse {
     __obj.asInstanceOf[PlaceAutocompleteResponse]
   }
   
-  extension [Self <: PlaceAutocompleteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceAutocompleteResponse] (val x: Self) extends AnyVal {
     
     inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object SliceAnalysisView3D {
     __obj.asInstanceOf[SliceAnalysisView3D]
   }
   
-  extension [Self <: SliceAnalysisView3D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliceAnalysisView3D] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

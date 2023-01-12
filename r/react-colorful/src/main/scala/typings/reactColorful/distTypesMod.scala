@@ -119,7 +119,8 @@ object distTypesMod {
       __obj.asInstanceOf[ColorInputBaseProps]
     }
     
-    extension [Self <: ColorInputBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorInputBaseProps] (val x: Self) extends AnyVal {
       
       inline def setOnChange(value: /* newColor */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
@@ -549,7 +550,8 @@ object distTypesMod {
       __obj.asInstanceOf[ColorInputHTMLAttributes]
     }
     
-    extension [Self <: ColorInputHTMLAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorInputHTMLAttributes] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1394,7 +1396,8 @@ object distTypesMod {
       __obj.asInstanceOf[ColorModel[T]]
     }
     
-    extension [Self <: ColorModel[?], T /* <: AnyColor */](x: Self & ColorModel[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorModel[?], T /* <: AnyColor */] (val x: Self & ColorModel[T]) extends AnyVal {
       
       inline def setDefaultColor(value: T): Self = StObject.set(x, "defaultColor", value.asInstanceOf[js.Any])
       
@@ -1421,7 +1424,8 @@ object distTypesMod {
       __obj.asInstanceOf[ColorPickerBaseProps[T]]
     }
     
-    extension [Self <: ColorPickerBaseProps[?], T /* <: AnyColor */](x: Self & ColorPickerBaseProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPickerBaseProps[?], T /* <: AnyColor */] (val x: Self & ColorPickerBaseProps[T]) extends AnyVal {
       
       inline def setColor(value: T): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1787,7 +1791,8 @@ object distTypesMod {
       __obj.asInstanceOf[ColorPickerHTMLAttributes]
     }
     
-    extension [Self <: ColorPickerHTMLAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPickerHTMLAttributes] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2504,7 +2509,8 @@ object distTypesMod {
       __obj.asInstanceOf[HslColor]
     }
     
-    extension [Self <: HslColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HslColor] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -2528,7 +2534,8 @@ object distTypesMod {
       __obj.asInstanceOf[HslaColor]
     }
     
-    extension [Self <: HslaColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HslaColor] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     }
@@ -2551,7 +2558,8 @@ object distTypesMod {
       __obj.asInstanceOf[HsvColor]
     }
     
-    extension [Self <: HsvColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HsvColor] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -2575,7 +2583,8 @@ object distTypesMod {
       __obj.asInstanceOf[HsvaColor]
     }
     
-    extension [Self <: HsvaColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HsvaColor] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     }
@@ -2640,7 +2649,8 @@ object distTypesMod {
       __obj.asInstanceOf[RgbColor]
     }
     
-    extension [Self <: RgbColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RgbColor] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -2664,7 +2674,8 @@ object distTypesMod {
       __obj.asInstanceOf[RgbaColor]
     }
     
-    extension [Self <: RgbaColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RgbaColor] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     }

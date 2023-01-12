@@ -23,7 +23,8 @@ object SecuritySamlAuthenticateResponse {
     __obj.asInstanceOf[SecuritySamlAuthenticateResponse]
   }
   
-  extension [Self <: SecuritySamlAuthenticateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySamlAuthenticateResponse] (val x: Self) extends AnyVal {
     
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     

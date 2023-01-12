@@ -25,7 +25,8 @@ object TypeofDEL {
     __obj.asInstanceOf[TypeofDEL]
   }
   
-  extension [Self <: TypeofDEL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDEL] (val x: Self) extends AnyVal {
     
     inline def setFIRTS_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRTS_KEY_INDEX", value.asInstanceOf[js.Any])
     

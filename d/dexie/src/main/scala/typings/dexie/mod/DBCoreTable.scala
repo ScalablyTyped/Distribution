@@ -38,7 +38,8 @@ object DBCoreTable {
     __obj.asInstanceOf[DBCoreTable]
   }
   
-  extension [Self <: DBCoreTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreTable] (val x: Self) extends AnyVal {
     
     inline def setCount(value: DBCoreCountRequest => js.Promise[Double]): Self = StObject.set(x, "count", js.Any.fromFunction1(value))
     

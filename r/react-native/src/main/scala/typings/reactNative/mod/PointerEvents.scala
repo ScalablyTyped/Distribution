@@ -37,7 +37,8 @@ object PointerEvents {
     __obj.asInstanceOf[PointerEvents]
   }
   
-  extension [Self <: PointerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerEvents] (val x: Self) extends AnyVal {
     
     inline def setOnPointerCancel(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
     

@@ -29,7 +29,8 @@ object KubernetesSoftwareConfig {
     __obj.asInstanceOf[KubernetesSoftwareConfig]
   }
   
-  extension [Self <: KubernetesSoftwareConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KubernetesSoftwareConfig] (val x: Self) extends AnyVal {
     
     inline def setComponentVersion(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

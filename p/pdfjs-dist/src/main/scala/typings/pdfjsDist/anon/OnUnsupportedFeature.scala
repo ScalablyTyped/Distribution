@@ -20,7 +20,8 @@ object OnUnsupportedFeature {
     __obj.asInstanceOf[OnUnsupportedFeature]
   }
   
-  extension [Self <: OnUnsupportedFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnUnsupportedFeature] (val x: Self) extends AnyVal {
     
     inline def setOnUnsupportedFeature(value: Any): Self = StObject.set(x, "onUnsupportedFeature", value.asInstanceOf[js.Any])
     

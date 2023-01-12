@@ -22,7 +22,8 @@ object GoogleCloudRunV2TaskAttemptResult {
     __obj.asInstanceOf[GoogleCloudRunV2TaskAttemptResult]
   }
   
-  extension [Self <: GoogleCloudRunV2TaskAttemptResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2TaskAttemptResult] (val x: Self) extends AnyVal {
     
     inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     

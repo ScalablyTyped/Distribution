@@ -23,7 +23,8 @@ object RaggedTensorToTensorInputs {
     __obj.asInstanceOf[RaggedTensorToTensorInputs]
   }
   
-  extension [Self <: RaggedTensorToTensorInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaggedTensorToTensorInputs] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: scala.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

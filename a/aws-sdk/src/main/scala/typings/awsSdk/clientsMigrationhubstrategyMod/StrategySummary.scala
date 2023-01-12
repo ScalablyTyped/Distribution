@@ -23,7 +23,8 @@ object StrategySummary {
     __obj.asInstanceOf[StrategySummary]
   }
   
-  extension [Self <: StrategySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrategySummary] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

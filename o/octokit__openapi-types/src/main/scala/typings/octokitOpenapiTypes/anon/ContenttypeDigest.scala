@@ -27,7 +27,8 @@ object ContenttypeDigest {
     __obj.asInstanceOf[ContenttypeDigest]
   }
   
-  extension [Self <: ContenttypeDigest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContenttypeDigest] (val x: Self) extends AnyVal {
     
     inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object WiFiDirectServiceSessionRequest {
     __obj.asInstanceOf[WiFiDirectServiceSessionRequest]
   }
   
-  extension [Self <: WiFiDirectServiceSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiDirectServiceSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

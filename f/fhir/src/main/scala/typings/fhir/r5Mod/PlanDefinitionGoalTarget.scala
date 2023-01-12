@@ -64,7 +64,8 @@ object PlanDefinitionGoalTarget {
     __obj.asInstanceOf[PlanDefinitionGoalTarget]
   }
   
-  extension [Self <: PlanDefinitionGoalTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanDefinitionGoalTarget] (val x: Self) extends AnyVal {
     
     inline def setDetailBoolean(value: Boolean): Self = StObject.set(x, "detailBoolean", value.asInstanceOf[js.Any])
     

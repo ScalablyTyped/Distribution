@@ -50,7 +50,8 @@ object PlusIoMetadata {
     __obj.asInstanceOf[PlusIoMetadata]
   }
   
-  extension [Self <: PlusIoMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusIoMetadata] (val x: Self) extends AnyVal {
     
     inline def setDirectoryCount(value: Double): Self = StObject.set(x, "directoryCount", value.asInstanceOf[js.Any])
     

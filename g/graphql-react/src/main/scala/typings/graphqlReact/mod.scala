@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[GraphQLCacheValue[T]]
     }
     
-    extension [Self <: GraphQLCacheValue[?], T](x: Self & GraphQLCacheValue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphQLCacheValue[?], T] (val x: Self & GraphQLCacheValue[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod {
       __obj.asInstanceOf[GraphQLFetchOptions]
     }
     
-    extension [Self <: GraphQLFetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphQLFetchOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | FormData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object mod {
       __obj.asInstanceOf[GraphQLOperationLoading[T]]
     }
     
-    extension [Self <: GraphQLOperationLoading[?], T](x: Self & GraphQLOperationLoading[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphQLOperationLoading[?], T] (val x: Self & GraphQLOperationLoading[T]) extends AnyVal {
       
       inline def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
@@ -190,7 +193,8 @@ object mod {
       __obj.asInstanceOf[GraphQLOperationStatus[T]]
     }
     
-    extension [Self <: GraphQLOperationStatus[?], T](x: Self & GraphQLOperationStatus[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphQLOperationStatus[?], T] (val x: Self & GraphQLOperationStatus[T]) extends AnyVal {
       
       inline def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
@@ -217,7 +221,8 @@ object mod {
       __obj.asInstanceOf[HttpError]
     }
     
-    extension [Self <: HttpError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpError] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       

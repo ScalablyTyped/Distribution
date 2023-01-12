@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Mdurl]
     }
     
-    extension [Self <: Mdurl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mdurl] (val x: Self) extends AnyVal {
       
       inline def setMdurl(value: Typeofmdurl): Self = StObject.set(x, "mdurl", value.asInstanceOf[js.Any])
     }
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Typeofmdurl]
     }
     
-    extension [Self <: Typeofmdurl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofmdurl] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: Typeofdecode): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
       

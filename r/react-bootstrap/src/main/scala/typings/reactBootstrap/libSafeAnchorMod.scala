@@ -38,7 +38,8 @@ object libSafeAnchorMod {
       __obj.asInstanceOf[SafeAnchorProps]
     }
     
-    extension [Self <: SafeAnchorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SafeAnchorProps] (val x: Self) extends AnyVal {
       
       inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object AssistiveWindowButtonClickedDetails {
     __obj.asInstanceOf[AssistiveWindowButtonClickedDetails]
   }
   
-  extension [Self <: AssistiveWindowButtonClickedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssistiveWindowButtonClickedDetails] (val x: Self) extends AnyVal {
     
     inline def setButtonID(value: AssistiveWindowButton): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
     

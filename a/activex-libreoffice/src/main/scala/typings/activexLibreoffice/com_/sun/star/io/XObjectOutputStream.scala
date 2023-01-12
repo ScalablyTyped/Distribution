@@ -47,7 +47,8 @@ object XObjectOutputStream {
     __obj.asInstanceOf[XObjectOutputStream]
   }
   
-  extension [Self <: XObjectOutputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XObjectOutputStream] (val x: Self) extends AnyVal {
     
     inline def setWriteObject(value: XPersistObject => Unit): Self = StObject.set(x, "writeObject", js.Any.fromFunction1(value))
   }

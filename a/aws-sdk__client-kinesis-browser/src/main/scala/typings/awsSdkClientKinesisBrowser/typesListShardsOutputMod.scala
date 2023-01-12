@@ -36,7 +36,8 @@ object typesListShardsOutputMod {
       __obj.asInstanceOf[ListShardsOutput]
     }
     
-    extension [Self <: ListShardsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListShardsOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

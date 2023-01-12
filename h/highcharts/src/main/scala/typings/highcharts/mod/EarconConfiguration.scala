@@ -35,7 +35,8 @@ object EarconConfiguration {
     __obj.asInstanceOf[EarconConfiguration]
   }
   
-  extension [Self <: EarconConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EarconConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: js.Function): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

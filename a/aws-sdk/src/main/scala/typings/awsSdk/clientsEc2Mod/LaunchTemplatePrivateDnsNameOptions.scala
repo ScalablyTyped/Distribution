@@ -28,7 +28,8 @@ object LaunchTemplatePrivateDnsNameOptions {
     __obj.asInstanceOf[LaunchTemplatePrivateDnsNameOptions]
   }
   
-  extension [Self <: LaunchTemplatePrivateDnsNameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplatePrivateDnsNameOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableResourceNameDnsAAAARecord(value: Boolean): Self = StObject.set(x, "EnableResourceNameDnsAAAARecord", value.asInstanceOf[js.Any])
     

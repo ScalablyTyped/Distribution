@@ -23,7 +23,8 @@ object Statistics {
     __obj.asInstanceOf[Statistics]
   }
   
-  extension [Self <: Statistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
     
     inline def setApproximateNumberOfObjectsToProcess(value: double): Self = StObject.set(x, "approximateNumberOfObjectsToProcess", value.asInstanceOf[js.Any])
     

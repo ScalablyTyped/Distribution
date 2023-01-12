@@ -162,7 +162,8 @@ object libAltMod {
       __obj.asInstanceOf[Alt[F]]
     }
     
-    extension [Self <: Alt[?], F](x: Self & Alt[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt[?], F] (val x: Self & Alt[F]) extends AnyVal {
       
       inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, Lazy[
@@ -196,7 +197,8 @@ object libAltMod {
       __obj.asInstanceOf[Alt1[F]]
     }
     
-    extension [Self <: Alt1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & Alt1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Alt1[F]) extends AnyVal {
       
       inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any, Lazy[
@@ -230,7 +232,8 @@ object libAltMod {
       __obj.asInstanceOf[Alt2[F]]
     }
     
-    extension [Self <: Alt2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Alt2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Alt2[F]) extends AnyVal {
       
       inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, Lazy[
@@ -265,7 +268,8 @@ object libAltMod {
       __obj.asInstanceOf[Alt2C[F, E]]
     }
     
-    extension [Self <: Alt2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Alt2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Alt2C[F, E])) extends AnyVal {
       
       inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, Lazy[
@@ -299,7 +303,8 @@ object libAltMod {
       __obj.asInstanceOf[Alt3[F]]
     }
     
-    extension [Self <: Alt3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Alt3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Alt3[F]) extends AnyVal {
       
       inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, Lazy[
@@ -334,7 +339,8 @@ object libAltMod {
       __obj.asInstanceOf[Alt3C[F, E]]
     }
     
-    extension [Self <: Alt3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Alt3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Alt3C[F, E])) extends AnyVal {
       
       inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, Lazy[
@@ -368,7 +374,8 @@ object libAltMod {
       __obj.asInstanceOf[Alt4[F]]
     }
     
-    extension [Self <: Alt4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Alt4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Alt4[F]) extends AnyVal {
       
       inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, Lazy[

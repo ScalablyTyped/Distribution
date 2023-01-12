@@ -21,7 +21,8 @@ object MultiTenantTokenCredentialOptions {
     __obj.asInstanceOf[MultiTenantTokenCredentialOptions]
   }
   
-  extension [Self <: MultiTenantTokenCredentialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiTenantTokenCredentialOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionallyAllowedTenants(value: js.Array[String]): Self = StObject.set(x, "additionallyAllowedTenants", value.asInstanceOf[js.Any])
     

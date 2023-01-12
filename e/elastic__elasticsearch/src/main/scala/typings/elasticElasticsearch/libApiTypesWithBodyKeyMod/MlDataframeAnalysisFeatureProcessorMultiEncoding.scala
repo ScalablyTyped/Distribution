@@ -15,7 +15,8 @@ object MlDataframeAnalysisFeatureProcessorMultiEncoding {
     __obj.asInstanceOf[MlDataframeAnalysisFeatureProcessorMultiEncoding]
   }
   
-  extension [Self <: MlDataframeAnalysisFeatureProcessorMultiEncoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalysisFeatureProcessorMultiEncoding] (val x: Self) extends AnyVal {
     
     inline def setProcessors(value: js.Array[integer]): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
     

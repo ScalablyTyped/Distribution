@@ -29,7 +29,8 @@ object buildUtilsInterceptionTypesMod {
       __obj.asInstanceOf[CustomThrottle]
     }
     
-    extension [Self <: CustomThrottle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomThrottle] (val x: Self) extends AnyVal {
       
       inline def setDownloadThroughput(value: Double): Self = StObject.set(x, "downloadThroughput", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object buildUtilsInterceptionTypesMod {
       __obj.asInstanceOf[Matches]
     }
     
-    extension [Self <: Matches](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matches] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | Buffer | JsonCompatible): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object buildUtilsInterceptionTypesMod {
       __obj.asInstanceOf[MockFilterOptions]
     }
     
-    extension [Self <: MockFilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockFilterOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: (Record[String, String]) | (js.Function1[/* headers */ Record[String, String], Boolean])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -244,7 +247,8 @@ object buildUtilsInterceptionTypesMod {
       __obj.asInstanceOf[MockResponseParams]
     }
     
-    extension [Self <: MockResponseParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockResponseParams] (val x: Self) extends AnyVal {
       
       inline def setFetchResponse(value: Boolean): Self = StObject.set(x, "fetchResponse", value.asInstanceOf[js.Any])
       
@@ -359,7 +363,8 @@ object buildUtilsInterceptionTypesMod {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setHasPostData(value: Boolean): Self = StObject.set(x, "hasPostData", value.asInstanceOf[js.Any])
       

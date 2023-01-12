@@ -584,7 +584,8 @@ object libComponentsSearchSearchMod {
       __obj.asInstanceOf[SearchProps]
     }
     
-    extension [Self <: SearchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

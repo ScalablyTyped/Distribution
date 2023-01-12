@@ -28,7 +28,8 @@ object RaphaelAnimation {
     __obj.asInstanceOf[RaphaelAnimation]
   }
   
-  extension [Self <: RaphaelAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelAnimation] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double => RaphaelAnimation): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
     

@@ -323,7 +323,8 @@ object ojaccordionMod {
       __obj.asInstanceOf[ojAccordionEventMap]
     }
     
-    extension [Self <: ojAccordionEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojAccordionEventMap] (val x: Self) extends AnyVal {
       
       inline def setExpandedChanged(value: JetElementCustomEvent[js.Array[Id] | Null]): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
       
@@ -354,7 +355,8 @@ object ojaccordionMod {
       __obj.asInstanceOf[ojAccordionSettableProperties]
     }
     
-    extension [Self <: ojAccordionSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojAccordionSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: js.Array[Double | Id | String]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
@@ -384,7 +386,8 @@ object ojaccordionMod {
       __obj.asInstanceOf[ojAccordionSettablePropertiesLenient]
     }
     
-    extension [Self <: ojAccordionSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojAccordionSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: js.Array[Double | Id | String]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       

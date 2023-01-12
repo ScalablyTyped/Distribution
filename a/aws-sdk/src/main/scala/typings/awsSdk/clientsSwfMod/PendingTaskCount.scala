@@ -23,7 +23,8 @@ object PendingTaskCount {
     __obj.asInstanceOf[PendingTaskCount]
   }
   
-  extension [Self <: PendingTaskCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingTaskCount] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

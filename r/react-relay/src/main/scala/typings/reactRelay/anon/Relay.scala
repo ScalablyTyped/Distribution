@@ -16,7 +16,8 @@ object Relay {
     __obj.asInstanceOf[Relay]
   }
   
-  extension [Self <: Relay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Relay] (val x: Self) extends AnyVal {
     
     inline def setRelay(value: RelayProp): Self = StObject.set(x, "relay", value.asInstanceOf[js.Any])
     

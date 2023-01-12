@@ -61,7 +61,8 @@ object AccessToken {
     __obj.asInstanceOf[AccessToken]
   }
   
-  extension [Self <: AccessToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: typings.oidcProvider.mod.AccessToken): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     

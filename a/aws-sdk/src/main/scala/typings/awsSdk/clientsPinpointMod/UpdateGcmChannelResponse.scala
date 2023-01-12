@@ -15,7 +15,8 @@ object UpdateGcmChannelResponse {
     __obj.asInstanceOf[UpdateGcmChannelResponse]
   }
   
-  extension [Self <: UpdateGcmChannelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGcmChannelResponse] (val x: Self) extends AnyVal {
     
     inline def setGCMChannelResponse(value: GCMChannelResponse): Self = StObject.set(x, "GCMChannelResponse", value.asInstanceOf[js.Any])
   }

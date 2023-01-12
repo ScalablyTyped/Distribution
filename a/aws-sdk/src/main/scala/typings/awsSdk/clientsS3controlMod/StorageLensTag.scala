@@ -23,7 +23,8 @@ object StorageLensTag {
     __obj.asInstanceOf[StorageLensTag]
   }
   
-  extension [Self <: StorageLensTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageLensTag] (val x: Self) extends AnyVal {
     
     inline def setKey(value: TagKeyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

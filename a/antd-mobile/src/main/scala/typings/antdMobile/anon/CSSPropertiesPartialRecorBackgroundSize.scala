@@ -9971,7 +9971,8 @@ object CSSPropertiesPartialRecorBackgroundSize {
     __obj.asInstanceOf[CSSPropertiesPartialRecorBackgroundSize]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorBackgroundSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorBackgroundSize] (val x: Self) extends AnyVal {
     
     inline def `set--background`(value: String): Self = StObject.set(x, "--background", value.asInstanceOf[js.Any])
     

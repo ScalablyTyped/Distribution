@@ -35,7 +35,8 @@ object PublicDelegatedPrefixList {
     __obj.asInstanceOf[PublicDelegatedPrefixList]
   }
   
-  extension [Self <: PublicDelegatedPrefixList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicDelegatedPrefixList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

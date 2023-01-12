@@ -23,7 +23,8 @@ object GetMapGlyphsResponse {
     __obj.asInstanceOf[GetMapGlyphsResponse]
   }
   
-  extension [Self <: GetMapGlyphsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMapGlyphsResponse] (val x: Self) extends AnyVal {
     
     inline def setBlob(value: _Blob): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
     

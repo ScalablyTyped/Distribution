@@ -23,7 +23,8 @@ object ProjectStatus {
     __obj.asInstanceOf[ProjectStatus]
   }
   
-  extension [Self <: ProjectStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectStatus] (val x: Self) extends AnyVal {
     
     inline def setReason(value: Reason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

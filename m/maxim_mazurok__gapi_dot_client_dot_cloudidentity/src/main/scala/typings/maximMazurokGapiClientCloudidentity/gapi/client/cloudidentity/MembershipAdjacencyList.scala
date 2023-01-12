@@ -22,7 +22,8 @@ object MembershipAdjacencyList {
     __obj.asInstanceOf[MembershipAdjacencyList]
   }
   
-  extension [Self <: MembershipAdjacencyList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MembershipAdjacencyList] (val x: Self) extends AnyVal {
     
     inline def setEdges(value: js.Array[Membership]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     

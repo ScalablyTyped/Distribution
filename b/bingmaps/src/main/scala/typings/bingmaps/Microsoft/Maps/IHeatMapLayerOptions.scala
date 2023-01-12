@@ -56,7 +56,8 @@ object IHeatMapLayerOptions {
     __obj.asInstanceOf[IHeatMapLayerOptions]
   }
   
-  extension [Self <: IHeatMapLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHeatMapLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setColorGradient(value: IDictionary[String]): Self = StObject.set(x, "colorGradient", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object LockedDocumentRequest {
     __obj.asInstanceOf[LockedDocumentRequest]
   }
   
-  extension [Self <: LockedDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LockedDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentURL(value: String): Self = StObject.set(x, "DocumentURL", value.asInstanceOf[js.Any])
     

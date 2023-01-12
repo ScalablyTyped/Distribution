@@ -22,7 +22,8 @@ object dxChartSeriesTypesStackedAreaSeriesAggregation {
     __obj.asInstanceOf[dxChartSeriesTypesStackedAreaSeriesAggregation]
   }
   
-  extension [Self <: dxChartSeriesTypesStackedAreaSeriesAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartSeriesTypesStackedAreaSeriesAggregation] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: ChartSingleValueSeriesAggregationMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object ICheckboxGroup {
     __obj.asInstanceOf[ICheckboxGroup]
   }
   
-  extension [Self <: ICheckboxGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICheckboxGroup] (val x: Self) extends AnyVal {
     
     inline def setAutoFlex(value: Boolean): Self = StObject.set(x, "autoFlex", value.asInstanceOf[js.Any])
     

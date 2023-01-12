@@ -18,7 +18,8 @@ object DescribeApplicationsMessage {
     __obj.asInstanceOf[DescribeApplicationsMessage]
   }
   
-  extension [Self <: DescribeApplicationsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeApplicationsMessage] (val x: Self) extends AnyVal {
     
     inline def setApplicationNames(value: ApplicationNamesList): Self = StObject.set(x, "ApplicationNames", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Key[T]]
     }
     
-    extension [Self <: Key[?], T](x: Self & Key[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key[?], T] (val x: Self & Key[T]) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Value[T]]
     }
     
-    extension [Self <: Value[?], T](x: Self & Value[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value[?], T] (val x: Self & Value[T]) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

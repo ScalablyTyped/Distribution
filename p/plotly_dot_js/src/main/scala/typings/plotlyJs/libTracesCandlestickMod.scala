@@ -135,7 +135,8 @@ object libTracesCandlestickMod {
       __obj.asInstanceOf[CandlestickData]
     }
     
-    extension [Self <: CandlestickData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CandlestickData] (val x: Self) extends AnyVal {
       
       inline def setClose(value: js.Array[Double]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object InitialiseOptions {
     __obj.asInstanceOf[InitialiseOptions]
   }
   
-  extension [Self <: InitialiseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialiseOptions] (val x: Self) extends AnyVal {
     
     inline def setConfigDir(value: String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
     

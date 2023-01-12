@@ -16,7 +16,8 @@ object `9` {
     __obj.asInstanceOf[`9`]
   }
   
-  extension [Self <: `9`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `9`] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: CardDotThumbnail): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object ShouldUseAutoFallback {
     __obj.asInstanceOf[ShouldUseAutoFallback]
   }
   
-  extension [Self <: ShouldUseAutoFallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShouldUseAutoFallback] (val x: Self) extends AnyVal {
     
     inline def setShouldUseAutoFallback(value: Boolean): Self = StObject.set(x, "shouldUseAutoFallback", value.asInstanceOf[js.Any])
     

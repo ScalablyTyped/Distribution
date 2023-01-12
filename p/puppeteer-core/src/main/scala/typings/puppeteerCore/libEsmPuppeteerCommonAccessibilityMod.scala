@@ -168,7 +168,8 @@ object libEsmPuppeteerCommonAccessibilityMod {
       __obj.asInstanceOf[SerializedAXNode]
     }
     
-    extension [Self <: SerializedAXNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedAXNode] (val x: Self) extends AnyVal {
       
       inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
@@ -297,7 +298,8 @@ object libEsmPuppeteerCommonAccessibilityMod {
       __obj.asInstanceOf[SnapshotOptions]
     }
     
-    extension [Self <: SnapshotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotOptions] (val x: Self) extends AnyVal {
       
       inline def setInterestingOnly(value: Boolean): Self = StObject.set(x, "interestingOnly", value.asInstanceOf[js.Any])
       

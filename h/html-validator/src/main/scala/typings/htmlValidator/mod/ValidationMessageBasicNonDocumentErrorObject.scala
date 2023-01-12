@@ -22,7 +22,8 @@ object ValidationMessageBasicNonDocumentErrorObject {
     __obj.asInstanceOf[ValidationMessageBasicNonDocumentErrorObject]
   }
   
-  extension [Self <: ValidationMessageBasicNonDocumentErrorObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationMessageBasicNonDocumentErrorObject] (val x: Self) extends AnyVal {
     
     inline def setSubType(value: internal | io | schema): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GoogleCloudMlV1EncryptionConfig {
     __obj.asInstanceOf[GoogleCloudMlV1EncryptionConfig]
   }
   
-  extension [Self <: GoogleCloudMlV1EncryptionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1EncryptionConfig] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     

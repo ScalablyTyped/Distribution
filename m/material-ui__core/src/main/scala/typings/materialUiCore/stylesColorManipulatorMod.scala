@@ -70,7 +70,8 @@ object stylesColorManipulatorMod {
       __obj.asInstanceOf[ColorObject]
     }
     
-    extension [Self <: ColorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorObject] (val x: Self) extends AnyVal {
       
       inline def setType(value: ColorFormat): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[SplitterLayoutProps]
     }
     
-    extension [Self <: SplitterLayoutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterLayoutProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

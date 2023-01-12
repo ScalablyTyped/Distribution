@@ -21,7 +21,8 @@ object IgSliderMethods {
     __obj.asInstanceOf[IgSliderMethods]
   }
   
-  extension [Self <: IgSliderMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgSliderMethods] (val x: Self) extends AnyVal {
     
     inline def setClearBookmarks(value: () => Unit): Self = StObject.set(x, "clearBookmarks", js.Any.fromFunction0(value))
     

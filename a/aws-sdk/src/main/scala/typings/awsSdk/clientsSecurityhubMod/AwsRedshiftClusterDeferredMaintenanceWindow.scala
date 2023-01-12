@@ -28,7 +28,8 @@ object AwsRedshiftClusterDeferredMaintenanceWindow {
     __obj.asInstanceOf[AwsRedshiftClusterDeferredMaintenanceWindow]
   }
   
-  extension [Self <: AwsRedshiftClusterDeferredMaintenanceWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterDeferredMaintenanceWindow] (val x: Self) extends AnyVal {
     
     inline def setDeferMaintenanceEndTime(value: NonEmptyString): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
     

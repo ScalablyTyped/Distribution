@@ -18,7 +18,8 @@ object ClearRulesOptions {
     __obj.asInstanceOf[ClearRulesOptions]
   }
   
-  extension [Self <: ClearRulesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearRulesOptions] (val x: Self) extends AnyVal {
     
     inline def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
     

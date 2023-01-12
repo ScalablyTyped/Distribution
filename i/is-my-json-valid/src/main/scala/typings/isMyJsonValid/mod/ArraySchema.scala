@@ -19,7 +19,8 @@ object ArraySchema {
     __obj.asInstanceOf[ArraySchema[ItemSchema]]
   }
   
-  extension [Self <: ArraySchema[?], ItemSchema /* <: AnySchema */](x: Self & ArraySchema[ItemSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArraySchema[?], ItemSchema /* <: AnySchema */] (val x: Self & ArraySchema[ItemSchema]) extends AnyVal {
     
     inline def setItems(value: ItemSchema): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

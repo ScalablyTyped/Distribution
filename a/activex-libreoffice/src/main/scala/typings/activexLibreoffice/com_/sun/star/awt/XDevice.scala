@@ -75,7 +75,8 @@ object XDevice {
     __obj.asInstanceOf[XDevice]
   }
   
-  extension [Self <: XDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDevice] (val x: Self) extends AnyVal {
     
     inline def setCreateBitmap(value: (Double, Double, Double, Double) => XBitmap): Self = StObject.set(x, "createBitmap", js.Any.fromFunction4(value))
     

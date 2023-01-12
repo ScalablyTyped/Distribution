@@ -18,7 +18,8 @@ object AwsCertificateManagerCertificateOptions {
     __obj.asInstanceOf[AwsCertificateManagerCertificateOptions]
   }
   
-  extension [Self <: AwsCertificateManagerCertificateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCertificateManagerCertificateOptions] (val x: Self) extends AnyVal {
     
     inline def setCertificateTransparencyLoggingPreference(value: NonEmptyString): Self = StObject.set(x, "CertificateTransparencyLoggingPreference", value.asInstanceOf[js.Any])
     

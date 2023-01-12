@@ -17,7 +17,8 @@ object MergedRollupOptions {
     __obj.asInstanceOf[MergedRollupOptions]
   }
   
-  extension [Self <: MergedRollupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergedRollupOptions] (val x: Self) extends AnyVal {
     
     inline def setOutput(value: js.Array[OutputOptions]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

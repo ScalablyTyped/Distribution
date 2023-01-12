@@ -27,7 +27,8 @@ object SearchTableProperties {
     __obj.asInstanceOf[SearchTableProperties]
   }
   
-  extension [Self <: SearchTableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchTableProperties] (val x: Self) extends AnyVal {
     
     inline def setField(value: SearchTableFieldProperties): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

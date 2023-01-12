@@ -18,7 +18,8 @@ object EnclaveOptions {
     __obj.asInstanceOf[EnclaveOptions]
   }
   
-  extension [Self <: EnclaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnclaveOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

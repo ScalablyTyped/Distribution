@@ -62,7 +62,8 @@ object libComponentsAnnotationBaseMod {
       __obj.asInstanceOf[IAnnotationBaseProps]
     }
     
-    extension [Self <: IAnnotationBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnnotationBaseProps] (val x: Self) extends AnyVal {
       
       inline def setChartIns(value: Any): Self = StObject.set(x, "chartIns", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object RegisterWebhookWithThirdPartyInput {
     __obj.asInstanceOf[RegisterWebhookWithThirdPartyInput]
   }
   
-  extension [Self <: RegisterWebhookWithThirdPartyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterWebhookWithThirdPartyInput] (val x: Self) extends AnyVal {
     
     inline def setWebhookName(value: WebhookName): Self = StObject.set(x, "webhookName", value.asInstanceOf[js.Any])
     

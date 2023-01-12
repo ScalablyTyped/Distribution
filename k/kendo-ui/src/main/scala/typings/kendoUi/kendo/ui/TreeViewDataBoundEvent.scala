@@ -18,7 +18,8 @@ object TreeViewDataBoundEvent {
     __obj.asInstanceOf[TreeViewDataBoundEvent]
   }
   
-  extension [Self <: TreeViewDataBoundEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeViewDataBoundEvent] (val x: Self) extends AnyVal {
     
     inline def setNode(value: JQuery): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

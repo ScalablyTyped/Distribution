@@ -21,7 +21,8 @@ object MenuItem {
     __obj.asInstanceOf[MenuItem]
   }
   
-  extension [Self <: MenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItem] (val x: Self) extends AnyVal {
     
     inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     

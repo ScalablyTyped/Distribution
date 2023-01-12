@@ -43,7 +43,8 @@ object UpdateServiceInstanceInput {
     __obj.asInstanceOf[UpdateServiceInstanceInput]
   }
   
-  extension [Self <: UpdateServiceInstanceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateServiceInstanceInput] (val x: Self) extends AnyVal {
     
     inline def setDeploymentType(value: DeploymentUpdateType): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
     

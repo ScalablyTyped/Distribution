@@ -35,7 +35,8 @@ object CalendarListInput {
     __obj.asInstanceOf[CalendarListInput]
   }
   
-  extension [Self <: CalendarListInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarListInput] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

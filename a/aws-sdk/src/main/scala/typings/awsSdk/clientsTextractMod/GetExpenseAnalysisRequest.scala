@@ -28,7 +28,8 @@ object GetExpenseAnalysisRequest {
     __obj.asInstanceOf[GetExpenseAnalysisRequest]
   }
   
-  extension [Self <: GetExpenseAnalysisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExpenseAnalysisRequest] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

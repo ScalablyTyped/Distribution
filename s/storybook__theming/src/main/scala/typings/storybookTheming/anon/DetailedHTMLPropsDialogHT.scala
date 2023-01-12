@@ -640,7 +640,8 @@ object DetailedHTMLPropsDialogHT {
     __obj.asInstanceOf[DetailedHTMLPropsDialogHT]
   }
   
-  extension [Self <: DetailedHTMLPropsDialogHT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedHTMLPropsDialogHT] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object RoomPermissions {
     __obj.asInstanceOf[RoomPermissions]
   }
   
-  extension [Self <: RoomPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomPermissions] (val x: Self) extends AnyVal {
     
     inline def setAllowNameChange(value: Boolean): Self = StObject.set(x, "allowNameChange", value.asInstanceOf[js.Any])
     

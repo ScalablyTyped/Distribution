@@ -28,7 +28,8 @@ object GeoMatchSet {
     __obj.asInstanceOf[GeoMatchSet]
   }
   
-  extension [Self <: GeoMatchSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoMatchSet] (val x: Self) extends AnyVal {
     
     inline def setGeoMatchConstraints(value: GeoMatchConstraints): Self = StObject.set(x, "GeoMatchConstraints", value.asInstanceOf[js.Any])
     

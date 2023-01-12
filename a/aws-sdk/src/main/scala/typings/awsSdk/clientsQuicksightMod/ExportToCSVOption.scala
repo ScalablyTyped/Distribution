@@ -18,7 +18,8 @@ object ExportToCSVOption {
     __obj.asInstanceOf[ExportToCSVOption]
   }
   
-  extension [Self <: ExportToCSVOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportToCSVOption] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityStatus(value: DashboardBehavior): Self = StObject.set(x, "AvailabilityStatus", value.asInstanceOf[js.Any])
     

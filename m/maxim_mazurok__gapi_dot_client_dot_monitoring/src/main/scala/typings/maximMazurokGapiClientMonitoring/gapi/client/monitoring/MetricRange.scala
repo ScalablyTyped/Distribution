@@ -19,7 +19,8 @@ object MetricRange {
     __obj.asInstanceOf[MetricRange]
   }
   
-  extension [Self <: MetricRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricRange] (val x: Self) extends AnyVal {
     
     inline def setRange(value: GoogleMonitoringV3Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

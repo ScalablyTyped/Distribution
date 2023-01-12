@@ -53,7 +53,8 @@ object RxNormAttribute {
     __obj.asInstanceOf[RxNormAttribute]
   }
   
-  extension [Self <: RxNormAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RxNormAttribute] (val x: Self) extends AnyVal {
     
     inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     

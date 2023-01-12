@@ -32,7 +32,8 @@ object ImportBinding {
     __obj.asInstanceOf[ImportBinding]
   }
   
-  extension [Self <: ImportBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportBinding] (val x: Self) extends AnyVal {
     
     inline def setImported(value: String): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
     

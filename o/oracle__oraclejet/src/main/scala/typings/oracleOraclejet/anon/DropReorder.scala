@@ -19,7 +19,8 @@ object DropReorder {
     __obj.asInstanceOf[DropReorder[K, D]]
   }
   
-  extension [Self <: DropReorder[?, ?], K, D](x: Self & (DropReorder[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropReorder[?, ?], K, D] (val x: Self & (DropReorder[K, D])) extends AnyVal {
     
     inline def setDrag(value: Rows[K, D]): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     

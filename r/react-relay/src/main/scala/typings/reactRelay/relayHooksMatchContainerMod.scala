@@ -32,7 +32,8 @@ object relayHooksMatchContainerMod {
       __obj.asInstanceOf[MatchContainerProps[TProps, TFallback]]
     }
     
-    extension [Self <: MatchContainerProps[?, ?], TProps, TFallback](x: Self & (MatchContainerProps[TProps, TFallback])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchContainerProps[?, ?], TProps, TFallback] (val x: Self & (MatchContainerProps[TProps, TFallback])) extends AnyVal {
       
       inline def setFallback(value: TFallback): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object relayHooksMatchContainerMod {
       __obj.asInstanceOf[MatchPointer]
     }
     
-    extension [Self <: MatchPointer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchPointer] (val x: Self) extends AnyVal {
       
       inline def setSpace$fragmentSpreads(value: Any): Self = StObject.set(x, " $fragmentSpreads", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object relayHooksMatchContainerMod {
       __obj.asInstanceOf[TypenameOnlyPointer]
     }
     
-    extension [Self <: TypenameOnlyPointer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypenameOnlyPointer] (val x: Self) extends AnyVal {
       
       inline def set__typename(value: String): Self = StObject.set(x, "__typename", value.asInstanceOf[js.Any])
     }

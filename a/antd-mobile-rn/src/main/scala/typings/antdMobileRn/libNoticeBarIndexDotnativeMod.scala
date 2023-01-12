@@ -54,7 +54,8 @@ object libNoticeBarIndexDotnativeMod {
       __obj.asInstanceOf[NoticeNativeProps]
     }
     
-    extension [Self <: NoticeNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoticeNativeProps] (val x: Self) extends AnyVal {
       
       inline def setMarqueeProps(value: MarqueeProps): Self = StObject.set(x, "marqueeProps", value.asInstanceOf[js.Any])
       

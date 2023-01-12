@@ -120,7 +120,8 @@ object auth {
       __obj.asInstanceOf[XSSOAcceptorContext]
     }
     
-    extension [Self <: XSSOAcceptorContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSSOAcceptorContext] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: SeqEquiv[Double] => SafeArray[Double]): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
     }
@@ -205,7 +206,8 @@ object auth {
       __obj.asInstanceOf[XSSOContext]
     }
     
-    extension [Self <: XSSOContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSSOContext] (val x: Self) extends AnyVal {
       
       inline def setGetMechanism(value: () => String): Self = StObject.set(x, "getMechanism", js.Any.fromFunction0(value))
       
@@ -266,7 +268,8 @@ object auth {
       __obj.asInstanceOf[XSSOInitiatorContext]
     }
     
-    extension [Self <: XSSOInitiatorContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSSOInitiatorContext] (val x: Self) extends AnyVal {
       
       inline def setInit(value: SeqEquiv[Double] => SafeArray[Double]): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }
@@ -323,7 +326,8 @@ object auth {
       __obj.asInstanceOf[XSSOManager]
     }
     
-    extension [Self <: XSSOManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSSOManager] (val x: Self) extends AnyVal {
       
       inline def setCreateAcceptorContext(value: String => XSSOAcceptorContext): Self = StObject.set(x, "createAcceptorContext", js.Any.fromFunction1(value))
       
@@ -368,7 +372,8 @@ object auth {
       __obj.asInstanceOf[XSSOManagerFactory]
     }
     
-    extension [Self <: XSSOManagerFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSSOManagerFactory] (val x: Self) extends AnyVal {
       
       inline def setGetSSOManager(value: () => XSSOManager): Self = StObject.set(x, "getSSOManager", js.Any.fromFunction0(value))
       
@@ -426,7 +431,8 @@ object auth {
       __obj.asInstanceOf[XSSOPasswordCache]
     }
     
-    extension [Self <: XSSOPasswordCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSSOPasswordCache] (val x: Self) extends AnyVal {
       
       inline def setAddPassword(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "addPassword", js.Any.fromFunction3(value))
       

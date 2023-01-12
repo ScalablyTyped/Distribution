@@ -66,7 +66,8 @@ object Reverb {
   def time: Double = js.native
   inline def time_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
   
-  extension [Self <: Reverb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reverb] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: AudioNode => Reverb): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     

@@ -34,7 +34,8 @@ object HeightStylePropsdisabledb {
     __obj.asInstanceOf[HeightStylePropsdisabledb]
   }
   
-  extension [Self <: HeightStylePropsdisabledb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeightStylePropsdisabledb] (val x: Self) extends AnyVal {
     
     inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     

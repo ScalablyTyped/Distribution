@@ -15,7 +15,8 @@ object DetailedReportOptions {
     __obj.asInstanceOf[DetailedReportOptions]
   }
   
-  extension [Self <: DetailedReportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedReportOptions] (val x: Self) extends AnyVal {
     
     inline def setAssetsPerBundle(value: Double): Self = StObject.set(x, "assetsPerBundle", value.asInstanceOf[js.Any])
     

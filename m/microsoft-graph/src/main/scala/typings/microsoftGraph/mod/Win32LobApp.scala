@@ -54,7 +54,8 @@ object Win32LobApp {
     __obj.asInstanceOf[Win32LobApp]
   }
   
-  extension [Self <: Win32LobApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Win32LobApp] (val x: Self) extends AnyVal {
     
     inline def setApplicableArchitectures(value: WindowsArchitecture): Self = StObject.set(x, "applicableArchitectures", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object EmbeddedSession {
     __obj.asInstanceOf[EmbeddedSession]
   }
   
-  extension [Self <: EmbeddedSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedSession] (val x: Self) extends AnyVal {
     
     inline def setInit(value: () => js.Promise[Any]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
   }

@@ -17,7 +17,8 @@ object ImageRange {
     __obj.asInstanceOf[ImageRange]
   }
   
-  extension [Self <: ImageRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageRange] (val x: Self) extends AnyVal {
     
     inline def setBr(value: Anchor): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
     

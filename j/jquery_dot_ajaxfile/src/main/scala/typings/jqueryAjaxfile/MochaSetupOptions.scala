@@ -37,7 +37,8 @@ object MochaSetupOptions {
     __obj.asInstanceOf[MochaSetupOptions]
   }
   
-  extension [Self <: MochaSetupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MochaSetupOptions] (val x: Self) extends AnyVal {
     
     inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
     

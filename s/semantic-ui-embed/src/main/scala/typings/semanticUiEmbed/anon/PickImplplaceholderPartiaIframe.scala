@@ -23,7 +23,8 @@ object PickImplplaceholderPartiaIframe {
     __obj.asInstanceOf[PickImplplaceholderPartiaIframe]
   }
   
-  extension [Self <: PickImplplaceholderPartiaIframe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplplaceholderPartiaIframe] (val x: Self) extends AnyVal {
     
     inline def setIframe(value: (/* url */ String, /* parameters */ String) => String): Self = StObject.set(x, "iframe", js.Any.fromFunction2(value))
     

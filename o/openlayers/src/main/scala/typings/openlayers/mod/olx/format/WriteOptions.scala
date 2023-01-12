@@ -22,7 +22,8 @@ object WriteOptions {
     __obj.asInstanceOf[WriteOptions]
   }
   
-  extension [Self <: WriteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
     
     inline def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
     

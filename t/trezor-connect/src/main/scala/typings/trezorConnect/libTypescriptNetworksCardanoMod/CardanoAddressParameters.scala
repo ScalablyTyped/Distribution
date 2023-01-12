@@ -27,7 +27,8 @@ object CardanoAddressParameters {
     __obj.asInstanceOf[CardanoAddressParameters]
   }
   
-  extension [Self <: CardanoAddressParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoAddressParameters] (val x: Self) extends AnyVal {
     
     inline def setAddressType(value: typings.trezorConnect.libTypescriptTrezorProtobufMod.CardanoAddressType): Self = StObject.set(x, "addressType", value.asInstanceOf[js.Any])
     

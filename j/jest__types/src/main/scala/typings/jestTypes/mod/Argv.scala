@@ -210,7 +210,8 @@ object Argv {
     __obj.asInstanceOf[Argv]
   }
   
-  extension [Self <: Argv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Argv] (val x: Self) extends AnyVal {
     
     inline def set$0(value: String): Self = StObject.set(x, "$0", value.asInstanceOf[js.Any])
     

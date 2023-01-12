@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Decimal]
     }
     
-    extension [Self <: Decimal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decimal] (val x: Self) extends AnyVal {
       
       inline def setDecimal(value: formal | informal): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: BRL | EUR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

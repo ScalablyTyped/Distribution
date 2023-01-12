@@ -81,7 +81,8 @@ object RuneDto {
     __obj.asInstanceOf[RuneDto]
   }
   
-  extension [Self <: RuneDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuneDto] (val x: Self) extends AnyVal {
     
     inline def setColloq(value: String): Self = StObject.set(x, "colloq", value.asInstanceOf[js.Any])
     

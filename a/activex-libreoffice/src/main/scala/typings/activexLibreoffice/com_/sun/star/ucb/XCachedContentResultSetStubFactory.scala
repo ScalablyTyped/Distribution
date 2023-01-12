@@ -31,7 +31,8 @@ object XCachedContentResultSetStubFactory {
     __obj.asInstanceOf[XCachedContentResultSetStubFactory]
   }
   
-  extension [Self <: XCachedContentResultSetStubFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCachedContentResultSetStubFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateCachedContentResultSetStub(value: XResultSet => XResultSet): Self = StObject.set(x, "createCachedContentResultSetStub", js.Any.fromFunction1(value))
   }

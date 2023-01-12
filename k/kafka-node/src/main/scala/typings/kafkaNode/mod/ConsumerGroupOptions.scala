@@ -76,7 +76,8 @@ object ConsumerGroupOptions {
     __obj.asInstanceOf[ConsumerGroupOptions]
   }
   
-  extension [Self <: ConsumerGroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerGroupOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
     

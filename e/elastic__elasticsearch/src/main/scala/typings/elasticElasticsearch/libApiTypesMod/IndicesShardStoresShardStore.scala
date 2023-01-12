@@ -39,7 +39,8 @@ object IndicesShardStoresShardStore {
     __obj.asInstanceOf[IndicesShardStoresShardStore]
   }
   
-  extension [Self <: IndicesShardStoresShardStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesShardStoresShardStore] (val x: Self) extends AnyVal {
     
     inline def setAllocation(value: IndicesShardStoresShardStoreAllocation): Self = StObject.set(x, "allocation", value.asInstanceOf[js.Any])
     

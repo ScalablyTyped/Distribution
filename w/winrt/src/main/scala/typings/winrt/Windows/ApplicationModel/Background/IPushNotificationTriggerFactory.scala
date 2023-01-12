@@ -15,7 +15,8 @@ object IPushNotificationTriggerFactory {
     __obj.asInstanceOf[IPushNotificationTriggerFactory]
   }
   
-  extension [Self <: IPushNotificationTriggerFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPushNotificationTriggerFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: String => PushNotificationTrigger): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

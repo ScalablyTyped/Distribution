@@ -60,7 +60,8 @@ object AsyncPolling {
     __obj.asInstanceOf[AsyncPolling]
   }
   
-  extension [Self <: AsyncPolling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncPolling] (val x: Self) extends AnyVal {
     
     inline def setAsyncPolling(value: Boolean): Self = StObject.set(x, "asyncPolling", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[MarkerPropsPixiOverlay]
     }
     
-    extension [Self <: MarkerPropsPixiOverlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerPropsPixiOverlay] (val x: Self) extends AnyVal {
       
       inline def setCustomIcon(value: String): Self = StObject.set(x, "customIcon", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object mod {
       __obj.asInstanceOf[PixiOverlayProps]
     }
     
-    extension [Self <: PixiOverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PixiOverlayProps] (val x: Self) extends AnyVal {
       
       inline def setMarkers(value: MarkersPropsPixiOverlay): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
       

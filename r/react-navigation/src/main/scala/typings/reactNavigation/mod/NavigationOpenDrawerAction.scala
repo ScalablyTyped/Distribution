@@ -21,7 +21,8 @@ object NavigationOpenDrawerAction {
     __obj.asInstanceOf[NavigationOpenDrawerAction]
   }
   
-  extension [Self <: NavigationOpenDrawerAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationOpenDrawerAction] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

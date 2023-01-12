@@ -58,7 +58,8 @@ object UpdateIndexRequest {
     __obj.asInstanceOf[UpdateIndexRequest]
   }
   
-  extension [Self <: UpdateIndexRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateIndexRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacityUnits(value: CapacityUnitsConfiguration): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
     

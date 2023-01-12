@@ -25,7 +25,8 @@ object MacroKeywordDefinition {
     __obj.asInstanceOf[MacroKeywordDefinition]
   }
   
-  extension [Self <: MacroKeywordDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MacroKeywordDefinition] (val x: Self) extends AnyVal {
     
     inline def setMacro(value: (/* schema */ Any, /* parentSchema */ AnySchemaObject, /* it */ SchemaCxt) => AnySchema): Self = StObject.set(x, "macro", js.Any.fromFunction3(value))
   }

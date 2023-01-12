@@ -18,7 +18,8 @@ object IThemedTokenScopeExplanation {
     __obj.asInstanceOf[IThemedTokenScopeExplanation]
   }
   
-  extension [Self <: IThemedTokenScopeExplanation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IThemedTokenScopeExplanation] (val x: Self) extends AnyVal {
     
     inline def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
     

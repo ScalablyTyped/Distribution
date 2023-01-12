@@ -21,7 +21,8 @@ object AbsoluteLocation {
     __obj.asInstanceOf[AbsoluteLocation]
   }
   
-  extension [Self <: AbsoluteLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbsoluteLocation] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

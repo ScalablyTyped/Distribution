@@ -123,7 +123,8 @@ object VboxInfoData {
     __obj.asInstanceOf[VboxInfoData]
   }
   
-  extension [Self <: VboxInfoData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VboxInfoData] (val x: Self) extends AnyVal {
     
     inline def setAcpi(value: Boolean): Self = StObject.set(x, "acpi", value.asInstanceOf[js.Any])
     

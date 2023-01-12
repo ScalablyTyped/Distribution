@@ -25,7 +25,8 @@ object MediaTrackCapabilities {
     __obj.asInstanceOf[MediaTrackCapabilities]
   }
   
-  extension [Self <: MediaTrackCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaTrackCapabilities] (val x: Self) extends AnyVal {
     
     inline def setLatency(value: DoubleRange): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     

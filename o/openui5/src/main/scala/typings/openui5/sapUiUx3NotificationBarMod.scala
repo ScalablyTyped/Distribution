@@ -596,7 +596,8 @@ object sapUiUx3NotificationBarMod {
       __obj.asInstanceOf[NotificationBarSettings]
     }
     
-    extension [Self <: NotificationBarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationBarSettings] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowToggler(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "alwaysShowToggler", value.asInstanceOf[js.Any])
       

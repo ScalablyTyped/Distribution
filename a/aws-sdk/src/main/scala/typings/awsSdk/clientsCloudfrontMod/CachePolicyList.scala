@@ -33,7 +33,8 @@ object CachePolicyList {
     __obj.asInstanceOf[CachePolicyList]
   }
   
-  extension [Self <: CachePolicyList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CachePolicyList] (val x: Self) extends AnyVal {
     
     inline def setItems(value: CachePolicySummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

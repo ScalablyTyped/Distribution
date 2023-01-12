@@ -23,7 +23,8 @@ object ZIndexOptions {
     __obj.asInstanceOf[ZIndexOptions]
   }
   
-  extension [Self <: ZIndexOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZIndexOptions] (val x: Self) extends AnyVal {
     
     inline def setMenu(value: Double): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     

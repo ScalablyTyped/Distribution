@@ -41,7 +41,8 @@ object Codeblock {
     __obj.asInstanceOf[Codeblock]
   }
   
-  extension [Self <: Codeblock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Codeblock] (val x: Self) extends AnyVal {
     
     inline def setCode_block(value: scala.Any): Self = StObject.set(x, "code_block", value.asInstanceOf[js.Any])
     

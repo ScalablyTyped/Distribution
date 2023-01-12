@@ -20,7 +20,8 @@ object CardanoGetPublicKey {
     __obj.asInstanceOf[CardanoGetPublicKey]
   }
   
-  extension [Self <: CardanoGetPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoGetPublicKey] (val x: Self) extends AnyVal {
     
     inline def setDerivationType(value: CardanoDerivationType): Self = StObject.set(x, "derivationType", value.asInstanceOf[js.Any])
     

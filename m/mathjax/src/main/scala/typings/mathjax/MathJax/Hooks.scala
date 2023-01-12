@@ -23,7 +23,8 @@ object Hooks {
     __obj.asInstanceOf[Hooks]
   }
   
-  extension [Self <: Hooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Any, Double) => CallbackObject): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

@@ -135,7 +135,8 @@ object mod {
       __obj.asInstanceOf[AxeAnalysis]
     }
     
-    extension [Self <: AxeAnalysis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxeAnalysis] (val x: Self) extends AnyVal {
       
       inline def setInapplicable(value: js.Array[Result]): Self = StObject.set(x, "inapplicable", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object mod {
       __obj.asInstanceOf[BuilderOptions]
     }
     
-    extension [Self <: BuilderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuilderOptions] (val x: Self) extends AnyVal {
       
       inline def setLogIframeErrors(value: Boolean): Self = StObject.set(x, "logIframeErrors", value.asInstanceOf[js.Any])
       

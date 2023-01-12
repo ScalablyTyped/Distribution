@@ -47,7 +47,8 @@ object libTypescriptNetworksEosMod {
       __obj.asInstanceOf[EosAuthorization]
     }
     
-    extension [Self <: EosAuthorization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EosAuthorization] (val x: Self) extends AnyVal {
       
       inline def setAccounts(value: js.Array[Permission]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object libTypescriptNetworksEosMod {
       __obj.asInstanceOf[EosGetPublicKey]
     }
     
-    extension [Self <: EosGetPublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EosGetPublicKey] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String | js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object libTypescriptNetworksEosMod {
       __obj.asInstanceOf[EosPublicKey]
     }
     
-    extension [Self <: EosPublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EosPublicKey] (val x: Self) extends AnyVal {
       
       inline def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object libTypescriptNetworksEosMod {
       __obj.asInstanceOf[EosSDKTransaction]
     }
     
-    extension [Self <: EosSDKTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EosSDKTransaction] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[EosTxAction | EosTxActionCommonnamestri]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -161,7 +165,8 @@ object libTypescriptNetworksEosMod {
       __obj.asInstanceOf[EosSignTransaction]
     }
     
-    extension [Self <: EosSignTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EosSignTransaction] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String | js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -268,7 +273,8 @@ object libTypescriptNetworksEosMod {
       __obj.asInstanceOf[EosTxActionCommon]
     }
     
-    extension [Self <: EosTxActionCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EosTxActionCommon] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -306,7 +312,8 @@ object libTypescriptNetworksEosMod {
       __obj.asInstanceOf[EosTxHeader]
     }
     
-    extension [Self <: EosTxHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EosTxHeader] (val x: Self) extends AnyVal {
       
       inline def setDelaySec(value: Double): Self = StObject.set(x, "delaySec", value.asInstanceOf[js.Any])
       

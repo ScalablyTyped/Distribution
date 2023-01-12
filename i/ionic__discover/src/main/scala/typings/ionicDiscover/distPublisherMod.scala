@@ -79,7 +79,8 @@ object distPublisherMod {
       __obj.asInstanceOf[IPublisherEventEmitter]
     }
     
-    extension [Self <: IPublisherEventEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPublisherEventEmitter] (val x: Self) extends AnyVal {
       
       inline def setOn(value: (error, js.Function1[/* err */ js.Error, Unit]) => IPublisherEventEmitter): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
@@ -98,7 +99,8 @@ object distPublisherMod {
       __obj.asInstanceOf[Interface]
     }
     
-    extension [Self <: Interface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interface] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object distPublisherMod {
       __obj.asInstanceOf[PublisherMessage]
     }
     
-    extension [Self <: PublisherMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublisherMessage] (val x: Self) extends AnyVal {
       
       inline def setCommPort(value: Double): Self = StObject.set(x, "commPort", value.asInstanceOf[js.Any])
       

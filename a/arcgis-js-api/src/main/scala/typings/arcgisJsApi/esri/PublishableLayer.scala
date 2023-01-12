@@ -20,7 +20,8 @@ object PublishableLayer {
     __obj.asInstanceOf[PublishableLayer]
   }
   
-  extension [Self <: PublishableLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishableLayer] (val x: Self) extends AnyVal {
     
     inline def setPublishingInfo(value: PublishingInfo): Self = StObject.set(x, "publishingInfo", value.asInstanceOf[js.Any])
   }

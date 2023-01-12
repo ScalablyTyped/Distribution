@@ -33,7 +33,8 @@ object DateColumnStatisticsData {
     __obj.asInstanceOf[DateColumnStatisticsData]
   }
   
-  extension [Self <: DateColumnStatisticsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateColumnStatisticsData] (val x: Self) extends AnyVal {
     
     inline def setMaximumValue(value: js.Date): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
     

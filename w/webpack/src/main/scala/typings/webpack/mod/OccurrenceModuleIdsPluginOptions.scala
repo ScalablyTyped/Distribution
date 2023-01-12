@@ -18,7 +18,8 @@ object OccurrenceModuleIdsPluginOptions {
     __obj.asInstanceOf[OccurrenceModuleIdsPluginOptions]
   }
   
-  extension [Self <: OccurrenceModuleIdsPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OccurrenceModuleIdsPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setPrioritiseInitial(value: Boolean): Self = StObject.set(x, "prioritiseInitial", value.asInstanceOf[js.Any])
     

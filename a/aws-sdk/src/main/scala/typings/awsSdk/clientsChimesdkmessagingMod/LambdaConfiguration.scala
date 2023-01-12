@@ -23,7 +23,8 @@ object LambdaConfiguration {
     __obj.asInstanceOf[LambdaConfiguration]
   }
   
-  extension [Self <: LambdaConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInvocationType(value: InvocationType): Self = StObject.set(x, "InvocationType", value.asInstanceOf[js.Any])
     

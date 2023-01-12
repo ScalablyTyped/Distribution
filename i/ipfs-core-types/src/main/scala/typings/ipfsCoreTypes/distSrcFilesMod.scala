@@ -245,7 +245,8 @@ object distSrcFilesMod {
       __obj.asInstanceOf[ChmodOptions]
     }
     
-    extension [Self <: ChmodOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChmodOptions] (val x: Self) extends AnyVal {
       
       inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
@@ -297,7 +298,8 @@ object distSrcFilesMod {
       __obj.asInstanceOf[CpOptions]
     }
     
-    extension [Self <: CpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CpOptions] (val x: Self) extends AnyVal {
       
       inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
@@ -357,7 +359,8 @@ object distSrcFilesMod {
       __obj.asInstanceOf[MFSEntry]
     }
     
-    extension [Self <: MFSEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MFSEntry] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -391,7 +394,8 @@ object distSrcFilesMod {
       __obj.asInstanceOf[MFSOptions]
     }
     
-    extension [Self <: MFSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MFSOptions] (val x: Self) extends AnyVal {
       
       inline def setFlush(value: Boolean): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
       
@@ -441,7 +445,8 @@ object distSrcFilesMod {
       __obj.asInstanceOf[MkdirOptions]
     }
     
-    extension [Self <: MkdirOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MkdirOptions] (val x: Self) extends AnyVal {
       
       inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
@@ -501,7 +506,8 @@ object distSrcFilesMod {
       __obj.asInstanceOf[MvOptions]
     }
     
-    extension [Self <: MvOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MvOptions] (val x: Self) extends AnyVal {
       
       inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
@@ -542,7 +548,8 @@ object distSrcFilesMod {
       __obj.asInstanceOf[ReadOptions]
     }
     
-    extension [Self <: ReadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -586,7 +593,8 @@ object distSrcFilesMod {
       __obj.asInstanceOf[RmOptions]
     }
     
-    extension [Self <: RmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RmOptions] (val x: Self) extends AnyVal {
       
       inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
@@ -632,7 +640,8 @@ object distSrcFilesMod {
       __obj.asInstanceOf[StatOptions]
     }
     
-    extension [Self <: StatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatOptions] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -715,7 +724,8 @@ object distSrcFilesMod {
       __obj.asInstanceOf[StatResult]
     }
     
-    extension [Self <: StatResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatResult] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
@@ -779,7 +789,8 @@ object distSrcFilesMod {
       __obj.asInstanceOf[TouchOptions]
     }
     
-    extension [Self <: TouchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchOptions] (val x: Self) extends AnyVal {
       
       inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
@@ -881,7 +892,8 @@ object distSrcFilesMod {
       __obj.asInstanceOf[WriteOptions]
     }
     
-    extension [Self <: WriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
       
       inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       

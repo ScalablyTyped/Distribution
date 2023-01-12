@@ -21,7 +21,8 @@ object TrafficStats {
     __obj.asInstanceOf[TrafficStats]
   }
   
-  extension [Self <: TrafficStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficStats] (val x: Self) extends AnyVal {
     
     inline def setNewMonthDownload(value: Double): Self = StObject.set(x, "newMonthDownload", value.asInstanceOf[js.Any])
     

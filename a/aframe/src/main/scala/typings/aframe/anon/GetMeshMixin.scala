@@ -24,7 +24,8 @@ object GetMeshMixin {
     __obj.asInstanceOf[GetMeshMixin]
   }
   
-  extension [Self <: GetMeshMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMeshMixin] (val x: Self) extends AnyVal {
     
     inline def setGetMeshMixin(value: () => DefaultComponents): Self = StObject.set(x, "getMeshMixin", js.Any.fromFunction0(value))
     

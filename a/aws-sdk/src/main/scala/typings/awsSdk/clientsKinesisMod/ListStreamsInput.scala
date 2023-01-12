@@ -23,7 +23,8 @@ object ListStreamsInput {
     __obj.asInstanceOf[ListStreamsInput]
   }
   
-  extension [Self <: ListStreamsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStreamsInput] (val x: Self) extends AnyVal {
     
     inline def setExclusiveStartStreamName(value: StreamName): Self = StObject.set(x, "ExclusiveStartStreamName", value.asInstanceOf[js.Any])
     

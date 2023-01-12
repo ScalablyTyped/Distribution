@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Applicationsid]
     }
     
-    extension [Self <: Applicationsid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Applicationsid] (val x: Self) extends AnyVal {
       
       inline def setApplication_sid(value: String): Self = StObject.set(x, "application_sid", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[TaskRouterCapability]
     }
     
-    extension [Self <: TaskRouterCapability](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskRouterCapability] (val x: Self) extends AnyVal {
       
       inline def setTaskRouterCapability(value: TypeofTaskRouterCapabilit & (Instantiable1[/* options */ TaskRouterCapabilityOptions, ^])): Self = StObject.set(x, "TaskRouterCapability", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object anon {
       __obj.asInstanceOf[TypeofAccessToken]
     }
     
-    extension [Self <: TypeofAccessToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofAccessToken] (val x: Self) extends AnyVal {
       
       inline def setALGORITHMS(value: js.Tuple3[HS256, HS384, HS512]): Self = StObject.set(x, "ALGORITHMS", value.asInstanceOf[js.Any])
       
@@ -200,7 +204,8 @@ object anon {
       __obj.asInstanceOf[TypeofClientCapability]
     }
     
-    extension [Self <: TypeofClientCapability](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofClientCapability] (val x: Self) extends AnyVal {
       
       inline def setEventStreamScope(value: Instantiable1[/* filters */ js.Object, EventStreamScope]): Self = StObject.set(x, "EventStreamScope", value.asInstanceOf[js.Any])
       
@@ -224,7 +229,8 @@ object anon {
       __obj.asInstanceOf[TypeofTaskRouterCapabilit]
     }
     
-    extension [Self <: TypeofTaskRouterCapabilit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofTaskRouterCapabilit] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: Instantiable1[/* options */ PolicyOptions, Policy]): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     }

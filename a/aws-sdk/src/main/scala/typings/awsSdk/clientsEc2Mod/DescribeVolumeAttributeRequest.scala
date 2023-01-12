@@ -28,7 +28,8 @@ object DescribeVolumeAttributeRequest {
     __obj.asInstanceOf[DescribeVolumeAttributeRequest]
   }
   
-  extension [Self <: DescribeVolumeAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVolumeAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: VolumeAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

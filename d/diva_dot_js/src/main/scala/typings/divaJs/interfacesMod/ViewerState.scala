@@ -135,7 +135,8 @@ object ViewerState {
     __obj.asInstanceOf[ViewerState]
   }
   
-  extension [Self <: ViewerState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewerState] (val x: Self) extends AnyVal {
     
     inline def setActivePageIndex(value: Double): Self = StObject.set(x, "activePageIndex", value.asInstanceOf[js.Any])
     

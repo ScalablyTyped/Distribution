@@ -67,7 +67,8 @@ object SocialDataItem {
     __obj.asInstanceOf[SocialDataItem]
   }
   
-  extension [Self <: SocialDataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialDataItem] (val x: Self) extends AnyVal {
     
     inline def setGet_accountName(value: () => String): Self = StObject.set(x, "get_accountName", js.Any.fromFunction0(value))
     

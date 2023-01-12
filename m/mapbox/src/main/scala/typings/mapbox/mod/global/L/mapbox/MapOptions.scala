@@ -26,7 +26,8 @@ object MapOptions {
     __obj.asInstanceOf[MapOptions]
   }
   
-  extension [Self <: MapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
     
     inline def setFeatureLayer(value: FeatureLayerOptions): Self = StObject.set(x, "featureLayer", value.asInstanceOf[js.Any])
     

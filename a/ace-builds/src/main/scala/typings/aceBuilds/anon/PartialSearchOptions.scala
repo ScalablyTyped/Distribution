@@ -37,7 +37,8 @@ object PartialSearchOptions {
     __obj.asInstanceOf[PartialSearchOptions]
   }
   
-  extension [Self <: PartialSearchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSearchOptions] (val x: Self) extends AnyVal {
     
     inline def setBackwards(value: Boolean): Self = StObject.set(x, "backwards", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object PreferBlob {
     __obj.asInstanceOf[PreferBlob]
   }
   
-  extension [Self <: PreferBlob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreferBlob] (val x: Self) extends AnyVal {
     
     inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
     

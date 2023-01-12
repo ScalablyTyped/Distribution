@@ -22,7 +22,8 @@ object libTypescriptPlatformConstantsMod extends Shortcut {
       __obj.asInstanceOf[PlatformConstants]
     }
     
-    extension [Self <: PlatformConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformConstants] (val x: Self) extends AnyVal {
       
       inline def setForceTouchAvailable(value: Boolean): Self = StObject.set(x, "forceTouchAvailable", value.asInstanceOf[js.Any])
     }

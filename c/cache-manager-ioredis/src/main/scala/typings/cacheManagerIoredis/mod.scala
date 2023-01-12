@@ -70,7 +70,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ClusterOptions]
       }
       
-      extension [Self <: ClusterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClusterOptions] (val x: Self) extends AnyVal {
         
         inline def setNodes(value: js.Array[ClusterNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
         
@@ -130,7 +131,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[RedisStoreConstructor]
       }
       
-      extension [Self <: RedisStoreConstructor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RedisStoreConstructor] (val x: Self) extends AnyVal {
         
         inline def setCreate(
           value: (/* repeated */ RedisStoreClusterConfig) | (/* repeated */ RedisStoreSingleNodeConfig) => RedisClusterStore | RedisSingleNodeStore

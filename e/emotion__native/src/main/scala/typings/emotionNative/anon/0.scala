@@ -18,7 +18,8 @@ object `0` {
     __obj.asInstanceOf[`0`[C]]
   }
   
-  extension [Self <: `0`[?], C /* <: ComponentClass[Any, ComponentState] */](x: Self & `0`[C]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0`[?], C /* <: ComponentClass[Any, ComponentState] */] (val x: Self & `0`[C]) extends AnyVal {
     
     inline def setRef(value: typings.react.mod.Ref[InstanceType[C]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

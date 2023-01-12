@@ -53,7 +53,8 @@ object CheckoutLicenseResponse {
     __obj.asInstanceOf[CheckoutLicenseResponse]
   }
   
-  extension [Self <: CheckoutLicenseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckoutLicenseResponse] (val x: Self) extends AnyVal {
     
     inline def setCheckoutType(value: CheckoutType): Self = StObject.set(x, "CheckoutType", value.asInstanceOf[js.Any])
     

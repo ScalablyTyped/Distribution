@@ -23,7 +23,8 @@ object RequestUploadCredentialsOutput {
     __obj.asInstanceOf[RequestUploadCredentialsOutput]
   }
   
-  extension [Self <: RequestUploadCredentialsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestUploadCredentialsOutput] (val x: Self) extends AnyVal {
     
     inline def setStorageLocation(value: S3Location): Self = StObject.set(x, "StorageLocation", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object PartialCheckOptions {
     __obj.asInstanceOf[PartialCheckOptions]
   }
   
-  extension [Self <: PartialCheckOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCheckOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimationDistanceThreshold(value: Double): Self = StObject.set(x, "animationDistanceThreshold", value.asInstanceOf[js.Any])
     

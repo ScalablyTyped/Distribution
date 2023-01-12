@@ -22,7 +22,8 @@ object QuestionDifference {
     __obj.asInstanceOf[QuestionDifference]
   }
   
-  extension [Self <: QuestionDifference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuestionDifference] (val x: Self) extends AnyVal {
     
     inline def setDifferenceStatus(value: DifferenceStatus): Self = StObject.set(x, "DifferenceStatus", value.asInstanceOf[js.Any])
     

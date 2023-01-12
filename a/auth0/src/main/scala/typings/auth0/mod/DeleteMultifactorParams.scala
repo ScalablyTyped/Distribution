@@ -17,7 +17,8 @@ object DeleteMultifactorParams {
     __obj.asInstanceOf[DeleteMultifactorParams]
   }
   
-  extension [Self <: DeleteMultifactorParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMultifactorParams] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

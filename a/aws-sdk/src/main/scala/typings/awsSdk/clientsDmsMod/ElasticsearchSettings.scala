@@ -38,7 +38,8 @@ object ElasticsearchSettings {
     __obj.asInstanceOf[ElasticsearchSettings]
   }
   
-  extension [Self <: ElasticsearchSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticsearchSettings] (val x: Self) extends AnyVal {
     
     inline def setEndpointUri(value: String): Self = StObject.set(x, "EndpointUri", value.asInstanceOf[js.Any])
     

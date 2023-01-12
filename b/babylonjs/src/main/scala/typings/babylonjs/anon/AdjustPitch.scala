@@ -39,7 +39,8 @@ object AdjustPitch {
     __obj.asInstanceOf[AdjustPitch]
   }
   
-  extension [Self <: AdjustPitch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdjustPitch] (val x: Self) extends AnyVal {
     
     inline def setAdjustPitch(value: Double): Self = StObject.set(x, "adjustPitch", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[BuilderOptions]
     }
     
-    extension [Self <: BuilderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuilderOptions] (val x: Self) extends AnyVal {
       
       inline def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       

@@ -232,7 +232,8 @@ object dxFileManagerOptions {
     __obj.asInstanceOf[dxFileManagerOptions]
   }
   
-  extension [Self <: dxFileManagerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFileManagerOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
     

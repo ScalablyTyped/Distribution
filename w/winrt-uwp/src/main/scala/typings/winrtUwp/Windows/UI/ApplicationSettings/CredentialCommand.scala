@@ -24,7 +24,8 @@ object CredentialCommand {
     __obj.asInstanceOf[CredentialCommand]
   }
   
-  extension [Self <: CredentialCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialCommand] (val x: Self) extends AnyVal {
     
     inline def setCredentialDeleted(value: /* command */ CredentialCommand => Unit): Self = StObject.set(x, "credentialDeleted", js.Any.fromFunction1(value))
     

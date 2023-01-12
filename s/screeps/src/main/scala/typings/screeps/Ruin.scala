@@ -55,7 +55,8 @@ object Ruin {
     __obj.asInstanceOf[Ruin]
   }
   
-  extension [Self <: Ruin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ruin] (val x: Self) extends AnyVal {
     
     inline def setDestroyTime(value: Double): Self = StObject.set(x, "destroyTime", value.asInstanceOf[js.Any])
     

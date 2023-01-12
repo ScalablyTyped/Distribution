@@ -77,7 +77,8 @@ object TemplatesType {
     __obj.asInstanceOf[TemplatesType[T, F]]
   }
   
-  extension [Self <: TemplatesType[?, ?], T, F](x: Self & (TemplatesType[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplatesType[?, ?], T, F] (val x: Self & (TemplatesType[T, F])) extends AnyVal {
     
     inline def setArrayFieldDescriptionTemplate(value: ComponentType[ArrayFieldDescriptionProps[T, F]]): Self = StObject.set(x, "ArrayFieldDescriptionTemplate", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object EcdsaParams {
     __obj.asInstanceOf[EcdsaParams]
   }
   
-  extension [Self <: EcdsaParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcdsaParams] (val x: Self) extends AnyVal {
     
     inline def setHash(value: HashAlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
   }

@@ -241,7 +241,8 @@ object PartialOmitPickerPropscol {
     __obj.asInstanceOf[PartialOmitPickerPropscol]
   }
   
-  extension [Self <: PartialOmitPickerPropscol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOmitPickerPropscol] (val x: Self) extends AnyVal {
     
     inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
     

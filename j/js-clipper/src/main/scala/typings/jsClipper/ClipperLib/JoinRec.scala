@@ -25,7 +25,8 @@ object JoinRec {
     __obj.asInstanceOf[JoinRec]
   }
   
-  extension [Self <: JoinRec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinRec] (val x: Self) extends AnyVal {
     
     inline def setPoly1Idx(value: Double): Self = StObject.set(x, "poly1Idx", value.asInstanceOf[js.Any])
     

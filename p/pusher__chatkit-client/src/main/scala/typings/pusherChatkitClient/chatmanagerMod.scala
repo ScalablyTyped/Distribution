@@ -70,7 +70,8 @@ object chatmanagerMod {
       __obj.asInstanceOf[ChatManagerConstructorArgs]
     }
     
-    extension [Self <: ChatManagerConstructorArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChatManagerConstructorArgs] (val x: Self) extends AnyVal {
       
       inline def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object chatmanagerMod {
       __obj.asInstanceOf[GlobalHooks]
     }
     
-    extension [Self <: GlobalHooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalHooks] (val x: Self) extends AnyVal {
       
       inline def setOnAddedToRoom(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onAddedToRoom", js.Any.fromFunction1(value))
       
@@ -215,7 +217,8 @@ object chatmanagerMod {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* args */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
@@ -253,7 +256,8 @@ object chatmanagerMod {
       __obj.asInstanceOf[TokenProviderConstructorArgs]
     }
     
-    extension [Self <: TokenProviderConstructorArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenProviderConstructorArgs] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

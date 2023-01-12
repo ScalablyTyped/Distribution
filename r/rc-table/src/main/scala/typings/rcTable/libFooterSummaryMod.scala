@@ -44,7 +44,8 @@ object libFooterSummaryMod {
       __obj.asInstanceOf[SummaryProps]
     }
     
-    extension [Self <: SummaryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object LanguageOptions {
     __obj.asInstanceOf[LanguageOptions]
   }
   
-  extension [Self <: LanguageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageOptions] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

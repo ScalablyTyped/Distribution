@@ -33,7 +33,8 @@ object ChartPlotAreaFormatLoadOptions {
     __obj.asInstanceOf[ChartPlotAreaFormatLoadOptions]
   }
   
-  extension [Self <: ChartPlotAreaFormatLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartPlotAreaFormatLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

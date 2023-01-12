@@ -34,7 +34,8 @@ object XRefreshable {
     __obj.asInstanceOf[XRefreshable]
   }
   
-  extension [Self <: XRefreshable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRefreshable] (val x: Self) extends AnyVal {
     
     inline def setAddRefreshListener(value: XRefreshListener => Unit): Self = StObject.set(x, "addRefreshListener", js.Any.fromFunction1(value))
     

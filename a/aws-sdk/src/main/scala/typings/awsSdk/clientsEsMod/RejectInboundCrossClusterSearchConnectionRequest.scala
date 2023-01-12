@@ -18,7 +18,8 @@ object RejectInboundCrossClusterSearchConnectionRequest {
     __obj.asInstanceOf[RejectInboundCrossClusterSearchConnectionRequest]
   }
   
-  extension [Self <: RejectInboundCrossClusterSearchConnectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectInboundCrossClusterSearchConnectionRequest] (val x: Self) extends AnyVal {
     
     inline def setCrossClusterSearchConnectionId(value: CrossClusterSearchConnectionId): Self = StObject.set(x, "CrossClusterSearchConnectionId", value.asInstanceOf[js.Any])
   }

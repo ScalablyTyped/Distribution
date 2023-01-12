@@ -45,7 +45,8 @@ object StartCopyJobInput {
     __obj.asInstanceOf[StartCopyJobInput]
   }
   
-  extension [Self <: StartCopyJobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartCopyJobInput] (val x: Self) extends AnyVal {
     
     inline def setDestinationBackupVaultArn(value: ARN): Self = StObject.set(x, "DestinationBackupVaultArn", value.asInstanceOf[js.Any])
     

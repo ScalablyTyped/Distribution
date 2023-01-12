@@ -18,7 +18,8 @@ object StartInstancesResult {
     __obj.asInstanceOf[StartInstancesResult]
   }
   
-  extension [Self <: StartInstancesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartInstancesResult] (val x: Self) extends AnyVal {
     
     inline def setStartingInstances(value: InstanceStateChangeList): Self = StObject.set(x, "StartingInstances", value.asInstanceOf[js.Any])
     

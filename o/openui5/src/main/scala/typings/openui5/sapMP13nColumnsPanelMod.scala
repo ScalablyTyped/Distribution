@@ -714,7 +714,8 @@ object sapMP13nColumnsPanelMod {
       __obj.asInstanceOf[P13nColumnsPanelSettings]
     }
     
-    extension [Self <: P13nColumnsPanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nColumnsPanelSettings] (val x: Self) extends AnyVal {
       
       inline def setAddColumnsItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "addColumnsItem", js.Any.fromFunction1(value))
       

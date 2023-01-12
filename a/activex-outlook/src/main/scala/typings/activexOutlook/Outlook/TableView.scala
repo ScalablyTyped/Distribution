@@ -152,7 +152,8 @@ object TableView {
     __obj.asInstanceOf[TableView]
   }
   
-  extension [Self <: TableView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableView] (val x: Self) extends AnyVal {
     
     inline def setAllowInCellEditing(value: Boolean): Self = StObject.set(x, "AllowInCellEditing", value.asInstanceOf[js.Any])
     

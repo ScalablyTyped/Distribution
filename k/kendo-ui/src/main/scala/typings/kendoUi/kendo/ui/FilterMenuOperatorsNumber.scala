@@ -30,7 +30,8 @@ object FilterMenuOperatorsNumber {
     __obj.asInstanceOf[FilterMenuOperatorsNumber]
   }
   
-  extension [Self <: FilterMenuOperatorsNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterMenuOperatorsNumber] (val x: Self) extends AnyVal {
     
     inline def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     

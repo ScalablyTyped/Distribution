@@ -41,7 +41,8 @@ object CareTeamParticipant {
     __obj.asInstanceOf[CareTeamParticipant]
   }
   
-  extension [Self <: CareTeamParticipant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CareTeamParticipant] (val x: Self) extends AnyVal {
     
     inline def setCoveragePeriod(value: Period): Self = StObject.set(x, "coveragePeriod", value.asInstanceOf[js.Any])
     

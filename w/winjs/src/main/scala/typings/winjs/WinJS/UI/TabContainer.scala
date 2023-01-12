@@ -36,7 +36,8 @@ object TabContainer {
     __obj.asInstanceOf[TabContainer]
   }
   
-  extension [Self <: TabContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabContainer] (val x: Self) extends AnyVal {
     
     inline def setChildFocus(value: HTMLElement): Self = StObject.set(x, "childFocus", value.asInstanceOf[js.Any])
     

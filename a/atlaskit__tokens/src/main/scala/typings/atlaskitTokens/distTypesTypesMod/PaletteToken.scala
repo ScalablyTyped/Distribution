@@ -20,7 +20,8 @@ object PaletteToken {
     __obj.asInstanceOf[PaletteToken]
   }
   
-  extension [Self <: PaletteToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteToken] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: CategoryGroup): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
   }

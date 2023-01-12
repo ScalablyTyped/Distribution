@@ -23,7 +23,8 @@ object ServeResult {
     __obj.asInstanceOf[ServeResult]
   }
   
-  extension [Self <: ServeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServeResult] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

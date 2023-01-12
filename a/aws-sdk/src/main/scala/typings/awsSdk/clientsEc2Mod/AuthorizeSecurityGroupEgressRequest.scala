@@ -63,7 +63,8 @@ object AuthorizeSecurityGroupEgressRequest {
     __obj.asInstanceOf[AuthorizeSecurityGroupEgressRequest]
   }
   
-  extension [Self <: AuthorizeSecurityGroupEgressRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeSecurityGroupEgressRequest] (val x: Self) extends AnyVal {
     
     inline def setCidrIp(value: String): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
     

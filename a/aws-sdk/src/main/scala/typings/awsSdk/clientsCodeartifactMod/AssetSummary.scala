@@ -28,7 +28,8 @@ object AssetSummary {
     __obj.asInstanceOf[AssetSummary]
   }
   
-  extension [Self <: AssetSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetSummary] (val x: Self) extends AnyVal {
     
     inline def setHashes(value: AssetHashes): Self = StObject.set(x, "hashes", value.asInstanceOf[js.Any])
     

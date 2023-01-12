@@ -15,7 +15,8 @@ object TabId {
     __obj.asInstanceOf[TabId]
   }
   
-  extension [Self <: TabId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabId] (val x: Self) extends AnyVal {
     
     inline def setTabId(value: String): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     

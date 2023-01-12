@@ -80,7 +80,8 @@ object anon {
       __obj.asInstanceOf[PartialSocketOptions]
     }
     
-    extension [Self <: PartialSocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSocketOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: String | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -225,7 +226,8 @@ object anon {
       __obj.asInstanceOf[Threshold]
     }
     
-    extension [Self <: Threshold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Threshold] (val x: Self) extends AnyVal {
       
       inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     }

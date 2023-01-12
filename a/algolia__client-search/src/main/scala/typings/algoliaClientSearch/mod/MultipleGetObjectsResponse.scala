@@ -18,7 +18,8 @@ object MultipleGetObjectsResponse {
     __obj.asInstanceOf[MultipleGetObjectsResponse[TObject]]
   }
   
-  extension [Self <: MultipleGetObjectsResponse[?], TObject](x: Self & MultipleGetObjectsResponse[TObject]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleGetObjectsResponse[?], TObject] (val x: Self & MultipleGetObjectsResponse[TObject]) extends AnyVal {
     
     inline def setResults(value: js.Array[TObject & ObjectWithObjectID]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

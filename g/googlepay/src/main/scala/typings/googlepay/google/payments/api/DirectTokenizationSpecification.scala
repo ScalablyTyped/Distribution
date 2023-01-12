@@ -34,7 +34,8 @@ object DirectTokenizationSpecification {
     __obj.asInstanceOf[DirectTokenizationSpecification]
   }
   
-  extension [Self <: DirectTokenizationSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectTokenizationSpecification] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: DirectTokenizationParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

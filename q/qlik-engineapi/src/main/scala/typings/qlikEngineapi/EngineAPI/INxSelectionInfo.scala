@@ -28,7 +28,8 @@ object INxSelectionInfo {
     __obj.asInstanceOf[INxSelectionInfo]
   }
   
-  extension [Self <: INxSelectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxSelectionInfo] (val x: Self) extends AnyVal {
     
     inline def setQInSelections(value: Boolean): Self = StObject.set(x, "qInSelections", value.asInstanceOf[js.Any])
     

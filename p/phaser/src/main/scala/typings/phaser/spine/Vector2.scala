@@ -29,7 +29,8 @@ object Vector2 {
     __obj.asInstanceOf[Vector2]
   }
   
-  extension [Self <: Vector2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vector2] (val x: Self) extends AnyVal {
     
     inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     

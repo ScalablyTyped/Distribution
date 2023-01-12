@@ -43,7 +43,8 @@ object AwsRedshiftClusterLoggingStatus {
     __obj.asInstanceOf[AwsRedshiftClusterLoggingStatus]
   }
   
-  extension [Self <: AwsRedshiftClusterLoggingStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterLoggingStatus] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: NonEmptyString): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object namespacesDevtoolsInspectedWindowMod {
         __obj.asInstanceOf[EvalCallbackExceptionInfoType]
       }
       
-      extension [Self <: EvalCallbackExceptionInfoType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EvalCallbackExceptionInfoType] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -116,7 +117,8 @@ object namespacesDevtoolsInspectedWindowMod {
         __obj.asInstanceOf[ReloadReloadOptionsType]
       }
       
-      extension [Self <: ReloadReloadOptionsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReloadReloadOptionsType] (val x: Self) extends AnyVal {
         
         inline def setIgnoreCache(value: Boolean): Self = StObject.set(x, "ignoreCache", value.asInstanceOf[js.Any])
         
@@ -149,7 +151,8 @@ object namespacesDevtoolsInspectedWindowMod {
         __obj.asInstanceOf[Resource]
       }
       
-      extension [Self <: Resource](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
         
         inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }

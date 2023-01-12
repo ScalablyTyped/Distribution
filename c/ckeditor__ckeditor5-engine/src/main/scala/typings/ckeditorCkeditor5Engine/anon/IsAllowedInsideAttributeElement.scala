@@ -17,7 +17,8 @@ object IsAllowedInsideAttributeElement {
     __obj.asInstanceOf[IsAllowedInsideAttributeElement]
   }
   
-  extension [Self <: IsAllowedInsideAttributeElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsAllowedInsideAttributeElement] (val x: Self) extends AnyVal {
     
     inline def setIsAllowedInsideAttributeElement(value: Boolean): Self = StObject.set(x, "isAllowedInsideAttributeElement", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object PickImpltimeoutPartialPic {
     __obj.asInstanceOf[PickImpltimeoutPartialPic]
   }
   
-  extension [Self <: PickImpltimeoutPartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpltimeoutPartialPic] (val x: Self) extends AnyVal {
     
     inline def setBeforeSend(value: String): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     

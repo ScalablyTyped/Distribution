@@ -18,7 +18,8 @@ object FilterOperatorsBoolean {
     __obj.asInstanceOf[FilterOperatorsBoolean]
   }
   
-  extension [Self <: FilterOperatorsBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterOperatorsBoolean] (val x: Self) extends AnyVal {
     
     inline def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     

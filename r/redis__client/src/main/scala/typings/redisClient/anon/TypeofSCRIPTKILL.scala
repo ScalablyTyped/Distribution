@@ -17,7 +17,8 @@ object TypeofSCRIPTKILL {
     __obj.asInstanceOf[TypeofSCRIPTKILL]
   }
   
-  extension [Self <: TypeofSCRIPTKILL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSCRIPTKILL] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

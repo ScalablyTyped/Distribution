@@ -15,7 +15,8 @@ object AddHeapSnapshotChunkEvent {
     __obj.asInstanceOf[AddHeapSnapshotChunkEvent]
   }
   
-  extension [Self <: AddHeapSnapshotChunkEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddHeapSnapshotChunkEvent] (val x: Self) extends AnyVal {
     
     inline def setChunk(value: String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
   }

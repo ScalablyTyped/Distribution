@@ -22,7 +22,8 @@ object `0EitherLoose` {
     __obj.asInstanceOf[`0EitherLoose`[O, K]]
   }
   
-  extension [Self <: `0EitherLoose`[?, ?], O /* <: js.Object */, K /* <: Key */](x: Self & (`0EitherLoose`[O, K])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0EitherLoose`[?, ?], O /* <: js.Object */, K /* <: Key */] (val x: Self & (`0EitherLoose`[O, K])) extends AnyVal {
     
     inline def set0(value: EitherLoose[O, K]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

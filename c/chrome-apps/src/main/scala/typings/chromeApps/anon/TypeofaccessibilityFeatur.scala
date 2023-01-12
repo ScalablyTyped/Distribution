@@ -99,7 +99,8 @@ object TypeofaccessibilityFeatur {
     __obj.asInstanceOf[TypeofaccessibilityFeatur]
   }
   
-  extension [Self <: TypeofaccessibilityFeatur](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofaccessibilityFeatur] (val x: Self) extends AnyVal {
     
     inline def setAnimationPolicy(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "animationPolicy", value.asInstanceOf[js.Any])
     

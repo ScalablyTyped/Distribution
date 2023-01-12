@@ -20,7 +20,8 @@ object CloudwatchEventType {
     __obj.asInstanceOf[CloudwatchEventType]
   }
   
-  extension [Self <: CloudwatchEventType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudwatchEventType] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: Detail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

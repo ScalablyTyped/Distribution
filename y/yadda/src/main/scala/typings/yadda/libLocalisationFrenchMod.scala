@@ -1511,7 +1511,8 @@ object libLocalisationFrenchMod extends Shortcut {
       __obj.asInstanceOf[Vocabulary]
     }
     
-    extension [Self <: Vocabulary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vocabulary] (val x: Self) extends AnyVal {
       
       inline def setAlors(value: String): Self = StObject.set(x, "alors", value.asInstanceOf[js.Any])
       

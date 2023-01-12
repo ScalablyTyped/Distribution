@@ -15,7 +15,8 @@ object BillableWINDOWS {
     __obj.asInstanceOf[BillableWINDOWS]
   }
   
-  extension [Self <: BillableWINDOWS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillableWINDOWS] (val x: Self) extends AnyVal {
     
     inline def setBillable(value: WINDOWS): Self = StObject.set(x, "billable", value.asInstanceOf[js.Any])
   }

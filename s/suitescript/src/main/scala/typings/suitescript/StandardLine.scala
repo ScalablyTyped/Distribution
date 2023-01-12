@@ -41,7 +41,8 @@ object StandardLine {
     __obj.asInstanceOf[StandardLine]
   }
   
-  extension [Self <: StandardLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardLine] (val x: Self) extends AnyVal {
     
     inline def setGetEntityId(value: () => Double): Self = StObject.set(x, "getEntityId", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object ParquetOptions {
     __obj.asInstanceOf[ParquetOptions]
   }
   
-  extension [Self <: ParquetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParquetOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableListInference(value: Boolean): Self = StObject.set(x, "enableListInference", value.asInstanceOf[js.Any])
     

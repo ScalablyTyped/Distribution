@@ -21,7 +21,8 @@ object EditMessageMediaOptions {
     __obj.asInstanceOf[EditMessageMediaOptions]
   }
   
-  extension [Self <: EditMessageMediaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditMessageMediaOptions] (val x: Self) extends AnyVal {
     
     inline def setChat_id(value: Double | String): Self = StObject.set(x, "chat_id", value.asInstanceOf[js.Any])
     

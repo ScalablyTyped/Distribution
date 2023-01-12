@@ -21,7 +21,8 @@ object IObjectVersionPermissions {
     __obj.asInstanceOf[IObjectVersionPermissions]
   }
   
-  extension [Self <: IObjectVersionPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectVersionPermissions] (val x: Self) extends AnyVal {
     
     inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     

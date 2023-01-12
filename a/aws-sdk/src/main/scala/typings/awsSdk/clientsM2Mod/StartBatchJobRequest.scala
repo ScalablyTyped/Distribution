@@ -28,7 +28,8 @@ object StartBatchJobRequest {
     __obj.asInstanceOf[StartBatchJobRequest]
   }
   
-  extension [Self <: StartBatchJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartBatchJobRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: Identifier): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     

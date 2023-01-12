@@ -21,7 +21,8 @@ object RRSetRoutingPolicy {
     __obj.asInstanceOf[RRSetRoutingPolicy]
   }
   
-  extension [Self <: RRSetRoutingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RRSetRoutingPolicy] (val x: Self) extends AnyVal {
     
     inline def setGeo(value: RRSetRoutingPolicyGeoPolicy): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     

@@ -76,7 +76,8 @@ object OnChange {
     __obj.asInstanceOf[OnChange[State]]
   }
   
-  extension [Self <: OnChange[?], State /* <: Lookup[Any] */](x: Self & OnChange[State]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnChange[?], State /* <: Lookup[Any] */] (val x: Self & OnChange[State]) extends AnyVal {
     
     inline def setOnChange(
       value: Map[

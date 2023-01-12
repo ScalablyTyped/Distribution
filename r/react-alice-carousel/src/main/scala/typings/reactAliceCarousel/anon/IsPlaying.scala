@@ -15,7 +15,8 @@ object IsPlaying {
     __obj.asInstanceOf[IsPlaying]
   }
   
-  extension [Self <: IsPlaying](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsPlaying] (val x: Self) extends AnyVal {
     
     inline def setIsPlaying(value: Any): Self = StObject.set(x, "isPlaying", value.asInstanceOf[js.Any])
   }

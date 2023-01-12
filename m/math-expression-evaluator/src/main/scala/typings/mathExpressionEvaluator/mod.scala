@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setNumberOfArguments(value: Double): Self = StObject.set(x, "numberOfArguments", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object mod {
       __obj.asInstanceOf[TokenTypes_]
     }
     
-    extension [Self <: TokenTypes_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenTypes_] (val x: Self) extends AnyVal {
       
       inline def setBINARY_OPERATOR_HIGH_PRECENDENCE(value: Double): Self = StObject.set(x, "BINARY_OPERATOR_HIGH_PRECENDENCE", value.asInstanceOf[js.Any])
       

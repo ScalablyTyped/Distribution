@@ -31,7 +31,8 @@ object AppsDynamiteSharedGrid {
     __obj.asInstanceOf[AppsDynamiteSharedGrid]
   }
   
-  extension [Self <: AppsDynamiteSharedGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedGrid] (val x: Self) extends AnyVal {
     
     inline def setBorderStyle(value: AppsDynamiteSharedBorderStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     

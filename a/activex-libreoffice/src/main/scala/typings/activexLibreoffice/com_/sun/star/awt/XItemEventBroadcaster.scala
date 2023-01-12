@@ -30,7 +30,8 @@ object XItemEventBroadcaster {
     __obj.asInstanceOf[XItemEventBroadcaster]
   }
   
-  extension [Self <: XItemEventBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XItemEventBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddItemListener(value: XItemListener => Unit): Self = StObject.set(x, "addItemListener", js.Any.fromFunction1(value))
     

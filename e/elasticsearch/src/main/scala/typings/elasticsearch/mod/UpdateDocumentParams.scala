@@ -54,7 +54,8 @@ object UpdateDocumentParams {
     __obj.asInstanceOf[UpdateDocumentParams]
   }
   
-  extension [Self <: UpdateDocumentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDocumentParams] (val x: Self) extends AnyVal {
     
     inline def setFields(value: NameList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

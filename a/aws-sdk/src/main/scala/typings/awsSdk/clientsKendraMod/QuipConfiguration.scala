@@ -73,7 +73,8 @@ object QuipConfiguration {
     __obj.asInstanceOf[QuipConfiguration]
   }
   
-  extension [Self <: QuipConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuipConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAttachmentFieldMappings(value: DataSourceToIndexFieldMappingList): Self = StObject.set(x, "AttachmentFieldMappings", value.asInstanceOf[js.Any])
     

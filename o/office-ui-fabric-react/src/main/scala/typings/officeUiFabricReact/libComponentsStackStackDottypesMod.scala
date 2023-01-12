@@ -273,7 +273,8 @@ object libComponentsStackStackDottypesMod {
       __obj.asInstanceOf[IStackProps]
     }
     
-    extension [Self <: IStackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStackProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -531,7 +532,8 @@ object libComponentsStackStackDottypesMod {
       __obj.asInstanceOf[IStackSlots]
     }
     
-    extension [Self <: IStackSlots](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStackSlots] (val x: Self) extends AnyVal {
       
       inline def setInner(value: IHTMLSlot): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
       
@@ -557,7 +559,8 @@ object libComponentsStackStackDottypesMod {
       __obj.asInstanceOf[IStackStyles]
     }
     
-    extension [Self <: IStackStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStackStyles] (val x: Self) extends AnyVal {
       
       inline def setInner(value: IStyle): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
       
@@ -610,7 +613,8 @@ object libComponentsStackStackDottypesMod {
       __obj.asInstanceOf[IStackTokens]
     }
     
-    extension [Self <: IStackTokens](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStackTokens] (val x: Self) extends AnyVal {
       
       inline def setChildrenGap(value: Double | String): Self = StObject.set(x, "childrenGap", value.asInstanceOf[js.Any])
       

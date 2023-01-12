@@ -17,7 +17,8 @@ object NodesInfoNodeInfoNetwork {
     __obj.asInstanceOf[NodesInfoNodeInfoNetwork]
   }
   
-  extension [Self <: NodesInfoNodeInfoNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoNetwork] (val x: Self) extends AnyVal {
     
     inline def setPrimary_interface(value: NodesInfoNodeInfoNetworkInterface): Self = StObject.set(x, "primary_interface", value.asInstanceOf[js.Any])
     

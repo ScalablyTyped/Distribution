@@ -30,7 +30,8 @@ object PartialCodeSnippetOptions {
     __obj.asInstanceOf[PartialCodeSnippetOptions]
   }
   
-  extension [Self <: PartialCodeSnippetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCodeSnippetOptions] (val x: Self) extends AnyVal {
     
     inline def setAttribShowLessText(value: String): Self = StObject.set(x, "attribShowLessText", value.asInstanceOf[js.Any])
     

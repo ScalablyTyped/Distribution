@@ -45,7 +45,8 @@ object LabelCountWithTotal {
     __obj.asInstanceOf[LabelCountWithTotal]
   }
   
-  extension [Self <: LabelCountWithTotal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelCountWithTotal] (val x: Self) extends AnyVal {
     
     inline def setLabelAndValue(value: String): Self = StObject.set(x, "labelAndValue", value.asInstanceOf[js.Any])
     

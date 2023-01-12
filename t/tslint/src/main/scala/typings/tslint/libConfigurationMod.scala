@@ -138,7 +138,8 @@ object libConfigurationMod {
       __obj.asInstanceOf[IConfigurationFile]
     }
     
-    extension [Self <: IConfigurationFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfigurationFile] (val x: Self) extends AnyVal {
       
       inline def setDefaultSeverity(value: RuleSeverity): Self = StObject.set(x, "defaultSeverity", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object libConfigurationMod {
       __obj.asInstanceOf[IConfigurationLoadResult]
     }
     
-    extension [Self <: IConfigurationLoadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfigurationLoadResult] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -208,7 +210,8 @@ object libConfigurationMod {
       __obj.asInstanceOf[RawConfigFile]
     }
     
-    extension [Self <: RawConfigFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawConfigFile] (val x: Self) extends AnyVal {
       
       inline def setDefaultSeverity(value: String): Self = StObject.set(x, "defaultSeverity", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ActionContext {
     __obj.asInstanceOf[ActionContext]
   }
   
-  extension [Self <: ActionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionContext] (val x: Self) extends AnyVal {
     
     inline def setActionExecutionId(value: ActionExecutionId): Self = StObject.set(x, "actionExecutionId", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object ChatRoomInviteDeclined {
     __obj.asInstanceOf[ChatRoomInviteDeclined]
   }
   
-  extension [Self <: ChatRoomInviteDeclined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRoomInviteDeclined] (val x: Self) extends AnyVal {
     
     inline def setInvitee(value: String): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
     

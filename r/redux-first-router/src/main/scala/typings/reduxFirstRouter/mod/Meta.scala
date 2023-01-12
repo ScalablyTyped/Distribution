@@ -23,7 +23,8 @@ object Meta {
     __obj.asInstanceOf[Meta]
   }
   
-  extension [Self <: Meta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: ActionMetaLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

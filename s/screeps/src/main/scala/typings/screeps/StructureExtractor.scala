@@ -38,7 +38,8 @@ object StructureExtractor {
     __obj.asInstanceOf[StructureExtractor]
   }
   
-  extension [Self <: StructureExtractor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureExtractor] (val x: Self) extends AnyVal {
     
     inline def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
   }

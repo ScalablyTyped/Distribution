@@ -27,7 +27,8 @@ object EntryPointProps {
     __obj.asInstanceOf[EntryPointProps[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]]
   }
   
-  extension [Self <: EntryPointProps[?, ?, ?, ?], TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps](x: Self & (EntryPointProps[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryPointProps[?, ?, ?, ?], TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] (val x: Self & (EntryPointProps[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) extends AnyVal {
     
     inline def setEntryPoints(value: PreloadedEntryPoints[TPreloadedEntryPoints]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TransactionLineItemGateway {
     __obj.asInstanceOf[TransactionLineItemGateway]
   }
   
-  extension [Self <: TransactionLineItemGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionLineItemGateway] (val x: Self) extends AnyVal {
     
     inline def setFindAll(value: String => js.Promise[js.Array[TransactionLineItem]]): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
   }

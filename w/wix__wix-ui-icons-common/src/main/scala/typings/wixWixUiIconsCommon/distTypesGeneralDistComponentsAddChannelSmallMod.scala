@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsAddChannelSmallMod extends Shortcut {
       __obj.asInstanceOf[AddChannelSmallProps]
     }
     
-    extension [Self <: AddChannelSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddChannelSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -63,7 +63,8 @@ object tabGroups {
       __obj.asInstanceOf[MoveProperties]
     }
     
-    extension [Self <: MoveProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveProperties] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object tabGroups {
       __obj.asInstanceOf[QueryInfo]
     }
     
-    extension [Self <: QueryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryInfo] (val x: Self) extends AnyVal {
       
       inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object tabGroups {
       __obj.asInstanceOf[TabGroup]
     }
     
-    extension [Self <: TabGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabGroup] (val x: Self) extends AnyVal {
       
       inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
@@ -180,7 +183,8 @@ object tabGroups {
       __obj.asInstanceOf[UpdateProperties]
     }
     
-    extension [Self <: UpdateProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateProperties] (val x: Self) extends AnyVal {
       
       inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       

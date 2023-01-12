@@ -62,7 +62,8 @@ object GetScalingPlanResourceForecastDataRequest {
     __obj.asInstanceOf[GetScalingPlanResourceForecastDataRequest]
   }
   
-  extension [Self <: GetScalingPlanResourceForecastDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScalingPlanResourceForecastDataRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

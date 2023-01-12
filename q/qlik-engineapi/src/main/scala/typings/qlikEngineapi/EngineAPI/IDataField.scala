@@ -34,7 +34,8 @@ object IDataField {
     __obj.asInstanceOf[IDataField]
   }
   
-  extension [Self <: IDataField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataField] (val x: Self) extends AnyVal {
     
     inline def setQIsKey(value: Boolean): Self = StObject.set(x, "qIsKey", value.asInstanceOf[js.Any])
     

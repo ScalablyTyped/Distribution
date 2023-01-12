@@ -184,7 +184,8 @@ object PartialactiveKeystringnul {
     __obj.asInstanceOf[PartialactiveKeystringnul]
   }
   
-  extension [Self <: PartialactiveKeystringnul](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialactiveKeystringnul] (val x: Self) extends AnyVal {
     
     inline def setActiveKey(value: String): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
     

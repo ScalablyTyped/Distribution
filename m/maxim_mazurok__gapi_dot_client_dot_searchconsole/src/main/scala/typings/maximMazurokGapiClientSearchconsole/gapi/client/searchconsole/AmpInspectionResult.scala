@@ -37,7 +37,8 @@ object AmpInspectionResult {
     __obj.asInstanceOf[AmpInspectionResult]
   }
   
-  extension [Self <: AmpInspectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmpInspectionResult] (val x: Self) extends AnyVal {
     
     inline def setAmpIndexStatusVerdict(value: String): Self = StObject.set(x, "ampIndexStatusVerdict", value.asInstanceOf[js.Any])
     

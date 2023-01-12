@@ -60,7 +60,8 @@ object UpdateChannelRequest {
     __obj.asInstanceOf[UpdateChannelRequest]
   }
   
-  extension [Self <: UpdateChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setCdiInputSpecification(value: CdiInputSpecification): Self = StObject.set(x, "CdiInputSpecification", value.asInstanceOf[js.Any])
     

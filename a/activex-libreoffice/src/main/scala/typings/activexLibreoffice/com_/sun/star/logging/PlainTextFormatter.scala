@@ -31,7 +31,8 @@ object PlainTextFormatter {
     __obj.asInstanceOf[PlainTextFormatter]
   }
   
-  extension [Self <: PlainTextFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlainTextFormatter] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }

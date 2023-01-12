@@ -92,7 +92,8 @@ object DevToolsProfilingHooks {
     __obj.asInstanceOf[DevToolsProfilingHooks]
   }
   
-  extension [Self <: DevToolsProfilingHooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevToolsProfilingHooks] (val x: Self) extends AnyVal {
     
     inline def setMarkCommitStarted(value: Lanes => Unit): Self = StObject.set(x, "markCommitStarted", js.Any.fromFunction1(value))
     

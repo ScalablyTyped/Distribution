@@ -18,7 +18,8 @@ object DeleteEgressOnlyInternetGatewayResult {
     __obj.asInstanceOf[DeleteEgressOnlyInternetGatewayResult]
   }
   
-  extension [Self <: DeleteEgressOnlyInternetGatewayResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEgressOnlyInternetGatewayResult] (val x: Self) extends AnyVal {
     
     inline def setReturnCode(value: Boolean): Self = StObject.set(x, "ReturnCode", value.asInstanceOf[js.Any])
     

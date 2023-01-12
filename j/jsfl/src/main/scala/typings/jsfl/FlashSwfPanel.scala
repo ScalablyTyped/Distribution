@@ -21,7 +21,8 @@ object FlashSwfPanel {
     __obj.asInstanceOf[FlashSwfPanel]
   }
   
-  extension [Self <: FlashSwfPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashSwfPanel] (val x: Self) extends AnyVal {
     
     inline def setCall(value: () => Any): Self = StObject.set(x, "call", js.Any.fromFunction0(value))
     

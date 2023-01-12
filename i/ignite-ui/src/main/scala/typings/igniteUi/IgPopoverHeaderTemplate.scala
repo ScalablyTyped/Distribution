@@ -29,7 +29,8 @@ object IgPopoverHeaderTemplate {
     __obj.asInstanceOf[IgPopoverHeaderTemplate]
   }
   
-  extension [Self <: IgPopoverHeaderTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPopoverHeaderTemplate] (val x: Self) extends AnyVal {
     
     inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     

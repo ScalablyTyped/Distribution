@@ -49,7 +49,8 @@ object triggerMod {
       __obj.asInstanceOf[APIGatewayEvent]
     }
     
-    extension [Self <: APIGatewayEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayEvent] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object triggerMod {
       __obj.asInstanceOf[APIGatewayRequestContext]
     }
     
-    extension [Self <: APIGatewayRequestContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayRequestContext] (val x: Self) extends AnyVal {
       
       inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object triggerMod {
       __obj.asInstanceOf[CKafkaEvent]
     }
     
-    extension [Self <: CKafkaEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CKafkaEvent] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[CKafkaEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
@@ -167,7 +170,8 @@ object triggerMod {
       __obj.asInstanceOf[CKafkaEventRecord]
     }
     
-    extension [Self <: CKafkaEventRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CKafkaEventRecord] (val x: Self) extends AnyVal {
       
       inline def setCkafka(value: MsgKey): Self = StObject.set(x, "Ckafka", value.asInstanceOf[js.Any])
     }
@@ -186,7 +190,8 @@ object triggerMod {
       __obj.asInstanceOf[CMQTopicEvent]
     }
     
-    extension [Self <: CMQTopicEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CMQTopicEvent] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[CMQTopicEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
@@ -205,7 +210,8 @@ object triggerMod {
       __obj.asInstanceOf[CMQTopicEventRecord]
     }
     
-    extension [Self <: CMQTopicEventRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CMQTopicEventRecord] (val x: Self) extends AnyVal {
       
       inline def setCMQ(value: MsgBody): Self = StObject.set(x, "CMQ", value.asInstanceOf[js.Any])
     }
@@ -224,7 +230,8 @@ object triggerMod {
       __obj.asInstanceOf[COSEvent]
     }
     
-    extension [Self <: COSEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: COSEvent] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[COSEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
@@ -245,7 +252,8 @@ object triggerMod {
       __obj.asInstanceOf[COSEventRecord]
     }
     
-    extension [Self <: COSEventRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: COSEventRecord] (val x: Self) extends AnyVal {
       
       inline def setCos(value: CosBucket): Self = StObject.set(x, "cos", value.asInstanceOf[js.Any])
       
@@ -272,7 +280,8 @@ object triggerMod {
       __obj.asInstanceOf[TimerEvent]
     }
     
-    extension [Self <: TimerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimerEvent] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

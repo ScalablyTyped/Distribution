@@ -18,7 +18,8 @@ object DisableVpcClassicLinkDnsSupportResult {
     __obj.asInstanceOf[DisableVpcClassicLinkDnsSupportResult]
   }
   
-  extension [Self <: DisableVpcClassicLinkDnsSupportResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableVpcClassicLinkDnsSupportResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

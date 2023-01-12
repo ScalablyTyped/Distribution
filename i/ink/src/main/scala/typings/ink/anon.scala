@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[ActiveFocusId]
     }
     
-    extension [Self <: ActiveFocusId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveFocusId] (val x: Self) extends AnyVal {
       
       inline def setActiveFocusId(value: Unit): Self = StObject.set(x, "activeFocusId", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[AutoFocus]
     }
     
-    extension [Self <: AutoFocus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoFocus] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     }
@@ -95,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -133,7 +137,8 @@ object anon {
       __obj.asInstanceOf[NodeName]
     }
     
-    extension [Self <: NodeName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeName] (val x: Self) extends AnyVal {
       
       inline def setNodeName(value: NodeNames): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     }
@@ -156,7 +161,8 @@ object anon {
       __obj.asInstanceOf[OffsetX]
     }
     
-    extension [Self <: OffsetX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OffsetX] (val x: Self) extends AnyVal {
       
       inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
@@ -187,7 +193,8 @@ object anon {
       __obj.asInstanceOf[ShowCursor]
     }
     
-    extension [Self <: ShowCursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowCursor] (val x: Self) extends AnyVal {
       
       inline def setShowCursor(value: Boolean): Self = StObject.set(x, "showCursor", value.asInstanceOf[js.Any])
       
@@ -206,7 +213,8 @@ object anon {
       __obj.asInstanceOf[Transformers]
     }
     
-    extension [Self <: Transformers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transformers] (val x: Self) extends AnyVal {
       
       inline def setTransformers(value: js.Array[OutputTransformer]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
       
@@ -323,7 +331,8 @@ object anon {
       __obj.asInstanceOf[readonlymarginnumberundef]
     }
     
-    extension [Self <: readonlymarginnumberundef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: readonlymarginnumberundef] (val x: Self) extends AnyVal {
       
       inline def setAlignItems(value: `flex-start` | center | `flex-end` | stretch): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
       

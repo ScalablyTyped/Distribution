@@ -16,7 +16,8 @@ object TrimWhitespaceRequest {
     __obj.asInstanceOf[TrimWhitespaceRequest]
   }
   
-  extension [Self <: TrimWhitespaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrimWhitespaceRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

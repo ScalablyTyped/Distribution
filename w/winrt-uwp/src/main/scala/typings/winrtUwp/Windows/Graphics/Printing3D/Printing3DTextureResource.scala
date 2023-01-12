@@ -21,7 +21,8 @@ object Printing3DTextureResource {
     __obj.asInstanceOf[Printing3DTextureResource]
   }
   
-  extension [Self <: Printing3DTextureResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DTextureResource] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

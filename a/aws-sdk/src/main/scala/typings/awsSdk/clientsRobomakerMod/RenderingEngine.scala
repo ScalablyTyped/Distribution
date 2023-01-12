@@ -23,7 +23,8 @@ object RenderingEngine {
     __obj.asInstanceOf[RenderingEngine]
   }
   
-  extension [Self <: RenderingEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderingEngine] (val x: Self) extends AnyVal {
     
     inline def setName(value: RenderingEngineType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

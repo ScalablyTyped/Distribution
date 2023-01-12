@@ -24,7 +24,8 @@ object SearchBoxOptions {
     __obj.asInstanceOf[SearchBoxOptions]
   }
   
-  extension [Self <: SearchBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

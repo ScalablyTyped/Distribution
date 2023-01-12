@@ -29,7 +29,8 @@ object SimpleMarkerSymbol {
     __obj.asInstanceOf[SimpleMarkerSymbol]
   }
   
-  extension [Self <: SimpleMarkerSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleMarkerSymbol] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

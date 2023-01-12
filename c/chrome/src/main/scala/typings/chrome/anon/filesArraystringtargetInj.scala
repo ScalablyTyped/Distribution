@@ -25,7 +25,8 @@ object filesArraystringtargetInj {
     __obj.asInstanceOf[filesArraystringtargetInj]
   }
   
-  extension [Self <: filesArraystringtargetInj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: filesArraystringtargetInj] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object IOptions {
     __obj.asInstanceOf[IOptions[T]]
   }
   
-  extension [Self <: IOptions[?], T /* <: Message */](x: Self & IOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOptions[?], T /* <: Message */] (val x: Self & IOptions[T]) extends AnyVal {
     
     inline def setBuffers(value: js.Array[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     

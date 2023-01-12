@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Backend]
     }
     
-    extension [Self <: Backend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Backend] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (js.Array[String], String, String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
       
@@ -114,7 +115,8 @@ object mod {
         __obj.asInstanceOf[typings.i18nextFsBackend.mod.i18next.InitOptions]
       }
       
-      extension [Self <: typings.i18nextFsBackend.mod.i18next.InitOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.i18nextFsBackend.mod.i18next.InitOptions] (val x: Self) extends AnyVal {
         
         inline def setBackend(value: i18nextFsBackendOptions): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
         
@@ -144,7 +146,8 @@ object mod {
         __obj.asInstanceOf[i18nextFsBackendOptions]
       }
       
-      extension [Self <: i18nextFsBackendOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: i18nextFsBackendOptions] (val x: Self) extends AnyVal {
         
         inline def setAddPath(value: String): Self = StObject.set(x, "addPath", value.asInstanceOf[js.Any])
         

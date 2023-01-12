@@ -145,7 +145,8 @@ object libRestPreviewTrustedCommsCpsMod {
       __obj.asInstanceOf[CpsInstanceFetchOptions]
     }
     
-    extension [Self <: CpsInstanceFetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CpsInstanceFetchOptions] (val x: Self) extends AnyVal {
       
       inline def setXXcnamSensitivePhoneNumber(value: String): Self = StObject.set(x, "xXcnamSensitivePhoneNumber", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object libRestPreviewTrustedCommsCpsMod {
       __obj.asInstanceOf[CpsResource]
     }
     
-    extension [Self <: CpsResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CpsResource] (val x: Self) extends AnyVal {
       
       inline def setCps_url(value: String): Self = StObject.set(x, "cps_url", value.asInstanceOf[js.Any])
       

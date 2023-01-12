@@ -125,7 +125,8 @@ object QueryDslQueryContainer {
     __obj.asInstanceOf[QueryDslQueryContainer]
   }
   
-  extension [Self <: QueryDslQueryContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslQueryContainer] (val x: Self) extends AnyVal {
     
     inline def setBool(value: QueryDslBoolQuery): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
     

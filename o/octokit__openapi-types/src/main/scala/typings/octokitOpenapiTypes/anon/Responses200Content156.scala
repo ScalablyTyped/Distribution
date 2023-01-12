@@ -17,7 +17,8 @@ object Responses200Content156 {
     __obj.asInstanceOf[Responses200Content156]
   }
   
-  extension [Self <: Responses200Content156](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200Content156] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathWorkflowid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object undiciMod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCookies(value: CookieOptions): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
         
@@ -70,7 +71,8 @@ object undiciMod {
         __obj.asInstanceOf[typings.httpCookieAgent.undiciMod.CookieClient.Options]
       }
       
-      extension [Self <: typings.httpCookieAgent.undiciMod.CookieClient.Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.httpCookieAgent.undiciMod.CookieClient.Options] (val x: Self) extends AnyVal {
         
         inline def setCookies(value: CookieOptions): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
         
@@ -104,7 +106,8 @@ object undiciMod {
       __obj.asInstanceOf[CookieOptions]
     }
     
-    extension [Self <: CookieOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync_UNSTABLE(value: `true`): Self = StObject.set(x, "async_UNSTABLE", value.asInstanceOf[js.Any])
       

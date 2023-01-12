@@ -67,7 +67,8 @@ object distTransitionSrcTransitionMod {
       __obj.asInstanceOf[InnerTransitionProps]
     }
     
-    extension [Self <: InnerTransitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerTransitionProps] (val x: Self) extends AnyVal {
       
       inline def setAnimateFirstRender(value: Boolean): Self = StObject.set(x, "animateFirstRender", value.asInstanceOf[js.Any])
       

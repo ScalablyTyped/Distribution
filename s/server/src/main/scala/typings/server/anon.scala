@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: OptionsUrlencoded): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Csrf]
     }
     
-    extension [Self <: Csrf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Csrf] (val x: Self) extends AnyVal {
       
       inline def setCsrf(value: `false` | CsurfOptions): Self = StObject.set(x, "csrf", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object anon {
       __obj.asInstanceOf[keyinLogLevelLogFn]
     }
     
-    extension [Self <: keyinLogLevelLogFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: keyinLogLevelLogFn] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: LogFn): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       

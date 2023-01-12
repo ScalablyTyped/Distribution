@@ -43,7 +43,8 @@ object ListEphemeridesRequest {
     __obj.asInstanceOf[ListEphemeridesRequest]
   }
   
-  extension [Self <: ListEphemeridesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEphemeridesRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

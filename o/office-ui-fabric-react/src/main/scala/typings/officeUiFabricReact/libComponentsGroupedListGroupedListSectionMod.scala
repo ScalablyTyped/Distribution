@@ -205,7 +205,8 @@ object libComponentsGroupedListGroupedListSectionMod {
       __obj.asInstanceOf[IGroupedListSectionState]
     }
     
-    extension [Self <: IGroupedListSectionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupedListSectionState] (val x: Self) extends AnyVal {
       
       inline def setIsDropping(value: Boolean): Self = StObject.set(x, "isDropping", value.asInstanceOf[js.Any])
       

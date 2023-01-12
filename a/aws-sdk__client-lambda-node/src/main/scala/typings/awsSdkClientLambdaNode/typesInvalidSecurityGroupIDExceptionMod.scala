@@ -21,7 +21,8 @@ object typesInvalidSecurityGroupIDExceptionMod {
       __obj.asInstanceOf[InvalidSecurityGroupIDException]
     }
     
-    extension [Self <: InvalidSecurityGroupIDException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidSecurityGroupIDException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidSecurityGroupIDException
@@ -48,7 +49,8 @@ object typesInvalidSecurityGroupIDExceptionMod {
       __obj.asInstanceOf[InvalidSecurityGroupIDExceptionDetails]
     }
     
-    extension [Self <: InvalidSecurityGroupIDExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidSecurityGroupIDExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

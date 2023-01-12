@@ -91,7 +91,8 @@ object ObjectmatrixArraynumberun {
     __obj.asInstanceOf[ObjectmatrixArraynumberun]
   }
   
-  extension [Self <: ObjectmatrixArraynumberun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectmatrixArraynumberun] (val x: Self) extends AnyVal {
     
     inline def setConstructor(value: js.Function): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ResultTemplate {
     __obj.asInstanceOf[ResultTemplate]
   }
   
-  extension [Self <: ResultTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultTemplate] (val x: Self) extends AnyVal {
     
     inline def setBody(value: NullableOption[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

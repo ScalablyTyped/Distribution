@@ -18,7 +18,8 @@ object MonitoringConstraintsResource {
     __obj.asInstanceOf[MonitoringConstraintsResource]
   }
   
-  extension [Self <: MonitoringConstraintsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringConstraintsResource] (val x: Self) extends AnyVal {
     
     inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     

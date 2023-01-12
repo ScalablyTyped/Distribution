@@ -23,7 +23,8 @@ object TeletextSourceSettings {
     __obj.asInstanceOf[TeletextSourceSettings]
   }
   
-  extension [Self <: TeletextSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeletextSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setOutputRectangle(value: CaptionRectangle): Self = StObject.set(x, "OutputRectangle", value.asInstanceOf[js.Any])
     

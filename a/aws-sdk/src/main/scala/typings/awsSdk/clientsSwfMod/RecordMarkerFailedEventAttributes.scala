@@ -28,7 +28,8 @@ object RecordMarkerFailedEventAttributes {
     __obj.asInstanceOf[RecordMarkerFailedEventAttributes]
   }
   
-  extension [Self <: RecordMarkerFailedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordMarkerFailedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setCause(value: RecordMarkerFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Account {
     __obj.asInstanceOf[Account]
   }
   
-  extension [Self <: Account](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
     
     inline def setCharge(value: AccountChargeRequest => js.Promise[AxiosResponse[Any, Any]]): Self = StObject.set(x, "charge", js.Any.fromFunction1(value))
     

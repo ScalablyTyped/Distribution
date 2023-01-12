@@ -465,7 +465,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Blake2bWasm]
     }
     
-    extension [Self <: Blake2bWasm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blake2bWasm] (val x: Self) extends AnyVal {
       
       inline def setBlake2b_compress(value: Double => Unit): Self = StObject.set(x, "blake2b_compress", js.Any.fromFunction1(value))
       

@@ -15,7 +15,8 @@ object TrustedScriptURL {
     __obj.asInstanceOf[TrustedScriptURL]
   }
   
-  extension [Self <: TrustedScriptURL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustedScriptURL] (val x: Self) extends AnyVal {
     
     inline def set__brand__(value: typings.angularCore.angularCoreStrings.TrustedScriptURL): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }

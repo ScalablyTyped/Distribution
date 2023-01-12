@@ -74,7 +74,8 @@ object SelectionCollection {
     __obj.asInstanceOf[SelectionCollection]
   }
   
-  extension [Self <: SelectionCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionCollection] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction3(value))
     

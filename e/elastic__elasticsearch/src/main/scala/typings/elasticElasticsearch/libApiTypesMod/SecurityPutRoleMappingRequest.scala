@@ -29,7 +29,8 @@ object SecurityPutRoleMappingRequest {
     __obj.asInstanceOf[SecurityPutRoleMappingRequest]
   }
   
-  extension [Self <: SecurityPutRoleMappingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPutRoleMappingRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

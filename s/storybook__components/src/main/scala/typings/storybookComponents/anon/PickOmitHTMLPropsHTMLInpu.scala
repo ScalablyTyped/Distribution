@@ -839,7 +839,8 @@ object PickOmitHTMLPropsHTMLInpu {
     __obj.asInstanceOf[PickOmitHTMLPropsHTMLInpu]
   }
   
-  extension [Self <: PickOmitHTMLPropsHTMLInpu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickOmitHTMLPropsHTMLInpu] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

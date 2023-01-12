@@ -26,7 +26,8 @@ object CIMShapeVertices {
     __obj.asInstanceOf[CIMShapeVertices]
   }
   
-  extension [Self <: CIMShapeVertices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMShapeVertices] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: Double): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

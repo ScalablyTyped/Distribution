@@ -38,7 +38,8 @@ object UpdateFindingsRequest {
     __obj.asInstanceOf[UpdateFindingsRequest]
   }
   
-  extension [Self <: UpdateFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
     

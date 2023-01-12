@@ -25,7 +25,8 @@ object ReplaceAllTextRequest {
     __obj.asInstanceOf[ReplaceAllTextRequest]
   }
   
-  extension [Self <: ReplaceAllTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceAllTextRequest] (val x: Self) extends AnyVal {
     
     inline def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
     

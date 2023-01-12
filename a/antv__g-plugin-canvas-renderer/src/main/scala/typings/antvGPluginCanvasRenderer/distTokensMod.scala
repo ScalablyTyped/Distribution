@@ -19,7 +19,8 @@ object distTokensMod {
     @js.native
     val ^ : DefinedToken = js.native
     
-    extension [Self <: CanvasRendererPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasRendererPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setDirtyObjectNumThreshold(value: Double): Self = StObject.set(x, "dirtyObjectNumThreshold", value.asInstanceOf[js.Any])
       

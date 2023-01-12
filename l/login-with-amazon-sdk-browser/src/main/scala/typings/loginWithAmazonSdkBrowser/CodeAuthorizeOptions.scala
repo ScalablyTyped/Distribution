@@ -22,7 +22,8 @@ object CodeAuthorizeOptions {
     __obj.asInstanceOf[CodeAuthorizeOptions]
   }
   
-  extension [Self <: CodeAuthorizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeAuthorizeOptions] (val x: Self) extends AnyVal {
     
     inline def setResponse_type(value: code): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
   }

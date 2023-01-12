@@ -35,7 +35,8 @@ object typesSnackbarQueueMod {
       __obj.asInstanceOf[SnackbarQueueProps[M]]
     }
     
-    extension [Self <: SnackbarQueueProps[?], M /* <: ToastMessage */](x: Self & SnackbarQueueProps[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnackbarQueueProps[?], M /* <: ToastMessage */] (val x: Self & SnackbarQueueProps[M]) extends AnyVal {
       
       inline def setOnActionClick(value: (M, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))
       

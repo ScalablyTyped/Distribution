@@ -17,7 +17,8 @@ object InterestGroupAd {
     __obj.asInstanceOf[InterestGroupAd]
   }
   
-  extension [Self <: InterestGroupAd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterestGroupAd] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

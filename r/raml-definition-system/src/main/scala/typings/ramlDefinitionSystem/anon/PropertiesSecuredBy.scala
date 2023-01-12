@@ -17,7 +17,8 @@ object PropertiesSecuredBy {
     __obj.asInstanceOf[PropertiesSecuredBy]
   }
   
-  extension [Self <: PropertiesSecuredBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesSecuredBy] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SimpleExecuteResult {
     __obj.asInstanceOf[SimpleExecuteResult]
   }
   
-  extension [Self <: SimpleExecuteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleExecuteResult] (val x: Self) extends AnyVal {
     
     inline def setColumnInfo(value: js.Array[IDbColumn]): Self = StObject.set(x, "columnInfo", value.asInstanceOf[js.Any])
     

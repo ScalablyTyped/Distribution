@@ -100,7 +100,8 @@ object CustomLayout {
     __obj.asInstanceOf[CustomLayout]
   }
   
-  extension [Self <: CustomLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLayout] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

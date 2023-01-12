@@ -120,7 +120,8 @@ object Ribbon {
       __obj.asInstanceOf[PageManager]
     }
     
-    extension [Self <: PageManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageManager] (val x: Self) extends AnyVal {
       
       inline def setAddPageComponent(value: Component => Unit): Self = StObject.set(x, "addPageComponent", js.Any.fromFunction1(value))
       
@@ -286,7 +287,8 @@ object Ribbon {
       __obj.asInstanceOf[WebPartComponent]
     }
     
-    extension [Self <: WebPartComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebPartComponent] (val x: Self) extends AnyVal {
       
       inline def setSelectWebPart(value: (HTMLElement, Boolean) => Unit): Self = StObject.set(x, "selectWebPart", js.Any.fromFunction2(value))
     }
@@ -307,7 +309,8 @@ object Ribbon {
       __obj.asInstanceOf[WebPartComponentInitInfo]
     }
     
-    extension [Self <: WebPartComponentInitInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebPartComponentInitInfo] (val x: Self) extends AnyVal {
       
       inline def setAllowWebPartAdder(value: Boolean): Self = StObject.set(x, "allowWebPartAdder", value.asInstanceOf[js.Any])
       

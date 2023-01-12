@@ -23,7 +23,8 @@ object DescribeRecommendationExportJobsResponse {
     __obj.asInstanceOf[DescribeRecommendationExportJobsResponse]
   }
   
-  extension [Self <: DescribeRecommendationExportJobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRecommendationExportJobsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

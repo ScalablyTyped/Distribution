@@ -23,7 +23,8 @@ object FloatingTextBoxInfo {
     __obj.asInstanceOf[FloatingTextBoxInfo]
   }
   
-  extension [Self <: FloatingTextBoxInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingTextBoxInfo] (val x: Self) extends AnyVal {
     
     inline def setContentSubDocument(value: SubDocument): Self = StObject.set(x, "contentSubDocument", value.asInstanceOf[js.Any])
   }

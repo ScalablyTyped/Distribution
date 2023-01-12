@@ -58,7 +58,8 @@ object srcExperimentalJobsCreateJobHandlerMod {
       __obj.asInstanceOf[SimpleJobHandlerContext[A, I, O]]
     }
     
-    extension [Self <: SimpleJobHandlerContext[?, ?, ?], A /* <: JsonValue */, I /* <: JsonValue */, O /* <: JsonValue */](x: Self & (SimpleJobHandlerContext[A, I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleJobHandlerContext[?, ?, ?], A /* <: JsonValue */, I /* <: JsonValue */, O /* <: JsonValue */] (val x: Self & (SimpleJobHandlerContext[A, I, O])) extends AnyVal {
       
       inline def setCreateChannel(value: String => Observer[JsonValue]): Self = StObject.set(x, "createChannel", js.Any.fromFunction1(value))
       

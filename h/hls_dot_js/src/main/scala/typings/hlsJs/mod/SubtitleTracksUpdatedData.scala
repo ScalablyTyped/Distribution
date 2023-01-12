@@ -15,7 +15,8 @@ object SubtitleTracksUpdatedData {
     __obj.asInstanceOf[SubtitleTracksUpdatedData]
   }
   
-  extension [Self <: SubtitleTracksUpdatedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtitleTracksUpdatedData] (val x: Self) extends AnyVal {
     
     inline def setSubtitleTracks(value: js.Array[MediaPlaylist]): Self = StObject.set(x, "subtitleTracks", value.asInstanceOf[js.Any])
     

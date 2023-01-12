@@ -98,7 +98,8 @@ object RegisterImageRequest {
     __obj.asInstanceOf[RegisterImageRequest]
   }
   
-  extension [Self <: RegisterImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterImageRequest] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: ArchitectureValues): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     

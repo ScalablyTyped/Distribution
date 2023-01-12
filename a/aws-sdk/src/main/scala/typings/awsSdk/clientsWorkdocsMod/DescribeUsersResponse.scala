@@ -28,7 +28,8 @@ object DescribeUsersResponse {
     __obj.asInstanceOf[DescribeUsersResponse]
   }
   
-  extension [Self <: DescribeUsersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeUsersResponse] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

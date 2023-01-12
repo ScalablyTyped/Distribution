@@ -156,7 +156,8 @@ object componentsMediaObjectMod {
       __obj.asInstanceOf[MediaObjectProps]
     }
     
-    extension [Self <: MediaObjectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaObjectProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -468,7 +469,8 @@ object componentsMediaObjectMod {
       __obj.asInstanceOf[MediaObjectSectionProps]
     }
     
-    extension [Self <: MediaObjectSectionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaObjectSectionProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

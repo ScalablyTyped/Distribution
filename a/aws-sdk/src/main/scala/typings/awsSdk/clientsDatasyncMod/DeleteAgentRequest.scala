@@ -18,7 +18,8 @@ object DeleteAgentRequest {
     __obj.asInstanceOf[DeleteAgentRequest]
   }
   
-  extension [Self <: DeleteAgentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAgentRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentArn(value: AgentArn): Self = StObject.set(x, "AgentArn", value.asInstanceOf[js.Any])
   }

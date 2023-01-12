@@ -30,7 +30,8 @@ object AutoFitToViewport {
     __obj.asInstanceOf[AutoFitToViewport]
   }
   
-  extension [Self <: AutoFitToViewport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoFitToViewport] (val x: Self) extends AnyVal {
     
     inline def setAutoFitToViewport(value: none | ifNull | always): Self = StObject.set(x, "autoFitToViewport", value.asInstanceOf[js.Any])
     

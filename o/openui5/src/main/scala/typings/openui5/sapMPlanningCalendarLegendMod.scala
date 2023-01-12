@@ -286,7 +286,8 @@ object sapMPlanningCalendarLegendMod {
       __obj.asInstanceOf[PlanningCalendarLegendSettings]
     }
     
-    extension [Self <: PlanningCalendarLegendSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanningCalendarLegendSettings] (val x: Self) extends AnyVal {
       
       inline def setAppointmentItems(
         value: js.Array[typings.openui5.sapUiUnifiedCalendarLegendItemMod.default] | typings.openui5.sapUiUnifiedCalendarLegendItemMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

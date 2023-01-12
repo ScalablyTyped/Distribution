@@ -16,7 +16,8 @@ object IndoorLevel {
     __obj.asInstanceOf[IndoorLevel]
   }
   
-  extension [Self <: IndoorLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndoorLevel] (val x: Self) extends AnyVal {
     
     inline def setIndoorLevel(value: ActiveIndoorLevel): Self = StObject.set(x, "IndoorLevel", value.asInstanceOf[js.Any])
   }

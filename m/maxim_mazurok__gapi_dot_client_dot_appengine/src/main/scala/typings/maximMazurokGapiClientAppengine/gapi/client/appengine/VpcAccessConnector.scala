@@ -19,7 +19,8 @@ object VpcAccessConnector {
     __obj.asInstanceOf[VpcAccessConnector]
   }
   
-  extension [Self <: VpcAccessConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcAccessConnector] (val x: Self) extends AnyVal {
     
     inline def setEgressSetting(value: String): Self = StObject.set(x, "egressSetting", value.asInstanceOf[js.Any])
     

@@ -195,7 +195,8 @@ object mod {
       __obj.asInstanceOf[DecodingOptions]
     }
     
-    extension [Self <: DecodingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodingOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: EntityLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -228,7 +229,8 @@ object mod {
       __obj.asInstanceOf[EncodingOptions]
     }
     
-    extension [Self <: EncodingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: EntityLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

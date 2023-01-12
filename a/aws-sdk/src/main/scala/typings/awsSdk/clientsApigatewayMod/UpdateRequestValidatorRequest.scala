@@ -28,7 +28,8 @@ object UpdateRequestValidatorRequest {
     __obj.asInstanceOf[UpdateRequestValidatorRequest]
   }
   
-  extension [Self <: UpdateRequestValidatorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRequestValidatorRequest] (val x: Self) extends AnyVal {
     
     inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[NormalizeOptions]
     }
     
-    extension [Self <: NormalizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizeOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[NormalizedReadResult]
     }
     
-    extension [Self <: NormalizedReadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedReadResult] (val x: Self) extends AnyVal {
       
       inline def setPackageJson(value: NormalizedPackageJson): Self = StObject.set(x, "packageJson", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object mod {
       __obj.asInstanceOf[ReadResult]
     }
     
-    extension [Self <: ReadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadResult] (val x: Self) extends AnyVal {
       
       inline def setPackageJson(value: PackageJson): Self = StObject.set(x, "packageJson", value.asInstanceOf[js.Any])
       

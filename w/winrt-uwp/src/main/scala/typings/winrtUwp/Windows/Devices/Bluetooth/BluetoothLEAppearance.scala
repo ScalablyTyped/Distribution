@@ -23,7 +23,8 @@ object BluetoothLEAppearance {
     __obj.asInstanceOf[BluetoothLEAppearance]
   }
   
-  extension [Self <: BluetoothLEAppearance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothLEAppearance] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

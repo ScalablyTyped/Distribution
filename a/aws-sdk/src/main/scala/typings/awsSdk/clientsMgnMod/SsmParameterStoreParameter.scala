@@ -23,7 +23,8 @@ object SsmParameterStoreParameter {
     __obj.asInstanceOf[SsmParameterStoreParameter]
   }
   
-  extension [Self <: SsmParameterStoreParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsmParameterStoreParameter] (val x: Self) extends AnyVal {
     
     inline def setParameterName(value: SsmParameterStoreParameterName): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     

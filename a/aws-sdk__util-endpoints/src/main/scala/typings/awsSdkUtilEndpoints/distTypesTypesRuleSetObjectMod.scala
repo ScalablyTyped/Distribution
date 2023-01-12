@@ -24,7 +24,8 @@ object distTypesTypesRuleSetObjectMod {
       __obj.asInstanceOf[DeprecatedObject]
     }
     
-    extension [Self <: DeprecatedObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecatedObject] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object distTypesTypesRuleSetObjectMod {
       __obj.asInstanceOf[ParameterObject]
     }
     
-    extension [Self <: ParameterObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParameterObject] (val x: Self) extends AnyVal {
       
       inline def setBuiltIn(value: String): Self = StObject.set(x, "builtIn", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object distTypesTypesRuleSetObjectMod {
       __obj.asInstanceOf[RuleSetObject]
     }
     
-    extension [Self <: RuleSetObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleSetObject] (val x: Self) extends AnyVal {
       
       inline def setParameters(value: Record[String, ParameterObject]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       

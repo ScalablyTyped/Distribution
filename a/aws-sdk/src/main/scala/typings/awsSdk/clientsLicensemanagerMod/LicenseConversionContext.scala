@@ -18,7 +18,8 @@ object LicenseConversionContext {
     __obj.asInstanceOf[LicenseConversionContext]
   }
   
-  extension [Self <: LicenseConversionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseConversionContext] (val x: Self) extends AnyVal {
     
     inline def setUsageOperation(value: UsageOperation): Self = StObject.set(x, "UsageOperation", value.asInstanceOf[js.Any])
     

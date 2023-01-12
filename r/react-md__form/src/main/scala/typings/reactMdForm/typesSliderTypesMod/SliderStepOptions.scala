@@ -36,7 +36,8 @@ object SliderStepOptions {
     __obj.asInstanceOf[SliderStepOptions]
   }
   
-  extension [Self <: SliderStepOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderStepOptions] (val x: Self) extends AnyVal {
     
     inline def setJump(value: Double): Self = StObject.set(x, "jump", value.asInstanceOf[js.Any])
     

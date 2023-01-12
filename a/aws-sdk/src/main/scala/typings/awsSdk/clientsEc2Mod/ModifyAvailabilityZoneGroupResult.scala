@@ -18,7 +18,8 @@ object ModifyAvailabilityZoneGroupResult {
     __obj.asInstanceOf[ModifyAvailabilityZoneGroupResult]
   }
   
-  extension [Self <: ModifyAvailabilityZoneGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyAvailabilityZoneGroupResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

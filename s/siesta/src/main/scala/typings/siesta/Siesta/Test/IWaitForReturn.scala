@@ -15,7 +15,8 @@ object IWaitForReturn {
     __obj.asInstanceOf[IWaitForReturn]
   }
   
-  extension [Self <: IWaitForReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWaitForReturn] (val x: Self) extends AnyVal {
     
     inline def setForce(value: js.Function): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
   }

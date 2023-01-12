@@ -26,7 +26,8 @@ object TerraformPlanReferencedResource {
     __obj.asInstanceOf[TerraformPlanReferencedResource]
   }
   
-  extension [Self <: TerraformPlanReferencedResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerraformPlanReferencedResource] (val x: Self) extends AnyVal {
     
     inline def setExpressions(value: Record[String, TerraformPlanExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     

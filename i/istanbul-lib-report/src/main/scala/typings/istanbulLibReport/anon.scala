@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[PartialContextOptions]
     }
     
-    extension [Self <: PartialContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialContextOptions] (val x: Self) extends AnyVal {
       
       inline def setCoverageMap(value: CoverageMap): Self = StObject.set(x, "coverageMap", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object anon {
       __obj.asInstanceOf[PartialReportBaseOptions]
     }
     
-    extension [Self <: PartialReportBaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialReportBaseOptions] (val x: Self) extends AnyVal {
       
       inline def setSummarizer(value: Summarizers): Self = StObject.set(x, "summarizer", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[PartialWatermarks]
     }
     
-    extension [Self <: PartialWatermarks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialWatermarks] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: Watermark): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       

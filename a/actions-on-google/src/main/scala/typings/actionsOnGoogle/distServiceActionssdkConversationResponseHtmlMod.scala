@@ -63,7 +63,8 @@ object distServiceActionssdkConversationResponseHtmlMod {
       __obj.asInstanceOf[HtmlResponseOptions[TData]]
     }
     
-    extension [Self <: HtmlResponseOptions[?], TData /* <: JsonObject */](x: Self & HtmlResponseOptions[TData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlResponseOptions[?], TData /* <: JsonObject */] (val x: Self & HtmlResponseOptions[TData]) extends AnyVal {
       
       inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

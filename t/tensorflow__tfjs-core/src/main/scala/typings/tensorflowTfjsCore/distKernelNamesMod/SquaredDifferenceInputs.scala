@@ -18,7 +18,8 @@ object SquaredDifferenceInputs {
     __obj.asInstanceOf[SquaredDifferenceInputs]
   }
   
-  extension [Self <: SquaredDifferenceInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SquaredDifferenceInputs] (val x: Self) extends AnyVal {
     
     inline def setA(value: scala.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

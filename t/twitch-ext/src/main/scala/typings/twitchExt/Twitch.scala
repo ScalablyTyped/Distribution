@@ -75,7 +75,8 @@ object Twitch {
         __obj.asInstanceOf[Authorized]
       }
       
-      extension [Self <: Authorized](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Authorized] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -118,7 +119,8 @@ object Twitch {
         __obj.asInstanceOf[BitsProduct]
       }
       
-      extension [Self <: BitsProduct](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BitsProduct] (val x: Self) extends AnyVal {
         
         inline def setCost(value: BitsProductCost): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
         
@@ -152,7 +154,8 @@ object Twitch {
         __obj.asInstanceOf[BitsProductCost]
       }
       
-      extension [Self <: BitsProductCost](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BitsProductCost] (val x: Self) extends AnyVal {
         
         inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
         
@@ -210,7 +213,8 @@ object Twitch {
         __obj.asInstanceOf[BitsTransaction]
       }
       
-      extension [Self <: BitsTransaction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BitsTransaction] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -292,7 +296,8 @@ object Twitch {
         __obj.asInstanceOf[ClientQueryParams]
       }
       
-      extension [Self <: ClientQueryParams](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientQueryParams] (val x: Self) extends AnyVal {
         
         inline def setAnchor(value: component | panel | video_overlay): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
         
@@ -431,7 +436,8 @@ object Twitch {
         __obj.asInstanceOf[Context]
       }
       
-      extension [Self <: Context](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
         
         inline def setArePlayerControlsVisible(value: Boolean): Self = StObject.set(x, "arePlayerControlsVisible", value.asInstanceOf[js.Any])
         
@@ -493,7 +499,8 @@ object Twitch {
         __obj.asInstanceOf[Rig]
       }
       
-      extension [Self <: Rig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Rig] (val x: Self) extends AnyVal {
         
         inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       }
@@ -564,7 +571,8 @@ object Twitch {
         __obj.asInstanceOf[Viewer]
       }
       
-      extension [Self <: Viewer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Viewer] (val x: Self) extends AnyVal {
         
         inline def setHelixToken(value: String): Self = StObject.set(x, "helixToken", value.asInstanceOf[js.Any])
         
@@ -603,7 +611,8 @@ object Twitch {
         __obj.asInstanceOf[ViewerSubscriptionStatus]
       }
       
-      extension [Self <: ViewerSubscriptionStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ViewerSubscriptionStatus] (val x: Self) extends AnyVal {
         
         inline def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
       }

@@ -36,7 +36,8 @@ object OAuth2Provider {
     __obj.asInstanceOf[OAuth2Provider]
   }
   
-  extension [Self <: OAuth2Provider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuth2Provider] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

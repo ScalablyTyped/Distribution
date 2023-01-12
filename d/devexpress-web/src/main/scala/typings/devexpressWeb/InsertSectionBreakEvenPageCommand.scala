@@ -23,7 +23,8 @@ object InsertSectionBreakEvenPageCommand {
     __obj.asInstanceOf[InsertSectionBreakEvenPageCommand]
   }
   
-  extension [Self <: InsertSectionBreakEvenPageCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertSectionBreakEvenPageCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

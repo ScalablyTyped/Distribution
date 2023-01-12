@@ -118,7 +118,8 @@ object libMod {
       __obj.asInstanceOf[TrustedTypePolicyOptions]
     }
     
-    extension [Self <: TrustedTypePolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrustedTypePolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setCreateHTML(value: (/* input */ String, /* repeated */ Any) => String): Self = StObject.set(x, "createHTML", js.Any.fromFunction2(value))
       
@@ -164,7 +165,8 @@ object libMod {
       __obj.asInstanceOf[TrustedTypesWindow]
     }
     
-    extension [Self <: TrustedTypesWindow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrustedTypesWindow] (val x: Self) extends AnyVal {
       
       inline def setTrustedHTML(value: Instantiable0[TrustedHTML]): Self = StObject.set(x, "TrustedHTML", value.asInstanceOf[js.Any])
       

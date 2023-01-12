@@ -16,7 +16,8 @@ object FcmOptions {
     __obj.asInstanceOf[FcmOptions]
   }
   
-  extension [Self <: FcmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FcmOptions] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsLabel(value: String): Self = StObject.set(x, "analyticsLabel", value.asInstanceOf[js.Any])
     

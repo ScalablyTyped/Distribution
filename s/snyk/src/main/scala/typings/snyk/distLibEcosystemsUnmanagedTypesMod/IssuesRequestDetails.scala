@@ -38,7 +38,8 @@ object IssuesRequestDetails {
     __obj.asInstanceOf[IssuesRequestDetails]
   }
   
-  extension [Self <: IssuesRequestDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuesRequestDetails] (val x: Self) extends AnyVal {
     
     inline def setArtifact(value: String): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DeleteJobRequest {
     __obj.asInstanceOf[DeleteJobRequest]
   }
   
-  extension [Self <: DeleteJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteJobRequest] (val x: Self) extends AnyVal {
     
     inline def setForce(value: ForceFlag): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

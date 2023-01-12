@@ -19,7 +19,8 @@ object ReturnTypeSnapshotCommandLogResponse {
     __obj.asInstanceOf[ReturnTypeSnapshotCommandLogResponse]
   }
   
-  extension [Self <: ReturnTypeSnapshotCommandLogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeSnapshotCommandLogResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[SnapshotCommandLogRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

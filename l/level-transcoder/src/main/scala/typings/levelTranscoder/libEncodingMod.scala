@@ -110,7 +110,8 @@ object libEncodingMod {
       __obj.asInstanceOf[IEncoding[TIn, TFormat, TOut]]
     }
     
-    extension [Self <: IEncoding[?, ?, ?], TIn, TFormat, TOut](x: Self & (IEncoding[TIn, TFormat, TOut])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEncoding[?, ?, ?], TIn, TFormat, TOut] (val x: Self & (IEncoding[TIn, TFormat, TOut])) extends AnyVal {
       
       inline def setCreateBufferTranscoder(value: () => BufferFormat[TIn, TOut]): Self = StObject.set(x, "createBufferTranscoder", js.Any.fromFunction0(value))
       
@@ -179,7 +180,8 @@ object libEncodingMod {
       __obj.asInstanceOf[IExternalEncoding[TIn, TFormat, TOut]]
     }
     
-    extension [Self <: IExternalEncoding[?, ?, ?], TIn, TFormat, TOut](x: Self & (IExternalEncoding[TIn, TFormat, TOut])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExternalEncoding[?, ?, ?], TIn, TFormat, TOut] (val x: Self & (IExternalEncoding[TIn, TFormat, TOut])) extends AnyVal {
       
       inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

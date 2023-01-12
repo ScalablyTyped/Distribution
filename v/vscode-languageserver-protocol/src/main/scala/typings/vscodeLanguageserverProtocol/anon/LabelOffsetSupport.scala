@@ -21,7 +21,8 @@ object LabelOffsetSupport {
     __obj.asInstanceOf[LabelOffsetSupport]
   }
   
-  extension [Self <: LabelOffsetSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelOffsetSupport] (val x: Self) extends AnyVal {
     
     inline def setLabelOffsetSupport(value: Boolean): Self = StObject.set(x, "labelOffsetSupport", value.asInstanceOf[js.Any])
     

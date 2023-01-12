@@ -40,7 +40,8 @@ object UpdateGroundOverlayOption {
     __obj.asInstanceOf[UpdateGroundOverlayOption]
   }
   
-  extension [Self <: UpdateGroundOverlayOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGroundOverlayOption] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: MapBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

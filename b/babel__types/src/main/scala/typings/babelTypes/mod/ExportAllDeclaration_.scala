@@ -34,7 +34,8 @@ object ExportAllDeclaration_ {
     __obj.asInstanceOf[ExportAllDeclaration_]
   }
   
-  extension [Self <: ExportAllDeclaration_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportAllDeclaration_] (val x: Self) extends AnyVal {
     
     inline def setAssertions(value: js.Array[ImportAttribute_]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
     

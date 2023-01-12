@@ -58,7 +58,8 @@ object IRecord {
     __obj.asInstanceOf[IRecord]
   }
   
-  extension [Self <: IRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRecord] (val x: Self) extends AnyVal {
     
     inline def setAddFieldValue(value: (String, Any) => Unit): Self = StObject.set(x, "AddFieldValue", js.Any.fromFunction2(value))
     

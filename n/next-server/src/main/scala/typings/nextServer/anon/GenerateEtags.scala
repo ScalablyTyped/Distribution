@@ -17,7 +17,8 @@ object GenerateEtags {
     __obj.asInstanceOf[GenerateEtags]
   }
   
-  extension [Self <: GenerateEtags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateEtags] (val x: Self) extends AnyVal {
     
     inline def setGenerateEtags(value: Boolean): Self = StObject.set(x, "generateEtags", value.asInstanceOf[js.Any])
     

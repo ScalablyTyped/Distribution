@@ -46,7 +46,8 @@ object DefaultValue {
     __obj.asInstanceOf[DefaultValue[DateType, DisabledTime]]
   }
   
-  extension [Self <: DefaultValue[?, ?], DateType, DisabledTime](x: Self & (DefaultValue[DateType, DisabledTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultValue[?, ?], DateType, DisabledTime] (val x: Self & (DefaultValue[DateType, DisabledTime])) extends AnyVal {
     
     inline def setDefaultValue(value: DateType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

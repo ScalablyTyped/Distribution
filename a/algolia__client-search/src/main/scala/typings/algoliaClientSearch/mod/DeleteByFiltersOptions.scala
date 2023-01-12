@@ -55,7 +55,8 @@ object DeleteByFiltersOptions {
     __obj.asInstanceOf[DeleteByFiltersOptions]
   }
   
-  extension [Self <: DeleteByFiltersOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteByFiltersOptions] (val x: Self) extends AnyVal {
     
     inline def setAroundLatLng(value: String): Self = StObject.set(x, "aroundLatLng", value.asInstanceOf[js.Any])
     

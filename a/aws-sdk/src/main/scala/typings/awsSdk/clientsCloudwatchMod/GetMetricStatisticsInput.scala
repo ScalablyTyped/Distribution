@@ -58,7 +58,8 @@ object GetMetricStatisticsInput {
     __obj.asInstanceOf[GetMetricStatisticsInput]
   }
   
-  extension [Self <: GetMetricStatisticsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMetricStatisticsInput] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

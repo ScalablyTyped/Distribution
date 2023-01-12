@@ -37,7 +37,8 @@ object XSystemDependentWindowPeer {
     __obj.asInstanceOf[XSystemDependentWindowPeer]
   }
   
-  extension [Self <: XSystemDependentWindowPeer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSystemDependentWindowPeer] (val x: Self) extends AnyVal {
     
     inline def setGetWindowHandle(value: (SeqEquiv[Double], Double) => Any): Self = StObject.set(x, "getWindowHandle", js.Any.fromFunction2(value))
   }

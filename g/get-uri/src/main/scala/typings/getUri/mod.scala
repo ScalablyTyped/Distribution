@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[GetUriOptions]
     }
     
-    extension [Self <: GetUriOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetUriOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Readable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

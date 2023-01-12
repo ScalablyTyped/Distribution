@@ -70,7 +70,8 @@ object tableStyledComponentsMod {
       __obj.asInstanceOf[CellStyledProps]
     }
     
-    extension [Self <: CellStyledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellStyledProps] (val x: Self) extends AnyVal {
       
       inline def set$striped(value: Boolean): Self = StObject.set(x, "$striped", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object tableStyledComponentsMod {
       __obj.asInstanceOf[HorizontalStyleProps]
     }
     
-    extension [Self <: HorizontalStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HorizontalStyleProps] (val x: Self) extends AnyVal {
       
       inline def set$cursor(value: String): Self = StObject.set(x, "$cursor", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object RedirectRequestParams {
     __obj.asInstanceOf[RedirectRequestParams]
   }
   
-  extension [Self <: RedirectRequestParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedirectRequestParams] (val x: Self) extends AnyVal {
     
     inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object MlRunningStateSearchInterval {
     __obj.asInstanceOf[MlRunningStateSearchInterval]
   }
   
-  extension [Self <: MlRunningStateSearchInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlRunningStateSearchInterval] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Duration): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

@@ -271,7 +271,8 @@ object libLensMod {
       __obj.asInstanceOf[Lens_[S, A]]
     }
     
-    extension [Self <: Lens_[?, ?], S, A](x: Self & (Lens_[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lens_[?, ?], S, A] (val x: Self & (Lens_[S, A])) extends AnyVal {
       
       inline def setGet(value: S => A): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

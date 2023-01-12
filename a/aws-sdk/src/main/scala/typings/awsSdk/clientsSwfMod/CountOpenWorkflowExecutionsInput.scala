@@ -38,7 +38,8 @@ object CountOpenWorkflowExecutionsInput {
     __obj.asInstanceOf[CountOpenWorkflowExecutionsInput]
   }
   
-  extension [Self <: CountOpenWorkflowExecutionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountOpenWorkflowExecutionsInput] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

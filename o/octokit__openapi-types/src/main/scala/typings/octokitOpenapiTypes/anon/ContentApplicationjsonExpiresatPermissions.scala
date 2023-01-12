@@ -15,7 +15,8 @@ object ContentApplicationjsonExpiresatPermissions {
     __obj.asInstanceOf[ContentApplicationjsonExpiresatPermissions]
   }
   
-  extension [Self <: ContentApplicationjsonExpiresatPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonExpiresatPermissions] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonExpiresatPermissions): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

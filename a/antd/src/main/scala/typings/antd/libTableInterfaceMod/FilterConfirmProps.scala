@@ -15,7 +15,8 @@ object FilterConfirmProps {
     __obj.asInstanceOf[FilterConfirmProps]
   }
   
-  extension [Self <: FilterConfirmProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterConfirmProps] (val x: Self) extends AnyVal {
     
     inline def setCloseDropdown(value: Boolean): Self = StObject.set(x, "closeDropdown", value.asInstanceOf[js.Any])
   }

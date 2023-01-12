@@ -17,7 +17,8 @@ object PermissionPage {
     __obj.asInstanceOf[PermissionPage]
   }
   
-  extension [Self <: PermissionPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionPage] (val x: Self) extends AnyVal {
     
     inline def setPermissions(value: js.Array[Permission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     

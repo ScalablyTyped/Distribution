@@ -45,7 +45,8 @@ object ResponseMetaData {
     __obj.asInstanceOf[ResponseMetaData]
   }
   
-  extension [Self <: ResponseMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseMetaData] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     

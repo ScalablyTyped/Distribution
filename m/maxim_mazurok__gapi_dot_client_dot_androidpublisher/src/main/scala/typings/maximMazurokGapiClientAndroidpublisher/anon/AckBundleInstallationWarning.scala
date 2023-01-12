@@ -56,7 +56,8 @@ object AckBundleInstallationWarning {
     __obj.asInstanceOf[AckBundleInstallationWarning]
   }
   
-  extension [Self <: AckBundleInstallationWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AckBundleInstallationWarning] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

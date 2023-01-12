@@ -19,7 +19,8 @@ object Behavior {
     __obj.asInstanceOf[Behavior[TEvent, TEmitted]]
   }
   
-  extension [Self <: Behavior[?, ?], TEvent /* <: EventObject */, TEmitted](x: Self & (Behavior[TEvent, TEmitted])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Behavior[?, ?], TEvent /* <: EventObject */, TEmitted] (val x: Self & (Behavior[TEvent, TEmitted])) extends AnyVal {
     
     inline def setInitialState(value: TEmitted): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     

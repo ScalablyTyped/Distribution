@@ -33,7 +33,8 @@ object Preview {
         __obj.asInstanceOf[GameListEntry]
       }
       
-      extension [Self <: GameListEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GameListEntry] (val x: Self) extends AnyVal {
         
         inline def setCategory(value: Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         

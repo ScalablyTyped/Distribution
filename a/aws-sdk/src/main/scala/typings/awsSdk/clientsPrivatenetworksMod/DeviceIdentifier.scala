@@ -58,7 +58,8 @@ object DeviceIdentifier {
     __obj.asInstanceOf[DeviceIdentifier]
   }
   
-  extension [Self <: DeviceIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceIdentifier] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

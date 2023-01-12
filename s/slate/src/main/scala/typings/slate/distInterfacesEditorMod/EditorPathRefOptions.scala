@@ -16,7 +16,8 @@ object EditorPathRefOptions {
     __obj.asInstanceOf[EditorPathRefOptions]
   }
   
-  extension [Self <: EditorPathRefOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorPathRefOptions] (val x: Self) extends AnyVal {
     
     inline def setAffinity(value: TextDirection): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
     

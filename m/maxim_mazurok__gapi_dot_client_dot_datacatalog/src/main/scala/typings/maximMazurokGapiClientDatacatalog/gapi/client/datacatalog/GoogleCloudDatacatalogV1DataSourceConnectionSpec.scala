@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1DataSourceConnectionSpec {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1DataSourceConnectionSpec]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1DataSourceConnectionSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1DataSourceConnectionSpec] (val x: Self) extends AnyVal {
     
     inline def setBigqueryConnectionSpec(value: GoogleCloudDatacatalogV1BigQueryConnectionSpec): Self = StObject.set(x, "bigqueryConnectionSpec", value.asInstanceOf[js.Any])
     

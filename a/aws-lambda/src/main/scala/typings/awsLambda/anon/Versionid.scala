@@ -20,7 +20,8 @@ object Versionid {
     __obj.asInstanceOf[Versionid]
   }
   
-  extension [Self <: Versionid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Versionid] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

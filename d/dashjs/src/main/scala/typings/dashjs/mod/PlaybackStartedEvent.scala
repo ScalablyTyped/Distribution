@@ -22,7 +22,8 @@ object PlaybackStartedEvent {
     __obj.asInstanceOf[PlaybackStartedEvent]
   }
   
-  extension [Self <: PlaybackStartedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackStartedEvent] (val x: Self) extends AnyVal {
     
     inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

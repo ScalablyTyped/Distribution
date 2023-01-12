@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setActionTransformer(value: /* action */ Action[Any] => Any): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
       

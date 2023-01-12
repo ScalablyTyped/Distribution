@@ -23,7 +23,8 @@ object VoidTypeAnnotation_ {
     __obj.asInstanceOf[VoidTypeAnnotation_]
   }
   
-  extension [Self <: VoidTypeAnnotation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoidTypeAnnotation_] (val x: Self) extends AnyVal {
     
     inline def setType(value: VoidTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

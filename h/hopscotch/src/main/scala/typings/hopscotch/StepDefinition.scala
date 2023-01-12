@@ -61,7 +61,8 @@ object StepDefinition {
     __obj.asInstanceOf[StepDefinition]
   }
   
-  extension [Self <: StepDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepDefinition] (val x: Self) extends AnyVal {
     
     inline def setArrowOffset(value: Double | center): Self = StObject.set(x, "arrowOffset", value.asInstanceOf[js.Any])
     

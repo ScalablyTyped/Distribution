@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setPending(value: js.Array[String]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       

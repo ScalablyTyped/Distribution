@@ -49,7 +49,8 @@ object condesnippet {
       __obj.asInstanceOf[highlighter]
     }
     
-    extension [Self <: highlighter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: highlighter] (val x: Self) extends AnyVal {
       
       inline def setHighlight(value: (String, String, js.Function1[/* highlightedCode */ String, Unit]) => Unit): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
       

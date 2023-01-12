@@ -24,7 +24,8 @@ object SymLogScale {
     __obj.asInstanceOf[SymLogScale]
   }
   
-  extension [Self <: SymLogScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymLogScale] (val x: Self) extends AnyVal {
     
     inline def setConstant(value: Double | SignalRef): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object MasterAuth {
     __obj.asInstanceOf[MasterAuth]
   }
   
-  extension [Self <: MasterAuth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MasterAuth] (val x: Self) extends AnyVal {
     
     inline def setClientCertificate(value: String): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
     

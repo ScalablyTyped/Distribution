@@ -21,7 +21,8 @@ object MiscellaneousTypeDescriptor {
     __obj.asInstanceOf[MiscellaneousTypeDescriptor]
   }
   
-  extension [Self <: MiscellaneousTypeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MiscellaneousTypeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setBarcode(value: Boolean): Self = StObject.set(x, "barcode", value.asInstanceOf[js.Any])
     

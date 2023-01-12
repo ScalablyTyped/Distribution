@@ -28,7 +28,8 @@ object JsonDataFormat {
     __obj.asInstanceOf[JsonDataFormat]
   }
   
-  extension [Self <: JsonDataFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonDataFormat] (val x: Self) extends AnyVal {
     
     inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     

@@ -163,7 +163,8 @@ object GridSettings {
     __obj.asInstanceOf[GridSettings[Entity]]
   }
   
-  extension [Self <: GridSettings[?], Entity](x: Self & GridSettings[Entity]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridSettings[?], Entity] (val x: Self & GridSettings[Entity]) extends AnyVal {
     
     inline def setAutoGenerateColumns(value: Boolean): Self = StObject.set(x, "autoGenerateColumns", value.asInstanceOf[js.Any])
     

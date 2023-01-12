@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "css-minimizer-webpack-plugin"
-version := "4.2.2-e36c3d"
+version := "4.2.2-f592d3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.2-96c572",
-  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-1eb2b4",
-  "org.scalablytyped" %%% "jest-worker" % "29.3.1-f9a7b8",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-6d1302",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
-  "org.scalablytyped" %%% "postcss" % "8.4.19-076895",
-  "org.scalablytyped" %%% "re2" % "1.17.7-41dbc1",
-  "org.scalablytyped" %%% "schema-utils" % "4.0.0-427ce3",
-  "org.scalablytyped" %%% "source-map" % "0.7.4-14f7e0",
-  "org.scalablytyped" %%% "source-map-js" % "1.0.2-8ee3e9",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f",
-  "org.scalablytyped" %%% "tapable" % "2.2.1-ad807d",
-  "org.scalablytyped" %%% "uri-js" % "4.4.1-4bb631",
-  "org.scalablytyped" %%% "webpack" % "5.75.0-18231e")
+  "org.scalablytyped" %%% "ajv" % "8.11.2-e03df2",
+  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6dfb17",
+  "org.scalablytyped" %%% "jest-worker" % "29.3.1-10e839",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-64302b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
+  "org.scalablytyped" %%% "postcss" % "8.4.19-776ef6",
+  "org.scalablytyped" %%% "re2" % "1.17.7-31fc73",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.0-21a261",
+  "org.scalablytyped" %%% "source-map" % "0.7.4-0d2ade",
+  "org.scalablytyped" %%% "source-map-js" % "1.0.2-2f6cde",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
+  "org.scalablytyped" %%% "tapable" % "2.2.1-7a5e1e",
+  "org.scalablytyped" %%% "uri-js" % "4.4.1-8d8221",
+  "org.scalablytyped" %%% "webpack" % "5.75.0-5aadf4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

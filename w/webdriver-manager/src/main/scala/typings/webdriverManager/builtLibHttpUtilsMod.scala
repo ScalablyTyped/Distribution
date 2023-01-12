@@ -62,7 +62,8 @@ object builtLibHttpUtilsMod {
       __obj.asInstanceOf[RequestOptionsValue]
     }
     
-    extension [Self <: RequestOptionsValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptionsValue] (val x: Self) extends AnyVal {
       
       inline def setIgnoreSSL(value: Boolean): Self = StObject.set(x, "ignoreSSL", value.asInstanceOf[js.Any])
       

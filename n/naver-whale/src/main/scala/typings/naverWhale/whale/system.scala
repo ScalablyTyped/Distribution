@@ -50,7 +50,8 @@ object system {
         __obj.asInstanceOf[CpuInfo]
       }
       
-      extension [Self <: CpuInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CpuInfo] (val x: Self) extends AnyVal {
         
         inline def setArchName(value: String): Self = StObject.set(x, "archName", value.asInstanceOf[js.Any])
         
@@ -80,7 +81,8 @@ object system {
         __obj.asInstanceOf[ProcessorInfo]
       }
       
-      extension [Self <: ProcessorInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProcessorInfo] (val x: Self) extends AnyVal {
         
         inline def setUsage(value: typings.chrome.chrome.system.cpu.ProcessorUsage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       }
@@ -107,7 +109,8 @@ object system {
         __obj.asInstanceOf[ProcessorUsage]
       }
       
-      extension [Self <: ProcessorUsage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProcessorUsage] (val x: Self) extends AnyVal {
         
         inline def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
         
@@ -145,7 +148,8 @@ object system {
         __obj.asInstanceOf[MemoryInfo]
       }
       
-      extension [Self <: MemoryInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
         
         inline def setAvailableCapacity(value: Double): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
         
@@ -179,7 +183,8 @@ object system {
         __obj.asInstanceOf[StorageCapacityInfo]
       }
       
-      extension [Self <: StorageCapacityInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StorageCapacityInfo] (val x: Self) extends AnyVal {
         
         inline def setAvailableCapacity(value: Double): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
         
@@ -214,7 +219,8 @@ object system {
         __obj.asInstanceOf[StorageUnitInfo]
       }
       
-      extension [Self <: StorageUnitInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StorageUnitInfo] (val x: Self) extends AnyVal {
         
         inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
         

@@ -17,7 +17,8 @@ object OverrideSuspense {
     __obj.asInstanceOf[OverrideSuspense]
   }
   
-  extension [Self <: OverrideSuspense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideSuspense] (val x: Self) extends AnyVal {
     
     inline def setForceFallback(value: Boolean): Self = StObject.set(x, "forceFallback", value.asInstanceOf[js.Any])
   }

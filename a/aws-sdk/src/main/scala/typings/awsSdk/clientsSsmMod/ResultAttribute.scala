@@ -18,7 +18,8 @@ object ResultAttribute {
     __obj.asInstanceOf[ResultAttribute]
   }
   
-  extension [Self <: ResultAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultAttribute] (val x: Self) extends AnyVal {
     
     inline def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
   }

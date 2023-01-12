@@ -25,7 +25,8 @@ object AriaCloseSkipLink {
     __obj.asInstanceOf[AriaCloseSkipLink]
   }
   
-  extension [Self <: AriaCloseSkipLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AriaCloseSkipLink] (val x: Self) extends AnyVal {
     
     inline def setAriaCloseSkipLink(value: String): Self = StObject.set(x, "ariaCloseSkipLink", value.asInstanceOf[js.Any])
     

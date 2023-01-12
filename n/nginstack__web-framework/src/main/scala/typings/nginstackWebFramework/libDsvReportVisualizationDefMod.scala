@@ -142,7 +142,8 @@ object libDsvReportVisualizationDefMod {
       __obj.asInstanceOf[ReportVisualizationDef]
     }
     
-    extension [Self <: ReportVisualizationDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportVisualizationDef] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[ReportVisualizationColumnDef]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

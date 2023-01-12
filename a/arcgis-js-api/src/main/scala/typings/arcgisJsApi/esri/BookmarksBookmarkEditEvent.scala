@@ -15,7 +15,8 @@ object BookmarksBookmarkEditEvent {
     __obj.asInstanceOf[BookmarksBookmarkEditEvent]
   }
   
-  extension [Self <: BookmarksBookmarkEditEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookmarksBookmarkEditEvent] (val x: Self) extends AnyVal {
     
     inline def setBookmark(value: Bookmark): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
   }

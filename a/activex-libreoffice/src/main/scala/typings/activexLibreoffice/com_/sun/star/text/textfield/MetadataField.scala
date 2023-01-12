@@ -104,7 +104,8 @@ object MetadataField {
     __obj.asInstanceOf[MetadataField]
   }
   
-  extension [Self <: MetadataField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataField] (val x: Self) extends AnyVal {
     
     inline def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
     

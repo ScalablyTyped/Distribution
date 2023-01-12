@@ -18,7 +18,8 @@ object ScrollToOffset {
     __obj.asInstanceOf[ScrollToOffset]
   }
   
-  extension [Self <: ScrollToOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollToOffset] (val x: Self) extends AnyVal {
     
     inline def setScrollToOffset(value: Animated => Unit): Self = StObject.set(x, "scrollToOffset", js.Any.fromFunction1(value))
   }

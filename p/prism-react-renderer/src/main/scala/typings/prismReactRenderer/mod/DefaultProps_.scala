@@ -17,7 +17,8 @@ object DefaultProps_ {
     __obj.asInstanceOf[DefaultProps_]
   }
   
-  extension [Self <: DefaultProps_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultProps_] (val x: Self) extends AnyVal {
     
     inline def setPrism(value: PrismLib): Self = StObject.set(x, "Prism", value.asInstanceOf[js.Any])
     

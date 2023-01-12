@@ -18,7 +18,8 @@ object MemoryAccessCallbacks {
     __obj.asInstanceOf[MemoryAccessCallbacks]
   }
   
-  extension [Self <: MemoryAccessCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryAccessCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnAccess(value: MemoryAccessDetails => Unit): Self = StObject.set(x, "onAccess", js.Any.fromFunction1(value))
   }

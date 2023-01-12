@@ -22,7 +22,8 @@ object XReifiedStatement {
     __obj.asInstanceOf[XReifiedStatement]
   }
   
-  extension [Self <: XReifiedStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XReifiedStatement] (val x: Self) extends AnyVal {
     
     inline def setStatement(value: Statement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
   }

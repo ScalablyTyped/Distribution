@@ -116,7 +116,8 @@ object BootstrapTableProps {
     __obj.asInstanceOf[BootstrapTableProps[T, K]]
   }
   
-  extension [Self <: BootstrapTableProps[?, ?], T /* <: js.Object */, K](x: Self & (BootstrapTableProps[T, K])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapTableProps[?, ?], T /* <: js.Object */, K] (val x: Self & (BootstrapTableProps[T, K])) extends AnyVal {
     
     inline def setBodyClasses(value: String): Self = StObject.set(x, "bodyClasses", value.asInstanceOf[js.Any])
     

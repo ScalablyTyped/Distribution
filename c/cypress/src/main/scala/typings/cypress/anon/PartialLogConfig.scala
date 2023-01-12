@@ -40,7 +40,8 @@ object PartialLogConfig {
     __obj.asInstanceOf[PartialLogConfig]
   }
   
-  extension [Self <: PartialLogConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLogConfig] (val x: Self) extends AnyVal {
     
     inline def set$el(value: JQuery[HTMLElement]): Self = StObject.set(x, "$el", value.asInstanceOf[js.Any])
     

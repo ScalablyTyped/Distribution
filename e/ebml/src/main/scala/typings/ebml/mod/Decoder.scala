@@ -125,7 +125,8 @@ object Decoder {
       __obj.asInstanceOf[EventListenerMap]
     }
     
-    extension [Self <: EventListenerMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventListenerMap] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

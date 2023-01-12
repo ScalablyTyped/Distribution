@@ -42,7 +42,8 @@ object Caret {
     __obj.asInstanceOf[Caret]
   }
   
-  extension [Self <: Caret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Caret] (val x: Self) extends AnyVal {
     
     inline def setCaretAngle(value: Double): Self = StObject.set(x, "CaretAngle", value.asInstanceOf[js.Any])
     

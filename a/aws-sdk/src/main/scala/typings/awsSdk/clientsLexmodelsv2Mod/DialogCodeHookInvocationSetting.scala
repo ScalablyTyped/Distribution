@@ -37,7 +37,8 @@ object DialogCodeHookInvocationSetting {
     __obj.asInstanceOf[DialogCodeHookInvocationSetting]
   }
   
-  extension [Self <: DialogCodeHookInvocationSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogCodeHookInvocationSetting] (val x: Self) extends AnyVal {
     
     inline def setActive(value: BoxedBoolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

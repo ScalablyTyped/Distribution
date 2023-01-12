@@ -22,7 +22,8 @@ object SdkVersion {
     __obj.asInstanceOf[SdkVersion]
   }
   
-  extension [Self <: SdkVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdkVersion] (val x: Self) extends AnyVal {
     
     inline def setSdkSupportStatus(value: String): Self = StObject.set(x, "sdkSupportStatus", value.asInstanceOf[js.Any])
     

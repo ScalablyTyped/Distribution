@@ -21,7 +21,8 @@ object spFriendlyUrlPageContextInfo {
     __obj.asInstanceOf[spFriendlyUrlPageContextInfo]
   }
   
-  extension [Self <: spFriendlyUrlPageContextInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: spFriendlyUrlPageContextInfo] (val x: Self) extends AnyVal {
     
     inline def setTermId(value: String): Self = StObject.set(x, "termId", value.asInstanceOf[js.Any])
     

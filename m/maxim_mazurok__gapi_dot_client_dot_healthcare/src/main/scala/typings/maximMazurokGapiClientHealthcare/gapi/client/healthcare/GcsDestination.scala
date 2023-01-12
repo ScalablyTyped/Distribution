@@ -25,7 +25,8 @@ object GcsDestination {
     __obj.asInstanceOf[GcsDestination]
   }
   
-  extension [Self <: GcsDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GcsDestination] (val x: Self) extends AnyVal {
     
     inline def setContentStructure(value: String): Self = StObject.set(x, "contentStructure", value.asInstanceOf[js.Any])
     

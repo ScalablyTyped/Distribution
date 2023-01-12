@@ -386,7 +386,8 @@ object distPackagesFirestoreSrcLocalMemoryPersistenceMod {
       __obj.asInstanceOf[MemoryReferenceDelegate]
     }
     
-    extension [Self <: MemoryReferenceDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryReferenceDelegate] (val x: Self) extends AnyVal {
       
       inline def setDocumentSize(value: Document => Double): Self = StObject.set(x, "documentSize", js.Any.fromFunction1(value))
       

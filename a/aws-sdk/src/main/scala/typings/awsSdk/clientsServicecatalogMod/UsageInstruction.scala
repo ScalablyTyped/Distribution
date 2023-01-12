@@ -23,7 +23,8 @@ object UsageInstruction {
     __obj.asInstanceOf[UsageInstruction]
   }
   
-  extension [Self <: UsageInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageInstruction] (val x: Self) extends AnyVal {
     
     inline def setType(value: InstructionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

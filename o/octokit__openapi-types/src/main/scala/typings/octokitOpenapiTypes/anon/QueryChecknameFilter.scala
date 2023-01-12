@@ -17,7 +17,8 @@ object QueryChecknameFilter {
     __obj.asInstanceOf[QueryChecknameFilter]
   }
   
-  extension [Self <: QueryChecknameFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryChecknameFilter] (val x: Self) extends AnyVal {
     
     inline def setPath(value: ChecksuiteidOwner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

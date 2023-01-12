@@ -36,7 +36,8 @@ object WorkerPoolOptions {
     __obj.asInstanceOf[WorkerPoolOptions]
   }
   
-  extension [Self <: WorkerPoolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerPoolOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableWorkerThreads(value: Boolean): Self = StObject.set(x, "enableWorkerThreads", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PermissionGrantPolicy {
     __obj.asInstanceOf[PermissionGrantPolicy]
   }
   
-  extension [Self <: PermissionGrantPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionGrantPolicy] (val x: Self) extends AnyVal {
     
     inline def setExcludes(value: NullableOption[js.Array[PermissionGrantConditionSet]]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     

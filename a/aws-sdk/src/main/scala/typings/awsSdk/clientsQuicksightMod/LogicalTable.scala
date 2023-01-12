@@ -28,7 +28,8 @@ object LogicalTable {
     __obj.asInstanceOf[LogicalTable]
   }
   
-  extension [Self <: LogicalTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogicalTable] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: LogicalTableAlias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TxAckPrevExtraData {
     __obj.asInstanceOf[TxAckPrevExtraData]
   }
   
-  extension [Self <: TxAckPrevExtraData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TxAckPrevExtraData] (val x: Self) extends AnyVal {
     
     inline def setTx(value: TxAckPrevExtraDataWrapper): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
   }

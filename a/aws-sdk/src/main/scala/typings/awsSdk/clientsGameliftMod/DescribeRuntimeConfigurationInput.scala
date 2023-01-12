@@ -18,7 +18,8 @@ object DescribeRuntimeConfigurationInput {
     __obj.asInstanceOf[DescribeRuntimeConfigurationInput]
   }
   
-  extension [Self <: DescribeRuntimeConfigurationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRuntimeConfigurationInput] (val x: Self) extends AnyVal {
     
     inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
   }

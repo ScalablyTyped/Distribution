@@ -15,7 +15,8 @@ object CardanoTxMint {
     __obj.asInstanceOf[CardanoTxMint]
   }
   
-  extension [Self <: CardanoTxMint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoTxMint] (val x: Self) extends AnyVal {
     
     inline def setAsset_groups_count(value: Double): Self = StObject.set(x, "asset_groups_count", value.asInstanceOf[js.Any])
   }

@@ -40,7 +40,8 @@ object DotNet {
       __obj.asInstanceOf[DotNetObject]
     }
     
-    extension [Self <: DotNetObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotNetObject] (val x: Self) extends AnyVal {
       
       inline def setInvokeMethod(value: (String, /* repeated */ Any) => Any): Self = StObject.set(x, "invokeMethod", js.Any.fromFunction2(value))
       

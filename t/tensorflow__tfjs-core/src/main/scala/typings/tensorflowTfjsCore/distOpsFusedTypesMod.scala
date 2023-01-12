@@ -63,7 +63,8 @@ object distOpsFusedTypesMod {
       __obj.asInstanceOf[FusedBatchMatMulConfig]
     }
     
-    extension [Self <: FusedBatchMatMulConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FusedBatchMatMulConfig] (val x: Self) extends AnyVal {
       
       inline def setA(value: Tensor3D): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object distOpsFusedTypesMod {
       __obj.asInstanceOf[FusedConv2DConfig]
     }
     
-    extension [Self <: FusedConv2DConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FusedConv2DConfig] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       

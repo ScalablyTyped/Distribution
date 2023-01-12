@@ -29,7 +29,8 @@ object OverrideQuotaForOriginRequest {
     __obj.asInstanceOf[OverrideQuotaForOriginRequest]
   }
   
-  extension [Self <: OverrideQuotaForOriginRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideQuotaForOriginRequest] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

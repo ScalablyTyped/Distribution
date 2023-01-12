@@ -28,7 +28,8 @@ object PlayerLatency {
     __obj.asInstanceOf[PlayerLatency]
   }
   
-  extension [Self <: PlayerLatency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerLatency] (val x: Self) extends AnyVal {
     
     inline def setLatencyInMilliseconds(value: Float): Self = StObject.set(x, "LatencyInMilliseconds", value.asInstanceOf[js.Any])
     

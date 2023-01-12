@@ -60,7 +60,8 @@ object baseHelpersBadgeMod {
       __obj.asInstanceOf[BadgeHelpersProps]
     }
     
-    extension [Self <: BadgeHelpersProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeHelpersProps] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: Double | String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       

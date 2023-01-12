@@ -32,7 +32,8 @@ object distTypesComponentsTreeTreeTypesMod {
       __obj.asInstanceOf[Combine]
     }
     
-    extension [Self <: Combine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Combine] (val x: Self) extends AnyVal {
       
       inline def setDraggableId(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DraggableId */ Any
@@ -68,7 +69,8 @@ object distTypesComponentsTreeTreeTypesMod {
       __obj.asInstanceOf[DragState]
     }
     
-    extension [Self <: DragState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragState] (val x: Self) extends AnyVal {
       
       inline def setCombine(value: Combine): Self = StObject.set(x, "combine", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object distTypesComponentsTreeTreeTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setDraggedItemId(value: ItemId): Self = StObject.set(x, "draggedItemId", value.asInstanceOf[js.Any])
       

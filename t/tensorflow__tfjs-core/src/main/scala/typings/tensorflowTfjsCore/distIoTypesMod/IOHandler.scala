@@ -17,7 +17,8 @@ object IOHandler {
     __obj.asInstanceOf[IOHandler]
   }
   
-  extension [Self <: IOHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOHandler] (val x: Self) extends AnyVal {
     
     inline def setLoad(value: () => js.Promise[ModelArtifacts]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
     

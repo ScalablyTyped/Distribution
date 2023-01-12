@@ -28,7 +28,8 @@ object GetCelebrityInfoResponse {
     __obj.asInstanceOf[GetCelebrityInfoResponse]
   }
   
-  extension [Self <: GetCelebrityInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCelebrityInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setKnownGender(value: KnownGender): Self = StObject.set(x, "KnownGender", value.asInstanceOf[js.Any])
     

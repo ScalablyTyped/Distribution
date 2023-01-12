@@ -59,7 +59,8 @@ object BaseUri {
     __obj.asInstanceOf[BaseUri]
   }
   
-  extension [Self <: BaseUri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseUri] (val x: Self) extends AnyVal {
     
     inline def setBaseUri(value: Domain): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
     

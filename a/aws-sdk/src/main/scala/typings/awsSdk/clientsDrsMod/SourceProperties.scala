@@ -53,7 +53,8 @@ object SourceProperties {
     __obj.asInstanceOf[SourceProperties]
   }
   
-  extension [Self <: SourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceProperties] (val x: Self) extends AnyVal {
     
     inline def setCpus(value: Cpus): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
     

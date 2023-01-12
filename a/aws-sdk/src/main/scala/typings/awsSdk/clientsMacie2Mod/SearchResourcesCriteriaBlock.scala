@@ -18,7 +18,8 @@ object SearchResourcesCriteriaBlock {
     __obj.asInstanceOf[SearchResourcesCriteriaBlock]
   }
   
-  extension [Self <: SearchResourcesCriteriaBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResourcesCriteriaBlock] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: listOfSearchResourcesCriteria): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     

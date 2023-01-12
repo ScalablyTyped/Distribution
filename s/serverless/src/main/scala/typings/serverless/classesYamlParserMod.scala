@@ -28,7 +28,8 @@ object classesYamlParserMod {
       __obj.asInstanceOf[YamlParser]
     }
     
-    extension [Self <: YamlParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YamlParser] (val x: Self) extends AnyVal {
       
       inline def setParse(value: String => js.Promise[Any]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }

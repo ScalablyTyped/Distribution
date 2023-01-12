@@ -17,7 +17,8 @@ object XMLSerializer {
     __obj.asInstanceOf[XMLSerializer]
   }
   
-  extension [Self <: XMLSerializer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLSerializer] (val x: Self) extends AnyVal {
     
     inline def setSerializeToString(value: Node => java.lang.String): Self = StObject.set(x, "serializeToString", js.Any.fromFunction1(value))
   }

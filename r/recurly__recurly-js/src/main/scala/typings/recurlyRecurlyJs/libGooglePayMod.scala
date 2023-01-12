@@ -76,7 +76,8 @@ object libGooglePayMod {
       __obj.asInstanceOf[GooglePayOptions]
     }
     
-    extension [Self <: GooglePayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GooglePayOptions] (val x: Self) extends AnyVal {
       
       inline def setButtonOptions(value: StringDictionary[Any]): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
       

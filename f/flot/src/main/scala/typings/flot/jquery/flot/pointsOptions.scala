@@ -19,7 +19,8 @@ object pointsOptions {
     __obj.asInstanceOf[pointsOptions]
   }
   
-  extension [Self <: pointsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pointsOptions] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

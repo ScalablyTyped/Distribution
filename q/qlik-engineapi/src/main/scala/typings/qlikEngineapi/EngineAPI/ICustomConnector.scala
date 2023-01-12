@@ -36,7 +36,8 @@ object ICustomConnector {
     __obj.asInstanceOf[ICustomConnector]
   }
   
-  extension [Self <: ICustomConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomConnector] (val x: Self) extends AnyVal {
     
     inline def setQDisplayName(value: String): Self = StObject.set(x, "qDisplayName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object MlUpgradeJobSnapshotRequest {
     __obj.asInstanceOf[MlUpgradeJobSnapshotRequest]
   }
   
-  extension [Self <: MlUpgradeJobSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlUpgradeJobSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setJob_id(value: Id): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     

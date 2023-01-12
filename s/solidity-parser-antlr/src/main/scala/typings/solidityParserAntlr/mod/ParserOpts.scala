@@ -19,7 +19,8 @@ object ParserOpts {
     __obj.asInstanceOf[ParserOpts]
   }
   
-  extension [Self <: ParserOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParserOpts] (val x: Self) extends AnyVal {
     
     inline def setLoc(value: Boolean): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     

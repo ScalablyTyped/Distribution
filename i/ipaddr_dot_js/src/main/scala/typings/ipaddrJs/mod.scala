@@ -168,7 +168,8 @@ object mod {
       __obj.asInstanceOf[IP]
     }
     
-    extension [Self <: IP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IP] (val x: Self) extends AnyVal {
       
       inline def setPrefixLengthFromSubnetMask(value: () => Double | Null): Self = StObject.set(x, "prefixLengthFromSubnetMask", js.Any.fromFunction0(value))
       

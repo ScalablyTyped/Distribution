@@ -18,7 +18,8 @@ object AwsDynamoDbTableProvisionedThroughputOverride {
     __obj.asInstanceOf[AwsDynamoDbTableProvisionedThroughputOverride]
   }
   
-  extension [Self <: AwsDynamoDbTableProvisionedThroughputOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsDynamoDbTableProvisionedThroughputOverride] (val x: Self) extends AnyVal {
     
     inline def setReadCapacityUnits(value: Integer): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
     

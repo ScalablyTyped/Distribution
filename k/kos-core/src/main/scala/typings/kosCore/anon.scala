@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Dispatch]
     }
     
-    extension [Self <: Dispatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dispatch] (val x: Self) extends AnyVal {
       
       inline def setDispatch(value: Any): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Namespace]
     }
     
-    extension [Self <: Namespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
@@ -62,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Param]
     }
     
-    extension [Self <: Param](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Param] (val x: Self) extends AnyVal {
       
       inline def setParam(value: Any): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     }
@@ -79,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Payload[T]]
     }
     
-    extension [Self <: Payload[?], T](x: Self & Payload[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payload[?], T] (val x: Self & Payload[T]) extends AnyVal {
       
       inline def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
@@ -96,7 +100,8 @@ object anon {
       __obj.asInstanceOf[PayloadParam]
     }
     
-    extension [Self <: PayloadParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayloadParam] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Param): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }

@@ -499,7 +499,8 @@ object libCardCardMod extends Shortcut {
       __obj.asInstanceOf[CardProps]
     }
     
-    extension [Self <: CardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1306,7 +1307,8 @@ object libCardCardMod extends Shortcut {
       __obj.asInstanceOf[CardTabListType]
     }
     
-    extension [Self <: CardTabListType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardTabListType] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

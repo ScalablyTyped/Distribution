@@ -57,7 +57,8 @@ object BodyOptions {
     __obj.asInstanceOf[BodyOptions]
   }
   
-  extension [Self <: BodyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowSleep(value: Boolean): Self = StObject.set(x, "allowSleep", value.asInstanceOf[js.Any])
     

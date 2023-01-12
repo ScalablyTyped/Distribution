@@ -105,7 +105,8 @@ object RenderContextItemInView {
     __obj.asInstanceOf[RenderContextItemInView]
   }
   
-  extension [Self <: RenderContextItemInView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderContextItemInView] (val x: Self) extends AnyVal {
     
     inline def setCurrentItem(value: Item): Self = StObject.set(x, "CurrentItem", value.asInstanceOf[js.Any])
     

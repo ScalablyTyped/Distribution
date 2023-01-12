@@ -21,7 +21,8 @@ object IGyrometerReading {
     __obj.asInstanceOf[IGyrometerReading]
   }
   
-  extension [Self <: IGyrometerReading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGyrometerReading] (val x: Self) extends AnyVal {
     
     inline def setAngularVelocityX(value: Double): Self = StObject.set(x, "angularVelocityX", value.asInstanceOf[js.Any])
     

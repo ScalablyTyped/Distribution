@@ -17,7 +17,8 @@ object StackParameters {
     __obj.asInstanceOf[StackParameters]
   }
   
-  extension [Self <: StackParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackParameters] (val x: Self) extends AnyVal {
     
     inline def setParameterKey(value: String): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
     

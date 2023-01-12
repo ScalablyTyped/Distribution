@@ -30,7 +30,8 @@ object distSrcExtractMod {
       __obj.asInstanceOf[Derp]
     }
     
-    extension [Self <: Derp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Derp] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Source[js.typedarray.Uint8Array]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object distSrcExtractMod {
       __obj.asInstanceOf[ExtractOptions]
     }
     
-    extension [Self <: ExtractOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractOptions] (val x: Self) extends AnyVal {
       
       inline def setFilenameEncoding(value: SupportedEncodings): Self = StObject.set(x, "filenameEncoding", value.asInstanceOf[js.Any])
       

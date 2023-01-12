@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[GroupType]
     }
     
-    extension [Self <: GroupType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupType] (val x: Self) extends AnyVal {
       
       inline def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[ItemType]
     }
     
-    extension [Self <: ItemType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemType] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -233,7 +235,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAppearance(value: typings.atlaskitSingleSelect.atlaskitSingleSelectStrings.default | subtle): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
       
@@ -372,7 +375,8 @@ object mod {
       __obj.asInstanceOf[StatelessProps]
     }
     
-    extension [Self <: StatelessProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatelessProps] (val x: Self) extends AnyVal {
       
       inline def setFilterValue(value: String): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
       

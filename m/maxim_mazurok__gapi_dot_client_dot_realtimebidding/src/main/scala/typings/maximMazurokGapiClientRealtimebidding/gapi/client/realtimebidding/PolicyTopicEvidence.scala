@@ -34,7 +34,8 @@ object PolicyTopicEvidence {
     __obj.asInstanceOf[PolicyTopicEvidence]
   }
   
-  extension [Self <: PolicyTopicEvidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyTopicEvidence] (val x: Self) extends AnyVal {
     
     inline def setDestinationNotCrawlable(value: DestinationNotCrawlableEvidence): Self = StObject.set(x, "destinationNotCrawlable", value.asInstanceOf[js.Any])
     

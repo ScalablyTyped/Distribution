@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Mimetype]
     }
     
-    extension [Self <: Mimetype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mimetype] (val x: Self) extends AnyVal {
       
       inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Onabort[TContext]]
     }
     
-    extension [Self <: Onabort[?], TContext](x: Self & Onabort[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Onabort[?], TContext] (val x: Self & Onabort[TContext]) extends AnyVal {
       
       inline def setOnabort(value: /* response */ Response[TContext] => Unit): Self = StObject.set(x, "onabort", js.Any.fromFunction1(value))
       
@@ -98,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Script]
     }
     
-    extension [Self <: Script](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Script] (val x: Self) extends AnyVal {
       
       inline def setScript(value: ScriptInfo): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       

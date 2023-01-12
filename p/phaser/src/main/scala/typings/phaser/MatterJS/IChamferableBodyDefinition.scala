@@ -17,7 +17,8 @@ object IChamferableBodyDefinition {
     __obj.asInstanceOf[IChamferableBodyDefinition]
   }
   
-  extension [Self <: IChamferableBodyDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IChamferableBodyDefinition] (val x: Self) extends AnyVal {
     
     inline def setChamfer(value: IChamfer): Self = StObject.set(x, "chamfer", value.asInstanceOf[js.Any])
     

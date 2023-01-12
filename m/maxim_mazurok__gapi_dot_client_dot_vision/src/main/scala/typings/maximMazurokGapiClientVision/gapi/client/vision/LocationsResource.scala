@@ -29,7 +29,8 @@ object LocationsResource {
     __obj.asInstanceOf[LocationsResource]
   }
   
-  extension [Self <: LocationsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationsResource] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: FilesResource): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

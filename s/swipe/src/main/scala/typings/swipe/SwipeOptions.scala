@@ -30,7 +30,8 @@ object SwipeOptions {
     __obj.asInstanceOf[SwipeOptions]
   }
   
-  extension [Self <: SwipeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwipeOptions] (val x: Self) extends AnyVal {
     
     inline def setAuto(value: Double): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

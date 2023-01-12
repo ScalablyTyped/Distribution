@@ -46,7 +46,8 @@ object Geometry3D {
       __obj.asInstanceOf[Line]
     }
     
-    extension [Self <: Line](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
       
       inline def setSegments(value: js.Array[Double]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object Geometry3D {
       __obj.asInstanceOf[Mesh]
     }
     
-    extension [Self <: Mesh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mesh] (val x: Self) extends AnyVal {
       
       inline def setFaces(value: js.Array[Double]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object Geometry3D {
     }
   }
   
-  extension [Self <: Geometry3D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geometry3D] (val x: Self) extends AnyVal {
     
     inline def setVertexColors(value: js.Array[Double]): Self = StObject.set(x, "vertexColors", value.asInstanceOf[js.Any])
     
@@ -140,7 +143,8 @@ object Geometry3D {
       __obj.asInstanceOf[Points]
     }
     
-    extension [Self <: Points](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Points] (val x: Self) extends AnyVal {
       
       inline def setPointAreas(value: js.Array[Double]): Self = StObject.set(x, "pointAreas", value.asInstanceOf[js.Any])
       

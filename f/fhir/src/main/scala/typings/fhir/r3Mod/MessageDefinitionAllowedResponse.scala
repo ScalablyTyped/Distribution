@@ -27,7 +27,8 @@ object MessageDefinitionAllowedResponse {
     __obj.asInstanceOf[MessageDefinitionAllowedResponse]
   }
   
-  extension [Self <: MessageDefinitionAllowedResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageDefinitionAllowedResponse] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: Reference): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

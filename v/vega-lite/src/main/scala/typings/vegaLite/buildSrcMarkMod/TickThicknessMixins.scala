@@ -23,7 +23,8 @@ object TickThicknessMixins {
     __obj.asInstanceOf[TickThicknessMixins]
   }
   
-  extension [Self <: TickThicknessMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TickThicknessMixins] (val x: Self) extends AnyVal {
     
     inline def setThickness(value: Double | SignalRef): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     

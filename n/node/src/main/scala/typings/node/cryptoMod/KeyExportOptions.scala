@@ -27,7 +27,8 @@ object KeyExportOptions {
     __obj.asInstanceOf[KeyExportOptions[T]]
   }
   
-  extension [Self <: KeyExportOptions[?], T /* <: KeyFormat */](x: Self & KeyExportOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyExportOptions[?], T /* <: KeyFormat */] (val x: Self & KeyExportOptions[T]) extends AnyVal {
     
     inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     

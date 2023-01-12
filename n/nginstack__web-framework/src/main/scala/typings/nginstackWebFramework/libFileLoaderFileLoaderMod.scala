@@ -33,7 +33,8 @@ object libFileLoaderFileLoaderMod {
       __obj.asInstanceOf[FileInfo]
     }
     
-    extension [Self <: FileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object libFileLoaderFileLoaderMod {
       __obj.asInstanceOf[FileInfoUpload]
     }
     
-    extension [Self <: FileInfoUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileInfoUpload] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       

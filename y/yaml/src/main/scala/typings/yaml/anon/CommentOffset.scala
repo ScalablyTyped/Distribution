@@ -17,7 +17,8 @@ object CommentOffset {
     __obj.asInstanceOf[CommentOffset]
   }
   
-  extension [Self <: CommentOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentOffset] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

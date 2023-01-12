@@ -31,7 +31,8 @@ object typesUpdateCommentOutputMod {
       __obj.asInstanceOf[UpdateCommentOutput]
     }
     
-    extension [Self <: UpdateCommentOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateCommentOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

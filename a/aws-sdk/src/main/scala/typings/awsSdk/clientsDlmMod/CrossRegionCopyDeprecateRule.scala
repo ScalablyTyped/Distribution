@@ -23,7 +23,8 @@ object CrossRegionCopyDeprecateRule {
     __obj.asInstanceOf[CrossRegionCopyDeprecateRule]
   }
   
-  extension [Self <: CrossRegionCopyDeprecateRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossRegionCopyDeprecateRule] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Interval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     

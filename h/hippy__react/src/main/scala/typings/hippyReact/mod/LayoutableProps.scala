@@ -41,7 +41,8 @@ object LayoutableProps {
     __obj.asInstanceOf[LayoutableProps]
   }
   
-  extension [Self <: LayoutableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutableProps] (val x: Self) extends AnyVal {
     
     inline def setOnAttachedToWindow(value: () => Unit): Self = StObject.set(x, "onAttachedToWindow", js.Any.fromFunction0(value))
     

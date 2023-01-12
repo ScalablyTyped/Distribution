@@ -16,7 +16,8 @@ object PropIDPlugin {
     __obj.asInstanceOf[PropIDPlugin]
   }
   
-  extension [Self <: PropIDPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropIDPlugin] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_PROPID_ENHKEY_USAGE(value: `9`): Self = StObject.set(x, "CAPICOM_PROPID_ENHKEY_USAGE", value.asInstanceOf[js.Any])
   }

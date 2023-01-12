@@ -184,7 +184,8 @@ object IgRadialMenu {
     __obj.asInstanceOf[IgRadialMenu]
   }
   
-  extension [Self <: IgRadialMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgRadialMenu] (val x: Self) extends AnyVal {
     
     inline def setCenterButtonClosedFill(value: String): Self = StObject.set(x, "centerButtonClosedFill", value.asInstanceOf[js.Any])
     

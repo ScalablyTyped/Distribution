@@ -23,7 +23,8 @@ object FacetAttributeReference {
     __obj.asInstanceOf[FacetAttributeReference]
   }
   
-  extension [Self <: FacetAttributeReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetAttributeReference] (val x: Self) extends AnyVal {
     
     inline def setTargetAttributeName(value: AttributeName): Self = StObject.set(x, "TargetAttributeName", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsMandatoryCircleSmallMod extend
       __obj.asInstanceOf[MandatoryCircleSmallProps]
     }
     
-    extension [Self <: MandatoryCircleSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MandatoryCircleSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

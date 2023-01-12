@@ -39,7 +39,8 @@ object WebExtensionDictionaryManifest {
     __obj.asInstanceOf[WebExtensionDictionaryManifest]
   }
   
-  extension [Self <: WebExtensionDictionaryManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionDictionaryManifest] (val x: Self) extends AnyVal {
     
     inline def setApplications(value: WebExtensionDictionaryManifestApplications): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     

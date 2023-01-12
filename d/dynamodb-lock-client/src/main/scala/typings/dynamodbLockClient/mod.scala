@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[FailClosedConfig]
     }
     
-    extension [Self <: FailClosedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailClosedConfig] (val x: Self) extends AnyVal {
       
       inline def setAcquirePeriodMs(value: Double): Self = StObject.set(x, "acquirePeriodMs", value.asInstanceOf[js.Any])
     }
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[FailOpenConfig]
     }
     
-    extension [Self <: FailOpenConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailOpenConfig] (val x: Self) extends AnyVal {
       
       inline def setHeartbeatPeriodMs(value: Double): Self = StObject.set(x, "heartbeatPeriodMs", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object mod {
       __obj.asInstanceOf[GenericConfig]
     }
     
-    extension [Self <: GenericConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericConfig] (val x: Self) extends AnyVal {
       
       inline def setDynamodb(value: DocumentClient): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
       

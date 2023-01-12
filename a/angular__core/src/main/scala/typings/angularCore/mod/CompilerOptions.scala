@@ -29,7 +29,8 @@ object CompilerOptions {
     __obj.asInstanceOf[CompilerOptions]
   }
   
-  extension [Self <: CompilerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilerOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "defaultEncapsulation", value.asInstanceOf[js.Any])
     

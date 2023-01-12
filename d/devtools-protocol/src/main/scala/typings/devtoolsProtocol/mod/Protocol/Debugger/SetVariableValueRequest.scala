@@ -36,7 +36,8 @@ object SetVariableValueRequest {
     __obj.asInstanceOf[SetVariableValueRequest]
   }
   
-  extension [Self <: SetVariableValueRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetVariableValueRequest] (val x: Self) extends AnyVal {
     
     inline def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
     

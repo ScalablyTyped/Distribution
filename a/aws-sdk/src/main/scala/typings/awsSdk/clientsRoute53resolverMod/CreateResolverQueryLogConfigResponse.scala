@@ -18,7 +18,8 @@ object CreateResolverQueryLogConfigResponse {
     __obj.asInstanceOf[CreateResolverQueryLogConfigResponse]
   }
   
-  extension [Self <: CreateResolverQueryLogConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResolverQueryLogConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setResolverQueryLogConfig(value: ResolverQueryLogConfig): Self = StObject.set(x, "ResolverQueryLogConfig", value.asInstanceOf[js.Any])
     

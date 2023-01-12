@@ -57,7 +57,8 @@ object IgLayoutManagerItem {
     __obj.asInstanceOf[IgLayoutManagerItem]
   }
   
-  extension [Self <: IgLayoutManagerItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgLayoutManagerItem] (val x: Self) extends AnyVal {
     
     inline def setColIndex(value: Double): Self = StObject.set(x, "colIndex", value.asInstanceOf[js.Any])
     

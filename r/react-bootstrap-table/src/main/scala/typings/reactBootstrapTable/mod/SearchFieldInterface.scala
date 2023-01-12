@@ -23,7 +23,8 @@ object SearchFieldInterface {
     __obj.asInstanceOf[SearchFieldInterface]
   }
   
-  extension [Self <: SearchFieldInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFieldInterface] (val x: Self) extends AnyVal {
     
     inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     

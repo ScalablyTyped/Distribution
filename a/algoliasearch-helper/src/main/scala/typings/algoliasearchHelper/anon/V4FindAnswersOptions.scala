@@ -22,7 +22,8 @@ object V4FindAnswersOptions {
     __obj.asInstanceOf[V4FindAnswersOptions]
   }
   
-  extension [Self <: V4FindAnswersOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V4FindAnswersOptions] (val x: Self) extends AnyVal {
     
     inline def setV3(value: Any): Self = StObject.set(x, "v3", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object QueryDslGeoShapeFieldQuery {
     __obj.asInstanceOf[QueryDslGeoShapeFieldQuery]
   }
   
-  extension [Self <: QueryDslGeoShapeFieldQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslGeoShapeFieldQuery] (val x: Self) extends AnyVal {
     
     inline def setIndexed_shape(value: QueryDslFieldLookup): Self = StObject.set(x, "indexed_shape", value.asInstanceOf[js.Any])
     

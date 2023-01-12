@@ -21,7 +21,8 @@ object ISqlTypeWithNoParams {
     __obj.asInstanceOf[ISqlTypeWithNoParams]
   }
   
-  extension [Self <: ISqlTypeWithNoParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISqlTypeWithNoParams] (val x: Self) extends AnyVal {
     
     inline def setType(value: ISqlTypeFactoryWithNoParams): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

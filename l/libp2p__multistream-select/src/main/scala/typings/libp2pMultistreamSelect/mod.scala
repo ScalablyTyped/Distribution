@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[ByteArrayInit]
     }
     
-    extension [Self <: ByteArrayInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteArrayInit] (val x: Self) extends AnyVal {
       
       inline def setWriteBytes(value: `true`): Self = StObject.set(x, "writeBytes", value.asInstanceOf[js.Any])
     }
@@ -118,7 +119,8 @@ object mod {
       __obj.asInstanceOf[ByteListInit]
     }
     
-    extension [Self <: ByteListInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteListInit] (val x: Self) extends AnyVal {
       
       inline def setWriteBytes(value: `false`): Self = StObject.set(x, "writeBytes", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object mod {
       __obj.asInstanceOf[MultistreamSelectInit]
     }
     
-    extension [Self <: MultistreamSelectInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultistreamSelectInit] (val x: Self) extends AnyVal {
       
       inline def setWriteBytes(value: Boolean): Self = StObject.set(x, "writeBytes", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object mod {
       __obj.asInstanceOf[ProtocolStream[TSource, TSink]]
     }
     
-    extension [Self <: ProtocolStream[?, ?], TSource, TSink](x: Self & (ProtocolStream[TSource, TSink])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtocolStream[?, ?], TSource, TSink] (val x: Self & (ProtocolStream[TSource, TSink])) extends AnyVal {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       

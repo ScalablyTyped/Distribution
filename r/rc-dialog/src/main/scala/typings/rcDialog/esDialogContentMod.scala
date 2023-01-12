@@ -32,7 +32,8 @@ object esDialogContentMod extends Shortcut {
       __obj.asInstanceOf[ContentProps]
     }
     
-    extension [Self <: ContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentProps] (val x: Self) extends AnyVal {
       
       inline def setAriaId(value: String): Self = StObject.set(x, "ariaId", value.asInstanceOf[js.Any])
       

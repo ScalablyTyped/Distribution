@@ -29,7 +29,8 @@ object Cull {
     __obj.asInstanceOf[Cull]
   }
   
-  extension [Self <: Cull](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cull] (val x: Self) extends AnyVal {
     
     inline def setBlendType(value: Any => Boolean): Self = StObject.set(x, "blendType", js.Any.fromFunction1(value))
     

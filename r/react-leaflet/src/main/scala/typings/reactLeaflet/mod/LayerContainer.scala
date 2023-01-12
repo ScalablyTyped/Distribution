@@ -21,7 +21,8 @@ object LayerContainer {
     __obj.asInstanceOf[LayerContainer]
   }
   
-  extension [Self <: LayerContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerContainer] (val x: Self) extends AnyVal {
     
     inline def setAddLayer(value: (/* layer */ Layer, /* name */ String, /* checked */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "addLayer", js.Any.fromFunction3(value))
     

@@ -70,7 +70,8 @@ object AnchorOrigin {
     __obj.asInstanceOf[AnchorOrigin]
   }
   
-  extension [Self <: AnchorOrigin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnchorOrigin] (val x: Self) extends AnyVal {
     
     inline def setAnchorOrigin(value: BadgeOrigin): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
     

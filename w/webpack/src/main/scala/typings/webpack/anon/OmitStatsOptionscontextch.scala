@@ -110,7 +110,8 @@ object OmitStatsOptionscontextch {
     __obj.asInstanceOf[OmitStatsOptionscontextch]
   }
   
-  extension [Self <: OmitStatsOptionscontextch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitStatsOptionscontextch] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

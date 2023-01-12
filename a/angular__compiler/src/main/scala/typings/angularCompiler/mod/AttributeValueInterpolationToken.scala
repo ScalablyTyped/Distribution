@@ -27,7 +27,8 @@ object AttributeValueInterpolationToken {
     __obj.asInstanceOf[AttributeValueInterpolationToken]
   }
   
-  extension [Self <: AttributeValueInterpolationToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeValueInterpolationToken] (val x: Self) extends AnyVal {
     
     inline def setParts(
       value: (js.Tuple3[/* startMarker */ String, /* expression */ String, /* endMarker */ String]) | (js.Tuple2[/* startMarker */ String, /* expression */ String])

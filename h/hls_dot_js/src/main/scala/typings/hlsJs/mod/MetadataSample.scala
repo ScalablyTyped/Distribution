@@ -26,7 +26,8 @@ object MetadataSample {
     __obj.asInstanceOf[MetadataSample]
   }
   
-  extension [Self <: MetadataSample](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataSample] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

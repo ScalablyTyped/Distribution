@@ -255,7 +255,8 @@ object StackNavigationOptions {
     __obj.asInstanceOf[StackNavigationOptions]
   }
   
-  extension [Self <: StackNavigationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackNavigationOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimationEnabled(value: Boolean): Self = StObject.set(x, "animationEnabled", value.asInstanceOf[js.Any])
     

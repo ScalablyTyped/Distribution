@@ -31,7 +31,8 @@ object ByteBufferFingerprintOptions {
     __obj.asInstanceOf[ByteBufferFingerprintOptions]
   }
   
-  extension [Self <: ByteBufferFingerprintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ByteBufferFingerprintOptions] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

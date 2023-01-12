@@ -15,7 +15,8 @@ object FirefoxLogObject {
     __obj.asInstanceOf[FirefoxLogObject]
   }
   
-  extension [Self <: FirefoxLogObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirefoxLogObject] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: FirefoxLogLevels): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }

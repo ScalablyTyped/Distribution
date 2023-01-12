@@ -62,7 +62,8 @@ object libFormatMod {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object libFormatMod {
       __obj.asInstanceOf[FormattableProblem]
     }
     
-    extension [Self <: FormattableProblem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattableProblem] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: RuleConfigSeverity): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object libFormatMod {
       __obj.asInstanceOf[FormattableReport]
     }
     
-    extension [Self <: FormattableReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattableReport] (val x: Self) extends AnyVal {
       
       inline def setResults(value: js.Array[FormattableResult & WithInput]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object libFormatMod {
       __obj.asInstanceOf[FormattableResult]
     }
     
-    extension [Self <: FormattableResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattableResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[FormattableProblem]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -180,7 +184,8 @@ object libFormatMod {
       __obj.asInstanceOf[WithInput]
     }
     
-    extension [Self <: WithInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithInput] (val x: Self) extends AnyVal {
       
       inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

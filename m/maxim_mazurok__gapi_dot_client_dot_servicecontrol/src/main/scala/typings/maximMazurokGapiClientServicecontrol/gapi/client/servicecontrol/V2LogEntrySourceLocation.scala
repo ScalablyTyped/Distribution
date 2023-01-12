@@ -26,7 +26,8 @@ object V2LogEntrySourceLocation {
     __obj.asInstanceOf[V2LogEntrySourceLocation]
   }
   
-  extension [Self <: V2LogEntrySourceLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V2LogEntrySourceLocation] (val x: Self) extends AnyVal {
     
     inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

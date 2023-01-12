@@ -18,7 +18,8 @@ object SketchMSSharedTextStyleContainer {
     __obj.asInstanceOf[SketchMSSharedTextStyleContainer]
   }
   
-  extension [Self <: SketchMSSharedTextStyleContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSSharedTextStyleContainer] (val x: Self) extends AnyVal {
     
     inline def setObjects(value: js.Array[Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     

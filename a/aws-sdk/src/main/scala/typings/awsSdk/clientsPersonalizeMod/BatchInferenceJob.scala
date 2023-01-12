@@ -78,7 +78,8 @@ object BatchInferenceJob {
     __obj.asInstanceOf[BatchInferenceJob]
   }
   
-  extension [Self <: BatchInferenceJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchInferenceJob] (val x: Self) extends AnyVal {
     
     inline def setBatchInferenceJobArn(value: Arn): Self = StObject.set(x, "batchInferenceJobArn", value.asInstanceOf[js.Any])
     

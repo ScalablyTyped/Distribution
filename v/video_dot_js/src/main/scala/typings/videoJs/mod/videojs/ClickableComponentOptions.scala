@@ -17,7 +17,8 @@ object ClickableComponentOptions {
     __obj.asInstanceOf[ClickableComponentOptions]
   }
   
-  extension [Self <: ClickableComponentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickableComponentOptions] (val x: Self) extends AnyVal {
     
     inline def setClickHandler(value: () => Unit): Self = StObject.set(x, "clickHandler", js.Any.fromFunction0(value))
     

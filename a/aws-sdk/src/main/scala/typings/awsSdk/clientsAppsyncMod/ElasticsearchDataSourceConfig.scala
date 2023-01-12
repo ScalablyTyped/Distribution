@@ -23,7 +23,8 @@ object ElasticsearchDataSourceConfig {
     __obj.asInstanceOf[ElasticsearchDataSourceConfig]
   }
   
-  extension [Self <: ElasticsearchDataSourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticsearchDataSourceConfig] (val x: Self) extends AnyVal {
     
     inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
     

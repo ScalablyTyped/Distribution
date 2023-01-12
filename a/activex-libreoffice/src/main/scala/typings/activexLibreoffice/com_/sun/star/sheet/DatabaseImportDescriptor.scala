@@ -48,7 +48,8 @@ object DatabaseImportDescriptor {
     __obj.asInstanceOf[DatabaseImportDescriptor]
   }
   
-  extension [Self <: DatabaseImportDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseImportDescriptor] (val x: Self) extends AnyVal {
     
     inline def setConnectionResource(value: String): Self = StObject.set(x, "ConnectionResource", value.asInstanceOf[js.Any])
     

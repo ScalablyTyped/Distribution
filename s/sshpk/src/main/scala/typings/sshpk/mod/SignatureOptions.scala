@@ -22,7 +22,8 @@ object SignatureOptions {
     __obj.asInstanceOf[SignatureOptions]
   }
   
-  extension [Self <: SignatureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureOptions] (val x: Self) extends AnyVal {
     
     inline def setCurve(value: CurveType): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     

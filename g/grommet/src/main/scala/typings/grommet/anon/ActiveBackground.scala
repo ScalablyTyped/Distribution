@@ -39,7 +39,8 @@ object ActiveBackground {
     __obj.asInstanceOf[ActiveBackground]
   }
   
-  extension [Self <: ActiveBackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveBackground] (val x: Self) extends AnyVal {
     
     inline def setActive(value: `6`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

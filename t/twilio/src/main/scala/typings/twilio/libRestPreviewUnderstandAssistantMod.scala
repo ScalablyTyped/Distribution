@@ -338,7 +338,8 @@ object libRestPreviewUnderstandAssistantMod {
       __obj.asInstanceOf[AssistantInstanceUpdateOptions]
     }
     
-    extension [Self <: AssistantInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setCallbackEvents(value: String): Self = StObject.set(x, "callbackEvents", value.asInstanceOf[js.Any])
       
@@ -547,7 +548,8 @@ object libRestPreviewUnderstandAssistantMod {
       __obj.asInstanceOf[AssistantListInstanceCreateOptions]
     }
     
-    extension [Self <: AssistantListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setCallbackEvents(value: String): Self = StObject.set(x, "callbackEvents", value.asInstanceOf[js.Any])
       
@@ -624,7 +626,8 @@ object libRestPreviewUnderstandAssistantMod {
       __obj.asInstanceOf[AssistantListInstanceEachOptions]
     }
     
-    extension [Self <: AssistantListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ AssistantInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -673,7 +676,8 @@ object libRestPreviewUnderstandAssistantMod {
       __obj.asInstanceOf[AssistantListInstanceOptions]
     }
     
-    extension [Self <: AssistantListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -707,7 +711,8 @@ object libRestPreviewUnderstandAssistantMod {
       __obj.asInstanceOf[AssistantListInstancePageOptions]
     }
     
-    extension [Self <: AssistantListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -800,7 +805,8 @@ object libRestPreviewUnderstandAssistantMod {
       __obj.asInstanceOf[AssistantResource]
     }
     
-    extension [Self <: AssistantResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       

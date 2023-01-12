@@ -28,7 +28,8 @@ object AppsDynamiteSharedActivityFeedAnnotationData {
     __obj.asInstanceOf[AppsDynamiteSharedActivityFeedAnnotationData]
   }
   
-  extension [Self <: AppsDynamiteSharedActivityFeedAnnotationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedActivityFeedAnnotationData] (val x: Self) extends AnyVal {
     
     inline def setActivityFeedMessageId(value: String): Self = StObject.set(x, "activityFeedMessageId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object DataSize {
     __obj.asInstanceOf[DataSize]
   }
   
-  extension [Self <: DataSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSize] (val x: Self) extends AnyVal {
     
     inline def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
   }

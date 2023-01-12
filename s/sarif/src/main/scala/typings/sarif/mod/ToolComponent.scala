@@ -169,7 +169,8 @@ object ToolComponent {
     __obj.asInstanceOf[ToolComponent]
   }
   
-  extension [Self <: ToolComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolComponent] (val x: Self) extends AnyVal {
     
     inline def setAssociatedComponent(value: ToolComponentReference): Self = StObject.set(x, "associatedComponent", value.asInstanceOf[js.Any])
     

@@ -160,7 +160,8 @@ object libEsmComponentsOverflowListOverflowListMod {
       __obj.asInstanceOf[IOverflowListProps[T]]
     }
     
-    extension [Self <: IOverflowListProps[?], T](x: Self & IOverflowListProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverflowListProps[?], T] (val x: Self & IOverflowListProps[T]) extends AnyVal {
       
       inline def setAlwaysRenderOverflow(value: Boolean): Self = StObject.set(x, "alwaysRenderOverflow", value.asInstanceOf[js.Any])
       
@@ -232,7 +233,8 @@ object libEsmComponentsOverflowListOverflowListMod {
       __obj.asInstanceOf[IOverflowListState[T]]
     }
     
-    extension [Self <: IOverflowListState[?], T](x: Self & IOverflowListState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverflowListState[?], T] (val x: Self & IOverflowListState[T]) extends AnyVal {
       
       inline def setChopSize(value: Double): Self = StObject.set(x, "chopSize", value.asInstanceOf[js.Any])
       

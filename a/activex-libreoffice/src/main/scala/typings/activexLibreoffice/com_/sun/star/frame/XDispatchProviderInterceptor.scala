@@ -80,7 +80,8 @@ object XDispatchProviderInterceptor {
     __obj.asInstanceOf[XDispatchProviderInterceptor]
   }
   
-  extension [Self <: XDispatchProviderInterceptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDispatchProviderInterceptor] (val x: Self) extends AnyVal {
     
     inline def setGetMasterDispatchProvider(value: () => XDispatchProvider): Self = StObject.set(x, "getMasterDispatchProvider", js.Any.fromFunction0(value))
     

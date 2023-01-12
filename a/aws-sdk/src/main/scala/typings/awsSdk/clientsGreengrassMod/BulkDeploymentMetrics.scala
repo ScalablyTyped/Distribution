@@ -28,7 +28,8 @@ object BulkDeploymentMetrics {
     __obj.asInstanceOf[BulkDeploymentMetrics]
   }
   
-  extension [Self <: BulkDeploymentMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkDeploymentMetrics] (val x: Self) extends AnyVal {
     
     inline def setInvalidInputRecords(value: integer): Self = StObject.set(x, "InvalidInputRecords", value.asInstanceOf[js.Any])
     

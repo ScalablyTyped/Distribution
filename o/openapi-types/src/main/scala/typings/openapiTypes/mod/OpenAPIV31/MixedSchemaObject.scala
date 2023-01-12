@@ -20,7 +20,8 @@ object MixedSchemaObject {
     __obj.asInstanceOf[MixedSchemaObject]
   }
   
-  extension [Self <: MixedSchemaObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MixedSchemaObject] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ReferenceObject | SchemaObject): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -101,7 +101,8 @@ object TargetedAnimationEvent {
     __obj.asInstanceOf[TargetedAnimationEvent[Target]]
   }
   
-  extension [Self <: TargetedAnimationEvent[?], Target /* <: EventTarget */](x: Self & TargetedAnimationEvent[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedAnimationEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedAnimationEvent[Target]) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

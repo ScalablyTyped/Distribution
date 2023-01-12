@@ -23,7 +23,8 @@ object RemoveIpRoutesRequest {
     __obj.asInstanceOf[RemoveIpRoutesRequest]
   }
   
-  extension [Self <: RemoveIpRoutesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveIpRoutesRequest] (val x: Self) extends AnyVal {
     
     inline def setCidrIps(value: CidrIps): Self = StObject.set(x, "CidrIps", value.asInstanceOf[js.Any])
     

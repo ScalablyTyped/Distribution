@@ -17,7 +17,8 @@ object RequestBodyContentApplicationjsonGithubownedallowed {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonGithubownedallowed]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonGithubownedallowed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonGithubownedallowed] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathEnterpriseString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

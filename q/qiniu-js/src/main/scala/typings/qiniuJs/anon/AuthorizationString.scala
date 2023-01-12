@@ -15,7 +15,8 @@ object AuthorizationString {
     __obj.asInstanceOf[AuthorizationString]
   }
   
-  extension [Self <: AuthorizationString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationString] (val x: Self) extends AnyVal {
     
     inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
   }

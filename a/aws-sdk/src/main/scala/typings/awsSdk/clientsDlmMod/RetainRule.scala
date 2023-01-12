@@ -28,7 +28,8 @@ object RetainRule {
     __obj.asInstanceOf[RetainRule]
   }
   
-  extension [Self <: RetainRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetainRule] (val x: Self) extends AnyVal {
     
     inline def setCount(value: StandardTierRetainRuleCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

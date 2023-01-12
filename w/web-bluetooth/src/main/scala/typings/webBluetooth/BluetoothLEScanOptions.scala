@@ -19,7 +19,8 @@ object BluetoothLEScanOptions {
     __obj.asInstanceOf[BluetoothLEScanOptions]
   }
   
-  extension [Self <: BluetoothLEScanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothLEScanOptions] (val x: Self) extends AnyVal {
     
     inline def setAcceptAllAdvertisements(value: Boolean): Self = StObject.set(x, "acceptAllAdvertisements", value.asInstanceOf[js.Any])
     

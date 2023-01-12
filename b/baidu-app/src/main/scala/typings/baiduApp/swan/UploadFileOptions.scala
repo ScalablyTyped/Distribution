@@ -31,7 +31,8 @@ object UploadFileOptions {
     __obj.asInstanceOf[UploadFileOptions]
   }
   
-  extension [Self <: UploadFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadFileOptions] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

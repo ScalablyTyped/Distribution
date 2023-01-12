@@ -57,7 +57,8 @@ object dxFileManager {
       __obj.asInstanceOf[ActionEventInfo]
     }
     
-    extension [Self <: ActionEventInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionEventInfo] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean | PromiseLike[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object dxFileManager {
       __obj.asInstanceOf[ContextMenuItemClickEvent]
     }
     
-    extension [Self <: ContextMenuItemClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuItemClickEvent] (val x: Self) extends AnyVal {
       
       inline def setFileSystemItem(value: FileSystemItem): Self = StObject.set(x, "fileSystemItem", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object dxFileManager {
       __obj.asInstanceOf[ContextMenuShowingEvent]
     }
     
-    extension [Self <: ContextMenuShowingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuShowingEvent] (val x: Self) extends AnyVal {
       
       inline def setFileSystemItem(value: FileSystemItem): Self = StObject.set(x, "fileSystemItem", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object dxFileManager {
       __obj.asInstanceOf[CurrentDirectoryChangedEvent]
     }
     
-    extension [Self <: CurrentDirectoryChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentDirectoryChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setDirectory(value: FileSystemItem): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     }
@@ -188,7 +192,8 @@ object dxFileManager {
       __obj.asInstanceOf[DirectoryCreatedEvent]
     }
     
-    extension [Self <: DirectoryCreatedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryCreatedEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -219,7 +224,8 @@ object dxFileManager {
       __obj.asInstanceOf[DirectoryCreatingEvent]
     }
     
-    extension [Self <: DirectoryCreatingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryCreatingEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -246,7 +252,8 @@ object dxFileManager {
       __obj.asInstanceOf[ErrorOccurredEvent]
     }
     
-    extension [Self <: ErrorOccurredEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorOccurredEvent] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -378,7 +385,8 @@ object dxFileManager {
       __obj.asInstanceOf[FileUploadedEvent]
     }
     
-    extension [Self <: FileUploadedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadedEvent] (val x: Self) extends AnyVal {
       
       inline def setFileData(value: File): Self = StObject.set(x, "fileData", value.asInstanceOf[js.Any])
       
@@ -409,7 +417,8 @@ object dxFileManager {
       __obj.asInstanceOf[FileUploadingEvent]
     }
     
-    extension [Self <: FileUploadingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadingEvent] (val x: Self) extends AnyVal {
       
       inline def setDestinationDirectory(value: FileSystemItem): Self = StObject.set(x, "destinationDirectory", value.asInstanceOf[js.Any])
       
@@ -432,7 +441,8 @@ object dxFileManager {
       __obj.asInstanceOf[FocusedItemChangedEvent]
     }
     
-    extension [Self <: FocusedItemChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusedItemChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setItem(value: FileSystemItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -472,7 +482,8 @@ object dxFileManager {
       __obj.asInstanceOf[ItemCopiedEvent]
     }
     
-    extension [Self <: ItemCopiedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemCopiedEvent] (val x: Self) extends AnyVal {
       
       inline def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
       
@@ -507,7 +518,8 @@ object dxFileManager {
       __obj.asInstanceOf[ItemCopyingEvent]
     }
     
-    extension [Self <: ItemCopyingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemCopyingEvent] (val x: Self) extends AnyVal {
       
       inline def setDestinationDirectory(value: FileSystemItem): Self = StObject.set(x, "destinationDirectory", value.asInstanceOf[js.Any])
       
@@ -528,7 +540,8 @@ object dxFileManager {
       __obj.asInstanceOf[ItemDeletedEvent]
     }
     
-    extension [Self <: ItemDeletedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemDeletedEvent] (val x: Self) extends AnyVal {
       
       inline def setItem(value: FileSystemItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
@@ -554,7 +567,8 @@ object dxFileManager {
       __obj.asInstanceOf[ItemDeletingEvent]
     }
     
-    extension [Self <: ItemDeletingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemDeletingEvent] (val x: Self) extends AnyVal {
       
       inline def setItem(value: FileSystemItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
@@ -580,7 +594,8 @@ object dxFileManager {
       __obj.asInstanceOf[ItemDownloadingEvent]
     }
     
-    extension [Self <: ItemDownloadingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemDownloadingEvent] (val x: Self) extends AnyVal {
       
       inline def setItem(value: FileSystemItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
@@ -612,7 +627,8 @@ object dxFileManager {
       __obj.asInstanceOf[ItemMovedEvent]
     }
     
-    extension [Self <: ItemMovedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemMovedEvent] (val x: Self) extends AnyVal {
       
       inline def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
       
@@ -647,7 +663,8 @@ object dxFileManager {
       __obj.asInstanceOf[ItemMovingEvent]
     }
     
-    extension [Self <: ItemMovingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemMovingEvent] (val x: Self) extends AnyVal {
       
       inline def setDestinationDirectory(value: FileSystemItem): Self = StObject.set(x, "destinationDirectory", value.asInstanceOf[js.Any])
       
@@ -675,7 +692,8 @@ object dxFileManager {
       __obj.asInstanceOf[ItemRenamedEvent]
     }
     
-    extension [Self <: ItemRenamedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemRenamedEvent] (val x: Self) extends AnyVal {
       
       inline def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
       
@@ -706,7 +724,8 @@ object dxFileManager {
       __obj.asInstanceOf[ItemRenamingEvent]
     }
     
-    extension [Self <: ItemRenamingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemRenamingEvent] (val x: Self) extends AnyVal {
       
       inline def setItem(value: FileSystemItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -741,7 +760,8 @@ object dxFileManager {
       __obj.asInstanceOf[SelectedFileOpenedEvent]
     }
     
-    extension [Self <: SelectedFileOpenedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectedFileOpenedEvent] (val x: Self) extends AnyVal {
       
       inline def setFile(value: FileSystemItem): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
@@ -773,7 +793,8 @@ object dxFileManager {
       __obj.asInstanceOf[SelectionChangedEvent]
     }
     
-    extension [Self <: SelectionChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setCurrentDeselectedItemKeys(value: js.Array[String]): Self = StObject.set(x, "currentDeselectedItemKeys", value.asInstanceOf[js.Any])
       
@@ -818,7 +839,8 @@ object dxFileManager {
       __obj.asInstanceOf[ToolbarItemClickEvent]
     }
     
-    extension [Self <: ToolbarItemClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarItemClickEvent] (val x: Self) extends AnyVal {
       
       inline def setItemData(value: Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       

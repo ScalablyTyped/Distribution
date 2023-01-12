@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[BaseUrl]
     }
     
-    extension [Self <: BaseUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseUrl] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[FilePath]
     }
     
-    extension [Self <: FilePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePath] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     }
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Prompt]
     }
     
-    extension [Self <: Prompt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Prompt] (val x: Self) extends AnyVal {
       
       inline def setPrompt(value: login | consent): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       

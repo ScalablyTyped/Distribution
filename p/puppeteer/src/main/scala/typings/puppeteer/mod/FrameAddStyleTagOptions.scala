@@ -31,7 +31,8 @@ object FrameAddStyleTagOptions {
     __obj.asInstanceOf[FrameAddStyleTagOptions]
   }
   
-  extension [Self <: FrameAddStyleTagOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameAddStyleTagOptions] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

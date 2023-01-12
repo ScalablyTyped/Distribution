@@ -19,7 +19,8 @@ object BarParsedData {
     __obj.asInstanceOf[BarParsedData]
   }
   
-  extension [Self <: BarParsedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarParsedData] (val x: Self) extends AnyVal {
     
     inline def set_custom(value: BarEnd): Self = StObject.set(x, "_custom", value.asInstanceOf[js.Any])
     

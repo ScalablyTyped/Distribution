@@ -28,7 +28,8 @@ object QueryHierarchyItemsResult {
     __obj.asInstanceOf[QueryHierarchyItemsResult]
   }
   
-  extension [Self <: QueryHierarchyItemsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryHierarchyItemsResult] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

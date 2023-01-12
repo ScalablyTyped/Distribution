@@ -32,7 +32,8 @@ object UpdateLiveSourceRequest {
     __obj.asInstanceOf[UpdateLiveSourceRequest]
   }
   
-  extension [Self <: UpdateLiveSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLiveSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setHttpPackageConfigurations(value: HttpPackageConfigurations): Self = StObject.set(x, "HttpPackageConfigurations", value.asInstanceOf[js.Any])
     

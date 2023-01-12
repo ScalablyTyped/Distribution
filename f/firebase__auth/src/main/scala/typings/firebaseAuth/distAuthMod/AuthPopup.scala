@@ -20,7 +20,8 @@ object AuthPopup {
     __obj.asInstanceOf[AuthPopup]
   }
   
-  extension [Self <: AuthPopup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthPopup] (val x: Self) extends AnyVal {
     
     inline def setAssociatedEvent(value: String): Self = StObject.set(x, "associatedEvent", value.asInstanceOf[js.Any])
     

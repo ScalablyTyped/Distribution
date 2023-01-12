@@ -38,7 +38,8 @@ object TopicRuleListItem {
     __obj.asInstanceOf[TopicRuleListItem]
   }
   
-  extension [Self <: TopicRuleListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicRuleListItem] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AddAttributesActivity {
     __obj.asInstanceOf[AddAttributesActivity]
   }
   
-  extension [Self <: AddAttributesActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddAttributesActivity] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: AttributeNameMapping): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

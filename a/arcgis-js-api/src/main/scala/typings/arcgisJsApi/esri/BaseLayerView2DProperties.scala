@@ -29,7 +29,8 @@ object BaseLayerView2DProperties {
     __obj.asInstanceOf[BaseLayerView2DProperties]
   }
   
-  extension [Self <: BaseLayerView2DProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseLayerView2DProperties] (val x: Self) extends AnyVal {
     
     inline def setTiles(value: js.Array[Tile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
     

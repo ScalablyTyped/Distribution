@@ -43,7 +43,8 @@ object SVGLengthList {
     __obj.asInstanceOf[SVGLengthList]
   }
   
-  extension [Self <: SVGLengthList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGLengthList] (val x: Self) extends AnyVal {
     
     inline def setAppendItem(value: SVGLength => SVGLength): Self = StObject.set(x, "appendItem", js.Any.fromFunction1(value))
     

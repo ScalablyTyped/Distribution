@@ -20,7 +20,8 @@ object StringPromptOptions {
     __obj.asInstanceOf[StringPromptOptions]
   }
   
-  extension [Self <: StringPromptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringPromptOptions] (val x: Self) extends AnyVal {
     
     inline def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     

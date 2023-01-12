@@ -24,7 +24,8 @@ object XDataAccessDescriptorFactory {
     __obj.asInstanceOf[XDataAccessDescriptorFactory]
   }
   
-  extension [Self <: XDataAccessDescriptorFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataAccessDescriptorFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateDataAccessDescriptor(value: () => XPropertySet): Self = StObject.set(x, "createDataAccessDescriptor", js.Any.fromFunction0(value))
   }

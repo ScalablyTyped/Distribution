@@ -38,7 +38,8 @@ object IPlayReadyLicenseAcquisitionServiceRequest {
     __obj.asInstanceOf[IPlayReadyLicenseAcquisitionServiceRequest]
   }
   
-  extension [Self <: IPlayReadyLicenseAcquisitionServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlayReadyLicenseAcquisitionServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setContentHeader(value: PlayReadyContentHeader): Self = StObject.set(x, "contentHeader", value.asInstanceOf[js.Any])
     

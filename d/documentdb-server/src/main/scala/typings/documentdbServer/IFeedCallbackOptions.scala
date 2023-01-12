@@ -23,7 +23,8 @@ object IFeedCallbackOptions {
     __obj.asInstanceOf[IFeedCallbackOptions]
   }
   
-  extension [Self <: IFeedCallbackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFeedCallbackOptions] (val x: Self) extends AnyVal {
     
     inline def setContinuation(value: String): Self = StObject.set(x, "continuation", value.asInstanceOf[js.Any])
     

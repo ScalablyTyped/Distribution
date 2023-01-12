@@ -85,7 +85,8 @@ object typesValidationValidatorOptionsMod {
       __obj.asInstanceOf[ValidatorOptions]
     }
     
-    extension [Self <: ValidatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatorOptions] (val x: Self) extends AnyVal {
       
       inline def setAlways(value: Boolean): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
       

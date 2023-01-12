@@ -19,7 +19,8 @@ object UnaryFilter {
     __obj.asInstanceOf[UnaryFilter]
   }
   
-  extension [Self <: UnaryFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnaryFilter] (val x: Self) extends AnyVal {
     
     inline def setField(value: FieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object GoogleAnalyticsAdminV1alphaDataSharingSettings {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaDataSharingSettings]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaDataSharingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaDataSharingSettings] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

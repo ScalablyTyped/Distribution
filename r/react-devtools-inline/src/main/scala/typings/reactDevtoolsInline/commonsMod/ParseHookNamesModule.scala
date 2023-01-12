@@ -24,7 +24,8 @@ object ParseHookNamesModule {
     __obj.asInstanceOf[ParseHookNamesModule]
   }
   
-  extension [Self <: ParseHookNamesModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseHookNamesModule] (val x: Self) extends AnyVal {
     
     inline def setParseHookNames(
       value: (/* hooksTree */ js.Array[HooksNode], /* fetchFileWithCaching */ FetchFileWithCaching | Null) => js.Promise[HookNames | Null]

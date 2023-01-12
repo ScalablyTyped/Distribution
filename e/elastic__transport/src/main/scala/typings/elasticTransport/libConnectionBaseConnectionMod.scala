@@ -124,7 +124,8 @@ object libConnectionBaseConnectionMod {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: HttpAgentOptions | UndiciAgentOptions | agentFn | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object libConnectionBaseConnectionMod {
       __obj.asInstanceOf[ConnectionRequestOptions]
     }
     
-    extension [Self <: ConnectionRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -234,7 +236,8 @@ object libConnectionBaseConnectionMod {
       __obj.asInstanceOf[ConnectionRequestOptionsAsStream]
     }
     
-    extension [Self <: ConnectionRequestOptionsAsStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionRequestOptionsAsStream] (val x: Self) extends AnyVal {
       
       inline def setAsStream(value: `true`): Self = StObject.set(x, "asStream", value.asInstanceOf[js.Any])
     }
@@ -259,7 +262,8 @@ object libConnectionBaseConnectionMod {
       __obj.asInstanceOf[ConnectionRequestParams]
     }
     
-    extension [Self <: ConnectionRequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionRequestParams] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | Buffer | Readable): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -296,7 +300,8 @@ object libConnectionBaseConnectionMod {
       __obj.asInstanceOf[ConnectionRequestResponse]
     }
     
-    extension [Self <: ConnectionRequestResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionRequestResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -321,7 +326,8 @@ object libConnectionBaseConnectionMod {
       __obj.asInstanceOf[ConnectionRequestResponseAsStream]
     }
     
-    extension [Self <: ConnectionRequestResponseAsStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionRequestResponseAsStream] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Readable): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

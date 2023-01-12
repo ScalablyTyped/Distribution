@@ -31,7 +31,8 @@ object typesMatchesMod {
       __obj.asInstanceOf[DefaultNormalizerOptions]
     }
     
-    extension [Self <: DefaultNormalizerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultNormalizerOptions] (val x: Self) extends AnyVal {
       
       inline def setCollapseWhitespace(value: Boolean): Self = StObject.set(x, "collapseWhitespace", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object typesMatchesMod {
       __obj.asInstanceOf[MatcherOptions]
     }
     
-    extension [Self <: MatcherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatcherOptions] (val x: Self) extends AnyVal {
       
       inline def setCollapseWhitespace(value: Boolean): Self = StObject.set(x, "collapseWhitespace", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object typesMatchesMod {
       __obj.asInstanceOf[NormalizerOptions]
     }
     
-    extension [Self <: NormalizerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizerOptions] (val x: Self) extends AnyVal {
       
       inline def setNormalizer(value: /* text */ String => String): Self = StObject.set(x, "normalizer", js.Any.fromFunction1(value))
       

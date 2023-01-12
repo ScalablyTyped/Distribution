@@ -45,7 +45,8 @@ object VoxelVolumeStyleProperties {
     __obj.asInstanceOf[VoxelVolumeStyleProperties]
   }
   
-  extension [Self <: VoxelVolumeStyleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoxelVolumeStyleProperties] (val x: Self) extends AnyVal {
     
     inline def setDynamicSections(value: CollectionProperties[VoxelDynamicSectionProperties]): Self = StObject.set(x, "dynamicSections", value.asInstanceOf[js.Any])
     

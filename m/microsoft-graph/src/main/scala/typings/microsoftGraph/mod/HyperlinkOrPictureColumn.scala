@@ -16,7 +16,8 @@ object HyperlinkOrPictureColumn {
     __obj.asInstanceOf[HyperlinkOrPictureColumn]
   }
   
-  extension [Self <: HyperlinkOrPictureColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperlinkOrPictureColumn] (val x: Self) extends AnyVal {
     
     inline def setIsPicture(value: NullableOption[Boolean]): Self = StObject.set(x, "isPicture", value.asInstanceOf[js.Any])
     

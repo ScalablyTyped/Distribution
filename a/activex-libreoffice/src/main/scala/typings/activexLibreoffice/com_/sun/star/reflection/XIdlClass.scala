@@ -227,7 +227,8 @@ object XIdlClass {
     __obj.asInstanceOf[XIdlClass[T]]
   }
   
-  extension [Self <: XIdlClass[?], T](x: Self & XIdlClass[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIdlClass[?], T] (val x: Self & XIdlClass[T]) extends AnyVal {
     
     inline def setArray(value: XIdlArray): Self = StObject.set(x, "Array", value.asInstanceOf[js.Any])
     

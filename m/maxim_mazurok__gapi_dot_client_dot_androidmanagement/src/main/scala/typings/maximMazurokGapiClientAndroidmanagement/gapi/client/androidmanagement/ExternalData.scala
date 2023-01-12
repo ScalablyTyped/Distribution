@@ -22,7 +22,8 @@ object ExternalData {
     __obj.asInstanceOf[ExternalData]
   }
   
-  extension [Self <: ExternalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalData] (val x: Self) extends AnyVal {
     
     inline def setSha256Hash(value: String): Self = StObject.set(x, "sha256Hash", value.asInstanceOf[js.Any])
     

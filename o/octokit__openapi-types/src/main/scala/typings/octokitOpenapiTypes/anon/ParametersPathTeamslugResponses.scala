@@ -15,7 +15,8 @@ object ParametersPathTeamslugResponses {
     __obj.asInstanceOf[ParametersPathTeamslugResponses]
   }
   
-  extension [Self <: ParametersPathTeamslugResponses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathTeamslugResponses] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathTeamslug): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
   }

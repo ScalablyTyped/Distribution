@@ -37,7 +37,8 @@ object BreadcrumbOptions {
     __obj.asInstanceOf[BreadcrumbOptions]
   }
   
-  extension [Self <: BreadcrumbOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreadcrumbOptions] (val x: Self) extends AnyVal {
     
     inline def setBindToLocation(value: Boolean): Self = StObject.set(x, "bindToLocation", value.asInstanceOf[js.Any])
     

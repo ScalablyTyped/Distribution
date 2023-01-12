@@ -36,7 +36,8 @@ object IRequestDataerrorCodenumb {
     __obj.asInstanceOf[IRequestDataerrorCodenumb]
   }
   
-  extension [Self <: IRequestDataerrorCodenumb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRequestDataerrorCodenumb] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

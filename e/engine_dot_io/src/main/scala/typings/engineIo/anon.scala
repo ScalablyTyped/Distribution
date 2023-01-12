@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object anon {
       __obj.asInstanceOf[BADHANDSHAKEMETHOD]
     }
     
-    extension [Self <: BADHANDSHAKEMETHOD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BADHANDSHAKEMETHOD] (val x: Self) extends AnyVal {
       
       inline def setBAD_HANDSHAKE_METHOD(value: Double): Self = StObject.set(x, "BAD_HANDSHAKE_METHOD", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Cleanup]
     }
     
-    extension [Self <: Cleanup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cleanup] (val x: Self) extends AnyVal {
       
       inline def setCleanup(value: js.Function): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
     }
@@ -237,7 +240,8 @@ object anon {
       __obj.asInstanceOf[CookieSerializeOptionsnam]
     }
     
-    extension [Self <: CookieSerializeOptionsnam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieSerializeOptionsnam] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -293,7 +297,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -315,7 +320,8 @@ object anon {
       __obj.asInstanceOf[DataType]
     }
     
-    extension [Self <: DataType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataType] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -334,7 +340,8 @@ object anon {
       __obj.asInstanceOf[Res]
     }
     
-    extension [Self <: Res](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Res] (val x: Self) extends AnyVal {
       
       inline def setRes(value: ServerResponse[IncomingMessage]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     }
@@ -354,7 +361,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

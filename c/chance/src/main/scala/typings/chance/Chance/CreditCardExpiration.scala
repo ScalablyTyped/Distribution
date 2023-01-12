@@ -17,7 +17,8 @@ object CreditCardExpiration {
     __obj.asInstanceOf[CreditCardExpiration]
   }
   
-  extension [Self <: CreditCardExpiration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreditCardExpiration] (val x: Self) extends AnyVal {
     
     inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     

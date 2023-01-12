@@ -33,7 +33,8 @@ object DetectorVersionSummary {
     __obj.asInstanceOf[DetectorVersionSummary]
   }
   
-  extension [Self <: DetectorVersionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectorVersionSummary] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

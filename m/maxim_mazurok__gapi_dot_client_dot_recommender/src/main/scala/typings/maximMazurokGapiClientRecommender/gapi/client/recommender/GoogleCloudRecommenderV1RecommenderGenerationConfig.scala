@@ -18,7 +18,8 @@ object GoogleCloudRecommenderV1RecommenderGenerationConfig {
     __obj.asInstanceOf[GoogleCloudRecommenderV1RecommenderGenerationConfig]
   }
   
-  extension [Self <: GoogleCloudRecommenderV1RecommenderGenerationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommenderV1RecommenderGenerationConfig] (val x: Self) extends AnyVal {
     
     inline def setParams(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

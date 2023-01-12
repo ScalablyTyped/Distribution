@@ -28,7 +28,8 @@ object ASPxClientGanttTooltipShowingEventArgs {
     __obj.asInstanceOf[ASPxClientGanttTooltipShowingEventArgs]
   }
   
-  extension [Self <: ASPxClientGanttTooltipShowingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGanttTooltipShowingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

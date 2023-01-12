@@ -21,7 +21,8 @@ object UnityIndicatorProperties {
     __obj.asInstanceOf[UnityIndicatorProperties]
   }
   
-  extension [Self <: UnityIndicatorProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnityIndicatorProperties] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

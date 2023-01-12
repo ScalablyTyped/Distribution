@@ -28,7 +28,8 @@ object UpdateQueueMaxContactsRequest {
     __obj.asInstanceOf[UpdateQueueMaxContactsRequest]
   }
   
-  extension [Self <: UpdateQueueMaxContactsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateQueueMaxContactsRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

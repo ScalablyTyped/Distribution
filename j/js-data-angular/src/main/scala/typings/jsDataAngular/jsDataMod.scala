@@ -70,7 +70,8 @@ object jsDataMod {
       __obj.asInstanceOf[DSProvider]
     }
     
-    extension [Self <: DSProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DSProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSConfiguration */ Any

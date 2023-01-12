@@ -18,7 +18,8 @@ object GetTelemetryMetadataResponse {
     __obj.asInstanceOf[GetTelemetryMetadataResponse]
   }
   
-  extension [Self <: GetTelemetryMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTelemetryMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setTelemetryMetadata(value: TelemetryMetadataList): Self = StObject.set(x, "telemetryMetadata", value.asInstanceOf[js.Any])
     

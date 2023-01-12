@@ -28,7 +28,8 @@ object ControlPlaneTagFilter {
     __obj.asInstanceOf[ControlPlaneTagFilter]
   }
   
-  extension [Self <: ControlPlaneTagFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlPlaneTagFilter] (val x: Self) extends AnyVal {
     
     inline def setAndConditions(value: TagAndConditionList): Self = StObject.set(x, "AndConditions", value.asInstanceOf[js.Any])
     

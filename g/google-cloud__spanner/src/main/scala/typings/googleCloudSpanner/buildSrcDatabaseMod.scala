@@ -1771,7 +1771,8 @@ object buildSrcDatabaseMod {
       __obj.asInstanceOf[BatchCreateSessionsOptions]
     }
     
-    extension [Self <: BatchCreateSessionsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchCreateSessionsOptions] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }
@@ -1816,7 +1817,8 @@ object buildSrcDatabaseMod {
       __obj.asInstanceOf[CreateSessionOptions]
     }
     
-    extension [Self <: CreateSessionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateSessionOptions] (val x: Self) extends AnyVal {
       
       inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
       
@@ -1872,7 +1874,8 @@ object buildSrcDatabaseMod {
       __obj.asInstanceOf[GetDatabaseConfig]
     }
     
-    extension [Self <: GetDatabaseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDatabaseConfig] (val x: Self) extends AnyVal {
       
       inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
       
@@ -1964,7 +1967,8 @@ object buildSrcDatabaseMod {
       __obj.asInstanceOf[RestoreOptions]
     }
     
-    extension [Self <: RestoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestoreOptions] (val x: Self) extends AnyVal {
       
       inline def setEncryptionConfig(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IRestoreDatabaseEncryptionConfig */ Any

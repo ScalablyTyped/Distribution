@@ -38,7 +38,8 @@ object InvocationResponse {
     __obj.asInstanceOf[InvocationResponse]
   }
   
-  extension [Self <: InvocationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvocationResponse] (val x: Self) extends AnyVal {
     
     inline def setExecutedVersion(value: Version): Self = StObject.set(x, "ExecutedVersion", value.asInstanceOf[js.Any])
     

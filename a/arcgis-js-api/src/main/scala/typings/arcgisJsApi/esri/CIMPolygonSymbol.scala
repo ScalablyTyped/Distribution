@@ -37,7 +37,8 @@ object CIMPolygonSymbol {
     __obj.asInstanceOf[CIMPolygonSymbol]
   }
   
-  extension [Self <: CIMPolygonSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMPolygonSymbol] (val x: Self) extends AnyVal {
     
     inline def setEffects(value: js.Array[CIMGeometricEffect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     

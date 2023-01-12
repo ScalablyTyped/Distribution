@@ -72,7 +72,8 @@ object UpdateImagePipelineRequest {
     __obj.asInstanceOf[UpdateImagePipelineRequest]
   }
   
-  extension [Self <: UpdateImagePipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateImagePipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

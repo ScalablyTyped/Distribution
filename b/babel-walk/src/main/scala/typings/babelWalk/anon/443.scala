@@ -21,7 +21,8 @@ object `443` {
     __obj.asInstanceOf[`443`[TState]]
   }
   
-  extension [Self <: `443`[?], TState](x: Self & `443`[TState]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `443`[?], TState] (val x: Self & `443`[TState]) extends AnyVal {
     
     inline def setEnter(value: (/* node */ NodeType[ModuleDeclaration], TState, /* ancestors */ js.Array[Node]) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
     

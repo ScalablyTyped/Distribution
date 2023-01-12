@@ -21,7 +21,8 @@ object ModuleTodo {
     __obj.asInstanceOf[ModuleTodo]
   }
   
-  extension [Self <: ModuleTodo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleTodo] (val x: Self) extends AnyVal {
     
     inline def setTodo(value: moduleFunc1 & moduleFunc2): Self = StObject.set(x, "todo", value.asInstanceOf[js.Any])
   }

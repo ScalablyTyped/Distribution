@@ -18,7 +18,8 @@ object TransactGetItem {
     __obj.asInstanceOf[TransactGetItem]
   }
   
-  extension [Self <: TransactGetItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactGetItem] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Get): Self = StObject.set(x, "Get", value.asInstanceOf[js.Any])
   }

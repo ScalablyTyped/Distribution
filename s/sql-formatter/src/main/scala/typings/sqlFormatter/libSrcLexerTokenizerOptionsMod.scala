@@ -30,7 +30,8 @@ object libSrcLexerTokenizerOptionsMod {
       __obj.asInstanceOf[IdentChars]
     }
     
-    extension [Self <: IdentChars](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentChars] (val x: Self) extends AnyVal {
       
       inline def setAllowFirstCharNumber(value: Boolean): Self = StObject.set(x, "allowFirstCharNumber", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object libSrcLexerTokenizerOptionsMod {
       __obj.asInstanceOf[ParamTypes]
     }
     
-    extension [Self <: ParamTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamTypes] (val x: Self) extends AnyVal {
       
       inline def setNamed(value: js.Array[Colon | `@` | $]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object libSrcLexerTokenizerOptionsMod {
       __obj.asInstanceOf[PrefixedQuoteType]
     }
     
-    extension [Self <: PrefixedQuoteType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrefixedQuoteType] (val x: Self) extends AnyVal {
       
       inline def setPrefixes(value: js.Array[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
       
@@ -167,7 +170,8 @@ object libSrcLexerTokenizerOptionsMod {
       __obj.asInstanceOf[RegexPattern]
     }
     
-    extension [Self <: RegexPattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegexPattern] (val x: Self) extends AnyVal {
       
       inline def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
@@ -229,7 +233,8 @@ object libSrcLexerTokenizerOptionsMod {
       __obj.asInstanceOf[TokenizerOptions]
     }
     
-    extension [Self <: TokenizerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenizerOptions] (val x: Self) extends AnyVal {
       
       inline def setExtraParens(value: js.Array[`[]` | LeftcurlybracketRightcurlybracket]): Self = StObject.set(x, "extraParens", value.asInstanceOf[js.Any])
       

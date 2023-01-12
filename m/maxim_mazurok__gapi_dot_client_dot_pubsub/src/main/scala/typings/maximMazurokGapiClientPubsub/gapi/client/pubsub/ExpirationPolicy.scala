@@ -20,7 +20,8 @@ object ExpirationPolicy {
     __obj.asInstanceOf[ExpirationPolicy]
   }
   
-  extension [Self <: ExpirationPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpirationPolicy] (val x: Self) extends AnyVal {
     
     inline def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     

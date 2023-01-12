@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[RTLDDEFAUL]
     }
     
-    extension [Self <: RTLDDEFAUL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTLDDEFAUL] (val x: Self) extends AnyVal {
       
       inline def setRTLD_DEFAUL(value: Buffer): Self = StObject.set(x, "RTLD_DEFAUL", value.asInstanceOf[js.Any])
       

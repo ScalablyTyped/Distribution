@@ -55,7 +55,8 @@ object IUISettings {
     __obj.asInstanceOf[IUISettings]
   }
   
-  extension [Self <: IUISettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUISettings] (val x: Self) extends AnyVal {
     
     inline def setAnimationsEnabled(value: Boolean): Self = StObject.set(x, "animationsEnabled", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object MappingByteNumberProperty {
     __obj.asInstanceOf[MappingByteNumberProperty]
   }
   
-  extension [Self <: MappingByteNumberProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingByteNumberProperty] (val x: Self) extends AnyVal {
     
     inline def setNull_value(value: byte): Self = StObject.set(x, "null_value", value.asInstanceOf[js.Any])
     

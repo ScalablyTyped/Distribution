@@ -16,7 +16,8 @@ object Decimal128Extended {
     __obj.asInstanceOf[Decimal128Extended]
   }
   
-  extension [Self <: Decimal128Extended](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Decimal128Extended] (val x: Self) extends AnyVal {
     
     inline def set$numberDecimal(value: String): Self = StObject.set(x, "$numberDecimal", value.asInstanceOf[js.Any])
   }

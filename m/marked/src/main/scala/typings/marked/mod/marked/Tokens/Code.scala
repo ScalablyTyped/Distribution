@@ -29,7 +29,8 @@ object Code {
     __obj.asInstanceOf[Code]
   }
   
-  extension [Self <: Code](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
     
     inline def setCodeBlockStyle(value: indented): Self = StObject.set(x, "codeBlockStyle", value.asInstanceOf[js.Any])
     

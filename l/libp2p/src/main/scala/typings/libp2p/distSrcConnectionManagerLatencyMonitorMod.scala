@@ -96,7 +96,8 @@ object distSrcConnectionManagerLatencyMonitorMod {
       __obj.asInstanceOf[LatencyData]
     }
     
-    extension [Self <: LatencyData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LatencyData] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: Double): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object distSrcConnectionManagerLatencyMonitorMod {
       __obj.asInstanceOf[LatencyMonitorEvents]
     }
     
-    extension [Self <: LatencyMonitorEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LatencyMonitorEvents] (val x: Self) extends AnyVal {
       
       inline def setData(value: CustomEvent[SummaryObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -156,7 +158,8 @@ object distSrcConnectionManagerLatencyMonitorMod {
       __obj.asInstanceOf[LatencyMonitorInit]
     }
     
-    extension [Self <: LatencyMonitorInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LatencyMonitorInit] (val x: Self) extends AnyVal {
       
       inline def setAsyncTestFn(value: /* cb */ js.Function0[Unit] => Unit): Self = StObject.set(x, "asyncTestFn", js.Any.fromFunction1(value))
       
@@ -210,7 +213,8 @@ object distSrcConnectionManagerLatencyMonitorMod {
       __obj.asInstanceOf[SummaryObject]
     }
     
-    extension [Self <: SummaryObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryObject] (val x: Self) extends AnyVal {
       
       inline def setAvgMs(value: Double): Self = StObject.set(x, "avgMs", value.asInstanceOf[js.Any])
       

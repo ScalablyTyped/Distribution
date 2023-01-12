@@ -45,7 +45,8 @@ object TileSourceOptionstileForm {
     __obj.asInstanceOf[TileSourceOptionstileForm]
   }
   
-  extension [Self <: TileSourceOptionstileForm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileSourceOptionstileForm] (val x: Self) extends AnyVal {
     
     inline def setAjaxHeaders(value: js.Object): Self = StObject.set(x, "ajaxHeaders", value.asInstanceOf[js.Any])
     

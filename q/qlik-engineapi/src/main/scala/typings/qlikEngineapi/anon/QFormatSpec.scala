@@ -18,7 +18,8 @@ object QFormatSpec {
     __obj.asInstanceOf[QFormatSpec]
   }
   
-  extension [Self <: QFormatSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QFormatSpec] (val x: Self) extends AnyVal {
     
     inline def setQFormatSpec(value: String): Self = StObject.set(x, "qFormatSpec", value.asInstanceOf[js.Any])
     

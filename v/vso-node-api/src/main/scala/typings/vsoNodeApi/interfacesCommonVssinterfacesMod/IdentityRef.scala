@@ -44,7 +44,8 @@ object IdentityRef {
     __obj.asInstanceOf[IdentityRef]
   }
   
-  extension [Self <: IdentityRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityRef] (val x: Self) extends AnyVal {
     
     inline def setDirectoryAlias(value: String): Self = StObject.set(x, "directoryAlias", value.asInstanceOf[js.Any])
     

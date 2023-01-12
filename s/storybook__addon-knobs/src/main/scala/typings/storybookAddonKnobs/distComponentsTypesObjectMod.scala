@@ -90,7 +90,8 @@ object distComponentsTypesObjectMod {
       __obj.asInstanceOf[ObjectTypeState[T]]
     }
     
-    extension [Self <: ObjectTypeState[?], T](x: Self & ObjectTypeState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectTypeState[?], T] (val x: Self & ObjectTypeState[T]) extends AnyVal {
       
       inline def setFailed(value: Boolean): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       

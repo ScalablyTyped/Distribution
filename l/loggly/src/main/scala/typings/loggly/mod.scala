@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[LogglyOptions]
     }
     
-    extension [Self <: LogglyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogglyOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[Search]
     }
     
-    extension [Self <: Search](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
       
       inline def setRun(value: js.Function2[/* err */ Any, /* results */ SearchResults, Unit] => Search): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
     }
@@ -132,7 +134,8 @@ object mod {
       __obj.asInstanceOf[SearchOptionsWithQ]
     }
     
-    extension [Self <: SearchOptionsWithQ](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptionsWithQ] (val x: Self) extends AnyVal {
       
       inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     }
@@ -152,7 +155,8 @@ object mod {
       __obj.asInstanceOf[SearchOptionsWithQuery]
     }
     
-    extension [Self <: SearchOptionsWithQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptionsWithQuery] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
@@ -173,7 +177,8 @@ object mod {
       __obj.asInstanceOf[SearchResults]
     }
     
-    extension [Self <: SearchResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResults] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[SearchResultsEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -216,7 +221,8 @@ object mod {
       __obj.asInstanceOf[SearchResultsEvent]
     }
     
-    extension [Self <: SearchResultsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResultsEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -255,7 +261,8 @@ object mod {
       __obj.asInstanceOf[SharedSearchOptions]
     }
     
-    extension [Self <: SharedSearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedSearchOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

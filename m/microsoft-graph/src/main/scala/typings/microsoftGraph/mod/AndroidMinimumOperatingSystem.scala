@@ -43,7 +43,8 @@ object AndroidMinimumOperatingSystem {
     __obj.asInstanceOf[AndroidMinimumOperatingSystem]
   }
   
-  extension [Self <: AndroidMinimumOperatingSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidMinimumOperatingSystem] (val x: Self) extends AnyVal {
     
     inline def setV10_0(value: Boolean): Self = StObject.set(x, "v10_0", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object types {
       __obj.asInstanceOf[StubbedChromeSetting]
     }
     
-    extension [Self <: StubbedChromeSetting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StubbedChromeSetting] (val x: Self) extends AnyVal {
       
       inline def setClear(value: SinonChromeStub): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       

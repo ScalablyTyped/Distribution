@@ -21,7 +21,8 @@ object PaymentGatewayAccountSetting {
     __obj.asInstanceOf[PaymentGatewayAccountSetting]
   }
   
-  extension [Self <: PaymentGatewayAccountSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentGatewayAccountSetting] (val x: Self) extends AnyVal {
     
     inline def setApiFields(value: String): Self = StObject.set(x, "apiFields", value.asInstanceOf[js.Any])
     

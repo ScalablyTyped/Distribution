@@ -23,7 +23,8 @@ object ErrorRootCause {
     __obj.asInstanceOf[ErrorRootCause]
   }
   
-  extension [Self <: ErrorRootCause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorRootCause] (val x: Self) extends AnyVal {
     
     inline def setClientImpacting(value: NullableBoolean): Self = StObject.set(x, "ClientImpacting", value.asInstanceOf[js.Any])
     

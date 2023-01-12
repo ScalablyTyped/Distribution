@@ -22,7 +22,8 @@ object RotateControlOptions {
     __obj.asInstanceOf[RotateControlOptions]
   }
   
-  extension [Self <: RotateControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotateControlOptions] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

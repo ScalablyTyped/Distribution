@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[OptionsasBytestrue]
     }
     
-    extension [Self <: OptionsasBytestrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsasBytestrue] (val x: Self) extends AnyVal {
       
       inline def setAsBytes(value: Boolean): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[PickOptionsasStringencodi]
     }
     
-    extension [Self <: PickOptionsasStringencodi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickOptionsasStringencodi] (val x: Self) extends AnyVal {
       
       inline def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       

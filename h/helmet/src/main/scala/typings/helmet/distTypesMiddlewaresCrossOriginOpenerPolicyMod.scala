@@ -50,7 +50,8 @@ object distTypesMiddlewaresCrossOriginOpenerPolicyMod {
       __obj.asInstanceOf[CrossOriginOpenerPolicyOptions]
     }
     
-    extension [Self <: CrossOriginOpenerPolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrossOriginOpenerPolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: `same-origin` | `same-origin-allow-popups` | `unsafe-none`): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       

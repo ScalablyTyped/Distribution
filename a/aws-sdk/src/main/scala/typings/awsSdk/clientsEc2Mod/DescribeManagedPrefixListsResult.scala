@@ -23,7 +23,8 @@ object DescribeManagedPrefixListsResult {
     __obj.asInstanceOf[DescribeManagedPrefixListsResult]
   }
   
-  extension [Self <: DescribeManagedPrefixListsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeManagedPrefixListsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

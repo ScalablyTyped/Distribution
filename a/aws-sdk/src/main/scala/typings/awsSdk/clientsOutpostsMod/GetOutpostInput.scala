@@ -18,7 +18,8 @@ object GetOutpostInput {
     __obj.asInstanceOf[GetOutpostInput]
   }
   
-  extension [Self <: GetOutpostInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOutpostInput] (val x: Self) extends AnyVal {
     
     inline def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
   }

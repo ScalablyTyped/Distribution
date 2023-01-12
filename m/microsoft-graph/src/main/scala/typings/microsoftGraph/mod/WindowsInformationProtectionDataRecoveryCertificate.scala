@@ -25,7 +25,8 @@ object WindowsInformationProtectionDataRecoveryCertificate {
     __obj.asInstanceOf[WindowsInformationProtectionDataRecoveryCertificate]
   }
   
-  extension [Self <: WindowsInformationProtectionDataRecoveryCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsInformationProtectionDataRecoveryCertificate] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: NullableOption[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     

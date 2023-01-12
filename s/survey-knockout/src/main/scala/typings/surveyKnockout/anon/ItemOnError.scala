@@ -68,7 +68,8 @@ object ItemOnError {
     __obj.asInstanceOf[ItemOnError]
   }
   
-  extension [Self <: ItemOnError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemOnError] (val x: Self) extends AnyVal {
     
     inline def setClearButton(value: String): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
     

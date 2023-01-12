@@ -18,7 +18,8 @@ object NodeMeta {
     __obj.asInstanceOf[NodeMeta]
   }
   
-  extension [Self <: NodeMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeMeta] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: Name): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

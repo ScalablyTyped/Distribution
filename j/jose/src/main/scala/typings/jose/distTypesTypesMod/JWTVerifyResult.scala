@@ -19,7 +19,8 @@ object JWTVerifyResult {
     __obj.asInstanceOf[JWTVerifyResult]
   }
   
-  extension [Self <: JWTVerifyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JWTVerifyResult] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: JWTPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

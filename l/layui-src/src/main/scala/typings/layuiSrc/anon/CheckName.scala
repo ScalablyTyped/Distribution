@@ -20,7 +20,8 @@ object CheckName {
     __obj.asInstanceOf[CheckName]
   }
   
-  extension [Self <: CheckName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckName] (val x: Self) extends AnyVal {
     
     inline def setCheckName(value: LAY_CHECKED): Self = StObject.set(x, "checkName", value.asInstanceOf[js.Any])
     

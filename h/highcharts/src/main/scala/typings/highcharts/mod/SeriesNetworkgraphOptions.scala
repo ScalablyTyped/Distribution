@@ -102,7 +102,8 @@ object SeriesNetworkgraphOptions {
     __obj.asInstanceOf[SeriesNetworkgraphOptions]
   }
   
-  extension [Self <: SeriesNetworkgraphOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesNetworkgraphOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: PointOptionsObject | (js.Array[js.Object | js.Array[Any] | Double])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

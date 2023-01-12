@@ -26,7 +26,8 @@ object SuggestionColumns {
     __obj.asInstanceOf[SuggestionColumns]
   }
   
-  extension [Self <: SuggestionColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestionColumns] (val x: Self) extends AnyVal {
     
     inline def setSuggestValue(value: String): Self = StObject.set(x, "suggestValue", value.asInstanceOf[js.Any])
     

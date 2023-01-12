@@ -124,7 +124,8 @@ object PartialWordCloudOptions {
     __obj.asInstanceOf[PartialWordCloudOptions]
   }
   
-  extension [Self <: PartialWordCloudOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWordCloudOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

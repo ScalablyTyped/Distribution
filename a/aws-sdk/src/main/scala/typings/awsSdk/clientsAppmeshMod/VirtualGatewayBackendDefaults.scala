@@ -18,7 +18,8 @@ object VirtualGatewayBackendDefaults {
     __obj.asInstanceOf[VirtualGatewayBackendDefaults]
   }
   
-  extension [Self <: VirtualGatewayBackendDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayBackendDefaults] (val x: Self) extends AnyVal {
     
     inline def setClientPolicy(value: VirtualGatewayClientPolicy): Self = StObject.set(x, "clientPolicy", value.asInstanceOf[js.Any])
     

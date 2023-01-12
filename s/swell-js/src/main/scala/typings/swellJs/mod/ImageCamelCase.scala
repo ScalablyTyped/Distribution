@@ -20,7 +20,8 @@ object ImageCamelCase {
     __obj.asInstanceOf[ImageCamelCase]
   }
   
-  extension [Self <: ImageCamelCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageCamelCase] (val x: Self) extends AnyVal {
     
     inline def setFile(value: ContentType_): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object MainData {
     __obj.asInstanceOf[MainData]
   }
   
-  extension [Self <: MainData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MainData] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Object): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

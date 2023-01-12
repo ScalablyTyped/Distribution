@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[OptionsParsed]
     }
     
-    extension [Self <: OptionsParsed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsParsed] (val x: Self) extends AnyVal {
       
       inline def setArgv(value: Cooked): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
     }
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[TypeInfo]
     }
     
-    extension [Self <: TypeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeInfo] (val x: Self) extends AnyVal {
       
       inline def setType(value: js.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

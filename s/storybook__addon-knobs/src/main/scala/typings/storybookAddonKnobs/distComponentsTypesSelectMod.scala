@@ -69,7 +69,8 @@ object distComponentsTypesSelectMod {
       __obj.asInstanceOf[SelectTypeKnob[T]]
     }
     
-    extension [Self <: SelectTypeKnob[?], T /* <: SelectTypeKnobValue */](x: Self & SelectTypeKnob[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectTypeKnob[?], T /* <: SelectTypeKnobValue */] (val x: Self & SelectTypeKnob[T]) extends AnyVal {
       
       inline def setOptions(value: SelectTypeOptionsProp[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object distComponentsTypesSelectMod {
       __obj.asInstanceOf[SelectTypeProps[T]]
     }
     
-    extension [Self <: SelectTypeProps[?], T /* <: SelectTypeKnobValue */](x: Self & SelectTypeProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectTypeProps[?], T /* <: SelectTypeKnobValue */] (val x: Self & SelectTypeProps[T]) extends AnyVal {
       
       inline def setKnob(value: SelectTypeKnob[T]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     }

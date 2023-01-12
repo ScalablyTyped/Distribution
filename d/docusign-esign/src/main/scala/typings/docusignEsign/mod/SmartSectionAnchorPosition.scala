@@ -33,7 +33,8 @@ object SmartSectionAnchorPosition {
     __obj.asInstanceOf[SmartSectionAnchorPosition]
   }
   
-  extension [Self <: SmartSectionAnchorPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartSectionAnchorPosition] (val x: Self) extends AnyVal {
     
     inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     

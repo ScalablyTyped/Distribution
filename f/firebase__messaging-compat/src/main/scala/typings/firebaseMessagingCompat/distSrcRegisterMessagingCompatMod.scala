@@ -28,7 +28,8 @@ object distSrcRegisterMessagingCompatMod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setMessaging-compat`(value: MessagingCompatImpl): Self = StObject.set(x, "messaging-compat", value.asInstanceOf[js.Any])
       }

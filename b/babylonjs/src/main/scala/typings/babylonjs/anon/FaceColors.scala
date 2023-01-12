@@ -41,7 +41,8 @@ object FaceColors {
     __obj.asInstanceOf[FaceColors]
   }
   
-  extension [Self <: FaceColors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceColors] (val x: Self) extends AnyVal {
     
     inline def setAlignHorizontal(value: Double): Self = StObject.set(x, "alignHorizontal", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object EnergyServicePoint {
     __obj.asInstanceOf[EnergyServicePoint]
   }
   
-  extension [Self <: EnergyServicePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergyServicePoint] (val x: Self) extends AnyVal {
     
     inline def setConsumerProfile(value: Classification): Self = StObject.set(x, "consumerProfile", value.asInstanceOf[js.Any])
     

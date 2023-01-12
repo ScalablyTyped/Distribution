@@ -22,7 +22,8 @@ object GoogleActionsV2UiElementsSuggestion {
     __obj.asInstanceOf[GoogleActionsV2UiElementsSuggestion]
   }
   
-  extension [Self <: GoogleActionsV2UiElementsSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2UiElementsSuggestion] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

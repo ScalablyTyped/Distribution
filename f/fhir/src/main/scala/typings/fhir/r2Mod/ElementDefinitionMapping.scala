@@ -36,7 +36,8 @@ object ElementDefinitionMapping {
     __obj.asInstanceOf[ElementDefinitionMapping]
   }
   
-  extension [Self <: ElementDefinitionMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementDefinitionMapping] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

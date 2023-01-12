@@ -43,7 +43,8 @@ object CreatePrivateDnsNamespaceRequest {
     __obj.asInstanceOf[CreatePrivateDnsNamespaceRequest]
   }
   
-  extension [Self <: CreatePrivateDnsNamespaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePrivateDnsNamespaceRequest] (val x: Self) extends AnyVal {
     
     inline def setCreatorRequestId(value: ResourceId): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     

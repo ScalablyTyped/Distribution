@@ -89,7 +89,8 @@ object CommitCharactersSupport {
     __obj.asInstanceOf[CommitCharactersSupport]
   }
   
-  extension [Self <: CommitCharactersSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitCharactersSupport] (val x: Self) extends AnyVal {
     
     inline def setCommitCharactersSupport(value: Boolean): Self = StObject.set(x, "commitCharactersSupport", value.asInstanceOf[js.Any])
     

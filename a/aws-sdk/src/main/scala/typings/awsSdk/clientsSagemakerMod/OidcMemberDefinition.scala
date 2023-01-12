@@ -18,7 +18,8 @@ object OidcMemberDefinition {
     __obj.asInstanceOf[OidcMemberDefinition]
   }
   
-  extension [Self <: OidcMemberDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OidcMemberDefinition] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: Groups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     

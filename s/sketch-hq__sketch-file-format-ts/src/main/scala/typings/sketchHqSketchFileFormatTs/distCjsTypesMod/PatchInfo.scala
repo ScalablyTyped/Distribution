@@ -31,7 +31,8 @@ object PatchInfo {
     __obj.asInstanceOf[PatchInfo]
   }
   
-  extension [Self <: PatchInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchInfo] (val x: Self) extends AnyVal {
     
     inline def setBaseVersionID(value: Uuid): Self = StObject.set(x, "baseVersionID", value.asInstanceOf[js.Any])
     

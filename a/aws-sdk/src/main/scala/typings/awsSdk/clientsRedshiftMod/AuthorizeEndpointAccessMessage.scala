@@ -28,7 +28,8 @@ object AuthorizeEndpointAccessMessage {
     __obj.asInstanceOf[AuthorizeEndpointAccessMessage]
   }
   
-  extension [Self <: AuthorizeEndpointAccessMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeEndpointAccessMessage] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: String): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     

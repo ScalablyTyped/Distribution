@@ -21,7 +21,8 @@ object SequenceGenerator {
     __obj.asInstanceOf[SequenceGenerator]
   }
   
-  extension [Self <: SequenceGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceGenerator] (val x: Self) extends AnyVal {
     
     inline def setSequence(value: SequenceParams): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
   }

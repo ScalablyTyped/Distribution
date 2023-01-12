@@ -20,7 +20,8 @@ object univariateColorSizeCreateContinuousRendererParamsSizeOptions {
     __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParamsSizeOptions]
   }
   
-  extension [Self <: univariateColorSizeCreateContinuousRendererParamsSizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: univariateColorSizeCreateContinuousRendererParamsSizeOptions] (val x: Self) extends AnyVal {
     
     inline def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
     

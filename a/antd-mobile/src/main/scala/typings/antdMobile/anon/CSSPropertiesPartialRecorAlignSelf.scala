@@ -9977,7 +9977,8 @@ object CSSPropertiesPartialRecorAlignSelf {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAlignSelf]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAlignSelf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAlignSelf] (val x: Self) extends AnyVal {
     
     inline def `set--header-button-font-size`(value: String): Self = StObject.set(x, "--header-button-font-size", value.asInstanceOf[js.Any])
     

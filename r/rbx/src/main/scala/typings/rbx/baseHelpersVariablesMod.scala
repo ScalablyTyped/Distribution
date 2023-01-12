@@ -196,7 +196,8 @@ object baseHelpersVariablesMod {
       __obj.asInstanceOf[Variables]
     }
     
-    extension [Self <: Variables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Variables] (val x: Self) extends AnyVal {
       
       inline def setBadgeSizes(value: small | medium | large): Self = StObject.set(x, "badgeSizes", value.asInstanceOf[js.Any])
       
@@ -272,7 +273,8 @@ object baseHelpersVariablesMod {
       __obj.asInstanceOf[VariablesDefaults]
     }
     
-    extension [Self <: VariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setBadgeSizes(value: small | medium | large): Self = StObject.set(x, "badgeSizes", value.asInstanceOf[js.Any])
       
@@ -348,7 +350,8 @@ object baseHelpersVariablesMod {
       __obj.asInstanceOf[VariablesDefinitions]
     }
     
-    extension [Self <: VariablesDefinitions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariablesDefinitions] (val x: Self) extends AnyVal {
       
       inline def setBadgeSizes(value: ReadonlyArraystringnumber): Self = StObject.set(x, "badgeSizes", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object PartialIToggleState {
     __obj.asInstanceOf[PartialIToggleState]
   }
   
-  extension [Self <: PartialIToggleState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIToggleState] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

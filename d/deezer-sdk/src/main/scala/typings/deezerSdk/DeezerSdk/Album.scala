@@ -20,7 +20,8 @@ object Album {
     __obj.asInstanceOf[Album]
   }
   
-  extension [Self <: Album](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Album] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

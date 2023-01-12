@@ -114,7 +114,8 @@ object XIdlMethod {
     __obj.asInstanceOf[XIdlMethod]
   }
   
-  extension [Self <: XIdlMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIdlMethod] (val x: Self) extends AnyVal {
     
     inline def setExceptionTypes(value: SafeArray[XIdlClass[Any]]): Self = StObject.set(x, "ExceptionTypes", value.asInstanceOf[js.Any])
     

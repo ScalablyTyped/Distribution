@@ -181,7 +181,8 @@ object datepickerMod {
       __obj.asInstanceOf[DatepickerOptions]
     }
     
-    extension [Self <: DatepickerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatepickerOptions] (val x: Self) extends AnyVal {
       
       inline def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
       
@@ -347,7 +348,8 @@ object datepickerMod {
       __obj.asInstanceOf[DatepickerOptionsFormat]
     }
     
-    extension [Self <: DatepickerOptionsFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatepickerOptionsFormat] (val x: Self) extends AnyVal {
       
       inline def setToDisplay(value: (js.Date, js.Object, js.Object) => String): Self = StObject.set(x, "toDisplay", js.Any.fromFunction3(value))
       

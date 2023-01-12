@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: /* v */ Buffer => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
@@ -297,7 +298,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setArticleColonauthor(value: String): Self = StObject.set(x, "article:author", value.asInstanceOf[js.Any])
       

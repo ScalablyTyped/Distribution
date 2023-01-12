@@ -28,7 +28,8 @@ object SnapshotSnapshotStats {
     __obj.asInstanceOf[SnapshotSnapshotStats]
   }
   
-  extension [Self <: SnapshotSnapshotStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotSnapshotStats] (val x: Self) extends AnyVal {
     
     inline def setIncremental(value: SnapshotFileCountSnapshotStats): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
     

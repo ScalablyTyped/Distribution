@@ -71,7 +71,8 @@ object mod {
         __obj.asInstanceOf[View]
       }
       
-      extension [Self <: View](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: View] (val x: Self) extends AnyVal {
         
         inline def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
         

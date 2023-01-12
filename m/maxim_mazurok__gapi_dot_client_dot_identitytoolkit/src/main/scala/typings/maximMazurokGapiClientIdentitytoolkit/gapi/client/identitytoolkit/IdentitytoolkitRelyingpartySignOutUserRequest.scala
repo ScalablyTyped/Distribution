@@ -19,7 +19,8 @@ object IdentitytoolkitRelyingpartySignOutUserRequest {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySignOutUserRequest]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartySignOutUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartySignOutUserRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     

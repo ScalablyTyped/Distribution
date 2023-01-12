@@ -44,7 +44,8 @@ object ProcessServerChunkTransferOptions {
     __obj.asInstanceOf[ProcessServerChunkTransferOptions]
   }
   
-  extension [Self <: ProcessServerChunkTransferOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessServerChunkTransferOptions] (val x: Self) extends AnyVal {
     
     inline def setChunkForce(value: Boolean): Self = StObject.set(x, "chunkForce", value.asInstanceOf[js.Any])
     

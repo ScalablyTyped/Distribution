@@ -23,7 +23,8 @@ object BatchDescribeModelPackageError {
     __obj.asInstanceOf[BatchDescribeModelPackageError]
   }
   
-  extension [Self <: BatchDescribeModelPackageError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDescribeModelPackageError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

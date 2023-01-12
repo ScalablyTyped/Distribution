@@ -53,7 +53,8 @@ object DPlayerOptions {
     __obj.asInstanceOf[DPlayerOptions]
   }
   
-  extension [Self <: DPlayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DPlayerOptions] (val x: Self) extends AnyVal {
     
     inline def setApiBackend(value: DPlayerAPIBackend): Self = StObject.set(x, "apiBackend", value.asInstanceOf[js.Any])
     

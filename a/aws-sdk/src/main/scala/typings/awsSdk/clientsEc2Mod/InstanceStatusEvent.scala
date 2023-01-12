@@ -43,7 +43,8 @@ object InstanceStatusEvent {
     __obj.asInstanceOf[InstanceStatusEvent]
   }
   
-  extension [Self <: InstanceStatusEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceStatusEvent] (val x: Self) extends AnyVal {
     
     inline def setCode(value: EventCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

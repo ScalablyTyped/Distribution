@@ -19,7 +19,8 @@ object StandaloneOption {
     __obj.asInstanceOf[StandaloneOption]
   }
   
-  extension [Self <: StandaloneOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandaloneOption] (val x: Self) extends AnyVal {
     
     inline def setMode(value: standalone): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }

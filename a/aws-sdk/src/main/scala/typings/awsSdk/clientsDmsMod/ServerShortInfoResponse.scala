@@ -28,7 +28,8 @@ object ServerShortInfoResponse {
     __obj.asInstanceOf[ServerShortInfoResponse]
   }
   
-  extension [Self <: ServerShortInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerShortInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setIpAddress(value: String): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     

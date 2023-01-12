@@ -21,7 +21,8 @@ object PageParameters {
     __obj.asInstanceOf[PageParameters]
   }
   
-  extension [Self <: PageParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageParameters] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     

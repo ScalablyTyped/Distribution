@@ -34,7 +34,8 @@ object ClusterPutComponentTemplateRequest {
     __obj.asInstanceOf[ClusterPutComponentTemplateRequest]
   }
   
-  extension [Self <: ClusterPutComponentTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterPutComponentTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Record[String, IndicesAliasDefinition]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

@@ -111,7 +111,8 @@ object libLegacyMod {
       __obj.asInstanceOf[TestElementOpts]
     }
     
-    extension [Self <: TestElementOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestElementOpts] (val x: Self) extends AnyVal {
       
       inline def setTag_contains(value: String | (js.Function1[/* data */ js.UndefOr[String], Boolean])): Self = StObject.set(x, "tag_contains", value.asInstanceOf[js.Any])
       

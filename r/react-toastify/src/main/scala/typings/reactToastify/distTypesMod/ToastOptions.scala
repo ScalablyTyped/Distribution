@@ -73,7 +73,8 @@ object ToastOptions {
     __obj.asInstanceOf[ToastOptions[Data]]
   }
   
-  extension [Self <: ToastOptions[?], Data](x: Self & ToastOptions[Data]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastOptions[?], Data] (val x: Self & ToastOptions[Data]) extends AnyVal {
     
     inline def setClassName(value: ToastClassName): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

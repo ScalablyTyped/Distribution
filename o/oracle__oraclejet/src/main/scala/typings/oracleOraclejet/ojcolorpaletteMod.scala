@@ -327,7 +327,8 @@ object ojcolorpaletteMod {
       __obj.asInstanceOf[ojColorPaletteEventMap]
     }
     
-    extension [Self <: ojColorPaletteEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojColorPaletteEventMap] (val x: Self) extends AnyVal {
       
       inline def setLabelDisplayChanged(value: JetElementCustomEvent[auto | off]): Self = StObject.set(x, "labelDisplayChanged", value.asInstanceOf[js.Any])
       
@@ -383,7 +384,8 @@ object ojcolorpaletteMod {
       __obj.asInstanceOf[ojColorPaletteSettableProperties]
     }
     
-    extension [Self <: ojColorPaletteSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojColorPaletteSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setLabelDisplay(value: auto | off): Self = StObject.set(x, "labelDisplay", value.asInstanceOf[js.Any])
       
@@ -447,7 +449,8 @@ object ojcolorpaletteMod {
       __obj.asInstanceOf[ojColorPaletteSettablePropertiesLenient]
     }
     
-    extension [Self <: ojColorPaletteSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojColorPaletteSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       

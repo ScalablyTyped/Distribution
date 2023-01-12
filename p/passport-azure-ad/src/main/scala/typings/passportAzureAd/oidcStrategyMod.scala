@@ -87,7 +87,8 @@ object oidcStrategyMod {
       __obj.asInstanceOf[IOIDCStrategyOption]
     }
     
-    extension [Self <: IOIDCStrategyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOIDCStrategyOption] (val x: Self) extends AnyVal {
       
       inline def setAllowHttpForRedirectUrl(value: Boolean): Self = StObject.set(x, "allowHttpForRedirectUrl", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object oidcStrategyMod {
       __obj.asInstanceOf[IOIDCStrategyOptionWithRequest]
     }
     
-    extension [Self <: IOIDCStrategyOptionWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOIDCStrategyOptionWithRequest] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
@@ -185,7 +187,8 @@ object oidcStrategyMod {
       __obj.asInstanceOf[IOIDCStrategyOptionWithoutRequest]
     }
     
-    extension [Self <: IOIDCStrategyOptionWithoutRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOIDCStrategyOptionWithoutRequest] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: `false`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
@@ -216,7 +219,8 @@ object oidcStrategyMod {
       __obj.asInstanceOf[IProfile]
     }
     
-    extension [Self <: IProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProfile] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

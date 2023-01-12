@@ -40,7 +40,8 @@ object libRadioInterfaceMod {
       __obj.asInstanceOf[RadioChangeEvent]
     }
     
-    extension [Self <: RadioChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setNativeEvent(value: MouseEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object libRadioInterfaceMod {
       __obj.asInstanceOf[RadioChangeEventTarget]
     }
     
-    extension [Self <: RadioChangeEventTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioChangeEventTarget] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     }
@@ -101,7 +103,8 @@ object libRadioInterfaceMod {
       __obj.asInstanceOf[RadioGroupContextProps]
     }
     
-    extension [Self <: RadioGroupContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioGroupContextProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -169,7 +172,8 @@ object libRadioInterfaceMod {
       __obj.asInstanceOf[RadioGroupProps]
     }
     
-    extension [Self <: RadioGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioGroupProps] (val x: Self) extends AnyVal {
       
       inline def setButtonStyle(value: RadioGroupButtonStyle): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
       

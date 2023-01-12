@@ -106,7 +106,8 @@ object typeinPlotTypeArrayPartia {
     __obj.asInstanceOf[typeinPlotTypeArrayPartia]
   }
   
-  extension [Self <: typeinPlotTypeArrayPartia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typeinPlotTypeArrayPartia] (val x: Self) extends AnyVal {
     
     inline def setBar(value: js.Array[PartialPlotData]): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     

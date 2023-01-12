@@ -18,7 +18,8 @@ object User {
     __obj.asInstanceOf[User]
   }
   
-  extension [Self <: User](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     inline def setEdit(value: Country => js.Promise[js.Object]): Self = StObject.set(x, "edit", js.Any.fromFunction1(value))
     

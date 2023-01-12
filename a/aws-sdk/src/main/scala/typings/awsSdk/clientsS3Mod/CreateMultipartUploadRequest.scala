@@ -160,7 +160,8 @@ object CreateMultipartUploadRequest {
     __obj.asInstanceOf[CreateMultipartUploadRequest]
   }
   
-  extension [Self <: CreateMultipartUploadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMultipartUploadRequest] (val x: Self) extends AnyVal {
     
     inline def setACL(value: ObjectCannedACL): Self = StObject.set(x, "ACL", value.asInstanceOf[js.Any])
     

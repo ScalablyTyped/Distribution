@@ -36,7 +36,8 @@ object CorrectViewRequest {
     __obj.asInstanceOf[CorrectViewRequest]
   }
   
-  extension [Self <: CorrectViewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorrectViewRequest] (val x: Self) extends AnyVal {
     
     inline def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object FileSavePickerActivatedEventArgs {
     __obj.asInstanceOf[FileSavePickerActivatedEventArgs]
   }
   
-  extension [Self <: FileSavePickerActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSavePickerActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCallerPackageFamilyName(value: String): Self = StObject.set(x, "callerPackageFamilyName", value.asInstanceOf[js.Any])
     

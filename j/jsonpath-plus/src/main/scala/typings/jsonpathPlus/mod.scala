@@ -417,7 +417,8 @@ object mod {
       __obj.asInstanceOf[JSONPathOptions]
     }
     
-    extension [Self <: JSONPathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONPathOptions] (val x: Self) extends AnyVal {
       
       inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
       
@@ -489,7 +490,8 @@ object mod {
       __obj.asInstanceOf[JSONPathOptionsAutoStart]
     }
     
-    extension [Self <: JSONPathOptionsAutoStart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONPathOptionsAutoStart] (val x: Self) extends AnyVal {
       
       inline def setAutostart(value: `false`): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
     }

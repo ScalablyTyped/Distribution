@@ -67,7 +67,8 @@ object `lib@GeneratedAdmissionControlPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setCode(value: AdmissionControlStatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -154,7 +155,8 @@ object `lib@GeneratedAdmissionControlPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setSignedTxn(value: typings.libraCore.`lib@GeneratedTransactionPbMod`.SignedTransaction.AsObject): Self = StObject.set(x, "signedTxn", value.asInstanceOf[js.Any])
         
@@ -286,7 +288,8 @@ object `lib@GeneratedAdmissionControlPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setAcStatus(value: typings.libraCore.`lib@GeneratedAdmissionControlPbMod`.AdmissionControlStatus.AsObject): Self = StObject.set(x, "acStatus", value.asInstanceOf[js.Any])
         

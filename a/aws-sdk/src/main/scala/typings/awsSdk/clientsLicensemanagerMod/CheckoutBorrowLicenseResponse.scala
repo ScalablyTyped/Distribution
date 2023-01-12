@@ -53,7 +53,8 @@ object CheckoutBorrowLicenseResponse {
     __obj.asInstanceOf[CheckoutBorrowLicenseResponse]
   }
   
-  extension [Self <: CheckoutBorrowLicenseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckoutBorrowLicenseResponse] (val x: Self) extends AnyVal {
     
     inline def setCheckoutMetadata(value: MetadataList): Self = StObject.set(x, "CheckoutMetadata", value.asInstanceOf[js.Any])
     

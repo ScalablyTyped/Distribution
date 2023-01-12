@@ -15,7 +15,8 @@ object PhononPageEventObject {
     __obj.asInstanceOf[PhononPageEventObject]
   }
   
-  extension [Self <: PhononPageEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhononPageEventObject] (val x: Self) extends AnyVal {
     
     inline def setAddEvent(value: (String, js.Function1[/* parameter */ js.UndefOr[Any], Unit]) => Unit): Self = StObject.set(x, "addEvent", js.Any.fromFunction2(value))
   }

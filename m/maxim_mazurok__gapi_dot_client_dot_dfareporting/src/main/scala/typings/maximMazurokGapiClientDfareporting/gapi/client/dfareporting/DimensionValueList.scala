@@ -28,7 +28,8 @@ object DimensionValueList {
     __obj.asInstanceOf[DimensionValueList]
   }
   
-  extension [Self <: DimensionValueList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionValueList] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

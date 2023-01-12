@@ -29,7 +29,8 @@ object TypeofAccountUpdateParams {
     __obj.asInstanceOf[TypeofAccountUpdateParams]
   }
   
-  extension [Self <: TypeofAccountUpdateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAccountUpdateParams] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: Any): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     

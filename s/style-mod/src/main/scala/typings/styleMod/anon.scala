@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Finish]
     }
     
-    extension [Self <: Finish](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Finish] (val x: Self) extends AnyVal {
       
       inline def setFinish(value: /* sel */ String => String): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
       

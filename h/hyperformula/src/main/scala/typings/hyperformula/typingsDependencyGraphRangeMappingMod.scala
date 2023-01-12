@@ -82,7 +82,8 @@ object typingsDependencyGraphRangeMappingMod {
       __obj.asInstanceOf[AdjustRangesResult]
     }
     
-    extension [Self <: AdjustRangesResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdjustRangesResult] (val x: Self) extends AnyVal {
       
       inline def setVerticesWithChangedSize(value: js.Array[RangeVertex]): Self = StObject.set(x, "verticesWithChangedSize", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object typingsDependencyGraphRangeMappingMod {
       __obj.asInstanceOf[TruncateRangesResult]
     }
     
-    extension [Self <: TruncateRangesResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TruncateRangesResult] (val x: Self) extends AnyVal {
       
       inline def setVerticesToMerge(value: js.Array[js.Tuple2[RangeVertex, RangeVertex]]): Self = StObject.set(x, "verticesToMerge", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[ArrowStyle]
     }
     
-    extension [Self <: ArrowStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrowStyle] (val x: Self) extends AnyVal {
       
       inline def setArrowStyle(value: CSSProperties): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
       

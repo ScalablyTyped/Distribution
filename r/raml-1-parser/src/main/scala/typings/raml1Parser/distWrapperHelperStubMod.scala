@@ -24,7 +24,8 @@ object distWrapperHelperStubMod {
       __obj.asInstanceOf[Opt[T]]
     }
     
-    extension [Self <: Opt[?], T](x: Self & Opt[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opt[?], T] (val x: Self & Opt[T]) extends AnyVal {
       
       inline def setGetOrElse(value: T => T): Self = StObject.set(x, "getOrElse", js.Any.fromFunction1(value))
     }
@@ -43,7 +44,8 @@ object distWrapperHelperStubMod {
       __obj.asInstanceOf[SchemaDef]
     }
     
-    extension [Self <: SchemaDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaDef] (val x: Self) extends AnyVal {
       
       inline def setContent(value: () => Any): Self = StObject.set(x, "content", js.Any.fromFunction0(value))
       

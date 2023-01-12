@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setKeys(value: (StringDictionary[Any], String) => js.Promise[StringDictionary[Any]]): Self = StObject.set(x, "keys", js.Any.fromFunction2(value))
     }
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[AbsoluteFilename]
     }
     
-    extension [Self <: AbsoluteFilename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbsoluteFilename] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteFilename(value: String): Self = StObject.set(x, "absoluteFilename", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteFilename(value: String): Self = StObject.set(x, "absoluteFilename", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Filename]
     }
     
-    extension [Self <: Filename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filename] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteFilename(value: String): Self = StObject.set(x, "absoluteFilename", value.asInstanceOf[js.Any])
       
@@ -127,7 +131,8 @@ object anon {
       __obj.asInstanceOf[Keys]
     }
     
-    extension [Self <: Keys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keys] (val x: Self) extends AnyVal {
       
       inline def setKeys(value: StringDictionary[Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     }

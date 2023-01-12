@@ -89,7 +89,8 @@ object libMetadataMod {
         __obj.asInstanceOf[Aggregate]
       }
       
-      extension [Self <: Aggregate](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Aggregate] (val x: Self) extends AnyVal {
         
         inline def setArgumentTypes(value: js.Array[Code]): Self = StObject.set(x, "argumentTypes", value.asInstanceOf[js.Any])
         
@@ -132,7 +133,8 @@ object libMetadataMod {
         __obj.asInstanceOf[ClientState]
       }
       
-      extension [Self <: ClientState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientState] (val x: Self) extends AnyVal {
         
         inline def setGetConnectedHosts(value: () => js.Array[Host]): Self = StObject.set(x, "getConnectedHosts", js.Any.fromFunction0(value))
         
@@ -156,7 +158,8 @@ object libMetadataMod {
         __obj.asInstanceOf[ColumnInfo]
       }
       
-      extension [Self <: ColumnInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ColumnInfo] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -237,7 +240,8 @@ object libMetadataMod {
         __obj.asInstanceOf[DataCollection]
       }
       
-      extension [Self <: DataCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataCollection] (val x: Self) extends AnyVal {
         
         inline def setBloomFilterFalsePositiveChance(value: Double): Self = StObject.set(x, "bloomFilterFalsePositiveChance", value.asInstanceOf[js.Any])
         
@@ -314,7 +318,8 @@ object libMetadataMod {
         __obj.asInstanceOf[DataTypeInfo]
       }
       
-      extension [Self <: DataTypeInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataTypeInfo] (val x: Self) extends AnyVal {
         
         inline def setCode(value: dataTypes): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -357,7 +362,8 @@ object libMetadataMod {
         __obj.asInstanceOf[Index]
       }
       
-      extension [Self <: Index](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
         
         inline def setIsCompositesKind(value: () => Boolean): Self = StObject.set(x, "isCompositesKind", js.Any.fromFunction0(value))
         
@@ -415,7 +421,8 @@ object libMetadataMod {
         __obj.asInstanceOf[MaterializedView]
       }
       
-      extension [Self <: MaterializedView](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MaterializedView] (val x: Self) extends AnyVal {
         
         inline def setIncludeAllColumns(value: Boolean): Self = StObject.set(x, "includeAllColumns", value.asInstanceOf[js.Any])
         
@@ -522,7 +529,8 @@ object libMetadataMod {
         __obj.asInstanceOf[QueryTrace]
       }
       
-      extension [Self <: QueryTrace](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueryTrace] (val x: Self) extends AnyVal {
         
         inline def setClientAddress(value: String): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
         
@@ -579,7 +587,8 @@ object libMetadataMod {
         __obj.asInstanceOf[SchemaFunction]
       }
       
-      extension [Self <: SchemaFunction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SchemaFunction] (val x: Self) extends AnyVal {
         
         inline def setArgumentNames(value: js.Array[String]): Self = StObject.set(x, "argumentNames", value.asInstanceOf[js.Any])
         
@@ -657,7 +666,8 @@ object libMetadataMod {
         __obj.asInstanceOf[TableMetadata]
       }
       
-      extension [Self <: TableMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableMetadata] (val x: Self) extends AnyVal {
         
         inline def setCdc(value: Boolean): Self = StObject.set(x, "cdc", value.asInstanceOf[js.Any])
         
@@ -694,7 +704,8 @@ object libMetadataMod {
         __obj.asInstanceOf[Udt]
       }
       
-      extension [Self <: Udt](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Udt] (val x: Self) extends AnyVal {
         
         inline def setFields(value: js.Array[ColumnInfo]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         

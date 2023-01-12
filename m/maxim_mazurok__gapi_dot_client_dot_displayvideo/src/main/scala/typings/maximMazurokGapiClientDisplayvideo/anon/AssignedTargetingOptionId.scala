@@ -64,7 +64,8 @@ object AssignedTargetingOptionId {
     __obj.asInstanceOf[AssignedTargetingOptionId]
   }
   
-  extension [Self <: AssignedTargetingOptionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignedTargetingOptionId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object AggregationOption {
     __obj.asInstanceOf[AggregationOption]
   }
   
-  extension [Self <: AggregationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationOption] (val x: Self) extends AnyVal {
     
     inline def setBucketDefinition(value: BucketAggregationDefinition): Self = StObject.set(x, "bucketDefinition", value.asInstanceOf[js.Any])
     

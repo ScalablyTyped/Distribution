@@ -17,7 +17,8 @@ object PastLogsOptions {
     __obj.asInstanceOf[PastLogsOptions]
   }
   
-  extension [Self <: PastLogsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PastLogsOptions] (val x: Self) extends AnyVal {
     
     inline def setToBlock(value: BlockNumber): Self = StObject.set(x, "toBlock", value.asInstanceOf[js.Any])
     

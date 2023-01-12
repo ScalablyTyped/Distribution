@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object mod {
       __obj.asInstanceOf[Margins]
     }
     
-    extension [Self <: Margins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Margins] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMargins(value: Margins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
       
@@ -222,7 +225,8 @@ object mod {
       __obj.asInstanceOf[WatchOptions]
     }
     
-    extension [Self <: WatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
       
       inline def setOnEnter(value: /* ratio */ Double => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
       

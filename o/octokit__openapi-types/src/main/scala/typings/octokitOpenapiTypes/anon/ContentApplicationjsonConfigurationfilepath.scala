@@ -15,7 +15,8 @@ object ContentApplicationjsonConfigurationfilepath {
     __obj.asInstanceOf[ContentApplicationjsonConfigurationfilepath]
   }
   
-  extension [Self <: ContentApplicationjsonConfigurationfilepath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonConfigurationfilepath] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonConfigurationfilepath): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

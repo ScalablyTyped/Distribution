@@ -26,7 +26,8 @@ object Cacheid {
     __obj.asInstanceOf[Cacheid]
   }
   
-  extension [Self <: Cacheid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cacheid] (val x: Self) extends AnyVal {
     
     inline def setCache_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['cache-id'] */ js.Any

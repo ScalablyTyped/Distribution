@@ -19,7 +19,8 @@ object EthereumSignTypedDataTypeProperty {
     __obj.asInstanceOf[EthereumSignTypedDataTypeProperty]
   }
   
-  extension [Self <: EthereumSignTypedDataTypeProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumSignTypedDataTypeProperty] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

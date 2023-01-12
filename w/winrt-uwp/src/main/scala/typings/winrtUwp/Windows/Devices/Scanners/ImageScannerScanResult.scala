@@ -19,7 +19,8 @@ object ImageScannerScanResult {
     __obj.asInstanceOf[ImageScannerScanResult]
   }
   
-  extension [Self <: ImageScannerScanResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageScannerScanResult] (val x: Self) extends AnyVal {
     
     inline def setScannedFiles(value: IVectorView[StorageFile]): Self = StObject.set(x, "scannedFiles", value.asInstanceOf[js.Any])
   }

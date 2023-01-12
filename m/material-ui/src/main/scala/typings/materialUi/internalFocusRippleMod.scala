@@ -40,7 +40,8 @@ object internalFocusRippleMod {
       __obj.asInstanceOf[FocusRippleProps]
     }
     
-    extension [Self <: FocusRippleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusRippleProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

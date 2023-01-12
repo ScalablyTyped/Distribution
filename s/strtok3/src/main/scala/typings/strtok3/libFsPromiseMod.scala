@@ -54,7 +54,8 @@ object libFsPromiseMod {
       __obj.asInstanceOf[IReadResult]
     }
     
-    extension [Self <: IReadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReadResult] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

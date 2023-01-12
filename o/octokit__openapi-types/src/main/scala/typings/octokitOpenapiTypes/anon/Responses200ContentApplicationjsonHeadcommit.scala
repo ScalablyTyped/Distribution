@@ -23,7 +23,8 @@ object Responses200ContentApplicationjsonHeadcommit {
     __obj.asInstanceOf[Responses200ContentApplicationjsonHeadcommit]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonHeadcommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonHeadcommit] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `472`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

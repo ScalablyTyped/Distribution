@@ -28,7 +28,8 @@ object DescribeCustomDomainsRequest {
     __obj.asInstanceOf[DescribeCustomDomainsRequest]
   }
   
-  extension [Self <: DescribeCustomDomainsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCustomDomainsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: DescribeCustomDomainsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

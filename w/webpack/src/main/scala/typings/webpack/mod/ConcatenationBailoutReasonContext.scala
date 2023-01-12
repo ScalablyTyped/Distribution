@@ -23,7 +23,8 @@ object ConcatenationBailoutReasonContext {
     __obj.asInstanceOf[ConcatenationBailoutReasonContext]
   }
   
-  extension [Self <: ConcatenationBailoutReasonContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcatenationBailoutReasonContext] (val x: Self) extends AnyVal {
     
     inline def setChunkGraph(value: ChunkGraph): Self = StObject.set(x, "chunkGraph", value.asInstanceOf[js.Any])
     

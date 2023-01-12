@@ -18,7 +18,8 @@ object DomainConfiguration {
     __obj.asInstanceOf[DomainConfiguration]
   }
   
-  extension [Self <: DomainConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainConfiguration] (val x: Self) extends AnyVal {
     
     inline def setWorkflowExecutionRetentionPeriodInDays(value: DurationInDays): Self = StObject.set(x, "workflowExecutionRetentionPeriodInDays", value.asInstanceOf[js.Any])
   }

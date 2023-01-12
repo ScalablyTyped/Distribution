@@ -92,7 +92,8 @@ object PlusFingerprintFingerprintError {
     __obj.asInstanceOf[PlusFingerprintFingerprintError]
   }
   
-  extension [Self <: PlusFingerprintFingerprintError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusFingerprintFingerprintError] (val x: Self) extends AnyVal {
     
     inline def setAUTHENTICATE_MISMATCH(value: Double): Self = StObject.set(x, "AUTHENTICATE_MISMATCH", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object UseFiltersColumnOptions {
     __obj.asInstanceOf[UseFiltersColumnOptions[D]]
   }
   
-  extension [Self <: UseFiltersColumnOptions[?], D /* <: js.Object */](x: Self & UseFiltersColumnOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseFiltersColumnOptions[?], D /* <: js.Object */] (val x: Self & UseFiltersColumnOptions[D]) extends AnyVal {
     
     inline def setDefaultCanFilter(value: Boolean): Self = StObject.set(x, "defaultCanFilter", value.asInstanceOf[js.Any])
     

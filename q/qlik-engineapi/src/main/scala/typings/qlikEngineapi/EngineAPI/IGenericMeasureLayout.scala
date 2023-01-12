@@ -23,7 +23,8 @@ object IGenericMeasureLayout {
     __obj.asInstanceOf[IGenericMeasureLayout]
   }
   
-  extension [Self <: IGenericMeasureLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericMeasureLayout] (val x: Self) extends AnyVal {
     
     inline def setQMeasure(value: INxLibraryMeasureDef): Self = StObject.set(x, "qMeasure", value.asInstanceOf[js.Any])
   }

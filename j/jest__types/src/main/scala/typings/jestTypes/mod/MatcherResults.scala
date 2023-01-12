@@ -21,7 +21,8 @@ object MatcherResults {
     __obj.asInstanceOf[MatcherResults]
   }
   
-  extension [Self <: MatcherResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatcherResults] (val x: Self) extends AnyVal {
     
     inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     

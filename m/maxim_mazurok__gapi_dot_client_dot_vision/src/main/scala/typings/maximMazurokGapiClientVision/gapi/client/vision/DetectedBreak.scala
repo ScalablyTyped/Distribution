@@ -19,7 +19,8 @@ object DetectedBreak {
     __obj.asInstanceOf[DetectedBreak]
   }
   
-  extension [Self <: DetectedBreak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedBreak] (val x: Self) extends AnyVal {
     
     inline def setIsPrefix(value: Boolean): Self = StObject.set(x, "isPrefix", value.asInstanceOf[js.Any])
     

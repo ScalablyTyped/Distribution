@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[VerifyChecksum]
     }
     
-    extension [Self <: VerifyChecksum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyChecksum] (val x: Self) extends AnyVal {
       
       inline def setVerifyChecksum(value: Boolean): Self = StObject.set(x, "verifyChecksum", value.asInstanceOf[js.Any])
     }

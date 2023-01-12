@@ -23,7 +23,8 @@ object DetectSyntaxRequest {
     __obj.asInstanceOf[DetectSyntaxRequest]
   }
   
-  extension [Self <: DetectSyntaxRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectSyntaxRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: SyntaxLanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     

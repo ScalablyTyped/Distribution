@@ -92,7 +92,8 @@ object WebParts {
       __obj.asInstanceOf[TileData]
     }
     
-    extension [Self <: TileData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileData] (val x: Self) extends AnyVal {
       
       inline def setGet_backgroundImageLocation(value: () => String): Self = StObject.set(x, "get_backgroundImageLocation", js.Any.fromFunction0(value))
       

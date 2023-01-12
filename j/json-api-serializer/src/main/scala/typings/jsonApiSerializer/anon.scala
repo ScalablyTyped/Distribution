@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Linkage | js.Array[Linkage]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Links]
     }
     
-    extension [Self <: Links](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Links] (val x: Self) extends AnyVal {
       
       inline def setData(value: Linkage | js.Array[Linkage]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[LinksObjectaboutLinkObjec]
     }
     
-    extension [Self <: LinksObjectaboutLinkObjec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinksObjectaboutLinkObjec] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: LinkObject | String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object anon {
       __obj.asInstanceOf[Meta]
     }
     
-    extension [Self <: Meta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
       
       inline def setData(value: Linkage | js.Array[Linkage]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

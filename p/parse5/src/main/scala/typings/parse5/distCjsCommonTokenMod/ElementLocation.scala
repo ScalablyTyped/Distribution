@@ -31,7 +31,8 @@ object ElementLocation {
     __obj.asInstanceOf[ElementLocation]
   }
   
-  extension [Self <: ElementLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementLocation] (val x: Self) extends AnyVal {
     
     inline def setEndTag(value: Location): Self = StObject.set(x, "endTag", value.asInstanceOf[js.Any])
     

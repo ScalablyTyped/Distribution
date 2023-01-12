@@ -21,7 +21,8 @@ object MatchRenderProps {
     __obj.asInstanceOf[MatchRenderProps[TParams]]
   }
   
-  extension [Self <: MatchRenderProps[?], TParams](x: Self & MatchRenderProps[TParams]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchRenderProps[?], TParams] (val x: Self & MatchRenderProps[TParams]) extends AnyVal {
     
     inline def setLocation(value: WindowLocation[Any]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

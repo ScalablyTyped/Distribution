@@ -19,7 +19,8 @@ object ObjectInsertOp {
     __obj.asInstanceOf[ObjectInsertOp]
   }
   
-  extension [Self <: ObjectInsertOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectInsertOp] (val x: Self) extends AnyVal {
     
     inline def setOi(value: Any): Self = StObject.set(x, "oi", value.asInstanceOf[js.Any])
     

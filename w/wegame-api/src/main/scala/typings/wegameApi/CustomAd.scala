@@ -71,7 +71,8 @@ object CustomAd {
     __obj.asInstanceOf[CustomAd]
   }
   
-  extension [Self <: CustomAd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomAd] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

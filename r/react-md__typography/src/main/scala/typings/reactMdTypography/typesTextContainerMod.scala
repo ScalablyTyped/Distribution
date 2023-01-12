@@ -62,7 +62,8 @@ object typesTextContainerMod {
       __obj.asInstanceOf[TextContainerProps]
     }
     
-    extension [Self <: TextContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | ClassNameCloneableChild[js.Object] | TextContainerRenderFunction): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

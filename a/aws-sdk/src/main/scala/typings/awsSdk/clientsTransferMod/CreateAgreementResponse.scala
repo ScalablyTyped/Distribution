@@ -18,7 +18,8 @@ object CreateAgreementResponse {
     __obj.asInstanceOf[CreateAgreementResponse]
   }
   
-  extension [Self <: CreateAgreementResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAgreementResponse] (val x: Self) extends AnyVal {
     
     inline def setAgreementId(value: AgreementId): Self = StObject.set(x, "AgreementId", value.asInstanceOf[js.Any])
   }

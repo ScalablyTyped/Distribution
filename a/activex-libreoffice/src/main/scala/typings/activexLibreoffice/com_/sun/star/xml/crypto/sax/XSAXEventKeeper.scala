@@ -120,7 +120,8 @@ object XSAXEventKeeper {
     __obj.asInstanceOf[XSAXEventKeeper]
   }
   
-  extension [Self <: XSAXEventKeeper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSAXEventKeeper] (val x: Self) extends AnyVal {
     
     inline def setAddBlocker(value: () => Double): Self = StObject.set(x, "addBlocker", js.Any.fromFunction0(value))
     

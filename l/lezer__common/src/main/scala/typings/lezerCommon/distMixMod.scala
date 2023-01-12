@@ -30,7 +30,8 @@ object distMixMod {
       __obj.asInstanceOf[NestedParse]
     }
     
-    extension [Self <: NestedParse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NestedParse] (val x: Self) extends AnyVal {
       
       inline def setOverlay(value: js.Array[From] | (js.Function1[/* node */ SyntaxNodeRef, From | Boolean])): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       

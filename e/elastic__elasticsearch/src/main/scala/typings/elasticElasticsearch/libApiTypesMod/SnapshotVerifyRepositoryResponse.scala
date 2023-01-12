@@ -16,7 +16,8 @@ object SnapshotVerifyRepositoryResponse {
     __obj.asInstanceOf[SnapshotVerifyRepositoryResponse]
   }
   
-  extension [Self <: SnapshotVerifyRepositoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotVerifyRepositoryResponse] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: Record[String, SnapshotVerifyRepositoryCompactNodeInfo]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
   }

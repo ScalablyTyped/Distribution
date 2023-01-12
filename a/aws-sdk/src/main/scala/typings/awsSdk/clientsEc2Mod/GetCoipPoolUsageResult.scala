@@ -28,7 +28,8 @@ object GetCoipPoolUsageResult {
     __obj.asInstanceOf[GetCoipPoolUsageResult]
   }
   
-  extension [Self <: GetCoipPoolUsageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCoipPoolUsageResult] (val x: Self) extends AnyVal {
     
     inline def setCoipAddressUsages(value: CoipAddressUsageSet): Self = StObject.set(x, "CoipAddressUsages", value.asInstanceOf[js.Any])
     

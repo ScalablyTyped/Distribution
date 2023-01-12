@@ -407,7 +407,8 @@ object distUsbMod {
       __obj.asInstanceOf[DeviceIds]
     }
     
-    extension [Self <: DeviceIds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceIds] (val x: Self) extends AnyVal {
       
       inline def setIdProduct(value: Double): Self = StObject.set(x, "idProduct", value.asInstanceOf[js.Any])
       
@@ -428,7 +429,8 @@ object distUsbMod {
       __obj.asInstanceOf[EventListeners[T]]
     }
     
-    extension [Self <: EventListeners[?], T](x: Self & EventListeners[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventListeners[?], T] (val x: Self & EventListeners[T]) extends AnyVal {
       
       inline def setNewListener(value: /* keyof T */ String): Self = StObject.set(x, "newListener", value.asInstanceOf[js.Any])
       
@@ -467,7 +469,8 @@ object distUsbMod {
         __obj.asInstanceOf[DeviceEvents]
       }
       
-      extension [Self <: DeviceEvents](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeviceEvents] (val x: Self) extends AnyVal {
         
         inline def setAttach(value: typings.usb.distUsbMod.usbDistUsbBindingsAugmentingMod.Device): Self = StObject.set(x, "attach", value.asInstanceOf[js.Any])
         

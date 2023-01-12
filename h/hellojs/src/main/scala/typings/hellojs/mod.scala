@@ -56,7 +56,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HelloJSAuthResponse]
     }
     
-    extension [Self <: HelloJSAuthResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloJSAuthResponse] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HelloJSEvent]
     }
     
-    extension [Self <: HelloJSEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloJSEvent] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: (String, Any) => HelloJSStatic): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
@@ -175,7 +177,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HelloJSEventArgument]
     }
     
-    extension [Self <: HelloJSEventArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloJSEventArgument] (val x: Self) extends AnyVal {
       
       inline def setAuthResponse(value: HelloJSAuthResponse): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HelloJSLoginEventArguement]
     }
     
-    extension [Self <: HelloJSLoginEventArguement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloJSLoginEventArguement] (val x: Self) extends AnyVal {
       
       inline def setAuthResponse(value: HelloJSAuthResponse): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
       
@@ -243,7 +247,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HelloJSLoginOptions]
     }
     
-    extension [Self <: HelloJSLoginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloJSLoginOptions] (val x: Self) extends AnyVal {
       
       inline def setDefault_service(value: String): Self = StObject.set(x, "default_service", value.asInstanceOf[js.Any])
       
@@ -300,7 +305,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HelloJSLogoutOptions]
     }
     
-    extension [Self <: HelloJSLogoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloJSLogoutOptions] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -323,7 +329,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HelloJSOAuth1Def]
     }
     
-    extension [Self <: HelloJSOAuth1Def](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloJSOAuth1Def] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -350,7 +357,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HelloJSOAuth2Def]
     }
     
-    extension [Self <: HelloJSOAuth2Def](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloJSOAuth2Def] (val x: Self) extends AnyVal {
       
       inline def setGrant(value: String): Self = StObject.set(x, "grant", value.asInstanceOf[js.Any])
       
@@ -375,7 +383,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HelloJSOAuthDef]
     }
     
-    extension [Self <: HelloJSOAuthDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloJSOAuthDef] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -402,7 +411,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HelloJSPopupOptions]
     }
     
-    extension [Self <: HelloJSPopupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloJSPopupOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -465,7 +475,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HelloJSServiceDef]
     }
     
-    extension [Self <: HelloJSServiceDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelloJSServiceDef] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

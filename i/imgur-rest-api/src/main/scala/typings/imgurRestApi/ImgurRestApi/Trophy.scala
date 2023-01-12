@@ -38,7 +38,8 @@ object Trophy {
     __obj.asInstanceOf[Trophy]
   }
   
-  extension [Self <: Trophy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trophy] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object CommandBar {
     __obj.asInstanceOf[CommandBar]
   }
   
-  extension [Self <: CommandBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandBar] (val x: Self) extends AnyVal {
     
     inline def setAddCommand(value: Command => Unit): Self = StObject.set(x, "addCommand", js.Any.fromFunction1(value))
     

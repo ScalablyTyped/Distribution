@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyFormDataEncoderHe]
     }
     
-    extension [Self <: ReadonlyFormDataEncoderHe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyFormDataEncoderHe] (val x: Self) extends AnyVal {
       
       inline def `setContent-Length`(value: String): Self = StObject.set(x, "Content-Length", value.asInstanceOf[js.Any])
       

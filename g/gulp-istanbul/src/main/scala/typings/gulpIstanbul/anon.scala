@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[CoverageVariable]
     }
     
-    extension [Self <: CoverageVariable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoverageVariable] (val x: Self) extends AnyVal {
       
       inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Dir]
     }
     
-    extension [Self <: Dir](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dir] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Each]
     }
     
-    extension [Self <: Each](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Each] (val x: Self) extends AnyVal {
       
       inline def setEach(value: CoverageOptions | Double): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
       

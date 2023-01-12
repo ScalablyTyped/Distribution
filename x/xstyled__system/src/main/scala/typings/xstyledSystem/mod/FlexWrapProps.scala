@@ -16,7 +16,8 @@ object FlexWrapProps {
     __obj.asInstanceOf[FlexWrapProps]
   }
   
-  extension [Self <: FlexWrapProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexWrapProps] (val x: Self) extends AnyVal {
     
     inline def setFlexWrap(value: ResponsiveValue[FlexWrap]): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
     

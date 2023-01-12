@@ -28,7 +28,8 @@ object RangeFilterExportOptions {
     __obj.asInstanceOf[RangeFilterExportOptions]
   }
   
-  extension [Self <: RangeFilterExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeFilterExportOptions] (val x: Self) extends AnyVal {
     
     inline def setAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "AutomaticPageLayout", value.asInstanceOf[js.Any])
     

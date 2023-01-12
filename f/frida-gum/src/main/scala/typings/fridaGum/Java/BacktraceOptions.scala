@@ -21,7 +21,8 @@ object BacktraceOptions {
     __obj.asInstanceOf[BacktraceOptions]
   }
   
-  extension [Self <: BacktraceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BacktraceOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

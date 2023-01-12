@@ -31,7 +31,8 @@ object distLibLuaScriptMod {
       __obj.asInstanceOf[RedisScriptConfig]
     }
     
-    extension [Self <: RedisScriptConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisScriptConfig] (val x: Self) extends AnyVal {
       
       inline def setNUMBER_OF_KEYS(value: Double): Self = StObject.set(x, "NUMBER_OF_KEYS", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object distLibLuaScriptMod {
       __obj.asInstanceOf[SHA1]
     }
     
-    extension [Self <: SHA1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SHA1] (val x: Self) extends AnyVal {
       
       inline def setSHA1(value: String): Self = StObject.set(x, "SHA1", value.asInstanceOf[js.Any])
     }

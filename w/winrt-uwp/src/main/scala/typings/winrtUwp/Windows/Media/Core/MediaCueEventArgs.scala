@@ -17,7 +17,8 @@ object MediaCueEventArgs {
     __obj.asInstanceOf[MediaCueEventArgs]
   }
   
-  extension [Self <: MediaCueEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaCueEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCue(value: IMediaCue): Self = StObject.set(x, "cue", value.asInstanceOf[js.Any])
   }

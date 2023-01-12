@@ -15,7 +15,8 @@ object FleetMsearchResponse {
     __obj.asInstanceOf[FleetMsearchResponse[TDocument]]
   }
   
-  extension [Self <: FleetMsearchResponse[?], TDocument](x: Self & FleetMsearchResponse[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetMsearchResponse[?], TDocument] (val x: Self & FleetMsearchResponse[TDocument]) extends AnyVal {
     
     inline def setDocs(value: js.Array[MsearchResponseItem[TDocument]]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     

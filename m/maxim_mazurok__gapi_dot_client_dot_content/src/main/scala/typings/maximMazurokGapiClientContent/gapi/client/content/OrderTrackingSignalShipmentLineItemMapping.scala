@@ -22,7 +22,8 @@ object OrderTrackingSignalShipmentLineItemMapping {
     __obj.asInstanceOf[OrderTrackingSignalShipmentLineItemMapping]
   }
   
-  extension [Self <: OrderTrackingSignalShipmentLineItemMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderTrackingSignalShipmentLineItemMapping] (val x: Self) extends AnyVal {
     
     inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     

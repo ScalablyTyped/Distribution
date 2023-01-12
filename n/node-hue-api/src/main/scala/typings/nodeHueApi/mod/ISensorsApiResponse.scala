@@ -15,7 +15,8 @@ object ISensorsApiResponse {
     __obj.asInstanceOf[ISensorsApiResponse]
   }
   
-  extension [Self <: ISensorsApiResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISensorsApiResponse] (val x: Self) extends AnyVal {
     
     inline def setSensors(value: js.Array[ISensor]): Self = StObject.set(x, "sensors", value.asInstanceOf[js.Any])
     

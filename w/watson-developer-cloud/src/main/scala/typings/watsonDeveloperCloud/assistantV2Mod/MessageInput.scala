@@ -32,7 +32,8 @@ object MessageInput {
     __obj.asInstanceOf[MessageInput]
   }
   
-  extension [Self <: MessageInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageInput] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[RuntimeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

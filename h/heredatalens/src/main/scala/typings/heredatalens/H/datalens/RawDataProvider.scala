@@ -69,7 +69,8 @@ object RawDataProvider {
       __obj.asInstanceOf[Helpers]
     }
     
-    extension [Self <: Helpers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Helpers] (val x: Self) extends AnyVal {
       
       inline def setLatLngToPixel(
         value: (/* latitude */ Latitude, /* longitude */ Longitude, /* z */ Zoom, /* tileSize */ TileSize) => PixelCoordinates
@@ -127,7 +128,8 @@ object RawDataProvider {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDataToFeatures(value: /* obj */ Any => js.Array[Feature]): Self = StObject.set(x, "dataToFeatures", js.Any.fromFunction1(value))
       

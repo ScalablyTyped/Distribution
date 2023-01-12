@@ -33,7 +33,8 @@ object distAppCompatMod extends Shortcut {
       __obj.asInstanceOf[FirebaseAppConfig]
     }
     
-    extension [Self <: FirebaseAppConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseAppConfig] (val x: Self) extends AnyVal {
       
       inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object distAppCompatMod extends Shortcut {
       __obj.asInstanceOf[FirebaseOptions]
     }
     
-    extension [Self <: FirebaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object distAppCompatMod extends Shortcut {
       __obj.asInstanceOf[FirebaseService]
     }
     
-    extension [Self <: FirebaseService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseService] (val x: Self) extends AnyVal {
       
       inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object distAppCompatMod extends Shortcut {
       __obj.asInstanceOf[FirebaseServiceInternals]
     }
     
-    extension [Self <: FirebaseServiceInternals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseServiceInternals] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     }
@@ -243,7 +247,8 @@ object distAppCompatMod extends Shortcut {
       __obj.asInstanceOf[_FirebaseApp]
     }
     
-    extension [Self <: _FirebaseApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _FirebaseApp] (val x: Self) extends AnyVal {
       
       inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       

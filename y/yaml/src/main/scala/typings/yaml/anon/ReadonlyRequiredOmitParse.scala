@@ -31,7 +31,8 @@ object ReadonlyRequiredOmitParse {
     __obj.asInstanceOf[ReadonlyRequiredOmitParse]
   }
   
-  extension [Self <: ReadonlyRequiredOmitParse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRequiredOmitParse] (val x: Self) extends AnyVal {
     
     inline def setIntAsBigInt(value: Boolean): Self = StObject.set(x, "intAsBigInt", value.asInstanceOf[js.Any])
     

@@ -77,7 +77,8 @@ object BaseMenuHookOptions {
     __obj.asInstanceOf[BaseMenuHookOptions]
   }
   
-  extension [Self <: BaseMenuHookOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMenuHookOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
     

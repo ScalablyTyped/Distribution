@@ -51,7 +51,8 @@ object IpadicFeatures {
     __obj.asInstanceOf[IpadicFeatures]
   }
   
-  extension [Self <: IpadicFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpadicFeatures] (val x: Self) extends AnyVal {
     
     inline def setBasic_form(value: String): Self = StObject.set(x, "basic_form", value.asInstanceOf[js.Any])
     

@@ -107,7 +107,8 @@ object mod {
         __obj.asInstanceOf[HasContentObject]
       }
       
-      extension [Self <: HasContentObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HasContentObject] (val x: Self) extends AnyVal {
         
         inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
@@ -158,7 +159,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
         
@@ -281,7 +283,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
         
@@ -429,7 +432,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
         
@@ -499,7 +503,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
         
@@ -540,7 +545,8 @@ object mod {
       __obj.asInstanceOf[CacheObject]
     }
     
-    extension [Self <: CacheObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheObject] (val x: Self) extends AnyVal {
       
       inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
@@ -573,7 +579,8 @@ object mod {
       __obj.asInstanceOf[GetCacheObject]
     }
     
-    extension [Self <: GetCacheObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCacheObject] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

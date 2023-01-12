@@ -23,7 +23,8 @@ object Value {
     __obj.asInstanceOf[Value]
   }
   
-  extension [Self <: Value](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
     
     inline def setFromJS(value: js.Function2[/* unit */ YogaUnit | Double, /* value */ Double, Any] => Unit): Self = StObject.set(x, "fromJS", js.Any.fromFunction1(value))
     

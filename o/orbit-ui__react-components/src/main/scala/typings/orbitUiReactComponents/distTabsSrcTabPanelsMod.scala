@@ -33,7 +33,8 @@ object distTabsSrcTabPanelsMod {
       __obj.asInstanceOf[TabPanelsProps]
     }
     
-    extension [Self <: TabPanelsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPanelsProps] (val x: Self) extends AnyVal {
       
       inline def setPanels(value: js.Array[PanelType]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
       

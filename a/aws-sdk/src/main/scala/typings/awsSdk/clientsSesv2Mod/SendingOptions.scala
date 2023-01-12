@@ -18,7 +18,8 @@ object SendingOptions {
     __obj.asInstanceOf[SendingOptions]
   }
   
-  extension [Self <: SendingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendingOptions] (val x: Self) extends AnyVal {
     
     inline def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
     

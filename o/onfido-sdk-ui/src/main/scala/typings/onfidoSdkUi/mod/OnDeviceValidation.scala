@@ -19,7 +19,8 @@ object OnDeviceValidation {
     __obj.asInstanceOf[OnDeviceValidation]
   }
   
-  extension [Self <: OnDeviceValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDeviceValidation] (val x: Self) extends AnyVal {
     
     inline def setApplies_to(value: js.Array[ApplyFilter]): Self = StObject.set(x, "applies_to", value.asInstanceOf[js.Any])
     

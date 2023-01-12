@@ -143,7 +143,8 @@ object Scheduler {
       __obj.asInstanceOf[IJob]
     }
     
-    extension [Self <: IJob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJob] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -200,7 +201,8 @@ object Scheduler {
       __obj.asInstanceOf[IJobInfo]
     }
     
-    extension [Self <: IJobInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJobInfo] (val x: Self) extends AnyVal {
       
       inline def setJob(value: IJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
       
@@ -230,7 +232,8 @@ object Scheduler {
       __obj.asInstanceOf[IOwnerToken]
     }
     
-    extension [Self <: IOwnerToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOwnerToken] (val x: Self) extends AnyVal {
       
       inline def setCancelAll(value: () => Unit): Self = StObject.set(x, "cancelAll", js.Any.fromFunction0(value))
     }

@@ -27,7 +27,8 @@ object GetDocumentStatusParams {
     __obj.asInstanceOf[GetDocumentStatusParams]
   }
   
-  extension [Self <: GetDocumentStatusParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDocumentStatusParams] (val x: Self) extends AnyVal {
     
     inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     

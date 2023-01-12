@@ -44,7 +44,8 @@ object triggerDynamodbStreamMod {
       __obj.asInstanceOf[AttributeValue]
     }
     
-    extension [Self <: AttributeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
       
       inline def setB(value: String): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object triggerDynamodbStreamMod {
       __obj.asInstanceOf[DynamoDBBatchItemFailure]
     }
     
-    extension [Self <: DynamoDBBatchItemFailure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamoDBBatchItemFailure] (val x: Self) extends AnyVal {
       
       inline def setItemIdentifier(value: String): Self = StObject.set(x, "itemIdentifier", value.asInstanceOf[js.Any])
     }
@@ -124,7 +126,8 @@ object triggerDynamodbStreamMod {
       __obj.asInstanceOf[DynamoDBBatchResponse]
     }
     
-    extension [Self <: DynamoDBBatchResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamoDBBatchResponse] (val x: Self) extends AnyVal {
       
       inline def setBatchItemFailures(value: js.Array[DynamoDBBatchItemFailure]): Self = StObject.set(x, "batchItemFailures", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object triggerDynamodbStreamMod {
       __obj.asInstanceOf[DynamoDBRecord]
     }
     
-    extension [Self <: DynamoDBRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamoDBRecord] (val x: Self) extends AnyVal {
       
       inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
@@ -204,7 +208,8 @@ object triggerDynamodbStreamMod {
       __obj.asInstanceOf[DynamoDBStreamEvent]
     }
     
-    extension [Self <: DynamoDBStreamEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamoDBStreamEvent] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[DynamoDBRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
@@ -237,7 +242,8 @@ object triggerDynamodbStreamMod {
       __obj.asInstanceOf[StreamRecord]
     }
     
-    extension [Self <: StreamRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamRecord] (val x: Self) extends AnyVal {
       
       inline def setApproximateCreationDateTime(value: Double): Self = StObject.set(x, "ApproximateCreationDateTime", value.asInstanceOf[js.Any])
       

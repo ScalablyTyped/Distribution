@@ -16,7 +16,8 @@ object KeyValueTargetingExpression {
     __obj.asInstanceOf[KeyValueTargetingExpression]
   }
   
-  extension [Self <: KeyValueTargetingExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyValueTargetingExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

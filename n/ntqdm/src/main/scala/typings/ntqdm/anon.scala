@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[PartialTqdmOptions]
     }
     
-    extension [Self <: PartialTqdmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTqdmOptions] (val x: Self) extends AnyVal {
       
       inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       

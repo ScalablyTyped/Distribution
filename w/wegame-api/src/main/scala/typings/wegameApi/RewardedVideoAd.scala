@@ -52,7 +52,8 @@ object RewardedVideoAd {
     __obj.asInstanceOf[RewardedVideoAd]
   }
   
-  extension [Self <: RewardedVideoAd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RewardedVideoAd] (val x: Self) extends AnyVal {
     
     inline def setLoad(value: () => js.Promise[Unit]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
     

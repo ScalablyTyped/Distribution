@@ -39,7 +39,8 @@ object distProvidersGeoApiFrProviderMod {
       __obj.asInstanceOf[GeoApiFrProviderOptions]
     }
     
-    extension [Self <: GeoApiFrProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoApiFrProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setReverseUrl(value: String): Self = StObject.set(x, "reverseUrl", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object distProvidersGeoApiFrProviderMod {
       __obj.asInstanceOf[RawResult]
     }
     
-    extension [Self <: RawResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawResult] (val x: Self) extends AnyVal {
       
       inline def setGeometry(value: Type): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object distProvidersGeoApiFrProviderMod {
       __obj.asInstanceOf[RequestResult]
     }
     
-    extension [Self <: RequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestResult] (val x: Self) extends AnyVal {
       
       inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
       

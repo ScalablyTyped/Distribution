@@ -18,7 +18,8 @@ object WorkflowAttributes {
     __obj.asInstanceOf[WorkflowAttributes]
   }
   
-  extension [Self <: WorkflowAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowAttributes] (val x: Self) extends AnyVal {
     
     inline def setAppflowIntegration(value: AppflowIntegrationWorkflowAttributes): Self = StObject.set(x, "AppflowIntegration", value.asInstanceOf[js.Any])
     

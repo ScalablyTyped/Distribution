@@ -63,7 +63,8 @@ object Compatibility {
     __obj.asInstanceOf[Compatibility]
   }
   
-  extension [Self <: Compatibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compatibility] (val x: Self) extends AnyVal {
     
     inline def setBind(value: (js.Function1[/* repeated */ Any, Any], Any, /* repeated */ Any) => Any): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
     

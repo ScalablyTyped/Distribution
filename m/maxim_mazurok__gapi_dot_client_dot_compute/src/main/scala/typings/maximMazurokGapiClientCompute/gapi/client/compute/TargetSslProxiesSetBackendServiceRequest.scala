@@ -16,7 +16,8 @@ object TargetSslProxiesSetBackendServiceRequest {
     __obj.asInstanceOf[TargetSslProxiesSetBackendServiceRequest]
   }
   
-  extension [Self <: TargetSslProxiesSetBackendServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetSslProxiesSetBackendServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

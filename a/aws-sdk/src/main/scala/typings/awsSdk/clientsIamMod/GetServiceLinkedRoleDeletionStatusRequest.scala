@@ -18,7 +18,8 @@ object GetServiceLinkedRoleDeletionStatusRequest {
     __obj.asInstanceOf[GetServiceLinkedRoleDeletionStatusRequest]
   }
   
-  extension [Self <: GetServiceLinkedRoleDeletionStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceLinkedRoleDeletionStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setDeletionTaskId(value: DeletionTaskIdType): Self = StObject.set(x, "DeletionTaskId", value.asInstanceOf[js.Any])
   }

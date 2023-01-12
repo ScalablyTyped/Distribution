@@ -20,7 +20,8 @@ object DeviceTokenCredentialsOptions {
     __obj.asInstanceOf[DeviceTokenCredentialsOptions]
   }
   
-  extension [Self <: DeviceTokenCredentialsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceTokenCredentialsOptions] (val x: Self) extends AnyVal {
     
     inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     

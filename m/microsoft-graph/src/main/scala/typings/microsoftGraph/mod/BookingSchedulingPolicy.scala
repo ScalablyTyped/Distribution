@@ -31,7 +31,8 @@ object BookingSchedulingPolicy {
     __obj.asInstanceOf[BookingSchedulingPolicy]
   }
   
-  extension [Self <: BookingSchedulingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookingSchedulingPolicy] (val x: Self) extends AnyVal {
     
     inline def setAllowStaffSelection(value: Boolean): Self = StObject.set(x, "allowStaffSelection", value.asInstanceOf[js.Any])
     

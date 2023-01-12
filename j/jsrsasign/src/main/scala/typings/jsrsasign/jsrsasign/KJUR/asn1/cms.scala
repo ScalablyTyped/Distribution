@@ -123,7 +123,8 @@ object cms {
       __obj.asInstanceOf[AttributeList]
     }
     
-    extension [Self <: AttributeList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeList] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Attribute => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -173,7 +174,8 @@ object cms {
       __obj.asInstanceOf[ContentInfo]
     }
     
-    extension [Self <: ContentInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentInfo] (val x: Self) extends AnyVal {
       
       inline def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
     }
@@ -272,7 +274,8 @@ object cms {
       __obj.asInstanceOf[IssuerAndSerialNumber]
     }
     
-    extension [Self <: IssuerAndSerialNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssuerAndSerialNumber] (val x: Self) extends AnyVal {
       
       inline def setSetByCertPEM(value: String => Unit): Self = StObject.set(x, "setByCertPEM", js.Any.fromFunction1(value))
     }
@@ -360,7 +363,8 @@ object cms {
       __obj.asInstanceOf[SignedData]
     }
     
-    extension [Self <: SignedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignedData] (val x: Self) extends AnyVal {
       
       inline def setAddCertificatesByPEM(value: String => Unit): Self = StObject.set(x, "addCertificatesByPEM", js.Any.fromFunction1(value))
       
@@ -487,7 +491,8 @@ object cms {
       __obj.asInstanceOf[SigningCertificate]
     }
     
-    extension [Self <: SigningCertificate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SigningCertificate] (val x: Self) extends AnyVal {
       
       inline def setSetCerts(value: js.Array[String] => Unit): Self = StObject.set(x, "setCerts", js.Any.fromFunction1(value))
     }
@@ -546,7 +551,8 @@ object cms {
       __obj.asInstanceOf[SigningCertificateV2]
     }
     
-    extension [Self <: SigningCertificateV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SigningCertificateV2] (val x: Self) extends AnyVal {
       
       inline def setSetCerts(value: (js.Array[String], String) => Unit): Self = StObject.set(x, "setCerts", js.Any.fromFunction2(value))
     }

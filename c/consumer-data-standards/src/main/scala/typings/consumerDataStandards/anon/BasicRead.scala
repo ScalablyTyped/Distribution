@@ -78,7 +78,8 @@ object BasicRead {
     __obj.asInstanceOf[BasicRead]
   }
   
-  extension [Self <: BasicRead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicRead] (val x: Self) extends AnyVal {
     
     inline def setBasicRead(value: Quality): Self = StObject.set(x, "basicRead", value.asInstanceOf[js.Any])
     

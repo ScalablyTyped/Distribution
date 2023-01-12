@@ -23,7 +23,8 @@ object DBCoreDeleteRangeRequest {
     __obj.asInstanceOf[DBCoreDeleteRangeRequest]
   }
   
-  extension [Self <: DBCoreDeleteRangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreDeleteRangeRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: DBCoreKeyRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

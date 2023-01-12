@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[AutoSizerProps]
     }
     
-    extension [Self <: AutoSizerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoSizerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Size => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -108,7 +109,8 @@ object mod {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

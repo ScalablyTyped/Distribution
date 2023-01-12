@@ -109,7 +109,8 @@ object distConfigConfigurationMod {
       __obj.asInstanceOf[BrowserAuthOptions]
     }
     
-    extension [Self <: BrowserAuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserAuthOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object distConfigConfigurationMod {
       __obj.asInstanceOf[BrowserConfiguration]
     }
     
-    extension [Self <: BrowserConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: RequiredBrowserAuthOption): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -270,7 +272,8 @@ object distConfigConfigurationMod {
       __obj.asInstanceOf[BrowserSystemOptions]
     }
     
-    extension [Self <: BrowserSystemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserSystemOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowNativeBroker(value: Boolean): Self = StObject.set(x, "allowNativeBroker", value.asInstanceOf[js.Any])
       
@@ -338,7 +341,8 @@ object distConfigConfigurationMod {
       __obj.asInstanceOf[BrowserTelemetryOptions]
     }
     
-    extension [Self <: BrowserTelemetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserTelemetryOptions] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: ApplicationTelemetry): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
@@ -370,7 +374,8 @@ object distConfigConfigurationMod {
       __obj.asInstanceOf[CacheOptions]
     }
     
-    extension [Self <: CacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheLocation(value: BrowserCacheLocation | String): Self = StObject.set(x, "cacheLocation", value.asInstanceOf[js.Any])
       
@@ -415,7 +420,8 @@ object distConfigConfigurationMod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: BrowserAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object PrintedElement {
     __obj.asInstanceOf[PrintedElement]
   }
   
-  extension [Self <: PrintedElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintedElement] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

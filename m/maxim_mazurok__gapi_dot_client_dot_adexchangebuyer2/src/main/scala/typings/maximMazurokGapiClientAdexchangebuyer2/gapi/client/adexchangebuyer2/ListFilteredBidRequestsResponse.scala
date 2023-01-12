@@ -22,7 +22,8 @@ object ListFilteredBidRequestsResponse {
     __obj.asInstanceOf[ListFilteredBidRequestsResponse]
   }
   
-  extension [Self <: ListFilteredBidRequestsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFilteredBidRequestsResponse] (val x: Self) extends AnyVal {
     
     inline def setCalloutStatusRows(value: js.Array[CalloutStatusRow]): Self = StObject.set(x, "calloutStatusRows", value.asInstanceOf[js.Any])
     

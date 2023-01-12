@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setDEBUG(value: Boolean): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[ProcessedConfig]
     }
     
-    extension [Self <: ProcessedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessedConfig] (val x: Self) extends AnyVal {
       
       inline def setOriginalPath(value: String): Self = StObject.set(x, "originalPath", value.asInstanceOf[js.Any])
       

@@ -44,7 +44,8 @@ object matchMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFindAllOccurrences(value: Boolean): Self = StObject.set(x, "findAllOccurrences", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object DeidentifyDatasetRequest {
     __obj.asInstanceOf[DeidentifyDatasetRequest]
   }
   
-  extension [Self <: DeidentifyDatasetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeidentifyDatasetRequest] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: DeidentifyConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

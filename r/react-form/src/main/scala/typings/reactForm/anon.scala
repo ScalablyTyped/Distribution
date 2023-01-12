@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[IsTouched]
     }
     
-    extension [Self <: IsTouched](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsTouched] (val x: Self) extends AnyVal {
       
       inline def setIsTouched(value: Boolean): Self = StObject.set(x, "isTouched", value.asInstanceOf[js.Any])
     }
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[TypeofComponent]
     }
     
-    extension [Self <: TypeofComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofComponent] (val x: Self) extends AnyVal {
       
       inline def setContextType(value: Context[Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object TelecomExpenseManagementPartner {
     __obj.asInstanceOf[TelecomExpenseManagementPartner]
   }
   
-  extension [Self <: TelecomExpenseManagementPartner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TelecomExpenseManagementPartner] (val x: Self) extends AnyVal {
     
     inline def setAppAuthorized(value: Boolean): Self = StObject.set(x, "appAuthorized", value.asInstanceOf[js.Any])
     

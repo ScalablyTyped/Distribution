@@ -19,7 +19,8 @@ object OnProgressData {
     __obj.asInstanceOf[OnProgressData]
   }
   
-  extension [Self <: OnProgressData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnProgressData] (val x: Self) extends AnyVal {
     
     inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     

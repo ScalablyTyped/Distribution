@@ -22,7 +22,8 @@ object ReservedNodeConfigurationOption {
     __obj.asInstanceOf[ReservedNodeConfigurationOption]
   }
   
-  extension [Self <: ReservedNodeConfigurationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservedNodeConfigurationOption] (val x: Self) extends AnyVal {
     
     inline def setSourceReservedNode(value: ReservedNode): Self = StObject.set(x, "SourceReservedNode", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object AccessibleEventObject {
     __obj.asInstanceOf[AccessibleEventObject]
   }
   
-  extension [Self <: AccessibleEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibleEventObject] (val x: Self) extends AnyVal {
     
     inline def setEventId(value: Double): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     

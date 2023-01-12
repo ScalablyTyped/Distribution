@@ -61,7 +61,8 @@ object triggerCdkCustomResourceMod {
       __obj.asInstanceOf[CdkCustomResourceIsCompleteResponseSuccess]
     }
     
-    extension [Self <: CdkCustomResourceIsCompleteResponseSuccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CdkCustomResourceIsCompleteResponseSuccess] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object triggerCdkCustomResourceMod {
       __obj.asInstanceOf[CdkCustomResourceIsCompleteResponseWaiting]
     }
     
-    extension [Self <: CdkCustomResourceIsCompleteResponseWaiting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CdkCustomResourceIsCompleteResponseWaiting] (val x: Self) extends AnyVal {
       
       inline def setIsComplete(value: `false`): Self = StObject.set(x, "IsComplete", value.asInstanceOf[js.Any])
     }
@@ -105,7 +107,8 @@ object triggerCdkCustomResourceMod {
       __obj.asInstanceOf[CdkCustomResourceResponse]
     }
     
-    extension [Self <: CdkCustomResourceResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CdkCustomResourceResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       

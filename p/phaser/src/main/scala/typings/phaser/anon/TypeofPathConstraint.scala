@@ -25,7 +25,8 @@ object TypeofPathConstraint {
     __obj.asInstanceOf[TypeofPathConstraint]
   }
   
-  extension [Self <: TypeofPathConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPathConstraint] (val x: Self) extends AnyVal {
     
     inline def setAFTER(value: Double): Self = StObject.set(x, "AFTER", value.asInstanceOf[js.Any])
     

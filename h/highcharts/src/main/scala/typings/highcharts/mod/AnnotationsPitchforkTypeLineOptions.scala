@@ -15,7 +15,8 @@ object AnnotationsPitchforkTypeLineOptions {
     __obj.asInstanceOf[AnnotationsPitchforkTypeLineOptions]
   }
   
-  extension [Self <: AnnotationsPitchforkTypeLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsPitchforkTypeLineOptions] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

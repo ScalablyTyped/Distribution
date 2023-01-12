@@ -38,7 +38,8 @@ object ListConfigurationsRequest {
     __obj.asInstanceOf[ListConfigurationsRequest]
   }
   
-  extension [Self <: ListConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationType(value: ConfigurationItemType): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
     

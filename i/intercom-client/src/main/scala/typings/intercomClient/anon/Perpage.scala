@@ -19,7 +19,8 @@ object Perpage {
     __obj.asInstanceOf[Perpage]
   }
   
-  extension [Self <: Perpage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Perpage] (val x: Self) extends AnyVal {
     
     inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     

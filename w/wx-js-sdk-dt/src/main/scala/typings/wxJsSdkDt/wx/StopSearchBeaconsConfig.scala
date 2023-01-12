@@ -18,7 +18,8 @@ object StopSearchBeaconsConfig {
     __obj.asInstanceOf[StopSearchBeaconsConfig]
   }
   
-  extension [Self <: StopSearchBeaconsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopSearchBeaconsConfig] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
   }

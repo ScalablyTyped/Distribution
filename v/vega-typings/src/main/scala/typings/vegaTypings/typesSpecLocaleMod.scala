@@ -23,7 +23,8 @@ object typesSpecLocaleMod {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setNumber(value: NumberLocale): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object typesSpecLocaleMod {
       __obj.asInstanceOf[NumberLocale]
     }
     
-    extension [Self <: NumberLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberLocale] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: Vector2[String]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object typesSpecLocaleMod {
       __obj.asInstanceOf[TimeLocale]
     }
     
-    extension [Self <: TimeLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeLocale] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

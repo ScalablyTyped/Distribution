@@ -22,7 +22,8 @@ object DoCheck {
     __obj.asInstanceOf[DoCheck]
   }
   
-  extension [Self <: DoCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoCheck] (val x: Self) extends AnyVal {
     
     inline def setNgDoCheck(value: () => Unit): Self = StObject.set(x, "ngDoCheck", js.Any.fromFunction0(value))
   }

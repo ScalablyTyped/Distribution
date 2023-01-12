@@ -23,7 +23,8 @@ object ParametricConfigurationOverrides {
     __obj.asInstanceOf[ParametricConfigurationOverrides]
   }
   
-  extension [Self <: ParametricConfigurationOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametricConfigurationOverrides] (val x: Self) extends AnyVal {
     
     inline def setApplicationConfiguration(value: ConfigurationList): Self = StObject.set(x, "applicationConfiguration", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SearchSynonymsResponse {
     __obj.asInstanceOf[SearchSynonymsResponse]
   }
   
-  extension [Self <: SearchSynonymsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSynonymsResponse] (val x: Self) extends AnyVal {
     
     inline def setHits(value: js.Array[Synonym]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     

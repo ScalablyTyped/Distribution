@@ -140,7 +140,8 @@ object libOptionsMod {
       __obj.asInstanceOf[IDeclarationOptions]
     }
     
-    extension [Self <: IDeclarationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDeclarationOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object libOptionsMod {
       __obj.asInstanceOf[IDtdOptions]
     }
     
-    extension [Self <: IDtdOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDtdOptions] (val x: Self) extends AnyVal {
       
       inline def setInclude(value: Boolean): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
@@ -247,7 +249,8 @@ object libOptionsMod {
       __obj.asInstanceOf[IFormatOptions]
     }
     
-    extension [Self <: IFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setDoubleQuotes(value: Boolean): Self = StObject.set(x, "doubleQuotes", value.asInstanceOf[js.Any])
       
@@ -568,7 +571,8 @@ object libOptionsMod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setAliasString(value: String): Self = StObject.set(x, "aliasString", value.asInstanceOf[js.Any])
       

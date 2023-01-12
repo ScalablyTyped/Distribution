@@ -18,7 +18,8 @@ object UpdateNFSFileShareOutput {
     __obj.asInstanceOf[UpdateNFSFileShareOutput]
   }
   
-  extension [Self <: UpdateNFSFileShareOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateNFSFileShareOutput] (val x: Self) extends AnyVal {
     
     inline def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     

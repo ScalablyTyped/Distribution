@@ -73,7 +73,8 @@ object enginesWebGPUWebgpuMaterialContextMod {
       __obj.asInstanceOf[IWebGPUMaterialContextSamplerCache]
     }
     
-    extension [Self <: IWebGPUMaterialContextSamplerCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebGPUMaterialContextSamplerCache] (val x: Self) extends AnyVal {
       
       inline def setHashCode_(value: Double): Self = StObject.set(x, "hashCode", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object enginesWebGPUWebgpuMaterialContextMod {
       __obj.asInstanceOf[IWebGPUMaterialContextTextureCache]
     }
     
-    extension [Self <: IWebGPUMaterialContextTextureCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebGPUMaterialContextTextureCache] (val x: Self) extends AnyVal {
       
       inline def setIsExternalTexture(value: Boolean): Self = StObject.set(x, "isExternalTexture", value.asInstanceOf[js.Any])
       

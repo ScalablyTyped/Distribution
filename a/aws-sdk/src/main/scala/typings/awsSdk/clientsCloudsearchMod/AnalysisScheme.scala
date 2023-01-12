@@ -19,7 +19,8 @@ object AnalysisScheme {
     __obj.asInstanceOf[AnalysisScheme]
   }
   
-  extension [Self <: AnalysisScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisScheme] (val x: Self) extends AnyVal {
     
     inline def setAnalysisOptions(value: AnalysisOptions): Self = StObject.set(x, "AnalysisOptions", value.asInstanceOf[js.Any])
     

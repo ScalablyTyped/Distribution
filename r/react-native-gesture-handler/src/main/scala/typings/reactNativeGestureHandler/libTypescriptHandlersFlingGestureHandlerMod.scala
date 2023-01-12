@@ -54,7 +54,8 @@ object libTypescriptHandlersFlingGestureHandlerMod {
       __obj.asInstanceOf[FlingGestureConfig]
     }
     
-    extension [Self <: FlingGestureConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlingGestureConfig] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object libTypescriptHandlersFlingGestureHandlerMod {
       __obj.asInstanceOf[FlingGestureHandlerEventPayload]
     }
     
-    extension [Self <: FlingGestureHandlerEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlingGestureHandlerEventPayload] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
       

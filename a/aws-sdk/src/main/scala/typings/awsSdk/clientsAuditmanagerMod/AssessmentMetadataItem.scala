@@ -53,7 +53,8 @@ object AssessmentMetadataItem {
     __obj.asInstanceOf[AssessmentMetadataItem]
   }
   
-  extension [Self <: AssessmentMetadataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentMetadataItem] (val x: Self) extends AnyVal {
     
     inline def setComplianceType(value: ComplianceType): Self = StObject.set(x, "complianceType", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object AlwaysStrict {
     __obj.asInstanceOf[AlwaysStrict]
   }
   
-  extension [Self <: AlwaysStrict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlwaysStrict] (val x: Self) extends AnyVal {
     
     inline def setAlwaysStrict(value: Boolean): Self = StObject.set(x, "alwaysStrict", value.asInstanceOf[js.Any])
     

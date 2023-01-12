@@ -45,7 +45,8 @@ object distTaskQueueMod {
       __obj.asInstanceOf[ITaskQueueNode[ValueType]]
     }
     
-    extension [Self <: ITaskQueueNode[?], ValueType](x: Self & ITaskQueueNode[ValueType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITaskQueueNode[?], ValueType] (val x: Self & ITaskQueueNode[ValueType]) extends AnyVal {
       
       inline def setNext(value: ITaskQueueNode[ValueType]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       

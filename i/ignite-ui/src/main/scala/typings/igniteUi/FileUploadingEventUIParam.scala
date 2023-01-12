@@ -48,7 +48,8 @@ object FileUploadingEventUIParam {
     __obj.asInstanceOf[FileUploadingEventUIParam]
   }
   
-  extension [Self <: FileUploadingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileUploadingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     

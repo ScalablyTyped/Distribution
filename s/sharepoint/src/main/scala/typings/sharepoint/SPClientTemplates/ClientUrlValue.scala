@@ -17,7 +17,8 @@ object ClientUrlValue {
     __obj.asInstanceOf[ClientUrlValue]
   }
   
-  extension [Self <: ClientUrlValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientUrlValue] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -127,7 +127,8 @@ object mod {
       __obj.asInstanceOf[IOAuth2StrategyOption]
     }
     
-    extension [Self <: IOAuth2StrategyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOAuth2StrategyOption] (val x: Self) extends AnyVal {
       
       inline def setAccessType(value: String): Self = StObject.set(x, "accessType", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object mod {
       __obj.asInstanceOf[IOAuth2StrategyOptionWithRequest]
     }
     
-    extension [Self <: IOAuth2StrategyOptionWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOAuth2StrategyOptionWithRequest] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
@@ -227,7 +229,8 @@ object mod {
       __obj.asInstanceOf[IOAuthStrategyOption]
     }
     
-    extension [Self <: IOAuthStrategyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOAuthStrategyOption] (val x: Self) extends AnyVal {
       
       inline def setAccessTokenURL(value: String): Self = StObject.set(x, "accessTokenURL", value.asInstanceOf[js.Any])
       
@@ -270,7 +273,8 @@ object mod {
       __obj.asInstanceOf[Profile]
     }
     
-    extension [Self <: Profile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
       
       inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
@@ -293,7 +297,8 @@ object mod {
       __obj.asInstanceOf[VerifyOptions]
     }
     
-    extension [Self <: VerifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }

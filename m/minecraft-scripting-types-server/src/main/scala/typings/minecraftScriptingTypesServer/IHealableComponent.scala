@@ -34,7 +34,8 @@ object IHealableComponent {
     __obj.asInstanceOf[IHealableComponent]
   }
   
-  extension [Self <: IHealableComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHealableComponent] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

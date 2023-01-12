@@ -19,7 +19,8 @@ object CustomerManagedEncryptionStatus {
     __obj.asInstanceOf[CustomerManagedEncryptionStatus]
   }
   
-  extension [Self <: CustomerManagedEncryptionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerManagedEncryptionStatus] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyVersionName(value: String): Self = StObject.set(x, "kmsKeyVersionName", value.asInstanceOf[js.Any])
     

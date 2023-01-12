@@ -30,7 +30,8 @@ object DicomConfig {
     __obj.asInstanceOf[DicomConfig]
   }
   
-  extension [Self <: DicomConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DicomConfig] (val x: Self) extends AnyVal {
     
     inline def setFilterProfile(value: String): Self = StObject.set(x, "filterProfile", value.asInstanceOf[js.Any])
     

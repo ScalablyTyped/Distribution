@@ -48,7 +48,8 @@ object SuiteDefinitionInformation {
     __obj.asInstanceOf[SuiteDefinitionInformation]
   }
   
-  extension [Self <: SuiteDefinitionInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuiteDefinitionInformation] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

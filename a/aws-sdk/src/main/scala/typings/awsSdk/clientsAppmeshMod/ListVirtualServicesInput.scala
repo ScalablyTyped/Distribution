@@ -33,7 +33,8 @@ object ListVirtualServicesInput {
     __obj.asInstanceOf[ListVirtualServicesInput]
   }
   
-  extension [Self <: ListVirtualServicesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVirtualServicesInput] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: ListVirtualServicesLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

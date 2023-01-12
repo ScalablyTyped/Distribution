@@ -29,7 +29,8 @@ object TimelineContext {
     __obj.asInstanceOf[TimelineContext]
   }
   
-  extension [Self <: TimelineContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineContext] (val x: Self) extends AnyVal {
     
     inline def setCanvasTimeEnd(value: Double): Self = StObject.set(x, "canvasTimeEnd", value.asInstanceOf[js.Any])
     

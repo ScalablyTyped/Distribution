@@ -26,7 +26,8 @@ object PublishingOptions {
     __obj.asInstanceOf[PublishingOptions]
   }
   
-  extension [Self <: PublishingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishingOptions] (val x: Self) extends AnyVal {
     
     inline def setPublishCaCert(value: Boolean): Self = StObject.set(x, "publishCaCert", value.asInstanceOf[js.Any])
     

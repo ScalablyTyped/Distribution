@@ -69,7 +69,8 @@ object Compression {
       __obj.asInstanceOf[Compressor]
     }
     
-    extension [Self <: Compressor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compressor] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
@@ -93,7 +94,8 @@ object Compression {
       __obj.asInstanceOf[Decompressor]
     }
     
-    extension [Self <: Decompressor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decompressor] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
@@ -120,7 +122,8 @@ object Compression {
       __obj.asInstanceOf[ICompressor]
     }
     
-    extension [Self <: ICompressor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICompressor] (val x: Self) extends AnyVal {
       
       inline def setDetachStream(value: () => IOutputStream): Self = StObject.set(x, "detachStream", js.Any.fromFunction0(value))
       
@@ -144,7 +147,8 @@ object Compression {
       __obj.asInstanceOf[ICompressorFactory]
     }
     
-    extension [Self <: ICompressorFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICompressorFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateCompressor(value: IOutputStream => Compressor): Self = StObject.set(x, "createCompressor", js.Any.fromFunction1(value))
       
@@ -169,7 +173,8 @@ object Compression {
       __obj.asInstanceOf[IDecompressor]
     }
     
-    extension [Self <: IDecompressor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDecompressor] (val x: Self) extends AnyVal {
       
       inline def setDetachStream(value: () => IInputStream): Self = StObject.set(x, "detachStream", js.Any.fromFunction0(value))
     }
@@ -186,7 +191,8 @@ object Compression {
       __obj.asInstanceOf[IDecompressorFactory]
     }
     
-    extension [Self <: IDecompressorFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDecompressorFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateDecompressor(value: IInputStream => Decompressor): Self = StObject.set(x, "createDecompressor", js.Any.fromFunction1(value))
     }

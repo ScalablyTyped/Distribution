@@ -23,7 +23,8 @@ object ManifestIntentFilter {
     __obj.asInstanceOf[ManifestIntentFilter]
   }
   
-  extension [Self <: ManifestIntentFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestIntentFilter] (val x: Self) extends AnyVal {
     
     inline def set$(value: AndroidautoVerify): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     

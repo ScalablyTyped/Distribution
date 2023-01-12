@@ -37,7 +37,8 @@ object circularLoaderMod {
       __obj.asInstanceOf[CircularLoaderProps]
     }
     
-    extension [Self <: CircularLoaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircularLoaderProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: medium | large | xlarge | xxlarge | xxxlarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

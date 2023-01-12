@@ -68,7 +68,8 @@ object PromptMomentNotification {
     __obj.asInstanceOf[PromptMomentNotification]
   }
   
-  extension [Self <: PromptMomentNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptMomentNotification] (val x: Self) extends AnyVal {
     
     inline def setGetDismissedReason(value: () => credential_returned | cancel_called | flow_restarted): Self = StObject.set(x, "getDismissedReason", js.Any.fromFunction0(value))
     

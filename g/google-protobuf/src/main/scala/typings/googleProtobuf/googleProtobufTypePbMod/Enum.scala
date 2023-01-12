@@ -104,7 +104,8 @@ object Enum {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setEnumvalueList(value: js.Array[typings.googleProtobuf.googleProtobufTypePbMod.EnumValue.AsObject]): Self = StObject.set(x, "enumvalueList", value.asInstanceOf[js.Any])
       

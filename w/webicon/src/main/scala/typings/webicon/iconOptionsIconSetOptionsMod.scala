@@ -54,7 +54,8 @@ object iconOptionsIconSetOptionsMod {
       __obj.asInstanceOf[IconSetOptions]
     }
     
-    extension [Self <: IconSetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconSetOptions] (val x: Self) extends AnyVal {
       
       inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
       

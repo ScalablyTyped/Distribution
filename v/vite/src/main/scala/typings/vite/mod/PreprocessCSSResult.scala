@@ -24,7 +24,8 @@ object PreprocessCSSResult {
     __obj.asInstanceOf[PreprocessCSSResult]
   }
   
-  extension [Self <: PreprocessCSSResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreprocessCSSResult] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

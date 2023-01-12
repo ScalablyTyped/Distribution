@@ -60,7 +60,8 @@ object libUtilsMod {
       __obj.asInstanceOf[LiteralPart]
     }
     
-    extension [Self <: LiteralPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiteralPart] (val x: Self) extends AnyVal {
       
       inline def setType(value: literal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

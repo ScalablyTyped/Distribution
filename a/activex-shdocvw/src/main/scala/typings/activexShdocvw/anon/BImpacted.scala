@@ -15,7 +15,8 @@ object BImpacted {
     __obj.asInstanceOf[BImpacted]
   }
   
-  extension [Self <: BImpacted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BImpacted] (val x: Self) extends AnyVal {
     
     inline def setBImpacted(value: Boolean): Self = StObject.set(x, "bImpacted", value.asInstanceOf[js.Any])
   }

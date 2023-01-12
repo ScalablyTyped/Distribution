@@ -29,7 +29,8 @@ object SetStartStop {
     __obj.asInstanceOf[SetStartStop]
   }
   
-  extension [Self <: SetStartStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetStartStop] (val x: Self) extends AnyVal {
     
     inline def setBeforeEnd(value: ModifierArg[RestrictEdgesState] => Unit | Point): Self = StObject.set(x, "beforeEnd", js.Any.fromFunction1(value))
     

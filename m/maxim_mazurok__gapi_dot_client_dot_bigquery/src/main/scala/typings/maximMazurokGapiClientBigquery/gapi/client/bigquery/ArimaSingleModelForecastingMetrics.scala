@@ -46,7 +46,8 @@ object ArimaSingleModelForecastingMetrics {
     __obj.asInstanceOf[ArimaSingleModelForecastingMetrics]
   }
   
-  extension [Self <: ArimaSingleModelForecastingMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArimaSingleModelForecastingMetrics] (val x: Self) extends AnyVal {
     
     inline def setArimaFittingMetrics(value: ArimaFittingMetrics): Self = StObject.set(x, "arimaFittingMetrics", value.asInstanceOf[js.Any])
     

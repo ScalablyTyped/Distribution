@@ -15,7 +15,8 @@ object XcodeProject {
     __obj.asInstanceOf[XcodeProject]
   }
   
-  extension [Self <: XcodeProject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XcodeProject] (val x: Self) extends AnyVal {
     
     inline def setXcodeProject(value: Name): Self = StObject.set(x, "xcodeProject", value.asInstanceOf[js.Any])
     

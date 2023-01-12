@@ -35,7 +35,8 @@ object BarcodeScannerCapabilities {
     __obj.asInstanceOf[BarcodeScannerCapabilities]
   }
   
-  extension [Self <: BarcodeScannerCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarcodeScannerCapabilities] (val x: Self) extends AnyVal {
     
     inline def setIsImagePreviewSupported(value: Boolean): Self = StObject.set(x, "isImagePreviewSupported", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ZipExtractOptions {
     __obj.asInstanceOf[ZipExtractOptions]
   }
   
-  extension [Self <: ZipExtractOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipExtractOptions] (val x: Self) extends AnyVal {
     
     inline def setOnData(value: /* data */ ZipData => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction1(value))
     

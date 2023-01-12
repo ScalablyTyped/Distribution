@@ -16,7 +16,8 @@ object PrimaryGenres {
     __obj.asInstanceOf[PrimaryGenres]
   }
   
-  extension [Self <: PrimaryGenres](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimaryGenres] (val x: Self) extends AnyVal {
     
     inline def setMusic_genre_list(value: js.Array[Musicgenre]): Self = StObject.set(x, "music_genre_list", value.asInstanceOf[js.Any])
     

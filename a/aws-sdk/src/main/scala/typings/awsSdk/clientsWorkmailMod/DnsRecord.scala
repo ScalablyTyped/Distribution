@@ -28,7 +28,8 @@ object DnsRecord {
     __obj.asInstanceOf[DnsRecord]
   }
   
-  extension [Self <: DnsRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsRecord] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: String): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     

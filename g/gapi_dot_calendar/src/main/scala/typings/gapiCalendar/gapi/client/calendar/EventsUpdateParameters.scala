@@ -28,7 +28,8 @@ object EventsUpdateParameters {
     __obj.asInstanceOf[EventsUpdateParameters]
   }
   
-  extension [Self <: EventsUpdateParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventsUpdateParameters] (val x: Self) extends AnyVal {
     
     inline def setAlwaysIncludeEmail(value: Boolean): Self = StObject.set(x, "alwaysIncludeEmail", value.asInstanceOf[js.Any])
     

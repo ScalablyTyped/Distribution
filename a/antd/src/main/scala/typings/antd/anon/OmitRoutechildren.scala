@@ -18,7 +18,8 @@ object OmitRoutechildren {
     __obj.asInstanceOf[OmitRoutechildren]
   }
   
-  extension [Self <: OmitRoutechildren](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitRoutechildren] (val x: Self) extends AnyVal {
     
     inline def setBreadcrumbName(value: String): Self = StObject.set(x, "breadcrumbName", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object HeatMapLegend {
       __obj.asInstanceOf[ColorMappingCollection]
     }
     
-    extension [Self <: ColorMappingCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorMappingCollection] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object HeatMapLegend {
       __obj.asInstanceOf[ColorMappingCollectionLabel]
     }
     
-    extension [Self <: ColorMappingCollectionLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorMappingCollectionLabel] (val x: Self) extends AnyVal {
       
       inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object HeatMapLegend {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.HeatMapLegend.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.HeatMapLegend.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.HeatMapLegend.Model] (val x: Self) extends AnyVal {
       
       inline def setColorMappingCollection(value: js.Array[ColorMappingCollection]): Self = StObject.set(x, "colorMappingCollection", value.asInstanceOf[js.Any])
       

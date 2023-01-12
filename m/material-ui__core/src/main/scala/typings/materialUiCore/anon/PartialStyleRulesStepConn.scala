@@ -57,7 +57,8 @@ object PartialStyleRulesStepConn {
     __obj.asInstanceOf[PartialStyleRulesStepConn]
   }
   
-  extension [Self <: PartialStyleRulesStepConn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesStepConn] (val x: Self) extends AnyVal {
     
     inline def setActive(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

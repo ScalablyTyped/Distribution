@@ -100,7 +100,8 @@ object TextSymbol3DLayerProperti {
     __obj.asInstanceOf[TextSymbol3DLayerProperti]
   }
   
-  extension [Self <: TextSymbol3DLayerProperti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSymbol3DLayerProperti] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: TextSymbol3DLayerBackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

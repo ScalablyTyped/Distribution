@@ -68,7 +68,8 @@ object libComponentsDataTableTableHeaderMod extends Shortcut {
       __obj.asInstanceOf[TableHeaderProps]
     }
     
-    extension [Self <: TableHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object libComponentsDataTableTableHeaderMod extends Shortcut {
       __obj.asInstanceOf[TableHeaderTranslationArgs]
     }
     
-    extension [Self <: TableHeaderTranslationArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableHeaderTranslationArgs] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       

@@ -195,7 +195,8 @@ object management {
       __obj.asInstanceOf[ExtensionInfo]
     }
     
-    extension [Self <: ExtensionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtensionInfo] (val x: Self) extends AnyVal {
       
       inline def setAppLaunchUrl(value: String): Self = StObject.set(x, "appLaunchUrl", value.asInstanceOf[js.Any])
       
@@ -316,7 +317,8 @@ object management {
       __obj.asInstanceOf[IconInfo]
     }
     
-    extension [Self <: IconInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconInfo] (val x: Self) extends AnyVal {
       
       inline def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -339,7 +341,8 @@ object management {
       __obj.asInstanceOf[UninstallOptions]
     }
     
-    extension [Self <: UninstallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UninstallOptions] (val x: Self) extends AnyVal {
       
       inline def setShowConfirmDialog(value: Boolean): Self = StObject.set(x, "showConfirmDialog", value.asInstanceOf[js.Any])
       

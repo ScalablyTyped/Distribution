@@ -22,7 +22,8 @@ object DownloadAccountResponse {
     __obj.asInstanceOf[DownloadAccountResponse]
   }
   
-  extension [Self <: DownloadAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

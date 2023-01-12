@@ -19,7 +19,8 @@ object PredicateChoice {
     __obj.asInstanceOf[PredicateChoice]
   }
   
-  extension [Self <: PredicateChoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredicateChoice] (val x: Self) extends AnyVal {
     
     inline def setCred_def_id(value: CredentialDefinitionID): Self = StObject.set(x, "cred_def_id", value.asInstanceOf[js.Any])
     

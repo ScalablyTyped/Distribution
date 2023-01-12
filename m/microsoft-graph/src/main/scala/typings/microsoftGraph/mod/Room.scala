@@ -54,7 +54,8 @@ object Room {
     __obj.asInstanceOf[Room]
   }
   
-  extension [Self <: Room](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Room] (val x: Self) extends AnyVal {
     
     inline def setAudioDeviceName(value: NullableOption[String]): Self = StObject.set(x, "audioDeviceName", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object IGeoObjectOptions {
     __obj.asInstanceOf[IGeoObjectOptions]
   }
   
-  extension [Self <: IGeoObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setIconCaptionMaxWidth(value: Double): Self = StObject.set(x, "iconCaptionMaxWidth", value.asInstanceOf[js.Any])
     

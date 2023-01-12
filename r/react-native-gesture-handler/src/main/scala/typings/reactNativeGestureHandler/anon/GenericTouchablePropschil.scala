@@ -249,7 +249,8 @@ object GenericTouchablePropschil {
     __obj.asInstanceOf[GenericTouchablePropschil]
   }
   
-  extension [Self <: GenericTouchablePropschil](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericTouchablePropschil] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

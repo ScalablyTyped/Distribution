@@ -25,7 +25,8 @@ object MUIDataTableFooter {
     __obj.asInstanceOf[MUIDataTableFooter]
   }
   
-  extension [Self <: MUIDataTableFooter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableFooter] (val x: Self) extends AnyVal {
     
     inline def setChangePage(value: /* e */ Any => Any): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
     

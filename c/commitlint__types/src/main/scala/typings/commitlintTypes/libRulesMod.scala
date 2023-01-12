@@ -279,7 +279,8 @@ object libRulesMod {
       __obj.asInstanceOf[RulesConfig[V]]
     }
     
-    extension [Self <: RulesConfig[?], V](x: Self & RulesConfig[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RulesConfig[?], V] (val x: Self & RulesConfig[V]) extends AnyVal {
       
       inline def `setBody-case`(value: CaseRuleConfig[V]): Self = StObject.set(x, "body-case", value.asInstanceOf[js.Any])
       

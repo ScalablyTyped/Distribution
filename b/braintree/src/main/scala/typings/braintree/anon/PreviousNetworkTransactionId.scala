@@ -17,7 +17,8 @@ object PreviousNetworkTransactionId {
     __obj.asInstanceOf[PreviousNetworkTransactionId]
   }
   
-  extension [Self <: PreviousNetworkTransactionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviousNetworkTransactionId] (val x: Self) extends AnyVal {
     
     inline def setPreviousNetworkTransactionId(value: String): Self = StObject.set(x, "previousNetworkTransactionId", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object InkDrawingAttributes {
     __obj.asInstanceOf[InkDrawingAttributes]
   }
   
-  extension [Self <: InkDrawingAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InkDrawingAttributes] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

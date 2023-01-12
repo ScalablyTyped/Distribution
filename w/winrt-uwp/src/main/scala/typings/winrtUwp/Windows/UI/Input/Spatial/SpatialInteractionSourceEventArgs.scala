@@ -15,7 +15,8 @@ object SpatialInteractionSourceEventArgs {
     __obj.asInstanceOf[SpatialInteractionSourceEventArgs]
   }
   
-  extension [Self <: SpatialInteractionSourceEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialInteractionSourceEventArgs] (val x: Self) extends AnyVal {
     
     inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

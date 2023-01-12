@@ -23,7 +23,8 @@ object Metrics {
     __obj.asInstanceOf[Metrics]
   }
   
-  extension [Self <: Metrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
     
     inline def setEventThreshold(value: ReplicationTimeValue): Self = StObject.set(x, "EventThreshold", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object PerformanceNavigation {
     __obj.asInstanceOf[PerformanceNavigation]
   }
   
-  extension [Self <: PerformanceNavigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceNavigation] (val x: Self) extends AnyVal {
     
     inline def setRedirectCount(value: Double): Self = StObject.set(x, "redirectCount", value.asInstanceOf[js.Any])
     

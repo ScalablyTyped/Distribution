@@ -48,7 +48,8 @@ object SearchGameSessionsInput {
     __obj.asInstanceOf[SearchGameSessionsInput]
   }
   
-  extension [Self <: SearchGameSessionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchGameSessionsInput] (val x: Self) extends AnyVal {
     
     inline def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object JsxSvgStyleProps {
     __obj.asInstanceOf[JsxSvgStyleProps]
   }
   
-  extension [Self <: JsxSvgStyleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxSvgStyleProps] (val x: Self) extends AnyVal {
     
     inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

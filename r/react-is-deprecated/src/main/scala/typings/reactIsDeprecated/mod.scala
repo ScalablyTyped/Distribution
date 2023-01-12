@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Deprecatable[T]]
     }
     
-    extension [Self <: Deprecatable[?], T](x: Self & Deprecatable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deprecatable[?], T] (val x: Self & Deprecatable[T]) extends AnyVal {
       
       inline def setIsDeprecated(value: String => Validator[T]): Self = StObject.set(x, "isDeprecated", js.Any.fromFunction1(value))
     }
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[DeprecatablePropTypes]
     }
     
-    extension [Self <: DeprecatablePropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecatablePropTypes] (val x: Self) extends AnyVal {
       
       inline def setAny(value: Requireable[Any] & Deprecatable[Any]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
       

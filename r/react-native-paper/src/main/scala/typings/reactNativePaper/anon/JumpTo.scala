@@ -20,7 +20,8 @@ object JumpTo {
     __obj.asInstanceOf[JumpTo]
   }
   
-  extension [Self <: JumpTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JumpTo] (val x: Self) extends AnyVal {
     
     inline def setJumpTo(value: String => Unit): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
     

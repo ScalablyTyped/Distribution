@@ -18,7 +18,8 @@ object StopDataCollectionByAgentIdsResponse {
     __obj.asInstanceOf[StopDataCollectionByAgentIdsResponse]
   }
   
-  extension [Self <: StopDataCollectionByAgentIdsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopDataCollectionByAgentIdsResponse] (val x: Self) extends AnyVal {
     
     inline def setAgentsConfigurationStatus(value: AgentConfigurationStatusList): Self = StObject.set(x, "agentsConfigurationStatus", value.asInstanceOf[js.Any])
     

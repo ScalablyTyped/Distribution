@@ -30,7 +30,8 @@ object PartialInlineLoadingOptio {
     __obj.asInstanceOf[PartialInlineLoadingOptio]
   }
   
-  extension [Self <: PartialInlineLoadingOptio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialInlineLoadingOptio] (val x: Self) extends AnyVal {
     
     inline def setClassLoadingStop(value: String): Self = StObject.set(x, "classLoadingStop", value.asInstanceOf[js.Any])
     

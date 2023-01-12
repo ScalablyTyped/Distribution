@@ -18,7 +18,8 @@ object INDStartResult {
     __obj.asInstanceOf[INDStartResult]
   }
   
-  extension [Self <: INDStartResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDStartResult] (val x: Self) extends AnyVal {
     
     inline def setMediaStreamSource(value: MediaStreamSource): Self = StObject.set(x, "mediaStreamSource", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object WatcherAcknowledgeState {
     __obj.asInstanceOf[WatcherAcknowledgeState]
   }
   
-  extension [Self <: WatcherAcknowledgeState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherAcknowledgeState] (val x: Self) extends AnyVal {
     
     inline def setState(value: WatcherAcknowledgementOptions): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

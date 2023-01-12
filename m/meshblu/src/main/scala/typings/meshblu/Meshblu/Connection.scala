@@ -238,7 +238,8 @@ object Connection {
     __obj.asInstanceOf[Connection]
   }
   
-  extension [Self <: Connection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
     
     inline def setAuthenticate(value: (Any, js.Function1[/* result */ Any, Unit]) => Connection): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
     

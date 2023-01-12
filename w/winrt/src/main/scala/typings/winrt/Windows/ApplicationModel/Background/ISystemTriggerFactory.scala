@@ -15,7 +15,8 @@ object ISystemTriggerFactory {
     __obj.asInstanceOf[ISystemTriggerFactory]
   }
   
-  extension [Self <: ISystemTriggerFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISystemTriggerFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (SystemTriggerType, Boolean) => SystemTrigger): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
   }

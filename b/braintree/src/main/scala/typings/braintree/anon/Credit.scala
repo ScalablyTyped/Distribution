@@ -19,7 +19,8 @@ object Credit {
     __obj.asInstanceOf[Credit]
   }
   
-  extension [Self <: Credit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Credit] (val x: Self) extends AnyVal {
     
     inline def setCredit(value: credit): Self = StObject.set(x, "Credit", value.asInstanceOf[js.Any])
     

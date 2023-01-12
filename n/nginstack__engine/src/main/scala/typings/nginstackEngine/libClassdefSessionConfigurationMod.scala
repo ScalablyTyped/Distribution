@@ -120,7 +120,8 @@ object libClassdefSessionConfigurationMod {
       __obj.asInstanceOf[SessionConfiguration]
     }
     
-    extension [Self <: SessionConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionConfiguration] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: DBKey | Double): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       

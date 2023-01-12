@@ -48,7 +48,8 @@ object AudioSpriteFile {
     __obj.asInstanceOf[AudioSpriteFile]
   }
   
-  extension [Self <: AudioSpriteFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioSpriteFile] (val x: Self) extends AnyVal {
     
     inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }

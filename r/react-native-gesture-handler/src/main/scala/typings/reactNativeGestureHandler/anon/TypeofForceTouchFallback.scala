@@ -16,7 +16,8 @@ object TypeofForceTouchFallback {
     __obj.asInstanceOf[TypeofForceTouchFallback]
   }
   
-  extension [Self <: TypeofForceTouchFallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofForceTouchFallback] (val x: Self) extends AnyVal {
     
     inline def setForceTouchAvailable(value: Boolean): Self = StObject.set(x, "forceTouchAvailable", value.asInstanceOf[js.Any])
   }

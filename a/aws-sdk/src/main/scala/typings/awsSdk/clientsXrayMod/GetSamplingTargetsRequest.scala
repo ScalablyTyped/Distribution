@@ -18,7 +18,8 @@ object GetSamplingTargetsRequest {
     __obj.asInstanceOf[GetSamplingTargetsRequest]
   }
   
-  extension [Self <: GetSamplingTargetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSamplingTargetsRequest] (val x: Self) extends AnyVal {
     
     inline def setSamplingStatisticsDocuments(value: SamplingStatisticsDocumentList): Self = StObject.set(x, "SamplingStatisticsDocuments", value.asInstanceOf[js.Any])
     

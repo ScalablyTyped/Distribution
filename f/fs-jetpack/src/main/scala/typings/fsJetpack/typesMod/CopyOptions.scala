@@ -19,7 +19,8 @@ object CopyOptions {
     __obj.asInstanceOf[CopyOptions]
   }
   
-  extension [Self <: CopyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     

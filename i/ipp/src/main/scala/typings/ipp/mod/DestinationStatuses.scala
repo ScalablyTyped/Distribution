@@ -19,7 +19,8 @@ object DestinationStatuses {
     __obj.asInstanceOf[DestinationStatuses]
   }
   
-  extension [Self <: DestinationStatuses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationStatuses] (val x: Self) extends AnyVal {
     
     inline def `setDestination-uri`(value: String): Self = StObject.set(x, "destination-uri", value.asInstanceOf[js.Any])
     

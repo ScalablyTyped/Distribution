@@ -338,7 +338,8 @@ object FancyBoxOptions {
     __obj.asInstanceOf[FancyBoxOptions]
   }
   
-  extension [Self <: FancyBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterClose(value: (/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide) => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction2(value))
     

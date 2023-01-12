@@ -17,7 +17,8 @@ object PreferredQuoteMarkOptions {
     __obj.asInstanceOf[PreferredQuoteMarkOptions]
   }
   
-  extension [Self <: PreferredQuoteMarkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreferredQuoteMarkOptions] (val x: Self) extends AnyVal {
     
     inline def setPreferCurrentQuoteMark(value: Boolean): Self = StObject.set(x, "preferCurrentQuoteMark", value.asInstanceOf[js.Any])
     

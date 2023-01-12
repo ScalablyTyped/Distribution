@@ -66,7 +66,8 @@ object RouterNat {
     __obj.asInstanceOf[RouterNat]
   }
   
-  extension [Self <: RouterNat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterNat] (val x: Self) extends AnyVal {
     
     inline def setDrainNatIps(value: js.Array[String]): Self = StObject.set(x, "drainNatIps", value.asInstanceOf[js.Any])
     

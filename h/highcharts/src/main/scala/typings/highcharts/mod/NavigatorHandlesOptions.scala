@@ -59,7 +59,8 @@ object NavigatorHandlesOptions {
     __obj.asInstanceOf[NavigatorHandlesOptions]
   }
   
-  extension [Self <: NavigatorHandlesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorHandlesOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object EndpointsConfig {
     __obj.asInstanceOf[EndpointsConfig]
   }
   
-  extension [Self <: EndpointsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointsConfig] (val x: Self) extends AnyVal {
     
     inline def setEndpointsConfig(value: typings.dockerode.mod.EndpointsConfig): Self = StObject.set(x, "EndpointsConfig", value.asInstanceOf[js.Any])
     

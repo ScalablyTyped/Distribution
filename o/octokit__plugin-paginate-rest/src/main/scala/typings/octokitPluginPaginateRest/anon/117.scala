@@ -31,7 +31,8 @@ object `117` {
     __obj.asInstanceOf[`117`]
   }
   
-  extension [Self <: `117`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `117`] (val x: Self) extends AnyVal {
     
     inline def setParameters(
       value: (ToOctokitParameters[

@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Base]
     }
     
-    extension [Self <: Base](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Capacity]
     }
     
-    extension [Self <: Capacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capacity] (val x: Self) extends AnyVal {
       
       inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Collections]
     }
     
-    extension [Self <: Collections](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collections] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[js.Object]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
@@ -130,7 +134,8 @@ object anon {
       __obj.asInstanceOf[Created]
     }
     
-    extension [Self <: Created](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Created] (val x: Self) extends AnyVal {
       
       inline def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     }
@@ -164,7 +169,8 @@ object anon {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -195,7 +201,8 @@ object anon {
       __obj.asInstanceOf[ProjectId]
     }
     
-    extension [Self <: ProjectId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectId] (val x: Self) extends AnyVal {
       
       inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       

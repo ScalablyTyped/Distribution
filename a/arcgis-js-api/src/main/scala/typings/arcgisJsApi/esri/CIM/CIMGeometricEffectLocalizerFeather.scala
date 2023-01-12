@@ -42,7 +42,8 @@ object CIMGeometricEffectLocalizerFeather {
     __obj.asInstanceOf[CIMGeometricEffectLocalizerFeather]
   }
   
-  extension [Self <: CIMGeometricEffectLocalizerFeather](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectLocalizerFeather] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

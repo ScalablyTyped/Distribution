@@ -18,7 +18,8 @@ object SetLifecycleEventsEnabledRequest {
     __obj.asInstanceOf[SetLifecycleEventsEnabledRequest]
   }
   
-  extension [Self <: SetLifecycleEventsEnabledRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetLifecycleEventsEnabledRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

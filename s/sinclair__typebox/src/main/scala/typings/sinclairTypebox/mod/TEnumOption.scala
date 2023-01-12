@@ -20,7 +20,8 @@ object TEnumOption {
     __obj.asInstanceOf[TEnumOption[T]]
   }
   
-  extension [Self <: TEnumOption[?], T](x: Self & TEnumOption[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TEnumOption[?], T] (val x: Self & TEnumOption[T]) extends AnyVal {
     
     inline def setConst(value: T): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
     

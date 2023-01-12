@@ -17,7 +17,8 @@ object ApplicationjsonChecksuites {
     __obj.asInstanceOf[ApplicationjsonChecksuites]
   }
   
-  extension [Self <: ApplicationjsonChecksuites](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonChecksuites] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Checksuites): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

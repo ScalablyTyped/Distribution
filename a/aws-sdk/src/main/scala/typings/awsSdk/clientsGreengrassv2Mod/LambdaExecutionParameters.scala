@@ -68,7 +68,8 @@ object LambdaExecutionParameters {
     __obj.asInstanceOf[LambdaExecutionParameters]
   }
   
-  extension [Self <: LambdaExecutionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaExecutionParameters] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentVariables(value: LambdaEnvironmentVariables): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     

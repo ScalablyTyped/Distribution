@@ -17,7 +17,8 @@ object SerialPortFilter {
     __obj.asInstanceOf[SerialPortFilter]
   }
   
-  extension [Self <: SerialPortFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialPortFilter] (val x: Self) extends AnyVal {
     
     inline def setUsbProductId(value: Double): Self = StObject.set(x, "usbProductId", value.asInstanceOf[js.Any])
     

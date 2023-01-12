@@ -58,7 +58,8 @@ object FeatureTemplateProperties {
     __obj.asInstanceOf[FeatureTemplateProperties]
   }
   
-  extension [Self <: FeatureTemplateProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureTemplateProperties] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

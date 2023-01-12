@@ -28,7 +28,8 @@ object LifeCycleLastTest {
     __obj.asInstanceOf[LifeCycleLastTest]
   }
   
-  extension [Self <: LifeCycleLastTest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifeCycleLastTest] (val x: Self) extends AnyVal {
     
     inline def setFinalized(value: LifeCycleLastTestFinalized): Self = StObject.set(x, "finalized", value.asInstanceOf[js.Any])
     

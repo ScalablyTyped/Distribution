@@ -17,7 +17,8 @@ object WorkItemToTestLinks {
     __obj.asInstanceOf[WorkItemToTestLinks]
   }
   
-  extension [Self <: WorkItemToTestLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemToTestLinks] (val x: Self) extends AnyVal {
     
     inline def setTests(value: js.Array[TestMethod]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
     

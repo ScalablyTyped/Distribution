@@ -16,7 +16,8 @@ object PickExpoConfigprimaryColo {
     __obj.asInstanceOf[PickExpoConfigprimaryColo]
   }
   
-  extension [Self <: PickExpoConfigprimaryColo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfigprimaryColo] (val x: Self) extends AnyVal {
     
     inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     

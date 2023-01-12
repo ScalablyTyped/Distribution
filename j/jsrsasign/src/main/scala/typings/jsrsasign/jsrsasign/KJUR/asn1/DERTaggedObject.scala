@@ -55,7 +55,8 @@ object DERTaggedObject {
     __obj.asInstanceOf[DERTaggedObject]
   }
   
-  extension [Self <: DERTaggedObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DERTaggedObject] (val x: Self) extends AnyVal {
     
     inline def setSetASN1Object(value: (Boolean, String, ASN1Object) => Unit): Self = StObject.set(x, "setASN1Object", js.Any.fromFunction3(value))
   }

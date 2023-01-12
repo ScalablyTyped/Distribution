@@ -28,7 +28,8 @@ object InstanceStatus {
     __obj.asInstanceOf[InstanceStatus]
   }
   
-  extension [Self <: InstanceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceStatus] (val x: Self) extends AnyVal {
     
     inline def setState(value: InstanceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

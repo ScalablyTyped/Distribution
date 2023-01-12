@@ -35,7 +35,8 @@ object LinkColor {
     __obj.asInstanceOf[LinkColor]
   }
   
-  extension [Self <: LinkColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkColor] (val x: Self) extends AnyVal {
     
     inline def setLinkColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<string> */ Any

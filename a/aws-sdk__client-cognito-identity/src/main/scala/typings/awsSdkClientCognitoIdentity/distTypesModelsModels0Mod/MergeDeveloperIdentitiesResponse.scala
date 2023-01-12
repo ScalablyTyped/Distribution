@@ -18,7 +18,8 @@ object MergeDeveloperIdentitiesResponse {
     __obj.asInstanceOf[MergeDeveloperIdentitiesResponse]
   }
   
-  extension [Self <: MergeDeveloperIdentitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeDeveloperIdentitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     

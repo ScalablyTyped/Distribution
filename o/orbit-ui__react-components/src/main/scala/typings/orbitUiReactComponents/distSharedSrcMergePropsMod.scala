@@ -42,7 +42,8 @@ object distSharedSrcMergePropsMod {
       __obj.asInstanceOf[CompositeKeyWeakMapNode[T]]
     }
     
-    extension [Self <: CompositeKeyWeakMapNode[?], T](x: Self & CompositeKeyWeakMapNode[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompositeKeyWeakMapNode[?], T] (val x: Self & CompositeKeyWeakMapNode[T]) extends AnyVal {
       
       inline def setMap(value: WeakMap[Any, Any]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       

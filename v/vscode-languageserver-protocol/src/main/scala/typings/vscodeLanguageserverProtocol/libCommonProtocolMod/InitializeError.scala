@@ -21,7 +21,8 @@ object InitializeError {
     __obj.asInstanceOf[InitializeError]
   }
   
-  extension [Self <: InitializeError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializeError] (val x: Self) extends AnyVal {
     
     inline def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
   }

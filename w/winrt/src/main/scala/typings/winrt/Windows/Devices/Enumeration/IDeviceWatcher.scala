@@ -38,7 +38,8 @@ object IDeviceWatcher {
     __obj.asInstanceOf[IDeviceWatcher]
   }
   
-  extension [Self <: IDeviceWatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDeviceWatcher] (val x: Self) extends AnyVal {
     
     inline def setOnadded(value: Any): Self = StObject.set(x, "onadded", value.asInstanceOf[js.Any])
     

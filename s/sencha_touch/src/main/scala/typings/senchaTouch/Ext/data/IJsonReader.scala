@@ -41,7 +41,8 @@ object IJsonReader {
     __obj.asInstanceOf[IJsonReader]
   }
   
-  extension [Self <: IJsonReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJsonReader] (val x: Self) extends AnyVal {
     
     inline def setGetRecord(value: () => String): Self = StObject.set(x, "getRecord", js.Any.fromFunction0(value))
     

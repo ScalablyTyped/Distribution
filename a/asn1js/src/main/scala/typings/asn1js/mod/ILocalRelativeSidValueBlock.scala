@@ -15,7 +15,8 @@ object ILocalRelativeSidValueBlock {
     __obj.asInstanceOf[ILocalRelativeSidValueBlock]
   }
   
-  extension [Self <: ILocalRelativeSidValueBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocalRelativeSidValueBlock] (val x: Self) extends AnyVal {
     
     inline def setValueDec(value: Double): Self = StObject.set(x, "valueDec", value.asInstanceOf[js.Any])
   }

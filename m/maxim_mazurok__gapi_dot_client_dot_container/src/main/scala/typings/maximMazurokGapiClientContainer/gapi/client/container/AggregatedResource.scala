@@ -15,7 +15,8 @@ object AggregatedResource {
     __obj.asInstanceOf[AggregatedResource]
   }
   
-  extension [Self <: AggregatedResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedResource] (val x: Self) extends AnyVal {
     
     inline def setUsableSubnetworks(value: UsableSubnetworksResource): Self = StObject.set(x, "usableSubnetworks", value.asInstanceOf[js.Any])
   }

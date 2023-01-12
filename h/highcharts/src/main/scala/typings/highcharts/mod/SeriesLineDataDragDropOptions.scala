@@ -90,7 +90,8 @@ object SeriesLineDataDragDropOptions {
     __obj.asInstanceOf[SeriesLineDataDragDropOptions]
   }
   
-  extension [Self <: SeriesLineDataDragDropOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesLineDataDragDropOptions] (val x: Self) extends AnyVal {
     
     inline def setDragMaxX(value: Double): Self = StObject.set(x, "dragMaxX", value.asInstanceOf[js.Any])
     

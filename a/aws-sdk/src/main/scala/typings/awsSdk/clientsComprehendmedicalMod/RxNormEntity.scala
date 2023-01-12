@@ -63,7 +63,8 @@ object RxNormEntity {
     __obj.asInstanceOf[RxNormEntity]
   }
   
-  extension [Self <: RxNormEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RxNormEntity] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: RxNormAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

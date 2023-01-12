@@ -83,7 +83,8 @@ object IFormHelper {
     __obj.asInstanceOf[IFormHelper]
   }
   
-  extension [Self <: IFormHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFormHelper] (val x: Self) extends AnyVal {
     
     inline def setHandleError(value: js.Object => Unit): Self = StObject.set(x, "handleError", js.Any.fromFunction1(value))
     

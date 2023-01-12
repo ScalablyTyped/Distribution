@@ -15,7 +15,8 @@ object IShellBarItem {
     __obj.asInstanceOf[IShellBarItem]
   }
   
-  extension [Self <: IShellBarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellBarItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_fiori_IShellBarItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_fiori_IShellBarItem", value.asInstanceOf[js.Any])
   }

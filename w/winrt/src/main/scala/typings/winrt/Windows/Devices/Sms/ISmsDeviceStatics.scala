@@ -24,7 +24,8 @@ object ISmsDeviceStatics {
     __obj.asInstanceOf[ISmsDeviceStatics]
   }
   
-  extension [Self <: ISmsDeviceStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISmsDeviceStatics] (val x: Self) extends AnyVal {
     
     inline def setFromIdAsync(value: String => IAsyncOperation[SmsDevice]): Self = StObject.set(x, "fromIdAsync", js.Any.fromFunction1(value))
     

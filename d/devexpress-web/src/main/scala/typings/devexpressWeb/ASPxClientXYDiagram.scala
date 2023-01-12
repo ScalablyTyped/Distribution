@@ -35,7 +35,8 @@ object ASPxClientXYDiagram {
     __obj.asInstanceOf[ASPxClientXYDiagram]
   }
   
-  extension [Self <: ASPxClientXYDiagram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientXYDiagram] (val x: Self) extends AnyVal {
     
     inline def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
   }

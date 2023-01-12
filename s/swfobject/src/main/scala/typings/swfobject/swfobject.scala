@@ -24,7 +24,8 @@ object swfobject {
       __obj.asInstanceOf[ICallbackObj]
     }
     
-    extension [Self <: ICallbackObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICallbackObj] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object swfobject {
       __obj.asInstanceOf[IFlashPlayerVersion]
     }
     
-    extension [Self <: IFlashPlayerVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFlashPlayerVersion] (val x: Self) extends AnyVal {
       
       inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object swfobject {
       __obj.asInstanceOf[ISwfObjectAttribute]
     }
     
-    extension [Self <: ISwfObjectAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISwfObjectAttribute] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -103,7 +106,8 @@ object swfobject {
       __obj.asInstanceOf[ISwfObjectParameter]
     }
     
-    extension [Self <: ISwfObjectParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISwfObjectParameter] (val x: Self) extends AnyVal {
       
       inline def setFlashvars(value: String): Self = StObject.set(x, "flashvars", value.asInstanceOf[js.Any])
       

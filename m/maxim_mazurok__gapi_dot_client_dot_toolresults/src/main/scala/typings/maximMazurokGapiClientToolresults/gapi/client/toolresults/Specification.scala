@@ -19,7 +19,8 @@ object Specification {
     __obj.asInstanceOf[Specification]
   }
   
-  extension [Self <: Specification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Specification] (val x: Self) extends AnyVal {
     
     inline def setAndroidTest(value: AndroidTest): Self = StObject.set(x, "androidTest", value.asInstanceOf[js.Any])
     

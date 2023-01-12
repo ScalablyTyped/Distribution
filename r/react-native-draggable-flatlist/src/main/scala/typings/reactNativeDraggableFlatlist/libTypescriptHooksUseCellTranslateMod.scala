@@ -29,7 +29,8 @@ object libTypescriptHooksUseCellTranslateMod {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setCellIndex(value: SharedValue[Double]): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
       

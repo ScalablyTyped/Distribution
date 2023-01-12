@@ -25,7 +25,8 @@ object ISizePolicy {
     __obj.asInstanceOf[ISizePolicy]
   }
   
-  extension [Self <: ISizePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISizePolicy] (val x: Self) extends AnyVal {
     
     inline def setReadsHeight(value: Boolean): Self = StObject.set(x, "readsHeight", value.asInstanceOf[js.Any])
     

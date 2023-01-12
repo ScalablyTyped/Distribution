@@ -16,7 +16,8 @@ object IConsensusNotifyBlockNew {
     __obj.asInstanceOf[IConsensusNotifyBlockNew]
   }
   
-  extension [Self <: IConsensusNotifyBlockNew](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusNotifyBlockNew] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: IConsensusBlock): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

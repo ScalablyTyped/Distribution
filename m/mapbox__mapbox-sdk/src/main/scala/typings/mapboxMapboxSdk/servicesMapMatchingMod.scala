@@ -54,7 +54,8 @@ object servicesMapMatchingMod {
       __obj.asInstanceOf[MapMatchingPoint]
     }
     
-    extension [Self <: MapMatchingPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapMatchingPoint] (val x: Self) extends AnyVal {
       
       inline def setIsWaypoint(value: Boolean): Self = StObject.set(x, "isWaypoint", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object servicesMapMatchingMod {
       __obj.asInstanceOf[MapMatchingRequest]
     }
     
-    extension [Self <: MapMatchingRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapMatchingRequest] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: DirectionsAnnotation): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -185,7 +187,8 @@ object servicesMapMatchingMod {
       __obj.asInstanceOf[MapMatchingResponse]
     }
     
-    extension [Self <: MapMatchingResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapMatchingResponse] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -210,7 +213,8 @@ object servicesMapMatchingMod {
       __obj.asInstanceOf[MapMatchingService]
     }
     
-    extension [Self <: MapMatchingService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapMatchingService] (val x: Self) extends AnyVal {
       
       inline def setGetMatch(value: MapMatchingRequest => MapiRequest[MapMatchingResponse]): Self = StObject.set(x, "getMatch", js.Any.fromFunction1(value))
     }
@@ -250,7 +254,8 @@ object servicesMapMatchingMod {
       __obj.asInstanceOf[Matching]
     }
     
-    extension [Self <: Matching](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matching] (val x: Self) extends AnyVal {
       
       inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
@@ -286,7 +291,8 @@ object servicesMapMatchingMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setApproach(value: DirectionsApproach): Self = StObject.set(x, "approach", value.asInstanceOf[js.Any])
       
@@ -331,7 +337,8 @@ object servicesMapMatchingMod {
       __obj.asInstanceOf[Tracepoint]
     }
     
-    extension [Self <: Tracepoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tracepoint] (val x: Self) extends AnyVal {
       
       inline def setAlternatives_count(value: Double): Self = StObject.set(x, "alternatives_count", value.asInstanceOf[js.Any])
       

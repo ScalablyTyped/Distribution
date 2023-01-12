@@ -71,7 +71,8 @@ object ScrollViewContext {
     __obj.asInstanceOf[ScrollViewContext]
   }
   
-  extension [Self <: ScrollViewContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollViewContext] (val x: Self) extends AnyVal {
     
     inline def setBounces(value: Boolean): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
     

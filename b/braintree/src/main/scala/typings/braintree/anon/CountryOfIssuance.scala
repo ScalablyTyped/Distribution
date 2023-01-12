@@ -78,7 +78,8 @@ object CountryOfIssuance {
     __obj.asInstanceOf[CountryOfIssuance]
   }
   
-  extension [Self <: CountryOfIssuance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountryOfIssuance] (val x: Self) extends AnyVal {
     
     inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     

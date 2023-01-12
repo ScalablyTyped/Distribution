@@ -19,7 +19,8 @@ object ContextViewStateChangeInfo {
     __obj.asInstanceOf[ContextViewStateChangeInfo]
   }
   
-  extension [Self <: ContextViewStateChangeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextViewStateChangeInfo] (val x: Self) extends AnyVal {
     
     inline def setInteractionState(value: ExtraState): Self = StObject.set(x, "interactionState", value.asInstanceOf[js.Any])
     

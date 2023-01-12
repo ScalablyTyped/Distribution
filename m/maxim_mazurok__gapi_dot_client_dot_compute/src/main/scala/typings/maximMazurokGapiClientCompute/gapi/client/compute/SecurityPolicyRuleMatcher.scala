@@ -28,7 +28,8 @@ object SecurityPolicyRuleMatcher {
     __obj.asInstanceOf[SecurityPolicyRuleMatcher]
   }
   
-  extension [Self <: SecurityPolicyRuleMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPolicyRuleMatcher] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: SecurityPolicyRuleMatcherConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

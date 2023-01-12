@@ -28,7 +28,8 @@ object HttpGatewayRouteHeader {
     __obj.asInstanceOf[HttpGatewayRouteHeader]
   }
   
-  extension [Self <: HttpGatewayRouteHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpGatewayRouteHeader] (val x: Self) extends AnyVal {
     
     inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     

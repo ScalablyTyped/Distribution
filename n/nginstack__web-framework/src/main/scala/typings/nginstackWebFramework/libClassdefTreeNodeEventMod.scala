@@ -35,7 +35,8 @@ object libClassdefTreeNodeEventMod {
       __obj.asInstanceOf[TreeNodeEvent]
     }
     
-    extension [Self <: TreeNodeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeNodeEvent] (val x: Self) extends AnyVal {
       
       inline def setNode(value: AbstractTree): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }

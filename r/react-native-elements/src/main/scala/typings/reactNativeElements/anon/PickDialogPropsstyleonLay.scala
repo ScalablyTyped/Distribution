@@ -203,7 +203,8 @@ object PickDialogPropsstyleonLay {
     __obj.asInstanceOf[PickDialogPropsstyleonLay]
   }
   
-  extension [Self <: PickDialogPropsstyleonLay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickDialogPropsstyleonLay] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

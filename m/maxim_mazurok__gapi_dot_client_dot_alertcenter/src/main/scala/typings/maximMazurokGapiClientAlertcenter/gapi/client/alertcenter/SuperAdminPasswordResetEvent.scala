@@ -16,7 +16,8 @@ object SuperAdminPasswordResetEvent {
     __obj.asInstanceOf[SuperAdminPasswordResetEvent]
   }
   
-  extension [Self <: SuperAdminPasswordResetEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuperAdminPasswordResetEvent] (val x: Self) extends AnyVal {
     
     inline def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     

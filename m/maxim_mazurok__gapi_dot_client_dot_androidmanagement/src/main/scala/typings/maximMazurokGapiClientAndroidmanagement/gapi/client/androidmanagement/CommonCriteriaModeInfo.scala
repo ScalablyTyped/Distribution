@@ -16,7 +16,8 @@ object CommonCriteriaModeInfo {
     __obj.asInstanceOf[CommonCriteriaModeInfo]
   }
   
-  extension [Self <: CommonCriteriaModeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonCriteriaModeInfo] (val x: Self) extends AnyVal {
     
     inline def setCommonCriteriaModeStatus(value: String): Self = StObject.set(x, "commonCriteriaModeStatus", value.asInstanceOf[js.Any])
     

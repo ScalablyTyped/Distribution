@@ -43,7 +43,8 @@ object AppComponentCompliance {
     __obj.asInstanceOf[AppComponentCompliance]
   }
   
-  extension [Self <: AppComponentCompliance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppComponentCompliance] (val x: Self) extends AnyVal {
     
     inline def setAppComponentName(value: EntityId): Self = StObject.set(x, "appComponentName", value.asInstanceOf[js.Any])
     

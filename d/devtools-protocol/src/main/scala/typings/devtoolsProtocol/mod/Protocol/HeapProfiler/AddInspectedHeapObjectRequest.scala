@@ -18,7 +18,8 @@ object AddInspectedHeapObjectRequest {
     __obj.asInstanceOf[AddInspectedHeapObjectRequest]
   }
   
-  extension [Self <: AddInspectedHeapObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddInspectedHeapObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setHeapObjectId(value: HeapSnapshotObjectId): Self = StObject.set(x, "heapObjectId", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object CropBar {
     __obj.asInstanceOf[CropBar]
   }
   
-  extension [Self <: CropBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CropBar] (val x: Self) extends AnyVal {
     
     inline def setCropBar(value: Boolean): Self = StObject.set(x, "cropBar", value.asInstanceOf[js.Any])
     

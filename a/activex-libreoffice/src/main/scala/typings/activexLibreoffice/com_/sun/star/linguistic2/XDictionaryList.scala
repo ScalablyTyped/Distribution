@@ -162,7 +162,8 @@ object XDictionaryList {
     __obj.asInstanceOf[XDictionaryList]
   }
   
-  extension [Self <: XDictionaryList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDictionaryList] (val x: Self) extends AnyVal {
     
     inline def setAddDictionary(value: XDictionary => Boolean): Self = StObject.set(x, "addDictionary", js.Any.fromFunction1(value))
     

@@ -34,7 +34,8 @@ object ColumnChartMediaInfo {
     __obj.asInstanceOf[ColumnChartMediaInfo]
   }
   
-  extension [Self <: ColumnChartMediaInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnChartMediaInfo] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

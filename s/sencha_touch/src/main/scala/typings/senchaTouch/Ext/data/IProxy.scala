@@ -144,7 +144,8 @@ object IProxy {
     __obj.asInstanceOf[IProxy]
   }
   
-  extension [Self <: IProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProxy] (val x: Self) extends AnyVal {
     
     inline def setBatch(value: /* options */ js.UndefOr[Any] => IBatch): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
     

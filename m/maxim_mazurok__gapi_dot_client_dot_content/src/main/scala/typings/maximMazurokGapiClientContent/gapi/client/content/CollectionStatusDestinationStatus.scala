@@ -19,7 +19,8 @@ object CollectionStatusDestinationStatus {
     __obj.asInstanceOf[CollectionStatusDestinationStatus]
   }
   
-  extension [Self <: CollectionStatusDestinationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionStatusDestinationStatus] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

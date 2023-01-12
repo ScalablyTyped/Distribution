@@ -26,7 +26,8 @@ object ChannelEnteredBridge {
     __obj.asInstanceOf[ChannelEnteredBridge]
   }
   
-  extension [Self <: ChannelEnteredBridge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelEnteredBridge] (val x: Self) extends AnyVal {
     
     inline def setBridge(value: Bridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
     

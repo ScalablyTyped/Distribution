@@ -15,7 +15,8 @@ object Cartfree {
     __obj.asInstanceOf[Cartfree]
   }
   
-  extension [Self <: Cartfree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cartfree] (val x: Self) extends AnyVal {
     
     inline def setCart_free(value: Boolean): Self = StObject.set(x, "cart_free", value.asInstanceOf[js.Any])
   }

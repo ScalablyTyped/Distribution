@@ -19,7 +19,8 @@ object GetNode {
     __obj.asInstanceOf[GetNode]
   }
   
-  extension [Self <: GetNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNode] (val x: Self) extends AnyVal {
     
     inline def setGetNode(value: () => ScrollableView): Self = StObject.set(x, "getNode", js.Any.fromFunction0(value))
   }

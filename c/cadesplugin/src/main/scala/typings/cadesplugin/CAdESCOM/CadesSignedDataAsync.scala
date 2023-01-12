@@ -75,7 +75,8 @@ object CadesSignedDataAsync {
     __obj.asInstanceOf[CadesSignedDataAsync]
   }
   
-  extension [Self <: CadesSignedDataAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CadesSignedDataAsync] (val x: Self) extends AnyVal {
     
     inline def setCertificates(
       value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.Certificates extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.Certificates> : // tslint:disable-line ban-types

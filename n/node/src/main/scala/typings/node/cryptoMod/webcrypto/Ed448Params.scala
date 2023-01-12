@@ -17,7 +17,8 @@ object Ed448Params {
     __obj.asInstanceOf[Ed448Params]
   }
   
-  extension [Self <: Ed448Params](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ed448Params] (val x: Self) extends AnyVal {
     
     inline def setContext(value: BufferSource): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

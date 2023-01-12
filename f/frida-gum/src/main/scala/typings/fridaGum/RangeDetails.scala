@@ -33,7 +33,8 @@ object RangeDetails {
     __obj.asInstanceOf[RangeDetails]
   }
   
-  extension [Self <: RangeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeDetails] (val x: Self) extends AnyVal {
     
     inline def setBase(value: NativePointer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

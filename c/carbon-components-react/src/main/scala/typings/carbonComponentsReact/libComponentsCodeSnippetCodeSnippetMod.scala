@@ -493,7 +493,8 @@ object libComponentsCodeSnippetCodeSnippetMod {
       __obj.asInstanceOf[CodeSnippetDivProps]
     }
     
-    extension [Self <: CodeSnippetDivProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeSnippetDivProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1655,7 +1656,8 @@ object libComponentsCodeSnippetCodeSnippetMod {
       __obj.asInstanceOf[CodeSnippetInlineProps]
     }
     
-    extension [Self <: CodeSnippetInlineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeSnippetInlineProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2839,7 +2841,8 @@ object libComponentsCodeSnippetCodeSnippetMod {
       __obj.asInstanceOf[CodeSnippetMultiProps]
     }
     
-    extension [Self <: CodeSnippetMultiProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeSnippetMultiProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -3651,7 +3654,8 @@ object libComponentsCodeSnippetCodeSnippetMod {
       __obj.asInstanceOf[SharedProps]
     }
     
-    extension [Self <: SharedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

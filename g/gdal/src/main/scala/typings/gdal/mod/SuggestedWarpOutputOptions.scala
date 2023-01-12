@@ -21,7 +21,8 @@ object SuggestedWarpOutputOptions {
     __obj.asInstanceOf[SuggestedWarpOutputOptions]
   }
   
-  extension [Self <: SuggestedWarpOutputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestedWarpOutputOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxError(value: Double): Self = StObject.set(x, "maxError", value.asInstanceOf[js.Any])
     

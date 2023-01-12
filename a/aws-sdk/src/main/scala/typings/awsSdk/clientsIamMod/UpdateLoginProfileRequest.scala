@@ -28,7 +28,8 @@ object UpdateLoginProfileRequest {
     __obj.asInstanceOf[UpdateLoginProfileRequest]
   }
   
-  extension [Self <: UpdateLoginProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLoginProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: passwordType): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object PeerStatusChange {
     __obj.asInstanceOf[PeerStatusChange]
   }
   
-  extension [Self <: PeerStatusChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerStatusChange] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

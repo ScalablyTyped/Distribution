@@ -21,7 +21,8 @@ object PrintOperation {
     __obj.asInstanceOf[PrintOperation]
   }
   
-  extension [Self <: PrintOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintOperation] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

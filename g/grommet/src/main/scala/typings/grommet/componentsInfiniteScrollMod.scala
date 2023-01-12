@@ -37,7 +37,8 @@ object componentsInfiniteScrollMod {
       __obj.asInstanceOf[InfiniteScrollProps]
     }
     
-    extension [Self <: InfiniteScrollProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfiniteScrollProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | js.Function): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

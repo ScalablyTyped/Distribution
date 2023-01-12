@@ -18,7 +18,8 @@ object PutAccountAliasRequest {
     __obj.asInstanceOf[PutAccountAliasRequest]
   }
   
-  extension [Self <: PutAccountAliasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAccountAliasRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountAlias(value: awsAccountAlias): Self = StObject.set(x, "accountAlias", value.asInstanceOf[js.Any])
   }

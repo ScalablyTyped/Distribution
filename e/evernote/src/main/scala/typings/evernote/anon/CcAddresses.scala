@@ -25,7 +25,8 @@ object CcAddresses {
     __obj.asInstanceOf[CcAddresses]
   }
   
-  extension [Self <: CcAddresses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcAddresses] (val x: Self) extends AnyVal {
     
     inline def setCcAddresses(value: js.Array[String]): Self = StObject.set(x, "ccAddresses", value.asInstanceOf[js.Any])
     

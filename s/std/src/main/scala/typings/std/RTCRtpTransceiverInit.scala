@@ -22,7 +22,8 @@ object RTCRtpTransceiverInit {
     __obj.asInstanceOf[RTCRtpTransceiverInit]
   }
   
-  extension [Self <: RTCRtpTransceiverInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtpTransceiverInit] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: RTCRtpTransceiverDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AwsEc2VpcEndpointServiceServiceTypeDetails {
     __obj.asInstanceOf[AwsEc2VpcEndpointServiceServiceTypeDetails]
   }
   
-  extension [Self <: AwsEc2VpcEndpointServiceServiceTypeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2VpcEndpointServiceServiceTypeDetails] (val x: Self) extends AnyVal {
     
     inline def setServiceType(value: NonEmptyString): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
     

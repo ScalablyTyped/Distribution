@@ -23,7 +23,8 @@ object FpgaImageState {
     __obj.asInstanceOf[FpgaImageState]
   }
   
-  extension [Self <: FpgaImageState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FpgaImageState] (val x: Self) extends AnyVal {
     
     inline def setCode(value: FpgaImageStateCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

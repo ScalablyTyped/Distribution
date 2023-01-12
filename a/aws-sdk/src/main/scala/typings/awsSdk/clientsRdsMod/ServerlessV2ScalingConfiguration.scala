@@ -23,7 +23,8 @@ object ServerlessV2ScalingConfiguration {
     __obj.asInstanceOf[ServerlessV2ScalingConfiguration]
   }
   
-  extension [Self <: ServerlessV2ScalingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerlessV2ScalingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMaxCapacity(value: DoubleOptional): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     

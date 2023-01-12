@@ -34,7 +34,8 @@ object IContactInstantMessageField {
     __obj.asInstanceOf[IContactInstantMessageField]
   }
   
-  extension [Self <: IContactInstantMessageField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContactInstantMessageField] (val x: Self) extends AnyVal {
     
     inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     

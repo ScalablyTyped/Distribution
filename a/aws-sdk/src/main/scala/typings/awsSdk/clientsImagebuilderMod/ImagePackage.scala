@@ -23,7 +23,8 @@ object ImagePackage {
     __obj.asInstanceOf[ImagePackage]
   }
   
-  extension [Self <: ImagePackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePackage] (val x: Self) extends AnyVal {
     
     inline def setPackageName(value: NonEmptyString): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     

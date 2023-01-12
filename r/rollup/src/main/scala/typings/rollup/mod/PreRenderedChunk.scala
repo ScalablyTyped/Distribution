@@ -38,7 +38,8 @@ object PreRenderedChunk {
     __obj.asInstanceOf[PreRenderedChunk]
   }
   
-  extension [Self <: PreRenderedChunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreRenderedChunk] (val x: Self) extends AnyVal {
     
     inline def setExports(value: js.Array[String]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     

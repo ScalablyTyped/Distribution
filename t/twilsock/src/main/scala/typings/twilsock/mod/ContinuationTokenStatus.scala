@@ -17,7 +17,8 @@ object ContinuationTokenStatus {
     __obj.asInstanceOf[ContinuationTokenStatus]
   }
   
-  extension [Self <: ContinuationTokenStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuationTokenStatus] (val x: Self) extends AnyVal {
     
     inline def setReissue_message(value: String): Self = StObject.set(x, "reissue_message", value.asInstanceOf[js.Any])
     

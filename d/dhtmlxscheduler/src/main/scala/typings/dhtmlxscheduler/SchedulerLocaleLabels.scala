@@ -59,7 +59,8 @@ object SchedulerLocaleLabels {
     __obj.asInstanceOf[SchedulerLocaleLabels]
   }
   
-  extension [Self <: SchedulerLocaleLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerLocaleLabels] (val x: Self) extends AnyVal {
     
     inline def setConfirm_closing(value: String): Self = StObject.set(x, "confirm_closing", value.asInstanceOf[js.Any])
     

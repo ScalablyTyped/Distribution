@@ -19,7 +19,8 @@ object CreateClientOptionsWithPromise {
     __obj.asInstanceOf[CreateClientOptionsWithPromise]
   }
   
-  extension [Self <: CreateClientOptionsWithPromise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateClientOptionsWithPromise] (val x: Self) extends AnyVal {
     
     inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
   }

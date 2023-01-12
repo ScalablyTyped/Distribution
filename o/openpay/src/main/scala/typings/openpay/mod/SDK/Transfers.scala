@@ -24,7 +24,8 @@ object Transfers {
     __obj.asInstanceOf[Transfers]
   }
   
-  extension [Self <: Transfers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transfers] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (Any, Callback[Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     

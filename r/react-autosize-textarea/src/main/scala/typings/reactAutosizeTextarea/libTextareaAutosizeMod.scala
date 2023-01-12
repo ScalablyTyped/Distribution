@@ -119,7 +119,8 @@ object libTextareaAutosizeMod {
         __obj.asInstanceOf[DefaultProps]
       }
       
-      extension [Self <: DefaultProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
         
         inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
         
@@ -708,7 +709,8 @@ object libTextareaAutosizeMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
         
@@ -2425,7 +2427,8 @@ object libTextareaAutosizeMod {
         __obj.asInstanceOf[RequiredProps]
       }
       
-      extension [Self <: RequiredProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequiredProps] (val x: Self) extends AnyVal {
         
         inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
         
@@ -3572,7 +3575,8 @@ object libTextareaAutosizeMod {
         __obj.asInstanceOf[State]
       }
       
-      extension [Self <: State](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
         
         inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
         

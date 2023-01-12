@@ -19,7 +19,8 @@ object GoogleCloudDialogflowV2beta1MessageAnnotation {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1MessageAnnotation]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1MessageAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1MessageAnnotation] (val x: Self) extends AnyVal {
     
     inline def setContainEntities(value: Boolean): Self = StObject.set(x, "containEntities", value.asInstanceOf[js.Any])
     

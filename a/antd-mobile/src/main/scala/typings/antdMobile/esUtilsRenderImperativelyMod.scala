@@ -26,7 +26,8 @@ object esUtilsRenderImperativelyMod {
       __obj.asInstanceOf[ImperativeHandler]
     }
     
-    extension [Self <: ImperativeHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImperativeHandler] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -49,7 +50,8 @@ object esUtilsRenderImperativelyMod {
       __obj.asInstanceOf[ImperativeProps]
     }
     
-    extension [Self <: ImperativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImperativeProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

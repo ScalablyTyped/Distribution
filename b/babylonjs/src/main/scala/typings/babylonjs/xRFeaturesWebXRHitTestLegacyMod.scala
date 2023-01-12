@@ -138,7 +138,8 @@ object xRFeaturesWebXRHitTestLegacyMod {
       __obj.asInstanceOf[IWebXRLegacyHitResult]
     }
     
-    extension [Self <: IWebXRLegacyHitResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRLegacyHitResult] (val x: Self) extends AnyVal {
       
       inline def setTransformationMatrix(value: Matrix): Self = StObject.set(x, "transformationMatrix", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object xRFeaturesWebXRHitTestLegacyMod {
       __obj.asInstanceOf[IWebXRLegacyHitTestOptions]
     }
     
-    extension [Self <: IWebXRLegacyHitTestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRLegacyHitTestOptions] (val x: Self) extends AnyVal {
       
       inline def setTestOnPointerDownOnly(value: Boolean): Self = StObject.set(x, "testOnPointerDownOnly", value.asInstanceOf[js.Any])
       

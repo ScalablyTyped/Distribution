@@ -78,7 +78,8 @@ object ITexturePackerOptions {
     __obj.asInstanceOf[ITexturePackerOptions]
   }
   
-  extension [Self <: ITexturePackerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITexturePackerOptions] (val x: Self) extends AnyVal {
     
     inline def setColnum(value: Double): Self = StObject.set(x, "colnum", value.asInstanceOf[js.Any])
     

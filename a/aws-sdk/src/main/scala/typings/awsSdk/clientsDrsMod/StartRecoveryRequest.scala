@@ -28,7 +28,8 @@ object StartRecoveryRequest {
     __obj.asInstanceOf[StartRecoveryRequest]
   }
   
-  extension [Self <: StartRecoveryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRecoveryRequest] (val x: Self) extends AnyVal {
     
     inline def setIsDrill(value: Boolean): Self = StObject.set(x, "isDrill", value.asInstanceOf[js.Any])
     

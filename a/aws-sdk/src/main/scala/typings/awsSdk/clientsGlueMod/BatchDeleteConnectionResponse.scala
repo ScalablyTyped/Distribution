@@ -23,7 +23,8 @@ object BatchDeleteConnectionResponse {
     __obj.asInstanceOf[BatchDeleteConnectionResponse]
   }
   
-  extension [Self <: BatchDeleteConnectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteConnectionResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: ErrorByName): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

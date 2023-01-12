@@ -17,7 +17,8 @@ object MP4RemuxerConfig {
     __obj.asInstanceOf[MP4RemuxerConfig]
   }
   
-  extension [Self <: MP4RemuxerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MP4RemuxerConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxAudioFramesDrift(value: Double): Self = StObject.set(x, "maxAudioFramesDrift", value.asInstanceOf[js.Any])
     

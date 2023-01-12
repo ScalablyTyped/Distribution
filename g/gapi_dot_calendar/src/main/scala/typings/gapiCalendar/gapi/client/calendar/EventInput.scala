@@ -67,7 +67,8 @@ object EventInput {
     __obj.asInstanceOf[EventInput]
   }
   
-  extension [Self <: EventInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventInput] (val x: Self) extends AnyVal {
     
     inline def setAnyoneCanAddSelf(value: Boolean): Self = StObject.set(x, "anyoneCanAddSelf", value.asInstanceOf[js.Any])
     

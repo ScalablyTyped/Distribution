@@ -23,7 +23,8 @@ object HierarchyGroupCondition {
     __obj.asInstanceOf[HierarchyGroupCondition]
   }
   
-  extension [Self <: HierarchyGroupCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HierarchyGroupCondition] (val x: Self) extends AnyVal {
     
     inline def setHierarchyGroupMatchType(value: HierarchyGroupMatchType): Self = StObject.set(x, "HierarchyGroupMatchType", value.asInstanceOf[js.Any])
     

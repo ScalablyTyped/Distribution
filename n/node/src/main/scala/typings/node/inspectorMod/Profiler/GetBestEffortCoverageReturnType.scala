@@ -18,7 +18,8 @@ object GetBestEffortCoverageReturnType {
     __obj.asInstanceOf[GetBestEffortCoverageReturnType]
   }
   
-  extension [Self <: GetBestEffortCoverageReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBestEffortCoverageReturnType] (val x: Self) extends AnyVal {
     
     inline def setResult(value: js.Array[ScriptCoverage]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

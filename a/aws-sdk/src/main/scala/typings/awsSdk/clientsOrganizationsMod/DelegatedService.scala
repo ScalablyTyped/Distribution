@@ -23,7 +23,8 @@ object DelegatedService {
     __obj.asInstanceOf[DelegatedService]
   }
   
-  extension [Self <: DelegatedService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelegatedService] (val x: Self) extends AnyVal {
     
     inline def setDelegationEnabledDate(value: js.Date): Self = StObject.set(x, "DelegationEnabledDate", value.asInstanceOf[js.Any])
     

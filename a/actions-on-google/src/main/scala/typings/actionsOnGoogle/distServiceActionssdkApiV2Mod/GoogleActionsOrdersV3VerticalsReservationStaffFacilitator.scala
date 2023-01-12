@@ -23,7 +23,8 @@ object GoogleActionsOrdersV3VerticalsReservationStaffFacilitator {
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsReservationStaffFacilitator]
   }
   
-  extension [Self <: GoogleActionsOrdersV3VerticalsReservationStaffFacilitator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3VerticalsReservationStaffFacilitator] (val x: Self) extends AnyVal {
     
     inline def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

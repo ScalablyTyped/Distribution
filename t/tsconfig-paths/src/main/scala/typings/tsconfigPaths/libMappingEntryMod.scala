@@ -26,7 +26,8 @@ object libMappingEntryMod {
       __obj.asInstanceOf[MappingEntry]
     }
     
-    extension [Self <: MappingEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappingEntry] (val x: Self) extends AnyVal {
       
       inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       

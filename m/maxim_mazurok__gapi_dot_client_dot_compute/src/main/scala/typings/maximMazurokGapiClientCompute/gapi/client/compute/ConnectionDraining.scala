@@ -16,7 +16,8 @@ object ConnectionDraining {
     __obj.asInstanceOf[ConnectionDraining]
   }
   
-  extension [Self <: ConnectionDraining](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionDraining] (val x: Self) extends AnyVal {
     
     inline def setDrainingTimeoutSec(value: Double): Self = StObject.set(x, "drainingTimeoutSec", value.asInstanceOf[js.Any])
     

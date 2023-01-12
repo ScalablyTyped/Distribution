@@ -34,7 +34,8 @@ object typesSizingUseResizeObserverMod {
       __obj.asInstanceOf[ResizeObserverElementData[E]]
     }
     
-    extension [Self <: ResizeObserverElementData[?], E /* <: HTMLElement */](x: Self & ResizeObserverElementData[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeObserverElementData[?], E /* <: HTMLElement */] (val x: Self & ResizeObserverElementData[E]) extends AnyVal {
       
       inline def setElement(value: E): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     }
@@ -69,7 +70,8 @@ object typesSizingUseResizeObserverMod {
       __obj.asInstanceOf[ResizeObserverElementSize]
     }
     
-    extension [Self <: ResizeObserverElementSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeObserverElementSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object typesSizingUseResizeObserverMod {
       __obj.asInstanceOf[UseResizeObserverOptions[E]]
     }
     
-    extension [Self <: UseResizeObserverOptions[?], E /* <: HTMLElement */](x: Self & UseResizeObserverOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseResizeObserverOptions[?], E /* <: HTMLElement */] (val x: Self & UseResizeObserverOptions[E]) extends AnyVal {
       
       inline def setDisableHeight(value: Boolean): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
       

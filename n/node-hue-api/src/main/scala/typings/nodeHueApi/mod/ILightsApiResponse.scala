@@ -15,7 +15,8 @@ object ILightsApiResponse {
     __obj.asInstanceOf[ILightsApiResponse]
   }
   
-  extension [Self <: ILightsApiResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILightsApiResponse] (val x: Self) extends AnyVal {
     
     inline def setLights(value: js.Array[ILight]): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
     

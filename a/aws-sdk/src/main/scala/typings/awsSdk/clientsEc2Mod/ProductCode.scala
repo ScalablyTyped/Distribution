@@ -23,7 +23,8 @@ object ProductCode {
     __obj.asInstanceOf[ProductCode]
   }
   
-  extension [Self <: ProductCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductCode] (val x: Self) extends AnyVal {
     
     inline def setProductCodeId(value: String): Self = StObject.set(x, "ProductCodeId", value.asInstanceOf[js.Any])
     

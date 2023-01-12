@@ -99,7 +99,8 @@ object distSrcNameMod {
       __obj.asInstanceOf[PublishOptions]
     }
     
-    extension [Self <: PublishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowOffline(value: Boolean): Self = StObject.set(x, "allowOffline", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object distSrcNameMod {
       __obj.asInstanceOf[PublishResult]
     }
     
-    extension [Self <: PublishResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishResult] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -171,7 +173,8 @@ object distSrcNameMod {
       __obj.asInstanceOf[ResolveOptions]
     }
     
-    extension [Self <: ResolveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveOptions] (val x: Self) extends AnyVal {
       
       inline def setNocache(value: Boolean): Self = StObject.set(x, "nocache", value.asInstanceOf[js.Any])
       

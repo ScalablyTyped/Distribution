@@ -33,7 +33,8 @@ object UpdateWorldTemplateRequest {
     __obj.asInstanceOf[UpdateWorldTemplateRequest]
   }
   
-  extension [Self <: UpdateWorldTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWorldTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: TemplateName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

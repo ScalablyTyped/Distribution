@@ -19,7 +19,8 @@ object ProxiedDomain {
     __obj.asInstanceOf[ProxiedDomain]
   }
   
-  extension [Self <: ProxiedDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxiedDomain] (val x: Self) extends AnyVal {
     
     inline def setIpAddressOrFQDN(value: String): Self = StObject.set(x, "ipAddressOrFQDN", value.asInstanceOf[js.Any])
     

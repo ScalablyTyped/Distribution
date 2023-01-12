@@ -26,7 +26,8 @@ object ShareTournamentPayload {
     __obj.asInstanceOf[ShareTournamentPayload]
   }
   
-  extension [Self <: ShareTournamentPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareTournamentPayload] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

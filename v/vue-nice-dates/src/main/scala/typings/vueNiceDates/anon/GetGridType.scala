@@ -32,7 +32,8 @@ object GetGridType {
     __obj.asInstanceOf[GetGridType]
   }
   
-  extension [Self <: GetGridType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGridType] (val x: Self) extends AnyVal {
     
     inline def setGetGridType(value: (String, Boolean) => String): Self = StObject.set(x, "getGridType", js.Any.fromFunction2(value))
     

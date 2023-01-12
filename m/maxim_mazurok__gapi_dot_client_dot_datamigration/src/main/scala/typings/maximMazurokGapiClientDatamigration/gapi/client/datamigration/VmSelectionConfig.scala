@@ -16,7 +16,8 @@ object VmSelectionConfig {
     __obj.asInstanceOf[VmSelectionConfig]
   }
   
-  extension [Self <: VmSelectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VmSelectionConfig] (val x: Self) extends AnyVal {
     
     inline def setVmZone(value: String): Self = StObject.set(x, "vmZone", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Arguments]
     }
     
-    extension [Self <: Arguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arguments] (val x: Self) extends AnyVal {
       
       inline def set_underscore(value: js.Array[String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UnparserOptions]
     }
     
-    extension [Self <: UnparserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnparserOptions] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: Record[String, js.Array[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

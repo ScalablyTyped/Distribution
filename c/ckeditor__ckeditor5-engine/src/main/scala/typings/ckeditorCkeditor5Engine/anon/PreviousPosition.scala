@@ -36,7 +36,8 @@ object PreviousPosition {
     __obj.asInstanceOf[PreviousPosition]
   }
   
-  extension [Self <: PreviousPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviousPosition] (val x: Self) extends AnyVal {
     
     inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

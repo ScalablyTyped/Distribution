@@ -35,7 +35,8 @@ object XContentProviderFactory {
     __obj.asInstanceOf[XContentProviderFactory]
   }
   
-  extension [Self <: XContentProviderFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContentProviderFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateContentProvider(value: String => XContentProvider): Self = StObject.set(x, "createContentProvider", js.Any.fromFunction1(value))
   }

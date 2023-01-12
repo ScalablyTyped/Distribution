@@ -46,7 +46,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigureOptions]
     }
     
-    extension [Self <: ConfigureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigureOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[metadata]
     }
     
-    extension [Self <: metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: metadata] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

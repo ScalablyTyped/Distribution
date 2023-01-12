@@ -139,7 +139,8 @@ object GroupButton {
       __obj.asInstanceOf[BeforeSelectEventArgs]
     }
     
-    extension [Self <: BeforeSelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeSelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -200,7 +201,8 @@ object GroupButton {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -237,7 +239,8 @@ object GroupButton {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -298,7 +301,8 @@ object GroupButton {
       __obj.asInstanceOf[KeyPressEventArgs]
     }
     
-    extension [Self <: KeyPressEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPressEventArgs] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -436,7 +440,8 @@ object GroupButton {
       __obj.asInstanceOf[typings.ejWebAll.ej.GroupButton.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.GroupButton.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.GroupButton.Model] (val x: Self) extends AnyVal {
       
       inline def setBeforeSelect(value: /* e */ BeforeSelectEventArgs => Unit): Self = StObject.set(x, "beforeSelect", js.Any.fromFunction1(value))
       
@@ -563,7 +568,8 @@ object GroupButton {
       __obj.asInstanceOf[SelectEventArgs]
     }
     
-    extension [Self <: SelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

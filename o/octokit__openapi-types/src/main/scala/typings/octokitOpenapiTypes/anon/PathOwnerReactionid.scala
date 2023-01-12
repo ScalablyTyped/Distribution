@@ -15,7 +15,8 @@ object PathOwnerReactionid {
     __obj.asInstanceOf[PathOwnerReactionid]
   }
   
-  extension [Self <: PathOwnerReactionid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathOwnerReactionid] (val x: Self) extends AnyVal {
     
     inline def setPath(value: OwnerReactionid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

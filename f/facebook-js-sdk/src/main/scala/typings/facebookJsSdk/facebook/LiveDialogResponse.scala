@@ -23,7 +23,8 @@ object LiveDialogResponse {
     __obj.asInstanceOf[LiveDialogResponse]
   }
   
-  extension [Self <: LiveDialogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveDialogResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

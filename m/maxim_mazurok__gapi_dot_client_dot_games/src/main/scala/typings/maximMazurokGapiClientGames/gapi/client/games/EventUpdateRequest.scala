@@ -22,7 +22,8 @@ object EventUpdateRequest {
     __obj.asInstanceOf[EventUpdateRequest]
   }
   
-  extension [Self <: EventUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     

@@ -102,7 +102,8 @@ object FancytreeEvents {
     __obj.asInstanceOf[FancytreeEvents]
   }
   
-  extension [Self <: FancytreeEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancytreeEvents] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
     

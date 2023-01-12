@@ -47,7 +47,8 @@ object distCacheDistributedIpartitionmanagerMod {
       __obj.asInstanceOf[IPartitionManager]
     }
     
-    extension [Self <: IPartitionManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPartitionManager] (val x: Self) extends AnyVal {
       
       inline def setExtractKey(value: AccountEntity => js.Promise[String]): Self = StObject.set(x, "extractKey", js.Any.fromFunction1(value))
       

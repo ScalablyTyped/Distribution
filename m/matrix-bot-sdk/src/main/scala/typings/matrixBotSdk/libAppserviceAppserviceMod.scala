@@ -294,7 +294,8 @@ object libAppserviceAppserviceMod {
       __obj.asInstanceOf[IAppserviceOptions]
     }
     
-    extension [Self <: IAppserviceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAppserviceOptions] (val x: Self) extends AnyVal {
       
       inline def setBindAddress(value: String): Self = StObject.set(x, "bindAddress", value.asInstanceOf[js.Any])
       
@@ -383,7 +384,8 @@ object libAppserviceAppserviceMod {
       __obj.asInstanceOf[IAppserviceRegistration]
     }
     
-    extension [Self <: IAppserviceRegistration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAppserviceRegistration] (val x: Self) extends AnyVal {
       
       inline def setAs_token(value: String): Self = StObject.set(x, "as_token", value.asInstanceOf[js.Any])
       

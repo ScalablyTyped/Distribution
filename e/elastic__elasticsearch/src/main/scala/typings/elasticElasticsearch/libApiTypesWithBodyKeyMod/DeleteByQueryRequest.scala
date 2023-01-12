@@ -77,7 +77,8 @@ object DeleteByQueryRequest {
     __obj.asInstanceOf[DeleteByQueryRequest]
   }
   
-  extension [Self <: DeleteByQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteByQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object EndpointArgumentjsonpstri {
     __obj.asInstanceOf[EndpointArgumentjsonpstri]
   }
   
-  extension [Self <: EndpointArgumentjsonpstri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointArgumentjsonpstri] (val x: Self) extends AnyVal {
     
     inline def setJsonp(value: String): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     

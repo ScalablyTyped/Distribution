@@ -50,7 +50,8 @@ object ClinicalUseIssueIndication {
     __obj.asInstanceOf[ClinicalUseIssueIndication]
   }
   
-  extension [Self <: ClinicalUseIssueIndication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClinicalUseIssueIndication] (val x: Self) extends AnyVal {
     
     inline def setComorbidity(value: js.Array[CodeableReference]): Self = StObject.set(x, "comorbidity", value.asInstanceOf[js.Any])
     

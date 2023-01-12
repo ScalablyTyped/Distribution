@@ -18,7 +18,8 @@ object ResponseGetBuildsV2200 {
     __obj.asInstanceOf[ResponseGetBuildsV2200]
   }
   
-  extension [Self <: ResponseGetBuildsV2200](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseGetBuildsV2200] (val x: Self) extends AnyVal {
     
     inline def setBuilds(value: js.Array[BuildV2]): Self = StObject.set(x, "builds", value.asInstanceOf[js.Any])
     

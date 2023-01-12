@@ -48,7 +48,8 @@ object BusinessNotebook {
     __obj.asInstanceOf[BusinessNotebook]
   }
   
-  extension [Self <: BusinessNotebook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessNotebook] (val x: Self) extends AnyVal {
     
     inline def setBusinessNotebook(value: typings.evernote.mod.Types.BusinessNotebook): Self = StObject.set(x, "businessNotebook", value.asInstanceOf[js.Any])
     

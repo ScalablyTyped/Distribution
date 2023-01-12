@@ -44,7 +44,8 @@ object esCacheMod {
       __obj.asInstanceOf[Entity]
     }
     
-    extension [Self <: Entity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Map[String, ValueType]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

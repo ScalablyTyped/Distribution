@@ -17,7 +17,8 @@ object MaxAttrs {
     __obj.asInstanceOf[MaxAttrs]
   }
   
-  extension [Self <: MaxAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxAttrs] (val x: Self) extends AnyVal {
     
     inline def setKeepDims(value: Boolean): Self = StObject.set(x, "keepDims", value.asInstanceOf[js.Any])
     

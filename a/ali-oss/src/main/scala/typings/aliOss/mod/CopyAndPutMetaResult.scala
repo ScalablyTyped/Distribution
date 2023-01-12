@@ -17,7 +17,8 @@ object CopyAndPutMetaResult {
     __obj.asInstanceOf[CopyAndPutMetaResult]
   }
   
-  extension [Self <: CopyAndPutMetaResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyAndPutMetaResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: ModifyData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

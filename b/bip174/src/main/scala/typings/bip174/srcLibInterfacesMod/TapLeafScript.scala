@@ -18,7 +18,8 @@ object TapLeafScript {
     __obj.asInstanceOf[TapLeafScript]
   }
   
-  extension [Self <: TapLeafScript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TapLeafScript] (val x: Self) extends AnyVal {
     
     inline def setControlBlock(value: ControlBlock): Self = StObject.set(x, "controlBlock", value.asInstanceOf[js.Any])
   }

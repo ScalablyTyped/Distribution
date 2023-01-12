@@ -17,7 +17,8 @@ object Blanket {
     __obj.asInstanceOf[Blanket]
   }
   
-  extension [Self <: Blanket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blanket] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Brand): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

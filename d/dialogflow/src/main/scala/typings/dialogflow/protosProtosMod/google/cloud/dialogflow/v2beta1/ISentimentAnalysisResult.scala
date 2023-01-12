@@ -17,7 +17,8 @@ object ISentimentAnalysisResult {
     __obj.asInstanceOf[ISentimentAnalysisResult]
   }
   
-  extension [Self <: ISentimentAnalysisResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISentimentAnalysisResult] (val x: Self) extends AnyVal {
     
     inline def setQueryTextSentiment(value: ISentiment): Self = StObject.set(x, "queryTextSentiment", value.asInstanceOf[js.Any])
     

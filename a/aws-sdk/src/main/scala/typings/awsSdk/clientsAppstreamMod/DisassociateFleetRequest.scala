@@ -23,7 +23,8 @@ object DisassociateFleetRequest {
     __obj.asInstanceOf[DisassociateFleetRequest]
   }
   
-  extension [Self <: DisassociateFleetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateFleetRequest] (val x: Self) extends AnyVal {
     
     inline def setFleetName(value: String): Self = StObject.set(x, "FleetName", value.asInstanceOf[js.Any])
     

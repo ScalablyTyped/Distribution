@@ -20,7 +20,8 @@ object ProxyLocation {
     __obj.asInstanceOf[ProxyLocation]
   }
   
-  extension [Self <: ProxyLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyLocation] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     

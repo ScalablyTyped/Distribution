@@ -33,7 +33,8 @@ object ListMembersRequest {
     __obj.asInstanceOf[ListMembersRequest]
   }
   
-  extension [Self <: ListMembersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMembersRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     

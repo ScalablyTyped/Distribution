@@ -98,7 +98,8 @@ object distNodeEsmSrcCoreAuthTokenProviderMod {
       __obj.asInstanceOf[AuthTokenProvider]
     }
     
-    extension [Self <: AuthTokenProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthTokenProvider] (val x: Self) extends AnyVal {
       
       inline def setAddTokenChangeListener(value: js.Function1[/* token */ String | Null, Unit] => Unit): Self = StObject.set(x, "addTokenChangeListener", js.Any.fromFunction1(value))
       

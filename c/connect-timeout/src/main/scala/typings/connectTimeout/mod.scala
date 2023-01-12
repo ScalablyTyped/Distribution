@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[TimeoutOptions]
     }
     
-    extension [Self <: TimeoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeoutOptions] (val x: Self) extends AnyVal {
       
       inline def setRespond(value: Boolean): Self = StObject.set(x, "respond", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object ReturnTypeCloseTargetResponse {
     __obj.asInstanceOf[ReturnTypeCloseTargetResponse]
   }
   
-  extension [Self <: ReturnTypeCloseTargetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeCloseTargetResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[CloseTargetRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

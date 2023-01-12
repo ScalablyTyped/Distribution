@@ -17,7 +17,8 @@ object HeroObjectiveKillsAverage {
     __obj.asInstanceOf[HeroObjectiveKillsAverage]
   }
   
-  extension [Self <: HeroObjectiveKillsAverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeroObjectiveKillsAverage] (val x: Self) extends AnyVal {
     
     inline def setObjective_kills_average(value: String): Self = StObject.set(x, "objective_kills_average", value.asInstanceOf[js.Any])
   }

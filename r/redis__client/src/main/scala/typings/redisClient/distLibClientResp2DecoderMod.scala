@@ -165,7 +165,8 @@ object distLibClientResp2DecoderMod {
       __obj.asInstanceOf[RESP2Decoder]
     }
     
-    extension [Self <: RESP2Decoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RESP2Decoder] (val x: Self) extends AnyVal {
       
       inline def setArrayItemType(value: Any): Self = StObject.set(x, "arrayItemType", value.asInstanceOf[js.Any])
       
@@ -230,7 +231,8 @@ object distLibClientResp2DecoderMod {
       __obj.asInstanceOf[RESP2Options]
     }
     
-    extension [Self <: RESP2Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RESP2Options] (val x: Self) extends AnyVal {
       
       inline def setOnReply(value: Reply => Any): Self = StObject.set(x, "onReply", js.Any.fromFunction1(value))
       

@@ -143,7 +143,8 @@ object mod {
           __obj.asInstanceOf[AreaRenderingOptions]
         }
         
-        extension [Self <: AreaRenderingOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AreaRenderingOptions] (val x: Self) extends AnyVal {
           
           inline def setIncludeKeys(value: String): Self = StObject.set(x, "includeKeys", value.asInstanceOf[js.Any])
           
@@ -194,7 +195,8 @@ object mod {
           __obj.asInstanceOf[OnClickData]
         }
         
-        extension [Self <: OnClickData](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: OnClickData] (val x: Self) extends AnyVal {
           
           inline def setE(value: JQueryEventObject): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
           
@@ -234,7 +236,8 @@ object mod {
           __obj.asInstanceOf[OnGetListData]
         }
         
-        extension [Self <: OnGetListData](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: OnGetListData] (val x: Self) extends AnyVal {
           
           inline def setArea(value: js.Array[Any]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
           
@@ -271,7 +274,8 @@ object mod {
           __obj.asInstanceOf[OnMouseData]
         }
         
-        extension [Self <: OnMouseData](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: OnMouseData] (val x: Self) extends AnyVal {
           
           inline def setE(value: JQueryEventObject): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
           
@@ -309,7 +313,8 @@ object mod {
           __obj.asInstanceOf[OnShowToolTipData]
         }
         
-        extension [Self <: OnShowToolTipData](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: OnShowToolTipData] (val x: Self) extends AnyVal {
           
           inline def setAreaOptions(value: AreaRenderingOptions): Self = StObject.set(x, "areaOptions", value.asInstanceOf[js.Any])
           
@@ -342,7 +347,8 @@ object mod {
           __obj.asInstanceOf[OnStateChangeData]
         }
         
-        extension [Self <: OnStateChangeData](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: OnStateChangeData] (val x: Self) extends AnyVal {
           
           inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
           
@@ -726,7 +732,8 @@ object mod {
           __obj.asInstanceOf[Options]
         }
         
-        extension [Self <: Options](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
           
           inline def setAreas(value: js.Array[AreaRenderingOptions]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
           
@@ -1007,7 +1014,8 @@ object mod {
           __obj.asInstanceOf[RenderingOptions]
         }
         
-        extension [Self <: RenderingOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: RenderingOptions] (val x: Self) extends AnyVal {
           
           inline def setAltImage(value: String): Self = StObject.set(x, "altImage", value.asInstanceOf[js.Any])
           

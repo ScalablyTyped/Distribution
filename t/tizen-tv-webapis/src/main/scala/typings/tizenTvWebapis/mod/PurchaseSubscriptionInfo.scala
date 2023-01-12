@@ -21,7 +21,8 @@ object PurchaseSubscriptionInfo {
     __obj.asInstanceOf[PurchaseSubscriptionInfo]
   }
   
-  extension [Self <: PurchaseSubscriptionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseSubscriptionInfo] (val x: Self) extends AnyVal {
     
     inline def setSubsEndTime(value: String): Self = StObject.set(x, "SubsEndTime", value.asInstanceOf[js.Any])
     

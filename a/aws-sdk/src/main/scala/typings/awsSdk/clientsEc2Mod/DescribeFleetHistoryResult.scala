@@ -38,7 +38,8 @@ object DescribeFleetHistoryResult {
     __obj.asInstanceOf[DescribeFleetHistoryResult]
   }
   
-  extension [Self <: DescribeFleetHistoryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFleetHistoryResult] (val x: Self) extends AnyVal {
     
     inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     

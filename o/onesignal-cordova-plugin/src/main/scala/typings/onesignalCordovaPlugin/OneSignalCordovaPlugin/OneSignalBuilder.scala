@@ -30,7 +30,8 @@ object OneSignalBuilder {
     __obj.asInstanceOf[OneSignalBuilder]
   }
   
-  extension [Self <: OneSignalBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OneSignalBuilder] (val x: Self) extends AnyVal {
     
     inline def setEndInit(value: () => Unit): Self = StObject.set(x, "endInit", js.Any.fromFunction0(value))
     

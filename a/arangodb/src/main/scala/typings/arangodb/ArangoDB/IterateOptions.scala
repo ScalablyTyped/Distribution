@@ -17,7 +17,8 @@ object IterateOptions {
     __obj.asInstanceOf[IterateOptions]
   }
   
-  extension [Self <: IterateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IterateOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

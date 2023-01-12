@@ -18,7 +18,8 @@ object ListMetadataQuery {
     __obj.asInstanceOf[ListMetadataQuery]
   }
   
-  extension [Self <: ListMetadataQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMetadataQuery] (val x: Self) extends AnyVal {
     
     inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     

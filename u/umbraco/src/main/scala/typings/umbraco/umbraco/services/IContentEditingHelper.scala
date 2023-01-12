@@ -110,7 +110,8 @@ object IContentEditingHelper {
     __obj.asInstanceOf[IContentEditingHelper]
   }
   
-  extension [Self <: IContentEditingHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContentEditingHelper] (val x: Self) extends AnyVal {
     
     inline def setGetAllProps(value: Any => Any): Self = StObject.set(x, "getAllProps", js.Any.fromFunction1(value))
     

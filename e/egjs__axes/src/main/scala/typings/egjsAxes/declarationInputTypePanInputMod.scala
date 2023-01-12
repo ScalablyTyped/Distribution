@@ -124,7 +124,8 @@ object declarationInputTypePanInputMod {
       __obj.asInstanceOf[PanInputOption]
     }
     
-    extension [Self <: PanInputOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanInputOption] (val x: Self) extends AnyVal {
       
       inline def setIOSEdgeSwipeThreshold(value: Double): Self = StObject.set(x, "iOSEdgeSwipeThreshold", value.asInstanceOf[js.Any])
       

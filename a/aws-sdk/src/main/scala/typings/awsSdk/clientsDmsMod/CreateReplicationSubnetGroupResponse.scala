@@ -18,7 +18,8 @@ object CreateReplicationSubnetGroupResponse {
     __obj.asInstanceOf[CreateReplicationSubnetGroupResponse]
   }
   
-  extension [Self <: CreateReplicationSubnetGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReplicationSubnetGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setReplicationSubnetGroup(value: ReplicationSubnetGroup): Self = StObject.set(x, "ReplicationSubnetGroup", value.asInstanceOf[js.Any])
     

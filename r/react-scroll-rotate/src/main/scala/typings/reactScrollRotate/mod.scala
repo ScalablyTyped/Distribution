@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[ScrollRotateProps]
     }
     
-    extension [Self <: ScrollRotateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollRotateProps] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       

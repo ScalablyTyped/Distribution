@@ -48,7 +48,8 @@ object FileOperationClientCapabilities {
     __obj.asInstanceOf[FileOperationClientCapabilities]
   }
   
-  extension [Self <: FileOperationClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileOperationClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setDidCreate(value: Boolean): Self = StObject.set(x, "didCreate", value.asInstanceOf[js.Any])
     

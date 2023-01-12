@@ -35,7 +35,8 @@ object XRangeXMLConversion {
     __obj.asInstanceOf[XRangeXMLConversion]
   }
   
-  extension [Self <: XRangeXMLConversion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRangeXMLConversion] (val x: Self) extends AnyVal {
     
     inline def setConvertRangeFromXML(value: String => String): Self = StObject.set(x, "convertRangeFromXML", js.Any.fromFunction1(value))
     

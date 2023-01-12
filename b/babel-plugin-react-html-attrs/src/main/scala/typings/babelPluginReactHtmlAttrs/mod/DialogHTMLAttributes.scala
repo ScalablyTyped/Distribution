@@ -17,7 +17,8 @@ object DialogHTMLAttributes {
     __obj.asInstanceOf[DialogHTMLAttributes[T]]
   }
   
-  extension [Self <: DialogHTMLAttributes[?], T](x: Self & DialogHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogHTMLAttributes[?], T] (val x: Self & DialogHTMLAttributes[T]) extends AnyVal {
     
     inline def setOpen(value: Boolean | String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     

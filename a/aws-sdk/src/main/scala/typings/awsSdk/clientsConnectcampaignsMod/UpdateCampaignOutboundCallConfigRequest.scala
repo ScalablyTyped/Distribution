@@ -21,7 +21,8 @@ object UpdateCampaignOutboundCallConfigRequest {
     __obj.asInstanceOf[UpdateCampaignOutboundCallConfigRequest]
   }
   
-  extension [Self <: UpdateCampaignOutboundCallConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCampaignOutboundCallConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setAnswerMachineDetectionConfig(value: AnswerMachineDetectionConfig): Self = StObject.set(x, "answerMachineDetectionConfig", value.asInstanceOf[js.Any])
     

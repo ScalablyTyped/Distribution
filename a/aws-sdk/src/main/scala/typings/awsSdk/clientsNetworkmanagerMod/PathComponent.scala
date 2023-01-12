@@ -28,7 +28,8 @@ object PathComponent {
     __obj.asInstanceOf[PathComponent]
   }
   
-  extension [Self <: PathComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathComponent] (val x: Self) extends AnyVal {
     
     inline def setDestinationCidrBlock(value: ConstrainedString): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     

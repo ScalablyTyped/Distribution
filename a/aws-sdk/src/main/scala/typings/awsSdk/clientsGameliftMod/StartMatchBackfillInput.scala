@@ -33,7 +33,8 @@ object StartMatchBackfillInput {
     __obj.asInstanceOf[StartMatchBackfillInput]
   }
   
-  extension [Self <: StartMatchBackfillInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMatchBackfillInput] (val x: Self) extends AnyVal {
     
     inline def setConfigurationName(value: MatchmakingConfigurationName): Self = StObject.set(x, "ConfigurationName", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object IconCollections {
     __obj.asInstanceOf[IconCollections]
   }
   
-  extension [Self <: IconCollections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconCollections] (val x: Self) extends AnyVal {
     
     inline def setFiveArrows(value: FiveArrowsSet): Self = StObject.set(x, "fiveArrows", value.asInstanceOf[js.Any])
     

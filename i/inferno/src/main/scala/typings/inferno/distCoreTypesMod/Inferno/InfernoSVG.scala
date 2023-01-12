@@ -732,7 +732,8 @@ object InfernoSVG {
     __obj.asInstanceOf[InfernoSVG]
   }
   
-  extension [Self <: InfernoSVG](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfernoSVG] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: SVGFactory): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Application]
     }
     
-    extension [Self <: Application](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: ApplicationConfig): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Dictrest]
     }
     
-    extension [Self <: Dictrest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictrest] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Record[String, Any]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       

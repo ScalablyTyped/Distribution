@@ -18,7 +18,8 @@ object CopyBackupToRegionResponse {
     __obj.asInstanceOf[CopyBackupToRegionResponse]
   }
   
-  extension [Self <: CopyBackupToRegionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyBackupToRegionResponse] (val x: Self) extends AnyVal {
     
     inline def setDestinationBackup(value: DestinationBackup): Self = StObject.set(x, "DestinationBackup", value.asInstanceOf[js.Any])
     

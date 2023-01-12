@@ -25,7 +25,8 @@ object Spy {
     __obj.asInstanceOf[Spy]
   }
   
-  extension [Self <: Spy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spy] (val x: Self) extends AnyVal {
     
     inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

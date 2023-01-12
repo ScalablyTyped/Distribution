@@ -259,7 +259,8 @@ object INavigationService {
     __obj.asInstanceOf[INavigationService]
   }
   
-  extension [Self <: INavigationService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INavigationService] (val x: Self) extends AnyVal {
     
     inline def setChangeSection(value: (String, Boolean) => Unit): Self = StObject.set(x, "changeSection", js.Any.fromFunction2(value))
     

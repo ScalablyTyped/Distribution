@@ -17,7 +17,8 @@ object AdFrameStatus {
     __obj.asInstanceOf[AdFrameStatus]
   }
   
-  extension [Self <: AdFrameStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdFrameStatus] (val x: Self) extends AnyVal {
     
     inline def setAdFrameType(value: AdFrameType): Self = StObject.set(x, "adFrameType", value.asInstanceOf[js.Any])
     

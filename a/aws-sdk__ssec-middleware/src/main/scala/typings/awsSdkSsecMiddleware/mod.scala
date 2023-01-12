@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[SsecMiddlewareConfiguration[Input]]
     }
     
-    extension [Self <: SsecMiddlewareConfiguration[?], Input /* <: js.Object */](x: Self & SsecMiddlewareConfiguration[Input]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SsecMiddlewareConfiguration[?], Input /* <: js.Object */] (val x: Self & SsecMiddlewareConfiguration[Input]) extends AnyVal {
       
       inline def setBase64Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       

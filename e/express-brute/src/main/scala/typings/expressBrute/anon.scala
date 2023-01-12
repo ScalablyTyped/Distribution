@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Reset]
     }
     
-    extension [Self <: Reset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reset] (val x: Self) extends AnyVal {
       
       inline def setReset(value: /* callback */ js.UndefOr[js.Function0[Unit]] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
       

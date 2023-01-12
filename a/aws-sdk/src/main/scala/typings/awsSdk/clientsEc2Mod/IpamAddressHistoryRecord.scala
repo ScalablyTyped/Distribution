@@ -68,7 +68,8 @@ object IpamAddressHistoryRecord {
     __obj.asInstanceOf[IpamAddressHistoryRecord]
   }
   
-  extension [Self <: IpamAddressHistoryRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpamAddressHistoryRecord] (val x: Self) extends AnyVal {
     
     inline def setResourceCidr(value: String): Self = StObject.set(x, "ResourceCidr", value.asInstanceOf[js.Any])
     

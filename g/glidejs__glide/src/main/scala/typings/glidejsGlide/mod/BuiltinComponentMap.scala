@@ -68,7 +68,8 @@ object BuiltinComponentMap {
     __obj.asInstanceOf[BuiltinComponentMap]
   }
   
-  extension [Self <: BuiltinComponentMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltinComponentMap] (val x: Self) extends AnyVal {
     
     inline def setAnchors(value: AnchorsComponent): Self = StObject.set(x, "Anchors", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetMLModelInput {
     __obj.asInstanceOf[GetMLModelInput]
   }
   
-  extension [Self <: GetMLModelInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMLModelInput] (val x: Self) extends AnyVal {
     
     inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     

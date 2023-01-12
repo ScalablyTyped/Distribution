@@ -54,7 +54,8 @@ object distTypesScalesDivergingColorScaleMod {
       __obj.asInstanceOf[DivergingColorScaleBaseConfig]
     }
     
-    extension [Self <: DivergingColorScaleBaseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DivergingColorScaleBaseConfig] (val x: Self) extends AnyVal {
       
       inline def setDivergeAt(value: Double): Self = StObject.set(x, "divergeAt", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object distTypesScalesDivergingColorScaleMod {
       __obj.asInstanceOf[DivergingColorScaleColorsConfig]
     }
     
-    extension [Self <: DivergingColorScaleColorsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DivergingColorScaleColorsConfig] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Tuple3[String, String, String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     }
@@ -137,7 +139,8 @@ object distTypesScalesDivergingColorScaleMod {
       __obj.asInstanceOf[DivergingColorScaleInterpolatorConfig]
     }
     
-    extension [Self <: DivergingColorScaleInterpolatorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DivergingColorScaleInterpolatorConfig] (val x: Self) extends AnyVal {
       
       inline def setInterpolator(value: Double => String): Self = StObject.set(x, "interpolator", js.Any.fromFunction1(value))
     }
@@ -158,7 +161,8 @@ object distTypesScalesDivergingColorScaleMod {
       __obj.asInstanceOf[DivergingColorScaleSchemeConfig]
     }
     
-    extension [Self <: DivergingColorScaleSchemeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DivergingColorScaleSchemeConfig] (val x: Self) extends AnyVal {
       
       inline def setScheme(value: ColorInterpolatorId): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
@@ -181,7 +185,8 @@ object distTypesScalesDivergingColorScaleMod {
       __obj.asInstanceOf[DivergingColorScaleValues]
     }
     
-    extension [Self <: DivergingColorScaleValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DivergingColorScaleValues] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

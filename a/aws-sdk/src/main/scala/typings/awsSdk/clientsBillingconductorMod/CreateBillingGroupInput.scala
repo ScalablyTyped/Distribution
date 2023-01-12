@@ -52,7 +52,8 @@ object CreateBillingGroupInput {
     __obj.asInstanceOf[CreateBillingGroupInput]
   }
   
-  extension [Self <: CreateBillingGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBillingGroupInput] (val x: Self) extends AnyVal {
     
     inline def setAccountGrouping(value: AccountGrouping): Self = StObject.set(x, "AccountGrouping", value.asInstanceOf[js.Any])
     

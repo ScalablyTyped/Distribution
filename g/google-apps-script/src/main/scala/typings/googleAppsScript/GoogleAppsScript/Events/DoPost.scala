@@ -26,7 +26,8 @@ object DoPost {
     __obj.asInstanceOf[DoPost]
   }
   
-  extension [Self <: DoPost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoPost] (val x: Self) extends AnyVal {
     
     inline def setPostData(value: AppsScriptHttpRequestEventPostData): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
   }

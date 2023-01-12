@@ -47,7 +47,8 @@ object treeParseTreeListenerMod {
       __obj.asInstanceOf[ParseTreeListener]
     }
     
-    extension [Self <: ParseTreeListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseTreeListener] (val x: Self) extends AnyVal {
       
       inline def setEnterEveryRule(value: typings.antlr4.contextParserRuleContextMod.default => Unit): Self = StObject.set(x, "enterEveryRule", js.Any.fromFunction1(value))
       

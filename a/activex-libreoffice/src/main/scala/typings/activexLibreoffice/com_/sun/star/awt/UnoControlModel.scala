@@ -92,7 +92,8 @@ object UnoControlModel {
     __obj.asInstanceOf[UnoControlModel]
   }
   
-  extension [Self <: UnoControlModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlModel] (val x: Self) extends AnyVal {
     
     inline def setDefaultControl(value: String): Self = StObject.set(x, "DefaultControl", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object StartRxNormInferenceJobRequest {
     __obj.asInstanceOf[StartRxNormInferenceJobRequest]
   }
   
-  extension [Self <: StartRxNormInferenceJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRxNormInferenceJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ASPxClientTreeListFocusedCellChangingEventArgs {
     __obj.asInstanceOf[ASPxClientTreeListFocusedCellChangingEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeListFocusedCellChangingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeListFocusedCellChangingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCellInfo(value: ASPxClientTreeListCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
   }

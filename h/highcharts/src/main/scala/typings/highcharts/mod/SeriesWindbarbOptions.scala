@@ -99,7 +99,8 @@ object SeriesWindbarbOptions {
     __obj.asInstanceOf[SeriesWindbarbOptions]
   }
   
-  extension [Self <: SeriesWindbarbOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesWindbarbOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[(js.Tuple3[Double | String, Double, Double]) | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

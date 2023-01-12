@@ -34,7 +34,8 @@ object SpekeKeyProvider {
     __obj.asInstanceOf[SpekeKeyProvider]
   }
   
-  extension [Self <: SpekeKeyProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpekeKeyProvider] (val x: Self) extends AnyVal {
     
     inline def setCertificateArn(value: stringPatternArnAwsUsGovAcm): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object KnockoutComputedStatic {
     __obj.asInstanceOf[KnockoutComputedStatic]
   }
   
-  extension [Self <: KnockoutComputedStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutComputedStatic] (val x: Self) extends AnyVal {
     
     inline def setDeferUpdates(value: Boolean): Self = StObject.set(x, "deferUpdates", value.asInstanceOf[js.Any])
   }

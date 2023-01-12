@@ -67,7 +67,8 @@ object DocumentStyleSuggestionState {
     __obj.asInstanceOf[DocumentStyleSuggestionState]
   }
   
-  extension [Self <: DocumentStyleSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentStyleSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setBackgroundSuggestionState(value: BackgroundSuggestionState): Self = StObject.set(x, "backgroundSuggestionState", value.asInstanceOf[js.Any])
     

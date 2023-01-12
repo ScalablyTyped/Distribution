@@ -33,7 +33,8 @@ object DeleteNetworkAclEntryRequest {
     __obj.asInstanceOf[DeleteNetworkAclEntryRequest]
   }
   
-  extension [Self <: DeleteNetworkAclEntryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNetworkAclEntryRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

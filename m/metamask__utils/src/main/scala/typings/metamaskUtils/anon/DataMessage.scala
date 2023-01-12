@@ -21,7 +21,8 @@ object DataMessage {
     __obj.asInstanceOf[DataMessage]
   }
   
-  extension [Self <: DataMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataMessage] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

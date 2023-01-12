@@ -17,7 +17,8 @@ object DeviceAccessChangedEventArgs {
     __obj.asInstanceOf[DeviceAccessChangedEventArgs]
   }
   
-  extension [Self <: DeviceAccessChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceAccessChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: DeviceAccessStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

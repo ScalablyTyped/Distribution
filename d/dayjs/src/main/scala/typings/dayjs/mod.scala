@@ -713,7 +713,8 @@ object mod {
       __obj.asInstanceOf[ConfigTypeMap]
     }
     
-    extension [Self <: ConfigTypeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigTypeMap] (val x: Self) extends AnyVal {
       
       inline def setArraySupport(
         value: js.Tuple7[
@@ -767,7 +768,8 @@ object mod {
       __obj.asInstanceOf[FormatObject]
     }
     
-    extension [Self <: FormatObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatObject] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

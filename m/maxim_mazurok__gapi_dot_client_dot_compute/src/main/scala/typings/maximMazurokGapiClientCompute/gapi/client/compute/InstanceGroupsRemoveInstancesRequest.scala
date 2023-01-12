@@ -16,7 +16,8 @@ object InstanceGroupsRemoveInstancesRequest {
     __obj.asInstanceOf[InstanceGroupsRemoveInstancesRequest]
   }
   
-  extension [Self <: InstanceGroupsRemoveInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupsRemoveInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: js.Array[InstanceReference]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     

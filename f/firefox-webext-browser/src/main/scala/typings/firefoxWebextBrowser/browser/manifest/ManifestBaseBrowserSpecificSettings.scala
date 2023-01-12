@@ -18,7 +18,8 @@ object ManifestBaseBrowserSpecificSettings {
     __obj.asInstanceOf[ManifestBaseBrowserSpecificSettings]
   }
   
-  extension [Self <: ManifestBaseBrowserSpecificSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestBaseBrowserSpecificSettings] (val x: Self) extends AnyVal {
     
     inline def setEdge(value: StringDictionary[Any]): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,8 @@ object LoadableExport {
       __obj.asInstanceOf[CommonOptions]
     }
     
-    extension [Self <: CommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double | `false`): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object LoadableExport {
       __obj.asInstanceOf[LoadableCaptureProps]
     }
     
-    extension [Self <: LoadableCaptureProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadableCaptureProps] (val x: Self) extends AnyVal {
       
       inline def setReport(value: String => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
     }
@@ -173,7 +175,8 @@ object LoadableExport {
       __obj.asInstanceOf[LoadableComponent]
     }
     
-    extension [Self <: LoadableComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadableComponent] (val x: Self) extends AnyVal {
       
       inline def setPreload(value: () => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction0(value))
     }
@@ -198,7 +201,8 @@ object LoadableExport {
       __obj.asInstanceOf[LoadingComponentProps]
     }
     
-    extension [Self <: LoadingComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadingComponentProps] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -274,7 +278,8 @@ object LoadableExport {
       __obj.asInstanceOf[OptionsWithMap[Props, Exports]]
     }
     
-    extension [Self <: OptionsWithMap[?, ?], Props, Exports /* <: StringDictionary[Any] */](x: Self & (OptionsWithMap[Props, Exports])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithMap[?, ?], Props, Exports /* <: StringDictionary[Any] */] (val x: Self & (OptionsWithMap[Props, Exports])) extends AnyVal {
       
       inline def setLoader(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Exports ]: (): std.Promise<Exports[P]>} */ js.Any
@@ -322,7 +327,8 @@ object LoadableExport {
       __obj.asInstanceOf[OptionsWithRender[Props, Exports]]
     }
     
-    extension [Self <: OptionsWithRender[?, ?], Props, Exports /* <: js.Object */](x: Self & (OptionsWithRender[Props, Exports])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithRender[?, ?], Props, Exports /* <: js.Object */] (val x: Self & (OptionsWithRender[Props, Exports])) extends AnyVal {
       
       inline def setLoader(value: () => js.Promise[Exports]): Self = StObject.set(x, "loader", js.Any.fromFunction0(value))
       
@@ -352,7 +358,8 @@ object LoadableExport {
       __obj.asInstanceOf[OptionsWithoutRender[Props]]
     }
     
-    extension [Self <: OptionsWithoutRender[?], Props](x: Self & OptionsWithoutRender[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithoutRender[?], Props] (val x: Self & OptionsWithoutRender[Props]) extends AnyVal {
       
       inline def setLoader(value: () => js.Promise[ComponentType[Props] | Default[Props]]): Self = StObject.set(x, "loader", js.Any.fromFunction0(value))
     }

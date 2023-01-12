@@ -20,7 +20,8 @@ object GoogleActionsOrdersV3OrderContents {
     __obj.asInstanceOf[GoogleActionsOrdersV3OrderContents]
   }
   
-  extension [Self <: GoogleActionsOrdersV3OrderContents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3OrderContents] (val x: Self) extends AnyVal {
     
     inline def setLineItems(value: js.Array[GoogleActionsOrdersV3LineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     

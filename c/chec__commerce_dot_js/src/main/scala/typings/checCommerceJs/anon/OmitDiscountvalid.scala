@@ -25,7 +25,8 @@ object OmitDiscountvalid {
     __obj.asInstanceOf[OmitDiscountvalid]
   }
   
-  extension [Self <: OmitDiscountvalid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitDiscountvalid] (val x: Self) extends AnyVal {
     
     inline def setAmount_saved(value: Price): Self = StObject.set(x, "amount_saved", value.asInstanceOf[js.Any])
     

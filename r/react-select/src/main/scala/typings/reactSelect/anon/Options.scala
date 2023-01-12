@@ -20,7 +20,8 @@ object Options {
     __obj.asInstanceOf[Options[Option, IsMulti]]
   }
   
-  extension [Self <: Options[?, ?], Option, IsMulti /* <: Boolean */](x: Self & (Options[Option, IsMulti])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?, ?], Option, IsMulti /* <: Boolean */] (val x: Self & (Options[Option, IsMulti])) extends AnyVal {
     
     inline def setOption(value: Option): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     

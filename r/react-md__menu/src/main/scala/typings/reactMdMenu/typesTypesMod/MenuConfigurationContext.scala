@@ -34,7 +34,8 @@ object MenuConfigurationContext {
     __obj.asInstanceOf[MenuConfigurationContext]
   }
   
-  extension [Self <: MenuConfigurationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuConfigurationContext] (val x: Self) extends AnyVal {
     
     inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

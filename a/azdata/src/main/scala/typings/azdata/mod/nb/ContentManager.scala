@@ -34,7 +34,8 @@ object ContentManager {
     __obj.asInstanceOf[ContentManager]
   }
   
-  extension [Self <: ContentManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentManager] (val x: Self) extends AnyVal {
     
     inline def setDeserializeNotebook(value: String => Thenable[INotebookContents]): Self = StObject.set(x, "deserializeNotebook", js.Any.fromFunction1(value))
     

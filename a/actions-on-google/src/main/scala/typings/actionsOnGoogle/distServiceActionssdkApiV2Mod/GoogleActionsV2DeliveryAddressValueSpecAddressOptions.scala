@@ -21,7 +21,8 @@ object GoogleActionsV2DeliveryAddressValueSpecAddressOptions {
     __obj.asInstanceOf[GoogleActionsV2DeliveryAddressValueSpecAddressOptions]
   }
   
-  extension [Self <: GoogleActionsV2DeliveryAddressValueSpecAddressOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2DeliveryAddressValueSpecAddressOptions] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

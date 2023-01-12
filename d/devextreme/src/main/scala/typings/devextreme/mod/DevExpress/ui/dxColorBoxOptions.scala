@@ -58,7 +58,8 @@ object dxColorBoxOptions {
     __obj.asInstanceOf[dxColorBoxOptions]
   }
   
-  extension [Self <: dxColorBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxColorBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setApplyButtonText(value: String): Self = StObject.set(x, "applyButtonText", value.asInstanceOf[js.Any])
     

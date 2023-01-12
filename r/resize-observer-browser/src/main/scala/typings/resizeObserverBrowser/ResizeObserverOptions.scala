@@ -24,7 +24,8 @@ object ResizeObserverOptions {
     __obj.asInstanceOf[ResizeObserverOptions]
   }
   
-  extension [Self <: ResizeObserverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeObserverOptions] (val x: Self) extends AnyVal {
     
     inline def setBox(value: `content-box` | `border-box` | `device-pixel-content-box`): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     

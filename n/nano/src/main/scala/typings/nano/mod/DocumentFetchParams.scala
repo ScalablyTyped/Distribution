@@ -43,7 +43,8 @@ object DocumentFetchParams {
     __obj.asInstanceOf[DocumentFetchParams]
   }
   
-  extension [Self <: DocumentFetchParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentFetchParams] (val x: Self) extends AnyVal {
     
     inline def setConflicts(value: Boolean): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     

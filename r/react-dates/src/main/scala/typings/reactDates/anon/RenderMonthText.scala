@@ -21,7 +21,8 @@ object RenderMonthText {
     __obj.asInstanceOf[RenderMonthText]
   }
   
-  extension [Self <: RenderMonthText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderMonthText] (val x: Self) extends AnyVal {
     
     inline def setRenderMonthElement(value: /* props */ IsVisible => ReactNode): Self = StObject.set(x, "renderMonthElement", js.Any.fromFunction1(value))
     

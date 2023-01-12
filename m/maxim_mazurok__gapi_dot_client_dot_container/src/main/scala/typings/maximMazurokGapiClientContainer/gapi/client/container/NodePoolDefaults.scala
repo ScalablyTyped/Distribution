@@ -16,7 +16,8 @@ object NodePoolDefaults {
     __obj.asInstanceOf[NodePoolDefaults]
   }
   
-  extension [Self <: NodePoolDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodePoolDefaults] (val x: Self) extends AnyVal {
     
     inline def setNodeConfigDefaults(value: NodeConfigDefaults): Self = StObject.set(x, "nodeConfigDefaults", value.asInstanceOf[js.Any])
     

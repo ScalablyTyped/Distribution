@@ -23,7 +23,8 @@ object ListInstanceFleetsInput {
     __obj.asInstanceOf[ListInstanceFleetsInput]
   }
   
-  extension [Self <: ListInstanceFleetsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInstanceFleetsInput] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     

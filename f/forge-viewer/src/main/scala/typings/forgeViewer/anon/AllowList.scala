@@ -21,7 +21,8 @@ object AllowList {
     __obj.asInstanceOf[AllowList]
   }
   
-  extension [Self <: AllowList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowList] (val x: Self) extends AnyVal {
     
     inline def setAllowList(value: js.Array[Double]): Self = StObject.set(x, "allowList", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object DisassociateExternalConnectionRequest {
     __obj.asInstanceOf[DisassociateExternalConnectionRequest]
   }
   
-  extension [Self <: DisassociateExternalConnectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateExternalConnectionRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PaneProps {
     __obj.asInstanceOf[PaneProps]
   }
   
-  extension [Self <: PaneProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaneProps] (val x: Self) extends AnyVal {
     
     inline def setMaxSize(value: Double | String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     

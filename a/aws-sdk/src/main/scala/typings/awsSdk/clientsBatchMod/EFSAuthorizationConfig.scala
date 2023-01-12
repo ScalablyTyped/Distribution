@@ -23,7 +23,8 @@ object EFSAuthorizationConfig {
     __obj.asInstanceOf[EFSAuthorizationConfig]
   }
   
-  extension [Self <: EFSAuthorizationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EFSAuthorizationConfig] (val x: Self) extends AnyVal {
     
     inline def setAccessPointId(value: String): Self = StObject.set(x, "accessPointId", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object idstringundefinedchildren {
     __obj.asInstanceOf[idstringundefinedchildren]
   }
   
-  extension [Self <: idstringundefinedchildren](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: idstringundefinedchildren] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

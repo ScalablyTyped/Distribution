@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[FaviconSize]
     }
     
-    extension [Self <: FaviconSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaviconSize] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setGotOpts(value: ClientRequestArgs): Self = StObject.set(x, "gotOpts", value.asInstanceOf[js.Any])
       

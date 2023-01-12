@@ -48,7 +48,8 @@ object RESTResponseV2 {
     __obj.asInstanceOf[RESTResponseV2]
   }
   
-  extension [Self <: RESTResponseV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RESTResponseV2] (val x: Self) extends AnyVal {
     
     inline def setGetBody(value: () => String): Self = StObject.set(x, "getBody", js.Any.fromFunction0(value))
     

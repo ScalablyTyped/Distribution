@@ -60,7 +60,8 @@ object EdgeLength {
     __obj.asInstanceOf[EdgeLength]
   }
   
-  extension [Self <: EdgeLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeLength] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

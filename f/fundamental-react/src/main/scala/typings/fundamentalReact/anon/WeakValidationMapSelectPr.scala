@@ -114,7 +114,8 @@ object WeakValidationMapSelectPr {
     __obj.asInstanceOf[WeakValidationMapSelectPr]
   }
   
-  extension [Self <: WeakValidationMapSelectPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapSelectPr] (val x: Self) extends AnyVal {
     
     inline def setClassName(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any

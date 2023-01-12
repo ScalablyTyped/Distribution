@@ -27,7 +27,8 @@ object UIkitTabOptions {
     __obj.asInstanceOf[UIkitTabOptions]
   }
   
-  extension [Self <: UIkitTabOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitTabOptions] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

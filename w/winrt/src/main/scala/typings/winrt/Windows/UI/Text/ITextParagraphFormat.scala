@@ -108,7 +108,8 @@ object ITextParagraphFormat {
     __obj.asInstanceOf[ITextParagraphFormat]
   }
   
-  extension [Self <: ITextParagraphFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextParagraphFormat] (val x: Self) extends AnyVal {
     
     inline def setAddTab(value: (Double, TabAlignment, TabLeader) => Unit): Self = StObject.set(x, "addTab", js.Any.fromFunction3(value))
     

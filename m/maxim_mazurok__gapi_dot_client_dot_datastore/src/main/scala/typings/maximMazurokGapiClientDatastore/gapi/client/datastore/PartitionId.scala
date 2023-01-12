@@ -22,7 +22,8 @@ object PartitionId {
     __obj.asInstanceOf[PartitionId]
   }
   
-  extension [Self <: PartitionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionId] (val x: Self) extends AnyVal {
     
     inline def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
     

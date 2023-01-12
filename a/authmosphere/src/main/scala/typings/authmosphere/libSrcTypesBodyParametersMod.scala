@@ -30,7 +30,8 @@ object libSrcTypesBodyParametersMod {
       __obj.asInstanceOf[BodyParameters]
     }
     
-    extension [Self <: BodyParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyParameters] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

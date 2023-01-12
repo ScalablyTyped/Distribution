@@ -29,7 +29,8 @@ object DateInputMessages {
     __obj.asInstanceOf[DateInputMessages]
   }
   
-  extension [Self <: DateInputMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateInputMessages] (val x: Self) extends AnyVal {
     
     inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object CoordsSet {
     __obj.asInstanceOf[CoordsSet]
   }
   
-  extension [Self <: CoordsSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordsSet] (val x: Self) extends AnyVal {
     
     inline def setCur(value: CoordsSetMember): Self = StObject.set(x, "cur", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListRecoveryGroupsRequest {
     __obj.asInstanceOf[ListRecoveryGroupsRequest]
   }
   
-  extension [Self <: ListRecoveryGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRecoveryGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

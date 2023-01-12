@@ -41,7 +41,8 @@ object Stats {
     __obj.asInstanceOf[Stats]
   }
   
-  extension [Self <: Stats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
     
     inline def setAddPanel(value: Panel => Panel): Self = StObject.set(x, "addPanel", js.Any.fromFunction1(value))
     
@@ -71,7 +72,8 @@ object Stats {
       __obj.asInstanceOf[Panel]
     }
     
-    extension [Self <: Panel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Panel] (val x: Self) extends AnyVal {
       
       inline def setDom(value: HTMLCanvasElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object AzureKeyVaultVariableGroupProviderData {
     __obj.asInstanceOf[AzureKeyVaultVariableGroupProviderData]
   }
   
-  extension [Self <: AzureKeyVaultVariableGroupProviderData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureKeyVaultVariableGroupProviderData] (val x: Self) extends AnyVal {
     
     inline def setLastRefreshedOn(value: js.Date): Self = StObject.set(x, "lastRefreshedOn", value.asInstanceOf[js.Any])
     

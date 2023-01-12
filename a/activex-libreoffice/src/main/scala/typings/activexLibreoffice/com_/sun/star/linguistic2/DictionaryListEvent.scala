@@ -46,7 +46,8 @@ object DictionaryListEvent {
     __obj.asInstanceOf[DictionaryListEvent]
   }
   
-  extension [Self <: DictionaryListEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictionaryListEvent] (val x: Self) extends AnyVal {
     
     inline def setADictionaryEvents(value: SafeArray[DictionaryEvent]): Self = StObject.set(x, "aDictionaryEvents", value.asInstanceOf[js.Any])
     

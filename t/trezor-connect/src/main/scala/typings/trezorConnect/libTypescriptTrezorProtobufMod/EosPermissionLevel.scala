@@ -17,7 +17,8 @@ object EosPermissionLevel {
     __obj.asInstanceOf[EosPermissionLevel]
   }
   
-  extension [Self <: EosPermissionLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosPermissionLevel] (val x: Self) extends AnyVal {
     
     inline def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

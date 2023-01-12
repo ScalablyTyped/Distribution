@@ -88,7 +88,8 @@ object RecipientInfo {
     __obj.asInstanceOf[RecipientInfo]
   }
   
-  extension [Self <: RecipientInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientInfo] (val x: Self) extends AnyVal {
     
     inline def setBCC(value: String): Self = StObject.set(x, "BCC", value.asInstanceOf[js.Any])
     

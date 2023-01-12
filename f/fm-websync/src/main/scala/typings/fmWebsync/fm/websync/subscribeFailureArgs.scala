@@ -27,7 +27,8 @@ object subscribeFailureArgs {
     __obj.asInstanceOf[subscribeFailureArgs]
   }
   
-  extension [Self <: subscribeFailureArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: subscribeFailureArgs] (val x: Self) extends AnyVal {
     
     inline def setIsResubscribe(value: Boolean): Self = StObject.set(x, "isResubscribe", value.asInstanceOf[js.Any])
   }

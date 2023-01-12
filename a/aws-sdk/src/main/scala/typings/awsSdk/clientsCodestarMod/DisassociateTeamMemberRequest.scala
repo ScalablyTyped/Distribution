@@ -23,7 +23,8 @@ object DisassociateTeamMemberRequest {
     __obj.asInstanceOf[DisassociateTeamMemberRequest]
   }
   
-  extension [Self <: DisassociateTeamMemberRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateTeamMemberRequest] (val x: Self) extends AnyVal {
     
     inline def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

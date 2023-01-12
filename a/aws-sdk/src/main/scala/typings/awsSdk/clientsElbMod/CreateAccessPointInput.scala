@@ -48,7 +48,8 @@ object CreateAccessPointInput {
     __obj.asInstanceOf[CreateAccessPointInput]
   }
   
-  extension [Self <: CreateAccessPointInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccessPointInput] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

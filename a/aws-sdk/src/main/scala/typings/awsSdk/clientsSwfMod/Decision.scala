@@ -83,7 +83,8 @@ object Decision {
     __obj.asInstanceOf[Decision]
   }
   
-  extension [Self <: Decision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Decision] (val x: Self) extends AnyVal {
     
     inline def setCancelTimerDecisionAttributes(value: CancelTimerDecisionAttributes): Self = StObject.set(x, "cancelTimerDecisionAttributes", value.asInstanceOf[js.Any])
     

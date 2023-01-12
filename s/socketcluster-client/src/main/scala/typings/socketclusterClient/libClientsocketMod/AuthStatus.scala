@@ -17,7 +17,8 @@ object AuthStatus {
     __obj.asInstanceOf[AuthStatus]
   }
   
-  extension [Self <: AuthStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthStatus] (val x: Self) extends AnyVal {
     
     inline def setAuthError(value: js.Error): Self = StObject.set(x, "authError", value.asInstanceOf[js.Any])
     

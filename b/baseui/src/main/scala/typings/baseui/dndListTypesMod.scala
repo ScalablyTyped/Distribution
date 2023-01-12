@@ -33,7 +33,8 @@ object dndListTypesMod {
       __obj.asInstanceOf[ListOverrides]
     }
     
-    extension [Self <: ListOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListOverrides] (val x: Self) extends AnyVal {
       
       inline def setCloseHandle(value: Override[Any]): Self = StObject.set(x, "CloseHandle", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object dndListTypesMod {
       __obj.asInstanceOf[ListProps]
     }
     
-    extension [Self <: ListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[ReactNode]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object dndListTypesMod {
       __obj.asInstanceOf[SharedStylePropsArg]
     }
     
-    extension [Self <: SharedStylePropsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedStylePropsArg] (val x: Self) extends AnyVal {
       
       inline def set$index(value: Double): Self = StObject.set(x, "$index", value.asInstanceOf[js.Any])
       
@@ -180,7 +183,8 @@ object dndListTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[ReactNode]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -222,7 +226,8 @@ object dndListTypesMod {
       __obj.asInstanceOf[StatefulComponentContainerProps]
     }
     
-    extension [Self <: StatefulComponentContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulComponentContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: OmitListPropschildren => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -280,7 +285,8 @@ object dndListTypesMod {
       __obj.asInstanceOf[StatefulListProps]
     }
     
-    extension [Self <: StatefulListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulListProps] (val x: Self) extends AnyVal {
       
       inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       

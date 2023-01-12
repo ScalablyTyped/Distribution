@@ -19,7 +19,8 @@ object DataPutChannelConf {
     __obj.asInstanceOf[DataPutChannelConf]
   }
   
-  extension [Self <: DataPutChannelConf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPutChannelConf] (val x: Self) extends AnyVal {
     
     inline def setData(value: PutChannelConf): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

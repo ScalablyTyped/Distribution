@@ -33,7 +33,8 @@ object BackgroundBlurriness {
     __obj.asInstanceOf[BackgroundBlurriness]
   }
   
-  extension [Self <: BackgroundBlurriness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundBlurriness] (val x: Self) extends AnyVal {
     
     inline def setBackgroundBlurriness(value: IUniform[Any]): Self = StObject.set(x, "backgroundBlurriness", value.asInstanceOf[js.Any])
     

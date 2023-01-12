@@ -19,7 +19,8 @@ object UseComboboxStateChangeOptions {
     __obj.asInstanceOf[UseComboboxStateChangeOptions[Item]]
   }
   
-  extension [Self <: UseComboboxStateChangeOptions[?], Item](x: Self & UseComboboxStateChangeOptions[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseComboboxStateChangeOptions[?], Item] (val x: Self & UseComboboxStateChangeOptions[Item]) extends AnyVal {
     
     inline def setChanges(value: Partial[UseComboboxState[Item]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
   }

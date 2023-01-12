@@ -29,7 +29,8 @@ object ICreateRuleOptions {
     __obj.asInstanceOf[ICreateRuleOptions]
   }
   
-  extension [Self <: ICreateRuleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateRuleOptions] (val x: Self) extends AnyVal {
     
     inline def setCorrelationIdFilter(value: String): Self = StObject.set(x, "correlationIdFilter", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object AlphaFilter {
     __obj.asInstanceOf[AlphaFilter]
   }
   
-  extension [Self <: AlphaFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlphaFilter] (val x: Self) extends AnyVal {
     
     inline def setAlphaFilter(value: Double): Self = StObject.set(x, "alphaFilter", value.asInstanceOf[js.Any])
     

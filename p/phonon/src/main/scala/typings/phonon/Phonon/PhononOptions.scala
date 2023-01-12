@@ -18,7 +18,8 @@ object PhononOptions {
     __obj.asInstanceOf[PhononOptions]
   }
   
-  extension [Self <: PhononOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhononOptions] (val x: Self) extends AnyVal {
     
     inline def setI18n(value: PhononI18nOptions): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     

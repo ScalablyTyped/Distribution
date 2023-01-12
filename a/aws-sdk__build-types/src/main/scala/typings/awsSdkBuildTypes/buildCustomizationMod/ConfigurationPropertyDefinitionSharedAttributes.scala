@@ -60,7 +60,8 @@ object ConfigurationPropertyDefinitionSharedAttributes {
     __obj.asInstanceOf[ConfigurationPropertyDefinitionSharedAttributes]
   }
   
-  extension [Self <: ConfigurationPropertyDefinitionSharedAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationPropertyDefinitionSharedAttributes] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

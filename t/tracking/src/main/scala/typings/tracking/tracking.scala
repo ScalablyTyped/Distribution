@@ -180,7 +180,8 @@ object tracking {
       __obj.asInstanceOf[TrackEvent]
     }
     
-    extension [Self <: TrackEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[TrackRect]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,8 @@ object tracking {
       __obj.asInstanceOf[TrackRect]
     }
     
-    extension [Self <: TrackRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackRect] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

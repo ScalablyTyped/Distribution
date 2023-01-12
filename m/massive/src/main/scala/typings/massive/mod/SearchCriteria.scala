@@ -17,7 +17,8 @@ object SearchCriteria {
     __obj.asInstanceOf[SearchCriteria]
   }
   
-  extension [Self <: SearchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchCriteria] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

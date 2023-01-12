@@ -23,7 +23,8 @@ object DataClassificationDetails {
     __obj.asInstanceOf[DataClassificationDetails]
   }
   
-  extension [Self <: DataClassificationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataClassificationDetails] (val x: Self) extends AnyVal {
     
     inline def setDetailedResultsLocation(value: NonEmptyString): Self = StObject.set(x, "DetailedResultsLocation", value.asInstanceOf[js.Any])
     

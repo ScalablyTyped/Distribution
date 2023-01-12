@@ -123,7 +123,8 @@ object CloneStackRequest {
     __obj.asInstanceOf[CloneStackRequest]
   }
   
-  extension [Self <: CloneStackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloneStackRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentVersion(value: String): Self = StObject.set(x, "AgentVersion", value.asInstanceOf[js.Any])
     

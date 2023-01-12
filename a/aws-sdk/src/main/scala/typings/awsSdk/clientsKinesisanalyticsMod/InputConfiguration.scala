@@ -23,7 +23,8 @@ object InputConfiguration {
     __obj.asInstanceOf[InputConfiguration]
   }
   
-  extension [Self <: InputConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputConfiguration] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

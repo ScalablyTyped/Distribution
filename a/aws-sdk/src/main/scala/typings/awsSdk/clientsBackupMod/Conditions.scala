@@ -33,7 +33,8 @@ object Conditions {
     __obj.asInstanceOf[Conditions]
   }
   
-  extension [Self <: Conditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conditions] (val x: Self) extends AnyVal {
     
     inline def setStringEquals(value: ConditionParameters): Self = StObject.set(x, "StringEquals", value.asInstanceOf[js.Any])
     

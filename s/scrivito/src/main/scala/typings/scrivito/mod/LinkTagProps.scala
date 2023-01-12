@@ -27,7 +27,8 @@ object LinkTagProps {
     __obj.asInstanceOf[LinkTagProps]
   }
   
-  extension [Self <: LinkTagProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkTagProps] (val x: Self) extends AnyVal {
     
     inline def setOnClick(value: /* event */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     

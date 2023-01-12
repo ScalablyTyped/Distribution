@@ -42,7 +42,8 @@ object ColumnConfiguration {
     __obj.asInstanceOf[ColumnConfiguration]
   }
   
-  extension [Self <: ColumnConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnConfiguration] (val x: Self) extends AnyVal {
     
     inline def setChangeDetectingColumns(value: ChangeDetectingColumns): Self = StObject.set(x, "ChangeDetectingColumns", value.asInstanceOf[js.Any])
     

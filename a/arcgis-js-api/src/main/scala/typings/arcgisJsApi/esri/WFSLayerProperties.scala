@@ -185,7 +185,8 @@ object WFSLayerProperties {
     __obj.asInstanceOf[WFSLayerProperties]
   }
   
-  extension [Self <: WFSLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     

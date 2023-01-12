@@ -22,7 +22,8 @@ object SetInstanceAcceleratorRequest {
     __obj.asInstanceOf[SetInstanceAcceleratorRequest]
   }
   
-  extension [Self <: SetInstanceAcceleratorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetInstanceAcceleratorRequest] (val x: Self) extends AnyVal {
     
     inline def setCoreCount(value: String): Self = StObject.set(x, "coreCount", value.asInstanceOf[js.Any])
     

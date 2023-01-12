@@ -231,7 +231,8 @@ object srcMathRayMod {
       __obj.asInstanceOf[Triangle]
     }
     
-    extension [Self <: Triangle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Triangle] (val x: Self) extends AnyVal {
       
       inline def setA(value: Vector3): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

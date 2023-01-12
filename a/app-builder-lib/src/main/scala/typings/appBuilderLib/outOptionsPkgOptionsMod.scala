@@ -86,7 +86,8 @@ object outOptionsPkgOptionsMod {
       __obj.asInstanceOf[PkgBackgroundOptions]
     }
     
-    extension [Self <: PkgBackgroundOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PkgBackgroundOptions] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: BackgroundAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -235,7 +236,8 @@ object outOptionsPkgOptionsMod {
       __obj.asInstanceOf[PkgOptions]
     }
     
-    extension [Self <: PkgOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PkgOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAnywhere(value: Boolean): Self = StObject.set(x, "allowAnywhere", value.asInstanceOf[js.Any])
       

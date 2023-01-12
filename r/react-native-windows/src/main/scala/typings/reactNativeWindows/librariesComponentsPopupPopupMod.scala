@@ -37,7 +37,8 @@ object librariesComponentsPopupPopupMod {
       __obj.asInstanceOf[IPopupTargetState]
     }
     
-    extension [Self <: IPopupTargetState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopupTargetState] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

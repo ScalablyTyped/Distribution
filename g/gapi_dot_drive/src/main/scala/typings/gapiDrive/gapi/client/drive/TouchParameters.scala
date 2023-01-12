@@ -17,7 +17,8 @@ object TouchParameters {
     __obj.asInstanceOf[TouchParameters]
   }
   
-  extension [Self <: TouchParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchParameters] (val x: Self) extends AnyVal {
     
     inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     

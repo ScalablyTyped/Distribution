@@ -43,7 +43,8 @@ object Cvssv3 {
     __obj.asInstanceOf[Cvssv3]
   }
   
-  extension [Self <: Cvssv3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cvssv3] (val x: Self) extends AnyVal {
     
     inline def setAttackComplexity(value: String): Self = StObject.set(x, "attackComplexity", value.asInstanceOf[js.Any])
     

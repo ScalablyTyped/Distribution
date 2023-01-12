@@ -23,7 +23,8 @@ object UpdatePermissionsRequest {
     __obj.asInstanceOf[UpdatePermissionsRequest]
   }
   
-  extension [Self <: UpdatePermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setUpdateInstructionBatch(value: UpdateInstructionBatch): Self = StObject.set(x, "updateInstructionBatch", value.asInstanceOf[js.Any])
     

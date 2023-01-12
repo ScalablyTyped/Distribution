@@ -31,7 +31,8 @@ object PickImplnoTemplatePartial {
     __obj.asInstanceOf[PickImplnoTemplatePartial]
   }
   
-  extension [Self <: PickImplnoTemplatePartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplnoTemplatePartial] (val x: Self) extends AnyVal {
     
     inline def setLogging(value: String): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     

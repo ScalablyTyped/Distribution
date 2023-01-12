@@ -23,7 +23,8 @@ object ChangeSetHookTargetDetails {
     __obj.asInstanceOf[ChangeSetHookTargetDetails]
   }
   
-  extension [Self <: ChangeSetHookTargetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeSetHookTargetDetails] (val x: Self) extends AnyVal {
     
     inline def setResourceTargetDetails(value: ChangeSetHookResourceTargetDetails): Self = StObject.set(x, "ResourceTargetDetails", value.asInstanceOf[js.Any])
     

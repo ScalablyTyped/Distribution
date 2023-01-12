@@ -31,7 +31,8 @@ object CompositeModelProperty {
     __obj.asInstanceOf[CompositeModelProperty]
   }
   
-  extension [Self <: CompositeModelProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeModelProperty] (val x: Self) extends AnyVal {
     
     inline def setAssetProperty(value: Property): Self = StObject.set(x, "assetProperty", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object FederatedUser {
     __obj.asInstanceOf[FederatedUser]
   }
   
-  extension [Self <: FederatedUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FederatedUser] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyId(value: string): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     

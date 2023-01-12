@@ -18,7 +18,8 @@ object TuningJobStepMetaData {
     __obj.asInstanceOf[TuningJobStepMetaData]
   }
   
-  extension [Self <: TuningJobStepMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TuningJobStepMetaData] (val x: Self) extends AnyVal {
     
     inline def setArn(value: HyperParameterTuningJobArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

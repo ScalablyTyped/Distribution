@@ -43,7 +43,8 @@ object Cors {
     __obj.asInstanceOf[Cors]
   }
   
-  extension [Self <: Cors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cors] (val x: Self) extends AnyVal {
     
     inline def setAllowCredentials(value: AllowCredentials): Self = StObject.set(x, "AllowCredentials", value.asInstanceOf[js.Any])
     

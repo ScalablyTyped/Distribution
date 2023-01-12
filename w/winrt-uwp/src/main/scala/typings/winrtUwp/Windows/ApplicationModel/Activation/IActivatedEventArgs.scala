@@ -27,7 +27,8 @@ object IActivatedEventArgs {
     __obj.asInstanceOf[IActivatedEventArgs]
   }
   
-  extension [Self <: IActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object libRulesCompletedDocsClassExclusionMod {
       __obj.asInstanceOf[IClassExclusionDescriptor]
     }
     
-    extension [Self <: IClassExclusionDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClassExclusionDescriptor] (val x: Self) extends AnyVal {
       
       inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       

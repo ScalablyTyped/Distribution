@@ -28,7 +28,8 @@ object CreateRegistryRequest {
     __obj.asInstanceOf[CreateRegistryRequest]
   }
   
-  extension [Self <: CreateRegistryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRegistryRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: stringMin0Max256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

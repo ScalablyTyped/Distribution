@@ -100,7 +100,8 @@ object CollStats {
     __obj.asInstanceOf[CollStats]
   }
   
-  extension [Self <: CollStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollStats] (val x: Self) extends AnyVal {
     
     inline def setAvgObjSize(value: scala.Double): Self = StObject.set(x, "avgObjSize", value.asInstanceOf[js.Any])
     

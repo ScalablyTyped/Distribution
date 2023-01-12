@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ButtonTextComponent]
     }
     
-    extension [Self <: ButtonTextComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonTextComponent] (val x: Self) extends AnyVal {
       
       inline def setButtonTextComponent(value: FunctionComponent[RelevantSortComponentProps]): Self = StObject.set(x, "buttonTextComponent", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Hit[T]]
     }
     
-    extension [Self <: Hit[?], T](x: Self & Hit[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hit[?], T] (val x: Self & Hit[T]) extends AnyVal {
       
       inline def setHit(value: typings.reactInstantsearchCore.mod.Hit[T]): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
     }
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[PickInstantSearchPropswid]
     }
     
-    extension [Self <: PickInstantSearchPropswid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickInstantSearchPropswid] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyIndexProps]
     }
     
-    extension [Self <: ReadonlyIndexProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyIndexProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -142,7 +146,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyInstantSearchProp]
     }
     
-    extension [Self <: ReadonlyInstantSearchProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyInstantSearchProp] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -197,7 +202,8 @@ object anon {
       __obj.asInstanceOf[SeeAllOption]
     }
     
-    extension [Self <: SeeAllOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeeAllOption] (val x: Self) extends AnyVal {
       
       inline def setSeeAllOption(value: String): Self = StObject.set(x, "seeAllOption", value.asInstanceOf[js.Any])
       
@@ -226,7 +232,8 @@ object anon {
       __obj.asInstanceOf[Translations]
     }
     
-    extension [Self <: Translations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Translations] (val x: Self) extends AnyVal {
       
       inline def setTranslations(
         value: StringDictionary[

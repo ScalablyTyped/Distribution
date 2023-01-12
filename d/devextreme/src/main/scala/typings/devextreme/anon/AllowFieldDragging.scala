@@ -48,7 +48,8 @@ object AllowFieldDragging {
     __obj.asInstanceOf[AllowFieldDragging]
   }
   
-  extension [Self <: AllowFieldDragging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowFieldDragging] (val x: Self) extends AnyVal {
     
     inline def setAllowFieldDragging(value: Boolean): Self = StObject.set(x, "allowFieldDragging", value.asInstanceOf[js.Any])
     

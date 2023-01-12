@@ -168,7 +168,8 @@ object mod {
       __obj.asInstanceOf[ProgressBarOptions]
     }
     
-    extension [Self <: ProgressBarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBarOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       

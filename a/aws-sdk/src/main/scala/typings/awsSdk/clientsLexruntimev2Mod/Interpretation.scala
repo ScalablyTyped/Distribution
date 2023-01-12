@@ -28,7 +28,8 @@ object Interpretation {
     __obj.asInstanceOf[Interpretation]
   }
   
-  extension [Self <: Interpretation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interpretation] (val x: Self) extends AnyVal {
     
     inline def setIntent(value: Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     

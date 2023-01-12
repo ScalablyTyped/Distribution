@@ -33,7 +33,8 @@ object SetResponseOverrideBitsRequest {
     __obj.asInstanceOf[SetResponseOverrideBitsRequest]
   }
   
-  extension [Self <: SetResponseOverrideBitsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetResponseOverrideBitsRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
     

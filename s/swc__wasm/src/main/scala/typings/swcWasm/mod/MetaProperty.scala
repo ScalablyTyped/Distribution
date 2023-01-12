@@ -25,7 +25,8 @@ object MetaProperty {
     __obj.asInstanceOf[MetaProperty]
   }
   
-  extension [Self <: MetaProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaProperty] (val x: Self) extends AnyVal {
     
     inline def setKind(value: newDottarget | importDotmeta): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

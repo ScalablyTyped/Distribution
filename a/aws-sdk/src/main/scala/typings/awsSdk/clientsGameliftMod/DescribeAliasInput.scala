@@ -18,7 +18,8 @@ object DescribeAliasInput {
     __obj.asInstanceOf[DescribeAliasInput]
   }
   
-  extension [Self <: DescribeAliasInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAliasInput] (val x: Self) extends AnyVal {
     
     inline def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
   }

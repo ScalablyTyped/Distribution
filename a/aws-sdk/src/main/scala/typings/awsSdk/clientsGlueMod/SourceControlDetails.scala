@@ -53,7 +53,8 @@ object SourceControlDetails {
     __obj.asInstanceOf[SourceControlDetails]
   }
   
-  extension [Self <: SourceControlDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceControlDetails] (val x: Self) extends AnyVal {
     
     inline def setAuthStrategy(value: SourceControlAuthStrategy): Self = StObject.set(x, "AuthStrategy", value.asInstanceOf[js.Any])
     

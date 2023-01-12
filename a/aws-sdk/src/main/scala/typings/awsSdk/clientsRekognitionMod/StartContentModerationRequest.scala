@@ -38,7 +38,8 @@ object StartContentModerationRequest {
     __obj.asInstanceOf[StartContentModerationRequest]
   }
   
-  extension [Self <: StartContentModerationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartContentModerationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

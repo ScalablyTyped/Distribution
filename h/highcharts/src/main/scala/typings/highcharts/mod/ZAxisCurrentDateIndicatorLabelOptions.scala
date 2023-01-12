@@ -83,7 +83,8 @@ object ZAxisCurrentDateIndicatorLabelOptions {
     __obj.asInstanceOf[ZAxisCurrentDateIndicatorLabelOptions]
   }
   
-  extension [Self <: ZAxisCurrentDateIndicatorLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZAxisCurrentDateIndicatorLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

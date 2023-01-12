@@ -34,7 +34,8 @@ object libContextSelectorMod {
       __obj.asInstanceOf[Context[T]]
     }
     
-    extension [Self <: Context[?], T](x: Self & Context[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context[?], T] (val x: Self & Context[T]) extends AnyVal {
       
       inline def setGetValue(value: () => T): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
@@ -55,7 +56,8 @@ object libContextSelectorMod {
       __obj.asInstanceOf[ContextSelectorProviderProps[T]]
     }
     
-    extension [Self <: ContextSelectorProviderProps[?], T](x: Self & ContextSelectorProviderProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextSelectorProviderProps[?], T] (val x: Self & ContextSelectorProviderProps[T]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object libContextSelectorMod {
       __obj.asInstanceOf[ReturnCreateContext[T]]
     }
     
-    extension [Self <: ReturnCreateContext[?], T](x: Self & ReturnCreateContext[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReturnCreateContext[?], T] (val x: Self & ReturnCreateContext[T]) extends AnyVal {
       
       inline def setContext(value: typings.react.mod.Context[Context[T]]): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       

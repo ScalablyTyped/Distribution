@@ -53,7 +53,8 @@ object modelsMerchantOrdersCreatePayloadMod {
       __obj.asInstanceOf[CreateMerchantOrderPayload]
     }
     
-    extension [Self <: CreateMerchantOrderPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateMerchantOrderPayload] (val x: Self) extends AnyVal {
       
       inline def setAdditional_info(value: String): Self = StObject.set(x, "additional_info", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object modelsMerchantOrdersCreatePayloadMod {
       __obj.asInstanceOf[MerchantOrderItem]
     }
     
-    extension [Self <: MerchantOrderItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MerchantOrderItem] (val x: Self) extends AnyVal {
       
       inline def setCurrency_id(value: ARS | BRL | CLP | MXN | COP | PEN | UYU): Self = StObject.set(x, "currency_id", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object modelsMerchantOrdersCreatePayloadMod {
       __obj.asInstanceOf[MerchantOrderPayer]
     }
     
-    extension [Self <: MerchantOrderPayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MerchantOrderPayer] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object EagerWorkers {
     __obj.asInstanceOf[EagerWorkers]
   }
   
-  extension [Self <: EagerWorkers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EagerWorkers] (val x: Self) extends AnyVal {
     
     inline def setEagerWorkers(value: Boolean): Self = StObject.set(x, "eagerWorkers", value.asInstanceOf[js.Any])
     

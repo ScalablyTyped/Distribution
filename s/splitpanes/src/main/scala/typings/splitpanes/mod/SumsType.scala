@@ -26,7 +26,8 @@ object SumsType {
     __obj.asInstanceOf[SumsType]
   }
   
-  extension [Self <: SumsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SumsType] (val x: Self) extends AnyVal {
     
     inline def setNextPanesSize(value: Double): Self = StObject.set(x, "nextPanesSize", value.asInstanceOf[js.Any])
     

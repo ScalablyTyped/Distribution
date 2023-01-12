@@ -19,7 +19,8 @@ object BlockAction {
     __obj.asInstanceOf[BlockAction]
   }
   
-  extension [Self <: BlockAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockAction] (val x: Self) extends AnyVal {
     
     inline def setBlockAfterDays(value: Double): Self = StObject.set(x, "blockAfterDays", value.asInstanceOf[js.Any])
     

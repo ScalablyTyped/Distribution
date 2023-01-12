@@ -18,7 +18,8 @@ object TerraformScanInput {
     __obj.asInstanceOf[TerraformScanInput]
   }
   
-  extension [Self <: TerraformScanInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerraformScanInput] (val x: Self) extends AnyVal {
     
     inline def setData(value: Record[String, Record[String, Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

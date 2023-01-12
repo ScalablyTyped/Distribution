@@ -18,7 +18,8 @@ object DynatraceConnectorProfileCredentials {
     __obj.asInstanceOf[DynatraceConnectorProfileCredentials]
   }
   
-  extension [Self <: DynatraceConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynatraceConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setApiToken(value: ApiToken): Self = StObject.set(x, "apiToken", value.asInstanceOf[js.Any])
   }

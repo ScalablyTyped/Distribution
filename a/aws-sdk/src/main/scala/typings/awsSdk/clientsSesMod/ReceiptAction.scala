@@ -48,7 +48,8 @@ object ReceiptAction {
     __obj.asInstanceOf[ReceiptAction]
   }
   
-  extension [Self <: ReceiptAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiptAction] (val x: Self) extends AnyVal {
     
     inline def setAddHeaderAction(value: AddHeaderAction): Self = StObject.set(x, "AddHeaderAction", value.asInstanceOf[js.Any])
     

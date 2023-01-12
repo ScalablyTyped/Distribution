@@ -41,7 +41,8 @@ object libDriveMod {
       __obj.asInstanceOf[Drive]
     }
     
-    extension [Self <: Drive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Drive] (val x: Self) extends AnyVal {
       
       inline def setFree(value: String => js.Promise[DriveFreeInfo]): Self = StObject.set(x, "free", js.Any.fromFunction1(value))
       
@@ -66,7 +67,8 @@ object libDriveMod {
       __obj.asInstanceOf[DriveFreeInfo]
     }
     
-    extension [Self <: DriveFreeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DriveFreeInfo] (val x: Self) extends AnyVal {
       
       inline def setFreeGb(value: Double): Self = StObject.set(x, "freeGb", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object libDriveMod {
       __obj.asInstanceOf[DriveInfo]
     }
     
-    extension [Self <: DriveInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DriveInfo] (val x: Self) extends AnyVal {
       
       inline def setUsedGb(value: Double): Self = StObject.set(x, "usedGb", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object libDriveMod {
       __obj.asInstanceOf[DriveUsedInfo]
     }
     
-    extension [Self <: DriveUsedInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DriveUsedInfo] (val x: Self) extends AnyVal {
       
       inline def setTotalGb(value: Double): Self = StObject.set(x, "totalGb", value.asInstanceOf[js.Any])
       

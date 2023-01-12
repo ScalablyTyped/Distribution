@@ -25,7 +25,8 @@ object GenerateSshScriptRequest {
     __obj.asInstanceOf[GenerateSshScriptRequest]
   }
   
-  extension [Self <: GenerateSshScriptRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateSshScriptRequest] (val x: Self) extends AnyVal {
     
     inline def setVm(value: String): Self = StObject.set(x, "vm", value.asInstanceOf[js.Any])
     

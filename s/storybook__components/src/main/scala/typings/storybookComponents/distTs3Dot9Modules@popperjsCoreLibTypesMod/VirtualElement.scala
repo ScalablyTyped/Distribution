@@ -20,7 +20,8 @@ object VirtualElement {
     __obj.asInstanceOf[VirtualElement]
   }
   
-  extension [Self <: VirtualElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualElement] (val x: Self) extends AnyVal {
     
     inline def setContextElement(value: Element): Self = StObject.set(x, "contextElement", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CoinsFetchMarketChart {
     __obj.asInstanceOf[CoinsFetchMarketChart]
   }
   
-  extension [Self <: CoinsFetchMarketChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoinsFetchMarketChart] (val x: Self) extends AnyVal {
     
     inline def setMarket_caps(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "market_caps", value.asInstanceOf[js.Any])
     

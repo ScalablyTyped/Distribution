@@ -17,7 +17,8 @@ object DOMDefinition {
     __obj.asInstanceOf[DOMDefinition]
   }
   
-  extension [Self <: DOMDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMDefinition] (val x: Self) extends AnyVal {
     
     inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     

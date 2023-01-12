@@ -23,7 +23,8 @@ object ListUserImportJobsResponse {
     __obj.asInstanceOf[ListUserImportJobsResponse]
   }
   
-  extension [Self <: ListUserImportJobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUserImportJobsResponse] (val x: Self) extends AnyVal {
     
     inline def setPaginationToken(value: PaginationKeyType): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     

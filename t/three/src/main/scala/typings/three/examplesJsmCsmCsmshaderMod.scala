@@ -19,7 +19,8 @@ object examplesJsmCsmCsmshaderMod {
       __obj.asInstanceOf[CSMShader]
     }
     
-    extension [Self <: CSMShader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSMShader] (val x: Self) extends AnyVal {
       
       inline def setLights_fragment_begin(value: String): Self = StObject.set(x, "lights_fragment_begin", value.asInstanceOf[js.Any])
       

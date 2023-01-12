@@ -19,7 +19,8 @@ object ScaleBandSpec {
     __obj.asInstanceOf[ScaleBandSpec]
   }
   
-  extension [Self <: ScaleBandSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleBandSpec] (val x: Self) extends AnyVal {
     
     inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     

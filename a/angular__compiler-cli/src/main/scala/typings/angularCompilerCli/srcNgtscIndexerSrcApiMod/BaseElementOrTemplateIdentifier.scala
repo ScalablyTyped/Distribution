@@ -29,7 +29,8 @@ object BaseElementOrTemplateIdentifier {
     __obj.asInstanceOf[BaseElementOrTemplateIdentifier]
   }
   
-  extension [Self <: BaseElementOrTemplateIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseElementOrTemplateIdentifier] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Set[AttributeIdentifier]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

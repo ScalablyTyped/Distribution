@@ -24,7 +24,8 @@ object DeclarationProvider {
     __obj.asInstanceOf[DeclarationProvider]
   }
   
-  extension [Self <: DeclarationProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclarationProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideDeclaration(value: (TextDocument, Position, CancellationToken) => ProviderResult[Declaration]): Self = StObject.set(x, "provideDeclaration", js.Any.fromFunction3(value))
   }

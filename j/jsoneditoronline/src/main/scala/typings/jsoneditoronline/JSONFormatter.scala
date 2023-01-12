@@ -29,7 +29,8 @@ object JSONFormatter {
     __obj.asInstanceOf[JSONFormatter]
   }
   
-  extension [Self <: JSONFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONFormatter] (val x: Self) extends AnyVal {
     
     inline def setGet(value: () => js.Object): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object Alarms {
     __obj.asInstanceOf[Alarms]
   }
   
-  extension [Self <: Alarms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alarms] (val x: Self) extends AnyVal {
     
     inline def setAlarmRoleArn(value: ARN): Self = StObject.set(x, "alarmRoleArn", value.asInstanceOf[js.Any])
     

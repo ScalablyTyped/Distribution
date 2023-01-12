@@ -19,7 +19,8 @@ object BookingQuestionAssignment {
     __obj.asInstanceOf[BookingQuestionAssignment]
   }
   
-  extension [Self <: BookingQuestionAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookingQuestionAssignment] (val x: Self) extends AnyVal {
     
     inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     

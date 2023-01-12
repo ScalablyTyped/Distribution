@@ -34,7 +34,8 @@ object typesMockClientMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: typings.undici.typesMockAgentMod.^[typings.undici.typesMockAgentMod.Options]): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     }

@@ -22,7 +22,8 @@ object Selector {
     __obj.asInstanceOf[Selector]
   }
   
-  extension [Self <: Selector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Selector] (val x: Self) extends AnyVal {
     
     inline def setSelector(value: ControlSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }

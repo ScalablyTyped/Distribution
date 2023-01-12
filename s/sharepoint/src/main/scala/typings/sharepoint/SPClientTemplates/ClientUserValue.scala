@@ -41,7 +41,8 @@ object ClientUserValue {
     __obj.asInstanceOf[ClientUserValue]
   }
   
-  extension [Self <: ClientUserValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientUserValue] (val x: Self) extends AnyVal {
     
     inline def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     

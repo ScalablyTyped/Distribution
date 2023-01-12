@@ -25,7 +25,8 @@ object ChangeStreamDocumentCollectionUUID {
     __obj.asInstanceOf[ChangeStreamDocumentCollectionUUID]
   }
   
-  extension [Self <: ChangeStreamDocumentCollectionUUID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamDocumentCollectionUUID] (val x: Self) extends AnyVal {
     
     inline def setCollectionUUID(value: typings.bson.mod.Binary): Self = StObject.set(x, "collectionUUID", value.asInstanceOf[js.Any])
   }

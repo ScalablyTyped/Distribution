@@ -61,7 +61,8 @@ object InstanceGroup {
     __obj.asInstanceOf[InstanceGroup]
   }
   
-  extension [Self <: InstanceGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroup] (val x: Self) extends AnyVal {
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     

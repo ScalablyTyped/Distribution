@@ -42,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: Validator[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Pool]
     }
     
-    extension [Self <: Pool](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pool] (val x: Self) extends AnyVal {
       
       inline def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyEventStackProps]
     }
     
-    extension [Self <: ReadonlyEventStackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyEventStackProps] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

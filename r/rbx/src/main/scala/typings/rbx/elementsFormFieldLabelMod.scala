@@ -78,7 +78,8 @@ object elementsFormFieldLabelMod {
       __obj.asInstanceOf[FieldLabelModifierProps]
     }
     
-    extension [Self <: FieldLabelModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldLabelModifierProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: small | normal | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object elementsFormFieldLabelMod {
       __obj.asInstanceOf[FieldLabelProps]
     }
     
-    extension [Self <: FieldLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldLabelProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -328,7 +330,8 @@ object elementsFormFieldLabelMod {
       __obj.asInstanceOf[FieldLabelVariables]
     }
     
-    extension [Self <: FieldLabelVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldLabelVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | normal | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
@@ -345,7 +348,8 @@ object elementsFormFieldLabelMod {
       __obj.asInstanceOf[FieldLabelVariablesDefaults]
     }
     
-    extension [Self <: FieldLabelVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldLabelVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | normal | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }

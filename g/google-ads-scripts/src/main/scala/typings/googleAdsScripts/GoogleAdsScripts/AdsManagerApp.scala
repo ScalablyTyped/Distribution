@@ -49,7 +49,8 @@ object AdsManagerApp {
       __obj.asInstanceOf[AccountLabel]
     }
     
-    extension [Self <: AccountLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountLabel] (val x: Self) extends AnyVal {
       
       inline def setAccounts(value: () => ManagedAccountSelector): Self = StObject.set(x, "accounts", js.Any.fromFunction0(value))
       
@@ -141,7 +142,8 @@ object AdsManagerApp {
       __obj.asInstanceOf[typings.googleAdsScripts.GoogleAdsScripts.AdsManagerApp.AdsManagerApp]
     }
     
-    extension [Self <: typings.googleAdsScripts.GoogleAdsScripts.AdsManagerApp.AdsManagerApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAdsScripts.GoogleAdsScripts.AdsManagerApp.AdsManagerApp] (val x: Self) extends AnyVal {
       
       inline def setAccountLabels(value: () => AccountLabelSelector): Self = StObject.set(x, "accountLabels", js.Any.fromFunction0(value))
       
@@ -179,7 +181,8 @@ object AdsManagerApp {
       __obj.asInstanceOf[ExecutionResult]
     }
     
-    extension [Self <: ExecutionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecutionResult] (val x: Self) extends AnyVal {
       
       inline def setGetCustomerId(value: () => String): Self = StObject.set(x, "getCustomerId", js.Any.fromFunction0(value))
       

@@ -38,7 +38,8 @@ object SentimentFilter {
     __obj.asInstanceOf[SentimentFilter]
   }
   
-  extension [Self <: SentimentFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SentimentFilter] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteTimeRange(value: AbsoluteTimeRange): Self = StObject.set(x, "AbsoluteTimeRange", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IListDatabasesRequest {
     __obj.asInstanceOf[IListDatabasesRequest]
   }
   
-  extension [Self <: IListDatabasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListDatabasesRequest] (val x: Self) extends AnyVal {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

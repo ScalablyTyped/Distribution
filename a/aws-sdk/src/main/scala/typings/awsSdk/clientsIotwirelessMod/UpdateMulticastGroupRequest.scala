@@ -21,7 +21,8 @@ object UpdateMulticastGroupRequest {
     __obj.asInstanceOf[UpdateMulticastGroupRequest]
   }
   
-  extension [Self <: UpdateMulticastGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMulticastGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -115,7 +115,8 @@ object distSrcQueryQueryPathMod {
       __obj.asInstanceOf[QueryPathOptions]
     }
     
-    extension [Self <: QueryPathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryPathOptions] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

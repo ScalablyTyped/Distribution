@@ -19,7 +19,8 @@ object VersionSource {
     __obj.asInstanceOf[VersionSource]
   }
   
-  extension [Self <: VersionSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionSource] (val x: Self) extends AnyVal {
     
     inline def setMshField(value: String): Self = StObject.set(x, "mshField", value.asInstanceOf[js.Any])
     

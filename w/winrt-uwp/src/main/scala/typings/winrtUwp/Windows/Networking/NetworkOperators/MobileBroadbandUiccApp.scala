@@ -43,7 +43,8 @@ object MobileBroadbandUiccApp {
     __obj.asInstanceOf[MobileBroadbandUiccApp]
   }
   
-  extension [Self <: MobileBroadbandUiccApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandUiccApp] (val x: Self) extends AnyVal {
     
     inline def setGetRecordDetailsAsync(value: IIterable[Double] => IPromiseWithIAsyncOperation[MobileBroadbandUiccAppRecordDetailsResult]): Self = StObject.set(x, "getRecordDetailsAsync", js.Any.fromFunction1(value))
     

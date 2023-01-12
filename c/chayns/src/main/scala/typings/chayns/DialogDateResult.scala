@@ -18,7 +18,8 @@ object DialogDateResult {
     __obj.asInstanceOf[DialogDateResult]
   }
   
-  extension [Self <: DialogDateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogDateResult] (val x: Self) extends AnyVal {
     
     inline def setButtonType(value: buttonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     

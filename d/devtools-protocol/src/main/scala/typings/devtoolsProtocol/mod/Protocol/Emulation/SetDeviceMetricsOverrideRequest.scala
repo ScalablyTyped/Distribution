@@ -83,7 +83,8 @@ object SetDeviceMetricsOverrideRequest {
     __obj.asInstanceOf[SetDeviceMetricsOverrideRequest]
   }
   
-  extension [Self <: SetDeviceMetricsOverrideRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDeviceMetricsOverrideRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
     

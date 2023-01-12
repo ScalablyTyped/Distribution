@@ -24,7 +24,8 @@ object WorkerLifecycleEvent {
     __obj.asInstanceOf[WorkerLifecycleEvent]
   }
   
-  extension [Self <: WorkerLifecycleEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerLifecycleEvent] (val x: Self) extends AnyVal {
     
     inline def setContainerStartTime(value: String): Self = StObject.set(x, "containerStartTime", value.asInstanceOf[js.Any])
     

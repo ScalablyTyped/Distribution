@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[ExifData]
     }
     
-    extension [Self <: ExifData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExifData] (val x: Self) extends AnyVal {
       
       inline def setExif(value: ApertureValue): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object mod {
       __obj.asInstanceOf[ExifOptions]
     }
     
-    extension [Self <: ExifOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExifOptions] (val x: Self) extends AnyVal {
       
       inline def setAgfaMaxEntries(value: Double): Self = StObject.set(x, "agfaMaxEntries", value.asInstanceOf[js.Any])
       

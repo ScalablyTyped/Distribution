@@ -25,7 +25,8 @@ object TypeofGETSET {
     __obj.asInstanceOf[TypeofGETSET]
   }
   
-  extension [Self <: TypeofGETSET](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofGETSET] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

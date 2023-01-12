@@ -20,7 +20,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[Icons]
     }
     
-    extension [Self <: Icons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Icons] (val x: Self) extends AnyVal {
       
       inline def setError(value: ReactNode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

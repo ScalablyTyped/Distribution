@@ -118,7 +118,8 @@ object distScreenMod {
       __obj.asInstanceOf[IScreenOptions]
     }
     
-    extension [Self <: IScreenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScreenOptions] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: Fetch): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object distScreenMod {
       __obj.asInstanceOf[IScreenStartOptions]
     }
     
-    extension [Self <: IScreenStartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScreenStartOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableRedraw(value: Boolean): Self = StObject.set(x, "enableRedraw", value.asInstanceOf[js.Any])
       
@@ -280,7 +282,8 @@ object distScreenMod {
       __obj.asInstanceOf[IScreenViewBoxConfig]
     }
     
-    extension [Self <: IScreenViewBoxConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScreenViewBoxConfig] (val x: Self) extends AnyVal {
       
       inline def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       

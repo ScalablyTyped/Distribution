@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[CreateListenerOptions]
     }
     
-    extension [Self <: CreateListenerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateListenerOptions] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: /* connection */ Connection => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[DialOptions]
     }
     
-    extension [Self <: DialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialOptions] (val x: Self) extends AnyVal {
       
       inline def setUpgrader(value: Upgrader): Self = StObject.set(x, "upgrader", value.asInstanceOf[js.Any])
     }
@@ -111,7 +113,8 @@ object mod {
       __obj.asInstanceOf[ListenerEvents]
     }
     
-    extension [Self <: ListenerEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenerEvents] (val x: Self) extends AnyVal {
       
       inline def setClose(value: CustomEvent[Any]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object mod {
       __obj.asInstanceOf[TransportManagerEvents]
     }
     
-    extension [Self <: TransportManagerEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportManagerEvents] (val x: Self) extends AnyVal {
       
       inline def setListenerColonclose(value: CustomEvent[Listener]): Self = StObject.set(x, "listener:close", value.asInstanceOf[js.Any])
       
@@ -236,7 +240,8 @@ object mod {
       __obj.asInstanceOf[UpgraderEvents]
     }
     
-    extension [Self <: UpgraderEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpgraderEvents] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: CustomEvent[Connection]): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -259,7 +264,8 @@ object mod {
       __obj.asInstanceOf[UpgraderOptions]
     }
     
-    extension [Self <: UpgraderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpgraderOptions] (val x: Self) extends AnyVal {
       
       inline def setMuxerFactory(value: StreamMuxerFactory): Self = StObject.set(x, "muxerFactory", value.asInstanceOf[js.Any])
       

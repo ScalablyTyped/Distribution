@@ -22,7 +22,8 @@ object SpatialDropout1DLayerConfig {
     __obj.asInstanceOf[SpatialDropout1DLayerConfig]
   }
   
-  extension [Self <: SpatialDropout1DLayerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialDropout1DLayerConfig] (val x: Self) extends AnyVal {
     
     inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     

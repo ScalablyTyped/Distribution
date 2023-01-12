@@ -58,7 +58,8 @@ object ChartTwoAxisYSupplier {
     __obj.asInstanceOf[ChartTwoAxisYSupplier]
   }
   
-  extension [Self <: ChartTwoAxisYSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartTwoAxisYSupplier] (val x: Self) extends AnyVal {
     
     inline def setHasSecondaryYAxis(value: Boolean): Self = StObject.set(x, "HasSecondaryYAxis", value.asInstanceOf[js.Any])
     

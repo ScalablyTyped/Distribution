@@ -33,7 +33,8 @@ object Commentcount {
     __obj.asInstanceOf[Commentcount]
   }
   
-  extension [Self <: Commentcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Commentcount] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: DateEmail): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

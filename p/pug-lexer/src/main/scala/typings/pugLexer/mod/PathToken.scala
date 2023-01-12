@@ -21,7 +21,8 @@ object PathToken {
     __obj.asInstanceOf[PathToken]
   }
   
-  extension [Self <: PathToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathToken] (val x: Self) extends AnyVal {
     
     inline def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }

@@ -65,7 +65,8 @@ object ResourceToken {
     __obj.asInstanceOf[ResourceToken]
   }
   
-  extension [Self <: ResourceToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceToken] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

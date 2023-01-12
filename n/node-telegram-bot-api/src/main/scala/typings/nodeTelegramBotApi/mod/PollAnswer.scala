@@ -19,7 +19,8 @@ object PollAnswer {
     __obj.asInstanceOf[PollAnswer]
   }
   
-  extension [Self <: PollAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PollAnswer] (val x: Self) extends AnyVal {
     
     inline def setOption_ids(value: js.Array[Double]): Self = StObject.set(x, "option_ids", value.asInstanceOf[js.Any])
     

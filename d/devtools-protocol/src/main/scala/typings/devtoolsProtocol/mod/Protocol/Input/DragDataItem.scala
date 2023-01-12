@@ -35,7 +35,8 @@ object DragDataItem {
     __obj.asInstanceOf[DragDataItem]
   }
   
-  extension [Self <: DragDataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragDataItem] (val x: Self) extends AnyVal {
     
     inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     

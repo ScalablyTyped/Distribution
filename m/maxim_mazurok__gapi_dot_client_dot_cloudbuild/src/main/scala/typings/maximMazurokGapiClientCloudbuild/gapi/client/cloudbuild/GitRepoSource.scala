@@ -31,7 +31,8 @@ object GitRepoSource {
     __obj.asInstanceOf[GitRepoSource]
   }
   
-  extension [Self <: GitRepoSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitRepoSource] (val x: Self) extends AnyVal {
     
     inline def setBitbucketServerConfig(value: String): Self = StObject.set(x, "bitbucketServerConfig", value.asInstanceOf[js.Any])
     

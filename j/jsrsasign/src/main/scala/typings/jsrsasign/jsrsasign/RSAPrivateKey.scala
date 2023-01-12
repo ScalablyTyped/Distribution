@@ -29,7 +29,8 @@ object RSAPrivateKey {
     __obj.asInstanceOf[RSAPrivateKey]
   }
   
-  extension [Self <: RSAPrivateKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RSAPrivateKey] (val x: Self) extends AnyVal {
     
     inline def setCo(value: String): Self = StObject.set(x, "co", value.asInstanceOf[js.Any])
     

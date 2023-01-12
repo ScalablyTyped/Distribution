@@ -33,7 +33,8 @@ object ISidenavObject {
     __obj.asInstanceOf[ISidenavObject]
   }
   
-  extension [Self <: ISidenavObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISidenavObject] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => IPromise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

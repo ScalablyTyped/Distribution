@@ -17,7 +17,8 @@ object DataViewHierarchy {
     __obj.asInstanceOf[DataViewHierarchy]
   }
   
-  extension [Self <: DataViewHierarchy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewHierarchy] (val x: Self) extends AnyVal {
     
     inline def setLevels(value: js.Array[DataViewHierarchyLevel]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     

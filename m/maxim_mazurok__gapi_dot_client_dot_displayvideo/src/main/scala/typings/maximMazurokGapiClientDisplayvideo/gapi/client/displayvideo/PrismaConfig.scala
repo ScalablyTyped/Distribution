@@ -22,7 +22,8 @@ object PrismaConfig {
     __obj.asInstanceOf[PrismaConfig]
   }
   
-  extension [Self <: PrismaConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrismaConfig] (val x: Self) extends AnyVal {
     
     inline def setPrismaCpeCode(value: PrismaCpeCode): Self = StObject.set(x, "prismaCpeCode", value.asInstanceOf[js.Any])
     

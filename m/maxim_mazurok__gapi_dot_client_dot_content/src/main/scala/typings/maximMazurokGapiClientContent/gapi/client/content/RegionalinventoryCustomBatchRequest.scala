@@ -16,7 +16,8 @@ object RegionalinventoryCustomBatchRequest {
     __obj.asInstanceOf[RegionalinventoryCustomBatchRequest]
   }
   
-  extension [Self <: RegionalinventoryCustomBatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionalinventoryCustomBatchRequest] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[RegionalinventoryCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

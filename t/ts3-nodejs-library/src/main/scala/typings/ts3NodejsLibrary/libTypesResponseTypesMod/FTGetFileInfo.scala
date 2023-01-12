@@ -24,7 +24,8 @@ object FTGetFileInfo {
     __obj.asInstanceOf[FTGetFileInfo]
   }
   
-  extension [Self <: FTGetFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FTGetFileInfo] (val x: Self) extends AnyVal {
     
     inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     

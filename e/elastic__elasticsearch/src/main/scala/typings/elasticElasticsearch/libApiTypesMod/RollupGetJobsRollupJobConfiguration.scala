@@ -38,7 +38,8 @@ object RollupGetJobsRollupJobConfiguration {
     __obj.asInstanceOf[RollupGetJobsRollupJobConfiguration]
   }
   
-  extension [Self <: RollupGetJobsRollupJobConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupGetJobsRollupJobConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCron(value: String): Self = StObject.set(x, "cron", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object BatchCreateVariableError {
     __obj.asInstanceOf[BatchCreateVariableError]
   }
   
-  extension [Self <: BatchCreateVariableError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateVariableError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: integer): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

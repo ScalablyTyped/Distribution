@@ -471,7 +471,8 @@ object libToolsAdbEmuCommandsMod extends Shortcut {
       __obj.asInstanceOf[EmuInfo]
     }
     
-    extension [Self <: EmuInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmuInfo] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -498,7 +499,8 @@ object libToolsAdbEmuCommandsMod extends Shortcut {
       __obj.asInstanceOf[EmuVersionInfo]
     }
     
-    extension [Self <: EmuVersionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmuVersionInfo] (val x: Self) extends AnyVal {
       
       inline def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
       
@@ -546,7 +548,8 @@ object libToolsAdbEmuCommandsMod extends Shortcut {
       __obj.asInstanceOf[ExecTelnetOptions]
     }
     
-    extension [Self <: ExecTelnetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecTelnetOptions] (val x: Self) extends AnyVal {
       
       inline def setConnTimeout(value: Double): Self = StObject.set(x, "connTimeout", value.asInstanceOf[js.Any])
       

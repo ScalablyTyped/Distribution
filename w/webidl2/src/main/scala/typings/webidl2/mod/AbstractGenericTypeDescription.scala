@@ -34,7 +34,8 @@ object AbstractGenericTypeDescription {
     __obj.asInstanceOf[AbstractGenericTypeDescription]
   }
   
-  extension [Self <: AbstractGenericTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractGenericTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setIdlType(value: js.Array[IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     

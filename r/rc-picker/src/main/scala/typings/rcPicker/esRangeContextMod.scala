@@ -38,7 +38,8 @@ object esRangeContextMod extends Shortcut {
       __obj.asInstanceOf[RangeContextProps]
     }
     
-    extension [Self <: RangeContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeContextProps] (val x: Self) extends AnyVal {
       
       inline def setHoverRangedValue(value: RangeValue[Any]): Self = StObject.set(x, "hoverRangedValue", value.asInstanceOf[js.Any])
       

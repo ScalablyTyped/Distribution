@@ -23,7 +23,8 @@ object BindingInSyntax {
     __obj.asInstanceOf[BindingInSyntax[T]]
   }
   
-  extension [Self <: BindingInSyntax[?], T](x: Self & BindingInSyntax[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingInSyntax[?], T] (val x: Self & BindingInSyntax[T]) extends AnyVal {
     
     inline def setInRequestScope(value: () => BindingWhenOnSyntax[T]): Self = StObject.set(x, "inRequestScope", js.Any.fromFunction0(value))
     

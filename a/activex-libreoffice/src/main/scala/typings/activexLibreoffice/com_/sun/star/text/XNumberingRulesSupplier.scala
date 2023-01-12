@@ -34,7 +34,8 @@ object XNumberingRulesSupplier {
     __obj.asInstanceOf[XNumberingRulesSupplier]
   }
   
-  extension [Self <: XNumberingRulesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNumberingRulesSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetNumberingRules(value: () => XIndexAccess): Self = StObject.set(x, "getNumberingRules", js.Any.fromFunction0(value))
     

@@ -32,7 +32,8 @@ object outLicenseButtonsMod {
       __obj.asInstanceOf[LicenseButtonsFile]
     }
     
-    extension [Self <: LicenseButtonsFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LicenseButtonsFile] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

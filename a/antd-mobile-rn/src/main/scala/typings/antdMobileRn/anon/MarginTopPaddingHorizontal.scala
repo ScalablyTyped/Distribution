@@ -17,7 +17,8 @@ object MarginTopPaddingHorizontal {
     __obj.asInstanceOf[MarginTopPaddingHorizontal]
   }
   
-  extension [Self <: MarginTopPaddingHorizontal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarginTopPaddingHorizontal] (val x: Self) extends AnyVal {
     
     inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     

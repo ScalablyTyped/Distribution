@@ -49,7 +49,8 @@ object libToolsKeyboardCommandsMod extends Shortcut {
       __obj.asInstanceOf[KeyboardState]
     }
     
-    extension [Self <: KeyboardState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardState] (val x: Self) extends AnyVal {
       
       inline def setCanCloseKeyboard(value: Boolean): Self = StObject.set(x, "canCloseKeyboard", value.asInstanceOf[js.Any])
       

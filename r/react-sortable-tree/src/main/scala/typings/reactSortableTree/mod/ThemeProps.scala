@@ -17,7 +17,8 @@ object ThemeProps {
     __obj.asInstanceOf[ThemeProps[T]]
   }
   
-  extension [Self <: ThemeProps[?], T](x: Self & ThemeProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeProps[?], T] (val x: Self & ThemeProps[T]) extends AnyVal {
     
     inline def setTreeNodeRenderer(value: TreeRenderer[T]): Self = StObject.set(x, "treeNodeRenderer", value.asInstanceOf[js.Any])
     

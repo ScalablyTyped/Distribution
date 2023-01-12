@@ -34,7 +34,8 @@ object XSpreadsheetView {
     __obj.asInstanceOf[XSpreadsheetView]
   }
   
-  extension [Self <: XSpreadsheetView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSpreadsheetView] (val x: Self) extends AnyVal {
     
     inline def setActiveSheet(value: XSpreadsheet): Self = StObject.set(x, "ActiveSheet", value.asInstanceOf[js.Any])
     

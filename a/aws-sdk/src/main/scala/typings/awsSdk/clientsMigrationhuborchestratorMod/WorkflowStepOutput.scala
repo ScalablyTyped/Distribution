@@ -33,7 +33,8 @@ object WorkflowStepOutput {
     __obj.asInstanceOf[WorkflowStepOutput]
   }
   
-  extension [Self <: WorkflowStepOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowStepOutput] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: DataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

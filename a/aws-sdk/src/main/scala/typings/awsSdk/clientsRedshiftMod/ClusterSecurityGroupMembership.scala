@@ -23,7 +23,8 @@ object ClusterSecurityGroupMembership {
     __obj.asInstanceOf[ClusterSecurityGroupMembership]
   }
   
-  extension [Self <: ClusterSecurityGroupMembership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterSecurityGroupMembership] (val x: Self) extends AnyVal {
     
     inline def setClusterSecurityGroupName(value: String): Self = StObject.set(x, "ClusterSecurityGroupName", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ScratchExtension {
     __obj.asInstanceOf[ScratchExtension]
   }
   
-  extension [Self <: ScratchExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScratchExtension] (val x: Self) extends AnyVal {
     
     inline def setGetInfo(value: () => ExtensionMetadata): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
   }

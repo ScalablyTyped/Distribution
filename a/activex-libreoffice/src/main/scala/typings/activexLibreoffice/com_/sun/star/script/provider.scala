@@ -56,7 +56,8 @@ object provider {
       __obj.asInstanceOf[ScriptErrorRaisedException]
     }
     
-    extension [Self <: ScriptErrorRaisedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptErrorRaisedException] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object provider {
       __obj.asInstanceOf[ScriptExceptionRaisedException]
     }
     
-    extension [Self <: ScriptExceptionRaisedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptExceptionRaisedException] (val x: Self) extends AnyVal {
       
       inline def setExceptionType(value: String): Self = StObject.set(x, "exceptionType", value.asInstanceOf[js.Any])
     }
@@ -115,7 +117,8 @@ object provider {
       __obj.asInstanceOf[ScriptFrameworkErrorException]
     }
     
-    extension [Self <: ScriptFrameworkErrorException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptFrameworkErrorException] (val x: Self) extends AnyVal {
       
       inline def setErrorType(value: Double): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
       
@@ -219,7 +222,8 @@ object provider {
       __obj.asInstanceOf[ScriptURIHelper]
     }
     
-    extension [Self <: ScriptURIHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptURIHelper] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     }
@@ -256,7 +260,8 @@ object provider {
       __obj.asInstanceOf[XScript]
     }
     
-    extension [Self <: XScript](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XScript] (val x: Self) extends AnyVal {
       
       inline def setInvoke(value: (SeqEquiv[Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[Any]]) => Any): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))
     }
@@ -351,7 +356,8 @@ object provider {
       __obj.asInstanceOf[XScriptContext]
     }
     
-    extension [Self <: XScriptContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XScriptContext] (val x: Self) extends AnyVal {
       
       inline def setComponentContext(value: XComponentContext): Self = StObject.set(x, "ComponentContext", value.asInstanceOf[js.Any])
       
@@ -396,7 +402,8 @@ object provider {
       __obj.asInstanceOf[XScriptProvider]
     }
     
-    extension [Self <: XScriptProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XScriptProvider] (val x: Self) extends AnyVal {
       
       inline def setGetScript(value: String => XScript): Self = StObject.set(x, "getScript", js.Any.fromFunction1(value))
     }
@@ -427,7 +434,8 @@ object provider {
       __obj.asInstanceOf[XScriptProviderFactory]
     }
     
-    extension [Self <: XScriptProviderFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XScriptProviderFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateScriptProvider(value: Any => XScriptProvider): Self = StObject.set(x, "createScriptProvider", js.Any.fromFunction1(value))
     }
@@ -463,7 +471,8 @@ object provider {
       __obj.asInstanceOf[XScriptProviderSupplier]
     }
     
-    extension [Self <: XScriptProviderSupplier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XScriptProviderSupplier] (val x: Self) extends AnyVal {
       
       inline def setGetScriptProvider(value: () => XScriptProvider): Self = StObject.set(x, "getScriptProvider", js.Any.fromFunction0(value))
       
@@ -519,7 +528,8 @@ object provider {
       __obj.asInstanceOf[XScriptURIHelper]
     }
     
-    extension [Self <: XScriptURIHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XScriptURIHelper] (val x: Self) extends AnyVal {
       
       inline def setGetRootStorageURI(value: () => String): Self = StObject.set(x, "getRootStorageURI", js.Any.fromFunction0(value))
       

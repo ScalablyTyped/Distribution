@@ -17,7 +17,8 @@ object DropIndexParams {
     __obj.asInstanceOf[DropIndexParams]
   }
   
-  extension [Self <: DropIndexParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropIndexParams] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     

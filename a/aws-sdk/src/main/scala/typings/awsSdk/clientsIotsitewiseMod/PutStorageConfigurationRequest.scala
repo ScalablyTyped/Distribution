@@ -30,7 +30,8 @@ object PutStorageConfigurationRequest {
     __obj.asInstanceOf[PutStorageConfigurationRequest]
   }
   
-  extension [Self <: PutStorageConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutStorageConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDisassociatedDataStorage(value: DisassociatedDataStorageState): Self = StObject.set(x, "disassociatedDataStorage", value.asInstanceOf[js.Any])
     

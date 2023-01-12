@@ -59,7 +59,8 @@ object Clang {
     __obj.asInstanceOf[Clang]
   }
   
-  extension [Self <: Clang](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clang] (val x: Self) extends AnyVal {
     
     inline def setClang(value: Double): Self = StObject.set(x, "clang", value.asInstanceOf[js.Any])
     

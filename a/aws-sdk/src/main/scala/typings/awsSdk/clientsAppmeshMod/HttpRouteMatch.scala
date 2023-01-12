@@ -48,7 +48,8 @@ object HttpRouteMatch {
     __obj.asInstanceOf[HttpRouteMatch]
   }
   
-  extension [Self <: HttpRouteMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpRouteMatch] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: HttpRouteHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

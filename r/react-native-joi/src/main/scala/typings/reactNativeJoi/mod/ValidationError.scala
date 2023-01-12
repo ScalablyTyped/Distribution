@@ -30,7 +30,8 @@ object ValidationError {
     __obj.asInstanceOf[ValidationError]
   }
   
-  extension [Self <: ValidationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
     
     inline def setAnnotate(value: () => String): Self = StObject.set(x, "annotate", js.Any.fromFunction0(value))
     

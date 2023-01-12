@@ -19,7 +19,8 @@ object MailTipsError {
     __obj.asInstanceOf[MailTipsError]
   }
   
-  extension [Self <: MailTipsError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailTipsError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: NullableOption[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

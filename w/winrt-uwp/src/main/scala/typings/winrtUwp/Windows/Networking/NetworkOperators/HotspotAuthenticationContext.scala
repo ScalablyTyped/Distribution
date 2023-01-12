@@ -79,7 +79,8 @@ object HotspotAuthenticationContext {
     __obj.asInstanceOf[HotspotAuthenticationContext]
   }
   
-  extension [Self <: HotspotAuthenticationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HotspotAuthenticationContext] (val x: Self) extends AnyVal {
     
     inline def setAbortAuthentication(value: Boolean => Unit): Self = StObject.set(x, "abortAuthentication", js.Any.fromFunction1(value))
     

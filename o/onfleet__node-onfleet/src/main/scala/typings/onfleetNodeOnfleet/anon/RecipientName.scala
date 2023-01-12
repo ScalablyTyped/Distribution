@@ -21,7 +21,8 @@ object RecipientName {
     __obj.asInstanceOf[RecipientName]
   }
   
-  extension [Self <: RecipientName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientName] (val x: Self) extends AnyVal {
     
     inline def setRecipientName(value: String): Self = StObject.set(x, "recipientName", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SparklineSeriesItemNotesIconBorder {
     __obj.asInstanceOf[SparklineSeriesItemNotesIconBorder]
   }
   
-  extension [Self <: SparklineSeriesItemNotesIconBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineSeriesItemNotesIconBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

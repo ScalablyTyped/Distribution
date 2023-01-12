@@ -580,7 +580,8 @@ object typesMenuMod {
         __obj.asInstanceOf[IItem]
       }
       
-      extension [Self <: IItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IItem] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -662,7 +663,8 @@ object typesMenuMod {
         __obj.asInstanceOf[IItemOptions]
       }
       
-      extension [Self <: IItemOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IItemOptions] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -716,7 +718,8 @@ object typesMenuMod {
         __obj.asInstanceOf[IOpenOptions]
       }
       
-      extension [Self <: IOpenOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOpenOptions] (val x: Self) extends AnyVal {
         
         inline def setForceX(value: Boolean): Self = StObject.set(x, "forceX", value.asInstanceOf[js.Any])
         
@@ -752,7 +755,8 @@ object typesMenuMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         
@@ -794,7 +798,8 @@ object typesMenuMod {
         __obj.asInstanceOf[IRenderData]
       }
       
-      extension [Self <: IRenderData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderData] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -829,7 +834,8 @@ object typesMenuMod {
         __obj.asInstanceOf[IRenderer]
       }
       
-      extension [Self <: IRenderer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
         
         inline def setRenderItem(value: IRenderData => VirtualElement): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       }

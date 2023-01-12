@@ -38,7 +38,8 @@ object AutomatedAbrRule {
     __obj.asInstanceOf[AutomatedAbrRule]
   }
   
-  extension [Self <: AutomatedAbrRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomatedAbrRule] (val x: Self) extends AnyVal {
     
     inline def setAllowedRenditions(value: listOfAllowedRenditionSize): Self = StObject.set(x, "AllowedRenditions", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object EnableMFADeviceRequest {
     __obj.asInstanceOf[EnableMFADeviceRequest]
   }
   
-  extension [Self <: EnableMFADeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableMFADeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationCode1(value: authenticationCodeType): Self = StObject.set(x, "AuthenticationCode1", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object Workload {
     __obj.asInstanceOf[Workload]
   }
   
-  extension [Self <: Workload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Workload] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: WorkloadAccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

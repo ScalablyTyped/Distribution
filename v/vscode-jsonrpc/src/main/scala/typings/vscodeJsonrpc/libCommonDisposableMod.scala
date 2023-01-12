@@ -26,7 +26,8 @@ object libCommonDisposableMod {
     
     inline def create(func: js.Function0[Unit]): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(func.asInstanceOf[js.Any]).asInstanceOf[Disposable]
     
-    extension [Self <: Disposable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disposable] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }

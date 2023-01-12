@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[BareMessage]
     }
     
-    extension [Self <: BareMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BareMessage] (val x: Self) extends AnyVal {
       
       inline def setBareMessage(value: String): Self = StObject.set(x, "bareMessage", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Parent]
     }
     
-    extension [Self <: Parent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
       
       inline def setParent(value: EnumType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       

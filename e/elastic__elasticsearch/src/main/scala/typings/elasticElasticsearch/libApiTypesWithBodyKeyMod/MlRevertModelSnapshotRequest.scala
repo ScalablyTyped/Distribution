@@ -23,7 +23,8 @@ object MlRevertModelSnapshotRequest {
     __obj.asInstanceOf[MlRevertModelSnapshotRequest]
   }
   
-  extension [Self <: MlRevertModelSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlRevertModelSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Deleteinterveningresults): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

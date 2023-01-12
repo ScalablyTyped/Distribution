@@ -30,7 +30,8 @@ object libSrcArmProxyModelsArmProviderMod {
       __obj.asInstanceOf[Provider]
     }
     
-    extension [Self <: Provider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object libSrcArmProxyModelsArmProviderMod {
       __obj.asInstanceOf[ResourceType]
     }
     
-    extension [Self <: ResourceType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceType] (val x: Self) extends AnyVal {
       
       inline def setApiVersions(value: js.Array[String]): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
       

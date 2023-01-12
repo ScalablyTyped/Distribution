@@ -15,7 +15,8 @@ object Https {
     __obj.asInstanceOf[Https]
   }
   
-  extension [Self <: Https](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Https] (val x: Self) extends AnyVal {
     
     inline def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
     

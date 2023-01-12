@@ -45,7 +45,8 @@ object distLibIcoMod {
       __obj.asInstanceOf[ICOOptions]
     }
     
-    extension [Self <: ICOOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICOOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetTopicAttributesResponse {
     __obj.asInstanceOf[GetTopicAttributesResponse]
   }
   
-  extension [Self <: GetTopicAttributesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTopicAttributesResponse] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: TopicAttributesMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReactToggledProps]
     }
     
-    extension [Self <: ReactToggledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactToggledProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* options */ TogglerStateAndHelpers => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

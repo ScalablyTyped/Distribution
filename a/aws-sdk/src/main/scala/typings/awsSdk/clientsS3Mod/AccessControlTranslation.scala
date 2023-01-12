@@ -18,7 +18,8 @@ object AccessControlTranslation {
     __obj.asInstanceOf[AccessControlTranslation]
   }
   
-  extension [Self <: AccessControlTranslation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessControlTranslation] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: OwnerOverride): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
   }

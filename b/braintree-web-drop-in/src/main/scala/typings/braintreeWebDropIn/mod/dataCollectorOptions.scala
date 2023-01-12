@@ -15,7 +15,8 @@ object dataCollectorOptions {
     __obj.asInstanceOf[dataCollectorOptions]
   }
   
-  extension [Self <: dataCollectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dataCollectorOptions] (val x: Self) extends AnyVal {
     
     inline def setKount(value: Boolean): Self = StObject.set(x, "kount", value.asInstanceOf[js.Any])
     

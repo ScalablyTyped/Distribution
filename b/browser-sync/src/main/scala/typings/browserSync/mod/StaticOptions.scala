@@ -17,7 +17,8 @@ object StaticOptions {
     __obj.asInstanceOf[StaticOptions]
   }
   
-  extension [Self <: StaticOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticOptions] (val x: Self) extends AnyVal {
     
     inline def setDir(value: String | js.Array[String]): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

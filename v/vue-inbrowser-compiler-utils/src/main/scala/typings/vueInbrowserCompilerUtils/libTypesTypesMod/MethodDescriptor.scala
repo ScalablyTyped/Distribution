@@ -31,7 +31,8 @@ object MethodDescriptor {
     __obj.asInstanceOf[MethodDescriptor]
   }
   
-  extension [Self <: MethodDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

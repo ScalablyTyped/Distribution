@@ -23,7 +23,8 @@ object BranchDiffSourceCodeType {
     __obj.asInstanceOf[BranchDiffSourceCodeType]
   }
   
-  extension [Self <: BranchDiffSourceCodeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BranchDiffSourceCodeType] (val x: Self) extends AnyVal {
     
     inline def setDestinationBranchName(value: BranchName): Self = StObject.set(x, "DestinationBranchName", value.asInstanceOf[js.Any])
     

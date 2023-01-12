@@ -24,7 +24,8 @@ object VideoDisplayProperties {
     __obj.asInstanceOf[VideoDisplayProperties]
   }
   
-  extension [Self <: VideoDisplayProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoDisplayProperties] (val x: Self) extends AnyVal {
     
     inline def setGenres(value: IVector[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object IDataBinningOptions {
     __obj.asInstanceOf[IDataBinningOptions]
   }
   
-  extension [Self <: IDataBinningOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataBinningOptions] (val x: Self) extends AnyVal {
     
     inline def setAggregationProperty(value: String): Self = StObject.set(x, "aggregationProperty", value.asInstanceOf[js.Any])
     

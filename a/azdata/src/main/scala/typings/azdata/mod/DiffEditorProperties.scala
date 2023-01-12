@@ -45,7 +45,8 @@ object DiffEditorProperties {
     __obj.asInstanceOf[DiffEditorProperties]
   }
   
-  extension [Self <: DiffEditorProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiffEditorProperties] (val x: Self) extends AnyVal {
     
     inline def setContentLeft(value: String): Self = StObject.set(x, "contentLeft", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PDFViewerMessagesToolbar {
     __obj.asInstanceOf[PDFViewerMessagesToolbar]
   }
   
-  extension [Self <: PDFViewerMessagesToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerMessagesToolbar] (val x: Self) extends AnyVal {
     
     inline def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     

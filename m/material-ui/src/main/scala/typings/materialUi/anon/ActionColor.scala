@@ -19,7 +19,8 @@ object ActionColor {
     __obj.asInstanceOf[ActionColor]
   }
   
-  extension [Self <: ActionColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionColor] (val x: Self) extends AnyVal {
     
     inline def setActionColor(value: String): Self = StObject.set(x, "actionColor", value.asInstanceOf[js.Any])
     

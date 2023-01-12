@@ -15,7 +15,8 @@ object TrackRemovals {
     __obj.asInstanceOf[TrackRemovals]
   }
   
-  extension [Self <: TrackRemovals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackRemovals] (val x: Self) extends AnyVal {
     
     inline def setTrackRemovals(value: Boolean): Self = StObject.set(x, "trackRemovals", value.asInstanceOf[js.Any])
   }

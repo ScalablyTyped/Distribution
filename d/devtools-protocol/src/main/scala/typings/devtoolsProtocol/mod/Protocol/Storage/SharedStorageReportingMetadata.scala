@@ -17,7 +17,8 @@ object SharedStorageReportingMetadata {
     __obj.asInstanceOf[SharedStorageReportingMetadata]
   }
   
-  extension [Self <: SharedStorageReportingMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedStorageReportingMetadata] (val x: Self) extends AnyVal {
     
     inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     

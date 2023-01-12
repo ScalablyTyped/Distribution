@@ -23,7 +23,8 @@ object SnowflakeConnectorProfileCredentials {
     __obj.asInstanceOf[SnowflakeConnectorProfileCredentials]
   }
   
-  extension [Self <: SnowflakeConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnowflakeConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

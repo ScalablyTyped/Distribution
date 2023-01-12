@@ -28,7 +28,8 @@ object BasicChartAxis {
     __obj.asInstanceOf[BasicChartAxis]
   }
   
-  extension [Self <: BasicChartAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicChartAxis] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: TextFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

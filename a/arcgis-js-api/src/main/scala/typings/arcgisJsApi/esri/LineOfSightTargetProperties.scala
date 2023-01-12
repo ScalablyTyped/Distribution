@@ -20,7 +20,8 @@ object LineOfSightTargetProperties {
     __obj.asInstanceOf[LineOfSightTargetProperties]
   }
   
-  extension [Self <: LineOfSightTargetProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineOfSightTargetProperties] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: PointProperties): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

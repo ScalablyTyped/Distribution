@@ -28,7 +28,8 @@ object IPropertyType {
     __obj.asInstanceOf[IPropertyType]
   }
   
-  extension [Self <: IPropertyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyType] (val x: Self) extends AnyVal {
     
     inline def setBeginValidateNormalizeConvert(value: (Double, String, Any, Boolean, js.Function1[/* args */ DataValue, Unit], Any) => Unit): Self = StObject.set(x, "BeginValidateNormalizeConvert", js.Any.fromFunction6(value))
     

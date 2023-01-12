@@ -38,7 +38,8 @@ object GetMailDomainResponse {
     __obj.asInstanceOf[GetMailDomainResponse]
   }
   
-  extension [Self <: GetMailDomainResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMailDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setDkimVerificationStatus(value: DnsRecordVerificationStatus): Self = StObject.set(x, "DkimVerificationStatus", value.asInstanceOf[js.Any])
     

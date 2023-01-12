@@ -21,7 +21,8 @@ object CustomTestFieldDefinition {
     __obj.asInstanceOf[CustomTestFieldDefinition]
   }
   
-  extension [Self <: CustomTestFieldDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTestFieldDefinition] (val x: Self) extends AnyVal {
     
     inline def setFieldId(value: Double): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
     

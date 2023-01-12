@@ -23,7 +23,8 @@ object SignatureValidityPeriod {
     __obj.asInstanceOf[SignatureValidityPeriod]
   }
   
-  extension [Self <: SignatureValidityPeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureValidityPeriod] (val x: Self) extends AnyVal {
     
     inline def setType(value: ValidityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

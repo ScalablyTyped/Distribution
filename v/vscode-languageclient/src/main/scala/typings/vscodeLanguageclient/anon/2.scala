@@ -16,7 +16,8 @@ object `2` {
     __obj.asInstanceOf[`2`]
   }
   
-  extension [Self <: `2`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
     
     inline def setSend(value: TextDocumentChangeEvent => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
   }

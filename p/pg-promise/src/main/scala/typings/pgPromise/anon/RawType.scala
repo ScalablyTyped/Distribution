@@ -17,7 +17,8 @@ object RawType {
     __obj.asInstanceOf[RawType]
   }
   
-  extension [Self <: RawType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawType] (val x: Self) extends AnyVal {
     
     inline def setRawType(value: js.Symbol): Self = StObject.set(x, "rawType", value.asInstanceOf[js.Any])
     

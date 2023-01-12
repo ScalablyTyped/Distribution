@@ -37,7 +37,8 @@ object distFrameworkFrameworkMod {
       __obj.asInstanceOf[BuiltinFrameworkMetadata]
     }
     
-    extension [Self <: BuiltinFrameworkMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuiltinFrameworkMetadata] (val x: Self) extends AnyVal {
       
       inline def setExpress(value: ExpressMetadata): Self = StObject.set(x, "express", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object distFrameworkFrameworkMod {
       __obj.asInstanceOf[BuiltinFrameworks]
     }
     
-    extension [Self <: BuiltinFrameworks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuiltinFrameworks] (val x: Self) extends AnyVal {
       
       inline def setExpress(value: Express_): Self = StObject.set(x, "express", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object distFrameworkFrameworkMod {
       __obj.asInstanceOf[Framework[THandler]]
     }
     
-    extension [Self <: Framework[?], THandler](x: Self & Framework[THandler]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Framework[?], THandler] (val x: Self & Framework[THandler]) extends AnyVal {
       
       inline def setCheck(value: /* repeated */ Any => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
       
@@ -170,7 +173,8 @@ object distFrameworkFrameworkMod {
       __obj.asInstanceOf[StandardResponse]
     }
     
-    extension [Self <: StandardResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandardResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: JsonObject): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

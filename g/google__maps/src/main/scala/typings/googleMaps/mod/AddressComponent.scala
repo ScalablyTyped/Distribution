@@ -26,7 +26,8 @@ object AddressComponent {
     __obj.asInstanceOf[AddressComponent[T]]
   }
   
-  extension [Self <: AddressComponent[?], T](x: Self & AddressComponent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressComponent[?], T] (val x: Self & AddressComponent[T]) extends AnyVal {
     
     inline def setLong_name(value: String): Self = StObject.set(x, "long_name", value.asInstanceOf[js.Any])
     

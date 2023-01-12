@@ -36,7 +36,8 @@ object ChatConversationThreadingInfo {
     __obj.asInstanceOf[ChatConversationThreadingInfo]
   }
   
-  extension [Self <: ChatConversationThreadingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatConversationThreadingInfo] (val x: Self) extends AnyVal {
     
     inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     

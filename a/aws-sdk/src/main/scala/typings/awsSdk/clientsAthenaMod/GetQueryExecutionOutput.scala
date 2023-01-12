@@ -18,7 +18,8 @@ object GetQueryExecutionOutput {
     __obj.asInstanceOf[GetQueryExecutionOutput]
   }
   
-  extension [Self <: GetQueryExecutionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetQueryExecutionOutput] (val x: Self) extends AnyVal {
     
     inline def setQueryExecution(value: QueryExecution): Self = StObject.set(x, "QueryExecution", value.asInstanceOf[js.Any])
     

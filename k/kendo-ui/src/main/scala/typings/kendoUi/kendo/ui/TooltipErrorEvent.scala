@@ -20,7 +20,8 @@ object TooltipErrorEvent {
     __obj.asInstanceOf[TooltipErrorEvent]
   }
   
-  extension [Self <: TooltipErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object CompositionAttester {
     __obj.asInstanceOf[CompositionAttester]
   }
   
-  extension [Self <: CompositionAttester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositionAttester] (val x: Self) extends AnyVal {
     
     inline def setMode(value: js.Array[personal | professional | legal | official]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

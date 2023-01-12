@@ -215,7 +215,8 @@ object DeepImmutableObjectMatrixAdd {
     __obj.asInstanceOf[DeepImmutableObjectMatrixAdd]
   }
   
-  extension [Self <: DeepImmutableObjectMatrixAdd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepImmutableObjectMatrixAdd] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* other */ DeepImmutable[Matrix] => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

@@ -160,7 +160,8 @@ object anon {
       __obj.asInstanceOf[ReadonlychildrenReactNode]
     }
     
-    extension [Self <: ReadonlychildrenReactNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlychildrenReactNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object anon {
       __obj.asInstanceOf[Store[S, A, MonitorState]]
     }
     
-    extension [Self <: Store[?, ?, ?], S, A /* <: Action[Any] */, MonitorState](x: Self & (Store[S, A, MonitorState])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store[?, ?, ?], S, A /* <: Action[Any] */, MonitorState] (val x: Self & (Store[S, A, MonitorState])) extends AnyVal {
       
       inline def setStore(value: EnhancedStore[S, A, MonitorState]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object anon {
       __obj.asInstanceOf[StoreRequireable]
     }
     
-    extension [Self <: StoreRequireable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreRequireable] (val x: Self) extends AnyVal {
       
       inline def setStore(value: Requireable[js.Object]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }

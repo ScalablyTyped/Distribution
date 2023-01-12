@@ -88,7 +88,8 @@ object coreMapDataCalcToolsMod {
         __obj.asInstanceOf[MapZoomTileParameters]
       }
       
-      extension [Self <: MapZoomTileParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MapZoomTileParameters] (val x: Self) extends AnyVal {
         
         inline def setHasPortals(value: Boolean): Self = StObject.set(x, "hasPortals", value.asInstanceOf[js.Any])
         

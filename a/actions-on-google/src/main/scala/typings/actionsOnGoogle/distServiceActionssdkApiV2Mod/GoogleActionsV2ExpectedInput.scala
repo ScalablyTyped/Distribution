@@ -31,7 +31,8 @@ object GoogleActionsV2ExpectedInput {
     __obj.asInstanceOf[GoogleActionsV2ExpectedInput]
   }
   
-  extension [Self <: GoogleActionsV2ExpectedInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2ExpectedInput] (val x: Self) extends AnyVal {
     
     inline def setInputPrompt(value: GoogleActionsV2InputPrompt): Self = StObject.set(x, "inputPrompt", value.asInstanceOf[js.Any])
     

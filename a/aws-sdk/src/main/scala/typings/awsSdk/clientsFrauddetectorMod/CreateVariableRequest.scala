@@ -48,7 +48,8 @@ object CreateVariableRequest {
     __obj.asInstanceOf[CreateVariableRequest]
   }
   
-  extension [Self <: CreateVariableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVariableRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

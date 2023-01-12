@@ -121,7 +121,8 @@ object KbSearchResult {
     __obj.asInstanceOf[KbSearchResult]
   }
   
-  extension [Self <: KbSearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KbSearchResult] (val x: Self) extends AnyVal {
     
     inline def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     

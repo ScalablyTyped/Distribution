@@ -15,7 +15,8 @@ object SwitchoverReadReplicaResult {
     __obj.asInstanceOf[SwitchoverReadReplicaResult]
   }
   
-  extension [Self <: SwitchoverReadReplicaResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchoverReadReplicaResult] (val x: Self) extends AnyVal {
     
     inline def setDBInstance(value: DBInstance): Self = StObject.set(x, "DBInstance", value.asInstanceOf[js.Any])
     

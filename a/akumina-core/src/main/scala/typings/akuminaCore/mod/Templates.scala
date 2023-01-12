@@ -42,7 +42,8 @@ object Templates {
     __obj.asInstanceOf[Templates]
   }
   
-  extension [Self <: Templates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Templates] (val x: Self) extends AnyVal {
     
     inline def setBindErrorTemplateForWidgets(value: Any => Unit): Self = StObject.set(x, "BindErrorTemplateForWidgets", js.Any.fromFunction1(value))
     

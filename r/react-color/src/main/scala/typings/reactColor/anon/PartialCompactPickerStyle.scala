@@ -21,7 +21,8 @@ object PartialCompactPickerStyle {
     __obj.asInstanceOf[PartialCompactPickerStyle]
   }
   
-  extension [Self <: PartialCompactPickerStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCompactPickerStyle] (val x: Self) extends AnyVal {
     
     inline def setClear(value: CSSProperties): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     

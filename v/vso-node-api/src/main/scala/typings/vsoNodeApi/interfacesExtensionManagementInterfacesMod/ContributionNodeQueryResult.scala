@@ -27,7 +27,8 @@ object ContributionNodeQueryResult {
     __obj.asInstanceOf[ContributionNodeQueryResult]
   }
   
-  extension [Self <: ContributionNodeQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContributionNodeQueryResult] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: StringDictionary[ClientContributionNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object distSrcUtilsStyleSheetMod {
       __obj.asInstanceOf[CustomStyleSheet]
     }
     
-    extension [Self <: CustomStyleSheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomStyleSheet] (val x: Self) extends AnyVal {
       
       inline def setCtr(value: Any): Self = StObject.set(x, "ctr", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object distSrcUtilsStyleSheetMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object TableRow {
     __obj.asInstanceOf[TableRow]
   }
   
-  extension [Self <: TableRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableRow] (val x: Self) extends AnyVal {
     
     inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     

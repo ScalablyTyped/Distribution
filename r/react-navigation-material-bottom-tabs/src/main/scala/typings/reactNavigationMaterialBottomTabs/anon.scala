@@ -42,7 +42,8 @@ object anon {
       __obj.asInstanceOf[ActiveColorDark]
     }
     
-    extension [Self <: ActiveColorDark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveColorDark] (val x: Self) extends AnyVal {
       
       inline def setActiveColorDark(value: String): Self = StObject.set(x, "activeColorDark", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object anon {
       __obj.asInstanceOf[DefaultHandler]
     }
     
-    extension [Self <: DefaultHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultHandler] (val x: Self) extends AnyVal {
       
       inline def setDefaultHandler(value: () => Unit): Self = StObject.set(x, "defaultHandler", js.Any.fromFunction0(value))
       
@@ -156,7 +159,8 @@ object anon {
       __obj.asInstanceOf[Descriptors]
     }
     
-    extension [Self <: Descriptors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Descriptors] (val x: Self) extends AnyVal {
       
       inline def setDescriptors(
         value: StringDictionary[
@@ -193,7 +197,8 @@ object anon {
       __obj.asInstanceOf[Focused]
     }
     
-    extension [Self <: Focused](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Focused] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
@@ -218,7 +223,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -241,7 +247,8 @@ object anon {
       __obj.asInstanceOf[NavigationOptions[Params, ScreenProps]]
     }
     
-    extension [Self <: NavigationOptions[?, ?], Params, ScreenProps](x: Self & (NavigationOptions[Params, ScreenProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationOptions[?, ?], Params, ScreenProps] (val x: Self & (NavigationOptions[Params, ScreenProps])) extends AnyVal {
       
       inline def setNavigationOptions(
         value: NavigationScreenConfig[
@@ -270,7 +277,8 @@ object anon {
       __obj.asInstanceOf[Route]
     }
     
-    extension [Self <: Route](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
       inline def setRoute(value: NavigationRoute[NavigationParams]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
@@ -287,7 +295,8 @@ object anon {
       __obj.asInstanceOf[RouteKey]
     }
     
-    extension [Self <: RouteKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteKey] (val x: Self) extends AnyVal {
       
       inline def setRoute(value: Key): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
@@ -308,7 +317,8 @@ object anon {
       __obj.asInstanceOf[TintColor]
     }
     
-    extension [Self <: TintColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TintColor] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       

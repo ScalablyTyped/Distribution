@@ -23,7 +23,8 @@ object GetChangeLogsResponse {
     __obj.asInstanceOf[GetChangeLogsResponse]
   }
   
-  extension [Self <: GetChangeLogsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetChangeLogsResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeLogs(value: ChangeLogs): Self = StObject.set(x, "changeLogs", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object successresponsestringvoid {
     __obj.asInstanceOf[successresponsestringvoid]
   }
   
-  extension [Self <: successresponsestringvoid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: successresponsestringvoid] (val x: Self) extends AnyVal {
     
     inline def setBinaryAttachment(value: `false`): Self = StObject.set(x, "binaryAttachment", value.asInstanceOf[js.Any])
     

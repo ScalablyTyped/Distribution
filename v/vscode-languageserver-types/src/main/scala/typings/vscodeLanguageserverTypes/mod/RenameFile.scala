@@ -53,7 +53,8 @@ object RenameFile {
   
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean]
   
-  extension [Self <: RenameFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameFile] (val x: Self) extends AnyVal {
     
     inline def setKind(value: rename): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

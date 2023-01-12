@@ -15,7 +15,8 @@ object TxAck {
     __obj.asInstanceOf[TxAck]
   }
   
-  extension [Self <: TxAck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TxAck] (val x: Self) extends AnyVal {
     
     inline def setTx(value: TxAckResponse): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
   }

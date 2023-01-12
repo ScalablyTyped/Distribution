@@ -45,7 +45,8 @@ object List {
     __obj.asInstanceOf[typings.microsoftGraph.mod.List]
   }
   
-  extension [Self <: typings.microsoftGraph.mod.List](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.microsoftGraph.mod.List] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: NullableOption[js.Array[ColumnDefinition]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

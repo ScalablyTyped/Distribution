@@ -46,7 +46,8 @@ object Process {
     __obj.asInstanceOf[Process]
   }
   
-  extension [Self <: Process](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

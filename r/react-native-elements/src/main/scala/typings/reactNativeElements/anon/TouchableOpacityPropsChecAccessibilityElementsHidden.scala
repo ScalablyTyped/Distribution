@@ -356,7 +356,8 @@ object TouchableOpacityPropsChecAccessibilityElementsHidden {
     __obj.asInstanceOf[TouchableOpacityPropsChecAccessibilityElementsHidden]
   }
   
-  extension [Self <: TouchableOpacityPropsChecAccessibilityElementsHidden](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchableOpacityPropsChecAccessibilityElementsHidden] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

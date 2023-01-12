@@ -21,7 +21,8 @@ object IgPathFinder {
     __obj.asInstanceOf[IgPathFinder]
   }
   
-  extension [Self <: IgPathFinder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPathFinder] (val x: Self) extends AnyVal {
     
     inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object PostResponseData {
     __obj.asInstanceOf[PostResponseData]
   }
   
-  extension [Self <: PostResponseData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostResponseData] (val x: Self) extends AnyVal {
     
     inline def setCost(value: ResponseCost): Self = StObject.set(x, "Cost", value.asInstanceOf[js.Any])
     

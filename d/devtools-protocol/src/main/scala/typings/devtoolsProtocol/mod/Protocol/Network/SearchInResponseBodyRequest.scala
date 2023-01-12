@@ -33,7 +33,8 @@ object SearchInResponseBodyRequest {
     __obj.asInstanceOf[SearchInResponseBodyRequest]
   }
   
-  extension [Self <: SearchInResponseBodyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchInResponseBodyRequest] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     

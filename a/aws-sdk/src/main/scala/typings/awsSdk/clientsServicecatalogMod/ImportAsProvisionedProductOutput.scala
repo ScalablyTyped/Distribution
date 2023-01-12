@@ -15,7 +15,8 @@ object ImportAsProvisionedProductOutput {
     __obj.asInstanceOf[ImportAsProvisionedProductOutput]
   }
   
-  extension [Self <: ImportAsProvisionedProductOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportAsProvisionedProductOutput] (val x: Self) extends AnyVal {
     
     inline def setRecordDetail(value: RecordDetail): Self = StObject.set(x, "RecordDetail", value.asInstanceOf[js.Any])
     

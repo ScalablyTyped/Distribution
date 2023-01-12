@@ -21,7 +21,8 @@ object FileManagerMessages {
     __obj.asInstanceOf[FileManagerMessages]
   }
   
-  extension [Self <: FileManagerMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerMessages] (val x: Self) extends AnyVal {
     
     inline def setDialogs(value: FileManagerMessagesDialogs): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
     

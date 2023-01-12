@@ -16,7 +16,8 @@ object MetastoreConfig {
     __obj.asInstanceOf[MetastoreConfig]
   }
   
-  extension [Self <: MetastoreConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetastoreConfig] (val x: Self) extends AnyVal {
     
     inline def setDataprocMetastoreService(value: String): Self = StObject.set(x, "dataprocMetastoreService", value.asInstanceOf[js.Any])
     

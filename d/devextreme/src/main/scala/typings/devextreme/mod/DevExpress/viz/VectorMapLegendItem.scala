@@ -35,7 +35,8 @@ object VectorMapLegendItem {
     __obj.asInstanceOf[VectorMapLegendItem]
   }
   
-  extension [Self <: VectorMapLegendItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorMapLegendItem] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

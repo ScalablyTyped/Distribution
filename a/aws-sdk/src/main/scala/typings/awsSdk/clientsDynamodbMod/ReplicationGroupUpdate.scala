@@ -28,7 +28,8 @@ object ReplicationGroupUpdate {
     __obj.asInstanceOf[ReplicationGroupUpdate]
   }
   
-  extension [Self <: ReplicationGroupUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationGroupUpdate] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: CreateReplicationGroupMemberAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
     

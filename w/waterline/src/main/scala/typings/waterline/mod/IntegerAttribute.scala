@@ -23,7 +23,8 @@ object IntegerAttribute {
     __obj.asInstanceOf[IntegerAttribute]
   }
   
-  extension [Self <: IntegerAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerAttribute] (val x: Self) extends AnyVal {
     
     inline def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
     

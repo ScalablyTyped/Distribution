@@ -130,7 +130,8 @@ object distSettingsMod {
       __obj.asInstanceOf[FlipSetting]
     }
     
-    extension [Self <: FlipSetting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlipSetting] (val x: Self) extends AnyVal {
       
       inline def setAutoSize(value: Boolean): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
       

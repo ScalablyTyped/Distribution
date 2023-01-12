@@ -17,7 +17,8 @@ object WidgetsVersionedList {
     __obj.asInstanceOf[WidgetsVersionedList]
   }
   
-  extension [Self <: WidgetsVersionedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetsVersionedList] (val x: Self) extends AnyVal {
     
     inline def setETag(value: js.Array[String]): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object SpeechRecognizerUIOptions {
     __obj.asInstanceOf[SpeechRecognizerUIOptions]
   }
   
-  extension [Self <: SpeechRecognizerUIOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognizerUIOptions] (val x: Self) extends AnyVal {
     
     inline def setAudiblePrompt(value: String): Self = StObject.set(x, "audiblePrompt", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ParticipantMultiplicity {
     __obj.asInstanceOf[ParticipantMultiplicity]
   }
   
-  extension [Self <: ParticipantMultiplicity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantMultiplicity] (val x: Self) extends AnyVal {
     
     inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     

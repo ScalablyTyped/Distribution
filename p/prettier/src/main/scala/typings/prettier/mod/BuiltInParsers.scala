@@ -152,7 +152,8 @@ object BuiltInParsers {
     __obj.asInstanceOf[BuiltInParsers]
   }
   
-  extension [Self <: BuiltInParsers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltInParsers] (val x: Self) extends AnyVal {
     
     inline def setAngular(value: (/* text */ String, /* options */ js.UndefOr[Any]) => AST): Self = StObject.set(x, "angular", js.Any.fromFunction2(value))
     

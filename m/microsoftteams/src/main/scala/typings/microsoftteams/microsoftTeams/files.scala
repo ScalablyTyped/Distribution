@@ -146,7 +146,8 @@ object files {
       __obj.asInstanceOf[CloudStorageFolder]
     }
     
-    extension [Self <: CloudStorageFolder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudStorageFolder] (val x: Self) extends AnyVal {
       
       inline def setAccessType(value: String): Self = StObject.set(x, "accessType", value.asInstanceOf[js.Any])
       
@@ -241,7 +242,8 @@ object files {
       __obj.asInstanceOf[CloudStorageFolderItem]
     }
     
-    extension [Self <: CloudStorageFolderItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudStorageFolderItem] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       

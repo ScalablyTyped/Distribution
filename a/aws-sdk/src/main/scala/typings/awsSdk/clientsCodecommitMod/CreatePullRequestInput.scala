@@ -33,7 +33,8 @@ object CreatePullRequestInput {
     __obj.asInstanceOf[CreatePullRequestInput]
   }
   
-  extension [Self <: CreatePullRequestInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePullRequestInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

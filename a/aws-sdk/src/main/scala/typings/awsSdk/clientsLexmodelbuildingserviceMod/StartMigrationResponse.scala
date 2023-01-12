@@ -53,7 +53,8 @@ object StartMigrationResponse {
     __obj.asInstanceOf[StartMigrationResponse]
   }
   
-  extension [Self <: StartMigrationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMigrationResponse] (val x: Self) extends AnyVal {
     
     inline def setMigrationId(value: MigrationId): Self = StObject.set(x, "migrationId", value.asInstanceOf[js.Any])
     

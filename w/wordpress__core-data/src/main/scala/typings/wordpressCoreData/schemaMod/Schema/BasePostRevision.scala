@@ -55,7 +55,8 @@ object BasePostRevision {
     __obj.asInstanceOf[BasePostRevision[T]]
   }
   
-  extension [Self <: BasePostRevision[?], T /* <: Context */](x: Self & BasePostRevision[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePostRevision[?], T /* <: Context */] (val x: Self & BasePostRevision[T]) extends AnyVal {
     
     inline def setAuthor(value: Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

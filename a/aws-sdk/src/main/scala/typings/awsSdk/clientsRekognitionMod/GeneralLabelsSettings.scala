@@ -33,7 +33,8 @@ object GeneralLabelsSettings {
     __obj.asInstanceOf[GeneralLabelsSettings]
   }
   
-  extension [Self <: GeneralLabelsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralLabelsSettings] (val x: Self) extends AnyVal {
     
     inline def setLabelCategoryExclusionFilters(value: GeneralLabelsFilterList): Self = StObject.set(x, "LabelCategoryExclusionFilters", value.asInstanceOf[js.Any])
     

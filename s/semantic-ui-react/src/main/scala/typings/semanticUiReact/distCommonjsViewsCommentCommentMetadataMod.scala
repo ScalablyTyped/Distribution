@@ -48,7 +48,8 @@ object distCommonjsViewsCommentCommentMetadataMod extends Shortcut {
       __obj.asInstanceOf[StrictCommentMetadataProps]
     }
     
-    extension [Self <: StrictCommentMetadataProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictCommentMetadataProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

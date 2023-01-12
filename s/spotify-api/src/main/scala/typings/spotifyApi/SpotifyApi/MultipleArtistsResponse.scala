@@ -21,7 +21,8 @@ object MultipleArtistsResponse {
     __obj.asInstanceOf[MultipleArtistsResponse]
   }
   
-  extension [Self <: MultipleArtistsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleArtistsResponse] (val x: Self) extends AnyVal {
     
     inline def setArtists(value: js.Array[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     

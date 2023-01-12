@@ -28,7 +28,8 @@ object Database {
     __obj.asInstanceOf[Database]
   }
   
-  extension [Self <: Database](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Database] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

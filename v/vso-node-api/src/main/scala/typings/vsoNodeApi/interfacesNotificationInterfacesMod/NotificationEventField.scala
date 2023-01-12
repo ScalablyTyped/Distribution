@@ -44,7 +44,8 @@ object NotificationEventField {
     __obj.asInstanceOf[NotificationEventField]
   }
   
-  extension [Self <: NotificationEventField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationEventField] (val x: Self) extends AnyVal {
     
     inline def setFieldType(value: NotificationEventFieldType): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
     

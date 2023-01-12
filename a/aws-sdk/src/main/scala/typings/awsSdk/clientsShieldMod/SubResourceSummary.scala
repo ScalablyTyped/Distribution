@@ -33,7 +33,8 @@ object SubResourceSummary {
     __obj.asInstanceOf[SubResourceSummary]
   }
   
-  extension [Self <: SubResourceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubResourceSummary] (val x: Self) extends AnyVal {
     
     inline def setAttackVectors(value: SummarizedAttackVectorList): Self = StObject.set(x, "AttackVectors", value.asInstanceOf[js.Any])
     

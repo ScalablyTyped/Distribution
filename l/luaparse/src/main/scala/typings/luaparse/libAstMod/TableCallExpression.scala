@@ -21,7 +21,8 @@ object TableCallExpression {
     __obj.asInstanceOf[TableCallExpression]
   }
   
-  extension [Self <: TableCallExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCallExpression] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: Expression): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

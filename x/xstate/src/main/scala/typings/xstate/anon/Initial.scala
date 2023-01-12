@@ -24,7 +24,8 @@ object Initial {
     __obj.asInstanceOf[Initial[TStateSchema, TEvent]]
   }
   
-  extension [Self <: Initial[?, ?], TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](x: Self & (Initial[TStateSchema, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Initial[?, ?], TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */] (val x: Self & (Initial[TStateSchema, TEvent])) extends AnyVal {
     
     inline def setInitial(
       value: /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any

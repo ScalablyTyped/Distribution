@@ -23,7 +23,8 @@ object EnvironmentResponse {
     __obj.asInstanceOf[EnvironmentResponse]
   }
   
-  extension [Self <: EnvironmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: EnvironmentError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

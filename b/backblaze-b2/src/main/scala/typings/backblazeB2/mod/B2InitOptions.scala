@@ -22,7 +22,8 @@ object B2InitOptions {
     __obj.asInstanceOf[B2InitOptions]
   }
   
-  extension [Self <: B2InitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: B2InitOptions] (val x: Self) extends AnyVal {
     
     inline def setApplicationKey(value: String): Self = StObject.set(x, "applicationKey", value.asInstanceOf[js.Any])
     

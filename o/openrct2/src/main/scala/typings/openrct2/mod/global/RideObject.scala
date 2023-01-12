@@ -94,7 +94,8 @@ object RideObject {
     __obj.asInstanceOf[RideObject]
   }
   
-  extension [Self <: RideObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RideObject] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: String): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object GeocodeServiceOptions {
     __obj.asInstanceOf[GeocodeServiceOptions]
   }
   
-  extension [Self <: GeocodeServiceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocodeServiceOptions] (val x: Self) extends AnyVal {
     
     inline def setCoordinate(value: String): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     

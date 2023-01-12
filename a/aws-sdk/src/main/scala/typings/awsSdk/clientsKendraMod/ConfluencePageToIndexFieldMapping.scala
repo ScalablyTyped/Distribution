@@ -28,7 +28,8 @@ object ConfluencePageToIndexFieldMapping {
     __obj.asInstanceOf[ConfluencePageToIndexFieldMapping]
   }
   
-  extension [Self <: ConfluencePageToIndexFieldMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfluencePageToIndexFieldMapping] (val x: Self) extends AnyVal {
     
     inline def setDataSourceFieldName(value: ConfluencePageFieldName): Self = StObject.set(x, "DataSourceFieldName", value.asInstanceOf[js.Any])
     

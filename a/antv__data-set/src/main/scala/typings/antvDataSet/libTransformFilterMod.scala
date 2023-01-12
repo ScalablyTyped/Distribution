@@ -17,7 +17,8 @@ object libTransformFilterMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* item */ Any => Boolean): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       

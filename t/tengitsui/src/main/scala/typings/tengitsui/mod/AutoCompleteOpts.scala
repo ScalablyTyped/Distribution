@@ -22,7 +22,8 @@ object AutoCompleteOpts {
     __obj.asInstanceOf[AutoCompleteOpts]
   }
   
-  extension [Self <: AutoCompleteOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCompleteOpts] (val x: Self) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

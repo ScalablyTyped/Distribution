@@ -15,7 +15,8 @@ object UIkitToggleElement {
     __obj.asInstanceOf[UIkitToggleElement]
   }
   
-  extension [Self <: UIkitToggleElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitToggleElement] (val x: Self) extends AnyVal {
     
     inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }

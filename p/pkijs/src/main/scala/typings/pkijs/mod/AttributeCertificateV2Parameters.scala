@@ -23,7 +23,8 @@ object AttributeCertificateV2Parameters {
     __obj.asInstanceOf[AttributeCertificateV2Parameters]
   }
   
-  extension [Self <: AttributeCertificateV2Parameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeCertificateV2Parameters] (val x: Self) extends AnyVal {
     
     inline def setAcinfo(value: AttributeCertificateInfoV2): Self = StObject.set(x, "acinfo", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PartialRecordColorReactNo {
     __obj.asInstanceOf[PartialRecordColorReactNo]
   }
   
-  extension [Self <: PartialRecordColorReactNo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordColorReactNo] (val x: Self) extends AnyVal {
     
     inline def setError(value: ReactNode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

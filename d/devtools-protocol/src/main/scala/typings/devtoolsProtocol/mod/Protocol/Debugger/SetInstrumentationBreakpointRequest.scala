@@ -20,7 +20,8 @@ object SetInstrumentationBreakpointRequest {
     __obj.asInstanceOf[SetInstrumentationBreakpointRequest]
   }
   
-  extension [Self <: SetInstrumentationBreakpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetInstrumentationBreakpointRequest] (val x: Self) extends AnyVal {
     
     inline def setInstrumentation(value: beforeScriptExecution | beforeScriptWithSourceMapExecution): Self = StObject.set(x, "instrumentation", value.asInstanceOf[js.Any])
   }

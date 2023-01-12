@@ -15,7 +15,8 @@ object DBCoreTransaction {
     __obj.asInstanceOf[DBCoreTransaction]
   }
   
-  extension [Self <: DBCoreTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreTransaction] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
   }

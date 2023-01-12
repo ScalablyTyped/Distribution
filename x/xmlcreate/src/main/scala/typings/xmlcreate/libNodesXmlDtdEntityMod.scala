@@ -28,7 +28,8 @@ object libNodesXmlDtdEntityMod {
       __obj.asInstanceOf[IXmlDtdEntityOptions]
     }
     
-    extension [Self <: IXmlDtdEntityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXmlDtdEntityOptions] (val x: Self) extends AnyVal {
       
       inline def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
     }

@@ -46,7 +46,8 @@ object SignatureInformation {
   inline def create(label: String, documentation: String, parameters: ParameterInformation*): SignatureInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((scala.List(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).`++`(parameters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SignatureInformation]
   inline def create(label: String, documentation: Unit, parameters: ParameterInformation*): SignatureInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((scala.List(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).`++`(parameters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SignatureInformation]
   
-  extension [Self <: SignatureInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureInformation] (val x: Self) extends AnyVal {
     
     inline def setActiveParameter(value: uinteger): Self = StObject.set(x, "activeParameter", value.asInstanceOf[js.Any])
     

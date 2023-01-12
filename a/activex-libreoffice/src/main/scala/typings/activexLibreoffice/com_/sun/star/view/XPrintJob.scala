@@ -58,7 +58,8 @@ object XPrintJob {
     __obj.asInstanceOf[XPrintJob]
   }
   
-  extension [Self <: XPrintJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrintJob] (val x: Self) extends AnyVal {
     
     inline def setCancelJob(value: () => Unit): Self = StObject.set(x, "cancelJob", js.Any.fromFunction0(value))
     

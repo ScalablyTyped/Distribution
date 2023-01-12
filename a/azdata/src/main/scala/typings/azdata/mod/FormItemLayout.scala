@@ -23,7 +23,8 @@ object FormItemLayout {
     __obj.asInstanceOf[FormItemLayout]
   }
   
-  extension [Self <: FormItemLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormItemLayout] (val x: Self) extends AnyVal {
     
     inline def setComponentHeight(value: Double | String): Self = StObject.set(x, "componentHeight", value.asInstanceOf[js.Any])
     

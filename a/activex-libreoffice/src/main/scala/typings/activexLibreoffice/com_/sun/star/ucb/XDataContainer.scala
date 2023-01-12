@@ -103,7 +103,8 @@ object XDataContainer {
     __obj.asInstanceOf[XDataContainer]
   }
   
-  extension [Self <: XDataContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataContainer] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     

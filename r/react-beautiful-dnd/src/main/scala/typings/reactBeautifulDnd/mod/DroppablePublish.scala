@@ -17,7 +17,8 @@ object DroppablePublish {
     __obj.asInstanceOf[DroppablePublish]
   }
   
-  extension [Self <: DroppablePublish](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppablePublish] (val x: Self) extends AnyVal {
     
     inline def setDroppableId(value: DroppableId): Self = StObject.set(x, "droppableId", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object typesInvalidIdentityPoolConfigurationExceptionMod {
       __obj.asInstanceOf[InvalidIdentityPoolConfigurationException]
     }
     
-    extension [Self <: InvalidIdentityPoolConfigurationException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidIdentityPoolConfigurationException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InvalidIdentityPoolConfigurationException
@@ -43,7 +44,8 @@ object typesInvalidIdentityPoolConfigurationExceptionMod {
       __obj.asInstanceOf[InvalidIdentityPoolConfigurationExceptionDetails]
     }
     
-    extension [Self <: InvalidIdentityPoolConfigurationExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidIdentityPoolConfigurationExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

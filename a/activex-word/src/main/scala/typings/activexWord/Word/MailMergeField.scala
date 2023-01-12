@@ -55,7 +55,8 @@ object MailMergeField {
     __obj.asInstanceOf[MailMergeField]
   }
   
-  extension [Self <: MailMergeField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailMergeField] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

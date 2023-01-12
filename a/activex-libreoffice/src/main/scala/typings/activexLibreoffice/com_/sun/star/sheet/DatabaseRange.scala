@@ -147,7 +147,8 @@ object DatabaseRange {
     __obj.asInstanceOf[DatabaseRange]
   }
   
-  extension [Self <: DatabaseRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseRange] (val x: Self) extends AnyVal {
     
     inline def setAutoFilter(value: Boolean): Self = StObject.set(x, "AutoFilter", value.asInstanceOf[js.Any])
     

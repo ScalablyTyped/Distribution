@@ -42,7 +42,8 @@ object TextField {
     __obj.asInstanceOf[TextField]
   }
   
-  extension [Self <: TextField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextField] (val x: Self) extends AnyVal {
     
     inline def setAutoComplete(value: AutoComplete): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     

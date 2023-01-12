@@ -18,7 +18,8 @@ object CreateInstanceSnapshotResult {
     __obj.asInstanceOf[CreateInstanceSnapshotResult]
   }
   
-  extension [Self <: CreateInstanceSnapshotResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInstanceSnapshotResult] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object FileTree {
     __obj.asInstanceOf[FileTree]
   }
   
-  extension [Self <: FileTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileTree] (val x: Self) extends AnyVal {
     
     inline def setRootNode(value: FileTreeNode): Self = StObject.set(x, "rootNode", value.asInstanceOf[js.Any])
     

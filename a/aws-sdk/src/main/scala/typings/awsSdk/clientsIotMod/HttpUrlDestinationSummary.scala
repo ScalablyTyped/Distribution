@@ -18,7 +18,8 @@ object HttpUrlDestinationSummary {
     __obj.asInstanceOf[HttpUrlDestinationSummary]
   }
   
-  extension [Self <: HttpUrlDestinationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpUrlDestinationSummary] (val x: Self) extends AnyVal {
     
     inline def setConfirmationUrl(value: Url): Self = StObject.set(x, "confirmationUrl", value.asInstanceOf[js.Any])
     

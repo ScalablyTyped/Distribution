@@ -42,7 +42,8 @@ object distEsmSrcErrorsMod {
       __obj.asInstanceOf[ErrorParams]
     }
     
-    extension [Self <: ErrorParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorParams] (val x: Self) extends AnyVal {
       
       inline def `setInvalid-app-argument`(value: AppName): Self = StObject.set(x, "invalid-app-argument", value.asInstanceOf[js.Any])
       

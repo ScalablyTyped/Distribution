@@ -59,7 +59,8 @@ object typesCommentsForPullRequestMod {
       __obj.asInstanceOf[CommentsForPullRequest]
     }
     
-    extension [Self <: CommentsForPullRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentsForPullRequest] (val x: Self) extends AnyVal {
       
       inline def setAfterBlobId(value: String): Self = StObject.set(x, "afterBlobId", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object typesCommentsForPullRequestMod {
       __obj.asInstanceOf[UnmarshalledCommentsForPullRequest]
     }
     
-    extension [Self <: UnmarshalledCommentsForPullRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledCommentsForPullRequest] (val x: Self) extends AnyVal {
       
       inline def setComments(value: js.Array[UnmarshalledComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       

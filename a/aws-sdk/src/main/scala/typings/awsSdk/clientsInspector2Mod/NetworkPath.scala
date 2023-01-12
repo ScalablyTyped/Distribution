@@ -18,7 +18,8 @@ object NetworkPath {
     __obj.asInstanceOf[NetworkPath]
   }
   
-  extension [Self <: NetworkPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkPath] (val x: Self) extends AnyVal {
     
     inline def setSteps(value: StepList): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     

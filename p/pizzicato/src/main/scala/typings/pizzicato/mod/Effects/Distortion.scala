@@ -38,7 +38,8 @@ object Distortion {
   def gain: Double = js.native
   inline def gain_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gain")(x.asInstanceOf[js.Any])
   
-  extension [Self <: Distortion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Distortion] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: AudioNode => Distortion): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     

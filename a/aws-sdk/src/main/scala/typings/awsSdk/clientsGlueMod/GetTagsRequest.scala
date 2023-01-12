@@ -18,7 +18,8 @@ object GetTagsRequest {
     __obj.asInstanceOf[GetTagsRequest]
   }
   
-  extension [Self <: GetTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: GlueResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }

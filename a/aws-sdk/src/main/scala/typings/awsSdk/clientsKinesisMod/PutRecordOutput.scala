@@ -28,7 +28,8 @@ object PutRecordOutput {
     __obj.asInstanceOf[PutRecordOutput]
   }
   
-  extension [Self <: PutRecordOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRecordOutput] (val x: Self) extends AnyVal {
     
     inline def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     

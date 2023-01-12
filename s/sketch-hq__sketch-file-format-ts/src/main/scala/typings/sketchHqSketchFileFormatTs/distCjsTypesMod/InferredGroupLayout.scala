@@ -26,7 +26,8 @@ object InferredGroupLayout {
     __obj.asInstanceOf[InferredGroupLayout]
   }
   
-  extension [Self <: InferredGroupLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferredGroupLayout] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: InferredLayoutAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

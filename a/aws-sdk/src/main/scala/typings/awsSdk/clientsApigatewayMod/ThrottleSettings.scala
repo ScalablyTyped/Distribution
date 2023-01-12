@@ -23,7 +23,8 @@ object ThrottleSettings {
     __obj.asInstanceOf[ThrottleSettings]
   }
   
-  extension [Self <: ThrottleSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThrottleSettings] (val x: Self) extends AnyVal {
     
     inline def setBurstLimit(value: Integer): Self = StObject.set(x, "burstLimit", value.asInstanceOf[js.Any])
     

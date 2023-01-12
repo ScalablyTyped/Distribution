@@ -20,7 +20,8 @@ object DescribeBudgetPerformanceHistoryResponse {
     __obj.asInstanceOf[DescribeBudgetPerformanceHistoryResponse]
   }
   
-  extension [Self <: DescribeBudgetPerformanceHistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBudgetPerformanceHistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setBudgetPerformanceHistory(value: BudgetPerformanceHistory): Self = StObject.set(x, "BudgetPerformanceHistory", value.asInstanceOf[js.Any])
     

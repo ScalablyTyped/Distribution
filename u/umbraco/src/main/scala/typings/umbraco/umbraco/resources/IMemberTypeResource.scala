@@ -21,7 +21,8 @@ object IMemberTypeResource {
     __obj.asInstanceOf[IMemberTypeResource]
   }
   
-  extension [Self <: IMemberTypeResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMemberTypeResource] (val x: Self) extends AnyVal {
     
     inline def setGetTypes(value: () => Any): Self = StObject.set(x, "getTypes", js.Any.fromFunction0(value))
   }

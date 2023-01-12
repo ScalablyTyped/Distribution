@@ -30,7 +30,8 @@ object GridStyle {
     __obj.asInstanceOf[GridStyle]
   }
   
-  extension [Self <: GridStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridStyle] (val x: Self) extends AnyVal {
     
     inline def setLayoutGrids(value: js.Array[LayoutGrid]): Self = StObject.set(x, "layoutGrids", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object BandMixins {
     __obj.asInstanceOf[BandMixins]
   }
   
-  extension [Self <: BandMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BandMixins] (val x: Self) extends AnyVal {
     
     inline def setBandPosition(value: Double): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
     

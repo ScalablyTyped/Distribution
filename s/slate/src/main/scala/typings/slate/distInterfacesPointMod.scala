@@ -33,7 +33,8 @@ object distInterfacesPointMod {
       __obj.asInstanceOf[BasePoint]
     }
     
-    extension [Self <: BasePoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePoint] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object distInterfacesPointMod {
       __obj.asInstanceOf[PointTransformOptions]
     }
     
-    extension [Self <: PointTransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointTransformOptions] (val x: Self) extends AnyVal {
       
       inline def setAffinity(value: TextDirection): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
       

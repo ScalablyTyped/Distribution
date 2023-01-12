@@ -34,7 +34,8 @@ object examplesJsmExportersPlyexporterMod {
       __obj.asInstanceOf[PLYExporterOptions]
     }
     
-    extension [Self <: PLYExporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PLYExporterOptions] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       

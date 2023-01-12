@@ -17,7 +17,8 @@ object IProductionWithOccurrence {
     __obj.asInstanceOf[IProductionWithOccurrence]
   }
   
-  extension [Self <: IProductionWithOccurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProductionWithOccurrence] (val x: Self) extends AnyVal {
     
     inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
   }

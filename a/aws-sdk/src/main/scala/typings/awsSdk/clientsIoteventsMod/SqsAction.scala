@@ -28,7 +28,8 @@ object SqsAction {
     __obj.asInstanceOf[SqsAction]
   }
   
-  extension [Self <: SqsAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqsAction] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

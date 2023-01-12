@@ -29,7 +29,8 @@ object XContextMenuInterceptor {
     __obj.asInstanceOf[XContextMenuInterceptor]
   }
   
-  extension [Self <: XContextMenuInterceptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContextMenuInterceptor] (val x: Self) extends AnyVal {
     
     inline def setNotifyContextMenuExecute(value: ContextMenuExecuteEvent => ContextMenuInterceptorAction): Self = StObject.set(x, "notifyContextMenuExecute", js.Any.fromFunction1(value))
   }

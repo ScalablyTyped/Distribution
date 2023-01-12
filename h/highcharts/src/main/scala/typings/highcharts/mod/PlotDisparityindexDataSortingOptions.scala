@@ -31,7 +31,8 @@ object PlotDisparityindexDataSortingOptions {
     __obj.asInstanceOf[PlotDisparityindexDataSortingOptions]
   }
   
-  extension [Self <: PlotDisparityindexDataSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDisparityindexDataSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DataViewCategoricalColumn {
     __obj.asInstanceOf[DataViewCategoricalColumn]
   }
   
-  extension [Self <: DataViewCategoricalColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewCategoricalColumn] (val x: Self) extends AnyVal {
     
     inline def setObjects(value: js.Array[DataViewObjects]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     

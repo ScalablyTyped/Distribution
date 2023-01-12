@@ -44,7 +44,8 @@ object integrationReactMod {
       __obj.asInstanceOf[PersistGateProps]
     }
     
-    extension [Self <: PersistGateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistGateProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | (js.Function1[/* bootstrapped */ Boolean, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object integrationReactMod {
       __obj.asInstanceOf[PersistorGateState]
     }
     
-    extension [Self <: PersistorGateState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistorGateState] (val x: Self) extends AnyVal {
       
       inline def setBootstrapped(value: Boolean): Self = StObject.set(x, "bootstrapped", value.asInstanceOf[js.Any])
     }

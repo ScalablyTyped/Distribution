@@ -21,7 +21,8 @@ object OtrModificationEvent {
     __obj.asInstanceOf[OtrModificationEvent]
   }
   
-  extension [Self <: OtrModificationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtrModificationEvent] (val x: Self) extends AnyVal {
     
     inline def setNewOtrStatus(value: String): Self = StObject.set(x, "newOtrStatus", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Cards]
     }
     
-    extension [Self <: Cards](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cards] (val x: Self) extends AnyVal {
       
       inline def setCards(value: js.Array[Card]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[ForceSync]
     }
     
-    extension [Self <: ForceSync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForceSync] (val x: Self) extends AnyVal {
       
       inline def setForceSync(value: `false`): Self = StObject.set(x, "forceSync", value.asInstanceOf[js.Any])
     }
@@ -81,7 +83,8 @@ object anon {
       __obj.asInstanceOf[LoadedTabs]
     }
     
-    extension [Self <: LoadedTabs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadedTabs] (val x: Self) extends AnyVal {
       
       inline def setLoadedTabs(value: js.Array[String]): Self = StObject.set(x, "loadedTabs", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -137,7 +141,8 @@ object anon {
       __obj.asInstanceOf[TestID]
     }
     
-    extension [Self <: TestID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestID] (val x: Self) extends AnyVal {
       
       inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
       

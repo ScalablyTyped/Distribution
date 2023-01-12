@@ -108,7 +108,8 @@ object srcMaterialsMeshNormalMaterialMod {
       __obj.asInstanceOf[MeshNormalMaterialParameters]
     }
     
-    extension [Self <: MeshNormalMaterialParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeshNormalMaterialParameters] (val x: Self) extends AnyVal {
       
       inline def setBumpMap(value: Texture): Self = StObject.set(x, "bumpMap", value.asInstanceOf[js.Any])
       

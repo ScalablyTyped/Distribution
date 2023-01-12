@@ -34,7 +34,8 @@ object typesToggleCheckboxMod {
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    extension [Self <: CheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object typesToggleCheckboxMod {
       __obj.asInstanceOf[IndeterminateCheckboxProps]
     }
     
-    extension [Self <: IndeterminateCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndeterminateCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
       

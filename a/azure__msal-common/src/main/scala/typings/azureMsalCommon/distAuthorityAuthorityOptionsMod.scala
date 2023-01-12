@@ -80,7 +80,8 @@ object distAuthorityAuthorityOptionsMod {
       __obj.asInstanceOf[AuthorityOptions]
     }
     
-    extension [Self <: AuthorityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorityOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthorityMetadata(value: String): Self = StObject.set(x, "authorityMetadata", value.asInstanceOf[js.Any])
       

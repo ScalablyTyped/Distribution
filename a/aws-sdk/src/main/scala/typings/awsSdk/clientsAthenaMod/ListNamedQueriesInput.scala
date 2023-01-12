@@ -28,7 +28,8 @@ object ListNamedQueriesInput {
     __obj.asInstanceOf[ListNamedQueriesInput]
   }
   
-  extension [Self <: ListNamedQueriesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNamedQueriesInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxNamedQueriesCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

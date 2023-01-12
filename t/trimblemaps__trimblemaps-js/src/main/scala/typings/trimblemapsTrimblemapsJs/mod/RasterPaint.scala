@@ -45,7 +45,8 @@ object RasterPaint {
     __obj.asInstanceOf[RasterPaint]
   }
   
-  extension [Self <: RasterPaint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterPaint] (val x: Self) extends AnyVal {
     
     inline def `setRaster-brightness-max`(value: Double | Expression): Self = StObject.set(x, "raster-brightness-max", value.asInstanceOf[js.Any])
     

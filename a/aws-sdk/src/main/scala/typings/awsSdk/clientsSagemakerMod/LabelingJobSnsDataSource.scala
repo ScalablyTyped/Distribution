@@ -18,7 +18,8 @@ object LabelingJobSnsDataSource {
     __obj.asInstanceOf[LabelingJobSnsDataSource]
   }
   
-  extension [Self <: LabelingJobSnsDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelingJobSnsDataSource] (val x: Self) extends AnyVal {
     
     inline def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
   }

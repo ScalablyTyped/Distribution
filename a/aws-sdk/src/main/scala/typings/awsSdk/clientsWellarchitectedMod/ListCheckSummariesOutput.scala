@@ -20,7 +20,8 @@ object ListCheckSummariesOutput {
     __obj.asInstanceOf[ListCheckSummariesOutput]
   }
   
-  extension [Self <: ListCheckSummariesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCheckSummariesOutput] (val x: Self) extends AnyVal {
     
     inline def setCheckSummaries(value: CheckSummaries): Self = StObject.set(x, "CheckSummaries", value.asInstanceOf[js.Any])
     

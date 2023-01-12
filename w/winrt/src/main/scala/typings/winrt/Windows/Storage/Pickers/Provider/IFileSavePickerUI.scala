@@ -36,7 +36,8 @@ object IFileSavePickerUI {
     __obj.asInstanceOf[IFileSavePickerUI]
   }
   
-  extension [Self <: IFileSavePickerUI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileSavePickerUI] (val x: Self) extends AnyVal {
     
     inline def setAllowedFileTypes(value: IVectorView[String]): Self = StObject.set(x, "allowedFileTypes", value.asInstanceOf[js.Any])
     

@@ -167,7 +167,8 @@ object mod {
       __obj.asInstanceOf[HashTable]
     }
     
-    extension [Self <: HashTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashTable] (val x: Self) extends AnyVal {
       
       inline def setCache(value: (Buffer, Double, Buffer, Double) => Double): Self = StObject.set(x, "cache", js.Any.fromFunction4(value))
       

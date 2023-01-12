@@ -17,7 +17,8 @@ object UpdateRefsRequest {
     __obj.asInstanceOf[UpdateRefsRequest]
   }
   
-  extension [Self <: UpdateRefsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRefsRequest] (val x: Self) extends AnyVal {
     
     inline def setRefUpdateRequests(value: js.Array[GitRefUpdate]): Self = StObject.set(x, "refUpdateRequests", value.asInstanceOf[js.Any])
     

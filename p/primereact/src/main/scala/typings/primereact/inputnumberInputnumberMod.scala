@@ -129,7 +129,8 @@ object inputnumberInputnumberMod {
       __obj.asInstanceOf[InputNumberChangeParams]
     }
     
-    extension [Self <: InputNumberChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputNumberChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -579,7 +580,8 @@ object inputnumberInputnumberMod {
       __obj.asInstanceOf[InputNumberProps]
     }
     
-    extension [Self <: InputNumberProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputNumberProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1475,7 +1477,8 @@ object inputnumberInputnumberMod {
       __obj.asInstanceOf[InputNumberValueChangeParams]
     }
     
-    extension [Self <: InputNumberValueChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputNumberValueChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -1506,7 +1509,8 @@ object inputnumberInputnumberMod {
       __obj.asInstanceOf[InputNumberValueChangeTargetOptions]
     }
     
-    extension [Self <: InputNumberValueChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputNumberValueChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

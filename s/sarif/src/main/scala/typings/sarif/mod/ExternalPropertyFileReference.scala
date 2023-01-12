@@ -33,7 +33,8 @@ object ExternalPropertyFileReference {
     __obj.asInstanceOf[ExternalPropertyFileReference]
   }
   
-  extension [Self <: ExternalPropertyFileReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalPropertyFileReference] (val x: Self) extends AnyVal {
     
     inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object GetTableResponse {
     __obj.asInstanceOf[GetTableResponse]
   }
   
-  extension [Self <: GetTableResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTableResponse] (val x: Self) extends AnyVal {
     
     inline def setCapacitySpecification(value: CapacitySpecificationSummary): Self = StObject.set(x, "capacitySpecification", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MaxVersion {
     __obj.asInstanceOf[MaxVersion]
   }
   
-  extension [Self <: MaxVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxVersion] (val x: Self) extends AnyVal {
     
     inline def setMaxVersion(value: Double): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
     

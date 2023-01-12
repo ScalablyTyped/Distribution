@@ -49,7 +49,8 @@ object distTextTextMod extends Shortcut {
       __obj.asInstanceOf[TextProps]
     }
     
-    extension [Self <: TextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
       
       inline def setH1(value: Boolean): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
       

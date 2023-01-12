@@ -106,7 +106,8 @@ object mod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAvoidPreFlight(value: Boolean): Self = StObject.set(x, "allowAvoidPreFlight", value.asInstanceOf[js.Any])
       

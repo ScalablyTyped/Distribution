@@ -25,7 +25,8 @@ object ScrollGridProps {
     __obj.asInstanceOf[ScrollGridProps]
   }
   
-  extension [Self <: ScrollGridProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollGridProps] (val x: Self) extends AnyVal {
     
     inline def setColGroups(value: js.Array[ColGroupConfig]): Self = StObject.set(x, "colGroups", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object CloudRepoSourceContext {
     __obj.asInstanceOf[CloudRepoSourceContext]
   }
   
-  extension [Self <: CloudRepoSourceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudRepoSourceContext] (val x: Self) extends AnyVal {
     
     inline def setAliasContext(value: AliasContext): Self = StObject.set(x, "aliasContext", value.asInstanceOf[js.Any])
     

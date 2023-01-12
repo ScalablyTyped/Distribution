@@ -39,7 +39,8 @@ object StructureObserver {
     __obj.asInstanceOf[StructureObserver]
   }
   
-  extension [Self <: StructureObserver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureObserver] (val x: Self) extends AnyVal {
     
     inline def setObserveRoom(value: String => ScreepsReturnCode): Self = StObject.set(x, "observeRoom", js.Any.fromFunction1(value))
   }

@@ -55,7 +55,8 @@ object SpriteInfo {
     __obj.asInstanceOf[SpriteInfo]
   }
   
-  extension [Self <: SpriteInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpriteInfo] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

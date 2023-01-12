@@ -18,7 +18,8 @@ object GetMaxTransceiveLengthSuccessCallbackResult {
     __obj.asInstanceOf[GetMaxTransceiveLengthSuccessCallbackResult]
   }
   
-  extension [Self <: GetMaxTransceiveLengthSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMaxTransceiveLengthSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

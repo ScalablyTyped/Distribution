@@ -118,7 +118,8 @@ object GetWorkflowStepResponse {
     __obj.asInstanceOf[GetWorkflowStepResponse]
   }
   
-  extension [Self <: GetWorkflowStepResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWorkflowStepResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

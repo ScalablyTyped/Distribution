@@ -17,7 +17,8 @@ object IToken {
     __obj.asInstanceOf[IToken]
   }
   
-  extension [Self <: IToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IToken] (val x: Self) extends AnyVal {
     
     inline def setScopes(value: String): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     

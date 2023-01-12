@@ -24,7 +24,8 @@ object EventHandlers {
     __obj.asInstanceOf[EventHandlers]
   }
   
-  extension [Self <: EventHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventHandlers] (val x: Self) extends AnyVal {
     
     inline def setEventHandlers(value: Requireable[js.Object]): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
     

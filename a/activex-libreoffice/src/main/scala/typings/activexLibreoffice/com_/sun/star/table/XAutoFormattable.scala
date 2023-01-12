@@ -30,7 +30,8 @@ object XAutoFormattable {
     __obj.asInstanceOf[XAutoFormattable]
   }
   
-  extension [Self <: XAutoFormattable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAutoFormattable] (val x: Self) extends AnyVal {
     
     inline def setAutoFormat(value: String => Unit): Self = StObject.set(x, "autoFormat", js.Any.fromFunction1(value))
   }

@@ -33,7 +33,8 @@ object ScriptHTMLAttributes {
     __obj.asInstanceOf[ScriptHTMLAttributes]
   }
   
-  extension [Self <: ScriptHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Booleanish): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

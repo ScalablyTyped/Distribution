@@ -19,7 +19,8 @@ object FlightInfoParams {
     __obj.asInstanceOf[FlightInfoParams]
   }
   
-  extension [Self <: FlightInfoParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlightInfoParams] (val x: Self) extends AnyVal {
     
     inline def setAirline(value: String): Self = StObject.set(x, "airline", value.asInstanceOf[js.Any])
     

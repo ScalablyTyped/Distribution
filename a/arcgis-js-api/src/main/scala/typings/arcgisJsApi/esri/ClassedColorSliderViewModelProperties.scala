@@ -22,7 +22,8 @@ object ClassedColorSliderViewModelProperties {
     __obj.asInstanceOf[ClassedColorSliderViewModelProperties]
   }
   
-  extension [Self <: ClassedColorSliderViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassedColorSliderViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setBreaks(value: js.Array[ClassedColorSliderViewModelBreaks]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     

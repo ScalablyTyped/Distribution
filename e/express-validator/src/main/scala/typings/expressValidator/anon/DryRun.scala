@@ -15,7 +15,8 @@ object DryRun {
     __obj.asInstanceOf[DryRun]
   }
   
-  extension [Self <: DryRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DryRun] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     

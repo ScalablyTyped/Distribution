@@ -28,7 +28,8 @@ object OnCountryChange {
     __obj.asInstanceOf[OnCountryChange]
   }
   
-  extension [Self <: OnCountryChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCountryChange] (val x: Self) extends AnyVal {
     
     inline def setInitialState(value: Country): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     

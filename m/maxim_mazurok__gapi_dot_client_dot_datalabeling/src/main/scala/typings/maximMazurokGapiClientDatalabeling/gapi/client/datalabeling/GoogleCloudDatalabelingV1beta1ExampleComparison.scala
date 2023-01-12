@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1beta1ExampleComparison {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ExampleComparison]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1ExampleComparison](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ExampleComparison] (val x: Self) extends AnyVal {
     
     inline def setGroundTruthExample(value: GoogleCloudDatalabelingV1beta1Example): Self = StObject.set(x, "groundTruthExample", value.asInstanceOf[js.Any])
     

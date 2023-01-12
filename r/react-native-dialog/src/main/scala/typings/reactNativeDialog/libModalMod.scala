@@ -96,7 +96,8 @@ object libModalMod {
       __obj.asInstanceOf[ModalProps]
     }
     
-    extension [Self <: ModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
       
       inline def setContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object libModalMod {
       __obj.asInstanceOf[ModalState]
     }
     
-    extension [Self <: ModalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalState] (val x: Self) extends AnyVal {
       
       inline def setCurrentAnimation(value: none | in | out): Self = StObject.set(x, "currentAnimation", value.asInstanceOf[js.Any])
       

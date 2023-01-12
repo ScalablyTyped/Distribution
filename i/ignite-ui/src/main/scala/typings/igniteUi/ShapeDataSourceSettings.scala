@@ -68,7 +68,8 @@ object ShapeDataSourceSettings {
     __obj.asInstanceOf[ShapeDataSourceSettings]
   }
   
-  extension [Self <: ShapeDataSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeDataSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

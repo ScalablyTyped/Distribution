@@ -234,7 +234,8 @@ object buildSrcSchemaMod {
       __obj.asInstanceOf[SchemaMessageMetadata]
     }
     
-    extension [Self <: SchemaMessageMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaMessageMetadata] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: SchemaEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

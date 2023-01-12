@@ -67,7 +67,8 @@ object ChartProps {
     __obj.asInstanceOf[ChartProps[T]]
   }
   
-  extension [Self <: ChartProps[?], T](x: Self & ChartProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartProps[?], T] (val x: Self & ChartProps[T]) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IAllKernels {
     __obj.asInstanceOf[IAllKernels]
   }
   
-  extension [Self <: IAllKernels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAllKernels] (val x: Self) extends AnyVal {
     
     inline def setDefaultKernel(value: String): Self = StObject.set(x, "defaultKernel", value.asInstanceOf[js.Any])
     

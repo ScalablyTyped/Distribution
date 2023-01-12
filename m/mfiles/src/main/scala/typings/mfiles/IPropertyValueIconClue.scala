@@ -24,7 +24,8 @@ object IPropertyValueIconClue {
     __obj.asInstanceOf[IPropertyValueIconClue]
   }
   
-  extension [Self <: IPropertyValueIconClue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyValueIconClue] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IPropertyValueIconClue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

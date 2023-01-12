@@ -83,7 +83,8 @@ object IPanelConfig {
     __obj.asInstanceOf[IPanelConfig]
   }
   
-  extension [Self <: IPanelConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanelConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: IPanelAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

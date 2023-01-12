@@ -21,7 +21,8 @@ object libModelsThreepidMod {
       __obj.asInstanceOf[Threepid]
     }
     
-    extension [Self <: Threepid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Threepid] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

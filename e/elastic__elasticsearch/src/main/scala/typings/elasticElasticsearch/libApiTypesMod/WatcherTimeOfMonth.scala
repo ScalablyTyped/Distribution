@@ -17,7 +17,8 @@ object WatcherTimeOfMonth {
     __obj.asInstanceOf[WatcherTimeOfMonth]
   }
   
-  extension [Self <: WatcherTimeOfMonth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherTimeOfMonth] (val x: Self) extends AnyVal {
     
     inline def setAt(value: js.Array[String]): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object WatcherIndexAction {
     __obj.asInstanceOf[WatcherIndexAction]
   }
   
-  extension [Self <: WatcherIndexAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherIndexAction] (val x: Self) extends AnyVal {
     
     inline def setDoc_id(value: Id): Self = StObject.set(x, "doc_id", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object dxChartValueAxisConstantLineStyleLabel {
     __obj.asInstanceOf[dxChartValueAxisConstantLineStyleLabel]
   }
   
-  extension [Self <: dxChartValueAxisConstantLineStyleLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartValueAxisConstantLineStyleLabel] (val x: Self) extends AnyVal {
     
     inline def setHorizontalAlignment(value: HorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     

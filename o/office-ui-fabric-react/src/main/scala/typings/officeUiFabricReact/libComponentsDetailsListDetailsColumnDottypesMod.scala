@@ -36,7 +36,8 @@ object libComponentsDetailsListDetailsColumnDottypesMod {
       __obj.asInstanceOf[IDetailsColumnFilterIconProps]
     }
     
-    extension [Self <: IDetailsColumnFilterIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsColumnFilterIconProps] (val x: Self) extends AnyVal {
       
       inline def setColumnProps(value: IDetailsColumnProps): Self = StObject.set(x, "columnProps", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object libComponentsDetailsListDetailsColumnDottypesMod {
       __obj.asInstanceOf[IDetailsColumnProps]
     }
     
-    extension [Self <: IDetailsColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsColumnProps] (val x: Self) extends AnyVal {
       
       inline def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object libComponentsDetailsListDetailsColumnDottypesMod {
       __obj.asInstanceOf[IDetailsColumnRenderTooltipProps]
     }
     
-    extension [Self <: IDetailsColumnRenderTooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsColumnRenderTooltipProps] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: IColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -299,7 +302,8 @@ object libComponentsDetailsListDetailsColumnDottypesMod {
       __obj.asInstanceOf[IDetailsColumnStyleProps]
     }
     
-    extension [Self <: IDetailsColumnStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsColumnStyleProps] (val x: Self) extends AnyVal {
       
       inline def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
       
@@ -422,7 +426,8 @@ object libComponentsDetailsListDetailsColumnDottypesMod {
       __obj.asInstanceOf[IDetailsColumnStyles]
     }
     
-    extension [Self <: IDetailsColumnStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsColumnStyles] (val x: Self) extends AnyVal {
       
       inline def setAccessibleLabel(value: IStyle): Self = StObject.set(x, "accessibleLabel", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object Google {
     __obj.asInstanceOf[Google]
   }
   
-  extension [Self <: Google](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Google] (val x: Self) extends AnyVal {
     
     inline def setGoogle(value: Settings): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
   }

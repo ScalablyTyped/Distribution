@@ -15,7 +15,8 @@ object ComposerAdditionalOptions {
     __obj.asInstanceOf[ComposerAdditionalOptions]
   }
   
-  extension [Self <: ComposerAdditionalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComposerAdditionalOptions] (val x: Self) extends AnyVal {
     
     inline def setUseScope(value: I18nScope): Self = StObject.set(x, "useScope", value.asInstanceOf[js.Any])
     

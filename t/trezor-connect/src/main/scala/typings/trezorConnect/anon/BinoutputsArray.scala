@@ -19,7 +19,8 @@ object BinoutputsArray {
     __obj.asInstanceOf[BinoutputsArray]
   }
   
-  extension [Self <: BinoutputsArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinoutputsArray] (val x: Self) extends AnyVal {
     
     inline def setBin_outputs(value: js.Array[TxOutputBinType]): Self = StObject.set(x, "bin_outputs", value.asInstanceOf[js.Any])
     

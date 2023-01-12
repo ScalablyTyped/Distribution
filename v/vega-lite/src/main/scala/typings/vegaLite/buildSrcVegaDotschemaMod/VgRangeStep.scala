@@ -16,7 +16,8 @@ object VgRangeStep {
     __obj.asInstanceOf[VgRangeStep]
   }
   
-  extension [Self <: VgRangeStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VgRangeStep] (val x: Self) extends AnyVal {
     
     inline def setStep(value: Double | SignalRef): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
