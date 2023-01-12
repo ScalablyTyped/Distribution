@@ -50,7 +50,8 @@ object SimplePriceParams {
     __obj.asInstanceOf[SimplePriceParams]
   }
   
-  extension [Self <: SimplePriceParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimplePriceParams] (val x: Self) extends AnyVal {
     
     inline def setIds(value: String | js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

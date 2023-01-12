@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[RecordAppNamestringArrays]
     }
     
-    extension [Self <: RecordAppNamestringArrays](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordAppNamestringArrays] (val x: Self) extends AnyVal {
       
       inline def setChrome(value: String | js.Array[String]): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       

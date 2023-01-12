@@ -28,7 +28,8 @@ object ContentRedaction {
     __obj.asInstanceOf[ContentRedaction]
   }
   
-  extension [Self <: ContentRedaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentRedaction] (val x: Self) extends AnyVal {
     
     inline def setPiiEntityTypes(value: PiiEntityTypes): Self = StObject.set(x, "PiiEntityTypes", value.asInstanceOf[js.Any])
     

@@ -114,7 +114,8 @@ object MedicationStatement {
     __obj.asInstanceOf[MedicationStatement]
   }
   
-  extension [Self <: MedicationStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationStatement] (val x: Self) extends AnyVal {
     
     inline def setDateAsserted(value: String): Self = StObject.set(x, "dateAsserted", value.asInstanceOf[js.Any])
     

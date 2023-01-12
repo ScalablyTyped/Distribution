@@ -28,7 +28,8 @@ object ListRoleTagsRequest {
     __obj.asInstanceOf[ListRoleTagsRequest]
   }
   
-  extension [Self <: ListRoleTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRoleTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

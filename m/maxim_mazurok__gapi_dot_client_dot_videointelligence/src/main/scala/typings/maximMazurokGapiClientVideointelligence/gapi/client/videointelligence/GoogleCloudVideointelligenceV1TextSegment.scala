@@ -22,7 +22,8 @@ object GoogleCloudVideointelligenceV1TextSegment {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1TextSegment]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1TextSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1TextSegment] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

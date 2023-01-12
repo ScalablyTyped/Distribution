@@ -25,7 +25,8 @@ object ageUtils {
     __obj.asInstanceOf[ageUtils]
   }
   
-  extension [Self <: ageUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ageUtils] (val x: Self) extends AnyVal {
     
     inline def setGetAgeExpressions(value: ageUtilsGetAgeExpressionsParams => AgeExpressionsResult): Self = StObject.set(x, "getAgeExpressions", js.Any.fromFunction1(value))
   }

@@ -21,7 +21,8 @@ object PageTransitionOptions {
     __obj.asInstanceOf[PageTransitionOptions]
   }
   
-  extension [Self <: PageTransitionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageTransitionOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: NavigatorAnimationTypes): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

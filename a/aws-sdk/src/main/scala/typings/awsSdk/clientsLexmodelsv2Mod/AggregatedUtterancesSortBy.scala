@@ -23,7 +23,8 @@ object AggregatedUtterancesSortBy {
     __obj.asInstanceOf[AggregatedUtterancesSortBy]
   }
   
-  extension [Self <: AggregatedUtterancesSortBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedUtterancesSortBy] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: AggregatedUtterancesSortAttribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

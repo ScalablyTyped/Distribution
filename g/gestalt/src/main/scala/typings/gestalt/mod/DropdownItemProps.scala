@@ -44,7 +44,8 @@ object DropdownItemProps {
     __obj.asInstanceOf[DropdownItemProps]
   }
   
-  extension [Self <: DropdownItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropdownItemProps] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: BadgeObject): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

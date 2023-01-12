@@ -20,7 +20,8 @@ object typesDeadLetterConfigMod {
       __obj.asInstanceOf[DeadLetterConfig]
     }
     
-    extension [Self <: DeadLetterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeadLetterConfig] (val x: Self) extends AnyVal {
       
       inline def setTargetArn(value: String): Self = StObject.set(x, "TargetArn", value.asInstanceOf[js.Any])
       

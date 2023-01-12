@@ -45,7 +45,8 @@ object SwitchIOSProps {
     __obj.asInstanceOf[SwitchIOSProps]
   }
   
-  extension [Self <: SwitchIOSProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchIOSProps] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

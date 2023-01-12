@@ -39,7 +39,8 @@ object DiagramPdf {
     __obj.asInstanceOf[DiagramPdf]
   }
   
-  extension [Self <: DiagramPdf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramPdf] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

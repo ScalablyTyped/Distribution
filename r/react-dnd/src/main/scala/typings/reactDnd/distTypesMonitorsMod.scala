@@ -77,7 +77,8 @@ object distTypesMonitorsMod {
       __obj.asInstanceOf[DragLayerMonitor[DragObject]]
     }
     
-    extension [Self <: DragLayerMonitor[?], DragObject](x: Self & DragLayerMonitor[DragObject]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragLayerMonitor[?], DragObject] (val x: Self & DragLayerMonitor[DragObject]) extends AnyVal {
       
       inline def setGetClientOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getClientOffset", js.Any.fromFunction0(value))
       
@@ -274,7 +275,8 @@ object distTypesMonitorsMod {
       __obj.asInstanceOf[XYCoord]
     }
     
-    extension [Self <: XYCoord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XYCoord] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

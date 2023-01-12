@@ -28,7 +28,8 @@ object ListIdentityProviderConfigsRequest {
     __obj.asInstanceOf[ListIdentityProviderConfigsRequest]
   }
   
-  extension [Self <: ListIdentityProviderConfigsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIdentityProviderConfigsRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     

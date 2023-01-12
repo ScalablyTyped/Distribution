@@ -24,7 +24,8 @@ object PDFOperatorList {
     __obj.asInstanceOf[PDFOperatorList]
   }
   
-  extension [Self <: PDFOperatorList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFOperatorList] (val x: Self) extends AnyVal {
     
     inline def setArgsArray(value: js.Array[Any]): Self = StObject.set(x, "argsArray", value.asInstanceOf[js.Any])
     

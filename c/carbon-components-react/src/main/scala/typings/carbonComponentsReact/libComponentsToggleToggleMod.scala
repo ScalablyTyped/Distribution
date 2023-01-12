@@ -580,7 +580,8 @@ object libComponentsToggleToggleMod {
       __obj.asInstanceOf[ToggleProps]
     }
     
-    extension [Self <: ToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

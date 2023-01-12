@@ -33,7 +33,8 @@ object EffectivePolicy {
     __obj.asInstanceOf[EffectivePolicy]
   }
   
-  extension [Self <: EffectivePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EffectivePolicy] (val x: Self) extends AnyVal {
     
     inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     

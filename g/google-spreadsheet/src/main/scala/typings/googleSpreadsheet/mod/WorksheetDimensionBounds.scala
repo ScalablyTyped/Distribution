@@ -17,7 +17,8 @@ object WorksheetDimensionBounds {
     __obj.asInstanceOf[WorksheetDimensionBounds]
   }
   
-  extension [Self <: WorksheetDimensionBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetDimensionBounds] (val x: Self) extends AnyVal {
     
     inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     

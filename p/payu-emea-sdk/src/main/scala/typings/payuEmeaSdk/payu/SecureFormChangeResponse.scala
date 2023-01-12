@@ -25,7 +25,8 @@ object SecureFormChangeResponse {
     __obj.asInstanceOf[SecureFormChangeResponse]
   }
   
-  extension [Self <: SecureFormChangeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureFormChangeResponse] (val x: Self) extends AnyVal {
     
     inline def setBrand(value: visa | mastercard | maestro): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     

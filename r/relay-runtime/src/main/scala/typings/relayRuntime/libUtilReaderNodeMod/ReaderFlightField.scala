@@ -26,7 +26,8 @@ object ReaderFlightField {
     __obj.asInstanceOf[ReaderFlightField]
   }
   
-  extension [Self <: ReaderFlightField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderFlightField] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

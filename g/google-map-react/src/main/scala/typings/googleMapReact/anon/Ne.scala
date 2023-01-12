@@ -19,7 +19,8 @@ object Ne {
     __obj.asInstanceOf[Ne]
   }
   
-  extension [Self <: Ne](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ne] (val x: Self) extends AnyVal {
     
     inline def setNe_(value: typings.googleMapReact.mod.Coords): Self = StObject.set(x, "ne", value.asInstanceOf[js.Any])
     

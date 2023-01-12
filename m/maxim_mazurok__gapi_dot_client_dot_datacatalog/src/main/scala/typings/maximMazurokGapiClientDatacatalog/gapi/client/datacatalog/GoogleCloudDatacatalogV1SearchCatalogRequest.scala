@@ -44,7 +44,8 @@ object GoogleCloudDatacatalogV1SearchCatalogRequest {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1SearchCatalogRequest]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1SearchCatalogRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1SearchCatalogRequest] (val x: Self) extends AnyVal {
     
     inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

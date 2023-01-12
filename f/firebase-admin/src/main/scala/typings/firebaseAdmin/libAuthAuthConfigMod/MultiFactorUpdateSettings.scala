@@ -20,7 +20,8 @@ object MultiFactorUpdateSettings {
     __obj.asInstanceOf[MultiFactorUpdateSettings]
   }
   
-  extension [Self <: MultiFactorUpdateSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiFactorUpdateSettings] (val x: Self) extends AnyVal {
     
     inline def setEnrolledFactors(value: js.Array[UpdateMultiFactorInfoRequest]): Self = StObject.set(x, "enrolledFactors", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object listItemAvatarListItemAvatarMod {
       __obj.asInstanceOf[ListItemAvatarProps]
     }
     
-    extension [Self <: ListItemAvatarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemAvatarProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -66,7 +66,8 @@ object TypeofTaxonomy {
     __obj.asInstanceOf[TypeofTaxonomy]
   }
   
-  extension [Self <: TypeofTaxonomy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTaxonomy] (val x: Self) extends AnyVal {
     
     inline def setAddChildrenData(value: (Node, Double) => Double): Self = StObject.set(x, "addChildrenData", js.Any.fromFunction2(value))
     

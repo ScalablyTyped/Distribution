@@ -68,7 +68,8 @@ object PutProfileObjectTypeRequest {
     __obj.asInstanceOf[PutProfileObjectTypeRequest]
   }
   
-  extension [Self <: PutProfileObjectTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutProfileObjectTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowProfileCreation(value: Boolean): Self = StObject.set(x, "AllowProfileCreation", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object PlayerBadges {
     __obj.asInstanceOf[PlayerBadges]
   }
   
-  extension [Self <: PlayerBadges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerBadges] (val x: Self) extends AnyVal {
     
     inline def setBadges(value: js.Array[Badge]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetExperimentTemplateRequest {
     __obj.asInstanceOf[GetExperimentTemplateRequest]
   }
   
-  extension [Self <: GetExperimentTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExperimentTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: ExperimentTemplateId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

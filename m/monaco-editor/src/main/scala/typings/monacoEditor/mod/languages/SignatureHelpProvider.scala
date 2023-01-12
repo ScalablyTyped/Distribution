@@ -27,7 +27,8 @@ object SignatureHelpProvider {
     __obj.asInstanceOf[SignatureHelpProvider]
   }
   
-  extension [Self <: SignatureHelpProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureHelpProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideSignatureHelp(
       value: (ITextModel, Position, CancellationToken, SignatureHelpContext) => ProviderResult[SignatureHelpResult]

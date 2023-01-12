@@ -31,7 +31,8 @@ object ISearchCharRange {
     __obj.asInstanceOf[ISearchCharRange]
   }
   
-  extension [Self <: ISearchCharRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchCharRange] (val x: Self) extends AnyVal {
     
     inline def setQCharCount(value: Double): Self = StObject.set(x, "qCharCount", value.asInstanceOf[js.Any])
     

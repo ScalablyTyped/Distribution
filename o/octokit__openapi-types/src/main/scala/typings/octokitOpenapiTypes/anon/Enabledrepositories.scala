@@ -21,7 +21,8 @@ object Enabledrepositories {
     __obj.asInstanceOf[Enabledrepositories]
   }
   
-  extension [Self <: Enabledrepositories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enabledrepositories] (val x: Self) extends AnyVal {
     
     inline def setAllowed_actions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['allowed-actions'] */ js.Any

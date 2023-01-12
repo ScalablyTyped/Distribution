@@ -25,7 +25,8 @@ object Observer {
     __obj.asInstanceOf[Observer[T]]
   }
   
-  extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
     
     inline def setAsObserver(value: () => Observer[T]): Self = StObject.set(x, "asObserver", js.Any.fromFunction0(value))
     

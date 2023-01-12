@@ -58,7 +58,8 @@ object PartialPerformanceEvent {
     __obj.asInstanceOf[PartialPerformanceEvent]
   }
   
-  extension [Self <: PartialPerformanceEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPerformanceEvent] (val x: Self) extends AnyVal {
     
     inline def setAccessTokenSize(value: Double): Self = StObject.set(x, "accessTokenSize", value.asInstanceOf[js.Any])
     

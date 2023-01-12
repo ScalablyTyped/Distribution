@@ -38,7 +38,8 @@ object XSubTotalDescriptor {
     __obj.asInstanceOf[XSubTotalDescriptor]
   }
   
-  extension [Self <: XSubTotalDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSubTotalDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAddNew(value: (SeqEquiv[SubTotalColumn], Double) => Unit): Self = StObject.set(x, "addNew", js.Any.fromFunction2(value))
     

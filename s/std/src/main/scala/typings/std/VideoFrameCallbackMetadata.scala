@@ -50,7 +50,8 @@ object VideoFrameCallbackMetadata {
     __obj.asInstanceOf[VideoFrameCallbackMetadata]
   }
   
-  extension [Self <: VideoFrameCallbackMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoFrameCallbackMetadata] (val x: Self) extends AnyVal {
     
     inline def setCaptureTime(value: DOMHighResTimeStamp): Self = StObject.set(x, "captureTime", value.asInstanceOf[js.Any])
     

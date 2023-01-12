@@ -15,7 +15,8 @@ object KnockoutPunchesStatic {
     __obj.asInstanceOf[KnockoutPunchesStatic]
   }
   
-  extension [Self <: KnockoutPunchesStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutPunchesStatic] (val x: Self) extends AnyVal {
     
     inline def setEnableAll(value: () => Unit): Self = StObject.set(x, "enableAll", js.Any.fromFunction0(value))
   }

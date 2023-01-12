@@ -23,7 +23,8 @@ object MapInteractionEvents {
     __obj.asInstanceOf[MapInteractionEvents[T]]
   }
   
-  extension [Self <: MapInteractionEvents[?], T](x: Self & MapInteractionEvents[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapInteractionEvents[?], T] (val x: Self & MapInteractionEvents[T]) extends AnyVal {
     
     inline def `setDouble-tap`(value: EventBase[T]): Self = StObject.set(x, "double-tap", value.asInstanceOf[js.Any])
     

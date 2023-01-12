@@ -111,7 +111,8 @@ object dxDateBoxOptions {
     __obj.asInstanceOf[dxDateBoxOptions]
   }
   
-  extension [Self <: dxDateBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDateBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setAdaptivityEnabled(value: Boolean): Self = StObject.set(x, "adaptivityEnabled", value.asInstanceOf[js.Any])
     

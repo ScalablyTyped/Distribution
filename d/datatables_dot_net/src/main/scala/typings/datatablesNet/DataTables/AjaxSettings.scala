@@ -20,7 +20,8 @@ object AjaxSettings {
     __obj.asInstanceOf[AjaxSettings]
   }
   
-  extension [Self <: AjaxSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AjaxSettings] (val x: Self) extends AnyVal {
     
     inline def setDataSrc(value: String | (js.Function1[/* data */ Any, js.Array[Any]])): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
     

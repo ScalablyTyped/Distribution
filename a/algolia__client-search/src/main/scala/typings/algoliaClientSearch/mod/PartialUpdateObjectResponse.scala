@@ -23,7 +23,8 @@ object PartialUpdateObjectResponse {
     __obj.asInstanceOf[PartialUpdateObjectResponse]
   }
   
-  extension [Self <: PartialUpdateObjectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialUpdateObjectResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     

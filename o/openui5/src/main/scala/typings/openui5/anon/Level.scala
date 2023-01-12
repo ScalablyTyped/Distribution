@@ -35,7 +35,8 @@ object Level {
     __obj.asInstanceOf[Level]
   }
   
-  extension [Self <: Level](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
     
     inline def setAction(value: default): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

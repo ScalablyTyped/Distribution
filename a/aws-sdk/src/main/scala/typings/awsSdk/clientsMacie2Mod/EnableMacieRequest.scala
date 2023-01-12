@@ -28,7 +28,8 @@ object EnableMacieRequest {
     __obj.asInstanceOf[EnableMacieRequest]
   }
   
-  extension [Self <: EnableMacieRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableMacieRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

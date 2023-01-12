@@ -18,7 +18,8 @@ object XMLHttpRequest {
     __obj.asInstanceOf[XMLHttpRequest]
   }
   
-  extension [Self <: XMLHttpRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLHttpRequest] (val x: Self) extends AnyVal {
     
     inline def setSetTrustToken(value: TrustToken => Unit): Self = StObject.set(x, "setTrustToken", js.Any.fromFunction1(value))
     

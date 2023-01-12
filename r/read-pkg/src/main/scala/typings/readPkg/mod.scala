@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[NormalizeOptions]
     }
     
-    extension [Self <: NormalizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizeOptions] (val x: Self) extends AnyVal {
       
       inline def setNormalize(value: `true`): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

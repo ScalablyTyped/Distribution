@@ -19,7 +19,8 @@ object GetItemAriaLabel {
     __obj.asInstanceOf[GetItemAriaLabel]
   }
   
-  extension [Self <: GetItemAriaLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetItemAriaLabel] (val x: Self) extends AnyVal {
     
     inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     

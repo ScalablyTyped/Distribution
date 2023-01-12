@@ -18,7 +18,8 @@ object SortableCancelEvent {
     __obj.asInstanceOf[SortableCancelEvent]
   }
   
-  extension [Self <: SortableCancelEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortableCancelEvent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

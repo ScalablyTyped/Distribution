@@ -41,7 +41,8 @@ object TypeofSession {
     __obj.asInstanceOf[TypeofSession]
   }
   
-  extension [Self <: TypeofSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSession] (val x: Self) extends AnyVal {
     
     inline def setAfterExpiration(value: Any): Self = StObject.set(x, "AfterExpiration", value.asInstanceOf[js.Any])
     

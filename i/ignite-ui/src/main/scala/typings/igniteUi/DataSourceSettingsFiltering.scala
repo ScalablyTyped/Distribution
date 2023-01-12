@@ -82,7 +82,8 @@ object DataSourceSettingsFiltering {
     __obj.asInstanceOf[DataSourceSettingsFiltering]
   }
   
-  extension [Self <: DataSourceSettingsFiltering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSettingsFiltering] (val x: Self) extends AnyVal {
     
     inline def setApplyToAllData(value: Boolean): Self = StObject.set(x, "applyToAllData", value.asInstanceOf[js.Any])
     

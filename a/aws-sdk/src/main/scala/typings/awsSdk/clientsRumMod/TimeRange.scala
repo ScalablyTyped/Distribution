@@ -23,7 +23,8 @@ object TimeRange {
     __obj.asInstanceOf[TimeRange]
   }
   
-  extension [Self <: TimeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeRange] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: QueryTimestamp): Self = StObject.set(x, "After", value.asInstanceOf[js.Any])
     

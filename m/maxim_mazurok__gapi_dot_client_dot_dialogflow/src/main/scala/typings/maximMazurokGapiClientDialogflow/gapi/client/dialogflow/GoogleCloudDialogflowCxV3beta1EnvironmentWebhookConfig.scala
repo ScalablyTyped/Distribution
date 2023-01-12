@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3beta1EnvironmentWebhookConfig {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1EnvironmentWebhookConfig]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1EnvironmentWebhookConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1EnvironmentWebhookConfig] (val x: Self) extends AnyVal {
     
     inline def setWebhookOverrides(value: js.Array[GoogleCloudDialogflowCxV3beta1Webhook]): Self = StObject.set(x, "webhookOverrides", value.asInstanceOf[js.Any])
     

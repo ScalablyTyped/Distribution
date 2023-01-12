@@ -15,7 +15,8 @@ object SnapshotLegacy {
     __obj.asInstanceOf[SnapshotLegacy]
   }
   
-  extension [Self <: SnapshotLegacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotLegacy] (val x: Self) extends AnyVal {
     
     inline def setCanTakeSnapshot(value: Boolean): Self = StObject.set(x, "canTakeSnapshot", value.asInstanceOf[js.Any])
   }

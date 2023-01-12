@@ -18,7 +18,8 @@ object DescribeResourceGroupsRequest {
     __obj.asInstanceOf[DescribeResourceGroupsRequest]
   }
   
-  extension [Self <: DescribeResourceGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeResourceGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceGroupArns(value: BatchDescribeArnList): Self = StObject.set(x, "resourceGroupArns", value.asInstanceOf[js.Any])
     

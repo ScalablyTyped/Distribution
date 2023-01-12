@@ -26,7 +26,8 @@ object EthereumSignTypedHashAndData {
     __obj.asInstanceOf[EthereumSignTypedHashAndData[T]]
   }
   
-  extension [Self <: EthereumSignTypedHashAndData[?], T /* <: EthereumSignTypedDataTypes */](x: Self & EthereumSignTypedHashAndData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumSignTypedHashAndData[?], T /* <: EthereumSignTypedDataTypes */] (val x: Self & EthereumSignTypedHashAndData[T]) extends AnyVal {
     
     inline def setDomain_separator_hash(value: String): Self = StObject.set(x, "domain_separator_hash", value.asInstanceOf[js.Any])
     

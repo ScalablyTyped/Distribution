@@ -422,7 +422,8 @@ object CharacterProperties {
     __obj.asInstanceOf[CharacterProperties]
   }
   
-  extension [Self <: CharacterProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacterProperties] (val x: Self) extends AnyVal {
     
     inline def setCharAutoKerning(value: Boolean): Self = StObject.set(x, "CharAutoKerning", value.asInstanceOf[js.Any])
     

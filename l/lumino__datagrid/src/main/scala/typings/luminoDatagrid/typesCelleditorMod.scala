@@ -235,7 +235,8 @@ object typesCelleditorMod {
         __obj.asInstanceOf[CellConfig]
       }
       
-      extension [Self <: CellConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CellConfig] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
@@ -616,7 +617,8 @@ object typesCelleditorMod {
       __obj.asInstanceOf[ICellEditOptions]
     }
     
-    extension [Self <: ICellEditOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICellEditOptions] (val x: Self) extends AnyVal {
       
       inline def setEditor(value: ICellEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       
@@ -660,7 +662,8 @@ object typesCelleditorMod {
       __obj.asInstanceOf[ICellEditResponse]
     }
     
-    extension [Self <: ICellEditResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICellEditResponse] (val x: Self) extends AnyVal {
       
       inline def setCell(value: CellConfig): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -709,7 +712,8 @@ object typesCelleditorMod {
       __obj.asInstanceOf[ICellInputValidator]
     }
     
-    extension [Self <: ICellInputValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICellInputValidator] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: (CellConfig, Any) => ICellInputValidatorResponse): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     }
@@ -734,7 +738,8 @@ object typesCelleditorMod {
       __obj.asInstanceOf[ICellInputValidatorResponse]
     }
     
-    extension [Self <: ICellInputValidatorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICellInputValidatorResponse] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -786,7 +791,8 @@ object typesCelleditorMod {
         __obj.asInstanceOf[ICellInfo]
       }
       
-      extension [Self <: ICellInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICellInfo] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         

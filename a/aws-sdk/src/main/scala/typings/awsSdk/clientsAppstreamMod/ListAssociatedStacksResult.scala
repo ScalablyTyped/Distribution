@@ -23,7 +23,8 @@ object ListAssociatedStacksResult {
     __obj.asInstanceOf[ListAssociatedStacksResult]
   }
   
-  extension [Self <: ListAssociatedStacksResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssociatedStacksResult] (val x: Self) extends AnyVal {
     
     inline def setNames(value: StringList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     

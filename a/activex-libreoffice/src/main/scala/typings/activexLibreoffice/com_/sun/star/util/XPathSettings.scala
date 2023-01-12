@@ -144,7 +144,8 @@ object XPathSettings {
     __obj.asInstanceOf[XPathSettings]
   }
   
-  extension [Self <: XPathSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPathSettings] (val x: Self) extends AnyVal {
     
     inline def setAddin(value: String): Self = StObject.set(x, "Addin", value.asInstanceOf[js.Any])
     

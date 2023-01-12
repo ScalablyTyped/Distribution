@@ -19,7 +19,8 @@ object Watch {
     __obj.asInstanceOf[Watch[T]]
   }
   
-  extension [Self <: Watch[?], T](x: Self & Watch[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Watch[?], T] (val x: Self & Watch[T]) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

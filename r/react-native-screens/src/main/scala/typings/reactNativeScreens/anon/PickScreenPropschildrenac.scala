@@ -244,7 +244,8 @@ object PickScreenPropschildrenac {
     __obj.asInstanceOf[PickScreenPropschildrenac]
   }
   
-  extension [Self <: PickScreenPropschildrenac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickScreenPropschildrenac] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

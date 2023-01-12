@@ -220,7 +220,8 @@ object libBrowserMod {
         __obj.asInstanceOf[IFileOptions]
       }
       
-      extension [Self <: IFileOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFileOptions] (val x: Self) extends AnyVal {
         
         inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       }
@@ -270,7 +271,8 @@ object libBrowserMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         

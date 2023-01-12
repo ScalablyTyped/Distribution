@@ -22,7 +22,8 @@ object ArgumentTypeMaxValueMinValueOptionalArg {
     __obj.asInstanceOf[ArgumentTypeMaxValueMinValueOptionalArg]
   }
   
-  extension [Self <: ArgumentTypeMaxValueMinValueOptionalArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgumentTypeMaxValueMinValueOptionalArg] (val x: Self) extends AnyVal {
     
     inline def setArgumentType(value: ArgumentTypes): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
     

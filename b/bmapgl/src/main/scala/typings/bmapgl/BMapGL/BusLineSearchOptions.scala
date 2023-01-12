@@ -28,7 +28,8 @@ object BusLineSearchOptions {
     __obj.asInstanceOf[BusLineSearchOptions]
   }
   
-  extension [Self <: BusLineSearchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusLineSearchOptions] (val x: Self) extends AnyVal {
     
     inline def setOnBusLineHtmlSet(value: /* container */ HTMLElement => Unit): Self = StObject.set(x, "onBusLineHtmlSet", js.Any.fromFunction1(value))
     

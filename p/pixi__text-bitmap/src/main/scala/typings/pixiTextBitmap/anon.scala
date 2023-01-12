@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Amount]
     }
     
-    extension [Self <: Amount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Amount] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[DistanceRange]
     }
     
-    extension [Self <: DistanceRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistanceRange] (val x: Self) extends AnyVal {
       
       inline def setDistanceRange(value: String): Self = StObject.set(x, "distanceRange", value.asInstanceOf[js.Any])
       
@@ -91,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Face]
     }
     
-    extension [Self <: Face](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Face] (val x: Self) extends AnyVal {
       
       inline def setFace(value: String): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
       
@@ -112,7 +116,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -157,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -190,7 +196,8 @@ object anon {
       __obj.asInstanceOf[LineHeight]
     }
     
-    extension [Self <: LineHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineHeight] (val x: Self) extends AnyVal {
       
       inline def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     }
@@ -218,7 +225,8 @@ object anon {
       __obj.asInstanceOf[PartialIBitmapTextStyle]
     }
     
-    extension [Self <: PartialIBitmapTextStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIBitmapTextStyle] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: TextStyleAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -314,7 +322,8 @@ object anon {
       __obj.asInstanceOf[PartialITextStyle]
     }
     
-    extension [Self <: PartialITextStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialITextStyle] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: TextStyleAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

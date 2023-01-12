@@ -28,7 +28,8 @@ object ActivityTaskCompletedEventAttributes {
     __obj.asInstanceOf[ActivityTaskCompletedEventAttributes]
   }
   
-  extension [Self <: ActivityTaskCompletedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityTaskCompletedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

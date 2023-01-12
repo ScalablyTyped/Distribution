@@ -28,7 +28,8 @@ object BarLegendProps {
     __obj.asInstanceOf[BarLegendProps]
   }
   
-  extension [Self <: BarLegendProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarLegendProps] (val x: Self) extends AnyVal {
     
     inline def setDataFrom(value: indexes | keys): Self = StObject.set(x, "dataFrom", value.asInstanceOf[js.Any])
   }

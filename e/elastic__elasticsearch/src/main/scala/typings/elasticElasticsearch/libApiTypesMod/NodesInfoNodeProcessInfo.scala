@@ -19,7 +19,8 @@ object NodesInfoNodeProcessInfo {
     __obj.asInstanceOf[NodesInfoNodeProcessInfo]
   }
   
-  extension [Self <: NodesInfoNodeProcessInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeProcessInfo] (val x: Self) extends AnyVal {
     
     inline def setId(value: long): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

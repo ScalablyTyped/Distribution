@@ -57,7 +57,8 @@ object GlobalStats {
     __obj.asInstanceOf[GlobalStats]
   }
   
-  extension [Self <: GlobalStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalStats] (val x: Self) extends AnyVal {
     
     inline def setActive_survey_id(value: Double): Self = StObject.set(x, "active_survey_id", value.asInstanceOf[js.Any])
     

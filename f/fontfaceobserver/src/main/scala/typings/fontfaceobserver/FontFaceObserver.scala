@@ -35,7 +35,8 @@ object FontFaceObserver {
       __obj.asInstanceOf[FontVariant]
     }
     
-    extension [Self <: FontVariant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontVariant] (val x: Self) extends AnyVal {
       
       inline def setStretch(value: String): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
       

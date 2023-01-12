@@ -28,7 +28,8 @@ object ScrollToOption {
     __obj.asInstanceOf[ScrollToOption]
   }
   
-  extension [Self <: ScrollToOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollToOption] (val x: Self) extends AnyVal {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

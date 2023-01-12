@@ -53,7 +53,8 @@ object DataReaderLoadOperation {
     __obj.asInstanceOf[DataReaderLoadOperation]
   }
   
-  extension [Self <: DataReaderLoadOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataReaderLoadOperation] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

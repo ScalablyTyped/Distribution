@@ -29,7 +29,8 @@ object IngestDateIndexNameProcessor {
     __obj.asInstanceOf[IngestDateIndexNameProcessor]
   }
   
-  extension [Self <: IngestDateIndexNameProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestDateIndexNameProcessor] (val x: Self) extends AnyVal {
     
     inline def setDate_formats(value: js.Array[String]): Self = StObject.set(x, "date_formats", value.asInstanceOf[js.Any])
     

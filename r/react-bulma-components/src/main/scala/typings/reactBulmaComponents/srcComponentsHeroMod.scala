@@ -35,7 +35,8 @@ object srcComponentsHeroMod extends Shortcut {
       __obj.asInstanceOf[HeroProps]
     }
     
-    extension [Self <: HeroProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeroProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

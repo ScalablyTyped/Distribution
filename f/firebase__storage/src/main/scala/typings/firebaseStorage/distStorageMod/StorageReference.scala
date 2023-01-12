@@ -45,7 +45,8 @@ object StorageReference {
     __obj.asInstanceOf[StorageReference]
   }
   
-  extension [Self <: StorageReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageReference] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

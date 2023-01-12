@@ -74,7 +74,8 @@ object ScreenAnimationOptions {
     __obj.asInstanceOf[ScreenAnimationOptions]
   }
   
-  extension [Self <: ScreenAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: OptionsAnimationPropertyConfig): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

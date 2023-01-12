@@ -25,7 +25,8 @@ object DefinedName {
     __obj.asInstanceOf[DefinedName]
   }
   
-  extension [Self <: DefinedName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefinedName] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

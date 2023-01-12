@@ -76,7 +76,8 @@ object IWindowGroup {
     __obj.asInstanceOf[IWindowGroup]
   }
   
-  extension [Self <: IWindowGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWindowGroup] (val x: Self) extends AnyVal {
     
     inline def setBringToFront(value: /* comp */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "bringToFront", js.Any.fromFunction1(value))
     

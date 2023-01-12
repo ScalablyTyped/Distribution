@@ -540,7 +540,8 @@ object mod {
       __obj.asInstanceOf[PluginTesterOptions]
     }
     
-    extension [Self <: PluginTesterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginTesterOptions] (val x: Self) extends AnyVal {
       
       inline def setAssumptions(value: StringDictionary[Boolean]): Self = StObject.set(x, "assumptions", value.asInstanceOf[js.Any])
       
@@ -1054,7 +1055,8 @@ object mod {
       __obj.asInstanceOf[TestObject]
     }
     
-    extension [Self <: TestObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestObject] (val x: Self) extends AnyVal {
       
       inline def setBabelOptions(value: TransformOptions): Self = StObject.set(x, "babelOptions", value.asInstanceOf[js.Any])
       

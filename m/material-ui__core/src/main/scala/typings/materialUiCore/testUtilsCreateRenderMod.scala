@@ -26,7 +26,8 @@ object testUtilsCreateRenderMod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setRender(value: Fn0): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     }

@@ -23,7 +23,8 @@ object ShapeViewUpdateData {
     __obj.asInstanceOf[ShapeViewUpdateData]
   }
   
-  extension [Self <: ShapeViewUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeViewUpdateData] (val x: Self) extends AnyVal {
     
     inline def setHighlight(value: Highlight): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     

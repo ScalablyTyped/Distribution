@@ -19,7 +19,8 @@ object LargeMediumSmall {
     __obj.asInstanceOf[LargeMediumSmall]
   }
   
-  extension [Self <: LargeMediumSmall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LargeMediumSmall] (val x: Self) extends AnyVal {
     
     inline def setLarge(value: BorderPad): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object CreateAliasInput {
     __obj.asInstanceOf[CreateAliasInput]
   }
   
-  extension [Self <: CreateAliasInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAliasInput] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: NonZeroAndMaxString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

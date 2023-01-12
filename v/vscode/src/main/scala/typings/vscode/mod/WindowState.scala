@@ -18,7 +18,8 @@ object WindowState {
     __obj.asInstanceOf[WindowState]
   }
   
-  extension [Self <: WindowState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowState] (val x: Self) extends AnyVal {
     
     inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
   }

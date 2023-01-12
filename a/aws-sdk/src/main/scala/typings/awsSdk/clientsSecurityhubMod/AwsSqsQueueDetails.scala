@@ -33,7 +33,8 @@ object AwsSqsQueueDetails {
     __obj.asInstanceOf[AwsSqsQueueDetails]
   }
   
-  extension [Self <: AwsSqsQueueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsSqsQueueDetails] (val x: Self) extends AnyVal {
     
     inline def setDeadLetterTargetArn(value: NonEmptyString): Self = StObject.set(x, "DeadLetterTargetArn", value.asInstanceOf[js.Any])
     

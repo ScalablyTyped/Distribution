@@ -23,7 +23,8 @@ object ApplicationVersionLifecycleConfig {
     __obj.asInstanceOf[ApplicationVersionLifecycleConfig]
   }
   
-  extension [Self <: ApplicationVersionLifecycleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationVersionLifecycleConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxAgeRule(value: MaxAgeRule): Self = StObject.set(x, "MaxAgeRule", value.asInstanceOf[js.Any])
     

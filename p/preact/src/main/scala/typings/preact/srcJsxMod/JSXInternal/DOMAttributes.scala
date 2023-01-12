@@ -371,7 +371,8 @@ object DOMAttributes {
     __obj.asInstanceOf[DOMAttributes[Target]]
   }
   
-  extension [Self <: DOMAttributes[?], Target /* <: EventTarget */](x: Self & DOMAttributes[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMAttributes[?], Target /* <: EventTarget */] (val x: Self & DOMAttributes[Target]) extends AnyVal {
     
     inline def setOnAbort(value: GenericEventHandler[Target]): Self = StObject.set(x, "onAbort", value.asInstanceOf[js.Any])
     

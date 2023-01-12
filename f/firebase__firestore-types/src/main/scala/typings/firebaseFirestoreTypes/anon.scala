@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Complete]
     }
     
-    extension [Self <: Complete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Complete] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Delete]
     }
     
-    extension [Self <: Delete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     }
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Error[T]]
     }
     
-    extension [Self <: Error[?], T](x: Self & Error[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error[?], T] (val x: Self & Error[T]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -100,7 +103,8 @@ object anon {
       __obj.asInstanceOf[MockUserToken]
     }
     
-    extension [Self <: MockUserToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockUserToken] (val x: Self) extends AnyVal {
       
       inline def setMockUserToken(value: EmulatorMockTokenOptions | String): Self = StObject.set(x, "mockUserToken", value.asInstanceOf[js.Any])
       
@@ -123,7 +127,8 @@ object anon {
       __obj.asInstanceOf[Next[T]]
     }
     
-    extension [Self <: Next[?], T](x: Self & Next[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Next[?], T] (val x: Self & Next[T]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       

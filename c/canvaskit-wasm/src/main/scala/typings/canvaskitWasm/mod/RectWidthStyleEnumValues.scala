@@ -19,7 +19,8 @@ object RectWidthStyleEnumValues {
     __obj.asInstanceOf[RectWidthStyleEnumValues]
   }
   
-  extension [Self <: RectWidthStyleEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectWidthStyleEnumValues] (val x: Self) extends AnyVal {
     
     inline def setMax(value: RectWidthStyle): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     

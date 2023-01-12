@@ -19,7 +19,8 @@ object JWTHeaderParameters {
     __obj.asInstanceOf[JWTHeaderParameters]
   }
   
-  extension [Self <: JWTHeaderParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JWTHeaderParameters] (val x: Self) extends AnyVal {
     
     inline def setB64(value: `true`): Self = StObject.set(x, "b64", value.asInstanceOf[js.Any])
     

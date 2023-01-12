@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[CompanyValue]
     }
     
-    extension [Self <: CompanyValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompanyValue] (val x: Self) extends AnyVal {
       
       inline def setCompanyValue(value: Double): Self = StObject.set(x, "companyValue", value.asInstanceOf[js.Any])
       

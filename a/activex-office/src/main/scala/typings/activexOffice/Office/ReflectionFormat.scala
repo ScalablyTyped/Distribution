@@ -40,7 +40,8 @@ object ReflectionFormat {
     __obj.asInstanceOf[ReflectionFormat]
   }
   
-  extension [Self <: ReflectionFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReflectionFormat] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

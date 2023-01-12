@@ -23,7 +23,8 @@ object GridOptions {
     __obj.asInstanceOf[GridOptions]
   }
   
-  extension [Self <: GridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridOptions] (val x: Self) extends AnyVal {
     
     inline def setFocus(value: Show): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     

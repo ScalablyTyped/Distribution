@@ -18,7 +18,8 @@ object HookerOverride {
     __obj.asInstanceOf[HookerOverride]
   }
   
-  extension [Self <: HookerOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookerOverride] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

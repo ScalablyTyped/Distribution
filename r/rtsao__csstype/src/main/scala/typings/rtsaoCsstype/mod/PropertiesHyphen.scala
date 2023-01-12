@@ -78,7 +78,8 @@ object PropertiesHyphen {
     __obj.asInstanceOf[PropertiesHyphen[TLength]]
   }
   
-  extension [Self <: PropertiesHyphen[?], TLength](x: Self & PropertiesHyphen[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesHyphen[?], TLength] (val x: Self & PropertiesHyphen[TLength]) extends AnyVal {
     
     inline def `setAlignment-baseline`(value: AlignmentBaselineProperty): Self = StObject.set(x, "alignment-baseline", value.asInstanceOf[js.Any])
     

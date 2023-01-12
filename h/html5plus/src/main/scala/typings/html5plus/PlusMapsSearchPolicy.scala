@@ -75,7 +75,8 @@ object PlusMapsSearchPolicy {
     __obj.asInstanceOf[PlusMapsSearchPolicy]
   }
   
-  extension [Self <: PlusMapsSearchPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusMapsSearchPolicy] (val x: Self) extends AnyVal {
     
     inline def setDRIVING_DIS_FIRST(value: Double): Self = StObject.set(x, "DRIVING_DIS_FIRST", value.asInstanceOf[js.Any])
     

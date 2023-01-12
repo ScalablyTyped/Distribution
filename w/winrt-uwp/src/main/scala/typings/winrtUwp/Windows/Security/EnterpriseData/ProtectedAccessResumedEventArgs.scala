@@ -18,7 +18,8 @@ object ProtectedAccessResumedEventArgs {
     __obj.asInstanceOf[ProtectedAccessResumedEventArgs]
   }
   
-  extension [Self <: ProtectedAccessResumedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectedAccessResumedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIdentities(value: IVectorView[String]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
   }

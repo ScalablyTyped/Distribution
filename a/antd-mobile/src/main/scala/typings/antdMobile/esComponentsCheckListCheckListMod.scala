@@ -324,7 +324,8 @@ object esComponentsCheckListCheckListMod {
       __obj.asInstanceOf[CheckListProps]
     }
     
-    extension [Self <: CheckListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckListProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIcon(value: ReactNode): Self = StObject.set(x, "activeIcon", value.asInstanceOf[js.Any])
       

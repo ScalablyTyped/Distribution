@@ -27,7 +27,8 @@ object SwipeVisibleElements {
     __obj.asInstanceOf[SwipeVisibleElements]
   }
   
-  extension [Self <: SwipeVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwipeVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setDivider(value: Boolean): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     

@@ -2115,7 +2115,8 @@ object libMod {
       __obj.asInstanceOf[AncestorVisitor[TState]]
     }
     
-    extension [Self <: AncestorVisitor[?], TState](x: Self & AncestorVisitor[TState]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AncestorVisitor[?], TState] (val x: Self & AncestorVisitor[TState]) extends AnyVal {
       
       inline def setAccessor(value: (AncestorFunction[Accessor, TState]) | `346`[TState]): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
       
@@ -6704,7 +6705,8 @@ object libMod {
       __obj.asInstanceOf[RecursiveVisitors[TState]]
     }
     
-    extension [Self <: RecursiveVisitors[?], TState](x: Self & RecursiveVisitors[TState]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecursiveVisitors[?], TState] (val x: Self & RecursiveVisitors[TState]) extends AnyVal {
       
       inline def setAccessor(
         value: (/* node */ NodeType[Accessor], /* state */ TState, /* recurse */ js.Function1[/* node */ Node, Unit]) => Unit
@@ -9690,7 +9692,8 @@ object libMod {
       __obj.asInstanceOf[SimpleVisitors[TState]]
     }
     
-    extension [Self <: SimpleVisitors[?], TState](x: Self & SimpleVisitors[TState]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleVisitors[?], TState] (val x: Self & SimpleVisitors[TState]) extends AnyVal {
       
       inline def setAccessor(value: (SimpleFunction[Accessor, TState]) | `48`[TState]): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
       

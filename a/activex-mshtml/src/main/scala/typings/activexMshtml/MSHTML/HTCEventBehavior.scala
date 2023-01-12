@@ -19,7 +19,8 @@ object HTCEventBehavior {
     __obj.asInstanceOf[HTCEventBehavior]
   }
   
-  extension [Self <: HTCEventBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTCEventBehavior] (val x: Self) extends AnyVal {
     
     inline def setFire(value: IHTMLEventObj => Unit): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
     

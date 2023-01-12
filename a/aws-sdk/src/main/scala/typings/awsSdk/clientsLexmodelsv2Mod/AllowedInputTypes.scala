@@ -23,7 +23,8 @@ object AllowedInputTypes {
     __obj.asInstanceOf[AllowedInputTypes]
   }
   
-  extension [Self <: AllowedInputTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedInputTypes] (val x: Self) extends AnyVal {
     
     inline def setAllowAudioInput(value: BoxedBoolean): Self = StObject.set(x, "allowAudioInput", value.asInstanceOf[js.Any])
     

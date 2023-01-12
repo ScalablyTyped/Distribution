@@ -29,7 +29,8 @@ object libGComponentsMarkerMod extends Shortcut {
       __obj.asInstanceOf[IMarkerProps]
     }
     
-    extension [Self <: IMarkerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMarkerProps] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: R): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     }

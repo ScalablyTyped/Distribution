@@ -231,7 +231,8 @@ object mod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setNice(value: Double): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
       
@@ -264,7 +265,8 @@ object mod {
       __obj.asInstanceOf[ContextOptions]
     }
     
-    extension [Self <: ContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextOptions] (val x: Self) extends AnyVal {
       
       inline def setNice(value: Double): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
       
@@ -315,7 +317,8 @@ object mod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -361,7 +364,8 @@ object mod {
       __obj.asInstanceOf[Listeners]
     }
     
-    extension [Self <: Listeners](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listeners] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Array[Func]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -464,7 +468,8 @@ object mod {
       __obj.asInstanceOf[Scope]
     }
     
-    extension [Self <: Scope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
       
       inline def setQueue(value: js.Array[Any]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       

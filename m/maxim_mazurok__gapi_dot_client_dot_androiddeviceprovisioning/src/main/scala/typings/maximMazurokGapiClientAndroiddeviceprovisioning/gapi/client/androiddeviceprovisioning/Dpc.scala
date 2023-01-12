@@ -25,7 +25,8 @@ object Dpc {
     __obj.asInstanceOf[Dpc]
   }
   
-  extension [Self <: Dpc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dpc] (val x: Self) extends AnyVal {
     
     inline def setDpcName(value: String): Self = StObject.set(x, "dpcName", value.asInstanceOf[js.Any])
     

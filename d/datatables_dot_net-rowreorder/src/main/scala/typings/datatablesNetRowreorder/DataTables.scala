@@ -50,7 +50,8 @@ object DataTables {
       __obj.asInstanceOf[RowReorderSettings]
     }
     
-    extension [Self <: RowReorderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowReorderSettings] (val x: Self) extends AnyVal {
       
       inline def setDataSrc(value: String): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object DataTables {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setRowReorder(value: RowReorderSettings): Self = StObject.set(x, "rowReorder", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ReadonlyComponentResoluti {
     __obj.asInstanceOf[ReadonlyComponentResoluti]
   }
   
-  extension [Self <: ReadonlyComponentResoluti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyComponentResoluti] (val x: Self) extends AnyVal {
     
     inline def setDeclarationListEmitMode(value: DeclarationListEmitMode): Self = StObject.set(x, "declarationListEmitMode", value.asInstanceOf[js.Any])
     

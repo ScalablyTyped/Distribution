@@ -22,7 +22,8 @@ object MultiPeriodMarking {
     __obj.asInstanceOf[MultiPeriodMarking]
   }
   
-  extension [Self <: MultiPeriodMarking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiPeriodMarking] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

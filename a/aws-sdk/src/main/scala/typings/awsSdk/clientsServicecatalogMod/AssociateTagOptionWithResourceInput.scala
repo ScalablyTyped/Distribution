@@ -23,7 +23,8 @@ object AssociateTagOptionWithResourceInput {
     __obj.asInstanceOf[AssociateTagOptionWithResourceInput]
   }
   
-  extension [Self <: AssociateTagOptionWithResourceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateTagOptionWithResourceInput] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

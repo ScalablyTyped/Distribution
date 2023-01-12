@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Dispose[TResult]]
     }
     
-    extension [Self <: Dispose[?], TResult](x: Self & Dispose[TResult]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dispose[?], TResult] (val x: Self & Dispose[TResult]) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[DisposeItem[T, TResult]]
     }
     
-    extension [Self <: DisposeItem[?, ?], T, TResult](x: Self & (DisposeItem[T, TResult])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisposeItem[?, ?], T, TResult] (val x: Self & (DisposeItem[T, TResult])) extends AnyVal {
       
       inline def setDisposeItem(value: /* mappedItem */ TResult => Unit): Self = StObject.set(x, "disposeItem", js.Any.fromFunction1(value))
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[MappingWithDisposeCallback[T, TResult]]
     }
     
-    extension [Self <: MappingWithDisposeCallback[?, ?], T, TResult](x: Self & (MappingWithDisposeCallback[T, TResult])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappingWithDisposeCallback[?, ?], T, TResult] (val x: Self & (MappingWithDisposeCallback[T, TResult])) extends AnyVal {
       
       inline def setMappingWithDisposeCallback(value: T => Dispose[TResult]): Self = StObject.set(x, "mappingWithDisposeCallback", js.Any.fromFunction1(value))
     }

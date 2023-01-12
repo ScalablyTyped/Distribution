@@ -32,7 +32,8 @@ object IUnaryFilterOpEnum {
     __obj.asInstanceOf[IUnaryFilterOpEnum]
   }
   
-  extension [Self <: IUnaryFilterOpEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUnaryFilterOpEnum] (val x: Self) extends AnyVal {
     
     inline def setIS_NAN(value: UnaryFilterOp): Self = StObject.set(x, "IS_NAN", value.asInstanceOf[js.Any])
     

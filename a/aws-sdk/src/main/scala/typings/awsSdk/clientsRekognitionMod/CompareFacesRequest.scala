@@ -33,7 +33,8 @@ object CompareFacesRequest {
     __obj.asInstanceOf[CompareFacesRequest]
   }
   
-  extension [Self <: CompareFacesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompareFacesRequest] (val x: Self) extends AnyVal {
     
     inline def setQualityFilter(value: QualityFilter): Self = StObject.set(x, "QualityFilter", value.asInstanceOf[js.Any])
     

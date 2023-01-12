@@ -19,7 +19,8 @@ object NodeOpenApi {
     __obj.asInstanceOf[NodeOpenApi]
   }
   
-  extension [Self <: NodeOpenApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeOpenApi] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[DepOpenApi]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

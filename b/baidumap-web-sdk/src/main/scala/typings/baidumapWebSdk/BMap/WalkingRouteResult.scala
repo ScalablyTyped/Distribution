@@ -29,7 +29,8 @@ object WalkingRouteResult {
     __obj.asInstanceOf[WalkingRouteResult]
   }
   
-  extension [Self <: WalkingRouteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalkingRouteResult] (val x: Self) extends AnyVal {
     
     inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     

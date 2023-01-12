@@ -111,7 +111,8 @@ object srcOptionsMod {
       __obj.asInstanceOf[FaviconWebpackPlugionInternalOptions]
     }
     
-    extension [Self <: FaviconWebpackPlugionInternalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaviconWebpackPlugionInternalOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -242,7 +243,8 @@ object srcOptionsMod {
       __obj.asInstanceOf[FaviconWebpackPlugionOptions]
     }
     
-    extension [Self <: FaviconWebpackPlugionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaviconWebpackPlugionOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

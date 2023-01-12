@@ -23,7 +23,8 @@ object ListEnvironmentsInput {
     __obj.asInstanceOf[ListEnvironmentsInput]
   }
   
-  extension [Self <: ListEnvironmentsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEnvironmentsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListEnvironmentsInputMaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

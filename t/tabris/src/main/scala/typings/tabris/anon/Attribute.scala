@@ -25,7 +25,8 @@ object Attribute {
     __obj.asInstanceOf[Attribute[TargetConstructor, AttrName, ResultType]]
   }
   
-  extension [Self <: Attribute[?, ?, ?], TargetConstructor /* <: BaseConstructor[NativeObject] */, AttrName /* <: /* keyof ResultType */ String */, ResultType](x: Self & (Attribute[TargetConstructor, AttrName, ResultType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attribute[?, ?, ?], TargetConstructor /* <: BaseConstructor[NativeObject] */, AttrName /* <: /* keyof ResultType */ String */, ResultType] (val x: Self & (Attribute[TargetConstructor, AttrName, ResultType])) extends AnyVal {
     
     inline def setAttribute(value: AttrName): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

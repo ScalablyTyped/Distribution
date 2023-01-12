@@ -41,7 +41,8 @@ object BorderLine2 {
     __obj.asInstanceOf[BorderLine2]
   }
   
-  extension [Self <: BorderLine2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderLine2] (val x: Self) extends AnyVal {
     
     inline def setLineStyle(value: Double): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
     

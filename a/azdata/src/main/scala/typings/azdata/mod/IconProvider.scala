@@ -21,7 +21,8 @@ object IconProvider {
     __obj.asInstanceOf[IconProvider]
   }
   
-  extension [Self <: IconProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconProvider] (val x: Self) extends AnyVal {
     
     inline def setGetConnectionIconId(value: (IConnectionProfile, ServerInfo) => Thenable[js.UndefOr[String]]): Self = StObject.set(x, "getConnectionIconId", js.Any.fromFunction2(value))
   }

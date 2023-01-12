@@ -29,7 +29,8 @@ object libVerifyLintErrorMod {
       __obj.asInstanceOf[LintError]
     }
     
-    extension [Self <: LintError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LintError] (val x: Self) extends AnyVal {
       
       inline def setEndPos(value: PositionInFile): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object libVerifyLintErrorMod {
       __obj.asInstanceOf[PositionInFile]
     }
     
-    extension [Self <: PositionInFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionInFile] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       

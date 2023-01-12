@@ -53,7 +53,8 @@ object ValueSetCodeSystemConcept {
     __obj.asInstanceOf[ValueSetCodeSystemConcept]
   }
   
-  extension [Self <: ValueSetCodeSystemConcept](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSetCodeSystemConcept] (val x: Self) extends AnyVal {
     
     inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     

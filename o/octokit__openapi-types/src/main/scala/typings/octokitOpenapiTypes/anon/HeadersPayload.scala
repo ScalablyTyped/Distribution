@@ -20,7 +20,8 @@ object HeadersPayload {
     __obj.asInstanceOf[HeadersPayload]
   }
   
-  extension [Self <: HeadersPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadersPayload] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

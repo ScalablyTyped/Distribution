@@ -16,7 +16,8 @@ object UnmountOptions {
     __obj.asInstanceOf[UnmountOptions]
   }
   
-  extension [Self <: UnmountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnmountOptions] (val x: Self) extends AnyVal {
     
     inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
   }

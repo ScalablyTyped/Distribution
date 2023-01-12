@@ -23,7 +23,8 @@ object DescribeFindingsRequest {
     __obj.asInstanceOf[DescribeFindingsRequest]
   }
   
-  extension [Self <: DescribeFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setFindingArns(value: BatchDescribeArnList): Self = StObject.set(x, "findingArns", value.asInstanceOf[js.Any])
     

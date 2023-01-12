@@ -35,7 +35,8 @@ object QueryDslSpanQuery {
     __obj.asInstanceOf[QueryDslSpanQuery]
   }
   
-  extension [Self <: QueryDslSpanQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslSpanQuery] (val x: Self) extends AnyVal {
     
     inline def setField_masking_span(value: QueryDslSpanFieldMaskingQuery): Self = StObject.set(x, "field_masking_span", value.asInstanceOf[js.Any])
     

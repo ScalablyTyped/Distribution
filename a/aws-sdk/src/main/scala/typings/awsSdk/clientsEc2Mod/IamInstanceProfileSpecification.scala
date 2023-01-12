@@ -23,7 +23,8 @@ object IamInstanceProfileSpecification {
     __obj.asInstanceOf[IamInstanceProfileSpecification]
   }
   
-  extension [Self <: IamInstanceProfileSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IamInstanceProfileSpecification] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object BootstrapChartEventArgsBase {
     __obj.asInstanceOf[BootstrapChartEventArgsBase]
   }
   
-  extension [Self <: BootstrapChartEventArgsBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapChartEventArgsBase] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RouterLinkOptions {
     __obj.asInstanceOf[RouterLinkOptions]
   }
   
-  extension [Self <: RouterLinkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterLinkOptions] (val x: Self) extends AnyVal {
     
     inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     

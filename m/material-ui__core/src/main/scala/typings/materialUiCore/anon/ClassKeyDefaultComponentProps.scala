@@ -21,7 +21,8 @@ object ClassKeyDefaultComponentProps {
     __obj.asInstanceOf[ClassKeyDefaultComponentProps]
   }
   
-  extension [Self <: ClassKeyDefaultComponentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassKeyDefaultComponentProps] (val x: Self) extends AnyVal {
     
     inline def setClassKey(value: ButtonClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

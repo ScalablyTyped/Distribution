@@ -22,7 +22,8 @@ object AppsScriptEvent {
     __obj.asInstanceOf[AppsScriptEvent]
   }
   
-  extension [Self <: AppsScriptEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsScriptEvent] (val x: Self) extends AnyVal {
     
     inline def setAuthMode(value: AuthMode): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
     

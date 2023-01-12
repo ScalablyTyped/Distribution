@@ -36,7 +36,8 @@ object DateProfileGeneratorProps {
     __obj.asInstanceOf[DateProfileGeneratorProps]
   }
   
-  extension [Self <: DateProfileGeneratorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateProfileGeneratorProps] (val x: Self) extends AnyVal {
     
     inline def setCalendarApi(value: CalendarApi): Self = StObject.set(x, "calendarApi", value.asInstanceOf[js.Any])
     

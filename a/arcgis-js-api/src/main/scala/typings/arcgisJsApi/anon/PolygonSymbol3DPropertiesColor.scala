@@ -55,7 +55,8 @@ object PolygonSymbol3DPropertiesColor {
     __obj.asInstanceOf[PolygonSymbol3DPropertiesColor]
   }
   
-  extension [Self <: PolygonSymbol3DPropertiesColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonSymbol3DPropertiesColor] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

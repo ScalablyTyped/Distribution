@@ -23,7 +23,8 @@ object DeleteSlotTypeVersionRequest {
     __obj.asInstanceOf[DeleteSlotTypeVersionRequest]
   }
   
-  extension [Self <: DeleteSlotTypeVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSlotTypeVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: SlotTypeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

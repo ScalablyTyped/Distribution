@@ -16,7 +16,8 @@ object SensorConfig {
     __obj.asInstanceOf[SensorConfig]
   }
   
-  extension [Self <: SensorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SensorConfig] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double | auto): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
   }

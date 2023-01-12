@@ -27,7 +27,8 @@ object PKCS8ShroudedKeyBagMakeInternalValuesParams {
     __obj.asInstanceOf[PKCS8ShroudedKeyBagMakeInternalValuesParams]
   }
   
-  extension [Self <: PKCS8ShroudedKeyBagMakeInternalValuesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PKCS8ShroudedKeyBagMakeInternalValuesParams] (val x: Self) extends AnyVal {
     
     inline def setContentEncryptionAlgorithm(value: ContentEncryptionAlgorithm): Self = StObject.set(x, "contentEncryptionAlgorithm", value.asInstanceOf[js.Any])
     

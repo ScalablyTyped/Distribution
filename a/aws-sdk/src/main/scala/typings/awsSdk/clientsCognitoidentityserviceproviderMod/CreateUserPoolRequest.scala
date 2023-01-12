@@ -128,7 +128,8 @@ object CreateUserPoolRequest {
     __obj.asInstanceOf[CreateUserPoolRequest]
   }
   
-  extension [Self <: CreateUserPoolRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUserPoolRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountRecoverySetting(value: AccountRecoverySettingType): Self = StObject.set(x, "AccountRecoverySetting", value.asInstanceOf[js.Any])
     

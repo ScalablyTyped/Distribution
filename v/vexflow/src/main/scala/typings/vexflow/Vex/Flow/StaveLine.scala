@@ -81,7 +81,8 @@ object StaveLine {
          with TextVerticalPosition
   }
   
-  extension [Self <: StaveLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaveLine] (val x: Self) extends AnyVal {
     
     inline def setApplyFontStyle(value: () => Unit): Self = StObject.set(x, "applyFontStyle", js.Any.fromFunction0(value))
     

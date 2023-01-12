@@ -23,7 +23,8 @@ object UIkitParallaxOptions {
     __obj.asInstanceOf[UIkitParallaxOptions]
   }
   
-  extension [Self <: UIkitParallaxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitParallaxOptions] (val x: Self) extends AnyVal {
     
     inline def setEasing(value: Double): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     

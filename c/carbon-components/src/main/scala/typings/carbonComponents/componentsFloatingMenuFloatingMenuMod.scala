@@ -128,7 +128,8 @@ object componentsFloatingMenuFloatingMenuMod {
       __obj.asInstanceOf[FloatingMenu]
     }
     
-    extension [Self <: FloatingMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FloatingMenu] (val x: Self) extends AnyVal {
       
       inline def setHandleBlur(value: FocusEvent => Unit): Self = StObject.set(x, "handleBlur", js.Any.fromFunction1(value))
       
@@ -196,7 +197,8 @@ object componentsFloatingMenuFloatingMenuMod {
       __obj.asInstanceOf[FloatingMenuOptions]
     }
     
-    extension [Self <: FloatingMenuOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FloatingMenuOptions] (val x: Self) extends AnyVal {
       
       inline def setAttribAvoidFocusOnOpen(value: String): Self = StObject.set(x, "attribAvoidFocusOnOpen", value.asInstanceOf[js.Any])
       

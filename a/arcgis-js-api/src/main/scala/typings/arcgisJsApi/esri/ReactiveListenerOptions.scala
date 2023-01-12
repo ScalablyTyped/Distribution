@@ -21,7 +21,8 @@ object ReactiveListenerOptions {
     __obj.asInstanceOf[ReactiveListenerOptions[Target]]
   }
   
-  extension [Self <: ReactiveListenerOptions[?], Target](x: Self & ReactiveListenerOptions[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactiveListenerOptions[?], Target] (val x: Self & ReactiveListenerOptions[Target]) extends AnyVal {
     
     inline def setOnListenerAdd(value: /* target */ Target => scala.Unit): Self = StObject.set(x, "onListenerAdd", js.Any.fromFunction1(value))
     

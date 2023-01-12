@@ -43,7 +43,8 @@ object QueryResult {
     __obj.asInstanceOf[QueryResult]
   }
   
-  extension [Self <: QueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
     
     inline def setFacetResults(value: FacetResultList): Self = StObject.set(x, "FacetResults", value.asInstanceOf[js.Any])
     

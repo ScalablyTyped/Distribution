@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Arity]
     }
     
-    extension [Self <: Arity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arity] (val x: Self) extends AnyVal {
       
       inline def setArity(value: Double): Self = StObject.set(x, "arity", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Error[E, T]]
     }
     
-    extension [Self <: Error[?, ?], E, T](x: Self & (Error[E, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error[?, ?], E, T] (val x: Self & (Error[E, T])) extends AnyVal {
       
       inline def setError(value: E): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

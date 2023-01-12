@@ -17,7 +17,8 @@ object SavingsStepParameters {
     __obj.asInstanceOf[SavingsStepParameters]
   }
   
-  extension [Self <: SavingsStepParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsStepParameters] (val x: Self) extends AnyVal {
     
     inline def setReceivingAddressCount(value: Double): Self = StObject.set(x, "receivingAddressCount", value.asInstanceOf[js.Any])
   }

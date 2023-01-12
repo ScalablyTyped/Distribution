@@ -64,7 +64,8 @@ object distSrcMfaMfaSessionMod {
       __obj.asInstanceOf[SerializedMultiFactorSession]
     }
     
-    extension [Self <: SerializedMultiFactorSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedMultiFactorSession] (val x: Self) extends AnyVal {
       
       inline def setMultiFactorSession(value: IdToken): Self = StObject.set(x, "multiFactorSession", value.asInstanceOf[js.Any])
     }

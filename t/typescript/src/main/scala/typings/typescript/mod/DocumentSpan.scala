@@ -33,7 +33,8 @@ object DocumentSpan {
     __obj.asInstanceOf[DocumentSpan]
   }
   
-  extension [Self <: DocumentSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSpan] (val x: Self) extends AnyVal {
     
     inline def setContextSpan(value: TextSpan): Self = StObject.set(x, "contextSpan", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Library {
     __obj.asInstanceOf[Library]
   }
   
-  extension [Self <: Library](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Library] (val x: Self) extends AnyVal {
     
     inline def setNode(value: js.Array[Attr | Input | Name | Op | AttrInput]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

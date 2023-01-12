@@ -18,7 +18,8 @@ object CreateThreatIntelSetResponse {
     __obj.asInstanceOf[CreateThreatIntelSetResponse]
   }
   
-  extension [Self <: CreateThreatIntelSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateThreatIntelSetResponse] (val x: Self) extends AnyVal {
     
     inline def setThreatIntelSetId(value: String): Self = StObject.set(x, "ThreatIntelSetId", value.asInstanceOf[js.Any])
   }

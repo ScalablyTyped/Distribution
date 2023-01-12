@@ -90,7 +90,8 @@ object SignedTransactionWithProof {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: typings.libraCore.`lib@GeneratedEventsPbMod`.EventsList.AsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       

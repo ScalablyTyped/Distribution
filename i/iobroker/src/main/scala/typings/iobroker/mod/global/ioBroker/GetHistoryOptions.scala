@@ -46,7 +46,8 @@ object GetHistoryOptions {
     __obj.asInstanceOf[GetHistoryOptions]
   }
   
-  extension [Self <: GetHistoryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHistoryOptions] (val x: Self) extends AnyVal {
     
     inline def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     

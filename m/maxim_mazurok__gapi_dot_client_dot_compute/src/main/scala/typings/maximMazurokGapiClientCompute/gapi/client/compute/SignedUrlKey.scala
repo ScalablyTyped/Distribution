@@ -23,7 +23,8 @@ object SignedUrlKey {
     __obj.asInstanceOf[SignedUrlKey]
   }
   
-  extension [Self <: SignedUrlKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedUrlKey] (val x: Self) extends AnyVal {
     
     inline def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     

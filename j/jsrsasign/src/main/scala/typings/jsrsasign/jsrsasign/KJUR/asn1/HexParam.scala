@@ -15,7 +15,8 @@ object HexParam {
     __obj.asInstanceOf[HexParam]
   }
   
-  extension [Self <: HexParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HexParam] (val x: Self) extends AnyVal {
     
     inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
   }

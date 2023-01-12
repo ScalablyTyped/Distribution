@@ -20,7 +20,8 @@ object ScaleToken {
     __obj.asInstanceOf[ScaleToken]
   }
   
-  extension [Self <: ScaleToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleToken] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: `8`): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
   }

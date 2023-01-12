@@ -27,7 +27,8 @@ object CssDocumentAST {
     __obj.asInstanceOf[CssDocumentAST]
   }
   
-  extension [Self <: CssDocumentAST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssDocumentAST] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

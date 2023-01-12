@@ -79,7 +79,8 @@ object eventsEventMod {
       __obj.asInstanceOf[BaseEvent]
     }
     
-    extension [Self <: BaseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseEvent] (val x: Self) extends AnyVal {
       
       inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       

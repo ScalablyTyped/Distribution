@@ -19,7 +19,8 @@ object TransformStream {
     __obj.asInstanceOf[TransformStream[I, O]]
   }
   
-  extension [Self <: TransformStream[?, ?], I, O](x: Self & (TransformStream[I, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformStream[?, ?], I, O] (val x: Self & (TransformStream[I, O])) extends AnyVal {
     
     inline def setReadable(value: ReadableStream[O]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     

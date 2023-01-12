@@ -169,7 +169,8 @@ object SchemeFn {
     __obj.asInstanceOf[SchemeFn]
   }
   
-  extension [Self <: SchemeFn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemeFn] (val x: Self) extends AnyVal {
     
     inline def setAbs(value: SchemeOperator): Self = StObject.set(x, "abs", value.asInstanceOf[js.Any])
     

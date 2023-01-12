@@ -60,7 +60,8 @@ object triggerCognitoUserPoolTriggerCustomEmailSenderMod {
       __obj.asInstanceOf[BaseCustomEmailSenderTriggerEvent[T]]
     }
     
-    extension [Self <: BaseCustomEmailSenderTriggerEvent[?], T /* <: String */](x: Self & BaseCustomEmailSenderTriggerEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCustomEmailSenderTriggerEvent[?], T /* <: String */] (val x: Self & BaseCustomEmailSenderTriggerEvent[T]) extends AnyVal {
       
       inline def setRequest(value: ClientMetadata): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
@@ -86,7 +87,8 @@ object triggerCognitoUserPoolTriggerCustomEmailSenderMod {
       __obj.asInstanceOf[CustomEmailSenderAccountTakeOverNotificationTriggerEvent]
     }
     
-    extension [Self <: CustomEmailSenderAccountTakeOverNotificationTriggerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomEmailSenderAccountTakeOverNotificationTriggerEvent] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: Code): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
@@ -132,7 +134,8 @@ object triggerCognitoUserPoolTriggerCustomEmailSenderMod {
       __obj.asInstanceOf[CustomEmailSenderAccountTakeOverNotificationUserAttributes]
     }
     
-    extension [Self <: CustomEmailSenderAccountTakeOverNotificationUserAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomEmailSenderAccountTakeOverNotificationUserAttributes] (val x: Self) extends AnyVal {
       
       inline def setACCOUNT_TAKE_OVER_ACTION(value: AccountTakeOverActionType): Self = StObject.set(x, "ACCOUNT_TAKE_OVER_ACTION", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object Facet {
     __obj.asInstanceOf[Facet]
   }
   
-  extension [Self <: Facet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Facet] (val x: Self) extends AnyVal {
     
     inline def setFacet(value: String): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
     

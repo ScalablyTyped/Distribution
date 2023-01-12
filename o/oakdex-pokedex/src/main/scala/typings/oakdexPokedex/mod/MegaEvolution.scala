@@ -40,7 +40,8 @@ object MegaEvolution {
     __obj.asInstanceOf[MegaEvolution]
   }
   
-  extension [Self <: MegaEvolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MegaEvolution] (val x: Self) extends AnyVal {
     
     inline def setAbility(value: String): Self = StObject.set(x, "ability", value.asInstanceOf[js.Any])
     

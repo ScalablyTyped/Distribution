@@ -44,7 +44,8 @@ object AutosuggestPropsMultiSection {
     __obj.asInstanceOf[AutosuggestPropsMultiSection[TSuggestion, TSection]]
   }
   
-  extension [Self <: AutosuggestPropsMultiSection[?, ?], TSuggestion, TSection](x: Self & (AutosuggestPropsMultiSection[TSuggestion, TSection])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutosuggestPropsMultiSection[?, ?], TSuggestion, TSection] (val x: Self & (AutosuggestPropsMultiSection[TSuggestion, TSection])) extends AnyVal {
     
     inline def setGetSectionSuggestions(value: TSection => js.Array[TSuggestion]): Self = StObject.set(x, "getSectionSuggestions", js.Any.fromFunction1(value))
     

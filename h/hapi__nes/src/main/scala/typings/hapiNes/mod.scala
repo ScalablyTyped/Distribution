@@ -61,7 +61,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NesClassExports]
     }
     
-    extension [Self <: NesClassExports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NesClassExports] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Instantiable): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
     }
@@ -78,7 +79,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ServerBroadcastOptions]
     }
     
-    extension [Self <: ServerBroadcastOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerBroadcastOptions] (val x: Self) extends AnyVal {
       
       inline def setUser(value: Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
@@ -97,7 +99,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ServerEachSocketOptions]
     }
     
-    extension [Self <: ServerEachSocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerEachSocketOptions] (val x: Self) extends AnyVal {
       
       inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ServerPublishOptions]
     }
     
-    extension [Self <: ServerPublishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerPublishOptions] (val x: Self) extends AnyVal {
       
       inline def setInternal(value: Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
       
@@ -171,7 +175,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ServerSubscriptionOptions]
     }
     
-    extension [Self <: ServerSubscriptionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerSubscriptionOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Boolean | ServerSubscriptionOptionsAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -218,7 +223,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ServerSubscriptionOptionsAuthOptions]
     }
     
-    extension [Self <: ServerSubscriptionOptionsAuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerSubscriptionOptionsAuthOptions] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: user | app | any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
@@ -255,7 +261,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ServerSubscriptionOptionsFilterOptions]
     }
     
-    extension [Self <: ServerSubscriptionOptionsFilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerSubscriptionOptionsFilterOptions] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
@@ -300,7 +307,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Socket]
     }
     
-    extension [Self <: Socket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Socket] (val x: Self) extends AnyVal {
       
       inline def setApp(value: js.Object): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -333,7 +341,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SocketAuthObject]
     }
     
-    extension [Self <: SocketAuthObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketAuthObject] (val x: Self) extends AnyVal {
       
       inline def setArtifacts(value: Any): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
       
@@ -362,7 +371,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       }

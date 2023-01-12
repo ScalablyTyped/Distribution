@@ -21,7 +21,8 @@ object typesInvalidImportTokenExceptionMod {
       __obj.asInstanceOf[InvalidImportTokenException]
     }
     
-    extension [Self <: InvalidImportTokenException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidImportTokenException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidImportTokenException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object typesInvalidImportTokenExceptionMod {
       __obj.asInstanceOf[InvalidImportTokenExceptionDetails]
     }
     
-    extension [Self <: InvalidImportTokenExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidImportTokenExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

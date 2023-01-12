@@ -23,7 +23,8 @@ object AudioChannelMapping {
     __obj.asInstanceOf[AudioChannelMapping]
   }
   
-  extension [Self <: AudioChannelMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioChannelMapping] (val x: Self) extends AnyVal {
     
     inline def setInputChannelLevels(value: listOfInputChannelLevel): Self = StObject.set(x, "InputChannelLevels", value.asInstanceOf[js.Any])
     

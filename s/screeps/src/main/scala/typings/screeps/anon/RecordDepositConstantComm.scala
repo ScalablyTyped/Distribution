@@ -162,7 +162,8 @@ object RecordDepositConstantComm {
     __obj.asInstanceOf[RecordDepositConstantComm]
   }
   
-  extension [Self <: RecordDepositConstantComm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordDepositConstantComm] (val x: Self) extends AnyVal {
     
     inline def setAlloy(value: Double): Self = StObject.set(x, "alloy", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object MaxPool3DGradInputs {
     __obj.asInstanceOf[MaxPool3DGradInputs]
   }
   
-  extension [Self <: MaxPool3DGradInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxPool3DGradInputs] (val x: Self) extends AnyVal {
     
     inline def setDy(value: scala.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     

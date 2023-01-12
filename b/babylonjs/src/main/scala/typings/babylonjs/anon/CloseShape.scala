@@ -45,7 +45,8 @@ object CloseShape {
     __obj.asInstanceOf[CloseShape]
   }
   
-  extension [Self <: CloseShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseShape] (val x: Self) extends AnyVal {
     
     inline def setAdjustFrame(value: Boolean): Self = StObject.set(x, "adjustFrame", value.asInstanceOf[js.Any])
     

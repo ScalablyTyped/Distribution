@@ -23,7 +23,8 @@ object GroupConfigurationItem {
     __obj.asInstanceOf[GroupConfigurationItem]
   }
   
-  extension [Self <: GroupConfigurationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupConfigurationItem] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: GroupParameterList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     

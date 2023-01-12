@@ -23,7 +23,8 @@ object ListTagOptionsOutput {
     __obj.asInstanceOf[ListTagOptionsOutput]
   }
   
-  extension [Self <: ListTagOptionsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagOptionsOutput] (val x: Self) extends AnyVal {
     
     inline def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     

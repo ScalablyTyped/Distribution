@@ -114,7 +114,8 @@ object srcJsonSchemaInterfaceMod {
       __obj.asInstanceOf[PromptDefinition]
     }
     
-    extension [Self <: PromptDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptDefinition] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: java.lang.String | js.Array[java.lang.String] | Double | Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -184,7 +185,8 @@ object srcJsonSchemaInterfaceMod {
       __obj.asInstanceOf[SchemaFormat]
     }
     
-    extension [Self <: SchemaFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaFormat] (val x: Self) extends AnyVal {
       
       inline def setFormatter(value: SchemaFormatter): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
@@ -369,7 +371,8 @@ object srcJsonSchemaInterfaceMod {
       __obj.asInstanceOf[SchemaValidatorError]
     }
     
-    extension [Self <: SchemaValidatorError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaValidatorError] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -424,7 +427,8 @@ object srcJsonSchemaInterfaceMod {
       __obj.asInstanceOf[SchemaValidatorOptions]
     }
     
-    extension [Self <: SchemaValidatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaValidatorOptions] (val x: Self) extends AnyVal {
       
       inline def setApplyPostTransforms(value: Boolean): Self = StObject.set(x, "applyPostTransforms", value.asInstanceOf[js.Any])
       
@@ -455,7 +459,8 @@ object srcJsonSchemaInterfaceMod {
       __obj.asInstanceOf[SchemaValidatorResult]
     }
     
-    extension [Self <: SchemaValidatorResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaValidatorResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: JsonValue): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

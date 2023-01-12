@@ -25,7 +25,8 @@ object distLibParseDateMod {
       __obj.asInstanceOf[MonthAndYear]
     }
     
-    extension [Self <: MonthAndYear](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonthAndYear] (val x: Self) extends AnyVal {
       
       inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       

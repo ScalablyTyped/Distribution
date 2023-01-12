@@ -16,7 +16,8 @@ object DatafeedsFetchNowResponse {
     __obj.asInstanceOf[DatafeedsFetchNowResponse]
   }
   
-  extension [Self <: DatafeedsFetchNowResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatafeedsFetchNowResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

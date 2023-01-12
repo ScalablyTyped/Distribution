@@ -33,7 +33,8 @@ object libTypescriptMiscMod {
       __obj.asInstanceOf[CipherKeyValue]
     }
     
-    extension [Self <: CipherKeyValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CipherKeyValue] (val x: Self) extends AnyVal {
       
       inline def setAskOnDecrypt(value: Boolean): Self = StObject.set(x, "askOnDecrypt", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object libTypescriptMiscMod {
       __obj.asInstanceOf[CipheredValue]
     }
     
-    extension [Self <: CipheredValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CipheredValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -95,7 +97,8 @@ object libTypescriptMiscMod {
       __obj.asInstanceOf[CustomMessage]
     }
     
-    extension [Self <: CustomMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomMessage] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: Any => js.Promise[Params]): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -124,7 +127,8 @@ object libTypescriptMiscMod {
       __obj.asInstanceOf[Login]
     }
     
-    extension [Self <: Login](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Login] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -147,7 +151,8 @@ object libTypescriptMiscMod {
       __obj.asInstanceOf[LoginChallenge]
     }
     
-    extension [Self <: LoginChallenge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginChallenge] (val x: Self) extends AnyVal {
       
       inline def setChallengeHidden(value: String): Self = StObject.set(x, "challengeHidden", value.asInstanceOf[js.Any])
       
@@ -168,7 +173,8 @@ object libTypescriptMiscMod {
       __obj.asInstanceOf[RequestLoginAsync]
     }
     
-    extension [Self <: RequestLoginAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestLoginAsync] (val x: Self) extends AnyVal {
       
       inline def setAsyncChallenge(value: Boolean): Self = StObject.set(x, "asyncChallenge", value.asInstanceOf[js.Any])
       
@@ -191,7 +197,8 @@ object libTypescriptMiscMod {
       __obj.asInstanceOf[SetProxy]
     }
     
-    extension [Self <: SetProxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetProxy] (val x: Self) extends AnyVal {
       
       inline def setProxy(value: Proxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       

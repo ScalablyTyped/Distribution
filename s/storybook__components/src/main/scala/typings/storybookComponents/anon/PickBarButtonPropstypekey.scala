@@ -645,7 +645,8 @@ object PickBarButtonPropstypekey {
     __obj.asInstanceOf[PickBarButtonPropstypekey]
   }
   
-  extension [Self <: PickBarButtonPropstypekey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickBarButtonPropstypekey] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

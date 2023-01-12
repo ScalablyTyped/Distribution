@@ -23,7 +23,8 @@ object SubDomainSetting {
     __obj.asInstanceOf[SubDomainSetting]
   }
   
-  extension [Self <: SubDomainSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubDomainSetting] (val x: Self) extends AnyVal {
     
     inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetSlotTypeRequest {
     __obj.asInstanceOf[GetSlotTypeRequest]
   }
   
-  extension [Self <: GetSlotTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSlotTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: SlotTypeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

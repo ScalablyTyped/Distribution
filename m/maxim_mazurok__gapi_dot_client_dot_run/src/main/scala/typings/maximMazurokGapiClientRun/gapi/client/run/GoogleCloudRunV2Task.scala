@@ -123,7 +123,8 @@ object GoogleCloudRunV2Task {
     __obj.asInstanceOf[GoogleCloudRunV2Task]
   }
   
-  extension [Self <: GoogleCloudRunV2Task](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2Task] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

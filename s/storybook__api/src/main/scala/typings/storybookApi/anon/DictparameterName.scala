@@ -24,7 +24,8 @@ object DictparameterName {
     __obj.asInstanceOf[DictparameterName]
   }
   
-  extension [Self <: DictparameterName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictparameterName] (val x: Self) extends AnyVal {
     
     inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
     

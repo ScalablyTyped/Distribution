@@ -38,7 +38,8 @@ object Cycle {
     __obj.asInstanceOf[Cycle]
   }
   
-  extension [Self <: Cycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cycle] (val x: Self) extends AnyVal {
     
     inline def setCycle(value: Double): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     

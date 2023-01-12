@@ -19,7 +19,8 @@ object FinderPatternInfo {
     __obj.asInstanceOf[FinderPatternInfo]
   }
   
-  extension [Self <: FinderPatternInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinderPatternInfo] (val x: Self) extends AnyVal {
     
     inline def setBottomLeft(value: AlignmentPattern): Self = StObject.set(x, "BottomLeft", value.asInstanceOf[js.Any])
     

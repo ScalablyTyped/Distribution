@@ -23,7 +23,8 @@ object DescribeRecoverySnapshotsResponse {
     __obj.asInstanceOf[DescribeRecoverySnapshotsResponse]
   }
   
-  extension [Self <: DescribeRecoverySnapshotsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRecoverySnapshotsResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: RecoverySnapshotsList): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

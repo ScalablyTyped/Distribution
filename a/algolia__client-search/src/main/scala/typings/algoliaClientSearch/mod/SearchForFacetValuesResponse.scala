@@ -28,7 +28,8 @@ object SearchForFacetValuesResponse {
     __obj.asInstanceOf[SearchForFacetValuesResponse]
   }
   
-  extension [Self <: SearchForFacetValuesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchForFacetValuesResponse] (val x: Self) extends AnyVal {
     
     inline def setExhaustiveFacetsCount(value: Boolean): Self = StObject.set(x, "exhaustiveFacetsCount", value.asInstanceOf[js.Any])
     

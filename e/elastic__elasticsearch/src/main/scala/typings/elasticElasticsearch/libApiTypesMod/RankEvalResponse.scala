@@ -24,7 +24,8 @@ object RankEvalResponse {
     __obj.asInstanceOf[RankEvalResponse]
   }
   
-  extension [Self <: RankEvalResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RankEvalResponse] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: Record[Id, RankEvalRankEvalMetricDetail]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

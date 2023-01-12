@@ -38,7 +38,8 @@ object ProjectSummary {
     __obj.asInstanceOf[ProjectSummary]
   }
   
-  extension [Self <: ProjectSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

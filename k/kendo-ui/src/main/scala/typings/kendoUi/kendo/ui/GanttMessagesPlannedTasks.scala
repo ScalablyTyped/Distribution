@@ -27,7 +27,8 @@ object GanttMessagesPlannedTasks {
     __obj.asInstanceOf[GanttMessagesPlannedTasks]
   }
   
-  extension [Self <: GanttMessagesPlannedTasks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttMessagesPlannedTasks] (val x: Self) extends AnyVal {
     
     inline def setDays(value: String): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     

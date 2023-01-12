@@ -27,7 +27,8 @@ object distTypesOnStageReactionsDistComponentsThumbDownSmallMod extends Shortcut
       __obj.asInstanceOf[ThumbDownSmallProps]
     }
     
-    extension [Self <: ThumbDownSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThumbDownSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

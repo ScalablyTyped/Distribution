@@ -38,7 +38,8 @@ object OpeningRouteKeys {
     __obj.asInstanceOf[OpeningRouteKeys]
   }
   
-  extension [Self <: OpeningRouteKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpeningRouteKeys] (val x: Self) extends AnyVal {
     
     inline def setClosingRouteKeys(value: js.Array[String]): Self = StObject.set(x, "closingRouteKeys", value.asInstanceOf[js.Any])
     

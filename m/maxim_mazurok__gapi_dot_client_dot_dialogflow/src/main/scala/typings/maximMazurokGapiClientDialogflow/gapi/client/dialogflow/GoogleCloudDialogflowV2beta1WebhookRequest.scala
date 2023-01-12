@@ -31,7 +31,8 @@ object GoogleCloudDialogflowV2beta1WebhookRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1WebhookRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1WebhookRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1WebhookRequest] (val x: Self) extends AnyVal {
     
     inline def setAlternativeQueryResults(value: js.Array[GoogleCloudDialogflowV2beta1QueryResult]): Self = StObject.set(x, "alternativeQueryResults", value.asInstanceOf[js.Any])
     

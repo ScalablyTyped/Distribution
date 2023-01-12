@@ -133,7 +133,8 @@ object libPersonalizationMenuButtonMod {
       __obj.asInstanceOf[MenuButton]
     }
     
-    extension [Self <: MenuButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuButton] (val x: Self) extends AnyVal {
       
       inline def setClickAction(value: Any): Self = StObject.set(x, "clickAction", value.asInstanceOf[js.Any])
       

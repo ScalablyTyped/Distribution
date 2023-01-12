@@ -86,7 +86,8 @@ object typesServiceMod {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object typesServiceMod {
       __obj.asInstanceOf[UnmarshalledService]
     }
     
-    extension [Self <: UnmarshalledService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledService] (val x: Self) extends AnyVal {
       
       inline def setDurationHistogram(value: js.Array[UnmarshalledHistogramEntry]): Self = StObject.set(x, "DurationHistogram", value.asInstanceOf[js.Any])
       

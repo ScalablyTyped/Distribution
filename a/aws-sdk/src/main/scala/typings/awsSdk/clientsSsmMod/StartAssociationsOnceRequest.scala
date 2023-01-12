@@ -18,7 +18,8 @@ object StartAssociationsOnceRequest {
     __obj.asInstanceOf[StartAssociationsOnceRequest]
   }
   
-  extension [Self <: StartAssociationsOnceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartAssociationsOnceRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationIds(value: AssociationIdList): Self = StObject.set(x, "AssociationIds", value.asInstanceOf[js.Any])
     

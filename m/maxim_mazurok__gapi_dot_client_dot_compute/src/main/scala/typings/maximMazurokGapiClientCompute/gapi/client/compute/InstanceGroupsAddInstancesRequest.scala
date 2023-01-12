@@ -16,7 +16,8 @@ object InstanceGroupsAddInstancesRequest {
     __obj.asInstanceOf[InstanceGroupsAddInstancesRequest]
   }
   
-  extension [Self <: InstanceGroupsAddInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupsAddInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: js.Array[InstanceReference]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     

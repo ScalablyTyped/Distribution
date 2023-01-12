@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[ChordGroup]
     }
     
-    extension [Self <: ChordGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChordGroup] (val x: Self) extends AnyVal {
       
       inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object mod {
       __obj.asInstanceOf[ChordSubgroup]
     }
     
-    extension [Self <: ChordSubgroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChordSubgroup] (val x: Self) extends AnyVal {
       
       inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
@@ -196,7 +198,8 @@ object mod {
       __obj.asInstanceOf[Chord_]
     }
     
-    extension [Self <: Chord_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chord_] (val x: Self) extends AnyVal {
       
       inline def setSource(value: ChordSubgroup): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -434,7 +437,8 @@ object mod {
       __obj.asInstanceOf[RibbonSubgroup]
     }
     
-    extension [Self <: RibbonSubgroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RibbonSubgroup] (val x: Self) extends AnyVal {
       
       inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
@@ -463,7 +467,8 @@ object mod {
       __obj.asInstanceOf[Ribbon_]
     }
     
-    extension [Self <: Ribbon_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ribbon_] (val x: Self) extends AnyVal {
       
       inline def setSource(value: RibbonSubgroup): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       

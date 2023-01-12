@@ -67,7 +67,8 @@ object ProductView {
     __obj.asInstanceOf[ProductView]
   }
   
-  extension [Self <: ProductView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductView] (val x: Self) extends AnyVal {
     
     inline def setAggregatedDestinationStatus(value: String): Self = StObject.set(x, "aggregatedDestinationStatus", value.asInstanceOf[js.Any])
     

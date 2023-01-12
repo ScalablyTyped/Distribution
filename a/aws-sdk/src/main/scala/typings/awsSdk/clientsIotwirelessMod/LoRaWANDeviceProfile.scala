@@ -108,7 +108,8 @@ object LoRaWANDeviceProfile {
     __obj.asInstanceOf[LoRaWANDeviceProfile]
   }
   
-  extension [Self <: LoRaWANDeviceProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANDeviceProfile] (val x: Self) extends AnyVal {
     
     inline def setClassBTimeout(value: ClassBTimeout): Self = StObject.set(x, "ClassBTimeout", value.asInstanceOf[js.Any])
     

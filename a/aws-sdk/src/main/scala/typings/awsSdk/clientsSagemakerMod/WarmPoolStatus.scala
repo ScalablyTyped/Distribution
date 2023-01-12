@@ -28,7 +28,8 @@ object WarmPoolStatus {
     __obj.asInstanceOf[WarmPoolStatus]
   }
   
-  extension [Self <: WarmPoolStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WarmPoolStatus] (val x: Self) extends AnyVal {
     
     inline def setResourceRetainedBillableTimeInSeconds(value: ResourceRetainedBillableTimeInSeconds): Self = StObject.set(x, "ResourceRetainedBillableTimeInSeconds", value.asInstanceOf[js.Any])
     

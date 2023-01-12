@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[DatastoreConfigidentityun]
     }
     
-    extension [Self <: DatastoreConfigidentityun](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatastoreConfigidentityun] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Extend]
     }
     
-    extension [Self <: Extend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extend] (val x: Self) extends AnyVal {
       
       inline def setExtend(value: CollectionDefinition => CollectionClass): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     }
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: Limit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       

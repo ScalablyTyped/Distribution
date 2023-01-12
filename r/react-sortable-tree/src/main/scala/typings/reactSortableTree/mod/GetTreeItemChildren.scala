@@ -29,7 +29,8 @@ object GetTreeItemChildren {
     __obj.asInstanceOf[GetTreeItemChildren[T]]
   }
   
-  extension [Self <: GetTreeItemChildren[?], T](x: Self & GetTreeItemChildren[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTreeItemChildren[?], T] (val x: Self & GetTreeItemChildren[T]) extends AnyVal {
     
     inline def setDone(value: js.Array[TreeItem[T]] => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
     

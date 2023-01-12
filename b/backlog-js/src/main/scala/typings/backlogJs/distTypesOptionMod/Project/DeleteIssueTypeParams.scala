@@ -15,7 +15,8 @@ object DeleteIssueTypeParams {
     __obj.asInstanceOf[DeleteIssueTypeParams]
   }
   
-  extension [Self <: DeleteIssueTypeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIssueTypeParams] (val x: Self) extends AnyVal {
     
     inline def setSubstituteIssueTypeId(value: Double): Self = StObject.set(x, "substituteIssueTypeId", value.asInstanceOf[js.Any])
   }

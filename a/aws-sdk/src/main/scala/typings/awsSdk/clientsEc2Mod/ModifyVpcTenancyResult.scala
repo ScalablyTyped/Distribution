@@ -18,7 +18,8 @@ object ModifyVpcTenancyResult {
     __obj.asInstanceOf[ModifyVpcTenancyResult]
   }
   
-  extension [Self <: ModifyVpcTenancyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyVpcTenancyResult] (val x: Self) extends AnyVal {
     
     inline def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
     

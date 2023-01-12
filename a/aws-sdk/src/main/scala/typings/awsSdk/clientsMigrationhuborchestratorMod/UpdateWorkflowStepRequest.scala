@@ -73,7 +73,8 @@ object UpdateWorkflowStepRequest {
     __obj.asInstanceOf[UpdateWorkflowStepRequest]
   }
   
-  extension [Self <: UpdateWorkflowStepRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWorkflowStepRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: StepDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object LokiConstructorOptions {
     __obj.asInstanceOf[LokiConstructorOptions]
   }
   
-  extension [Self <: LokiConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LokiConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setEnv(value: NATIVESCRIPT | NODEJS | CORDOVA | BROWSER | NA): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

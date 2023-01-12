@@ -52,7 +52,8 @@ object OMathNary {
     __obj.asInstanceOf[OMathNary]
   }
   
-  extension [Self <: OMathNary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMathNary] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

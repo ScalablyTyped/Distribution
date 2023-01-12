@@ -53,7 +53,8 @@ object XDataInterpreter {
     __obj.asInstanceOf[XDataInterpreter]
   }
   
-  extension [Self <: XDataInterpreter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataInterpreter] (val x: Self) extends AnyVal {
     
     inline def setInterpretDataSource(value: (XDataSource, SeqEquiv[PropertyValue], SeqEquiv[XDataSeries]) => InterpretedData): Self = StObject.set(x, "interpretDataSource", js.Any.fromFunction3(value))
     

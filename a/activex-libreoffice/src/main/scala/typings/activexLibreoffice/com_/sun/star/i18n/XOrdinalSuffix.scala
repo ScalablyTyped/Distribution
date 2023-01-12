@@ -39,7 +39,8 @@ object XOrdinalSuffix {
     __obj.asInstanceOf[XOrdinalSuffix]
   }
   
-  extension [Self <: XOrdinalSuffix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XOrdinalSuffix] (val x: Self) extends AnyVal {
     
     inline def setGetOrdinalSuffix(value: (Double, Locale) => SafeArray[String]): Self = StObject.set(x, "getOrdinalSuffix", js.Any.fromFunction2(value))
   }

@@ -21,7 +21,8 @@ object GoogleCloudRecommenderV1RecommendationStateInfo {
     __obj.asInstanceOf[GoogleCloudRecommenderV1RecommendationStateInfo]
   }
   
-  extension [Self <: GoogleCloudRecommenderV1RecommendationStateInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommenderV1RecommendationStateInfo] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

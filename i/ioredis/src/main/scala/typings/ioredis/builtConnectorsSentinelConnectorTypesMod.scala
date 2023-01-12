@@ -51,7 +51,8 @@ object builtConnectorsSentinelConnectorTypesMod {
       __obj.asInstanceOf[Sentinel]
     }
     
-    extension [Self <: Sentinel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sentinel] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: PartialSentinelAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object builtConnectorsSentinelConnectorTypesMod {
       __obj.asInstanceOf[SentinelAddress]
     }
     
-    extension [Self <: SentinelAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentinelAddress] (val x: Self) extends AnyVal {
       
       inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       

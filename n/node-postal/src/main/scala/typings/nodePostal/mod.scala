@@ -113,7 +113,8 @@ object mod {
       __obj.asInstanceOf[PostalResult]
     }
     
-    extension [Self <: PostalResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostalResult] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: PostalLabels): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

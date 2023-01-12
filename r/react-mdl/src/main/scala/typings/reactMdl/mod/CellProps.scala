@@ -40,7 +40,8 @@ object CellProps {
     __obj.asInstanceOf[CellProps]
   }
   
-  extension [Self <: CellProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

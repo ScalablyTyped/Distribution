@@ -52,7 +52,8 @@ object typingsParserParserConfigMod {
       __obj.asInstanceOf[ParserConfig]
     }
     
-    extension [Self <: ParserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserConfig] (val x: Self) extends AnyVal {
       
       inline def setArrayColumnSeparator(value: Comma | Semicolon): Self = StObject.set(x, "arrayColumnSeparator", value.asInstanceOf[js.Any])
       

@@ -713,7 +713,8 @@ object mod {
       __obj.asInstanceOf[ContentHash]
     }
     
-    extension [Self <: ContentHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentHash] (val x: Self) extends AnyVal {
       
       inline def setDecoded(value: String): Self = StObject.set(x, "decoded", value.asInstanceOf[js.Any])
       

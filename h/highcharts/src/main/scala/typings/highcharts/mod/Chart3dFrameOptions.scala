@@ -53,7 +53,8 @@ object Chart3dFrameOptions {
     __obj.asInstanceOf[Chart3dFrameOptions]
   }
   
-  extension [Self <: Chart3dFrameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chart3dFrameOptions] (val x: Self) extends AnyVal {
     
     inline def setBack(value: Chart3dFrameBackOptions): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     

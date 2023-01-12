@@ -15,7 +15,8 @@ object Parseable {
     __obj.asInstanceOf[Parseable]
   }
   
-  extension [Self <: Parseable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parseable] (val x: Self) extends AnyVal {
     
     inline def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     

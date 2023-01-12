@@ -66,7 +66,8 @@ object libCommonReferenceMod {
       __obj.asInstanceOf[ReferencesMiddleware]
     }
     
-    extension [Self <: ReferencesMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferencesMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideReferences(
         value: js.ThisFunction5[

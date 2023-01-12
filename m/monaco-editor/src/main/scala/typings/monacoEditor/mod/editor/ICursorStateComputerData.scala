@@ -29,7 +29,8 @@ object ICursorStateComputerData {
     __obj.asInstanceOf[ICursorStateComputerData]
   }
   
-  extension [Self <: ICursorStateComputerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICursorStateComputerData] (val x: Self) extends AnyVal {
     
     inline def setGetInverseEditOperations(value: () => js.Array[IValidEditOperation]): Self = StObject.set(x, "getInverseEditOperations", js.Any.fromFunction0(value))
     

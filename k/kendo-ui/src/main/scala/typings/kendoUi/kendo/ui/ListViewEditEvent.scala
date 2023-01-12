@@ -21,7 +21,8 @@ object ListViewEditEvent {
     __obj.asInstanceOf[ListViewEditEvent]
   }
   
-  extension [Self <: ListViewEditEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListViewEditEvent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

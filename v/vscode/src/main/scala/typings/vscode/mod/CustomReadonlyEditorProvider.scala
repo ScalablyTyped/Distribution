@@ -54,7 +54,8 @@ object CustomReadonlyEditorProvider {
     __obj.asInstanceOf[CustomReadonlyEditorProvider[T]]
   }
   
-  extension [Self <: CustomReadonlyEditorProvider[?], T /* <: CustomDocument */](x: Self & CustomReadonlyEditorProvider[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomReadonlyEditorProvider[?], T /* <: CustomDocument */] (val x: Self & CustomReadonlyEditorProvider[T]) extends AnyVal {
     
     inline def setOpenCustomDocument(value: (Uri, CustomDocumentOpenContext, CancellationToken) => Thenable[T] | T): Self = StObject.set(x, "openCustomDocument", js.Any.fromFunction3(value))
     

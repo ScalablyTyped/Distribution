@@ -39,7 +39,8 @@ object distTypesRadarGridLabelsMod {
       __obj.asInstanceOf[RadarGridLabelsProps]
     }
     
-    extension [Self <: RadarGridLabelsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadarGridLabelsProps] (val x: Self) extends AnyVal {
       
       inline def setAngles(value: js.Array[Double]): Self = StObject.set(x, "angles", value.asInstanceOf[js.Any])
       

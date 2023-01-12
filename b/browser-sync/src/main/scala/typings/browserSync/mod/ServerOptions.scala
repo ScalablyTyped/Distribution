@@ -36,7 +36,8 @@ object ServerOptions {
     __obj.asInstanceOf[ServerOptions]
   }
   
-  extension [Self <: ServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseDir(value: String | js.Array[String]): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
     

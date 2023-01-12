@@ -19,7 +19,8 @@ object ToolConfig {
     __obj.asInstanceOf[ToolConfig]
   }
   
-  extension [Self <: ToolConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolConfig] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

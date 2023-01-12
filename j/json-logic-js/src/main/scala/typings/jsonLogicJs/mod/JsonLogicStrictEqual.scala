@@ -20,7 +20,8 @@ object JsonLogicStrictEqual {
     __obj.asInstanceOf[JsonLogicStrictEqual]
   }
   
-  extension [Self <: JsonLogicStrictEqual](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicStrictEqual] (val x: Self) extends AnyVal {
     
     inline def setEqualssignEqualssignEqualssign(value: js.Tuple2[Any, Any]): Self = StObject.set(x, "===", value.asInstanceOf[js.Any])
   }

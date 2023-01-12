@@ -37,7 +37,8 @@ object InvalidEvent {
     __obj.asInstanceOf[InvalidEvent[T]]
   }
   
-  extension [Self <: InvalidEvent[?], T](x: Self & InvalidEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidEvent[?], T] (val x: Self & InvalidEvent[T]) extends AnyVal {
     
     inline def setTarget(value: EventTarget & T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

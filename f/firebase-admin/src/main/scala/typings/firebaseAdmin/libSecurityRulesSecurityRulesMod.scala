@@ -224,7 +224,8 @@ object libSecurityRulesSecurityRulesMod {
       __obj.asInstanceOf[RulesFile]
     }
     
-    extension [Self <: RulesFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RulesFile] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object libSecurityRulesSecurityRulesMod {
       __obj.asInstanceOf[RulesetMetadata]
     }
     
-    extension [Self <: RulesetMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RulesetMetadata] (val x: Self) extends AnyVal {
       
       inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       

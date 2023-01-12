@@ -17,7 +17,8 @@ object FieldValidation {
     __obj.asInstanceOf[FieldValidation]
   }
   
-  extension [Self <: FieldValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldValidation] (val x: Self) extends AnyVal {
     
     inline def setAddError(value: String => Unit): Self = StObject.set(x, "addError", js.Any.fromFunction1(value))
     

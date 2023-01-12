@@ -23,7 +23,8 @@ object ListNode {
     __obj.asInstanceOf[ListNode]
   }
   
-  extension [Self <: ListNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNode] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

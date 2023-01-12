@@ -61,7 +61,8 @@ object ReactNativeFirebase {
       __obj.asInstanceOf[FirebaseApp]
     }
     
-    extension [Self <: FirebaseApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
@@ -101,7 +102,8 @@ object ReactNativeFirebase {
       __obj.asInstanceOf[FirebaseAppConfig]
     }
     
-    extension [Self <: FirebaseAppConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseAppConfig] (val x: Self) extends AnyVal {
       
       inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object ReactNativeFirebase {
       __obj.asInstanceOf[FirebaseAppOptions]
     }
     
-    extension [Self <: FirebaseAppOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseAppOptions] (val x: Self) extends AnyVal {
       
       inline def setAndroidClientId(value: String): Self = StObject.set(x, "androidClientId", value.asInstanceOf[js.Any])
       
@@ -345,7 +348,8 @@ object ReactNativeFirebase {
       __obj.asInstanceOf[NativeFirebaseError]
     }
     
-    extension [Self <: NativeFirebaseError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeFirebaseError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

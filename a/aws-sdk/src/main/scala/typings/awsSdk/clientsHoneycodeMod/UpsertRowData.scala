@@ -28,7 +28,8 @@ object UpsertRowData {
     __obj.asInstanceOf[UpsertRowData]
   }
   
-  extension [Self <: UpsertRowData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpsertRowData] (val x: Self) extends AnyVal {
     
     inline def setBatchItemId(value: BatchItemId): Self = StObject.set(x, "batchItemId", value.asInstanceOf[js.Any])
     

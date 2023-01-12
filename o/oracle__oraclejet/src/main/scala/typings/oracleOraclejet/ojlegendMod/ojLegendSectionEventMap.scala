@@ -156,7 +156,8 @@ object ojLegendSectionEventMap {
     __obj.asInstanceOf[ojLegendSectionEventMap]
   }
   
-  extension [Self <: ojLegendSectionEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojLegendSectionEventMap] (val x: Self) extends AnyVal {
     
     inline def setCollapsibleChanged(value: JetElementCustomEvent[js.UndefOr[on | off]]): Self = StObject.set(x, "collapsibleChanged", value.asInstanceOf[js.Any])
     

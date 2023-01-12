@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[ApicalypseConfig]
     }
     
-    extension [Self <: ApicalypseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApicalypseConfig] (val x: Self) extends AnyVal {
       
       inline def setQueryMethod(value: QueryMethod): Self = StObject.set(x, "queryMethod", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[RequestAllConfig]
     }
     
-    extension [Self <: RequestAllConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestAllConfig] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       

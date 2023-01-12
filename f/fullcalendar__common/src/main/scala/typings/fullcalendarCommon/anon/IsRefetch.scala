@@ -24,7 +24,8 @@ object IsRefetch {
     __obj.asInstanceOf[IsRefetch]
   }
   
-  extension [Self <: IsRefetch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsRefetch] (val x: Self) extends AnyVal {
     
     inline def setIsRefetch(value: Boolean): Self = StObject.set(x, "isRefetch", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object StorageInfo {
     __obj.asInstanceOf[StorageInfo]
   }
   
-  extension [Self <: StorageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageInfo] (val x: Self) extends AnyVal {
     
     inline def setCurrentSize(value: Double): Self = StObject.set(x, "currentSize", value.asInstanceOf[js.Any])
     

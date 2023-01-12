@@ -128,7 +128,8 @@ object LineData {
     __obj.asInstanceOf[LineData]
   }
   
-  extension [Self <: LineData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineData] (val x: Self) extends AnyVal {
     
     inline def setBeginArrowheadLength(value: ArrowheadLength | Short | Medium | Long): Self = StObject.set(x, "beginArrowheadLength", value.asInstanceOf[js.Any])
     

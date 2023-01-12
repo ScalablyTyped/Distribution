@@ -165,7 +165,8 @@ object mod {
       __obj.asInstanceOf[ConnectionGater]
     }
     
-    extension [Self <: ConnectionGater](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionGater] (val x: Self) extends AnyVal {
       
       inline def setDenyDialMultiaddr(value: (PeerId, Multiaddr_) => js.Promise[Boolean]): Self = StObject.set(x, "denyDialMultiaddr", js.Any.fromFunction2(value))
       
@@ -203,7 +204,8 @@ object mod {
       __obj.asInstanceOf[ConnectionProtector]
     }
     
-    extension [Self <: ConnectionProtector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionProtector] (val x: Self) extends AnyVal {
       
       inline def setProtect(value: MultiaddrConnection => js.Promise[MultiaddrConnection]): Self = StObject.set(x, "protect", js.Any.fromFunction1(value))
     }
@@ -247,7 +249,8 @@ object mod {
       __obj.asInstanceOf[ConnectionStat]
     }
     
-    extension [Self <: ConnectionStat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionStat] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -280,7 +283,8 @@ object mod {
       __obj.asInstanceOf[ConnectionTimeline]
     }
     
-    extension [Self <: ConnectionTimeline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionTimeline] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -334,7 +338,8 @@ object mod {
       __obj.asInstanceOf[MultiaddrConnectionTimeline]
     }
     
-    extension [Self <: MultiaddrConnectionTimeline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiaddrConnectionTimeline] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -410,7 +415,8 @@ object mod {
       __obj.asInstanceOf[Stream]
     }
     
-    extension [Self <: Stream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: js.Error => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
       
@@ -454,7 +460,8 @@ object mod {
       __obj.asInstanceOf[StreamStat]
     }
     
-    extension [Self <: StreamStat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamStat] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -479,7 +486,8 @@ object mod {
       __obj.asInstanceOf[StreamTimeline]
     }
     
-    extension [Self <: StreamTimeline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamTimeline] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       

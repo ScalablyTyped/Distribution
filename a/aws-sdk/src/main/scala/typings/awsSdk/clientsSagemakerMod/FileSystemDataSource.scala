@@ -38,7 +38,8 @@ object FileSystemDataSource {
     __obj.asInstanceOf[FileSystemDataSource]
   }
   
-  extension [Self <: FileSystemDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemDataSource] (val x: Self) extends AnyVal {
     
     inline def setDirectoryPath(value: DirectoryPath): Self = StObject.set(x, "DirectoryPath", value.asInstanceOf[js.Any])
     

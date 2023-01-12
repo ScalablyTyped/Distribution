@@ -134,7 +134,8 @@ object Dataset {
     __obj.asInstanceOf[Dataset]
   }
   
-  extension [Self <: Dataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
     
     inline def setAjax(value: Boolean): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     

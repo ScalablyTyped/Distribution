@@ -18,7 +18,8 @@ object UpdateSceneResponse {
     __obj.asInstanceOf[UpdateSceneResponse]
   }
   
-  extension [Self <: UpdateSceneResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSceneResponse] (val x: Self) extends AnyVal {
     
     inline def setUpdateDateTime(value: js.Date): Self = StObject.set(x, "updateDateTime", value.asInstanceOf[js.Any])
   }

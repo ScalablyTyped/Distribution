@@ -90,7 +90,8 @@ object ITextSelection {
     __obj.asInstanceOf[ITextSelection]
   }
   
-  extension [Self <: ITextSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextSelection] (val x: Self) extends AnyVal {
     
     inline def setEndKey(value: (TextRangeUnit, Boolean) => Double): Self = StObject.set(x, "endKey", js.Any.fromFunction2(value))
     

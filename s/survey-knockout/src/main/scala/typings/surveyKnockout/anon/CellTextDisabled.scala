@@ -65,7 +65,8 @@ object CellTextDisabled {
     __obj.asInstanceOf[CellTextDisabled]
   }
   
-  extension [Self <: CellTextDisabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellTextDisabled] (val x: Self) extends AnyVal {
     
     inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

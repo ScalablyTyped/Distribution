@@ -40,7 +40,8 @@ object ReturnPolicy {
     __obj.asInstanceOf[ReturnPolicy]
   }
   
-  extension [Self <: ReturnPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnPolicy] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

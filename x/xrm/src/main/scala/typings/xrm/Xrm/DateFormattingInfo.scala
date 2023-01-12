@@ -86,7 +86,8 @@ object DateFormattingInfo {
     __obj.asInstanceOf[DateFormattingInfo]
   }
   
-  extension [Self <: DateFormattingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateFormattingInfo] (val x: Self) extends AnyVal {
     
     inline def setAbbreviatedDayNames(value: js.Array[String]): Self = StObject.set(x, "AbbreviatedDayNames", value.asInstanceOf[js.Any])
     

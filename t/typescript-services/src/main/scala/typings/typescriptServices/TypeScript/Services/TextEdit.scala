@@ -19,7 +19,8 @@ object TextEdit {
     __obj.asInstanceOf[TextEdit]
   }
   
-  extension [Self <: TextEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEdit] (val x: Self) extends AnyVal {
     
     inline def setLimChar(value: Double): Self = StObject.set(x, "limChar", value.asInstanceOf[js.Any])
     

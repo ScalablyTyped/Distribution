@@ -114,7 +114,8 @@ object CapturedFrame {
     __obj.asInstanceOf[CapturedFrame]
   }
   
-  extension [Self <: CapturedFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapturedFrame] (val x: Self) extends AnyVal {
     
     inline def setCanRead(value: Boolean): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
     

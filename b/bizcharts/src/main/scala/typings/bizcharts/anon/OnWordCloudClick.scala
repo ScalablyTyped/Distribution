@@ -17,7 +17,8 @@ object OnWordCloudClick {
     __obj.asInstanceOf[OnWordCloudClick]
   }
   
-  extension [Self <: OnWordCloudClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnWordCloudClick] (val x: Self) extends AnyVal {
     
     inline def setOnWordCloudClick(value: (/* item */ Any, /* dim */ Any, /* e */ Any) => Unit): Self = StObject.set(x, "onWordCloudClick", js.Any.fromFunction3(value))
     

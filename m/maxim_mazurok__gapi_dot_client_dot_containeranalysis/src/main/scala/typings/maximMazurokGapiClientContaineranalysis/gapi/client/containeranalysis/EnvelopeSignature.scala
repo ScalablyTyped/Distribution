@@ -17,7 +17,8 @@ object EnvelopeSignature {
     __obj.asInstanceOf[EnvelopeSignature]
   }
   
-  extension [Self <: EnvelopeSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeSignature] (val x: Self) extends AnyVal {
     
     inline def setKeyid(value: String): Self = StObject.set(x, "keyid", value.asInstanceOf[js.Any])
     

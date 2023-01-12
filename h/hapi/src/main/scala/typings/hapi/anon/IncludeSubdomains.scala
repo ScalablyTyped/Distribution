@@ -28,7 +28,8 @@ object IncludeSubdomains {
     __obj.asInstanceOf[IncludeSubdomains]
   }
   
-  extension [Self <: IncludeSubdomains](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeSubdomains] (val x: Self) extends AnyVal {
     
     inline def setIncludeSubdomains(value: Boolean): Self = StObject.set(x, "includeSubdomains", value.asInstanceOf[js.Any])
     

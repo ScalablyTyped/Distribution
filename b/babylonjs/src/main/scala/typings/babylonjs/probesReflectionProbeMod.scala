@@ -224,7 +224,8 @@ object probesReflectionProbeMod {
         __obj.asInstanceOf[typings.babylonjs.probesReflectionProbeMod.babylonjsAbstractSceneAugmentingMod.AbstractScene]
       }
       
-      extension [Self <: typings.babylonjs.probesReflectionProbeMod.babylonjsAbstractSceneAugmentingMod.AbstractScene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.probesReflectionProbeMod.babylonjsAbstractSceneAugmentingMod.AbstractScene] (val x: Self) extends AnyVal {
         
         inline def setAddReflectionProbe(value: ReflectionProbe => Unit): Self = StObject.set(x, "addReflectionProbe", js.Any.fromFunction1(value))
         

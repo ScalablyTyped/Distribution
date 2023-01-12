@@ -48,7 +48,8 @@ object RecommendationJobContainerConfig {
     __obj.asInstanceOf[RecommendationJobContainerConfig]
   }
   
-  extension [Self <: RecommendationJobContainerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationJobContainerConfig] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

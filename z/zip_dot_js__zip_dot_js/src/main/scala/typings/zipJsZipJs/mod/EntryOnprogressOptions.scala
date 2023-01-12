@@ -33,7 +33,8 @@ object EntryOnprogressOptions {
     __obj.asInstanceOf[EntryOnprogressOptions]
   }
   
-  extension [Self <: EntryOnprogressOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryOnprogressOptions] (val x: Self) extends AnyVal {
     
     inline def setOnprogress(
       value: (/* progress */ Double, /* total */ Double, /* entry */ EntryMetaData) => js.UndefOr[js.Promise[Unit]]

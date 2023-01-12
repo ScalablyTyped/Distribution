@@ -24,7 +24,8 @@ object HkdfParams {
     __obj.asInstanceOf[HkdfParams]
   }
   
-  extension [Self <: HkdfParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HkdfParams] (val x: Self) extends AnyVal {
     
     inline def setHash(value: HashAlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

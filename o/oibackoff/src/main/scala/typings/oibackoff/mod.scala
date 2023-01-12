@@ -238,7 +238,8 @@ object mod {
       __obj.asInstanceOf[BackoffOptions]
     }
     
-    extension [Self <: BackoffOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackoffOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: incremental | exponential | fibonacci): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

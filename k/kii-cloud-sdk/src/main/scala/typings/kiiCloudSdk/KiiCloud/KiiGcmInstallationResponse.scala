@@ -15,7 +15,8 @@ object KiiGcmInstallationResponse {
     __obj.asInstanceOf[KiiGcmInstallationResponse]
   }
   
-  extension [Self <: KiiGcmInstallationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KiiGcmInstallationResponse] (val x: Self) extends AnyVal {
     
     inline def setInstallationID(value: String): Self = StObject.set(x, "installationID", value.asInstanceOf[js.Any])
   }

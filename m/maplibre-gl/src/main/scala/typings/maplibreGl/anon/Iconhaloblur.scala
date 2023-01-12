@@ -56,7 +56,8 @@ object Iconhaloblur {
     __obj.asInstanceOf[Iconhaloblur]
   }
   
-  extension [Self <: Iconhaloblur](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Iconhaloblur] (val x: Self) extends AnyVal {
     
     inline def `setIcon-color`(value: DataDrivenPropertyValueSpecification[ColorSpecification]): Self = StObject.set(x, "icon-color", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ResizeConstraints {
     __obj.asInstanceOf[ResizeConstraints]
   }
   
-  extension [Self <: ResizeConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeConstraints] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

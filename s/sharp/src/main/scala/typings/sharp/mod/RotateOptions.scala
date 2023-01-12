@@ -16,7 +16,8 @@ object RotateOptions {
     __obj.asInstanceOf[RotateOptions]
   }
   
-  extension [Self <: RotateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotateOptions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

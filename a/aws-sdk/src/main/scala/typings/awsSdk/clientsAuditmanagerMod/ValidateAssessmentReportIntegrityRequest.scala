@@ -18,7 +18,8 @@ object ValidateAssessmentReportIntegrityRequest {
     __obj.asInstanceOf[ValidateAssessmentReportIntegrityRequest]
   }
   
-  extension [Self <: ValidateAssessmentReportIntegrityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateAssessmentReportIntegrityRequest] (val x: Self) extends AnyVal {
     
     inline def setS3RelativePath(value: S3Url): Self = StObject.set(x, "s3RelativePath", value.asInstanceOf[js.Any])
   }

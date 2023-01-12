@@ -65,7 +65,8 @@ object editors {
     __obj.asInstanceOf[editors]
   }
   
-  extension [Self <: editors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: editors] (val x: Self) extends AnyVal {
     
     inline def set$popup(value: obj): Self = StObject.set(x, "$popup", value.asInstanceOf[js.Any])
     

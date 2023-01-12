@@ -197,7 +197,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RaygunOptions]
     }
     
-    extension [Self <: RaygunOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RaygunOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowInsecureSubmissions(value: Boolean): Self = StObject.set(x, "allowInsecureSubmissions", value.asInstanceOf[js.Any])
       
@@ -298,7 +299,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RaygunPayload]
     }
     
-    extension [Self <: RaygunPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RaygunPayload] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: Client): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       
@@ -325,7 +327,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RaygunStackTrace]
     }
     
-    extension [Self <: RaygunStackTrace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RaygunStackTrace] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
       
@@ -600,7 +603,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RaygunV2UserDetails]
     }
     
-    extension [Self <: RaygunV2UserDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RaygunV2UserDetails] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -645,7 +649,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TracekitStack]
     }
     
-    extension [Self <: TracekitStack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracekitStack] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -687,7 +692,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TracekitStackTrace]
     }
     
-    extension [Self <: TracekitStackTrace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracekitStackTrace] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -716,7 +722,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Window]
     }
     
-    extension [Self <: Window](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
       
       inline def setRaygun(value: RaygunStatic): Self = StObject.set(x, "Raygun", value.asInstanceOf[js.Any])
     }

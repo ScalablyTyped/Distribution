@@ -17,7 +17,8 @@ object SearchableSnapshotsStatsResponse {
     __obj.asInstanceOf[SearchableSnapshotsStatsResponse]
   }
   
-  extension [Self <: SearchableSnapshotsStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchableSnapshotsStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setStats(value: Any): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     

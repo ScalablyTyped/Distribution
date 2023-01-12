@@ -82,7 +82,8 @@ object ISyntaxToken {
     __obj.asInstanceOf[ISyntaxToken]
   }
   
-  extension [Self <: ISyntaxToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyntaxToken] (val x: Self) extends AnyVal {
     
     inline def setHasLeadingComment(value: () => Boolean): Self = StObject.set(x, "hasLeadingComment", js.Any.fromFunction0(value))
     

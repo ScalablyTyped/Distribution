@@ -71,7 +71,8 @@ object distUtilsDatesMod {
       __obj.asInstanceOf[FormatterArgs]
     }
     
-    extension [Self <: FormatterArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatterArgs] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: ParsedOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

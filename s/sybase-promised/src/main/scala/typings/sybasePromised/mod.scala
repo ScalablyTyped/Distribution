@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setDbname(value: String): Self = StObject.set(x, "dbname", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
       __obj.asInstanceOf[SybasePromised]
     }
     
-    extension [Self <: SybasePromised](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SybasePromised] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: () => js.Promise[SybasePromised]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       

@@ -69,7 +69,8 @@ object R3QueryMetadata {
     __obj.asInstanceOf[R3QueryMetadata]
   }
   
-  extension [Self <: R3QueryMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3QueryMetadata] (val x: Self) extends AnyVal {
     
     inline def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
     

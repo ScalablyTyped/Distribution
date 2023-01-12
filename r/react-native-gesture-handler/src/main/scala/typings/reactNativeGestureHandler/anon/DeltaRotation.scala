@@ -19,7 +19,8 @@ object DeltaRotation {
     __obj.asInstanceOf[DeltaRotation]
   }
   
-  extension [Self <: DeltaRotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeltaRotation] (val x: Self) extends AnyVal {
     
     inline def setDeltaRotation(value: Double): Self = StObject.set(x, "deltaRotation", value.asInstanceOf[js.Any])
     

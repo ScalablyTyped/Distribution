@@ -46,7 +46,8 @@ object EditResultsObject {
     __obj.asInstanceOf[EditResultsObject]
   }
   
-  extension [Self <: EditResultsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditResultsObject] (val x: Self) extends AnyVal {
     
     inline def setAdds(value: js.Array[NamedObjectEditResults]): Self = StObject.set(x, "adds", value.asInstanceOf[js.Any])
     

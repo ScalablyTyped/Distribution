@@ -16,7 +16,8 @@ object Bvn {
     __obj.asInstanceOf[Bvn]
   }
   
-  extension [Self <: Bvn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bvn] (val x: Self) extends AnyVal {
     
     inline def setVerification(value: BvnVerificationRequest => js.Promise[AxiosResponse[BvnVerificationResponse, Any]]): Self = StObject.set(x, "verification", js.Any.fromFunction1(value))
   }

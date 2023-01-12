@@ -58,7 +58,8 @@ object nodeHelperMod {
       __obj.asInstanceOf[NodeHelperModule]
     }
     
-    extension [Self <: NodeHelperModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeHelperModule] (val x: Self) extends AnyVal {
       
       inline def setExpressApp(value: Any): Self = StObject.set(x, "expressApp", value.asInstanceOf[js.Any])
       

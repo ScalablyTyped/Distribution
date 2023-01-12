@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[FindResultHash]
     }
     
-    extension [Self <: FindResultHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindResultHash] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
@@ -212,7 +213,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAttributes(
         value: (Record[String, String]) | (js.Function2[/* href */ String, /* type */ LinkEntityType, Record[String, String]])

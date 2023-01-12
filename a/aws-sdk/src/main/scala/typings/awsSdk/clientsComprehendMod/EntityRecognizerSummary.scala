@@ -38,7 +38,8 @@ object EntityRecognizerSummary {
     __obj.asInstanceOf[EntityRecognizerSummary]
   }
   
-  extension [Self <: EntityRecognizerSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityRecognizerSummary] (val x: Self) extends AnyVal {
     
     inline def setLatestVersionCreatedAt(value: js.Date): Self = StObject.set(x, "LatestVersionCreatedAt", value.asInstanceOf[js.Any])
     

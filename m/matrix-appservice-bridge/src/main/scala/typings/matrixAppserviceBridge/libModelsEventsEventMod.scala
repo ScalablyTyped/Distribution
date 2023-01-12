@@ -120,7 +120,8 @@ object libModelsEventsEventMod {
       __obj.asInstanceOf[StoredEventDoc]
     }
     
-    extension [Self <: StoredEventDoc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoredEventDoc] (val x: Self) extends AnyVal {
       
       inline def setExtras(value: Record[String, Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       

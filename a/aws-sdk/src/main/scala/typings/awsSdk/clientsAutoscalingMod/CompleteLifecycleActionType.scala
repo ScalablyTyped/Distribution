@@ -42,7 +42,8 @@ object CompleteLifecycleActionType {
     __obj.asInstanceOf[CompleteLifecycleActionType]
   }
   
-  extension [Self <: CompleteLifecycleActionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteLifecycleActionType] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

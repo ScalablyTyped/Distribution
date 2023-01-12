@@ -25,7 +25,8 @@ object PlannerAssignment {
     __obj.asInstanceOf[PlannerAssignment]
   }
   
-  extension [Self <: PlannerAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlannerAssignment] (val x: Self) extends AnyVal {
     
     inline def setAssignedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "assignedBy", value.asInstanceOf[js.Any])
     

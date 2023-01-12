@@ -21,7 +21,8 @@ object Driveon {
     __obj.asInstanceOf[Driveon]
   }
   
-  extension [Self <: Driveon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Driveon] (val x: Self) extends AnyVal {
     
     inline def setDrive_on(value: String): Self = StObject.set(x, "drive_on", value.asInstanceOf[js.Any])
     

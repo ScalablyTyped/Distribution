@@ -18,7 +18,8 @@ object RegisteredUserQuickSightConsoleEmbeddingConfiguration {
     __obj.asInstanceOf[RegisteredUserQuickSightConsoleEmbeddingConfiguration]
   }
   
-  extension [Self <: RegisteredUserQuickSightConsoleEmbeddingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisteredUserQuickSightConsoleEmbeddingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInitialPath(value: EntryPath): Self = StObject.set(x, "InitialPath", value.asInstanceOf[js.Any])
     

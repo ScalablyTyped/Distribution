@@ -33,7 +33,8 @@ object CaptionData {
     __obj.asInstanceOf[CaptionData]
   }
   
-  extension [Self <: CaptionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionData] (val x: Self) extends AnyVal {
     
     inline def setCueID(value: String): Self = StObject.set(x, "cueID", value.asInstanceOf[js.Any])
     

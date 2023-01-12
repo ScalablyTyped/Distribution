@@ -23,7 +23,8 @@ object StopRelationalDatabaseRequest {
     __obj.asInstanceOf[StopRelationalDatabaseRequest]
   }
   
-  extension [Self <: StopRelationalDatabaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopRelationalDatabaseRequest] (val x: Self) extends AnyVal {
     
     inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     

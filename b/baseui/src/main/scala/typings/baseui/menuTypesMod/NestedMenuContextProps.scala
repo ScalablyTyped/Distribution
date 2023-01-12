@@ -35,7 +35,8 @@ object NestedMenuContextProps {
     __obj.asInstanceOf[NestedMenuContextProps]
   }
   
-  extension [Self <: NestedMenuContextProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NestedMenuContextProps] (val x: Self) extends AnyVal {
     
     inline def setAddMenuToNesting(value: NestedMenuRef => Unit): Self = StObject.set(x, "addMenuToNesting", js.Any.fromFunction1(value))
     

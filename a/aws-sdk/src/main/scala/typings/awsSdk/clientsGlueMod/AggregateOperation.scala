@@ -23,7 +23,8 @@ object AggregateOperation {
     __obj.asInstanceOf[AggregateOperation]
   }
   
-  extension [Self <: AggregateOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateOperation] (val x: Self) extends AnyVal {
     
     inline def setAggFunc(value: AggFunction): Self = StObject.set(x, "AggFunc", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[All[ExposedFunctions]]
     }
     
-    extension [Self <: All[?], ExposedFunctions](x: Self & All[ExposedFunctions]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: All[?], ExposedFunctions] (val x: Self & All[ExposedFunctions]) extends AnyVal {
       
       inline def setAll(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ FunctionName in keyof ExposedFunctions ]: gatsby-worker.gatsby-worker/dist.WrapReturnInArray<gatsby-worker.gatsby-worker/dist.EnsureFunctionReturnsAPromise<ExposedFunctions[FunctionName]>>} */ js.Any

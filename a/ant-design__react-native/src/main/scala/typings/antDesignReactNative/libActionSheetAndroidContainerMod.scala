@@ -43,7 +43,8 @@ object libActionSheetAndroidContainerMod {
       __obj.asInstanceOf[ActionSheetNativeProps]
     }
     
-    extension [Self <: ActionSheetNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSheetNativeProps] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* index */ Double => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       

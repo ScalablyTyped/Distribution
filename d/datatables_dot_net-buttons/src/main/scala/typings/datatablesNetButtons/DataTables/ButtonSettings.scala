@@ -144,7 +144,8 @@ object ButtonSettings {
     __obj.asInstanceOf[ButtonSettings]
   }
   
-  extension [Self <: ButtonSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonSettings] (val x: Self) extends AnyVal {
     
     inline def setAutoPrint(value: Boolean): Self = StObject.set(x, "autoPrint", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AssociateSecurityKeyRequest {
     __obj.asInstanceOf[AssociateSecurityKeyRequest]
   }
   
-  extension [Self <: AssociateSecurityKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateSecurityKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

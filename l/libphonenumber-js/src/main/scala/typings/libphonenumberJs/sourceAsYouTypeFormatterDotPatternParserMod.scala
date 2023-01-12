@@ -59,7 +59,8 @@ object sourceAsYouTypeFormatterDotPatternParserMod {
       __obj.asInstanceOf[OneOfCharacters]
     }
     
-    extension [Self <: OneOfCharacters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OneOfCharacters] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[character]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object sourceAsYouTypeFormatterDotPatternParserMod {
       __obj.asInstanceOf[OrCondition[MatchTree]]
     }
     
-    extension [Self <: OrCondition[?], MatchTree](x: Self & OrCondition[MatchTree]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrCondition[?], MatchTree] (val x: Self & OrCondition[MatchTree]) extends AnyVal {
       
       inline def setArgs(value: js.Array[MatchTree]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object sourceAsYouTypeFormatterDotPatternParserMod {
       __obj.asInstanceOf[PatternParser]
     }
     
-    extension [Self <: PatternParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternParser] (val x: Self) extends AnyVal {
       
       inline def setParse(value: String => MatchTree): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }

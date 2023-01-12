@@ -16,7 +16,8 @@ object Interchange {
     __obj.asInstanceOf[Interchange]
   }
   
-  extension [Self <: Interchange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interchange] (val x: Self) extends AnyVal {
     
     inline def setReplace(value: String => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
   }

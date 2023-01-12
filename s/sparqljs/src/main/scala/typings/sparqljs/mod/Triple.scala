@@ -24,7 +24,8 @@ object Triple {
     __obj.asInstanceOf[Triple]
   }
   
-  extension [Self <: Triple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Triple] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Term): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     

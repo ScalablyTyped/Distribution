@@ -28,7 +28,8 @@ object HsmStatus {
     __obj.asInstanceOf[HsmStatus]
   }
   
-  extension [Self <: HsmStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HsmStatus] (val x: Self) extends AnyVal {
     
     inline def setHsmClientCertificateIdentifier(value: String): Self = StObject.set(x, "HsmClientCertificateIdentifier", value.asInstanceOf[js.Any])
     

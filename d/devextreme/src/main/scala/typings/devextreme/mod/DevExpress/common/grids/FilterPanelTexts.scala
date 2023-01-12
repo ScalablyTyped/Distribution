@@ -28,7 +28,8 @@ object FilterPanelTexts {
     __obj.asInstanceOf[FilterPanelTexts]
   }
   
-  extension [Self <: FilterPanelTexts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterPanelTexts] (val x: Self) extends AnyVal {
     
     inline def setClearFilter(value: String): Self = StObject.set(x, "clearFilter", value.asInstanceOf[js.Any])
     

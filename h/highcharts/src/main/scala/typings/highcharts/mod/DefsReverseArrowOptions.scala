@@ -17,7 +17,8 @@ object DefsReverseArrowOptions {
     __obj.asInstanceOf[DefsReverseArrowOptions]
   }
   
-  extension [Self <: DefsReverseArrowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefsReverseArrowOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: DefsReverseArrowAttributesOptions): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

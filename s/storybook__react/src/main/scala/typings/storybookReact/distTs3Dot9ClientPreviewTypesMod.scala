@@ -20,7 +20,8 @@ object distTs3Dot9ClientPreviewTypesMod {
       __obj.asInstanceOf[IStorybookSection]
     }
     
-    extension [Self <: IStorybookSection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStorybookSection] (val x: Self) extends AnyVal {
       
       inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object distTs3Dot9ClientPreviewTypesMod {
       __obj.asInstanceOf[IStorybookStory]
     }
     
-    extension [Self <: IStorybookStory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStorybookStory] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -64,7 +66,8 @@ object distTs3Dot9ClientPreviewTypesMod {
       __obj.asInstanceOf[ShowErrorArgs]
     }
     
-    extension [Self <: ShowErrorArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowErrorArgs] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

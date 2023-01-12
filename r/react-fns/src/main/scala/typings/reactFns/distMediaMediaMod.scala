@@ -21,7 +21,8 @@ object distMediaMediaMod {
       __obj.asInstanceOf[MediaProps]
     }
     
-    extension [Self <: MediaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaProps] (val x: Self) extends AnyVal {
       
       inline def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     }

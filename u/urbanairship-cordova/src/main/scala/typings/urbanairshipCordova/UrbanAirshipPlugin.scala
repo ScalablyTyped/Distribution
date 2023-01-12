@@ -118,7 +118,8 @@ object UrbanAirshipPlugin {
       __obj.asInstanceOf[QuietTimeTimeSpan]
     }
     
-    extension [Self <: QuietTimeTimeSpan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuietTimeTimeSpan] (val x: Self) extends AnyVal {
       
       inline def setEndHour(value: Double): Self = StObject.set(x, "endHour", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object UrbanAirshipPlugin {
       __obj.asInstanceOf[RunActionResult]
     }
     
-    extension [Self <: RunActionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunActionResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -554,7 +556,8 @@ object UrbanAirshipPlugin {
       __obj.asInstanceOf[UrbanAirshipStatic]
     }
     
-    extension [Self <: UrbanAirshipStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrbanAirshipStatic] (val x: Self) extends AnyVal {
       
       inline def setClearNotifications(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "clearNotifications", js.Any.fromFunction1(value))
       

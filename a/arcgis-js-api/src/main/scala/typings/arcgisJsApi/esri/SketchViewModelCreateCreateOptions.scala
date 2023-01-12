@@ -37,7 +37,8 @@ object SketchViewModelCreateCreateOptions {
     __obj.asInstanceOf[SketchViewModelCreateCreateOptions]
   }
   
-  extension [Self <: SketchViewModelCreateCreateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchViewModelCreateCreateOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultZ(value: Double): Self = StObject.set(x, "defaultZ", value.asInstanceOf[js.Any])
     

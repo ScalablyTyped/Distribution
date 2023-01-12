@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[SyslogTransportOptions]
     }
     
-    extension [Self <: SyslogTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyslogTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setApp_name(value: String): Self = StObject.set(x, "app_name", value.asInstanceOf[js.Any])
       

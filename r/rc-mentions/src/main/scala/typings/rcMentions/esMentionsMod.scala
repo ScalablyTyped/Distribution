@@ -532,7 +532,8 @@ object esMentionsMod {
       __obj.asInstanceOf[BaseTextareaAttrs]
     }
     
-    extension [Self <: BaseTextareaAttrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTextareaAttrs] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1356,7 +1357,8 @@ object esMentionsMod {
       __obj.asInstanceOf[MentionsProps]
     }
     
-    extension [Self <: MentionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionsProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -1444,7 +1446,8 @@ object esMentionsMod {
       __obj.asInstanceOf[MentionsRef]
     }
     
-    extension [Self <: MentionsRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionsRef] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       

@@ -18,7 +18,8 @@ object DeleteAlarmsInput {
     __obj.asInstanceOf[DeleteAlarmsInput]
   }
   
-  extension [Self <: DeleteAlarmsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAlarmsInput] (val x: Self) extends AnyVal {
     
     inline def setAlarmNames(value: AlarmNames): Self = StObject.set(x, "AlarmNames", value.asInstanceOf[js.Any])
     

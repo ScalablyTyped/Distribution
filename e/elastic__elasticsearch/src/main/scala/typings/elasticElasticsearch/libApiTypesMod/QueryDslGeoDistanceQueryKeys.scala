@@ -21,7 +21,8 @@ object QueryDslGeoDistanceQueryKeys {
     __obj.asInstanceOf[QueryDslGeoDistanceQueryKeys]
   }
   
-  extension [Self <: QueryDslGeoDistanceQueryKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslGeoDistanceQueryKeys] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Distance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

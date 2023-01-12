@@ -29,7 +29,8 @@ object CommonPlaidLinkOptions {
     __obj.asInstanceOf[CommonPlaidLinkOptions]
   }
   
-  extension [Self <: CommonPlaidLinkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonPlaidLinkOptions] (val x: Self) extends AnyVal {
     
     inline def setOnEvent(
       value: (/* eventName */ PlaidLinkStableEvent | String, /* metadata */ PlaidLinkOnEventMetadata) => Unit

@@ -18,7 +18,8 @@ object ExportProjectRequest {
     __obj.asInstanceOf[ExportProjectRequest]
   }
   
-  extension [Self <: ExportProjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportProjectRequest] (val x: Self) extends AnyVal {
     
     inline def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
   }

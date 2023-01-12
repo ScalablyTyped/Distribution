@@ -16,7 +16,8 @@ object ReadonlyallowHTTP1boolean {
     __obj.asInstanceOf[ReadonlyallowHTTP1boolean]
   }
   
-  extension [Self <: ReadonlyallowHTTP1boolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyallowHTTP1boolean] (val x: Self) extends AnyVal {
     
     inline def setAllowHTTP1(value: Boolean): Self = StObject.set(x, "allowHTTP1", value.asInstanceOf[js.Any])
   }

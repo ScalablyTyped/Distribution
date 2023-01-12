@@ -29,7 +29,8 @@ object CartesianMarkersProps {
     __obj.asInstanceOf[CartesianMarkersProps[X, Y]]
   }
   
-  extension [Self <: CartesianMarkersProps[?, ?], X /* <: DatumValue */, Y /* <: DatumValue */](x: Self & (CartesianMarkersProps[X, Y])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CartesianMarkersProps[?, ?], X /* <: DatumValue */, Y /* <: DatumValue */] (val x: Self & (CartesianMarkersProps[X, Y])) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

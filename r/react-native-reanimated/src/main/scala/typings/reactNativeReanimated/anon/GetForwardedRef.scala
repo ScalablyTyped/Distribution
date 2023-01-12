@@ -19,7 +19,8 @@ object GetForwardedRef {
     __obj.asInstanceOf[GetForwardedRef[T]]
   }
   
-  extension [Self <: GetForwardedRef[?], T](x: Self & GetForwardedRef[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetForwardedRef[?], T] (val x: Self & GetForwardedRef[T]) extends AnyVal {
     
     inline def setGetForwardedRef(value: () => MutableRefObject[T] | (js.Function1[T, Unit])): Self = StObject.set(x, "getForwardedRef", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object TypingIndicatorServices {
     __obj.asInstanceOf[TypingIndicatorServices]
   }
   
-  extension [Self <: TypingIndicatorServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypingIndicatorServices] (val x: Self) extends AnyVal {
     
     inline def setNotificationClient(value: Notifications): Self = StObject.set(x, "notificationClient", value.asInstanceOf[js.Any])
     

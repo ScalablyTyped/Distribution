@@ -17,7 +17,8 @@ object MoveLearnset {
     __obj.asInstanceOf[MoveLearnset]
   }
   
-  extension [Self <: MoveLearnset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveLearnset] (val x: Self) extends AnyVal {
     
     inline def setGames(value: js.Array[String]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
     

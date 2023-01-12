@@ -19,7 +19,8 @@ object SlotToElicitType {
     __obj.asInstanceOf[SlotToElicitType]
   }
   
-  extension [Self <: SlotToElicitType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotToElicitType] (val x: Self) extends AnyVal {
     
     inline def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
     

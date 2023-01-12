@@ -41,7 +41,8 @@ object INxLibraryDimensionDef {
     __obj.asInstanceOf[INxLibraryDimensionDef]
   }
   
-  extension [Self <: INxLibraryDimensionDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxLibraryDimensionDef] (val x: Self) extends AnyVal {
     
     inline def setQFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
     

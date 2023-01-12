@@ -110,7 +110,8 @@ object mod {
       __obj.asInstanceOf[UseFieldInstanceMeta[ErrorType]]
     }
     
-    extension [Self <: UseFieldInstanceMeta[?], ErrorType](x: Self & UseFieldInstanceMeta[ErrorType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseFieldInstanceMeta[?], ErrorType] (val x: Self & UseFieldInstanceMeta[ErrorType]) extends AnyVal {
       
       inline def setError(value: ErrorType): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[UseFieldInstancePropsType[ValueType]]
     }
     
-    extension [Self <: UseFieldInstancePropsType[?], ValueType](x: Self & UseFieldInstancePropsType[ValueType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseFieldInstancePropsType[?], ValueType] (val x: Self & UseFieldInstancePropsType[ValueType]) extends AnyVal {
       
       inline def setOnBlur(value: FormEvent[Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
@@ -182,7 +184,8 @@ object mod {
       __obj.asInstanceOf[UseFieldOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType]]
     }
     
-    extension [Self <: UseFieldOptions[?, ?, ?, ?, ?, ?], ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */, InputPropsType /* <: UseFieldInstancePropsType[ValueType] */](x: Self & (UseFieldOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseFieldOptions[?, ?, ?, ?, ?, ?], ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */, InputPropsType /* <: UseFieldInstancePropsType[ValueType] */] (val x: Self & (UseFieldOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType])) extends AnyVal {
       
       inline def setDefaultError(value: ErrorType): Self = StObject.set(x, "defaultError", value.asInstanceOf[js.Any])
       
@@ -290,7 +293,8 @@ object mod {
       __obj.asInstanceOf[UseFormInstanceMeta[ErrorType]]
     }
     
-    extension [Self <: UseFormInstanceMeta[?], ErrorType](x: Self & UseFormInstanceMeta[ErrorType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseFormInstanceMeta[?], ErrorType] (val x: Self & UseFormInstanceMeta[ErrorType]) extends AnyVal {
       
       inline def setCanSubmit(value: Boolean): Self = StObject.set(x, "canSubmit", value.asInstanceOf[js.Any])
       
@@ -343,7 +347,8 @@ object mod {
       __obj.asInstanceOf[UseFormOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType]]
     }
     
-    extension [Self <: UseFormOptions[?, ?, ?, ?, ?], ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */](x: Self & (UseFormOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseFormOptions[?, ?, ?, ?, ?], ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */] (val x: Self & (UseFormOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType])) extends AnyVal {
       
       inline def setDebugForm(value: Boolean): Self = StObject.set(x, "debugForm", value.asInstanceOf[js.Any])
       

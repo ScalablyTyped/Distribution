@@ -81,7 +81,8 @@ object BootstrapCardViewEventMap {
     __obj.asInstanceOf[BootstrapCardViewEventMap]
   }
   
-  extension [Self <: BootstrapCardViewEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapCardViewEventMap] (val x: Self) extends AnyVal {
     
     inline def setBatchEditCardDeleting(value: CardViewBatchEditCardDeletingEventArgs): Self = StObject.set(x, "batchEditCardDeleting", value.asInstanceOf[js.Any])
     

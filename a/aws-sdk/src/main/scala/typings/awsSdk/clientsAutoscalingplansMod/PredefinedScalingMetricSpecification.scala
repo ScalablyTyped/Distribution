@@ -23,7 +23,8 @@ object PredefinedScalingMetricSpecification {
     __obj.asInstanceOf[PredefinedScalingMetricSpecification]
   }
   
-  extension [Self <: PredefinedScalingMetricSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredefinedScalingMetricSpecification] (val x: Self) extends AnyVal {
     
     inline def setPredefinedScalingMetricType(value: ScalingMetricType): Self = StObject.set(x, "PredefinedScalingMetricType", value.asInstanceOf[js.Any])
     

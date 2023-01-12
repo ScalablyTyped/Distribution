@@ -41,7 +41,8 @@ object PerformedviagithubappProjectcard {
     __obj.asInstanceOf[PerformedviagithubappProjectcard]
   }
   
-  extension [Self <: PerformedviagithubappProjectcard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformedviagithubappProjectcard] (val x: Self) extends AnyVal {
     
     inline def setActor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any

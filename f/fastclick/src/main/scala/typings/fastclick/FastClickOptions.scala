@@ -17,7 +17,8 @@ object FastClickOptions {
     __obj.asInstanceOf[FastClickOptions]
   }
   
-  extension [Self <: FastClickOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FastClickOptions] (val x: Self) extends AnyVal {
     
     inline def setTapDelay(value: Double): Self = StObject.set(x, "tapDelay", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object CacheResource {
     __obj.asInstanceOf[CacheResource]
   }
   
-  extension [Self <: CacheResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheResource] (val x: Self) extends AnyVal {
     
     inline def setCacheResource(value: Boolean): Self = StObject.set(x, "cacheResource", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object FlowExecutionSummary {
     __obj.asInstanceOf[FlowExecutionSummary]
   }
   
-  extension [Self <: FlowExecutionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowExecutionSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

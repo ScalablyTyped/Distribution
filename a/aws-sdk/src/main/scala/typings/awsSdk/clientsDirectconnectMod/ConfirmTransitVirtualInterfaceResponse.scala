@@ -18,7 +18,8 @@ object ConfirmTransitVirtualInterfaceResponse {
     __obj.asInstanceOf[ConfirmTransitVirtualInterfaceResponse]
   }
   
-  extension [Self <: ConfirmTransitVirtualInterfaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmTransitVirtualInterfaceResponse] (val x: Self) extends AnyVal {
     
     inline def setVirtualInterfaceState(value: VirtualInterfaceState): Self = StObject.set(x, "virtualInterfaceState", value.asInstanceOf[js.Any])
     

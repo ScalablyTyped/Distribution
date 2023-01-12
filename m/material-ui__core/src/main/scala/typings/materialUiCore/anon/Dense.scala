@@ -20,7 +20,8 @@ object Dense {
     __obj.asInstanceOf[Dense]
   }
   
-  extension [Self <: Dense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dense] (val x: Self) extends AnyVal {
     
     inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     

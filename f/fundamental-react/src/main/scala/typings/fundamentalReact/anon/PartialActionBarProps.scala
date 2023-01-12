@@ -474,7 +474,8 @@ object PartialActionBarProps {
     __obj.asInstanceOf[PartialActionBarProps]
   }
   
-  extension [Self <: PartialActionBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialActionBarProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -109,7 +109,8 @@ object ITapRepeater {
     __obj.asInstanceOf[ITapRepeater]
   }
   
-  extension [Self <: ITapRepeater](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITapRepeater] (val x: Self) extends AnyVal {
     
     inline def setGetAccelerate(value: () => Boolean): Self = StObject.set(x, "getAccelerate", js.Any.fromFunction0(value))
     

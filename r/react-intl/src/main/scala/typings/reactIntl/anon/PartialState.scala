@@ -23,7 +23,8 @@ object PartialState {
     __obj.asInstanceOf[PartialState]
   }
   
-  extension [Self <: PartialState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
     
     inline def setCache(value: IntlCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

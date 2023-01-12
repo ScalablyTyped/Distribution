@@ -19,7 +19,8 @@ object CallFunctionResult {
     __obj.asInstanceOf[CallFunctionResult]
   }
   
-  extension [Self <: CallFunctionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallFunctionResult] (val x: Self) extends AnyVal {
     
     inline def setResult(value: AnyObject | String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

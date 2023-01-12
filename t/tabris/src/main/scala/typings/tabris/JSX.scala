@@ -24,7 +24,8 @@ object JSX {
       __obj.asInstanceOf[ElementAttributesProperty]
     }
     
-    extension [Self <: ElementAttributesProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementAttributesProperty] (val x: Self) extends AnyVal {
       
       inline def setJsxAttributes(value: Any): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object JSX {
       __obj.asInstanceOf[ElementChildrenAttribute]
     }
     
-    extension [Self <: ElementChildrenAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementChildrenAttribute] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object JSX {
       __obj.asInstanceOf[IntrinsicElements]
     }
     
-    extension [Self <: IntrinsicElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
       
       inline def setA(value: Href): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

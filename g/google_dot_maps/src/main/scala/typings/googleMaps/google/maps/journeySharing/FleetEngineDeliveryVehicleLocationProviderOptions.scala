@@ -75,7 +75,8 @@ object FleetEngineDeliveryVehicleLocationProviderOptions {
     __obj.asInstanceOf[FleetEngineDeliveryVehicleLocationProviderOptions]
   }
   
-  extension [Self <: FleetEngineDeliveryVehicleLocationProviderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetEngineDeliveryVehicleLocationProviderOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthTokenFetcher(value: AuthTokenFetcherOptions => js.Promise[AuthToken]): Self = StObject.set(x, "authTokenFetcher", js.Any.fromFunction1(value))
     

@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[TextfitProps]
     }
     
-    extension [Self <: TextfitProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextfitProps] (val x: Self) extends AnyVal {
       
       inline def setForceSingleModeWidth(value: Boolean): Self = StObject.set(x, "forceSingleModeWidth", value.asInstanceOf[js.Any])
       

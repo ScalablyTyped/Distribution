@@ -28,7 +28,8 @@ object ASPxClientFloatingActionButtonActionCollapsingEventArgs {
     __obj.asInstanceOf[ASPxClientFloatingActionButtonActionCollapsingEventArgs]
   }
   
-  extension [Self <: ASPxClientFloatingActionButtonActionCollapsingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFloatingActionButtonActionCollapsingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCollapseReason(value: ASPxClientFloatingActionButtonCollapseReason): Self = StObject.set(x, "collapseReason", value.asInstanceOf[js.Any])
     

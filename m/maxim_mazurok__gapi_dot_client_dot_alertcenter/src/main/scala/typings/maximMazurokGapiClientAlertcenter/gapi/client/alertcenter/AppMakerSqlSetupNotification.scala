@@ -16,7 +16,8 @@ object AppMakerSqlSetupNotification {
     __obj.asInstanceOf[AppMakerSqlSetupNotification]
   }
   
-  extension [Self <: AppMakerSqlSetupNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppMakerSqlSetupNotification] (val x: Self) extends AnyVal {
     
     inline def setRequestInfo(value: js.Array[RequestInfo]): Self = StObject.set(x, "requestInfo", value.asInstanceOf[js.Any])
     

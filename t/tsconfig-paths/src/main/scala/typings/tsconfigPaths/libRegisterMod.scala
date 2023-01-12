@@ -31,7 +31,8 @@ object libRegisterMod {
       __obj.asInstanceOf[RegisterParams]
     }
     
-    extension [Self <: RegisterParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterParams] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

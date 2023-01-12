@@ -18,7 +18,8 @@ object ToBitmapOptions {
     __obj.asInstanceOf[ToBitmapOptions]
   }
   
-  extension [Self <: ToBitmapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToBitmapOptions] (val x: Self) extends AnyVal {
     
     inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     

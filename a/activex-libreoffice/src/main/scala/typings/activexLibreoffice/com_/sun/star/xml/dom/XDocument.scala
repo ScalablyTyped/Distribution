@@ -171,7 +171,8 @@ object XDocument {
     __obj.asInstanceOf[XDocument]
   }
   
-  extension [Self <: XDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocument] (val x: Self) extends AnyVal {
     
     inline def setCreateAttribute(value: String => XAttr): Self = StObject.set(x, "createAttribute", js.Any.fromFunction1(value))
     

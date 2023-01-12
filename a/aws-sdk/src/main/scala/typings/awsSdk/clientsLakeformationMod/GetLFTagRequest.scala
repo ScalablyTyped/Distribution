@@ -23,7 +23,8 @@ object GetLFTagRequest {
     __obj.asInstanceOf[GetLFTagRequest]
   }
   
-  extension [Self <: GetLFTagRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLFTagRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

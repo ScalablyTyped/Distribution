@@ -234,7 +234,8 @@ object NodeSnapshot {
     __obj.asInstanceOf[NodeSnapshot]
   }
   
-  extension [Self <: NodeSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeSnapshot] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object PreloadBundles {
     __obj.asInstanceOf[PreloadBundles]
   }
   
-  extension [Self <: PreloadBundles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreloadBundles] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: js.Array[js.Object | String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

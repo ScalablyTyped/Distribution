@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[`0`[T]]
     }
     
-    extension [Self <: `0`[?], T](x: Self & `0`[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?], T] (val x: Self & `0`[T]) extends AnyVal {
       
       inline def setChildren(value: T => ComponentChildren): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[ChildrenComponentChildren]
     }
     
-    extension [Self <: ChildrenComponentChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildrenComponentChildren] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: typings.preact.srcInternalMod.ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -84,7 +87,8 @@ object anon {
       __obj.asInstanceOf[CurrentTarget[Target]]
     }
     
-    extension [Self <: CurrentTarget[?], Target /* <: EventTarget */](x: Self & CurrentTarget[Target]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentTarget[?], Target /* <: EventTarget */] (val x: Self & CurrentTarget[Target]) extends AnyVal {
       
       inline def setCurrentTarget(value: Target): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     }
@@ -101,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Html]
     }
     
-    extension [Self <: Html](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
       inline def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
     }
@@ -120,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Ref[RefType]]
     }
     
-    extension [Self <: Ref[?], RefType](x: Self & Ref[RefType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref[?], RefType] (val x: Self & Ref[RefType]) extends AnyVal {
       
       inline def setChildren(value: ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -226,7 +232,8 @@ object anon {
       __obj.asInstanceOf[TargetedEventEventTargetE]
     }
     
-    extension [Self <: TargetedEventEventTargetE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetedEventEventTargetE] (val x: Self) extends AnyVal {
       
       inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
       
@@ -295,7 +302,8 @@ object anon {
       __obj.asInstanceOf[Value[T]]
     }
     
-    extension [Self <: Value[?], T](x: Self & Value[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value[?], T] (val x: Self & Value[T]) extends AnyVal {
       
       inline def setChildren(value: ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object ClassSpec {
     __obj.asInstanceOf[ClassSpec]
   }
   
-  extension [Self <: ClassSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassSpec] (val x: Self) extends AnyVal {
     
     inline def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

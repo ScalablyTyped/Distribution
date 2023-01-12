@@ -18,7 +18,8 @@ object ExtensionLicensing {
     __obj.asInstanceOf[ExtensionLicensing]
   }
   
-  extension [Self <: ExtensionLicensing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionLicensing] (val x: Self) extends AnyVal {
     
     inline def setOverrides(value: js.Array[LicensingOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     

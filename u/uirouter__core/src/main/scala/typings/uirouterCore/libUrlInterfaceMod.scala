@@ -38,7 +38,8 @@ object libUrlInterfaceMod {
       __obj.asInstanceOf[MatchResult]
     }
     
-    extension [Self <: MatchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchResult] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object libUrlInterfaceMod {
       __obj.asInstanceOf[MatcherUrlRule]
     }
     
-    extension [Self <: MatcherUrlRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatcherUrlRule] (val x: Self) extends AnyVal {
       
       inline def setType(value: URLMATCHER | STATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object libUrlInterfaceMod {
       __obj.asInstanceOf[RegExpRule]
     }
     
-    extension [Self <: RegExpRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegExpRule] (val x: Self) extends AnyVal {
       
       inline def setRegexp(value: js.RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object libUrlInterfaceMod {
       __obj.asInstanceOf[StateRule]
     }
     
-    extension [Self <: StateRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateRule] (val x: Self) extends AnyVal {
       
       inline def setState(value: StateObject): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
@@ -175,7 +179,8 @@ object libUrlInterfaceMod {
       __obj.asInstanceOf[UrlMatcherCompileConfig]
     }
     
-    extension [Self <: UrlMatcherCompileConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlMatcherCompileConfig] (val x: Self) extends AnyVal {
       
       inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
       
@@ -238,7 +243,8 @@ object libUrlInterfaceMod {
       __obj.asInstanceOf[UrlMatcherConfig]
     }
     
-    extension [Self <: UrlMatcherConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlMatcherConfig] (val x: Self) extends AnyVal {
       
       inline def setCaseInsensitive(value: /* value */ js.UndefOr[Boolean] => Boolean): Self = StObject.set(x, "caseInsensitive", js.Any.fromFunction1(value))
       
@@ -267,7 +273,8 @@ object libUrlInterfaceMod {
       __obj.asInstanceOf[UrlParts]
     }
     
-    extension [Self <: UrlParts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlParts] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -374,7 +381,8 @@ object libUrlInterfaceMod {
       __obj.asInstanceOf[UrlRule]
     }
     
-    extension [Self <: UrlRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlRule] (val x: Self) extends AnyVal {
       
       inline def set$id(value: Double): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       
@@ -495,7 +503,8 @@ object libUrlInterfaceMod {
       __obj.asInstanceOf[UrlRulesApi]
     }
     
-    extension [Self <: UrlRulesApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlRulesApi] (val x: Self) extends AnyVal {
       
       inline def setInitial(value: /* handler */ String | UrlRuleHandlerFn | TargetState | TargetStateDef => Unit): Self = StObject.set(x, "initial", js.Any.fromFunction1(value))
       
@@ -543,7 +552,8 @@ object libUrlInterfaceMod {
       __obj.asInstanceOf[UrlSyncApi]
     }
     
-    extension [Self <: UrlSyncApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlSyncApi] (val x: Self) extends AnyVal {
       
       inline def setDeferIntercept(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['deferIntercept'] */ js.Any) & (js.Function1[/* defer */ js.UndefOr[Boolean], Unit])

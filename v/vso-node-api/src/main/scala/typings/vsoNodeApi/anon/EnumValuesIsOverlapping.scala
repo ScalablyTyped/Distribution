@@ -15,7 +15,8 @@ object EnumValuesIsOverlapping {
     __obj.asInstanceOf[EnumValuesIsOverlapping]
   }
   
-  extension [Self <: EnumValuesIsOverlapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesIsOverlapping] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: IsOverlapping): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

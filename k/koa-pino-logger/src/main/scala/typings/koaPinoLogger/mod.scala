@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[Middleware]
     }
     
-    extension [Self <: Middleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: Logger[LoggerOptions]): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object mod {
         __obj.asInstanceOf[ExtendableContext]
       }
       
-      extension [Self <: ExtendableContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtendableContext] (val x: Self) extends AnyVal {
         
         inline def setLog(value: Logger[LoggerOptions]): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       }

@@ -19,7 +19,8 @@ object LongRunningUrlBasedRequestPrepareOptions {
     __obj.asInstanceOf[LongRunningUrlBasedRequestPrepareOptions]
   }
   
-  extension [Self <: LongRunningUrlBasedRequestPrepareOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongRunningUrlBasedRequestPrepareOptions] (val x: Self) extends AnyVal {
     
     inline def setDeserializationMapperForTerminalResponse(value: Mapper): Self = StObject.set(x, "deserializationMapperForTerminalResponse", value.asInstanceOf[js.Any])
     

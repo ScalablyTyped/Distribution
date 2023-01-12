@@ -92,7 +92,8 @@ object typesHelpersHelpersDotoptionsMod {
       __obj.asInstanceOf[CanvasFontSpec]
     }
     
-    extension [Self <: CanvasFontSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasFontSpec] (val x: Self) extends AnyVal {
       
       inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }

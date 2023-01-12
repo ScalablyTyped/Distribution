@@ -37,7 +37,8 @@ object broadcastCacheUpdateMod {
         __obj.asInstanceOf[NotifyIfUpdatedOptions]
       }
       
-      extension [Self <: NotifyIfUpdatedOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NotifyIfUpdatedOptions] (val x: Self) extends AnyVal {
         
         inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
         
@@ -71,7 +72,8 @@ object broadcastCacheUpdateMod {
       __obj.asInstanceOf[BroadcastCacheUpdateOptions]
     }
     
-    extension [Self <: BroadcastCacheUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastCacheUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       

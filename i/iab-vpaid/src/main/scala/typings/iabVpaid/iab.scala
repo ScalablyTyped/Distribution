@@ -44,7 +44,8 @@ object iab {
         __obj.asInstanceOf[CreativeData]
       }
       
-      extension [Self <: CreativeData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreativeData] (val x: Self) extends AnyVal {
         
         inline def setAdParameters(value: String): Self = StObject.set(x, "AdParameters", value.asInstanceOf[js.Any])
       }
@@ -74,7 +75,8 @@ object iab {
         __obj.asInstanceOf[EnvironmentVars]
       }
       
-      extension [Self <: EnvironmentVars](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EnvironmentVars] (val x: Self) extends AnyVal {
         
         inline def setSlot(value: HTMLElement): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
         
@@ -218,7 +220,8 @@ object iab {
         __obj.asInstanceOf[EventsMap]
       }
       
-      extension [Self <: EventsMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventsMap] (val x: Self) extends AnyVal {
         
         inline def setAdClickThru(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "AdClickThru", js.Any.fromFunction3(value))
         
@@ -381,7 +384,8 @@ object iab {
         __obj.asInstanceOf[ParameterizedEventsMap]
       }
       
-      extension [Self <: ParameterizedEventsMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParameterizedEventsMap] (val x: Self) extends AnyVal {
         
         inline def setAdClickThru(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "AdClickThru", js.Any.fromFunction3(value))
         
@@ -586,7 +590,8 @@ object iab {
         __obj.asInstanceOf[SimpleEventsMap]
       }
       
-      extension [Self <: SimpleEventsMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SimpleEventsMap] (val x: Self) extends AnyVal {
         
         inline def setAdDurationChange(value: () => Unit): Self = StObject.set(x, "AdDurationChange", js.Any.fromFunction0(value))
         

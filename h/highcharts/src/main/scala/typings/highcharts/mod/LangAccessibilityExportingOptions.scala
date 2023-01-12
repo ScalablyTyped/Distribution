@@ -17,7 +17,8 @@ object LangAccessibilityExportingOptions {
     __obj.asInstanceOf[LangAccessibilityExportingOptions]
   }
   
-  extension [Self <: LangAccessibilityExportingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilityExportingOptions] (val x: Self) extends AnyVal {
     
     inline def setChartMenuLabel(value: String): Self = StObject.set(x, "chartMenuLabel", value.asInstanceOf[js.Any])
     

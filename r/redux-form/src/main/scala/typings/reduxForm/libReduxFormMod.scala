@@ -84,7 +84,8 @@ object libReduxFormMod {
       __obj.asInstanceOf[AsyncValidateCallback[FormData, ErrorType]]
     }
     
-    extension [Self <: AsyncValidateCallback[?, ?], FormData, ErrorType](x: Self & (AsyncValidateCallback[FormData, ErrorType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncValidateCallback[?, ?], FormData, ErrorType] (val x: Self & (AsyncValidateCallback[FormData, ErrorType])) extends AnyVal {
       
       inline def setAsyncErrors(value: FormErrors[FormData, ErrorType]): Self = StObject.set(x, "asyncErrors", value.asInstanceOf[js.Any])
       
@@ -234,7 +235,8 @@ object libReduxFormMod {
       __obj.asInstanceOf[ConfigProps[FormData, P, ErrorType]]
     }
     
-    extension [Self <: ConfigProps[?, ?, ?], FormData, P, ErrorType](x: Self & (ConfigProps[FormData, P, ErrorType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigProps[?, ?, ?], FormData, P, ErrorType] (val x: Self & (ConfigProps[FormData, P, ErrorType])) extends AnyVal {
       
       inline def setAsyncBlurFields(value: js.Array[String]): Self = StObject.set(x, "asyncBlurFields", value.asInstanceOf[js.Any])
       
@@ -502,7 +504,8 @@ object libReduxFormMod {
       __obj.asInstanceOf[DecoratedFormActions[ErrorType]]
     }
     
-    extension [Self <: DecoratedFormActions[?], ErrorType](x: Self & DecoratedFormActions[ErrorType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoratedFormActions[?], ErrorType] (val x: Self & DecoratedFormActions[ErrorType]) extends AnyVal {
       
       inline def setArray(value: InjectedArrayProps): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -635,7 +638,8 @@ object libReduxFormMod {
       __obj.asInstanceOf[DecoratedFormState[FormData, ErrorType]]
     }
     
-    extension [Self <: DecoratedFormState[?, ?], FormData, ErrorType](x: Self & (DecoratedFormState[FormData, ErrorType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoratedFormState[?, ?], FormData, ErrorType] (val x: Self & (DecoratedFormState[FormData, ErrorType])) extends AnyVal {
       
       inline def setAsyncErrors(value: FormErrors[FormData, ErrorType]): Self = StObject.set(x, "asyncErrors", value.asInstanceOf[js.Any])
       
@@ -813,7 +817,8 @@ object libReduxFormMod {
       __obj.asInstanceOf[InjectedArrayProps]
     }
     
-    extension [Self <: InjectedArrayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedArrayProps] (val x: Self) extends AnyVal {
       
       inline def setInsert(value: (String, Double, Any) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction3(value))
       
@@ -928,7 +933,8 @@ object libReduxFormMod {
       __obj.asInstanceOf[InjectedFormProps[FormData, P, ErrorType]]
     }
     
-    extension [Self <: InjectedFormProps[?, ?, ?], FormData, P, ErrorType](x: Self & (InjectedFormProps[FormData, P, ErrorType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedFormProps[?, ?, ?], FormData, P, ErrorType] (val x: Self & (InjectedFormProps[FormData, P, ErrorType])) extends AnyVal {
       
       inline def setAnyTouched(value: Boolean): Self = StObject.set(x, "anyTouched", value.asInstanceOf[js.Any])
       
@@ -1004,7 +1010,8 @@ object libReduxFormMod {
       __obj.asInstanceOf[RegisteredField]
     }
     
-    extension [Self <: RegisteredField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisteredField] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -1184,7 +1191,8 @@ object libReduxFormMod {
       __obj.asInstanceOf[ValidateCallback[FormData, P, ErrorType]]
     }
     
-    extension [Self <: ValidateCallback[?, ?, ?], FormData, P, ErrorType](x: Self & (ValidateCallback[FormData, P, ErrorType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateCallback[?, ?, ?], FormData, P, ErrorType] (val x: Self & (ValidateCallback[FormData, P, ErrorType])) extends AnyVal {
       
       inline def setFieldValidatorKeys(value: js.Array[String]): Self = StObject.set(x, "fieldValidatorKeys", value.asInstanceOf[js.Any])
       
@@ -1217,7 +1225,8 @@ object libReduxFormMod {
       __obj.asInstanceOf[WrappedReduxFormContext]
     }
     
-    extension [Self <: WrappedReduxFormContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappedReduxFormContext] (val x: Self) extends AnyVal {
       
       inline def set_reduxForm(value: FormContext): Self = StObject.set(x, "_reduxForm", value.asInstanceOf[js.Any])
     }

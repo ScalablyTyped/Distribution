@@ -86,7 +86,8 @@ object utilsTreeDataUtilsMod {
       __obj.asInstanceOf[WalkAndMapFunctionParameters[T]]
     }
     
-    extension [Self <: WalkAndMapFunctionParameters[?], T](x: Self & WalkAndMapFunctionParameters[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkAndMapFunctionParameters[?], T] (val x: Self & WalkAndMapFunctionParameters[T]) extends AnyVal {
       
       inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       

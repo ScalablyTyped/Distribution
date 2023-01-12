@@ -42,7 +42,8 @@ object XShapeGrouper {
     __obj.asInstanceOf[XShapeGrouper]
   }
   
-  extension [Self <: XShapeGrouper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShapeGrouper] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: XShapes => XShapeGroup): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
     

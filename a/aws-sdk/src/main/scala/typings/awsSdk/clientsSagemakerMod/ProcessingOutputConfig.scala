@@ -23,7 +23,8 @@ object ProcessingOutputConfig {
     __obj.asInstanceOf[ProcessingOutputConfig]
   }
   
-  extension [Self <: ProcessingOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

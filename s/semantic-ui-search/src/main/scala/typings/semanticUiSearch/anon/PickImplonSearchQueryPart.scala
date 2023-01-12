@@ -99,7 +99,8 @@ object PickImplonSearchQueryPart {
     __obj.asInstanceOf[PickImplonSearchQueryPart]
   }
   
-  extension [Self <: PickImplonSearchQueryPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplonSearchQueryPart] (val x: Self) extends AnyVal {
     
     inline def setApiSettings(value: ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
     

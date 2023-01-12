@@ -35,7 +35,8 @@ object leafletMod {
         __obj.asInstanceOf[PanControlOptions]
       }
       
-      extension [Self <: PanControlOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PanControlOptions] (val x: Self) extends AnyVal {
         
         inline def setPanOffset(value: Double): Self = StObject.set(x, "panOffset", value.asInstanceOf[js.Any])
         
@@ -65,7 +66,8 @@ object leafletMod {
       __obj.asInstanceOf[MapOptions]
     }
     
-    extension [Self <: MapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
       
       inline def setPanControl(value: Boolean): Self = StObject.set(x, "panControl", value.asInstanceOf[js.Any])
       

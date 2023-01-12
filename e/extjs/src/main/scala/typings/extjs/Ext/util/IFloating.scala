@@ -61,7 +61,8 @@ object IFloating {
     __obj.asInstanceOf[IFloating]
   }
   
-  extension [Self <: IFloating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFloating] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: () => IComponent): Self = StObject.set(x, "center", js.Any.fromFunction0(value))
     

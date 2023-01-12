@@ -23,7 +23,8 @@ object UpdateBackendAuthMFAConfig {
     __obj.asInstanceOf[UpdateBackendAuthMFAConfig]
   }
   
-  extension [Self <: UpdateBackendAuthMFAConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBackendAuthMFAConfig] (val x: Self) extends AnyVal {
     
     inline def setMFAMode(value: MFAMode): Self = StObject.set(x, "MFAMode", value.asInstanceOf[js.Any])
     

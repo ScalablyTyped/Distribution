@@ -53,7 +53,8 @@ object `0PatchAll` {
     __obj.asInstanceOf[`0PatchAll`[O, Os, I, depth, ignore, fill]]
   }
   
-  extension [Self <: `0PatchAll`[?, ?, ?, ?, ?, ?], O /* <: js.Object */, Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](x: Self & (`0PatchAll`[O, Os, I, depth, ignore, fill])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0PatchAll`[?, ?, ?, ?, ?, ?], O /* <: js.Object */, Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */] (val x: Self & (`0PatchAll`[O, Os, I, depth, ignore, fill])) extends AnyVal {
     
     inline def set0(
       value: __PatchAll[

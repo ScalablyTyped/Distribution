@@ -43,7 +43,8 @@ object Contains {
     __obj.asInstanceOf[Contains[A, A1]]
   }
   
-  extension [Self <: Contains[?, ?], A /* <: Any */, A1 /* <: Any */](x: Self & (Contains[A, A1])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contains[?, ?], A /* <: Any */, A1 /* <: Any */] (val x: Self & (Contains[A, A1])) extends AnyVal {
     
     inline def `setContains-Greaterthansign`(value: typings.tsToolbelt.outAnyContainsMod.Contains[A, A1]): Self = StObject.set(x, "contains->", value.asInstanceOf[js.Any])
     

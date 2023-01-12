@@ -25,7 +25,8 @@ object AuthEventConsumer {
     __obj.asInstanceOf[AuthEventConsumer]
   }
   
-  extension [Self <: AuthEventConsumer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthEventConsumer] (val x: Self) extends AnyVal {
     
     inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     

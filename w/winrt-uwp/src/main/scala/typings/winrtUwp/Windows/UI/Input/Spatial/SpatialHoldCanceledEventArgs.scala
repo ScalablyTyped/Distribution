@@ -15,7 +15,8 @@ object SpatialHoldCanceledEventArgs {
     __obj.asInstanceOf[SpatialHoldCanceledEventArgs]
   }
   
-  extension [Self <: SpatialHoldCanceledEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialHoldCanceledEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInteractionSourceKind(value: Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
   }

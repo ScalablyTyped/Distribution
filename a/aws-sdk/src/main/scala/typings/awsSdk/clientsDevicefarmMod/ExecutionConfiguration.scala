@@ -38,7 +38,8 @@ object ExecutionConfiguration {
     __obj.asInstanceOf[ExecutionConfiguration]
   }
   
-  extension [Self <: ExecutionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAccountsCleanup(value: AccountsCleanup): Self = StObject.set(x, "accountsCleanup", value.asInstanceOf[js.Any])
     

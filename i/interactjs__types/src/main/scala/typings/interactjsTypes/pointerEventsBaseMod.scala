@@ -45,7 +45,8 @@ object pointerEventsBaseMod extends Shortcut {
       __obj.asInstanceOf[PointerEventOptions]
     }
     
-    extension [Self <: PointerEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointerEventOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowFrom(value: Any): Self = StObject.set(x, "allowFrom", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object pointerEventsBaseMod extends Shortcut {
         __obj.asInstanceOf[Interaction]
       }
       
-      extension [Self <: Interaction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
         
         inline def setPrevTap(value: PointerEvent): Self = StObject.set(x, "prevTap", value.asInstanceOf[js.Any])
         
@@ -115,7 +117,8 @@ object pointerEventsBaseMod extends Shortcut {
         __obj.asInstanceOf[ActionDefaults]
       }
       
-      extension [Self <: ActionDefaults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActionDefaults] (val x: Self) extends AnyVal {
         
         inline def setPointerEvents(value: Options): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
       }
@@ -136,7 +139,8 @@ object pointerEventsBaseMod extends Shortcut {
         __obj.asInstanceOf[PointerInfo]
       }
       
-      extension [Self <: PointerInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PointerInfo] (val x: Self) extends AnyVal {
         
         inline def setHold(value: Duration): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
         
@@ -159,7 +163,8 @@ object pointerEventsBaseMod extends Shortcut {
         __obj.asInstanceOf[Scope]
       }
       
-      extension [Self <: Scope](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
         
         inline def setPointerEvents(value: Plugin): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
       }
@@ -190,7 +195,8 @@ object pointerEventsBaseMod extends Shortcut {
         __obj.asInstanceOf[SignalArgs]
       }
       
-      extension [Self <: SignalArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SignalArgs] (val x: Self) extends AnyVal {
         
         inline def `setPointerEventsColoncollect-targets`(value: Node): Self = StObject.set(x, "pointerEvents:collect-targets", value.asInstanceOf[js.Any])
         

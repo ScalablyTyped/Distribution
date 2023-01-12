@@ -38,7 +38,8 @@ object RecordPatch {
     __obj.asInstanceOf[RecordPatch]
   }
   
-  extension [Self <: RecordPatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordPatch] (val x: Self) extends AnyVal {
     
     inline def setDeviceLastModifiedDate(value: js.Date): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object OcrRequest {
     __obj.asInstanceOf[OcrRequest]
   }
   
-  extension [Self <: OcrRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OcrRequest] (val x: Self) extends AnyVal {
     
     inline def setOcrLanguage(value: String): Self = StObject.set(x, "ocrLanguage", value.asInstanceOf[js.Any])
     

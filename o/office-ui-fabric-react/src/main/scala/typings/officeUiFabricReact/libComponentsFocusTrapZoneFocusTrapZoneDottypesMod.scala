@@ -25,7 +25,8 @@ object libComponentsFocusTrapZoneFocusTrapZoneDottypesMod {
       __obj.asInstanceOf[IFocusTrapZone]
     }
     
-    extension [Self <: IFocusTrapZone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFocusTrapZone] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -120,7 +121,8 @@ object libComponentsFocusTrapZoneFocusTrapZoneDottypesMod {
       __obj.asInstanceOf[IFocusTrapZoneProps]
     }
     
-    extension [Self <: IFocusTrapZoneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFocusTrapZoneProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       

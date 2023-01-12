@@ -205,7 +205,8 @@ object Progress {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -270,7 +271,8 @@ object Progress {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
@@ -324,7 +326,8 @@ object Progress {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
         
@@ -381,7 +384,8 @@ object Progress {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
@@ -435,13 +439,15 @@ object Progress {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setVariable(value: js.RegExp): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
       }
     }
     
-    extension [Self <: RegExpSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegExpSettings] (val x: Self) extends AnyVal {
       
       inline def setVariable(value: js.RegExp): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     }
@@ -458,7 +464,8 @@ object Progress {
         __obj.asInstanceOf[typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings.Param]
       }
       
-      extension [Self <: typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings.Param](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings.Param] (val x: Self) extends AnyVal {
         
         inline def setVariable(value: js.RegExp): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
       }
@@ -491,7 +498,8 @@ object Progress {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setBar(value: String): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
         
@@ -575,7 +583,8 @@ object Progress {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setActive(value: `false` | String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         

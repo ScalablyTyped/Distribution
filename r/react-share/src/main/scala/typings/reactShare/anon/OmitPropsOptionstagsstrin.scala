@@ -512,7 +512,8 @@ object OmitPropsOptionstagsstrin {
     __obj.asInstanceOf[OmitPropsOptionstagsstrin]
   }
   
-  extension [Self <: OmitPropsOptionstagsstrin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitPropsOptionstagsstrin] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

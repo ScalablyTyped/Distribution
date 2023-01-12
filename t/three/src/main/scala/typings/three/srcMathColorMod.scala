@@ -227,7 +227,8 @@ object srcMathColorMod {
       __obj.asInstanceOf[HSL]
     }
     
-    extension [Self <: HSL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSL] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object srcMathColorMod {
       __obj.asInstanceOf[RGB]
     }
     
-    extension [Self <: RGB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       

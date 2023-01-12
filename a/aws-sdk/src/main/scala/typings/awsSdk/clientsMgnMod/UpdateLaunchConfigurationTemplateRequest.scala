@@ -23,7 +23,8 @@ object UpdateLaunchConfigurationTemplateRequest {
     __obj.asInstanceOf[UpdateLaunchConfigurationTemplateRequest]
   }
   
-  extension [Self <: UpdateLaunchConfigurationTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLaunchConfigurationTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setLaunchConfigurationTemplateID(value: LaunchConfigurationTemplateID): Self = StObject.set(x, "launchConfigurationTemplateID", value.asInstanceOf[js.Any])
     

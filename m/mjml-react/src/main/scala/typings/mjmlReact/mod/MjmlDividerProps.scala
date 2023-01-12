@@ -29,7 +29,8 @@ object MjmlDividerProps {
     __obj.asInstanceOf[MjmlDividerProps]
   }
   
-  extension [Self <: MjmlDividerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlDividerProps] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: BorderColor): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object PointerArgPropstypeupcurECurEventTarget {
     __obj.asInstanceOf[PointerArgPropstypeupcurECurEventTarget]
   }
   
-  extension [Self <: PointerArgPropstypeupcurECurEventTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerArgPropstypeupcurECurEventTarget] (val x: Self) extends AnyVal {
     
     inline def setCurEventTarget(value: typings.std.EventTarget): Self = StObject.set(x, "curEventTarget", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object EventRenderRange {
     __obj.asInstanceOf[EventRenderRange]
   }
   
-  extension [Self <: EventRenderRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventRenderRange] (val x: Self) extends AnyVal {
     
     inline def setIsEnd(value: Boolean): Self = StObject.set(x, "isEnd", value.asInstanceOf[js.Any])
     

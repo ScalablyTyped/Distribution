@@ -28,7 +28,8 @@ object WeightedTarget {
     __obj.asInstanceOf[WeightedTarget]
   }
   
-  extension [Self <: WeightedTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeightedTarget] (val x: Self) extends AnyVal {
     
     inline def setPort(value: ListenerPort): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     

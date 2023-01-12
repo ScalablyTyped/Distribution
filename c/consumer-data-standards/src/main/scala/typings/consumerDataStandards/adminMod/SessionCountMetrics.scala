@@ -26,7 +26,8 @@ object SessionCountMetrics {
     __obj.asInstanceOf[SessionCountMetrics]
   }
   
-  extension [Self <: SessionCountMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionCountMetrics] (val x: Self) extends AnyVal {
     
     inline def setCurrentDay(value: Double): Self = StObject.set(x, "currentDay", value.asInstanceOf[js.Any])
     

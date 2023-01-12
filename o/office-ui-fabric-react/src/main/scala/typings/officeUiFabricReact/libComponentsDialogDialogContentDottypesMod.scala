@@ -181,7 +181,8 @@ object libComponentsDialogDialogContentDottypesMod {
       __obj.asInstanceOf[IDialogContentProps]
     }
     
-    extension [Self <: IDialogContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogContentProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -294,7 +295,8 @@ object libComponentsDialogDialogContentDottypesMod {
       __obj.asInstanceOf[IDialogContentStyleProps]
     }
     
-    extension [Self <: IDialogContentStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogContentStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -352,7 +354,8 @@ object libComponentsDialogDialogContentDottypesMod {
       __obj.asInstanceOf[IDialogContentStyles]
     }
     
-    extension [Self <: IDialogContentStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogContentStyles] (val x: Self) extends AnyVal {
       
       inline def setButton(value: IStyle): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ListMonitoringExecutionsResponse {
     __obj.asInstanceOf[ListMonitoringExecutionsResponse]
   }
   
-  extension [Self <: ListMonitoringExecutionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMonitoringExecutionsResponse] (val x: Self) extends AnyVal {
     
     inline def setMonitoringExecutionSummaries(value: MonitoringExecutionSummaryList): Self = StObject.set(x, "MonitoringExecutionSummaries", value.asInstanceOf[js.Any])
     

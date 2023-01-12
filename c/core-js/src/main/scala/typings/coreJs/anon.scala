@@ -138,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Asinh]
     }
     
-    extension [Self <: Asinh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Asinh] (val x: Self) extends AnyVal {
       
       inline def setAcosh(value: Double => Double): Self = StObject.set(x, "acosh", js.Any.fromFunction1(value))
       
@@ -276,7 +277,8 @@ object anon {
       __obj.asInstanceOf[Bind]
     }
     
-    extension [Self <: Bind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bind] (val x: Self) extends AnyVal {
       
       inline def setBind(value: (Function, Any, /* repeated */ Any) => Any): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
       
@@ -511,7 +513,8 @@ object anon {
       __obj.asInstanceOf[Escape]
     }
     
-    extension [Self <: Escape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Escape] (val x: Self) extends AnyVal {
       
       inline def setEscape(value: java.lang.String => java.lang.String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
     }

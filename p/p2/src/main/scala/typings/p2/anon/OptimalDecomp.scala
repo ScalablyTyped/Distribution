@@ -19,7 +19,8 @@ object OptimalDecomp {
     __obj.asInstanceOf[OptimalDecomp]
   }
   
-  extension [Self <: OptimalDecomp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimalDecomp] (val x: Self) extends AnyVal {
     
     inline def setOptimalDecomp(value: Boolean): Self = StObject.set(x, "optimalDecomp", value.asInstanceOf[js.Any])
     

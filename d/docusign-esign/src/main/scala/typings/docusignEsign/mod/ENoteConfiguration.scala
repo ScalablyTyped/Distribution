@@ -40,7 +40,8 @@ object ENoteConfiguration {
     __obj.asInstanceOf[ENoteConfiguration]
   }
   
-  extension [Self <: ENoteConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ENoteConfiguration] (val x: Self) extends AnyVal {
     
     inline def setConnectConfigured(value: String): Self = StObject.set(x, "connectConfigured", value.asInstanceOf[js.Any])
     

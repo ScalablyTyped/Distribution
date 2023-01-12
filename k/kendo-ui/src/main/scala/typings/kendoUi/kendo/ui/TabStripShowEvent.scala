@@ -20,7 +20,8 @@ object TabStripShowEvent {
     __obj.asInstanceOf[TabStripShowEvent]
   }
   
-  extension [Self <: TabStripShowEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabStripShowEvent] (val x: Self) extends AnyVal {
     
     inline def setContentElement(value: Element): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     

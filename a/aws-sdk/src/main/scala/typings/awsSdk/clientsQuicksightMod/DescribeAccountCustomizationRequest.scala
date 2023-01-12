@@ -28,7 +28,8 @@ object DescribeAccountCustomizationRequest {
     __obj.asInstanceOf[DescribeAccountCustomizationRequest]
   }
   
-  extension [Self <: DescribeAccountCustomizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccountCustomizationRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

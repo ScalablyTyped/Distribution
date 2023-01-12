@@ -23,7 +23,8 @@ object ICanvasDimensionsOptions {
     __obj.asInstanceOf[ICanvasDimensionsOptions]
   }
   
-  extension [Self <: ICanvasDimensionsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICanvasDimensionsOptions] (val x: Self) extends AnyVal {
     
     inline def setBackstoreOnly(value: Boolean): Self = StObject.set(x, "backstoreOnly", value.asInstanceOf[js.Any])
     

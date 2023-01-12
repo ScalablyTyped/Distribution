@@ -17,7 +17,8 @@ object LeftBtn {
     __obj.asInstanceOf[LeftBtn]
   }
   
-  extension [Self <: LeftBtn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeftBtn] (val x: Self) extends AnyVal {
     
     inline def setLeftBtn(value: String): Self = StObject.set(x, "leftBtn", value.asInstanceOf[js.Any])
     

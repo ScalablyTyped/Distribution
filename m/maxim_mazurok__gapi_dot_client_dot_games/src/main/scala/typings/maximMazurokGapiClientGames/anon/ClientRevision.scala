@@ -53,7 +53,8 @@ object ClientRevision {
     __obj.asInstanceOf[ClientRevision]
   }
   
-  extension [Self <: ClientRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientRevision] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

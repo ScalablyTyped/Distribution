@@ -17,7 +17,8 @@ object JsxBlockquoteElementProps {
     __obj.asInstanceOf[JsxBlockquoteElementProps]
   }
   
-  extension [Self <: JsxBlockquoteElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxBlockquoteElementProps] (val x: Self) extends AnyVal {
     
     inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     

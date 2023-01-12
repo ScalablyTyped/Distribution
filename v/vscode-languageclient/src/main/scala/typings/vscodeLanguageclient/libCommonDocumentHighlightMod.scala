@@ -53,7 +53,8 @@ object libCommonDocumentHighlightMod {
       __obj.asInstanceOf[DocumentHighlightMiddleware]
     }
     
-    extension [Self <: DocumentHighlightMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentHighlightMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideDocumentHighlights(
         value: js.ThisFunction4[

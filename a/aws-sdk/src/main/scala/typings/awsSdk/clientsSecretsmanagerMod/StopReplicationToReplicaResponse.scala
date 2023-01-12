@@ -18,7 +18,8 @@ object StopReplicationToReplicaResponse {
     __obj.asInstanceOf[StopReplicationToReplicaResponse]
   }
   
-  extension [Self <: StopReplicationToReplicaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopReplicationToReplicaResponse] (val x: Self) extends AnyVal {
     
     inline def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

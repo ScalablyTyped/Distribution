@@ -18,7 +18,8 @@ object DispatchEvent {
     __obj.asInstanceOf[DispatchEvent]
   }
   
-  extension [Self <: DispatchEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatchEvent] (val x: Self) extends AnyVal {
     
     inline def setDispatchEvent(value: Boolean): Self = StObject.set(x, "dispatchEvent", value.asInstanceOf[js.Any])
     

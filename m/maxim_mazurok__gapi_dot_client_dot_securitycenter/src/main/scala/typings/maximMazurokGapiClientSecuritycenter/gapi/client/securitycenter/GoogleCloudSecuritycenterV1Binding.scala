@@ -25,7 +25,8 @@ object GoogleCloudSecuritycenterV1Binding {
     __obj.asInstanceOf[GoogleCloudSecuritycenterV1Binding]
   }
   
-  extension [Self <: GoogleCloudSecuritycenterV1Binding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSecuritycenterV1Binding] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

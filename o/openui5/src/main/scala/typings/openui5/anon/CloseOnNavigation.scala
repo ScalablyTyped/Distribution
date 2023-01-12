@@ -109,7 +109,8 @@ object CloseOnNavigation {
     __obj.asInstanceOf[CloseOnNavigation]
   }
   
-  extension [Self <: CloseOnNavigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseOnNavigation] (val x: Self) extends AnyVal {
     
     inline def setActions(
       value: typings.openui5.sapMMessageBoxMod.Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String) | (js.Array[

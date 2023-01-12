@@ -66,7 +66,8 @@ object libEsmCellFormatsJsonFormatMod {
       __obj.asInstanceOf[IJSONFormatProps]
     }
     
-    extension [Self <: IJSONFormatProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJSONFormatProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

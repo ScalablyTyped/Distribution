@@ -120,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Delaunator[P]]
     }
     
-    extension [Self <: Delaunator[?], P](x: Self & Delaunator[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delaunator[?], P] (val x: Self & Delaunator[P]) extends AnyVal {
       
       inline def setCoords(value: ArrayLike[Double] | js.typedarray.Float64Array): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       

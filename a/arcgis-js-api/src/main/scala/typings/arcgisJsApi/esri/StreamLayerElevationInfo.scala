@@ -51,7 +51,8 @@ object StreamLayerElevationInfo {
     __obj.asInstanceOf[StreamLayerElevationInfo]
   }
   
-  extension [Self <: StreamLayerElevationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamLayerElevationInfo] (val x: Self) extends AnyVal {
     
     inline def setFeatureExpressionInfo(value: StreamLayerElevationInfoFeatureExpressionInfo): Self = StObject.set(x, "featureExpressionInfo", value.asInstanceOf[js.Any])
     

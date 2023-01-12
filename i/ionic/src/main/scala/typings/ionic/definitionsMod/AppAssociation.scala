@@ -15,7 +15,8 @@ object AppAssociation {
     __obj.asInstanceOf[AppAssociation]
   }
   
-  extension [Self <: AppAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppAssociation] (val x: Self) extends AnyVal {
     
     inline def setRepository(value: RepoAssociation): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }

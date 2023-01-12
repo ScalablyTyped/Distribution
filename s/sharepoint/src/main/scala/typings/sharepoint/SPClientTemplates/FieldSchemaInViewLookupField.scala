@@ -48,7 +48,8 @@ object FieldSchemaInViewLookupField {
     __obj.asInstanceOf[FieldSchemaInViewLookupField]
   }
   
-  extension [Self <: FieldSchemaInViewLookupField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInViewLookupField] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleValues(value: String): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
     

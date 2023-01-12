@@ -28,7 +28,8 @@ object srcComponentsLevelMod extends Shortcut {
       __obj.asInstanceOf[LevelProps]
     }
     
-    extension [Self <: LevelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelProps] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: mobile): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object srcComponentsLevelMod extends Shortcut {
       __obj.asInstanceOf[LevelSideProps]
     }
     
-    extension [Self <: LevelSideProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelSideProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

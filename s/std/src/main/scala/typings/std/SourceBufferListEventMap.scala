@@ -19,7 +19,8 @@ object SourceBufferListEventMap {
     __obj.asInstanceOf[SourceBufferListEventMap]
   }
   
-  extension [Self <: SourceBufferListEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceBufferListEventMap] (val x: Self) extends AnyVal {
     
     inline def setAddsourcebuffer(value: Event): Self = StObject.set(x, "addsourcebuffer", value.asInstanceOf[js.Any])
     

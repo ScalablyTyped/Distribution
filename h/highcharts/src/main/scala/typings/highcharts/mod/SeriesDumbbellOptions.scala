@@ -106,7 +106,8 @@ object SeriesDumbbellOptions {
     __obj.asInstanceOf[SeriesDumbbellOptions]
   }
   
-  extension [Self <: SeriesDumbbellOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesDumbbellOptions] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: js.Array[

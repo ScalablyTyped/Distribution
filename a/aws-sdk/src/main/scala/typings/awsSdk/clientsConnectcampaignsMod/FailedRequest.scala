@@ -19,7 +19,8 @@ object FailedRequest {
     __obj.asInstanceOf[FailedRequest]
   }
   
-  extension [Self <: FailedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object SystemData {
     __obj.asInstanceOf[SystemData]
   }
   
-  extension [Self <: SystemData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemData] (val x: Self) extends AnyVal {
     
     inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     

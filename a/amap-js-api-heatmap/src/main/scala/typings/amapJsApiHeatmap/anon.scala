@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[DrawGridLine]
     }
     
-    extension [Self <: DrawGridLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawGridLine] (val x: Self) extends AnyVal {
       
       inline def setDrawGridLine(value: Boolean): Self = StObject.set(x, "drawGridLine", value.asInstanceOf[js.Any])
       

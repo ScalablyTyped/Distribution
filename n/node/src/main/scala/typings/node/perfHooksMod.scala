@@ -312,7 +312,8 @@ object perfHooksMod {
       __obj.asInstanceOf[CreateHistogramOptions]
     }
     
-    extension [Self <: CreateHistogramOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateHistogramOptions] (val x: Self) extends AnyVal {
       
       inline def setFigures(value: Double): Self = StObject.set(x, "figures", value.asInstanceOf[js.Any])
       
@@ -371,7 +372,8 @@ object perfHooksMod {
       __obj.asInstanceOf[EventLoopMonitorOptions]
     }
     
-    extension [Self <: EventLoopMonitorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventLoopMonitorOptions] (val x: Self) extends AnyVal {
       
       inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
@@ -404,7 +406,8 @@ object perfHooksMod {
       __obj.asInstanceOf[EventLoopUtilization]
     }
     
-    extension [Self <: EventLoopUtilization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventLoopUtilization] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -482,7 +485,8 @@ object perfHooksMod {
       __obj.asInstanceOf[Histogram]
     }
     
-    extension [Self <: Histogram](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Histogram] (val x: Self) extends AnyVal {
       
       inline def setExceeds(value: Double): Self = StObject.set(x, "exceeds", value.asInstanceOf[js.Any])
       
@@ -538,7 +542,8 @@ object perfHooksMod {
       __obj.asInstanceOf[IntervalHistogram]
     }
     
-    extension [Self <: IntervalHistogram](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntervalHistogram] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Boolean): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -566,7 +571,8 @@ object perfHooksMod {
       __obj.asInstanceOf[MarkOptions]
     }
     
-    extension [Self <: MarkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkOptions] (val x: Self) extends AnyVal {
       
       inline def setDetail(value: Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
@@ -607,7 +613,8 @@ object perfHooksMod {
       __obj.asInstanceOf[MeasureOptions]
     }
     
-    extension [Self <: MeasureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeasureOptions] (val x: Self) extends AnyVal {
       
       inline def setDetail(value: Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
@@ -650,7 +657,8 @@ object perfHooksMod {
       __obj.asInstanceOf[NodeGCPerformanceDetail]
     }
     
-    extension [Self <: NodeGCPerformanceDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeGCPerformanceDetail] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -970,7 +978,8 @@ object perfHooksMod {
       __obj.asInstanceOf[TimerifyOptions]
     }
     
-    extension [Self <: TimerifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimerifyOptions] (val x: Self) extends AnyVal {
       
       inline def setHistogram(value: RecordableHistogram): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
       

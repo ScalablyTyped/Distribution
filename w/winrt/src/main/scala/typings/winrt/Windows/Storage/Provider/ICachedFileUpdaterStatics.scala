@@ -24,7 +24,8 @@ object ICachedFileUpdaterStatics {
     __obj.asInstanceOf[ICachedFileUpdaterStatics]
   }
   
-  extension [Self <: ICachedFileUpdaterStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICachedFileUpdaterStatics] (val x: Self) extends AnyVal {
     
     inline def setSetUpdateInformation(value: (IStorageFile, String, ReadActivationMode, WriteActivationMode, CachedFileOptions) => Unit): Self = StObject.set(x, "setUpdateInformation", js.Any.fromFunction5(value))
   }

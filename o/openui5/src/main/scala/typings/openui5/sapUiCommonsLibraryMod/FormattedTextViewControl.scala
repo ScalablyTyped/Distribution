@@ -15,7 +15,8 @@ object FormattedTextViewControl {
     __obj.asInstanceOf[FormattedTextViewControl]
   }
   
-  extension [Self <: FormattedTextViewControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattedTextViewControl] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_commons_FormattedTextViewControl(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_commons_FormattedTextViewControl", value.asInstanceOf[js.Any])
   }

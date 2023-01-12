@@ -17,7 +17,8 @@ object WebExtensionManifestCommands {
     __obj.asInstanceOf[WebExtensionManifestCommands]
   }
   
-  extension [Self <: WebExtensionManifestCommands](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestCommands] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

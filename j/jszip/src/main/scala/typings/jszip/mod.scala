@@ -69,7 +69,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CompressionOptions]
     }
     
-    extension [Self <: CompressionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressionOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
@@ -118,7 +119,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[InputByType]
     }
     
-    extension [Self <: InputByType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputByType] (val x: Self) extends AnyVal {
       
       inline def setArray(value: js.Array[Double]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -425,7 +427,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JSZipFileOptions]
     }
     
-    extension [Self <: JSZipFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSZipFileOptions] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -517,7 +520,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JSZipGeneratorOptions[T]]
     }
     
-    extension [Self <: JSZipGeneratorOptions[?], T /* <: OutputType */](x: Self & JSZipGeneratorOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSZipGeneratorOptions[?], T /* <: OutputType */] (val x: Self & JSZipGeneratorOptions[T]) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -576,7 +580,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JSZipLoadOptions]
     }
     
-    extension [Self <: JSZipLoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSZipLoadOptions] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -613,7 +618,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JSZipMetadata]
     }
     
-    extension [Self <: JSZipMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSZipMetadata] (val x: Self) extends AnyVal {
       
       inline def setCurrentFile(value: String): Self = StObject.set(x, "currentFile", value.asInstanceOf[js.Any])
       
@@ -710,7 +716,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JSZipObjectOptions]
     }
     
-    extension [Self <: JSZipObjectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSZipObjectOptions] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     }
@@ -770,7 +777,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JSZipSupport]
     }
     
-    extension [Self <: JSZipSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSZipSupport] (val x: Self) extends AnyVal {
       
       inline def setArraybuffer(value: Boolean): Self = StObject.set(x, "arraybuffer", value.asInstanceOf[js.Any])
       
@@ -821,7 +829,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OutputByType]
     }
     
-    extension [Self <: OutputByType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputByType] (val x: Self) extends AnyVal {
       
       inline def setArray(value: js.Array[Double]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       

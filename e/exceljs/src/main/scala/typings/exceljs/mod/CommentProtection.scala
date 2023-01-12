@@ -19,7 +19,8 @@ object CommentProtection {
     __obj.asInstanceOf[CommentProtection]
   }
   
-  extension [Self <: CommentProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentProtection] (val x: Self) extends AnyVal {
     
     inline def setLockText(value: True | False): Self = StObject.set(x, "lockText", value.asInstanceOf[js.Any])
     

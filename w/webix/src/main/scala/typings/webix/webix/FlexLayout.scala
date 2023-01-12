@@ -18,7 +18,8 @@ object FlexLayout {
     __obj.asInstanceOf[FlexLayout]
   }
   
-  extension [Self <: FlexLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexLayout] (val x: Self) extends AnyVal {
     
     inline def set$getSize(value: js.Array[Any]): Self = StObject.set(x, "$getSize", value.asInstanceOf[js.Any])
     

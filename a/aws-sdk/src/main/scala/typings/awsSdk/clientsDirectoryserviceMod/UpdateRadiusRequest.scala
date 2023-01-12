@@ -23,7 +23,8 @@ object UpdateRadiusRequest {
     __obj.asInstanceOf[UpdateRadiusRequest]
   }
   
-  extension [Self <: UpdateRadiusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRadiusRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

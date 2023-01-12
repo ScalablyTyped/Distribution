@@ -28,7 +28,8 @@ object DescribeReplicationConfigurationsRequest {
     __obj.asInstanceOf[DescribeReplicationConfigurationsRequest]
   }
   
-  extension [Self <: DescribeReplicationConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReplicationConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     

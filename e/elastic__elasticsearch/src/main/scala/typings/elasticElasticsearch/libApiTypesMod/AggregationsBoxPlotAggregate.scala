@@ -44,7 +44,8 @@ object AggregationsBoxPlotAggregate {
     __obj.asInstanceOf[AggregationsBoxPlotAggregate]
   }
   
-  extension [Self <: AggregationsBoxPlotAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsBoxPlotAggregate] (val x: Self) extends AnyVal {
     
     inline def setLower(value: double): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     

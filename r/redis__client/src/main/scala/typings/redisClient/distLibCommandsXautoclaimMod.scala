@@ -47,7 +47,8 @@ object distLibCommandsXautoclaimMod {
       __obj.asInstanceOf[XAutoClaimOptions]
     }
     
-    extension [Self <: XAutoClaimOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAutoClaimOptions] (val x: Self) extends AnyVal {
       
       inline def setCOUNT(value: Double): Self = StObject.set(x, "COUNT", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object distLibCommandsXautoclaimMod {
       __obj.asInstanceOf[XAutoClaimReply]
     }
     
-    extension [Self <: XAutoClaimReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAutoClaimReply] (val x: Self) extends AnyVal {
       
       inline def setMessages(value: StreamMessagesReply): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       

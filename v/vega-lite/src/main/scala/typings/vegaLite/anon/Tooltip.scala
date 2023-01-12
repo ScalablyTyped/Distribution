@@ -15,7 +15,8 @@ object Tooltip {
     __obj.asInstanceOf[Tooltip]
   }
   
-  extension [Self <: Tooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
     
     inline def setTooltip(value: Signal): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }

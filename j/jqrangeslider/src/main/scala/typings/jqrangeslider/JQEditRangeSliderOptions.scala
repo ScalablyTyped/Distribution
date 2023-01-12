@@ -17,7 +17,8 @@ object JQEditRangeSliderOptions {
     __obj.asInstanceOf[JQEditRangeSliderOptions]
   }
   
-  extension [Self <: JQEditRangeSliderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQEditRangeSliderOptions] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

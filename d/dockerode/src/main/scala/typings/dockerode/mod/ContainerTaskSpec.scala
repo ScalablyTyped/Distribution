@@ -18,7 +18,8 @@ object ContainerTaskSpec {
     __obj.asInstanceOf[ContainerTaskSpec]
   }
   
-  extension [Self <: ContainerTaskSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerTaskSpec] (val x: Self) extends AnyVal {
     
     inline def setContainerSpec(value: ContainerSpec): Self = StObject.set(x, "ContainerSpec", value.asInstanceOf[js.Any])
     

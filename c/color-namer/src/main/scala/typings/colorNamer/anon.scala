@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Omit[T]]
     }
     
-    extension [Self <: Omit[?], T /* <: Palette */](x: Self & Omit[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Omit[?], T /* <: Palette */] (val x: Self & Omit[T]) extends AnyVal {
       
       inline def setOmit(value: js.Array[T]): Self = StObject.set(x, "omit", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Pick[T]]
     }
     
-    extension [Self <: Pick[?], T /* <: Palette */](x: Self & Pick[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pick[?], T /* <: Palette */] (val x: Self & Pick[T]) extends AnyVal {
       
       inline def setPick(value: js.Array[T]): Self = StObject.set(x, "pick", value.asInstanceOf[js.Any])
       

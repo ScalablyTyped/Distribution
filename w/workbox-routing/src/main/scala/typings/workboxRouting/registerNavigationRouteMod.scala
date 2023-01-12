@@ -28,7 +28,8 @@ object registerNavigationRouteMod {
       __obj.asInstanceOf[RegisterNavigationRouteOptions]
     }
     
-    extension [Self <: RegisterNavigationRouteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterNavigationRouteOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       

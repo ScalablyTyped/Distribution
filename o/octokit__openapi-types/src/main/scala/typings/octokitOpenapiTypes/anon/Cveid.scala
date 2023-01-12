@@ -59,7 +59,8 @@ object Cveid {
     __obj.asInstanceOf[Cveid]
   }
   
-  extension [Self <: Cveid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cveid] (val x: Self) extends AnyVal {
     
     inline def setCve_id(value: String): Self = StObject.set(x, "cve_id", value.asInstanceOf[js.Any])
     

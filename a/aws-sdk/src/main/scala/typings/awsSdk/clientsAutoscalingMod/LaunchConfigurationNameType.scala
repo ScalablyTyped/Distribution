@@ -18,7 +18,8 @@ object LaunchConfigurationNameType {
     __obj.asInstanceOf[LaunchConfigurationNameType]
   }
   
-  extension [Self <: LaunchConfigurationNameType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchConfigurationNameType] (val x: Self) extends AnyVal {
     
     inline def setLaunchConfigurationName(value: XmlStringMaxLen255): Self = StObject.set(x, "LaunchConfigurationName", value.asInstanceOf[js.Any])
   }

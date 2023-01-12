@@ -23,7 +23,8 @@ object ListFiltersResponse {
     __obj.asInstanceOf[ListFiltersResponse]
   }
   
-  extension [Self <: ListFiltersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFiltersResponse] (val x: Self) extends AnyVal {
     
     inline def setFilterNames(value: FilterNames): Self = StObject.set(x, "FilterNames", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object FlashOval {
     __obj.asInstanceOf[FlashOval]
   }
   
-  extension [Self <: FlashOval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashOval] (val x: Self) extends AnyVal {
     
     inline def setClosePath(value: Boolean): Self = StObject.set(x, "closePath", value.asInstanceOf[js.Any])
     

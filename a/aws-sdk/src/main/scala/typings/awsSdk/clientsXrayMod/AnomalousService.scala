@@ -15,7 +15,8 @@ object AnomalousService {
     __obj.asInstanceOf[AnomalousService]
   }
   
-  extension [Self <: AnomalousService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnomalousService] (val x: Self) extends AnyVal {
     
     inline def setServiceId(value: ServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
     

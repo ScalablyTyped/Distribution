@@ -23,7 +23,8 @@ object IAtDirectiveData {
     __obj.asInstanceOf[IAtDirectiveData]
   }
   
-  extension [Self <: IAtDirectiveData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAtDirectiveData] (val x: Self) extends AnyVal {
     
     inline def setBrowsers(value: js.Array[String]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object RelativeChange {
     __obj.asInstanceOf[RelativeChange]
   }
   
-  extension [Self <: RelativeChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeChange] (val x: Self) extends AnyVal {
     
     inline def setRelativeChange(value: Double): Self = StObject.set(x, "relativeChange", value.asInstanceOf[js.Any])
   }

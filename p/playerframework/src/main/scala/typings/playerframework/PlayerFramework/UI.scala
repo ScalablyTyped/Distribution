@@ -46,7 +46,8 @@ object UI {
       __obj.asInstanceOf[Button]
     }
     
-    extension [Self <: Button](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object UI {
       __obj.asInstanceOf[ControlPanel]
     }
     
-    extension [Self <: ControlPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlPanel] (val x: Self) extends AnyVal {
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -265,7 +267,8 @@ object UI {
       __obj.asInstanceOf[Indicator]
     }
     
-    extension [Self <: Indicator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Indicator] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -309,7 +312,8 @@ object UI {
       __obj.asInstanceOf[Meter]
     }
     
-    extension [Self <: Meter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meter] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -386,7 +390,8 @@ object UI {
       __obj.asInstanceOf[Slider]
     }
     
-    extension [Self <: Slider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slider] (val x: Self) extends AnyVal {
       
       inline def setAltStep1(value: Double): Self = StObject.set(x, "altStep1", value.asInstanceOf[js.Any])
       

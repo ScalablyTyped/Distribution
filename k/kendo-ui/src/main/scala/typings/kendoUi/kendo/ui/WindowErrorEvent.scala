@@ -20,7 +20,8 @@ object WindowErrorEvent {
     __obj.asInstanceOf[WindowErrorEvent]
   }
   
-  extension [Self <: WindowErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

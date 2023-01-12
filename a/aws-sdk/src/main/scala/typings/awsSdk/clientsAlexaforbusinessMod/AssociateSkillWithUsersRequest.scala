@@ -18,7 +18,8 @@ object AssociateSkillWithUsersRequest {
     __obj.asInstanceOf[AssociateSkillWithUsersRequest]
   }
   
-  extension [Self <: AssociateSkillWithUsersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateSkillWithUsersRequest] (val x: Self) extends AnyVal {
     
     inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
   }

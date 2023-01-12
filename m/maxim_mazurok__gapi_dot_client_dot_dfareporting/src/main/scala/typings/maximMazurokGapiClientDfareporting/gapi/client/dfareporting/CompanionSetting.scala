@@ -25,7 +25,8 @@ object CompanionSetting {
     __obj.asInstanceOf[CompanionSetting]
   }
   
-  extension [Self <: CompanionSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompanionSetting] (val x: Self) extends AnyVal {
     
     inline def setCompanionsDisabled(value: Boolean): Self = StObject.set(x, "companionsDisabled", value.asInstanceOf[js.Any])
     

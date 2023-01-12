@@ -304,7 +304,8 @@ object ConnectionOptionsmaxCache {
     __obj.asInstanceOf[ConnectionOptionsmaxCache]
   }
   
-  extension [Self <: ConnectionOptionsmaxCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionOptionsmaxCache] (val x: Self) extends AnyVal {
     
     inline def setALPNProtocols(value: (js.Array[String | js.typedarray.Uint8Array]) | js.typedarray.Uint8Array): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
     

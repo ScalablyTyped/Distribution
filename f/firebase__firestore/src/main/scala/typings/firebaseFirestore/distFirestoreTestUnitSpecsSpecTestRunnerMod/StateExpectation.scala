@@ -62,7 +62,8 @@ object StateExpectation {
     __obj.asInstanceOf[StateExpectation]
   }
   
-  extension [Self <: StateExpectation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateExpectation] (val x: Self) extends AnyVal {
     
     inline def setActiveLimboDocs(value: js.Array[String]): Self = StObject.set(x, "activeLimboDocs", value.asInstanceOf[js.Any])
     

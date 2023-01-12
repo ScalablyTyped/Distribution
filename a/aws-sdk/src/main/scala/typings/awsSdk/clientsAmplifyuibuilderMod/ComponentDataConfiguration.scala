@@ -33,7 +33,8 @@ object ComponentDataConfiguration {
     __obj.asInstanceOf[ComponentDataConfiguration]
   }
   
-  extension [Self <: ComponentDataConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentDataConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIdentifiers(value: IdentifierList): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
     

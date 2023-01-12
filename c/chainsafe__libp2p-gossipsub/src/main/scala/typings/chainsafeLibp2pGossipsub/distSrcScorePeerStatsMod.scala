@@ -38,7 +38,8 @@ object distSrcScorePeerStatsMod {
       __obj.asInstanceOf[PeerStats]
     }
     
-    extension [Self <: PeerStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerStats] (val x: Self) extends AnyVal {
       
       inline def setBehaviourPenalty(value: Double): Self = StObject.set(x, "behaviourPenalty", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object distSrcScorePeerStatsMod {
       __obj.asInstanceOf[TopicStats]
     }
     
-    extension [Self <: TopicStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopicStats] (val x: Self) extends AnyVal {
       
       inline def setFirstMessageDeliveries(value: Double): Self = StObject.set(x, "firstMessageDeliveries", value.asInstanceOf[js.Any])
       

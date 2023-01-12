@@ -22,7 +22,8 @@ object IParseOptions {
     __obj.asInstanceOf[IParseOptions]
   }
   
-  extension [Self <: IParseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParseOptions] (val x: Self) extends AnyVal {
     
     inline def setAlternateCommentMode(value: Boolean): Self = StObject.set(x, "alternateCommentMode", value.asInstanceOf[js.Any])
     

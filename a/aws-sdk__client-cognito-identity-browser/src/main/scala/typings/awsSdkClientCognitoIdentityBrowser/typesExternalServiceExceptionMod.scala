@@ -27,7 +27,8 @@ object typesExternalServiceExceptionMod {
       __obj.asInstanceOf[ExternalServiceException]
     }
     
-    extension [Self <: ExternalServiceException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalServiceException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ExternalServiceException
@@ -49,7 +50,8 @@ object typesExternalServiceExceptionMod {
       __obj.asInstanceOf[ExternalServiceExceptionDetails]
     }
     
-    extension [Self <: ExternalServiceExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalServiceExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

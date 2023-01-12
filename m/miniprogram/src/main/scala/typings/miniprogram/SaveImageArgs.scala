@@ -19,7 +19,8 @@ object SaveImageArgs {
     __obj.asInstanceOf[SaveImageArgs]
   }
   
-  extension [Self <: SaveImageArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveImageArgs] (val x: Self) extends AnyVal {
     
     inline def setShowActionSheet(value: Boolean): Self = StObject.set(x, "showActionSheet", value.asInstanceOf[js.Any])
     

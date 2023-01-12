@@ -15,7 +15,8 @@ object EnumerateVisualObjectInstancesOptions {
     __obj.asInstanceOf[EnumerateVisualObjectInstancesOptions]
   }
   
-  extension [Self <: EnumerateVisualObjectInstancesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumerateVisualObjectInstancesOptions] (val x: Self) extends AnyVal {
     
     inline def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
   }

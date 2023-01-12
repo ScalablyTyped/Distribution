@@ -22,7 +22,8 @@ object MessagesSendSuccessResponse {
     __obj.asInstanceOf[MessagesSendSuccessResponse]
   }
   
-  extension [Self <: MessagesSendSuccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagesSendSuccessResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Exclude[SendingStatus, rejected]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

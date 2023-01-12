@@ -20,7 +20,8 @@ object WinRTEvent {
     __obj.asInstanceOf[WinRTEvent[TSender]]
   }
   
-  extension [Self <: WinRTEvent[?], TSender](x: Self & WinRTEvent[TSender]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WinRTEvent[?], TSender] (val x: Self & WinRTEvent[TSender]) extends AnyVal {
     
     inline def setDetail(value: js.Array[Any]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

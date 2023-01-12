@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[OmitHttpRequestheadersmet]
     }
     
-    extension [Self <: OmitHttpRequestheadersmet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitHttpRequestheadersmet] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

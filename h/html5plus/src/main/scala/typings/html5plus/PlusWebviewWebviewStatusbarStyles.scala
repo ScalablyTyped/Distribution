@@ -28,7 +28,8 @@ object PlusWebviewWebviewStatusbarStyles {
     __obj.asInstanceOf[PlusWebviewWebviewStatusbarStyles]
   }
   
-  extension [Self <: PlusWebviewWebviewStatusbarStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewStatusbarStyles] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

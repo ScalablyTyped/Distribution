@@ -219,7 +219,8 @@ object distParseCstMod {
       __obj.asInstanceOf[BlockMap]
     }
     
-    extension [Self <: BlockMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockMap] (val x: Self) extends AnyVal {
       
       inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
@@ -255,7 +256,8 @@ object distParseCstMod {
       __obj.asInstanceOf[BlockScalar]
     }
     
-    extension [Self <: BlockScalar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockScalar] (val x: Self) extends AnyVal {
       
       inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
@@ -291,7 +293,8 @@ object distParseCstMod {
       __obj.asInstanceOf[BlockSequence]
     }
     
-    extension [Self <: BlockSequence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockSequence] (val x: Self) extends AnyVal {
       
       inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
@@ -322,7 +325,8 @@ object distParseCstMod {
       __obj.asInstanceOf[CollectionItem]
     }
     
-    extension [Self <: CollectionItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionItem] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Token): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -364,7 +368,8 @@ object distParseCstMod {
       __obj.asInstanceOf[Directive]
     }
     
-    extension [Self <: Directive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Directive] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -396,7 +401,8 @@ object distParseCstMod {
       __obj.asInstanceOf[Document]
     }
     
-    extension [Self <: Document](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Array[SourceToken]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -438,7 +444,8 @@ object distParseCstMod {
       __obj.asInstanceOf[DocumentEnd]
     }
     
-    extension [Self <: DocumentEnd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentEnd] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Array[SourceToken]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -474,7 +481,8 @@ object distParseCstMod {
       __obj.asInstanceOf[ErrorToken]
     }
     
-    extension [Self <: ErrorToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorToken] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -516,7 +524,8 @@ object distParseCstMod {
       __obj.asInstanceOf[FlowCollection]
     }
     
-    extension [Self <: FlowCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowCollection] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Array[SourceToken]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -563,7 +572,8 @@ object distParseCstMod {
       __obj.asInstanceOf[FlowScalar]
     }
     
-    extension [Self <: FlowScalar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowScalar] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Array[SourceToken]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -606,7 +616,8 @@ object distParseCstMod {
       __obj.asInstanceOf[SourceToken]
     }
     
-    extension [Self <: SourceToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceToken] (val x: Self) extends AnyVal {
       
       inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       

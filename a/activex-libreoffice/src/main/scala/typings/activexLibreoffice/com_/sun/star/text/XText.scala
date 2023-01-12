@@ -52,7 +52,8 @@ object XText {
     __obj.asInstanceOf[XText]
   }
   
-  extension [Self <: XText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XText] (val x: Self) extends AnyVal {
     
     inline def setInsertTextContent(value: (XTextRange, XTextContent, Boolean) => Unit): Self = StObject.set(x, "insertTextContent", js.Any.fromFunction3(value))
     

@@ -57,7 +57,8 @@ object appNavBarTypesMod {
       __obj.asInstanceOf[AppNavBarOverrides]
     }
     
-    extension [Self <: AppNavBarOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppNavBarOverrides] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: Override[Any]): Self = StObject.set(x, "AppName", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object appNavBarTypesMod {
       __obj.asInstanceOf[AppNavBarProps]
     }
     
-    extension [Self <: AppNavBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppNavBarProps] (val x: Self) extends AnyVal {
       
       inline def setIsMainItemActive(value: /* a */ NavItem => Boolean): Self = StObject.set(x, "isMainItemActive", js.Any.fromFunction1(value))
       
@@ -213,7 +215,8 @@ object appNavBarTypesMod {
       __obj.asInstanceOf[NavItem]
     }
     
-    extension [Self <: NavItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavItem] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -264,7 +267,8 @@ object appNavBarTypesMod {
       __obj.asInstanceOf[UserMenuProps]
     }
     
-    extension [Self <: UserMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserMenuProps] (val x: Self) extends AnyVal {
       
       inline def setOnUserItemSelect(value: /* a */ NavItem => Any): Self = StObject.set(x, "onUserItemSelect", js.Any.fromFunction1(value))
       

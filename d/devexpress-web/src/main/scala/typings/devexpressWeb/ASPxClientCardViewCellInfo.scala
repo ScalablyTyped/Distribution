@@ -26,7 +26,8 @@ object ASPxClientCardViewCellInfo {
     __obj.asInstanceOf[ASPxClientCardViewCellInfo]
   }
   
-  extension [Self <: ASPxClientCardViewCellInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCardViewCellInfo] (val x: Self) extends AnyVal {
     
     inline def setCardVisibleIndex(value: Double): Self = StObject.set(x, "cardVisibleIndex", value.asInstanceOf[js.Any])
     

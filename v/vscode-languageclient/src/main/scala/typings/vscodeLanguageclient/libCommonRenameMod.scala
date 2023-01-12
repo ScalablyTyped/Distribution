@@ -88,7 +88,8 @@ object libCommonRenameMod {
       __obj.asInstanceOf[RenameMiddleware]
     }
     
-    extension [Self <: RenameMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenameMiddleware] (val x: Self) extends AnyVal {
       
       inline def setPrepareRename(
         value: js.ThisFunction4[

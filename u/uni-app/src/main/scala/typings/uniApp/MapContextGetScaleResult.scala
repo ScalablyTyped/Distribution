@@ -18,7 +18,8 @@ object MapContextGetScaleResult {
     __obj.asInstanceOf[MapContextGetScaleResult]
   }
   
-  extension [Self <: MapContextGetScaleResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapContextGetScaleResult] (val x: Self) extends AnyVal {
     
     inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

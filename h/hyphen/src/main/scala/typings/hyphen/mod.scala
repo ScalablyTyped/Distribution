@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[FactoryOptions]
     }
     
-    extension [Self <: FactoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FactoryOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object mod {
       __obj.asInstanceOf[HyphenationOptions]
     }
     
-    extension [Self <: HyphenationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HyphenationOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object mod {
       __obj.asInstanceOf[PatternsDefinition]
     }
     
-    extension [Self <: PatternsDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternsDefinition] (val x: Self) extends AnyVal {
       
       inline def setExceptions(value: js.Array[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
       

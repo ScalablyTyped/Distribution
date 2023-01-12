@@ -15,7 +15,8 @@ object IIcon {
     __obj.asInstanceOf[IIcon]
   }
   
-  extension [Self <: IIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIcon] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_main_IIcon(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_main_IIcon", value.asInstanceOf[js.Any])
   }

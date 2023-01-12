@@ -36,7 +36,8 @@ object UnaryOp {
     __obj.asInstanceOf[UnaryOp]
   }
   
-  extension [Self <: UnaryOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnaryOp] (val x: Self) extends AnyVal {
     
     inline def setExpr(value: Expression): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     

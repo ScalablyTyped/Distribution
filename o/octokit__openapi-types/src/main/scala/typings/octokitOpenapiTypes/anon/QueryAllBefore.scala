@@ -15,7 +15,8 @@ object QueryAllBefore {
     __obj.asInstanceOf[QueryAllBefore]
   }
   
-  extension [Self <: QueryAllBefore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAllBefore] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: AllBefore): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

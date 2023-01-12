@@ -138,7 +138,8 @@ object provider {
       */
     type Mark = Any
     
-    extension [Self <: Invalidations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invalidations] (val x: Self) extends AnyVal {
       
       inline def setGetMark(value: () => Mark): Self = StObject.set(x, "getMark", js.Any.fromFunction0(value))
       
@@ -208,7 +209,8 @@ object provider {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCrossOrigin(value: String | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
         
@@ -322,7 +324,8 @@ object provider {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
@@ -500,7 +503,8 @@ object provider {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setGetCopyrights(value: (/* rect */ typings.heremaps.H.geo.Rect, /* n */ Double) => js.Array[ICopyright]): Self = StObject.set(x, "getCopyrights", js.Any.fromFunction2(value))
         
@@ -641,7 +645,8 @@ object provider {
       __obj.asInstanceOf[Tile]
     }
     
-    extension [Self <: Tile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -732,7 +737,8 @@ object provider {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setGetCopyrights(value: (/* rect */ typings.heremaps.H.geo.Rect, /* number */ Double) => js.Array[ICopyright]): Self = StObject.set(x, "getCopyrights", js.Any.fromFunction2(value))
         

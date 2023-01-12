@@ -19,7 +19,8 @@ object SeqMapTaskOutputInfo {
     __obj.asInstanceOf[SeqMapTaskOutputInfo]
   }
   
-  extension [Self <: SeqMapTaskOutputInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeqMapTaskOutputInfo] (val x: Self) extends AnyVal {
     
     inline def setSink(value: Sink): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
     

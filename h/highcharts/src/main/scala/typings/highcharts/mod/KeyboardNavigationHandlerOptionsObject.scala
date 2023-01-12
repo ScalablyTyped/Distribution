@@ -40,7 +40,8 @@ object KeyboardNavigationHandlerOptionsObject {
     __obj.asInstanceOf[KeyboardNavigationHandlerOptionsObject]
   }
   
-  extension [Self <: KeyboardNavigationHandlerOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardNavigationHandlerOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     

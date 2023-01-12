@@ -290,7 +290,8 @@ object tagMod {
       __obj.asInstanceOf[LanguageTagsError]
     }
     
-    extension [Self <: LanguageTagsError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageTagsError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: ErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -411,7 +412,8 @@ object tagMod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: () => String): Self = StObject.set(x, "added", js.Any.fromFunction0(value))
       

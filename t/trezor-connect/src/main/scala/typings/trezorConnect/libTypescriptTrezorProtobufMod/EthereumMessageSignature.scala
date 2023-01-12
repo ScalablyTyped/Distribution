@@ -17,7 +17,8 @@ object EthereumMessageSignature {
     __obj.asInstanceOf[EthereumMessageSignature]
   }
   
-  extension [Self <: EthereumMessageSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumMessageSignature] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

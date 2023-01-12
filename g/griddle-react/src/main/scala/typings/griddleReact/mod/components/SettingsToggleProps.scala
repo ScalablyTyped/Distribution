@@ -26,7 +26,8 @@ object SettingsToggleProps {
     __obj.asInstanceOf[SettingsToggleProps]
   }
   
-  extension [Self <: SettingsToggleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingsToggleProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

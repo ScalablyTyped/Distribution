@@ -18,7 +18,8 @@ object UnclaimedDraftResponse {
     __obj.asInstanceOf[UnclaimedDraftResponse]
   }
   
-  extension [Self <: UnclaimedDraftResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnclaimedDraftResponse] (val x: Self) extends AnyVal {
     
     inline def setUnclaimed_draft(value: UnclaimedDraft): Self = StObject.set(x, "unclaimed_draft", value.asInstanceOf[js.Any])
   }

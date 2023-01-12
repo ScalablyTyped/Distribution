@@ -36,7 +36,8 @@ object ZuiStatic {
     __obj.asInstanceOf[ZuiStatic]
   }
   
-  extension [Self <: ZuiStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZuiStatic] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorStatic): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     

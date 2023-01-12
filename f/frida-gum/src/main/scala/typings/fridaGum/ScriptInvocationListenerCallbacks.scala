@@ -29,7 +29,8 @@ object ScriptInvocationListenerCallbacks {
     __obj.asInstanceOf[ScriptInvocationListenerCallbacks]
   }
   
-  extension [Self <: ScriptInvocationListenerCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptInvocationListenerCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnEnter(value: js.ThisFunction1[/* this */ InvocationContext, /* args */ InvocationArguments, Unit]): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     

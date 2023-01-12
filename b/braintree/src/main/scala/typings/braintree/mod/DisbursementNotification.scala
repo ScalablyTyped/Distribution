@@ -21,7 +21,8 @@ object DisbursementNotification {
     __obj.asInstanceOf[DisbursementNotification]
   }
   
-  extension [Self <: DisbursementNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisbursementNotification] (val x: Self) extends AnyVal {
     
     inline def setDisbursement(value: Disbursement): Self = StObject.set(x, "disbursement", value.asInstanceOf[js.Any])
     

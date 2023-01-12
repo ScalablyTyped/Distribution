@@ -32,7 +32,8 @@ object Allframes {
     __obj.asInstanceOf[Allframes]
   }
   
-  extension [Self <: Allframes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allframes] (val x: Self) extends AnyVal {
     
     inline def setAll_frames(value: Boolean): Self = StObject.set(x, "all_frames", value.asInstanceOf[js.Any])
     

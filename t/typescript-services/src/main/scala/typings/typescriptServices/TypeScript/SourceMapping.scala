@@ -26,7 +26,8 @@ object SourceMapping {
     __obj.asInstanceOf[SourceMapping]
   }
   
-  extension [Self <: SourceMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMapping] (val x: Self) extends AnyVal {
     
     inline def setChildMappings(value: js.Array[SourceMapping]): Self = StObject.set(x, "childMappings", value.asInstanceOf[js.Any])
     

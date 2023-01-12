@@ -33,7 +33,8 @@ object GatewayRouteSpec {
     __obj.asInstanceOf[GatewayRouteSpec]
   }
   
-  extension [Self <: GatewayRouteSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayRouteSpec] (val x: Self) extends AnyVal {
     
     inline def setGrpcRoute(value: GrpcGatewayRoute): Self = StObject.set(x, "grpcRoute", value.asInstanceOf[js.Any])
     

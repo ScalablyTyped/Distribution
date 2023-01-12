@@ -28,7 +28,8 @@ object SlashCommandMetadata {
     __obj.asInstanceOf[SlashCommandMetadata]
   }
   
-  extension [Self <: SlashCommandMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlashCommandMetadata] (val x: Self) extends AnyVal {
     
     inline def setBot(value: User): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
     

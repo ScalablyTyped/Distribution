@@ -17,7 +17,8 @@ object XpackUsageCounter {
     __obj.asInstanceOf[XpackUsageCounter]
   }
   
-  extension [Self <: XpackUsageCounter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageCounter] (val x: Self) extends AnyVal {
     
     inline def setActive(value: long): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

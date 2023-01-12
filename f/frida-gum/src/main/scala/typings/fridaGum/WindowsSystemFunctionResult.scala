@@ -19,7 +19,8 @@ object WindowsSystemFunctionResult {
     __obj.asInstanceOf[WindowsSystemFunctionResult[Value]]
   }
   
-  extension [Self <: WindowsSystemFunctionResult[?], Value /* <: NativeFunctionReturnValue */](x: Self & WindowsSystemFunctionResult[Value]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsSystemFunctionResult[?], Value /* <: NativeFunctionReturnValue */] (val x: Self & WindowsSystemFunctionResult[Value]) extends AnyVal {
     
     inline def setLastError(value: Double): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
     

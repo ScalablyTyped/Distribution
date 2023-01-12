@@ -15,7 +15,8 @@ object PlotSupertrendChangeTrendLineOptions {
     __obj.asInstanceOf[PlotSupertrendChangeTrendLineOptions]
   }
   
-  extension [Self <: PlotSupertrendChangeTrendLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSupertrendChangeTrendLineOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotSupertrendChangeTrendLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

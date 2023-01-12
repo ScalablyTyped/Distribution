@@ -47,7 +47,8 @@ object WizardOptions {
     __obj.asInstanceOf[WizardOptions]
   }
   
-  extension [Self <: WizardOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WizardOptions] (val x: Self) extends AnyVal {
     
     inline def setActionBar(value: Boolean): Self = StObject.set(x, "actionBar", value.asInstanceOf[js.Any])
     

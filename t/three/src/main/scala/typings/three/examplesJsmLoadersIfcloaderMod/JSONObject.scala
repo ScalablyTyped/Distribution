@@ -21,7 +21,8 @@ object JSONObject {
     __obj.asInstanceOf[JSONObject]
   }
   
-  extension [Self <: JSONObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONObject] (val x: Self) extends AnyVal {
     
     inline def setExpressID(value: Double): Self = StObject.set(x, "expressID", value.asInstanceOf[js.Any])
     

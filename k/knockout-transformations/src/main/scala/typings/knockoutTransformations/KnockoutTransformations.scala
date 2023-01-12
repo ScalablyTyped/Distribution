@@ -24,7 +24,8 @@ object KnockoutTransformations {
       __obj.asInstanceOf[MappingOption[T, TResult]]
     }
     
-    extension [Self <: MappingOption[?, ?], T, TResult](x: Self & (MappingOption[T, TResult])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappingOption[?, ?], T, TResult] (val x: Self & (MappingOption[T, TResult])) extends AnyVal {
       
       inline def setDisposeItem(value: /* item */ TResult => Unit): Self = StObject.set(x, "disposeItem", js.Any.fromFunction1(value))
       
@@ -45,7 +46,8 @@ object KnockoutTransformations {
       __obj.asInstanceOf[MappingWithDisposeCallbackOption[T, TResult]]
     }
     
-    extension [Self <: MappingWithDisposeCallbackOption[?, ?], T, TResult](x: Self & (MappingWithDisposeCallbackOption[T, TResult])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappingWithDisposeCallbackOption[?, ?], T, TResult] (val x: Self & (MappingWithDisposeCallbackOption[T, TResult])) extends AnyVal {
       
       inline def setMappingWithDisposeCallback(value: T => Dispose[TResult]): Self = StObject.set(x, "mappingWithDisposeCallback", js.Any.fromFunction1(value))
     }

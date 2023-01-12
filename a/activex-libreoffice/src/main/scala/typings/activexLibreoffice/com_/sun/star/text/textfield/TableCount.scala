@@ -57,7 +57,8 @@ object TableCount {
     __obj.asInstanceOf[TableCount]
   }
   
-  extension [Self <: TableCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCount] (val x: Self) extends AnyVal {
     
     inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }

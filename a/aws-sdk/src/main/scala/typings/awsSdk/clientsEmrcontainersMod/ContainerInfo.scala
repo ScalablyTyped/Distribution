@@ -18,7 +18,8 @@ object ContainerInfo {
     __obj.asInstanceOf[ContainerInfo]
   }
   
-  extension [Self <: ContainerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerInfo] (val x: Self) extends AnyVal {
     
     inline def setEksInfo(value: EksInfo): Self = StObject.set(x, "eksInfo", value.asInstanceOf[js.Any])
     

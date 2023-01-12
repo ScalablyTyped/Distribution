@@ -18,7 +18,8 @@ object MagneticStoreRejectedDataLocation {
     __obj.asInstanceOf[MagneticStoreRejectedDataLocation]
   }
   
-  extension [Self <: MagneticStoreRejectedDataLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagneticStoreRejectedDataLocation] (val x: Self) extends AnyVal {
     
     inline def setS3Configuration(value: S3Configuration): Self = StObject.set(x, "S3Configuration", value.asInstanceOf[js.Any])
     

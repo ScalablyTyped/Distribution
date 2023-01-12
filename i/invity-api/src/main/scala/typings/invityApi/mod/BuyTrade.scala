@@ -101,7 +101,8 @@ object BuyTrade {
     __obj.asInstanceOf[BuyTrade]
   }
   
-  extension [Self <: BuyTrade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuyTrade] (val x: Self) extends AnyVal {
     
     inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     

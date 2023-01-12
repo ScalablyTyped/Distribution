@@ -31,7 +31,8 @@ object esmUtilsCompressMod {
       __obj.asInstanceOf[CompressOptions]
     }
     
-    extension [Self <: CompressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object esmUtilsCompressMod {
       __obj.asInstanceOf[CompressResult]
     }
     
-    extension [Self <: CompressResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressResult] (val x: Self) extends AnyVal {
       
       inline def setDist(value: Blob | File): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object esmUtilsCompressMod {
       __obj.asInstanceOf[Dimension]
     }
     
-    extension [Self <: Dimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

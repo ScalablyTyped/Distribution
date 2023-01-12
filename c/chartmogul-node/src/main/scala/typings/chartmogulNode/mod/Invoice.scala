@@ -50,7 +50,8 @@ object Invoice {
       __obj.asInstanceOf[typings.chartmogulNode.mod.Invoice.Invoice]
     }
     
-    extension [Self <: typings.chartmogulNode.mod.Invoice.Invoice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.chartmogulNode.mod.Invoice.Invoice] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object Invoice {
       __obj.asInstanceOf[Invoices]
     }
     
-    extension [Self <: Invoices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invoices] (val x: Self) extends AnyVal {
       
       inline def setCustomer_uuid(value: String): Self = StObject.set(x, "customer_uuid", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object Invoice {
       __obj.asInstanceOf[LineItem]
     }
     
-    extension [Self <: LineItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineItem] (val x: Self) extends AnyVal {
       
       inline def setAccount_code(value: String): Self = StObject.set(x, "account_code", value.asInstanceOf[js.Any])
       
@@ -259,7 +262,8 @@ object Invoice {
       __obj.asInstanceOf[ListInvoicesParams]
     }
     
-    extension [Self <: ListInvoicesParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListInvoicesParams] (val x: Self) extends AnyVal {
       
       inline def setCustomer_uuid(value: String): Self = StObject.set(x, "customer_uuid", value.asInstanceOf[js.Any])
       
@@ -294,7 +298,8 @@ object Invoice {
       __obj.asInstanceOf[typings.chartmogulNode.mod.Invoice.Transaction]
     }
     
-    extension [Self <: typings.chartmogulNode.mod.Invoice.Transaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.chartmogulNode.mod.Invoice.Transaction] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

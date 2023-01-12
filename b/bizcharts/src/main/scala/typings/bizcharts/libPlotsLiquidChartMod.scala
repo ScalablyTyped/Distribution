@@ -68,7 +68,8 @@ object libPlotsLiquidChartMod extends Shortcut {
       __obj.asInstanceOf[LiquidOptions]
     }
     
-    extension [Self <: LiquidOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiquidOptions] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object libPlotsLiquidChartMod extends Shortcut {
       __obj.asInstanceOf[Opt]
     }
     
-    extension [Self <: Opt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opt] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

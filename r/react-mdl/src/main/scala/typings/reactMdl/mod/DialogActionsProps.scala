@@ -18,7 +18,8 @@ object DialogActionsProps {
     __obj.asInstanceOf[DialogActionsProps]
   }
   
-  extension [Self <: DialogActionsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogActionsProps] (val x: Self) extends AnyVal {
     
     inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     

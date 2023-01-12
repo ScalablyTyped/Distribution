@@ -29,7 +29,8 @@ object TrackLinkObject {
     __obj.asInstanceOf[TrackLinkObject]
   }
   
-  extension [Self <: TrackLinkObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackLinkObject] (val x: Self) extends AnyVal {
     
     inline def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     

@@ -236,7 +236,8 @@ object mod {
       __obj.asInstanceOf[HalogenCommonProps]
     }
     
-    extension [Self <: HalogenCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HalogenCommonProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -275,7 +276,8 @@ object mod {
       __obj.asInstanceOf[MarginLoaderProps[T]]
     }
     
-    extension [Self <: MarginLoaderProps[?], T](x: Self & MarginLoaderProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarginLoaderProps[?], T] (val x: Self & MarginLoaderProps[T]) extends AnyVal {
       
       inline def setMargin(value: T): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
@@ -304,7 +306,8 @@ object mod {
       __obj.asInstanceOf[RadiusLoaderProps]
     }
     
-    extension [Self <: RadiusLoaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadiusLoaderProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -333,7 +336,8 @@ object mod {
       __obj.asInstanceOf[SizeLoaderProps]
     }
     
-    extension [Self <: SizeLoaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeLoaderProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

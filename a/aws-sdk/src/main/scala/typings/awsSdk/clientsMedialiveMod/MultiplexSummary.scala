@@ -58,7 +58,8 @@ object MultiplexSummary {
     __obj.asInstanceOf[MultiplexSummary]
   }
   
-  extension [Self <: MultiplexSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplexSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

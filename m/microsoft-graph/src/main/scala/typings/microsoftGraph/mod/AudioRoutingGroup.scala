@@ -21,7 +21,8 @@ object AudioRoutingGroup {
     __obj.asInstanceOf[AudioRoutingGroup]
   }
   
-  extension [Self <: AudioRoutingGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioRoutingGroup] (val x: Self) extends AnyVal {
     
     inline def setReceivers(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "receivers", value.asInstanceOf[js.Any])
     

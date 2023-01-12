@@ -66,7 +66,8 @@ object XParametricPolyPolygon2D {
     __obj.asInstanceOf[XParametricPolyPolygon2D]
   }
   
-  extension [Self <: XParametricPolyPolygon2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XParametricPolyPolygon2D] (val x: Self) extends AnyVal {
     
     inline def setColorSpace(value: XColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     

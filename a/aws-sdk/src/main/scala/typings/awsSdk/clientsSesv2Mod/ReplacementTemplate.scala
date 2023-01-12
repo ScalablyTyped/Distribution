@@ -18,7 +18,8 @@ object ReplacementTemplate {
     __obj.asInstanceOf[ReplacementTemplate]
   }
   
-  extension [Self <: ReplacementTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplacementTemplate] (val x: Self) extends AnyVal {
     
     inline def setReplacementTemplateData(value: EmailTemplateData): Self = StObject.set(x, "ReplacementTemplateData", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ChartCategoryAxisItemLabelsDateFormats {
     __obj.asInstanceOf[ChartCategoryAxisItemLabelsDateFormats]
   }
   
-  extension [Self <: ChartCategoryAxisItemLabelsDateFormats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartCategoryAxisItemLabelsDateFormats] (val x: Self) extends AnyVal {
     
     inline def setDays(value: String): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     

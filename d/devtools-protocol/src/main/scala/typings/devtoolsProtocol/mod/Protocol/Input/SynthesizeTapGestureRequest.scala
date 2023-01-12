@@ -40,7 +40,8 @@ object SynthesizeTapGestureRequest {
     __obj.asInstanceOf[SynthesizeTapGestureRequest]
   }
   
-  extension [Self <: SynthesizeTapGestureRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynthesizeTapGestureRequest] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

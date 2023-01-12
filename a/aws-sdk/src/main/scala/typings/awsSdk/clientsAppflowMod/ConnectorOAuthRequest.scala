@@ -23,7 +23,8 @@ object ConnectorOAuthRequest {
     __obj.asInstanceOf[ConnectorOAuthRequest]
   }
   
-  extension [Self <: ConnectorOAuthRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorOAuthRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthCode(value: AuthCode): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object libComponentsSeparatorSeparatorDottypesMod {
       __obj.asInstanceOf[ISeparatorProps]
     }
     
-    extension [Self <: ISeparatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISeparatorProps] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(value: start | center | end): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object libComponentsSeparatorSeparatorDottypesMod {
       __obj.asInstanceOf[ISeparatorStyleProps]
     }
     
-    extension [Self <: ISeparatorStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISeparatorStyleProps] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(value: start | center | end): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object libComponentsSeparatorSeparatorDottypesMod {
       __obj.asInstanceOf[ISeparatorStyles]
     }
     
-    extension [Self <: ISeparatorStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISeparatorStyles] (val x: Self) extends AnyVal {
       
       inline def setContent(value: IStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object CreateRealtimeEndpointInput {
     __obj.asInstanceOf[CreateRealtimeEndpointInput]
   }
   
-  extension [Self <: CreateRealtimeEndpointInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRealtimeEndpointInput] (val x: Self) extends AnyVal {
     
     inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
   }

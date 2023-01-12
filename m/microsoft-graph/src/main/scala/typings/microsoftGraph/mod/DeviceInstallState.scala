@@ -42,7 +42,8 @@ object DeviceInstallState {
     __obj.asInstanceOf[DeviceInstallState]
   }
   
-  extension [Self <: DeviceInstallState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceInstallState] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

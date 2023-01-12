@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Extensions]
     }
     
-    extension [Self <: Extensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object anon {
       __obj.asInstanceOf[FastGlobOptionsWithoutCwd]
     }
     
-    extension [Self <: FastGlobOptionsWithoutCwd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastGlobOptionsWithoutCwd] (val x: Self) extends AnyVal {
       
       inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
@@ -273,7 +275,8 @@ object anon {
       __obj.asInstanceOf[OptionsobjectModetrue]
     }
     
-    extension [Self <: OptionsobjectModetrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsobjectModetrue] (val x: Self) extends AnyVal {
       
       inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       

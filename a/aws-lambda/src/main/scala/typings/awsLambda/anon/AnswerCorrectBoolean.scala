@@ -15,7 +15,8 @@ object AnswerCorrectBoolean {
     __obj.asInstanceOf[AnswerCorrectBoolean]
   }
   
-  extension [Self <: AnswerCorrectBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnswerCorrectBoolean] (val x: Self) extends AnyVal {
     
     inline def setAnswerCorrect(value: Boolean): Self = StObject.set(x, "answerCorrect", value.asInstanceOf[js.Any])
   }

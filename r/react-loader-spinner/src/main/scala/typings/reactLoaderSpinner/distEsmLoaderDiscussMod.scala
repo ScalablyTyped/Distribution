@@ -38,7 +38,8 @@ object distEsmLoaderDiscussMod {
       __obj.asInstanceOf[DiscussProps]
     }
     
-    extension [Self <: DiscussProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiscussProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object BatchGetEffectiveIamPoliciesResponse {
     __obj.asInstanceOf[BatchGetEffectiveIamPoliciesResponse]
   }
   
-  extension [Self <: BatchGetEffectiveIamPoliciesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetEffectiveIamPoliciesResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicyResults(value: js.Array[EffectiveIamPolicy]): Self = StObject.set(x, "policyResults", value.asInstanceOf[js.Any])
     

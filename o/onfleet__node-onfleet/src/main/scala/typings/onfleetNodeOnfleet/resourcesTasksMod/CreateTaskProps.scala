@@ -54,7 +54,8 @@ object CreateTaskProps {
     __obj.asInstanceOf[CreateTaskProps]
   }
   
-  extension [Self <: CreateTaskProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTaskProps] (val x: Self) extends AnyVal {
     
     inline def setAutoAssign(value: TaskAutoAssign): Self = StObject.set(x, "autoAssign", value.asInstanceOf[js.Any])
     

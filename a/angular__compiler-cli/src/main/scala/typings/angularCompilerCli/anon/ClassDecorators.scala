@@ -24,7 +24,8 @@ object ClassDecorators {
     __obj.asInstanceOf[ClassDecorators]
   }
   
-  extension [Self <: ClassDecorators](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassDecorators] (val x: Self) extends AnyVal {
     
     inline def setClassDecorators(value: js.Array[typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.Decorator]): Self = StObject.set(x, "classDecorators", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object CodeAction {
     __obj.asInstanceOf[CodeAction]
   }
   
-  extension [Self <: CodeAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeAction] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

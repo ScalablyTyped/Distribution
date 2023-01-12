@@ -26,7 +26,8 @@ object EventManager {
     __obj.asInstanceOf[EventManager]
   }
   
-  extension [Self <: EventManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventManager] (val x: Self) extends AnyVal {
     
     inline def setOnListen(value: /* query */ Query2 => js.Promise[ViewSnapshot]): Self = StObject.set(x, "onListen", js.Any.fromFunction1(value))
     

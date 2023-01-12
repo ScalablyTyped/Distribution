@@ -472,7 +472,8 @@ object srcMiddlewaresSchemaMod {
       __obj.asInstanceOf[InternalParamSchema]
     }
     
-    extension [Self <: InternalParamSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalParamSchema] (val x: Self) extends AnyVal {
       
       inline def setBlacklist(value: SanitizerSchemaOptions[blacklist]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
@@ -1255,7 +1256,8 @@ object srcMiddlewaresSchemaMod {
       __obj.asInstanceOf[ParamSchema]
     }
     
-    extension [Self <: ParamSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamSchema] (val x: Self) extends AnyVal {
       
       inline def setBlacklist(value: SanitizerSchemaOptions[blacklist]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
@@ -1775,7 +1777,8 @@ object srcMiddlewaresSchemaMod {
       __obj.asInstanceOf[SanitizersSchema]
     }
     
-    extension [Self <: SanitizersSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SanitizersSchema] (val x: Self) extends AnyVal {
       
       inline def setBlacklist(value: SanitizerSchemaOptions[blacklist]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
@@ -2208,7 +2211,8 @@ object srcMiddlewaresSchemaMod {
       __obj.asInstanceOf[ValidationParamSchema]
     }
     
-    extension [Self <: ValidationParamSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationParamSchema] (val x: Self) extends AnyVal {
       
       inline def setBlacklist(value: SanitizerSchemaOptions[blacklist]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
@@ -2953,7 +2957,8 @@ object srcMiddlewaresSchemaMod {
       __obj.asInstanceOf[ValidatorsSchema]
     }
     
-    extension [Self <: ValidatorsSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatorsSchema] (val x: Self) extends AnyVal {
       
       inline def setContains(value: ValidatorSchemaOptions[contains]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object IEquipmentComponent {
     __obj.asInstanceOf[IEquipmentComponent]
   }
   
-  extension [Self <: IEquipmentComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEquipmentComponent] (val x: Self) extends AnyVal {
     
     inline def setSlot_drop_chance(value: js.Array[Dropchance]): Self = StObject.set(x, "slot_drop_chance", value.asInstanceOf[js.Any])
     

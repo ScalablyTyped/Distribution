@@ -141,7 +141,8 @@ object Scripting {
       __obj.asInstanceOf[Drive]
     }
     
-    extension [Self <: Drive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Drive] (val x: Self) extends AnyVal {
       
       inline def setAvailableSpace(value: Double): Self = StObject.set(x, "AvailableSpace", value.asInstanceOf[js.Any])
       

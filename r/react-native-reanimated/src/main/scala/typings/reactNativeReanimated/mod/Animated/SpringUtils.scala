@@ -23,7 +23,8 @@ object SpringUtils {
     __obj.asInstanceOf[SpringUtils]
   }
   
-  extension [Self <: SpringUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpringUtils] (val x: Self) extends AnyVal {
     
     inline def setMakeConfigFromBouncinessAndSpeed(value: SpringConfigWithBouncinessAndSpeed => SpringConfig): Self = StObject.set(x, "makeConfigFromBouncinessAndSpeed", js.Any.fromFunction1(value))
     

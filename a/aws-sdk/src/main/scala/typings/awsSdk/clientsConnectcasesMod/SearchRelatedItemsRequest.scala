@@ -38,7 +38,8 @@ object SearchRelatedItemsRequest {
     __obj.asInstanceOf[SearchRelatedItemsRequest]
   }
   
-  extension [Self <: SearchRelatedItemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchRelatedItemsRequest] (val x: Self) extends AnyVal {
     
     inline def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
     

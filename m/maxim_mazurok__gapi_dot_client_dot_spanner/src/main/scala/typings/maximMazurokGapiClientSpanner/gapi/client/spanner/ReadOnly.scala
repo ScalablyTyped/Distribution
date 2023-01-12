@@ -47,7 +47,8 @@ object ReadOnly {
     __obj.asInstanceOf[ReadOnly]
   }
   
-  extension [Self <: ReadOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadOnly] (val x: Self) extends AnyVal {
     
     inline def setExactStaleness(value: String): Self = StObject.set(x, "exactStaleness", value.asInstanceOf[js.Any])
     

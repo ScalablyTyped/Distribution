@@ -23,7 +23,8 @@ object TypedLinkAttributeRange {
     __obj.asInstanceOf[TypedLinkAttributeRange]
   }
   
-  extension [Self <: TypedLinkAttributeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedLinkAttributeRange] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: AttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     

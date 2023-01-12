@@ -989,7 +989,8 @@ object distConstantsDomEventsMod {
       __obj.asInstanceOf[DomEvent]
     }
     
-    extension [Self <: DomEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomEvent] (val x: Self) extends AnyVal {
       
       inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       

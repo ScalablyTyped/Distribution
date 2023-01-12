@@ -34,7 +34,8 @@ object `1PSplit` {
     __obj.asInstanceOf[`1PSplit`[P, PRest, PSplit]]
   }
   
-  extension [Self <: `1PSplit`[?, ?, ?], P /* <: typings.tsToolbelt.outListListMod.List[Any] */, PRest /* <: typings.tsToolbelt.outListListMod.List[Any] */, PSplit /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */](x: Self & (`1PSplit`[P, PRest, PSplit])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1PSplit`[?, ?, ?], P /* <: typings.tsToolbelt.outListListMod.List[Any] */, PRest /* <: typings.tsToolbelt.outListListMod.List[Any] */, PSplit /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */] (val x: Self & (`1PSplit`[P, PRest, PSplit])) extends AnyVal {
     
     inline def set0(
       value: /* import warning: importer.ImportType#apply Failed type conversion: P extends [...infer A, ...PRest] ? ts-toolbelt.ts-toolbelt/out/Function/Curry._SplitParams<ts-toolbelt.ts-toolbelt/out/List/Tail.Tail<P>, [...PSplit, A], ts-toolbelt.ts-toolbelt/out/List/Tail.Tail<PRest>> : never */ js.Any

@@ -19,7 +19,8 @@ object PlotXrangePartialFillOptions {
     __obj.asInstanceOf[PlotXrangePartialFillOptions]
   }
   
-  extension [Self <: PlotXrangePartialFillOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotXrangePartialFillOptions] (val x: Self) extends AnyVal {
     
     inline def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

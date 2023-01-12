@@ -23,7 +23,8 @@ object ColumnHidingRefusedEventUIParam {
     __obj.asInstanceOf[ColumnHidingRefusedEventUIParam]
   }
   
-  extension [Self <: ColumnHidingRefusedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnHidingRefusedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnKeys(value: js.Array[Any]): Self = StObject.set(x, "columnKeys", value.asInstanceOf[js.Any])
     

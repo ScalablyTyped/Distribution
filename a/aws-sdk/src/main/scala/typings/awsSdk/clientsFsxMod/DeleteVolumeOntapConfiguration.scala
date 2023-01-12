@@ -20,7 +20,8 @@ object DeleteVolumeOntapConfiguration {
     __obj.asInstanceOf[DeleteVolumeOntapConfiguration]
   }
   
-  extension [Self <: DeleteVolumeOntapConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVolumeOntapConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFinalBackupTags(value: Tags): Self = StObject.set(x, "FinalBackupTags", value.asInstanceOf[js.Any])
     

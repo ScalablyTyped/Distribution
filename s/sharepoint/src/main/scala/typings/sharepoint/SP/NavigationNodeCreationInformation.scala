@@ -51,7 +51,8 @@ object NavigationNodeCreationInformation {
     __obj.asInstanceOf[NavigationNodeCreationInformation]
   }
   
-  extension [Self <: NavigationNodeCreationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationNodeCreationInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_asLastNode(value: () => Boolean): Self = StObject.set(x, "get_asLastNode", js.Any.fromFunction0(value))
     

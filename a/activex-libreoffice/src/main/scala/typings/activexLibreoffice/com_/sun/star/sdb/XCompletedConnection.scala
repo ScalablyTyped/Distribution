@@ -36,7 +36,8 @@ object XCompletedConnection {
     __obj.asInstanceOf[XCompletedConnection]
   }
   
-  extension [Self <: XCompletedConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCompletedConnection] (val x: Self) extends AnyVal {
     
     inline def setConnectWithCompletion(value: XInteractionHandler => XConnection): Self = StObject.set(x, "connectWithCompletion", js.Any.fromFunction1(value))
   }

@@ -22,7 +22,8 @@ object LongRunningRecognizeRequest {
     __obj.asInstanceOf[LongRunningRecognizeRequest]
   }
   
-  extension [Self <: LongRunningRecognizeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongRunningRecognizeRequest] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: RecognitionAudio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

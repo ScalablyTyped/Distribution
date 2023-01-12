@@ -94,7 +94,8 @@ object outProvidersFiltersEntryMod {
       __obj.asInstanceOf[EntryFilter]
     }
     
-    extension [Self <: EntryFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryFilter] (val x: Self) extends AnyVal {
       
       inline def setGetFilter(value: (js.Array[Pattern], js.Array[Pattern]) => EntryFilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction2(value))
       

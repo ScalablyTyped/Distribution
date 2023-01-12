@@ -43,7 +43,8 @@ object libSliderMod extends Shortcut {
       __obj.asInstanceOf[HandleGeneratorInfo]
     }
     
-    extension [Self <: HandleGeneratorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleGeneratorInfo] (val x: Self) extends AnyVal {
       
       inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object libSliderMod extends Shortcut {
       __obj.asInstanceOf[SliderBaseProps]
     }
     
-    extension [Self <: SliderBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderBaseProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -229,7 +231,8 @@ object libSliderMod extends Shortcut {
       __obj.asInstanceOf[SliderRange]
     }
     
-    extension [Self <: SliderRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderRange] (val x: Self) extends AnyVal {
       
       inline def setDraggableTrack(value: Boolean): Self = StObject.set(x, "draggableTrack", value.asInstanceOf[js.Any])
       
@@ -262,7 +265,8 @@ object libSliderMod extends Shortcut {
       __obj.asInstanceOf[SliderRangeProps]
     }
     
-    extension [Self <: SliderRangeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderRangeProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -321,7 +325,8 @@ object libSliderMod extends Shortcut {
       __obj.asInstanceOf[SliderSingleProps]
     }
     
-    extension [Self <: SliderSingleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderSingleProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -372,7 +377,8 @@ object libSliderMod extends Shortcut {
       __obj.asInstanceOf[SliderTooltipProps]
     }
     
-    extension [Self <: SliderTooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderTooltipProps] (val x: Self) extends AnyVal {
       
       inline def setFormatter(value: /* value */ js.UndefOr[Double] => ReactNode): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       

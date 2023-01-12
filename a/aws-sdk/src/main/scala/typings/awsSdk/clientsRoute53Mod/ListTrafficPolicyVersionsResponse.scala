@@ -38,7 +38,8 @@ object ListTrafficPolicyVersionsResponse {
     __obj.asInstanceOf[ListTrafficPolicyVersionsResponse]
   }
   
-  extension [Self <: ListTrafficPolicyVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTrafficPolicyVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

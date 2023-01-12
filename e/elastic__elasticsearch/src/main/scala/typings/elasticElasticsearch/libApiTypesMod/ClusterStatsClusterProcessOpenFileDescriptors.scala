@@ -19,7 +19,8 @@ object ClusterStatsClusterProcessOpenFileDescriptors {
     __obj.asInstanceOf[ClusterStatsClusterProcessOpenFileDescriptors]
   }
   
-  extension [Self <: ClusterStatsClusterProcessOpenFileDescriptors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterProcessOpenFileDescriptors] (val x: Self) extends AnyVal {
     
     inline def setAvg(value: long): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     

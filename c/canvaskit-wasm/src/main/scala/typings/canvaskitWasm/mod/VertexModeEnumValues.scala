@@ -26,7 +26,8 @@ object VertexModeEnumValues {
     __obj.asInstanceOf[VertexModeEnumValues]
   }
   
-  extension [Self <: VertexModeEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexModeEnumValues] (val x: Self) extends AnyVal {
     
     inline def setTriangleFan(value: VertexMode): Self = StObject.set(x, "TriangleFan", value.asInstanceOf[js.Any])
     

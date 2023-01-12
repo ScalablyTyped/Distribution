@@ -16,7 +16,8 @@ object RefreshAvailable {
     __obj.asInstanceOf[RefreshAvailable]
   }
   
-  extension [Self <: RefreshAvailable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshAvailable] (val x: Self) extends AnyVal {
     
     inline def setRefreshAvailable(value: Boolean): Self = StObject.set(x, "refreshAvailable", value.asInstanceOf[js.Any])
   }

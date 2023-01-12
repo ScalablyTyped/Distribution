@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsColorBucketBoldMod extends Short
       __obj.asInstanceOf[ColorBucketBoldProps]
     }
     
-    extension [Self <: ColorBucketBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorBucketBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

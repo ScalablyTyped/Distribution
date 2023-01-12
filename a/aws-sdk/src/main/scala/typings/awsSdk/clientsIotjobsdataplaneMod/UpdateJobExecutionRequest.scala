@@ -58,7 +58,8 @@ object UpdateJobExecutionRequest {
     __obj.asInstanceOf[UpdateJobExecutionRequest]
   }
   
-  extension [Self <: UpdateJobExecutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateJobExecutionRequest] (val x: Self) extends AnyVal {
     
     inline def setExecutionNumber(value: ExecutionNumber): Self = StObject.set(x, "executionNumber", value.asInstanceOf[js.Any])
     

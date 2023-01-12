@@ -33,7 +33,8 @@ object DescribeMatchmakingConfigurationsInput {
     __obj.asInstanceOf[DescribeMatchmakingConfigurationsInput]
   }
   
-  extension [Self <: DescribeMatchmakingConfigurationsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMatchmakingConfigurationsInput] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

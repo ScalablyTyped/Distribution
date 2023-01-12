@@ -18,7 +18,8 @@ object RecordFactory {
     __obj.asInstanceOf[RecordFactory]
   }
   
-  extension [Self <: RecordFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordFactory] (val x: Self) extends AnyVal {
     
     inline def setGridFieldMap(value: Any): Self = StObject.set(x, "gridFieldMap", value.asInstanceOf[js.Any])
     

@@ -1202,7 +1202,8 @@ object Tokens {
     __obj.asInstanceOf[Tokens]
   }
   
-  extension [Self <: Tokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tokens] (val x: Self) extends AnyVal {
     
     inline def setBackgroundAlertCritical(value: String): Self = StObject.set(x, "backgroundAlertCritical", value.asInstanceOf[js.Any])
     

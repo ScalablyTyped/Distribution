@@ -18,7 +18,8 @@ object distTypesIwrappedcomponentMod {
       __obj.asInstanceOf[IWrappedComponent[P]]
     }
     
-    extension [Self <: IWrappedComponent[?], P](x: Self & IWrappedComponent[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWrappedComponent[?], P] (val x: Self & IWrappedComponent[P]) extends AnyVal {
       
       inline def setWrappedComponent(value: IReactComponent[P]): Self = StObject.set(x, "wrappedComponent", value.asInstanceOf[js.Any])
     }

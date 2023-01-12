@@ -52,7 +52,8 @@ object BaseChartTooltip {
     __obj.asInstanceOf[BaseChartTooltip]
   }
   
-  extension [Self <: BaseChartTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseChartTooltip] (val x: Self) extends AnyVal {
     
     inline def setArgumentFormat(value: Format): Self = StObject.set(x, "argumentFormat", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteSkillAuthorizationRequest {
     __obj.asInstanceOf[DeleteSkillAuthorizationRequest]
   }
   
-  extension [Self <: DeleteSkillAuthorizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSkillAuthorizationRequest] (val x: Self) extends AnyVal {
     
     inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     

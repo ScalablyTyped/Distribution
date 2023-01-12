@@ -104,7 +104,8 @@ object mod {
       __obj.asInstanceOf[MersenneTwister]
     }
     
-    extension [Self <: MersenneTwister](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MersenneTwister] (val x: Self) extends AnyVal {
       
       inline def setInt(value: () => Double): Self = StObject.set(x, "int", js.Any.fromFunction0(value))
       

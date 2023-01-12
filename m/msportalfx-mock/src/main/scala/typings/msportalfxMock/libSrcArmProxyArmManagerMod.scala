@@ -139,7 +139,8 @@ object libSrcArmProxyArmManagerMod {
         __obj.asInstanceOf[MockData]
       }
       
-      extension [Self <: MockData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MockData] (val x: Self) extends AnyVal {
         
         inline def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
         

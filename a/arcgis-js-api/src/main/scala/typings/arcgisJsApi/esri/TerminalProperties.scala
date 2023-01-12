@@ -27,7 +27,8 @@ object TerminalProperties {
     __obj.asInstanceOf[TerminalProperties]
   }
   
-  extension [Self <: TerminalProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminalProperties] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

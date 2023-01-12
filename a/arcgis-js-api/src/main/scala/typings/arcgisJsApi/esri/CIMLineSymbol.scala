@@ -37,7 +37,8 @@ object CIMLineSymbol {
     __obj.asInstanceOf[CIMLineSymbol]
   }
   
-  extension [Self <: CIMLineSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMLineSymbol] (val x: Self) extends AnyVal {
     
     inline def setEffects(value: js.Array[CIMGeometricEffect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     

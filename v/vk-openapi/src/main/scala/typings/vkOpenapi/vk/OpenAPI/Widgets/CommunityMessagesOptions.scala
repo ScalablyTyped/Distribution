@@ -37,7 +37,8 @@ object CommunityMessagesOptions {
     __obj.asInstanceOf[CommunityMessagesOptions]
   }
   
-  extension [Self <: CommunityMessagesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommunityMessagesOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonType(value: String): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object ISegmentTree {
     __obj.asInstanceOf[ISegmentTree]
   }
   
-  extension [Self <: ISegmentTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISegmentTree] (val x: Self) extends AnyVal {
     
     inline def setGetAggregation(
       value: (/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* estStep */ js.UndefOr[Double]) => Any

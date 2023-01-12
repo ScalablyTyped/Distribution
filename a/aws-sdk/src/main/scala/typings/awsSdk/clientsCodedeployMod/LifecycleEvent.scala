@@ -38,7 +38,8 @@ object LifecycleEvent {
     __obj.asInstanceOf[LifecycleEvent]
   }
   
-  extension [Self <: LifecycleEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecycleEvent] (val x: Self) extends AnyVal {
     
     inline def setDiagnostics(value: Diagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     

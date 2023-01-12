@@ -28,7 +28,8 @@ object DescribeEndpointSettingsMessage {
     __obj.asInstanceOf[DescribeEndpointSettingsMessage]
   }
   
-  extension [Self <: DescribeEndpointSettingsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEndpointSettingsMessage] (val x: Self) extends AnyVal {
     
     inline def setEngineName(value: String): Self = StObject.set(x, "EngineName", value.asInstanceOf[js.Any])
     

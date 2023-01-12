@@ -43,7 +43,8 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  extension [Self <: Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     inline def setApiHost(value: String): Self = StObject.set(x, "apiHost", value.asInstanceOf[js.Any])
     

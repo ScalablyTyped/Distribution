@@ -28,7 +28,8 @@ object AnalysisEdgeNGramTokenFilter {
     __obj.asInstanceOf[AnalysisEdgeNGramTokenFilter]
   }
   
-  extension [Self <: AnalysisEdgeNGramTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisEdgeNGramTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setMax_gram(value: integer): Self = StObject.set(x, "max_gram", value.asInstanceOf[js.Any])
     

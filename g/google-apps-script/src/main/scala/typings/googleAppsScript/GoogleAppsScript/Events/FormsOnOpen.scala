@@ -20,7 +20,8 @@ object FormsOnOpen {
     __obj.asInstanceOf[FormsOnOpen]
   }
   
-  extension [Self <: FormsOnOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormsOnOpen] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Form): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

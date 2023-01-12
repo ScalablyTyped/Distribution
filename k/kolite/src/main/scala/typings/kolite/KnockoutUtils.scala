@@ -15,7 +15,8 @@ object KnockoutUtils {
     __obj.asInstanceOf[KnockoutUtils]
   }
   
-  extension [Self <: KnockoutUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutUtils] (val x: Self) extends AnyVal {
     
     inline def setWrapAccessor(value: Any => js.Function): Self = StObject.set(x, "wrapAccessor", js.Any.fromFunction1(value))
   }

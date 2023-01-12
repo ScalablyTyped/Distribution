@@ -99,7 +99,8 @@ object libSequenceComparisonCommonMod {
       __obj.asInstanceOf[ISequenceComparatorItertor[T]]
     }
     
-    extension [Self <: ISequenceComparatorItertor[?], T](x: Self & ISequenceComparatorItertor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISequenceComparatorItertor[?], T] (val x: Self & ISequenceComparatorItertor[T]) extends AnyVal {
       
       inline def setGetByIndex(value: Double => T): Self = StObject.set(x, "getByIndex", js.Any.fromFunction1(value))
       
@@ -124,7 +125,8 @@ object libSequenceComparisonCommonMod {
       __obj.asInstanceOf[PathElem]
     }
     
-    extension [Self <: PathElem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathElem] (val x: Self) extends AnyVal {
       
       inline def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       

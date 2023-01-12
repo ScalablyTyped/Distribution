@@ -23,7 +23,8 @@ object RequestBodyContentApplicationjsonDescriptionDueon {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonDescriptionDueon]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonDescriptionDueon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonDescriptionDueon] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathMilestonenumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

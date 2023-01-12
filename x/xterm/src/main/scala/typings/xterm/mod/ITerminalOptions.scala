@@ -245,7 +245,8 @@ object ITerminalOptions {
     __obj.asInstanceOf[ITerminalOptions]
   }
   
-  extension [Self <: ITerminalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITerminalOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowProposedApi(value: Boolean): Self = StObject.set(x, "allowProposedApi", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object RenameProvider {
     __obj.asInstanceOf[RenameProvider]
   }
   
-  extension [Self <: RenameProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameProvider] (val x: Self) extends AnyVal {
     
     inline def setPrepareRename(
       value: (/* document */ TextDocument, /* position */ Position, /* token */ CancellationToken) => ProviderResult[Range | Placeholder]

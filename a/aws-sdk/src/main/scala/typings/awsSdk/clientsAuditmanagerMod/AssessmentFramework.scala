@@ -30,7 +30,8 @@ object AssessmentFramework {
     __obj.asInstanceOf[AssessmentFramework]
   }
   
-  extension [Self <: AssessmentFramework](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentFramework] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AuditManagerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

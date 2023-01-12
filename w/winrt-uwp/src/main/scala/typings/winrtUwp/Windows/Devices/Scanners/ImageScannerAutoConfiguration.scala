@@ -31,7 +31,8 @@ object ImageScannerAutoConfiguration {
     __obj.asInstanceOf[ImageScannerAutoConfiguration]
   }
   
-  extension [Self <: ImageScannerAutoConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageScannerAutoConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDefaultFormat(value: ImageScannerFormat): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
     

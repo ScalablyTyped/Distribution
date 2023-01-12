@@ -41,7 +41,8 @@ object GetStats {
     __obj.asInstanceOf[GetStats]
   }
   
-  extension [Self <: GetStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStats] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: long): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

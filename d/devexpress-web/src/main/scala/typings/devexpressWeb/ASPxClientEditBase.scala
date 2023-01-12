@@ -73,7 +73,8 @@ object ASPxClientEditBase {
     __obj.asInstanceOf[ASPxClientEditBase]
   }
   
-  extension [Self <: ASPxClientEditBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientEditBase] (val x: Self) extends AnyVal {
     
     inline def setGetCaption(value: () => String): Self = StObject.set(x, "GetCaption", js.Any.fromFunction0(value))
     

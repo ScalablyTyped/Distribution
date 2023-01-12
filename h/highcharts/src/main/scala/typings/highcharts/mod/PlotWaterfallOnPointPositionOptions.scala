@@ -39,7 +39,8 @@ object PlotWaterfallOnPointPositionOptions {
     __obj.asInstanceOf[PlotWaterfallOnPointPositionOptions]
   }
   
-  extension [Self <: PlotWaterfallOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotWaterfallOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

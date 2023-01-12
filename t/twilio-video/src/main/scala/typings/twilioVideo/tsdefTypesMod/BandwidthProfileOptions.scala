@@ -15,7 +15,8 @@ object BandwidthProfileOptions {
     __obj.asInstanceOf[BandwidthProfileOptions]
   }
   
-  extension [Self <: BandwidthProfileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BandwidthProfileOptions] (val x: Self) extends AnyVal {
     
     inline def setVideo(value: VideoBandwidthProfileOptions): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     

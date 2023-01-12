@@ -35,7 +35,8 @@ object esPanelsTimePanelTimeUnitColumnMod {
       __obj.asInstanceOf[TimeUnitColumnProps]
     }
     
-    extension [Self <: TimeUnitColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeUnitColumnProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object esPanelsTimePanelTimeUnitColumnMod {
       __obj.asInstanceOf[Unit]
     }
     
-    extension [Self <: Unit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

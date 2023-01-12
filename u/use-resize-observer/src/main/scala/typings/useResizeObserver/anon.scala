@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Box[T]]
     }
     
-    extension [Self <: Box[?], T /* <: Element */](x: Self & Box[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Box[?], T /* <: Element */] (val x: Self & Box[T]) extends AnyVal {
       
       inline def setBox(value: ResizeObserverBoxOptions): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       

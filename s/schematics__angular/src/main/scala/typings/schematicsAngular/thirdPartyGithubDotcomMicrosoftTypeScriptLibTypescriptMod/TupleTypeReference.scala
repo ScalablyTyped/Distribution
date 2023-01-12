@@ -46,7 +46,8 @@ object TupleTypeReference {
     __obj.asInstanceOf[TupleTypeReference]
   }
   
-  extension [Self <: TupleTypeReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TupleTypeReference] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: TupleType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

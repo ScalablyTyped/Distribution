@@ -22,7 +22,8 @@ object RepositoryError {
     __obj.asInstanceOf[RepositoryError]
   }
   
-  extension [Self <: RepositoryError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryError] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

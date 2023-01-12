@@ -20,7 +20,8 @@ object MUIDataTableTextLabelsBody {
     __obj.asInstanceOf[MUIDataTableTextLabelsBody]
   }
   
-  extension [Self <: MUIDataTableTextLabelsBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableTextLabelsBody] (val x: Self) extends AnyVal {
     
     inline def setColumnHeaderTooltip(value: MUIDataTableColumn => String): Self = StObject.set(x, "columnHeaderTooltip", js.Any.fromFunction1(value))
     

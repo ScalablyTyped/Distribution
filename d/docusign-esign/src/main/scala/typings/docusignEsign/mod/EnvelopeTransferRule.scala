@@ -67,7 +67,8 @@ object EnvelopeTransferRule {
     __obj.asInstanceOf[EnvelopeTransferRule]
   }
   
-  extension [Self <: EnvelopeTransferRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeTransferRule] (val x: Self) extends AnyVal {
     
     inline def setCarbonCopyOriginalOwner(value: String): Self = StObject.set(x, "carbonCopyOriginalOwner", value.asInstanceOf[js.Any])
     

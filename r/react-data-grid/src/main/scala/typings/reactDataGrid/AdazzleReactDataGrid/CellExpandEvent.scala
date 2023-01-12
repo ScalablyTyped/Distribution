@@ -36,7 +36,8 @@ object CellExpandEvent {
     __obj.asInstanceOf[CellExpandEvent[T]]
   }
   
-  extension [Self <: CellExpandEvent[?], T](x: Self & CellExpandEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellExpandEvent[?], T] (val x: Self & CellExpandEvent[T]) extends AnyVal {
     
     inline def setExpandArgs(value: Any): Self = StObject.set(x, "expandArgs", value.asInstanceOf[js.Any])
     

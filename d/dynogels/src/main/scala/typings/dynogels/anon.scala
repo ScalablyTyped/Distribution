@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[PollingInterval]
     }
     
-    extension [Self <: PollingInterval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PollingInterval] (val x: Self) extends AnyVal {
       
       inline def setPollingInterval(value: Double): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
     }
@@ -53,7 +55,8 @@ object anon {
       __obj.asInstanceOf[StreamEnabled]
     }
     
-    extension [Self <: StreamEnabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamEnabled] (val x: Self) extends AnyVal {
       
       inline def setStreamEnabled(value: Boolean): Self = StObject.set(x, "streamEnabled", value.asInstanceOf[js.Any])
       

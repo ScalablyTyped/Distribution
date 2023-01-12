@@ -88,7 +88,8 @@ object IntegerBitmapLayout {
     __obj.asInstanceOf[IntegerBitmapLayout]
   }
   
-  extension [Self <: IntegerBitmapLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerBitmapLayout] (val x: Self) extends AnyVal {
     
     inline def setColorSpace(value: XIntegerBitmapColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     

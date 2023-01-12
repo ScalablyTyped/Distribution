@@ -23,7 +23,8 @@ object ConstructQuery {
     __obj.asInstanceOf[ConstructQuery]
   }
   
-  extension [Self <: ConstructQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstructQuery] (val x: Self) extends AnyVal {
     
     inline def setQueryType(value: CONSTRUCT): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     

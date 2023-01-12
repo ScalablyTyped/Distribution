@@ -23,7 +23,8 @@ object InspectionClass {
     __obj.asInstanceOf[InspectionClass]
   }
   
-  extension [Self <: InspectionClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectionClass] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

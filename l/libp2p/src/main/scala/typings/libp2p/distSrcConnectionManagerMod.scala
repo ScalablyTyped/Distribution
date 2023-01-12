@@ -171,7 +171,8 @@ object distSrcConnectionManagerMod {
       __obj.asInstanceOf[ConnectionManagerEvents]
     }
     
-    extension [Self <: ConnectionManagerEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionManagerEvents] (val x: Self) extends AnyVal {
       
       inline def setPeerColonconnect(value: CustomEvent[PeerId]): Self = StObject.set(x, "peer:connect", value.asInstanceOf[js.Any])
       
@@ -311,7 +312,8 @@ object distSrcConnectionManagerMod {
       __obj.asInstanceOf[ConnectionManagerInit]
     }
     
-    extension [Self <: ConnectionManagerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionManagerInit] (val x: Self) extends AnyVal {
       
       inline def setAddressSorter(value: (/* a */ Address, /* b */ Address) => `-1` | `0` | `1`): Self = StObject.set(x, "addressSorter", js.Any.fromFunction2(value))
       
@@ -418,7 +420,8 @@ object distSrcConnectionManagerMod {
       __obj.asInstanceOf[DefaultConnectionManagerComponents]
     }
     
-    extension [Self <: DefaultConnectionManagerComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultConnectionManagerComponents] (val x: Self) extends AnyVal {
       
       inline def setDialer(value: Dialer): Self = StObject.set(x, "dialer", value.asInstanceOf[js.Any])
       

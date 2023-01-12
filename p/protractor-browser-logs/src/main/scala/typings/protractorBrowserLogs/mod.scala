@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[BrowserLogOptions]
     }
     
-    extension [Self <: BrowserLogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserLogOptions] (val x: Self) extends AnyVal {
       
       inline def setReporters(value: js.Array[js.Function1[/* entries */ js.Array[Entry], Unit]]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[BrowserLogs]
     }
     
-    extension [Self <: BrowserLogs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserLogs] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: (matchPredicateFunction, matchPredicateFunction) => matchPredicateFunction): Self = StObject.set(x, "and", js.Any.fromFunction2(value))
       

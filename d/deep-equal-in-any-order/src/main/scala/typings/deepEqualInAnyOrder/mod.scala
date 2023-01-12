@@ -33,7 +33,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[Deep]
         }
         
-        extension [Self <: Deep](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
           
           inline def setEqualInAnyOrder(
             value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Equal */ Any

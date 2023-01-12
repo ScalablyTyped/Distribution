@@ -72,7 +72,8 @@ object InterleavedBufferAttribute {
     __obj.asInstanceOf[InterleavedBufferAttribute]
   }
   
-  extension [Self <: InterleavedBufferAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterleavedBufferAttribute] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[Any]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

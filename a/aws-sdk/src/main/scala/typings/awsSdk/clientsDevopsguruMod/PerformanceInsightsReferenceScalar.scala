@@ -18,7 +18,8 @@ object PerformanceInsightsReferenceScalar {
     __obj.asInstanceOf[PerformanceInsightsReferenceScalar]
   }
   
-  extension [Self <: PerformanceInsightsReferenceScalar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceInsightsReferenceScalar] (val x: Self) extends AnyVal {
     
     inline def setValue(value: PerformanceInsightsValueDouble): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     

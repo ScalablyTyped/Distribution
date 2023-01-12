@@ -22,7 +22,8 @@ object Flow {
     __obj.asInstanceOf[Flow]
   }
   
-  extension [Self <: Flow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Flow] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

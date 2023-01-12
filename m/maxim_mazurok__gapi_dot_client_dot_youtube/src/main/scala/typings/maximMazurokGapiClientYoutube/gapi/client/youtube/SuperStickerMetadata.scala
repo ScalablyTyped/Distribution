@@ -22,7 +22,8 @@ object SuperStickerMetadata {
     __obj.asInstanceOf[SuperStickerMetadata]
   }
   
-  extension [Self <: SuperStickerMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuperStickerMetadata] (val x: Self) extends AnyVal {
     
     inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     

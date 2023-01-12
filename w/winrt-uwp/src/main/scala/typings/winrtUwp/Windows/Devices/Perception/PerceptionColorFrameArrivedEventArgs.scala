@@ -23,7 +23,8 @@ object PerceptionColorFrameArrivedEventArgs {
     __obj.asInstanceOf[PerceptionColorFrameArrivedEventArgs]
   }
   
-  extension [Self <: PerceptionColorFrameArrivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerceptionColorFrameArrivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRelativeTime(value: Double): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     

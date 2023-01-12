@@ -28,7 +28,8 @@ object ListResourcesAssociatedToCustomLineItemResponseElement {
     __obj.asInstanceOf[ListResourcesAssociatedToCustomLineItemResponseElement]
   }
   
-  extension [Self <: ListResourcesAssociatedToCustomLineItemResponseElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourcesAssociatedToCustomLineItemResponseElement] (val x: Self) extends AnyVal {
     
     inline def setArn(value: CustomLineItemAssociationElement): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

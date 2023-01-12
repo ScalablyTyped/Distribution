@@ -186,7 +186,8 @@ object mod {
       __obj.asInstanceOf[LambdaLogOptions]
     }
     
-    extension [Self <: LambdaLogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LambdaLogOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -247,7 +248,8 @@ object mod {
       __obj.asInstanceOf[LogLevels]
     }
     
-    extension [Self <: LogLevels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogLevels] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: log | `false`): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -276,7 +278,8 @@ object mod {
       __obj.asInstanceOf[LogRecord]
     }
     
-    extension [Self <: LogRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogRecord] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
@@ -307,7 +310,8 @@ object mod {
       __obj.asInstanceOf[LogRecordOptions]
     }
     
-    extension [Self <: LogRecordOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogRecordOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

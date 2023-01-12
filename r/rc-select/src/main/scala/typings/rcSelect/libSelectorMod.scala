@@ -102,7 +102,8 @@ object libSelectorMod extends Shortcut {
       __obj.asInstanceOf[InnerSelectorProps]
     }
     
-    extension [Self <: InnerSelectorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerSelectorProps] (val x: Self) extends AnyVal {
       
       inline def setActiveDescendantId(value: String): Self = StObject.set(x, "activeDescendantId", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object libSelectorMod extends Shortcut {
       __obj.asInstanceOf[RefSelectorProps]
     }
     
-    extension [Self <: RefSelectorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefSelectorProps] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       

@@ -34,7 +34,8 @@ object ScheduleItem {
     __obj.asInstanceOf[ScheduleItem]
   }
   
-  extension [Self <: ScheduleItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleItem] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

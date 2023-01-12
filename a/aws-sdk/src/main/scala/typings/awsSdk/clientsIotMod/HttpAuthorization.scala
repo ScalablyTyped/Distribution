@@ -18,7 +18,8 @@ object HttpAuthorization {
     __obj.asInstanceOf[HttpAuthorization]
   }
   
-  extension [Self <: HttpAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpAuthorization] (val x: Self) extends AnyVal {
     
     inline def setSigv4(value: SigV4Authorization): Self = StObject.set(x, "sigv4", value.asInstanceOf[js.Any])
     

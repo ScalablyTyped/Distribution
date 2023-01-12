@@ -92,7 +92,8 @@ object blake3Mod {
       __obj.asInstanceOf[Blake3Opts]
     }
     
-    extension [Self <: Blake3Opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blake3Opts] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Input): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

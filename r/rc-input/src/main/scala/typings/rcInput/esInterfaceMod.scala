@@ -159,7 +159,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[BaseInputProps]
     }
     
-    extension [Self <: BaseInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseInputProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -234,7 +235,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[CommonInputProps]
     }
     
-    extension [Self <: CommonInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonInputProps] (val x: Self) extends AnyVal {
       
       inline def setAddonAfter(value: ReactNode): Self = StObject.set(x, "addonAfter", value.asInstanceOf[js.Any])
       
@@ -728,7 +730,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[InputProps]
     }
     
-    extension [Self <: InputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1642,7 +1645,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[ShowCountProps]
     }
     
-    extension [Self <: ShowCountProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowCountProps] (val x: Self) extends AnyVal {
       
       inline def setFormatter(value: Count => ReactNode): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     }

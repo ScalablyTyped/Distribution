@@ -18,7 +18,8 @@ object BuiltInIdentityProvider {
     __obj.asInstanceOf[BuiltInIdentityProvider]
   }
   
-  extension [Self <: BuiltInIdentityProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltInIdentityProvider] (val x: Self) extends AnyVal {
     
     inline def setIdentityProviderType(value: NullableOption[String]): Self = StObject.set(x, "identityProviderType", value.asInstanceOf[js.Any])
     

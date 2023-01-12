@@ -36,7 +36,8 @@ object NoDataOptions {
     __obj.asInstanceOf[NoDataOptions]
   }
   
-  extension [Self <: NoDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoDataOptions] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: SVGAttributes): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

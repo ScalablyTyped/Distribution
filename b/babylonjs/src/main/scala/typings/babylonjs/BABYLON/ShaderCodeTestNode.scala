@@ -23,7 +23,8 @@ object ShaderCodeTestNode {
     __obj.asInstanceOf[ShaderCodeTestNode]
   }
   
-  extension [Self <: ShaderCodeTestNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaderCodeTestNode] (val x: Self) extends AnyVal {
     
     inline def setTestExpression(value: ShaderDefineExpression): Self = StObject.set(x, "testExpression", value.asInstanceOf[js.Any])
   }

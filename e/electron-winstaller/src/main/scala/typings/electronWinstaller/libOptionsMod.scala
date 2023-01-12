@@ -19,7 +19,8 @@ object libOptionsMod {
       __obj.asInstanceOf[AdditionalFile]
     }
     
-    extension [Self <: AdditionalFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalFile] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object libOptionsMod {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setAdditionalFiles(value: js.Array[AdditionalFile]): Self = StObject.set(x, "additionalFiles", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object libOptionsMod {
       __obj.asInstanceOf[PersonMetadata]
     }
     
-    extension [Self <: PersonMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersonMetadata] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -288,7 +291,8 @@ object libOptionsMod {
       __obj.asInstanceOf[SquirrelWindowsOptions]
     }
     
-    extension [Self <: SquirrelWindowsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SquirrelWindowsOptions] (val x: Self) extends AnyVal {
       
       inline def setAppDirectory(value: String): Self = StObject.set(x, "appDirectory", value.asInstanceOf[js.Any])
       

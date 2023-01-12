@@ -18,7 +18,8 @@ object GetPlaybackKeyPairResponse {
     __obj.asInstanceOf[GetPlaybackKeyPairResponse]
   }
   
-  extension [Self <: GetPlaybackKeyPairResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPlaybackKeyPairResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyPair(value: PlaybackKeyPair): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
     

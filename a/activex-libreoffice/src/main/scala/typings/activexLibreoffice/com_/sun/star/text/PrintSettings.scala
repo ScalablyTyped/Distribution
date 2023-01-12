@@ -78,7 +78,8 @@ object PrintSettings {
     __obj.asInstanceOf[PrintSettings]
   }
   
-  extension [Self <: PrintSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintSettings] (val x: Self) extends AnyVal {
     
     inline def setPrintAnnotationMode(value: NotePrintMode): Self = StObject.set(x, "PrintAnnotationMode", value.asInstanceOf[js.Any])
     

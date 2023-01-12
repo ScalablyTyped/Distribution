@@ -17,7 +17,8 @@ object GetMembershipsParametersv2 {
     __obj.asInstanceOf[GetMembershipsParametersv2]
   }
   
-  extension [Self <: GetMembershipsParametersv2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMembershipsParametersv2] (val x: Self) extends AnyVal {
     
     inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     

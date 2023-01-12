@@ -80,7 +80,8 @@ object typesJsonmodelMod {
         __obj.asInstanceOf[Field]
       }
       
-      extension [Self <: Field](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
         
         inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
@@ -124,7 +125,8 @@ object typesJsonmodelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setData(value: DataSource): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -171,7 +173,8 @@ object typesJsonmodelMod {
         __obj.asInstanceOf[Schema]
       }
       
-      extension [Self <: Schema](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
         
         inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         

@@ -105,7 +105,8 @@ object WindowsPhone81GeneralConfiguration {
     __obj.asInstanceOf[WindowsPhone81GeneralConfiguration]
   }
   
-  extension [Self <: WindowsPhone81GeneralConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsPhone81GeneralConfiguration] (val x: Self) extends AnyVal {
     
     inline def setApplyOnlyToWindowsPhone81(value: Boolean): Self = StObject.set(x, "applyOnlyToWindowsPhone81", value.asInstanceOf[js.Any])
     

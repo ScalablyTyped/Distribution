@@ -15,7 +15,8 @@ object GetterOptions {
     __obj.asInstanceOf[GetterOptions]
   }
   
-  extension [Self <: GetterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetterOptions] (val x: Self) extends AnyVal {
     
     inline def setBufferStream(value: Boolean): Self = StObject.set(x, "bufferStream", value.asInstanceOf[js.Any])
     

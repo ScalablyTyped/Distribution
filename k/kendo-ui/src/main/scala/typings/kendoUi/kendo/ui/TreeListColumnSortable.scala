@@ -15,7 +15,8 @@ object TreeListColumnSortable {
     __obj.asInstanceOf[TreeListColumnSortable]
   }
   
-  extension [Self <: TreeListColumnSortable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListColumnSortable] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     

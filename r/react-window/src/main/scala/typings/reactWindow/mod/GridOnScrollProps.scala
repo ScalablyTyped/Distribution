@@ -29,7 +29,8 @@ object GridOnScrollProps {
     __obj.asInstanceOf[GridOnScrollProps]
   }
   
-  extension [Self <: GridOnScrollProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridOnScrollProps] (val x: Self) extends AnyVal {
     
     inline def setHorizontalScrollDirection(value: ScrollDirection): Self = StObject.set(x, "horizontalScrollDirection", value.asInstanceOf[js.Any])
     

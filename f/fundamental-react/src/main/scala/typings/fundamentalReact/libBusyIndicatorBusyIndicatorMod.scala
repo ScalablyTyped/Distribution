@@ -32,7 +32,8 @@ object libBusyIndicatorBusyIndicatorMod extends Shortcut {
       __obj.asInstanceOf[BusyIndicatorProps]
     }
     
-    extension [Self <: BusyIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BusyIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setLocalizedText(value: Loading): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
       

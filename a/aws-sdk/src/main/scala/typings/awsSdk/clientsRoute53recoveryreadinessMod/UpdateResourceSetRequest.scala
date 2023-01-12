@@ -28,7 +28,8 @@ object UpdateResourceSetRequest {
     __obj.asInstanceOf[UpdateResourceSetRequest]
   }
   
-  extension [Self <: UpdateResourceSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResourceSetRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceSetName(value: string): Self = StObject.set(x, "ResourceSetName", value.asInstanceOf[js.Any])
     

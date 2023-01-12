@@ -38,7 +38,8 @@ object InAppTemplateRequest {
     __obj.asInstanceOf[InAppTemplateRequest]
   }
   
-  extension [Self <: InAppTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InAppTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ListOfInAppMessageContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

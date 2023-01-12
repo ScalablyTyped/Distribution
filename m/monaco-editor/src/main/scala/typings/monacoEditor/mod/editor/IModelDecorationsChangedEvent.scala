@@ -17,7 +17,8 @@ object IModelDecorationsChangedEvent {
     __obj.asInstanceOf[IModelDecorationsChangedEvent]
   }
   
-  extension [Self <: IModelDecorationsChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModelDecorationsChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setAffectsMinimap(value: Boolean): Self = StObject.set(x, "affectsMinimap", value.asInstanceOf[js.Any])
     

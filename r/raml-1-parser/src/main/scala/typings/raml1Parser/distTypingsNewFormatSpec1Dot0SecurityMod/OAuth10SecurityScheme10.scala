@@ -27,7 +27,8 @@ object OAuth10SecurityScheme10 {
     __obj.asInstanceOf[OAuth10SecurityScheme10]
   }
   
-  extension [Self <: OAuth10SecurityScheme10](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuth10SecurityScheme10] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: OAuth10SecuritySettings10): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     

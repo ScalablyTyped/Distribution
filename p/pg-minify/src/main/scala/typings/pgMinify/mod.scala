@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[IErrorPosition]
     }
     
-    extension [Self <: IErrorPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IErrorPosition] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object mod {
       __obj.asInstanceOf[IMinifyOptions]
     }
     
-    extension [Self <: IMinifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMinifyOptions] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       

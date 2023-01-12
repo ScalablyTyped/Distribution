@@ -18,7 +18,8 @@ object StartOnDemandAuditTaskResponse {
     __obj.asInstanceOf[StartOnDemandAuditTaskResponse]
   }
   
-  extension [Self <: StartOnDemandAuditTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartOnDemandAuditTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskId(value: AuditTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     

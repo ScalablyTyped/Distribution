@@ -40,7 +40,8 @@ object OnCreatedNavigationTargetDetails {
     __obj.asInstanceOf[OnCreatedNavigationTargetDetails]
   }
   
-  extension [Self <: OnCreatedNavigationTargetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCreatedNavigationTargetDetails] (val x: Self) extends AnyVal {
     
     inline def setSourceFrameId(value: Double): Self = StObject.set(x, "sourceFrameId", value.asInstanceOf[js.Any])
     

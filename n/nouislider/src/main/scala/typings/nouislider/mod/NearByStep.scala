@@ -20,7 +20,8 @@ object NearByStep {
     __obj.asInstanceOf[NearByStep]
   }
   
-  extension [Self <: NearByStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NearByStep] (val x: Self) extends AnyVal {
     
     inline def setHighestStep(value: Double): Self = StObject.set(x, "highestStep", value.asInstanceOf[js.Any])
     

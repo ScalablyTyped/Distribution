@@ -25,7 +25,8 @@ object IElementDimension {
     __obj.asInstanceOf[IElementDimension]
   }
   
-  extension [Self <: IElementDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IElementDimension] (val x: Self) extends AnyVal {
     
     inline def setRootMaxH(value: Double): Self = StObject.set(x, "rootMaxH", value.asInstanceOf[js.Any])
     

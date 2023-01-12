@@ -16,7 +16,8 @@ object UpdateOpts {
     __obj.asInstanceOf[UpdateOpts]
   }
   
-  extension [Self <: UpdateOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOpts] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

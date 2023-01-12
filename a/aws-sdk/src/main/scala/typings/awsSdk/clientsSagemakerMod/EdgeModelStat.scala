@@ -50,7 +50,8 @@ object EdgeModelStat {
     __obj.asInstanceOf[EdgeModelStat]
   }
   
-  extension [Self <: EdgeModelStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeModelStat] (val x: Self) extends AnyVal {
     
     inline def setActiveDeviceCount(value: Long): Self = StObject.set(x, "ActiveDeviceCount", value.asInstanceOf[js.Any])
     

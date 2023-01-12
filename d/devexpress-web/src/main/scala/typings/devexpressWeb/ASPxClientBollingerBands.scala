@@ -34,7 +34,8 @@ object ASPxClientBollingerBands {
     __obj.asInstanceOf[ASPxClientBollingerBands]
   }
   
-  extension [Self <: ASPxClientBollingerBands](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientBollingerBands] (val x: Self) extends AnyVal {
     
     inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
     

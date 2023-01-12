@@ -17,7 +17,8 @@ object UTCTimeParams {
     __obj.asInstanceOf[UTCTimeParams]
   }
   
-  extension [Self <: UTCTimeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UTCTimeParams] (val x: Self) extends AnyVal {
     
     inline def setValueDate(value: js.Date): Self = StObject.set(x, "valueDate", value.asInstanceOf[js.Any])
     

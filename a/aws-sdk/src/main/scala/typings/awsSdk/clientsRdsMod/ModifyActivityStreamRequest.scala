@@ -23,7 +23,8 @@ object ModifyActivityStreamRequest {
     __obj.asInstanceOf[ModifyActivityStreamRequest]
   }
   
-  extension [Self <: ModifyActivityStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyActivityStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setAuditPolicyState(value: AuditPolicyState): Self = StObject.set(x, "AuditPolicyState", value.asInstanceOf[js.Any])
     

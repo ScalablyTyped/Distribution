@@ -23,7 +23,8 @@ object DnsRecord {
     __obj.asInstanceOf[DnsRecord]
   }
   
-  extension [Self <: DnsRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsRecord] (val x: Self) extends AnyVal {
     
     inline def setTTL(value: RecordTTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object InputParams {
     __obj.asInstanceOf[InputParams]
   }
   
-  extension [Self <: InputParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputParams] (val x: Self) extends AnyVal {
     
     inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     

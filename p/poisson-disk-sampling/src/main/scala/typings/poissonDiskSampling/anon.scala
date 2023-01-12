@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Bias]
     }
     
-    extension [Self <: Bias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bias] (val x: Self) extends AnyVal {
       
       inline def setBias(value: /* repeated */ Double => Double): Self = StObject.set(x, "bias", js.Any.fromFunction1(value))
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object anon {
       __obj.asInstanceOf[DistanceFunction]
     }
     
-    extension [Self <: DistanceFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistanceFunction] (val x: Self) extends AnyVal {
       
       inline def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object anon {
       __obj.asInstanceOf[MinDistance]
     }
     
-    extension [Self <: MinDistance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinDistance] (val x: Self) extends AnyVal {
       
       inline def setMinDistance(value: Double): Self = StObject.set(x, "minDistance", value.asInstanceOf[js.Any])
       

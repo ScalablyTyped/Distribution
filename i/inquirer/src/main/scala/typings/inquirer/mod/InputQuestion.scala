@@ -22,7 +22,8 @@ object InputQuestion {
     __obj.asInstanceOf[InputQuestion[T]]
   }
   
-  extension [Self <: InputQuestion[?], T /* <: Answers */](x: Self & InputQuestion[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputQuestion[?], T /* <: Answers */] (val x: Self & InputQuestion[T]) extends AnyVal {
     
     inline def setType(value: input): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object IdFactory {
     __obj.asInstanceOf[IdFactory]
   }
   
-  extension [Self <: IdFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdFactory] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

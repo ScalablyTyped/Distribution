@@ -48,7 +48,8 @@ object CreateConnectPeerRequest {
     __obj.asInstanceOf[CreateConnectPeerRequest]
   }
   
-  extension [Self <: CreateConnectPeerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConnectPeerRequest] (val x: Self) extends AnyVal {
     
     inline def setBgpOptions(value: BgpOptions): Self = StObject.set(x, "BgpOptions", value.asInstanceOf[js.Any])
     

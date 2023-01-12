@@ -22,7 +22,8 @@ object ParagraphTarget {
     __obj.asInstanceOf[ParagraphTarget]
   }
   
-  extension [Self <: ParagraphTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphTarget] (val x: Self) extends AnyVal {
     
     inline def setParagraph(value: Double): Self = StObject.set(x, "Paragraph", value.asInstanceOf[js.Any])
     

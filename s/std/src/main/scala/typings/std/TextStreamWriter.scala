@@ -40,7 +40,8 @@ object TextStreamWriter {
     __obj.asInstanceOf[TextStreamWriter]
   }
   
-  extension [Self <: TextStreamWriter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStreamWriter] (val x: Self) extends AnyVal {
     
     inline def setWrite(value: java.lang.String => Unit): Self = StObject.set(x, "Write", js.Any.fromFunction1(value))
     

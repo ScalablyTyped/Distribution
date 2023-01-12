@@ -35,7 +35,8 @@ object ChatCapabilities {
     __obj.asInstanceOf[ChatCapabilities]
   }
   
-  extension [Self <: ChatCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatCapabilities] (val x: Self) extends AnyVal {
     
     inline def setIsChatCapable(value: Boolean): Self = StObject.set(x, "isChatCapable", value.asInstanceOf[js.Any])
     

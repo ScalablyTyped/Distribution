@@ -30,7 +30,8 @@ object ModuleFactoryResult {
     __obj.asInstanceOf[ModuleFactoryResult]
   }
   
-  extension [Self <: ModuleFactoryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleFactoryResult] (val x: Self) extends AnyVal {
     
     inline def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
     

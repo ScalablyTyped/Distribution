@@ -25,7 +25,8 @@ object ReportingRule {
     __obj.asInstanceOf[ReportingRule]
   }
   
-  extension [Self <: ReportingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportingRule] (val x: Self) extends AnyVal {
     
     inline def setAlertDetails(value: String): Self = StObject.set(x, "alertDetails", value.asInstanceOf[js.Any])
     

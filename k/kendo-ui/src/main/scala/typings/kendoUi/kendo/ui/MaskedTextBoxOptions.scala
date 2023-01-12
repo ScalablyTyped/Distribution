@@ -41,7 +41,8 @@ object MaskedTextBoxOptions {
     __obj.asInstanceOf[MaskedTextBoxOptions]
   }
   
-  extension [Self <: MaskedTextBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaskedTextBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ MaskedTextBoxChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

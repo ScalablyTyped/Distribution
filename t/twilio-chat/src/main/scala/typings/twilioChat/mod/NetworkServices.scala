@@ -16,7 +16,8 @@ object NetworkServices {
     __obj.asInstanceOf[NetworkServices]
   }
   
-  extension [Self <: NetworkServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkServices] (val x: Self) extends AnyVal {
     
     inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
   }

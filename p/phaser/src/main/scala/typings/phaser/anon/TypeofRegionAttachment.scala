@@ -174,7 +174,8 @@ object TypeofRegionAttachment {
     __obj.asInstanceOf[TypeofRegionAttachment]
   }
   
-  extension [Self <: TypeofRegionAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRegionAttachment] (val x: Self) extends AnyVal {
     
     inline def setC1A(value: Double): Self = StObject.set(x, "C1A", value.asInstanceOf[js.Any])
     

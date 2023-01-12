@@ -23,7 +23,8 @@ object S3BucketAclGrantConfiguration {
     __obj.asInstanceOf[S3BucketAclGrantConfiguration]
   }
   
-  extension [Self <: S3BucketAclGrantConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3BucketAclGrantConfiguration] (val x: Self) extends AnyVal {
     
     inline def setGrantee(value: AclGrantee): Self = StObject.set(x, "grantee", value.asInstanceOf[js.Any])
     

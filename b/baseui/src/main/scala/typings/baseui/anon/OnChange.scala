@@ -25,7 +25,8 @@ object OnChange {
     __obj.asInstanceOf[OnChange]
   }
   
-  extension [Self <: OnChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnChange] (val x: Self) extends AnyVal {
     
     inline def setInitialState(value: Values): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     

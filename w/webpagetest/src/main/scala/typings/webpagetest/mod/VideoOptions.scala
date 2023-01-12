@@ -16,7 +16,8 @@ object VideoOptions {
     __obj.asInstanceOf[VideoOptions]
   }
   
-  extension [Self <: VideoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoOptions] (val x: Self) extends AnyVal {
     
     inline def setComparisonEndPoint(value: String): Self = StObject.set(x, "comparisonEndPoint", value.asInstanceOf[js.Any])
     

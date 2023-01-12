@@ -43,7 +43,8 @@ object SelectPageDropdownAccessibilityLabel {
     __obj.asInstanceOf[SelectPageDropdownAccessibilityLabel]
   }
   
-  extension [Self <: SelectPageDropdownAccessibilityLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectPageDropdownAccessibilityLabel] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

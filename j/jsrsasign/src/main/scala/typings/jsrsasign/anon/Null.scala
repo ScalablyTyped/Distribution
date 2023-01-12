@@ -20,7 +20,8 @@ object Null {
     __obj.asInstanceOf[Null]
   }
   
-  extension [Self <: Null](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Null] (val x: Self) extends AnyVal {
     
     inline def setNull(value: _empty): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
   }

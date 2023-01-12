@@ -43,7 +43,8 @@ object IgVideoPlayerCommercialsAdMessage {
     __obj.asInstanceOf[IgVideoPlayerCommercialsAdMessage]
   }
   
-  extension [Self <: IgVideoPlayerCommercialsAdMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgVideoPlayerCommercialsAdMessage] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

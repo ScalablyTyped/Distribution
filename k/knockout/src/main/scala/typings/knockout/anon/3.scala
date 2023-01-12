@@ -28,7 +28,8 @@ object `3` {
     __obj.asInstanceOf[`3`]
   }
   
-  extension [Self <: `3`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `3`] (val x: Self) extends AnyVal {
     
     inline def setInit(
       value: (Node, js.Function0[MaybeSubscribable[js.Array[Any] | Any]], AllBindings, Any, BindingContext[Any]) => BindingHandlerControlsDescendant

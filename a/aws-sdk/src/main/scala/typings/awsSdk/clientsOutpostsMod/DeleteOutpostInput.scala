@@ -18,7 +18,8 @@ object DeleteOutpostInput {
     __obj.asInstanceOf[DeleteOutpostInput]
   }
   
-  extension [Self <: DeleteOutpostInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOutpostInput] (val x: Self) extends AnyVal {
     
     inline def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
   }

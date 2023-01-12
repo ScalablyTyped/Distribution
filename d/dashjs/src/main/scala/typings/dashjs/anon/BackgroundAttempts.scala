@@ -33,7 +33,8 @@ object BackgroundAttempts {
     __obj.asInstanceOf[BackgroundAttempts]
   }
   
-  extension [Self <: BackgroundAttempts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundAttempts] (val x: Self) extends AnyVal {
     
     inline def setBackgroundAttempts(value: Double): Self = StObject.set(x, "backgroundAttempts", value.asInstanceOf[js.Any])
     

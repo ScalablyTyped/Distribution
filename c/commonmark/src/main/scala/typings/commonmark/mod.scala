@@ -217,7 +217,8 @@ object mod {
       __obj.asInstanceOf[HtmlRenderingOptions]
     }
     
-    extension [Self <: HtmlRenderingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlRenderingOptions] (val x: Self) extends AnyVal {
       
       inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
       
@@ -250,7 +251,8 @@ object mod {
       __obj.asInstanceOf[ListData]
     }
     
-    extension [Self <: ListData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListData] (val x: Self) extends AnyVal {
       
       inline def setBulletChar(value: String): Self = StObject.set(x, "bulletChar", value.asInstanceOf[js.Any])
       
@@ -370,7 +372,8 @@ object mod {
       __obj.asInstanceOf[NodeWalkingStep]
     }
     
-    extension [Self <: NodeWalkingStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeWalkingStep] (val x: Self) extends AnyVal {
       
       inline def setEntering(value: Boolean): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
       
@@ -394,7 +397,8 @@ object mod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
       
@@ -421,7 +425,8 @@ object mod {
       __obj.asInstanceOf[XmlRenderingOptions]
     }
     
-    extension [Self <: XmlRenderingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlRenderingOptions] (val x: Self) extends AnyVal {
       
       inline def setSourcepos(value: Boolean): Self = StObject.set(x, "sourcepos", value.asInstanceOf[js.Any])
       

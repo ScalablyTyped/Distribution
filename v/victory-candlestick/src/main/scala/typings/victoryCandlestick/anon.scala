@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Close]
     }
     
-    extension [Self <: Close](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
       
       inline def setClose(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrientationTypes */ Any
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Negative]
     }
     
-    extension [Self <: Negative](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Negative] (val x: Self) extends AnyVal {
       
       inline def setNegative(value: String): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
       

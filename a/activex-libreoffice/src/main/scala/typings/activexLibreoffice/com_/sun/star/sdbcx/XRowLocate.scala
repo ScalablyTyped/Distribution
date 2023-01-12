@@ -100,7 +100,8 @@ object XRowLocate {
     __obj.asInstanceOf[XRowLocate]
   }
   
-  extension [Self <: XRowLocate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRowLocate] (val x: Self) extends AnyVal {
     
     inline def setBookmark(value: Any): Self = StObject.set(x, "Bookmark", value.asInstanceOf[js.Any])
     

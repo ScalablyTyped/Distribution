@@ -59,7 +59,8 @@ object OperationPrettyPrint {
     __obj.asInstanceOf[OperationPrettyPrint]
   }
   
-  extension [Self <: OperationPrettyPrint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationPrettyPrint] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

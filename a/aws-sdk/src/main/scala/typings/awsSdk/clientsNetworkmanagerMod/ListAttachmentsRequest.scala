@@ -43,7 +43,8 @@ object ListAttachmentsRequest {
     __obj.asInstanceOf[ListAttachmentsRequest]
   }
   
-  extension [Self <: ListAttachmentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAttachmentsRequest] (val x: Self) extends AnyVal {
     
     inline def setAttachmentType(value: AttachmentType): Self = StObject.set(x, "AttachmentType", value.asInstanceOf[js.Any])
     

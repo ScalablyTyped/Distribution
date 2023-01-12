@@ -18,7 +18,8 @@ object DetectDocumentTextRequest {
     __obj.asInstanceOf[DetectDocumentTextRequest]
   }
   
-  extension [Self <: DetectDocumentTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectDocumentTextRequest] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Document): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
   }

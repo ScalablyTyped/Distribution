@@ -21,7 +21,8 @@ object CommitAction {
     __obj.asInstanceOf[CommitAction]
   }
   
-  extension [Self <: CommitAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitAction] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

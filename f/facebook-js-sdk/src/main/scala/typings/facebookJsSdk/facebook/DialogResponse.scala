@@ -17,7 +17,8 @@ object DialogResponse {
     __obj.asInstanceOf[DialogResponse]
   }
   
-  extension [Self <: DialogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogResponse] (val x: Self) extends AnyVal {
     
     inline def setError_code(value: Double): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
     

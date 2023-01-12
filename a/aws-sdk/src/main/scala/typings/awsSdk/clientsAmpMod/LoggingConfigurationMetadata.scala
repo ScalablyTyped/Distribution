@@ -44,7 +44,8 @@ object LoggingConfigurationMetadata {
     __obj.asInstanceOf[LoggingConfigurationMetadata]
   }
   
-  extension [Self <: LoggingConfigurationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingConfigurationMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

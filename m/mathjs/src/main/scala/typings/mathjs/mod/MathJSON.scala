@@ -21,7 +21,8 @@ object MathJSON {
     __obj.asInstanceOf[MathJSON]
   }
   
-  extension [Self <: MathJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MathJSON] (val x: Self) extends AnyVal {
     
     inline def setFixPrefix(value: Boolean): Self = StObject.set(x, "fixPrefix", value.asInstanceOf[js.Any])
     

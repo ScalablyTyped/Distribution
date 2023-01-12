@@ -31,7 +31,8 @@ object PlotMaplineDataSortingOptions {
     __obj.asInstanceOf[PlotMaplineDataSortingOptions]
   }
   
-  extension [Self <: PlotMaplineDataSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMaplineDataSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

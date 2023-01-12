@@ -16,7 +16,8 @@ object Save {
     __obj.asInstanceOf[Save]
   }
   
-  extension [Self <: Save](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Save] (val x: Self) extends AnyVal {
     
     inline def setSave(value: NgAddSaveDependency): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     

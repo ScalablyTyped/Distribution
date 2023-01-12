@@ -20,7 +20,8 @@ object Cursor_ {
     __obj.asInstanceOf[Cursor_]
   }
   
-  extension [Self <: Cursor_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cursor_] (val x: Self) extends AnyVal {
     
     inline def setPlaceholder(value: js.Symbol): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

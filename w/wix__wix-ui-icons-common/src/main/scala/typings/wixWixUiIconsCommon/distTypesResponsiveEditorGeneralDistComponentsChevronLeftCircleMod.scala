@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsChevronLeftCircleMod extend
       __obj.asInstanceOf[ChevronLeftCircleProps]
     }
     
-    extension [Self <: ChevronLeftCircleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChevronLeftCircleProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

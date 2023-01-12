@@ -61,7 +61,8 @@ object XCellRange {
     __obj.asInstanceOf[XCellRange]
   }
   
-  extension [Self <: XCellRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCellRange] (val x: Self) extends AnyVal {
     
     inline def setGetCellByPosition(value: (Double, Double) => XCell): Self = StObject.set(x, "getCellByPosition", js.Any.fromFunction2(value))
     

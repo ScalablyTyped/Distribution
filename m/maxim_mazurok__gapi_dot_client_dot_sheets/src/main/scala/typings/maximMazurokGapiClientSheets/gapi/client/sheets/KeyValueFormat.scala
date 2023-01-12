@@ -19,7 +19,8 @@ object KeyValueFormat {
     __obj.asInstanceOf[KeyValueFormat]
   }
   
-  extension [Self <: KeyValueFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyValueFormat] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: TextPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

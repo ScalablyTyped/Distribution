@@ -18,7 +18,8 @@ object DescribeDefaultAuthorizerResponse {
     __obj.asInstanceOf[DescribeDefaultAuthorizerResponse]
   }
   
-  extension [Self <: DescribeDefaultAuthorizerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDefaultAuthorizerResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthorizerDescription(value: AuthorizerDescription): Self = StObject.set(x, "authorizerDescription", value.asInstanceOf[js.Any])
     

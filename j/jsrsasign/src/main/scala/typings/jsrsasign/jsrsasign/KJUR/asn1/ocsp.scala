@@ -100,7 +100,8 @@ object ocsp {
       __obj.asInstanceOf[CertificateRequest]
     }
     
-    extension [Self <: CertificateRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateRequest] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object ocsp {
       __obj.asInstanceOf[CertificateRequestList]
     }
     
-    extension [Self <: CertificateRequestList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateRequestList] (val x: Self) extends AnyVal {
       
       inline def setReqList(value: js.Array[CertificateRequest]): Self = StObject.set(x, "reqList", value.asInstanceOf[js.Any])
       
@@ -199,7 +201,8 @@ object ocsp {
         __obj.asInstanceOf[ResponseInfo]
       }
       
-      extension [Self <: ResponseInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResponseInfo] (val x: Self) extends AnyVal {
         
         inline def setCertStatus(value: String): Self = StObject.set(x, "certStatus", value.asInstanceOf[js.Any])
         
@@ -311,7 +314,8 @@ object ocsp {
       __obj.asInstanceOf[TBSRequest]
     }
     
-    extension [Self <: TBSRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TBSRequest] (val x: Self) extends AnyVal {
       
       inline def setSetRequestListByParam(value: js.Array[CertificateRequest] => Unit): Self = StObject.set(x, "setRequestListByParam", js.Any.fromFunction1(value))
     }

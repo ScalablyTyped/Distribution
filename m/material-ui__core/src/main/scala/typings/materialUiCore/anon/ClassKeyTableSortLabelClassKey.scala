@@ -21,7 +21,8 @@ object ClassKeyTableSortLabelClassKey {
     __obj.asInstanceOf[ClassKeyTableSortLabelClassKey[P, D]]
   }
   
-  extension [Self <: ClassKeyTableSortLabelClassKey[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ClassKeyTableSortLabelClassKey[P, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassKeyTableSortLabelClassKey[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ClassKeyTableSortLabelClassKey[P, D])) extends AnyVal {
     
     inline def setClassKey(value: TableSortLabelClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

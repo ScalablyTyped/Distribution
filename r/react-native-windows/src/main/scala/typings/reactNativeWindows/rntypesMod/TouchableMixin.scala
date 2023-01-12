@@ -81,7 +81,8 @@ object TouchableMixin {
     __obj.asInstanceOf[TouchableMixin]
   }
   
-  extension [Self <: TouchableMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchableMixin] (val x: Self) extends AnyVal {
     
     inline def setTouchableGetHighlightDelayMS(value: () => Double): Self = StObject.set(x, "touchableGetHighlightDelayMS", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object RequestBodyContent227 {
     __obj.asInstanceOf[RequestBodyContent227]
   }
   
-  extension [Self <: RequestBodyContent227](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContent227] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathEnvironmentname): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object IDDProxy {
     __obj.asInstanceOf[IDDProxy]
   }
   
-  extension [Self <: IDDProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDDProxy] (val x: Self) extends AnyVal {
     
     inline def setCenterFrame(value: Boolean): Self = StObject.set(x, "centerFrame", value.asInstanceOf[js.Any])
     

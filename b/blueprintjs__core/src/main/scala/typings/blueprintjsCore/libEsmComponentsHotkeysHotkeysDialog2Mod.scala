@@ -32,7 +32,8 @@ object libEsmComponentsHotkeysHotkeysDialog2Mod {
       __obj.asInstanceOf[HotkeysDialog2Props]
     }
     
-    extension [Self <: HotkeysDialog2Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HotkeysDialog2Props] (val x: Self) extends AnyVal {
       
       inline def setGlobalGroupName(value: String): Self = StObject.set(x, "globalGroupName", value.asInstanceOf[js.Any])
       

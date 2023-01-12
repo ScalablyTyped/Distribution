@@ -25,7 +25,8 @@ object distLicenseIdentifiedModuleMod {
       __obj.asInstanceOf[LicenseIdentifiedModule]
     }
     
-    extension [Self <: LicenseIdentifiedModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LicenseIdentifiedModule] (val x: Self) extends AnyVal {
       
       inline def setLicenseId(value: String): Self = StObject.set(x, "licenseId", value.asInstanceOf[js.Any])
       

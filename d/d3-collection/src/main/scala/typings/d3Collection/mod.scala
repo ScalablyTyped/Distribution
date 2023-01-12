@@ -144,7 +144,8 @@ object mod {
       __obj.asInstanceOf[Map_[T]]
     }
     
-    extension [Self <: Map_[?], T](x: Self & Map_[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map_[?], T] (val x: Self & Map_[T]) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -333,7 +334,8 @@ object mod {
       __obj.asInstanceOf[Nest_[Datum, RollupType]]
     }
     
-    extension [Self <: Nest_[?, ?], Datum, RollupType](x: Self & (Nest_[Datum, RollupType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nest_[?, ?], Datum, RollupType] (val x: Self & (Nest_[Datum, RollupType])) extends AnyVal {
       
       inline def setEntries(value: js.Array[Datum] => js.Array[KeyValue[RollupType]]): Self = StObject.set(x, "entries", js.Any.fromFunction1(value))
       

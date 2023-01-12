@@ -63,7 +63,8 @@ object GetMLTaskRunResponse {
     __obj.asInstanceOf[GetMLTaskRunResponse]
   }
   
-  extension [Self <: GetMLTaskRunResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMLTaskRunResponse] (val x: Self) extends AnyVal {
     
     inline def setCompletedOn(value: js.Date): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     

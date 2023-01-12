@@ -15,7 +15,8 @@ object LdapUserProto {
     __obj.asInstanceOf[LdapUserProto]
   }
   
-  extension [Self <: LdapUserProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LdapUserProto] (val x: Self) extends AnyVal {
     
     inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     

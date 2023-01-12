@@ -23,7 +23,8 @@ object IOSTContract {
       __obj.asInstanceOf[Block]
     }
     
-    extension [Self <: Block](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
       
       inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object IOSTContract {
       __obj.asInstanceOf[GlobalStorage]
     }
     
-    extension [Self <: GlobalStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalStorage] (val x: Self) extends AnyVal {
       
       inline def setGlobalGet(value: (String, String) => String | Null): Self = StObject.set(x, "globalGet", js.Any.fromFunction2(value))
       
@@ -120,7 +122,8 @@ object IOSTContract {
       __obj.asInstanceOf[IOSTCrypto]
     }
     
-    extension [Self <: IOSTCrypto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOSTCrypto] (val x: Self) extends AnyVal {
       
       inline def setSha3(value: String => String): Self = StObject.set(x, "sha3", js.Any.fromFunction1(value))
       
@@ -191,7 +194,8 @@ object IOSTContract {
       __obj.asInstanceOf[Tx]
     }
     
-    extension [Self <: Tx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tx] (val x: Self) extends AnyVal {
       
       inline def setAuth_list(value: js.Object): Self = StObject.set(x, "auth_list", value.asInstanceOf[js.Any])
       

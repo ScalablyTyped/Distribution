@@ -17,7 +17,8 @@ object PivotDiscoverRequestDataOptions {
     __obj.asInstanceOf[PivotDiscoverRequestDataOptions]
   }
   
-  extension [Self <: PivotDiscoverRequestDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotDiscoverRequestDataOptions] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

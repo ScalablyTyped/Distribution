@@ -23,7 +23,8 @@ object IOUsage {
     __obj.asInstanceOf[IOUsage]
   }
   
-  extension [Self <: IOUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOUsage] (val x: Self) extends AnyVal {
     
     inline def setReadIOs(value: ReadIOs): Self = StObject.set(x, "ReadIOs", value.asInstanceOf[js.Any])
     

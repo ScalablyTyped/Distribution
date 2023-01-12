@@ -26,7 +26,8 @@ object LegendControl_ {
     __obj.asInstanceOf[LegendControl_]
   }
   
-  extension [Self <: LegendControl_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendControl_] (val x: Self) extends AnyVal {
     
     inline def setAddLegend(value: String => Any): Self = StObject.set(x, "addLegend", js.Any.fromFunction1(value))
     

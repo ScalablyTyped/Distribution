@@ -35,7 +35,8 @@ object SpringConfigWithBouncinessAndSpeed {
     __obj.asInstanceOf[SpringConfigWithBouncinessAndSpeed]
   }
   
-  extension [Self <: SpringConfigWithBouncinessAndSpeed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpringConfigWithBouncinessAndSpeed] (val x: Self) extends AnyVal {
     
     inline def setBounciness(value: Adaptable[Double]): Self = StObject.set(x, "bounciness", value.asInstanceOf[js.Any])
     

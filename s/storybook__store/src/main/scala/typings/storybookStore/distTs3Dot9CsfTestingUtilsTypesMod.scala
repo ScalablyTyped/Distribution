@@ -25,7 +25,8 @@ object distTs3Dot9CsfTestingUtilsTypesMod {
       __obj.asInstanceOf[CSFExports[TFramework]]
     }
     
-    extension [Self <: CSFExports[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & CSFExports[TFramework]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSFExports[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & CSFExports[TFramework]) extends AnyVal {
       
       inline def setDefault(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentAnnotations<TFramework, Args> */ Any
@@ -73,7 +74,8 @@ object distTs3Dot9CsfTestingUtilsTypesMod {
       __obj.asInstanceOf[StoryFn[TFramework, TArgs]]
     }
     
-    extension [Self <: StoryFn[?, ?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */, TArgs](x: Self & (StoryFn[TFramework, TArgs])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoryFn[?, ?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */, TArgs] (val x: Self & (StoryFn[TFramework, TArgs])) extends AnyVal {
       
       inline def setPlay(value: /* context */ ComposedStoryPlayContext => js.Promise[Unit] | Unit): Self = StObject.set(x, "play", js.Any.fromFunction1(value))
     }

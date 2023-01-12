@@ -26,7 +26,8 @@ object HeightMax {
     __obj.asInstanceOf[HeightMax]
   }
   
-  extension [Self <: HeightMax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeightMax] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: xxsmall | xxlarge | TShirtSizeType | `100Percentsign`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

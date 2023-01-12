@@ -197,7 +197,8 @@ object Acctbearsfeeattransactiontime {
     __obj.asInstanceOf[Acctbearsfeeattransactiontime]
   }
   
-  extension [Self <: Acctbearsfeeattransactiontime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acctbearsfeeattransactiontime] (val x: Self) extends AnyVal {
     
     inline def setAccountid(value: Double): Self = StObject.set(x, "accountid", value.asInstanceOf[js.Any])
     

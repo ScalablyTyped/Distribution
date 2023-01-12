@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[TruncateProps]
     }
     
-    extension [Self <: TruncateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TruncateProps] (val x: Self) extends AnyVal {
       
       inline def setEllipsis(value: ReactNode): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       

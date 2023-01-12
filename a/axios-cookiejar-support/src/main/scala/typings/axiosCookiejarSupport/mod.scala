@@ -30,7 +30,8 @@ object mod {
         __obj.asInstanceOf[AxiosRequestConfig]
       }
       
-      extension [Self <: AxiosRequestConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AxiosRequestConfig] (val x: Self) extends AnyVal {
         
         inline def setJar(value: CookieJar): Self = StObject.set(x, "jar", value.asInstanceOf[js.Any])
         

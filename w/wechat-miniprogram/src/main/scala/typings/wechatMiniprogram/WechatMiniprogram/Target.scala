@@ -28,7 +28,8 @@ object Target {
     __obj.asInstanceOf[Target[DataSet]]
   }
   
-  extension [Self <: Target[?], DataSet /* <: IAnyObject */](x: Self & Target[DataSet]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Target[?], DataSet /* <: IAnyObject */] (val x: Self & Target[DataSet]) extends AnyVal {
     
     inline def setDataset(value: DataSet): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     

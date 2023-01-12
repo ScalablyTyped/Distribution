@@ -43,7 +43,8 @@ object srcCrashReporterMod {
       __obj.asInstanceOf[CrashReporter]
     }
     
-    extension [Self <: CrashReporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrashReporter] (val x: Self) extends AnyVal {
       
       inline def set_active(value: Boolean): Self = StObject.set(x, "_active", value.asInstanceOf[js.Any])
     }

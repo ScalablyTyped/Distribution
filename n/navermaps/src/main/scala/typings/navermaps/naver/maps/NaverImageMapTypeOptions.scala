@@ -23,7 +23,8 @@ object NaverImageMapTypeOptions {
     __obj.asInstanceOf[NaverImageMapTypeOptions]
   }
   
-  extension [Self <: NaverImageMapTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NaverImageMapTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setHd(value: String): Self = StObject.set(x, "hd", value.asInstanceOf[js.Any])
     

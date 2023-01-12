@@ -23,7 +23,8 @@ object InvoiceInfo {
     __obj.asInstanceOf[InvoiceInfo]
   }
   
-  extension [Self <: InvoiceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvoiceInfo] (val x: Self) extends AnyVal {
     
     inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     

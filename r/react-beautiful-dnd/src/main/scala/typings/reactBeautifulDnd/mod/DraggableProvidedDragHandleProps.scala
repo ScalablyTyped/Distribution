@@ -40,7 +40,8 @@ object DraggableProvidedDragHandleProps {
     __obj.asInstanceOf[DraggableProvidedDragHandleProps]
   }
   
-  extension [Self <: DraggableProvidedDragHandleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableProvidedDragHandleProps] (val x: Self) extends AnyVal {
     
     inline def `setAria-describedby`(value: ElementId): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
     

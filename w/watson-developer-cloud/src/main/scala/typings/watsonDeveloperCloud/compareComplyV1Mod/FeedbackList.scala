@@ -17,7 +17,8 @@ object FeedbackList {
     __obj.asInstanceOf[FeedbackList]
   }
   
-  extension [Self <: FeedbackList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeedbackList] (val x: Self) extends AnyVal {
     
     inline def setFeedback(value: js.Array[GetFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     

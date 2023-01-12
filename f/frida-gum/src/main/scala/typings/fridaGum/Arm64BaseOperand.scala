@@ -24,7 +24,8 @@ object Arm64BaseOperand {
     __obj.asInstanceOf[Arm64BaseOperand]
   }
   
-  extension [Self <: Arm64BaseOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arm64BaseOperand] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: OperandAccess): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

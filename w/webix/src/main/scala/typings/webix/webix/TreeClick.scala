@@ -23,7 +23,8 @@ object TreeClick {
     __obj.asInstanceOf[TreeClick]
   }
   
-  extension [Self <: TreeClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeClick] (val x: Self) extends AnyVal {
     
     inline def setWebix_tree_checkbox(value: (obj, obj) => String): Self = StObject.set(x, "webix_tree_checkbox", js.Any.fromFunction2(value))
     

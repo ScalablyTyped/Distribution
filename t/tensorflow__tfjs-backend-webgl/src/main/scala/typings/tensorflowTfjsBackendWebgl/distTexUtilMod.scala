@@ -175,7 +175,8 @@ object distTexUtilMod {
       __obj.asInstanceOf[Texture]
     }
     
-    extension [Self <: Texture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Texture] (val x: Self) extends AnyVal {
       
       inline def setTexShape(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "texShape", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object distTexUtilMod {
       __obj.asInstanceOf[TextureConfig]
     }
     
-    extension [Self <: TextureConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextureConfig] (val x: Self) extends AnyVal {
       
       inline def setDefaultNumChannels(value: Double): Self = StObject.set(x, "defaultNumChannels", value.asInstanceOf[js.Any])
       
@@ -277,7 +279,8 @@ object distTexUtilMod {
       __obj.asInstanceOf[TextureData]
     }
     
-    extension [Self <: TextureData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextureData] (val x: Self) extends AnyVal {
       
       inline def setComplexTensorInfos(value: Imag): Self = StObject.set(x, "complexTensorInfos", value.asInstanceOf[js.Any])
       

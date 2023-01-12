@@ -15,7 +15,8 @@ object OAuth2Client {
     __obj.asInstanceOf[OAuth2Client]
   }
   
-  extension [Self <: OAuth2Client](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuth2Client] (val x: Self) extends AnyVal {
     
     inline def setGetAccessToken(value: () => js.Promise[GetAccessTokenResponse]): Self = StObject.set(x, "getAccessToken", js.Any.fromFunction0(value))
   }

@@ -31,7 +31,8 @@ object ThemeEffectScheme {
     __obj.asInstanceOf[ThemeEffectScheme]
   }
   
-  extension [Self <: ThemeEffectScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeEffectScheme] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

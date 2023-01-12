@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[ContentI[I]]
     }
     
-    extension [Self <: ContentI[?], I /* <: Input */](x: Self & ContentI[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentI[?], I /* <: Input */] (val x: Self & ContentI[I]) extends AnyVal {
       
       inline def setContent(value: I): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
@@ -54,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -75,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Parse]
     }
     
-    extension [Self <: Parse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parse] (val x: Self) extends AnyVal {
       
       inline def setParse(value: String => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       

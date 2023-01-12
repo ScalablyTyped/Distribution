@@ -44,7 +44,8 @@ object TaskAgentPoolMaintenanceSchedule {
     __obj.asInstanceOf[TaskAgentPoolMaintenanceSchedule]
   }
   
-  extension [Self <: TaskAgentPoolMaintenanceSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentPoolMaintenanceSchedule] (val x: Self) extends AnyVal {
     
     inline def setDaysToBuild(value: TaskAgentPoolMaintenanceScheduleDays): Self = StObject.set(x, "daysToBuild", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ScrollPositionCoordinates {
     __obj.asInstanceOf[ScrollPositionCoordinates]
   }
   
-  extension [Self <: ScrollPositionCoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollPositionCoordinates] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: ScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

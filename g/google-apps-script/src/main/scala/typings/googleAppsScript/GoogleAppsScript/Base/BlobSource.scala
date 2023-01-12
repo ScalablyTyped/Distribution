@@ -57,7 +57,8 @@ object BlobSource {
     __obj.asInstanceOf[BlobSource]
   }
   
-  extension [Self <: BlobSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlobSource] (val x: Self) extends AnyVal {
     
     inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
     

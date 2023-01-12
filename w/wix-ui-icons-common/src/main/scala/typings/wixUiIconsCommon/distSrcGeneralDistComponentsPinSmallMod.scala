@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsPinSmallMod extends Shortcut {
       __obj.asInstanceOf[PinSmallProps]
     }
     
-    extension [Self <: PinSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

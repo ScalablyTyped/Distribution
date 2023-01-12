@@ -32,7 +32,8 @@ object EraSpec {
     __obj.asInstanceOf[EraSpec]
   }
   
-  extension [Self <: EraSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EraSpec] (val x: Self) extends AnyVal {
     
     inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
     

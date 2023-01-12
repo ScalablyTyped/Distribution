@@ -23,7 +23,8 @@ object DatasetEntry {
     __obj.asInstanceOf[DatasetEntry]
   }
   
-  extension [Self <: DatasetEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetEntry] (val x: Self) extends AnyVal {
     
     inline def setDataURI(value: PresignedURI): Self = StObject.set(x, "dataURI", value.asInstanceOf[js.Any])
     

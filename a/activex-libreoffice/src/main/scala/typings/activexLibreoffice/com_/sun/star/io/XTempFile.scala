@@ -43,7 +43,8 @@ object XTempFile {
     __obj.asInstanceOf[XTempFile]
   }
   
-  extension [Self <: XTempFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTempFile] (val x: Self) extends AnyVal {
     
     inline def setRemoveFile(value: Boolean): Self = StObject.set(x, "RemoveFile", value.asInstanceOf[js.Any])
     

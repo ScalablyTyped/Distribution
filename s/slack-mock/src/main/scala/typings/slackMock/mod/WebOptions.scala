@@ -22,7 +22,8 @@ object WebOptions {
     __obj.asInstanceOf[WebOptions[T]]
   }
   
-  extension [Self <: WebOptions[?], T](x: Self & WebOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebOptions[?], T] (val x: Self & WebOptions[T]) extends AnyVal {
     
     inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

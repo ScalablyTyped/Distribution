@@ -15,7 +15,8 @@ object SerialPortRequestOptions {
     __obj.asInstanceOf[SerialPortRequestOptions]
   }
   
-  extension [Self <: SerialPortRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialPortRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[SerialPortFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListGeofencesResponse {
     __obj.asInstanceOf[ListGeofencesResponse]
   }
   
-  extension [Self <: ListGeofencesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGeofencesResponse] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: ListGeofenceResponseEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object FlashShape {
     __obj.asInstanceOf[FlashShape]
   }
   
-  extension [Self <: FlashShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashShape] (val x: Self) extends AnyVal {
     
     inline def setBeginEdit(value: () => Unit): Self = StObject.set(x, "beginEdit", js.Any.fromFunction0(value))
     

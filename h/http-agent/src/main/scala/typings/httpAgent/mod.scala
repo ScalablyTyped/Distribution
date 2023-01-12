@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[HttpAgentOptions]
     }
     
-    extension [Self <: HttpAgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setUrls(value: HttpAgentUrls): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[HttpAgentPrototype]
     }
     
-    extension [Self <: HttpAgentPrototype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpAgentPrototype] (val x: Self) extends AnyVal {
       
       inline def setNextUrls(value: String): Self = StObject.set(x, "nextUrls", value.asInstanceOf[js.Any])
       

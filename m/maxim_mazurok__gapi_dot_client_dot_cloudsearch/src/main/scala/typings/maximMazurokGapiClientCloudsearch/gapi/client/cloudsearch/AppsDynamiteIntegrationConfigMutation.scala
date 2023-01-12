@@ -25,7 +25,8 @@ object AppsDynamiteIntegrationConfigMutation {
     __obj.asInstanceOf[AppsDynamiteIntegrationConfigMutation]
   }
   
-  extension [Self <: AppsDynamiteIntegrationConfigMutation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteIntegrationConfigMutation] (val x: Self) extends AnyVal {
     
     inline def setAddApp(value: AppsDynamiteAppId): Self = StObject.set(x, "addApp", value.asInstanceOf[js.Any])
     

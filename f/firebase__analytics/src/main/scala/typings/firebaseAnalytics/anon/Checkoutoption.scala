@@ -29,7 +29,8 @@ object Checkoutoption {
     __obj.asInstanceOf[Checkoutoption]
   }
   
-  extension [Self <: Checkoutoption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checkoutoption] (val x: Self) extends AnyVal {
     
     inline def setCheckout_option(value: String): Self = StObject.set(x, "checkout_option", value.asInstanceOf[js.Any])
     

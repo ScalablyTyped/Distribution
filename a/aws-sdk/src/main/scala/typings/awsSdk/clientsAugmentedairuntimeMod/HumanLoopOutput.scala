@@ -18,7 +18,8 @@ object HumanLoopOutput {
     __obj.asInstanceOf[HumanLoopOutput]
   }
   
-  extension [Self <: HumanLoopOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HumanLoopOutput] (val x: Self) extends AnyVal {
     
     inline def setOutputS3Uri(value: String): Self = StObject.set(x, "OutputS3Uri", value.asInstanceOf[js.Any])
   }

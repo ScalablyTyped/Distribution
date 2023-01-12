@@ -28,7 +28,8 @@ object RedactRoomMessageRequest {
     __obj.asInstanceOf[RedactRoomMessageRequest]
   }
   
-  extension [Self <: RedactRoomMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedactRoomMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

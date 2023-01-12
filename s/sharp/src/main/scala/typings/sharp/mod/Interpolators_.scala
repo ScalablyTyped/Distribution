@@ -40,7 +40,8 @@ object Interpolators_ {
     __obj.asInstanceOf[Interpolators_]
   }
   
-  extension [Self <: Interpolators_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interpolators_] (val x: Self) extends AnyVal {
     
     inline def setBicubic(value: bicubic): Self = StObject.set(x, "bicubic", value.asInstanceOf[js.Any])
     

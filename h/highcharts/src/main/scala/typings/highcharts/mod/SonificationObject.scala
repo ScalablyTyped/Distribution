@@ -39,7 +39,8 @@ object SonificationObject {
     __obj.asInstanceOf[SonificationObject]
   }
   
-  extension [Self <: SonificationObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SonificationObject] (val x: Self) extends AnyVal {
     
     inline def setEarcon(value: js.Function): Self = StObject.set(x, "Earcon", value.asInstanceOf[js.Any])
     

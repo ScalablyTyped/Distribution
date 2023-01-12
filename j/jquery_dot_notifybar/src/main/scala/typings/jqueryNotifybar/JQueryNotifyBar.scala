@@ -89,7 +89,8 @@ object JQueryNotifyBar {
       __obj.asInstanceOf[NotifyBarOptions]
     }
     
-    extension [Self <: NotifyBarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyBarOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimationSpeed(value: String | Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object JQueryNotifyBar {
       __obj.asInstanceOf[NotifyBarOptionsForAnimationSpeedNumber]
     }
     
-    extension [Self <: NotifyBarOptionsForAnimationSpeedNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyBarOptionsForAnimationSpeedNumber] (val x: Self) extends AnyVal {
       
       inline def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
@@ -191,7 +193,8 @@ object JQueryNotifyBar {
       __obj.asInstanceOf[NotifyBarOptionsForAnimationSpeedString]
     }
     
-    extension [Self <: NotifyBarOptionsForAnimationSpeedString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyBarOptionsForAnimationSpeedString] (val x: Self) extends AnyVal {
       
       inline def setAnimationSpeed(value: String): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       

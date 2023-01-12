@@ -21,7 +21,8 @@ object Passed {
     __obj.asInstanceOf[Passed]
   }
   
-  extension [Self <: Passed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Passed] (val x: Self) extends AnyVal {
     
     inline def setPassed(value: String): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     

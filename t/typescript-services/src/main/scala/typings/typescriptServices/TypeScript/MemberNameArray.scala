@@ -33,7 +33,8 @@ object MemberNameArray {
     __obj.asInstanceOf[MemberNameArray]
   }
   
-  extension [Self <: MemberNameArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberNameArray] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: MemberName => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

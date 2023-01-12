@@ -23,7 +23,8 @@ object ProvisionedCapacity {
     __obj.asInstanceOf[ProvisionedCapacity]
   }
   
-  extension [Self <: ProvisionedCapacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionedCapacity] (val x: Self) extends AnyVal {
     
     inline def setMcuCount(value: integerMin1Max8): Self = StObject.set(x, "mcuCount", value.asInstanceOf[js.Any])
     

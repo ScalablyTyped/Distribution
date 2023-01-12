@@ -53,7 +53,8 @@ object AgentPreview {
     __obj.asInstanceOf[AgentPreview]
   }
   
-  extension [Self <: AgentPreview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentPreview] (val x: Self) extends AnyVal {
     
     inline def setAgentHealth(value: AgentHealth): Self = StObject.set(x, "agentHealth", value.asInstanceOf[js.Any])
     

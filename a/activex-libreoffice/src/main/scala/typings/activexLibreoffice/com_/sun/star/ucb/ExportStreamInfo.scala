@@ -21,7 +21,8 @@ object ExportStreamInfo {
     __obj.asInstanceOf[ExportStreamInfo]
   }
   
-  extension [Self <: ExportStreamInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportStreamInfo] (val x: Self) extends AnyVal {
     
     inline def setForceBodies(value: Boolean): Self = StObject.set(x, "ForceBodies", value.asInstanceOf[js.Any])
     

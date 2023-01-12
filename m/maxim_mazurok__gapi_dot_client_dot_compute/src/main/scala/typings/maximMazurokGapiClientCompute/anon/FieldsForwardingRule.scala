@@ -75,7 +75,8 @@ object FieldsForwardingRule {
     __obj.asInstanceOf[FieldsForwardingRule]
   }
   
-  extension [Self <: FieldsForwardingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsForwardingRule] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

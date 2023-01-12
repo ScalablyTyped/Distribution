@@ -33,7 +33,8 @@ object SlackConnectorProfileCredentials {
     __obj.asInstanceOf[SlackConnectorProfileCredentials]
   }
   
-  extension [Self <: SlackConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlackConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object Validator {
     __obj.asInstanceOf[Validator]
   }
   
-  extension [Self <: Validator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Validator] (val x: Self) extends AnyVal {
     
     inline def setRegisterOnValidatorChange(value: /* fn */ js.Function0[Unit] => Unit): Self = StObject.set(x, "registerOnValidatorChange", js.Any.fromFunction1(value))
     

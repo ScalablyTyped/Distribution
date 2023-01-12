@@ -135,7 +135,8 @@ object GetFederationTokenRequest {
     __obj.asInstanceOf[GetFederationTokenRequest]
   }
   
-  extension [Self <: GetFederationTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFederationTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setDurationSeconds(value: Double): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     

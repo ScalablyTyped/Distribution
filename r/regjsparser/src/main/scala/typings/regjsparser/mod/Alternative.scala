@@ -20,7 +20,8 @@ object Alternative {
     __obj.asInstanceOf[Alternative[F]]
   }
   
-  extension [Self <: Alternative[?], F /* <: Features */](x: Self & Alternative[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alternative[?], F /* <: Features */] (val x: Self & Alternative[F]) extends AnyVal {
     
     inline def setBody(value: js.Array[RootNode[F]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

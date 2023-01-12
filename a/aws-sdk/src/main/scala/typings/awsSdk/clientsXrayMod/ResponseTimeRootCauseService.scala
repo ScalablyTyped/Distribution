@@ -43,7 +43,8 @@ object ResponseTimeRootCauseService {
     __obj.asInstanceOf[ResponseTimeRootCauseService]
   }
   
-  extension [Self <: ResponseTimeRootCauseService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseTimeRootCauseService] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

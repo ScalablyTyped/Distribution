@@ -23,7 +23,8 @@ object VerifySoftwareTokenResponse {
     __obj.asInstanceOf[VerifySoftwareTokenResponse]
   }
   
-  extension [Self <: VerifySoftwareTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifySoftwareTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

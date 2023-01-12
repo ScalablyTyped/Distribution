@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[BuildOptions]
     }
     
-    extension [Self <: BuildOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildOptions] (val x: Self) extends AnyVal {
       
       inline def setParseOptions(value: AOA2SheetOpts): Self = StObject.set(x, "parseOptions", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[WorkSheet[T]]
     }
     
-    extension [Self <: WorkSheet[?], T](x: Self & WorkSheet[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkSheet[?], T] (val x: Self & WorkSheet[T]) extends AnyVal {
       
       inline def setData(value: js.Array[js.Array[T]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object mod {
       __obj.asInstanceOf[WorkSheetOptions]
     }
     
-    extension [Self <: WorkSheetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkSheetOptions] (val x: Self) extends AnyVal {
       
       inline def setExclamationmarkautofilter(value: AutoFilterInfo): Self = StObject.set(x, "!autofilter", value.asInstanceOf[js.Any])
       

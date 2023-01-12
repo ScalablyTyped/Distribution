@@ -17,7 +17,8 @@ object NoiseReductionParams {
     __obj.asInstanceOf[NoiseReductionParams]
   }
   
-  extension [Self <: NoiseReductionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoiseReductionParams] (val x: Self) extends AnyVal {
     
     inline def setNr(value: ImgixParamType): Self = StObject.set(x, "nr", value.asInstanceOf[js.Any])
     

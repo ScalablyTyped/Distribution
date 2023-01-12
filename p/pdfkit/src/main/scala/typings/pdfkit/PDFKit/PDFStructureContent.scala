@@ -18,7 +18,8 @@ object PDFStructureContent {
     __obj.asInstanceOf[PDFStructureContent]
   }
   
-  extension [Self <: PDFStructureContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFStructureContent] (val x: Self) extends AnyVal {
     
     inline def setPush(value: PDFStructureContent => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
   }

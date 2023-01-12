@@ -30,7 +30,8 @@ object IPathLine {
     __obj.asInstanceOf[IPathLine]
   }
   
-  extension [Self <: IPathLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPathLine] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: IPoint): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
   }

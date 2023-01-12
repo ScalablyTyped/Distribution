@@ -41,7 +41,8 @@ object GeometricShapeLoadOptions {
     __obj.asInstanceOf[GeometricShapeLoadOptions]
   }
   
-  extension [Self <: GeometricShapeLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometricShapeLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object libParseMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setColumnOffsets(value: Boolean): Self = StObject.set(x, "columnOffsets", value.asInstanceOf[js.Any])
         
@@ -158,7 +159,8 @@ object libParseMod {
         __obj.asInstanceOf[IResults]
       }
       
-      extension [Self <: IResults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IResults] (val x: Self) extends AnyVal {
         
         inline def setNcols(value: Double): Self = StObject.set(x, "ncols", value.asInstanceOf[js.Any])
         

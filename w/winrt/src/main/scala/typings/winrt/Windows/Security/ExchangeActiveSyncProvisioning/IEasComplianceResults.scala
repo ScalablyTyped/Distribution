@@ -41,7 +41,8 @@ object IEasComplianceResults {
     __obj.asInstanceOf[IEasComplianceResults]
   }
   
-  extension [Self <: IEasComplianceResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEasComplianceResults] (val x: Self) extends AnyVal {
     
     inline def setCompliant(value: Boolean): Self = StObject.set(x, "compliant", value.asInstanceOf[js.Any])
     

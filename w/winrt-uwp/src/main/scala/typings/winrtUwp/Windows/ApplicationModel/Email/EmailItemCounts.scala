@@ -26,7 +26,8 @@ object EmailItemCounts {
     __obj.asInstanceOf[EmailItemCounts]
   }
   
-  extension [Self <: EmailItemCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailItemCounts] (val x: Self) extends AnyVal {
     
     inline def setFlagged(value: Double): Self = StObject.set(x, "flagged", value.asInstanceOf[js.Any])
     

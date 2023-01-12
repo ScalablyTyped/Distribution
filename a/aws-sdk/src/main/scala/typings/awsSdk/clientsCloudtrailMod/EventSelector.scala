@@ -33,7 +33,8 @@ object EventSelector {
     __obj.asInstanceOf[EventSelector]
   }
   
-  extension [Self <: EventSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventSelector] (val x: Self) extends AnyVal {
     
     inline def setDataResources(value: DataResources): Self = StObject.set(x, "DataResources", value.asInstanceOf[js.Any])
     

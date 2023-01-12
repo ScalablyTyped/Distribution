@@ -40,7 +40,8 @@ object ITextArea {
     __obj.asInstanceOf[ITextArea]
   }
   
-  extension [Self <: ITextArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextArea] (val x: Self) extends AnyVal {
     
     inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

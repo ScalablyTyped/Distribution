@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[BasePath]
     }
     
-    extension [Self <: BasePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePath] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[BasePathDEMO]
     }
     
-    extension [Self <: BasePathDEMO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePathDEMO] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: DEMO): Self = StObject.set(x, "BasePath", value.asInstanceOf[js.Any])
     }
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[CSV]
     }
     
-    extension [Self <: CSV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSV] (val x: Self) extends AnyVal {
       
       inline def setCSV(value: String): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
       
@@ -92,7 +95,8 @@ object anon {
       __obj.asInstanceOf[DEMO]
     }
     
-    extension [Self <: DEMO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DEMO] (val x: Self) extends AnyVal {
       
       inline def setDEMO(value: String): Self = StObject.set(x, "DEMO", value.asInstanceOf[js.Any])
       
@@ -119,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Include]
     }
     
-    extension [Self <: Include](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Include] (val x: Self) extends AnyVal {
       
       inline def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
@@ -150,7 +155,8 @@ object anon {
       __obj.asInstanceOf[IncludeItems]
     }
     
-    extension [Self <: IncludeItems](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeItems] (val x: Self) extends AnyVal {
       
       inline def setIncludeItems(value: String): Self = StObject.set(x, "includeItems", value.asInstanceOf[js.Any])
       

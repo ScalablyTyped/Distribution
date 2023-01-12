@@ -18,7 +18,8 @@ object RecommendationPreferences {
     __obj.asInstanceOf[RecommendationPreferences]
   }
   
-  extension [Self <: RecommendationPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationPreferences] (val x: Self) extends AnyVal {
     
     inline def setCpuVendorArchitectures(value: CpuVendorArchitectures): Self = StObject.set(x, "cpuVendorArchitectures", value.asInstanceOf[js.Any])
     

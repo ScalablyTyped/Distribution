@@ -33,7 +33,8 @@ object ObjectTypeInternalSlot_ {
     __obj.asInstanceOf[ObjectTypeInternalSlot_]
   }
   
-  extension [Self <: ObjectTypeInternalSlot_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTypeInternalSlot_] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

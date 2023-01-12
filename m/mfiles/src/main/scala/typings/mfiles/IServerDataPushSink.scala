@@ -15,7 +15,8 @@ object IServerDataPushSink {
     __obj.asInstanceOf[IServerDataPushSink]
   }
   
-  extension [Self <: IServerDataPushSink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IServerDataPushSink] (val x: Self) extends AnyVal {
     
     inline def setOnServerDataPush(value: (Double, String) => Unit): Self = StObject.set(x, "OnServerDataPush", js.Any.fromFunction2(value))
   }

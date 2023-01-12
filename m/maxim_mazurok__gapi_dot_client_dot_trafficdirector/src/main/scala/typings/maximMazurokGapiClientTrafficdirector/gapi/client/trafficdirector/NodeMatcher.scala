@@ -19,7 +19,8 @@ object NodeMatcher {
     __obj.asInstanceOf[NodeMatcher]
   }
   
-  extension [Self <: NodeMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeMatcher] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: StringMatcher): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object OnBandwidthUpdateData {
     __obj.asInstanceOf[OnBandwidthUpdateData]
   }
   
-  extension [Self <: OnBandwidthUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBandwidthUpdateData] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
   }

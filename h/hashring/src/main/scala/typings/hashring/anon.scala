@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[PartialHashRingOptions]
     }
     
-    extension [Self <: PartialHashRingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHashRingOptions] (val x: Self) extends AnyVal {
       
       inline def setCompatibility(value: hash_ring | ketama): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[PartialServerConfig]
     }
     
-    extension [Self <: PartialServerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialServerConfig] (val x: Self) extends AnyVal {
       
       inline def setVnodes(value: Double): Self = StObject.set(x, "vnodes", value.asInstanceOf[js.Any])
       

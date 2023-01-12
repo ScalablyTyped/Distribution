@@ -71,7 +71,8 @@ object PartialTreeStateDataNode {
     __obj.asInstanceOf[PartialTreeStateDataNode]
   }
   
-  extension [Self <: PartialTreeStateDataNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTreeStateDataNode] (val x: Self) extends AnyVal {
     
     inline def setActiveKey(value: typings.rcTree.esInterfaceMod.Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
     

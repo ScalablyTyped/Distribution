@@ -40,7 +40,8 @@ object NodeResult {
     __obj.asInstanceOf[NodeResult]
   }
   
-  extension [Self <: NodeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeResult] (val x: Self) extends AnyVal {
     
     inline def setAll(value: js.Array[CheckResult]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MoveStatModifier {
     __obj.asInstanceOf[MoveStatModifier]
   }
   
-  extension [Self <: MoveStatModifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveStatModifier] (val x: Self) extends AnyVal {
     
     inline def setAffects_user(value: Boolean): Self = StObject.set(x, "affects_user", value.asInstanceOf[js.Any])
     

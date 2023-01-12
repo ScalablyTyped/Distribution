@@ -16,7 +16,8 @@ object SafeContents {
     __obj.asInstanceOf[SafeContents]
   }
   
-  extension [Self <: SafeContents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeContents] (val x: Self) extends AnyVal {
     
     inline def setSafeContents(value: js.Array[SafeContent]): Self = StObject.set(x, "safeContents", value.asInstanceOf[js.Any])
     

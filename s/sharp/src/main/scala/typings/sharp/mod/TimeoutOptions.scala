@@ -16,7 +16,8 @@ object TimeoutOptions {
     __obj.asInstanceOf[TimeoutOptions]
   }
   
-  extension [Self <: TimeoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeoutOptions] (val x: Self) extends AnyVal {
     
     inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
   }

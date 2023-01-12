@@ -19,7 +19,8 @@ object NodesNodeReloadError {
     __obj.asInstanceOf[NodesNodeReloadError]
   }
   
-  extension [Self <: NodesNodeReloadError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesNodeReloadError] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

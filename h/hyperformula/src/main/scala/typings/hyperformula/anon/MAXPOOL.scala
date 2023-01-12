@@ -26,7 +26,8 @@ object MAXPOOL {
     __obj.asInstanceOf[MAXPOOL]
   }
   
-  extension [Self <: MAXPOOL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MAXPOOL] (val x: Self) extends AnyVal {
     
     inline def setMAXPOOL(value: ArraySizeMethodMethodParameters): Self = StObject.set(x, "MAXPOOL", value.asInstanceOf[js.Any])
     

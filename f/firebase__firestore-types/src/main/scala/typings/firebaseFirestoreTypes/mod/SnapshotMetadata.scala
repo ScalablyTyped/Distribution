@@ -19,7 +19,8 @@ object SnapshotMetadata {
     __obj.asInstanceOf[SnapshotMetadata]
   }
   
-  extension [Self <: SnapshotMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotMetadata] (val x: Self) extends AnyVal {
     
     inline def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
     

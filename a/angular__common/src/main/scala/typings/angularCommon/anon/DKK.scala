@@ -44,7 +44,8 @@ object DKK {
     __obj.asInstanceOf[DKK]
   }
   
-  extension [Self <: DKK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DKK] (val x: Self) extends AnyVal {
     
     inline def setDKK(value: js.Array[scala.Nothing]): Self = StObject.set(x, "DKK", value.asInstanceOf[js.Any])
     

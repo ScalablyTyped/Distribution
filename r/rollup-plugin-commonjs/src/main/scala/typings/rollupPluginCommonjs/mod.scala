@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[RollupCommonJSOptions]
     }
     
-    extension [Self <: RollupCommonJSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupCommonJSOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

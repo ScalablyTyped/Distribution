@@ -20,7 +20,8 @@ object TypeofDigitalGauge {
     __obj.asInstanceOf[TypeofDigitalGauge]
   }
   
-  extension [Self <: TypeofDigitalGauge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDigitalGauge] (val x: Self) extends AnyVal {
     
     inline def setFn(value: DigitalGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

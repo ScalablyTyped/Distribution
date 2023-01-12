@@ -23,7 +23,8 @@ object EvaluationMetrics {
     __obj.asInstanceOf[EvaluationMetrics]
   }
   
-  extension [Self <: EvaluationMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluationMetrics] (val x: Self) extends AnyVal {
     
     inline def setFindMatchesMetrics(value: FindMatchesMetrics): Self = StObject.set(x, "FindMatchesMetrics", value.asInstanceOf[js.Any])
     

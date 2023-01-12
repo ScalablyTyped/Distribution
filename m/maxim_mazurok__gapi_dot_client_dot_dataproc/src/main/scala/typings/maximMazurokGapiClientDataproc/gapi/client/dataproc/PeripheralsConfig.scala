@@ -19,7 +19,8 @@ object PeripheralsConfig {
     __obj.asInstanceOf[PeripheralsConfig]
   }
   
-  extension [Self <: PeripheralsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeripheralsConfig] (val x: Self) extends AnyVal {
     
     inline def setMetastoreService(value: String): Self = StObject.set(x, "metastoreService", value.asInstanceOf[js.Any])
     

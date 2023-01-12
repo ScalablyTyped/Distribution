@@ -227,7 +227,8 @@ object distCacheInterfaceIcachemanagerMod {
       __obj.asInstanceOf[ICacheManager]
     }
     
-    extension [Self <: ICacheManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICacheManager] (val x: Self) extends AnyVal {
       
       inline def setGenerateAuthorityMetadataCacheKey(value: String => String): Self = StObject.set(x, "generateAuthorityMetadataCacheKey", js.Any.fromFunction1(value))
       

@@ -24,7 +24,8 @@ object SpatialAnchorStore {
     __obj.asInstanceOf[SpatialAnchorStore]
   }
   
-  extension [Self <: SpatialAnchorStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialAnchorStore] (val x: Self) extends AnyVal {
     
     inline def setClear(value: Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     

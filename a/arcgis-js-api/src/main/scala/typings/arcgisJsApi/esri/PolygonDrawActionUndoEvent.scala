@@ -30,7 +30,8 @@ object PolygonDrawActionUndoEvent {
     __obj.asInstanceOf[PolygonDrawActionUndoEvent]
   }
   
-  extension [Self <: PolygonDrawActionUndoEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonDrawActionUndoEvent] (val x: Self) extends AnyVal {
     
     inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     

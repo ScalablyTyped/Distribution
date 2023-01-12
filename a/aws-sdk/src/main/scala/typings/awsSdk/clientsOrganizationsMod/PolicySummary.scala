@@ -43,7 +43,8 @@ object PolicySummary {
     __obj.asInstanceOf[PolicySummary]
   }
   
-  extension [Self <: PolicySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicySummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: PolicyArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

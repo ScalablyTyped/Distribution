@@ -23,7 +23,8 @@ object DeleteResourcePolicyRequest {
     __obj.asInstanceOf[DeleteResourcePolicyRequest]
   }
   
-  extension [Self <: DeleteResourcePolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResourcePolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setPolicyHashCondition(value: HashString): Self = StObject.set(x, "PolicyHashCondition", value.asInstanceOf[js.Any])
     

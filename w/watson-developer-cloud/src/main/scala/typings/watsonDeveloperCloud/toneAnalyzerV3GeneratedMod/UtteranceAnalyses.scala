@@ -20,7 +20,8 @@ object UtteranceAnalyses {
     __obj.asInstanceOf[UtteranceAnalyses]
   }
   
-  extension [Self <: UtteranceAnalyses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UtteranceAnalyses] (val x: Self) extends AnyVal {
     
     inline def setUtterances_tone(value: js.Array[UtteranceAnalysis]): Self = StObject.set(x, "utterances_tone", value.asInstanceOf[js.Any])
     

@@ -82,7 +82,8 @@ object typesTextFieldTextFieldContainerMod {
       __obj.asInstanceOf[TextFieldContainerOptions]
     }
     
-    extension [Self <: TextFieldContainerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFieldContainerOptions] (val x: Self) extends AnyVal {
       
       inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object typesTextFieldTextFieldContainerMod {
       __obj.asInstanceOf[TextFieldContainerProps]
     }
     
-    extension [Self <: TextFieldContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFieldContainerProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

@@ -74,7 +74,8 @@ object ListEditorParams {
     __obj.asInstanceOf[ListEditorParams]
   }
   
-  extension [Self <: ListEditorParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEditorParams] (val x: Self) extends AnyVal {
     
     inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     

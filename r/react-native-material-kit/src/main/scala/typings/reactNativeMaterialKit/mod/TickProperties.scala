@@ -20,7 +20,8 @@ object TickProperties {
     __obj.asInstanceOf[TickProperties]
   }
   
-  extension [Self <: TickProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TickProperties] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

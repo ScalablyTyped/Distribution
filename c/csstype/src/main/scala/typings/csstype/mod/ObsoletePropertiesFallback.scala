@@ -368,7 +368,8 @@ object ObsoletePropertiesFallback {
     __obj.asInstanceOf[ObsoletePropertiesFallback[TLength, TTime]]
   }
   
-  extension [Self <: ObsoletePropertiesFallback[?, ?], TLength, TTime](x: Self & (ObsoletePropertiesFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObsoletePropertiesFallback[?, ?], TLength, TTime] (val x: Self & (ObsoletePropertiesFallback[TLength, TTime])) extends AnyVal {
     
     inline def setAzimuth(value: Azimuth | js.Array[NonNullable[js.UndefOr[Azimuth]]]): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
     

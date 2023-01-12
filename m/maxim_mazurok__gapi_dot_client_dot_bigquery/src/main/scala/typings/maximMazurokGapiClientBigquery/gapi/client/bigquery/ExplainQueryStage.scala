@@ -103,7 +103,8 @@ object ExplainQueryStage {
     __obj.asInstanceOf[ExplainQueryStage]
   }
   
-  extension [Self <: ExplainQueryStage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplainQueryStage] (val x: Self) extends AnyVal {
     
     inline def setCompletedParallelInputs(value: String): Self = StObject.set(x, "completedParallelInputs", value.asInstanceOf[js.Any])
     

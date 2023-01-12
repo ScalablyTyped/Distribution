@@ -25,7 +25,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ErrorMessageOptions]
     }
     
-    extension [Self <: ErrorMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepErrors(value: Boolean): Self = StObject.set(x, "keepErrors", value.asInstanceOf[js.Any])
       

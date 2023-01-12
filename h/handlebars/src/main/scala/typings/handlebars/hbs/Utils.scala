@@ -39,7 +39,8 @@ object Utils {
     __obj.asInstanceOf[Utils]
   }
   
-  extension [Self <: Utils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Utils] (val x: Self) extends AnyVal {
     
     inline def setBlockParams(value: (js.Array[Any], js.Array[Any]) => js.Array[Any]): Self = StObject.set(x, "blockParams", js.Any.fromFunction2(value))
     

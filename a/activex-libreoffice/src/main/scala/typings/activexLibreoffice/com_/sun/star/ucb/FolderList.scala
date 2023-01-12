@@ -21,7 +21,8 @@ object FolderList {
     __obj.asInstanceOf[FolderList]
   }
   
-  extension [Self <: FolderList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderList] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: FolderListCommand): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     

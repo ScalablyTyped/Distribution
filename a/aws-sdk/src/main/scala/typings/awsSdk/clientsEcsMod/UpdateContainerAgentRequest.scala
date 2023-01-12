@@ -23,7 +23,8 @@ object UpdateContainerAgentRequest {
     __obj.asInstanceOf[UpdateContainerAgentRequest]
   }
   
-  extension [Self <: UpdateContainerAgentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateContainerAgentRequest] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     

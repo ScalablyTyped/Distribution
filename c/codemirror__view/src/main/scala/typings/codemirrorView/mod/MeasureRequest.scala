@@ -31,7 +31,8 @@ object MeasureRequest {
     __obj.asInstanceOf[MeasureRequest[T]]
   }
   
-  extension [Self <: MeasureRequest[?], T](x: Self & MeasureRequest[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureRequest[?], T] (val x: Self & MeasureRequest[T]) extends AnyVal {
     
     inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

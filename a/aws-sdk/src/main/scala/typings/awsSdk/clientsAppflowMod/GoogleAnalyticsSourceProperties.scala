@@ -19,7 +19,8 @@ object GoogleAnalyticsSourceProperties {
     __obj.asInstanceOf[GoogleAnalyticsSourceProperties]
   }
   
-  extension [Self <: GoogleAnalyticsSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

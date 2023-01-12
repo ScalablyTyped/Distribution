@@ -16,7 +16,8 @@ object `259` {
     __obj.asInstanceOf[`259`]
   }
   
-  extension [Self <: `259`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `259`] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: SVGSVGElement): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

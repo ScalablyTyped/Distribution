@@ -179,7 +179,8 @@ object BaseModuleConfig {
     __obj.asInstanceOf[BaseModuleConfig]
   }
   
-  extension [Self <: BaseModuleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseModuleConfig] (val x: Self) extends AnyVal {
     
     inline def setIgnoreDynamic(value: Boolean): Self = StObject.set(x, "ignoreDynamic", value.asInstanceOf[js.Any])
     

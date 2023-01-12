@@ -23,7 +23,8 @@ object VirtualObject {
     __obj.asInstanceOf[VirtualObject]
   }
   
-  extension [Self <: VirtualObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualObject] (val x: Self) extends AnyVal {
     
     inline def setETag(value: ETagString): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     

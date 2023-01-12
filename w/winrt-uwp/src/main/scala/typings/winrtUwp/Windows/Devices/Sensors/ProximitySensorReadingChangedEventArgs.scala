@@ -17,7 +17,8 @@ object ProximitySensorReadingChangedEventArgs {
     __obj.asInstanceOf[ProximitySensorReadingChangedEventArgs]
   }
   
-  extension [Self <: ProximitySensorReadingChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProximitySensorReadingChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReading(value: ProximitySensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }

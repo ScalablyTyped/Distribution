@@ -41,7 +41,8 @@ object TaskOrchestrationQueuedPlan {
     __obj.asInstanceOf[TaskOrchestrationQueuedPlan]
   }
   
-  extension [Self <: TaskOrchestrationQueuedPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskOrchestrationQueuedPlan] (val x: Self) extends AnyVal {
     
     inline def setAssignTime(value: js.Date): Self = StObject.set(x, "assignTime", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object IsHighlighted {
     __obj.asInstanceOf[IsHighlighted]
   }
   
-  extension [Self <: IsHighlighted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsHighlighted] (val x: Self) extends AnyVal {
     
     inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     

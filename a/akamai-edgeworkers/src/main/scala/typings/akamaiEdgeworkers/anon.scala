@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Aborted]
     }
     
-    extension [Self <: Aborted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aborted] (val x: Self) extends AnyVal {
       
       inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Domain]
     }
     
-    extension [Self <: Domain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -153,7 +156,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setBody(value: RequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -184,7 +188,8 @@ object anon {
       __obj.asInstanceOf[HighWaterMark]
     }
     
-    extension [Self <: HighWaterMark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighWaterMark] (val x: Self) extends AnyVal {
       
       inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     }
@@ -201,7 +206,8 @@ object anon {
       __obj.asInstanceOf[Mode]
     }
     
-    extension [Self <: Mode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
       
       inline def setMode(value: byob): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
@@ -220,7 +226,8 @@ object anon {
       __obj.asInstanceOf[Readable[R, T]]
     }
     
-    extension [Self <: Readable[?, ?], R, T](x: Self & (Readable[R, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Readable[?, ?], R, T] (val x: Self & (Readable[R, T])) extends AnyVal {
       
       inline def setReadable(value: ReadableStreamEW[T]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
@@ -241,7 +248,8 @@ object anon {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
@@ -262,7 +270,8 @@ object anon {
       __obj.asInstanceOf[ToUTCString]
     }
     
-    extension [Self <: ToUTCString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToUTCString] (val x: Self) extends AnyVal {
       
       inline def setToUTCString(value: () => String): Self = StObject.set(x, "toUTCString", js.Any.fromFunction0(value))
     }

@@ -19,7 +19,8 @@ object AllowPrevious {
     __obj.asInstanceOf[AllowPrevious]
   }
   
-  extension [Self <: AllowPrevious](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowPrevious] (val x: Self) extends AnyVal {
     
     inline def setAllowPrevious(value: Boolean): Self = StObject.set(x, "allowPrevious", value.asInstanceOf[js.Any])
     

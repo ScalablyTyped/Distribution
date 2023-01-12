@@ -17,7 +17,8 @@ object DataViewTreeNodeGroupValue {
     __obj.asInstanceOf[DataViewTreeNodeGroupValue]
   }
   
-  extension [Self <: DataViewTreeNodeGroupValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewTreeNodeGroupValue] (val x: Self) extends AnyVal {
     
     inline def setCount(value: PrimitiveValue): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

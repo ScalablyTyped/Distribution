@@ -24,7 +24,8 @@ object DexieVersionChangeEvent {
     __obj.asInstanceOf[DexieVersionChangeEvent]
   }
   
-  extension [Self <: DexieVersionChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DexieVersionChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setFire(value: IDBVersionChangeEvent => Any): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
     

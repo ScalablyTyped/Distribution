@@ -17,7 +17,8 @@ object MaybeStatementResource {
     __obj.asInstanceOf[MaybeStatementResource]
   }
   
-  extension [Self <: MaybeStatementResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaybeStatementResource] (val x: Self) extends AnyVal {
     
     inline def setNotResource(value: String | js.Array[String]): Self = StObject.set(x, "NotResource", value.asInstanceOf[js.Any])
     

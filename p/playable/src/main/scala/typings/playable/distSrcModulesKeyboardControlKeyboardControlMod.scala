@@ -104,7 +104,8 @@ object distSrcModulesKeyboardControlKeyboardControlMod {
       __obj.asInstanceOf[KeyboardControl]
     }
     
-    extension [Self <: KeyboardControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardControl] (val x: Self) extends AnyVal {
       
       inline def set_attachDefaultControls(value: Any): Self = StObject.set(x, "_attachDefaultControls", value.asInstanceOf[js.Any])
       

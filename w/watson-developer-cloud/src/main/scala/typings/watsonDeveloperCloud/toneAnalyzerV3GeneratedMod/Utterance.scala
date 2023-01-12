@@ -20,7 +20,8 @@ object Utterance {
     __obj.asInstanceOf[Utterance]
   }
   
-  extension [Self <: Utterance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Utterance] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

@@ -902,7 +902,8 @@ object PlotWordcloudOptions {
     __obj.asInstanceOf[PlotWordcloudOptions]
   }
   
-  extension [Self <: PlotWordcloudOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotWordcloudOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

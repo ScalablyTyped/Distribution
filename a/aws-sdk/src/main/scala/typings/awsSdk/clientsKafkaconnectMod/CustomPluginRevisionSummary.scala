@@ -43,7 +43,8 @@ object CustomPluginRevisionSummary {
     __obj.asInstanceOf[CustomPluginRevisionSummary]
   }
   
-  extension [Self <: CustomPluginRevisionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPluginRevisionSummary] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: CustomPluginContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

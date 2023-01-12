@@ -214,7 +214,8 @@ object EmulationApi {
     __obj.asInstanceOf[EmulationApi]
   }
   
-  extension [Self <: EmulationApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmulationApi] (val x: Self) extends AnyVal {
     
     inline def setCanEmulate(value: () => js.Promise[CanEmulateResponse]): Self = StObject.set(x, "canEmulate", js.Any.fromFunction0(value))
     

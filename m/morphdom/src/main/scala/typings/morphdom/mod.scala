@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[MorphDomOptions]
     }
     
-    extension [Self <: MorphDomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MorphDomOptions] (val x: Self) extends AnyVal {
       
       inline def setChildrenOnly(value: Boolean): Self = StObject.set(x, "childrenOnly", value.asInstanceOf[js.Any])
       

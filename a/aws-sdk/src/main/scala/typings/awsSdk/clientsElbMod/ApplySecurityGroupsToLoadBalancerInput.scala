@@ -23,7 +23,8 @@ object ApplySecurityGroupsToLoadBalancerInput {
     __obj.asInstanceOf[ApplySecurityGroupsToLoadBalancerInput]
   }
   
-  extension [Self <: ApplySecurityGroupsToLoadBalancerInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplySecurityGroupsToLoadBalancerInput] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     

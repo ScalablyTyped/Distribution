@@ -17,7 +17,8 @@ object Alloweditdocuments {
     __obj.asInstanceOf[Alloweditdocuments]
   }
   
-  extension [Self <: Alloweditdocuments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alloweditdocuments] (val x: Self) extends AnyVal {
     
     inline def setAllow_edit_documents(value: Boolean): Self = StObject.set(x, "allow_edit_documents", value.asInstanceOf[js.Any])
     

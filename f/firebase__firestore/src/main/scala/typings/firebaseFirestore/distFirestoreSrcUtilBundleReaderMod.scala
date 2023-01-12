@@ -52,7 +52,8 @@ object distFirestoreSrcUtilBundleReaderMod {
       __obj.asInstanceOf[BundleReader]
     }
     
-    extension [Self <: BundleReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleReader] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

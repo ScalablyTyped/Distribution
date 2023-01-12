@@ -20,7 +20,8 @@ object Datastore {
     __obj.asInstanceOf[Datastore]
   }
   
-  extension [Self <: Datastore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Datastore] (val x: Self) extends AnyVal {
     
     inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
   }

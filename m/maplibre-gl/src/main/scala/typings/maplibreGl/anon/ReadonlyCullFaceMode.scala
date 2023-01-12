@@ -26,7 +26,8 @@ object ReadonlyCullFaceMode {
     __obj.asInstanceOf[ReadonlyCullFaceMode]
   }
   
-  extension [Self <: ReadonlyCullFaceMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyCullFaceMode] (val x: Self) extends AnyVal {
     
     inline def setBackCCW(value: Any): Self = StObject.set(x, "backCCW", value.asInstanceOf[js.Any])
     

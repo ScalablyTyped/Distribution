@@ -27,7 +27,8 @@ object IndicesPutAliasRequest {
     __obj.asInstanceOf[IndicesPutAliasRequest]
   }
   
-  extension [Self <: IndicesPutAliasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesPutAliasRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Filter): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

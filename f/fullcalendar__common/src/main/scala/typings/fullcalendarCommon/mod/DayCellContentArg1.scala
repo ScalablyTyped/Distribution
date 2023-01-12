@@ -33,7 +33,8 @@ object DayCellContentArg1 {
     __obj.asInstanceOf[DayCellContentArg1]
   }
   
-  extension [Self <: DayCellContentArg1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayCellContentArg1] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

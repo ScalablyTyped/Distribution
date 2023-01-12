@@ -19,7 +19,8 @@ object FilteredLookupInfo {
     __obj.asInstanceOf[FilteredLookupInfo]
   }
   
-  extension [Self <: FilteredLookupInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilteredLookupInfo] (val x: Self) extends AnyVal {
     
     inline def setControllingFields(value: js.Array[String]): Self = StObject.set(x, "controllingFields", value.asInstanceOf[js.Any])
     

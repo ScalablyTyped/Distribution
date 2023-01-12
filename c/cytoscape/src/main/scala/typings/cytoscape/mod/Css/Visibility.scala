@@ -76,7 +76,8 @@ object Visibility {
     __obj.asInstanceOf[Visibility[SingularType]]
   }
   
-  extension [Self <: Visibility[?], SingularType /* <: NodeSingular | EdgeSingular */](x: Self & Visibility[SingularType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Visibility[?], SingularType /* <: NodeSingular | EdgeSingular */] (val x: Self & Visibility[SingularType]) extends AnyVal {
     
     inline def setDisplay(value: PropertyValue[SingularType, none | element]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

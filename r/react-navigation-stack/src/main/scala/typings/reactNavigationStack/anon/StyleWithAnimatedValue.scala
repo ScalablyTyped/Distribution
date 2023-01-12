@@ -18,7 +18,8 @@ object StyleWithAnimatedValue {
     __obj.asInstanceOf[StyleWithAnimatedValue]
   }
   
-  extension [Self <: StyleWithAnimatedValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleWithAnimatedValue] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

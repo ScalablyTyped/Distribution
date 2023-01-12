@@ -39,7 +39,8 @@ object CSSImageStyleBackgroundProps {
     __obj.asInstanceOf[CSSImageStyleBackgroundProps]
   }
   
-  extension [Self <: CSSImageStyleBackgroundProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSImageStyleBackgroundProps] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: BackgroundAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     

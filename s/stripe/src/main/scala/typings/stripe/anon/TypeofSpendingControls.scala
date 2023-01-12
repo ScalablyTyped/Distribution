@@ -15,7 +15,8 @@ object TypeofSpendingControls {
     __obj.asInstanceOf[TypeofSpendingControls]
   }
   
-  extension [Self <: TypeofSpendingControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSpendingControls] (val x: Self) extends AnyVal {
     
     inline def setSpendingLimit(value: Any): Self = StObject.set(x, "SpendingLimit", value.asInstanceOf[js.Any])
   }

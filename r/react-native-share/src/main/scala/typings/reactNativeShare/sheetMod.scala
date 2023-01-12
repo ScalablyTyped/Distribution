@@ -33,7 +33,8 @@ object sheetMod {
       __obj.asInstanceOf[SheetProps]
     }
     
-    extension [Self <: SheetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object sheetMod {
       __obj.asInstanceOf[SheetState]
     }
     
-    extension [Self <: SheetState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetState] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Value): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     }

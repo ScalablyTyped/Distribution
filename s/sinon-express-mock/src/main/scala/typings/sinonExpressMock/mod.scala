@@ -122,7 +122,8 @@ object mod {
         __obj.asInstanceOf[MockReq]
       }
       
-      extension [Self <: MockReq](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MockReq] (val x: Self) extends AnyVal {
         
         inline def setAccepts(value: SinonStub[js.Array[Any], Any]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
         
@@ -344,7 +345,8 @@ object mod {
         __obj.asInstanceOf[MockRes]
       }
       
-      extension [Self <: MockRes](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MockRes] (val x: Self) extends AnyVal {
         
         inline def setAppend(value: SinonStub[js.Array[Any], Any]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
         

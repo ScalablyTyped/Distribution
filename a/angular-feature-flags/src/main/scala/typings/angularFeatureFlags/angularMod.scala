@@ -22,7 +22,8 @@ object angularMod {
         __obj.asInstanceOf[FeatureFlagsProvider]
       }
       
-      extension [Self <: FeatureFlagsProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FeatureFlagsProvider] (val x: Self) extends AnyVal {
         
         inline def setSetInitialFlags(value: js.Array[FlagData] => Unit): Self = StObject.set(x, "setInitialFlags", js.Any.fromFunction1(value))
       }
@@ -64,7 +65,8 @@ object angularMod {
         __obj.asInstanceOf[FlagData]
       }
       
-      extension [Self <: FlagData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FlagData] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         

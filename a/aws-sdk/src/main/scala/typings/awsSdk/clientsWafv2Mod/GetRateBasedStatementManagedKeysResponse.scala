@@ -23,7 +23,8 @@ object GetRateBasedStatementManagedKeysResponse {
     __obj.asInstanceOf[GetRateBasedStatementManagedKeysResponse]
   }
   
-  extension [Self <: GetRateBasedStatementManagedKeysResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRateBasedStatementManagedKeysResponse] (val x: Self) extends AnyVal {
     
     inline def setManagedKeysIPV4(value: RateBasedStatementManagedKeysIPSet): Self = StObject.set(x, "ManagedKeysIPV4", value.asInstanceOf[js.Any])
     

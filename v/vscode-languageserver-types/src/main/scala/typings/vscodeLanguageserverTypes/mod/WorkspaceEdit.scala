@@ -49,7 +49,8 @@ object WorkspaceEdit {
   
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean]
   
-  extension [Self <: WorkspaceEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceEdit] (val x: Self) extends AnyVal {
     
     inline def setChangeAnnotations(value: StringDictionary[ChangeAnnotation]): Self = StObject.set(x, "changeAnnotations", value.asInstanceOf[js.Any])
     

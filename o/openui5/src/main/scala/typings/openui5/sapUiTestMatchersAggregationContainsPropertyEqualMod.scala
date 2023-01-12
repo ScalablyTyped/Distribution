@@ -191,7 +191,8 @@ object sapUiTestMatchersAggregationContainsPropertyEqualMod {
       __obj.asInstanceOf[AggregationContainsPropertyEqualSettings]
     }
     
-    extension [Self <: AggregationContainsPropertyEqualSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregationContainsPropertyEqualSettings] (val x: Self) extends AnyVal {
       
       inline def setAggregationName(value: String | PropertyBindingInfo): Self = StObject.set(x, "aggregationName", value.asInstanceOf[js.Any])
       

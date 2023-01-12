@@ -83,7 +83,8 @@ object PointerEvent {
     __obj.asInstanceOf[PointerEvent[T]]
   }
   
-  extension [Self <: PointerEvent[?], T](x: Self & PointerEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerEvent[?], T] (val x: Self & PointerEvent[T]) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

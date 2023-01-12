@@ -20,7 +20,8 @@ object SVGAnimatedPreserveAspectRatio {
     __obj.asInstanceOf[SVGAnimatedPreserveAspectRatio]
   }
   
-  extension [Self <: SVGAnimatedPreserveAspectRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAnimatedPreserveAspectRatio] (val x: Self) extends AnyVal {
     
     inline def setAnimVal(value: SVGPreserveAspectRatio): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     

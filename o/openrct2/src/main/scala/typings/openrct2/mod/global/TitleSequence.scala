@@ -97,7 +97,8 @@ object TitleSequence {
     __obj.asInstanceOf[TitleSequence]
   }
   
-  extension [Self <: TitleSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleSequence] (val x: Self) extends AnyVal {
     
     inline def setAddPark(value: (String, String) => Unit): Self = StObject.set(x, "addPark", js.Any.fromFunction2(value))
     

@@ -72,7 +72,8 @@ object staticIntervalTreeMod {
       __obj.asInstanceOf[StaticIntervalTree[T]]
     }
     
-    extension [Self <: StaticIntervalTree[?], T](x: Self & StaticIntervalTree[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticIntervalTree[?], T] (val x: Self & StaticIntervalTree[T]) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

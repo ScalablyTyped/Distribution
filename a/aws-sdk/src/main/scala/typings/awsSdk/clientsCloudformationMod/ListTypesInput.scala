@@ -48,7 +48,8 @@ object ListTypesInput {
     __obj.asInstanceOf[ListTypesInput]
   }
   
-  extension [Self <: ListTypesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTypesInput] (val x: Self) extends AnyVal {
     
     inline def setDeprecatedStatus(value: DeprecatedStatus): Self = StObject.set(x, "DeprecatedStatus", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Subtitle {
     __obj.asInstanceOf[Subtitle]
   }
   
-  extension [Self <: Subtitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subtitle] (val x: Self) extends AnyVal {
     
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

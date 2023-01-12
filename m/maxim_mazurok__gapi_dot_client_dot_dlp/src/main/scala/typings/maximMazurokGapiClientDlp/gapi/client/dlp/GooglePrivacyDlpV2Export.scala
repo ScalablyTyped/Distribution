@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2Export {
     __obj.asInstanceOf[GooglePrivacyDlpV2Export]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Export](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Export] (val x: Self) extends AnyVal {
     
     inline def setProfileTable(value: GooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "profileTable", value.asInstanceOf[js.Any])
     

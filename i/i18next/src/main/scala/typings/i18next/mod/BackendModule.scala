@@ -50,7 +50,8 @@ object BackendModule {
     __obj.asInstanceOf[BackendModule[TOptions]]
   }
   
-  extension [Self <: BackendModule[?], TOptions](x: Self & BackendModule[TOptions]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendModule[?], TOptions] (val x: Self & BackendModule[TOptions]) extends AnyVal {
     
     inline def setCreate(
       value: (/* languages */ js.Array[String], /* namespace */ String, /* key */ String, /* fallbackValue */ String) => Unit

@@ -19,7 +19,8 @@ object RequestBodyContentApplicationjsonAllowautomerge {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAllowautomerge]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonAllowautomerge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonAllowautomerge] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `57`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object libPaginationStyleMod {
       __obj.asInstanceOf[PaginationStyle]
     }
     
-    extension [Self <: PaginationStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationStyle] (val x: Self) extends AnyVal {
       
       inline def setActiveTextStyle(value: TextStyle): Self = StObject.set(x, "activeTextStyle", value.asInstanceOf[js.Any])
       

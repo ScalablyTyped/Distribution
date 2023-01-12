@@ -25,7 +25,8 @@ object elasticsearch {
     __obj.asInstanceOf[elasticsearch]
   }
   
-  extension [Self <: elasticsearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: elasticsearch] (val x: Self) extends AnyVal {
     
     inline def setHooks(value: Query): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     

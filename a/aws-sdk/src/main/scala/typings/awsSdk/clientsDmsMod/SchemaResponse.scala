@@ -55,7 +55,8 @@ object SchemaResponse {
     __obj.asInstanceOf[SchemaResponse]
   }
   
-  extension [Self <: SchemaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaResponse] (val x: Self) extends AnyVal {
     
     inline def setCodeLineCount(value: LongOptional): Self = StObject.set(x, "CodeLineCount", value.asInstanceOf[js.Any])
     

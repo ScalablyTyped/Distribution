@@ -29,7 +29,8 @@ object PlotVariablepieOnPointConnectorOptions {
     __obj.asInstanceOf[PlotVariablepieOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotVariablepieOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotVariablepieOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

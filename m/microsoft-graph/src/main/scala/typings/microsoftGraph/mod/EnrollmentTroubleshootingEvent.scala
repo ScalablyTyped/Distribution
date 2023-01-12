@@ -47,7 +47,8 @@ object EnrollmentTroubleshootingEvent {
     __obj.asInstanceOf[EnrollmentTroubleshootingEvent]
   }
   
-  extension [Self <: EnrollmentTroubleshootingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrollmentTroubleshootingEvent] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

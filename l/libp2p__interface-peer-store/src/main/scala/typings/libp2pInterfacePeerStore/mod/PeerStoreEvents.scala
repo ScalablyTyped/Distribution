@@ -39,7 +39,8 @@ object PeerStoreEvents {
     __obj.asInstanceOf[PeerStoreEvents]
   }
   
-  extension [Self <: PeerStoreEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerStoreEvents] (val x: Self) extends AnyVal {
     
     inline def setChangeColonmetadata(value: CustomEvent[PeerMetadataChangeData]): Self = StObject.set(x, "change:metadata", value.asInstanceOf[js.Any])
     

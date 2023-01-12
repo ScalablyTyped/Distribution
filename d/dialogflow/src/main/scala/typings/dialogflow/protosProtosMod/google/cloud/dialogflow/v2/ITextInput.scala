@@ -20,7 +20,8 @@ object ITextInput {
     __obj.asInstanceOf[ITextInput]
   }
   
-  extension [Self <: ITextInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextInput] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

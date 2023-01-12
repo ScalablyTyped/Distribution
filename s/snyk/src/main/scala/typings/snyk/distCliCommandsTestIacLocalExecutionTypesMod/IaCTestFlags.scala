@@ -81,7 +81,8 @@ object IaCTestFlags {
     __obj.asInstanceOf[IaCTestFlags]
   }
   
-  extension [Self <: IaCTestFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IaCTestFlags] (val x: Self) extends AnyVal {
     
     inline def `setCloud-context`(value: String): Self = StObject.set(x, "cloud-context", value.asInstanceOf[js.Any])
     

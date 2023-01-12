@@ -57,7 +57,8 @@ object CharacterCount {
     __obj.asInstanceOf[CharacterCount]
   }
   
-  extension [Self <: CharacterCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacterCount] (val x: Self) extends AnyVal {
     
     inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object PopupParams {
     __obj.asInstanceOf[PopupParams]
   }
   
-  extension [Self <: PopupParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupParams] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[PopupButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ModifyIpamRequest {
     __obj.asInstanceOf[ModifyIpamRequest]
   }
   
-  extension [Self <: ModifyIpamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyIpamRequest] (val x: Self) extends AnyVal {
     
     inline def setAddOperatingRegions(value: AddIpamOperatingRegionSet): Self = StObject.set(x, "AddOperatingRegions", value.asInstanceOf[js.Any])
     

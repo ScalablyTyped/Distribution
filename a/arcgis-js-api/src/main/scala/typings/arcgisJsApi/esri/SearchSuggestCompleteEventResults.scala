@@ -19,7 +19,8 @@ object SearchSuggestCompleteEventResults {
     __obj.asInstanceOf[SearchSuggestCompleteEventResults]
   }
   
-  extension [Self <: SearchSuggestCompleteEventResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSuggestCompleteEventResults] (val x: Self) extends AnyVal {
     
     inline def setResults(value: js.Array[SuggestResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

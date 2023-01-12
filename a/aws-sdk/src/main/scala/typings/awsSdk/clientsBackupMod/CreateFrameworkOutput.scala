@@ -23,7 +23,8 @@ object CreateFrameworkOutput {
     __obj.asInstanceOf[CreateFrameworkOutput]
   }
   
-  extension [Self <: CreateFrameworkOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFrameworkOutput] (val x: Self) extends AnyVal {
     
     inline def setFrameworkArn(value: ARN): Self = StObject.set(x, "FrameworkArn", value.asInstanceOf[js.Any])
     

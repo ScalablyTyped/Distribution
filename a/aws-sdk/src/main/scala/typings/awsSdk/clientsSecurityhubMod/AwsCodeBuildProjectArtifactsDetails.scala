@@ -58,7 +58,8 @@ object AwsCodeBuildProjectArtifactsDetails {
     __obj.asInstanceOf[AwsCodeBuildProjectArtifactsDetails]
   }
   
-  extension [Self <: AwsCodeBuildProjectArtifactsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCodeBuildProjectArtifactsDetails] (val x: Self) extends AnyVal {
     
     inline def setArtifactIdentifier(value: NonEmptyString): Self = StObject.set(x, "ArtifactIdentifier", value.asInstanceOf[js.Any])
     

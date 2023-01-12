@@ -115,7 +115,8 @@ object PartialPieData {
     __obj.asInstanceOf[PartialPieData]
   }
   
-  extension [Self <: PartialPieData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPieData] (val x: Self) extends AnyVal {
     
     inline def setAutomargin(value: Boolean): Self = StObject.set(x, "automargin", value.asInstanceOf[js.Any])
     

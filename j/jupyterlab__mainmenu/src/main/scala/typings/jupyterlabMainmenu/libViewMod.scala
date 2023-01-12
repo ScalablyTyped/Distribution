@@ -87,7 +87,8 @@ object libViewMod {
         __obj.asInstanceOf[IEditorViewer[T]]
       }
       
-      extension [Self <: IEditorViewer[?], T /* <: Widget */](x: Self & IEditorViewer[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IEditorViewer[?], T /* <: Widget */] (val x: Self & IEditorViewer[T]) extends AnyVal {
         
         inline def setLineNumbersToggled(value: /* widget */ T => Boolean): Self = StObject.set(x, "lineNumbersToggled", js.Any.fromFunction1(value))
         

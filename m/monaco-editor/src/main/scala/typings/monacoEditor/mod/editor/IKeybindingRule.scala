@@ -21,7 +21,8 @@ object IKeybindingRule {
     __obj.asInstanceOf[IKeybindingRule]
   }
   
-  extension [Self <: IKeybindingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeybindingRule] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

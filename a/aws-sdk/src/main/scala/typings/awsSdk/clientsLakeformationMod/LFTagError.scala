@@ -23,7 +23,8 @@ object LFTagError {
     __obj.asInstanceOf[LFTagError]
   }
   
-  extension [Self <: LFTagError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LFTagError] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorDetail): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object UnpackagedExtensionData {
     __obj.asInstanceOf[UnpackagedExtensionData]
   }
   
-  extension [Self <: UnpackagedExtensionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnpackagedExtensionData] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

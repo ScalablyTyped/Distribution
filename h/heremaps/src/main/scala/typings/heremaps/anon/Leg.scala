@@ -29,7 +29,8 @@ object Leg {
     __obj.asInstanceOf[Leg]
   }
   
-  extension [Self <: Leg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Leg] (val x: Self) extends AnyVal {
     
     inline def setLeg(value: js.Array[Maneuver]): Self = StObject.set(x, "leg", value.asInstanceOf[js.Any])
     

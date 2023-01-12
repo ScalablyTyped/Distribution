@@ -18,7 +18,8 @@ object RetryStrategy {
     __obj.asInstanceOf[RetryStrategy]
   }
   
-  extension [Self <: RetryStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryStrategy] (val x: Self) extends AnyVal {
     
     inline def setMaximumRetryAttempts(value: MaximumRetryAttempts): Self = StObject.set(x, "MaximumRetryAttempts", value.asInstanceOf[js.Any])
   }

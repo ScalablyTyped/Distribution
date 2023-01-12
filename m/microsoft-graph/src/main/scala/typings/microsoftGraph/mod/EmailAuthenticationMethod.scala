@@ -18,7 +18,8 @@ object EmailAuthenticationMethod {
     __obj.asInstanceOf[EmailAuthenticationMethod]
   }
   
-  extension [Self <: EmailAuthenticationMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailAuthenticationMethod] (val x: Self) extends AnyVal {
     
     inline def setEmailAddress(value: NullableOption[String]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     

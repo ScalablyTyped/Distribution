@@ -19,7 +19,8 @@ object TextDocumentProviderFeature {
     __obj.asInstanceOf[TextDocumentProviderFeature[T]]
   }
   
-  extension [Self <: TextDocumentProviderFeature[?], T](x: Self & TextDocumentProviderFeature[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentProviderFeature[?], T] (val x: Self & TextDocumentProviderFeature[T]) extends AnyVal {
     
     inline def setGetProvider(value: TextDocument => js.UndefOr[T]): Self = StObject.set(x, "getProvider", js.Any.fromFunction1(value))
   }

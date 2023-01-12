@@ -43,7 +43,8 @@ object CacheSubnetGroup {
     __obj.asInstanceOf[CacheSubnetGroup]
   }
   
-  extension [Self <: CacheSubnetGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheSubnetGroup] (val x: Self) extends AnyVal {
     
     inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[AppAuthentication]
     }
     
-    extension [Self <: AppAuthentication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppAuthentication] (val x: Self) extends AnyVal {
       
       inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[InstallationTokenAuthentication]
     }
     
-    extension [Self <: InstallationTokenAuthentication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallationTokenAuthentication] (val x: Self) extends AnyVal {
       
       inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[OAuthTokenAuthentication]
     }
     
-    extension [Self <: OAuthTokenAuthentication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuthTokenAuthentication] (val x: Self) extends AnyVal {
       
       inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[UserToServerAuthentication]
     }
     
-    extension [Self <: UserToServerAuthentication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserToServerAuthentication] (val x: Self) extends AnyVal {
       
       inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       

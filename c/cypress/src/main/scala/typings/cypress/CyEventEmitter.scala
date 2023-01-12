@@ -172,7 +172,8 @@ object CyEventEmitter {
     __obj.asInstanceOf[CyEventEmitter]
   }
   
-  extension [Self <: CyEventEmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CyEventEmitter] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: (/* event */ event, /* listener */ ListenerFn) => CyEventEmitter | Listener): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
     

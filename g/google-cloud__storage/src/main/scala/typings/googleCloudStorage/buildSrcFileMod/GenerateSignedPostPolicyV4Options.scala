@@ -23,7 +23,8 @@ object GenerateSignedPostPolicyV4Options {
     __obj.asInstanceOf[GenerateSignedPostPolicyV4Options]
   }
   
-  extension [Self <: GenerateSignedPostPolicyV4Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateSignedPostPolicyV4Options] (val x: Self) extends AnyVal {
     
     inline def setBucketBoundHostname(value: String): Self = StObject.set(x, "bucketBoundHostname", value.asInstanceOf[js.Any])
     

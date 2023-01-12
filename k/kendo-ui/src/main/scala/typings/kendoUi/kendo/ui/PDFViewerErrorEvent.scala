@@ -21,7 +21,8 @@ object PDFViewerErrorEvent {
     __obj.asInstanceOf[PDFViewerErrorEvent]
   }
   
-  extension [Self <: PDFViewerErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setDialog(value: Dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
     

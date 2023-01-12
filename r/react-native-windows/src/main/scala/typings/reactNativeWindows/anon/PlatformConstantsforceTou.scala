@@ -33,7 +33,8 @@ object PlatformConstantsforceTou {
     __obj.asInstanceOf[PlatformConstantsforceTou]
   }
   
-  extension [Self <: PlatformConstantsforceTou](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformConstantsforceTou] (val x: Self) extends AnyVal {
     
     inline def setForceTouchAvailable(value: Boolean): Self = StObject.set(x, "forceTouchAvailable", value.asInstanceOf[js.Any])
     

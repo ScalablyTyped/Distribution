@@ -55,7 +55,8 @@ object TimelineEvent {
     __obj.asInstanceOf[TimelineEvent]
   }
   
-  extension [Self <: TimelineEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineEvent] (val x: Self) extends AnyVal {
     
     inline def setEventData(value: EventData): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
     

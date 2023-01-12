@@ -23,7 +23,8 @@ object ConfigurationStatus {
     __obj.asInstanceOf[ConfigurationStatus]
   }
   
-  extension [Self <: ConfigurationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationStatus] (val x: Self) extends AnyVal {
     
     inline def setError(value: ConfigurationErrorDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

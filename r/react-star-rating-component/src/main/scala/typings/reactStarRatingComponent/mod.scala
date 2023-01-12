@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[StarRatingComponentProps]
     }
     
-    extension [Self <: StarRatingComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StarRatingComponentProps] (val x: Self) extends AnyVal {
       
       inline def setEditing(value: Boolean): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
       

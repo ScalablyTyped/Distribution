@@ -70,7 +70,8 @@ object Cookies {
     __obj.asInstanceOf[Cookies]
   }
   
-  extension [Self <: Cookies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cookies] (val x: Self) extends AnyVal {
     
     inline def setGet(value: (CookiesGetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     

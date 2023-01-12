@@ -16,7 +16,8 @@ object ResizeNearestNeighborInputs {
     __obj.asInstanceOf[ResizeNearestNeighborInputs]
   }
   
-  extension [Self <: ResizeNearestNeighborInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeNearestNeighborInputs] (val x: Self) extends AnyVal {
     
     inline def setImages(value: scala.Any): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     

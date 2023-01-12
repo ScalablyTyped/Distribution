@@ -30,7 +30,8 @@ object libPlotsRadarChartMod extends Shortcut {
       __obj.asInstanceOf[AreaAPIOptions]
     }
     
-    extension [Self <: AreaAPIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreaAPIOptions] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object libPlotsRadarChartMod extends Shortcut {
       __obj.asInstanceOf[LineAPIOptions]
     }
     
-    extension [Self <: LineAPIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineAPIOptions] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object libPlotsRadarChartMod extends Shortcut {
       __obj.asInstanceOf[PointAPIOptions]
     }
     
-    extension [Self <: PointAPIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointAPIOptions] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object libPlotsRadarChartMod extends Shortcut {
       __obj.asInstanceOf[RadarOptions]
     }
     
-    extension [Self <: RadarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadarOptions] (val x: Self) extends AnyVal {
       
       inline def setAngleAxis(value: Any): Self = StObject.set(x, "angleAxis", value.asInstanceOf[js.Any])
       

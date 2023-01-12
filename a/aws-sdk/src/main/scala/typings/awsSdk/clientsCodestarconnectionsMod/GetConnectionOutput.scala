@@ -18,7 +18,8 @@ object GetConnectionOutput {
     __obj.asInstanceOf[GetConnectionOutput]
   }
   
-  extension [Self <: GetConnectionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConnectionOutput] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: Connection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object TrackObjectSimplified {
     __obj.asInstanceOf[TrackObjectSimplified]
   }
   
-  extension [Self <: TrackObjectSimplified](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackObjectSimplified] (val x: Self) extends AnyVal {
     
     inline def setArtists(value: js.Array[ArtistObjectSimplified]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     

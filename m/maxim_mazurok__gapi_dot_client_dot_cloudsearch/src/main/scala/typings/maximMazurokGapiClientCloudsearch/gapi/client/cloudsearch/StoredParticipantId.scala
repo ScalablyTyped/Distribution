@@ -15,7 +15,8 @@ object StoredParticipantId {
     __obj.asInstanceOf[StoredParticipantId]
   }
   
-  extension [Self <: StoredParticipantId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoredParticipantId] (val x: Self) extends AnyVal {
     
     inline def setGaiaId(value: String): Self = StObject.set(x, "gaiaId", value.asInstanceOf[js.Any])
     

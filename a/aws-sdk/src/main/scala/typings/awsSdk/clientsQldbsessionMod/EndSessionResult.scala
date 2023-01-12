@@ -18,7 +18,8 @@ object EndSessionResult {
     __obj.asInstanceOf[EndSessionResult]
   }
   
-  extension [Self <: EndSessionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndSessionResult] (val x: Self) extends AnyVal {
     
     inline def setTimingInformation(value: TimingInformation): Self = StObject.set(x, "TimingInformation", value.asInstanceOf[js.Any])
     

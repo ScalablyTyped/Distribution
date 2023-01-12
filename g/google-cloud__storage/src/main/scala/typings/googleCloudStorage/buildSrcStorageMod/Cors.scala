@@ -21,7 +21,8 @@ object Cors {
     __obj.asInstanceOf[Cors]
   }
   
-  extension [Self <: Cors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cors] (val x: Self) extends AnyVal {
     
     inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
     

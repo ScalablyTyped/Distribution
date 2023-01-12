@@ -22,7 +22,8 @@ object NewDimensions {
     __obj.asInstanceOf[NewDimensions]
   }
   
-  extension [Self <: NewDimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewDimensions] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: String | Double): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

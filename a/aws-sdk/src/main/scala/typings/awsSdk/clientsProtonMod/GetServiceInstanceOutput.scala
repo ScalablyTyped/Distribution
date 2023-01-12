@@ -18,7 +18,8 @@ object GetServiceInstanceOutput {
     __obj.asInstanceOf[GetServiceInstanceOutput]
   }
   
-  extension [Self <: GetServiceInstanceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceInstanceOutput] (val x: Self) extends AnyVal {
     
     inline def setServiceInstance(value: ServiceInstance): Self = StObject.set(x, "serviceInstance", value.asInstanceOf[js.Any])
   }

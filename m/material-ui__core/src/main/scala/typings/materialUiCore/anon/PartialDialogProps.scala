@@ -549,7 +549,8 @@ object PartialDialogProps {
     __obj.asInstanceOf[PartialDialogProps]
   }
   
-  extension [Self <: PartialDialogProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDialogProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

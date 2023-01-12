@@ -19,7 +19,8 @@ object Offset {
     __obj.asInstanceOf[Offset]
   }
   
-  extension [Self <: Offset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
     
     inline def setBand(value: Double | Boolean | SignalRef): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     

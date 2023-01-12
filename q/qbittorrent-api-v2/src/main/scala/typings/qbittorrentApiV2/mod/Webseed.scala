@@ -15,7 +15,8 @@ object Webseed {
     __obj.asInstanceOf[Webseed]
   }
   
-  extension [Self <: Webseed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Webseed] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

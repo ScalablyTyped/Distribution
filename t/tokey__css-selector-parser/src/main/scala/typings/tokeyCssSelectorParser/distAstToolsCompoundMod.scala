@@ -47,7 +47,8 @@ object distAstToolsCompoundMod {
       __obj.asInstanceOf[GroupCompoundOptions]
     }
     
-    extension [Self <: GroupCompoundOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupCompoundOptions] (val x: Self) extends AnyVal {
       
       inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       

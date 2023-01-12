@@ -18,7 +18,8 @@ object GetRequestPostDataResponse {
     __obj.asInstanceOf[GetRequestPostDataResponse]
   }
   
-  extension [Self <: GetRequestPostDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRequestPostDataResponse] (val x: Self) extends AnyVal {
     
     inline def setPostData(value: String): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
   }

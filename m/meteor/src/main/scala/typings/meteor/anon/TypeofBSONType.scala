@@ -78,7 +78,8 @@ object TypeofBSONType {
     __obj.asInstanceOf[TypeofBSONType]
   }
   
-  extension [Self <: TypeofBSONType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBSONType] (val x: Self) extends AnyVal {
     
     inline def setArray(value: `4`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

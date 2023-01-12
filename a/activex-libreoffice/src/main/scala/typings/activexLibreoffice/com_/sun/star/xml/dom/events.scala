@@ -55,7 +55,8 @@ object events {
       __obj.asInstanceOf[EventException]
     }
     
-    extension [Self <: EventException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventException] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -148,7 +149,8 @@ object events {
       __obj.asInstanceOf[XDocumentEvent]
     }
     
-    extension [Self <: XDocumentEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XDocumentEvent] (val x: Self) extends AnyVal {
       
       inline def setCreateEvent(value: String => XEvent): Self = StObject.set(x, "createEvent", js.Any.fromFunction1(value))
     }
@@ -220,7 +222,8 @@ object events {
       __obj.asInstanceOf[XEvent]
     }
     
-    extension [Self <: XEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XEvent] (val x: Self) extends AnyVal {
       
       inline def setBubbles(value: Boolean): Self = StObject.set(x, "Bubbles", value.asInstanceOf[js.Any])
       
@@ -276,7 +279,8 @@ object events {
       __obj.asInstanceOf[XEventListener]
     }
     
-    extension [Self <: XEventListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XEventListener] (val x: Self) extends AnyVal {
       
       inline def setHandleEvent(value: XEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
@@ -306,7 +310,8 @@ object events {
       __obj.asInstanceOf[XEventTarget]
     }
     
-    extension [Self <: XEventTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XEventTarget] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (String, XEventListener, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
       
@@ -432,7 +437,8 @@ object events {
       __obj.asInstanceOf[XMouseEvent]
     }
     
-    extension [Self <: XMouseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMouseEvent] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "AltKey", value.asInstanceOf[js.Any])
       
@@ -554,7 +560,8 @@ object events {
       __obj.asInstanceOf[XMutationEvent]
     }
     
-    extension [Self <: XMutationEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMutationEvent] (val x: Self) extends AnyVal {
       
       inline def setAttrChange(value: AttrChangeType): Self = StObject.set(x, "AttrChange", value.asInstanceOf[js.Any])
       
@@ -633,7 +640,8 @@ object events {
       __obj.asInstanceOf[XUIEvent]
     }
     
-    extension [Self <: XUIEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XUIEvent] (val x: Self) extends AnyVal {
       
       inline def setDetail(value: Double): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
       

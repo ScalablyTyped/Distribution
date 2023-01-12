@@ -17,7 +17,8 @@ object IPullTypeCollection {
     __obj.asInstanceOf[IPullTypeCollection]
   }
   
-  extension [Self <: IPullTypeCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPullTypeCollection] (val x: Self) extends AnyVal {
     
     inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     

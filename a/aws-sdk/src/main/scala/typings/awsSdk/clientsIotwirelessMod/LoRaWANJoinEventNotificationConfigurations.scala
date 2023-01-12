@@ -18,7 +18,8 @@ object LoRaWANJoinEventNotificationConfigurations {
     __obj.asInstanceOf[LoRaWANJoinEventNotificationConfigurations]
   }
   
-  extension [Self <: LoRaWANJoinEventNotificationConfigurations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANJoinEventNotificationConfigurations] (val x: Self) extends AnyVal {
     
     inline def setDevEuiEventTopic(value: EventNotificationTopicStatus): Self = StObject.set(x, "DevEuiEventTopic", value.asInstanceOf[js.Any])
     

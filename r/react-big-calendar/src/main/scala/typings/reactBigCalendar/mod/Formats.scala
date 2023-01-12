@@ -85,7 +85,8 @@ object Formats {
     __obj.asInstanceOf[Formats]
   }
   
-  extension [Self <: Formats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Formats] (val x: Self) extends AnyVal {
     
     inline def setAgendaDateFormat(value: DateFormat): Self = StObject.set(x, "agendaDateFormat", value.asInstanceOf[js.Any])
     

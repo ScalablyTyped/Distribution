@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[Inverse[Matchers]]
     }
     
-    extension [Self <: Inverse[?], Matchers](x: Self & Inverse[Matchers]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inverse[?], Matchers] (val x: Self & Inverse[Matchers]) extends AnyVal {
       
       inline def setNot(value: Matchers): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     }
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[PromiseMatchers[T]]
     }
     
-    extension [Self <: PromiseMatchers[?], T](x: Self & PromiseMatchers[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseMatchers[?], T] (val x: Self & PromiseMatchers[T]) extends AnyVal {
       
       inline def setRejects(value: (JestMatchers[js.Promise[Unit], T]) & (Inverse[JestMatchers[js.Promise[Unit], T]])): Self = StObject.set(x, "rejects", value.asInstanceOf[js.Any])
       

@@ -127,7 +127,8 @@ object libCjsPuppeteerCommonPdfoptionsMod {
       __obj.asInstanceOf[PDFMargin]
     }
     
-    extension [Self <: PDFMargin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFMargin] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String | Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -261,7 +262,8 @@ object libCjsPuppeteerCommonPdfoptionsMod {
       __obj.asInstanceOf[PDFOptions]
     }
     
-    extension [Self <: PDFOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFOptions] (val x: Self) extends AnyVal {
       
       inline def setDisplayHeaderFooter(value: Boolean): Self = StObject.set(x, "displayHeaderFooter", value.asInstanceOf[js.Any])
       
@@ -340,7 +342,8 @@ object libCjsPuppeteerCommonPdfoptionsMod {
       __obj.asInstanceOf[PaperFormatDimensions]
     }
     
-    extension [Self <: PaperFormatDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaperFormatDimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

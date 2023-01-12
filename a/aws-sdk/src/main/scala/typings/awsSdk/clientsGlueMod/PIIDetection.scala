@@ -58,7 +58,8 @@ object PIIDetection {
     __obj.asInstanceOf[PIIDetection]
   }
   
-  extension [Self <: PIIDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PIIDetection] (val x: Self) extends AnyVal {
     
     inline def setEntityTypesToDetect(value: EnclosedInStringProperties): Self = StObject.set(x, "EntityTypesToDetect", value.asInstanceOf[js.Any])
     

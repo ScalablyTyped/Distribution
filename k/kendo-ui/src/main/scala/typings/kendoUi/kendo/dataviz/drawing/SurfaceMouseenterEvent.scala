@@ -19,7 +19,8 @@ object SurfaceMouseenterEvent {
     __obj.asInstanceOf[SurfaceMouseenterEvent]
   }
   
-  extension [Self <: SurfaceMouseenterEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurfaceMouseenterEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: typings.kendoUi.kendo.drawing.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

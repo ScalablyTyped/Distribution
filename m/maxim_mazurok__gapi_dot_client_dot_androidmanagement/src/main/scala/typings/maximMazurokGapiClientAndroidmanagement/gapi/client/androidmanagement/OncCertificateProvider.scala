@@ -19,7 +19,8 @@ object OncCertificateProvider {
     __obj.asInstanceOf[OncCertificateProvider]
   }
   
-  extension [Self <: OncCertificateProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OncCertificateProvider] (val x: Self) extends AnyVal {
     
     inline def setCertificateReferences(value: js.Array[String]): Self = StObject.set(x, "certificateReferences", value.asInstanceOf[js.Any])
     

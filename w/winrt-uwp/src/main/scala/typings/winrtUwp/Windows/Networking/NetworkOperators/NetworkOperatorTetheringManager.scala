@@ -66,7 +66,8 @@ object NetworkOperatorTetheringManager {
     __obj.asInstanceOf[NetworkOperatorTetheringManager]
   }
   
-  extension [Self <: NetworkOperatorTetheringManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkOperatorTetheringManager] (val x: Self) extends AnyVal {
     
     inline def setClientCount(value: Double): Self = StObject.set(x, "clientCount", value.asInstanceOf[js.Any])
     

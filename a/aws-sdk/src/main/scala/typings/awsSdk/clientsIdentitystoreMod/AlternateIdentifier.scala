@@ -23,7 +23,8 @@ object AlternateIdentifier {
     __obj.asInstanceOf[AlternateIdentifier]
   }
   
-  extension [Self <: AlternateIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlternateIdentifier] (val x: Self) extends AnyVal {
     
     inline def setExternalId(value: ExternalId): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     

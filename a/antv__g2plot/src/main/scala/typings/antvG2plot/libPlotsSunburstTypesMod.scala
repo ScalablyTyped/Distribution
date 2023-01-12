@@ -141,7 +141,8 @@ object libPlotsSunburstTypesMod {
       __obj.asInstanceOf[SunburstOptions]
     }
     
-    extension [Self <: SunburstOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SunburstOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

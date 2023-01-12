@@ -16,7 +16,8 @@ object SettingsChange {
     __obj.asInstanceOf[SettingsChange]
   }
   
-  extension [Self <: SettingsChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingsChange] (val x: Self) extends AnyVal {
     
     inline def setRestrictionChanges(value: js.Array[RestrictionChange]): Self = StObject.set(x, "restrictionChanges", value.asInstanceOf[js.Any])
     

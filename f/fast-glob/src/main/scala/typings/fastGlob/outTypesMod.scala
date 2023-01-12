@@ -50,7 +50,8 @@ object outTypesMod {
       __obj.asInstanceOf[MicromatchOptions]
     }
     
-    extension [Self <: MicromatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MicromatchOptions] (val x: Self) extends AnyVal {
       
       inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object outTypesMod {
       __obj.asInstanceOf[ReaderOptions]
     }
     
-    extension [Self <: ReaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReaderOptions] (val x: Self) extends AnyVal {
       
       inline def setDeepFilter(value: typings.nodelibFsWalk.outTypesMod.Entry => Boolean): Self = StObject.set(x, "deepFilter", js.Any.fromFunction1(value))
       

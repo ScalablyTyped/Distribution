@@ -27,7 +27,8 @@ object NumberFormat {
     __obj.asInstanceOf[NumberFormat]
   }
   
-  extension [Self <: NumberFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFormat] (val x: Self) extends AnyVal {
     
     inline def setDigitSeparator(value: Boolean): Self = StObject.set(x, "digitSeparator", value.asInstanceOf[js.Any])
     

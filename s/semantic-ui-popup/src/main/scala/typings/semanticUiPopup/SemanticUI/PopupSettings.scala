@@ -376,7 +376,8 @@ object PopupSettings {
       __obj.asInstanceOf[Impl]
     }
     
-    extension [Self <: Impl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
       
       inline def setAddTouchEvents(value: Boolean): Self = StObject.set(x, "addTouchEvents", value.asInstanceOf[js.Any])
       

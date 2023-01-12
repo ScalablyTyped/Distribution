@@ -45,7 +45,8 @@ object SpringAnimationConfig {
     __obj.asInstanceOf[SpringAnimationConfig]
   }
   
-  extension [Self <: SpringAnimationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpringAnimationConfig] (val x: Self) extends AnyVal {
     
     inline def setBounciness(value: Double): Self = StObject.set(x, "bounciness", value.asInstanceOf[js.Any])
     

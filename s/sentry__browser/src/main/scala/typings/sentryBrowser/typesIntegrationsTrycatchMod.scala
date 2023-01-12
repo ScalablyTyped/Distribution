@@ -86,7 +86,8 @@ object typesIntegrationsTrycatchMod {
       __obj.asInstanceOf[TryCatchOptions]
     }
     
-    extension [Self <: TryCatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TryCatchOptions] (val x: Self) extends AnyVal {
       
       inline def setEventTarget(value: Boolean | js.Array[String]): Self = StObject.set(x, "eventTarget", value.asInstanceOf[js.Any])
       

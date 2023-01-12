@@ -24,7 +24,8 @@ object Subaccount {
     __obj.asInstanceOf[Subaccount]
   }
   
-  extension [Self <: Subaccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subaccount] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: SubaccountCreateRequest => js.Promise[AxiosResponse[SubaccountCreateResponse, Any]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

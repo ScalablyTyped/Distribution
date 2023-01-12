@@ -81,7 +81,8 @@ object libTexturesResourcesCubeResourceMod {
       __obj.asInstanceOf[ICubeResourceOptions]
     }
     
-    extension [Self <: ICubeResourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICubeResourceOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
       

@@ -188,7 +188,8 @@ object PickViewPropsRefAttributeAccessibilityRole {
     __obj.asInstanceOf[PickViewPropsRefAttributeAccessibilityRole]
   }
   
-  extension [Self <: PickViewPropsRefAttributeAccessibilityRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickViewPropsRefAttributeAccessibilityRole] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object MaxHeightProps {
     __obj.asInstanceOf[MaxHeightProps[ThemeType, TVal]]
   }
   
-  extension [Self <: MaxHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (MaxHeightProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (MaxHeightProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setMaxHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     

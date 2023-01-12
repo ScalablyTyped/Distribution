@@ -17,7 +17,8 @@ object DialogflowV1Button {
     __obj.asInstanceOf[DialogflowV1Button]
   }
   
-  extension [Self <: DialogflowV1Button](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1Button] (val x: Self) extends AnyVal {
     
     inline def setPostback(value: String): Self = StObject.set(x, "postback", value.asInstanceOf[js.Any])
     

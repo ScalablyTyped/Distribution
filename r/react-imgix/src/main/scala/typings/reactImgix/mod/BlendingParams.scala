@@ -37,7 +37,8 @@ object BlendingParams {
     __obj.asInstanceOf[BlendingParams]
   }
   
-  extension [Self <: BlendingParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlendingParams] (val x: Self) extends AnyVal {
     
     inline def setBlend(value: ImgixParamType): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
     

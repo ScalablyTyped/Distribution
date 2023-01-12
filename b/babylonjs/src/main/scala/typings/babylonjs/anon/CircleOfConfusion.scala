@@ -18,7 +18,8 @@ object CircleOfConfusion {
     __obj.asInstanceOf[CircleOfConfusion]
   }
   
-  extension [Self <: CircleOfConfusion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleOfConfusion] (val x: Self) extends AnyVal {
     
     inline def setBlurSteps(value: js.Array[PostProcess]): Self = StObject.set(x, "blurSteps", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object PartialChannelControlHelp {
     __obj.asInstanceOf[PartialChannelControlHelp]
   }
   
-  extension [Self <: PartialChannelControlHelp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialChannelControlHelp] (val x: Self) extends AnyVal {
     
     inline def setAddChannelzChild(value: /* child */ ChannelRef | SubchannelRef => Unit): Self = StObject.set(x, "addChannelzChild", js.Any.fromFunction1(value))
     

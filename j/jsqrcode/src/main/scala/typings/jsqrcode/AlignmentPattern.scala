@@ -44,7 +44,8 @@ object AlignmentPattern {
     __obj.asInstanceOf[AlignmentPattern]
   }
   
-  extension [Self <: AlignmentPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignmentPattern] (val x: Self) extends AnyVal {
     
     inline def setAboutEquals(value: (Double, Double, Double) => Boolean): Self = StObject.set(x, "aboutEquals", js.Any.fromFunction3(value))
     

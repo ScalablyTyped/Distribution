@@ -17,7 +17,8 @@ object IPageResource {
     __obj.asInstanceOf[IPageResource]
   }
   
-  extension [Self <: IPageResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPageResource] (val x: Self) extends AnyVal {
     
     inline def setLang(value: IPageLangItems): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

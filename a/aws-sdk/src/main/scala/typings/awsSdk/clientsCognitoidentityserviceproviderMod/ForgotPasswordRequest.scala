@@ -43,7 +43,8 @@ object ForgotPasswordRequest {
     __obj.asInstanceOf[ForgotPasswordRequest]
   }
   
-  extension [Self <: ForgotPasswordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForgotPasswordRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     

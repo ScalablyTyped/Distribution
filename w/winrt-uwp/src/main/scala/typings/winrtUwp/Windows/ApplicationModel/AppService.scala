@@ -132,7 +132,8 @@ object AppService {
       __obj.asInstanceOf[AppServiceClosedEventArgs]
     }
     
-    extension [Self <: AppServiceClosedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppServiceClosedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: AppServiceClosedStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -214,7 +215,8 @@ object AppService {
       __obj.asInstanceOf[AppServiceDeferral]
     }
     
-    extension [Self <: AppServiceDeferral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppServiceDeferral] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     }
@@ -243,7 +245,8 @@ object AppService {
       __obj.asInstanceOf[AppServiceRequest]
     }
     
-    extension [Self <: AppServiceRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppServiceRequest] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: ValueSet): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -270,7 +273,8 @@ object AppService {
       __obj.asInstanceOf[AppServiceRequestReceivedEventArgs]
     }
     
-    extension [Self <: AppServiceRequestReceivedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppServiceRequestReceivedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setGetDeferral(value: () => AppServiceDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
       
@@ -294,7 +298,8 @@ object AppService {
       __obj.asInstanceOf[AppServiceResponse]
     }
     
-    extension [Self <: AppServiceResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppServiceResponse] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: ValueSet): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -321,7 +326,8 @@ object AppService {
       __obj.asInstanceOf[AppServiceTriggerDetails]
     }
     
-    extension [Self <: AppServiceTriggerDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppServiceTriggerDetails] (val x: Self) extends AnyVal {
       
       inline def setAppServiceConnection(value: AppServiceConnection): Self = StObject.set(x, "appServiceConnection", value.asInstanceOf[js.Any])
       

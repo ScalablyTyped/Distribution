@@ -33,7 +33,8 @@ object IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse] (val x: Self) extends AnyVal {
     
     inline def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     

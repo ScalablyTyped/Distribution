@@ -45,7 +45,8 @@ object IBodyOptions {
     __obj.asInstanceOf[IBodyOptions]
   }
   
-  extension [Self <: IBodyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBodyOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowSleep(value: Boolean): Self = StObject.set(x, "allowSleep", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object IZoomIFrameProps {
     __obj.asInstanceOf[IZoomIFrameProps]
   }
   
-  extension [Self <: IZoomIFrameProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IZoomIFrameProps] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object AptArtifact {
     __obj.asInstanceOf[AptArtifact]
   }
   
-  extension [Self <: AptArtifact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AptArtifact] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

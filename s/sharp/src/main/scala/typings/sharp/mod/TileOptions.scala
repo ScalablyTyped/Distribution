@@ -46,7 +46,8 @@ object TileOptions {
     __obj.asInstanceOf[TileOptions]
   }
   
-  extension [Self <: TileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileOptions] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

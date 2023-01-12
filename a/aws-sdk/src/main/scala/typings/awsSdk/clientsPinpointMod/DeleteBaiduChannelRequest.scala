@@ -18,7 +18,8 @@ object DeleteBaiduChannelRequest {
     __obj.asInstanceOf[DeleteBaiduChannelRequest]
   }
   
-  extension [Self <: DeleteBaiduChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBaiduChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }

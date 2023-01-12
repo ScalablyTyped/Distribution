@@ -17,7 +17,8 @@ object SecondsValid {
     __obj.asInstanceOf[SecondsValid]
   }
   
-  extension [Self <: SecondsValid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecondsValid] (val x: Self) extends AnyVal {
     
     inline def setSecondsValid(value: Double): Self = StObject.set(x, "secondsValid", value.asInstanceOf[js.Any])
     

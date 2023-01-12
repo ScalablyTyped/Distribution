@@ -85,7 +85,8 @@ object KmlModel {
     __obj.asInstanceOf[KmlModel]
   }
   
-  extension [Self <: KmlModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlModel] (val x: Self) extends AnyVal {
     
     inline def setGetLink(value: () => KmlLink): Self = StObject.set(x, "getLink", js.Any.fromFunction0(value))
     

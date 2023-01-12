@@ -21,7 +21,8 @@ object FileManagerPreviewPane {
     __obj.asInstanceOf[FileManagerPreviewPane]
   }
   
-  extension [Self <: FileManagerPreviewPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerPreviewPane] (val x: Self) extends AnyVal {
     
     inline def setMetaFields(value: Any): Self = StObject.set(x, "metaFields", value.asInstanceOf[js.Any])
     

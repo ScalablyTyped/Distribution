@@ -25,7 +25,8 @@ object ReportRowMetricValue {
     __obj.asInstanceOf[ReportRowMetricValue]
   }
   
-  extension [Self <: ReportRowMetricValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportRowMetricValue] (val x: Self) extends AnyVal {
     
     inline def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     

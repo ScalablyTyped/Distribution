@@ -22,7 +22,8 @@ object CreateRoleRequest {
     __obj.asInstanceOf[CreateRoleRequest]
   }
   
-  extension [Self <: CreateRoleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRoleRequest] (val x: Self) extends AnyVal {
     
     inline def setRole(value: Role): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

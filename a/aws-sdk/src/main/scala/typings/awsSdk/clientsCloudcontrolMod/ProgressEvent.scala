@@ -63,7 +63,8 @@ object ProgressEvent {
     __obj.asInstanceOf[ProgressEvent]
   }
   
-  extension [Self <: ProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: HandlerErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

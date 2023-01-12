@@ -21,7 +21,8 @@ object EnumOperatorOptions {
     __obj.asInstanceOf[EnumOperatorOptions]
   }
   
-  extension [Self <: EnumOperatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumOperatorOptions] (val x: Self) extends AnyVal {
     
     inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     

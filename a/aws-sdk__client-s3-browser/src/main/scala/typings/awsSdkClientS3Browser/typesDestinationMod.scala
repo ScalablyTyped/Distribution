@@ -52,7 +52,8 @@ object typesDestinationMod {
       __obj.asInstanceOf[Destination]
     }
     
-    extension [Self <: Destination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
       
       inline def setAccessControlTranslation(value: AccessControlTranslation): Self = StObject.set(x, "AccessControlTranslation", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object typesDestinationMod {
       __obj.asInstanceOf[UnmarshalledDestination]
     }
     
-    extension [Self <: UnmarshalledDestination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledDestination] (val x: Self) extends AnyVal {
       
       inline def setAccessControlTranslation(value: UnmarshalledAccessControlTranslation): Self = StObject.set(x, "AccessControlTranslation", value.asInstanceOf[js.Any])
       

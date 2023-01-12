@@ -62,7 +62,8 @@ object AvailablePoints {
     __obj.asInstanceOf[AvailablePoints]
   }
   
-  extension [Self <: AvailablePoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailablePoints] (val x: Self) extends AnyVal {
     
     inline def setAvailablePoints(value: Double): Self = StObject.set(x, "availablePoints", value.asInstanceOf[js.Any])
     

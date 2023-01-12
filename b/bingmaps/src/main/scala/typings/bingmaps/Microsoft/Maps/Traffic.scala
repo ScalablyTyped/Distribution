@@ -34,7 +34,8 @@ object Traffic {
       __obj.asInstanceOf[ITrafficOptions]
     }
     
-    extension [Self <: ITrafficOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITrafficOptions] (val x: Self) extends AnyVal {
       
       inline def setFlowVisible(value: Boolean): Self = StObject.set(x, "flowVisible", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object Traffic {
       __obj.asInstanceOf[TrafficManager]
     }
     
-    extension [Self <: TrafficManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrafficManager] (val x: Self) extends AnyVal {
       
       inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       

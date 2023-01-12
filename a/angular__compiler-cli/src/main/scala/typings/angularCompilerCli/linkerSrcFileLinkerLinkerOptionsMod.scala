@@ -54,7 +54,8 @@ object linkerSrcFileLinkerLinkerOptionsMod {
       __obj.asInstanceOf[LinkerOptions]
     }
     
-    extension [Self <: LinkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkerOptions] (val x: Self) extends AnyVal {
       
       inline def setLinkerJitMode(value: Boolean): Self = StObject.set(x, "linkerJitMode", value.asInstanceOf[js.Any])
       

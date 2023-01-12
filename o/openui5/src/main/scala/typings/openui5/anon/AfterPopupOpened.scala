@@ -24,7 +24,8 @@ object AfterPopupOpened {
     __obj.asInstanceOf[AfterPopupOpened]
   }
   
-  extension [Self <: AfterPopupOpened](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterPopupOpened] (val x: Self) extends AnyVal {
     
     inline def setAfterPopupOpened(value: Boolean): Self = StObject.set(x, "afterPopupOpened", value.asInstanceOf[js.Any])
     

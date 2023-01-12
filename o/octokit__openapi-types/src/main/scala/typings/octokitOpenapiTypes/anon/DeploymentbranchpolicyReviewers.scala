@@ -20,7 +20,8 @@ object DeploymentbranchpolicyReviewers {
     __obj.asInstanceOf[DeploymentbranchpolicyReviewers]
   }
   
-  extension [Self <: DeploymentbranchpolicyReviewers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentbranchpolicyReviewers] (val x: Self) extends AnyVal {
     
     inline def setDeployment_branch_policy(value: Custombranchpolicies): Self = StObject.set(x, "deployment_branch_policy", value.asInstanceOf[js.Any])
     

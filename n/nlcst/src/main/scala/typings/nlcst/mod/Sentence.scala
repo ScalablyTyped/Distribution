@@ -23,7 +23,8 @@ object Sentence {
     __obj.asInstanceOf[Sentence]
   }
   
-  extension [Self <: Sentence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sentence] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[SentenceContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object CurrencyColumn {
     __obj.asInstanceOf[CurrencyColumn]
   }
   
-  extension [Self <: CurrencyColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrencyColumn] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: NullableOption[String]): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

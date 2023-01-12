@@ -80,7 +80,8 @@ object Clearable {
     __obj.asInstanceOf[Clearable]
   }
   
-  extension [Self <: Clearable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clearable] (val x: Self) extends AnyVal {
     
     inline def set$clearable(value: Boolean): Self = StObject.set(x, "$clearable", value.asInstanceOf[js.Any])
     

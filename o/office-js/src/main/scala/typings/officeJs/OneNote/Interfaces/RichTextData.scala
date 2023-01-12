@@ -47,7 +47,8 @@ object RichTextData {
     __obj.asInstanceOf[RichTextData]
   }
   
-  extension [Self <: RichTextData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichTextData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

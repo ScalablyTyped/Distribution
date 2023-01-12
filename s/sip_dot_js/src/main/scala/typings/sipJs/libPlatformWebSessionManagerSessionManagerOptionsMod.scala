@@ -45,7 +45,8 @@ object libPlatformWebSessionManagerSessionManagerOptionsMod {
       __obj.asInstanceOf[SessionManagerMedia]
     }
     
-    extension [Self <: SessionManagerMedia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionManagerMedia] (val x: Self) extends AnyVal {
       
       inline def setConstraints(value: SessionManagerMediaConstraints): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object libPlatformWebSessionManagerSessionManagerOptionsMod {
       __obj.asInstanceOf[SessionManagerMediaConstraints]
     }
     
-    extension [Self <: SessionManagerMediaConstraints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionManagerMediaConstraints] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object libPlatformWebSessionManagerSessionManagerOptionsMod {
       __obj.asInstanceOf[SessionManagerMediaLocal]
     }
     
-    extension [Self <: SessionManagerMediaLocal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionManagerMediaLocal] (val x: Self) extends AnyVal {
       
       inline def setVideo(value: HTMLVideoElement): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object libPlatformWebSessionManagerSessionManagerOptionsMod {
       __obj.asInstanceOf[SessionManagerMediaRemote]
     }
     
-    extension [Self <: SessionManagerMediaRemote](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionManagerMediaRemote] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: HTMLAudioElement): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -293,7 +297,8 @@ object libPlatformWebSessionManagerSessionManagerOptionsMod {
       __obj.asInstanceOf[SessionManagerOptions]
     }
     
-    extension [Self <: SessionManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setAor(value: String): Self = StObject.set(x, "aor", value.asInstanceOf[js.Any])
       

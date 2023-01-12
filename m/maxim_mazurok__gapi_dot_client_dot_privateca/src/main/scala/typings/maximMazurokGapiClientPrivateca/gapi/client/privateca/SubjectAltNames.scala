@@ -28,7 +28,8 @@ object SubjectAltNames {
     __obj.asInstanceOf[SubjectAltNames]
   }
   
-  extension [Self <: SubjectAltNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectAltNames] (val x: Self) extends AnyVal {
     
     inline def setCustomSans(value: js.Array[X509Extension]): Self = StObject.set(x, "customSans", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object SourceLike {
     __obj.asInstanceOf[SourceLike]
   }
   
-  extension [Self <: SourceLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceLike] (val x: Self) extends AnyVal {
     
     inline def setSource(value: () => String | Buffer): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
   }

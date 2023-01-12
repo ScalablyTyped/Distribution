@@ -1567,7 +1567,8 @@ object AddRepositoryForSecretForAuthenticatedUser {
     __obj.asInstanceOf[AddRepositoryForSecretForAuthenticatedUser]
   }
   
-  extension [Self <: AddRepositoryForSecretForAuthenticatedUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddRepositoryForSecretForAuthenticatedUser] (val x: Self) extends AnyVal {
     
     inline def setAddRepositoryForSecretForAuthenticatedUser(value: `191`): Self = StObject.set(x, "addRepositoryForSecretForAuthenticatedUser", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object esCalculateNodeHeightMod {
       __obj.asInstanceOf[NodeType]
     }
     
-    extension [Self <: NodeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeType] (val x: Self) extends AnyVal {
       
       inline def setBorderSize(value: Double): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
       

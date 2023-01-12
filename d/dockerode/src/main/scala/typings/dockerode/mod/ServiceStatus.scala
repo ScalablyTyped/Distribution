@@ -19,7 +19,8 @@ object ServiceStatus {
     __obj.asInstanceOf[ServiceStatus]
   }
   
-  extension [Self <: ServiceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceStatus] (val x: Self) extends AnyVal {
     
     inline def setCompletedTasks(value: Double): Self = StObject.set(x, "CompletedTasks", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object CatSnapshotsSnapshotsRecord {
     __obj.asInstanceOf[CatSnapshotsSnapshotsRecord]
   }
   
-  extension [Self <: CatSnapshotsSnapshotsRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatSnapshotsSnapshotsRecord] (val x: Self) extends AnyVal {
     
     inline def setDur(value: Duration): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
     

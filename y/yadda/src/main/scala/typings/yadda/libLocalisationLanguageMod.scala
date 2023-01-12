@@ -41,7 +41,8 @@ object libLocalisationLanguageMod {
       __obj.asInstanceOf[Vocabulary]
     }
     
-    extension [Self <: Vocabulary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vocabulary] (val x: Self) extends AnyVal {
       
       inline def set_steps(value: js.Array[String]): Self = StObject.set(x, "_steps", value.asInstanceOf[js.Any])
       

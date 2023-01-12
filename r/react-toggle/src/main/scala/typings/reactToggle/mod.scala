@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[ToggleIcons]
     }
     
-    extension [Self <: ToggleIcons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleIcons] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: ReactNode): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object mod {
       __obj.asInstanceOf[ToggleProps]
     }
     
-    extension [Self <: ToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleProps] (val x: Self) extends AnyVal {
       
       inline def setIcons(value: Boolean | ToggleIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       

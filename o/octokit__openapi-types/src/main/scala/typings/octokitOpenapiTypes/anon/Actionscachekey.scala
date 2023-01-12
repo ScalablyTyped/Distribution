@@ -649,7 +649,8 @@ object Actionscachekey {
     __obj.asInstanceOf[Actionscachekey]
   }
   
-  extension [Self <: Actionscachekey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Actionscachekey] (val x: Self) extends AnyVal {
     
     inline def `setAccount-id`(value: Double): Self = StObject.set(x, "account-id", value.asInstanceOf[js.Any])
     

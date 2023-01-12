@@ -23,7 +23,8 @@ object IMetadataCardSelectionListItem {
     __obj.asInstanceOf[IMetadataCardSelectionListItem]
   }
   
-  extension [Self <: IMetadataCardSelectionListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetadataCardSelectionListItem] (val x: Self) extends AnyVal {
     
     inline def setChildItems(value: Any): Self = StObject.set(x, "ChildItems", value.asInstanceOf[js.Any])
     

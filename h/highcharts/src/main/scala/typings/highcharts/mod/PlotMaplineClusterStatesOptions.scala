@@ -15,7 +15,8 @@ object PlotMaplineClusterStatesOptions {
     __obj.asInstanceOf[PlotMaplineClusterStatesOptions]
   }
   
-  extension [Self <: PlotMaplineClusterStatesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMaplineClusterStatesOptions] (val x: Self) extends AnyVal {
     
     inline def setHover(value: PlotMaplineClusterStatesHoverOptions): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     

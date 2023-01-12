@@ -17,7 +17,8 @@ object GridViewFocusedCellChangingEventArgs {
     __obj.asInstanceOf[GridViewFocusedCellChangingEventArgs]
   }
   
-  extension [Self <: GridViewFocusedCellChangingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridViewFocusedCellChangingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCellInfo(value: BootstrapGridViewCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
   }

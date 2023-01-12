@@ -40,7 +40,8 @@ object EntityListPageContext {
     __obj.asInstanceOf[EntityListPageContext]
   }
   
-  extension [Self <: EntityListPageContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityListPageContext] (val x: Self) extends AnyVal {
     
     inline def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object FallbackAbi {
     __obj.asInstanceOf[FallbackAbi]
   }
   
-  extension [Self <: FallbackAbi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FallbackAbi] (val x: Self) extends AnyVal {
     
     inline def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
     

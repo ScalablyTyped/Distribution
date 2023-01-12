@@ -16,7 +16,8 @@ object WebAppsListResponse {
     __obj.asInstanceOf[WebAppsListResponse]
   }
   
-  extension [Self <: WebAppsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAppsListResponse] (val x: Self) extends AnyVal {
     
     inline def setWebApp(value: js.Array[WebApp]): Self = StObject.set(x, "webApp", value.asInstanceOf[js.Any])
     

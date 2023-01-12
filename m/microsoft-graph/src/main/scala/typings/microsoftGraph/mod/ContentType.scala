@@ -88,7 +88,8 @@ object ContentType {
     __obj.asInstanceOf[ContentType]
   }
   
-  extension [Self <: ContentType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
     
     inline def setAssociatedHubsUrls(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "associatedHubsUrls", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object GetHostOutput {
     __obj.asInstanceOf[GetHostOutput]
   }
   
-  extension [Self <: GetHostOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHostOutput] (val x: Self) extends AnyVal {
     
     inline def setName(value: HostName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

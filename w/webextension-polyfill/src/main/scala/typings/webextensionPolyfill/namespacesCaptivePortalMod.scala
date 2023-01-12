@@ -36,7 +36,8 @@ object namespacesCaptivePortalMod {
         __obj.asInstanceOf[OnStateChangedDetailsType]
       }
       
-      extension [Self <: OnStateChangedDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnStateChangedDetailsType] (val x: Self) extends AnyVal {
         
         inline def setState(value: OnStateChangedDetailsTypeStateEnum): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       }
@@ -109,7 +110,8 @@ object namespacesCaptivePortalMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setCanonicalURL(value: Setting): Self = StObject.set(x, "canonicalURL", value.asInstanceOf[js.Any])
         

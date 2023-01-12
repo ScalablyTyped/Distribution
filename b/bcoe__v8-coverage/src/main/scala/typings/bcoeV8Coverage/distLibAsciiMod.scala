@@ -37,7 +37,8 @@ object distLibAsciiMod {
       __obj.asInstanceOf[ReadonlyRangeTree]
     }
     
-    extension [Self <: ReadonlyRangeTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyRangeTree] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReadonlyRangeTree]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -44,7 +44,8 @@ object libVictoryUtilHooksUseAnimationStateMod {
       __obj.asInstanceOf[AnimationState]
     }
     
-    extension [Self <: AnimationState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationState] (val x: Self) extends AnyVal {
       
       inline def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object BDelayInit {
     __obj.asInstanceOf[BDelayInit]
   }
   
-  extension [Self <: BDelayInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BDelayInit] (val x: Self) extends AnyVal {
     
     inline def setBDelayInit(value: Boolean): Self = StObject.set(x, "bDelayInit", value.asInstanceOf[js.Any])
     

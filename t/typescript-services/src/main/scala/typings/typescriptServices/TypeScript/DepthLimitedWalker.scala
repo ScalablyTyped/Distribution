@@ -118,7 +118,8 @@ object DepthLimitedWalker {
     __obj.asInstanceOf[DepthLimitedWalker]
   }
   
-  extension [Self <: DepthLimitedWalker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthLimitedWalker] (val x: Self) extends AnyVal {
     
     inline def set_depth(value: Any): Self = StObject.set(x, "_depth", value.asInstanceOf[js.Any])
     

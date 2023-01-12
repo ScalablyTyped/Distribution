@@ -75,7 +75,8 @@ object PartialPickAvatarPropsPar {
     __obj.asInstanceOf[PartialPickAvatarPropsPar]
   }
   
-  extension [Self <: PartialPickAvatarPropsPar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPickAvatarPropsPar] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

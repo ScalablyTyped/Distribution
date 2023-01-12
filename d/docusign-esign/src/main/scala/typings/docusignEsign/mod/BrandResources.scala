@@ -63,7 +63,8 @@ object BrandResources {
     __obj.asInstanceOf[BrandResources]
   }
   
-  extension [Self <: BrandResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrandResources] (val x: Self) extends AnyVal {
     
     inline def setCreatedByUserInfo(value: UserInfo): Self = StObject.set(x, "createdByUserInfo", value.asInstanceOf[js.Any])
     

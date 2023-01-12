@@ -22,7 +22,8 @@ object CADESCOM_DISPLAY_DATA {
     __obj.asInstanceOf[CADESCOM_DISPLAY_DATA]
   }
   
-  extension [Self <: CADESCOM_DISPLAY_DATA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CADESCOM_DISPLAY_DATA] (val x: Self) extends AnyVal {
     
     inline def setCADESCOM_DISPLAY_DATA_ATTRIBUTE(value: `2`): Self = StObject.set(x, "CADESCOM_DISPLAY_DATA_ATTRIBUTE", value.asInstanceOf[js.Any])
     

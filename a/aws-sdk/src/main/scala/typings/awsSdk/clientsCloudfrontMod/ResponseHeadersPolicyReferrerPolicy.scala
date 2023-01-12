@@ -23,7 +23,8 @@ object ResponseHeadersPolicyReferrerPolicy {
     __obj.asInstanceOf[ResponseHeadersPolicyReferrerPolicy]
   }
   
-  extension [Self <: ResponseHeadersPolicyReferrerPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeadersPolicyReferrerPolicy] (val x: Self) extends AnyVal {
     
     inline def setOverride(value: Boolean): Self = StObject.set(x, "Override", value.asInstanceOf[js.Any])
     

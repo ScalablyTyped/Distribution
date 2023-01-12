@@ -50,7 +50,8 @@ object examplesJsmCsmCsmfrustumMod {
       __obj.asInstanceOf[CSMFrustum]
     }
     
-    extension [Self <: CSMFrustum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSMFrustum] (val x: Self) extends AnyVal {
       
       inline def setSetFromProjectionMatrix(value: (Matrix4, Double) => CSMFrustumVerticies): Self = StObject.set(x, "setFromProjectionMatrix", js.Any.fromFunction2(value))
       
@@ -75,7 +76,8 @@ object examplesJsmCsmCsmfrustumMod {
       __obj.asInstanceOf[CSMFrustumParameters]
     }
     
-    extension [Self <: CSMFrustumParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSMFrustumParameters] (val x: Self) extends AnyVal {
       
       inline def setMaxFar(value: Double): Self = StObject.set(x, "maxFar", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object examplesJsmCsmCsmfrustumMod {
       __obj.asInstanceOf[CSMFrustumVerticies]
     }
     
-    extension [Self <: CSMFrustumVerticies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSMFrustumVerticies] (val x: Self) extends AnyVal {
       
       inline def setFar(value: js.Array[Vector3]): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
       

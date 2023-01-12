@@ -98,7 +98,8 @@ object ImageParametersProperties {
     __obj.asInstanceOf[ImageParametersProperties]
   }
   
-  extension [Self <: ImageParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     

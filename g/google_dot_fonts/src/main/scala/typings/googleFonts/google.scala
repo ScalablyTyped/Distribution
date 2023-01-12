@@ -42,7 +42,8 @@ object google {
         __obj.asInstanceOf[WebfontFamily]
       }
       
-      extension [Self <: WebfontFamily](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebfontFamily] (val x: Self) extends AnyVal {
         
         inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
@@ -81,7 +82,8 @@ object google {
         __obj.asInstanceOf[WebfontList]
       }
       
-      extension [Self <: WebfontList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebfontList] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[WebfontFamily]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         

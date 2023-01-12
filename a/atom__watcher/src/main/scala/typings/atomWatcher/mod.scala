@@ -93,7 +93,8 @@ object mod {
       __obj.asInstanceOf[BaseEvent]
     }
     
-    extension [Self <: BaseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseEvent] (val x: Self) extends AnyVal {
       
       inline def setAction(value: EntryAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object mod {
       __obj.asInstanceOf[OtherEvent]
     }
     
-    extension [Self <: OtherEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OtherEvent] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Exclude[EntryAction, renamed]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
@@ -202,7 +204,8 @@ object mod {
       __obj.asInstanceOf[RenamedEvent]
     }
     
-    extension [Self <: RenamedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenamedEvent] (val x: Self) extends AnyVal {
       
       inline def setAction(value: renamed): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -226,7 +229,8 @@ object mod {
       __obj.asInstanceOf[WatcherOptions]
     }
     
-    extension [Self <: WatcherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatcherOptions] (val x: Self) extends AnyVal {
       
       inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     }
@@ -294,7 +298,8 @@ object mod {
       __obj.asInstanceOf[WatcherSettings]
     }
     
-    extension [Self <: WatcherSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatcherSettings] (val x: Self) extends AnyVal {
       
       inline def setJsLog(value: LogTarget): Self = StObject.set(x, "jsLog", value.asInstanceOf[js.Any])
       

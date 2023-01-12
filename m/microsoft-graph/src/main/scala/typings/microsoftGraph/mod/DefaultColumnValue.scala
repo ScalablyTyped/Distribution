@@ -19,7 +19,8 @@ object DefaultColumnValue {
     __obj.asInstanceOf[DefaultColumnValue]
   }
   
-  extension [Self <: DefaultColumnValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultColumnValue] (val x: Self) extends AnyVal {
     
     inline def setFormula(value: NullableOption[String]): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     

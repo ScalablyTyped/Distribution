@@ -48,7 +48,8 @@ object AdaptedEvent {
     __obj.asInstanceOf[AdaptedEvent]
   }
   
-  extension [Self <: AdaptedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdaptedEvent] (val x: Self) extends AnyVal {
     
     inline def setAllTouches(value: TouchList): Self = StObject.set(x, "allTouches", value.asInstanceOf[js.Any])
     

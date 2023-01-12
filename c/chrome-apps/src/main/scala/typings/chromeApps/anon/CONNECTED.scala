@@ -22,7 +22,8 @@ object CONNECTED {
     __obj.asInstanceOf[CONNECTED]
   }
   
-  extension [Self <: CONNECTED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CONNECTED] (val x: Self) extends AnyVal {
     
     inline def setCONNECTED(value: Connected_): Self = StObject.set(x, "CONNECTED", value.asInstanceOf[js.Any])
     

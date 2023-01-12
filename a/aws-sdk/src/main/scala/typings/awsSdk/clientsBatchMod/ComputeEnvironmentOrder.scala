@@ -23,7 +23,8 @@ object ComputeEnvironmentOrder {
     __obj.asInstanceOf[ComputeEnvironmentOrder]
   }
   
-  extension [Self <: ComputeEnvironmentOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeEnvironmentOrder] (val x: Self) extends AnyVal {
     
     inline def setComputeEnvironment(value: String): Self = StObject.set(x, "computeEnvironment", value.asInstanceOf[js.Any])
     

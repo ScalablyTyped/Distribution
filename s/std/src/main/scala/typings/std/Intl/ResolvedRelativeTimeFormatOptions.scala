@@ -37,7 +37,8 @@ object ResolvedRelativeTimeFormatOptions {
     __obj.asInstanceOf[ResolvedRelativeTimeFormatOptions]
   }
   
-  extension [Self <: ResolvedRelativeTimeFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedRelativeTimeFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: UnicodeBCP47LocaleIdentifier): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

@@ -108,7 +108,8 @@ object `lib@TestsTestUtilsMod` {
       __obj.asInstanceOf[ExpectedProp]
     }
     
-    extension [Self <: ExpectedProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpectedProp] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: String | Double | Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

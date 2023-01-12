@@ -49,7 +49,8 @@ object LiasettingsCustomBatchRequestEntry {
     __obj.asInstanceOf[LiasettingsCustomBatchRequestEntry]
   }
   
-  extension [Self <: LiasettingsCustomBatchRequestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiasettingsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

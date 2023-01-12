@@ -22,7 +22,8 @@ object PartialInterceptingListen {
     __obj.asInstanceOf[PartialInterceptingListen]
   }
   
-  extension [Self <: PartialInterceptingListen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialInterceptingListen] (val x: Self) extends AnyVal {
     
     inline def setOnReceiveMessage(value: /* message */ scala.Any => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction1(value))
     

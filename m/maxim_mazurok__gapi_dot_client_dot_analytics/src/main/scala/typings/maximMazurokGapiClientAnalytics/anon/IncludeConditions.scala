@@ -16,7 +16,8 @@ object IncludeConditions {
     __obj.asInstanceOf[IncludeConditions]
   }
   
-  extension [Self <: IncludeConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeConditions] (val x: Self) extends AnyVal {
     
     inline def setIncludeConditions(value: typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.IncludeConditions): Self = StObject.set(x, "includeConditions", value.asInstanceOf[js.Any])
     

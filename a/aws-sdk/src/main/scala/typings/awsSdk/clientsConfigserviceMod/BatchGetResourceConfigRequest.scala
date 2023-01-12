@@ -18,7 +18,8 @@ object BatchGetResourceConfigRequest {
     __obj.asInstanceOf[BatchGetResourceConfigRequest]
   }
   
-  extension [Self <: BatchGetResourceConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetResourceConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceKeys(value: ResourceKeys): Self = StObject.set(x, "resourceKeys", value.asInstanceOf[js.Any])
     

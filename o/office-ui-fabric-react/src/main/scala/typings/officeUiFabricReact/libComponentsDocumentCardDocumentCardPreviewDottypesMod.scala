@@ -100,7 +100,8 @@ object libComponentsDocumentCardDocumentCardPreviewDottypesMod {
       __obj.asInstanceOf[IDocumentCardPreviewImage]
     }
     
-    extension [Self <: IDocumentCardPreviewImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardPreviewImage] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object libComponentsDocumentCardDocumentCardPreviewDottypesMod {
       __obj.asInstanceOf[IDocumentCardPreviewProps]
     }
     
-    extension [Self <: IDocumentCardPreviewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardPreviewProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -259,7 +261,8 @@ object libComponentsDocumentCardDocumentCardPreviewDottypesMod {
       __obj.asInstanceOf[IDocumentCardPreviewStyleProps]
     }
     
-    extension [Self <: IDocumentCardPreviewStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardPreviewStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -296,7 +299,8 @@ object libComponentsDocumentCardDocumentCardPreviewDottypesMod {
       __obj.asInstanceOf[IDocumentCardPreviewStyles]
     }
     
-    extension [Self <: IDocumentCardPreviewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardPreviewStyles] (val x: Self) extends AnyVal {
       
       inline def setFileList(value: IStyle): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
       

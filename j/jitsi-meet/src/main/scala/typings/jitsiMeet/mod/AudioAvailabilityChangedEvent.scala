@@ -15,7 +15,8 @@ object AudioAvailabilityChangedEvent {
     __obj.asInstanceOf[AudioAvailabilityChangedEvent]
   }
   
-  extension [Self <: AudioAvailabilityChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioAvailabilityChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
   }

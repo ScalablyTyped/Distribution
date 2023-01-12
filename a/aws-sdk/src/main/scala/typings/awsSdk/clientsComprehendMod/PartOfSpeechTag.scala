@@ -23,7 +23,8 @@ object PartOfSpeechTag {
     __obj.asInstanceOf[PartOfSpeechTag]
   }
   
-  extension [Self <: PartOfSpeechTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartOfSpeechTag] (val x: Self) extends AnyVal {
     
     inline def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     

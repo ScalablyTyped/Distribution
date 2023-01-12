@@ -18,7 +18,8 @@ object DeleteServerRequest {
     __obj.asInstanceOf[DeleteServerRequest]
   }
   
-  extension [Self <: DeleteServerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteServerRequest] (val x: Self) extends AnyVal {
     
     inline def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
   }

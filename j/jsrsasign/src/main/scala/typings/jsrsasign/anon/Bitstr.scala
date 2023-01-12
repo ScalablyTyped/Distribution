@@ -18,7 +18,8 @@ object Bitstr {
     __obj.asInstanceOf[Bitstr]
   }
   
-  extension [Self <: Bitstr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bitstr] (val x: Self) extends AnyVal {
     
     inline def setBitstr(value: Obj): Self = StObject.set(x, "bitstr", value.asInstanceOf[js.Any])
   }

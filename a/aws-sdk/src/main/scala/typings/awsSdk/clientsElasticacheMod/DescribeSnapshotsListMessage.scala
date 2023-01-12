@@ -23,7 +23,8 @@ object DescribeSnapshotsListMessage {
     __obj.asInstanceOf[DescribeSnapshotsListMessage]
   }
   
-  extension [Self <: DescribeSnapshotsListMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSnapshotsListMessage] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

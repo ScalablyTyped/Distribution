@@ -28,7 +28,8 @@ object EgressEndpoint {
     __obj.asInstanceOf[EgressEndpoint]
   }
   
-  extension [Self <: EgressEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EgressEndpoint] (val x: Self) extends AnyVal {
     
     inline def setPackagingConfigurationId(value: string): Self = StObject.set(x, "PackagingConfigurationId", value.asInstanceOf[js.Any])
     

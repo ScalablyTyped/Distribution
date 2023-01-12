@@ -28,7 +28,8 @@ object BatchGetObjectAttributes {
     __obj.asInstanceOf[BatchGetObjectAttributes]
   }
   
-  extension [Self <: BatchGetObjectAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetObjectAttributes] (val x: Self) extends AnyVal {
     
     inline def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     

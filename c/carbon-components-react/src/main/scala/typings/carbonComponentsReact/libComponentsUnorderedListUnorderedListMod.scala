@@ -29,7 +29,8 @@ object libComponentsUnorderedListUnorderedListMod extends Shortcut {
       __obj.asInstanceOf[UnorderedListProps]
     }
     
-    extension [Self <: UnorderedListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnorderedListProps] (val x: Self) extends AnyVal {
       
       inline def setIsExpressive(value: Boolean): Self = StObject.set(x, "isExpressive", value.asInstanceOf[js.Any])
       

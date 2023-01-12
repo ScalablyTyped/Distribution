@@ -19,7 +19,8 @@ object GetWindowBoundsResponse {
     __obj.asInstanceOf[GetWindowBoundsResponse]
   }
   
-  extension [Self <: GetWindowBoundsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWindowBoundsResponse] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
   }

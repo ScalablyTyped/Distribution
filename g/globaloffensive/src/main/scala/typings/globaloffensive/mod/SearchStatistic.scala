@@ -19,7 +19,8 @@ object SearchStatistic {
     __obj.asInstanceOf[SearchStatistic]
   }
   
-  extension [Self <: SearchStatistic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchStatistic] (val x: Self) extends AnyVal {
     
     inline def setGame_type(value: Double): Self = StObject.set(x, "game_type", value.asInstanceOf[js.Any])
     

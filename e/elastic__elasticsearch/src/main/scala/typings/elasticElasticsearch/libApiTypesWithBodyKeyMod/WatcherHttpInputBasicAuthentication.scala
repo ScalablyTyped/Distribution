@@ -17,7 +17,8 @@ object WatcherHttpInputBasicAuthentication {
     __obj.asInstanceOf[WatcherHttpInputBasicAuthentication]
   }
   
-  extension [Self <: WatcherHttpInputBasicAuthentication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherHttpInputBasicAuthentication] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

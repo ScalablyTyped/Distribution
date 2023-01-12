@@ -22,7 +22,8 @@ object InputValidationItem {
     __obj.asInstanceOf[InputValidationItem]
   }
   
-  extension [Self <: InputValidationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputValidationItem] (val x: Self) extends AnyVal {
     
     inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     

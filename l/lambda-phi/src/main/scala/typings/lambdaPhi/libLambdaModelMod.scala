@@ -318,7 +318,8 @@ object libLambdaModelMod {
       __obj.asInstanceOf[LambdaModel]
     }
     
-    extension [Self <: LambdaModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LambdaModel] (val x: Self) extends AnyVal {
       
       inline def setAnyMethod(value: Any): Self = StObject.set(x, "anyMethod", value.asInstanceOf[js.Any])
       

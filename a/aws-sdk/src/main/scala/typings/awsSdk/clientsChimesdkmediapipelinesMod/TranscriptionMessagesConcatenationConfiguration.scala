@@ -18,7 +18,8 @@ object TranscriptionMessagesConcatenationConfiguration {
     __obj.asInstanceOf[TranscriptionMessagesConcatenationConfiguration]
   }
   
-  extension [Self <: TranscriptionMessagesConcatenationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranscriptionMessagesConcatenationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setState(value: ArtifactsConcatenationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }

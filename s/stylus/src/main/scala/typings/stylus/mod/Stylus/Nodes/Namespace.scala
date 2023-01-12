@@ -37,7 +37,8 @@ object Namespace {
     __obj.asInstanceOf[Namespace]
   }
   
-  extension [Self <: Namespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: java.lang.String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

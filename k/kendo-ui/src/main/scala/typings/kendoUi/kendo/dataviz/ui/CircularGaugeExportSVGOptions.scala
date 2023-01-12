@@ -15,7 +15,8 @@ object CircularGaugeExportSVGOptions {
     __obj.asInstanceOf[CircularGaugeExportSVGOptions]
   }
   
-  extension [Self <: CircularGaugeExportSVGOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircularGaugeExportSVGOptions] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

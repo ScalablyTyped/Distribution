@@ -19,7 +19,8 @@ object `37` {
     __obj.asInstanceOf[`37`]
   }
   
-  extension [Self <: `37`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `37`] (val x: Self) extends AnyVal {
     
     inline def setFontSize(value: `3Dot75rem`): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     

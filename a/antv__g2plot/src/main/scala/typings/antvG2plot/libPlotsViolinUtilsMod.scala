@@ -36,7 +36,8 @@ object libPlotsViolinUtilsMod {
       __obj.asInstanceOf[PdfOptions]
     }
     
-    extension [Self <: PdfOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfOptions] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object libPlotsViolinUtilsMod {
       __obj.asInstanceOf[ViolinData]
     }
     
-    extension [Self <: ViolinData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViolinData] (val x: Self) extends AnyVal {
       
       inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
       

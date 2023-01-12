@@ -24,7 +24,8 @@ object ExportJpgStringOptions {
     __obj.asInstanceOf[ExportJpgStringOptions]
   }
   
-  extension [Self <: ExportJpgStringOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportJpgStringOptions] (val x: Self) extends AnyVal {
     
     inline def setOutput(value: base64uri | base64): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

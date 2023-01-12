@@ -18,7 +18,8 @@ object InvalidateProjectCacheInput {
     __obj.asInstanceOf[InvalidateProjectCacheInput]
   }
   
-  extension [Self <: InvalidateProjectCacheInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidateProjectCacheInput] (val x: Self) extends AnyVal {
     
     inline def setProjectName(value: NonEmptyString): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }

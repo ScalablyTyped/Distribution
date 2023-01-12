@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Dictname]
     }
     
-    extension [Self <: Dictname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictname] (val x: Self) extends AnyVal {
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     }

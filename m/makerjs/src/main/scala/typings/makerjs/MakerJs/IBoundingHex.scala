@@ -23,7 +23,8 @@ object IBoundingHex {
     __obj.asInstanceOf[IBoundingHex]
   }
   
-  extension [Self <: IBoundingHex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBoundingHex] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
   }

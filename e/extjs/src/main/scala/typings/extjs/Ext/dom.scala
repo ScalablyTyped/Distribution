@@ -603,7 +603,8 @@ object dom {
       __obj.asInstanceOf[IAbstractElement]
     }
     
-    extension [Self <: IAbstractElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstractElement] (val x: Self) extends AnyVal {
       
       inline def setASCLASS(value: Double): Self = StObject.set(x, "ASCLASS", value.asInstanceOf[js.Any])
       
@@ -1041,7 +1042,8 @@ object dom {
       __obj.asInstanceOf[IAbstractHelper]
     }
     
-    extension [Self <: IAbstractHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstractHelper] (val x: Self) extends AnyVal {
       
       inline def setAppend(
         value: (/* el */ js.UndefOr[Any], /* o */ js.UndefOr[Any], /* returnElement */ js.UndefOr[Boolean]) => Any
@@ -1131,7 +1133,8 @@ object dom {
       __obj.asInstanceOf[IAbstractQuery]
     }
     
-    extension [Self <: IAbstractQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstractQuery] (val x: Self) extends AnyVal {
       
       inline def setIs(value: (/* el */ js.UndefOr[Any], /* selector */ js.UndefOr[java.lang.String]) => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction2(value))
       
@@ -1274,7 +1277,8 @@ object dom {
       __obj.asInstanceOf[typings.extjs.Ext.dom.ICompositeElementLite]
     }
     
-    extension [Self <: typings.extjs.Ext.dom.ICompositeElementLite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.dom.ICompositeElementLite] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: /* els */ js.UndefOr[Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -2252,7 +2256,8 @@ object dom {
       __obj.asInstanceOf[typings.extjs.Ext.dom.IElement]
     }
     
-    extension [Self <: typings.extjs.Ext.dom.IElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.dom.IElement] (val x: Self) extends AnyVal {
       
       inline def setAddClsOnClick(
         value: (/* className */ js.UndefOr[java.lang.String], /* testFn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => typings.extjs.Ext.dom.IElement
@@ -2784,7 +2789,8 @@ object dom {
       __obj.asInstanceOf[IHelper]
     }
     
-    extension [Self <: IHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHelper] (val x: Self) extends AnyVal {
       
       inline def setCreateDom(value: /* o */ js.UndefOr[Any] => HTMLElement): Self = StObject.set(x, "createDom", js.Any.fromFunction1(value))
       
@@ -2987,7 +2993,8 @@ object dom {
       __obj.asInstanceOf[typings.extjs.Ext.dom.ILayer]
     }
     
-    extension [Self <: typings.extjs.Ext.dom.ILayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.dom.ILayer] (val x: Self) extends AnyVal {
       
       inline def setCls(value: java.lang.String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
       
@@ -3097,7 +3104,8 @@ object dom {
         __obj.asInstanceOf[IFly]
       }
       
-      extension [Self <: IFly](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFly] (val x: Self) extends AnyVal {
         
         inline def setIsFly(value: Boolean): Self = StObject.set(x, "isFly", value.asInstanceOf[js.Any])
         
@@ -3122,7 +3130,8 @@ object dom {
         __obj.asInstanceOf[IFly]
       }
       
-      extension [Self <: IFly](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFly] (val x: Self) extends AnyVal {
         
         inline def setIsFly(value: Boolean): Self = StObject.set(x, "isFly", value.asInstanceOf[js.Any])
         

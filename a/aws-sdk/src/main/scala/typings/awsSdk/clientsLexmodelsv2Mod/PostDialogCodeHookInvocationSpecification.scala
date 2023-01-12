@@ -49,7 +49,8 @@ object PostDialogCodeHookInvocationSpecification {
     __obj.asInstanceOf[PostDialogCodeHookInvocationSpecification]
   }
   
-  extension [Self <: PostDialogCodeHookInvocationSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostDialogCodeHookInvocationSpecification] (val x: Self) extends AnyVal {
     
     inline def setFailureConditional(value: ConditionalSpecification): Self = StObject.set(x, "failureConditional", value.asInstanceOf[js.Any])
     

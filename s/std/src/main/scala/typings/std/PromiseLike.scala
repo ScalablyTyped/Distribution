@@ -26,7 +26,8 @@ trait PromiseLike[T] extends StObject {
 }
 object PromiseLike {
   
-  extension [T](promise: PromiseLike[T]) {
+  @scala.inline
+  implicit open class PromiseLikeOps[T] (val promise: PromiseLike[T]) extends AnyVal {
     
     def toFuture: Future[T] = toPromise.toFuture
     

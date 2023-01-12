@@ -20,7 +20,8 @@ object IBImageView {
     __obj.asInstanceOf[IBImageView]
   }
   
-  extension [Self <: IBImageView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBImageView] (val x: Self) extends AnyVal {
     
     inline def set$(value: ClipsSubviews): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     

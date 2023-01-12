@@ -36,7 +36,8 @@ object SecuredBy {
     __obj.asInstanceOf[SecuredBy]
   }
   
-  extension [Self <: SecuredBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuredBy] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: NameString): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

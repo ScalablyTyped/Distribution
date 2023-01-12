@@ -36,7 +36,8 @@ object libPlatformWebSimpleUserSimpleUserOptionsMod {
       __obj.asInstanceOf[SimpleUserMedia]
     }
     
-    extension [Self <: SimpleUserMedia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleUserMedia] (val x: Self) extends AnyVal {
       
       inline def setConstraints(value: SimpleUserMediaConstraints): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object libPlatformWebSimpleUserSimpleUserOptionsMod {
       __obj.asInstanceOf[SimpleUserMediaConstraints]
     }
     
-    extension [Self <: SimpleUserMediaConstraints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleUserMediaConstraints] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object libPlatformWebSimpleUserSimpleUserOptionsMod {
       __obj.asInstanceOf[SimpleUserMediaLocal]
     }
     
-    extension [Self <: SimpleUserMediaLocal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleUserMediaLocal] (val x: Self) extends AnyVal {
       
       inline def setVideo(value: HTMLVideoElement): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object libPlatformWebSimpleUserSimpleUserOptionsMod {
       __obj.asInstanceOf[SimpleUserMediaRemote]
     }
     
-    extension [Self <: SimpleUserMediaRemote](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleUserMediaRemote] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: HTMLAudioElement): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -183,7 +187,8 @@ object libPlatformWebSimpleUserSimpleUserOptionsMod {
       __obj.asInstanceOf[SimpleUserOptions]
     }
     
-    extension [Self <: SimpleUserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleUserOptions] (val x: Self) extends AnyVal {
       
       inline def setAor(value: String): Self = StObject.set(x, "aor", value.asInstanceOf[js.Any])
       

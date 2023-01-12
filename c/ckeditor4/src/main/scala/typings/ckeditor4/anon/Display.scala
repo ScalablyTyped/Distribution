@@ -17,7 +17,8 @@ object Display {
     __obj.asInstanceOf[Display]
   }
   
-  extension [Self <: Display](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
     
     inline def setAria(value: String): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     

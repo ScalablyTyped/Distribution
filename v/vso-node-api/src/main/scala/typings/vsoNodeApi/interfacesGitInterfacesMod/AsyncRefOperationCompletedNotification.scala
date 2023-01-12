@@ -17,7 +17,8 @@ object AsyncRefOperationCompletedNotification {
     __obj.asInstanceOf[AsyncRefOperationCompletedNotification]
   }
   
-  extension [Self <: AsyncRefOperationCompletedNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncRefOperationCompletedNotification] (val x: Self) extends AnyVal {
     
     inline def setNewRefName(value: String): Self = StObject.set(x, "newRefName", value.asInstanceOf[js.Any])
   }

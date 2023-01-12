@@ -84,7 +84,8 @@ object libIntegrationsMod {
       __obj.asInstanceOf[IntegrationDeps]
     }
     
-    extension [Self <: IntegrationDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntegrationDeps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object libIntegrationsMod {
       __obj.asInstanceOf[IntegrationOptions]
     }
     
-    extension [Self <: IntegrationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntegrationOptions] (val x: Self) extends AnyVal {
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       

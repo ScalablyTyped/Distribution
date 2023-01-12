@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsStatusStopSmallMod extends Shortcut {
       __obj.asInstanceOf[StatusStopSmallProps]
     }
     
-    extension [Self <: StatusStopSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusStopSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

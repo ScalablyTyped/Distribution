@@ -166,7 +166,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EinsModalOptions]
     }
     
-    extension [Self <: EinsModalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EinsModalOptions] (val x: Self) extends AnyVal {
       
       inline def setBackdropClose(value: Boolean): Self = StObject.set(x, "backdropClose", value.asInstanceOf[js.Any])
       
@@ -299,7 +300,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HTMLElement]
       }
       
-      extension [Self <: HTMLElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
         
         inline def setModal(value: (/* action */ show | hide | toggle, /* options */ js.UndefOr[EinsModalOptions]) => Unit): Self = StObject.set(x, "modal", js.Any.fromFunction2(value))
         
@@ -318,7 +320,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[JQuery]
       }
       
-      extension [Self <: JQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
         
         inline def setModal(value: (/* action */ show | hide | toggle, /* options */ js.UndefOr[EinsModalOptions]) => Unit): Self = StObject.set(x, "modal", js.Any.fromFunction2(value))
         
@@ -337,7 +340,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setEinsModal(value: EinsModal): Self = StObject.set(x, "einsModal", value.asInstanceOf[js.Any])
       }

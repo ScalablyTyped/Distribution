@@ -28,7 +28,8 @@ object SetInnerAudioOption {
     __obj.asInstanceOf[SetInnerAudioOption]
   }
   
-  extension [Self <: SetInnerAudioOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetInnerAudioOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

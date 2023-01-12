@@ -84,7 +84,8 @@ object indent {
       __obj.asInstanceOf[specificDefinition]
     }
     
-    extension [Self <: specificDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: specificDefinition] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: StringDictionary[Any]): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       

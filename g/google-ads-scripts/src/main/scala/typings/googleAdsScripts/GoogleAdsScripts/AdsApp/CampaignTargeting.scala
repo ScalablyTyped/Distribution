@@ -73,7 +73,8 @@ object CampaignTargeting {
     __obj.asInstanceOf[CampaignTargeting]
   }
   
-  extension [Self <: CampaignTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignTargeting] (val x: Self) extends AnyVal {
     
     inline def setAdSchedules(value: () => AdScheduleSelector): Self = StObject.set(x, "adSchedules", js.Any.fromFunction0(value))
     

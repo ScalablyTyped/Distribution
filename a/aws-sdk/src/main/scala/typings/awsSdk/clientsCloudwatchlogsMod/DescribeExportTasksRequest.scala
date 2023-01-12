@@ -33,7 +33,8 @@ object DescribeExportTasksRequest {
     __obj.asInstanceOf[DescribeExportTasksRequest]
   }
   
-  extension [Self <: DescribeExportTasksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeExportTasksRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: DescribeLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

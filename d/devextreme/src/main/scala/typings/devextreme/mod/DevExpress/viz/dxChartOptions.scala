@@ -229,7 +229,8 @@ object dxChartOptions {
     __obj.asInstanceOf[dxChartOptions]
   }
   
-  extension [Self <: dxChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAdjustOnZoom(value: Boolean): Self = StObject.set(x, "adjustOnZoom", value.asInstanceOf[js.Any])
     

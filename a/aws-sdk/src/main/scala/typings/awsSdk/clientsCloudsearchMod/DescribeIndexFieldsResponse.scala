@@ -18,7 +18,8 @@ object DescribeIndexFieldsResponse {
     __obj.asInstanceOf[DescribeIndexFieldsResponse]
   }
   
-  extension [Self <: DescribeIndexFieldsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIndexFieldsResponse] (val x: Self) extends AnyVal {
     
     inline def setIndexFields(value: IndexFieldStatusList): Self = StObject.set(x, "IndexFields", value.asInstanceOf[js.Any])
     

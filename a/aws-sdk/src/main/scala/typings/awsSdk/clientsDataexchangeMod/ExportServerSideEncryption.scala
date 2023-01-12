@@ -23,7 +23,8 @@ object ExportServerSideEncryption {
     __obj.asInstanceOf[ExportServerSideEncryption]
   }
   
-  extension [Self <: ExportServerSideEncryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportServerSideEncryption] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyArn(value: string): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     

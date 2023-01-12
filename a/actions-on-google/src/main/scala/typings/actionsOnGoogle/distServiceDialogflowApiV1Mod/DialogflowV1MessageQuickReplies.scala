@@ -21,7 +21,8 @@ object DialogflowV1MessageQuickReplies {
     __obj.asInstanceOf[DialogflowV1MessageQuickReplies]
   }
   
-  extension [Self <: DialogflowV1MessageQuickReplies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1MessageQuickReplies] (val x: Self) extends AnyVal {
     
     inline def setReplies(value: js.Array[String]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
     

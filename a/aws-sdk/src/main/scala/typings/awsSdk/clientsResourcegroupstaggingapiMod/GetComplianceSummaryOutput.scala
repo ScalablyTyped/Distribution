@@ -23,7 +23,8 @@ object GetComplianceSummaryOutput {
     __obj.asInstanceOf[GetComplianceSummaryOutput]
   }
   
-  extension [Self <: GetComplianceSummaryOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComplianceSummaryOutput] (val x: Self) extends AnyVal {
     
     inline def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     

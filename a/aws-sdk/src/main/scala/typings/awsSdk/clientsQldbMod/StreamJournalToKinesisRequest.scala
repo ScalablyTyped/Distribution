@@ -54,7 +54,8 @@ object StreamJournalToKinesisRequest {
     __obj.asInstanceOf[StreamJournalToKinesisRequest]
   }
   
-  extension [Self <: StreamJournalToKinesisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamJournalToKinesisRequest] (val x: Self) extends AnyVal {
     
     inline def setExclusiveEndTime(value: js.Date): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object TwoOptionsProperty {
     __obj.asInstanceOf[TwoOptionsProperty]
   }
   
-  extension [Self <: TwoOptionsProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwoOptionsProperty] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: TwoOptionMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

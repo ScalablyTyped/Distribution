@@ -85,7 +85,8 @@ object ASPxClientListEdit {
     __obj.asInstanceOf[ASPxClientListEdit]
   }
   
-  extension [Self <: ASPxClientListEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientListEdit] (val x: Self) extends AnyVal {
     
     inline def setGetSelectedIndex(value: () => Double): Self = StObject.set(x, "GetSelectedIndex", js.Any.fromFunction0(value))
     

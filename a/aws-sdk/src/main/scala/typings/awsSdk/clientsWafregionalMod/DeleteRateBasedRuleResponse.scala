@@ -18,7 +18,8 @@ object DeleteRateBasedRuleResponse {
     __obj.asInstanceOf[DeleteRateBasedRuleResponse]
   }
   
-  extension [Self <: DeleteRateBasedRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRateBasedRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

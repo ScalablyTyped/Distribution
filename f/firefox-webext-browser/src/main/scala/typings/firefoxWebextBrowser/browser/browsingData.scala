@@ -59,7 +59,8 @@ object browsingData {
       __obj.asInstanceOf[DataTypeSet]
     }
     
-    extension [Self <: DataTypeSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTypeSet] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object browsingData {
       __obj.asInstanceOf[RemovalOptions]
     }
     
-    extension [Self <: RemovalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemovalOptions] (val x: Self) extends AnyVal {
       
       inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object browsingData {
       __obj.asInstanceOf[RemovalOptionsOriginTypes]
     }
     
-    extension [Self <: RemovalOptionsOriginTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemovalOptionsOriginTypes] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: Boolean): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
@@ -214,7 +217,8 @@ object browsingData {
       __obj.asInstanceOf[SettingsReturnResult]
     }
     
-    extension [Self <: SettingsReturnResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingsReturnResult] (val x: Self) extends AnyVal {
       
       inline def setDataRemovalPermitted(value: DataTypeSet): Self = StObject.set(x, "dataRemovalPermitted", value.asInstanceOf[js.Any])
       

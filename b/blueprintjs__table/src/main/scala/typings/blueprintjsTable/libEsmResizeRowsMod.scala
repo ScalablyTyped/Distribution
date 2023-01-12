@@ -56,7 +56,8 @@ object libEsmResizeRowsMod {
       __obj.asInstanceOf[IResizeRowsByApproximateHeightOptions]
     }
     
-    extension [Self <: IResizeRowsByApproximateHeightOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResizeRowsByApproximateHeightOptions] (val x: Self) extends AnyVal {
       
       inline def setGetApproximateCharWidth(value: Double | ICellMapper[Double]): Self = StObject.set(x, "getApproximateCharWidth", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object libEsmResizeRowsMod {
       __obj.asInstanceOf[IResizeRowsByApproximateHeightResolvedOptions]
     }
     
-    extension [Self <: IResizeRowsByApproximateHeightResolvedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResizeRowsByApproximateHeightResolvedOptions] (val x: Self) extends AnyVal {
       
       inline def setGetApproximateCharWidth(value: Double): Self = StObject.set(x, "getApproximateCharWidth", value.asInstanceOf[js.Any])
       

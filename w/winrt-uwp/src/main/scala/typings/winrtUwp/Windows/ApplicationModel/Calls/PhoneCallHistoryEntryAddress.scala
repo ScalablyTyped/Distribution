@@ -31,7 +31,8 @@ object PhoneCallHistoryEntryAddress {
     __obj.asInstanceOf[PhoneCallHistoryEntryAddress]
   }
   
-  extension [Self <: PhoneCallHistoryEntryAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneCallHistoryEntryAddress] (val x: Self) extends AnyVal {
     
     inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     

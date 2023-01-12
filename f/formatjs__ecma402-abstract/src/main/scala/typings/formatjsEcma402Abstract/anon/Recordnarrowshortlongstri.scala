@@ -20,7 +20,8 @@ object Recordnarrowshortlongstri {
     __obj.asInstanceOf[Recordnarrowshortlongstri]
   }
   
-  extension [Self <: Recordnarrowshortlongstri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recordnarrowshortlongstri] (val x: Self) extends AnyVal {
     
     inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     

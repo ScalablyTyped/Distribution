@@ -16,7 +16,8 @@ object GroupComponentElement {
     __obj.asInstanceOf[GroupComponentElement]
   }
   
-  extension [Self <: GroupComponentElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupComponentElement] (val x: Self) extends AnyVal {
     
     inline def setGroupComponent(value: Element): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
   }

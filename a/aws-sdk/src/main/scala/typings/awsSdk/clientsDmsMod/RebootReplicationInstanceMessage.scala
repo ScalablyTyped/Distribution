@@ -28,7 +28,8 @@ object RebootReplicationInstanceMessage {
     __obj.asInstanceOf[RebootReplicationInstanceMessage]
   }
   
-  extension [Self <: RebootReplicationInstanceMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RebootReplicationInstanceMessage] (val x: Self) extends AnyVal {
     
     inline def setForceFailover(value: BooleanOptional): Self = StObject.set(x, "ForceFailover", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object paginationPaginationMod {
       __obj.asInstanceOf[PageOption]
     }
     
-    extension [Self <: PageOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageOption] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }

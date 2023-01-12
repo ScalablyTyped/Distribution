@@ -83,7 +83,8 @@ object DeleteArchiveForAuthenticatedUser {
     __obj.asInstanceOf[DeleteArchiveForAuthenticatedUser]
   }
   
-  extension [Self <: DeleteArchiveForAuthenticatedUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteArchiveForAuthenticatedUser] (val x: Self) extends AnyVal {
     
     inline def setCancelImport(value: `1146`): Self = StObject.set(x, "cancelImport", value.asInstanceOf[js.Any])
     

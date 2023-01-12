@@ -186,7 +186,8 @@ object mod {
       __obj.asInstanceOf[ReactNativeInputSpinnerProps]
     }
     
-    extension [Self <: ReactNativeInputSpinnerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactNativeInputSpinnerProps] (val x: Self) extends AnyVal {
       
       inline def setAccelerationDelay(value: Double): Self = StObject.set(x, "accelerationDelay", value.asInstanceOf[js.Any])
       

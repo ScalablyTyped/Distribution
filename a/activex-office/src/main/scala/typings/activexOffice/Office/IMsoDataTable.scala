@@ -58,7 +58,8 @@ object IMsoDataTable {
     __obj.asInstanceOf[IMsoDataTable]
   }
   
-  extension [Self <: IMsoDataTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMsoDataTable] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

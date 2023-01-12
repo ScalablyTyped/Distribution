@@ -18,7 +18,8 @@ object AoMap {
     __obj.asInstanceOf[AoMap]
   }
   
-  extension [Self <: AoMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AoMap] (val x: Self) extends AnyVal {
     
     inline def setAoMap(value: IUniform[Any]): Self = StObject.set(x, "aoMap", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object CompleteLayerUploadRequest {
     __obj.asInstanceOf[CompleteLayerUploadRequest]
   }
   
-  extension [Self <: CompleteLayerUploadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteLayerUploadRequest] (val x: Self) extends AnyVal {
     
     inline def setLayerDigests(value: LayerDigestList): Self = StObject.set(x, "layerDigests", value.asInstanceOf[js.Any])
     

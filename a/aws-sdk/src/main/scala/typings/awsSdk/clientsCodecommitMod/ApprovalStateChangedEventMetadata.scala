@@ -23,7 +23,8 @@ object ApprovalStateChangedEventMetadata {
     __obj.asInstanceOf[ApprovalStateChangedEventMetadata]
   }
   
-  extension [Self <: ApprovalStateChangedEventMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApprovalStateChangedEventMetadata] (val x: Self) extends AnyVal {
     
     inline def setApprovalStatus(value: ApprovalState): Self = StObject.set(x, "approvalStatus", value.asInstanceOf[js.Any])
     

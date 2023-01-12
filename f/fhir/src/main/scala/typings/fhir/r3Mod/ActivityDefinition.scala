@@ -247,7 +247,8 @@ object ActivityDefinition {
     __obj.asInstanceOf[ActivityDefinition]
   }
   
-  extension [Self <: ActivityDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityDefinition] (val x: Self) extends AnyVal {
     
     inline def setApprovalDate(value: String): Self = StObject.set(x, "approvalDate", value.asInstanceOf[js.Any])
     

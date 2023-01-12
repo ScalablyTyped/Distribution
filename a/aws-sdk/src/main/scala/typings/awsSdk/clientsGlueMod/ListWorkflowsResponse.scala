@@ -23,7 +23,8 @@ object ListWorkflowsResponse {
     __obj.asInstanceOf[ListWorkflowsResponse]
   }
   
-  extension [Self <: ListWorkflowsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWorkflowsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

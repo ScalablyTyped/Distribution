@@ -16,7 +16,8 @@ object OnScreenPositionTargetingOptionDetails {
     __obj.asInstanceOf[OnScreenPositionTargetingOptionDetails]
   }
   
-  extension [Self <: OnScreenPositionTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnScreenPositionTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setOnScreenPosition(value: String): Self = StObject.set(x, "onScreenPosition", value.asInstanceOf[js.Any])
     

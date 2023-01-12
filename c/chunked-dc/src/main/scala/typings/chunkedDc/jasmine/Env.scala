@@ -100,7 +100,8 @@ object Env {
     __obj.asInstanceOf[Env]
   }
   
-  extension [Self <: Env](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
     
     inline def setAddCustomEqualityTester(value: CustomEqualityTester => Unit): Self = StObject.set(x, "addCustomEqualityTester", js.Any.fromFunction1(value))
     

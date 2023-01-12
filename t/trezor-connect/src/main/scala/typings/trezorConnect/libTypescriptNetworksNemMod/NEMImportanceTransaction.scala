@@ -23,7 +23,8 @@ object NEMImportanceTransaction {
     __obj.asInstanceOf[NEMImportanceTransaction]
   }
   
-  extension [Self <: NEMImportanceTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMImportanceTransaction] (val x: Self) extends AnyVal {
     
     inline def setImportanceTransfer(value: Mode): Self = StObject.set(x, "importanceTransfer", value.asInstanceOf[js.Any])
     

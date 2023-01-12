@@ -81,7 +81,8 @@ object Columnname {
     __obj.asInstanceOf[Columnname]
   }
   
-  extension [Self <: Columnname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Columnname] (val x: Self) extends AnyVal {
     
     inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
     

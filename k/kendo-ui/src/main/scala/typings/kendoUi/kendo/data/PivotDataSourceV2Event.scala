@@ -19,7 +19,8 @@ object PivotDataSourceV2Event {
     __obj.asInstanceOf[PivotDataSourceV2Event]
   }
   
-  extension [Self <: PivotDataSourceV2Event](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotDataSourceV2Event] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

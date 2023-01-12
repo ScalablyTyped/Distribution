@@ -60,7 +60,8 @@ object anon {
       __obj.asInstanceOf[PartialRenderers]
     }
     
-    extension [Self <: PartialRenderers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRenderers] (val x: Self) extends AnyVal {
       
       inline def setBlockquote(value: String | ComponentType[CommonProps]): Self = StObject.set(x, "Blockquote", value.asInstanceOf[js.Any])
       

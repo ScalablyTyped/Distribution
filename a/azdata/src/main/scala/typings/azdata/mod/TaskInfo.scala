@@ -44,7 +44,8 @@ object TaskInfo {
     __obj.asInstanceOf[TaskInfo]
   }
   
-  extension [Self <: TaskInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskInfo] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

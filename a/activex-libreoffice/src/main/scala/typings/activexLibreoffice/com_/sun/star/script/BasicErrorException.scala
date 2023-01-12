@@ -27,7 +27,8 @@ object BasicErrorException {
     __obj.asInstanceOf[BasicErrorException]
   }
   
-  extension [Self <: BasicErrorException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicErrorException] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

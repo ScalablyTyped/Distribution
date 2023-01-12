@@ -33,7 +33,8 @@ object Uclim {
     __obj.asInstanceOf[Uclim]
   }
   
-  extension [Self <: Uclim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Uclim] (val x: Self) extends AnyVal {
     
     inline def setU_clim(value: IUniform[Any]): Self = StObject.set(x, "u_clim", value.asInstanceOf[js.Any])
     

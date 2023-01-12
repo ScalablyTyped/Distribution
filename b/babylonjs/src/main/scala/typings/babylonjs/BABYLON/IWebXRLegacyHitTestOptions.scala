@@ -23,7 +23,8 @@ object IWebXRLegacyHitTestOptions {
     __obj.asInstanceOf[IWebXRLegacyHitTestOptions]
   }
   
-  extension [Self <: IWebXRLegacyHitTestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRLegacyHitTestOptions] (val x: Self) extends AnyVal {
     
     inline def setTestOnPointerDownOnly(value: Boolean): Self = StObject.set(x, "testOnPointerDownOnly", value.asInstanceOf[js.Any])
     

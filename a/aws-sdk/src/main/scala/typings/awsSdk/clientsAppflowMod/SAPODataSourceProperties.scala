@@ -18,7 +18,8 @@ object SAPODataSourceProperties {
     __obj.asInstanceOf[SAPODataSourceProperties]
   }
   
-  extension [Self <: SAPODataSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAPODataSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setObjectPath(value: Object): Self = StObject.set(x, "objectPath", value.asInstanceOf[js.Any])
     

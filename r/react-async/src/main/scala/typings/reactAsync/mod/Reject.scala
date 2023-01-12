@@ -27,7 +27,8 @@ object Reject {
     __obj.asInstanceOf[Reject]
   }
   
-  extension [Self <: Reject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reject] (val x: Self) extends AnyVal {
     
     inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

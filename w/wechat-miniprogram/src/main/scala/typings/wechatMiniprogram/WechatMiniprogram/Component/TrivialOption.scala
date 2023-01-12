@@ -59,7 +59,8 @@ object TrivialOption {
     __obj.asInstanceOf[TrivialOption]
   }
   
-  extension [Self <: TrivialOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrivialOption] (val x: Self) extends AnyVal {
     
     inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
     

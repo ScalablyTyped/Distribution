@@ -17,7 +17,8 @@ object ExportParams {
     __obj.asInstanceOf[ExportParams]
   }
   
-  extension [Self <: ExportParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportParams] (val x: Self) extends AnyVal {
     
     inline def setFromTS(value: Double): Self = StObject.set(x, "FromTS", value.asInstanceOf[js.Any])
     

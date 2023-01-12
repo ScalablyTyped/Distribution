@@ -32,7 +32,8 @@ object componentsUseBlockPropsMod {
       __obj.asInstanceOf[Merged]
     }
     
-    extension [Self <: Merged](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Merged] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object componentsUseBlockPropsMod {
       __obj.asInstanceOf[Reserved]
     }
     
-    extension [Self <: Reserved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reserved] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       

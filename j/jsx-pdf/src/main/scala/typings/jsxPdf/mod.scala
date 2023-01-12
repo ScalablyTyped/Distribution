@@ -325,7 +325,8 @@ object mod {
           __obj.asInstanceOf[ElementChildrenAttribute]
         }
         
-        extension [Self <: ElementChildrenAttribute](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ElementChildrenAttribute] (val x: Self) extends AnyVal {
           
           inline def setChildren(value: DynamicChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
           
@@ -393,7 +394,8 @@ object mod {
           __obj.asInstanceOf[IntrinsicElements]
         }
         
-        extension [Self <: IntrinsicElements](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
           
           inline def setCell(value: Ele[Element]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
           

@@ -17,7 +17,8 @@ object LegendPositionOptions {
     __obj.asInstanceOf[LegendPositionOptions]
   }
   
-  extension [Self <: LegendPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: LegendPositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

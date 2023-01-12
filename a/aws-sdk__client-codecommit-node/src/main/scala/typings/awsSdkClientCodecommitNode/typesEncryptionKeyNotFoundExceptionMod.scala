@@ -81,7 +81,8 @@ object typesEncryptionKeyNotFoundExceptionMod {
       __obj.asInstanceOf[EncryptionKeyNotFoundException]
     }
     
-    extension [Self <: EncryptionKeyNotFoundException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptionKeyNotFoundException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyNotFoundException

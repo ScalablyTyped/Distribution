@@ -41,7 +41,8 @@ object DisplayMode {
     __obj.asInstanceOf[DisplayMode]
   }
   
-  extension [Self <: DisplayMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayMode] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: DiagramShapeCategory | String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

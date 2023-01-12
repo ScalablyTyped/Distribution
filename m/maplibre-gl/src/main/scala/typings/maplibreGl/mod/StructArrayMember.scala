@@ -22,7 +22,8 @@ object StructArrayMember {
     __obj.asInstanceOf[StructArrayMember]
   }
   
-  extension [Self <: StructArrayMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructArrayMember] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: Double): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

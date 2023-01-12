@@ -19,7 +19,8 @@ object ICellContext {
     __obj.asInstanceOf[ICellContext]
   }
   
-  extension [Self <: ICellContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICellContext] (val x: Self) extends AnyVal {
     
     inline def setIsCellContext(value: Boolean): Self = StObject.set(x, "isCellContext", value.asInstanceOf[js.Any])
     

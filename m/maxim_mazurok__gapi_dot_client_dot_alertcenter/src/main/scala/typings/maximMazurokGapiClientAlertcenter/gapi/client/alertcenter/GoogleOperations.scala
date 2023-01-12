@@ -31,7 +31,8 @@ object GoogleOperations {
     __obj.asInstanceOf[GoogleOperations]
   }
   
-  extension [Self <: GoogleOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleOperations] (val x: Self) extends AnyVal {
     
     inline def setAffectedUserEmails(value: js.Array[String]): Self = StObject.set(x, "affectedUserEmails", value.asInstanceOf[js.Any])
     

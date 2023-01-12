@@ -34,7 +34,8 @@ object EngineView {
     __obj.asInstanceOf[EngineView]
   }
   
-  extension [Self <: EngineView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EngineView] (val x: Self) extends AnyVal {
     
     inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object TetTempFileURLSuccess {
     __obj.asInstanceOf[TetTempFileURLSuccess]
   }
   
-  extension [Self <: TetTempFileURLSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TetTempFileURLSuccess] (val x: Self) extends AnyVal {
     
     inline def setFileList(value: js.Array[ErrMsg]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     

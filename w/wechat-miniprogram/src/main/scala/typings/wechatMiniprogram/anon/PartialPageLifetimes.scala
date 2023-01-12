@@ -21,7 +21,8 @@ object PartialPageLifetimes {
     __obj.asInstanceOf[PartialPageLifetimes]
   }
   
-  extension [Self <: PartialPageLifetimes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPageLifetimes] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

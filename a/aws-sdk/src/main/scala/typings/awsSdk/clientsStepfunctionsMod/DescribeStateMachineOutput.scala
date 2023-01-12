@@ -63,7 +63,8 @@ object DescribeStateMachineOutput {
     __obj.asInstanceOf[DescribeStateMachineOutput]
   }
   
-  extension [Self <: DescribeStateMachineOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStateMachineOutput] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

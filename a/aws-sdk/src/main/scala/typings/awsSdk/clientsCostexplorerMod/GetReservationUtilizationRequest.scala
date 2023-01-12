@@ -48,7 +48,8 @@ object GetReservationUtilizationRequest {
     __obj.asInstanceOf[GetReservationUtilizationRequest]
   }
   
-  extension [Self <: GetReservationUtilizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReservationUtilizationRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object StockChartNavigatorSelectMousewheel {
     __obj.asInstanceOf[StockChartNavigatorSelectMousewheel]
   }
   
-  extension [Self <: StockChartNavigatorSelectMousewheel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartNavigatorSelectMousewheel] (val x: Self) extends AnyVal {
     
     inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     

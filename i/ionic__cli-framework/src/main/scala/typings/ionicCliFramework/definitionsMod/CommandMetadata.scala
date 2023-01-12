@@ -21,7 +21,8 @@ object CommandMetadata {
     __obj.asInstanceOf[CommandMetadata[I, O]]
   }
   
-  extension [Self <: CommandMetadata[?, ?], I, O](x: Self & (CommandMetadata[I, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandMetadata[?, ?], I, O] (val x: Self & (CommandMetadata[I, O])) extends AnyVal {
     
     inline def setExampleCommands(value: js.Array[String]): Self = StObject.set(x, "exampleCommands", value.asInstanceOf[js.Any])
     

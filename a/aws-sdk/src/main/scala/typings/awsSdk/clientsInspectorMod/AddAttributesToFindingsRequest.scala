@@ -23,7 +23,8 @@ object AddAttributesToFindingsRequest {
     __obj.asInstanceOf[AddAttributesToFindingsRequest]
   }
   
-  extension [Self <: AddAttributesToFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddAttributesToFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: UserAttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

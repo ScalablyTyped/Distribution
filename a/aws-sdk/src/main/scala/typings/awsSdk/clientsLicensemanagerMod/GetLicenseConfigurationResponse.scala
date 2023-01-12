@@ -98,7 +98,8 @@ object GetLicenseConfigurationResponse {
     __obj.asInstanceOf[GetLicenseConfigurationResponse]
   }
   
-  extension [Self <: GetLicenseConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLicenseConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setAutomatedDiscoveryInformation(value: AutomatedDiscoveryInformation): Self = StObject.set(x, "AutomatedDiscoveryInformation", value.asInstanceOf[js.Any])
     

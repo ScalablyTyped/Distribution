@@ -28,7 +28,8 @@ object CertificateIdentityConstraints {
     __obj.asInstanceOf[CertificateIdentityConstraints]
   }
   
-  extension [Self <: CertificateIdentityConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateIdentityConstraints] (val x: Self) extends AnyVal {
     
     inline def setAllowSubjectAltNamesPassthrough(value: Boolean): Self = StObject.set(x, "allowSubjectAltNamesPassthrough", value.asInstanceOf[js.Any])
     

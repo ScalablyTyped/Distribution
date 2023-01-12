@@ -26,7 +26,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -58,7 +59,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Header]
     }
     
-    extension [Self <: Header](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Move]
     }
     
-    extension [Self <: Move](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Move] (val x: Self) extends AnyVal {
       
       inline def setComments(value: js.Array[String]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ParsedPGN]
     }
     
-    extension [Self <: ParsedPGN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedPGN] (val x: Self) extends AnyVal {
       
       inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -205,7 +209,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PgnParser]
     }
     
-    extension [Self <: PgnParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PgnParser] (val x: Self) extends AnyVal {
       
       inline def setParse(value: String => js.Array[ParsedPGN]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }
@@ -233,7 +238,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Rav]
     }
     
-    extension [Self <: Rav](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rav] (val x: Self) extends AnyVal {
       
       inline def setMoves(value: js.Array[Move]): Self = StObject.set(x, "moves", value.asInstanceOf[js.Any])
       

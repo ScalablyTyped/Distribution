@@ -15,7 +15,8 @@ object MlStopDataFrameAnalyticsResponse {
     __obj.asInstanceOf[MlStopDataFrameAnalyticsResponse]
   }
   
-  extension [Self <: MlStopDataFrameAnalyticsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlStopDataFrameAnalyticsResponse] (val x: Self) extends AnyVal {
     
     inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
   }

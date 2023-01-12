@@ -17,7 +17,8 @@ object ClusterStatsClusterJvmMemory {
     __obj.asInstanceOf[ClusterStatsClusterJvmMemory]
   }
   
-  extension [Self <: ClusterStatsClusterJvmMemory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterJvmMemory] (val x: Self) extends AnyVal {
     
     inline def setHeap_max_in_bytes(value: long): Self = StObject.set(x, "heap_max_in_bytes", value.asInstanceOf[js.Any])
     

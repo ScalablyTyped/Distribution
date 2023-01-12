@@ -20,7 +20,8 @@ object JsonLogicGreaterThan {
     __obj.asInstanceOf[JsonLogicGreaterThan[AddOps]]
   }
   
-  extension [Self <: JsonLogicGreaterThan[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicGreaterThan[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicGreaterThan[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicGreaterThan[AddOps]) extends AnyVal {
     
     inline def setGreaterthansign(value: js.Tuple2[RulesLogic[AddOps], RulesLogic[AddOps]]): Self = StObject.set(x, ">", value.asInstanceOf[js.Any])
   }

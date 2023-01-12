@@ -60,7 +60,8 @@ object OptionsPersistentConfiguration {
     __obj.asInstanceOf[OptionsPersistentConfiguration]
   }
   
-  extension [Self <: OptionsPersistentConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsPersistentConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPersistence(value: `true` | PersistenceOptions): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
     

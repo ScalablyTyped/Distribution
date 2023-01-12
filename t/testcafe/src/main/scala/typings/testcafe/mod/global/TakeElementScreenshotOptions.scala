@@ -64,7 +64,8 @@ object TakeElementScreenshotOptions {
     __obj.asInstanceOf[TakeElementScreenshotOptions]
   }
   
-  extension [Self <: TakeElementScreenshotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakeElementScreenshotOptions] (val x: Self) extends AnyVal {
     
     inline def setCrop(value: CropOptions): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     

@@ -115,7 +115,8 @@ object Composition {
     __obj.asInstanceOf[Composition]
   }
   
-  extension [Self <: Composition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Composition] (val x: Self) extends AnyVal {
     
     inline def setAttester(value: js.Array[CompositionAttester]): Self = StObject.set(x, "attester", value.asInstanceOf[js.Any])
     

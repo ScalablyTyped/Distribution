@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Errors]
     }
     
-    extension [Self <: Errors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[js.Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterCompile(value: (/* code */ String, /* filename */ String) => String): Self = StObject.set(x, "afterCompile", js.Any.fromFunction2(value))
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[PickanyreaddirSyncstatSyn]
     }
     
-    extension [Self <: PickanyreaddirSyncstatSyn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickanyreaddirSyncstatSyn] (val x: Self) extends AnyVal {
       
       inline def setReaddirSync(value: Any): Self = StObject.set(x, "readdirSync", value.asInstanceOf[js.Any])
       

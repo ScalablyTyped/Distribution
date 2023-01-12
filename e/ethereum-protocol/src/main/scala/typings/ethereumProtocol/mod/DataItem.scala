@@ -20,7 +20,8 @@ object DataItem {
     __obj.asInstanceOf[DataItem]
   }
   
-  extension [Self <: DataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataItem] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: js.Array[DataItem]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

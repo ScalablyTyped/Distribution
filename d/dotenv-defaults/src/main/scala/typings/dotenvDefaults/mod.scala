@@ -39,7 +39,8 @@ object mod {
         __obj.asInstanceOf[typings.dotenvDefaults.mod.dotenvAugmentingMod.DotenvConfigOptions]
       }
       
-      extension [Self <: typings.dotenvDefaults.mod.dotenvAugmentingMod.DotenvConfigOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.dotenvDefaults.mod.dotenvAugmentingMod.DotenvConfigOptions] (val x: Self) extends AnyVal {
         
         inline def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
         

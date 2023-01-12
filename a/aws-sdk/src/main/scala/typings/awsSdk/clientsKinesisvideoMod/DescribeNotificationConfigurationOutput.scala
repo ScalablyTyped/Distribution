@@ -18,7 +18,8 @@ object DescribeNotificationConfigurationOutput {
     __obj.asInstanceOf[DescribeNotificationConfigurationOutput]
   }
   
-  extension [Self <: DescribeNotificationConfigurationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNotificationConfigurationOutput] (val x: Self) extends AnyVal {
     
     inline def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "NotificationConfiguration", value.asInstanceOf[js.Any])
     

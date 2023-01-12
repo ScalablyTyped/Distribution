@@ -66,7 +66,8 @@ object buildSrcExportReadableSpanMod {
       __obj.asInstanceOf[ReadableSpan]
     }
     
-    extension [Self <: ReadableSpan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadableSpan] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: SpanAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

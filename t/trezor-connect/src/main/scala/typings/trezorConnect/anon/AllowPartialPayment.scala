@@ -31,7 +31,8 @@ object AllowPartialPayment {
     __obj.asInstanceOf[AllowPartialPayment]
   }
   
-  extension [Self <: AllowPartialPayment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowPartialPayment] (val x: Self) extends AnyVal {
     
     inline def setAllowPartialPayment(value: Boolean): Self = StObject.set(x, "allowPartialPayment", value.asInstanceOf[js.Any])
     

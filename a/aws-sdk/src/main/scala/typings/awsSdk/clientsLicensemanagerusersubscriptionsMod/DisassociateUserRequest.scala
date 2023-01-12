@@ -33,7 +33,8 @@ object DisassociateUserRequest {
     __obj.asInstanceOf[DisassociateUserRequest]
   }
   
-  extension [Self <: DisassociateUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateUserRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

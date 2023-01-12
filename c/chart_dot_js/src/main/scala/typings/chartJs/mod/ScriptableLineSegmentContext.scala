@@ -33,7 +33,8 @@ object ScriptableLineSegmentContext {
     __obj.asInstanceOf[ScriptableLineSegmentContext]
   }
   
-  extension [Self <: ScriptableLineSegmentContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptableLineSegmentContext] (val x: Self) extends AnyVal {
     
     inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
     

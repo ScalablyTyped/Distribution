@@ -71,7 +71,8 @@ object ClipPath {
     __obj.asInstanceOf[ClipPath]
   }
   
-  extension [Self <: ClipPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClipPath] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

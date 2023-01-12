@@ -25,7 +25,8 @@ object DropPrompt {
     __obj.asInstanceOf[DropPrompt]
   }
   
-  extension [Self <: DropPrompt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropPrompt] (val x: Self) extends AnyVal {
     
     inline def setBrowse(value: String): Self = StObject.set(x, "browse", value.asInstanceOf[js.Any])
     

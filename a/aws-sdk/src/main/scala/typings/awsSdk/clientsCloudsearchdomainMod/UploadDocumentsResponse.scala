@@ -33,7 +33,8 @@ object UploadDocumentsResponse {
     __obj.asInstanceOf[UploadDocumentsResponse]
   }
   
-  extension [Self <: UploadDocumentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadDocumentsResponse] (val x: Self) extends AnyVal {
     
     inline def setAdds(value: Adds): Self = StObject.set(x, "adds", value.asInstanceOf[js.Any])
     

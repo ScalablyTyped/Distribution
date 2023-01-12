@@ -17,7 +17,8 @@ object RowHeaderTextsNormalized {
     __obj.asInstanceOf[RowHeaderTextsNormalized]
   }
   
-  extension [Self <: RowHeaderTextsNormalized](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowHeaderTextsNormalized] (val x: Self) extends AnyVal {
     
     inline def setText_normalized(value: String): Self = StObject.set(x, "text_normalized", value.asInstanceOf[js.Any])
     

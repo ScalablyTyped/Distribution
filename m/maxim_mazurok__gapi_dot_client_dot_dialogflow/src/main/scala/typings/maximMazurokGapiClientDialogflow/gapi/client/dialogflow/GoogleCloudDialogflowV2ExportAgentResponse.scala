@@ -19,7 +19,8 @@ object GoogleCloudDialogflowV2ExportAgentResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowV2ExportAgentResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2ExportAgentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2ExportAgentResponse] (val x: Self) extends AnyVal {
     
     inline def setAgentContent(value: String): Self = StObject.set(x, "agentContent", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object Version {
     callback: js.Function2[/* err */ js.Error | Null, /* info */ VersionResult, Unit]
   ): Unit = js.native
   
-  extension [Self <: Version](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
     
     inline def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     

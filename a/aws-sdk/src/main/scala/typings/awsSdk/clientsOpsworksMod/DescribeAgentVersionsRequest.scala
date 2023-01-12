@@ -23,7 +23,8 @@ object DescribeAgentVersionsRequest {
     __obj.asInstanceOf[DescribeAgentVersionsRequest]
   }
   
-  extension [Self <: DescribeAgentVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAgentVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationManager(value: StackConfigurationManager): Self = StObject.set(x, "ConfigurationManager", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object componentsRadioBaseMod {
       __obj.asInstanceOf[RadioProps]
     }
     
-    extension [Self <: RadioProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object componentsRadioBaseMod {
       __obj.asInstanceOf[RadioTheme]
     }
     
-    extension [Self <: RadioTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioTheme] (val x: Self) extends AnyVal {
       
       inline def setRadio(value: String): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
       

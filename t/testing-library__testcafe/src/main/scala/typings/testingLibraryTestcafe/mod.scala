@@ -336,7 +336,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setTestingLibraryDom(value: Typeofqueries): Self = StObject.set(x, "TestingLibraryDom", value.asInstanceOf[js.Any])
       }

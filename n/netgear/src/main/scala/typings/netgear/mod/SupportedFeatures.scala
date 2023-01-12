@@ -47,7 +47,8 @@ object SupportedFeatures {
     __obj.asInstanceOf[SupportedFeatures]
   }
   
-  extension [Self <: SupportedFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportedFeatures] (val x: Self) extends AnyVal {
     
     inline def setAccessControl(value: String): Self = StObject.set(x, "AccessControl", value.asInstanceOf[js.Any])
     

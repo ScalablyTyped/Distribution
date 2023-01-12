@@ -40,7 +40,8 @@ object PlaySoundRuleAction {
     __obj.asInstanceOf[PlaySoundRuleAction]
   }
   
-  extension [Self <: PlaySoundRuleAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaySoundRuleAction] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     

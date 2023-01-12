@@ -25,7 +25,8 @@ object DefaultDate {
     __obj.asInstanceOf[DefaultDate]
   }
   
-  extension [Self <: DefaultDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultDate] (val x: Self) extends AnyVal {
     
     inline def setDefaultDate(value: Double): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
     

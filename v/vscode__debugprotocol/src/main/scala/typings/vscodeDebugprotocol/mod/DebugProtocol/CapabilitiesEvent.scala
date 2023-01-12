@@ -34,7 +34,8 @@ object CapabilitiesEvent {
     __obj.asInstanceOf[CapabilitiesEvent]
   }
   
-  extension [Self <: CapabilitiesEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilitiesEvent] (val x: Self) extends AnyVal {
     
     inline def setBody(value: typings.vscodeDebugprotocol.anon.Capabilities): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

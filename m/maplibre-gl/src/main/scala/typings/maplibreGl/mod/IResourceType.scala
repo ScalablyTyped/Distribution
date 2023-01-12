@@ -38,7 +38,8 @@ object IResourceType {
     __obj.asInstanceOf[IResourceType]
   }
   
-  extension [Self <: IResourceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResourceType] (val x: Self) extends AnyVal {
     
     inline def setGlyphs(value: /* keyof this */ String): Self = StObject.set(x, "Glyphs", value.asInstanceOf[js.Any])
     

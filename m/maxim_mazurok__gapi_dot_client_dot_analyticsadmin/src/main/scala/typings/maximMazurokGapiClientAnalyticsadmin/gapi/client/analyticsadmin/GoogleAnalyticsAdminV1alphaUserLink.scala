@@ -26,7 +26,8 @@ object GoogleAnalyticsAdminV1alphaUserLink {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaUserLink]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaUserLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaUserLink] (val x: Self) extends AnyVal {
     
     inline def setDirectRoles(value: js.Array[String]): Self = StObject.set(x, "directRoles", value.asInstanceOf[js.Any])
     

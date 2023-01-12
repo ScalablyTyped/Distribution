@@ -27,7 +27,8 @@ object RejectionMetricsV2 {
     __obj.asInstanceOf[RejectionMetricsV2]
   }
   
-  extension [Self <: RejectionMetricsV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectionMetricsV2] (val x: Self) extends AnyVal {
     
     inline def setAuthenticated(value: Dictk): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
     

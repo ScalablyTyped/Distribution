@@ -32,7 +32,8 @@ object TemplateLiteral_ {
     __obj.asInstanceOf[TemplateLiteral_]
   }
   
-  extension [Self <: TemplateLiteral_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateLiteral_] (val x: Self) extends AnyVal {
     
     inline def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     

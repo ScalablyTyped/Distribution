@@ -23,7 +23,8 @@ object CreateTestGridUrlResult {
     __obj.asInstanceOf[CreateTestGridUrlResult]
   }
   
-  extension [Self <: CreateTestGridUrlResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTestGridUrlResult] (val x: Self) extends AnyVal {
     
     inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     

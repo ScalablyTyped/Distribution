@@ -20,7 +20,8 @@ object TypeofTaskBoard_ {
     __obj.asInstanceOf[TypeofTaskBoard_]
   }
   
-  extension [Self <: TypeofTaskBoard_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTaskBoard_] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => TaskBoard_): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

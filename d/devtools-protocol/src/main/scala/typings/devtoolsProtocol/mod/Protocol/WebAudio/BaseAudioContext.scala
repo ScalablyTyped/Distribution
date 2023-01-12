@@ -43,7 +43,8 @@ object BaseAudioContext {
     __obj.asInstanceOf[BaseAudioContext]
   }
   
-  extension [Self <: BaseAudioContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseAudioContext] (val x: Self) extends AnyVal {
     
     inline def setCallbackBufferSize(value: Double): Self = StObject.set(x, "callbackBufferSize", value.asInstanceOf[js.Any])
     

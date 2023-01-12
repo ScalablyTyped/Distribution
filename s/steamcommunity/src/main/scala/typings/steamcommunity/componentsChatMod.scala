@@ -43,7 +43,8 @@ object componentsChatMod {
       __obj.asInstanceOf[Chat]
     }
     
-    extension [Self <: Chat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chat] (val x: Self) extends AnyVal {
       
       inline def setChatLogoff(value: () => Unit): Self = StObject.set(x, "chatLogoff", js.Any.fromFunction0(value))
       

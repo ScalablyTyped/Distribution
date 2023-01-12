@@ -30,7 +30,8 @@ object libTypesMod {
       __obj.asInstanceOf[ApiKeyAuth]
     }
     
-    extension [Self <: ApiKeyAuth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiKeyAuth] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String | Apikey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object libTypesMod {
       __obj.asInstanceOf[BasicAuth]
     }
     
-    extension [Self <: BasicAuth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicAuth] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object libTypesMod {
       __obj.asInstanceOf[BearerAuth]
     }
     
-    extension [Self <: BearerAuth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BearerAuth] (val x: Self) extends AnyVal {
       
       inline def setBearer(value: String): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
     }
@@ -95,7 +98,8 @@ object libTypesMod {
       __obj.asInstanceOf[DiagnosticResult[TResponse, TContext]]
     }
     
-    extension [Self <: DiagnosticResult[?, ?], TResponse, TContext](x: Self & (DiagnosticResult[TResponse, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagnosticResult[?, ?], TResponse, TContext] (val x: Self & (DiagnosticResult[TResponse, TContext])) extends AnyVal {
       
       inline def setBody(value: TResponse): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -145,7 +149,8 @@ object libTypesMod {
       __obj.asInstanceOf[DiagnosticResultResponse[TResponse, TContext]]
     }
     
-    extension [Self <: DiagnosticResultResponse[?, ?], TResponse, TContext](x: Self & (DiagnosticResultResponse[TResponse, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagnosticResultResponse[?, ?], TResponse, TContext] (val x: Self & (DiagnosticResultResponse[TResponse, TContext])) extends AnyVal {
       
       inline def setBody(value: TResponse): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -182,7 +187,8 @@ object libTypesMod {
       __obj.asInstanceOf[HttpAgentOptions]
     }
     
-    extension [Self <: HttpAgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
       
@@ -234,7 +240,8 @@ object libTypesMod {
       __obj.asInstanceOf[TransportResult[TResponse, TContext]]
     }
     
-    extension [Self <: TransportResult[?, ?], TResponse, TContext](x: Self & (TransportResult[TResponse, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportResult[?, ?], TResponse, TContext] (val x: Self & (TransportResult[TResponse, TContext])) extends AnyVal {
       
       inline def setBody(value: TResponse): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -265,7 +272,8 @@ object libTypesMod {
       __obj.asInstanceOf[UndiciAgentOptions]
     }
     
-    extension [Self <: UndiciAgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UndiciAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setConnections(value: Double): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       

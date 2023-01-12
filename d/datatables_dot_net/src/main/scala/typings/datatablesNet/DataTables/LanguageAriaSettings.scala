@@ -19,7 +19,8 @@ object LanguageAriaSettings {
     __obj.asInstanceOf[LanguageAriaSettings]
   }
   
-  extension [Self <: LanguageAriaSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageAriaSettings] (val x: Self) extends AnyVal {
     
     inline def setPaginate(value: LanguagePaginateSettings): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
     

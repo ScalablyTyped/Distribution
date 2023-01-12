@@ -35,7 +35,8 @@ object ImageEditorMessagesToolbar {
     __obj.asInstanceOf[ImageEditorMessagesToolbar]
   }
   
-  extension [Self <: ImageEditorMessagesToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageEditorMessagesToolbar] (val x: Self) extends AnyVal {
     
     inline def setCrop(value: String): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     

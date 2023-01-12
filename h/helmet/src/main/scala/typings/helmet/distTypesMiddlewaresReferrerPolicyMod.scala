@@ -47,7 +47,8 @@ object distTypesMiddlewaresReferrerPolicyMod {
       __obj.asInstanceOf[ReferrerPolicyOptions]
     }
     
-    extension [Self <: ReferrerPolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferrerPolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: ReferrerPolicyToken | js.Array[ReferrerPolicyToken]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object INxStackPage {
     __obj.asInstanceOf[INxStackPage]
   }
   
-  extension [Self <: INxStackPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxStackPage] (val x: Self) extends AnyVal {
     
     inline def setQArea(value: IRect): Self = StObject.set(x, "qArea", value.asInstanceOf[js.Any])
     

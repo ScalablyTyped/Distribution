@@ -33,7 +33,8 @@ object VPCDerivedInfo {
     __obj.asInstanceOf[VPCDerivedInfo]
   }
   
-  extension [Self <: VPCDerivedInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VPCDerivedInfo] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: StringList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

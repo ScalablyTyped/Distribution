@@ -18,7 +18,8 @@ object UpdateStackResult {
     __obj.asInstanceOf[UpdateStackResult]
   }
   
-  extension [Self <: UpdateStackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStackResult] (val x: Self) extends AnyVal {
     
     inline def setStack(value: Stack): Self = StObject.set(x, "Stack", value.asInstanceOf[js.Any])
     

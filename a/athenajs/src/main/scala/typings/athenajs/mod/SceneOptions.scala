@@ -23,7 +23,8 @@ object SceneOptions {
     __obj.asInstanceOf[SceneOptions]
   }
   
-  extension [Self <: SceneOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneOptions] (val x: Self) extends AnyVal {
     
     inline def setHudScene(value: Scene): Self = StObject.set(x, "hudScene", value.asInstanceOf[js.Any])
     

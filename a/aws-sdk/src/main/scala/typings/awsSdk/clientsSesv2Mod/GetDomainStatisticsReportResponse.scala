@@ -23,7 +23,8 @@ object GetDomainStatisticsReportResponse {
     __obj.asInstanceOf[GetDomainStatisticsReportResponse]
   }
   
-  extension [Self <: GetDomainStatisticsReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDomainStatisticsReportResponse] (val x: Self) extends AnyVal {
     
     inline def setDailyVolumes(value: DailyVolumes): Self = StObject.set(x, "DailyVolumes", value.asInstanceOf[js.Any])
     

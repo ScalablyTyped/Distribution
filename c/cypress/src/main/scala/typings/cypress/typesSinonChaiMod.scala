@@ -139,7 +139,8 @@ object typesSinonChaiMod extends Shortcut {
           __obj.asInstanceOf[LanguageChains]
         }
         
-        extension [Self <: LanguageChains](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LanguageChains] (val x: Self) extends AnyVal {
           
           inline def setAlways(value: Assertion): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
         }

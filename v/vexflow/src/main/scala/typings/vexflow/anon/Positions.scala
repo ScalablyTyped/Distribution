@@ -23,7 +23,8 @@ object Positions {
     __obj.asInstanceOf[Positions]
   }
   
-  extension [Self <: Positions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Positions] (val x: Self) extends AnyVal {
     
     inline def setDots(value: Double): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     

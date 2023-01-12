@@ -54,7 +54,8 @@ object distTypesNodesMod {
       __obj.asInstanceOf[NodesProps[RawDatum]]
     }
     
-    extension [Self <: NodesProps[?], RawDatum /* <: ScatterPlotDatum */](x: Self & NodesProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesProps[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & NodesProps[RawDatum]) extends AnyVal {
       
       inline def setBlendMode(value: CssMixBlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
       

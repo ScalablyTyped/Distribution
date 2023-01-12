@@ -52,7 +52,8 @@ object AgreementFileProperties {
     __obj.asInstanceOf[AgreementFileProperties]
   }
   
-  extension [Self <: AgreementFileProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgreementFileProperties] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ASPxClientNavBarGroupCancelEventArgs {
     __obj.asInstanceOf[ASPxClientNavBarGroupCancelEventArgs]
   }
   
-  extension [Self <: ASPxClientNavBarGroupCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientNavBarGroupCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: ASPxClientNavBarGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }

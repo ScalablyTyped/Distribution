@@ -17,7 +17,8 @@ object DateTimePickerOpenEvent {
     __obj.asInstanceOf[DateTimePickerOpenEvent]
   }
   
-  extension [Self <: DateTimePickerOpenEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimePickerOpenEvent] (val x: Self) extends AnyVal {
     
     inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

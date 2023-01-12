@@ -134,7 +134,8 @@ object RecognitionConfig {
     __obj.asInstanceOf[RecognitionConfig]
   }
   
-  extension [Self <: RecognitionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecognitionConfig] (val x: Self) extends AnyVal {
     
     inline def setAdaptation(value: SpeechAdaptation): Self = StObject.set(x, "adaptation", value.asInstanceOf[js.Any])
     

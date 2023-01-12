@@ -137,7 +137,8 @@ object ISurface {
     __obj.asInstanceOf[ISurface]
   }
   
-  extension [Self <: ISurface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISurface] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: () => Unit): Self = StObject.set(x, "add", js.Any.fromFunction0(value))
     

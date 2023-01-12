@@ -18,7 +18,8 @@ object PipelinePauseStateSettings {
     __obj.asInstanceOf[PipelinePauseStateSettings]
   }
   
-  extension [Self <: PipelinePauseStateSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelinePauseStateSettings] (val x: Self) extends AnyVal {
     
     inline def setPipelineId(value: PipelineId): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
   }

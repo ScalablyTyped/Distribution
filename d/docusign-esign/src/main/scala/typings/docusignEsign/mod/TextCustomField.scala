@@ -50,7 +50,8 @@ object TextCustomField {
     __obj.asInstanceOf[TextCustomField]
   }
   
-  extension [Self <: TextCustomField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextCustomField] (val x: Self) extends AnyVal {
     
     inline def setConfigurationType(value: String): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
     

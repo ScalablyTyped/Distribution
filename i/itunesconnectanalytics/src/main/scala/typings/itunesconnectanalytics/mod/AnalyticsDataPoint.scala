@@ -43,7 +43,8 @@ object AnalyticsDataPoint {
     __obj.asInstanceOf[AnalyticsDataPoint]
   }
   
-  extension [Self <: AnalyticsDataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsDataPoint] (val x: Self) extends AnyVal {
     
     inline def setActiveDevices(value: Double): Self = StObject.set(x, "activeDevices", value.asInstanceOf[js.Any])
     

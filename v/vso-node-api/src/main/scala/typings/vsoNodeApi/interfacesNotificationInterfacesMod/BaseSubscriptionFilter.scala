@@ -18,7 +18,8 @@ object BaseSubscriptionFilter {
     __obj.asInstanceOf[BaseSubscriptionFilter]
   }
   
-  extension [Self <: BaseSubscriptionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseSubscriptionFilter] (val x: Self) extends AnyVal {
     
     inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     

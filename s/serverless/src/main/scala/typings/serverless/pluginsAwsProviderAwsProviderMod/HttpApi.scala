@@ -25,7 +25,8 @@ object HttpApi {
     __obj.asInstanceOf[HttpApi]
   }
   
-  extension [Self <: HttpApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpApi] (val x: Self) extends AnyVal {
     
     inline def setAuthorizers(value: Authorizers): Self = StObject.set(x, "authorizers", value.asInstanceOf[js.Any])
     

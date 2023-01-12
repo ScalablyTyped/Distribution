@@ -23,7 +23,8 @@ object PixelAnomaly {
     __obj.asInstanceOf[PixelAnomaly]
   }
   
-  extension [Self <: PixelAnomaly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelAnomaly] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     

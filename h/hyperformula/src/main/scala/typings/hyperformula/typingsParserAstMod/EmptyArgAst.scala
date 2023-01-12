@@ -20,7 +20,8 @@ object EmptyArgAst {
     __obj.asInstanceOf[EmptyArgAst]
   }
   
-  extension [Self <: EmptyArgAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmptyArgAst] (val x: Self) extends AnyVal {
     
     inline def setType(value: EMPTY): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

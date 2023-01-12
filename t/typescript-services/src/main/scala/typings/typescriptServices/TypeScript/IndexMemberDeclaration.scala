@@ -39,7 +39,8 @@ object IndexMemberDeclaration {
     __obj.asInstanceOf[IndexMemberDeclaration]
   }
   
-  extension [Self <: IndexMemberDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexMemberDeclaration] (val x: Self) extends AnyVal {
     
     inline def setIndexSignature(value: IndexSignature): Self = StObject.set(x, "indexSignature", value.asInstanceOf[js.Any])
   }

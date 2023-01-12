@@ -22,7 +22,8 @@ object PlaybackRateChangedEvent {
     __obj.asInstanceOf[PlaybackRateChangedEvent]
   }
   
-  extension [Self <: PlaybackRateChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackRateChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     

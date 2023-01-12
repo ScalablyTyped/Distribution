@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ButtonTemplates[T, F]]
     }
     
-    extension [Self <: ButtonTemplates[?, ?], T, F](x: Self & (ButtonTemplates[T, F])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonTemplates[?, ?], T, F] (val x: Self & (ButtonTemplates[T, F])) extends AnyVal {
       
       inline def setButtonTemplates(value: Partial[AddButton[T, F]]): Self = StObject.set(x, "ButtonTemplates", value.asInstanceOf[js.Any])
       

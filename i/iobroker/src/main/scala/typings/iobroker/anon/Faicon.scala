@@ -27,7 +27,8 @@ object Faicon {
     __obj.asInstanceOf[Faicon]
   }
   
-  extension [Self <: Faicon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Faicon] (val x: Self) extends AnyVal {
     
     inline def `setFa-icon`(value: String): Self = StObject.set(x, "fa-icon", value.asInstanceOf[js.Any])
     

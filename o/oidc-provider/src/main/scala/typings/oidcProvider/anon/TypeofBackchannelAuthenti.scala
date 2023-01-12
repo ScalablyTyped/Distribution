@@ -16,7 +16,8 @@ object TypeofBackchannelAuthenti {
     __obj.asInstanceOf[TypeofBackchannelAuthenti]
   }
   
-  extension [Self <: TypeofBackchannelAuthenti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBackchannelAuthenti] (val x: Self) extends AnyVal {
     
     inline def setRevokeByGrantId(value: String => js.Promise[Unit]): Self = StObject.set(x, "revokeByGrantId", js.Any.fromFunction1(value))
   }

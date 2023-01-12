@@ -140,7 +140,8 @@ object WidgetText {
     __obj.asInstanceOf[WidgetText]
   }
   
-  extension [Self <: WidgetText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetText] (val x: Self) extends AnyVal {
     
     inline def setCenterAlignText(value: () => Unit): Self = StObject.set(x, "centerAlignText", js.Any.fromFunction0(value))
     

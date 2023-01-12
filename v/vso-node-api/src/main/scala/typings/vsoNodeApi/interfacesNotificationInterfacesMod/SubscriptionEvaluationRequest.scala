@@ -26,7 +26,8 @@ object SubscriptionEvaluationRequest {
     __obj.asInstanceOf[SubscriptionEvaluationRequest]
   }
   
-  extension [Self <: SubscriptionEvaluationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionEvaluationRequest] (val x: Self) extends AnyVal {
     
     inline def setMinEventsCreatedDate(value: js.Date): Self = StObject.set(x, "minEventsCreatedDate", value.asInstanceOf[js.Any])
     

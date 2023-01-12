@@ -38,7 +38,8 @@ object NewExpression_ {
     __obj.asInstanceOf[NewExpression_]
   }
   
-  extension [Self <: NewExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewExpression_] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

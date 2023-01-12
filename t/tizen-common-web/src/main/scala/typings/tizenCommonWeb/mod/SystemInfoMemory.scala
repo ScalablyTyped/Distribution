@@ -20,7 +20,8 @@ object SystemInfoMemory {
     __obj.asInstanceOf[SystemInfoMemory]
   }
   
-  extension [Self <: SystemInfoMemory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoMemory] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: SystemInfoLowMemoryStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

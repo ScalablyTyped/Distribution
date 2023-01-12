@@ -28,7 +28,8 @@ object TransactionReceiptWithDecodedLogs {
     __obj.asInstanceOf[TransactionReceiptWithDecodedLogs]
   }
   
-  extension [Self <: TransactionReceiptWithDecodedLogs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionReceiptWithDecodedLogs] (val x: Self) extends AnyVal {
     
     inline def setLogs(value: js.Array[LogWithDecodedArgs[DecodedLogArgs] | LogEntry]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     

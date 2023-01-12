@@ -25,7 +25,8 @@ object Agenda {
     __obj.asInstanceOf[Agenda]
   }
   
-  extension [Self <: Agenda](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Agenda] (val x: Self) extends AnyVal {
     
     inline def setAgenda(value: Boolean | (ComponentType[Any] & ViewStatic)): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
     

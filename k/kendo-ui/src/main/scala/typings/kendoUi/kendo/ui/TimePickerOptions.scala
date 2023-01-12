@@ -49,7 +49,8 @@ object TimePickerOptions {
     __obj.asInstanceOf[TimePickerOptions]
   }
   
-  extension [Self <: TimePickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimePickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean | TimePickerAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

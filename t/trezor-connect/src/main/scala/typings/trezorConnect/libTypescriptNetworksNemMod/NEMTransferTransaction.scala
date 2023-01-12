@@ -36,7 +36,8 @@ object NEMTransferTransaction {
     __obj.asInstanceOf[NEMTransferTransaction]
   }
   
-  extension [Self <: NEMTransferTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMTransferTransaction] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: UintType): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

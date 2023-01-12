@@ -45,7 +45,8 @@ object BasemapToggleProperties {
     __obj.asInstanceOf[BasemapToggleProperties]
   }
   
-  extension [Self <: BasemapToggleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasemapToggleProperties] (val x: Self) extends AnyVal {
     
     inline def setNextBasemap(value: BasemapProperties | String): Self = StObject.set(x, "nextBasemap", value.asInstanceOf[js.Any])
     

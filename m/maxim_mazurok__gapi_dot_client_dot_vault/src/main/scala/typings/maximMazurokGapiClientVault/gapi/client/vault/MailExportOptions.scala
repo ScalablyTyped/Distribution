@@ -22,7 +22,8 @@ object MailExportOptions {
     __obj.asInstanceOf[MailExportOptions]
   }
   
-  extension [Self <: MailExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailExportOptions] (val x: Self) extends AnyVal {
     
     inline def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
     

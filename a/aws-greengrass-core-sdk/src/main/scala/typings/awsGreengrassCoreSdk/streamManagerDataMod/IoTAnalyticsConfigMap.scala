@@ -19,7 +19,8 @@ object IoTAnalyticsConfigMap {
     __obj.asInstanceOf[IoTAnalyticsConfigMap]
   }
   
-  extension [Self <: IoTAnalyticsConfigMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IoTAnalyticsConfigMap] (val x: Self) extends AnyVal {
     
     inline def setIotChannel(value: String): Self = StObject.set(x, "iotChannel", value.asInstanceOf[js.Any])
     

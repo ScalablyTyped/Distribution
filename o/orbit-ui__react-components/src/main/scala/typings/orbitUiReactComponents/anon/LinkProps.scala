@@ -17,7 +17,8 @@ object LinkProps {
     __obj.asInstanceOf[LinkProps]
   }
   
-  extension [Self <: LinkProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
     
     inline def setLinkProps(value: Rel): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
     

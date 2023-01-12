@@ -33,7 +33,8 @@ object RequestCancelExternalWorkflowExecutionInitiatedEventAttributes {
     __obj.asInstanceOf[RequestCancelExternalWorkflowExecutionInitiatedEventAttributes]
   }
   
-  extension [Self <: RequestCancelExternalWorkflowExecutionInitiatedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestCancelExternalWorkflowExecutionInitiatedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     

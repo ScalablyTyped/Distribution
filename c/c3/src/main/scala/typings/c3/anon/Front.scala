@@ -15,7 +15,8 @@ object Front {
     __obj.asInstanceOf[Front]
   }
   
-  extension [Self <: Front](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Front] (val x: Self) extends AnyVal {
     
     inline def setFront(value: Boolean): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
     

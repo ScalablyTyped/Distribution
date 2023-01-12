@@ -22,7 +22,8 @@ object ContentTypeData {
     __obj.asInstanceOf[ContentTypeData]
   }
   
-  extension [Self <: ContentTypeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentTypeData] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ListReportsInput {
     __obj.asInstanceOf[ListReportsInput]
   }
   
-  extension [Self <: ListReportsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReportsInput] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: ReportFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

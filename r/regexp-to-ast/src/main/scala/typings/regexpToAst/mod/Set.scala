@@ -27,7 +27,8 @@ object Set {
     __obj.asInstanceOf[Set]
   }
   
-  extension [Self <: Set](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Set] (val x: Self) extends AnyVal {
     
     inline def setComplement(value: Boolean): Self = StObject.set(x, "complement", value.asInstanceOf[js.Any])
     

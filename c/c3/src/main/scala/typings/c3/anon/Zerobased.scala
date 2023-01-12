@@ -18,7 +18,8 @@ object Zerobased {
     __obj.asInstanceOf[Zerobased]
   }
   
-  extension [Self <: Zerobased](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Zerobased] (val x: Self) extends AnyVal {
     
     inline def setZerobased(value: Boolean): Self = StObject.set(x, "zerobased", value.asInstanceOf[js.Any])
     

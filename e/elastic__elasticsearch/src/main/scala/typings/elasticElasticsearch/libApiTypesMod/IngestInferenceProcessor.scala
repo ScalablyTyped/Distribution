@@ -24,7 +24,8 @@ object IngestInferenceProcessor {
     __obj.asInstanceOf[IngestInferenceProcessor]
   }
   
-  extension [Self <: IngestInferenceProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestInferenceProcessor] (val x: Self) extends AnyVal {
     
     inline def setField_map(value: Record[Field, Any]): Self = StObject.set(x, "field_map", value.asInstanceOf[js.Any])
     

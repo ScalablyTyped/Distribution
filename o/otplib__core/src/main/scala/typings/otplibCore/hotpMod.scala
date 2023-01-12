@@ -132,7 +132,8 @@ object hotpMod {
       __obj.asInstanceOf[HOTPOptions_[T]]
     }
     
-    extension [Self <: HOTPOptions_[?], T](x: Self & HOTPOptions_[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HOTPOptions_[?], T] (val x: Self & HOTPOptions_[T]) extends AnyVal {
       
       inline def setAlgorithm(value: HashAlgorithms): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

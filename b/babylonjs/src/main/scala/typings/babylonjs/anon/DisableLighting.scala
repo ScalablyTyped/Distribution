@@ -43,7 +43,8 @@ object DisableLighting {
     __obj.asInstanceOf[DisableLighting]
   }
   
-  extension [Self <: DisableLighting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableLighting] (val x: Self) extends AnyVal {
     
     inline def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
     

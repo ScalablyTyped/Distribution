@@ -23,7 +23,8 @@ object typesMaximumBranchesExceededExceptionMod {
       __obj.asInstanceOf[MaximumBranchesExceededException]
     }
     
-    extension [Self <: MaximumBranchesExceededException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaximumBranchesExceededException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumBranchesExceededException

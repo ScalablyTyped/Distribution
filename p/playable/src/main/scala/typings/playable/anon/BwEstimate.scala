@@ -41,7 +41,8 @@ object BwEstimate {
     __obj.asInstanceOf[BwEstimate]
   }
   
-  extension [Self <: BwEstimate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BwEstimate] (val x: Self) extends AnyVal {
     
     inline def setBitrates(value: Any): Self = StObject.set(x, "bitrates", value.asInstanceOf[js.Any])
     

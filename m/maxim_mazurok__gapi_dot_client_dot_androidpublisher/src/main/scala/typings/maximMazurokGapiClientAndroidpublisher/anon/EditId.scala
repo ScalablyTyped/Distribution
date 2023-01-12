@@ -57,7 +57,8 @@ object EditId {
     __obj.asInstanceOf[EditId]
   }
   
-  extension [Self <: EditId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

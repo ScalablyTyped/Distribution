@@ -155,7 +155,8 @@ object libApnsserviceMod {
       __obj.asInstanceOf[Template]
     }
     
-    extension [Self <: Template](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: String): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       

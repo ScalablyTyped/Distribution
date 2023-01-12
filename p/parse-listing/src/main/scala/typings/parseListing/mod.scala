@@ -136,7 +136,8 @@ object mod {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object mod {
       __obj.asInstanceOf[Permissions_]
     }
     
-    extension [Self <: Permissions_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Permissions_] (val x: Self) extends AnyVal {
       
       inline def setExec(value: Boolean): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
       

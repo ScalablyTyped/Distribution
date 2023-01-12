@@ -23,7 +23,8 @@ object Converter {
     __obj.asInstanceOf[Converter[V]]
   }
   
-  extension [Self <: Converter[?], V](x: Self & Converter[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Converter[?], V] (val x: Self & Converter[V]) extends AnyVal {
     
     inline def setFormat(value: V => String | Null): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     

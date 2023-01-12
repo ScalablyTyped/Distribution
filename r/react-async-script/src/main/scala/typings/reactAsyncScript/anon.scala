@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[AsyncScriptOnLoad]
     }
     
-    extension [Self <: AsyncScriptOnLoad](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncScriptOnLoad] (val x: Self) extends AnyVal {
       
       inline def setAsyncScriptOnLoad(value: () => Unit): Self = StObject.set(x, "asyncScriptOnLoad", js.Any.fromFunction0(value))
       

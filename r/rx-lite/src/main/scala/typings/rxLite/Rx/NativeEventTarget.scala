@@ -20,7 +20,8 @@ object NativeEventTarget {
     __obj.asInstanceOf[NativeEventTarget]
   }
   
-  extension [Self <: NativeEventTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeEventTarget] (val x: Self) extends AnyVal {
     
     inline def setOff(value: (String, js.Function1[/* e */ Any, Any]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     

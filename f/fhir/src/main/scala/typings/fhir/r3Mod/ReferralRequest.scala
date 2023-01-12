@@ -171,7 +171,8 @@ object ReferralRequest {
     __obj.asInstanceOf[ReferralRequest]
   }
   
-  extension [Self <: ReferralRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferralRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthoredOn(value: String): Self = StObject.set(x, "authoredOn", value.asInstanceOf[js.Any])
     

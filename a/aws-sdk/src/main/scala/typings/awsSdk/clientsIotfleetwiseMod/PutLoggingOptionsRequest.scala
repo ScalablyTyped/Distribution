@@ -18,7 +18,8 @@ object PutLoggingOptionsRequest {
     __obj.asInstanceOf[PutLoggingOptionsRequest]
   }
   
-  extension [Self <: PutLoggingOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutLoggingOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogDelivery(value: CloudWatchLogDeliveryOptions): Self = StObject.set(x, "cloudWatchLogDelivery", value.asInstanceOf[js.Any])
   }

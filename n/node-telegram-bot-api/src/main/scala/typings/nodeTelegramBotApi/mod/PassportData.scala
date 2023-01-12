@@ -17,7 +17,8 @@ object PassportData {
     __obj.asInstanceOf[PassportData]
   }
   
-  extension [Self <: PassportData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PassportData] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: EncryptedCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     

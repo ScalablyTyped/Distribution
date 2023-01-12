@@ -1115,7 +1115,8 @@ object modulesGanttMod {
         __obj.asInstanceOf[Point]
       }
       
-      extension [Self <: Point](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
         
         inline def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
         
@@ -1137,7 +1138,8 @@ object modulesGanttMod {
         __obj.asInstanceOf[PointOptionsObject]
       }
       
-      extension [Self <: PointOptionsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PointOptionsObject] (val x: Self) extends AnyVal {
         
         inline def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
         

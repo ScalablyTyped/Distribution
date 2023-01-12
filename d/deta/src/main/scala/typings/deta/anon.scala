@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Cron]
     }
     
-    extension [Self <: Cron](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cron] (val x: Self) extends AnyVal {
       
       inline def setCron(value: Any => Any): Self = StObject.set(x, "cron", js.Any.fromFunction1(value))
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Items]
     }
     
-    extension [Self <: Items](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
       
       inline def setItems(value: ArrayType): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     }
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Last]
     }
     
-    extension [Self <: Last](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Last] (val x: Self) extends AnyVal {
       
       inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       

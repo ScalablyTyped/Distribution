@@ -2360,7 +2360,8 @@ object sapMUploadCollectionMod {
       __obj.asInstanceOf[UploadCollectionSettings]
     }
     
-    extension [Self <: UploadCollectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollectionSettings] (val x: Self) extends AnyVal {
       
       inline def setBeforeUploadStarts(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeUploadStarts", js.Any.fromFunction1(value))
       

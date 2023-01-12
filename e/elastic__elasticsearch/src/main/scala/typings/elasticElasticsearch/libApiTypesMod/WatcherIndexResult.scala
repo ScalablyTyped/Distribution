@@ -15,7 +15,8 @@ object WatcherIndexResult {
     __obj.asInstanceOf[WatcherIndexResult]
   }
   
-  extension [Self <: WatcherIndexResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherIndexResult] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: WatcherIndexResultSummary): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }

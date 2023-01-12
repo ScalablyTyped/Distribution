@@ -18,7 +18,8 @@ object EnableImportFindingsForProductResponse {
     __obj.asInstanceOf[EnableImportFindingsForProductResponse]
   }
   
-  extension [Self <: EnableImportFindingsForProductResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableImportFindingsForProductResponse] (val x: Self) extends AnyVal {
     
     inline def setProductSubscriptionArn(value: NonEmptyString): Self = StObject.set(x, "ProductSubscriptionArn", value.asInstanceOf[js.Any])
     

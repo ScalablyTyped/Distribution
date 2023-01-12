@@ -79,7 +79,8 @@ object libVictoryScatterMod {
       __obj.asInstanceOf[VictoryScatterProps]
     }
     
-    extension [Self <: VictoryScatterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryScatterProps] (val x: Self) extends AnyVal {
       
       inline def setBubbleProperty(value: String): Self = StObject.set(x, "bubbleProperty", value.asInstanceOf[js.Any])
       

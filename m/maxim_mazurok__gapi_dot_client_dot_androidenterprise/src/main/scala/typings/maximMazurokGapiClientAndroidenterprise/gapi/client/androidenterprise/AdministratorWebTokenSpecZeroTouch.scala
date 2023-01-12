@@ -16,7 +16,8 @@ object AdministratorWebTokenSpecZeroTouch {
     __obj.asInstanceOf[AdministratorWebTokenSpecZeroTouch]
   }
   
-  extension [Self <: AdministratorWebTokenSpecZeroTouch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdministratorWebTokenSpecZeroTouch] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

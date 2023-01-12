@@ -335,7 +335,8 @@ object mod {
       __obj.asInstanceOf[Problem]
     }
     
-    extension [Self <: Problem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Problem] (val x: Self) extends AnyVal {
       
       inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -393,7 +394,8 @@ object mod {
       __obj.asInstanceOf[Spec_]
     }
     
-    extension [Self <: Spec_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spec_] (val x: Self) extends AnyVal {
       
       inline def setConform(value: Any => Any): Self = StObject.set(x, "conform", js.Any.fromFunction1(value))
       

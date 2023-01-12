@@ -136,7 +136,8 @@ object mod {
       __obj.asInstanceOf[IMessageOptions]
     }
     
-    extension [Self <: IMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
       
@@ -213,7 +214,8 @@ object mod {
       __obj.asInstanceOf[INotificationOptions]
     }
     
-    extension [Self <: INotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
@@ -282,7 +284,8 @@ object mod {
       __obj.asInstanceOf[IRecipient]
     }
     
-    extension [Self <: IRecipient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRecipient] (val x: Self) extends AnyVal {
       
       inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
@@ -333,7 +336,8 @@ object mod {
       __obj.asInstanceOf[IResponseBody]
     }
     
-    extension [Self <: IResponseBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResponseBody] (val x: Self) extends AnyVal {
       
       inline def setCanonical_ids(value: Double): Self = StObject.set(x, "canonical_ids", value.asInstanceOf[js.Any])
       
@@ -368,7 +372,8 @@ object mod {
       __obj.asInstanceOf[ISenderOptions]
     }
     
-    extension [Self <: ISenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISenderOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
       
@@ -397,7 +402,8 @@ object mod {
       __obj.asInstanceOf[ISenderSendOptions]
     }
     
-    extension [Self <: ISenderSendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISenderSendOptions] (val x: Self) extends AnyVal {
       
       inline def setBackoff(value: Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
       

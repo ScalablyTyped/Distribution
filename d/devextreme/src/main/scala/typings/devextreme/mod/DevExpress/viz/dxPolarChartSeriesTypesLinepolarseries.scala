@@ -31,7 +31,8 @@ object dxPolarChartSeriesTypesLinepolarseries {
     __obj.asInstanceOf[dxPolarChartSeriesTypesLinepolarseries]
   }
   
-  extension [Self <: dxPolarChartSeriesTypesLinepolarseries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartSeriesTypesLinepolarseries] (val x: Self) extends AnyVal {
     
     inline def setHoverMode(value: nearestPoint | includePoints | excludePoints | none): Self = StObject.set(x, "hoverMode", value.asInstanceOf[js.Any])
     

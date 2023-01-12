@@ -38,7 +38,8 @@ object TaskRunProperties {
     __obj.asInstanceOf[TaskRunProperties]
   }
   
-  extension [Self <: TaskRunProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskRunProperties] (val x: Self) extends AnyVal {
     
     inline def setExportLabelsTaskRunProperties(value: ExportLabelsTaskRunProperties): Self = StObject.set(x, "ExportLabelsTaskRunProperties", value.asInstanceOf[js.Any])
     

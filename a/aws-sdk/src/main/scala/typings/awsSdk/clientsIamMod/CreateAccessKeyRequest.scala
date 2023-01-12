@@ -18,7 +18,8 @@ object CreateAccessKeyRequest {
     __obj.asInstanceOf[CreateAccessKeyRequest]
   }
   
-  extension [Self <: CreateAccessKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccessKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object GroupElementProperties {
     __obj.asInstanceOf[GroupElementProperties]
   }
   
-  extension [Self <: GroupElementProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupElementProperties] (val x: Self) extends AnyVal {
     
     inline def setElements(value: js.Array[FieldElementProperties]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

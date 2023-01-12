@@ -22,7 +22,8 @@ object GoogleCloudDialogflowV2SmartReplyAnswer {
     __obj.asInstanceOf[GoogleCloudDialogflowV2SmartReplyAnswer]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2SmartReplyAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2SmartReplyAnswer] (val x: Self) extends AnyVal {
     
     inline def setAnswerRecord(value: String): Self = StObject.set(x, "answerRecord", value.asInstanceOf[js.Any])
     

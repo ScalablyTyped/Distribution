@@ -18,7 +18,8 @@ object InvalidTrackError {
     __obj.asInstanceOf[InvalidTrackError]
   }
   
-  extension [Self <: InvalidTrackError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidTrackError] (val x: Self) extends AnyVal {
     
     inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.InvalidTrackError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

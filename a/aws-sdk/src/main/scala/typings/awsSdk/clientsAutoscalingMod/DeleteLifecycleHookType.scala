@@ -23,7 +23,8 @@ object DeleteLifecycleHookType {
     __obj.asInstanceOf[DeleteLifecycleHookType]
   }
   
-  extension [Self <: DeleteLifecycleHookType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLifecycleHookType] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

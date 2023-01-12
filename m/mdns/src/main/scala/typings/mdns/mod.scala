@@ -1020,7 +1020,8 @@ object mod {
       __obj.asInstanceOf[AdvertisementOptions]
     }
     
-    extension [Self <: AdvertisementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdvertisementOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -1080,7 +1081,8 @@ object mod {
       __obj.asInstanceOf[BrowserOptions]
     }
     
-    extension [Self <: BrowserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -1161,7 +1163,8 @@ object mod {
       __obj.asInstanceOf[DnsSdError]
     }
     
-    extension [Self <: DnsSdError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DnsSdError] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -1217,7 +1220,8 @@ object mod {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object RepositoryCredentials {
     __obj.asInstanceOf[RepositoryCredentials]
   }
   
-  extension [Self <: RepositoryCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryCredentials] (val x: Self) extends AnyVal {
     
     inline def setCredentialsParameter(value: String): Self = StObject.set(x, "credentialsParameter", value.asInstanceOf[js.Any])
   }

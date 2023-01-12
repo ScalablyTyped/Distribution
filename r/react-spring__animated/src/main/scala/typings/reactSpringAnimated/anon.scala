@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Animated]
     }
     
-    extension [Self <: Animated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animated] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: WithAnimated): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     }
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[PartialHostConfig]
     }
     
-    extension [Self <: PartialHostConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHostConfig] (val x: Self) extends AnyVal {
       
       inline def setApplyAnimatedValues(value: (/* node */ Any, /* props */ Lookup[Any]) => Boolean | Unit): Self = StObject.set(x, "applyAnimatedValues", js.Any.fromFunction2(value))
       

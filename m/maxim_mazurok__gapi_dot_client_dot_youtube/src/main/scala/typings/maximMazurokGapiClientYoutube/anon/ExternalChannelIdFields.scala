@@ -57,7 +57,8 @@ object ExternalChannelIdFields {
     __obj.asInstanceOf[ExternalChannelIdFields]
   }
   
-  extension [Self <: ExternalChannelIdFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalChannelIdFields] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

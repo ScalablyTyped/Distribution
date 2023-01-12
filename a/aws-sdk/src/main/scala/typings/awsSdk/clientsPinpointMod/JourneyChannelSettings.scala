@@ -23,7 +23,8 @@ object JourneyChannelSettings {
     __obj.asInstanceOf[JourneyChannelSettings]
   }
   
-  extension [Self <: JourneyChannelSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JourneyChannelSettings] (val x: Self) extends AnyVal {
     
     inline def setConnectCampaignArn(value: string): Self = StObject.set(x, "ConnectCampaignArn", value.asInstanceOf[js.Any])
     

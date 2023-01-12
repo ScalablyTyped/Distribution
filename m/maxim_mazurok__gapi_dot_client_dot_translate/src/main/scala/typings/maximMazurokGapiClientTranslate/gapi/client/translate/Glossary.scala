@@ -37,7 +37,8 @@ object Glossary {
     __obj.asInstanceOf[Glossary]
   }
   
-  extension [Self <: Glossary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Glossary] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

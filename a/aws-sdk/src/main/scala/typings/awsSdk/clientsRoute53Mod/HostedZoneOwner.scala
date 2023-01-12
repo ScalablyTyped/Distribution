@@ -23,7 +23,8 @@ object HostedZoneOwner {
     __obj.asInstanceOf[HostedZoneOwner]
   }
   
-  extension [Self <: HostedZoneOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedZoneOwner] (val x: Self) extends AnyVal {
     
     inline def setOwningAccount(value: AWSAccountID): Self = StObject.set(x, "OwningAccount", value.asInstanceOf[js.Any])
     

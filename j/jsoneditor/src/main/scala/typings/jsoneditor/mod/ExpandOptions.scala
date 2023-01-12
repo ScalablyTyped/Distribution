@@ -19,7 +19,8 @@ object ExpandOptions {
     __obj.asInstanceOf[ExpandOptions]
   }
   
-  extension [Self <: ExpandOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandOptions] (val x: Self) extends AnyVal {
     
     inline def setIsExpand(value: Boolean): Self = StObject.set(x, "isExpand", value.asInstanceOf[js.Any])
     

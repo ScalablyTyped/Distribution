@@ -34,7 +34,8 @@ object DeidentifyDicomStoreRequest {
     __obj.asInstanceOf[DeidentifyDicomStoreRequest]
   }
   
-  extension [Self <: DeidentifyDicomStoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeidentifyDicomStoreRequest] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: DeidentifyConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

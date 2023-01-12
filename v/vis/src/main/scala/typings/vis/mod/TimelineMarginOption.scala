@@ -17,7 +17,8 @@ object TimelineMarginOption {
     __obj.asInstanceOf[TimelineMarginOption]
   }
   
-  extension [Self <: TimelineMarginOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineMarginOption] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

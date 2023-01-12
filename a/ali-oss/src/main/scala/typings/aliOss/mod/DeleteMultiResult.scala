@@ -18,7 +18,8 @@ object DeleteMultiResult {
     __obj.asInstanceOf[DeleteMultiResult]
   }
   
-  extension [Self <: DeleteMultiResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMultiResult] (val x: Self) extends AnyVal {
     
     inline def setDeleted(value: js.Array[String]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

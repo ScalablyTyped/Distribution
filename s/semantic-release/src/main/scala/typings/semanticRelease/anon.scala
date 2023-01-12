@@ -108,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Await]
     }
     
-    extension [Self <: Await](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Await] (val x: Self) extends AnyVal {
       
       inline def setAwait(value: LoggerFunction): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object anon {
       __obj.asInstanceOf[Commits]
     }
     
-    extension [Self <: Commits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Commits] (val x: Self) extends AnyVal {
       
       inline def setCommits(value: js.Array[Commit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
@@ -222,7 +224,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -251,7 +254,8 @@ object anon {
       __obj.asInstanceOf[Long]
     }
     
-    extension [Self <: Long](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Long] (val x: Self) extends AnyVal {
       
       inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
       

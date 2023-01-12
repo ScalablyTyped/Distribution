@@ -70,7 +70,8 @@ object libResolveInterfaceMod {
       __obj.asInstanceOf[ProviderLike]
     }
     
-    extension [Self <: ProviderLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderLike] (val x: Self) extends AnyVal {
       
       inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object libResolveInterfaceMod {
       __obj.asInstanceOf[ResolvableLiteral]
     }
     
-    extension [Self <: ResolvableLiteral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvableLiteral] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -267,7 +269,8 @@ object libResolveInterfaceMod {
       __obj.asInstanceOf[ResolvePolicy]
     }
     
-    extension [Self <: ResolvePolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvePolicy] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: PolicyAsync): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

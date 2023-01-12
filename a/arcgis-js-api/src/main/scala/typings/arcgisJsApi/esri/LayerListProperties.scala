@@ -77,7 +77,8 @@ object LayerListProperties {
     __obj.asInstanceOf[LayerListProperties]
   }
   
-  extension [Self <: LayerListProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerListProperties] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

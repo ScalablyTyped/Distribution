@@ -153,7 +153,8 @@ object anon {
       __obj.asInstanceOf[BoundariesElement[TItem, CustomTextAreaProps]]
     }
     
-    extension [Self <: BoundariesElement[?, ?], TItem, CustomTextAreaProps /* <: TextareaHTMLAttributes[HTMLTextAreaElement] */](x: Self & (BoundariesElement[TItem, CustomTextAreaProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundariesElement[?, ?], TItem, CustomTextAreaProps /* <: TextareaHTMLAttributes[HTMLTextAreaElement] */] (val x: Self & (BoundariesElement[TItem, CustomTextAreaProps])) extends AnyVal {
       
       inline def setBoundariesElement(value: String | HTMLElement): Self = StObject.set(x, "boundariesElement", value.asInstanceOf[js.Any])
       
@@ -269,7 +270,8 @@ object anon {
       __obj.asInstanceOf[Component[CustomTextAreaProps]]
     }
     
-    extension [Self <: Component[?], CustomTextAreaProps /* <: TextareaHTMLAttributes[HTMLTextAreaElement] */](x: Self & Component[CustomTextAreaProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component[?], CustomTextAreaProps /* <: TextareaHTMLAttributes[HTMLTextAreaElement] */] (val x: Self & Component[CustomTextAreaProps]) extends AnyVal {
       
       inline def setComponent(value: typings.webscopeioReactTextareaAutocomplete.mod.Component[CustomTextAreaProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -290,7 +292,8 @@ object anon {
       __obj.asInstanceOf[CurrentTrigger[TItem]]
     }
     
-    extension [Self <: CurrentTrigger[?], TItem](x: Self & CurrentTrigger[TItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentTrigger[?], TItem] (val x: Self & CurrentTrigger[TItem]) extends AnyVal {
       
       inline def setCurrentTrigger(value: String): Self = StObject.set(x, "currentTrigger", value.asInstanceOf[js.Any])
       
@@ -311,7 +314,8 @@ object anon {
       __obj.asInstanceOf[Data[TItem]]
     }
     
-    extension [Self <: Data[?], TItem](x: Self & Data[TItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data[?], TItem] (val x: Self & Data[TItem]) extends AnyVal {
       
       inline def setData(value: js.Array[TItem] | js.Promise[js.Array[TItem]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -332,7 +336,8 @@ object anon {
       __obj.asInstanceOf[Item[TItem]]
     }
     
-    extension [Self <: Item[?], TItem](x: Self & Item[TItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item[?], TItem] (val x: Self & Item[TItem]) extends AnyVal {
       
       inline def setCurrentTrigger(value: String): Self = StObject.set(x, "currentTrigger", value.asInstanceOf[js.Any])
       
@@ -353,7 +358,8 @@ object anon {
       __obj.asInstanceOf[SelectionEnd]
     }
     
-    extension [Self <: SelectionEnd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionEnd] (val x: Self) extends AnyVal {
       
       inline def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
       

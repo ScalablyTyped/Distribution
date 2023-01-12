@@ -62,7 +62,8 @@ object RecurrenceProperties {
     __obj.asInstanceOf[RecurrenceProperties]
   }
   
-  extension [Self <: RecurrenceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecurrenceProperties] (val x: Self) extends AnyVal {
     
     inline def setDayOfMonth(value: Double): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
     

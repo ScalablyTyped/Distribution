@@ -18,7 +18,8 @@ object BatchDisassociateProjectAssetsResponse {
     __obj.asInstanceOf[BatchDisassociateProjectAssetsResponse]
   }
   
-  extension [Self <: BatchDisassociateProjectAssetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDisassociateProjectAssetsResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchDisassociateProjectAssetsErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

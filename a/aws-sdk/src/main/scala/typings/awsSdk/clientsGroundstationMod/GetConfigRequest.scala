@@ -23,7 +23,8 @@ object GetConfigRequest {
     __obj.asInstanceOf[GetConfigRequest]
   }
   
-  extension [Self <: GetConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigId(value: Uuid): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     

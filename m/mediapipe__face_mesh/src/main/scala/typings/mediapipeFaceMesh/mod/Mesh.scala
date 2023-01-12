@@ -26,7 +26,8 @@ object Mesh {
     __obj.asInstanceOf[Mesh]
   }
   
-  extension [Self <: Mesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mesh] (val x: Self) extends AnyVal {
     
     inline def setGetIndexBufferList(value: () => js.typedarray.Uint32Array): Self = StObject.set(x, "getIndexBufferList", js.Any.fromFunction0(value))
     

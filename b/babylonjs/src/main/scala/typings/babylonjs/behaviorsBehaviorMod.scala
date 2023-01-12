@@ -35,7 +35,8 @@ object behaviorsBehaviorMod {
       __obj.asInstanceOf[Behavior[T]]
     }
     
-    extension [Self <: Behavior[?], T](x: Self & Behavior[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Behavior[?], T] (val x: Self & Behavior[T]) extends AnyVal {
       
       inline def setAttach(value: T => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
       
@@ -81,7 +82,8 @@ object behaviorsBehaviorMod {
       __obj.asInstanceOf[IBehaviorAware[T]]
     }
     
-    extension [Self <: IBehaviorAware[?], T](x: Self & IBehaviorAware[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBehaviorAware[?], T] (val x: Self & IBehaviorAware[T]) extends AnyVal {
       
       inline def setAddBehavior(value: Behavior[T] => T): Self = StObject.set(x, "addBehavior", js.Any.fromFunction1(value))
       

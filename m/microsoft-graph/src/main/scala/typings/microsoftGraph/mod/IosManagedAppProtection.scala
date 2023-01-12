@@ -42,7 +42,8 @@ object IosManagedAppProtection {
     __obj.asInstanceOf[IosManagedAppProtection]
   }
   
-  extension [Self <: IosManagedAppProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosManagedAppProtection] (val x: Self) extends AnyVal {
     
     inline def setAppDataEncryptionType(value: ManagedAppDataEncryptionType): Self = StObject.set(x, "appDataEncryptionType", value.asInstanceOf[js.Any])
     

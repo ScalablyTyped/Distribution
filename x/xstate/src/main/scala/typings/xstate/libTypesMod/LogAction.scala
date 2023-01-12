@@ -21,7 +21,8 @@ object LogAction {
     __obj.asInstanceOf[LogAction[TContext, TEvent]]
   }
   
-  extension [Self <: LogAction[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (LogAction[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogAction[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (LogAction[TContext, TEvent])) extends AnyVal {
     
     inline def setExpr(value: String | (LogExpr[TContext, TEvent])): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     

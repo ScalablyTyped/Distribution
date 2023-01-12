@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsSaveBoldMod extends Shortcut {
       __obj.asInstanceOf[SaveBoldProps]
     }
     
-    extension [Self <: SaveBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

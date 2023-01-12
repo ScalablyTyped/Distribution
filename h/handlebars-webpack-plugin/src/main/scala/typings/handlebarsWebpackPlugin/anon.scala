@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ProjectHelpers]
     }
     
-    extension [Self <: ProjectHelpers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectHelpers] (val x: Self) extends AnyVal {
       
       inline def setProjectHelpers(value: String): Self = StObject.set(x, "projectHelpers", value.asInstanceOf[js.Any])
     }

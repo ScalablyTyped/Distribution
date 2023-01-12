@@ -23,7 +23,8 @@ object ActivitiesResponse {
     __obj.asInstanceOf[ActivitiesResponse]
   }
   
-  extension [Self <: ActivitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setItem(value: ListOfActivityResponse): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     

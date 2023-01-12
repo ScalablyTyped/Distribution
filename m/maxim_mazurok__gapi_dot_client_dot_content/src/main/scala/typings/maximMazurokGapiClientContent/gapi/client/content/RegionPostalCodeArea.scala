@@ -19,7 +19,8 @@ object RegionPostalCodeArea {
     __obj.asInstanceOf[RegionPostalCodeArea]
   }
   
-  extension [Self <: RegionPostalCodeArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionPostalCodeArea] (val x: Self) extends AnyVal {
     
     inline def setPostalCodes(value: js.Array[RegionPostalCodeAreaPostalCodeRange]): Self = StObject.set(x, "postalCodes", value.asInstanceOf[js.Any])
     

@@ -528,7 +528,8 @@ object Bucket {
         __obj.asInstanceOf[Meta]
       }
       
-      extension [Self <: Meta](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
         
         inline def setErrors(value: Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
@@ -696,7 +697,8 @@ object Bucket {
         __obj.asInstanceOf[typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta]
       }
       
-      extension [Self <: typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta] (val x: Self) extends AnyVal {
         
         inline def setRequestID(value: Double): Self = StObject.set(x, "requestID", value.asInstanceOf[js.Any])
       }
@@ -855,7 +857,8 @@ object Bucket {
         __obj.asInstanceOf[typings.couchbase.mod.Bucket.ViewQueryResponse.Meta]
       }
       
-      extension [Self <: typings.couchbase.mod.Bucket.ViewQueryResponse.Meta](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.couchbase.mod.Bucket.ViewQueryResponse.Meta] (val x: Self) extends AnyVal {
         
         inline def setTotal_rows(value: Double): Self = StObject.set(x, "total_rows", value.asInstanceOf[js.Any])
       }

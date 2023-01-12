@@ -22,7 +22,8 @@ object ActivityContentDetailsRecommendation {
     __obj.asInstanceOf[ActivityContentDetailsRecommendation]
   }
   
-  extension [Self <: ActivityContentDetailsRecommendation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityContentDetailsRecommendation] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

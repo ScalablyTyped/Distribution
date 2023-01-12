@@ -17,7 +17,8 @@ object ApplicationjsonSubmodulegiturl {
     __obj.asInstanceOf[ApplicationjsonSubmodulegiturl]
   }
   
-  extension [Self <: ApplicationjsonSubmodulegiturl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonSubmodulegiturl] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Submodulegiturl): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

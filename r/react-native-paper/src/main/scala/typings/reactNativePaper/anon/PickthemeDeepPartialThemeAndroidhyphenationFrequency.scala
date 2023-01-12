@@ -144,7 +144,8 @@ object PickthemeDeepPartialThemeAndroidhyphenationFrequency {
     __obj.asInstanceOf[PickthemeDeepPartialThemeAndroidhyphenationFrequency]
   }
   
-  extension [Self <: PickthemeDeepPartialThemeAndroidhyphenationFrequency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickthemeDeepPartialThemeAndroidhyphenationFrequency] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object BboxBBox {
     __obj.asInstanceOf[BboxBBox]
   }
   
-  extension [Self <: BboxBBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BboxBBox] (val x: Self) extends AnyVal {
     
     inline def setBbox(value: BBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object PointerArgPropsdownboolea {
     __obj.asInstanceOf[PointerArgPropsdownboolea]
   }
   
-  extension [Self <: PointerArgPropsdownboolea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerArgPropsdownboolea] (val x: Self) extends AnyVal {
     
     inline def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     

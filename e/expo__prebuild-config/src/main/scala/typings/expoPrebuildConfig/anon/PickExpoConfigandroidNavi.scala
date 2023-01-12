@@ -17,7 +17,8 @@ object PickExpoConfigandroidNavi {
     __obj.asInstanceOf[PickExpoConfigandroidNavi]
   }
   
-  extension [Self <: PickExpoConfigandroidNavi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfigandroidNavi] (val x: Self) extends AnyVal {
     
     inline def setAndroidNavigationBar(value: BarStyle): Self = StObject.set(x, "androidNavigationBar", value.asInstanceOf[js.Any])
     

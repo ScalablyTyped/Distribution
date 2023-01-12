@@ -27,7 +27,8 @@ object UserIdInfo {
     __obj.asInstanceOf[UserIdInfo]
   }
   
-  extension [Self <: UserIdInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserIdInfo] (val x: Self) extends AnyVal {
     
     inline def setGet_nameId(value: () => String): Self = StObject.set(x, "get_nameId", js.Any.fromFunction0(value))
     

@@ -16,7 +16,8 @@ object AudioScheduledSourceNodeEventMap {
     __obj.asInstanceOf[AudioScheduledSourceNodeEventMap]
   }
   
-  extension [Self <: AudioScheduledSourceNodeEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioScheduledSourceNodeEventMap] (val x: Self) extends AnyVal {
     
     inline def setEnded(value: Event): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object ContinueLegendRailCfg {
     __obj.asInstanceOf[ContinueLegendRailCfg]
   }
   
-  extension [Self <: ContinueLegendRailCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueLegendRailCfg] (val x: Self) extends AnyVal {
     
     inline def setDefaultLength(value: Double): Self = StObject.set(x, "defaultLength", value.asInstanceOf[js.Any])
     

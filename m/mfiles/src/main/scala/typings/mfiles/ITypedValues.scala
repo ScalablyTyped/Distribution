@@ -26,7 +26,8 @@ object ITypedValues {
     __obj.asInstanceOf[ITypedValues]
   }
   
-  extension [Self <: ITypedValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITypedValues] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, ITypedValue) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

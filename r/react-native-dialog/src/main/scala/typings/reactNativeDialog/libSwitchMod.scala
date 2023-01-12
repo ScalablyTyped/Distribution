@@ -31,7 +31,8 @@ object libSwitchMod extends Shortcut {
       __obj.asInstanceOf[DialogSwitchProps]
     }
     
-    extension [Self <: DialogSwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogSwitchProps] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object DistanceToolOptions {
     __obj.asInstanceOf[DistanceToolOptions]
   }
   
-  extension [Self <: DistanceToolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceToolOptions] (val x: Self) extends AnyVal {
     
     inline def setCloseIcon(value: Icon): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
     

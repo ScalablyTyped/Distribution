@@ -79,7 +79,8 @@ object Job {
     __obj.asInstanceOf[Job]
   }
   
-  extension [Self <: Job](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
     
     inline def setAppEngineHttpTarget(value: AppEngineHttpTarget): Self = StObject.set(x, "appEngineHttpTarget", value.asInstanceOf[js.Any])
     

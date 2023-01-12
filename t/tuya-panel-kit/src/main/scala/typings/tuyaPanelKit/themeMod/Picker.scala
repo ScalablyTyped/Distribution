@@ -26,7 +26,8 @@ object Picker {
     __obj.asInstanceOf[Picker]
   }
   
-  extension [Self <: Picker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Picker] (val x: Self) extends AnyVal {
     
     inline def setDark(value: PickerTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

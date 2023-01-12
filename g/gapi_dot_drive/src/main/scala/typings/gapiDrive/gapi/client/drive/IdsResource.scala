@@ -20,7 +20,8 @@ object IdsResource {
     __obj.asInstanceOf[IdsResource]
   }
   
-  extension [Self <: IdsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdsResource] (val x: Self) extends AnyVal {
     
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

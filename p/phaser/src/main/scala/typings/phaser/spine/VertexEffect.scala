@@ -19,7 +19,8 @@ object VertexEffect {
     __obj.asInstanceOf[VertexEffect]
   }
   
-  extension [Self <: VertexEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexEffect] (val x: Self) extends AnyVal {
     
     inline def setBegin(value: Skeleton => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
     

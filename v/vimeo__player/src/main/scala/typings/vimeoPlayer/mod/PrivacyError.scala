@@ -18,7 +18,8 @@ object PrivacyError {
     __obj.asInstanceOf[PrivacyError]
   }
   
-  extension [Self <: PrivacyError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivacyError] (val x: Self) extends AnyVal {
     
     inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.PrivacyError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

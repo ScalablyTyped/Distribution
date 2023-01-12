@@ -33,7 +33,8 @@ object DiscoverInputSchemaResponse {
     __obj.asInstanceOf[DiscoverInputSchemaResponse]
   }
   
-  extension [Self <: DiscoverInputSchemaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoverInputSchemaResponse] (val x: Self) extends AnyVal {
     
     inline def setInputSchema(value: SourceSchema): Self = StObject.set(x, "InputSchema", value.asInstanceOf[js.Any])
     

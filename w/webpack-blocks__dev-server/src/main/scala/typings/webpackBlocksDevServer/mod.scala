@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[ContextObject]
     }
     
-    extension [Self <: ContextObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextObject] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[HistoryOptions]
     }
     
-    extension [Self <: HistoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableDotRule(value: Boolean): Self = StObject.set(x, "disableDotRule", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: (/* app */ Any, /* server */ Any) => Unit): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
       
@@ -437,7 +440,8 @@ object mod {
       __obj.asInstanceOf[RewritesObject]
     }
     
-    extension [Self <: RewritesObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RewritesObject] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: js.RegExp): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -466,7 +470,8 @@ object mod {
       __obj.asInstanceOf[TransportMode]
     }
     
-    extension [Self <: TransportMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportMode] (val x: Self) extends AnyVal {
       
       inline def setClient(value: String | PathFunction): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -497,7 +502,8 @@ object mod {
       __obj.asInstanceOf[WatchOptions]
     }
     
-    extension [Self <: WatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
       
       inline def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
       

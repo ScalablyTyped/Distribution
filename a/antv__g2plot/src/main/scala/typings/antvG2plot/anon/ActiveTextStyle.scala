@@ -46,7 +46,8 @@ object ActiveTextStyle {
     __obj.asInstanceOf[ActiveTextStyle]
   }
   
-  extension [Self <: ActiveTextStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveTextStyle] (val x: Self) extends AnyVal {
     
     inline def setActiveTextStyle(value: ShapeAttrs): Self = StObject.set(x, "activeTextStyle", value.asInstanceOf[js.Any])
     

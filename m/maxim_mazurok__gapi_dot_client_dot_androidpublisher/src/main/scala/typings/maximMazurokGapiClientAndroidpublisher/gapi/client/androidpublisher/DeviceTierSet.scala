@@ -16,7 +16,8 @@ object DeviceTierSet {
     __obj.asInstanceOf[DeviceTierSet]
   }
   
-  extension [Self <: DeviceTierSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceTierSet] (val x: Self) extends AnyVal {
     
     inline def setDeviceTiers(value: js.Array[DeviceTier]): Self = StObject.set(x, "deviceTiers", value.asInstanceOf[js.Any])
     

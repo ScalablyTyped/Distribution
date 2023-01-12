@@ -49,7 +49,8 @@ object Transport {
     __obj.asInstanceOf[Transport]
   }
   
-  extension [Self <: Transport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

@@ -20,7 +20,8 @@ object VenueData {
     __obj.asInstanceOf[VenueData]
   }
   
-  extension [Self <: VenueData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VenueData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

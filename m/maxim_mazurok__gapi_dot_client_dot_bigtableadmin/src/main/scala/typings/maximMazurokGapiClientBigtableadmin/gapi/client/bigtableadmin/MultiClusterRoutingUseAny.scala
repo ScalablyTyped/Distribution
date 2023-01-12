@@ -16,7 +16,8 @@ object MultiClusterRoutingUseAny {
     __obj.asInstanceOf[MultiClusterRoutingUseAny]
   }
   
-  extension [Self <: MultiClusterRoutingUseAny](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiClusterRoutingUseAny] (val x: Self) extends AnyVal {
     
     inline def setClusterIds(value: js.Array[String]): Self = StObject.set(x, "clusterIds", value.asInstanceOf[js.Any])
     

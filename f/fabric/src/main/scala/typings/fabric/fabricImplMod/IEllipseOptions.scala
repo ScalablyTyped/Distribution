@@ -25,7 +25,8 @@ object IEllipseOptions {
     __obj.asInstanceOf[IEllipseOptions]
   }
   
-  extension [Self <: IEllipseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEllipseOptions] (val x: Self) extends AnyVal {
     
     inline def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
     

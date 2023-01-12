@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[NextValueFnParams[T]]
     }
     
-    extension [Self <: NextValueFnParams[?], T](x: Self & NextValueFnParams[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NextValueFnParams[?], T] (val x: Self & NextValueFnParams[T]) extends AnyVal {
       
       inline def setArrayValues(value: js.Array[T]): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[ParallelProcessingParams[T]]
     }
     
-    extension [Self <: ParallelProcessingParams[?], T](x: Self & ParallelProcessingParams[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParallelProcessingParams[?], T] (val x: Self & ParallelProcessingParams[T]) extends AnyVal {
       
       inline def setArrayValues(value: js.Array[T]): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object mod {
       __obj.asInstanceOf[ProcessingFnParams[T]]
     }
     
-    extension [Self <: ProcessingFnParams[?], T](x: Self & ProcessingFnParams[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessingFnParams[?], T] (val x: Self & ProcessingFnParams[T]) extends AnyVal {
       
       inline def setArrayValues(value: js.Array[T]): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object mod {
       __obj.asInstanceOf[StackError[T]]
     }
     
-    extension [Self <: StackError[?], T](x: Self & StackError[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackError[?], T] (val x: Self & StackError[T]) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

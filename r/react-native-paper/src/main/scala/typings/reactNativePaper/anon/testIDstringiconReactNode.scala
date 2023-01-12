@@ -35,7 +35,8 @@ object testIDstringiconReactNode {
     __obj.asInstanceOf[testIDstringiconReactNode]
   }
   
-  extension [Self <: testIDstringiconReactNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: testIDstringiconReactNode] (val x: Self) extends AnyVal {
     
     inline def setForceFocus(value: () => Unit): Self = StObject.set(x, "forceFocus", js.Any.fromFunction0(value))
     

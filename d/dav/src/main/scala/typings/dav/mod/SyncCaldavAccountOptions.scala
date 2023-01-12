@@ -42,7 +42,8 @@ object SyncCaldavAccountOptions {
     __obj.asInstanceOf[SyncCaldavAccountOptions]
   }
   
-  extension [Self <: SyncCaldavAccountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncCaldavAccountOptions] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[js.Object]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

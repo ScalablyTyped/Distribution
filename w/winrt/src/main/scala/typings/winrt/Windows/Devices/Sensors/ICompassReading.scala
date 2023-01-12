@@ -19,7 +19,8 @@ object ICompassReading {
     __obj.asInstanceOf[ICompassReading]
   }
   
-  extension [Self <: ICompassReading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICompassReading] (val x: Self) extends AnyVal {
     
     inline def setHeadingMagneticNorth(value: Double): Self = StObject.set(x, "headingMagneticNorth", value.asInstanceOf[js.Any])
     

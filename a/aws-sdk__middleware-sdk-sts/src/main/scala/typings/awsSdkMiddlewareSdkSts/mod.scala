@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    extension [Self <: PreviouslyResolved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
       
       inline def setCredentialDefaultProvider(value: Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[StsAuthConfigOptions]
     }
     
-    extension [Self <: StsAuthConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StsAuthConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setStsClientCtor(value: Instantiable1[/* clientConfig */ Any, Client[Any, Any, Any]]): Self = StObject.set(x, "stsClientCtor", value.asInstanceOf[js.Any])
     }

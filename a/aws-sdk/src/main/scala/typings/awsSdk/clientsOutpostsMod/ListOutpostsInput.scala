@@ -32,7 +32,8 @@ object ListOutpostsInput {
     __obj.asInstanceOf[ListOutpostsInput]
   }
   
-  extension [Self <: ListOutpostsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOutpostsInput] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZoneFilter(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZoneFilter", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object srcInternalMod {
       __obj.asInstanceOf[BuilderDescription]
     }
     
-    extension [Self <: BuilderDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuilderDescription] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: BuilderInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }

@@ -31,7 +31,8 @@ object MangleOptions {
     __obj.asInstanceOf[MangleOptions]
   }
   
-  extension [Self <: MangleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MangleOptions] (val x: Self) extends AnyVal {
     
     inline def setEval(value: Boolean): Self = StObject.set(x, "eval", value.asInstanceOf[js.Any])
     

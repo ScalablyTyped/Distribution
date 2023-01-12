@@ -20,7 +20,8 @@ object NodesInfoNodeInfoTransport {
     __obj.asInstanceOf[NodesInfoNodeInfoTransport]
   }
   
-  extension [Self <: NodesInfoNodeInfoTransport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoTransport] (val x: Self) extends AnyVal {
     
     inline def setBound_address(value: js.Array[String]): Self = StObject.set(x, "bound_address", value.asInstanceOf[js.Any])
     

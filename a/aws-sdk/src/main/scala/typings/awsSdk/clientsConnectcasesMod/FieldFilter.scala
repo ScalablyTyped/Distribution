@@ -43,7 +43,8 @@ object FieldFilter {
     __obj.asInstanceOf[FieldFilter]
   }
   
-  extension [Self <: FieldFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldFilter] (val x: Self) extends AnyVal {
     
     inline def setContains(value: FieldValue): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     

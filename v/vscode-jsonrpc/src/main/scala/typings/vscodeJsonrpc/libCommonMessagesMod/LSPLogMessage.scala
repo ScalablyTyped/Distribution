@@ -24,7 +24,8 @@ object LSPLogMessage {
     __obj.asInstanceOf[LSPLogMessage]
   }
   
-  extension [Self <: LSPLogMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LSPLogMessage] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: RequestMessage | ResponseMessage | NotificationMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

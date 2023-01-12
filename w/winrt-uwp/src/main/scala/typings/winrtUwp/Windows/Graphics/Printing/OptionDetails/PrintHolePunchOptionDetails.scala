@@ -48,7 +48,8 @@ object PrintHolePunchOptionDetails {
     __obj.asInstanceOf[PrintHolePunchOptionDetails]
   }
   
-  extension [Self <: PrintHolePunchOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintHolePunchOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

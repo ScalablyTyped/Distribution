@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[FloodSubInit]
     }
     
-    extension [Self <: FloodSubInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FloodSubInit] (val x: Self) extends AnyVal {
       
       inline def setSeenTTL(value: Double): Self = StObject.set(x, "seenTTL", value.asInstanceOf[js.Any])
       

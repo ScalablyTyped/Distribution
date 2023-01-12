@@ -19,7 +19,8 @@ object ListInventoriesResponse {
     __obj.asInstanceOf[ListInventoriesResponse]
   }
   
-  extension [Self <: ListInventoriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInventoriesResponse] (val x: Self) extends AnyVal {
     
     inline def setInventories(value: js.Array[Inventory]): Self = StObject.set(x, "inventories", value.asInstanceOf[js.Any])
     

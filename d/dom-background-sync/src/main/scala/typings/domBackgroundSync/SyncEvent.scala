@@ -19,7 +19,8 @@ object SyncEvent {
     __obj.asInstanceOf[SyncEvent]
   }
   
-  extension [Self <: SyncEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncEvent] (val x: Self) extends AnyVal {
     
     inline def setLastChance(value: Boolean): Self = StObject.set(x, "lastChance", value.asInstanceOf[js.Any])
     

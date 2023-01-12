@@ -23,7 +23,8 @@ object PutVoiceConnectorOriginationRequest {
     __obj.asInstanceOf[PutVoiceConnectorOriginationRequest]
   }
   
-  extension [Self <: PutVoiceConnectorOriginationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutVoiceConnectorOriginationRequest] (val x: Self) extends AnyVal {
     
     inline def setOrigination(value: Origination): Self = StObject.set(x, "Origination", value.asInstanceOf[js.Any])
     

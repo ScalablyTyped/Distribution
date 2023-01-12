@@ -34,7 +34,8 @@ object BoundingBoxOptions {
     __obj.asInstanceOf[BoundingBoxOptions]
   }
   
-  extension [Self <: BoundingBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundingBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeEdges(value: Boolean): Self = StObject.set(x, "includeEdges", value.asInstanceOf[js.Any])
     

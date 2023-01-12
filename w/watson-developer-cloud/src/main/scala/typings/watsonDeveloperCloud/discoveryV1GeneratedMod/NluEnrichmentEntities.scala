@@ -35,7 +35,8 @@ object NluEnrichmentEntities {
     __obj.asInstanceOf[NluEnrichmentEntities]
   }
   
-  extension [Self <: NluEnrichmentEntities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NluEnrichmentEntities] (val x: Self) extends AnyVal {
     
     inline def setEmotion(value: Boolean): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     

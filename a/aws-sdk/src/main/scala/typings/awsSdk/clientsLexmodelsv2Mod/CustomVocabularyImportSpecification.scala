@@ -28,7 +28,8 @@ object CustomVocabularyImportSpecification {
     __obj.asInstanceOf[CustomVocabularyImportSpecification]
   }
   
-  extension [Self <: CustomVocabularyImportSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomVocabularyImportSpecification] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

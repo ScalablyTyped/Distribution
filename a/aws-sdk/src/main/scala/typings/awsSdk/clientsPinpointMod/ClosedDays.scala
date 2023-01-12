@@ -38,7 +38,8 @@ object ClosedDays {
     __obj.asInstanceOf[ClosedDays]
   }
   
-  extension [Self <: ClosedDays](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClosedDays] (val x: Self) extends AnyVal {
     
     inline def setCUSTOM(value: ListOfClosedDaysRules): Self = StObject.set(x, "CUSTOM", value.asInstanceOf[js.Any])
     

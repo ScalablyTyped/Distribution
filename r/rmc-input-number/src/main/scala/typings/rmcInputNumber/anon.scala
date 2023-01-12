@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[FocusOnUpDown]
     }
     
-    extension [Self <: FocusOnUpDown](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusOnUpDown] (val x: Self) extends AnyVal {
       
       inline def setFocusOnUpDown(value: Boolean): Self = StObject.set(x, "focusOnUpDown", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object anon {
       __obj.asInstanceOf[RegisteredStyleBrand]
     }
     
-    extension [Self <: RegisteredStyleBrand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisteredStyleBrand] (val x: Self) extends AnyVal {
       
       inline def set__registeredStyleBrand(value: ViewStyle | TextStyle | ImageStyle): Self = StObject.set(x, "__registeredStyleBrand", value.asInstanceOf[js.Any])
     }

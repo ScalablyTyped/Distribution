@@ -33,7 +33,8 @@ object IotAnalyticsAction {
     __obj.asInstanceOf[IotAnalyticsAction]
   }
   
-  extension [Self <: IotAnalyticsAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IotAnalyticsAction] (val x: Self) extends AnyVal {
     
     inline def setBatchMode(value: BatchMode): Self = StObject.set(x, "batchMode", value.asInstanceOf[js.Any])
     

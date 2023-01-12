@@ -49,7 +49,8 @@ object distTypesMiddlewaresXFrameOptionsMod {
       __obj.asInstanceOf[XFrameOptionsOptions]
     }
     
-    extension [Self <: XFrameOptionsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFrameOptionsOptions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: deny | sameorigin): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object Setting {
     __obj.asInstanceOf[Setting]
   }
   
-  extension [Self <: Setting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Setting] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

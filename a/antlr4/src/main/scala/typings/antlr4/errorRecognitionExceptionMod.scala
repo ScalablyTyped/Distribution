@@ -117,7 +117,8 @@ object errorRecognitionExceptionMod {
       __obj.asInstanceOf[RecognitionException]
     }
     
-    extension [Self <: RecognitionException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecognitionException] (val x: Self) extends AnyVal {
       
       inline def setCtx(value: typings.antlr4.contextRuleContextMod.default): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object errorRecognitionExceptionMod {
       __obj.asInstanceOf[RecognitionExceptionOpts]
     }
     
-    extension [Self <: RecognitionExceptionOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecognitionExceptionOpts] (val x: Self) extends AnyVal {
       
       inline def setCtx(value: typings.antlr4.contextRuleContextMod.default): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       

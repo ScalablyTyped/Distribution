@@ -22,7 +22,8 @@ object AnimatedPathProps {
     __obj.asInstanceOf[AnimatedPathProps]
   }
   
-  extension [Self <: AnimatedPathProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedPathProps] (val x: Self) extends AnyVal {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

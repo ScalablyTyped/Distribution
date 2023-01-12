@@ -27,7 +27,8 @@ object ClusterAllocationExplainRequest {
     __obj.asInstanceOf[ClusterAllocationExplainRequest]
   }
   
-  extension [Self <: ClusterAllocationExplainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterAllocationExplainRequest] (val x: Self) extends AnyVal {
     
     inline def setCurrent_node(value: String): Self = StObject.set(x, "current_node", value.asInstanceOf[js.Any])
     

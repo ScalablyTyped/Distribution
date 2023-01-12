@@ -74,7 +74,8 @@ object libTypescriptElementsPatternMod {
       __obj.asInstanceOf[PatternProps]
     }
     
-    extension [Self <: PatternProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

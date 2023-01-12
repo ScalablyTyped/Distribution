@@ -23,7 +23,8 @@ object SalesforceAction {
     __obj.asInstanceOf[SalesforceAction]
   }
   
-  extension [Self <: SalesforceAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SalesforceAction] (val x: Self) extends AnyVal {
     
     inline def setToken(value: SalesforceToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IBUDDY_LIST_INIT {
     __obj.asInstanceOf[IBUDDY_LIST_INIT]
   }
   
-  extension [Self <: IBUDDY_LIST_INIT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBUDDY_LIST_INIT] (val x: Self) extends AnyVal {
     
     inline def setBuddyList(value: js.Array[SFSBuddy]): Self = StObject.set(x, "buddyList", value.asInstanceOf[js.Any])
     

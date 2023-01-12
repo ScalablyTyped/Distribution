@@ -77,7 +77,8 @@ object LayoutTreeSnapshot {
     __obj.asInstanceOf[LayoutTreeSnapshot]
   }
   
-  extension [Self <: LayoutTreeSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutTreeSnapshot] (val x: Self) extends AnyVal {
     
     inline def setBlendedBackgroundColors(value: js.Array[StringIndex]): Self = StObject.set(x, "blendedBackgroundColors", value.asInstanceOf[js.Any])
     

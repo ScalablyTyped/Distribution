@@ -18,7 +18,8 @@ object PasswordError {
     __obj.asInstanceOf[PasswordError]
   }
   
-  extension [Self <: PasswordError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordError] (val x: Self) extends AnyVal {
     
     inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.PasswordError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -94,7 +94,8 @@ object libSecurityUserAuthenticatorMod {
       __obj.asInstanceOf[UserAuthenticator]
     }
     
-    extension [Self <: UserAuthenticator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAuthenticator] (val x: Self) extends AnyVal {
       
       inline def setAuthenticateUser(value: Any): Self = StObject.set(x, "authenticateUser", value.asInstanceOf[js.Any])
       

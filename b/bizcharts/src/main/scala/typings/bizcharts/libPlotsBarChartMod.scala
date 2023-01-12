@@ -41,7 +41,8 @@ object libPlotsBarChartMod {
       __obj.asInstanceOf[BarOptions]
     }
     
-    extension [Self <: BarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarOptions] (val x: Self) extends AnyVal {
       
       inline def setBarSize(value: Double): Self = StObject.set(x, "barSize", value.asInstanceOf[js.Any])
       

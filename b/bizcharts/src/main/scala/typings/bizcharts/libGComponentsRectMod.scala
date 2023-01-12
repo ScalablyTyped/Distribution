@@ -29,7 +29,8 @@ object libGComponentsRectMod extends Shortcut {
       __obj.asInstanceOf[IRectProps]
     }
     
-    extension [Self <: IRectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRectProps] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Radius): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     }

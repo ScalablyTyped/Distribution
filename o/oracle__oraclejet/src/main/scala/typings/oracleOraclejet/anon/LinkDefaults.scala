@@ -29,7 +29,8 @@ object LinkDefaults {
     __obj.asInstanceOf[LinkDefaults]
   }
   
-  extension [Self <: LinkDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkDefaults] (val x: Self) extends AnyVal {
     
     inline def setLinkDefaults(value: LabelLayoutPath): Self = StObject.set(x, "linkDefaults", value.asInstanceOf[js.Any])
     

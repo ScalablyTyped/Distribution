@@ -28,7 +28,8 @@ object AsyncRequestParameters {
     __obj.asInstanceOf[AsyncRequestParameters]
   }
   
-  extension [Self <: AsyncRequestParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncRequestParameters] (val x: Self) extends AnyVal {
     
     inline def setCreateMultiRegionAccessPointRequest(value: CreateMultiRegionAccessPointInput): Self = StObject.set(x, "CreateMultiRegionAccessPointRequest", value.asInstanceOf[js.Any])
     

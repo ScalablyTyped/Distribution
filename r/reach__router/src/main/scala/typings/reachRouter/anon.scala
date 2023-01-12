@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Default]
     }
     
-    extension [Self <: Default](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Dictparam]
     }
     
-    extension [Self <: Dictparam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictparam] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -111,7 +114,8 @@ object anon {
       __obj.asInstanceOf[PushState]
     }
     
-    extension [Self <: PushState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushState] (val x: Self) extends AnyVal {
       
       inline def setPushState(value: (Any, String, String) => Unit): Self = StObject.set(x, "pushState", js.Any.fromFunction3(value))
       
@@ -132,7 +136,8 @@ object anon {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       

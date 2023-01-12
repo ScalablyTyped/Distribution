@@ -16,7 +16,8 @@ object RegionInstanceGroupManagersRecreateRequest {
     __obj.asInstanceOf[RegionInstanceGroupManagersRecreateRequest]
   }
   
-  extension [Self <: RegionInstanceGroupManagersRecreateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionInstanceGroupManagersRecreateRequest] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     

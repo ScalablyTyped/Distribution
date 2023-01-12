@@ -18,7 +18,8 @@ object CreateRsaKeyOptions {
     __obj.asInstanceOf[CreateRsaKeyOptions]
   }
   
-  extension [Self <: CreateRsaKeyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRsaKeyOptions] (val x: Self) extends AnyVal {
     
     inline def setPublicExponent(value: Double): Self = StObject.set(x, "publicExponent", value.asInstanceOf[js.Any])
     

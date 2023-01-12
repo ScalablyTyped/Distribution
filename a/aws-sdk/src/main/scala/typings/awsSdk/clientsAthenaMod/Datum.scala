@@ -18,7 +18,8 @@ object Datum {
     __obj.asInstanceOf[Datum]
   }
   
-  extension [Self <: Datum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Datum] (val x: Self) extends AnyVal {
     
     inline def setVarCharValue(value: datumString): Self = StObject.set(x, "VarCharValue", value.asInstanceOf[js.Any])
     

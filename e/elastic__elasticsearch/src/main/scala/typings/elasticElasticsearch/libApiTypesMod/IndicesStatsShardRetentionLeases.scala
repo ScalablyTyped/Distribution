@@ -19,7 +19,8 @@ object IndicesStatsShardRetentionLeases {
     __obj.asInstanceOf[IndicesStatsShardRetentionLeases]
   }
   
-  extension [Self <: IndicesStatsShardRetentionLeases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesStatsShardRetentionLeases] (val x: Self) extends AnyVal {
     
     inline def setLeases(value: js.Array[IndicesStatsShardLease]): Self = StObject.set(x, "leases", value.asInstanceOf[js.Any])
     

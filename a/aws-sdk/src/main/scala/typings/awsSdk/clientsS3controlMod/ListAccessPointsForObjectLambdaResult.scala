@@ -23,7 +23,8 @@ object ListAccessPointsForObjectLambdaResult {
     __obj.asInstanceOf[ListAccessPointsForObjectLambdaResult]
   }
   
-  extension [Self <: ListAccessPointsForObjectLambdaResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccessPointsForObjectLambdaResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

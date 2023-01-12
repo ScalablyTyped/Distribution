@@ -29,7 +29,8 @@ object GoogleCloudRecommendationengineV1beta1GcsSource {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1GcsSource]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1GcsSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1GcsSource] (val x: Self) extends AnyVal {
     
     inline def setInputUris(value: js.Array[String]): Self = StObject.set(x, "inputUris", value.asInstanceOf[js.Any])
     

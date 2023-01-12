@@ -60,7 +60,8 @@ object libDomNamedNodeMapMod {
       __obj.asInstanceOf[NamedNodeMap]
     }
     
-    extension [Self <: NamedNodeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedNodeMap] (val x: Self) extends AnyVal {
       
       inline def setGetNamedItem(value: String => Attr): Self = StObject.set(x, "getNamedItem", js.Any.fromFunction1(value))
       

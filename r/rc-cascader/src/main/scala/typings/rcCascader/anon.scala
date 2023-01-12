@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Disabled]
     }
     
-    extension [Self <: Disabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[DisplayName]
     }
     
-    extension [Self <: DisplayName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -123,7 +126,8 @@ object anon {
       __obj.asInstanceOf[OnChange[OptionType]]
     }
     
-    extension [Self <: OnChange[?], OptionType /* <: BaseOptionType */](x: Self & OnChange[OptionType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChange[?], OptionType /* <: BaseOptionType */] (val x: Self & OnChange[OptionType]) extends AnyVal {
       
       inline def setOnChange(
         value: (/* value */ SingleValueType | js.Array[SingleValueType], /* selectOptions */ js.Array[js.Array[OptionType] | OptionType]) => Unit
@@ -144,7 +148,8 @@ object anon {
       __obj.asInstanceOf[Ref]
     }
     
-    extension [Self <: Ref](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
       
       inline def setRef(value: typings.react.mod.Ref[BaseSelectRef]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       

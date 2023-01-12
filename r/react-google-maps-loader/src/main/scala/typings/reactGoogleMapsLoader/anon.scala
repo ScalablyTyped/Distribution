@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Typeofgeometry]
     }
     
-    extension [Self <: Typeofgeometry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofgeometry] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: Any): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

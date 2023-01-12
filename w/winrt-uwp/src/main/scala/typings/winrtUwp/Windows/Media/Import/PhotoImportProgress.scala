@@ -35,7 +35,8 @@ object PhotoImportProgress {
     __obj.asInstanceOf[PhotoImportProgress]
   }
   
-  extension [Self <: PhotoImportProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoImportProgress] (val x: Self) extends AnyVal {
     
     inline def setBytesImported(value: Double): Self = StObject.set(x, "bytesImported", value.asInstanceOf[js.Any])
     

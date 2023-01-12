@@ -19,7 +19,8 @@ object IsProcessingData {
     __obj.asInstanceOf[IsProcessingData]
   }
   
-  extension [Self <: IsProcessingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsProcessingData] (val x: Self) extends AnyVal {
     
     inline def setIsProcessingData(value: js.Array[Any]): Self = StObject.set(x, "isProcessingData", value.asInstanceOf[js.Any])
     

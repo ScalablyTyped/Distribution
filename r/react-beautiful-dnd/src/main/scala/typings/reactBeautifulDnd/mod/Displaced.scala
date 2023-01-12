@@ -17,7 +17,8 @@ object Displaced {
     __obj.asInstanceOf[Displaced]
   }
   
-  extension [Self <: Displaced](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Displaced] (val x: Self) extends AnyVal {
     
     inline def setBackwards(value: DisplacementGroups): Self = StObject.set(x, "backwards", value.asInstanceOf[js.Any])
     

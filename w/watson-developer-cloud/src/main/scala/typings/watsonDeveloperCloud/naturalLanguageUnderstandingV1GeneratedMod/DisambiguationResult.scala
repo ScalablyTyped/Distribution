@@ -23,7 +23,8 @@ object DisambiguationResult {
     __obj.asInstanceOf[DisambiguationResult]
   }
   
-  extension [Self <: DisambiguationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisambiguationResult] (val x: Self) extends AnyVal {
     
     inline def setDbpedia_resource(value: String): Self = StObject.set(x, "dbpedia_resource", value.asInstanceOf[js.Any])
     

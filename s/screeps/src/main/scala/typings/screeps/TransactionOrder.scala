@@ -20,7 +20,8 @@ object TransactionOrder {
     __obj.asInstanceOf[TransactionOrder]
   }
   
-  extension [Self <: TransactionOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionOrder] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

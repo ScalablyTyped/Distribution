@@ -48,7 +48,8 @@ object VpcConfigResponse {
     __obj.asInstanceOf[VpcConfigResponse]
   }
   
-  extension [Self <: VpcConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setClusterSecurityGroupId(value: String): Self = StObject.set(x, "clusterSecurityGroupId", value.asInstanceOf[js.Any])
     

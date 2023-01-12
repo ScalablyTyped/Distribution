@@ -19,7 +19,8 @@ object Enumerable {
     __obj.asInstanceOf[Enumerable]
   }
   
-  extension [Self <: Enumerable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enumerable] (val x: Self) extends AnyVal {
     
     inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     

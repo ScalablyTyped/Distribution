@@ -66,7 +66,8 @@ object IngredientSubstanceStrength {
     __obj.asInstanceOf[IngredientSubstanceStrength]
   }
   
-  extension [Self <: IngredientSubstanceStrength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngredientSubstanceStrength] (val x: Self) extends AnyVal {
     
     inline def setConcentrationRatio(value: Ratio): Self = StObject.set(x, "concentrationRatio", value.asInstanceOf[js.Any])
     

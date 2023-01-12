@@ -33,7 +33,8 @@ object PinOptions {
     __obj.asInstanceOf[PinOptions]
   }
   
-  extension [Self <: PinOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinOptions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

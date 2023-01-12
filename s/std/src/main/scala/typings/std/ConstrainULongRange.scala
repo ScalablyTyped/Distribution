@@ -21,7 +21,8 @@ object ConstrainULongRange {
     __obj.asInstanceOf[ConstrainULongRange]
   }
   
-  extension [Self <: ConstrainULongRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstrainULongRange] (val x: Self) extends AnyVal {
     
     inline def setExact(value: Double): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

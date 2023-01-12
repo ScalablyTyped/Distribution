@@ -339,7 +339,8 @@ object OmitlocalePickerLocaleund {
     __obj.asInstanceOf[OmitlocalePickerLocaleund]
   }
   
-  extension [Self <: OmitlocalePickerLocaleund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitlocalePickerLocaleund] (val x: Self) extends AnyVal {
     
     inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
     

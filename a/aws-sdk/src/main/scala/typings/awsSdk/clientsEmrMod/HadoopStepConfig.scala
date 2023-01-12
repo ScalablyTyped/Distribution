@@ -33,7 +33,8 @@ object HadoopStepConfig {
     __obj.asInstanceOf[HadoopStepConfig]
   }
   
-  extension [Self <: HadoopStepConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HadoopStepConfig] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: StringList): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     

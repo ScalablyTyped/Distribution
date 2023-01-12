@@ -46,7 +46,8 @@ object Ia32CpuContext {
     __obj.asInstanceOf[Ia32CpuContext]
   }
   
-  extension [Self <: Ia32CpuContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ia32CpuContext] (val x: Self) extends AnyVal {
     
     inline def setEax(value: NativePointer): Self = StObject.set(x, "eax", value.asInstanceOf[js.Any])
     

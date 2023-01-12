@@ -25,7 +25,8 @@ object AssertionOptions {
     __obj.asInstanceOf[AssertionOptions]
   }
   
-  extension [Self <: AssertionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssertionOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowUnawaitedPromise(value: Boolean): Self = StObject.set(x, "allowUnawaitedPromise", value.asInstanceOf[js.Any])
     

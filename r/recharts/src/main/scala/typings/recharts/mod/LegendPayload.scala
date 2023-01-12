@@ -25,7 +25,8 @@ object LegendPayload {
     __obj.asInstanceOf[LegendPayload]
   }
   
-  extension [Self <: LegendPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendPayload] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

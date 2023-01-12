@@ -23,7 +23,8 @@ object XpackUsageMlInference {
     __obj.asInstanceOf[XpackUsageMlInference]
   }
   
-  extension [Self <: XpackUsageMlInference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMlInference] (val x: Self) extends AnyVal {
     
     inline def setDeployments(value: XpackUsageMlInferenceDeployments): Self = StObject.set(x, "deployments", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ReturnTypeReplaySnapshotResponse {
     __obj.asInstanceOf[ReturnTypeReplaySnapshotResponse]
   }
   
-  extension [Self <: ReturnTypeReplaySnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeReplaySnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[ReplaySnapshotRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object dxFileManagerToolbar {
     __obj.asInstanceOf[dxFileManagerToolbar]
   }
   
-  extension [Self <: dxFileManagerToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFileManagerToolbar] (val x: Self) extends AnyVal {
     
     inline def setFileSelectionItems(value: js.Array[ToolbarItem | FileManagerPredefinedToolbarItem]): Self = StObject.set(x, "fileSelectionItems", value.asInstanceOf[js.Any])
     

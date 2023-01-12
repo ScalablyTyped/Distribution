@@ -29,7 +29,8 @@ object BasisTranscodeConfiguration {
     __obj.asInstanceOf[BasisTranscodeConfiguration]
   }
   
-  extension [Self <: BasisTranscodeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasisTranscodeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLoadMipmapLevels(value: Boolean): Self = StObject.set(x, "loadMipmapLevels", value.asInstanceOf[js.Any])
     

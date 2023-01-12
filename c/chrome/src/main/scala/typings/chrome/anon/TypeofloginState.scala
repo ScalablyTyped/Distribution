@@ -26,7 +26,8 @@ object TypeofloginState {
     __obj.asInstanceOf[TypeofloginState]
   }
   
-  extension [Self <: TypeofloginState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofloginState] (val x: Self) extends AnyVal {
     
     inline def setGetProfileType(value: js.Function1[/* profileType */ ProfileType, Unit] => Unit): Self = StObject.set(x, "getProfileType", js.Any.fromFunction1(value))
     

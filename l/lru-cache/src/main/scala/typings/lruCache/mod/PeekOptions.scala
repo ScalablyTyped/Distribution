@@ -19,7 +19,8 @@ object PeekOptions {
     __obj.asInstanceOf[PeekOptions]
   }
   
-  extension [Self <: PeekOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeekOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowStale(value: Boolean): Self = StObject.set(x, "allowStale", value.asInstanceOf[js.Any])
     

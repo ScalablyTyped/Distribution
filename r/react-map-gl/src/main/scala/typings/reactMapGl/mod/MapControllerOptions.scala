@@ -35,7 +35,8 @@ object MapControllerOptions {
     __obj.asInstanceOf[MapControllerOptions]
   }
   
-  extension [Self <: MapControllerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapControllerOptions] (val x: Self) extends AnyVal {
     
     inline def setDoubleClickZoom(value: Boolean): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
     

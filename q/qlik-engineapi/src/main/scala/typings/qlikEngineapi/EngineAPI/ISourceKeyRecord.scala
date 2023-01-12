@@ -26,7 +26,8 @@ object ISourceKeyRecord {
     __obj.asInstanceOf[ISourceKeyRecord]
   }
   
-  extension [Self <: ISourceKeyRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISourceKeyRecord] (val x: Self) extends AnyVal {
     
     inline def setQKeyFields(value: js.Array[String]): Self = StObject.set(x, "qKeyFields", value.asInstanceOf[js.Any])
     

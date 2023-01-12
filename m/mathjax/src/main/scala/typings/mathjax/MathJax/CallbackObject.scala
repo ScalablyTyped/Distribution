@@ -42,7 +42,8 @@ object CallbackObject {
     __obj.asInstanceOf[CallbackObject]
   }
   
-  extension [Self <: CallbackObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackObject] (val x: Self) extends AnyVal {
     
     inline def setAutoReset(value: Boolean): Self = StObject.set(x, "autoReset", value.asInstanceOf[js.Any])
     

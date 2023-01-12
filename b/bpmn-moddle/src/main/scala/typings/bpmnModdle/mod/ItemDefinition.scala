@@ -33,7 +33,8 @@ object ItemDefinition {
     __obj.asInstanceOf[ItemDefinition]
   }
   
-  extension [Self <: ItemDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemDefinition] (val x: Self) extends AnyVal {
     
     inline def setImport(value: Import): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
     

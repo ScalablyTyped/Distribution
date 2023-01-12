@@ -19,7 +19,8 @@ object `11` {
     __obj.asInstanceOf[`11`[BaseToken]]
   }
   
-  extension [Self <: `11`[?], BaseToken](x: Self & `11`[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `11`[?], BaseToken] (val x: Self & `11`[BaseToken]) extends AnyVal {
     
     inline def setBold(value: PaintToken[BaseToken]): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

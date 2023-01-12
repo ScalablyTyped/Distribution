@@ -19,7 +19,8 @@ object PropertyHyphen {
     __obj.asInstanceOf[PropertyHyphen[TLength, TTime]]
   }
   
-  extension [Self <: PropertyHyphen[?, ?], TLength, TTime](x: Self & (PropertyHyphen[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyHyphen[?, ?], TLength, TTime] (val x: Self & (PropertyHyphen[TLength, TTime])) extends AnyVal {
     
     inline def setInherits(value: Inherits): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     

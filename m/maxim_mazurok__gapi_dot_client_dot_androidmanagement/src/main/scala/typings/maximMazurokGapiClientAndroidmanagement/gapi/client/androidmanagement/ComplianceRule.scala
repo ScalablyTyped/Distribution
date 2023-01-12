@@ -28,7 +28,8 @@ object ComplianceRule {
     __obj.asInstanceOf[ComplianceRule]
   }
   
-  extension [Self <: ComplianceRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplianceRule] (val x: Self) extends AnyVal {
     
     inline def setApiLevelCondition(value: ApiLevelCondition): Self = StObject.set(x, "apiLevelCondition", value.asInstanceOf[js.Any])
     

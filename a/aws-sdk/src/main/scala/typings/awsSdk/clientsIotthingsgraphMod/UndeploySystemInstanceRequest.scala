@@ -18,7 +18,8 @@ object UndeploySystemInstanceRequest {
     __obj.asInstanceOf[UndeploySystemInstanceRequest]
   }
   
-  extension [Self <: UndeploySystemInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UndeploySystemInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

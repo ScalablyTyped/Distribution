@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCallbackParams(value: js.Array[Any]): Self = StObject.set(x, "callbackParams", value.asInstanceOf[js.Any])
       

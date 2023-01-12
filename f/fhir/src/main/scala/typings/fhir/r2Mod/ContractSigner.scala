@@ -33,7 +33,8 @@ object ContractSigner {
     __obj.asInstanceOf[ContractSigner]
   }
   
-  extension [Self <: ContractSigner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContractSigner] (val x: Self) extends AnyVal {
     
     inline def setParty(value: Reference): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
     

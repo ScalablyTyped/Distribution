@@ -29,7 +29,8 @@ object IObjectTypeColumnMappings {
     __obj.asInstanceOf[IObjectTypeColumnMappings]
   }
   
-  extension [Self <: IObjectTypeColumnMappings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectTypeColumnMappings] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IObjectTypeColumnMapping) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

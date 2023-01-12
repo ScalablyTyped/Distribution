@@ -15,7 +15,8 @@ object TypeofProcessPaymentInten {
     __obj.asInstanceOf[TypeofProcessPaymentInten]
   }
   
-  extension [Self <: TypeofProcessPaymentInten](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofProcessPaymentInten] (val x: Self) extends AnyVal {
     
     inline def setProcessConfig(value: Any): Self = StObject.set(x, "ProcessConfig", value.asInstanceOf[js.Any])
   }

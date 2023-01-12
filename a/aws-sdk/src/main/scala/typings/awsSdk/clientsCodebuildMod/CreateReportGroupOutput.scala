@@ -18,7 +18,8 @@ object CreateReportGroupOutput {
     __obj.asInstanceOf[CreateReportGroupOutput]
   }
   
-  extension [Self <: CreateReportGroupOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReportGroupOutput] (val x: Self) extends AnyVal {
     
     inline def setReportGroup(value: ReportGroup): Self = StObject.set(x, "reportGroup", value.asInstanceOf[js.Any])
     

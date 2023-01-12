@@ -67,7 +67,8 @@ object sourceUtfgridMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object sourceUtfgridMod {
       __obj.asInstanceOf[UTFGridJSON]
     }
     
-    extension [Self <: UTFGridJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UTFGridJSON] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

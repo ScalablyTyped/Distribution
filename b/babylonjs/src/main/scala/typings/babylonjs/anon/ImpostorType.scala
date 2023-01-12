@@ -21,7 +21,8 @@ object ImpostorType {
     __obj.asInstanceOf[ImpostorType]
   }
   
-  extension [Self <: ImpostorType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImpostorType] (val x: Self) extends AnyVal {
     
     inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     

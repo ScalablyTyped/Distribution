@@ -84,7 +84,8 @@ object libWinstonTransportsMod extends Shortcut {
       __obj.asInstanceOf[ConsoleTransportOptions]
     }
     
-    extension [Self <: ConsoleTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsoleTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setConsoleWarnLevels(value: js.Array[String]): Self = StObject.set(x, "consoleWarnLevels", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object libWinstonTransportsMod extends Shortcut {
       __obj.asInstanceOf[FileTransportOptions]
     }
     
-    extension [Self <: FileTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
       
@@ -282,7 +284,8 @@ object libWinstonTransportsMod extends Shortcut {
       __obj.asInstanceOf[HttpTransportOptions]
     }
     
-    extension [Self <: HttpTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -363,7 +366,8 @@ object libWinstonTransportsMod extends Shortcut {
       __obj.asInstanceOf[StreamTransportOptions]
     }
     
-    extension [Self <: StreamTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
@@ -407,7 +411,8 @@ object libWinstonTransportsMod extends Shortcut {
       __obj.asInstanceOf[Transports]
     }
     
-    extension [Self <: Transports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transports] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: ConsoleTransportInstance): Self = StObject.set(x, "Console", value.asInstanceOf[js.Any])
       

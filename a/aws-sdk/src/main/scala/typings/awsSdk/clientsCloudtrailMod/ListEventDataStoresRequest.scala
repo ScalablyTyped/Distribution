@@ -23,7 +23,8 @@ object ListEventDataStoresRequest {
     __obj.asInstanceOf[ListEventDataStoresRequest]
   }
   
-  extension [Self <: ListEventDataStoresRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEventDataStoresRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListEventDataStoresMaxResultsCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

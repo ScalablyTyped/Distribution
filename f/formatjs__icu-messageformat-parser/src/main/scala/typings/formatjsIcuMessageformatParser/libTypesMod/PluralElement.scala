@@ -31,7 +31,8 @@ object PluralElement {
     __obj.asInstanceOf[PluralElement]
   }
   
-  extension [Self <: PluralElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluralElement] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

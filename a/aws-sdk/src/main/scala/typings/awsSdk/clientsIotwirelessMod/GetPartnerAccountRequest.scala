@@ -23,7 +23,8 @@ object GetPartnerAccountRequest {
     __obj.asInstanceOf[GetPartnerAccountRequest]
   }
   
-  extension [Self <: GetPartnerAccountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPartnerAccountRequest] (val x: Self) extends AnyVal {
     
     inline def setPartnerAccountId(value: PartnerAccountId): Self = StObject.set(x, "PartnerAccountId", value.asInstanceOf[js.Any])
     

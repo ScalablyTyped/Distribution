@@ -22,7 +22,8 @@ object ScreenshotOptions {
     __obj.asInstanceOf[ScreenshotOptions]
   }
   
-  extension [Self <: ScreenshotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenshotOptions] (val x: Self) extends AnyVal {
     
     inline def setDocumentComplete(value: Boolean): Self = StObject.set(x, "documentComplete", value.asInstanceOf[js.Any])
     

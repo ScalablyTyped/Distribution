@@ -17,7 +17,8 @@ object AppsDynamiteSharedUserBlockRelationship {
     __obj.asInstanceOf[AppsDynamiteSharedUserBlockRelationship]
   }
   
-  extension [Self <: AppsDynamiteSharedUserBlockRelationship](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedUserBlockRelationship] (val x: Self) extends AnyVal {
     
     inline def setHasBlockedRequester(value: Boolean): Self = StObject.set(x, "hasBlockedRequester", value.asInstanceOf[js.Any])
     

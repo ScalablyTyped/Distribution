@@ -20,7 +20,8 @@ object CollapsibleEvents {
     __obj.asInstanceOf[CollapsibleEvents]
   }
   
-  extension [Self <: CollapsibleEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapsibleEvents] (val x: Self) extends AnyVal {
     
     inline def setCollapse(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction2(value))
     

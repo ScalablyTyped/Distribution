@@ -15,7 +15,8 @@ object MaterialPluginHasRenderTargetTextures {
     __obj.asInstanceOf[MaterialPluginHasRenderTargetTextures]
   }
   
-  extension [Self <: MaterialPluginHasRenderTargetTextures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterialPluginHasRenderTargetTextures] (val x: Self) extends AnyVal {
     
     inline def setHasRenderTargetTextures(value: Boolean): Self = StObject.set(x, "hasRenderTargetTextures", value.asInstanceOf[js.Any])
   }

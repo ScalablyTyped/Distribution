@@ -29,7 +29,8 @@ object distComponentsIconFontMod {
       __obj.asInstanceOf[CustomIconOptions]
     }
     
-    extension [Self <: CustomIconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomIconOptions] (val x: Self) extends AnyVal {
       
       inline def setExtraCommonProps(value: StringDictionary[Any]): Self = StObject.set(x, "extraCommonProps", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distComponentsIconFontMod {
       __obj.asInstanceOf[IconFontProps[T]]
     }
     
-    extension [Self <: IconFontProps[?], T /* <: String */](x: Self & IconFontProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconFontProps[?], T /* <: String */] (val x: Self & IconFontProps[T]) extends AnyVal {
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

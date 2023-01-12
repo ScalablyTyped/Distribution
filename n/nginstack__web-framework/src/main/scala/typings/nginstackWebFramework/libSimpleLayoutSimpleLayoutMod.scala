@@ -408,7 +408,8 @@ object libSimpleLayoutSimpleLayoutMod {
       __obj.asInstanceOf[SimpleLayoutStats]
     }
     
-    extension [Self <: SimpleLayoutStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleLayoutStats] (val x: Self) extends AnyVal {
       
       inline def setBufferLength(value: Any): Self = StObject.set(x, "bufferLength", value.asInstanceOf[js.Any])
     }

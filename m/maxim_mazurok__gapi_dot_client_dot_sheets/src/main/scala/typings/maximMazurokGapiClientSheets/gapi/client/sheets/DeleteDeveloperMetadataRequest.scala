@@ -16,7 +16,8 @@ object DeleteDeveloperMetadataRequest {
     __obj.asInstanceOf[DeleteDeveloperMetadataRequest]
   }
   
-  extension [Self <: DeleteDeveloperMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDeveloperMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setDataFilter(value: DataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
     

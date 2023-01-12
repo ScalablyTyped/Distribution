@@ -36,7 +36,8 @@ object DefaultRender {
     __obj.asInstanceOf[DefaultRender[ComponentsType, Entity, ExtraProps, ValueType]]
   }
   
-  extension [Self <: DefaultRender[?, ?, ?, ?], ComponentsType, Entity, ExtraProps, ValueType](x: Self & (DefaultRender[ComponentsType, Entity, ExtraProps, ValueType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultRender[?, ?, ?, ?], ComponentsType, Entity, ExtraProps, ValueType] (val x: Self & (DefaultRender[ComponentsType, Entity, ExtraProps, ValueType])) extends AnyVal {
     
     inline def setDefaultRender(value: ProSchema[Entity, ExtraProps, ComponentsType, ValueType, Any] => Element | Null): Self = StObject.set(x, "defaultRender", js.Any.fromFunction1(value))
     

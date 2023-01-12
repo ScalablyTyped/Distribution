@@ -42,7 +42,8 @@ object UpdateDataRetentionInput {
     __obj.asInstanceOf[UpdateDataRetentionInput]
   }
   
-  extension [Self <: UpdateDataRetentionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDataRetentionInput] (val x: Self) extends AnyVal {
     
     inline def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object JQuery {
     __obj.asInstanceOf[JQuery]
   }
   
-  extension [Self <: JQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
     
     inline def setTruncate(value: TruncateOptions => JQuery): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
   }

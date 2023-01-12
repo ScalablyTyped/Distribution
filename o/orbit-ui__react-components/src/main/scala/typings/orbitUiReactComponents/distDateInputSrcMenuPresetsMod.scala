@@ -36,7 +36,8 @@ object distDateInputSrcMenuPresetsMod {
       __obj.asInstanceOf[MenuPresetsProps]
     }
     
-    extension [Self <: MenuPresetsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuPresetsProps] (val x: Self) extends AnyVal {
       
       inline def setOnSelectionChange(value: (SyntheticEvent[typings.std.Element, Event], Double) => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction2(value))
       

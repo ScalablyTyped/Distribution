@@ -19,7 +19,8 @@ object LocalId {
     __obj.asInstanceOf[LocalId]
   }
   
-  extension [Self <: LocalId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalId] (val x: Self) extends AnyVal {
     
     inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object srcDataprocessorHtmlwriterMod {
       __obj.asInstanceOf[HtmlWriter]
     }
     
-    extension [Self <: HtmlWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlWriter] (val x: Self) extends AnyVal {
       
       inline def setGetHtml(value: DocumentFragment => String): Self = StObject.set(x, "getHtml", js.Any.fromFunction1(value))
     }

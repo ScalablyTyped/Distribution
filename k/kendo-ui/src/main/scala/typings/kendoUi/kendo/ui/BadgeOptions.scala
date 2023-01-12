@@ -39,7 +39,8 @@ object BadgeOptions {
     __obj.asInstanceOf[BadgeOptions]
   }
   
-  extension [Self <: BadgeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BadgeOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

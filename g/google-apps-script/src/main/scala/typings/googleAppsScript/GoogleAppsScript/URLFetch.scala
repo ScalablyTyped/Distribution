@@ -71,7 +71,8 @@ object URLFetch {
       __obj.asInstanceOf[URLFetchRequest]
     }
     
-    extension [Self <: URLFetchRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLFetchRequest] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -138,7 +139,8 @@ object URLFetch {
       __obj.asInstanceOf[URLFetchRequestOptions]
     }
     
-    extension [Self <: URLFetchRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLFetchRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       

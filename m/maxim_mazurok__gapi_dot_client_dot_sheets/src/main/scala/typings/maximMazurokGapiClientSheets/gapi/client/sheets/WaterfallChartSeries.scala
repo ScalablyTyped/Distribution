@@ -37,7 +37,8 @@ object WaterfallChartSeries {
     __obj.asInstanceOf[WaterfallChartSeries]
   }
   
-  extension [Self <: WaterfallChartSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaterfallChartSeries] (val x: Self) extends AnyVal {
     
     inline def setCustomSubtotals(value: js.Array[WaterfallChartCustomSubtotal]): Self = StObject.set(x, "customSubtotals", value.asInstanceOf[js.Any])
     

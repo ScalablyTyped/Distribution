@@ -20,7 +20,8 @@ object OpenMonitoringInfo {
     __obj.asInstanceOf[OpenMonitoringInfo]
   }
   
-  extension [Self <: OpenMonitoringInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenMonitoringInfo] (val x: Self) extends AnyVal {
     
     inline def setPrometheus(value: PrometheusInfo): Self = StObject.set(x, "Prometheus", value.asInstanceOf[js.Any])
   }

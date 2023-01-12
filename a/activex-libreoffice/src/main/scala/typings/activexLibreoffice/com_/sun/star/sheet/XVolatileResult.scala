@@ -34,7 +34,8 @@ object XVolatileResult {
     __obj.asInstanceOf[XVolatileResult]
   }
   
-  extension [Self <: XVolatileResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XVolatileResult] (val x: Self) extends AnyVal {
     
     inline def setAddResultListener(value: XResultListener => Unit): Self = StObject.set(x, "addResultListener", js.Any.fromFunction1(value))
     

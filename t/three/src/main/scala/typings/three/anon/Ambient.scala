@@ -68,7 +68,8 @@ object Ambient {
     __obj.asInstanceOf[Ambient]
   }
   
-  extension [Self <: Ambient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ambient] (val x: Self) extends AnyVal {
     
     inline def setAmbient(value: js.Array[Double]): Self = StObject.set(x, "ambient", value.asInstanceOf[js.Any])
     

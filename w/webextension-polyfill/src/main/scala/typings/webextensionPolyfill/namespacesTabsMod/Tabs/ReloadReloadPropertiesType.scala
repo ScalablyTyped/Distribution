@@ -19,7 +19,8 @@ object ReloadReloadPropertiesType {
     __obj.asInstanceOf[ReloadReloadPropertiesType]
   }
   
-  extension [Self <: ReloadReloadPropertiesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReloadReloadPropertiesType] (val x: Self) extends AnyVal {
     
     inline def setBypassCache(value: Boolean): Self = StObject.set(x, "bypassCache", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PivotSelection {
     __obj.asInstanceOf[PivotSelection]
   }
   
-  extension [Self <: PivotSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotSelection] (val x: Self) extends AnyVal {
     
     inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     

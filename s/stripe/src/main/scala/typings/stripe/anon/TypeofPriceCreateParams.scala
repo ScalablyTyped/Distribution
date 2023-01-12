@@ -19,7 +19,8 @@ object TypeofPriceCreateParams {
     __obj.asInstanceOf[TypeofPriceCreateParams]
   }
   
-  extension [Self <: TypeofPriceCreateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPriceCreateParams] (val x: Self) extends AnyVal {
     
     inline def setCurrencyOptions(value: Any): Self = StObject.set(x, "CurrencyOptions", value.asInstanceOf[js.Any])
     

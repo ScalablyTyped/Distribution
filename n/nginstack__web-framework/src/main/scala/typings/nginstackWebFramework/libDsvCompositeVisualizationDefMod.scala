@@ -60,7 +60,8 @@ object libDsvCompositeVisualizationDefMod {
       __obj.asInstanceOf[CompositeVisualizationDef]
     }
     
-    extension [Self <: CompositeVisualizationDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompositeVisualizationDef] (val x: Self) extends AnyVal {
       
       inline def setAdjustItemHeaders(value: Boolean): Self = StObject.set(x, "adjustItemHeaders", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object CreateResponseHeadersPolicyRequest {
     __obj.asInstanceOf[CreateResponseHeadersPolicyRequest]
   }
   
-  extension [Self <: CreateResponseHeadersPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResponseHeadersPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setResponseHeadersPolicyConfig(value: ResponseHeadersPolicyConfig): Self = StObject.set(x, "ResponseHeadersPolicyConfig", value.asInstanceOf[js.Any])
   }

@@ -87,7 +87,8 @@ object RichEditUnitConverter {
     __obj.asInstanceOf[RichEditUnitConverter]
   }
   
-  extension [Self <: RichEditUnitConverter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichEditUnitConverter] (val x: Self) extends AnyVal {
     
     inline def setCentimetersToTwips(value: Double => Double): Self = StObject.set(x, "centimetersToTwips", js.Any.fromFunction1(value))
     

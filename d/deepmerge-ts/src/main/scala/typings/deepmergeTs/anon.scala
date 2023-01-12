@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[PartialDeepMergeMergeFunc]
     }
     
-    extension [Self <: PartialDeepMergeMergeFunc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDeepMergeMergeFunc] (val x: Self) extends AnyVal {
       
       inline def setDeepMergeArraysURI(value: DeepMergeMergeFunctionURIs): Self = StObject.set(x, "DeepMergeArraysURI", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object anon {
       __obj.asInstanceOf[PartialDeepMergeOptionsFu]
     }
     
-    extension [Self <: PartialDeepMergeOptionsFu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDeepMergeOptionsFu] (val x: Self) extends AnyVal {
       
       inline def setMergeArrays(
         value: (js.Function3[
@@ -321,7 +323,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyReadonlyArrayunkn]
     }
     
-    extension [Self <: ReadonlyReadonlyArrayunkn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyReadonlyArrayunkn] (val x: Self) extends AnyVal {
       
       inline def setAt(value: Double => js.UndefOr[Any]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       
@@ -435,7 +438,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyReadonlyMapanyany]
     }
     
-    extension [Self <: ReadonlyReadonlyMapanyany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyReadonlyMapanyany] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: () => IterableIterator[js.Tuple2[Any, Any]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
@@ -485,7 +489,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyReadonlyMapunknow]
     }
     
-    extension [Self <: ReadonlyReadonlyMapunknow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyReadonlyMapunknow] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: () => IterableIterator[js.Tuple2[Any, Any]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
@@ -532,7 +537,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyReadonlySetany]
     }
     
-    extension [Self <: ReadonlyReadonlySetany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyReadonlySetany] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: () => IterableIterator[js.Tuple2[Any, Any]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
@@ -577,7 +583,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyReadonlySetunknow]
     }
     
-    extension [Self <: ReadonlyReadonlySetunknow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyReadonlySetunknow] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: () => IterableIterator[js.Tuple2[Any, Any]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
@@ -607,7 +614,8 @@ object anon {
       __obj.asInstanceOf[ReadonlydefaultMergesymbo]
     }
     
-    extension [Self <: ReadonlydefaultMergesymbo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlydefaultMergesymbo] (val x: Self) extends AnyVal {
       
       inline def setDefaultMerge(value: js.Symbol): Self = StObject.set(x, "defaultMerge", value.asInstanceOf[js.Any])
       

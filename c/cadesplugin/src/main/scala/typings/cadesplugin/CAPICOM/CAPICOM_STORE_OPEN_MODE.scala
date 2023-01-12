@@ -27,7 +27,8 @@ object CAPICOM_STORE_OPEN_MODE {
     __obj.asInstanceOf[CAPICOM_STORE_OPEN_MODE]
   }
   
-  extension [Self <: CAPICOM_STORE_OPEN_MODE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_STORE_OPEN_MODE] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_STORE_OPEN_EXISTING_ONLY(value: `128`): Self = StObject.set(x, "CAPICOM_STORE_OPEN_EXISTING_ONLY", value.asInstanceOf[js.Any])
     

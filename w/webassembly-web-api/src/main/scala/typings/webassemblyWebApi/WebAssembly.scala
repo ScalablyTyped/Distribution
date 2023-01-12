@@ -26,7 +26,8 @@ object WebAssembly {
       __obj.asInstanceOf[ResultObject]
     }
     
-    extension [Self <: ResultObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultObject] (val x: Self) extends AnyVal {
       
       inline def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       

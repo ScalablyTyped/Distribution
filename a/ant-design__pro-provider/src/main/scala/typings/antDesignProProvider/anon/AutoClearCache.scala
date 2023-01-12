@@ -24,7 +24,8 @@ object AutoClearCache {
     __obj.asInstanceOf[AutoClearCache]
   }
   
-  extension [Self <: AutoClearCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoClearCache] (val x: Self) extends AnyVal {
     
     inline def setAutoClearCache(value: Boolean): Self = StObject.set(x, "autoClearCache", value.asInstanceOf[js.Any])
     

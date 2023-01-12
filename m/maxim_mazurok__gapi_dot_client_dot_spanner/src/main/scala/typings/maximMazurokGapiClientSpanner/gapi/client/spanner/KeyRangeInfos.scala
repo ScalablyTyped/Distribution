@@ -22,7 +22,8 @@ object KeyRangeInfos {
     __obj.asInstanceOf[KeyRangeInfos]
   }
   
-  extension [Self <: KeyRangeInfos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyRangeInfos] (val x: Self) extends AnyVal {
     
     inline def setInfos(value: js.Array[KeyRangeInfo]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     

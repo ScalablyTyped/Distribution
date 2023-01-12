@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsTshirtMod extends Shortcut {
       __obj.asInstanceOf[TShirtProps]
     }
     
-    extension [Self <: TShirtProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TShirtProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

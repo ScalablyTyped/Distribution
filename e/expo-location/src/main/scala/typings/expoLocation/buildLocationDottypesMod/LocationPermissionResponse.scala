@@ -22,7 +22,8 @@ object LocationPermissionResponse {
     __obj.asInstanceOf[LocationPermissionResponse]
   }
   
-  extension [Self <: LocationPermissionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationPermissionResponse] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: PermissionDetailsLocationAndroid): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     

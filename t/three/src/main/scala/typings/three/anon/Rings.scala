@@ -17,7 +17,8 @@ object Rings {
     __obj.asInstanceOf[Rings]
   }
   
-  extension [Self <: Rings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rings] (val x: Self) extends AnyVal {
     
     inline def setRings(value: Double): Self = StObject.set(x, "rings", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object SnsAction {
     __obj.asInstanceOf[SnsAction]
   }
   
-  extension [Self <: SnsAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnsAction] (val x: Self) extends AnyVal {
     
     inline def setMessageFormat(value: MessageFormat): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[AbsoluteImports]
     }
     
-    extension [Self <: AbsoluteImports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbsoluteImports] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteImports(value: Boolean): Self = StObject.set(x, "absoluteImports", value.asInstanceOf[js.Any])
       

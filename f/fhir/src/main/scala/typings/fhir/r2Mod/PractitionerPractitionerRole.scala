@@ -45,7 +45,8 @@ object PractitionerPractitionerRole {
     __obj.asInstanceOf[PractitionerPractitionerRole]
   }
   
-  extension [Self <: PractitionerPractitionerRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PractitionerPractitionerRole] (val x: Self) extends AnyVal {
     
     inline def setHealthcareService(value: js.Array[Reference]): Self = StObject.set(x, "healthcareService", value.asInstanceOf[js.Any])
     

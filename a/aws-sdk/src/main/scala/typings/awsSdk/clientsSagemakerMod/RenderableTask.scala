@@ -18,7 +18,8 @@ object RenderableTask {
     __obj.asInstanceOf[RenderableTask]
   }
   
-  extension [Self <: RenderableTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderableTask] (val x: Self) extends AnyVal {
     
     inline def setInput(value: TaskInput): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object GetQuantumTaskRequest {
     __obj.asInstanceOf[GetQuantumTaskRequest]
   }
   
-  extension [Self <: GetQuantumTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetQuantumTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setQuantumTaskArn(value: QuantumTaskArn): Self = StObject.set(x, "quantumTaskArn", value.asInstanceOf[js.Any])
   }

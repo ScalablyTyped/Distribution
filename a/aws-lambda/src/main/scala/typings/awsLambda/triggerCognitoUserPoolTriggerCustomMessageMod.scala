@@ -42,7 +42,8 @@ object triggerCognitoUserPoolTriggerCustomMessageMod {
       __obj.asInstanceOf[BaseCustomMessageTriggerEvent[T]]
     }
     
-    extension [Self <: BaseCustomMessageTriggerEvent[?], T /* <: String */](x: Self & BaseCustomMessageTriggerEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCustomMessageTriggerEvent[?], T /* <: String */] (val x: Self & BaseCustomMessageTriggerEvent[T]) extends AnyVal {
       
       inline def setRequest(value: CodeParameter): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       

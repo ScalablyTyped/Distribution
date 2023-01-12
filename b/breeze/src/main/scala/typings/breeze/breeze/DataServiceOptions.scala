@@ -25,7 +25,8 @@ object DataServiceOptions {
     __obj.asInstanceOf[DataServiceOptions]
   }
   
-  extension [Self <: DataServiceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataServiceOptions] (val x: Self) extends AnyVal {
     
     inline def setAdapterName(value: String): Self = StObject.set(x, "adapterName", value.asInstanceOf[js.Any])
     

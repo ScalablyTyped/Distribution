@@ -27,7 +27,8 @@ object angular {
         __obj.asInstanceOf[IGetMapOptions]
       }
       
-      extension [Self <: IGetMapOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IGetMapOptions] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -109,7 +110,8 @@ object angular {
         __obj.asInstanceOf[INgMapOptions]
       }
       
-      extension [Self <: INgMapOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: INgMapOptions] (val x: Self) extends AnyVal {
         
         inline def setMarker(value: AnchorPoint): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       }
@@ -137,7 +139,8 @@ object angular {
         __obj.asInstanceOf[INgMapProvider]
       }
       
-      extension [Self <: INgMapProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: INgMapProvider] (val x: Self) extends AnyVal {
         
         inline def setSetDefaultOptions(value: INgMapOptions => Unit): Self = StObject.set(x, "setDefaultOptions", js.Any.fromFunction1(value))
       }

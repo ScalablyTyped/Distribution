@@ -33,7 +33,8 @@ object DescribeSubscriptionFiltersRequest {
     __obj.asInstanceOf[DescribeSubscriptionFiltersRequest]
   }
   
-  extension [Self <: DescribeSubscriptionFiltersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSubscriptionFiltersRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterNamePrefix(value: FilterName): Self = StObject.set(x, "filterNamePrefix", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Testers {
     __obj.asInstanceOf[Testers]
   }
   
-  extension [Self <: Testers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Testers] (val x: Self) extends AnyVal {
     
     inline def setGoogleGroups(value: js.Array[String]): Self = StObject.set(x, "googleGroups", value.asInstanceOf[js.Any])
     

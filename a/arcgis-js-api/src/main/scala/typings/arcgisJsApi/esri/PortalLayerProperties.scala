@@ -20,7 +20,8 @@ object PortalLayerProperties {
     __obj.asInstanceOf[PortalLayerProperties]
   }
   
-  extension [Self <: PortalLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     

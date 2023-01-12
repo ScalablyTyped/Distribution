@@ -38,7 +38,8 @@ object CreateLedgerRequest {
     __obj.asInstanceOf[CreateLedgerRequest]
   }
   
-  extension [Self <: CreateLedgerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLedgerRequest] (val x: Self) extends AnyVal {
     
     inline def setDeletionProtection(value: DeletionProtection): Self = StObject.set(x, "DeletionProtection", value.asInstanceOf[js.Any])
     

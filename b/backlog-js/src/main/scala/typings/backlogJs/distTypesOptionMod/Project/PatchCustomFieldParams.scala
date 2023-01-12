@@ -21,7 +21,8 @@ object PatchCustomFieldParams {
     __obj.asInstanceOf[PatchCustomFieldParams]
   }
   
-  extension [Self <: PatchCustomFieldParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchCustomFieldParams] (val x: Self) extends AnyVal {
     
     inline def setApplicableIssueTypes(value: js.Array[Double]): Self = StObject.set(x, "applicableIssueTypes", value.asInstanceOf[js.Any])
     

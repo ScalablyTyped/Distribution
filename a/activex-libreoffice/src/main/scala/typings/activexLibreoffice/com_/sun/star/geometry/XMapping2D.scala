@@ -42,7 +42,8 @@ object XMapping2D {
     __obj.asInstanceOf[XMapping2D]
   }
   
-  extension [Self <: XMapping2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMapping2D] (val x: Self) extends AnyVal {
     
     inline def setMap(value: RealPoint2D => RealPoint2D): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     

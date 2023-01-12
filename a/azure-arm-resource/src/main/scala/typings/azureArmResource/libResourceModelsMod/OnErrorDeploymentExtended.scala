@@ -29,7 +29,8 @@ object OnErrorDeploymentExtended {
     __obj.asInstanceOf[OnErrorDeploymentExtended]
   }
   
-  extension [Self <: OnErrorDeploymentExtended](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnErrorDeploymentExtended] (val x: Self) extends AnyVal {
     
     inline def setDeploymentName(value: String): Self = StObject.set(x, "deploymentName", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ReadonlyPromiseListCluste {
     __obj.asInstanceOf[ReadonlyPromiseListCluste]
   }
   
-  extension [Self <: ReadonlyPromiseListCluste](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseListCluste] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[ListClustersResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

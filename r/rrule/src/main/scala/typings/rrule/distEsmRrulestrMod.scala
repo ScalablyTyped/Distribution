@@ -40,7 +40,8 @@ object distEsmRrulestrMod {
       __obj.asInstanceOf[RRuleStrOptions]
     }
     
-    extension [Self <: RRuleStrOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RRuleStrOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object S3CompatibleMetadata {
     __obj.asInstanceOf[S3CompatibleMetadata]
   }
   
-  extension [Self <: S3CompatibleMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3CompatibleMetadata] (val x: Self) extends AnyVal {
     
     inline def setAuthMethod(value: String): Self = StObject.set(x, "authMethod", value.asInstanceOf[js.Any])
     

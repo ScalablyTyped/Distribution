@@ -19,7 +19,8 @@ object DeleteCollectionOptions {
     __obj.asInstanceOf[DeleteCollectionOptions]
   }
   
-  extension [Self <: DeleteCollectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCollectionOptions] (val x: Self) extends AnyVal {
     
     inline def setChild(value: Boolean): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     

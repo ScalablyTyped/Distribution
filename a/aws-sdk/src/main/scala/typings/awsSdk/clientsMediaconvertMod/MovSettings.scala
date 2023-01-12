@@ -38,7 +38,8 @@ object MovSettings {
     __obj.asInstanceOf[MovSettings]
   }
   
-  extension [Self <: MovSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MovSettings] (val x: Self) extends AnyVal {
     
     inline def setClapAtom(value: MovClapAtom): Self = StObject.set(x, "ClapAtom", value.asInstanceOf[js.Any])
     

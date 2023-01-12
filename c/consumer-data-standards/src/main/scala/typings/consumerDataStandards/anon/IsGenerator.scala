@@ -87,7 +87,8 @@ object IsGenerator {
     __obj.asInstanceOf[IsGenerator]
   }
   
-  extension [Self <: IsGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsGenerator] (val x: Self) extends AnyVal {
     
     inline def setConsumerProfile(value: Classification): Self = StObject.set(x, "consumerProfile", value.asInstanceOf[js.Any])
     

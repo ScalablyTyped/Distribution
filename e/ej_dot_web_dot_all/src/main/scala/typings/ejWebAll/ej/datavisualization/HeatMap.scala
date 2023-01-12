@@ -246,7 +246,8 @@ object HeatMap {
       __obj.asInstanceOf[CellMouseEnterEventArgs]
     }
     
-    extension [Self <: CellMouseEnterEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellMouseEnterEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -283,7 +284,8 @@ object HeatMap {
       __obj.asInstanceOf[CellMouseLeaveEventArgs]
     }
     
-    extension [Self <: CellMouseLeaveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellMouseLeaveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -320,7 +322,8 @@ object HeatMap {
       __obj.asInstanceOf[CellMouseOverEventArgs]
     }
     
-    extension [Self <: CellMouseOverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellMouseOverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -357,7 +360,8 @@ object HeatMap {
       __obj.asInstanceOf[CellSelectedEventArgs]
     }
     
-    extension [Self <: CellSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -397,7 +401,8 @@ object HeatMap {
       __obj.asInstanceOf[ColorMappingCollection]
     }
     
-    extension [Self <: ColorMappingCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorMappingCollection] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -456,7 +461,8 @@ object HeatMap {
       __obj.asInstanceOf[ColorMappingCollectionLabel]
     }
     
-    extension [Self <: ColorMappingCollectionLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorMappingCollectionLabel] (val x: Self) extends AnyVal {
       
       inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
@@ -510,7 +516,8 @@ object HeatMap {
       __obj.asInstanceOf[DefaultColumnStyle]
     }
     
-    extension [Self <: DefaultColumnStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultColumnStyle] (val x: Self) extends AnyVal {
       
       inline def setHeaderTemplateID(value: String): Self = StObject.set(x, "headerTemplateID", value.asInstanceOf[js.Any])
       
@@ -545,7 +552,8 @@ object HeatMap {
       __obj.asInstanceOf[HeatMapCell]
     }
     
-    extension [Self <: HeatMapCell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeatMapCell] (val x: Self) extends AnyVal {
       
       inline def setShowColor(value: Boolean): Self = StObject.set(x, "showColor", value.asInstanceOf[js.Any])
       
@@ -596,7 +604,8 @@ object HeatMap {
       __obj.asInstanceOf[ItemsMapping]
     }
     
-    extension [Self <: ItemsMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsMapping] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: ItemsMappingColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -643,7 +652,8 @@ object HeatMap {
       __obj.asInstanceOf[ItemsMappingColumn]
     }
     
-    extension [Self <: ItemsMappingColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsMappingColumn] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -682,7 +692,8 @@ object HeatMap {
       __obj.asInstanceOf[ItemsMappingColumnStyle]
     }
     
-    extension [Self <: ItemsMappingColumnStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsMappingColumnStyle] (val x: Self) extends AnyVal {
       
       inline def setHeaderTemplateID(value: String): Self = StObject.set(x, "headerTemplateID", value.asInstanceOf[js.Any])
       
@@ -724,7 +735,8 @@ object HeatMap {
       __obj.asInstanceOf[ItemsMappingHeaderMapping]
     }
     
-    extension [Self <: ItemsMappingHeaderMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsMappingHeaderMapping] (val x: Self) extends AnyVal {
       
       inline def setColumnStyle(value: Any): Self = StObject.set(x, "columnStyle", value.asInstanceOf[js.Any])
       
@@ -757,7 +769,8 @@ object HeatMap {
       __obj.asInstanceOf[ItemsMappingRow]
     }
     
-    extension [Self <: ItemsMappingRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsMappingRow] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -786,7 +799,8 @@ object HeatMap {
       __obj.asInstanceOf[ItemsMappingValue]
     }
     
-    extension [Self <: ItemsMappingValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsMappingValue] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -887,7 +901,8 @@ object HeatMap {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.HeatMap.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.HeatMap.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.HeatMap.Model] (val x: Self) extends AnyVal {
       
       inline def setCellMouseEnter(value: /* e */ CellMouseEnterEventArgs => Unit): Self = StObject.set(x, "cellMouseEnter", js.Any.fromFunction1(value))
       
@@ -1000,7 +1015,8 @@ object HeatMap {
       __obj.asInstanceOf[TooltipSettings]
     }
     
-    extension [Self <: TooltipSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipSettings] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: TooltipSettingsAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -1047,7 +1063,8 @@ object HeatMap {
       __obj.asInstanceOf[TooltipSettingsAnimation]
     }
     
-    extension [Self <: TooltipSettingsAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipSettingsAnimation] (val x: Self) extends AnyVal {
       
       inline def setEffect(value: Effect | String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
       
@@ -1076,7 +1093,8 @@ object HeatMap {
       __obj.asInstanceOf[TooltipSettingsPosition]
     }
     
-    extension [Self <: TooltipSettingsPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipSettingsPosition] (val x: Self) extends AnyVal {
       
       inline def setStem(value: TooltipSettingsPositionStem): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
       
@@ -1107,7 +1125,8 @@ object HeatMap {
       __obj.asInstanceOf[TooltipSettingsPositionStem]
     }
     
-    extension [Self <: TooltipSettingsPositionStem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipSettingsPositionStem] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: Horizontal | String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -1138,7 +1157,8 @@ object HeatMap {
       __obj.asInstanceOf[TooltipSettingsPositionTarget]
     }
     
-    extension [Self <: TooltipSettingsPositionTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipSettingsPositionTarget] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: Horizontal | String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsUploadButtonBoldMod extends Shor
       __obj.asInstanceOf[UploadButtonBoldProps]
     }
     
-    extension [Self <: UploadButtonBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadButtonBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

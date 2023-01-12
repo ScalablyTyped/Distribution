@@ -283,7 +283,8 @@ object Contentsurl {
     __obj.asInstanceOf[Contentsurl]
   }
   
-  extension [Self <: Contentsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contentsurl] (val x: Self) extends AnyVal {
     
     inline def setAllow_auto_merge(value: Boolean): Self = StObject.set(x, "allow_auto_merge", value.asInstanceOf[js.Any])
     

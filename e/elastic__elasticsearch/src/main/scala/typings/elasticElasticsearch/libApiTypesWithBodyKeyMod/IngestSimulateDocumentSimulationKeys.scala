@@ -28,7 +28,8 @@ object IngestSimulateDocumentSimulationKeys {
     __obj.asInstanceOf[IngestSimulateDocumentSimulationKeys]
   }
   
-  extension [Self <: IngestSimulateDocumentSimulationKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestSimulateDocumentSimulationKeys] (val x: Self) extends AnyVal {
     
     inline def set_id(value: Id): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     

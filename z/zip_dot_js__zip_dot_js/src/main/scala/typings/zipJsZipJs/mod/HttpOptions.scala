@@ -39,7 +39,8 @@ object HttpOptions {
     __obj.asInstanceOf[HttpOptions]
   }
   
-  extension [Self <: HttpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
     
     inline def setForceRangeRequests(value: Boolean): Self = StObject.set(x, "forceRangeRequests", value.asInstanceOf[js.Any])
     

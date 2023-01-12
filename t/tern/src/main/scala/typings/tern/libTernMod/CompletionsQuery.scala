@@ -67,7 +67,8 @@ object CompletionsQuery {
     __obj.asInstanceOf[CompletionsQuery]
   }
   
-  extension [Self <: CompletionsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionsQuery] (val x: Self) extends AnyVal {
     
     inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
     

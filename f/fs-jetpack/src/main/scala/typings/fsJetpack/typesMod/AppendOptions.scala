@@ -15,7 +15,8 @@ object AppendOptions {
     __obj.asInstanceOf[AppendOptions]
   }
   
-  extension [Self <: AppendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppendOptions] (val x: Self) extends AnyVal {
     
     inline def setMode(value: String | Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

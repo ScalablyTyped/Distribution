@@ -24,7 +24,8 @@ object DirectionsPolyline {
     __obj.asInstanceOf[DirectionsPolyline]
   }
   
-  extension [Self <: DirectionsPolyline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsPolyline] (val x: Self) extends AnyVal {
     
     inline def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
   }

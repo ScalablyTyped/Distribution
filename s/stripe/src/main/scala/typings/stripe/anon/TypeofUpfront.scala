@@ -15,7 +15,8 @@ object TypeofUpfront {
     __obj.asInstanceOf[TypeofUpfront]
   }
   
-  extension [Self <: TypeofUpfront](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofUpfront] (val x: Self) extends AnyVal {
     
     inline def setTotalDetails(value: TypeofTotalDetails): Self = StObject.set(x, "TotalDetails", value.asInstanceOf[js.Any])
   }

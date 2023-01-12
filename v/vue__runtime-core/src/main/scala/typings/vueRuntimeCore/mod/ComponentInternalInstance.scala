@@ -130,7 +130,8 @@ object ComponentInternalInstance {
     __obj.asInstanceOf[ComponentInternalInstance]
   }
   
-  extension [Self <: ComponentInternalInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentInternalInstance] (val x: Self) extends AnyVal {
     
     inline def setAppContext(value: AppContext): Self = StObject.set(x, "appContext", value.asInstanceOf[js.Any])
     

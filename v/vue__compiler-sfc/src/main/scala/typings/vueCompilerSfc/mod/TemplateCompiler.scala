@@ -21,7 +21,8 @@ object TemplateCompiler {
     __obj.asInstanceOf[TemplateCompiler]
   }
   
-  extension [Self <: TemplateCompiler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateCompiler] (val x: Self) extends AnyVal {
     
     inline def setCompile(value: (String, CompilerOptions) => CodegenResult): Self = StObject.set(x, "compile", js.Any.fromFunction2(value))
     

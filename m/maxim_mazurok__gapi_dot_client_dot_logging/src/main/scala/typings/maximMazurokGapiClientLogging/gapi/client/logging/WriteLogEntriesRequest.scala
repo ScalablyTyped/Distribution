@@ -60,7 +60,8 @@ object WriteLogEntriesRequest {
     __obj.asInstanceOf[WriteLogEntriesRequest]
   }
   
-  extension [Self <: WriteLogEntriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteLogEntriesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object XSlideShowListener {
     __obj.asInstanceOf[XSlideShowListener]
   }
   
-  extension [Self <: XSlideShowListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSlideShowListener] (val x: Self) extends AnyVal {
     
     inline def setHyperLinkClicked(value: String => Unit): Self = StObject.set(x, "hyperLinkClicked", js.Any.fromFunction1(value))
     

@@ -41,7 +41,8 @@ object SetTabBarBadgeOptions {
     __obj.asInstanceOf[SetTabBarBadgeOptions]
   }
   
-  extension [Self <: SetTabBarBadgeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTabBarBadgeOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

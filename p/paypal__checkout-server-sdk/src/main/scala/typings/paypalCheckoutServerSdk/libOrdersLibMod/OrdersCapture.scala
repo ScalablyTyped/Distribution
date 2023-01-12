@@ -17,7 +17,8 @@ object OrdersCapture {
       __obj.asInstanceOf[RequestData]
     }
     
-    extension [Self <: RequestData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestData] (val x: Self) extends AnyVal {
       
       inline def setPayment_source(value: PaymentSource): Self = StObject.set(x, "payment_source", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object OrdersCapture {
       __obj.asInstanceOf[RequestHeaders]
     }
     
-    extension [Self <: RequestHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHeaders] (val x: Self) extends AnyVal {
       
       inline def `setPayPal-Client-Metadata-Id`(value: String): Self = StObject.set(x, "PayPal-Client-Metadata-Id", value.asInstanceOf[js.Any])
       

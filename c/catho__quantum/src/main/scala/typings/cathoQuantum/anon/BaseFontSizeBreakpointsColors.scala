@@ -23,7 +23,8 @@ object BaseFontSizeBreakpointsColors {
     __obj.asInstanceOf[BaseFontSizeBreakpointsColors]
   }
   
-  extension [Self <: BaseFontSizeBreakpointsColors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseFontSizeBreakpointsColors] (val x: Self) extends AnyVal {
     
     inline def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
     

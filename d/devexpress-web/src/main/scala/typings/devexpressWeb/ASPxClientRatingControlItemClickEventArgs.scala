@@ -23,7 +23,8 @@ object ASPxClientRatingControlItemClickEventArgs {
     __obj.asInstanceOf[ASPxClientRatingControlItemClickEventArgs]
   }
   
-  extension [Self <: ASPxClientRatingControlItemClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRatingControlItemClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }

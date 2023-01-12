@@ -25,7 +25,8 @@ object OptionsCells {
     __obj.asInstanceOf[OptionsCells]
   }
   
-  extension [Self <: OptionsCells](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsCells] (val x: Self) extends AnyVal {
     
     inline def setValidationFailed(
       value: (/* cell */ CellComponent, /* value */ Any, /* validators */ js.Array[StandardValidatorType | Validator]) => Unit

@@ -16,7 +16,8 @@ object TableSchema {
     __obj.asInstanceOf[TableSchema]
   }
   
-  extension [Self <: TableSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSchema] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[TableFieldSchema]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

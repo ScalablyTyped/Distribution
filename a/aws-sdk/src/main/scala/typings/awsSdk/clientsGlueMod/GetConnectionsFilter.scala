@@ -23,7 +23,8 @@ object GetConnectionsFilter {
     __obj.asInstanceOf[GetConnectionsFilter]
   }
   
-  extension [Self <: GetConnectionsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConnectionsFilter] (val x: Self) extends AnyVal {
     
     inline def setConnectionType(value: ConnectionType): Self = StObject.set(x, "ConnectionType", value.asInstanceOf[js.Any])
     

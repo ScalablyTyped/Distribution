@@ -23,7 +23,8 @@ object QopConfiguration {
     __obj.asInstanceOf[QopConfiguration]
   }
   
-  extension [Self <: QopConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QopConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDataTransferProtection(value: HdfsDataTransferProtection): Self = StObject.set(x, "DataTransferProtection", value.asInstanceOf[js.Any])
     

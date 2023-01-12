@@ -53,7 +53,8 @@ object ExtraButtonsOptions {
     __obj.asInstanceOf[ExtraButtonsOptions]
   }
   
-  extension [Self <: ExtraButtonsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtraButtonsOptions] (val x: Self) extends AnyVal {
     
     inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

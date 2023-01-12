@@ -25,7 +25,8 @@ object distSchemaEventsAsyncEventMod {
       __obj.asInstanceOf[AsyncEndEvent]
     }
     
-    extension [Self <: AsyncEndEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncEndEvent] (val x: Self) extends AnyVal {
       
       inline def setPh(value: e_): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     }
@@ -68,7 +69,8 @@ object distSchemaEventsAsyncEventMod {
       __obj.asInstanceOf[AsyncEvent]
     }
     
-    extension [Self <: AsyncEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncEvent] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object distSchemaEventsAsyncEventMod {
       __obj.asInstanceOf[AsyncInstantEvent]
     }
     
-    extension [Self <: AsyncInstantEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncInstantEvent] (val x: Self) extends AnyVal {
       
       inline def setPh(value: n): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     }
@@ -140,7 +143,8 @@ object distSchemaEventsAsyncEventMod {
       __obj.asInstanceOf[AsyncStartEvent]
     }
     
-    extension [Self <: AsyncStartEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncStartEvent] (val x: Self) extends AnyVal {
       
       inline def setPh(value: b_): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     }

@@ -111,7 +111,8 @@ object distTypesCoreServicesJobsMod {
       __obj.asInstanceOf[ArtifactSchema]
     }
     
-    extension [Self <: ArtifactSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArtifactSchema] (val x: Self) extends AnyVal {
       
       inline def setFile_format(value: String): Self = StObject.set(x, "file_format", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object distTypesCoreServicesJobsMod {
       __obj.asInstanceOf[JobSchema]
     }
     
-    extension [Self <: JobSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JobSchema] (val x: Self) extends AnyVal {
       
       inline def setAllow_failure(value: Boolean): Self = StObject.set(x, "allow_failure", value.asInstanceOf[js.Any])
       

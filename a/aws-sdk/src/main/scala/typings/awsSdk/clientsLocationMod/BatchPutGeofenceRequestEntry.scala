@@ -23,7 +23,8 @@ object BatchPutGeofenceRequestEntry {
     __obj.asInstanceOf[BatchPutGeofenceRequestEntry]
   }
   
-  extension [Self <: BatchPutGeofenceRequestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPutGeofenceRequestEntry] (val x: Self) extends AnyVal {
     
     inline def setGeofenceId(value: Id): Self = StObject.set(x, "GeofenceId", value.asInstanceOf[js.Any])
     

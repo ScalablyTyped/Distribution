@@ -23,7 +23,8 @@ object ListSubscriptionDefinitionsResponse {
     __obj.asInstanceOf[ListSubscriptionDefinitionsResponse]
   }
   
-  extension [Self <: ListSubscriptionDefinitionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSubscriptionDefinitionsResponse] (val x: Self) extends AnyVal {
     
     inline def setDefinitions(value: listOfDefinitionInformation): Self = StObject.set(x, "Definitions", value.asInstanceOf[js.Any])
     

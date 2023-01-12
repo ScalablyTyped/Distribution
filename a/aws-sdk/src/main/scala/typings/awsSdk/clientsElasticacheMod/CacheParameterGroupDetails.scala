@@ -28,7 +28,8 @@ object CacheParameterGroupDetails {
     __obj.asInstanceOf[CacheParameterGroupDetails]
   }
   
-  extension [Self <: CacheParameterGroupDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheParameterGroupDetails] (val x: Self) extends AnyVal {
     
     inline def setCacheNodeTypeSpecificParameters(value: CacheNodeTypeSpecificParametersList): Self = StObject.set(x, "CacheNodeTypeSpecificParameters", value.asInstanceOf[js.Any])
     

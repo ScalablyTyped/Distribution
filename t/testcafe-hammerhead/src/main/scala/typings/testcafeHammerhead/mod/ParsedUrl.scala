@@ -25,7 +25,8 @@ object ParsedUrl {
     __obj.asInstanceOf[ParsedUrl]
   }
   
-  extension [Self <: ParsedUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedUrl] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

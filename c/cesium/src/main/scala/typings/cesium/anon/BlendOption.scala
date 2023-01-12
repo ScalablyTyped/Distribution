@@ -24,7 +24,8 @@ object BlendOption {
     __obj.asInstanceOf[BlendOption]
   }
   
-  extension [Self <: BlendOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlendOption] (val x: Self) extends AnyVal {
     
     inline def setBlendOption(value: typings.cesium.mod.BlendOption): Self = StObject.set(x, "blendOption", value.asInstanceOf[js.Any])
     

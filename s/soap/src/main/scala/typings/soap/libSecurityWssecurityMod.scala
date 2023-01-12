@@ -61,7 +61,8 @@ object libSecurityWssecurityMod {
       __obj.asInstanceOf[IWSSecurityOptions]
     }
     
-    extension [Self <: IWSSecurityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWSSecurityOptions] (val x: Self) extends AnyVal {
       
       inline def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
       

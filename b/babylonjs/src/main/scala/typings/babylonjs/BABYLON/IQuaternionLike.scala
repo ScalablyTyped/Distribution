@@ -21,7 +21,8 @@ object IQuaternionLike {
     __obj.asInstanceOf[IQuaternionLike]
   }
   
-  extension [Self <: IQuaternionLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQuaternionLike] (val x: Self) extends AnyVal {
     
     inline def setW(value: float): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     

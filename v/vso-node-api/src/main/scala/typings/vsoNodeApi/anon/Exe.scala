@@ -21,7 +21,8 @@ object Exe {
     __obj.asInstanceOf[Exe]
   }
   
-  extension [Self <: Exe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exe] (val x: Self) extends AnyVal {
     
     inline def setExe(value: scala.Double): Self = StObject.set(x, "exe", value.asInstanceOf[js.Any])
     

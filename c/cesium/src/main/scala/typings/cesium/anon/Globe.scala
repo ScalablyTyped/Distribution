@@ -24,7 +24,8 @@ object Globe {
     __obj.asInstanceOf[Globe]
   }
   
-  extension [Self <: Globe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Globe] (val x: Self) extends AnyVal {
     
     inline def setGlobe(value: typings.cesium.mod.Globe): Self = StObject.set(x, "globe", value.asInstanceOf[js.Any])
     

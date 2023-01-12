@@ -28,7 +28,8 @@ object helperTypesMod {
       __obj.asInstanceOf[AdFailedToLoadEvent]
     }
     
-    extension [Self <: AdFailedToLoadEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdFailedToLoadEvent] (val x: Self) extends AnyVal {
       
       inline def setError(value: Message): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -48,7 +49,8 @@ object helperTypesMod {
       __obj.asInstanceOf[AdLoadedEvent]
     }
     
-    extension [Self <: AdLoadedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdLoadedEvent] (val x: Self) extends AnyVal {
       
       inline def setGadSize(value: String): Self = StObject.set(x, "gadSize", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object helperTypesMod {
       __obj.asInstanceOf[BannerProps]
     }
     
-    extension [Self <: BannerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BannerProps] (val x: Self) extends AnyVal {
       
       inline def setAdSize(
         value: banner | largeBanner | mediumRectangle | fullBanner | leaderboard | smartBannerPortrait | smartBannerLandscape
@@ -221,7 +224,8 @@ object helperTypesMod {
       __obj.asInstanceOf[Targeting]
     }
     
-    extension [Self <: Targeting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Targeting] (val x: Self) extends AnyVal {
       
       inline def setCategoryExclusions(value: js.Array[String]): Self = StObject.set(x, "categoryExclusions", value.asInstanceOf[js.Any])
       

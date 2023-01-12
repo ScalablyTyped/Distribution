@@ -75,7 +75,8 @@ object geochartConfig {
     __obj.asInstanceOf[geochartConfig]
   }
   
-  extension [Self <: geochartConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: geochartConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

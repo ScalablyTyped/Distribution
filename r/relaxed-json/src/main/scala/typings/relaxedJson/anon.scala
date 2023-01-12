@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Duplicate]
     }
     
-    extension [Self <: Duplicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duplicate] (val x: Self) extends AnyVal {
       
       inline def setDuplicate(value: Boolean): Self = StObject.set(x, "duplicate", value.asInstanceOf[js.Any])
       

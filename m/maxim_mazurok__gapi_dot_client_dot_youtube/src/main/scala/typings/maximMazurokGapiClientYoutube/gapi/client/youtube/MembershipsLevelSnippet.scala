@@ -19,7 +19,8 @@ object MembershipsLevelSnippet {
     __obj.asInstanceOf[MembershipsLevelSnippet]
   }
   
-  extension [Self <: MembershipsLevelSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MembershipsLevelSnippet] (val x: Self) extends AnyVal {
     
     inline def setCreatorChannelId(value: String): Self = StObject.set(x, "creatorChannelId", value.asInstanceOf[js.Any])
     

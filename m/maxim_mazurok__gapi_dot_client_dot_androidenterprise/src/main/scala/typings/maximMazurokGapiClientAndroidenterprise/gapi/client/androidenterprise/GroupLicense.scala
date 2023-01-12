@@ -45,7 +45,8 @@ object GroupLicense {
     __obj.asInstanceOf[GroupLicense]
   }
   
-  extension [Self <: GroupLicense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupLicense] (val x: Self) extends AnyVal {
     
     inline def setAcquisitionKind(value: String): Self = StObject.set(x, "acquisitionKind", value.asInstanceOf[js.Any])
     

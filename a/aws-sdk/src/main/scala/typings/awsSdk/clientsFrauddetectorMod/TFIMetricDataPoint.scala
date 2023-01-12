@@ -33,7 +33,8 @@ object TFIMetricDataPoint {
     __obj.asInstanceOf[TFIMetricDataPoint]
   }
   
-  extension [Self <: TFIMetricDataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TFIMetricDataPoint] (val x: Self) extends AnyVal {
     
     inline def setFpr(value: float): Self = StObject.set(x, "fpr", value.asInstanceOf[js.Any])
     

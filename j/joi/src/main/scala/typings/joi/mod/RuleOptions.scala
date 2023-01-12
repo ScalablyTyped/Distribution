@@ -35,7 +35,8 @@ object RuleOptions {
     __obj.asInstanceOf[RuleOptions]
   }
   
-  extension [Self <: RuleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleOptions] (val x: Self) extends AnyVal {
     
     inline def setKeep(value: Boolean): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
     

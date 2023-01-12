@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[ClientConfig]
     }
     
-    extension [Self <: ClientConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
       
       inline def setClientConfig(value: IClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object anon {
       __obj.asInstanceOf[ErrorCode]
     }
     
-    extension [Self <: ErrorCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorCode] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       

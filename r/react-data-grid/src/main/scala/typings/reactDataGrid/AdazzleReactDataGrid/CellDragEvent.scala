@@ -36,7 +36,8 @@ object CellDragEvent {
     __obj.asInstanceOf[CellDragEvent]
   }
   
-  extension [Self <: CellDragEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellDragEvent] (val x: Self) extends AnyVal {
     
     inline def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
     

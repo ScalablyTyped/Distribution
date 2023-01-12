@@ -16,7 +16,8 @@ object IlmExplainLifecycleResponse {
     __obj.asInstanceOf[IlmExplainLifecycleResponse]
   }
   
-  extension [Self <: IlmExplainLifecycleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmExplainLifecycleResponse] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: Record[IndexName, IlmExplainLifecycleLifecycleExplain]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
   }

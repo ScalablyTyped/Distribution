@@ -104,7 +104,8 @@ object EventNotification {
     __obj.asInstanceOf[EventNotification]
   }
   
-  extension [Self <: EventNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventNotification] (val x: Self) extends AnyVal {
     
     inline def setEnvelopeEvents(value: js.Array[/* For which envelope events should your webhook be called? */ EnvelopeEvent]): Self = StObject.set(x, "envelopeEvents", value.asInstanceOf[js.Any])
     

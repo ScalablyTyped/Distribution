@@ -21,7 +21,8 @@ object IsGhost {
     __obj.asInstanceOf[IsGhost]
   }
   
-  extension [Self <: IsGhost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsGhost] (val x: Self) extends AnyVal {
     
     inline def setIsGhost(value: Boolean): Self = StObject.set(x, "isGhost", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object Filters {
     __obj.asInstanceOf[Filters]
   }
   
-  extension [Self <: Filters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
     
     inline def setHierarchyFilter(value: String => Filter): Self = StObject.set(x, "HierarchyFilter", js.Any.fromFunction1(value))
     

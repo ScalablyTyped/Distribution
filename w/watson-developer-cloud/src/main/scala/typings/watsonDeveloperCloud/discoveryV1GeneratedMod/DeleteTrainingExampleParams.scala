@@ -30,7 +30,8 @@ object DeleteTrainingExampleParams {
     __obj.asInstanceOf[DeleteTrainingExampleParams]
   }
   
-  extension [Self <: DeleteTrainingExampleParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTrainingExampleParams] (val x: Self) extends AnyVal {
     
     inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     

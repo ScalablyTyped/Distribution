@@ -23,7 +23,8 @@ object DeleteVpcPeeringAuthorizationInput {
     __obj.asInstanceOf[DeleteVpcPeeringAuthorizationInput]
   }
   
-  extension [Self <: DeleteVpcPeeringAuthorizationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVpcPeeringAuthorizationInput] (val x: Self) extends AnyVal {
     
     inline def setGameLiftAwsAccountId(value: NonZeroAndMaxString): Self = StObject.set(x, "GameLiftAwsAccountId", value.asInstanceOf[js.Any])
     

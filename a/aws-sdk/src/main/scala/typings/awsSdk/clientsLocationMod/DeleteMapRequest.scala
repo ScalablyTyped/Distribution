@@ -18,7 +18,8 @@ object DeleteMapRequest {
     __obj.asInstanceOf[DeleteMapRequest]
   }
   
-  extension [Self <: DeleteMapRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMapRequest] (val x: Self) extends AnyVal {
     
     inline def setMapName(value: ResourceName): Self = StObject.set(x, "MapName", value.asInstanceOf[js.Any])
   }

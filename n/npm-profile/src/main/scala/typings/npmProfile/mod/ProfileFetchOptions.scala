@@ -22,7 +22,8 @@ object ProfileFetchOptions {
     __obj.asInstanceOf[ProfileFetchOptions]
   }
   
-  extension [Self <: ProfileFetchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileFetchOptions] (val x: Self) extends AnyVal {
     
     inline def setCreds(value: ProfileCredentials): Self = StObject.set(x, "creds", value.asInstanceOf[js.Any])
     

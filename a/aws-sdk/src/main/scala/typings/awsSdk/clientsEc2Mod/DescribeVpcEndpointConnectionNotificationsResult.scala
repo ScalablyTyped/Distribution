@@ -23,7 +23,8 @@ object DescribeVpcEndpointConnectionNotificationsResult {
     __obj.asInstanceOf[DescribeVpcEndpointConnectionNotificationsResult]
   }
   
-  extension [Self <: DescribeVpcEndpointConnectionNotificationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVpcEndpointConnectionNotificationsResult] (val x: Self) extends AnyVal {
     
     inline def setConnectionNotificationSet(value: ConnectionNotificationSet): Self = StObject.set(x, "ConnectionNotificationSet", value.asInstanceOf[js.Any])
     

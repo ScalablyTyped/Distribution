@@ -16,7 +16,8 @@ object TableBodyProps {
     __obj.asInstanceOf[TableBodyProps]
   }
   
-  extension [Self <: TableBodyProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableBodyProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CircleFillGradient {
     __obj.asInstanceOf[CircleFillGradient]
   }
   
-  extension [Self <: CircleFillGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleFillGradient] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

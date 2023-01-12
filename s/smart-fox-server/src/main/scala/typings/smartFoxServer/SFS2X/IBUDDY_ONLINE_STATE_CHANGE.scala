@@ -18,7 +18,8 @@ object IBUDDY_ONLINE_STATE_CHANGE {
     __obj.asInstanceOf[IBUDDY_ONLINE_STATE_CHANGE]
   }
   
-  extension [Self <: IBUDDY_ONLINE_STATE_CHANGE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBUDDY_ONLINE_STATE_CHANGE] (val x: Self) extends AnyVal {
     
     inline def setBuddy(value: SFSBuddy): Self = StObject.set(x, "buddy", value.asInstanceOf[js.Any])
     

@@ -188,7 +188,8 @@ object Api {
     __obj.asInstanceOf[Api]
   }
   
-  extension [Self <: Api](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
     
     inline def setConformance(value: Any => js.Promise[Response]): Self = StObject.set(x, "conformance", js.Any.fromFunction1(value))
     

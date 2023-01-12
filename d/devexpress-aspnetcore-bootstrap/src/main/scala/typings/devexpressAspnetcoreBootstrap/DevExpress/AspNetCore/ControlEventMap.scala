@@ -15,7 +15,8 @@ object ControlEventMap {
     __obj.asInstanceOf[ControlEventMap]
   }
   
-  extension [Self <: ControlEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlEventMap] (val x: Self) extends AnyVal {
     
     inline def setInit(value: EventArgs): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
   }

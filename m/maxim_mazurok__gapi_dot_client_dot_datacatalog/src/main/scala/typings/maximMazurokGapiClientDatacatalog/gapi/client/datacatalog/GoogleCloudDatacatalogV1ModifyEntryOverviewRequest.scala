@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1ModifyEntryOverviewRequest {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1ModifyEntryOverviewRequest]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1ModifyEntryOverviewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1ModifyEntryOverviewRequest] (val x: Self) extends AnyVal {
     
     inline def setEntryOverview(value: GoogleCloudDatacatalogV1EntryOverview): Self = StObject.set(x, "entryOverview", value.asInstanceOf[js.Any])
     

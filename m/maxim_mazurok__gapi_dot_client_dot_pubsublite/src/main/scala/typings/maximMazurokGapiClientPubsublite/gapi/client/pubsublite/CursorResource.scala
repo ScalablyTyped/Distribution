@@ -15,7 +15,8 @@ object CursorResource {
     __obj.asInstanceOf[CursorResource]
   }
   
-  extension [Self <: CursorResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CursorResource] (val x: Self) extends AnyVal {
     
     inline def setProjects(value: ProjectsResource): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
   }

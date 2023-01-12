@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Req]
     }
     
-    extension [Self <: Req](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Req] (val x: Self) extends AnyVal {
       
       inline def setReq(value: SerializedRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Res]
     }
     
-    extension [Self <: Res](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Res] (val x: Self) extends AnyVal {
       
       inline def setRes(value: SerializedResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     }

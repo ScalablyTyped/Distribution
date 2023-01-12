@@ -56,7 +56,8 @@ object ZC {
       __obj.asInstanceOf[EventListenerObject[T]]
     }
     
-    extension [Self <: EventListenerObject[?], T /* <: ZeroClipboardEvent */](x: Self & EventListenerObject[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventListenerObject[?], T /* <: ZeroClipboardEvent */] (val x: Self & EventListenerObject[T]) extends AnyVal {
       
       inline def setHandleEvent(value: T => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
@@ -78,7 +79,8 @@ object ZC {
       __obj.asInstanceOf[typings.zeroclipboard.ZC.List[T]]
     }
     
-    extension [Self <: typings.zeroclipboard.ZC.List[?], T](x: Self & typings.zeroclipboard.ZC.List[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.zeroclipboard.ZC.List[?], T] (val x: Self & typings.zeroclipboard.ZC.List[T]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -111,7 +113,8 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardAfterCopyEvent]
     }
     
-    extension [Self <: ZeroClipboardAfterCopyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZeroClipboardAfterCopyEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: Dictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -518,7 +521,8 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardConfig]
     }
     
-    extension [Self <: ZeroClipboardConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZeroClipboardConfig] (val x: Self) extends AnyVal {
       
       inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       
@@ -609,7 +613,8 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardCopyEvent]
     }
     
-    extension [Self <: ZeroClipboardCopyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZeroClipboardCopyEvent] (val x: Self) extends AnyVal {
       
       inline def setClipboardData(value: ClearData): Self = StObject.set(x, "clipboardData", value.asInstanceOf[js.Any])
     }
@@ -639,7 +644,8 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardDestroyEvent]
     }
     
-    extension [Self <: ZeroClipboardDestroyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZeroClipboardDestroyEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: Dictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -689,7 +695,8 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardErrorEvent]
     }
     
-    extension [Self <: ZeroClipboardErrorEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZeroClipboardErrorEvent] (val x: Self) extends AnyVal {
       
       inline def setActualValue(value: String): Self = StObject.set(x, "actualValue", value.asInstanceOf[js.Any])
       
@@ -763,7 +770,8 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardEvent]
     }
     
-    extension [Self <: ZeroClipboardEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZeroClipboardEvent] (val x: Self) extends AnyVal {
       
       inline def setClient(value: ZeroClipboardClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -805,7 +813,8 @@ object ZC {
       __obj.asInstanceOf[ZeroClipboardReadyEvent]
     }
     
-    extension [Self <: ZeroClipboardReadyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZeroClipboardReadyEvent] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

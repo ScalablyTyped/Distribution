@@ -33,7 +33,8 @@ object StagingArea {
     __obj.asInstanceOf[StagingArea]
   }
   
-  extension [Self <: StagingArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StagingArea] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: LargeBoundedString): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

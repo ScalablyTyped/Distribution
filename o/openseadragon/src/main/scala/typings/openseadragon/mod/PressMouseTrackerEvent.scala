@@ -26,7 +26,8 @@ object PressMouseTrackerEvent {
     __obj.asInstanceOf[PressMouseTrackerEvent]
   }
   
-  extension [Self <: PressMouseTrackerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressMouseTrackerEvent] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object RelationalDatabaseDataSourceConfig {
     __obj.asInstanceOf[RelationalDatabaseDataSourceConfig]
   }
   
-  extension [Self <: RelationalDatabaseDataSourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationalDatabaseDataSourceConfig] (val x: Self) extends AnyVal {
     
     inline def setRdsHttpEndpointConfig(value: RdsHttpEndpointConfig): Self = StObject.set(x, "rdsHttpEndpointConfig", value.asInstanceOf[js.Any])
     

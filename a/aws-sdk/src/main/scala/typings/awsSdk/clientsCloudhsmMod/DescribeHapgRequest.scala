@@ -18,7 +18,8 @@ object DescribeHapgRequest {
     __obj.asInstanceOf[DescribeHapgRequest]
   }
   
-  extension [Self <: DescribeHapgRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHapgRequest] (val x: Self) extends AnyVal {
     
     inline def setHapgArn(value: HapgArn): Self = StObject.set(x, "HapgArn", value.asInstanceOf[js.Any])
   }

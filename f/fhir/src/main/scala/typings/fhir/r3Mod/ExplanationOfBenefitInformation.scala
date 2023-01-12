@@ -69,7 +69,8 @@ object ExplanationOfBenefitInformation {
     __obj.asInstanceOf[ExplanationOfBenefitInformation]
   }
   
-  extension [Self <: ExplanationOfBenefitInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplanationOfBenefitInformation] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

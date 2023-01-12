@@ -19,7 +19,8 @@ object Progress {
     __obj.asInstanceOf[Progress[R]]
   }
   
-  extension [Self <: Progress[?], R](x: Self & Progress[R]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Progress[?], R] (val x: Self & Progress[R]) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

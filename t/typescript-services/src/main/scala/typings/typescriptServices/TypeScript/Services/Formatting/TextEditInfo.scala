@@ -19,7 +19,8 @@ object TextEditInfo {
     __obj.asInstanceOf[TextEditInfo]
   }
   
-  extension [Self <: TextEditInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEditInfo] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

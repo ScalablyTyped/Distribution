@@ -28,7 +28,8 @@ object DescribeExpressionsRequest {
     __obj.asInstanceOf[DescribeExpressionsRequest]
   }
   
-  extension [Self <: DescribeExpressionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeExpressionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     

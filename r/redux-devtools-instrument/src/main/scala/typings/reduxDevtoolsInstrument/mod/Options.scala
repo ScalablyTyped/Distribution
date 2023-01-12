@@ -38,7 +38,8 @@ object Options {
     __obj.asInstanceOf[Options[S, A, MonitorState, MonitorAction]]
   }
   
-  extension [Self <: Options[?, ?, ?, ?], S, A /* <: Action[Any] */, MonitorState, MonitorAction /* <: Action[Any] */](x: Self & (Options[S, A, MonitorState, MonitorAction])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?, ?, ?, ?], S, A /* <: Action[Any] */, MonitorState, MonitorAction /* <: Action[Any] */] (val x: Self & (Options[S, A, MonitorState, MonitorAction])) extends AnyVal {
     
     inline def setMaxAge(
       value: Double | (js.Function2[

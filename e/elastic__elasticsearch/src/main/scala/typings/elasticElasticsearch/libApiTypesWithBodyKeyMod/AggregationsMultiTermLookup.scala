@@ -15,7 +15,8 @@ object AggregationsMultiTermLookup {
     __obj.asInstanceOf[AggregationsMultiTermLookup]
   }
   
-  extension [Self <: AggregationsMultiTermLookup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMultiTermLookup] (val x: Self) extends AnyVal {
     
     inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
   }

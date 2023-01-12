@@ -1074,7 +1074,8 @@ object TextInputPropsRefAttributAccessibilityActions {
     __obj.asInstanceOf[TextInputPropsRefAttributAccessibilityActions]
   }
   
-  extension [Self <: TextInputPropsRefAttributAccessibilityActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputPropsRefAttributAccessibilityActions] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

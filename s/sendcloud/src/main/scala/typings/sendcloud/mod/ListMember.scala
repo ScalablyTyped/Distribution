@@ -35,7 +35,8 @@ object ListMember {
     __obj.asInstanceOf[ListMember]
   }
   
-  extension [Self <: ListMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMember] (val x: Self) extends AnyVal {
     
     inline def setAddListMember(value: (String, String, String, ListMemberAddOptions) => js.Promise[ListMemberAddResposne]): Self = StObject.set(x, "addListMember", js.Any.fromFunction4(value))
     

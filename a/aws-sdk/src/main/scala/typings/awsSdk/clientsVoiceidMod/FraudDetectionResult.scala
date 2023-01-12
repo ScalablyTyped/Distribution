@@ -48,7 +48,8 @@ object FraudDetectionResult {
     __obj.asInstanceOf[FraudDetectionResult]
   }
   
-  extension [Self <: FraudDetectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FraudDetectionResult] (val x: Self) extends AnyVal {
     
     inline def setAudioAggregationEndedAt(value: js.Date): Self = StObject.set(x, "AudioAggregationEndedAt", value.asInstanceOf[js.Any])
     

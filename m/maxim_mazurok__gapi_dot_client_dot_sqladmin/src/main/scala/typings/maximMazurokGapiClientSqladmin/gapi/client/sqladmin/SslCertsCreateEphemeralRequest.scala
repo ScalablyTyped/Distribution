@@ -19,7 +19,8 @@ object SslCertsCreateEphemeralRequest {
     __obj.asInstanceOf[SslCertsCreateEphemeralRequest]
   }
   
-  extension [Self <: SslCertsCreateEphemeralRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SslCertsCreateEphemeralRequest] (val x: Self) extends AnyVal {
     
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object VisibleElementsMenuItems {
     __obj.asInstanceOf[VisibleElementsMenuItems]
   }
   
-  extension [Self <: VisibleElementsMenuItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibleElementsMenuItems] (val x: Self) extends AnyVal {
     
     inline def setClearSelection(value: Boolean): Self = StObject.set(x, "clearSelection", value.asInstanceOf[js.Any])
     

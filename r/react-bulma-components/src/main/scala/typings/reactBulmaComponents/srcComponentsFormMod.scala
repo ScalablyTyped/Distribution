@@ -97,7 +97,8 @@ object srcComponentsFormMod {
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    extension [Self <: CheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object srcComponentsFormMod {
       __obj.asInstanceOf[ControlProps]
     }
     
-    extension [Self <: ControlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlProps] (val x: Self) extends AnyVal {
       
       inline def setFullwidth(value: Boolean): Self = StObject.set(x, "fullwidth", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object srcComponentsFormMod {
       __obj.asInstanceOf[FieldLabelProps]
     }
     
-    extension [Self <: FieldLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldLabelProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -172,7 +175,8 @@ object srcComponentsFormMod {
       __obj.asInstanceOf[FieldProps]
     }
     
-    extension [Self <: FieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -203,7 +207,8 @@ object srcComponentsFormMod {
       __obj.asInstanceOf[HelpProps]
     }
     
-    extension [Self <: HelpProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelpProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -242,7 +247,8 @@ object srcComponentsFormMod {
       __obj.asInstanceOf[InputFileProps]
     }
     
-    extension [Self <: InputFileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputFileProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -311,7 +317,8 @@ object srcComponentsFormMod {
       __obj.asInstanceOf[InputProps[T]]
     }
     
-    extension [Self <: InputProps[?], T](x: Self & InputProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputProps[?], T] (val x: Self & InputProps[T]) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -350,7 +357,8 @@ object srcComponentsFormMod {
       __obj.asInstanceOf[LabelProps]
     }
     
-    extension [Self <: LabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -369,7 +377,8 @@ object srcComponentsFormMod {
       __obj.asInstanceOf[RadioProps]
     }
     
-    extension [Self <: RadioProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioProps] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -400,7 +409,8 @@ object srcComponentsFormMod {
       __obj.asInstanceOf[SelectProps[T]]
     }
     
-    extension [Self <: SelectProps[?], T](x: Self & SelectProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectProps[?], T] (val x: Self & SelectProps[T]) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -447,7 +457,8 @@ object srcComponentsFormMod {
       __obj.asInstanceOf[TextareaProps]
     }
     
-    extension [Self <: TextareaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

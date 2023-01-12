@@ -56,7 +56,8 @@ object componentsUiShellNavigationMenuPanelMod {
       __obj.asInstanceOf[NavigationMenuPanel]
     }
     
-    extension [Self <: NavigationMenuPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationMenuPanel] (val x: Self) extends AnyVal {
       
       inline def setCreatedByLauncher(value: Event => Unit): Self = StObject.set(x, "createdByLauncher", js.Any.fromFunction1(value))
       
@@ -103,7 +104,8 @@ object componentsUiShellNavigationMenuPanelMod {
       __obj.asInstanceOf[NavigationMenuPanelOptions]
     }
     
-    extension [Self <: NavigationMenuPanelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationMenuPanelOptions] (val x: Self) extends AnyVal {
       
       inline def setAttribLabelCollapse(value: String): Self = StObject.set(x, "attribLabelCollapse", value.asInstanceOf[js.Any])
       

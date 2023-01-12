@@ -18,7 +18,8 @@ object Collapsed {
     __obj.asInstanceOf[Collapsed]
   }
   
-  extension [Self <: Collapsed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collapsed] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

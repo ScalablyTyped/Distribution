@@ -76,7 +76,8 @@ object libFormFormItemMod extends Shortcut {
       __obj.asInstanceOf[FormItemProps[Values]]
     }
     
-    extension [Self <: FormItemProps[?], Values](x: Self & FormItemProps[Values]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormItemProps[?], Values] (val x: Self & FormItemProps[Values]) extends AnyVal {
       
       inline def setChildren(value: ChildrenType[Values]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object libFormFormItemMod extends Shortcut {
       __obj.asInstanceOf[RcFieldProps[Values]]
     }
     
-    extension [Self <: RcFieldProps[?], Values](x: Self & RcFieldProps[Values]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RcFieldProps[?], Values] (val x: Self & RcFieldProps[Values]) extends AnyVal {
       
       inline def setDependencies(value: js.Array[NamePath]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

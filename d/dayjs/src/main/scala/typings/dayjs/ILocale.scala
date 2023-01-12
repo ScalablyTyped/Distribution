@@ -35,7 +35,8 @@ object ILocale {
     __obj.asInstanceOf[ILocale]
   }
   
-  extension [Self <: ILocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocale] (val x: Self) extends AnyVal {
     
     inline def setFormats(value: PartialLTstringLTSstringL): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     

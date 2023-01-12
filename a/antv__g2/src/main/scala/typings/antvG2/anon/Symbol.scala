@@ -17,7 +17,8 @@ object Symbol {
     __obj.asInstanceOf[Symbol]
   }
   
-  extension [Self <: Symbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: LineWidth): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

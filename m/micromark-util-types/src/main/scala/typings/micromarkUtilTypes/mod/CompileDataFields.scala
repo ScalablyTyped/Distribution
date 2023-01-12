@@ -50,7 +50,8 @@ object CompileDataFields {
     __obj.asInstanceOf[CompileDataFields]
   }
   
-  extension [Self <: CompileDataFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompileDataFields] (val x: Self) extends AnyVal {
     
     inline def setCharacterReferenceType(value: String): Self = StObject.set(x, "characterReferenceType", value.asInstanceOf[js.Any])
     

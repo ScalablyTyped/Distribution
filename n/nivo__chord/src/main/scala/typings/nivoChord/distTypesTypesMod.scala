@@ -42,7 +42,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ArcAnimatedProps]
     }
     
-    extension [Self <: ArcAnimatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcAnimatedProps] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ArcDatum]
     }
     
-    extension [Self <: ArcDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcDatum] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ArcTooltipComponentProps]
     }
     
-    extension [Self <: ArcTooltipComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcTooltipComponentProps] (val x: Self) extends AnyVal {
       
       inline def setArc(value: ArcDatum): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     }
@@ -231,7 +234,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ChordCanvasProps]
     }
     
-    extension [Self <: ChordCanvasProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChordCanvasProps] (val x: Self) extends AnyVal {
       
       inline def setActiveArcOpacity(value: Double): Self = StObject.set(x, "activeArcOpacity", value.asInstanceOf[js.Any])
       
@@ -534,7 +538,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ChordCommonProps]
     }
     
-    extension [Self <: ChordCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChordCommonProps] (val x: Self) extends AnyVal {
       
       inline def setActiveArcOpacity(value: Double): Self = StObject.set(x, "activeArcOpacity", value.asInstanceOf[js.Any])
       
@@ -641,7 +646,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ChordDataProps]
     }
     
-    extension [Self <: ChordDataProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChordDataProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -761,7 +767,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ChordSvgProps]
     }
     
-    extension [Self <: ChordSvgProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChordSvgProps] (val x: Self) extends AnyVal {
       
       inline def setActiveArcOpacity(value: Double): Self = StObject.set(x, "activeArcOpacity", value.asInstanceOf[js.Any])
       
@@ -993,7 +1000,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[CustomLayerProps]
     }
     
-    extension [Self <: CustomLayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomLayerProps] (val x: Self) extends AnyVal {
       
       inline def setArcGenerator(value: ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
       
@@ -1062,7 +1070,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[RibbonAnimatedProps]
     }
     
-    extension [Self <: RibbonAnimatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RibbonAnimatedProps] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -1095,7 +1104,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[RibbonDatum]
     }
     
-    extension [Self <: RibbonDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RibbonDatum] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -1120,7 +1130,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[RibbonTooltipComponentProps]
     }
     
-    extension [Self <: RibbonTooltipComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RibbonTooltipComponentProps] (val x: Self) extends AnyVal {
       
       inline def setRibbon(value: RibbonDatum): Self = StObject.set(x, "ribbon", value.asInstanceOf[js.Any])
     }

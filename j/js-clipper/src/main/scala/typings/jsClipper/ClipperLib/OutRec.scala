@@ -25,7 +25,8 @@ object OutRec {
     __obj.asInstanceOf[OutRec]
   }
   
-  extension [Self <: OutRec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutRec] (val x: Self) extends AnyVal {
     
     inline def setAppendLink(value: OutRec): Self = StObject.set(x, "AppendLink", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object BaseMenuRendererProps {
     __obj.asInstanceOf[BaseMenuRendererProps]
   }
   
-  extension [Self <: BaseMenuRendererProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMenuRendererProps] (val x: Self) extends AnyVal {
     
     inline def setMenuClassName(value: String): Self = StObject.set(x, "menuClassName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Popper {
     __obj.asInstanceOf[Popper]
   }
   
-  extension [Self <: Popper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Popper] (val x: Self) extends AnyVal {
     
     inline def setPopper(value: js.Array[Element | Window | VisualViewport]): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object IRectOptions {
     __obj.asInstanceOf[IRectOptions]
   }
   
-  extension [Self <: IRectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRectOptions] (val x: Self) extends AnyVal {
     
     inline def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
     

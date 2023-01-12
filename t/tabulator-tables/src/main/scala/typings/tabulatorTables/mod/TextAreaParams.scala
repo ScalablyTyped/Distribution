@@ -24,7 +24,8 @@ object TextAreaParams {
     __obj.asInstanceOf[TextAreaParams]
   }
   
-  extension [Self <: TextAreaParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextAreaParams] (val x: Self) extends AnyVal {
     
     inline def setShiftEnterSubmit(value: Boolean): Self = StObject.set(x, "shiftEnterSubmit", value.asInstanceOf[js.Any])
     

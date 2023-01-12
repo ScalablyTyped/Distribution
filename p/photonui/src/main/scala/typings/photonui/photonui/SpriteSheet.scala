@@ -45,7 +45,8 @@ object SpriteSheet {
     __obj.asInstanceOf[SpriteSheet]
   }
   
-  extension [Self <: SpriteSheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpriteSheet] (val x: Self) extends AnyVal {
     
     inline def setAddIcon(value: (String, Double, Double) => Unit): Self = StObject.set(x, "addIcon", js.Any.fromFunction3(value))
     

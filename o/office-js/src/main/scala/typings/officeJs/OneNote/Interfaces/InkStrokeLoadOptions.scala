@@ -41,7 +41,8 @@ object InkStrokeLoadOptions {
     __obj.asInstanceOf[InkStrokeLoadOptions]
   }
   
-  extension [Self <: InkStrokeLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InkStrokeLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

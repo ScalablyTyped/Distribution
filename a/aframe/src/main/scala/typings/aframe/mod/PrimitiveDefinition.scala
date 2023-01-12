@@ -23,7 +23,8 @@ object PrimitiveDefinition {
     __obj.asInstanceOf[PrimitiveDefinition]
   }
   
-  extension [Self <: PrimitiveDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimitiveDefinition] (val x: Self) extends AnyVal {
     
     inline def setDefaultComponents(value: Any): Self = StObject.set(x, "defaultComponents", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object FieldMaskMask {
     __obj.asInstanceOf[FieldMaskMask]
   }
   
-  extension [Self <: FieldMaskMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldMaskMask] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

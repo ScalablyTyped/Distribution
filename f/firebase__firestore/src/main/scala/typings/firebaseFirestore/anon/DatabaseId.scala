@@ -20,7 +20,8 @@ object DatabaseId {
     __obj.asInstanceOf[DatabaseId]
   }
   
-  extension [Self <: DatabaseId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseId] (val x: Self) extends AnyVal {
     
     inline def setApp(value: Any): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

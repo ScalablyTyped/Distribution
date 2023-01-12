@@ -28,7 +28,8 @@ object RecordingGroup {
     __obj.asInstanceOf[RecordingGroup]
   }
   
-  extension [Self <: RecordingGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordingGroup] (val x: Self) extends AnyVal {
     
     inline def setAllSupported(value: AllSupported): Self = StObject.set(x, "allSupported", value.asInstanceOf[js.Any])
     

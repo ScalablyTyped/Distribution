@@ -18,7 +18,8 @@ object DeleteFlowTemplateRequest {
     __obj.asInstanceOf[DeleteFlowTemplateRequest]
   }
   
-  extension [Self <: DeleteFlowTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFlowTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

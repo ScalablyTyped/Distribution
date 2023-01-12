@@ -20,7 +20,8 @@ object MkdirOptions {
     __obj.asInstanceOf[MkdirOptions]
   }
   
-  extension [Self <: MkdirOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MkdirOptions] (val x: Self) extends AnyVal {
     
     inline def setDirPath(value: String): Self = StObject.set(x, "dirPath", value.asInstanceOf[js.Any])
     

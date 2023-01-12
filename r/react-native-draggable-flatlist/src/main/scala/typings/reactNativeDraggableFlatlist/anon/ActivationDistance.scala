@@ -82,7 +82,8 @@ object ActivationDistance {
     __obj.asInstanceOf[ActivationDistance]
   }
   
-  extension [Self <: ActivationDistance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivationDistance] (val x: Self) extends AnyVal {
     
     inline def setActivationDistance(value: Value): Self = StObject.set(x, "activationDistance", value.asInstanceOf[js.Any])
     

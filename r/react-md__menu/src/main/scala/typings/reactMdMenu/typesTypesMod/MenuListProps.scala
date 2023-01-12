@@ -33,7 +33,8 @@ object MenuListProps {
     __obj.asInstanceOf[MenuListProps]
   }
   
-  extension [Self <: MenuListProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuListProps] (val x: Self) extends AnyVal {
     
     inline def setListClassName(value: String): Self = StObject.set(x, "listClassName", value.asInstanceOf[js.Any])
     

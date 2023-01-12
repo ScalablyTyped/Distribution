@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Auth]
     }
     
-    extension [Self <: Auth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Authorization]
     }
     
-    extension [Self <: Authorization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     }
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[AuthorizationCryptoKey]
     }
     
-    extension [Self <: AuthorizationCryptoKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationCryptoKey] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
       
@@ -84,7 +87,8 @@ object anon {
       __obj.asInstanceOf[CryptoKey]
     }
     
-    extension [Self <: CryptoKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoKey] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
       
@@ -108,7 +112,8 @@ object anon {
       __obj.asInstanceOf[PrivateKey]
     }
     
-    extension [Self <: PrivateKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
@@ -138,7 +143,8 @@ object anon {
       __obj.asInstanceOf[RequestDetailsbodyBuffer]
     }
     
-    extension [Self <: RequestDetailsbodyBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestDetailsbodyBuffer] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -176,7 +182,8 @@ object anon {
       __obj.asInstanceOf[RequestDetailsbodynull]
     }
     
-    extension [Self <: RequestDetailsbodynull](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestDetailsbodynull] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -71,7 +71,8 @@ object libEsmHeadersEditableNameMod {
       __obj.asInstanceOf[IEditableNameProps]
     }
     
-    extension [Self <: IEditableNameProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditableNameProps] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object libEsmHeadersEditableNameMod {
       __obj.asInstanceOf[IEditableNameState]
     }
     
-    extension [Self <: IEditableNameState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditableNameState] (val x: Self) extends AnyVal {
       
       inline def setDirtyName(value: String): Self = StObject.set(x, "dirtyName", value.asInstanceOf[js.Any])
       

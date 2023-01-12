@@ -37,7 +37,8 @@ object typesModulesGridMod {
       __obj.asInstanceOf[GridOptions]
     }
     
-    extension [Self <: GridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridOptions] (val x: Self) extends AnyVal {
       
       inline def setFill(value: row | column): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       

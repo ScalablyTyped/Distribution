@@ -25,7 +25,8 @@ object PropertiesContainerComponentProperties {
     __obj.asInstanceOf[PropertiesContainerComponentProperties]
   }
   
-  extension [Self <: PropertiesContainerComponentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesContainerComponentProperties] (val x: Self) extends AnyVal {
     
     inline def setPropertyItems(value: js.Array[PropertiesContainerItem]): Self = StObject.set(x, "propertyItems", value.asInstanceOf[js.Any])
     

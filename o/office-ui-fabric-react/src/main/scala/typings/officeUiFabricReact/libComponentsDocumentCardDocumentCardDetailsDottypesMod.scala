@@ -45,7 +45,8 @@ object libComponentsDocumentCardDocumentCardDetailsDottypesMod {
       __obj.asInstanceOf[IDocumentCardDetailsProps]
     }
     
-    extension [Self <: IDocumentCardDetailsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardDetailsProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object libComponentsDocumentCardDocumentCardDetailsDottypesMod {
       __obj.asInstanceOf[IDocumentCardDetailsStyleProps]
     }
     
-    extension [Self <: IDocumentCardDetailsStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardDetailsStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object libComponentsDocumentCardDocumentCardDetailsDottypesMod {
       __obj.asInstanceOf[IDocumentCardDetailsStyles]
     }
     
-    extension [Self <: IDocumentCardDetailsStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardDetailsStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

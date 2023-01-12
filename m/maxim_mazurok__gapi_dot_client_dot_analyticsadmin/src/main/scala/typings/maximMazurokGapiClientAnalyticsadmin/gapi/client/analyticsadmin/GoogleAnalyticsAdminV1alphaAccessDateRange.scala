@@ -25,7 +25,8 @@ object GoogleAnalyticsAdminV1alphaAccessDateRange {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAccessDateRange]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAccessDateRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAccessDateRange] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object GridData {
     __obj.asInstanceOf[GridData]
   }
   
-  extension [Self <: GridData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridData] (val x: Self) extends AnyVal {
     
     inline def setColumnMetadata(value: js.Array[DimensionProperties]): Self = StObject.set(x, "columnMetadata", value.asInstanceOf[js.Any])
     

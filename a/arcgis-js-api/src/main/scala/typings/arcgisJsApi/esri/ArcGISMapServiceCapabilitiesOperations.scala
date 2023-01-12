@@ -54,7 +54,8 @@ object ArcGISMapServiceCapabilitiesOperations {
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesOperations]
   }
   
-  extension [Self <: ArcGISMapServiceCapabilitiesOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGISMapServiceCapabilitiesOperations] (val x: Self) extends AnyVal {
     
     inline def setSupportsExportMap(value: Boolean): Self = StObject.set(x, "supportsExportMap", value.asInstanceOf[js.Any])
     

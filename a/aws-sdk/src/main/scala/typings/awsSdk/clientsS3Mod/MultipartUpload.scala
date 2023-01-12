@@ -48,7 +48,8 @@ object MultipartUpload {
     __obj.asInstanceOf[MultipartUpload]
   }
   
-  extension [Self <: MultipartUpload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipartUpload] (val x: Self) extends AnyVal {
     
     inline def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
     

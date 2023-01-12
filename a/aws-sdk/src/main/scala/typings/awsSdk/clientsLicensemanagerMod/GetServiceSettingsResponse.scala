@@ -38,7 +38,8 @@ object GetServiceSettingsResponse {
     __obj.asInstanceOf[GetServiceSettingsResponse]
   }
   
-  extension [Self <: GetServiceSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setEnableCrossAccountsDiscovery(value: BoxBoolean): Self = StObject.set(x, "EnableCrossAccountsDiscovery", value.asInstanceOf[js.Any])
     

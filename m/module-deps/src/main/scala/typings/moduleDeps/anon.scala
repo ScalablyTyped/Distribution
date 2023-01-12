@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Basedir]
     }
     
-    extension [Self <: Basedir](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Basedir] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Builtin]
     }
     
-    extension [Self <: Builtin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Builtin] (val x: Self) extends AnyVal {
       
       inline def setBuiltin(value: Boolean): Self = StObject.set(x, "builtin", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Dictprop]
     }
     
-    extension [Self <: Dictprop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictprop] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: Boolean): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
@@ -131,7 +135,8 @@ object anon {
       __obj.asInstanceOf[Modules]
     }
     
-    extension [Self <: Modules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modules] (val x: Self) extends AnyVal {
       
       inline def setModules(value: Any): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     }
@@ -151,7 +156,8 @@ object anon {
       __obj.asInstanceOf[PackageObjectdirnamestrin]
     }
     
-    extension [Self <: PackageObjectdirnamestrin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageObjectdirnamestrin] (val x: Self) extends AnyVal {
       
       inline def set__dirname(value: String): Self = StObject.set(x, "__dirname", value.asInstanceOf[js.Any])
     }
@@ -188,7 +194,8 @@ object anon {
       __obj.asInstanceOf[PartialParentObjectidstri]
     }
     
-    extension [Self <: PartialParentObjectidstri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialParentObjectidstri] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object ExpenseDetection {
     __obj.asInstanceOf[ExpenseDetection]
   }
   
-  extension [Self <: ExpenseDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpenseDetection] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

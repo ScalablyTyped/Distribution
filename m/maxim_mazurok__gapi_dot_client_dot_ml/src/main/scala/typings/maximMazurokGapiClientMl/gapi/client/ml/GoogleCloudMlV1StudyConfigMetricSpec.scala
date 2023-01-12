@@ -19,7 +19,8 @@ object GoogleCloudMlV1StudyConfigMetricSpec {
     __obj.asInstanceOf[GoogleCloudMlV1StudyConfigMetricSpec]
   }
   
-  extension [Self <: GoogleCloudMlV1StudyConfigMetricSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1StudyConfigMetricSpec] (val x: Self) extends AnyVal {
     
     inline def setGoal(value: String): Self = StObject.set(x, "goal", value.asInstanceOf[js.Any])
     

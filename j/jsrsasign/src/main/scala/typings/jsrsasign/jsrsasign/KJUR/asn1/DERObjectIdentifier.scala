@@ -67,7 +67,8 @@ object DERObjectIdentifier {
     __obj.asInstanceOf[DERObjectIdentifier]
   }
   
-  extension [Self <: DERObjectIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DERObjectIdentifier] (val x: Self) extends AnyVal {
     
     inline def setSetValueHex(value: String => Unit): Self = StObject.set(x, "setValueHex", js.Any.fromFunction1(value))
     

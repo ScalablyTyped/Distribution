@@ -59,7 +59,8 @@ object anon {
       __obj.asInstanceOf[CommonAttributesanyanykey]
     }
     
-    extension [Self <: CommonAttributesanyanykey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonAttributesanyanykey] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object anon {
       __obj.asInstanceOf[JsonpOptionsurlstring]
     }
     
-    extension [Self <: JsonpOptionsurlstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonpOptionsurlstring] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object anon {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setParams(value: typings.mithril.mod.Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -219,7 +222,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

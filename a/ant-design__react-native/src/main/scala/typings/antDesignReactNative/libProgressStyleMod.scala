@@ -27,7 +27,8 @@ object libProgressStyleMod {
       __obj.asInstanceOf[ProgressStyle]
     }
     
-    extension [Self <: ProgressStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressStyle] (val x: Self) extends AnyVal {
       
       inline def setProgressBar(value: ViewStyle): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
       

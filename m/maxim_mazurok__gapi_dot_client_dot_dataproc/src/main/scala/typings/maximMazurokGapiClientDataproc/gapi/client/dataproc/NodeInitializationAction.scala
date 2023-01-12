@@ -23,7 +23,8 @@ object NodeInitializationAction {
     __obj.asInstanceOf[NodeInitializationAction]
   }
   
-  extension [Self <: NodeInitializationAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeInitializationAction] (val x: Self) extends AnyVal {
     
     inline def setExecutableFile(value: String): Self = StObject.set(x, "executableFile", value.asInstanceOf[js.Any])
     

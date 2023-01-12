@@ -45,7 +45,8 @@ object typesHelpersHelpersDotcurveMod {
       __obj.asInstanceOf[MonotoneSplinePoint]
     }
     
-    extension [Self <: MonotoneSplinePoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonotoneSplinePoint] (val x: Self) extends AnyVal {
       
       inline def setCp1x(value: Double): Self = StObject.set(x, "cp1x", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object typesHelpersHelpersDotcurveMod {
       __obj.asInstanceOf[SplinePoint]
     }
     
-    extension [Self <: SplinePoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplinePoint] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

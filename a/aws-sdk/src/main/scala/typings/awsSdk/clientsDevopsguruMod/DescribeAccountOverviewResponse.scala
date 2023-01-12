@@ -32,7 +32,8 @@ object DescribeAccountOverviewResponse {
     __obj.asInstanceOf[DescribeAccountOverviewResponse]
   }
   
-  extension [Self <: DescribeAccountOverviewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccountOverviewResponse] (val x: Self) extends AnyVal {
     
     inline def setMeanTimeToRecoverInMilliseconds(value: MeanTimeToRecoverInMilliseconds): Self = StObject.set(x, "MeanTimeToRecoverInMilliseconds", value.asInstanceOf[js.Any])
     

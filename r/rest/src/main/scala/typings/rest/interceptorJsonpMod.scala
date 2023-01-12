@@ -24,7 +24,8 @@ object interceptorJsonpMod extends Shortcut {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: Name): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       

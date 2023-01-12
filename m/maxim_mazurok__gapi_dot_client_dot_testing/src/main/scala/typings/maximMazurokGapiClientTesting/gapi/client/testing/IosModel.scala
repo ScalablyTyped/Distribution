@@ -43,7 +43,8 @@ object IosModel {
     __obj.asInstanceOf[IosModel]
   }
   
-  extension [Self <: IosModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosModel] (val x: Self) extends AnyVal {
     
     inline def setDeviceCapabilities(value: js.Array[String]): Self = StObject.set(x, "deviceCapabilities", value.asInstanceOf[js.Any])
     

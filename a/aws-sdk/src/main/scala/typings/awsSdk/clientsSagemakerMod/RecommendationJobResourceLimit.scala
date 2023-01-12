@@ -23,7 +23,8 @@ object RecommendationJobResourceLimit {
     __obj.asInstanceOf[RecommendationJobResourceLimit]
   }
   
-  extension [Self <: RecommendationJobResourceLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationJobResourceLimit] (val x: Self) extends AnyVal {
     
     inline def setMaxNumberOfTests(value: MaxNumberOfTests): Self = StObject.set(x, "MaxNumberOfTests", value.asInstanceOf[js.Any])
     

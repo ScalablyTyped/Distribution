@@ -65,7 +65,8 @@ object queryMod {
       __obj.asInstanceOf[OrderOptions]
     }
     
-    extension [Self <: OrderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrderOptions] (val x: Self) extends AnyVal {
       
       inline def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     }
@@ -107,7 +108,8 @@ object queryMod {
       __obj.asInstanceOf[QueryInfo]
     }
     
-    extension [Self <: QueryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryInfo] (val x: Self) extends AnyVal {
       
       inline def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object queryMod {
       __obj.asInstanceOf[QueryOptions]
     }
     
-    extension [Self <: QueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
       
       inline def setConsistency(value: strong | eventual): Self = StObject.set(x, "consistency", value.asInstanceOf[js.Any])
       

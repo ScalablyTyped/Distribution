@@ -43,7 +43,8 @@ object FleetSummary {
     __obj.asInstanceOf[FleetSummary]
   }
   
-  extension [Self <: FleetSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

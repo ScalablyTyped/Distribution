@@ -62,7 +62,8 @@ object libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerOptionsMo
       __obj.asInstanceOf[SessionDescriptionHandlerOptions]
     }
     
-    extension [Self <: SessionDescriptionHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionDescriptionHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setAnswerOptions(value: RTCAnswerOptions): Self = StObject.set(x, "answerOptions", value.asInstanceOf[js.Any])
       

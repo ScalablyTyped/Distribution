@@ -15,7 +15,8 @@ object CopyDBParameterGroupResult {
     __obj.asInstanceOf[CopyDBParameterGroupResult]
   }
   
-  extension [Self <: CopyDBParameterGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyDBParameterGroupResult] (val x: Self) extends AnyVal {
     
     inline def setDBParameterGroup(value: DBParameterGroup): Self = StObject.set(x, "DBParameterGroup", value.asInstanceOf[js.Any])
     

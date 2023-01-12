@@ -23,7 +23,8 @@ object LifecycleListener {
     __obj.asInstanceOf[LifecycleListener]
   }
   
-  extension [Self <: LifecycleListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecycleListener] (val x: Self) extends AnyVal {
     
     inline def setLifecycleListener(value: `17`): Self = StObject.set(x, "lifecycleListener", value.asInstanceOf[js.Any])
     

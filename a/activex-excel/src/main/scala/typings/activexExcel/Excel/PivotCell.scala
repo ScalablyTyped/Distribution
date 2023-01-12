@@ -89,7 +89,8 @@ object PivotCell {
     __obj.asInstanceOf[PivotCell]
   }
   
-  extension [Self <: PivotCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotCell] (val x: Self) extends AnyVal {
     
     inline def setAllocateChange(value: () => Unit): Self = StObject.set(x, "AllocateChange", js.Any.fromFunction0(value))
     

@@ -53,7 +53,8 @@ object BatchExecuteStatementInput {
     __obj.asInstanceOf[BatchExecuteStatementInput]
   }
   
-  extension [Self <: BatchExecuteStatementInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchExecuteStatementInput] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: Location): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     

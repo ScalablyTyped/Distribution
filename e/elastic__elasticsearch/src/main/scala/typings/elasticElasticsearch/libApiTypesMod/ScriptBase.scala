@@ -16,7 +16,8 @@ object ScriptBase {
     __obj.asInstanceOf[ScriptBase]
   }
   
-  extension [Self <: ScriptBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptBase] (val x: Self) extends AnyVal {
     
     inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

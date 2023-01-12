@@ -65,7 +65,8 @@ object srcViewObserverDomeventobserverMod {
         __obj.asInstanceOf[Observers]
       }
       
-      extension [Self <: Observers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Observers] (val x: Self) extends AnyVal {
         
         inline def setDomEventObserver(value: DomEventObserver): Self = StObject.set(x, "DomEventObserver", value.asInstanceOf[js.Any])
       }

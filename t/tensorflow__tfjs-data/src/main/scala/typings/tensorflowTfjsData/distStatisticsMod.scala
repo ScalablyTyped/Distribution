@@ -46,7 +46,8 @@ object distStatisticsMod {
       __obj.asInstanceOf[NumericColumnStatistics]
     }
     
-    extension [Self <: NumericColumnStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumericColumnStatistics] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

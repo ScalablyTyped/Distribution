@@ -52,7 +52,8 @@ object ActionCodeInfo {
     __obj.asInstanceOf[ActionCodeInfo]
   }
   
-  extension [Self <: ActionCodeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionCodeInfo] (val x: Self) extends AnyVal {
     
     inline def setData(value: typings.firebaseAuth.anon.MultiFactorInfo): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

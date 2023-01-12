@@ -36,7 +36,8 @@ object TermStore {
       __obj.asInstanceOf[typings.microsoftGraph.mod.TermStore.Group]
     }
     
-    extension [Self <: typings.microsoftGraph.mod.TermStore.Group](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.microsoftGraph.mod.TermStore.Group] (val x: Self) extends AnyVal {
       
       inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object TermStore {
       __obj.asInstanceOf[LocalizedDescription]
     }
     
-    extension [Self <: LocalizedDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizedDescription] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object TermStore {
       __obj.asInstanceOf[LocalizedLabel]
     }
     
-    extension [Self <: LocalizedLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizedLabel] (val x: Self) extends AnyVal {
       
       inline def setIsDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object TermStore {
       __obj.asInstanceOf[LocalizedName]
     }
     
-    extension [Self <: LocalizedName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizedName] (val x: Self) extends AnyVal {
       
       inline def setLanguageTag(value: NullableOption[String]): Self = StObject.set(x, "languageTag", value.asInstanceOf[js.Any])
       
@@ -206,7 +210,8 @@ object TermStore {
       __obj.asInstanceOf[Relation]
     }
     
-    extension [Self <: Relation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Relation] (val x: Self) extends AnyVal {
       
       inline def setFromTerm(value: NullableOption[Term]): Self = StObject.set(x, "fromTerm", value.asInstanceOf[js.Any])
       
@@ -284,7 +289,8 @@ object TermStore {
       __obj.asInstanceOf[Set]
     }
     
-    extension [Self <: Set](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Set] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: NullableOption[js.Array[Term]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -367,7 +373,8 @@ object TermStore {
       __obj.asInstanceOf[Store]
     }
     
-    extension [Self <: Store](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
       
       inline def setDefaultLanguageTag(value: String): Self = StObject.set(x, "defaultLanguageTag", value.asInstanceOf[js.Any])
       
@@ -432,7 +439,8 @@ object TermStore {
       __obj.asInstanceOf[Term]
     }
     
-    extension [Self <: Term](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Term] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: NullableOption[js.Array[Term]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

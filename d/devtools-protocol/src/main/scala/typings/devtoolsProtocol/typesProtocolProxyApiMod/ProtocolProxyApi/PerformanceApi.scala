@@ -52,7 +52,8 @@ object PerformanceApi {
     __obj.asInstanceOf[PerformanceApi]
   }
   
-  extension [Self <: PerformanceApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceApi] (val x: Self) extends AnyVal {
     
     inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     

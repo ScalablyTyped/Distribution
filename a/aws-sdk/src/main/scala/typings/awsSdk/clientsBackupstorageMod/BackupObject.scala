@@ -48,7 +48,8 @@ object BackupObject {
     __obj.asInstanceOf[BackupObject]
   }
   
-  extension [Self <: BackupObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackupObject] (val x: Self) extends AnyVal {
     
     inline def setChunksCount(value: OptionalLong): Self = StObject.set(x, "ChunksCount", value.asInstanceOf[js.Any])
     

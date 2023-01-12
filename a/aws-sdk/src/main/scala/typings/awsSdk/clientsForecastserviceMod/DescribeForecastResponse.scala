@@ -68,7 +68,8 @@ object DescribeForecastResponse {
     __obj.asInstanceOf[DescribeForecastResponse]
   }
   
-  extension [Self <: DescribeForecastResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeForecastResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

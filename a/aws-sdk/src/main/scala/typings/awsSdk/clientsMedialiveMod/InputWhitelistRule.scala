@@ -18,7 +18,8 @@ object InputWhitelistRule {
     __obj.asInstanceOf[InputWhitelistRule]
   }
   
-  extension [Self <: InputWhitelistRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputWhitelistRule] (val x: Self) extends AnyVal {
     
     inline def setCidr(value: string): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     

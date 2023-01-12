@@ -29,7 +29,8 @@ object AggregatedResultsDifference {
     __obj.asInstanceOf[AggregatedResultsDifference]
   }
   
-  extension [Self <: AggregatedResultsDifference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedResultsDifference] (val x: Self) extends AnyVal {
     
     inline def setIncreaseInDuration(value: Any): Self = StObject.set(x, "increaseInDuration", value.asInstanceOf[js.Any])
     

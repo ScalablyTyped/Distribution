@@ -24,7 +24,8 @@ object DayProp {
     __obj.asInstanceOf[DayProp[TEvent]]
   }
   
-  extension [Self <: DayProp[?], TEvent /* <: js.Object */](x: Self & DayProp[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayProp[?], TEvent /* <: js.Object */] (val x: Self & DayProp[TEvent]) extends AnyVal {
     
     inline def setDayProp(
       value: (/* date */ js.Date, /* resourceId */ js.UndefOr[Double | String]) => HTMLAttributes[HTMLDivElement]

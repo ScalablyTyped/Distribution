@@ -313,7 +313,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArrayValueSize(value: Double): Self = StObject.set(x, "arrayValueSize", value.asInstanceOf[js.Any])
       
@@ -380,7 +381,8 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setHits(value: Double): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
       
@@ -410,7 +412,8 @@ object mod {
       __obj.asInstanceOf[ValueSetItem[T]]
     }
     
-    extension [Self <: ValueSetItem[?], T](x: Self & ValueSetItem[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueSetItem[?], T] (val x: Self & ValueSetItem[T]) extends AnyVal {
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -437,7 +440,8 @@ object mod {
       __obj.asInstanceOf[WrappedValue[T]]
     }
     
-    extension [Self <: WrappedValue[?], T](x: Self & WrappedValue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappedValue[?], T] (val x: Self & WrappedValue[T]) extends AnyVal {
       
       inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       

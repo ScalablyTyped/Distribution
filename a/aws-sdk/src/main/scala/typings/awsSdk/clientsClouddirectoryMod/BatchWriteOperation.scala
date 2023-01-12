@@ -88,7 +88,8 @@ object BatchWriteOperation {
     __obj.asInstanceOf[BatchWriteOperation]
   }
   
-  extension [Self <: BatchWriteOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchWriteOperation] (val x: Self) extends AnyVal {
     
     inline def setAddFacetToObject(value: BatchAddFacetToObject): Self = StObject.set(x, "AddFacetToObject", value.asInstanceOf[js.Any])
     

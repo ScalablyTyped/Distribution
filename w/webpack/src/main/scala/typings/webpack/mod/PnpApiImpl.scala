@@ -15,7 +15,8 @@ object PnpApiImpl {
     __obj.asInstanceOf[PnpApiImpl]
   }
   
-  extension [Self <: PnpApiImpl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PnpApiImpl] (val x: Self) extends AnyVal {
     
     inline def setResolveToUnqualified(value: (String, String, js.Object) => String): Self = StObject.set(x, "resolveToUnqualified", js.Any.fromFunction3(value))
   }

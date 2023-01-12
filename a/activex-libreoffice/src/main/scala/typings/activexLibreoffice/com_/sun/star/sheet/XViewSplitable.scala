@@ -81,7 +81,8 @@ object XViewSplitable {
     __obj.asInstanceOf[XViewSplitable]
   }
   
-  extension [Self <: XViewSplitable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XViewSplitable] (val x: Self) extends AnyVal {
     
     inline def setGetIsWindowSplit(value: () => Boolean): Self = StObject.set(x, "getIsWindowSplit", js.Any.fromFunction0(value))
     

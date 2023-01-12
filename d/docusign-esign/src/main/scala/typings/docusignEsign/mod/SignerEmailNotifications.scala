@@ -93,7 +93,8 @@ object SignerEmailNotifications {
     __obj.asInstanceOf[SignerEmailNotifications]
   }
   
-  extension [Self <: SignerEmailNotifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignerEmailNotifications] (val x: Self) extends AnyVal {
     
     inline def setAgentNotification(value: String): Self = StObject.set(x, "agentNotification", value.asInstanceOf[js.Any])
     

@@ -181,7 +181,8 @@ object distJsonRpcEngineMod {
       __obj.asInstanceOf[JsonRpcError]
     }
     
-    extension [Self <: JsonRpcError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonRpcError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object distJsonRpcEngineMod {
       __obj.asInstanceOf[JsonRpcFailure]
     }
     
-    extension [Self <: JsonRpcFailure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonRpcFailure] (val x: Self) extends AnyVal {
       
       inline def setError(value: JsonRpcError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -242,7 +244,8 @@ object distJsonRpcEngineMod {
       __obj.asInstanceOf[JsonRpcNotification[T]]
     }
     
-    extension [Self <: JsonRpcNotification[?], T](x: Self & JsonRpcNotification[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonRpcNotification[?], T] (val x: Self & JsonRpcNotification[T]) extends AnyVal {
       
       inline def setJsonrpc(value: JsonRpcVersion): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
       
@@ -271,7 +274,8 @@ object distJsonRpcEngineMod {
       __obj.asInstanceOf[JsonRpcRequest[T]]
     }
     
-    extension [Self <: JsonRpcRequest[?], T](x: Self & JsonRpcRequest[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonRpcRequest[?], T] (val x: Self & JsonRpcRequest[T]) extends AnyVal {
       
       inline def setId(value: JsonRpcId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -316,7 +320,8 @@ object distJsonRpcEngineMod {
       __obj.asInstanceOf[JsonRpcResponseBase]
     }
     
-    extension [Self <: JsonRpcResponseBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonRpcResponseBase] (val x: Self) extends AnyVal {
       
       inline def setId(value: JsonRpcId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -338,7 +343,8 @@ object distJsonRpcEngineMod {
       __obj.asInstanceOf[JsonRpcSuccess[T]]
     }
     
-    extension [Self <: JsonRpcSuccess[?], T](x: Self & JsonRpcSuccess[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonRpcSuccess[?], T] (val x: Self & JsonRpcSuccess[T]) extends AnyVal {
       
       inline def setResult(value: Maybe[T]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -367,7 +373,8 @@ object distJsonRpcEngineMod {
       __obj.asInstanceOf[PendingJsonRpcResponse[T]]
     }
     
-    extension [Self <: PendingJsonRpcResponse[?], T](x: Self & PendingJsonRpcResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PendingJsonRpcResponse[?], T] (val x: Self & PendingJsonRpcResponse[T]) extends AnyVal {
       
       inline def setError(value: js.Error | JsonRpcError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

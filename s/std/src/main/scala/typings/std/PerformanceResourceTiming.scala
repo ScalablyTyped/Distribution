@@ -94,7 +94,8 @@ object PerformanceResourceTiming {
     __obj.asInstanceOf[PerformanceResourceTiming]
   }
   
-  extension [Self <: PerformanceResourceTiming](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceResourceTiming] (val x: Self) extends AnyVal {
     
     inline def setConnectEnd(value: DOMHighResTimeStamp): Self = StObject.set(x, "connectEnd", value.asInstanceOf[js.Any])
     

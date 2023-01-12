@@ -9975,7 +9975,8 @@ object CSSPropertiesPartialRecorAnimationTimeline {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAnimationTimeline]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAnimationTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAnimationTimeline] (val x: Self) extends AnyVal {
     
     inline def `set--gap`(value: String): Self = StObject.set(x, "--gap", value.asInstanceOf[js.Any])
     

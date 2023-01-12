@@ -23,7 +23,8 @@ object DatasetContentDeliveryRule {
     __obj.asInstanceOf[DatasetContentDeliveryRule]
   }
   
-  extension [Self <: DatasetContentDeliveryRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetContentDeliveryRule] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: DatasetContentDeliveryDestination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

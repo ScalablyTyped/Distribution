@@ -17,7 +17,8 @@ object NextWord {
     __obj.asInstanceOf[NextWord]
   }
   
-  extension [Self <: NextWord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextWord] (val x: Self) extends AnyVal {
     
     inline def setNextWord(value: String): Self = StObject.set(x, "nextWord", value.asInstanceOf[js.Any])
     

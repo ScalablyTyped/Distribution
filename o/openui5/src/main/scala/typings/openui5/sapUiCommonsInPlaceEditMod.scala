@@ -525,7 +525,8 @@ object sapUiCommonsInPlaceEditMod {
       __obj.asInstanceOf[InPlaceEditSettings]
     }
     
-    extension [Self <: InPlaceEditSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InPlaceEditSettings] (val x: Self) extends AnyVal {
       
       inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       

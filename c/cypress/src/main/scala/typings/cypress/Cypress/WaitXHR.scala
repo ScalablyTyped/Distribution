@@ -55,7 +55,8 @@ object WaitXHR {
     __obj.asInstanceOf[WaitXHR]
   }
   
-  extension [Self <: WaitXHR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaitXHR] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

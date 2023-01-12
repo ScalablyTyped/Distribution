@@ -27,7 +27,8 @@ object LinkObject {
     __obj.asInstanceOf[LinkObject]
   }
   
-  extension [Self <: LinkObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkObject] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

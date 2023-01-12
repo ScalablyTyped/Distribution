@@ -31,7 +31,8 @@ object ComputedBarDatumWithValue {
     __obj.asInstanceOf[ComputedBarDatumWithValue[RawDatum]]
   }
   
-  extension [Self <: ComputedBarDatumWithValue[?], RawDatum](x: Self & ComputedBarDatumWithValue[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedBarDatumWithValue[?], RawDatum] (val x: Self & ComputedBarDatumWithValue[RawDatum]) extends AnyVal {
     
     inline def setData(value: ComputedDatum[RawDatum] & Value): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

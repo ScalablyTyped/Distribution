@@ -23,7 +23,8 @@ object WorkflowExecutionInfos {
     __obj.asInstanceOf[WorkflowExecutionInfos]
   }
   
-  extension [Self <: WorkflowExecutionInfos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowExecutionInfos] (val x: Self) extends AnyVal {
     
     inline def setExecutionInfos(value: WorkflowExecutionInfoList): Self = StObject.set(x, "executionInfos", value.asInstanceOf[js.Any])
     

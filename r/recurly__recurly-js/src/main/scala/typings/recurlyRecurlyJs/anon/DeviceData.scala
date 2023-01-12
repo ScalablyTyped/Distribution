@@ -15,7 +15,8 @@ object DeviceData {
     __obj.asInstanceOf[DeviceData]
   }
   
-  extension [Self <: DeviceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceData] (val x: Self) extends AnyVal {
     
     inline def setDeviceData(value: String): Self = StObject.set(x, "deviceData", value.asInstanceOf[js.Any])
     

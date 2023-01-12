@@ -20,7 +20,8 @@ object UtilityNetworkTraceAddFlagCompleteEvent {
     __obj.asInstanceOf[UtilityNetworkTraceAddFlagCompleteEvent]
   }
   
-  extension [Self <: UtilityNetworkTraceAddFlagCompleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UtilityNetworkTraceAddFlagCompleteEvent] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: SimpleMarkerSymbol | PictureMarkerSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

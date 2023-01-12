@@ -43,7 +43,8 @@ object ListAppsRequest {
     __obj.asInstanceOf[ListAppsRequest]
   }
   
-  extension [Self <: ListAppsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAppsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainIdEquals(value: DomainId): Self = StObject.set(x, "DomainIdEquals", value.asInstanceOf[js.Any])
     

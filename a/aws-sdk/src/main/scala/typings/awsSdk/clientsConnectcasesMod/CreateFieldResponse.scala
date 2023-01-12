@@ -23,7 +23,8 @@ object CreateFieldResponse {
     __obj.asInstanceOf[CreateFieldResponse]
   }
   
-  extension [Self <: CreateFieldResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFieldResponse] (val x: Self) extends AnyVal {
     
     inline def setFieldArn(value: FieldArn): Self = StObject.set(x, "fieldArn", value.asInstanceOf[js.Any])
     

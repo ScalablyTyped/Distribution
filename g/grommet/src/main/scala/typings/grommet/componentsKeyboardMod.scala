@@ -54,7 +54,8 @@ object componentsKeyboardMod {
       __obj.asInstanceOf[KeyboardProps]
     }
     
-    extension [Self <: KeyboardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object AdProgressParam {
     __obj.asInstanceOf[AdProgressParam]
   }
   
-  extension [Self <: AdProgressParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdProgressParam] (val x: Self) extends AnyVal {
     
     inline def setClient(value: vast | googima): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

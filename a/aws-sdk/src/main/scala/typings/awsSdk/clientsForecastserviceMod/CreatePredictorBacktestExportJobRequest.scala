@@ -35,7 +35,8 @@ object CreatePredictorBacktestExportJobRequest {
     __obj.asInstanceOf[CreatePredictorBacktestExportJobRequest]
   }
   
-  extension [Self <: CreatePredictorBacktestExportJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePredictorBacktestExportJobRequest] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: DataDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

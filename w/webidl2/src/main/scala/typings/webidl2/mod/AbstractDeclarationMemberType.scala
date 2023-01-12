@@ -45,7 +45,8 @@ object AbstractDeclarationMemberType {
     __obj.asInstanceOf[AbstractDeclarationMemberType]
   }
   
-  extension [Self <: AbstractDeclarationMemberType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractDeclarationMemberType] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

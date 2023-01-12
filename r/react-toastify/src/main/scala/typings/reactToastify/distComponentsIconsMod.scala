@@ -65,7 +65,8 @@ object distComponentsIconsMod {
       __obj.asInstanceOf[BuiltInIconProps]
     }
     
-    extension [Self <: BuiltInIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuiltInIconProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
@@ -85,7 +86,8 @@ object distComponentsIconsMod {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       

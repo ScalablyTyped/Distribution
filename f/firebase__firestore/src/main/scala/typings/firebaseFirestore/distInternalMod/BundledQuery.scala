@@ -23,7 +23,8 @@ object BundledQuery {
     __obj.asInstanceOf[BundledQuery]
   }
   
-  extension [Self <: BundledQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundledQuery] (val x: Self) extends AnyVal {
     
     inline def setLimitType(value: LimitType2): Self = StObject.set(x, "limitType", value.asInstanceOf[js.Any])
     

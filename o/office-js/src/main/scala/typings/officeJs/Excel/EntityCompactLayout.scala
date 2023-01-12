@@ -27,7 +27,8 @@ object EntityCompactLayout {
     __obj.asInstanceOf[EntityCompactLayout]
   }
   
-  extension [Self <: EntityCompactLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityCompactLayout] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String | EntityCompactLayoutIcons): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

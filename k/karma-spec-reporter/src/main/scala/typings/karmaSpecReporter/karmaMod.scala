@@ -22,7 +22,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setSpecReporter(value: SpecReporterOptions): Self = StObject.set(x, "specReporter", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object karmaMod {
       __obj.asInstanceOf[SpecReporterOptions]
     }
     
-    extension [Self <: SpecReporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecReporterOptions] (val x: Self) extends AnyVal {
       
       inline def setFailFast(value: Boolean): Self = StObject.set(x, "failFast", value.asInstanceOf[js.Any])
       

@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[PartialTarEntryHeadername]
     }
     
-    extension [Self <: PartialTarEntryHeadername](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTarEntryHeadername] (val x: Self) extends AnyVal {
       
       inline def setDevmajor(value: Double): Self = StObject.set(x, "devmajor", value.asInstanceOf[js.Any])
       

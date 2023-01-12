@@ -28,7 +28,8 @@ object GeocoderConstructorOptions {
     __obj.asInstanceOf[GeocoderConstructorOptions]
   }
   
-  extension [Self <: GeocoderConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocoderConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setGetsUserLocation(value: Boolean): Self = StObject.set(x, "getsUserLocation", value.asInstanceOf[js.Any])
     

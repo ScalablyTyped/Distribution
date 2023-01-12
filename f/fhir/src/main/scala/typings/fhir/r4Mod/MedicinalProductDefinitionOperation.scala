@@ -35,7 +35,8 @@ object MedicinalProductDefinitionOperation {
     __obj.asInstanceOf[MedicinalProductDefinitionOperation]
   }
   
-  extension [Self <: MedicinalProductDefinitionOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicinalProductDefinitionOperation] (val x: Self) extends AnyVal {
     
     inline def setConfidentialityIndicator(value: CodeableConcept): Self = StObject.set(x, "confidentialityIndicator", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object WindowsPhone81CustomConfiguration {
     __obj.asInstanceOf[WindowsPhone81CustomConfiguration]
   }
   
-  extension [Self <: WindowsPhone81CustomConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsPhone81CustomConfiguration] (val x: Self) extends AnyVal {
     
     inline def setOmaSettings(value: NullableOption[js.Array[OmaSetting]]): Self = StObject.set(x, "omaSettings", value.asInstanceOf[js.Any])
     

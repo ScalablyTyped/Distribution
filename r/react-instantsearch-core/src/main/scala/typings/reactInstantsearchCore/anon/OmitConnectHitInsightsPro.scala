@@ -16,7 +16,8 @@ object OmitConnectHitInsightsPro {
     __obj.asInstanceOf[OmitConnectHitInsightsPro]
   }
   
-  extension [Self <: OmitConnectHitInsightsPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitConnectHitInsightsPro] (val x: Self) extends AnyVal {
     
     inline def setHit(value: HitBasicDoc): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
   }

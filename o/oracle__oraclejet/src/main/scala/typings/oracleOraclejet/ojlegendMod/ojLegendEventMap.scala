@@ -208,7 +208,8 @@ object ojLegendEventMap {
     __obj.asInstanceOf[ojLegendEventMap[K, D]]
   }
   
-  extension [Self <: ojLegendEventMap[?, ?], K, D](x: Self & (ojLegendEventMap[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojLegendEventMap[?, ?], K, D] (val x: Self & (ojLegendEventMap[K, D])) extends AnyVal {
     
     inline def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
     

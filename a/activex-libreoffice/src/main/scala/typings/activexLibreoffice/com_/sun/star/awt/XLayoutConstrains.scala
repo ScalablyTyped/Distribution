@@ -42,7 +42,8 @@ object XLayoutConstrains {
     __obj.asInstanceOf[XLayoutConstrains]
   }
   
-  extension [Self <: XLayoutConstrains](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLayoutConstrains] (val x: Self) extends AnyVal {
     
     inline def setCalcAdjustedSize(value: Size => Size): Self = StObject.set(x, "calcAdjustedSize", js.Any.fromFunction1(value))
     

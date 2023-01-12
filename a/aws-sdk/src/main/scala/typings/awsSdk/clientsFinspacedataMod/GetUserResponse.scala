@@ -78,7 +78,8 @@ object GetUserResponse {
     __obj.asInstanceOf[GetUserResponse]
   }
   
-  extension [Self <: GetUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserResponse] (val x: Self) extends AnyVal {
     
     inline def setApiAccess(value: ApiAccess): Self = StObject.set(x, "apiAccess", value.asInstanceOf[js.Any])
     

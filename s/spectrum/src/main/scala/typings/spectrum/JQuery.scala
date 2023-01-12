@@ -562,7 +562,8 @@ object JQuery {
       __obj.asInstanceOf[TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: TypeToTriggeredEventMap[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeToTriggeredEventMap[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setBeforeShowDotspectrum(value: BeforeShowEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "beforeShow.spectrum", value.asInstanceOf[js.Any])
       

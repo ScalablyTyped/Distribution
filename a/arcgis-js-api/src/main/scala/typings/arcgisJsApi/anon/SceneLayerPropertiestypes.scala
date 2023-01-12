@@ -264,7 +264,8 @@ object SceneLayerPropertiestypes {
     __obj.asInstanceOf[SceneLayerPropertiestypes]
   }
   
-  extension [Self <: SceneLayerPropertiestypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneLayerPropertiestypes] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

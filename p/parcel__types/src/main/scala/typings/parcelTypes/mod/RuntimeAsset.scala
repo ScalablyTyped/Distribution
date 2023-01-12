@@ -23,7 +23,8 @@ object RuntimeAsset {
     __obj.asInstanceOf[RuntimeAsset]
   }
   
-  extension [Self <: RuntimeAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeAsset] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object PutPackageOriginConfigurationRequest {
     __obj.asInstanceOf[PutPackageOriginConfigurationRequest]
   }
   
-  extension [Self <: PutPackageOriginConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutPackageOriginConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

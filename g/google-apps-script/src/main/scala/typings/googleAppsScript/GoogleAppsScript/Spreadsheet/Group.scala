@@ -49,7 +49,8 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  extension [Self <: Group](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     inline def setCollapse(value: () => Group): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
     

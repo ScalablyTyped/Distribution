@@ -38,7 +38,8 @@ object CreateSnapshotMessage {
     __obj.asInstanceOf[CreateSnapshotMessage]
   }
   
-  extension [Self <: CreateSnapshotMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSnapshotMessage] (val x: Self) extends AnyVal {
     
     inline def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     

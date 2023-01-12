@@ -26,7 +26,8 @@ object PerformanceMeasure {
     __obj.asInstanceOf[PerformanceMeasure]
   }
   
-  extension [Self <: PerformanceMeasure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceMeasure] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
   }

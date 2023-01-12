@@ -50,7 +50,8 @@ object coreInteractableSetMod {
       __obj.asInstanceOf[InteractableScopeProp]
     }
     
-    extension [Self <: InteractableScopeProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractableScopeProp] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object coreInteractableSetMod {
         __obj.asInstanceOf[SignalArgs]
       }
       
-      extension [Self <: SignalArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SignalArgs] (val x: Self) extends AnyVal {
         
         inline def setInteractableColonnew(value: Win): Self = StObject.set(x, "interactable:new", value.asInstanceOf[js.Any])
       }

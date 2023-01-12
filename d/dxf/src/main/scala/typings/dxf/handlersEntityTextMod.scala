@@ -91,7 +91,8 @@ object handlersEntityTextMod {
       __obj.asInstanceOf[TextEntityData]
     }
     
-    extension [Self <: TextEntityData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextEntityData] (val x: Self) extends AnyVal {
       
       inline def set$INSUNITS(value: UnitTypes): Self = StObject.set(x, "$INSUNITS", value.asInstanceOf[js.Any])
       

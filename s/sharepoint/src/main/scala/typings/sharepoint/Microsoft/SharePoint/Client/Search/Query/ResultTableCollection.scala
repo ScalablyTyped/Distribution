@@ -57,7 +57,8 @@ object ResultTableCollection {
     __obj.asInstanceOf[ResultTableCollection]
   }
   
-  extension [Self <: ResultTableCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultTableCollection] (val x: Self) extends AnyVal {
     
     inline def setGet_elapsedTime(value: () => Double): Self = StObject.set(x, "get_elapsedTime", js.Any.fromFunction0(value))
     

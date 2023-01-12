@@ -140,7 +140,8 @@ object Torrent {
     __obj.asInstanceOf[Torrent]
   }
   
-  extension [Self <: Torrent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Torrent] (val x: Self) extends AnyVal {
     
     inline def setAdded_on(value: Double): Self = StObject.set(x, "added_on", value.asInstanceOf[js.Any])
     

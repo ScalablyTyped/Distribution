@@ -64,7 +64,8 @@ object FastClickObject {
     __obj.asInstanceOf[FastClickObject]
   }
   
-  extension [Self <: FastClickObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FastClickObject] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

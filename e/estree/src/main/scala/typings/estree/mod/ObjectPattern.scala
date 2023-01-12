@@ -22,7 +22,8 @@ object ObjectPattern {
     __obj.asInstanceOf[ObjectPattern]
   }
   
-  extension [Self <: ObjectPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectPattern] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: js.Array[AssignmentProperty | RestElement]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

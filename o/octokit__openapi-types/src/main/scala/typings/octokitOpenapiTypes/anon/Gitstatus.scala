@@ -202,7 +202,8 @@ object Gitstatus {
     __obj.asInstanceOf[Gitstatus]
   }
   
-  extension [Self <: Gitstatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gitstatus] (val x: Self) extends AnyVal {
     
     inline def setBillable_owner(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any

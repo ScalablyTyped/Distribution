@@ -15,7 +15,8 @@ object UpdateFileCacheLustreConfiguration {
     __obj.asInstanceOf[UpdateFileCacheLustreConfiguration]
   }
   
-  extension [Self <: UpdateFileCacheLustreConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFileCacheLustreConfiguration] (val x: Self) extends AnyVal {
     
     inline def setWeeklyMaintenanceStartTime(value: WeeklyTime): Self = StObject.set(x, "WeeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
     

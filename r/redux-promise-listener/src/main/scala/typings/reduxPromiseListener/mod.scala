@@ -51,7 +51,8 @@ object mod {
         __obj.asInstanceOf[Config[StartAction, ResolveAction, RejectAction, TReturn]]
       }
       
-      extension [Self <: Config[?, ?, ?, ?], StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn](x: Self & (Config[StartAction, ResolveAction, RejectAction, TReturn])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Config[?, ?, ?, ?], StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn] (val x: Self & (Config[StartAction, ResolveAction, RejectAction, TReturn])) extends AnyVal {
         
         inline def setGetError(value: /* action */ RejectAction => Any): Self = StObject.set(x, "getError", js.Any.fromFunction1(value))
         
@@ -98,7 +99,8 @@ object mod {
         __obj.asInstanceOf[PromiseListener]
       }
       
-      extension [Self <: PromiseListener](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PromiseListener] (val x: Self) extends AnyVal {
         
         inline def setCreateAsyncFunction(value: Config[Any, Any, Any, Any] => AsyncFunction[Any]): Self = StObject.set(x, "createAsyncFunction", js.Any.fromFunction1(value))
         

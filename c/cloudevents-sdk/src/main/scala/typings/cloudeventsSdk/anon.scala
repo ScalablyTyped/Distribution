@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: Any): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Mode]
     }
     
-    extension [Self <: Mode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
       
       inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -102,7 +105,8 @@ object anon {
       __obj.asInstanceOf[UrlURL]
     }
     
-    extension [Self <: UrlURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlURL] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -121,7 +125,8 @@ object anon {
       __obj.asInstanceOf[V03]
     }
     
-    extension [Self <: V03](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V03] (val x: Self) extends AnyVal {
       
       inline def setV03(value: Dictkey): Self = StObject.set(x, "v03", value.asInstanceOf[js.Any])
       

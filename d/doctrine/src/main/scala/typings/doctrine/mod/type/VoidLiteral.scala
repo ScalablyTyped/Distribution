@@ -19,7 +19,8 @@ object VoidLiteral {
     __obj.asInstanceOf[VoidLiteral]
   }
   
-  extension [Self <: VoidLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoidLiteral] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.doctrine.doctrineStrings.VoidLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object ClusterAutoscaling {
     __obj.asInstanceOf[ClusterAutoscaling]
   }
   
-  extension [Self <: ClusterAutoscaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterAutoscaling] (val x: Self) extends AnyVal {
     
     inline def setAutoprovisioningLocations(value: js.Array[String]): Self = StObject.set(x, "autoprovisioningLocations", value.asInstanceOf[js.Any])
     

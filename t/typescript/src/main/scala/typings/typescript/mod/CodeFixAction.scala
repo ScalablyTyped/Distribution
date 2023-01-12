@@ -26,7 +26,8 @@ object CodeFixAction {
     __obj.asInstanceOf[CodeFixAction]
   }
   
-  extension [Self <: CodeFixAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeFixAction] (val x: Self) extends AnyVal {
     
     inline def setFixAllDescription(value: java.lang.String): Self = StObject.set(x, "fixAllDescription", value.asInstanceOf[js.Any])
     

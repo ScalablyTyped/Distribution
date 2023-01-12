@@ -27,7 +27,8 @@ object StatusKafkaPartition {
     __obj.asInstanceOf[StatusKafkaPartition]
   }
   
-  extension [Self <: StatusKafkaPartition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusKafkaPartition] (val x: Self) extends AnyVal {
     
     inline def setNum_documents_processed(value: Double): Self = StObject.set(x, "num_documents_processed", value.asInstanceOf[js.Any])
     

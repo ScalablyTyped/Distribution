@@ -17,7 +17,8 @@ object PictureType {
     __obj.asInstanceOf[PictureType]
   }
   
-  extension [Self <: PictureType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PictureType] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

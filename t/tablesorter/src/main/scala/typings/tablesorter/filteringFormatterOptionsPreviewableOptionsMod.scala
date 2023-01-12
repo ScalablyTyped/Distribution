@@ -20,7 +20,8 @@ object filteringFormatterOptionsPreviewableOptionsMod {
       __obj.asInstanceOf[PreviewableOptions]
     }
     
-    extension [Self <: PreviewableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewableOptions] (val x: Self) extends AnyVal {
       
       inline def setValueToHeader(value: Boolean): Self = StObject.set(x, "valueToHeader", value.asInstanceOf[js.Any])
       

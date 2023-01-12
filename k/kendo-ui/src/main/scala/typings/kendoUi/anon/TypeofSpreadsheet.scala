@@ -20,7 +20,8 @@ object TypeofSpreadsheet {
     __obj.asInstanceOf[TypeofSpreadsheet]
   }
   
-  extension [Self <: TypeofSpreadsheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSpreadsheet] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Spreadsheet): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

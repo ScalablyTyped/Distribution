@@ -35,7 +35,8 @@ object QueryEventMap {
     __obj.asInstanceOf[QueryEventMap[T]]
   }
   
-  extension [Self <: QueryEventMap[?], T](x: Self & QueryEventMap[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryEventMap[?], T] (val x: Self & QueryEventMap[T]) extends AnyVal {
     
     inline def setChanged(value: js.Array[Doc[T]] => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction1(value))
     

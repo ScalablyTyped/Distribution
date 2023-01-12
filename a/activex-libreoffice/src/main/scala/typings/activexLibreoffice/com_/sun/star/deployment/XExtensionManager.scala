@@ -206,7 +206,8 @@ object XExtensionManager {
     __obj.asInstanceOf[XExtensionManager]
   }
   
-  extension [Self <: XExtensionManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExtensionManager] (val x: Self) extends AnyVal {
     
     inline def setAddExtension(value: (String, SeqEquiv[NamedValue], String, XAbortChannel, XCommandEnvironment) => XPackage): Self = StObject.set(x, "addExtension", js.Any.fromFunction5(value))
     

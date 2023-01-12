@@ -18,7 +18,8 @@ object DescribeFilterResponse {
     __obj.asInstanceOf[DescribeFilterResponse]
   }
   
-  extension [Self <: DescribeFilterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFilterResponse] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object TeletextSourceSettings {
     __obj.asInstanceOf[TeletextSourceSettings]
   }
   
-  extension [Self <: TeletextSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeletextSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setPageNumber(value: stringMin3Max3Pattern1809aFAF09aEAE): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
     

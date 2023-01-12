@@ -23,7 +23,8 @@ object PoliciesType {
     __obj.asInstanceOf[PoliciesType]
   }
   
-  extension [Self <: PoliciesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoliciesType] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

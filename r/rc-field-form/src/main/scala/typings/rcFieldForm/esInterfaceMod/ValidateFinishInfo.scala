@@ -19,7 +19,8 @@ object ValidateFinishInfo {
     __obj.asInstanceOf[ValidateFinishInfo]
   }
   
-  extension [Self <: ValidateFinishInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateFinishInfo] (val x: Self) extends AnyVal {
     
     inline def setType(value: validateFinish): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

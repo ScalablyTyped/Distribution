@@ -16,7 +16,8 @@ object WorkerOnMessageCallbackResult {
     __obj.asInstanceOf[WorkerOnMessageCallbackResult]
   }
   
-  extension [Self <: WorkerOnMessageCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerOnMessageCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: IAnyObject): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

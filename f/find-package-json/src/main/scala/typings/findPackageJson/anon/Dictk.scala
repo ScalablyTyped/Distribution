@@ -22,7 +22,8 @@ object Dictk {
     __obj.asInstanceOf[Dictk]
   }
   
-  extension [Self <: Dictk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictk] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

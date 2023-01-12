@@ -33,7 +33,8 @@ object libChartsMiniProgressMod {
       __obj.asInstanceOf[IMiniProgressProps]
     }
     
-    extension [Self <: IMiniProgressProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMiniProgressProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

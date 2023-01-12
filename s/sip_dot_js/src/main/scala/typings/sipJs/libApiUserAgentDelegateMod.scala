@@ -106,7 +106,8 @@ object libApiUserAgentDelegateMod {
       __obj.asInstanceOf[UserAgentDelegate]
     }
     
-    extension [Self <: UserAgentDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgentDelegate] (val x: Self) extends AnyVal {
       
       inline def setOnConnect(value: () => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction0(value))
       

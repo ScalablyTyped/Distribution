@@ -17,7 +17,8 @@ object ReadonlyNgModuleResolutio {
     __obj.asInstanceOf[ReadonlyNgModuleResolutio]
   }
   
-  extension [Self <: ReadonlyNgModuleResolutio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyNgModuleResolutio] (val x: Self) extends AnyVal {
     
     inline def setInjectorImports(value: js.Array[Expression]): Self = StObject.set(x, "injectorImports", value.asInstanceOf[js.Any])
     

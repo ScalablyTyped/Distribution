@@ -77,7 +77,8 @@ object libSendmailTransportMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object libSendmailTransportMod {
       __obj.asInstanceOf[SendmailTransport]
     }
     
-    extension [Self <: SendmailTransport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendmailTransport] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String] | `false`): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object libSendmailTransportMod {
       __obj.asInstanceOf[SentMessageInfo]
     }
     
-    extension [Self <: SentMessageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentMessageInfo] (val x: Self) extends AnyVal {
       
       inline def setAccepted(value: js.Array[String | Address]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
       

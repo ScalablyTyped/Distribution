@@ -58,7 +58,8 @@ object MediaTrackConstraintSet {
     __obj.asInstanceOf[MediaTrackConstraintSet]
   }
   
-  extension [Self <: MediaTrackConstraintSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaTrackConstraintSet] (val x: Self) extends AnyVal {
     
     inline def setAspectRatio(value: ConstrainDouble): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     

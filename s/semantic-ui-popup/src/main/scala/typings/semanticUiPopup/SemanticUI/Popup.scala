@@ -140,7 +140,8 @@ object Popup {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
         
@@ -207,7 +208,8 @@ object Popup {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
@@ -277,7 +279,8 @@ object Popup {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setCannotPlace(value: String): Self = StObject.set(x, "cannotPlace", value.asInstanceOf[js.Any])
         
@@ -370,7 +373,8 @@ object Popup {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -456,13 +460,15 @@ object Popup {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       }
     }
     
-    extension [Self <: SelectorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorSettings] (val x: Self) extends AnyVal {
       
       inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     }
@@ -479,7 +485,8 @@ object Popup {
         __obj.asInstanceOf[typings.semanticUiPopup.SemanticUI.Popup.SelectorSettings.Param]
       }
       
-      extension [Self <: typings.semanticUiPopup.SemanticUI.Popup.SelectorSettings.Param](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.semanticUiPopup.SemanticUI.Popup.SelectorSettings.Param] (val x: Self) extends AnyVal {
         
         inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       }

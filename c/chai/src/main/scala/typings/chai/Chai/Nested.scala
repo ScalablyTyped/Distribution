@@ -56,7 +56,8 @@ object Nested {
     __obj.asInstanceOf[Nested]
   }
   
-  extension [Self <: Nested](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nested] (val x: Self) extends AnyVal {
     
     inline def setContain(value: Include): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     

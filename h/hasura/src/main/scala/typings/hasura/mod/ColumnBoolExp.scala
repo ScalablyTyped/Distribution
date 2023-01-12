@@ -31,7 +31,8 @@ object ColumnBoolExp {
     __obj.asInstanceOf[ColumnBoolExp[T]]
   }
   
-  extension [Self <: ColumnBoolExp[?], T](x: Self & ColumnBoolExp[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnBoolExp[?], T] (val x: Self & ColumnBoolExp[T]) extends AnyVal {
     
     inline def set_eq(value: T): Self = StObject.set(x, "_eq", value.asInstanceOf[js.Any])
     

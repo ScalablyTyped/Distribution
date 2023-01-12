@@ -37,7 +37,8 @@ object DateFormattingContext {
     __obj.asInstanceOf[DateFormattingContext]
   }
   
-  extension [Self <: DateFormattingContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateFormattingContext] (val x: Self) extends AnyVal {
     
     inline def setCalendarSystem(value: CalendarSystem): Self = StObject.set(x, "calendarSystem", value.asInstanceOf[js.Any])
     

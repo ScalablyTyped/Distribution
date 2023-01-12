@@ -18,7 +18,8 @@ object SqliteError {
     __obj.asInstanceOf[SqliteError]
   }
   
-  extension [Self <: SqliteError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqliteError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object FileCallback {
     __obj.asInstanceOf[FileCallback]
   }
   
-  extension [Self <: FileCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileCallback] (val x: Self) extends AnyVal {
     
     inline def setFn(value: (String, String) => Any): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
     

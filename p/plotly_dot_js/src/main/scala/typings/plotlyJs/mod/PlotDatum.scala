@@ -38,7 +38,8 @@ object PlotDatum {
     __obj.asInstanceOf[PlotDatum]
   }
   
-  extension [Self <: PlotDatum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDatum] (val x: Self) extends AnyVal {
     
     inline def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
     

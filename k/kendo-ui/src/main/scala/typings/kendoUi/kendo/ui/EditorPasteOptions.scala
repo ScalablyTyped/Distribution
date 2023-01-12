@@ -15,7 +15,8 @@ object EditorPasteOptions {
     __obj.asInstanceOf[EditorPasteOptions]
   }
   
-  extension [Self <: EditorPasteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorPasteOptions] (val x: Self) extends AnyVal {
     
     inline def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     

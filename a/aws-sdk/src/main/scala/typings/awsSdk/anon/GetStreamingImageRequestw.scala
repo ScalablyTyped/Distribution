@@ -29,7 +29,8 @@ object GetStreamingImageRequestw {
     __obj.asInstanceOf[GetStreamingImageRequestw]
   }
   
-  extension [Self <: GetStreamingImageRequestw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStreamingImageRequestw] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

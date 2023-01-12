@@ -28,7 +28,8 @@ object GetFederationTokenResponse {
     __obj.asInstanceOf[GetFederationTokenResponse]
   }
   
-  extension [Self <: GetFederationTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFederationTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MappingDenseVectorProperty {
     __obj.asInstanceOf[MappingDenseVectorProperty]
   }
   
-  extension [Self <: MappingDenseVectorProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingDenseVectorProperty] (val x: Self) extends AnyVal {
     
     inline def setDims(value: integer): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
     

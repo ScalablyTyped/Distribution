@@ -28,7 +28,8 @@ object distTypesOptionsMod {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: EntryEmbedable): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       

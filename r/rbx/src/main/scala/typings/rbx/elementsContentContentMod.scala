@@ -165,7 +165,8 @@ object elementsContentContentMod {
       __obj.asInstanceOf[ContentModifierProps]
     }
     
-    extension [Self <: ContentModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentModifierProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -259,7 +260,8 @@ object elementsContentContentMod {
       __obj.asInstanceOf[ContentProps]
     }
     
-    extension [Self <: ContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -415,7 +417,8 @@ object elementsContentContentMod {
       __obj.asInstanceOf[ContentVariables]
     }
     
-    extension [Self <: ContentVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
@@ -432,7 +435,8 @@ object elementsContentContentMod {
       __obj.asInstanceOf[ContentVariablesDefaults]
     }
     
-    extension [Self <: ContentVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }

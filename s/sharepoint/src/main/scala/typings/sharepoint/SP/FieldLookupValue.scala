@@ -30,7 +30,8 @@ object FieldLookupValue {
     __obj.asInstanceOf[FieldLookupValue]
   }
   
-  extension [Self <: FieldLookupValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldLookupValue] (val x: Self) extends AnyVal {
     
     inline def setGet_lookupId(value: () => Double): Self = StObject.set(x, "get_lookupId", js.Any.fromFunction0(value))
     

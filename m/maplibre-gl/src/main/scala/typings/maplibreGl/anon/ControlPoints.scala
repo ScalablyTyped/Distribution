@@ -21,7 +21,8 @@ object ControlPoints {
     __obj.asInstanceOf[ControlPoints]
   }
   
-  extension [Self <: ControlPoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlPoints] (val x: Self) extends AnyVal {
     
     inline def setControlPoints(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "controlPoints", value.asInstanceOf[js.Any])
     

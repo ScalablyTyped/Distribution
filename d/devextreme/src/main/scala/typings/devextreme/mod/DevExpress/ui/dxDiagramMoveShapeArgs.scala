@@ -29,7 +29,8 @@ object dxDiagramMoveShapeArgs {
     __obj.asInstanceOf[dxDiagramMoveShapeArgs]
   }
   
-  extension [Self <: dxDiagramMoveShapeArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDiagramMoveShapeArgs] (val x: Self) extends AnyVal {
     
     inline def setNewPosition(value: Y): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
     

@@ -413,7 +413,8 @@ object ReadonlyFlatListPropsany {
     __obj.asInstanceOf[ReadonlyFlatListPropsany]
   }
   
-  extension [Self <: ReadonlyFlatListPropsany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyFlatListPropsany] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object libComponentsCalendarCalendarYearMod {
       __obj.asInstanceOf[ICalendarYear]
     }
     
-    extension [Self <: ICalendarYear](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarYear] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -65,7 +66,8 @@ object libComponentsCalendarCalendarYearMod {
       __obj.asInstanceOf[ICalendarYearHeaderProps]
     }
     
-    extension [Self <: ICalendarYearHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarYearHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setOnSelectNext(value: () => Unit): Self = StObject.set(x, "onSelectNext", js.Any.fromFunction0(value))
       
@@ -108,7 +110,8 @@ object libComponentsCalendarCalendarYearMod {
       __obj.asInstanceOf[ICalendarYearProps]
     }
     
-    extension [Self <: ICalendarYearProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarYearProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -169,7 +172,8 @@ object libComponentsCalendarCalendarYearMod {
       __obj.asInstanceOf[ICalendarYearRange]
     }
     
-    extension [Self <: ICalendarYearRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarYearRange] (val x: Self) extends AnyVal {
       
       inline def setFromYear(value: Double): Self = StObject.set(x, "fromYear", value.asInstanceOf[js.Any])
       
@@ -194,7 +198,8 @@ object libComponentsCalendarCalendarYearMod {
       __obj.asInstanceOf[ICalendarYearState]
     }
     
-    extension [Self <: ICalendarYearState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarYearState] (val x: Self) extends AnyVal {
       
       inline def setFromYear(value: Double): Self = StObject.set(x, "fromYear", value.asInstanceOf[js.Any])
       
@@ -225,7 +230,8 @@ object libComponentsCalendarCalendarYearMod {
       __obj.asInstanceOf[ICalendarYearStrings]
     }
     
-    extension [Self <: ICalendarYearStrings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarYearStrings] (val x: Self) extends AnyVal {
       
       inline def setHeaderAriaLabelFormatString(value: String): Self = StObject.set(x, "headerAriaLabelFormatString", value.asInstanceOf[js.Any])
       

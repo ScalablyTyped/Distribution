@@ -23,7 +23,8 @@ object DeleteIPSetRequest {
     __obj.asInstanceOf[DeleteIPSetRequest]
   }
   
-  extension [Self <: DeleteIPSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIPSetRequest] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

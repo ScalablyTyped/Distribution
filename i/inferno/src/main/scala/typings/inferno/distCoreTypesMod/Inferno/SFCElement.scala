@@ -25,7 +25,8 @@ object SFCElement {
     __obj.asInstanceOf[SFCElement[P]]
   }
   
-  extension [Self <: SFCElement[?], P](x: Self & SFCElement[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCElement[?], P] (val x: Self & SFCElement[P]) extends AnyVal {
     
     inline def setType(value: SFC[P]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

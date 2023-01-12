@@ -25,7 +25,8 @@ object CrossRegionCopyAction {
     __obj.asInstanceOf[CrossRegionCopyAction]
   }
   
-  extension [Self <: CrossRegionCopyAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossRegionCopyAction] (val x: Self) extends AnyVal {
     
     inline def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
     

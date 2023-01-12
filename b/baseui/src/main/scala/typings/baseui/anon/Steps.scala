@@ -19,7 +19,8 @@ object Steps {
     __obj.asInstanceOf[Steps]
   }
   
-  extension [Self <: Steps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Steps] (val x: Self) extends AnyVal {
     
     inline def set$size(value: typings.baseui.progressBarTypesMod.Size): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
     

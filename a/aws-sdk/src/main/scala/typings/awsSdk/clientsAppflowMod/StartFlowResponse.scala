@@ -28,7 +28,8 @@ object StartFlowResponse {
     __obj.asInstanceOf[StartFlowResponse]
   }
   
-  extension [Self <: StartFlowResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartFlowResponse] (val x: Self) extends AnyVal {
     
     inline def setExecutionId(value: ExecutionId): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     

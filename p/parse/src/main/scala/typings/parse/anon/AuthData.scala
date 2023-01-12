@@ -15,7 +15,8 @@ object AuthData {
     __obj.asInstanceOf[AuthData]
   }
   
-  extension [Self <: AuthData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthData] (val x: Self) extends AnyVal {
     
     inline def setAuthData(value: typings.parse.mod.global.Parse.AuthData): Self = StObject.set(x, "authData", value.asInstanceOf[js.Any])
     

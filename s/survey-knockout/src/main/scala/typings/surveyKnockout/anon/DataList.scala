@@ -17,7 +17,8 @@ object DataList {
     __obj.asInstanceOf[DataList]
   }
   
-  extension [Self <: DataList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataList] (val x: Self) extends AnyVal {
     
     inline def setDataList(value: Any): Self = StObject.set(x, "dataList", value.asInstanceOf[js.Any])
     

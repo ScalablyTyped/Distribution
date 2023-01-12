@@ -23,7 +23,8 @@ object DataSetImportItem {
     __obj.asInstanceOf[DataSetImportItem]
   }
   
-  extension [Self <: DataSetImportItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSetImportItem] (val x: Self) extends AnyVal {
     
     inline def setDataSet(value: DataSet): Self = StObject.set(x, "dataSet", value.asInstanceOf[js.Any])
     

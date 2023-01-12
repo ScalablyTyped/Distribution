@@ -37,7 +37,8 @@ object Parameter {
     __obj.asInstanceOf[Parameter]
   }
   
-  extension [Self <: Parameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
     
     inline def setDAODotParameter_typekey(value: Parameter): Self = StObject.set(x, "DAO.Parameter_typekey", value.asInstanceOf[js.Any])
     

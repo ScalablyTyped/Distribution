@@ -1203,7 +1203,8 @@ object AddSecurityManagerTeam {
     __obj.asInstanceOf[AddSecurityManagerTeam]
   }
   
-  extension [Self <: AddSecurityManagerTeam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddSecurityManagerTeam] (val x: Self) extends AnyVal {
     
     inline def setAddSecurityManagerTeam(value: `381`): Self = StObject.set(x, "addSecurityManagerTeam", value.asInstanceOf[js.Any])
     

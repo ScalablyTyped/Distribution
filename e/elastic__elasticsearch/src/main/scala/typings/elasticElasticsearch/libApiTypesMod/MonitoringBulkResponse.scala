@@ -21,7 +21,8 @@ object MonitoringBulkResponse {
     __obj.asInstanceOf[MonitoringBulkResponse]
   }
   
-  extension [Self <: MonitoringBulkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringBulkResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorCause): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

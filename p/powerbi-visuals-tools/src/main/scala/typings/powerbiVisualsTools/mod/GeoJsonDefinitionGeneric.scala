@@ -20,7 +20,8 @@ object GeoJsonDefinitionGeneric {
     __obj.asInstanceOf[GeoJsonDefinitionGeneric[T]]
   }
   
-  extension [Self <: GeoJsonDefinitionGeneric[?], T](x: Self & GeoJsonDefinitionGeneric[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJsonDefinitionGeneric[?], T] (val x: Self & GeoJsonDefinitionGeneric[T]) extends AnyVal {
     
     inline def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object RiskyUser {
     __obj.asInstanceOf[RiskyUser]
   }
   
-  extension [Self <: RiskyUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RiskyUser] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: NullableOption[js.Array[RiskyUserHistoryItem]]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

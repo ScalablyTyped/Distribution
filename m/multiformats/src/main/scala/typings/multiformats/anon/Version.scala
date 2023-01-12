@@ -19,7 +19,8 @@ object Version {
     __obj.asInstanceOf[Version[V, Format]]
   }
   
-  extension [Self <: Version[?, ?], V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */, Format /* <: Double */](x: Self & (Version[V, Format])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Version[?, ?], V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */, Format /* <: Double */] (val x: Self & (Version[V, Format])) extends AnyVal {
     
     inline def setCode(value: Format): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

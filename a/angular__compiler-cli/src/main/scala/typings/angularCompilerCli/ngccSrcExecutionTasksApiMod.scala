@@ -111,7 +111,8 @@ object ngccSrcExecutionTasksApiMod {
       __obj.asInstanceOf[Task]
     }
     
-    extension [Self <: Task](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
       
       inline def setEntryPoint(value: EntryPoint): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object ngccSrcExecutionTasksApiMod {
       __obj.asInstanceOf[TaskQueue]
     }
     
-    extension [Self <: TaskQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskQueue] (val x: Self) extends AnyVal {
       
       inline def setAllTasksCompleted(value: Boolean): Self = StObject.set(x, "allTasksCompleted", value.asInstanceOf[js.Any])
       

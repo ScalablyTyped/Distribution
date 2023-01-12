@@ -80,7 +80,8 @@ object libBarcodeBarcodeMod {
       __obj.asInstanceOf[Barcode]
     }
     
-    extension [Self <: Barcode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Barcode] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       

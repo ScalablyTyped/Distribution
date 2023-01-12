@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[TunnelConfig]
     }
     
-    extension [Self <: TunnelConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TunnelConfig] (val x: Self) extends AnyVal {
       
       inline def setAllow_invalid_cert(value: Boolean): Self = StObject.set(x, "allow_invalid_cert", value.asInstanceOf[js.Any])
       

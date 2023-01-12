@@ -20,7 +20,8 @@ object KnockstrapCarouselDefaultsIdItemsDataConverted {
     __obj.asInstanceOf[KnockstrapCarouselDefaultsIdItemsDataConverted]
   }
   
-  extension [Self <: KnockstrapCarouselDefaultsIdItemsDataConverted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockstrapCarouselDefaultsIdItemsDataConverted] (val x: Self) extends AnyVal {
     
     inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }

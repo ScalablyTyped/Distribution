@@ -18,7 +18,8 @@ object NightwatchTestRunner {
     __obj.asInstanceOf[NightwatchTestRunner]
   }
   
-  extension [Self <: NightwatchTestRunner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchTestRunner] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Autostartsession): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

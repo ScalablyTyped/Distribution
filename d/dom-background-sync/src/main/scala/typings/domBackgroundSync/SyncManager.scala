@@ -18,7 +18,8 @@ object SyncManager {
     __obj.asInstanceOf[SyncManager]
   }
   
-  extension [Self <: SyncManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncManager] (val x: Self) extends AnyVal {
     
     inline def setGetTags(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getTags", js.Any.fromFunction0(value))
     

@@ -86,7 +86,8 @@ object AjaxHeaders {
     __obj.asInstanceOf[AjaxHeaders]
   }
   
-  extension [Self <: AjaxHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AjaxHeaders] (val x: Self) extends AnyVal {
     
     inline def setAjaxHeaders(value: js.Object): Self = StObject.set(x, "ajaxHeaders", value.asInstanceOf[js.Any])
     

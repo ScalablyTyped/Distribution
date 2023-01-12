@@ -18,7 +18,8 @@ object DescribeRdsDbInstancesResult {
     __obj.asInstanceOf[DescribeRdsDbInstancesResult]
   }
   
-  extension [Self <: DescribeRdsDbInstancesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRdsDbInstancesResult] (val x: Self) extends AnyVal {
     
     inline def setRdsDbInstances(value: RdsDbInstances): Self = StObject.set(x, "RdsDbInstances", value.asInstanceOf[js.Any])
     

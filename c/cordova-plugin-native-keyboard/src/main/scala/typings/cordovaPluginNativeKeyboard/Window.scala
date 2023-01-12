@@ -15,7 +15,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setNativeKeyboard(value: NativeKeyboard): Self = StObject.set(x, "NativeKeyboard", value.asInstanceOf[js.Any])
   }

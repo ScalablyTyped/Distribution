@@ -32,7 +32,8 @@ object ListCatalogItemsInput {
     __obj.asInstanceOf[ListCatalogItemsInput]
   }
   
-  extension [Self <: ListCatalogItemsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCatalogItemsInput] (val x: Self) extends AnyVal {
     
     inline def setEC2FamilyFilter(value: EC2FamilyList): Self = StObject.set(x, "EC2FamilyFilter", value.asInstanceOf[js.Any])
     

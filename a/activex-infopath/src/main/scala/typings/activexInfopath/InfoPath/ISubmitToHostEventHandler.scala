@@ -22,7 +22,8 @@ object ISubmitToHostEventHandler {
     __obj.asInstanceOf[ISubmitToHostEventHandler]
   }
   
-  extension [Self <: ISubmitToHostEventHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISubmitToHostEventHandler] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotISubmitToHostEventHandler_typekey(value: ISubmitToHostEventHandler): Self = StObject.set(x, "InfoPath.ISubmitToHostEventHandler_typekey", value.asInstanceOf[js.Any])
     

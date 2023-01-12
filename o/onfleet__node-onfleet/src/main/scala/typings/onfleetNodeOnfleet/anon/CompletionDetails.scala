@@ -15,7 +15,8 @@ object CompletionDetails {
     __obj.asInstanceOf[CompletionDetails]
   }
   
-  extension [Self <: CompletionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionDetails] (val x: Self) extends AnyVal {
     
     inline def setCompletionDetails(value: Notes): Self = StObject.set(x, "completionDetails", value.asInstanceOf[js.Any])
   }

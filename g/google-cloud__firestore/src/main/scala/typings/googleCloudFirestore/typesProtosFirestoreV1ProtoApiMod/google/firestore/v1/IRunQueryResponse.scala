@@ -27,7 +27,8 @@ object IRunQueryResponse {
     __obj.asInstanceOf[IRunQueryResponse]
   }
   
-  extension [Self <: IRunQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRunQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: IDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

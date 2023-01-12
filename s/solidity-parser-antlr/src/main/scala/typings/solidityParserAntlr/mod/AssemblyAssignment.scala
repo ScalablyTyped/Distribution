@@ -25,7 +25,8 @@ object AssemblyAssignment {
     __obj.asInstanceOf[AssemblyAssignment]
   }
   
-  extension [Self <: AssemblyAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssemblyAssignment] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: AssemblyExpression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

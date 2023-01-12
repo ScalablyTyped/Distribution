@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2QuoteInfo {
     __obj.asInstanceOf[GooglePrivacyDlpV2QuoteInfo]
   }
   
-  extension [Self <: GooglePrivacyDlpV2QuoteInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2QuoteInfo] (val x: Self) extends AnyVal {
     
     inline def setDateTime(value: GooglePrivacyDlpV2DateTime): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     

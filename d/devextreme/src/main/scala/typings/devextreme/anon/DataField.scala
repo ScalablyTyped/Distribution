@@ -19,7 +19,8 @@ object DataField {
     __obj.asInstanceOf[DataField]
   }
   
-  extension [Self <: DataField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataField] (val x: Self) extends AnyVal {
     
     inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     

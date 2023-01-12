@@ -278,7 +278,8 @@ object sapMViewSettingsItemMod {
       __obj.asInstanceOf[ViewSettingsItemSettings]
     }
     
-    extension [Self <: ViewSettingsItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewSettingsItemSettings] (val x: Self) extends AnyVal {
       
       inline def setItemPropertyChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemPropertyChanged", js.Any.fromFunction1(value))
       

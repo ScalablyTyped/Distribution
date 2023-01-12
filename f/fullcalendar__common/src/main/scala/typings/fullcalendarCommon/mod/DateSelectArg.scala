@@ -20,7 +20,8 @@ object DateSelectArg {
     __obj.asInstanceOf[DateSelectArg]
   }
   
-  extension [Self <: DateSelectArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateSelectArg] (val x: Self) extends AnyVal {
     
     inline def setJsEvent(value: MouseEvent): Self = StObject.set(x, "jsEvent", value.asInstanceOf[js.Any])
     

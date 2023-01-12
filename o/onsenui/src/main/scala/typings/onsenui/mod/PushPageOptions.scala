@@ -25,7 +25,8 @@ object PushPageOptions {
     __obj.asInstanceOf[PushPageOptions]
   }
   
-  extension [Self <: PushPageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushPageOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

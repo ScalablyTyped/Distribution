@@ -54,7 +54,8 @@ object Synonym {
     __obj.asInstanceOf[Synonym]
   }
   
-  extension [Self <: Synonym](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Synonym] (val x: Self) extends AnyVal {
     
     inline def setCorrections(value: js.Array[String]): Self = StObject.set(x, "corrections", value.asInstanceOf[js.Any])
     

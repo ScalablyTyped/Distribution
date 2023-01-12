@@ -24,7 +24,8 @@ object GetReplicationSetInputwai {
     __obj.asInstanceOf[GetReplicationSetInputwai]
   }
   
-  extension [Self <: GetReplicationSetInputwai](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReplicationSetInputwai] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

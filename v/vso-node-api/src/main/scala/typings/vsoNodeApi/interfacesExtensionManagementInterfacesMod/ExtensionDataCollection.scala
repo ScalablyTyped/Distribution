@@ -33,7 +33,8 @@ object ExtensionDataCollection {
     __obj.asInstanceOf[ExtensionDataCollection]
   }
   
-  extension [Self <: ExtensionDataCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionDataCollection] (val x: Self) extends AnyVal {
     
     inline def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
     

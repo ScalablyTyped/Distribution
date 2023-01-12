@@ -23,7 +23,8 @@ object AwsS3BucketWebsiteConfigurationRoutingRule {
     __obj.asInstanceOf[AwsS3BucketWebsiteConfigurationRoutingRule]
   }
   
-  extension [Self <: AwsS3BucketWebsiteConfigurationRoutingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketWebsiteConfigurationRoutingRule] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: AwsS3BucketWebsiteConfigurationRoutingRuleCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

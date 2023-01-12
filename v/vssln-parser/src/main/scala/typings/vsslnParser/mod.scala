@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[VsSolutionFile]
     }
     
-    extension [Self <: VsSolutionFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VsSolutionFile] (val x: Self) extends AnyVal {
       
       inline def setMinimumVisualStudioVersion(value: String): Self = StObject.set(x, "minimumVisualStudioVersion", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod {
       __obj.asInstanceOf[VsSolutionProject]
     }
     
-    extension [Self <: VsSolutionProject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VsSolutionProject] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

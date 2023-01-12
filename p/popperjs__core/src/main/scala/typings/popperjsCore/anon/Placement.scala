@@ -20,7 +20,8 @@ object Placement {
     __obj.asInstanceOf[Placement]
   }
   
-  extension [Self <: Placement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Placement] (val x: Self) extends AnyVal {
     
     inline def setPlacement(value: typings.popperjsCore.libEnumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     

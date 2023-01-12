@@ -28,7 +28,8 @@ object StatefulRule {
     __obj.asInstanceOf[StatefulRule]
   }
   
-  extension [Self <: StatefulRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulRule] (val x: Self) extends AnyVal {
     
     inline def setAction(value: StatefulAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

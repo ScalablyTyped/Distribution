@@ -24,7 +24,8 @@ object BulkIndexByScrollFailure {
     __obj.asInstanceOf[BulkIndexByScrollFailure]
   }
   
-  extension [Self <: BulkIndexByScrollFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkIndexByScrollFailure] (val x: Self) extends AnyVal {
     
     inline def setCause(value: ErrorCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

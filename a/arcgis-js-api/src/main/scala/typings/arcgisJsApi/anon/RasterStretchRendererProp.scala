@@ -127,7 +127,8 @@ object RasterStretchRendererProp {
     __obj.asInstanceOf[RasterStretchRendererProp]
   }
   
-  extension [Self <: RasterStretchRendererProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterStretchRendererProp] (val x: Self) extends AnyVal {
     
     inline def setColorRamp(value: ColorRampProperties): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
     

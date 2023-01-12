@@ -64,7 +64,8 @@ object distStringifyStringifyMod {
       __obj.asInstanceOf[StringifyContext]
     }
     
-    extension [Self <: StringifyContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringifyContext] (val x: Self) extends AnyVal {
       
       inline def setActualString(value: Boolean): Self = StObject.set(x, "actualString", value.asInstanceOf[js.Any])
       

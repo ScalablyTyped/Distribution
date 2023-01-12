@@ -230,7 +230,8 @@ object dxDiagramOptions {
     __obj.asInstanceOf[dxDiagramOptions]
   }
   
-  extension [Self <: dxDiagramOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDiagramOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoZoomMode(value: DiagramAutoZoomMode): Self = StObject.set(x, "autoZoomMode", value.asInstanceOf[js.Any])
     

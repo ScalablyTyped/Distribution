@@ -28,7 +28,8 @@ object EnableSsoRequest {
     __obj.asInstanceOf[EnableSsoRequest]
   }
   
-  extension [Self <: EnableSsoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableSsoRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

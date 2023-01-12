@@ -52,7 +52,8 @@ object distTypesPointMod {
       __obj.asInstanceOf[BasicPoint]
     }
     
-    extension [Self <: BasicPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicPoint] (val x: Self) extends AnyVal {
       
       inline def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object AmazonopensearchserviceBufferingHints {
     __obj.asInstanceOf[AmazonopensearchserviceBufferingHints]
   }
   
-  extension [Self <: AmazonopensearchserviceBufferingHints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmazonopensearchserviceBufferingHints] (val x: Self) extends AnyVal {
     
     inline def setIntervalInSeconds(value: AmazonopensearchserviceBufferingIntervalInSeconds): Self = StObject.set(x, "IntervalInSeconds", value.asInstanceOf[js.Any])
     

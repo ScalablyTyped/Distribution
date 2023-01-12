@@ -33,7 +33,8 @@ object ScrollableBoxOptions {
     __obj.asInstanceOf[ScrollableBoxOptions]
   }
   
-  extension [Self <: ScrollableBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollableBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setAlwaysScroll(value: Boolean): Self = StObject.set(x, "alwaysScroll", value.asInstanceOf[js.Any])
     

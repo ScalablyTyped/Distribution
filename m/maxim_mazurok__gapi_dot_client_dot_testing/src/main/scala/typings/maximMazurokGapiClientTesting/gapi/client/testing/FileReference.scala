@@ -16,7 +16,8 @@ object FileReference {
     __obj.asInstanceOf[FileReference]
   }
   
-  extension [Self <: FileReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileReference] (val x: Self) extends AnyVal {
     
     inline def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IPolylineOptions {
     __obj.asInstanceOf[IPolylineOptions]
   }
   
-  extension [Self <: IPolylineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPolylineOptions] (val x: Self) extends AnyVal {
     
     inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     

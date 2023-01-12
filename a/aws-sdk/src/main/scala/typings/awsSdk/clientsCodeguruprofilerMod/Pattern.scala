@@ -48,7 +48,8 @@ object Pattern {
     __obj.asInstanceOf[Pattern]
   }
   
-  extension [Self <: Pattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
     
     inline def setCountersToAggregate(value: Strings): Self = StObject.set(x, "countersToAggregate", value.asInstanceOf[js.Any])
     

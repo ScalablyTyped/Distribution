@@ -18,7 +18,8 @@ object DeleteCustomLineItemOutput {
     __obj.asInstanceOf[DeleteCustomLineItemOutput]
   }
   
-  extension [Self <: DeleteCustomLineItemOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCustomLineItemOutput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: CustomLineItemArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

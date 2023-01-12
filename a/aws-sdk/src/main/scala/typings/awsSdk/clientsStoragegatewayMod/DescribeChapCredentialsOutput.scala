@@ -18,7 +18,8 @@ object DescribeChapCredentialsOutput {
     __obj.asInstanceOf[DescribeChapCredentialsOutput]
   }
   
-  extension [Self <: DescribeChapCredentialsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeChapCredentialsOutput] (val x: Self) extends AnyVal {
     
     inline def setChapCredentials(value: ChapCredentials): Self = StObject.set(x, "ChapCredentials", value.asInstanceOf[js.Any])
     

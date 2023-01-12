@@ -32,7 +32,8 @@ object IMeasurePointInsideOptions {
     __obj.asInstanceOf[IMeasurePointInsideOptions]
   }
   
-  extension [Self <: IMeasurePointInsideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMeasurePointInsideOptions] (val x: Self) extends AnyVal {
     
     inline def setFarPoint(value: IPoint): Self = StObject.set(x, "farPoint", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetCustomVerificationEmailTemplateRequest {
     __obj.asInstanceOf[GetCustomVerificationEmailTemplateRequest]
   }
   
-  extension [Self <: GetCustomVerificationEmailTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCustomVerificationEmailTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
   }

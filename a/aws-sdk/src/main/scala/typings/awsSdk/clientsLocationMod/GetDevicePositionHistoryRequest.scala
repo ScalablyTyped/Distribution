@@ -43,7 +43,8 @@ object GetDevicePositionHistoryRequest {
     __obj.asInstanceOf[GetDevicePositionHistoryRequest]
   }
   
-  extension [Self <: GetDevicePositionHistoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDevicePositionHistoryRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: Id): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,8 @@ object FontProperties {
     __obj.asInstanceOf[FontProperties]
   }
   
-  extension [Self <: FontProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontProperties] (val x: Self) extends AnyVal {
     
     inline def setDecoration(value: underline | `line-through` | none_): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
     

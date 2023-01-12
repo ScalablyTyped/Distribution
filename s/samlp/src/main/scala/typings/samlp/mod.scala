@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[IdPMetadataOptions]
     }
     
-    extension [Self <: IdPMetadataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdPMetadataOptions] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object mod {
       __obj.asInstanceOf[IdPOptions]
     }
     
-    extension [Self <: IdPOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdPOptions] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
@@ -294,7 +296,8 @@ object mod {
       __obj.asInstanceOf[MetadataItem]
     }
     
-    extension [Self <: MetadataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataItem] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -321,7 +324,8 @@ object mod {
       __obj.asInstanceOf[ProfileMapper]
     }
     
-    extension [Self <: ProfileMapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfileMapper] (val x: Self) extends AnyVal {
       
       inline def setGetClaims(value: () => Any): Self = StObject.set(x, "getClaims", js.Any.fromFunction0(value))
       
@@ -354,7 +358,8 @@ object mod {
       __obj.asInstanceOf[SamlRequest]
     }
     
-    extension [Self <: SamlRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamlRequest] (val x: Self) extends AnyVal {
       
       inline def setAssertionConsumerServiceURL(value: String): Self = StObject.set(x, "assertionConsumerServiceURL", value.asInstanceOf[js.Any])
       

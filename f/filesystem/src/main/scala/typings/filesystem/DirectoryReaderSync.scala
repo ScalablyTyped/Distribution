@@ -27,7 +27,8 @@ object DirectoryReaderSync {
     __obj.asInstanceOf[DirectoryReaderSync]
   }
   
-  extension [Self <: DirectoryReaderSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryReaderSync] (val x: Self) extends AnyVal {
     
     inline def setReadEntries(value: () => js.Array[EntrySync]): Self = StObject.set(x, "readEntries", js.Any.fromFunction0(value))
   }

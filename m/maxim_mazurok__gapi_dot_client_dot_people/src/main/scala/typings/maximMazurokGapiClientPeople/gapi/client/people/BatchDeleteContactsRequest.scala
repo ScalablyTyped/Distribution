@@ -16,7 +16,8 @@ object BatchDeleteContactsRequest {
     __obj.asInstanceOf[BatchDeleteContactsRequest]
   }
   
-  extension [Self <: BatchDeleteContactsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteContactsRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
     

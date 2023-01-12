@@ -23,7 +23,8 @@ object ListProvisioningArtifactsInput {
     __obj.asInstanceOf[ListProvisioningArtifactsInput]
   }
   
-  extension [Self <: ListProvisioningArtifactsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProvisioningArtifactsInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

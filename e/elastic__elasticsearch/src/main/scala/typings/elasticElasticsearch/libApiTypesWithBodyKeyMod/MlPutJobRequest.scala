@@ -21,7 +21,8 @@ object MlPutJobRequest {
     __obj.asInstanceOf[MlPutJobRequest]
   }
   
-  extension [Self <: MlPutJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutJobRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Allowlazyopen): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object BlockEditProps {
     __obj.asInstanceOf[BlockEditProps[T]]
   }
   
-  extension [Self <: BlockEditProps[?], T /* <: Record[String, Any] */](x: Self & BlockEditProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockEditProps[?], T /* <: Record[String, Any] */] (val x: Self & BlockEditProps[T]) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

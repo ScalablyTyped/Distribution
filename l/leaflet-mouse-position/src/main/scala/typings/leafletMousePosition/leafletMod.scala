@@ -51,7 +51,8 @@ object leafletMod {
         __obj.asInstanceOf[MousePositionControlOptions]
       }
       
-      extension [Self <: MousePositionControlOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MousePositionControlOptions] (val x: Self) extends AnyVal {
         
         inline def setEmptyString(value: String): Self = StObject.set(x, "emptyString", value.asInstanceOf[js.Any])
         
@@ -113,7 +114,8 @@ object leafletMod {
       __obj.asInstanceOf[MapOptions]
     }
     
-    extension [Self <: MapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
       
       inline def setPositionControl(value: Boolean): Self = StObject.set(x, "positionControl", value.asInstanceOf[js.Any])
       

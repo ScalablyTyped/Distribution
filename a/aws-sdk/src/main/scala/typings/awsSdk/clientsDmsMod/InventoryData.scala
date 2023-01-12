@@ -23,7 +23,8 @@ object InventoryData {
     __obj.asInstanceOf[InventoryData]
   }
   
-  extension [Self <: InventoryData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryData] (val x: Self) extends AnyVal {
     
     inline def setNumberOfDatabases(value: IntegerOptional): Self = StObject.set(x, "NumberOfDatabases", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ResourceParameter {
     __obj.asInstanceOf[ResourceParameter]
   }
   
-  extension [Self <: ResourceParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceParameter] (val x: Self) extends AnyVal {
     
     inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     

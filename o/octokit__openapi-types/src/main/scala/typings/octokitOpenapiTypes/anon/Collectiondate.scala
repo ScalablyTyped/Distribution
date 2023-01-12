@@ -29,7 +29,8 @@ object Collectiondate {
     __obj.asInstanceOf[Collectiondate]
   }
   
-  extension [Self <: Collectiondate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collectiondate] (val x: Self) extends AnyVal {
     
     inline def setCollection_date(value: String): Self = StObject.set(x, "collection_date", value.asInstanceOf[js.Any])
     

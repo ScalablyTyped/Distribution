@@ -35,7 +35,8 @@ object TreeItem {
     __obj.asInstanceOf[TreeItem]
   }
   
-  extension [Self <: TreeItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeItem] (val x: Self) extends AnyVal {
     
     inline def setCollapsibleState(value: TreeItemCollapsibleState): Self = StObject.set(x, "collapsibleState", value.asInstanceOf[js.Any])
     

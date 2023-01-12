@@ -20,7 +20,8 @@ object PartialSelectorPlayground {
     __obj.asInstanceOf[PartialSelectorPlayground]
   }
   
-  extension [Self <: PartialSelectorPlayground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSelectorPlayground] (val x: Self) extends AnyVal {
     
     inline def setOnElement(value: /* $el */ JQuery[HTMLElement] => js.UndefOr[String | Null]): Self = StObject.set(x, "onElement", js.Any.fromFunction1(value))
     

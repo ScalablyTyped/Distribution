@@ -16,7 +16,8 @@ object MaxPoolWithArgmaxInputs {
     __obj.asInstanceOf[MaxPoolWithArgmaxInputs]
   }
   
-  extension [Self <: MaxPoolWithArgmaxInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxPoolWithArgmaxInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ServiceActionAssociation {
     __obj.asInstanceOf[ServiceActionAssociation]
   }
   
-  extension [Self <: ServiceActionAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceActionAssociation] (val x: Self) extends AnyVal {
     
     inline def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     

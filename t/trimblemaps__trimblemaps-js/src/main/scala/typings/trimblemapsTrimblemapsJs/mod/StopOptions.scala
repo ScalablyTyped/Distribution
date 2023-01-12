@@ -25,7 +25,8 @@ object StopOptions {
     __obj.asInstanceOf[StopOptions]
   }
   
-  extension [Self <: StopOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopOptions] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

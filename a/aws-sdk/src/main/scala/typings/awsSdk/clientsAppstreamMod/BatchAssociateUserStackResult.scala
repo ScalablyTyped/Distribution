@@ -18,7 +18,8 @@ object BatchAssociateUserStackResult {
     __obj.asInstanceOf[BatchAssociateUserStackResult]
   }
   
-  extension [Self <: BatchAssociateUserStackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAssociateUserStackResult] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: UserStackAssociationErrorList): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

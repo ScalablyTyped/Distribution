@@ -52,7 +52,8 @@ object libVictoryPrimitivesLineSegmentMod {
       __obj.asInstanceOf[LineSegmentProps]
     }
     
-    extension [Self <: LineSegmentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineSegmentProps] (val x: Self) extends AnyVal {
       
       inline def setDatum(value: Any): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       

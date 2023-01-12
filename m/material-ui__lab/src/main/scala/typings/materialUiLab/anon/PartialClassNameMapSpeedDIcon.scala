@@ -26,7 +26,8 @@ object PartialClassNameMapSpeedDIcon {
     __obj.asInstanceOf[PartialClassNameMapSpeedDIcon]
   }
   
-  extension [Self <: PartialClassNameMapSpeedDIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapSpeedDIcon] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object SignatureReflection {
     __obj.asInstanceOf[SignatureReflection]
   }
   
-  extension [Self <: SignatureReflection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureReflection] (val x: Self) extends AnyVal {
     
     inline def setComment(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsCommentsCommentMod.Comment]]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

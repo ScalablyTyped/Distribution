@@ -53,7 +53,8 @@ object UpdateDevEndpointRequest {
     __obj.asInstanceOf[UpdateDevEndpointRequest]
   }
   
-  extension [Self <: UpdateDevEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDevEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setAddArguments(value: MapValue): Self = StObject.set(x, "AddArguments", value.asInstanceOf[js.Any])
     

@@ -115,7 +115,8 @@ object MosaicRuleProperties {
     __obj.asInstanceOf[MosaicRuleProperties]
   }
   
-  extension [Self <: MosaicRuleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MosaicRuleProperties] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     

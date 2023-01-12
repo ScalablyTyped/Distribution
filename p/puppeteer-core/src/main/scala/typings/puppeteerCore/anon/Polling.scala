@@ -26,7 +26,8 @@ object Polling {
     __obj.asInstanceOf[Polling]
   }
   
-  extension [Self <: Polling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Polling] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: Map[String, js.Function1[/* repeated */ scala.Nothing, Any]]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object XModuleUIConfigurationManager {
     __obj.asInstanceOf[XModuleUIConfigurationManager]
   }
   
-  extension [Self <: XModuleUIConfigurationManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XModuleUIConfigurationManager] (val x: Self) extends AnyVal {
     
     inline def setGetDefaultSettings(value: String => XIndexAccess): Self = StObject.set(x, "getDefaultSettings", js.Any.fromFunction1(value))
     

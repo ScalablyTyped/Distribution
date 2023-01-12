@@ -25,7 +25,8 @@ object StrategyOptions {
     __obj.asInstanceOf[StrategyOptions[TClient]]
   }
   
-  extension [Self <: StrategyOptions[?], TClient /* <: BaseClient */](x: Self & StrategyOptions[TClient]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrategyOptions[?], TClient /* <: BaseClient */] (val x: Self & StrategyOptions[TClient]) extends AnyVal {
     
     inline def setClient(value: TClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object NormalPullDecl {
     __obj.asInstanceOf[NormalPullDecl]
   }
   
-  extension [Self <: NormalPullDecl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalPullDecl] (val x: Self) extends AnyVal {
     
     inline def setParentDecl(value: Any): Self = StObject.set(x, "parentDecl", value.asInstanceOf[js.Any])
     

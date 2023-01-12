@@ -121,7 +121,8 @@ object loadingLoadingScreenMod {
       __obj.asInstanceOf[ILoadingScreen]
     }
     
-    extension [Self <: ILoadingScreen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILoadingScreen] (val x: Self) extends AnyVal {
       
       inline def setDisplayLoadingUI(value: () => Unit): Self = StObject.set(x, "displayLoadingUI", js.Any.fromFunction0(value))
       

@@ -28,7 +28,8 @@ object PerformanceInsightsMetricDimensionGroup {
     __obj.asInstanceOf[PerformanceInsightsMetricDimensionGroup]
   }
   
-  extension [Self <: PerformanceInsightsMetricDimensionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceInsightsMetricDimensionGroup] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: PerformanceInsightsMetricDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

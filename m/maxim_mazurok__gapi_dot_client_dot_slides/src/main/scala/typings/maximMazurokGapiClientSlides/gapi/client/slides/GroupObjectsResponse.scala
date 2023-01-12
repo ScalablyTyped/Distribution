@@ -16,7 +16,8 @@ object GroupObjectsResponse {
     __obj.asInstanceOf[GroupObjectsResponse]
   }
   
-  extension [Self <: GroupObjectsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupObjectsResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

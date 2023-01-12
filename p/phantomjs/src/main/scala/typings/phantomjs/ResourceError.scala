@@ -21,7 +21,8 @@ object ResourceError {
     __obj.asInstanceOf[ResourceError]
   }
   
-  extension [Self <: ResourceError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

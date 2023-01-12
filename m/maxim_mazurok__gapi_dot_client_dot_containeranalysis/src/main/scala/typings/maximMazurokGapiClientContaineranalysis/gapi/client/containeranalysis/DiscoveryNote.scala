@@ -16,7 +16,8 @@ object DiscoveryNote {
     __obj.asInstanceOf[DiscoveryNote]
   }
   
-  extension [Self <: DiscoveryNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoveryNote] (val x: Self) extends AnyVal {
     
     inline def setAnalysisKind(value: String): Self = StObject.set(x, "analysisKind", value.asInstanceOf[js.Any])
     

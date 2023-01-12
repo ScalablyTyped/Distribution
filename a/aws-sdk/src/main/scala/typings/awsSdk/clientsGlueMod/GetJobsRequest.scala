@@ -23,7 +23,8 @@ object GetJobsRequest {
     __obj.asInstanceOf[GetJobsRequest]
   }
   
-  extension [Self <: GetJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

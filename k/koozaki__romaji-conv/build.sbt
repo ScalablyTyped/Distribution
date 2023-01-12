@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koozaki__romaji-conv"
-version := "2.0-dt-20211202Z-a409cf"
+version := "2.0-dt-20211202Z-b18322"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

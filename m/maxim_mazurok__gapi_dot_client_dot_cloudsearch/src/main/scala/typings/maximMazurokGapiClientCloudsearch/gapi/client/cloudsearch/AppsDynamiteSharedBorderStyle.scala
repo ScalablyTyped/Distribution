@@ -22,7 +22,8 @@ object AppsDynamiteSharedBorderStyle {
     __obj.asInstanceOf[AppsDynamiteSharedBorderStyle]
   }
   
-  extension [Self <: AppsDynamiteSharedBorderStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedBorderStyle] (val x: Self) extends AnyVal {
     
     inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     

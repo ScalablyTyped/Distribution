@@ -51,7 +51,8 @@ object PickPropslabelstylecoloroDisabled {
     __obj.asInstanceOf[PickPropslabelstylecoloroDisabled]
   }
   
-  extension [Self <: PickPropslabelstylecoloroDisabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPropslabelstylecoloroDisabled] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

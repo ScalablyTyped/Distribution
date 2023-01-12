@@ -15,7 +15,8 @@ object Draft {
     __obj.asInstanceOf[Draft]
   }
   
-  extension [Self <: Draft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Draft] (val x: Self) extends AnyVal {
     
     inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     

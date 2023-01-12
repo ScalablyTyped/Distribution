@@ -18,7 +18,8 @@ object GetDeploymentsResult {
     __obj.asInstanceOf[GetDeploymentsResult]
   }
   
-  extension [Self <: GetDeploymentsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeploymentsResult] (val x: Self) extends AnyVal {
     
     inline def setDeployments(value: EdgeDeployments): Self = StObject.set(x, "Deployments", value.asInstanceOf[js.Any])
     

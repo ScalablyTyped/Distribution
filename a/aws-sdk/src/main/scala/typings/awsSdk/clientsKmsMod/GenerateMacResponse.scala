@@ -28,7 +28,8 @@ object GenerateMacResponse {
     __obj.asInstanceOf[GenerateMacResponse]
   }
   
-  extension [Self <: GenerateMacResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateMacResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     

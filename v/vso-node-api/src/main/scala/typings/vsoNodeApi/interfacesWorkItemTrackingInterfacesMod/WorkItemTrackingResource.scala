@@ -20,7 +20,8 @@ object WorkItemTrackingResource {
     __obj.asInstanceOf[WorkItemTrackingResource]
   }
   
-  extension [Self <: WorkItemTrackingResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemTrackingResource] (val x: Self) extends AnyVal {
     
     inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }

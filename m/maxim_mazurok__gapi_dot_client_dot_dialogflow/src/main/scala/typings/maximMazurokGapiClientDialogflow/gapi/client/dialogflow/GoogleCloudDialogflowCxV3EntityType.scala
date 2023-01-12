@@ -43,7 +43,8 @@ object GoogleCloudDialogflowCxV3EntityType {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3EntityType]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3EntityType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3EntityType] (val x: Self) extends AnyVal {
     
     inline def setAutoExpansionMode(value: String): Self = StObject.set(x, "autoExpansionMode", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RunFilter {
     __obj.asInstanceOf[RunFilter]
   }
   
-  extension [Self <: RunFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunFilter] (val x: Self) extends AnyVal {
     
     inline def setSourceFilter(value: String): Self = StObject.set(x, "sourceFilter", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CreateFleetMetricResponse {
     __obj.asInstanceOf[CreateFleetMetricResponse]
   }
   
-  extension [Self <: CreateFleetMetricResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFleetMetricResponse] (val x: Self) extends AnyVal {
     
     inline def setMetricArn(value: FleetMetricArn): Self = StObject.set(x, "metricArn", value.asInstanceOf[js.Any])
     

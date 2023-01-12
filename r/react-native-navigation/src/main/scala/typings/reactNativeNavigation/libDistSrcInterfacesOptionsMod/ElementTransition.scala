@@ -33,7 +33,8 @@ object ElementTransition {
     __obj.asInstanceOf[ElementTransition]
   }
   
-  extension [Self <: ElementTransition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementTransition] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: AppearingElementAnimation | DisappearingElementAnimation): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

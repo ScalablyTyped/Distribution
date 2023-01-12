@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[IsClosing]
     }
     
-    extension [Self <: IsClosing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsClosing] (val x: Self) extends AnyVal {
       
       inline def setIsClosing(value: Boolean): Self = StObject.set(x, "isClosing", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[OnIgnoreTag]
     }
     
-    extension [Self <: OnIgnoreTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnIgnoreTag] (val x: Self) extends AnyVal {
       
       inline def setOnIgnoreTag(value: (String, String, Position) => String): Self = StObject.set(x, "onIgnoreTag", js.Any.fromFunction3(value))
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setIsClosing(value: Boolean): Self = StObject.set(x, "isClosing", value.asInstanceOf[js.Any])
       

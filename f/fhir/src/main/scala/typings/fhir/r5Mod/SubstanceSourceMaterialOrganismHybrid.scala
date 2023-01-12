@@ -48,7 +48,8 @@ object SubstanceSourceMaterialOrganismHybrid {
     __obj.asInstanceOf[SubstanceSourceMaterialOrganismHybrid]
   }
   
-  extension [Self <: SubstanceSourceMaterialOrganismHybrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceSourceMaterialOrganismHybrid] (val x: Self) extends AnyVal {
     
     inline def setHybridType(value: CodeableConcept): Self = StObject.set(x, "hybridType", value.asInstanceOf[js.Any])
     

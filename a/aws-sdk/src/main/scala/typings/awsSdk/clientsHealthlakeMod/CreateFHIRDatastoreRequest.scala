@@ -43,7 +43,8 @@ object CreateFHIRDatastoreRequest {
     __obj.asInstanceOf[CreateFHIRDatastoreRequest]
   }
   
-  extension [Self <: CreateFHIRDatastoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFHIRDatastoreRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientTokenString): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

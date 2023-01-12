@@ -205,7 +205,8 @@ object mod {
       __obj.asInstanceOf[DrinkDatum]
     }
     
-    extension [Self <: DrinkDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrinkDatum] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -234,7 +235,8 @@ object mod {
       __obj.asInstanceOf[LibTreeDatum]
     }
     
-    extension [Self <: LibTreeDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibTreeDatum] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[LibTreeDatum]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

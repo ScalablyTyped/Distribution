@@ -83,7 +83,8 @@ object blazeMod {
       @js.native
       val ^ : typings.meteor.blazeMod.Blaze.TemplateStatic[Any, TemplateInstance[Any]] = js.native
       
-      extension [Self <: Template[?, ?], D, T](x: Self & (Template[D, T])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Template[?, ?], D, T] (val x: Self & (Template[D, T])) extends AnyVal {
         
         inline def set$(value: JQueryStatic): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
         
@@ -252,7 +253,8 @@ object blazeMod {
       @js.native
       val ^ : ViewStatic = js.native
       
-      extension [Self <: View](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: View] (val x: Self) extends AnyVal {
         
         inline def setAutorun(value: js.Function1[/* computation */ Computation, Unit] => Computation): Self = StObject.set(x, "autorun", js.Any.fromFunction1(value))
         

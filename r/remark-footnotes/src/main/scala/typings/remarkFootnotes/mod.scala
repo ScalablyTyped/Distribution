@@ -32,7 +32,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RemarkFootnotesOptions]
     }
     
-    extension [Self <: RemarkFootnotesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemarkFootnotesOptions] (val x: Self) extends AnyVal {
       
       inline def setInlineNotes(value: Boolean): Self = StObject.set(x, "inlineNotes", value.asInstanceOf[js.Any])
       

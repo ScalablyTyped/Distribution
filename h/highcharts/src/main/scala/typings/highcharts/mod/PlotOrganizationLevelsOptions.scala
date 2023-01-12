@@ -62,7 +62,8 @@ object PlotOrganizationLevelsOptions {
     __obj.asInstanceOf[PlotOrganizationLevelsOptions]
   }
   
-  extension [Self <: PlotOrganizationLevelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotOrganizationLevelsOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

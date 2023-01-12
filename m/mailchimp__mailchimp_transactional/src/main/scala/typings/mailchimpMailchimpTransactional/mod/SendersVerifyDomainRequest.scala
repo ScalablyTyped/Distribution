@@ -21,7 +21,8 @@ object SendersVerifyDomainRequest {
     __obj.asInstanceOf[SendersVerifyDomainRequest]
   }
   
-  extension [Self <: SendersVerifyDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendersVerifyDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

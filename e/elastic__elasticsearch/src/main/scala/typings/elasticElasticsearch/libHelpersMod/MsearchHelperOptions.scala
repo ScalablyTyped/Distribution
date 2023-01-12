@@ -27,7 +27,8 @@ object MsearchHelperOptions {
     __obj.asInstanceOf[MsearchHelperOptions]
   }
   
-  extension [Self <: MsearchHelperOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsearchHelperOptions] (val x: Self) extends AnyVal {
     
     inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PreferredRevision {
     __obj.asInstanceOf[PreferredRevision]
   }
   
-  extension [Self <: PreferredRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreferredRevision] (val x: Self) extends AnyVal {
     
     inline def setPreferredRevision(value: String): Self = StObject.set(x, "preferredRevision", value.asInstanceOf[js.Any])
     

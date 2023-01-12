@@ -69,7 +69,8 @@ object keyboardShortcutsMod {
         __obj.asInstanceOf[BaseProps]
       }
       
-      extension [Self <: BaseProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
         
         inline def setBindGlobal(value: Boolean): Self = StObject.set(x, "bindGlobal", value.asInstanceOf[js.Any])
         
@@ -115,7 +116,8 @@ object keyboardShortcutsMod {
         __obj.asInstanceOf[PropsWithChildren]
       }
       
-      extension [Self <: PropsWithChildren](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PropsWithChildren] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
@@ -140,7 +142,8 @@ object keyboardShortcutsMod {
         __obj.asInstanceOf[PropsWithoutChildren]
       }
       
-      extension [Self <: PropsWithoutChildren](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PropsWithoutChildren] (val x: Self) extends AnyVal {
         
         inline def setBindGlobal(value: `true`): Self = StObject.set(x, "bindGlobal", value.asInstanceOf[js.Any])
       }

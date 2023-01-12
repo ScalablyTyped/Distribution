@@ -25,7 +25,8 @@ object DataTableColumnDescription {
     __obj.asInstanceOf[DataTableColumnDescription]
   }
   
-  extension [Self <: DataTableColumnDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableColumnDescription] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

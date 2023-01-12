@@ -71,7 +71,8 @@ object dxPivotGridFieldChooserOptions {
     __obj.asInstanceOf[dxPivotGridFieldChooserOptions]
   }
   
-  extension [Self <: dxPivotGridFieldChooserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPivotGridFieldChooserOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowSearch(value: Boolean): Self = StObject.set(x, "allowSearch", value.asInstanceOf[js.Any])
     

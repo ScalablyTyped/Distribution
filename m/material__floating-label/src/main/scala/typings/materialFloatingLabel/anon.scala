@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[LABELFLOATABOVE]
     }
     
-    extension [Self <: LABELFLOATABOVE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LABELFLOATABOVE] (val x: Self) extends AnyVal {
       
       inline def setLABEL_FLOAT_ABOVE(value: String): Self = StObject.set(x, "LABEL_FLOAT_ABOVE", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCFloatingLabelAd]
     }
     
-    extension [Self <: PartialMDCFloatingLabelAd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCFloatingLabelAd] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

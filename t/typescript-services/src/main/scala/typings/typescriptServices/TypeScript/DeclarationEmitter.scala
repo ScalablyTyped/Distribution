@@ -194,7 +194,8 @@ object DeclarationEmitter {
     __obj.asInstanceOf[DeclarationEmitter]
   }
   
-  extension [Self <: DeclarationEmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclarationEmitter] (val x: Self) extends AnyVal {
     
     inline def setCanEmitDeclarations(value: Any => Any): Self = StObject.set(x, "canEmitDeclarations", js.Any.fromFunction1(value))
     

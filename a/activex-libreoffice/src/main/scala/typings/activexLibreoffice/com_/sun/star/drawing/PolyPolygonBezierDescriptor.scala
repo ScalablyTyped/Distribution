@@ -31,7 +31,8 @@ object PolyPolygonBezierDescriptor {
     __obj.asInstanceOf[PolyPolygonBezierDescriptor]
   }
   
-  extension [Self <: PolyPolygonBezierDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolyPolygonBezierDescriptor] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: PolyPolygonBezierCoords): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     

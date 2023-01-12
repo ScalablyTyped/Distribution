@@ -34,7 +34,8 @@ object IDisposableWithEvent {
     __obj.asInstanceOf[IDisposableWithEvent]
   }
   
-  extension [Self <: IDisposableWithEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDisposableWithEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
     

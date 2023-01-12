@@ -19,7 +19,8 @@ object ValidatorContext {
     __obj.asInstanceOf[ValidatorContext[T]]
   }
   
-  extension [Self <: ValidatorContext[?], T /* <: js.Object */](x: Self & ValidatorContext[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidatorContext[?], T /* <: js.Object */] (val x: Self & ValidatorContext[T]) extends AnyVal {
     
     inline def setErrors(value: Errors[T]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

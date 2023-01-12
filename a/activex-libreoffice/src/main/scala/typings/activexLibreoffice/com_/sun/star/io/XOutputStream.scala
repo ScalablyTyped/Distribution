@@ -50,7 +50,8 @@ object XOutputStream {
     __obj.asInstanceOf[XOutputStream]
   }
   
-  extension [Self <: XOutputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XOutputStream] (val x: Self) extends AnyVal {
     
     inline def setCloseOutput(value: () => Unit): Self = StObject.set(x, "closeOutput", js.Any.fromFunction0(value))
     

@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[HlsQualitySelectorPlugin]
     }
     
-    extension [Self <: HlsQualitySelectorPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HlsQualitySelectorPlugin] (val x: Self) extends AnyVal {
       
       inline def setBindPlayerEvents(value: () => Unit): Self = StObject.set(x, "bindPlayerEvents", js.Any.fromFunction0(value))
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDisplayCurrentQuality(value: Boolean): Self = StObject.set(x, "displayCurrentQuality", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object mod {
         __obj.asInstanceOf[VideoJsPlayer]
       }
       
-      extension [Self <: VideoJsPlayer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoJsPlayer] (val x: Self) extends AnyVal {
         
         inline def setHlsQualitySelector(
           value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof hlsQualitySelector */ Any

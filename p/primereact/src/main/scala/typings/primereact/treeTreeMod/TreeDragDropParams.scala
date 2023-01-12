@@ -36,7 +36,8 @@ object TreeDragDropParams {
     __obj.asInstanceOf[TreeDragDropParams]
   }
   
-  extension [Self <: TreeDragDropParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeDragDropParams] (val x: Self) extends AnyVal {
     
     inline def setDragNode(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any

@@ -23,7 +23,8 @@ object EnrollmentJobFraudDetectionConfig {
     __obj.asInstanceOf[EnrollmentJobFraudDetectionConfig]
   }
   
-  extension [Self <: EnrollmentJobFraudDetectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrollmentJobFraudDetectionConfig] (val x: Self) extends AnyVal {
     
     inline def setFraudDetectionAction(value: FraudDetectionAction): Self = StObject.set(x, "FraudDetectionAction", value.asInstanceOf[js.Any])
     

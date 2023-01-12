@@ -28,7 +28,8 @@ object ListControlPanelsRequest {
     __obj.asInstanceOf[ListControlPanelsRequest]
   }
   
-  extension [Self <: ListControlPanelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListControlPanelsRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     

@@ -152,7 +152,8 @@ object PartialNativePointerEvent {
     __obj.asInstanceOf[PartialNativePointerEvent]
   }
   
-  extension [Self <: PartialNativePointerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNativePointerEvent] (val x: Self) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

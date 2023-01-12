@@ -23,7 +23,8 @@ object DataPilotFieldLayoutInfo {
     __obj.asInstanceOf[DataPilotFieldLayoutInfo]
   }
   
-  extension [Self <: DataPilotFieldLayoutInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotFieldLayoutInfo] (val x: Self) extends AnyVal {
     
     inline def setAddEmptyLines(value: Boolean): Self = StObject.set(x, "AddEmptyLines", value.asInstanceOf[js.Any])
     

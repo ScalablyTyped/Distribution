@@ -183,7 +183,8 @@ object mod {
       __obj.asInstanceOf[AnalyticsPayload]
     }
     
-    extension [Self <: AnalyticsPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsPayload] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -210,7 +211,8 @@ object mod {
       __obj.asInstanceOf[FlushResponse]
     }
     
-    extension [Self <: FlushResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlushResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: Batch): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

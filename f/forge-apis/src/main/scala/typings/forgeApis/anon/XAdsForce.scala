@@ -15,7 +15,8 @@ object XAdsForce {
     __obj.asInstanceOf[XAdsForce]
   }
   
-  extension [Self <: XAdsForce](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAdsForce] (val x: Self) extends AnyVal {
     
     inline def setXAdsForce(value: Boolean): Self = StObject.set(x, "xAdsForce", value.asInstanceOf[js.Any])
     

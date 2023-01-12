@@ -21,7 +21,8 @@ object PagingOptionsincludetotalIncludetotals {
     __obj.asInstanceOf[PagingOptionsincludetotalIncludetotals]
   }
   
-  extension [Self <: PagingOptionsincludetotalIncludetotals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagingOptionsincludetotalIncludetotals] (val x: Self) extends AnyVal {
     
     inline def setInclude_totals(value: `true`): Self = StObject.set(x, "include_totals", value.asInstanceOf[js.Any])
     

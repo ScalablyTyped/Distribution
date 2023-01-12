@@ -53,7 +53,8 @@ object SAPODataConnectorProfileProperties {
     __obj.asInstanceOf[SAPODataConnectorProfileProperties]
   }
   
-  extension [Self <: SAPODataConnectorProfileProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAPODataConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     inline def setApplicationHostUrl(value: ApplicationHostUrl): Self = StObject.set(x, "applicationHostUrl", value.asInstanceOf[js.Any])
     

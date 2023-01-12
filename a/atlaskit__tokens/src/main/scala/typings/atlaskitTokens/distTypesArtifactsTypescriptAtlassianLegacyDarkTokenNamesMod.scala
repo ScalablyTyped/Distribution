@@ -2600,7 +2600,8 @@ object distTypesArtifactsTypescriptAtlassianLegacyDarkTokenNamesMod {
       __obj.asInstanceOf[CSSTokenMap]
     }
     
-    extension [Self <: CSSTokenMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSTokenMap] (val x: Self) extends AnyVal {
       
       inline def setColorDotaccentDotboldBlue(value: /* var(--ds-accent-boldBlue) */ String): Self = StObject.set(x, "color.accent.boldBlue", value.asInstanceOf[js.Any])
       

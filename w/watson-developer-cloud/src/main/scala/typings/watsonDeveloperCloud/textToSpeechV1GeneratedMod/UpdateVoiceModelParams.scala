@@ -30,7 +30,8 @@ object UpdateVoiceModelParams {
     __obj.asInstanceOf[UpdateVoiceModelParams]
   }
   
-  extension [Self <: UpdateVoiceModelParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVoiceModelParams] (val x: Self) extends AnyVal {
     
     inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     

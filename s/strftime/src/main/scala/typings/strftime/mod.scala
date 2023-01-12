@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setAM(value: String): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[LocaleFormats]
     }
     
-    extension [Self <: LocaleFormats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocaleFormats] (val x: Self) extends AnyVal {
       
       inline def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object SmartHomeV1ReportStateRequest {
     __obj.asInstanceOf[SmartHomeV1ReportStateRequest]
   }
   
-  extension [Self <: SmartHomeV1ReportStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartHomeV1ReportStateRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     

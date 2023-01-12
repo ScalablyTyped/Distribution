@@ -23,7 +23,8 @@ object QueryArgProfile {
     __obj.asInstanceOf[QueryArgProfile]
   }
   
-  extension [Self <: QueryArgProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryArgProfile] (val x: Self) extends AnyVal {
     
     inline def setProfileId(value: String): Self = StObject.set(x, "ProfileId", value.asInstanceOf[js.Any])
     

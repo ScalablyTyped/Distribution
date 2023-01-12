@@ -26,7 +26,8 @@ object ReleaseWorkItemRef {
     __obj.asInstanceOf[ReleaseWorkItemRef]
   }
   
-  extension [Self <: ReleaseWorkItemRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseWorkItemRef] (val x: Self) extends AnyVal {
     
     inline def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object PeerResponseEvent {
     __obj.asInstanceOf[PeerResponseEvent]
   }
   
-  extension [Self <: PeerResponseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerResponseEvent] (val x: Self) extends AnyVal {
     
     inline def setCloser(value: js.Array[PeerInfo]): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
     

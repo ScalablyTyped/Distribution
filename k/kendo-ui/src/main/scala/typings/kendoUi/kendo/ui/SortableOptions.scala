@@ -52,7 +52,8 @@ object SortableOptions {
     __obj.asInstanceOf[SortableOptions]
   }
   
-  extension [Self <: SortableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortableOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoScroll(value: Boolean): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
     

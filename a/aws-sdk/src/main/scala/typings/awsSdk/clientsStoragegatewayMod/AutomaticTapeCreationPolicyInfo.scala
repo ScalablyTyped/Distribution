@@ -20,7 +20,8 @@ object AutomaticTapeCreationPolicyInfo {
     __obj.asInstanceOf[AutomaticTapeCreationPolicyInfo]
   }
   
-  extension [Self <: AutomaticTapeCreationPolicyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomaticTapeCreationPolicyInfo] (val x: Self) extends AnyVal {
     
     inline def setAutomaticTapeCreationRules(value: AutomaticTapeCreationRules): Self = StObject.set(x, "AutomaticTapeCreationRules", value.asInstanceOf[js.Any])
     

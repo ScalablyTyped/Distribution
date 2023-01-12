@@ -39,7 +39,8 @@ object DefaultResources {
     __obj.asInstanceOf[DefaultResources]
   }
   
-  extension [Self <: DefaultResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultResources] (val x: Self) extends AnyVal {
     
     inline def setHostingSite(value: String): Self = StObject.set(x, "hostingSite", value.asInstanceOf[js.Any])
     

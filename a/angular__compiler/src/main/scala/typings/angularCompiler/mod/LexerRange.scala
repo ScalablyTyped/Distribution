@@ -21,7 +21,8 @@ object LexerRange {
     __obj.asInstanceOf[LexerRange]
   }
   
-  extension [Self <: LexerRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexerRange] (val x: Self) extends AnyVal {
     
     inline def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
     

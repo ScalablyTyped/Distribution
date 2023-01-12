@@ -22,7 +22,8 @@ object MediaQueryList {
     __obj.asInstanceOf[MediaQueryList]
   }
   
-  extension [Self <: MediaQueryList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaQueryList] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

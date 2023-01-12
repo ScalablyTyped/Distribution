@@ -20,7 +20,8 @@ object LabelingJobResourceConfig {
     __obj.asInstanceOf[LabelingJobResourceConfig]
   }
   
-  extension [Self <: LabelingJobResourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelingJobResourceConfig] (val x: Self) extends AnyVal {
     
     inline def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
     

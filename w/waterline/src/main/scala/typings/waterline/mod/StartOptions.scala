@@ -27,7 +27,8 @@ object StartOptions {
     __obj.asInstanceOf[StartOptions]
   }
   
-  extension [Self <: StartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartOptions] (val x: Self) extends AnyVal {
     
     inline def setAdapters(value: Record[String, Adapter]): Self = StObject.set(x, "adapters", value.asInstanceOf[js.Any])
     

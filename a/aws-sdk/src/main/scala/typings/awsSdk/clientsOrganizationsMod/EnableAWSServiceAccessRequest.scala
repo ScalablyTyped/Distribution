@@ -18,7 +18,8 @@ object EnableAWSServiceAccessRequest {
     __obj.asInstanceOf[EnableAWSServiceAccessRequest]
   }
   
-  extension [Self <: EnableAWSServiceAccessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableAWSServiceAccessRequest] (val x: Self) extends AnyVal {
     
     inline def setServicePrincipal(value: ServicePrincipal): Self = StObject.set(x, "ServicePrincipal", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object AddRoleToDBClusterMessage {
     __obj.asInstanceOf[AddRoleToDBClusterMessage]
   }
   
-  extension [Self <: AddRoleToDBClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddRoleToDBClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     

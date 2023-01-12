@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[FormFieldDescriptor]
     }
     
-    extension [Self <: FormFieldDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormFieldDescriptor] (val x: Self) extends AnyVal {
       
       inline def setAuto(value: String): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[StateLinkDescriptor]
     }
     
-    extension [Self <: StateLinkDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateLinkDescriptor] (val x: Self) extends AnyVal {
       
       inline def setData(value: BasicObject[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object BodyUpdateData {
     __obj.asInstanceOf[BodyUpdateData]
   }
   
-  extension [Self <: BodyUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyUpdateData] (val x: Self) extends AnyVal {
     
     inline def setFont(value: FontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

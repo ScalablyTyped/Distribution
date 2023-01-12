@@ -23,7 +23,8 @@ object ChangeServerLifeCycleStateRequest {
     __obj.asInstanceOf[ChangeServerLifeCycleStateRequest]
   }
   
-  extension [Self <: ChangeServerLifeCycleStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeServerLifeCycleStateRequest] (val x: Self) extends AnyVal {
     
     inline def setLifeCycle(value: ChangeServerLifeCycleStateSourceServerLifecycle): Self = StObject.set(x, "lifeCycle", value.asInstanceOf[js.Any])
     

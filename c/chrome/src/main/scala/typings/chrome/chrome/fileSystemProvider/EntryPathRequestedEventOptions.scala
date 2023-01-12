@@ -18,7 +18,8 @@ object EntryPathRequestedEventOptions {
     __obj.asInstanceOf[EntryPathRequestedEventOptions]
   }
   
-  extension [Self <: EntryPathRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryPathRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
   }

@@ -92,7 +92,8 @@ object PlusCameraCameraOptions {
     __obj.asInstanceOf[PlusCameraCameraOptions]
   }
   
-  extension [Self <: PlusCameraCameraOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusCameraCameraOptions] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: _docSlash | _documentsSlash | _downloadsSlash): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object VdmAttributes {
     __obj.asInstanceOf[VdmAttributes]
   }
   
-  extension [Self <: VdmAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VdmAttributes] (val x: Self) extends AnyVal {
     
     inline def setDashboardAttributes(value: DashboardAttributes): Self = StObject.set(x, "DashboardAttributes", value.asInstanceOf[js.Any])
     

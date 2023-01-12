@@ -452,7 +452,8 @@ object componentsMod {
       __obj.asInstanceOf[IGesturePayload]
     }
     
-    extension [Self <: IGesturePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGesturePayload] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: Vec2): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -489,7 +490,8 @@ object componentsMod {
       __obj.asInstanceOf[IGesturePointer]
     }
     
-    extension [Self <: IGesturePointer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGesturePointer] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Vec2): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       

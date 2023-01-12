@@ -23,7 +23,8 @@ object AggregationsBucketSortAggregation {
     __obj.asInstanceOf[AggregationsBucketSortAggregation]
   }
   
-  extension [Self <: AggregationsBucketSortAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsBucketSortAggregation] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: integer): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

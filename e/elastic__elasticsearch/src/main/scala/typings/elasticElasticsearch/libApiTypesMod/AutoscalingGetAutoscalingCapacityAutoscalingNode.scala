@@ -15,7 +15,8 @@ object AutoscalingGetAutoscalingCapacityAutoscalingNode {
     __obj.asInstanceOf[AutoscalingGetAutoscalingCapacityAutoscalingNode]
   }
   
-  extension [Self <: AutoscalingGetAutoscalingCapacityAutoscalingNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingGetAutoscalingCapacityAutoscalingNode] (val x: Self) extends AnyVal {
     
     inline def setName(value: NodeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

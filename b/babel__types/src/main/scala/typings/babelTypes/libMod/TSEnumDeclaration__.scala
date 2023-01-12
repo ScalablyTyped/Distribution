@@ -34,7 +34,8 @@ object TSEnumDeclaration__ {
     __obj.asInstanceOf[TSEnumDeclaration__]
   }
   
-  extension [Self <: TSEnumDeclaration__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSEnumDeclaration__] (val x: Self) extends AnyVal {
     
     inline def setConst(value: Boolean): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
     

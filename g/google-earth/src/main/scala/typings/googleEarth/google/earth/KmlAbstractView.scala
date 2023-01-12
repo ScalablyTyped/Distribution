@@ -84,7 +84,8 @@ object KmlAbstractView {
     __obj.asInstanceOf[KmlAbstractView]
   }
   
-  extension [Self <: KmlAbstractView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlAbstractView] (val x: Self) extends AnyVal {
     
     inline def setCopyAsCamera(value: () => KmlCamera): Self = StObject.set(x, "copyAsCamera", js.Any.fromFunction0(value))
     

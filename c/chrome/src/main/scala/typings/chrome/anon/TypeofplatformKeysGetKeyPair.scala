@@ -49,7 +49,8 @@ object TypeofplatformKeysGetKeyPair {
     __obj.asInstanceOf[TypeofplatformKeysGetKeyPair]
   }
   
-  extension [Self <: TypeofplatformKeysGetKeyPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofplatformKeysGetKeyPair] (val x: Self) extends AnyVal {
     
     inline def setGetKeyPair(
       value: (js.typedarray.ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit

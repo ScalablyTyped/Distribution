@@ -54,7 +54,8 @@ object srcVirtualFsHostCreateMod {
       __obj.asInstanceOf[SyncHostHandler[StatsT]]
     }
     
-    extension [Self <: SyncHostHandler[?], StatsT /* <: js.Object */](x: Self & SyncHostHandler[StatsT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncHostHandler[?], StatsT /* <: js.Object */] (val x: Self & SyncHostHandler[StatsT]) extends AnyVal {
       
       inline def setDelete(value: Path_ => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       

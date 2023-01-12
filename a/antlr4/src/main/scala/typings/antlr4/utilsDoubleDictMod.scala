@@ -43,7 +43,8 @@ object utilsDoubleDictMod {
       __obj.asInstanceOf[DoubleDict]
     }
     
-    extension [Self <: DoubleDict](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleDict] (val x: Self) extends AnyVal {
       
       inline def setCacheMap(value: Any): Self = StObject.set(x, "cacheMap", value.asInstanceOf[js.Any])
       

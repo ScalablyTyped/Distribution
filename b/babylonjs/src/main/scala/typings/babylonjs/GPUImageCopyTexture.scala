@@ -21,7 +21,8 @@ object GPUImageCopyTexture {
     __obj.asInstanceOf[GPUImageCopyTexture]
   }
   
-  extension [Self <: GPUImageCopyTexture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUImageCopyTexture] (val x: Self) extends AnyVal {
     
     inline def setAspect(value: GPUTextureAspect): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     

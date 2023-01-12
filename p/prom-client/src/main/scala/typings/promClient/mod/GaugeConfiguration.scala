@@ -18,7 +18,8 @@ object GaugeConfiguration {
     __obj.asInstanceOf[GaugeConfiguration[T]]
   }
   
-  extension [Self <: GaugeConfiguration[?], T /* <: String */](x: Self & GaugeConfiguration[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GaugeConfiguration[?], T /* <: String */] (val x: Self & GaugeConfiguration[T]) extends AnyVal {
     
     inline def setCollect(value: CollectFunction[Gauge[T]]): Self = StObject.set(x, "collect", value.asInstanceOf[js.Any])
     

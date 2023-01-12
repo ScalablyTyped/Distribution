@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsFunnelChartMod extends Shortcut {
       __obj.asInstanceOf[FunnelChartProps]
     }
     
-    extension [Self <: FunnelChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunnelChartProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

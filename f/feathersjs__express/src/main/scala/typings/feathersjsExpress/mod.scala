@@ -170,7 +170,8 @@ object mod {
       __obj.asInstanceOf[Application[T]]
     }
     
-    extension [Self <: Application[?], T](x: Self & Application[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Application[?], T] (val x: Self & Application[T]) extends AnyVal {
       
       inline def setUse(value: FeathersApplicationRequestHandler[T]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     }

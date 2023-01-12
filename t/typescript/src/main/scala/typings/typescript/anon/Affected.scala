@@ -19,7 +19,8 @@ object Affected {
     __obj.asInstanceOf[Affected[T]]
   }
   
-  extension [Self <: Affected[?], T](x: Self & Affected[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Affected[?], T] (val x: Self & Affected[T]) extends AnyVal {
     
     inline def setAffected(value: SourceFile | Program): Self = StObject.set(x, "affected", value.asInstanceOf[js.Any])
     

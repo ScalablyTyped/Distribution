@@ -846,7 +846,8 @@ object anon {
       __obj.asInstanceOf[PickSegmentedPropsonChang]
     }
     
-    extension [Self <: PickSegmentedPropsonChang](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickSegmentedPropsonChang] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

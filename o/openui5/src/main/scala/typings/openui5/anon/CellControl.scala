@@ -46,7 +46,8 @@ object CellControl {
     __obj.asInstanceOf[CellControl]
   }
   
-  extension [Self <: CellControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellControl] (val x: Self) extends AnyVal {
     
     inline def setCellControl(value: default): Self = StObject.set(x, "cellControl", value.asInstanceOf[js.Any])
     

@@ -131,7 +131,8 @@ object typesCampaignResponseMod {
       __obj.asInstanceOf[CampaignResponse]
     }
     
-    extension [Self <: CampaignResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CampaignResponse] (val x: Self) extends AnyVal {
       
       inline def setAdditionalTreatments(value: js.Array[TreatmentResource] | js.Iterable[TreatmentResource]): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
       
@@ -272,7 +273,8 @@ object typesCampaignResponseMod {
       __obj.asInstanceOf[UnmarshalledCampaignResponse]
     }
     
-    extension [Self <: UnmarshalledCampaignResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledCampaignResponse] (val x: Self) extends AnyVal {
       
       inline def setAdditionalTreatments(value: js.Array[UnmarshalledTreatmentResource]): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
       

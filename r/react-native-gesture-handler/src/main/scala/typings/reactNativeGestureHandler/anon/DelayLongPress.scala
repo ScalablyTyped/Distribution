@@ -15,7 +15,8 @@ object DelayLongPress {
     __obj.asInstanceOf[DelayLongPress]
   }
   
-  extension [Self <: DelayLongPress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelayLongPress] (val x: Self) extends AnyVal {
     
     inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
   }

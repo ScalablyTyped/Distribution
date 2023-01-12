@@ -106,7 +106,8 @@ object dxMapOptions {
     __obj.asInstanceOf[dxMapOptions]
   }
   
-  extension [Self <: dxMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxMapOptions] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String | Bing): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

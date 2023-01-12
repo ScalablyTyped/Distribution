@@ -19,7 +19,8 @@ object ThumbnailUrlOptions {
     __obj.asInstanceOf[ThumbnailUrlOptions]
   }
   
-  extension [Self <: ThumbnailUrlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThumbnailUrlOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

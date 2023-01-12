@@ -61,7 +61,8 @@ object ClaimResponseCoverage {
     __obj.asInstanceOf[ClaimResponseCoverage]
   }
   
-  extension [Self <: ClaimResponseCoverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimResponseCoverage] (val x: Self) extends AnyVal {
     
     inline def setBusinessArrangement(value: String): Self = StObject.set(x, "businessArrangement", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DialogFacebookResultSelection {
     __obj.asInstanceOf[DialogFacebookResultSelection]
   }
   
-  extension [Self <: DialogFacebookResultSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogFacebookResultSelection] (val x: Self) extends AnyVal {
     
     inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     

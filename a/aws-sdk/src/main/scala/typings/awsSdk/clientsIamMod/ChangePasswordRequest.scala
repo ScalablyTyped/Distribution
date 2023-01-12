@@ -23,7 +23,8 @@ object ChangePasswordRequest {
     __obj.asInstanceOf[ChangePasswordRequest]
   }
   
-  extension [Self <: ChangePasswordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangePasswordRequest] (val x: Self) extends AnyVal {
     
     inline def setNewPassword(value: passwordType): Self = StObject.set(x, "NewPassword", value.asInstanceOf[js.Any])
     

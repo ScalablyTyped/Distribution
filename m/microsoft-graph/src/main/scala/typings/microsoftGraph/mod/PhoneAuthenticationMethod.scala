@@ -31,7 +31,8 @@ object PhoneAuthenticationMethod {
     __obj.asInstanceOf[PhoneAuthenticationMethod]
   }
   
-  extension [Self <: PhoneAuthenticationMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneAuthenticationMethod] (val x: Self) extends AnyVal {
     
     inline def setPhoneNumber(value: NullableOption[String]): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     

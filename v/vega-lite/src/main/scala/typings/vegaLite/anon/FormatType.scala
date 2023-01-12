@@ -101,7 +101,8 @@ object FormatType {
     __obj.asInstanceOf[FormatType]
   }
   
-  extension [Self <: FormatType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatType] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String | Dict[Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

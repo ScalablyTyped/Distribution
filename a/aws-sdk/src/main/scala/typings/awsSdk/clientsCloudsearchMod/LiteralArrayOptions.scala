@@ -38,7 +38,8 @@ object LiteralArrayOptions {
     __obj.asInstanceOf[LiteralArrayOptions]
   }
   
-  extension [Self <: LiteralArrayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiteralArrayOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: FieldValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

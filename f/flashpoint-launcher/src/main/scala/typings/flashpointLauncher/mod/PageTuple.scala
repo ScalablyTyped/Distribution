@@ -23,7 +23,8 @@ object PageTuple {
     __obj.asInstanceOf[PageTuple]
   }
   
-  extension [Self <: PageTuple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageTuple] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

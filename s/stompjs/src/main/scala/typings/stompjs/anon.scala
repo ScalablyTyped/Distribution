@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Incoming]
     }
     
-    extension [Self <: Incoming](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Incoming] (val x: Self) extends AnyVal {
       
       inline def setIncoming(value: Double): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object libTypesConfigHelperMod {
       __obj.asInstanceOf[ViewConfig]
     }
     
-    extension [Self <: ViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewConfig] (val x: Self) extends AnyVal {
       
       inline def setUiViewClassName(value: String): Self = StObject.set(x, "uiViewClassName", value.asInstanceOf[js.Any])
       

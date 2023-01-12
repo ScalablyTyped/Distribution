@@ -23,7 +23,8 @@ object NetworkInputSettings {
     __obj.asInstanceOf[NetworkInputSettings]
   }
   
-  extension [Self <: NetworkInputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInputSettings] (val x: Self) extends AnyVal {
     
     inline def setHlsInputSettings(value: HlsInputSettings): Self = StObject.set(x, "HlsInputSettings", value.asInstanceOf[js.Any])
     

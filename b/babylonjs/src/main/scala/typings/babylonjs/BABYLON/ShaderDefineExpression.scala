@@ -15,7 +15,8 @@ object ShaderDefineExpression {
     __obj.asInstanceOf[ShaderDefineExpression]
   }
   
-  extension [Self <: ShaderDefineExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaderDefineExpression] (val x: Self) extends AnyVal {
     
     inline def setIsTrue(value: org.scalablytyped.runtime.StringDictionary[String] => Boolean): Self = StObject.set(x, "isTrue", js.Any.fromFunction1(value))
   }

@@ -47,7 +47,8 @@ object PlusMapsOverlay {
     __obj.asInstanceOf[PlusMapsOverlay]
   }
   
-  extension [Self <: PlusMapsOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusMapsOverlay] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

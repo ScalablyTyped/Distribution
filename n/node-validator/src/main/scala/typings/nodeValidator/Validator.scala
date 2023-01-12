@@ -28,7 +28,8 @@ object Validator {
       __obj.asInstanceOf[IsObjectValidator]
     }
     
-    extension [Self <: IsObjectValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsObjectValidator] (val x: Self) extends AnyVal {
       
       inline def setWithCustom(value: ValidateFn => IsObjectValidator): Self = StObject.set(x, "withCustom", js.Any.fromFunction1(value))
       
@@ -56,7 +57,8 @@ object Validator {
       __obj.asInstanceOf[Validatable]
     }
     
-    extension [Self <: Validatable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Validatable] (val x: Self) extends AnyVal {
       
       inline def setValidate(
         value: (/* value */ Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit]) => Unit

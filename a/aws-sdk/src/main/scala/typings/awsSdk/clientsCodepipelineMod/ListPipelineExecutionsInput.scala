@@ -28,7 +28,8 @@ object ListPipelineExecutionsInput {
     __obj.asInstanceOf[ListPipelineExecutionsInput]
   }
   
-  extension [Self <: ListPipelineExecutionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPipelineExecutionsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

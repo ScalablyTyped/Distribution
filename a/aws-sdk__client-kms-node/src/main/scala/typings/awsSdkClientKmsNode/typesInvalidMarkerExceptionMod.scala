@@ -29,7 +29,8 @@ object typesInvalidMarkerExceptionMod {
       __obj.asInstanceOf[InvalidMarkerException]
     }
     
-    extension [Self <: InvalidMarkerException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidMarkerException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidMarkerException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object typesInvalidMarkerExceptionMod {
       __obj.asInstanceOf[InvalidMarkerExceptionDetails]
     }
     
-    extension [Self <: InvalidMarkerExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidMarkerExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

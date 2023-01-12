@@ -217,7 +217,8 @@ object libEsmPopover2Mod {
       __obj.asInstanceOf[IPopover2Props[TProps]]
     }
     
-    extension [Self <: IPopover2Props[?], TProps](x: Self & IPopover2Props[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopover2Props[?], TProps] (val x: Self & IPopover2Props[TProps]) extends AnyVal {
       
       inline def setBackdropProps(value: HTMLProps[HTMLDivElement]): Self = StObject.set(x, "backdropProps", value.asInstanceOf[js.Any])
       
@@ -258,7 +259,8 @@ object libEsmPopover2Mod {
       __obj.asInstanceOf[IPopover2State]
     }
     
-    extension [Self <: IPopover2State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopover2State] (val x: Self) extends AnyVal {
       
       inline def setHasDarkParent(value: Boolean): Self = StObject.set(x, "hasDarkParent", value.asInstanceOf[js.Any])
       

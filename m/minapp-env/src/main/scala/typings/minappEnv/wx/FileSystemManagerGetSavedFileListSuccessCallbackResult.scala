@@ -16,7 +16,8 @@ object FileSystemManagerGetSavedFileListSuccessCallbackResult {
     __obj.asInstanceOf[FileSystemManagerGetSavedFileListSuccessCallbackResult]
   }
   
-  extension [Self <: FileSystemManagerGetSavedFileListSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemManagerGetSavedFileListSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setFileList(value: FileSystemManagerGetSavedFileListSuccessCallbackResultFileItem): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
   }

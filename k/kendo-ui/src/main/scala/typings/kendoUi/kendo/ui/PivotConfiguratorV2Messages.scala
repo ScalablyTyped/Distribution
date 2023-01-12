@@ -27,7 +27,8 @@ object PivotConfiguratorV2Messages {
     __obj.asInstanceOf[PivotConfiguratorV2Messages]
   }
   
-  extension [Self <: PivotConfiguratorV2Messages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotConfiguratorV2Messages] (val x: Self) extends AnyVal {
     
     inline def setApplyButtonText(value: String): Self = StObject.set(x, "applyButtonText", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GetNodeStackTracesResponse {
     __obj.asInstanceOf[GetNodeStackTracesResponse]
   }
   
-  extension [Self <: GetNodeStackTracesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNodeStackTracesResponse] (val x: Self) extends AnyVal {
     
     inline def setCreation(value: StackTrace): Self = StObject.set(x, "creation", value.asInstanceOf[js.Any])
     

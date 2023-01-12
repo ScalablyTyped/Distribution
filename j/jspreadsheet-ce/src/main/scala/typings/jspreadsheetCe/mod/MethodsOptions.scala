@@ -311,7 +311,8 @@ object MethodsOptions {
     __obj.asInstanceOf[MethodsOptions]
   }
   
-  extension [Self <: MethodsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodsOptions] (val x: Self) extends AnyVal {
     
     inline def setDeleteColumn(value: js.Function): Self = StObject.set(x, "deleteColumn", value.asInstanceOf[js.Any])
     

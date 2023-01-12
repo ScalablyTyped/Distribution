@@ -46,7 +46,8 @@ object distDiffMod {
       __obj.asInstanceOf[SimpleDiff_[T]]
     }
     
-    extension [Self <: SimpleDiff_[?], T](x: Self & SimpleDiff_[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleDiff_[?], T] (val x: Self & SimpleDiff_[T]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

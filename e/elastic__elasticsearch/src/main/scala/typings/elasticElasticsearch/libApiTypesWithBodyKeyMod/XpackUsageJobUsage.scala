@@ -30,7 +30,8 @@ object XpackUsageJobUsage {
     __obj.asInstanceOf[XpackUsageJobUsage]
   }
   
-  extension [Self <: XpackUsageJobUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageJobUsage] (val x: Self) extends AnyVal {
     
     inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

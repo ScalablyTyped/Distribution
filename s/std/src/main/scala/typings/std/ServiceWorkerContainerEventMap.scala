@@ -22,7 +22,8 @@ object ServiceWorkerContainerEventMap {
     __obj.asInstanceOf[ServiceWorkerContainerEventMap]
   }
   
-  extension [Self <: ServiceWorkerContainerEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceWorkerContainerEventMap] (val x: Self) extends AnyVal {
     
     inline def setControllerchange(value: Event): Self = StObject.set(x, "controllerchange", value.asInstanceOf[js.Any])
     

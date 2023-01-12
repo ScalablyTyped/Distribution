@@ -28,7 +28,8 @@ object libHelperMod {
       __obj.asInstanceOf[SendMessageDeps]
     }
     
-    extension [Self <: SendMessageDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendMessageDeps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

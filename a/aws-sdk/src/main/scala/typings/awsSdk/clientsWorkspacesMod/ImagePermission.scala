@@ -18,7 +18,8 @@ object ImagePermission {
     __obj.asInstanceOf[ImagePermission]
   }
   
-  extension [Self <: ImagePermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePermission] (val x: Self) extends AnyVal {
     
     inline def setSharedAccountId(value: AwsAccount): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
     

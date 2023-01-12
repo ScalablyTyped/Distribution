@@ -79,7 +79,8 @@ object FormatProperties {
     __obj.asInstanceOf[FormatProperties]
   }
   
-  extension [Self <: FormatProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatProperties] (val x: Self) extends AnyVal {
     
     inline def setConversionInfo(value: ConversionInfo): Self = StObject.set(x, "conversionInfo", value.asInstanceOf[js.Any])
     

@@ -735,7 +735,8 @@ object Zip {
     __obj.asInstanceOf[Zip]
   }
   
-  extension [Self <: Zip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Zip] (val x: Self) extends AnyVal {
     
     inline def setAnchorAllowWhiteSpaceInCharacters(value: String): Self = StObject.set(x, "anchorAllowWhiteSpaceInCharacters", value.asInstanceOf[js.Any])
     

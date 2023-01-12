@@ -20,7 +20,8 @@ object SetChannelMetadataEvent {
     __obj.asInstanceOf[SetChannelMetadataEvent[ChannelCustom]]
   }
   
-  extension [Self <: SetChannelMetadataEvent[?], ChannelCustom /* <: ObjectCustom */](x: Self & SetChannelMetadataEvent[ChannelCustom]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetChannelMetadataEvent[?], ChannelCustom /* <: ObjectCustom */] (val x: Self & SetChannelMetadataEvent[ChannelCustom]) extends AnyVal {
     
     inline def setMessage(value: DataEvent[ChannelCustom]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

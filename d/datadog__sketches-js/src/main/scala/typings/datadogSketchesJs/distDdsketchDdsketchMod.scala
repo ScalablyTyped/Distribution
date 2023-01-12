@@ -143,7 +143,8 @@ object distDdsketchDdsketchMod {
       __obj.asInstanceOf[BaseSketchConfig]
     }
     
-    extension [Self <: BaseSketchConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSketchConfig] (val x: Self) extends AnyVal {
       
       inline def setMapping(value: Mapping): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object distDdsketchDdsketchMod {
       __obj.asInstanceOf[LogCollapsingSketchConfig]
     }
     
-    extension [Self <: LogCollapsingSketchConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogCollapsingSketchConfig] (val x: Self) extends AnyVal {
       
       inline def setBinLimit(value: Double): Self = StObject.set(x, "binLimit", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object distDdsketchDdsketchMod {
       __obj.asInstanceOf[SketchConfig]
     }
     
-    extension [Self <: SketchConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SketchConfig] (val x: Self) extends AnyVal {
       
       inline def setRelativeAccuracy(value: Double): Self = StObject.set(x, "relativeAccuracy", value.asInstanceOf[js.Any])
       

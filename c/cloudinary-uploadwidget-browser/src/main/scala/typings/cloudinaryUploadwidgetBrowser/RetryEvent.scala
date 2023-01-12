@@ -21,7 +21,8 @@ object RetryEvent {
     __obj.asInstanceOf[RetryEvent]
   }
   
-  extension [Self <: RetryEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: retry): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

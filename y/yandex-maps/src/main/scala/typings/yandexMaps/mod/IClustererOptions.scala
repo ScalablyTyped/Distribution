@@ -19,7 +19,8 @@ object IClustererOptions {
     __obj.asInstanceOf[IClustererOptions]
   }
   
-  extension [Self <: IClustererOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClustererOptions] (val x: Self) extends AnyVal {
     
     inline def setHasBalloon(value: Boolean): Self = StObject.set(x, "hasBalloon", value.asInstanceOf[js.Any])
     

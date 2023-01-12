@@ -21,7 +21,8 @@ object ListEditItemFilteringEventArgs {
     __obj.asInstanceOf[ListEditItemFilteringEventArgs]
   }
   
-  extension [Self <: ListEditItemFilteringEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEditItemFilteringEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

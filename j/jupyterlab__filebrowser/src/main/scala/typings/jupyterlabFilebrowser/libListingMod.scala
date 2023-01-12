@@ -445,7 +445,8 @@ object libListingMod {
         __obj.asInstanceOf[IContentsThunk]
       }
       
-      extension [Self <: IContentsThunk](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IContentsThunk] (val x: Self) extends AnyVal {
         
         inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
@@ -482,7 +483,8 @@ object libListingMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setModel(value: FilterFileBrowserModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
@@ -624,7 +626,8 @@ object libListingMod {
         __obj.asInstanceOf[ISortState]
       }
       
-      extension [Self <: ISortState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISortState] (val x: Self) extends AnyVal {
         
         inline def setDirection(value: ascending | descending): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
         

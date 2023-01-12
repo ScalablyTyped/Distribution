@@ -55,7 +55,8 @@ object nativeDistSheetSheetMod {
       __obj.asInstanceOf[SheetConstructorArgs]
     }
     
-    extension [Self <: SheetConstructorArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetConstructorArgs] (val x: Self) extends AnyVal {
       
       inline def setIsServer(value: Boolean): Self = StObject.set(x, "isServer", value.asInstanceOf[js.Any])
       

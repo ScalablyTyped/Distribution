@@ -33,7 +33,8 @@ object InterMetricImpactDetails {
     __obj.asInstanceOf[InterMetricImpactDetails]
   }
   
-  extension [Self <: InterMetricImpactDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterMetricImpactDetails] (val x: Self) extends AnyVal {
     
     inline def setAnomalyGroupId(value: UUID): Self = StObject.set(x, "AnomalyGroupId", value.asInstanceOf[js.Any])
     

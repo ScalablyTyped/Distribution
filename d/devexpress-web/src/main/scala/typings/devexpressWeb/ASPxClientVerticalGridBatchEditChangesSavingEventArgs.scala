@@ -33,7 +33,8 @@ object ASPxClientVerticalGridBatchEditChangesSavingEventArgs {
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditChangesSavingEventArgs]
   }
   
-  extension [Self <: ASPxClientVerticalGridBatchEditChangesSavingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientVerticalGridBatchEditChangesSavingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDeletedValues(value: Any): Self = StObject.set(x, "deletedValues", value.asInstanceOf[js.Any])
     

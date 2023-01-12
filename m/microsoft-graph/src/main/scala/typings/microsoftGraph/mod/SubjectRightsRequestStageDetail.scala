@@ -25,7 +25,8 @@ object SubjectRightsRequestStageDetail {
     __obj.asInstanceOf[SubjectRightsRequestStageDetail]
   }
   
-  extension [Self <: SubjectRightsRequestStageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectRightsRequestStageDetail] (val x: Self) extends AnyVal {
     
     inline def setError(value: NullableOption[PublicError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

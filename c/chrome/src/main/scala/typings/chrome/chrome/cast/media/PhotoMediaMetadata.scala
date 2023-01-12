@@ -50,7 +50,8 @@ object PhotoMediaMetadata {
     __obj.asInstanceOf[PhotoMediaMetadata]
   }
   
-  extension [Self <: PhotoMediaMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoMediaMetadata] (val x: Self) extends AnyVal {
     
     inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     

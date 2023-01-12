@@ -62,7 +62,8 @@ object GroupFindingsRequest {
     __obj.asInstanceOf[GroupFindingsRequest]
   }
   
-  extension [Self <: GroupFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setCompareDuration(value: String): Self = StObject.set(x, "compareDuration", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object dtsInterfacesInterfacesMod {
         __obj.asInstanceOf[BoostrapOptions]
       }
       
-      extension [Self <: BoostrapOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BoostrapOptions] (val x: Self) extends AnyVal {
         
         inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
         
@@ -122,7 +123,8 @@ object dtsInterfacesInterfacesMod {
         __obj.asInstanceOf[BootstrapResult]
       }
       
-      extension [Self <: BootstrapResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BootstrapResult] (val x: Self) extends AnyVal {
         
         inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
         
@@ -198,7 +200,8 @@ object dtsInterfacesInterfacesMod {
         __obj.asInstanceOf[DevToolsOptions]
       }
       
-      extension [Self <: DevToolsOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DevToolsOptions] (val x: Self) extends AnyVal {
         
         inline def setActionBlacklist(value: String | js.Array[String]): Self = StObject.set(x, "actionBlacklist", value.asInstanceOf[js.Any])
         
@@ -279,7 +282,8 @@ object dtsInterfacesInterfacesMod {
         __obj.asInstanceOf[NodeModule]
       }
       
-      extension [Self <: NodeModule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NodeModule] (val x: Self) extends AnyVal {
         
         inline def setHot(value: Accept): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
       }
@@ -302,7 +306,8 @@ object dtsInterfacesInterfacesMod {
         __obj.asInstanceOf[RootComponentProps]
       }
       
-      extension [Self <: RootComponentProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RootComponentProps] (val x: Self) extends AnyVal {
         
         inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
         
@@ -325,7 +330,8 @@ object dtsInterfacesInterfacesMod {
         __obj.asInstanceOf[RouterProps]
       }
       
-      extension [Self <: RouterProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RouterProps] (val x: Self) extends AnyVal {
         
         inline def setOnError(value: /* error */ Any => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
         

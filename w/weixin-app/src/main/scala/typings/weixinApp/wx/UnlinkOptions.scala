@@ -17,7 +17,8 @@ object UnlinkOptions {
     __obj.asInstanceOf[UnlinkOptions]
   }
   
-  extension [Self <: UnlinkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnlinkOptions] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
   }

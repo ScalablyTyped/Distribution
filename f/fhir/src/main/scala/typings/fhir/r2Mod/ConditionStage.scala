@@ -25,7 +25,8 @@ object ConditionStage {
     __obj.asInstanceOf[ConditionStage]
   }
   
-  extension [Self <: ConditionStage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionStage] (val x: Self) extends AnyVal {
     
     inline def setAssessment(value: js.Array[Reference]): Self = StObject.set(x, "assessment", value.asInstanceOf[js.Any])
     

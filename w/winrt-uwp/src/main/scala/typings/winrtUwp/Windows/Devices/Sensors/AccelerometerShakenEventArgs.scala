@@ -17,7 +17,8 @@ object AccelerometerShakenEventArgs {
     __obj.asInstanceOf[AccelerometerShakenEventArgs]
   }
   
-  extension [Self <: AccelerometerShakenEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccelerometerShakenEventArgs] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }

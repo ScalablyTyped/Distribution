@@ -28,7 +28,8 @@ object ApplyMapping {
     __obj.asInstanceOf[ApplyMapping]
   }
   
-  extension [Self <: ApplyMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyMapping] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: OneInput): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     

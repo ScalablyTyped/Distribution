@@ -23,7 +23,8 @@ object DeploymentValidateResult {
     __obj.asInstanceOf[DeploymentValidateResult]
   }
   
-  extension [Self <: DeploymentValidateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentValidateResult] (val x: Self) extends AnyVal {
     
     inline def setError(value: ResourceManagementErrorWithDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

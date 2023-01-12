@@ -114,7 +114,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Eases]
     }
     
-    extension [Self <: Eases](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Eases] (val x: Self) extends AnyVal {
       
       inline def setBackIn(value: Double => Double): Self = StObject.set(x, "backIn", js.Any.fromFunction1(value))
       

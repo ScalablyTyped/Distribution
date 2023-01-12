@@ -40,7 +40,8 @@ object distErrorsMod {
       __obj.asInstanceOf[EthereumErrorOptions[T]]
     }
     
-    extension [Self <: EthereumErrorOptions[?], T](x: Self & EthereumErrorOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EthereumErrorOptions[?], T] (val x: Self & EthereumErrorOptions[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object distErrorsMod {
       __obj.asInstanceOf[ServerErrorOptions[T]]
     }
     
-    extension [Self <: ServerErrorOptions[?], T](x: Self & ServerErrorOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerErrorOptions[?], T] (val x: Self & ServerErrorOptions[T]) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }

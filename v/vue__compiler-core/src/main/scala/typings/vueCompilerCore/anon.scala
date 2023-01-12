@@ -129,7 +129,8 @@ object anon {
       __obj.asInstanceOf[CodegenOptionsonContextCr]
     }
     
-    extension [Self <: CodegenOptionsonContextCr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodegenOptionsonContextCr] (val x: Self) extends AnyVal {
       
       inline def setBindingMetadata(value: BindingMetadata): Self = StObject.set(x, "bindingMetadata", value.asInstanceOf[js.Any])
       
@@ -219,7 +220,8 @@ object anon {
       __obj.asInstanceOf[Directives]
     }
     
-    extension [Self <: Directives](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Directives] (val x: Self) extends AnyVal {
       
       inline def setDirectives(value: js.Array[DirectiveNode]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
@@ -252,7 +254,8 @@ object anon {
       __obj.asInstanceOf[HasDynamicSlots]
     }
     
-    extension [Self <: HasDynamicSlots](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasDynamicSlots] (val x: Self) extends AnyVal {
       
       inline def setHasDynamicSlots(value: Boolean): Self = StObject.set(x, "hasDynamicSlots", value.asInstanceOf[js.Any])
       
@@ -277,7 +280,8 @@ object anon {
       __obj.asInstanceOf[VFor]
     }
     
-    extension [Self <: VFor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VFor] (val x: Self) extends AnyVal {
       
       inline def setVFor(value: Double): Self = StObject.set(x, "vFor", value.asInstanceOf[js.Any])
       

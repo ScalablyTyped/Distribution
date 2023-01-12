@@ -38,7 +38,8 @@ object CoinGecko {
     __obj.asInstanceOf[CoinGecko]
   }
   
-  extension [Self <: CoinGecko](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoinGecko] (val x: Self) extends AnyVal {
     
     inline def setCoins(value: All): Self = StObject.set(x, "coins", value.asInstanceOf[js.Any])
     

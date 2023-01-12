@@ -28,7 +28,8 @@ object ListRetirableGrantsRequest {
     __obj.asInstanceOf[ListRetirableGrantsRequest]
   }
   
-  extension [Self <: ListRetirableGrantsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRetirableGrantsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

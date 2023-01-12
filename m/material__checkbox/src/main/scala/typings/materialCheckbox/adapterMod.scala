@@ -46,7 +46,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCCheckboxAdapter]
     }
     
-    extension [Self <: MDCCheckboxAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCCheckboxAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

@@ -36,7 +36,8 @@ object Angle {
     __obj.asInstanceOf[Angle]
   }
   
-  extension [Self <: Angle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Angle] (val x: Self) extends AnyVal {
     
     inline def setType(value: angle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

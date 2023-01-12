@@ -18,7 +18,8 @@ object LineItemFields {
     __obj.asInstanceOf[LineItemFields]
   }
   
-  extension [Self <: LineItemFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineItemFields] (val x: Self) extends AnyVal {
     
     inline def setLineItemExpenseFields(value: ExpenseFieldList): Self = StObject.set(x, "LineItemExpenseFields", value.asInstanceOf[js.Any])
     

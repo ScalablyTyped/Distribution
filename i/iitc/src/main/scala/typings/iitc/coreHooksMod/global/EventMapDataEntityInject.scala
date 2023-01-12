@@ -15,7 +15,8 @@ object EventMapDataEntityInject {
     __obj.asInstanceOf[EventMapDataEntityInject]
   }
   
-  extension [Self <: EventMapDataEntityInject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMapDataEntityInject] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
   }

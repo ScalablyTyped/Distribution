@@ -96,7 +96,8 @@ object PlusOauthUserInfo {
     __obj.asInstanceOf[PlusOauthUserInfo]
   }
   
-  extension [Self <: PlusOauthUserInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusOauthUserInfo] (val x: Self) extends AnyVal {
     
     inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     

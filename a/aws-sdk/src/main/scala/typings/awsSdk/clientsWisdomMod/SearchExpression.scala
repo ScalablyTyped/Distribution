@@ -18,7 +18,8 @@ object SearchExpression {
     __obj.asInstanceOf[SearchExpression]
   }
   
-  extension [Self <: SearchExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchExpression] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

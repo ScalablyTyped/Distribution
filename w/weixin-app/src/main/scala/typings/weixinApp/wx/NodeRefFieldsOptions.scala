@@ -34,7 +34,8 @@ object NodeRefFieldsOptions {
     __obj.asInstanceOf[NodeRefFieldsOptions]
   }
   
-  extension [Self <: NodeRefFieldsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeRefFieldsOptions] (val x: Self) extends AnyVal {
     
     inline def setDataset(value: Boolean): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     

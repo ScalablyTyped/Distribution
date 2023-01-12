@@ -20,7 +20,8 @@ object ListChoiceOptions {
     __obj.asInstanceOf[ListChoiceOptions[T]]
   }
   
-  extension [Self <: ListChoiceOptions[?], T /* <: Answers */](x: Self & ListChoiceOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChoiceOptions[?], T /* <: Answers */] (val x: Self & ListChoiceOptions[T]) extends AnyVal {
     
     inline def setDisabled(value: DynamicQuestionProperty[Boolean | String, T]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

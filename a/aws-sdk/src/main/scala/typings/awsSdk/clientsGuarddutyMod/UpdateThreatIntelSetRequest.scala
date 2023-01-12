@@ -38,7 +38,8 @@ object UpdateThreatIntelSetRequest {
     __obj.asInstanceOf[UpdateThreatIntelSetRequest]
   }
   
-  extension [Self <: UpdateThreatIntelSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateThreatIntelSetRequest] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: Boolean): Self = StObject.set(x, "Activate", value.asInstanceOf[js.Any])
     

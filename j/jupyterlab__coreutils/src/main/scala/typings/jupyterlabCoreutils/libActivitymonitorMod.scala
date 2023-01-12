@@ -104,7 +104,8 @@ object libActivitymonitorMod {
         __obj.asInstanceOf[IArguments[Sender, Args]]
       }
       
-      extension [Self <: IArguments[?, ?], Sender, Args](x: Self & (IArguments[Sender, Args])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IArguments[?, ?], Sender, Args] (val x: Self & (IArguments[Sender, Args])) extends AnyVal {
         
         inline def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -136,7 +137,8 @@ object libActivitymonitorMod {
         __obj.asInstanceOf[IOptions[Sender, Args]]
       }
       
-      extension [Self <: IOptions[?, ?], Sender, Args](x: Self & (IOptions[Sender, Args])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?, ?], Sender, Args] (val x: Self & (IOptions[Sender, Args])) extends AnyVal {
         
         inline def setSignal(value: ISignal[Sender, Args]): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
         

@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[OnChange]
     }
     
-    extension [Self <: OnChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChange] (val x: Self) extends AnyVal {
       
       inline def setPreviousValue(value: Double): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
     }
@@ -57,7 +58,8 @@ object mod {
       __obj.asInstanceOf[OnStart]
     }
     
-    extension [Self <: OnStart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnStart] (val x: Self) extends AnyVal {
       
       inline def setActiveHandle(value: Double): Self = StObject.set(x, "activeHandle", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object mod {
       __obj.asInstanceOf[OnStop]
     }
     
-    extension [Self <: OnStop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnStop] (val x: Self) extends AnyVal {
       
       inline def setStartValue(value: Double): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
     }
@@ -116,7 +119,8 @@ object mod {
       __obj.asInstanceOf[RangeSliderEvents]
     }
     
-    extension [Self <: RangeSliderEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeSliderEvents] (val x: Self) extends AnyVal {
       
       inline def setChange(value: CustomEvent[OnChange]): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
       
@@ -271,7 +275,8 @@ object mod {
       __obj.asInstanceOf[RangeSliderProps]
     }
     
-    extension [Self <: RangeSliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeSliderProps] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean | String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -396,7 +401,8 @@ object mod {
       __obj.asInstanceOf[SpringValues]
     }
     
-    extension [Self <: SpringValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringValues] (val x: Self) extends AnyVal {
       
       inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       

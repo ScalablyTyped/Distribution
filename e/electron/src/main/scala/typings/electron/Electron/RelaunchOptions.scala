@@ -17,7 +17,8 @@ object RelaunchOptions {
     __obj.asInstanceOf[RelaunchOptions]
   }
   
-  extension [Self <: RelaunchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelaunchOptions] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

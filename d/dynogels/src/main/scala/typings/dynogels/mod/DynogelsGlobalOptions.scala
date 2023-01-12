@@ -17,7 +17,8 @@ object DynogelsGlobalOptions {
     __obj.asInstanceOf[DynogelsGlobalOptions]
   }
   
-  extension [Self <: DynogelsGlobalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynogelsGlobalOptions] (val x: Self) extends AnyVal {
     
     inline def set$dynogels(value: PollingInterval): Self = StObject.set(x, "$dynogels", value.asInstanceOf[js.Any])
   }

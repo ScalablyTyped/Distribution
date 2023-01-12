@@ -22,7 +22,8 @@ object SystemUpdateInfo {
     __obj.asInstanceOf[SystemUpdateInfo]
   }
   
-  extension [Self <: SystemUpdateInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemUpdateInfo] (val x: Self) extends AnyVal {
     
     inline def setUpdateReceivedTime(value: String): Self = StObject.set(x, "updateReceivedTime", value.asInstanceOf[js.Any])
     

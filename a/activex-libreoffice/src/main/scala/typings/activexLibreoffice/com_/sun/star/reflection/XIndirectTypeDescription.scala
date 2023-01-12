@@ -40,7 +40,8 @@ object XIndirectTypeDescription {
     __obj.asInstanceOf[XIndirectTypeDescription]
   }
   
-  extension [Self <: XIndirectTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIndirectTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGetReferencedType(value: () => XTypeDescription): Self = StObject.set(x, "getReferencedType", js.Any.fromFunction0(value))
     

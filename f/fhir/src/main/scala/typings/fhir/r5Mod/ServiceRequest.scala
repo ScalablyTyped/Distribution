@@ -246,7 +246,8 @@ object ServiceRequest {
     __obj.asInstanceOf[ServiceRequest]
   }
   
-  extension [Self <: ServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setAsNeededBoolean(value: Boolean): Self = StObject.set(x, "asNeededBoolean", value.asInstanceOf[js.Any])
     

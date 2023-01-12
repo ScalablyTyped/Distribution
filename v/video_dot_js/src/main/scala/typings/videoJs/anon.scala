@@ -82,7 +82,8 @@ object anon {
       __obj.asInstanceOf[All]
     }
     
-    extension [Self <: All](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: All] (val x: Self) extends AnyVal {
       
       inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object anon {
       __obj.asInstanceOf[BeforeRequest]
     }
     
-    extension [Self <: BeforeRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeRequest] (val x: Self) extends AnyVal {
       
       inline def setBeforeRequest(value: XhrOptions => Unit): Self = StObject.set(x, "beforeRequest", js.Any.fromFunction1(value))
     }
@@ -343,7 +345,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Child]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -646,7 +649,8 @@ object anon {
       __obj.asInstanceOf[LiveTolerance]
     }
     
-    extension [Self <: LiveTolerance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiveTolerance] (val x: Self) extends AnyVal {
       
       inline def setLiveTolerance(value: Double): Self = StObject.set(x, "liveTolerance", value.asInstanceOf[js.Any])
       
@@ -669,7 +673,8 @@ object anon {
       __obj.asInstanceOf[NavigationUI]
     }
     
-    extension [Self <: NavigationUI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationUI] (val x: Self) extends AnyVal {
       
       inline def setNavigationUI(value: hide): Self = StObject.set(x, "navigationUI", value.asInstanceOf[js.Any])
     }
@@ -686,7 +691,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: NavigationUI): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
@@ -716,7 +722,8 @@ object anon {
       __obj.asInstanceOf[PartialBreakpoint]
     }
     
-    extension [Self <: PartialBreakpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialBreakpoint] (val x: Self) extends AnyVal {
       
       inline def setHuge(value: Double): Self = StObject.set(x, "huge", value.asInstanceOf[js.Any])
       

@@ -78,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Optionsasyncfalseundefine]
     }
     
-    extension [Self <: Optionsasyncfalseundefine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsasyncfalseundefine] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object anon {
       __obj.asInstanceOf[OptionsasynctruefnTestCas]
     }
     
-    extension [Self <: OptionsasynctruefnTestCas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsasynctruefnTestCas] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -308,7 +310,8 @@ object anon {
       __obj.asInstanceOf[OptionsfnHookFuncundefine]
     }
     
-    extension [Self <: OptionsfnHookFuncundefine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsfnHookFuncundefine] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -423,7 +426,8 @@ object anon {
       __obj.asInstanceOf[OptionsfnSuiteFuncundefin]
     }
     
-    extension [Self <: OptionsfnSuiteFuncundefin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsfnSuiteFuncundefin] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -538,7 +542,8 @@ object anon {
       __obj.asInstanceOf[OptionstitlestringfnSuite]
     }
     
-    extension [Self <: OptionstitlestringfnSuite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionstitlestringfnSuite] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

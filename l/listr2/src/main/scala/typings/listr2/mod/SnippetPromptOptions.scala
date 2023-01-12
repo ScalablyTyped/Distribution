@@ -26,7 +26,8 @@ object SnippetPromptOptions {
     __obj.asInstanceOf[SnippetPromptOptions]
   }
   
-  extension [Self <: SnippetPromptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnippetPromptOptions] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[PartialBasePromptOptionsW]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

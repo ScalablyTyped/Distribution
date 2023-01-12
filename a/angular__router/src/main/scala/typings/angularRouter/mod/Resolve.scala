@@ -16,7 +16,8 @@ object Resolve {
     __obj.asInstanceOf[Resolve[T]]
   }
   
-  extension [Self <: Resolve[?], T](x: Self & Resolve[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resolve[?], T] (val x: Self & Resolve[T]) extends AnyVal {
     
     inline def setResolve(value: (ActivatedRouteSnapshot, RouterStateSnapshot) => Observable_[T] | js.Promise[T] | T): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
   }

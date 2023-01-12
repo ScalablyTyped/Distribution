@@ -15,7 +15,8 @@ object IExtKeyUsage {
     __obj.asInstanceOf[IExtKeyUsage]
   }
   
-  extension [Self <: IExtKeyUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExtKeyUsage] (val x: Self) extends AnyVal {
     
     inline def setKeyPurposes(value: js.Array[String]): Self = StObject.set(x, "keyPurposes", value.asInstanceOf[js.Any])
     

@@ -155,7 +155,8 @@ object PartialServerErrorMapServCREDENTIALTOOOLDLOGINAGAIN {
     __obj.asInstanceOf[PartialServerErrorMapServCREDENTIALTOOOLDLOGINAGAIN]
   }
   
-  extension [Self <: PartialServerErrorMapServCREDENTIALTOOOLDLOGINAGAIN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialServerErrorMapServCREDENTIALTOOOLDLOGINAGAIN] (val x: Self) extends AnyVal {
     
     inline def setADMIN_ONLY_OPERATION(value: AuthErrorCode): Self = StObject.set(x, "ADMIN_ONLY_OPERATION", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object LocalSidValueBlockParams {
     __obj.asInstanceOf[LocalSidValueBlockParams]
   }
   
-  extension [Self <: LocalSidValueBlockParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalSidValueBlockParams] (val x: Self) extends AnyVal {
     
     inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
     

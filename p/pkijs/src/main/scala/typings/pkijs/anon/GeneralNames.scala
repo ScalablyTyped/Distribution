@@ -15,7 +15,8 @@ object GeneralNames {
     __obj.asInstanceOf[GeneralNames]
   }
   
-  extension [Self <: GeneralNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralNames] (val x: Self) extends AnyVal {
     
     inline def setGeneralNames(value: String): Self = StObject.set(x, "generalNames", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AssociateAwsAccountWithPartnerAccountResponse {
     __obj.asInstanceOf[AssociateAwsAccountWithPartnerAccountResponse]
   }
   
-  extension [Self <: AssociateAwsAccountWithPartnerAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateAwsAccountWithPartnerAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: PartnerAccountArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

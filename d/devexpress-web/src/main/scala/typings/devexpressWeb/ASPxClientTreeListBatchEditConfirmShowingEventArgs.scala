@@ -23,7 +23,8 @@ object ASPxClientTreeListBatchEditConfirmShowingEventArgs {
     __obj.asInstanceOf[ASPxClientTreeListBatchEditConfirmShowingEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeListBatchEditConfirmShowingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeListBatchEditConfirmShowingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequestTriggerID(value: String): Self = StObject.set(x, "requestTriggerID", value.asInstanceOf[js.Any])
   }

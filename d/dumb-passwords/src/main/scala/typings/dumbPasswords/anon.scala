@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Frequency]
     }
     
-    extension [Self <: Frequency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Frequency] (val x: Self) extends AnyVal {
       
       inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       

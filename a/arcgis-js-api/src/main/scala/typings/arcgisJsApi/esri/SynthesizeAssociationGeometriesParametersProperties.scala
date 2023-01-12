@@ -75,7 +75,8 @@ object SynthesizeAssociationGeometriesParametersProperties {
     __obj.asInstanceOf[SynthesizeAssociationGeometriesParametersProperties]
   }
   
-  extension [Self <: SynthesizeAssociationGeometriesParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynthesizeAssociationGeometriesParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object CrossFaded {
     __obj.asInstanceOf[CrossFaded[T]]
   }
   
-  extension [Self <: CrossFaded[?], T](x: Self & CrossFaded[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossFaded[?], T] (val x: Self & CrossFaded[T]) extends AnyVal {
     
     inline def setFrom(value: T): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object UnalignedElement {
     __obj.asInstanceOf[UnalignedElement]
   }
   
-  extension [Self <: UnalignedElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnalignedElement] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[Attribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

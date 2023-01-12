@@ -19,7 +19,8 @@ object ReturnTypeSetKeyframeKeyResponse {
     __obj.asInstanceOf[ReturnTypeSetKeyframeKeyResponse]
   }
   
-  extension [Self <: ReturnTypeSetKeyframeKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeSetKeyframeKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[SetKeyframeKeyRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

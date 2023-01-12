@@ -161,7 +161,8 @@ object sapUiCoreUtilExportCellMod {
       __obj.asInstanceOf[ExportCellSettings]
     }
     
-    extension [Self <: ExportCellSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportCellSettings] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String | PropertyBindingInfo): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

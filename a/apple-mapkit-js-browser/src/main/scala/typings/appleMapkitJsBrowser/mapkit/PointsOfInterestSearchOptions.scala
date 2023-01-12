@@ -41,7 +41,8 @@ object PointsOfInterestSearchOptions {
     __obj.asInstanceOf[PointsOfInterestSearchOptions]
   }
   
-  extension [Self <: PointsOfInterestSearchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointsOfInterestSearchOptions] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Coordinate): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

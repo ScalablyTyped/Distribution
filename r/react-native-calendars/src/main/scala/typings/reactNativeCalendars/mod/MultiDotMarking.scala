@@ -23,7 +23,8 @@ object MultiDotMarking {
     __obj.asInstanceOf[MultiDotMarking]
   }
   
-  extension [Self <: MultiDotMarking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiDotMarking] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

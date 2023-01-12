@@ -19,7 +19,8 @@ object FolderAscending {
     __obj.asInstanceOf[FolderAscending]
   }
   
-  extension [Self <: FolderAscending](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderAscending] (val x: Self) extends AnyVal {
     
     inline def setFolderAscending(value: scala.Double): Self = StObject.set(x, "folderAscending", value.asInstanceOf[js.Any])
     

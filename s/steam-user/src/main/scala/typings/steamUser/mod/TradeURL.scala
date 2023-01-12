@@ -17,7 +17,8 @@ object TradeURL {
     __obj.asInstanceOf[TradeURL]
   }
   
-  extension [Self <: TradeURL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TradeURL] (val x: Self) extends AnyVal {
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     

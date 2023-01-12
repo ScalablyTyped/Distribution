@@ -23,7 +23,8 @@ object InitiateMultipartUploadOutput {
     __obj.asInstanceOf[InitiateMultipartUploadOutput]
   }
   
-  extension [Self <: InitiateMultipartUploadOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitiateMultipartUploadOutput] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

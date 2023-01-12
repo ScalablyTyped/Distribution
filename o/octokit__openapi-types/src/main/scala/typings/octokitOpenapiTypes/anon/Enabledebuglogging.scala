@@ -19,7 +19,8 @@ object Enabledebuglogging {
     __obj.asInstanceOf[Enabledebuglogging]
   }
   
-  extension [Self <: Enabledebuglogging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enabledebuglogging] (val x: Self) extends AnyVal {
     
     inline def setEnable_debug_logging(value: Boolean): Self = StObject.set(x, "enable_debug_logging", value.asInstanceOf[js.Any])
     

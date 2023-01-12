@@ -16,7 +16,8 @@ object ReturnedDetails {
     __obj.asInstanceOf[ReturnedDetails]
   }
   
-  extension [Self <: ReturnedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnedDetails] (val x: Self) extends AnyVal {
     
     inline def setSetting(value: typings.chrome.chrome.contentSettings.DefaultContentSettingDetails): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }

@@ -59,7 +59,8 @@ object DateTime {
     __obj.asInstanceOf[DateTime]
   }
   
-  extension [Self <: DateTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
     
     inline def setBoolean(value: scala.Double): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     

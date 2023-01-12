@@ -15,7 +15,8 @@ object RoomAttributes {
     __obj.asInstanceOf[RoomAttributes]
   }
   
-  extension [Self <: RoomAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomAttributes] (val x: Self) extends AnyVal {
     
     inline def setParticipantIdentity(value: String): Self = StObject.set(x, "participantIdentity", value.asInstanceOf[js.Any])
     

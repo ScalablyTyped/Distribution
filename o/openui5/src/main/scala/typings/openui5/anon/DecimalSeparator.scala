@@ -161,7 +161,8 @@ object DecimalSeparator {
     __obj.asInstanceOf[DecimalSeparator]
   }
   
-  extension [Self <: DecimalSeparator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecimalSeparator] (val x: Self) extends AnyVal {
     
     inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
     

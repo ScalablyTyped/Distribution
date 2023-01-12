@@ -15,7 +15,8 @@ object GridSearch {
     __obj.asInstanceOf[GridSearch]
   }
   
-  extension [Self <: GridSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridSearch] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[GridSearchField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

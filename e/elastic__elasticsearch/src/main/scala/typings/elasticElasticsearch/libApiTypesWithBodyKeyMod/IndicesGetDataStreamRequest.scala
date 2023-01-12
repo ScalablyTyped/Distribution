@@ -19,7 +19,8 @@ object IndicesGetDataStreamRequest {
     __obj.asInstanceOf[IndicesGetDataStreamRequest]
   }
   
-  extension [Self <: IndicesGetDataStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesGetDataStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setExpand_wildcards(value: ExpandWildcards): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     

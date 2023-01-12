@@ -25,7 +25,8 @@ object TypeofQUERYINDEX {
     __obj.asInstanceOf[TypeofQUERYINDEX]
   }
   
-  extension [Self <: TypeofQUERYINDEX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofQUERYINDEX] (val x: Self) extends AnyVal {
     
     inline def setIS_READ_ONLY(value: /* true */ Boolean): Self = StObject.set(x, "IS_READ_ONLY", value.asInstanceOf[js.Any])
     

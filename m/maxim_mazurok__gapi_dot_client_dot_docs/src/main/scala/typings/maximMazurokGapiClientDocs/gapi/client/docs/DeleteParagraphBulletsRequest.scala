@@ -16,7 +16,8 @@ object DeleteParagraphBulletsRequest {
     __obj.asInstanceOf[DeleteParagraphBulletsRequest]
   }
   
-  extension [Self <: DeleteParagraphBulletsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteParagraphBulletsRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

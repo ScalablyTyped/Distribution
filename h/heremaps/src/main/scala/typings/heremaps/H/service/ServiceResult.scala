@@ -31,7 +31,8 @@ object ServiceResult {
     __obj.asInstanceOf[ServiceResult]
   }
   
-  extension [Self <: ServiceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceResult] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: Isolines): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
     

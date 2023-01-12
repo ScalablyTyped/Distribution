@@ -17,7 +17,8 @@ object LocationsResource {
     __obj.asInstanceOf[LocationsResource]
   }
   
-  extension [Self <: LocationsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationsResource] (val x: Self) extends AnyVal {
     
     inline def setJobTemplates(value: JobTemplatesResource): Self = StObject.set(x, "jobTemplates", value.asInstanceOf[js.Any])
     

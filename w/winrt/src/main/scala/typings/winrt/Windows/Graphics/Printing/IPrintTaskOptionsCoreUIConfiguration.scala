@@ -16,7 +16,8 @@ object IPrintTaskOptionsCoreUIConfiguration {
     __obj.asInstanceOf[IPrintTaskOptionsCoreUIConfiguration]
   }
   
-  extension [Self <: IPrintTaskOptionsCoreUIConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintTaskOptionsCoreUIConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDisplayedOptions(value: IVector[String]): Self = StObject.set(x, "displayedOptions", value.asInstanceOf[js.Any])
   }

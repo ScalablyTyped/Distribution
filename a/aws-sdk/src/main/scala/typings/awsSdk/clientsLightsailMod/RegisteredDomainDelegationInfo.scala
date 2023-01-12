@@ -20,7 +20,8 @@ object RegisteredDomainDelegationInfo {
     __obj.asInstanceOf[RegisteredDomainDelegationInfo]
   }
   
-  extension [Self <: RegisteredDomainDelegationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisteredDomainDelegationInfo] (val x: Self) extends AnyVal {
     
     inline def setNameServersUpdateState(value: NameServersUpdateState): Self = StObject.set(x, "nameServersUpdateState", value.asInstanceOf[js.Any])
     

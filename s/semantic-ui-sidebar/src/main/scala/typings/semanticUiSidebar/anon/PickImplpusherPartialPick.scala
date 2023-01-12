@@ -25,7 +25,8 @@ object PickImplpusherPartialPick {
     __obj.asInstanceOf[PickImplpusherPartialPick]
   }
   
-  extension [Self <: PickImplpusherPartialPick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplpusherPartialPick] (val x: Self) extends AnyVal {
     
     inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     

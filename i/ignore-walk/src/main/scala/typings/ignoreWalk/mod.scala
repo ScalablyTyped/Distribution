@@ -146,7 +146,8 @@ object mod {
       __obj.asInstanceOf[ConcreteWalkerOptions]
     }
     
-    extension [Self <: ConcreteWalkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcreteWalkerOptions] (val x: Self) extends AnyVal {
       
       inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
       
@@ -183,7 +184,8 @@ object mod {
       __obj.asInstanceOf[WalkerOptions]
     }
     
-    extension [Self <: WalkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkerOptions] (val x: Self) extends AnyVal {
       
       inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
       

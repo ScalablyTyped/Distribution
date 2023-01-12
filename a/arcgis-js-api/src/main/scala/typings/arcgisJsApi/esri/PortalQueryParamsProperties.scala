@@ -89,7 +89,8 @@ object PortalQueryParamsProperties {
     __obj.asInstanceOf[PortalQueryParamsProperties]
   }
   
-  extension [Self <: PortalQueryParamsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalQueryParamsProperties] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object InsertionOrderBudget {
     __obj.asInstanceOf[InsertionOrderBudget]
   }
   
-  extension [Self <: InsertionOrderBudget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertionOrderBudget] (val x: Self) extends AnyVal {
     
     inline def setAutomationType(value: String): Self = StObject.set(x, "automationType", value.asInstanceOf[js.Any])
     

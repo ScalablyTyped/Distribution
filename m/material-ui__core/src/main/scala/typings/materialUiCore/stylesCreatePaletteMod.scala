@@ -68,7 +68,8 @@ object stylesCreatePaletteMod {
       __obj.asInstanceOf[ColorPartial]
     }
     
-    extension [Self <: ColorPartial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPartial] (val x: Self) extends AnyVal {
       
       inline def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object stylesCreatePaletteMod {
       __obj.asInstanceOf[CommonColors]
     }
     
-    extension [Self <: CommonColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonColors] (val x: Self) extends AnyVal {
       
       inline def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
@@ -231,7 +233,8 @@ object stylesCreatePaletteMod {
       __obj.asInstanceOf[PaletteColor]
     }
     
-    extension [Self <: PaletteColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaletteColor] (val x: Self) extends AnyVal {
       
       inline def setContrastText(value: String): Self = StObject.set(x, "contrastText", value.asInstanceOf[js.Any])
       
@@ -302,7 +305,8 @@ object stylesCreatePaletteMod {
       __obj.asInstanceOf[PaletteOptions]
     }
     
-    extension [Self <: PaletteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaletteOptions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: PartialTypeAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -390,7 +394,8 @@ object stylesCreatePaletteMod {
       __obj.asInstanceOf[PartialTypeObject]
     }
     
-    extension [Self <: PartialTypeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTypeObject] (val x: Self) extends AnyVal {
       
       inline def setAction(value: PartialTypeAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -429,7 +434,8 @@ object stylesCreatePaletteMod {
       __obj.asInstanceOf[SimplePaletteColorOptions]
     }
     
-    extension [Self <: SimplePaletteColorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimplePaletteColorOptions] (val x: Self) extends AnyVal {
       
       inline def setContrastText(value: String): Self = StObject.set(x, "contrastText", value.asInstanceOf[js.Any])
       
@@ -490,7 +496,8 @@ object stylesCreatePaletteMod {
       __obj.asInstanceOf[TypeAction]
     }
     
-    extension [Self <: TypeAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeAction] (val x: Self) extends AnyVal {
       
       inline def setActivatedOpacity(value: Double): Self = StObject.set(x, "activatedOpacity", value.asInstanceOf[js.Any])
       
@@ -529,7 +536,8 @@ object stylesCreatePaletteMod {
       __obj.asInstanceOf[TypeBackground]
     }
     
-    extension [Self <: TypeBackground](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeBackground] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -556,7 +564,8 @@ object stylesCreatePaletteMod {
       __obj.asInstanceOf[TypeObject]
     }
     
-    extension [Self <: TypeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeObject] (val x: Self) extends AnyVal {
       
       inline def setAction(value: TypeAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -585,7 +594,8 @@ object stylesCreatePaletteMod {
       __obj.asInstanceOf[TypeText]
     }
     
-    extension [Self <: TypeText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeText] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

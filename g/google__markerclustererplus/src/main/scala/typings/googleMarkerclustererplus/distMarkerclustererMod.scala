@@ -631,7 +631,8 @@ object distMarkerclustererMod {
       __obj.asInstanceOf[ClusterAugmentedMarker]
     }
     
-    extension [Self <: ClusterAugmentedMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClusterAugmentedMarker] (val x: Self) extends AnyVal {
       
       inline def setIsAdded(value: Boolean): Self = StObject.set(x, "isAdded", value.asInstanceOf[js.Any])
       
@@ -821,7 +822,8 @@ object distMarkerclustererMod {
       __obj.asInstanceOf[MarkerClustererOptions]
     }
     
-    extension [Self <: MarkerClustererOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerClustererOptions] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelFn(value: /* text */ String => String): Self = StObject.set(x, "ariaLabelFn", js.Any.fromFunction1(value))
       

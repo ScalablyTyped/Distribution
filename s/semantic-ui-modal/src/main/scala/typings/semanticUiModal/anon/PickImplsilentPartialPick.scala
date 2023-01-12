@@ -77,7 +77,8 @@ object PickImplsilentPartialPick {
     __obj.asInstanceOf[PickImplsilentPartialPick]
   }
   
-  extension [Self <: PickImplsilentPartialPick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplsilentPartialPick] (val x: Self) extends AnyVal {
     
     inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
     

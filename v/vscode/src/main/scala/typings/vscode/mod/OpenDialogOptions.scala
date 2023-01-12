@@ -59,7 +59,8 @@ object OpenDialogOptions {
     __obj.asInstanceOf[OpenDialogOptions]
   }
   
-  extension [Self <: OpenDialogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenDialogOptions] (val x: Self) extends AnyVal {
     
     inline def setCanSelectFiles(value: Boolean): Self = StObject.set(x, "canSelectFiles", value.asInstanceOf[js.Any])
     

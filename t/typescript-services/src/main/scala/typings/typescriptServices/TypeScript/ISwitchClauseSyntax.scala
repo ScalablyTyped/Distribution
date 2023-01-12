@@ -44,7 +44,8 @@ object ISwitchClauseSyntax {
     __obj.asInstanceOf[ISwitchClauseSyntax]
   }
   
-  extension [Self <: ISwitchClauseSyntax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISwitchClauseSyntax] (val x: Self) extends AnyVal {
     
     inline def setIsSwitchClause(value: () => Boolean): Self = StObject.set(x, "isSwitchClause", js.Any.fromFunction0(value))
     

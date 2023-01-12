@@ -40,7 +40,8 @@ object AppsDynamiteSharedTextInput {
     __obj.asInstanceOf[AppsDynamiteSharedTextInput]
   }
   
-  extension [Self <: AppsDynamiteSharedTextInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedTextInput] (val x: Self) extends AnyVal {
     
     inline def setAutoCompleteAction(value: AppsDynamiteSharedAction): Self = StObject.set(x, "autoCompleteAction", value.asInstanceOf[js.Any])
     

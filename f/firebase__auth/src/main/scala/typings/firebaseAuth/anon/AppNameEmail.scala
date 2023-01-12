@@ -21,7 +21,8 @@ object AppNameEmail {
     __obj.asInstanceOf[AppNameEmail]
   }
   
-  extension [Self <: AppNameEmail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppNameEmail] (val x: Self) extends AnyVal {
     
     inline def setAppName(value: typings.firebaseAuth.distCordovaSrcModelAuthMod.AppName): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     

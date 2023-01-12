@@ -22,7 +22,8 @@ object AttrsFusedBatchNormAttrs {
     __obj.asInstanceOf[AttrsFusedBatchNormAttrs]
   }
   
-  extension [Self <: AttrsFusedBatchNormAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsFusedBatchNormAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: FusedBatchNormAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

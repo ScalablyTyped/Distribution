@@ -21,7 +21,8 @@ object DraggableCollectionMoveEvent {
     __obj.asInstanceOf[DraggableCollectionMoveEvent]
   }
   
-  extension [Self <: DraggableCollectionMoveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableCollectionMoveEvent] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: Set[Key]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
   }

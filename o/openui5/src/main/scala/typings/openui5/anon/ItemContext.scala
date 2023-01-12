@@ -29,7 +29,8 @@ object ItemContext {
     __obj.asInstanceOf[ItemContext]
   }
   
-  extension [Self <: ItemContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemContext] (val x: Self) extends AnyVal {
     
     inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     

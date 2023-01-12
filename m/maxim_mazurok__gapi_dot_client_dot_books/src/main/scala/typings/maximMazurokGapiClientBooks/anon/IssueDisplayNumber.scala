@@ -17,7 +17,8 @@ object IssueDisplayNumber {
     __obj.asInstanceOf[IssueDisplayNumber]
   }
   
-  extension [Self <: IssueDisplayNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssueDisplayNumber] (val x: Self) extends AnyVal {
     
     inline def setIssueDisplayNumber(value: String): Self = StObject.set(x, "issueDisplayNumber", value.asInstanceOf[js.Any])
     

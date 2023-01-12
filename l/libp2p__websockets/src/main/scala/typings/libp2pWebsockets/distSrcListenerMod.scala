@@ -41,7 +41,8 @@ object distSrcListenerMod {
       __obj.asInstanceOf[WebSocketListenerInit]
     }
     
-    extension [Self <: WebSocketListenerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebSocketListenerInit] (val x: Self) extends AnyVal {
       
       inline def setServer(
         value: Server[

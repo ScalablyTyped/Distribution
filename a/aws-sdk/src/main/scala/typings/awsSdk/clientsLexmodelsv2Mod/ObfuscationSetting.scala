@@ -18,7 +18,8 @@ object ObfuscationSetting {
     __obj.asInstanceOf[ObfuscationSetting]
   }
   
-  extension [Self <: ObfuscationSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObfuscationSetting] (val x: Self) extends AnyVal {
     
     inline def setObfuscationSettingType(value: ObfuscationSettingType): Self = StObject.set(x, "obfuscationSettingType", value.asInstanceOf[js.Any])
   }

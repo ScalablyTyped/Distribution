@@ -23,7 +23,8 @@ object DescribeStandardsControlsResponse {
     __obj.asInstanceOf[DescribeStandardsControlsResponse]
   }
   
-  extension [Self <: DescribeStandardsControlsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStandardsControlsResponse] (val x: Self) extends AnyVal {
     
     inline def setControls(value: StandardsControls): Self = StObject.set(x, "Controls", value.asInstanceOf[js.Any])
     

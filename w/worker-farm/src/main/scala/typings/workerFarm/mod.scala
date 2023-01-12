@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[FarmOptions]
     }
     
-    extension [Self <: FarmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FarmOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       

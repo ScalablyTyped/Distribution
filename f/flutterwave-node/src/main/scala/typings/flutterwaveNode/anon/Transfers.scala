@@ -17,7 +17,8 @@ object Transfers {
     __obj.asInstanceOf[Transfers]
   }
   
-  extension [Self <: Transfers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transfers] (val x: Self) extends AnyVal {
     
     inline def setPage_info(value: Total): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
     

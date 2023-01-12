@@ -23,7 +23,8 @@ object ReorderReceiptRuleSetRequest {
     __obj.asInstanceOf[ReorderReceiptRuleSetRequest]
   }
   
-  extension [Self <: ReorderReceiptRuleSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReorderReceiptRuleSetRequest] (val x: Self) extends AnyVal {
     
     inline def setRuleNames(value: ReceiptRuleNamesList): Self = StObject.set(x, "RuleNames", value.asInstanceOf[js.Any])
     

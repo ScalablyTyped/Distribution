@@ -67,7 +67,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RequestRetryOptions]
     }
     
-    extension [Self <: RequestRetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestRetryOptions] (val x: Self) extends AnyVal {
       
       inline def setDelayStrategy(value: (/* err */ js.Error, /* response */ IncomingMessage, /* body */ Any) => Double): Self = StObject.set(x, "delayStrategy", js.Any.fromFunction3(value))
       

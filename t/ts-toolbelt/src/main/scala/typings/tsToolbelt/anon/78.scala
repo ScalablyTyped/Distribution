@@ -22,7 +22,8 @@ object `78` {
     __obj.asInstanceOf[`78`[K, A]]
   }
   
-  extension [Self <: `78`[?, ?], K /* <: Key */, A /* <: Any */](x: Self & (`78`[K, A])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `78`[?, ?], K /* <: Key */, A /* <: Any */] (val x: Self & (`78`[K, A])) extends AnyVal {
     
     inline def setExclamationmark(value: `7`[K, A]): Self = StObject.set(x, "!", value.asInstanceOf[js.Any])
     

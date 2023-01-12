@@ -28,7 +28,8 @@ object CompiledResult {
     __obj.asInstanceOf[CompiledResult[ErrorType]]
   }
   
-  extension [Self <: CompiledResult[?], ErrorType](x: Self & CompiledResult[ErrorType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompiledResult[?], ErrorType] (val x: Self & CompiledResult[ErrorType]) extends AnyVal {
     
     inline def setAst(value: ASTElement): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

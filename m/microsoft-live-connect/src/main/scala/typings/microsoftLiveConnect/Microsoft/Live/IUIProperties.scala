@@ -42,7 +42,8 @@ object IUIProperties {
     __obj.asInstanceOf[IUIProperties]
   }
   
-  extension [Self <: IUIProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUIProperties] (val x: Self) extends AnyVal {
     
     inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

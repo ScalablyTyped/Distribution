@@ -19,7 +19,8 @@ object ErrorUndefinedIdNumber {
     __obj.asInstanceOf[ErrorUndefinedIdNumber]
   }
   
-  extension [Self <: ErrorUndefinedIdNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorUndefinedIdNumber] (val x: Self) extends AnyVal {
     
     inline def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

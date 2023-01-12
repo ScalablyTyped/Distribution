@@ -28,7 +28,8 @@ object MarginTopProps {
     __obj.asInstanceOf[MarginTopProps[ThemeType]]
   }
   
-  extension [Self <: MarginTopProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & MarginTopProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarginTopProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & MarginTopProps[ThemeType]) extends AnyVal {
     
     inline def setMarginTop(
       value: ResponsiveValue[

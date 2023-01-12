@@ -100,7 +100,8 @@ object ASPxClientNavBarGroup {
     __obj.asInstanceOf[ASPxClientNavBarGroup]
   }
   
-  extension [Self <: ASPxClientNavBarGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientNavBarGroup] (val x: Self) extends AnyVal {
     
     inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     

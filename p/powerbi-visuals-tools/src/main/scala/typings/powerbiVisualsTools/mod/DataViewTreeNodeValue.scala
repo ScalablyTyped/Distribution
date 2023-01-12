@@ -15,7 +15,8 @@ object DataViewTreeNodeValue {
     __obj.asInstanceOf[DataViewTreeNodeValue]
   }
   
-  extension [Self <: DataViewTreeNodeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewTreeNodeValue] (val x: Self) extends AnyVal {
     
     inline def setValue(value: PrimitiveValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

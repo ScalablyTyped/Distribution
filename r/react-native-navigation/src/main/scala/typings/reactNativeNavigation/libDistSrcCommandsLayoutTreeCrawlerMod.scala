@@ -43,7 +43,8 @@ object libDistSrcCommandsLayoutTreeCrawlerMod {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object libDistSrcCommandsLayoutTreeCrawlerMod {
       __obj.asInstanceOf[LayoutNode]
     }
     
-    extension [Self <: LayoutNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[LayoutNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object AssignedInventorySource {
     __obj.asInstanceOf[AssignedInventorySource]
   }
   
-  extension [Self <: AssignedInventorySource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignedInventorySource] (val x: Self) extends AnyVal {
     
     inline def setAssignedInventorySourceId(value: String): Self = StObject.set(x, "assignedInventorySourceId", value.asInstanceOf[js.Any])
     

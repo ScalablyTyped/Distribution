@@ -49,7 +49,8 @@ object examplesJsmMiscConvexObjectBreakerMod {
       __obj.asInstanceOf[CutByPlaneOutput]
     }
     
-    extension [Self <: CutByPlaneOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CutByPlaneOutput] (val x: Self) extends AnyVal {
       
       inline def setObject1(value: Object3D[Event]): Self = StObject.set(x, "object1", value.asInstanceOf[js.Any])
       

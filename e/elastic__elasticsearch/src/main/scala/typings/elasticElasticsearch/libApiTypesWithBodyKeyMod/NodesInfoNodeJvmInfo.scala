@@ -52,7 +52,8 @@ object NodesInfoNodeJvmInfo {
     __obj.asInstanceOf[NodesInfoNodeJvmInfo]
   }
   
-  extension [Self <: NodesInfoNodeJvmInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeJvmInfo] (val x: Self) extends AnyVal {
     
     inline def setBundled_jdk(value: Boolean): Self = StObject.set(x, "bundled_jdk", value.asInstanceOf[js.Any])
     

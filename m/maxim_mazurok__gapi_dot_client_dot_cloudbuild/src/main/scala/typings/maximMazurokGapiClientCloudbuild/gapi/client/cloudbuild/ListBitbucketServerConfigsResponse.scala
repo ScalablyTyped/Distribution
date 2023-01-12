@@ -19,7 +19,8 @@ object ListBitbucketServerConfigsResponse {
     __obj.asInstanceOf[ListBitbucketServerConfigsResponse]
   }
   
-  extension [Self <: ListBitbucketServerConfigsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBitbucketServerConfigsResponse] (val x: Self) extends AnyVal {
     
     inline def setBitbucketServerConfigs(value: js.Array[BitbucketServerConfig]): Self = StObject.set(x, "bitbucketServerConfigs", value.asInstanceOf[js.Any])
     

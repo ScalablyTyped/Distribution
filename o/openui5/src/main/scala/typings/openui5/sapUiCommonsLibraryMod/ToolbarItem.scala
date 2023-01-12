@@ -15,7 +15,8 @@ object ToolbarItem {
     __obj.asInstanceOf[ToolbarItem]
   }
   
-  extension [Self <: ToolbarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolbarItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_commons_ToolbarItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_commons_ToolbarItem", value.asInstanceOf[js.Any])
   }

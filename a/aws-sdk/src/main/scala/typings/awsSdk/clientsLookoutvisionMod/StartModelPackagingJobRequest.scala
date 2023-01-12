@@ -43,7 +43,8 @@ object StartModelPackagingJobRequest {
     __obj.asInstanceOf[StartModelPackagingJobRequest]
   }
   
-  extension [Self <: StartModelPackagingJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartModelPackagingJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

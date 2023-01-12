@@ -23,7 +23,8 @@ object TextEditOptions {
     __obj.asInstanceOf[TextEditOptions]
   }
   
-  extension [Self <: TextEditOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEditOptions] (val x: Self) extends AnyVal {
     
     inline def setNormalizeLineEndings(value: Boolean): Self = StObject.set(x, "normalizeLineEndings", value.asInstanceOf[js.Any])
     

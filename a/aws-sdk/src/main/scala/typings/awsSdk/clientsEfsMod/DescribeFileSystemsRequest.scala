@@ -33,7 +33,8 @@ object DescribeFileSystemsRequest {
     __obj.asInstanceOf[DescribeFileSystemsRequest]
   }
   
-  extension [Self <: DescribeFileSystemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFileSystemsRequest] (val x: Self) extends AnyVal {
     
     inline def setCreationToken(value: CreationToken): Self = StObject.set(x, "CreationToken", value.asInstanceOf[js.Any])
     

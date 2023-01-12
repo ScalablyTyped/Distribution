@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2Trigger {
     __obj.asInstanceOf[GooglePrivacyDlpV2Trigger]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Trigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Trigger] (val x: Self) extends AnyVal {
     
     inline def setManual(value: Any): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AdUnit {
     __obj.asInstanceOf[AdUnit]
   }
   
-  extension [Self <: AdUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdUnit] (val x: Self) extends AnyVal {
     
     inline def setContentAdsSettings(value: ContentAdsSettings): Self = StObject.set(x, "contentAdsSettings", value.asInstanceOf[js.Any])
     

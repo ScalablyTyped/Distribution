@@ -23,7 +23,8 @@ object ResourceStatus {
     __obj.asInstanceOf[ResourceStatus]
   }
   
-  extension [Self <: ResourceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceStatus] (val x: Self) extends AnyVal {
     
     inline def setEc2(value: Status): Self = StObject.set(x, "ec2", value.asInstanceOf[js.Any])
     

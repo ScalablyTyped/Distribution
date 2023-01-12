@@ -70,7 +70,8 @@ object CustomComponents {
     __obj.asInstanceOf[CustomComponents]
   }
   
-  extension [Self <: CustomComponents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomComponents] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: /* props */ CaptionProps => Element | Null): Self = StObject.set(x, "Caption", js.Any.fromFunction1(value))
     

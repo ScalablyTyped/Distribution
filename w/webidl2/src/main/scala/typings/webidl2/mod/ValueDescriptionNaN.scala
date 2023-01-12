@@ -21,7 +21,8 @@ object ValueDescriptionNaN {
     __obj.asInstanceOf[ValueDescriptionNaN]
   }
   
-  extension [Self <: ValueDescriptionNaN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueDescriptionNaN] (val x: Self) extends AnyVal {
     
     inline def setType(value: NaN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

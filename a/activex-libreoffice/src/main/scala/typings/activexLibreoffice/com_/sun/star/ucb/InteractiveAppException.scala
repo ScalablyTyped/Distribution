@@ -25,7 +25,8 @@ object InteractiveAppException {
     __obj.asInstanceOf[InteractiveAppException]
   }
   
-  extension [Self <: InteractiveAppException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveAppException] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
   }

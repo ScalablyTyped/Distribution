@@ -55,7 +55,8 @@ object ShadowCastVisibleElements {
     __obj.asInstanceOf[ShadowCastVisibleElements]
   }
   
-  extension [Self <: ShadowCastVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowCastVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setColorPicker(value: Boolean): Self = StObject.set(x, "colorPicker", value.asInstanceOf[js.Any])
     

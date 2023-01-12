@@ -19,7 +19,8 @@ object CredentialChangeTimes {
     __obj.asInstanceOf[CredentialChangeTimes]
   }
   
-  extension [Self <: CredentialChangeTimes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialChangeTimes] (val x: Self) extends AnyVal {
     
     inline def setTimestampLastEmailChange(value: js.Date): Self = StObject.set(x, "timestampLastEmailChange", value.asInstanceOf[js.Any])
     

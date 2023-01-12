@@ -41,7 +41,8 @@ object DataTableCustomSelectionProps {
     __obj.asInstanceOf[DataTableCustomSelectionProps[R]]
   }
   
-  extension [Self <: DataTableCustomSelectionProps[?], R /* <: DataTableRow[String] */](x: Self & DataTableCustomSelectionProps[R]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableCustomSelectionProps[?], R /* <: DataTableRow[String] */] (val x: Self & DataTableCustomSelectionProps[R]) extends AnyVal {
     
     inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
     

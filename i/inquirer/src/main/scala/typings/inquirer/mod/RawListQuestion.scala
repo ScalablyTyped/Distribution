@@ -23,7 +23,8 @@ object RawListQuestion {
     __obj.asInstanceOf[RawListQuestion[T]]
   }
   
-  extension [Self <: RawListQuestion[?], T /* <: Answers */](x: Self & RawListQuestion[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawListQuestion[?], T /* <: Answers */] (val x: Self & RawListQuestion[T]) extends AnyVal {
     
     inline def setType(value: rawlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

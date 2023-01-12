@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Associative]
     }
     
-    extension [Self <: Associative](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Associative] (val x: Self) extends AnyVal {
       
       inline def setAssociative(value: Boolean): Self = StObject.set(x, "associative", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Assuming]
     }
     
-    extension [Self <: Assuming](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Assuming] (val x: Self) extends AnyVal {
       
       inline def setAssuming(value: SimplifyContext): Self = StObject.set(x, "assuming", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object anon {
       __obj.asInstanceOf[Base]
     }
     
-    extension [Self <: Base](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
       
       inline def setBase(value: Dimensions): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -145,7 +148,8 @@ object anon {
       __obj.asInstanceOf[Coefficients]
     }
     
-    extension [Self <: Coefficients](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coefficients] (val x: Self) extends AnyVal {
       
       inline def setCoefficients(value: js.Array[MathType]): Self = StObject.set(x, "coefficients", value.asInstanceOf[js.Any])
       
@@ -172,7 +176,8 @@ object anon {
       __obj.asInstanceOf[Dimensions]
     }
     
-    extension [Self <: Dimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: js.Array[Double]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
@@ -201,7 +206,8 @@ object anon {
       __obj.asInstanceOf[ImposeContext]
     }
     
-    extension [Self <: ImposeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImposeContext] (val x: Self) extends AnyVal {
       
       inline def setAssuming(value: SimplifyContext): Self = StObject.set(x, "assuming", value.asInstanceOf[js.Any])
       
@@ -232,7 +238,8 @@ object anon {
       __obj.asInstanceOf[Node[TNode]]
     }
     
-    extension [Self <: Node[?], TNode /* <: MathNode */](x: Self & Node[TNode]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node[?], TNode /* <: MathNode */] (val x: Self & Node[TNode]) extends AnyVal {
       
       inline def setNode(value: TNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -251,7 +258,8 @@ object anon {
       __obj.asInstanceOf[NodeTNode[TNode]]
     }
     
-    extension [Self <: NodeTNode[?], TNode /* <: MathNode */](x: Self & NodeTNode[TNode]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeTNode[?], TNode /* <: MathNode */] (val x: Self & NodeTNode[TNode]) extends AnyVal {
       
       inline def setNode(value: TNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
@@ -268,7 +276,8 @@ object anon {
       __obj.asInstanceOf[Simplify]
     }
     
-    extension [Self <: Simplify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Simplify] (val x: Self) extends AnyVal {
       
       inline def setSimplify(value: Boolean): Self = StObject.set(x, "simplify", value.asInstanceOf[js.Any])
     }
@@ -287,7 +296,8 @@ object anon {
       __obj.asInstanceOf[Values]
     }
     
-    extension [Self <: Values](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Values] (val x: Self) extends AnyVal {
       
       inline def setValues(value: MathCollection): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       

@@ -107,7 +107,8 @@ object libEsmComponentsToastToastMod {
       __obj.asInstanceOf[ToastProps]
     }
     
-    extension [Self <: ToastProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ActionProps & LinkProps): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

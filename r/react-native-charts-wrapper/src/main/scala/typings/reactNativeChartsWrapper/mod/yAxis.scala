@@ -32,7 +32,8 @@ object yAxis {
     __obj.asInstanceOf[yAxis]
   }
   
-  extension [Self <: yAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: yAxis] (val x: Self) extends AnyVal {
     
     inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     

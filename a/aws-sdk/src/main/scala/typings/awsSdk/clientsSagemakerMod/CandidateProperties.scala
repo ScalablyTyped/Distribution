@@ -23,7 +23,8 @@ object CandidateProperties {
     __obj.asInstanceOf[CandidateProperties]
   }
   
-  extension [Self <: CandidateProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CandidateProperties] (val x: Self) extends AnyVal {
     
     inline def setCandidateArtifactLocations(value: CandidateArtifactLocations): Self = StObject.set(x, "CandidateArtifactLocations", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object GeoboundingBox {
     __obj.asInstanceOf[GeoboundingBox]
   }
   
-  extension [Self <: GeoboundingBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoboundingBox] (val x: Self) extends AnyVal {
     
     inline def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
     

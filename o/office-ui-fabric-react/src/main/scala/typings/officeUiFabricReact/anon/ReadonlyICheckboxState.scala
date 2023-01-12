@@ -18,7 +18,8 @@ object ReadonlyICheckboxState {
     __obj.asInstanceOf[ReadonlyICheckboxState]
   }
   
-  extension [Self <: ReadonlyICheckboxState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyICheckboxState] (val x: Self) extends AnyVal {
     
     inline def setIsChecked(value: Boolean): Self = StObject.set(x, "isChecked", value.asInstanceOf[js.Any])
     

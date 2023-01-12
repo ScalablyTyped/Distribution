@@ -53,7 +53,8 @@ object CaptionSourceSettings {
     __obj.asInstanceOf[CaptionSourceSettings]
   }
   
-  extension [Self <: CaptionSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setAncillarySourceSettings(value: AncillarySourceSettings): Self = StObject.set(x, "AncillarySourceSettings", value.asInstanceOf[js.Any])
     

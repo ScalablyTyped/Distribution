@@ -37,7 +37,8 @@ object distLibFormattersIacOutputTextFormattersMod {
       __obj.asInstanceOf[FormatTestDataParams]
     }
     
-    extension [Self <: FormatTestDataParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatTestDataParams] (val x: Self) extends AnyVal {
       
       inline def setIacOutputMeta(value: IacOutputMeta): Self = StObject.set(x, "iacOutputMeta", value.asInstanceOf[js.Any])
       

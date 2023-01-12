@@ -19,7 +19,8 @@ object GoogleCloudRunV2VpcAccess {
     __obj.asInstanceOf[GoogleCloudRunV2VpcAccess]
   }
   
-  extension [Self <: GoogleCloudRunV2VpcAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2VpcAccess] (val x: Self) extends AnyVal {
     
     inline def setConnector(value: String): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
     

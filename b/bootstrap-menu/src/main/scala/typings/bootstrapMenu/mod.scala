@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[BootstrapMenu]
     }
     
-    extension [Self <: BootstrapMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapMenu] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -103,7 +104,8 @@ object mod {
       __obj.asInstanceOf[BootstrapMenuActions]
     }
     
-    extension [Self <: BootstrapMenuActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapMenuActions] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: String | js.Object | (js.Function0[String | js.Object])): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
@@ -207,7 +209,8 @@ object mod {
       __obj.asInstanceOf[BootstrapMenuOptions]
     }
     
-    extension [Self <: BootstrapMenuOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapMenuOptions] (val x: Self) extends AnyVal {
       
       inline def setActions(value: StringDictionary[BootstrapMenuActions] | js.Array[BootstrapMenuActions]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

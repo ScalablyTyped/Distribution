@@ -88,7 +88,8 @@ object ConfigRuleEvaluationStatus {
     __obj.asInstanceOf[ConfigRuleEvaluationStatus]
   }
   
-  extension [Self <: ConfigRuleEvaluationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigRuleEvaluationStatus] (val x: Self) extends AnyVal {
     
     inline def setConfigRuleArn(value: String): Self = StObject.set(x, "ConfigRuleArn", value.asInstanceOf[js.Any])
     

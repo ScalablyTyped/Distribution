@@ -52,7 +52,8 @@ object ProofreadingResult {
     __obj.asInstanceOf[ProofreadingResult]
   }
   
-  extension [Self <: ProofreadingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProofreadingResult] (val x: Self) extends AnyVal {
     
     inline def setADocumentIdentifier(value: String): Self = StObject.set(x, "aDocumentIdentifier", value.asInstanceOf[js.Any])
     

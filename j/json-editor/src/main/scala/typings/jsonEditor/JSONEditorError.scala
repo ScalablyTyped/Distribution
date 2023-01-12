@@ -19,7 +19,8 @@ object JSONEditorError {
     __obj.asInstanceOf[JSONEditorError]
   }
   
-  extension [Self <: JSONEditorError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorError] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

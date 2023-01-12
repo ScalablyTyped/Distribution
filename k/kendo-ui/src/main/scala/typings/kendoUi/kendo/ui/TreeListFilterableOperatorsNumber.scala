@@ -30,7 +30,8 @@ object TreeListFilterableOperatorsNumber {
     __obj.asInstanceOf[TreeListFilterableOperatorsNumber]
   }
   
-  extension [Self <: TreeListFilterableOperatorsNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListFilterableOperatorsNumber] (val x: Self) extends AnyVal {
     
     inline def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     

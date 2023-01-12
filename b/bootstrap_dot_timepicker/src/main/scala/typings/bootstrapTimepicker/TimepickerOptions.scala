@@ -45,7 +45,8 @@ object TimepickerOptions {
     __obj.asInstanceOf[TimepickerOptions]
   }
   
-  extension [Self <: TimepickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimepickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAppendWidgetTo(value: String): Self = StObject.set(x, "appendWidgetTo", value.asInstanceOf[js.Any])
     

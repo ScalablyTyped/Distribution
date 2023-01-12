@@ -18,7 +18,8 @@ object Struct {
     __obj.asInstanceOf[Struct]
   }
   
-  extension [Self <: Struct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Struct] (val x: Self) extends AnyVal {
     
     inline def setFields(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.script.gapi.client.script.Value} */ js.Any

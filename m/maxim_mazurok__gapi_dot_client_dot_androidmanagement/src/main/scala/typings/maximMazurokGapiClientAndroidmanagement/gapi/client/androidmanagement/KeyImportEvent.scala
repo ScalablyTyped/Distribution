@@ -22,7 +22,8 @@ object KeyImportEvent {
     __obj.asInstanceOf[KeyImportEvent]
   }
   
-  extension [Self <: KeyImportEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyImportEvent] (val x: Self) extends AnyVal {
     
     inline def setApplicationUid(value: Double): Self = StObject.set(x, "applicationUid", value.asInstanceOf[js.Any])
     

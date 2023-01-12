@@ -378,7 +378,8 @@ object GenericAuthErrorParams {
     __obj.asInstanceOf[GenericAuthErrorParams]
   }
   
-  extension [Self <: GenericAuthErrorParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericAuthErrorParams] (val x: Self) extends AnyVal {
     
     inline def `setAccount-exists-with-different-credential`(value: Message): Self = StObject.set(x, "account-exists-with-different-credential", value.asInstanceOf[js.Any])
     

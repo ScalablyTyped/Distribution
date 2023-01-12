@@ -16,7 +16,8 @@ object TargetPoolsRemoveInstanceRequest {
     __obj.asInstanceOf[TargetPoolsRemoveInstanceRequest]
   }
   
-  extension [Self <: TargetPoolsRemoveInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetPoolsRemoveInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: js.Array[InstanceReference]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PickToastPropsdurationpos {
     __obj.asInstanceOf[PickToastPropsdurationpos]
   }
   
-  extension [Self <: PickToastPropsdurationpos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickToastPropsdurationpos] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

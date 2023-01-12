@@ -89,7 +89,8 @@ object distTypesNodeHttp2HandlerMod {
       __obj.asInstanceOf[NodeHttp2HandlerOptions]
     }
     
-    extension [Self <: NodeHttp2HandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeHttp2HandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableConcurrentStreams(value: Boolean): Self = StObject.set(x, "disableConcurrentStreams", value.asInstanceOf[js.Any])
       

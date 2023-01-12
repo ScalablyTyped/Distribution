@@ -508,7 +508,8 @@ object FormMessagePropsrefRefHTM {
     __obj.asInstanceOf[FormMessagePropsrefRefHTM]
   }
   
-  extension [Self <: FormMessagePropsrefRefHTM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormMessagePropsrefRefHTM] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

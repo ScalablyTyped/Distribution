@@ -20,7 +20,8 @@ object EncryptionAtRest {
     __obj.asInstanceOf[EncryptionAtRest]
   }
   
-  extension [Self <: EncryptionAtRest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptionAtRest] (val x: Self) extends AnyVal {
     
     inline def setDataVolumeKMSKeyId(value: string): Self = StObject.set(x, "DataVolumeKMSKeyId", value.asInstanceOf[js.Any])
   }

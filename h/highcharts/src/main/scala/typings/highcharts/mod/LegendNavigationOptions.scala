@@ -57,7 +57,8 @@ object LegendNavigationOptions {
     __obj.asInstanceOf[LegendNavigationOptions]
   }
   
-  extension [Self <: LegendNavigationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendNavigationOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
     

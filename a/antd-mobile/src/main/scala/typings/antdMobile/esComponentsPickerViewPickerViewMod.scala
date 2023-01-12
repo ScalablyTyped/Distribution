@@ -71,7 +71,8 @@ object esComponentsPickerViewPickerViewMod {
       __obj.asInstanceOf[PickerColumnItem]
     }
     
-    extension [Self <: PickerColumnItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerColumnItem] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object esComponentsPickerViewPickerViewMod {
       __obj.asInstanceOf[PickerValueExtend]
     }
     
-    extension [Self <: PickerValueExtend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerValueExtend] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[js.Array[PickerColumnItem]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -382,7 +384,8 @@ object esComponentsPickerViewPickerViewMod {
       __obj.asInstanceOf[PickerViewProps]
     }
     
-    extension [Self <: PickerViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerViewProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

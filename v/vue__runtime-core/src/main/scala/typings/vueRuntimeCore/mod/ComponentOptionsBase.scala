@@ -66,7 +66,8 @@ object ComponentOptionsBase {
     __obj.asInstanceOf[ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II]]
   }
   
-  extension [Self <: ComponentOptionsBase[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults, I /* <: ComponentInjectOptions */, II /* <: String */](x: Self & (ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentOptionsBase[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults, I /* <: ComponentInjectOptions */, II /* <: String */] (val x: Self & (ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II])) extends AnyVal {
     
     inline def setCall(value: js.ThisFunction1[/* this */ Any, /* repeated */ Any, scala.Nothing]): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     

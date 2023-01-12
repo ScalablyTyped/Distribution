@@ -22,7 +22,8 @@ object RenameOptions {
     __obj.asInstanceOf[RenameOptions]
   }
   
-  extension [Self <: RenameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameOptions] (val x: Self) extends AnyVal {
     
     inline def setPrepareProvider(value: Boolean): Self = StObject.set(x, "prepareProvider", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object SurvivalGameInfo {
     __obj.asInstanceOf[SurvivalGameInfo]
   }
   
-  extension [Self <: SurvivalGameInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurvivalGameInfo] (val x: Self) extends AnyVal {
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

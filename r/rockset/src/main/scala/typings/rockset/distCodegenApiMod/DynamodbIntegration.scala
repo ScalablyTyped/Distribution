@@ -27,7 +27,8 @@ object DynamodbIntegration {
     __obj.asInstanceOf[DynamodbIntegration]
   }
   
-  extension [Self <: DynamodbIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamodbIntegration] (val x: Self) extends AnyVal {
     
     inline def setAws_access_key(value: AwsAccessKey): Self = StObject.set(x, "aws_access_key", value.asInstanceOf[js.Any])
     

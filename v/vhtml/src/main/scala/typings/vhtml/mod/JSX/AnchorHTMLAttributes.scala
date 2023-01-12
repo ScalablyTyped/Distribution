@@ -33,7 +33,8 @@ object AnchorHTMLAttributes {
     __obj.asInstanceOf[AnchorHTMLAttributes]
   }
   
-  extension [Self <: AnchorHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnchorHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     

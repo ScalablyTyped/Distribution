@@ -35,7 +35,8 @@ object ModuleCoverage {
     __obj.asInstanceOf[ModuleCoverage]
   }
   
-  extension [Self <: ModuleCoverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleCoverage] (val x: Self) extends AnyVal {
     
     inline def setBlockCount(value: Double): Self = StObject.set(x, "blockCount", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object QueryOutput {
     __obj.asInstanceOf[QueryOutput]
   }
   
-  extension [Self <: QueryOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOutput] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeStateMachineInput {
     __obj.asInstanceOf[DescribeStateMachineInput]
   }
   
-  extension [Self <: DescribeStateMachineInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStateMachineInput] (val x: Self) extends AnyVal {
     
     inline def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
   }

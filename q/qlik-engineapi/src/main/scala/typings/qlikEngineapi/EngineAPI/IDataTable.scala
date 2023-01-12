@@ -27,7 +27,8 @@ object IDataTable {
     __obj.asInstanceOf[IDataTable]
   }
   
-  extension [Self <: IDataTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataTable] (val x: Self) extends AnyVal {
     
     inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     

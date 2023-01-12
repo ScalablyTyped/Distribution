@@ -38,7 +38,8 @@ object InputDeviceNetworkSettings {
     __obj.asInstanceOf[InputDeviceNetworkSettings]
   }
   
-  extension [Self <: InputDeviceNetworkSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDeviceNetworkSettings] (val x: Self) extends AnyVal {
     
     inline def setDnsAddresses(value: listOfString): Self = StObject.set(x, "DnsAddresses", value.asInstanceOf[js.Any])
     

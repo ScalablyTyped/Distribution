@@ -17,7 +17,8 @@ object TreeListColumnFilterable {
     __obj.asInstanceOf[TreeListColumnFilterable]
   }
   
-  extension [Self <: TreeListColumnFilterable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListColumnFilterable] (val x: Self) extends AnyVal {
     
     inline def setCell(value: TreeListColumnFilterableCell): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

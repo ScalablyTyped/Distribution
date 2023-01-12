@@ -19,7 +19,8 @@ object NetworkEndpointGroupsListEndpointsRequest {
     __obj.asInstanceOf[NetworkEndpointGroupsListEndpointsRequest]
   }
   
-  extension [Self <: NetworkEndpointGroupsListEndpointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkEndpointGroupsListEndpointsRequest] (val x: Self) extends AnyVal {
     
     inline def setHealthStatus(value: String): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
     

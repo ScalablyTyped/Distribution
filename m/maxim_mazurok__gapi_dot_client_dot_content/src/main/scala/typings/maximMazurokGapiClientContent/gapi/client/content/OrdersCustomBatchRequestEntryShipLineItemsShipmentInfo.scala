@@ -22,7 +22,8 @@ object OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo {
     __obj.asInstanceOf[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]
   }
   
-  extension [Self <: OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo] (val x: Self) extends AnyVal {
     
     inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     

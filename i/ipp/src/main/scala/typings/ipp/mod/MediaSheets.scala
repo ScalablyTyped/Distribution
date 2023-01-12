@@ -21,7 +21,8 @@ object MediaSheets {
     __obj.asInstanceOf[MediaSheets]
   }
   
-  extension [Self <: MediaSheets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaSheets] (val x: Self) extends AnyVal {
     
     inline def setBlank(value: Double): Self = StObject.set(x, "blank", value.asInstanceOf[js.Any])
     

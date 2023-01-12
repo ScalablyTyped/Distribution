@@ -20,7 +20,8 @@ object GoogleCloudDatalabelingV1beta1ObjectTrackingFrame {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ObjectTrackingFrame]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1ObjectTrackingFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ObjectTrackingFrame] (val x: Self) extends AnyVal {
     
     inline def setBoundingPoly(value: GoogleCloudDatalabelingV1beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     

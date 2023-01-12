@@ -25,7 +25,8 @@ object PlacementAssignment {
     __obj.asInstanceOf[PlacementAssignment]
   }
   
-  extension [Self <: PlacementAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementAssignment] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

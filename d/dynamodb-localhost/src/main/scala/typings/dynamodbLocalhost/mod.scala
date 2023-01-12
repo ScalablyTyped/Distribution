@@ -104,7 +104,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCors(value: String): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
       

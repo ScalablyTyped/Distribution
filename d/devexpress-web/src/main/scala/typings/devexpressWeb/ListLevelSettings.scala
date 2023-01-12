@@ -95,7 +95,8 @@ object ListLevelSettings {
     __obj.asInstanceOf[ListLevelSettings]
   }
   
-  extension [Self <: ListLevelSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLevelSettings] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: ListLevelNumberAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

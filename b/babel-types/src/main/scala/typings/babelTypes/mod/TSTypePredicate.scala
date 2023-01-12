@@ -25,7 +25,8 @@ object TSTypePredicate {
   @js.native
   def apply(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation): TSTypePredicate = js.native
   
-  extension [Self <: TSTypePredicate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypePredicate] (val x: Self) extends AnyVal {
     
     inline def setParameterName(value: Identifier_ | TSThisType): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     

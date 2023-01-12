@@ -18,7 +18,8 @@ object ConditionalFormattingBaseRule {
     __obj.asInstanceOf[ConditionalFormattingBaseRule]
   }
   
-  extension [Self <: ConditionalFormattingBaseRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalFormattingBaseRule] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

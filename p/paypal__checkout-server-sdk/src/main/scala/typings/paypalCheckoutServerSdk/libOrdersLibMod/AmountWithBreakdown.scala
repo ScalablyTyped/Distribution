@@ -20,7 +20,8 @@ object AmountWithBreakdown {
     __obj.asInstanceOf[AmountWithBreakdown]
   }
   
-  extension [Self <: AmountWithBreakdown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmountWithBreakdown] (val x: Self) extends AnyVal {
     
     inline def setBreakdown(value: AmountBreakdown): Self = StObject.set(x, "breakdown", value.asInstanceOf[js.Any])
     

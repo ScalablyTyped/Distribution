@@ -19,7 +19,8 @@ object Lexicon {
     __obj.asInstanceOf[Lexicon]
   }
   
-  extension [Self <: Lexicon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lexicon] (val x: Self) extends AnyVal {
     
     inline def setDefaultCategory(value: String): Self = StObject.set(x, "defaultCategory", value.asInstanceOf[js.Any])
     

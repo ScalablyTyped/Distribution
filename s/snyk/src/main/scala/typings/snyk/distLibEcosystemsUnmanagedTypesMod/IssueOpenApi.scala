@@ -21,7 +21,8 @@ object IssueOpenApi {
     __obj.asInstanceOf[IssueOpenApi]
   }
   
-  extension [Self <: IssueOpenApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssueOpenApi] (val x: Self) extends AnyVal {
     
     inline def setFix_info(value: FixInfoOpenApi): Self = StObject.set(x, "fix_info", value.asInstanceOf[js.Any])
     

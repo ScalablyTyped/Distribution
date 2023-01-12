@@ -36,7 +36,8 @@ object AttributedNetworkUsage {
     __obj.asInstanceOf[AttributedNetworkUsage]
   }
   
-  extension [Self <: AttributedNetworkUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributedNetworkUsage] (val x: Self) extends AnyVal {
     
     inline def setAttributionId(value: String): Self = StObject.set(x, "attributionId", value.asInstanceOf[js.Any])
     

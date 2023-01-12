@@ -31,7 +31,8 @@ object ComputeMessageStatsResponse {
     __obj.asInstanceOf[ComputeMessageStatsResponse]
   }
   
-  extension [Self <: ComputeMessageStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeMessageStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setMessageBytes(value: String): Self = StObject.set(x, "messageBytes", value.asInstanceOf[js.Any])
     

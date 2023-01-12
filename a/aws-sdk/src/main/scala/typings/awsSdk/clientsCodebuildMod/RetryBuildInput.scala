@@ -23,7 +23,8 @@ object RetryBuildInput {
     __obj.asInstanceOf[RetryBuildInput]
   }
   
-  extension [Self <: RetryBuildInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryBuildInput] (val x: Self) extends AnyVal {
     
     inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

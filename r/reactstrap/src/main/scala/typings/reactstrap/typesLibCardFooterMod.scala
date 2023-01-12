@@ -35,7 +35,8 @@ object typesLibCardFooterMod {
       __obj.asInstanceOf[CardFooterProps]
     }
     
-    extension [Self <: CardFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardFooterProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

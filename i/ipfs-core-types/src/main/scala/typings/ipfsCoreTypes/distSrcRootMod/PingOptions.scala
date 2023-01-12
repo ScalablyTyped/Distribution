@@ -18,7 +18,8 @@ object PingOptions {
     __obj.asInstanceOf[PingOptions]
   }
   
-  extension [Self <: PingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PingOptions] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object CreateRecommenderRequest {
     __obj.asInstanceOf[CreateRecommenderRequest]
   }
   
-  extension [Self <: CreateRecommenderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRecommenderRequest] (val x: Self) extends AnyVal {
     
     inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
     

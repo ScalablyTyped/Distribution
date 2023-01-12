@@ -23,7 +23,8 @@ object PNotifyLabel {
     __obj.asInstanceOf[PNotifyLabel]
   }
   
-  extension [Self <: PNotifyLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PNotifyLabel] (val x: Self) extends AnyVal {
     
     inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

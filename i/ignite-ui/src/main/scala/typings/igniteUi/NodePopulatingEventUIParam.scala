@@ -33,7 +33,8 @@ object NodePopulatingEventUIParam {
     __obj.asInstanceOf[NodePopulatingEventUIParam]
   }
   
-  extension [Self <: NodePopulatingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodePopulatingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setBinding(value: Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     

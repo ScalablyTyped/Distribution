@@ -29,7 +29,8 @@ object Pure {
     __obj.asInstanceOf[Pure[T]]
   }
   
-  extension [Self <: Pure[?], T](x: Self & Pure[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pure[?], T] (val x: Self & Pure[T]) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

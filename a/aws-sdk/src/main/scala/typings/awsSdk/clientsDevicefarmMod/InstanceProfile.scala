@@ -43,7 +43,8 @@ object InstanceProfile {
     __obj.asInstanceOf[InstanceProfile]
   }
   
-  extension [Self <: InstanceProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceProfile] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

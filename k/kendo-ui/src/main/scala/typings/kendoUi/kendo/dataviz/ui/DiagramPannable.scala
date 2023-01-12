@@ -15,7 +15,8 @@ object DiagramPannable {
     __obj.asInstanceOf[DiagramPannable]
   }
   
-  extension [Self <: DiagramPannable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramPannable] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

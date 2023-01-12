@@ -35,7 +35,8 @@ object SsoSessionFoundResult {
     __obj.asInstanceOf[SsoSessionFoundResult]
   }
   
-  extension [Self <: SsoSessionFoundResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsoSessionFoundResult] (val x: Self) extends AnyVal {
     
     inline def setLastUsedClientID(value: String): Self = StObject.set(x, "lastUsedClientID", value.asInstanceOf[js.Any])
     

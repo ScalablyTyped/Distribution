@@ -20,7 +20,8 @@ object AccessDescriptionParameters {
     __obj.asInstanceOf[AccessDescriptionParameters]
   }
   
-  extension [Self <: AccessDescriptionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessDescriptionParameters] (val x: Self) extends AnyVal {
     
     inline def setAccessLocation(value: GeneralName): Self = StObject.set(x, "accessLocation", value.asInstanceOf[js.Any])
     

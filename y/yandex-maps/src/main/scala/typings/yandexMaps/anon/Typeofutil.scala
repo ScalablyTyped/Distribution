@@ -21,7 +21,8 @@ object Typeofutil {
     __obj.asInstanceOf[Typeofutil]
   }
   
-  extension [Self <: Typeofutil](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofutil] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Typeofbounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

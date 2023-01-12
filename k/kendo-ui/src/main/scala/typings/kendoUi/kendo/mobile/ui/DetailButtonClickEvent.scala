@@ -20,7 +20,8 @@ object DetailButtonClickEvent {
     __obj.asInstanceOf[DetailButtonClickEvent]
   }
   
-  extension [Self <: DetailButtonClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailButtonClickEvent] (val x: Self) extends AnyVal {
     
     inline def setButton(value: JQuery): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object libDatePickerViewPropsTypeMod {
       __obj.asInstanceOf[DatePickerProps]
     }
     
-    extension [Self <: DatePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

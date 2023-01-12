@@ -430,7 +430,8 @@ object sapUiLayoutCssgridGridResponsiveLayoutMod {
       __obj.asInstanceOf[GridResponsiveLayoutSettings]
     }
     
-    extension [Self <: GridResponsiveLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridResponsiveLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setContainerQuery(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "containerQuery", value.asInstanceOf[js.Any])
       

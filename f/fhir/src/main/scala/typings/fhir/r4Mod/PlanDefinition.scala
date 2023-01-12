@@ -225,7 +225,8 @@ object PlanDefinition {
     __obj.asInstanceOf[PlanDefinition]
   }
   
-  extension [Self <: PlanDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanDefinition] (val x: Self) extends AnyVal {
     
     inline def setAction(value: js.Array[PlanDefinitionAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

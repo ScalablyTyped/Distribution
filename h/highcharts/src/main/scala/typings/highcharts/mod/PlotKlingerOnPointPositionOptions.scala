@@ -39,7 +39,8 @@ object PlotKlingerOnPointPositionOptions {
     __obj.asInstanceOf[PlotKlingerOnPointPositionOptions]
   }
   
-  extension [Self <: PlotKlingerOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotKlingerOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

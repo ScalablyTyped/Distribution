@@ -18,7 +18,8 @@ object BuildUndefinedNode {
     __obj.asInstanceOf[BuildUndefinedNode]
   }
   
-  extension [Self <: BuildUndefinedNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildUndefinedNode] (val x: Self) extends AnyVal {
     
     inline def setBuildUndefinedNode(value: () => Node): Self = StObject.set(x, "buildUndefinedNode", js.Any.fromFunction0(value))
     

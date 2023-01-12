@@ -18,7 +18,8 @@ object AnonSubMysteryGiftUserstate {
     __obj.asInstanceOf[AnonSubMysteryGiftUserstate]
   }
   
-  extension [Self <: AnonSubMysteryGiftUserstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnonSubMysteryGiftUserstate] (val x: Self) extends AnyVal {
     
     inline def `setMessage-type`(value: anonsubmysterygift): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
     

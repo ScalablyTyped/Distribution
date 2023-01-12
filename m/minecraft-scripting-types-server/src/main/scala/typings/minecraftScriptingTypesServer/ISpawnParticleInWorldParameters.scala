@@ -35,7 +35,8 @@ object ISpawnParticleInWorldParameters {
     __obj.asInstanceOf[ISpawnParticleInWorldParameters]
   }
   
-  extension [Self <: ISpawnParticleInWorldParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpawnParticleInWorldParameters] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

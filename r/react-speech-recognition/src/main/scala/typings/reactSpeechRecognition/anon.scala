@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[BrowserSupportsSpeechRecognition]
     }
     
-    extension [Self <: BrowserSupportsSpeechRecognition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserSupportsSpeechRecognition] (val x: Self) extends AnyVal {
       
       inline def setBrowserSupportsSpeechRecognition(value: Boolean): Self = StObject.set(x, "browserSupportsSpeechRecognition", value.asInstanceOf[js.Any])
       

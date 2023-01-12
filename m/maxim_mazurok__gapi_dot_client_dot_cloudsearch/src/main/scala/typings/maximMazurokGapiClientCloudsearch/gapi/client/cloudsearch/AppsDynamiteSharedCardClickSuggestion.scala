@@ -19,7 +19,8 @@ object AppsDynamiteSharedCardClickSuggestion {
     __obj.asInstanceOf[AppsDynamiteSharedCardClickSuggestion]
   }
   
-  extension [Self <: AppsDynamiteSharedCardClickSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedCardClickSuggestion] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     

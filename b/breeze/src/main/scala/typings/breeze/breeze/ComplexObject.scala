@@ -17,7 +17,8 @@ object ComplexObject {
     __obj.asInstanceOf[ComplexObject]
   }
   
-  extension [Self <: ComplexObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplexObject] (val x: Self) extends AnyVal {
     
     inline def setComplexAspect(value: ComplexAspect): Self = StObject.set(x, "complexAspect", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object buttonChangedhandlerpressAllowedComponentTypes {
     __obj.asInstanceOf[buttonChangedhandlerpressAllowedComponentTypes]
   }
   
-  extension [Self <: buttonChangedhandlerpressAllowedComponentTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: buttonChangedhandlerpressAllowedComponentTypes] (val x: Self) extends AnyVal {
     
     inline def setAllowedComponentTypes(value: js.Array[MotionControllerComponentType]): Self = StObject.set(x, "allowedComponentTypes", value.asInstanceOf[js.Any])
     

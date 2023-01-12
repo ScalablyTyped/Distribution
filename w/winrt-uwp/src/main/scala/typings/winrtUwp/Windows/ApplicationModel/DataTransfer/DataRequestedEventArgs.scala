@@ -17,7 +17,8 @@ object DataRequestedEventArgs {
     __obj.asInstanceOf[DataRequestedEventArgs]
   }
   
-  extension [Self <: DataRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: DataRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

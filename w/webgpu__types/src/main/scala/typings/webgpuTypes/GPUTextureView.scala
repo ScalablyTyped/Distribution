@@ -23,7 +23,8 @@ object GPUTextureView {
     __obj.asInstanceOf[GPUTextureView]
   }
   
-  extension [Self <: GPUTextureView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUTextureView] (val x: Self) extends AnyVal {
     
     inline def set__brand(value: typings.webgpuTypes.webgpuTypesStrings.GPUTextureView): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }

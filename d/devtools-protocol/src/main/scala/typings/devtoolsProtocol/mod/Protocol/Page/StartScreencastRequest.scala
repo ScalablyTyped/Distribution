@@ -41,7 +41,8 @@ object StartScreencastRequest {
     __obj.asInstanceOf[StartScreencastRequest]
   }
   
-  extension [Self <: StartScreencastRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartScreencastRequest] (val x: Self) extends AnyVal {
     
     inline def setEveryNthFrame(value: integer): Self = StObject.set(x, "everyNthFrame", value.asInstanceOf[js.Any])
     

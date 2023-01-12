@@ -28,7 +28,8 @@ object InputSpecification {
     __obj.asInstanceOf[InputSpecification]
   }
   
-  extension [Self <: InputSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputSpecification] (val x: Self) extends AnyVal {
     
     inline def setCodec(value: InputCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     

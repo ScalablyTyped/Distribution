@@ -19,7 +19,8 @@ object PreAuthorizedApplication {
     __obj.asInstanceOf[PreAuthorizedApplication]
   }
   
-  extension [Self <: PreAuthorizedApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreAuthorizedApplication] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

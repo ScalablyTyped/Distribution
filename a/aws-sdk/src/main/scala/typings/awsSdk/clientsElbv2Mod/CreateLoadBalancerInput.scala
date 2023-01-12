@@ -58,7 +58,8 @@ object CreateLoadBalancerInput {
     __obj.asInstanceOf[CreateLoadBalancerInput]
   }
   
-  extension [Self <: CreateLoadBalancerInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLoadBalancerInput] (val x: Self) extends AnyVal {
     
     inline def setCustomerOwnedIpv4Pool(value: CustomerOwnedIpv4Pool): Self = StObject.set(x, "CustomerOwnedIpv4Pool", value.asInstanceOf[js.Any])
     

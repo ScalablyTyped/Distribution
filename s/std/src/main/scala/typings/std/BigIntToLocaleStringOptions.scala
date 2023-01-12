@@ -146,7 +146,8 @@ object BigIntToLocaleStringOptions {
     __obj.asInstanceOf[BigIntToLocaleStringOptions]
   }
   
-  extension [Self <: BigIntToLocaleStringOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigIntToLocaleStringOptions] (val x: Self) extends AnyVal {
     
     inline def setCompactDisplay(value: java.lang.String): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
     

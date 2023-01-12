@@ -46,7 +46,8 @@ object SceneLayerCapabilities {
     __obj.asInstanceOf[SceneLayerCapabilities]
   }
   
-  extension [Self <: SceneLayerCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneLayerCapabilities] (val x: Self) extends AnyVal {
     
     inline def setData(value: SceneLayerCapabilitiesData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

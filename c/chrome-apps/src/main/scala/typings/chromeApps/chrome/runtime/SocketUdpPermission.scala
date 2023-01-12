@@ -31,7 +31,8 @@ object SocketUdpPermission {
     __obj.asInstanceOf[SocketUdpPermission]
   }
   
-  extension [Self <: SocketUdpPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketUdpPermission] (val x: Self) extends AnyVal {
     
     inline def setBind(value: String | js.Array[String]): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     

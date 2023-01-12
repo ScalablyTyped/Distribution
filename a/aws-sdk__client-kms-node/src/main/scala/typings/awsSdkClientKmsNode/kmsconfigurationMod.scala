@@ -151,7 +151,8 @@ object kmsconfigurationMod {
       __obj.asInstanceOf[KMSConfiguration]
     }
     
-    extension [Self <: KMSConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
@@ -300,7 +301,8 @@ object kmsconfigurationMod {
       __obj.asInstanceOf[KMSResolvableConfiguration]
     }
     
-    extension [Self <: KMSResolvableConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSResolvableConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBodyLengthChecker(value: Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
@@ -432,7 +434,8 @@ object kmsconfigurationMod {
       __obj.asInstanceOf[KMSResolvedConfiguration]
     }
     
-    extension [Self <: KMSResolvedConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSResolvedConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       

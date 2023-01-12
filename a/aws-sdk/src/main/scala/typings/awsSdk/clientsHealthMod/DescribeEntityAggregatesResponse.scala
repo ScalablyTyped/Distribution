@@ -18,7 +18,8 @@ object DescribeEntityAggregatesResponse {
     __obj.asInstanceOf[DescribeEntityAggregatesResponse]
   }
   
-  extension [Self <: DescribeEntityAggregatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEntityAggregatesResponse] (val x: Self) extends AnyVal {
     
     inline def setEntityAggregates(value: EntityAggregateList): Self = StObject.set(x, "entityAggregates", value.asInstanceOf[js.Any])
     

@@ -221,7 +221,8 @@ object libUtilStorageMod {
       __obj.asInstanceOf[Storage]
     }
     
-    extension [Self <: Storage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
       
       inline def setCreateProxy(value: () => js.Object): Self = StObject.set(x, "createProxy", js.Any.fromFunction0(value))
       
@@ -274,7 +275,8 @@ object libUtilStorageMod {
       __obj.asInstanceOf[StorageOptions]
     }
     
-    extension [Self <: StorageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableCache(value: Boolean): Self = StObject.set(x, "disableCache", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object ExpandNodeInfo {
     __obj.asInstanceOf[ExpandNodeInfo]
   }
   
-  extension [Self <: ExpandNodeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandNodeInfo] (val x: Self) extends AnyVal {
     
     inline def setNodePath(value: String): Self = StObject.set(x, "nodePath", value.asInstanceOf[js.Any])
     

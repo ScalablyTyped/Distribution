@@ -40,7 +40,8 @@ object RouterStatusNatStatus {
     __obj.asInstanceOf[RouterStatusNatStatus]
   }
   
-  extension [Self <: RouterStatusNatStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterStatusNatStatus] (val x: Self) extends AnyVal {
     
     inline def setAutoAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "autoAllocatedNatIps", value.asInstanceOf[js.Any])
     

@@ -174,7 +174,8 @@ object sapUiLayoutFormGridContainerDataMod {
       __obj.asInstanceOf[GridContainerDataSettings]
     }
     
-    extension [Self <: GridContainerDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridContainerDataSettings] (val x: Self) extends AnyVal {
       
       inline def setHalfGrid(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "halfGrid", value.asInstanceOf[js.Any])
       

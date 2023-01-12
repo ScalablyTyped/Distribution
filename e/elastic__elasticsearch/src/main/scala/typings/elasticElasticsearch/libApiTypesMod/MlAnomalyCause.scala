@@ -56,7 +56,8 @@ object MlAnomalyCause {
     __obj.asInstanceOf[MlAnomalyCause]
   }
   
-  extension [Self <: MlAnomalyCause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlAnomalyCause] (val x: Self) extends AnyVal {
     
     inline def setActual(value: js.Array[double]): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     

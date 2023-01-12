@@ -17,7 +17,8 @@ object QueryArchivedstate {
     __obj.asInstanceOf[QueryArchivedstate]
   }
   
-  extension [Self <: QueryArchivedstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryArchivedstate] (val x: Self) extends AnyVal {
     
     inline def setPath(value: `126`): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

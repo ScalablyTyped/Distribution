@@ -19,7 +19,8 @@ object KeepAliveOpt {
     __obj.asInstanceOf[KeepAliveOpt]
   }
   
-  extension [Self <: KeepAliveOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeepAliveOpt] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

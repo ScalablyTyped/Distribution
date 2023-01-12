@@ -22,7 +22,8 @@ object ServerGroupClientEntry {
     __obj.asInstanceOf[ServerGroupClientEntry]
   }
   
-  extension [Self <: ServerGroupClientEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerGroupClientEntry] (val x: Self) extends AnyVal {
     
     inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     

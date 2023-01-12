@@ -111,7 +111,8 @@ object TaskDefinition {
     __obj.asInstanceOf[TaskDefinition]
   }
   
-  extension [Self <: TaskDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskDefinition] (val x: Self) extends AnyVal {
     
     inline def setAgentExecution(value: TaskExecution): Self = StObject.set(x, "agentExecution", value.asInstanceOf[js.Any])
     

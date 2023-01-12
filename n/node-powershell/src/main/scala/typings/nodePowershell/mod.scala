@@ -176,7 +176,8 @@ object mod {
       __obj.asInstanceOf[NodePowerShellStream]
     }
     
-    extension [Self <: NodePowerShellStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodePowerShellStream] (val x: Self) extends AnyVal {
       
       inline def setErr(value: ReadableStream): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
@@ -327,7 +328,8 @@ object mod {
       __obj.asInstanceOf[NodePowershell]
     }
     
-    extension [Self <: NodePowershell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodePowershell] (val x: Self) extends AnyVal {
       
       inline def setAddArgument(value: String => js.Promise[js.Array[String]]): Self = StObject.set(x, "addArgument", js.Any.fromFunction1(value))
       
@@ -417,7 +419,8 @@ object mod {
       __obj.asInstanceOf[NodePowershellShellOptions]
     }
     
-    extension [Self <: NodePowershellShellOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodePowershellShellOptions] (val x: Self) extends AnyVal {
       
       inline def setDebugMsg(value: Boolean): Self = StObject.set(x, "debugMsg", value.asInstanceOf[js.Any])
       
@@ -484,7 +487,8 @@ object mod {
       __obj.asInstanceOf[NodeShellParameter]
     }
     
-    extension [Self <: NodeShellParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeShellParameter] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

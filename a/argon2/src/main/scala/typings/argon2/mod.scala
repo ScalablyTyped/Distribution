@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[NumericLimit]
     }
     
-    extension [Self <: NumericLimit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumericLimit] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[OptionLimits]
     }
     
-    extension [Self <: OptionLimits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionLimits] (val x: Self) extends AnyVal {
       
       inline def setHashLength(value: NumericLimit): Self = StObject.set(x, "hashLength", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAssociatedData(value: Buffer): Self = StObject.set(x, "associatedData", value.asInstanceOf[js.Any])
       

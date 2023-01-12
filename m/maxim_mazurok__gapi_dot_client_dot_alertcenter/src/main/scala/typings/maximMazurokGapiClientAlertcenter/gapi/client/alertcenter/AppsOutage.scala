@@ -34,7 +34,8 @@ object AppsOutage {
     __obj.asInstanceOf[AppsOutage]
   }
   
-  extension [Self <: AppsOutage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsOutage] (val x: Self) extends AnyVal {
     
     inline def setDashboardUri(value: String): Self = StObject.set(x, "dashboardUri", value.asInstanceOf[js.Any])
     

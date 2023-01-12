@@ -50,7 +50,8 @@ object PartialClassNameMapLinear {
     __obj.asInstanceOf[PartialClassNameMapLinear]
   }
   
-  extension [Self <: PartialClassNameMapLinear](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapLinear] (val x: Self) extends AnyVal {
     
     inline def setBar(value: String): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     

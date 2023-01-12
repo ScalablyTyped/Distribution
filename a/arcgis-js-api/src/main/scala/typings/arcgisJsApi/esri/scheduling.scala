@@ -32,7 +32,8 @@ object scheduling {
     __obj.asInstanceOf[scheduling]
   }
   
-  extension [Self <: scheduling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: scheduling] (val x: Self) extends AnyVal {
     
     inline def setAddFrameTask(value: PhaseCallbacks => FrameTaskHandle): Self = StObject.set(x, "addFrameTask", js.Any.fromFunction1(value))
     

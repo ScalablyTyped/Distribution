@@ -20,7 +20,8 @@ object TransitionOptions {
     __obj.asInstanceOf[TransitionOptions[E]]
   }
   
-  extension [Self <: TransitionOptions[?], E /* <: HTMLElement */](x: Self & TransitionOptions[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionOptions[?], E /* <: HTMLElement */] (val x: Self & TransitionOptions[E]) extends AnyVal {
     
     inline def setTimeout(value: TransitionTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }

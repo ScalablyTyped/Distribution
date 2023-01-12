@@ -17,7 +17,8 @@ object IExecuteRequest {
     __obj.asInstanceOf[IExecuteRequest]
   }
   
-  extension [Self <: IExecuteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExecuteRequest] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String | js.Array[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

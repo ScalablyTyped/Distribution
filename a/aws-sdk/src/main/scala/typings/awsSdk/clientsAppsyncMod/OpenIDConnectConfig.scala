@@ -33,7 +33,8 @@ object OpenIDConnectConfig {
     __obj.asInstanceOf[OpenIDConnectConfig]
   }
   
-  extension [Self <: OpenIDConnectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenIDConnectConfig] (val x: Self) extends AnyVal {
     
     inline def setAuthTTL(value: Long): Self = StObject.set(x, "authTTL", value.asInstanceOf[js.Any])
     

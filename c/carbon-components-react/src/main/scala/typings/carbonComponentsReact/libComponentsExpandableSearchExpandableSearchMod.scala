@@ -565,7 +565,8 @@ object libComponentsExpandableSearchExpandableSearchMod extends Shortcut {
       __obj.asInstanceOf[ExpandableSearchProps]
     }
     
-    extension [Self <: ExpandableSearchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandableSearchProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

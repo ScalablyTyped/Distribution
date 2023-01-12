@@ -19,7 +19,8 @@ object FieldTest {
     __obj.asInstanceOf[FieldTest]
   }
   
-  extension [Self <: FieldTest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldTest] (val x: Self) extends AnyVal {
     
     inline def setField(value: Group): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

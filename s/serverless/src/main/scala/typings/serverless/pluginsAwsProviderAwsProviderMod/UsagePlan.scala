@@ -17,7 +17,8 @@ object UsagePlan {
     __obj.asInstanceOf[UsagePlan]
   }
   
-  extension [Self <: UsagePlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsagePlan] (val x: Self) extends AnyVal {
     
     inline def setQuota(value: Quota): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     

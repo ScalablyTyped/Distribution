@@ -39,7 +39,8 @@ object BodyMixin {
     __obj.asInstanceOf[BodyMixin]
   }
   
-  extension [Self <: BodyMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyMixin] (val x: Self) extends AnyVal {
     
     inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
     

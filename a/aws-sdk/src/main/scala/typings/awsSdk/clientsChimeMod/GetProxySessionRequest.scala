@@ -23,7 +23,8 @@ object GetProxySessionRequest {
     __obj.asInstanceOf[GetProxySessionRequest]
   }
   
-  extension [Self <: GetProxySessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProxySessionRequest] (val x: Self) extends AnyVal {
     
     inline def setProxySessionId(value: NonEmptyString128): Self = StObject.set(x, "ProxySessionId", value.asInstanceOf[js.Any])
     

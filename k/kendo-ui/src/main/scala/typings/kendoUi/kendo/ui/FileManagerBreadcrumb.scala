@@ -17,7 +17,8 @@ object FileManagerBreadcrumb {
     __obj.asInstanceOf[FileManagerBreadcrumb]
   }
   
-  extension [Self <: FileManagerBreadcrumb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerBreadcrumb] (val x: Self) extends AnyVal {
     
     inline def setDelimiterIcon(value: String): Self = StObject.set(x, "delimiterIcon", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ICompositeFilterOpEnum {
     __obj.asInstanceOf[ICompositeFilterOpEnum]
   }
   
-  extension [Self <: ICompositeFilterOpEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICompositeFilterOpEnum] (val x: Self) extends AnyVal {
     
     inline def setAND(value: CompositeFilterOp): Self = StObject.set(x, "AND", value.asInstanceOf[js.Any])
     

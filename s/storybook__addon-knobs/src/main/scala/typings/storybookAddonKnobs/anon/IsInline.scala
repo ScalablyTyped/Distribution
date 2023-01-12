@@ -26,7 +26,8 @@ object IsInline {
     __obj.asInstanceOf[IsInline]
   }
   
-  extension [Self <: IsInline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsInline] (val x: Self) extends AnyVal {
     
     inline def setIsInline(value: Validator[Boolean]): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     

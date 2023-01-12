@@ -15,7 +15,8 @@ object INetworkOperatorNotificationTriggerFactory {
     __obj.asInstanceOf[INetworkOperatorNotificationTriggerFactory]
   }
   
-  extension [Self <: INetworkOperatorNotificationTriggerFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INetworkOperatorNotificationTriggerFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: String => NetworkOperatorNotificationTrigger): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

@@ -93,7 +93,8 @@ object libEqMod {
       __obj.asInstanceOf[Eq[A]]
     }
     
-    extension [Self <: Eq[?], A](x: Self & Eq[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Eq[?], A] (val x: Self & Eq[A]) extends AnyVal {
       
       inline def setEquals_(value: (A, A) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
     }

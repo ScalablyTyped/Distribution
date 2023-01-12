@@ -66,7 +66,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AnimationControls]
     }
     
-    extension [Self <: AnimationControls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationControls] (val x: Self) extends AnyVal {
       
       inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
@@ -128,7 +129,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Step]
     }
     
-    extension [Self <: Step](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Plussign | `-_`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

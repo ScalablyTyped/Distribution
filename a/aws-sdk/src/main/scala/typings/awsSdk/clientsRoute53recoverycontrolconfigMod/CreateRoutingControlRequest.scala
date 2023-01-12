@@ -33,7 +33,8 @@ object CreateRoutingControlRequest {
     __obj.asInstanceOf[CreateRoutingControlRequest]
   }
   
-  extension [Self <: CreateRoutingControlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRoutingControlRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: stringMin1Max64PatternS): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

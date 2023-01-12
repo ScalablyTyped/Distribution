@@ -20,7 +20,8 @@ object AutoStartbeforestart {
     __obj.asInstanceOf[AutoStartbeforestart]
   }
   
-  extension [Self <: AutoStartbeforestart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoStartbeforestart] (val x: Self) extends AnyVal {
     
     inline def `setAutoStartColonbefore-start`(value: (/* param0 */ PointerArgPropstypemovedx, /* scope */ Scope) => Unit): Self = StObject.set(x, "autoStart:before-start", js.Any.fromFunction2(value))
   }

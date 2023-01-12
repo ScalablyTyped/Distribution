@@ -29,7 +29,8 @@ object ChangeFontBackColorCommand {
     __obj.asInstanceOf[ChangeFontBackColorCommand]
   }
   
-  extension [Self <: ChangeFontBackColorCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeFontBackColorCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

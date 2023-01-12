@@ -95,7 +95,8 @@ object schema {
       __obj.asInstanceOf[ConnectOptions]
     }
     
-    extension [Self <: ConnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
       
       inline def setOnUpgrade(value: /* rawDb */ BackStore => js.Promise[Unit]): Self = StObject.set(x, "onUpgrade", js.Any.fromFunction1(value))
       
@@ -136,7 +137,8 @@ object schema {
       __obj.asInstanceOf[typings.lovefield.mod.schema.Database]
     }
     
-    extension [Self <: typings.lovefield.mod.schema.Database](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.lovefield.mod.schema.Database] (val x: Self) extends AnyVal {
       
       inline def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
       
@@ -161,7 +163,8 @@ object schema {
       __obj.asInstanceOf[DatabasePragma]
     }
     
-    extension [Self <: DatabasePragma](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabasePragma] (val x: Self) extends AnyVal {
       
       inline def setEnableBundledMode(value: Boolean): Self = StObject.set(x, "enableBundledMode", value.asInstanceOf[js.Any])
     }
@@ -182,7 +185,8 @@ object schema {
       __obj.asInstanceOf[ITable]
     }
     
-    extension [Self <: ITable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITable] (val x: Self) extends AnyVal {
       
       inline def setAs(value: String => Table): Self = StObject.set(x, "as", js.Any.fromFunction1(value))
       
@@ -207,7 +211,8 @@ object schema {
       __obj.asInstanceOf[IndexedColumn]
     }
     
-    extension [Self <: IndexedColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexedColumn] (val x: Self) extends AnyVal {
       
       inline def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
       
@@ -234,7 +239,8 @@ object schema {
       __obj.asInstanceOf[RawForeignKeySpec]
     }
     
-    extension [Self <: RawForeignKeySpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawForeignKeySpec] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ConstraintAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object AccountIdentityInputOption {
     __obj.asInstanceOf[AccountIdentityInputOption]
   }
   
-  extension [Self <: AccountIdentityInputOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountIdentityInputOption] (val x: Self) extends AnyVal {
     
     inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object libSigningMod {
       __obj.asInstanceOf[DagJWS]
     }
     
-    extension [Self <: DagJWS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DagJWS] (val x: Self) extends AnyVal {
       
       inline def setLink(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object libSigningMod {
       __obj.asInstanceOf[EncodedJWS]
     }
     
-    extension [Self <: EncodedJWS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodedJWS] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: js.typedarray.Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object libSigningMod {
       __obj.asInstanceOf[EncodedSignature]
     }
     
-    extension [Self <: EncodedSignature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodedSignature] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: Record[String, Any]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object libSigningMod {
       __obj.asInstanceOf[JWSSignature]
     }
     
-    extension [Self <: JWSSignature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWSSignature] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: Record[String, Any]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -149,7 +153,8 @@ object libSigningMod {
       __obj.asInstanceOf[PublicKey]
     }
     
-    extension [Self <: PublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
       
       inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       

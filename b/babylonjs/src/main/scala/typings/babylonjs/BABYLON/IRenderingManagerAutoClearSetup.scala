@@ -28,7 +28,8 @@ object IRenderingManagerAutoClearSetup {
     __obj.asInstanceOf[IRenderingManagerAutoClearSetup]
   }
   
-  extension [Self <: IRenderingManagerAutoClearSetup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRenderingManagerAutoClearSetup] (val x: Self) extends AnyVal {
     
     inline def setAutoClear(value: Boolean): Self = StObject.set(x, "autoClear", value.asInstanceOf[js.Any])
     

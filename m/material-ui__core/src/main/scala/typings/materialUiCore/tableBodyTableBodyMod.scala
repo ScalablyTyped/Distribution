@@ -50,7 +50,8 @@ object tableBodyTableBodyMod extends Shortcut {
       __obj.asInstanceOf[TableBodyTypeMap[P, D]]
     }
     
-    extension [Self <: TableBodyTypeMap[?, ?], P /* <: js.Object */, D /* <: ElementType[Any] */](x: Self & (TableBodyTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableBodyTypeMap[?, ?], P /* <: js.Object */, D /* <: ElementType[Any] */] (val x: Self & (TableBodyTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: TableBodyClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object libFadeMod {
       __obj.asInstanceOf[FadeProps]
     }
     
-    extension [Self <: FadeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FadeProps] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       

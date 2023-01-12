@@ -16,7 +16,8 @@ object GridTemplateColumns {
     __obj.asInstanceOf[GridTemplateColumns]
   }
   
-  extension [Self <: GridTemplateColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridTemplateColumns] (val x: Self) extends AnyVal {
     
     inline def set$gridTemplateColumns(value: String): Self = StObject.set(x, "$gridTemplateColumns", value.asInstanceOf[js.Any])
   }

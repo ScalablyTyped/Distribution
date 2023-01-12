@@ -166,7 +166,8 @@ object ListSchemaInView {
     __obj.asInstanceOf[ListSchemaInView]
   }
   
-  extension [Self <: ListSchemaInView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSchemaInView] (val x: Self) extends AnyVal {
     
     inline def setAggregate(value: StringDictionary[String]): Self = StObject.set(x, "Aggregate", value.asInstanceOf[js.Any])
     

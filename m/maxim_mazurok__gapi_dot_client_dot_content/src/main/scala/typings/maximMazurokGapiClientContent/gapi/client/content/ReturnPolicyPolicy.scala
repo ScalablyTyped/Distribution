@@ -34,7 +34,8 @@ object ReturnPolicyPolicy {
     __obj.asInstanceOf[ReturnPolicyPolicy]
   }
   
-  extension [Self <: ReturnPolicyPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnPolicyPolicy] (val x: Self) extends AnyVal {
     
     inline def setLastReturnDate(value: String): Self = StObject.set(x, "lastReturnDate", value.asInstanceOf[js.Any])
     

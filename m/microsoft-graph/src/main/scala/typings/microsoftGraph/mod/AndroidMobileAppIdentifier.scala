@@ -18,7 +18,8 @@ object AndroidMobileAppIdentifier {
     __obj.asInstanceOf[AndroidMobileAppIdentifier]
   }
   
-  extension [Self <: AndroidMobileAppIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidMobileAppIdentifier] (val x: Self) extends AnyVal {
     
     inline def setPackageId(value: String): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
     

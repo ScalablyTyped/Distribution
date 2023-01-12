@@ -26,7 +26,8 @@ object ILocaleNumberFormatDescriptor {
     __obj.asInstanceOf[ILocaleNumberFormatDescriptor]
   }
   
-  extension [Self <: ILocaleNumberFormatDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocaleNumberFormatDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCURRENCY_SYM(value: String): Self = StObject.set(x, "CURRENCY_SYM", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object libCheckboxCheckboxMod extends Shortcut {
       __obj.asInstanceOf[AbstractCheckboxProps[T]]
     }
     
-    extension [Self <: AbstractCheckboxProps[?], T](x: Self & AbstractCheckboxProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractCheckboxProps[?], T] (val x: Self & AbstractCheckboxProps[T]) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object libCheckboxCheckboxMod extends Shortcut {
       __obj.asInstanceOf[CheckboxChangeEvent]
     }
     
-    extension [Self <: CheckboxChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setNativeEvent(value: typings.std.MouseEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
       
@@ -202,7 +204,8 @@ object libCheckboxCheckboxMod extends Shortcut {
       __obj.asInstanceOf[CheckboxChangeEventTarget]
     }
     
-    extension [Self <: CheckboxChangeEventTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxChangeEventTarget] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     }
@@ -221,7 +224,8 @@ object libCheckboxCheckboxMod extends Shortcut {
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    extension [Self <: CheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
       

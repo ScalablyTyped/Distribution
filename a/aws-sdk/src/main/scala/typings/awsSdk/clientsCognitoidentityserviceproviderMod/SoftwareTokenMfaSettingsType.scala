@@ -23,7 +23,8 @@ object SoftwareTokenMfaSettingsType {
     __obj.asInstanceOf[SoftwareTokenMfaSettingsType]
   }
   
-  extension [Self <: SoftwareTokenMfaSettingsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftwareTokenMfaSettingsType] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

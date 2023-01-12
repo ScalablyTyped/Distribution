@@ -33,7 +33,8 @@ object CSSFontFaceRule {
     __obj.asInstanceOf[CSSFontFaceRule]
   }
   
-  extension [Self <: CSSFontFaceRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSFontFaceRule] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: CSSStyleDeclaration): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }

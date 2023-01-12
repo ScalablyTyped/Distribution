@@ -24,7 +24,8 @@ object EditTagsSettings {
     __obj.asInstanceOf[EditTagsSettings]
   }
   
-  extension [Self <: EditTagsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditTagsSettings] (val x: Self) extends AnyVal {
     
     inline def setClicks(value: `1` | `2`): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
     

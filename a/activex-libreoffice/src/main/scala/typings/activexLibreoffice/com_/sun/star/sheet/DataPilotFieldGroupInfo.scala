@@ -88,7 +88,8 @@ object DataPilotFieldGroupInfo {
     __obj.asInstanceOf[DataPilotFieldGroupInfo]
   }
   
-  extension [Self <: DataPilotFieldGroupInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotFieldGroupInfo] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     

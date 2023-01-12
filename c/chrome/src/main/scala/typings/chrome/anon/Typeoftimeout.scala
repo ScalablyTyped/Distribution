@@ -53,7 +53,8 @@ object Typeoftimeout {
     __obj.asInstanceOf[Typeoftimeout]
   }
   
-  extension [Self <: Typeoftimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeoftimeout] (val x: Self) extends AnyVal {
     
     inline def setEditTracksInfo(value: Double): Self = StObject.set(x, "editTracksInfo", value.asInstanceOf[js.Any])
     

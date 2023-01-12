@@ -24,7 +24,8 @@ object libCommonCallHierarchyMod {
       __obj.asInstanceOf[CallHierarchy]
     }
     
-    extension [Self <: CallHierarchy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallHierarchy] (val x: Self) extends AnyVal {
       
       inline def setCallHierarchy(value: OnIncomingCalls): Self = StObject.set(x, "callHierarchy", value.asInstanceOf[js.Any])
     }

@@ -63,7 +63,8 @@ object ActiveViolation {
     __obj.asInstanceOf[ActiveViolation]
   }
   
-  extension [Self <: ActiveViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveViolation] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: Behavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

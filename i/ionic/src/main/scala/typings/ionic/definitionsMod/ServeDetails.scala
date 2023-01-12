@@ -36,7 +36,8 @@ object ServeDetails {
     __obj.asInstanceOf[ServeDetails]
   }
   
-  extension [Self <: ServeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServeDetails] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

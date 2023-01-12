@@ -22,7 +22,8 @@ object SasPortalListCustomersResponse {
     __obj.asInstanceOf[SasPortalListCustomersResponse]
   }
   
-  extension [Self <: SasPortalListCustomersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalListCustomersResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomers(value: js.Array[SasPortalCustomer]): Self = StObject.set(x, "customers", value.asInstanceOf[js.Any])
     

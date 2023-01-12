@@ -20,7 +20,8 @@ object typesCommonPrefixMod {
       __obj.asInstanceOf[CommonPrefix]
     }
     
-    extension [Self <: CommonPrefix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonPrefix] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       

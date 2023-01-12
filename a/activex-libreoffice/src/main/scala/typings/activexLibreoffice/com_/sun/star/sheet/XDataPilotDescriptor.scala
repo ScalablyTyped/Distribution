@@ -144,7 +144,8 @@ object XDataPilotDescriptor {
     __obj.asInstanceOf[XDataPilotDescriptor]
   }
   
-  extension [Self <: XDataPilotDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataPilotDescriptor] (val x: Self) extends AnyVal {
     
     inline def setColumnFields(value: XIndexAccess): Self = StObject.set(x, "ColumnFields", value.asInstanceOf[js.Any])
     

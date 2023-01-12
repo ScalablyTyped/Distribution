@@ -27,7 +27,8 @@ object TreeNode {
     __obj.asInstanceOf[TreeNode[Props]]
   }
   
-  extension [Self <: TreeNode[?], Props](x: Self & TreeNode[Props]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeNode[?], Props] (val x: Self & TreeNode[Props]) extends AnyVal {
     
     inline def setChildren(value: js.Array[TreeNode[Any] | String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

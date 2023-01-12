@@ -23,7 +23,8 @@ object SecretsManagerSecretConfiguration {
     __obj.asInstanceOf[SecretsManagerSecretConfiguration]
   }
   
-  extension [Self <: SecretsManagerSecretConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretsManagerSecretConfiguration] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: SecretsManagerSecretKmsId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     

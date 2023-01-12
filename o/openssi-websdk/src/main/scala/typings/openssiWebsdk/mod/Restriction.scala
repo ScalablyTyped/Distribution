@@ -25,7 +25,8 @@ object Restriction {
     __obj.asInstanceOf[Restriction]
   }
   
-  extension [Self <: Restriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Restriction] (val x: Self) extends AnyVal {
     
     inline def setCred_def_id(value: CredentialDefinitionID): Self = StObject.set(x, "cred_def_id", value.asInstanceOf[js.Any])
     

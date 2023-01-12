@@ -16,7 +16,8 @@ object AutoscalingGetAutoscalingCapacityResponse {
     __obj.asInstanceOf[AutoscalingGetAutoscalingCapacityResponse]
   }
   
-  extension [Self <: AutoscalingGetAutoscalingCapacityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingGetAutoscalingCapacityResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicies(value: Record[String, AutoscalingGetAutoscalingCapacityAutoscalingDeciders]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
   }

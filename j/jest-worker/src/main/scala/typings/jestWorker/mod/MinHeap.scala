@@ -21,7 +21,8 @@ object MinHeap {
     __obj.asInstanceOf[MinHeap[TItem]]
   }
   
-  extension [Self <: MinHeap[?], TItem /* <: HeapItem */](x: Self & MinHeap[TItem]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinHeap[?], TItem /* <: HeapItem */] (val x: Self & MinHeap[TItem]) extends AnyVal {
     
     inline def setAdd(value: TItem => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

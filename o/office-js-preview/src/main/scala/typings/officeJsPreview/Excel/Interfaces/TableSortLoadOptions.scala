@@ -49,7 +49,8 @@ object TableSortLoadOptions {
     __obj.asInstanceOf[TableSortLoadOptions]
   }
   
-  extension [Self <: TableSortLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSortLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

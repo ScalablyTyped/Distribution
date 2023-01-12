@@ -20,7 +20,8 @@ object FinalStateNodeConfig {
     __obj.asInstanceOf[FinalStateNodeConfig[TContext, TEvent]]
   }
   
-  extension [Self <: FinalStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (FinalStateNodeConfig[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinalStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (FinalStateNodeConfig[TContext, TEvent])) extends AnyVal {
     
     inline def setType(value: `final`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

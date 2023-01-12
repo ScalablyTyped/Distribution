@@ -25,7 +25,8 @@ object ElectoralDistrict {
     __obj.asInstanceOf[ElectoralDistrict]
   }
   
-  extension [Self <: ElectoralDistrict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElectoralDistrict] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

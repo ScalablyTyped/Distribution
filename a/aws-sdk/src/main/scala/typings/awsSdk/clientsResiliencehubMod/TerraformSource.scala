@@ -18,7 +18,8 @@ object TerraformSource {
     __obj.asInstanceOf[TerraformSource]
   }
   
-  extension [Self <: TerraformSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerraformSource] (val x: Self) extends AnyVal {
     
     inline def setS3StateFileUrl(value: S3Url): Self = StObject.set(x, "s3StateFileUrl", value.asInstanceOf[js.Any])
   }

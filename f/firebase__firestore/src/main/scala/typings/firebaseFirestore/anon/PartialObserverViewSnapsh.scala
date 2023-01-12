@@ -21,7 +21,8 @@ object PartialObserverViewSnapsh {
     __obj.asInstanceOf[PartialObserverViewSnapsh]
   }
   
-  extension [Self <: PartialObserverViewSnapsh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialObserverViewSnapsh] (val x: Self) extends AnyVal {
     
     inline def setError(value: FirestoreError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     

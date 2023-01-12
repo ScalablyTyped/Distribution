@@ -33,7 +33,8 @@ object CreateEntityResponse {
     __obj.asInstanceOf[CreateEntityResponse]
   }
   
-  extension [Self <: CreateEntityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEntityResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: TwinMakerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

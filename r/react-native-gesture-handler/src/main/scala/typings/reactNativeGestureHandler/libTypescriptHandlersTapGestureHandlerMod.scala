@@ -87,7 +87,8 @@ object libTypescriptHandlersTapGestureHandlerMod {
       __obj.asInstanceOf[TapGestureConfig]
     }
     
-    extension [Self <: TapGestureConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TapGestureConfig] (val x: Self) extends AnyVal {
       
       inline def setMaxDelayMs(value: Double): Self = StObject.set(x, "maxDelayMs", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object libTypescriptHandlersTapGestureHandlerMod {
       __obj.asInstanceOf[TapGestureHandlerEventPayload]
     }
     
-    extension [Self <: TapGestureHandlerEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TapGestureHandlerEventPayload] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
       

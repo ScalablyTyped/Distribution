@@ -47,7 +47,8 @@ object EditorMinimapLayoutInfo {
     __obj.asInstanceOf[EditorMinimapLayoutInfo]
   }
   
-  extension [Self <: EditorMinimapLayoutInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorMinimapLayoutInfo] (val x: Self) extends AnyVal {
     
     inline def setMinimapCanvasInnerHeight(value: Double): Self = StObject.set(x, "minimapCanvasInnerHeight", value.asInstanceOf[js.Any])
     

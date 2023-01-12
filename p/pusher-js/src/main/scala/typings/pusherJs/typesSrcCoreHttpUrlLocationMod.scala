@@ -19,7 +19,8 @@ object typesSrcCoreHttpUrlLocationMod {
       __obj.asInstanceOf[URLLocation]
     }
     
-    extension [Self <: URLLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLLocation] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

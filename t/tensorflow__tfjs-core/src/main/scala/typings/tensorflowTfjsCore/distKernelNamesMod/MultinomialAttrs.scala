@@ -19,7 +19,8 @@ object MultinomialAttrs {
     __obj.asInstanceOf[MultinomialAttrs]
   }
   
-  extension [Self <: MultinomialAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultinomialAttrs] (val x: Self) extends AnyVal {
     
     inline def setNormalized(value: Boolean): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
     

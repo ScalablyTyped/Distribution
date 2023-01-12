@@ -32,7 +32,8 @@ object CommitRequest {
     __obj.asInstanceOf[CommitRequest]
   }
   
-  extension [Self <: CommitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitRequest] (val x: Self) extends AnyVal {
     
     inline def setMutations(value: js.Array[Mutation]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
     

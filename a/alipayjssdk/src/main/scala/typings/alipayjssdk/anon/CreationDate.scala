@@ -22,7 +22,8 @@ object CreationDate {
     __obj.asInstanceOf[CreationDate]
   }
   
-  extension [Self <: CreationDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreationDate] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

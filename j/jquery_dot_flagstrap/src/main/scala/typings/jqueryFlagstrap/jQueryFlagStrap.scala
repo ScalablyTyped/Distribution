@@ -87,7 +87,8 @@ object jQueryFlagStrap {
       __obj.asInstanceOf[FlagStrapOptions]
     }
     
-    extension [Self <: FlagStrapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagStrapOptions] (val x: Self) extends AnyVal {
       
       inline def setButtonSize(value: String): Self = StObject.set(x, "buttonSize", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object jQueryFlagStrap {
       __obj.asInstanceOf[FlagStrapPlaceholderOptions]
     }
     
-    extension [Self <: FlagStrapPlaceholderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagStrapPlaceholderOptions] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object jQueryFlagStrap {
       __obj.asInstanceOf[FlagStrapStatic]
     }
     
-    extension [Self <: FlagStrapStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagStrapStatic] (val x: Self) extends AnyVal {
       
       inline def setFlagStrap(value: Unit): Self = StObject.set(x, "flagStrap", value.asInstanceOf[js.Any])
       

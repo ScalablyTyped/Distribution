@@ -23,7 +23,8 @@ object GoogleActionsV2OrdersRejectionInfo {
     __obj.asInstanceOf[GoogleActionsV2OrdersRejectionInfo]
   }
   
-  extension [Self <: GoogleActionsV2OrdersRejectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2OrdersRejectionInfo] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

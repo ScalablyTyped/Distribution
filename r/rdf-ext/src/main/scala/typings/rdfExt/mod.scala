@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[SinkMap[InputStream, OutputStream]]
     }
     
-    extension [Self <: SinkMap[?, ?], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](x: Self & (SinkMap[InputStream, OutputStream])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinkMap[?, ?], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] (val x: Self & (SinkMap[InputStream, OutputStream])) extends AnyVal {
       
       inline def setFind(value: String => Sink[InputStream, OutputStream]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       

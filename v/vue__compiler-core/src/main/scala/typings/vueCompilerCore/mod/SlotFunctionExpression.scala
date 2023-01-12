@@ -19,7 +19,8 @@ object SlotFunctionExpression {
     __obj.asInstanceOf[SlotFunctionExpression]
   }
   
-  extension [Self <: SlotFunctionExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotFunctionExpression] (val x: Self) extends AnyVal {
     
     inline def setReturns(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     

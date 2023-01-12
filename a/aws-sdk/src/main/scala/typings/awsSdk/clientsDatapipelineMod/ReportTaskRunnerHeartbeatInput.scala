@@ -28,7 +28,8 @@ object ReportTaskRunnerHeartbeatInput {
     __obj.asInstanceOf[ReportTaskRunnerHeartbeatInput]
   }
   
-  extension [Self <: ReportTaskRunnerHeartbeatInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportTaskRunnerHeartbeatInput] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: id): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     

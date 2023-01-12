@@ -19,7 +19,8 @@ object DoubleOperatorOptions {
     __obj.asInstanceOf[DoubleOperatorOptions]
   }
   
-  extension [Self <: DoubleOperatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoubleOperatorOptions] (val x: Self) extends AnyVal {
     
     inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     

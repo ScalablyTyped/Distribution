@@ -15,7 +15,8 @@ object `2` {
     __obj.asInstanceOf[`2`]
   }
   
-  extension [Self <: `2`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
     
     inline def setDoNotInstantiate(value: Boolean | (js.Function1[`2`, Boolean])): Self = StObject.set(x, "doNotInstantiate", value.asInstanceOf[js.Any])
     

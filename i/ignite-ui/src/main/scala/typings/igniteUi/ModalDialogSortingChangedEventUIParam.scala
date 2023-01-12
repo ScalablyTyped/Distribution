@@ -33,7 +33,8 @@ object ModalDialogSortingChangedEventUIParam {
     __obj.asInstanceOf[ModalDialogSortingChangedEventUIParam]
   }
   
-  extension [Self <: ModalDialogSortingChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalDialogSortingChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     

@@ -205,7 +205,8 @@ object distServiceDialogflowDialogflowMod {
       __obj.asInstanceOf[DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation]]
     }
     
-    extension [Self <: DialogflowHandlers[?, ?, ?, ?], TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */](x: Self & (DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogflowHandlers[?, ?, ?, ?], TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */] (val x: Self & (DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation])) extends AnyVal {
       
       inline def setCatcher(value: (TConversation, /* error */ js.Error) => js.Promise[Any] | Any): Self = StObject.set(x, "catcher", js.Any.fromFunction2(value))
       
@@ -257,7 +258,8 @@ object distServiceDialogflowDialogflowMod {
       __obj.asInstanceOf[DialogflowOptions[TConvData, TUserStorage]]
     }
     
-    extension [Self <: DialogflowOptions[?, ?], TConvData, TUserStorage](x: Self & (DialogflowOptions[TConvData, TUserStorage])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogflowOptions[?, ?], TConvData, TUserStorage] (val x: Self & (DialogflowOptions[TConvData, TUserStorage])) extends AnyVal {
       
       inline def setVerification(value: DialogflowVerification | DialogflowVerificationHeaders): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
       
@@ -295,7 +297,8 @@ object distServiceDialogflowDialogflowMod {
       __obj.asInstanceOf[DialogflowVerification]
     }
     
-    extension [Self <: DialogflowVerification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogflowVerification] (val x: Self) extends AnyVal {
       
       inline def setError(value: String | (js.Function1[/* error */ String, String])): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

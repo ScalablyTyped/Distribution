@@ -32,7 +32,8 @@ object typesLoggingEnabledMod {
       __obj.asInstanceOf[LoggingEnabled]
     }
     
-    extension [Self <: LoggingEnabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggingEnabled] (val x: Self) extends AnyVal {
       
       inline def setTargetBucket(value: String): Self = StObject.set(x, "TargetBucket", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object typesLoggingEnabledMod {
       __obj.asInstanceOf[UnmarshalledLoggingEnabled]
     }
     
-    extension [Self <: UnmarshalledLoggingEnabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledLoggingEnabled] (val x: Self) extends AnyVal {
       
       inline def setTargetGrants(value: js.Array[UnmarshalledTargetGrant]): Self = StObject.set(x, "TargetGrants", value.asInstanceOf[js.Any])
       

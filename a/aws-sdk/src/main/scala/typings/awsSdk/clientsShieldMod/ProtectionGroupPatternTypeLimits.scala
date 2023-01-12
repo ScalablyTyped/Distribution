@@ -18,7 +18,8 @@ object ProtectionGroupPatternTypeLimits {
     __obj.asInstanceOf[ProtectionGroupPatternTypeLimits]
   }
   
-  extension [Self <: ProtectionGroupPatternTypeLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectionGroupPatternTypeLimits] (val x: Self) extends AnyVal {
     
     inline def setArbitraryPatternLimits(value: ProtectionGroupArbitraryPatternLimits): Self = StObject.set(x, "ArbitraryPatternLimits", value.asInstanceOf[js.Any])
   }

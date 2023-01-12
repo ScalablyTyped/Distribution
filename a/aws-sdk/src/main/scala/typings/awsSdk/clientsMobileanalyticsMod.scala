@@ -37,7 +37,8 @@ object clientsMobileanalyticsMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object clientsMobileanalyticsMod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: MapOfStringToString): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object clientsMobileanalyticsMod {
       __obj.asInstanceOf[PutEventsInput]
     }
     
-    extension [Self <: PutEventsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutEventsInput] (val x: Self) extends AnyVal {
       
       inline def setClientContext(value: String): Self = StObject.set(x, "clientContext", value.asInstanceOf[js.Any])
       
@@ -210,7 +213,8 @@ object clientsMobileanalyticsMod {
       __obj.asInstanceOf[Session]
     }
     
-    extension [Self <: Session](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Long): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

@@ -49,7 +49,8 @@ object ISliderOptions {
     __obj.asInstanceOf[ISliderOptions]
   }
   
-  extension [Self <: ISliderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISliderOptions] (val x: Self) extends AnyVal {
     
     inline def setBinding(value: Boolean): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     

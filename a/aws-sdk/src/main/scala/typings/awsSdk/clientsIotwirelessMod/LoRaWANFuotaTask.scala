@@ -15,7 +15,8 @@ object LoRaWANFuotaTask {
     __obj.asInstanceOf[LoRaWANFuotaTask]
   }
   
-  extension [Self <: LoRaWANFuotaTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANFuotaTask] (val x: Self) extends AnyVal {
     
     inline def setRfRegion(value: SupportedRfRegion): Self = StObject.set(x, "RfRegion", value.asInstanceOf[js.Any])
     

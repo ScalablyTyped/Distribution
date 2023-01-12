@@ -55,7 +55,8 @@ object TeleconferenceDeviceQuality {
     __obj.asInstanceOf[TeleconferenceDeviceQuality]
   }
   
-  extension [Self <: TeleconferenceDeviceQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeleconferenceDeviceQuality] (val x: Self) extends AnyVal {
     
     inline def setCallChainId(value: String): Self = StObject.set(x, "callChainId", value.asInstanceOf[js.Any])
     

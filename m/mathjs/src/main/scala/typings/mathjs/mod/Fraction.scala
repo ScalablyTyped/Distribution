@@ -21,7 +21,8 @@ object Fraction {
     __obj.asInstanceOf[Fraction]
   }
   
-  extension [Self <: Fraction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fraction] (val x: Self) extends AnyVal {
     
     inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

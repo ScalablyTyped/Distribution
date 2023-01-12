@@ -40,7 +40,8 @@ object RecommendationsSeedObject {
     __obj.asInstanceOf[RecommendationsSeedObject]
   }
   
-  extension [Self <: RecommendationsSeedObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationsSeedObject] (val x: Self) extends AnyVal {
     
     inline def setAfterFilteringSize(value: Double): Self = StObject.set(x, "afterFilteringSize", value.asInstanceOf[js.Any])
     

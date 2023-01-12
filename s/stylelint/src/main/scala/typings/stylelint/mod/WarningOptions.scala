@@ -21,7 +21,8 @@ object WarningOptions {
     __obj.asInstanceOf[WarningOptions]
   }
   
-  extension [Self <: WarningOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WarningOptions] (val x: Self) extends AnyVal {
     
     inline def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object BrowserInfotestRunIdstrin {
     __obj.asInstanceOf[BrowserInfotestRunIdstrin]
   }
   
-  extension [Self <: BrowserInfotestRunIdstrin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserInfotestRunIdstrin] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

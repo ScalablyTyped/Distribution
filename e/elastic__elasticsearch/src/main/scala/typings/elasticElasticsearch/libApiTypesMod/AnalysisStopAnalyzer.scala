@@ -25,7 +25,8 @@ object AnalysisStopAnalyzer {
     __obj.asInstanceOf[AnalysisStopAnalyzer]
   }
   
-  extension [Self <: AnalysisStopAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisStopAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setStopwords(value: AnalysisStopWords): Self = StObject.set(x, "stopwords", value.asInstanceOf[js.Any])
     

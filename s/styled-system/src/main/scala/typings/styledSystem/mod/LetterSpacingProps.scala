@@ -20,7 +20,8 @@ object LetterSpacingProps {
     __obj.asInstanceOf[LetterSpacingProps[ThemeType, TVal]]
   }
   
-  extension [Self <: LetterSpacingProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (LetterSpacingProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LetterSpacingProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (LetterSpacingProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setLetterSpacing(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object angularMod {
         __obj.asInstanceOf[IAnimation]
       }
       
-      extension [Self <: IAnimation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAnimation] (val x: Self) extends AnyVal {
         
         inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
         
@@ -63,7 +64,8 @@ object angularMod {
         __obj.asInstanceOf[INotification]
       }
       
-      extension [Self <: INotification](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: INotification] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -179,7 +181,8 @@ object angularMod {
         __obj.asInstanceOf[ISettings]
       }
       
-      extension [Self <: ISettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISettings] (val x: Self) extends AnyVal {
         
         inline def setCustom(value: IAnimation): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
         

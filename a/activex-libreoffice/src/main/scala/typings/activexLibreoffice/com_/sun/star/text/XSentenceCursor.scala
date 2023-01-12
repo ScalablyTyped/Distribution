@@ -73,7 +73,8 @@ object XSentenceCursor {
     __obj.asInstanceOf[XSentenceCursor]
   }
   
-  extension [Self <: XSentenceCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSentenceCursor] (val x: Self) extends AnyVal {
     
     inline def setGotoEndOfSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfSentence", js.Any.fromFunction1(value))
     

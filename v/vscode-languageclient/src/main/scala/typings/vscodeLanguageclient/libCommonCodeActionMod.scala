@@ -65,7 +65,8 @@ object libCommonCodeActionMod {
       __obj.asInstanceOf[CodeActionMiddleware]
     }
     
-    extension [Self <: CodeActionMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeActionMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideCodeActions(
         value: js.ThisFunction5[

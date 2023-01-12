@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object mod {
       __obj.asInstanceOf[ParserInstance]
     }
     
-    extension [Self <: ParserInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserInstance] (val x: Self) extends AnyVal {
       
       inline def setParse(value: js.Array[NlcstContent] => NlcstRoot): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       

@@ -21,7 +21,8 @@ object libTypesChunkMod {
       __obj.asInstanceOf[IChunk]
     }
     
-    extension [Self <: IChunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChunk] (val x: Self) extends AnyVal {
       
       inline def setChunk(value: Buffer | String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       

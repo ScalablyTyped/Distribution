@@ -36,7 +36,8 @@ object BackIndex {
     __obj.asInstanceOf[BackIndex]
   }
   
-  extension [Self <: BackIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackIndex] (val x: Self) extends AnyVal {
     
     inline def setBackIndex(value: Path => Double): Self = StObject.set(x, "backIndex", js.Any.fromFunction1(value))
     

@@ -127,7 +127,8 @@ object mod {
       __obj.asInstanceOf[TerminalMenuOptions]
     }
     
-    extension [Self <: TerminalMenuOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TerminalMenuOptions] (val x: Self) extends AnyVal {
       
       inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object mod {
       __obj.asInstanceOf[Thickness]
     }
     
-    extension [Self <: Thickness](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Thickness] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object FullTextCatalog {
     __obj.asInstanceOf[FullTextCatalog]
   }
   
-  extension [Self <: FullTextCatalog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullTextCatalog] (val x: Self) extends AnyVal {
     
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

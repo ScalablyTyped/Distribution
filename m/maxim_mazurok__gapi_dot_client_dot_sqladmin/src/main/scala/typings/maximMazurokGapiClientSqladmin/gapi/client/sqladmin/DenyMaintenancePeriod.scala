@@ -28,7 +28,8 @@ object DenyMaintenancePeriod {
     __obj.asInstanceOf[DenyMaintenancePeriod]
   }
   
-  extension [Self <: DenyMaintenancePeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DenyMaintenancePeriod] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

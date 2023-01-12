@@ -18,7 +18,8 @@ object StartSessionRequest {
     __obj.asInstanceOf[StartSessionRequest]
   }
   
-  extension [Self <: StartSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
   }

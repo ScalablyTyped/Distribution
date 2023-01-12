@@ -23,7 +23,8 @@ object IncomingWebhooks {
     __obj.asInstanceOf[IncomingWebhooks[T]]
   }
   
-  extension [Self <: IncomingWebhooks[?], T](x: Self & IncomingWebhooks[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncomingWebhooks[?], T] (val x: Self & IncomingWebhooks[T]) extends AnyVal {
     
     inline def setAddResponse(value: IncomingWebhookOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))
     

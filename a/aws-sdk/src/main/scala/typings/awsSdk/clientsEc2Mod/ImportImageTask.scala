@@ -98,7 +98,8 @@ object ImportImageTask {
     __obj.asInstanceOf[ImportImageTask]
   }
   
-  extension [Self <: ImportImageTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportImageTask] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     

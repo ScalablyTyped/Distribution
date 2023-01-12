@@ -28,7 +28,8 @@ object EndpointRequest {
     __obj.asInstanceOf[EndpointRequest]
   }
   
-  extension [Self <: EndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     

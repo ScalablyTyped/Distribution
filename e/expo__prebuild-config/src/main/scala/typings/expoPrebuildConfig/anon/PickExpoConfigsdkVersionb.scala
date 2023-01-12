@@ -21,7 +21,8 @@ object PickExpoConfigsdkVersionb {
     __obj.asInstanceOf[PickExpoConfigsdkVersionb]
   }
   
-  extension [Self <: PickExpoConfigsdkVersionb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfigsdkVersionb] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

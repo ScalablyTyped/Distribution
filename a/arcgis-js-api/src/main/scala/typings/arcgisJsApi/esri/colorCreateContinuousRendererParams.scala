@@ -179,7 +179,8 @@ object colorCreateContinuousRendererParams {
     __obj.asInstanceOf[colorCreateContinuousRendererParams]
   }
   
-  extension [Self <: colorCreateContinuousRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colorCreateContinuousRendererParams] (val x: Self) extends AnyVal {
     
     inline def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     

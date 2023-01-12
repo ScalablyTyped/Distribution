@@ -33,7 +33,8 @@ object FunctionConfigurationEnvironment {
     __obj.asInstanceOf[FunctionConfigurationEnvironment]
   }
   
-  extension [Self <: FunctionConfigurationEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionConfigurationEnvironment] (val x: Self) extends AnyVal {
     
     inline def setAccessSysfs(value: boolean): Self = StObject.set(x, "AccessSysfs", value.asInstanceOf[js.Any])
     

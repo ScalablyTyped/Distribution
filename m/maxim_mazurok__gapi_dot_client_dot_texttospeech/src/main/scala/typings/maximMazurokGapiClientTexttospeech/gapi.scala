@@ -56,7 +56,8 @@ object gapi {
           __obj.asInstanceOf[AudioConfig]
         }
         
-        extension [Self <: AudioConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AudioConfig] (val x: Self) extends AnyVal {
           
           inline def setAudioEncoding(value: String): Self = StObject.set(x, "audioEncoding", value.asInstanceOf[js.Any])
           
@@ -101,7 +102,8 @@ object gapi {
           __obj.asInstanceOf[CustomVoiceParams]
         }
         
-        extension [Self <: CustomVoiceParams](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CustomVoiceParams] (val x: Self) extends AnyVal {
           
           inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
           
@@ -125,7 +127,8 @@ object gapi {
           __obj.asInstanceOf[ListVoicesResponse]
         }
         
-        extension [Self <: ListVoicesResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ListVoicesResponse] (val x: Self) extends AnyVal {
           
           inline def setVoices(value: js.Array[Voice]): Self = StObject.set(x, "voices", value.asInstanceOf[js.Any])
           
@@ -153,7 +156,8 @@ object gapi {
           __obj.asInstanceOf[SynthesisInput]
         }
         
-        extension [Self <: SynthesisInput](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SynthesisInput] (val x: Self) extends AnyVal {
           
           inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
           
@@ -183,7 +187,8 @@ object gapi {
           __obj.asInstanceOf[SynthesizeSpeechRequest]
         }
         
-        extension [Self <: SynthesizeSpeechRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SynthesizeSpeechRequest] (val x: Self) extends AnyVal {
           
           inline def setAudioConfig(value: AudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
           
@@ -214,7 +219,8 @@ object gapi {
           __obj.asInstanceOf[SynthesizeSpeechResponse]
         }
         
-        extension [Self <: SynthesizeSpeechResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SynthesizeSpeechResponse] (val x: Self) extends AnyVal {
           
           inline def setAudioContent(value: String): Self = StObject.set(x, "audioContent", value.asInstanceOf[js.Any])
           
@@ -251,7 +257,8 @@ object gapi {
           __obj.asInstanceOf[Voice]
         }
         
-        extension [Self <: Voice](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Voice] (val x: Self) extends AnyVal {
           
           inline def setLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "languageCodes", value.asInstanceOf[js.Any])
           
@@ -303,7 +310,8 @@ object gapi {
           __obj.asInstanceOf[VoiceSelectionParams]
         }
         
-        extension [Self <: VoiceSelectionParams](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: VoiceSelectionParams] (val x: Self) extends AnyVal {
           
           inline def setCustomVoice(value: CustomVoiceParams): Self = StObject.set(x, "customVoice", value.asInstanceOf[js.Any])
           

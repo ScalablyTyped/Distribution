@@ -32,7 +32,8 @@ object typesRestoreObjectOutputMod {
       __obj.asInstanceOf[RestoreObjectOutput]
     }
     
-    extension [Self <: RestoreObjectOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestoreObjectOutput] (val x: Self) extends AnyVal {
       
       inline def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
       

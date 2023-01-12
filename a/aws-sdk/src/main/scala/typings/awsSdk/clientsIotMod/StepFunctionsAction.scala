@@ -28,7 +28,8 @@ object StepFunctionsAction {
     __obj.asInstanceOf[StepFunctionsAction]
   }
   
-  extension [Self <: StepFunctionsAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepFunctionsAction] (val x: Self) extends AnyVal {
     
     inline def setExecutionNamePrefix(value: ExecutionNamePrefix): Self = StObject.set(x, "executionNamePrefix", value.asInstanceOf[js.Any])
     

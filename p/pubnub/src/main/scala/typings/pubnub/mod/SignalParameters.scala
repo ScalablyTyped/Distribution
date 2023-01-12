@@ -18,7 +18,8 @@ object SignalParameters {
     __obj.asInstanceOf[SignalParameters]
   }
   
-  extension [Self <: SignalParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalParameters] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

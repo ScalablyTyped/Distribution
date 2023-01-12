@@ -23,7 +23,8 @@ object ServiceEndpointDetails {
     __obj.asInstanceOf[ServiceEndpointDetails]
   }
   
-  extension [Self <: ServiceEndpointDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceEndpointDetails] (val x: Self) extends AnyVal {
     
     inline def setAuthorization(value: EndpointAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     

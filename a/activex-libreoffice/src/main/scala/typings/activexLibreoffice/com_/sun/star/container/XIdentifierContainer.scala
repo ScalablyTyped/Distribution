@@ -51,7 +51,8 @@ object XIdentifierContainer {
     __obj.asInstanceOf[XIdentifierContainer]
   }
   
-  extension [Self <: XIdentifierContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIdentifierContainer] (val x: Self) extends AnyVal {
     
     inline def setInsert(value: Any => Double): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
     

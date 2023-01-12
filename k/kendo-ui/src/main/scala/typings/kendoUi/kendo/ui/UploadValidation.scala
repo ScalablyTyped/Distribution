@@ -19,7 +19,8 @@ object UploadValidation {
     __obj.asInstanceOf[UploadValidation]
   }
   
-  extension [Self <: UploadValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadValidation] (val x: Self) extends AnyVal {
     
     inline def setAllowedExtensions(value: Any): Self = StObject.set(x, "allowedExtensions", value.asInstanceOf[js.Any])
     

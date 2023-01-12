@@ -24,7 +24,8 @@ object EmailSignInProviderConfig {
     __obj.asInstanceOf[EmailSignInProviderConfig]
   }
   
-  extension [Self <: EmailSignInProviderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailSignInProviderConfig] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PseudoElementRemovedEvent {
     __obj.asInstanceOf[PseudoElementRemovedEvent]
   }
   
-  extension [Self <: PseudoElementRemovedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PseudoElementRemovedEvent] (val x: Self) extends AnyVal {
     
     inline def setParentId(value: NodeId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     

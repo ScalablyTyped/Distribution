@@ -28,7 +28,8 @@ object RegisterApplicationRevisionInput {
     __obj.asInstanceOf[RegisterApplicationRevisionInput]
   }
   
-  extension [Self <: RegisterApplicationRevisionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterApplicationRevisionInput] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     

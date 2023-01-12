@@ -82,7 +82,8 @@ object GceClusterConfig {
     __obj.asInstanceOf[GceClusterConfig]
   }
   
-  extension [Self <: GceClusterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GceClusterConfig] (val x: Self) extends AnyVal {
     
     inline def setConfidentialInstanceConfig(value: ConfidentialInstanceConfig): Self = StObject.set(x, "confidentialInstanceConfig", value.asInstanceOf[js.Any])
     

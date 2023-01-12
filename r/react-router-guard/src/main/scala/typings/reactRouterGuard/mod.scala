@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[RouterGuardConfigProps]
     }
     
-    extension [Self <: RouterGuardConfigProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterGuardConfigProps] (val x: Self) extends AnyVal {
       
       inline def setCanActivate(value: js.Array[js.Function0[js.Promise[Any]]]): Self = StObject.set(x, "canActivate", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object mod {
       __obj.asInstanceOf[RouterGuardProps]
     }
     
-    extension [Self <: RouterGuardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterGuardProps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: js.Array[RouterGuardConfigProps]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

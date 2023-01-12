@@ -48,7 +48,8 @@ object MatterRunnerConfig {
     __obj.asInstanceOf[MatterRunnerConfig]
   }
   
-  extension [Self <: MatterRunnerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatterRunnerConfig] (val x: Self) extends AnyVal {
     
     inline def setCorrection(value: Double): Self = StObject.set(x, "correction", value.asInstanceOf[js.Any])
     

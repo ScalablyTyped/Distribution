@@ -41,7 +41,8 @@ object ContainerTpl {
     __obj.asInstanceOf[ContainerTpl]
   }
   
-  extension [Self <: ContainerTpl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerTpl] (val x: Self) extends AnyVal {
     
     inline def setContainerTpl(value: String): Self = StObject.set(x, "containerTpl", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AdditionalSearchKey {
     __obj.asInstanceOf[AdditionalSearchKey]
   }
   
-  extension [Self <: AdditionalSearchKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalSearchKey] (val x: Self) extends AnyVal {
     
     inline def setKeyName(value: name): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     

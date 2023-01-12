@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[PartialNProgressOptions]
     }
     
-    extension [Self <: PartialNProgressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialNProgressOptions] (val x: Self) extends AnyVal {
       
       inline def setBarSelector(value: String): Self = StObject.set(x, "barSelector", value.asInstanceOf[js.Any])
       

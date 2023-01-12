@@ -187,7 +187,8 @@ object WidgetDate {
     __obj.asInstanceOf[WidgetDate]
   }
   
-  extension [Self <: WidgetDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetDate] (val x: Self) extends AnyVal {
     
     inline def setApplyDateStyle(value: () => Unit): Self = StObject.set(x, "applyDateStyle", js.Any.fromFunction0(value))
     

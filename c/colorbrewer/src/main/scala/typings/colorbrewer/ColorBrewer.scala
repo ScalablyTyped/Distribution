@@ -122,7 +122,8 @@ object ColorBrewer {
       __obj.asInstanceOf[Base]
     }
     
-    extension [Self <: Base](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
       
       inline def setAccent(value: EightColorScheme): Self = StObject.set(x, "Accent", value.asInstanceOf[js.Any])
       
@@ -234,7 +235,8 @@ object ColorBrewer {
       __obj.asInstanceOf[EightColorScheme]
     }
     
-    extension [Self <: EightColorScheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EightColorScheme] (val x: Self) extends AnyVal {
       
       inline def set3(value: js.Tuple3[String, String, String]): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
@@ -284,7 +286,8 @@ object ColorBrewer {
       __obj.asInstanceOf[ElevenColorScheme]
     }
     
-    extension [Self <: ElevenColorScheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElevenColorScheme] (val x: Self) extends AnyVal {
       
       inline def set10(value: js.Tuple10[String, String, String, String, String, String, String, String, String, String]): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
       
@@ -322,7 +325,8 @@ object ColorBrewer {
       __obj.asInstanceOf[NineColorScheme]
     }
     
-    extension [Self <: NineColorScheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NineColorScheme] (val x: Self) extends AnyVal {
       
       inline def set9(value: js.Tuple9[String, String, String, String, String, String, String, String, String]): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
     }
@@ -362,7 +366,8 @@ object ColorBrewer {
       __obj.asInstanceOf[TwelveColorScheme]
     }
     
-    extension [Self <: TwelveColorScheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwelveColorScheme] (val x: Self) extends AnyVal {
       
       inline def set12(
         value: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]

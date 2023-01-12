@@ -17,7 +17,8 @@ object PhononPopoverItem {
     __obj.asInstanceOf[PhononPopoverItem]
   }
   
-  extension [Self <: PhononPopoverItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhononPopoverItem] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

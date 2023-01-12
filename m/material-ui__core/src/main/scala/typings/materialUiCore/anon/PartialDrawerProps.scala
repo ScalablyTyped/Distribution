@@ -541,7 +541,8 @@ object PartialDrawerProps {
     __obj.asInstanceOf[PartialDrawerProps]
   }
   
-  extension [Self <: PartialDrawerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDrawerProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

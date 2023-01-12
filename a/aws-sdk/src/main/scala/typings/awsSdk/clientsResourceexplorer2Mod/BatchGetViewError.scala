@@ -23,7 +23,8 @@ object BatchGetViewError {
     __obj.asInstanceOf[BatchGetViewError]
   }
   
-  extension [Self <: BatchGetViewError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetViewError] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     

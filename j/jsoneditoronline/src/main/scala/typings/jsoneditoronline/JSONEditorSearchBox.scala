@@ -42,7 +42,8 @@ object JSONEditorSearchBox {
     __obj.asInstanceOf[JSONEditorSearchBox]
   }
   
-  extension [Self <: JSONEditorSearchBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorSearchBox] (val x: Self) extends AnyVal {
     
     inline def setClearDelay(value: () => Unit): Self = StObject.set(x, "clearDelay", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object DescribeElasticIpsRequest {
     __obj.asInstanceOf[DescribeElasticIpsRequest]
   }
   
-  extension [Self <: DescribeElasticIpsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeElasticIpsRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

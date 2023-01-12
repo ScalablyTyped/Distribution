@@ -21,7 +21,8 @@ object sectionConstructorMod {
       __obj.asInstanceOf[SectionConstructor]
     }
     
-    extension [Self <: SectionConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SectionConstructor] (val x: Self) extends AnyVal {
       
       inline def setOuter(value: OuterSection): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
       

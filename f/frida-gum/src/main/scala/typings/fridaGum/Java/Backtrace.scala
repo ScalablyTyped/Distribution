@@ -26,7 +26,8 @@ object Backtrace {
     __obj.asInstanceOf[Backtrace]
   }
   
-  extension [Self <: Backtrace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Backtrace] (val x: Self) extends AnyVal {
     
     inline def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     

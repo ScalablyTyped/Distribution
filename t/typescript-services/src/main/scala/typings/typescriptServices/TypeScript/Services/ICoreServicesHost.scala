@@ -16,7 +16,8 @@ object ICoreServicesHost {
     __obj.asInstanceOf[ICoreServicesHost]
   }
   
-  extension [Self <: ICoreServicesHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreServicesHost] (val x: Self) extends AnyVal {
     
     inline def setLogger(value: ILogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
   }

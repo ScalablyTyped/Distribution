@@ -15,7 +15,8 @@ object IProgressCircularProvider {
     __obj.asInstanceOf[IProgressCircularProvider]
   }
   
-  extension [Self <: IProgressCircularProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProgressCircularProvider] (val x: Self) extends AnyVal {
     
     inline def setConfigure(value: IProgressCircularConfig => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
   }

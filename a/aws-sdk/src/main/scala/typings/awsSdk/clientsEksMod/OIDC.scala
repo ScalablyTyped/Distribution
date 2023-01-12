@@ -18,7 +18,8 @@ object OIDC {
     __obj.asInstanceOf[OIDC]
   }
   
-  extension [Self <: OIDC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OIDC] (val x: Self) extends AnyVal {
     
     inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     

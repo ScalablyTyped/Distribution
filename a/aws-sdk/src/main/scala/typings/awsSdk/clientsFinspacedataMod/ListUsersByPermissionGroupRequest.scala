@@ -28,7 +28,8 @@ object ListUsersByPermissionGroupRequest {
     __obj.asInstanceOf[ListUsersByPermissionGroupRequest]
   }
   
-  extension [Self <: ListUsersByPermissionGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUsersByPermissionGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ResultLimit): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

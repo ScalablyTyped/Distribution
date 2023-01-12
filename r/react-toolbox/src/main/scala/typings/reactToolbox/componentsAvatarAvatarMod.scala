@@ -79,7 +79,8 @@ object componentsAvatarAvatarMod {
       __obj.asInstanceOf[AvatarProps]
     }
     
-    extension [Self <: AvatarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object componentsAvatarAvatarMod {
       __obj.asInstanceOf[AvatarTheme]
     }
     
-    extension [Self <: AvatarTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarTheme] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       

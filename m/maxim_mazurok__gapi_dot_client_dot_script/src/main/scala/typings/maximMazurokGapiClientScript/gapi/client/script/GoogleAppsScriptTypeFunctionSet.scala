@@ -16,7 +16,8 @@ object GoogleAppsScriptTypeFunctionSet {
     __obj.asInstanceOf[GoogleAppsScriptTypeFunctionSet]
   }
   
-  extension [Self <: GoogleAppsScriptTypeFunctionSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsScriptTypeFunctionSet] (val x: Self) extends AnyVal {
     
     inline def setValues(value: js.Array[GoogleAppsScriptTypeFunction]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     

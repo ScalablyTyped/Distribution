@@ -15,7 +15,8 @@ object ContextChangedEvent {
     __obj.asInstanceOf[ContextChangedEvent]
   }
   
-  extension [Self <: ContextChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setContext(value: BaseAudioContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }

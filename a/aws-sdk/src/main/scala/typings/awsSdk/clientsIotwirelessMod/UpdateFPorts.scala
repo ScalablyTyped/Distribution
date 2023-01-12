@@ -18,7 +18,8 @@ object UpdateFPorts {
     __obj.asInstanceOf[UpdateFPorts]
   }
   
-  extension [Self <: UpdateFPorts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFPorts] (val x: Self) extends AnyVal {
     
     inline def setPositioning(value: Positioning): Self = StObject.set(x, "Positioning", value.asInstanceOf[js.Any])
     

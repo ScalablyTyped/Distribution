@@ -16,7 +16,8 @@ object CancelTestMatrixResponse {
     __obj.asInstanceOf[CancelTestMatrixResponse]
   }
   
-  extension [Self <: CancelTestMatrixResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelTestMatrixResponse] (val x: Self) extends AnyVal {
     
     inline def setTestState(value: String): Self = StObject.set(x, "testState", value.asInstanceOf[js.Any])
     

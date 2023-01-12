@@ -23,7 +23,8 @@ object CoversBodyPart {
     __obj.asInstanceOf[CoversBodyPart]
   }
   
-  extension [Self <: CoversBodyPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoversBodyPart] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

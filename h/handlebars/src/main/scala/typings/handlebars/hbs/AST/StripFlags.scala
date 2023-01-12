@@ -17,7 +17,8 @@ object StripFlags {
     __obj.asInstanceOf[StripFlags]
   }
   
-  extension [Self <: StripFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripFlags] (val x: Self) extends AnyVal {
     
     inline def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

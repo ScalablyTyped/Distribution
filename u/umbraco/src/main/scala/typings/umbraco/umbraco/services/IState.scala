@@ -58,7 +58,8 @@ object IState {
     __obj.asInstanceOf[IState]
   }
   
-  extension [Self <: IState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
     
     inline def setGetCurrent(value: () => Any): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
     

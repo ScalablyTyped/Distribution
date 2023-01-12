@@ -461,7 +461,8 @@ object sapUiWebcMainBusyIndicatorMod {
       __obj.asInstanceOf[BusyIndicatorSettings]
     }
     
-    extension [Self <: BusyIndicatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BusyIndicatorSettings] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

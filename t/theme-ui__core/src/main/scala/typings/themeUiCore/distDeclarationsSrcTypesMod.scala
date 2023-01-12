@@ -37,7 +37,8 @@ object distDeclarationsSrcTypesMod {
       __obj.asInstanceOf[SxProp]
     }
     
-    extension [Self <: SxProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SxProp] (val x: Self) extends AnyVal {
       
       inline def setCss(
         value: Interpolation[

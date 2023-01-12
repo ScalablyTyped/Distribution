@@ -33,7 +33,8 @@ object EksVolume {
     __obj.asInstanceOf[EksVolume]
   }
   
-  extension [Self <: EksVolume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EksVolume] (val x: Self) extends AnyVal {
     
     inline def setEmptyDir(value: EksEmptyDir): Self = StObject.set(x, "emptyDir", value.asInstanceOf[js.Any])
     

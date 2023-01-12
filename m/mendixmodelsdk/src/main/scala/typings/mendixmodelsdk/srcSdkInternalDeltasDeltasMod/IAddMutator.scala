@@ -22,7 +22,8 @@ object IAddMutator {
     __obj.asInstanceOf[IAddMutator]
   }
   
-  extension [Self <: IAddMutator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAddMutator] (val x: Self) extends AnyVal {
     
     inline def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
     

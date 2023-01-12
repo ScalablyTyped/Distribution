@@ -41,7 +41,8 @@ object HierarchyDrillStateFor {
     __obj.asInstanceOf[HierarchyDrillStateFor]
   }
   
-  extension [Self <: HierarchyDrillStateFor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HierarchyDrillStateFor] (val x: Self) extends AnyVal {
     
     inline def setHierarchyDrillStateFor(value: String): Self = StObject.set(x, "hierarchyDrillStateFor", value.asInstanceOf[js.Any])
     

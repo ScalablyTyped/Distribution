@@ -15,7 +15,8 @@ object QueryAffiliationBefore {
     __obj.asInstanceOf[QueryAffiliationBefore]
   }
   
-  extension [Self <: QueryAffiliationBefore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAffiliationBefore] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: AffiliationBefore): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

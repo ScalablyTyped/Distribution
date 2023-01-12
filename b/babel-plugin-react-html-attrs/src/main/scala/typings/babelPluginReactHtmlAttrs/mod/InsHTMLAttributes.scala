@@ -21,7 +21,8 @@ object InsHTMLAttributes {
     __obj.asInstanceOf[InsHTMLAttributes[T]]
   }
   
-  extension [Self <: InsHTMLAttributes[?], T](x: Self & InsHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsHTMLAttributes[?], T] (val x: Self & InsHTMLAttributes[T]) extends AnyVal {
     
     inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     

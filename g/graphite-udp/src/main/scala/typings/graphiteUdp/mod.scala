@@ -101,7 +101,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* error */ js.Error, /* metrics */ Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       

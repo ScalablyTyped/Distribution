@@ -38,7 +38,8 @@ object BuyTradeQuoteRequest {
     __obj.asInstanceOf[BuyTradeQuoteRequest]
   }
   
-  extension [Self <: BuyTradeQuoteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuyTradeQuoteRequest] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

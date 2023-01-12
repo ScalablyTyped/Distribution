@@ -18,7 +18,8 @@ object GetSchemaCreationStatusRequest {
     __obj.asInstanceOf[GetSchemaCreationStatusRequest]
   }
   
-  extension [Self <: GetSchemaCreationStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSchemaCreationStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
   }

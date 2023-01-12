@@ -21,7 +21,8 @@ object PreconfiguredCSSTransitionInDefaultedOptions {
     __obj.asInstanceOf[PreconfiguredCSSTransitionInDefaultedOptions[E]]
   }
   
-  extension [Self <: PreconfiguredCSSTransitionInDefaultedOptions[?], E /* <: HTMLElement */](x: Self & PreconfiguredCSSTransitionInDefaultedOptions[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreconfiguredCSSTransitionInDefaultedOptions[?], E /* <: HTMLElement */] (val x: Self & PreconfiguredCSSTransitionInDefaultedOptions[E]) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

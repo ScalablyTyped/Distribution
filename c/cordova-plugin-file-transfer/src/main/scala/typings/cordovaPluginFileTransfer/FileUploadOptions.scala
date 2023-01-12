@@ -35,7 +35,8 @@ object FileUploadOptions {
     __obj.asInstanceOf[FileUploadOptions]
   }
   
-  extension [Self <: FileUploadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileUploadOptions] (val x: Self) extends AnyVal {
     
     inline def setChunkedMode(value: Boolean): Self = StObject.set(x, "chunkedMode", value.asInstanceOf[js.Any])
     

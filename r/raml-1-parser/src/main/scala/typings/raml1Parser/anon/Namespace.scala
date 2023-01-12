@@ -43,7 +43,8 @@ object Namespace {
     __obj.asInstanceOf[Namespace]
   }
   
-  extension [Self <: Namespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: scala.Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

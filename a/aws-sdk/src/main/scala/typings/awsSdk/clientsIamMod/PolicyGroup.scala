@@ -23,7 +23,8 @@ object PolicyGroup {
     __obj.asInstanceOf[PolicyGroup]
   }
   
-  extension [Self <: PolicyGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyGroup] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: idType): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ASPxClientSpreadsheetViewModeChangedEventArgs {
     __obj.asInstanceOf[ASPxClientSpreadsheetViewModeChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientSpreadsheetViewModeChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSpreadsheetViewModeChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setOldViewMode(value: ASPxClientSpreadsheetViewMode): Self = StObject.set(x, "oldViewMode", value.asInstanceOf[js.Any])
   }

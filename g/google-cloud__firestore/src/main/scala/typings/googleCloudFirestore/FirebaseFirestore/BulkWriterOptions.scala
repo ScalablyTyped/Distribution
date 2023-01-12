@@ -33,7 +33,8 @@ object BulkWriterOptions {
     __obj.asInstanceOf[BulkWriterOptions]
   }
   
-  extension [Self <: BulkWriterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkWriterOptions] (val x: Self) extends AnyVal {
     
     inline def setThrottling(value: Boolean | InitialOpsPerSecond): Self = StObject.set(x, "throttling", value.asInstanceOf[js.Any])
     

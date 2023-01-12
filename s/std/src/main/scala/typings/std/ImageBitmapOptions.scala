@@ -31,7 +31,8 @@ object ImageBitmapOptions {
     __obj.asInstanceOf[ImageBitmapOptions]
   }
   
-  extension [Self <: ImageBitmapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageBitmapOptions] (val x: Self) extends AnyVal {
     
     inline def setColorSpaceConversion(value: ColorSpaceConversion): Self = StObject.set(x, "colorSpaceConversion", value.asInstanceOf[js.Any])
     

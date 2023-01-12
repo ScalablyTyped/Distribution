@@ -95,7 +95,8 @@ object rsocketwebsocketclientMod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object rsocketwebsocketclientMod {
       __obj.asInstanceOf[RSocketWebSocketClient]
     }
     
-    extension [Self <: RSocketWebSocketClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RSocketWebSocketClient] (val x: Self) extends AnyVal {
       
       inline def setSend(value: Flowable[Frame] => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }

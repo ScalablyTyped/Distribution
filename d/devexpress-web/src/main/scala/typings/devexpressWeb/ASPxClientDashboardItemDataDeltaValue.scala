@@ -77,7 +77,8 @@ object ASPxClientDashboardItemDataDeltaValue {
     __obj.asInstanceOf[ASPxClientDashboardItemDataDeltaValue]
   }
   
-  extension [Self <: ASPxClientDashboardItemDataDeltaValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemDataDeltaValue] (val x: Self) extends AnyVal {
     
     inline def setGetAbsoluteVariation(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetAbsoluteVariation", js.Any.fromFunction0(value))
     

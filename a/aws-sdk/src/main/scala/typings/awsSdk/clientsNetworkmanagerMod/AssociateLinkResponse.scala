@@ -18,7 +18,8 @@ object AssociateLinkResponse {
     __obj.asInstanceOf[AssociateLinkResponse]
   }
   
-  extension [Self <: AssociateLinkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateLinkResponse] (val x: Self) extends AnyVal {
     
     inline def setLinkAssociation(value: LinkAssociation): Self = StObject.set(x, "LinkAssociation", value.asInstanceOf[js.Any])
     

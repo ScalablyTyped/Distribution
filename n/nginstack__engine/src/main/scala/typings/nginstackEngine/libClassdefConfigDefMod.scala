@@ -37,7 +37,8 @@ object libClassdefConfigDefMod {
       __obj.asInstanceOf[ConfigDef]
     }
     
-    extension [Self <: ConfigDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigDef] (val x: Self) extends AnyVal {
       
       inline def setLogger_(value: typings.nginstackEngine.libLogLoggerMod.^): Self = StObject.set(x, "logger_", value.asInstanceOf[js.Any])
       

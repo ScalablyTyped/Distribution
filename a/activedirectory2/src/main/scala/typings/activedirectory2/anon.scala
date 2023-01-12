@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Ca]
     }
     
-    extension [Self <: Ca](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ca] (val x: Self) extends AnyVal {
       
       inline def setCa(value: String): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: Enabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: `false`): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object anon {
       __obj.asInstanceOf[Group]
     }
     
-    extension [Self <: Group](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: js.Tuple5[dn, cn, description, distinguishedName, objectCategory]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       

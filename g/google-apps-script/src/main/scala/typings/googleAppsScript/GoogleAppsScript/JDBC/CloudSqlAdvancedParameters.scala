@@ -33,7 +33,8 @@ object CloudSqlAdvancedParameters {
     __obj.asInstanceOf[CloudSqlAdvancedParameters]
   }
   
-  extension [Self <: CloudSqlAdvancedParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudSqlAdvancedParameters] (val x: Self) extends AnyVal {
     
     inline def setConnectTimeoutSeconds(value: Integer): Self = StObject.set(x, "connectTimeoutSeconds", value.asInstanceOf[js.Any])
     

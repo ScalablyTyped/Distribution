@@ -25,7 +25,8 @@ object ChartExplorer {
     __obj.asInstanceOf[ChartExplorer]
   }
   
-  extension [Self <: ChartExplorer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartExplorer] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

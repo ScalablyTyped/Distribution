@@ -21,7 +21,8 @@ object ChartPlotAreaPadding {
     __obj.asInstanceOf[ChartPlotAreaPadding]
   }
   
-  extension [Self <: ChartPlotAreaPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartPlotAreaPadding] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object libAuthorizedAuthorizedRouteMod {
       __obj.asInstanceOf[IAuthorizedRouteProps]
     }
     
-    extension [Self <: IAuthorizedRouteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAuthorizedRouteProps] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: authority): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       

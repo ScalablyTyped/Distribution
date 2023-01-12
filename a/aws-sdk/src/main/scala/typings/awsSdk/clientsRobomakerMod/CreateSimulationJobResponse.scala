@@ -103,7 +103,8 @@ object CreateSimulationJobResponse {
     __obj.asInstanceOf[CreateSimulationJobResponse]
   }
   
-  extension [Self <: CreateSimulationJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSimulationJobResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

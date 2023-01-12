@@ -29,7 +29,8 @@ object SparklineValueAxisItemCrosshairTooltip {
     __obj.asInstanceOf[SparklineValueAxisItemCrosshairTooltip]
   }
   
-  extension [Self <: SparklineValueAxisItemCrosshairTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineValueAxisItemCrosshairTooltip] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object typesPutTraceSegmentsInputMod {
       __obj.asInstanceOf[PutTraceSegmentsInput]
     }
     
-    extension [Self <: PutTraceSegmentsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutTraceSegmentsInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

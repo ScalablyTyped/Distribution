@@ -33,7 +33,8 @@ object SignalCatalogSummary {
     __obj.asInstanceOf[SignalCatalogSummary]
   }
   
-  extension [Self <: SignalCatalogSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalCatalogSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

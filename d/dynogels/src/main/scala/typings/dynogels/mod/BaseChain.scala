@@ -39,7 +39,8 @@ object BaseChain {
     __obj.asInstanceOf[BaseChain[T]]
   }
   
-  extension [Self <: BaseChain[?], T](x: Self & BaseChain[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseChain[?], T] (val x: Self & BaseChain[T]) extends AnyVal {
     
     inline def setBeginsWith(value: Any => T): Self = StObject.set(x, "beginsWith", js.Any.fromFunction1(value))
     

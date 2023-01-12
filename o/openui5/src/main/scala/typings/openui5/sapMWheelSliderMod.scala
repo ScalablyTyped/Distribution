@@ -664,7 +664,8 @@ object sapMWheelSliderMod {
       __obj.asInstanceOf[WheelSliderSettings]
     }
     
-    extension [Self <: WheelSliderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WheelSliderSettings] (val x: Self) extends AnyVal {
       
       inline def setCollapsed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "collapsed", js.Any.fromFunction1(value))
       

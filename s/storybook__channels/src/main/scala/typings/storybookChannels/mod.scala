@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[ChannelArgs]
     }
     
-    extension [Self <: ChannelArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelArgs] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object mod {
       __obj.asInstanceOf[ChannelEvent]
     }
     
-    extension [Self <: ChannelEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelEvent] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

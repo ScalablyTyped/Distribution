@@ -18,7 +18,8 @@ object MessageEventPayload {
     __obj.asInstanceOf[MessageEventPayload]
   }
   
-  extension [Self <: MessageEventPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageEventPayload] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

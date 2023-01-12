@@ -60,7 +60,8 @@ object NotebookShowOptions {
     __obj.asInstanceOf[NotebookShowOptions]
   }
   
-  extension [Self <: NotebookShowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookShowOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectionProfile(value: IConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
     

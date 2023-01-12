@@ -25,7 +25,8 @@ object VideoHTMLAttributes {
     __obj.asInstanceOf[VideoHTMLAttributes[T]]
   }
   
-  extension [Self <: VideoHTMLAttributes[?], T](x: Self & VideoHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoHTMLAttributes[?], T] (val x: Self & VideoHTMLAttributes[T]) extends AnyVal {
     
     inline def setDisablePictureInPicture(value: Boolean): Self = StObject.set(x, "disablePictureInPicture", value.asInstanceOf[js.Any])
     

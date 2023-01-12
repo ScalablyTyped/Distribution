@@ -38,7 +38,8 @@ object ListSigningPlatformsRequest {
     __obj.asInstanceOf[ListSigningPlatformsRequest]
   }
   
-  extension [Self <: ListSigningPlatformsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSigningPlatformsRequest] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

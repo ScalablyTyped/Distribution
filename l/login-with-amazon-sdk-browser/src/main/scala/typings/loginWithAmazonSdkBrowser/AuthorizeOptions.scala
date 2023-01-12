@@ -50,7 +50,8 @@ object AuthorizeOptions {
     __obj.asInstanceOf[AuthorizeOptions]
   }
   
-  extension [Self <: AuthorizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
     
     inline def setInteractive(value: AuthorizeInteractiveOption): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     

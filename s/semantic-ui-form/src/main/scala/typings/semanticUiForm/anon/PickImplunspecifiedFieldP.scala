@@ -21,7 +21,8 @@ object PickImplunspecifiedFieldP {
     __obj.asInstanceOf[PickImplunspecifiedFieldP]
   }
   
-  extension [Self <: PickImplunspecifiedFieldP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplunspecifiedFieldP] (val x: Self) extends AnyVal {
     
     inline def setUnspecifiedField(value: String): Self = StObject.set(x, "unspecifiedField", value.asInstanceOf[js.Any])
     

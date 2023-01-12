@@ -64,7 +64,8 @@ object DidChange {
     __obj.asInstanceOf[DidChange]
   }
   
-  extension [Self <: DidChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidChange] (val x: Self) extends AnyVal {
     
     inline def setDidChange(
       value: js.ThisFunction2[

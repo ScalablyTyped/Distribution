@@ -15,7 +15,8 @@ object IVideoEffectsStatics {
     __obj.asInstanceOf[IVideoEffectsStatics]
   }
   
-  extension [Self <: IVideoEffectsStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVideoEffectsStatics] (val x: Self) extends AnyVal {
     
     inline def setVideoStabilization(value: String): Self = StObject.set(x, "videoStabilization", value.asInstanceOf[js.Any])
   }

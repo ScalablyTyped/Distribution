@@ -592,7 +592,8 @@ object FullName {
     __obj.asInstanceOf[FullName]
   }
   
-  extension [Self <: FullName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullName] (val x: Self) extends AnyVal {
     
     inline def setAnchorAllowWhiteSpaceInCharacters(value: String): Self = StObject.set(x, "anchorAllowWhiteSpaceInCharacters", value.asInstanceOf[js.Any])
     

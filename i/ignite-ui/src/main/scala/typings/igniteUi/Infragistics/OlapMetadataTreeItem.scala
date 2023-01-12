@@ -70,7 +70,8 @@ object OlapMetadataTreeItem {
     __obj.asInstanceOf[OlapMetadataTreeItem]
   }
   
-  extension [Self <: OlapMetadataTreeItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapMetadataTreeItem] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: () => String): Self = StObject.set(x, "caption", js.Any.fromFunction0(value))
     

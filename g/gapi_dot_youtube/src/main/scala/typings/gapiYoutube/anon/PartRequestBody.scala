@@ -23,7 +23,8 @@ object PartRequestBody {
     __obj.asInstanceOf[PartRequestBody]
   }
   
-  extension [Self <: PartRequestBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartRequestBody] (val x: Self) extends AnyVal {
     
     inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     

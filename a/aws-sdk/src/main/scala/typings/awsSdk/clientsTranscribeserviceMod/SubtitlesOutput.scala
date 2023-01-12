@@ -28,7 +28,8 @@ object SubtitlesOutput {
     __obj.asInstanceOf[SubtitlesOutput]
   }
   
-  extension [Self <: SubtitlesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtitlesOutput] (val x: Self) extends AnyVal {
     
     inline def setFormats(value: SubtitleFormats): Self = StObject.set(x, "Formats", value.asInstanceOf[js.Any])
     

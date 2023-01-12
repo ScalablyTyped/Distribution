@@ -19,7 +19,8 @@ object GoogleCloudVideointelligenceV1p1beta1NormalizedVertex {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p1beta1NormalizedVertex]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1p1beta1NormalizedVertex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1p1beta1NormalizedVertex] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

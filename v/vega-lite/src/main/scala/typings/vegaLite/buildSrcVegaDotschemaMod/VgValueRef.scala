@@ -31,7 +31,8 @@ object VgValueRef {
     __obj.asInstanceOf[VgValueRef]
   }
   
-  extension [Self <: VgValueRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VgValueRef] (val x: Self) extends AnyVal {
     
     inline def setBand(value: Boolean | Double | VgValueRef): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     

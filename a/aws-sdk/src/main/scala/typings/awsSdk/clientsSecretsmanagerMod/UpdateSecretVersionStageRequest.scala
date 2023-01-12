@@ -33,7 +33,8 @@ object UpdateSecretVersionStageRequest {
     __obj.asInstanceOf[UpdateSecretVersionStageRequest]
   }
   
-  extension [Self <: UpdateSecretVersionStageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSecretVersionStageRequest] (val x: Self) extends AnyVal {
     
     inline def setMoveToVersionId(value: SecretVersionIdType): Self = StObject.set(x, "MoveToVersionId", value.asInstanceOf[js.Any])
     

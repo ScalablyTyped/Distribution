@@ -21,7 +21,8 @@ object ResourceProvider {
     __obj.asInstanceOf[ResourceProvider]
   }
   
-  extension [Self <: ResourceProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceProvider] (val x: Self) extends AnyVal {
     
     inline def setCreateFirewallRule(value: (Account, FirewallRuleInfo) => Thenable[CreateFirewallRuleResponse]): Self = StObject.set(x, "createFirewallRule", js.Any.fromFunction2(value))
     

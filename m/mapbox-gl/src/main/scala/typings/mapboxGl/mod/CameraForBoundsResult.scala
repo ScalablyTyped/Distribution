@@ -22,7 +22,8 @@ object CameraForBoundsResult {
     __obj.asInstanceOf[CameraForBoundsResult]
   }
   
-  extension [Self <: CameraForBoundsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraForBoundsResult] (val x: Self) extends AnyVal {
     
     inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     

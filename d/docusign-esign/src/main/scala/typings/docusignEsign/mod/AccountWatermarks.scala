@@ -91,7 +91,8 @@ object AccountWatermarks {
     __obj.asInstanceOf[AccountWatermarks]
   }
   
-  extension [Self <: AccountWatermarks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountWatermarks] (val x: Self) extends AnyVal {
     
     inline def setDisplayAngle(value: String): Self = StObject.set(x, "displayAngle", value.asInstanceOf[js.Any])
     

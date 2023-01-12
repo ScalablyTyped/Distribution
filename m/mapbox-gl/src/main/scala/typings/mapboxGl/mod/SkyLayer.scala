@@ -27,7 +27,8 @@ object SkyLayer {
     __obj.asInstanceOf[SkyLayer]
   }
   
-  extension [Self <: SkyLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkyLayer] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: SkyLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

@@ -203,7 +203,8 @@ object sapUiUnifiedFileUploaderParameterMod {
       __obj.asInstanceOf[FileUploaderParameterSettings]
     }
     
-    extension [Self <: FileUploaderParameterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploaderParameterSettings] (val x: Self) extends AnyVal {
       
       inline def setName(value: String | PropertyBindingInfo): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

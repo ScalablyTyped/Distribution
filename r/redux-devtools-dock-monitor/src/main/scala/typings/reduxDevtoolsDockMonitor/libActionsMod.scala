@@ -48,7 +48,8 @@ object libActionsMod {
       __obj.asInstanceOf[ChangeMonitorAction]
     }
     
-    extension [Self <: ChangeMonitorAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeMonitorAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: /* "@@redux-devtools-log-monitor/CHANGE_MONITOR" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -68,7 +69,8 @@ object libActionsMod {
       __obj.asInstanceOf[ChangePositionAction]
     }
     
-    extension [Self <: ChangePositionAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangePositionAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: /* "@@redux-devtools-log-monitor/CHANGE_POSITION" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -90,7 +92,8 @@ object libActionsMod {
       __obj.asInstanceOf[ChangeSizeAction]
     }
     
-    extension [Self <: ChangeSizeAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeSizeAction] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object libActionsMod {
       __obj.asInstanceOf[ToggleVisibilityAction]
     }
     
-    extension [Self <: ToggleVisibilityAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleVisibilityAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: /* "@@redux-devtools-log-monitor/TOGGLE_VISIBILITY" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

@@ -39,7 +39,8 @@ object distRequestEndSessionPopupRequestMod {
       __obj.asInstanceOf[EndSessionPopupRequest]
     }
     
-    extension [Self <: EndSessionPopupRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndSessionPopupRequest] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: AccountInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       

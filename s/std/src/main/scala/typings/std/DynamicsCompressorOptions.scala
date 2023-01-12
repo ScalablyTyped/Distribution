@@ -30,7 +30,8 @@ object DynamicsCompressorOptions {
     __obj.asInstanceOf[DynamicsCompressorOptions]
   }
   
-  extension [Self <: DynamicsCompressorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicsCompressorOptions] (val x: Self) extends AnyVal {
     
     inline def setAttack(value: Double): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
     

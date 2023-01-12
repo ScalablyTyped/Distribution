@@ -23,7 +23,8 @@ object ContextChangeEventObject {
     __obj.asInstanceOf[ContextChangeEventObject]
   }
   
-  extension [Self <: ContextChangeEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextChangeEventObject] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: String): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

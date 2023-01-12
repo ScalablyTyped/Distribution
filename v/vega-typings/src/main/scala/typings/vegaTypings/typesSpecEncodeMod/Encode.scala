@@ -28,7 +28,8 @@ object Encode {
     __obj.asInstanceOf[Encode[T]]
   }
   
-  extension [Self <: Encode[?], T](x: Self & Encode[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encode[?], T] (val x: Self & Encode[T]) extends AnyVal {
     
     inline def setEnter(value: T): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     

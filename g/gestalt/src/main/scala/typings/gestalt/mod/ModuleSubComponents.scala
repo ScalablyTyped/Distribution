@@ -16,7 +16,8 @@ object ModuleSubComponents {
     __obj.asInstanceOf[ModuleSubComponents]
   }
   
-  extension [Self <: ModuleSubComponents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleSubComponents] (val x: Self) extends AnyVal {
     
     inline def setExpandable(value: FC[ModuleExpandableProps]): Self = StObject.set(x, "Expandable", value.asInstanceOf[js.Any])
   }

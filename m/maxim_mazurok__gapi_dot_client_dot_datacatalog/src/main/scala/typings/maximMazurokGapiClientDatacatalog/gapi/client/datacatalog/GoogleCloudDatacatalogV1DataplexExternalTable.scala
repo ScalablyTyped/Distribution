@@ -25,7 +25,8 @@ object GoogleCloudDatacatalogV1DataplexExternalTable {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1DataplexExternalTable]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1DataplexExternalTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1DataplexExternalTable] (val x: Self) extends AnyVal {
     
     inline def setDataCatalogEntry(value: String): Self = StObject.set(x, "dataCatalogEntry", value.asInstanceOf[js.Any])
     

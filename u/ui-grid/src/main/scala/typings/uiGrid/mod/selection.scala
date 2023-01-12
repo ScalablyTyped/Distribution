@@ -97,7 +97,8 @@ object selection {
       __obj.asInstanceOf[typings.uiGrid.mod.selection.IGridOptions]
     }
     
-    extension [Self <: typings.uiGrid.mod.selection.IGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.selection.IGridOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableFooterTotalSelected(value: Boolean): Self = StObject.set(x, "enableFooterTotalSelected", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object selection {
       __obj.asInstanceOf[typings.uiGrid.mod.selection.IGridRow]
     }
     
-    extension [Self <: typings.uiGrid.mod.selection.IGridRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.selection.IGridRow] (val x: Self) extends AnyVal {
       
       inline def setEnableSelection(value: Boolean): Self = StObject.set(x, "enableSelection", value.asInstanceOf[js.Any])
       

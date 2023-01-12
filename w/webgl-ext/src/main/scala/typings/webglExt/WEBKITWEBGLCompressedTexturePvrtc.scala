@@ -26,7 +26,8 @@ object WEBKITWEBGLCompressedTexturePvrtc {
     __obj.asInstanceOf[WEBKITWEBGLCompressedTexturePvrtc]
   }
   
-  extension [Self <: WEBKITWEBGLCompressedTexturePvrtc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WEBKITWEBGLCompressedTexturePvrtc] (val x: Self) extends AnyVal {
     
     inline def setCOMPRESSED_RGBA_PVRTC_2BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_PVRTC_2BPPV1_IMG", value.asInstanceOf[js.Any])
     

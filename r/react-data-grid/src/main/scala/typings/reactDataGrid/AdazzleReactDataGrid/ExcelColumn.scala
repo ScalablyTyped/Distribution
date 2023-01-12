@@ -25,7 +25,8 @@ object ExcelColumn {
     __obj.asInstanceOf[ExcelColumn]
   }
   
-  extension [Self <: ExcelColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcelColumn] (val x: Self) extends AnyVal {
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object ConnectEvents {
     __obj.asInstanceOf[ConnectEvents]
   }
   
-  extension [Self <: ConnectEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectEvents] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: js.Array[/* Contains information about a Connect log entry. */ ConnectLog]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

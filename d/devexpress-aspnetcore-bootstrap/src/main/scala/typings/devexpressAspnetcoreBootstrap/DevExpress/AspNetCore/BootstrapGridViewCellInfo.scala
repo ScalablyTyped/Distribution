@@ -17,7 +17,8 @@ object BootstrapGridViewCellInfo {
     __obj.asInstanceOf[BootstrapGridViewCellInfo]
   }
   
-  extension [Self <: BootstrapGridViewCellInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapGridViewCellInfo] (val x: Self) extends AnyVal {
     
     inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

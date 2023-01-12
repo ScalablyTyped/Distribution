@@ -24,7 +24,8 @@ object outForgeMakerMod {
       __obj.asInstanceOf[ForgeOptions]
     }
     
-    extension [Self <: ForgeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForgeOptions] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     }

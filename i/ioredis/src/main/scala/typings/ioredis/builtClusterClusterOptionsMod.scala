@@ -188,7 +188,8 @@ object builtClusterClusterOptionsMod {
       __obj.asInstanceOf[ClusterOptions]
     }
     
-    extension [Self <: ClusterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClusterOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoPipeliningIgnoredCommands(value: js.Array[String]): Self = StObject.set(x, "autoPipeliningIgnoredCommands", value.asInstanceOf[js.Any])
       

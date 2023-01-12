@@ -15,7 +15,8 @@ object ICloudMetaData {
     __obj.asInstanceOf[ICloudMetaData]
   }
   
-  extension [Self <: ICloudMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICloudMetaData] (val x: Self) extends AnyVal {
     
     inline def setSession_id(value: java.lang.String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
   }

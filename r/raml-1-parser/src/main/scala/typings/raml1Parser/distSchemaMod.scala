@@ -53,7 +53,8 @@ object distSchemaMod {
       __obj.asInstanceOf[IncludeReference]
     }
     
-    extension [Self <: IncludeReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeReference] (val x: Self) extends AnyVal {
       
       inline def setAsString(value: () => String): Self = StObject.set(x, "asString", js.Any.fromFunction0(value))
       
@@ -80,7 +81,8 @@ object distSchemaMod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       

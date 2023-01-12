@@ -22,7 +22,8 @@ object Method {
     __obj.asInstanceOf[Method[TPayload]]
   }
   
-  extension [Self <: Method[?], TPayload](x: Self & Method[TPayload]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Method[?], TPayload] (val x: Self & Method[TPayload]) extends AnyVal {
     
     inline def setData(value: TPayload): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

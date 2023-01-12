@@ -19,7 +19,8 @@ object InsertReplaceValue {
     __obj.asInstanceOf[InsertReplaceValue]
   }
   
-  extension [Self <: InsertReplaceValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertReplaceValue] (val x: Self) extends AnyVal {
     
     inline def setType(value: expr_list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

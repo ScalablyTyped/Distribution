@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[S3rverBucketConfig]
     }
     
-    extension [Self <: S3rverBucketConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3rverBucketConfig] (val x: Self) extends AnyVal {
       
       inline def setConfigs(value: js.Array[String | Buffer]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[S3rverOptions]
     }
     
-    extension [Self <: S3rverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3rverOptions] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

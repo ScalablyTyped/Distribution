@@ -99,7 +99,8 @@ object distSrcEventsMod {
       __obj.asInstanceOf[EventObject[EventType]]
     }
     
-    extension [Self <: EventObject[?], EventType](x: Self & EventObject[EventType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventObject[?], EventType] (val x: Self & EventObject[EventType]) extends AnyVal {
       
       inline def setHandleEvent(value: EventType => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }

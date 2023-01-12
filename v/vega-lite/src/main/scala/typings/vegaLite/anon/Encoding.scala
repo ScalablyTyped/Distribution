@@ -32,7 +32,8 @@ object Encoding {
     __obj.asInstanceOf[Encoding]
   }
   
-  extension [Self <: Encoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
     
     inline def setEncoding(
       value: fill | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | text | size | typings.vegaLite.vegaLiteStrings.x | y | shape

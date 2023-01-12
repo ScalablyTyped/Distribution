@@ -18,7 +18,8 @@ object DescribeMultiplexRequest {
     __obj.asInstanceOf[DescribeMultiplexRequest]
   }
   
-  extension [Self <: DescribeMultiplexRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMultiplexRequest] (val x: Self) extends AnyVal {
     
     inline def setMultiplexId(value: string): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
   }

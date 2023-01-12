@@ -18,7 +18,8 @@ object WorkbookFilter {
     __obj.asInstanceOf[WorkbookFilter]
   }
   
-  extension [Self <: WorkbookFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookFilter] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: NullableOption[WorkbookFilterCriteria]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     

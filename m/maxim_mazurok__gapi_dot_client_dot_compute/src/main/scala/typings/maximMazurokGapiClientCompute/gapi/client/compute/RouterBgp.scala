@@ -41,7 +41,8 @@ object RouterBgp {
     __obj.asInstanceOf[RouterBgp]
   }
   
-  extension [Self <: RouterBgp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterBgp] (val x: Self) extends AnyVal {
     
     inline def setAdvertiseMode(value: String): Self = StObject.set(x, "advertiseMode", value.asInstanceOf[js.Any])
     

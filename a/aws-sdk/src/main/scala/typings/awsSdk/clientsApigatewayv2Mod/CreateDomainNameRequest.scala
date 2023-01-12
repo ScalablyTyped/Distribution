@@ -33,7 +33,8 @@ object CreateDomainNameRequest {
     __obj.asInstanceOf[CreateDomainNameRequest]
   }
   
-  extension [Self <: CreateDomainNameRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDomainNameRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: StringWithLengthBetween1And512): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

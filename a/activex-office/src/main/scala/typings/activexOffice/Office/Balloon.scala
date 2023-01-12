@@ -77,7 +77,8 @@ object Balloon {
     __obj.asInstanceOf[Balloon]
   }
   
-  extension [Self <: Balloon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Balloon] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: MsoAnimationType): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
     

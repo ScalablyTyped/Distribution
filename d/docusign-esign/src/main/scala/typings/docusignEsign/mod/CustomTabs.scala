@@ -423,7 +423,8 @@ object CustomTabs {
     __obj.asInstanceOf[CustomTabs]
   }
   
-  extension [Self <: CustomTabs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTabs] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

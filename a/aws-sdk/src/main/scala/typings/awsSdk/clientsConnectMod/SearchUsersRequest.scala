@@ -35,7 +35,8 @@ object SearchUsersRequest {
     __obj.asInstanceOf[SearchUsersRequest]
   }
   
-  extension [Self <: SearchUsersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchUsersRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

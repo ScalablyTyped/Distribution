@@ -82,7 +82,8 @@ object JQueryRatyOptions {
     __obj.asInstanceOf[JQueryRatyOptions]
   }
   
-  extension [Self <: JQueryRatyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryRatyOptions] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

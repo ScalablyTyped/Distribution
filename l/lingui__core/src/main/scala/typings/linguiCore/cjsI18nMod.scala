@@ -98,7 +98,8 @@ object cjsI18nMod {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setChange(value: () => Unit): Self = StObject.set(x, "change", js.Any.fromFunction0(value))
       
@@ -119,7 +120,8 @@ object cjsI18nMod {
       __obj.asInstanceOf[LocaleData]
     }
     
-    extension [Self <: LocaleData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocaleData] (val x: Self) extends AnyVal {
       
       inline def setPlurals(value: js.Function): Self = StObject.set(x, "plurals", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object cjsI18nMod {
       __obj.asInstanceOf[MessageDescriptor]
     }
     
-    extension [Self <: MessageDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageDescriptor] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -187,7 +190,8 @@ object cjsI18nMod {
       __obj.asInstanceOf[MessageOptions]
     }
     
-    extension [Self <: MessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -220,7 +224,8 @@ object cjsI18nMod {
       __obj.asInstanceOf[MissingMessageEvent]
     }
     
-    extension [Self <: MissingMessageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MissingMessageEvent] (val x: Self) extends AnyVal {
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -253,7 +258,8 @@ object cjsI18nMod {
       __obj.asInstanceOf[setupI18nProps]
     }
     
-    extension [Self <: setupI18nProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: setupI18nProps] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       

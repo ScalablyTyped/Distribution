@@ -103,7 +103,8 @@ object outCoreMod {
       __obj.asInstanceOf[BeforeBuildContext]
     }
     
-    extension [Self <: BeforeBuildContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeBuildContext] (val x: Self) extends AnyVal {
       
       inline def setAppDir(value: String): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object outCoreMod {
       __obj.asInstanceOf[SourceRepositoryInfo]
     }
     
-    extension [Self <: SourceRepositoryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceRepositoryInfo] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -186,7 +188,8 @@ object outCoreMod {
       __obj.asInstanceOf[TargetConfiguration]
     }
     
-    extension [Self <: TargetConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetConfiguration] (val x: Self) extends AnyVal {
       
       inline def setArch(value: js.Array[ArchType] | ArchType): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -214,7 +217,8 @@ object outCoreMod {
       __obj.asInstanceOf[TargetSpecificOptions]
     }
     
-    extension [Self <: TargetSpecificOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetSpecificOptions] (val x: Self) extends AnyVal {
       
       inline def setArtifactName(value: String): Self = StObject.set(x, "artifactName", value.asInstanceOf[js.Any])
       

@@ -114,7 +114,8 @@ object distCommonjsViewsItemItemMod {
       __obj.asInstanceOf[StrictItemProps]
     }
     
-    extension [Self <: StrictItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictItemProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

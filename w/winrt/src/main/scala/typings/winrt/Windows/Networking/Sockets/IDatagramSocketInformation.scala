@@ -22,7 +22,8 @@ object IDatagramSocketInformation {
     __obj.asInstanceOf[IDatagramSocketInformation]
   }
   
-  extension [Self <: IDatagramSocketInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDatagramSocketInformation] (val x: Self) extends AnyVal {
     
     inline def setLocalAddress(value: HostName): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     

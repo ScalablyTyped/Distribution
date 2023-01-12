@@ -17,7 +17,8 @@ object PidsStats {
     __obj.asInstanceOf[PidsStats]
   }
   
-  extension [Self <: PidsStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PidsStats] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

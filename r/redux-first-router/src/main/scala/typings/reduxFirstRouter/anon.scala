@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: js.Object): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[CapitalizedWords[TState]]
     }
     
-    extension [Self <: CapitalizedWords[?], TState](x: Self & CapitalizedWords[TState]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CapitalizedWords[?], TState] (val x: Self & CapitalizedWords[TState]) extends AnyVal {
       
       inline def setCapitalizedWords(value: Boolean): Self = StObject.set(x, "capitalizedWords", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object anon {
       __obj.asInstanceOf[Enhancer[TKeys, TState]]
     }
     
-    extension [Self <: Enhancer[?, ?], TKeys, TState](x: Self & (Enhancer[TKeys, TState])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enhancer[?, ?], TKeys, TState] (val x: Self & (Enhancer[TKeys, TState])) extends AnyVal {
       
       inline def setEnhancer(
         value: /* next */ StoreEnhancerStoreCreator[js.Object, js.Object] => StoreEnhancerStoreCreator[js.Object, js.Object]
@@ -185,7 +188,8 @@ object anon {
       __obj.asInstanceOf[NotFoundPath]
     }
     
-    extension [Self <: NotFoundPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotFoundPath] (val x: Self) extends AnyVal {
       
       inline def setNotFoundPath(value: String): Self = StObject.set(x, "notFoundPath", value.asInstanceOf[js.Any])
       
@@ -214,7 +218,8 @@ object anon {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setParams(value: Nullable[typings.reduxFirstRouter.mod.Params]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -241,7 +246,8 @@ object anon {
       __obj.asInstanceOf[Pathname]
     }
     
-    extension [Self <: Pathname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pathname] (val x: Self) extends AnyVal {
       
       inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     }

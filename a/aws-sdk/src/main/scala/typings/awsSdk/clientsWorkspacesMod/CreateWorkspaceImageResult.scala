@@ -53,7 +53,8 @@ object CreateWorkspaceImageResult {
     __obj.asInstanceOf[CreateWorkspaceImageResult]
   }
   
-  extension [Self <: CreateWorkspaceImageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkspaceImageResult] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: js.Date): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     

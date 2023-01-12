@@ -17,7 +17,8 @@ object PutTemplateParams {
     __obj.asInstanceOf[PutTemplateParams]
   }
   
-  extension [Self <: PutTemplateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutTemplateParams] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

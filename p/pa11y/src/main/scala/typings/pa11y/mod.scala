@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[LaunchConfig]
     }
     
-    extension [Self <: LaunchConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchConfig] (val x: Self) extends AnyVal {
       
       inline def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[LogConfig]
     }
     
-    extension [Self <: LogConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogConfig] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: () => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction0(value))
       
@@ -150,7 +152,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -290,7 +293,8 @@ object mod {
       __obj.asInstanceOf[ResultIssue]
     }
     
-    extension [Self <: ResultIssue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultIssue] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -321,7 +325,8 @@ object mod {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setDocumentTitle(value: String): Self = StObject.set(x, "documentTitle", value.asInstanceOf[js.Any])
       

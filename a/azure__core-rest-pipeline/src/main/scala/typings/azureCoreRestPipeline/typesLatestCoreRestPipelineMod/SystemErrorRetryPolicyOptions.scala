@@ -31,7 +31,8 @@ object SystemErrorRetryPolicyOptions {
     __obj.asInstanceOf[SystemErrorRetryPolicyOptions]
   }
   
-  extension [Self <: SystemErrorRetryPolicyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemErrorRetryPolicyOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object PickImpladdResultPartialP {
     __obj.asInstanceOf[PickImpladdResultPartialP]
   }
   
-  extension [Self <: PickImpladdResultPartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpladdResultPartialP] (val x: Self) extends AnyVal {
     
     inline def setAddResult(value: String): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object Prefixed {
     __obj.asInstanceOf[Prefixed]
   }
   
-  extension [Self <: Prefixed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Prefixed] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

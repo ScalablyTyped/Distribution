@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsLayersMod extends Shortcut {
       __obj.asInstanceOf[LayersProps]
     }
     
-    extension [Self <: LayersProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

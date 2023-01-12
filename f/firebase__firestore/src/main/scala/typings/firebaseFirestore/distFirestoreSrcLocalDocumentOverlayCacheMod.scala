@@ -78,7 +78,8 @@ object distFirestoreSrcLocalDocumentOverlayCacheMod {
       __obj.asInstanceOf[DocumentOverlayCache]
     }
     
-    extension [Self <: DocumentOverlayCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentOverlayCache] (val x: Self) extends AnyVal {
       
       inline def setGetOverlay(value: (PersistenceTransaction, DocumentKey) => PersistencePromise[Overlay | Null]): Self = StObject.set(x, "getOverlay", js.Any.fromFunction2(value))
       

@@ -31,7 +31,8 @@ object MML2jaxPreprocessor {
     __obj.asInstanceOf[MML2jaxPreprocessor]
   }
   
-  extension [Self <: MML2jaxPreprocessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MML2jaxPreprocessor] (val x: Self) extends AnyVal {
     
     inline def setPreview(value: Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     

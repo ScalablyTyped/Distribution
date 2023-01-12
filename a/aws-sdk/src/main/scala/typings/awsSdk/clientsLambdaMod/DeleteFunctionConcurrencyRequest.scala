@@ -18,7 +18,8 @@ object DeleteFunctionConcurrencyRequest {
     __obj.asInstanceOf[DeleteFunctionConcurrencyRequest]
   }
   
-  extension [Self <: DeleteFunctionConcurrencyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFunctionConcurrencyRequest] (val x: Self) extends AnyVal {
     
     inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
   }

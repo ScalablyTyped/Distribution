@@ -21,7 +21,8 @@ object ContentDialogHideInfo {
     __obj.asInstanceOf[ContentDialogHideInfo]
   }
   
-  extension [Self <: ContentDialogHideInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentDialogHideInfo] (val x: Self) extends AnyVal {
     
     inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object CryptoPricing {
     __obj.asInstanceOf[CryptoPricing]
   }
   
-  extension [Self <: CryptoPricing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoPricing] (val x: Self) extends AnyVal {
     
     inline def setBitcoin(value: Price[CryptoCurrency]): Self = StObject.set(x, "bitcoin", value.asInstanceOf[js.Any])
     

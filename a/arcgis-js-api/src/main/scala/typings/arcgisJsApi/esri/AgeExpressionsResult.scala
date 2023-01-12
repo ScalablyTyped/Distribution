@@ -34,7 +34,8 @@ object AgeExpressionsResult {
     __obj.asInstanceOf[AgeExpressionsResult]
   }
   
-  extension [Self <: AgeExpressionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgeExpressionsResult] (val x: Self) extends AnyVal {
     
     inline def setHistogramQuery(value: Any): Self = StObject.set(x, "histogramQuery", value.asInstanceOf[js.Any])
     

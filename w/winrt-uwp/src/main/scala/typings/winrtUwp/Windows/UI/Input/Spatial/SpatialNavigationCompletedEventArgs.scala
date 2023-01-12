@@ -18,7 +18,8 @@ object SpatialNavigationCompletedEventArgs {
     __obj.asInstanceOf[SpatialNavigationCompletedEventArgs]
   }
   
-  extension [Self <: SpatialNavigationCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialNavigationCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInteractionSourceKind(value: Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
     

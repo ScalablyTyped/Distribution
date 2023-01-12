@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object mod {
       __obj.asInstanceOf[Stamp]
     }
     
-    extension [Self <: Stamp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stamp] (val x: Self) extends AnyVal {
       
       inline def set$isSync(value: Boolean): Self = StObject.set(x, "$isSync", value.asInstanceOf[js.Any])
       

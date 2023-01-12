@@ -22,7 +22,8 @@ object FolderView {
     __obj.asInstanceOf[FolderView]
   }
   
-  extension [Self <: FolderView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderView] (val x: Self) extends AnyVal {
     
     inline def setSortBy(value: NullableOption[String]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     

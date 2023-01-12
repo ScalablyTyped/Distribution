@@ -19,7 +19,8 @@ object AlertDetection {
     __obj.asInstanceOf[AlertDetection]
   }
   
-  extension [Self <: AlertDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertDetection] (val x: Self) extends AnyVal {
     
     inline def setDetectionType(value: NullableOption[String]): Self = StObject.set(x, "detectionType", value.asInstanceOf[js.Any])
     

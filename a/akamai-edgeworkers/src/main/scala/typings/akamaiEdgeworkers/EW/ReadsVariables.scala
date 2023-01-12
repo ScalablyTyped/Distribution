@@ -18,7 +18,8 @@ object ReadsVariables {
     __obj.asInstanceOf[ReadsVariables]
   }
   
-  extension [Self <: ReadsVariables](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadsVariables] (val x: Self) extends AnyVal {
     
     inline def setGetVariable(value: String => js.UndefOr[String]): Self = StObject.set(x, "getVariable", js.Any.fromFunction1(value))
   }

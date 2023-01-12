@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[DatePickerCustomStylesProps]
     }
     
-    extension [Self <: DatePickerCustomStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerCustomStylesProps] (val x: Self) extends AnyVal {
       
       inline def setBtnCancel(value: StyleProp[Any]): Self = StObject.set(x, "btnCancel", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,8 @@ object mod {
       __obj.asInstanceOf[DatePickerProps]
     }
     
-    extension [Self <: DatePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
       

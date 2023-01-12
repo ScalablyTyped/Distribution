@@ -28,7 +28,8 @@ object TestResultsGroupsForRelease {
     __obj.asInstanceOf[TestResultsGroupsForRelease]
   }
   
-  extension [Self <: TestResultsGroupsForRelease](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResultsGroupsForRelease] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[FieldDetailsForTestResults]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

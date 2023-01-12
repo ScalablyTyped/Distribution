@@ -33,7 +33,8 @@ object AccessLog {
     __obj.asInstanceOf[AccessLog]
   }
   
-  extension [Self <: AccessLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessLog] (val x: Self) extends AnyVal {
     
     inline def setEmitInterval(value: AccessLogInterval): Self = StObject.set(x, "EmitInterval", value.asInstanceOf[js.Any])
     

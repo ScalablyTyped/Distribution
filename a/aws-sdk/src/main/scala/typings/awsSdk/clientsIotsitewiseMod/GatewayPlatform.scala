@@ -23,7 +23,8 @@ object GatewayPlatform {
     __obj.asInstanceOf[GatewayPlatform]
   }
   
-  extension [Self <: GatewayPlatform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayPlatform] (val x: Self) extends AnyVal {
     
     inline def setGreengrass(value: Greengrass): Self = StObject.set(x, "greengrass", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object PartialStepInputProps {
     __obj.asInstanceOf[PartialStepInputProps]
   }
   
-  extension [Self <: PartialStepInputProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStepInputProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

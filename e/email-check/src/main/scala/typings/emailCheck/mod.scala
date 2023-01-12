@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[EmailCheckOptions]
     }
     
-    extension [Self <: EmailCheckOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailCheckOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

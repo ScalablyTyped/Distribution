@@ -64,7 +64,8 @@ object DocumentProperties {
     __obj.asInstanceOf[DocumentProperties]
   }
   
-  extension [Self <: DocumentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentProperties] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }

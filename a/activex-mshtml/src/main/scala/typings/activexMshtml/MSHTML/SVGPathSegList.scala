@@ -43,7 +43,8 @@ object SVGPathSegList {
     __obj.asInstanceOf[SVGPathSegList]
   }
   
-  extension [Self <: SVGPathSegList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPathSegList] (val x: Self) extends AnyVal {
     
     inline def setAppendItem(value: SVGPathSeg => SVGPathSeg): Self = StObject.set(x, "appendItem", js.Any.fromFunction1(value))
     

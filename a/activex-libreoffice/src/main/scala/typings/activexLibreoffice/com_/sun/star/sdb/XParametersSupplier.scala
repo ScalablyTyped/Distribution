@@ -37,7 +37,8 @@ object XParametersSupplier {
     __obj.asInstanceOf[XParametersSupplier]
   }
   
-  extension [Self <: XParametersSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XParametersSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetParameters(value: () => XIndexAccess): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     

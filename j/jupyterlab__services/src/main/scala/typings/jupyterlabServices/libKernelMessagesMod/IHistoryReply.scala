@@ -17,7 +17,8 @@ object IHistoryReply {
     __obj.asInstanceOf[IHistoryReply]
   }
   
-  extension [Self <: IHistoryReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHistoryReply] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: js.Array[js.Tuple3[Double, Double, String | (js.Tuple2[String, String])]]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

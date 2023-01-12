@@ -217,7 +217,8 @@ object srcNgtscImportsSrcAliasMod {
       __obj.asInstanceOf[AliasingHost]
     }
     
-    extension [Self <: AliasingHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AliasingHost] (val x: Self) extends AnyVal {
       
       inline def setAliasExportsInDts(value: Boolean): Self = StObject.set(x, "aliasExportsInDts", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DeviceConfiguration {
     __obj.asInstanceOf[DeviceConfiguration]
   }
   
-  extension [Self <: DeviceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSnowconeDeviceConfiguration(value: SnowconeDeviceConfiguration): Self = StObject.set(x, "SnowconeDeviceConfiguration", value.asInstanceOf[js.Any])
     

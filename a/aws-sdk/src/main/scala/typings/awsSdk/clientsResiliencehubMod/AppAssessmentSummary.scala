@@ -73,7 +73,8 @@ object AppAssessmentSummary {
     __obj.asInstanceOf[AppAssessmentSummary]
   }
   
-  extension [Self <: AppAssessmentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppAssessmentSummary] (val x: Self) extends AnyVal {
     
     inline def setAppArn(value: Arn): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     

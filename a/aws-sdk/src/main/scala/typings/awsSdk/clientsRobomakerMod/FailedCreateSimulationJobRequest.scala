@@ -33,7 +33,8 @@ object FailedCreateSimulationJobRequest {
     __obj.asInstanceOf[FailedCreateSimulationJobRequest]
   }
   
-  extension [Self <: FailedCreateSimulationJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedCreateSimulationJobRequest] (val x: Self) extends AnyVal {
     
     inline def setFailedAt(value: js.Date): Self = StObject.set(x, "failedAt", value.asInstanceOf[js.Any])
     

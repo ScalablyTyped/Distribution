@@ -17,7 +17,8 @@ object AssignedInherited {
     __obj.asInstanceOf[AssignedInherited]
   }
   
-  extension [Self <: AssignedInherited](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignedInherited] (val x: Self) extends AnyVal {
     
     inline def setAssigned(value: scala.Double): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
     

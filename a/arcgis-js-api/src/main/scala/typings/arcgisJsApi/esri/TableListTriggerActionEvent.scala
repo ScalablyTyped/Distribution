@@ -17,7 +17,8 @@ object TableListTriggerActionEvent {
     __obj.asInstanceOf[TableListTriggerActionEvent]
   }
   
-  extension [Self <: TableListTriggerActionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableListTriggerActionEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

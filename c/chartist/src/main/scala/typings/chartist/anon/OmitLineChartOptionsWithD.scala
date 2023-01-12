@@ -75,7 +75,8 @@ object OmitLineChartOptionsWithD {
     __obj.asInstanceOf[OmitLineChartOptionsWithD]
   }
   
-  extension [Self <: OmitLineChartOptionsWithD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitLineChartOptionsWithD] (val x: Self) extends AnyVal {
     
     inline def setAreaBase(value: Double): Self = StObject.set(x, "areaBase", value.asInstanceOf[js.Any])
     

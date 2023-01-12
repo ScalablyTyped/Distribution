@@ -47,7 +47,8 @@ object XTerminateListener {
     __obj.asInstanceOf[XTerminateListener]
   }
   
-  extension [Self <: XTerminateListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTerminateListener] (val x: Self) extends AnyVal {
     
     inline def setNotifyTermination(value: EventObject => Unit): Self = StObject.set(x, "notifyTermination", js.Any.fromFunction1(value))
     

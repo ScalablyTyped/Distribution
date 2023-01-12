@@ -15,7 +15,8 @@ object Store {
     __obj.asInstanceOf[Store]
   }
   
-  extension [Self <: Store](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
     
     inline def setStore(value: typings.rcFieldForm.esInterfaceMod.Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object GlobalSecondaryIndexAutoScalingUpdate {
     __obj.asInstanceOf[GlobalSecondaryIndexAutoScalingUpdate]
   }
   
-  extension [Self <: GlobalSecondaryIndexAutoScalingUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalSecondaryIndexAutoScalingUpdate] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     

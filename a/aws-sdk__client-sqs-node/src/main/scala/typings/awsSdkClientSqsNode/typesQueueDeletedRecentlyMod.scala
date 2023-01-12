@@ -21,7 +21,8 @@ object typesQueueDeletedRecentlyMod {
       __obj.asInstanceOf[QueueDeletedRecently]
     }
     
-    extension [Self <: QueueDeletedRecently](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueDeletedRecently] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueDeletedRecently): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

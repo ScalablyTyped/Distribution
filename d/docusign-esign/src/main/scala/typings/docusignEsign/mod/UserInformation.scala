@@ -246,7 +246,8 @@ object UserInformation {
     __obj.asInstanceOf[UserInformation]
   }
   
-  extension [Self <: UserInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserInformation] (val x: Self) extends AnyVal {
     
     inline def setActivationAccessCode(value: String): Self = StObject.set(x, "activationAccessCode", value.asInstanceOf[js.Any])
     

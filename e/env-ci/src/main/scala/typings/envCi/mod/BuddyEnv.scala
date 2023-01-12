@@ -38,7 +38,8 @@ object BuddyEnv {
     __obj.asInstanceOf[BuddyEnv]
   }
   
-  extension [Self <: BuddyEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuddyEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

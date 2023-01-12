@@ -22,7 +22,8 @@ object ScrollDetails {
     __obj.asInstanceOf[ScrollDetails]
   }
   
-  extension [Self <: ScrollDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollDetails] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: Position): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

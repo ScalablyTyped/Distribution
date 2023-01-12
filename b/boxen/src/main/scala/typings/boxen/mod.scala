@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[CustomBorderStyle]
     }
     
-    extension [Self <: CustomBorderStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomBorderStyle] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -239,7 +240,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | right | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -338,7 +340,8 @@ object mod {
       __obj.asInstanceOf[Spacing]
     }
     
-    extension [Self <: Spacing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spacing] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

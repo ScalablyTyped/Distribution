@@ -28,7 +28,8 @@ object UntagStreamInput {
     __obj.asInstanceOf[UntagStreamInput]
   }
   
-  extension [Self <: UntagStreamInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntagStreamInput] (val x: Self) extends AnyVal {
     
     inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     

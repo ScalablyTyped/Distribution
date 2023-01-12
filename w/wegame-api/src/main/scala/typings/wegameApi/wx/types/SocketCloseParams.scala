@@ -29,7 +29,8 @@ object SocketCloseParams {
     __obj.asInstanceOf[SocketCloseParams]
   }
   
-  extension [Self <: SocketCloseParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketCloseParams] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

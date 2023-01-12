@@ -18,7 +18,8 @@ object DvbTdtSettings {
     __obj.asInstanceOf[DvbTdtSettings]
   }
   
-  extension [Self <: DvbTdtSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DvbTdtSettings] (val x: Self) extends AnyVal {
     
     inline def setRepInterval(value: integerMin1000Max30000): Self = StObject.set(x, "RepInterval", value.asInstanceOf[js.Any])
     

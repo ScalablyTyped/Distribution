@@ -28,7 +28,8 @@ object AgentAuthMethod {
     __obj.asInstanceOf[AgentAuthMethod]
   }
   
-  extension [Self <: AgentAuthMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentAuthMethod] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: (BaseAgent[String | Buffer | ParsedKey]) | String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

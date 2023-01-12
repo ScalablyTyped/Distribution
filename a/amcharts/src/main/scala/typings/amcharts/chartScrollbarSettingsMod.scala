@@ -339,7 +339,8 @@ object chartScrollbarSettingsMod {
       __obj.asInstanceOf[ChartScrollbarSettings]
     }
     
-    extension [Self <: ChartScrollbarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartScrollbarSettings] (val x: Self) extends AnyVal {
       
       inline def setAutoGridCount(value: Boolean): Self = StObject.set(x, "autoGridCount", value.asInstanceOf[js.Any])
       

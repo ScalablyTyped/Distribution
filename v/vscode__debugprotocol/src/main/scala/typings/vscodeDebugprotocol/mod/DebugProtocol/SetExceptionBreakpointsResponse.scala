@@ -34,7 +34,8 @@ object SetExceptionBreakpointsResponse {
     __obj.asInstanceOf[SetExceptionBreakpointsResponse]
   }
   
-  extension [Self <: SetExceptionBreakpointsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetExceptionBreakpointsResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: `0`): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

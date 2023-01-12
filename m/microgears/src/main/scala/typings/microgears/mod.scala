@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[MetaInformation]
     }
     
-    extension [Self <: MetaInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaInformation] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[Plugin]
     }
     
-    extension [Self <: Plugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
       
       inline def setAfterChain(value: (Any, Any) => Any): Self = StObject.set(x, "afterChain", js.Any.fromFunction2(value))
       
@@ -91,7 +93,8 @@ object mod {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

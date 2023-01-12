@@ -124,7 +124,8 @@ object GetDomainDetailResponse {
     __obj.asInstanceOf[GetDomainDetailResponse]
   }
   
-  extension [Self <: GetDomainDetailResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDomainDetailResponse] (val x: Self) extends AnyVal {
     
     inline def setAbuseContactEmail(value: Email): Self = StObject.set(x, "AbuseContactEmail", value.asInstanceOf[js.Any])
     

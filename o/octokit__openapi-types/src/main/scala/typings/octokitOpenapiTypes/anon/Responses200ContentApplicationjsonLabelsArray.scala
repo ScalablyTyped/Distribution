@@ -17,7 +17,8 @@ object Responses200ContentApplicationjsonLabelsArray {
     __obj.asInstanceOf[Responses200ContentApplicationjsonLabelsArray]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonLabelsArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonLabelsArray] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathRunneridNumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object LensSummary {
     __obj.asInstanceOf[LensSummary]
   }
   
-  extension [Self <: LensSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LensSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

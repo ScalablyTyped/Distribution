@@ -18,7 +18,8 @@ object RemoteLocation {
     __obj.asInstanceOf[RemoteLocation]
   }
   
-  extension [Self <: RemoteLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteLocation] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

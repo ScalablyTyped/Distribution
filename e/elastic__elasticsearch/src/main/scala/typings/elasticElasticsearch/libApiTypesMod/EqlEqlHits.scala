@@ -19,7 +19,8 @@ object EqlEqlHits {
     __obj.asInstanceOf[EqlEqlHits[TEvent]]
   }
   
-  extension [Self <: EqlEqlHits[?], TEvent](x: Self & EqlEqlHits[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EqlEqlHits[?], TEvent] (val x: Self & EqlEqlHits[TEvent]) extends AnyVal {
     
     inline def setEvents(value: js.Array[EqlHitsEvent[TEvent]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

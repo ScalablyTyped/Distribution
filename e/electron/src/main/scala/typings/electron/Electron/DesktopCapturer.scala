@@ -25,7 +25,8 @@ object DesktopCapturer {
     __obj.asInstanceOf[DesktopCapturer]
   }
   
-  extension [Self <: DesktopCapturer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DesktopCapturer] (val x: Self) extends AnyVal {
     
     inline def setGetSources(value: SourcesOptions => js.Promise[js.Array[DesktopCapturerSource]]): Self = StObject.set(x, "getSources", js.Any.fromFunction1(value))
   }

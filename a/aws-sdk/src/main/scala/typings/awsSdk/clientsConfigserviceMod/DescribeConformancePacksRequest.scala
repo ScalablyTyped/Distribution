@@ -28,7 +28,8 @@ object DescribeConformancePacksRequest {
     __obj.asInstanceOf[DescribeConformancePacksRequest]
   }
   
-  extension [Self <: DescribeConformancePacksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConformancePacksRequest] (val x: Self) extends AnyVal {
     
     inline def setConformancePackNames(value: ConformancePackNamesList): Self = StObject.set(x, "ConformancePackNames", value.asInstanceOf[js.Any])
     

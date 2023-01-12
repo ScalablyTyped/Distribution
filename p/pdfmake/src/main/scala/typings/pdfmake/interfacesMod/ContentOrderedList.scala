@@ -370,7 +370,8 @@ object ContentOrderedList {
     __obj.asInstanceOf[ContentOrderedList]
   }
   
-  extension [Self <: ContentOrderedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentOrderedList] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     

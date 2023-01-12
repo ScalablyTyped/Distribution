@@ -16,7 +16,8 @@ object Scale {
     __obj.asInstanceOf[Scale]
   }
   
-  extension [Self <: Scale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
     
     inline def setScale(value: typings.chartJs.mod.Scale[CoreScaleOptions]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }

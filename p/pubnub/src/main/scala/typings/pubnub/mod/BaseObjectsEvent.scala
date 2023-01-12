@@ -24,7 +24,8 @@ object BaseObjectsEvent {
     __obj.asInstanceOf[BaseObjectsEvent]
   }
   
-  extension [Self <: BaseObjectsEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseObjectsEvent] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

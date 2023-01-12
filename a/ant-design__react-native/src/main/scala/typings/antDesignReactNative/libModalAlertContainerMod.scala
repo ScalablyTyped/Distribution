@@ -44,7 +44,8 @@ object libModalAlertContainerMod {
       __obj.asInstanceOf[AlertContainerProps]
     }
     
-    extension [Self <: AlertContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertContainerProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Action[TextStyle]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

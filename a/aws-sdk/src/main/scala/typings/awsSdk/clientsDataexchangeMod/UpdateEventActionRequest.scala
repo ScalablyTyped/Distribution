@@ -23,7 +23,8 @@ object UpdateEventActionRequest {
     __obj.asInstanceOf[UpdateEventActionRequest]
   }
   
-  extension [Self <: UpdateEventActionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEventActionRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

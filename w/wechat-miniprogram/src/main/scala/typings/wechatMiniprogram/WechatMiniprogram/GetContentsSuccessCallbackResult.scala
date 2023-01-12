@@ -24,7 +24,8 @@ object GetContentsSuccessCallbackResult {
     __obj.asInstanceOf[GetContentsSuccessCallbackResult]
   }
   
-  extension [Self <: GetContentsSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContentsSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: IAnyObject): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

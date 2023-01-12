@@ -21,7 +21,8 @@ object ISearchPane {
     __obj.asInstanceOf[ISearchPane]
   }
   
-  extension [Self <: ISearchPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchPane] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Boolean): Self = StObject.set(x, "Available", value.asInstanceOf[js.Any])
     

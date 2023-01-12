@@ -24,7 +24,8 @@ object PartialIOptions {
     __obj.asInstanceOf[PartialIOptions]
   }
   
-  extension [Self <: PartialIOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIOptions] (val x: Self) extends AnyVal {
     
     inline def setDisabledIntervals(value: js.Array[IDisabledInterval]): Self = StObject.set(x, "disabledIntervals", value.asInstanceOf[js.Any])
     

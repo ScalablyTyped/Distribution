@@ -26,7 +26,8 @@ object DismissedreasonState {
     __obj.asInstanceOf[DismissedreasonState]
   }
   
-  extension [Self <: DismissedreasonState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DismissedreasonState] (val x: Self) extends AnyVal {
     
     inline def setDismissed_comment(value: String): Self = StObject.set(x, "dismissed_comment", value.asInstanceOf[js.Any])
     

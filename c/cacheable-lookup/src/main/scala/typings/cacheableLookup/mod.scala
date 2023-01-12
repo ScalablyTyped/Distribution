@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[CacheInstance]
     }
     
-    extension [Self <: CacheInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheInstance] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => TPromise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -163,7 +164,8 @@ object mod {
       __obj.asInstanceOf[EntryObject]
     }
     
-    extension [Self <: EntryObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryObject] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object mod {
       __obj.asInstanceOf[LookupOptions]
     }
     
-    extension [Self <: LookupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LookupOptions] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -301,7 +304,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCache(value: CacheInstance): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

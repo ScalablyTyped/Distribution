@@ -78,7 +78,8 @@ object IterableChanges {
     __obj.asInstanceOf[IterableChanges[V]]
   }
   
-  extension [Self <: IterableChanges[?], V](x: Self & IterableChanges[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IterableChanges[?], V] (val x: Self & IterableChanges[V]) extends AnyVal {
     
     inline def setForEachAddedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachAddedItem", js.Any.fromFunction1(value))
     

@@ -20,7 +20,8 @@ object Indent_ {
     __obj.asInstanceOf[Indent_]
   }
   
-  extension [Self <: Indent_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Indent_] (val x: Self) extends AnyVal {
     
     inline def setContents(value: Doc): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

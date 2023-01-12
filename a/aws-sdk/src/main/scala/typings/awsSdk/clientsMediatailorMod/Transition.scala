@@ -38,7 +38,8 @@ object Transition {
     __obj.asInstanceOf[Transition]
   }
   
-  extension [Self <: Transition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
     
     inline def setDurationMillis(value: long): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
     

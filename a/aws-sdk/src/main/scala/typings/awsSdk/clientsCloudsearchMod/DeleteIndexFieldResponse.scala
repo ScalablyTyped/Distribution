@@ -18,7 +18,8 @@ object DeleteIndexFieldResponse {
     __obj.asInstanceOf[DeleteIndexFieldResponse]
   }
   
-  extension [Self <: DeleteIndexFieldResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIndexFieldResponse] (val x: Self) extends AnyVal {
     
     inline def setIndexField(value: IndexFieldStatus): Self = StObject.set(x, "IndexField", value.asInstanceOf[js.Any])
   }

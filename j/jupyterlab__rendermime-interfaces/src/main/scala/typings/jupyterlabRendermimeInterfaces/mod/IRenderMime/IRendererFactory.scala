@@ -45,7 +45,8 @@ object IRendererFactory {
     __obj.asInstanceOf[IRendererFactory]
   }
   
-  extension [Self <: IRendererFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRendererFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderer(value: IRendererOptions => IRenderer): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
     

@@ -44,7 +44,8 @@ object typesLibPlaceholderMod {
       __obj.asInstanceOf[PlaceholderProps]
     }
     
-    extension [Self <: PlaceholderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlaceholderProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

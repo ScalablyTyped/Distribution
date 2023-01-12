@@ -16,7 +16,8 @@ object OnClick {
     __obj.asInstanceOf[OnClick[T, E]]
   }
   
-  extension [Self <: OnClick[?, ?], T /* <: js.Object */, E](x: Self & (OnClick[T, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnClick[?, ?], T /* <: js.Object */, E] (val x: Self & (OnClick[T, E])) extends AnyVal {
     
     inline def setOnClick(value: (Any, ColumnDescription[T, E], Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
   }

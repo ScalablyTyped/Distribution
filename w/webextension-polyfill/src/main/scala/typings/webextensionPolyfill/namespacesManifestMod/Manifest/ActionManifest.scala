@@ -45,7 +45,8 @@ object ActionManifest {
     __obj.asInstanceOf[ActionManifest]
   }
   
-  extension [Self <: ActionManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionManifest] (val x: Self) extends AnyVal {
     
     inline def setBrowser_style(value: Boolean): Self = StObject.set(x, "browser_style", value.asInstanceOf[js.Any])
     

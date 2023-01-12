@@ -16,7 +16,8 @@ object TextSnippet {
     __obj.asInstanceOf[TextSnippet]
   }
   
-  extension [Self <: TextSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSnippet] (val x: Self) extends AnyVal {
     
     inline def setTextSnippet(value: String): Self = StObject.set(x, "textSnippet", value.asInstanceOf[js.Any])
     

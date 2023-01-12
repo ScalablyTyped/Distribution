@@ -114,7 +114,8 @@ object libSecurityAdministratorPasswordResetRequestMod {
       __obj.asInstanceOf[AdministratorPasswordResetRequest]
     }
     
-    extension [Self <: AdministratorPasswordResetRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdministratorPasswordResetRequest] (val x: Self) extends AnyVal {
       
       inline def setAuthorize(value: RSACryptoPKey => String): Self = StObject.set(x, "authorize", js.Any.fromFunction1(value))
       

@@ -80,7 +80,8 @@ object componentsPaginationPaginationStepMod {
       __obj.asInstanceOf[PaginationStepModifierProps]
     }
     
-    extension [Self <: PaginationStepModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationStepModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: next | previous): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     }
@@ -172,7 +173,8 @@ object componentsPaginationPaginationStepMod {
       __obj.asInstanceOf[PaginationStepProps]
     }
     
-    extension [Self <: PaginationStepProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationStepProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: next | previous): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -326,7 +328,8 @@ object componentsPaginationPaginationStepMod {
       __obj.asInstanceOf[PaginationStepVariables]
     }
     
-    extension [Self <: PaginationStepVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationStepVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: next | previous): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }
@@ -343,7 +346,8 @@ object componentsPaginationPaginationStepMod {
       __obj.asInstanceOf[PaginationStepVariablesDefaults]
     }
     
-    extension [Self <: PaginationStepVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationStepVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: next | previous): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }

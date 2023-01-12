@@ -36,7 +36,8 @@ object CIMMultiLayerSymbol {
     __obj.asInstanceOf[CIMMultiLayerSymbol]
   }
   
-  extension [Self <: CIMMultiLayerSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMultiLayerSymbol] (val x: Self) extends AnyVal {
     
     inline def setEffects(value: js.Array[CIMGeometricEffectType]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     

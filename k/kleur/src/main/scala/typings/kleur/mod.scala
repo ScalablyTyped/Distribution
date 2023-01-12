@@ -468,7 +468,8 @@ object mod {
       __obj.asInstanceOf[Kleur]
     }
     
-    extension [Self <: Kleur](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Kleur] (val x: Self) extends AnyVal {
       
       inline def setBgBlack(value: Color): Self = StObject.set(x, "bgBlack", value.asInstanceOf[js.Any])
       

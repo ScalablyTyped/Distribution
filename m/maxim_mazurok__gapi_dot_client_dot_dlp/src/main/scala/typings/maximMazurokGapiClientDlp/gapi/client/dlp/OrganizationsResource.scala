@@ -26,7 +26,8 @@ object OrganizationsResource {
     __obj.asInstanceOf[OrganizationsResource]
   }
   
-  extension [Self <: OrganizationsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationsResource] (val x: Self) extends AnyVal {
     
     inline def setDeidentifyTemplates(value: DeidentifyTemplatesResource): Self = StObject.set(x, "deidentifyTemplates", value.asInstanceOf[js.Any])
     

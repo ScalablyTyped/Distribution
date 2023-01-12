@@ -46,7 +46,8 @@ object ConcurrentAccessRestriction {
     __obj.asInstanceOf[ConcurrentAccessRestriction]
   }
   
-  extension [Self <: ConcurrentAccessRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcurrentAccessRestriction] (val x: Self) extends AnyVal {
     
     inline def setDeviceAllowed(value: Boolean): Self = StObject.set(x, "deviceAllowed", value.asInstanceOf[js.Any])
     

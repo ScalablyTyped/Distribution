@@ -28,7 +28,8 @@ object ListProtectionGroupsRequest {
     __obj.asInstanceOf[ListProtectionGroupsRequest]
   }
   
-  extension [Self <: ListProtectionGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProtectionGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setInclusionFilters(value: InclusionProtectionGroupFilters): Self = StObject.set(x, "InclusionFilters", value.asInstanceOf[js.Any])
     

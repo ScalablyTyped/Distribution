@@ -187,7 +187,8 @@ object AudioControlManager {
     __obj.asInstanceOf[AudioControlManager]
   }
   
-  extension [Self <: AudioControlManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioControlManager] (val x: Self) extends AnyVal {
     
     inline def setGetOutputMode(value: () => AudioOutputMode): Self = StObject.set(x, "getOutputMode", js.Any.fromFunction0(value))
     

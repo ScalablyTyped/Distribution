@@ -51,7 +51,8 @@ object IgValidatorEmailRule {
     __obj.asInstanceOf[IgValidatorEmailRule]
   }
   
-  extension [Self <: IgValidatorEmailRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgValidatorEmailRule] (val x: Self) extends AnyVal {
     
     inline def setFormatMessage(value: String => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
     

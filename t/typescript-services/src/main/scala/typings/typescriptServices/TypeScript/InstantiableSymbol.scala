@@ -23,7 +23,8 @@ object InstantiableSymbol {
     __obj.asInstanceOf[InstantiableSymbol]
   }
   
-  extension [Self <: InstantiableSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstantiableSymbol] (val x: Self) extends AnyVal {
     
     inline def setGetAllowedToReferenceTypeParameters(value: () => js.Array[PullTypeParameterSymbol]): Self = StObject.set(x, "getAllowedToReferenceTypeParameters", js.Any.fromFunction0(value))
     

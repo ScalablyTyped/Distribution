@@ -24,7 +24,8 @@ object AnalysisKuromojiIterationMarkCharFilter {
     __obj.asInstanceOf[AnalysisKuromojiIterationMarkCharFilter]
   }
   
-  extension [Self <: AnalysisKuromojiIterationMarkCharFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisKuromojiIterationMarkCharFilter] (val x: Self) extends AnyVal {
     
     inline def setNormalize_kana(value: Boolean): Self = StObject.set(x, "normalize_kana", value.asInstanceOf[js.Any])
     

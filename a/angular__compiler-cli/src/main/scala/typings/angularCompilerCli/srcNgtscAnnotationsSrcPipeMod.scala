@@ -98,7 +98,8 @@ object srcNgtscAnnotationsSrcPipeMod {
       __obj.asInstanceOf[PipeHandlerData]
     }
     
-    extension [Self <: PipeHandlerData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipeHandlerData] (val x: Self) extends AnyVal {
       
       inline def setClassMetadata(value: R3ClassMetadata): Self = StObject.set(x, "classMetadata", value.asInstanceOf[js.Any])
       

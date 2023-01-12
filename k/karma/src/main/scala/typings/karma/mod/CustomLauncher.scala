@@ -21,7 +21,8 @@ object CustomLauncher {
     __obj.asInstanceOf[CustomLauncher]
   }
   
-  extension [Self <: CustomLauncher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLauncher] (val x: Self) extends AnyVal {
     
     inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

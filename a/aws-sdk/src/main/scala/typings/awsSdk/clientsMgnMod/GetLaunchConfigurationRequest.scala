@@ -18,7 +18,8 @@ object GetLaunchConfigurationRequest {
     __obj.asInstanceOf[GetLaunchConfigurationRequest]
   }
   
-  extension [Self <: GetLaunchConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLaunchConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceServerID(value: SourceServerID): Self = StObject.set(x, "sourceServerID", value.asInstanceOf[js.Any])
   }

@@ -51,7 +51,8 @@ object AccessPackageCatalog {
     __obj.asInstanceOf[AccessPackageCatalog]
   }
   
-  extension [Self <: AccessPackageCatalog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPackageCatalog] (val x: Self) extends AnyVal {
     
     inline def setAccessPackages(value: NullableOption[js.Array[AccessPackage]]): Self = StObject.set(x, "accessPackages", value.asInstanceOf[js.Any])
     

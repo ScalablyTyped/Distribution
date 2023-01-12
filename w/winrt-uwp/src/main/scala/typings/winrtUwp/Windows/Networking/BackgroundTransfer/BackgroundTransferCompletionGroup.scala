@@ -24,7 +24,8 @@ object BackgroundTransferCompletionGroup {
     __obj.asInstanceOf[BackgroundTransferCompletionGroup]
   }
   
-  extension [Self <: BackgroundTransferCompletionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundTransferCompletionGroup] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     

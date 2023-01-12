@@ -33,7 +33,8 @@ object CmafPackageCreateOrUpdateParameters {
     __obj.asInstanceOf[CmafPackageCreateOrUpdateParameters]
   }
   
-  extension [Self <: CmafPackageCreateOrUpdateParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmafPackageCreateOrUpdateParameters] (val x: Self) extends AnyVal {
     
     inline def setEncryption(value: CmafEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     

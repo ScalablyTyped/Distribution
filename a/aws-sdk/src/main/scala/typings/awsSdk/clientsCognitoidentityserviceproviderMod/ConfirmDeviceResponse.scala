@@ -18,7 +18,8 @@ object ConfirmDeviceResponse {
     __obj.asInstanceOf[ConfirmDeviceResponse]
   }
   
-  extension [Self <: ConfirmDeviceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmDeviceResponse] (val x: Self) extends AnyVal {
     
     inline def setUserConfirmationNecessary(value: BooleanType): Self = StObject.set(x, "UserConfirmationNecessary", value.asInstanceOf[js.Any])
     

@@ -94,7 +94,8 @@ object RequestOption {
     __obj.asInstanceOf[RequestOption[T]]
   }
   
-  extension [Self <: RequestOption[?], T /* <: String | IAnyObject | js.typedarray.ArrayBuffer */](x: Self & RequestOption[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestOption[?], T /* <: String | IAnyObject | js.typedarray.ArrayBuffer */] (val x: Self & RequestOption[T]) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

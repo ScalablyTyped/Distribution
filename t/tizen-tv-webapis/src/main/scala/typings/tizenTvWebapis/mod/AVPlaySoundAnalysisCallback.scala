@@ -62,7 +62,8 @@ object AVPlaySoundAnalysisCallback {
     __obj.asInstanceOf[AVPlaySoundAnalysisCallback]
   }
   
-  extension [Self <: AVPlaySoundAnalysisCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AVPlaySoundAnalysisCallback] (val x: Self) extends AnyVal {
     
     inline def setOngetbandsarray(value: js.Array[Double] => Unit): Self = StObject.set(x, "ongetbandsarray", js.Any.fromFunction1(value))
     

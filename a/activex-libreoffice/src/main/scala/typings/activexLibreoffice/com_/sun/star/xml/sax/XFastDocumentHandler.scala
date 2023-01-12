@@ -40,7 +40,8 @@ object XFastDocumentHandler {
     __obj.asInstanceOf[XFastDocumentHandler]
   }
   
-  extension [Self <: XFastDocumentHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFastDocumentHandler] (val x: Self) extends AnyVal {
     
     inline def setEndDocument(value: () => Unit): Self = StObject.set(x, "endDocument", js.Any.fromFunction0(value))
     

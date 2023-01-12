@@ -33,7 +33,8 @@ object ListImagePipelineImagesRequest {
     __obj.asInstanceOf[ListImagePipelineImagesRequest]
   }
   
-  extension [Self <: ListImagePipelineImagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImagePipelineImagesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

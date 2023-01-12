@@ -19,7 +19,8 @@ object MlRuleCondition {
     __obj.asInstanceOf[MlRuleCondition]
   }
   
-  extension [Self <: MlRuleCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlRuleCondition] (val x: Self) extends AnyVal {
     
     inline def setApplies_to(value: MlAppliesTo): Self = StObject.set(x, "applies_to", value.asInstanceOf[js.Any])
     

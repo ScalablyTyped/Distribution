@@ -15,7 +15,8 @@ object BackBufferData {
     __obj.asInstanceOf[BackBufferData]
   }
   
-  extension [Self <: BackBufferData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackBufferData] (val x: Self) extends AnyVal {
     
     inline def setBufferEnd(value: Double): Self = StObject.set(x, "bufferEnd", value.asInstanceOf[js.Any])
   }

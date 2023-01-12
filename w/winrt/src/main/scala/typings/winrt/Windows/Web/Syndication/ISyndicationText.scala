@@ -37,7 +37,8 @@ object ISyndicationText {
     __obj.asInstanceOf[ISyndicationText]
   }
   
-  extension [Self <: ISyndicationText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationText] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

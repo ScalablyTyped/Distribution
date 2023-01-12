@@ -21,7 +21,8 @@ object PreconditionOptions {
     __obj.asInstanceOf[PreconditionOptions]
   }
   
-  extension [Self <: PreconditionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreconditionOptions] (val x: Self) extends AnyVal {
     
     inline def setIfGenerationMatch(value: Double): Self = StObject.set(x, "ifGenerationMatch", value.asInstanceOf[js.Any])
     

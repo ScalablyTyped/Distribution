@@ -23,7 +23,8 @@ object DeleteAutoSnapshotRequest {
     __obj.asInstanceOf[DeleteAutoSnapshotRequest]
   }
   
-  extension [Self <: DeleteAutoSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAutoSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setDate(value: AutoSnapshotDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

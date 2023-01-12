@@ -364,7 +364,8 @@ object mod {
       __obj.asInstanceOf[NodeClamError]
     }
     
-    extension [Self <: NodeClamError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeClamError] (val x: Self) extends AnyVal {
       
       inline def setData(value: Isinfected): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -406,7 +407,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClamdscan(value: BypassTest): Self = StObject.set(x, "clamdscan", value.asInstanceOf[js.Any])
       

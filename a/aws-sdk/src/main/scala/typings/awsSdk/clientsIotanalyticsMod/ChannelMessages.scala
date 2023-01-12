@@ -18,7 +18,8 @@ object ChannelMessages {
     __obj.asInstanceOf[ChannelMessages]
   }
   
-  extension [Self <: ChannelMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelMessages] (val x: Self) extends AnyVal {
     
     inline def setS3Paths(value: S3PathChannelMessages): Self = StObject.set(x, "s3Paths", value.asInstanceOf[js.Any])
     

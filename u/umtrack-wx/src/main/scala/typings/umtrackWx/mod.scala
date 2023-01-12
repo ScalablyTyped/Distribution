@@ -48,7 +48,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[InitParams]
       }
       
-      extension [Self <: InitParams](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InitParams] (val x: Self) extends AnyVal {
         
         inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
         

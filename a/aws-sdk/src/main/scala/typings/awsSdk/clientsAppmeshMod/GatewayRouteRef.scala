@@ -68,7 +68,8 @@ object GatewayRouteRef {
     __obj.asInstanceOf[GatewayRouteRef]
   }
   
-  extension [Self <: GatewayRouteRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayRouteRef] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

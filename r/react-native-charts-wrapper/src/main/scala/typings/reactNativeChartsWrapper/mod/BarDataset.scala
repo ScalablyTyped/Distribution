@@ -19,7 +19,8 @@ object BarDataset {
     __obj.asInstanceOf[BarDataset]
   }
   
-  extension [Self <: BarDataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarDataset] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: BarDatasetConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

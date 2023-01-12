@@ -19,7 +19,8 @@ object ProjectSettings {
     __obj.asInstanceOf[ProjectSettings]
   }
   
-  extension [Self <: ProjectSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectSettings] (val x: Self) extends AnyVal {
     
     inline def setDefaultBucket(value: String): Self = StObject.set(x, "defaultBucket", value.asInstanceOf[js.Any])
     

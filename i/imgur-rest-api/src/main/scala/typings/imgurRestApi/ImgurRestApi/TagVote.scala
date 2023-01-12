@@ -21,7 +21,8 @@ object TagVote {
     __obj.asInstanceOf[TagVote]
   }
   
-  extension [Self <: TagVote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagVote] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

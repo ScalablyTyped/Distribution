@@ -68,7 +68,8 @@ object DigitalWallet {
     __obj.asInstanceOf[DigitalWallet]
   }
   
-  extension [Self <: DigitalWallet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DigitalWallet] (val x: Self) extends AnyVal {
     
     inline def setBiller(value: BillerCode): Self = StObject.set(x, "biller", value.asInstanceOf[js.Any])
     

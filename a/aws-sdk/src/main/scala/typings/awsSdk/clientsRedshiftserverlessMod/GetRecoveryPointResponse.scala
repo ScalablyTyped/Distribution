@@ -18,7 +18,8 @@ object GetRecoveryPointResponse {
     __obj.asInstanceOf[GetRecoveryPointResponse]
   }
   
-  extension [Self <: GetRecoveryPointResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRecoveryPointResponse] (val x: Self) extends AnyVal {
     
     inline def setRecoveryPoint(value: RecoveryPoint): Self = StObject.set(x, "recoveryPoint", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Command]
     }
     
-    extension [Self <: Command](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
       
       inline def setContent(value: HTMLElement | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MenuInstance]
     }
     
-    extension [Self <: MenuInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuInstance] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }
@@ -236,7 +238,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setActiveFillColor(value: String): Self = StObject.set(x, "activeFillColor", value.asInstanceOf[js.Any])
       

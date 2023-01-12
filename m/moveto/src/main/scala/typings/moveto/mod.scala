@@ -110,7 +110,8 @@ object mod {
       __obj.asInstanceOf[MoveToOptions]
     }
     
-    extension [Self <: MoveToOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveToOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* target */ HTMLElement | Double => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       

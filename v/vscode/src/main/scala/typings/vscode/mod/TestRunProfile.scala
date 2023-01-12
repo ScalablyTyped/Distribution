@@ -79,7 +79,8 @@ object TestRunProfile {
     __obj.asInstanceOf[TestRunProfile]
   }
   
-  extension [Self <: TestRunProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRunProfile] (val x: Self) extends AnyVal {
     
     inline def setConfigureHandler(value: () => Unit): Self = StObject.set(x, "configureHandler", js.Any.fromFunction0(value))
     

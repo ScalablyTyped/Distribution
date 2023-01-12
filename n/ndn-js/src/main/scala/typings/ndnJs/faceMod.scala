@@ -178,7 +178,8 @@ object faceMod {
       __obj.asInstanceOf[FaceCtorOptions]
     }
     
-    extension [Self <: FaceCtorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceCtorOptions] (val x: Self) extends AnyVal {
       
       inline def setConnectionInfo(value: TransportConnectionInfo): Self = StObject.set(x, "connectionInfo", value.asInstanceOf[js.Any])
       

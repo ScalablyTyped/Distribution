@@ -26,7 +26,8 @@ object RepositoryidSecretname {
     __obj.asInstanceOf[RepositoryidSecretname]
   }
   
-  extension [Self <: RepositoryidSecretname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryidSecretname] (val x: Self) extends AnyVal {
     
     inline def setEnvironment_name(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['environment-name'] */ js.Any

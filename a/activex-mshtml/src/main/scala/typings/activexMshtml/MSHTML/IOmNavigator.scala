@@ -76,7 +76,8 @@ object IOmNavigator {
     __obj.asInstanceOf[IOmNavigator]
   }
   
-  extension [Self <: IOmNavigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOmNavigator] (val x: Self) extends AnyVal {
     
     inline def setAppCodeName(value: String): Self = StObject.set(x, "appCodeName", value.asInstanceOf[js.Any])
     

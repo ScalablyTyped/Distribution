@@ -31,7 +31,8 @@ object PinMediaKeyMessageTypestr {
     __obj.asInstanceOf[PinMediaKeyMessageTypestr]
   }
   
-  extension [Self <: PinMediaKeyMessageTypestr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinMediaKeyMessageTypestr] (val x: Self) extends AnyVal {
     
     inline def `setIndividualization-request`(value: String): Self = StObject.set(x, "individualization-request", value.asInstanceOf[js.Any])
     

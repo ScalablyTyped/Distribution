@@ -18,7 +18,8 @@ object ModelMetadataSearchExpression {
     __obj.asInstanceOf[ModelMetadataSearchExpression]
   }
   
-  extension [Self <: ModelMetadataSearchExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelMetadataSearchExpression] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: ModelMetadataFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Replacement]
     }
     
-    extension [Self <: Replacement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Replacement] (val x: Self) extends AnyVal {
       
       inline def setReplacement(value: String | (js.Function1[/* substring */ String, String])): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
       

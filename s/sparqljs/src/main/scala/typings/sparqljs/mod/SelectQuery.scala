@@ -41,7 +41,8 @@ object SelectQuery {
     __obj.asInstanceOf[SelectQuery]
   }
   
-  extension [Self <: SelectQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectQuery] (val x: Self) extends AnyVal {
     
     inline def setDistinct(value: Boolean): Self = StObject.set(x, "distinct", value.asInstanceOf[js.Any])
     

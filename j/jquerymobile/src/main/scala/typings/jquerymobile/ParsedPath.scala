@@ -65,7 +65,8 @@ object ParsedPath {
     __obj.asInstanceOf[ParsedPath]
   }
   
-  extension [Self <: ParsedPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedPath] (val x: Self) extends AnyVal {
     
     inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     

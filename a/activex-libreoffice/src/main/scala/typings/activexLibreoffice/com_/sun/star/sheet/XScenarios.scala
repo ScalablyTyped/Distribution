@@ -49,7 +49,8 @@ object XScenarios {
     __obj.asInstanceOf[XScenarios]
   }
   
-  extension [Self <: XScenarios](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XScenarios] (val x: Self) extends AnyVal {
     
     inline def setAddNewByName(value: (String, SeqEquiv[CellRangeAddress], String) => Unit): Self = StObject.set(x, "addNewByName", js.Any.fromFunction3(value))
     

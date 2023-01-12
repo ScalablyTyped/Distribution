@@ -18,7 +18,8 @@ object ReturnTypeGetManifestIconsResponse {
     __obj.asInstanceOf[ReturnTypeGetManifestIconsResponse]
   }
   
-  extension [Self <: ReturnTypeGetManifestIconsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetManifestIconsResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

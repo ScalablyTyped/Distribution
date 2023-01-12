@@ -19,7 +19,8 @@ object NonceDetails {
     __obj.asInstanceOf[NonceDetails]
   }
   
-  extension [Self <: NonceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonceDetails] (val x: Self) extends AnyVal {
     
     inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     

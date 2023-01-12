@@ -64,7 +64,8 @@ object distKernelRegistryMod {
       __obj.asInstanceOf[GradConfig]
     }
     
-    extension [Self <: GradConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GradConfig] (val x: Self) extends AnyVal {
       
       inline def setGradFunc(
         value: (/* dy */ Tensor[Rank] | js.Array[Tensor[Rank]], /* saved */ js.Array[Tensor[Rank]], /* attrs */ NamedAttrMap) => NamedGradientMap
@@ -122,7 +123,8 @@ object distKernelRegistryMod {
       __obj.asInstanceOf[KernelConfig]
     }
     
-    extension [Self <: KernelConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KernelConfig] (val x: Self) extends AnyVal {
       
       inline def setBackendName(value: String): Self = StObject.set(x, "backendName", value.asInstanceOf[js.Any])
       
@@ -185,7 +187,8 @@ object distKernelRegistryMod {
       __obj.asInstanceOf[TensorInfo]
     }
     
-    extension [Self <: TensorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TensorInfo] (val x: Self) extends AnyVal {
       
       inline def setDataId(value: DataId): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
       

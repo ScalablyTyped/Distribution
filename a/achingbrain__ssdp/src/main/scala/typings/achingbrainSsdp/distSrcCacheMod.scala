@@ -40,7 +40,8 @@ object distSrcCacheMod {
       __obj.asInstanceOf[Cache_]
     }
     
-    extension [Self <: Cache_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache_] (val x: Self) extends AnyVal {
       
       inline def setCacheService(value: Service[Record[String, Any]] => Unit): Self = StObject.set(x, "cacheService", js.Any.fromFunction1(value))
       

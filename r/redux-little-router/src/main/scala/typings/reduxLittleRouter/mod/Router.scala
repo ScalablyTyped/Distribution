@@ -30,7 +30,8 @@ object Router {
     __obj.asInstanceOf[Router]
   }
   
-  extension [Self <: Router](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Router] (val x: Self) extends AnyVal {
     
     inline def setEnhancer(
       value: /* next */ StoreEnhancerStoreCreator[js.Object, js.Object] => StoreEnhancerStoreCreator[Location, js.Object]

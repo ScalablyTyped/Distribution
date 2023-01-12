@@ -15,7 +15,8 @@ object UpdateInstanceMetadataOptionsResult {
     __obj.asInstanceOf[UpdateInstanceMetadataOptionsResult]
   }
   
-  extension [Self <: UpdateInstanceMetadataOptionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInstanceMetadataOptionsResult] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

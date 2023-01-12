@@ -46,7 +46,8 @@ object IUtilString {
     __obj.asInstanceOf[IUtilString]
   }
   
-  extension [Self <: IUtilString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUtilString] (val x: Self) extends AnyVal {
     
     inline def setCamelize(value: String => String): Self = StObject.set(x, "camelize", js.Any.fromFunction1(value))
     

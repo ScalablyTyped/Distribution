@@ -30,7 +30,8 @@ object XEventHandler {
     __obj.asInstanceOf[XEventHandler]
   }
   
-  extension [Self <: XEventHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEventHandler] (val x: Self) extends AnyVal {
     
     inline def setHandleEvent(value: Any => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
   }

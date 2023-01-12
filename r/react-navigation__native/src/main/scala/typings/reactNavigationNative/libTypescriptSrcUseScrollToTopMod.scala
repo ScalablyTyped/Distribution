@@ -30,7 +30,8 @@ object libTypescriptSrcUseScrollToTopMod {
       __obj.asInstanceOf[ScrollOptions]
     }
     
-    extension [Self <: ScrollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       

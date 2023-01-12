@@ -15,7 +15,8 @@ object PkFactory {
     __obj.asInstanceOf[PkFactory]
   }
   
-  extension [Self <: PkFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PkFactory] (val x: Self) extends AnyVal {
     
     inline def setCreatePk(value: () => Any): Self = StObject.set(x, "createPk", js.Any.fromFunction0(value))
   }

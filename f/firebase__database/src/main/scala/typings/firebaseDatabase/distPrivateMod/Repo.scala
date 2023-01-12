@@ -74,7 +74,8 @@ object Repo {
     __obj.asInstanceOf[Repo]
   }
   
-  extension [Self <: Repo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Repo] (val x: Self) extends AnyVal {
     
     inline def setAppCheckProvider_(value: AppCheckTokenProvider): Self = StObject.set(x, "appCheckProvider_", value.asInstanceOf[js.Any])
     

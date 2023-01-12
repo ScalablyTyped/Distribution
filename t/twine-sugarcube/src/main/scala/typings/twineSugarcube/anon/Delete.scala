@@ -125,7 +125,8 @@ object Delete {
     __obj.asInstanceOf[Delete]
   }
   
-  extension [Self <: Delete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, /* repeated */ String | Id) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

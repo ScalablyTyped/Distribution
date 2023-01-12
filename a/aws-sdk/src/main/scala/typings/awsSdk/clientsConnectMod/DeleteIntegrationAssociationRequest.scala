@@ -23,7 +23,8 @@ object DeleteIntegrationAssociationRequest {
     __obj.asInstanceOf[DeleteIntegrationAssociationRequest]
   }
   
-  extension [Self <: DeleteIntegrationAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIntegrationAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

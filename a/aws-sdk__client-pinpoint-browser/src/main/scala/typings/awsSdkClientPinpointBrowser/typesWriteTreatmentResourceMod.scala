@@ -33,7 +33,8 @@ object typesWriteTreatmentResourceMod {
       __obj.asInstanceOf[UnmarshalledWriteTreatmentResource]
     }
     
-    extension [Self <: UnmarshalledWriteTreatmentResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledWriteTreatmentResource] (val x: Self) extends AnyVal {
       
       inline def setMessageConfiguration(value: UnmarshalledMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object typesWriteTreatmentResourceMod {
       __obj.asInstanceOf[WriteTreatmentResource]
     }
     
-    extension [Self <: WriteTreatmentResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteTreatmentResource] (val x: Self) extends AnyVal {
       
       inline def setMessageConfiguration(value: MessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
       

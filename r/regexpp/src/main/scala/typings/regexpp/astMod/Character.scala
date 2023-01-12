@@ -33,7 +33,8 @@ object Character {
     __obj.asInstanceOf[Character]
   }
   
-  extension [Self <: Character](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Character] (val x: Self) extends AnyVal {
     
     inline def setParent(value: Alternative | Quantifier | CharacterClass | CharacterClassRange): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

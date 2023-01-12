@@ -22,7 +22,8 @@ object PathQueryOptionsFilter {
     __obj.asInstanceOf[PathQueryOptionsFilter]
   }
   
-  extension [Self <: PathQueryOptionsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathQueryOptionsFilter] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

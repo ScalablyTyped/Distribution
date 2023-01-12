@@ -28,7 +28,8 @@ object SubDomain {
     __obj.asInstanceOf[SubDomain]
   }
   
-  extension [Self <: SubDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubDomain] (val x: Self) extends AnyVal {
     
     inline def setDnsRecord(value: DNSRecord): Self = StObject.set(x, "dnsRecord", value.asInstanceOf[js.Any])
     

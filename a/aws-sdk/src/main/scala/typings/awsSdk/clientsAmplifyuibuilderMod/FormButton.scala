@@ -28,7 +28,8 @@ object FormButton {
     __obj.asInstanceOf[FormButton]
   }
   
-  extension [Self <: FormButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormButton] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

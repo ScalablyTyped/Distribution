@@ -961,7 +961,8 @@ object ojsunburstMod {
         __obj.asInstanceOf[DataContext]
       }
       
-      extension [Self <: DataContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataContext] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -989,7 +990,8 @@ object ojsunburstMod {
         __obj.asInstanceOf[NodeContext]
       }
       
-      extension [Self <: NodeContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NodeContext] (val x: Self) extends AnyVal {
         
         inline def setIndexPath(value: js.Array[Double]): Self = StObject.set(x, "indexPath", value.asInstanceOf[js.Any])
         
@@ -1028,7 +1030,8 @@ object ojsunburstMod {
         __obj.asInstanceOf[RootNodeContext[K, D]]
       }
       
-      extension [Self <: RootNodeContext[?, ?], K, D](x: Self & (RootNodeContext[K, D])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RootNodeContext[?, ?], K, D] (val x: Self & (RootNodeContext[K, D])) extends AnyVal {
         
         inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
         
@@ -1082,7 +1085,8 @@ object ojsunburstMod {
         __obj.asInstanceOf[TooltipContext[K, D]]
       }
       
-      extension [Self <: TooltipContext[?, ?], K, D](x: Self & (TooltipContext[K, D])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TooltipContext[?, ?], K, D] (val x: Self & (TooltipContext[K, D])) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -1337,7 +1341,8 @@ object ojsunburstMod {
       __obj.asInstanceOf[ojSunburstEventMap[K, D]]
     }
     
-    extension [Self <: ojSunburstEventMap[?, ?], K, D](x: Self & (ojSunburstEventMap[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSunburstEventMap[?, ?], K, D] (val x: Self & (ojSunburstEventMap[K, D])) extends AnyVal {
       
       inline def setAnimationDurationChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "animationDurationChanged", value.asInstanceOf[js.Any])
       
@@ -2902,7 +2907,8 @@ object ojsunburstMod {
       __obj.asInstanceOf[ojSunburstNodeEventMap]
     }
     
-    extension [Self <: ojSunburstNodeEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSunburstNodeEventMap] (val x: Self) extends AnyVal {
       
       inline def setBorderColorChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "borderColorChanged", value.asInstanceOf[js.Any])
       
@@ -2993,7 +2999,8 @@ object ojsunburstMod {
       __obj.asInstanceOf[ojSunburstNodeSettableProperties]
     }
     
-    extension [Self <: ojSunburstNodeSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSunburstNodeSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -3115,7 +3122,8 @@ object ojsunburstMod {
       __obj.asInstanceOf[ojSunburstNodeSettablePropertiesLenient]
     }
     
-    extension [Self <: ojSunburstNodeSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSunburstNodeSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -3285,7 +3293,8 @@ object ojsunburstMod {
       __obj.asInstanceOf[ojSunburstSettableProperties[K, D]]
     }
     
-    extension [Self <: ojSunburstSettableProperties[?, ?], K, D](x: Self & (ojSunburstSettableProperties[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSunburstSettableProperties[?, ?], K, D] (val x: Self & (ojSunburstSettableProperties[K, D])) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
@@ -3419,7 +3428,8 @@ object ojsunburstMod {
       __obj.asInstanceOf[ojSunburstSettablePropertiesLenient[K, D]]
     }
     
-    extension [Self <: ojSunburstSettablePropertiesLenient[?, ?], K, D](x: Self & (ojSunburstSettablePropertiesLenient[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSunburstSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojSunburstSettablePropertiesLenient[K, D])) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       

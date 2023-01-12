@@ -20,7 +20,8 @@ object FilterOptions {
     __obj.asInstanceOf[FilterOptions]
   }
   
-  extension [Self <: FilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterOptions] (val x: Self) extends AnyVal {
     
     inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     

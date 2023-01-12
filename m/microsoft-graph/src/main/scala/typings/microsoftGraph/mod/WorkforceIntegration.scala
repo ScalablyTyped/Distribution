@@ -38,7 +38,8 @@ object WorkforceIntegration {
     __obj.asInstanceOf[WorkforceIntegration]
   }
   
-  extension [Self <: WorkforceIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkforceIntegration] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: NullableOption[Double]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

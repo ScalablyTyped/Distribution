@@ -21,7 +21,8 @@ object GaugeIndicator {
     __obj.asInstanceOf[GaugeIndicator]
   }
   
-  extension [Self <: GaugeIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GaugeIndicator] (val x: Self) extends AnyVal {
     
     inline def setType(value: GaugeIndicatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

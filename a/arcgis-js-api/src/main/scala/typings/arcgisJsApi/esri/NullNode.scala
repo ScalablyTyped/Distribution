@@ -26,7 +26,8 @@ object NullNode {
     __obj.asInstanceOf[NullNode]
   }
   
-  extension [Self <: NullNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullNode] (val x: Self) extends AnyVal {
     
     inline def setType(value: `null`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

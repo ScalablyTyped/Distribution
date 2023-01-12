@@ -378,7 +378,8 @@ object ContentSvg {
     __obj.asInstanceOf[ContentSvg]
   }
   
-  extension [Self <: ContentSvg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentSvg] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     

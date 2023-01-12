@@ -28,7 +28,8 @@ object dxPieChartSeriesTypes {
     __obj.asInstanceOf[dxPieChartSeriesTypes]
   }
   
-  extension [Self <: dxPieChartSeriesTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPieChartSeriesTypes] (val x: Self) extends AnyVal {
     
     inline def setCommonPieChartSeries(value: dxPieChartSeriesTypesCommonPieChartSeries): Self = StObject.set(x, "CommonPieChartSeries", value.asInstanceOf[js.Any])
     

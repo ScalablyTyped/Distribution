@@ -54,7 +54,8 @@ object ObjectTypeDeclaration {
     __obj.asInstanceOf[ObjectTypeDeclaration]
   }
   
-  extension [Self <: ObjectTypeDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTypeDeclaration] (val x: Self) extends AnyVal {
     
     inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     

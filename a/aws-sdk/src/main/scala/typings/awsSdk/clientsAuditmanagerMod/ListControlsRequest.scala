@@ -28,7 +28,8 @@ object ListControlsRequest {
     __obj.asInstanceOf[ListControlsRequest]
   }
   
-  extension [Self <: ListControlsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListControlsRequest] (val x: Self) extends AnyVal {
     
     inline def setControlType(value: ControlType): Self = StObject.set(x, "controlType", value.asInstanceOf[js.Any])
     

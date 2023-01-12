@@ -77,7 +77,8 @@ object iconIconMod extends Shortcut {
       __obj.asInstanceOf[IconTypeMap[P, D]]
     }
     
-    extension [Self <: IconTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (IconTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (IconTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: IconClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

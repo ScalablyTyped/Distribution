@@ -37,7 +37,8 @@ object OnComplete {
     __obj.asInstanceOf[OnComplete]
   }
   
-  extension [Self <: OnComplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnComplete] (val x: Self) extends AnyVal {
     
     inline def setOnComplete(
       value: js.ThisFunction1[

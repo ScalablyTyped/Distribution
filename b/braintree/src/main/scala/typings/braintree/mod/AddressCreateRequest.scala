@@ -39,7 +39,8 @@ object AddressCreateRequest {
     __obj.asInstanceOf[AddressCreateRequest]
   }
   
-  extension [Self <: AddressCreateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressCreateRequest] (val x: Self) extends AnyVal {
     
     inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object LocalDeviceResourceData {
     __obj.asInstanceOf[LocalDeviceResourceData]
   }
   
-  extension [Self <: LocalDeviceResourceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalDeviceResourceData] (val x: Self) extends AnyVal {
     
     inline def setGroupOwnerSetting(value: GroupOwnerSetting): Self = StObject.set(x, "GroupOwnerSetting", value.asInstanceOf[js.Any])
     

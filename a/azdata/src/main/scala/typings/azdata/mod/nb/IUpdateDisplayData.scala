@@ -20,7 +20,8 @@ object IUpdateDisplayData {
     __obj.asInstanceOf[IUpdateDisplayData]
   }
   
-  extension [Self <: IUpdateDisplayData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUpdateDisplayData] (val x: Self) extends AnyVal {
     
     inline def setOutput_type(value: update_display_data): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
   }

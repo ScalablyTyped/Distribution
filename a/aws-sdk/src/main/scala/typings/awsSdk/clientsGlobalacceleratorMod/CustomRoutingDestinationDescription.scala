@@ -28,7 +28,8 @@ object CustomRoutingDestinationDescription {
     __obj.asInstanceOf[CustomRoutingDestinationDescription]
   }
   
-  extension [Self <: CustomRoutingDestinationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomRoutingDestinationDescription] (val x: Self) extends AnyVal {
     
     inline def setFromPort(value: PortNumber): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     

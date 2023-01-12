@@ -23,7 +23,8 @@ object InventoryGroup {
     __obj.asInstanceOf[InventoryGroup]
   }
   
-  extension [Self <: InventoryGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryGroup] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: InventoryFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

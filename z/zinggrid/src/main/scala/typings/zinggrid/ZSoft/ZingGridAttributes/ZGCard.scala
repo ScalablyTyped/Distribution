@@ -34,7 +34,8 @@ object ZGCard {
     __obj.asInstanceOf[ZGCard]
   }
   
-  extension [Self <: ZGCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZGCard] (val x: Self) extends AnyVal {
     
     inline def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     

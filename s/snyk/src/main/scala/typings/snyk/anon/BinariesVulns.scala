@@ -18,7 +18,8 @@ object BinariesVulns {
     __obj.asInstanceOf[BinariesVulns]
   }
   
-  extension [Self <: BinariesVulns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinariesVulns] (val x: Self) extends AnyVal {
     
     inline def setBaseImage(value: Any): Self = StObject.set(x, "baseImage", value.asInstanceOf[js.Any])
     

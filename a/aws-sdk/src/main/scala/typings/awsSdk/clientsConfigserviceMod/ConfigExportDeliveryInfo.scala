@@ -43,7 +43,8 @@ object ConfigExportDeliveryInfo {
     __obj.asInstanceOf[ConfigExportDeliveryInfo]
   }
   
-  extension [Self <: ConfigExportDeliveryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigExportDeliveryInfo] (val x: Self) extends AnyVal {
     
     inline def setLastAttemptTime(value: js.Date): Self = StObject.set(x, "lastAttemptTime", value.asInstanceOf[js.Any])
     

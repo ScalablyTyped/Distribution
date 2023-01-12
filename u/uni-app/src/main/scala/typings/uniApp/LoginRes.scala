@@ -48,7 +48,8 @@ object LoginRes {
     __obj.asInstanceOf[LoginRes]
   }
   
-  extension [Self <: LoginRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginRes] (val x: Self) extends AnyVal {
     
     inline def setAnonymousCode(value: String): Self = StObject.set(x, "anonymousCode", value.asInstanceOf[js.Any])
     

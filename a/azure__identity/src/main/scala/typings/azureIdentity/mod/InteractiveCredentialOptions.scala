@@ -33,7 +33,8 @@ object InteractiveCredentialOptions {
     __obj.asInstanceOf[InteractiveCredentialOptions]
   }
   
-  extension [Self <: InteractiveCredentialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveCredentialOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationRecord(value: AuthenticationRecord): Self = StObject.set(x, "authenticationRecord", value.asInstanceOf[js.Any])
     

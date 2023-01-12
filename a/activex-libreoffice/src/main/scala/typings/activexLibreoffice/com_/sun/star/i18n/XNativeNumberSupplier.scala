@@ -58,7 +58,8 @@ object XNativeNumberSupplier {
     __obj.asInstanceOf[XNativeNumberSupplier]
   }
   
-  extension [Self <: XNativeNumberSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNativeNumberSupplier] (val x: Self) extends AnyVal {
     
     inline def setConvertFromXmlAttributes(value: NativeNumberXmlAttributes => Double): Self = StObject.set(x, "convertFromXmlAttributes", js.Any.fromFunction1(value))
     

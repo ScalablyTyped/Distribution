@@ -27,7 +27,8 @@ object ViewTools {
     __obj.asInstanceOf[ViewTools]
   }
   
-  extension [Self <: ViewTools](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewTools] (val x: Self) extends AnyVal {
     
     inline def setAlignSelectionToGrid(value: () => Unit): Self = StObject.set(x, "alignSelectionToGrid", js.Any.fromFunction0(value))
     

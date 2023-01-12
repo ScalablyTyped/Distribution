@@ -71,7 +71,8 @@ object PipeableChain {
     __obj.asInstanceOf[PipeableChain[F]]
   }
   
-  extension [Self <: PipeableChain[?], F](x: Self & PipeableChain[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableChain[?], F] (val x: Self & PipeableChain[F]) extends AnyVal {
     
     inline def setChain(
       value: js.Function1[

@@ -18,7 +18,8 @@ object GetLoginProfileRequest {
     __obj.asInstanceOf[GetLoginProfileRequest]
   }
   
-  extension [Self <: GetLoginProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLoginProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object PeerStreamEvents {
     __obj.asInstanceOf[PeerStreamEvents]
   }
   
-  extension [Self <: PeerStreamEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerStreamEvents] (val x: Self) extends AnyVal {
     
     inline def setClose(value: CustomEvent[scala.Nothing]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object VoiceRecordingConfiguration {
     __obj.asInstanceOf[VoiceRecordingConfiguration]
   }
   
-  extension [Self <: VoiceRecordingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceRecordingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setVoiceRecordingTrack(value: VoiceRecordingTrack): Self = StObject.set(x, "VoiceRecordingTrack", value.asInstanceOf[js.Any])
     

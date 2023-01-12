@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[Cache[T]]
     }
     
-    extension [Self <: Cache[?], T](x: Self & Cache[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache[?], T] (val x: Self & Cache[T]) extends AnyVal {
       
       inline def setAddValue(value: (String, T) => Double): Self = StObject.set(x, "addValue", js.Any.fromFunction2(value))
       
@@ -146,7 +147,8 @@ object mod {
       __obj.asInstanceOf[MultiCache[T]]
     }
     
-    extension [Self <: MultiCache[?], T](x: Self & MultiCache[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiCache[?], T] (val x: Self & MultiCache[T]) extends AnyVal {
       
       inline def setCaches(value: StringDictionary[Cache[T]]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,8 @@ object mod {
       __obj.asInstanceOf[SequentialIDGenerator]
     }
     
-    extension [Self <: SequentialIDGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequentialIDGenerator] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -228,7 +231,8 @@ object mod {
       __obj.asInstanceOf[Sheet]
     }
     
-    extension [Self <: Sheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

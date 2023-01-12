@@ -33,7 +33,8 @@ object TfvcChange {
     __obj.asInstanceOf[TfvcChange]
   }
   
-  extension [Self <: TfvcChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcChange] (val x: Self) extends AnyVal {
     
     inline def setMergeSources(value: js.Array[TfvcMergeSource]): Self = StObject.set(x, "mergeSources", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object Authenticator {
     __obj.asInstanceOf[Authenticator]
   }
   
-  extension [Self <: Authenticator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Authenticator] (val x: Self) extends AnyVal {
     
     inline def setEstablishCredentials(value: () => typings.bluebird.mod.^[Unit]): Self = StObject.set(x, "establishCredentials", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object UnitySettings {
     __obj.asInstanceOf[UnitySettings]
   }
   
-  extension [Self <: UnitySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnitySettings] (val x: Self) extends AnyVal {
     
     inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     

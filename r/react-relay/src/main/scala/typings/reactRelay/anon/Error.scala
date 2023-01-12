@@ -20,7 +20,8 @@ object Error {
     __obj.asInstanceOf[Error[TOperation]]
   }
   
-  extension [Self <: Error[?], TOperation /* <: OperationType */](x: Self & Error[TOperation]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Error[?], TOperation /* <: OperationType */] (val x: Self & Error[TOperation]) extends AnyVal {
     
     inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

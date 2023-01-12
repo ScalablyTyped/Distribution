@@ -88,7 +88,8 @@ object SignedTransactionsBlock {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setTransactionsList(value: js.Array[typings.libraCore.`lib@GeneratedTransactionPbMod`.SignedTransaction.AsObject]): Self = StObject.set(x, "transactionsList", value.asInstanceOf[js.Any])
       

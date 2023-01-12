@@ -18,7 +18,8 @@ object SampleUtterance {
     __obj.asInstanceOf[SampleUtterance]
   }
   
-  extension [Self <: SampleUtterance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SampleUtterance] (val x: Self) extends AnyVal {
     
     inline def setUtterance(value: Utterance): Self = StObject.set(x, "utterance", value.asInstanceOf[js.Any])
   }

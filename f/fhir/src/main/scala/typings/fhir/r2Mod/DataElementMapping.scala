@@ -43,7 +43,8 @@ object DataElementMapping {
     __obj.asInstanceOf[DataElementMapping]
   }
   
-  extension [Self <: DataElementMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataElementMapping] (val x: Self) extends AnyVal {
     
     inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

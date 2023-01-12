@@ -35,7 +35,8 @@ object TargetPoolList {
     __obj.asInstanceOf[TargetPoolList]
   }
   
-  extension [Self <: TargetPoolList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetPoolList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

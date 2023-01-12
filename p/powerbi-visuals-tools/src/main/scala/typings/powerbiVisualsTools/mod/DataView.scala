@@ -28,7 +28,8 @@ object DataView {
     __obj.asInstanceOf[DataView]
   }
   
-  extension [Self <: DataView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataView] (val x: Self) extends AnyVal {
     
     inline def setCategorical(value: DataViewCategorical): Self = StObject.set(x, "categorical", value.asInstanceOf[js.Any])
     

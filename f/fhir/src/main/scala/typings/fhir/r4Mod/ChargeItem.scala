@@ -189,7 +189,8 @@ object ChargeItem {
     __obj.asInstanceOf[ChargeItem]
   }
   
-  extension [Self <: ChargeItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChargeItem] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: js.Array[Reference]): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

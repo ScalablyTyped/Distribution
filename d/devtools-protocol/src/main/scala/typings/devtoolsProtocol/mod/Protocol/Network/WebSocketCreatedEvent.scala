@@ -28,7 +28,8 @@ object WebSocketCreatedEvent {
     __obj.asInstanceOf[WebSocketCreatedEvent]
   }
   
-  extension [Self <: WebSocketCreatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocketCreatedEvent] (val x: Self) extends AnyVal {
     
     inline def setInitiator(value: Initiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     

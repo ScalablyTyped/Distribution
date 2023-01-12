@@ -185,7 +185,8 @@ object ojprogresslistMod {
       inline def timeout: typings.oracleOraclejet.oracleOraclejetStrings.timeout = "timeout".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.timeout]
     }
     
-    extension [Self <: ProgressItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressItem] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (EventType, EventListener) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
@@ -1271,7 +1272,8 @@ object ojprogresslistMod {
       __obj.asInstanceOf[ojProgressListEventMap]
     }
     
-    extension [Self <: ojProgressListEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojProgressListEventMap] (val x: Self) extends AnyVal {
       
       inline def setDataChanged(value: JetElementCustomEvent[(DataProvider[Any, Any]) | Null]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
     }
@@ -1290,7 +1292,8 @@ object ojprogresslistMod {
       __obj.asInstanceOf[ojProgressListSettableProperties]
     }
     
-    extension [Self <: ojProgressListSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojProgressListSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setData(value: DataProvider[Any, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -1312,7 +1315,8 @@ object ojprogresslistMod {
       __obj.asInstanceOf[ojProgressListSettablePropertiesLenient]
     }
     
-    extension [Self <: ojProgressListSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojProgressListSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setData(value: DataProvider[Any, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

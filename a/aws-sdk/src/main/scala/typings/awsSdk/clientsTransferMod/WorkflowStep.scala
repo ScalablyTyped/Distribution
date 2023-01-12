@@ -38,7 +38,8 @@ object WorkflowStep {
     __obj.asInstanceOf[WorkflowStep]
   }
   
-  extension [Self <: WorkflowStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowStep] (val x: Self) extends AnyVal {
     
     inline def setCopyStepDetails(value: CopyStepDetails): Self = StObject.set(x, "CopyStepDetails", value.asInstanceOf[js.Any])
     

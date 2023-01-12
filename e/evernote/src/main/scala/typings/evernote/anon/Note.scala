@@ -17,7 +17,8 @@ object Note {
     __obj.asInstanceOf[Note]
   }
   
-  extension [Self <: Note](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Note] (val x: Self) extends AnyVal {
     
     inline def setNote(value: typings.evernote.mod.Types.Note): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     

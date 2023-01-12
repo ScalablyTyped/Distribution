@@ -46,7 +46,8 @@ object WebglTexture {
     __obj.asInstanceOf[WebglTexture]
   }
   
-  extension [Self <: WebglTexture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebglTexture] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: Any => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     

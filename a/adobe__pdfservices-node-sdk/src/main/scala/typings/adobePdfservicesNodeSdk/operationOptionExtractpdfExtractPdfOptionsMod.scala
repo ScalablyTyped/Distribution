@@ -83,7 +83,8 @@ object operationOptionExtractpdfExtractPdfOptionsMod {
       __obj.asInstanceOf[ExtractElementType]
     }
     
-    extension [Self <: ExtractElementType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractElementType] (val x: Self) extends AnyVal {
       
       inline def setTABLES(value: tables): Self = StObject.set(x, "TABLES", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object operationOptionExtractpdfExtractPdfOptionsMod {
       __obj.asInstanceOf[ExtractRenditionsElementType]
     }
     
-    extension [Self <: ExtractRenditionsElementType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractRenditionsElementType] (val x: Self) extends AnyVal {
       
       inline def setFIGURES(value: figures): Self = StObject.set(x, "FIGURES", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object operationOptionExtractpdfExtractPdfOptionsMod {
       __obj.asInstanceOf[TableStructureType]
     }
     
-    extension [Self <: TableStructureType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableStructureType] (val x: Self) extends AnyVal {
       
       inline def setCSV(value: csv): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
       

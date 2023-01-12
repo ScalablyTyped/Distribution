@@ -50,7 +50,8 @@ object ListWorkflowsItem {
     __obj.asInstanceOf[ListWorkflowsItem]
   }
   
-  extension [Self <: ListWorkflowsItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWorkflowsItem] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object Docvaluefields {
     __obj.asInstanceOf[Docvaluefields]
   }
   
-  extension [Self <: Docvaluefields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Docvaluefields] (val x: Self) extends AnyVal {
     
     inline def setDocvalue_fields(value: js.Array[QueryDslFieldAndFormat | Field]): Self = StObject.set(x, "docvalue_fields", value.asInstanceOf[js.Any])
     

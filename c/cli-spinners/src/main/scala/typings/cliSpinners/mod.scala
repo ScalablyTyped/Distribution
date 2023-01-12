@@ -384,7 +384,8 @@ object mod {
       __obj.asInstanceOf[Spinner]
     }
     
-    extension [Self <: Spinner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spinner] (val x: Self) extends AnyVal {
       
       inline def setFrames(value: js.Array[String]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       

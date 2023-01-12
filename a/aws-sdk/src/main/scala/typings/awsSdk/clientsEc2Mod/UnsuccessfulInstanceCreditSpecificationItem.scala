@@ -23,7 +23,8 @@ object UnsuccessfulInstanceCreditSpecificationItem {
     __obj.asInstanceOf[UnsuccessfulInstanceCreditSpecificationItem]
   }
   
-  extension [Self <: UnsuccessfulInstanceCreditSpecificationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsuccessfulInstanceCreditSpecificationItem] (val x: Self) extends AnyVal {
     
     inline def setError(value: UnsuccessfulInstanceCreditSpecificationItemError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

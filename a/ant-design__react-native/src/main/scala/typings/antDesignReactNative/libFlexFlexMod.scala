@@ -56,7 +56,8 @@ object libFlexFlexMod {
       __obj.asInstanceOf[FlexProps]
     }
     
-    extension [Self <: FlexProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexProps] (val x: Self) extends AnyVal {
       
       inline def setOnLongPress(value: () => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction0(value))
       

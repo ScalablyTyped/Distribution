@@ -21,7 +21,8 @@ object GridFilterable {
     __obj.asInstanceOf[GridFilterable]
   }
   
-  extension [Self <: GridFilterable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFilterable] (val x: Self) extends AnyVal {
     
     inline def setExtra(value: Boolean): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     

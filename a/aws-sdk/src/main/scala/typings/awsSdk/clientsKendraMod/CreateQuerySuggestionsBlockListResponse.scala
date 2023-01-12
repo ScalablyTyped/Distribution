@@ -18,7 +18,8 @@ object CreateQuerySuggestionsBlockListResponse {
     __obj.asInstanceOf[CreateQuerySuggestionsBlockListResponse]
   }
   
-  extension [Self <: CreateQuerySuggestionsBlockListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateQuerySuggestionsBlockListResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: QuerySuggestionsBlockListId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object VirtualGatewayHttp2ConnectionPool {
     __obj.asInstanceOf[VirtualGatewayHttp2ConnectionPool]
   }
   
-  extension [Self <: VirtualGatewayHttp2ConnectionPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayHttp2ConnectionPool] (val x: Self) extends AnyVal {
     
     inline def setMaxRequests(value: MaxRequests): Self = StObject.set(x, "maxRequests", value.asInstanceOf[js.Any])
   }

@@ -44,7 +44,8 @@ object ElementAccessExpression {
     __obj.asInstanceOf[ElementAccessExpression]
   }
   
-  extension [Self <: ElementAccessExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementAccessExpression] (val x: Self) extends AnyVal {
     
     inline def setArgumentExpression(value: AST): Self = StObject.set(x, "argumentExpression", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object TimedMetadataPresentationModeChangedEventArgs {
     __obj.asInstanceOf[TimedMetadataPresentationModeChangedEventArgs]
   }
   
-  extension [Self <: TimedMetadataPresentationModeChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedMetadataPresentationModeChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNewPresentationMode(value: TimedMetadataTrackPresentationMode): Self = StObject.set(x, "newPresentationMode", value.asInstanceOf[js.Any])
     

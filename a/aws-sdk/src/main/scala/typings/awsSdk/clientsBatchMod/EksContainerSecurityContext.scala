@@ -38,7 +38,8 @@ object EksContainerSecurityContext {
     __obj.asInstanceOf[EksContainerSecurityContext]
   }
   
-  extension [Self <: EksContainerSecurityContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EksContainerSecurityContext] (val x: Self) extends AnyVal {
     
     inline def setPrivileged(value: Boolean): Self = StObject.set(x, "privileged", value.asInstanceOf[js.Any])
     

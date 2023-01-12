@@ -25,7 +25,8 @@ object SVGBoundingBoxOptions {
     __obj.asInstanceOf[SVGBoundingBoxOptions]
   }
   
-  extension [Self <: SVGBoundingBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGBoundingBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setClipped(value: scala.Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object MultiSelectSelectEvent {
     __obj.asInstanceOf[MultiSelectSelectEvent]
   }
   
-  extension [Self <: MultiSelectSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiSelectSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setDataItem(value: Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     

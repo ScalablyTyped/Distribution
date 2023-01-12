@@ -33,7 +33,8 @@ object GetMatchesResponse {
     __obj.asInstanceOf[GetMatchesResponse]
   }
   
-  extension [Self <: GetMatchesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMatchesResponse] (val x: Self) extends AnyVal {
     
     inline def setMatchGenerationDate(value: js.Date): Self = StObject.set(x, "MatchGenerationDate", value.asInstanceOf[js.Any])
     

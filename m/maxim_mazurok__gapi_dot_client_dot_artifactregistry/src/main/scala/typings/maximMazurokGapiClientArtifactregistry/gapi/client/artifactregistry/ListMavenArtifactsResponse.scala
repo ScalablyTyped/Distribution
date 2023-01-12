@@ -19,7 +19,8 @@ object ListMavenArtifactsResponse {
     __obj.asInstanceOf[ListMavenArtifactsResponse]
   }
   
-  extension [Self <: ListMavenArtifactsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMavenArtifactsResponse] (val x: Self) extends AnyVal {
     
     inline def setMavenArtifacts(value: js.Array[MavenArtifact]): Self = StObject.set(x, "mavenArtifacts", value.asInstanceOf[js.Any])
     

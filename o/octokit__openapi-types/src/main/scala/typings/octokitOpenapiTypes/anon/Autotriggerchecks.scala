@@ -16,7 +16,8 @@ object Autotriggerchecks {
     __obj.asInstanceOf[Autotriggerchecks]
   }
   
-  extension [Self <: Autotriggerchecks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autotriggerchecks] (val x: Self) extends AnyVal {
     
     inline def setAuto_trigger_checks(value: js.Array[Setting]): Self = StObject.set(x, "auto_trigger_checks", value.asInstanceOf[js.Any])
     

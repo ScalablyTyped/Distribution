@@ -23,7 +23,8 @@ object MonitorInstancesRequest {
     __obj.asInstanceOf[MonitorInstancesRequest]
   }
   
-  extension [Self <: MonitorInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

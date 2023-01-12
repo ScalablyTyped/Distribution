@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[FetchError]
     }
     
-    extension [Self <: FetchError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchError] (val x: Self) extends AnyVal {
       
       inline def setFetchError(value: Instantiable2[/* message */ String, /* type */ String, typings.nodeFetch.mod.FetchError]): Self = StObject.set(x, "FetchError", value.asInstanceOf[js.Any])
       

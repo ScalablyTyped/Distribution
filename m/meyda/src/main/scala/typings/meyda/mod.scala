@@ -121,7 +121,8 @@ object mod {
       __obj.asInstanceOf[MeydaAnalyzerOptions]
     }
     
-    extension [Self <: MeydaAnalyzerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeydaAnalyzerOptions] (val x: Self) extends AnyVal {
       
       inline def setAudioContext(value: AudioContext): Self = StObject.set(x, "audioContext", value.asInstanceOf[js.Any])
       
@@ -306,7 +307,8 @@ object mod {
       __obj.asInstanceOf[MeydaFeaturesObject]
     }
     
-    extension [Self <: MeydaFeaturesObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeydaFeaturesObject] (val x: Self) extends AnyVal {
       
       inline def setAmplitudeSpectrum(value: js.typedarray.Float32Array): Self = StObject.set(x, "amplitudeSpectrum", value.asInstanceOf[js.Any])
       
@@ -387,7 +389,8 @@ object mod {
       __obj.asInstanceOf[SliceableArrayLike[T]]
     }
     
-    extension [Self <: SliceableArrayLike[?], T](x: Self & SliceableArrayLike[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliceableArrayLike[?], T] (val x: Self & SliceableArrayLike[T]) extends AnyVal {
       
       inline def setSlice(value: (Double, Double) => SliceableArrayLike[T]): Self = StObject.set(x, "slice", js.Any.fromFunction2(value))
     }

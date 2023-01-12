@@ -28,7 +28,8 @@ object CapacityProviderStrategyItem {
     __obj.asInstanceOf[CapacityProviderStrategyItem]
   }
   
-  extension [Self <: CapacityProviderStrategyItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapacityProviderStrategyItem] (val x: Self) extends AnyVal {
     
     inline def setBase(value: CapacityProviderStrategyItemBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

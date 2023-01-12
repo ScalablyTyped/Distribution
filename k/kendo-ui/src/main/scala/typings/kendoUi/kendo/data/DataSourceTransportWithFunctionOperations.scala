@@ -27,7 +27,8 @@ object DataSourceTransportWithFunctionOperations {
     __obj.asInstanceOf[DataSourceTransportWithFunctionOperations]
   }
   
-  extension [Self <: DataSourceTransportWithFunctionOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceTransportWithFunctionOperations] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: /* options */ DataSourceTransportOptions => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

@@ -31,7 +31,8 @@ object XEntityResolver {
     __obj.asInstanceOf[XEntityResolver]
   }
   
-  extension [Self <: XEntityResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEntityResolver] (val x: Self) extends AnyVal {
     
     inline def setResolveEntity(value: (String, String) => InputSource): Self = StObject.set(x, "resolveEntity", js.Any.fromFunction2(value))
   }

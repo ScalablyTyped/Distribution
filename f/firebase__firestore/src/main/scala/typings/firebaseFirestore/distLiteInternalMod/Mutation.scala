@@ -79,7 +79,8 @@ object Mutation {
     __obj.asInstanceOf[Mutation]
   }
   
-  extension [Self <: Mutation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mutation] (val x: Self) extends AnyVal {
     
     inline def setFieldTransforms(value: js.Array[FieldTransform]): Self = StObject.set(x, "fieldTransforms", value.asInstanceOf[js.Any])
     

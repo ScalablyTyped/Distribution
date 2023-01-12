@@ -28,7 +28,8 @@ object ClustersConfigDump {
     __obj.asInstanceOf[ClustersConfigDump]
   }
   
-  extension [Self <: ClustersConfigDump](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClustersConfigDump] (val x: Self) extends AnyVal {
     
     inline def setDynamicActiveClusters(value: js.Array[DynamicCluster]): Self = StObject.set(x, "dynamicActiveClusters", value.asInstanceOf[js.Any])
     

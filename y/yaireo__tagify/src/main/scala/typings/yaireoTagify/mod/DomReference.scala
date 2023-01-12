@@ -48,7 +48,8 @@ object DomReference {
     __obj.asInstanceOf[DomReference]
   }
   
-  extension [Self <: DomReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomReference] (val x: Self) extends AnyVal {
     
     inline def setDropdown(value: HTMLDivElement): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     

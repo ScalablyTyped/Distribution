@@ -137,7 +137,8 @@ object libIoFileMod {
       __obj.asInstanceOf[FileListEntry]
     }
     
-    extension [Self <: FileListEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileListEntry] (val x: Self) extends AnyVal {
       
       inline def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
       

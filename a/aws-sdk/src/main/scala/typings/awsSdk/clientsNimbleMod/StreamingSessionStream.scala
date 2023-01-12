@@ -53,7 +53,8 @@ object StreamingSessionStream {
     __obj.asInstanceOf[StreamingSessionStream]
   }
   
-  extension [Self <: StreamingSessionStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingSessionStream] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

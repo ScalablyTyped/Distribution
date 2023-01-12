@@ -27,7 +27,8 @@ object GetRawDataExporter {
     __obj.asInstanceOf[GetRawDataExporter]
   }
   
-  extension [Self <: GetRawDataExporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRawDataExporter] (val x: Self) extends AnyVal {
     
     inline def setFormats(value: js.Array[ProcessKey]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     

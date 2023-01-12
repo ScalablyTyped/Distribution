@@ -765,7 +765,8 @@ object sapMObjectNumberMod {
       __obj.asInstanceOf[ObjectNumberSettings]
     }
     
-    extension [Self <: ObjectNumberSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectNumberSettings] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

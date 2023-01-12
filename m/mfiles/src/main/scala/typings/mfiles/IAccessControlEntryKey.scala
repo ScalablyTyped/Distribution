@@ -41,7 +41,8 @@ object IAccessControlEntryKey {
     __obj.asInstanceOf[IAccessControlEntryKey]
   }
   
-  extension [Self <: IAccessControlEntryKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccessControlEntryKey] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IAccessControlEntryKey): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

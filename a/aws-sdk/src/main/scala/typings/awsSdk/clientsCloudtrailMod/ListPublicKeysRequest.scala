@@ -28,7 +28,8 @@ object ListPublicKeysRequest {
     __obj.asInstanceOf[ListPublicKeysRequest]
   }
   
-  extension [Self <: ListPublicKeysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPublicKeysRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

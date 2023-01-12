@@ -22,7 +22,8 @@ object PartialPrivateSiderMenuPr {
     __obj.asInstanceOf[PartialPrivateSiderMenuPr]
   }
   
-  extension [Self <: PartialPrivateSiderMenuPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPrivateSiderMenuPr] (val x: Self) extends AnyVal {
     
     inline def setMatchMenuKeys(value: js.Array[String]): Self = StObject.set(x, "matchMenuKeys", value.asInstanceOf[js.Any])
     

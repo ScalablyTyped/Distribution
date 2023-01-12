@@ -35,7 +35,8 @@ object DatagramSocketControl {
     __obj.asInstanceOf[DatagramSocketControl]
   }
   
-  extension [Self <: DatagramSocketControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatagramSocketControl] (val x: Self) extends AnyVal {
     
     inline def setDontFragment(value: Boolean): Self = StObject.set(x, "dontFragment", value.asInstanceOf[js.Any])
     

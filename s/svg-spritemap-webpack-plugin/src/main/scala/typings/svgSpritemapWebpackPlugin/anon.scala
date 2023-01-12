@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Assets]
     }
     
-    extension [Self <: Assets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Assets] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: js.Object): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, String | Double | Boolean]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Callback]
     }
     
-    extension [Self <: Callback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* content */ String => String): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -135,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Chunk]
     }
     
-    extension [Self <: Chunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
       
       inline def setChunk(value: Keep): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
@@ -192,7 +196,8 @@ object anon {
       __obj.asInstanceOf[Generate]
     }
     
-    extension [Self <: Generate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Generate] (val x: Self) extends AnyVal {
       
       inline def setGenerate(value: Symbol): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
       
@@ -237,7 +242,8 @@ object anon {
       __obj.asInstanceOf[Keep]
     }
     
-    extension [Self <: Keep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keep] (val x: Self) extends AnyVal {
       
       inline def setKeep(value: Boolean): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
       
@@ -266,7 +272,8 @@ object anon {
       __obj.asInstanceOf[Mixin]
     }
     
-    extension [Self <: Mixin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mixin] (val x: Self) extends AnyVal {
       
       inline def setMixin(value: String): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
       
@@ -306,7 +313,8 @@ object anon {
       __obj.asInstanceOf[Symbol]
     }
     
-    extension [Self <: Symbol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
       
       inline def setSymbol(value: Boolean | String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       

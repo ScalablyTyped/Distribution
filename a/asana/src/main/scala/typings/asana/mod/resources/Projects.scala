@@ -368,7 +368,8 @@ object Projects extends Shortcut {
       __obj.asInstanceOf[CreateParams]
     }
     
-    extension [Self <: CreateParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateParams] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -413,7 +414,8 @@ object Projects extends Shortcut {
       __obj.asInstanceOf[FindAllParams]
     }
     
-    extension [Self <: FindAllParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindAllParams] (val x: Self) extends AnyVal {
       
       inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
       
@@ -442,7 +444,8 @@ object Projects extends Shortcut {
       __obj.asInstanceOf[FindByParams]
     }
     
-    extension [Self <: FindByParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindByParams] (val x: Self) extends AnyVal {
       
       inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
       
@@ -461,7 +464,8 @@ object Projects extends Shortcut {
       __obj.asInstanceOf[FollowersParams]
     }
     
-    extension [Self <: FollowersParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FollowersParams] (val x: Self) extends AnyVal {
       
       inline def setFollowers(value: js.Array[Double | String]): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
       
@@ -480,7 +484,8 @@ object Projects extends Shortcut {
       __obj.asInstanceOf[MembersParams]
     }
     
-    extension [Self <: MembersParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MembersParams] (val x: Self) extends AnyVal {
       
       inline def setMembers(value: js.Array[Double | String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
@@ -507,7 +512,8 @@ object Projects extends Shortcut {
       __obj.asInstanceOf[Status]
     }
     
-    extension [Self <: Status](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: Resource): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -572,7 +578,8 @@ object Projects extends Shortcut {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
       

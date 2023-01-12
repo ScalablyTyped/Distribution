@@ -26,7 +26,8 @@ object Strings {
     __obj.asInstanceOf[Strings]
   }
   
-  extension [Self <: Strings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Strings] (val x: Self) extends AnyVal {
     
     inline def setStrings(value: Boolean): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     

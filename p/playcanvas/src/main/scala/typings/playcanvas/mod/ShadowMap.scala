@@ -21,7 +21,8 @@ object ShadowMap {
     __obj.asInstanceOf[ShadowMap]
   }
   
-  extension [Self <: ShadowMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowMap] (val x: Self) extends AnyVal {
     
     inline def setCached(value: Boolean): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
     

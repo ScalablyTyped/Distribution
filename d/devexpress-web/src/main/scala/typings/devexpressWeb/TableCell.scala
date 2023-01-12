@@ -31,7 +31,8 @@ object TableCell {
     __obj.asInstanceOf[TableCell]
   }
   
-  extension [Self <: TableCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCell] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

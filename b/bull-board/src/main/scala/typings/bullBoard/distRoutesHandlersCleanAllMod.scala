@@ -25,7 +25,8 @@ object distRoutesHandlersCleanAllMod {
       __obj.asInstanceOf[RequestParams]
     }
     
-    extension [Self <: RequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestParams] (val x: Self) extends AnyVal {
       
       inline def setQueueName(value: String): Self = StObject.set(x, "queueName", value.asInstanceOf[js.Any])
       

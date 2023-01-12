@@ -20,7 +20,8 @@ object Symbol {
     __obj.asInstanceOf[Symbol]
   }
   
-  extension [Self <: Symbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
     
     inline def setType(value: SymbolNode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

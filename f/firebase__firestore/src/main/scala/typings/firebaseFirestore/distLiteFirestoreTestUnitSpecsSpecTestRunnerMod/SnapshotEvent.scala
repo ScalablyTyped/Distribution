@@ -29,7 +29,8 @@ object SnapshotEvent {
     __obj.asInstanceOf[SnapshotEvent]
   }
   
-  extension [Self <: SnapshotEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotEvent] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[SpecDocument]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object LambdaFunctionConfiguration {
     __obj.asInstanceOf[LambdaFunctionConfiguration]
   }
   
-  extension [Self <: LambdaFunctionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaFunctionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: EventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

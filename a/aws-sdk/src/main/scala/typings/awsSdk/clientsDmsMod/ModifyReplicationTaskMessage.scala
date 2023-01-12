@@ -58,7 +58,8 @@ object ModifyReplicationTaskMessage {
     __obj.asInstanceOf[ModifyReplicationTaskMessage]
   }
   
-  extension [Self <: ModifyReplicationTaskMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyReplicationTaskMessage] (val x: Self) extends AnyVal {
     
     inline def setCdcStartPosition(value: String): Self = StObject.set(x, "CdcStartPosition", value.asInstanceOf[js.Any])
     

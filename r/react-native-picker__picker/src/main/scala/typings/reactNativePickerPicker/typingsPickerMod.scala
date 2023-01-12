@@ -117,7 +117,8 @@ object typingsPickerMod {
       __obj.asInstanceOf[PickerItemProps[T]]
     }
     
-    extension [Self <: PickerItemProps[?], T](x: Self & PickerItemProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerItemProps[?], T] (val x: Self & PickerItemProps[T]) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -243,7 +244,8 @@ object typingsPickerMod {
       __obj.asInstanceOf[PickerProps[T]]
     }
     
-    extension [Self <: PickerProps[?], T](x: Self & PickerProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerProps[?], T] (val x: Self & PickerProps[T]) extends AnyVal {
       
       inline def setDropdownIconColor(value: Double | ColorValue): Self = StObject.set(x, "dropdownIconColor", value.asInstanceOf[js.Any])
       

@@ -88,7 +88,8 @@ object Tab {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -170,7 +171,8 @@ object Tab {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
         
@@ -264,7 +266,8 @@ object Tab {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setLoaded(value: String): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
         
@@ -321,7 +324,8 @@ object Tab {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
@@ -377,13 +381,15 @@ object Tab {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setDetermineTitle(value: js.Array[Any] => String): Self = StObject.set(x, "determineTitle", js.Any.fromFunction1(value))
       }
     }
     
-    extension [Self <: TemplatesSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplatesSettings] (val x: Self) extends AnyVal {
       
       inline def setDetermineTitle(value: /* tabArray */ js.Array[Any] => String): Self = StObject.set(x, "determineTitle", js.Any.fromFunction1(value))
     }
@@ -402,7 +408,8 @@ object Tab {
         __obj.asInstanceOf[typings.semanticUiTab.SemanticUI.Tab.TemplatesSettings.Param]
       }
       
-      extension [Self <: typings.semanticUiTab.SemanticUI.Tab.TemplatesSettings.Param](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.semanticUiTab.SemanticUI.Tab.TemplatesSettings.Param] (val x: Self) extends AnyVal {
         
         inline def setDetermineTitle(value: /* tabArray */ js.Array[Any] => String): Self = StObject.set(x, "determineTitle", js.Any.fromFunction1(value))
       }

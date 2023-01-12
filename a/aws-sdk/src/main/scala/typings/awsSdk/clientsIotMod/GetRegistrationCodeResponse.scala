@@ -18,7 +18,8 @@ object GetRegistrationCodeResponse {
     __obj.asInstanceOf[GetRegistrationCodeResponse]
   }
   
-  extension [Self <: GetRegistrationCodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRegistrationCodeResponse] (val x: Self) extends AnyVal {
     
     inline def setRegistrationCode(value: RegistrationCode): Self = StObject.set(x, "registrationCode", value.asInstanceOf[js.Any])
     

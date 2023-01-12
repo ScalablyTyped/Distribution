@@ -23,7 +23,8 @@ object BytesPerElement {
     __obj.asInstanceOf[BytesPerElement]
   }
   
-  extension [Self <: BytesPerElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BytesPerElement] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: WebGLBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

@@ -159,7 +159,8 @@ object TimelineController {
     __obj.asInstanceOf[TimelineController]
   }
   
-  extension [Self <: TimelineController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineController] (val x: Self) extends AnyVal {
     
     inline def setAddCues(value: (String, Double, Double, CaptionScreen, js.Array[js.Tuple2[Double, Double]]) => Unit): Self = StObject.set(x, "addCues", js.Any.fromFunction5(value))
     

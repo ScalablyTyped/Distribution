@@ -21,7 +21,8 @@ object FirefoxSpecificProperties {
     __obj.asInstanceOf[FirefoxSpecificProperties]
   }
   
-  extension [Self <: FirefoxSpecificProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirefoxSpecificProperties] (val x: Self) extends AnyVal {
     
     inline def setId(value: ExtensionID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

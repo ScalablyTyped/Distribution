@@ -28,7 +28,8 @@ object GoogleAppsCardV1OnClick {
     __obj.asInstanceOf[GoogleAppsCardV1OnClick]
   }
   
-  extension [Self <: GoogleAppsCardV1OnClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1OnClick] (val x: Self) extends AnyVal {
     
     inline def setAction(value: GoogleAppsCardV1Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

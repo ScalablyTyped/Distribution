@@ -23,7 +23,8 @@ object MetadataControllerConfig {
     __obj.asInstanceOf[MetadataControllerConfig]
   }
   
-  extension [Self <: MetadataControllerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataControllerConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableDateRangeMetadataCues(value: Boolean): Self = StObject.set(x, "enableDateRangeMetadataCues", value.asInstanceOf[js.Any])
     

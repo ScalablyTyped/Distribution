@@ -147,7 +147,8 @@ object ProgressBasicProps {
     __obj.asInstanceOf[ProgressBasicProps]
   }
   
-  extension [Self <: ProgressBasicProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressBasicProps] (val x: Self) extends AnyVal {
     
     inline def setEndColor(value: String): Self = StObject.set(x, "endColor", value.asInstanceOf[js.Any])
     

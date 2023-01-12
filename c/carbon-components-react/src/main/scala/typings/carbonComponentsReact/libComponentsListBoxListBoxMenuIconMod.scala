@@ -30,7 +30,8 @@ object libComponentsListBoxListBoxMenuIconMod extends Shortcut {
       __obj.asInstanceOf[ListBoxMenuIconProps]
     }
     
-    extension [Self <: ListBoxMenuIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBoxMenuIconProps] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }

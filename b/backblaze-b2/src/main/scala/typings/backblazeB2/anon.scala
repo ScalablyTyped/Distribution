@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[applicationKeyIdstringCom]
     }
     
-    extension [Self <: applicationKeyIdstringCom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: applicationKeyIdstringCom] (val x: Self) extends AnyVal {
       
       inline def setApplicationKeyId(value: String): Self = StObject.set(x, "applicationKeyId", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[bucketIdstringCommonArgs]
     }
     
-    extension [Self <: bucketIdstringCommonArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: bucketIdstringCommonArgs] (val x: Self) extends AnyVal {
       
       inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object anon {
       __obj.asInstanceOf[bucketIdstringfileNamestr]
     }
     
-    extension [Self <: bucketIdstringfileNamestr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: bucketIdstringfileNamestr] (val x: Self) extends AnyVal {
       
       inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object anon {
       __obj.asInstanceOf[fileIdstringCommonArgs]
     }
     
-    extension [Self <: fileIdstringCommonArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: fileIdstringCommonArgs] (val x: Self) extends AnyVal {
       
       inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
@@ -158,7 +162,8 @@ object anon {
       __obj.asInstanceOf[fileIdstringDownloadFileO]
     }
     
-    extension [Self <: fileIdstringDownloadFileO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: fileIdstringDownloadFileO] (val x: Self) extends AnyVal {
       
       inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
@@ -198,7 +203,8 @@ object anon {
       __obj.asInstanceOf[fileIdstringfileNamestrin]
     }
     
-    extension [Self <: fileIdstringfileNamestrin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: fileIdstringfileNamestrin] (val x: Self) extends AnyVal {
       
       inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
@@ -232,7 +238,8 @@ object anon {
       __obj.asInstanceOf[fileIdstringpartSha1Array]
     }
     
-    extension [Self <: fileIdstringpartSha1Array](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: fileIdstringpartSha1Array] (val x: Self) extends AnyVal {
       
       inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       
@@ -268,7 +275,8 @@ object anon {
       __obj.asInstanceOf[maxKeyCountnumberstartApp]
     }
     
-    extension [Self <: maxKeyCountnumberstartApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: maxKeyCountnumberstartApp] (val x: Self) extends AnyVal {
       
       inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
       

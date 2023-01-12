@@ -18,7 +18,8 @@ object GutterStyle {
     __obj.asInstanceOf[GutterStyle]
   }
   
-  extension [Self <: GutterStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GutterStyle] (val x: Self) extends AnyVal {
     
     inline def setShow(value: scala.Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
     

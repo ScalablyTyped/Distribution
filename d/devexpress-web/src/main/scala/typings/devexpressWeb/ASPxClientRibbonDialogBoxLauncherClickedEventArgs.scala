@@ -23,7 +23,8 @@ object ASPxClientRibbonDialogBoxLauncherClickedEventArgs {
     __obj.asInstanceOf[ASPxClientRibbonDialogBoxLauncherClickedEventArgs]
   }
   
-  extension [Self <: ASPxClientRibbonDialogBoxLauncherClickedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRibbonDialogBoxLauncherClickedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: ASPxClientRibbonGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }

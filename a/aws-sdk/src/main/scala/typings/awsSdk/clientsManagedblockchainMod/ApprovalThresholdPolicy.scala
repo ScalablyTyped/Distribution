@@ -28,7 +28,8 @@ object ApprovalThresholdPolicy {
     __obj.asInstanceOf[ApprovalThresholdPolicy]
   }
   
-  extension [Self <: ApprovalThresholdPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApprovalThresholdPolicy] (val x: Self) extends AnyVal {
     
     inline def setProposalDurationInHours(value: ProposalDurationInt): Self = StObject.set(x, "ProposalDurationInHours", value.asInstanceOf[js.Any])
     

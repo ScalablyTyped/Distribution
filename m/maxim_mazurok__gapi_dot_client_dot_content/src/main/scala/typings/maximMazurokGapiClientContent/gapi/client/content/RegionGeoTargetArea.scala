@@ -16,7 +16,8 @@ object RegionGeoTargetArea {
     __obj.asInstanceOf[RegionGeoTargetArea]
   }
   
-  extension [Self <: RegionGeoTargetArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionGeoTargetArea] (val x: Self) extends AnyVal {
     
     inline def setGeotargetCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "geotargetCriteriaIds", value.asInstanceOf[js.Any])
     

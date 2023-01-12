@@ -23,7 +23,8 @@ object UpdateHostKeyResponse {
     __obj.asInstanceOf[UpdateHostKeyResponse]
   }
   
-  extension [Self <: UpdateHostKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateHostKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setHostKeyId(value: HostKeyId): Self = StObject.set(x, "HostKeyId", value.asInstanceOf[js.Any])
     

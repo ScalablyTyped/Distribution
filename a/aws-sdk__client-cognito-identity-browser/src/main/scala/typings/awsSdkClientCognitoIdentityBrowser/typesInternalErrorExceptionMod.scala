@@ -55,7 +55,8 @@ object typesInternalErrorExceptionMod {
       __obj.asInstanceOf[InternalErrorException]
     }
     
-    extension [Self <: InternalErrorException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalErrorException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InternalErrorException
@@ -77,7 +78,8 @@ object typesInternalErrorExceptionMod {
       __obj.asInstanceOf[InternalErrorExceptionDetails]
     }
     
-    extension [Self <: InternalErrorExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalErrorExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

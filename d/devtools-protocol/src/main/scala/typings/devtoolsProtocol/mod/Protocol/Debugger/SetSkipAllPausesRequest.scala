@@ -18,7 +18,8 @@ object SetSkipAllPausesRequest {
     __obj.asInstanceOf[SetSkipAllPausesRequest]
   }
   
-  extension [Self <: SetSkipAllPausesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetSkipAllPausesRequest] (val x: Self) extends AnyVal {
     
     inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
   }

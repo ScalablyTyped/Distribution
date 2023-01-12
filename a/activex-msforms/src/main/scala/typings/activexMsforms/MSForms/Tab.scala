@@ -43,7 +43,8 @@ object Tab {
     __obj.asInstanceOf[Tab]
   }
   
-  extension [Self <: Tab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
     
     inline def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AvatarUrl {
     __obj.asInstanceOf[AvatarUrl]
   }
   
-  extension [Self <: AvatarUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvatarUrl] (val x: Self) extends AnyVal {
     
     inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
     

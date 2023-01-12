@@ -18,7 +18,8 @@ object ModelDeployResult {
     __obj.asInstanceOf[ModelDeployResult]
   }
   
-  extension [Self <: ModelDeployResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelDeployResult] (val x: Self) extends AnyVal {
     
     inline def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     

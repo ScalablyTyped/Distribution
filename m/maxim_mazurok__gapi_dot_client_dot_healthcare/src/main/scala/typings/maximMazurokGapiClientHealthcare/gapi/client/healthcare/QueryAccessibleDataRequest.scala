@@ -26,7 +26,8 @@ object QueryAccessibleDataRequest {
     __obj.asInstanceOf[QueryAccessibleDataRequest]
   }
   
-  extension [Self <: QueryAccessibleDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAccessibleDataRequest] (val x: Self) extends AnyVal {
     
     inline def setGcsDestination(value: GoogleCloudHealthcareV1ConsentGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     

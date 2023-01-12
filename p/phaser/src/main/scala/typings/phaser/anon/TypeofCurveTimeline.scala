@@ -25,7 +25,8 @@ object TypeofCurveTimeline {
     __obj.asInstanceOf[TypeofCurveTimeline]
   }
   
-  extension [Self <: TypeofCurveTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCurveTimeline] (val x: Self) extends AnyVal {
     
     inline def setBEZIER(value: Double): Self = StObject.set(x, "BEZIER", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object ViewerConfig {
     __obj.asInstanceOf[ViewerConfig]
   }
   
-  extension [Self <: ViewerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewerConfig] (val x: Self) extends AnyVal {
     
     inline def setBubbleNode(value: BubbleNode): Self = StObject.set(x, "bubbleNode", value.asInstanceOf[js.Any])
     

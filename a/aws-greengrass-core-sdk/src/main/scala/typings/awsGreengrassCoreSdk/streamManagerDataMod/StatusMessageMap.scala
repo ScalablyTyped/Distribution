@@ -30,7 +30,8 @@ object StatusMessageMap {
     __obj.asInstanceOf[StatusMessageMap]
   }
   
-  extension [Self <: StatusMessageMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusMessageMap] (val x: Self) extends AnyVal {
     
     inline def setEventType(value: EventTypeMap): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     

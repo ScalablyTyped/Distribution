@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Arch]
     }
     
-    extension [Self <: Arch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arch] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Ffmpeg]
     }
     
-    extension [Self <: Ffmpeg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ffmpeg] (val x: Self) extends AnyVal {
       
       inline def setFfmpeg(value: String): Self = StObject.set(x, "ffmpeg", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Filename]
     }
     
-    extension [Self <: Filename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filename] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object anon {
       __obj.asInstanceOf[KinPlatformffmpegstringff]
     }
     
-    extension [Self <: KinPlatformffmpegstringff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinPlatformffmpegstringff] (val x: Self) extends AnyVal {
       
       inline def `setLinux-32`(value: Ffmpeg): Self = StObject.set(x, "linux-32", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object MailcheckModule {
       __obj.asInstanceOf[IAsynchronousOptions]
     }
     
-    extension [Self <: IAsynchronousOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsynchronousOptions] (val x: Self) extends AnyVal {
       
       inline def setDistanceFunction(value: (/* s1 */ String, /* s2 */ String) => Double): Self = StObject.set(x, "distanceFunction", js.Any.fromFunction2(value))
       
@@ -94,7 +95,8 @@ object MailcheckModule {
       __obj.asInstanceOf[ISplitEmail]
     }
     
-    extension [Self <: ISplitEmail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISplitEmail] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object MailcheckModule {
       __obj.asInstanceOf[ISuggestion]
     }
     
-    extension [Self <: ISuggestion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestion] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object MailcheckModule {
       __obj.asInstanceOf[ISynchronousOptions]
     }
     
-    extension [Self <: ISynchronousOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISynchronousOptions] (val x: Self) extends AnyVal {
       
       inline def setDistanceFunction(value: (/* s1 */ String, /* s2 */ String) => Double): Self = StObject.set(x, "distanceFunction", js.Any.fromFunction2(value))
       

@@ -23,7 +23,8 @@ object IngestSimulateRequest {
     __obj.asInstanceOf[IngestSimulateRequest]
   }
   
-  extension [Self <: IngestSimulateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestSimulateRequest] (val x: Self) extends AnyVal {
     
     inline def setDocs(value: js.Array[IngestSimulateDocument]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     

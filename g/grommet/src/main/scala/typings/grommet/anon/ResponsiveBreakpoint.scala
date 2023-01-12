@@ -21,7 +21,8 @@ object ResponsiveBreakpoint {
     __obj.asInstanceOf[ResponsiveBreakpoint]
   }
   
-  extension [Self <: ResponsiveBreakpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveBreakpoint] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     

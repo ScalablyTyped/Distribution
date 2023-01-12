@@ -66,7 +66,8 @@ object ITableRecord {
     __obj.asInstanceOf[ITableRecord]
   }
   
-  extension [Self <: ITableRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITableRecord] (val x: Self) extends AnyVal {
     
     inline def setQComment(value: String): Self = StObject.set(x, "qComment", value.asInstanceOf[js.Any])
     

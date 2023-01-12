@@ -17,7 +17,8 @@ object TypeofInvoiceCreateParams {
     __obj.asInstanceOf[TypeofInvoiceCreateParams]
   }
   
-  extension [Self <: TypeofInvoiceCreateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofInvoiceCreateParams] (val x: Self) extends AnyVal {
     
     inline def setPaymentSettings(value: TypeofPaymentSettingsPaymentMethodOptions): Self = StObject.set(x, "PaymentSettings", value.asInstanceOf[js.Any])
     

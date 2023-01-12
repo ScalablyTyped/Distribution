@@ -38,7 +38,8 @@ object PointStatesOptionsObject {
     __obj.asInstanceOf[PointStatesOptionsObject]
   }
   
-  extension [Self <: PointStatesOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointStatesOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setHover(value: PointStatesHoverOptionsObject): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     

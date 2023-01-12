@@ -48,7 +48,8 @@ object CreateBotLocaleRequest {
     __obj.asInstanceOf[CreateBotLocaleRequest]
   }
   
-  extension [Self <: CreateBotLocaleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBotLocaleRequest] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

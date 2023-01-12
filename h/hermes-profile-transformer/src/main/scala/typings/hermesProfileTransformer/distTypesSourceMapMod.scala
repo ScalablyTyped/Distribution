@@ -34,7 +34,8 @@ object distTypesSourceMapMod {
       __obj.asInstanceOf[SourceMap]
     }
     
-    extension [Self <: SourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMap] (val x: Self) extends AnyVal {
       
       inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       

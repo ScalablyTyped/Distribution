@@ -85,7 +85,8 @@ object Discussionurl {
     __obj.asInstanceOf[Discussionurl]
   }
   
-  extension [Self <: Discussionurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Discussionurl] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object BackgroundDangerDisabled {
     __obj.asInstanceOf[BackgroundDangerDisabled[BaseToken]]
   }
   
-  extension [Self <: BackgroundDangerDisabled[?], BaseToken](x: Self & BackgroundDangerDisabled[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundDangerDisabled[?], BaseToken] (val x: Self & BackgroundDangerDisabled[BaseToken]) extends AnyVal {
     
     inline def setBackground(value: DangerDisabled[BaseToken]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

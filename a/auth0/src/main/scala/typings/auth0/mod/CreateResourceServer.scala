@@ -21,7 +21,8 @@ object CreateResourceServer {
     __obj.asInstanceOf[CreateResourceServer]
   }
   
-  extension [Self <: CreateResourceServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResourceServer] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
   }

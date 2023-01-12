@@ -24,7 +24,8 @@ object IconParams {
     __obj.asInstanceOf[IconParams]
   }
   
-  extension [Self <: IconParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconParams] (val x: Self) extends AnyVal {
     
     inline def setMask(value: IconLookup): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     

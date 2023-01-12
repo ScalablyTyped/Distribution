@@ -48,7 +48,8 @@ object WriteTreatmentResource {
     __obj.asInstanceOf[WriteTreatmentResource]
   }
   
-  extension [Self <: WriteTreatmentResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteTreatmentResource] (val x: Self) extends AnyVal {
     
     inline def setCustomDeliveryConfiguration(value: CustomDeliveryConfiguration): Self = StObject.set(x, "CustomDeliveryConfiguration", value.asInstanceOf[js.Any])
     

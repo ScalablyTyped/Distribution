@@ -18,7 +18,8 @@ object ExecutionProperty {
     __obj.asInstanceOf[ExecutionProperty]
   }
   
-  extension [Self <: ExecutionProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionProperty] (val x: Self) extends AnyVal {
     
     inline def setMaxConcurrentRuns(value: MaxConcurrentRuns): Self = StObject.set(x, "MaxConcurrentRuns", value.asInstanceOf[js.Any])
     

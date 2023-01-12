@@ -34,7 +34,8 @@ object NotificationStatisticsQueryConditions {
     __obj.asInstanceOf[NotificationStatisticsQueryConditions]
   }
   
-  extension [Self <: NotificationStatisticsQueryConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationStatisticsQueryConditions] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

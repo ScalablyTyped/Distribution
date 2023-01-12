@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[IOpenAPISchemaValidator]
     }
     
-    extension [Self <: IOpenAPISchemaValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOpenAPISchemaValidator] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: Document[js.Object] => OpenAPISchemaValidatorResult): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[OpenAPISchemaValidator]
     }
     
-    extension [Self <: OpenAPISchemaValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPISchemaValidator] (val x: Self) extends AnyVal {
       
       inline def setValidator(value: Any): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     }
@@ -81,7 +83,8 @@ object mod {
       __obj.asInstanceOf[OpenAPISchemaValidatorArgs]
     }
     
-    extension [Self <: OpenAPISchemaValidatorArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPISchemaValidatorArgs] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: IJsonSchema): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -102,7 +105,8 @@ object mod {
       __obj.asInstanceOf[OpenAPISchemaValidatorResult]
     }
     
-    extension [Self <: OpenAPISchemaValidatorResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPISchemaValidatorResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[ErrorObject[String, Record[String, Any], Any]]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

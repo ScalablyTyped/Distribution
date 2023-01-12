@@ -19,7 +19,8 @@ object PrinterVolumeSupported {
     __obj.asInstanceOf[PrinterVolumeSupported]
   }
   
-  extension [Self <: PrinterVolumeSupported](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterVolumeSupported] (val x: Self) extends AnyVal {
     
     inline def `setX-dimension`(value: Double): Self = StObject.set(x, "x-dimension", value.asInstanceOf[js.Any])
     

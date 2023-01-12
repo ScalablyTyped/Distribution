@@ -21,7 +21,8 @@ object SimpleMergeTag {
     __obj.asInstanceOf[SimpleMergeTag]
   }
   
-  extension [Self <: SimpleMergeTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleMergeTag] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

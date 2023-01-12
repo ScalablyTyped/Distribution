@@ -38,7 +38,8 @@ object DebugSymbol {
     __obj.asInstanceOf[DebugSymbol]
   }
   
-  extension [Self <: DebugSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugSymbol] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

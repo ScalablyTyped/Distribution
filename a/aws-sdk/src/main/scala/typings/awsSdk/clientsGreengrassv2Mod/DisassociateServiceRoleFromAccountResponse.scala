@@ -18,7 +18,8 @@ object DisassociateServiceRoleFromAccountResponse {
     __obj.asInstanceOf[DisassociateServiceRoleFromAccountResponse]
   }
   
-  extension [Self <: DisassociateServiceRoleFromAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateServiceRoleFromAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setDisassociatedAt(value: String): Self = StObject.set(x, "disassociatedAt", value.asInstanceOf[js.Any])
     

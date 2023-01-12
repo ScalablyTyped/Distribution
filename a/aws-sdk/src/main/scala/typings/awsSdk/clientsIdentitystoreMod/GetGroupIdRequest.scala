@@ -23,7 +23,8 @@ object GetGroupIdRequest {
     __obj.asInstanceOf[GetGroupIdRequest]
   }
   
-  extension [Self <: GetGroupIdRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGroupIdRequest] (val x: Self) extends AnyVal {
     
     inline def setAlternateIdentifier(value: AlternateIdentifier): Self = StObject.set(x, "AlternateIdentifier", value.asInstanceOf[js.Any])
     

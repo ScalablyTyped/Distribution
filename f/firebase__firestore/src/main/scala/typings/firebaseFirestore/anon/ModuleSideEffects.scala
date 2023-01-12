@@ -15,7 +15,8 @@ object ModuleSideEffects {
     __obj.asInstanceOf[ModuleSideEffects]
   }
   
-  extension [Self <: ModuleSideEffects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleSideEffects] (val x: Self) extends AnyVal {
     
     inline def setModuleSideEffects(value: Boolean): Self = StObject.set(x, "moduleSideEffects", value.asInstanceOf[js.Any])
   }

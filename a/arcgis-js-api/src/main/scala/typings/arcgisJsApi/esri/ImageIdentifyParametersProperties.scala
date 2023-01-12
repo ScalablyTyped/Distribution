@@ -96,7 +96,8 @@ object ImageIdentifyParametersProperties {
     __obj.asInstanceOf[ImageIdentifyParametersProperties]
   }
   
-  extension [Self <: ImageIdentifyParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageIdentifyParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: PointPropertiestypepoint | PolygonPropertiestypepoly): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

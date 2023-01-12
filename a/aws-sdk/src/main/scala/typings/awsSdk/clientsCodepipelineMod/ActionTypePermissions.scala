@@ -18,7 +18,8 @@ object ActionTypePermissions {
     __obj.asInstanceOf[ActionTypePermissions]
   }
   
-  extension [Self <: ActionTypePermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionTypePermissions] (val x: Self) extends AnyVal {
     
     inline def setAllowedAccounts(value: AllowedAccounts): Self = StObject.set(x, "allowedAccounts", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object TransferParameters {
     __obj.asInstanceOf[TransferParameters]
   }
   
-  extension [Self <: TransferParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferParameters] (val x: Self) extends AnyVal {
     
     inline def setCurrentRegistrar(value: String): Self = StObject.set(x, "currentRegistrar", value.asInstanceOf[js.Any])
     

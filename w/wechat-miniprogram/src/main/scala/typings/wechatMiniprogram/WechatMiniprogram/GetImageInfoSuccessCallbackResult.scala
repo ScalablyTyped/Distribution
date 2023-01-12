@@ -60,7 +60,8 @@ object GetImageInfoSuccessCallbackResult {
     __obj.asInstanceOf[GetImageInfoSuccessCallbackResult]
   }
   
-  extension [Self <: GetImageInfoSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetImageInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

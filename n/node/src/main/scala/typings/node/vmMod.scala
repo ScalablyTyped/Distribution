@@ -432,7 +432,8 @@ object vmMod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setColumnOffset(value: Double): Self = StObject.set(x, "columnOffset", value.asInstanceOf[js.Any])
       
@@ -480,7 +481,8 @@ object vmMod {
       __obj.asInstanceOf[CompileFunctionOptions]
     }
     
-    extension [Self <: CompileFunctionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompileFunctionOptions] (val x: Self) extends AnyVal {
       
       inline def setCachedData(value: Buffer): Self = StObject.set(x, "cachedData", value.asInstanceOf[js.Any])
       
@@ -535,7 +537,8 @@ object vmMod {
       __obj.asInstanceOf[CreateContextOptions]
     }
     
-    extension [Self <: CreateContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateContextOptions] (val x: Self) extends AnyVal {
       
       inline def setCodeGeneration(value: Strings): Self = StObject.set(x, "codeGeneration", value.asInstanceOf[js.Any])
       
@@ -583,7 +586,8 @@ object vmMod {
       __obj.asInstanceOf[MeasureMemoryOptions]
     }
     
-    extension [Self <: MeasureMemoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeasureMemoryOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -606,7 +610,8 @@ object vmMod {
       __obj.asInstanceOf[MemoryMeasurement]
     }
     
-    extension [Self <: MemoryMeasurement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryMeasurement] (val x: Self) extends AnyVal {
       
       inline def setTotal(value: JsMemoryEstimate): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
@@ -648,7 +653,8 @@ object vmMod {
       __obj.asInstanceOf[RunningScriptOptions]
     }
     
-    extension [Self <: RunningScriptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunningScriptOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakOnSigint(value: Boolean): Self = StObject.set(x, "breakOnSigint", value.asInstanceOf[js.Any])
       
@@ -688,7 +694,8 @@ object vmMod {
       __obj.asInstanceOf[ScriptOptions]
     }
     
-    extension [Self <: ScriptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptOptions] (val x: Self) extends AnyVal {
       
       inline def setCachedData(value: Buffer): Self = StObject.set(x, "cachedData", value.asInstanceOf[js.Any])
       

@@ -68,7 +68,8 @@ object IssueDataOpenApi {
     __obj.asInstanceOf[IssueDataOpenApi]
   }
   
-  extension [Self <: IssueDataOpenApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssueDataOpenApi] (val x: Self) extends AnyVal {
     
     inline def setBelow(value: String): Self = StObject.set(x, "below", value.asInstanceOf[js.Any])
     

@@ -130,7 +130,8 @@ object CMCDController {
     __obj.asInstanceOf[CMCDController]
   }
   
-  extension [Self <: CMCDController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMCDController] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Any): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     

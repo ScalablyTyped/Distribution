@@ -45,7 +45,8 @@ object XEnhancedMouseClickBroadcaster {
     __obj.asInstanceOf[XEnhancedMouseClickBroadcaster]
   }
   
-  extension [Self <: XEnhancedMouseClickBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEnhancedMouseClickBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddEnhancedMouseClickHandler(value: XEnhancedMouseClickHandler => Unit): Self = StObject.set(x, "addEnhancedMouseClickHandler", js.Any.fromFunction1(value))
     

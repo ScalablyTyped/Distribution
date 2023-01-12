@@ -33,7 +33,8 @@ object IndicesPutIndexTemplateRequest {
     __obj.asInstanceOf[IndicesPutIndexTemplateRequest]
   }
   
-  extension [Self <: IndicesPutIndexTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesPutIndexTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setComposed_of(value: js.Array[Name]): Self = StObject.set(x, "composed_of", value.asInstanceOf[js.Any])
     

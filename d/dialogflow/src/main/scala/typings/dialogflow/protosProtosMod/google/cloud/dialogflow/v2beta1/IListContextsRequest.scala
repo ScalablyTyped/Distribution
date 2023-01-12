@@ -23,7 +23,8 @@ object IListContextsRequest {
     __obj.asInstanceOf[IListContextsRequest]
   }
   
-  extension [Self <: IListContextsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListContextsRequest] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[ButtonLabels]
     }
     
-    extension [Self <: ButtonLabels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonLabels] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlwaysOnTop(value: Boolean): Self = StObject.set(x, "alwaysOnTop", value.asInstanceOf[js.Any])
       

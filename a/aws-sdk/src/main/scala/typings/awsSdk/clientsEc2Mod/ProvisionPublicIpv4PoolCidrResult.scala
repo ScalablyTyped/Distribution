@@ -23,7 +23,8 @@ object ProvisionPublicIpv4PoolCidrResult {
     __obj.asInstanceOf[ProvisionPublicIpv4PoolCidrResult]
   }
   
-  extension [Self <: ProvisionPublicIpv4PoolCidrResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionPublicIpv4PoolCidrResult] (val x: Self) extends AnyVal {
     
     inline def setPoolAddressRange(value: PublicIpv4PoolRange): Self = StObject.set(x, "PoolAddressRange", value.asInstanceOf[js.Any])
     

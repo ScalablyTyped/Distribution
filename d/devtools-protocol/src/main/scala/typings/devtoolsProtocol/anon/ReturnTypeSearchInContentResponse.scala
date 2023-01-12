@@ -19,7 +19,8 @@ object ReturnTypeSearchInContentResponse {
     __obj.asInstanceOf[ReturnTypeSearchInContentResponse]
   }
   
-  extension [Self <: ReturnTypeSearchInContentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeSearchInContentResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[SearchInContentRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

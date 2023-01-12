@@ -17,7 +17,8 @@ object Heal {
     __obj.asInstanceOf[Heal]
   }
   
-  extension [Self <: Heal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Heal] (val x: Self) extends AnyVal {
     
     inline def setHeal(value: typings.screeps.screepsInts.`2`): Self = StObject.set(x, "heal", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object Referrer {
     __obj.asInstanceOf[Referrer]
   }
   
-  extension [Self <: Referrer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Referrer] (val x: Self) extends AnyVal {
     
     inline def setPolicy(
       value: default | `unsafe-url` | `no-referrer-when-downgrade` | `no-referrer` | origin | `strict-origin-when-cross-origin` | `same-origin` | `strict-origin`

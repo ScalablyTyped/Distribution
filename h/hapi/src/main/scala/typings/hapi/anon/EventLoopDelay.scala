@@ -33,7 +33,8 @@ object EventLoopDelay {
     __obj.asInstanceOf[EventLoopDelay]
   }
   
-  extension [Self <: EventLoopDelay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventLoopDelay] (val x: Self) extends AnyVal {
     
     inline def setConcurrent(value: Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object MatchedRuleInfoDebug {
     __obj.asInstanceOf[MatchedRuleInfoDebug]
   }
   
-  extension [Self <: MatchedRuleInfoDebug](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchedRuleInfoDebug] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: RequestDetails): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

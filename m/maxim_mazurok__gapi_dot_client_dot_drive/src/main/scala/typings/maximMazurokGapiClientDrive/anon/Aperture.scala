@@ -76,7 +76,8 @@ object Aperture {
     __obj.asInstanceOf[Aperture]
   }
   
-  extension [Self <: Aperture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aperture] (val x: Self) extends AnyVal {
     
     inline def setAperture(value: Double): Self = StObject.set(x, "aperture", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FileSaveCommand {
     __obj.asInstanceOf[FileSaveCommand]
   }
   
-  extension [Self <: FileSaveCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSaveCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

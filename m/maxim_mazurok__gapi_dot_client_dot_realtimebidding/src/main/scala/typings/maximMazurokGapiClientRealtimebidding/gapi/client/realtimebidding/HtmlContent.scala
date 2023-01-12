@@ -22,7 +22,8 @@ object HtmlContent {
     __obj.asInstanceOf[HtmlContent]
   }
   
-  extension [Self <: HtmlContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlContent] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

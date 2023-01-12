@@ -23,7 +23,8 @@ object SpellVarsDto {
     __obj.asInstanceOf[SpellVarsDto]
   }
   
-  extension [Self <: SpellVarsDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpellVarsDto] (val x: Self) extends AnyVal {
     
     inline def setCoeff(value: js.Array[Double]): Self = StObject.set(x, "coeff", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DataTableRowReorderParams {
     __obj.asInstanceOf[DataTableRowReorderParams]
   }
   
-  extension [Self <: DataTableRowReorderParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableRowReorderParams] (val x: Self) extends AnyVal {
     
     inline def setDragIndex(value: Double): Self = StObject.set(x, "dragIndex", value.asInstanceOf[js.Any])
     

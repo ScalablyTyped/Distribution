@@ -80,7 +80,8 @@ object XTabBar {
     __obj.asInstanceOf[XTabBar]
   }
   
-  extension [Self <: XTabBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTabBar] (val x: Self) extends AnyVal {
     
     inline def setAddTabBarButtonAfter(value: (TabBarButton, TabBarButton) => Unit): Self = StObject.set(x, "addTabBarButtonAfter", js.Any.fromFunction2(value))
     

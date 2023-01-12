@@ -43,7 +43,8 @@ object SketchMSTextLayer {
     __obj.asInstanceOf[SketchMSTextLayer]
   }
   
-  extension [Self <: SketchMSTextLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSTextLayer] (val x: Self) extends AnyVal {
     
     inline def setAttributedString(value: SketchMSAttributedString): Self = StObject.set(x, "attributedString", value.asInstanceOf[js.Any])
     

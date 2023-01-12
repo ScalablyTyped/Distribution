@@ -185,7 +185,8 @@ object classesServiceMod {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setApp(value: Any): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       

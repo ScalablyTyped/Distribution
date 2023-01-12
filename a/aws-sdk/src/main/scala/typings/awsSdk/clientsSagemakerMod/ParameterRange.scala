@@ -28,7 +28,8 @@ object ParameterRange {
     __obj.asInstanceOf[ParameterRange]
   }
   
-  extension [Self <: ParameterRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterRange] (val x: Self) extends AnyVal {
     
     inline def setCategoricalParameterRangeSpecification(value: CategoricalParameterRangeSpecification): Self = StObject.set(x, "CategoricalParameterRangeSpecification", value.asInstanceOf[js.Any])
     

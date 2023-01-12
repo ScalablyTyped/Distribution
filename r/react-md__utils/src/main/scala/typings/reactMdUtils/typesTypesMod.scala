@@ -28,7 +28,8 @@ object typesTypesMod {
       __obj.asInstanceOf[LabelA11y]
     }
     
-    extension [Self <: LabelA11y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelA11y] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object typesTypesMod {
       __obj.asInstanceOf[NonNullRef[T]]
     }
     
-    extension [Self <: NonNullRef[?], T](x: Self & NonNullRef[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonNullRef[?], T] (val x: Self & NonNullRef[T]) extends AnyVal {
       
       inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }

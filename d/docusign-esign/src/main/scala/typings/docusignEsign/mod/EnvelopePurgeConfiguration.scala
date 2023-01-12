@@ -35,7 +35,8 @@ object EnvelopePurgeConfiguration {
     __obj.asInstanceOf[EnvelopePurgeConfiguration]
   }
   
-  extension [Self <: EnvelopePurgeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopePurgeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPurgeEnvelopes(value: String): Self = StObject.set(x, "purgeEnvelopes", value.asInstanceOf[js.Any])
     

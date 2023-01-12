@@ -59,7 +59,8 @@ object XServiceInfo {
     __obj.asInstanceOf[XServiceInfo]
   }
   
-  extension [Self <: XServiceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XServiceInfo] (val x: Self) extends AnyVal {
     
     inline def setGetImplementationName(value: () => String): Self = StObject.set(x, "getImplementationName", js.Any.fromFunction0(value))
     

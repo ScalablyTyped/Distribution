@@ -17,7 +17,8 @@ object OnHoldResult {
     __obj.asInstanceOf[OnHoldResult]
   }
   
-  extension [Self <: OnHoldResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnHoldResult] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

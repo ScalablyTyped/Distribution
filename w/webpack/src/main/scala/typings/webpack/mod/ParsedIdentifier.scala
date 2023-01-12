@@ -35,7 +35,8 @@ object ParsedIdentifier {
     __obj.asInstanceOf[ParsedIdentifier]
   }
   
-  extension [Self <: ParsedIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedIdentifier] (val x: Self) extends AnyVal {
     
     inline def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object Bootstrap3Typeahead {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAddItem(value: js.Object): Self = StObject.set(x, "addItem", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object Bootstrap3Typeahead {
       __obj.asInstanceOf[Typeahead]
     }
     
-    extension [Self <: Typeahead](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeahead] (val x: Self) extends AnyVal {
       
       inline def set$element(value: JQuery): Self = StObject.set(x, "$element", value.asInstanceOf[js.Any])
       

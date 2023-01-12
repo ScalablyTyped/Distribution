@@ -15,7 +15,8 @@ object UseColumnOrderState {
     __obj.asInstanceOf[UseColumnOrderState[D]]
   }
   
-  extension [Self <: UseColumnOrderState[?], D /* <: js.Object */](x: Self & UseColumnOrderState[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseColumnOrderState[?], D /* <: js.Object */] (val x: Self & UseColumnOrderState[D]) extends AnyVal {
     
     inline def setColumnOrder(value: js.Array[IdType[D]]): Self = StObject.set(x, "columnOrder", value.asInstanceOf[js.Any])
     

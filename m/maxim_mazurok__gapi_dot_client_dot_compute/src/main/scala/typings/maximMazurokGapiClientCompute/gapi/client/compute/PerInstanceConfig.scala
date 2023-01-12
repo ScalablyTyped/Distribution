@@ -32,7 +32,8 @@ object PerInstanceConfig {
     __obj.asInstanceOf[PerInstanceConfig]
   }
   
-  extension [Self <: PerInstanceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerInstanceConfig] (val x: Self) extends AnyVal {
     
     inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     

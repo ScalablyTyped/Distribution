@@ -61,7 +61,8 @@ object pluggableMapMod {
       __obj.asInstanceOf[AtPixelOptions]
     }
     
-    extension [Self <: AtPixelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AtPixelOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckWrapped(value: Boolean): Self = StObject.set(x, "checkWrapped", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object pluggableMapMod {
       __obj.asInstanceOf[FrameState]
     }
     
-    extension [Self <: FrameState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameState] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object pluggableMapMod {
       __obj.asInstanceOf[MapOptions]
     }
     
-    extension [Self <: MapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
       
       inline def setControls(
         value: typings.ol.collectionMod.default[typings.ol.controlControlMod.default] | js.Array[typings.ol.controlControlMod.default]
@@ -307,7 +310,8 @@ object pluggableMapMod {
       __obj.asInstanceOf[MapOptionsInternal]
     }
     
-    extension [Self <: MapOptionsInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapOptionsInternal] (val x: Self) extends AnyVal {
       
       inline def setControls(value: typings.ol.collectionMod.default[typings.ol.controlControlMod.default]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       

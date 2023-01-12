@@ -16,7 +16,8 @@ object ColorInformationContext {
     __obj.asInstanceOf[ColorInformationContext]
   }
   
-  extension [Self <: ColorInformationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorInformationContext] (val x: Self) extends AnyVal {
     
     inline def setCandidates(value: js.Array[ColorCandidate]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     

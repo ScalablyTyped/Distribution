@@ -28,7 +28,8 @@ object Page {
     __obj.asInstanceOf[Page]
   }
   
-  extension [Self <: Page](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
     
     inline def setLineRange(value: Range): Self = StObject.set(x, "LineRange", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object ContentRating {
     __obj.asInstanceOf[ContentRating]
   }
   
-  extension [Self <: ContentRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentRating] (val x: Self) extends AnyVal {
     
     inline def setArtwork(value: typings.musickitJs.MusicKit.Artwork): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
     

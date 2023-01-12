@@ -39,7 +39,8 @@ object libStyleToClassNameMod {
       __obj.asInstanceOf[IRegistration]
     }
     
-    extension [Self <: IRegistration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRegistration] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[IStyle]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object ASPxClientXYDiagramBase {
     __obj.asInstanceOf[ASPxClientXYDiagramBase]
   }
   
-  extension [Self <: ASPxClientXYDiagramBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientXYDiagramBase] (val x: Self) extends AnyVal {
     
     inline def setAxisX(value: ASPxClientAxisBase): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
     

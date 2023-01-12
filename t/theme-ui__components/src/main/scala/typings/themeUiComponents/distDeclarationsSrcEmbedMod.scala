@@ -34,7 +34,8 @@ object distDeclarationsSrcEmbedMod {
       __obj.asInstanceOf[EmbedProps]
     }
     
-    extension [Self <: EmbedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbedProps] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       

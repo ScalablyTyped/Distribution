@@ -20,7 +20,8 @@ object CreateVoiceTemplateRequest {
     __obj.asInstanceOf[CreateVoiceTemplateRequest]
   }
   
-  extension [Self <: CreateVoiceTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVoiceTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SjclECCPublicKeyData {
     __obj.asInstanceOf[SjclECCPublicKeyData]
   }
   
-  extension [Self <: SjclECCPublicKeyData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclECCPublicKeyData] (val x: Self) extends AnyVal {
     
     inline def setX(value: BitArray_): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

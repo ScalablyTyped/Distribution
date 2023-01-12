@@ -28,7 +28,8 @@ object UDPSocketSendOption {
     __obj.asInstanceOf[UDPSocketSendOption]
   }
   
-  extension [Self <: UDPSocketSendOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UDPSocketSendOption] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

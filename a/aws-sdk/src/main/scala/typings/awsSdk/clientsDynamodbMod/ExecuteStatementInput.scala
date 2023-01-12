@@ -40,7 +40,8 @@ object ExecuteStatementInput {
     __obj.asInstanceOf[ExecuteStatementInput]
   }
   
-  extension [Self <: ExecuteStatementInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteStatementInput] (val x: Self) extends AnyVal {
     
     inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
     

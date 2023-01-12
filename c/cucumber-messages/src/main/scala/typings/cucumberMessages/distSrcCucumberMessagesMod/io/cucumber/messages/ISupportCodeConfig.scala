@@ -26,7 +26,8 @@ object ISupportCodeConfig {
     __obj.asInstanceOf[ISupportCodeConfig]
   }
   
-  extension [Self <: ISupportCodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISupportCodeConfig] (val x: Self) extends AnyVal {
     
     inline def setAfterTestCaseHooks(value: js.Array[IHook]): Self = StObject.set(x, "afterTestCaseHooks", value.asInstanceOf[js.Any])
     

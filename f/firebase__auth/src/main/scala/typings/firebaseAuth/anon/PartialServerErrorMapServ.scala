@@ -155,7 +155,8 @@ object PartialServerErrorMapServ {
     __obj.asInstanceOf[PartialServerErrorMapServ]
   }
   
-  extension [Self <: PartialServerErrorMapServ](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialServerErrorMapServ] (val x: Self) extends AnyVal {
     
     inline def setADMIN_ONLY_OPERATION(value: AuthErrorCode): Self = StObject.set(x, "ADMIN_ONLY_OPERATION", value.asInstanceOf[js.Any])
     

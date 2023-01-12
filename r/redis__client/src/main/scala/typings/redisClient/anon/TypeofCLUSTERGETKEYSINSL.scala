@@ -17,7 +17,8 @@ object TypeofCLUSTERGETKEYSINSL {
     __obj.asInstanceOf[TypeofCLUSTERGETKEYSINSL]
   }
   
-  extension [Self <: TypeofCLUSTERGETKEYSINSL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLUSTERGETKEYSINSL] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: (Double, Double) => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction2(value))
     

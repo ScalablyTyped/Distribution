@@ -25,7 +25,8 @@ object DeserializeHandlerOutput {
     __obj.asInstanceOf[DeserializeHandlerOutput[Output]]
   }
   
-  extension [Self <: DeserializeHandlerOutput[?], Output /* <: js.Object */](x: Self & DeserializeHandlerOutput[Output]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeserializeHandlerOutput[?], Output /* <: js.Object */] (val x: Self & DeserializeHandlerOutput[Output]) extends AnyVal {
     
     inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

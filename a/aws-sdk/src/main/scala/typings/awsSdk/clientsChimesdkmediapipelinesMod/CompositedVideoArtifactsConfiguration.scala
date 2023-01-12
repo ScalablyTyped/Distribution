@@ -28,7 +28,8 @@ object CompositedVideoArtifactsConfiguration {
     __obj.asInstanceOf[CompositedVideoArtifactsConfiguration]
   }
   
-  extension [Self <: CompositedVideoArtifactsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositedVideoArtifactsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setGridViewConfiguration(value: GridViewConfiguration): Self = StObject.set(x, "GridViewConfiguration", value.asInstanceOf[js.Any])
     

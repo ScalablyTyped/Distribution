@@ -21,7 +21,8 @@ object SvgIconProps {
     __obj.asInstanceOf[SvgIconProps]
   }
   
-  extension [Self <: SvgIconProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SvgIconProps] (val x: Self) extends AnyVal {
     
     inline def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
     

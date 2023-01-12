@@ -17,7 +17,8 @@ object ISubscribeOptions {
     __obj.asInstanceOf[ISubscribeOptions]
   }
   
-  extension [Self <: ISubscribeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISubscribeOptions] (val x: Self) extends AnyVal {
     
     inline def setGet_retained(value: Boolean): Self = StObject.set(x, "get_retained", value.asInstanceOf[js.Any])
     

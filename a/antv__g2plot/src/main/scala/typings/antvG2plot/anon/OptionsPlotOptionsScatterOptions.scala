@@ -22,7 +22,8 @@ object OptionsPlotOptionsScatterOptions {
     __obj.asInstanceOf[OptionsPlotOptionsScatterOptions]
   }
   
-  extension [Self <: OptionsPlotOptionsScatterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsPlotOptionsScatterOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: PlotOptionsScatterOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

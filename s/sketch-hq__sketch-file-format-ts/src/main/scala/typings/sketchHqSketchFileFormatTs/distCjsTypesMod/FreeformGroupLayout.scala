@@ -18,7 +18,8 @@ object FreeformGroupLayout {
     __obj.asInstanceOf[FreeformGroupLayout]
   }
   
-  extension [Self <: FreeformGroupLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeformGroupLayout] (val x: Self) extends AnyVal {
     
     inline def set_class(value: MSImmutableFreeformGroupLayout): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }

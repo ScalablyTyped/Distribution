@@ -37,7 +37,8 @@ object PartialEventManagerany {
     __obj.asInstanceOf[PartialEventManagerany]
   }
   
-  extension [Self <: PartialEventManagerany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialEventManagerany] (val x: Self) extends AnyVal {
     
     inline def setCompute(value: (/* event */ DomEvent, /* root */ RootState, /* previous */ js.UndefOr[RootState]) => Unit): Self = StObject.set(x, "compute", js.Any.fromFunction3(value))
     

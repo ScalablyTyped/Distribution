@@ -24,7 +24,8 @@ object ClickCount {
     __obj.asInstanceOf[ClickCount]
   }
   
-  extension [Self <: ClickCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickCount] (val x: Self) extends AnyVal {
     
     inline def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
     

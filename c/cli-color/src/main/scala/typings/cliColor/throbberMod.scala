@@ -48,7 +48,8 @@ object throbberMod {
       __obj.asInstanceOf[Throbber]
     }
     
-    extension [Self <: Throbber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Throbber] (val x: Self) extends AnyVal {
       
       inline def setRestart(value: () => Unit): Self = StObject.set(x, "restart", js.Any.fromFunction0(value))
       

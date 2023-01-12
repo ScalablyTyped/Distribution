@@ -103,7 +103,8 @@ object SVGTSpanElement {
     __obj.asInstanceOf[SVGTSpanElement]
   }
   
-  extension [Self <: SVGTSpanElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGTSpanElement] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

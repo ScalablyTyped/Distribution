@@ -70,7 +70,8 @@ object EmailOptions {
     __obj.asInstanceOf[EmailOptions]
   }
   
-  extension [Self <: EmailOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowFullyQualified(value: Boolean): Self = StObject.set(x, "allowFullyQualified", value.asInstanceOf[js.Any])
     

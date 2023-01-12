@@ -31,7 +31,8 @@ object WalkContext {
     __obj.asInstanceOf[WalkContext]
   }
   
-  extension [Self <: WalkContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalkContext] (val x: Self) extends AnyVal {
     
     inline def setAtrule(value: Atrule): Self = StObject.set(x, "atrule", value.asInstanceOf[js.Any])
     

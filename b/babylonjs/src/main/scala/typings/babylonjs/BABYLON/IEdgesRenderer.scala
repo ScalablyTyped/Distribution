@@ -42,7 +42,8 @@ object IEdgesRenderer {
     __obj.asInstanceOf[IEdgesRenderer]
   }
   
-  extension [Self <: IEdgesRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEdgesRenderer] (val x: Self) extends AnyVal {
     
     inline def setCustomInstances(value: SmartArray[Matrix]): Self = StObject.set(x, "customInstances", value.asInstanceOf[js.Any])
     

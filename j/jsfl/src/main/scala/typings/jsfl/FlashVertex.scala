@@ -21,7 +21,8 @@ object FlashVertex {
     __obj.asInstanceOf[FlashVertex]
   }
   
-  extension [Self <: FlashVertex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashVertex] (val x: Self) extends AnyVal {
     
     inline def setGetHalfEdge(value: () => FlashHalfEdge): Self = StObject.set(x, "getHalfEdge", js.Any.fromFunction0(value))
     

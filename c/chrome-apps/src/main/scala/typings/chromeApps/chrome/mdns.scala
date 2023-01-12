@@ -40,7 +40,8 @@ object mdns {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object mdns {
       __obj.asInstanceOf[ServiceTypes]
     }
     
-    extension [Self <: ServiceTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceTypes] (val x: Self) extends AnyVal {
       
       inline def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     }

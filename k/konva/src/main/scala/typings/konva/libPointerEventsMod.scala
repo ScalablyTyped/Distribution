@@ -52,7 +52,8 @@ object libPointerEventsMod {
       __obj.asInstanceOf[KonvaPointerEvent]
     }
     
-    extension [Self <: KonvaPointerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KonvaPointerEvent] (val x: Self) extends AnyVal {
       
       inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
     }

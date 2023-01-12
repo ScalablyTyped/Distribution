@@ -20,7 +20,8 @@ object CalendarListInsertParameters {
     __obj.asInstanceOf[CalendarListInsertParameters]
   }
   
-  extension [Self <: CalendarListInsertParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarListInsertParameters] (val x: Self) extends AnyVal {
     
     inline def setColorRgbFormat(value: Boolean): Self = StObject.set(x, "colorRgbFormat", value.asInstanceOf[js.Any])
     

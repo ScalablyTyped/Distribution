@@ -121,7 +121,8 @@ object appCheck {
       __obj.asInstanceOf[AppCheckProvider]
     }
     
-    extension [Self <: AppCheckProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckProvider] (val x: Self) extends AnyVal {
       
       inline def setGetToken(value: () => js.Promise[AppCheckToken]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
     }
@@ -149,7 +150,8 @@ object appCheck {
       __obj.asInstanceOf[AppCheckToken]
     }
     
-    extension [Self <: AppCheckToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckToken] (val x: Self) extends AnyVal {
       
       inline def setExpireTimeMillis(value: Double): Self = StObject.set(x, "expireTimeMillis", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object appCheck {
       __obj.asInstanceOf[AppCheckTokenResult]
     }
     
-    extension [Self <: AppCheckTokenResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckTokenResult] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
@@ -201,7 +204,8 @@ object appCheck {
       __obj.asInstanceOf[CustomProviderOptions]
     }
     
-    extension [Self <: CustomProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setGetToken(value: () => js.Promise[AppCheckToken]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
     }

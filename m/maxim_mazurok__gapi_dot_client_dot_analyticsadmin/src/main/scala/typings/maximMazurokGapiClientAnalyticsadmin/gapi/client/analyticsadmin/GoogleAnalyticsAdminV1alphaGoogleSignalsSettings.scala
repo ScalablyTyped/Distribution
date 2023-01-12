@@ -22,7 +22,8 @@ object GoogleAnalyticsAdminV1alphaGoogleSignalsSettings {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaGoogleSignalsSettings]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaGoogleSignalsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaGoogleSignalsSettings] (val x: Self) extends AnyVal {
     
     inline def setConsent(value: String): Self = StObject.set(x, "consent", value.asInstanceOf[js.Any])
     

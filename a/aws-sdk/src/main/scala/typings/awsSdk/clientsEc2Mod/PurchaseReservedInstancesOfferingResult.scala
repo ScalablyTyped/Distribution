@@ -18,7 +18,8 @@ object PurchaseReservedInstancesOfferingResult {
     __obj.asInstanceOf[PurchaseReservedInstancesOfferingResult]
   }
   
-  extension [Self <: PurchaseReservedInstancesOfferingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseReservedInstancesOfferingResult] (val x: Self) extends AnyVal {
     
     inline def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     

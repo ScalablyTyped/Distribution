@@ -17,7 +17,8 @@ object PrintTaskSourceRequestedDeferral {
     __obj.asInstanceOf[PrintTaskSourceRequestedDeferral]
   }
   
-  extension [Self <: PrintTaskSourceRequestedDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintTaskSourceRequestedDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

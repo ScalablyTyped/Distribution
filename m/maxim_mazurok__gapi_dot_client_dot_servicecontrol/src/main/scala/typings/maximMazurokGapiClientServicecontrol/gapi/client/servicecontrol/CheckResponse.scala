@@ -21,7 +21,8 @@ object CheckResponse {
     __obj.asInstanceOf[CheckResponse]
   }
   
-  extension [Self <: CheckResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckResponse] (val x: Self) extends AnyVal {
     
     inline def setHeaders(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

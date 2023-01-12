@@ -63,7 +63,8 @@ object MethodSetting {
     __obj.asInstanceOf[MethodSetting]
   }
   
-  extension [Self <: MethodSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodSetting] (val x: Self) extends AnyVal {
     
     inline def setCacheDataEncrypted(value: Boolean): Self = StObject.set(x, "cacheDataEncrypted", value.asInstanceOf[js.Any])
     

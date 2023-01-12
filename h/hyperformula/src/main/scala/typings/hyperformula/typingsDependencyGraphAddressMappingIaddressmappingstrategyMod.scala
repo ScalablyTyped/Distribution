@@ -102,7 +102,8 @@ object typingsDependencyGraphAddressMappingIaddressmappingstrategyMod {
       __obj.asInstanceOf[IAddressMappingStrategy]
     }
     
-    extension [Self <: IAddressMappingStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAddressMappingStrategy] (val x: Self) extends AnyVal {
       
       inline def setAddColumns(value: (Double, Double) => Unit): Self = StObject.set(x, "addColumns", js.Any.fromFunction2(value))
       

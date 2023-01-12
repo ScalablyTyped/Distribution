@@ -51,7 +51,8 @@ object ICardLayout {
     __obj.asInstanceOf[ICardLayout]
   }
   
-  extension [Self <: ICardLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICardLayout] (val x: Self) extends AnyVal {
     
     inline def setDeferredRender(value: Boolean): Self = StObject.set(x, "deferredRender", value.asInstanceOf[js.Any])
     

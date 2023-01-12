@@ -30,7 +30,8 @@ object ConditionalBranch {
     __obj.asInstanceOf[ConditionalBranch]
   }
   
-  extension [Self <: ConditionalBranch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalBranch] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

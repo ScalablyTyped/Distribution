@@ -20,7 +20,8 @@ object WebExtensionManifestBackgroundC1Type {
     __obj.asInstanceOf[WebExtensionManifestBackgroundC1Type]
   }
   
-  extension [Self <: WebExtensionManifestBackgroundC1Type](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestBackgroundC1Type] (val x: Self) extends AnyVal {
     
     inline def setPage(value: ExtensionURL): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

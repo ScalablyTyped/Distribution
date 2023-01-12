@@ -43,7 +43,8 @@ object S3Target {
     __obj.asInstanceOf[S3Target]
   }
   
-  extension [Self <: S3Target](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3Target] (val x: Self) extends AnyVal {
     
     inline def setConnectionName(value: ConnectionName): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
     

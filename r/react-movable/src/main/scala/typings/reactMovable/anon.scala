@@ -67,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Canceled]
     }
     
-    extension [Self <: Canceled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Canceled] (val x: Self) extends AnyVal {
       
       inline def setCanceled(value: Double => String): Self = StObject.set(x, "canceled", js.Any.fromFunction1(value))
       
@@ -127,7 +128,8 @@ object anon {
       __obj.asInstanceOf[InitialX]
     }
     
-    extension [Self <: InitialX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialX] (val x: Self) extends AnyVal {
       
       inline def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object anon {
       __obj.asInstanceOf[Ref]
     }
     
-    extension [Self <: Ref](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
       
       inline def setRef(value: RefObject[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
@@ -183,7 +186,8 @@ object anon {
       __obj.asInstanceOf[ScrollingSpeed]
     }
     
-    extension [Self <: ScrollingSpeed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollingSpeed] (val x: Self) extends AnyVal {
       
       inline def setScrollingSpeed(value: Double): Self = StObject.set(x, "scrollingSpeed", value.asInstanceOf[js.Any])
     }

@@ -21,7 +21,8 @@ object FormattingOptions {
     __obj.asInstanceOf[FormattingOptions]
   }
   
-  extension [Self <: FormattingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattingOptions] (val x: Self) extends AnyVal {
     
     inline def setIndentSpaces(value: Double): Self = StObject.set(x, "indentSpaces", value.asInstanceOf[js.Any])
     

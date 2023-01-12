@@ -18,7 +18,8 @@ object TapIndex {
     __obj.asInstanceOf[TapIndex]
   }
   
-  extension [Self <: TapIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TapIndex] (val x: Self) extends AnyVal {
     
     inline def setTapIndex(value: Double): Self = StObject.set(x, "tapIndex", value.asInstanceOf[js.Any])
   }

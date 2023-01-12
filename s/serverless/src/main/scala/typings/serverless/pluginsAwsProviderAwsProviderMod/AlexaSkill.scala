@@ -17,7 +17,8 @@ object AlexaSkill {
     __obj.asInstanceOf[AlexaSkill]
   }
   
-  extension [Self <: AlexaSkill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlexaSkill] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

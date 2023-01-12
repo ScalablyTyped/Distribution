@@ -33,7 +33,8 @@ object typesCreateBucketConfigurationMod {
       __obj.asInstanceOf[CreateBucketConfiguration]
     }
     
-    extension [Self <: CreateBucketConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateBucketConfiguration] (val x: Self) extends AnyVal {
       
       inline def setLocationConstraint(
         value: EU | `eu-west-1` | `us-west-1` | `us-west-2` | `ap-south-1` | `ap-southeast-1` | `ap-southeast-2` | `ap-northeast-1` | `sa-east-1` | `cn-north-1` | `eu-central-1` | String

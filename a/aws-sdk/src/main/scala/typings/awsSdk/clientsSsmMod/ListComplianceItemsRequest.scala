@@ -38,7 +38,8 @@ object ListComplianceItemsRequest {
     __obj.asInstanceOf[ListComplianceItemsRequest]
   }
   
-  extension [Self <: ListComplianceItemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListComplianceItemsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: ComplianceStringFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

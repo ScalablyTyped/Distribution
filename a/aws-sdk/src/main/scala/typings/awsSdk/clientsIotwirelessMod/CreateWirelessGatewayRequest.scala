@@ -38,7 +38,8 @@ object CreateWirelessGatewayRequest {
     __obj.asInstanceOf[CreateWirelessGatewayRequest]
   }
   
-  extension [Self <: CreateWirelessGatewayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWirelessGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

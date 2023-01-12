@@ -17,7 +17,8 @@ object AggregateThreshold {
     __obj.asInstanceOf[AggregateThreshold]
   }
   
-  extension [Self <: AggregateThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateThreshold] (val x: Self) extends AnyVal {
     
     inline def setAggregateThreshold(value: Double): Self = StObject.set(x, "aggregateThreshold", value.asInstanceOf[js.Any])
     

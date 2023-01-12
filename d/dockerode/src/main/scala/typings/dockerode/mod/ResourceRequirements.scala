@@ -17,7 +17,8 @@ object ResourceRequirements {
     __obj.asInstanceOf[ResourceRequirements]
   }
   
-  extension [Self <: ResourceRequirements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceRequirements] (val x: Self) extends AnyVal {
     
     inline def setLimits(value: ResourceLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
     

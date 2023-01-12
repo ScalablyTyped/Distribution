@@ -38,7 +38,8 @@ object App {
       __obj.asInstanceOf[KeepAliveInBackgroundOptions]
     }
     
-    extension [Self <: KeepAliveInBackgroundOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeepAliveInBackgroundOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object App {
       __obj.asInstanceOf[OpenURLOptions]
     }
     
-    extension [Self <: OpenURLOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenURLOptions] (val x: Self) extends AnyVal {
       
       inline def setDirectories(value: Double): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
       

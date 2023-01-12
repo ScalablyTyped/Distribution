@@ -64,7 +64,8 @@ object IHTMLSelection {
     __obj.asInstanceOf[IHTMLSelection]
   }
   
-  extension [Self <: IHTMLSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLSelection] (val x: Self) extends AnyVal {
     
     inline def setAddRange(value: Any => Unit): Self = StObject.set(x, "addRange", js.Any.fromFunction1(value))
     

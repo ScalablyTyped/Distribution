@@ -20,7 +20,8 @@ object TypeofResponsivePanel {
     __obj.asInstanceOf[TypeofResponsivePanel]
   }
   
-  extension [Self <: TypeofResponsivePanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofResponsivePanel] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => ResponsivePanel): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

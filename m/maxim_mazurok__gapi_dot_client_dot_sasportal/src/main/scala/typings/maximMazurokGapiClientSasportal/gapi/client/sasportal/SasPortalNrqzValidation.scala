@@ -28,7 +28,8 @@ object SasPortalNrqzValidation {
     __obj.asInstanceOf[SasPortalNrqzValidation]
   }
   
-  extension [Self <: SasPortalNrqzValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalNrqzValidation] (val x: Self) extends AnyVal {
     
     inline def setCaseId(value: String): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object `200ContentApplicationoctocatstream` {
     __obj.asInstanceOf[`200ContentApplicationoctocatstream`]
   }
   
-  extension [Self <: `200ContentApplicationoctocatstream`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `200ContentApplicationoctocatstream`] (val x: Self) extends AnyVal {
     
     inline def set200(value: ContentApplicationoctocatstream): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }

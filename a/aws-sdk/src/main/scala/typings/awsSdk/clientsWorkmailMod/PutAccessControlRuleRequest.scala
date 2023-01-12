@@ -78,7 +78,8 @@ object PutAccessControlRuleRequest {
     __obj.asInstanceOf[PutAccessControlRuleRequest]
   }
   
-  extension [Self <: PutAccessControlRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAccessControlRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setActions(value: ActionsList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

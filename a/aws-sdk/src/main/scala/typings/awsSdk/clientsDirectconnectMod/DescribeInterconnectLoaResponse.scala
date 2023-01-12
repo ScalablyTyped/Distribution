@@ -18,7 +18,8 @@ object DescribeInterconnectLoaResponse {
     __obj.asInstanceOf[DescribeInterconnectLoaResponse]
   }
   
-  extension [Self <: DescribeInterconnectLoaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInterconnectLoaResponse] (val x: Self) extends AnyVal {
     
     inline def setLoa(value: Loa): Self = StObject.set(x, "loa", value.asInstanceOf[js.Any])
     

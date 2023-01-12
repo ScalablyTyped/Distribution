@@ -21,7 +21,8 @@ object BasePips {
     __obj.asInstanceOf[BasePips]
   }
   
-  extension [Self <: BasePips](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePips] (val x: Self) extends AnyVal {
     
     inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object AppsDynamiteSharedAssistantAnnotationData {
     __obj.asInstanceOf[AppsDynamiteSharedAssistantAnnotationData]
   }
   
-  extension [Self <: AppsDynamiteSharedAssistantAnnotationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedAssistantAnnotationData] (val x: Self) extends AnyVal {
     
     inline def setSuggestion(value: AppsDynamiteSharedAssistantSuggestion): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object hiddenHiddenJsMod extends Shortcut {
       __obj.asInstanceOf[HiddenJsProps]
     }
     
-    extension [Self <: HiddenJsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HiddenJsProps] (val x: Self) extends AnyVal {
       
       inline def setInitialWidth(value: Breakpoint): Self = StObject.set(x, "initialWidth", value.asInstanceOf[js.Any])
       

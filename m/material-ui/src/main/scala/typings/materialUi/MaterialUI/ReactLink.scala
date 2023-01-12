@@ -18,7 +18,8 @@ object ReactLink {
     __obj.asInstanceOf[ReactLink[T]]
   }
   
-  extension [Self <: ReactLink[?], T](x: Self & ReactLink[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactLink[?], T] (val x: Self & ReactLink[T]) extends AnyVal {
     
     inline def setRequestChange(value: T => Unit): Self = StObject.set(x, "requestChange", js.Any.fromFunction1(value))
     

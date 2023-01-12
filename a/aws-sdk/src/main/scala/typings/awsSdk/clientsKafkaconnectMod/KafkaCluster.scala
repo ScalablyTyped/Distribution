@@ -18,7 +18,8 @@ object KafkaCluster {
     __obj.asInstanceOf[KafkaCluster]
   }
   
-  extension [Self <: KafkaCluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaCluster] (val x: Self) extends AnyVal {
     
     inline def setApacheKafkaCluster(value: ApacheKafkaCluster): Self = StObject.set(x, "apacheKafkaCluster", value.asInstanceOf[js.Any])
   }

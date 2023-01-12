@@ -25,7 +25,8 @@ object AggregationsGeoDistanceAggregation {
     __obj.asInstanceOf[AggregationsGeoDistanceAggregation]
   }
   
-  extension [Self <: AggregationsGeoDistanceAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsGeoDistanceAggregation] (val x: Self) extends AnyVal {
     
     inline def setDistance_type(value: GeoDistanceType): Self = StObject.set(x, "distance_type", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PrintUsage {
     __obj.asInstanceOf[PrintUsage]
   }
   
-  extension [Self <: PrintUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintUsage] (val x: Self) extends AnyVal {
     
     inline def setCompletedBlackAndWhiteJobCount(value: Double): Self = StObject.set(x, "completedBlackAndWhiteJobCount", value.asInstanceOf[js.Any])
     

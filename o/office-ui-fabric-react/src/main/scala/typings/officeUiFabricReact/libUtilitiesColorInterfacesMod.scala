@@ -27,7 +27,8 @@ object libUtilitiesColorInterfacesMod {
       __obj.asInstanceOf[IColor]
     }
     
-    extension [Self <: IColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColor] (val x: Self) extends AnyVal {
       
       inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object libUtilitiesColorInterfacesMod {
       __obj.asInstanceOf[IHSL]
     }
     
-    extension [Self <: IHSL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHSL] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object libUtilitiesColorInterfacesMod {
       __obj.asInstanceOf[IHSV]
     }
     
-    extension [Self <: IHSV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHSV] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object libUtilitiesColorInterfacesMod {
       __obj.asInstanceOf[IRGB]
     }
     
-    extension [Self <: IRGB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRGB] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

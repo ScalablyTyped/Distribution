@@ -44,7 +44,8 @@ object NotificationOptions {
     __obj.asInstanceOf[NotificationOptions]
   }
   
-  extension [Self <: NotificationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowHideAfter(value: Double): Self = StObject.set(x, "allowHideAfter", value.asInstanceOf[js.Any])
     

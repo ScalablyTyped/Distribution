@@ -40,7 +40,8 @@ object Coauthoring {
     __obj.asInstanceOf[Coauthoring]
   }
   
-  extension [Self <: Coauthoring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Coauthoring] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

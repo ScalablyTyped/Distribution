@@ -207,7 +207,8 @@ object libPromptsBaseMod {
       __obj.asInstanceOf[Prompt[TQuestion]]
     }
     
-    extension [Self <: Prompt[?], TQuestion /* <: Question[Answers] */](x: Self & Prompt[TQuestion]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Prompt[?], TQuestion /* <: Question[Answers] */] (val x: Self & Prompt[TQuestion]) extends AnyVal {
       
       inline def setAnswers(value: Answers): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
       

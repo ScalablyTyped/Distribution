@@ -23,7 +23,8 @@ object PutDataProtectionPolicyInput {
     __obj.asInstanceOf[PutDataProtectionPolicyInput]
   }
   
-  extension [Self <: PutDataProtectionPolicyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutDataProtectionPolicyInput] (val x: Self) extends AnyVal {
     
     inline def setDataProtectionPolicy(value: attributeValue): Self = StObject.set(x, "DataProtectionPolicy", value.asInstanceOf[js.Any])
     

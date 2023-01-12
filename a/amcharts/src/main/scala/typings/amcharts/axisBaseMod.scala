@@ -423,7 +423,8 @@ object axisBaseMod {
       __obj.asInstanceOf[AxisBase]
     }
     
-    extension [Self <: AxisBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisBase] (val x: Self) extends AnyVal {
       
       inline def setAddGuide(value: typings.amcharts.guideMod.default => Unit): Self = StObject.set(x, "addGuide", js.Any.fromFunction1(value))
       

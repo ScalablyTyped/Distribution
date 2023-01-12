@@ -54,7 +54,8 @@ object SubaccountStats {
     __obj.asInstanceOf[SubaccountStats]
   }
   
-  extension [Self <: SubaccountStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubaccountStats] (val x: Self) extends AnyVal {
     
     inline def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
     

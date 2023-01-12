@@ -137,7 +137,8 @@ object Browseris {
     __obj.asInstanceOf[Browseris]
   }
   
-  extension [Self <: Browseris](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Browseris] (val x: Self) extends AnyVal {
     
     inline def setArmProcessor(value: Boolean): Self = StObject.set(x, "armProcessor", value.asInstanceOf[js.Any])
     

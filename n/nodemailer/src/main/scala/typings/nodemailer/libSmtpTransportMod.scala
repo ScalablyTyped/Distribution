@@ -81,7 +81,8 @@ object libSmtpTransportMod {
       __obj.asInstanceOf[AuthenticationTypeCustom]
     }
     
-    extension [Self <: AuthenticationTypeCustom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticationTypeCustom] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object libSmtpTransportMod {
       __obj.asInstanceOf[AuthenticationTypeLogin]
     }
     
-    extension [Self <: AuthenticationTypeLogin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticationTypeLogin] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object libSmtpTransportMod {
       __obj.asInstanceOf[AuthenticationTypeOAuth2]
     }
     
-    extension [Self <: AuthenticationTypeOAuth2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticationTypeOAuth2] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: XOAUTH2): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object libSmtpTransportMod {
       __obj.asInstanceOf[MailOptions]
     }
     
-    extension [Self <: MailOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: typings.nodemailer.libSmtpConnectionMod.AuthenticationType): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -262,7 +266,8 @@ object libSmtpTransportMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAuthMethod(value: String): Self = StObject.set(x, "authMethod", value.asInstanceOf[js.Any])
       
@@ -455,7 +460,8 @@ object libSmtpTransportMod {
       __obj.asInstanceOf[SentMessageInfo]
     }
     
-    extension [Self <: SentMessageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentMessageInfo] (val x: Self) extends AnyVal {
       
       inline def setAccepted(value: js.Array[String | Address]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
       

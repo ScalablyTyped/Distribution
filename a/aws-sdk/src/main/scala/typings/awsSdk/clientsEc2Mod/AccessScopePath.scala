@@ -28,7 +28,8 @@ object AccessScopePath {
     __obj.asInstanceOf[AccessScopePath]
   }
   
-  extension [Self <: AccessScopePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessScopePath] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: PathStatement): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

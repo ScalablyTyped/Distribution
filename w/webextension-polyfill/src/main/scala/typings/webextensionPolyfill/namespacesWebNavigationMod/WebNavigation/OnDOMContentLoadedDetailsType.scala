@@ -31,7 +31,8 @@ object OnDOMContentLoadedDetailsType {
     __obj.asInstanceOf[OnDOMContentLoadedDetailsType]
   }
   
-  extension [Self <: OnDOMContentLoadedDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDOMContentLoadedDetailsType] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

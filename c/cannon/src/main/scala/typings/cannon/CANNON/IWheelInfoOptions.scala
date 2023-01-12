@@ -75,7 +75,8 @@ object IWheelInfoOptions {
     __obj.asInstanceOf[IWheelInfoOptions]
   }
   
-  extension [Self <: IWheelInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWheelInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Vec3): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

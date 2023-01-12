@@ -23,7 +23,8 @@ object DataTableCellClassNameOptions {
     __obj.asInstanceOf[DataTableCellClassNameOptions]
   }
   
-  extension [Self <: DataTableCellClassNameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableCellClassNameOptions] (val x: Self) extends AnyVal {
     
     inline def setColumn(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Column */ Any

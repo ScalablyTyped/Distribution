@@ -23,7 +23,8 @@ object StepStateChangeReason {
     __obj.asInstanceOf[StepStateChangeReason]
   }
   
-  extension [Self <: StepStateChangeReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepStateChangeReason] (val x: Self) extends AnyVal {
     
     inline def setCode(value: StepStateChangeReasonCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

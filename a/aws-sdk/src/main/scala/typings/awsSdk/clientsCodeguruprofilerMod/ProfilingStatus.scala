@@ -28,7 +28,8 @@ object ProfilingStatus {
     __obj.asInstanceOf[ProfilingStatus]
   }
   
-  extension [Self <: ProfilingStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfilingStatus] (val x: Self) extends AnyVal {
     
     inline def setLatestAgentOrchestratedAt(value: js.Date): Self = StObject.set(x, "latestAgentOrchestratedAt", value.asInstanceOf[js.Any])
     

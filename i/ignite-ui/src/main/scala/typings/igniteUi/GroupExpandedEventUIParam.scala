@@ -23,7 +23,8 @@ object GroupExpandedEventUIParam {
     __obj.asInstanceOf[GroupExpandedEventUIParam]
   }
   
-  extension [Self <: GroupExpandedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupExpandedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
