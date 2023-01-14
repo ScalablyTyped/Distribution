@@ -30,7 +30,8 @@ object CredReq {
     __obj.asInstanceOf[CredReq]
   }
   
-  extension [Self <: CredReq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredReq] (val x: Self) extends AnyVal {
     
     inline def setBlinded_ms(value: Record[String, Any]): Self = StObject.set(x, "blinded_ms", value.asInstanceOf[js.Any])
     

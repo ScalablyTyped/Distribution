@@ -24,7 +24,8 @@ object DidConfig {
     __obj.asInstanceOf[DidConfig]
   }
   
-  extension [Self <: DidConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidConfig] (val x: Self) extends AnyVal {
     
     inline def setCid(value: Boolean): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     

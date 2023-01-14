@@ -26,7 +26,8 @@ object OAuth2Server {
       __obj.asInstanceOf[AccessToken]
     }
     
-    extension [Self <: AccessToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object OAuth2Server {
       __obj.asInstanceOf[AuthCode]
     }
     
-    extension [Self <: AuthCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthCode] (val x: Self) extends AnyVal {
       
       inline def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object OAuth2Server {
       __obj.asInstanceOf[AuthCodeGrantResult]
     }
     
-    extension [Self <: AuthCodeGrantResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthCodeGrantResult] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object OAuth2Server {
       __obj.asInstanceOf[CallMethod]
     }
     
-    extension [Self <: CallMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallMethod] (val x: Self) extends AnyVal {
       
       inline def setAuthCodeGrant(
         value: (String, String, String, js.Array[String], String, js.Function2[/* err */ Error, /* authCodeGrantResult */ AuthCodeGrantResult, Unit]) => Unit
@@ -144,7 +148,8 @@ object OAuth2Server {
       __obj.asInstanceOf[Client]
     }
     
-    extension [Self <: Client](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -190,7 +195,8 @@ object OAuth2Server {
       __obj.asInstanceOf[Collections]
     }
     
-    extension [Self <: Collections](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collections] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: Collection[AccessToken, AccessToken]): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -216,7 +222,8 @@ object OAuth2Server {
       __obj.asInstanceOf[MethodNames]
     }
     
-    extension [Self <: MethodNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodNames] (val x: Self) extends AnyVal {
       
       inline def setAuthCodeGrant(value: String): Self = StObject.set(x, "authCodeGrant", value.asInstanceOf[js.Any])
     }
@@ -250,7 +257,8 @@ object OAuth2Server {
       __obj.asInstanceOf[typings.meteorPrime8consultingOauth2.OAuth2Server.OAuth2Server]
     }
     
-    extension [Self <: typings.meteorPrime8consultingOauth2.OAuth2Server.OAuth2Server](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteorPrime8consultingOauth2.OAuth2Server.OAuth2Server] (val x: Self) extends AnyVal {
       
       inline def setCallMethod(value: CallMethod): Self = StObject.set(x, "callMethod", value.asInstanceOf[js.Any])
       
@@ -285,7 +293,8 @@ object OAuth2Server {
       __obj.asInstanceOf[PubSubNames]
     }
     
-    extension [Self <: PubSubNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PubSubNames] (val x: Self) extends AnyVal {
       
       inline def setAuthCodes(value: String): Self = StObject.set(x, "authCodes", value.asInstanceOf[js.Any])
       
@@ -310,7 +319,8 @@ object OAuth2Server {
       __obj.asInstanceOf[RefreshToken]
     }
     
-    extension [Self <: RefreshToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshToken] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -336,7 +346,8 @@ object OAuth2Server {
       __obj.asInstanceOf[SubscribeTo]
     }
     
-    extension [Self <: SubscribeTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeTo] (val x: Self) extends AnyVal {
       
       inline def setAuthCode(value: () => SubscriptionHandle): Self = StObject.set(x, "authCode", js.Any.fromFunction0(value))
     }

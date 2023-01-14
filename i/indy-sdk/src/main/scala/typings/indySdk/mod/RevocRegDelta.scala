@@ -18,7 +18,8 @@ object RevocRegDelta {
     __obj.asInstanceOf[RevocRegDelta]
   }
   
-  extension [Self <: RevocRegDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevocRegDelta] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Accum): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

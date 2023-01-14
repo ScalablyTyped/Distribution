@@ -19,7 +19,8 @@ object WalletSearchOptions {
     __obj.asInstanceOf[WalletSearchOptions]
   }
   
-  extension [Self <: WalletSearchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalletSearchOptions] (val x: Self) extends AnyVal {
     
     inline def setRetrieveRecords(value: Boolean): Self = StObject.set(x, "retrieveRecords", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object TailsWriterConfig {
     __obj.asInstanceOf[TailsWriterConfig]
   }
   
-  extension [Self <: TailsWriterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TailsWriterConfig] (val x: Self) extends AnyVal {
     
     inline def setBase_dir(value: String): Self = StObject.set(x, "base_dir", value.asInstanceOf[js.Any])
     

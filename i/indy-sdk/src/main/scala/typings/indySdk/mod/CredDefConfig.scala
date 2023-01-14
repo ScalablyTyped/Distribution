@@ -15,7 +15,8 @@ object CredDefConfig {
     __obj.asInstanceOf[CredDefConfig]
   }
   
-  extension [Self <: CredDefConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredDefConfig] (val x: Self) extends AnyVal {
     
     inline def setSupport_revocation(value: Boolean): Self = StObject.set(x, "support_revocation", value.asInstanceOf[js.Any])
     

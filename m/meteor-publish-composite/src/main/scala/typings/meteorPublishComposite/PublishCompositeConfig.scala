@@ -20,7 +20,8 @@ object PublishCompositeConfig {
     __obj.asInstanceOf[PublishCompositeConfig[OutLevel]]
   }
   
-  extension [Self <: PublishCompositeConfig[?], OutLevel](x: Self & PublishCompositeConfig[OutLevel]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishCompositeConfig[?], OutLevel] (val x: Self & PublishCompositeConfig[OutLevel]) extends AnyVal {
     
     inline def setChildren(value: js.Array[PublishCompositeConfig1[OutLevel, Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

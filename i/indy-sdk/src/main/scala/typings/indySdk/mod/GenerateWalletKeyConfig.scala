@@ -15,7 +15,8 @@ object GenerateWalletKeyConfig {
     __obj.asInstanceOf[GenerateWalletKeyConfig]
   }
   
-  extension [Self <: GenerateWalletKeyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateWalletKeyConfig] (val x: Self) extends AnyVal {
     
     inline def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     

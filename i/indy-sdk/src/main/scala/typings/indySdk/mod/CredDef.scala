@@ -27,7 +27,8 @@ object CredDef {
     __obj.asInstanceOf[CredDef]
   }
   
-  extension [Self <: CredDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredDef] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

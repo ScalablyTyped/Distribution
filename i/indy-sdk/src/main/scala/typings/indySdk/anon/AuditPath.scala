@@ -32,7 +32,8 @@ object AuditPath {
     __obj.asInstanceOf[AuditPath]
   }
   
-  extension [Self <: AuditPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditPath] (val x: Self) extends AnyVal {
     
     inline def setAuditPath(value: js.Array[String]): Self = StObject.set(x, "auditPath", value.asInstanceOf[js.Any])
     

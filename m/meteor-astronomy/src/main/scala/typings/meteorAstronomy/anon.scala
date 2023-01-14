@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Cast]
     }
     
-    extension [Self <: Cast](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cast] (val x: Self) extends AnyVal {
       
       inline def setCast(value: Boolean): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object anon {
       __obj.asInstanceOf[GetIdentifier]
     }
     
-    extension [Self <: GetIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetIdentifier] (val x: Self) extends AnyVal {
       
       inline def setGetIdentifier(value: Any => String): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction1(value))
       
@@ -120,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Insert]
     }
     
-    extension [Self <: Insert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Insert] (val x: Self) extends AnyVal {
       
       inline def setInsert(value: Boolean): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       
@@ -143,7 +146,8 @@ object anon {
       __obj.asInstanceOf[Old]
     }
     
-    extension [Self <: Old](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Old] (val x: Self) extends AnyVal {
       
       inline def setOld(value: Boolean): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
       

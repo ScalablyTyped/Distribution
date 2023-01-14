@@ -94,7 +94,8 @@ object meteorMdgColonvalidatedMethodMod {
       __obj.asInstanceOf[ValidatedMethodOptions[TName, TRun]]
     }
     
-    extension [Self <: ValidatedMethodOptions[?, ?], TName /* <: String */, TRun /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & (ValidatedMethodOptions[TName, TRun])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatedMethodOptions[?, ?], TName /* <: String */, TRun /* <: js.Function1[/* repeated */ Any, Any] */] (val x: Self & (ValidatedMethodOptions[TName, TRun])) extends AnyVal {
       
       inline def setApplyOptions(value: Dictkey): Self = StObject.set(x, "applyOptions", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object meteorMdgColonvalidatedMethodMod {
       __obj.asInstanceOf[ValidatedMethodOptionsWithMixins[TName, TRun]]
     }
     
-    extension [Self <: ValidatedMethodOptionsWithMixins[?, ?], TName /* <: String */, TRun /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & (ValidatedMethodOptionsWithMixins[TName, TRun])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatedMethodOptionsWithMixins[?, ?], TName /* <: String */, TRun /* <: js.Function1[/* repeated */ Any, Any] */] (val x: Self & (ValidatedMethodOptionsWithMixins[TName, TRun])) extends AnyVal {
       
       inline def setMixins(
         value: /* import warning: importer.ImportType#apply Failed type conversion: TRun extends infer TRunAlias ? TRunAlias extends TRun ? std.ReadonlyArray<meteor-mdg-validated-method.meteor/mdg:validated-method.Mixin<TName, TRunAlias>> : never : never | undefined */ js.Any

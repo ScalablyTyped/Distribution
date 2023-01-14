@@ -30,7 +30,8 @@ object Requestedpredicates {
     __obj.asInstanceOf[Requestedpredicates]
   }
   
-  extension [Self <: Requestedpredicates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Requestedpredicates] (val x: Self) extends AnyVal {
     
     inline def setRequested_predicates(value: StringDictionary[SubproofindexNumber]): Self = StObject.set(x, "requested_predicates", value.asInstanceOf[js.Any])
     

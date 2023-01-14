@@ -19,7 +19,8 @@ object RevState {
     __obj.asInstanceOf[RevState]
   }
   
-  extension [Self <: RevState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevState] (val x: Self) extends AnyVal {
     
     inline def setRev_reg(value: RevocReg): Self = StObject.set(x, "rev_reg", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object RuntimePoolConfig {
     __obj.asInstanceOf[RuntimePoolConfig]
   }
   
-  extension [Self <: RuntimePoolConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimePoolConfig] (val x: Self) extends AnyVal {
     
     inline def setExtended_timeout(value: Double): Self = StObject.set(x, "extended_timeout", value.asInstanceOf[js.Any])
     

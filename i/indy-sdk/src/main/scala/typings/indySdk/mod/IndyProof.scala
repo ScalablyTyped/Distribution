@@ -21,7 +21,8 @@ object IndyProof {
     __obj.asInstanceOf[IndyProof]
   }
   
-  extension [Self <: IndyProof](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndyProof] (val x: Self) extends AnyVal {
     
     inline def setIdentifiers(value: js.Array[Creddefid]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
     

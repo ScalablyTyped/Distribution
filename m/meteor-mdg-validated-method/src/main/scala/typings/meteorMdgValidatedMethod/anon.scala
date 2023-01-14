@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setNoRetry(value: Boolean): Self = StObject.set(x, "noRetry", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Name[TName]]
     }
     
-    extension [Self <: Name[?], TName /* <: String */](x: Self & Name[TName]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name[?], TName /* <: String */] (val x: Self & Name[TName]) extends AnyVal {
       
       inline def setName(
         value: /* import warning: importer.ImportType#apply Failed type conversion: TName extends string ? TName : string */ js.Any

@@ -31,7 +31,8 @@ object IssuanceType_ {
     __obj.asInstanceOf[IssuanceType_]
   }
   
-  extension [Self <: IssuanceType_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuanceType_] (val x: Self) extends AnyVal {
     
     inline def setIssuanceType(value: ISSUANCE_BY_DEFAULT | ISSUANCE_ON_DEMAND): Self = StObject.set(x, "issuanceType", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Client]
     }
     
-    extension [Self <: Client](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
       
       inline def setClient(value: MongoClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object anon {
       __obj.asInstanceOf[DatabaseName]
     }
     
-    extension [Self <: DatabaseName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabaseName] (val x: Self) extends AnyVal {
       
       inline def setDatabaseName(
         value: /* import warning: importer.ImportType#apply Failed type conversion: mongodb.mongodb.Db['databaseName'] */ js.Any
@@ -456,7 +458,8 @@ object anon {
       __obj.asInstanceOf[PartialConfig]
     }
     
-    extension [Self <: PartialConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
       
       inline def setChangelogCollectionName(value: String): Self = StObject.set(x, "changelogCollectionName", value.asInstanceOf[js.Any])
       

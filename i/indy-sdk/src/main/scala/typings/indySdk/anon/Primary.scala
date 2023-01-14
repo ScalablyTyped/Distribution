@@ -18,7 +18,8 @@ object Primary {
     __obj.asInstanceOf[Primary]
   }
   
-  extension [Self <: Primary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Primary] (val x: Self) extends AnyVal {
     
     inline def setPrimary(value: Record[String, Any]): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     

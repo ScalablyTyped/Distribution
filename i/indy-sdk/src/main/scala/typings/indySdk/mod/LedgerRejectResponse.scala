@@ -24,7 +24,8 @@ object LedgerRejectResponse {
     __obj.asInstanceOf[LedgerRejectResponse]
   }
   
-  extension [Self <: LedgerRejectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LedgerRejectResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

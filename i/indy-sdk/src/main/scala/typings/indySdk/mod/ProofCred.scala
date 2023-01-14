@@ -22,7 +22,8 @@ object ProofCred {
     __obj.asInstanceOf[ProofCred]
   }
   
-  extension [Self <: ProofCred](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProofCred] (val x: Self) extends AnyVal {
     
     inline def setRequested_attrs(value: StringDictionary[js.Array[IndyCredential]]): Self = StObject.set(x, "requested_attrs", value.asInstanceOf[js.Any])
     

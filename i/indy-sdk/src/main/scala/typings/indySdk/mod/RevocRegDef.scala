@@ -27,7 +27,8 @@ object RevocRegDef {
     __obj.asInstanceOf[RevocRegDef]
   }
   
-  extension [Self <: RevocRegDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevocRegDef] (val x: Self) extends AnyVal {
     
     inline def setCredDefId(value: CredDefId): Self = StObject.set(x, "credDefId", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthSource(value: String): Self = StObject.set(x, "authSource", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object mod {
         __obj.asInstanceOf[BaseContext]
       }
       
-      extension [Self <: BaseContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseContext] (val x: Self) extends AnyVal {
         
         inline def setDb(value: Db): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
         

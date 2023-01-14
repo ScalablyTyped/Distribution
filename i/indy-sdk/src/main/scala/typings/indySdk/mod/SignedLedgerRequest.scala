@@ -24,7 +24,8 @@ object SignedLedgerRequest {
     __obj.asInstanceOf[SignedLedgerRequest]
   }
   
-  extension [Self <: SignedLedgerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedLedgerRequest] (val x: Self) extends AnyVal {
     
     inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }

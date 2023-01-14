@@ -87,7 +87,8 @@ object mod {
         __obj.asInstanceOf[Config]
       }
       
-      extension [Self <: Config](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
         
         inline def setChangelogCollectionName(value: String): Self = StObject.set(x, "changelogCollectionName", value.asInstanceOf[js.Any])
         
@@ -151,7 +152,8 @@ object mod {
       __obj.asInstanceOf[MigrationStatus]
     }
     
-    extension [Self <: MigrationStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MigrationStatus] (val x: Self) extends AnyVal {
       
       inline def setAppliedAt(value: String): Self = StObject.set(x, "appliedAt", value.asInstanceOf[js.Any])
       

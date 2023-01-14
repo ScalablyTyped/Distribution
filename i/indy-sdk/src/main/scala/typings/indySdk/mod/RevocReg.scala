@@ -18,7 +18,8 @@ object RevocReg {
     __obj.asInstanceOf[RevocReg]
   }
   
-  extension [Self <: RevocReg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevocReg] (val x: Self) extends AnyVal {
     
     inline def setValue(value: AccumString): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IndyCredentialInfo {
     __obj.asInstanceOf[IndyCredentialInfo]
   }
   
-  extension [Self <: IndyCredentialInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndyCredentialInfo] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
         
@@ -123,7 +124,8 @@ object mod {
         __obj.asInstanceOf[Range]
       }
       
-      extension [Self <: Range](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
         
         inline def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
         

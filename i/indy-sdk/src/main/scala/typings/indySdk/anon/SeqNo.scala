@@ -19,7 +19,8 @@ object SeqNo {
     __obj.asInstanceOf[SeqNo]
   }
   
-  extension [Self <: SeqNo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeqNo] (val x: Self) extends AnyVal {
     
     inline def setSeqNo(value: Double): Self = StObject.set(x, "seqNo", value.asInstanceOf[js.Any])
     

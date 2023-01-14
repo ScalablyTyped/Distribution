@@ -22,7 +22,8 @@ object WalletRecord {
     __obj.asInstanceOf[WalletRecord]
   }
   
-  extension [Self <: WalletRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalletRecord] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

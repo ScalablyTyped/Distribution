@@ -31,7 +31,8 @@ object meteorDburlesColoncollectionHelpersMod {
       __obj.asInstanceOf[DataFlavor[T]]
     }
     
-    extension [Self <: DataFlavor[?], T](x: Self & DataFlavor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataFlavor[?], T] (val x: Self & DataFlavor[T]) extends AnyVal {
       
       inline def set_meteor_dburles_collection_helpers_isData(value: js.Tuple2[Flavor, T]): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isData", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object meteorDburlesColoncollectionHelpersMod {
       __obj.asInstanceOf[HelperBrand]
     }
     
-    extension [Self <: HelperBrand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelperBrand] (val x: Self) extends AnyVal {
       
       inline def set_meteor_dburles_collection_helpers_isBrandUnsupportedHelper(value: Brand): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isBrandUnsupportedHelper", value.asInstanceOf[js.Any])
     }
@@ -117,7 +119,8 @@ object meteorDburlesColoncollectionHelpersMod {
       __obj.asInstanceOf[HelperFlavor]
     }
     
-    extension [Self <: HelperFlavor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelperFlavor] (val x: Self) extends AnyVal {
       
       inline def set_meteor_dburles_collection_helpers_isHelper(value: Flavor): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isHelper", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object meteorDburlesColoncollectionHelpersMod {
       __obj.asInstanceOf[HelpersFlavor[T]]
     }
     
-    extension [Self <: HelpersFlavor[?], T](x: Self & HelpersFlavor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelpersFlavor[?], T] (val x: Self & HelpersFlavor[T]) extends AnyVal {
       
       inline def set_meteor_dburles_collection_helpers_isHelpersOf(value: js.Tuple2[Flavor, T]): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isHelpersOf", value.asInstanceOf[js.Any])
       
@@ -248,7 +252,8 @@ object meteorDburlesColoncollectionHelpersMod {
       __obj.asInstanceOf[OptionalHelperBrand]
     }
     
-    extension [Self <: OptionalHelperBrand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalHelperBrand] (val x: Self) extends AnyVal {
       
       inline def set_meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelper(value: Brand): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelper", value.asInstanceOf[js.Any])
       
@@ -267,7 +272,8 @@ object meteorDburlesColoncollectionHelpersMod {
       __obj.asInstanceOf[OptionalHelperFlavor]
     }
     
-    extension [Self <: OptionalHelperFlavor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalHelperFlavor] (val x: Self) extends AnyVal {
       
       inline def set_meteor_dburles_collection_helpers_isOptionalHelper(value: Flavor): Self = StObject.set(x, "_meteor_dburles_collection_helpers_isOptionalHelper", value.asInstanceOf[js.Any])
       

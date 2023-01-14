@@ -26,7 +26,8 @@ object IndyRequestedCredentials {
     __obj.asInstanceOf[IndyRequestedCredentials]
   }
   
-  extension [Self <: IndyRequestedCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndyRequestedCredentials] (val x: Self) extends AnyVal {
     
     inline def setRequested_attributes(value: StringDictionary[Credid]): Self = StObject.set(x, "requested_attributes", value.asInstanceOf[js.Any])
     

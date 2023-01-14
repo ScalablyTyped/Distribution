@@ -20,7 +20,8 @@ object LedgerWriteReplyResponse {
     __obj.asInstanceOf[LedgerWriteReplyResponse]
   }
   
-  extension [Self <: LedgerWriteReplyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LedgerWriteReplyResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: AuditPath): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

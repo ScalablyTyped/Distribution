@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[ArrayFilters]
     }
     
-    extension [Self <: ArrayFilters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayFilters] (val x: Self) extends AnyVal {
       
       inline def setArrayFilters(value: js.Array[StringDictionary[Any]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Fetch[T]]
     }
     
-    extension [Self <: Fetch[?], T](x: Self & Fetch[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fetch[?], T] (val x: Self & Fetch[T]) extends AnyVal {
       
       inline def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object anon {
       __obj.asInstanceOf[InsertedId]
     }
     
-    extension [Self <: InsertedId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertedId] (val x: Self) extends AnyVal {
       
       inline def setInsertedId(value: String): Self = StObject.set(x, "insertedId", value.asInstanceOf[js.Any])
       
@@ -185,7 +189,8 @@ object anon {
       __obj.asInstanceOf[Multi]
     }
     
-    extension [Self <: Multi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Multi] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       

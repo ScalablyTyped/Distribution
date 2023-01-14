@@ -19,7 +19,8 @@ object OpenWalletCredentials {
     __obj.asInstanceOf[OpenWalletCredentials]
   }
   
-  extension [Self <: OpenWalletCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenWalletCredentials] (val x: Self) extends AnyVal {
     
     inline def setRekey(value: String): Self = StObject.set(x, "rekey", value.asInstanceOf[js.Any])
     

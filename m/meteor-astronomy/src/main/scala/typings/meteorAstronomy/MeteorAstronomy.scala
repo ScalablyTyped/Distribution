@@ -97,7 +97,8 @@ object MeteorAstronomy {
       __obj.asInstanceOf[ClassModel[T]]
     }
     
-    extension [Self <: ClassModel[?], T](x: Self & ClassModel[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassModel[?], T] (val x: Self & ClassModel[T]) extends AnyVal {
       
       inline def setBehaviors(value: js.Object): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object MeteorAstronomy {
       __obj.asInstanceOf[EnumModel[T]]
     }
     
-    extension [Self <: EnumModel[?], T](x: Self & EnumModel[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnumModel[?], T] (val x: Self & EnumModel[T]) extends AnyVal {
       
       inline def setIdentifiers(value: js.Array[String] | T): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object MeteorAstronomy {
       __obj.asInstanceOf[FindOneOptions]
     }
     
-    extension [Self <: FindOneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindOneOptions] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Double): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -242,7 +245,8 @@ object MeteorAstronomy {
       __obj.asInstanceOf[FindOptions]
     }
     
-    extension [Self <: FindOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -295,7 +299,8 @@ object MeteorAstronomy {
       __obj.asInstanceOf[ModelFullField[Field, Doc]]
     }
     
-    extension [Self <: ModelFullField[?, ?], Field, Doc](x: Self & (ModelFullField[Field, Doc])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelFullField[?, ?], Field, Doc] (val x: Self & (ModelFullField[Field, Doc])) extends AnyVal {
       
       inline def setDefault(value: () => Field): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
       
@@ -363,7 +368,8 @@ object MeteorAstronomy {
       __obj.asInstanceOf[SaveAndValidateOptions[K]]
     }
     
-    extension [Self <: SaveAndValidateOptions[?], K](x: Self & SaveAndValidateOptions[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveAndValidateOptions[?], K] (val x: Self & SaveAndValidateOptions[K]) extends AnyVal {
       
       inline def setCast(value: Boolean): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
       
@@ -402,7 +408,8 @@ object MeteorAstronomy {
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    extension [Self <: UpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
       
@@ -421,7 +428,8 @@ object MeteorAstronomy {
       __obj.asInstanceOf[UpsertOptions]
     }
     
-    extension [Self <: UpsertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpsertOptions] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
@@ -443,7 +451,8 @@ object MeteorAstronomy {
       __obj.asInstanceOf[Validator]
     }
     
-    extension [Self <: Validator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Validator] (val x: Self) extends AnyVal {
       
       inline def setParam(value: Any): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object Accum {
     __obj.asInstanceOf[Accum]
   }
   
-  extension [Self <: Accum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Accum] (val x: Self) extends AnyVal {
     
     inline def setAccum(value: String): Self = StObject.set(x, "accum", value.asInstanceOf[js.Any])
     

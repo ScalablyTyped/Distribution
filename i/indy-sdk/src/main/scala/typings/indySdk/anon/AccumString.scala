@@ -15,7 +15,8 @@ object AccumString {
     __obj.asInstanceOf[AccumString]
   }
   
-  extension [Self <: AccumString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccumString] (val x: Self) extends AnyVal {
     
     inline def setAccum(value: String): Self = StObject.set(x, "accum", value.asInstanceOf[js.Any])
   }

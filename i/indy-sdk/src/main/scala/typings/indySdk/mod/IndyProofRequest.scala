@@ -38,7 +38,8 @@ object IndyProofRequest {
     __obj.asInstanceOf[IndyProofRequest]
   }
   
-  extension [Self <: IndyProofRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndyProofRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

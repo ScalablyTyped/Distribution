@@ -20,7 +20,8 @@ object WalletCredentials {
     __obj.asInstanceOf[WalletCredentials]
   }
   
-  extension [Self <: WalletCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalletCredentials] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

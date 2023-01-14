@@ -18,7 +18,8 @@ object Subproofindex {
     __obj.asInstanceOf[Subproofindex]
   }
   
-  extension [Self <: Subproofindex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subproofindex] (val x: Self) extends AnyVal {
     
     inline def setSub_proof_index(value: Double): Self = StObject.set(x, "sub_proof_index", value.asInstanceOf[js.Any])
     

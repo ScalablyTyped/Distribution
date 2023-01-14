@@ -32,7 +32,8 @@ object Cred {
     __obj.asInstanceOf[Cred]
   }
   
-  extension [Self <: Cred](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cred] (val x: Self) extends AnyVal {
     
     inline def setCred_def_id(value: CredDefId): Self = StObject.set(x, "cred_def_id", value.asInstanceOf[js.Any])
     

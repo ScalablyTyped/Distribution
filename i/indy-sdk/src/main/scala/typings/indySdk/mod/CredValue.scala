@@ -17,7 +17,8 @@ object CredValue {
     __obj.asInstanceOf[CredValue]
   }
   
-  extension [Self <: CredValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredValue] (val x: Self) extends AnyVal {
     
     inline def setEncoded(value: String): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
     

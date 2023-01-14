@@ -20,7 +20,8 @@ object LedgerReadReplyResponse {
     __obj.asInstanceOf[LedgerReadReplyResponse]
   }
   
-  extension [Self <: LedgerReadReplyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LedgerReadReplyResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

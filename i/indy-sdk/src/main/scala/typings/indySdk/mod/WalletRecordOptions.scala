@@ -19,7 +19,8 @@ object WalletRecordOptions {
     __obj.asInstanceOf[WalletRecordOptions]
   }
   
-  extension [Self <: WalletRecordOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalletRecordOptions] (val x: Self) extends AnyVal {
     
     inline def setRetrieveTags(value: Boolean): Self = StObject.set(x, "retrieveTags", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GetNymResponse {
     __obj.asInstanceOf[GetNymResponse]
   }
   
-  extension [Self <: GetNymResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNymResponse] (val x: Self) extends AnyVal {
     
     inline def setDid(value: Did): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
     

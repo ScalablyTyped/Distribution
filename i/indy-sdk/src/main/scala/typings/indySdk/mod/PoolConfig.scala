@@ -15,7 +15,8 @@ object PoolConfig {
     __obj.asInstanceOf[PoolConfig]
   }
   
-  extension [Self <: PoolConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoolConfig] (val x: Self) extends AnyVal {
     
     inline def setGenesis_txn(value: String): Self = StObject.set(x, "genesis_txn", value.asInstanceOf[js.Any])
   }
