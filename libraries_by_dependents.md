@@ -27,7 +27,6 @@
 | 0.0 | [ace-builds](./a/ace-builds) | Ace (Ajax.org Cloud9 Editor)
 | 0.0 | [ace-diff](./a/ace-diff) | A diff/merging wrapper for Ace Editor built on goo
 | 0.0 | [ackee-tracker](./a/ackee-tracker) | Transfer data to Ackee
-| 0.0 | [acl](./a/acl) | An Access Control List module, based on Redis with
 | 0.0 | [acme-client](./a/acme-client) | Simple and unopinionated ACME client
 | 0.0 | [acorn](./a/acorn) | ECMAScript parser
 | 0.0 | [acorn-hammerhead](./a/acorn-hammerhead) | acorn.js parser adapted to TestCafe Hammerhead
@@ -182,7 +181,6 @@
 | 0.0 | [angular-locker](./a/angular-locker) | A simple & configurable abstraction for local/sess
 | 0.0 | [angular-material](./a/angular-material) | **
 | 0.0 | [angular-media-queries](./a/angular-media-queries) | Angular service to test if a given @media statment
-| 0.0 | [angular-meteor](./a/angular-meteor) | Combining the simplicity and power of AngularJS an
 | 0.0 | [angular-mocks](./a/angular-mocks) | AngularJS mocks for testing
 | 0.0 | [angular-modal](./a/angular-modal) | easily add a modal to your angular app
 | 0.0 | [angular-notifications](./a/angular-notifications) | Sweet notifications for your angular app
@@ -511,7 +509,6 @@
 | 0.0 | [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices
 | 0.0 | [aws-kcl](./a/aws-kcl) | Kinesis Client Libray (KCL) in Node.js.
 | 0.0 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin
-| 0.0 | [aws-lambda-fastify](./a/aws-lambda-fastify) | aws-lambda-fastify@2.2.0 has been deprecated. Plea
 | 0.0 | [aws-lambda-http-server](./a/aws-lambda-http-server) | run http server as aws lambda function
 | 0.0 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object
 | 0.0 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter 
@@ -3713,7 +3710,6 @@
 | 0.0 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler.
 | 0.0 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com
 | 0.0 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir
-| 0.0 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 0.0 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io
 | 0.0 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st
 | 0.0 | [hookrouter](./h/hookrouter) | A hook based router for React
@@ -6555,7 +6551,6 @@
 | 0.0 | [ng-grid](./n/ng-grid) | __Contributors:__
 | 0.0 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne
 | 0.0 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi
-| 0.0 | [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P
 | 0.0 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS
 | 0.0 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS
 | 0.0 | [ng-table](./n/ng-table) | Table + AngularJS ================= 
@@ -6579,7 +6574,6 @@
 | 0.0 | [ngsijs](./n/ngsijs) | JavaScript library for the FIWARE Context Broker s
 | 0.0 | [ngstorage](./n/ngstorage) | ngStorage =========
 | 0.0 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp
-| 0.0 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | -
 | 0.0 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises
 | 0.0 | [nib](./n/nib) | Stylus mixins and utilities
 | 0.0 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js
@@ -11503,7 +11497,6 @@
 | 0.0 | [xxhash-wasm](./x/xxhash-wasm) | A WebAssembly implementation of xxHash
 | 0.0 | [xxhashjs](./x/xxhashjs) | xxHash in Javascript
 | 0.0 | [y-codemirror](./y/y-codemirror) | CodeMirror binding for Yjs
-| 0.0 | [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs
 | 0.0 | [y-protocols](./y/y-protocols) | Yjs encoding protocols
 | 0.0 | [y-websocket](./y/y-websocket) | Websockets provider for Yjs
 | 0.0 | [ya-disk](./y/ya-disk) | Yandex Disk API Library

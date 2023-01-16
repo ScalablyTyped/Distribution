@@ -3174,7 +3174,6 @@
 | 0.7082704355167599 | [rc-segmented](./r/rc-segmented) | React segmented controls used in ant.design
 | 0.7082676941001456 | [empower](./e/empower) | Power Assert feature enhancer for assert function/
 | 0.7081949710506517 | [node-abort-controller](./n/node-abort-controller) | AbortController for Node based on EventEmitter
-| 0.7081644043608262 | [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P
 | 0.7081411005412502 | [ranges-apply](./r/ranges-apply) | Take an array of string index ranges, delete/repla
 | 0.7080424574077693 | [cassandra-driver](./c/cassandra-driver) | DataStax Node.js Driver for Apache Cassandra
 | 0.7080408055692131 | [qr-image](./q/qr-image) | QR Code generator (png, svg, pdf, eps)
@@ -8426,7 +8425,6 @@
 | 0.521022813406997 | [node-static](./n/node-static) | simple, compliant file streaming module for node
 | 0.5209657449388245 | [ip1sms__is-disposable-pho](./i/ip1sms__is-disposable-phone-number) | Determine if a phone number is a disposable phone 
 | 0.5209347255211918 | [angulartics](./a/angulartics) | Vendor-agnostic web analytics for AngularJS applic
-| 0.5209193518675125 | [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs
 | 0.5207384856180444 | [dts-generator](./d/dts-generator) | .d.ts generator. Generates a single d.ts bundle co
 | 0.5207371309362647 | [wu](./w/wu) | Combinators for ECMAScript 6 iterators.
 | 0.520702987559894 | [stremio-addon-sdk](./s/stremio-addon-sdk) | An SDK for making and publishing Stremio add-ons
@@ -9007,7 +9005,6 @@
 | 0.486882827791256 | [rivets](./r/rivets) | Declarative data binding + templating solution.
 | 0.48677315789076503 | [crimsonq](./c/crimsonq) | -
 | 0.4865318156952494 | [csp-hash-generator](./c/csp-hash-generator) | Generate Content Security Policy hash for inline s
-| 0.48653159166137905 | [acl](./a/acl) | An Access Control List module, based on Redis with
 | 0.4865259638682886 | [fetch-jsonp](./f/fetch-jsonp) | Fetch JSONP like a boss using Fetch API
 | 0.486472065090963 | [node-summary](./n/node-summary) | Summarizes text using a naive summarization algori
 | 0.48645049337415097 | [bs-logger](./b/bs-logger) | Bare simple logger for NodeJS
@@ -10321,7 +10318,6 @@
 | 0.3739087522238116 | [parameterize](./p/parameterize) | This repository adds node.js and npm support for p
 | 0.3738057460546391 | [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form 
 | 0.3737619916214192 | [bootpag](./b/bootpag) | bootpag - dynamic pagination jQuery plugin. Works 
-| 0.3736559415506839 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | -
 | 0.37363208075520415 | [gatsby-sharp](./g/gatsby-sharp) | -
 | 0.37356372618117983 | [documentdb](./d/documentdb) | Azure Cosmos DB Service Node.js SDK for SQL API
 | 0.3734709524247766 | [rpi-ws281x-native](./r/rpi-ws281x-native) | (raspberry-pi *only*) native bindings to control a
@@ -10711,7 +10707,6 @@
 | 0.30929121654320413 | [authenticator](./a/authenticator) | Two- / Multi- Factor Authenication (2FA / MFA) for
 | 0.30906337571211107 | [raty](./r/raty) | a node framework base koa@2 that can use full es20
 | 0.30905437106021616 | [roman-numerals](./r/roman-numerals) | Roman numerals conversion module
-| 0.3087531368861572 | [angular-meteor](./a/angular-meteor) | Combining the simplicity and power of AngularJS an
 | 0.3087246910904855 | [next__env](./n/next__env) | Next.js dotenv file loading
 | 0.30867420787972843 | [lerna__run-topologically](./l/lerna__run-topologically) | An internal Lerna tool
 | 0.30859413299325145 | [storefront-ui__vue](./s/storefront-ui__vue) | -
@@ -11135,7 +11130,6 @@
 | 0.2085685462978576 | [wordpress__viewport](./w/wordpress__viewport) | Viewport module for WordPress.
 | 0.20833440213969906 | [uifabric__foundation](./u/uifabric__foundation) | Foundation library for building Fabric components.
 | 0.20805367881968465 | [react-loader](./r/react-loader) | React component that displays a spinner via spin.j
-| 0.20756618934515741 | [aws-lambda-fastify](./a/aws-lambda-fastify) | aws-lambda-fastify@2.2.0 has been deprecated. Plea
 | 0.2070133941868863 | [atlaskit__analytics-next](./a/atlaskit__analytics-next) | React components, HOCs and hooks to assist with tr
 | 0.20688543644904045 | [uifabric__react-hooks](./u/uifabric__react-hooks) | Fluent UI React hooks.
 | 0.2067935646063157 | [pollyjs__adapter-xhr](./p/pollyjs__adapter-xhr) | XHR adapter for @pollyjs
@@ -11426,7 +11420,6 @@
 | 0.17948216205889722 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_compute) | TypeScript typings for Compute Engine API v1
 | 0.1794622728626326 | [metrostations](./m/metrostations) | JSONs of metro stations and lines.
 | 0.17938446594731672 | [fragmented-store](./f/fragmented-store) | Small library to manage the (P)React state
-| 0.17938237856804978 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 0.17935334294200223 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_remotebuildexecution) | TypeScript typings for Remote Build Execution API 
 | 0.1792596690757141 | [timelinejs3](./t/timelinejs3) | TimelineJS v3: A Storytelling Timeline built in Ja
 | 0.17899586210258164 | [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet
