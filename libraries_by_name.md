@@ -39,6 +39,7 @@
 | [achingbrain__nat-port-map](./a/achingbrain__nat-port-mapper) | - | - |
 | [achingbrain__ssdp](./a/achingbrain__ssdp) | - | - |
 | [ackee-tracker](./a/ackee-tracker) | Transfer data to Ackee | ackee, tracking, tracker, analytics, statistics |
+| [acl](./a/acl) | An Access Control List module, based on Redis with | middleware, acl, web |
 | [acme-client](./a/acme-client) | Simple and unopinionated ACME client | acme, client, lets, encrypt, acmev2, boulder |
 | [acorn](./a/acorn) | ECMAScript parser | - |
 | [acorn-hammerhead](./a/acorn-hammerhead) | acorn.js parser adapted to TestCafe Hammerhead | - |
@@ -254,6 +255,7 @@
 | [angular-locker](./a/angular-locker) | A simple & configurable abstraction for local/sess | angular-locker, angular, locker, storage, localStorage, sessionStorage, session, local |
 | [angular-material](./a/angular-material) | ** | angularjs, material, browser, client-side, material design, component library, components |
 | [angular-media-queries](./a/angular-media-queries) | Angular service to test if a given @media statment | angular, angularjs, matchmedia, @media, css |
+| [angular-meteor](./a/angular-meteor) | Combining the simplicity and power of AngularJS an | AngularJS, Meteor, angular-meteor, angular |
 | [angular-mocks](./a/angular-mocks) | AngularJS mocks for testing | angular, framework, browser, mocks, testing, client-side |
 | [angular-modal](./a/angular-modal) | easily add a modal to your angular app | angular, angularjs, modal |
 | [angular-notifications](./a/angular-notifications) | Sweet notifications for your angular app | angular, notifications |
@@ -612,6 +614,7 @@
 | [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices | api, amazon, aws, iot, mqtt |
 | [aws-kcl](./a/aws-kcl) | Kinesis Client Libray (KCL) in Node.js. | api, amazon, aws, big data, kinesis, kinesis client library, kcl, node.js |
 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin | lambda, aws lambda, deploy, deploy lambda |
+| [aws-lambda-fastify](./a/aws-lambda-fastify) | aws-lambda-fastify@2.2.0 has been deprecated. Plea | aws, lambda, serverless, amazon, cloud, node, nodejs, javascript, proxy, api, api-gateway, fastify, web |
 | [aws-lambda-http-server](./a/aws-lambda-http-server) | run http server as aws lambda function | aws-lambda, serverless, proxy, http, proxy, api-gateway, express, koa, fastify, server-base |
 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object | aws, lambda, context, ctx, function, mocking, mock, promise |
 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter  | AWS, SSM, secret, parameter store, parameter, store |
@@ -1647,6 +1650,7 @@
 | [connect-memcached](./c/connect-memcached) | Memcached session store for Connect | memcached, connection, session, store, cache |
 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t | modrewrite |
 | [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect | connect, mongo, mongodb, session, express |
+| [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by | connect, mongo, mongodb, session, express |
 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con | - |
 | [connect-redis](./c/connect-redis) | Redis session store for Connect | connect, redis, session, express |
 | [connect-sequence](./c/connect-sequence) | A node.js module to run connect-like middlewares i | node, node.js, connect, middleware, express |
@@ -1949,6 +1953,7 @@
 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot | cypress, plugin, dotenv, cypress-plugin, env |
 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot. | - |
 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate | cypress, cypress-plugin |
+| [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t | cypress, istanbul, cypress-plugin, code, coverage |
 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm | cytoscape, cytoscape-extension |
 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u | cytoscape, cytoscape.js, cytoscapejs, cytoscape-canvas, canvas, extension |
@@ -11969,6 +11974,7 @@
 | [unzipper](./u/unzipper) | Unzip cross-platform streaming API | zip, unzip, zlib, uncompress, archive, stream, extract |
 | [upath](./u/upath) | A proxy to path, replacing \ with / for all result | path, unix, windows, extension, file extension, replace extension, change extension, trim extension, add extension, default extension, UNC paths |
 | [upath2](./u/upath2) | A proxy to path, replacing \ with / for all result | absolute, backslash, check, core, detect, dir, file, filepath, fix, forward, fp, fs, is, is-absolute, isabsolute, normalize, path, paths, sep, shim, slash, slashes, trailing, unix, urix, util, utils, win32, windows |
+| [update-browserslist-db](./u/update-browserslist-db) | - | - |
 | [update-notifier](./u/update-notifier) | Update notifications for your CLI app | npm, update, updater, notify, notifier, check, checker, cli, module, package, version |
 | [uploadcare](./u/uploadcare) | Library for uploadcare.com. | upload, uploadcare, api, wrapper |
 | [upng-js](./u/upng-js) | Small, fast and advanced PNG / APNG encoder and de | png, apng, image, conversion |
@@ -12735,6 +12741,7 @@
 | [xxhash-wasm](./x/xxhash-wasm) | A WebAssembly implementation of xxHash | xxhash, hash, wasm, webassembly |
 | [xxhashjs](./x/xxhashjs) | xxHash in Javascript | xxhash, xxh |
 | [y-codemirror](./y/y-codemirror) | CodeMirror binding for Yjs | Yjs |
+| [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs | Yjs, CRDT, offline, shared editing, collaboration, concurrency |
 | [y-protocols](./y/y-protocols) | Yjs encoding protocols | Yjs |
 | [y-websocket](./y/y-websocket) | Websockets provider for Yjs | Yjs |
 | [ya-disk](./y/ya-disk) | Yandex Disk API Library | yandex, disk, api |
