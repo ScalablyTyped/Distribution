@@ -2830,7 +2830,6 @@
 | [express-boom](./e/express-boom) | Boom response objects in Express | Hapi, Boom, Express, response |
 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro | brute, force, bruteforce, attack, fibonacci, rate, limit, security |
 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute | express, brute, memcached, store |
-| [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute. | - |
 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute | express, brute, redis |
 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express | express, logger, bunyan |
 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser | busboy, express, body-parser |
@@ -4309,7 +4308,6 @@
 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant | graph, gremlin, tinkerpop, connection, glv, driver, graphdb |
 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser | grid, grid-layout, template, parser |
 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React | react-component, grid, react, pagination, sort |
-| [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams | mongodb, mongoose, gridfs |
 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio | Typescript, gridstack.js, grid, gridster, layout, responsive, dashboard, resize, drag&drop, widgets, Angular, React, Vue, JavaScript |
 | [grommet](./g/grommet) | focus on the essential experience | grommet, grommet.io, grommetux, component, library, design system, framework, react, theme, theming, templates, sticker sheets, design patterns, app templates, atomic design, accessibility, WCAG 2.1, keyboard navigation, screen reader tags, color, type, layout, typography, interaction, ui, user interface, gui, graphical user interface, styled-components |
 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps. | - |
