@@ -1132,7 +1132,6 @@
 | [browser-sync](./b/browser-sync) | Live CSS Reload & Browser Syncing | browser sync, css, live reload, sync |
 | [browser-sync-webpack-plug](./b/browser-sync-webpack-plugin) | BrowserSync and Webpack integration | webpack, webpack-plugin, browsersync, browser-sync, livereload, serve |
 | [browser-update](./b/browser-update) | Remind users to update their browser in an unobtru | browser, web |
-| [browserfs](./b/browserfs) | A filesystem in your browser | filesystem, node, storage |
 | [browserify](./b/browserify) | browser-side require() the node way | browser, require, commonjs, commonj-esque, bundle, npm, javascript |
 | [browserslist](./b/browserslist) | Share target browsers between different front-end  | caniuse, browsers, target |
 | [browserslist-useragent](./b/browserslist-useragent) | A utility to match a browselist query to browser u | - |
@@ -1287,7 +1286,6 @@
 | [catering](./c/catering) | Simple utility to allow your module to be consumed | callback, promise, promisify |
 | [catho__quantum](./c/catho__quantum) | Catho react components | catho, react, components, style, guide, quantum |
 | [cavy](./c/cavy) | An integration test framework for React Native. | react, react native, ios, android, integration tests, testing, test, specs |
-| [cbor](./c/cbor) | Encode and parse data in the Concise Binary Object | coap, cbor, json, rfc7049, rfc8949 |
 | [cborg](./c/cborg) | Fast CBOR with a focus on strictness | cbor |
 | [ccap](./c/ccap) | node.js generate captcha using c++ library CImg wi | node, captcha, c++, image, CImg |
 | [ccapture_dot_js](./c/ccapture_dot_js) | A library to capture canvas-based animations at a  | capture, canvas, webgl, animation |
@@ -1793,7 +1791,6 @@
 | [cqrs-domain](./c/cqrs-domain) | Node-cqrs-domain is a node.js module based on node | cqrs, eventsourcing, ddd, dddd, command, event, eventdenormalizer, domain |
 | [cradle](./c/cradle) | the high-level, caching, CouchDB library | couchdb, database, couch |
 | [crawler](./c/crawler) | Crawler is a web spider written with Nodejs. It gi | dom, javascript, crawling, spider, scraper, scraping, jquery, crawler, nodejs |
-| [crc](./c/crc) | Module for calculating Cyclic Redundancy Check (CR | crc, crc16ccitt, crc16kermit, crc16modbus, crc16, crc16xmodem, crc1, crc24, crc32, crc81wire, crc8, crcjam |
 | [crc-32](./c/crc-32) | Pure-JS CRC-32 | crc, crc32, checksum |
 | [create-banner](./c/create-banner) | Create a banner from a package.json file. | create, banner, banner-generator, package, package.json |
 | [create-cert](./c/create-cert) | Super simple self signed certificates | self, signed, certificate, cert, ssl |
@@ -1952,7 +1949,6 @@
 | [cypress-dark](./c/cypress-dark) | Dark mode for Cypress test runner from user space | cypress, cypress-io, dark, theme |
 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot | cypress, plugin, dotenv, cypress-plugin, env |
 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot. | - |
-| [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate | cypress, cypress-plugin |
 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t | cypress, istanbul, cypress-plugin, code, coverage |
 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm | cytoscape, cytoscape-extension |
@@ -2700,11 +2696,7 @@
 | [ethereum-protocol](./e/ethereum-protocol) | This package is a stub so that noone takes the nam | - |
 | [ethereumjs-abi](./e/ethereumjs-abi) | Decoder and encoder for the Ethereum ABI | ethereum, ABI |
 | [ethereumjs-account](./e/ethereumjs-account) | Encoding, decoding and validation of Ethereum's Ac | ethereum, account |
-| [ethereumjs-blockchain](./e/ethereumjs-blockchain) | A module to store and interact with blocks | ethereum, blockchain |
 | [ethereumjs-common](./e/ethereumjs-common) | Resources common to all Ethereum implementations | ethereum, ethereumjs, constants, parameters, genesis, networks, bootstrap |
-| [ethereumjs-tx](./e/ethereumjs-tx) | A simple module for creating, manipulating and sig | ethereum, transactions |
-| [ethereumjs-util](./e/ethereumjs-util) | A collection of utility functions for Ethereum | ethereum, utilities, utils |
-| [ethereumjs-vm](./e/ethereumjs-vm) | An Ethereum VM implementation | ethereum, VM |
 | [ethereumjs-wallet](./e/ethereumjs-wallet) | Utilities for handling Ethereum keys | ethereum, wallets, keys |
 | [ethereumjs__rlp](./e/ethereumjs__rlp) | - | - |
 | [ethers](./e/ethers) | Umbrella package for most common Ethers libraries. | Ethereum, ethers |
@@ -2980,8 +2972,6 @@
 | [fastestsmallesttextencode](./f/fastestsmallesttextencoderdecoder) | The fastest smallest Javascript polyfill for the e | utf-8, encoding, decoding, encoder, decoder, javascript, polyfill, js, utf8, compact, cross-browser, utf8-string, pure-javascript, nodejs, node-js, node-module, nodejs-modules, performance, tiny, small |
 | [fastify](./f/fastify) | Fast and low overhead web framework, for Node.js | web, framework, json, schema, open, api |
 | [fastify-error](./f/fastify-error) | fastify-error@1.2.0 has been deprecated. Please us | fastify, error, utility, plugin |
-| [fastify-favicon](./f/fastify-favicon) | Fastify plugin to serve default favicon requests | fastify, plugin, favicon |
-| [fastify-plugin](./f/fastify-plugin) | Plugin helper for Fastify | plugin, helper, fastify |
 | [fastify__ajv-compiler](./f/fastify__ajv-compiler) | Build and manage the AJV instances for the fastify | ajv, validator, schema, compiler, fastify |
 | [fastify__busboy](./f/fastify__busboy) | A streaming parser for HTML form data for node.js | uploads, forms, multipart, form-data |
 | [fastify__deepmerge](./f/fastify__deepmerge) | - | - |
@@ -7202,17 +7192,9 @@
 | [metascraper-youtube](./m/metascraper-youtube) | Metascraper integration with YouTube | metascraper, video, youtube |
 | [meteor](./m/meteor) | Install Meteor | - |
 | [meteor-accounts-phone](./m/meteor-accounts-phone) | - | - |
-| [meteor-astronomy](./m/meteor-astronomy) | - | - |
 | [meteor-collection-hooks](./m/meteor-collection-hooks) | - | - |
-| [meteor-dburles-collection](./m/meteor-dburles-collection-helpers) | - | - |
 | [meteor-jboulhous-dev](./m/meteor-jboulhous-dev) | - | - |
-| [meteor-mdg-validated-meth](./m/meteor-mdg-validated-method) | - | - |
-| [meteor-mdg-validation-err](./m/meteor-mdg-validation-error) | - | - |
 | [meteor-percolate-migratio](./m/meteor-percolate-migrations) | - | - |
-| [meteor-persistent-session](./m/meteor-persistent-session) | - | - |
-| [meteor-prime8consulting-o](./m/meteor-prime8consulting-oauth2) | - | - |
-| [meteor-publish-composite](./m/meteor-publish-composite) | - | - |
-| [meteor-roles](./m/meteor-roles) | - | - |
 | [meteor-sjobs](./m/meteor-sjobs) | - | - |
 | [meteor-synced-cron](./m/meteor-synced-cron) | Since I'm no longer actively developing an app tha | - |
 | [meteor-typings](./m/meteor-typings) | Type definitions for Meteor | - |
@@ -7290,7 +7272,6 @@
 | [microsoftteams](./m/microsoftteams) | - | - |
 | [microtime](./m/microtime) | Get the current time in microseconds | microtime, microseconds, gettimeofday |
 | [midi](./m/midi) | MIDI hardware IO | - |
-| [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node | migrate mongo mongodb migrations database |
 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js. | milkcocoa, realtime |
 | [millisecond](./m/millisecond) | Convert time strings to milliseconds | ms, millisecond, milisecond, mili, milli, second, parse, time, string |
 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t | time, conversion, milliseconds |
@@ -7424,7 +7405,6 @@
 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB. | mongodb, queue |
 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs. | mongodb, uri, url, parser, formatter, mongoose |
 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily | MongoDB, Mongoose, seeder |
-| [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM. | mongo, mongodb, odm |
 | [mongration](./m/mongration) | Node.js mongodb migration framework | mongration, mongodb, migration, database, node mongodb migration framework |
 | [monk](./m/monk) | The wise MongoDB API | monk, mongodb, mongo, driver |
 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript | typescript, functional-programming, optics, lens, fp-ts |
