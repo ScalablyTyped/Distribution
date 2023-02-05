@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Socket
-  extends StObject
-     with EventEmitter[String | js.Symbol, Any] {
+  extends EventEmitter[String | js.Symbol, Any] {
   
   def close(): Unit = js.native
   

@@ -1,12 +1,11 @@
 organization := "org.scalablytyped"
 name := "google-cloud__spanner"
-version := "6.1.4-d62461"
+version := "6.1.4-ca25bf"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "big_dot_js" % "6.1-dt-20220913Z-516881",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-0503e8",
   "org.scalablytyped" %%% "gaxios" % "5.0.2-02f2db",
   "org.scalablytyped" %%% "google-auth-library" % "8.6.0-061891",
   "org.scalablytyped" %%% "google-cloud__common" % "4.0.2-469afc",
@@ -17,7 +16,6 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "gtoken" % "6.1.2-26eb5a",
   "org.scalablytyped" %%% "long" % "5.2.1-93c497",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "p-queue" % "7.3.0-12bd38",
   "org.scalablytyped" %%% "proto3-json-serializer" % "1.1.0-d84fef",
   "org.scalablytyped" %%% "protobufjs" % "7.1.2-ebeb9d",
   "org.scalablytyped" %%% "stack-trace" % "0.0-unknown-dt-20221103Z-2ea842",

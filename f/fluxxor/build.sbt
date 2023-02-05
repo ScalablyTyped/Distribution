@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "fluxxor"
-version := "1.5.2-dt-20220913Z-f0fe80"
+version := "1.5.2-dt-20220913Z-655f17"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9b270c",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-0503e8",
+  "org.scalablytyped" %%% "eventemitter3" % "5.0.0-78e12d",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-9c1d48",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-c1aa2f",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-fd69ea",

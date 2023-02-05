@@ -1,7 +1,7 @@
 
 # Scala.js typings for eventemitter3
 
-Typings are for version 4.0.7
+Typings are for version 5.0.0
 
 ## Library description:
 EventEmitter3 focuses on performance while maintaining a Node.js AND browser compatible interface.

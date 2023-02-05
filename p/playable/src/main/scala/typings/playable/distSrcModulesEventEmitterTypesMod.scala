@@ -1,6 +1,5 @@
 package typings.playable
 
-import typings.eventemitter3.mod.ListenerFn
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,16 +19,40 @@ object distSrcModulesEventEmitterTypesMod {
     def emitAsync(event: js.Symbol, args: Any*): js.Promise[Boolean] | Unit = js.native
     
     def off(event: String): this.type = js.native
+    def off(
+      event: String,
+      fn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any
+    ): this.type = js.native
+    def off(
+      event: String,
+      fn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any,
+      context: Any
+    ): this.type = js.native
+    def off(
+      event: String,
+      fn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any,
+      context: Any,
+      once: Boolean
+    ): this.type = js.native
+    def off(
+      event: String,
+      fn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any,
+      context: Unit,
+      once: Boolean
+    ): this.type = js.native
     def off(event: String, fn: Unit, context: Any): this.type = js.native
     def off(event: String, fn: Unit, context: Any, once: Boolean): this.type = js.native
     def off(event: String, fn: Unit, context: Unit, once: Boolean): this.type = js.native
-    def off(event: String, fn: ListenerFn[js.Array[Any]]): this.type = js.native
-    def off(event: String, fn: ListenerFn[js.Array[Any]], context: Any): this.type = js.native
-    def off(event: String, fn: ListenerFn[js.Array[Any]], context: Any, once: Boolean): this.type = js.native
-    def off(event: String, fn: ListenerFn[js.Array[Any]], context: Unit, once: Boolean): this.type = js.native
     
-    def on(event: String, fn: ListenerFn[js.Array[Any]]): this.type = js.native
-    def on(event: String, fn: ListenerFn[js.Array[Any]], context: Any): this.type = js.native
+    def on(
+      event: String,
+      fn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any
+    ): this.type = js.native
+    def on(
+      event: String,
+      fn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any,
+      context: Any
+    ): this.type = js.native
   }
   
   trait IEventEmitterAPI extends StObject {
@@ -37,7 +60,9 @@ object distSrcModulesEventEmitterTypesMod {
     var off: js.UndefOr[
         js.Function4[
           /* event */ String, 
-          /* fn */ js.UndefOr[ListenerFn[js.Array[Any]]], 
+          /* fn */ js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any
+          ], 
           /* context */ js.UndefOr[Any], 
           /* once */ js.UndefOr[Boolean], 
           this.type
@@ -47,7 +72,7 @@ object distSrcModulesEventEmitterTypesMod {
     var on: js.UndefOr[
         js.Function3[
           /* event */ String, 
-          /* fn */ ListenerFn[js.Array[Any]], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ /* fn */ Any, 
           /* context */ js.UndefOr[Any], 
           this.type
         ]
@@ -64,13 +89,15 @@ object distSrcModulesEventEmitterTypesMod {
     implicit open class MutableBuilder[Self <: IEventEmitterAPI] (val x: Self) extends AnyVal {
       
       inline def setOff(
-        value: (/* event */ String, /* fn */ js.UndefOr[ListenerFn[js.Array[Any]]], /* context */ js.UndefOr[Any], /* once */ js.UndefOr[Boolean]) => IEventEmitterAPI
+        value: (/* event */ String, /* fn */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any
+            ], /* context */ js.UndefOr[Any], /* once */ js.UndefOr[Boolean]) => IEventEmitterAPI
       ): Self = StObject.set(x, "off", js.Any.fromFunction4(value))
       
       inline def setOffUndefined: Self = StObject.set(x, "off", js.undefined)
       
       inline def setOn(
-        value: (/* event */ String, /* fn */ ListenerFn[js.Array[Any]], /* context */ js.UndefOr[Any]) => IEventEmitterAPI
+        value: (/* event */ String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ /* fn */ Any, /* context */ js.UndefOr[Any]) => IEventEmitterAPI
       ): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
       
       inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)

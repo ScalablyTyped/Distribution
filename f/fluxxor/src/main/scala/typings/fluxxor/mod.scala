@@ -31,8 +31,7 @@ object mod {
   @JSImport("fluxxor", "Flux")
   @js.native
   open class Flux protected ()
-    extends StObject
-       with EventEmitter[String | js.Symbol, Any] {
+    extends EventEmitter[String | js.Symbol, Any] {
     def this(stores: Any, actions: Any) = this()
     
     var actions: Any = js.native
@@ -129,8 +128,7 @@ object mod {
   
   @js.native
   trait Store
-    extends StObject
-       with EventEmitter[String | js.Symbol, Any] {
+    extends EventEmitter[String | js.Symbol, Any] {
     
     def bindActions(args: (String | js.Function)*): Unit = js.native
     def bindActions(args: js.Array[String | js.Function]): Unit = js.native

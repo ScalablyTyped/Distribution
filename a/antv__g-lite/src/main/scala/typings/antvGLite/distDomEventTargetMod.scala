@@ -1,7 +1,6 @@
 package typings.antvGLite
 
 import typings.antvGLite.distDomInterfacesMod.IEventTarget
-import typings.eventemitter3.mod.^
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
 import org.scalablytyped.runtime.StObject
@@ -29,7 +28,7 @@ object distDomEventTargetMod {
     /**
       * event emitter
       */
-    var emitter: ^[String | js.Symbol, Any] = js.native
+    var emitter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_eventemitter3<string | symbol, any> */ Any = js.native
     
     def off(`type`: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def off(`type`: String, listener: js.Function1[/* repeated */ Any, Unit], options: Boolean): this.type = js.native

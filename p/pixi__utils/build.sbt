@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "pixi__utils"
-version := "7.0.4-e4c274"
+version := "7.0.4-afffb5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-0503e8",
+  "org.scalablytyped" %%% "eventemitter3" % "5.0.0-78e12d",
   "org.scalablytyped" %%% "pixi__constants" % "7.0.4-d787af",
   "org.scalablytyped" %%% "pixi__settings" % "7.0.4-9fffea",
   "org.scalablytyped" %%% "std" % "4.9-ecb5eb")

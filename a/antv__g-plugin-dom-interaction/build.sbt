@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "antv__g-plugin-dom-interaction"
-version := "1.7.17-5c786a"
+version := "1.7.17-7c3f47"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-110f87",
+  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-5f446e",
   "org.scalablytyped" %%% "antv__util" % "3.3.1-e33eaa",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-0503e8",
+  "org.scalablytyped" %%% "eventemitter3" % "5.0.0-78e12d",
   "org.scalablytyped" %%% "gl-matrix" % "3.4.3-27ca14",
   "org.scalablytyped" %%% "inversify" % "6.0.1-f71ce0",
   "org.scalablytyped" %%% "mana-syringe" % "0.3.2-dbc3f6",

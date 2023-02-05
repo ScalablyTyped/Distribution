@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("peerjs", "MediaConnection")
 @js.native
-open class MediaConnection protected ()
-  extends StObject
-     with BaseConnection[MediaConnectionEvents] {
+open class MediaConnection protected () extends BaseConnection[MediaConnectionEvents] {
   def this(peerId: String, provider: Peer, options: Any) = this()
   
   def addStream(remoteStream: Any): Unit = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design-pro"
-version := "2.3.2-932ca6"
+version := "2.3.2-7648db"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,23 +15,23 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "antv__coord" % "0.4.4-a3ee68",
   "org.scalablytyped" %%% "antv__event-emitter" % "0.1.3-06a07a",
   "org.scalablytyped" %%% "antv__g-base" % "0.5.11-72c676",
-  "org.scalablytyped" %%% "antv__g-canvas" % "1.9.5-f4d1a0",
-  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-110f87",
-  "org.scalablytyped" %%% "antv__g-plugin-canvas-path-generator" % "1.1.17-7cdb3c",
-  "org.scalablytyped" %%% "antv__g-plugin-canvas-picker" % "1.8.14-963e68",
-  "org.scalablytyped" %%% "antv__g-plugin-canvas-renderer" % "1.7.20-7ec951",
-  "org.scalablytyped" %%% "antv__g-plugin-dom-interaction" % "1.7.17-5c786a",
-  "org.scalablytyped" %%% "antv__g-plugin-html-renderer" % "1.7.17-a6f1e9",
-  "org.scalablytyped" %%% "antv__g-plugin-image-loader" % "1.1.18-f2ed8d",
+  "org.scalablytyped" %%% "antv__g-canvas" % "1.9.5-c1a22c",
+  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-5f446e",
+  "org.scalablytyped" %%% "antv__g-plugin-canvas-path-generator" % "1.1.17-a30905",
+  "org.scalablytyped" %%% "antv__g-plugin-canvas-picker" % "1.8.14-fd3df2",
+  "org.scalablytyped" %%% "antv__g-plugin-canvas-renderer" % "1.7.20-53d9c6",
+  "org.scalablytyped" %%% "antv__g-plugin-dom-interaction" % "1.7.17-7c3f47",
+  "org.scalablytyped" %%% "antv__g-plugin-html-renderer" % "1.7.17-b160e5",
+  "org.scalablytyped" %%% "antv__g-plugin-image-loader" % "1.1.18-9fcb66",
   "org.scalablytyped" %%% "antv__g2" % "4.2.8-613f02",
   "org.scalablytyped" %%% "antv__g2plot" % "2.4.20-2d837d",
   "org.scalablytyped" %%% "antv__scale" % "0.4.11-c5f8ab",
   "org.scalablytyped" %%% "antv__util" % "3.3.1-e33eaa",
-  "org.scalablytyped" %%% "bizcharts" % "4.1.20-2aab1e",
+  "org.scalablytyped" %%% "bizcharts" % "4.1.20-b6d24f",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9b270c",
   "org.scalablytyped" %%% "d3-timer" % "3.0-dt-20211202Z-7b4003",
   "org.scalablytyped" %%% "dayjs" % "1.11.6-888fdf",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-0503e8",
+  "org.scalablytyped" %%% "eventemitter3" % "5.0.0-78e12d",
   "org.scalablytyped" %%% "gl-matrix" % "3.4.3-27ca14",
   "org.scalablytyped" %%% "history" % "5.3.0-fc021d",
   "org.scalablytyped" %%% "inversify" % "6.0.1-f71ce0",

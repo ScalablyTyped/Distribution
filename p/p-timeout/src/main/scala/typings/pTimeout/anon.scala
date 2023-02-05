@@ -1,5 +1,6 @@
 package typings.pTimeout
 
+import typings.pTimeout.pTimeoutBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,6 +33,24 @@ object anon {
       inline def setSetTimeout(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.setTimeout */ Any
       ): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Message extends StObject {
+    
+    var message: `false`
+  }
+  object Message {
+    
+    inline def apply(): Message = {
+      val __obj = js.Dynamic.literal(message = false)
+      __obj.asInstanceOf[Message]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+      
+      inline def setMessage(value: `false`): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

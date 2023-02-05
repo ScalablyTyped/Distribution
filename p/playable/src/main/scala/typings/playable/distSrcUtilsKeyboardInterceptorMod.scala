@@ -1,7 +1,6 @@
 package typings.playable
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.eventemitter3.mod.ListenerFn
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -65,7 +64,9 @@ object distSrcUtilsKeyboardInterceptorMod {
     inline def UP_ARROW_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UP_ARROW")(x.asInstanceOf[js.Any])
   }
   
-  type ICallbacks = StringDictionary[ListenerFn[js.Array[Any]]]
+  type ICallbacks = StringDictionary[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any
+  ]
   
   @js.native
   trait KeyboardInterceptorCore extends StObject {

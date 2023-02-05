@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("peerjs", "DataConnection")
 @js.native
-open class DataConnection protected ()
-  extends StObject
-     with BaseConnection[DataConnectionEvents] {
+open class DataConnection protected () extends BaseConnection[DataConnectionEvents] {
   def this(peerId: String, provider: Peer, options: Any) = this()
   
   def bufferSize: Double = js.native

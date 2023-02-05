@@ -38,6 +38,11 @@ object distSrcModulesKeyboardControlKeyboardControlMod {
     var _keyboardInterceptor: Any = js.native
     
     /* CompleteClass */
+    override def addKeyControl(
+      key: Double,
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any
+    ): Unit = js.native
+    /* CompleteClass */
     override def addKeyControl(key: Double, callback: EventListener): Unit = js.native
     
     /* CompleteClass */
@@ -86,6 +91,11 @@ object distSrcModulesKeyboardControlKeyboardControlMod {
     /* private */ var _isEnabled: Any
     
     /* private */ var _keyboardInterceptor: Any
+    
+    def addKeyControl(
+      key: Double,
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any
+    ): Unit
   }
   object KeyboardControl {
     
@@ -97,7 +107,7 @@ object distSrcModulesKeyboardControlKeyboardControlMod {
       _initInterceptor: Any,
       _isEnabled: Any,
       _keyboardInterceptor: Any,
-      addKeyControl: (Double, EventListener) => Unit,
+      addKeyControl: (Double, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any) => Unit,
       destroy: () => Unit
     ): KeyboardControl = {
       val __obj = js.Dynamic.literal(_attachDefaultControls = _attachDefaultControls.asInstanceOf[js.Any], _destroyInterceptor = _destroyInterceptor.asInstanceOf[js.Any], _engine = _engine.asInstanceOf[js.Any], _eventEmitter = _eventEmitter.asInstanceOf[js.Any], _initInterceptor = _initInterceptor.asInstanceOf[js.Any], _isEnabled = _isEnabled.asInstanceOf[js.Any], _keyboardInterceptor = _keyboardInterceptor.asInstanceOf[js.Any], addKeyControl = js.Any.fromFunction2(addKeyControl), destroy = js.Any.fromFunction0(destroy))
@@ -106,6 +116,10 @@ object distSrcModulesKeyboardControlKeyboardControlMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: KeyboardControl] (val x: Self) extends AnyVal {
+      
+      inline def setAddKeyControl(
+        value: (Double, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListenerFn */ Any) => Unit
+      ): Self = StObject.set(x, "addKeyControl", js.Any.fromFunction2(value))
       
       inline def set_attachDefaultControls(value: Any): Self = StObject.set(x, "_attachDefaultControls", value.asInstanceOf[js.Any])
       

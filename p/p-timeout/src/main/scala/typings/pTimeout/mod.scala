@@ -1,6 +1,8 @@
 package typings.pTimeout
 
 import typings.pTimeout.anon.ClearTimeout
+import typings.pTimeout.anon.Message
+import typings.pTimeout.pTimeoutBooleans.`false`
 import typings.std.Error
 import typings.std.Promise
 import typings.std.PromiseLike
@@ -14,6 +16,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default[ValueType, ReturnType](input: PromiseLike[ValueType], options: Options[ReturnType] & Message): ClearablePromise[js.UndefOr[ValueType | ReturnType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[js.UndefOr[ValueType | ReturnType]]]
   inline def default[ValueType, ReturnType](input: PromiseLike[ValueType], options: Options[ReturnType]): ClearablePromise[ValueType | ReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[ValueType | ReturnType]]
   
   @JSImport("p-timeout", "TimeoutError")
@@ -90,10 +93,19 @@ object mod {
     var fallback: js.UndefOr[js.Function0[ReturnType | js.Promise[ReturnType]]] = js.undefined
     
     /**
-    	Specify a custom error message or error.
-    	If you do a custom error, it's recommended to sub-class `pTimeout.TimeoutError`.
+    	Specify a custom error message or error to throw when it times out:
+    	- `message: 'too slow'` will throw `TimeoutError('too slow')`
+    	- `message: new MyCustomError('it’s over 9000')` will throw the same error instance
+    	- `message: false` will make the promise resolve with `undefined` instead of rejecting
+    	If you do a custom error, it's recommended to sub-class `TimeoutError`:
+    	```
+    	import {TimeoutError} from 'p-timeout';
+    	class MyCustomError extends TimeoutError {
+    		name = "MyCustomError";
+    	}
+    	```
     	*/
-    var message: js.UndefOr[String | js.Error] = js.undefined
+    var message: js.UndefOr[String | js.Error | `false`] = js.undefined
     
     /**
     	Milliseconds before timing out.
@@ -141,7 +153,7 @@ object mod {
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      inline def setMessage(value: String | js.Error): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String | js.Error | `false`): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       

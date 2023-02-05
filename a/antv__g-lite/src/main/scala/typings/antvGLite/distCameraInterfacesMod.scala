@@ -6,7 +6,7 @@ import typings.antvGLite.anon.Partialpositionvec3vec2fo
 import typings.antvGLite.distCameraLandmarkMod.Landmark
 import typings.antvGLite.distDomInterfacesMod.ICanvas
 import typings.antvGLite.distShapesMod.Frustum
-import typings.eventemitter3.mod.^
+import typings.eventemitter3.mod.default
 import typings.glMatrix.mod.mat4
 import typings.glMatrix.mod.vec2
 import typings.glMatrix.mod.vec3
@@ -161,7 +161,7 @@ object distCameraInterfacesMod {
       */
     def dolly(value: Double): this.type = js.native
     
-    var eventEmitter: ^[String | js.Symbol, Any] = js.native
+    var eventEmitter: default[String | js.Symbol, Any] = js.native
     
     def getAzimuth(): Double = js.native
     

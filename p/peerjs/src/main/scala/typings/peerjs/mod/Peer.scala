@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A peer can connect to other peers and listen for connections.
   */
-open class Peer ()
-  extends StObject
-     with EventEmitter[PeerEvents, Any] {
+open class Peer () extends EventEmitter[PeerEvents, Any] {
   /**
     * A peer can connect to other peers and listen for connections.
     * @param id Other peers can connect to this peer using the provided ID.

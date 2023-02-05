@@ -1,16 +1,13 @@
 package typings.peerjs.mod
 
 import typings.eventemitter3.mod.EventEmitter
-import typings.eventemitter3.mod.ValidEventTypes
 import typings.std.RTCPeerConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseConnection[T /* <: ValidEventTypes */]
-  extends StObject
-     with EventEmitter[T & BaseConnectionEvents, Any] {
+trait BaseConnection[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidEventTypes */ Any */] extends EventEmitter[T & BaseConnectionEvents, Any] {
   
   /* protected */ var _open: Boolean = js.native
   

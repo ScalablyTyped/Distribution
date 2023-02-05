@@ -1,8 +1,7 @@
 package typings.pixiCore.mod
 
-import org.scalablytyped.runtime.Shortcut
-import typings.eventemitter3.mod.EventEmitterStatic
-import typings.eventemitter3.mod.ValidEventTypes
+import typings.eventemitter3.mod.EventEmitter.EventEmitterStatic
+import typings.eventemitter3.mod.EventEmitter.ValidEventTypes
 import typings.pixiCore.pixiCoreBooleans.`false`
 import typings.pixiCore.pixiCoreBooleans.`true`
 import typings.pixiCore.pixiCoreInts.`-1`
@@ -60,39 +59,25 @@ object utils {
   @js.native
   open class EventEmitter[EventTypes /* <: ValidEventTypes */, Context /* <: Any */] ()
     extends typings.pixiUtils.mod.EventEmitter[EventTypes, Context]
-  object EventEmitter extends Shortcut {
+  object EventEmitter {
     
+    @JSImport("@pixi/core", "utils.EventEmitter")
+    @js.native
+    val ^ : js.Any = js.native
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("@pixi/core", "utils.EventEmitter")
+    @JSImport("@pixi/core", "utils.EventEmitter.EventEmitter")
     @js.native
-    open class ^[EventTypes /* <: ValidEventTypes */, Context] ()
-      extends StObject
-         with typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
-    
-    @JSImport("@pixi/core", "utils.EventEmitter")
-    @js.native
-    val ^ : js.Object & EventEmitterStatic = js.native
+    open class EventEmitter[EventTypes /* <: ValidEventTypes */, Context] ()
+      extends typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
     @JSImport("@pixi/core", "utils.EventEmitter.EventEmitter")
     @js.native
     val EventEmitter: EventEmitterStatic = js.native
-    
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("@pixi/core", "utils.EventEmitter.EventEmitter")
-    @js.native
-    open class EventEmitterCls[EventTypes /* <: ValidEventTypes */, Context] ()
-      extends StObject
-         with typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
     
     /* static member */
     @JSImport("@pixi/core", "utils.EventEmitter.prefixed")
     @js.native
     def prefixed: String | Boolean = js.native
     inline def prefixed_=(x: String | Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixed")(x.asInstanceOf[js.Any])
-    
-    type _To = js.Object & EventEmitterStatic
-    
-    /* This means you don't have to write `^`, but can instead just say `EventEmitter.foo` */
-    override def _to: js.Object & EventEmitterStatic = ^
   }
   
   inline def clearTextureCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTextureCache")().asInstanceOf[Unit]

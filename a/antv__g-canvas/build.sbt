@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "antv__g-canvas"
-version := "1.9.5-f4d1a0"
+version := "1.9.5-c1a22c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-110f87",
-  "org.scalablytyped" %%% "antv__g-plugin-canvas-path-generator" % "1.1.17-7cdb3c",
-  "org.scalablytyped" %%% "antv__g-plugin-canvas-picker" % "1.8.14-963e68",
-  "org.scalablytyped" %%% "antv__g-plugin-canvas-renderer" % "1.7.20-7ec951",
-  "org.scalablytyped" %%% "antv__g-plugin-dom-interaction" % "1.7.17-5c786a",
-  "org.scalablytyped" %%% "antv__g-plugin-html-renderer" % "1.7.17-a6f1e9",
-  "org.scalablytyped" %%% "antv__g-plugin-image-loader" % "1.1.18-f2ed8d",
+  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-5f446e",
+  "org.scalablytyped" %%% "antv__g-plugin-canvas-path-generator" % "1.1.17-a30905",
+  "org.scalablytyped" %%% "antv__g-plugin-canvas-picker" % "1.8.14-fd3df2",
+  "org.scalablytyped" %%% "antv__g-plugin-canvas-renderer" % "1.7.20-53d9c6",
+  "org.scalablytyped" %%% "antv__g-plugin-dom-interaction" % "1.7.17-7c3f47",
+  "org.scalablytyped" %%% "antv__g-plugin-html-renderer" % "1.7.17-b160e5",
+  "org.scalablytyped" %%% "antv__g-plugin-image-loader" % "1.1.18-9fcb66",
   "org.scalablytyped" %%% "antv__util" % "3.3.1-e33eaa",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-0503e8",
+  "org.scalablytyped" %%% "eventemitter3" % "5.0.0-78e12d",
   "org.scalablytyped" %%% "gl-matrix" % "3.4.3-27ca14",
   "org.scalablytyped" %%% "inversify" % "6.0.1-f71ce0",
   "org.scalablytyped" %%% "mana-syringe" % "0.3.2-dbc3f6",

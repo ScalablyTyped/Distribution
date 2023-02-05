@@ -1,28 +1,49 @@
 package typings.eventemitter3
 
 import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Shortcut
+import typings.eventemitter3.mod.EventEmitter.EventArgs
+import typings.eventemitter3.mod.EventEmitter.EventEmitterStatic
+import typings.eventemitter3.mod.EventEmitter.EventNames
+import typings.eventemitter3.mod.EventEmitter.ValidEventTypes
+import typings.std.EventListener
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  @JSImport("eventemitter3", JSImport.Namespace)
+  @JSImport("eventemitter3", JSImport.Default)
   @js.native
-  open class ^[EventTypes /* <: ValidEventTypes */, Context /* <: Any */] ()
-    extends StObject
-       with typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
-  @JSImport("eventemitter3", JSImport.Namespace)
-  @js.native
-  val ^ : EventEmitterStatic = js.native
-  
-  @js.native
-  trait EventEmitter[EventTypes /* <: ValidEventTypes */, Context /* <: Any */] extends StObject {
+  open class default[EventTypes /* <: ValidEventTypes */, Context /* <: Any */] () extends EventEmitter[EventTypes, Context]
+  object default {
     
-    def addListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T]): this.type = js.native
-    def addListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context): this.type = js.native
+    @JSImport("eventemitter3", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("eventemitter3", "default.EventEmitter")
+    @js.native
+    open class EventEmitter[EventTypes /* <: ValidEventTypes */, Context] ()
+      extends typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
+    @JSImport("eventemitter3", "default.EventEmitter")
+    @js.native
+    val EventEmitter: EventEmitterStatic = js.native
+    
+    /* static member */
+    @JSImport("eventemitter3", "default.prefixed")
+    @js.native
+    def prefixed: String | Boolean = js.native
+    inline def prefixed_=(x: String | Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixed")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("eventemitter3", "EventEmitter")
+  @js.native
+  open class EventEmitter[EventTypes /* <: ValidEventTypes */, Context /* <: Any */] () extends StObject {
+    
+    def addListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener): this.type = js.native
+    def addListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener, context: Context): this.type = js.native
     
     /**
       * Calls each of the listeners registered for a given event.
@@ -46,28 +67,28 @@ object mod extends Shortcut {
     /**
       * Return the listeners registered for a given event.
       */
-    def listeners[T /* <: EventNames[EventTypes] */](event: T): js.Array[EventListener[EventTypes, T]] = js.native
+    def listeners[T /* <: EventNames[EventTypes] */](event: T): js.Array[EventListener] = js.native
     
     def off[T /* <: EventNames[EventTypes] */](event: T): this.type = js.native
     def off[T /* <: EventNames[EventTypes] */](event: T, fn: Unit, context: Context): this.type = js.native
     def off[T /* <: EventNames[EventTypes] */](event: T, fn: Unit, context: Context, once: Boolean): this.type = js.native
     def off[T /* <: EventNames[EventTypes] */](event: T, fn: Unit, context: Unit, once: Boolean): this.type = js.native
-    def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T]): this.type = js.native
-    def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context): this.type = js.native
-    def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context, once: Boolean): this.type = js.native
-    def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Unit, once: Boolean): this.type = js.native
+    def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener): this.type = js.native
+    def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener, context: Context): this.type = js.native
+    def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener, context: Context, once: Boolean): this.type = js.native
+    def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener, context: Unit, once: Boolean): this.type = js.native
     
     /**
       * Add a listener for a given event.
       */
-    def on[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T]): this.type = js.native
-    def on[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context): this.type = js.native
+    def on[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener): this.type = js.native
+    def on[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener, context: Context): this.type = js.native
     
     /**
       * Add a one-time listener for a given event.
       */
-    def once[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T]): this.type = js.native
-    def once[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context): this.type = js.native
+    def once[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener): this.type = js.native
+    def once[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener, context: Context): this.type = js.native
     
     /**
       * Remove all listeners, or those of the specified event.
@@ -82,69 +103,68 @@ object mod extends Shortcut {
     def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: Unit, context: Context): this.type = js.native
     def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: Unit, context: Context, once: Boolean): this.type = js.native
     def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: Unit, context: Unit, once: Boolean): this.type = js.native
-    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T]): this.type = js.native
-    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context): this.type = js.native
-    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context, once: Boolean): this.type = js.native
-    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Unit, once: Boolean): this.type = js.native
+    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener): this.type = js.native
+    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener, context: Context): this.type = js.native
+    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener, context: Context, once: Boolean): this.type = js.native
+    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener, context: Unit, once: Boolean): this.type = js.native
   }
-  @JSImport("eventemitter3", "EventEmitter")
-  @js.native
-  val EventEmitter: EventEmitterStatic = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("eventemitter3", "EventEmitter")
-  @js.native
-  open class EventEmitterCls[EventTypes /* <: ValidEventTypes */, Context] ()
-    extends StObject
-       with typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
-  
-  /* static member */
-  @JSImport("eventemitter3", "prefixed")
-  @js.native
-  def prefixed: String | Boolean = js.native
-  inline def prefixed_=(x: String | Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixed")(x.asInstanceOf[js.Any])
-  
-  /** NOTE: Mapped type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
-    * TS definition: {{{
-    {[ K in keyof T ]: T[K] extends (args : ...any): void? std.Parameters<T[K]> : T[K] extends std.Array<any>? T[K] : std.Array<any>}
-    }}}
-    */
-  @js.native
-  trait ArgumentMap[T /* <: js.Object */] extends StObject
-  
-  type EventArgs[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] = Parameters[EventListener[T, K]]
-  
-  @js.native
-  trait EventEmitterStatic
-    extends StObject
-       with Instantiable0[typings.eventemitter3.mod.EventEmitter[ValidEventTypes, js.Object]]
-  
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
-    * TS definition: {{{
-    T extends string | symbol ? (args : ...any): void : (args : eventemitter3.eventemitter3.ArgumentMap<std.Exclude<T, string | symbol>>[std.Extract<K, keyof T>]): void
-    }}}
-    */
-  type EventListener[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] = js.Function1[/* repeated */ Any, Unit]
-  
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
-    * TS definition: {{{
-    T extends string | symbol ? T : keyof T
-    }}}
-    */
-  type EventNames[T /* <: ValidEventTypes */] = T
-  
-  type ListenerFn[Args /* <: js.Array[Any] */] = js.Function1[/* args */ Args, Unit]
-  
-  type ValidEventTypes = String | js.Symbol | js.Object
-  
-  type _To = EventEmitterStatic
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: EventEmitterStatic = ^
+  object EventEmitter {
+    
+    @JSImport("eventemitter3", "EventEmitter")
+    @js.native
+    val ^ : js.Any = js.native
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("eventemitter3", "EventEmitter.EventEmitter")
+    @js.native
+    open class EventEmitter[EventTypes /* <: ValidEventTypes */, Context] ()
+      extends typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
+    @JSImport("eventemitter3", "EventEmitter.EventEmitter")
+    @js.native
+    val EventEmitter: EventEmitterStatic = js.native
+    
+    /* static member */
+    @JSImport("eventemitter3", "EventEmitter.prefixed")
+    @js.native
+    def prefixed: String | Boolean = js.native
+    inline def prefixed_=(x: String | Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixed")(x.asInstanceOf[js.Any])
+    
+    /** NOTE: Mapped type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      {[ K in keyof T ]: T[K] extends (args : ...any): void? std.Parameters<T[K]> : T[K] extends std.Array<any>? T[K] : std.Array<any>}
+      }}}
+      */
+    @js.native
+    trait ArgumentMap[T /* <: js.Object */] extends StObject
+    
+    type EventArgs[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] = Parameters[typings.eventemitter3.mod.EventEmitter.EventListener[T, K]]
+    
+    @js.native
+    trait EventEmitterStatic
+      extends StObject
+         with Instantiable0[typings.eventemitter3.mod.EventEmitter[ValidEventTypes, js.Object]]
+    
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+      * TS definition: {{{
+      T extends string | symbol ? (args : ...any): void : (args : eventemitter3.eventemitter3.EventEmitter.ArgumentMap<std.Exclude<T, string | symbol>>[std.Extract<K, keyof T>]): void
+      }}}
+      */
+    type EventListener[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] = js.Function1[/* repeated */ Any, Unit]
+    
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+      * TS definition: {{{
+      T extends string | symbol ? T : keyof T
+      }}}
+      */
+    type EventNames[T /* <: ValidEventTypes */] = T
+    
+    type ListenerFn[Args /* <: js.Array[Any] */] = js.Function1[/* args */ Args, Unit]
+    
+    type ValidEventTypes = String | js.Symbol | js.Object
+  }
 }
