@@ -1,12 +1,14 @@
 package typings.pQueue
 
-import typings.eventemitter3.mod.^
+import typings.pQueue.anon.ThrowOnTimeout
 import typings.pQueue.distOptionsMod.Options
 import typings.pQueue.distOptionsMod.QueueAddOptions
 import typings.pQueue.distOptionsMod.TaskOptions
 import typings.pQueue.distQueueMod.Queue
 import typings.pQueue.distQueueMod.RunFunction
+import typings.pQueue.pQueueStrings.throwOnTimeout
 import typings.std.Error
+import typings.std.Exclude
 import typings.std.Partial
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
@@ -64,20 +66,32 @@ object mod {
   }
   
   @js.native
-  trait PQueue[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */] extends ^[EventName, Any] {
+  trait PQueue[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */]
+    extends typings.eventemitter3.mod.default[EventName, Any] {
     
     /**
       Adds a sync or async task to the queue. Always returns a promise.
       */
-    def add[TaskResultType](fn: Task[TaskResultType]): js.Promise[TaskResultType] = js.native
-    def add[TaskResultType](fn: Task[TaskResultType], options: Partial[EnqueueOptionsType]): js.Promise[TaskResultType] = js.native
+    def add[TaskResultType](function_ : Task[TaskResultType]): js.Promise[TaskResultType | Unit] = js.native
+    def add[TaskResultType](function_ : Task[TaskResultType], options: Partial[EnqueueOptionsType]): js.Promise[TaskResultType | Unit] = js.native
     
     /**
       Same as `.add()`, but accepts an array of sync or async functions.
       @returns A promise that resolves when all functions are resolved.
       */
-    def addAll[TaskResultsType](functions: js.Array[Task[TaskResultsType]]): js.Promise[js.Array[TaskResultsType]] = js.native
-    def addAll[TaskResultsType](functions: js.Array[Task[TaskResultsType]], options: EnqueueOptionsType): js.Promise[js.Array[TaskResultsType]] = js.native
+    def addAll[TaskResultsType](functions: js.Array[Task[TaskResultsType]]): js.Promise[js.Array[TaskResultsType | Unit]] = js.native
+    def addAll[TaskResultsType](functions: js.Array[Task[TaskResultsType]], options: Partial[EnqueueOptionsType]): js.Promise[js.Array[TaskResultsType | Unit]] = js.native
+    @JSName("addAll")
+    def addAll_throwOnTimeout[TaskResultsType](
+      functions: js.Array[Task[TaskResultsType]],
+      options: ThrowOnTimeout & (Partial[Exclude[EnqueueOptionsType, throwOnTimeout]])
+    ): js.Promise[js.Array[TaskResultsType]] = js.native
+    
+    @JSName("add")
+    def add_throwOnTimeout[TaskResultType](
+      function_ : Task[TaskResultType],
+      options: ThrowOnTimeout & (Exclude[EnqueueOptionsType, throwOnTimeout])
+    ): js.Promise[TaskResultType] = js.native
     
     /**
       Clear the queue.

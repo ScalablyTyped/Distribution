@@ -8,6 +8,8 @@ import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pKadDht.libp2pKadDhtStrings.added
 import typings.libp2pKadDht.libp2pKadDhtStrings.ping
 import typings.libp2pKadDht.libp2pKadDhtStrings.removed
+import typings.pQueue.distOptionsMod.QueueAddOptions
+import typings.pQueue.distPriorityQueueMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,7 +98,7 @@ object distSrcRoutingTableMod {
     
     /* private */ val pingConcurrency: Any = js.native
     
-    var pingQueue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Queue */ Any = js.native
+    var pingQueue: typings.pQueue.mod.default[default, QueueAddOptions] = js.native
     
     /* private */ val pingTimeout: Any = js.native
     

@@ -2598,6 +2598,7 @@
 | 0.0 | [express-boom](./e/express-boom) | Boom response objects in Express
 | 0.0 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
 | 0.0 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute
+| 0.0 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute.
 | 0.0 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
 | 0.0 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express
 | 0.0 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
@@ -3392,6 +3393,7 @@
 | 0.0 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant
 | 0.0 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser
 | 0.0 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React
+| 0.0 | [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams
 | 0.0 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio
 | 0.0 | [grommet](./g/grommet) | focus on the essential experience
 | 0.0 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps.
@@ -7083,6 +7085,7 @@
 | 0.0 | [p-pipe](./p/p-pipe) | Compose promise-returning & async functions into a
 | 0.0 | [p-progress](./p/p-progress) | Create a promise that reports progress
 | 0.0 | [p-props](./p/p-props) | Like Promise.all() but for Map and Object
+| 0.0 | [p-queue](./p/p-queue) | Promise queue with concurrency control
 | 0.0 | [p-reduce](./p/p-reduce) | Reduce a list of values using promises into a prom
 | 0.0 | [p-reflect](./p/p-reflect) | Make a promise always fulfill with its actual fulf
 | 0.0 | [p-retry](./p/p-retry) | Retry a promise-returning or async function

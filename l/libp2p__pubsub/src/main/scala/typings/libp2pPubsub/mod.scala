@@ -18,6 +18,8 @@ import typings.libp2pPeerCollections.mod.PeerSet
 import typings.libp2pPubsub.anon.Data
 import typings.libp2pPubsub.anon.Messages
 import typings.multiformats.distTypesSrcHashesHasherMod.Await
+import typings.pQueue.distOptionsMod.QueueAddOptions
+import typings.pQueue.distPriorityQueueMod.default
 import typings.std.AsyncIterable
 import typings.std.Map
 import typings.std.Set
@@ -157,7 +159,7 @@ object mod {
       */
     def publishMessage(sender: PeerId, message: Message): js.Promise[PublishResult] = js.native
     
-    var queue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Queue */ Any = js.native
+    var queue: typings.pQueue.mod.default[default, QueueAddOptions] = js.native
     
     /**
       * Send an rpc object to a peer

@@ -1,5 +1,6 @@
 package typings.pQueue
 
+import typings.pQueue.pQueueBooleans.`true`
 import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -82,6 +83,24 @@ object anon {
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    }
+  }
+  
+  trait ThrowOnTimeout extends StObject {
+    
+    var throwOnTimeout: `true`
+  }
+  object ThrowOnTimeout {
+    
+    inline def apply(): ThrowOnTimeout = {
+      val __obj = js.Dynamic.literal(throwOnTimeout = true)
+      __obj.asInstanceOf[ThrowOnTimeout]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrowOnTimeout] (val x: Self) extends AnyVal {
+      
+      inline def setThrowOnTimeout(value: `true`): Self = StObject.set(x, "throwOnTimeout", value.asInstanceOf[js.Any])
     }
   }
 }

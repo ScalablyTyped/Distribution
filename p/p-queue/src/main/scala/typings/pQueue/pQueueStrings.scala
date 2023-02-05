@@ -48,4 +48,8 @@ object pQueueStrings {
     extends StObject
        with EventName
   inline def next: next = "next".asInstanceOf[next]
+  
+  @js.native
+  sealed trait throwOnTimeout extends StObject
+  inline def throwOnTimeout: throwOnTimeout = "throwOnTimeout".asInstanceOf[throwOnTimeout]
 }

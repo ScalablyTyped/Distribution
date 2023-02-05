@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-queue" : "7.3.0"
+      "p-queue" : "7.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "p-queue" : "7.3.0"
+      "p-queue" : "7.3.3"
     }
   ],
   "compile-devDependencies" : [

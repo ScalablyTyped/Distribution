@@ -1,11 +1,12 @@
 organization := "org.scalablytyped"
 name := "libp2p__kad-dht"
-version := "5.0.1-ce891c"
+version := "5.0.1-09fb3b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-60582a",
+  "org.scalablytyped" %%% "eventemitter3" % "5.0.0-78e12d",
   "org.scalablytyped" %%% "interface-datastore" % "7.0.1-a82cfe",
   "org.scalablytyped" %%% "interface-store" % "3.0.1-a39b9b",
   "org.scalablytyped" %%% "it-stream-types" % "1.0.4-f6f2e3",
@@ -27,6 +28,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "multiformats" % "10.0.2-dbe0b0",
   "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-cf6b57",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
+  "org.scalablytyped" %%% "p-queue" % "7.3.3-d5b1a8",
   "org.scalablytyped" %%% "protons-runtime" % "4.0.1-b69761",
   "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
   "org.scalablytyped" %%% "uint8arraylist" % "2.3.3-f85bcb",

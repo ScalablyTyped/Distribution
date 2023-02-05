@@ -10,6 +10,8 @@ import typings.googleGax.mod.GoogleError
 import typings.grpcGrpcJs.buildSrcCallMod.ServiceError
 import typings.node.eventsMod.EventEmitter
 import typings.node.timersMod.global.NodeJS.Timer
+import typings.pQueue.distOptionsMod.QueueAddOptions
+import typings.pQueue.distPriorityQueueMod.default
 import typings.stackTrace.mod.StackFrame
 import typings.std.Map
 import typings.std.Set
@@ -60,7 +62,7 @@ object buildSrcSessionPoolMod {
       */
     def _acquire(`type`: types): js.Promise[Session] = js.native
     
-    var _acquires: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PQueue */ Any = js.native
+    var _acquires: typings.pQueue.mod.default[default, QueueAddOptions] = js.native
     
     /**
       * Moves a session into the borrowed group.
@@ -242,7 +244,7 @@ object buildSrcSessionPoolMod {
       */
     def _release(session: Session): Unit = js.native
     
-    var _requests: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PQueue */ Any = js.native
+    var _requests: typings.pQueue.mod.default[default, QueueAddOptions] = js.native
     
     /**
       * Starts housekeeping (pinging/evicting) of idle sessions.
