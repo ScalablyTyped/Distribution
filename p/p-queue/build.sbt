@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-queue"
-version := "7.3.3-d5b1a8"
+version := "7.3.4-48edac"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

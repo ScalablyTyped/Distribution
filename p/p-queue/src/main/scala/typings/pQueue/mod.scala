@@ -69,9 +69,6 @@ object mod {
   trait PQueue[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */]
     extends typings.eventemitter3.mod.default[EventName, Any] {
     
-    /**
-      Adds a sync or async task to the queue. Always returns a promise.
-      */
     def add[TaskResultType](function_ : Task[TaskResultType]): js.Promise[TaskResultType | Unit] = js.native
     def add[TaskResultType](function_ : Task[TaskResultType], options: Partial[EnqueueOptionsType]): js.Promise[TaskResultType | Unit] = js.native
     
@@ -79,7 +76,7 @@ object mod {
       Same as `.add()`, but accepts an array of sync or async functions.
       @returns A promise that resolves when all functions are resolved.
       */
-    def addAll[TaskResultsType](functions: js.Array[Task[TaskResultsType]]): js.Promise[js.Array[TaskResultsType | Unit]] = js.native
+    def addAll[TaskResultsType](functions: js.Array[Task[TaskResultsType]]): js.Promise[js.Array[TaskResultsType]] = js.native
     def addAll[TaskResultsType](functions: js.Array[Task[TaskResultsType]], options: Partial[EnqueueOptionsType]): js.Promise[js.Array[TaskResultsType | Unit]] = js.native
     @JSName("addAll")
     def addAll_throwOnTimeout[TaskResultsType](
@@ -87,6 +84,9 @@ object mod {
       options: ThrowOnTimeout & (Partial[Exclude[EnqueueOptionsType, throwOnTimeout]])
     ): js.Promise[js.Array[TaskResultsType]] = js.native
     
+    /**
+      Adds a sync or async task to the queue. Always returns a promise.
+      */
     @JSName("add")
     def add_throwOnTimeout[TaskResultType](
       function_ : Task[TaskResultType],

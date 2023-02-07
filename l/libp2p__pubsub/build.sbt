@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "libp2p__pubsub"
-version := "5.0.0-6dcafc"
+version := "5.0.0-3dc7cc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "multiformats" % "10.0.2-dbe0b0",
   "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-cf6b57",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "p-queue" % "7.3.3-d5b1a8",
+  "org.scalablytyped" %%% "p-queue" % "7.3.4-48edac",
   "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
   "org.scalablytyped" %%% "uint8arraylist" % "2.3.3-f85bcb")
 publishArtifact in packageDoc := false

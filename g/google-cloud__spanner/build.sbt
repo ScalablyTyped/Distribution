@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__spanner"
-version := "6.1.4-3911d0"
+version := "6.1.4-dc96bc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "gtoken" % "6.1.2-26eb5a",
   "org.scalablytyped" %%% "long" % "5.2.1-93c497",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "p-queue" % "7.3.3-d5b1a8",
+  "org.scalablytyped" %%% "p-queue" % "7.3.4-48edac",
   "org.scalablytyped" %%% "proto3-json-serializer" % "1.1.0-d84fef",
   "org.scalablytyped" %%% "protobufjs" % "7.1.2-ebeb9d",
   "org.scalablytyped" %%% "stack-trace" % "0.0-unknown-dt-20221103Z-2ea842",
