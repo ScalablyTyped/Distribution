@@ -6029,7 +6029,6 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val `koa-log4` = "org.scalablytyped" % "koa-log4_sjs1_3" % "2.3-dt-20211202Z-d20dd2"
         val `koa-logger` = "org.scalablytyped" % "koa-logger_sjs1_3" % "3.1-dt-20211202Z-1e5874"
         val `koa-logger-winston` = "org.scalablytyped" % "koa-logger-winston_sjs1_3" % "0.0-dt-20211202Z-41fceb"
-        val `koa-mongo` = "org.scalablytyped" % "koa-mongo_sjs1_3" % "1.9-dt-20220422Z-88544f"
         val `koa-morgan` = "org.scalablytyped" % "koa-morgan_sjs1_3" % "1.0-dt-20211202Z-cc7278"
         val `koa-mount` = "org.scalablytyped" % "koa-mount_sjs1_3" % "4.0-dt-20221024Z-44ce1f"
         val `koa-multer` = "org.scalablytyped" % "koa-multer_sjs1_3" % "1.0-dt-20211202Z-3e929c"
