@@ -1774,7 +1774,6 @@
 | 0.0 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
 | 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
-| 0.0 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
 | 0.0 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm
 | 0.0 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u
@@ -3713,6 +3712,7 @@
 | 0.0 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler.
 | 0.0 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com
 | 0.0 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir
+| 0.0 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 0.0 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io
 | 0.0 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st
 | 0.0 | [hookrouter](./h/hookrouter) | A hook based router for React
@@ -6554,6 +6554,7 @@
 | 0.0 | [ng-grid](./n/ng-grid) | __Contributors:__
 | 0.0 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne
 | 0.0 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi
+| 0.0 | [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P
 | 0.0 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS
 | 0.0 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS
 | 0.0 | [ng-table](./n/ng-table) | Table + AngularJS ================= 
@@ -6577,6 +6578,7 @@
 | 0.0 | [ngsijs](./n/ngsijs) | JavaScript library for the FIWARE Context Broker s
 | 0.0 | [ngstorage](./n/ngstorage) | ngStorage =========
 | 0.0 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp
+| 0.0 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | -
 | 0.0 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises
 | 0.0 | [nib](./n/nib) | Stylus mixins and utilities
 | 0.0 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js

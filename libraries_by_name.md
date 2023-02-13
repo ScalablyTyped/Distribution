@@ -1953,7 +1953,6 @@
 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot | cypress, plugin, dotenv, cypress-plugin, env |
 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot. | - |
 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate | cypress, cypress-plugin |
-| [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t | cypress, istanbul, cypress-plugin, code, coverage |
 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm | cytoscape, cytoscape-extension |
 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u | cytoscape, cytoscape.js, cytoscapejs, cytoscape-canvas, canvas, extension |
@@ -4639,6 +4638,7 @@
 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler. | mustache, template |
 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com | react |
 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir | images, placeholders, client-side, canvas, generation, development, svg |
+| [homeworks](./h/homeworks) | Front End framework that supported view binding. | Frontend Framework, Material, IGAWorks, homeworks, framework, PIGNOSE |
 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io | - |
 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st | patch, hook, function, debug, aop |
 | [hookrouter](./h/hookrouter) | A hook based router for React | - |
@@ -7638,6 +7638,7 @@
 | [ng-grid](./n/ng-grid) | __Contributors:__ | angular, ng-grid, nggrid, grid, angularjs, slickgrid, kogrid |
 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne | - |
 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi | AngularJS, App, notify, Provider, notification, alert, notice |
+| [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P | apf, angular-package-format, angular, angular-library, angular-components, component-library, typescript, css, scss |
 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS | - |
 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS | AngularJS, STOMP, websocket |
 | [ng-table](./n/ng-table) | Table + AngularJS =================  | - |
@@ -7663,6 +7664,7 @@
 | [ngtoaster](./n/ngtoaster) | - | - |
 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp | angular, Angular CLI, devkit, sdk, Angular DevKit, webpack, plugin, aot |
 | [ngwysiwyg](./n/ngwysiwyg) | - | - |
+| [ngx-infinite-scroll](./n/ngx-infinite-scroll) | - | - |
 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises | nhs, validator, validation |
 | [nib](./n/nib) | Stylus mixins and utilities | - |
 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js | nice, priority |

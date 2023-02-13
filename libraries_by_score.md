@@ -2852,7 +2852,6 @@
 | 0.7176712388781245 | [stream-to-array](./s/stream-to-array) | Concatenate a readable stream's data into a single
 | 0.7176433510462157 | [detect-passive-events](./d/detect-passive-events) | Detect if the browser supports passive events
 | 0.7176198342961569 | [grpc__proto-loader](./g/grpc__proto-loader) | gRPC utility library for loading .proto files
-| 0.7176004435070695 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.7175881284103192 | [react-ace](./r/react-ace) | A react component for Ace Editor
 | 0.7175787601224826 | [vfile-sort](./v/vfile-sort) | vfile utility to sort messages by line/column
 | 0.7175523728015658 | [react-swipe](./r/react-swipe) | Brad Birdsall's Swipe.js as a React component
@@ -3174,6 +3173,7 @@
 | 0.7082704355167599 | [rc-segmented](./r/rc-segmented) | React segmented controls used in ant.design
 | 0.7082676941001456 | [empower](./e/empower) | Power Assert feature enhancer for assert function/
 | 0.7081949710506517 | [node-abort-controller](./n/node-abort-controller) | AbortController for Node based on EventEmitter
+| 0.7081644043608262 | [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P
 | 0.7081411005412502 | [ranges-apply](./r/ranges-apply) | Take an array of string index ranges, delete/repla
 | 0.7080424574077693 | [cassandra-driver](./c/cassandra-driver) | DataStax Node.js Driver for Apache Cassandra
 | 0.7080408055692131 | [qr-image](./q/qr-image) | QR Code generator (png, svg, pdf, eps)
@@ -10320,6 +10320,7 @@
 | 0.3739087522238116 | [parameterize](./p/parameterize) | This repository adds node.js and npm support for p
 | 0.3738057460546391 | [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form 
 | 0.3737619916214192 | [bootpag](./b/bootpag) | bootpag - dynamic pagination jQuery plugin. Works 
+| 0.3736559415506839 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | -
 | 0.37363208075520415 | [gatsby-sharp](./g/gatsby-sharp) | -
 | 0.37356372618117983 | [documentdb](./d/documentdb) | Azure Cosmos DB Service Node.js SDK for SQL API
 | 0.3734709524247766 | [rpi-ws281x-native](./r/rpi-ws281x-native) | (raspberry-pi *only*) native bindings to control a
@@ -11424,6 +11425,7 @@
 | 0.17948216205889722 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_compute) | TypeScript typings for Compute Engine API v1
 | 0.1794622728626326 | [metrostations](./m/metrostations) | JSONs of metro stations and lines.
 | 0.17938446594731672 | [fragmented-store](./f/fragmented-store) | Small library to manage the (P)React state
+| 0.17938237856804978 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 0.17935334294200223 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_remotebuildexecution) | TypeScript typings for Remote Build Execution API 
 | 0.1792596690757141 | [timelinejs3](./t/timelinejs3) | TimelineJS v3: A Storytelling Timeline built in Ja
 | 0.17899586210258164 | [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet
