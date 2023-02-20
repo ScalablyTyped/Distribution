@@ -2786,13 +2786,23 @@
 | [expired-storage](./e/expired-storage) | Micro JS lib that provide local & session storage  | localStorage, sessionStorage, storage, expiration, expired, temporary |
 | [expirymanager](./e/expirymanager) | An object for efficiently managing key expiries | expiry, expire, expirymanager, timeout, volatile, key |
 | [expo](./e/expo) | - | - |
+| [expo-application](./e/expo-application) | A universal module that gets native application in | react-native, expo, expo-application |
+| [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa | react-native, expo, asset |
+| [expo-constants](./e/expo-constants) | - | - |
+| [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe | react-native, expo, expo-error-recovery, error-recovery |
 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de | react-native, expo, file-system, file |
+| [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native | react-native, expo, font |
 | [expo-gl](./e/expo-gl) | Provides GLView that acts as OpenGL ES render targ | react-native, expo, gl, glview, webgl |
+| [expo-keep-awake](./e/expo-keep-awake) | - | - |
 | [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient | react-native, expo, gradient |
 | [expo-localization](./e/expo-localization) | Provides an interface for native user localization | react-native, expo, localization, locales, l10n |
+| [expo-location](./e/expo-location) | - | - |
 | [expo-mixpanel-analytics](./e/expo-mixpanel-analytics) | Mixpanel integration for use with React Native app | react, native, expo, mixpanel, analytics |
 | [expo-modules-autolinking](./e/expo-modules-autolinking) | - | - |
+| [expo-modules-core](./e/expo-modules-core) | - | - |
+| [expo-permissions](./e/expo-permissions) | Allows you prompt for various permissions to acces | react-native, expo, permissions |
 | [expo-sqlite](./e/expo-sqlite) | Provides access to a database that can be queried  | react-native, expo, sqlite, websql, sql |
+| [expo-web-browser](./e/expo-web-browser) | Provides access to the system's web browser and su | react-native, expo, expo-web-browser, web, browser |
 | [expo__bunyan](./e/expo__bunyan) | a JSON logging library for node.js services | log, logging, log4j, json, bunyan |
 | [expo__code-signing-certif](./e/expo__code-signing-certificates) | A library for working with expo-updates code signi | code signing |
 | [expo__config](./e/expo__config) | A library for interacting with the app.json | json, react-native, expo, react |
@@ -2820,7 +2830,6 @@
 | [express-boom](./e/express-boom) | Boom response objects in Express | Hapi, Boom, Express, response |
 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro | brute, force, bruteforce, attack, fibonacci, rate, limit, security |
 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute | express, brute, memcached, store |
-| [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute. | - |
 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute | express, brute, redis |
 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express | express, logger, bunyan |
 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser | busboy, express, body-parser |
@@ -4299,7 +4308,6 @@
 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant | graph, gremlin, tinkerpop, connection, glv, driver, graphdb |
 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser | grid, grid-layout, template, parser |
 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React | react-component, grid, react, pagination, sort |
-| [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams | mongodb, mongoose, gridfs |
 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio | Typescript, gridstack.js, grid, gridster, layout, responsive, dashboard, resize, drag&drop, widgets, Angular, React, Vue, JavaScript |
 | [grommet](./g/grommet) | focus on the essential experience | grommet, grommet.io, grommetux, component, library, design system, framework, react, theme, theming, templates, sticker sheets, design patterns, app templates, atomic design, accessibility, WCAG 2.1, keyboard navigation, screen reader tags, color, type, layout, typography, interaction, ui, user interface, gui, graphical user interface, styled-components |
 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps. | - |
@@ -4852,7 +4860,6 @@
 | [indefinite-observable](./i/indefinite-observable) |   | - |
 | [indent-string](./i/indent-string) | Indent each line in a string | indent, string, pad, align, line, text, each, every |
 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria | index, array, helper |
-| [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy | - |
 | [inert](./i/inert) | Static file and directory handlers plugin for hapi | file, directory, handler, hapi, plugin |
 | [ineum](./i/ineum) | - | - |
 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f | inferno, performance, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vdom |
@@ -5983,7 +5990,6 @@
 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware | log4js, Koa, logger |
 | [koa-logger](./k/koa-logger) | Logging middleware for koa | koa, middleware, logger, log |
 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa | logging, koa, winston, async |
-| [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo | koa, mongo, mongodb |
 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa | logger, morgan |
 | [koa-mount](./k/koa-mount) | Mounting middleware for koa | koa, middleware, mount, mounting |
 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko | form, post, multipart, form-data, formdata, koa, middleware |
@@ -7192,17 +7198,9 @@
 | [metascraper-youtube](./m/metascraper-youtube) | Metascraper integration with YouTube | metascraper, video, youtube |
 | [meteor](./m/meteor) | Install Meteor | - |
 | [meteor-accounts-phone](./m/meteor-accounts-phone) | - | - |
-| [meteor-astronomy](./m/meteor-astronomy) | - | - |
 | [meteor-collection-hooks](./m/meteor-collection-hooks) | - | - |
-| [meteor-dburles-collection](./m/meteor-dburles-collection-helpers) | - | - |
 | [meteor-jboulhous-dev](./m/meteor-jboulhous-dev) | - | - |
-| [meteor-mdg-validated-meth](./m/meteor-mdg-validated-method) | - | - |
-| [meteor-mdg-validation-err](./m/meteor-mdg-validation-error) | - | - |
 | [meteor-percolate-migratio](./m/meteor-percolate-migrations) | - | - |
-| [meteor-persistent-session](./m/meteor-persistent-session) | - | - |
-| [meteor-prime8consulting-o](./m/meteor-prime8consulting-oauth2) | - | - |
-| [meteor-publish-composite](./m/meteor-publish-composite) | - | - |
-| [meteor-roles](./m/meteor-roles) | - | - |
 | [meteor-sjobs](./m/meteor-sjobs) | - | - |
 | [meteor-synced-cron](./m/meteor-synced-cron) | Since I'm no longer actively developing an app tha | - |
 | [meteor-typings](./m/meteor-typings) | Type definitions for Meteor | - |
@@ -7280,7 +7278,6 @@
 | [microsoftteams](./m/microsoftteams) | - | - |
 | [microtime](./m/microtime) | Get the current time in microseconds | microtime, microseconds, gettimeofday |
 | [midi](./m/midi) | MIDI hardware IO | - |
-| [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node | migrate mongo mongodb migrations database |
 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js. | milkcocoa, realtime |
 | [millisecond](./m/millisecond) | Convert time strings to milliseconds | ms, millisecond, milisecond, mili, milli, second, parse, time, string |
 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t | time, conversion, milliseconds |
@@ -7411,11 +7408,8 @@
 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR | password, prompt, tty |
 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without  | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
-| [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB. | mongodb, queue |
 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs. | mongodb, uri, url, parser, formatter, mongoose |
 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily | MongoDB, Mongoose, seeder |
-| [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM. | mongo, mongodb, odm |
-| [mongration](./m/mongration) | Node.js mongodb migration framework | mongration, mongodb, migration, database, node mongodb migration framework |
 | [monk](./m/monk) | The wise MongoDB API | monk, mongodb, mongo, driver |
 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript | typescript, functional-programming, optics, lens, fp-ts |
 | [month-days](./m/month-days) | Get the number of days in a month | month, days, year, date, utc, number, count |
@@ -7766,7 +7760,6 @@
 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server | rtmp, flv, server |
 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and | - |
 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin | microphone, alsa, mic, record, audio, sox, capture, node-microphone, arecord, input |
-| [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures | mongodb, fixtures, loader, tests, unit-tests, unloader, schema |
 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m | node-mysql-wrapper, node-mysql, mysql, mysql-wrapper |
 | [node-netstat](./n/node-netstat) | programmatic netstat utility | netstat, utility |
 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays | hash, object, hash-object, object-hash, es6, crypto |
@@ -12758,6 +12751,7 @@
 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises | yauzl, unzip, zip, promise, async, await |
 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling | yaml |
 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta | json-api, json, api, response, format, serialization, deserialization, yay, wow, omg |
+| [yazl](./y/yazl) | yet another zip library for node | zip, stream, archive, file |
 | [ydn-db](./y/ydn-db) | - | - |
 | [year-days](./y/year-days) | Get the number of days in a year | year, days, date, number, count |
 | [yeast](./y/yeast) | Tiny but linear growing unique id generator | yeast, id, generator, unique |
