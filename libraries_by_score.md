@@ -6640,7 +6640,6 @@
 | 0.6153603940379252 | [randexp](./r/randexp) | Create random strings that match a given regular e
 | 0.6153560379623948 | [gsheets](./g/gsheets) | Get public Google Spreadsheets as plain JavaScript
 | 0.6153290679396893 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
-| 0.6152816327284444 | [yazl](./y/yazl) | yet another zip library for node
 | 0.6152394529489089 | [utf8](./u/utf8) | A well-tested UTF-8 encoder/decoder written in Jav
 | 0.6152362174951483 | [barnard59-core](./b/barnard59-core) | Core component of Barnard59 Linked Data pipelines
 | 0.6151520405779876 | [csscolorparser-ts](./c/csscolorparser-ts) | Parser for CSS color strings written in TypeScript
@@ -10053,7 +10052,6 @@
 | 0.4031938959710164 | [react-s-alert](./r/react-s-alert) | Alerts / Notifications for React with rich configu
 | 0.4031763763274754 | [halogenium](./h/halogenium) | A collection of loading spinners with React.js bas
 | 0.4028897478119984 | [line-segments-intersect](./l/line-segments-intersect) | Determine if two line segments intersect each othe
-| 0.40287451803008295 | [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures
 | 0.40284197522511733 | [tinycon](./t/tinycon) | Add notification bubbles in the favicon
 | 0.4026790896090161 | [pollyjs__persister-fs](./p/pollyjs__persister-fs) | File system persister for @pollyjs
 | 0.4026522832682514 | [simple-xml](./s/simple-xml) | A naive XML parser and builder based on libxmljs
