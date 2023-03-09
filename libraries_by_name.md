@@ -7776,6 +7776,7 @@
 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server | rtmp, flv, server |
 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and | - |
 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin | microphone, alsa, mic, record, audio, sox, capture, node-microphone, arecord, input |
+| [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures | mongodb, fixtures, loader, tests, unit-tests, unloader, schema |
 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m | node-mysql-wrapper, node-mysql, mysql, mysql-wrapper |
 | [node-netstat](./n/node-netstat) | programmatic netstat utility | netstat, utility |
 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays | hash, object, hash-object, object-hash, es6, crypto |
@@ -12767,6 +12768,7 @@
 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises | yauzl, unzip, zip, promise, async, await |
 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling | yaml |
 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta | json-api, json, api, response, format, serialization, deserialization, yay, wow, omg |
+| [yazl](./y/yazl) | yet another zip library for node | zip, stream, archive, file |
 | [ydn-db](./y/ydn-db) | - | - |
 | [year-days](./y/year-days) | Get the number of days in a year | year, days, date, number, count |
 | [yeast](./y/yeast) | Tiny but linear growing unique id generator | yeast, id, generator, unique |

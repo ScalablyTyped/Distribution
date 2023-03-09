@@ -6687,6 +6687,7 @@
 | 0.0 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server
 | 0.0 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and
 | 0.0 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin
+| 0.0 | [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures
 | 0.0 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
 | 0.0 | [node-netstat](./n/node-netstat) | programmatic netstat utility
 | 0.0 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays
@@ -11527,6 +11528,7 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
+| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman
