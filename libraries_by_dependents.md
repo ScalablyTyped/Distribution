@@ -4963,7 +4963,6 @@
 | 0.0 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware
 | 0.0 | [koa-logger](./k/koa-logger) | Logging middleware for koa
 | 0.0 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa
-| 0.0 | [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo
 | 0.0 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa
 | 0.0 | [koa-mount](./k/koa-mount) | Mounting middleware for koa
 | 0.0 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko
@@ -6221,7 +6220,6 @@
 | 0.0 | [microsoft__typescript-etw](./m/microsoft__typescript-etw) | ETW logging native Node.js module for the TypeScri
 | 0.0 | [microtime](./m/microtime) | Get the current time in microseconds
 | 0.0 | [midi](./m/midi) | MIDI hardware IO
-| 0.0 | [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node
 | 0.0 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js.
 | 0.0 | [millisecond](./m/millisecond) | Convert time strings to milliseconds
 | 0.0 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t
@@ -6345,11 +6343,8 @@
 | 0.0 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR
 | 0.0 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
 | 0.0 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
-| 0.0 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB.
 | 0.0 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs.
 | 0.0 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
-| 0.0 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
-| 0.0 | [mongration](./m/mongration) | Node.js mongodb migration framework
 | 0.0 | [monk](./m/monk) | The wise MongoDB API
 | 0.0 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 0.0 | [month-days](./m/month-days) | Get the number of days in a month
@@ -6687,7 +6682,6 @@
 | 0.0 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server
 | 0.0 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and
 | 0.0 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin
-| 0.0 | [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures
 | 0.0 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
 | 0.0 | [node-netstat](./n/node-netstat) | programmatic netstat utility
 | 0.0 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays
@@ -11528,7 +11522,6 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
-| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman
