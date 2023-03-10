@@ -57,7 +57,6 @@
 | 0.8931586194305201 | [decimal_dot_js](./d/decimal_dot_js) | An arbitrary-precision Decimal type for JavaScript
 | 0.8924481925960481 | [cosmiconfig](./c/cosmiconfig) | Find and load configuration from a package.json pr
 | 0.892172574724265 | [big_dot_js](./b/big_dot_js) | A small, fast, easy-to-use library for arbitrary-p
-| 0.8915876211336213 | [terser-webpack-plugin](./t/terser-webpack-plugin) | Terser plugin for webpack
 | 0.8911006589621994 | [emotion__cache](./e/emotion__cache) | emotion's cache
 | 0.8902605776247681 | [follow-redirects](./f/follow-redirects) | HTTP and HTTPS modules that follow redirects.
 | 0.8888899904409526 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th
@@ -763,7 +762,6 @@
 | 0.8129275964088304 | [sqlstring](./s/sqlstring) | Simple SQL escape and format for MySQL
 | 0.8129125739360719 | [min-indent](./m/min-indent) | Get the shortest leading whitespace from lines in 
 | 0.8127435482449854 | [v8flags](./v/v8flags) | Get available v8 and Node.js flags.
-| 0.8126770765028366 | [swiper](./s/swiper) | Most modern mobile touch slider and framework with
 | 0.8126123998378669 | [workbox-core](./w/workbox-core) | This module is used by a number of the other Workb
 | 0.812608101124181 | [mjml](./m/mjml) | MJML: the only framework that makes responsive-ema
 | 0.8124845386194027 | [google-p12-pem](./g/google-p12-pem) | Convert Google .p12 keys to .pem keys.
@@ -3174,7 +3172,6 @@
 | 0.7082704355167599 | [rc-segmented](./r/rc-segmented) | React segmented controls used in ant.design
 | 0.7082676941001456 | [empower](./e/empower) | Power Assert feature enhancer for assert function/
 | 0.7081949710506517 | [node-abort-controller](./n/node-abort-controller) | AbortController for Node based on EventEmitter
-| 0.7081644043608262 | [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P
 | 0.7081411005412502 | [ranges-apply](./r/ranges-apply) | Take an array of string index ranges, delete/repla
 | 0.7080424574077693 | [cassandra-driver](./c/cassandra-driver) | DataStax Node.js Driver for Apache Cassandra
 | 0.7080408055692131 | [qr-image](./q/qr-image) | QR Code generator (png, svg, pdf, eps)
@@ -4102,6 +4099,7 @@
 | 0.6840852913918103 | [delete-empty](./d/delete-empty) | Recursively delete all empty folders in a director
 | 0.6840709122721884 | [openapi-request-validator](./o/openapi-request-validator) | Validate request properties against an OpenAPI spe
 | 0.6840601771701782 | [passport-steam](./p/passport-steam) | Steam (OpenID 2) authentication strategy for Passp
+| 0.6840346575800967 | [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node
 | 0.6840140055189972 | [react-no-ssr](./r/react-no-ssr) | React component to wrap non SSR components.
 | 0.6840139024157877 | [vega-expression](./v/vega-expression) | Vega expression parser and code generator.
 | 0.6840057747936023 | [uuid-apikey](./u/uuid-apikey) | A Base32-Crockford encoded API Key generator, vali
@@ -5444,6 +5442,7 @@
 | 0.6538493270938367 | [mqtt](./m/mqtt) | A library for the MQTT protocol
 | 0.6538449772615398 | [vec2](./v/vec2) | manipulate vectors in 2d
 | 0.6538395028480307 | [unique-hash-stream](./u/unique-hash-stream) | Remove duplicates from a stream based on a hashing
+| 0.653800634785273 | [mongration](./m/mongration) | Node.js mongodb migration framework
 | 0.6537780824236122 | [superagent-bunyan](./s/superagent-bunyan) | a plugin for superagent that uses bunyan to log th
 | 0.6537568181251388 | [generic-pool](./g/generic-pool) | Generic resource pooling for Node.JS
 | 0.653751723904862 | [typed-undo](./t/typed-undo) | A low memory UndoManager for TypeScript (and JavaS
@@ -8464,6 +8463,7 @@
 | 0.51865377039315 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne
 | 0.5186456954880554 | [geojson](./g/geojson) | Turn your geo data into GeoJSON
 | 0.5186105162537533 | [jotform-css_dot_js](./j/jotform-css_dot_js) | A lightweight, battle tested, fast, CSS parser in 
+| 0.5185871962660882 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
 | 0.5185458565617317 | [fs-promise](./f/fs-promise) | -
 | 0.5185200730022734 | [angular-gridster](./a/angular-gridster) | This directive gives you gridster behavior
 | 0.5185134170674351 | [use-it__event-listener](./u/use-it__event-listener) | A custom React Hook that provides a useEventListen
@@ -8672,6 +8672,7 @@
 | 0.5073184517108326 | [osmtogeojson](./o/osmtogeojson) | convert OSM to geojson
 | 0.5068995222078896 | [smoothie](./s/smoothie) | Smoothie Charts: smooooooth JavaScript charts for 
 | 0.5067207925249471 | [buffers](./b/buffers) | Treat a collection of Buffers as a single contiguo
+| 0.5065720229096784 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB.
 | 0.5065605862408005 | [leaflet-routing-machine](./l/leaflet-routing-machine) | Routing for Leaflet
 | 0.5065405491789425 | [gulp-rev-all](./g/gulp-rev-all) | Static asset revisioning by appending content hash
 | 0.5065247770777704 | [black-engine](./b/black-engine) |               
@@ -9382,6 +9383,7 @@
 | 0.46149625353030777 | [angular__platform-browser](./a/angular__platform-browser) | Angular - library for using Angular in a web brows
 | 0.4614823190907351 | [webpack-chunk-hash](./w/webpack-chunk-hash) | Plugin to replace a standard webpack chunk hashing
 | 0.46144779221110954 | [node-wit](./n/node-wit) | Wit.ai Node.js SDK
+| 0.4614272634745715 | [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo
 | 0.46135711253155737 | [grasp](./g/grasp) | JavaScript structural search, replace, and refacto
 | 0.4609634634981278 | [ngkookies](./n/ngkookies) | More powerful replacer for built-in Angular $cooki
 | 0.4608838763276304 | [elastic_dot_js](./e/elastic_dot_js) | Javascript API for ElasticSearch DSL
@@ -10047,6 +10049,7 @@
 | 0.4031938959710164 | [react-s-alert](./r/react-s-alert) | Alerts / Notifications for React with rich configu
 | 0.4031763763274754 | [halogenium](./h/halogenium) | A collection of loading spinners with React.js bas
 | 0.4028897478119984 | [line-segments-intersect](./l/line-segments-intersect) | Determine if two line segments intersect each othe
+| 0.40287451803008295 | [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures
 | 0.40284197522511733 | [tinycon](./t/tinycon) | Add notification bubbles in the favicon
 | 0.4026790896090161 | [pollyjs__persister-fs](./p/pollyjs__persister-fs) | File system persister for @pollyjs
 | 0.4026522832682514 | [simple-xml](./s/simple-xml) | A naive XML parser and builder based on libxmljs
@@ -10314,7 +10317,6 @@
 | 0.3739087522238116 | [parameterize](./p/parameterize) | This repository adds node.js and npm support for p
 | 0.3738057460546391 | [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form 
 | 0.3737619916214192 | [bootpag](./b/bootpag) | bootpag - dynamic pagination jQuery plugin. Works 
-| 0.3736559415506839 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | -
 | 0.37363208075520415 | [gatsby-sharp](./g/gatsby-sharp) | -
 | 0.37356372618117983 | [documentdb](./d/documentdb) | Azure Cosmos DB Service Node.js SDK for SQL API
 | 0.3734709524247766 | [rpi-ws281x-native](./r/rpi-ws281x-native) | (raspberry-pi *only*) native bindings to control a
@@ -11419,7 +11421,6 @@
 | 0.17948216205889722 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_compute) | TypeScript typings for Compute Engine API v1
 | 0.1794622728626326 | [metrostations](./m/metrostations) | JSONs of metro stations and lines.
 | 0.17938446594731672 | [fragmented-store](./f/fragmented-store) | Small library to manage the (P)React state
-| 0.17938237856804978 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 0.17935334294200223 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_remotebuildexecution) | TypeScript typings for Remote Build Execution API 
 | 0.1792596690757141 | [timelinejs3](./t/timelinejs3) | TimelineJS v3: A Storytelling Timeline built in Ja
 | 0.17899586210258164 | [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet
