@@ -12832,7 +12832,6 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val `yauzl-promise` = "org.scalablytyped" % "yauzl-promise_sjs1_3" % "2.1-dt-20221010Z-b861b7"
         val `yawn-yaml` = "org.scalablytyped" % "yawn-yaml_sjs1_3" % "1.4-dt-20211202Z-11346a"
         val yayson = "org.scalablytyped" % "yayson_sjs1_3" % "v2.0.1-dt-20220818Z-bdfbdb"
-        val yazl = "org.scalablytyped" % "yazl_sjs1_3" % "2.4-dt-20211202Z-4bf19a"
         val `ydn-db` = "org.scalablytyped" % "ydn-db_sjs1_3" % "1.0-dt-20221103Z-9a21b3"
         val `year-days` = "org.scalablytyped" % "year-days_sjs1_3" % "4.0.0-48e4c6"
         val yeast = "org.scalablytyped" % "yeast_sjs1_3" % "0.1-dt-20211202Z-92d4a1"
