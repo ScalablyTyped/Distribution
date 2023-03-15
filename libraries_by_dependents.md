@@ -27,6 +27,7 @@
 | 0.0 | [ace-builds](./a/ace-builds) | Ace (Ajax.org Cloud9 Editor)
 | 0.0 | [ace-diff](./a/ace-diff) | A diff/merging wrapper for Ace Editor built on goo
 | 0.0 | [ackee-tracker](./a/ackee-tracker) | Transfer data to Ackee
+| 0.0 | [acl](./a/acl) | An Access Control List module, based on Redis with
 | 0.0 | [acme-client](./a/acme-client) | Simple and unopinionated ACME client
 | 0.0 | [acorn](./a/acorn) | ECMAScript parser
 | 0.0 | [acorn-hammerhead](./a/acorn-hammerhead) | acorn.js parser adapted to TestCafe Hammerhead
@@ -181,6 +182,7 @@
 | 0.0 | [angular-locker](./a/angular-locker) | A simple & configurable abstraction for local/sess
 | 0.0 | [angular-material](./a/angular-material) | **
 | 0.0 | [angular-media-queries](./a/angular-media-queries) | Angular service to test if a given @media statment
+| 0.0 | [angular-meteor](./a/angular-meteor) | Combining the simplicity and power of AngularJS an
 | 0.0 | [angular-mocks](./a/angular-mocks) | AngularJS mocks for testing
 | 0.0 | [angular-modal](./a/angular-modal) | easily add a modal to your angular app
 | 0.0 | [angular-notifications](./a/angular-notifications) | Sweet notifications for your angular app
@@ -509,6 +511,7 @@
 | 0.0 | [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices
 | 0.0 | [aws-kcl](./a/aws-kcl) | Kinesis Client Libray (KCL) in Node.js.
 | 0.0 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin
+| 0.0 | [aws-lambda-fastify](./a/aws-lambda-fastify) | aws-lambda-fastify@2.2.0 has been deprecated. Plea
 | 0.0 | [aws-lambda-http-server](./a/aws-lambda-http-server) | run http server as aws lambda function
 | 0.0 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object
 | 0.0 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter 
@@ -1479,6 +1482,7 @@
 | 0.0 | [connect-memcached](./c/connect-memcached) | Memcached session store for Connect
 | 0.0 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t
 | 0.0 | [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect
+| 0.0 | [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by
 | 0.0 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con
 | 0.0 | [connect-redis](./c/connect-redis) | Redis session store for Connect
 | 0.0 | [connect-sequence](./c/connect-sequence) | A node.js module to run connect-like middlewares i
@@ -1770,6 +1774,7 @@
 | 0.0 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
 | 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
+| 0.0 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
 | 0.0 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm
 | 0.0 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u
@@ -2593,7 +2598,6 @@
 | 0.0 | [express-boom](./e/express-boom) | Boom response objects in Express
 | 0.0 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
 | 0.0 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute
-| 0.0 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute.
 | 0.0 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
 | 0.0 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express
 | 0.0 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
@@ -3388,7 +3392,6 @@
 | 0.0 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant
 | 0.0 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser
 | 0.0 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React
-| 0.0 | [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams
 | 0.0 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio
 | 0.0 | [grommet](./g/grommet) | focus on the essential experience
 | 0.0 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps.
@@ -3921,7 +3924,6 @@
 | 0.0 | [indefinite-observable](./i/indefinite-observable) |  
 | 0.0 | [indent-string](./i/indent-string) | Indent each line in a string
 | 0.0 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria
-| 0.0 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.0 | [inert](./i/inert) | Static file and directory handlers plugin for hapi
 | 0.0 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f
 | 0.0 | [inferno-clone-vnode](./i/inferno-clone-vnode) | provides helper function to clone Inferno's vNodes
@@ -4958,7 +4960,6 @@
 | 0.0 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware
 | 0.0 | [koa-logger](./k/koa-logger) | Logging middleware for koa
 | 0.0 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa
-| 0.0 | [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo
 | 0.0 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa
 | 0.0 | [koa-mount](./k/koa-mount) | Mounting middleware for koa
 | 0.0 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko
@@ -6216,7 +6217,6 @@
 | 0.0 | [microsoft__typescript-etw](./m/microsoft__typescript-etw) | ETW logging native Node.js module for the TypeScri
 | 0.0 | [microtime](./m/microtime) | Get the current time in microseconds
 | 0.0 | [midi](./m/midi) | MIDI hardware IO
-| 0.0 | [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node
 | 0.0 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js.
 | 0.0 | [millisecond](./m/millisecond) | Convert time strings to milliseconds
 | 0.0 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t
@@ -6340,11 +6340,8 @@
 | 0.0 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR
 | 0.0 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
 | 0.0 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
-| 0.0 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB.
 | 0.0 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs.
 | 0.0 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
-| 0.0 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
-| 0.0 | [mongration](./m/mongration) | Node.js mongodb migration framework
 | 0.0 | [monk](./m/monk) | The wise MongoDB API
 | 0.0 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 0.0 | [month-days](./m/month-days) | Get the number of days in a month
@@ -6682,7 +6679,6 @@
 | 0.0 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server
 | 0.0 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and
 | 0.0 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin
-| 0.0 | [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures
 | 0.0 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
 | 0.0 | [node-netstat](./n/node-netstat) | programmatic netstat utility
 | 0.0 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays
@@ -11498,6 +11494,7 @@
 | 0.0 | [xxhash-wasm](./x/xxhash-wasm) | A WebAssembly implementation of xxHash
 | 0.0 | [xxhashjs](./x/xxhashjs) | xxHash in Javascript
 | 0.0 | [y-codemirror](./y/y-codemirror) | CodeMirror binding for Yjs
+| 0.0 | [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs
 | 0.0 | [y-protocols](./y/y-protocols) | Yjs encoding protocols
 | 0.0 | [y-websocket](./y/y-websocket) | Websockets provider for Yjs
 | 0.0 | [ya-disk](./y/ya-disk) | Yandex Disk API Library
@@ -11522,6 +11519,7 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
+| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman
