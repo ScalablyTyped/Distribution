@@ -1482,7 +1482,6 @@
 | 0.0 | [connect-memcached](./c/connect-memcached) | Memcached session store for Connect
 | 0.0 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t
 | 0.0 | [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect
-| 0.0 | [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by
 | 0.0 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con
 | 0.0 | [connect-redis](./c/connect-redis) | Redis session store for Connect
 | 0.0 | [connect-sequence](./c/connect-sequence) | A node.js module to run connect-like middlewares i
@@ -1774,7 +1773,6 @@
 | 0.0 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
 | 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
-| 0.0 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
 | 0.0 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm
 | 0.0 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u
@@ -3926,7 +3924,6 @@
 | 0.0 | [indefinite-observable](./i/indefinite-observable) |  
 | 0.0 | [indent-string](./i/indent-string) | Indent each line in a string
 | 0.0 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria
-| 0.0 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.0 | [inert](./i/inert) | Static file and directory handlers plugin for hapi
 | 0.0 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f
 | 0.0 | [inferno-clone-vnode](./i/inferno-clone-vnode) | provides helper function to clone Inferno's vNodes
@@ -4963,7 +4960,6 @@
 | 0.0 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware
 | 0.0 | [koa-logger](./k/koa-logger) | Logging middleware for koa
 | 0.0 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa
-| 0.0 | [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo
 | 0.0 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa
 | 0.0 | [koa-mount](./k/koa-mount) | Mounting middleware for koa
 | 0.0 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko
@@ -11523,7 +11519,6 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
-| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman

@@ -2852,7 +2852,6 @@
 | 0.7176712388781245 | [stream-to-array](./s/stream-to-array) | Concatenate a readable stream's data into a single
 | 0.7176433510462157 | [detect-passive-events](./d/detect-passive-events) | Detect if the browser supports passive events
 | 0.7176198342961569 | [grpc__proto-loader](./g/grpc__proto-loader) | gRPC utility library for loading .proto files
-| 0.7176004435070695 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.7175881284103192 | [react-ace](./r/react-ace) | A react component for Ace Editor
 | 0.7175787601224826 | [vfile-sort](./v/vfile-sort) | vfile utility to sort messages by line/column
 | 0.7175523728015658 | [react-swipe](./r/react-swipe) | Brad Birdsall's Swipe.js as a React component
@@ -4640,7 +4639,6 @@
 | 0.6715028593119714 | [moddle](./m/moddle) | A library for importing meta-model based file form
 | 0.6714979137696142 | [node-red__editor-client](./n/node-red__editor-client) | -
 | 0.6714925649878302 | [cassanknex](./c/cassanknex) | An Apache Cassandra CQL query builder with support
-| 0.6714853737212092 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.6714584335377032 | [jss-plugin-global](./j/jss-plugin-global) | Global styles for JSS
 | 0.6714458699011386 | [progress-stream](./p/progress-stream) | Read the progress of a stream
 | 0.6714229772885696 | [totp-generator](./t/totp-generator) | Generate TOTP tokens from key
@@ -6638,7 +6636,6 @@
 | 0.6153603940379252 | [randexp](./r/randexp) | Create random strings that match a given regular e
 | 0.6153560379623948 | [gsheets](./g/gsheets) | Get public Google Spreadsheets as plain JavaScript
 | 0.6153290679396893 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
-| 0.6152816327284444 | [yazl](./y/yazl) | yet another zip library for node
 | 0.6152394529489089 | [utf8](./u/utf8) | A well-tested UTF-8 encoder/decoder written in Jav
 | 0.6152362174951483 | [barnard59-core](./b/barnard59-core) | Core component of Barnard59 Linked Data pipelines
 | 0.6151520405779876 | [csscolorparser-ts](./c/csscolorparser-ts) | Parser for CSS color strings written in TypeScript
@@ -8485,7 +8482,6 @@
 | 0.5176184142248688 | [semantic-ui-form](./s/semantic-ui-form) | Single component release of form
 | 0.5175170240227132 | [printf](./p/printf) | Full implementation of the printf family in pure J
 | 0.5174691309733079 | [dynatable](./d/dynatable) | A wrapper for DynamoDB tables, with a promise wrap
-| 0.5174283850224107 | [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by
 | 0.5173173509721416 | [imagemapster](./i/imagemapster) | jQuery plugin that activates areas in HTML imagema
 | 0.5171978499569843 | [neo4j](./n/neo4j) | Neo4j driver (REST API client) for Node.js
 | 0.5170690695688029 | [slack-winston](./s/slack-winston) | A Slack transport for winston
@@ -9383,7 +9379,6 @@
 | 0.46149625353030777 | [angular__platform-browser](./a/angular__platform-browser) | Angular - library for using Angular in a web brows
 | 0.4614823190907351 | [webpack-chunk-hash](./w/webpack-chunk-hash) | Plugin to replace a standard webpack chunk hashing
 | 0.46144779221110954 | [node-wit](./n/node-wit) | Wit.ai Node.js SDK
-| 0.4614272634745715 | [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo
 | 0.46135711253155737 | [grasp](./g/grasp) | JavaScript structural search, replace, and refacto
 | 0.4609634634981278 | [ngkookies](./n/ngkookies) | More powerful replacer for built-in Angular $cooki
 | 0.4608838763276304 | [elastic_dot_js](./e/elastic_dot_js) | Javascript API for ElasticSearch DSL
