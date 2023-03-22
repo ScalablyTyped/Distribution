@@ -12012,6 +12012,7 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val unzipper = "org.scalablytyped" % "unzipper_sjs1_3" % "0.10-dt-20211223Z-fef276"
         val upath = "org.scalablytyped" % "upath_sjs1_3" % "2.0.1-29c52a"
         val upath2 = "org.scalablytyped" % "upath2_sjs1_3" % "3.1.15-2377b2"
+        val `update-browserslist-db` = "org.scalablytyped" % "update-browserslist-db_sjs1_3" % "1.0.9-a4be2d"
         val `update-notifier` = "org.scalablytyped" % "update-notifier_sjs1_3" % "6.0-dt-20220704Z-9eed06"
         val uploadcare = "org.scalablytyped" % "uploadcare_sjs1_3" % "0.4-dt-20211202Z-32a771"
         val `upng-js` = "org.scalablytyped" % "upng-js_sjs1_3" % "2.1-dt-20211202Z-beeba4"
