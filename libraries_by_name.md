@@ -7202,17 +7202,9 @@
 | [metascraper-youtube](./m/metascraper-youtube) | Metascraper integration with YouTube | metascraper, video, youtube |
 | [meteor](./m/meteor) | Install Meteor | - |
 | [meteor-accounts-phone](./m/meteor-accounts-phone) | - | - |
-| [meteor-astronomy](./m/meteor-astronomy) | - | - |
 | [meteor-collection-hooks](./m/meteor-collection-hooks) | - | - |
-| [meteor-dburles-collection](./m/meteor-dburles-collection-helpers) | - | - |
 | [meteor-jboulhous-dev](./m/meteor-jboulhous-dev) | - | - |
-| [meteor-mdg-validated-meth](./m/meteor-mdg-validated-method) | - | - |
-| [meteor-mdg-validation-err](./m/meteor-mdg-validation-error) | - | - |
 | [meteor-percolate-migratio](./m/meteor-percolate-migrations) | - | - |
-| [meteor-persistent-session](./m/meteor-persistent-session) | - | - |
-| [meteor-prime8consulting-o](./m/meteor-prime8consulting-oauth2) | - | - |
-| [meteor-publish-composite](./m/meteor-publish-composite) | - | - |
-| [meteor-roles](./m/meteor-roles) | - | - |
 | [meteor-sjobs](./m/meteor-sjobs) | - | - |
 | [meteor-synced-cron](./m/meteor-synced-cron) | Since I'm no longer actively developing an app tha | - |
 | [meteor-typings](./m/meteor-typings) | Type definitions for Meteor | - |
@@ -7290,7 +7282,6 @@
 | [microsoftteams](./m/microsoftteams) | - | - |
 | [microtime](./m/microtime) | Get the current time in microseconds | microtime, microseconds, gettimeofday |
 | [midi](./m/midi) | MIDI hardware IO | - |
-| [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node | migrate mongo mongodb migrations database |
 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js. | milkcocoa, realtime |
 | [millisecond](./m/millisecond) | Convert time strings to milliseconds | ms, millisecond, milisecond, mili, milli, second, parse, time, string |
 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t | time, conversion, milliseconds |
@@ -7421,11 +7412,8 @@
 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR | password, prompt, tty |
 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without  | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
-| [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB. | mongodb, queue |
 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs. | mongodb, uri, url, parser, formatter, mongoose |
 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily | MongoDB, Mongoose, seeder |
-| [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM. | mongo, mongodb, odm |
-| [mongration](./m/mongration) | Node.js mongodb migration framework | mongration, mongodb, migration, database, node mongodb migration framework |
 | [monk](./m/monk) | The wise MongoDB API | monk, mongodb, mongo, driver |
 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript | typescript, functional-programming, optics, lens, fp-ts |
 | [month-days](./m/month-days) | Get the number of days in a month | month, days, year, date, utc, number, count |
@@ -7776,7 +7764,6 @@
 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server | rtmp, flv, server |
 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and | - |
 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin | microphone, alsa, mic, record, audio, sox, capture, node-microphone, arecord, input |
-| [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures | mongodb, fixtures, loader, tests, unit-tests, unloader, schema |
 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m | node-mysql-wrapper, node-mysql, mysql, mysql-wrapper |
 | [node-netstat](./n/node-netstat) | programmatic netstat utility | netstat, utility |
 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays | hash, object, hash-object, object-hash, es6, crypto |
@@ -10448,6 +10435,7 @@
 | [safe-regex-test](./s/safe-regex-test) | - | - |
 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly | stable, stringify, JSON, JSON.stringify, safe, serialize, deterministic, circular, object, predicable, repeatable, fast, bigint |
 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support | setTimeout, setInterval, timer, timeout, interval, timers, timeouts, intervals |
+| [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns | - |
 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server | sails, sdk, sails.io.js, socket.io, browser, javascript |
 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API | - |
 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli | sales, tax, salestax, money, billing, invoice, vat, gst, vatmoss |
@@ -10755,6 +10743,7 @@
 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic | Simmer, css, css selector, sizzle |
 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for | selection, selecting, js-utility, user-selection, ui, user-interface, ui-library |
 | [simperium](./s/simperium) | A simperium client for node.js | - |
+| [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v | - |
 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign | - |
 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI | chatwork, api |
 | [simple-datatables](./s/simple-datatables) | A lightweight, dependency-free JavaScript HTML tab | DataTable, DataTables, table, html table, filter, sort |
@@ -11347,6 +11336,7 @@
 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify | swagger, api, apis, restify |
 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects | swagger, api, apis, sails |
 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema | swagger, schema, api |
+| [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor | api, observability, telemetry, node, express, koa, hapi, fastify, rest, statistics, monitoring, alerting, swagger, openapi, schema, prometheus, metrics, elasticsearch, kibana, grafana |
 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg | api, connect, middleware, swagger |
 | [swagger-ui](./s/swagger-ui) | - | - |
 | [swagger-ui-dist](./s/swagger-ui-dist) | - | - |
@@ -11507,6 +11497,7 @@
 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin. | testcafe, reporter, plugin |
 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets | - |
 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y | chrome, version |
+| [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut | testing, cypress, ui, dom, integration, functional, end-to-end, e2e |
 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc | testing, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements | testing, dom, jasmine, matchers, jsdom |
 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |

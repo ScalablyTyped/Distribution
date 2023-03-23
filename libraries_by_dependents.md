@@ -6221,7 +6221,6 @@
 | 0.0 | [microsoft__typescript-etw](./m/microsoft__typescript-etw) | ETW logging native Node.js module for the TypeScri
 | 0.0 | [microtime](./m/microtime) | Get the current time in microseconds
 | 0.0 | [midi](./m/midi) | MIDI hardware IO
-| 0.0 | [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node
 | 0.0 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js.
 | 0.0 | [millisecond](./m/millisecond) | Convert time strings to milliseconds
 | 0.0 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t
@@ -6345,11 +6344,8 @@
 | 0.0 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR
 | 0.0 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
 | 0.0 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
-| 0.0 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB.
 | 0.0 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs.
 | 0.0 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
-| 0.0 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
-| 0.0 | [mongration](./m/mongration) | Node.js mongodb migration framework
 | 0.0 | [monk](./m/monk) | The wise MongoDB API
 | 0.0 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 0.0 | [month-days](./m/month-days) | Get the number of days in a month
@@ -6687,7 +6683,6 @@
 | 0.0 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server
 | 0.0 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and
 | 0.0 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin
-| 0.0 | [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures
 | 0.0 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
 | 0.0 | [node-netstat](./n/node-netstat) | programmatic netstat utility
 | 0.0 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays
@@ -9306,6 +9301,7 @@
 | 0.0 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg
 | 0.0 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly
 | 0.0 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support
+| 0.0 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.0 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server
 | 0.0 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API
 | 0.0 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli
@@ -9602,6 +9598,7 @@
 | 0.0 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic
 | 0.0 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for
 | 0.0 | [simperium](./s/simperium) | A simperium client for node.js
+| 0.0 | [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v
 | 0.0 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign
 | 0.0 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI
 | 0.0 | [simple-datatables](./s/simple-datatables) | A lightweight, dependency-free JavaScript HTML tab
@@ -10176,6 +10173,7 @@
 | 0.0 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify
 | 0.0 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects
 | 0.0 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema
+| 0.0 | [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor
 | 0.0 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg
 | 0.0 | [swagger-ui](./s/swagger-ui) | -
 | 0.0 | [swagger-ui-dist](./s/swagger-ui-dist) | -
@@ -10330,6 +10328,7 @@
 | 0.0 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin.
 | 0.0 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets
 | 0.0 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y
+| 0.0 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.0 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc
 | 0.0 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements
 | 0.0 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th
